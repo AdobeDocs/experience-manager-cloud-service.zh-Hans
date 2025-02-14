@@ -5,9 +5,9 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 98%
 
 数字治理过程首先需要明确，由谁来负责什么内容，由谁来完成与数字化相关的工作。您可能需要进行一些战略性的招聘工作来补充具备所需技能的人手。而更大的挑战在于推动文化转变，树立起对新技术的全面支持，并帮助人们习惯于新的工作开展方式。该工作的一个关键部分在于创建数字社区，让人们能够从中学习和互相支持。
 
-目前，我们会侧重于将合适的人员放在合适的职位上，帮助推动 Adobe Experience Manager 部署。对于每个核心产品（Experience Manager Sites 和 Experience Manager Assets），Adobe 已经提供了一个您需要填充的职位清单，包括在各个职位上高效开展工作所需的技能、专业知识水平和特性。
+目前，我们会侧重于将合适的人员放在合适的职位上，帮助推动 Adobe Experience Manager 部署。对于每个核心产品（Experience Manager Site 和 Experience Manager Assets），Adobe 已经提供了一个您需要填充的职位清单，包括在各个职位上高效开展工作所需的技能、专业知识水平和特性。
 
 您本周的任务是与实施团队一起查看这些清单，确保在各个职位上都有具备相关资质的人员。
 
-## **AEM Experience Manager Sites 的关键职位**
+## **AEM Experience Manager Site 的关键职位**
 
-一个成功的人力团队需要有九个人位于合适的位置，就像您的部署团队一样。Adobe Experience Manager Sites 的成功与否取决于团队成员的力量以及他们协同工作的效果。请确保您将这九个职位分配给具备所建议资质的人员。
+一个成功的人力团队需要有九个人位于合适的位置，就像您的部署团队一样。Adobe Experience Manager Site 的成功与否取决于团队成员的力量以及他们协同工作的效果。请确保您将这九个职位分配给具备所建议资质的人员。
 
 | 职位 | 技能 | 能力水平 | 素养 |
 |--- |--- |--- |--- |
@@ -38,7 +38,7 @@ ht-degree: 98%
 | Scrum Master | ScrumMaster 认证，Agile 认证，协调经验 | 专家 | 稳定，创造性 |
 | 产品负责人 | Agile 认证，对业务需求有很深的了解 | 专家 | 均衡，自信 |
 | 负责安全、基础设施和工具的 IT 主管 | CISM 认证，Adobe Experience Manager 组件开发人员认证 | 专家 | 注重细节 |
-| 战略专家/超级用户 | 熟练掌握 Adobe Experience Manager Sites | 新手到专家 | 坚韧，求知，缜密，开放，愿意接受改变，合作 |
+| 战略专家/超级用户 | 熟练掌握 Adobe Experience Manager Site | 新手到专家 | 坚韧，求知，缜密，开放，愿意接受改变，合作 |
 | QA/UAT 主管 | Agile 认证，了解 SDLC | 新手到中等水平 | 注重细节，流程推动，稳定 |
 | 技术架构师 | IT 基础设施经验 | 专家 | 注重细节，流程推动，稳定 |
 | 后端开发人员 | Agile 认证，计算机编程和计算机科学方面的经验 | 新手到中等水平 | 注重细节，流程推动，稳定 |
@@ -56,7 +56,7 @@ ht-degree: 98%
 
 从架构师到 ScrumMaster，此团队中的每个职位都密不可分，包括 DAM 库管理员。
 
-您可能已经有了可成功开展 Adobe Experience Manager Assets 实施的大部分人员。此清单与 Adobe Experience Manager Sites 的清单相似，仅增加了重要的一项：您需要一位库管理员来确保以易于查找的方式整理和标记数字资源。
+您可能已经有了可成功开展 Adobe Experience Manager Assets 实施的大部分人员。此清单与 Adobe Experience Manager Site 的清单相似，仅增加了重要的一项：您需要一位库管理员来确保以易于查找的方式整理和标记数字资源。
 
 | 职位 | 技能 | 能力水平 | 素养 |
 |--- |--- |--- |--- |
@@ -64,7 +64,7 @@ ht-degree: 98%
 | Scrum Master | ScrumMaster 认证，Agile 认证，协调经验 | 专家 | 稳定，创造性 |
 | 产品负责人 | Agile 认证，对业务需求有很深的了解 | 专家 | 均衡，自信 |
 | 负责安全、基础设施和工具的 IT 主管 | CISM 认证，Adobe Experience Manager 组件开发人员认证 | 专家 | 注重细节 |
-| 战略专家/超级用户 | 熟练掌握 Adobe Experience Manager Sites | 新手到专家 | 坚韧，求知，缜密，开放，愿意接受改变，合作 |
+| 战略专家/超级用户 | 熟练掌握 Adobe Experience Manager Site | 新手到专家 | 坚韧，求知，缜密，开放，愿意接受改变，合作 |
 | QA/UAT 主管 | Agile 认证，了解 SDLC | 新手到中等水平 | 注重细节，流程推动，稳定 |
 | 技术架构师 | IT 基础设施经验 | 专家 | 注重细节，流程推动，稳定 |
 | 后端开发人员 | Agile 认证，计算机编程和计算机科学方面的经验 | 新手到中等水平 | 注重细节，流程推动，稳定 |
@@ -75,7 +75,7 @@ ht-degree: 98%
 
 <br>
 
-![显示虚拟角色及其在AEM Assets团队中的参与级别的水平条形图](/help/overview/assets/team_involvement2.png)。
+![显示虚构角色及其在 AEM Assets 团队中的参与程度的水平条形图](/help/overview/assets/team_involvement2.png)。
 
 >[!TIP]
 >

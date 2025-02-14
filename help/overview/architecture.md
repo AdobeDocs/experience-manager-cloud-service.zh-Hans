@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2713'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,25 +25,25 @@ Adobe Experience Manager (AEM) as a Cloud Service 提供一组可组合的服务
 
 ## 逻辑架构 {#logical-architecture}
 
-AEM as a Cloud Service 由 AEM Sites、AEM Assets 和 AEM Forms 等高级解决方案组成。虽然单独许可这些服务，但可协同使用它们。每个解决方案都使用 AEM as a Cloud Service 提供的可组合服务的某种组合，具体取决于其各自的用例。
+AEM as a Cloud Service 由 AEM Site、AEM Assets 和 AEM Forms 等高级解决方案组成。虽然单独许可这些服务，但可协同使用它们。每个解决方案都使用 AEM as a Cloud Service 提供的可组合服务的某种组合，具体取决于其各自的用例。
 
-### 项目 {#programs}
+### 程序 {#programs}
 
-AEM 应用程序具体表现为您根据自身的许可权利在 Cloud Manager 应用程序中创建的[项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。利用这些项目，可以在特定项目的上下文中完全控制关联的 AEM 应用程序的命名和配置方式以及权限的分配方式。
+AEM 应用程序具体表现为您根据自身的许可权利在 Cloud Manager 应用程序中创建的[程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。利用这些程序，可以在特定项目的上下文中完全控制关联的 AEM 应用程序的命名和配置方式以及权限的分配方式。
 
-Adobe 一般将客户视为&#x200B;**租户**，也称为 *IMS 组织* (Identity Management System)。租户需要多少个项目，就能许可多少个项目。例如，一般可看到 AEM Assets 有一个主要项目，而可在与多种在线体验对应的多个项目中使用 AEM Sites。
+Adobe 一般将客户视为&#x200B;**租户**，也称为 *IMS 组织* (Identity Management System)。租户需要多少个程序，就能许可多少个程序。例如，一般可看到 AEM Assets 有一个主要程序，而可在与多种在线体验对应的多个程序中使用 AEM Site。
 
 >[!NOTE]
 >
->AEM Edge Delivery Services 在 Cloud Manager 中显示为顶级解决方案，而从许可的角度来看，它是其他主要解决方案的一部分。例如，具有 Edge Delivery Services 的 AEM Sites。
+>AEM Edge Delivery Services 在 Cloud Manager 中显示为顶级解决方案，而从许可的角度来看，它是其他主要解决方案的一部分。例如，具有 Edge Delivery Services 的 AEM Site。
 
-可用高级解决方案的任意组合配置项目，并且每个解决方案可支持一个到多个附加组件。例如，适用于 AEM Sites 的 Commerce 或 Screens、适用于 AEM Assets 的 Dynamic Media 或 Brand Portal。
+可用高级解决方案的任意组合配置程序，并且每个解决方案可支持一个到多个附加组件。例如，适用于 AEM Site 的 Commerce 或 Screens、适用于 AEM Assets 的 Dynamic Media 或 Brand Portal。
 
-![AEM as a Cloud Service - 项目](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service - 部署架构")
+![AEM as a Cloud Service - 程序](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service - 部署架构")
 
 ### 环境 {#environments}
 
-用 AEM Sites、AEM Assets 或 AEM Forms 解决方案创建一个项目后，将在此项目中以 AEM 环境的形式表示关联的 AEM 实例。
+用 AEM Site、AEM Assets 或 AEM Forms 解决方案创建一个程序后，将在此程序中以 AEM 环境的形式表示关联的 AEM 实例。
 
 AEM as a Cloud Service 有四种类型的[环境](/help/implementing/cloud-manager/manage-environments.md)可用：
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service 有四种类型的[环境](/help/implementing/cloud-manag
 
 ### Edge Delivery Services {#logical-architecture-edge-delivery-services}
 
-也可以使用 [Edge Delivery Services](/help/edge/overview.md) 配置 AEM 项目。
+也可以使用 [Edge Delivery Services](/help/edge/overview.md) 配置 AEM 程序。
 
 配置后，AEM 可以引用用于通过 Edge Delivery Services 构建体验的 GitHub 代码存储库。于是，相关的体验将有新的配置选项可用。其中包括设置 Adobe 管理的 CDN 以及访问许可量度或 SLA 报告。
 
@@ -89,7 +89,7 @@ AEM as a Cloud Service 有四种类型的[环境](/help/implementing/cloud-manag
    * Microsoft Word 和 Excel - 通过 SharePoint
    * Google 文档和表格 - 通过 Google 云端硬盘
 
-对于体验投放，在使用 AEM Sites 或 AEM Forms 时，也是主要有两组服务互不排斥，并在一个共用的受 Adobe 管理的 CDN（内容交付网络）下作为不同的源运行：
+对于体验投放，在使用 AEM Site 或 AEM Forms 时，也是主要有两组服务互不排斥，并在一个共用的受 Adobe 管理的 CDN（内容交付网络）下作为不同的源运行：
 
 * AEM 发布层：
    * 运行一个由标准 AEM 发布程序和调度程序组成的场，使得可动态地渲染与已发布的内容组装在一起的网页和 API 内容（例如 GraphQL）。
@@ -109,7 +109,7 @@ AEM as a Cloud Service 有四种类型的[环境](/help/implementing/cloud-manag
 
 >[!NOTE]
 >
->默认情况下，仅限资源的项目没有发布层，也没有预览层。
+>默认情况下，仅限资源的程序没有发布层，也没有预览层。
 
 还有若干其他相邻服务：
 
@@ -164,11 +164,11 @@ AEM 预览层由单个 AEM 节点构成。这用于在发布到发布层之前�
 
 将从 AEM 创作层或基于文档的创作环境提供的已发布内容转换为语义 HTML。
 
-下图说明如何在 Microsoft Word 中编辑 Sites 内容（基于文档的创作）并将其发布到 Edge Delivery。其中还展示使用各种编辑器的传统 AEM 发布方法。
+下图说明如何在 Microsoft Word 中编辑 Site 内容（基于文档的创作）并将其发布到 Edge Delivery。其中还展示使用各种编辑器的传统 AEM 发布方法。
 
-![AEM Sites as a Cloud Service - 带 Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - 带 Edge Delivery Services")
+![AEM Site as a Cloud Service - 带 Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Site as a Cloud Service - 带 Edge Delivery Services")
 
-由于 Edge Delivery Services 是 Adobe Experience Manager 的一部分，因此 Edge Delivery、AEM Sites 和 AEM Assets 可在相同的域上共存。这是大型网站的常见用例。例如，客户可能要将特定的大流量页面迁移到 Edge Delivery Services，而所有其他页面仍可能保留在 AEM 发布层上。
+由于 Edge Delivery Services 是 Adobe Experience Manager 的一部分，因此 Edge Delivery、AEM Site 和 AEM Assets 可在相同的域上共存。这是大型网站的常见用例。例如，客户可能要将特定的大流量页面迁移到 Edge Delivery Services，而所有其他页面仍可能保留在 AEM 发布层上。
 
 ## 开发架构 {#development-architecture}
 
@@ -180,13 +180,13 @@ AEM 项目的代码和配置存储在一个代码存储库中，在作出更改�
    * 用于存储 AEM 创作层和发布层的服务器端 Java 代码和 OSGI 配置。
 * AEM 前端：
    * 用于存储 AEM 创作层和发布层的客户端 JS、CSS 和 HTML 代码。
-有关clientlibs的详细信息，请参阅[在AEM as a Cloud Service上使用客户端库](/help/implementing/developing/introduction/clientlibs.md)。
+有关 clientlib 的更多详细信息，请参阅[在 AEM as a Cloud Service 上使用客户端库](/help/implementing/developing/introduction/clientlibs.md)。
 * AEM Web 层：
    * 存储 AEM 发布层的调度程序配置文件。
 * AEM 配置：
    * 使得可存储 AEM 发布层和 Edge Delivery Services 发布层的各种配置选项（如 CDN 设置或维护任务设置）。
 * AEM Edge Delivery：
-   * 用于存储使用 Edge Delivery Services 构建的站点的客户端 JS、CSS 和 HTML 代码
+   * 用于存储使用 Edge Delivery Services 构建的 Site 的客户端 JS、CSS 和 HTML 代码
 
 ### 部署管道 {#deployment-pipelines}
 
@@ -196,7 +196,7 @@ AEM 项目的代码和配置存储在一个代码存储库中，在作出更改�
 
 Cloud Manager 管理对您的 AEM as a Cloud Service 实例的所有更新。由于只有这样才能构建、测试客户应用程序和将其部署到创作层、预览层和发布层，因此必须这样做。可在 AEM Cloud Service 的新版本准备就绪时或在您的应用程序的新版本准备就绪时，由 Adobe 或您自己触发这些更新。
 
-通过与项目中的每个环境相结合的部署管道实现这一点。Cloud Manager 管道在运行时为创作层和发布层都创建客户应用程序的一个新版本。通过将最新的客户包与最新的基准 Adobe 映像组合在一起实现这一点。
+通过与程序中的每个环境相结合的部署管道实现这一点。Cloud Manager 管道在运行时为创作层和发布层都创建客户应用程序的一个新版本。通过将最新的客户包与最新的基准 Adobe 映像组合在一起实现这一点。
 
 当客户正在更改代码或当 Adobe 正在部署新的维护版本时触发部署管道。
 
@@ -229,9 +229,9 @@ Cloud Manager 通过使用滚动更新模式更新所有服务节点，完全自
 
 ## 更多信息 {#further-information}
 
-* 项目设置
-   * [上线历程](/help/journey-onboarding/overview.md)
-   * [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+* 程序设置
+   * [加入历程](/help/journey-onboarding/overview.md)
+   * [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * 开发架构
    * [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
    * [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

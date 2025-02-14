@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 * 它会映射并创建 AEM 创作实例上使用的页面路径与您网站上使用的公共页面路径之间的关系。
 * 它会控制哪些内容（页面、工作表、资产等）发布到 Edge Delivery Services。
 
-必须根据项目的内容和 URL 结构为每个项目单独配置路径映射。AEM在内容发布期间以及在[通用编辑器](/help/sites-cloud/authoring/universal-editor/navigation.md)中编辑内容时使用该编辑器。
+必须根据项目的内容和 URL 结构为每个项目单独配置路径映射。AEM 在内容发布期间以及在[通用编辑器](/help/sites-cloud/authoring/universal-editor/navigation.md)中编辑内容时会使用它。
 
 ## 配置格式 {#configuration-format}
 
@@ -49,7 +49,7 @@ ht-degree: 97%
 1. 示例中的第一个条目是网站页面的路径映射。
 1. 第二个条目控制 `.helix/config.json` 到 AEM 创作存储库中相应电子表格页面的映射。
 
-在此示例中，存储在 `/content/aem-boilerplate/...` 下的所有页面都可在直接位于 `https://main--my-site--org.aem.live/....` 下的 Edge Delivery Services 网站上公开访问。
+在此示例中，存储在 `/content/aem-boilerplate/...` 下的所有页面都可在直接位于 `https://main--my-site--org.aem.live/....` 下的 Edge Delivery Services Site 上公开访问。
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ ht-degree: 97%
 
 ### 包括 {#includes}
 
-`includes` 配置控制哪些内容路径实际会复制到 Edge Delivery Services。它还可以保存任何路径数组，并且通常包含网站的顶级根页面。
+`includes` 配置控制哪些内容路径实际会复制到 Edge Delivery Services。它还可以保存任何路径数组，并且通常包含 Site 的顶级根页面。
 
 Edge Delivery Services 页面上使用的资产通常与网页一起发布。它们将自动从 AEM 创作实例导出到 Edge Delivery Services。
 
@@ -73,7 +73,7 @@ Edge Delivery Services 页面上使用的资产通常与网页一起发布。它
 
 根据您的项目设置，您可以用两种方式之一来配置路径映射。
 
-1. 如果项目配置为 `aem.live`，并使用[配置服务](https://www.aem.live/docs/config-service-setup)进行集中配置，则每个网站的路径映射都是通过此配置服务进行配置的。
+1. 如果项目配置为 `aem.live`，并使用[配置服务](https://www.aem.live/docs/config-service-setup)进行集中配置，则每个 Site 的路径映射都是通过此配置服务进行配置的。
 
    * 下面是配置路径映射的 cURL 请求示例。
 

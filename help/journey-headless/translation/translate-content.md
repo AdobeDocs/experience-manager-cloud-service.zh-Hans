@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2120'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM Headless 翻译历程的上一个文档[配置翻译连接器](configure-connector.md)中，您已了解 AEM 中的翻译框架。 您现在应：
+在 AEM Headless 翻译历程的上一个文档[配置翻译连接器](configure-connector.md)中，您已了解 AEM 中的翻译框架。 现在应：
 
 * 了解 AEM 中翻译集成框架的重要参数。
 * 能够自行建立与翻译服务的连接。
@@ -72,7 +72,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->假定已创建翻译语言的必要语言结构作为内容结构[定义](getting-started.md#content-structure)的一部分。 应与内容架构师协作来完成此操作。
+>假定已创建翻译语言的必要语言结构作为[内容结构定义](getting-started.md#content-structure)的一部分。应与内容架构师协作来完成此操作。
 >
 >如果未提前创建语言文件夹，您将无法按照前面步骤中所述来创建语言副本。
 
@@ -187,7 +187,7 @@ AEM 现在与您的翻译配置和连接器进行通信，将内容发送到翻�
 >
 >路径浏览器是一个功能强大的工具，可让您搜索、过滤和导航您的内容。选择&#x200B;**仅内容/过滤器**&#x200B;按钮以切换侧面板并显示高级过滤器，如&#x200B;**修改日期**&#x200B;或&#x200B;**翻译状态**。
 >
->您可以在[其他资源部分](#additional-resources)中了解有关路径浏览器的更多信息。
+>有关路径浏览器的更多信息，请参阅[其他资源部分](#additional-resources)。
 
 可按上述步骤将必要内容添加到项目的所有语言（作业）。选择所有内容后，即可开始翻译。
 
@@ -205,9 +205,9 @@ AEM 现在与您的翻译配置和连接器进行通信，将内容发送到翻�
 
 ## 审查已翻译的内容 {#reviewing}
 
-[如前所述](#using-translation-project)，机器翻译的内容以&#x200B;**已批准**&#x200B;的状态流回AEM，因为假定使用的是机器翻译，无需人工干预。 但仍可审查已翻译的内容。
+[如前所述](#using-translation-project)，机器翻译的内容以&#x200B;**已批准**&#x200B;状态流回 AEM，因为假定使用的是机器翻译，无需人工干预。但仍可审查已翻译的内容。
 
-只需转到已完成的翻译作业，并通过点按或单击复选框而选择行项。工具栏中将显示&#x200B;**在内容片段中展现**&#x200B;图标。
+只需转到已完成的翻译作业，并通过点击或单击复选框而选择行项。工具栏中将显示&#x200B;**在内容片段中展现**&#x200B;图标。
 
 ![在内容片段中展现](assets/reveal-in-content-fragment.png)
 
@@ -249,7 +249,7 @@ AEM 的翻译框架接收来自翻译连接器的翻译，然后使用连接器�
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档[Publish已翻译内容](publish-content.md)来继续无头翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续无头翻译历程所必需的。
+我们建议您查看文档[发布已翻译内容](publish-content.md)来继续 Headless 翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续 Headless 历程所必需的。
 
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md) – 了解翻译项目的详细信息以及人工翻译工作流和多语言项目等附加功能。
 * [创作环境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM 提供各种机制来组织和编辑您的内容，包括强大的路径浏览器。

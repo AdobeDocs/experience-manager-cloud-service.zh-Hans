@@ -1,30 +1,30 @@
 ---
-title: AEM Sites 和 Edge Delivery Services
-description: 了解 Edge Delivery Services 如何扩展 AEM Sites 的创作和发布可能性，以加速内容创建并传递具有 100% 性能的网站。
+title: AEM Site 和 Edge Delivery Services
+description: 了解 Edge Delivery Services 如何扩展 AEM Site 的创作和发布可能性，以加速内容创建并传递具有 100% 性能的 Site。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# AEM Sites 和 Edge Delivery Services {#sites-and-edge}
+# AEM Site 和 Edge Delivery Services {#sites-and-edge}
 
-了解 Edge Delivery Services 如何扩展 AEM Sites 的创作和发布可能性，以加速内容创建并传递具有 100% 性能的网站。
+了解 Edge Delivery Services 如何扩展 AEM Site 的创作和发布可能性，以加速内容创建并传递具有 100% 性能的 Site。
 
 ## 概述 {#overview}
 
-除了 AEM Sites as a Cloud Service 作为云原生 AEM as a Cloud Services 平台的一部分提供的[所有功能和特性](/help/sites-cloud/sites-cloud-changes.md)外，Edge Delivery Services 还提供了额外的创作和发布可能性，以加速内容创建并传递具有 100% 性能的网站。
+除了 AEM Site as a Cloud Service 作为云原生 AEM as a Cloud Services 平台的一部分提供的[所有功能和特性](/help/sites-cloud/sites-cloud-changes.md)外，Edge Delivery Services 还提供了额外的创作和发布可能性，以加速内容创建并传递具有 100% 性能的 Site。
 
 ## 什么是 Edge Delivery Services？ {#what-is-edge}
 
-Edge Delivery Services 通过提供可快速创作和开发的高影响力体验，带来卓越的用户体验，从而推动参与度和转化率。它是一组可组合的服务，支持快速开发环境，作者可以在其中快速更新和发布，并快速启动新网站。在文档[Edge Delivery Services概述](/help/edge/overview.md)中了解有关Edge Delivery Services的更多信息。
+Edge Delivery Services 通过提供可快速创作和开发的高影响力体验，带来卓越的用户体验，从而推动参与度和转化率。它是一组可组合的服务，支持快速开发环境，作者可以在其中快速更新和发布，并快速启动新 Site。若要了解有关 Edge Delivery Services 的更多信息，请参阅文档 [Edge Delivery Services 概述](/help/edge/overview.md)。
 
-将 Edge Delivery Services 与 AEM Sites as a Cloud Service 结合使用，您的项目可以从以下方面受益：
+将 Edge Delivery Services 与 AEM Site as a Cloud Service 结合使用，您的项目可以从以下方面受益：
 
 * [全新的开发人员体验](#developer-experience)
 * [新的发布层](#publish-tier)
@@ -57,7 +57,7 @@ Edge Delivery Services 还通过提供新的创作选项来提高您的内容创
 
 ### 基于文档的创作 {#document-authoring}
 
-基于文档的创作允许任何人通过利用众所周知的工具（Word 和 Google Docs）来创建内容，而无需任何培训。使用这些简单的工具，Edge Delivery Services 可以立即将 Word 文档的更改转换为您实时网站上的更新内容。
+基于文档的创作允许任何人通过利用众所周知的工具（Word 和 Google Docs）来创建内容，而无需任何培训。使用这些简单的工具，Edge Delivery Services 可以立即将 Word 文档的更改转换为您实时 Site 上的更新内容。
 
 请参阅文档[创作和发布内容](https://www.aem.live/docs/authoring)，了解有关使用基于文档的创作的更多信息。
 
@@ -65,12 +65,12 @@ Edge Delivery Services 还通过提供新的创作选项来提高您的内容创
 
 Adobe 发现，其客户及其利益相关者在各种规模的项目中，都从 Edge Delivery Services 中受益匪浅。因此，Adobe 建议利用 Edge Delivery Services 作为任何新项目的起点。
 
-也可以在 Edge Delivery 上部署一部分网站或页面，同时将其余部分保留在当前堆栈上。每当需要提高性能、自然流量、客户参与度、开发人员或内容速度时，都建议这样做。
+也可以在 Edge Delivery 上部署一部分 Site 或页面，同时将其余部分保留在当前堆栈上。每当需要提高性能、自然流量、客户参与度、开发人员或内容速度时，都建议这样做。
 
 如果您不确定 Edge Delivery 是否适合您，请联系您的 Adobe 代表。
 
-### Edge Delivery 和 Headless 呢？(#headless)
+### Edge Delivery 和 Headless 呢？(#Headless)
 
-Edge Delivery 是与后端分离的性能优先的前端。如果您有一个自定义的前端，比如 React SPA，Adobe 建议使用 AEM headless 集成模式。有关更多信息，请参阅 [AEM Headless 文档](/help/headless/introduction.md)。
+Edge Delivery 是与后端分离的性能优先的前端。如果您有一个自定义的前端，比如 React SPA，Adobe 建议使用 AEM Headless 集成模式。有关更多信息，请参阅 [AEM Headless 文档](/help/headless/introduction.md)。
 
-然而，Adobe 通常建议使用 Edge Delivery 作为默认前端，以从其速度和性能中受益，并通过 headless 方法（如 React 或 SPA）集成项目的 headless 部分（通常是业务应用程序）。
+然而，Adobe 通常建议使用 Edge Delivery 作为默认前端，以从其速度和性能中受益，并通过 Headless 方法（如 React 或 SPA）集成项目的 Headless 部分（通常是业务应用程序）。

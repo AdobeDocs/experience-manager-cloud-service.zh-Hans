@@ -1,24 +1,24 @@
 ---
 title: 使用电子表格管理表格数据
-description: 了解如何使用电子表格来管理各种值的表格数据，例如利用 Edge Delivery Services 站点为您的 AEM 提供元数据和重定向。
+description: 了解如何使用电子表格来管理各种值的表格数据，例如利用 Edge Delivery Services Site 为您的 AEM 提供元数据和重定向。
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # 使用电子表格管理表格数据 {#tabular-data}
 
-了解如何使用电子表格来管理各种值的表格数据，例如利用 Edge Delivery Services 站点为您的 AEM 提供元数据和重定向。
+了解如何使用电子表格来管理各种值的表格数据，例如利用 Edge Delivery Services Site 为您的 AEM 提供元数据和重定向。
 
 ## 用例 {#use-cases}
 
-对于任何使用 Edge Delivery Services 站点的 AEM，都需要维护表格数据列表，例如键值映射列表。这些可以是许多不同值的列表，例如元数据和重定向。Edge Deliver Services 允许您使用直观的工具（电子表格）维护此类表格列表。AEM 将这些电子表格转换为 JSON 文件，您的网站或 Web 应用程序可以轻松使用这些文件。
+对于任何使用 Edge Delivery Services Site 的 AEM，都需要维护表格数据列表，例如键值映射列表。这些可以是许多不同值的列表，例如元数据和重定向。Edge Deliver Services 允许您使用直观的工具（电子表格）维护此类表格列表。AEM 将这些电子表格转换为 JSON 文件，您的网站或 Web 应用程序可以轻松使用这些文件。
 
 常见的用例包括：
 
@@ -34,23 +34,23 @@ ht-degree: 94%
 
 >[!TIP]
 >
->有关电子表格如何与Edge Delivery Services一起使用的详细信息，请参阅文档[电子表格和JSON](/help/edge/developer/spreadsheets.md)。
+>有关电子表格通常如何与 Edge Delivery Services 配合使用的详细信息，请参阅文档[电子表格和 JSON](/help/edge/developer/spreadsheets.md)。
 
 >[!TIP]
 >
->电子表格只能用于维护表格数据。用于存储结构化数据，[请查看AEM的Headless功能](/help/headless/introduction.md)。
+>电子表格只能用于维护表格数据。要存储结构化数据，[请查看 AEM 的 Headless 功能](/help/headless/introduction.md)。
 
-## 先决条件 {#prerequisites}
+## 前提条件 {#prerequisites}
 
-为了在具有 Edge Delivery Services 的 AEM 项目中使用电子表格创建映射，您需要使用最新的站点模板创建站点。
+为了在具有 Edge Delivery Services 的 AEM 项目中使用电子表格创建映射，您需要使用最新的 Site 模板创建 Site。
 
 请参阅文档[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以了解更多信息。
 
 ## 创建电子表格 {#spreadsheet}
 
-在此示例中，您将创建一个电子表格来管理利用 Edge Delivery Services 站点为您的 AEM 重定向。相同的步骤适用于您想要创建的[其他电子表格类型](#other)。
+在此示例中，您将创建一个电子表格来管理利用 Edge Delivery Services Site 为您的 AEM 重定向。相同的步骤适用于您想要创建的[其他电子表格类型](#other)。
 
-1. 登录到 AEM as a Cloud Service 创作实例，进入 **Sites** 控制台，然后导航到需要电子表格的站点的根目录。点击或单击&#x200B;**创建**-> **页面**。
+1. 登录到 AEM as a Cloud Service 创作实例，进入 **Site** 控制台，然后导航到需要电子表格的 Site 的根目录。点击或单击&#x200B;**创建**-> **页面**。
 
    ![创建页面](assets/tabular-data/tabular-data-create-page.png)
 
@@ -150,17 +150,17 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
    >[!NOTE]
    >
-   >该 `paths.json` 条目基于使用表格数据创建重定向的示例。请确保更新适合您正在创建的[类型电子表格的路径](#other)。
+   >该 `paths.json` 条目基于使用表格数据创建重定向的示例。确保更新与[您正在创建的电子表格类型](#other)相对应的路径。
 
 1. 单击“**提交更改...**”将更改保存到 `main`。
 
    * 根据您的流程提交`main`或创建拉取请求。
 
-1. 定义完重定向并更新路径映射后，返回 **Sites** 控制台。
+1. 定义完重定向并更新路径映射后，返回 **Site** 控制台。
 
 1. 点击或单击以选择您在控制台中创建的重定向电子表格，然后点击或单击操作栏中的&#x200B;**“快速发布”**&#x200B;发布电子表格。
 
-   ![在 Sites 控制台中选择电子表格](assets/tabular-data/tabular-data-select-publish.png)
+   ![在 Site 控制台中选择电子表格](assets/tabular-data/tabular-data-select-publish.png)
 
 1. 在&#x200B;**“快速发布”**&#x200B;对话框中，点击或单击&#x200B;**“发布”**。
 
@@ -174,7 +174,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 >[!TIP]
 >
->有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射](/help/edge/wysiwyg-authoring/path-mapping.md)。
+>有关路径映射的更多信息，请参阅文档 [Edge Delivery Services 的路径映射](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 其他电子表格类型 {#other}
 
@@ -205,7 +205,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 ## 创建您自己的电子表格 {#own-spreadsheet}
 
-1. 执行[创建电子表格](#spreadsheet)部分中的相同步骤。
+1. 请按照本节中的相同步骤进行操作[创建电子表格](#spreadsheet)。
 
 1. 选择模板时，选择&#x200B;**电子表格**。
 

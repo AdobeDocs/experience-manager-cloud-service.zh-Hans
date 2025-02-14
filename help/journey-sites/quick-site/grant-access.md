@@ -1,40 +1,40 @@
 ---
 title: 向前端开发人员授予访问权限
-description: 将前端开发人员载入 Cloud Manager 以便他们能够访问 AEM 站点 Git 存储库和管道。
+description: 将前端开发人员加入 Cloud Manager 以便他们能够访问 AEM Site Git 存储库和管道。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # 向前端开发人员授予访问权限 {#grant-fed-access}
 
-将前端开发人员载入 Cloud Manager 以便他们能够访问 AEM 站点 Git 存储库和管道。
+将前端开发人员加入 Cloud Manager 以便他们能够访问 AEM Site Git 存储库和管道。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM快速站点创建历程的上一个文档[设置您的管道](pipeline-setup.md)中，您已了解如何创建前端管道来管理站点主题的自定义，现在应：
+在 AEM 快速 Site 创建历程的上一个文档[设置您的管道](pipeline-setup.md)中，您已了解如何创建前端管道来管理 Site 主题的自定义，现在应：
 
 * 了解什么是前端管道。
 * 了解如何在 Cloud Manager 中设置前端管道。
 
-您现在需要通过载入流程向前端开发人员授予对 Cloud Manager 的访问权限，以便前端开发人员能够访问 AEM Git 存储库和您创建的管道。
+您现在需要通过加入流程向前端开发人员授予对 Cloud Manager 的访问权限，以便前端开发人员能够访问 AEM Git 存储库和您创建的管道。
 
 ## 目标 {#objective}
 
-向用户授予对 Cloud Manager 的访问权限并将用户角色分配给用户的过程称为载入。本文档将概述载入前端开发人员的最重要步骤，阅读后您将了解：
+向用户授予对 Cloud Manager 的访问权限并将用户角色分配给用户的过程称为加入。本文档将概述加入前端开发人员的最重要步骤，阅读后您将了解：
 
 * 如何将前端开发人员添加为用户。
 * 如何向前端开发人员授予所需的角色。
 
 >[!TIP]
 >
->提供了有关将团队载入 AEM as a Cloud Service 的历程的完整文档，如果您想了解有关此过程的其他详细信息，请参阅本文档的[其他资源](#additional-resources)部分。
+>提供了有关将团队加入 AEM as a Cloud Service 的历程的完整文档，如果您想了解有关此过程的其他详细信息，请参阅本文档的[其他资源](#additional-resources)部分。
 
 ## 负责角色 {#responsible-role}
 
@@ -91,20 +91,20 @@ ht-degree: 82%
 * [典型内容的路径](#example-page)
 * [您下载的](#download-theme)主题源
 * [代理用户凭据](#proxy-user)
-* [从 Cloud Manager 复制的](pipeline-setup.md#login)项目的名称或 URL
+* [从 Cloud Manager 复制的](pipeline-setup.md#login)程序的名称或 URL
 * 前端设计要求
 
 ## 后续内容 {#what-is-next}
 
-现在您已完成 AEM 快速站点创建历程的这一部分，您应了解：
+现在您已完成 AEM 快速 Site 创建历程的这一部分，您应了解：
 
 * 如何将前端开发人员添加为用户。
 * 如何向前端开发人员授予所需的角色。
 
-在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[检索Git存储库访问信息](retrieve-access.md)，此文档将视角专门切换到前端开发人员，并说明了前端开发人员如何使用Cloud Manager访问Git存储库信息。
+在此知识的基础上继续您的 AEM 快速 Site 创建历程，接下来查看文档[检索 Git 存储库访问信息](retrieve-access.md)，此文档将视角专门切换到前端开发人员，并说明了前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档[检索前端开发人员凭据](retrieve-access.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
+我们建议您查看文档[检索前端开发人员凭据](retrieve-access.md)来继续快速 Site 创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [载入历程](/help/journey-onboarding/overview.md) – 本指南可作为您的起点，确保您的团队已建立并有权访问 AEM as a Cloud Service。
+* [加入历程](/help/journey-onboarding/overview.md) – 本指南可作为您的起点，确保您的团队已建立并有权访问 AEM as a Cloud Service。

@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # 将团队成员分配给 Cloud Manager 产品配置文件 {#assign-team-members}
 
-在[入门培训历程](overview.md)的这一可选部分中，您将了解如何将团队成员分配给Cloud Manager产品配置文件。
+在[加入历程](overview.md)的这一部分中，您将了解如何将团队成员分配给 Cloud Manager 产品配置文件。
 
 ## 目标 {#objective}
 
-在此历程的上一步[访问Admin Console](admin-console.md)中，您已学习了登录Admin Console并验证您作为系统管理员的权限。 您现在可以允许团队成员访问 Cloud Manager 了。 您可以通过分配产品配置文件来实现这一点。
+在本次历程的前一步[访问 Admin Console](admin-console.md) 中，您已学会登录 Admin Console 并验证您作为系统管理员的权限。您现在可以允许团队成员访问 Cloud Manager 了。 您可以通过分配产品配置文件来实现这一点。
 
 授予用户访问 Adobe 解决方案的权限时，您不一定要授予他们完全访问权限。 产品配置文件使每个解决方案都有自己的用户权限集。 您可以使用 Admin Console 分配产品配置文件。
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 
 * 了解什么是产品配置文件。
 * 了解什么是 Cloud Manager。
-* 了解三个重要的 Cloud Manager 产品配置文件：**业务负责人**、**部署管理员**&#x200B;和&#x200B;**开发人员**。
+* 了解三个重要的 Cloud Manager 产品配置文件：**业务负责人**、**部署管理器**&#x200B;和&#x200B;**开发人员**。
 * 能够将团队成员分配给 Cloud Manager 产品配置文件。
 
 ## 前提条件 {#prerequisites}
@@ -41,9 +41,9 @@ ht-degree: 94%
 
 >[!TIP]
 >
->为了载入 AEM，Adobe 建议您首先添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 
+>为了加入 AEM，Adobe 建议您首先添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 
 >
->您可以在不添加所有用户的情况下继续载入流程。 完成载入之后，您可以添加其他用户。
+>您可以在不添加所有用户的情况下继续加入流程。 完成加入之后，您可以添加其他用户。
 
 ## 产品配置文件 {#product-profiles}
 
@@ -59,7 +59,7 @@ ht-degree: 94%
 
 Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用于代码部署的 CI/CD 管道、管理代码存储库和管理环境。
 
-在您的团队开始使用之前，必须通过授予必要的产品配置文件将他们载入到 Cloud Manager。 接下来的步骤将向您展示使用 Admin Console 在何处查找 Cloud Manager 产品配置文件，以及如何将其分配给您的团队成员。
+在您的团队开始使用之前，必须通过授予必要的产品配置文件将他们加入到 Cloud Manager。 接下来的步骤将向您展示使用 Admin Console 在何处查找 Cloud Manager 产品配置文件，以及如何将其分配给您的团队成员。
 
 ## 查看 Cloud Manager 产品配置文件 {#review-product-profiles}
 
@@ -77,10 +77,10 @@ Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用
 
    ![产品配置文件](/help/journey-onboarding/assets/assign-team3.png)
 
-作为初始载入流程的一部分，最重要的配置文件包括：
+作为初始加入流程的一部分，最重要的配置文件包括：
 
 * **业务负责人** – 这些用户管理不同的程序。
-* **部署管理员** – 这些用户从您的存储库部署代码，可运行 AEM 环境。
+* **部署管理器** – 这些用户从您的存储库部署代码，可运行 AEM 环境。
 * **开发人员** – 这些用户开发您的自定义 AEM 应用程序并将代码提交到存储库。
 
 了解这些角色是什么以及他们做什么，就查看您的团队成员列表确定谁需要哪个配置文件。 请记住，用户在您的团队中可以并且经常拥有多个角色，因此也需要多个配置文件。
@@ -112,13 +112,13 @@ Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用
 
    ![分配用户](/help/journey-onboarding/assets/assign-team6.png)
 
-1. 单击&#x200B;**保存**，这将向您添加的用户发送欢迎电子邮件。 受邀的用户可以通过单击欢迎电子邮件中的链接并使用其 Adobe ID 登录来访问 Cloud Manager。
+1. 单击&#x200B;**保存**，将向您添加的用户发送欢迎电子邮件。 受邀的用户可以通过单击欢迎电子邮件中的链接并使用其 Adobe ID 登录来访问 Cloud Manager。
 
 1. 对团队中的用户重复这些步骤。
 
 您的&#x200B;**业务负责人**&#x200B;已分配，现在可以访问 Cloud Manager。 别忘了将您自己作为系统管理员分配给&#x200B;**业务负责人**&#x200B;配置文件。
 
-## 分配部署管理员产品配置文件 {#assign-deployment-manager}
+## 分配部署管理器产品配置文件 {#assign-deployment-manager}
 
 1. 确定需要部署代码的用户。
 
@@ -136,11 +136,11 @@ Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用
 
    ![输入 ID](/help/journey-onboarding/assets/assign-team5.png)
 
-1. 单击&#x200B;**选择产品或用户组**&#x200B;标题下的加号按钮开始产品选择，选择 **Adobe Experience Manager as a Cloud Service**，并将&#x200B;**部署管理员**&#x200B;产品配置文件分配给用户。
+1. 单击&#x200B;**选择产品或用户组**&#x200B;标题下的加号按钮开始产品选择，选择 **Adobe Experience Manager as a Cloud Service**，并将&#x200B;**部署管理器**&#x200B;产品配置文件分配给用户。
 
    ![分配配置文件](/help/journey-onboarding/assets/assign-team6.png)
 
-您的&#x200B;**部署管理员**&#x200B;已分配，现在可以访问 Cloud Manager。 根据您未来的职责，您可能需要也可能不需要将自己指定为&#x200B;**部署管理员**&#x200B;配置文件的系统管理员。
+您的&#x200B;**部署管理器**&#x200B;已分配，现在可以访问 Cloud Manager。 根据您未来的职责，您可能需要也可能不需要将自己指定为&#x200B;**部署管理器**&#x200B;配置文件的系统管理员。
 
 ## 分配开发人员产品配置文件 {#assign-developer}
 
@@ -170,18 +170,18 @@ Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用
 
 恭喜！您新组建的 Cloud Manager 团队（包括分配给&#x200B;**业务负责人**&#x200B;配置文件的您自己）已经设置。 作为&#x200B;**业务负责人**&#x200B;的角色，您现在离登录 Cloud Manager 并启用云资源创建只有一步之遥。
 
-在上线历程的这一可选部分中，您了解了如何在 Admin Console 中将团队成员分配给配置文件。您现在应：
+在加入历程的这一可选部分中，您了解了如何在 Admin Console 中将团队成员分配给配置文件。现在应：
 
 * 了解什么是产品配置文件。
 * 了解什么是 Cloud Manager。
-* 了解三个重要的 Cloud Manager 产品配置文件：**业务负责人**、**部署管理员**&#x200B;和&#x200B;**开发人员**。
+* 了解三个重要的 Cloud Manager 产品配置文件：**业务负责人**、**部署管理器**&#x200B;和&#x200B;**开发人员**。
 * 能够将团队成员分配给 Cloud Manager 产品配置文件。
 
-您现在可以通过接下来查看文档[访问Cloud Manager](cloud-manager.md)继续您的入门培训历程，您可以在其中了解如何访问Cloud Manager和创建项目资源。
+现在，您可以通过阅读文档[访问 Cloud Manager](cloud-manager.md) 继续您的加入历程，您将在其中学习如何访问 Cloud Manager 和创建项目资源。
 
 ## 其他资源 {#additional-resources}
 
-建议您如以前所述继续上线历程。如果您要深入了解本次历程中的某个特定主题，还有其他一些资源可供参考。
+建议您如以前所述继续加入历程。如果您要深入了解本次历程中的某个特定主题，还有其他一些资源可供参考。
 
 * [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md) – 了解 Cloud Manager、Cloud Manager 程序和环境。
 * [Cloud Manager 产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品配置文件。

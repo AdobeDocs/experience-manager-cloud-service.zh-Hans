@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM Headless 历程的上一个文档[如何融于一起 - 您的应用程序和 AEM Headless 中的内容](put-it-all-together.md) 中，您已了解如何使用 AEM 开发工具融合您项目的所有方面。
+在 AEM Headless 历程的上一个文档[如何融于一起 - 您的应用程序和 AEM Headless 中的内容](put-it-all-together.md)中，您已了解如何使用 AEM 开发工具融合您项目的所有方面。
 
 本文基于这些基础知识编写，以便您了解如何准备您自己的 AEM Headless 项目以上线。
 
@@ -129,13 +129,13 @@ ht-degree: 97%
 
 但 AEM 中的 Headless 存储不需要止步于此。您可能还记得，在[历程的快速入门部分](getting-started.md#integration-levels)中，我们简要讨论了 AEM 如何支持 Headless 交付和传统全栈模型，并支持结合了两者优点的混合模型。
 
-如果您的项目需要这种灵活性，请继续此历程的另一可选部分，[如何使用AEM创建单页应用程序(SPA)](create-spa.md)。
+如果您的项目需要这种灵活性，请继续进行历程的可选附加部分，[如何使用 AEM 创建单页应用程序（SPA）](create-spa.md)。
 
 ## 其他资源 {#additional-resources}
 
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans)
 * [到 AEM as a Cloud Service 的部署概述](/help/implementing/deploying/overview.md)
 * [使用 Cloud Manager 部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [将 Cloud Manager Git 存储库与外部 Git 存储库集成，并将项目部署到 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=zh-hans)

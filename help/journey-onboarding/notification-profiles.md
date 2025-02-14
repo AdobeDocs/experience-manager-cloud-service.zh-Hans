@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
 
 要正确设置接收通知，请创建两个用户配置文件。这些步骤仅执行一次。
 
-1. 在[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)登录Admin Console。
+1. 登录到 Admin Console，网址是 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
 1. 确保您是否处于正确的组织中。
 
@@ -155,6 +155,6 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
 
 ## 其他资源 {#additional-resources}
 
-如果您想了解上线历程以外的内容，以下是额外的可选资源。
+如果您想了解加入历程以外的内容，以下是额外的可选资源。
 
 * [操作中心](/help/operations/actions-center.md) - 利用操作中心方便地针对事件和其他重要信息采取行动。

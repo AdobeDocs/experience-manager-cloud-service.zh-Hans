@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 91%
 
 了解如何在使用 Edge Delivery Services 项目进行的所见即所得创作中创建可与通用编辑器配合使用的块。
 
-## 先决条件 {#prerequisites}
+## 前提条件 {#prerequisites}
 
 本指南提供了如何在使用 Edge Delivery Services 项目进行的所见即所得创作中创建可与通用编辑器配合使用的块的分步说明。它包括添加组件、在 Universal Editor 中加载组件定义、发布页面、实施块装饰和样式、将更改引入生产环境以及验证更改。完成本指南后，您可以为自己的项目创建和部署新块。
 
 本指南要求读者必须具备使用 Edge Delivery Services 项目进行所见即所得创作以及通用编辑器方面的基础知识。在开始阅读本指南之前，您应有权访问 Edge Delivery Services 并熟悉其基础知识，其中包括：
 
-* 您已完成[Edge Delivery服务教程](/help/edge/developer/tutorial.md)。
-* 您有权访问[AEM Cloud Service沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
-* 您已在同一沙盒环境中[启用通用编辑器](/help/implementing/universal-editor/getting-started.md)。
+* 您已学完 [Edge Delivery Service 教程](/help/edge/developer/tutorial.md)。
+* 您有权访问 [AEM Cloud Service 沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
+* 您已[启用同一沙盒环境上的通用编辑器](/help/implementing/universal-editor/getting-started.md)。
 * 您已经完成了[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
 
 本指南基于[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中所完成的内容。
@@ -51,7 +51,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
 ![克隆项目](assets/create-block/clone.png)
 
-2\. 编辑项目的根目录下的 [`component-definition.json` 文件](/help/implementing/universal-editor/component-definition.md)，为新的引用区块添加以下定义并保存该文件。
+2\. 编辑项目的根目录下的 [`component-definition.json` 文件](/help/implementing/universal-editor/component-definition.md)，为新的引用块添加以下定义并保存该文件。
 
 >[!BEGINTABS]
 
@@ -155,11 +155,11 @@ Adobe 建议您采用三阶段方法来开发块：
 
 现在，已定义您的基本引用块并将其提交到示例项目，您可以将引用块添加到现有页面。
 
-1. 在浏览器中，登录到 AEM as a Cloud Service。[使用Sites控制台](/help/sites-cloud/authoring/basic-handling.md)，导航到您在[适用于WYSIWYG创作的Edge Delivery Services开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中创建的站点并选择页面。
+1. 在浏览器中，登录到 AEM as a Cloud Service。[使用 Site 控制台](/help/sites-cloud/authoring/basic-handling.md)，导航到您在[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中创建的 Site，并选择一个页面。
 
    * 在此示例中，`index` 用于说明目的。
 
-   ![在 Sites 控制台中选择索引页面](assets/create-block/sites-console.png)
+   ![在 Site 控制台中选择索引页面](assets/create-block/sites-console.png)
 
 1. 点击或单击控制台工具栏中的&#x200B;**编辑**，Universal Editor 随即打开。
 
@@ -281,7 +281,7 @@ export default function decorate(block) {
 
 ### 阻止选项 {#block-options}
 
-如果您需要某个块的外观或行为因特定情况而略有不同，但其差异不足以使其成为新的块，则可以让作者从[块选项](content-modeling.md#type-inference)中进行选择。
+如果您需要一个块根据特定情况看起来或表现得略有不同，但这种不同不足以使其成为一个新的块，您可以让作者从[块选项](content-modeling.md#type-inference)中进行选择。
 
 通过向块添加 `classes` 属性，该属性会在简单块的表头中呈现，或在容器块中的项目上作为值列表呈现。
 
@@ -343,4 +343,4 @@ export default function decorate(block) {
 
 >[!TIP]
 >
->有关创建支持WYSIWYG以AEM as a Cloud Service作为内容源进行创作的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
+>有关创建新的 Edge Delivery Services 项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[该 AEM GEM 网络研讨会](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。

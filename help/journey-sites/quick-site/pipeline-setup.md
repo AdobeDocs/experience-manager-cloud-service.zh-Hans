@@ -1,34 +1,34 @@
 ---
 title: 设置您的管道
-description: 创建前端管道来管理站点主题的自定义。
+description: 创建前端管道来管理 Site 主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '949'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # 设置您的管道 {#set-up-your-pipeline}
 
-创建前端管道来管理站点主题的自定义。
+创建前端管道来管理 Site 主题的自定义。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM快速站点创建历程的上一个文档[从模板创建站点](create-site.md)中，您已了解如何使用站点模板快速创建可通过前端工具进一步自定义的AEM站点，现在您应：
+在 AEM 快速 Site 创建历程的上一个文档[从模板创建 Site](create-site.md) 中，您已了解如何使用 Site 模板快速创建可通过前端工具进行详细自定义的 AEM Site，现在应：
 
-* 了解如何获取 AEM 站点模板。
-* 了解如何使用模板创建站点。
-* 了解如何从新站点下载模板以提供给前端开发人员。
+* 了解如何获取 AEM Site 模板。
+* 了解如何使用模板创建 Site。
+* 了解如何从新 Site 下载模板以提供给前端开发人员。
 
 本文基于这些基础之上，因此您可以设置前端管道，前端开发人员在历程中稍后将使用此管道来部署前端自定义项。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解前端管道以及如何创建一个前端管道来管理站点的自定义主题的部署。阅读本文档后，您应：
+本文档可帮助您了解前端管道以及如何创建一个前端管道来管理 Site 的自定义主题的部署。阅读本文档后，您应：
 
 * 了解什么是前端管道。
 * 了解如何在 Cloud Manager 中设置前端管道。
@@ -46,7 +46,7 @@ ht-degree: 85%
 
 ## 什么是前端管道 {#front-end-pipeline}
 
-前端开发涉及定义 AEM 站点样式的 JavaScript、CSS 和静态资源的自定义。前端开发人员将在他们的本地环境中工作，进行这些自定义设置。准备就绪后，更改将提交到 AEM Git 存储库。但它们只能提交到源代码， 因为它们处于非活动状态。
+前端开发涉及定义 AEM Site 样式的 JavaScript、CSS 和静态资源的自定义。前端开发人员将在他们的本地环境中工作，进行这些自定义设置。准备就绪后，更改将提交到 AEM Git 存储库。但它们只能提交到源代码， 因为它们处于非活动状态。
 
 前端管道采用这些已提交的自定义项并将其部署到 AEM 环境（通常是生产环境或非生产环境）中。
 
@@ -54,21 +54,21 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->前端管道只能部署 JavaScript、CSS 和静态资源来设置 AEM 站点的样式。无法在管道中部署页面或资源等站点内容。
+>前端管道只能部署 JavaScript、CSS 和静态资源来设置 AEM Site 的样式。无法在管道中部署页面或资源等 Site 内容。
 
 ## 访问 Cloud Manager {#login}
 
 1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 
-1. Cloud Manager 列出了可用的各种项目。选择要管理的项目。如果您刚开始使用 AEM as a Cloud Service，则可能只有一个可用项目。
+1. Cloud Manager 列出了可用的各种程序。选择要管理的程序。如果您刚开始使用 AEM as a Cloud Service，则可能只有一个可用程序。
 
-   ![在 Cloud Manager 中选择项目](assets/cloud-manager-select-program.png)
+   ![在 Cloud Manager 中选择程序](assets/cloud-manager-select-program.png)
 
-您现在可以看到您的项目概述。您的页面的外观会有所不同，但与此示例相似。
+您现在可以看到您的程序概述。您的页面的外观会有所不同，但与此示例相似。
 
 ![Cloud Manager 概述](assets/cloud-manager-overview.png)
 
-记下您已访问的项目的名称或复制 URL。您以后需要将此项提供给前端开发人员。
+记下您已访问的程序的名称或复制 URL。您以后需要将此项提供给前端开发人员。
 
 ## 创建前端管道 {#create-front-end-pipeline}
 
@@ -99,7 +99,7 @@ ht-degree: 85%
 
 1. 选择&#x200B;**保存**。
 
-在 Cloud Manager 窗口的&#x200B;**管道**&#x200B;分区中创建和显示新管道。点按或单击管道名称后的省略号会显示选项，以便根据需要进一步编辑或查看详细信息。
+在 Cloud Manager 窗口的&#x200B;**管道**&#x200B;分区中创建和显示新管道。点击或单击管道名称后的省略号会显示选项，以便根据需要进一步编辑或查看详细信息。
 
 ![管道选项](assets/new-pipeline.png)
 
@@ -109,16 +109,16 @@ ht-degree: 85%
 
 ## 后续内容 {#what-is-next}
 
-现在您已完成 AEM 快速站点创建历程的这一部分，您应：
+现在您已完成 AEM 快速 Site 创建历程的这一部分，您应：
 
 * 了解什么是前端管道。
 * 了解如何在 Cloud Manager 中设置前端管道。
 
-在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[向前端开发人员授予访问权限](grant-access.md)，其中您会将前端开发人员加入Cloud Manager，以便他们有权访问您的AEM站点Git存储库和管道。
+在此知识的基础上继续您的 AEM 快速 Site 创建历程，接下来查看文档[向前端开发人员授予访问权限](grant-access.md)，其中您会将前端开发人员加入 Cloud Manager，以便他们有权访问您的 AEM Site Git 存储库和管道。
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档[自定义站点主题](customize-theme.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
+我们建议您查看文档[自定义 Site 主题](customize-theme.md)来继续快速 Site 创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
 * [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md) – 如果您想详细了解如何为 AEMaaCS 项目设置和管理 Git 存储库，请参阅此文档。

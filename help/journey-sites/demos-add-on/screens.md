@@ -1,19 +1,19 @@
 ---
-title: 为演示站点启用 AEM Screens
-description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
+title: 为演示 Site 启用 AEM Screens
+description: 了解在您的演示 Site 上启用完整 AEM Screens as a Cloud Service 的步骤。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# 为演示站点启用 AEM Screens {#enable-screens}
+# 为演示 Site 启用 AEM Screens {#enable-screens}
 
-了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
+了解在您的演示 Site 上启用完整 AEM Screens as a Cloud Service 的步骤。
 
 >[!NOTE]
 >
@@ -21,13 +21,13 @@ ht-degree: 95%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM参考演示加载项历程的上一个文档[创建演示站点](create-site.md)中，您基于参考演示加载项模板创建了一个演示站点。 您现在应：
+在 AEM 参考演示加载项历程的上一个文档[创建演示 Site](create-site.md) 中，您基于参考演示加载项模板创建了一个演示 Site。现在应：
 
 * 了解如何访问 AEM 创作环境。
-* 了解如何基于模板创建站点。
-* 了解导航站点结构和编辑页面的基础知识。
+* 了解如何基于模板创建 Site。
+* 了解导航 Site 结构和编辑页面的基础知识。
 
-现在您已拥有自己的演示站点，可以探索和了解有助于您管理演示站点的工具，并为演示站点启用完整的 AEM Screens as a Cloud Service 体验。
+现在您已拥有自己的演示 Site，可以探索和了解有助于您管理演示 Site 的工具，并为演示 Site 启用完整的 AEM Screens as a Cloud Service 体验。
 
 ## 目标 {#objective}
 
@@ -92,24 +92,24 @@ We.Cafe 位置具有以下布局。
 
 ## 部署演示 Screens 项目 {#deploy-project}
 
-若要在您在[创建项目](create-program.md)步骤中创建的沙盒中使用演示内容，必须基于模板创建站点。
+若要在您在[创建程序](create-program.md)步骤中创建的沙盒中使用演示内容，必须基于模板创建 Site。
 
-如果您尚未创建 We.Cafe 演示站点，只需执行[创建演示站点](create-site.md)部分中的相同步骤即可。在选择模板时，只需选择 **We.Cafe 网站模板**。
+如果您尚未创建 We.Cafe 演示 Site，只需执行[创建演示 Site](create-site.md) 部分中的相同步骤即可。在选择模板时，只需选择 **We.Cafe 网站模板**。
 
 ![We.Cafe 模板](assets/wecafe-template.png)
 
-在向导完成后，您会发现内容已部署到 Sites 下，并且可以像导航和浏览任何其他内容一样导航和浏览该内容。
+在向导完成后，您会发现内容已部署到 Site 下，并且可以像导航和浏览任何其他内容一样导航和浏览该内容。
 
 ![We.Cafe 内容](assets/wecafe-content.png)
 
 现在您已拥有 We.Cafe 演示内容，您可选择要如何测试 AEM Screens：
 
-* 如果只想浏览AEM Sites控制台中的内容，只需在[其他资源](#additional-resources)部分开始浏览和发现更多内容；无需执行其他操作。
-* 如果要体验AEM Screens的完整动态功能，请继续下一部分，[动态更改Screens内容](#dynamically-change)。
+* 如果您只想在 AEM Site 控制台中浏览该内容，那就开始浏览，并可在[其他资源](#additional-resources)部分中发现更多内容，无需执行其他操作。
+* 如果要体验 AEM Screens 的完整动态功能，请继续下一部分，即[动态更改 Screens 内容](#dynamically-change)。
 
 ## 动态更改 Screens 内容 {#dynamically-change}
 
-与AEM Sites 一样，AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，已将渠道配置为根据当前温度显示不同的内容。为了模拟这种体验，您必须创建自己的简单天气服务。
+与AEM Site 一样，AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，已将渠道配置为根据当前温度显示不同的内容。为了模拟这种体验，您必须创建自己的简单天气服务。
 
 ### 创建模拟数据源 {#data-source}
 
@@ -223,13 +223,13 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
 在演示中，可以更改表中的值。ContextHub 会识别这一点，并且内容会根据更新后的温度在渠道中进行调整。
 
-1. 在 AEMaaCS 创作实例上，转至&#x200B;**全局导航 > 工具 > 站点 > ContextHub**。
+1. 在 AEMaaCS 创作实例上，转至&#x200B;**全局导航 > 工具 > Site > ContextHub**。
 1. 选择与您从 **We.Cafe 网站模板**&#x200B;创建 Screens 项目时为该项目所取名称同名的配置容器。
 1. 选择&#x200B;**配置 > ContextHub 配置 > Google 表格**，然后在右上角单击&#x200B;**下一步**。
 1. 该配置应已具有预配置的 JSON 数据。有两个值必须更改：
    1. 将 `[your Google Sheets id]` 替换为您之前保存的表 ID[。](#create-spreadsheet)
    1. 将 `[your Google API Key]` 替换为您之前保存的 API 密钥[。](#create-api-key)
-1. 单击“**保存**”。
+1. 单击&#x200B;**保存**。
 
 现在您可以更改 Google Sheet 电子表格中的温度值，ContextHub 会在“显示天气变化”时动态更新 Screens。
 
@@ -238,11 +238,11 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 现在，AEM Screens 和 ContextHub 已连接到您的天气服务，您可以对其进行测试以了解 Screens 如何动态更新内容。
 
 1. 访问您的沙盒创作实例。
-1. 通过&#x200B;**全局导航 > 站点**&#x200B;导航到 Sites 控制台，然后选择以下页面 **Screens > &lt;project-name> > 渠道 > 入口早上显示（纵向）**。
+1. 通过&#x200B;**全局导航 > Site** 导航到 Site 控制台，然后选择以下页面 **Screens > &lt;project-name> > 渠道 > 入口早上显示（纵向）**。
 
    ![选择演示项目内容](assets/project-content.png)
 
-1. 单击工具栏中的&#x200B;**“编辑”**&#x200B;或键入快捷键 `e` 以编辑页面。
+1. 单击工具栏中的&#x200B;**编辑**&#x200B;或键入快捷键 `e` 以编辑页面。
 
 1. 在编辑器中，您可以查看内容。一个图像以蓝色突出显示，角落有一个定位图标。
 
@@ -282,7 +282,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![编辑设置](assets/screens-edit-settings.png)
 
-1. 提供已在其中创建演示站点的 AEMaaCS 创作和发布实例的 URL，并单击&#x200B;**保存。**
+1. 提供已在其中创建演示 Site 的 AEMaaCS 创作和发布实例的 URL，并单击&#x200B;**保存。**
 
    ![Screens 设置](assets/screens-settings.png)
 
@@ -302,7 +302,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![创建显示](assets/create-display.png)
 
-1. 创建显示后，单击显示屏的名称以打开显示详细信息屏幕。 必须为显示分配一个已从您的演示站点同步的渠道。单击屏幕右上方的&#x200B;**分配渠道**。
+1. 创建显示后，单击显示屏的名称以打开显示详细信息屏幕。 必须为显示分配一个已从您的演示 Site 同步的渠道。单击屏幕右上方的&#x200B;**分配渠道**。
 
    ![渠道详细信息](assets/channel-detail.png)
 
@@ -310,7 +310,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![分配渠道](assets/assign-channel.png)
 
-您可以对其他位置和显示重复这些步骤。完成后，您的演示站点便与 AEM Screens 链接并且已完成必要的配置。
+您可以对其他位置和显示重复这些步骤。完成后，您的演示 Site 便与 AEM Screens 链接并且已完成必要的配置。
 
 您可以在 AEMaaCS 上的渠道编辑器中预览演示。
 
@@ -390,7 +390,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 * 了解 We.Cafe 演示内容。
 * 了解如何为 We.Cafe 配置 AEM Screens。
 
-您现在可以使用自己的演示站点来探索 AEM Screens 的功能。 继续历程的下一部分[管理您的演示站点](manage.md)，了解可用于帮助您管理演示站点的工具以及如何删除它们。
+您现在可以使用自己的演示 Site 来探索 AEM Screens 的功能。 继续历程的下一部分[管理您的演示 Site](manage.md)，其中您将了解帮助您管理演示 Site 可用的工具以及如何删除 Site。
 
 您也可以查看[“其他资源”部分](#additional-resources)中的一些其他资源，详细了解您在此历程中看到的功能。
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->每天最多允许从创作 UI 或工作流程发布 5000 个路径。不支持创建批量发布工作负载的集成。如果您的项目需要更高的产能，请建议加入 [VIP 项目](https://www.aem.live/vip/intake)。
+>每天最多允许从创作 UI 或工作流程发布 5000 个路径。不支持创建批量发布工作负载的集成。如果您的项目需要更高的产能，请建议加入 [VIP 程序](https://www.aem.live/vip/intake)。
 
 ![从 AEM 发布到 Edge Delivery Services 时的信息流](assets/publishing-flow.png)
 
@@ -39,5 +39,5 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->默认情况下，Edge Delivery Services 管理员 API 不受保护，可用于在未经身份验证的情况下发布或取消发布文档。如[配置作者身份验证](https://www.aem.live/docs/authentication-setup-authoring)中所述，为了配置管理员 API 的身份验证，您的项目必须配置 API_KEY，它授予对发布服务的访问权限。[请联系 Slack 上的 Adobe 团队](/help/edge/docs/slack.md)寻求指导。
+>默认情况下，Edge Delivery Services 管理员 API 不受保护，可用于在未经身份验证的情况下发布或取消发布文档。如[配置作者身份验证](https://www.aem.live/docs/authentication-setup-authoring)中所述，为了配置管理员 API 的身份验证，您的项目必须设置 API_KEY，它授予对发布服务的访问权限。[请联系 Slack 上的 Adobe 团队](/help/edge/docs/slack.md)寻求指导。
 

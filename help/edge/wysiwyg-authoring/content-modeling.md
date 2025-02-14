@@ -5,9 +5,9 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2195'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 86%
 
 了解使用 Edge Delivery Services 项目进行所见即所得创作的内容建模工作原理，以及如何为自己的内容建模。
 
-## 先决条件 {#prerequisites}
+## 前提条件 {#prerequisites}
 
-将WYSIWYG创作与Edge Delivery Services结合使用的项目将继承任何其他Edge Delivery Services项目的大部分机制，这与内容源或[创作方法](/help/edge/wysiwyg-authoring/authoring.md)无关。
+使用 Edge Delivery Services 项目进行所见即所得创作继承了其他 Edge Delivery Services 项目的大部分机制，这与内容来源或[创作方法](/help/edge/wysiwyg-authoring/authoring.md)无关。
 
 在开始为项目内容建模之前，请确保先阅读以下文档。
 
@@ -39,7 +39,7 @@ ht-degree: 86%
 * **图像**：来源、描述
 * **按钮**：文本、标题、URL、类型（默认、主要、辅助）
 
-这些组件的模型是WYSIWYG创作的[Edge Delivery Services模板](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)的一部分。
+这些组件的模型是[使用 Edge Delivery Services 进行所见即所得创作的样板文件](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)的一部分。
 
 ## 块 {#blocks}
 
@@ -111,9 +111,9 @@ ht-degree: 86%
 * 必须使用 `core/franklin/components/block/v1/block` 资产类型（AEM 中块逻辑的一般实施）。
 * 必须定义块名称，该名称将呈现在块的表标题中。
    * 块名称用于获取正确的样式和脚本，以装饰块。
-* 可以定义[模型ID](/help/implementing/universal-editor/field-types.md#model-structure)。
+* 可以定义[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)。
    * 模型 ID 是对组件模型的引用，它定义了作者在属性面板中可用的字段。
-* 可以定义[筛选器ID](/help/implementing/universal-editor/filtering.md)。
+* 可以定义[过滤器 ID](/help/implementing/universal-editor/filtering.md)。
    * 过滤器 ID 是对组件过滤器的引用，它允许更改创作行为，例如通过限制可以将哪些子项添加到块或部分，或者启用哪些 RTE 功能。
 
 在将块添加到页面时，所有这些信息都存储在 AEM 中。如果缺少资产类型或块名称，则该块将不会在页面上呈现。
@@ -181,7 +181,7 @@ ht-degree: 86%
 
 >[!ENDTABS]
 
-您可能会发现，一些类型的值允许推断标记中的语义，并且属性将并入单个单元格中。此行为在[类型推断](#type-inference)部分中描述。
+您可能会发现，一些类型的值允许推断标记中的语义，并且属性将并入单个单元格中。[类型推断](#type-inference)部分中描述了此行为。
 
 #### 键值块 {#key-value}
 
@@ -189,7 +189,7 @@ ht-degree: 86%
 
 但在其他情况下，块将被读取为类似键值对的配置。
 
-[节元数据](/help/edge/developer/markup-sections-blocks.md#sections)便属于这种情况。 在此使用案例中，可以将块配置为呈现为键值对表。 请参阅[部分和部分元数据](#sections-metadata)部分以了解更多信息。
+一个示例是[部分元数据](/help/edge/developer/markup-sections-blocks.md#sections)。在此用例中，可以将块配置为呈现为键值对表。请参阅[部分和部分元数据](#sections-metadata)部分以了解更多信息。
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ ht-degree: 86%
 
 ### 为块创建语义内容模型 {#creating-content-models}
 
-通过解释[块结构的机制](#block-structure)，可以创建将AEM中保留的内容一对一映射到投放层的内容模型。
+利用[解释的块结构的机制](#block-structure)，可以创建一个内容模型，将 AEM 中保留的内容一对一映射到投放层。
 
-在每个项目的早期阶段，必须仔细考虑每个块的内容模型。它必须与内容源和创作体验无关，以允许作者在重用块实施和样式时切换或组合它们。可在[David模型(take 2)](https://www.aem.live/docs/davidsmodel)中找到更多详细信息和一般指导。 更具体地说，[块集合](/help/edge/developer/block-collection.md)包含一组内容模型，用于常见用户界面模式的特定用例。
+在每个项目的早期阶段，必须仔细考虑每个块的内容模型。它必须与内容源和创作体验无关，以允许作者在重用块实施和样式时切换或组合它们。有关更多详细信息和一般指南，请参阅 [David&#39;s 模型（take 2）](https://www.aem.live/docs/davidsmodel)。 更具体地说，[块集合](/help/edge/developer/block-collection.md)包含一组广泛的内容模型，可用于常见用户界面模式的特定用例。
 
 对于使用 Edge Delivery Services 进行所见即所得的创作的情况来说，这就提出了一个问题，即当信息是用由多个字段组成的表单创作的，而不是在类似上下文的富文本中编辑语义标记时，如何提供一个引人注目的语义内容模型。
 
@@ -345,7 +345,7 @@ ht-degree: 86%
 * **图像** - 如果对 AEM 中资产的引用是 MIME 类型的以 `image/` 开头的资产，则该引用将呈现为 `<picture><img src="${reference}"></picture>`。
 * **链接** - 如果引用在 AEM 中存在且不是图像，或者值以 `https?://` 或 `#` 开头，则引用将呈现为 `<a href="${reference}">${reference}</a>`。
 * **富文本** - 如果修剪后的值以段落（`p`、`ul`、`ol`、`h1`-`h6` 等）开头，该值将呈现为富文本。
-* **类名** - `classes`属性被视为[块选项](/help/edge/developer/markup-sections-blocks.md#block-options)，并在[简单块](#simple)的表标题中呈现，或作为[容器块](#container)中项目的值列表。 如果要[以不同方式设置块](/help/edge/wysiwyg-authoring/create-block.md#block-options)的样式，但不需要创建全新的块，则此功能非常有用。
+* **类名** - `classes` 属性被视为[块选项](/help/edge/developer/markup-sections-blocks.md#block-options)，并在[简单块](#simple)的表头中呈现，或作为[容器块](#container)中项目的值列表呈现。如果您想[以不同的方式设置一个块](/help/edge/wysiwyg-authoring/create-block.md#block-options)，但不需要创建一个全新的块，这很有用。
 * **值列表** - 如果一个值是多值属性，并且第一个值不是前一个值，则所有值都以逗号分隔的列表形式连接起来。
 
 所有其他内容都将呈现为纯文本。
@@ -532,11 +532,11 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 ## 部分和部分元数据 {#sections-metadata}
 
-开发人员可以定义多个[块](#blocks)并为其建模，同样，他们也可以定义不同的部分。
+利用开发人员用来对多个[块](#blocks)进行定义和建模的方式，可以定义不同的部分。
 
 Edge Delivery Services 的内容模型有意只允许单级嵌套，即部分包含的任何默认内容或块。这意味着，要拥有可包含其他组件的更复杂的视觉组件，必须使用自动屏蔽客户端将它们作为部分进行建模和组合。典型示例是选项卡和可折叠部分，例如可折叠项。
 
-可按照定义块的方式定义部分，但资产类型为 `core/franklin/components/section/v1/section`。分区可以具有仅由[通用编辑器](/help/implementing/universal-editor/introduction.md)使用的名称和[筛选器ID](/help/implementing/universal-editor/filtering.md)，以及用于呈现分区元数据的[模型ID](/help/implementing/universal-editor/field-types.md#model-structure)。 这样一来，模型便为部分元数据块的模型，如果它不为空，则会自动作为键值块附加到部分中。
+可按照定义块的方式定义部分，但资产类型为 `core/franklin/components/section/v1/section`。部分可具有一个名称、一个[过滤器 ID](/help/implementing/universal-editor/filtering.md)（仅由[通用编辑器](/help/implementing/universal-editor/introduction.md)使用）和一个[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)（用于呈现部分元数据）。这样一来，模型便为部分元数据块的模型，如果它不为空，则会自动作为键值块附加到部分中。
 
 默认部分的[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure) 和[过滤器 ID](/help/implementing/universal-editor/filtering.md) 是 `section`。它可用于更改默认部分的行为。以下示例将一些样式和背景图像添加到部分元数据模型。
 
@@ -595,7 +595,7 @@ Edge Delivery Services 的内容模型有意只允许单级嵌套，即部分包
 
 ## 页面元数据 {#page-metadata}
 
-文档可以具有页面[元数据块](https://www.aem.live/developer/block-collection/metadata)，用于定义在页面的`<head>`中呈现的`<meta>`元素。 AEM as a Cloud Service 中页面的页面属性映射到 Edge Delivery Services 的现成页面属性，例如 `title`、`description`、`keywords` 等。
+文档可以具有页面[元数据块](https://www.aem.live/developer/block-collection/metadata)，它用于定义哪些 `<meta>` 元素呈现在页面的 `<head>` 中。AEM as a Cloud Service 中页面的页面属性映射到 Edge Delivery Services 的现成页面属性，例如 `title`、`description`、`keywords` 等。
 
 在进一步探索如何定义自己的元数据之前，请先查看以下文档以了解页面元数据的概念。
 
@@ -641,9 +641,9 @@ AEM 中提供的许多默认页面属性都映射到文档中相应的页面元�
 
 请参阅文档[创建与通用编辑器配合使用的块](/help/edge/wysiwyg-authoring/create-block.md)，了解如何在所见即所得的创作中使用 Edge Delivery Services 项目创建与通用编辑配合使用的块。
 
-如果您已经熟悉如何创建块，请参阅文档[使用 Edge Delivery Services 进行所见即所得创作的开发者入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以使用 Edge Delivery Services 和通用编辑器进行内容创作，从而启动并运行新的 Adobe Experience Manager 网站。
+如果您已经熟悉如何创建块，请参阅文档[使用 Edge Delivery Services 进行所见即所得创作的开发者入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以使用 Edge Delivery Services 和通用编辑器进行内容创作，从而启动并运行新的 Adobe Experience Manager Site。
 
 >[!TIP]
 >
->有关创建支持WYSIWYG以AEM as a Cloud Service作为内容源进行创作的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)。
+>有关创建新的 Edge Delivery Services 项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[该 AEM GEM 网络研讨会](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)。
 

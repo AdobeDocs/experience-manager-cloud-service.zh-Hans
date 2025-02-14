@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1216'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 >
 >在 AEM 中使用现成的 Microsoft Translator 不需要额外的设置，并且无需其他连接器配置即可按原样工作。
 >
->如果您选择使用Microsoft Translator连接器进行测试，则无需执行以下两个部分中的步骤：[创建翻译集成配置](#create-config)和[将配置与您的内容关联](#associate)。 但建议您阅读这两个部分，以便熟悉需要配置首选连接器时要执行的步骤。
+>如果您选择使用 Microsoft Translator 连接器进行测试，则无需执行以下两个部分中的步骤：[创建翻译集成配置](#create-config)和[将配置与您的内容关联](#associate)。但建议您阅读这两个部分，以便熟悉需要配置首选连接器时要执行的步骤。
 >
 >Microsoft Translator 连接器的试用许可证不用于生产目的，如果您决定对其进行许可，系统管理员必须执行本文档末尾的[其他资源](#additional-resources)部分中详述的步骤来配置该许可证。
 
@@ -122,7 +122,7 @@ AEM 是一种灵活而强大的工具，它通过多个连接器和多种配置�
 1. 转到全局导航，再转到&#x200B;**导航** > **资源** > **文件**。
 1. 在资源控制台中，选择要配置的语言根，然后选择&#x200B;**属性**。
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
-1. 在&#x200B;**添加配置**&#x200B;下拉列表中的&#x200B;**云服务配置**&#x200B;下，选择您的连接器。当您按照之前](#connect-translation-provider)描述的[安装其包时，它应显示在下拉列表中。
+1. 在&#x200B;**添加配置**&#x200B;下拉列表中的&#x200B;**云服务配置**&#x200B;下，选择您的连接器。安装连接器包后，它将显示在下拉列表中，如[之前所述](#connect-translation-provider)。
 1. 在&#x200B;**添加配置**&#x200B;下拉列表中的&#x200B;**云服务配置**&#x200B;下，也选择您的配置。
 1. 选择&#x200B;**保存并关闭**。
 
@@ -135,7 +135,7 @@ AEM 是一种灵活而强大的工具，它通过多个连接器和多种配置�
 * 了解 AEM 中翻译集成框架的重要参数。
 * 能够自行建立与翻译服务的连接。
 
-在此知识的基础上继续您的AEM Headless翻译历程，接下来查看文档[翻译内容](translation-rules.md)，了解目前如何使用配置实际翻译内容。
+在此知识的基础上继续您的 AEM Headless 翻译历程，接下来查看文档[翻译内容](translation-rules.md)，了解如何使用目前的配置实际翻译内容。
 
 ## 其他资源 {#additional-resources}
 

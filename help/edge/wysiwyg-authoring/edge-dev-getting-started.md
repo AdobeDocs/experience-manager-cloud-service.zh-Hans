@@ -1,28 +1,28 @@
 ---
 title: 使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南
-description: 本指南将帮助您使用 Edge Delivery Services 和用于所见即所得内容创作的通用编辑器，启动并运行新的 Adobe Experience Manager 网站。
+description: 本指南将帮助您使用 Edge Delivery Services 和用于所见即所得内容创作的通用编辑器，启动并运行新的 Adobe Experience Manager Site。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1212'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # 使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南 {#edge-dev-getting-started}
 
-本指南将帮助您使用 Edge Delivery Services 和用于所见即所得内容创作的通用编辑器，启动并运行新的 Adobe Experience Manager 网站。
+本指南将帮助您使用 Edge Delivery Services 和用于所见即所得内容创作的通用编辑器，启动并运行新的 Adobe Experience Manager Site。
 
-## 先决条件 {#prerequisites}
+## 前提条件 {#prerequisites}
 
 在开始阅读本指南之前，您应已熟悉 Edge Delivery Services 的基础知识并有权访问这些服务，其中包括：
 
-* 您已完成[Edge Delivery服务教程](/help/edge/developer/tutorial.md)。
-* 您有权访问[AEM Cloud Service沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
-* 您已在同一沙盒环境中[启用通用编辑器](/help/implementing/universal-editor/getting-started.md)。
+* 您已学完 [Edge Delivery Service 教程](/help/edge/developer/tutorial.md)。
+* 您有权访问 [AEM Cloud Service 沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
+* 您已[启用同一沙盒环境上的通用编辑器](/help/implementing/universal-editor/getting-started.md)。
 
 ## Edge Delivery Services 开发的核心概念 {#core-concepts}
 
@@ -42,7 +42,7 @@ AEM 提供标准块，作为项目样板中产品的一部分。这些块包括�
 
 Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理和部署代码。
 
-您的作者可以使用基于文档的创作或使用 Universal Editor 在 AEM 中创建内容。无论作者如何创建其内容，开发人员都可以使用 GitHub 中的 CSS 和 JavaScript 自定义网站的功能。
+您的作者可以使用基于文档的创作或使用 Universal Editor 在 AEM 中创建内容。无论作者如何创建其内容，开发人员都可以使用 GitHub 中的 CSS 和 JavaScript 自定义 Site 的功能。
 
 从内容预览到生产，将自动为您的每个分支创建网站。您放入 GitHub 存储库中的每个资产都在您的网站上可供使用，无需构建过程。
 
@@ -52,7 +52,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 ## 所见即所得创作和 Edge Delivery Services 快速入门 {#getting-started}
 
-一旦您满足了[先决条件](#prerequisites)并做出了[使用通用编辑器](#editor-choice)的选择，您就可以开始自己的项目。
+一旦满足[前提条件](#prerequisites)并[选择使用通用编辑器](#editor-choice)，即可开始您自己的项目。
 
 ### 创建您的 GitHub 项目 {#create-github-project}
 
@@ -91,7 +91,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 1. 编辑 `fstab.yaml` 文件以更新您的项目的挂载点。将默认的 Google 文档 URL 替换为您的 AEM as a Cloud Service 创作实例的 URL，然后单击&#x200B;**提交更改...**。
 
    * `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
-   * 更改挂载点将告知 Edge Delivery Services 在哪里可找到该站点的内容。
+   * 更改挂载点将告知 Edge Delivery Services 在哪里可找到该 Site 的内容。
 
    ![更新 fstab](assets/edge-dev-getting-started/fstab-update.png)
 
@@ -106,7 +106,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 1. 默认映射将使用存储库的名称。根据项目的需要使用 `/content/<site-name>/:/` 更新默认映射，然后单击 **提交更改……**。
 
    * 提供您自己的`<site-name>`。您将在稍后的步骤中用到它。
-   * 映射告知 Edge Delivery Services 如何将您 AEM 存储库中的内容映射到站点 URL。
+   * 映射告知 Edge Delivery Services 如何将您 AEM 存储库中的内容映射到 Site URL。
 
    ![更新 paths.json](assets/edge-dev-getting-started/paths-update.png)
 
@@ -116,61 +116,61 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 >[!TIP]
 >
->有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射](/help/edge/wysiwyg-authoring/path-mapping.md)。
+>有关路径映射的更多信息，请参阅文档 [Edge Delivery Services 的路径映射](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
-### 创建并编辑新 AEM 站点 {#create-aem-site}
+### 创建并编辑新 AEM Site {#create-aem-site}
 
-既然已有 GitHub 项目，那就必须创建该项目可使用的新 AEM 站点。
+既然已有 GitHub 项目，那就必须创建该项目可使用的新 AEM Site。
 
 >[!NOTE]
 >
->要使用 Universal Editor 编辑您的站点，您必须使用基于 Chromium 的浏览器。
+>要使用 Universal Editor 编辑您的 Site，您必须使用基于 Chromium 的浏览器。
 
-1. 在 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) 从 GitHub 下载最新的所见即所得创作和 Edge Delivery Services 网站模板。
+1. 在 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) 从 GitHub 下载最新的所见即所得创作和 Edge Delivery Services Site 模板。
 
-1. 登录到您的AEM as a Cloud Service创作实例并导航到站点控制台，然后单击&#x200B;**创建** > **从模板创建站点**。
+1. 登录到您的 AEM as a Cloud Service 创作实例，导航到 Site 控制台，然后单击&#x200B;**创建** > **从模板创建 Site**。
 
-   ![从控制台创建新站点](assets/edge-dev-getting-started/create-site-console.png)
+   ![从控制台创建新 Site](assets/edge-dev-getting-started/create-site-console.png)
 
-1. 在“创建站点”向导的&#x200B;**选择站点模板**&#x200B;选项卡上，单击&#x200B;**导入**&#x200B;按钮以导入新模板。
+1. 在“创建 Site”向导的&#x200B;**选择 Site 模板**&#x200B;选项卡上，单击&#x200B;**导入**&#x200B;按钮以导入新模板。
 
    ![导入模板](assets/edge-dev-getting-started/site-templates.png)
 
-1. 上传您从 GitHub 下载的带有 Edge Delivery Services 网站模板的所见即所得创作。
+1. 上传您从 GitHub 下载的带有 Edge Delivery Services Site 模板的所见即所得创作。
 
-   * 该模板只能上传一次。上传后，即可重复使用，以创建其他站点。
+   * 该模板只能上传一次。上传后，即可重复使用，以创建其他 Site。
 
-1. 导入该模板后，它即出现在向导中。单击以将其选中，然后单击&#x200B;**下一步**。
+1. 导入该模板后，它即出现在向导中。单击以选择它，然后单击&#x200B;**下一步**。
 
    ![选择模板](assets/edge-dev-getting-started/select-template.png)
 
 1. 为以下字段提供内容，然后点击或单击&#x200B;**创建**。
 
-   * **站点标题** - 添加该站点的描述性标题。
-   * **网站标题** — 使用您在[上一步](#create-github-project)中定义的`<site-name>`。
+   * **Site 标题** - 添加该 Site 的描述性标题。
+   * **Site 标题** - 使用在[上一步](#create-github-project)定义的 `<site-name>`。
    * **GitHub URL** - 使用在上一步创建的 GitHub 项目的 URL。
 
-   ![站点详细信息](assets/edge-dev-getting-started/create-site-details.png)
+   ![Site 详细信息](assets/edge-dev-getting-started/create-site-details.png)
 
-1. AEM 用一个对话框确认创建了该站点。单击&#x200B;**确定**&#x200B;将其关闭。
+1. AEM 用一个对话框确认创建了该 Site。单击&#x200B;**确定**&#x200B;以关闭。
 
-   ![站点创建确认](assets/edge-dev-getting-started/site-creation-confirmation.png)
+   ![Site 创建确认](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. 在站点控制台上，导航到新创建的站点的`index.html`，然后单击工具栏中的&#x200B;**编辑**。
+1. 在 Site 控制台上，导航到新创建 Site 的 `index.html`，然后在工具栏中单击&#x200B;**编辑**。
 
-   ![编辑新站点](assets/edge-dev-getting-started/new-site.png)
+   ![编辑新 Site](assets/edge-dev-getting-started/new-site.png)
 
 1. Universal Editor 在新标签页中打开。您可能需要点击或单击&#x200B;**使用 Adobe 登录**&#x200B;以进行身份验证才能编辑您的页面。
 
    ![Universal Editor](assets/edge-dev-getting-started/universal-editor.png)
 
-您现在可以使用 Universal Editor 编辑您的站点。有关更多信息，请参阅 [Universal Editor 文档](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+您现在可以使用 Universal Editor 编辑您的 Site。有关更多信息，请参阅 [Universal Editor 文档](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
-### 发布您的新站点 {#publishing}
+### 发布您的新 Site {#publishing}
 
-使用 Universal Editor 编辑完您的新站点后，即可发布您的内容。
+使用 Universal Editor 编辑完您的新 Site 后，即可发布您的内容。
 
-1. 在“站点”控制台上，选择为您的新站点创建的所有页面，然后在工具栏中点击或单击&#x200B;**快速发布**。
+1. 在 “Site” 控制台上，选择为您的新 Site 创建的所有页面，然后在工具栏中点击或单击&#x200B;**快速发布**。
 
    ![选择要发布的页面](assets/edge-dev-getting-started/publishing.png)
 
@@ -178,7 +178,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
    ![“发布”对话框](assets/edge-dev-getting-started/publish-confirmation.png)
 
-1. 在同一浏览器中打开新标签页，然后导航到您新站点的 URL。
+1. 在同一浏览器中打开新标签页，然后导航到您新 Site 的 URL。
 
    * `https://main--<repository-name>--<owner>.aem.page`
 
@@ -194,4 +194,4 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 >[!TIP]
 >
->有关创建支持WYSIWYG以AEM as a Cloud Service作为内容源进行创作的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。
+>有关创建新的 Edge Delivery Services 项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[该 AEM GEM 网络研讨会](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)。

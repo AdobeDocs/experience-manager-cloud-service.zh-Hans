@@ -5,9 +5,9 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '864'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 按照以下步骤导航到 Cloud Manager。
 
-1. 导航至Cloud Manager登录页面，网址为[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)。
+1. 导航至 Cloud Manager 的登录页面，网址为 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)。
 
 1. 在 Cloud Manager 的&#x200B;**程序和产品**&#x200B;页面中选择程序，可启动&#x200B;**概述**&#x200B;页面。
 
@@ -38,7 +38,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 ## Cloud Manager 中基于角色的权限 {#role-based-permissions}
 
-| 权限 | 描述 | 业务负责人 | 部署管理员 | 项目管理员 | 开发人员 |
+| 权限 | 描述 | 业务负责人 | 部署管理器 | 程序管理员 | 开发人员 |
 |--- |--- |--- |--- |--- |--- |
 | 添加程序<br>编辑程序 | 添加新程序<br>添加或移除解决方案或插件 | x |  |  |  |
 | 创建环境 | 创建生产+暂存和开发环境 | x | x |  |  |
@@ -59,7 +59,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 >[!NOTE]
 >
->一个用户可以分配给多个角色。例如，将&#x200B;**业务负责人**&#x200B;和&#x200B;**部署管理员**&#x200B;角色分配给用户，将为用户提供所有这些权限。
+>一个用户可以分配给多个角色。例如，将&#x200B;**业务负责人**&#x200B;和&#x200B;**部署管理器**&#x200B;角色分配给用户，将为用户提供所有这些权限。
 
 >[!TIP]
 >
@@ -79,7 +79,7 @@ Cloud Manager 程序代表一系列支持业务计划逻辑分组的 Cloud Manag
 
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、创建概念验证 (POC) 或归档等目的。
    * 该程序并不会承载实时流量，并且会有制作程序所没有的限制。
-   * 它包括 Sites 和 Assets，交付时自动填充 Git 分支，其中包括示例代码、开发环境和非生产管道。
+   * 它包括 Site 和 Assets，交付时自动填充 Git 分支，其中包括示例代码、开发环境和非生产管道。
    * 请参阅[沙盒简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。
 
 ## Cloud Manager 环境 {#cloud-manager-environments}
@@ -98,7 +98,7 @@ Cloud Manager 程序代表一系列支持业务计划逻辑分组的 Cloud Manag
 
 ### AEM 创作服务 {#author-services}
 
-AEM 创作服务包含在创建、管理和更新网站内容和数字资源的环境中。通常只有内部用户可以访问创作服务，并在登录屏幕后进行维护。创作服务同时充当创作和预览环境。
+AEM 创作服务包含在创建、管理和更新 Site 内容和数字资源的环境中。通常只有内部用户可以访问创作服务，并在登录屏幕后进行维护。创作服务同时充当创作和预览环境。
 
 ### AEM 发布服务 {#publish-services}
 

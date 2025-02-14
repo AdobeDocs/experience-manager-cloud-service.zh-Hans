@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM Sites翻译历程的上一个文档[翻译内容](configure-connector.md)中，您已了解如何使用AEM翻译项目来翻译内容。 您现在应：
+在 AEM Site 翻译历程的上一个文档[翻译内容](configure-connector.md)中，您已了解如何使用 AEM 翻译项目来翻译内容。现在应：
 
 * 了解什么是翻译项目。
 * 能够创建新的翻译项目。
@@ -69,7 +69,7 @@ ht-degree: 92%
 
 此路径下提供了每种翻译语言的子文件夹，并且您可以选择要发布的语言。
 
-1. 转到&#x200B;**导航** > **站点** > **文件**，然后打开项目文件夹。
+1. 转到&#x200B;**导航** > **Site** > **文件**，然后打开项目文件夹。
 1. 您将在此处看到语言根文件夹和所有其他语言文件夹。选择您要发布的一种或多种本地化语言。
    ![选择语言文件夹](assets/select-language-folder.png)
 1. 选择&#x200B;**管理发布**。
@@ -122,7 +122,7 @@ ht-degree: 92%
 
 您可能会发现，新信息卡上列出的统计数据有所不同。这是因为 AEM 识别自上次翻译以来发生变化的内容，并且仅包括必须翻译的内容。这包括已更新内容的重新翻译以及新内容的首次翻译。
 
-从此时起，您[开始并管理您的翻译作业，就像您处理原始](translate-content.md#using-translation-project)一样。
+从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业](translate-content.md#using-translation-project)。
 
 ### 更新手动创建的翻译项目 {#updating-manual-project}
 
@@ -144,22 +144,22 @@ ht-degree: 92%
    ![选择目标语言](assets/select-target-language.png)
 
 1. 设置新翻译作业的目标语言后，选择作业信息卡底部的省略号按钮以查看作业的详细信息。
-1. 作业在首次创建时为空。通过点按或单击&#x200B;**添加**&#x200B;按钮并使用路径浏览器[将内容添加到作业，就像您最初创建翻译项目](translate-content.md##manually-creating)时所做的那样。
+1. 作业在首次创建时为空。通过点击或单击&#x200B;**添加**&#x200B;按钮并使用路径浏览器将内容添加到作业，[就像您最初创建翻译项目时所做的那样](translate-content.md##manually-creating)。
 
 >[!TIP]
 >
 >路径浏览器的功能强大的过滤器在查找已更新的内容时同样有用。
 >
->您可以在[其他资源部分](#additional-resources)中了解有关路径浏览器的更多信息。
+>有关路径浏览器的更多信息，请参阅[其他资源部分](#additional-resources)。
 
-从此时起，您[开始并管理您的翻译作业，就像您处理原始](translate-content.md#using-translation-project)一样。
+从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业](translate-content.md#using-translation-project)。
 
 ## 历程结束？ {#end-of-journey}
 
-恭喜！您已完成 AEM Sites 翻译历程！您现在应：
+恭喜！您已完成 AEM Site 翻译历程！现在应：
 
 * 基本了解 AEM 的内容管理功能。
-* 了解 AEM 的翻译功能以及它们如何与站点内容相关联。
+* 了解 AEM 的翻译功能以及它们如何与 Site 内容相关联。
 * 能够开始翻译您自己的内容。
 
 您现在可以在 AEM 中翻译您自己的内容了。不过，AEM 是一个功能强大的工具，并且提供了许多其他选项。查看[“其他资源”部分](#additional-resources)中的一些其他资源，详细了解您在此历程中看到的功能。

@@ -1,19 +1,19 @@
 ---
 title: 访问 Admin Console
-description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
+description: 一旦您了解了加入所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 访问 Admin Console {#accessing-admin-console}
 
-在[入门培训历程](overview.md)的这一可选部分中，您将了解首次登录系统之前所需的准备工作。
+在[加入历程](overview.md)的这一部分中，您将了解首次登录系统之前所需的准备工作。
 
 ## 目标 {#objective}
 
@@ -44,13 +44,13 @@ Adobe ID 有三种类型：
 
 * **Federated ID**：使用 Federated ID，组织将完全拥有和控制帐户。为此，您的组织必须将 Adobe Experience Cloud 与您的 SAML2 单点登录 (SSO) 系统集成在一起。这允许用户根据组织的 SSO 系统而不是 Adobe 托管的帐户进行身份验证。
 
-作为系统管理员，您可以决定在设置 Enterprise 或 Federated ID 之前，使用个人 ID 将自己和团队载入 AEM as a Cloud Service。一旦设置了 Enterprise 或 Federated ID，就可以将成员转换为使用这些 ID。
+作为系统管理员，您可以决定在设置 Enterprise 或 Federated ID 之前，使用个人 ID 将自己和团队加入 AEM as a Cloud Service。一旦设置了 Enterprise 或 Federated ID，就可以将成员转换为使用这些 ID。
 
 ## 登录到 Admin Console。 {#steps-admin-console}
 
 在使用 Admin Console 管理团队中的用户之前，您需要确保自己能够正确访问它并拥有适当的权限。
 
-1. 作为系统管理员，您将在载入流程中收到来自 Adobe 的多封电子邮件。查找欢迎电子邮件，其中提供了有关您被授予访问权限的组织名称的信息。
+1. 作为系统管理员，您将在加入流程中收到来自 Adobe 的多封电子邮件。查找欢迎电子邮件，其中提供了有关您被授予访问权限的组织名称的信息。
 
 1. 单击欢迎电子邮件中的&#x200B;**开始使用**&#x200B;链接以导航到 Admin Console。如果找不到电子邮件，请直接在浏览器中输入网址 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 打开 Admin Console。
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 
 通过使用 IMS，AEM as a Cloud Service 整合了 AEM 与 Adobe experience Cloud 其余部分之间的登录体验。拥有多个 Adobe 产品的组织通过在 Admin Console 中创建基于角色的组，然后通过 IMS 分配对多个产品（包括 AEM as a Cloud Service）的访问权限，受益颇多。
 
-在此上线历程的下一步中，您将详细了解产品配置文件和分配用户。
+在此加入历程的下一步中，您将详细了解产品配置文件和分配用户。
 
 ## 联系 Adobe 支持 {#support}
 
@@ -103,11 +103,11 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 * 了解如何通过 Admin Console 查看您作为系统管理员的权限。
 * 知道如何联系 Adobe 支持人员寻求帮助。
 
-您可以通过学习如何[将团队成员分配到 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)来继续您的入门历程，以便您的同事也可以访问 AEMaaCS。
+您可以通过学习如何[将团队成员分配到 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)来继续您的加入历程，以便您的同事也可以访问 AEMaaCS。
 
 ## 其他资源 {#additional-resources}
 
-如果您想了解入门历程以外的内容，以下是额外的可选资源。
+如果您想了解加入历程以外的内容，以下是额外的可选资源。
 
 * [Admin Console 概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) – Admin Console 全面概述
 * [创建或更新您的 Adobe ID](https://helpx.adobe.com/cn/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) – 了解如何创建 Adobe ID 并进行更改，以及如何管理多个 Adobe ID。

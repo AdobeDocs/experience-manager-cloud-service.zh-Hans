@@ -6,19 +6,19 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 如何通过 AEM Assets API 更新您的内容 {#update-your-content}
 
-在[AEM Headless开发人员历程](overview.md)的这一部分中，了解如何使用REST API访问和更新内容片段的内容。
+在 [AEM Headless 开发人员历程](overview.md)的这一部分中，了解如何使用 REST API 访问和更新内容片段的内容。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM Headless 历程的上一个文档[如何通过 AEM 交付 API 访问您的内容](access-your-content.md)中，您已了解如何通过 AEM GraphQL API 访问 AEM 中的 Headless 内容，您现在应该：
+在 AEM Headless 历程的上一个文档[如何通过 AEM 交付 API 访问您的内容](access-your-content.md)中，您已了解如何通过 AEM GraphQL API 访问 AEM 中的 Headless 内容，现在应：
 
 * 深入了解 GraphQL。
 * 了解 AEM GraphQL API 的工作原理。
@@ -336,6 +336,6 @@ API 引用文档中将定义受支持请求的准确格式。
 * [已说明 CORS/AEM](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [视频 – 使用 AEM 针对 CORS 进行开发](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-Hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-Hans)
 * [内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
