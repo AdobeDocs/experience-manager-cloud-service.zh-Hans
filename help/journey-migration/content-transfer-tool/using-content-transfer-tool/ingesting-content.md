@@ -4,9 +4,9 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
+source-wordcount: '3441'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 12%
       * 摄取不支持快速开发环境(RDE)或预览类型的目标，并且即使用户有权访问，摄取也不会显示为可能的目标选择。
       * 虽然可将迁移集同时引入到多个目标中，但目标一次只能是一个正在运行或正在等待引入的目标。
 
-   * **层：**&#x200B;选择该层。 (Author/Publish)。
+   * **层：**&#x200B;选择该层。 （创作/发布）。
       * 如果源是`Author`，则建议将其摄取到目标上的`Author`层。 同样，如果源为`Publish`，则目标也应是`Publish`。
 
    >[!NOTE]
@@ -58,14 +58,14 @@ ht-degree: 12%
       * 非划出摄取是专门为增补摄取用例设计的。 这些摄取旨在包含自现有迁移集中最后一次摄取以来已更改的新内容的增量数量。 在此用例之外执行非划出摄取可能会导致摄取时间非常长。
 
    >[!IMPORTANT]
-   > 如果为提取启用了&#x200B;**划出**&#x200B;设置，则会重置整个现有Cloud Service库，包括对目标存储库实例的用户权限。 对于添加到&#x200B;**管理员**&#x200B;组的管理员用户，此重置也为true，必须将该用户再次添加到管理员组才能开始引入。
+   > 如果为提取启用了&#x200B;**划出**&#x200B;设置，则会重置整个现有存储库，包括对目标Cloud Service实例的用户权限。 对于添加到&#x200B;**管理员**&#x200B;组的管理员用户，此重置也为true，必须将该用户再次添加到管理员组才能开始引入。
 
    * **预复制：**&#x200B;选择`Pre-copy`值
       * 您可以运行可选的预复制步骤，以显着加快引入速度。 有关更多详细信息，请参阅[使用AzCopy摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)。
       * 如果使用预复制引入（对于S3或Azure数据存储），建议先单独运行`Author`引入。 这样可加快稍后运行的`Publish`引入速度。
 
    >[!IMPORTANT]
-   > 仅当属于目标Cloud Service创作服务上的本地&#x200B;**AEM管理员**&#x200B;组时，才能启动到目标环境的引入。 如果无法开始引入，请参阅[无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)以了解更多详细信息。
+   > 仅当您属于目标Cloud Service创作服务上的本地&#x200B;**AEM管理员**&#x200B;组时，才能启动到目标环境的引入。 如果无法开始引入，请参阅[无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)以了解更多详细信息。
 
 1. 选择摄取选项后，可能会显示其持续时间的估计值。 这是基于类似摄取的历史数据的最佳估计。
 
@@ -134,7 +134,7 @@ ht-degree: 12%
 
 ### 无法开始引入 {#unable-to-start-ingestion}
 
-仅当属于目标Cloud Service创作服务上的本地&#x200B;**AEM管理员**&#x200B;组时，才能启动到目标环境的引入。 如果您不属于AEM管理员组，则在尝试开始引入时会看到如下所示的错误。 您可以要求管理员将您添加到本地&#x200B;**AEM管理员**，也可以要求令牌本身，然后可以将它粘贴到&#x200B;**迁移令牌输入**&#x200B;字段中。
+仅当您属于目标Cloud Service创作服务上的本地&#x200B;**AEM管理员**&#x200B;组时，才能启动到目标环境的引入。 如果您不属于AEM管理员组，则在尝试开始引入时会看到如下所示的错误。 您可以要求管理员将您添加到本地&#x200B;**AEM管理员**，也可以要求您提供令牌本身，然后您可以将令牌粘贴到&#x200B;**迁移令牌输入**&#x200B;字段中。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -153,13 +153,13 @@ ht-degree: 12%
 * AEM as a Cloud Service会维护环境状态，并且有时必须出于各种正常原因重新启动迁移服务。 如果该服务正在重新启动，则无法访问，但最终可用。
 * 可能正在实例上运行另一个进程。 例如，如果[AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)正在应用更新，则系统可能忙，并且迁移服务定期不可用。 完成此过程后，可以再次尝试开始引入。
 * 列入允许列表如果已通过Cloud Manager应用[IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，则会阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址是动态的。 目前，唯一的解决方案是在摄取和索引过程中禁用IP允许列表。
-* 可能有其他原因需要调查。 如果摄取或索引继续失败，请联系Adobe客户关怀部门。
+* 可能有其他原因需要调查。 如果摄取或索引继续失败，请联系Adobe客户关怀团队。
 
 ### AEM版本更新和引入 {#aem-version-updates-and-ingestions}
 
 [AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)会自动应用于环境，以使其与最新的AEM as a Cloud Service版本保持同步。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。
 
-如果“AEM版本更新”已载入目标程序，则摄取进程会尝试在启动之前禁用其队列。 完成摄取后，版本更新程序状态将返回到摄取开始前的状态。
+如果“AEM版本更新”已载入目标程序，则摄取过程会尝试在启动之前禁用其队列。 完成摄取后，版本更新程序状态将返回到摄取开始前的状态。
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
-> “AEM版本更新”在环境的管道中运行，并等待管道清除完成。 如果更新排队的时间长于预期时间，请确保自定义工作流不会无意中锁定管道。
+> “AEM版本更新”在环境的管道中运行，并等待管道清除完毕。 如果更新排队的时间长于预期时间，请确保自定义工作流不会无意中锁定管道。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
@@ -258,6 +258,7 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 
 * `Atlas prescale timeout error` — 摄取阶段将尝试将目标云数据库预缩放到与正在摄取的迁移集内容大小一致的合适大小。 在少数情况下，此操作未在预期时间范围内完成。
 * `Exhausted mongo restore retries` — 尝试将引入的迁移集内容的本地转储恢复到云数据库的尝试已耗尽。 这表示MongoDB的整体运行状况/网络问题，该问题通常会在几分钟后自行修复。
+* `Mongo network error` — 有时，建立与MongoDB的连接可能会失败，从而导致摄取过程提早退出并报告为失败。 应尝试简单的摄取重试。
 
 ### 引入已取消 {#ingestion-rescinded}
 
