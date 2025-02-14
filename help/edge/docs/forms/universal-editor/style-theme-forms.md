@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 89%
@@ -53,8 +53,7 @@ Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组�
 * **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义 CSS 变量来轻松跨表单进行自定义、维护和统一样式设置。&lt;! — 有关将自适应Forms块添加到项目的说明，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)。
 
 * Forms的&#x200B;**CSS样式**：为确保正确应用样式，请将`main .form form`选择器中特定于表单的CSS换行。 这可确保样式仅以主内容区域中的表单元素为目标，从而避免与网站其他部分发生冲突。
-
-  示例：
+示例：
 
   ```css
   main .form form input {
@@ -68,9 +67,8 @@ Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组�
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
-## 组件结构
+  
+##组件结构
 
 Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保更轻松地设置样式和管理。您可以使用 CSS 来操作组件以设置样式。
 
