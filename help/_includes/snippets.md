@@ -2,14 +2,14 @@
 source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '1394'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 # 代码片段 {#snippets}
 
 ## Headless 试用推广 {#headless-trials-promotion}
 
-[![通过 30 天试用了解我们的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang-zh-hans)
+[![通过 30 天试用了解我们的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=Headless_exl_banner_campaign&amp;co=US&amp;lang-zh-hans)
 
 ## Edge Delivery Services 创作 {#edge-delivery-authoring}
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 ## 另请参阅 {#see-also}
 
 * [创建 AEM 自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [将 AEM 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将 AEM 自适应表单添加到 AEM Site 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将主题应用于 AEM 自适应表单](/help/forms/using-themes-in-core-components.md)
 * [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [在 AEM 自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
@@ -145,9 +145,9 @@ ht-degree: 97%
 ## Forms Portal{#forms-portal-see-also}
 
 * [Forms Portal 组件简介](/help/forms/configure-forms-portal.md)
-* [在 Sites 页面上列出您的 Form ](/help/forms/list-forms-on-sites-page.md)
+* [在 Site 页面上列出您的 Form ](/help/forms/list-forms-on-sites-page.md)
 * [将 Form 保存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
-* [将 Form 链接添加到 Sites 页面](/help/forms/add-form-link-to-aem-sites-page.md)
+* [将 Form 链接添加到 Site 页面](/help/forms/add-form-link-to-aem-sites-page.md)
 
 ## Marketo Engage{#marketo-engage-see-also}
 
@@ -172,7 +172,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->如果您使用或打算使用前端管道来开发 Sites，则必须事先添加 Cloud Manager IP 允许列表。
+>如果您使用或打算使用前端管道来开发 Site，则必须事先添加 Cloud Manager IP 允许列表。
 >请参阅 [将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
 
 ## IP 允许列表和通用编辑器 {#ip-allow-lists-ue}
@@ -187,24 +187,24 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->通用编辑器与[IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不兼容。
+>通用编辑器与 [IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不兼容。
 >
 >如果您想使用通用编辑器，则必须：
 >
 >* 不启用 IP 允许列表。
->* [运行您自己的Universal Editor服务实例](/help/implementing/universal-editor/local-dev.md)。
+>* [运行您自己的通用编辑器服务实例](/help/implementing/universal-editor/local-dev.md)。
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->您是 Dynamic Media 的新手吗？如需快速、全面地了解 Dynamic Media，请参阅 [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+>您是 Dynamic Media 的新手吗？如需快速、全面地了解 Dynamic Media，请参阅[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
 ## 另请参阅 Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* 您是 Dynamic Media 的新手吗？如需快速、全面地了解 Dynamic Media，请参阅 [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+>* 您是 Dynamic Media 的新手吗？如需快速、全面地了解 Dynamic Media，请参阅[使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 >
 >* 遵循 [Dynamic Media 最佳实践](/help/assets/dynamic-media/dm-best-practices.md)，以获取最大价值。
 >
