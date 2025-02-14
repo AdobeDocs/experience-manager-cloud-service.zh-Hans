@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2cb18eb1bf755df48e2d9d10fabf3cdb95e79e57
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 12%
@@ -46,7 +46,7 @@ ht-degree: 12%
 
 {width=50%，height=50%}![为自适应表单启用post请求](/help/forms/assets/enable-post-request-ue.png)
 
->
+>[!NOTE]
 >
 > * 要将数据发布到内部服务器，请提供资源的路径。 数据将发布到资源的路径。 例如，`/content/restEndPoint`。对于此类 POST 请求，将使用提交请求的身份验证信息。
 > * 要将数据发布到外部服务器，请提供 URL。URL 的格式为 `https://host:port/path_to_rest_end_point`。确保配置以匿名方式处理 POST 请求的路径。
