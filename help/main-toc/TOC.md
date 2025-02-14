@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25b08e824ba5f0ba6d60b334ebb50d13442f590
+source-git-commit: 770cbea467128ce00465a4094efe3a07fc59eca8
 workflow-type: tm+mt
-source-wordcount: '6077'
+source-wordcount: '6071'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 99%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
-         + [2024.11.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-11-0.md)
          + [2024.10.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [2024.8.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
@@ -242,14 +241,14 @@ ht-degree: 99%
    + [Adobe as a Cloud Service 客户管理的密钥](/help/security/customer-managed-keys.md)
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hans)
-   + 上线历程 {#journey}
-      + [上线历程概述](/help/journey-onboarding/overview.md)
+   + 加入历程 {#journey}
+      + [加入历程概述](/help/journey-onboarding/overview.md)
       + [入门准备](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service 术语](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
       + [分配 Cloud Manager 产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [访问 Cloud Manager](/help/journey-onboarding/cloud-manager.md)
-      + [创建项目](/help/journey-onboarding/create-program.md)
+      + [创建程序](/help/journey-onboarding/create-program.md)
       + [创建环境](/help/journey-onboarding/create-environments.md)
       + [分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
       + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
@@ -259,7 +258,7 @@ ht-degree: 99%
    + AEM 参考演示加载项历程 {#demo-add-on}
       + [概述](/help/journey-sites/demos-add-on/overview.md)
       + [安装](/help/journey-sites/demos-add-on/installation.md)
-      + [创建项目](/help/journey-sites/demos-add-on/create-program.md)
+      + [创建程序](/help/journey-sites/demos-add-on/create-program.md)
       + [创建演示 Site](/help/journey-sites/demos-add-on/create-site.md)
       + [启用 Screens](/help/journey-sites/demos-add-on/screens.md)
       + [管理您的演示 Site](/help/journey-sites/demos-add-on/manage.md)
@@ -400,8 +399,8 @@ ht-degree: 99%
          + [个性化概述](/help/sites-cloud/authoring/personalization/overview.md)
          + [使用 ContextHub 数据预览页面](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [使用定位模式创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)
-         + [在多个站点中使用目标内容](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
-         + [如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
+         + [在多个 Sites 中使用目标内容](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
+         + [如何构建目标内容的多 Site 管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [管理活动](/help/sites-cloud/authoring/personalization/activities.md)
          + [管理受众](/help/sites-cloud/authoring/personalization/audiences.md)
          + [创建和管理产品建议（产品建议控制台）](/help/sites-cloud/authoring/personalization/offers.md)
@@ -578,7 +577,6 @@ ht-degree: 99%
       + [Experience League 存档的 Dynamic Media 新闻稿](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [设置 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Dynamic Media 模板](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [配置 Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [可选 – 配置 Dynamic Media，一般设置](/help/assets/dynamic-media/dm-general-settings.md)
       + [可选 – 配置 Dynamic Media，发布设置](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -710,7 +708,6 @@ ht-degree: 99%
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资产](/help/forms/import-export-forms-templates.md)
-      + [使用“管理发布”发布自适应表单](/help/forms/manage-publication.md)
    + 快速入门 {#getting-started-forms}
       + [用例和设置开发环境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [创建贷款申请表](/help/forms/create-adaptive-form-tutorial.md)
@@ -860,7 +857,7 @@ ht-degree: 99%
          + [创建和管理自适应表单的审核](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
-   + 交互式通信{#interactive-communocation}
+   + 交互式通信 {#interactive-communocation}
       + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
       + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
       + [常见问题解答](/help/forms/interactive-communications-faq.md)
@@ -1038,6 +1035,9 @@ ht-degree: 99%
          + [使用规则编辑器将规则添加到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [在表单中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [发布Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [自定义表单样式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表单片段](/help/edge/docs/forms/form-fragments.md)
          + [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
@@ -1145,11 +1145,11 @@ ht-degree: 99%
    + 使用 Cloud Manager {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
       + [AEM 快速启动板](/help/implementing/cloud-manager/aem-home.md)
-      + 项目 {#programs}
-         + [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
-         + [生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + 程序 {#programs}
+         + [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-         + [沙盒项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
@@ -1211,9 +1211,9 @@ ht-degree: 99%
          + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [解决 SSL 证书错误](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 域映射 {#cdn-configurations}
+      + CDN 配置{#cdn-configurations}
          + [添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [管理域映射](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [管理 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允许列表{#ip-allow-lists}
          + [IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1363,7 +1363,7 @@ ht-degree: 99%
       + 国际化{#internationalization}
          + [国际化组件](/help/implementing/developing/extending/i18n/components.md)
          + [国际化 UI 字符串](/help/implementing/developing/extending/i18n/dev.md)
-         + [使用Translator管理词典](/help/implementing/developing/extending/i18n/translator.md)
+         + [使用 Translator 管理词典](/help/implementing/developing/extending/i18n/translator.md)
          + [提取用于翻译的字符串](/help/implementing/developing/extending/i18n/extract.md)
    + 部署到 AEM as a Cloud Service {#deploying}
       + [部署到 AEM as a Cloud Service](/help/implementing/deploying/overview.md)
