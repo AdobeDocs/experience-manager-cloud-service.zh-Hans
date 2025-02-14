@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的内容搜索和索引编制。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
+source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 25%
+source-wordcount: '2767'
+ht-degree: 22%
 
 ---
 
@@ -63,13 +63,13 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->强烈建议不要在`dam:Asset`节点类型中引入新索引（特别是全文索引），因为这些索引可能会与OOTB产品功能冲突，从而导致功能和性能问题。 通常，向当前`damAssetLucene-*`索引版本添加其他属性是对`dam:Asset`节点类型上的查询进行索引的最合适方式（如果随后发布这些更改，将自动合并到索引的新产品版本中）。 如有疑问，请联系Adobe支持以获取建议。
+>强烈建议不要在`dam:Asset`节点类型中引入新索引（特别是全文索引），因为这些索引可能会与OOTB产品功能冲突，从而导致功能和性能问题。 通常，向当前`damAssetLucene-*`索引版本添加其他属性是对`dam:Asset`节点类型上的查询进行索引的最合适方式（如果随后发布这些更改，将自动合并到索引的新产品版本中）。 如有疑问，请联系Adobe支持人员以获取建议。
 
 ## 准备新索引定义 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->如果自定义开箱即用索引，例如`damAssetLucene-8`，请使用CRX DE包管理器(`/crx/packmgr/`)从&#x200B;*Cloud Service环境*&#x200B;复制最新的开箱即用索引定义。 将其重命名为`damAssetLucene-8-custom-1`（或更高版本），并在XML文件中添加自定义项。 这样可确保不会无意中删除所需的配置。 例如，部署到AEM Cloud Service环境的自定义索引中需要`/oak:index/damAssetLucene-8/tika`下的`tika`节点，但本地AEM SDK上不存在该节点。
+>如果自定义开箱即用索引，例如`damAssetLucene-8`，请使用CRX DE包管理器(`/crx/packmgr/`)从&#x200B;*Cloud Service环境*&#x200B;复制最新的开箱即用索引定义。 将其重命名为`damAssetLucene-8-custom-1`（或更高版本），并在XML文件中添加自定义项。 这样可确保不会无意中删除所需的配置。 例如，在部署到AEM Cloud Service环境的自定义索引中，`/oak:index/damAssetLucene-8/tika`下的`tika`节点是必需的，但在本地AEM SDK上不存在。
 
 对于OOTB索引的自定义，请准备一个新的包，其中包含遵循此命名模式的实际索引定义：
 
@@ -319,7 +319,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 当前限制 {#current-limitations}
 
-仅类型`lucene`的索引（将`compatVersion`设置为`2`）支持索引管理。 在内部，可以配置其他索引并将其用于查询，例如Elasticsearch索引。 在AEM as a Cloud Service上，可能实际上针对此索引的Elasticsearch版本运行针对`damAssetLucene`索引编写的查询。 应用程序用户看不到此差异，但某些工具（如`explain`功能）报告不同的索引。 有关Lucene索引与Elasticsearch索引之间的区别，请参阅[Apache Jackrabbit Oak中的Elasticsearch文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。 客户不能也不需要直接配置Elasticsearch索引。
+仅类型`lucene`的索引（将`compatVersion`设置为`2`）支持索引管理。 在内部，可以配置其他索引并将其用于查询，例如Elasticsearch索引。 在AEM as a Cloud Service上，可能实际上针对此索引的Elasticsearch版本运行针对`damAssetLucene`索引编写的查询。 应用程序用户看不到此差异，但某些工具（如`explain`功能）报告不同的索引。 有关Lucene和Elasticsearch索引之间的差异，请参阅Apache Jackrabbit Oak中的[Elasticsearch文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。 客户不能也不需要直接配置Elasticsearch索引。
 
 仅支持内置分析器（即产品附带的分析器）。 不支持自定义分析器。
 
@@ -359,9 +359,50 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 删除索引 {#removing-an-index}
 
-以下内容仅适用于自定义索引。当 AEM 使用产品索引时，无法删除这些索引。
+以下内容仅适用于现成(OOTB)索引的自定义以及完全自定义的索引。 请注意，无法删除原始OOTB索引，因为它们由AEM使用。
 
-通过从客户存储库中删除自定义索引，可以在客户应用程序的更高版本中删除该索引。 从资料档案库中移除的索引不用于AEM中的查询，尽管该索引可能仍会持续存在于实例中一段时间。 有一个定期运行的清理机制，可从实例中清理旧版本的索引。
+为确保系统完整性和稳定性，索引定义在部署后应被视为不可变。 要达到删除自定义索引或自定义的效果，请创建自定义索引或自定义索引的新版本，其定义可有效地模拟索引的删除。
+
+一旦部署了索引的新版本，查询将不再使用同一索引的旧版本。
+较旧的版本不会立即从环境中删除，
+但将可以通过定期运行的清理机制进行垃圾收集。
+经过宽限期后，在发生错误时可以进行恢复
+（索引被删除但可能会更改，目前距此日期还有7天），
+这种清理机制将删除未使用的索引数据，
+和将禁用或从环境中删除旧版本的索引。
+
+下面我们描述了两种可能的情况：删除OOTB索引的自定义项和删除完全自定义索引。
+
+#### 删除开箱即用索引的自定义项
+
+按照[使用OOTB索引的定义作为新版本撤消更改](#undoing-a-change-undoing-a-change)中描述的步骤操作。 例如，如果已部署`damAssetLucene-8-custom-3`，但不再需要自定义，并且要切换回默认的`damAssetLucene-8`索引，则需要添加一个包含`damAssetLucene-8`的索引定义的索引`damAssetLucene-8-custom-4`。
+
+#### 删除完全自定义索引
+
+按照[使用虚拟索引作为新版本撤消更改](#undoing-a-change-undoing-a-change)中描述的步骤操作。 虚拟索引从未用于查询，并且不包含任何数据，因此其效果与不存在索引相同。 对于此示例，您可以将其命名为`/oak:index/acme.product-custom-3`。 此名称替换索引`/oak:index/acme.product-custom-2`。 这种虚拟索引的一个例子是：
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+</acme.product-custom-3>
+```
+
+
 
 ## 索引和查询优化 {#index-query-optimizations}
 
