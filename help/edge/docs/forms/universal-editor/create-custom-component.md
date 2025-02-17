@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
+exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1736'
 ht-degree: 5%
 
 ---
-
 
 # 在WYSIWYG创作中创建自定义组件
 
@@ -173,24 +173,25 @@ Edge Delivery Services Forms提供自定义功能，允许前端开发人员构�
 
 要添加步骤值自定义属性，请在` _<component>.json`文件中将组件模型附加到以下代码行：
 
-```javascript
+    ``javascript
     {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
+    `component`： &quot;number&quot;，
+    `name&quot;： &quot;stepValue&quot;，
+    `label&quot;： &quot;Step Value&quot;，
+    `valueType&quot;： &quot;number&quot;
     }
     ```
-The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
 
-* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-* **label**: The display name of the property as seen in the Property dialog. 
-* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+JSON代码片段为&#x200B;**Range**&#x200B;组件定义了一个名为&#x200B;**Step Value**&#x200B;的自定义属性。 每个字段的划分如下：
 
-You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+* **组件**：指定属性对话框中使用的输入字段的类型。 在这种情况下，`number`表示该字段接受数字值。
+* **name**：属性的标识符，用于在组件的逻辑中引用它。 此处，`stepValue`表示范围的步骤值设置。
+* **label**：在“属性”对话框中看到的属性的显示名称。
+* **valueType**：定义属性所需的数据类型。 `number`确保只允许数字输入。
 
-Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
+您现在可以将`stepValue`用作`range.js`的JSON属性中的自定义属性，并在运行时根据其值实施动态行为。
+
+因此，添加组件定义、组件模型和自定义属性后的最终`_range.json`文件如下所示：
 
 ```javascript
  {
@@ -322,6 +323,10 @@ const OOTBComponentDecorators = ['file-input',
 完成上述步骤后，自定义组件将显示在通用编辑器的表单组件列表中。 然后，可将其拖放到表单部分中。
 
 ![范围组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+下面的屏幕快照显示了添加到组件模型的`range`组件的属性，该组件指定了表单作者可以配置的属性：
+
+![范围组件](/help/edge/docs/forms/universal-editor/assets/range-properties.png)的属性
 
 您现在可以通过添加样式和功能来定义自定义组件的运行时行为。
 
