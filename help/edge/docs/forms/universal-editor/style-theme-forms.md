@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
+source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1844'
 ht-degree: 89%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 89%
 * [属性](https://www.w3schools.com/css/css_syntax.asp)：CSS 属性定义元素的外观。用于设置表单字段的样式的常见属性包括颜色、背景颜色、边框、间距、边距等。
 * [框模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 框模型将 HTML 元素的结构描述为由间距、边框和边距包围的内容区域。
 * Flexbox/网格：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[网格版面](https://www.w3schools.com/css/css_grid.asp)是用于创建响应式和灵活设计的强大工具。
+
 
 ## 为 Adaptive Forms Block 设置表单样式
 
@@ -96,7 +97,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 * 输入：`input` 元素定义要输入的数据类型。例如：文本、数字、电子邮件。
 * 描述（可选）：带类 `field-description` 的 `div` 为用户提供附加信息或说明。
 
-**示例 HTML 结构**
+**HTML 结构示例**
 
 ```HTML
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
