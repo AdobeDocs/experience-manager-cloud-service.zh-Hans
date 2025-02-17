@@ -25,7 +25,7 @@ ht-degree: 100%
 >id="aemcloud_headless_developer_resources"
 >title="AEM Headless 开发人员资源和高级文档"
 >abstract="了解 AEM Headless CMS 以及构建和交付更好的应用程序和更快的体验所需的一切。"
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-Hans" text="AEM Headless 开发人员资源"
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans" text="AEM Headless 开发人员资源"
 
 ## 简介 {#introduction}
 
