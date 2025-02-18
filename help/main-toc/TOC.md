@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: 693576c9da99d3cc74b7cec8a7c7ea08120ae5bb
 workflow-type: tm+mt
-source-wordcount: '6086'
-ht-degree: 99%
+source-wordcount: '6092'
+ht-degree: 98%
 
 ---
 
@@ -782,6 +782,7 @@ ht-degree: 99%
             + [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [自适应表单中的电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [在Experience Manager Forms中&#x200B;管理发布](/help/forms/manage-publication.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
