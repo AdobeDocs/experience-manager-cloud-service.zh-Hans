@@ -4,10 +4,10 @@ description: 了解通用编辑器所需的数据属性和项类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 53%
+source-wordcount: '557'
+ht-degree: 45%
 
 ---
 
@@ -34,18 +34,18 @@ ht-degree: 53%
 | `data-aue-filter` | 定义：<br> — 启用了哪些RTE功能<br> — 可以将哪些组件添加到容器<br> — 可以将哪些资产添加到媒体类型 |
 | `data-aue-label` | 为编辑器中显示的可选项目定义自定义标签 |
 | `data-aue-model` | 定义用于在属性面板中进行基于表单的编辑的模型 |
-| `data-aue-behavior` | 定义检测工具](#behaviors)的[行为，例如，独立文本或图像也可以模拟组件使其可移动或可删除 |
+| `data-aue-behavior` | 已过时。 它曾经定义检测器的行为，允许独立文本、富文本和媒体模拟组件，以便它们也可在页面上移动和删除，从而提供`component`的单个潜在值。 此属性现在被忽略，当具有`data-aue-resource`的项目是容器的直接子项时，它会自动被视为组件。 |
 
 ## 项目类型 {#item-types}
 
-| `data-aue-type` | 描述 | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` | `data-aue-behavior` |
-|---|---|---|---|---|---|---|---|
-| `text` | 文本在 HTML 标记内是可编辑的，但只能采用简单的文本格式，没有可用的富文本格式，例如，这通常用于标题组件 | 可选 | 必填 | 不适用 | 可选 | 不适用 | 可选 |
-| `richtext` | 文本是可编辑的，具有完整的富文本功能。RTE 会显示在右面板中 | 可选 | 必填 | 不适用 | 可选 | 不适用 | 可选 |
-| `media` | 可编辑的是资源，例如图像或视频 | 可选 | 必填 | 可选<br>传递到资源选择器的图像或视频筛选条件列表 | 可选 | 不适用 | 可选 |
-| `container` | 可编辑的行为与组件的容器（也就是段落系统）的行为类似。 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>允许的组件列表 | 可选 | 不适用 | 不适用 |
-| `component` | 可编辑项是一个组件。它不添加额外功能。需要指示DOM的可移动/可删除部分，并需要它来打开属性面板及其字段 | 必填 | 不适用 | 不适用 | 可选 | 可选 | 不适用 |
-| `reference` | 可编辑是一个引用，例如内容片段、体验片段或产品 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>传递到参考选择器的内容片段、产品或体验片段筛选条件列表 | 可选 | 可选 | 不适用 |
+| `data-aue-type` | 描述 | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` |
+|---|---|---|---|---|---|---|
+| `text` | 文本在 HTML 标记内是可编辑的，但只能采用简单的文本格式，没有可用的富文本格式，例如，这通常用于标题组件 | 可选 | 必填 | 不适用 | 可选 | 不适用 |
+| `richtext` | 文本是可编辑的，具有完整的富文本功能。RTE 会显示在右面板中 | 可选 | 必填 | 不适用 | 可选 | 不适用 |
+| `media` | 可编辑的是资源，例如图像或视频 | 可选 | 必填 | 可选<br>传递到资源选择器的图像或视频筛选条件列表 | 可选 | 不适用 |
+| `container` | 可编辑的行为与组件的容器（也就是段落系统）的行为类似。 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>允许的组件列表 | 可选 | 不适用 |
+| `component` | 可编辑项是一个组件。它不添加额外功能。需要指示DOM的可移动/可删除部分，并需要它来打开属性面板及其字段 | 必填 | 不适用 | 不适用 | 可选 | 可选 |
+| `reference` | 可编辑是一个引用，例如内容片段、体验片段或产品 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>传递到参考选择器的内容片段、产品或体验片段筛选条件列表 | 可选 | 可选 |
 
 `data-aue-resource`始终是必需的，因为它是指示内容更改写入位置的主键。
 
@@ -55,10 +55,3 @@ ht-degree: 53%
 当您想要在上下文中编辑时，`data-aue-prop`是必需的，但容器是可选的（如果将该容器设置为内容片段并且prop指向多引用字段）。
 
 * `data-aue-prop`是`data-aue-resource`的主键要更新的属性。
-
-## 行为 {#behaviors}
-
-| `data-aue-behavior` | 描述 |
-|---|---|
-| `component` | 用于允许独立文本、富文本和媒体模仿组件，以便它们也能够在页面上移动和被删除 |
-| `container` | 用于允许容器被视为自己的组件，以便它们可以在页面上移动和删除 |

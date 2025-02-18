@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1623'
 ht-degree: 30%
 
 ---
@@ -193,7 +193,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 发布 {#publish}
 
-选择“发布”按钮，以便将更改发布到实时内容以供读者使用。
+选择“发布”按钮，以便将更改发布到实时内容以供读者使用或预览环境以供审阅。
 
 ![“发布”按钮](assets/publish.png)
 

@@ -4,7 +4,7 @@ description: 通用编辑器是一款现代化的可视化创作工具，旨在�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 13%
@@ -51,7 +51,7 @@ ht-degree: 13%
 * AEM as a Cloud Service（版本`2023.8.13099`或更高版本）
 * AEM 6.5（Service Pack 21或22以及功能包）
 
-本文档介绍如何将通用编辑器与AEM as a Cloud Service结合使用。 有关在AEM 6.5中使用通用编辑器的信息，[请参阅AEM 6.5文档。](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)
+本文档介绍如何将通用编辑器与AEM as a Cloud Service结合使用。 有关在AEM 6.5中使用通用编辑器的信息，[请参阅AEM 6.5文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/Headless/universal-editor/introduction)
 
 ## 功能 {#features}
 

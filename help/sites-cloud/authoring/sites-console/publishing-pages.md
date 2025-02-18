@@ -5,10 +5,10 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 83%
+source-wordcount: '1926'
+ht-degree: 77%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 83%
 
 在创作环境中创建并审核内容后，接下来的目标就是[让内容在您的公共网站（发布环境）中可供使用](/help/sites-cloud/authoring/author-publish.md)。
 
-这称为“发布页面”。当您要从发布环境中删除页面时，此过程称为“取消发布”。在发布和取消发布时，页面会保留在创作环境中以供进一步更改，直到将其删除为止。
+这称为“发布页面”。当您要从发布环境中删除页面时，此过程称为“取消发布”。发布和取消发布时，该页面在删除之前仍可在创作环境中用于进一步更改。
 
 您可以立即发布/取消发布页面，或者在某个预定义的未来日期/时间发布/取消发布页面。
 
 >[!NOTE]
 >
->发布体验片段的过程基本上与发布页面的过程相同，只是从体验片段控制台或编辑器中发布。
+>发布[体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)的过程与发布页面的过程基本相同，只是从体验片段控制台或编辑器中发布。
 
 ## 术语 {#terminology}
 
 在使用 Adobe Experience Manager (AEM) as a Cloud Service 时，您可能会遇到与发布相关的不同术语。
 
 * **发布/取消发布**
-   * 这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
+   * 这些是在发布和/或预览环境中公开提供（或不公开提供）您的内容的主要操作术语。
    * 这些是 AEM 文档中使用的术语。
 * **激活／取消激活**
    * 这两个术语与发布/取消发布同义。
    * 这些术语在 AEM 的早期版本中使用。
 * **复制**
-   * 这些是技术术语，用于描述发布页面时数据（例如，页面内容、文件、代码、用户评论）从一个环境移动到另一个环境。
+   * 这些是技术术语，用于描述发布页面（例如，从作者到预览）时数据（例如，页面内容、文件、代码、用户评论）从一个服务移动到另一个服务。
    * 这些术语主要由开发人员使用。
 
 ## 发布页面 {#publishing-pages-1}
@@ -59,12 +59,9 @@ ht-degree: 83%
 >如果要保留页面顺序，则必须使用[管理发布](#manage-publication)在单个操作中将父页面与任何子页面一起发布。
 >
 >不保证页面顺序：
+>
 >* 只选择要发布的子页面（因为订单信息保存在父页面上）
 >* 如果父页面和子页面是在单独的操作中发布的
-
->[!NOTE]
->
-> 有关其他可能性，请参阅[页面属性的“基本”选项卡](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中的&#x200B;**开启时间**&#x200B;和&#x200B;**关闭时间**。
 
 ### 从页面编辑器发布 {#publishing-from-the-page-editor}
 
@@ -78,7 +75,7 @@ ht-degree: 83%
 
    * 如果不包含要发布的引用，则会直接发布页面。
    * 如果页面包含需要发布的引用，则会在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
-      * 指定要与页面一起发布的资产或标记等，然后使用&#x200B;**Publish**&#x200B;完成该过程。
+      * 指定要与页面一起发布的资产或标记等，然后使用&#x200B;**发布**&#x200B;完成该过程。
       * 使用&#x200B;**取消**&#x200B;中止操作。
 
    ![使用页面发布引用](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -112,7 +109,7 @@ ht-degree: 83%
 
 要使用“快速发布”发布页面，请执行以下操作：
 
-1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**快速Publish**&#x200B;按钮。
+1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**快速发布**&#x200B;按钮。
 
    ![选择要发布的页面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -128,15 +125,7 @@ ht-degree: 83%
 
 #### 管理发布 {#manage-publication}
 
-与&#x200B;**快速发布**&#x200B;相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流程，并且还提供了在以后的日期发布的选项。
-
->[!NOTE]
->
->如果要保留页面顺序，则必须使用&#x200B;**管理发布**&#x200B;在单个操作中将父页面与任何子页面一起发布。
->
->不保证页面顺序：
->* 只选择要发布的子页面（因为订单信息保存在父页面上）
->* 如果父页面和子页面是在单独的操作中发布的
+**管理发布**&#x200B;提供的选项比&#x200B;**快速发布**&#x200B;多，允许包含子页面、自定义引用、发布到预览服务（如果可用）和启动任何适用的工作流，并提供在以后的日期发布的选项。
 
 要使用“管理发布”发布或取消发布页面，请执行以下操作：
 
@@ -150,6 +139,10 @@ ht-degree: 83%
 
      选择发布或取消发布选定的页面。
 
+   * **目标**
+
+     选择您希望发布到发布服务（默认）还是预览服务。 仅当您配置了[预览服务时可用。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+
    * **计划**
 
      选择立即还是在以后的日期执行该操作。
@@ -159,6 +152,10 @@ ht-degree: 83%
      >[!NOTE]
      >
      >如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流程。
+
+     >[!NOTE]
+     >
+     >计划发布的内容与页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中可用的&#x200B;[**开启时间**&#x200B;和&#x200B;**关闭时间**&#x200B;不同，但可在类似情况下使用。
 
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -232,6 +229,8 @@ ht-degree: 83%
    * 在选择保留工作流程包的选项时，定义工作流程包的标题。
 
 1. 单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
+
+
 
 ## 取消发布页面 {#unpublishing-pages}
 

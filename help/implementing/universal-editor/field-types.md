@@ -4,10 +4,10 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 13%
+source-wordcount: '1496'
+ht-degree: 11%
 
 ---
 
@@ -43,11 +43,41 @@ ht-degree: 13%
 
 有关如何定义`fields`数组的详细信息，请参阅本文档的&#x200B;**[字段](#fields)**&#x200B;部分。
 
+您可以通过两种方式将模型链接到组件：使用[组件定义](#component-definition)或通过检测使用[。](#instrumentation)
+
+### 使用组件定义进行链接 {#component-definition}
+
+这是将模型链接到组件的首选方法。 通过执行此操作，您可以在组件定义中集中维护链接，并允许在容器之间拖动组件。
+
+只需在component-definition.json文件的`template`指令中包含`model`属性即可。
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+有关详细信息，请参阅文档[组件定义。](/help/implementing/universal-editor/component-definition.md)
+
+### 使用指令插入进行链接 {#instrumentation}
+
 要将模型定义与组件一起使用，可以使用`data-aue-model`属性。
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>在检查组件定义之前，通用编辑器首先检查模型是否通过指令插入链接并使用模型。 这意味着：
+>
+>* 已通过该工具实现指向模型的链接的项目将继续按原样工作，无需进行更改。
+>* 如果在[组件定义](#component-definition)中以及在检测中定义模型，将始终使用该检测。
 
 ## 加载模型定义 {#loading-model}
 
@@ -111,7 +141,7 @@ ht-degree: 13%
 
 #### AEM标记 {#aem-tag}
 
-AEM标记组件类型会启用AEM标记选取器，该选取器可用于将标记附加到组件。
+AEM标记组件类型启用了AEM标记选取器，该选取器可用于将标记附加到组件。
 
 >[!BEGINTABS]
 
@@ -133,7 +163,7 @@ AEM标记组件类型会启用AEM标记选取器，该选取器可用于将标�
 
 >[!TAB 屏幕快照]
 
-![AEM标记组件类型的屏幕快照](assets/component-types/aem-tag-picker.png)
+![AEM标记组件类型的屏幕截图](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
@@ -650,7 +680,7 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
 
 #### 引用 {#reference}
 
-引用组件类型会启用AEM资源选取器，该选取器可用于选择要引用的任何AEM资源。 与可以选择任何AEM资源的[AEM内容组件](#aem-content)不同，引用组件只能引用资源。 它提供了额外的验证类型。
+引用组件类型启用了AEM资源选取器，该选取器可用于选择要引用的任何AEM资源。 与可以选择任何AEM资源的[AEM内容组件](#aem-content)不同，引用组件只能引用资源。 它提供了额外的验证类型。
 
 引用组件类型允许从当前对象引用另一个数据对象。
 

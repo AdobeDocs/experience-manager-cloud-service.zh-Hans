@@ -4,9 +4,9 @@ description: 详细了解组件定义与通用编辑器之间的JSON约定。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->有关内容建模过程的概述，请参阅文档[用于WYSIWYG创作的Edge Delivery Services建模](/help/edge/wysiwyg-authoring/content-modeling.md)。
+>有关内容建模过程的概述，请参阅文档[使用Edge Delivery Services项目进行WYSIWYG创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)。
 
 >[!TIP]
 >
@@ -33,35 +33,42 @@ ht-degree: 1%
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ ht-degree: 1%
 
 如果组件是页面上的内容，您可以提供以下信息。
 
-* `name`为新创建的组件定义保存到JCR的可选名称。
-   * 仅供参考，通常不会在UI中显示为`title`。
 * `resourceType`定义用于呈现组件的[Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType`。
-* `template`定义要自动写入新创建组件的可选键/值。
+* `template`定义要自动写入新创建的组件的可选键/值，并定义应将哪个筛选器和/或模型应用于该组件。
    * 用于说明性文本、示例文本或占位符文本。
+
+#### `template` {#template}
+
+通过提供可选的键/值对，`template`可以自动将它们写入新组件。 此外，还可以指定以下可选值。
+
+* `model`定义将哪个[模型](/help/implementing/universal-editor/field-types.md#model-structure)与组件一起使用。
+   * 因此，模型将在组件定义中集中维护，并且不需要[指定检测。](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * 这允许您跨容器移动组件。
+* `filter`定义应与组件一起使用的[筛选器](/help/implementing/universal-editor/filtering.md)。
 
 ### `cf` {#cf}
 

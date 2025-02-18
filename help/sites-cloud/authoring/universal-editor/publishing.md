@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
+source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 72%
+source-wordcount: '857'
+ht-degree: 45%
 
 ---
 
@@ -17,19 +17,46 @@ ht-degree: 72%
 
 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 
-## 以作者身份发布内容 {#publishing-content}
-
-当您作为内容作者准备发布您的内容时，您只需点按或单击通用编辑器工具栏中的[发布&#x200B;**图标即可。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)**
-
-您还可以从站点控制台发布[，](/help/sites-cloud/authoring/sites-console/publishing-pages.md)，当您希望发布多个内容页面时，这很有用。
-
->[!NOTE]
+>[!TIP]
 >
->通用编辑器支持[扩展和UI可扩展性](/help/implementing/universal-editor/extending.md)，以允许工作流支持您的发布过程。
+>此处介绍的发布过程是通用编辑器的现成标准功能。
+>
+>通用编辑器还支持[扩展和UI可扩展性](/help/implementing/universal-editor/extending.md)，以允许工作流支持您的发布过程，因此您的发布流程可能会有所不同。
 
-## 与 AEM 的相似之处 {#similarities}
+## 从通用编辑器中发布内容 {#publishing-content}
 
-对于 AEM 用户，使用 Universal Editor 发布内容的过程与以往类似：在 AEM 中发布时，内容会从作者层复制到发布层。
+当您作为内容作者准备发布内容时，您只需点按或单击通用编辑器工具栏中的&#x200B;**发布**&#x200B;图标即可。
+
+![正在发布页面](assets/publish-menu.png)
+
+1. 在通用编辑器中，点按或单击通用编辑器工具栏中的[发布&#x200B;**图标。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)**
+1. 如果您有可用的[预览服务](/help/sites-cloud/authoring/sites-console/previewing-content.md)，则可以选择将内容发布到的位置，即&#x200B;**预览**&#x200B;或&#x200B;**发布**。
+1. **项目**&#x200B;部分列出了发布中包含的内容，包括：
+   * **个新的**&#x200B;项目尚未发布。
+   * 已修改&#x200B;**已发布但自上次发布以来修改的**&#x200B;内容。
+   * **已发布**&#x200B;自该发布以来已发布且未修改的内容。
+
+   根据需要点按或单击这些项目旁边的复选框以包含/排除它们。 点击或单击&#x200B;**扩展**&#x200B;可查看三个类别总计中包含的单个项目，并可单独将其纳入/排除。
+
+   ![发布项目](assets/publish-items.png)
+
+   点按或单击&#x200B;**项目**&#x200B;标题旁边的返回箭头可返回概述。
+
+1. 点按或单击&#x200B;**发布**&#x200B;以进行发布或单击&#x200B;**取消**&#x200B;中止。
+
+## 从通用编辑器中取消发布内容 {#unpublishing-content}
+
+取消发布内容的工作方式与发布内容类似。 当您作为内容作者准备从出版物中删除内容时，请点按或单击通用编辑器工具栏中的省略号图标，然后&#x200B;**取消发布**。
+
+然后，您可以使用与[发布内容时相同的选项来取消发布内容。](#publishing-content)包括从预览实例取消发布（如果可用）以及要包含在取消发布中的项。
+
+## 从站点控制台中发布和取消发布 {#publishing-sites-console}
+
+您还可以从站点控制台](/help/sites-cloud/authoring/sites-console/publishing-pages.md)发布[，当您希望发布多个内容页面或计划发布或取消发布时，这非常有用。
+
+## 与页面编辑器的相似之处 {#similarities}
+
+对于[AEM页面编辑器的用户，](/help/sites-cloud/authoring/page-editor/introduction.md)使用通用编辑器发布内容的过程按您习惯的方式进行：在AEM中发布时，内容将从创作层复制到发布层。
 
 ## 差异 {#differences}
 

@@ -4,7 +4,7 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 41%
@@ -20,7 +20,7 @@ ht-degree: 41%
 >
 >如果您希望深入了解一个示例，则可以查看GitHub上的[通用编辑器示例应用程序](https://github.com/adobe/universal-editor-sample-editable-app)。
 
-尽管通用编辑器可以编辑来自任何源的内容，但本文档将以AEM应用程序为例。 本文档将引导您完成这些步骤。
+尽管通用编辑器可以编辑来自任何源的内容，但本文档将使用AEM应用程序作为示例。 本文档将引导您完成这些步骤。
 
 ## 在页面上插桩 {#instrument-page}
 
@@ -122,7 +122,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ## 定义将为其打开内容路径或`sling:resourceType`通用编辑器。 (可选) {#content-paths}
 
-如果您有一个使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)的现有AEM项目，则在内容作者编辑页面时，页面将自动使用页面编辑器打开。 您可以根据内容路径或`sling:resourceType`定义应打开哪个编辑器AEM，使您的作者体验无缝化，而不管所选内容需要哪个编辑器。
+如果您有一个使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)的现有AEM项目，则在内容作者编辑页面时，页面将自动使用页面编辑器打开。 您可以根据内容路径或`sling:resourceType`定义应打开AEM的编辑器，从而让您的作者获得无缝体验，而不管所选内容需要哪个编辑器。
 
 1. 打开Configuration Manager。
 
@@ -137,10 +137,10 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 1. 单击&#x200B;**保存**。
 
-AEM将按以下顺序打开基于此配置的页面的通用编辑器。
+AEM将按以下顺序打开基于此配置的页面通用编辑器。
 
-1. AEM将检查`Universal Editor Opening Mapping`下的映射，如果内容位于此处定义的任何路径下，则将为其打开通用编辑器。
-1. 对于不在`Universal Editor Opening Mapping`中定义的路径下的内容，AEM检查内容的`resourceType`是否与&#x200B;**Sling：resourceTypes中定义的那些内容匹配，这些类型应由通用编辑器打开**，如果内容与其中一种类型匹配，则在`${author}${path}.html`处为其打开通用编辑器。
+1. AEM将检查`Universal Editor Opening Mapping`下的映射，如果内容位于该处定义的任何路径下，则将为其打开通用编辑器。
+1. 对于不在`Universal Editor Opening Mapping`中定义的路径下的内容，AEM会检查内容的`resourceType`是否与&#x200B;**Sling：resourceTypes中定义的那些内容匹配，这些类型应由通用编辑器打开**，如果内容与其中一种类型匹配，则在`${author}${path}.html`处为其打开通用编辑器。
 1. 否则，AEM将打开页面编辑器。
 
 以下变量可用于在&#x200B;**Universal Editor Opening Mapping**&#x200B;字段中定义映射。
@@ -177,7 +177,7 @@ AEM将按以下顺序打开基于此配置的页面的通用编辑器。
 
 * [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 * [使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
-* [使用 Universal Editor 发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md) – 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
+* [使用 Universal Editor 发布内容](/help/implementing/universal-editor/publishing.md) – 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](authentication.md) – 了解 Universal Editor 如何进行身份验证。
