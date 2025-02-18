@@ -1,36 +1,35 @@
 ---
-title: 通用编辑器 2054.01.16 发行说明
-description: 这些是通用编辑器 2025.01.16 版本的发行说明。
+title: 通用编辑器2025.02.17发行说明
+description: 这些是通用编辑器2025.02.17版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: af04ad7e3f89247580c48c276cb371d78ac56a49
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 77%
+source-wordcount: '206'
+ht-degree: 10%
 
 ---
 
 
-# 通用编辑器 2025.01.16 发行说明 {#release-notes}
+# 通用编辑器2025.02.17发行说明 {#release-notes}
 
-这些是通用编辑器 2025 年 1 月 16 日版本的发行说明。
+这些是通用编辑器2025年2月17日版本的发行说明。
 
 >[!TIP]
 >
->有关Adobe Experience Manager as a Cloud Service的最新发行说明，请参阅[此页面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>关于 Adobe Experience Manager as a Cloud Service 的最新发行说明，请参阅[本页面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 新增功能 {#what-is-new}
 
-* **弃用 CORS 库 &lt; 3.0.0**  - 为确保未来的兼容性并增强安全性，通用编辑器现在仅支持 3.0.0 或更高版本的
-  `@Adobe Express/universal-editor-cors` 库。
-   * 库现在仅通过[`universal-editor-service.adobe.io/cors.js`](http://universal-editor-service.adobe.io/cors.js)提供。
-   * 当用户打开使用旧版本 CORS 库的页面时，会出现弃用通知，以提示他们进行更新。
-* **登陆页的扩展点** - [引入了一个新的扩展点](/help/implementing/universal-editor/customizing.md#extending)，以便扩展功能可以显示在通用编辑器登陆页面的侧边栏中。
-   * 现在开发人员可以指定扩展是否适用于编辑器、登录页面或两者均适用，从而提供更高的定制性和可用性。
+* **发布到预览** — 使用通用编辑器发布（或取消发布）内容时，除了发布环境外，您现在可以选择是否希望发布到预览环境
+   * 这样可在公开发布之前审查您的内容。
+* **可以在组件定义中定义模型和筛选器** — 您现在可以定义组件在组件定义中使用的模型和筛选器。
+   * 此信息可在定义中集中维护，无需在检测中指定。
+   * 这允许您跨容器移动组件。
+* **容器的子元素隐式被视为组件** — 如果将具有`data-aue-resource`的项作为直接子项放入容器中，则它被视为组件，无需指定`data-aue-behavior="component"`即可移动。
 
 ## 其他改进 {#other-improvements}
 
-* **修复了登陆页面上“最近”项目中的无效URL** — 解决了在通用编辑器登陆页面的“最近”列表中显示的URL损坏的问题。
-* **Unified Shell 中的主题同步**  - 通用编辑器现在可以将主题与系统的 Unified Shell 设置动态同步，并在明暗模式之间自动调整。
-   * 这确保了微前端之间，包括片段和资产选择器在内，具有一致的视觉外观。
+* **AEM 6.5资源选择器** — 现在，使用AEM 6.5运行通用编辑器时，可以正确打开6.5资源选择器。
+
