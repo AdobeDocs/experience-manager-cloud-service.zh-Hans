@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1616'
 ht-degree: 30%
 
 ---
@@ -37,7 +37,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ## 访问通用编辑器 {#accessing}
 
-一旦检测到应用程序可以使用通用编辑器，则可在AEM as a Cloud Service内部直接访问通用编辑器，而无需访问AEM。
+一旦检测到应用程序可以使用通用编辑器，则可在AEM as a Cloud Service内直接访问通用编辑器，而无需访问AEM。
 
 ### 在AEM as a Cloud Service中访问 {#accessing-aem}
 
@@ -207,13 +207,13 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ![省略号按钮](assets/ellipsis.png)
 
-例如，可通过省略号按钮访问取消发布页面的功能(即反向&#x200B;[**Publish**&#x200B;按钮](#publish)的操作)。
+例如，可以通过省略号按钮访问取消发布页面的功能（即反向&#x200B;[**发布**&#x200B;按钮](#publish)的操作）。
 
 #### 其他按钮 {#additional-toolbar-buttons}
 
 通用编辑器提供了可自定义且可扩展的创作体验。 如果您在工具栏中看到其他按钮，则表示您的通用编辑器已扩展。
 
-* 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器](/help/implementing/universal-editor/customizing.md)。
+* 有关扩展可能性的详细信息，请参阅[扩展通用编辑器](/help/implementing/universal-editor/extending.md)。
 * 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
 
 ### 编辑器 {#editor}
@@ -308,9 +308,9 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 >
 >使用热键 `Shift+Backspace` 从容器中删除选定的组件。
 
-#### 其他按钮 {#additional-properties-rail-buttons}
+## 其他功能 {#additional-features}
 
-通用编辑器提供了可自定义且可扩展的创作体验。 如果在属性面板中看到其他按钮，则表示已扩展通用编辑器。
+通用编辑器提供了可自定义且可扩展的创作体验。 如果在属性面板或工具栏中看到其他按钮或选项，则表示已扩展通用编辑器。
 
 * 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器](/help/implementing/universal-editor/customizing.md)。
 * 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。

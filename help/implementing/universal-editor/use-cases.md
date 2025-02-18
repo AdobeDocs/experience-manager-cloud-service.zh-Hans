@@ -4,9 +4,9 @@ description: 了解通用编辑器的主要用例，以及如何最好地了解�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -29,12 +29,12 @@ ht-degree: 0%
 
 通用编辑器为您的内容作者提供了一个方便、直观的可视编辑器，而不管他们创建的是什么类型的内容。 两个主要用例包括：
 
-* [WYSIWYG创作](#wysiwyg-authoring) — 使用AEM Sites控制台通过通用编辑器在AEM中管理您的内容和创作页面
+* [WYSIWYG创作](#wysiwyg-authoring) — 使用AEM Sites控制台在AEM中使用通用编辑器管理您的内容和创作页面
 * [Headless创作](#headless-authoring) — 使用通用编辑器在您自己的自定义Headless应用程序中创作内容。
 
 ### 所见即所得的创作 {#wysiwyg-authoring}
 
-如果您已经熟悉AEM，则可以使用站点控制台创建和管理您的页面，然后使用通用编辑器编辑它们。
+如果您已熟悉AEM，则可以使用站点控制台创建和管理您的页面，然后使用通用编辑器编辑这些页面。
 
 通过这种方式，您可以从Sites控制台中提供的工具(如页面管理（复制、粘贴、移动）和工作流)中受益，也可以从现代的通用编辑器中受益。
 
@@ -42,13 +42,13 @@ ht-degree: 0%
 
 1. [使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) — 开始使用AEM中的第一个通用编辑器项目
 1. [创建检测为与通用编辑器一起使用的块](/help/edge/wysiwyg-authoring/create-block.md) — 了解如何检测块以使您的内容可在通用编辑器中编辑
-1. [用于WYSIWYG创作的Edge Delivery Services建模项目](/help/edge/wysiwyg-authoring/content-modeling.md) — 了解如何构建块以有效地对您的内容进行建模以便与通用编辑器一起使用的详细信息。
+1. [用于WYSIWYG创作的Edge Delivery Services项目的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md) — 了解关于如何构建块以有效地对您的内容建模以便与通用编辑器一起使用的详细信息。
 
 阅读这些文档后，您可以返回本页以了解Headless创作用例以及通用编辑器的常规工作方式。
 
 ### Headless创作 {#headless-authoring}
 
-如果您已经拥有Headless应用程序，则可以使用通用编辑器为该应用程序创作内容，并将其内容作为内容片段保留在AEM中。 唯一的要求是应用程序必须配置为允许使用通用编辑器。
+如果您已有Headless应用程序，则可以使用通用编辑器为该应用程序创作内容，并将其内容作为AEM中的内容片段保留。 唯一的要求是应用程序必须配置为允许使用通用编辑器。
 
 如果这是您的用例，作为紧接着的步骤，请参阅以下文档来了解使用通用编辑器的Headless应用程序的示例。
 
@@ -81,4 +81,5 @@ ht-degree: 0%
 
 通用编辑器也可以根据您的项目需求进行调整。
 
-* [自定义通用编辑器创作体验](/help/implementing/universal-editor/customizing.md) — 可以通过筛选编辑器的各个方面或扩展编辑器的功能来调整通用编辑器体验。
+* [自定义通用编辑器](/help/implementing/universal-editor/customizing.md) — 可以通过筛选编辑器的各个方面或扩展编辑器的功能来调整通用编辑器体验。
+* [扩展通用编辑器](/help/implementing/universal-editor/extending.md) — 可以扩展通用编辑器的UI以扩展其功能以满足您的项目需求。

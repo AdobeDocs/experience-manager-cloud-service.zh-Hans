@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 82%
+source-wordcount: '591'
+ht-degree: 72%
 
 ---
 
@@ -16,6 +16,16 @@ ht-degree: 82%
 # 使用 Universal Editor 发布内容 {#publishing}
 
 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
+
+## 以作者身份发布内容 {#publishing-content}
+
+当您作为内容作者准备发布您的内容时，您只需点按或单击通用编辑器工具栏中的[发布&#x200B;**图标即可。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)**
+
+您还可以从站点控制台发布[，](/help/sites-cloud/authoring/sites-console/publishing-pages.md)，当您希望发布多个内容页面时，这很有用。
+
+>[!NOTE]
+>
+>通用编辑器支持[扩展和UI可扩展性](/help/implementing/universal-editor/extending.md)，以允许工作流支持您的发布过程。
 
 ## 与 AEM 的相似之处 {#similarities}
 
