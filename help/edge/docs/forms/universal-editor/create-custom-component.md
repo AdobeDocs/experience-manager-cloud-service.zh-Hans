@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
+source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1725'
 ht-degree: 5%
 
 ---
@@ -173,14 +173,14 @@ Edge Delivery Services Forms提供自定义功能，允许前端开发人员构�
 
 要添加步骤值自定义属性，请在` _<component>.json`文件中将组件模型附加到以下代码行：
 
-    ``javascript
-    {
-    `component`： &quot;number&quot;，
-    `name&quot;： &quot;stepValue&quot;，
-    `label&quot;： &quot;Step Value&quot;，
-    `valueType&quot;： &quot;number&quot;
-    }
-    ```
+```javascript
+      {
+      "component": "number",
+      "name": "stepValue",
+      "label": "Step Value",
+      "valueType": "number"
+      }
+```
 
 JSON代码片段为&#x200B;**Range**&#x200B;组件定义了一个名为&#x200B;**Step Value**&#x200B;的自定义属性。 每个字段的划分如下：
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dfd6384c15ae28556b2366e9230d96a324ed3644
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '6077'
+source-wordcount: '6080'
 ht-degree: 99%
 
 ---
@@ -1034,6 +1034,7 @@ ht-degree: 99%
       + 所见即所得 {#universal-editor}
          + [概述 - Edge Delivery Services Forms 通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [了解WYSIWYG界面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [使用规则编辑器将规则添加到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [在表单中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
@@ -1066,7 +1067,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
-   + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-hans)
+   + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
    + [最佳实践 - 设置和使用](/help/headless/best-practices-setup-use.md)
    + 设置 {#setup}
       + [简介](/help/headless/setup/introduction.md)
@@ -1119,7 +1120,7 @@ ht-degree: 99%
          + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
          + [可选 – 如何使用 AEM 创建单页面应用程序](/help/journey-headless/developer/create-spa.md)
-         + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-hans)
+         + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
       + Headless 内容架构师历程 {#architect}
          + [AEM Headless 内容架构师历程概述](/help/journey-headless/architect/overview.md)
          + [使用 AEM 对 Headless 进行内容建模 – 简介](/help/journey-headless/architect/introduction.md)
