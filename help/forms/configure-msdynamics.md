@@ -3,7 +3,8 @@ title: 如何为自适应Forms配置现成的Microsoft Dynamics 365表单数据�
 description: 了解如何将Microsoft Dynamics 365与自适应Forms集成。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 1%
@@ -34,7 +35,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 >
 >Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.-->
 
-## 先决条件
+## 前提条件
 
 将[!DNL Microsoft® Dynamics 365]与AEM Forms as a Cloud Service集成之前，请确保已执行以下步骤：
 
@@ -51,6 +52,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
    * 启用Microsoft Dynamics 365应用程序
 
    按照视频中的步骤在Power Platform管理中心中创建帐户。 在此视频中，创建了一个试用帐户用于演示。
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **在Azure Active Directory中为[!DNL Microsoft® Dynamics 365]注册应用程序**

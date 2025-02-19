@@ -1,17 +1,17 @@
 ---
-title: 轻松批量创建PDF — 掌握批处理技术 — 生成数百万份PDF文档的自助指南！
+title: 轻松地批量创建PDF — 通过批处理掌握艺术 — 您生成数百万PDF文档的自助指南！
 description: 如何创建以品牌为导向的个性化通信？
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 2%
 
 ---
 
-# AEM Formsas a Cloud Service通信批处理
+# AEM Forms as a Cloud Service Communications批处理
 
 通信允许您创建、收集和提供面向品牌的个性化通信，如业务往来函、文档、报表、索赔处理函、福利通知、每月账单和欢迎资料包。 您可以使用Communications API将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 批处理操作是在计划时间间隔内为一组记录生成多个类型相似的文档的过程。 批处理操作包括两部分：配置（定义）和执行。
 
-* **配置（定义）**：批处理配置存储有关要为生成的文档设置的各种资产和属性的信息。 例如，它提供了有关XDP或PDF模板和要使用的客户数据的位置的详细信息，并为输出文档指定各种属性。
+* **配置（定义）**：批处理配置存储有关要为生成的文档设置的各种资产和属性的信息。 例如，它提供了有关XDP或PDF模板的详细信息、要使用的客户数据的位置以及为输出文档指定各种属性。
 
 * **执行**：若要启动批处理操作，请将批处理配置名称传递给批处理执行API。
 
@@ -48,7 +48,7 @@ ht-degree: 2%
 
 ![数据合并表](assets/communications-batch-structure.png)
 
-**存储**：通信API使用客户拥有的Microsoft Azure Cloud Storage获取客户记录并存储生成的文档。 您可以在Experience Manager Cloud Service配置中配置Microsoft Azure Storage。
+**存储**：通信API使用客户拥有的Microsoft Azure Cloud Storage获取客户记录并存储生成的文档。 您可以在Experience Manager Cloud Service配置中配置Microsoft Azure Storage 。
 
 **应用程序**：要使用批处理API生成和使用文档的自定义应用程序。
 
@@ -65,7 +65,7 @@ ht-degree: 2%
 要使用批处理API，需要满足以下条件：
 
 * [Microsoft Azure Storage帐户](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
-* XDPPDF模板
+* PDF或XDP模板
 * [要与模板合并的数据](#form-data)
 * 具有Experience Manager管理员权限的用户
 
@@ -76,25 +76,26 @@ ht-degree: 2%
 * 将客户数据（XML文件）上传到Microsoft Azure Blob Storage
 * 创建云配置
 * 创建批量数据存储配置
-* 将模板和其他资源上传到Experience Manager FormsCloud Service实例
+* 将模板和其他资源上传到Experience Manager Forms Cloud Service实例
 
-### 将客户数据（XML文件）上传到Azure存储 {#upload-customer-data-to-Azure-Storage}
+### 将客户数据（XML文件）上传到Azure存储
 
 在您的Microsoft Azure Storage上，创建[容器](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs)和[将客户数据(XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)上载到容器内的[文件夹](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)。
+
 >[!NOTE]
 >
 >您可以将Microsoft Azure Storage配置为自动清理输入文件夹，或按计划时间间隔将输出文件夹的内容移动到其他位置。 但是，请确保在引用文件夹的批处理操作仍在运行时不清理文件夹。
 
 ### 创建云配置 {#create-a-cloud-configuration}
 
-云配置可将您的Experience Manager实例连接到Microsoft Azure Storage。 要创建云配置，请执行以下操作：
+云配置会将您的Experience Manager实例连接到Microsoft Azure Storage。 要创建云配置，请执行以下操作：
 
-1. 转到“工具”>“Cloud Service”>“Azure存储”
+1. 转到工具>云服务> Azure存储
 1. 打开文件夹以托管配置，然后单击“创建”。 您可以使用全局文件夹或创建文件夹。
 1. 指定要连接到服务的配置和凭据的名称。 您可以[从Microsoft Azure Storage Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)检索这些凭据。
 1. 单击“创建”。
 
-您的Experience Manager实例现在可以连接到Microsoft Azure Storage，并在需要时使用它来存储和读取内容。
+您的Experience Manager实例现在可以连接到Microsoft Azure Storage，并在需要时使用它存储和读取内容。
 
 ### 创建批量数据存储配置 {#create-batch-data-store-configuration}
 
@@ -112,11 +113,11 @@ ht-degree: 2%
 
 您的Experience Manager实例现在已连接到Microsoft Azure Storage，并已配置为检索数据并将其发送到Microsoft Azure Storage上的特定位置。
 
-### 将模板和其他资源上传到Experience Manager实例 {#upload-templates-and-other-assets-to-your-AEM-instance}
+### 将模板和其他资源上传到您的Experience Manager实例 {#upload-templates-and-other-assets-to-your-AEM-instance}
 
 组织通常有多个模板。 例如，信用卡对帐单、福利对帐单和报销申请都使用一个模板。 将所有此类XDP和PDF模板上传到您的Experience Manager实例。 要上传模板，请执行以下操作：
 
-1. 打开您的Experience Manager实例。
+1. 打开Experience Manager实例。
 1. 转到Forms > Forms和文档
 1. 单击“创建”>“文件夹”，然后创建一个文件夹。 打开文件夹。
 1. 单击“创建”>“文件上载”并上载模板。
@@ -131,7 +132,7 @@ ht-degree: 2%
 
 * **configName**：指定批次的唯一名称。 例如，`wknd-job`
 * **dataSourceConfigUri**：指定批处理数据存储配置的位置。 它可以是配置的相对路径或绝对路径。 例如：`/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**：指定输出格式：PDF和打印。 如果使用PRINT输出类型，请在`printedOutputOptionsList`属性中指定至少一个打印选项。 打印选项由其渲染类型标识，因此目前不允许使用同一渲染类型的多个打印选项。 支持的格式包括PS、PCL、DPL、IPL和ZPL。
+* **outputTypes**：指定输出格式：PDF和PRINT。 如果使用PRINT输出类型，请在`printedOutputOptionsList`属性中指定至少一个打印选项。 打印选项由其渲染类型标识，因此目前不允许使用同一渲染类型的多个打印选项。 支持的格式包括PS、PCL、DPL、IPL和ZPL。
 
 * **模板**：指定模板的绝对或相对路径。 例如，`crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -176,7 +177,7 @@ API参考文档提供了有关API提供的所有参数、身份验证方法和�
 
 >[!MORELIKETHIS]
 >
->* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* 自适应AEM Forms和通信API的[Formsas a Cloud Service架构](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [AEM Forms as a Cloud Service Communications简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 自适应AEM Forms和通信API的[Forms as a Cloud Service架构](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

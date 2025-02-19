@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 14%
@@ -18,7 +18,7 @@ ht-degree: 14%
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
-AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
+AEM Forms as a Cloud Service支持以下CAPTCHA解决方案：
 
 
 * [Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -29,7 +29,7 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
 ## 将AEM Forms环境与Turnstile验证码集成
 
-Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。 AEM Formsas a Cloud Service支持自适应Forms核心组件中的Turnstile Captcha。
+Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。 AEM Forms as a Cloud Service支持在自适应Forms核心组件中使用Turnstile验证码。
 
 ### 将AEM Forms环境与Turnstile验证码集成的先决条件 {#prerequisite}
 
@@ -39,8 +39,8 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 
 要将AEM Forms与Turnstile服务集成，请执行以下步骤：
 
-1. 在AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Turnstile连接，请执行以下步骤：
-   1. 打开您的AEM Formsas a Cloud Service实例。
+1. 在您的AEM Forms as a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Turnstile连接，请执行以下步骤：
+   1. 打开AEM Forms as a Cloud Service实例。
    1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
    1. 在配置浏览器中，创建新文件夹并为其启用云配置，或为现有文件夹启用云配置，如下所述：
 
@@ -54,7 +54,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
          1. 单击&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存配置并退出。
 
 1. 配置Cloud Service：
-   1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**，然后单击&#x200B;**[!UICONTROL Turnstile]**。
+   1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**，然后单击&#x200B;**[!UICONTROL Turnstile]**。
       在ui中![Turnstile](assets/turnstile-in-ui.png)
    1. 选择已创建或已更新的配置容器，如上一节所述。 选择&#x200B;**[!UICONTROL 创建]**。
       ![配置旋转门](assets/config-hcaptcha.png)
@@ -62,19 +62,20 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
    1. 为必备项](#prerequisite)中获取的Turnstile服务[指定&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 名称]**、**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。
    1. 单击&#x200B;**[!UICONTROL 创建]**。
 
-      ![配置Cloud Service以将AEM Forms环境与Turnstile连接](assets/config-turntstile-cc.png)
+      ![配置Cloud Service以将您的AEM Forms环境与Turnstile连接](assets/config-turntstile-cc.png)
 
    >[!NOTE]
+   >
    > 用户无需修改客户端JavaScript验证URL和服务器端验证URL，因为它们已为Turnstile验证预先填充。
 
    配置Turnstile Captcha服务后，即可在基于核心组件的[自适应表单中使用](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)。
 
 ## 在自适应表单中使用 Turnstile {#using-turnstile-core-components}
 
-1. 打开您的AEM Formsas a Cloud Service实例。
+1. 打开AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 1. 选择您的自适应表单并单击&#x200B;**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;部分中，选择配置容器，该配置容器包含将AEM Forms与Turnstile连接的云配置。
-1. 单击“**[!UICONTROL 保存并关闭]**”。
+1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
    如果您没有配置容器，请参阅[配置Turnstile](#steps-to-configure-hcaptcha)部分以了解如何创建配置容器。
 
@@ -90,13 +91,17 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
    * **[!UICONTROL 名称]：**&#x200B;指定验证码组件的名称，您可以在表单和规则编辑器中使用表单组件的唯一名称轻松识别表单组件。
    * **[!UICONTROL 标题]：**&#x200B;指定验证码组件的标题。 您可以允许使用富文本作为标题，也可以通过勾选复选框来隐藏标题。
    * **[!UICONTROL 配置设置]：**&#x200B;选择为Turnstile验证码服务配置的云配置。
+
      >[!NOTE]
+     >
      >* 出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[配置Turnstile](#steps-to-configure-hcaptcha)部分，了解如何创建配置容器以将您的AEM Forms环境连接到Turnstile服务。
 
    * **[!UICONTROL 验证]：**&#x200B;以错误消息的形式提供验证码验证：
 
       * **错误消息：**&#x200B;提供验证码提交失败时向用户显示的错误消息。
+
         >[!NOTE]
+        >
         >* 仅当客户端已填写验证码时，才会显示错误消息。
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。

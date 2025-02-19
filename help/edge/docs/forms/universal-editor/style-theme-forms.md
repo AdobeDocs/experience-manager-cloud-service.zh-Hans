@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
+source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1828'
 ht-degree: 89%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 89%
 
 Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组件并设计其样式的过程：
 
-* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义 CSS 变量来轻松跨表单进行自定义、维护和统一样式设置。&lt;! — 有关将自适应Forms块添加到项目的说明，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)。
+* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义CSS变量来轻松进行自定义、维护和跨表单的统一样式。
 
 * Forms的&#x200B;**CSS样式**：为确保正确应用样式，请将`main .form form`选择器中特定于表单的CSS换行。 这可确保样式仅以主内容区域中的表单元素为目标，从而避免与网站其他部分发生冲突。
 示例：
@@ -80,14 +80,15 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 +++ 通用组件的 HTML 结构
 
 ```HTML
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
-   <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
-   </div>
-</div>
+  <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
+     <label for="{FieldId}" class="field-label">First   Name</label>
+     <input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
+     <div class="field-description" aria-live="polite"  id="{FieldId}-description">
+      Hint - First name should be minimum 3 characters  and a maximum of 10 characters.
+     </div>
+  </div>
 ```
+
 * 类：div 元素包含几个用于定位特定元素和样式的类。您需要 `{Type}-wrapper` 或 `field-{Name}` 类来开发 CSS 选择器以设置表单字段的样式：
    * {Type}：通过字段类型标识组件。例如，文本 (text-wrapper)、数字 (number-wrapper)、日期 (date-wrapper)。
    * {Name}：通过名称标识组件。字段名称只能包含字母数字字符，名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字 (field-first-name field-wrapper)。
@@ -848,55 +849,3 @@ main .form form .field-otp input {
 ## 另请参阅
 
 {{see-more-forms-eds}}
-
-
-<!--
-
-## Styling a form for Adaptive Forms Block
-
-The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
-
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
-
-* **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
-
-  Example:
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
-
--->
-
-<!--
-
-**Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
-
--->
-
-<!--
-
-## Breakdown of forms.css's structure
-
-* **Global variables:** Defined at the `:root` level, these variables (`--variable-name`) store values used throughout the style sheet for consistency and ease of updates. These variables define colors, font sizes, padding, and other properties. You can declare your own Global variables or modify existing ones to change the form's style.
-
-* **Universal selector styles:** The `*` selector matches every element in the form, ensuring styles are applied to all components by default, including setting the `box-sizing` property to `border-box`.
-
-* **Form styling:** This section focuses on styling form components using selectors to target specific HTML elements. It defines styles for input fields, text areas, checkboxes, radio buttons, file inputs, form labels, and descriptions.
-
-* **Wizard styling (if applicable):** This section is dedicated to styling the wizard layout, a multi-step form where each step is displayed one at a time. It defines styles for the wizard container, fieldsets, legends, navigation buttons, and responsive layouts.
-
-* **Media queries:** These provide styles for different screen sizes, adjusting layout and styling accordingly.
-
-* **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
-
--->

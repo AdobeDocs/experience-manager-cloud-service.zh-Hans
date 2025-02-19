@@ -6,7 +6,7 @@ keywords: 验证码&amp；reg；服务，自适应Forms， CAPTCHA挑战，机�
 feature: Adaptive Forms, Core Components
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 24%
@@ -19,16 +19,16 @@ ht-degree: 24%
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
-AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
+AEM Forms as a Cloud Service支持以下CAPTCHA解决方案：
 * [验证码](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
 * [验证码](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 ## 将AEM Forms环境与hCaptcha验证码集成
 
-hCaptcha® 服务项目可保护您的表单免受机器人、垃圾邮件和自动滥用的侵害。它提出一个复选框小部件挑战，并评估用户响应以确定与表单交互的是人还是机器人。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意活动来帮助确保在线交易的安全。
+hCaptcha® 服务项目可保护您的表单免受机器人、垃圾邮件和自动滥用的侵害。它提出一个复选框小组件挑战，并评估用户响应以确定与表单交互的是人还是机器人。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意活动来帮助确保在线交易的安全。
 
-AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 您可以用它来在提交表单时显示复选框构件质询。
+AEM Forms as a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 您可以用它来在提交表单时显示复选框构件质询。
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
@@ -41,8 +41,8 @@ AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 �
 
 要将AEM Forms与hCaptcha®服务集成，请执行以下步骤：
 
-1. 在AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以使用hCaptcha连接AEM Forms环境，请执行以下操作®：
-   1. 打开您的AEM Formsas a Cloud Service实例。
+1. 在您的AEM Forms as a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以使用hCaptcha连接AEM Forms环境，请执行以下操作®：
+   1. 打开AEM Forms as a Cloud Service实例。
    1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
    1. 在配置浏览器中，您可以选择现有文件夹或创建文件夹。 您可以创建文件夹并为其启用云配置选项，也可以为现有文件夹启用云配置选项：
 
@@ -56,7 +56,7 @@ AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 �
          1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存配置并退出对话框。
 
 1. 配置Cloud Service：
-   1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**&#x200B;并选择&#x200B;**[!UICONTROL hCaptcha®]**。
+   1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**，然后选择&#x200B;**[!UICONTROL hCaptcha®]**。
       ui中的![hCaptcha®](assets/hcaptcha-in-ui.png)
    1. 选择已创建或已更新的配置容器，如上一节所述。 选择&#x200B;**[!UICONTROL 创建]**。
       ![配置hCaptcha®](assets/config-hcaptcha.png)
@@ -71,7 +71,7 @@ AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 �
 
 ## 在自适应Forms核心组件®0}中使用hCaptcha}{#using-hCaptcha®-core-components}
 
-1. 打开您的AEM Formsas a Cloud Service实例。
+1. 打开AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 1. 选择自适应表单并选择&#x200B;**[!UICONTROL 属性]**。 对于&#x200B;**[!UICONTROL 配置容器]**&#x200B;选项，请选择包含将AEM Forms与hCaptcha连接的云配置的配置容器®并选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
@@ -88,12 +88,14 @@ AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 �
    * **[!UICONTROL 名称]：**&#x200B;指定验证码组件的名称，您可以在表单和规则编辑器中使用表单组件的唯一名称轻松识别表单组件。
    * **[!UICONTROL 标题]：**&#x200B;指定验证码组件的标题。
    * **[!UICONTROL 配置设置]：** 选择为 hCaptcha® 配置的云配置。
-   * **验证码大小：**&#x200B;您可以选择hCaptcha®质询对话框的显示大小。 使用 **[!UICONTROL 紧凑]** 选项显示小尺寸，使用 **[!UICONTROL 正常]** 选项显示相对大尺寸的 hCaptcha® 挑战对话框。<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
+   * **验证码大小：**&#x200B;您可以选择hCaptcha®质询对话框的显示大小。 使用 **[!UICONTROL 紧凑]**&#x200B;选项显示小尺寸，使用 **[!UICONTROL 正常]**&#x200B;选项显示相对大尺寸的 hCaptcha® 挑战对话框。<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL 验证消息]：**&#x200B;为表单提交时的验证码验证提供验证消息。
    * **[!UICONTROL 脚本验证消息]** - 通过此选项，可输入如果脚本验证失败，所显示的消息。
+
      >[!NOTE]
      >出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[使用hCaptcha®连接您的AEM Forms环境](#connect-your-forms-environment-with-hcaptcha-service)，了解如何创建将AEM Forms环境与hCaptcha®服务连接的Cloud Service。
-     <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
+
+   <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
 
 1. 选择&#x200B;**[!UICONTROL 完成]**。
 

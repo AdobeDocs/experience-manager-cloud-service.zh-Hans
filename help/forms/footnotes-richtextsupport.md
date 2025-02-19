@@ -4,7 +4,7 @@ description: 对自适应表单中的脚注使用富文本编辑器(RTE) 。
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 3%
@@ -51,6 +51,7 @@ ht-degree: 3%
    >* 如果存在重复的脚注，则所有重复的脚注的编号相同。
 
 1. 从组件浏览器中，将&#x200B;**[!UICONTROL 脚注占位符]**&#x200B;组件拖放到自适应表单上。
+
    >[!NOTE]
    >
    >* 在发布实例中，脚注显示在自适应表单上放置&#x200B;**[!UICONTROL 脚注占位符]**&#x200B;组件的位置。

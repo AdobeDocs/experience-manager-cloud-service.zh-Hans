@@ -5,7 +5,8 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服务，自适应Forms， CAPTCHA挑战，机器人预防，核心组件，表单提交安全性，表单垃圾邮件预防
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: ec2f2a2951689ef20434ea6f531089502299bcb5
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 7%
@@ -21,7 +22,7 @@ ht-degree: 7%
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
-AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
+AEM Forms as a Cloud Service支持以下CAPTCHA解决方案：
 
 * [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
 * [验证码](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
@@ -50,7 +51,7 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
 1. 为[!DNL reCAPTCHA Enterprise]配置云服务。
 
-   1. 在您的Experience Manager创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**。
+   1. 在您的Experience Manager创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**。
    1. 选择&#x200B;**[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页面。 选择您创建的配置容器，然后选择&#x200B;**[!UICONTROL 创建]**。
    1. 选择版本为[!DNL reCAPTCHA Enterprise]，并为reCAPTCHA Enterprise服务指定名称、项目ID、站点密钥和API密钥（在步骤2中获取）。
    1. 选择密钥类型，密钥类型应与您在[Google Cloud项目](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)中配置的站点密钥相同，例如，**复选框站点密钥**&#x200B;或&#x200B;**基于得分的站点密钥**。
@@ -73,8 +74,8 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 1. 从Google获取[reCAPTCHA API密钥对](https://www.google.com/recaptcha/admin)。 它包含&#x200B;**站点密钥**&#x200B;和&#x200B;**密钥**。
 
    ![创建Google网站的Google reCAPTCHA配置以获取reCAPTCHA密钥](/help/forms/assets/google-captcha.gif)
-1. 在AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Google的reCAPTCHA服务连接，请执行以下操作：
-   1. 打开您的AEM Formsas a Cloud Service实例。
+1. 在您的AEM Forms as a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Google的reCAPTCHA服务连接，请执行以下操作：
+   1. 打开AEM Forms as a Cloud Service实例。
    1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。 在配置浏览器中，您可以：
    1. 选择现有文件夹或创建文件夹。 您可以创建文件夹并为其启用云配置选项，也可以为现有文件夹启用云配置选项：
 
@@ -88,11 +89,11 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
          1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存配置并退出对话框。
 
 1. 配置Cloud Service：
-   1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**&#x200B;并选择&#x200B;**[!UICONTROL reCAPTCHA]**。
+   1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**，然后选择&#x200B;**[!UICONTROL reCAPTCHA]**。
    1. 选择在上一部分中创建或更新的配置容器。 选择&#x200B;**[!UICONTROL 创建]**。
    1. 指定reCAPTCHA服务的&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 名称]**、**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**（在步骤1中获取）。 选择&#x200B;**[!UICONTROL 创建]**。
 
-   ![配置该Cloud Service以通过Google将您的AEM Forms环境连接到reCAPTCHA服务](/help/forms/assets/captcha-configuration.gif)
+   ![配置Cloud Service以通过Google将您的AEM Forms环境连接到reCAPTCHA服务](/help/forms/assets/captcha-configuration.gif)
 
    配置reCAPTCHA服务后，便可在自适应表单中使用。 有关详细信息，请参阅[在自适应表单中使用Google reCAPTCHA](#using-reCAPTCHA)。
 
@@ -103,7 +104,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 
 要在自适应Forms中使用reCAPTCHA，请执行以下操作：
 
-1. 打开您的AEM Formsas a Cloud Service实例。
+1. 打开AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 1. 选择自适应Forms并选择&#x200B;**[!UICONTROL 属性]**。 对于&#x200B;**[!UICONTROL 配置容器]**&#x200B;选项，请选择包含通过Google将AEM Forms与reCAPTCHA服务连接的云配置的配置容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
@@ -122,14 +123,16 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
    * **[!UICONTROL 标题]：**&#x200B;指定验证码小部件的标题。 默认值为&#x200B;**验证码**。 如果不想显示标题，请选择&#x200B;**隐藏标题**。 选择&#x200B;**允许标题**&#x200B;的富文本，以富文本格式编辑您的标题。 您还可以将标题标记为&#x200B;**未绑定的表单元素**。
    * **[!UICONTROL CAPTCHA配置]：**&#x200B;从&#x200B;**reCAPTCHA Enterprise**&#x200B;或&#x200B;**reCAPTCHA v2**&#x200B;的“设置”下拉列表中选择一个配置，以便显示表单的Google reCAPTCHA对话框：
       1. 如果您选择&#x200B;**reCAPTCHA Enterprise**&#x200B;版本，则密钥类型可以是&#x200B;**复选框**&#x200B;或基于&#x200B;**分数**，它基于您在为网站配置[站点密钥](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)时的选择：
+
          >[!NOTE]
          >
          >* 在将&#x200B;**键类型**&#x200B;作为&#x200B;**复选框**&#x200B;的云配置中，如果验证码验证失败，自定义错误消息将显示为内联消息。
          >* 在&#x200B;**键类型**&#x200B;为&#x200B;**基于**&#x200B;分数的云配置中，如果验证码验证失败，自定义错误消息将显示为弹出消息。
+
       1. 你可以选择大小为&#x200B;**[!UICONTROL 普通]**&#x200B;和&#x200B;**[!UICONTROL 紧凑]**。
 
      >[!NOTE]
-     >* 出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[将您的AEM Forms环境与Google的reCAPTCHA服务连接](#connect-your-forms-environment-with-recaptcha-service-by-google)，了解如何创建将AEM Forms环境与Google的reCAPTCHA服务连接的Cloud Service。
+     >* 出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[通过Google将您的AEM Forms环境与reCAPTCHA服务连接](#connect-your-forms-environment-with-recaptcha-service-by-google)，了解如何创建通过Google将AEM Forms环境与reCAPTCHA服务连接的Cloud Service。
 
    * **验证码大小：**&#x200B;您可以选择Google reCAPTCHA质询对话框的显示大小。 使用&#x200B;**[!UICONTROL 紧凑]**&#x200B;选项可显示小尺寸，使用&#x200B;**[!UICONTROL 普通]**选项可显示相对大尺寸的Google reCAPTCHA质询对话框。
 如果您选择**reCAPTCHA v2**&#x200B;版本：

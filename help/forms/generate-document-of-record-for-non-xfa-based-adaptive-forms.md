@@ -4,7 +4,7 @@ description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-填写或提交表单时，您可以以打印或文档格式保留表单记录。 此记录称为记录文档(DoR)。 这是已提交表单的打印版。 您还可以参考记录文档，以了解客户在以后日期填写的信息，或者使用记录文档以PDF格式将表单和内容存档在一起。
+填写或提交表单时，您可以以打印或文档格式保留表单记录。 此记录称为记录文档(DoR)。 这是已提交表单的打印版。 您还可以参考记录文档以了解客户在以后填写的信息，或者使用记录文档以PDF格式将表单和内容存档在一起。
 
 ![记录文档](assets/document-of-record.png)
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 您可以：
 
 * [生成基于XFA的记录文档](#generate-an-XFA-based-document-of-record)
-* [生成基于Acroform(Acrobat表单PDF)的记录文档](#generate-an-Acroform-based-document-of-record)
+* [生成基于Acroform (Acrobat Form PDF)的记录文档](#generate-an-Acroform-based-document-of-record)
 * [自动生成记录文档](#auto-generate-a-document-of-record)
 
 ## 开始之前 {#components-to-automatically-generate-a-document-of-record}
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 将XFA模板（XDP文件）上传到AEM Forms实例。 执行以下步骤将自适应表单配置为使用XFA模板（XDP文件）作为记录文档的模板：
 
-1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
+1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]。**
 1. 选择表单，然后单击&#x200B;**[!UICONTROL 属性]**。
 1. 在“属性”窗口中，选择&#x200B;**[!UICONTROL 表单模型]**。
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选择自]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 无]**。 您还可以在创建表单时选择表单模型。
@@ -61,13 +61,13 @@ ht-degree: 3%
 
 ## 生成基于Acroform的记录文档 {#generate-an-Acroform-based-document-of-record}
 
-将Adobe AcrobatPDF(Acroform)上传到AEM Forms实例。 执行以下步骤将自适应表单配置为使用Adobe AcrobatPDF(Acroform)作为记录文档的模板：
+将Adobe Acrobat PDF (Acroform)上传到AEM Forms实例。 执行以下步骤将自适应表单配置为使用Adobe Acrobat PDF (Acroform)作为记录文档的模板：
 
-1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
+1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]。**
 1. 选择表单，然后单击&#x200B;**[!UICONTROL 属性]**。
 1. 在“属性”窗口中，选择&#x200B;**[!UICONTROL 表单模型]**。
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选择自]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 无]**。 您还可以在创建表单时选择表单模型。
-1. 在“表单模型”选项卡的“记录文档模板配置”部分中，选择&#x200B;**将表单模板关联为记录文档模板**。 选择此选项时，将显示计算机上可用的所有AcrobatPDF(Acroform)。 选择相应的文件。
+1. 在“表单模型”选项卡的“记录文档模板配置”部分中，选择&#x200B;**将表单模板关联为记录文档模板**。 选择此选项时，将显示计算机上可用的所有Acrobat PDF (Acroform)。 选择相应的文件。
 1. 单击&#x200B;**[!UICONTROL 完成]**
 
 您的自适应表单现在配置为使用Acroform作为记录文档的模板。 下一步是[将自适应表单组件与相应的模板字段绑定](#bind-adaptive-form-components-with-template-fields)。
@@ -84,7 +84,7 @@ ht-degree: 3%
 
 执行以下步骤来配置自适应表单以自动生成记录文档：
 
-1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
+1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]。**
 1. 选择表单，然后单击&#x200B;**[!UICONTROL 属性]**。
 1. 在“属性”窗口中，选择&#x200B;**[!UICONTROL 表单模型]**。
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选择自]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 无]**。 您还可以在创建表单时选择表单模型。
@@ -131,6 +131,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 ![绑定错误](assets/we-retail-binding-error.png)
 
 表单开发人员将自适应Forms字段绑定到相应的记录文档模板。
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 现在，在提交自适应表单时，会创建更新的记录文档。
@@ -346,7 +347,7 @@ When you select a form model, configure Document of Record using options availab
 
    1. **基本属性**：
       * **模板**：如果选择选择自定义模板，请在[!DNL AEM Forms]服务器上浏览选择XDP。 如果要使用[!DNL AEM Forms]服务器上尚未存在的模板，应首先将XDP上载到[!DNL AEM Forms]服务器。
-      * **主题色**：在文档或记录PDF中呈现标题文本和分隔线的颜色。
+      * **主题色**：标题文本和分隔行在文档或记录PDF中呈现的颜色。
       * **字体系列**：记录文档PDF中文本的字体系列。
 
         >[!NOTE]
@@ -420,7 +421,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## 记录文档中面板的表格和列布局 {#table-and-column-layouts-for-panels-in-document-of-record}
 
-您的自适应表单可能很长，包含多个表单字段。 您可能不希望将记录文档另存为自适应表单的精确副本。 现在，您可以选择表格或列布局，以便在记录文档PDF中保存一个或多个自适应表单面板。
+您的自适应表单可能很长，包含多个表单字段。 您可能不希望将记录文档另存为自适应表单的精确副本。 现在，您可以选择表格或列布局来在记录文档PDF中保存一个或多个自适应表单面板。
 
 在生成记录文档之前，在面板的设置中，选择该面板的记录文档的布局（表格或列）。 面板中的字段将在记录文档中相应组织。
 
@@ -453,7 +454,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## 使用自定义XCI文件
 
-XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有一个主XCI文件。 您可以使用自定义XCI文件覆盖主XCI文件中指定的一个或多个默认属性。 例如，您可以选择将字体嵌入文档，或者为所有文档启用标记属性。 下表指定了XCI选项：
+XCI文件可帮助您设置文档的各种属性。 Forms as a Cloud Service有一个主XCI文件。 您可以使用自定义XCI文件覆盖主XCI文件中指定的一个或多个默认属性。 例如，您可以选择将字体嵌入文档，或者为所有文档启用标记属性。 下表指定了XCI选项：
 
 | XCI选项 | 描述 |
 |--- |--- |
@@ -473,15 +474,15 @@ XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有�
 | config/present/common/log/to | 控制日志数据或输出数据写入的位置。 |
 | config/present/output/to | 控制日志数据或输出数据写入的位置。 |
 | config/present/script/currentPage | 指定文档打开时的初始页面。 |
-| config/present/script/exclude | 通知Formsas a Cloud Service要忽略哪些事件。 |
+| config/present/script/exclude | 告知Forms as a Cloud Service要忽略哪些事件。 |
 | config/present/pdf/linearized | 控制输出PDF文档是否线性化。 |
 | config/present/script/runScripts | 控制Forms as a Cloud Service执行的脚本集。 |
-| config/present/pdf/tagged | 控制标签在输出PDF文档中的包含。 在PDF上下文中，标记是文档中包含的其他信息，用于公开文档的逻辑结构。 标记有助于辅助功能和重新设置格式。 例如，页码可能会被标记为工件，这样屏幕阅读器就不会在文本中间朗读它。 虽然标记可以使文档更有用，但它们也会增加文档的大小以及创建文档所需的处理时间。 |
+| config/present/pdf/tagged | 控制是否在输出的PDF文档中包含标记。 在PDF上下文中，标记是文档中包含的其他信息，用于公开文档的逻辑结构。 标记有助于辅助功能和重新设置格式。 例如，页码可能会被标记为工件，这样屏幕阅读器就不会在文本中间朗读它。 虽然标记可以使文档更有用，但它们也会增加文档的大小以及创建文档所需的处理时间。 |
 | config/present/pdf/fontInfo/alwaysEmbed | 指定嵌入到输出文档中的字体。 |
 | config/present/pdf/fontInfo/neverEmbed | 指定不得嵌入到输出文档中的字体。 |
-| config/present/pdf/pdfa/part | 指定文档符合的PDF/A规范的版本号。 |
+| config/present/pdf/pdfa/part | 指定文档遵循的PDF/A规范的版本号。 |
 | config/present/pdf/pdfa/amd | 指定PDF/A规范的修订级别。 |
-| config/present/pdf/pdfa/conformance | 指定PDF/A规范的符合性级别。 |
+| config/present/pdf/pdfa/conformance | 指定与PDF/A规范的一致性级别。 |
 | config/present/pdf/version | 指定要生成的PDF文档的版本 |
 | config/present/pdf/version/map | 指定文档的回退字体 |
 
@@ -490,7 +491,7 @@ XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有�
 > AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表，[单击此处](/help/forms/supported-out-of-the-box-fonts.md)。
 
 
-### 在您的Formsas a Cloud Service环境中使用自定义XCI文件
+### 在您的Forms as a Cloud Service环境中使用自定义XCI文件
 
 1. 将自定义XCI文件添加到您的开发项目中。
 1. 指定以下[内联属性](/help/implementing/deploying/configuring-osgi.md)：
@@ -509,12 +510,12 @@ XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有�
     }
    ```
 
-1. 将项目部署到Cloud Service环境。
+1. 将项目部署到您的Cloud Service环境。
 
-### 在本地Formsas a Cloud Service开发环境中使用自定义XCI文件
+### 在本地Forms as a Cloud Service开发环境中使用自定义XCI文件
 
 1. 将XCI文件上传到本地开发环境。
-1. 打开Cloud ServiceSDK配置管理器。 默认URL为： <http://localhost:4502/system/console/configMgr>。
+1. 打开Cloud Service SDK配置管理器。 默认URL为： <http://localhost:4502/system/console/configMgr>。
 1. 找到并打开&#x200B;**[!UICONTROL 自适应Forms和交互式通信Web渠道]**&#x200B;配置。
 1. 指定XCI文件的路径，然后单击&#x200B;**[!UICONTROL 保存]**。
 

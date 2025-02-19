@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 1%
+source-wordcount: '1705'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 1%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
-| AEM as a Cloud Service | 本文 |
+| AEM as a Cloud Service（核心组件） | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM as a Cloud Service（基础组件） | 本文 |
 
 自适应表单提供多个现成的提交操作(OOTB)。 提交操作可指定要对通过自适应表单收集的数据执行的操作的详细信息。 例如，通过电子邮件发送数据。
 
@@ -49,7 +50,7 @@ ht-degree: 1%
 
 ### 操作字段 {#action-fields}
 
-提交操作可以将隐藏的输入字段(使用HTML[input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input)标记)添加到渲染的表单HTML。 这些隐藏字段可以包含处理表单提交时所需的值。 在提交表单时，这些字段值作为请求参数回发，提交操作可在提交处理期间使用这些参数。 输入字段称为操作字段。
+提交操作可以将隐藏的输入字段(使用HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input)标记)添加到渲染的表单HTML。 这些隐藏字段可以包含处理表单提交时所需的值。 在提交表单时，这些字段值作为请求参数回发，提交操作可在提交处理期间使用这些参数。 输入字段称为操作字段。
 
 例如，如果提交操作还捕获填写表单所用的时间，则可以添加隐藏的输入字段`startTime`和`endTime`。
 
@@ -73,7 +74,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 将文件附加到自适应表单时，服务器会在提交自适应表单后验证文件附件，并在以下情况下返回错误消息：
 
-* 文件附件包括以(.)开头的文件名 字符，包含\ / ： * ？ “ &lt; > | ； % $，或包含为Windows操作系统保留的特殊文件名，如`nul`、`prn`、`con`、`lpt`或`com`。
+* 文件附件包括以(.)字符开头的文件名，其中包含\ / ： * ？ “ &lt; > | ； % $，或包含为Windows操作系统保留的特殊文件名，如`nul`、`prn`、`con`、`lpt`或`com`。
 
 * 文件附件的大小为0字节。
 
@@ -95,9 +96,9 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 提交操作是一个sling：Folder，它包括以下内容：
 
-* **addfields.jsp**：此脚本提供在呈现版本期间添加到HTML文件中的操作字段。 此脚本用于在post.context.jsp脚本中添加提交期间所需的POST输入参数。
+* **addfields.jsp**：此脚本提供在呈现版本期间添加到HTML文件中的操作字段。 使用此脚本可在post.POST.jsp脚本中添加提交期间所需的隐藏输入参数。
 * **dialog.xml**：此脚本类似于CQ组件对话框。 它提供作者自定义的配置信息。 选择提交操作后，这些字段显示在“自适应表单编辑”对话框的“提交操作”选项卡中。
-* POST **post.servlet.jsp**：“提交”Servlet调用此脚本，其中包含您提交的数据以及前面几节中的其他数据。 本页中有关运行操作的任何内容都表示运行post.post.jspPOST。 Forms要将提交操作注册到自适应表单以在“自适应表单编辑”对话框中显示，请将这些属性添加到`sling:Folder`：
+* **post.POST.jsp**： Submit servlet使用您提交的数据以及前面几节中的附加数据调用此脚本。 在此页中对运行操作的任何提及都表示运行post.POST.jsp脚本。 Forms要将提交操作注册到自适应表单以在“自适应表单编辑”对话框中显示，请将这些属性添加到`sling:Folder`：
 
    * 类型为String的&#x200B;**guideComponentType**，值为&#x200B;**fd/af/components/guidesubmittype**
    * **guideDataModel**，类型为String，它指定提交操作适用的自适应表单的类型。 基于XSD的自适应Forms支持&#x200B;<!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd**。 不使用XDP或XSD的自适应Forms支持&#x200B;**basic**。 要在多种类型的自适应Forms上显示操作，请添加相应的字符串。 用逗号分隔每个字符串。 例如，要使某个操作在基于<!--XFA- and -->XSD的自适应Forms上可见，请将该值指定为<!--**xfa** and--> **xsd**。
@@ -108,25 +109,29 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 创建自定义提交操作 {#creating-a-custom-submit-action}
 
-执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，并向您发送电子邮件。 自适应表单包含OOTB提交操作存储内容（已弃用），可将数据保存在CRX存储库中。 此外，AEM还提供可用于发送电子邮件的[邮件](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API。 在使用Mail API之前，通过系统控制台配置Day CQ Mail服务。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
+>[!NOTE]
+>
+> 要了解如何为核心组件创建自定义提交操作，请参阅[为自适应Forms（核心组件）创建自定义提交操作](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)。
 
-1. 登录到URL https://&lt;server>：&lt;port>/crx/de/index.jsp上的CRXDE Lite。 在/apps/custom_submit_action文件夹中创建具有属性sling：Folder并命名为store_and_mail的节点。 创建custom_submit_action文件夹（如果尚不存在）。
+执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，并向您发送电子邮件。 自适应表单包含OOTB提交操作存储内容（已弃用），可将数据保存在CRX存储库中。 此外，AEM还提供可用于发送电子邮件的[Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API。 在使用Mail API之前，通过系统控制台配置Day CQ Mail服务。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
+
+1. 通过URL https://&lt;server>：&lt;port>/crx/de/index.jsp登录CRXDE Lite。 在/apps/custom_submit_action文件夹中创建具有属性sling：Folder并命名为store_and_mail的节点。 创建custom_submit_action文件夹（如果尚不存在）。
 
    ![描述创建具有属性sling：Folder](assets/step1.png)的节点的屏幕截图
 
-1. **提供必需的配置字段。**
+2. **提供必需的配置字段。**
 
    添加存储区操作所需的配置。 将“存储”操作的&#x200B;**cq：dialog**&#x200B;节点从/libs/fd/af/components/guidesubmittype/store复制到/apps/custom_submit_action/store_and_email上的操作文件夹。
 
    ![显示将对话框节点复制到操作文件夹的屏幕截图](assets/step2.png)
 
-1. **提供配置字段以提示作者配置电子邮件。**
+3. **提供配置字段以提示作者配置电子邮件。**
 
    自适应表单还提供向用户发送电子邮件的电子邮件操作。 根据您的要求自定义此操作。 导航到/libs/fd/af/components/guidessubmittype/email/dialog。 将cq：dialog节点中的节点复制到提交操作(/apps/custom_submit_action/store_and_email/dialog)的cq：dialog节点。
 
    ![自定义电子邮件操作](assets/step3.png)
 
-1. **在“自适应表单编辑”对话框中提供操作。**
+4. **在“自适应表单编辑”对话框中提供操作。**
 
    在store_and_email节点中添加以下属性：
 
@@ -138,15 +143,15 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    * **submitService**，类型为&#x200B;**String**，值为&#x200B;**Store and Email**。 有关详细信息，请参阅[计划自定义操作的自适应表单提交](#schedule-adaptive-form-submission)。
 
-1. 打开任意自适应表单。 单击&#x200B;**开始**&#x200B;旁边的&#x200B;**编辑**&#x200B;按钮以打开自适应表单容器的&#x200B;**编辑**&#x200B;对话框。 新操作显示在&#x200B;**提交操作**&#x200B;选项卡中。 选择&#x200B;**存储和电子邮件操作**&#x200B;将显示在对话框节点中添加的配置。
+5. 打开任意自适应表单。 单击&#x200B;**开始**&#x200B;旁边的&#x200B;**编辑**&#x200B;按钮以打开自适应表单容器的&#x200B;**编辑**&#x200B;对话框。 新操作显示在&#x200B;**提交操作**&#x200B;选项卡中。 选择&#x200B;**存储和电子邮件操作**&#x200B;将显示在对话框节点中添加的配置。
 
    ![提交操作配置对话框](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **使用此操作完成任务。**
+6. **使用此操作完成任务。**
 
-   将post.jsp.jspPOST添加到您的操作中。 (/apps/custom_submit_action/store_and_mail/)。
+   将post.POST.jsp脚本添加到操作中。 (/apps/custom_submit_action/store_and_mail/)。
 
-   运行OOTB Store操作(post.store.jspPOST)。 使用CQ在您的代码中提供的[FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String， java.lang.String， org.apache.sling.api.resource.Resource， org.apache.sling.api.SlingHttpServletRequest， org.apache.sling.api.SlingHttpServletResponse) API来运行存储操作。 在JSP文件中添加以下代码：
+   运行OOTB存储区操作（post.POST.jsp脚本）。 使用CQ在您的代码中提供的[FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)&#x200B;(java.lang.String， java.lang.String， org.apache.sling.api.resource.Resource， org.apache.sling.api.SlingHttpServletRequest， org.apache.sling.api.SlingHttpServletResponse) API来运行存储操作。 在JSP文件中添加以下代码：
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -160,7 +165,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    >[!NOTE]
    >
-   >确保JSP文件的名称是post.pository.jspPOST。
+   >确保JSP文件的名称为post.POST.jsp。
 
    ```java
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -206,7 +211,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 当您设置自定义提交操作（包括`submitService`属性）时，表单会在提交时触发[FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html)。 `FormSubmitActionService`使用`getServiceName`方法检索`submitService`属性的值。 根据`submitService`属性的值，服务将调用相应的提交方法。 将`FormSubmitActionService`包含到您上传到[!DNL AEM Forms]服务器的自定义捆绑包中。
 
-将字符串类型的`submitService`属性添加到自定义提交操作的`sling:Folder`中，以便为自适应表单启用[!DNL Adobe Sign]。 只有在自定义提交操作的`submitService`属性值设置完毕后，您才能在自适应表单容器属性的&#x200B;**[!UICONTROL 电子签名]**&#x200B;区域中选择&#x200B;**[!UICONTROL 启用Adobe Sign]**&#x200B;选项。
+将字符串类型的`submitService`属性添加到自定义提交操作的`sling:Folder`中，以便为自适应表单启用[!DNL Adobe Sign]。 只有在自定义提交操作的`submitService`属性值设置完毕后，您才可以选择自适应表单容器属性的&#x200B;**[!UICONTROL 电子签名]**&#x200B;部分中的&#x200B;**[!UICONTROL 启用Adobe Sign]**&#x200B;选项。
 
 <!--As a result of setting an appropriate value for the `submitService` property and enabling [!DNL Adobe Sign], you can schedule the submission of an Adaptive Form to ensure that all configured signers have taken an action on the form. [!DNL Adobe Sign] Configuration Service keeps polling [!DNL Adobe Sign] server at regular intervals to verify the status of signatures. If all the signers complete signing the form, the Submit Action service is started and the form is submitted.-->
 

@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7c65208b948345ea185032a04595ffe65e95876d
+source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
 workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 #### 管理发布
 
-您可以使用“管理发布”工作流跨环境发布或取消发布表单，通常是从作者实例到发布和预览实例。它允许用户以简化的方式发布、取消发布或计划内容的发布。
+您可以使用[管理发布](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)工作流跨环境发布或取消发布表单，通常从创作实例到发布和预览实例。 它允许用户以简化的方式发布、取消发布或计划内容的发布。
 
 #### 自动保存基于核心组件的自适应表单草稿
 
@@ -202,7 +202,7 @@ Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Ado
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 
