@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e5404de6baae5373aefe5d03894864965b47b049
+source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1551'
 ht-degree: 30%
 
 ---
@@ -114,6 +114,9 @@ Java 21运行时用于具有Java 21和Java 17的内部版本，并将逐步应�
 将Java包`org.apache.groovy`或`org.codehaus.groovy`的使用更新到版本4.0.22或更高版本，以确保支持较新的JVM运行时。
 
   可以通过添加第三方依赖项（例如 AEM Groovy Console）间接包含此捆绑包。
+
+* **Aries SPIFly的最低版本：**
+将Java包`org.apache.aries.spifly.dynamic.bundle`的使用更新到版本1.3.6或更高版本，以确保支持更新的JVM运行时。
 
 AEM Cloud Service SDK与Java 21兼容，可用于在执行Cloud Manager管道之前验证项目与Java 21的兼容性。
 
