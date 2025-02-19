@@ -4,7 +4,7 @@ description: 详细了解组件定义与通用编辑器之间的JSON约定。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -41,15 +41,15 @@ ht-degree: 1%
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -58,9 +58,7 @@ ht-degree: 1%
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -87,6 +85,10 @@ ht-degree: 1%
 * `id`唯一标识该组件。
    * 同一`id`的[组件模型](/help/implementing/universal-editor/field-types.md#model-structure)定义了组件的字段。
    * 由于它是唯一的，因此例如可在[筛选器定义](/help/implementing/universal-editor/filtering.md)中使用它来确定可将哪些组件添加到容器中。
+* `model`定义将哪个[模型](/help/implementing/universal-editor/field-types.md#model-structure)与组件一起使用。
+   * 因此，模型将在组件定义中集中维护，并且不需要[指定检测。](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * 这允许您跨容器移动组件。
+* `filter`定义应与组件一起使用的[筛选器](/help/implementing/universal-editor/filtering.md)。
 
 ## `plugins` {#plugins}
 
@@ -114,11 +116,6 @@ ht-degree: 1%
 #### `template` {#template}
 
 通过提供可选的键/值对，`template`可以自动将它们写入新组件。 此外，还可以指定以下可选值。
-
-* `model`定义将哪个[模型](/help/implementing/universal-editor/field-types.md#model-structure)与组件一起使用。
-   * 因此，模型将在组件定义中集中维护，并且不需要[指定检测。](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * 这允许您跨容器移动组件。
-* `filter`定义应与组件一起使用的[筛选器](/help/implementing/universal-editor/filtering.md)。
 
 ### `cf` {#cf}
 
