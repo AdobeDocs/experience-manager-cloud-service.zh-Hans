@@ -4,7 +4,7 @@ description: 使用自适应表单主题设计自适应表单的样式并提供�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -43,11 +43,11 @@ ht-degree: 1%
 
 1. 指定表单以在此主题的&#x200B;**[!UICONTROL 默认预览]**&#x200B;字段中预览主题。 单击&#x200B;**[!UICONTROL 使用默认值]**&#x200B;以使用默认表单预览主题。
 
-1. 指定&#x200B;**[!UICONTROL 配置容器]**。 您可以选择包含帐户Adobe字体配置详细信息的&#x200B;**[!UICONTROL 配置容器]**。 您也可以暂时将此选项保留为空，以后再从[主题属性](#metadata-of-a-theme)中指定详细信息。
+1. 指定&#x200B;**[!UICONTROL 配置容器]**。 您可以选择包含您帐户的Adobe字体配置详细信息的&#x200B;**[!UICONTROL 配置容器]**。 您也可以暂时将此选项保留为空，以后再从[主题属性](#metadata-of-a-theme)中指定详细信息。
 
 1. 单击&#x200B;**[!UICONTROL 创建]**，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;在主题编辑器中打开主题，或单击&#x200B;**[!UICONTROL 完成]**&#x200B;返回主题页面。
 
-### 与Experience Manager6.5 Forms及先前版本上的主题的差异 {#difference-in-themes}
+### 与Experience Manager 6.5 Forms及先前版本上的主题不同 {#difference-in-themes}
 
 在Cloud Service实例上创建的主题：
 
@@ -149,13 +149,13 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>8.</td>
-   <td>Publish On Time</td>
+   <td>准时发布</td>
    <td>是</td>
    <td>自动发布主题的时间。</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>Publish关闭时间</td>
+   <td>发布关闭时间</td>
    <td>是</td>
    <td>自动取消发布主题的时间。</td>
   </tr>
@@ -228,7 +228,7 @@ ht-degree: 1%
      使用特定的背景颜色自定义所有字段组件时，所有字段（如年龄、名称和地址）将继承背景颜色。 如果选择数字框（如年龄）并减小其宽度，则所有数字框的宽度（如年龄）都会减小，家庭中的人数也会减少。 文本框的宽度不会更改。
 
    * **状态：**&#x200B;允许您自定义处于特定状态的对象的样式。 例如，可以指定对象在默认、集中、禁用、悬停或错误状态时的外观。
-   * **属性类别：**&#x200B;样式属性分为不同的类别。 例如，Dimension和位置、文本、背景、边框和效果。 在每个类别下，您都会提供样式信息。 例如，在“背景”下，您可以提供“背景颜色”和“图像和渐变”。
+   * **属性类别：**&#x200B;样式属性分为不同的类别。 例如，Dimension &amp; Position、文本、背景、边框和效果。 在每个类别下，您都会提供样式信息。 例如，在“背景”下，您可以提供“背景颜色”和“图像和渐变”。
 
    * **高级：**&#x200B;允许您向对象添加自定义CSS，这会覆盖可视化控件定义的属性（如果存在重叠）。
 
@@ -456,7 +456,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL 数字框小组件]**。
 1. 侧栏标题将更改为数值框小组件，并显示用于自定义其外观的选项。
-在侧栏中使用**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
+使用侧边栏中的**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
 
 不要选择&#x200B;**[!UICONTROL 数值框小组件]**，请在组件工具栏中选择&#x200B;**[!UICONTROL 字段小组件]**，然后执行上述步骤。 为&#x200B;**[!UICONTROL 字段小组件]**&#x200B;选项选择维度时，除数字框之外的所有文本框都具有相同的大小。
 
@@ -491,12 +491,12 @@ ht-degree: 1%
 
 ### 在主题中使用Web Fonts {#using-web-fonts-in-a-theme}
 
-您现在可以在自适应表单<!-- or interactive communication -->中使用Web服务中提供的字体。 开箱即用的AdobeWeb字体服务[Adobe Fonts](https://fonts.adobe.com/)可作为配置使用。 要使用Adobe Fonts，请创建一个套件，在其中添加字体，然后从[Adobe Fonts](https://fonts.adobe.com/)中获取套件ID。
+您现在可以在自适应表单<!-- or interactive communication -->中使用Web服务中提供的字体。 Adobe的Web字体服务[Adobe Fonts](https://fonts.adobe.com/)现成可用作为配置。 要使用Adobe Fonts，请创建一个套件，在其中添加字体，然后从[Adobe Fonts](https://fonts.adobe.com/)中获取套件ID。
 
 要在Experience Manager中配置Adobe Fonts，请执行以下步骤：
 
-1. 在创作实例中，单击![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;工具&#x200B;]**![锤子](assets/hammer.png) >**[!UICONTROL &#x200B;部署&#x200B;]**>**[!UICONTROL  Cloud Service ]**。
-1. 在&#x200B;**[!UICONTROL Cloud Service]**&#x200B;页面上，导航到并打开&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;选项。 打开配置文件夹，然后单击&#x200B;**[!UICONTROL 创建]**。
+1. 在创作实例中，单击![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL 部署]** > **[!UICONTROL 云服务]**。
+1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，导航到并打开&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;选项。 打开配置文件夹，然后单击&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 创建配置]**&#x200B;对话框中，指定配置的标题，然后单击&#x200B;**[!UICONTROL 创建]**。
 
    您将被重定向到配置页面。
@@ -606,7 +606,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 ## 对其他自适应表单用例的影响 {#impact-on-other-adaptive-form-use-cases}
 
-* **Publish/取消发布表单：**&#x200B;发布表单时，也会发布应用于的主题（如果尚未发布）
+* **发布/取消发布表单：**&#x200B;发布表单时，也会发布应用于的主题（如果尚未发布）
 * **导入/导出表单：**&#x200B;在导入或导出表单时，也将自动导入或导出与其关联的主题。
 * **表单的引用：**&#x200B;表单引用中的“引用”部分包含主题的一个额外条目。
 * **表单的上次修改时间：**&#x200B;更改相关主题时更新。
