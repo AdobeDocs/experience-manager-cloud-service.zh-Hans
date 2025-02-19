@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
+source-git-commit: e4398678566b53412ae0aeea0a18cd0172268ec1
 workflow-type: tm+mt
-source-wordcount: '6081'
+source-wordcount: '6083'
 ht-degree: 98%
 
 ---
@@ -1045,6 +1045,7 @@ ht-degree: 98%
          + [提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [发布Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [自定义表单样式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [响应式模式](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表单片段](/help/edge/docs/forms/form-fragments.md)
          + [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
