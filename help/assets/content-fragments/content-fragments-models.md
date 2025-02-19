@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 84%
@@ -260,6 +260,7 @@ AEM中的内容片段模型定义了[内容片段](/help/assets/content-fragment
 * **[片段引用](#fragment-reference-nested-fragments)**（嵌套片段）
    * 引用其他片段，具体取决于指定的特定模型。
    * 让您包含/检索结构化数据。
+
      >[!NOTE]
      >
      此方法与使用 GraphQL 内容片段的 [Headless 内容投放特别相关](/help/assets/content-fragments/content-fragments-graphql.md)。
@@ -433,6 +434,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个相互引用的
 1. **保存**&#x200B;任何更改。
 
 文件夹允许的内容片段模型解析如下：
+
 * 针对&#x200B;**允许的内容片段模型**&#x200B;的&#x200B;**策略**。
 * 如果为空，请尝试使用继承规则确定策略。
 * 如果继承链未投放结果，请查看 **Cloud Services** 文件夹的配置（也请先直接配置，然后通过继承配置）。
