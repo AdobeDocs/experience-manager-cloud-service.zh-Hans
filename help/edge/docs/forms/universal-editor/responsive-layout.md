@@ -4,9 +4,9 @@ description: 本文介绍了如何使用通用编辑器中的不同模拟器预�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 18%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 18%
 
 ## 在不同设备的响应模式下预览Forms
 
-通用编辑器提供了位于屏幕右上角的&#x200B;**模拟器**&#x200B;图标![模拟器图标](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%，width=3%}，允许您预览不同设备大小的页面，并测试响应式设计的行为以获得更好的用户体验。
+通用编辑器在屏幕的右上角提供了&#x200B;**模拟器**&#x200B;图标，允许您预览不同设备大小的页面，并测试响应式设计的行为，以获得更好的用户体验。
 
 要了解通用编辑器如何在不同屏幕大小上呈现表单，请执行以下步骤：
 
 1. 在通用编辑器中打开窗体以进行编辑。
-1. 选择通用编辑器工具栏上可用的![模拟器图标](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%，width=3%}，然后单击模拟器图标以显示选项。
+2. 选择通用编辑器工具栏上可用的![模拟器图标](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%，width=2%}，然后单击模拟器图标以显示该选项。
 
    ![响应模式](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. 选择用于模拟移动设备和通用编辑器的选项
+3. 选择用于模拟移动设备和通用编辑器的选项
 
    ![响应模式](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%，height=40%}
 
@@ -47,19 +47,19 @@ ht-degree: 18%
     </tr>
     <tr>
         <td>桌面</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="桌面模拟器"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="桌面模拟器" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>平板电脑</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="平板电脑模拟器"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="平板电脑模拟器" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>移动设备</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="移动设备模拟器" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="移动设备模拟器" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>自定义设备</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="自定义设备模拟器"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="自定义设备模拟器" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
