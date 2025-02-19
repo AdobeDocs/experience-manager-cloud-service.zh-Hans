@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 89%
@@ -29,7 +29,7 @@ ht-degree: 89%
 
 ## 了解表单字段类型
 
-在深入研究样式设置之前，让我们回顾一下 Adaptive Forms Block 支持的常见表单[字段类型](/help/edge/docs/forms/form-components.md)：
+在深入研究样式设置之前，让我们回顾一下 Adaptive Forms Block 支持的常见表单[字段类型](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes)：
 
 * 输入字段：包括文本输入、电子邮件输入、密码输入等。
 * 复选框组：用于选择多个选项。
@@ -57,17 +57,17 @@ Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组�
 示例：
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ##组件结构
 
@@ -90,10 +90,10 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 ```
 
 * 类：div 元素包含几个用于定位特定元素和样式的类。您需要 `{Type}-wrapper` 或 `field-{Name}` 类来开发 CSS 选择器以设置表单字段的样式：
-   * {Type}：通过字段类型标识组件。例如，文本 (text-wrapper)、数字 (number-wrapper)、日期 (date-wrapper)。
-   * {Name}：通过名称标识组件。字段名称只能包含字母数字字符，名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字 (field-first-name field-wrapper)。
-   * {FieldId}：它是自动生成的字段的唯一标识符。
-   * {Required}：它是一个布尔值，指示该字段是否为必填字段。
+* {Type}：通过字段类型标识组件。例如，文本 (text-wrapper)、数字 (number-wrapper)、日期 (date-wrapper)。
+* {Name}：通过名称标识组件。字段名称只能包含字母数字字符，名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字 (field-first-name field-wrapper)。
+* {FieldId}：它是自动生成的字段的唯一标识符。
+* {Required}：它是一个布尔值，指示该字段是否为必填字段。
 * 标签：`label` 元素为字段提供描述性文本，并使用 `for` 属性将它与输入元素关联。
 * 输入：`input` 元素定义要输入的数据类型。例如：文本、数字、电子邮件。
 * 描述（可选）：带类 `field-description` 的 `div` 为用户提供附加信息或说明。
