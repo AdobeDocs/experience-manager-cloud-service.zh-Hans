@@ -4,10 +4,10 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
+source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 41%
+source-wordcount: '1018'
+ht-degree: 38%
 
 ---
 
@@ -124,7 +124,9 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 如果您有一个使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)的现有AEM项目，则在内容作者编辑页面时，页面将自动使用页面编辑器打开。 您可以根据内容路径或`sling:resourceType`定义应打开AEM的编辑器，从而让您的作者获得无缝体验，而不管所选内容需要哪个编辑器。
 
-1. 打开Configuration Manager。
+1. 要利用此配置功能，请联系Adobe客户关怀团队以激活对程序的通用编辑器URL服务的访问。
+
+1. 客户关怀团队激活对通用编辑器URL服务的访问权限后，打开配置管理器。
 
    `http://<host>:<port>/system/console/configMgr`
 
@@ -137,7 +139,15 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 1. 单击&#x200B;**保存**。
 
-AEM将按以下顺序打开基于此配置的页面通用编辑器。
+1. 检查您的[外部化器配置](/help/implementing/developing/tools/externalizer.md)，并确保至少已按照以下示例设置本地、作者和发布环境。
+
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+完成这些配置步骤后，AEM将按以下顺序打开页面的通用编辑器。
 
 1. AEM将检查`Universal Editor Opening Mapping`下的映射，如果内容位于该处定义的任何路径下，则将为其打开通用编辑器。
 1. 对于不在`Universal Editor Opening Mapping`中定义的路径下的内容，AEM会检查内容的`resourceType`是否与&#x200B;**Sling：resourceTypes中定义的那些内容匹配，这些类型应由通用编辑器打开**，如果内容与其中一种类型匹配，则在`${author}${path}.html`处为其打开通用编辑器。
