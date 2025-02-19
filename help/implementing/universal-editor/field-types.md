@@ -4,9 +4,9 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1499'
 ht-degree: 11%
 
 ---
@@ -49,18 +49,7 @@ ht-degree: 11%
 
 这是将模型链接到组件的首选方法。 通过执行此操作，您可以在组件定义中集中维护链接，并允许在容器之间拖动组件。
 
-只需在component-definition.json文件的`template`指令中包含`model`属性即可。
-
-```json
-...
-"template":{
-                  "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  ...
-           }
-...
-```
+只需在`component-definition.json`文件的`components`数组中的组件对象中包含`model`属性即可。
 
 有关详细信息，请参阅文档[组件定义。](/help/implementing/universal-editor/component-definition.md)
 
