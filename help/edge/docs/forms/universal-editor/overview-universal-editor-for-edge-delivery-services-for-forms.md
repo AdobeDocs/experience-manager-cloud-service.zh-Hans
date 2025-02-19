@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 35834ba89d20d719a40b930ca672ec242d81d376
+source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 97%
+source-wordcount: '1116'
+ht-degree: 83%
 
 ---
 
@@ -26,109 +26,33 @@ ht-degree: 97%
 ## EDS Forms 通用编辑器的主要功能
 
 
-<div>
- <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="所见即所得界面"> 
-    <h3>所见即所得界面</h3>
-    <p>通用编辑器为表单设计提供了所见即所得的界面，具有预建组件库、响应式设计、基于模板的创建和实时字段修改。</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="规则编辑器">
-    <h3>规则编辑器</h3>
-    <p>规则编辑器允许用户使用事件驱动规则、即时验证和通过轻量级 JavaScript 和 JSON 进行错误处理来创建动态表单交互。</p>
-  </div>
-</a>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="提交操作">
-    <h3>提交操作</h3>
-    <p>提交操作支持后端集成、条件提交逻辑、安全端点和预处理器，简化提交工作流程。</p>
-  </div>
-</a>
-<div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="发布/取消发布">
-    <h3>发布/取消发布</h3>
-    <p>轻松控制表单的可见性——只需单击几下即可直接从编辑器发布或取消发布表单，从而让您实时动态管理可用性和内容更新。</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="响应式模式">
-    <h3>响应式模式 </h3>
-    <p>设计可跨设备（台式机、平板电脑和移动设备）无缝适应的表单。使用响应式模式预览和测试各种屏幕尺寸的表单。</p>
-  </div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="自定义组件">
-    <h3>自定义组件</h3>
-    <p>自定义组件允许开发人员通过创建针对特定组织用例定制的独特元素来扩展表单功能。</p>
-  </div>
-</a>
-</div>
-<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="样式">
-    <h3>样式</h3>
-    <p>使用CSS设置样式可让开发人员自定义表单元素的外观，并创建符合网站美学的美观设计。</p>
-  </div>
-</a>
-    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="预填服务">
-    <h3>预填服务</h3>
-    <p>预填服务会自动使用来自各种来源的相关用户数据填充表单字段，从而减少手动输入并增强用户体验。</p>
-  </div>
-  <a href="https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="A/B 测试">
-    <h3>A/B 测试</h3>
-    <p>A/B 测试（实验）使组织能够尝试不同的表单设计、布局和功能，以确定性能最佳的变体。</p>
-  </div>
-</a>
-</div>
-<div>
-  <a href="https://www.aem.live/developer/martech-integration" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="分析与跟踪">
-    <h3>分析与跟踪</h3>
-    <p>通过内置分析和跟踪功能深入了解用户行为、表单交互和提交率，从而实现数据驱动的表单优化。</p>
-  </div>
-</a>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="与 Adobe Workfront 集成 ">
-    <h3> 任务管理 </h3>
-    <p>与 Adobe Workfront 集成使团队能够管理表单创建和维护任务，确保简化的工作流程。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="数据绑定">
-    <h3>数据绑定</h3>
-    <p>数据绑定实现了表单字段和后端数据源的直接连接，支持结构化投诉数据存储的实时更新和高级数据映射。</p>
-  </div>
-</div>
 
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="编辑器自定义">
-    <h3>编辑器自定义</h3>
-    <p>开发人员可以通过 UI 扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="嵌入表单">
-    <h3>嵌入表单</h3>
-    <p>使用通用编辑器的内置嵌入组件将表单直接嵌入到 Edge Delivery Services Sites，实现无缝的用户体验。</p>
-  </div>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center; cursor: pointer;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="谢谢配置">
-    <h3>谢谢配置</h3>
-    <p>轻松地自定义成功提交表单后向用户显示的确认信息或页面。</p>
-  </div>
-</a>
-</div>
-</div>
+以下是等宽卡片的布局（使用固定宽度列）：
+
+| ![WYSIWYG界面](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![规则编辑器](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![提交操作](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**WYSIWYG界面**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**规则编辑器**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**提交操作**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| 通用编辑器为表单设计提供了所见即所得的界面，具有预建组件库、响应式设计、基于模板的创建和实时字段修改。 | 规则编辑器允许用户使用事件驱动规则、即时验证和通过轻量级 JavaScript 和 JSON 进行错误处理来创建动态表单交互。 | 提交操作支持后端集成、条件提交逻辑、安全端点和预处理器，简化提交工作流程。 |
+
+| ![发布/取消发布](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![响应模式](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![自定义组件](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**发布/取消发布**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **响应模式** | [**自定义组件**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| 轻松控制表单的可见性 — 只需单击几下即可直接从编辑器中发布或取消发布表单。 | 设计可跨设备（台式机、平板电脑和移动设备）无缝适应的表单。使用响应式模式预览和测试各种屏幕尺寸的表单。 | 自定义组件允许开发人员通过创建针对特定组织用例定制的独特元素来扩展表单功能。 |
+
+| ![样式](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![预填充服务](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B测试](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**样式**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **预填充服务**（即将推出） | [**A/B测试**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| 使用CSS设置样式可让开发人员自定义表单元素的外观，并创建符合网站美学的美观设计。 | 预填服务会自动使用来自各种来源的相关用户数据填充表单字段，从而减少手动输入并增强用户体验。 | A/B测试使组织能够试验不同的表单设计、布局和功能，以识别性能最佳的变体。 |
+
+| ![分析和跟踪](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![任务管理](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![数据绑定](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+|:-------------:|:-------------:|:-------------:|
+| [**分析和跟踪**](https://www.aem.live/developer/martech-integration) | **任务管理** | **数据绑定** |
+| 通过内置分析和跟踪功能深入了解用户行为、表单交互和提交率，从而实现数据驱动的表单优化。 | 与 Adobe Workfront 集成使团队能够管理表单创建和维护任务，确保简化的工作流程。 | 数据绑定允许在表单字段和后端数据源之间直接连接，支持实时更新和高级数据映射。 |
+
+| ![编辑器自定义](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![嵌入Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感谢您的配置](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+|:-------------:|:-------------:|:-------------:|
+| **编辑器自定义** | **嵌入Forms** | [**感谢您的配置**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| 开发人员可以通过 UI 扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。 | 使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中。 | 轻松地自定义成功提交表单后向用户显示的确认信息或页面。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
