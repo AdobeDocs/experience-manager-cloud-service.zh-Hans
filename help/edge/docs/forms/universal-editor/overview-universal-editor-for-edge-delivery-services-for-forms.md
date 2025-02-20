@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 5680e2381f5826a48e731906aa8aab9d06a0e944
+source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 84%
+source-wordcount: '1108'
+ht-degree: 77%
 
 ---
 
@@ -36,8 +36,9 @@ ht-degree: 84%
 
 | ![发布/取消发布](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![响应模式](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![自定义组件](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
+
 | [**发布/取消发布**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**响应模式**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**自定义组件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| 轻松控制表单的可见性 — 只需单击几下即可直接从编辑器中发布或取消发布表单。 | 设计可跨设备（台式机、平板电脑和移动设备）无缝适应的表单。使用响应式模式预览和测试各种屏幕尺寸的表单。 | 自定义组件允许开发人员通过创建针对特定组织用例定制的独特元素来扩展表单功能。 |
+| 轻松控制表单的可见性 — 只需单击几下即可直接从编辑器中发布或取消发布表单。 | 设计可在各种设备（台式机、平板电脑和移动设备）之间无缝调整的表单。 使用响应模式预览和测试各种屏幕大小的表单。 | 通过自定义组件，开发人员可创建针对特定组织用例的独特元素，以扩展表单功能。 |
 
 | ![样式](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![预填充服务](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B测试](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -49,10 +50,11 @@ ht-degree: 84%
 | [**分析和跟踪**](https://www.aem.live/developer/martech-integration) | **任务管理** | **数据绑定** |
 | 通过内置分析和跟踪功能深入了解用户行为、表单交互和提交率，从而实现数据驱动的表单优化。 | 与 Adobe Workfront 集成使团队能够管理表单创建和维护任务，确保简化的工作流程。 | 数据绑定允许在表单字段和后端数据源之间直接连接，支持实时更新和高级数据映射。 |
 
-| ![编辑器自定义](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![嵌入Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感谢您的配置](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+| ![验证码](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![嵌入Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感谢您的配置](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
+
 | **编辑器自定义** | **嵌入Forms** | [**感谢您的配置**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| 开发人员可以通过 UI 扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。 | 使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中。 | 轻松地自定义成功提交表单后向用户显示的确认信息或页面。 |
+| 开发人员可以通过UI扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。 | 使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中。 | 轻松自定义在成功提交表单后向用户显示的确认消息或页面。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -254,97 +256,3 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
 * [实际使用监控](https://www.aem.live/developer/rum#authentication)
 
-<!-- 
-
-## Start creating forms
-
-<div>
-
-  <style>
-    .card-container {
-        width: calc(30% - 10px);;
-        margin: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 5px;
-        box-sizing: border-box;
-        transition: background-color 0.3s ease; /* Adding transition effect */
-    }
-    .card-container:hover {
-        background-color: #f0f0f0; /* Changing background color on hover */
-    }
-</style>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Create a form using Google Sheets or Microsoft Excel</b>
-        </a>
-        <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
-        </a>
-        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
-    </div>
-     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Customize a theme</b>
-        </a>
-        <p>Create a consistent brand image by applying the same theme across forms.</p>
-    </div>
-      <div class="card-container">
-        <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Apply field validations</b>
-        </a>
-        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
-    </div> 
-            <div class="card-container">
-        <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use rules to add dynamic behaviour to a form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Use rules to add dynamic behaviour to a form</b>
-        </a>
-        <p>Reuse preconfigured fragments across multiple forms.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/translate-forms.md">  
-            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Translate a form</b>
-        </a>
-        <p>Extend the reach of your forms while keeping costs in check.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/repeatable-forms.md">  
-            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Add repeatable sections</b>
-        </a>
-        <p>Effortlessly create and add repeatable sections to a form.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS"  style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Create custom components</b>
-        </a>
-        <p>Use standard JavaScript and CSS to create components and themes.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Use reCAPTCHA</b>
-        </a>
-        <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
-    </div>
-
-
-</div>
-
-
-</br>
-
-
--->
