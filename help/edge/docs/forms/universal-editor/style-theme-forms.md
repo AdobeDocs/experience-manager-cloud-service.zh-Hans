@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
+source-git-commit: b51be0344d0a7bc4958aee4c99e08630aec7ce41
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 89%
@@ -845,6 +845,9 @@ main .form form .field-otp input {
 此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。表单的 HTML 结构遵循 Adaptive Forms Block 的惯例，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
 
 +++
+
+
+
 
 ## 另请参阅
 
