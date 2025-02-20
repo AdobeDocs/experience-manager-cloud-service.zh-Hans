@@ -4,13 +4,13 @@ description: 本教程可帮助您启动并运行通用编辑器界面。 它可
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: f62bccacd3252422899a35d2b431450c919982de
+exl-id: 90321e81-bb55-48b2-b329-4944bf926309
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1495'
-ht-degree: 5%
+source-wordcount: '1425'
+ht-degree: 0%
 
 ---
-
 
 # 探索通用编辑器(WYSIWYG)界面
 
@@ -233,14 +233,4 @@ Experience Cloud标题位于控制台顶部。 它提供有关Experience Cloud�
 
 ## 另请参阅
 
-* [适用于 AEM Forms 的 Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
-* [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
-* [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
-* [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
-* [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
-* [实际使用监控](https://www.aem.live/developer/rum#authentication)
-
-
+{{universal-editor-see-also}}

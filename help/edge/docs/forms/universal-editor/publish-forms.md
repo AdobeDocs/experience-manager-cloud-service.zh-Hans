@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: d48048ab130805d2be40ac3f7ee60e4269337cb5
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 当您的表单最终完成并可供使用时，您可以发布该表单，以便客户能够访问它来收集和提交数据。 发布功能可确保表单在Edge Delivery上可用，从而使用户能够无缝地与之交互。 此流程允许客户实时填写并提交表单，以确保高效的数据捕获和简化的处理。
 
-## 先决条件
+## 前提条件
 
 * 使用&#x200B;**Edge Delivery Services (EDS)模板**&#x200B;创建的表单。 [了解更多](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)有关创建基于EDS的表单的信息。
 
@@ -126,4 +126,5 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 
 ## 另请参阅
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
+

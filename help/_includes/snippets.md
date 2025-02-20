@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 99%
+source-wordcount: '1392'
+ht-degree: 97%
 
 ---
 # 代码片段 {#snippets}
@@ -56,6 +56,17 @@ ht-degree: 99%
 * [将自适应表单连接到 Microsoft](/help/forms/configure-msdynamics.md)
 * [将自适应表单连接到 Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## 通用编辑器{#universal-editor-see-also}
+
+* [适用于 AEM Forms 的 Edge Delivery Services 快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [发布表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [提交您的表单](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [自定义表单的外观&#x200B;](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [为您的表单创建规则](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [在您的表单中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [为您的表单创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [在响应模式下预览表单](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
 ## 另请参阅 {#see-more-forms-eds}
 
@@ -165,7 +176,7 @@ ht-degree: 99%
 >为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
 >
 >**Cloud Manager IP 允许列表**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>52.254.106.192/28，20.186.185.181，52.254.106.240/28，52.254.107.128/28，52.254.105.192/28，52.254.106.176/28，20.186.185.227，52.254.106.144/28，52.254.107.64/28，20.186.185.239，20.22.83.112，52.254.107.80/28，52.254.107.144/28，52.254.106.224/28，20.14.241.153，52.254.107.0/28，52.254.107.32/28，52.254.106.208/28，40.70.154.136/29，52.254.106.160/28，52.254.107.16/28，52.254.106.0/28，4.152.211.251
 >   
 
 ## 添加 Cloud Manager IP 允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
