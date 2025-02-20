@@ -4,10 +4,10 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '4049'
-ht-degree: 100%
+source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
+workflow-type: tm+mt
+source-wordcount: '4215'
+ht-degree: 95%
 
 ---
 
@@ -206,7 +206,7 @@ data:
 
 **注释**
 
-* 请求属性 `clientIp` 只能与以下谓词一起使用：`equals`、`doesNotEqual`、`in`、`notIn`。当使用 `in` 和 `notIn` 谓词时，还可比较 `clientIp` 与 IP 范围。以下示例实现一个条件以评估客户端 IP 是否在 192.168.0.0/24 的 IP 范围内（即从 192.168.0.0 到 192.168.0.255）：
+* 请求属性 `clientIp` 只能与以下谓词一起使用：`equals`、`doesNotEqual`、`in`、`notIn`。当使用 `in` 和 `notIn` 谓词时，还可比较 `clientIp` 与 IP 范围。以下示例实现一个条件以评估客户端IP是否在192.168.0.0/24的IP范围内（因此从192.168.0.0到192.168.0.255）：
 
 ```
 when:
@@ -235,8 +235,12 @@ when:
 
 `wafFlags` 属性可用在可许可的 WAF 流量过滤规则中，该属性可能会引用以下各项：
 
+#### 恶意流量
+
 | **标志 ID** | **标志名称** | **描述** |
 |---|---|---|
+| 攻击 | 攻击 | 用于标识包含该表中列出的一种或多种攻击类型的请求的标志 |
+| ATTACK-FROM-BAD-IP | 来自错误IP的攻击 | 标识来自`BAD-IP`且包含该表中列出的一种或多种攻击类型的请求的标志 |
 | SQLI | SQL 注入 | SQL 注入是指尝试通过执行任意数据库查询来获取应用程序的访问权限或特权信息。 |
 | BACKDOOR | 后门 | 后门信号是指尝试确定系统上是否存在公共后门文件的请求。 |
 | CMDEXE | 命令执行 | 命令执行是指尝试通过用户输入的任意系统命令来获得控制权限或损坏目标系统。 |
@@ -245,24 +249,37 @@ when:
 | TRAVERSAL | 目录遍历 | 目录遍历是指尝试在整个系统中导航特权文件夹以获取敏感信息。 |
 | USERAGENT | 攻击工具 | 攻击工具是指使用自动化软件来找出安全漏洞或尝试利用已发现的漏洞。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://zh.wikipedia.org/wiki/cn/Log4Shell) |
+| CVE | CVE | 标识CVE的标志。 始终与标志`CVE-<CVE Number>`组合。 请联系Adobe以了解有关Adobe将保护您免受哪些CVE攻击的更多信息。 |
+
+#### 可疑流量
+
+| **标志 ID** | **标志名称** | **描述** |
+|---|---|---|
+| ABNORMALPATH | 异常路径 | 异常路径表示原始路径与规范化路径不同（例如，`/foo/./bar` 标准化为 `/foo/bar`） |
+| BAD-IP | 错误的IP | 标识来自IP的请求的标记标识为已损坏，因为存在被标识为恶意源(`SANS`， `TORNODE`)的标记，或者是因为这些源在发送过多恶意请求后被WAF标识为已损坏的标记 |
 | BHH | 错误跳头 | 错误跳头是指尝试通过格式错误的 Transfer-Encoding (TE) 或 Content-Length (CL) 头或格式良好的 TE 和 CL 头进行 HTTP 走私 |
 | CODEINJECTION | 代码注入 | 代码注入是指尝试通过用户输入的任意应用程序代码命令来获得控制权限或损坏目标系统。 |
-| ABNORMALPATH | 异常路径 | 异常路径表示原始路径与规范化路径不同（例如，`/foo/./bar` 标准化为 `/foo/bar`） |
-| DOUBLEENCODING | 双重编码 | 双重编码检查双重编码 html 字符的规避技术 |
+| COMPRESSED | 检测到压缩 | POST 请求正文被压缩，无法检查。例如，如果指定了`Content-Encoding: gzip`请求标头，且POST正文不是纯文本。 |
+| RESPONSESPLIT | HTTP 响应拆分 | 标识何时将 CRLF 字符作为输入提交给应用程序以将标头注入 HTTP 响应 |
 | NOTUTF8 | 无效编码 | 无效编码可能会促使服务器将请求中的恶意字符转换为响应，从而导致拒绝服务或 XSS |
-| JSON-ERROR | JSON 编码错误 | 指定为在“Content-Type”请求头中包含 JSON，但包含 JSON 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
 | MALFORMED-DATA | 请求正文中的格式错误的数据 | 根据“Content-Type”请求头，格式错误的 POST、PUT 或 PATCH 请求正文。例如，如果指定了“Content-Type: application/x-www-form-urlencoded”请求头并包含 POST 正文 json。这通常是编程错误、自动或恶意请求。需要代理 3.2 版或更高版本。 |
 | SANS | 恶意 IP 流量 | 已报告从事恶意活动的 IP 地址的 [SANS Internet Storm Center](https://isc.sans.edu/) 列表。 |
 | NO-CONTENT-TYPE | 缺少“Content-Type”请求头 | 不具有“Content-Type”请求头的 POST、PUT 或 PATCH 请求。在此示例中，默认情况下，应用程序服务器应假定“Content-Type: text/plain; charset=us-ascii”。许多自动和恶意请求可能缺少“内容类型”。 |
 | NOUA | 无用户代理 | 表示请求不包含“User-Agent”标头或未设置标头值。 |
-| TORNODE | Tor 流量 | Tor 是可以隐藏用户身份的软件。Tor 流量尖峰可能表明攻击者正在试图掩盖其位置。 |
 | NULLBYTE | 空字节 | 空字节通常不会出现在请求中，并表明请求的格式错误且可能是恶意请求。 |
+| OOB域 | 带外域 | 带外域通常在渗透测试期间使用，以识别允许网络访问的漏洞。 |
 | PRIVATEFILE | 私有文件 | 私有文件是具有机密性的，例如 Apache `.htaccess` 文件或可能泄露敏感信息的配置文件 |
 | SCANNER | 扫描程序 | 标识常用的扫描服务和工具 |
-| RESPONSESPLIT | HTTP 响应拆分 | 标识何时将 CRLF 字符作为输入提交给应用程序以将标头注入 HTTP 响应 |
-| XML-ERROR | XML 编码错误 | 指定为在“Content-Type”请求头中包含 XML，但包含 XML 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
-| DATACENTER | 数据中心 | 标识请求来自已知托管服务提供商。此类流量通常与实际最终用户无关。 |
 
+#### 其他流量
+
+| **标志 ID** | **标志名称** | **描述** |
+|---|---|---|
+| DATACENTER | 数据中心 | 标识请求来自已知托管服务提供商。此类流量通常与实际最终用户无关。 |
+| DOUBLEENCODING | 双重编码 | 双重编码检查双重编码 html 字符的规避技术 |
+| JSON-ERROR | JSON 编码错误 | 指定为在“Content-Type”请求头中包含 JSON，但包含 JSON 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
+| TORNODE | Tor 流量 | Tor 是可以隐藏用户身份的软件。Tor 流量尖峰可能表明攻击者正在试图掩盖其位置。 |
+| XML-ERROR | XML 编码错误 | 指定为在“Content-Type”请求头中包含 XML，但包含 XML 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
 
 ## 注意事项 {#considerations}
 
@@ -282,7 +299,7 @@ when:
 
 **示例 1**
 
-此规则阻止来自 **IP 192.168.1.1** 的请求：
+此规则阻止来自&#x200B;**IP192.168.1.1**&#x200B;的请求：
 
 ```
 kind: "CDN"
@@ -322,7 +339,7 @@ data:
 
 **示例 3**
 
-此规则会阻止包含查询参数 `foo` 的发布请求，但允许来自 IP 192.168.1.1 的每个请求：
+此规则阻止发布时包含查询参数`foo`的请求，但允许来自IP 192.168.1.1的每个请求：
 
 ```
 kind: "CDN"
