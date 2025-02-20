@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 30%
+source-wordcount: '1660'
+ht-degree: 29%
 
 ---
 
@@ -66,6 +66,10 @@ UI分为以下几个主要区域。
 * [属性面板](#properties-rail)
 
 ![Universal Editor UI](assets/ui.png)
+
+>[!TIP]
+>
+>通用编辑器提供了许多[自定义选项](/help/implementing/universal-editor/customizing.md)和[扩展点](/help/implementing/universal-editor/extending.md)，它们可以修改并添加到编辑器的功能中。 因此，您可能会看到不同于此处记录的标准选项。
 
 ### Experience Cloud 标题 {#experience-cloud-header}
 

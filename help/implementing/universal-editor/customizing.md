@@ -4,10 +4,10 @@ description: 了解用于自定义通用编辑器的不同选项，以支持内�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 10%
+source-wordcount: '334'
+ht-degree: 8%
 
 ---
 
@@ -28,6 +28,16 @@ ht-degree: 10%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## 禁用发布以预览 {#publish-preview}
+
+某些创作工作流可能会阻止发布到[预览服务](/help/sites-cloud/authoring/sites-console/previewing-content.md)（如果可用）。
+
+因此，可以通过添加以下元数据在应用程序中完全禁止发布窗口中的&#x200B;**预览**&#x200B;选项。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## 筛选组件 {#filtering-components}
