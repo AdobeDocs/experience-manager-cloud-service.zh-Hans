@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1f77a8adc461a78bb40efc608d39686e67a9811a
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '6083'
-ht-degree: 98%
+source-wordcount: '6091'
+ht-degree: 99%
 
 ---
 
@@ -739,8 +739,8 @@ ht-degree: 98%
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [使用 OAuth 2.0 客户端凭据流将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
          + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
-         + [配置 [!DNL Microsoft Dynamics 365] 云服务](/help/forms/configure-msdynamics.md)
-         + [配置Salesforce云服务](/help/forms/configure-salesforce.md)
+         + [配置 [!DNL Microsoft Dynamics 365] Cloud Service](/help/forms/configure-msdynamics.md)
+         + [配置 Salesforce Cloud Service](/help/forms/configure-salesforce.md)
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
@@ -764,17 +764,17 @@ ht-degree: 98%
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [将自适应表单提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + 将自适应表单连接到Microsoft® SharePoint{#connect-to-sharepoint}
+            + 将自适应表单连接到 Microsoft® SharePoint{#connect-to-sharepoint}
                + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [提交到SharePoint文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [提交到SharePoint列表](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [提交到 SharePoint 文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [提交到 SharePoint 列表](/help/forms/connect-forms-to-sharepoint-list.md)
                + [使用授权范围配置具有有限访问权限的 SharePoint Site](/help/forms/configure-sharepoint-site-limited-access.md)
             + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [在自适应表单核心组件中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [在自适应表单核心组件中使用 Turnstile Captcha](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [在自适应表单核心组件中使用 hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [在自适应表单核心组件中使用 Turnstile CAPTCHA](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [为自适应表单（核心组件）设计 JSON 架构](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -822,7 +822,7 @@ ht-degree: 98%
             + [发布和取消发布 Form 和文档](/help/forms/publishing-unpublishing-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
-            + [在自适应表单中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [在自适应表单中使用 hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [在自适应表单中使用 Turnstile CAPTCHA](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)
             + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
@@ -1022,7 +1022,7 @@ ht-degree: 98%
       + [重定向](/help/edge/docs/redirects.md)
    + 构建表单 {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services Forms的工作原理](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Edge Delivery Services Forms 如何运作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + 开始使用 {#getting-started-edge-delivery-services-forms}
          + [快速入门](/help/edge/docs/forms/tutorial.md)
          + [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
@@ -1039,11 +1039,11 @@ ht-degree: 98%
          + [概述 - Edge Delivery Services Forms 通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [了解WYSIWYG界面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [使用规则编辑器将规则添加到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [使用规则编辑器添加规则](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [在表单中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [在表单中使用 reCAPTCHA ](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [发布Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [发布表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [自定义表单样式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [响应式模式](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
@@ -1112,7 +1112,7 @@ ht-degree: 98%
       + [Dispatcher - 端点](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - 为持久化查询启用缓存](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 配置](/help/headless/deployment/cross-origin-resource-sharing.md)
-      + [反向链接筛选条件](/help/headless/deployment/referrer-filter.md)
+      + [推荐人过滤器](/help/headless/deployment/referrer-filter.md)
    + Headless 历程 {#journeys}
       + Headless 开发人员历程 {#developer}
          + [了解 AEM 中的 Headless](/help/journey-headless/developer/overview.md)
@@ -1206,6 +1206,7 @@ ht-degree: 98%
       + Edge Delivery Site{#edge-delivery-sites}
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [在Cloud Manager中创建Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [在 Cloud Manager 中管理 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 域设置 {#custom-domain-names}

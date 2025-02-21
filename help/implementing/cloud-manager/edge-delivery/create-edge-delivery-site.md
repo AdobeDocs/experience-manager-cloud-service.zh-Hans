@@ -3,10 +3,10 @@ title: 在Cloud Manager中创建Edge Delivery站点
 description: 了解如何通过单击按钮在Cloud Manager中快速创建Edge Delivery站点。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e1248ee8ceb324ee44dce296135d651d28c9f97
+source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 31%
+source-wordcount: '1101'
+ht-degree: 30%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 31%
    | 站点的GitHub存储库 | <ul><li>在&#x200B;**Edge Delivery站点**&#x200B;列表框的&#x200B;**存储库**&#x200B;列标题下，单击刚刚创建的站点的URL。<br>您可能需要使用用户名或电子邮件地址和密码登录到GitHub。</li> |
    | 发布站点 | <ul><li> 在&#x200B;**Edge Delivery sites**&#x200B;列表框中，单击网站名称最右边的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以打开下拉菜单。</li><li>在下拉菜单中单击![发布检查图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg) **发布站点**。<br>出现toast消息，告知您已成功开始发布网站。</li></ul> |
    | 预览已发布的站点 | <ul><li>在&#x200B;**Edge Delivery站点**&#x200B;列表框的&#x200B;**站点名称**&#x200B;列标题下，单击您刚刚创建和发布的站点的URL。<br>在浏览器的URL地址栏中，请注意，网站的URL以`.page`结尾，表示您看到的是网站的预览。</li><li>若要实时查看网站，请在URL地址栏中手动将`.page`更改为`.live`。</li></ul> |
-   | 授予用户访问Google Drive上内容存储库的权限 | <ul><li> 在&#x200B;**Edge Delivery sites**&#x200B;列表框中，单击网站名称最右边的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以打开下拉菜单。</li><li>在下拉菜单中单击![用户添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **获取对内容存储库的访问权限**。</li><li>在&#x200B;**将协作者添加到您的网站**&#x200B;对话框中，输入参与者的电子邮件地址，然后单击![复选标记图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>根据需要继续添加投稿人电子邮件。</li><li>完成后，单击&#x200B;**添加协作者**。</li><li>要与内容协作者共享链接，请在&#x200B;**Collaboration已成功添加**&#x200B;对话框中，单击&#x200B;**确定**。<br>协作者将收到一封电子邮件，邀请他们通过单击电子邮件中的&#x200B;**打开**&#x200B;向共享Google驱动器文件夹贡献内容；无需登录。 他们可以编辑和更新共享文件夹中的文件，然后在Cloud Manager中单击&#x200B;**发布站点**，如上所述。 他们还可以预览所做的更改，如上所述。</li></ul> |
-   | 授予用户访问GitHub上基本存储库的权限 | <ul><li> 在&#x200B;**Edge Delivery sites**&#x200B;列表框中，单击网站名称最右边的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以打开下拉菜单。</li><li>在下拉菜单中单击![代码图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **获取对基础存储库的访问权限**。</li><li>在&#x200B;**访问网站的基本存储库**&#x200B;对话框中，输入协作者的GitHub用户名，然后单击![复选标记图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>根据需要继续添加GitHub用户名。</li><li>完成后，单击&#x200B;**添加协作者**。</li> |
+   | 授予用户访问Google Drive上内容存储库的权限 | <ul><li> 在&#x200B;**Edge Delivery sites**&#x200B;列表框中，单击网站名称最右边的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以打开下拉菜单。</li><li>在下拉菜单中单击![用户添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **获取对内容存储库的访问权限**。</li><li>在&#x200B;**将协作者添加到您的网站**&#x200B;对话框中，输入参与者的电子邮件地址，然后单击![复选标记图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>根据需要继续添加投稿人电子邮件。</li><li>完成后，单击&#x200B;**添加协作者**。</li><li>要与内容协作者共享链接，请在&#x200B;**Collaboration已成功添加**&#x200B;对话框中，单击&#x200B;**确定**。</li><li>在“Collaboration已成功添加”对话框中，单击![复制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以复制链接并与协作者共享。<br>在共享链接之前，请确认协作者使用与其IMS帐户关联的电子邮件地址登录。 如果其IMS电子邮件帐户不可用，则必须使用添加为协作者的电子邮件地址。 这样做可确保协作者能够访问链接，并在Google驱动器中查看要编辑或更新的内容。</li><li>完成编辑后，在Cloud Manager中单击&#x200B;**发布站点**，如上所述。<br>或者，预览所做的更改，如上所述。</li></ul> |
+   | 授予用户访问GitHub上基本存储库的权限 | <ul><li> 在&#x200B;**Edge Delivery sites**&#x200B;列表框中，单击网站名称最右边的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以打开下拉菜单。</li><li>在下拉菜单中单击![代码图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **获取对基础存储库的访问权限**。</li><li>在&#x200B;**访问网站的基本存储库**&#x200B;对话框中，输入协作者的GitHub用户名，然后单击![复选标记图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)。</li><li>根据需要继续添加GitHub用户名。</li><li>完成后，单击&#x200B;**添加协作者**。</li>用户必须向自己的GitHub用户名授予访问权限才能查看存储库。 |
 
 
