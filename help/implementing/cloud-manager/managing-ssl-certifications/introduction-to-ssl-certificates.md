@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="管理 SSL 证书"
->abstract="了解Cloud Manager如何提供自助服务工具来安装和管理SSL证书，以便为用户保护您的站点。 Cloud Manager 使用平台 TLS 服务来管理客户拥有并从第三方认证机构获得的 SSL 证书和私钥。"
+>abstract="了解 Cloud Manager 如何通过自助服务工具安装和管理 SSL 证书，从而为用户保护您的网站安全。Cloud Manager 使用平台 TLS 服务来管理客户拥有并从第三方认证机构获得的 SSL 证书和私钥。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="查看、更新和替换 SSL 证书"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="检查 SSL 证书的状态"
 
@@ -40,7 +40,7 @@ Cloud Manager提供自助服务工具来安装和管理SSL证书，确保用户�
 
 | | 模型 | 描述 |
 | --- | --- | --- |
-| A | **[Adobe管理的SSL证书(DV)](#adobe-managed)** | Cloud Manager允许用户配置Adobe为快速域设置提供的DV（域验证）证书。 |
+| A | **[Adobe托管的SSL证书(DV)](#adobe-managed)** | Cloud Manager允许用户配置Adobe提供的DV（域验证）证书，以进行快速域设置。 |
 | B | **[客户管理的SSL证书(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS（传输层安全性）服务，允许您管理您拥有的OV和EV SSL证书以及来自第三方证书颁发机构的私钥，例如&#x200B;*让我们加密*。 |
 
 这两种模型都提供了以下用于管理证书的常规功能：
@@ -53,11 +53,11 @@ Cloud Manager提供自助服务工具来安装和管理SSL证书，确保用户�
 >
 >[要添加自定义域并将其与环境](/help/implementing/cloud-manager/custom-domain-names/introduction.md)关联，您必须具有覆盖该域的有效SSL证书。
 
-### Adobe管理(DV) SSL证书 {#adobe-managed}
+### Adobe管理的(DV) SSL证书 {#adobe-managed}
 
 DV证书是最基本级别的SSL证书，通常用于测试目的或用于通过基本加密保护网站。 DV证书在[生产程序和沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中均可用。
 
-创建DV证书后，除非将其删除，否则Adobe每三个月会自动更新一次。
+创建DV证书后，除非将其删除，否则Adobe会每三个月自动更新一次。
 
 ### 客户管理的(OV/EV) SSL证书 {#customer-managed}
 
@@ -85,12 +85,12 @@ OV和EV证书提供CA验证的信息。 此类信息可帮助用户评估网站�
    * RSA 2048位，标准支持。
 目前不支持大于2048位的RSA密钥（如3072位或4096位RSA密钥）。
    * 椭圆曲线(EC)键`prime256v1` (`secp256r1`)和`secp384r1`
-   * 椭圆曲线数字签名算法(ECDSA)证书。 Adobe建议比RSA提供此类证书，以提高性能、安全性和效率。
+   * 椭圆曲线数字签名算法(ECDSA)证书。 Adobe建议此类证书优于RSA，以提高性能、安全性和效率。
 
 * 证书的格式必须正确才能通过验证。 私钥必须采用`PKCS#8`格式。
 
 >[!NOTE]
->如果您的公司需要使用3072位RSA密钥的合规性，则Adobe推荐的替代方案是使用ECDSA证书（`secp256r1`或`secp384r1`）。
+>如果您的组织需要使用3072位RSA密钥的合规性，Adobe推荐的替代方案是使用ECDSA证书（`secp256r1`或`secp384r1`）。
 
 
 #### 证书管理最佳实践
