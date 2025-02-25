@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
+source-git-commit: 754cb41ea59a44820c4bc283b859d660040971ab
 workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 98%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本（2025.1.0）的发布日期为 2025 年 1 月 30 日。下一个功能版本 (2025.2.0) 计划于 2025 年 2 月 27 日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本（2025.1.0）的发布日期为 2025 年 1 月 30 日。下一个功能版本(2025.2.0)计划于2025年3月4日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -128,7 +128,7 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 #### 管理发布
 
-您可以使用[管理发布](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)工作流跨环境发布或取消发布表单，通常从创作实例到发布和预览实例。 它允许用户以简化的方式发布、取消发布或计划内容的发布。
+您可以使用[“管理发布”](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)工作流跨环境发布或取消发布表单，通常是从作者实例到发布和预览实例。它允许用户以简化的方式发布、取消发布或计划内容的发布。
 
 #### 自动保存基于核心组件的自适应表单草稿
 
