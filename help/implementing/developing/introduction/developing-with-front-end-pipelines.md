@@ -1,87 +1,98 @@
 ---
 title: 使用前端管道开发站点
-description: 有了前端管道，前端开发人员可以获得更多的独立性，开发过程可以获得可观的速度。 本文档描述了应该给予的前端构建过程的一些特定注意事项。
+description: 前端管道增强了开发人员的独立性，并加快了开发过程。 本文概述了前端构建过程的主要注意事项，以确保最佳性能和效率。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 248c58c51864a2fead95064d30ea9f438f655eb6
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 1%
+source-wordcount: '1126'
+ht-degree: 3%
 
 ---
 
 
 # 使用前端管道开发站点 {#developing-site-with-front-end-pipeline}
 
-[使用前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)，为前端开发人员提供了更多的独立性，开发过程可以获得可观的速度。 本文档介绍了此流程的工作方式以及一些需要注意的事项，以便您能够充分发挥此流程的潜力。
+[前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)为前端开发人员提供了更大的独立性，并显着加快了开发。 本文介绍了该过程的工作方式，并重点介绍了可帮助您充分利用该过程的关键注意事项。
 
 >[!TIP]
 >
->如果您还不熟悉如何使用前端管道及其可以带来的好处，请查看[快速站点创建历程](/help/journey-sites/quick-site/overview.md)，了解如何快速部署新站点并完全独立于后端开发自定义其主题。
+>如果您还不熟悉如何使用前端管道及其好处，请参阅[快速站点创建历程](/help/journey-sites/quick-site/overview.md)指南。 它提供了一个示例，说明如何快速部署新站点并自定义其主题，而不依赖于后端开发。
 
-## 前端构建合同 {#front-end-build-contract}
+## 了解AEM Cloud Manager中的前端管道设置和构建过程 {#front-end-build-contract}
 
-与[全栈构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)类似，前端管道有自己的环境。 开发人员可以灵活地使用此管道，但前提是遵守以下前端构建合同。
+与[全栈构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)类似，前端管道有自己的环境。 开发人员可以灵活地使用此管道，前提是遵循前端构建合同。
 
-前端管道要求前端Node.js项目使用`build`脚本指令生成它部署的版本。 这是因为Cloud Manager使用命令`npm run build`生成前端生成的可部署项目。
+前端管道要求前端`Node.js`项目使用`build`脚本指令生成它部署的生成。 存在此要求是因为Cloud Manager使用命令`npm run build`生成前端生成的可部署项目。
 
-`dist`文件夹的结果内容最终由Cloud Manager部署，用作静态文件。 这些文件托管在AEM外部，但可通过已部署环境上的`/content/...` URL使用。
+`dist`文件夹的结果内容是Cloud Manager最终部署的内容，将它们作为静态文件提供。 这些文件托管在AEM外部，但通过已部署环境上的`/content/...` URL提供。
 
-## 节点版本 {#node-versions}
+## 支持的Node.js版本 {#node-versions}
 
-前端构建环境支持以下Node.js版本。
+前端构建环境支持以下`Node.js`版本：
 
-* 12
-* 14（默认）
-* 16
+* 23
+* 22
+* 20
 * 18
+* 16
+* 14（默认）
+* 12
 
 您可以使用`NODE_VERSION` [环境变量](/help/implementing/cloud-manager/environment-variables.md)来设置所需的版本。
 
-## 单一真理Source {#single-source-of-truth}
+## 在AEM中命名和管理前端管道的最佳实践 {#single-source-of-truth}
 
-一般好的做法是维护部署到AEM的内容的单一真实来源。 Cloud Manager的目标是让这一唯一的真相来源变得显而易见。 但是，由于前端管道允许将部分代码的位置解耦，因此前端管道的正确设置也存在一些额外的责任。 必须注意不要创建在同一环境中部署到同一站点的多个前端管道。
+AEM部署的最佳实践是维护单一、明确的事实来源。 Cloud Manager旨在强化这一原则。 但是，由于前端管道允许部分代码解耦，因此正确的设置至关重要。 为避免冲突，请确保多个前端管道不会部署到同一环境中的同一站点。
 
-因此，尤其是在创建多个前端管道时，建议保持系统化的命名约定，例如：
+因此，尤其是创建多个前端管道时，Adobe建议您维护系统化的命名约定。 您可以使用以下推荐：
 
 * 由`package.json`文件的`name`属性定义的前端模块的名称应包含其适用的站点的名称。 例如，对于位于`/content/wknd`的站点，前端模块的名称类似于`wknd-theme`。
 * 当前端模块与其他模块共享相同的Git存储库时，其文件夹的名称应等于或包含前端模块的相同名称。 例如，如果前端模块名为`wknd-theme`，则封入文件夹名称类似于`wknd-theme-sources`。
 * Cloud Manager前端管道的名称还应包含前端模块的名称，还应添加其部署到的环境（生产或开发）。 例如，对于名为`wknd-theme`的前端模块，管道的名称可能类似于`wknd-theme-prod`。
 
-此类公约应有效防止以下部署错误：
+此类约定可以防止以下部署错误：
 
-* 将前端模块应用到错误的站点
-* 创建多个应用同一站点的前端模块，这些前端模块会相互覆盖
-* 为相同源创建多个前端管道，这可能会导致争用情况，而不保证部署顺序
+* 将前端模块应用到错误的站点。
+* 创建多个应用同一站点的前端模块，这些前端模块会相互覆盖。
+* 为相同源创建多个前端管道，这可能会导致争用情况，无法保证部署顺序。
 
-## 分离关注点 {#separation-of-concerns}
+## 协调前端和后端开发，以提高AEM中的稳定性 {#separation-of-concerns}
 
-适用于任何分离关注点的另一种良好做法是，特别注意分离关注点的合同的设计和管理的方式。 对于前端管道，将该代码与其余代码分开的合同是站点渲染的HTML和JSON。 如果该HTML和JSON保持稳定，则前端管道通过使前端团队完全独立而实现其最大价值。
+任何分离关注的关键最佳实践都是仔细设计和管理定义它们之间边界的合同。 在前端管道中，此合同是站点渲染的HTML和JSON输出。 保持此输出的稳定性可确保前端管道提供最大价值，使前端团队能够独立工作。
 
-当前没有与前端管道同步运行全栈管道的特定功能。 因此，在将前端开发与全栈管道分离开时，必须格外注意将这两个关切领域隔开的合同。 该合同通常是Experience Manager呈现的HTML和/或JSON。 因此，该合同的更改必须在运行不同管道的团队之间经过周密规划，以便他们同意如何对相应的更改进行排序。
+目前没有内置功能可与前端管道同步运行全栈管道。 因此，在将前端开发与全栈管道分离开时，关键是要仔细管理合同以界定其界限。 此合同通常包含Experience Manager渲染的HTML和/或JSON。 对此合同的任何更改应在管理不同管道的团队之间仔细协调，以确保顺利过渡和更新顺序的正确。
 
-如果有必要对HTML和/或JSON输出执行会影响这两个关注领域的更改，通常建议执行以下步骤。
+通常建议在更改HTML或JSON输出时执行以下步骤，尤其是当两个区域都受到影响时。
 
-1. 后端团队首先使用新HTML和/或JSON输出设置开发环境。
-   1. 通过全栈管道，他们部署渲染所需的新HTML和/或JSON输出所需的代码。
+1. 后端团队首先会使用新的HTML或JSON输出设置开发环境。
+   1. 通过全栈管道，他们部署了渲染新HTML或JSON输出（或同时渲染两者）所需的代码。
    1. 如果这是前端团队之前无权访问的环境，则必须执行以下步骤。
       1. URL：前端团队必须知道该开发环境的URL。
       1. ACL：必须为前端团队提供具有类似于“参与者”权限的本地AEM用户。
       1. Git：前端团队必须为专门针对该开发环境的前端模块设置单独的Git位置。
-         * 通常的做法是创建`dev`分支，这样对开发环境所做的更改就可以轻松地合并回要部署到生产环境的`main`分支。
+
+         常见的做法是创建`dev`分支以管理在开发环境中所做的更改。 通过此做法，可以更轻松地合并回`main`分支，该分支用于部署到生产环境。
+
       1. 管道：前端团队必须具有部署到开发环境的前端管道。 该管道将部署通常位于`dev`分支中的前端模块，如前一点所述。
 1. 然后，前端团队使CSS和JS代码同时使用旧输出和新输出。
-   1. 与往常一样，在本地开发：
-      1. 在前端模块中执行的`npx aem-site-theme-builder proxy`命令启动一个从AEM环境请求内容的代理服务器，同时将前端模块的CSS和JS文件替换为本地`dist`文件夹中的文件。
-      1. 通过配置隐藏`.env`文件中的`AEM_URL`变量，可以控制本地代理服务器使用内容的AEM环境。
-      1. 因此，通过更改此`AEM_URL`的值，您可以在生产环境和开发环境之间切换以调整CSS和JS，使其同时适用于这两个环境。
+   1. 与往常一样，要在本地进行开发，请执行以下操作：
+      1. `npx aem-site-theme-builder proxy`命令启动从AEM环境中检索内容的代理服务器。 它使用本地`dist`文件夹中的这些文件替换前端模块的CSS和JS文件。
+      1. 通过配置隐藏`.env`文件中的`AEM_URL`变量，您可以控制本地代理服务器使用内容的AEM环境。
+      1. 因此，通过更改`AEM_URL`的值，您可以在生产环境和开发环境之间切换以调整CSS和JS，使其同时适用于这两个环境。
       1. 它必须与呈现新输出的开发环境以及呈现旧输出的生产环境配合使用。
    1. 当更新的前端模块适用于这两个环境并将它们部署到两个环境中时，前端工作即告完成。
-1. 然后，后端团队可以通过部署代码来更新生产环境，该代码通过全栈管道呈现新HTML和/或JSON输出。
-1. 然后，前端团队可以清理其CSS和JS，并删除仅需要旧输出的内容，通过前端管道将最后一次更新部署到生产环境。
+1. 然后，后端团队可以通过全栈管道部署用于呈现新HTML或JSON输出（或同时呈现两者）的代码来更新生产环境。
+1. 前端团队可以清理其CSS和JS，删除仅旧输出所需的元素，并使用前端管道将最终更新部署到生产环境。
 
 ## 其他资源 {#additional-resources}
 
-* [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) — 了解如何使用AEM站点主题自定义站点的样式和设计。
-* [AEM站点主题生成器](https://github.com/adobe/aem-site-theme-builder) -Adobe提供AEM站点主题生成器作为一组用于创建新站点主题的脚本。
+* 了解如何使用 AEM 站点主题来自定义站点的样式和设计。
+
+  查看[站点主题](/help/sites-cloud/administering/site-creation/site-themes.md)。
+
+* Adobe 提供 AEM 站点主题生成器作为一组用于创建新站点主题的脚本。
+
+  请参阅[AEM站点主题生成器](https://github.com/adobe/aem-site-theme-builder)。
+
