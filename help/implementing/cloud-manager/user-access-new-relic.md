@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 42%
+source-wordcount: '1809'
+ht-degree: 41%
 
 ---
 
@@ -179,7 +179,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->如果90天或更长时间未在New Relic One子帐户中检测到任何活动，则APM代理将停止。
+>如果30天或更长时间未在New Relic One子帐户中检测到任何活动，则APM代理将停止。
 >
 >按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
 
@@ -191,17 +191,18 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java 插件发布和预览（如果可用）服务。Adobe 支持跨非生产和生产 AEM as a Cloud Service 环境的自定义 New Relic One APM 遥测和监控。
 
-您的 New Relic One 帐户连接到 Adobe 维护的主帐户，并有多个应用程序向其报告：每个 AEM as a Cloud Service 环境三个应用程序。
+您的New Relic One帐户附加到Adobe维护的主帐户，并有多个应用程序向其报告；每个AEM as a Cloud Service环境三个。
 
 * 每个环境一个Author服务应用程序
-* 每个环境(包括Golden Publish)一个用于`Publish`服务的应用程序
+* 每个环境一个`Publish`服务应用程序（包括Golden Publish）
 * 每个环境一个预览服务应用程序
 
 注意:
 
 * 每个应用程序使用一个许可证密钥。
 * AEM as a Cloud Service 环境仅向一个 New Relic One 帐户报告。
-* New Relic One的全面监控指标和事件将保留三个月。 &lt;!— CQDOC-22238 — 从七天更新为三个月。 >
+* New Relic One的全面监控指标和事件将保留三个月。
+
 +++
 
 +++**Adobe是否从New Relic One发送警报通知？** {#alerting-new-relic}
@@ -235,5 +236,5 @@ Adobe支持使用New Relic One和其他工具监控AEM as a Cloud Service，而�
 
 +++**我的New Relic One帐户的APM代理已停止。 发生什么情况？** {#deactivated}
 
-如果在 90 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
+如果在 30 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
 +++
