@@ -4,11 +4,12 @@ description: 本教程可帮助您启动并运行通用编辑器界面。 它可
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
+hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '1425'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -107,7 +108,7 @@ Experience Cloud标题位于控制台顶部。 它提供有关Experience Cloud�
 
   >[!NOTE]
   >
-  > * 在通用编辑器中，默认情况下不启用规则编辑器扩展。 要启用规则编辑器扩展，请从您的正式电子邮件ID中通过[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)向我们发送电子邮件。
+  > * 在通用编辑器中，规则编辑器扩展默认为未启用。要启用规则编辑器扩展，请使用您的官方电子邮件 ID 写信至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
   > * 要了解如何创建规则，请参阅文章[WYSIWYG创作中的规则编辑器简介](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)。
 
 * **编辑表单属性**

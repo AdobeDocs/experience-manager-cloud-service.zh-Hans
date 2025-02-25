@@ -4,19 +4,20 @@ description: 本文介绍了如何使用通用编辑器中的不同模拟器预�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
 
 ---
 
-
 # WYSIWYG创作中的响应模式
 
 [通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)允许您使用不同的模拟器预览Edge Delivery Services Forms，以便在创作过程中查看表单的外观。
 
 响应模式允许开发人员设计自动适应不同屏幕大小的布局，包括台式机、平板电脑和移动设备。 通用编辑器支持适用于台式机、平板电脑和移动设备的模拟器。 您可以根据屏幕大小设置高度和宽度，然后执行以下操作：
+
 * 设置方向
 * 指定宽度和高度
 * 更改方向
@@ -68,6 +69,3 @@ ht-degree: 2%
 ## 另请参阅
 
 {{universal-editor-see-also}}
-
-
-
