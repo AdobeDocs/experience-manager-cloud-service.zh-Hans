@@ -1,19 +1,20 @@
 ---
 title: 自定义适用于 AEM Forms 的 Edge Delivery Services 的主题和样式
-description: 有效地自定义通过Edge Delivery Services交付的AEM Forms的主题和样式，确保提供一致的品牌化用户体验。
+description: 有效地自定义通过 Edge Delivery Services 交付的 AEM Forms 的主题和样式，确保具有凝聚力和品牌化的用户体验。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1828'
-ht-degree: 89%
+source-wordcount: '1876'
+ht-degree: 96%
 
 ---
 
 # 自定义表单的外观&#x200B;
+
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+
 
 表单对于网站上的用户交互至关重要，用户可以在其中输入数据。您可以使用级联样式表 (CSS) 来设置表单字段的样式，以增强表单的视觉呈现效果，并改善用户体验。
 
@@ -24,7 +25,7 @@ ht-degree: 89%
 在文章的最后：
 
 * 您可以了解到自适应表单块中包含的默认 CSS 文件的结构。
-* 您可以逐步了解由Adaptive Forms块提供的表单组件的HTML结构，包括常规组件和特定组件，如下拉列表、单选按钮组和复选框组。
+* 您可以了解到 Adaptive Forms Block 提供的表单组件中的 HTML 结构，其中包括常规组件和特定组件，例如下拉列表、单选按钮组和复选框组。
 * 您将会学习到如何使用 CSS 选择器根据字段类型和字段名称设置表单字段的样式，从而根据需求实现一致或独特的样式。
 
 ## 了解表单字段类型
@@ -53,7 +54,7 @@ Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组�
 
 * **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义CSS变量来轻松进行自定义、维护和跨表单的统一样式。
 
-* Forms的&#x200B;**CSS样式**：为确保正确应用样式，请将`main .form form`选择器中特定于表单的CSS换行。 这可确保样式仅以主内容区域中的表单元素为目标，从而避免与网站其他部分发生冲突。
+* **Forms 的 CSS 样式**：为确保正确应用样式，请在 `main .form form` 选择器中包含表单特定的 CSS。这可确保您的样式仅针对主要内容区域内的表单元素，从而避免与网站的其他部分发生冲突。
 示例：
 
   ```css
@@ -69,7 +70,7 @@ Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组�
         /* Add styles specific to labels inside the form */
     }
   
-##组件结构
+## 组件结构
 
 Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保更轻松地设置样式和管理。您可以使用 CSS 来操作组件以设置样式。
 
@@ -140,7 +141,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
   
 ```
 * `.{Type}-wrapper`：根据字段类型锁定外部 `div` 元素。例如，`.text-wrapper` 会锁定所有文本字段。
-* `.field-{Name}`：根据特定字段名称进一步选择元素。例如：`.field-first-name`锁定“名字”文本字段。虽然此选择器可用于定位具有 field-{Name} 类的元素，但务必谨慎。在此特定情况下，它对设置输入字段的样式没有用处，因为它不仅针对输入本身，而且针对标签和描述元素。 建议使用更具体的选择器，例如用于定位文本输入字段（.text-wrapper输入）的选择器。
+* `.field-{Name}`：根据特定字段名称进一步选择元素。例如：`.field-first-name`锁定“名字”文本字段。虽然此选择器可用于定位具有 field-{Name} 类的元素，但务必谨慎。在这种特定情况下，它对于设置输入字段的样式不是很有帮助，因为它不仅针对输入本身，还针对标签和描述元素。建议使用更具体的选择器，例如用于定位文本输入字段（.text-wrapper input）的选择器。
 
 **常规组件的示例 CSS 选择器**
 
@@ -340,7 +341,7 @@ main .form form .field-color .radio-wrapper label {
 
 +++ 复选框组的 CSS 选择器
 
-* 定位外部包装器：这些选择器定位单选框和复选框组的最外部容器，从而允许您对整个组结构应用常规样式。 这对于设置间距、对齐方式或其他与布局相关的属性非常有用。
+* 定位外部包装器：这些选择器定位单选按钮组和复选框组的最外层容器，允许您将常规样式应用于整个组结构。这对于设置间距、对齐方式或其他与布局相关的属性非常有用。
 
 ```CSS
   
@@ -460,7 +461,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 
 * Fieldset 元素充当面板容器，具有 panel-wrapper 类和基于面板名称 (field-login) 进行样式设置的附加类。
 * 图例元素 (<legend>) 用作面板标题，其中包含文本“登录信息”和类字段标签。data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
-* 在字段集内，多个。{Type}-wrapper 元素（在本例中为 .text-wrapper 和 .password-wrapper）代表面板中的各个表单字段。
+* 在字段集中，多个。{Type}-wrapper 元素（在本例中为 .text-wrapper 和 .password-wrapper）代表面板中的各个表单字段。
 * 每个包装器都包含一个标签、输入字段和描述，与前面的示例类似。
 
 +++

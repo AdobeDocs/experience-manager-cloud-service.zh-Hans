@@ -3,10 +3,8 @@ title: 了解通用编辑器 — 开发人员教程
 description: 本教程可帮助您启动并运行通用编辑器界面。 它可指导您了解在通用编辑器中创建自己的Edge Delivery Services表单的用户界面。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 2%

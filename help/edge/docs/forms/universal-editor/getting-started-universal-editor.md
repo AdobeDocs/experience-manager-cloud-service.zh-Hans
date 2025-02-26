@@ -3,18 +3,19 @@ title: 通用编辑器中适用于 AEM Forms 的 Edge Delivery Services 快速�
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。十到二十分钟后，您就可以在通用编辑器中创建自己的 Edge Delivery Services Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 86%
+source-wordcount: '1826'
+ht-degree: 97%
 
 ---
 
 
 # 使用编辑器完成适用于 AEM Forms 的 Edge Delivery Services 快速入门（所见即所得）
+
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+
 
 在当今的数字时代，用户友好的表单对于所有组织都至关重要。Edge Delivery Services Forms 是使用通用编辑器创建的，提供了所见即所得（WYSIWYG）功能。它为高效的表单制作提供了一个现代化的直观界面。
 
@@ -23,7 +24,7 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 本教程将指导您使用通用编辑器的所见即所得创作功能，在新的或现有的 Adobe Experience Manager Site 项目中创建、预览和发布自己的表单。
 
 
-## 先决条件
+## 前提条件
 
 * 您有 GitHub 帐户，并且了解 Git 基础知识。
 * 您了解 HTML、CSS 和 JavaScript 的基础知识。
@@ -156,27 +157,27 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 >[!NOTE]
 >
 >
-> 此步骤适用于使用 [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk) 构建的项目。如果您使用[AEM样板](https://github.com/adobe-rnd/aem-boilerplate-forms)创建了AEM Forms项目，则可以跳过此步骤。
+> 此步骤适用于使用 [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk) 构建的项目。如果您使用 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 创建 AEM 项目，则可以跳过此步骤。
 
-要集成，请执行以下操作：
-1. **添加必需的文件和文件夹**
-   1. 将[AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms)中的以下文件夹和文件复制并粘贴到AEM项目中：
+进行集成：
+1. **添加所需文件和文件夹**
+   1. 将下列文件夹和文件从 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 复制并粘贴到 AEM 项目中：
 
-      * [表单块](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)文件夹
-      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)文件夹
-      * [表单组件](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)文件夹
-      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)文件
-      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)文件
+      * [Form Block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 文件夹
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 文件夹
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) 文件夹
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 文件
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 文件
 
 1. **更新组件定义和模型文件**
-   1. 导航到AEM项目中的`../models/_component-definition.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)中的[_component-definition.json文件的更改对其进行更新。
+   1. 导航到 AEM 项目中的 `../models/_component-definition.json` 文件，并根据 AEM Forms Boilerplate 中 [_component-definition.json 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)的更改进行更新。
 
-   1. 导航到AEM项目中的`../models/_component-models.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)中的[_component-models.json文件的更改对其进行更新
+   1. 导航到 AEM 项目中的 `../models/_component-models.json` 文件，并根据 AEM Forms Boilerplate 中 [_component-models.json 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)的更改进行更新
 
 1. **在编辑器脚本中添加表单编辑器**
-   1. 导航到AEM项目中的`../scripts/editor-support.js`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)中的[editor-support.js文件中的更改对其进行更新
-1. **更新ESLint配置文件**
-   1. 导航到AEM项目中的`../.eslintignore`文件，并添加以下代码行以防止与表单块规则引擎相关的错误：
+   1. 导航到 AEM 项目中的 `../scripts/editor-support.js` 文件，并根据 AEM Forms Boilerplate 中 [editor-support.js 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)的更改进行更新
+1. **更新 ESLint 配置文件**
+   1. 导航到 AEM 项目中的 `../.eslintignore` 文件，并添加以下代码行，以防止出现与 Form Block 规则引擎相关的错误：
 
       ```
           blocks/form/rules/formula/*
@@ -192,14 +193,14 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 您可以在通用编辑器中打开 AEM 项目，进行所见即所得的创作，在这里您可以编辑项目并添加自适应表单分区，以便在 AEM 项目页面上包含 Edge Delivery Services Forms。
 
 1. 将自适应表单分区添加到您的 AEM 项目页面。要添加：
-   1. 在站点控制台中导航到您的AEM项目，选择要编辑的站点页面，然后单击&#x200B;**编辑**。 AEM项目页面将在通用编辑器中打开以进行编辑。
+   1. 在 Sites 控制台中导航到 AEM 项目，选择要编辑的网站页面，然后单击&#x200B;**编辑**。AEM 项目页面将在通用编辑器中打开以供编辑。
 在此示例中，`index.html` 页面用于说明。
-   1. 打开内容树并导航到要添加自适应表单部分的部分。
+   1. 打开内容树，导航到要添加自适应表单分区的区域。
    1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从组件列表中选择&#x200B;**[!UICONTROL 自适应表单]**&#x200B;组件。
 
    ![内容树](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   添加了自适应表单部分。 您现在可以开始将表单组件添加到 AEM 项目页面。
+   添加了自适应表单分区。您现在可以开始将表单组件添加到 AEM 项目页面。
 
 1. 将表单组件添加到已添加的自适应表单分区。要添加表单组件：
    1. 导航到内容树中已添加的自适应表单分区。
@@ -222,7 +223,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
       ![已添加的表单](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-      对预览感到满意后，用户可以继续发布页面。
+      预览满意后，用户可以继续发布页面。
 
       >[!NOTE]
       >
@@ -281,7 +282,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 预览：`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
 
-生产： `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
+正式版：`https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
 
 ## 解决 GitHub 构建问题
