@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 81e3ce8cdceee37a22e76e74008452f88b6bf003
+source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 82%
+source-wordcount: '189'
+ht-degree: 84%
 
 ---
 
@@ -16,33 +16,33 @@ ht-degree: 82%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 19586 {#19586}
+## 版本 19687 {#19687}
 
-以下总结了维护版本19586的持续改进，该版本于2025年2月19日公开发布。 上一个维护版本是版本 19567。
+以下总结了维护版本19687的不断改进，该版本于2025年2月26日公开发布。 上一个维护版本是版本 19586。
 
 激活 2025.2.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-19586}
+### 增强 {#enhancements-19687}
 
 无。
 
-### 修复的问题 {#fixed-issues-19586}
+### 修复的问题 {#fixed-issues-19687}
 
-* SITES-29314： GraphQL端点可能会为有效请求引发InvalidSchemaException。
+* SKYOPS-97524：功能切换状态可能不正确，间歇性影响各种AEM功能。
 
-### 已知问题 {#known-issues-19586}
+### 已知问题 {#known-issues-19687}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-19586}
+### 已弃用的功能和 API {#deprecated-19687}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-19586}
+### 安全修复 {#security-19687}
 
 无。
 
-### 嵌套的技术 {#embedded-tech-19586}
+### 嵌套的技术 {#embedded-tech-19687}
 
 | 技术 | 版本 | 链接 |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
