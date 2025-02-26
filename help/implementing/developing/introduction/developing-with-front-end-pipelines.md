@@ -4,7 +4,7 @@ description: 前端管道增强了开发人员的独立性，并加快了开发�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 635fd7736d26b95acc4389c519edf495694b1a94
+source-git-commit: 8bda36d7aa86bd6b26ecaff9831f29d9e847837f
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%
@@ -95,5 +95,6 @@ AEM部署的最佳实践是维护单一、明确的事实来源。 Cloud Manager
 * Adobe 提供 AEM 站点主题生成器作为一组用于创建新站点主题的脚本。
 
   查看[AEM站点主题生成器](https://github.com/adobe/aem-site-theme-builder)
+
 
 
