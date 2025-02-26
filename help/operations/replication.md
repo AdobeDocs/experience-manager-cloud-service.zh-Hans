@@ -4,9 +4,9 @@ description: 了解AEM as a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 31%
 
 ---
@@ -44,9 +44,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 ### 管理发布 {#manage-publication}
 
-与快速Publish相比，管理发布提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了以后发布的选项。
+与快速发布相比，管理发布提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了以后发布的选项。
 
-为“稍后发布”选项包含文件夹的子项会调用Publish内容树工作流，如本文所述。
+为“稍后发布”选项包含文件夹的子项会调用发布内容树工作流，如本文所述。
 
 您可以[在出版基础文档](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)中找到有关管理出版的更多详细信息。
 
@@ -98,7 +98,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 | 名称 | 说明 |
 | ------------- | ------------------------------------------- |
-| onlyModified | 自上次发布后修改的节点 |
+| onlyModified | 自上次发布后修改的节点（新节点和预先存在的节点） |
 | onlyActivated | 之前发布的节点 |
 
 
@@ -131,7 +131,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 您可以通过选择&#x200B;**工具 – 工作流 – 模型**&#x200B;和复制&#x200B;**发布内容树**&#x200B;现成的工作流模型，如下所示：
 
-![Publish内容树工作流信息卡](/help/operations/assets/publishcontenttreeworkflow.png)
+![发布内容树工作流信息卡](/help/operations/assets/publishcontenttreeworkflow.png)
 
 请勿调用原始模型。 相反，请确保首先复制模型并调用该副本。
 
@@ -282,6 +282,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ![日志](assets/publish-logs.png "日志")
 
-如果内容无法发布，则整个发布将从AEM Publish服务中恢复。
+如果内容无法发布，则整个发布将从AEM发布服务中恢复。
 
 在这种情况下，可编辑的主队列将显示红色状态，应该进行审查以确定哪些项目导致取消发布。 通过单击该队列，将显示其待处理项目，如果需要，可从中清除单个项目或所有项目。
