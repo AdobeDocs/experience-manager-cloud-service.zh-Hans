@@ -5,23 +5,24 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 12%
+source-wordcount: '1098'
+ht-degree: 11%
 
 ---
 
 
 # 创建生产程序 {#create-production-program}
 
-生产程序适用于熟悉AEM和Cloud Manager、可以随时编写、构建和测试代码的用户，目标是将其部署到处理实时流量。
+生产程序适用于熟悉Adobe Experience Manager (AEM)和Cloud Manager的用户，这些用户可随时编写、构建和测试代码，其目的是将其部署为处理实时流量。
 
 请参阅文档[了解程序和程序类型](program-types.md)以了解有关程序类型的更多信息。
 
 ## 创建生产程序 {#create}
 
-根据您组织的权限，您在添加项目时可能会看到[其他选项](#options)。
+根据您组织的权限，在添加程序时，您可能会看到其他生产程序选项。
+查看[其他生产程序选项](#options)。
 
 **创建生产程序：**
 
@@ -73,7 +74,7 @@ ht-degree: 12%
 
 ## 其他生产程序选项 {#options}
 
-根据组织可用的权利，在创建生产程序时，您可能还有其他可用选项。
+根据组织可用的权利，在创建生产程序时，您可能具有以下其他可用选项。
 
 ### 安全性 {#security}
 
@@ -83,9 +84,9 @@ ht-degree: 12%
 
 “**安全性**”选项卡提供用于为生产程序激活&#x200B;**HIPAA**&#x200B;或&#x200B;**WAF-DDOS保护**，或同时激活这两者的选项。
 
-符合AdobeHIPAA标准且WAF-DDOS（Web应用程序防火墙 — 分布式拒绝服务）作为针对漏洞的多层防护方法的一部分促进了基于云的安全性。
+Adobe HIPAA兼容和WAF-DDOS（Web应用程序防火墙 — 分布式拒绝服务）促进了基于云的安全性，这是针对漏洞的多层防护方法的一部分。
 
-* **HIPAA** — 此选项启用Adobe的HIPPA就绪解决方案实现。
+* **HIPAA** — 此选项启用Adobe的HIPPA就绪解决方案实施。
    * [详细了解](https://www.adobe.com/trust/compliance/hipaa-ready.html) Adobe 的 HIPAA 就绪解决方案实施。
    * 程序创建后无法启用或禁用HIPAA。
 * **WAF-DDOS保护** — 此选项通过规则启用Web应用程序防火墙以保护您的应用程序。
@@ -98,23 +99,25 @@ ht-degree: 12%
 
 ![SLA选项](assets/create-production-program-sla.png)
 
-AEM Sites和Forms提供标准的99.9% service level agreement (SLA)。 使用&#x200B;**99.99% Service level agreement**&#x200B;选项，可以将Sites和/或Forms生产环境的最低正常运行时间百分比提高至99.99%。
+Sites和Forms提供标准的99.9%service level agreement (SLA)。 **99.99% Service level agreement**&#x200B;选项可确保您的生产环境正常运行时间至少为99.99%，无论是Sites、Forms、Edge Delivery Services还是所有这三个环境。
 
-99.99%的SLA可提供更高的可用性和更低的延迟，并需要将[额外的发布区域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)应用于程序中的生产环境。
+99.99%的SLA可提供更高的可用性和更低的延迟。
 
-在满足启用99.99%SLA的[要求](#sla-requirements)时，必须运行[全栈管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)才能激活它。
+对于Sites和Forms程序，99.99%的SLA要求将[附加发布区域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)应用于程序中的生产环境。 在满足启用99.99%SLA的[要求](#sla-requirements)时，必须运行[全栈管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)才能激活它。
+
+对于Edge Delivery Services，除了在程序上配置99.99%的SLA许可证外，还有&#x200B;*否*&#x200B;要求。
 
 #### SLA要求99.99% {#sla-requirements}
 
-在所需权利之外，99.99%的SLA还有额外的使用要求。
+除了所需权利之外，使用适用于站点或Forms程序的99.99% SLA还附带以下其他要求：
 
 * 在将99.99%的SLA应用于计划时，该组织必须具有99.99%的SLA和附加的发布区域权利。
 * Cloud Manager在将99.99%的SLA应用于程序之前，验证未使用的[附加发布区域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)权利是否可用。
 * 在编辑项目时，如果项目已包含至少具有一个其他发布区域的生产环境，则Cloud Manager仅检查99.99%的SLA权利的可用性。
 * 为了激活99.99%的SLA和报表，必须已创建[生产/暂存环境](/help/implementing/cloud-manager/manage-environments.md#adding-environments)，并且必须在生产/暂存环境中至少应用了一个附加发布区域。
-   * 如果使用[高级联网](/help/security/configuring-advanced-networking.md)，请务必查看[将多个Publish区域添加到新环境](/help/implementing/cloud-manager/manage-environments.md#adding-regions)文档以获取建议，以便在出现区域故障时保持连接。
-* 您的99.99%SLA项目中必须保留至少一个其他发布区域。 不允许用户从99.99%的SLA程序中删除最后一个附加发布区域。
-* 99.99%的SLA都支持启用了Sites或Forms解决方案的生产程序。
+   * 如果使用[高级联网](/help/security/configuring-advanced-networking.md)，请务必查看[将多个发布区域添加到新环境](/help/implementing/cloud-manager/manage-environments.md#adding-regions)文档以获取建议，以便在出现区域故障时保持连接。
+* 您的99.99%SLA计划必须始终包括至少一个额外的发布区域。 不允许用户从项目群中删除剩余的最后一个附加发布区域。
+* 对于已启用Sites或SLA解决方案的生产程序，您的99.99%的Forms受支持。
 * 运行[全栈管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)以激活或在编辑程序时停用99.99%的SLA。
 
 ## 访问您的项目 {#accessing}
