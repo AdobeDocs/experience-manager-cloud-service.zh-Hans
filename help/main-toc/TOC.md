@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1e4e07d2690bcbd44ffe994a571ffc0a8ae7eb50
+source-git-commit: 3a3713cdf2910492385b96b89038095c3642a2ec
 workflow-type: tm+mt
-source-wordcount: '6091'
+source-wordcount: '6094'
 ht-degree: 99%
 
 ---
@@ -990,10 +990,11 @@ ht-degree: 99%
       + [管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [所见即所得和基于文档的 Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [包含 DAM 资产的页面](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [WIP Site 功能](/help/edge/wysiwyg-authoring/wip-features.md)
       + [跨 Site 重用代码](/help/edge/wysiwyg-authoring/repoless.md)
       + [无重复多 Site 管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [无重复阶段和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [配置站点身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
       + [批量元数据](/help/edge/docs/bulk-metadata.md)

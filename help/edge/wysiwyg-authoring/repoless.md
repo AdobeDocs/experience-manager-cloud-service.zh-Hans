@@ -1,17 +1,17 @@
 ---
-title: 跨网站重用代码
+title: 跨 Site 重用代码
 description: 如果您有许多相似的网站，这些网站的外观和行为大致相同，但内容不同，那么您可以了解如何在一个重写模型中跨多个网站共享代码。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
 
-# 跨网站重用代码 {#repoless}
+# 跨 Site 重用代码 {#repoless}
 
 如果您有许多相似的网站，这些网站的外观和行为大致相同，但内容不同，那么您可以了解如何在一个重写模型中跨多个网站共享代码。
 
@@ -27,17 +27,17 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 
 无论您最终希望以策略方式创建多少个站点，都必须创建您的第一个站点，该站点将用作您的基础站点。 本文档说明如何创建您的第一个站点以供重复使用。
 
-## 先决条件 {#prerequisites}
+## 前提条件 {#prerequisites}
 
 要利用此功能，请确保您已完成以下操作。
 
 * 按照文档[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，已完全设置您的网站。
 * 您至少正在运行AEM as a Cloud Service 2024.08 。
 
-您还需要请求Adobe为您配置以下项目。 通过您的Slack渠道联系或提出支持问题以请求Adobe进行这些更改：
+您还需要请求Adobe为您配置以下项目。 通过您的Slack渠道联系或提出支持问题以请求Adobe做出这些更改：
 
 * 请求为您的环境激活[aem.live配置服务](https://www.aem.live/docs/config-service-setup#prerequisites)，并配置为管理员。
-* 请求按Adobe为您的项目启用可重写功能。
+* 请求通过Adobe为您的项目启用可拒绝功能。
 * 请求Adobe为您创建组织。
 
 ## 激活重写功能 {#activate}
@@ -161,7 +161,7 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 
 现在，您已准备好对AEM中的Edge Delivery Services进行必要的更改。
 
-1. 登录到AEM创作实例，然后转到&#x200B;**Cloud Service** -> **工具** -> **Edge Delivery Services配置**，选择为您的站点自动创建的配置，然后点按或单击工具栏中的&#x200B;**属性**。
+1. 登录到AEM创作实例，然后转到&#x200B;**工具** -> **Cloud Services** -> **Edge Delivery Services配置**，选择为您的站点自动创建的配置，然后点按或单击工具栏中的&#x200B;**属性**。
 1. 在&#x200B;**Edge Delivery Services配置**&#x200B;窗口中，将项目类型更改为&#x200B;**aem.live并设置**，然后点按或单击&#x200B;**保存并关闭**。
    ![Edge Delivery Services配置](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. 使用通用编辑器返回您的站点，并确保该站点仍然正确呈现。
@@ -174,15 +174,16 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 
 现在，您的基础站点已配置为可重复使用，您可以创建其他利用相同代码库的站点。 根据您的用例，请参阅以下文档。
 
-* [无重复多站点管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [无重复多 Site 管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [无重复阶段和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [用于内容创作的站点身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## 疑难解答 {#troubleshooting}
 
 在配置可重用用例后，最常见的问题是：通用编辑器中的页面不再呈现，或者您收到白色页面或一般AEM as a Cloud Service错误消息。 在这种情况下：
 
 * 查看已渲染页面的源。
-   * 是否实际呈现了一些内容(包含`scripts.js`、`aem.js`和编辑器相关JSON文件的正确HTML头)？
+   * 是否实际呈现了一些内容(包含`scripts.js`、`aem.js`和编辑器相关JSON文件的正确HTML标头)？
 * 检查创作实例的AEM `error.log`是否存在异常。
    * 最常见的问题是页面组件因404错误而失败。
    * 无法加载`config.json or paths.json`

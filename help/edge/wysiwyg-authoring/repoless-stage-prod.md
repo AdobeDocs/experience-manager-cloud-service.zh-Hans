@@ -4,9 +4,9 @@ description: 了解如何通过不断利用单个代码库为您的暂存和生�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '747'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 2%
 您可能希望为独立于暂存环境的生产环境设置站点。 为单独的暂存和生产设置设置设置第二个站点类似于多站点管理](/help/edge/wysiwyg-authoring/repoless-msm.md)所需的[设置。 事实上，如果需要，可以将其与MSM站点结构结合使用。
 
 本文档使用单独的暂存环境和生产环境的典型示例。 您可以为所需的任何环境创建单独的环境。
+
+## 要求 {#requirements}
+
+要配置重写暂存和生产环境，必须首先完成以下任务：
+
+* 本文档假定您已根据[使用Edge Delivery Services创作WYSIWYG的开发人员快速入门指南为您的项目创建了一个站点。](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* 您必须已[为项目启用重写功能。](/help/edge/wysiwyg-authoring/repoless.md)
 
 ## 配置 {#configuration}
 
@@ -41,10 +48,10 @@ ht-degree: 2%
 1. 检索您的身份验证令牌和项目的技术帐户。
    * 有关如何[获取访问令牌](/help/edge/wysiwyg-authoring/repoless.md#access-token)和程序的[技术帐户](/help/edge/wysiwyg-authoring/repoless.md#access-control)的详细信息，请参阅文档&#x200B;**跨站点重用代码**。
 1. 通过以下方式调用配置服务来创建新站点。 请考虑：
-   * POSTURL中的项目名称必须是您正在创建的新站点名称。 在此示例中，它是`wknd-prod`。
+   * POST URL中的项目名称必须是您正在创建的新站点名称。 在此示例中，它是`wknd-prod`。
    * `code`配置应与您在初始项目创建时使用的配置相同。
    * `content` > `source` > `url`必须调整为您正在创建的新站点的名称。 在此示例中，它是`wknd-prod`。
-   * 即POSTURL中的网站名称必须与`content` > `source` > `url`相同。
+   * 即，POST URL中的网站名称和`content` > `source` > `url`必须相同。
    * 调整`admin`块以定义应具有网站的完全管理访问权限的用户。
       * 它是一个电子邮件地址数组。
       * 可使用通配符`*`。
@@ -112,7 +119,7 @@ ht-degree: 2%
 
 必须将您的生产AEM配置为将您在上一部分中创建的新Edge Delivery站点用于专用生产站点。 在此示例中，生产环境中`/content/wknd`下的内容需要知道是否使用您创建的`wknd-prod`站点。
 
-1. 登录到AEM生产实例，然后转到&#x200B;**工具** -> **Cloud Service** -> **Edge Delivery Services配置**。
+1. 登录到AEM生产实例，然后转到&#x200B;**工具** -> **Cloud Services** -> **Edge Delivery Services配置**。
 1. 选择为您的项目自动创建的配置。
 1. 点按或单击工具栏中的&#x200B;**属性**。
 1. 在&#x200B;**Edge Delivery Services配置**&#x200B;窗口中：
@@ -131,6 +138,6 @@ ht-degree: 2%
 1. 点按或单击工具栏中的&#x200B;**编辑**。
 1. 确保页面在通用编辑器中正确呈现，并使用与站点根相同的代码。
 1. 对页面进行更改并重新发布。
-1. 在`https://main--wknd-prod--<your-github-org>.aem.page`访问您的新的Edge Delivery Services网站。
+1. 在`https://main--wknd-prod--<your-github-org>.aem.page`访问您的新的Edge Delivery Services网站以获取该页面。
 
 如果您看到所做的更改，则表明您单独的生产站点设置运行正常。
