@@ -3,13 +3,11 @@ title: 适用于Forms的Edge Delivery Services通用编辑器
 description: 使用Universal Editor for Edge Delivery Services for Forms创建自适应Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 71%
+source-wordcount: '1087'
+ht-degree: 69%
 
 ---
 
@@ -47,14 +45,14 @@ ht-degree: 71%
 | [**样式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **预填充服务**（即将推出） | [**A/B测试**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | 使用CSS设置样式可让开发人员自定义表单元素的外观，并创建符合网站美学的美观设计。 | 预填服务会自动使用来自各种来源的相关用户数据填充表单字段，从而减少手动输入并增强用户体验。 | A/B测试使组织能够试验不同的表单设计、布局和功能，以识别性能最佳的变体。 |
 
-| ![分析和跟踪](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![任务管理](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![数据绑定](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![分析和跟踪](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![表单片段](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![数据绑定](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析和跟踪**](https://www.aem.live/developer/martech-integration) | **任务管理** （即将推出） | **数据绑定** （即将推出） |
-| 通过内置分析和跟踪功能深入了解用户行为、表单交互和提交率，从而实现数据驱动的表单优化。 | 与 Adobe Workfront 集成使团队能够管理表单创建和维护任务，确保简化的工作流程。 | 数据绑定允许在表单字段和后端数据源之间直接连接，支持实时更新和高级数据映射。 |
+| [**分析和跟踪**](https://www.aem.live/developer/martech-integration) | **表单片段** （即将推出） | **数据绑定** （即将推出） |
+| 通过内置分析和跟踪功能深入了解用户行为、表单交互和提交率，从而实现数据驱动的表单优化。 | 表单片段允许创建常用部分一次，并在多个表单中重复使用，从而实现了可重用性，确保了一致性并减少维护工作。 | 数据绑定允许在表单字段和后端数据源之间直接连接，支持实时更新和高级数据映射。 |
 
 | ![验证码](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![嵌入Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感谢您的配置](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**验证码**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **嵌入Forms** | [**感谢您的配置**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**验证码**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **嵌入Forms**（即将推出） | [**感谢您的配置**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | 使用reCAPTCHA保护表单免受自动机器人的攻击，确保安全可靠的数据收集。 | 使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中。 | 轻松地自定义成功提交表单后向用户显示的确认信息或页面。 |
 
 
