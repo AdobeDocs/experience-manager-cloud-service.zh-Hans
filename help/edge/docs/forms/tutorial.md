@@ -4,24 +4,24 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 99%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
 # 快速入门 - 开发人员教程
 
-在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。适用于 AEM Forms 的 Edge Delivery Services (EDS) 允许您使用 Google Docs 和 Microsoft Office 等熟悉的工具创建表单。
+在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。Edge Delivery Services for AEM Forms允许您使用熟悉的工具(如Google Docs和Microsoft Office)创建表单。
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
-AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻松创建表单来捕获和存储捕获的数据。您可以[创建预配置自适应AEM块的新Forms项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->。
+AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻松创建表单来捕获和存储捕获的数据。您可以[创建一个新的 AEM 项目并预先配置 Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)<!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->。
 
 本 AEM Forms 教程将指导您使用新的 Adobe Experience Manager (AEM) Forms 项目创建、预览和发布您自己的自定义表单。
 
-## 先决条件
+## 前提条件
 
 * 您有 GitHub 帐户，并且了解 Git 基础知识。
 * 您有一个 Google 或 Microsoft SharePoint 帐户。
@@ -59,7 +59,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    >[!NOTE]
    >
    >
-   > 如果您使用带有 IP 过滤功能的 GitHub Enterprise，则可以将以下 IP 添加到允许列表：3.227.118.73
+   > 列入允许列表如果您正在使用带有IP筛选的GitHub Enterprise，则可以将以下IP添加到中： 3.227.118.73
 
    恭喜！您有一个在 `https://<branch>--<repo>--<owner>.aem.page/` 上运行的新网站。
 

@@ -1,24 +1,24 @@
 ---
-title: Edge Delivery Services Forms 通用编辑器（EDS Forms Block）
-description: 使用 Edge Delivery Services Forms 通用编辑器（EDS Forms Block）创建自适应表单。
+title: 适用于Forms的Edge Delivery Services通用编辑器
+description: 使用Universal Editor for Edge Delivery Services for Forms创建自适应Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 79%
+source-wordcount: '1077'
+ht-degree: 71%
 
 ---
 
 
-# Edge Delivery Services Forms 通用编辑器（EDS Forms Block）
+# 适用于Forms的Edge Delivery Services通用编辑器
 
 <span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
 
-通用编辑器通过提供简单、可视和直观的所见即所得（WYSIWYG）界面，彻底改变了 Adobe Edge Delivery Services（EDS）的表单创建方式。它专为内容创建者和表单作者设计，消除了传统表单构建流程的复杂性，使非技术用户也能使用。
+通用编辑器通过提供简单、直观的可视What You See Is What You Get (WYSIWYG)界面，彻底变革了Adobe Edge Delivery Services的表单创建方式。 它专为内容创建者和表单作者设计，消除了传统表单构建流程的复杂性，使非技术用户也能使用。
 
 使用通用编辑器，您可以使用预建组件（如文本字段、复选框和单选按钮）快速设计响应式交互表单。其强大的功能集支持动态规则、无缝数据集成和高级个性化，确保每个表单都符合您的需求。
 
@@ -26,7 +26,7 @@ ht-degree: 79%
 
 ![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
-## EDS Forms 通用编辑器的主要功能
+## 适用于Forms的Edge Delivery Services的通用编辑器的主要功能
 
 
 
@@ -49,13 +49,13 @@ ht-degree: 79%
 
 | ![分析和跟踪](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![任务管理](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![数据绑定](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析和跟踪**](https://www.aem.live/developer/martech-integration) | **任务管理** | **数据绑定** |
+| [**分析和跟踪**](https://www.aem.live/developer/martech-integration) | **任务管理** （即将推出） | **数据绑定** （即将推出） |
 | 通过内置分析和跟踪功能深入了解用户行为、表单交互和提交率，从而实现数据驱动的表单优化。 | 与 Adobe Workfront 集成使团队能够管理表单创建和维护任务，确保简化的工作流程。 | 数据绑定允许在表单字段和后端数据源之间直接连接，支持实时更新和高级数据映射。 |
 
 | ![验证码](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![嵌入Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感谢您的配置](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **编辑器自定义** | **嵌入Forms** | [**感谢您的配置**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| 开发人员可以通过 UI 扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。 | 使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中。 | 轻松地自定义成功提交表单后向用户显示的确认信息或页面。 |
+| [**验证码**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **嵌入Forms** | [**感谢您的配置**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| 使用reCAPTCHA保护表单免受自动机器人的攻击，确保安全可靠的数据收集。 | 使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中。 | 轻松地自定义成功提交表单后向用户显示的确认信息或页面。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.

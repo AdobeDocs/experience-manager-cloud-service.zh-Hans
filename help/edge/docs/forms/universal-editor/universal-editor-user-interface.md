@@ -4,16 +4,16 @@ description: 本教程可帮助您启动并运行通用编辑器界面。 它可
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1424'
 ht-degree: 2%
 
 ---
 
 # 探索通用编辑器(WYSIWYG)界面
 
-[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)为Adobe Edge Delivery Services (EDS) Forms提供了一个简单、直观的What You See Is What You Get (WYSIWYG)界面。 它提供了一个现代化的界面，具有拖放功能以实现高效的表单创作。
+[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)为Adobe Edge Delivery Services Forms提供了一个简单、直观的What You See Is What You Get (WYSIWYG)界面。 它提供了一个现代化的界面，具有拖放功能以实现高效的表单创作。
 
 ![通用编辑器用户界面](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 

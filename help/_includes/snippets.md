@@ -1,7 +1,7 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1390'
 ht-degree: 97%
 
 ---
@@ -43,8 +43,8 @@ ht-degree: 97%
 ## 自适应表单提交操作 {#af-submit-action}
 
 * [发送电子邮件](/help/forms/configure-submit-action-send-email.md)
-* [提交到SharePoint文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
-* [提交到SharePoint列表](/help/forms/connect-forms-to-sharepoint-list.md)
+* [提交到 SharePoint 文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [提交到 SharePoint 列表](/help/forms/connect-forms-to-sharepoint-list.md)
 * [使用表单数据模型提交](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交到 REST 端点](/help/forms/configure-submit-action-restpoint.md)
@@ -59,14 +59,13 @@ ht-degree: 97%
 
 ## 通用编辑器{#universal-editor-see-also}
 
-* [适用于 AEM Forms 的 Edge Delivery Services 快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [发布表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [提交您的表单](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [自定义表单的外观&#x200B;](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [为您的表单创建规则](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [在您的表单中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [为您的表单创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [在响应模式下预览表单](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [使用通用编辑器创建您的第一个表单](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [向Forms添加动态行为](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [发布和部署Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [设计精美的Forms：样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [构建自定义表单组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [保护您的Forms免受垃圾邮件的侵扰：添加reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 另请参阅 {#see-more-forms-eds}
 

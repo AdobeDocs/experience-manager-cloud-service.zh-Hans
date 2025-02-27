@@ -4,10 +4,10 @@ description: 快速无缝地发布您的 Edge Delivery Services Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 88%
+source-wordcount: '514'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 ## 前提条件
 
-* 使用 **Edge Delivery Services（EDS）模板**&#x200B;创建表单。[详细了解](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)有关创建基于 EDS 表单的信息。
+* 使用&#x200B;**Edge Delivery Services模板**&#x200B;创建的表单。 [详细了解](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)有关创建基于 EDS 表单的信息。
 
 ## 发布表单
 

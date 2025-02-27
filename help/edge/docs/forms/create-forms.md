@@ -4,10 +4,10 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '781'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ AEM Forms Edge Delivery 提供了一个称为 Adaptive Forms Block 的区块，�
 
 在开始之前，请确保您已完成以下步骤：
 
-* 使用AEM Forms样板设置[AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [已将自适应Forms块添加到您现有的AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并在本地计算机上克隆相应的GitHub存储库。
+* [使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)[将自适应表单区块添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并克隆本地计算机上相应的 GitHub 存储库。
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅[如何使用 SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
@@ -64,9 +64,9 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 使用电子表格可以轻松地制作表单，而无需执行复杂的流程。您可以定义构成表单结构的行和列。每行代表一个单独的[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的[字段属性](/help/edge/docs/forms/form-components.md#components-properties)。
 
-例如，请考虑以下电子表格，其中行[查询](/help/edge/assets/enquiry.xlsx)的电子表格和列标题的轮廓字段定义了其属性：
+例如，请考虑以下电子表格，其中行标题概述了 [“enquiry”](/help/edge/assets/enquiry.xlsx) 电子表格的字段，列标题则定义其属性：
 
-![查询电子表格](/help/edge/assets/enquiry-form-spreadsheet.png)
+![“Enquiry” 电子表格](/help/edge/assets/enquiry-form-spreadsheet.png)
 
 要继续创建表单：
 
@@ -78,14 +78,14 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `forms@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-sharepoint)。授予用户编辑表的权限。
 
-1. 打开创建的电子表格，并将默认工作表重命名为“shared-aem”。
+1. 打开创建的电子表格并将默认表重命名为 “shared-aem”。
 
-   ![将默认工作表重命名为“shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
+   ![将默认工作表重命名为 “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 要添加表单字段，请在“shared-aem”工作表中插入行和列标题。 每行应该代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段[属性](/help/edge/docs/forms/form-components.md#components-properties)。
+1. 要添加表单字段，请将行和列标题插入 “shared-aem” 表中。每行应该代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段[属性](/help/edge/docs/forms/form-components.md#components-properties)。
 
 
-   为了快速开始，请考虑复制[查询电子表格](/help/edge/assets/enquiry.xlsx)中的内容到电子表格中。复制内容后，保存电子表格。
+   为了快速开始，请考虑复制 [“enquiry” 电子表格](/help/edge/assets/enquiry.xlsx)中的内容到电子表格中。复制内容后，保存电子表格。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
@@ -105,15 +105,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
    * `<repository>` 表示您的 GitHub 存储库。
    * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
-   例如，如果项目的存储库名为“wefinance”，它位于帐户“wkndform”下，而您使用的是“main”分支，则URL如下所示：
+   例如，如果您的项目存储库名为 “wefinance” 且位于帐户 “wkndform” 下，并且您使用的是 “main” 分支，则 URL 如下所示：
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
-&lt;！—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
+&lt;!--(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
 
-+++ 步骤 2：使用 Edge Delivery Services (EDS) 页面预览表单。
++++ 步骤2：使用Edge Delivery Services页面预览表单。
 
 
 到目前为止，您已经准备好了表单的结构。现在，要预览表单，请执行以下操作：
@@ -122,7 +122,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 
 
-1. 打开文档文件（例如索引文件）以嵌入表单。或者，您可以[创建新文档](/help/edge/assets/enquiry-form.docx)。
+1. 打开文档文件（例如索引文件）以嵌入表单。或者，您可以[创建一个新文档](/help/edge/assets/enquiry-form.docx)。
 
 1. 移至文档中要添加表单的所需位置。
 
@@ -143,7 +143,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    > 确保 URL 的格式为超链接，而不是显示为纯文本。
 
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览文档。页面现在显示表单。例如，以下是基于[查询电子表格](/help/edge/assets/enquiry-form.docx)的表单：
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览文档。页面现在显示表单。例如，以下是基于 [“enquiry” 电子表格](/help/edge/assets/enquiry-form.docx)的表单：
 
 
    [![EDS 表单样本](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.page/enquiry-form)
