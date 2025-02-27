@@ -4,10 +4,10 @@ description: 了解如何管理分类数据，以便在 AEM with Edge Delivery S
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 100%
 这些标签不仅对您和您的作者组织内容有用，而且对您的读者也很有用。标签及其分类法可用于页面上的组件，以帮助读者浏览您的内容。
 
 通用编辑器仅适用于您的标签 ID。通过为您的内容创建一个分类页面，您可以将这些标签的描述以各种语言形式向通用编辑器公开，以便它在呈现内容时可以使用这些信息。
+
+>[!TIP]
+>
+>有关可用于分类的AEM Tag字段的更多信息，请参阅文档[模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)。
 
 ## 创建分类页面 {#creating}
 

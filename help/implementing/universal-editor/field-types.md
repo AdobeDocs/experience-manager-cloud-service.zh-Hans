@@ -4,9 +4,9 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1526'
 ht-degree: 11%
 
 ---
@@ -155,6 +155,10 @@ AEM标记组件类型启用了AEM标记选取器，该选取器可用于将标�
 ![AEM标记组件类型的屏幕截图](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
+
+>[!TIP]
+>
+>有关如何使用电子表格管理Edge Delivery Services项目的分类数据的更多信息，请参阅文档[管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)。
 
 #### AEM内容 {#aem-content}
 
