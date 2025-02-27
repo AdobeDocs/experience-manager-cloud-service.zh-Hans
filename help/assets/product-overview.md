@@ -2,7 +2,7 @@
 title: 探索Content Hub
 description: 了解有关 Content Hub 的更多信息、其主要优势、如何访问它以及如何围绕 Content Hub 中的可用选项提供反馈。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 88926df720df2aae74312998773069aa4c017c31
+source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 90%
@@ -84,7 +84,7 @@ Content Hub 需要 Experience Manager as a Cloud Service 2024.6 版本或更高�
 
 1. [已在Experience Manager Assets中将资源批准为DAM作者或管理员](approve-assets.md)。
 
-1. [以管理员身份为其他用户配置Content Hub用户界面](configure-content-hub-ui-options.md)..
+1. [以管理员身份为其他用户配置Content Hub用户界面](configure-content-hub-ui-options.md)。
 
 1. [授予团队中更多用户访问 Content Hub 的权限](deploy-content-hub.md#onboard-content-hub-consumer-users)。
 
