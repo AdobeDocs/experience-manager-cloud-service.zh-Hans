@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fced4707e781242132a018d28d4dd121960469eb
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 37%
+source-wordcount: '1410'
+ht-degree: 36%
 
 ---
 
@@ -177,6 +177,14 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 >[!NOTE]
 >
 >如果在源容器和目标容器之间设置了不同的[组件筛选器](/help/implementing/universal-editor/filtering.md)，则无法在容器之间移动组件。
+
+### 使用带有“生成变体”的GenAI创建变体 {#generate-variations-ai}
+
+使用创新型变体来利用创新型人工智能加快内容创建。
+
+打开通用编辑器以查找生成变体的入口点。
+
+请参阅[生成变体 — 集成在AEM编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)以了解详情。
 
 ## 预览内容 {#previewing-content}
 
