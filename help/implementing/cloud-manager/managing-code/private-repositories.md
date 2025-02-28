@@ -4,9 +4,9 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '940'
 ht-degree: 39%
 
 ---
@@ -38,6 +38,9 @@ Cloud Manager中专用GitHub存储库的配置包括两个步骤：
 1. [将专用GitHub存储库](#add-repo)添加到所选程序。
 1. 然后，[验证私有GitHub存储库的所有权](#validate-ownership)。
 
+>[!NOTE]
+>Cloud Manager仅支持GitHub Cloud (github.com)上的专用存储库。<!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### 向项目添加专用GitHub存储库 {#add-repo}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
@@ -68,7 +71,6 @@ Cloud Manager中专用GitHub存储库的配置包括两个步骤：
 >[!TIP]
 >
 >有关在 Cloud Manager 中管理存储库的详细信息，请参阅 [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
-
 
 
 ### 验证专用GitHub存储库的所有权 {#validate-ownership}
