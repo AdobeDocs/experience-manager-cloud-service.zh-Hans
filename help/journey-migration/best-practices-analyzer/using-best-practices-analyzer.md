@@ -4,10 +4,10 @@ description: 了解如何使用Best Practices Analyzer了解升级准备情况�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 38%
+source-wordcount: '2796'
+ht-degree: 37%
 
 ---
 
@@ -78,6 +78,20 @@ ht-degree: 38%
 1. 单击&#x200B;**生成报告**&#x200B;以执行最佳实践分析器。
 
    ![生成报告](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+
+>[!NOTE]
+> 从BPA版本2.1.54开始，引入了一项新功能以获取Lighthouse分数。
+1. 单击&#x200B;**生成报表**&#x200B;后，将显示一个弹出窗口，请求AEM公共站点URL以获取Lighthouse得分。 用户需要在提供的字段中输入有效的URL。
+
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. 如果URL有效，将显示一条成功消息。
+
+      ![图像](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. 如果URL无效，将显示错误消息。
+
+      ![图像](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
 1. 提供BPA上传密钥，以自动将生成的BPA报告上传到[Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)。 要获取上传密钥，请导航到CAM中的[最佳实践分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
@@ -203,7 +217,7 @@ CSV 格式的报告包含以下列：
 
 ## HTTP接口 {#http-interface}
 
-BPA提供了一个HTTP接口，可用作其AEM用户界面的替代方法。 该接口支持 HEAD 和 GET 命令。它可用于生成BPA报告，并以三种格式之一返回报告：JSON、CSV和制表符分隔值(TSV)。
+BPA提供了一个HTTP接口，可用作AEM中用户界面的替代方法。 该接口支持 HEAD 和 GET 命令。它可用于生成BPA报告，并以三种格式之一返回报告：JSON、CSV和制表符分隔值(TSV)。
 
 以下URL可用于HTTP访问，其中`<host>`是安装BPA的服务器的主机名和端口（如果需要）：
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json`（对于 JSON 格式）
@@ -242,7 +256,7 @@ HTTP 接口可用于多种方法。
 通过 HTTP 接口开始生成报告的简单方法是使用以下命令：
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`。
 
-发出请求后，客户端无需保持活动状态即可生成报告。可以在一个客户端中使用HTTPGET请求启动报告生成操作；生成报告后，可在缓存中使用另一个客户端或AEM用户界面中的BPA工具进行查看。
+发出请求后，客户端无需保持活动状态即可生成报告。可以在一个客户端中使用HTTP GET请求启动报告生成操作；生成报告后，可在缓存中使用另一个客户端或使用AEM用户界面中的BPA工具进行查看。
 
 ### 响应 {#http-responses}
 

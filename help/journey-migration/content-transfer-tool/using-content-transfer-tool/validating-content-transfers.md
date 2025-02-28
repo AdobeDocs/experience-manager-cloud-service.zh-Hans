@@ -4,7 +4,7 @@ description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-如果启用此设置，并且目标AEM Cloud Service环境运行兼容版本，则在随后的所有提取和引入期间将进行迁移验证。
+如果启用此设置，并且目标AEM云服务环境运行兼容版本，则在随后的所有提取和引入期间将进行迁移验证。
 
 有关如何安装内容传输工具的更多信息，请参阅[内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 * **提取（覆盖）**
 
-  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **引入（擦除）**
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 * **提取**
 
-  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **引入**
 

@@ -4,7 +4,7 @@ description: 在内容传输工具中查看迁移集的日志
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 36%
@@ -33,7 +33,7 @@ ht-degree: 36%
 
 1. 选择一个迁移集，然后单击操作栏中的&#x200B;**查看日志**。 这将显示日志对话框。 单击&#x200B;**提取日志**&#x200B;以在新选项卡中查看日志。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/logs.png) \
    或者，单击&#x200B;**已完成**&#x200B;状态以在新选项卡中查看日志。
 
 1. 要在不使用用户界面的情况下跟踪日志，您可以通过 SSH 连接到源 AEM 环境并跟踪 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。

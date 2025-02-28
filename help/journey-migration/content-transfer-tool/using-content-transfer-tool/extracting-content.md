@@ -1,13 +1,13 @@
 ---
 title: 从源中提取内容
-description: 了解如何从源Adobe Experience Manager (AEM)实例提取内容，以便稍后将其传输到Cloud ServiceAEM实例。
+description: 了解如何从源Adobe Experience Manager (AEM)实例提取内容，以便稍后将其传输到Cloud Service AEM实例。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
+source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 19%
+source-wordcount: '789'
+ht-degree: 17%
 
 ---
 
@@ -37,11 +37,11 @@ ht-degree: 19%
    >[!IMPORTANT]
    >
    >确保提取密钥有效并且不在到期之前。 如果密钥即将到期，您可以通过选择迁移集并单击属性来续订提取密钥。 单击&#x200B;**续订**。 这会将您转到Cloud Acceleration Manager，您可以在其中单击&#x200B;**复制提取密钥**。 每次单击&#x200B;**复制提取密钥**时，都会生成一个新的提取密钥，该密钥自创建之日起有效14天。
-   >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. 此时会显示“提取”对话框。 单击&#x200B;**提取**&#x200B;开始提取阶段。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png)
 
    >[!NOTE]
    >您可以选择在提取阶段覆盖暂存容器。 如果禁用&#x200B;**覆盖暂存容器**，它可以加快内容路径或包含版本设置未更改的后续迁移的提取。 但是，如果内容路径或包含版本设置已更改，则应启用&#x200B;**覆盖暂存容器**。
@@ -52,7 +52,7 @@ ht-degree: 19%
 
    您可以单击&#x200B;**查看进度**&#x200B;以获取正在进行的提取的粒度视图。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    您还可以通过访问“内容传输”页面从Cloud Acceleration Manager中监视提取阶段进度，并通过单击&#x200B;**...** > **查看详细信息**&#x200B;查看详细信息。
 
@@ -71,6 +71,12 @@ ht-degree: 19%
 >初始内容传输后，建议在Cloud Service上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。 如果您对第一次完整提取使用了预复制步骤，则可以跳过预复制以用于后续增补提取（如果增补迁移集大小小于200 GB）。 原因是它可能会增加整个过程的时间。
 >此外，现有内容的内容结构不应从初次提取时更改为运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 确保在迁移过程中对此进行限制。
 
+>[!NOTE]
+>一旦将内容路径迁移到暂存容器，就无法再从后续增补迁移中删除或排除这些路径或其中的任何子路径。
+>示例：初始迁移：content/dam/weRetail，
+>下一次增补排除尝试：content/dam/weRetail/ab。
+>在此方案中，无法排除content/dam/weRetail/ab，因为数据已迁移到暂存容器。
+
 提取过程完成后，可以使用增补提取方法传输增量内容。
 
 应遵循以下步骤：
@@ -83,7 +89,7 @@ ht-degree: 19%
 
    >[!IMPORTANT]
    >您应该禁用&#x200B;**在提取期间覆盖暂存容器**选项。
-   >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## 后续内容 {#whats-next}

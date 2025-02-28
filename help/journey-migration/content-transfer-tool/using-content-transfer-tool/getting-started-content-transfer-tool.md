@@ -4,10 +4,10 @@ description: 了解如何开始使用内容传输工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
+source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 16%
+source-wordcount: '1572'
+ht-degree: 14%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 16%
 
 ### 启用SSL日志记录 {#enable-ssl-logging}
 
-了解SSL/TLS连接问题有时可能很困难。 要对提取过程中的连接问题进行故障诊断，可通过源AEM环境的“系统控制台”启用SSL日志记录，步骤如下：
+了解SSL/TLS连接问题有时可能很困难。 要对提取过程中的连接问题进行故障诊断，您可以通过源AEM环境的“系统控制台”启用SSL日志记录，步骤如下：
 
 1. 通过转到&#x200B;**工具>操作> Web控制台**&#x200B;导航到源实例上的Adobe Experience Manager Web控制台，或直接导航到&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;上的URL
 1. 搜索&#x200B;**内容传输工具提取服务配置**
@@ -131,26 +131,49 @@ ht-degree: 16%
    >
    >请确保提取密钥有效并且不在到期之前。 粘贴提取密钥后，您可以在&#x200B;**创建迁移集**&#x200B;对话框中获取此信息。 如果收到连接错误，请参阅[Source环境连接](#source-environment-connectivity)以了解更多信息。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. 接下来，选择以下参数以创建迁移集：
 
    1. **包含版本**：根据需要选择。 当包含版本时，将自动包含路径`/var/audit`以迁移审核事件。
 
-      ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >如果您打算将版本包含在迁移集中，并使用`wipe=false`执行增补，则由于“内容传输工具”中的当前限制，必须禁用版本清除。 如果您希望启用版本清除，并且正在对迁移集执行增补，则必须作为`wipe=true`执行引入。
 
+      >[!NOTE]
+      >从CTT版本(3.0.24)开始，内容传输工具已包含新功能，从而增强了包含和排除路径的过程。 以前，必须逐个选择路径，这既繁琐又耗时。 现在，用户可以直接从UI包含路径，也可以根据自己的偏好上传CSV文件。
 
-   1. **要包含的路径**：使用路径浏览器选择需要迁移的路径。 路径选取器通过键入或选择接受输入。
-
+   1. **要包含的路径**：使用路径浏览器选择需要迁移的路径。 路径选取器通过键入或选择接受输入。 用户只能选择一个选项来包含路径：通过UI或上传CSV文件。
       >[!IMPORTANT]
       >创建迁移集时，以下路径受到限制：
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc` （在CTT中允许选择某些`/etc`路径）
+
+      ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
+
+      1. 只允许选择路径，并且必须至少存在一个路径。如果未选择路径，则会发生服务器错误。
+
+         ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
+
+      1. 使用&#x200B;**CSV上传选项**&#x200B;时，CSV文件必须包含有效路径。
+
+         ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
+
+      1. 要切换回路径选择器，用户需要刷新页面并重新开始。
+
+      1. 如果在上传的CSV中找到&#x200B;**无效路径**，则会显示一个单独的对话框，其中显示无效路径。
+
+         ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
+
+      1. 用户必须更正CSV文件并再次上传它，或者刷新UI以通过路径选择器选择路径。
+
+   1. **要排除的路径**：新功能允许用户排除不希望包含的特定路径。 例如，如果包含部分中的路径为/content/dam，则用户现在可以排除/content/dam/catalogs等路径。
+
+      ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. 填充&#x200B;**创建迁移集**&#x200B;详细信息屏幕中的所有字段后，单击&#x200B;**保存**。
 
@@ -184,7 +207,7 @@ ht-degree: 16%
 
 1. 这将打开&#x200B;**检查大小**&#x200B;对话框。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. 单击&#x200B;**检查大小**&#x200B;以启动进程。 然后，您将返回到迁移集列表视图，并且您应该会看到一条消息，指示&#x200B;**检查大小**&#x200B;正在运行。
 
@@ -192,7 +215,7 @@ ht-degree: 16%
 
 1. **检查大小**&#x200B;进程完成后，状态将更改为&#x200B;**已完成**。 选择相同的迁移集，然后单击&#x200B;**检查大小**&#x200B;以查看结果。 以下是&#x200B;**检查大小**&#x200B;结果无警告的示例。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
 
 1. 如果&#x200B;**检查大小**&#x200B;结果指示磁盘空间不足，或迁移集超出产品限制，或两者都超出，则会显示&#x200B;**警告**&#x200B;状态。
 
