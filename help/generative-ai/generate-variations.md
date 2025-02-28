@@ -4,10 +4,10 @@ description: 了解可从 AEM as a Cloud Service 和 Edge Delivery Services 的 
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: ht
-source-wordcount: '3262'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >在所有情况下，要使用生成变体功能，您必须确保满足[访问权限方面的先决条件](#access-prerequisites)。
+
+>[!NOTE]
+>
+>您还可以访问[生成集成到AEM编辑器中的变体](/help/generative-ai/generate-variations-integrated-editor.md)。
 
 之后您可以：
 

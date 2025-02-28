@@ -1,13 +1,13 @@
 ---
-title: 生成变体的发行说明
+title: '生成变体的发行说明 '
 description: 从 AEM as a Cloud Service 和 Edge Delivery Services 的 Sidekick 访问生成变体的发布说明
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,19 @@ ht-degree: 100%
 
 ## 版本亮点 {#release-highlights}
 
-当前版本为 2.2.0 版。
+当前版本为 3.0.0 版。
+
+### 3.0.0 {#release-notes-3-0-0}
+
+您可以从以下编辑器[访问生成变体](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) （[在配置变体](#access-generate-variations)后）：
+
+* [在AEM Edge Delivery Services的Sidekick中；用于基于文档的创作](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [在通用编辑器中](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [在内容片段编辑器中](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>仍可直接访问[生成变体的先前版本](/help/generative-ai/generate-variations.md)。
 
 ### 2.2.0 {#release-notes-2-2-0}
 

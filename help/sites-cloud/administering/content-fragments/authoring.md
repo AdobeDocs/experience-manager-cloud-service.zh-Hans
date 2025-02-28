@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 72%
+source-wordcount: '2657'
+ht-degree: 77%
 
 ---
 
@@ -174,40 +174,9 @@ ht-degree: 72%
 
 使用创新型变体来利用创新型人工智能加快内容创建。
 
-在内容片段编辑器中使用生成变量：
+打开内容片段编辑器以查找生成变体的入口点。
 
-1. 打开内容片段编辑器。 在标题中，您将找到生成变体的入口点：
-
-   ![在内容片段编辑器中生成变体](assets/cfm-generate-variations1.png)
-
-1. 生成变体将在新选项卡中打开。 在左边栏中，您可以看到要为其创建内容的AEM Cloud实例和内容片段。 选择要使用的提示或创建新提示。
-
-   >[!NOTE]
-   >
-   >可用的Adobe提示模板现在有限，但在未来版本中将添加更多模板。
-
-   ![导出以在内容片段中生成变体](assets/cfm-generate-variations2.png)
-
-1. 通过填写提示来生成内容。 片段中的内容模型将通过GenAI自动用于生成内容。
-
-   >[!NOTE]
-   >
-   >我们当前仅支持文本字段。
-
-   ![导出以在内容片段中生成变体](assets/cfm-generate-variations3.png)
-
-1. 选择所需的生成变体并选择“导出变体”。 确认内容片段变体的名称并选择以下任一项：
-
-   * **导出**：将变体导出到内容片段，并停留在生成变体应用程序中。
-   * **导出并打开**：将变量导出到内容片段，并打开一个新选项卡，该选项卡显示具有来自GenAI的新变量的内容片段。
-
-     ![导出以在内容片段中生成变体](assets/cfm-generate-variations4.png)
-
-1. 生成的变体显示在主内容片段编辑器中。
-
-   ![在内容片段中查看生成变体](assets/cfm-generate-variations5.png)
-
-请参阅[生成变体](/help/generative-ai/generate-variations.md)以了解详情。
+请参阅[生成变体 — 集成在AEM编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)以了解详情。
 
 ### 删除变体 {#delete-variation}
 
