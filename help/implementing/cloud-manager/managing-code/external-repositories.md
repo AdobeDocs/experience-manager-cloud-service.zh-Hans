@@ -4,10 +4,10 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 91%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -49,8 +49,8 @@ ht-degree: 91%
    | 字段 | 描述 |
    | --- | --- |
    | **存储库名称** | 必需。为您的新存储库取一个富有表现力的名称。 |
-   | **存储库 URL** | 必需。存储库的 URL。<br><br>如果您使用 GitHub 托管的存储库，则路径必须以 `.git` 结尾。<br>例如，*`https://github.com/org-name/repo-name.git`*（URL 路径仅用于说明目的）。<br><br>如果您使用外部存储库，则必须使用以下 URL 路径格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或 <br>`https://self-hosted-domain/org-name/repo-name.git`<br>，并与您的 Git 供应商匹配。 |
-   | S **选择存储库类型** | 必需。选择您正在使用的存储库类型：**GitHub**、**GitLab** 或 **BitBucket**。如果上面的存储库 URL 路径包含 Git 供应商名称，例如 GitLab 或 Bitbucket，则存储库类型已为您预先选择。 |
+   | **存储库 URL** | 必需。存储库的 URL。<br><br>如果您使用的是GitHub托管的存储库，则路径必须以`.git`结尾。<br>例如，*`https://github.com/org-name/repo-name.git`*（URL 路径仅用于说明目的）。<br><br>如果您使用外部存储库，则必须使用以下 URL 路径格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或 <br>`https://self-hosted-domain/org-name/repo-name.git`<br>，并与您的 Git 供应商匹配。 |
+   | **选择存储库类型** | 必需。选择您正在使用的存储库类型：**GitHub**、**GitLab** 或 **BitBucket**。如果上面的存储库 URL 路径包含 Git 供应商名称，例如 GitLab 或 Bitbucket，则存储库类型已为您预先选择。 |
    | **描述** | 可选。存储库的详细描述。 |
 
 1. 选择&#x200B;**保存**&#x200B;以添加存储库。
@@ -64,7 +64,7 @@ ht-degree: 91%
    | --- | --- |
    | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
    | **添加新的访问令牌** | **存储库类型：GitHub**<br>• 在&#x200B;**令牌名称**&#x200B;文本字段中，键入您正在创建的访问令牌的名称。<br>• 按照 [GitHub 文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<br>• 所需权限：<br> • `Read access to metadata`。<br> • `Read and write access to code and pull requests`。<br>• 在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
-   |  | **存储库类型：GitLab**<br>• 在&#x200B;**令牌名称**&#x200B;文本字段中，键入您正在创建的访问令牌的名称。<br>• 按照 [GitLab 文档](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)中的说明创建个人访问令牌。<br>• 所需权限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
+   |  | **存储库类型：GitLab**<br>• 在&#x200B;**令牌名称**&#x200B;文本字段中，键入您正在创建的访问令牌的名称。<br>• 按照 [GitLab 文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<br>• 所需权限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
    |  | **存储库类型：Bitbucket**<br>• 在&#x200B;**令牌名称**&#x200B;文本字段中，键入您正在创建的访问令牌的名称。<br>• 使用 [Bitbucket 文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<br>• 所需权限：<br> • `Read and write access to code and pull requests`。 |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ ht-degree: 91%
 
 ## 限制
 
-外部存储库无法链接到配置管道。
+* 外部存储库无法链接到配置管道。
+* 具有外部存储库（未在GitHub上托管）和“在Git发生更改时”触发器的管道不会自动启动。 它们只能手动启动。
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
