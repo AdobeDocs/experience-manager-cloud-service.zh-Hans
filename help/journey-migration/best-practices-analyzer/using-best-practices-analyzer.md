@@ -4,7 +4,7 @@ description: 了解如何使用Best Practices Analyzer了解升级准备情况�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -81,6 +81,8 @@ ht-degree: 37%
 
 >[!NOTE]
 > 从BPA版本2.1.54开始，引入了一项新功能以获取Lighthouse分数。
+
+
 1. 单击&#x200B;**生成报表**&#x200B;后，将显示一个弹出窗口，请求AEM公共站点URL以获取Lighthouse得分。 用户需要在提供的字段中输入有效的URL。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
