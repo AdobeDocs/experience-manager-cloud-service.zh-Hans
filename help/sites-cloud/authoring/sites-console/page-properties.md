@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
 workflow-type: tm+mt
-source-wordcount: '2268'
-ht-degree: 90%
+source-wordcount: '2296'
+ht-degree: 89%
 
 ---
 
@@ -101,7 +101,7 @@ ht-degree: 90%
 
    * **语言** – 页面语言
    * **语言根** – 如果页面是语言副本的根，则必须选中
-   * **重定向** — 指示此页面应以HTML`302 Found`状态自动重定向到的页面。
+   * **重定向** — 指示此页面应以HTML `302 Found`状态自动重定向到的页面。
       * **永久重定向** – 选中后，页面将重定向到与 HTML `301 Moved Permanently` 状态一起提供的目标路径。
    * **设计** – 指示在生成的站点的页面导航中是显示还是隐藏页面
    * **别名** – 指定要用于此页面的别名
@@ -119,6 +119,8 @@ ht-degree: 90%
 * **模板设置**
 
    * **允许的模板** – [定义在此子分支内可用的模板的列表](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
+   * **将页面用作模板** - [基于当前页面创建新模板。](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * 仅适用于通过Edge Delivery Services与通用编辑器一起使用而创建的页面。
 
 * **身份验证要求**
 
