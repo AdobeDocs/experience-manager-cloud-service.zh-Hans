@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 92%
@@ -29,7 +29,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->AEM Sites [的渐进式Web应用程序(PWA)功能已被弃用](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)。
+>AEM Sites [的渐进式Web应用程序(PWA)功能已被弃用](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)。
 >
 >将继续支持使用此功能的现有项目，但新项目不应使用此功能。
 
@@ -63,7 +63,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->Adobe不建议在自定义组件或不是从核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)扩展的[组件上使用PWA功能。
+>Adobe不建议在自定义组件或未[从核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)扩展的组件上使用PWA功能。
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -149,7 +149,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 详细选项 {#detailed-options}
 
-以下部分提供了有关[为PWA配置站点](#enabling-pwa-for-your-site)时可用的选项的更多详细信息。
+以下部分提供了有关[为PWA](#enabling-pwa-for-your-site)配置您的站点时可用的选项的更多详细信息。
 
 ### 配置安装体验 {#configure-installable-experience}
 

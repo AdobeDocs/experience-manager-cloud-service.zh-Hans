@@ -4,10 +4,10 @@ description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明�
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 451e8cac2c0203db9b64ee39a615f201c2436933
-workflow-type: ht
+source-git-commit: 80b0d8cc5288e675d39b774d1a672482c7e2c94f
+workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2025.1.0 |
+| 版本 | 2025.2.0 |
 | 类型 | 连续更新 |
 | 发行日期 | 持续更新 |
 
