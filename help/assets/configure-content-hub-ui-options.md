@@ -2,10 +2,10 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 14%
+source-wordcount: '1668'
+ht-degree: 16%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 14%
 
 >[!AVAILABILITY]
 >
->Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>Content Hub 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括：
 
@@ -44,7 +44,7 @@ ht-degree: 14%
 
 * 除了资源、收藏集和分析之外，您需要在Content Hub中包含的任何自定义链接。
 
-## 先决条件 {#prerequisites-configuration-ui}
+## 前提条件 {#prerequisites-configuration-ui}
 
 [Content Hub管理员](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator)可以为组织内的其他用户设置配置选项。
 
@@ -229,19 +229,17 @@ Content Hub上的![配置UI品牌](assets/configuration-ui-branding-updates.png)
 
 演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关[呈现形式的更多信息。
 
-Content Hub允许下载静态演绎版。 静态演绎版是本机生成的资源原始文件的不同表示形式。 示例包括缩略图或移动优化呈现版本。 管理员可以管理和控制资源演绎版的可用性；并管理您是否可以下载原始资源。
-
 若要禁用，请执行以下步骤：
 
 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 呈现版本]**。 以下选项可供选择：
 
-* 启用[!UICONTROL 启用静态呈现的可用性]切换功能，使所有静态呈现在Content Hub中可见。
+* 启用[!UICONTROL 启用演绎版可用性]切换功能，使所有演绎版在Content Hub上可见。
 
 * 启用或禁用&#x200B;**[!UICONTROL 允许用户下载原始资产]**&#x200B;切换开关以控制下载原始资产的可用性。
 
   ![在Content Hub上配置演绎版](assets/config-renditions.png)
 
-有关如何在Content Hub中查看和下载静态呈现版本的信息，请参阅[在Content Hub中下载资源](/help/assets/download-assets-content-hub.md)。
+有关如何在Content Hub中查看和下载演绎版的信息，请参阅[在Content Hub中下载资源](/help/assets/download-assets-content-hub.md)。
 
 ### 自定义链接 {#configure-custom-links-content-hub}
 
