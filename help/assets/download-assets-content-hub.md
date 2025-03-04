@@ -3,10 +3,10 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载资源
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 9%
+source-wordcount: '778'
+ht-degree: 8%
 
 ---
 
@@ -128,7 +128,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 >[!NOTE]
 > 
-* 若要提前访问Dynamic Media帐户，请[创建并提交Adobe客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+* 动态和智能裁剪呈现版本功能处于早期采用者阶段。 要访问该功能，请[创建并提交Adobe客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 * [Dynamic Media Open API服务](/help/assets/dynamic-media-open-apis-overview.md)上新加入的客户必须修改其现有图像预设以供审批。
 
 
