@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 95%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 95%
          + [保护您的Forms：添加reCAPTCHA安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [构建自定义表单组件：开发人员指南](/help/edge/docs/forms/custom-components-forms.md)
          + [监视表单性能： Real Use Monitoring指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [在Edge上部署Forms：Edge Delivery Services发布指南](/help/edge/docs/forms/publishing-forms.md)
       + 所见即所得的创作 {#universal-editor}
          + [Forms Universal Editor for Edge Delivery Services简介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用编辑器创建第一个表单 — 分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用通用编辑器开始创作 — 分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用通用编辑器创建第一个表单](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [在通用编辑器中使您的Forms对移动设备友好：响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [设计精美的Forms：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

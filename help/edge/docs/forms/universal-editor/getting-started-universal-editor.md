@@ -4,10 +4,10 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 97%
+source-wordcount: '1846'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 97%
 在当今的数字时代，用户友好的表单对于所有组织都至关重要。Edge Delivery Services Forms 是使用通用编辑器创建的，提供了所见即所得（WYSIWYG）功能。它为高效的表单制作提供了一个现代化的直观界面。
 
 AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery Services Forms，以捕获和存储数据。您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM 项目](#add-adaptive-forms-block-to-your-existing-aem-project)。
+
+![Github存储库工作流](/help/edge/assets/repo-workflow.png)
 
 本教程将指导您使用通用编辑器的所见即所得创作功能，在新的或现有的 Adobe Experience Manager Site 项目中创建、预览和发布自己的表单。
 
@@ -252,6 +254,10 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    ![索引页面](/help/edge/docs/forms/assets/publish-index-page.png)
 
 您可以通过编辑 Adaptive Forms Block 中的 `.css` 和 `.js` 文件并[设置本地 AEM 开发环境](#set-up-local-aem-development-environment)在浏览器中立即查看更改。
+
+>[!NOTE]
+>
+> 您还可以[在通用编辑器中创作独立表单并将其发布到Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)。
 
 ## 设置本地 AEM 开发环境
 

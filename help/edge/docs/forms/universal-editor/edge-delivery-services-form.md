@@ -7,51 +7,51 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
 # Edge Delivery Services Forms
 
-Adobe Edge Delivery Services Forms改变了表单的创作、执行和处理方式。 借助Edge Delivery Services，企业可以创建快速、安全且高度可用的数字表单，从而通过快速开发环境提升用户体验和运营效率。 借助Edge Delivery Services Forms，您可以提高转化率、降低成本和加快内容交付。
+Adobe Edge Delivery Services Forms 改变了表单的创作、执行和处理方式。使用 Edge Delivery Services，组织可以快速、安全地创建高度可用的数字化表单，通过快速开发环境提升用户体验和运营效率。通过 Edge Delivery Services Forms，您可以提高转化率、降低成本并加速内容投放。
 
-## Edge Delivery Services Forms的优势
+## Edge Delivery Services Forms 的优点
 
-* **更快地创建表单**：使用完美的Lighthouse分数构建高性能表单，并使用真实用户监控(RUM)持续监控其真实世界的性能。
+* **更快的表单创建**：利用完美的 Lighthouse 评分构建高性能表单，并使用真实用户监控（RUM）持续监控表单的实际性能。
 
-* **简化的创作流程**：轻松管理来自多个来源的内容，以获得更大的灵活性。 开箱即用地使用WYSIWYG和基于文档的创作来创建表单，从而允许各种内容格式的无缝集成。
+* **简化的创作流程**：轻松管理多个来源的内容，提高灵活性。您可以使用所见即所得（WYSIWYG）和基于文档的创作方式创建表单，从而实现各种内容格式的无缝集成。
 
-* **方便非技术用户的使用**：Edge Delivery Services使非程序员能够轻松管理和发布表单，而无需掌握广泛的编程知识。
+* **非技术用户也能轻松使用**：Edge Delivery Services 使非程序员也能轻松管理和发布表单，而无需丰富的编程知识。
 
-* **改进的用户体验**：确保快速加载时间和流畅的交互，从而为用户提供最小的等待时间和直观的表单填充体验。
+* **改善用户体验**：确保快速的加载时间和顺畅的交互，为用户提供最短的等待时间和直观的表单填写体验。
 
-* **无服务器执行**： Edge Delivery Services启用表单逻辑的无服务器执行。 这包括：
+* **无服务器执行**：Edge Delivery Services 支持表单逻辑的无服务器执行。这包括：
 
    * **客户端验证**：表单字段验证在客户端进行，减少了往返延迟。
 
-   * **预填充和Personalization**：在客户端处理表单数据预填充，以实现无缝用户体验。
+   * **预填和个性化**：表单数据预填在客户端进行，实现顺畅无缝的用户体验。
 
-   * **提交处理**：表单提交已验证并安全转发，无需中央服务器
+   * **提交处理**：表单提交经过验证并安全转发，无需中央服务器
 
-## Edge Delivery Services Forms的工作原理
+## Edge Delivery Services Forms 如何运作？
 
-用户可以使用基于文档的创作工具(如Edge Delivery Services Drive、SharePoint或Universal Editor(WYSIWYG创作))创作Google Forms，同时利用GitHub存储库中提供的基本样式、行为和组件。 创作完成后，Edge Delivery Services Forms可以使用Forms提交服务将数据发送到任何平台。
+用户可以使用基于文档的创作工具（如 Google Drive、SharePoint 或用于所见即所得创作的通用编辑器）创作 Edge Delivery Services Forms，同时使用 GitHub 存储库中提供的基本样式、行为和组件。创作完成后，Edge Delivery Services Forms 就可以使用表单提交服务将数据发送到任何平台。
 
-![Edge Delivery Services Forms的工作方式](/help/edge/docs/forms/assets/eds-forms-working.png)
+![Edge Delivery Services Forms 如何运作？](/help/edge/docs/forms/assets/eds-forms-working.png)
 
-### Edge Delivery Services Forms的关键组件
+### Edge Delivery Services Forms 的关键组件
 
-Edge Delivery服务Forms的主要组件包括：
+Edge Delivery Servies Forms 的关键组件有：
 
-* **GitHub存储库**： GitHub存储库用作创建Edge Delivery Services Forms的模板。 这些表单利用存储库中的基本样式和功能，并允许用户将自定义项和自定义组件添加到Edge Delivery Services Forms。
+* **GitHub 存储库**：GitHub 存储库可用作创建 Edge Delivery Services Forms 的样板。这些表单使用存储库中的基本样式和功能，用户可以向 Edge Delivery Services Forms 添加自定义功能和自定义组件。
 
-* **表单创作**： Edge Delivery Services Forms支持两种类型的创作：WYSIWYG和基于文档的创作。 基于文档的创作使用户能够使用熟悉的工具(如Google Docs和Microsoft Office)创建表单。 WYSIWYG创作允许用户使用通用编辑器以可视方式设计表单，使非技术用户能够轻松创建和管理表单。 通用编辑器提供了直观的表单创建体验，并允许访问多种表单功能。
+* **表单创作**：Edge Delivery Services Forms 支持两种类型的创作：所见即所得和基于文档的创作。基于文档的创作使用户能够使用熟悉的工具（如 Google Docs 和 Microsoft Office）创建表单。在所见即所得的创建方式中，用户可以使用通用编辑器直观地设计表单，非技术用户也能轻松创建和管理表单。通用编辑器可提供直观的表单创建体验，并提供多种表单功能。
 
-* **Forms提交服务**： Forms提交服务允许您在任何平台(如OneDrive、SharePoint或Google Sheets)上存储表单提交中的数据，从而让您能够在首选系统中轻松访问和管理表单数据。
+* **表单提交服务**：使用表单提交服务，您可以将表单提交的数据存储在任何平台上，如 OneDrive、SharePoint 或 Google Sheets，从而方便您在首选系统中访问和管理表单数据。
 
 ## 创作表单
 
@@ -63,7 +63,7 @@ Adobe Experience Manager 提供并支持多个编辑器来创作表单。您可�
 
 通用编辑器是一个多功能可视化编辑器，提供所见即所得（WYSIWYG）功能，确保获得直观的表单创建体验。建议在创建新表单时使用通用编辑器，因为它提供了现代、用户友好的设计和方便的拖放界面。
 
-要使用通用编辑器创建表单，需要使用 AEM 环境中可用的 Edge Delivery Services 模板。这些表单的外观继承自 Edge Delivery Services GitHub 存储库中的配置。[AEM 环境与 Edge Delivery Services GitHub 存储库之间的连接](/help/edge/docs/forms/publishing-forms.md)必须建立，才能在 Edge Delivery Services 上发布这些表单。
+要使用通用编辑器创建表单，需要使用 AEM 环境中可用的 Edge Delivery Services 模板。这些表单的外观继承自 Edge Delivery Services GitHub 存储库中的配置。[AEM 环境与 Edge Delivery Services GitHub 存储库之间的连接](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)必须建立，才能在 Edge Delivery Services 上发布这些表单。
 
 有关如何使用通用编辑器进行创作的详细步骤，请参阅文章[使用通用编辑器创作内容](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring)。
 
