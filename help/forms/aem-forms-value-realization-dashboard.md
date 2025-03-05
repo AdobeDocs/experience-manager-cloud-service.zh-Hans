@@ -5,31 +5,33 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # 了解您的价值实现仪表板
 
 ![Fvalue实现仪表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview">此功能是测试版功能，仅对少数选定客户启用。</span>
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的官方地址中的电子邮件发送至aem-forms-ea@adobe.com。<span>
+
 
 欢迎来到一站式服务，以了解您的表单带来的价值！ 该功能板为您提供了宝贵的见解，可用于优化表单、简化工作流并最终更快地实现目标。
 
-本文提供了价值实现功能板及其优势的概念性概述。 有关详细的使用说明和量度解释，请参阅[使用值实现仪表板解释表单使用分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)。
+本文提供了价值实现功能板及其优势的概念性概述。 有关详细的使用说明和量度解释，请参阅[使用值实现仪表板解释表单使用分析](/help/forms/using-the-value-realization-dashboard.md)。
 
 
-![值实现仪表板](/help/forms/assets/forms-usage-insights.png)
+
 
 ## 仪表板上有什么？ {#content-of-dashboard}
 
 该仪表板是您了解表单使用情况的窗口。 以下是关键部分的细目：
+
 
 ### 一段时间的表单和文档活动
 
@@ -44,8 +46,6 @@ ht-degree: 0%
 * **重复使用表单片段**：测量这些片段在不同表单中的使用频率。
 
 
-
-
 ## 这对您有何好处？ {#benefits-to-you}
 
 此仪表板允许您针对表单做出数据驱动型决策。 方法如下：
@@ -53,6 +53,8 @@ ht-degree: 0%
 * **识别受欢迎的Forms**：高提交率表示有价值的表单。 分析这些内容，以便在其他文档中复制最佳实践。
 * **优化表单创建**：通过识别瓶颈缩短创建时间。 探索预建模板或简化工作流。
 * **提升片段重用**：鼓励协作和可重用片段的可发现性。 组织良好的片段库可以显着提高效率。
+
+  ![值实现仪表板](/help/forms/assets/forms-usage-insights.png)
 
 
 ## 将见解转化为行动 {#turning-insights-into-actions}
@@ -75,4 +77,4 @@ ht-degree: 0%
 
 ## 另请参阅
 
-* [解释使用情况分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [使用功能板分析Forms并记录使用趋势](/help/forms/using-the-value-realization-dashboard.md)
