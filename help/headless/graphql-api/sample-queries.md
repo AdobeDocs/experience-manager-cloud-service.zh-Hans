@@ -4,10 +4,10 @@ description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 94%
+source-wordcount: '1972'
+ht-degree: 92%
 
 ---
 
@@ -376,7 +376,7 @@ query {
 * 创建各种标签，并命名为 `Tourism` : `Business`, `City Break`, `Holiday`
 * 并将其分配给各种 `City` 实例的主变体
 
-然后，您可以使用查询返回`city`模式中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
+然后，您可以使用查询返回`city`架构中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
 
 **示例查询**
 
@@ -1886,6 +1886,10 @@ query {
 * 参阅[通过 URL 传递动态媒体资产的示例查询 - 图像参考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
 * 请参见[通过 URL 传递动态媒体资产的示例查询 - 多重引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+对于从内容片段编辑器交付非当前AEM实例的本地远程资产。
+
+* 请参阅[Dynamic Media示例查询，以获取OpenAPI资源支持(远程Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## 示例内容片段结构（用于 GraphQL） {#content-fragment-structure-graphql}
 

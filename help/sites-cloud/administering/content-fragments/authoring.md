@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 77%
+source-wordcount: '2847'
+ht-degree: 71%
 
 ---
 
@@ -314,8 +314,9 @@ ht-degree: 77%
 
 在&#x200B;**内容引用**&#x200B;字段中，您可以：
 
-* 引用存储库中已存在的资源
-* 直接将资源上传到字段；这样一来，便无需使用&#x200B;**资源**&#x200B;控制台进行上传
+* 引用已存在于本地存储库中的资源
+* 引用驻留在远程存储库中的资源
+* 将资源直接上传到字段；这样就无需使用&#x200B;**Assets**&#x200B;控制台进行上传
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ ht-degree: 77%
   >* 已定义一个&#x200B;**根路径**（在[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)中）。这将指定图像的存储位置。
   >* 在接受的内容类型列表中包括&#x200B;**图像**
 
-要添加资源，您可以：
+##### 引用本地Assets {#reference-local-assets}
+
+要引用本地资源，您可以：
 
 * 将新的资源文件直接（例如，从您的文件系统中）拖放到&#x200B;**内容引用**&#x200B;字段
 * 使用&#x200B;**添加资源**&#x200B;操作，然后选择&#x200B;**浏览资源**&#x200B;或&#x200B;**上传**&#x200B;以打开适当的选择器进行使用：
 
   ![内容片段编辑器 - 添加资源选项](assets/cf-authoring-add-asset-options.png)
+
+##### 引用远程Assets {#reference-remote-assets}
+
+要引用远程资产，请执行以下操作：
+
+1. 在浏览资产时指定远程&#x200B;**存储库**：
+
+   ![内容片段编辑器 — 从远程选择资产](assets/cf-authoring-remote-asset-01.png)
+
+2. 选择后，可在资源信息中看到位置：
+
+   ![内容片段编辑器 — 远程存储库中的资产](assets/cf-authoring-remote-asset-02.png)
+
+###### 远程Assets — 限制 {#remote-assets-limitations}
+
+引用远程资产时，存在一些限制：
+
+* 只有[个已批准的](/help/assets/approve-assets.md)个资源可供远程资源存储库引用。
+
+* 如果从远程存储库中删除引用的资产，则会导致内容引用损坏。
+
+* 用户可以访问的所有投放资产存储库都可供选择，但可用的列表无法限制。
+
+* AEM实例和远程资源存储库实例必须使用同一版本。
+
+* 通过管理API或投放API，不会公开任何资产元数据。 您必须使用资源元数据API来检索资源元数据详细信息：
+
+   * 单个资源元数据： [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * 使用搜索API（实验性）获取批量元数据信息： [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>另请参阅用于内容片段的[AEM GraphQL API — 用于OpenAPI资源支持的Dynamic Media (远程Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### 引用页面 {#reference-pages}
 

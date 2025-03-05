@@ -4,10 +4,10 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 95%
+source-wordcount: '6021'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->有关可用的各种AEM API的概述以及所涉及概念的比较，请参阅[结构化内容交付和管理的API](/help/headless/apis-headless-and-content-fragments.md)。
+>有关可用的各种API的概述以及所涉及概念的比较，请参阅结构化内容交付和管理的[AEM API](/help/headless/apis-headless-and-content-fragments.md)。
 
 >[!NOTE]
 >
@@ -317,7 +317,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 #### ID (UUID) {#id-uuid}
 
-ID字段还用作AEM GraphQL中的标识符。 它表示AEM存储库中内容片段资源的路径，但不会保存实际路径，而是保存表示资源的UUID。 我们选择此项作为内容片段的标识符是因为它：
+ID字段还可用作在AEM GraphQL中的标识符。 它表示AEM存储库中内容片段资源的路径，但不会保存实际路径，而是保存表示资源的UUID。 我们选择此项作为内容片段的标识符是因为它：
 
 * 在 AEM 中唯一
 * 可以轻易获取，
@@ -961,15 +961,15 @@ AEM Content Fragments的 GraphQL 允许您请求 AEM Dynamic Media (Scene7) 资�
 GraphQL 中的解决方案意味着您可以：
 
 * 在 `ImageRef` 引用上使用 `_dmS7Url`
-   * 请参阅[通过URL进行Dynamic Media资源投放的示例查询 — 图像引用](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+   * 查看按URL进行的Dynamic Media资产投放的[示例查询 — 图像引用](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 * 在多个引用上使用`_dmS7Url`；`ImageRef`、`MultimediaRef`和`DocumentRef`
-   * 请参阅[按URL交付Dynamic Media资源的示例查询 — 多个引用](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+   * 查看按URL的Dynamic Media资产投放的[示例查询 — 多个引用](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 * 将`_dmS7Url`用于智能裁剪功能
 
    * `_smartCrops`属性公开可用于特定资源的智能裁剪配置
 
-   * 请参阅使用Smart Crop按URL投放Dynamic Media资源的[示例查询](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1054,7 +1054,7 @@ query allTeams {
 }
 ```
 
-### 按URL投放Dynamic Media资源的示例查询 — 具有智能裁切 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### 按URL交付Dynamic Media资源的示例查询 — 使用智能裁切 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 下面是一个示例查询：
 
@@ -1083,6 +1083,110 @@ query allTeams {
   }
 } 
 ```
+
+## Dynamic Media for OpenAPI资源支持(远程Assets) {#dynamic-media-for-openapi-asset-support}
+
+[远程资产](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets)集成允许您从内容片段编辑器引用非当前AEM实例的本地Assets。 它由Dynamic Media实施，以便在内容片段编辑器和GraphQL JSON中支持OpenAPI资源。
+
+### Dynamic Media for OpenAPI资源支持(远程Assets)的示例查询 {#sample-query-dynamic-media-for-openapi-asset-support}
+
+以下是示例请求：
+
+* 说明引用远程资产的概念
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* 响应
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**限制**
+
+当前的限制包括：
+
+* GraphQL投放仅支持`repositoryId`和`assetId`（未返回其他资源元数据）
+
+  >[!NOTE]
+  >
+  >然后，需要在客户端基于[资产交付API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)构建完整URL。
+
+* 只有&#x200B;*个已批准*&#x200B;的资源可供远程存储库引用
+* 如果从远程存储库中删除引用的资产，这将导致内容片段资产引用损坏。
+* 用户有权访问的所有投放资产存储库都将可供选择，可用列表不可限制。
+* AEM实例和远程资产存储库实例都必须是同一版本。
+* 没有通过[管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)和[投放API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)公开的资产元数据。 您必须使用资源元数据API来检索资源元数据详细信息。
 
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
 
