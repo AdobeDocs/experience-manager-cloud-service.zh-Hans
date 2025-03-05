@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 67%
@@ -39,7 +39,7 @@ ht-degree: 67%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->它们现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**Assets**&#x200B;控制台进行管理。 本节介绍如何从&#x200B;**Assets**&#x200B;控制台进行管理。
+>它们现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**Assets**&#x200B;控制台进行管理。 本节介绍如何从&#x200B;**Assets**&#x200B;控制台进行管理。
 >
 >创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 
@@ -198,7 +198,7 @@ ht-degree: 67%
    * **已修改**：橙色
    * **已停用**：红色
 
-* 通过按钮可直接打开&#x200B;*新* [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)（可通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)访问），您可以&#x200B;**尝试新编辑器**。
+* 通过按钮可直接打开&#x200B;*新* [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)（可通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)访问），您可以&#x200B;**尝试新编辑器**。
 
   >[!WARNING]
   >

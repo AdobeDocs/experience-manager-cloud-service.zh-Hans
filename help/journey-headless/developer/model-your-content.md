@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
@@ -271,7 +271,7 @@ tbc...
 
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md) – 内容片段的导入页面
    * [配置浏览器中的内容片段](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) – 在配置浏览器中启用内容片段功能
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – 创建和编辑内容片段模型
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) – 创建和编辑内容片段模型
    * [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md) – 创建和创作内容片段；此页面将您转至其他详细部分
 * [AEM GraphQL 架构](access-your-content.md) – GraphQL 如何实施模型
 * [示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)

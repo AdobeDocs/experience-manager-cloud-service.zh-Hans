@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 90%
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独
 >
 >内容片段是一项&#x200B;**站点**&#x200B;功能，但存储为&#x200B;**资源**。
 >
->现在主要用&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台管理它们，但仍可从&#x200B;**[资源](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;控制台管理它们。
+>现在主要用&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台管理它们，但仍可从&#x200B;**[资源](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;控制台管理它们。
 >
 >有两个编辑器用于创作内容片段：
 >

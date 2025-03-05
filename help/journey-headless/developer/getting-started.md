@@ -5,8 +5,8 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
 
@@ -285,7 +285,7 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) - 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Adobe Experience Manager as a Cloud Service 的架构简介](/help/overview/architecture.md) – 了解 AEM as a Cloud Service 的结构
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
 * [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Site&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.Headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。
@@ -295,7 +295,7 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [多 Site 管理器和翻译](/help/sites-cloud/administering/msm-and-translation.md) – 有关 AEM 的强大翻译功能的技术文档
 * [AEM 工作流](/help/sites-cloud/authoring/workflows/overview.md) – 有关如何在 AEM 中自动实施工作流的技术文档
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md) – 有关内容片段的技术文档。
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – 有关内容片段模型的技术文档。
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) – 有关内容片段模型的技术文档。
 * [GraphQL 技术文档](https://graphql.org) – GraphQL 定义（外部链接）
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) – 说明如何创建请求来访问和交付内容片段的技术文档
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) – 说明如何创建和修改内容片段（及其他资源）的技术文档

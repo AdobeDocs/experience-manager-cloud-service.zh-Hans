@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6216'
 ht-degree: 95%
 
 ---
@@ -419,7 +419,8 @@ ht-degree: 95%
          + [概述和概念](/help/sites-cloud/administering/content-fragments/overview.md)
          + [使用 GraphQL 进行 Headless 传递](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [内容片段设置](/help/sites-cloud/administering/content-fragments/setup.md)
-         + [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [管理内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+         + [定义内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
          + [创作片段内容](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)

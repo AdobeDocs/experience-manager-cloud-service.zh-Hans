@@ -5,8 +5,8 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 100%
 
@@ -375,7 +375,7 @@ query {
    * [示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [在配置浏览器中启用内容片段功能](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [JSON 输出](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [了解跨源资源共享 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL 持久化查询 - 在 Dispatcher 中启用缓存](/help/headless/deployment/dispatcher-caching.md)

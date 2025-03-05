@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 71%
@@ -50,7 +50,7 @@ ht-degree: 71%
 * 顶部工具栏：用于关键信息和操作
    * 内容片段控制台的链接（主页图标）
    * 有关模型和文件夹的信息
-   * 预览[链接（如果为模型配置了默认预览 URL 模式）](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+   * 预览[链接（如果为模型配置了默认预览 URL 模式）](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
    * [发布](#publish-content-fragment)和[取消发布](#unpublish-content-fragment)操作
    * 用于显示所有&#x200B;**父引用**&#x200B;的选项（链接图标）
    * 片段&#x200B;**[状态](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;和上次保存的信息
@@ -508,7 +508,7 @@ ht-degree: 71%
 要使用此功能，您首先需要：
 
 * 与您的 IT 团队一起设置外部前端应用程序，该应用程序将使用其 JSON 输出来渲染内容片段。
-* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)的[属性。
+* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的[属性。
 
 在定义 URL 后，**预览**&#x200B;按钮将处于活动状态。您可以选择此按钮来启动外部应用程序（在单独的选项卡中）以渲染内容片段。
 

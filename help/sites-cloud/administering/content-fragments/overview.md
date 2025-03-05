@@ -1,14 +1,14 @@
 ---
 title: 使用内容片段概述
-description: 了解Adobe Experience Manager (AEM)as a Cloud Service中的内容片段如何允许您创建和使用结构化内容；非常适用于Headless投放和页面创作。
+description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何允许您创建和使用结构化内容；非常适用于Headless投放和页面创作。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 90%
+source-wordcount: '2010'
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 >
 >要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-使用Adobe Experience Manager (AEM)as a Cloud Service，内容片段允许您设计、创建、管理和发布独立于页面的内容。 它们允许您准备内容以准备在多个位置和多个渠道上使用，非常适合[Headless投放](/help/headless/what-is-headless.md)和[页面创作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
+通过Adobe Experience Manager (AEM) as a Cloud Service，内容片段允许您设计、创建、管理和发布独立于页面的内容。 它们允许您准备内容以准备在多个位置和多个渠道上使用，非常适合[Headless投放](/help/headless/what-is-headless.md)和[页面创作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
 >[!IMPORTANT]
 >
@@ -39,8 +39,8 @@ ht-degree: 90%
 
 内容片段包含结构化内容：
 
-* 每个片段均基于一个[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)。
-   * 内容片段模型定义所得片段的结构。
+* 每个片段均基于一个[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)。
+   * [内容片段模型定义了生成片段的结构](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)。
 * 每个片段都由以下各项组成：
    * **[主控](#main-and-variations)** - 片段的组成部分，其中容纳核心内容；始终存在且无法删除
    * **[变体](#main-and-variations)** - 作者创建的内容的一个或多个排列组合
@@ -92,7 +92,7 @@ ht-degree: 90%
 本页和以下各页涉及创建、配置、维护和使用内容片段的任务：
 
 * [为您的实例启用内容片段功能](/help/sites-cloud/administering/content-fragments/setup.md)
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – 启用、创建和定义您的模型
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) — 启用、创建和[定义您的模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [创建内容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)（使用内容片段控制台）
 
 创建片段后，您可以：
@@ -179,7 +179,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 存储为&#x200B;**资源**：
 
-   * 可以从[内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)创建和维护内容片段（及其变体）。
+   * 可以从[内容片段控制台](#content-fragments-console)创建和维护内容片段（及其变体）。
    * 在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中创作和编辑。
 
 * 可使用 [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) 访问内容片段以供投放内容。
@@ -211,7 +211,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 * **片段元素**
 
    * 元素与包含内容的数据字段关联。
-   * 您可以使用[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)创建内容片段。模型中指定的元素（字段）定义片段的结构。这些元素（字段）可以包含多种数据类型。
+   * 您可以使用[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)创建内容片段。模型中指定的元素（字段）[定义片段](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)的结构。 这些元素（字段）可以包含多种数据类型。
 
 * **片段段落**
 
@@ -247,7 +247,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 * **内容模型**
 
    * [使用配置浏览器启用](/help/sites-cloud/administering/content-fragments/setup.md)。
-   * [使用工具创建](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)。
+   * 是[使用内容片段控制台](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)创建的。
    * 需要[创建片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)。
    * 定义片段的结构（标题、内容元素、标记定义）。
    * 内容片段模型定义需要标题和数据元素；其他一切均为可选。
@@ -274,6 +274,34 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 片段需要一个或多个专用组件以定义布局和投放部分或全部元素/变体和关联的内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
    * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
+
+## 内容片段控制台 {#content-fragments-console}
+
+内容片段控制台专门用于管理、搜索和创建[内容片段](/help/sites-cloud/administering/content-fragments/managing.md)、[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)和[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)。 它已针对在Headless上下文中使用进行了优化，但在创建用于页面创作的内容片段和内容片段模型时也会使用。
+
+可以从全局导航的顶级直接访问该控制台。
+
+![全局导航 – 内容片段控制台](assets/cf-managing-global-navigation.png)
+
+您可以使用最左侧的面板选择要查看、浏览和管理的资源类型：
+
+![内容片段控制台 — 导航](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+
+有关详细信息，请参阅：
+
+* [内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+* [资源](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+
+* 有一批[键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)在此控制台中可用
+
+>[!CAUTION]
+>
+>*只有*&#x200B;在线 Adobe Experience Manager (AEM) as a Cloud Service 中有此控制台可用。
+
+>[!NOTE]
+>
+>如有必要，您的项目团队可以自定义控制台和编辑器。 有关进一步详细信息，请参阅[自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
 
 ## 使用示例 {#example-usage}
 

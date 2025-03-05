@@ -4,7 +4,7 @@ description: 了解Adobe Experience Manager (AEM)配置以及它们如何管理A
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Adobe Experience Manager (AEM)配置用于管理AEM中的设置，并用作工�
 * [管理员](#configurations-administrator)使用配置作为AEM中的工作区来定义和管理设置组。
 * [开发人员](#configurations-developer)使用实现配置的基础配置机制在AEM中保留和查找设置。
 
-简而言之：从管理员的角度来看，配置是您创建工作区以管理AEM中的设置的方式，而开发人员应该了解AEM如何在存储库中使用和管理这些配置。
+总之：从管理员的角度来看，配置是您创建工作区以管理AEM中的设置的方式，而开发人员应该了解AEM如何在存储库中使用和管理这些配置。
 
 从您的角度来看，配置在AEM中有两个主要用途：
 
@@ -36,7 +36,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
 可为AEM中的许多不同功能创建配置。
 
 * [上下文中心区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [可编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)
 * 各种云配置
 
@@ -68,7 +68,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
 
 #### 创建配置 {#creating-a-configuration}
 
-使用配置浏览器，可以在AEM中轻松创建配置。
+在AEM中，可以使用配置浏览器轻松创建配置。
 
 1. 登录AEM as a Cloud Service，从主菜单选择&#x200B;**工具** > **常规** > **配置浏览器**。
 1. 选择&#x200B;**创建**。
@@ -82,7 +82,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
       * 如有必要可以调整。
 1. 检查要允许的配置类型。
    * [上下文中心区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [可编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)
    * 各种云配置
 1. 选择&#x200B;**创建**。
@@ -192,7 +192,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
    * 运行时只读
 1. `/libs`
    * AEM产品默认值
-   * 仅可按Adobe更改，不允许项目访问
+   * 仅可由Adobe更改，不允许项目访问
    * 通过应用程序部署修复了
    * 运行时只读
 

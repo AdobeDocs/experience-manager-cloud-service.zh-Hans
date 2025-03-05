@@ -5,16 +5,16 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
 workflow-type: tm+mt
-source-wordcount: '2231'
-ht-degree: 59%
+source-wordcount: '2247'
+ht-degree: 58%
 
 ---
 
 # 使用内容片段 {#working-with-content-fragments}
 
-使用Adobe Experience Manager (AEM)as a Cloud Service，内容片段允许您设计、创建、策划和[发布独立于页面的内容](/help/sites-cloud/authoring/fragments/content-fragments.md)。 利用这些功能，可准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。 它们还可以与[多站点管理一起使用，以使您能够重复使用内容](#reusing-content-fragments-with-msm)。
+通过Adobe Experience Manager (AEM) as a Cloud Service，内容片段允许您设计、创建、策划和[发布独立于页面的内容](/help/sites-cloud/authoring/fragments/content-fragments.md)。 利用这些功能，可准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。 它们还可以与[多站点管理一起使用，以使您能够重复使用内容](#reusing-content-fragments-with-msm)。
 
 内容片段包含结构化内容：
 
@@ -39,7 +39,7 @@ ht-degree: 59%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->它们现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**Assets**&#x200B;控制台进行管理。 本节介绍如何从&#x200B;**Assets**&#x200B;控制台进行管理。
+>内容片段和内容片段模型现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台进行管理，但内容片段仍然可以从&#x200B;**Assets**&#x200B;控制台进行管理，并且内容片段模型可以从&#x200B;**工具**&#x200B;控制台进行管理。 本节介绍从&#x200B;**Assets**&#x200B;和&#x200B;**Tools**&#x200B;控制台进行管理。
 >
 >创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 

@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 100%
@@ -308,13 +308,13 @@ You can view additional information about items using the Rail Selector. This al
 
          * [发布和预览内容片段](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
       * [内容片段模型 – 数据类型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
       * [内容片段模型 – 属性](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+      * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
 * [内容片段 - 来自资源控制台的原始编辑器](/help/assets/content-fragments/content-fragments-variations.md)
 

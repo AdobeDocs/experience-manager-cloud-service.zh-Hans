@@ -1,10 +1,10 @@
 ---
 title: 内容服务的 JSON 导出器
-description: AEM Content Services旨在概括AEM中/来自AEM的内容的描述和交付，而不只是关注网页。 它们使用可供任何客户使用的标准化方法，将内容投放到非传统AEM网页的渠道。
+description: AEM Content Services旨在概括AEM中/来自Web的内容的描述和交付，而不只是关注网页。 它们使用可供任何客户使用的标准化方法，将内容投放到非传统AEM网页的渠道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -13,7 +13,7 @@ ht-degree: 17%
 
 # 内容服务的 JSON 导出器 {#json-exporter-for-content-services}
 
-AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交付，而不只是网页的焦点。
+AEM Content Services旨在概括AEM中/来自Web的内容的描述和交付，而不只是网页的重点。
 
 它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。这些渠道可以包括：
 
@@ -21,7 +21,7 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 * 本机移动设备应用程序
 * AEM外部的其他渠道和接触点
 
-对于使用结构化内容的内容片段，您可以通过使用JSON导出程序以JSON数据模型格式交付AEM页面的内容来提供内容服务。 然后，这可以由您自己的应用程序使用。
+对于使用结构化内容的内容片段，您可以通过使用JSON导出程序以JSON数据模型格式交付AEM页面的内容，从而提供内容服务。 然后，这可以由您自己的应用程序使用。
 
 ## 包含内容片段核心组件的JSON导出器 {#json-exporter-with-content-fragment-core-components}
 
@@ -79,6 +79,6 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 ## 相关文档 {#related-documentation}
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

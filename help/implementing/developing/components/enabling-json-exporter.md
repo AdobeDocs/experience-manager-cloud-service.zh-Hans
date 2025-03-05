@@ -4,7 +4,7 @@ description: 组件可以适应为基于建模器框架生成其内容的JSON导
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
@@ -30,7 +30,7 @@ JSON导出基于[Sling模型](https://sling.apache.org/documentation/bundles/mod
 
 >[!NOTE]
 >
->有关使用Sling模型的示例，请参阅文章[在AEM中开发Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-Hans)。
+>有关使用Sling模型的示例，请参阅文章[在AEM中开发Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-hans)。
 
 Sling模型实现类必须使用以下内容进行注释：
 
@@ -72,13 +72,13 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 ## 示例 {#example}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)支持JSON导出，可用作参考。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)支持JSON导出，可用作参考。
 
 有关示例，请参阅图像核心组件的Sling模型实施及其注释的界面。
 
 ## 相关文档 {#related-documentation}
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

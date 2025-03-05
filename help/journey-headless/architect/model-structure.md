@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 99%
 
 ---
 
@@ -117,21 +117,21 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
-      * [定义内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
+      * [定义内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [启用或禁用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
+      * [启用或禁用内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [允许在 Assets 文件夹中使用内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+      * [允许在 Assets 文件夹中使用内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [删除内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
+      * [删除内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [发布内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
+      * [发布内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [取消发布内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
+      * [取消发布内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [锁定（已发布）内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
+      * [锁定的内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#locked-content-fragment-models)
 
 * 快速入门指南
 
