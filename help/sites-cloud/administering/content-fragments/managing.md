@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 85%
+source-wordcount: '2686'
+ht-degree: 84%
 
 ---
 
@@ -236,6 +236,7 @@ ht-degree: 85%
 
    * **位置** — 使用当前位置自动完成，但您可以根据需要选择其他位置。
    * **内容片段模型** — 从下拉列表中选择要用作片段基础的模型。
+   * **自动标记** — 选择此选项时，分配给内容片段模型的所有标记都将由新内容片段继承并添加到其中。
    * **标题**
    * **名称** — 已根据&#x200B;**标题**&#x200B;自动完成，但您可以根据需要进行编辑。
    * **描述**
