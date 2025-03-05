@@ -4,9 +4,9 @@ description: 通用编辑器是一款现代化的可视化创作工具，旨在�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
+source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
@@ -50,8 +50,9 @@ ht-degree: 13%
 
 * AEM as a Cloud Service（版本`2023.8.13099`或更高版本）
 * AEM 6.5（Service Pack 21或22以及功能包）
+   * 支持内部部署和AMS托管。
 
-本文档介绍如何将通用编辑器与AEM as a Cloud Service结合使用。 有关在AEM 6.5中使用通用编辑器的信息，[请参阅AEM 6.5文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/Headless/universal-editor/introduction)
+本文档介绍如何将通用编辑器与AEM as a Cloud Service结合使用。 有关在AEM 6.5中使用通用编辑器的信息，[请参阅AEM 6.5文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
 ## 功能 {#features}
 
@@ -101,7 +102,7 @@ ht-degree: 13%
 当您探索通用编辑器并在自己的项目中进一步实施时，请牢记以下限制。
 
 * 在单个页面上，作为工具引用的AEM资源(内容片段、页面、体验片段、Assets等)不得超过25个。
-* AEM as a Cloud Service和[AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/Headless/universal-editor/introduction)是唯一受支持的AEM后端。
+* AEM as a Cloud Service和[AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一受支持的AEM后端。
 * AEM as a Cloud Service需要版本`2023.8.13099`或更高版本。
 * 内容作者必须具有自己的各个Experience Cloud帐户。
 * 作为AEM的一部分，通用编辑器[支持与AEM相同的桌面浏览器。](/help/overview/supported-platforms.md)
