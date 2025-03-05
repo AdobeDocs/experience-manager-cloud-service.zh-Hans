@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 28%
+source-wordcount: '2289'
+ht-degree: 26%
 
 ---
 
@@ -74,9 +74,9 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 对话式Forms不仅仅是一种新外观，它还是改变用户体验的一种方式。  提升参与度，减少表单放弃，并使与您的网站互动成为每个人都更愉快的体验。
 
 
-### Edge Delivery Services的WYSIWYG创作
+### 适用于Edge Delivery Services for Forms的WYSIWYG创作（通用编辑器）
 
-WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及多种其他功能：
+通用编辑器提供了一个强大的WYSIWYG界面来构建[自适应表单，并将其发布到Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)，从而将简洁的可视化设计与高级功能相结合。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/create-forms.md)的所有功能，以及多种其他功能：
 
 * 用于创建复杂逻辑的高级规则编辑器。
 * 自定义功能的服务器端可扩展性。
@@ -86,6 +86,26 @@ WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，�
 * 与各种数据源集成以预填充表单和提交数据。
 * 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
 * 能够从多个提交操作中进行选择，用于处理表单提交，包括将数据提交到Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多数据源。
+
+![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+
+**福利：**
+
+* **加速实现价值(TTV)**：通过直观的可视化创作加快启动表单的速度，从而消除复杂的编码要求。
+* **降低开发成本**：通过使业务用户能够在最少的IT参与下创建和修改表单，降低总拥有成本。
+* **简化的开发**：仅使用HTML、CSS和JavaScript创建自定义组件 — 无需专门的框架知识。
+* **现代Web栈栈**：构建于前端开发人员熟悉的Web标准和现代技术之上。
+* **快速原型构建**：在投资进行全面开发之前，快速构建和测试表单概念
+
+
+**浏览文档以了解详情：**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**主要功能**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**使用响应式布局**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**配置提交操作**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**自适应Forms的通用编辑器入门**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**设置表单样式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**添加reCAPTCHA安全性**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
+| [**创建您的第一个表单**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**使用规则编辑器**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**发布表单**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**了解用户界面**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**创建自定义组件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms到Marketo的连接器

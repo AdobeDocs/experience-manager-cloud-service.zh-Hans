@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6220'
 ht-degree: 95%
 
 ---
@@ -1032,9 +1032,22 @@ ht-degree: 95%
       + [概述](/help/edge/docs/forms/overview.md)
       + [Edge Delivery Services Forms 如何运作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + 所见即所得的创作 {#universal-editor}
+         + [Forms Universal Editor for Edge Delivery Services简介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [如何使用通用编辑器开始创作 — 分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用通用编辑器创建第一个表单](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [在通用编辑器中使您的Forms对移动设备友好：响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [设计精美的Forms：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [将动态行为添加到Forms：规则编辑器的完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [表单提交指南：配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [保护您的Forms免受垃圾邮件的侵扰：添加reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [《如何发布和部署Forms：通用编辑器发布指南》](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [生成自定义表单组件：通用编辑器的开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + 基于文档的创作{#getting-started-edge-delivery-services-forms}
          + [构建您的第一个表单：使用Google工作表和Excel快速入门指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用Google工作表或Excel创建Forms：分步指南](/help/edge/docs/forms/create-forms.md)
+         + [自适应表单块的各种组件](/help/edge/docs/forms/form-components.md)
          + [将表单连接到Google Sheets：数据收集设置指南](/help/edge/docs/forms/submit-forms.md)
          + [启用表单：发布和数据收集指南](/help/edge/docs/forms/publish-forms.md)
          + [表单字段验证：将错误检查添加到Forms](/help/edge/docs/forms/validate-forms.md)
@@ -1049,21 +1062,7 @@ ht-degree: 95%
          + [使表单成为全局表单：表单翻译指南](/help/edge/docs/forms/translate-forms.md)
          + [保护您的Forms：添加reCAPTCHA安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [构建自定义表单组件：开发人员指南](/help/edge/docs/forms/custom-components-forms.md)
-         + [监视表单性能： Real Use Monitoring指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + 所见即所得的创作 {#universal-editor}
-         + [Forms Universal Editor for Edge Delivery Services简介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用编辑器开始创作 — 分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用通用编辑器创建第一个表单](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [在通用编辑器中使您的Forms对移动设备友好：响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [设计精美的Forms：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [将动态行为添加到Forms：规则编辑器的完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [表单提交指南：配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [保护您的Forms免受垃圾邮件的侵扰：添加reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [《如何发布和部署Forms：通用编辑器发布指南》](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [生成自定义表单组件：通用编辑器的开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + 引用 {#forms-references}
-         + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
+         + [监视表单性能：实际使用监视指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery 资产 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)

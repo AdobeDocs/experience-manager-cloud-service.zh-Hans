@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 97%
+source-wordcount: '1505'
+ht-degree: 94%
 
 ---
 # 代码片段 {#snippets}
@@ -252,3 +252,25 @@ ht-degree: 97%
 >
 >* [通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)，用于可视化编辑 Headless 内容。
 >* [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑 Headless 内容。
+
+## 通用编辑器{#ue-see-also}
+
+* [使用通用编辑器创建您的第一个表单](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [向Forms添加动态行为](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [发布和部署Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [设计精美的Forms：样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [构建自定义表单组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [保护您的Forms免受垃圾邮件的侵扰：添加reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## 另请参阅 {#see-more-eds-forms}
+
+* [适用于 AEM Forms 的 Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
+* [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
+* [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
+* [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
+* [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
+* [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
+* [正在使用表单提交服务](/help/forms/forms-submission-service.md)

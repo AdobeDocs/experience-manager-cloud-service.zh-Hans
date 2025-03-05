@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
 
 # Forms提交服务与Edge Delivery Services Forms
+
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+
 
 通过Forms提交服务，可将表单提交的数据存储为任意电子表格(如OneDrive、SharePoint或Google Sheets)，从而允许您在首选的电子表格平台中轻松访问和管理表单数据。
 
@@ -26,7 +29,7 @@ ht-degree: 1%
 * **数据结构**：在设置提交时，可以将表单字段映射到相应的电子表格列，以便进行有条理的数据存储。
 * **访问控制**：您可以利用现有权限来控制谁可以访问和修改提交的表单数据，具体取决于选择的电子表格服务。
 
-## 先决条件
+## 前提条件
 
 以下是使用Forms提交服务的先决条件：
 
@@ -35,7 +38,7 @@ ht-degree: 1%
 
 ## 配置Forms提交服务
 
-创建配置有自适应Forms块的新AEM项目。 请参阅[快速入门 — 开发人员教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，了解如何创建新的AEM项目。 更新项目中的`fstab.yaml`文件。 将现有引用替换为您与`forms@adobe.com`共享的文件夹的路径。
+创建配置有自适应AEM块的新Forms项目。 请参阅[快速入门 — 开发人员教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，了解如何创建新的AEM项目。 更新项目中的`fstab.yaml`文件。 将现有引用替换为您与`forms@adobe.com`共享的文件夹的路径。
 
 您可以[手动配置Forms提交服务](#configuring-the-forms-submission-service-manually)或[使用API配置Forms提交服务](#configuring-the-forms-submission-service-using-api)。
 
@@ -84,7 +87,7 @@ ht-degree: 1%
 
    ![链接电子表格](/help/forms/assets/form-submission-sheet-linking.png)
 
-1. 使用带有更新的表单提交服务的[AEM Sidekick](https://www.aem.live/docs/sidekick)预览和发布工作表。
+1. 使用带有更新后的表单提交服务的[AEM Sidekick](https://www.aem.live/docs/sidekick)预览和发布工作表。
 
 >[!NOTE]
 >
@@ -100,7 +103,7 @@ ht-degree: 1%
 > * 将`incoming`工作表与Adobe Experience Manager共享`forms@adobe.com`并授予编辑权限。
 > * 在Sidekick中预览和发布`incoming`工作表。
 
-要了解如何设置POST请求格式以设置工作表，请参阅[API文档](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)。 您可以查看下面提供的示例：
+要了解如何设置POST请求的格式以设置工作表，请参阅[API文档](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)。 您可以查看下面提供的示例：
 
 您可以使用curl或Postman等工具来执行此POST请求，如下所示。
 
@@ -148,14 +151,14 @@ ht-degree: 1%
 >用于macOS的[!TAB ]
 
     ``json
-    curl -XPOST&quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
-     — 标头&quot;Content-Type： application/json&quot; \
-     — 标头&quot;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
-     — 数据`{
+    curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
+     — header &quot;Content-Type： application/json&quot; \
+     — header &quot;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
+     — data `{
     `data&quot;： {
     `startDate&quot;： &quot;2025-01-10&quot;，
-    `endDate&quot;： &quot;2025-01-25&quot;，
-    `destination&quot;澳大利亚”，
+    `endDate&quot;： &quot;25-25&quot;，
+    `destination&quot;：澳大利亚”，
     “class”：“First Class”，
     “budget”：“2000”，
     “amount”：“1000000”，
@@ -172,7 +175,7 @@ ht-degree: 1%
 
     ``json
     
-    curl -XPOST&quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
+    curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
      — 标头&quot;Content-Type： application/json&quot; ^
      — 标头&quot;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; ^
      — 数据&quot;{\&quot;data\&quot;： {\&quot;startDate\&quot;： \&quot;2025-01-10\&quot;， \&quot;endDate\&quot;： \&quot;2025-01-25\&quot;： \&quot;Destination\&quot; australia\&quot;， \&quot;class\&quot;： \&quot;First Class\&quot;， \&quot;budget\&quot;： \&quot;2000\&quot;， \&quot;amount\&quot;： \&quot;1000000\&quot;， \&quot;name\&quot;： \&quot;Joe\&quot;， \&quot;age\&quot;： \&quot;35\&quot;， \&quot;subscribe\&quot;： null， \&quot;email\&quot;： \&quot;mary@gmail.com\&quot;}}&quot;

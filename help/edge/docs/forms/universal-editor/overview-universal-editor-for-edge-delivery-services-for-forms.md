@@ -4,10 +4,10 @@ description: 使用Universal Editor for Edge Delivery Services for Forms创建�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 69%
+source-wordcount: '1078'
+ht-degree: 70%
 
 ---
 
@@ -22,13 +22,11 @@ ht-degree: 69%
 
 无论您是要管理轻量级客户端渲染、确保跨浏览器兼容性，还是要遵守严格的可访问性标准，通用编辑器都能为创建和管理表单提供简化的解决方案。
 
-![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
+![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## 适用于Forms的Edge Delivery Services的通用编辑器的主要功能
 
 
-
-以下是等宽卡片的布局（使用固定宽度列）：
 
 | ![WYSIWYG界面](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![规则编辑器](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![提交操作](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
