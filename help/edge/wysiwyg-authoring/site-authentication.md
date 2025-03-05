@@ -3,13 +3,13 @@ title: 为内容创作配置站点身份验证
 description: 了解AEM Live如何支持基于令牌的身份验证，以及如何将AEM配置为将身份验证与WYSIWYG创作结合使用。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # 为内容创作配置站点身份验证 {#site-authentication}
 
@@ -46,11 +46,13 @@ AEM Live支持基于令牌的身份验证。 站点身份验证通常同时应�
 配置站点身份验证后，您可以在AEM创作环境中启用它。
 
 1. 登录到AEM创作实例，然后转到&#x200B;**工具** -> **Cloud Services** -> **Edge Delivery Services配置**，选择为您的站点自动创建的配置，然后点按或单击工具栏中的&#x200B;**属性**。
-1. 在&#x200B;**Edge Delivery Services配置**&#x200B;窗口中，选择&#x200B;**身份验证**&#x200B;选项卡，并提供以下值，在配置站点身份验证时已记录这些值。
-
-   * **技术帐户ID**
-   * **站点身份验证令牌**
+1. 在&#x200B;**Edge Delivery Services配置**&#x200B;窗口中，选择&#x200B;**身份验证**&#x200B;选项卡，提供您之前复制的&#x200B;**站点身份验证令牌**。
 
    ![Edge Delivery Services配置](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. 验证&#x200B;**技术帐户ID**&#x200B;是否与您之前复制的技术帐户ID匹配。
+
+   * 此字段为只读并预定义。
+   * 对于单个AEM创作环境中的所有站点，技术帐户是相同的。
 
 1. 点击或单击&#x200B;**保存并关闭**。

@@ -4,9 +4,9 @@ description: 如果您有许多相似的网站，这些网站的外观和行为�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 
 映射站点配置后，您可以通过定义技术帐户来配置访问控制，使其具有发布权限。
 
-1. 在您的浏览器中，作为对以下链接的响应，检索技术帐户。
+1. 登录到AEM创作实例，然后转到&#x200B;**工具** -> **Cloud Services** -> **Edge Delivery Services配置**，选择为您的站点自动创建的配置，然后点按或单击工具栏中的&#x200B;**属性**。
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. 在&#x200B;**Edge Delivery Services配置**&#x200B;窗口中，选择&#x200B;**身份验证**&#x200B;选项卡，并复制&#x200B;**技术帐户ID**&#x200B;的值。
 
-1. 响应将类似于以下内容。
+   * 它类似于`<tech-account-id>@techacct.adobe.com`
+   * 对于单个AEM创作环境中的所有站点，技术帐户是相同的。
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. 使用类似于以下内容的cURL命令在配置中设置技术帐户。
+1. 使用类似于以下内容的cURL命令，使用您复制的技术帐户ID为您的重写配置设置技术帐户。
 
    * 调整`admin`块以定义应具有网站的完全管理访问权限的用户。
       * 它是一个电子邮件地址数组。
