@@ -1,15 +1,15 @@
 ---
-title: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service的当前早期访问功能。'
-description: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service的当前早期访问功能。'
+title: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service的当前抢先访问功能。'
+description: ' [!DNL Adobe Experience Manager Forms] as a Cloud Service的当前抢先访问功能。'
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 26%
+source-wordcount: '2155'
+ht-degree: 28%
 
 ---
 
@@ -74,7 +74,7 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 对话式Forms不仅仅是一种新外观，它还是改变用户体验的一种方式。  提升参与度，减少表单放弃，并使与您的网站互动成为每个人都更愉快的体验。
 
 
-### 面向Edge Delivery Services的WYSIWYG创作
+### Edge Delivery Services的WYSIWYG创作
 
 WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及多种其他功能：
 
@@ -92,7 +92,7 @@ WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，�
 
 [AEM Forms到Marketo连接器](/help/forms/integrate-form-to-marketo-engage.md)弥合了使用Adobe Experience Manager (AEM)构建的Web表单(自适应Forms)与营销自动化平台Marketo之间的差距。
 
-当有人在您的网站上提交使用AEM Adaptive Forms创建的表单时，连接器可确保将提交的数据自动发送到Marketo。 这消除了对手动数据输入的需要，并降低了错误风险。
+当有人在您的网站上提交使用AEM自适应Forms创建的表单时，连接器可确保将提交的数据自动发送到Marketo。 这消除了对手动数据输入的需要，并降低了错误风险。
 
 ![AEM表单 — Marketo连接器](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
@@ -104,17 +104,39 @@ WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，�
 
 * [将 Marketo Engage 与 AEM Forms 集成](/help/forms/integrate-form-to-marketo-engage.md)
 * [将自适应表单与Marketo Engage集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [为现有的自适应Forms配置Marketo Engage和数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [提交现有自适应表单以Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [为现有的自适应Forms配置Marketo Engage广告数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [将现有的自适应表单提交到Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### 价值实现仪表板
+
+使用价值实现仪表板跟踪和分析表单的性能。 此分析工具可帮助您做出数据驱动型决策，以优化表单策略。
+
+![Forms使用情况分析仪表板](/help/forms/assets/forms-usage-insights.png)
+
+**主要功能：**
+
+* 监控表单提交、文档呈现和表单创建/发布量度
+* 跟踪整个组织中的表单片段使用和重复使用
+* 确定趋势、高峰期和改进机会
+
+功能板通过两个主要部分提供见解：
+
+* **随时间变化的表单和文档活动**：跟踪提交、演绎版和表单创建/发布
+* **片段使用情况**：监视片段的采用和重用
+
+有关详细信息：
+
+* [了解您的价值实现仪表板](/help/forms/aem-forms-value-realization-dashboard.md)
+* [解释表单和文档使用情况分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## 其他早期访问创新
 
-### 在自适应Forms中HTML电子邮件模板
+### 自适应表单中的 HTML 电子邮件模板
 
 
-自适应Forms允许您使用[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)。 通过HTML电子邮件模板，您可以在提交表单时发送丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 通过自适应Forms，您可以上传包含HTML模板的文件或使用纯文本编辑器创建这些模板。
+自适应表单允许您使用 [HTML 电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)。HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 
-![HTML电子邮件模板](/help/forms/assets/html-email.png)
+![HTML 电子邮件模板](/help/forms/assets/html-email.png)
 
 ### RESTful Web服务提交操作
 
@@ -161,15 +183,15 @@ AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求�
 ### 文档Assurance API
 
 
-AEM Forms Doc Assurance API是AEM FormsCloud Service通信API中的一组工具，它允许您管理PDF文档的安全性和用户交互。
+AEM Forms Doc Assurance API是AEM Forms Cloud Service Communication API中的一组工具，它允许您管理PDF文档的安全性和用户交互。
 
 以下是Doc Assurance API功能的划分信息：
 
-* **加密和解密文档**：通过加密使文档内容不可读，从而Protect您的文档。 您可以控制对PDF的哪些部分进行加密，包括整个文档、特定内容、元数据或附件。
+* **加密和解密文档**：通过加密使文档内容不可读，从而保护文档。 您可以控制PDF的哪些部分已加密，包括整个文档、特定内容、元数据或附件。
 
 * **对文档进行数字签名**：将数字签名添加到文档以进行验证和防篡改验证。 这可用于认证目的或确保文档完整性
 
-* **Reader扩展文档(应用或编辑PDF文档的使用权限)**：通过扩展具有其他使用权限的Adobe Reader功能，使您的组织能够轻松共享交互式PDF文档。
+* **Reader扩展文档(应用或编辑PDF文档的使用权限)**：通过扩展Adobe Reader的功能（具有其他使用权限），使您的组织能够轻松共享交互式PDF文档。
 
   Reader扩展（使用权限）API向PDF文档添加了使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。 第三方用户无需其他软件或插件即可使用启用了权限的文档。
 
@@ -190,7 +212,7 @@ AEM Forms Doc Assurance API是AEM FormsCloud Service通信API中的一组工具�
 
 ### 文档生成API
 
-文档生成API包括一个可选功能，允许将生成的PDF直接上传到Azure Blob Storage。 使用文档生成API直接将PDF上传到Azure Blob Storage的一些主要优势包括：
+文档生成API包含一个可选功能，允许将生成的PDF直接上传到Azure Blob Storage。 使用文档生成API直接将PDF上传到Azure Blob Storage的一些主要优势包括：
 
 * **与云存储的无缝集成**：
 直接将生成的PDF上传到Azure Blob Storage无需额外的手动或编程步骤来传输文件，从而简化工作流并提高效率。
@@ -206,7 +228,7 @@ AEM Forms Doc Assurance API是AEM FormsCloud Service通信API中的一组工具�
 
 * [AEM Forms中的最新创新](/help/forms/latest-innovations.md)
 
-* [AEM Forms as aCloud Service的功能](/help/forms/home.md)
+* [AEM Forms as a Cloud Service的功能](/help/forms/home.md)
 
-* [AEM 6.5 Forms （AMS和内部部署）与AEM Forms as a Cloud Service (AEM CS Forms)之间的区别](/help/forms/notable-changes.md)
+* [AEM 6.5 Forms （AMS和内部部署）与AEM Forms as a Cloud Services (AEM CS Forms)之间的区别](/help/forms/notable-changes.md)
 

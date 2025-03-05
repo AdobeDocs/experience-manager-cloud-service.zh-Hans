@@ -5,35 +5,45 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
-source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# 了解您的价值实现功能板：充分利用您的Forms {#value-realization-dashboard}
+
+# 了解您的价值实现仪表板
+
+![Fvalue实现仪表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+
 
 <span class="preview">此功能是测试版功能，仅对少数选定客户启用。</span>
 
 欢迎来到一站式服务，以了解您的表单带来的价值！ 该功能板为您提供了宝贵的见解，可用于优化表单、简化工作流并最终更快地实现目标。
 
-## 功能板上有什么？ {#content-of-dashboard}
+本文提供了价值实现功能板及其优势的概念性概述。 有关详细的使用说明和量度解释，请参阅[使用值实现仪表板解释表单使用分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)。
+
+
+![值实现仪表板](/help/forms/assets/forms-usage-insights.png)
+
+## 仪表板上有什么？ {#content-of-dashboard}
 
 该仪表板是您了解表单使用情况的窗口。 以下是关键部分的细目：
 
-### 随时间变化的表单活动：
+### 一段时间的表单和文档活动
 
 * **表单提交**：查看表单完成频率的趋势。
 * **文档演绎版**：跟踪随时间呈现的文档数。
 * **Forms已创建和发布**：监视生成和部署新表单的速率。
 * **表单创建和发布时间**：分析创建和发布表单的平均时间，以确定需要改进的方面。
 
-### 片段用途：
+### 片段使用
 
 * **正在使用的表单片段数**：查看当前有多少可重用的表单节合并到活动表单中。
-* **重复使用的表单片段的数量**：测量这些片段在不同表单中的使用频率。
+* **重复使用表单片段**：测量这些片段在不同表单中的使用频率。
+
+
 
 
 ## 这对您有何好处？ {#benefits-to-you}
@@ -62,3 +72,7 @@ ht-degree: 0%
 * **实验和优化：**&#x200B;可以尝试不同的表单设计和片段使用。 仪表板可帮助您衡量更改的有效性。
 
 记住，这个仪表板是你的盟友！ 通过有效使用该工具，您可以将表单从简单的数据收集工具转换为战略性资产，从而推动您和您的业务取得成功。
+
+## 另请参阅
+
+* [解释使用情况分析](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
