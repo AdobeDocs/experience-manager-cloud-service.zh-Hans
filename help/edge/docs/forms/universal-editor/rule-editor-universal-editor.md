@@ -4,7 +4,7 @@ description: 通用编辑器中的规则编辑器允许您在表单中添加动�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # 所见即所得创作中的规则编辑器简介
 
-<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将包含您的GitHub组织名称和存储库名称的电子邮件(从您的官方地址发送到<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> )。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
 
 
 您可以使用规则编辑器添加动态表单行为，该编辑器允许您创建规则。这些规则可实现条件字段的可见性，根据用户输入进行自动计算，并改善整体用户体验。通过简化表单填写流程，规则编辑器有助于确保准确性和效率。

@@ -4,7 +4,7 @@ description: 本文介绍了如何使用通用编辑器中的不同模拟器预�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # WYSIWYG创作中的响应模式
 
-<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将包含您的GitHub组织名称和存储库名称的电子邮件(从您的官方地址发送到<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> )。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
 
 ## 响应式Forms简介
 

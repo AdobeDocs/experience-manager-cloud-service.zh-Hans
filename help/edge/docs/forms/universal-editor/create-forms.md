@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d7e59c16e90e3632140eae08dc2c25b2dd1df5a7
+exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 49%
 
 ---
 
-
 # 使用通用编辑器(WYSIWYG)创作独立表单
 
-<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将包含您的GitHub组织名称和存储库名称的电子邮件(从您的官方地址发送到<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> )。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
 
 本文会指导您通过通用编辑器从“表单创建向导”中选择基于Edge Delivery Services的模板，完成独立表单的创作过程。 您还可以使用通用编辑器将创作的表单发布到AEM Edge Delivery Services。
 
@@ -163,5 +163,3 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 ## 开始创建表单
 
 {{universal-editor-see-also}}
-
-

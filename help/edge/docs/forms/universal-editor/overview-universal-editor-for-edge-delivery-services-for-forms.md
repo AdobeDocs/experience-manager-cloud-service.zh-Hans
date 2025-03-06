@@ -4,7 +4,7 @@ description: 使用Universal Editor for Edge Delivery Services for Forms创建�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 70%
@@ -14,7 +14,7 @@ ht-degree: 70%
 
 # 适用于Forms的Edge Delivery Services通用编辑器
 
-<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将包含您的GitHub组织名称和存储库名称的电子邮件(从您的官方地址发送到<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> )。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
 
 通用编辑器通过提供简单、直观的可视What You See Is What You Get (WYSIWYG)界面，彻底变革了Adobe Edge Delivery Services的表单创建方式。 它专为内容创建者和表单作者设计，消除了传统表单构建流程的复杂性，使非技术用户也能使用。
 
