@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 58%
+source-wordcount: '1419'
+ht-degree: 47%
 
 ---
 
@@ -122,19 +122,27 @@ AEM Forms Document Generation API现在允许您[直接将生成的PDF文档](/h
 
 ### Java 21 支持 {#java21}
 
-您现在可以使用 Java 21 构建代码，其中包括新功能（如切换语句的模式匹配、密封类）和性能改进。Java 17 构建也获得了新的支持。有关配置步骤（包括更新 Maven 项目和库版本），请参阅文章[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
+如1月发行说明中所述，您现在可以使用Java 21构建代码，其中包括新增功能（例如，交换语句的模式匹配、密封类）和性能改进；此外，还新支持Java 17构建。 有关配置步骤（包括更新 Maven 项目和库版本），请参阅文章[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
 
 当检测到 Java 17 或 21 构建时，将自动部署性能更高的 Java 21 **运行时**。不过，我们也建议使用 Java 11 构建的环境选择 Java 21 运行时，具体方法是发送电子邮件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [ Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
-> Java 21 **运行时**&#x200B;将逐步部署到&#x200B;**所有**&#x200B;环境（已使用 Java 17 或 21 构建的环境除外，这些环境已经有了 Java 21 运行时），二月份将从沙盒和开发/RDE 开始，然后在四月份部署到阶段/生产环境。
+> 2月，将Java 21 **运行时**&#x200B;部署到开发/RDE环境（除了已使用Java 17或21构建的环境，这些环境已具有Java 21运行时）。 Java 21将于4月应用于暂存/生产环境。
 
-### 沙盒程序支持配置管道 {#sandbox-config-pipelines}
+### Edge 计算 - 请求反馈！ {#edge-computing-feedback}
 
-沙盒程序现在支持配置管道，可以在 Cloud Manager 中进行配置，以部署在 Git 中持久保存的 yaml 文件。
+Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Adobe希望了解您是否发现这项技术对AEM Publish Delivery和Edge Delivery Services项目很有用。 此外，请告知我们您打算将它用作产品路线图的输入内容。
 
-[了解更多](/help/operations/config-pipeline.md)关于配置管道的信息，它可以完成配置 CDN、日志转发和版本清除/审核日志清除维护的任务。
+一些可能的用例：
+* 使用IdP进行身份验证以授予对内容的访问权限
+* 根据地理位置、设备类型、用户属性等呈现动态（个性化、本地化）内容。
+* 高级图像操作
+* CDN和源之间的中间件
+* 浏览器和第三方API之间的层，可能会重新设置API响应的格式
+* 聚合来自多个源的数据，使客户端浏览器更容易呈现
+
+请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，欢迎提问并发表评论！
 
 ### 基于 OpenAPI 的 API - 早期采用者计划 {#open-apis-earlyadopter}
 
@@ -148,10 +156,6 @@ AEM Forms Document Generation API现在允许您[直接将生成的PDF文档](/h
 * [资产 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [Sites 和资产文件夹 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [ Forms 通信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### Edge 计算 - 请求反馈！ {#edge-computing-feedback}
-
-Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Adobe 希望了解您是否认为这项技术对 AEM Publish Delivery 和 Edge Delivery Services 项目有用。此外，请告诉我们您设想将其用于哪些用途，以便为产品路线图提供意见。请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，欢迎提问并发表评论！
 
 ### 新的 AEM Developer Console（公开 Beta） {#aem-developer-console-beta}
 
