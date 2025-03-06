@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # 使用价值实现仪表板分析表单和文档使用趋势
 
 <span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的官方地址中的电子邮件发送至aem-forms-ea@adobe.com。<span>
 
 ![值实现仪表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
 
 通过定期监控“Forms使用分析”仪表板中显示的指标，您可以获得有关表单、文档和表单片段的性能的宝贵见解。 使用此数据可就表单设计、片段管理和总体表单策略做出明智的决策。
 
