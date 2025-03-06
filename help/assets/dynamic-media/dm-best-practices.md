@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 最佳实践
-description: 了解在使用Dynamic Media Viewer的图像和视频以及最佳实践时Dynamic Media中的最佳实践。
+description: 了解Dynamic Media中有关使用图像和视频的最佳实践，以及Dynamic Media查看器的最佳实践。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4071'
 ht-degree: 0%
 
 ---
@@ -35,18 +35,18 @@ Stage Business Problem Best Practice Recommendation: This section will outline s
 
 {{see-also-dm}}
 
-组织面临着与用户接触的渠道和设备急剧增加。 客户历程跨越实体商店、Web、移动、社交媒体、电子邮件和商务。 为了满足此需求，Adobe Experience Manager上的Dynamic Media (AEM)提供了一个全面的解决方案。 它可优化资产交付、处理个性化，并确保跨渠道和设备提供一致、高性能且品牌一致的体验。
+组织面临着与用户接触的渠道和设备急剧增加。 客户历程跨越实体商店、Web、移动、社交媒体、电子邮件和商务。 为了满足此需求，Adobe Experience Manager (AEM)上的Dynamic Media提供了一个全面的解决方案。 它可优化资产交付、处理个性化，并确保跨渠道和设备提供一致、高性能且品牌一致的体验。
 
 Dynamic Media的一些关键原则包括：
 
-* **单文件方法：**&#x200B;使用Dynamic Media，您可以存储一个主源文件，并且在交付时动态创建和优化所有大小变化和视觉效果。 此方法可节省存储成本并消除工作流的复杂性。
+* **单文件方法：**&#x200B;使用Dynamic Media，您可以存储一个主源文件，所有大小变化和视觉效果在交付时都会动态创建和优化。 此方法可节省存储成本并消除工作流的复杂性。
 * **真正的全球化：**&#x200B;智能成像在内容交付期间应用，可显着减小图像大小和页面重量而不会影响视觉质量。 它针对网络带宽和设备像素比进行了优化。
 * **AI支持：**&#x200B;智能裁剪是AI驱动的功能，可自动裁剪图像和视频目标点。 它消除了手动操作并高效地扩展以供企业使用。
 * **轻松的视频：**&#x200B;将主源视频上传到Dynamic Media，并使用描述性音频自适应地跨多种语言流式传输它们。
 * **体验查看器库：**&#x200B;自定义图像和视频的体验查看器和品牌体验查看器。 这些查看器可无缝集成到您的数字体验中。
 * **新兴格式支持：** Dynamic Media允许交付3D和全景体验。
 
-在您探索[Dynamic Media历程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)时，查看下面的最佳实践综合列表可以帮助您充分利用其功能。 调整这些Dynamic Media最佳实践，使其适应您的特定上下文和项目要求，以使您可跨渠道和设备优化体验。
+在您探索[Dynamic Media历程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)时，查看下面的最佳实践综合列表可以帮助您充分利用其功能。 调整这些Dynamic Media最佳实践以满足您的特定上下文和项目要求，以使您可跨渠道和设备优化体验。
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -55,43 +55,43 @@ Dynamic Media的一些关键原则包括：
 >随着Dynamic Media中新技术的出现，本文中的Dynamic Media最佳实践可能会随着时间的推移而不断发展。 以下信息是最新版本的Dynamic Media的最新信息。
 
 
-## 将资源摄取到Dynamic Media
+## 将资产摄取到Dynamic Media
 
 **业务案例：** *有效地管理大量资产，并确保只向最终用户提供相关的批准内容。*
 
-高效地简化您对大量资产的管理。 使用Dynamic Media的&#x200B;**选择性同步**&#x200B;和&#x200B;**选择性Publish**&#x200B;功能，确保只有适当的授权内容才能到达最终用户手中。
+高效地简化您对大量资产的管理。 使用Dynamic Media的&#x200B;**选择性同步**&#x200B;和&#x200B;**选择性发布**&#x200B;功能，确保只有相应的授权内容才能到达最终用户手中。
 
 * **选择性同步：**
-一项主动功能，允许您选择要与Dynamic Media同步的资源。 例如，您可能决定仅同步那些包含已获得最终批准的资产的文件夹。 此工作流可帮助您保持对准备交付给客户的资产的控制。
+主动功能，允许您选择要与Dynamic Media同步的资产。 例如，您可能决定仅同步那些包含已获得最终批准的资产的文件夹。 此工作流可帮助您保持对准备交付给客户的资产的控制。
 
 * **选择性发布：**
-同步资源后，通过选择性Publish ，您可以控制哪些资源对客户可见。 此功能意味着您可以管理哪些经批准的资产是通过您的渠道实际交付的，确保您的客户只能看到最佳和最相关的内容。
+同步资产后，您可以通过选择性发布来控制哪些资产对客户可见。 此功能意味着您可以管理哪些经批准的资产是通过您的渠道实际交付的，确保您的客户只能看到最佳和最相关的内容。
 
 这两个最佳实践可帮助您更好地控制、管理和提高富媒体内容的工作效率。
 
-想要了解更多信息？ 转到[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)的文件夹级别配置选择性Publish。
+想要了解更多信息？ 转到[在Dynamic Media中的文件夹级别配置选择性发布](/help/assets/dynamic-media/selective-publishing.md)。
 
 
 ## Dynamic Media 查看器
 
-Dynamic Media Viewer最佳实践是旨在优化AEM上Dynamic Media资源的性能、功能和用户体验的基本准则。 这些实践可确保正确同步、发布和配置资源，以使用Dynamic Media的完整功能。
+Dynamic Media查看器最佳实践是基本准则，旨在优化AEM上Dynamic Media资源的性能、功能和用户体验。 这些实践可确保正确同步、发布和配置资产，以使用Dynamic Media的完整功能。
 
 通过遵循这些最佳实践，您可以实现无缝集成、高效的资产管理和增强的查看器交互。 同步资源、使用智能裁剪以及遵守JavaScript文件包含准则都是重要实践。 这些建议有助于保持跨各种平台和设备的介质传送的完整性和可靠性。
 
 * **同步查看器Assets：**
-在使用播放器之前，请确保所有查看器资源都与Dynamic Media同步。
+在使用播放器之前，请确保所有查看器资产均与Dynamic Media同步。
 
    * 访问位于`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`的示例管理器页面。 通过此页面，您可以重新同步查看器的资产，包括现成图标、CSS文件和预设。
    * 如果您遇到任何查看器问题，请转到[Dynamic Media查看器疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
 
-* **Publish Assets：**
+* **发布Assets：**
 在投放查看器中查看资产之前，请确保已发布资产。
 * **自动播放视频已静音：**
 对于视频中的自动播放功能，请使用静音视频设置，因为浏览器会限制按音量播放视频。
 * **智能裁剪：**
 使用用于智能裁剪的图像v3组件增强图像资产呈现。
 * **JavaScript文件包含：**
-页面上仅包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`/s7viewers`上下文HTML（称为整合SDK包含）直接链接到Consolidated SDK `Utils.js`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
+页面上仅包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`/s7viewers`上下文路径(称为合并的HTML include)直接链接到SDK5 SDK `Utils.js`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
 * **嵌入准则：**
 使用文档嵌入特定于每个查看器的准则。
 想要了解更多信息？ 转到AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[查看器。
@@ -114,7 +114,7 @@ Dynamic Media Viewer最佳实践是旨在优化AEM上Dynamic Media资源的性�
 为资产添加标记可增强搜索性、收藏集创建和搜索排名。 Adobe Sensei的人工智能采用自学习算法来进行精确标记，从而实现快速资源检索。 Adobe Sensei还可以识别相关标记（包括自定义标记）并将它们分配给资产，通过自动的描述性标记来简化资产管理。
 想要了解更多信息？ 转到[使用标记](/help/assets/organize-assets.md#use-tags-to-organize-assets)整理资源。
 * **将资源组织为收藏集：**
-Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创建、编辑和共享资源集合。 您可以建立各种收藏集类型，包括静态列表和基于搜索的动态编译。 这些收藏集类型可通过可自定义的访问和编辑权限在多个位置共享。
+Dynamic Media与Experience Manager Assets相结合，可以高效地创建、编辑以及在用户之间共享资源集合。 您可以建立各种收藏集类型，包括静态列表和基于搜索的动态编译。 这些收藏集类型可通过可自定义的访问和编辑权限在多个位置共享。
 想要了解更多信息？ 转到[将资源组织为收藏集](/help/assets/manage-collections.md)。
 * **使用配置文件组织资源：**
 处理配置文件可自动执行指定文件夹中的资产处理，从而简化组织。 随着数字资产收藏集的扩展，通过标准化元数据、文件名和文件夹结构，可以一致而准确地应用这些配置文件。
@@ -124,7 +124,7 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 ### 优化图像质量
 
-**商业论证：** *从Dynamic Media获取高质量的图像。*
+**业务案例：** *从Dynamic Media获取高质量的图像。*
 
 提高图像质量需要仔细考虑各种因素。 这可能是一个非常耗时的过程。 但是，有一些行之有效的实践可以帮助您获得理想的结果。 其中一些最佳实践包括如何获得最佳图像大小、图像锐化以及要使用的最佳图像格式。
 
@@ -134,15 +134,15 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 想要了解更多信息？ 观看[Dynamic Media快照](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)（3分钟17秒）。
 
-要评估这些命令对图像质量的影响，您可以将图像上传到Dynamic Media，使用工具在指定URL处的界面，并应用要尝试的命令。
+要评估这些不同命令对图像质量的影响，您可以将图像上传到Dynamic Media，在指定的URL上使用工具的界面，并应用要尝试的命令。
 
-想试试吗？ 启动[Dynamic Media快照](https://snapshot.scene7.com/)
+想试试吗？ 启动[动态媒体快照](https://snapshot.scene7.com/)
 
 ### 对应用于图像的样式进行标准化
 
 **业务案例：** *有效地标准化应用于我的图像资产的样式和转换。*
 
-在Dynamic Media中定期使用图像预设，以便您可以一致且动态地调整图像大小、格式和属性。 将图像预设视为宏：它是一组指定的用于调整大小和设置格式的命令。 例如，如果您的网站需要各种大小和格式的产品图像，并对桌面和移动设备进行特定压缩，则图像预设会高效地自动完成此过程。
+可在Dynamic Media中定期使用图像预设，以便始终如一地动态调整图像大小、格式和属性。 将图像预设视为宏：它是一组指定的用于调整大小和设置格式的命令。 例如，如果您的网站需要各种大小和格式的产品图像，并对桌面和移动设备进行特定压缩，则图像预设会高效地自动完成此过程。
 
 想试试吗？ 转到[创建图像预设的基础知识以渲染资产](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
 
@@ -150,7 +150,7 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 **业务案例：** *确保我的图像或视频的主要兴趣点跨设备保持焦点。*
 
-智能裁剪是Dynamic Media中的一项功能，它使用Adobe的AI和机器学习框架Adobe Sensei来自动裁剪图像和视频。 它智能地检测并关注图像或视频中的主要主题或兴趣点。 这种智能功能可确保焦点在台式计算机和移动设备上的各种屏幕尺寸中得以保持。
+智能裁剪是Dynamic Media中的一项功能，它使用Adobe Sensei、Adobe的AI和机器学习框架来自动裁剪图像和视频。 它智能地检测并关注图像或视频中的主要主题或兴趣点。 这种智能功能可确保焦点在台式计算机和移动设备上的各种屏幕尺寸中得以保持。
 
 最佳做法是使用智能裁剪创建图像配置文件。 在配置文件中，您可以定义各种屏幕大小并让Adobe Sensei完成其余步骤，以确保您的图像和视频始终针对查看者的设备而优化。
 
@@ -192,7 +192,7 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 **商业案例：** *将丰富的视觉效果应用于图像。*
 
-Dynamic Media提供了一套用于增强图像和动态创建视觉效果的命令，而无需多个静态资源。 下面简要说明了其中一些流程，并提供了一些可指导您的示例：
+Dynamic Media提供了一套用于增强图像和动态创建视觉效果的命令，而无需多个静态资产。 下面简要说明了其中一些流程，并提供了一些可指导您的示例：
 
 #### 源图像内的效果
 
@@ -216,7 +216,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 
 #### 创建图像叠加
 
-如果您希望在现有图像上叠加徽标或图标，Dynamic Media提供了一种简单的方法使用URL命令来实现这一点。 我们来分几步吧。
+如果您希望在现有图像上叠加徽标或图标，Dynamic Media可使用URL命令直接实现这一点。 我们来分几步吧。
 
 | 步骤 | 要做什么 |
 | --- | --- |
@@ -280,7 +280,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 
 ### 投放GIF图像
 
-**商业案例：** *使用Dynamic Media的流GIF*
+**商业案例：** *使用Dynamic Media的GIF流*
 
 您可以通过Dynamic Media上传和投放GIF。 要渲染动画GIF，请在URL中将`is/image`替换为`is/content`。 例如，如果您已上传`abc.gif`，请使用以下内容：
 
@@ -300,7 +300,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 >
 >在URL路径中使用`is/content`时，图像转换命令未应用于资源。
 
-### Publish我的网站视频
+### 为我的网站发布视频
 
 **商业案例：** *快速发布营销网站的视频。*
 
@@ -318,7 +318,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
    * **直接链接：**
 使用提供的URL直接链接到视频。 在营销网站上以适当的方式超链接它。
    * **嵌入视频：**
-复制提供的嵌入代码并将其粘贴到您希望视频显示的网页HTML中。 这样，视频就可以直接在您的网站上播放。
+复制提供的嵌入代码并将其粘贴到您希望视频显示的网页的HTML中。 这样，视频就可以直接在您的网站上播放。
 
 想要了解更多信息？ 转到[视频](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
@@ -328,10 +328,10 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 
 要确保视频的最佳质量和参与度，请考虑实施以下最佳实践策略的组合：
 
-* **使用内置HTML5视频查看器：**
-Dynamic MediaHTML5视频查看器预设是可靠的视频播放器。 使用它们可避免与HTML5视频播放和移动设备相关的常见问题。
+* **使用内置的HTML5视频查看器：**
+Dynamic Media HTML5视频查看器预设是可靠的视频播放器。 使用它们可避免与HTML5视频播放和移动设备相关的常见问题。
 这些预设可解决自适应比特率流交付和桌面浏览器访问受限等挑战。
-想要了解更多信息？ 转到[最佳实践：使用HTML5视频查看器](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer)。
+想要了解更多信息？ 转到[最佳实践：使用HTML 5视频查看器](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer)。
 
 * **使用Dynamic Media视频配置文件：**
 Dynamic Media中的视频配置文件可帮助实现高效的视频管理、一致的品质和自适应流式传输。
@@ -343,19 +343,14 @@ Dynamic Media中的视频配置文件可帮助实现高效的视频管理、一�
 
 * **采用自适应流式传输而不是渐进式流式传输：**
 自适应流根据观看者的Internet连接速度和设备功能调整视频质量。
-它使用HLS （HTTP实时流）或DASH (`Dynamic Adaptive Streaming over HTTP`)之类的协议来确保最佳播放质量。
+它使用HLS (HTTP Live Streaming)或DASH (`Dynamic Adaptive Streaming over HTTP`)之类的协议来确保最佳播放质量。
 与线性交付视频的渐进式流不同，自适应流可最大程度地减少缓冲并提供无缝观看体验。
-
-* **在您的帐户上启用DASH （通过HTTP进行数字自适应流式传输）：**
-DASH通过自适应流的方式动态地提供视频内容。
-要启用DASH，请为您的环境创建支持工单。
-想要了解更多信息？ 转到[在你的Dynamic Media帐户上启用DASH](/help/assets/dynamic-media/video.md#enable-dash)。
 
 ### 将视频国际化，以便使用多语言
 
 **业务案例：** *使视频准备好供多语言使用。*
 
-多语言消费视频的国际化对于触及全球受众至关重要。 Dynamic Media提供了一些功能来帮助您实现这一目标。
+多语言消费视频的国际化对于触及全球受众至关重要。 Dynamic Media提供的功能可帮助您实现这一目标。
 
 * **上传您的视频：**
    * 首先，创建视频编码配置文件。 您可以使用Dynamic Media附带的预定义自适应视频编码配置文件或创建自己的自定义配置文件。
@@ -378,7 +373,7 @@ DASH通过自适应流的方式动态地提供视频内容。
    * 如果您将AEM用作Web内容管理(WCM)系统，则可以直接将视频添加到网页。
    * 如果您使用的是第三方WCM系统，则可以使用URL或嵌入代码在网页上链接或嵌入视频。
 
-想要了解更多信息？ 转到[关于Dynamic Media中对视频的多个字幕和音轨支持](/help/assets/dynamic-media/video.md#about-msma)或观看[向视频添加多个字幕和音轨](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play)（1分钟41秒）。
+想要了解更多信息？ 转到[关于Dynamic Media中视频的多重字幕和音轨支持](/help/assets/dynamic-media/video.md#about-msma)或观看[向视频添加多重字幕和音轨](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play)（1分钟41秒）。
 
 
 ## 将资产交付给客户
@@ -408,7 +403,7 @@ Adobe建议您使用智能成像的功能，而不是手动将图像格式设置
 
 **业务案例：** *发布新内容或覆盖现有内容后，如何确保更改立即显示在CDN上？*
 
-CDN（内容分发网络）缓存Dynamic Media资产，以快速将其交付给客户。 更新这些资源后，所做的更改必须立即在网站上生效。 通过清除或使CDN缓存失效，Dynamic Media交付的资源可以快速更新。 此方法无需根据TTL（生存时间）值（通常设置为10小时）等待缓存过期。 根据您的特定用例，您可以相应地更新CDN TTL（生存时间）设置。
+CDN（内容分发网络）缓存Dynamic Media资产，以快速将其交付给客户。 更新这些资源后，所做的更改必须立即在网站上生效。 通过清除或使CDN缓存失效，可快速更新Dynamic Media交付的资产。 此方法无需根据TTL（生存时间）值（通常设置为10小时）等待缓存过期。 根据您的特定用例，您可以相应地更新CDN TTL（生存时间）设置。
 
-想要了解更多信息？ 转到[通过Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN缓存失效。
+想要了解更多信息？ 转到[通过Dynamic Media使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
 
