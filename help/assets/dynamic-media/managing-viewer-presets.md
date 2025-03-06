@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '4326'
+source-wordcount: '4301'
 ht-degree: 8%
 
 ---
@@ -51,14 +51,14 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ### 查看器支持响应式设计的网页 {#viewer-support-for-responsive-designed-web-pages}
 
-不同的网页具有不同的需求。 例如，有时您需要一个网页，该网页会提供一个链接，在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，需要直接将HTML5查看器嵌入到托管页面上。 在后一种情况下，网页具有静态布局。 或者，它是“响应式”的，在不同的设备或不同的浏览器窗口大小中显示的方式有所不同。 为了满足这些需求，Dynamic Media附带的所有预定义、开箱即用的HTML5查看器都支持静态网页和响应式设计网页。
+不同的网页具有不同的需求。 例如，有时您会希望某个网页提供的链接能够在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，需要直接在托管页面上嵌入HTML5查看器。 在后一种情况下，网页具有静态布局。 或者，它是“响应式”的，在不同的设备或不同的浏览器窗口大小中显示的方式有所不同。 为了满足这些需求，Dynamic Media附带的所有预定义、开箱即用的HTML5查看器都支持静态网页和响应式设计网页。
 
 有关如何将响应式查看器嵌入到网页的更多信息，请参阅&#x200B;*Dynamic Media图像服务和渲染API帮助*&#x200B;中的[响应式静态图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)。
 
 >[!NOTE]
 >
->在首次使用开箱即用的Publish查看器之前，请首先使用它们。
->请参阅[Publish查看器预设](#publishing-viewer-presets)。
+>先发布所有现成的查看器，然后再将其用于第一个查看器。
+>请参阅[发布查看器预设](#publishing-viewer-presets)。
 
 ### 查看器预设系统兼容性  {#viewer-preset-system-compatibility}
 
@@ -161,7 +161,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 >[!NOTE]
 >
 >Dynamic Media中的所有现成查看器预设都会激活（开），但您必须发布它们。
->请参阅[Publish查看器预设](#publishing-viewer-presets)。
+>请参阅[发布查看器预设](#publishing-viewer-presets)。
 >
 >您创建和添加的任何新查看器预设都必须激活*和*已发布。
 >请参阅[激活或停用查看器预设](#activating-or-deactivating-viewer-presets)和[发布查看器预设](#publishing-viewer-presets)。
@@ -370,11 +370,11 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
 ## 增加显示的查看器预设数 {#increasing-the-number-of-viewer-presets-that-display}
 
-从&#x200B;**[!UICONTROL 详细信息视图]** > **[!UICONTROL 查看器]**&#x200B;查看资产时，Experience Manager显示各种查看器预设。 您可以增加或减少显示的查看器数量。
+从&#x200B;**[!UICONTROL 详细信息视图]** > **[!UICONTROL 查看器]**&#x200B;查看资源时，Experience Manager会显示各种查看器预设。 您可以增加或减少显示的查看器数量。
 
 **增加显示的查看器预设数：**
 
-1. 导航到CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
+1. 导航到CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 导航到`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`上的查看器预设列表节点
 
    ![chlimage_1-221](/help/assets/dynamic-media/assets/chlimage_1-221.png)
@@ -427,7 +427,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
      导入CSS文件时，可视编辑器将检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则导入的所有CSS规则必须使用其在父查看器元素上定义的查看器类名称`.s7mixedmediaviewer`来定义。
 
-     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中都有说明。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。 但是，可视化编辑器可能并不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
+     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中都有说明。 例如，如果您想阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。)但是，可视编辑器可能不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
 
    >[!NOTE]
    >
@@ -444,14 +444,10 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
    * **[!UICONTROL 短划线]** — 仅视频流为短划线。 但是，在Safari/iOS设备上，您必须选择&#x200B;**[!UICONTROL hls]**&#x200B;作为类型。
    * **[!UICONTROL hls]** — 视频流仅作为HLS。
-   * **[!UICONTROL auto]** — 最佳实践。 DASH和HLS流的创建已优化存储。 因此，Adobe建议您始终选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型。 视频以短划线、hls或渐进方式流式传输，如下所示：
+   * **[!UICONTROL auto]** — 最佳实践。 DASH和HLS流的创建过程优化了存储。 因此，Adobe建议您始终选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型。 视频以短划线、hls或渐进方式流式传输，如下所示：
       * 如果浏览器支持DASH，则首先使用DASH流。
-      * 如果浏览器不支持DASH，则使用HLS流，其次是。
+      * 如果浏览器不支持DASH，则使用HLS流式传输，其次是。
       * 如果浏览器不支持DASH或HLS，则最后使用渐进式播放。
-
-   >[!NOTE]
-   >
-   >要查看和使用&#x200B;**[!UICONTROL 短划线]**&#x200B;选项，必须首先由您帐户上的Adobe技术支持启用。 请参阅[在您的帐户上启用DASH](/help/assets/dynamic-media/video.md#enable-dash)。
 
 1. 从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要更改其行为的组件。
 
@@ -467,13 +463,13 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
    >在文本字段中键入值后，选择用户界面中的其他位置以提交更改并关闭虚拟键盘。 如果选择&#x200B;**[!UICONTROL Enter]**，则不执行任何操作。
 
 1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存]**。
-1. Publish您的新查看器预设。 必须发布预设，才能在网站上使用其生成的URL。
+1. 发布新的查看器预设。 必须发布预设，才能在网站上使用其生成的URL。
 
    请参阅[发布查看器预设](#publishing-viewer-presets)。
 
    >[!IMPORTANT]
    >
-   >对于使用自适应比特率流配置文件的旧视频，URL将继续正常播放（使用HLS流播放），直到您[重新处理视频资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。 在重新处理之后，同一URL将继续工作，但现在&#x200B;*同时启用了* DASH和HLS流。
+   >对于使用自适应比特率流配置文件的旧视频，URL将继续正常播放(使用HLS流播放)，直到您[重新处理视频资源](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。 在重新处理之后，同一URL将继续工作，但现在&#x200B;*同时启用了* DASH和HLS流。
 
 ### 创建交互式查看器预设的特殊注意事项 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -548,9 +544,9 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
    已激活的查看器预设会在右侧显示切换开关，它位于蓝色框中；已停用的查看器预设会在左侧显示切换开关，它位于浅灰色框中。
 
-## Publish查看器预设 {#publishing-viewer-presets}
+## 发布查看器预设 {#publishing-viewer-presets}
 
-激活（或打开）查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中可见，并且无论何时查看资源。
+激活（或打开）查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中可见，并且在您查看资产时可见。
 
 但是，要&#x200B;*交付*&#x200B;包含查看器预设的资产，还必须发布查看器预设。 必须激活&#x200B;*和*&#x200B;已发布的所有查看器预设，才能获取资产的URL或嵌入代码。 激活并发布Dynamic Media附带的所有现成查看器预设。 您创建和添加的自定义查看器预设将自动激活，但也必须发布。
 
@@ -562,7 +558,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
 1. 在Experience Manager的左上角，选择Experience Manager徽标，然后在左边栏中选择&#x200B;**[!UICONTROL 工具]** （锤子图标）> **[!UICONTROL Assets] > [!UICONTROL 查看器预设]**。
 1. 选择一个或多个要发布的查看器预设。
-1. 在工具栏上，选择&#x200B;**[!UICONTROL Publish]**&#x200B;图标。
+1. 在工具栏上，选择&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
 
 ## 排序查看器预设 {#sorting-viewer-presets}
 

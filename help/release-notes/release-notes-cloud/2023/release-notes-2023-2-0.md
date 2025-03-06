@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版�
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 预发布中的新增功能 {#prerelease-sites}
 
-* 将内容片段作为 JSON 优惠从 AEM as a Cloud Service 导出到 Adobe Target。
+* 将内容片段作为 JSON 产品建议从 AEM as a Cloud Service 导出到 Adobe Target。
 * 现在，利用对 GraphQL 分页和排序的支持以及内部缓存增强功能，可以在使用复杂的 GraphQL 查询和筛选条件从 AEM 获取大型内容集时帮助提高已解耦客户端应用程序的性能。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -49,7 +49,6 @@ ht-degree: 100%
 * 推出了面向 Dynamic Media 视频交付（已启用 CMAF）中的自适应流式处理的新协议（DASH – 基于 HTTP 的动态自适应流式处理）支持：
    * 自适应流式处理 (DASH/HLS) 确保改善用户对视频的观看体验
    * DASH 是自适应视频流式处理的国际标准协议，在业界得到广泛应用
-   * 已在北美推出，将通过支持票证启用，并且即将在亚太地区以及欧洲、中东和非洲推出
 
 * 增加了对 WebP 图像的支持，可自动提取元数据、生成缩略图和自定义演绎版。这些文件现在也支持智能标记和智能裁切功能。
 
