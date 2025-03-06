@@ -3,7 +3,7 @@ title: Dynamic Media Prime和Ultimate
 description: 详细了解Dynamic Media Prime和Ultimate、它们的好处以及它们之间的差异。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 14%
@@ -28,13 +28,9 @@ Dynamic Media Prime是Experience Manager Assets的一项激活服务，它提供
 Dynamic Media Prime的一些其他主要优势包括：
 
 * 集中管理数字资产
-
 * 投放URL中反映的实时更新
-
 * 品牌一致性
-
 * Web优化图像交付
-
 * 自适应视频流
 
 ### 前提条件 {#pre-requisites-dm-prime}
@@ -57,9 +53,7 @@ Dynamic Media Ultimate是Experience Manager Assets的激活服务，包括[具�
 * AEM as a Cloud Service中的[Dynamic Media解决方案](/help/assets/dynamic-media/dynamic-media.md)，其中还包括以下关键功能：
 
    * [Dynamic Media 模板](/help/assets/dynamic-media/dynamic-media-templates.md)
-
    * [模板基础知识](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-
    * [可视化配置](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 前提条件 {#pre-requisites-dm-ultimate}
@@ -71,4 +65,3 @@ Dynamic Media Ultimate是Experience Manager Assets的激活服务，包括[具�
 有关完整的功能列表的详细信息，请参阅[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)和[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
 有关如何为您的AEM as a Cloud Service环境启用Dynamic Media Prime和Ultimate的信息，请参阅[启用Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)。
-
