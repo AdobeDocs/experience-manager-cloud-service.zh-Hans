@@ -1,15 +1,15 @@
 ---
-title: 探索Content Hub
+title: Content Hub 概览
 description: 了解有关 Content Hub 的更多信息、其主要优势、如何访问它以及如何围绕 Content Hub 中的可用选项提供反馈。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: cccfddd6600358bc7bd4d000d760d62626107426
+source-git-commit: db23c4309454c69b784405ef14b54166db7c7cf2
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
-# 探索Content Hub {#overview-content-hub}
+# Content Hub 概览 {#overview-content-hub}
 
 | [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |----|-----|
