@@ -3,7 +3,8 @@ title: 启用 [!DNL Dynamic Media] Prime和Ultimate
 description: 了解如何启用 [!DNL Dynamic Media] Prime和Ultimate产品/服务。
 feature: Asset Management
 role: User, Admin
-source-git-commit: dce23f34cab2248d65e0e19d98fdfd529eadbdc6
+exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
+source-git-commit: e32d4a3348e5202dc08f9e3cd587cf6accddb559
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 通过[!DNL Adobe Experience Manager] as a Cloud Service，您可以访问[!DNL Dynamic Media] Prime和Ultimate产品，以简化您的数字工作流并优化内容管理。 请参阅[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)，了解它们的好处以及它们之间的主要区别。
 
-本文介绍了用于启用[!DNL Dynamic Media] Prime和Ultimate产品的端到端工作流。
+本文提供了一个端到端的工作流，用于启用[!DNL Dynamic Media]Prime和Ultimate产品。
 
 ## 启用[!DNL Dynamic Media]Ultimate {#enable-dynamic-media-ultimate}
 
@@ -51,29 +52,38 @@ ht-degree: 2%
 执行以下步骤可为云服务环境启用[!DNL Dynamic Media with OpenAPI]：
 
 1. [导航到Cloud Manager UI](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
+
 1. [如果无法访问现有环境，请创建环境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments)。
+
 1. 在环境详细信息页面上的&#x200B;**[!UICONTROL 环境信息]**&#x200B;部分的&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;行中选择&#x200B;**[!UICONTROL 单击以激活]**。
-   ![使用OpenAPI功能激活Dynamic Media](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png){width="700" align="center"}
+
+   ![使用OpenAPI功能激活Dynamic Media](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png)
+
 1. 在确认对话框中单击&#x200B;**[!UICONTROL 激活]**&#x200B;以开始[!DNL Dynamic Media with OpenAPI]激活过程。 成功激活后，Cloud Manager会显示以下状态更新：
    1. **[!UICONTROL 环境阶段]**： **[!UICONTROL 正在运行]**
    1. ![已激活DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL &#x200B;已激活OpenAPI功能&#x200B;]**
 
-   ![激活成功](/help/assets/assets/activation-successful.png){width="700" align="center"}
+      ![激活成功](/help/assets/assets/activation-successful.png){width="700" align="center"}
 
 #### 重试激活 {#retry-activation}
 
 如果激活失败，Cloud Manager会显示以下状态更新：
 
 * **[!UICONTROL 环境暂存]**：**[!UICONTROL OpenAPI的DM失败]**
-* ![DM已激活](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能无法激活&#x200B;]**  ![重试激活](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
+* ![DM已激活](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能无法激活&#x200B;]**
+
+  ![重试激活](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="center"}
 
 选择&#x200B;**[!UICONTROL 单击以重试]**&#x200B;以重新启动激活。
 
 或者，执行这些步骤以重新启动激活过程：
 
 1. 导航到列出所有环境的页面。
+
 1. 单击环境行末尾的更多选项（![更多选项](/help/assets/assets/three-dots.svg)）。
-1. 选择&#x200B;**[!UICONTROL 使用OpenAPI激活重试DM]**以重新启动激活。
+
+1. 选择&#x200B;**[!UICONTROL 使用OpenAPI激活重试DM]**&#x200B;以重新启动激活。
+
    ![从环境详细信息页面重试激活](/help/assets/assets/restart-activation-process-from-list-environment-page.png)
 
 ### 配置[!DNL Dynamic Media]解决方案 {#configure-dynamic-media-solutions}
@@ -92,10 +102,13 @@ ht-degree: 2%
 执行以下步骤：
 
 1. [创建新程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program)或导航到现有程序，然后单击&#x200B;**[!UICONTROL 编辑]**。 **[!UICONTROL 为生产设置]**&#x200B;页面显示&#x200B;**[!UICONTROL 解决方案和加载项]**&#x200B;选项卡。
+
 1. 选择&#x200B;**[!UICONTROL Assets]**、**[!UICONTROL Assets Prime]**、**[!UICONTROL Assets Ultimate]**&#x200B;或&#x200B;**[!UICONTROL 站点]**&#x200B;以将&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解决方案添加到您的项目中。
+
 1. 选择&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解决方案并单击&#x200B;**[!UICONTROL 继续]**&#x200B;以将&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;解决方案添加到您的项目中。 此操作重新启动程序中的所有现有环境，并向其中添加[!DNL Dynamic Media]解决方案。 此外，您在项目下创建的任何新环境都会自动获取[!DNL Dynamic Media]。
 
-![为生产设置](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+   ![为生产设置](/help/assets/assets/set-up-for-prod.png){width="500" align="center"}
+
 请参阅[激活 [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)以在您的环境中开始使用[!DNL Dynamic Media]的功能和OpenAPI功能。
 
 ### 创建和列出[!DNL Dynamic Media]公司 {#create-and-list-dynamic-media-companies}
@@ -107,6 +120,7 @@ ht-degree: 2%
 要查看现有公司（帐户）或在您的IMS组织中添加新的[!DNL Dynamic Media]公司（帐户），您必须具有：
 
 1. [访问Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
+
 1. 您组织中的[!DNL Dynamic Media with OpenAPI]积分。
 
 #### 在您的IMS组织中创建和列出[!DNL Dynamic Media]公司 {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
@@ -114,24 +128,35 @@ ht-degree: 2%
 执行以下步骤以创建并列出可在您的[!DNL AEM]环境中配置的新[!DNL Dynamic Media]公司（帐户）：
 
 1. 导航到[Cloud Manager许可证页面](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license)。
+
 1. 单击&#x200B;**[!UICONTROL 添加公司]**，将显示&#x200B;**[!UICONTROL 创建Dynamic Media公司]**&#x200B;对话框。
+
 1. 指定唯一的[!DNL Dynamic Media]公司名称，选择公司区域并添加以逗号分隔的公司管理员电子邮件ID列表。
+
    ![创建Dynamic Media公司](/help/assets/assets/create-dynamic-media-company.png){width="500" align="center"}
+
 1. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;开始创建您的公司。 此操作向&#x200B;**[!UICONTROL [!DNL Dynamic Media]公司]**&#x200B;分区添加一个新行并显示&#x200B;**[!UICONTROL 正在设置]**&#x200B;为公司的&#x200B;**[!UICONTROL 状态]**。
+
    ![已启动Dynamic Media公司创建](/help/assets/assets/dm-company-creation-initiated.png)
+
 1. **可选：**&#x200B;单击![信息图标](/help/assets/assets/info-icon-solid-black.svg)查看公司的详细信息。 创建公司时，**[!UICONTROL 状态]**&#x200B;将更新为&#x200B;**[!UICONTROL 就绪]**。
 
    ![Dynamic Media公司信息](/help/assets/assets/dm-company-information.png)
+
 1. 作为Dynamic Media管理员，请查看您的邮箱中的欢迎电子邮件，其中包含要在[!DNL AEM] Cloud Service环境中[配置 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)公司以开始使用的步骤列表。
+
    ![欢迎电子邮件](/help/assets/assets/welcome-email.png)
 
 #### 重试公司创建 {#retry-company-creation}
 
 如果[!DNL Dynamic Media]公司创建失败，请根据失败状态执行以下步骤：
 
-1. 如果&#x200B;**[!UICONTROL 状态]**为“待处理”，则请向客户支持团队提出问题以供解决。
+1. 如果&#x200B;**[!UICONTROL 状态]**&#x200B;为“待处理”，则请向客户支持团队提出问题以供解决。
+
    ![待处理状态](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
-1. 如果&#x200B;**[!UICONTROL 状态]**失败，则根据失败原因重试。
+
+1. 如果&#x200B;**[!UICONTROL 状态]**&#x200B;失败，则根据失败原因重试。
+
    ![失败状态](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### 可选：在交付层配置自定义域 {#configure-custom-domain-in-delivery-tier}
@@ -152,19 +177,31 @@ ht-degree: 2%
 在Cloud Manager中执行以下步骤，在交付层配置自定义域：
 
 1. [添加客户管理的SSL证书](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)。
+
 1. [添加自定义域名](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)。
+
 1. 导航到环境详细信息页面并[添加CDN配置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config)。 添加配置时，在&#x200B;**[!UICONTROL 配置CDN]**&#x200B;对话框的&#x200B;**[!UICONTROL 层]**&#x200B;字段中选择&#x200B;**[!UICONTROL 投放]**。
+
    ![配置CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
    添加配置后，**[!UICONTROL CDN配置]**&#x200B;的&#x200B;**[!UICONTROL 状态]**&#x200B;将更新为&#x200B;**[!UICONTROL 已应用]**。
+
    ![配置CDN部署状态](/help/assets/assets/cdn-configuration-deployment-status.png)
-1. 单击更多选项（![更多选项](/help/assets/assets/three-dots.svg)）并选择&#x200B;**[!UICONTROL 上线准备工作]**&#x200B;以显示&#x200B;**[!UICONTROL 上线准备工作]**对话框。
+
+1. 单击更多选项（![更多选项](/help/assets/assets/three-dots.svg)）并选择&#x200B;**[!UICONTROL 上线准备工作]**&#x200B;以显示&#x200B;**[!UICONTROL 上线准备工作]**&#x200B;对话框。
+
    ![上线准备选项](/help/assets/assets/go-live-readiness-option.png)
+
 1. 执行&#x200B;**[!UICONTROL 配置CNAME]**&#x200B;步骤以在DNS服务提供商的DNS记录中映射[cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) （CNAME记录）。 此映射可确保将在自定义域中收到的请求重定向到Adobe的CDN。
+
    ![上线就绪对话框](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="center"}
+
 1. 单击&#x200B;**[!UICONTROL 确定]**，**[!UICONTROL 状态]**&#x200B;更新为&#x200B;**[!UICONTROL 已验证]**。 自定义域已准备好在投放URL中使用。
 
-![配置CDN](/help/assets/assets/cdn-configurations-varified.png)
+
+   ![配置CDN](/help/assets/assets/cdn-configurations-varified.png)
+
+
 
 <!--
 ### Onboard API keys {#onboarding-api-keys}
