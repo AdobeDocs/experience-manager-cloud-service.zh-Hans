@@ -4,9 +4,9 @@ description: 了解通用编辑器发送的不同事件，您可以使用这些�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -180,29 +180,6 @@ ht-degree: 2%
 
 ## UI事件 {#ui-events}
 
-### aue：ui-publish {#ui-publish}
-
-发布内容时触发`aue:ui-publish`事件（在`BODY`级别调用）。
-
-有效负载是项目ID及其发布状态的列表。
-
-### aue：ui-select {#ui-select}
-
-选择某个组件时会触发`aue:ui-select`事件。
-
-有效负载是所选组件的项目ID、项目属性和项目类型。
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue：ui-preview {#ui-preview}
 
 当页面的编辑模式更改为&#x200B;**预览**&#x200B;时，将触发`aue:ui-preview`事件。
@@ -271,7 +248,6 @@ ht-degree: 2%
 
 | 事件 | 行为 |
 |---|---|
-| `aue:ui-publish` | 不执行任何操作 |
 | `aue:ui-select` | 滚动到选定的元素 |
 | `aue:ui-preview` | 将`class="adobe-ue-preview"`添加到HTML标记 |
 | `aue:ui-edit` | 将`class=adobe-ue-edit"`添加到HTML标记 |
