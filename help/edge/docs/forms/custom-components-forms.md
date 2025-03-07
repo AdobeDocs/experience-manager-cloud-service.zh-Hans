@@ -5,10 +5,11 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +31,7 @@ ht-degree: 96%
 
 在本文结束时，您将学会通过在 CSS 文件和自定义函数中添加样式来创建自定义组件。
 
-## 先决条件
+## 前提条件
 
 在开始创建自定义组件之前，您应该：
 
@@ -58,7 +59,7 @@ ht-degree: 96%
 要添加自定义函数：
 
 1. 导航到 `[../Form Block/components]`。
-1. 找到名为`range.js`的文件。 如果不存在，则创建它。
+1. 找到名为 `range.js` 文件的位置。如果不存在，则创建一个。
 1. 添加以下代码行：
 
    ```javascript
@@ -214,7 +215,7 @@ ht-degree: 96%
 
 ### 使用 AEM Sidekick 预览表单
 
-使用新实施的函数预览表单，该函数为`range`组件设置样式。
+通过新实施的 `range` 组件样式函数来预览您的表单。
 
 ![自定义组件表单](/help/edge/assets/custom-componet-form.png)
 
@@ -361,7 +362,3 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 ## 另请参阅
 
 {{see-more-forms-eds}}
-
-
-
-
