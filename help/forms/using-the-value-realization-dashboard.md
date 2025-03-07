@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 要访问Forms使用情况分析仪表板，请执行以下操作：
 
 1. 导航到&#x200B;**Forms** > **Forms和文档**
-1. 单击&#x200B;**分析仪表板**。 操控板将在新窗口中打开。
+1. 单击&#x200B;**InProduct Dashboard**。 操控板将在新窗口中打开。
 
    ![值实现仪表板](/help/forms/assets/forms-usage-insights.png)
 
