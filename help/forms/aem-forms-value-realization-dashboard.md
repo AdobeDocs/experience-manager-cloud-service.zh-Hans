@@ -1,14 +1,14 @@
 ---
-title: AEM Forms价值实现仪表板
-description: 使用我们直观的跟踪仪表板，在AEM Forms实例上轻松监控表单提交。
+title: AEM Forms价值实现功能板
+description: 借助一个直观的跟踪仪表板，可轻松地在AEM Forms实例上监控表单提交。
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 欢迎来到一站式服务，以了解您的表单带来的价值！ 该功能板为您提供了宝贵的见解，可用于优化表单、简化工作流并最终更快地实现目标。
 
-本文提供了价值实现功能板及其优势的概念性概述。 有关详细的使用说明和量度解释，请参阅[使用值实现仪表板解释表单使用分析](/help/forms/using-the-value-realization-dashboard.md)。
-
-
+本文提供了价值实现功能板及其优势的概念性概述。 有关详细的使用说明和量度解释，请参阅[使用值实现仪表板分析表单和文档使用趋势](/help/forms/using-the-value-realization-dashboard.md)。
 
 
 ## 仪表板上有什么？ {#content-of-dashboard}
@@ -50,7 +48,7 @@ ht-degree: 0%
 
 此仪表板允许您针对表单做出数据驱动型决策。 方法如下：
 
-* **识别受欢迎的Forms**：高提交率表示有价值的表单。 分析这些内容，以便在其他文档中复制最佳实践。
+* **识别受欢迎的Forms**：高提交率表示有价值的表单。 分析这些表单，以便在其他表单中复制最佳实践。
 * **优化表单创建**：通过识别瓶颈缩短创建时间。 探索预建模板或简化工作流。
 * **提升片段重用**：鼓励协作和可重用片段的可发现性。 组织良好的片段库可以显着提高效率。
 
@@ -77,4 +75,4 @@ ht-degree: 0%
 
 ## 另请参阅
 
-* [使用功能板分析Forms并记录使用趋势](/help/forms/using-the-value-realization-dashboard.md)
+* [使用仪表板分析Forms和文档使用趋势](/help/forms/using-the-value-realization-dashboard.md)
