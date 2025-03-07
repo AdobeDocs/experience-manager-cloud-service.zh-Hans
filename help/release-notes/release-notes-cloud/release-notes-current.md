@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
+source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 47%
@@ -46,7 +46,6 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### AEM Sites中的新增功能 {#new-features-sites}
 
 **内容片段自动标记**
@@ -57,14 +56,13 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 内容片段UUID支持现在为GA。 新功能不会改变AEM中基于路径的操作行为（例如移动、重命名、转出，这些操作会自动调整路径），但它可以让内容片段的外部使用更容易、更稳定，尤其是在使用GraphQL查询（通过ByPath查询直接针对单个片段）时。 如果片段路径发生更改，此类查询可能会中断。 使用新的ById查询类型时，查询现在保持稳定，因为路径这样做时，片段的UUID不会更改。
 
-内容片段编辑器和GraphQL中支持OpenAPI的** Dynamic Media **
+**内容片段编辑器和GraphQL中支持OpenAPI的Dynamic Media**
 
 与内容片段不同，Assets存储在AEM as a Cloud Service程序中，并通过新的Dynamic Media （具有OpenAPI功能）启用，现在可以在内容片段中使用。 现在，新内容片段编辑器中的图像选择器允许选择“远程”存储库作为片段中要引用的图像资产的源。 在使用AEM GraphQL交付此类内容片段时，JSON响应现在包含远程资产(assetId、repositoryId)所需的属性，以便客户端应用程序可以创建具有OpenAPI URL的相应Dynamic Media来获取图像。
 
-**翻译HTTP API **
+**翻译HTTP API**
 
 已处于早期采用者模式一段时间的AEM翻译HTTP REST API现在已正式推出。 文档可在[此处](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)找到。 利用API，可自动执行AEM中内容的翻译管理流程中所需的步骤。
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
