@@ -654,7 +654,7 @@ ht-degree: 94%
       + [上传和添加资产](/help/assets/add-delete-assets-view.md)
       + [批量导入资产](/help/assets/bulk-import-assets-view.md)
       + [搜索和发现资产](/help/assets/search-assets-view.md)
-      + [自定义搜索筛选器](/help/assets/custom-search-filters.md)
+      + [自定义搜索过滤器](/help/assets/custom-search-filters.md)
       + [资产管理任务](/help/assets/manage-organize-assets-view.md)
       + [编辑图像](/help/assets/edit-images-assets-view.md)
       + [编辑视频](/help/assets/edit-videos-assets-view.md)
