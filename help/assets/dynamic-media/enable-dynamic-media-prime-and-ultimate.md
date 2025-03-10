@@ -4,7 +4,7 @@ description: 了解如何启用 [!DNL Dynamic Media] Prime和Ultimate产品/服�
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
+source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 1. [访问Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
 1. [您的项目包括 [!DNL Dynamic Media] 解决方案](#configure-dynamic-media-solutions)。
-1. 您的组织具有[!DNL Dynamic Media]的OpenAPI积分。
+1. 您有[!DNL Dynamic Media]个Prime或Ultimate许可证。
 
 #### 在Cloud Service环境中启用[!DNL Dynamic Media with OpenAPI]功能 {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 确保您具有以下功能来配置[!UICONTROL Dynamic Media]解决方案：
 
 1. [访问Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. 您的组织具有[!DNL Dynamic Media with OpenAPI]积分。
+1. 您有[!DNL Dynamic Media]个Ultimate许可证。
 
 #### 为资产投放配置[!DNL Dynamic Media]解决方案 {#configure-dynamic-media-solutions-for-asset-delivery}
 
