@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 47%
+ht-degree: 85%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 47%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.2.0)的发布日期是2025年3月4日。 下一个功能版本(2025.3.0)计划于2025年3月27日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.2.0) 的发布日期为 2025 年 3 月 4 日。下一个功能版本 (2025.3.0) 计划于 2025 年 3 月 27 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -46,52 +46,52 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### AEM Sites中的新增功能 {#new-features-sites}
+### AEM Sites 中的新增功能 {#new-features-sites}
 
 **内容片段自动标记**
 
-现在，在创建内容片段时，可以自动继承分配给内容模型的标记。 这允许对内容片段中存储的内容进行强大的自动分类。
+创建内容片段时，现在可以自动继承分配给内容模型的标记。这样可以对存储在内容片段中的内容进行强大的自动分类。
 
 **内容片段UUID支持**
 
-内容片段UUID支持现在为GA。 新功能不会改变AEM中基于路径的操作行为（例如移动、重命名、转出，这些操作会自动调整路径），但它可以让内容片段的外部使用更容易、更稳定，尤其是在使用GraphQL查询（通过ByPath查询直接针对单个片段）时。 如果片段路径发生更改，此类查询可能会中断。 使用新的ById查询类型时，查询现在保持稳定，因为路径这样做时，片段的UUID不会更改。
+内容片段 UUID 支持现在是 GA。新功能不会改变 AEM 中基于路径的运行行为，例如移动、重命名、转出，因为路径会自动调整，但它可以使内容片段的外部使用更容易、更稳定，尤其是在使用 GraphQL 查询时，该查询通过 ByPath 查询直接针对单个片段。如果片段路径发生变化，此类查询可能会中断。现在使用新的 ById 查询类型时，查询保持稳定，因为在路径发生变化的情况下片段的 UUID 不会改变。
 
 **内容片段编辑器和GraphQL中支持OpenAPI的Dynamic Media**
 
-与内容片段不同，Assets存储在AEM as a Cloud Service程序中，并通过新的Dynamic Media （具有OpenAPI功能）启用，现在可以在内容片段中使用。 现在，新内容片段编辑器中的图像选择器允许选择“远程”存储库作为片段中要引用的图像资产的源。 在使用AEM GraphQL交付此类内容片段时，JSON响应现在包含远程资产(assetId、repositoryId)所需的属性，以便客户端应用程序可以创建具有OpenAPI URL的相应Dynamic Media来获取图像。
+不是存储在内容片段中，而是存储在不同的 AEM as a Cloud Service 计划中，并且启用了具有 OpenAPI 功能的新动态媒体的资产，现在可以在内容片段中使用。新内容片段编辑器中的图像选择器现在允许选择“远程”存储库作为片段中引用的图像资产的来源。并且，在使用 AEM GraphQL 投放此类内容片段时，JSON 响应现在包含远程资产 (assetId、repositoryId) 所需的属性，这样客户端应用程序可以创建相应的具有 OpenAPI 功能的动态媒体 URL 来获取图像。
 
 **翻译HTTP API**
 
-已处于早期采用者模式一段时间的AEM翻译HTTP REST API现在已正式推出。 文档可在[此处](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)找到。 利用API，可自动执行AEM中内容的翻译管理流程中所需的步骤。
+AEM Translation HTTP REST API 有一段时间是早期采用者模式，现在是 GA。文档请参见[这里](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)。API 允许自动执行 AEM 中内容翻译管理流程中所需的步骤。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### AEM Assets 中的新增功能 {#new-features-assets}
 
-**Dynamic Media新打包结构**
+**动态媒体新包装结构**
 
-现在提供了更新的Dynamic Media打包结构，以便更好地符合市场预期并支持跟踪。 新的封装结构包括：
+现在提供一种更新的动态媒体包装结构，以更好地符合市场预期并支持跟踪。新的包装结构包括：
 
-* Dynamic Media Prime，其中包括使用OpenAPI和视频增强交付的Dynamic Media。
+* Dynamic Media Prime，包括具有 OpenAPI 功能和视频的动态媒体，以增强投放。
 
-* Dynamic Media Ultimate添加了交付和转换功能，以满足更苛刻的使用要求。
+* Dynamic Media Ultimate 增加了投放和转换功能，以满足更高的使用要求。
 
-您必须拥有Assets as a Cloud Service Prime或Ultimate才能从新的打包结构中受益。
+您必须有 Assets as a Cloud Service Prime 或 Ultimate 才能使用新的包装结构。
 
 **AI 生成的视频字幕**
 
-Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内容自动生成字幕。此功能旨在提供准确的字幕，从而提高辅助功能并增强用户体验。 字幕由原始音频生成，任何附加的音频曲目或额外的字幕在视频属性页面的“字幕和音频”选项卡中提供。 支持超过 60 种语言，可以在发布视频之前查看和预览字幕。
+Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内容自动生成字幕。此功能旨在通过提供准确的字幕来提高视频的可观看性，并增强用户体验。字幕是根据原始音频、任何附加音轨生成的，或者视频属性页面“字幕和音频”选项卡中提供额外字幕。支持超过 60 种语言，可以在发布视频之前查看和预览字幕。
 
-**自定义搜索筛选器**
+**自定义搜索过滤器**
 
-自定义搜索筛选器可提高查找相关信息的精度和效率。 它允许进行更定制的搜索，根据特定属性（如品牌、产品、类别或其他关键标识符）过滤数据。 这可以改善组织结构，减少花在筛选无关结果上的时间，并实现更快的决策。 它还支持可扩展性，因为大型数据集变得更加易于导航和分析。
+自定义搜索过滤器提高了查找相关信息的准确度和效率。它允许进行更加定制的搜索，根据品牌、产品、类别或其他关键标识符等特定属性筛选数据。这可以改善组织，减少仔细检查不相关结果所花费的时间，并能够更快地做出决策。它还支持可扩展性，因为大型数据集会更易于导航和分析。
 
-![自定义搜索筛选器](/help/assets/assets/custom-search-filters.png)
+![自定义搜索过滤器](/help/assets/assets/custom-search-filters.png)
 
 
-### Content Hub中的抢先体验功能 {#early-access-content-hub}
+### Content Hub 中的早期访问功能 {#early-access-content-hub}
 
-除了现有的静态演绎版之外，Content Hub现在还允许您查看和下载动态和智能裁剪演绎版。 作为Content Hub管理员，您还可以使用配置用户界面配置这些演绎版的可用性。
+除了现有的静态演绎版之外，Content Hub 现在还允许您查看和下载动态及智能裁切演绎版。作为 Content Hub 管理员，您还可以使用配置用户界面配置这些演绎版对于用户的可用性。
 
 ![动态演绎](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
@@ -105,15 +105,15 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### 自适应Forms中的HTML电子邮件模板
+#### 自适应表单中的 HTML 电子邮件模板
 
-自适应Forms允许您使用[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
+自适应表单允许您使用 [HTML 电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)。HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 
 ![HTML 电子邮件模板](/help/forms/assets/html-email.png)
 
 #### 增强的云存储支持：将 PDF 直接上传至 Azure Blob 存储
 
-AEM Forms Document Generation API现在允许您[直接将生成的PDF文档](/help/forms/early-access-ea-features.md#doc-generation-api)上传到Azure Blob Storage。 这种增强功能简化了存储和检索，提高了效率并与云工作流进行集成。
+AEM Forms 文档生成 API 现在允许您[直接将生成的 PDF 文档上传](/help/forms/early-access-ea-features.md#doc-generation-api)到 Azure Blob 存储。这种增强功能简化了存储和检索，提高了效率并与云工作流进行集成。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
