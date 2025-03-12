@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-创建页面时，需要选择模板。 页面模板用作新页面的基础。 [AEM可编辑模板](/help/implementing/developing/components/templates.md)可以定义生成页面的结构、任何初始内容以及可以使用的组件（设计属性）。
+创建页面时，需要选择模板。 页面模板用作新页面的基础。 [AEM的可编辑模板](/help/implementing/developing/components/templates.md)可以定义生成页面的结构、任何初始内容以及可以使用的组件（设计属性）。
 
 内容作者在站点控制台[中创建新页面时，会看到一系列可用的模板](/help/sites-cloud/authoring/sites-console/creating-pages.md)。 模板可用于创建可通过以下方式编辑的页面：
 
@@ -95,12 +95,12 @@ ht-degree: 2%
 
 必须先启用模板，内容作者才能使用模板创建页面。 如果不再需要某个模板，可以禁用该模板，使其不再显示在页面创建向导中。
 
-* 选择模板，然后单击或点按&#x200B;**禁用**&#x200B;以禁用模板。
-* 选择模板并单击或点按&#x200B;**启用**&#x200B;以启用该模板。
+* 选择模板并单击&#x200B;**禁用**&#x200B;以禁用该模板。
+* 选择模板并单击&#x200B;**启用**&#x200B;以启用该模板。
 
 ## 发布 {#publish}
 
-使用模板编辑器创建的模板仅在发布后才能使用。 选择模板并单击或点按&#x200B;**Publish**&#x200B;以进行发布。
+使用模板编辑器创建的模板仅在发布后才能使用。 选择模板并单击&#x200B;**发布**&#x200B;以进行发布。
 
 使用通用编辑器创建的模板无需发布即可使用。
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 * [编辑模板](#edit)以根据需要对其进行调整。
 * [使用属性窗口](#properties)更新模板标题。
 * [启用模板](#enable-disable)，以便使用该模板创建页面。
-* 如果需要，[Publish模板](#publish)。
+* 如果需要，请[发布模板](#publish)。
 
 >[!TIP]
 >
