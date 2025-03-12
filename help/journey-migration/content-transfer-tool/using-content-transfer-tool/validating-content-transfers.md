@@ -4,9 +4,9 @@ description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -145,13 +145,14 @@ Migration validation took 0 minutes
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-您会看到一个包含摘要信息的对话框。 使用帮助图标阅读更完整的说明。 单击&#x200B;**下载报表**&#x200B;按钮可下载完整的逗号分隔(CSV)报表。  另请注意，此报表末尾是用户报表，可用于迁移后的用户管理。
+您会看到一个包含摘要信息的对话框。 使用帮助图标阅读更完整的说明。 要下载完整的逗号分隔(CSV)主体迁移报告，请从&#x200B;**下载文件……**&#x200B;下的下拉列表中选择&#x200B;**主体迁移报告**，然后单击&#x200B;**下载**&#x200B;按钮。 另请注意，此报表末尾是用户报表，可用于迁移后的用户管理。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 “Principal Migration”报告将报告：
 
 * 每个组都已迁移，并且是第一个触发该组迁移的内容路径；该组可能还位于其他路径上，但只报告为给定组找到的第一个路径。 它还会报告是否在ACL或CUG策略中找到它。
+* 作为本地组迁移的每个组在该组的行上都将显示“local”一词。
 * 每个组均未迁移，以及未迁移的原因。  通常，这可能是以下原因之一：
    * 它是一个内置组
    * 已在目标系统上
