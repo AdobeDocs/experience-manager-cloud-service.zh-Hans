@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -19,9 +19,9 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
 
 ## 编辑自定义域名配置 {#view-and-update}
 
-在AdobeCloud Manager中，您可能想要编辑自定义域名配置，原因如下：
+在Adobe Cloud Manager中，您可能想要编辑自定义域名配置，原因如下：
 
-* **切换环境**：根据您是向最终用户(Publish)还是内部用户（创作）提供内容，应用正确的配置。
+* **切换环境**：根据您是向最终用户（发布）还是内部用户（创作）提供内容，应用正确的配置。
 * **安全更新**：升级到较新的SSL证书，以增强安全性或合规性。
 * **更改部署策略**：确保将正确的SSL证书应用于特定环境，以便进行正确的加密和站点访问。
 
@@ -31,7 +31,7 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
+1. 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
 
 1. 在&#x200B;**服务**&#x200B;标题下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **域映射**。
 
@@ -39,9 +39,9 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
 
 1. 单击&#x200B;**编辑**。
 
-1. 在&#x200B;**编辑CDN配置**&#x200B;对话框中，执行以下操作：
+1. 在&#x200B;**编辑域配置**&#x200B;对话框中，执行以下操作：
 
-   * 在&#x200B;**层**&#x200B;下拉列表中，选择要使用的层(Publish或预览)。
+   * 在&#x200B;**层**&#x200B;下拉列表中选择要使用的层（发布或预览）。
    * 在&#x200B;**SSL证书**&#x200B;下拉列表中，选择要使用的SSL证书。
 
 1. 单击&#x200B;**更新**。
@@ -112,7 +112,7 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
 
 1. 从&#x200B;**环境**&#x200B;页面，导航到感兴趣环境的详细信息屏幕。
 
-1. 从域名表中，标识要删除的自定义域名的行。
+1. 从“域映射”表中，标识要删除的自定义域名的行。
 
 1. 单击行最右端的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 

@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1028'
+ht-degree: 16%
 
 ---
 
 
-# 添加客户自定义域名 {#adding-cdn}
+# 添加客户自定义域名 {#adding-custom-domain-name}
 
 了解如何使用Cloud Manager中的&#x200B;**域设置**&#x200B;添加自定义域名。
 
@@ -27,17 +27,17 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->如果您使用Adobe托管的CDN，则仍需要将域添加到Cloud Manager。
+>如果您使用Adobe托管的CDN，则仍需要将您的域添加到Cloud Manager。
 
-## 在何处添加自定义域名 {#where-to-add-cdn}
+## 在何处添加自定义域名 {#where-to-add-custom-domain-name}
 
 您可以从Cloud Manager中的[域设置页面](#adding-cdn-settings)添加自定义域名。
 
-添加自定义域名时，将使用最具体且有效的证书来提供该域。 如果多个证书具有相同的域，则选择最近更新的证书。 Adobe建议您管理证书，这样就不会有重叠域。
+添加自定义域名时，将使用最具体且有效的证书来提供该域。 如果多个证书具有相同的域，则选择最近更新的证书。 Adobe建议您管理证书，这样就不会有重叠的域。
 
 本文档中描述的任一方法的步骤均基于Fastly。 如果您使用了其他CDN（内容分发网络），请使用已选择使用的CDN配置您的域。
 
-## 添加客户自定义域名 {#adding-cdn-settings}
+## 添加客户自定义域名 {#adding-custom-domain-name-settings}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -75,14 +75,14 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您使用自己的客户托管（OV/EV或DV） SSL证书，并打算使用客户托管的CDN ***提供程序***，则可以跳过添加SSL证书。 相反，请在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用自己的客户管理的（OV/EV或DV） SSL证书，则无需添加SSL证书。 如果您计划使用客户管理的CDN （内容交付网络） ***提供程序***，则此规则也适用。 相反，请在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
 
-### Adobe托管证书步骤 {#adobe-managed-cert-steps}
+### Adobe托管的证书步骤 {#adobe-managed-cert-steps}
 
 如果您选择了证书类型&#x200B;*Adobe托管证书*，请在&#x200B;**验证域**&#x200B;对话框中完成以下步骤。
 
-![托管证书步骤Adobe](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
+![Adobe托管证书步骤](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
 要验证正在使用的域，需要添加和验证CNAME。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对于Adobe管理的CDN，在使用DV（域验证）证书时，只允许使用ACME验证的站点。
+>对于由Adobe管理的CDN，在使用DV（域验证）证书时，只允许使用具有ACME验证的站点。
 
 #### 要求 {#adobe-managed-cert-dv-requirements}
 
@@ -200,4 +200,5 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 
