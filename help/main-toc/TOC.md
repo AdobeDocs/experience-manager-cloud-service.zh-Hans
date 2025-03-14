@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4b8e0700f325b43f9142608641a75f9870c7784
+source-git-commit: f4b079837dee960401a16073293969954cad3e77
 workflow-type: tm+mt
-source-wordcount: '6064'
+source-wordcount: '6065'
 ht-degree: 94%
 
 ---
@@ -697,16 +697,14 @@ ht-degree: 94%
       + [移除现有安装的外部依赖](/help/assets/remove-external-dependencies.md)
       + [为  [!DNL enhanced connector]  配置 [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
    + 与 Adobe Express 集成 {#integration-adobe-express}
       + [与 Adobe Express 的原生集成](/help/assets/native-integration-adobe-express.md)
-
    + 与 Creative Cloud 集成{#integration-creative-cloud}
       + [将 AEM Assets 连接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
-
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
+      + [简介](/help/forms/home2.md)
       + [顶级 Adobe Experience Manager Forms 创新](/help/forms/latest-innovations.md)
       + [Early Access (EA) 能力](/help/forms/early-access-ea-features.md)
       + [重要更改](/help/forms/notable-changes.md)
