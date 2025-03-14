@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 85%
+source-wordcount: '1493'
+ht-degree: 95%
 
 ---
 
@@ -52,15 +52,19 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 创建内容片段时，现在可以自动继承分配给内容模型的标记。这样可以对存储在内容片段中的内容进行强大的自动分类。
 
-**内容片段UUID支持**
+**内容片段 UUID 支持**
 
 内容片段 UUID 支持现在是 GA。新功能不会改变 AEM 中基于路径的运行行为，例如移动、重命名、转出，因为路径会自动调整，但它可以使内容片段的外部使用更容易、更稳定，尤其是在使用 GraphQL 查询时，该查询通过 ByPath 查询直接针对单个片段。如果片段路径发生变化，此类查询可能会中断。现在使用新的 ById 查询类型时，查询保持稳定，因为在路径发生变化的情况下片段的 UUID 不会改变。
 
-**内容片段编辑器和GraphQL中支持OpenAPI的Dynamic Media**
+**内容片段编辑器和 GraphQL 中支持具有 OpenAPI 功能的动态媒体**
 
 不是存储在内容片段中，而是存储在不同的 AEM as a Cloud Service 计划中，并且启用了具有 OpenAPI 功能的新动态媒体的资产，现在可以在内容片段中使用。新内容片段编辑器中的图像选择器现在允许选择“远程”存储库作为片段中引用的图像资产的来源。并且，在使用 AEM GraphQL 投放此类内容片段时，JSON 响应现在包含远程资产 (assetId、repositoryId) 所需的属性，这样客户端应用程序可以创建相应的具有 OpenAPI 功能的动态媒体 URL 来获取图像。
 
-**翻译HTTP API**
+**内容片段编辑器转出**
+
+我们将继续在AEM as a Cloud Service中启用新的基于频谱UI的内容片段编辑器。 2024年11月成为所有Cloud Service开发人员环境的默认值后，将于2025年4月1日将设置为所有暂存环境的默认值，并将于2025年5月1日设置为所有生产环境的默认值。 在所有情况下，用户仍可以选择在AEM触屏UI中还原到传统的内容片段编辑器。
+
+**翻译 HTTP API**
 
 AEM Translation HTTP REST API 有一段时间是早期采用者模式，现在是 GA。文档请参见[这里](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)。API 允许自动执行 AEM 中内容翻译管理流程中所需的步骤。
 
@@ -120,25 +124,25 @@ AEM Forms 文档生成 API 现在允许您[直接将生成的 PDF 文档上传](
 
 ### Java 21 支持 {#java21}
 
-如1月发行说明中所述，您现在可以使用Java 21构建代码，其中包括新增功能（例如，交换语句的模式匹配、密封类）和性能改进；此外，还新支持Java 17构建。 有关配置步骤（包括更新 Maven 项目和库版本），请参阅文章[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
+正如在一月份的发行说明中提到的，您现在可以使用 Java 21 构建代码，其中包括新功能（如切换语句的模式匹配、密封类）和性能改进。Java 17 版本也获得了新的支持。有关配置步骤（包括更新 Maven 项目和库版本），请参阅文章[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
 
 当检测到 Java 17 或 21 构建时，将自动部署性能更高的 Java 21 **运行时**。不过，我们也建议使用 Java 11 构建的环境选择 Java 21 运行时，具体方法是发送电子邮件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [ Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
-> 2月，将Java 21 **运行时**&#x200B;部署到开发/RDE环境（除了已使用Java 17或21构建的环境，这些环境已具有Java 21运行时）。 Java 21将于4月应用于暂存/生产环境。
+> 2 月份，Java 21 **运行时**&#x200B;被部署到 dev/RDE 环境（已使用 Java 17 或 21 构建的环境除外，这些环境已经有 Java 21 运行时）。Java 21 将于 4 月应用于暂存/生产环境。
 
 ### Edge 计算 - 请求反馈！ {#edge-computing-feedback}
 
-Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Adobe希望了解您是否发现这项技术对AEM Publish Delivery和Edge Delivery Services项目很有用。 此外，请告知我们您打算将它用作产品路线图的输入内容。
+Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Adobe 希望了解您是否认为这项技术对 AEM Publish Delivery 和 Edge Delivery Services 项目有用。此外，请告诉我们您设想将其用于哪些用途，以便为产品路线图提供意见。
 
 一些可能的用例：
-* 使用IdP进行身份验证以授予对内容的访问权限
+* 使用 IdP 进行身份验证以控制内容访问权限
 * 根据地理位置、设备类型、用户属性等呈现动态（个性化、本地化）内容。
 * 高级图像操作
-* CDN和源之间的中间件
-* 浏览器和第三方API之间的层，可能会重新设置API响应的格式
-* 聚合来自多个源的数据，使客户端浏览器更容易呈现
+* CDN 和来源之间的中间件
+* 浏览器和第三方 API 之间的一层，可能用于重新格式化 API 响应
+* 聚合多个来源的数据，使客户端浏览器更容易呈现它
 
 请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，欢迎提问并发表评论！
 
