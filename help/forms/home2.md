@@ -6,10 +6,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: a9eed5b6219163e721d81c9d77a31604666a2ac5
+source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 11%
+source-wordcount: '1059'
+ht-degree: 5%
 
 ---
 
@@ -25,534 +25,299 @@ ht-degree: 11%
   </ul>
 </div>
 
-<div class="aem-forms-hero">
-  <h2>AEM Forms as a Cloud Service</h2>
-  <p>Adobe的云原生解决方案，用于创建、管理和提供智能表单、自动化工作流和个性化的客户通信。</p>
-</div>
+## 什么是AEM Forms as a Cloud Service？
 
-<div class="solutions-grid">
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>自适应表单</h3>
-    <p>为最终用户的数字注册流程提供无缝表单填写体验</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>工作流</h3>
-    <p>使用可配置工作流（如路由数据）自动化特定于业务的流程</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>客户通信</h3>
-    <p>通过持续的个性化出站通信提高客户忠诚度</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>Headless Forms</h3>
-    <p>跨渠道无缝地进行注册和注册</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">✍️</div>
-    <h3>Acrobat Sign集成</h3>
-    <p>捕获跨设备具有法律约束力且全球安全的电子签名</p>
-  </div>
-  <div class="solution-card">
-    <div class="solution-icon">??</div>
-    <h3>自动化表单转换</h3>
-    <p>将基于PDF的旧版表单转换为可轻松在线管理和分发的自适应Forms</p>
-  </div>
+AEM Forms as a Cloud Service是Adobe的云原生解决方案，用于创建、管理和交付数字表单和通信。 它使组织能够在整个客户历程中将复杂的交易转换为简单的数字体验。
 
-</div>
-
-## 特性和功能 {#features}
-
-<div class="features-section">
-  <h3>表单创建和创作 {#form-creation}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>自适应表单</h4>
-      <p>创建和管理交互式、动态、响应式、便于移动使用且由数据驱动的表单：</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html">创建自适应表单</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">设置自适应表单的样式</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hans">将自适应表单添加到AEM Sites页面</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">使用现成的主题和模板</a></li>
-      </ul>
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>自适应表单</h3>
     </div>
-
-<div class="feature-item">
-      <h4>Headless自适应Forms</h4>
-      <p>在任何网站、应用程序或非可视化交互中构建并以本机方式呈现表单：</p>
+    <div class="card-body">
+      <p>创建适应用户输入和设备类型的响应式动态表单：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html">Headless自适应Forms简介</a></li>
-        <li>使用首选编程语言（例如React）构建表单</li>
-        <li>将表单本机集成到桌面和移动设备应用程序、网站和聊天应用程序中</li>
-        <li>对表单应用程序重用您的专有UI组件</li>
-        <li>以前端灵活性利用Adobe Experience Manager Forms的强大功能</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">创建自适应Forms</a> — 生成可自动调整到不同屏幕大小和用户输入的表单</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type">富组件库</a> — 使用各种输入字段和UI组件</li>
+        <li><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components">样式自适应Forms</a> — 将一致的品牌和视觉设计应用于表单</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">使用预建主题和模板</a> — 使用现成的组件加快开发</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components">表单验证</a> — 实施客户端和服务器端验证规则</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html">提交操作</a> — 配置用户提交表单时发生的情况</li>
+        <li><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/generate-document-of-record-core-components">记录文档</a> — 创建已提交表单数据的永久记录</li>
+        <li><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page">将Forms添加到AEM Sites页面</a> — 将表单无缝集成到您的网站</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page">将Forms添加到第三方网站页面</a> — 将表单无缝集成到您的网站</li>
       </ul>
     </div>
   </div>
 
-<div class="feature-category">
-    <div class="feature-item">
-      <h4>适用于Forms的Edge Delivery Services</h4>
-      <p>创建并提供具有卓越用户体验的高性能表单：</p>
-      <ul>
-        <li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">使用通用编辑器进行WYSIWYG创作</a> — 用于生成表单的强大可视化界面</li>
-        <li><a href="/help/edge/docs/forms/create-forms.md">基于文档的创作</a> — 使用熟悉的工具(如Microsoft Excel和Google Sheets)创建表单</li>
-        <li>用于创建复杂表单逻辑的高级规则编辑器</li>
-        <li>通过优化的表单加载获得近乎完美的Google Lighthouse分数</li>
-        <li>以最少的开发时间更快地部署表单</li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>适用于Forms的Edge Delivery Services</h3>
     </div>
-
-<div class="feature-item">
-      <h4>自动化表单转换服务</h4>
-      <p>将基于PDF的旧表单转换为自适应Forms：</p>
+    <div class="card-body">
+      <p>使用Edge Delivery Services创建和提交表单：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">配置自动化表单转换服务</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-hans">将PDF forms转换为自适应Forms</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Forms概述</a> — 了解Edge Delivery Services的表单</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">适用于Forms的通用编辑器</a> — 使用WYSIWYG通用编辑器创建表单</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">基于文档的创作</a> — 使用Microsoft Word或Google Docs创建表单</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">为Edge Delivery Forms设置样式</a> — 为表单应用自定义样式</li>
       </ul>
     </div>
   </div>
 
-
-<h3>文档处理和通信 {#document-processing}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>通信 API</h4>
-      <p>自动创建、管理和交付个性化通信：</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation">生成个性化通信</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation">组合或分解PDF文档</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">创建符合PDF/A标准的文档</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">使用DocAssurance API保护文档</a></li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>Headless Forms</h3>
     </div>
-
-<div class="feature-item">
-      <h4>记录文档</h4>
-      <p>创建和管理已提交表单的记录以供存档和遵守：</p>
+    <div class="card-body">
+      <p>跨任何渠道或前端框架交付表单体验：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html">创建表单记录以进行长期存档</a></li>
-        <li>自定义功能的服务器端可扩展性</li>
-        <li>用于防篡改归档的记录文档功能</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html">Headless Forms简介</a> — 了解Headless表单方法</li>
+        <li>使用React或其他前端框架构建表单</li>
+        <li>将表单集成到移动应用程序、网站和聊天应用程序中</li>
+        <li>将现有UI组件用于表单功能</li>
+        <li>维护后端表单逻辑，同时具有前端灵活性</li>
       </ul>
     </div>
   </div>
 
-<h3>工作流和流程自动化 {#workflow}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>表单工作流程</h4>
-      <p>自动化涉及表单和文档服务的业务流程：</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">发送表单或文档以供审阅</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">创建审批拒绝工作流</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br">将数据提交到数据存储或工作流</a></li>
-      </ul>
+<div class="card">
+    <div class="card-header">
+      <h3>通信API</h3>
     </div>
-
-<div class="feature-item">
-      <h4>电子签名</h4>
-      <p>与Adobe Sign集成以获取电子签名：</p>
+    <div class="card-body">
+      <p>以编程方式生成、操作和保护文档：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=zh-Hans">使用Adobe Sign对自适应表单进行电子签名</a></li>
-        <li>将<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">记录文档</a>或<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">电子签名</a>步骤添加到业务工作流</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans#sign-document-step">使用Adobe Sign和AEM工作流对文档进行电子签名</a></li>
-      </ul>
-    </div>
-  </div>
-
-<h3>数据集成和分析 {#data-integration}</h3>
-  <div class="feature-category">
-    <div class="feature-item">
-      <h4>表单分析</h4>
-      <p>使用Adobe Analytics获得有关用户行为的宝贵见解：</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=zh-Hans">为自适应表单启用Adobe Analytics</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html">将AEM Forms与Adobe Analytics集成（手动方法）</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html">查看并了解自适应Forms分析报表</a></li>
-      </ul>
-    </div>
-
-<div class="feature-item">
-      <h4>Adobe集成</h4>
-      <p>将表单与其他Adobe解决方案连接起来：</p>
-      <ul>
-        <li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">连接到Adobe Workfront Fusion</a>并将数据提交到Workfront方案</li>
-        <li><a href="/help/forms/integrate-form-to-marketo-engage.md">连接到Adobe Marketo Engage</a>并<a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">将数据提交到Marketo</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation">生成个性化通信</a> — 基于模板和数据创建自定义文档</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation">汇编和处理PDF</a> — 合并、拆分和修改PDF文档</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">创建PDF/A文档</a> — 生成存档质量文档</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#flatten-interactive-pdf-documents">拼合交互式PDF</a> — 将交互字段转换为非交互元素</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#signature-apis">应用签名</a> — 具有签名的安全文档</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#encryption-apis">加密和解密PDF</a> — 保护敏感文档内容</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">将XDP转换为PostScript</a> — 将XDP文档转换为PostScript格式</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">将XDP转换为PCL</a> — 将XDP文档转换为打印机命令语言</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#create-PS-PCL-ZPL-documents">将XDP转换为ZPL</a> — 将XDP文档转换为Zebra打印语言</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-to-and-validate-pdfa-compliant-documents">将PDF转换为PDF/A标准</a> — 创建符合存档要求的PDF文档</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#convert-pdf-documents-to-pdf-x-standards">添加数字签名</a> — 对文档进行数字签名以进行身份验证</li>
       </ul>
     </div>
   </div>
 
-<div class="feature-category">
-    <div class="feature-item">
+<div class="card">
+    <div class="card-header">
+      <h3>工作流自动化</h3>
+    </div>
+    <div class="card-body">
+      <p>自动化涉及表单和文档的业务流程：</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step">创建业务流程</a> — 发送表单以供审批或反馈、提交后工作流或后端工作流来管理注册流程</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#sign-document-step">在AEM工作流中使用Adobe Sign</a> — 发送文档以供签名 </li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#generate-document-of-record-step">生成记录文档</a> — 按需生成或在提交表单时生成</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>电子签名</h3>
+    </div>
+    <div class="card-body">
+      <p>在表格和文档中添加具有法律约束力的电子签名：</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Adobe Sign集成</a> — 在自适应Forms中启用电子签名</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">向工作流添加电子签名</a> — 在业务流程中包含签名步骤</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">带签名的记录文档</a> — 生成表单提交的签名记录</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>Analytics和Insights</h3>
+    </div>
+    <div class="card-body">
+      <p>深入了解表单使用情况和性能：</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=zh-Hans">启用Adobe Analytics</a> — 跟踪表单使用情况和性能</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html">手动Analytics集成</a> — 设置分析以进行详细跟踪</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/view-understand-aem-forms-analytics-reports.html">查看Analytics报表</a> — 分析表单性能和用户行为</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header">
+      <h3>数据集成</h3>
+    </div>
+    <div class="card-body">
+      <p>将表单连接到现有数据源和系统：</p>
+      <h4>Adobe生态系统</h4>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign">Adobe Sign</a> — 通过Adobe Sign发送电子签名</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage">Marketo Engage</a> — 将表单与Adobe Marketo Engage集成</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#invoke-an-aem-workflow">AEM工作流</a> — 通过提交表单触发AEM工作流</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#workfront-fusion">Workfront</a> — 将自适应表单提交到Adobe Workfront Fusion</li>
+      </ul>
       <h4>Microsoft集成</h4>
-      <p>将表单与Microsoft服务连接起来：</p>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hans">连接到Microsoft® Dynamics 365</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hans">连接到Microsoft®Azure Blob Storage</a>并<a href="/help/forms/configure-submit-action-azure-blob-storage.md">将数据提交到Azure Blob Storage</a></li>
-        <li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">连接到Microsoft® SharePoint文档库</a>并<a href="/help/forms/configure-submit-action-sharepoint.md">将数据提交到SharePoint</a></li>
-        <li><a href="/help/forms/configure-submit-action-onedrive.md">连接到Microsoft® OneDrive</a>并将数据提交到OneDrive</li>
-        <li><a href="/help/forms/forms-microsoft-power-automate-integration.md">连接到Microsoft®Power Automate</a>并在表单提交时触发流程</li>
-        <li><a href="/help/forms/ms-dynamics-odata-configuration.md">连接到Microsoft® Dynamics OData</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics">Microsoft Dynamics 365</a> — 与Microsoft的CRM集成</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hans">Azure Blob存储</a> — 将表单数据存储在Microsoft的云存储中</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/connect-to-sharepoint/connect-forms-to-sharepoint-document-library">SharePoint文档库</a> — 连接到Microsoft SharePoint文档库</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#connect-af-sharepoint-list">SharePoint列表</a> — 连接到Microsoft SharePoint列表</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#submit-to-onedrive">OneDrive</a> — 连接到Microsoft OneDrive</li>
+        <li><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/services/forms-microsoft-power-automate-integration">Microsoft Power Automate</a> — 触发Microsoft Power Automate流程</li>
       </ul>
-    </div>
-
-<div class="feature-item">
-      <h4>其他数据源</h4>
-      <p>连接到其他数据源和端点：</p>
+      <h4>其他数据源和服务</h4>
       <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hans">连接到RDBMS或Rest端点</a></li>
-        <li><a href="/help/forms/aem-forms-salesforce-integration.md">连接到Salesforce</a>并将数据提交到Salesforce</li>
-        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">提交到 REST 端点</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration">Salesforce</a> — 与Salesforce CRM集成</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">RESTful服务</a> — 连接到任何REST API终结点</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hans">RDBMS数据库</a> — 连接到关系数据库</li>
+        <li><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#send-email">电子邮件</a> — 通过电子邮件发送表单数据</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/introduction-to-forms-portal/save-core-component-based-form-as-draft">Forms门户</a> — 提交到Forms门户以保存草稿</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#send-pdf-via-email">通过电子邮件发送PDF</a> — 通过电子邮件发送已提交表单的PDF版本</li>
+        <li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-using-form-data-model">使用表单数据模型提交</a> — 使用表单数据模型提交数据</li>
       </ul>
     </div>
   </div>
 </div>
 
+## AEM Forms as a Cloud Service快速入门
 
-<!-- 
-## Start Quickly with AEM Forms {#quick-start}
-
-<div class="quick-start-grid">
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/create-form-icon.svg" alt="Create Form Icon">
+<div class="card-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>适用于企业用户</h3>
     </div>
-    <h3>Create your first form</h3>
-    <p>Build an adaptive form in minutes using our step-by-step guide</p>
-    <a href="/help/forms/creating-adaptive-form-core-components.md" class="quick-start-link">Get Started</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/templates-icon.svg" alt="Templates Icon">
+    <div class="card-body">
+      <ol>
+        <li><strong>了解基础知识</strong>：了解<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/introduction-forms-authoring.html">自适应Forms</a>以及它们如何帮助您将业务流程数字化。</li>
+        <li><strong>浏览模板</strong>：浏览<a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html">预建模板和主题</a>以抢滩您的表单项目。</li>
+        <li><strong>了解表单创作</strong>：按照<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html">表单创作指南</a>创建您的第一个表单。</li>
+      </ol>
     </div>
-    <h3>Explore ready-to-use templates</h3>
-    <p>Browse our library of pre-built templates and themes to accelerate development</p>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html" class="quick-start-link">View Templates</a>
   </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/setup-icon.svg" alt="Setup Icon">
+
+<div class="card">
+    <div class="card-header">
+      <h3>面向开发人员</h3>
     </div>
-    <h3>Set up your environment</h3>
-    <p>Configure your local or cloud environment for AEM Forms development</p>
-    <a href="/help/forms/setup-local-development-environment.md" class="quick-start-link">Configure Now</a>
-  </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/data-icon.svg" alt="Data Icon">
+    <div class="card-body">
+      <ol>
+        <li><strong>设置环境</strong>：为AEM Forms配置<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html">本地开发环境</a>。</li>
+        <li><strong>学习架构</strong>：了解AEM Forms as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">架构</a>。</li>
+        <li><strong>浏览API</strong>：熟悉用于扩展和集成Forms的<a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/">可用API </a>和SDK。</li>
+      </ol>
     </div>
-    <h3>Connect to data sources</h3>
-    <p>Learn how to integrate forms with your existing data systems</p>
-    <a href="/help/forms/create-form-data-models.md" class="quick-start-link">Connect Data</a>
   </div>
-  
-  <div class="quick-start-card">
-    <div class="quick-start-icon">
-      <img src="assets/migrate-icon.svg" alt="Migrate Icon">
+
+<div class="card">
+    <div class="card-header">
+      <h3>适用于管理员</h3>
     </div>
-    <h3>Migrate from AEM 6.5</h3>
-    <p>Follow our comprehensive guide to move from AEM 6.5 Forms to Cloud Service</p>
-    <a href="/help/forms/migrate-to-forms-as-a-cloud-service.md" class="quick-start-link">Migrate Now</a>
+    <div class="card-body">
+      <ol>
+        <li><strong>加入Cloud Service</strong>：按照<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html">加入指南</a>来设置AEM Forms as a Cloud Service。</li>
+        <li><strong>配置服务</strong>：设置<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=zh-Hans">与其他Adobe服务</a>(如Adobe Analytics)的集成。</li>
+        <li><strong>从AEM 6.5迁移</strong>：如果您来自AEM 6.5，请按照<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/migrate-to-forms-as-a-cloud-service.html">迁移指南</a>迁移到Cloud Service。</li>
+      </ol>
+    </div>
   </div>
-</div> 
-
--->
-
-## 早期采用者功能 {#early-adopter-features}
-
-<div class="early-adopter-section">
-  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms抢先体验计划</a>提供对尖端功能的独家访问，这些功能在正式推出之前即可使用，包括：</p>
-
-<ul class="early-adopter-list">
-    <li><strong>AEM Forms AI Assistant (Gen AI)</strong> — 使用AI支持的建议更快地创建表单</li>
-    <li><strong>AEM Forms Workfront Fusion Connector</strong> — 自动执行由表单提交触发的工作流</li>
-    <li><strong>对话式Forms</strong> — 在任何AEM Sites页面上创建聊天式表单体验</li>
-    <li><strong>适用于Edge Delivery的WYSIWYG创作</strong> — 使用Edge Delivery Services的通用编辑器生成表单</li>
-    <li><strong>AEM Forms到Marketo Connector</strong> — 将表单提交与Marketo Engage集成</li>
-  </ul>
-
-<p>有关早期访问创新的完整列表和详细文档，请访问<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期访问计划页面</a>。</p>
 </div>
 
-## 准备好转变您的数字体验了吗？ {#get-started}
+## 早期采用者功能
 
-<div class="get-started-section">
-  <p>立即开始创建引人入胜、响应迅速且智能的表单！</p>
-  <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" class="get-started-button">加入AEM Forms as a Cloud Service</a>
+<div class="card">
+  <div class="card-header">
+    <h3>AEM Forms抢先体验计划</h3>
+  </div>
+  <div class="card-body">
+    <p><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms抢先体验计划</a>提供对尖端功能的独家访问，这些功能在正式推出之前即可使用，包括：</p>
+    <ul>
+      <li><strong>AEM Forms AI Assistant (Gen AI)</strong> — 使用AI支持的建议更快地创建表单</li>
+      <li><strong>AEM Forms Workfront Fusion Connector</strong> — 自动执行由表单提交触发的工作流</li>
+      <li><strong>对话式Forms</strong> — 在任何AEM Sites页面上创建聊天式表单体验</li>
+      <li><strong>适用于Edge Delivery的WYSIWYG创作</strong> — 使用Edge Delivery Services的通用编辑器生成表单</li>
+      <li><strong>AEM Forms到Marketo Connector</strong> — 将表单提交与Marketo Engage集成</li>
+    </ul>
+    <p>有关早期访问创新的完整列表和详细文档，请访问<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期访问计划页面</a>。</p>
+  </div>
+</div>
+
+<div class="cta-card">
+  <h3>准备好开始了吗？</h3>
+  <p><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">立即加入AEM Forms as a Cloud Service</a>，并转变贵组织的数字表单体验。</p>
 </div>
 
 <style>
-/* Overall styling */
-body {
-  font-family: 'Adobe Clean', Arial, sans-serif;
-  line-height: 1.6;
-  color: #2c2c2c;
-}
-
-h2, h3, h4 {
-  font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.8em;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 0.5em;
-}
-
-h3 {
-  font-size: 1.4em;
-  color: #2c2c2c;
-}
-
-h4 {
-  font-size: 1.2em;
-  color: #2c2c2c;
-}
-
-a {
-  color: #1473E6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  padding-left: 1.5em;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-/* Hero section */
-.aem-forms-hero {
-  background-color: #f5f5f5;
-  padding: 2em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-  text-align: center;
-}
-
-.aem-forms-hero h2 {
-  font-size: 2em;
-  margin-top: 0;
-  border-bottom: none;
-  color: #2c2c2c;
-}
-
-.aem-forms-hero p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Solutions grid */
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.solution-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.solution-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.solution-icon {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-.solution-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.solution-card p {
-  margin-bottom: 0;
-  font-size: 0.95em;
-}
-
-/* Features section */
-.features-section {
+.card-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 30px;
 }
 
-.feature-category {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-  margin-bottom: 2em;
-}
-
-.feature-item {
-  background-color: #ffffff;
+.card {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 300px;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  padding: 1.5em;
-}
-
-.feature-item h4 {
-  margin-top: 0;
-  color: #2c2c2c;
-}
-
-.feature-item ul {
-  margin-bottom: 0;
-}
-
-/* Quick start grid */
-.quick-start-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5em;
-  margin: 2em 0;
-}
-
-.quick-start-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  padding: 1.5em;
-  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.quick-start-card:hover {
+.card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.quick-start-icon {
-  margin-bottom: 1em;
-}
-
-.quick-start-icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.quick-start-card h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.quick-start-link {
-  display: inline-block;
-  margin-top: 1em;
-  font-weight: 600;
-}
-
-/* Early adopter section */
-.early-adopter-section {
+.card-header {
   background-color: #f5f5f5;
-  padding: 1.5em;
-  border-radius: 8px;
-  margin: 2em 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.early-adopter-list {
-  margin-bottom: 0;
+.card-header h3 {
+  margin: 0;
+  color: #2c2c2c;
+  font-size: 1.25rem;
 }
 
-/* Get started section */
-.get-started-section {
-  text-align: center;
-  margin: 3em 0 1em;
+.card-body {
+  padding: 20px;
+  background-color: #ffffff;
 }
 
-.get-started-section p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
+.card-body ul, .card-body ol {
+  margin-top: 10px;
+  padding-left: 25px;
 }
 
-.get-started-button {
-  display: inline-block;
-  background-color: #1473E6;
-  color: white;
-  padding: 0.8em 1.5em;
+.card-body li {
+  margin-bottom: 8px;
+}
+
+.cta-card {
+  background-color: #f0f7ff;
+  border-left: 4px solid #1473e6;
+  padding: 20px;
+  margin: 30px 0;
   border-radius: 4px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
-.get-started-button:hover {
-  background-color: #0d66d0;
-  text-decoration: none;
-}
-
-/* Version selector */
-.version-selector {
-  background-color: #f5f5f5;
-  padding: 1em;
-  border-radius: 8px;
-  margin-bottom: 2em;
-}
-
-.version-selector p {
+.cta-card h3 {
   margin-top: 0;
-  font-weight: 600;
+  color: #1473e6;
 }
 
-.version-selector ul {
-  margin-bottom: 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .feature-category {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.cta-card a {
+  font-weight: bold;
+  color: #1473e6;
 }
 
 @media (max-width: 768px) {
-  .feature-category {
-    grid-template-columns: 1fr;
-  }
-  
-  .solutions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .card {
+    flex: 1 1 100%;
   }
 }
-
-@media (max-width: 480px) {
-  .solutions-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .quick-start-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 </style>
