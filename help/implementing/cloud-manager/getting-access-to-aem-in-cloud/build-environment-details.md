@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
+source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 30%
+source-wordcount: '1569'
+ht-degree: 28%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 >[!NOTE]
 >
->虽然 Cloud Manager 未定义 `jacoco-maven-plugin` 的具体版本，但使用的版本必须至少为 `0.7.5.201505241946`。
+>Cloud Manager未指定`jacoco-maven-plugin`的特定版本，但所需版本取决于项目的Java版本。 对于Java 8，插件版本必须至少为`0.7.5.201505241946`，而较新的Java版本可能需要较新的版本。
 
 ## HTTPS Maven 存储库 {#https-maven}
 
@@ -88,11 +88,11 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 将应用程序迁移到新的Java内部版本和运行时版本时，请先在开发和暂存环境中进行全面测试，然后再部署到生产环境。
 
-我们建议使用以下部署策略：
+Adobe建议采用以下部署策略：
 
 1. 使用Java 21运行本地SDK(可从https://experience.adobe.com/#/downloads下载)，然后将应用程序部署到其中并验证其功能。 检查日志中是否存在错误，这些错误表示类加载或字节码编织有问题。
-1. 在Cloud Manager存储库中配置分支以将Java 21用作构建时Java版本，配置开发管道以使用此分支并运行管道。 运行验证测试。
-1. 如果一切正常，请将stage/prod管道配置为使用Java 21作为buildtime Java版本，然后运行该管道。
+1. 在Cloud Manager存储库中配置分支以使用Java 21作为构建时Java版本，配置开发管道以使用此分支并运行管道。 运行验证测试。
+1. 如果一切正常，请将stage/prod管道配置为使用Java 21作为构建时Java版本，然后运行该管道。
 
 ##### 关于某些翻译功能 {#translation-features}
 
@@ -118,7 +118,7 @@ Java 21运行时用于具有Java 21和Java 17的内部版本，并将逐步应�
 * **Aries SPIFly的最低版本：**
 将Java包`org.apache.aries.spifly.dynamic.bundle`的使用更新到版本1.3.6或更高版本，以确保支持更新的JVM运行时。
 
-AEM Cloud Service SDK与Java 21兼容，可用于在执行Cloud Manager管道之前验证项目与Java 21的兼容性。
+AEM Cloud Service SDK支持Java 21，并允许您在运行Cloud Manager管道之前验证项目与Java 21的兼容性。
 
 * **编辑运行时参数：**
 使用Java 21在本地运行AEM时，由于`MaxPermSize`参数，启动脚本（`crx-quickstart/bin/start`或`crx-quickstart/bin/start.bat`）失败。 作为补救措施，请从脚本中删除`-XX:MaxPermSize=256M`或定义环境变量`CQ_JVM_OPTS`，并将其设置为`-Xmx1024m -Djava.awt.headless=true`。
@@ -127,7 +127,7 @@ AEM Cloud Service SDK与Java 21兼容，可用于在执行Cloud Manager管道之
 
 >[!IMPORTANT]
 >
->当`.cloudmanager/java-version`设置为`21`或`17`时，将部署Java 21运行时。 Java 21运行时计划从2025年2月4日星期二开始逐步推出到所有环境（不仅仅是使用Java 11构建代码的那些环境）。 开始使用沙盒和开发环境，然后在2025年4月推出到所有生产环境。 希望采用Java 21运行时&#x200B;*提前*&#x200B;的客户可通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
+>当`.cloudmanager/java-version`设置为`21`或`17`时，将部署Java 21运行时。 Java 21运行时计划从2025年2月4日星期二开始逐步推出到所有环境（不仅仅是使用Java 11构建代码的那些环境）。 首先推出沙盒和开发环境，然后在2025年4月推出所有生产环境。 希望采用Java 21运行时&#x200B;*提前*&#x200B;的客户可通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
 
 
 #### 构建时间要求 {#build-time-reqs}
