@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: 2c41fae87821a28af1fd00701780e9fc52b5577d
+source-git-commit: 4b4bc6f754c6336136d409cf49617c7fafd4f4c3
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 11%
@@ -39,12 +39,12 @@ AEM Forms as a Cloud Service是Adobe的云原生解决方案，用于创建、�
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为中心的解决方案，可帮助完成客户历程的每一步：
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>自适应表单</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>创建适应用户输入和设备类型的响应式动态表单：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">创建自适应Forms</a> — 生成可自动调整到不同屏幕大小和用户输入的表单</li>
@@ -60,11 +60,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>通信API</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>以编程方式生成、操作和保护文档：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation">生成个性化通信</a> — 基于模板和数据创建自定义文档</li>
@@ -81,11 +81,26 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
+      <h3>适用于Forms的Edge Delivery Services</h3>
+    </div>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <p>使用Edge Delivery Services创建和提交表单：</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Forms概述</a> — 了解Edge Delivery Services的表单</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">适用于Forms的通用编辑器</a> — 使用WYSIWYG通用编辑器创建表单</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">基于文档的创作</a> — 使用Microsoft Word或Google Docs创建表单</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">为Edge Delivery Forms设置样式</a> — 为表单应用自定义样式</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Headless Forms</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>跨任何渠道或前端框架交付表单体验：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview">Headless Forms简介</a> — 了解Headless表单方法</li>
@@ -97,26 +112,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
-      <h3>适用于Forms的Edge Delivery Services</h3>
-    </div>
-    <div class="card-body">
-      <p>使用Edge Delivery Services创建和提交表单：</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Edge Delivery Forms概述</a> — 了解Edge Delivery Services的表单</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">适用于Forms的通用编辑器</a> — 使用WYSIWYG通用编辑器创建表单</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">基于文档的创作</a> — 使用Microsoft Word或Google Docs创建表单</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">为Edge Delivery Forms设置样式</a> — 为表单应用自定义样式</li>
-      </ul>
-    </div>
-  </div>
-
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>工作流自动化</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>自动化涉及表单和文档的业务流程：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step">创建业务流程</a> — 发送表单以供审批或反馈、提交后工作流或后端工作流来管理注册流程</li>
@@ -126,11 +126,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>电子签名</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>在表格和文档中添加具有法律约束力的电子签名：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Adobe Sign集成</a> — 在自适应Forms中启用电子签名</li>
@@ -140,11 +140,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Analytics和Insights</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>深入了解表单使用情况和性能：</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">启用Adobe Analytics</a> — 跟踪表单使用情况和性能</li>
@@ -154,11 +154,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>数据集成</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>将表单连接到现有数据源和系统：</p>
       <h4>Adobe生态系统</h4>
       <ul>
@@ -192,42 +192,42 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 
 ## AEM Forms as a Cloud Service快速入门
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>适用于企业用户</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>了解基础知识</strong>：了解<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">自适应Forms</a>以及它们如何帮助您将业务流程数字化。</li>
-        <li><strong>浏览模板</strong>：浏览<a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components">预建模板和主题</a>以抢滩您的表单项目。</li>
-        <li><strong>了解表单创作</strong>：按照<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring">表单创作指南</a>创建您的第一个表单。</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>了解基础知识</strong>：了解<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">自适应Forms</a>以及它们如何帮助您将业务流程数字化。</li>
+        <li style="margin-bottom: 8px;"><strong>浏览模板</strong>：浏览<a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components">预建模板和主题</a>以抢滩您的表单项目。</li>
+        <li style="margin-bottom: 8px;"><strong>了解表单创作</strong>：按照<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring">表单创作指南</a>创建您的第一个表单。</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>面向开发人员</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>设置环境</strong>：为AEM Forms配置<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">本地开发环境</a>。</li>
-        <li><strong>学习架构</strong>：了解AEM Forms as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">架构</a>。</li>
-        <li><strong>浏览API</strong>：熟悉<a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/">可用于扩展和集成Forms的API </a>和SDK。</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>设置环境</strong>：为AEM Forms配置<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">本地开发环境</a>。</li>
+        <li style="margin-bottom: 8px;"><strong>学习架构</strong>：了解AEM Forms as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">架构</a>。</li>
+        <li style="margin-bottom: 8px;"><strong>浏览API</strong>：熟悉<a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/">可用于扩展和集成Forms的API </a>和SDK。</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>适用于管理员</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>加入Cloud Service</strong>：按照<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">加入指南</a>来设置AEM Forms as a Cloud Service。</li>
-        <li><strong>配置服务</strong>：设置<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">与其他Adobe服务</a>(如Adobe Analytics)的集成。</li>
-        <li><strong>从AEM 6.5迁移</strong>：如果您来自AEM 6.5，请按照<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html">迁移指南</a>迁移到Cloud Service。</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>加入Cloud Service</strong>：按照<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">加入指南</a>来设置AEM Forms as a Cloud Service。</li>
+        <li style="margin-bottom: 8px;"><strong>配置服务</strong>：设置<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">与其他Adobe服务</a>(如Adobe Analytics)的集成。</li>
+        <li style="margin-bottom: 8px;"><strong>从AEM 6.5迁移</strong>：如果您来自AEM 6.5，请按照<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html">迁移指南</a>迁移到Cloud Service。</li>
       </ol>
     </div>
   </div>
@@ -235,98 +235,24 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 
 ## 早期采用者功能
 
-<div class="card">
-  <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; margin-bottom: 30px;">
+  <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
     <h3>AEM Forms抢先体验计划</h3>
   </div>
-  <div class="card-body">
+  <div class="card-body" style="padding: 20px; background-color: #ffffff;">
     <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms抢先体验计划</a>提供对尖端功能的独家访问，这些功能在正式推出之前即可使用，包括：</p>
-    <ul>
-      <li><strong>AEM Forms AI Assistant (Gen AI)</strong> — 使用AI支持的建议更快地创建表单</li>
-      <li><strong>AEM Forms Workfront Fusion Connector</strong> — 自动执行由表单提交触发的工作流</li>
-      <li><strong>对话式Forms</strong> — 在任何AEM Sites页面上创建聊天式表单体验</li>
-      <li><strong>适用于Edge Delivery的WYSIWYG创作</strong> — 使用Edge Delivery Services的通用编辑器生成表单</li>
-      <li><strong>AEM Forms到Marketo Connector</strong> — 将表单提交与Marketo Engage集成</li>
+    <ul style="margin-top: 10px; padding-left: 25px;">
+      <li style="margin-bottom: 8px;"><strong>AEM Forms AI Assistant (Gen AI)</strong> — 使用AI支持的建议更快地创建表单</li>
+      <li style="margin-bottom: 8px;"><strong>AEM Forms Workfront Fusion Connector</strong> — 自动执行由表单提交触发的工作流</li>
+      <li style="margin-bottom: 8px;"><strong>对话式Forms</strong> — 在任何AEM Sites页面上创建聊天式表单体验</li>
+      <li style="margin-bottom: 8px;"><strong>适用于Edge Delivery的WYSIWYG创作</strong> — 使用Edge Delivery Services的通用编辑器生成表单</li>
+      <li style="margin-bottom: 8px;"><strong>AEM Forms到Marketo Connector</strong> — 将表单提交与Marketo Engage集成</li>
     </ul>
     <p>有关早期访问创新的完整列表和详细文档，请访问<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">AEM Forms早期访问计划页面</a>。</p>
   </div>
 </div>
 
-<div class="cta-card">
-  <h3>准备好开始了吗？</h3>
-  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">立即加入AEM Forms as a Cloud Service</a>，并转变贵组织的数字表单体验。</p>
+<div style="background-color: #f0f7ff; border-left: 4px solid #1473e6; padding: 20px; margin: 30px 0; border-radius: 4px;">
+  <h3 style="margin-top: 0; color: #1473e6;">准备好开始了吗？</h3>
+  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" style="font-weight: bold; color: #1473e6;">立即加入AEM Forms as a Cloud Service</a>，并转变贵组织的数字表单体验。</p>
 </div>
-
-<style>
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.card {
-  flex: 1 1 calc(50% - 20px);
-  min-width: 300px;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-header {
-  background-color: #f5f5f5;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.card-header h3 {
-  margin: 0;
-  color: #2c2c2c;
-  font-size: 1.25rem;
-}
-
-.card-body {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.card-body ul, .card-body ol {
-  margin-top: 10px;
-  padding-left: 25px;
-}
-
-.card-body li {
-  margin-bottom: 8px;
-}
-
-.cta-card {
-  background-color: #f0f7ff;
-  border-left: 4px solid #1473e6;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 4px;
-}
-
-.cta-card h3 {
-  margin-top: 0;
-  color: #1473e6;
-}
-
-.cta-card a {
-  font-weight: bold;
-  color: #1473e6;
-}
-
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%;
-  }
-}
-</style>
