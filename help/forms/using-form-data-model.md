@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 4%
@@ -165,7 +165,7 @@ Edit Properties dialog for an interactive communication-->
 
 您可以使用自定义函数](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)从规则编辑器[调用表单数据模型。 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
 
-1. 转到`https://server:host/system/console/configMgr`上的Experience ManagerWeb控制台。
+1. 转到位于`https://server:host/system/console/configMgr`的Experience Manager Web控制台。
 1. 找到&#x200B;**[!UICONTROL 用于服务调用的自适应表单级表单数据模型白名单 — 配置工厂]**。
 1. 单击![加号图标](/help/forms/assets/Smock_Add_18_N.svg)图标以添加配置。
 1. 添加&#x200B;**[!UICONTROL 内容路径模式]**&#x200B;以指定自适应Forms的位置。  默认情况下，该值是`/content/forms/af/(.*)`，其中包括所有自适应Forms。 您还可以指定特定自适应表单的路径。

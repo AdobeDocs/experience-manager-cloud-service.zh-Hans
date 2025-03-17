@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 49%
+source-wordcount: '1069'
+ht-degree: 48%
 
 ---
 
@@ -58,7 +58,13 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 
       ![创建EDS Forms](/help/edge/assets/create-eds-forms.png)
 
+
+      当您选择基于Edge Delivery Services的模板时，将启用&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
+   1. （可选）在&#x200B;**[!UICONTROL 数据Source]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中，您可以选择数据源或提交操作。
+   1. （可选）在&#x200B;**[!UICONTROL 交付]**&#x200B;选项卡中，您可以为自适应表单指定发布或取消发布日期。
+
    1. 单击&#x200B;**[!UICONTROL 创建]**，将出现&#x200B;**创建表单**&#x200B;向导。
+   1. 指定&#x200B;**名称**&#x200B;和&#x200B;**标题**。
    1. 指定 **GitHub URL**。例如，如果您的GitHub存储库名为`edsforms`，则它位于帐户`wkndforms`下，URL为：
       `https://github.com/wkndforms/edsforms`
    1. 单击&#x200B;**[!UICONTROL 创建]**。

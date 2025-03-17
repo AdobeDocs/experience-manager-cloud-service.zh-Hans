@@ -1,12 +1,12 @@
 ---
 title: 适用于 AEM Forms 的 Edge Delivery Services 快速入门：开发人员教程
-description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表单。
+description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。10到20分钟后，您将创建自己的表单。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1907'
 ht-degree: 97%
 
 ---
@@ -138,8 +138,6 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
       这会将您的内容文件夹连接到您的网站。更新参考后，您最初可能会遇到 “404 未找到”错误。这是因为您的内容尚未预览。下一部分将介绍如何开始创作和预览内容。
 
-
-
 ### 预览和发布内容
 
 完成最后一步后，您的新内容源不为空，但在升级到预览或实时阶段之前，它不会在您的网站上可见。目前，这可能会导致 404 错误。
@@ -260,49 +258,47 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 
 恭喜！您已成功设置本地开发环境并部署了更改。
 
+## 将 Adaptive Forms Block 添加到您现有的 AEM 项目
 
 <!--
-## Add Adaptive Forms Block to your existing AEM project
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
-
->[!VIDEO](https://video.tv.adobe.com/v/3427789)
-
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
+如果您有现有的 AEM 项目，则可以将 Adaptive Forms Block 集成到当前项目中以开始表单创建。
 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> 此步骤适用于使用 [AEM Boilerplate](https://github.com/adobe/aem-boilerplate) 构建的项目。如果您使用 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 创建 AEM 项目，则可以跳过此步骤。
 
-To Integrate:
+集成：
 
-1. **Add required files and folders**
-   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+1. **添加所需文件和文件夹**
+   1. 将下列文件夹和文件从 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 复制并粘贴到 AEM 项目中：
 
-      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+      * [Form Block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 文件夹
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 文件夹
+      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) 文件夹
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 文件
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 文件
 
-1. **Update component definitions and models files**
-    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
-    
-    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+1. **更新组件定义和模型文件**
+   1. 导航到 AEM 项目中的 `../models/_component-definition.json` 文件，并根据 AEM Forms Boilerplate 中 [_component-definition.json 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)的更改进行更新。
 
-1. **Add Form Editor in editor script**
-    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Update ESLint configuration file**
-    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        ```
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-        ```
+   1. 导航到 AEM 项目中的 `../models/_component-models.json` 文件，并根据 AEM Forms Boilerplate 中 [_component-models.json 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)的更改进行更新
 
-1. Commit and push these changes to your AEM Project repository on GitHub.
+1. **在编辑器脚本中添加表单编辑器**
+   1. 导航到 AEM 项目中的 `../scripts/editor-support.js` 文件，并根据 AEM Forms Boilerplate 中 [editor-support.js 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)的更改进行更新
+1. **更新 ESLint 配置文件**
+   1. 导航到 AEM 项目中的 `../.eslintignore` 文件，并添加以下代码行，以防止出现与 Form Block 规则引擎相关的错误：
 
-That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
--->
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. 提交这些更改并将其推送到 GitHub 上的 AEM 项目存储库。
+
+就是这样！Adaptive Forms Block 现在是您的 AEM 项目的一部分。您可以开始创建表单并将其添加到 AEM 页面。
 
 ## 解决 GitHub 构建问题
 

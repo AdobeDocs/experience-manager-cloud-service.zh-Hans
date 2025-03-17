@@ -4,9 +4,9 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1858'
 ht-degree: 96%
 
 ---
@@ -14,14 +14,19 @@ ht-degree: 96%
 
 # 使用编辑器完成适用于 AEM Forms 的 Edge Delivery Services 快速入门（所见即所得）
 
-<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将包含您的GitHub组织名称和存储库名称的电子邮件(从您的官方地址发送到<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> )。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| 基于通用编辑器的创作 | 本文 |
+| 基于文档的创作 | [单击此处](/help/edge/docs/forms/tutorial.md) |
 
+
+<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
 
 在当今的数字时代，用户友好的表单对于所有组织都至关重要。Edge Delivery Services Forms 是使用通用编辑器创建的，提供了所见即所得（WYSIWYG）功能。它为高效的表单制作提供了一个现代化的直观界面。
 
 AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery Services Forms，以捕获和存储数据。您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM 项目](#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github存储库工作流](/help/edge/assets/repo-workflow.png)
+![Github存储库工作流](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 本教程将指导您使用通用编辑器的所见即所得创作功能，在新的或现有的 Adobe Experience Manager Site 项目中创建、预览和发布自己的表单。
 
