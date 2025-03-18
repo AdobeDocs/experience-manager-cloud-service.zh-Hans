@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 34%
+source-wordcount: '1377'
+ht-degree: 29%
 
 ---
 
@@ -95,6 +95,23 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 您可以通过再次单击![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)并单击&#x200B;**[查看详细信息](#view-details)**&#x200B;来查看运行的详细信息。
 
 根据管道类型，您可以通过再次单击![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)并单击&#x200B;**取消**&#x200B;来取消运行。
+
+## 运行多个管道 {#run-multiple-pipelines}
+
+借助Cloud Manager，您可以同时运行多个管道，从而提高AEM as a Cloud Service客户的部署效率。 **运行选定项**&#x200B;功能允许您选择多个管道并触发它们同时运行。 它减少了不得不单独运行管道的手动工作量，并优化了构建和部署工作流。
+
+**要运行多个管道：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+1. 从左侧菜单中，单击![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
+1. 在&#x200B;**管道**页面上的表中，选中要运行的管道旁边的复选框。
+如有必要，请单击![筛选器图标、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **筛选器**&#x200B;以按名称、环境、已部署的代码类型或这三个的组合对管道进行排序。
+1. 在页面的右上角附近，单击&#x200B;**运行选定项(x)**。
+1. 在&#x200B;**运行所选管道(x)**&#x200B;对话框中，单击&#x200B;**运行(x)**。
+
+   **运行**&#x200B;按钮反映了可以继续的管道数。 例如，您可能选择了四条管道，但一条管道已在运行。 或者，链接到选定管道的环境不再存在。 在这种情况下，系统相应地进行调整。 按钮将更新为“运行(3)”，表示三条管道可以继续运行。
+
+1. 管道开始运行，其状态在&#x200B;**管道**&#x200B;列表中已更新。
 
 ## 编辑管道 {#editing-pipelines}
 
