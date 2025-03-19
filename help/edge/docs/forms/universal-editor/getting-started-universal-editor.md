@@ -1,5 +1,5 @@
 ---
-title: 通用编辑器中适用于 AEM Forms 的 Edge Delivery Services 快速入门：开发人员教程
+title: 通用编辑器中 Edge Delivery Services for AEM Forms 快速入门：开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。十到二十分钟后，您就可以在通用编辑器中创建自己的 Edge Delivery Services Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ ht-degree: 98%
 ---
 
 
-# 使用编辑器完成适用于 AEM Forms 的 Edge Delivery Services 快速入门（所见即所得）
+# 使用通用编辑器完成 Edge Delivery Services for AEM Forms 快速入门（所见即所得）
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -20,7 +20,7 @@ ht-degree: 98%
 | 基于文档的创作 | [单击此处](/help/edge/docs/forms/tutorial.md) |
 
 
-<span class="preview"> 此功能通过早期访问计划提供。要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库 URL 为 https://github.com/adobe/abc,，则组织名称为 adobe，存储库名称为 abc。</span>
+<span class="preview"> 此功能通过早期访问计划提供。要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
 
 在当今的数字时代，用户友好的表单对于所有组织都至关重要。Edge Delivery Services Forms 是使用通用编辑器创建的，提供了所见即所得（WYSIWYG）功能。它为高效的表单制作提供了一个现代化的直观界面。
 
@@ -31,7 +31,7 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 本教程将指导您使用通用编辑器的所见即所得创作功能，在新的或现有的 Adobe Experience Manager Site 项目中创建、预览和发布自己的表单。
 
 
-## 前提条件
+## 先决条件
 
 * 您有 GitHub 帐户，并且了解 Git 基础知识。
 * 您了解 HTML、CSS 和 JavaScript 的基础知识。
@@ -41,7 +41,7 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 
 AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adaptive Forms Block 的 AEM 项目。这是遵循 AEM 最佳实践并直接开始构建表单的最快、最简单的方法。
 
-### 开始使用 AEM Forms Boilerplate 存储库模板
+### 开始使用 AEM Forms 样板存储库模板
 
 1. 为您的 AEM 项目创建 GitHub 存储库。创建存储库：
    1. 转到[https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)。
@@ -104,11 +104,11 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
       > * 您可以从 [GitHub](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) 下载 Edge Delivery Services Site 模板 。
 
    1. 输入以下详细信息以创建新的 AEM 项目：
-      * **Site 标题** - 添加该 Site 的描述性标题。
-      * **Site 标题** - 使用在上一步定义的 `site-name`。
-      * **GitHub URL** - 使用在上一步创建的 GitHub 项目的 URL。
+      * **Site 标题**——添加该 Site 的描述性标题。
+      * **Site 标题**——使用在上一步定义的 `site-name`。
+      * **GitHub URL**——使用在上一步创建的 GitHub 项目的 URL。
 
-      ![创建 AEM Sites](/help/edge/docs/forms/assets/create-aem-site.png)
+      ![创建 AEM Site](/help/edge/docs/forms/assets/create-aem-site.png)
 
    1. 出现&#x200B;**创建 Site** 对话框，单击&#x200B;**好的**。
 
@@ -119,7 +119,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    1. 在 Sites 控制台中导航到新创建的 AEM 项目，然后单击&#x200B;**编辑**。
 在此示例中，`index.html` 页面用于说明。
 
-      ![编辑 AEM Sites](/help/edge/docs/forms/assets/edit-site.png)
+      ![编辑 AEM Site](/help/edge/docs/forms/assets/edit-site.png)
 
       AEM 项目会在新选项卡的通用编辑器中打开，实现所见即所得的创作。您现在可以编辑 AEM 项目。
 
@@ -133,7 +133,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
       ![发布 AEM Sites 项目](/help/edge/docs/forms/assets/publish-sites.png)
 
-   1. 出现&#x200B;**快速发布**&#x200B;确认对话框，点击&#x200B;**发布**&#x200B;开始发布过程。
+   1. 出现&#x200B;**快速发布**&#x200B;确认对话框，单击&#x200B;**发布**&#x200B;开始发布过程。
 
       ![快速发布确认对话框](/help/edge/docs/forms/assets/quick-publish.png)
 
@@ -200,7 +200,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 您可以在通用编辑器中打开 AEM 项目，进行所见即所得的创作，在这里您可以编辑项目并添加自适应表单分区，以便在 AEM 项目页面上包含 Edge Delivery Services Forms。
 
 1. 将自适应表单分区添加到您的 AEM 项目页面。要添加：
-   1. 在 Sites 控制台中导航到 AEM 项目，选择要编辑的网站页面，然后单击&#x200B;**编辑**。AEM 项目页面将在通用编辑器中打开以供编辑。
+   1. 在 Sites 控制台中导航到 AEM 项目，选择要编辑的 Site 页面，然后单击&#x200B;**编辑**。AEM 项目页面将在通用编辑器中打开以供编辑。
 在此示例中，`index.html` 页面用于说明。
    1. 打开内容树，导航到要添加自适应表单分区的区域。
    1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从组件列表中选择&#x200B;**[!UICONTROL 自适应表单]**&#x200B;组件。

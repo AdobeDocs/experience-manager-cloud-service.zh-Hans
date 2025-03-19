@@ -1,5 +1,5 @@
 ---
-title: 适用于 AEM Forms 的 Edge Delivery Services 快速入门：开发人员教程
+title: Edge Delivery Services for AEM Forms 快速入门：开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。10到20分钟后，您将创建自己的表单。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
@@ -7,13 +7,13 @@ role: Admin, Architect, Developer
 source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
-# 快速入门 - 开发人员教程
+# 快速入门——开发人员教程
 
-在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。Edge Delivery Services for AEM Forms允许您使用熟悉的工具(如Google Docs和Microsoft Office)创建表单。
+在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。Edge Delivery Services for AEM Forms 允许您使用 Google Docs 和 Microsoft Office 等熟悉的工具创建表单。
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
@@ -21,7 +21,7 @@ AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻
 
 本 AEM Forms 教程将指导您使用新的 Adobe Experience Manager (AEM) Forms 项目创建、预览和发布您自己的自定义表单。
 
-## 前提条件
+## 先决条件
 
 * 您有 GitHub 帐户，并且了解 Git 基础知识。
 * 您有一个 Google 或 Microsoft SharePoint 帐户。
@@ -31,7 +31,7 @@ AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻
 **小心！** 本教程使用 macOS、Chrome 和 Visual Studio Code。虽然这些步骤可以针对其他设置进行调整，但屏幕截图和特定 UI 元素可能会根据您选择的操作系统、浏览器和代码编辑器而有所不同。
 
 
-## 创建一个预配置了 Adaptive Forms Block 的新 AEM 项目
+## 创建预先配置了 Adaptive Forms Block 的新 AEM 项目
 
 AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adaptive Forms Block 的 AEM 项目。这是遵循 AEM 最佳实践并直接开始构建表单的最快、最简单的方法。
 
@@ -59,7 +59,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    >[!NOTE]
    >
    >
-   > 列入允许列表如果您正在使用带有IP筛选的GitHub Enterprise，则可以将以下IP添加到中： 3.227.118.73
+   > 如果您使用带有 IP 过滤功能的 GitHub Enterprise，则可以将以下 IP 添加到允许列表：3.227.118.73
 
    恭喜！您有一个在 `https://<branch>--<repo>--<owner>.aem.page/` 上运行的新网站。
 
@@ -82,18 +82,18 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 1. 与 Adobe Experience Manager 用户（forms@adobe.com）共享该文件夹。
 
-   ![使用“管理访问权限”选项与 AEM 用户共享文件夹 - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+   ![使用“管理访问权限”选项与 AEM 用户共享文件夹——SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
-   ![使用“管理访问权限”选项与 AEM 用户共享文件夹 - Google Drive](/help/edge/assets/share-google-drive-folder.png)
+   ![使用“管理访问权限”选项与 AEM 用户共享文件夹——Google Drive](/help/edge/assets/share-google-drive-folder.png)
 
 
    确保您已向 Adobe Experience Manager 用户提供对该文件夹的编辑权限。
 
-   ![与 AEM 用户共享文件夹，提供编辑权限 - SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png) {width=50%}
+   ![与 AEM 用户共享文件夹，提供编辑权限——SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png) {width=50%}
 
-   ![与 AEM 用户共享文件夹，提供编辑权限 - Google Drive](/help/edge/assets/add-aem-user-google-folder.png) {width=50%}
+   ![与 AEM 用户共享文件夹，提供编辑权限——Google Drive](/help/edge/assets/add-aem-user-google-folder.png) {width=50%}
 
-1. 复制[示例内容](/help/edge/assets/wefinance1.zip)到您的文件夹。复制：
+1. 复制[示例内容](/help/edge/assets/wefinance1.zip)到您的文件夹。要复制：
 
    1. 将已下载的文件夹解压缩并复制内容。
 
@@ -132,7 +132,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
       有关使用 Microsoft SharePoint 管理文件的更多信息，请参阅[如何使用 Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)。
 
 
-   1. 提交更新的`fsatb.yaml`文件，一旦您更新了参考并且一切看起来都很好。如果您遇到任何构建问题，请参阅 [解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
+   1. 提交更新的`fsatb.yaml`文件，一旦您更新了参考并且一切看起来都很好。如果您遇到任何构建问题，请参阅[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
 
       ![提交更新的 fsatab.yaml 文件](/help/edge/assets/commit-updated-fstab-yaml.png)
 
@@ -154,7 +154,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 1. 要设置 Sidekick Chrome 扩展程序，请转到之前共享的 Google Drive 或 Microsoft SharePoint 文件夹，右键单击浏览器工具栏中的扩展程序图标，然后选择 `Add this project`。
 
-   ![AEM Sidekick - 添加项目](/help/edge/assets/aem-sidekick-add-a-project.png)
+   ![AEM Sidekick——添加项目](/help/edge/assets/aem-sidekick-add-a-project.png)
 
    安装扩展程序并添加项目后，您就可以预览和发布 Google Drive 中的内容。
 
@@ -196,7 +196,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 ![表单电子表格的 JSON](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
-打开 `enquiry` 文件，并将表单区块中的 URL 替换为上一步中复制的文件的 URL。确保 URL 是超链接。
+打开 `enquiry` 文件，并将 Forms Block 中的 URL 替换为上一步中复制的文件的 URL。确保 URL 是超链接。
 
 ![带有电子表格 URL 的 .json URL 的 “enquiry” 文件](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
