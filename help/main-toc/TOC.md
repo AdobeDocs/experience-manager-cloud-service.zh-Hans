@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
+source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
 workflow-type: tm+mt
-source-wordcount: '6082'
-ht-degree: 94%
+source-wordcount: '6086'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 94%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
-         + [2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)版发行说明
+         + [2025.1.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
       + 2024 {#2024}
          + [2024.10.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
@@ -216,8 +216,9 @@ ht-degree: 94%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
-         + [2025.02.17发行说明](/help/release-notes/universal-editor/2025/2025-02-17.md)
-         + [2025.01.16发行说明](/help/release-notes/universal-editor/2025/2025-01-16.md)
+         + [2025.02.25发行说明](/help/release-notes/universal-editor/2025/2025-02-25.md)
+         + [2025.02.17 版发行说明](/help/release-notes/universal-editor/2025/2025-02-17.md)
+         + [2025.01.16 版发行说明](/help/release-notes/universal-editor/2025/2025-01-16.md)
       + 2024 {#2024}
          + [2024.12.02 版发行说明](/help/release-notes/universal-editor/2024/2024-12-02.md)
          + [2024.11.13 版发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
@@ -256,7 +257,7 @@ ht-degree: 94%
       + [Admin Console](/help/journey-onboarding/admin-console.md)
       + [分配 Cloud Manager 产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [访问 Cloud Manager](/help/journey-onboarding/cloud-manager.md)
-      + [创建程序](/help/journey-onboarding/create-program.md)
+      + [创建一个程序](/help/journey-onboarding/create-program.md)
       + [创建环境](/help/journey-onboarding/create-environments.md)
       + [分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
       + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
@@ -588,8 +589,8 @@ ht-degree: 94%
       + [设置 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [配置 Dynamic Media](/help/assets/dynamic-media/config-dm.md)
-      + [Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
-      + [启用Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
+      + [Dynamic Media Prime 和 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+      + [启用 Dynamic Media Prime 和 Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
       + [可选 – 配置 Dynamic Media，一般设置](/help/assets/dynamic-media/dm-general-settings.md)
       + [可选 – 配置 Dynamic Media，发布设置](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media 疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -790,7 +791,7 @@ ht-degree: 94%
             + [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [自适应表单中的电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [在Experience Manager Forms中&#x200B;管理发布](/help/forms/manage-publication.md)
+            + [&#x200B;在 Experience Manager Forms 中管理发布](/help/forms/manage-publication.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
@@ -894,9 +895,9 @@ ht-degree: 94%
    + 交易报告 {#using-communications}
       + [交易报告计费 API](/help/forms/transaction-reports-billable-apis.md)
       + [记录自定义实施的交易](/help/forms/record-transaction-custom-implementation.md)
-   + 值实现仪表板{#vr-dashboard}
+   + 价值实现仪表板  {#vr-dashboard}
       + [了解您的价值实现仪表板](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [使用价值实现仪表板分析表单和文档使用趋势](/help/forms/using-the-value-realization-dashboard.md)
+      + [使用价值实现仪表板分析表单和文档的使用趋势](/help/forms/using-the-value-realization-dashboard.md)
    + 开发人员 API 参考 {#aem-forms-developer-api-reference}
       + [自适应表单 API 参考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 通信 API 参考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1002,7 +1003,7 @@ ht-degree: 94%
       + [跨 Site 重用代码](/help/edge/wysiwyg-authoring/repoless.md)
       + [无重复多 Site 管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [无重复阶段和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [配置站点身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [配置网站身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
@@ -1035,37 +1036,37 @@ ht-degree: 94%
       + [Edge Delivery Services Forms 如何运作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + 所见即所得的创作 {#universal-editor}
-         + [Forms Universal Editor for Edge Delivery Services简介 — 完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用编辑器开始创作 — 分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Edge Delivery Services 的表单通用编辑器简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [如何使用通用编辑器开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [如何使用通用编辑器创建第一个表单 — 分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [在通用编辑器中使您的Forms对移动设备友好：响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [设计精美的Forms：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [将动态行为添加到Forms：规则编辑器的完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [让您的表单适应移动设备：通用编辑器中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [设计精美的表单：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [向表单添加动态行为：规则编辑器完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [表单提交指南：配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [保护您的Forms免受垃圾邮件的侵扰：添加reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [《如何发布和部署Forms：通用编辑器发布指南》](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [生成自定义表单组件：通用编辑器的开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [保护您的表单免受垃圾邮件的侵害：添加 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [如何发布和部署表单：通用编辑器发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [构建自定义表单组件：通用编辑器开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表单数据模型集成：将Forms与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-      + 基于文档的创作{#getting-started-edge-delivery-services-forms}
-         + [构建您的第一个表单：使用Google工作表和Excel快速入门指南](/help/edge/docs/forms/tutorial.md)
-         + [如何使用Google工作表或Excel创建Forms：分步指南](/help/edge/docs/forms/create-forms.md)
-         + [自适应表单块的各种组件](/help/edge/docs/forms/form-components.md)
-         + [将表单连接到Google Sheets：数据收集设置指南](/help/edge/docs/forms/submit-forms.md)
-         + [启用表单：发布和数据收集指南](/help/edge/docs/forms/publish-forms.md)
-         + [表单字段验证：将错误检查添加到Forms](/help/edge/docs/forms/validate-forms.md)
-         + [设计精美的Forms：样式和自定义指南](/help/edge/docs/forms/style-theme-forms.md)
-         + [创建成功消息：自定义表单的“感谢”页面](/help/edge/docs/forms/thank-you-page-form.md)
-         + [表单提交指南：使用Forms提交服务](/help/forms/forms-submission-service.md)
-         + [动态表单字段：从URL加载选项](/help/edge/docs/forms/load-options-from-url.md)
+      + 基于文档的创作 {#getting-started-edge-delivery-services-forms}
+         + [构建您的第一个表单：使用 Google Sheets 和 Excel 的快速入门指南](/help/edge/docs/forms/tutorial.md)
+         + [如何使用 Google Sheets 或 Excel 创建表单：分步指南](/help/edge/docs/forms/create-forms.md)
+         + [自适应表单区块的各种组件](/help/edge/docs/forms/form-components.md)
+         + [将您的表单连接到 Google Sheets：数据收集设置指南](/help/edge/docs/forms/submit-forms.md)
+         + [让您的表单生动起来：发布和数据收集指南](/help/edge/docs/forms/publish-forms.md)
+         + [表单字段验证：向表单添加错误检查](/help/edge/docs/forms/validate-forms.md)
+         + [设计精美的表单：样式和自定义指南](/help/edge/docs/forms/style-theme-forms.md)
+         + [创建成功消息：自定义表单的感谢页面](/help/edge/docs/forms/thank-you-page-form.md)
+         + [表单提交指南：使用表单提交服务](/help/forms/forms-submission-service.md)
+         + [动态表单字段：从 URL 加载选项](/help/edge/docs/forms/load-options-from-url.md)
          + [添加智能行为：表单规则和逻辑指南](/help/edge/docs/forms/rules-forms.md)
          + [高级表单验证：正则表达式指南](/help/edge/docs/forms/regex-forms.md)
-         + [构建可重用的Forms：表单片段指南](/help/edge/docs/forms/form-fragments.md)
-         + [创建动态Forms：添加可重复部分](/help/edge/docs/forms/repeatable-forms.md)
-         + [使表单成为全局表单：表单翻译指南](/help/edge/docs/forms/translate-forms.md)
-         + [保护您的Forms：添加reCAPTCHA安全性](/help/edge/docs/forms/recaptacha-forms.md)
+         + [构建可重复使用的表单：表单片段指南](/help/edge/docs/forms/form-fragments.md)
+         + [创建动态表单：添加可重复部分](/help/edge/docs/forms/repeatable-forms.md)
+         + [让您的表单全球化：表单翻译指南](/help/edge/docs/forms/translate-forms.md)
+         + [保护您的表单：添加 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [构建自定义表单组件：开发人员指南](/help/edge/docs/forms/custom-components-forms.md)
-         + [监视表单性能：实际使用监视指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [监控表单绩效：实际使用监控指南](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Edge Delivery 资产 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
@@ -1157,7 +1158,7 @@ ht-degree: 94%
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
    + [生成变体](/help/generative-ai/generate-variations.md)
-   + [生成变体 — 集成在AEM编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [生成变体 - 集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
    + [助手（有限 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
@@ -1217,7 +1218,7 @@ ht-degree: 94%
       + Edge Delivery Site{#edge-delivery-sites}
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [在Cloud Manager中创建Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [在 Cloud Manager 中创建 Edge Delivery 网站：](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [在 Cloud Manager 中管理 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 域设置 {#custom-domain-names}
@@ -1305,7 +1306,7 @@ ht-degree: 94%
          + [事件](/help/implementing/universal-editor/events.md)
          + [筛选组件](/help/implementing/universal-editor/filtering.md)
          + [自定义](/help/implementing/universal-editor/customizing.md)
-         + [正在扩展](/help/implementing/universal-editor/extending.md)
+         + [扩展](/help/implementing/universal-editor/extending.md)
          + [架构](/help/implementing/universal-editor/architecture.md)
          + [身份验证](/help/implementing/universal-editor/authentication.md)
          + [快速入门](/help/implementing/universal-editor/getting-started.md)

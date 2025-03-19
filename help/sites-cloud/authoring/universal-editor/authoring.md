@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 36%
 
 ---
@@ -161,7 +161,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 >
 >使用热键 `Shift+Backspace` 可从容器中删除选定组件。
 
-### 对容器中的组件重新排序 {#reordering-components}
+### 重新排序组件 {#reordering-components}
 
 1. 如果尚未处于[内容树模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，请切换到它。
 1. 在内容树或编辑器中选择一个容器组件。
@@ -176,7 +176,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->如果在源容器和目标容器之间设置了不同的[组件筛选器](/help/implementing/universal-editor/filtering.md)，则无法在容器之间移动组件。
+>如果目标容器[组件筛选器](/help/implementing/universal-editor/filtering.md)允许所选组件，则组件只能在容器之间移动。
 
 ### 使用带有“生成变体”的GenAI创建变体 {#generate-variations-ai}
 
