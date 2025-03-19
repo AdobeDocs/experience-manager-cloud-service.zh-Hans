@@ -1,17 +1,17 @@
 ---
-title: 如何在通用编辑器中为表单创建表单数据模型(FDM)？
+title: 如何在通用编辑器中集成表单的表单数据模型(FDM)？
 description: 了解如何基于表单数据模型(FDM)创建表单。 在FDM中生成并编辑数据模型对象的示例数据。
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
-
 
 # 在通用编辑器中集成表单与表单数据模型
 
@@ -66,7 +66,7 @@ ht-degree: 5%
 
 5. 单击&#x200B;**[!UICONTROL 创建]**，将出现&#x200B;**创建表单**&#x200B;向导。
 6. 指定&#x200B;**名称**&#x200B;和&#x200B;**标题**。
-7. 指定 **GitHub URL**。例如，如果您的GitHub存储库名为`edsforms`，则它位于帐户`wkndforms`下，URL为：
+7. 指定 **GitHub URL**。例如，如果您的 GitHub 存储库名为 `edsforms`，则它位于帐户 `wkndforms` 下，其 URL 为：
    `https://github.com/wkndforms/edsforms`
 8. 单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -128,7 +128,7 @@ ht-degree: 5%
 
    ![生成表单](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   您还可通过在表单元素的&#x200B;**绑定引用**属性中指定数据绑定，来手动将数据绑定添加到表单元素。
+   您必须在表单元素的&#x200B;**绑定引用**属性中指定数据绑定，以手动将其添加到表单元素。
 例如，我们为表单中已存在的**Pet名称**&#x200B;文本框添加一个数据绑定引用：
 
    ![手动添加表单字段的数据](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
