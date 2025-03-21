@@ -4,9 +4,9 @@ description: 了解 [!DNL AEM Assets View]. [!DNL AEM Assets View] UI的UI可扩
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '542'
 ht-degree: 3%
 
 ---
@@ -47,9 +47,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-[!DNL AEM Assets View]支持UI可扩展性，使您能够为[!DNL AEM Assets View]的开箱即用功能无法满足的特定工作流和业务要求将自定义UI组件添加到[!DNL Assets View] UI。 [!DNL AEM Assets View]的这个UI可扩展性功能增强了它的灵活性，使组织能够针对特定的工作流和要求调整界面。
-
-在您的[!DNL AEM Assets View]中启用UI可扩展性，将自定义UI组件添加到[!DNL Assets View] UI中，以满足[!DNL AEM Assets View]的现成功能无法满足的特定业务要求。\
+[!DNL AEM Assets View]支持UI可扩展性，使您能够为[!DNL AEM Assets View]的开箱即用功能无法满足的特定工作流和业务要求将自定义UI组件添加到[!DNL Assets View] UI。 [!DNL AEM Assets View]的这个UI可扩展性功能增强了它的灵活性，使组织能够针对特定的工作流和要求调整界面。\
 您可以将扩展添加到&#x200B;**Asset**、**Folder**&#x200B;和&#x200B;**Collection**&#x200B;级别。 添加的扩展显示在&#x200B;**Asset**、**Collection**&#x200B;或&#x200B;**Folder** **[!UICONTROL Details]**&#x200B;页面的专用面板上。
 
 >[!IMPORTANT]
