@@ -4,10 +4,10 @@ description: 了解如何使用电子表格来管理各种值的表格数据，�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1284'
-ht-degree: 100%
+source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 99%
 
 ---
 
@@ -133,7 +133,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 1. 在 GitHub 中打开您的项目的根目录。
 
-1. 点击或单击 `paths.json` 文件以打开其详细信息，然后点击“**编辑**”图标。
+1. 点击或单击 `paths.json` 文件以打开其详细信息，然后点击&#x200B;**编辑**&#x200B;图标。
 
    ![paths.json 文件](assets/tabular-data/tabular-data-paths-json.png)
 
@@ -180,10 +180,10 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 现在您已经知道如何创建重定向电子表格，您可以创建任何其他标准电子表格类型：
 
-* 占位符
-* 元数据
-* 标头
-* 配置
+* [占位符](https://www.aem.live/docs/placeholders)
+* [元数据](https://www.aem.live/docs/bulk-metadata)
+* [标头](https://www.aem.live/docs/custom-headers)
+* [配置](https://www.aem.live/docs/configuration) — 例如[缓存无效](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [分类](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 只需按照各部分中的相同步骤操作即可[创建电子表格](#spreadsheet)和[更新 paths.json](#paths-json)，选择合适的模板并`paths.json`相应地更新文件。
