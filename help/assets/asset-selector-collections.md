@@ -2,18 +2,52 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin,User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 9%
+source-wordcount: '507'
+ht-degree: 14%
 
 ---
 
-
 # 资产选择器收藏集 {#asset-selector-collections}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 收藏集是Asset Selector中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资源。收藏集与文件夹的不同之处是可包含来自不同位置的资源。
 
@@ -62,7 +96,6 @@ Additionally, you can [customize](/help/assets/asset-selector-customization.md) 
 
 >[!MORELIKETHIS]
 >
->* [资产选择器自定义项](/help/assets/asset-selector-customization.md)
+>* [资产选择器自定义](/help/assets/asset-selector-customization.md)
 >* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
-

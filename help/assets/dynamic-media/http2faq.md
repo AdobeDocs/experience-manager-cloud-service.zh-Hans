@@ -1,18 +1,55 @@
 ---
-title: HTTP2 内容投放常见问题解答
+title: HTTP2 内容传递常见问题解答
 description: 了解HTTP2内容交付，以及它如何改进浏览器和服务器之间的通信以加快信息传输。
 contentOwner: Rick Brough
 feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 1%
+source-wordcount: '844'
+ht-degree: 3%
 
 ---
 
-# HTTP2 内容投放常见问题解答{#http-delivery-of-content-faq}
+# HTTP2 内容传递常见问题解答{#http-delivery-of-content-faq}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 Adobe很高兴地宣布推出HTTP/2内容交付功能。 使用HTTP/2时，整体性能会提高。
 
@@ -30,7 +67,7 @@ HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信�
 
 性能改进因各种因素而异。 例如，您网站的代码、如何使用Dynamic Media、消费者的设备、屏幕和位置。
 
-Adobe自己的测试产生了以下结果：
+Adobe自己的测试得到了以下结果：
 
 * 对于图像，响应速度提高了7%-28%，具体取决于设备和浏览器。 性能提升最显着的是iOS设备。
 * 对于查看者，加载时间性能提升了15%。
@@ -49,7 +86,7 @@ Adobe自己的测试产生了以下结果：
 
   若要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-  转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**已发布的服务器名称**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
+  转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**已发布的服务器名称**&#x200B;的字段。 如果您当前使用的是通用的Dynamic Media域，则可以请求在此过渡中转移到您自己的自定义域。
 
 ## 为我的Dynamic Media帐户启用HTTP/2的过程是怎样的？ {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -70,10 +107,10 @@ Adobe自己的测试产生了以下结果：
 
    若要查找您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
+   转到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。 如果您当前使用的是通用的Dynamic Media域，则可以请求在此过渡中转移到您自己的自定义域。
 
    1. 客户支持根据提交请求的顺序将您添加到HTTP/2客户轮候表中。
-   1. 当Adobe准备好处理您的请求时，客户支持将联系您以协调过渡并设置目标日期。
+   1. 当Adobe准备好处理您的请求时，客户支持部门会联系您以协调过渡并设置目标日期。
    1. 完成后，您将收到通知，并且可以验证是否成功过渡到HTTP2。
 
 ## 我何时可以过渡到HTTP/2？ {#when-can-i-expect-to-be-transitioned-over-to-http}

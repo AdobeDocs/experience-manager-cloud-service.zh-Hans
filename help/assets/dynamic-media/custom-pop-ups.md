@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 2%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
 # 使用 Quickview 创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 默认概览用于电子商务体验，其中显示带有产品信息的弹出窗口，以推动购买。 但是，您可以触发要在弹出窗口中显示的自定义内容。 根据您使用的查看器，客户可以选择热点、缩略图图像或图像映射来查看信息或相关内容。
 
@@ -155,7 +192,7 @@ Dynamic Media中的以下查看器支持概览：
    }
    ```
 
-   * 将测试HTML页上传到Web服务器并打开。
+   * 将测试HTML页面上传到Web服务器并打开。
 
      概览中的变量会被映射。 函数调用已准备就绪。 浏览器控制台将变量值写入浏览器控制台。 它使用提供的示例函数完成此操作。
 
@@ -172,7 +209,7 @@ Dynamic Media中的以下查看器支持概览：
    </style>
    ```
 
-1. 将弹出窗口`DIV`放入HTML页正文中。
+1. 将弹出窗口`DIV`放入HTML页面的正文中。
 
    其中一个元素设置了ID，当用户调用概览时，该ID会使用SKU值更新。 该示例还包括一个简单按钮，用于在弹出窗口变为可见后再次隐藏弹出窗口。
 
@@ -196,7 +233,7 @@ Dynamic Media中的以下查看器支持概览：
    </script>
    ```
 
-1. 将测试HTML页上传到Web服务器并打开。 当用户调用概览时，查看器显示弹出窗口`DIV`。
+1. 将测试HTML页面上传到Web服务器并打开。 当用户调用概览时，查看器显示弹出窗口`DIV`。
 1. **如何以全屏模式显示自定义弹出窗口**
 
    某些查看器（例如交互式视频查看器）支持全屏模式显示。 但是，如上一步所述使用弹出窗口，会在全屏模式下将其显示在查看器后面。

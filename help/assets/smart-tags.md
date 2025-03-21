@@ -1,13 +1,13 @@
 ---
-title: 如何向AEM中的资源添加智能标记？
-description: 使用可应用上下文和描述性业务标记的人工智能服务，将智能标记添加到AEM中的资源。
+title: 如何在AEM中将智能标记添加到资源？
+description: 借助可应用上下文和描述性业务标记的人工智能服务，将智能标记添加到AEM中的资源。
 contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 7%
 
 ---
@@ -15,8 +15,42 @@ ht-degree: 7%
 
 # 将智能标记添加到AEM中的资源 {#smart-tags-assets-aem}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -27,7 +61,7 @@ ht-degree: 7%
 
 与自然语言词汇相比，基于业务分类法的标记有助于使资产与公司的业务保持一致，并确保最相关的资产出现在搜索中。 例如，汽车制造商可以使用型号名称标记汽车图像，以便在搜索时仅显示相关图像以设计促销活动。
 
-在背景中，此功能使用[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html)的人工智能框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。 默认情况下，AEM会自动将智能标记应用于已上传的资源。
+在背景中，此功能使用[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html)的人工智能框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。 默认情况下，AEM会自动将智能标记应用于上传的资源。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -45,7 +79,7 @@ ht-degree: 7%
 |----|-----|------|
 | image/jpeg | CSV | MP4 (H264/AVC) |
 | image/tiff | DOC | MKV (H264/AVC) |
-| image/png | DOCX | MOV (H264/AVC，运动JPEG) |
+| image/png | DOCX | MOV (H264/AVC， Motion JPEG) |
 | image/bmp | HTML | AVI (indeo4) |
 | image/gif | PDF | FLV (H264/AVC， vp6f) |
 | image/pjpeg | PPT | WMV(WMV2) |
@@ -97,11 +131,11 @@ ht-degree: 7%
 
 ![用于说明培训指导原则的插图图像](assets/do-not-localize/completeness.png)
 
-**标记数**：Adobe建议为模型训练使用至少两个不同的标记，并为每个标记至少使用十个不同的图像。 在单个标记模型中，添加的标记不得超过50个。
+**标记数**： Adobe建议为模型训练使用至少两个不同的标记，并为每个标记至少使用十个不同的图像。 在单个标记模型中，添加的标记不得超过50个。
 
-**示例数**：对于每个标记，至少添加十个示例。 但是，Adobe推荐了大约30个示例。 每个标记最多支持50个示例。
+**示例数**：对于每个标记，至少添加十个示例。 但是，Adobe推荐大约30个示例。 每个标记最多支持50个示例。
 
-**防止误报和冲突**：Adobe建议为单个可视方面创建单个标记模型。 以避免标签在模型之间重叠的方式构造标签模型。 例如，不要在两个不同的标记模型名称`shoes`和`footwear`中使用像`sneakers`这样的公共标记。 训练过程用一个经过训练的标记模型覆盖另一个标记模型，以获取公共关键字。
+**防止误报和冲突**： Adobe建议为单个可视方面创建单个标记模型。 以避免标签在模型之间重叠的方式构造标签模型。 例如，不要在两个不同的标记模型名称`shoes`和`footwear`中使用像`sneakers`这样的公共标记。 训练过程用一个经过训练的标记模型覆盖另一个标记模型，以获取公共关键字。
 
 **示例**：其他指导示例包括：
 

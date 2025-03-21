@@ -2,14 +2,48 @@
 title: '在为 [!DNL Edge Delivery Services]创作内容时集成 [!DNL AEM Assets] '
 description: 了解如何将 [!DNL AEM Assets] 与 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 与 [!DNL Microsoft Word] 集成，将 [!DNL Google Docs], integrate [!DNL AEM Assets] 与 [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Universal Editor] 集成，以及如何将 [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Microsoft Word] 和 [!DNL Google Docs]集成。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 491ba10214c704a4e0004df36142e270a49f65e0
+source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 # 在为[!DNL Edge Delivery Services]创作内容时集成[!DNL AEM Assets] {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+         <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 具有UE的![AEM资源](/help/assets/assets/EDS2.png)
 

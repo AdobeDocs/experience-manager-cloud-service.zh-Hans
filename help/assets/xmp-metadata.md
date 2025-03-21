@@ -1,21 +1,55 @@
 ---
 title: XMP 元数据
-description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被Experience Manager用作元数据的创建、处理和交换的标准格式。
+description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被Experience Manager用作元数据的创建、处理和交换的标准化格式。
 contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 17%
+source-wordcount: '1079'
+ht-degree: 18%
 
 ---
 
 # XMP 元数据 {#xmp-metadata}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -24,19 +58,19 @@ ht-degree: 17%
 
 XMP（可扩展元数据平台）是Experience Manager Assets用于所有元数据管理的元数据标准。 XMP为各种应用程序的元数据的创建、处理和交换提供了一个标准格式。
 
-除了提供可以嵌入到所有文件格式的通用元数据编码之外，XMP还提供丰富的[内容模型](#xmp-core-concepts)以及[受Adobe](#advantages-of-xmp)和其他公司支持，因此XMP与[!DNL Assets]结合的用户可以构建一个强大的平台。
+除了提供可以嵌入到所有文件格式的通用元数据编码之外，XMP还提供丰富的[内容模型](#xmp-core-concepts)，并且[受Adobe](#advantages-of-xmp)和其他公司的支持，因此XMP用户与[!DNL Assets]结合后可以构建一个强大的平台。
 
 ## XMP概述和生态系统 {#xmp-ecosystem}
 
-[!DNL Assets]本机支持XMP元数据标准。 XMP是在数字资产中处理和存储标准化的专有元数据的标准。 XMP旨在作为允许多个应用程序有效地使用元数据的通用标准。
+[!DNL Assets]本机支持XMP元数据标准。 XMP是在数字资产中处理和存储标准化和专有元数据的标准。 XMP旨在作为允许多个应用程序有效地处理元数据的通用标准。
 
-例如，生产专业人员使用Adobe应用程序中内置的XMP支持跨多种文件格式传递信息。 [!DNL Assets]存储库提取XMP元数据并使用它来管理内容生命周期，并提供创建自动化工作流的功能。
+例如，生产专业人员可以使用Adobe应用程序中内置的XMP支持，跨多种文件格式传递信息。 [!DNL Assets]存储库提取XMP元数据并使用它来管理内容生命周期，并提供创建自动化工作流程的功能。
 
-XMP通过提供数据模型、存储模型和架构，标准化元数据的定义、创建和处理方式。 本节将介绍所有这些概念。
+XMP通过提供数据模型、存储模型和架构，实现了元数据的定义、创建和处理的标准化。 本节将介绍所有这些概念。
 
-来自EXIF、ID3或Microsoft Office的所有旧元数据会自动转换为XMP，可以扩展该架构以支持客户特定的元数据架构，例如产品目录。
+来自EXIF、ID3或Microsoft Office的所有旧元数据会自动转换为XMP，可将其扩展以支持特定于客户的元数据架构，例如产品目录。
 
-XMP中的元数据由一组属性组成。 这些属性始终与称为资源的特定实体相关联；即，属性是有关资源的。 对于XMP，资源始终是资源。
+XMP中的元数据包含一组属性。 这些属性始终与称为资源的特定实体相关联；即，属性是有关资源的。 对于XMP，资源始终是资源。
 
 XMP 定义了一个可与任何定义的元数据项集一起使用的[元数据](https://en.wikipedia.org/wiki/Metadata)模型。XMP 还为基本属性定义了一个特定的[架构[，这些基本属性可用于记录资源经过多个处理步骤的历史记录：从拍摄、](https://en.wikipedia.org/wiki/XML_schema)扫描](https://en.wikipedia.org/wiki/Image_scanner)或创作为文本，到照片编辑步骤（如[裁剪](https://en.wikipedia.org/wiki/Cropping_%28image%29)或颜色调整），再到组合到最终图像中。XMP 允许每个软件程序或设备向数字资源添加其自己的信息，该信息可保留在最终的数字文件中。
 
@@ -68,7 +102,7 @@ XMP架构是公共XML命名空间中的一组属性名称，其中包括
 
 **XMP属性和值**
 
-XMP可能包括来自一个或多个架构的属性。 例如，许多Adobe应用程序使用的典型子集可能包括：
+XMP可能包括来自一个或多个架构的资产。 例如，许多Adobe应用程序使用的典型子集可能包括：
 
 * 都柏林核心架构： `dc:title`，`dc:creator`，`dc:subject`，`dc:format`，`dc:rights`
 * XMP基本架构： `xmp:CreateDate`，`xmp:CreatorTool`，`xmp:ModifyDate`，`xmp:metadataDate`
@@ -111,7 +145,7 @@ XMP允许您将`xml:lang`属性添加到文本属性以指定文本的语言。
 
    ![选择DAM元数据写回启动器以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
 
-1. 在&#x200B;**[!UICONTROL 启动器属性]**&#x200B;页面上选择&#x200B;**[!UICONTROL 激活]**。 单击“**[!UICONTROL 保存并关闭]**”。
+1. 在&#x200B;**[!UICONTROL 启动器属性]**&#x200B;页面上选择&#x200B;**[!UICONTROL 激活]**。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
 要仅手动将工作流应用于资产一次，请从左边栏应用[!UICONTROL DAM元数据写回]工作流。
 

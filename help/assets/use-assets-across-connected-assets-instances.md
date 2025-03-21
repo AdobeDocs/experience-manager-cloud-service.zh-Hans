@@ -6,18 +6,52 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3887'
-ht-degree: 13%
+source-wordcount: '3915'
+ht-degree: 14%
 
 ---
 
 
 # 在[!DNL Experience Manager Sites]中使用“连接的Assets”共享DAM资源 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -28,7 +62,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Adobe建议利用带有OpenAPI功能的Dynamic Media来连接AEM Assetsas a Cloud Service和AEM Sites。 请参阅[将远程AEM Assets与AEM Sites集成](/help/assets/integrate-remote-approved-assets-with-sites.md)。
+>Adobe建议利用带有OpenAPI功能的Dynamic Media来连接AEM Assets as a Cloud Service和AEM Sites。 请参阅[将远程AEM Assets与AEM Sites集成](/help/assets/integrate-remote-approved-assets-with-sites.md)。
 
 通过集成[!DNL Experience Manager Sites]和[!DNL Experience Manager Assets]，“连接的Assets”功能支持上述用例。 用户可以在[!DNL Sites]中创建使用来自单独[!DNL Assets]部署的数字资产的网页。
 
@@ -47,7 +81,7 @@ ht-degree: 13%
 在使用或配置此功能之前，请确保：
 
 * 用户是每个部署中相应用户组的一部分。
-* 对于[!DNL Adobe Experience Manager]部署类型，满足一个支持的条件。 [!DNL Experience Manager]as a Cloud Service[!DNL Assets]与[!DNL Experience Manager] 6.5配合使用。有关此功能如何在[!DNL Experience Manager] 6.5中工作的更多信息，请参阅 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的[连接的Assets。
+* 对于[!DNL Adobe Experience Manager]部署类型，满足一个支持的条件。 [!DNL Experience Manager] as a Cloud Service [!DNL Assets]可与[!DNL Experience Manager] 6.5一起使用。有关此功能如何在[!DNL Experience Manager] 6.5中工作的更多信息，请参阅 [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)中的[连接的Assets。
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS上的[!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites]内部部署 |
   |---|---|---|---|
@@ -78,7 +112,7 @@ ht-degree: 13%
 
 ### 连接的Assets架构 {#connected-assets-architecture}
 
-Experience Manager允许您将远程DAM部署作为源连接到多个Experience Manager[!DNL Sites]部署。 但是，您只能将[!DNL Sites]部署与一个远程DAM部署连接。
+通过Experience Manager，您可以将远程DAM部署作为源连接到多个Experience Manager [!DNL Sites]部署。 但是，您只能将[!DNL Sites]部署与一个远程DAM部署连接。
 
 评估连接到远程DAM部署的最佳站点实例数量。 Adobe建议将Sites实例增量连接到部署，并测试远程DAM上的性能不会受到影响，因为每个连接的Sites实例都会贡献远程DAM上的数据流量。
 
@@ -151,13 +185,13 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 ## 使用Dynamic Media资源 {#dynamic-media-assets}
 
 
-通过连接的Assets，您可以使用[!DNL Dynamic Media]从站点页面上的远程DAM部署处理的图像资源，并使用Dynamic Media功能，如智能裁切和图像预设。
+通过连接的Assets，您可以使用由站点页面上远程DAM部署的[!DNL Dynamic Media]处理的图像资源，并使用Dynamic Media功能，如智能裁切和图像预设。
 
 要将[!DNL Dynamic Media]与连接的Assets一起使用：
 
 1. 在启用了同步模式的远程DAM部署上配置[!DNL Dynamic Media]。
 1. 配置[连接的Assets](#configure-a-connection-between-sites-and-assets-deployments)。
-1. 使用在远程DAM上配置的相同公司名称在站点实例上配置[!DNL Dynamic Media]。 Sites部署必须对Dynamic Media帐户具有只读访问权限，才能使用连接的资源。 因此，请确保在站点实例的Dynamic Media配置中禁用同步模式。
+1. 使用在远程DAM上配置的相同公司名称在站点实例上配置[!DNL Dynamic Media]。 Sites部署必须对Dynamic Media帐户具有只读访问权限，才能使用连接的资产。 因此，请确保在Sites实例上的Dynamic Media配置中禁用同步模式。
 
 >[!CAUTION]
 >
@@ -173,8 +207,8 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
    * 在所有配置中使用相同的公司名称。
    * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认情况下已禁用]**。 [!DNL Sites]部署必须对[!DNL Dynamic Media]帐户具有只读访问权限。
-   * 在本地[!DNL Sites]上的&#x200B;**[!UICONTROL Publish Assets]**&#x200B;选项中，选择&#x200B;**[!UICONTROL 选择性Publish]**。 不要选择&#x200B;**[!UICONTROL 同步所有内容]**。
-   * 在远程[!DNL Assets]部署中，在[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
+   * 在本地[!DNL Sites]上的&#x200B;**[!UICONTROL 发布Assets]**&#x200B;选项中，选择&#x200B;**[!UICONTROL 选择性发布]**。 不要选择&#x200B;**[!UICONTROL 同步所有内容]**。
+   * 在远程[!DNL Assets]部署的[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
 
 1. 在图像核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中启用[[!DNL Dynamic Media] 支持。 此功能允许当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]个图像时，默认的[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)显示[!DNL Dynamic Media]个图像。
 
@@ -253,7 +287,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
 您还可以更新远程DAM上资产的元数据属性，所做的更改可在本地Sites部署中使用。
 
-Sites作者可以预览Sites部署中的可用更新，然后重新发布更改以使其在AEM发布实例上可用。
+Sites作者可以预览Sites部署中的可用更新，然后重新发布更改以使其在AEM发布实例中可用。
 
 Experience Manager在远程Assets内容查找器中的资源上显示`expired`状态可视指示器，以阻止站点作者在站点页面上使用资源。 如果您在Sites页面上使用具有`expired`状态的资源，则该资源将无法在Experience Manager发布实例上显示。
 
@@ -283,7 +317,7 @@ Experience Manager在远程Assets内容查找器中的资源上显示`expired`�
 
 +++
 
-+++**配置“连接的Dynamic Media”后，能否使用[!DNL Sites]部署中的Assets资源？**
++++**配置“连接的Assets”后，能否使用[!DNL Sites]部署中的Dynamic Media资源？**
 
 配置“连接的Assets”后，[!DNL Dynamic Media]资源在只读模式下可在[!DNL Sites]部署中使用。 因此，无法使用[!DNL Dynamic Media]处理[!DNL Sites]部署中的资产。 有关详细信息，请参阅[在Sites和Dynamic Media部署之间配置连接](#dynamic-media-assets)。
 
@@ -301,9 +335,9 @@ Experience Manager在远程Assets内容查找器中的资源上显示`expired`�
 
 +++
 
-+++**配置“连接的Dynamic Media”后，能否在[!DNL Sites]部署上使用来自远程DAM部署的Assets资源？**
++++**配置“连接的Assets”后，能否在[!DNL Sites]部署上使用远程DAM部署中的Dynamic Media资源？**
 
-是，您可以在配置“连接的Dynamic Media”后，在[!DNL Sites]部署上从远程DAM部署配置并使用Assets图像资产。 有关详细信息，请参阅[在Sites和Dynamic Media部署之间配置连接](#dynamic-media-assets)。
+是，您可以在配置“连接的Assets”后，在[!DNL Sites]部署上从远程DAM部署配置并使用Dynamic Media图像资产。 有关详细信息，请参阅[在Sites和Dynamic Media部署之间配置连接](#dynamic-media-assets)。
 
 +++
 

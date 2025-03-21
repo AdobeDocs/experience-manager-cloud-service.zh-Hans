@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1469'
 ht-degree: 34%
 
 ---
 
 # [!DNL Assets]支持的文件格式 {#supported-file-formats}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]支持任何二进制文件的基本内容管理功能 — 存储、联机管理元数据、版本控制、上载和下载等，而不依赖于其格式。 [!DNL Adobe Experience Manager Assets]支持多种文件格式，每种产品功能支持的格式也各不相同。
 
@@ -25,7 +59,7 @@ ht-degree: 34%
 
 * Adobe应用程序和服务生成的密钥[Adobe文件格式](#adobe-formats)，包括[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]和[!DNL Adobe Acrobat]或PDF。
 * 密钥[映像文件格式](#image-formats)。
-* 适用于各种相机的[Camera Raw文件格式](#camera-raw-formats)，包括Canon、Nikon、Fujifilm、Olympus和其他制造商(由Adobe Camera Raw提供支持)。
+* 适用于各种相机的[Camera Raw文件格式](#camera-raw-formats)，这些相机包括Canon、Nikon、Fujifilm、Olympus和其他制造商(由Adobe Camera Raw提供支持)。
 * 常用的[文档格式](#document-formats)，包括Microsoft®Office和Open Document格式。
 * [视频](#video-formats)和[音频](#audio-formats)格式范围广泛。
 
@@ -76,9 +110,9 @@ ht-degree: 34%
 
 支持以下3D格式。
 
-另请参阅[在Dynamic Media中使用3D资源](/help/assets/dynamic-media/assets-3d.md)。
+另请参阅[在Dynamic Media中使用3D资产](/help/assets/dynamic-media/assets-3d.md)。
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
+| 格式化 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -202,7 +236,7 @@ ht-degree: 34%
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 | --- | --- | --- | --- |
 | AVI | A/V交错 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft®视频1(MS-CRAM) |
-| FLV， F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
+| FLV， F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
 | MOV， QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中级，Apple动画 |
@@ -217,7 +251,7 @@ ht-degree: 34%
 
 ## Dynamic Media — 支持的文档格式 {#document-support-dynamic-media}
 
-| 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 投放动态演绎版 | 下载动态演绎版 |
+| 格式化 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 投放动态演绎版 | 下载动态演绎版 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | 人工智能 | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
@@ -229,7 +263,7 @@ ht-degree: 34%
 
 ## Dynamic Media — 支持的栅格图像格式 {#image-support-dynamic-media}
 
-| 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 投放动态演绎版 | 下载动态演绎版 | 设置支持此格式的类型 |
+| 格式化 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 投放动态演绎版 | 下载动态演绎版 | 设置支持此格式的类型 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [图像](/help/assets/dynamic-media/image-sets.md)、[混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和[旋转](/help/assets/dynamic-media/spin-sets.md) |
@@ -239,7 +273,7 @@ ht-degree: 34%
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md)、[混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和[旋转](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md)、[混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和[旋转](/help/assets/dynamic-media/spin-sets.md) |
-| PSD‡ | ✓ | − | − | − | − | − |
+| PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md)、[混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)和[旋转](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
@@ -253,10 +287,10 @@ ht-degree: 34%
 
 * IDAT区块大小大于100 MB的PNG文件。
 * psb文件。
-* 不支持使用CMYK、RGB、灰度或位图以外的PSD空间颜色文件。 不支持DuoTone、Lab和Indexed色彩空间。
-* PSD位深度大于16的文件。
-* TIFF具有浮点数据的文件。
-* TIFF具有Lab色彩空间的文件。
+* 不支持色彩空间不是CMYK、RGB、灰度或位图的PSD文件。 不支持DuoTone、Lab和Indexed色彩空间。
+* 位深度大于16的PSD文件。
+* 包含浮点数据的TIFF文件。
+* 具有Lab色彩空间的TIFF文件。
 
 ## Dynamic Media — 支持的3D文件格式 {#support-3d-formats-dynamic-media}
 

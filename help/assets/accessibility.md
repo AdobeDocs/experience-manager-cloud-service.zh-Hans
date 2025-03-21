@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 2%
+source-wordcount: '1969'
+ht-degree: 3%
 
 ---
 
@@ -30,10 +30,44 @@ Possible topics to cover in this article are below.
 
 # [!DNL Adobe Experience Manager Assets]中作为[!DNL Cloud Service]的辅助功能 {#accessibility-in-aem-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
-[!DNL Adobe Experience Manager]允许内容创建者和发布者在Web上提供令人惊叹的体验。 Adobe通过改进[!DNL Experience Manager]的可访问性，努力将残疾创建者包括进来。 该软件不断得到增强，以满足所有类型的用户的需求，并遵守包括视觉、听觉、移动或其他残疾人士在内的全球标准。
+[!DNL Adobe Experience Manager]允许内容创建者和发布者在Web上提供令人惊叹的体验。 Adobe通过改进[!DNL Experience Manager]的可访问性，努力将残障人士包括进来。 该软件不断得到增强，以满足所有类型的用户的需求，并遵守包括视觉、听觉、移动或其他残疾人士在内的全球标准。
 
 [!DNL Experience Manager]发布合规性信息，其中描述了遵守的标准，概述了产品中的辅助功能，并描述了合规性级别。 无障碍合规性报告可帮助[!DNL Experience Manager]用户了解各种标准的合规程度。 在[!DNL Assets]中完成的增强功能允许所有用户通过键盘、屏幕阅读器、放大镜和其他辅助技术轻松使用这些界面。
 
@@ -44,7 +78,7 @@ Possible topics to cover in this article are below.
 * [无障碍倡议 — 由W3C](https://www.w3.org/WAI/standards-guidelines/aria/)提供的无障碍富互联网应用程序(WAI-ARIA)。
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)。
 
-要读取包含合规性级别详细信息的报告，请参阅[无障碍合规性报告](https://www.adobe.com/cn/accessibility/compliance.html) (ACR)页面。
+要读取包含合规性级别详细信息的报表，请参阅[无障碍合规性报表](https://www.adobe.com/cn/accessibility/compliance.html) (ACR)页面。
 
 <!-- TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
@@ -196,7 +230,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * 屏幕阅读器将搜索筛选器中的选项作为可扩展折叠项播发。
 * 包含混合状态选项的谓词由屏幕阅读器公告。
 
-## 共享资源 {#share-assets}
+## 共享资产 {#share-assets}
 
 <!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
@@ -213,7 +247,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 
 ## 无障碍文档 {#accessible-docs}
 
-[!DNL Experience Manager]提供无障碍文档供残障人士使用。 在Adobe不断改进模板和内容的同时，以下内容有助于暂时访问所提供的内容：
+[!DNL Experience Manager]提供无障碍文档供残障人士使用。 以下内容有助于暂时访问提供的内容，而Adobe将继续改进模板和内容：
 
 * 屏幕阅读器可以阅读文本。
 * 图像和插图具有可用的替代文本。

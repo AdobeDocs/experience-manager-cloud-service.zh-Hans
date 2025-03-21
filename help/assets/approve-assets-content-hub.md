@@ -1,42 +1,76 @@
 ---
 title: 批准 Content Hub 的资产
-description: 了解如何在Assetsas a Cloud Service中批准资源以使它们在Content Hub中可用。
+description: 了解如何在Assets as a Cloud Service中批准资源以使其在Content Hub中可用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 17%
+source-wordcount: '865'
+ht-degree: 20%
 
 ---
 
 # 批准 Content Hub 的资产 {#approve-assets-content-hub}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 ![批准Content Hub的资源](assets/content-hub-approve-assets.png)
 
 >[!AVAILABILITY]
 >
->Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>Content Hub 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 品牌经理和营销人员对品牌资产进行严格控制。 只有获得批准的最新版本的资产才能在Content Hub中使用，从而确保所有渠道和应用程序之间的品牌一致性。
 
-您可以使用AEM Assetsas a Cloud Service批准资源以简化资源管理，确保处理资源的过程受到控制且高效。
+您可以使用AEM Assets as a Cloud Service批准资源以简化资源管理，确保处理资源的过程受到控制且高效。
 
 ## 开始之前 {#pre-requisites}
 
 在开始之前，您应该执行以下操作：
 
-* 访问AEM Assetsas a Cloud Service
+* 访问AEM Assets as a Cloud Service
 
 * 写入权限以编辑资源元数据，从而能够编辑资源的[资源属性](/help/assets/manage-organize-assets-view.md##manage-asset-status)中可用的&#x200B;**[!UICONTROL 状态]**&#x200B;字段。
 
 ## 批准 Content Hub 的资产{#approve-assets-for-content-hub}
 
-Assetsas a Cloud Service中标记为`approved`的资源在Content Hub中自动可用。
+Assets as a Cloud Service中标记为`approved`的资源在Content Hub中自动可用。
 
 >[!NOTE]
 >
@@ -55,13 +89,13 @@ Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Co
 
 ## 使用Assets视图批量批准Content Hub的资源 {#bulk-approve-assets-content-hub}
 
-使用适用于AEM Assetsas a Cloud Service的Assets视图批量批准资源。 批量批准的所有资源随后在Content Hub中可用。
+使用适用于AEM Assets as a Cloud Service的Assets视图批量批准资源。 批量批准的所有资源随后在Content Hub中可用。
 
 要在Assets视图中批量批准文件夹内的资源，请执行以下操作：
 
-1. 选择资产并点击 **[!UICONTROL 批量元数据编辑]**。
+1. 选择资产并点击&#x200B;**[!UICONTROL 批量编辑元数据]**。
 
-1. 选择 **[!UICONTROL 得到正式认可的]** 在 **[!UICONTROL 地位]** 字段可用 [!UICONTROL 特性] 部分。
+1. 在右侧面板的[!UICONTROL 属性]部分，选择&#x200B;**[!UICONTROL 状态]**&#x200B;字段中的&#x200B;**[!UICONTROL 已批准]**。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -105,12 +139,12 @@ Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Co
 
 ## 管理使用Content Hub上传的资源 {#manage-assets-uploaded-using-content-hub}
 
-[有权添加资源的Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以[从本地文件系统向Content Hub添加资源](/help/assets/upload-brand-approved-assets.md)，或从OneDrive或Dropbox数据源导入资源。 所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关，以增强搜索功能。
+[有权添加资源的Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以[从本地文件系统向Content Hub添加资源](/help/assets/upload-brand-approved-assets.md)，或从OneDrive或Dropbox数据源导入资源。 为了增强搜索功能，所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关。
 
 是否显示使用Content Hub上传的资源，取决于您是否[启用了自动审批切换开关](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)：
 
-* 如果启用了 **[!UICONTROL 自动批准]** 切换按钮，您使用 Content Hub 上传的资产将自动可用。
+* 如果启用了&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换按钮，您使用 Content Hub 上传的资产将自动可用。
 
-* 如果禁用 **[!UICONTROL 自动审批]** 切换，则您使用 Content Hub 上传的资产不会自动显示。这些资产可在 资产s as a Cloud Service 环境的 `hydrated-资产s` `hydrated-assets` 文件夹中找到。导航到该文件夹并 [批量编辑](#bulk-approve-assets-content-hub) 这些资产的状态以 `Approved` 使这些资产显示在 Content Hub。
+* 如果禁用&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换，则您使用 Content Hub 上传的资产不会自动显示。这些资产可在 Assets as a Cloud Service 环境的 `hydrated-assets` 文件夹中找到。导航到该文件夹并将这些资产的状态[批量编辑](#bulk-approve-assets-content-hub)为 `Approved`，以使这些资产在 Content Hub 中显示。
 
 ![Content Hub审批流程](/help/assets/assets/content-hub-approval.png)

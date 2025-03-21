@@ -1,41 +1,75 @@
 ---
 title: 管理发布
-description: Publish或将资源取消发布到Experience Manager Assets、Dynamic Media和Brand Portal
+description: 将资源发布或取消发布到Experience Manager Assets、Dynamic Media和Brand Portal
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1582'
 ht-degree: 5%
 
 ---
 
 # 在Experience Manager Assets中管理发布 {#manage-publication-in-aem}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 作为[!DNL Adobe Experience Manager Assets]管理员，您可以将包含资源的资源和文件夹从创作实例发布到[!DNL Experience Manager Assets]、[!DNL Dynamic Media]和[!DNL Brand Portal]。 此外，您还可以计划在稍后的日期或时间发布资产或文件夹。 发布后，用户可以访问资产，并进一步将资产分发给其他用户。 默认情况下，您可以将资源和文件夹发布到[!DNL Experience Manager Assets]。 但是，您可以将[!DNL Experience Manager Assets]配置为启用发布到[[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html)和[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
 
-您可以使用[!DNL Experience Manager Assets]界面中提供的&#x200B;**[!UICONTROL 快速Publish]**&#x200B;或&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项，在资源或文件夹级别发布或取消发布资源。 如果您对[!DNL Experience Manager Assets]中的原始资源或文件夹进行后续修改，则在从[!DNL Experience Manager Assets]重新发布之前，这些更改不会反映在发布实例中。 它可确保进行中的更改在发布实例中不可用。 发布实例中只有管理员发布的已批准更改可用。
+您可以使用[!DNL Experience Manager Assets]界面中提供的&#x200B;**[!UICONTROL 快速发布]**&#x200B;或&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项，在资产或文件夹级别发布或取消发布资产。 如果您对[!DNL Experience Manager Assets]中的原始资源或文件夹进行后续修改，则在从[!DNL Experience Manager Assets]重新发布之前，这些更改不会反映在发布实例中。 它可确保进行中的更改在发布实例中不可用。 发布实例中只有管理员发布的已批准更改可用。
 
-* [使用Quick Publish的Publish资源](#quick-publish)
-* 使用“管理发布”的[Publish资源](#manage-publication)
-* [稍后Publish资源](#publish-assets-later)
-* [Publish资源到Dynamic Media](#publish-assets-to-dynamic-media)
-* [Publish资源到Brand Portal](#publish-assets-to-brand-portal)
+* [使用快速发布发布功能发布资源](#quick-publish)
+* [使用管理发布](#manage-publication)发布资源
+* [稍后发布资产](#publish-assets-later)
+* [将资产发布到Dynamic Media](#publish-assets-to-dynamic-media)
+* [将资源发布到Brand Portal](#publish-assets-to-brand-portal)
 * [要求发布](#request-publication)
 * [限制和提示](#limitations-and-tips)
 
-## 使用Quick Publish的Publish资源 {#quick-publish}
+## 使用快速发布发布功能发布资源 {#quick-publish}
 
-通过快速发布，可立即将内容发布到所选目标。 从[!DNL Experience Manager Assets]控制台中，导航到父文件夹，然后选择要发布的所有资源或文件夹。 在工具栏中单击&#x200B;**[!UICONTROL 快速Publish]**&#x200B;选项，然后从下拉列表中选择要发布资源的目标。
+通过快速发布，可立即将内容发布到所选目标。 从[!DNL Experience Manager Assets]控制台中，导航到父文件夹，然后选择要发布的所有资源或文件夹。 在工具栏中单击&#x200B;**[!UICONTROL 快速发布]**&#x200B;选项，然后从您要发布资产的下拉列表中选择目标。
 
 ![快速发布](assets/quick-publish-to-aem.png)
 
-## 使用管理发布管理Publish资源 {#manage-publication}
+## 使用“管理发布”发布资源 {#manage-publication}
 
 管理发布允许您向所选目标发布内容或从中取消发布内容，[将内容从DAM存储库添加到发布列表，[包含文件夹设置](#include-folder-settings)以发布所选文件夹的内容并应用筛选器，以及[将发布安排](#publish-assets-later)安排在以后的日期或时间。](#add-content)
 
@@ -46,17 +80,17 @@ ht-degree: 5%
 以下选项在[!UICONTROL 管理发布]界面中可用：
 
 * [!UICONTROL 操作]
-   * `Publish`： Publish资源和文件夹到所选目标
+   * `Publish`：将资源和文件夹发布到所选目标
    * `Unpublish`：从目标取消发布资源和文件夹
 
 * [!UICONTROL 目标]
-   * `Publish`： Publish资源和文件夹到[!DNL Experience Manager Assets] (`AEM`)
-   * `Dynamic Media`： Publish资源到[!DNL Dynamic Media]
-   * `Brand Portal`：Publish资源和文件夹到[!DNL Brand Portal]
+   * `Publish`：将资源和文件夹发布到[!DNL Experience Manager Assets] (`AEM`)
+   * `Dynamic Media`：将资源发布到[!DNL Dynamic Media]
+   * `Brand Portal`：将资源和文件夹发布到[!DNL Brand Portal]
 
 * [!UICONTROL 计划]
-   * `Now`：立即Publish资源
-   * `Later`：基于`Activation`日期或时间的Publish资源
+   * `Now`：立即发布资源
+   * `Later`：根据`Activation`日期或时间发布资源
 
 若要继续，请单击&#x200B;**[!UICONTROL 下一步]**。 根据选择，**[!UICONTROL 范围]**&#x200B;选项卡反映不同的选项。 **[!UICONTROL 添加内容]**&#x200B;和&#x200B;**[!UICONTROL 包含文件夹设置]**&#x200B;的选项仅可用于将资产和文件夹发布到[!DNL Experience Manager Assets] (`Destination: Publish`)。
 
@@ -93,17 +127,17 @@ Only the selected folder content and references are published.
 
 ![包含文件夹设置](assets/manage-publication-include-folder-settings.png)
 
-应用筛选器后，单击&#x200B;**[!UICONTROL 确定]**，然后单击&#x200B;**[!UICONTROL Publish]**。 单击“发布”按钮时，将显示确认消息`Resource(s) have been scheduled for publication`。 选定的资源和（或）文件夹将发布到基于计划程序（`Now`或`Later`）的已定义目标。 登录到发布实例，验证是否已成功发布资产和（或）文件夹。
+应用筛选器后，单击&#x200B;**[!UICONTROL 确定]**，然后单击&#x200B;**[!UICONTROL 发布]**。 单击“发布”按钮时，将显示确认消息`Resource(s) have been scheduled for publication`。 选定的资源和（或）文件夹将发布到基于计划程序（`Now`或`Later`）的已定义目标。 登录到发布实例，验证是否已成功发布资产和（或）文件夹。
 
-![Publish到AEM](assets/manage-publication-publish-aem.png)
+![发布到AEM](assets/manage-publication-publish-aem.png)
 
-在上图中，您可以看到&#x200B;**[!UICONTROL Publish Target]**&#x200B;属性的不同值。 让我们回顾您选择发布到[!DNL Experience Manager Assets] (`Destination: Publish`)的事实。 那么，它为何显示只有一个文件夹和一个资产发布到`AEM`，而另外两个资产同时发布到`AEM`和`Dynamic Media`？
+在上图中，您可以看到&#x200B;**[!UICONTROL 发布目标]**&#x200B;属性的不同值。 让我们回顾您选择发布到[!DNL Experience Manager Assets] (`Destination: Publish`)的事实。 那么，它为何显示只有一个文件夹和一个资产发布到`AEM`，而另外两个资产同时发布到`AEM`和`Dynamic Media`？
 
-在这里，您必须了解文件夹属性的角色。 文件夹的&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;属性在发布过程中扮演着重要角色。 要查看文件夹的属性，请选择一个文件夹，然后单击工具栏中的&#x200B;**[!UICONTROL 属性]**。 有关资产，请参阅其父文件夹的属性。
+在这里，您必须了解文件夹属性的角色。 文件夹的&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;属性在发布中起着重要作用。 要查看文件夹的属性，请选择一个文件夹，然后单击工具栏中的&#x200B;**[!UICONTROL 属性]**。 有关资产，请参阅其父文件夹的属性。
 
-下表说明发布如何根据定义的&#x200B;**[!UICONTROL 目标]**&#x200B;和&#x200B;**[!UICONTROL Dynamic Media Publish模式]**&#x200B;进行：
+下表说明发布如何根据定义的&#x200B;**[!UICONTROL 目标]**&#x200B;和&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;进行：
 
-| [!UICONTROL 目标] | [!UICONTROL Dynamic Media Publish模式] | [!UICONTROL Publish Target] | 允许的内容 |
+| [!UICONTROL 目标] | [!UICONTROL Dynamic Media发布模式] | [!UICONTROL 发布目标] | 允许的内容 |
 | --- | --- | --- | --- |
 | 发布 | 选择性发布 | `AEM` | Assets和（或）文件夹 |
 | 发布 | 即时 | `AEM` 和 `Dynamic Media` | Assets和（或）文件夹 |
@@ -118,16 +152,16 @@ Only the selected folder content and references are published.
 >
 >不支持将文件夹发布到[!DNL Dynamic Media]。
 >
->如果您选择文件夹(`Selective Publish`)并选择[!DNL Dynamic Media]目标，则[!UICONTROL Publish Target]属性将反映`None`。
+>如果您选择文件夹(`Selective Publish`)并选择[!DNL Dynamic Media]目标，则[!UICONTROL 发布目标]属性将反映`None`。
 
 
 现在，让我们将上述使用案例中的&#x200B;**[!UICONTROL 目标]**&#x200B;更改为&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;并验证结果。 这样一来，只将`Selective Publish`文件夹的资产发布到[!DNL Dynamic Media]。 `Immediate`和`Upon Activation`文件夹的资产未发布，并反映了`None`。
 
-![Publish到Dynamic Media](assets/manage-publication-dynamic-media.png)
+![发布到Dynamic Media](assets/manage-publication-dynamic-media.png)
 
 >[!NOTE]
 >
->如果未在您的[!DNL Experience Manager Assets]实例上配置[!DNL Dynamic Media]，并且&#x200B;**[!UICONTROL 目标]**&#x200B;是&#x200B;**[!UICONTROL Publish]**，则资源和文件夹始终发布到`AEM`。
+>如果未在您的[!DNL Experience Manager Assets]实例上配置[!DNL Dynamic Media]，并且&#x200B;**[!UICONTROL 目标]**&#x200B;是&#x200B;**[!UICONTROL 发布]**，则资源和文件夹始终发布到`AEM`。
 >
 >发布到[!DNL Brand Portal]与文件夹属性无关。 所有资源、文件夹和收藏集都可以发布到Brand Portal。 请参阅[将资源发布到Brand Portal](#publish-assets-to-brand-portal)。
 
@@ -137,13 +171,13 @@ Only the selected folder content and references are published.
 >
 >但是，您可以删除现有的自定义项以使用新的[!DNL Manager Publication]功能。
 
-## 稍后Publish资源 {#publish-assets-later}
+## 稍后发布资产 {#publish-assets-later}
 
 要计划在稍后的日期或时间发布资产的工作流，请执行以下操作：
 
 1. 从[!UICONTROL Experience Manager Assets]控制台中，导航到父文件夹，然后选择计划发布的所有资源或文件夹。
 1. 单击工具栏中的&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项。
-1. 单击&#x200B;**[!UICONTROL 操作]**&#x200B;中的&#x200B;**[!UICONTROL Publish]**，然后选择要发布内容的&#x200B;**[!UICONTROL 目标]**。
+1. 单击&#x200B;**[!UICONTROL 操作]**&#x200B;中的&#x200B;**[!UICONTROL 发布]**，然后选择要发布内容的&#x200B;**[!UICONTROL 目标]**。
 1. 在&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]**。
 1. 选择&#x200B;**[!UICONTROL 激活日期]**&#x200B;并指定日期和时间。 单击&#x200B;**[!UICONTROL 下一步]**。
 
@@ -156,22 +190,22 @@ Only the selected folder content and references are published.
 
    登录到目标实例以验证已发布的资源（取决于计划的日期或时间）。
 
-## Publish资源到Dynamic Media {#publish-assets-to-dynamic-media}
+## 将资产发布到Dynamic Media {#publish-assets-to-dynamic-media}
 
-仅将资源发布到[!DNL Dynamic Media]。 但是，发布行为因文件夹属性而异。 文件夹可以将&#x200B;**[!UICONTROL Dynamic Media Publish模式]**&#x200B;配置为选择性发布，这可能为以下任一情况：
+仅将资源发布到[!DNL Dynamic Media]。 但是，发布行为因文件夹属性而异。 文件夹可以将&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;配置为选择性发布，这可以是以下任一选项：
 
 * `Selective Publish`
 * `Immediate`
 * `Upon Activation`
 
-**[!UICONTROL Immediate]**&#x200B;和&#x200B;**[!UICONTROL On Activation]**&#x200B;模式的发布过程一致，但&#x200B;**[!UICONTROL 选择性Publish]**&#x200B;有所不同。 请参阅[在Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html)中配置文件夹级别的选择性发布。 在文件夹中配置选择性发布后，可以执行以下任一操作：
+**[!UICONTROL 立即]**&#x200B;和&#x200B;**[!UICONTROL 激活时]**&#x200B;模式的发布过程一致，但&#x200B;**[!UICONTROL 选择性发布]**&#x200B;不同。 请参阅[在Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html)中配置文件夹级别的选择性发布。 在文件夹中配置选择性发布后，可以执行以下任一操作：
 
 * [使用“管理发布”有选择地将资源发布到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
 * [使用“管理发布”从Dynamic Media或Experience Manager有选择地取消发布资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [Publish资源到Dynamic Media或使用Quick Publish进行Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
+* [使用快速发布将资源发布到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
 * [通过搜索结果有选择地发布或取消发布资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
 
-## Publish资源到Brand Portal {#publish-assets-to-brand-portal}
+## 将资源发布到Brand Portal {#publish-assets-to-brand-portal}
 
 您可以将资源、文件夹和收藏集发布到[!DNL Experience Manager Assets Brand Portal]实例。
 

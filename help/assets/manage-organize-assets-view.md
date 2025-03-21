@@ -5,17 +5,51 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 73%
+source-wordcount: '1661'
+ht-degree: 71%
 
 ---
 
 # 管理资源 {#manage-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以通过 [!DNL Assets view] 简单易用的用户界面，执行各种数字资源管理 (DAM) 任务。添加资源之后，您可以搜索、下载、移动、复制、重命名、删除、更新和编辑资源。
 
@@ -142,7 +176,7 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
 
 ### 设置审批目标 {#set-approval-target}
 
-通过Assets视图，您可以根据在“资源详细信息”页面上的&#x200B;**批准Dynamic Media**&#x200B;字段中设置的值，使用OpenAPI功能和/或Content Hub将批准的资源发布到。
+通过Assets视图，您可以根据在“资源详细信息”页面上的&#x200B;**批准目标**&#x200B;字段中设置的值，使用OpenAPI功能和/或Content Hub将批准的资源发布到Dynamic Media。
 
 要设置审批目标，请执行以下操作：
 
@@ -152,7 +186,7 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
 
 1. 如果您在步骤2中选择了&#x200B;**已批准**，请选择一个批准目标。 可能的值包括“交付”和“Content Hub”。
 
-   * **投放**&#x200B;是下拉菜单中的默认选项，如果将资产和[Dynamic Media均启用了Experience Manager Assets，则它将通过OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)将资产发布到[Content Hub](/help/assets/product-overview.md)。
+   * **投放**&#x200B;是下拉菜单中的默认选项，如果将资产和[Dynamic Media均启用了Experience Manager Assets，则它将资产发布到[Content Hub](/help/assets/product-overview.md)和OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)。
 
    * 选择&#x200B;**Content Hub**&#x200B;会将资源仅发布到Content Hub。 仅当Content Hub启用了Experience Manager Assets时，它才会显示为选项。
 
@@ -179,11 +213,11 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
 
 下表说明了显示`Approval Target`下拉列表和默认批准目标(基于您的AEM as a Cloud Service环境中使用OpenAPI和Content Hub启用DM)的先决条件：
 
-| 带有OpenAPI的Dynamic Media | Content Hub | 是否显示批准目标下拉列表？ | 已批准资产的默认审批目标 | Publish目标 |
+| 带OpenAPI的Dynamic Media | Content Hub | 是否显示批准目标下拉列表？ | 已批准资产的默认审批目标 | 发布目标 |
 | --- | --- | --- | --- |---|
-| 已启用 | 已启用 | 是 | 交付 | Dynamic Media与OpenAPI和Content Hub |
+| 已启用 | 已启用 | 是 | 交付 | 包含OpenAPI和Content Hub的Dynamic Media |
 | 未启用 | 已启用 | 是 | Content Hub | Content Hub |
-| 已启用 | 未启用 | 是 | 交付 | 带有OpenAPI的Dynamic Media |
+| 已启用 | 未启用 | 是 | 交付 | 带OpenAPI的Dynamic Media |
 | 未启用 | 未启用 | 否 | 不适用 | 不适用 |
 
 ### 设置资源过期日期 {#set-asset-expiration-date}

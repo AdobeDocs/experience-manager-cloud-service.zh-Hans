@@ -3,25 +3,59 @@ title: 在 [!DNL the Content Hub]中预览资源及其属性
 description: 了解如何在 [!DNL Content Hub]中预览资源和属性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 10%
+source-wordcount: '710'
+ht-degree: 14%
 
 ---
 
 # 在Content Hub中预览资源及其属性 {#asset-properties}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 ![元数据横幅图像](assets/metadata-banner-image.png)
 
 >[!AVAILABILITY]
 >
->Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>Content Hub 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [!DNL The Content Hub]允许您查看对有效分配资产至关重要的资产的相关信息。 它是资产所有可用数据的集合。
 
@@ -68,9 +102,9 @@ ht-degree: 10%
       <td>图像</td>
       <td>
         <ul>
-            <li>[！UICONTROLJPEG]</li> 
+            <li>[！UICONTROL JPEG]</li> 
             <li>[！UICONTROL PNG]</li> 
-            <li>[！UICONTROLSVG]</li>
+            <li>[！UICONTROL SVG]</li>
         </ul>
       </td>
      </tr>
@@ -97,7 +131,7 @@ ht-degree: 10%
       <td>打印介质</td>
       <td>
         <ul>
-            <li>[！UICONTROLPDF]</li>  
+            <li>[！UICONTROL PDF]</li>  
         </ul>
       </td>
      </tr>  
@@ -114,7 +148,7 @@ ht-degree: 10%
 
 * **智能标记：** [!DNL The Content Hub]使用Adobe Sensei的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 然后，此内容智能可用于将相关标记应用到其他资产集。 智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
 
-* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可帮助您使用通过Adobe的Sensei AI功能在资源中自动识别的颜色识别资源。
+* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可帮助您识别使用通过Adobe的Sensei AI功能在资源中自动识别的颜色的资源。
 
 * 上传日期
 

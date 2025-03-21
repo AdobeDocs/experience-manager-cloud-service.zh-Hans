@@ -5,20 +5,57 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: baffc15d482ad3b57337c1ee5fe3e622253ae8cb
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3596'
 ht-degree: 6%
 
 ---
 
 # 管理图像预设{#managing-image-presets}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
+
 图像预设使Adobe Experience Manager Assets能够动态地交付不同大小、不同格式的图像，或交付使用动态生成的其他图像属性的图像。 每个图像预设表示用于显示图像的预定义的调整大小和格式命令集合。 创建图像预设时，可以选择图像投放的大小。 您还可以选择格式设置命令，以便在交付图像以进行查看时优化图像的外观。
 
 管理员可以创建用于导出资产的预设。 用户可以在导出图像时选择预设，这样还可以按照管理员指定的规范重新格式化图像。
 
-您还可以创建响应式图像预设。 如果将响应式图像预设应用于资源，则这些资源会根据查看它们的设备或屏幕大小而发生更改。 可将图像预设配置为除RGB或灰色之外还可在色彩空间中使用CMYK。
+您还可以创建响应式图像预设。 如果将响应式图像预设应用于资源，则这些资源会根据查看它们的设备或屏幕大小而发生更改。 可将图像预设配置为除RGB或灰度之外在色彩空间中使用CMYK。
 
 本节介绍如何创建、修改和一般管理图像预设。 无论您何时预览图像，都可以将图像预设应用于图像。 请参阅[应用图像预设](/help/assets/dynamic-media/image-presets.md)。
 
@@ -30,7 +67,7 @@ ht-degree: 6%
 
 像宏一样，图像预设是预先定义的名称下保存的大小和格式命令集合。 要了解图像预设的工作方式，请假设您的网站要求每个产品图像以不同的大小、不同的格式和压缩率显示，以实现桌面和移动设备交付。
 
-您可以创建两个图像预设：500 x 500像素用于桌面，150 x 150像素用于移动设备。 您创建了两个图像预设，一个名为`Enlarge`，用于以500x500像素显示图像，另一个名为`Thumbnail`，用于以150 x 150像素显示图像。 为了投放大小为`Enlarge`和`Thumbnail`的图像，Experience Manager查找`Enlarge Image Preset`和`Thumbnail Image Preset`的定义。 然后，Experience Manager根据每个图像预设的大小和格式规范动态生成图像。
+您可以创建两个图像预设：500 x 500像素用于桌面，150 x 150像素用于移动设备。 您创建了两个图像预设，一个名为`Enlarge`，用于以500x500像素显示图像，另一个名为`Thumbnail`，用于以150 x 150像素显示图像。 为了投放大小为`Enlarge`和`Thumbnail`的图像，Experience Manager查找`Enlarge Image Preset`和`Thumbnail Image Preset`的定义。 然后，Experience Manager会根据每个图像预设的大小和格式规范动态生成图像。
 
 动态交付图像时尺寸减小的图像可能会失去锐利度和细节。 因此，每个图像预设都包含格式控制，用于在以特定大小交付图像时优化图像。 这些控件可确保图像在传送到您的网站或应用程序时锐利而清晰。
 
@@ -38,7 +75,7 @@ ht-degree: 6%
 
 ## 管理图像预设 {#managing-image-presets-1}
 
-您可以通过选择Experience Manager徽标访问全局导航控制台，然后选择“工具”图标并导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**，来管理Experience Manager的图像预设。
+您可以通过选择Experience Manager徽标访问全局导航控制台，然后选择“工具”图标并导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**，来管理Experience Manager中的图像预设。
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -48,26 +85,26 @@ ht-degree: 6%
 >
 >您&#x200B;*不*&#x200B;需要发布图像预设，因为图像预设会自动发布。
 >
->请参阅[Publish图像预设](#publishing-image-presets)。
+>请参阅[发布图像预设](#publishing-image-presets)。
 
 >[!NOTE]
 >
 >当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 呈现版本]**&#x200B;时，系统会显示各种呈现版本。 您可以增加或减少显示的图像预设数。 请参阅[增加显示的图像预设数](#increasing-or-decreasing-the-number-of-image-presets-that-display)。
 
-### Adobe Illustrator (AI)、PostScript®(EPS)和PDF文件格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Adobe Illustrator (AI)、PostScript® (EPS)和PDF文件格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
-如果您打算支持AI、EPS和PDF文件的摄取，以便生成这些文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
+如果您打算支持摄取AI、EPS和PDF文件，以便生成这些文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
 
-Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager Assets的上下文中，主要区别如下：
+Adobe Illustrator的文件格式是PDF的一个变体。 在Experience Manager Assets的上下文中，主要区别如下：
 
 * Adobe Illustrator文档由具有多层的单个页面组成。 每个图层都提取为Illustrator主资源下的PNG子资源。
-* PDF文档由一个或多个页面组成。 每个页面都提取为主多页PDFPDF文档下的单页文档子资产。
+* PDF文档由一个或多个页面组成。 每个页面都提取为多页PDF主文档下的单页PDF子资产。
 
 `Create Sub Asset process`组件在整个`DAM Update Asset`工作流中创建子资产。 要在工作流中查看此流程组件，请导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新资产]** > **[!UICONTROL 编辑]**。
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-打开资产时，您可以查看子资产或页面，选择“内容”菜单，然后选择&#x200B;**[!UICONTROL 子资产]**&#x200B;或&#x200B;**[!UICONTROL 页面]**。 子资产是真正的资产。 `Create Sub Asset`工作流组件提取PDF页。 然后，它们将存储为主资产下方的`page1.pdf`、`page2.pdf`等。 存储完它们后，`DAM Update Asset`工作流会处理它们。
+打开资产时，您可以查看子资产或页面，选择“内容”菜单，然后选择&#x200B;**[!UICONTROL 子资产]**&#x200B;或&#x200B;**[!UICONTROL 页面]**。 子资产是真正的资产。 `Create Sub Asset`工作流组件提取PDF页面。 然后，它们将存储为主资产下方的`page1.pdf`、`page2.pdf`等。 存储完它们后，`DAM Update Asset`工作流会处理它们。
 
 要使用Dynamic Media预览和生成AI、EPS或PDF文件的动态演绎版，需要执行以下处理步骤：
 
@@ -92,7 +129,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager Assets�
 
 #### 栅格化PDF/AI图像预览呈现版本选项 {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![栅格化PDF或AI工作流的参数](assets/rasterize_pdf_ai_image_preview.png)
+![用于栅格化PDF或AI工作流的参数](assets/rasterize_pdf_ai_image_preview.png)
 
 栅格化PDF或AI工作流的参数
 
@@ -103,13 +140,13 @@ Adobe Illustrator的文件格式是PDF的变体。 在Experience Manager Assets�
 | 最大高度 | 2048 | 生成的预览演绎版的最大高度（以像素为单位）。 |
 | 解决方法 | 72 | 栅格化第一页的分辨率，以ppi为单位（每英寸像素）。 |
 
-使用默认进程参数，将PDF/AI文档的第一页栅格化为72 ppi，生成的预览图像大小为2048 x 2048像素。 对于典型部署，您可以将分辨率提高到至少150 ppi或更高。 例如，300 ppi的美国信件大小文档的最大宽度和高度分别需要2550 x 3300像素。
+使用默认进程参数，PDF/AI文档的第一页栅格化为72 ppi，生成的预览图像大小为2048 x 2048像素。 对于典型部署，您可以将分辨率提高到至少150 ppi或更高。 例如，300 ppi的美国信件大小文档的最大宽度和高度分别需要2550 x 3300像素。
 
 “最大宽度”和“最大高度”可限制栅格化的分辨率。 例如，如果最大值保持不变，且“分辨率”设置为300 ppi，则US Letter文档将栅格化为186 ppi。 也就是说，文档是1581 x 2046像素。
 
 `Rasterize PDF/AI Image Preview Rendition`进程组件定义了最大值，以确保它不会在内存中创建过大的映像。 如此大的映像可能会溢出提供给JVM (Java™虚拟机)的内存。 必须注意为JVM提供足够的内存来管理配置的并行工作流数，每个工作流都有可能以配置的最大大小创建映像。
 
-### InDesign(INDD)文件格式 {#indesign-indd-file-format}
+### InDesign (INDD)文件格式 {#indesign-indd-file-format}
 
 如果要支持INDD文件的摄取，以便生成此文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
 
@@ -129,8 +166,8 @@ Dynamic Media集成使用以下脚本：
 | ExtendScript名称 | 默认 | 描述 |
 |---|---|---|
 | ThumbnailExport.jsx | 是 | 生成300 PPI `thumbnail.jpg`呈现版本，该呈现版本已由`Dynamic Media Process Image Assets`进程组件优化并转换为PTIFF呈现版本。 |
-| JPEGPagesExport.jsx | 是 | 为每个页面生成一个300 PPIJPEG子资源。 JPEG子资源是存储在InDesign资源下的实际资源。 `DAM Update Asset`工作流优化并将其转换为PTIFF。 |
-| PDFPagesExport.jsx | 否 | 为每个页面生成一个PDF子资源。 将按照前面所述处理PDF子资源。 由于PDF仅包含单个页面，因此不会生成任何子资源。 |
+| JPEGPagesExport.jsx | 是 | 为每个页面生成一个300 PPI JPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 `DAM Update Asset`工作流优化并将其转换为PTIFF。 |
+| PDFPagesExport.jsx | 否 | 为每个页面生成一个PDF子资源。 如前所述，处理PDF子资源。 由于PDF仅包含单个页面，因此不会生成任何子资源。 |
 
 ### 配置图像缩略图大小 {#configuring-image-thumbnail-size}
 
@@ -164,11 +201,11 @@ Dynamic Media集成使用以下脚本：
 
 ### 增加或减少显示的图像预设数 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-在预览资产时，您创建的图像预设可用作动态演绎版。 从&#x200B;**[!UICONTROL 详细信息视图>呈现版本]**&#x200B;查看资源时，Experience Manager显示各种动态呈现版本。 您可以增加或减少显示的演绎版限制。
+在预览资产时，您创建的图像预设可用作动态演绎版。 从&#x200B;**[!UICONTROL 详细信息视图>呈现版本]**&#x200B;查看资源时，Experience Manager会显示各种动态呈现版本。 您可以增加或减少显示的演绎版限制。
 
 **增加或减少显示的图像预设数：**
 
-1. 导航到CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
+1. 导航到CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 导航到`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`上的图像预设列表节点
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -191,11 +228,11 @@ Dynamic Media集成使用以下脚本：
 
 如果您打算支持AI、PDF和EPS文件的摄取，以便生成这些文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
 
-请参阅[Adobe Illustrator (AI)、PostScript®(EPS)和PDF文件格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)。
+请参阅[Adobe Illustrator (AI)、PostScript® (EPS)和PDF文件格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)。
 
 如果要支持INDD文件的摄取，以便生成此文件格式的动态演绎版，请在创建图像预设之前查看以下信息。
 
-请参阅[InDesign(INDD)文件格式](#indesign-indd-file-format)。
+请参阅[InDesign (INDD)文件格式](#indesign-indd-file-format)。
 
 **创建图像预设：**
 
@@ -218,7 +255,7 @@ Dynamic Media集成使用以下脚本：
 
 要创建响应式图像预设，请执行[创建图像预设](#creating-image-presets)中的步骤。 在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请擦除值并将其留空。
 
-将其留空将告知Experience Manager此图像预设是响应的。 您可以根据需要调整其他值。
+将其保留为空将告知Experience Manager此图像预设可响应。 您可以根据需要调整其他值。
 
 >[!NOTE]
 >
@@ -244,7 +281,7 @@ Dynamic Media集成使用以下脚本：
 | --- | --- |
 | **名称** | 请输入一个描述性名称，且不含任何空格。 为帮助用户识别此图像预设，请在名称中包含图像大小规范。 |
 | **宽度和高度** | 输入交付图像的像素大小。 宽度和高度必须大于0像素。 如果任一值为0，则不会创建预设。 如果两个值都为空，则会创建响应式图像预设。 |
-| **格式** | 从菜单中选择一种格式。<br>选择&#x200B;**JPEG**&#x200B;提供以下其他选项：<br>· **质量** -JPEG质量范围为1-100。 拖动滑块时，比例可见。<br>· **启用JPG色度缩减像素采样** — 由于眼睛对高频颜色信息的敏感性低于高频亮度，因此JPEG图像将图像信息划分为亮度和颜色分量。 当JPEG图像被压缩时，亮度分量以全分辨率保留，而彩色分量通过平均像素组而被缩减采样。 缩减取样会将数据量减少到一半或三分之一，而且对感知质量的影响最小。 缩减像素取样不适用于灰度图像。 此技术可减少可用于高对比度（例如，具有叠加文本的图像）的压缩量。<br><br>选择&#x200B;**带有Alpha的GIF**&#x200B;或&#x200B;**GIF**&#x200B;可提供以下额外的&#x200B;**GIF色彩量化**&#x200B;选项：<br>· **类型** — 选择&#x200B;**自适应**（默认值）、**Web**&#x200B;或&#x200B;**Macintosh**。 如果选择&#x200B;**Alpha为**&#x200B;的GIF，则Macintosh选项不可用。<br>· **Dither** — 选择&#x200B;**扩散**&#x200B;或&#x200B;**关闭**。<br>· **颜色数** — 输入数字2 - 256。<br>· **颜色列表** — 输入逗号分隔的列表。 例如，对于白色、灰色和黑色，输入`000000,888888,ffffff`。<br><br>选择&#x200B;**PDF**、**TIFF**&#x200B;或&#x200B;**带有Alpha**&#x200B;的TIFF可提供此附加选项：<br>· **压缩** — 选择压缩算法。 PDF的算法选项为&#x200B;**None**、**Zip**&#x200B;和&#x200B;**Jpeg**；TIFF的算法选项为&#x200B;**None**、**LZW**、**Jpeg**&#x200B;和&#x200B;**Zip**；Alpha的TIFF的算法选项为&#x200B;**None**、**LZW**&#x200B;和&#x200B;**Zip**。<br><br>选择&#x200B;**PNG**、Alpha为&#x200B;**的** PNG或&#x200B;**EPS**&#x200B;不提供其他选项。 |
+| **格式** | 从菜单中选择一种格式。<br>选择&#x200B;**JPEG**&#x200B;可提供以下其他选项：<br>· **质量** - JPEG质量范围为1-100。 拖动滑块时，比例可见。<br>· **启用JPG色度缩减像素采样** — 由于眼睛对高频颜色信息的敏感性低于高频亮度，因此JPEG图像将图像信息划分为亮度和颜色分量。 当JPEG图像被压缩时，亮度分量以全分辨率保留，而颜色分量通过平均像素组而被缩减采样。 缩减取样会将数据量减少到一半或三分之一，而且对感知质量的影响最小。 缩减像素取样不适用于灰度图像。 此技术可减少可用于高对比度（例如，具有叠加文本的图像）的压缩量。<br><br>选择&#x200B;**GIF**&#x200B;或&#x200B;**带有Alpha的GIF**&#x200B;可提供这些额外的&#x200B;**GIF颜色量化**&#x200B;选项：<br>· **类型** — 选择&#x200B;**自适应**（默认值）、**Web**&#x200B;或&#x200B;**Macintosh**。 如果选择&#x200B;**GIF与Alpha**，则Macintosh选项不可用。<br>· **Dither** — 选择&#x200B;**扩散**&#x200B;或&#x200B;**关闭**。<br>· **颜色数** — 输入数字2 - 256。<br>· **颜色列表** — 输入逗号分隔的列表。 例如，对于白色、灰色和黑色，输入`000000,888888,ffffff`。<br><br>选择&#x200B;**PDF**、**TIFF**&#x200B;或带有Alpha **的** TIFF提供了此附加选项：<br>· **压缩** — 选择压缩算法。 PDF的算法选项为&#x200B;**None**、**Zip**&#x200B;和&#x200B;**Jpeg**；对于TIFF，这些选项为&#x200B;**None**、**LZW**、**Jpeg**&#x200B;和&#x200B;**Zip**；对于TIFF和Alpha，这些选项为&#x200B;**None**、**LZW**&#x200B;和&#x200B;**Zip**。<br><br>选择&#x200B;**PNG**、Alpha的&#x200B;**PNG**&#x200B;或&#x200B;**EPS**&#x200B;不提供其他选项。 |
 | **锐化** | 选择&#x200B;**启用简单锐化**&#x200B;可在执行所有缩放操作后将基本锐化滤镜应用于图像。 锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 |
 
 #### 高级选项卡选项 {#advanced-tab-options}
@@ -297,7 +334,7 @@ Dynamic Media集成使用以下脚本：
     </ul>
     <div>
       中介绍了锐化
-     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">在Experience ManagerDynamic Media中使用图像锐化</a>视频、<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">锐化图像</a>联机帮助主题以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">在Dynamic Media Classic中锐化图像的最佳实践</a>可下载PDF中。
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">在Experience Manager Dynamic Media中使用图像锐化</a>视频、<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">锐化图像</a>联机帮助主题以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">在Dynamic Media Classic中锐化图像的最佳实践</a>可下载的PDF。
     </div> </td>
   </tr>
   <tr>
@@ -326,7 +363,7 @@ Dynamic Media集成使用以下脚本：
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>非核心Dynamic Media服务：SVG、图像渲染和Web打印</li>
+     <li>非核心Dynamic Media服务：SVG、图像渲染和Web到打印</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -334,7 +371,7 @@ Dynamic Media集成使用以下脚本：
 
 ### 使用图像修饰符定义图像预设选项 {#defining-image-preset-options-with-image-modifiers}
 
-除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖于Dynamic Media图像渲染API，在[HTTP协议参考](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中进行了详细定义。
+除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖于Dynamic Media图像渲染API，并在[HTTP协议引用](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中详细定义。
 
 以下是一些使用图像修饰符可以执行操作的基本示例。
 
@@ -391,12 +428,12 @@ Dynamic Media集成使用以下脚本：
 1. 选择预设，然后选择&#x200B;**[!UICONTROL 编辑]**。 将打开&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口。
 1. 进行更改并选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您的更改，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消您的更改。
 
-### Publish图像预设 {#publishing-image-presets}
+### 发布图像预设 {#publishing-image-presets}
 
 系统会自动为您发布图像预设。
 
 ### 删除图像预设 {#deleting-image-presets}
 
-1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后选择“工具”图标。
+1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后选择工具图标。
 1. 导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**。
 1. 选择预设，然后选择&#x200B;**[!UICONTROL 删除]**。 Dynamic Media会确认您要删除它。 选择&#x200B;**[!UICONTROL 删除]**&#x200B;以删除，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以返回图像预设。

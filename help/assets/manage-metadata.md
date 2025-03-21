@@ -6,17 +6,51 @@ mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Architect, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1990'
 ht-degree: 9%
 
 ---
 
 # 管理数字资源的元数据 {#managing-metadata-for-digital-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -53,11 +87,11 @@ ht-degree: 9%
 
 更多元数据可帮助您进一步分类资源，在数字信息量增长时非常有用。 它可以仅根据文件名管理数百个文件。 但是，这种方法不具备扩展性。随着涉及的人数以及管理的资源数的增加，这种方法很快就会出现不足。
 
-随着元数据的增加，数字资源的价值会随之增长，因为资源会变得：
+随着元数据的增加，数字资产的价值会随之增长，因为资产会变得：
 
 * 更易于访问 - 系统和用户可以轻松地找到它。
-* 更易于管理 - 您可以轻松地找到具有一组相同属性的资源并对其应用更改。
-* 完整 - 元数据越多，资源就能携带更多信息和具体情境。
+* 更易于管理 - 您可以轻松地找到具有一组相同属性的资产并对其应用更改。
+* 完整 - 元数据越多，资产就能携带更多信息和具体情境。
 
 出于这些原因，[!DNL Assets]为您提供了创建、管理和交换数字资源元数据的正确方法。
 
@@ -70,9 +104,9 @@ ht-degree: 9%
 技术元数据侧重于数字资产的技术方面，提供与以下内容相关的关键信息：
 
 * 文件大小
-* 格式
+* 格式化
 * 解决方法
-* 尺寸
+* 维度
 * 颜色模式
 
 此类元数据可帮助用户了解并高效使用数字资源。
@@ -137,7 +171,7 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用于所有元数据管理的开放标准。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司都支持XMP标准，因为它提供了丰富的内容模型。 XMP Standard和[!DNL Experience Manager Assets]的用户有一个强大的平台可以构建。 有关详细信息，请参阅[XMP](https://www.adobe.com/products/xmp.html)。
+[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用于所有元数据管理的开放标准。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司支持XMP标准，因为它提供了丰富的内容模型。 XMP标准版和[!DNL Experience Manager Assets]的用户有一个强大的平台可以构建。 有关详细信息，请参阅[XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 

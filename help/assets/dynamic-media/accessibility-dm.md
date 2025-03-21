@@ -7,14 +7,51 @@ content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 1%
+source-wordcount: '684'
+ht-degree: 3%
 
 ---
 
 # Dynamic Media 中的辅助功能 {#accessibility-in-dm}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 {{work-with-dynamic-media}}
 
@@ -22,9 +59,9 @@ Dynamic Media在整个创作用户界面中支持键盘控制和辅助技术，�
 
 ## Dynamic Media中的键盘辅助功能支持 {#keyboard-support-in-dm}
 
-由于Dynamic Media是[!DNL Experience Manager Assets]的一个插件，因此大部分键盘控件行为与[!DNL Experience Manager Assets]中的行为相同。 例如，Dynamic Media中的`Cancel`按钮与[!DNL Experience Manager Assets]中的焦点高亮相同。 它还会响应`Spacebar`键，如[!DNL Experience Manager Assets]中所示。 查看Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
+由于Dynamic Media是[!DNL Experience Manager Assets]的一个插件，因此大多数键盘控件行为与[!DNL Experience Manager Assets]中的行为相同。 例如，Dynamic Media中的`Cancel`按钮与[!DNL Experience Manager Assets]中的焦点高亮相同。 它还会响应`Spacebar`键，如[!DNL Experience Manager Assets]中所示。 查看Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[键盘快捷键。
 
-Dynamic Media中的“个人”用户界面元素支持的击键在大多数情况下显而易见，很容易找到。 Dynamic Media中的键盘控件与以下内容有关：
+大多数情况下，Dynamic Media中的单个用户界面元素支持的击键显而易见，很容易找到。 Dynamic Media中的键盘控件与以下内容有关：
 
 * 能够使用`Tab`和`Shift+Tab`按键在页面上的交互元素之间导航。
 使用`Tab`将输入焦点推进到Tab键顺序中的下一个用户界面元素；使用`Shift+Tab`将输入焦点移回上一个用户界面元素。
@@ -53,9 +90,9 @@ Dynamic Media用户界面元素可与屏幕阅读器等辅助技术配合使用�
 
 ## Dynamic Media查看器中的键盘辅助功能支持 {#keyboard-accessibility-for-dm-viewers}
 
-所有开箱即用的Dynamic Media查看器组件都支持客户的键盘辅助功能。
+所有开箱即用的Dynamic Media查看器组件都支持客户使用键盘访问功能。
 
-请参阅《Dynamic Media查看器参考指南》中的[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+请参阅Dynamic Media查看器参考指南中的[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## Dynamic Media查看器{#assistive-technology=support-for-dm-viewers}中的辅助技术支持
 
@@ -66,7 +103,7 @@ Dynamic Media用户界面元素可与屏幕阅读器等辅助技术配合使用�
 
 Dynamic Media支持传送带隐藏式字幕的视频和自适应视频集。 字幕必须显示在视频内容的顶部。
 
-查看Dynamic Media中的[视频 — 向视频](/help/assets/dynamic-media/video.md#adding-captions-to-video)添加隐藏式字幕。
+查看Dynamic Media中的[视频 — 向视频添加隐藏式字幕](/help/assets/dynamic-media/video.md#adding-captions-to-video)。
 
 
 >[!MORELIKETHIS]

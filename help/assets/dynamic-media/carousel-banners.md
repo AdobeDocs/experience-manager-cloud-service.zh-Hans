@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4492'
+source-wordcount: '4538'
 ht-degree: 1%
 
 ---
 
 # 传送横幅{#carousel-banners}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 轮播横幅通过轻松创建交互式轮播促销内容并将其交付到任何屏幕，使营销人员能够推动转化。
 
@@ -79,9 +116,9 @@ ht-degree: 1%
 
    请参阅[（可选）预览轮播横幅](#optional-previewing-carousel-banners) — 可选。 如果需要，您可以查看轮播集的表示形式并测试其交互性。
 
-1. [Publish传送横幅](#publishing-carousel-banners)。
+1. [发布轮播横幅](#publishing-carousel-banners)。
 
-   您可以像发布任何资源一样发布传送集。 在Assets中，导航到轮播集并将其选中，然后选择&#x200B;**[!UICONTROL Publish]**。 发布轮播集将激活URL和嵌入字符串。
+   您可以像发布任何资源一样发布传送集。 在Assets中，导航到轮播集并将其选中，然后选择&#x200B;**[!UICONTROL 发布]**。 发布轮播集将激活URL和嵌入字符串。
 
 1. 执行下列操作之一：
 
@@ -89,7 +126,7 @@ ht-degree: 1%
 
       * [将轮播横幅与现有快速视图集成](#integrating-the-carousel-banner-with-an-existing-quickview)。 如果您使用的是第三方Web内容管理系统，则必须将新的轮播横幅与网站上现有的快速视图实施集成。
 
-   * [在Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)中将轮播横幅添加到您的网站。 如果您是Experience Manager Sites客户，则可以使用交互式媒体组件将轮播集直接添加到页面。
+   * [在Experience Manager中将轮播横幅添加到您的网站](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。 如果您是Experience Manager Sites客户，则可以使用交互式媒体组件将轮播集直接添加到页面。
 
 如果必须编辑传送集，请参阅[编辑传送集](#editing-carousel-sets)。 此外，您还可以查看和编辑[轮播集属性](/help/assets/manage-digital-assets.md#editing-properties)。
 
@@ -209,7 +246,7 @@ ht-degree: 1%
    有关详细信息，请参阅[使用选择器](/help/assets/dynamic-media/working-with-selectors.md)。
 
 1. 继续添加幻灯片，直到在轮播集中添加了所有要旋转的图像为止。
-1. （可选）执行以下任一操作：
+1. （可选）执行下列任一操作：
 
    * 如有必要，请拖动幻灯片以重新排序集合列表中的图像。
    * 要删除图像，请选择该图像，然后在工具栏中选择&#x200B;**[!UICONTROL 删除幻灯片]**。
@@ -328,9 +365,9 @@ ht-degree: 1%
    您还可以预览轮播横幅的外观。 查看[（可选）预览轮播横幅](#optional-previewing-carousel-banners)。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
-1. Publish传送集。 发布会创建可在网站页面上使用的嵌入代码或URL。 如果您是Experience Manager Sites客户，请直接将轮播集添加到您的网页。
+1. 发布轮播集。 发布会创建可在网站页面上使用的嵌入代码或URL。 如果您是Experience Manager Sites客户，请直接将轮播集添加到您的网页。
 
-   查看[Publish资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+   请参阅[发布资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    请参阅[向网站登陆页面添加轮播集](#adding-a-carousel-banner-to-your-website-page)
 
@@ -402,9 +439,9 @@ ht-degree: 1%
 1. 在页面左侧面板中的&#x200B;**[!UICONTROL 查看器]**&#x200B;列表中，选择要使用的轮播横幅查看器预设的名称。
 1. 要测试其关联的操作，请选择图像上的热点或图像映射。
 
-## Publish轮播横幅 {#publishing-carousel-banners}
+## 发布轮播横幅 {#publishing-carousel-banners}
 
-要使用轮播，您必须发布它。 发布轮播集将激活URL和嵌入代码。 此外，它还会将轮播发布到Dynamic Media云，该云与CDN集成以实现可扩展的高性能交付。
+要使用轮播，您必须发布它。 发布轮播集将激活URL和嵌入代码。 它还将轮播发布到Dynamic Media云，该云与CDN集成以实现可扩展和性能交付。
 
 >[!NOTE]
 >
@@ -412,7 +449,7 @@ ht-degree: 1%
 >
 >此外，如果修改在轮播横幅中使用的预先存在的已发布交互式图像，请发布该交互式图像，以便这些更改会反映在轮播横幅中。
 
-有关如何发布轮播横幅的信息，请参阅[Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+有关如何发布轮播横幅的信息，请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 向您的网站页面添加轮播横幅 {#adding-a-carousel-banner-to-your-website-page}
 
@@ -443,8 +480,8 @@ ht-degree: 1%
 1. 前端代码使用在步骤2中获取的URL发送Ajax请求。
 1. 后端逻辑将相应的快速视图数据或内容返回给前端代码。
 1. 前端代码加载快速视图数据或内容。
-1. 前端代码可以选择将加载的快速视图数据转换为HTML表示形式。
-1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户呈现HTML内容。
+1. 前端代码可以选择将加载的快速视图数据转换为HTML呈现形式。
+1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户渲染HTML内容。
 
 这些调用不代表网页逻辑可以从任意步骤中调用的独立公共API调用。 相反，它是一个链接调用，其中每个下一步都隐藏在上一步的最后阶段（回调）中。
 

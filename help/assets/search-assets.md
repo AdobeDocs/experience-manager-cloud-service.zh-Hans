@@ -6,28 +6,62 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5552'
 ht-degree: 6%
 
 ---
 
 # 在AEM中搜索资源 {#search-assets-in-aem}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
+
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 本文 |
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
-
 [!DNL Adobe Experience Manager Assets]提供强大的资源搜索方法，帮助您实现更高的内容速度。 您的团队可以使用开箱即用的功能和自定义方法，通过无缝、智能的资产搜索体验缩短上市时间。 搜索资产功能对于数字资产管理系统的使用至关重要，无论是由创意人员进一步使用、由业务用户和营销人员稳健管理资产，还是由DAM管理员进行管理。 您可以通过[!DNL Assets]用户界面或其他应用和表面执行的简单、高级和自定义搜索有助于完成这些用例。
 
 AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用方法、概念、配置、限制和疑难解答。
 
-| 搜索资源 | 配置和管理搜索功能 | 使用资源搜索结果 |
+| 搜索资产 | 配置和管理搜索功能 | 使用资源搜索结果 |
 |---|---|---|
 | [基本搜索](#searchbasics) | [搜索索引](#searchindex) | [排序结果](#sort) |
 | [了解搜索UI](#searchui) | [文本提取](#extracttextupload) | [检查资源的属性和元数据](#checkinfo) |
@@ -35,7 +69,7 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 | [了解搜索结果和行为](#searchbehavior) | [修改搜索彩块化](#searchfacets) | [批量元数据更新](#metadata-updates) |
 | [搜索排名和提升](#searchrank) | [自定义谓词](#custompredicates) | [智能收藏集](#collections) |
 | [高级搜索：筛选和搜索范围](#scope) | | [了解意外结果并排除其故障](#unexpected-results) |
-| [从其他解决方案和应用中搜索](#search-assets-other-surfaces)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager的桌面应用程序](#desktop-app)</li><li>[Adobe Stock图像](#adobe-stock)</li><li>[Dynamic Media资源](#search-dynamic-media-assets)</li></ul> | | |
+| [从其他解决方案和应用中搜索](#search-assets-other-surfaces)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager桌面应用程序](#desktop-app)</li><li>[Adobe Stock图像](#adobe-stock)</li><li>[Dynamic Media资源](#search-dynamic-media-assets)</li></ul> | | |
 | [资产选择器](#asset-picker) | | |
 | [限制](#limitations)和[提示](#tips) | | |
 | [图示示例](#samples) | | |
@@ -88,13 +122,13 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 
 `damAssetLucene-9`更改了Oak查询Facet计数的行为，使其不再评估基础搜索索引返回的Facet计数的访问控制，这将缩短搜索响应时间。 因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
 
-如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，因此Adobe不建议切换到`secure`模式。
+如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，Adobe不建议切换到`secure`模式。
 
 有关Oak的Facet功能的详细信息，包括这些模式的详细说明，请参阅[Facet - Oak文档 — Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
 
 ## 键入内容时搜索建议 {#searchsuggestions}
 
-当您开始键入关键字时，Experience Manager会建议可能的搜索关键字或短语。 这些建议基于Experience Manager中的资源。 Experience Manager会对所有元数据字段编制索引，以帮助搜索。 为了提供搜索建议，系统使用以下几个元数据字段的值。 要提供搜索建议，请考虑使用相应的关键字填充以下字段：
+开始键入关键字时，Experience Manager会建议可能的搜索关键字或短语。 这些建议基于Experience Manager中的资源。 Experience Manager会对所有元数据字段编制索引，以帮助进行搜索。 为了提供搜索建议，系统使用以下几个元数据字段的值。 要提供搜索建议，请考虑使用相应的关键字填充以下字段：
 
 * 资产标记。 （映射到`jcr:content/metadata/cq:tags`）
 * 资源标题。 （映射到`jcr:content/metadata/dc:title`）
@@ -196,7 +230,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 在[!DNL Experience Manager]用户界面中，用户可以搜索[Adobe Stock资源](/help/assets/aem-assets-adobe-stock.md)并许可所需的资源。 在Omnisearch栏中添加`Location: Adobe Stock`。 您还可以使用“筛选器”面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。
 
-### Dynamic Media资源 {#dmassets}
+### Dynamic Media资产 {#dmassets}
 
 您可以通过选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中的 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 集]**&#x200B;来过滤 Dynamic Media 图像。该操作可过滤并显示图像集、轮播集、混合媒体集和旋转集等资产。
 
@@ -220,7 +254,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 关闭时间 | offtime：YYYY-MM-DDTHH |
 | 时间范围(expires dateontime，offtime) | Facet字段：下限……上行 |
 | 路径 | /content/dam/&lt;文件夹名称> |
-| PDF 标题 | pdftitle：“文档Adobe” |
+| PDF 标题 | pdftitle：&quot;Adobe文档&quot; |
 | 主题 | 主题：“培训” |
 | 标记 | 标记：“位置和旅游” |
 | 类型 | 类型：&quot;image\png&quot; |
@@ -249,13 +283,13 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 [!DNL Adobe Experience Manager]将DAM存储库连接到各种其他[!DNL Experience Manager]解决方案，以提供对数字资产的更快访问并简化创意工作流。 任何资源发现都从浏览或搜索开始。 在各种表面和解决方案中，搜索行为在很大程度上保持不变。 某些搜索方法会随着目标受众、用例和用户界面在所有[!DNL Experience Manager]解决方案中的不同而有所变化。 通过下面的链接，为各个解决方案记录了具体方法。 本文记录了一些普遍适用的提示和行为。
 
-### 在“搜索资源链接”面板中Adobe资源 {#aal}
+### 从Adobe Asset Link面板搜索资源 {#aal}
 
-使用AdobeAsset Link，创意专业人士现在无需离开受支持的Adobe Creative Cloud应用程序即可访问[!DNL Experience Manager Assets]中存储的内容。 创意人员可以使用[!DNL Adobe Creative Cloud]应用[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]中的应用内面板无缝浏览、搜索、签出和签入资源。 Asset Link还允许用户搜索视觉上类似的结果。 可视化搜索显示结果由Adobe Sensei的机器学习算法提供支持，并帮助用户查找美学上相似的图像。 请参阅[使用AdobeAsset Link搜索和浏览资源](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)。
+使用Adobe Asset Link，创意专业人士现在无需离开受支持的Adobe Creative Cloud应用程序即可访问[!DNL Experience Manager Assets]中存储的内容。 创意人员可以使用[!DNL Adobe Creative Cloud]应用[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]中的应用内面板无缝浏览、搜索、签出和签入资源。 Asset Link还允许用户搜索视觉上类似的结果。 可视化搜索显示结果由Adobe Sensei的机器学习算法提供支持，并帮助用户查找美学上相似的图像。 请参阅[使用Adobe Asset Link搜索和浏览资源](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)。
 
 ### 在[!DNL Experience Manager]桌面应用程序中搜索资产 {#desktop-app}
 
-创意专业人士使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面(Win或Mac)上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
+Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面(Win或Mac)上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
 
 ### 在 [!DNL Brand Portal] 中搜索资产 {#brand-portal}
 
@@ -441,7 +475,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | MIME 类型 | 图像、文档、多媒体、存档或其他。 |
 | 上次修改时间 | Hour、Day、Week、Month或Year。 |
 | 文件大小 | 小、Medium或大。 |
-| Publish状态 | 已发布或已取消发布。 |
+| 发布状态 | 已发布或已取消发布。 |
 | 批准状态 | 已批准或已拒绝。 |
 | 方向 | “水平”、“垂直”或“方形”。 |
 | 样式 | 彩色或黑白。 |
@@ -471,7 +505,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 对搜索结果进行排序，更快地发现所需的资源。 只有在从&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板中选择&#x200B;**[[!UICONTROL 文件]](#searchui)**&#x200B;时，才能对列表视图中的搜索结果进行排序。 [!DNL Assets]使用服务器端排序来快速对某个文件夹或搜索查询结果中的所有资产（无论数量多少）进行排序。 与客户端排序相比，服务器端排序提供更快、更准确的结果。
 
-在列表视图中，您可以对搜索结果进行排序，就像对任何文件夹中的资源排序一样。 排序仅对以下列起作用 — 名称、标题、状态、Dimension、大小、评级、使用情况、（日期）创建、（日期）修改、（日期）发布、工作流和签出。
+在列表视图中，您可以对搜索结果进行排序，就像对任何文件夹中的资源排序一样。 排序仅对以下列起作用 — 名称、标题、状态、维度、大小、评级、使用情况、（日期）创建、（日期）修改、（日期）发布、工作流和签出。
 
 有关排序功能的限制，请参阅[限制](#limitations)。
 

@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '5863'
+source-wordcount: '5909'
 ht-degree: 2%
 
 ---
 
 # 交互式视频{#interactive-videos}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以轻松地创建交互式视频（也称为购物视频），以直接从视频推动转化。 客户与视频的互动发生在视频播放器旁边的面板中，在该面板中，相关服务、信息或产品缩略图会根据视频中的功能滚动到视图中。 客户可以选择缩略图并直接链接到服务，或者将项目添加到购物车以供立即购买，或者链接到网页以了解更多信息。
 
@@ -70,7 +107,7 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 1. **（可选）识别概览变量** — 首先识别由您现有的概览实施使用的动态变量。 在创建交互式视频时，可使用变量将产品缩略图映射到对应的产品概览。 请参阅[（可选）标识概览变量](#optional-identifying-quickview-variables)。
    **仅当以下所有条件都为true时，才需要执行此步骤：**
    * 要通过触发快速视图向视频添加交互性。
-   * 您的Experience Manager实现&#x200B;*不*&#x200B;使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager中。
+   * Experience Manager实施&#x200B;*不*&#x200B;使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager。
 
 1. **（可选）创建交互式视频查看器预设** — 自定义组成播放器的各种组件的外观和行为，如视频洗刷和交互式缩略图。
 如果您打算使用现成的交互式视频查看器预设`Shoppable_Video_Light`或`Shoppable_Video_Dark`，则无需创建自己的交互式视频查看器预设。
@@ -81,14 +118,14 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 
    >[!NOTE]
    >
-   >在Dynamic Media中，尚不支持将MXF视频格式与交互式视频一起使用。
+   >尚不支持MXF视频格式用于Dynamic Media中的交互式视频。
 
 1. **向视频添加交互性** — 向视频添加一个或多个时间段。 然后，关联这些时间段内的图像缩略图。 将每个图像缩略图分配给某个操作，例如超链接、概览或体验片段。
 (如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则无法基于URL的链接方法。)
 完成方法是发布交互式视频资产。 发布操作将创建您最终复制并应用于网站登陆页面的嵌入代码或URL。 请参阅[向视频添加交互性](#adding-interactivity-to-your-video)。
-请参阅[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+请参阅[发布Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **在Experience Manager中将交互式视频添加到您的网站或您的网站** — 如果您使用Experience Manager Sites或eCommerce，或同时使用两者，请将该交互式视频添加到Experience Manager的网页中。 将Interactive Media组件拖动到页面上。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+1. **在Experience Manager中将交互式视频添加到您的网站或您的网站** — 如果您使用Experience Manager Sites或eCommerce，或同时使用两者，请将该交互式视频添加到Experience Manager中的网页。 将Interactive Media组件拖动到页面上。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 使用嵌入代码或URL将交互式视频与网站体验集成。 请参阅[将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website)。
 如果您使用的是第三方WCM（Web内容管理器），则必须将新的交互式视频与网站上使用的现有Quickview实施集成。 请参阅[将交互式视频与现有概览集成](#integrating-an-interactive-video-with-an-existing-quickview)。
    [将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -100,7 +137,7 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 >仅当满足以下条件时，才需要此任务：
 >
 >* 要通过触发快速视图向视频添加交互性。
->* 您的Experience Manager实现&#x200B;*不*&#x200B;使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager中。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+>* Experience Manager实施&#x200B;*不*&#x200B;使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
 >如果您的Experience Manager实施使用的是电子商务，则可以跳过此任务并继续执行下一个任务。
 
@@ -135,7 +172,7 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 
 在此过程中，请务必访问网站的不同区域，以及不同的产品类别和类型。 原因是概览的URL具有给定网站类别共有的部分，但只有在访问网站的其他区域时才发生更改。
 
-最简单的例子是，概观URL中的唯一变量部分是产品SKU。 在这种情况下，产品SKU值是向Experience Manager交互式视频中的时间段添加缩略图所需的唯一数据块。
+最简单的例子是，概观URL中的唯一变量部分是产品SKU。 在这种情况下，产品SKU值是向Experience Manager中交互式视频的时间段添加缩略图所需的唯一数据块。
 
 但是，在复杂的情况下，除了产品SKU之外，快速视图URL还有不同的元素，例如类别ID和颜色代码。 在这种情况下，在Experience Manager的缩略图数据定义中，每个此类元素都会成为单独的变量。
 
@@ -160,7 +197,7 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>变量部分位于路径的最后一部分，它成为Experience Manager缩略图的SKU值： <strong><code>6422350843</code></strong>、<strong><code>1607745002</code></strong>、<strong><code>0086724882</code></strong>。</p> </td>
+    </ul> <p>变量部分位于路径的最后一部分，它将变为Experience Manager缩略图的SKU值： <strong><code>6422350843</code></strong>、<strong><code>1607745002</code></strong>、<strong><code>0086724882</code></strong>。</p> </td>
   </tr>
   <tr>
     <td><p>查询字符串中的SKU和类别ID。</p> </td>
@@ -243,7 +280,7 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 
 >[!NOTE]
 >
->在Dynamic Media中，尚不支持将MXF视频格式与交互式视频一起使用。
+>尚不支持MXF视频格式用于Dynamic Media中的交互式视频。
 
 如果上传了错误的视频或图像，或者要删除不再需要的上传视频或图像，请参阅[删除Assets](/help/assets/manage-digital-assets.md#delete-assets)。
 
@@ -354,7 +391,7 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 
    在上面的屏幕快照C中，“时间轴缩放”设置已移动到8秒。 请注意包含产品缩略图的区段如何收缩。 如果您有长视频，并且希望能够大致了解通常适合页面宽度的更多区段，则通过此方式缩小会很有用。
 
-1. （可选）执行以下任一操作：
+1. （可选）执行下列任一操作：
 
    * 要调整区段的开始时间和结束时间，请执行以下操作：
 
@@ -411,7 +448,7 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
       <td>将选定的缩略图图像与概览关联</td> 
       <td><p>在操作类型下，选择<strong>概览</strong>。</p> <p>如果您是Experience Manager Sites和电子商务客户：</p> 
        <ul> 
-       <li>请注意，已使用所选产品的SKU（库存单位）预填充了“SKU值”文本字段。 SKU是您提供的每个不同产品或服务的唯一标识符。 当图像与Experience ManagerCommerce中的产品关联时，将自动填充此字段。</li> 
+       <li>请注意，已使用所选产品的SKU（库存单位）预填充了“SKU值”文本字段。 SKU是您提供的每个不同产品或服务的唯一标识符。 当图像与Experience Manager Commerce中的产品关联时，将自动填充此字段。</li> 
        <li>如果预填充的SKU不正确，请选择“产品选取器”图标（放大镜）以打开“选择产品”页面。 选择要使用的产品，然后选择页面右上角的复选标记。 您将返回到交互式视频编辑器。</li> 
        </ul> <p> 如果您<em>不是</em> Experience Manager Sites或电子商务客户</p> 
        <ul> 
@@ -495,11 +532,11 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
    >
    >在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 已将`.vtt`文件保存到&#x200B;**[!UICONTROL Assets]**&#x200B;根目录下的`_VTT`文件夹中。 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
 
-1. Publish交互式视频。 发布会创建您最终复制并粘贴到网站体验中的嵌入代码或URL。
+1. 发布交互式视频。 发布会创建您最终复制并粘贴到网站体验中的嵌入代码或URL。
 
    如果添加了与快速视图的交互，则仅使用嵌入代码；如果添加了与超链接网页的交互，则还可以使用已发布的URL。 但是，请注意，如果您的交互式内容具有带相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法是不可能的。
 
-   查看[Publish资源](publishing-dynamicmedia-assets.md)。
+   请参阅[发布资源](publishing-dynamicmedia-assets.md)。
 
    >[!NOTE]
    >
@@ -507,9 +544,9 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 
    添加时间轴区段并发布交互式视频后，即可将其添加到现有网站登陆页面。 请参阅[将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website)。
 
-## Publish交互式视频资源 {#publishing-interactive-video-assets}
+## 发布交互式视频资产 {#publishing-interactive-video-assets}
 
-有关如何发布交互式视频资源的详细信息，请参阅[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+有关如何发布交互式视频资源的详细信息，请参阅[发布Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 将交互式视频与您的网站集成 {#integrating-an-interactive-video-with-your-website}
 
@@ -585,12 +622,12 @@ Experience Manager Assets中的[使用交互式视频、链接共享和YouTube�
 1. 前端代码使用在步骤2中获取的URL发送AJAX请求。
 1. 后端逻辑将相应的概览数据或内容返回给前端代码。
 1. 前端代码加载概览数据或内容。
-1. 前端代码（可选）将加载的概览数据转换为HTML表示形式。
-1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户呈现HTML内容。
+1. 前端代码可以选择将加载的概览数据转换为HTML呈现形式。
+1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户渲染HTML内容。
 
 这些调用不代表网页逻辑可以从任意步骤中调用的独立公共API调用。 相反，它是一个链接调用，其中每个下一步都隐藏在上一步的最后阶段（回调）中。
 
-在交互式视频替换步骤1或部分步骤2的同时，当用户选择交互式视频内的缩略图时，这种用户交互由观看者处理。 查看器会向网页返回一个事件，其中包含之前添加到Experience Manager中的所有缩略图数据。
+在交互式视频替换步骤1或部分步骤2的同时，当用户选择交互式视频内的缩略图时，这种用户交互由观看者处理。 查看器会向网页返回一个事件，其中包含之前添加到Experience Manager的所有缩略图数据。
 
 在此类事件处理程序中，前端代码执行以下操作：
 

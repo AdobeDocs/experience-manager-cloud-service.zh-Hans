@@ -5,19 +5,53 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2909'
+source-wordcount: '2937'
 ht-degree: 3%
 
 ---
 
 # 使用资产微服务和处理配置文件 {#get-started-using-asset-microservices}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
-资产微服务提供使用云原生应用程序（也称为工作程序）进行可扩展和弹性资产处理。 Adobe管理服务以优化处理各种资源类型和处理选项。
+资产微服务提供使用云原生应用程序（也称为工作程序）进行可扩展和弹性资产处理。 Adobe管理各种服务，以优化各种资源类型和处理选项的处理。
 
 资产微服务允许您处理[多种文件类型](/help/assets/file-format-support.md)，这些类型涵盖的现成格式比以前版本的[!DNL Experience Manager]可能具有的格式更多。 例如，现在可以提取PSD和PSB格式的缩略图，但以前需要第三方解决方案，如[!DNL ImageMagick]。
 
@@ -42,7 +76,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供基本的演绎版生成功能。 | <ul> <li>[!DNL Assets]用户界面使用的标准缩略图（48、140和319像素） </li> <li> 大型预览（Web呈现版本 — 1280像素） </li><li> 元数据和文本提取。</li></ul> |
 | [自定义配置](#standard-config) | 由管理员通过用户界面配置。 通过扩展默认选项，为生成演绎版提供了更多选项。 扩展现成选项以提供不同的格式和演绎版。 | <ul><li>FPO（仅用于置入）演绎版。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于配置的文件类型。 </li> </ul> |
-| [自定义配置文件](#custom-config) | 管理员通过用户界面配置通过自定义应用程序使用自定义代码来调用[Asset compute服务](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。 以云原生的可伸缩方法支持更复杂的需求。 | 查看[允许的用例](#custom-config)。 |
+| [自定义配置文件](#custom-config) | 管理员通过用户界面配置通过自定义应用程序使用自定义代码来调用[Asset Compute服务](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。 以云原生的可伸缩方法支持更复杂的需求。 | 查看[允许的用例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -53,7 +87,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## 默认配置 {#default-config}
 
-预配置了某些默认值，以确保Experience Manager中所需的默认呈现版本可用。 默认配置还可确保元数据提取和文本提取操作可用。 用户可以立即开始上传或更新资产，默认情况下可以进行基本处理。
+预配置了一些默认值，以确保Experience Manager中所需的默认呈现版本可用。 默认配置还可确保元数据提取和文本提取操作可用。 用户可以立即开始上传或更新资产，默认情况下可以进行基本处理。
 
 使用默认配置时，仅配置最基本的处理配置文件。 此类处理配置文件在用户界面中不可见，您无法对其进行修改。 它始终执行以处理上传的资产。 此类默认处理配置文件可确保在所有资源上完成[!DNL Experience Manager]所需的基本处理。
 
@@ -68,9 +102,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **MIME类型包含规则**：在处理具有特定MIME类型的资源时，将首先根据演绎版规范的排除MIME类型值检查MIME类型。 如果与该列表匹配，则不会为资源(阻止列表)生成此特定演绎版。 否则，将针对包含的MIME类型检查MIME类型，如果它与列表匹配，则生成演绎版(允许列表)。
 
-* **特殊FPO演绎版**：将来自[!DNL Experience Manager]的大型资源放入[!DNL Adobe InDesign]文档时，创意专业人士会在[放置资源](https://helpx.adobe.com/indesign/using/placing-graphics.html)后等待相当长的时间。 同时，用户被阻止使用[!DNL InDesign]。 这会中断创作流并对用户体验产生负面影响。 Adobe功能允许首先在[!DNL InDesign]文档中临时放置小型演绎版，稍后可按需使用全分辨率资源替换小型演绎版。 [!DNL Experience Manager]提供仅用于放置的演绎版。 这些FPO呈现版本的文件大小较小，但纵横比相同。
+* **特殊FPO演绎版**：将来自[!DNL Experience Manager]的大型资源放入[!DNL Adobe InDesign]文档时，创意专业人士会在[放置资源](https://helpx.adobe.com/indesign/using/placing-graphics.html)后等待相当长的时间。 同时，用户被阻止使用[!DNL InDesign]。 这会中断创作流并对用户体验产生负面影响。 Adobe允许首先在[!DNL InDesign]文档中临时放置小型演绎版，之后可按需使用全分辨率资源替换小型演绎版。 [!DNL Experience Manager]提供仅用于放置的演绎版。 这些FPO呈现版本的文件大小较小，但纵横比相同。
 
-处理配置文件可以包含FPO（仅用于放置）演绎版。 请参阅[!DNL Adobe Asset Link] [文档](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)以了解是否需要为处理配置文件启用它。 有关详细信息，请参阅[AdobeAsset Link完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
+处理配置文件可以包含FPO（仅用于放置）演绎版。 请参阅[!DNL Adobe Asset Link] [文档](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)以了解是否需要为处理配置文件启用它。 有关详细信息，请参阅[Adobe Asset Link完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
 
 ### 创建标准配置文件 {#create-standard-profile}
 
@@ -144,7 +178,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 为了说明自定义用户档案的使用情况，我们考虑一个用例，将一些自定义文本应用到Campaign图像。 您可以创建使用Photoshop API编辑图像的处理配置文件。
 
-asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]字段将这些参数传递到自定义应用程序。 然后，自定义应用程序调用Photoshop API并将这些值传递到API。 例如，您可以传递字体名称、文本颜色、文本粗细和文本大小，以将自定义文本添加到促销活动图像。
+Asset Compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]字段将这些参数传递到自定义应用程序。 然后，自定义应用程序调用Photoshop API并将这些值传递到API。 例如，您可以传递字体名称、文本颜色、文本粗细和文本大小，以将自定义文本添加到促销活动图像。
 
 <!-- TBD: Check screenshot against the interface. -->
 
@@ -154,7 +188,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 ## 使用处理配置文件处理资产 {#use-profiles}
 
-创建其他自定义处理配置文件并将其应用到特定文件夹。 此工作流允许Experience Manager处理上传到这些文件夹或在这些文件夹中更新的资源。 默认的内置标准处理配置文件始终执行，但在用户界面中不可见。 如果您添加自定义配置文件，则两个配置文件都会用于处理上传的资产。
+创建其他自定义处理配置文件并将其应用到特定文件夹。 此工作流允许Experience Manager处理上传到这些文件夹中或在这些文件夹中更新的资源。 默认的内置标准处理配置文件始终执行，但在用户界面中不可见。 如果您添加自定义配置文件，则两个配置文件都会用于处理上传的资产。
 
 使用以下方法之一将处理配置文件应用到文件夹：
 
@@ -194,7 +228,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 * 创建一个或多个工作流模型。 在本文档中，这些自定义模型称为&#x200B;*后处理工作流模型*。 它们是常规的[!DNL Experience Manager]工作流模型。
 * 将所需的工作流步骤添加到这些模型中。 查看默认工作流的步骤，并将所有必需的默认步骤添加到自定义工作流中。 这些步骤基于工作流模型配置在资产上运行。 例如，如果您希望在上传资产时自动进行智能标记，请将步骤添加到自定义后处理工作流模型中。
-* 在末尾添加[!UICONTROL DAM更新资产工作流已完成流程]步骤。 添加此步骤可确保Experience Manager知道处理何时结束，并且可以将该资源标记为已处理，即&#x200B;*New*&#x200B;显示在资源上。
+* 在末尾添加[!UICONTROL DAM更新资产工作流已完成流程]步骤。 添加此步骤可确保Experience Manager知道处理何时结束，并且资源可以标记为已处理，即&#x200B;*New*&#x200B;显示在资源上。
 * 创建自定义工作流运行器服务的配置，通过该配置，可通过路径（文件夹位置）或正则表达式配置后处理工作流模型的执行。
 
 有关可在后处理工作流中使用的标准工作流步骤的详细信息，请参阅developer reference中的后处理工作流中的[工作流步骤](developer-reference-material-apis.md#post-processing-workflows-steps)。
@@ -283,7 +317,7 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 >[!MORELIKETHIS]
 >
->* [Asset compute服务简介](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。
+>* [Asset Compute服务简介](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。
 >* [了解可扩展性以及何时使用它](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility)。
 >* [如何创建自定义应用程序](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application)。
 >* [各种用例支持的MIME类型](/help/assets/file-format-support.md)。

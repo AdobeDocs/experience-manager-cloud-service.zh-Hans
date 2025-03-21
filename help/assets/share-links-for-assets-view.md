@@ -4,19 +4,53 @@ description: 生成链接并与无权访问该 [!DNL Assets view] 应用程序�
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 90%
+source-wordcount: '443'
+ht-degree: 88%
 
 ---
 
 # 分享资源链接 {#share-links-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
-[!DNL Assets view]使您能够生成链接并与无权访问[!DNL Assets view]应用程序的外部利益相关者共享资源。您可以定义链接的到期日期，然后使用您喜欢的通信方式（如电子邮件或消息服务）与他人共享。链接的接收者可以预览并下载资源。
+[!DNL Assets view]使您能够生成链接并与无权访问[!DNL Assets view]应用程序的外部利益相关者共享资源。您可以定义链接的过期日期，然后使用您喜欢的通信方式（如电子邮件或消息服务）与他人共享。链接的接收者可以预览并下载资源。
 
 ## 为资源生成链接 {#generate-link-for-assets}
 
@@ -24,7 +58,7 @@ ht-degree: 90%
 
 1. 选择包含资源的资源或/和文件夹，然后单击&#x200B;**[!UICONTROL 共享链接]**。
 
-1. 如果要对其进行调整，请单击“日程表”图标以使用&#x200B;**[!UICONTROL 到期日期]**&#x200B;字段定义链接的到期日期。您也可以直接在`yyyy-mm-dd`格式中指定日期。默认情况下，链接的到期日期设置为自共享之日起 2 周。
+1. 如果要对其进行调整，请单击“日程表”图标以使用&#x200B;**[!UICONTROL 过期日期]**&#x200B;字段定义链接的过期日期。您也可以直接在`yyyy-mm-dd`格式中指定日期。默认情况下，链接的过期日期设置为自共享之日起 2 周。
 
 1. 从&#x200B;**[!UICONTROL 共享链接]**&#x200B;字段复制链接。
 

@@ -1,29 +1,63 @@
 ---
-title: 交付 API
+title: 传递 API
 description: 了解如何使用投放API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 3%
+source-wordcount: '655'
+ht-degree: 11%
 
 ---
 
 # 投放API {#delivery-apis}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->Dynamic Media with OpenAPI功能指南现在以PDF格式提供。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>具有 OpenAPI 功能的 Dynamic Media 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Experience Manager资源存储库中可用的所有[批准的资源](approve-assets.md)都可以[搜索](search-assets-api.md)，然后使用投放URL传递到集成的下游应用程序。
+可在Experience Manager资源存储库中找到的所有[批准的资源](approve-assets.md)都可以[搜索](search-assets-api.md)，然后使用投放URL传递到集成的下游应用程序。
 
-对DAM中的已批准资产所做的任何更改（包括版本更新和元数据修改）都会自动反映在投放URL中。 由于为通过CDN交付资产而配置了10分钟的短生存时间(TTL)值，因此，在10分钟之内即可在所有创作和发布的界面中看到更新。
+在 DAM 中对已批准的资产所做的任何更改，包括版本更新和元数据修改，都会自动反映在传递 URL 中。由于为通过CDN交付资产而配置了10分钟的短生存时间(TTL)值，因此，在10分钟之内即可在所有创作和发布的界面中看到更新。
 
 下图说明了可用的投放URL：
 
@@ -34,18 +68,18 @@ Experience Manager资源存储库中可用的所有[批准的资源](approve-ass
 | 投放API | 描述 |
 |---|---|
 | [以请求的输出格式表示资产的Web优化二进制表示形式](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | 根据请求中发送的资产ID，以请求的输出格式返回资产的Web优化二进制表示形式。 此外，您可以定义各种图像修饰符，例如，宽度、高度、旋转、翻转、质量、裁切、格式和[智能裁切](/help/assets/dynamic-media/image-profiles.md)。 有关支持的格式和图像修饰符，请参阅[API详细信息](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)。<br>Adobe建议对所有图像格式类型使用此API。 |
-| [资产的Web优化二进制表示形式](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | 方便API，适用于响应中返回的资产的Web优化二进制表示形式。 默认格式包括标准JPEG/WEBP格式、质量=> 65和宽度=> 1024。 |
+| [资产的Web优化二进制表示形式](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | 方便API，适用于响应中返回的资产的Web优化二进制表示形式。 默认设置包括标准JPEG/WEBP格式、质量=> 65和宽度=> 1024。 |
 | [原始上传的资产二进制文件](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | 返回最初为资源上传的二进制文件。 Adobe建议将此API用于文档格式类型和SVG图像。 |
 | [在AEM Assets创作环境中可用的资源的预生成演绎版](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | 根据请求中发送的资产ID和演绎版名称，返回在AEM Assets创作环境中可用的资产演绎版比特流。 |
 | [资源元数据](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | 返回与资产关联的属性，例如标题、描述、CreateDate、ModifyDate等。 |
-| 视频资源的[播放器容器](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 返回视频资产的播放器容器。 您可以将播放器嵌入到iframeHTML元素中并播放视频。 |
+| 视频资源的[播放器容器](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 返回视频资产的播放器容器。 您可以将播放器嵌入到iframe HTML元素中并播放视频。 |
 | [以所选输出格式显示的播放清单](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 以所选输出格式返回指定视频资源的播放清单文件。 您必须构建一个自定义播放器，该播放器能够通过HLS或DASH协议进行自适应流式传输，以便能够拉取播放清单文件并播放视频。 |
 
 
 >[!NOTE]
 >
-* [图像预设、智能成像和其他图像修饰符](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)仅作为有限可用性功能提供。 若要获得访问权限，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
-* 智能裁剪不可用于[Assets Prime](/help/assets/assets-ultimate-overview.md)。
+* [图像预设、智能成像和其他图像修饰符](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)仅作为有限可用性功能提供。 要获得访问权限，请[创建并提交Adobe客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+* 智能裁剪在[Assets Prime](/help/assets/assets-ultimate-overview.md)中不可用。
 
 ## 投放API端点 {#delivery-apis-endpoint}
 

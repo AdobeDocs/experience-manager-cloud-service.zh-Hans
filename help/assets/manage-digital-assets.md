@@ -6,17 +6,51 @@ mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4323'
 ht-degree: 10%
 
 ---
 
 # 管理资源 {#manage-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -31,7 +65,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->* 共享到Experience Cloud时不支持共享类型为`sling:OrderedFolder`的Assets文件夹。 如果要共享文件夹，请勿在创建文件夹时选择[!UICONTROL 已排序]。
+>* 在共享到Experience Cloud时，不支持共享类型为`sling:OrderedFolder`的Assets文件夹。 如果要共享文件夹，请勿在创建文件夹时选择[!UICONTROL 已排序]。
 >* Experience Manager不允许使用`subassets`单词作为文件夹的名称。 它是为包含复合资产的子资产的节点保留的关键字
 
 1. 导航到数字资产文件夹中要创建文件夹的位置。 在菜单中，单击&#x200B;**[!UICONTROL 创建]**。 选择&#x200B;**[!UICONTROL 新文件夹]**。
@@ -49,7 +83,7 @@ ht-degree: 10%
 
 ## 提取ZIP存档 {#extract-zip-archives}
 
-选择在Experience Manager中管理的ZIP存档，并将文件直接解压到Experience Manager中而不下载它们。
+选择Experience Manager中管理的ZIP存档，并将文件直接提取到Experience Manager中而不下载它们。
 
 要解压缩ZIP文件，请执行以下步骤：
 
@@ -237,7 +271,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    您可以为希望在图像或视频资源的详细信息页面中显示的演绎版配置尺寸。 根据您指定的维度，Assets将显示具有精确或最接近维度的演绎版。
 
-   您无法创建具有以下前缀的节目，因为这些前缀是Adobe的内部前缀：
+   无法创建具有以下前缀的演绎版，因为这些前缀是Adobe的内部前缀：
 
    * cq5
 
@@ -255,7 +289,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >仅当浏览器的视频格式与HTML5兼容时，才支持视频批注。 此外，根据浏览器的不同，支持不同的视频格式。 但是，视频注释尚不支持MXF视频格式。
+   >仅当浏览器具有与HTML5兼容的视频格式时，才支持视频注释。 此外，根据浏览器的不同，支持不同的视频格式。 但是，视频注释尚不支持MXF视频格式。
 
 ## 删除资源 {#delete-assets}
 
@@ -283,20 +317,20 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >要从其他页面解析或移除传入引用，请在删除资产之前更新相关引用。 您可以禁止删除引用的资产，因为它会导致链接断开。 使用覆盖禁用强制删除按钮。
 
-## 下载资源 {#download-assets}
+## 下载资产 {#download-assets}
 
 请参阅[从 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)下载资源。
 
-## Publish或取消发布资源 {#publish-assets}
+## 发布或取消发布资源 {#publish-assets}
 
 1. 导航到要发布或者要从发布环境中移除（取消发布）的资源或资源文件夹的位置。
 
-1. 选择要发布或取消发布的资源或文件夹，然后从工具栏中选择&#x200B;**[!UICONTROL 管理发布]** ![管理发布选项](assets/do-not-localize/globe-publication.png)选项。 或者，要快速发布，请从工具栏中选择&#x200B;**[!UICONTROL 快速Publish]**&#x200B;选项。 如果要发布的文件夹包含空文件夹，则不会发布该空文件夹。
+1. 选择要发布或取消发布的资源或文件夹，然后从工具栏中选择&#x200B;**[!UICONTROL 管理发布]** ![管理发布选项](assets/do-not-localize/globe-publication.png)选项。 或者，要快速发布，请从工具栏中选择&#x200B;**[!UICONTROL 快速发布]**&#x200B;选项。 如果要发布的文件夹包含空文件夹，则不会发布该空文件夹。
 
-1. 根据需要选择&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL 取消发布]**&#x200B;选项。
+1. 根据需要选择&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 取消发布]**&#x200B;选项。
 
    ![取消发布操作](assets/unpublish_action.png)
-   *图：Publish和取消发布选项以及计划选项。*
+   *图：发布和取消发布选项以及计划选项。*
 
 1. 选择&#x200B;**[!UICONTROL 立即]**&#x200B;对资产执行操作，或选择&#x200B;**[!UICONTROL 稍后]**&#x200B;安排操作。 如果选择&#x200B;**[!UICONTROL 稍后]**&#x200B;选项，请选择日期和时间。 单击&#x200B;**[!UICONTROL 下一步]**。
 
@@ -330,10 +364,10 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
    >
    >如果未指定登录页面的路径，[!DNL Experience Manager]会在发布实例中显示默认登录页面。
 
-1. 将该文件夹Publish，然后尝试从发布实例访问它。 将显示登录屏幕。
+1. 发布文件夹，然后尝试从发布实例访问它。 将显示登录屏幕。
 1. 如果您是CUG成员，请输入安全凭据。 [!DNL Experience Manager]验证您之后将显示文件夹。
 
-## 搜索资源 {#search-assets}
+## 搜索资产 {#search-assets}
 
 搜索资产是使用数字资产管理系统的核心，无论它是供创意人员进一步使用、供商业用户和营销人员稳健管理资产，还是DAM管理员进行管理。
 
@@ -421,7 +455,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 注释是添加到图像或视频的注释或说明性注释。 注释为营销人员提供了协作和提供有关资产的反馈。
 
-仅当浏览器具有与HTML5兼容的视频格式时，才支持视频批注。 Assets支持的视频格式取决于浏览器。 但是，视频注释尚不支持MXF视频格式。
+仅在HTML5兼容视频格式的浏览器上支持视频批注。 Assets支持的视频格式取决于浏览器。 但是，视频注释尚不支持MXF视频格式。
 
 >[!NOTE]
 >
@@ -484,7 +518,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >如果选择多个注释，则用户界面上将显示最新注释。
 >
->仅支持将带注释的资源打印为PDF的多选。
+>仅支持将带注释的资源打印为PDF时使用多选。
 
 1. 要查看资产的已保存批注，请导航到资产的位置，然后打开资产的资产页面。
 
@@ -504,13 +538,13 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ### 打印批注 {#printing-annotations}
 
-如果资源具有注释或遵循审阅工作流，则可以将资源与注释一起打印，并以PDF文件的形式审阅状态，以供离线审阅。
+如果资产具有注释或遵循审阅工作流，您可以打印资产以及注释和审阅状态，并将其作为PDF文件进行离线审阅。
 
 您还可以选择仅打印注释或审阅状态。
 
 >[!NOTE]
 >
->在将带有注释的资源打印为PDF时，您可以选择多个注释。
+>将带注释的资源打印为PDF时，您可以选择多个注释。
 
 要打印注释和审阅状态，请选择&#x200B;**[!UICONTROL 打印]**&#x200B;图标，然后按照向导中的说明操作。 仅当资产至少分配了一个注释或审阅状态时，**[!UICONTROL 打印]**&#x200B;图标才会显示在工具栏中。
 
@@ -532,7 +566,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
-1. 从“打印”对话框中，选择要在PDF上显示注释/审阅状态的位置。 例如，如果希望批注/状态在包含已打印图像的页面的右上角打印，则使用&#x200B;**左上**&#x200B;设置。 默认情况下，该复选框处于选中状态。
+1. 从“打印”对话框中，选择您希望批注/审阅状态显示在PDF上的位置。 例如，如果希望批注/状态在包含已打印图像的页面的右上角打印，则使用&#x200B;**左上**&#x200B;设置。 默认情况下，该复选框处于选中状态。
 
    <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
@@ -546,9 +580,9 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   要修改渲染PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从配置管理器中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改注释字体颜色的信息，请参阅[注释](/help/assets/manage-digital-assets.md#annotating)。
+   要修改渲染的PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请从配置管理器中打开&#x200B;**[!UICONTROL 注释PDF配置]**，并修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改注释字体颜色的信息，请参阅[注释](/help/assets/manage-digital-assets.md#annotating)。
 
-   返回到渲染的PDF文件并刷新它。 刷新的PDF反映您所做的更改。
+   返回到渲染的PDF文件并刷新它。 刷新的PDF反映了您所做的更改。
 
 ## 资源版本控制 {#asset-versioning}
 
@@ -560,7 +594,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 * 您可以编辑资源的元数据。
 * 您使用[!DNL Experience Manager]桌面应用程序签出现有资源并保存更改。 每次保存资产时都会创建一个新版本。
 
-您还可以通过工作流启用自动版本控制。 在为资源创建版本时，元数据和演绎版与版本一起保存。 呈现版本是相同图像的替代版本，例如上传JPEG文件的PNG呈现版本。
+您还可以通过工作流启用自动版本控制。 在为资源创建版本时，元数据和演绎版与版本一起保存。 呈现版本是相同图像的替代版本，例如，上传的JPEG文件的PNG呈现版本。
 
 版本控制功能允许您执行以下操作：
 
@@ -644,9 +678,9 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 要了解集合管理的详细信息，请参阅[管理集合](/help/assets/manage-collections.md)。
 
-## 在桌面应用程序或AdobeAsset Link中查看资源时隐藏过期的资源 {#hide-expired-assets-via-acp-api}
+## 在桌面应用程序或Adobe Asset Link中查看资源时隐藏过期的资源 {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager]桌面应用允许从Windows或Mac桌面访问DAM存储库。 AdobeAsset Link允许从支持的[!DNL Creative Cloud]桌面应用程序中访问资源。
+[!DNL Experience Manager]桌面应用允许从Windows或Mac桌面访问DAM存储库。 Adobe Asset Link允许从支持的[!DNL Creative Cloud]桌面应用程序中访问资源。
 
 从[!DNL Experience Manager]用户界面中浏览资源时，不显示过期的资源。 要在从桌面应用程序和Asset Link浏览资产时，阻止查看、搜索和获取过期的资产，管理员可以执行以下配置。 该配置适用于所有用户，而不管管理员权限如何。
 
@@ -662,7 +696,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-要了解更多信息，请参阅如何使用桌面应用程序[浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)和[如何使用AdobeAsset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
+要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
 
 **另请参阅**
 

@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 11%
+source-wordcount: '1553'
+ht-degree: 12%
 
 ---
 
 # 混合媒体集{#mixed-media-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 混合媒体集允许您在一个演示文稿中提供图像、图像集、旋转集和视频的混合。
 
@@ -32,7 +69,7 @@ ht-degree: 11%
 
    首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/dynamic-media/image-sets.md)[和旋转集](/help/assets/dynamic-media/spin-sets.md)。 由于用户可以在混合媒体集查看器中缩放图像，因此选择图像时，请务必考虑缩放因素。 确保图像的最大大小至少为2000像素。
 
-   有关混合媒体集支持的格式的列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
+   有关混合媒体集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
 1. [创建混合媒体集](#creating-mixed-media-sets)。
 
@@ -52,7 +89,7 @@ ht-degree: 11%
 
    选择混合媒体集，您可以预览它。 要在选定的查看器中检查您的混合媒体集，请选择缩略图图标。 您可以从左边栏下拉菜单中的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
 
-1. [Publish混合媒体集](#publishing-mixed-media-sets)。
+1. [发布混合媒体集](#publishing-mixed-media-sets)。
 
    发布混合媒体集将激活URL和嵌入字符串。 此外，您必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
 
@@ -70,13 +107,13 @@ ht-degree: 11%
 >
 >如果您在创建集时遇到问题，请参阅[Dynamic Media疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md)。
 
-## 上传资源 {#uploading-assets}
+## 上传资产 {#uploading-assets}
 
 首先为混合媒体集上传图像和视频。 请记住，用户可以在混合媒体集查看器中放大图像。 因此，请选择具有此缩放功能的图像。 确保图像的最大大小至少为2000像素。
 
 此外，如果要将旋转集或图像集添加到混合媒体集，请也创建它们。
 
-有关混合媒体集支持的格式的列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
+有关混合媒体集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
 ## 创建混合媒体集 {#creating-mixed-media-sets}
 
@@ -96,7 +133,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >创建混合媒体集时，您可以更改混合媒体集缩略图，或允许Experience Manager根据混合媒体集中的资源自动选择缩略图。 要选择缩略图，请选择&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;并选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定希望Experience Manager从混合媒体集生成缩略图，请选择&#x200B;**[!UICONTROL 切换到自动缩略图]**。
+   >创建混合媒体集时，您可以更改混合媒体集缩略图，或允许Experience Manager根据混合媒体集中的资源自动选择缩略图。 要选择缩略图，请选择&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;并选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从混合媒体集生成缩略图，请选择&#x200B;**[!UICONTROL 切换到自动缩略图]**。
 
 1. 要选择要包含在混合媒体集中的资产，请选择资产选择器。 选择它们，然后选择&#x200B;**[!UICONTROL 选择]**。
 
@@ -166,9 +203,9 @@ ht-degree: 11%
 
 有关如何预览混合媒体集的详细信息，请参阅[预览资源](/help/assets/dynamic-media/previewing-assets.md)。
 
-## Publish混合媒体集 {#publishing-mixed-media-sets}
+## 发布混合媒体集 {#publishing-mixed-media-sets}
 
-有关如何发布混合媒体集的详细信息，请参阅[Publish资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+有关如何发布混合媒体集的详细信息，请参阅[发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 >[!NOTE]
 >

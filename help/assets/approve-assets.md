@@ -1,19 +1,53 @@
 ---
-title: 批准Experience Manager中的资源
+title: 在Experience Manager中批准资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1143'
 ht-degree: 11%
 
 ---
 
 # 批准[!DNL Experience Manager]中的资源
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -27,7 +61,7 @@ ht-degree: 11%
 
 ## 开始之前 {#pre-requisites}
 
-您必须有权访问AEM Assetsas a Cloud Service，并且有权编辑资源的&#x200B;**[!UICONTROL 审核状态]**&#x200B;属性。
+您必须有权访问AEM Assets as a Cloud Service，并有权编辑资产的&#x200B;**[!UICONTROL 审核状态]**&#x200B;属性。
 
 ## 配置
 
@@ -112,9 +146,9 @@ ht-degree: 11%
 
 1. 在右侧面板的[!UICONTROL 属性]部分，选择&#x200B;**[!UICONTROL 状态]**&#x200B;字段中的&#x200B;**[!UICONTROL 已批准]**。
 
-   如果将状态选择为`Approved`，并且已为您的Experience Manager Assets启用具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或同时启用这两者，则可以查看&#x200B;**[!UICONTROL 审批目标]**&#x200B;字段中提供的`Delivery`和`Content Hub`选项。
+   如果将状态选择为`Approved`，并且为Experience Manager Assets启用了[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或同时启用了这两者，则可以查看&#x200B;**[!UICONTROL 审批目标]**&#x200B;字段中提供的`Delivery`和`Content Hub`选项。
 
-   * 选择&#x200B;**[!UICONTROL 投放]**&#x200B;以使资源对具有OpenAPI功能的Dynamic Media和Content Hub均可用。 如果您未启用Content Hub，选择此选项将仅允许具有OpenAPI功能的Dynamic Media使用这些资源。
+   * 选择&#x200B;**[!UICONTROL 投放]**&#x200B;以使资源对具有OpenAPI功能的Dynamic Media和Content Hub均可用。 如果您未启用Content Hub，选择此选项将使资源仅对具有OpenAPI功能的Dynamic Media可用。
    * 选择&#x200B;**[!UICONTROL Content Hub]**&#x200B;以使Content Hub可以使用这些资源。
 
    ![审批状态](/help/assets/assets/approval-status-delivery.png)
@@ -129,7 +163,7 @@ ht-degree: 11%
 
 ## 复制已批准资产的投放URL {#copy-delivery-url-approved-assets}
 
-如果您在AEM as a Cloud Service实例上启用了[!UICONTROL Dynamic Media的OpenAPI功能]，则存储库中所有已批准资源的投放URL均可用。
+如果您在AEM as a Cloud Service实例上启用了[!UICONTROL 具有OpenAPI功能的Dynamic Media]，则存储库中所有已批准资源的投放URL均可用。
 
 要在存储库中复制已批准资产的投放URL，请执行以下操作：
 
@@ -137,7 +171,7 @@ ht-degree: 11%
 
 1. 单击右侧窗格中可用的Dynamic Media图标。
 
-1. 选择&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中提供的带有OpenAPI的&#x200B;**[!UICONTROL Dynamic Media]**。
+1. 选择&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中提供的&#x200B;**[!UICONTROL Dynamic Media with OpenAPI]**。
 
 1. 单击&#x200B;**[!UICONTROL 复制URL]**以复制资产的投放URL。
    ![动态演绎](/help/assets/assets/dm-with-openapi-non-image-assets.png)
@@ -146,4 +180,4 @@ ht-degree: 11%
    >
    仅在Assets视图中提供了复制已批准资源的投放URL的选项。
 
-有关在Dynamic Media面板中显示的其他呈现版本的信息，请参阅[查看和下载Dynamic Media呈现版本](/help/assets/renditions.md#view-download-dm-renditions)。
+有关Dynamic Media面板中显示的其它演绎版的信息，请参阅[查看和下载Dynamic Media演绎版](/help/assets/renditions.md#view-download-dm-renditions)。

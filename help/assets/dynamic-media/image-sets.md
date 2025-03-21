@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 3%
+source-wordcount: '2191'
+ht-degree: 5%
 
 ---
 
 # 图像集 {#image-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 图像集为用户提供了集成的查看体验，用户可通过单击缩略图图像来查看项目的不同视图。 图像集允许您展示项目的替代视图，查看器提供了缩放工具来仔细检查图像。
 
@@ -43,7 +80,7 @@ ht-degree: 3%
 
 要让您快速启动并运行，请执行以下操作：
 
-1. 可选。 [创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)，并将其应用到旋转集图像已上传的新文件夹。
+1. 可选。[创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)，并将其应用到旋转集图像已上传的新文件夹。
 
    批次集预设可以帮助您自动创建图像集。
 
@@ -78,7 +115,7 @@ ht-degree: 3%
 
    选择图像集并预览。 要在选定的查看器中检查图像集，请选择缩略图图标。 您可以从左边栏下拉列表中的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
 
-1. [Publish图像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. [发布图像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    发布图像集将激活URL和嵌入字符串。 此外，您必须[发布已创建的任何自定义查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。 现成的查看器预设已发布。
 
@@ -96,7 +133,7 @@ ht-degree: 3%
 
 ## 上传图像集的资产 {#uploading-assets-in-image-sets}
 
-首先，上传图像集的图像资产。 请记住，用户可以在图像集查看器中缩放图像。 因此，请仔细选择您的图像。 确保图像的最大大小至少为2000像素，以获得最佳的缩放详细信息。 Dynamic Media可渲染每个图像高达2500万像素。 例如，您可以使用5000x5000兆像素的图像或任何其他大小组合，最大可达2500兆像素。
+首先，上传图像集的图像资产。 请记住，用户可以在图像集查看器中缩放图像。 因此，请仔细选择您的图像。 确保图像的最大大小至少为2000像素，以获得最佳的缩放详细信息。 Dynamic Media最多可渲染每个2500万像素的图像。 例如，您可以使用5000x5000兆像素的图像或任何其他大小组合，最大可达2500兆像素。
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
@@ -110,7 +147,7 @@ ht-degree: 3%
 
 要创建多视图图像集，您需要从不同视点显示项目或显示同一项目的不同方面的图像。 目标是突出显示项目的重要功能，以便查看者能够全面了解项目的显示方式或用途。
 
-由于用户可以缩放图像集中的图像，因此请确保图像的最大大小至少为2000像素。 Experience Manager Assets支持多种图像文件格式，但建议使用无损TIFF、PNG和EPS图像。
+由于用户可以缩放图像集中的图像，因此请确保图像的最大大小至少为2000像素。 Experience Manager Assets支持多种图像文件格式，但建议使用无损的TIFF、PNG和EPS图像。
 
 >[!NOTE]
 >
@@ -180,7 +217,7 @@ ht-degree: 3%
 
    如果要更改缩略图或色板，请单击图像旁的 **+** **缩略图**&#x200B;图标，然后导航到所需的缩略图或色板。选择完所有图像后，单击&#x200B;**[!UICONTROL 保存]**。
 
-1. （可选）执行以下任一操作：
+1. （可选）执行下列任一操作：
 
    * 要删除图像，请选择该图像，然后选择&#x200B;**[!UICONTROL 删除资产]**。
 
@@ -188,7 +225,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >创建图像集时，可以更改图像集缩略图。 或者，您可以让Experience Manager根据图像集中的资源自动选择缩略图。 要选择缩略图，请选择“图像集编辑器”页面上“标题”字段上方的&#x200B;**[!UICONTROL 更改缩略图]**。 然后，选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定希望Experience Manager从图像集生成缩略图，请选择&#x200B;**[!UICONTROL 切换到]** **[!UICONTROL 自动缩略图]**。
+   >创建图像集时，可以更改图像集缩略图。 或者，您可以让Experience Manager根据图像集中的资源自动选择缩略图。 要选择缩略图，请选择“图像集编辑器”页面上“标题”字段上方的&#x200B;**[!UICONTROL 更改缩略图]**。 然后，选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从图像集生成缩略图，请选择&#x200B;**[!UICONTROL 切换到]** **[!UICONTROL 自动缩略图]**。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。您创建的图像集会显示在您创建该图像集的文件夹中。
 
@@ -212,7 +249,7 @@ ht-degree: 3%
 
 * 从搜索中，您可以选择&#x200B;**[!UICONTROL 筛选器]**，然后展开&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;并选择&#x200B;**[!UICONTROL 集]**。
 
-  搜索会返回在UI中手动创建或通过批次集预设自动创建的匹配集。 对于自动化集，搜索查询使用“开头为”执行。 此搜索条件与基于使用“包含”的Experience Manager条件不同。 将筛选器设置为&#x200B;**[!UICONTROL 集]**&#x200B;是搜索自动集的唯一方法。
+  搜索会返回在UI中手动创建或通过批次集预设自动创建的匹配集。 对于自动化集，搜索查询使用“开头为”执行。 此搜索条件与基于使用“包含”的Experience Manager不同。 将筛选器设置为&#x200B;**[!UICONTROL 集]**&#x200B;是搜索自动集的唯一方法。
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -263,4 +300,4 @@ ht-degree: 3%
 
 ## 发布图像集 {#publishing-image-sets}
 
-请参阅[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+请参阅[发布Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。

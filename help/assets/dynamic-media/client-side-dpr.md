@@ -1,18 +1,55 @@
 ---
 title: 使用具有客户端设备像素比的智能成像
-description: 了解如何在Adobe Experience Manager as a Cloud Service和Dynamic Media中将客户端设备像素比与智能成像结合使用。
+description: 了解如何在Adobe Experience Manager as a Cloud Service的Dynamic Media中将客户端设备像素比与智能成像结合使用。
 contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 5%
 
 ---
 
 # 关于使用客户端设备像素比(DPR)的智能成像 {#client-side-dpr}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 当前的智能成像解决方案使用用户代理字符串来确定正在使用的设备类型（台式机、平板电脑、移动设备等）。
 
@@ -26,13 +63,13 @@ ht-degree: 0%
 
 **服务器端渲染的应用程序**
 
-1. 通过在HTML页的标头部分中包含以下脚本来加载Service Worker初始化(`srvinit.js`)：
+1. 通过在HTML页面的标题部分中包含以下脚本，加载Service Worker初始化(`srvinit.js`)：
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe建议您在&#x200B;_之前加载此脚本_，以便Service Worker立即开始初始化。
+   Adobe建议您在&#x200B;_之前加载此脚本_，以便立即开始初始化Service Worker。
 
 1. 在HTML页面的body部分的顶部包含以下DPR图像标记代码：
 
@@ -45,7 +82,7 @@ ht-degree: 0%
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   您必须在HTML页的所有静态图像之前&#x200B;_包含此DPR图像标记代码_。
+   您必须在HTML页面中&#x200B;_之前包含此DPR图像标记代码_。
 
 **客户端渲染的应用程序**
 
@@ -58,12 +95,12 @@ ht-degree: 0%
 
    您可以将两个DPR脚本合并到一个脚本中，以避免多个网络请求。
 
-   Adobe建议您在HTML页的&#x200B;_之前加载这些脚本_。
-Adobe还建议您将应用程序Bootstrap在差异HTML标记下，而不是在正文元素下。 原因是`dprImageInjection.js`动态注入HTML页主体部分顶部的图像标签。
+   Adobe建议您在HTML页面的&#x200B;_之前加载这些脚本_。
+Adobe还建议您将应用程序Bootstrap在不同的HTML标记下，而不是在正文元素下。 原因是`dprImageInjection.js`动态注入HTML页面中正文部分顶部的图像标记。
 
 ## JavaScript文件下载 {#client-side-dpr-script}
 
-下载中的以下JavaScript文件仅作为示例参考提供给您。 如果打算在HTML页中使用这些文件，请务必编辑每个文件的代码以满足自己的要求。
+下载中的以下JavaScript文件仅作为示例参考提供给您。 如果您打算在HTML页面中使用这些文件，请务必编辑每个文件的代码以满足您自己的要求。
 
 * `dprImageInjection.js`
 * `srvinit.js`

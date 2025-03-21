@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1737'
 ht-degree: 6%
 
 ---
 
 # 使用[!DNL Adobe Experience Manager Assets] HTTP API管理数字资源{#assets-http-api}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -35,7 +69,7 @@ AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源�
 1. 在`https://[hostname]:[port]/api.json`处打开API服务文档。
 1. 关注指向`https://[hostname]:[server]/api/assets.json`的[!DNL Assets]服务链接。
 
-API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类型的响应代码。 JSON响应是可选的，可能无法用于（例如）PDF文件。 依靠响应代码进行进一步分析或执行操作。
+API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类型的响应代码。 JSON响应是可选的，可能不可用于（例如）PDF文件。 依靠响应代码进行进一步分析或执行操作。
 
 >[!NOTE]
 >
@@ -49,7 +83,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 >[!NOTE]
 >
->有关可用的各种AEM API的概述以及所涉及概念的比较，请参阅[结构化内容交付和管理的API](/help/headless/apis-headless-and-content-fragments.md)。
+>有关可用的各种API的概述以及所涉及概念的比较，请参阅结构化内容交付和管理的[AEM API](/help/headless/apis-headless-and-content-fragments.md)。
 >
 >[内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
@@ -88,7 +122,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 * **属性和元数据：**&#x200B;有关资产的描述性信息。
 * **二进制文件：**&#x200B;最初上载的文件。
-* **演绎版：**&#x200B;多个配置的演绎版(例如，不同大小的图像、不同的视频编码或从PDF/Adobe InDesign文件中提取的页面)。
+* **演绎版：**&#x200B;多个配置的演绎版(例如，各种大小的图像、不同的视频编码或从PDF/Adobe InDesign文件中提取的页面)。
 * **备注（可选）：**&#x200B;用户提供的备注。
 
 有关内容片段中元素的信息，请参阅[Experience Manager Assets HTTP API中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)。

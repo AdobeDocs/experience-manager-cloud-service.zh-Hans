@@ -1,6 +1,6 @@
 ---
-title: 历程Dynamic Media，第二部分
-description: Dynamic Media历程介绍了Dynamic Media的基础知识、其工作方式、可为您提供的功能以及它给您的工作和客户带来的价值。
+title: 历程到Dynamic Media，第二部分
+description: Dynamic Media历程包括Dynamic Media的基础知识、其工作方式、可为您提供的功能以及可为您的工作和客户带来的价值。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -11,18 +11,55 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
 
 # Dynamic Media历程：基础知识，第二部分  {#dm-journey-part2}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
+
 {{see-also-dm}}
 
-欢迎使用Dynamic Media历程：基础知识，第II部分，您可以从中学习以下内容：
+欢迎使用Dynamic Media历程：基础知识，请参阅第II部分，从中可了解以下内容：
 
 * Dynamic Media URL剖析，以及Dynamic Media如何交付内容。
 * 创建图像预设以渲染资产的基础知识。
@@ -34,24 +71,24 @@ ht-degree: 0%
 >
 >为获得最佳结果，Adobe建议您在台式计算机上阅读并查看此Dynamic Media历程。
 
-## Dynamic Media URL剖析，以及Dynamic Media如何交付内容 {#dm-journey-d}
+## Dynamic Media URL剖析以及Dynamic Media如何交付内容 {#dm-journey-d}
 
-上传和发布Dynamic Media资源后，您可以复制资源生成的URL并将其粘贴到浏览器中，以查看向客户呈现资源的方式。 以下复制的监视图像URL按颜色进行划分，以便于阅读和理解。
+上传和发布Dynamic Media资产后，您可以复制资产生成的URL并将其粘贴到浏览器中，以查看向客户展示资产的方式。 以下复制的监视图像URL按颜色进行划分，以便于阅读和理解。
 
 ![Dynamic Media URL的剖析](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Dynamic Media URL的剖析。_
 
-URL的第一个红色部分引用了服务器域本身。 在这种情况下，Dynamic Media正在通用服务器域`https://s7d1.scene7.com/is/image/`上运行。 通过查看服务器域，可以轻松查看一组图像并了解这些图像是否由Dynamic Media提供服务。 URL将保持相当一致。 但是，有一些Dynamic Media客户已切换到专用服务器域，该域可能为`name-of-your-company.scene7.com`。 智能成像需要一个专用服务器域。
+URL的第一个红色部分引用了服务器域本身。 在这种情况下，Dynamic Media正在通用服务器域`https://s7d1.scene7.com/is/image/`上运行。 只需查看服务器域，即可轻松查看一组图像并了解Dynamic Media是否为其提供服务。 URL将保持相当一致。 但是，有一些Dynamic Media客户已切换到专用服务器域，该域可能为`name-of-your-company.scene7.com`。 智能成像需要一个专用服务器域。
 
 帐户名称是紫色部分。 在这种情况下，该帐户名为`jpearldemo`。
 
-资源ID或名称`AdobeStock_28563982`为绿色。 请注意，该资产具有&#x200B;_no_&#x200B;文件扩展名，如`.png`或`.jpg`。 将资源摄取到Dynamic Media中时，会剥离文件扩展名并创建另一种文件：金字塔TIFF文件。 金字塔TIFF允许Dynamic Media动态快速创建演绎版。
+资源ID或名称`AdobeStock_28563982`为绿色。 请注意，该资产具有&#x200B;_no_&#x200B;文件扩展名，如`.png`或`.jpg`。 将资源摄取到Dynamic Media中时，会剥离文件扩展名并创建另一种文件：金字塔 — TIFF文件。 pyramic-TIFF允许Dynamic Media动态快速创建演绎版。
 
 最后，还有图像处理参数`?wid=1000&fmt=jpeg&qlt=85`，这些参数在结尾以黄色显示。
 
 整个URL路径是实时的。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}。
 
-在浏览器窗口仍打开以显示Dynamic Media URL和监视图像的情况下，让我们仔细了解如何通过更改URL来创建图像的演绎版。
+在浏览器窗口仍打开并显示Dynamic Media URL和监视图像的情况下，让我们仔细看看如何通过更改URL来创建图像的演绎版。
 
 ### 通过URL呈现监视图像
 
@@ -64,24 +101,24 @@ URL的第一个红色部分引用了服务器域本身。 在这种情况下，D
 现在将`500`像素的宽度值更改为`1000`像素，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}。
 当您按**[!UICONTROL Enter]**&#x200B;时，浏览器将返回到Dynamic Media图像服务器。 它会根据您刚刚输入的新宽度值生成手表的全新演绎版，然后将新图像发送回浏览器，然后进行缓存。
 
-Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资源。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)查看他们的列表。
+Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资产。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)查看他们的列表。
 
 现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧跟`wid=1000`，键入`&rotate=90`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}。
 
 这块表还是稍微向左偏了。 将`90`的旋转值更改为`92`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}。
 
-同样，当您按&#x200B;**[!UICONTROL Enter]**&#x200B;时，将立即生成手表的新演绎版。 您可以看到您获得的性能类型，这解释了为什么Dynamic Media在繁忙的周末或大假期可以每秒发送&#x200B;_个_&#x200B;超过800,000个图像请求。
+同样，当您按&#x200B;**[!UICONTROL Enter]**&#x200B;时，将立即生成手表的新演绎版。 您可以看到您获得的性能种类，这解释了为什么在繁忙的周末或重大节假日时，Dynamic Media每秒可以发送&#x200B;_个以上的图像请求_，达到800,000个。
 
 虽然可以逐个图像更改URL中的图像处理参数，但这不是一种有效方法，尤其是在您的网站上包含成千上万张图像的情况下。 一种更好的方法是使用图像预设。
 
 ## 创建图像预设以渲染资产的基础知识 {#dm-journey-e}
 
-有多种方法和位置可供您创建图像或让图像可用。 传统上，Creative进入Adobe Photoshop，并将每个演绎版另存为静态图像。
+有多种方法和位置可供您创建图像或让图像可用。 传统上，Creative进入Adobe Photoshop，并将每个不同的演绎版另存为静态图像。
 
 ![静态图像](/help/assets/dynamic-media/assets/dm-static-images.png)
 _良好：静态图像，每个图像都是手动创建的。_
 
-想象一下Creative Director看到图片说，
+想象一下Creative总监看着图片说，
 
 _“我真的很想拍这张照片，好让大手指向四个，小手指向1，好让表盘旋钮更容易看到。”_
 
@@ -116,12 +153,12 @@ _从“基本”选项卡开始创建图像预设。_
 
 _Medium_&#x200B;图像预设的宽度为500像素，高度为800像素。 在本历程的第一部分中，您已阅读有关以不同格式交付资产的信息。 从&#x200B;**[!UICONTROL 格式]**&#x200B;下拉菜单中，您可以选择以JPEG、PNG、TIFF或多种其他格式交付资源。 您可以灵活处理。
 
-选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡可为您提供资源色彩空间的选项。 根据您在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中选择的格式(在上例中选择了JPEG)，您可以投放RGB、灰度或CMYK格式的资源。 从&#x200B;**[!UICONTROL 颜色配置文件]**&#x200B;下拉菜单中，您可以选择如何交付要用于打印的CMYK图像资产。 另外请注意，还可以应用其他参数来锐化图像。 在这种情况下，应用了&#x200B;**[!UICONTROL 钝化蒙版]**。
+选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡可为您提供资源色彩空间的选项。 根据您在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中选择的格式(在上例中选择了JPEG)，您可以在RGB、灰度或CMYK中交付资源。 从&#x200B;**[!UICONTROL 颜色配置文件]**&#x200B;下拉菜单中，您可以选择如何交付要用于打印的CMYK图像资产。 另外请注意，还可以应用其他参数来锐化图像。 在这种情况下，应用了&#x200B;**[!UICONTROL 钝化蒙版]**。
 
 ![通过选择“高级”选项卡中的选项来创建图像预设](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _通过选择“高级”选项卡中的选项来创建图像预设。_
 
-您记得在之前的[Dynamic Media URL剖析](#dm-journey-d)中，您阅读了有关Dynamic Media URL及其构建方式的信息。 在&#x200B;**[!UICONTROL 图像修饰符]**&#x200B;文本框中，您可以键入所需的任何其他图像处理参数。 使用预设交付图像时，这些参数会包含在URL的预设名称中。 在上面的屏幕快照中，添加了参数`bgc=451B15`。 也就是说，添加了深棕色背景颜色。
+您还记得在之前的[Dynamic Media URL剖析](#dm-journey-d)中，您阅读了有关Dynamic Media URL及其构建方式的信息。 在&#x200B;**[!UICONTROL 图像修饰符]**&#x200B;文本框中，您可以键入所需的任何其他图像处理参数。 使用预设交付图像时，这些参数会包含在URL的预设名称中。 在上面的屏幕快照中，添加了参数`bgc=451B15`。 也就是说，添加了深棕色背景颜色。
 
 您可以将图像预设视为图像的指导方针。 它将提供所有使用预设的图像，每次都一致；将是一样的。 还添加了参数`&op_brightness=+10`以略微增加亮度。
 
@@ -134,7 +171,7 @@ _应用图像预设Medium以生成图像的演绎版。_
 
 在您的浏览器中，注意完整URL路径中的图像预设&#x200B;_Medium_&#x200B;的名称。
 
-您可以看到图像所显示的清晰度。 这种品质部分是由于这碗巧克力的投球方式。 此外，部分原因在于，与Dynamic Media相比，您可以存储更大的图像。
+您可以看到图像所显示的清晰度。 这种品质部分是由于这碗巧克力的投球方式。 此外，部分原因在于使用Dynamic Media，您可以存储比传输到数字渠道更大的图像。
 
 如果你的巧克力碗看起来一切正常，你可以在网页上粘贴你希望图像出现在网站上的位置URL。
 
@@ -143,7 +180,7 @@ _应用图像预设Medium以生成图像的演绎版。_
 ![静态和动态图像预设](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _静态和动态图像预设。 已使用`PDP-page`图像预设呈现监视图像。_
 
-但是，如果您必须更改网站上的图像，该怎么办？ 例如，假设您已经进行了一些测试，发现未收到您认为的120 x 120的图像（`Cart`图像预设）。 您必须通过将宽度增加到175像素并将高度增加到175像素来增大图像。 传统上，您必须进入Adobe Photoshop并重新创建所有这些购物车图像。 但使用Dynamic Media，您只需编辑图像预设，只需将宽度和高度值更新为175并保存预设即可，如以下示例所示。
+但是，如果您必须更改网站上的图像，该怎么办？ 例如，假设您已经进行了一些测试，发现未收到您认为的120 x 120的图像（`Cart`图像预设）。 您必须通过将宽度增加到175像素并将高度增加到175像素来增大图像。 传统上，您必须进入Adobe Photoshop并重新创建所有这些购物车图像。 但使用Dynamic Media，您只需编辑图像预设，只需将宽度和高度值更新为175并保存预设即可，如下面的示例所示。
 
 ![编辑图像预设](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _正在编辑`Cart`图像预设的宽度和高度。_
@@ -156,7 +193,7 @@ Dynamic Media的一些更常用的用途是，使您能够创建图像集、旋�
 
 图像集通常由一系列图像资产组成，这些资产以单个实体的形式呈现。 这些类型的集为用户提供了集成的查看体验，用户可以通过单击缩略图图像查看项目的不同视图。 通过图像集，您可以呈现某种内容的替代视图，并且查看器提供了缩放工具来仔细检查图像。 [查看名为“正在运行”且使用弹出查看器](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running)的图像集。
 
-在Dynamic Media内部，您可以看到几张跑鞋的图片。 它是销售和营销部门希望客户作为单个演示文稿查看的产品线系列；图像集。
+在Dynamic Media中，您可以看到几张跑步鞋的图像。 它是销售和营销部门希望客户作为单个演示文稿查看的产品线系列；图像集。
 
 ![创建图像集](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _开始创建图像集。_
@@ -197,7 +234,7 @@ _应用了弹出查看器的`Running`图像集。_
 
 现在，假设您的销售和营销团队不喜欢弹出查看器。 他们喜欢缩放功能，但他们希望客户能够直接在鞋子上看到缩放效果。 在这种情况下，您只需将InlineZoom查看器应用于图像集，并在浏览器中复制并粘贴其URL以查看其行为。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}。
 
-当您将鼠标指针移到鞋上时，可以放大该图像，并且可以在移动指针时看到更多细节。 原因很简单，就是最初上传到Dynamic Media的图像的大小。
+当您将鼠标指针移到鞋上时，可以放大该图像，并且可以在移动指针时看到更多细节。 原因很简单，就是最初上传到Dynamic Media中的图像的大小。
 
 当你考虑作为消费者生活时，或者当你从事日常工作时，当你访问不同的网站时，你会看到类似这样的事情。 考虑一下如何做到这一点，以及如何在您自己的工作和您公司的网站上使用Dynamic Media的强大功能。
 
@@ -226,7 +263,7 @@ _Dynamic Media Help topics_
 _Dynamic Media教程_
 
 * [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (在&#x200B;_Dynamic Media_&#x200B;上搜索)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
 
 _Dynamic Media查看器_
 

@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 2%
 
 ---
 
 # 使用规则集转换URL {#using-rulesets-to-transform-urls}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以在Dynamic Media中部署规则集以转换URL。 规则集是以脚本语言(如JavaScript)编写的指令集，用于评估XML数据并在该数据满足特定条件时执行特定操作。 每个规则包括至少一个条件和至少一个操作。 规则根据条件评估XML数据，如果满足条件，则执行相应的操作。 规则集的示例包括：
 
@@ -28,15 +65,15 @@ ht-degree: 0%
 * 设置内容处置以触发下载。
 * 简化用于个性化的图像服务模板URL。 例如，将`rgb{XX,YY,ZZ}`转换为RTF就绪的`\redXX\greenYY\blueZZ`
 
-* 请求对某些字符（如`$`、`{`和`}`）进行编码，并对某些字符进行解码以连接到ImageServer。 例如，Facebook不能很好地处理包含特殊字符的URL。
+* 请求对某些字符（如`$`、`{`和`}`）进行编码，并对某些字符进行解码以连接到ImageServer。 例如，Facebook无法很好地处理包含特殊字符的URL。
 
   请参阅[从URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)中删除特殊字符。
 
-在Dynamic Media的上下文中，使用基于XML的系统管理资源信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于提供Dynamic Media资源的预处理规则集文件。 此文件将重新构建标准URL协议格式，以满足与Dynamic Media集成系统的公司逻辑。 指定一个XML文件作为规则集定义文件路径。
+在Dynamic Media的上下文中，使用基于XML的系统管理资产信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于提供Dynamic Media资产的预处理规则集文件。 此文件将重新构建标准URL协议格式，以满足与Dynamic Media集成系统的公司逻辑。 指定一个XML文件作为规则集定义文件路径。
 
 >[!CAUTION]
 >
->使用规则集时请务必谨慎；规则集可能会阻止在您的网站上显示Dynamic Media内容。
+>使用规则集时请务必小心；规则集可能会阻止在您的网站上显示Dynamic Media内容。
 
 提供了一些示例规则集，可帮助您创建自己的规则集。
 请参阅[规则集引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
@@ -59,7 +96,7 @@ ht-degree: 0%
 
 1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
-   Adobe在配置时提供了您的凭据和登录详细信息。 如果您没有此信息，请联系客户支持。
+   配置时，Adobe已提供您的凭据和登录详细信息。 如果您没有此信息，请联系客户支持。
 
 1. 通过执行以下操作上载规则集文件：
 
@@ -68,15 +105,15 @@ ht-degree: 0%
    * 在&#x200B;**[!UICONTROL 打开]**&#x200B;对话框中，浏览到您的规则集文件(XML)。
    * 选择文件，然后选择&#x200B;**[!UICONTROL 打开]**。
    * 在&#x200B;**[!UICONTROL 上传]**&#x200B;页面的右侧，为规则集文件选择一个目标文件夹。
-   * 在页面底部附近，确保选中了“上传后的Publish” 。
+   * 在页面底部附近，确保选中上传后发布。
    * 在页面的右下角，选择&#x200B;**[!UICONTROL 提交上传]**。
    * 在全局导航栏上，选择&#x200B;**[!UICONTROL 作业]**&#x200B;以检查上载作业的状态。 当&#x200B;**[!UICONTROL 作业]**&#x200B;页面上的&#x200B;**[!UICONTROL 状态]**&#x200B;列显示“上载完成”时，请继续后续步骤。
 
-1. 在靠近页面顶部的导航栏上，导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL Publish设置]** > **[!UICONTROL 图像服务器]**。
-1. 在&#x200B;**[!UICONTROL 图像服务器Publish]**&#x200B;页面的&#x200B;**[!UICONTROL 目录管理]**&#x200B;组下，找到&#x200B;**[!UICONTROL 规则集定义文件路径]**，然后选择&#x200B;**[!UICONTROL 选择]**。
+1. 在靠近页面顶部的导航栏上，导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。
+1. 在&#x200B;**[!UICONTROL 图像服务器发布]**&#x200B;页面的&#x200B;**[!UICONTROL 目录管理]**&#x200B;组下，找到&#x200B;**[!UICONTROL 规则集定义文件路径]**，然后选择&#x200B;**[!UICONTROL 选择]**。
 1. 在&#x200B;**[!UICONTROL 选择规则集定义文件(XML)]**&#x200B;页面上，浏览到您的规则集文件，然后在页面的右下角选择&#x200B;**[!UICONTROL 选择]**。
 1. 在设置页面的右下角，选择&#x200B;**[!UICONTROL 关闭]**。
-1. 运行图像服务器Publish作业。
+1. 运行图像服务器发布作业。
 
    对实时Dynamic Media图像服务器的请求应用规则集条件。
 

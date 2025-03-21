@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 5%
+source-wordcount: '818'
+ht-degree: 7%
 
 ---
 
 # 使用[!DNL Adobe Creative Cloud]集成生成资源的变体 {#content-automation}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 内容自动化加载项将[!DNL Adobe Experience Manager Assets]作为[!DNL Cloud Service]和[!DNL Adobe Creative Cloud] API集成在一起，以大规模地创造性地处理您的资产。 [!DNL Experience Manager]使用基于云的[资源微服务](/help/assets/asset-microservices-overview.md)来使用[!DNL Adobe Creative Cloud]功能并自动创建和处理资源。
 
@@ -49,7 +83,7 @@ ht-degree: 5%
 
   ![Photoshop操作](/help/assets/assets/content-automation-psactions.png)
 
-* **智能对象替换**：通过允许您交换图像，同时保留PSD文件中应用的所有效果和调整，可大规模进行个性化。
+* **智能对象替换**：通过允许您交换图像，同时保留在PSD文件中应用的所有效果和调整，实现大规模个性化。
 
   ![智能替换对象](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -83,11 +117,11 @@ ht-degree: 5%
 
 1. 选择&#x200B;**[!UICONTROL 创建]**，并指定&#x200B;**[!UICONTROL 名称]**。
 
-1. 选择&#x200B;**[!UICONTROL 创意]**&#x200B;选项卡，指定输出文件夹，选择&#x200B;**[!UICONTROL 新增]**&#x200B;以添加创意配置。
+1. 选择&#x200B;**[!UICONTROL Creative]**&#x200B;选项卡，指定输出文件夹，选择&#x200B;**[!UICONTROL 新增]**&#x200B;以添加创意配置。
 
 1. 提供&#x200B;**[!UICONTROL 节目名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型），选择&#x200B;**[!UICONTROL 质量]**（或输出参数），选择&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME类型列表（或输入资源筛选器），然后选择所需的创作操作。
 
-   [!UICONTROL 处理配置文件]](assets/creative-processing-profile.png)中的![[!UICONTROL 创意]选项卡
+   [!UICONTROL 处理配置文件]](assets/creative-processing-profile.png)中的![[!UICONTROL Creative]选项卡
 
 1. 某些操作需要额外的参数（资源）。 如有必要，请为这些额外的参数提供值。
 

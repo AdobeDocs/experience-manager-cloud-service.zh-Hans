@@ -1,28 +1,62 @@
 ---
 title: Assets Prime
-description: 详细了解Assets Prime的主要方面，例如主要优势、用户类型及其权限。
+description: 详细了解Assets Prime的主要方面，如主要优势、用户类型及其权限。
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1152'
+ht-degree: 16%
 
 ---
 
-# [!DNL Assets]个as a Cloud ServicePrime  {#assets-prime}
+# [!DNL Assets] as a Cloud Service Prime  {#assets-prime}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 ![AEM Assets Prime横幅图像](/help/assets/assets/aem-assets-prime-package-banner.png)
 
-Assetsas a Cloud ServicePrime包括轻量级DAM，可让您执行各种关键功能，例如：
+Assets as a Cloud Service Prime包括轻量级DAM，可让您执行各种关键功能，例如：
 
-* **资产管理和图书馆服务**&#x200B;：让用户能够在集中存储库中摄取、存储、目录、控制、管理和治理品牌数字资产的工具
+* **资产管理和库服务**：让用户能够在集中存储库中引入、存储、分类、控制、管理和治理品牌数字资产的工具
 
-* **搜索、发现和 Collaboration**：使用户能够浏览、发现、共享和协作创建丰富帐户体验所需资产的工具。
+* **搜索、发现和协作**：使用户能够浏览、发现、共享和协作创建丰富客户体验所需资产的工具。
 
 * **安全性和 Rights Management**：用于管理访问、权限、权利和安全性的工具，以确保合规性、一致性和品牌完整性。
 
@@ -34,11 +68,11 @@ Assetsas a Cloud ServicePrime包括轻量级DAM，可让您执行各种关键功
 
 * **集成**：与其他 Adobe 和非 Adobe 应用程序的集成。
 
-* **动态媒体（插件）**：用于转换和交付图像、视频和其他新兴内容的工具，可为任何设备提供丰富的交互式多媒体体验。
+* **Dynamic Media（插件）**：用于转换和传递图像、视频和其他新兴内容的工具，可为任何设备大规模提供丰富的交互式多媒体体验。
 
   >[!NOTE]
   >
-  >Dynamic Media具有OpenAPI功能，允许您访问基本图像修饰符，例如旋转、裁切（仅限手动 — 无智能裁切）、翻转、大小、偏好webp、高度、宽度、质量、格式和自适应视频流，Assets Prime也提供该功能。 请联系Adobe客户团队以了解更多信息。
+  >带有OpenAPI功能的Dynamic Media还通过Assets Prime提供对基本图像修饰符的访问，如旋转、裁切（仅限手动 — 无智能裁切）、翻转、大小、偏好webp、高度、宽度、质量、格式和自适应视频流。 请联系Adobe客户团队以了解更多信息。
 
 1. [创建新程序](/help/journey-onboarding/create-program.md)。
 
@@ -46,9 +80,9 @@ Assetsas a Cloud ServicePrime包括轻量级DAM，可让您执行各种关键功
 
 本文提供了一个用于启用Assets as a Cloud Service Prime的端到端工作流程。
 
-## 启用Assetsas a Cloud ServicePrime{#enable-assets-prime}
+## 启用Assets as a Cloud Service Prime{#enable-assets-prime}
 
-在使用Cloud Manager创建新项目时启用Assets Prime。 执行以下步骤：
+在使用Assets创建新程序时启用Cloud Manager Prime。 执行以下步骤：
 
 1. 作为系统管理员，登录到Cloud Manager。 确保在登录时选择正确的组织。
 
@@ -58,7 +92,7 @@ Assetsas a Cloud ServicePrime包括轻量级DAM，可让您执行各种关键功
 
 1. [创建新程序](/help/journey-onboarding/create-program.md)。
 
-   创建新程序时，在&#x200B;**[!UICONTROL 解决方案和加载项]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Assets Prime]**。 您还可以展开&#x200B;**[!UICONTROL Assets Prime]**&#x200B;并选择&#x200B;**[!UICONTROL Content Hub]**&#x200B;以启用[Content Hub](/help/assets/product-overview.md)以进行资产分发。
+   创建新程序时，在&#x200B;**[!UICONTROL 解决方案和加载项]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Assets Prime]**。 您还可以展开&#x200B;**[!UICONTROL Assets Prime]**&#x200B;并选择&#x200B;**[!UICONTROL Content Hub]**&#x200B;以启用[Content Hub](/help/assets/product-overview.md)的资源分发。
 
    ![AEM Assets Ultimate](assets/aem-assets-prime.png)
 
@@ -75,7 +109,7 @@ Assetsas a Cloud ServicePrime包括轻量级DAM，可让您执行各种关键功
 >
 >Assets Prime仅允许您创建生产环境。 成功创建生产环境后，“添加环境”选项将不再可用。
 
-Assets Prime现已为Experience Manager Assetsas a Cloud Service启用。
+Assets Prime现已为Experience Manager Assets as a Cloud Service启用。
 
 ![AEM Assets Prime可用](assets/aem-assets-prime-setup-complete.png)
 
@@ -88,16 +122,16 @@ Admin Console上的AEM as a Cloud Service实例包含以下产品配置文件：
 
 * AEM 用户
 
-* [AEM 资产s 合作者用户](#onboard-collaborator-users)
+* [AEM Assets 协作者用户](#onboard-collaborator-users)
 
-* [AEM 资产s 高级用户](#onboard-power-users)
+* [AEM Assets 高级用户](#onboard-power-users)
 
 
 ![AEM Assets产品配置文件](assets/aem-assets-product-profiles.png)
 
 您可以开始将用户或用户组添加到AEM Assets Collaborator用户和AEM Assets超级用户产品配置文件。 有关详细信息，请参阅[载入AEM Assets Collaborator用户](#onboard-collaborator-users)和[载入AEM Assets超级用户](#onboard-power-users)。
 
-如果已为Assets启用了Content Hubas a Cloud Service，则在Admin Console的AEM Assetsas a Cloud Service中会创建一个新实例，并使用`delivery`作为后缀：
+如果您已经为Assets as a Cloud Service启用了Content Hub，则在Admin Console上的AEM Assets as a Cloud Service中会创建一个新实例，其后缀为`delivery`：
 
 ![Content Hub的新实例](assets/new-instance-content-hub.png)
 
@@ -119,11 +153,11 @@ Admin Console上的AEM as a Cloud Service实例包含以下产品配置文件：
 
 ## 载入AEM Assets协作者用户 {#onboard-collaborator-users}
 
-AEM Assets Collaborator用户可以通过其他Adobe产品和非Adobe应用程序中提供的Assets集成来使用Experience Manager中的资源，使用内置的Adobe Express和Firefly创建和编辑资源，利用专业设计的模板、品牌工具包、Adobe Stock资源等，以及使用AEM Assets Content Hub门户访问和利用您组织中批准的资源。
+AEM Assets Collaborator用户可以通过贵组织在其他Assets产品和非Adobe应用程序中提供的Adobe集成来使用Experience Manager中的资产，使用内置的Adobe Express和Firefly创建和编辑资产，利用专业设计的模板、品牌工具包、Adobe Stock资产等，以及使用AEM Assets Content Hub门户访问和利用贵组织批准的资产。
 
 要载入Collaborator用户：
 
-1. 通过单击Admin Console上产品列表中的Experience Manager Assets产品名称来访问AEM as a Cloud Service产品配置文件。
+1. 通过单击Experience Manager Assets产品列表中的AEM as a Cloud Service产品名称，访问Admin Console产品配置文件。
 
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
@@ -131,21 +165,21 @@ AEM Assets Collaborator用户可以通过其他Adobe产品和非Adobe应用程�
 1. 单击Collaborators用户产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将该用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-collaborator-user-permissions.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
+1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 您还可以访问和查看分配给Collaborator用户的服务，如下图所示：
 
 为Collaborator用户提供![服务](assets/aem-assets-collaborator-users.png)
 
-默认情况下已启用`Adobe Express`和`AEM Assets Collaborator Users`服务。 您可以根据自己的要求关闭和打开切换开关，但Adobe建议使用为产品配置文件启用的默认服务。
+默认情况下已启用`Adobe Express`和`AEM Assets Collaborator Users`服务。 您可以根据自己的要求关闭和打开切换开关，但是Adobe建议使用为产品配置文件启用的默认服务。
 
 ## 载入AEM Assets高级用户 {#onboard-power-users}
 
-AEM Assets超级用户可以访问所有AEM Assets功能，包括管理资产、权限、元数据以及有关数字资产的整体管理和自动化，通过其他Adobe和非Adobe应用程序中提供给贵组织的Assets集成使用Experience Manager中的资产，使用内置Adobe Express和Firefly创建和编辑资产(利用专业设计的模板、品牌工具包、Adobe Stock资产等)，以及使用AEM Assets Content Hub门户访问和利用贵组织批准的资产。
+AEM Assets高级用户可以访问所有AEM Assets功能，包括管理资产、权限、元数据以及有关数字资产的整体管理和自动化，通过其他Adobe和非Adobe应用程序中提供给贵组织的Assets集成使用Experience Manager中的资产，使用内置的Adobe Express和Firefly利用专业设计的模板、品牌工具包、Adobe Stock资产等创建和编辑资产，以及使用AEM Assets Content Hub门户访问和利用贵组织批准的资产。
 
 要载入超级用户，请执行以下操作：
 
-1. 通过单击Admin Console上产品列表中的Experience Manager Assets产品名称来访问AEM as a Cloud Service产品配置文件。
+1. 通过单击Experience Manager Assets产品列表中的AEM as a Cloud Service产品名称，访问Admin Console产品配置文件。
 
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
@@ -153,10 +187,10 @@ AEM Assets超级用户可以访问所有AEM Assets功能，包括管理资产、
 1. 单击Power users产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-power-user-permissions.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
+1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 您还可以访问和查看分配给超级用户的服务，如下图所示：
 
 超级用户![服务](assets/aem-assets-power-users.png)
 
-默认情况下已启用`Adobe Express`和`AEM Assets Power Users`服务。 您可以根据自己的要求关闭和打开切换开关，但Adobe建议使用为产品配置文件启用的默认服务。
+默认情况下已启用`Adobe Express`和`AEM Assets Power Users`服务。 您可以根据自己的要求关闭和打开切换开关，但是Adobe建议使用为产品配置文件启用的默认服务。

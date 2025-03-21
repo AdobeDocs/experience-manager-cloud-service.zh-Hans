@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2680'
 ht-degree: 10%
 
 ---
 
 # 元数据架构 {#metadata-schemas}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -49,13 +83,13 @@ ht-degree: 10%
 | [!UICONTROL 默认值] | | 资源的基本元数据架构表单。 |
 | | 以下子表单继承[!UICONTROL 默认]表单的属性： | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media视频的架构表单。 |
-| | <ul><li>[!UICONTROL 图像]</li></ul> | 具有MIME类型（如`image/jpeg`和`image/png`）的图像的架构表单。 <br> [!UICONTROL 图像]表单具有以下子表单模板： <ul><li> [!UICONTROL jpeg]：子类型为[!UICONTROL jpeg]的资产的架构表单。</li> <li>[!UICONTROL tiff]：具有子类型TIFF的资源的结构描述表单。</li></ul> |
+| | <ul><li>[!UICONTROL 图像]</li></ul> | 具有MIME类型（如`image/jpeg`和`image/png`）的图像的架构表单。 <br> [!UICONTROL 图像]表单具有以下子表单模板： <ul><li> [!UICONTROL jpeg]：子类型为[!UICONTROL jpeg]的资产的架构表单。</li> <li>[!UICONTROL tiff]：具有子类型TIFF的资源的架构表单。</li></ul> |
 | | <ul><li>[!UICONTROL 应用程序]</li></ul> | MIME类型资产（如`application/pdf`和`application/zip`）的架构表单。 <br>[!UICONTROL pdf]：具有子类型PDF的资源架构表单。 |
 | | <ul><li>[!UICONTROL 视频]</li></ul> | 具有MIME类型（如`video/avi`和`video/mp4`）的视频资产的架构表单。 |
 | [!UICONTROL 收藏集] | | 收藏集的架构表单。 |
 | [!UICONTROL contentfragment] | | 内容片段的架构表单。 |
 | [!UICONTROL 表单] | | 此架构表单与[!DNL Adobe Experience Manager Forms]相关。 |
-| [!UICONTROL ugc_contentfragment] | | 用于用户生成的内容片段和从社交媒体集成到Experience Manager中的资源的架构表单。 |
+| [!UICONTROL ugc_contentfragment] | | 用户生成的内容片段和资产从社交媒体集成到Experience Manager的架构表单。 |
 
 >[!NOTE]
 >
@@ -101,7 +135,7 @@ ht-degree: 10%
 | [!UICONTROL 下拉列表] | 添加一个下拉列表。 |
 | [!UICONTROL 标准标记] | 添加标记。 |
 | [!UICONTROL 智能标记] | 通过自动添加元数据标记来增强搜索功能。 |
-| [!UICONTROL 隐藏字段] | 添加隐藏字段。 在保存资源时，它将作为POST参数发送。 |
+| [!UICONTROL 隐藏字段] | 添加隐藏字段。 保存资产时，此参数将作为POST参数发送。 |
 | [!UICONTROL 由]引用的资产 | 添加此组件可查看资产引用的资产列表。 |
 | [!UICONTROL 资源引用] | 添加以显示引用资产的资产列表。 |
 | [!UICONTROL 产品引用] | 添加以显示与资产链接的产品列表。 |
@@ -123,7 +157,7 @@ ht-degree: 10%
 
 * `./jcr:content/metadata/dc:title`：将该值作为属性 `dc:title` 存储在资产的元数据节点中。
 
-* `./jcr:created`：存储资源的创建日期和时间。 它是受保护的资产。 如果配置这些属性，Adobe建议将它们标记为“禁用编辑”。 否则，在保存资产的属性时，会出现“资产修改失败”错误。
+* `./jcr:created`：存储资源的创建日期和时间。 它是受保护的资产。 如果配置这些资产，Adobe建议将它们标记为“禁用编辑”。 否则，在保存资产的属性时，会出现“资产修改失败”错误。
 
 为确保组件在元数据架构表单中正确显示，属性路径不应包含任何空格。
 
@@ -139,7 +173,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->[!UICONTROL 隐藏字段]组件不包含这些属性。 相反，它包括属性，如属性“名称”、“值”、“字段标签”和“描述”。 每当保存资源时，隐藏字段组件的值都会作为POST参数发送。 它不会另存为资源的元数据。
+>[!UICONTROL 隐藏字段]组件不包含这些属性。 相反，它包括属性，如属性“名称”、“值”、“字段标签”和“描述”。 每当保存资产时，隐藏字段组件的值都会作为POST参数发送。 它不会另存为资源的元数据。
 
 如果选择&#x200B;**[!UICONTROL 必需]**&#x200B;选项，则可以搜索缺少必需元数据的资产。从&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中，展开&#x200B;**[!UICONTROL 元数据验证]**&#x200B;谓词，然后选择&#x200B;**[!UICONTROL 无效]**&#x200B;选项。搜索结果中显示的资产缺少您通过架构表单配置的必需元数据。
 
@@ -243,7 +277,7 @@ Experience Manager仅允许您删除自定义架构表单。 不允许删除默�
 
 >[!NOTE]
 >
->可根据其他字段的值将元数据字段定义为必填字段。 在“卡片”视图中，Experience Manager不会显示有关此类必填元数据字段缺少元数据的警告消息。
+>可根据其他字段的值将元数据字段定义为必填字段。 在“卡片”视图中，Experience Manager不显示有关此类必填元数据字段缺少元数据的警告消息。
 
 1. 单击Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
 1. 将默认元数据表单另存为自定义表单。 例如，将其另存为`my_default`。

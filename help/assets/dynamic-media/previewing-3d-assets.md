@@ -1,18 +1,55 @@
 ---
-title: 预览 3D 资源
+title: 预览 3D 资产
 description: 了解如何在Experience Manager中预览3D资源。
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 6%
+source-wordcount: '667'
+ht-degree: 8%
 
 ---
 
 # 在Adobe Experience Manager中预览3D资源{#previewing-3d-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -21,7 +58,7 @@ ht-degree: 6%
 
 Experience Manager Assets支持3D资源的摄取、管理、预览和交付。
 
-您可以使用自动生成的缩略图演绎版或交互式3D查看器预览3D资源。 交互式3D查看器可在Experience Manager的资源详细信息页面中找到。 该查看器包括一组交互式相机控件及其他内容，可让您在3D场景中旋转、缩放和平移。
+您可以使用自动生成的缩略图演绎版或交互式3D查看器预览3D资源。 交互式3D查看器可从Experience Manager的资源详细信息页面访问。 该查看器包括一组交互式相机控件及其他内容，可让您在3D场景中旋转、缩放和平移。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
@@ -37,7 +74,7 @@ Experience Manager Assets支持3D资源的摄取、管理、预览和交付。
 | 3DS | 3D Studio模型 | application/x-3ds |  |
 | 美元z | 通用场景描述 | model/vnd.usdz+zip |  |
 
-## Experience Manager中交互式3D预览支持的格式{#supported-3d-previewing-assets}
+## Experience Manager中支持的交互式3D预览格式{#supported-3d-previewing-assets}
 
 Experience Manager本身支持以下文件格式的Interactive 3D预览：
 
@@ -68,9 +105,9 @@ Experience Manager本身支持以下文件格式的Interactive 3D预览：
 
 **在Experience Manager中预览3D资源：**
 
-1. 确保您已将3D资源上传到Experience Manager。
+1. 确保您已将3D资产上传到Experience Manager。
 查看[支持的3D预览格式](#supported-3d-previewing-assets)和[上传资源](/help/assets/manage-digital-assets.md#uploading-assets)。
-1. 从Experience Manager的&#x200B;**[!UICONTROL 导航]**&#x200B;页面，转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
+1. 从Experience Manager，在&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
 
    ![导航页面](/help/assets/dynamic-media/assets/navigation-assets.png)
 

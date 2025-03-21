@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 21%
+source-wordcount: '1449'
+ht-degree: 22%
 
 ---
 
 # 元数据配置文件 {#metadata-profiles}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -63,7 +97,7 @@ ht-degree: 21%
 1. 从&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面中，选择一个元数据配置文件以制作其副本。
 1. 单击工具栏中的&#x200B;**[!UICONTROL 复制]**。
 1. 在&#x200B;**[!UICONTROL 复制元数据配置文件]**&#x200B;对话框中，输入元数据配置文件新副本的标题。
-1. 单击&#x200B;**[!UICONTROL 复制]**。 元数据配置文件的副本将显示在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面的配置文件列表中。
+1. 单击&#x200B;**[!UICONTROL 复制]**。元数据轮廓的副本将显示在&#x200B;**[!UICONTROL 元数据轮廓]**&#x200B;页面的轮廓列表中。
 
 ## 删除元数据配置文件 {#deleting-a-metadata-profile}
 
@@ -83,9 +117,9 @@ ht-degree: 21%
 
 ### 将元数据配置文件应用到特定文件夹 {#applying-metadata-profiles-to-specific-folders}
 
-您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将元数据配置文件应用到文件夹，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中应用。本节将介绍如何通过这两种方式将元数据配置文件应用到文件夹。
+您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将元数据轮廓应用到文件夹，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中应用。本节将介绍如何通过这两种方式将元数据轮廓应用到文件夹。
 
-如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 如果文件夹已具有您后来更改的现有视频配置文件，您可以重新处理该文件夹中的资产。<!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
@@ -93,13 +127,13 @@ ht-degree: 21%
 
 1. 导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
 1. 选择要应用于一个或多个文件夹的元数据配置文件。
-1. 单击&#x200B;**[!UICONTROL 将元数据配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资源的文件夹，然后单击&#x200B;**[!UICONTROL 完成]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 单击&#x200B;**[!UICONTROL 将元数据配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资源的文件夹，然后单击&#x200B;**[!UICONTROL 完成]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 #### 将元数据配置文件从“属性”应用到文件夹 {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 在左边栏中，单击&#x200B;**[!UICONTROL Assets]**，然后导航到要将元数据配置文件应用到其中的文件夹。
 1. 在文件夹上，选中复选标记以将其选中，然后选择&#x200B;**属性**。
-1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后单击&#x200B;**[!UICONTROL 保存]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后单击&#x200B;**[!UICONTROL 保存]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 ### 全局应用元数据配置文件 {#applying-a-metadata-profile-globally}
 
@@ -117,11 +151,11 @@ ht-degree: 21%
 
 从文件夹中删除元数据配置文件时，所有子文件夹都会自动从其父文件夹中删除该配置文件。 但是，在文件夹中进行的任何文件处理操作将保持不变。
 
-您可以从&#x200B;**工具**&#x200B;菜单中的文件夹删除元数据配置文件，或者如果您在文件夹中，也可以直接从&#x200B;**属性**&#x200B;中删除。本节将介绍如何通过这两种方式将元数据配置文件从文件夹中删除。
+您可以从&#x200B;**工具**&#x200B;菜单中的文件夹删除元数据轮廓，或者如果您在文件夹中，也可以直接从&#x200B;**属性**&#x200B;中删除。本节将介绍如何通过这两种方式将元数据轮廓从文件夹中删除。
 
 ### 通过“配置文件”用户界面从文件夹中删除元数据配置文件 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. 单击Experience Manager徽标并导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
+1. 单击Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
 1. 选择要从一个或多个文件夹中删除的元数据配置文件。
 1. 单击&#x200B;**[!UICONTROL 从文件夹中删除元数据配置文件]**，然后选择一个或多个要从中删除配置文件的文件夹，然后单击&#x200B;**[!UICONTROL 完成]**。
 
@@ -129,9 +163,9 @@ ht-degree: 21%
 
 ### 通过属性从文件夹中删除元数据配置文件 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 单击Experience Manager徽标并导航&#x200B;**[!UICONTROL Assets]**，然后转到要删除元数据配置文件的文件夹。
+1. 单击Experience Manager徽标并导航&#x200B;**[!UICONTROL Assets]**，然后转到要将元数据配置文件从中删除的文件夹。
 1. 在文件夹上，单击复选标记将其选中，然后单击&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 元数据轮廓]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 **另请参阅**
 

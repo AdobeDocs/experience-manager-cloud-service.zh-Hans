@@ -1,21 +1,55 @@
 ---
-title: 使用Brand Portal配置AEM Assets as a [!DNL Cloud Service]
+title: '使用Brand Portal配置AEM Assets as a [!DNL Cloud Service] '
 description: 了解如何使用Brand Portal配置AEM Assets。 利用配置，可将已批准的品牌资产从AEM实例发布到Brand Portal，并将其分发给Brand Portal用户。
 contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 8%
+source-wordcount: '1802'
+ht-degree: 9%
 
 ---
 
 # 使用 Brand Portal 配置 Experience Manager Assets {#configure-aem-assets-with-brand-portal}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -43,7 +77,7 @@ Cloud Manager用户为Experience Manager Assets as a [!DNL Cloud Service]实例�
 
 您可以在将Brand Portal作为[!DNL Cloud Service]实例创建生产环境时激活Experience Manager Assets，也可以单独激活。 假设环境已创建，此时您需要激活Brand Portal。
 
-1. 登录AdobeCloud Manager并导航到&#x200B;**[!UICONTROL 环境]**。
+1. 登录到Adobe Cloud Manager并导航到&#x200B;**[!UICONTROL 环境]**。
 
    **[!UICONTROL 环境]**&#x200B;页面显示所有现有环境的列表。
 
@@ -72,7 +106,7 @@ Cloud Manager用户为Experience Manager Assets as a [!DNL Cloud Service]实例�
 
 **另请参阅**：
 
-* [在Experience Manager Assets中添加用户和角色as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [在Experience Manager Assets as a Cloud Service中添加用户和角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
 * [在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
@@ -107,11 +141,11 @@ Cloud Manager用户为Experience Manager Assets as a [!DNL Cloud Service]实例�
 
    ![导航到分发选项](assets/test-bpconfig1.png)
 
-   已在&#x200B;**[!UICONTROL Publish下创建到Brand Portal]**&#x200B;的Brand Portal分发代理(**[!UICONTROL bpdistributionagent0]**)。
+   已在&#x200B;**[!UICONTROL 发布到Brand Portal]**&#x200B;下创建Brand Portal分发代理(**[!UICONTROL bpdistributionagent0]**)。
 
    ![创建分发代理](assets/test-bpconfig2.png)
 
-1. 单击&#x200B;**[!UICONTROL Publish到Brand Portal]**&#x200B;以打开分发代理。
+1. 单击&#x200B;**[!UICONTROL 发布到Brand Portal]**&#x200B;以打开分发代理。
 
    您可以在&#x200B;**[!UICONTROL 状态]**&#x200B;选项卡下看到分发队列。
 
@@ -141,10 +175,10 @@ Cloud Manager用户为Experience Manager Assets as a [!DNL Cloud Service]实例�
 
 您现在可以：
 
-* [Publish资源(从Experience Manager Assets到Brand Portal)](publish-to-brand-portal.md)
-* [从Experience Manager Assets到Brand Portal的Publish文件夹](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [从Experience Manager Assets到Brand Portal的Publish收藏集](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* 从Brand Portal到Experience Manager Assets的[Publish资源](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-hans) - Brand Portal中的资源源
+* [将资源从Experience Manager Assets发布到Brand Portal](publish-to-brand-portal.md)
+* [将文件夹从Experience Manager Assets发布到Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [将收藏集从Experience Manager Assets发布到Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [将资源从Brand Portal发布到Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-hans) - Brand Portal中的资源源
 * [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -199,7 +233,7 @@ Cloud Manager用户为Experience Manager Assets as a [!DNL Cloud Service]实例�
 
 以下部分介绍了如何使用Adobe Developer Console在Brand Portal中手动配置Experience Manager Assets as a [!DNL Cloud Service]。
 
-以前，Experience Manager Assets as a [!DNL Cloud Service]是通过Adobe Developer Console使用Brand Portal手动配置的，这样可获取Adobe的Identity Management Services (IMS)帐户令牌以授权Brand Portal租户。 它需要在Experience Manager Assets和Adobe Developer Console中进行配置。
+以前，Experience Manager Assets as a [!DNL Cloud Service]是通过Adobe Developer Console使用Brand Portal手动配置的，这样可获取Adobe Identity Management Services (IMS)帐户令牌以授权Brand Portal租户。 它需要在Experience Manager Assets和Adobe Developer Console中进行配置。
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
 <!--1. Under the project, configure an API using the public key to create a service account connection.
@@ -411,7 +445,7 @@ Ensure that you have performed the following steps:
 
 1. 登录Experience Manager Assets。
 
-1. 从&#x200B;**工具**&#x200B;面板，导航到&#x200B;**[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**。
+1. 从&#x200B;**工具**&#x200B;面板，导航到&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**。
 
 1. 在“Brand Portal配置”页面中，单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -430,13 +464,13 @@ Ensure that you have performed the following steps:
 您现在可以通过检查分发代理并将资产发布到Brand Portal来测试配置。
 
 如果启用了安全预览，则&#x200B;**在SPS中允许列表出口IP**
-如果使用为公司启用了[安全预览](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)的Dynamic Media-Scene7，则建议Scene7公司管理员使用SPS (Scene7 Publishing System) Flash UI [为各个区域允许列表公共出口IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)。
+如果将Dynamic Media-Scene7与为公司启用的[安全预览](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)结合使用，则建议Scene7公司管理员使用SPS (Scene7 Publishing System) Flash UI [为各个区域允许列表公共出口IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)。
 出口IP如下所示：
 
 | **地区** | **出口IP** |
 |--- |--- |
-| NA | 130.248.160.68， 20.94.203.130 |
-| EMEA | 51.132.146.75， 130.248.244.202， 130.248.244.203， 130.248.244.204， 130.248.244.210， 130.248.244.211， 130.248.244 12 |
+| NA | 130.248.160.68、20.94.203.130 |
+| EMEA | 51.132.146.75，130.248.244.202，130.248.244.203，130.248.244.204，130.248.244.210，130.248.244.211，130.248.244.212 |
 | 亚太地区 | 63.140.44.54 |
 
 <!--

@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4072'
+source-wordcount: '4118'
 ht-degree: 1%
 
 ---
 
 # 交互式图像{#interactive-images}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 通过将“可购物”热点拖放到图像上，您可以轻松使静态图像丰富并吸引客户体验。 可购物热点将有关产品或服务的其他信息与直接的销售点“添加到购物车”或“购买”功能相结合。 客户可以选择这些直接链接到产品或服务的热点，将其添加到购物车，或链接到网页。 这样的直接体验可提高客户参与度和网站上的转化率。
 
@@ -38,8 +75,8 @@ ht-degree: 1%
 
 交互式图像步骤：
 
-1. **（可选）标识热点变量**。 如果您使用Adobe Experience Manager Assets和Dynamic Media独立版本，请标识在现有Quickview实施中使用的动态变量。 这样做可以确保在创建交互式图像时输入热点数据。 请参阅[（可选）标识热点变量](#optional-identifying-hotspot-variables)。
-但是，如果您使用Experience Manager Sites或Experience Manager电子商务，或同时使用两者，则无需执行此步骤。
+1. **（可选）标识热点变量**。 如果您使用Adobe Experience Manager Assets和Dynamic Media独立版，请标识在现有Quickview实施中使用的动态变量。 这样做可以确保在创建交互式图像时输入热点数据。 请参阅[（可选）标识热点变量](#optional-identifying-hotspot-variables)。
+但是，如果您使用Experience Manager Sites或Experience Manager eCommerce，或者同时使用两者，则无需执行此步骤。
 
 1. **（可选）创建交互式图像查看器预设**。 自定义用于表示热点的图形图像。 如果您打算使用名为`Shoppable_Banner`的现成交互式图像查看器预设，则无需创建自己的交互式图像查看器预设。
 请参阅[（可选）创建交互式图像查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)。
@@ -52,7 +89,7 @@ ht-degree: 1%
 请参阅[预览交互式图像](#optional-previewing-interactive-images) — 可选。 如果需要，您可以查看可购物横幅的呈现并测试其交互性。
 有关如何发布交互式图像资源的详细信息，请参阅[发布Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-1. **在Experience Manager**&#x200B;中将交互式图像添加到您的网站或您的网站。 如果您同时使用站点和/或电子商务，则可以直接将交互式图像添加到Experience Manager的网页。 将Interactive Media组件拖动到页面上。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
+1. **在Experience Manager中将交互式图像添加到您的网站或您的网站**。 如果您同时使用站点和/或电子商务，则可以直接将交互式图像添加到Experience Manager中的网页。 将Interactive Media组件拖动到页面上。 请参阅[将Dynamic Media Assets添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)。
 如果您单独使用Experience Manager Assets和Dynamic Media，请复制您网站上的嵌入代码。 然后，将其与您现有的概览集成。 请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
 如果您使用第三方WCM（Web内容管理器），请将新的交互式视频与网站上使用的现有快速视图集成。 请参阅[将交互式图像与现有概览集成](#integrating-an-interactive-image-with-an-existing-quickview)。
 
@@ -63,7 +100,7 @@ ht-degree: 1%
 >仅当满足以下条件时，才需要此任务：
 >
 >* 要通过触发快速视图向图像添加交互性。
->* 您的Experience Manager实现&#x200B;*不*&#x200B;使用电子商务集成框架将产品数据从任何电子商务解决方案拉入Experience Manager。 此类解决方案包括IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop。
+>* 您实施的Experience Manager *不*&#x200B;使用电子商务集成框架将产品数据从任何电子商务解决方案提取到Experience Manager中。 此类解决方案包括IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop。
 >
 >如果您的Experience Manager实施使用的是电子商务，则可以跳过此任务并继续执行下一个任务。
 
@@ -196,7 +233,7 @@ ht-degree: 1%
 
    确保发布新的查看器预设。
 
-   请参阅[Publish查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
+   请参阅[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)。
 
    您现在可以上传图像横幅了。
 
@@ -294,9 +331,9 @@ ht-degree: 1%
         >将查看器嵌入体验片段时，不支持交互式图像中的社交媒体共享工具。 请改用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您所做的工作，并返回到“浏览”页。
-1. Publish交互式图像。 发布功能通过云提供横幅，并生成嵌入代码，让您能够与第三方网站集成。
+1. 发布交互式图像。 发布功能通过云提供横幅，并生成嵌入代码，让您能够与第三方网站集成。
 
-   查看[Publish资源](/help/assets/manage-digital-assets.md#publish-assets)。
+   请参阅[发布资源](/help/assets/manage-digital-assets.md#publish-assets)。
 
    添加热点并发布交互式图像后，您现在可以将其添加到现有网站。
 
@@ -322,9 +359,9 @@ ht-degree: 1%
 1. 在查看器列表中，选择&#x200B;**[!UICONTROL Shoppable_Banner]**&#x200B;或您创建的交互式图像查看器预设的名称。
 1. 要测试热点的相关操作，请选择图像上的热点。
 
-## Publish交互式图像资源 {#publishing-interactive-image-assets}
+## 发布交互式图像资产 {#publishing-interactive-image-assets}
 
-有关如何发布交互式图像资源的详细信息，请参阅[Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+有关如何发布交互式图像资源的详细信息，请参阅[发布Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 将交互式图像与您的网站集成 {#integrating-an-interactive-image-with-your-website}
 
@@ -377,8 +414,8 @@ ht-degree: 1%
 1. 前端代码使用在步骤2中获取的URL发送Ajax请求。
 1. 后端逻辑将相应的概览数据或内容返回给前端代码。
 1. 前端代码加载概览数据或内容。
-1. 前端代码（可选）将加载的概览数据转换为HTML表示形式。
-1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户呈现HTML内容。
+1. 前端代码可以选择将加载的概览数据转换为HTML呈现形式。
+1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户渲染HTML内容。
 
 这些调用不一定表示网页逻辑从任意步骤中调用的独立公共API调用。 相反，它是一个链接调用，其中每个下一步都隐藏在上一步的最后阶段（回调）中。
 

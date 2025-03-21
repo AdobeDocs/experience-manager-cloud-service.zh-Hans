@@ -1,25 +1,59 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
-description: 将资源选择器与各种Adobe、非Adobe和第三方应用程序集成。
+title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资产选择器'
+description: 将资产选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 6%
+source-wordcount: '470'
+ht-degree: 13%
 
 ---
 
 # 与非Adobe应用程序集成 {#integrate-asset-selector-non-adobe-app}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
-Asset Selector允许您使用各种非Adobe应用程序或第三方应用程序进行集成，以使它们能够无缝地协同工作。
+Asset Selector允许您使用各种非Adobe或第三方应用程序进行集成，以使它们能够无缝地协同工作。
 
 ## 先决条件 {#prereqs-non-adobe-app}
 
-如果要将Asset Selector与非Adobe应用程序集成，请使用以下先决条件：
+如果您要将资源选择器与非Adobe应用程序集成，请使用以下先决条件：
 
 * [通信方法](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
@@ -28,11 +62,11 @@ Asset Selector允许您使用各种非Adobe应用程序或第三方应用程序�
 * imsOrg
 * apikey
 
-当您将[!DNL Experience Manager Assets]存储库与非Adobe应用程序集成时，Asset Selector支持使用Identity Management System (IMS)属性（如`imsScope`或`imsClientID`）对其进行身份验证。
+将资产选择器与非Adobe应用程序集成时，该资产选择器支持使用Identity Management System (IMS)属性（如`imsScope`或`imsClientID`）对[!DNL Experience Manager Assets]存储库进行身份验证。
 
 ## 为非Adobe应用程序配置资源选择器 {#configure-non-adobe-app}
 
-要为非Adobe应用程序配置资产选择器，必须首先记录用于预配的支持票证，然后执行集成步骤。
+要为非Adobe应用程序配置Asset Selector，您必须先记录用于预配的支持票证，然后执行集成步骤。
 
 ### 记录支持票证 {#log-a-support-ticket}
 
@@ -43,7 +77,7 @@ Asset Selector允许您使用各种非Adobe应用程序或第三方应用程序�
 1. 请在描述中提供以下详细信息：
 
    * [!DNL Experience Manager Assets]作为[!DNL Cloud Service] URL（项目ID和环境ID）。
-   * 托管非AdobeWeb应用程序的域名。
+   * 托管非Adobe Web应用程序的域名。
 
 ## 集成步骤 {#non-adobe-app-integration-steps}
 
@@ -55,7 +89,7 @@ Asset Selector允许您使用各种非Adobe应用程序或第三方应用程序�
 
 由于您没有生成`imsToken`，请使用`registerAssetsSelectorsAuthService`和`renderAssetSelectorWithAuthFlow`函数，如示例`index.html`文件的第40行至第50行所示。 使用`renderAssetSelectorWithAuthFlow`之前的`registerAssetsSelectorsAuthService`函数通过资产选择器注册`imsToken`。 [!DNL Adobe]建议在实例化组件时调用`registerAssetsSelectorsAuthService`。
 
-在`const props`部分中定义身份验证和其他Assetsas a Cloud Service访问相关的属性，如示例`index.html`文件的&#x200B;*行54*&#x200B;到&#x200B;*行60*&#x200B;所示。
+在`const props`部分中定义身份验证和其他Assets as a Cloud Service访问相关的属性，如示例`index.html`文件的&#x200B;*行54*&#x200B;到&#x200B;*行60*&#x200B;所示。
 
 *行65*&#x200B;中提到的`PureJSSelectors`全局变量用于呈现Web浏览器中的资产选择器。
 
@@ -148,5 +182,5 @@ Asset Selector允许您使用各种非Adobe应用程序或第三方应用程序�
 >
 >* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
->* [将资源选择器与Dynamic Media与OpenAPI功能集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [资产选择器自定义项](/help/assets/asset-selector-customization.md)
+>* [将资产选择器与具有 OpenAPI 功能的 Dynamic Media 集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [资产选择器自定义](/help/assets/asset-selector-customization.md)

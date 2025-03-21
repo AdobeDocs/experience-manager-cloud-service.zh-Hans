@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 0%
+source-wordcount: '3480'
+ht-degree: 1%
 
 ---
 
 # 关于批次集预设 {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 当您单独或使用批量摄取将资产文件上传到文件夹时，可使用&#x200B;**[!UICONTROL 批次集预设]**&#x200B;在图像集或旋转集中创建和组织多个资产。 您可以将预设与计划在[!DNL Dynamic Media]中执行的资产导入作业一起运行。 每个预设是一个唯一命名的、自包含的指令集，该指令集定义如何使用与预设方法中定义的命名约定匹配的图像来构建图像集或旋转集。
 
@@ -20,14 +57,14 @@ ht-degree: 0%
 >
 >您是否在[!DNL Dynamic Media Classic]中使用批次集预设，并从[!DNL Dynamic Media Classic]迁移到Adobe Experience Manager as a Cloud Service？ 如果是这样，您必须在[!DNL Adobe Experience Manager as a Cloud Service]中手动重新创建批次集预设定义。
 
-**最佳实践** — 在使用批次集预设时，Adobe建议使用以下工作流：
+**最佳实践** — 在使用批次集预设时，Adobe建议使用以下工作流程：
 
 1. 创建批次集预设。 请参阅[为图像集或旋转集创建批次集预设](#creating-bsp)。
 1. 创建资产文件夹或使用现有资产文件夹，并确保它已同步到[!DNL Dynamic Media]。 请参阅[创建文件夹](/help/assets/manage-digital-assets.md#creating-folders)。
 1. 将批次集预设应用于资产文件夹。 请参阅[关于将批次集预设应用到文件夹](#apply-bsp)。
 1. 将图像上传到资产文件夹。 请参阅[上传图像集的资源](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)、[上传旋转集的资源](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)或[将数字资源添加到Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager)。
 1. 在所需的文件夹中自动生成图像集或旋转集。
-1. Publish您的图像集或旋转集。 请参阅[Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. 发布图像集或旋转集。 请参阅[发布Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
 ## 为图像集或旋转集创建批次集预设 {#creating-bsp}
 
@@ -109,10 +146,10 @@ ht-degree: 0%
 | --- | --- |
 | 预设名称 | 只读。 您在首次创建批次集时指定的名称。 如果必须重命名预设，则可以复制现有批次集预设并指定新名称。 请参阅[复制现有批次集预设](#copy-bsp)。 |
 | 类型 | 只读。 该类型是在您首次创建批次集时指定的。 复制现有批次集预设不允许您更改其[!UICONTROL 类型]；您必须改为创建预设。 |
-| 包括派生的资产 | 可选。 若要使[!DNL Dynamic Media]的IPS（图像生产系统）包含使用您的旋转集或图像集生成的或“派生”的图像，请选择&#x200B;**[!UICONTROL 是]**（默认值）。 派生的资产是用户未直接上传的图像。 相反，上传主资产时，IPS会生成资产。 例如，在[!DNL Dynamic Media]中上传PDF时，IPS从PDF中的页面生成的图像资源被视为派生资源。 |
-| 目标文件夹 | 可选。 如果定义大量图像集或旋转集，Adobe建议将这些集与包含资源本身的文件夹分开。 因此，请考虑创建图像集或旋转集文件夹，并将应用程序重定向到将批处理集生成的集放置在此处。<br>在这种情况下，请指定Experience Manager Assets文件夹结构(`/content/dam`)中的哪个文件夹激活批次集预设。 请确保该文件夹已启用[!DNL Dynamic Media]同步，以允许将其作为目标文件夹。 请参阅[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)中的文件夹级别配置选择性发布。<br>如果通过文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;应用预设，则可以为多个文件夹分配给定的批次集预设。 请参阅[从资产文件夹的“属性”页面应用批次集预设](#apply-bsp-to-folders-via-properties)。<br>如果未指定文件夹，将在与上传到的资产文件夹相同的文件夹中创建批次集预设生成的图像集或旋转集。 |
+| 包括派生的资产 | 可选。若要使[!DNL Dynamic Media]的IPS（图像生产系统）包含使用您的旋转集或图像集生成的或“派生”的图像，请选择&#x200B;**[!UICONTROL 是]**（默认值）。 派生的资产是用户未直接上传的图像。 相反，上传主资产时，IPS会生成资产。 例如，在[!DNL Dynamic Media]中上传PDF时，IPS从PDF中的页面生成的图像资源被视为派生资源。 |
+| 目标文件夹 | 可选。如果定义大量图像集或旋转集，Adobe建议将这些集与包含资源本身的文件夹分开。 因此，请考虑创建图像集或旋转集文件夹，并将应用程序重定向到将批处理集生成的集放置在此处。<br>在这种情况下，请指定Experience Manager Assets文件夹结构(`/content/dam`)中的哪个文件夹激活批次集预设。 请确保该文件夹已启用[!DNL Dynamic Media]同步，以允许将其作为目标文件夹。 请参阅[在Dynamic Media中配置文件夹级别的选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)。<br>如果通过文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;应用预设，则可以为多个文件夹分配给定的批次集预设。 请参阅[从资产文件夹的“属性”页面应用批次集预设](#apply-bsp-to-folders-via-properties)。<br>如果未指定文件夹，将在与上传到的资产文件夹相同的文件夹中创建批次集预设生成的图像集或旋转集。 |
 | **[!UICONTROL 设置命名约定]** |  |
-| 前缀<br>或<br>后缀 | 可选。 在相应的字段中输入前缀、后缀或同时输入两者。<br>前缀和后缀字段允许您使用特定内容集的替代自定义文件命名惯例创建许多批次集预设。 当公司定义的默认命名方案存在例外时，此方法特别有用。<br>前缀或后缀已添加到您在&#x200B;**[!UICONTROL 资产命名约定]**&#x200B;区域中定义的&#x200B;**[!UICONTROL 基本名称]**&#x200B;中。 通过添加前缀或后缀，可确保图像集或旋转集的创建独立于其他资产。 它还可以进一步帮助其他人识别文件类型。 例如，要确定使用的颜色模式，可以添加作为前缀或后缀`rgb`或`cmyk`。<br>虽然使用批次集预设功能不需要指定集命名约定，但最佳实践建议您使用集命名约定。 通过此实践，您可以定义要分组到集合中的命名约定的多个元素，以帮助简化批次集的创建。 |
+| 前缀<br>或<br>后缀 | 可选。在相应的字段中输入前缀、后缀或同时输入两者。<br>前缀和后缀字段允许您使用特定内容集的替代自定义文件命名惯例创建许多批次集预设。 当公司定义的默认命名方案存在例外时，此方法特别有用。<br>前缀或后缀已添加到您在&#x200B;**[!UICONTROL 资产命名约定]**&#x200B;区域中定义的&#x200B;**[!UICONTROL 基本名称]**&#x200B;中。 通过添加前缀或后缀，可确保图像集或旋转集的创建独立于其他资产。 它还可以进一步帮助其他人识别文件类型。 例如，要确定使用的颜色模式，可以添加作为前缀或后缀`rgb`或`cmyk`。<br>虽然使用批次集预设功能不需要指定集命名约定，但最佳实践建议您使用集命名约定。 通过此实践，您可以定义要分组到集合中的命名约定的多个元素，以帮助简化批次集的创建。 |
 | **[!UICONTROL 规则结果 — RegX]** |  |
 | 资产命名约定 — 匹配 | 只读。 根据您选择的匹配表单选项或输入的原始代码显示正则表达式语法。 |
 | 资产命名约定 — 基本名称 | 只读。 根据所选的“基本名称”表单选项或输入的原始代码显示正则表达式语法。 |
@@ -150,11 +187,11 @@ ht-degree: 0%
 
 ### 从资产文件夹的“属性”页面应用批次集预设 {#apply-bsp-to-folders-via-properties}
 
-1. 选择Experience Manager徽标并转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
+1. 选择Experience Manager徽标，然后转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
 1. 导航到要在其中应用一个或多个批次集预设的文件夹。
 1. 在页面上&#x200B;**[!UICONTROL Name]**&#x200B;列的左侧，选中文件夹的复选框。
 1. 在工具栏中选择&#x200B;**[!UICONTROL 属性]**。
-1. 在文件夹的“属性”页面上，选择&#x200B;**[!UICONTROL Dynamic Media正在处理]**&#x200B;选项卡。
+1. 在文件夹的“属性”页面上，选择&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -231,7 +268,7 @@ ht-degree: 0%
 1. 导航到要移除一个或多个批次集预设的文件夹。
 1. 在页面上&#x200B;**[!UICONTROL Name]**&#x200B;列的左侧，选中文件夹的复选框。
 1. 在工具栏中选择&#x200B;**[!UICONTROL 属性]**。
-1. 在文件夹的“属性”页面上，选择&#x200B;**[!UICONTROL Dynamic Media正在处理]**。
+1. 在文件夹的“属性”页面上，选择&#x200B;**[!UICONTROL Dynamic Media处理]**。
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -265,5 +302,5 @@ ht-degree: 0%
 >
 >* [图像集](/help/assets/dynamic-media/image-sets.md)
 >* [旋转集](/help/assets/dynamic-media/spin-sets.md)
->* [在Dynamic Media中配置文件夹级别的选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) — 如果您想了解有关将单个文件夹同步到[!DNL Dynamic Media]的更多信息，请参阅主题中的“同步模式”。
->* [在Cloud Service中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) — 如果您想了解有关将所有文件夹同步到[!DNL Dynamic Media]的更多信息，请参阅主题中的“Dynamic Media同步模式”。
+>* [在Dynamic Media中在文件夹级别配置选择性发布](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) — 如果您想了解有关将单个文件夹同步到[!DNL Dynamic Media]的更多信息，请参阅主题中的“同步模式”。
+>* [在Cloud Services中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) — 如果您想了解有关将所有文件夹同步到[!DNL Dynamic Media]的更多信息，请参阅主题中的“Dynamic Media同步模式”。

@@ -1,21 +1,55 @@
 ---
 title: ' [!DNL Assets]的开发人员参考'
-description: “[!DNL Assets] API和开发人员参考内容允许您管理资产，包括二进制文件、元数据、演绎版、注释和 [!DNL Content Fragments]。”
+description: 通过[!DNL Assets] API和开发人员引用内容，您可以管理资源，包括二进制文件、元数据、演绎版、注释和 [!DNL Content Fragments]。
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 7%
+source-wordcount: '1984'
+ht-degree: 8%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]开发人员用例、API和参考资料 {#assets-cloud-service-apis}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 文章包含[!DNL Assets]作为[!DNL Cloud Service]的开发人员的推荐、参考资料和资源。 其中包括新的资产上传模块、API引用，以及有关后处理工作流中提供的支持的信息。
 
@@ -33,7 +67,7 @@ ht-degree: 7%
 | × | 不支持。 请勿使用。 |
 | - | 不可用 |
 
-| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [资产计算服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [发布](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二进制文件** |  |  |  |  |  |  |
 | 创建原始文件 | ✓ | × | - | × | × | - |
@@ -92,11 +126,11 @@ ht-degree: 7%
 >
 >[!IMPORTANT]
 >
->在某些情况下，由于Cloud Service中的存储最终具有一致的性质，因此更改可能不会在请求Experience Manager之间完全传播。 这会导致404响应启动或完成上载调用，因为没有传播所需的文件夹创建。 客户端应会收到404响应，并通过使用回退策略实施重试来处理这些响应。
+>在某些情况下，由于Cloud Service中的存储最终具有一致性，因此更改可能不会在对Experience Manager的请求之间完全传播。 这会导致404响应启动或完成上载调用，因为没有传播所需的文件夹创建。 客户端应会收到404响应，并通过使用回退策略实施重试来处理这些响应。
 
 ### 启动上载 {#initiate-upload}
 
-将HTTPPOST请求提交到所需的文件夹。 在此文件夹中创建或更新Assets。 包括选择器`.initiateUpload.json`以指示请求将启动二进制文件上载。 例如，应创建资产的文件夹的路径为`/assets/folder`。 POST请求为`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
+将HTTP POST请求提交到所需的文件夹。 在此文件夹中创建或更新Assets。 包括选择器`.initiateUpload.json`以指示请求将启动二进制文件上载。 例如，应创建资产的文件夹的路径为`/assets/folder`。 POST请求是`POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`。
 
 请求正文的内容类型应为`application/x-www-form-urlencoded`表单数据，包含以下字段：
 
@@ -136,7 +170,7 @@ ht-degree: 7%
 
 ### 上载二进制文件 {#upload-binary}
 
-启动上载的输出包括一个或多个上载URI值。 如果提供了多个URI，则客户端可以按顺序将二进制文件拆分成多个部分，并向所提供的上传URI发出每个部分的PUT请求。 如果选择将二进制文件拆分为多个部分，请遵循以下准则：
+启动上载的输出包括一个或多个上载URI值。 如果提供了多个URI，则客户端可以按顺序将二进制文件拆分为多个部分，并向提供的上传URI发出每个部分的PUT请求。 如果选择将二进制文件拆分为多个部分，请遵循以下准则：
 
 * 每个部分的大小必须大于或等于`minPartSize`，最后一个部分除外。
 * 每个部分的大小必须小于或等于`maxPartSize`。
@@ -166,7 +200,7 @@ CDN边缘节点有助于加速请求的二进制文件上传。
 
 ### 完成上传 {#complete-upload}
 
-上传二进制文件的所有部分后，向启动数据提供的完整URI提交HTTPPOST请求。 请求正文的内容类型应为`application/x-www-form-urlencoded`表单数据，包含下列字段。
+上传二进制文件的所有部分后，将HTTP POST请求提交到启动数据提供的完整URI。 请求正文的内容类型应为`application/x-www-form-urlencoded`表单数据，包含下列字段。
 
 | 字段 | 类型 | 必需或非必需 | 描述 |
 |---|---|---|---|

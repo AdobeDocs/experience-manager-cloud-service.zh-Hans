@@ -1,24 +1,61 @@
 ---
 title: 优化图像质量的最佳实践
-description: 了解帮助您使用Dynamic Media优化图像资源质量的最佳实践。
+description: 了解帮助您使用Dynamic Media优化图像资产质量的最佳实践。
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 1%
+source-wordcount: '1694'
+ht-degree: 2%
 
 ---
 
 # 优化图像质量的最佳实践 {#best-practices-for-optimizing-the-quality-of-your-images}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
+
 {{work-with-dynamic-media}}
 
 优化图像质量可能是一个耗时的过程，因为许多因素有助于呈现可接受的结果。 结果部分具有主观性，因为个人对图像质量的看法不同。 结构化试验是关键。
 
-Adobe Experience Manager包括100多条Dynamic Media图像投放命令，用于调整和优化图像和渲染结果。 以下准则可帮助您使用一些基本命令和最佳实践来简化流程并快速获得良好结果。
+Adobe Experience Manager包含100多条Dynamic Media图像投放命令，可用于调整和优化图像和渲染结果。 以下准则可帮助您使用一些基本命令和最佳实践来简化流程并快速获得良好结果。
 
 <!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
@@ -83,13 +120,13 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 ## 图像锐化的最佳实践 {#best-practices-for-image-sharpening}
 
-图像锐化是控制网站上图像的最复杂方面，并且会产生许多错误。 请查阅以下有用资源，以详细了解锐化和USM锐化在Experience Manager中的工作方式：
+图像锐化是控制网站上图像的最复杂方面，并且会产生许多错误。 请查看以下有用资源，详细了解Experience Manager中锐化和USM的工作原理：
 
 * 最佳实践白皮书[Adobe Dynamic Media Classic图像质量和锐化最佳实践](/help/assets/dynamic-media/assets/sharpening_images.pdf)也适用于Experience Manager。
 
-* 观看[在Experience Manager中使用图像锐化 — Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+* 观看[在Experience Manager - Dynamic Media中使用图像锐化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
-通过Experience Manager，您可以在摄取和/或交付时锐化图像。 但是，通常最好只使用一种方法或另一种方法来锐化图像，但不要同时使用这两种方法。 通常，在交付、URL上锐化图像可产生最佳效果。
+借助Experience Manager，您可以在摄取和/或交付时锐化图像。 但是，通常最好只使用一种方法或另一种方法来锐化图像，但不要同时使用这两种方法。 通常，在交付、URL上锐化图像可产生最佳效果。
 
 可以使用两种图像锐化方法：
 
@@ -111,7 +148,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
       * 最佳实践白皮书[Adobe Dynamic Media Classic图像质量和锐化最佳实践](/help/assets/dynamic-media/assets/sharpening_images.pdf)也适用于Experience Manager。
 
-      * 观看[在Experience Manager中使用图像锐化 — Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+      * 观看[在Experience Manager - Dynamic Media中使用图像锐化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
       * Experience Manager还允许您控制第四个参数：单色(0,1)。 此参数确定是使用值0分别将钝化蒙版应用于每个颜色组件，还是使用值1将钝化蒙版应用于图像亮度/强度。
 
@@ -146,7 +183,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 * 此参数设置为千字节(`jpegSize=&lt;size_in_kilobytes&gt;`)。 它定义图像投放允许的最大大小。
 * `&jpegSize=`与JPG压缩参数`&qlt=`交互。 如果具有指定JPG压缩参数(`&qlt=`)的JPG响应未超过jpegSize值，则图像将按定义返回`&qlt=`。 否则，`&qlt=`将逐渐减小，直到图像符合允许的最大尺寸。 或者，直到系统确定它不合适并返回错误为止。
 
-如果要将JPG映像传送到内存有限的设备，最佳做法是设置`&jpegSize=`并添加参数`&qlt=`。
+如果您要将JPG图像传送到内存有限的设备，最佳做法是设置`&jpegSize=`并添加参数`&qlt=`。
 
 ## 最佳实践摘要 {#best-practices-summary}
 
@@ -164,4 +201,4 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 * 尝试直接在URL上实时测试不同的参数。
 * 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上是带有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL路径中的自定义预设名称将调用这些预设。 此功能可帮助您管理网站上图像不同使用模式的命令和质量设置，并缩短URL的总长度。
-* Experience Manager还提供了更高级的方法来调整图像质量，例如在摄取时应用锐化图像。 要调整和优化渲染结果，[Adobe的咨询服务](https://business.adobe.com/customers/consulting-services/main.html)可以帮助您提供自定义的洞察信息和最佳实践。
+* Experience Manager还提供了更高级的方法来调整图像质量，例如，在摄取时应用锐化图像。 要调整和优化渲染结果，[Adobe的咨询服务](https://business.adobe.com/customers/consulting-services/main.html)可以帮助您提供自定义的洞察信息和最佳实践。

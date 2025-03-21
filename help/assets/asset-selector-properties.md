@@ -3,17 +3,51 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1323'
 ht-degree: 42%
 
 ---
 
-# 资源选择器属性 {#asset-selector-properties}
+# 资产选择器属性 {#asset-selector-properties}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 您可以使用资源选择器属性来自定义资源选择器的呈现方式。下表列出了可用于自定义和使用资源选择器的属性。
 
@@ -47,7 +81,7 @@ ht-degree: 42%
 | *noWrap* | 布尔值 | 否 | | *noWrap*&#x200B;属性有助于在侧边栏面板中呈现资产选择器。 如果未提及此属性，则默认情况下会呈现&#x200B;*对话框视图*。 |
 | *dialogSize* | 小型、中型、大型、全屏或全屏接管 | 字符串 | 可选 | 通过使用给定选项指定布局大小可控制布局。 |
 | *colorScheme* | 浅色或深色 | 否 | | 此属性用于设置Asset Selector应用程序的主题。 您可以选择浅色或深色主题。 |
-| *filterRepoList* | 函数 | 否 |  | 您可以使用`filterRepoList`回调函数来调用Experience Manager存储库并返回已过滤的存储库列表。 |
+| *filterRepoList* | 函数 | 否 |  | 您可以使用调用Experience Manager存储库并返回存储库筛选列表的`filterRepoList`回调函数。 |
 | *expiryOptions* | 函数 | | | 您可以在以下两个属性之间使用：**getExpiryStatus**，它提供已过期资源的状态。 函数根据您提供的资源的到期日期返回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 请参阅[自定义过期的资源](/help/assets/asset-selector-customization.md#customize-expired-assets)。 此外，您可以使用&#x200B;**allowSelectionAndDrag**，其中函数的值可以是`true`或`false`。 如果该值设置为`false`，则无法在画布上选择或拖动过期的资产。 |
 | *showToast* | | 否 | | 它允许资产选择器为已过期的资产显示自定义的toast消息。 |
 | *metadataSchema* | 数组 | 否 | | 添加您为从用户那里收集元数据而提供的字段数组。 使用此属性，您还可以使用自动分配给资源但用户不可见的隐藏元数据。 |

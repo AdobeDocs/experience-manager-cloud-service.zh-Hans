@@ -4,17 +4,51 @@ description: 使用由 [!DNL Adobe Express] 提供支持的选项编辑图像并
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1173'
 ht-degree: 77%
 
 ---
 
 # 在 [!DNL Assets view] 中编辑图像 {#edit-images-in-assets-view}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 Assets视图UI支持由Adobe Express提供的基础图像编辑，该视图已集成到UI中。 编辑包括调整大小、去除背景、裁剪以及 JPEG 与 PNG 格式之间的转换。此外，它还允许通过Assets视图UI中嵌入的Adobe Express界面进行高级编辑。
 
@@ -36,7 +70,7 @@ Assets视图UI支持由Adobe Express提供的基础图像编辑，该视图已�
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### 在Assets视图上使用Adobe Express编辑图像 {#edit-image-on-assets-view-using-adobe-express}
+### 使用Adobe Express在Assets视图上编辑图像 {#edit-image-on-assets-view-using-adobe-express}
 
 导航到Assets视图后，单击&#x200B;**Assets**，选择一个图像，然后单击顶部边栏中的&#x200B;**编辑**。 新屏幕显示了由 Adobe Express 提供支持的可用编辑选项，包括调整大小、背景去除、裁剪以及在 JPEG 和 PNG 格式之间转换。
 
@@ -88,7 +122,7 @@ Assets视图UI支持由Adobe Express提供的基础图像编辑，该视图已�
 
 ### 在 Adobe Express 嵌入式编辑器中编辑图像 {#edit-images-in-adobe-express-embedded-editor}
 
-拥有Express权利的用户可以从Assets视图中使用嵌入的Express编辑器，轻松地在Adobe Firefly中使用GenAI编辑内容和创建新内容。 此功能提高了内容重用性并加快了内容速度。您还可以使用预定义的元素使您的资源看起来令人惊叹，或者只需单击几下即可执行快速操作来编辑图像。
+拥有Express权利的用户可以从Assets视图中使用嵌入的Express编辑器，轻松地从Adobe Firefly使用GenAI编辑内容并创建新内容。 此功能提高了内容重用性并加快了内容速度。您还可以使用预定义的元素使您的资源看起来令人惊叹，或者只需单击几下即可执行快速操作来编辑图像。
 
 ![在Essentials UI中表达](/help/assets/assets/express-in-essentials-ui.jpg)
 要使用[!DNL Adobe Express]嵌入式编辑器编辑图像，请执行以下步骤：
@@ -203,5 +237,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [Adobe Express中的快速操作](https://helpx.adobe.com/cn/express/using/resize-image.html)
+>* Adobe Express中的[快速操作](https://helpx.adobe.com/cn/express/using/resize-image.html)
 >* [查看资源的版本历史记录](navigate-assets-view.md)

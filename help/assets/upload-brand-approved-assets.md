@@ -3,10 +3,10 @@ title: 将品牌批准的资产上传到 [!DNL Content Hub]
 description: 了解如何将品牌批准的资产上传到Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 7%
+source-wordcount: '1014'
+ht-degree: 17%
 
 ---
 
@@ -17,18 +17,52 @@ ht-degree: 7%
 >title="将品牌认可的资产上传至 Content Hub"
 >abstract="从本地文件系统将批准的资产添加到 Content Hub，或者从 OneDrive 或 Dropbox 数据源导入资产。无论文件夹结构如何，所有资产都会显示在 Content Hub 的顶层，以增强搜索功能。"
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>Content Hub 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-有权添加资源的[Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以从本地文件系统向Content Hub添加资源，或者从OneDrive或Dropbox数据源导入资源。 所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关，以增强搜索功能。
+有权添加资源的[Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以从本地文件系统向Content Hub添加资源，也可以从OneDrive或Dropbox数据源导入资源。 为了增强搜索功能，所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关。
 
-Assetsas a Cloud Service中标记为`Approved`的资源在Content Hub中自动可用。 有关详细信息，请参阅[批准Content Hub的资源](/help/assets/approve-assets-content-hub.md)。
+Assets as a Cloud Service中标记为`Approved`的资源在Content Hub中自动可用。 如需了解更多信息，请参阅[批准 Content Hub 的资产](/help/assets/approve-assets-content-hub.md)。
 
 为了进一步增强资产搜索，Content Hub允许您：
 
@@ -78,7 +112,7 @@ Assetsas a Cloud Service中标记为`Approved`的资源在Content Hub中自动�
 
 要将资源从OneDrive或Dropbox数据源添加到Content Hub，请执行以下操作：
 
-1. 单击&#x200B;**[!UICONTROL 添加Assets]**&#x200B;以查看&#x200B;**[!UICONTROL 添加您批准的资源]**&#x200B;对话框，该对话框允许您从OneDrive或Dropbox导入资源。
+1. 单击&#x200B;**[!UICONTROL 添加Assets]**&#x200B;以查看&#x200B;**[!UICONTROL 添加已批准的资源]**&#x200B;对话框，该对话框允许您从OneDrive或Dropbox导入资源。
 
 1. 单击&#x200B;**[!UICONTROL OneDrive]**&#x200B;或&#x200B;**[!UICONTROL Dropbox]**&#x200B;开始导入过程。 Content Hub会提示您登录OneDrive或Dropbox帐户，然后在左窗格中显示您的OneDrive或Dropbox文件夹结构。
 
@@ -90,12 +124,12 @@ Assetsas a Cloud Service中标记为`Approved`的资源在Content Hub中自动�
 
 ## 管理使用Content Hub上传的资源 {#manage-assets-uploaded-using-content-hub}
 
-[有权添加资源的Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以[从本地文件系统向Content Hub添加资源](/help/assets/upload-brand-approved-assets.md)，或从OneDrive或Dropbox数据源导入资源。 所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关，以增强搜索功能。
+[有权添加资源的Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以[从本地文件系统向Content Hub添加资源](/help/assets/upload-brand-approved-assets.md)，或从OneDrive或Dropbox数据源导入资源。 为了增强搜索功能，所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关。
 
 是否显示使用Content Hub上传的资源，取决于您是否[启用了自动审批切换开关](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)：
 
-* 如果启用了&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换，则使用Content Hub上传的资源会自动可用。
+* 如果启用了&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换按钮，您使用 Content Hub 上传的资产将自动可用。
 
-* 如果禁用了&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换功能，则使用Content Hub上传的资源不会自动显示。 这些资源位于Assetsas a Cloud Service环境的`hydrated-assets`文件夹中。 导航到文件夹，然后[批量编辑](#bulk-approve-assets-content-hub)这些资源的状态并更改为`Approved`，以便这些资源显示在Content Hub中。
+* 如果禁用&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换，则您使用 Content Hub 上传的资产不会自动显示。这些资产可在 Assets as a Cloud Service 环境的 `hydrated-assets` 文件夹中找到。导航到该文件夹并将这些资产的状态[批量编辑](#bulk-approve-assets-content-hub)为 `Approved`，以使这些资产在 Content Hub 中显示。
 
 ![Content Hub审批流程](/help/assets/assets/content-hub-approval.png)

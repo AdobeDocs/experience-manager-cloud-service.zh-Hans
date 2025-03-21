@@ -4,17 +4,51 @@ description: 使用共享作为链接、下载和通过 [!DNL Brand Portal]、 [
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 3%
+source-wordcount: '1875'
+ht-degree: 4%
 
 ---
 
 # 共享和分发在[!DNL Experience Manager]中管理的资源 {#share-assets-from-aem}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -250,9 +284,9 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 营销人员和业务线用户可以轻松地与其创意专业人士共享经过批准的资产，
 
-* **Experience Manager的桌面应用程序**：该应用程序可在Windows和Mac上运行。 请参阅[桌面应用概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资源，请参阅[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资源并将其与Experience Manager用户的交易方共享，例如通过上传新图像。 请参阅[使用桌面应用程序上传资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **Experience Manager桌面应用程序**：该应用程序可在Windows和Mac上运行。 请参阅[桌面应用概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资源，请参阅[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资源，并通过上传新图像等方式，与作为Experience Manager用户的交易方共享该资源。 请参阅[使用桌面应用程序上传资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
 
-* **AdobeAsset Link**：创意专业人士可以直接从[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]和[!DNL Adobe Photoshop]中搜索和使用资源。
+* **Adobe Asset Link**：创意专业人士可以直接从[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]和[!DNL Adobe Photoshop]中搜索和使用资源。
 
 ## 配置资源共享 {#configure-sharing}
 
@@ -305,14 +339,14 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 要使用[!DNL Adobe Asset Link]的配置 {#configure-asset-link}
 
-Adobe资源链接可简化内容创建过程中创意专业人士与营销人员之间的协作。 它将[!DNL Adobe Experience Manager Assets]与[!DNL Creative Cloud]桌面应用程序、[!DNL Adobe InDesign]、[!DNL Adobe Photoshop]和[!DNL Adobe Illustrator]连接。 [!DNL Adobe Asset Link]面板允许创意人员访问和修改存储在[!DNL Assets]中的内容，而无需离开他们最熟悉的创意应用。
+Adobe Asset Link可简化内容创建过程中创意专业人士与营销人员之间的协作。 它将[!DNL Adobe Experience Manager Assets]与[!DNL Creative Cloud]桌面应用程序、[!DNL Adobe InDesign]、[!DNL Adobe Photoshop]和[!DNL Adobe Illustrator]连接。 [!DNL Adobe Asset Link]面板允许创意人员访问和修改存储在[!DNL Assets]中的内容，而无需离开他们最熟悉的创意应用。
 
 请参阅[如何配置 [!DNL Assets] 以将其与 [!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)一起使用。
 
 ## 最佳实践和疑难解答 {#bestpractices}
 
 * 名称中包含空格的资产文件夹或收藏集可能无法共享。
-* 如果Experience Manager无法下载共享资源，请与用户管理员确认下载限制是什么。 默认值为100 MB。
+* 如果用户无法下载共享资源，请与Experience Manager管理员确认下载限制是什么。 默认值为100 MB。
 * 对于要预览使用链接共享共享的视频的用户，该视频必须在存储库中视频节点的`/jcr:content/renditions`位置具有可用的静态视频演绎版。 预览不依赖于[!DNL Dynamic Media]演绎版的可用性。
 * 通过链接共享下载视频资源时，[!DNL Dynamic Media]演绎版未包含在下载的存档中。
 

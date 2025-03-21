@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 0ad506fc72cb73d3a6a8cdd9eee50f213b52665e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3518'
-ht-degree: 2%
+source-wordcount: '3564'
+ht-degree: 3%
 
 ---
 
 # Dynamic Media图像配置文件 {#image-profiles}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 上传图像时，您可以通过将图像配置文件应用到文件夹来在上传时自动裁切图像。
 
@@ -70,7 +107,7 @@ ht-degree: 2%
 您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁切长宽比可能会导致资源摄取速度缓慢。 它还可能导致系统负载增加。 由于智能裁剪可以在文件夹级别应用，因此Adobe建议仅将其用于需要它的文件夹。
 
 **在图像配置文件中定义智能裁剪的准则**
-为了控制智能裁切的使用情况，并优化裁切的处理时间和存储，Adobe建议遵循以下准则和提示：
+为了控制智能裁切使用情况，并优化裁切的处理时间和存储，Adobe建议执行以下准则和提示：
 
 * 要应用智能裁剪的图像资源必须至少为50 x 50像素或更大。
 * 理想情况下，每个图像可以有10-15种智能裁剪，以优化屏幕比例和处理时间。
@@ -84,13 +121,13 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe建议您查看任何生成的裁切和色板，以确保它们合适且与您的品牌和价值观相关。
+>Adobe建议您查看任何生成的裁切和色板，以确保它们合适并与您的品牌和价值观相关。
 
 | 选项 | 何时使用 | 描述 |
 | --- | --- | --- |
 | **[!UICONTROL 像素裁切]** | 仅根据尺寸批量裁切图像。 | 从&#x200B;**[!UICONTROL 裁切选项]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 像素裁切]**。<br>若要从图像侧面裁切，请输入要从图像任何侧面或每侧面裁切的像素数。 裁切图像的数量取决于图像文件中的ppi（每英寸像素数）设置。<br>图像配置文件像素裁切按以下方式呈现：<br>·值为“顶部”、“底部”、“左侧”和“右侧”。<br>·左上角被视为`0,0`，像素裁切将从此处计算。<br>·裁切起点：左为X，上为Y<br>·水平计算：原始图像的水平像素大小先减左，再减右。<br>·垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。<br>例如，假设您有4000 x 3000像素的图像。 您可以使用以下值：Top=250、Bottom=500、Left=300、Right=700。<br>从左上角(300,250)裁切，使用填充空间（4000-300-700、3000-250-500或3000,2250）。 |
 | **[!UICONTROL 智能裁切]** | 根据视觉焦点批量裁切图像。 | 智能裁剪利用Adobe Sensei中人工智能的强大功能来快速批量自动裁剪图像。 智能裁切会自动检测并裁切到任何图像中的焦点，以获得预期的目标点，而不管屏幕大小如何。<br>从&#x200B;**[!UICONTROL 裁切选项]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 智能裁切]**，然后在&#x200B;**[!UICONTROL 响应图像裁切]**&#x200B;的右侧，启用（打开）该功能。<br>默认断点大小(**[!UICONTROL 大]**、**[!UICONTROL Medium]**、**[!UICONTROL 小]**)涵盖了移动和平板设备、桌面和横幅上大多数图像使用的完整大小。 如果需要，可以编辑“大”、“Medium”和“小”的默认名称。<br>要添加更多断点，请选择&#x200B;**[!UICONTROL 添加裁切]**；要删除裁切，请选择“垃圾桶”图标。 |
-| **[!UICONTROL 颜色和图像样本]** | 批量生成每个图像的图像样本。 | **注意**： Dynamic Media Classic不支持智能色板。<br>从显示颜色或纹理的产品图像自动定位并生成高质量色板。<br>从&#x200B;**[!UICONTROL 裁切选项]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 智能裁切]**。 然后在&#x200B;**[!UICONTROL 颜色和图像样本]**&#x200B;的右侧，启用（打开）该功能。 在&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;文本框中输入一个像素值。<br>虽然所有图像裁剪都可以从呈现版本边栏中使用，但样本只能通过&#x200B;**[!UICONTROL 复制URL]**&#x200B;功能使用。 使用您自己的查看组件渲染网站上的色板。 此规则的例外是轮播横幅。 Dynamic Media为轮播横幅中使用的样本提供查看组件。<br><br>**使用图像样本**<br>&#x200B;图像样本的URL非常直接：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中`:Swatch`已附加到资产请求。<br><br>**使用色板**<br>&#x200B;要使用色板，您应发出包含以下内容的`req=userdata`请求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资源：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色板资源对应的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>`req=userdata`响应如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您还可以请求采用XML或JSON格式的`req=userdata`响应，如以下相应的URL示例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必须创建自己的WCM组件来请求颜色对由24位RGB十六进制值表示的`SmartSwatchColor`属性进行样本采集和分析。<br>另请参阅查看器参考指南中的[`userdata`](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
+| **[!UICONTROL 颜色和图像样本]** | 批量生成每个图像的图像样本。 | **注意**： Dynamic Media Classic不支持智能色板。<br>从显示颜色或纹理的产品图像自动定位并生成高质量色板。<br>从&#x200B;**[!UICONTROL 裁切选项]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 智能裁切]**。 然后在&#x200B;**[!UICONTROL 颜色和图像样本]**&#x200B;的右侧，启用（打开）该功能。 在&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;文本框中输入一个像素值。<br>虽然所有图像裁剪都可以从呈现版本边栏中使用，但样本只能通过&#x200B;**[!UICONTROL 复制URL]**&#x200B;功能使用。 使用您自己的查看组件渲染网站上的色板。 此规则的例外是轮播横幅。 Dynamic Media为轮播横幅中使用的样本提供查看组件。<br><br>**使用图像样本**<br>&#x200B;图像样本的URL非常直接：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中`:Swatch`已附加到资产请求。<br><br>**使用色板**<br>&#x200B;要使用色板，您应发出包含以下内容的`req=userdata`请求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资源：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色板资源对应的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>`req=userdata`响应如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您还可以请求采用XML或JSON格式的`req=userdata`响应，如以下相应的URL示例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必须创建自己的WCM组件来请求颜色取样并分析`SmartSwatchColor`属性，该属性由24位RGB十六进制值表示。<br>另请参阅查看器参考指南中的[`userdata`](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
 | **[!UICONTROL 跨目标分辨率保留裁切内容]** | 要保持相同纵横比的裁切内容，请执行以下操作 | 在创建智能裁剪配置文件时使用。<br>要针对不同分辨率的给定纵横比生成新裁切内容（同时仍保持焦点），请取消选中此选项<br>如果决定取消选中此框，请确保原始图像分辨率大于您为智能裁切配置文件定义的分辨率。<br><br>例如，假设您已将长宽比设置为600 x 600 （大）、400 x 400 (Medium)和300 x 300 （小）。<br>当&#x200B;**[!UICONTROL 跨目标分辨率保留裁切内容]**&#x200B;选项为&#x200B;*选中*&#x200B;时，您会在所有三个分辨率上看到相同的裁切内容，类似于以下图像输出示例（仅用于说明目的）：<br>![选中选项](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>当&#x200B;**[!UICONTROL 跨目标分辨率保留裁切内容]**&#x200B;选项为&#x200B;*取消选中*&#x200B;时，裁切内容在所有三个分辨率上都是新的，类似于以下图像输出示例（仅用于说明目的）：<br>![取消选中](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### 智能裁切和色板支持的图像文件格式
@@ -118,7 +155,7 @@ ht-degree: 2%
 
 要为其他资源类型定义高级处理参数，请参阅[配置资源处理](config-dm.md#configuring-asset-processing)。
 
-查看[关于Dynamic Media图像配置文件和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)。
+请参阅[关于Dynamic Media图像配置文件和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)。
 
 另请参阅[组织数字Assets以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
 
@@ -186,7 +223,7 @@ ht-degree: 2%
    * 在“卡片视图”中，将指针悬停在文件夹上，然后选择复选标记以将其选中。
    * 在列视图或列表视图中，选中文件夹名称左侧的复选框。
 1. 在工具栏上，选择&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL Dynamic Media正在处理]**&#x200B;选项卡。
+1. 选择&#x200B;**[!UICONTROL Dynamic Media处理]**&#x200B;选项卡。
 1. 在&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;下，从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中选择要应用的配置文件。
 1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存并关闭]**。 已分配配置文件的文件夹会在文件夹名称的正下方显示配置文件的名称。
 
@@ -216,7 +253,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe建议您查看任何生成的智能裁剪和智能色板，以确保它们合适并与您的品牌和价值相关。
+>Adobe建议您查看任何生成的智能裁切和智能色板，以确保它们合适并与您的品牌和价值相关。
 
 要优化图像的焦点，可以手动调整智能裁剪窗口的对齐或调整其大小。
 
@@ -256,7 +293,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe建议您查看任何生成的智能裁剪和智能色板，以确保它们合适并与您的品牌和价值相关。
+>Adobe建议您查看任何生成的智能裁切和智能色板，以确保它们合适并与您的品牌和价值相关。
 
 将包含智能裁切的图像配置文件应用到文件夹后，该文件夹中的所有图像都会应用裁切。 如果需要，您可以手动调整多个图像上的智能裁剪窗口的对齐方式或调整其大小，以进一步微调其焦点。
 
@@ -326,7 +363,7 @@ ht-degree: 2%
 
 ### 通过属性从文件夹中删除Dynamic Media图像配置文件 {#removing-image-profiles-from-folders-via-properties}
 
-1. 选择Experience Manager徽标并导航&#x200B;**[!UICONTROL Assets]**，然后转到要删除图像配置文件的文件夹。
+1. 选择Experience Manager徽标并导航&#x200B;**[!UICONTROL Assets]**，然后转到要将图像配置文件从中删除的文件夹。
 1. 在文件夹上，选中复选标记以将其选中，然后选择&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。
 1. 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 无]**，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。

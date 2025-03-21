@@ -1,20 +1,54 @@
 ---
-title: “[!DNL Assets view]用户界面”
+title: '[!DNL Assets view]用户界面'
 description: 了解  [!DNL Assets view] 中的用户界面并在其中导航。
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 74%
+source-wordcount: '1026'
+ht-degree: 72%
 
 ---
 
 # 浏览到文件和文件夹并查看资源 {#view-assets-and-details}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -37,14 +71,14 @@ ht-degree: 74%
 您可以从主用户界面或者从左侧边栏浏览文件夹。在浏览或搜索内容时，Experience Manager Assets会在文件夹缩略图上显示文件夹内容的可视预览。 这改进了AEM Assets存储库中可用资源的可发现性。 此文件夹缩略图可节省您在搜索AEM Assets存储库中文件夹内的特定资源时花费的时间。
 浏览文件夹中的资产时，您可以使用界面来查看资源缩略图，从而直观地浏览存储库或者查看资源详细信息，来快速查找所需的资源。左侧边栏中提供的选项包括：
 
-* [我的工作区](/help/assets/my-workspace-assets-view.md)：Assets 现在包括一个可自定义的工作区，此工作区提供各种小部件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
+* [我的工作区](/help/assets/my-workspace-assets-view.md)：Assets 现在包括一个可自定义的工作区，此工作区提供各种小组件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
 * [任务](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任务**&#x200B;选项卡中查看分配给您的任务。而您创建的任务可以在&#x200B;**分配的任务**&#x200B;选项卡中查看。此外，您完成的任务位于&#x200B;**已完成的任务**&#x200B;选项卡下。
 * [资源](/help/assets/manage-organize-assets-view.md)：以树视图列出您有权访问的所有文件夹。
 * **最近查看过的项目**：您最近查看过的资源列表。[!DNL Assets view] 仅显示您预览过的资源。它不显示您在浏览存储库文件或文件夹时滚动浏览的资源。
 * [收藏集](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager Assets视图中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资源。收藏集与文件夹的不同之处是可包含来自不同位置的资源。您可以与一个用户共享多个收藏集。每个收藏集都包含对资源的引用。收藏集中会保持资源的引用完整性。
 
 * [见解](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在 [!DNL Assets view] 中可以在仪表板上查看实时见解。通过资源视图的“见解”仪表板，可查看资源视图环境的实时数据。可查看过去 30 天或过去 12 个月的实时事件指标。
-* **垃圾箱**：列出从根 **[!UICONTROL Assets]** 文件夹中删除的资源。在“垃圾桶”文件夹中选择某个资源可将它还原到其原有位置或永久删除它。可指定关键字或应用过滤器，如资源状态、文件类型、mime 类型、图像大小、资源创建、修改和到期日期，并可按当前用户丢弃的资源进行过滤。还可应用自定义过滤器以在“垃圾桶”文件夹中搜索适当的资源。有关使用标准和自定义筛选器的更多信息，请参阅如何在Assets视图](/help/assets/search-assets-view.md)中[搜索资源。
+* **垃圾箱**：列出从根 **[!UICONTROL Assets]** 文件夹中删除的资源。在“垃圾桶”文件夹中选择某个资源可将它还原到其原有位置或永久删除它。可指定关键字或应用过滤器，如资源状态、文件类型、mime 类型、图像大小、资源创建、修改和过期日期，并可按当前用户丢弃的资源进行过滤。还可应用自定义过滤器以在“垃圾桶”文件夹中搜索适当的资源。有关使用标准和自定义筛选器的更多信息，请参阅如何在Assets视图](/help/assets/search-assets-view.md)中[搜索资源。
 * **设置**：您可以使用&#x200B;**设置**&#x200B;配置Assets视图的各种选项，如元数据表单、报表和分类管理。
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -79,7 +113,7 @@ ht-degree: 74%
 
 ![预览资源](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：返回存储库中的当前文件夹或当前搜索结果&#x200B;**B**：正在预览的文件的名称和格式&#x200B;**C**：分配任务&#x200B;**D**：高级元数据&#x200B;**E**：关键字和智能标记&#x200B;**F**：注释和批注&#x200B;**G**：查看与所选资源相关的任务&#x200B;**H**：查看和管理版本&#x200B;**I**：查看图像的演绎版&#x200B;**J**：编辑图像&#x200B;**K**：查看具有OpenAPI功能的Dynamic Media呈现版本，包括Smart Crop和Dynamic Media。 **L**：基本元数据&#x200B;**M**：高级元数据&#x200B;**N**：关键字和智能标记&#x200B;**O**：继续到当前文件夹中的上一个或下一个资源，而不返回文件夹&#x200B;**P**：更密切地预览。 缩放、全屏和其他选项。
+**A**：返回存储库中的当前文件夹或当前搜索结果&#x200B;**B**：正在预览的文件的名称和格式&#x200B;**C**：分配任务&#x200B;**D**：高级元数据&#x200B;**E**：关键字和智能标记&#x200B;**F**：注释和批注&#x200B;**G**：查看与所选资源相关的任务&#x200B;**H**：查看和管理版本&#x200B;**I**：查看图像的演绎版&#x200B;**J**：编辑图像&#x200B;**K**：通过OpenAPI功能呈现查看Dynamic Media呈现版本，包括Smart Crop和Dynamic Media。 **L**：基本元数据&#x200B;**M**：高级元数据&#x200B;**N**：关键字和智能标记&#x200B;**O**：继续到当前文件夹中的上一个或下一个资源，而不返回文件夹&#x200B;**P**：更密切地预览。 缩放、全屏和其他选项。
 
 您也可以预览视频。
 

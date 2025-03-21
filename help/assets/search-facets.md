@@ -4,24 +4,58 @@ description: 本文介绍了如何在Experience Manager中创建、修改和使�
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2523'
+source-wordcount: '2551'
 ht-degree: 19%
 
 ---
 
 # 搜索 Facet {#search-facets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | 本文 |
 
-Adobe Experience Manager Assets的企业范围部署具有存储许多资源的能力。 有时，如果只使用Experience Manager的通用搜索功能，则查找正确的资源可能会很费时费力。
+Adobe Experience Manager Assets的企业范围部署具有存储许多资源的能力。 有时，如果只使用Experience Manager的通用搜索功能，则查找合适的资源可能会很费时费力。
 
 使用过滤器面板中的搜索彩块化为您的搜索体验添加更多粒度，并使搜索功能更有效、更通用。 搜索Facet会添加多个维度（谓词），使您能够执行更复杂的搜索。 过滤器面板包含几个标准方面。 您还可以添加自定义搜索彩块化。
 
@@ -68,7 +102,7 @@ Adobe Experience Manager Assets的企业范围部署具有存储许多资源的�
 1. 要关闭预览，请单击预览右上角的&#x200B;**[!UICONTROL 关闭]** ![关闭](assets/do-not-localize/close_icon.png)。
 1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存设置。
 1. 导航到Assets用户界面中的“搜索”面板。 属性谓词将添加到面板。
-1. 在文本框中输入要搜索的资源的描述。 例如，输入“Adobe”。 执行搜索时，其描述与“Adobe”匹配的资源将列在搜索结果中。
+1. 在文本框中输入要搜索的资源的描述。 例如，输入“Adobe”。 执行搜索时，搜索结果中会列出描述与“Adobe”匹配的资源。
 
 ## 添加选项谓词 {#adding-an-options-predicate}
 
@@ -201,7 +235,7 @@ Adobe Experience Manager Assets的企业范围部署具有存储许多资源的�
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Publish状态</p> </td>
+   <td><p>发布状态</p> </td>
    <td><p>搜索谓词，以基于资产的发布状态搜索资产</p> </td>
    <td>
     <ul>
@@ -275,7 +309,7 @@ Adobe Experience Manager Assets的企业范围部署具有存储许多资源的�
     </ul> </td>
   </tr>
   <tr>
-   <td>Publish状态</td>
+   <td>发布状态</td>
    <td>搜索谓词，以基于资产的发布状态搜索资产 </td>
    <td>
     <ul>
@@ -309,7 +343,7 @@ Adobe Experience Manager Assets的企业范围部署具有存储许多资源的�
 
 ## 删除默认搜索Facet {#removing-default-search-facets}
 
-Adobe建议您在删除默认搜索Facet时要小心，以免出现性能问题。 删除默认搜索Facet也可能会影响默认功能行为。
+Adobe建议您在删除默认搜索Facet时务必谨慎，以避免出现性能问题。 删除默认搜索Facet也可能会影响默认功能行为。
 
 请勿删除以下隐藏字段，因为它会导致OmniSearch和智能收藏集的查询性能问题：
 

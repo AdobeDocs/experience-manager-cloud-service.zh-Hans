@@ -1,22 +1,59 @@
 ---
 title: 使用 Dynamic Media
-description: 了解Dynamic Media是什么，您可以使用Dynamic Media提供资源以供在Web、移动和社交网站上使用。
+description: 了解什么是Dynamic Media，并且您可以使用Dynamic Media提供资源以供在Web、移动和社交网站上使用。
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 5%
 
 ---
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的视觉营销和营销资源，可自动扩展以用于Web、移动和社交网站上的使用。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成并提供多种丰富内容变体。
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
-Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频。 Dynamic Media独特地整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的可视化推销和营销资产，可自动扩展以用于Web、移动和社交网站上的使用。 通过使用一组主要源资产，Dynamic Media通过其可扩展、性能优化的全球网络实时生成和提供多种多样的丰富内容变体。
+
+Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频。 Dynamic Media以独特方式整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
 
 <!-- >[!NOTE]
 >
@@ -24,11 +61,11 @@ Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频�
 
 ## 什么是Dynamic Media？
 
-Adobe Experience Manager (AEM)中的Dynamic Mediaas a Cloud Service是一款功能强大的解决方案，旨在帮助您跨数字平台管理、交付和优化富媒体资产，如图像和视频。 它通过允许实时修改（例如根据用户的设备或屏幕大小调整大小、裁剪和质量）将静态媒体转换为动态、引人入胜的体验。 通过Dynamic Media，无论用户使用桌面机、移动设备还是平板电脑，您的资产都会自动调整以提供最佳视觉体验。
+Adobe Experience Manager (AEM) as a Cloud Service中的Dynamic Media是一款功能强大的解决方案，旨在帮助您跨数字平台管理、交付和优化富媒体资产，如图像和视频。 它通过允许实时修改（例如根据用户的设备或屏幕大小调整大小、裁剪和质量）将静态媒体转换为动态、引人入胜的体验。 通过Dynamic Media，无论用户使用桌面机、移动设备还是平板电脑，您的资产都会自动调整以提供最佳视觉体验。
 
-Dynamic Media的一个主要优势是能够简化媒体管理。 您无需创建多个版本的图像或视频，Dynamic Media可通过针对每种情况提供最合适的格式来处理所有此类图像或视频。 例如，电子商务企业可以利用360度的产品视图或可缩放图像来创造交互式体验，而内容密集型网站则可以确保快速、高质量的视频流。 这导致更快的加载时间和更引人入胜的用户体验，最终导致更高的客户满意度和更好的转化率。
+Dynamic Media的一个主要优势是能够简化媒体管理。 您无需创建多个版本的图像或视频，Dynamic Media可通过针对每种情况提供最合适的格式来处理所有图像或视频。 例如，电子商务企业可以利用360度的产品视图或可缩放图像来创造交互式体验，而内容密集型网站则可以确保快速、高质量的视频流。 这导致更快的加载时间和更引人入胜的用户体验，最终导致更高的客户满意度和更好的转化率。
 
-Dynamic Media与AEM中的数字资产管理(DAM)系统无缝集成，为您提供单个平台来存储、组织和部署您的媒体。 这种集中式方法简化了跨团队的协作，并提供了对资产性能的实时洞察。 无论您是专注于提供引人入胜的视觉效果还是增强媒体驱动的用户交互，Dynamic Media都可以帮助您针对任何渠道优化内容，使其成为致力于提升数字影响力的企业不可或缺的工具。
+Dynamic Media与AEM中的数字资源管理(DAM)系统无缝集成，为您提供单个平台来存储、组织和部署媒体。 这种集中式方法简化了跨团队的协作，并提供了对资产性能的实时洞察。 无论您是专注于提供引人入胜的视觉效果还是增强媒体驱动的用户交互，Dynamic Media都有助于针对任何渠道优化您的内容，使其成为致力于提升其数字影响力的企业不可或缺的工具。
 
 ## 使用Dynamic Media可以做什么 {#what-you-can-do-with-dynamic-media}
 
@@ -44,7 +81,7 @@ Dynamic Media与AEM中的数字资产管理(DAM)系统无缝集成，为您提�
 * [全景图像](panoramic-images.md)
 * [旋转集](spin-sets.md)
 * [视频](video.md)
-* [交付Dynamic Media Assets](delivering-dynamic-media-assets.md)
+* [传送Dynamic Media Assets](delivering-dynamic-media-assets.md)
 * [管理Assets](managing-assets.md)
 * [使用快速视图创建自定义弹出窗口](custom-pop-ups.md)
 
@@ -59,7 +96,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## 启用Dynamic Media与禁用Dynamic Media {#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media已启用与Dynamic Media已禁用 {#dynamic-media-on-versus-dynamic-media-off}
 
 您可以通过以下特征来判断是否已启用（打开）Dynamic Media：
 
@@ -67,11 +104,11 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 * 图像集、旋转集和混合媒体集均可用。
 * 创建PTIFF演绎版。
 
-单击某个图像资源时，启用Dynamic Media后该资源的视图会发生变化。 Dynamic Media使用按需HTML5查看器。
+单击图像资源时，启用Dynamic Media后资源的视图会有所不同。 Dynamic Media使用按需HTML5查看器。
 
 ### 动态演绎版 {#dynamic-renditions}
 
-启用Dynamic Media后，可以使用动态演绎版，例如图像和查看器预设（位于&#x200B;**[!UICONTROL Dynamic]**&#x200B;下）。
+启用Dynamic Media后，图像和查看器预设（位于&#x200B;**[!UICONTROL Dynamic]**&#x200B;下）等动态演绎版可用。
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -81,18 +118,18 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### 支持Dynamic Media的PTIFF演绎版 {#ptiff-renditions}
+### 启用Dynamic Media的PTIFF演绎版 {#ptiff-renditions}
 
-启用了Dynamic Media的资源包括`pyramid.tiffs`。
+已启用Dynamic Media的资源包括`pyramid.tiffs`。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Dynamic Media资源视图更改 {#asset-views-change}
+### Dynamic Media资产视图更改 {#asset-views-change}
 
-启用Dynamic Media后，您可以通过单击`+`和`-`按钮进行放大和缩小。 您还可以选择放大特定区域。 还原将您带入原始版本，您可以通过单击对角线箭头使图像变为全屏。 已启用Dynamic Media如下所示：
+启用Dynamic Media后，您可以通过单击`+`和`-`按钮进行放大和缩小。 您还可以选择放大特定区域。 还原将您带入原始版本，您可以通过单击对角线箭头使图像变为全屏。 “Dynamic Media已启用”显示如下：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-禁用Dynamic Media后，您可以放大、缩小并恢复到原始大小：
+禁用Dynamic Media后，您可以放大和缩小并恢复到原始大小：
 
 ![chlimage_1-362](assets/chlimage_1-362.png)

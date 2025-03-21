@@ -1,21 +1,55 @@
 ---
-title: 在 [!DNL Assets]中Digital Rights Management
+title: ' [!DNL Assets]中的Digital Rights Management'
 description: 了解如何在 [!DNL Experience Manager] as a [!DNL Cloud Service]中管理已授权资产的资产到期状态和信息。
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 6%
+source-wordcount: '1414'
+ht-degree: 7%
 
 ---
 
-# Digital Rights Management数字资源 {#digital-rights-management-in-assets}
+# 适用于数字资源的Digital Rights Management {#digital-rights-management-in-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -57,7 +91,7 @@ ht-degree: 6%
 
 此外，如果错误阻止调度程序在当前周期中检测过期资产，则调度程序在下一个周期中重新检查这些资产并检测其过期状态。
 
-要启用[!DNL Assets]控制台以显示引用的复合资源以及过期的子资源，请在[!DNL Experience Manager]中配置&#x200B;**[!UICONTROL Adobe CQ DAM到期通知]**&#x200B;工作流。 基于时间的调度程序会调度一个作业，以在特定时间检查资产是否已过期子资产。 作业完成后，具有过期子资产和引用资产的资产会在搜索结果中显示为已过期。
+要启用[!DNL Assets]控制台以显示引用的复合资产以及过期的子资产，请在[!DNL Experience Manager]中配置&#x200B;**[!UICONTROL Adobe CQ DAM到期通知]**&#x200B;工作流。 基于时间的调度程序会调度一个作业，以在特定时间检查资产是否已过期子资产。 作业完成后，具有过期子资产和引用资产的资产会在搜索结果中显示为已过期。
 
 1. 访问与您的环境关联的[!DNL Cloud Manager] Git存储库。
 1. 提交存储库中名为`com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json`的文件，该文件包含以下内容。
@@ -97,9 +131,9 @@ ht-degree: 6%
 
 1. 在[!DNL Assets]用户界面中，选择一个资产。
 
-1. 从工具栏中选择&#x200B;**[!UICONTROL Publish]**。 如果您在工具栏中未看到[!UICONTROL Publish]选项，请单击工具栏上的&#x200B;**[!UICONTROL 更多]**，然后找到&#x200B;**[!UICONTROL Publish]**&#x200B;选项。
+1. 从工具栏中选择&#x200B;**[!UICONTROL 发布]**。 如果在工具栏中未看到[!UICONTROL 发布]选项，请单击工具栏上的&#x200B;**[!UICONTROL 更多]**，然后找到&#x200B;**[!UICONTROL 发布]**&#x200B;选项。
 
-1. 从菜单中选择&#x200B;**[!UICONTROL Publish]**，然后关闭确认对话框。
+1. 从菜单中选择&#x200B;**[!UICONTROL 发布]**，然后关闭确认对话框。
 
 1. 退出选择模式。 资源的发布状态显示在卡片视图的资源缩略图底部。 在列表视图中，已发布列显示资产的发布时间。
 
@@ -121,7 +155,7 @@ ht-degree: 6%
 
 1. 选择`Return`并单击[!DNL Experience Manager]。
 
-1. 在搜索面板中，单击&#x200B;**[!UICONTROL Publish状态]**，然后选择&#x200B;**[!UICONTROL 已发布]**&#x200B;以在[!DNL Assets]中搜索已发布的资源。
+1. 在搜索面板中，单击&#x200B;**[!UICONTROL 发布状态]**&#x200B;并选择&#x200B;**[!UICONTROL 已发布]**&#x200B;以在[!DNL Assets]中搜索已发布的资源。
 
 1. 要搜索已批准或已拒绝的资产，请选择&#x200B;**[!UICONTROL 批准状态]**&#x200B;并选择适当的选项。
 
@@ -129,7 +163,7 @@ ht-degree: 6%
 
 1. 您还可以根据各种搜索彩块化下的状态组合搜索资源。 例如，您可以搜索在审核任务中批准且未过期的已发布资产。 要搜索此类资源，请在搜索彩块化中选择相应的选项。
 
-## 在[!DNL Assets]中Digital Rights Management {#digital-rights-management-in-assets-1}
+## [!DNL Assets]中的Digital Rights Management {#digital-rights-management-in-assets-1}
 
 DRM功能强制接受许可协议，然后才能从[!DNL Assets]下载许可资产。
 
@@ -144,7 +178,7 @@ DRM功能强制接受许可协议，然后才能从[!DNL Assets]下载许可资�
 
 >[!NOTE]
 >
->位置`/etc/dam/drm/licences`用于存储早期版本的[!DNL Experience Manager]中的许可证。 该位置现已弃用。 如果您创建或修改许可证页，或者从以前的[!DNL Experience Manager]版本移植页，Adobe建议您将此类资源存储在`/apps/settings/dam/drm/licenses`或`/conf/*/settings/dam/drm/licenses`位置。
+>位置`/etc/dam/drm/licences`用于存储早期版本的[!DNL Experience Manager]中的许可证。 该位置现已弃用。 如果您创建或修改许可证页面，或者从以前的[!DNL Experience Manager]版本移植页面，Adobe建议您将此类资源存储在`/apps/settings/dam/drm/licenses`或`/conf/*/settings/dam/drm/licenses`位置。
 
 ### 下载受DRM保护的资产 {#downloading-drm-assets}
 

@@ -5,27 +5,58 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 2%
+source-wordcount: '2570'
+ht-degree: 3%
 
 ---
 
 # AEM Assets搜索最佳实践
 
-| [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets]提供强大的资源搜索方法，帮助您实现更高的内容速度。 有时，找到正确的资产可能会很费时又费力。 因此，[!DNL Adobe Experience Manager Assets]中的搜索资产功能对于数字资产管理系统的使用至关重要 — 无论是供创意人员进一步使用、供业务用户和营销人员稳健管理资产，还是DAM管理员管理。
 
-本帮助文档包含了AEM搜索的最佳实践，以及各种情景的帮助，以帮助AEM用户执行从基本到高级的搜索。
+此帮助文档包含AEM搜索最佳实践，并借助各种方案帮助AEM用户执行从基本到高级的搜索。
 
 ## 访问Experience Manager搜索 {#access-experience-manager-search}
 
-以下是开始搜索之前在Experience Manager中执行的基本步骤：
+以下是开始搜索之前要在Experience Manager中执行的基本步骤：
 
-* 在&#x200B;**管理员视图**中，转到Assets >Experience Manager中的文件，然后单击顶部栏上的搜索图标。 或者，使用正斜杠(/)打开“全搜索”字段。
+* 在&#x200B;**管理员视图**中，转到Experience Manager中的Assets >文件，然后单击顶部栏上的搜索图标。 或者，使用正斜杠(/)打开“全搜索”字段。
 在**Assets视图**&#x200B;中，搜索栏显示在顶部，可以直接访问。
 * 已预选择`Location:Assets`和`Path:/content/dam`以将搜索范围限制为您的Experience Manager Assets存储库。 如果导航到任何其他文件夹，则`Path:/content/dam/<folder name>`将显示在全搜索字段中，以将搜索范围限制为当前文件夹。
 
@@ -41,7 +72,7 @@ ht-degree: 2%
 2. 智能标记中的`Classic Car`的匹配项。
 3. 在智能标记中匹配`Classic`或`Car`。
 
-将`classic car`指定为搜索关键字，然后单击“搜索”。 键入关键字时，可以在下拉列表中查看搜索建议。 搜索建议基于Experience Manager部署中搜索索引的内容。 如果无法在下拉菜单中查看相应的资源，请按Enter键查看结果列表。 结果按相关性排序，从最接近的匹配项开始。
+将`classic car`指定为搜索关键字，然后单击“搜索”。 键入关键字时，可以在下拉列表中查看搜索建议。 搜索建议基于Experience Manager部署上搜索索引的内容。 如果无法在下拉菜单中查看相应的资源，请按Enter键查看结果列表。 结果按相关性排序，从最接近的匹配项开始。
 
 <!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
@@ -94,7 +125,7 @@ AND运算符是全搜索中两个关键字之间的默认运算符。 例如，�
 
 ### NOT运算符 {#not-operator}
 
-如果要检索除某些关键字以外的结果，可以使用NOT运算符。 NOT运算符使用连字符(-)符号来指示AEM搜索要从搜索结果中排除的内容。 例如，指定包含`car`但不包含`classic`的元数据的搜索查询`car - classic`。
+如果要检索除某些关键字以外的结果，可以使用NOT运算符。 NOT运算符使用连字符(-)符号指示AEM搜索要从搜索结果中排除的内容。 例如，指定包含`car`但不包含`classic`的元数据的搜索查询`car - classic`。
 
 ![使用NOT运算符搜索](assets/not-operator.png)
 
@@ -110,7 +141,7 @@ AND运算符是全搜索中两个关键字之间的默认运算符。 例如，�
 
 ### 问号(？) {#question-mark}
 
-问号符号可用作条件运算符，以方便您在Experience Manager中进行搜索。
+问号符号可用作条件运算符，以方便您在Experience Manager中搜索。
 
 * `car?`查询与car后有一个字符的单词匹配。 例如，购物车。
 * `?car`查询与car前有一个字符的单词匹配。 例如，伤疤。
@@ -167,7 +198,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 在搜索栏中键入`classic car`。
 1. 转到“筛选器”。 在[!UICONTROL 文件类型]下，展开[!UICONTROL 文档]，然后进一步展开[!UICONTROL 字处理]。
 1. 选择[!UICONTROL PDF]。
-1. 转到[!UICONTROL 状态] > [!UICONTROL Publish] > [!UICONTROL 已取消发布]。
+1. 转到[!UICONTROL 状态] > [!UICONTROL 发布] > [!UICONTROL 已取消发布]。
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
@@ -196,9 +227,9 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 
 ## 高级搜索 {#advanced-search}
 
-AEM搜索允许您以更少的工作量制作复杂的搜索查询。 以下是帮助您创建复杂搜索查询的各种示例：
+通过AEM搜索，您可以用更少的工作量制作复杂的搜索查询。 以下是帮助您创建复杂搜索查询的各种示例：
 
-**方案6：搜索元数据中包含`classic car`的Experience Manager存储库中的所有文档。 文档内容中必须包含`classic car`关键字。**
+**方案6：搜索Experience Manager存储库中元数据中包含`classic car`的所有文档。 文档内容中必须包含`classic car`关键字。**
 
 Adobe Experience Manager允许您向搜索添加多个标准。 可以使用关键字、运算符和过滤器的组合来缩小搜索结果。
 
@@ -212,7 +243,7 @@ Adobe Experience Manager允许您向搜索添加多个标准。 可以使用关�
 
 方案6不能在&#x200B;**[!UICONTROL Assets视图]**&#x200B;中执行，因为它不支持使用通配符。
 
-**方案7：搜索Experience Manager存储库中文档内容必须包含`car`但不包含`classic`的所有文档。 同一条件适用于资源的元数据。**
+**场景7：搜索Experience Manager存储库中文档内容必须包含`car`但不包含`classic`的所有文档。 同一条件适用于资源的元数据。**
 
 要搜索方案7，请执行以下操作：
 
@@ -356,7 +387,7 @@ The newly added assets are not indexed.
         <td> “文件类型”下提供了选择文件夹的选项 </td>
     </tr>
      <tr>
-        <td> 资源状态 </td>
+        <td> 资产状态 </td>
         <td> 
             支持的选项包括：
             <ul>

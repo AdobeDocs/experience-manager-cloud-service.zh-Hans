@@ -4,17 +4,51 @@ description: 使用 [!DNL Adobe Express] 支持的选项编辑视频，并将更
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 17%
+source-wordcount: '825'
+ht-degree: 19%
 
 ---
 
 # 在[!DNL Assets view]中编辑视频 {#edit-videos}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 为视频嵌入了[!DNL Adobe Express]快速操作的Assets用户轻松创建视频内容的变体。 [!DNL Assets view]中由[!DNL Adobe Express]提供支持的快速操作提供了用户友好的视频编辑选项，包括裁切视频、调整视频大小、修剪视频以及将视频转换为GIF。
 
@@ -51,7 +85,7 @@ DAM中的最终视频内容通常需要调整大小才能分发到特定渠道�
 4. 如果需要，可使用&#x200B;**[!UICONTROL 视频比例]**&#x200B;字段缩放视频。
 5. 您可以选择将视频静音或取消静音。
 6. 单击&#x200B;**[!UICONTROL 应用]**以应用您的更改。
-   ![使用Adobe Express调整视频大小](assets/adobe-express-resize-video.png)
+   使用Adobe Express调整![视频大小](assets/adobe-express-resize-video.png)
 
 您调整大小的视频可供下载。 您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
 
@@ -65,7 +99,7 @@ DAM中的最终视频内容通常需要调整大小才能分发到特定渠道�
 4. 从&#x200B;**[!UICONTROL 大小]**&#x200B;下拉列表中选择适当的维度。
 5. 您可以选择将视频静音或取消静音。
 6. 单击&#x200B;**[!UICONTROL 应用]**以应用您的更改。
-   ![使用Adobe Express调整视频大小](assets/adobe-express-trim-video.png)
+   使用Adobe Express调整![视频大小](assets/adobe-express-trim-video.png)
 
 已修剪的视频可供下载。 您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
 
@@ -79,7 +113,7 @@ DAM中的最终视频内容通常需要调整大小才能分发到特定渠道�
 4. 拖动视频角上的手柄以创建所需的裁切。
 5. 单击&#x200B;**[!UICONTROL 应用]**。
 
-   ![将视频转换为Adobe Express为](assets/adobe-express-convert-video-to-gif.png)的GIF
+   ![使用Adobe Express将视频转换为GIF](assets/adobe-express-convert-video-to-gif.png)
 
 您的视频可以采用GIF格式下载。 您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
 

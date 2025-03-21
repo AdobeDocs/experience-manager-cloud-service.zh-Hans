@@ -4,23 +4,57 @@ description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Ado
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3162'
-ht-degree: 9%
+source-wordcount: '3190'
+ht-degree: 10%
 
 ---
 
 # 将数字资产作为[!DNL Cloud Service]添加到[!DNL Adobe Experience Manager][!DNL Assets] {#add-assets-to-experience-manager}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets]接受来自多个来源的多种数字资源。 它存储二进制文件和创建的演绎版，可以使用各种工作流和[!DNL Adobe Sensei]服务进行资产处理，允许跨多个表面通过多个渠道进行分发。
 
 [!DNL Adobe Experience Manager]使用富元数据、智能标记、演绎版和其他数字资产管理(DAM)服务丰富了已上传数字文件的二进制内容。 您可以从本地文件夹或网络驱动器将各种类型的文件（如图像、文档和原始图像文件）上载到[!DNL Experience Manager Assets]。
 
-除了最常用的浏览器上载之外，还存在将资产添加到[!DNL Experience Manager]存储库的其他方法。 这些其他方法包括桌面客户端(如AdobeAsset Link或[!DNL Experience Manager]桌面应用程序)、上传和客户将创建的引入脚本，以及添加为[!DNL Experience Manager]扩展的自动引入集成。
+除了最常用的浏览器上载之外，还存在将资产添加到[!DNL Experience Manager]存储库的其他方法。 这些其他方法包括桌面客户端(如Adobe Asset Link或[!DNL Experience Manager]桌面应用程序)、上传和客户将创建的摄取脚本，以及添加为[!DNL Experience Manager]扩展的自动摄取集成。
 
 虽然您可以上传和管理[!DNL Experience Manager]中的任何二进制文件，但最常用的文件格式支持其他服务，如元数据提取或预览/演绎版生成。 有关详细信息，请参阅[支持的文件格式](file-format-support.md)。
 
@@ -33,7 +67,7 @@ ht-degree: 9%
 | [Assets控制台用户界面](#upload-assets) | 偶尔上传、轻松按压和拖动、查找器上传。 请勿使用上传许多资源。 | 所有用户 |
 | [上传API](#upload-using-apis) | 用于上传期间的动态决策。 | 开发人员 |
 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低流量资产摄取，但不适用于迁移。 | 管理员、营销人员 |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | 当创意人员和营销人员从支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | 创意、营销人员 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | 当创意人员和营销人员从支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | Creative，营销人员 |
 | [资源批量引入器](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔进行批量引入。 仅适用于支持的数据存储。 | 管理员、开发人员 |
 
 ## 上传资产 {#upload-assets}
@@ -153,7 +187,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-下图说明了从数据存储中摄取资源以Experience Manager时的各个阶段：
+下图说明了将资产从数据存储摄取到Experience Manager时的各个阶段：
 
 ![批量摄取工具](assets/bulk-ingestion.png)
 
@@ -218,7 +252,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 验证与数据源的连接 {#validate-connection}
 
-要验证与数据源的连接，请选择配置，然后单击&#x200B;**[!UICONTROL 检查]**。 如果连接成功，Experience Manager将显示以下消息：
+要验证与数据源的连接，请选择配置，然后单击&#x200B;**[!UICONTROL 检查]**。 如果连接成功，Experience Manager会显示以下消息：
 
 ![批量导入成功消息](assets/bulk-import-success-message.png)
 
@@ -335,13 +369,13 @@ Following are the file naming conventions that are applied while uploading asset
 
 要启动批量导入流程，请导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 批量导入]**，选择[批量导入配置](#configure-bulk-ingestor-tool)，然后单击&#x200B;**[!UICONTROL 运行]**。 再次单击&#x200B;**[!UICONTROL 运行]**&#x200B;以确认。
 
-Experience Manager在成功完成作业后将作业的状态更新为&#x200B;**正在处理**&#x200B;和&#x200B;**成功**。 若要在Experience Manager中查看导入的资源，请单击&#x200B;**查看Assets**。
+成功完成作业后，Experience Manager会将作业的状态更新为&#x200B;**正在处理**&#x200B;和&#x200B;**成功**。 要在Experience Manager中查看导入的资源，请单击&#x200B;**查看Assets**。
 
 当作业正在进行时，您还可以选择配置并单击&#x200B;**停止**&#x200B;以停止批量摄取进程。 再次单击&#x200B;**运行**&#x200B;以继续此进程。 您还可以单击&#x200B;**试运行**&#x200B;以了解仍在等待导入的资产的详细信息。
 
 #### 执行后管理作业 {#manage-jobs-after-execution}
 
-通过Experience Manager，可查看批量导入作业的历史记录。 作业历史记录包括作业的状态、作业创建者、日志以及其他详细信息，如开始日期和时间、创建日期和时间以及完成日期和时间。
+Experience Manager允许您查看批量导入作业的历史记录。 作业历史记录包括作业的状态、作业创建者、日志以及其他详细信息，如开始日期和时间、创建日期和时间以及完成日期和时间。
 
 要访问配置的作业历史记录，请选择该配置，然后单击&#x200B;**[!UICONTROL 作业历史记录]**。 选择作业并单击&#x200B;**打开**。
 
@@ -354,7 +388,7 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 
 除了Web浏览器用户界面外，[!DNL Experience Manager]还支持桌面上的其他客户端。 它们还提供了上传体验，无需转至Web浏览器。
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)提供了从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的[!DNL Experience Manager]访问资源的权限。 您可以从这些桌面应用程序中直接从AdobeAsset Link用户界面将当前打开的文档上传到[!DNL Experience Manager]。
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)提供了从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的[!DNL Experience Manager]访问资源的权限。 您可以从这些桌面应用程序中直接从Adobe Asset Link用户界面将当前打开的文档上传到[!DNL Experience Manager]。
 * [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)可简化在桌面上使用资产的过程，而与资产的文件类型或处理这些资产的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件很有用，因为浏览器上传仅支持上传平面文件列表。
 
 ## 上传时处理资源 {#process-when-uploaded}

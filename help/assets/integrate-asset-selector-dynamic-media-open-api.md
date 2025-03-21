@@ -1,19 +1,53 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
-description: 将资源选择器与各种Adobe、非Adobe和第三方应用程序集成。
+title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资产选择器'
+description: 将资产选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 4%
+source-wordcount: '930'
+ht-degree: 7%
 
 ---
 
 # Dynamic Media与OpenAPI功能集成 {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 Asset Selector允许您使用各种Adobe应用程序进行集成，以使它们能够无缝地协同工作。
 
@@ -23,16 +57,16 @@ Asset Selector允许您使用各种Adobe应用程序进行集成，以使它们�
 如果要将资产选择器与Dynamic Media以及OpenAPI功能集成，请使用以下先决条件：
 
 * [通信方法](/help/assets/overview-asset-selector.md#prereqs)
-* 要访问具有OpenAPI功能的Dynamic Media，您必须具有以下功能的许可证：
-   * Assets存储库(例如，Experience Manager Assetsas a Cloud Service)。
+* 要通过OpenAPI功能访问Dynamic Media，您必须拥有以下许可证：
+   * Assets存储库(例如，Experience Manager Assets as a Cloud Service)。
    * AEM Dynamic Media。
 * 只有[个批准的资产](/help/assets/approve-assets.md)可用于确保品牌一致性。
 
 ## Dynamic Media与OpenAPI功能集成 {#adobe-app-integration-polaris}
 
-资产选择器与Dynamic Media OpenAPI进程的集成涉及各种步骤，包括创建自定义的Dynamic Media URL或准备选择Dynamic Media URL等。
+资产选择器与Dynamic Media OpenAPI进程的集成涉及多个步骤，包括创建自定义的Dynamic Media URL或准备选取Dynamic Media URL等。
 
-### 将动态媒体资产选择器与 OpenAPI 功能集成 {#integrate-dynamic-media}
+### 将 Dynamic Media 资产选择器与 OpenAPI 功能集成 {#integrate-dynamic-media}
 
 `rootPath`和`path`属性不应包含在具有OpenAPI功能的Dynamic Media中。 相反，您可以配置`aemTierType`属性。 以下是配置的语法：
 
@@ -124,7 +158,7 @@ URL格式：
   } 
   ```
 
-在上面的屏幕快照中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到目标体验中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
@@ -140,13 +174,13 @@ URL格式：
 
   您可以在上面的屏幕快照中引用`selection[0].....selection[4]`以获取演绎版链接数组。 例如，其中一个缩略图呈现版本的关键属性包括：
 
-  上述屏幕快照中的代码片段是视频资源的一个示例。 它包括呈现版本链接数组。 摘录中的`selection[5]`是图像缩略图的示例，可用作目标体验中视频缩略图的占位符。 演绎版数组中的`selection[5]`适用于视频播放器。 这提供了一个HTML，可以设置为iframe的`src`。 它支持自适应比特率流，该流是Web优化的视频交付。
+  上述屏幕快照中的代码片段是视频资源的一个示例。 它包括呈现版本链接数组。 摘录中的`selection[5]`是图像缩略图的示例，可用作目标体验中视频缩略图的占位符。 演绎版数组中的`selection[5]`适用于视频播放器。 它提供一个HTML，可以设置为iframe的`src`。 它支持自适应比特率流，该流是Web优化的视频交付。
 
   在上例中，视频播放器URL为`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
 ### 配置自定义筛选条件 {#configure-custom-filters-dynamic-media-open-api}
 
-通过OpenAPI功能的Dynamic Media资源选择器，可配置自定义属性以及基于这些属性的过滤器。 `filterSchema`属性用于配置此类属性。 自定义项可以作为`metadata.<metadata bucket>.<property name>.`公开，可以根据它配置筛选器，其中，
+通过OpenAPI功能的Dynamic Media资产选择器，可配置自定义属性以及基于这些属性的过滤器。 `filterSchema`属性用于配置此类属性。 自定义项可以作为`metadata.<metadata bucket>.<property name>.`公开，可以根据它配置筛选器，其中，
 
 * `metadata`是资产的信息
 * `embedded`是用于配置的静态参数，并且
@@ -154,15 +188,15 @@ URL格式：
 
 对于配置，对于要配置的筛选器，在`jcr:content/metadata/`级别定义的属性将公开为`metadata.<metadata bucket>.<property name>.`。
 
-例如，在用于具有OpenAPI功能的Dynamic Media的资源选择器中，`asset jcr:content/metadata/client_name:market`上的某个属性被转换为`metadata.embedded.client_name:market`以进行筛选器配置。
+例如，在具有OpenAPI功能的Dynamic Media的资源选择器中，`asset jcr:content/metadata/client_name:market`上的属性被转换为`metadata.embedded.client_name:market`以进行筛选器配置。
 
 要获取名称，必须完成一次性活动。 对资产进行搜索API调用，然后获取属性名称（本质上是存储桶）。
 
 ### 具有OpenAPI功能的Dynamic Media的资源选择器用户界面 {#interface-dynamic-media-open-api}
 
-在与Adobe的微前端资源选择器集成后，您可以在Experience Manager资源存储库中查看所有已批准资源的仅资源结构。
+与Adobe的微前端资产选择器集成后，您可以在Experience Manager资产存储库中查看所有已批准资产的纯资产结构。
 
-具有OpenAPI功能UI的![Dynamic Media](assets/polaris-ui.png)
+![具有OpenAPI功能UI的Dynamic Media](assets/polaris-ui.png)
 
 * **A**：[隐藏/显示面板](#hide-show-panel)
 * **B**： [Assets](#repository)
@@ -177,4 +211,4 @@ URL格式：
 >
 >* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
->* [资产选择器自定义项](/help/assets/asset-selector-customization.md)
+>* [资产选择器自定义](/help/assets/asset-selector-customization.md)

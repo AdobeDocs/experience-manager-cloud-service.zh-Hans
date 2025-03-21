@@ -1,21 +1,55 @@
 ---
-title: 管理视频资源
+title: 管理视频资产
 description: 在 [!DNL Adobe Experience Manager]中上传、预览、注释和发布视频资源。
 contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5001'
+source-wordcount: '5029'
 ht-degree: 6%
 
 ---
 
-# 管理视频资源 {#manage-video-assets}
+# 管理视频资产 {#manage-video-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -57,19 +91,19 @@ ht-degree: 6%
 * 即使生成了演绎版，MXF文件也不会显示视频预览。
 * WebM文件不会生成预览呈现版本，因为它们可以由Web浏览器本机播放。
 
-## Publish视频资源 {#publish-video-assets}
+## 发布视频资产 {#publish-video-assets}
 
 发布后，您可以将视频资产作为URL包含在网页中，或直接嵌入这些资产。 有关详细信息，请参阅[发布 [!DNL Dynamic Media] 资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
-## Publish到YouTube的视频 {#publishing-videos-to-youtube}
+## 将视频发布到YouTube {#publishing-videos-to-youtube}
 
 您可以将在Experience Manager Assets中管理的视频资产直接发布到之前创建的YouTube渠道。
 
-要将视频资源发布到YouTube，您需要在Experience Manager Assets中使用标记来标记视频资源。 将这些标记与YouTube渠道关联。 如果视频资产的标记与YouTube渠道的标记匹配，则视频将发布到YouTube。 只要使用关联的标记，Publish到YouTube的操作就会与视频的正常发布同时进行。
+要将视频资源发布到YouTube，您需要在Experience Manager Assets中使用标记来标记视频资源。 将这些标记与YouTube渠道关联。 如果视频资产的标记与YouTube渠道的标记匹配，则视频将发布到YouTube。 只要使用关联的标记，发布到YouTube就会与正常发布视频同时发生。
 
-YouTube自行编码。 因此，上传到Experience Manager的原始视频文件会发布到YouTube，而不是Dynamic Media的编码创建的任何视频演绎版。 虽然无需使用Dynamic Media处理视频，但预计可在播放时需要查看器预设时这样做。
+YouTube自行编码。 因此，上传到Experience Manager的原始视频文件会发布到YouTube，而不是Dynamic Media的编码创建的任何视频演绎版。 虽然无需使用Dynamic Media处理视频，但预计可以在播放时需要查看器预设时这样做。
 
-当您绕过视频处理配置文件并直接发布到YouTube时，这仅仅意味着您在Experience Manager资源中的视频资源没有获取可查看的缩略图。 它还意味着未编码的视频不适用于任何Dynamic Media资源类型。
+当您绕过视频处理配置文件并直接发布到YouTube时，这仅意味着您在Experience Manager资源中的视频资源不会获得可查看的缩略图。 它还意味着未编码的视频不适用于任何Dynamic Media资产类型。
 
 将视频资产发布到YouTube服务器需要完成以下任务，以确保通过YouTube进行安全可靠的服务器到服务器验证：
 
@@ -78,7 +112,7 @@ YouTube自行编码。 因此，上传到Experience Manager的原始视频文件
 1. [添加标记以进行发布](#adding-tags-for-publishing)
 1. [在Experience Manager中设置YouTube](#setting-up-youtube-in-aem)
 1. [（可选）自动为您上传的视频设置默认YouTube属性](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publish视频到您的YouTube渠道](#publishing-videos-to-your-youtube-channel)
+1. [将视频发布到YouTube渠道](#publishing-videos-to-your-youtube-channel)
 1. [（可选）验证YouTube上发布的视频](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [将YouTube URL关联到您的Web应用程序](#linking-youtube-urls-to-your-web-application)
 
@@ -182,7 +216,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 >[!CAUTION]
 >
->请确保在&#x200B;*之前已在YouTube*&#x200B;中设置了一个或多个渠道，然后在Experience Manager的YouTube设置下添加渠道(请参阅下面的[在Experience Manager中设置YouTube](#setting-up-youtube-in-aem))。 如果无法设置渠道，则不会警告您不存在任何现有渠道。 但是，在添加频道时，Google验证仍会进行，但无法选择发送视频的频道。
+>请确保您之前已在YouTube *中设置了一个或多个渠道*，然后在Experience Manager的YouTube设置下添加渠道(请参阅下面的[在Experience Manager中设置YouTube](#setting-up-youtube-in-aem))。 如果无法设置渠道，则不会警告您不存在任何现有渠道。 但是，在添加频道时，Google验证仍会进行，但无法选择发送视频的频道。
 
 **要创建YouTube频道：**
 
@@ -192,7 +226,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 1. 在“渠道”页面上，选择&#x200B;**[!UICONTROL 创建新渠道]**。
 1. 在“品牌帐户”页面的“品牌帐户名称”字段中，输入要发布视频资产的位置的公司名称或任何其他渠道名称，然后选择&#x200B;**[!UICONTROL 创建]**。
 
-   请记住您在此处输入的名称；在必须在Experience Manager中设置YouTube时，必须再次输入该名称。
+   请记住您在此处输入的名称；当必须在Experience Manager中设置YouTube时，必须再次输入此名称。
 
 1. （可选）如有必要，请添加更多渠道。
 
@@ -200,13 +234,13 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 ### 添加标记以进行发布 {#adding-tags-for-publishing}
 
-要将视频发布到YouTube，Experience Manager会将标记与一个或多个YouTube渠道关联。 要添加标记以进行发布，请参阅[管理标记](/help/sites-cloud/authoring/sites-console/tags.md)。
+要将视频发布到YouTube，Experience Manager会将标记与一个或多个YouTube渠道相关联。 要添加标记以进行发布，请参阅[管理标记](/help/sites-cloud/authoring/sites-console/tags.md)。
 
-或者，如果您打算在Experience Manager中使用默认标记，则可以跳过此任务并转到[在Experience Manager中设置YouTube](#setting-up-youtube-in-aem)。
+或者，如果您打算使用Experience Manager中的默认标记，则可以跳过此任务并转到[在Experience Manager中设置YouTube](#setting-up-youtube-in-aem)。
 
 >[!NOTE]
 >
->配置Cloud Service后，无需进行其他配置即可在此时启用YouTube Publish复制代理。 原因是保存Cloud Service配置时启用了它。
+>配置Cloud Service后，无需进行其他配置即可在此时启用YouTube发布复制代理。 原因是在保存Cloud Service配置时启用了此设置。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -220,15 +254,15 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ### 在Experience Manager中设置YouTube {#setting-up-youtube-in-aem}
 
-从Experience Manager6.4开始，引入了一种新的触屏用户界面方法，用于在Experience Manager中设置YouTube发布。 根据您所使用的Experience Manager的安装实例，执行以下操作之一：
+从Experience Manager 6.4开始，引入了一种新的触控用户界面方法，用于在Experience Manager中设置YouTube发布。 根据您所使用的Experience Manager安装实例，执行以下操作之一：
 
 * 要在6.4之前的Experience Manager中配置YouTube，请参阅[在6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)之前的Experience Manager中设置YouTube 。
-* 要在Experience Manager6.4或更高版本中配置YouTube，请参阅[在Experience Manager6.4和更高版本中设置YouTube](#setting-up-youtube-in-aem-and-later)。
+* 要在Experience Manager 6.4或更高版本中配置YouTube，请参阅[在Experience Manager 6.4及更高版本中设置YouTube](#setting-up-youtube-in-aem-and-later)。
 
-#### 在Experience Manager6.4及更高版本中设置YouTube {#setting-up-youtube-in-aem-and-later}
+#### 在Experience Manager 6.4及更高版本中设置YouTube {#setting-up-youtube-in-aem-and-later}
 
 1. 确保以管理员身份登录到Dynamic Media实例。
-1. 选择Experience Manager左上角的Experience Manager徽标，然后在左边栏中，导航到&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Cloud Service]** > **[!UICONTROL YouTube Publishing Configuration]**。
+1. 选择Experience Manager左上角的Experience Manager徽标，然后在左边栏中，导航到&#x200B;**[!UICONTROL 工具]**（锤子图标）> **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**。
 1. 选择&#x200B;**[!UICONTROL global]**（不要选择它）。
 
 1. 在全局页面的右上角附近，选择&#x200B;**[!UICONTROL 创建]**。
@@ -262,8 +296,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    现在设置标记以进行发布。
 
-1. **[!UICONTROL 设置标记以进行发布]** — 在“Cloud Service”>“YouTube”页面上，选择铅笔图标以编辑要使用的标记列表。
-1. 要在Experience Manager中显示可用标签列表，请选择下拉列表图标（上下倒置插入号）。
+1. **[!UICONTROL 设置标记以进行发布]** — 在Cloud Services > YouTube页面上，选择铅笔图标以编辑要使用的标记列表。
+1. 要显示Experience Manager中可用标记的列表，请选择下拉列表图标（上下倒置插入号）。
 1. 要添加这些标记，请选择一个或多个标记。
 
    要删除已添加的标记，请选择该标记，然后选择&#x200B;**[!UICONTROL X]**。
@@ -276,7 +310,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 确保以管理员身份登录到Dynamic Media实例。
 
-1. 选择Experience Manager左上角的Experience Manager徽标，然后在左边栏中，导航到&#x200B;**[!UICONTROL 工具]** （锤子图标）> **[!UICONTROL 部署]** > **[!UICONTROL Cloud Service]**。
+1. 选择Experience Manager左上角的Experience Manager徽标，然后在左边栏中，导航到&#x200B;**[!UICONTROL 工具]** （锤子图标）> **[!UICONTROL 部署]** > **[!UICONTROL Cloud Services]**。
 1. 在“第三方服务”标题的YouTube下，选择&#x200B;**[!UICONTROL 立即配置]**。
 1. 在创建配置对话框中，在相应字段中输入标题（必填）和名称（可选）。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
@@ -308,8 +342,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    现在设置标记以进行发布。
 
-1. **[!UICONTROL 设置标记以进行发布]** — 在“Cloud Service”>“YouTube”页面上，选择铅笔图标以编辑要使用的标记列表。
-1. 要在Experience Manager中显示可用标签列表，请选择下拉列表图标（上下倒置插入号）。
+1. **[!UICONTROL 设置标记以进行发布]** — 在Cloud Services > YouTube页面上，选择铅笔图标以编辑要使用的标记列表。
+1. 要显示Experience Manager中可用标记的列表，请选择下拉列表图标（上下倒置插入号）。
 1. 要添加这些标记，请选择一个或多个标记。
 
    要删除已添加的标记，请选择该标记，然后选择&#x200B;**X**。
@@ -322,7 +356,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 您可以选择在上传视频时自动设置YouTube属性。 在Experience Manager中创建元数据处理配置文件。
 
-要创建元数据处理配置文件，您首先需要从&#x200B;**[!UICONTROL 字段标签]**、**[!UICONTROL 映射到属性]**&#x200B;和&#x200B;**[!UICONTROL 选择]**&#x200B;字段中复制值，所有这些字段均位于视频的元数据架构中。然后，您可以通过向处理配置文件添加这些值来构建您的YouTube视频元数据处理配置文件。
+要创建元数据处理轮廓，您首先需要从&#x200B;**[!UICONTROL 字段标签]**、**[!UICONTROL 映射到属性]**&#x200B;和&#x200B;**[!UICONTROL 选择]**&#x200B;字段中复制值，所有这些字段均位于视频的元数据架构中。然后，您可以通过向处理配置文件添加这些值来构建您的YouTube视频元数据处理配置文件。
 
 **要自动为上传的视频设置默认YouTube属性：**
 
@@ -379,21 +413,21 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存]**。
 1. 将YouTube发布元数据配置文件应用到要上传视频的文件夹。 您必须同时设置元数据配置文件和视频配置文件。
 
-   请参阅 [元数据配置文件](/help/assets/metadata-profiles.md) 和视 [频配置文件](/help/assets/dynamic-media/video-profiles.md)。
+   请参阅 [元数据轮廓](/help/assets/metadata-profiles.md) 和视 [频轮廓](/help/assets/dynamic-media/video-profiles.md)。
 
-### Publish视频到您的YouTube渠道 {#publishing-videos-to-your-youtube-channel}
+### 将视频发布到YouTube渠道 {#publishing-videos-to-your-youtube-channel}
 
-现在，您将之前添加的标记关联到视频资产。 此过程可告知Experience Manager要发布到YouTube渠道的资产。
-
->[!NOTE]
->
->Publish不会立即自动发布到YouTube。 设置 Dynamic Media 时，有两种发布选项可供选择：**[!UICONTROL 立即]**&#x200B;或&#x200B;**[!UICONTROL 激活时]**。
->
->**[!UICONTROL Publish立即]**&#x200B;表示上传的资产（在与IPS同步之后）会自动发布到交付系统。 虽然这对Dynamic Media是这样，但对YouTube并非如此。 要发布到YouTube，必须通过Experience Manager创作方式发布。
+现在，您将之前添加的标记关联到视频资产。 通过此过程可告知Experience Manager要发布到YouTube渠道的资产。
 
 >[!NOTE]
 >
->要从YouTube发布内容，Experience Manager使用&#x200B;**[!UICONTROL Publish到YouTube]**&#x200B;工作流，该工作流允许您监视进度并查看任何失败信息。
+>立即发布不会自动发布到YouTube。 设置 Dynamic Media 时，有两种发布选项可供选择：**[!UICONTROL 立即]**&#x200B;或&#x200B;**[!UICONTROL 激活时]**。
+>
+>**[!UICONTROL 立即发布]**&#x200B;意味着上传的资产（在与IPS同步之后）会自动发布到投放系统。 虽然这对Dynamic Media是这样，但对YouTube不是这样。 要发布到YouTube，必须通过Experience Manager Author发布。
+
+>[!NOTE]
+>
+>为了从YouTube发布内容，Experience Manager使用&#x200B;**[!UICONTROL 发布到YouTube]**&#x200B;工作流，该工作流允许您监视进度并查看任何失败信息。
 >
 >请参阅[监控视频编码和YouTube发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 >
@@ -411,7 +445,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 在页面的右上角，选择&#x200B;**[!UICONTROL 选择]**。
 1. 在视频属性页面的右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
-1. 在工具栏上，选择&#x200B;**[!UICONTROL 快速Publish]**。
+1. 在工具栏上，选择&#x200B;**[!UICONTROL 快速发布]**。
 
    另请参阅[在Experience Manager Sites中使用发布管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
@@ -451,7 +485,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!CAUTION]
 >
->如果直接从YouTube中删除视频，则Experience Manager不会察觉，并继续按照将视频发布到YouTube的方式运行。 始终通过Experience Manager从YouTube中取消发布视频资源。
+>如果直接从YouTube中删除视频，Experience Manager不会察觉到并继续按照将视频发布到YouTube的方式运行。 始终通过Experience Manager从YouTube中取消发布视频资源。
 
 >[!NOTE]
 >
@@ -501,7 +535,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    >由于来自[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)的&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的多个工作流配置，最终记录失败/错误会花费较长时间，例如：
    >
    >* Apache Sling作业队列配置
-   >* AdobeGranite工作流外部进程作业处理程序
+   >* Adobe Granite工作流外部进程作业处理程序
    >* Granite工作流超时队列
    >
    >您可以调整这些配置中的&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;属性。
@@ -533,7 +567,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    >由于[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)中的&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;存在多个工作流配置，最终记录错误消息会花费较长时间，例如：
    >
    >* Apache Sling作业队列配置
-   >* AdobeGranite工作流外部进程作业处理程序
+   >* Adobe Granite工作流外部进程作业处理程序
    >* Granite工作流超时队列
    >
    >您可以调整这些配置中的&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;属性。

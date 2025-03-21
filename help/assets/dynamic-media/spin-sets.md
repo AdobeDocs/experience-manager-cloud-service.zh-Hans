@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 8%
+source-wordcount: '2002'
+ht-degree: 9%
 
 ---
 
 # 旋转集{#spin-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
+        </td>
+    </tr>
+</table>
 
 旋转集模拟旋转对象以对其进行检查的真实行为。 旋转集允许从任何角度查看项目，从任何角度获取关键的可视详细信息。
 
@@ -38,7 +75,7 @@ ht-degree: 8%
 
 要快速启动并运行旋转集，请执行以下步骤：
 
-1. 可选。 [创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)，并将其应用到新的资产文件夹。
+1. 可选。[创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)，并将其应用到新的资产文件夹。
 
    批次集预设可以帮助您自动创建旋转集。
 
@@ -72,7 +109,7 @@ ht-degree: 8%
 
    选择旋转集并预览。 旋转旋转集。 您可以从左边栏下拉菜单中的&#x200B;**[!UICONTROL 查看器]**&#x200B;菜单中选择不同的查看器。
 
-1. [Publish旋转集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+1. [发布旋转集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    发布旋转集将激活URL和嵌入字符串。 此外，您必须[发布查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -96,7 +133,7 @@ ht-degree: 8%
 
 ### 为旋转集捕获图像的准则 {#guidelines-for-shooting-spin-set-images}
 
-以下是有关旋转集图像的一些最佳实践。 通常，旋转集中拥有的图像越多，图像旋转效果就越好。 但是，在集中包含许多图像也会增加加载图像所需的时间。 Experience Manager建议在拍摄旋转集中使用的图像时遵循以下准则：
+以下是有关旋转集图像的一些最佳实践。 通常，旋转集中拥有的图像越多，图像旋转效果就越好。 但是，在集中包含许多图像也会增加加载图像所需的时间。 Experience Manager建议在拍摄要用于旋转集的图像时遵循以下准则：
 
 * 至少，在一维旋转集中使用8-12个图像，在二维旋转集中使用16-24个图像。 要旋转360度，至少需要8张图像。 一维旋转集更常见，因为创建二维旋转集需要大量劳力。
 * 使用无损格式；建议使用TIFF和PNG。
@@ -138,7 +175,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >创建旋转集时，您可以更改旋转集缩略图，或允许Experience Manager根据旋转集中的资源自动选择缩略图。 要选择缩略图，请选择&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;并选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定希望Experience Manager从旋转集生成缩略图，请选择&#x200B;**[!UICONTROL 切换到自动缩略图]**。
+   >创建旋转集时，您可以更改旋转集缩略图，或允许Experience Manager根据旋转集中的资源自动选择缩略图。 要选择缩略图，请选择&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;并选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定让Experience Manager从旋转集生成缩略图，请选择&#x200B;**[!UICONTROL 切换到自动缩略图]**。
 
 1. 执行以下任一操作：
 
@@ -162,7 +199,7 @@ ht-degree: 8%
 
    通过将旋转集中的帧11拖动到新位置来重新对其进行排序。
 
-1. （可选）执行以下任一操作：
+1. （可选）执行下列任一操作：
 
    * 要删除图像，请选择该图像，然后选择&#x200B;**[!UICONTROL 删除资产]**。
 
@@ -232,6 +269,6 @@ ht-degree: 8%
 
 请参阅[预览资源](/help/assets/dynamic-media/previewing-assets.md)。
 
-## Publish旋转集 {#publishing-spin-sets}
+## 发布旋转集 {#publishing-spin-sets}
 
-查看[Publish资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+请参阅[发布资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
