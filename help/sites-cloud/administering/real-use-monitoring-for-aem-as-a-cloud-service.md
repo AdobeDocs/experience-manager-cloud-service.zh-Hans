@@ -4,9 +4,9 @@ description: 了解Real Use Monitoring (RUM) ，它是一项允许监控客户�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
+source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->客户端监视仅适用于具有AEM (Adobe Experience Manager)Cloud Service版本&#x200B;**2024.5.16461**&#x200B;及更高版本的客户。
+>客户端监视仅适用于具有AEM (Adobe Experience Manager) Cloud Service版本&#x200B;**2024.5.16461**&#x200B;及更高版本的客户。
 
 ## 概述 {#overview}
 
@@ -27,17 +27,17 @@ RUM (Real Use Monitoring)服务是一种性能监控技术，可实时监控网�
 
 ## 谁可以从实时监控服务中受益？ {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring可帮助客户和Adobe了解最终用户与AEM站点的交互方式。 “实时监控”可诊断性能问题，并衡量实验的有效性。 Real Use Monitoring通过取样保护访客的隐私 — 仅监控所有页面查看中的一小部分 — 并且不收集任何个人身份信息(PII)。
+Real Use Monitoring帮助客户和Adobe了解最终用户与AEM站点的交互方式。 “实时监控”可诊断性能问题，并衡量实验的有效性。 Real Use Monitoring通过取样保护访客的隐私 — 仅监控所有页面查看中的一小部分 — 并且不收集任何个人身份信息(PII)。
 
 ## Real Use监控服务和隐私 {#rum-service-and-privacy}
 
-AEM中的Real Use Monitoring服务可保留访客隐私并最大限度地减少数据收集。 作为访客，这意味着您正在访问或可供访问Adobe的网站不收集任何个人信息。
+AEM中的实时监控服务可保护访客隐私并最大程度地减少数据收集。 作为访客，这意味着您正在访问或可供访问Adobe的网站不收集任何个人信息。
 
 作为站点操作员，无需其他选择加入即可通过此功能启用监控。 最终用户无需接受额外的弹出窗口或同意表单即可启用RUM。
 
 ## Real Use Monitoring服务数据采样 {#rum-service-data-sampling}
 
-传统的Web分析解决方案会尝试收集每位访客的数据。 AEM Real Use Monitoring (RUM)服务仅从一小部分页面查看中捕获信息。 此服务旨在进行取样和匿名处理，而不是取代分析。 默认情况下，页面的取样比率为1:100。 站点操作员此时无法提高或降低采样率。 为了准确估计总流量，每100次页面查看会从1中收集数据，从而为您提供整体流量的可靠近似值。
+传统的Web分析解决方案会尝试收集每位访客的数据。 AEM的Real Use Monitoring (RUM)服务仅从一小部分页面查看中捕获信息。 此服务旨在进行取样和匿名处理，而不是取代分析。 默认情况下，页面的取样比率为1:100。 站点操作员此时无法提高或降低采样率。 为了准确估计总流量，每100次页面查看会从1中收集数据，从而为您提供整体流量的可靠近似值。
 
 在决定是否收集数据时，它是基于逐页查看作出的，几乎不可能跟踪多个页面之间的交互。 从设计角度来看，RUM不了解访客或会话，只了解页面查看次数。
 
@@ -55,11 +55,11 @@ Real Use Monitoring服务旨在防止收集个人身份信息。 RUM收集的整
 * 页面加载序列中特定事件的检查点或名称。 或者，以访客身份与其交互
 * 用户与上述检查点交互的DOM元素的源或标识符。 例如，它可以是图像
 * 针对上述检查点，与用户交互的外部页面或资源的目标或链接。 例如：`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* 核心Web虚拟(CWV)性能指标，包括描述访客体验质量的最大内容绘制(LCP)、首次输入延迟(FID)、累积布局偏移(CLS)和到首次字节的时间(TTFB)。
+* [核心Web虚拟(CWV)](https://web.dev/articles/lcp)性能指标[最大内容绘制(LCP)](https://web.dev/articles/lcp)、[交互到下一绘制(INP)](https://web.dev/articles/inp)以及描述访客体验质量的[累积布局偏移(CLS)](https://web.dev/articles/cls)。
 
 ## Real Use Monitoring如何为客户工作 {#how-rum-works-for-a-customer}
 
-Real Use Monitoring可自动监控客户端流量。 作为Adobe客户，您无需执行任何其他步骤，因为此服务已无缝集成到您的现有设置中。 随着实时监控(RUM)服务正式推出，您将自动从此新功能中受益。 Real Use Monitoring服务目前不会公开任何面向客户的指标以进行监控。 我们正在努力尽快为您提供此功能。
+Real Use Monitoring可自动监控客户端流量。 作为Adobe客户，您无需执行任何其他步骤，因为此服务已无缝集成到您现有的设置中。 随着实时监控(RUM)服务正式推出，您将自动从此新功能中受益。 Real Use Monitoring服务目前不会公开任何面向客户的指标以进行监控。 我们正在努力尽快为您提供此功能。
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
@@ -107,6 +107,6 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **如何选择退出？**
 
-   Adobe建议您使用实时监控(RUM)，因为它具有显着优势，并且允许Adobe通过提高网站性能来帮助您优化数字体验。 该服务旨在实现无缝连接，对网站的性能没有影响。
+   鉴于实时监控(RUM)具有显着优势，Adobe建议您使用实时监控(RUM)，这样可让Adobe帮助您通过提高网站性能来优化数字体验。 该服务旨在实现无缝连接，对网站的性能没有影响。
 
    选择退出可能意味着错失了改进网站流量参与度的机会。 但是，如果您遇到任何问题，请联系Adobe支持部门。
