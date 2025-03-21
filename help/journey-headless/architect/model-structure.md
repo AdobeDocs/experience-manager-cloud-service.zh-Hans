@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 99%
+source-wordcount: '636'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 在 [AEM Headless 内容作者历程](overview.md)的开头，[使用 AEM 对 Headless 进行内容建模的基础知识](basics.md)涵盖了与针对 Headless 进行创作相关的基本概念和术语。
 
-本文基于这些内容编写，以便您了解如何为 AEM Headless 项目创建您自己的内容片段模型。
+本文基于这些原则之上，以便您了解如何为AEM Headless项目创建自己的内容片段模型。
 
 ## 目标 {#objective}
 
@@ -42,17 +42,33 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 创建内容片段模型 {#creating-content-fragment-models}
 
-之后，可以创建内容片段模型并定义结构。可以在&#x200B;**工具** > **常规** > **内容片段模型**&#x200B;下完成此操作。
+然后，可以创建内容片段模型并定义结构。
 
-![工具中的内容片段模型](assets/cfm-tools.png)
+1. 在内容片段控制台中，为内容片段模型选择面板。
 
-选择此选项后，您导航到模型的位置并选择&#x200B;**创建**。您可以在此处输入各种关键详细信息。
+1. 导航到适合您的配置或子配置的文件夹。
 
-默认情况下，**启用模型**&#x200B;选项已激活。这意味着，您的模型一经保存即可立即使用（用于创建内容片段）。如果需要，您可以禁用此选项 - 可以稍后启用（或禁用）现有模型。
+1. 使用&#x200B;**创建**&#x200B;打开&#x200B;**新内容片段模型**&#x200B;对话框。
 
-![创建内容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![标题和描述](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-使用&#x200B;**创建**&#x200B;进行确认，然后可以&#x200B;**打开**&#x200B;您的模型以开始定义结构。
+1. 完成详细信息
+
+1. 使用&#x200B;**创建**&#x200B;保存空模型，或使用&#x200B;**创建并打开**。
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## 定义内容片段模型 {#defining-content-fragment-models}
 
@@ -60,13 +76,13 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![空白模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
-那么 - 该如何操作？
+那么——该如何操作？
 
 您可以将&#x200B;**数据类型**&#x200B;的实例拖到左侧空白区域，您已定义模型！
 
 ![定义字段](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-在添加数据类型后，您需要为该字段定义&#x200B;**属性。**&#x200B;这些都取决于将使用的类型。例如：
+在添加数据类型后，您需要为该字段定义&#x200B;**属性。**&#x200B;这些属性取决于所使用的类型。 例如：
 
 ![数据属性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -80,7 +96,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->请参阅“其他资源 – 内容片段模型”。
+>请参阅“其他资源——内容片段模型”。
 
 ## 管理内容片段模型 {#managing-content-fragment-models}
 
@@ -88,8 +104,8 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 管理内容片段模型涉及：
 
-* 启用（或禁用）内容片段模型 – 这使作者在创建内容片段时能够使用它们。
-* 删除 - 始终需要执行删除操作，但您需要注意删除已用于内容片段的模型，特别是已发布的片段。
+* 启用（或禁用）内容片段模型——这使作者在创建内容片段时能够使用它们。
+* 删除 — 始终需要删除，但您需要了解如何删除已用于内容片段的模型；尤其是已发布的片段。
 
 ## 发布 {#publishing}
 
@@ -99,7 +115,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->如果作者尝试发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
+>如果作者尝试发布的内容片段尚未发布模型，则会显示一个选择列表来指示该行为，并且模型会与片段一起发布。
 
 模型一经发布，就会&#x200B;*锁定*&#x200B;为作者的只读架构。这旨在阻止进行可能导致现有 GraphQL 架构和查询出错的更改，尤其是在发布环境中。它在控制台中由&#x200B;**已锁定**&#x200B;指示。
 
@@ -113,7 +129,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [创作概念](/help/sites-cloud/authoring/author-publish.md)
 
-* [基本处理](/help/sites-cloud/authoring/basic-handling.md) – 此页面主要基于&#x200B;**Sites**&#x200B;控制台，但许多/大多数功能也用于在&#x200B;**常规**&#x200B;控制台下导航到并操作&#x200B;**内容片段模型**。
+* [基本处理](/help/sites-cloud/authoring/basic-handling.md)——此页面主要基于&#x200B;**Sites**&#x200B;控制台，但许多/大多数功能也用于在&#x200B;**常规**&#x200B;控制台下导航到并操作&#x200B;**内容片段模型**。
 
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 

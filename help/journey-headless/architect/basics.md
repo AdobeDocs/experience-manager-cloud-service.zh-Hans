@@ -5,10 +5,10 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 100%
+source-wordcount: '943'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 在 [AEM Headless 内容架构师历程](overview.md)的开头，[简介](introduction.md)涵盖了与针对 Headless 进行内容建模相关的基本概念和术语。
 
-本文基于这些内容编写，以便您了解如何对 AEM Headless 项目进行内容建模。
+本文基于这些原则之上，以便您了解如何为AEM Headless项目构建内容模型。
 
 ## 目标 {#objective}
 
@@ -87,9 +87,12 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 * 日期和时间
 * 枚举
 * 标记
-* 内容引用
 * 片段引用
+* 片段引用 (UUID)
+* 内容引用
+* 内容引用 (UUID)
 * JSON 对象
+* 选项卡占位符
 
 >[!NOTE]
 >
@@ -99,11 +102,11 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 两种数据类型都提供了对特定片段之外的内容的引用：
 
-* **内容引用**
-这提供了对任意类型的其他内容的简单引用。
+* **内容引用**/**内容引用(UUID)**
+这提供了对任何类型其他内容的简单引用。
 例如，您可以在指定位置引用图像。
 
-* **片段引用**
+* **片段引用**/**片段引用(UUID)**
 这会提供对其他内容片段的引用。
 这种类型的引用用于创建嵌套内容，引入对内容进行建模所需的关系。
 数据类型可配置为允许片段作者执行以下操作：
@@ -113,6 +116,10 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 >[!NOTE]
 >
 >还可通过在文本块中使用链接而创建临时引用。
+
+>[!NOTE]
+>
+>在编辑器中，UUID引用指定被引用资源的路径；在内部，此类引用将保存为引用资源的通用唯一ID (UUID)。
 
 ## 结构层次（嵌套片段） {#levels-of-structure-nested-fragments}
 
