@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4095'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
    * **直接链接：**
 使用提供的URL直接链接到视频。 在营销网站上以适当的方式超链接它。
    * **嵌入视频：**
-复制提供的嵌入代码并将其粘贴到您希望视频显示的网页的HTML中。 这样，视频就可以直接在您的网站上播放。
+复制提供的嵌入代码并将其粘贴到您希望显示视频的网页的HTML中。 这样，视频就可以直接在您的网站上播放。
 
 想要了解更多信息？ 转到[视频](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
@@ -410,7 +410,7 @@ Dynamic Media中的视频配置文件可帮助实现高效的视频管理、一�
    * 如果您将AEM用作Web内容管理(WCM)系统，则可以直接将视频添加到网页。
    * 如果您使用的是第三方WCM系统，则可以使用URL或嵌入代码在网页上链接或嵌入视频。
 
-想要了解更多信息？ 转到[关于Dynamic Media中视频的多重字幕和音轨支持](/help/assets/dynamic-media/video.md#about-msma)或观看[向视频添加多重字幕和音轨](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play)（1分钟41秒）。
+想要了解更多信息？ 转到[关于Dynamic Media中视频的多重字幕和音轨支持](/help/assets/dynamic-media/video.md#about-msma)。
 
 
 ## 将资产交付给客户
