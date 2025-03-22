@@ -4,7 +4,7 @@ description: 了解 [!DNL AEM Assets View]. [!DNL AEM Assets View] UI的UI可扩
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
+source-git-commit: 1927a1147e4b33d6173f08953d64b5a91d3473d7
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
