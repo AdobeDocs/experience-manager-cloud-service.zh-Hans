@@ -1,15 +1,15 @@
 ---
 title: 为AEM as a Cloud Service开发AEM Commerce
-description: 了解如何使用AEM项目原型生成支持AEM的commerce项目。 了解如何使用AEM as a Cloud Service SDK构建项目并将项目部署到本地开发环境。
+description: 了解如何使用AEM项目原型生成支持商务的AEM项目。 了解如何使用AEM as a Cloud Service SDK构建项目并将项目部署到本地开发环境。
 topics: Commerce, Development
 feature: Commerce Integration Framework
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # 为AEM as a Cloud Service开发AEM Commerce {#develop}
 
-根据适用于AEM的Commerce integration framework(CIF)来开发AEM as a Cloud Service Commerce项目，遵循与AEM as a Cloud Service上的其他AEM项目相同的规则和最佳实践。 请先查看以下内容：
+基于适用于AEM的Commerce integration framework (CIF)开发AEM as a Cloud Service Commerce项目时，遵循与AEM as a Cloud Service上的其他AEM项目相同的规则和最佳实践。 请先查看以下内容：
 
 - [AEM 项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)
 - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
@@ -30,9 +30,9 @@ ht-degree: 4%
 
 建议使用本地开发环境来处理CIF项目。 为AEM as a Cloud Service提供的CIF加载项也可用于本地开发。 可从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载。
 
-CIF加载项作为Sling功能存档提供。 软件分发门户上可用的zip文件包括两个Sling功能存档文件，一个用于AEM创作，一个用于AEM发布实例。
+CIF加载项是作为Sling功能存档提供的。 软件分发门户上提供的zip文件包括两个Sling功能存档文件，一个用于AEM创作，一个用于AEM发布实例。
 
-**是AEM as a Cloud Service的新用户？**&#x200B;查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hans)。
+**是AEM as a Cloud Service的新用户？**&#x200B;查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-hans)。
 
 ### 所需的软件
 
@@ -47,7 +47,7 @@ CIF加载项作为Sling功能存档提供。 软件分发门户上可用的zip�
 
 ### 访问CIF加载项
 
-可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)以zip文件的形式下载CIF加载项。 zip文件包含CIF加载项作为&#x200B;**Sling功能存档**，它不是AEM包。 可以通过AEM as a Cloud Service许可证访问SDK列表。
+可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)以zip文件的形式下载CIF加载项。 zip文件包含CIF加载项作为&#x200B;**Sling功能存档**，它不是AEM包。 可使用SDK许可证访问AEM as a Cloud Service列表。
 
 >[!TIP]
 >
@@ -55,10 +55,10 @@ CIF加载项作为Sling功能存档提供。 软件分发门户上可用的zip�
 
 ### 本地设置
 
-对于使用AEM as a Cloud Service SDK进行本地CIF加载项开发，请执行以下步骤：
+对于使用CIF SDK进行本地AEM as a Cloud Service加载项开发，请执行以下步骤：
 
 1. 获取最新的AEM as a Cloud Service SDK
-1. 解压缩AEM .jar以便创建`crx-quickstart`文件夹，运行：
+1. 解压缩AEM .jar，以便创建`crx-quickstart`文件夹，运行：
 
    ```bash
    java -jar <jar name> -unpack
@@ -67,7 +67,7 @@ CIF加载项作为Sling功能存档提供。 软件分发门户上可用的zip�
 1. 创建`crx-quickstart/install`文件夹
 1. 将CIF加载项的正确Sling功能存档文件复制到`crx-quickstart/install`文件夹中。
 
-   CIF加载项zip文件包含两个Sling功能存档`.far`文件。 请确保为AEM Author或AEM Publish使用正确的库，具体取决于您计划如何运行本地AEM as a Cloud Service SDK。
+   CIF加载项zip文件包含两个Sling功能存档`.far`文件。 请确保为AEM创作或AEM发布使用正确的编辑器，具体取决于您计划如何运行本地AEM as a Cloud Service SDK。
 
 1. 创建一个名为`COMMERCE_ENDPOINT`的本地OS环境变量，该变量包含Adobe Commerce GraphQL端点。
 
@@ -101,17 +101,17 @@ CIF加载项作为Sling功能存档提供。 软件分发门户上可用的zip�
 
 >[!NOTE]
 >
->确保在步骤5中设置的同一终端窗口中启动AEM as a Cloud Service SDK。 如果在单独的终端窗口中或通过双击.jar文件启动它，请确保环境变量可见。
+>确保在步骤5中设置的同一终端窗口中启动AEM as a Cloud Service SDK 。 如果在单独的终端窗口中或通过双击.jar文件启动它，请确保环境变量可见。
 
 通过OSGI控制台验证设置： `http://localhost:4502/system/console/osgi-installer`。 该列表应包含与功能模型文件中定义的CIF附加组件相关包、内容包和OSGI配置。
 
 ## 项目设置 {#project}
 
-可通过两种方式Bootstrap您的CIF项目以用于AEM as a Cloud Service。
+可通过两种方式为AEM as a Cloud ServiceBootstrapCIF项目。
 
 ### 使用AEM项目原型
 
-[AEM项目原型](https://github.com/adobe/aem-project-archetype)是Bootstrap预配置项目以开始使用CIF的主要工具。 CIF核心组件和所有必需的配置都可以在生成的项目中包含一个额外选项。
+[AEM项目原型](https://github.com/adobe/aem-project-archetype)是Bootstrap预配置项目以开始使用CIF的主要工具。 CIF核心组件和所有必需的配置都可以通过一个附加选项包含在生成的项目中。
 
 >[!TIP]
 >
@@ -166,7 +166,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
 
 ### 使用AEM Venia Reference Store
 
-启动CIF项目的第二个选项是克隆并使用[AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是一个示例参考店面应用程序，用于演示如何将CIF核心组件用于AEM。 它旨在作为一组最佳实践示例以及开发您自己的功能的潜在起点。
+启动CIF项目的第二个选项是克隆并使用[AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia参考存储区是一个示例参考存储区应用程序，用于演示如何将CIF核心组件用于AEM。 它旨在作为一组最佳实践示例以及开发您自己的功能的潜在起点。
 
 要开始使用Venia引用存储，请克隆Git存储库并开始根据您的需求自定义项目。
 

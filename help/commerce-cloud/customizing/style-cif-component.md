@@ -1,9 +1,9 @@
 ---
 title: 样式Adobe Experience Manager CIF核心组件
-description: 了解如何设置Adobe Experience Manager (AEM) CIF核心组件的样式。 本教程介绍了如何使用客户端库或clientlibs为AEM Commerce实施部署和管理CSS和JavaScript。 本教程还介绍如何将ui.frontend模块和webpack项目集成到端到端构建过程中。
+description: 了解如何为Adobe Experience Manager (AEM) CIF核心组件设置样式。 本教程介绍了如何使用客户端库或clientlibs为AEM Commerce实施部署和管理CSS和JavaScript。 本教程还介绍如何将ui.frontend模块和webpack项目集成到端到端构建过程中。
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -12,7 +12,7 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # 样式AEM CIF核心组件 {#style-aem-cif-core-components}
 
-[CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心组件](https://github.com/adobe/aem-core-cif-components)的参考代码库。 在本教程中，您将检查Venia参考项目并了解AEM CIF核心组件使用的CSS和JavaScript的组织方式。 您还可以使用CSS创建样式以更新&#x200B;**Product Teaser**&#x200B;组件的默认样式。
+[CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心组件](https://github.com/adobe/aem-core-cif-components)的参考代码库。 在本教程中，您将检查Venia参考项目，并了解AEM CIF核心组件使用的CSS和JavaScript的组织方式。 您还可以使用CSS创建样式以更新&#x200B;**Product Teaser**&#x200B;组件的默认样式。
 
 >[!TIP]
 >
-> 在启动您自己的商务实现时使用[AEM项目原型](https://github.com/adobe/aem-project-archetype)。
+> 在启动您自己的Commerce实现时使用[AEM项目原型](https://github.com/adobe/aem-project-archetype)。
 
 ## 您将构建的内容
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 负责呈现店面主题/样式的CSS和JavaScript在AEM中由[客户端库](/help/implementing/developing/introduction/clientlibs.md)或简称为“clientlibs”管理。 客户端库提供了一种机制，用于在项目代码中整理CSS和JavaScript，然后将其交付到页面上。
 
-通过添加和覆盖这些客户端库管理的CSS，可以将特定于品牌的样式应用于AEM CIF核心组件。 了解如何构建客户端库并将其包含在页面上至关重要。
+通过添加和覆盖这些客户端库管理的CSS，可以将特定于品牌的样式应用到AEM CIF核心组件。 了解如何构建客户端库并将其包含在页面上至关重要。
 
 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)是一个专用的[webpack](https://webpack.js.org/)项目，用于管理项目的所有前端资源。 此Webpack允许前端开发人员使用任意数量的语言和技术，如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等。
 
@@ -130,9 +130,9 @@ ht-degree: 0%
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Inspect终端输出。 请注意，Maven命令运行了多个NPM脚本，包括`npm run build`。 `npm run build`命令在`package.json`文件中定义，它编译了webpack项目并触发客户端库生成。
+   检查终端输出。 请注意，Maven命令运行了多个NPM脚本，包括`npm run build`。 `npm run build`命令在`package.json`文件中定义，它编译了webpack项目并触发客户端库生成。
 
-1. Inspect文件`ui.frontend/dist/clientlib-site/site.css`：
+1. 检查文件`ui.frontend/dist/clientlib-site/site.css`：
 
    ![已编译站点CSS](../assets/style-cif-component/comiled-site-css.png)
 
@@ -142,7 +142,7 @@ ht-degree: 0%
    >
    > 此类文件会从源代码管理中忽略，因为它们应在构建期间生成。
 
-1. Inspect文件`ui.frontend/clientlib.config.js`。
+1. 检查文件`ui.frontend/clientlib.config.js`。
 
    ```js
    /* clientlib.config.js*/
@@ -179,13 +179,13 @@ ht-degree: 0%
 
    这些客户端库不由`ui.frontend`模块管理。 这些客户端库包含由Adobe提供的CSS和JavaScript依赖项。 这些客户端库的定义在每个文件夹下的`.content.xml`文件中。
 
-   **clientlib-base** — 一个空客户端库，它仅嵌入[AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的必需依赖项。 类别为`venia.base`。
+   **clientlib-base** — 一个空客户端库，它仅嵌入[AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)中的必要依赖项。 类别为`venia.base`。
 
-   **clientlib-cif** — 一个空客户端库，它仅嵌入[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)中的必需依赖项。 类别为`venia.cif`。
+   **clientlib-cif** — 一个空客户端库，它仅嵌入[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)中的必要依赖项。 类别为`venia.cif`。
 
-   **clientlib-grid** — 包含用于启用AEM响应式网格功能的CSS。 使用AEM网格可在AEM编辑器中启用[布局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md)，并使内容作者能够调整组件大小。 类别为`venia.grid`且已嵌入到`venia.base`库中。
+   **clientlib-grid** — 包含用于启用AEM的响应式网格功能的CSS。 使用AEM网格会在AEM编辑器中启用[布局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md)，并使内容作者能够调整组件大小。 类别为`venia.grid`且已嵌入到`venia.base`库中。
 
-1. Inspect`ui.apps/src/main/content/jcr_root/apps/venia/components/page`下的文件`customheaderlibs.html`和`customfooterlibs.html`：
+1. 检查`ui.apps/src/main/content/jcr_root/apps/venia/components/page`下的文件`customheaderlibs.html`和`customfooterlibs.html`：
 
    ![自定义页眉和页脚脚本](../assets/style-cif-component/custom-header-footer-script.png)
 
@@ -228,7 +228,7 @@ ht-degree: 0%
 
    ![查看已发布的项目](../assets/style-cif-component/view-as-published.png)
 
-   此页面将打开，但不加载任何AEM创作JavaScript，因为它将显示在已发布的网站上。 请注意，已附加URL的查询参数`?wcmmode=disabled`。 在开发CSS和JavaScript时，最好使用此参数来简化页面，而无需使用AEM创作中的任何内容。
+   此页面打开时不会加载任何AEM作者JavaScript，因为它将显示在已发布的网站上。 请注意，已附加URL的查询参数`?wcmmode=disabled`。 在开发CSS和JavaScript时，最好使用此参数来简化页面，而无需AEM创作中的任何内容。
 
 1. 查看页面源，您应该能够识别包含了多个客户端库：
 
@@ -289,7 +289,7 @@ ht-degree: 0%
 
 ## 本地Webpack开发 {#local-webpack-development}
 
-在上一个练习中，对`ui.frontend`模块中的Sass文件进行了更新，然后在执行Maven构建后，将更改部署到AEM。 接下来，您将考虑使用webpack-dev-server来快速开发前端样式。
+在上一个练习中，对`ui.frontend`模块中的Sass文件进行了更新，然后在执行Maven构建后，这些更改将部署到AEM。 接下来，您将考虑使用webpack-dev-server来快速开发前端样式。
 
 webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript，但允许开发人员修改`ui.frontend`模块中的样式和JavaScript。
 
@@ -301,7 +301,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
    ![静态HTML文件](../assets/style-cif-component/static-index-html.png)
 
-1. 覆盖`index.html`和&#x200B;**粘贴**&#x200B;上一步中复制的HTML的内容。
+1. 覆盖上一步中复制的`index.html`和&#x200B;**粘贴** HTML的内容。
 
 1. 查找`clientlib-site.min.css`、`clientlib-site.min.js`和&#x200B;**删除它们的“包含”**。
 
@@ -318,7 +318,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
    </body>
    ```
 
-   这些“include”已删除，因为它们表示由`ui.frontend`模块生成的CSS和JavaScript的编译版本。 将其他客户端库保留为将从正在运行的AEM实例代理的客户端库。
+   这些“include”已删除，因为它们表示由`ui.frontend`模块生成的CSS和JavaScript的编译版本。 将保留其他客户端库，因为将从正在运行的AEM实例代理这些客户端库。
 
 1. 打开新的终端窗口并导航到`ui.frontend`文件夹。 运行命令`npm start`：
 
@@ -450,7 +450,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
 ## 查看更新的产品Teaser {#view-updated-product-teaser}
 
-在将项目的代码部署到AEM后，您现在应该能够查看产品Teaser的更改。
+在将项目代码部署到AEM后，您现在应该能够查看产品Teaser的更改。
 
 1. 返回浏览器并刷新主页： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。 您应该会看到应用的已更新产品Teaser样式。
 
@@ -466,11 +466,11 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
 在部署新的CSS文件或JavaScript文件（或同时部署两者）时，请务必确保浏览器不会提供陈旧文件。 您可以通过清除浏览器缓存或启动新的浏览器会话来消除此潜在问题。
 
-AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后，会提供旧文件。 您可以使用[Rebuild Client Libraries工具](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)手动使AEM客户端库缓存失效。 如果您怀疑AEM缓存了旧版本的客户端库，则&#x200B;*使缓存失效是首选方法。 重建库效率低下且耗时。*
+AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后，会提供旧文件。 您可以使用[重新生成客户端库工具](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)手动使AEM的客户端库缓存失效。 如果您怀疑AEM缓存了旧版本的客户端库，则&#x200B;*使缓存失效是首选方法。 重建库效率低下且耗时。*
 
 ## 恭喜 {#congratulations}
 
-您完成了第一个AEM CIF核心组件的样式设计，并且使用了webpack开发服务器！
+您完成了首个AEM CIF核心组件的样式设计，并且使用了webpack开发服务器！
 
 ## 奖励质询 {#bonus-challenge}
 

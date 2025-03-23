@@ -1,7 +1,7 @@
 ---
 title: 创建App Builder应用程序
 description: 了解如何创建和引导新的App Builder应用程序。
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
@@ -9,7 +9,7 @@ level: Beginner
 kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg
 exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%

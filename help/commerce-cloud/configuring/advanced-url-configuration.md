@@ -2,7 +2,7 @@
 title: 高级URL配置
 description: 了解如何自定义产品和类别页面的URL。 自定义允许实施优化搜索引擎的URL并促进发现。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须在Adobe Experience Manager (AEM)as a Cloud Service的许多项目中解决SEO问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)以了解更多信息。
+> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须解决Adobe Experience Manager (AEM) as a Cloud Service上的许多项目中的SEO问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)以了解更多信息。
 
 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)提供了高级配置以自定义产品和类别页面的URL。 许多实施都会自定义这些URL，以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置[Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的`UrlProvider`服务和功能以自定义产品和类别页面的URL。
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 自AEM CIF核心组件版本2.0.0开始，URL提供程序配置仅提供预定义的URL格式，而不提供1.x版本中已知的自由文本可配置格式。 此外，使用选择器在URL中传递数据的方法已替换为后缀。
+> 自AEM CIF核心组件版本2.0.0开始，URL提供程序配置仅提供预定义的URL格式，而不是1.x版本中已知的自由文本可配置格式。 此外，使用选择器在URL中传递数据的方法已替换为后缀。
 
 ### 产品页面URL格式 {#product}
 
@@ -83,11 +83,11 @@ ht-degree: 2%
 
 可以更改每个商店的&#x200B;_CIF URL提供程序配置_&#x200B;设置的系统范围类别和产品页面URL格式。
 
-在CIF配置中，编辑器可以选择替代产品或类别页面URL格式。 如果未在该处选择任何内容，则实施将回退到系统范围配置。
+在CIF配置中，编辑者可以选择替代产品或类别页面URL格式。 如果未在该处选择任何内容，则实施将回退到系统范围配置。
 
 更改实时网站的URL格式可能会对网站的自然流量产生负面影响。 请参阅下面的[最佳实践](#best-practices)，并提前仔细规划更改URL格式。
 
-CIF配置中的![URL格式](assets/store-specific-url-formats.png)
+CIF配置中的![Url格式](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ CIF配置中的![URL格式](assets/store-specific-url-formats.png)
 
 `UrlProvider`预配置为生成指向创作层实例上特定类别和产品页面的深层链接。 对于编辑者而言，这项功能非常有用。编辑者使用预览模式浏览站点，导航到特定产品或类别页面，然后切换回编辑模式以编辑页面。
 
-另一方面，在发布层实例中，目录页面URL应保持稳定，以免在搜索引擎排名方面失去优势。 由于该发布层，默认情况下，实例不会呈现指向特定目录页面的深层链接。 若要更改此行为，可以将&#x200B;_CIF URL提供程序特定页面策略_&#x200B;配置为始终生成特定页面URL。
+另一方面，在发布层实例中，目录页面URL应保持稳定，以免在搜索引擎排名方面失去优势。 由于该发布层，默认情况下，实例不会呈现指向特定目录页面的深层链接。 要更改此行为，可以将&#x200B;_CIF URL提供程序特定页面策略_&#x200B;配置为始终生成特定页面URL。
 
 ### 多个目录页面 {#multiple-product-pages}
 
@@ -215,7 +215,7 @@ CIF配置中的![URL格式](assets/store-specific-url-formats.png)
 
 ### 与AEM Dispatcher相结合 {#dispatcher}
 
-使用带有`mod_rewrite`模块的AEM Dispatcher HTTP Server也可以实现URL重写。 [AEM项目原型](https://github.com/adobe/aem-project-archetype)提供了一个引用AEM Dispatcher配置，该配置已包含所生成大小的基本[重写规则](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)。
+使用带有`mod_rewrite`模块的AEM Dispatcher HTTP Server也可以实现URL重写。 [AEM项目原型](https://github.com/adobe/aem-project-archetype)提供了一个参考AEM Dispatcher配置，该配置已包含所生成大小的基本[重写规则](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)。
 
 ## 最佳实践 {#best-practices}
 
@@ -229,7 +229,7 @@ CIF核心组件使用SKU作为所有组件中的主要标识符。 如果产品�
 
 _**使用包含类别上下文的产品页面URL格式。**_
 
-CIF URL提供程序的某些功能仅在使用产品URL格式时可用，这些格式对类别上下文进行编码，如类别`url_key`或类别`url_path`。 即使新存储可能不需要这些功能，一开始使用这些URL格式之一有助于减少未来的迁移工作。
+CIF URL提供程序的某些功能仅适用于使用对类别上下文进行编码的产品URL格式，如类别`url_key`或类别`url_path`。 即使新存储可能不需要这些功能，一开始使用这些URL格式之一有助于减少未来的迁移工作。
 
 _**URL长度与编码信息之间的平衡。**_
 
@@ -243,7 +243,7 @@ _**URL长度与编码信息之间的平衡。**_
 
 另一方面，搜索引擎需要时间来使用新的URL格式重新爬网所有目录页面。 为了支持此过程并改善最终用户体验，建议提供可将用户从旧URL转发到新URL的重定向。
 
-其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取由暂存环境和生产环境的CIF产品Sitemap生成器](../../overview/seo-and-url-management.md)生成的[产品Sitemap，并使用它们创建[Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)。 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
+其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取由CIF产品Sitemap生成器](../../overview/seo-and-url-management.md)为暂存环境和生产环境生成的[产品Sitemap，并使用它们创建[Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)。 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
 
 ## 示例 {#example}
 

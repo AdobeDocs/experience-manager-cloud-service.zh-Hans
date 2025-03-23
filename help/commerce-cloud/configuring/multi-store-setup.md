@@ -2,7 +2,7 @@
 title: Commerce多商店设置
 description: 了解如何将多个商店视图从Adobe Commerce映射到Adobe Experience Manager。 这允许项目支持多租户和多语言用例。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -28,9 +28,9 @@ Adobe Experience Manager (AEM) CIF核心组件可用于多个AEM站点结构，�
 
 Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration framework配合使用，以全局方式跨地区和区域管理站点。
 
-建议的设置是在AEM网站与Adobe Commerce商店视图之间使用1:1关系。
+建议的设置是在AEM网站与Adobe Commerce商店视图之间使用1:1的关系。
 
-要将AEM站点和AEM CIF核心组件连接到专用存储视图，请执行以下操作：
+要将AEM站点和AEM CIF核心组件连接到专用商店视图，请执行以下操作：
 
 ## 配置 {#configuration}
 
@@ -38,7 +38,7 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
 2. 确保AEM与Adobe Commerce之间的连接正常。
 
-3. 按照以下步骤创建CIFCloud Service配置的子配置：
+3. 按照以下步骤创建CIF Cloud Service配置的子配置：
 
    * 在AEM中，转到“工具”>“常规”>[配置浏览器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 选择您创建的基本配置

@@ -2,7 +2,7 @@
 title: 用关联的AEM内容扩充产品数据
 description: 了解营销人员如何通过向产品页面动态添加营销内容，利用Adobe Experience Manager中的关联内容扩充产品数据。 这为营销人员提供了多种可能性，使他们能够使用图像和视频等附加内容定位特定产品页面。
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%
