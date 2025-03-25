@@ -5,7 +5,7 @@ feature: Integration
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 66%
@@ -29,10 +29,9 @@ ht-degree: 66%
 
 | Campaign版本 | 与 AEMaaCS 集成 |
 |---|---|
-| [Campaign Classicv7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不受支持 |
+| [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不受支持 |
 | [Campaign v8（客户端控制台）](https://experienceleague.adobe.com/docs/campaign-v8.html) | 不受支持 |
-| Campaign Web 用户界面 | 支持。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
-
+| Campaign Web 用户界面 | 支持。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## 与 Adob&#x200B;e Campaign Standard 集成 {#acs}
 
