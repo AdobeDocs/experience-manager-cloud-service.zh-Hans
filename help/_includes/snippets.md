@@ -1,8 +1,8 @@
 ---
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -18,7 +18,7 @@ ht-degree: 94%
 ## 另请参阅 {#see-also}
 
 * [创建 AEM 自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [将 AEM 自适应表单添加到 AEM Site 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将 AEM 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将主题应用于 AEM 自适应表单](/help/forms/using-themes-in-core-components.md)
 * [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [在 AEM 自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
@@ -59,17 +59,17 @@ ht-degree: 94%
 
 ## 通用编辑器{#universal-editor-see-also}
 
-* [使用通用编辑器创建您的第一个表单](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [向Forms添加动态行为](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [使用通用编辑器创建第一个表单](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [向表单添加动态行为](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [发布和部署Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [设计精美的Forms：样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [发布和部署表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [设计精美的表单：样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [构建自定义表单组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [保护您的Forms免受垃圾邮件的侵扰：添加reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [保护您的表单免受垃圾邮件的侵害：添加 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 另请参阅 {#see-more-forms-eds}
 
-* [适用于 AEM Forms 的 Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
+* [Edge Delivery Services for AEM Forms 快速入门](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
 * [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
 * [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
@@ -155,9 +155,9 @@ ht-degree: 94%
 ## Forms Portal{#forms-portal-see-also}
 
 * [Forms Portal 组件简介](/help/forms/configure-forms-portal.md)
-* [在 Site 页面上列出您的 Form ](/help/forms/list-forms-on-sites-page.md)
+* [在 Sites 页面上列出您的 Form ](/help/forms/list-forms-on-sites-page.md)
 * [将 Form 保存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
-* [将 Form 链接添加到 Site 页面](/help/forms/add-form-link-to-aem-sites-page.md)
+* [将 Form 链接添加到 Sites 页面](/help/forms/add-form-link-to-aem-sites-page.md)
 
 ## Marketo Engage{#marketo-engage-see-also}
 
@@ -175,15 +175,15 @@ ht-degree: 94%
 >为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
 >
 >**Cloud Manager IP 允许列表**
->52.254.106.192/28，20.186.185.181，52.254.106.240/28，52.254.107.128/28，52.254.105.192/28，52.254.106.176/28，20.186.185.227，52.254.106.144/28，52.254.107.64/28，20.186.185.239，20.22.83.112，52.254.107.80/28，52.254.107.144/28，52.254.106.224/28，20.14.241.153，52.254.107.0/28，52.254.107.32/28，52.254.106.208/28，40.70.154.136/29，52.254.106.160/28，52.254.107.16/28，52.254.106.0/28，4.152.211.251
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## 添加 Cloud Manager IP 允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->如果您使用或打算使用前端管道来开发 Site，则必须事先添加 Cloud Manager IP 允许列表。
->请参阅 [将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
+>如果您使用或打算使用前端管道来开发 Sites，则必须事先添加 Cloud Manager IP 允许列表。
+>请参阅[将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
 
 ## IP 允许列表和通用编辑器 {#ip-allow-lists-ue}
 
@@ -248,24 +248,24 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->SPA 编辑器[已被新项目弃用](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor)。Adobe 对现有项目仍提供支持，但不应在新项目中使用。目前，AEM 中用于管理 Headless 内容的首选编辑器是：
+>SPA 编辑器[已被新项目弃用](/help/implementing/developing/hybrid/spa-editor-deprecation.md)。Adobe 对现有项目仍提供支持，但不应在新项目中使用。目前，AEM 中用于管理 Headless 内容的首选编辑器是：
 >
 >* [通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)，用于可视化编辑 Headless 内容。
 >* [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑 Headless 内容。
 
 ## 通用编辑器{#ue-see-also}
 
-* [使用通用编辑器创建您的第一个表单](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [向Forms添加动态行为](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [使用通用编辑器创建第一个表单](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [向表单添加动态行为](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [发布和部署Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [设计精美的Forms：样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [发布和部署表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [设计精美的表单：样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 * [构建自定义表单组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [保护您的Forms免受垃圾邮件的侵扰：添加reCAPTCHA安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [保护您的表单免受垃圾邮件的侵害：添加 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## 另请参阅 {#see-more-eds-forms}
 
-* [适用于 AEM Forms 的 Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
+* [Edge Delivery Services for AEM Forms 快速入门](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
 * [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
 * [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)

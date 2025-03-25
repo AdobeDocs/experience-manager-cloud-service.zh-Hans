@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
+source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
 workflow-type: tm+mt
-source-wordcount: '6103'
-ht-degree: 99%
+source-wordcount: '6106'
+ht-degree: 98%
 
 ---
 
@@ -1318,6 +1318,7 @@ ht-degree: 99%
       + 混合和 SPA 开发 {#hybrid}
          + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/Site/Headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-hans)
+         + [弃用SPA编辑器](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [SPA 简介和演练](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND 教程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [使用 React 快速入门](/help/implementing/developing/hybrid/getting-started-react.md)
