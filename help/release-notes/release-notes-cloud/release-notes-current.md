@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,9 +60,9 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 不是存储在内容片段中，而是存储在不同的 AEM as a Cloud Service 计划中，并且启用了具有 OpenAPI 功能的新动态媒体的资产，现在可以在内容片段中使用。新内容片段编辑器中的图像选择器现在允许选择“远程”存储库作为片段中引用的图像资产的来源。并且，在使用 AEM GraphQL 投放此类内容片段时，JSON 响应现在包含远程资产 (assetId、repositoryId) 所需的属性，这样客户端应用程序可以创建相应的具有 OpenAPI 功能的动态媒体 URL 来获取图像。
 
-**内容片段编辑器转出**
+**内容片段编辑器推出**
 
-我们将继续在AEM as a Cloud Service中启用新的基于频谱UI的内容片段编辑器。 2024年11月成为所有Cloud Service开发人员环境的默认值后，将于2025年4月1日将设置为所有暂存环境的默认值，并将于2025年5月1日设置为所有生产环境的默认值。 在所有情况下，用户仍可以选择在AEM触屏UI中还原到传统的内容片段编辑器。
+我们将继续在 AEM as a Cloud Service 中启用新的基于 Spectrum UI 的内容片段编辑器。它已在 2024 年 11 月成为所有 Cloud Service 开发者环境的默认设置，2025 年 4 月 1 日将成为所有暂存环境的默认设置，并将在 2025 年 5 月 1 日成为所有生产环境的默认设置。在所有情况下，用户仍然可以选择恢复到 AEM Touch UI 中传统的内容片段编辑器。
 
 **翻译 HTTP API**
 
