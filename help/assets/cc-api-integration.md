@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '847'
 ht-degree: 7%
 
 ---
@@ -137,6 +137,8 @@ ht-degree: 7%
 
 * [!DNL Experience Manager]将资源处理限制为每个环境每分钟300个请求，每个组织每分钟700个请求。
 * [!DNL Adobe Photoshop] API操作的文件大小限制为4 GB，[!DNL Adobe Lightroom]操作的文件大小限制为1 GB。
+* Microsoft Office文档(“.docx”、“.doc”、“.ppt”、“.pptx”、“.xls”、“.xlsx”)的PDF演绎版限制为100MB或更小的文件。
+* 视频转码限制为15GB或更小的输入文件。
 
 **另请参阅**
 
