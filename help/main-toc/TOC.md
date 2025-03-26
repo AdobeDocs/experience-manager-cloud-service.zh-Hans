@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6e6e171bf0df7735da2b8ec26c46b9376faf81b1
+source-git-commit: 6bce8f33f6588b49fc9165eeeedc8f4057222eb0
 workflow-type: tm+mt
 source-wordcount: '6106'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 98%
          + [2023.4.0 的维护发行说明](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [2023.2.0 的维护发行说明](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [2023.1.0 的维护发行说明](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Cloud Manager发行说明{#cloud-manager}
+   + Cloud Manager 发行说明{#cloud-manager}
       + [当前](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -142,7 +142,7 @@ ht-degree: 98%
          + [2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [ 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -216,7 +216,7 @@ ht-degree: 98%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
-         + [2025.02.25发行说明](/help/release-notes/universal-editor/2025/2025-02-25.md)
+         + [2025.02.25 版发行说明](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [2025.02.17 版发行说明](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [2025.01.16 版发行说明](/help/release-notes/universal-editor/2025/2025-01-16.md)
       + 2024 {#2024}
@@ -322,7 +322,7 @@ ht-degree: 98%
          + [删除迁移集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [在发布实例上运行内容转移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [迁移后管理主体](/help/journey-migration/managing-principals-after-migration.md)
-         + [迁移后将主体批量上传到IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
+         + [迁移后主体将批量上传到 IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [内容转移工具疑难解答](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 旧版用户映射工具（旧版）{#legacy-user-mapping-tool}
             + [概述](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -1038,7 +1038,7 @@ ht-degree: 98%
       + 所见即所得的创作 {#universal-editor}
          + [Edge Delivery Services 的表单通用编辑器简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用编辑器开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用通用编辑器创建第一个表单 — 分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [如何使用通用编辑器创建您的第一个表单 - 分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [让您的表单适应移动设备：通用编辑器中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [设计精美的表单：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1047,8 +1047,8 @@ ht-degree: 98%
          + [保护您的表单免受垃圾邮件的侵害：添加 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [如何发布和部署表单：通用编辑器发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [构建自定义表单组件：通用编辑器开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [表单数据模型集成：将Forms与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [可重用、模块化和独立区段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [表单数据模型集成：将表单与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [可重复使用的、模块化的独立片段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + 基于文档的创作 {#getting-started-edge-delivery-services-forms}
          + [构建您的第一个表单：使用 Google Sheets 和 Excel 的快速入门指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 创建表单：分步指南](/help/edge/docs/forms/create-forms.md)
@@ -1323,7 +1323,7 @@ ht-degree: 98%
          + [SPA WKND 教程](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [使用 React 快速入门](/help/implementing/developing/hybrid/getting-started-react.md)
          + [使用 Angular 快速入门](/help/implementing/developing/hybrid/getting-started-angular.md)
-         + [SPA 深入了解](/help/implementing/developing/hybrid/deep-dives.md)
+         + [SPA 深入了解](/help/implementing/developing/hybrid/deep-dives-gems.md)
          + [为 AEM 开发 SPA](/help/implementing/developing/hybrid/developing.md)
          + [SPA 编辑器概述](/help/implementing/developing/hybrid/editor-overview.md)
          + [SPA Blueprint](/help/implementing/developing/hybrid/blueprint.md)
