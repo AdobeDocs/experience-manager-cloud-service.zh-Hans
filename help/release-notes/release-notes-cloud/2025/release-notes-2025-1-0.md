@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.1.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.1.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 92%
 
 ---
 
@@ -80,17 +81,33 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### AEM Assets视图中的新增功能 {#new-features-assets}
+### AEM Assets 中的新增功能 {#new-features-assets}
 
-**自定义搜索筛选器**
+**Dynamic Media 投放报告**
 
-自定义搜索筛选器可提高查找相关信息的精度和效率。 它允许进行更定制的搜索，根据特定属性（如品牌、产品、类别或其他关键标识符）过滤数据。 这可以改善组织结构，减少花在筛选无关结果上的时间，并实现更快的决策。 它还支持可扩展性，因为大型数据集变得更加易于导航和分析。
+获取通过 Dynamic Media 投放资产的投放洞察，包括资产级别投放计数、反向链接详细信息、AEM Assets 中的资产路径和唯一资产 ID。为 AEM Assets 存储库或特定文件夹层次结构中的所有资产生成报告。通过这些洞察，您可以衡量已投放资产的 ROI，评估渠道性能，并为资产管理做出明智决策。
 
-![自定义搜索筛选器](/help/assets/assets/custom-search-filters.png)
+![动态演绎](/help/assets/assets/referrer.png)
 
-### Content Hub 的新增强功能 {#new-features-content-hub}
+**Dynamic Media 多音频和字幕**
 
-描述
+[Dynamic Media 中的视频支持多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma)，现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+
+**基于 HTTP 支持的动态自适应流式处理**
+
+推出了面向 Dynamic Media 视频交付（已启用 CMAF）中的自适应流式处理的新协议（DASH – 基于 HTTP 的动态自适应流式处理）支持：
+
+* 自适应流式处理（DASH/HLS）确保改善用户对视频的观看体验。
+
+* DASH 是自适应视频流式处理的国际标准协议，在业界得到广泛应用
+
+**资产关系**
+
+资产视图现在支持在简化的资产详细信息面板中查看和编辑资产关系。在内容中轻松添加来源和衍生等关系，以便用户可以更有效地找到相关的主要内容。
+
+**重新处理资产**
+
+资产视图现在支持重新处理文件夹中可用的资产。您可以选择使用&#x200B;**完整流程**&#x200B;选项，也可以使用高级选项，例如默认预览演绎版、元数据、后期处理工作流和资产处理配置文件。
 
 ### AEM Assets 中的早期访问功能 {#early-access-features-assets}
 
@@ -117,7 +134,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### [自适应Forms中的HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 自适应Forms中的[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 通过自适应Forms，您可以使用HTML电子邮件模板。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 
