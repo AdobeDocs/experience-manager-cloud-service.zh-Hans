@@ -1,17 +1,17 @@
 ---
-title: 开始您的 AEM as a Cloud Service 迁移之旅
+title: AEM as a Cloud Service 迁移之旅快速入门
 description: 通过熟悉迁移到 AEM as a Cloud Service 的基础知识，开始您的迁移之旅
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
 source-git-commit: 08da72724fb8c6e8760ae8013dcf739585ac6903
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 开始您的 AEM as a Cloud Service 迁移之旅 {#getting-started}
+# AEM as a Cloud Service 迁移之旅快速入门 {#getting-started}
 
 在 AEM as a Cloud Service 迁移之旅的这一部分中，您将学习如何将您的内部部署或 Adobe Managed Services 中的 AEM 安装迁移到云的基础知识。
 

@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 
 如果您已将 Edge Delivery Services 作为 Adobe Experience Manager Site 的一部分获得许可，您可以直接在 Cloud Manager 中为您的 Site 启用 Edge Delivery Services，并[通过引导式的自助服务体验快速上线](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
 
-此外，您可以在确保关键工作流程一致性的同时，获得管理所有 AEM 属性的统一体验。这些工作流包括域名管理、SSL 证书管理以及 CDN 映射。
+此外，您可以在确保关键工作流一致性的同时，获得管理所有 AEM 属性的统一体验。这些工作流包括域名管理、SSL 证书管理以及 CDN 映射。
 
 ## 使用 Adobe 推荐的 Edge Delivery Services 路径的益处 {#recommended-path-eds}
 
@@ -47,14 +47,14 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 
 ## 关于将 Edge Delivery Services 添加到生产程序或沙盒程序中
 
-可以通过多种不同的方式添加Edge Delivery Services，具体取决于您启动项目的方式或要创建网站的时间。
+根据您启动项目的方式或者当您要创建网站时，Edge Delivery Services 可以通过多种不同的方式添加。
 
 | 用例 | 描述 |
 | --- | --- |
 | 我想将 Edge Delivery Services 添加到一个新的生产程序中。 | 请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。<br>在向导中，选择&#x200B;**解决方案与附加组件**&#x200B;标签下的 **Edge Delivery Services**。 |
 | 我想将 Edge Delivery Services 添加到一个现有的生产程序中。 | 请参阅[编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。<br>在&#x200B;**编辑程序**&#x200B;对话框的&#x200B;**解决方案与附加组件**&#x200B;标签下，选择 **Edge Delivery Services**。 |
 | 我想将 Edge Delivery Site 添加到 Cloud Manager 中  | 请参阅[添加 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。 |
-| 我要立即创建一个Edge Delivery站点 | 请参阅[单击按钮即可在Cloud Manager中快速创建Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
+| 我现在想创建一个 Edge Delivery Site | 查看[通过单击按钮在 Cloud Manager 中快速创建 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
 | 我想将 Edge Delivery Services 添加到一个新的或现有的沙盒程序中。 | 请参阅[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。<br>当您创建一个沙盒程序时，默认情况下，Edge Delivery Services 已被添加到该程序中；您无需手动选择它。<br>在 Edge Delivery 普遍可用之前，现有的沙盒程序会自动继承 Edge Delivery Services。 |
 
 >[!NOTE]
@@ -74,9 +74,9 @@ Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入
 
 |   | 任务 | 描述 |
 | --- | --- | --- |
-| 1 | 加入产品协作渠道 | 点击&#x200B;**立即提交请求**&#x200B;向 Adobe 提交请求，为您的公司创建一个渠道。如果该渠道已经存在，您将被转到您公司的渠道。 |
+| 1 | 加入产品协作渠道 | 单击&#x200B;**立即提交请求**&#x200B;向 Adobe 提交请求，为您的公司创建一个渠道。如果该渠道已经存在，您将被转到您公司的渠道。 |
 | 2 | 完成前提条件 | 请参阅[查看快速入门教程](https://www.aem.live/developer/tutorial)。 |
-| 3 | 添加Edge Delivery站点或<br>立即创建站点 | 请参阅[添加 Edge Delivery Site](#eds-add-site)。<br>查看[在Cloud Manager中创建Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
+| 3 | 添加 Edge Delivery Site 或<br>立即创建网站 | 请参阅[添加 Edge Delivery Site](#eds-add-site)。<br>查看[在 Cloud Manager 中创建 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
 | 4 | 添加域 | 请参阅[添加自定义域名称](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 添加 SSL 证书 | 请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 配置 Edge Delivery Site 的内容传递网络 | 请参阅[添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |

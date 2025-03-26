@@ -1,13 +1,13 @@
 ---
-title: Edge Delivery Services for AEM Forms 快速入门：开发人员教程
-description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。10到20分钟后，您将创建自己的表单。
+title: Edge Delivery Services for AEM Forms 快速入门——开发人员教程
+description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。十到二十分钟后，您将创建好自己的表单。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: e2259e542df5a12748705af901d073e4486292c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。Edge Delivery Services for AEM Forms 允许您使用 Google Docs 和 Microsoft Office 等熟悉的工具创建表单。
 
-这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
+这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流。
 
 AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻松创建表单来捕获和存储捕获的数据。您可以[创建一个新的 AEM 项目并预先配置 Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)<!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->。
 

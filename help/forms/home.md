@@ -6,9 +6,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: f4b079837dee960401a16073293969954cad3e77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 70%
 
 <!-- Version Navigation -->
 <div class="version-selector">
-  <p><strong>正在查找其他版本的文档？</strong></p>
+  <p><strong>正在寻找不同版本的文档？</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">AEM 6.5 Forms文档</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">AEM 6.5 表单文档</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong>（当前）</li>
   </ul>
 </div>
@@ -48,9 +48,9 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 可以轻松生成个性化的文档，例如收据、欢迎套件和对帐单。组织可以将流量引入个性化的 Web 门户，从而让受众注册或购买额外的服务。
 
 
-## 自动化后台工作流程
+## 自动化后台工作流
 
-使用以表单为中心的工作流程可自动处理表单数据，并将这些数据发送给不同的利益相关者（例如，经理或部门），以便进行审查、审批或进一步处理。这些工作流程可确保对表单数据进行一致的、可审核的处理、自动化手动任务、提供基于角色的访问控制并帮助遵守法规要求，从而帮助您的组织最大程度地降低风险并保持合规性。
+使用以表单为中心的工作流可自动处理表单数据，并将这些数据发送给不同的利益相关者（例如，经理或部门），以便进行审查、审批或进一步处理。这些工作流可确保对表单数据进行一致的、可审核的处理、自动化手动任务、提供基于角色的访问控制并帮助遵守法规要求，从而帮助您的组织最大程度地降低风险并保持合规性。
 
 
 ## 优化表单性能
@@ -60,46 +60,46 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 
 ## 开始使用 {#key-features}
 
-AEM Forms as a Cloud Service提供了一组全面的功能，这些功能分为以下类别：
+AEM Forms as a Cloud Service 提供了一套全面的功能，分为以下几类：
 
 ### 表单创建和创作 {#form-creation}
 
-使用各种创作选项创建引人入胜、响应式且数据驱动的表单：
+使用各种创作选项创建有吸引力、响应式、数据驱动的表单：
 
-| 专题 | 描述 |
+| 功能 | 描述 |
 |---|---|
-| 自适应表单 | 为您的网站、应用程序和其他数字和打印渠道创建和管理交互式、动态、响应式、移动友好且数据驱动的表单： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html"> 创建自适应表单 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">设置自适应表单的样式</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hans">将自适应表单添加到 AEM Sites 页面</a></li></ul> |
-| 适用于Forms的Edge Delivery Services | 创建并提供具有卓越用户体验的高性能表单： <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">使用通用编辑器进行WYSIWYG创作</a> — 用于生成表单的强大可视化界面</li><li><a href="/help/edge/docs/forms/create-forms.md">基于文档的创作</a> — 使用熟悉的工具(如Microsoft Excel和Google Sheets)创建表单</li><li>用于创建复杂表单逻辑的高级规则编辑器</li><li>通过优化的表单加载获得近乎完美的Google Lighthouse分数</li><li>以最少的开发时间更快地部署表单</li></ul> |
-| 自动化表单转换服务 | 将基于PDF的旧版表单转换为可轻松在线管理和分发的自适应Forms： <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">配置自动化表单转换服务</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans">将 PDF 表单转换为自适应表单</a></li></ul> |
+| 自适应表单 | 为您的网站、应用程序和其他数字和打印渠道创建和管理交互式、动态性、响应式、便于移动设备使用和数据驱动的表单： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html"> 创建自适应表单 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">设置自适应表单的样式</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hans">将自适应表单添加到 AEM Sites 页面</a></li></ul> |
+| 用于表单的 Edge Delivery Services | 创建并投放带来卓越用户体验的高性能表单： <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">使用通用编辑器进行所见即所得的创作</a> - 用于生成表单的强大的可视化界面</li><li><a href="/help/edge/docs/forms/create-forms.md">基于文档的创作</a> - 使用 Microsoft Excel 或 Google Sheets 等熟悉的工具创建表单</li><li>用于创建复杂表单逻辑的高级规则编辑器</li><li>通过优化表单加载获得近乎完美的 Google Lighthouse 分数</li><li>以最少的开发时间更快地部署表单</li></ul> |
+| 自动化表单转换服务 | 将基于 PDF 的旧版表单转换为可轻松进行在线管理和分发的自适应表单： <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html">配置自动化表单转换服务</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans">将 PDF 表单转换为自适应表单</a></li></ul> |
 
 ### 文档处理和通信 {#document-processing}
 
-生成、组合和交付个性化通信：
+生成、汇编和传递个性化通信：
 
-| 专题 | 描述 |
+| 功能 | 描述 |
 |---|---|
-| 通信 API | 根据需要或按计划的时间间隔，使用RESTful API自动创建、管理和交付个性化、数据驱动的通信： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation"> 生成个性化的通信 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation"> 汇编或拆分 PDF 文档 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">创建符合 PDF/A 标准的文档 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">使用 DocAssurance API 保护您的文档</a></li></ul> |
-| 记录文档 | 创建和管理已提交表单的记录以供存档和遵守： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html"> 创建表单记录以进行长期存档</a></li><li>自定义功能的服务器端可扩展性</li><li>用于防篡改归档的记录文档功能</li></ul> |
+| 通信 API | 使用 RESTful API 按需或按预定时间间隔自动创建、管理和传递数据驱动的个性化通信： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-generation"> 生成个性化的通信 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#document-manipulation"> 汇编或拆分 PDF 文档 </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?#convert-to-and-validate-pdf%2Fa-compliant-documents">创建符合 PDF/A 标准的文档 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">使用 DocAssurance API 保护您的文档</a></li></ul> |
+| 记录文档 | 创建和管理已提交表单的记录，以确保存档和合规： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html"> 创建表单记录以进行长期存档</a></li><li>自定义功能的服务器端可扩展性</li><li>确保防篡改档案的文档记录功能</li></ul> |
 
 ### 工作流和流程自动化 {#workflow}
 
-自动化业务流程和与表单相关的工作流：
+自动业务流程和表单相关的工作流：
 
-| 专题 | 描述 |
+| 功能 | 描述 |
 |---|---|
-| 表单工作流程 | 自动化涉及表单和文档服务的业务流程： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">发送表单或文件以供审查</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">创建审批拒绝工作流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br"> 将数据提交到数据存储或工作流程</a></li></ul> |
-| 电子签名 | 将 Adobe Sign 和 Adobe Sign Solutions for Government 集成，可轻松向用户发送表单和文档以进行电子签名： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">使用 Adobe Sign 对自适应表单进行电子签名</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">将记录文档</a>或<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">电子签名</a>步骤添加到业务流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans#sign-document-step">使用 Adob&#x200B;e Sign 和 AEM 工作流程对文档进行电子签名</a></li></ul> |
+| 表单工作流 | 涉及表单和文档服务的自动业务流程： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html">发送表单或文件以供审查</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#assign-task-step">创建审批拒绝工作流</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br"> 将数据提交到数据存储或工作流</a></li></ul> |
+| 电子签名 | 将 Adobe Sign 和 Adobe Sign Solutions for Government 集成，可轻松向用户发送表单和文档以进行电子签名： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">使用 Adobe Sign 对自适应表单进行电子签名</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#generate-document-of-record-step">将记录文档</a>或<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?#sign-document-step">电子签名</a>步骤添加到业务流程</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans#sign-document-step">使用 Adob&#x200B;e Sign 和 AEM 工作流对文档进行电子签名</a></li></ul> |
 
-### 数据集成和分析 {#data-integration}
+### 数据集成与分析 {#data-integration}
 
-将表单连接到数据源并深入了解表单性能：
+将表单连接到数据源，深入了解表单性能：
 
-| 专题 | 描述 |
+| 功能 | 描述 |
 |---|---|
-| 表单分析 | 使用 Adobe Analytics 获取有关用户行为和偏好设置的有用见解： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">将自适应表单与 Adobe Analytics 关联起来</a></li></ul> |
-| Adobe集成 | 将表单与其他Adobe解决方案连接起来： <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">连接到Adobe Workfront Fusion</a>并将数据提交到Workfront方案</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">连接到Adobe Marketo Engage</a>并<a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">将数据提交到Marketo</a></li></ul> |
-| Microsoft集成 | 将表单与Microsoft服务连接起来： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hans">连接到Microsoft® Dynamics 365</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hans">连接到Microsoft®Azure Blob Storage</a>并<a href="/help/forms/configure-submit-action-azure-blob-storage.md">将数据提交到Azure Blob Storage</a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">连接到Microsoft® SharePoint文档库</a>并<a href="/help/forms/configure-submit-action-sharepoint.md">将数据提交到SharePoint</a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">连接到Microsoft® OneDrive</a>并将数据提交到OneDrive</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">连接到Microsoft®Power Automate</a>并在表单提交时触发流程</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">连接到Microsoft® Dynamics OData</a></li></ul> |
-| 其他数据源 | 连接到其他数据源和端点： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hans">连接到 RDBMS 或 Rest 端点</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">连接到Salesforce</a>并将数据提交到Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">提交到 REST 端点</a></li></ul> |
+| 表单分析 | 使用 Adobe Analytics 获取有关用户行为和偏好设置的有用见解： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html">将自适应表单与 Adobe Analytics 连接</a></li></ul> |
+| Adobe 集成 | 将表单与其他 Adobe 解决方案连接： <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">连接到 Adobe Workfront Fusion</a> 并将数据提交到 Workfront 场景</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">连接到 Adobe Marketo Engage</a> 并<a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">将数据提交到 Marketo</a></li></ul> |
+| Microsoft 集成 | 将表单与 Microsoft 服务连接： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hans">与 Microsoft® Dynamics 365 连接</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hans">连接到 Microsoft® Azure Blob 存储</a>并<a href="/help/forms/configure-submit-action-azure-blob-storage.md">将数据提交到 Azure Blob 存储</a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">连接到 Microsoft® SharePoint 文档库</a>并<a href="/help/forms/configure-submit-action-sharepoint.md">将数据提交到 SharePoint</a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">连接到 Microsoft® OneDrive</a> 并将数据提交到 OneDrive</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">连接到 Microsoft® Power Automate</a> 并在表单提交时触发数据流</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">连接到 Microsoft® Dynamics OData</a></li></ul> |
+| 其他数据源 | 连接到其他数据源和端点： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hans">连接到 RDBMS 或 Rest 端点</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">连接到 Salesforce</a> 并将数据提交到 Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">提交到 REST 端点</a></li></ul> |
 
 >[!MORELIKETHIS]
 >

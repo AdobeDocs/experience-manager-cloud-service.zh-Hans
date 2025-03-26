@@ -1,13 +1,13 @@
 ---
-title: 通用编辑器中 Edge Delivery Services for AEM Forms 快速入门：开发人员教程
+title: 通用编辑器中 Edge Delivery Services for AEM Forms 快速入门——开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。十到二十分钟后，您就可以在通用编辑器中创建自己的 Edge Delivery Services Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1857'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 98%
 | 基于文档的创作 | [单击此处](/help/edge/docs/forms/tutorial.md) |
 
 
-<span class="preview"> 此功能通过早期访问计划提供。要请求访问，请将您的正式地址中的电子邮件发送至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，其中包含您的GitHub组织名称和存储库名称。 例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
+<span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
 
 在当今的数字时代，用户友好的表单对于所有组织都至关重要。Edge Delivery Services Forms 是使用通用编辑器创建的，提供了所见即所得（WYSIWYG）功能。它为高效的表单制作提供了一个现代化的直观界面。
 
 AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery Services Forms，以捕获和存储数据。您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM 项目](#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github 存储库工作流程](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+![Github 存储库工作流](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 本教程将指导您使用通用编辑器的所见即所得创作功能，在新的或现有的 Adobe Experience Manager Site 项目中创建、预览和发布自己的表单。
 
@@ -195,7 +195,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 就是这样！Adaptive Forms Block 现在是您 AEM 项目的一部分。您可以[开始创建表单并将其添加到 AEM 项目](#add-edge-delivery-services-forms-to-aem-site-project)。
 
-## 使用WYSIWYG创作Forms
+## 使用所见即所得方法创作表单
 
 您可以在通用编辑器中打开 AEM 项目，进行所见即所得的创作，在这里您可以编辑项目并添加自适应表单分区，以便在 AEM 项目页面上包含 Edge Delivery Services Forms。
 
