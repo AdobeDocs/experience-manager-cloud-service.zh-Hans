@@ -21,7 +21,7 @@ ht-degree: 83%
 
 AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery Services Forms，以捕获和存储数据。您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM Site 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github 存储库工作流程](/help/edge/assets/repo-workflow.png)
+![Github 存储库工作流](/help/edge/assets/repo-workflow.png)
 
 ## 先决条件
 
@@ -46,7 +46,7 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 ### 创建表单
 
 1. 登录您的 AEM Forms as a Cloud Service 作者实例。
-1. 选择 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
+1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。向导随即打开。
 1. 在&#x200B;**源**&#x200B;选项卡中，选择基于 Edge Delivery Services 的表单模板：
 
@@ -131,14 +131,14 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 
   `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
 
-  例如，如果您的项目存储库名为 “edsforms” 且位于帐户 “wkndforms” 下，并且您使用的是 “main” 分支和“注册表格”表单，则暂存版本 URL 如下所示：
+  例如，如果您的项目存储库名为 “edsforms” 且位于帐户 “wkndforms” 下，并且您使用的是 “main” 分支和“注册表单”表单，则暂存版本 URL 如下所示：
   `https://main--edsforms--wkndforms.aem.page/content/forms/af/registration-form`
 
 * **实时版本（已发布的表单）**：实时版本显示表单的最新发布版本，可供最终用户访问。使用以下 URL 格式访问已发布的表单实时版本：
 
   `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
 
-  例如，如果您的项目存储库名为 “edsforms” 且位于帐户 “wkndforms” 下，并且您使用的是 “main” 分支和“注册表格”表单，则暂存版本 URL 如下所示：
+  例如，如果您的项目存储库名为 “edsforms” 且位于帐户 “wkndforms” 下，并且您使用的是 “main” 分支和“注册表单”表单，则暂存版本 URL 如下所示：
   `https://main--edsforms--wkndforms.aem.live/content/forms/af/registration-form`
 
 暂存版本和实时版本的 URL 结构相同。不过，根据上下文的不同，您看到的内容也有所不同：
@@ -150,7 +150,7 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 您可以使用 AEM Forms 用户界面对表单执行多项操作。
 
 1. 登录您的 AEM Forms as a Cloud Service 作者实例。
-1. 选择 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
+1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 
 1. 选择一个表单，工具栏就会显示您可以在所选表单上执行以下操作。
 

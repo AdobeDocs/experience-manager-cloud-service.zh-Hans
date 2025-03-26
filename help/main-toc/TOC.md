@@ -285,7 +285,7 @@ ht-degree: 99%
       + [使用通用编辑器进行内联编辑](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
-   + [就绪阶段](/help/journey-migration/readiness.md)
+   + [准备阶段](/help/journey-migration/readiness.md)
    + [实施阶段](/help/journey-migration/implementation.md)
    + [上线](/help/journey-migration/go-live.md)
    + [Post 上线](/help/journey-migration/post-go-live.md)
@@ -296,7 +296,7 @@ ht-degree: 99%
          + [好处](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + 使用 Cloud Acceleration Manager {#using-cam}
          + [Cloud Acceleration Manager 快速入门](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
-         + [就绪阶段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+         + [准备阶段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
          + [实施阶段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [上线阶段](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Cloud 过渡工具{#cloud-migration}
@@ -332,7 +332,7 @@ ht-degree: 99%
       + [统一体验](/help/journey-migration/unified-experience.md)
       + [存储库现代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [索引转换器](/help/journey-migration/refactoring-tools/index-converter.md)
-      + [资产工作流程迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [资产工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
@@ -393,7 +393,7 @@ ht-degree: 99%
          + [使用项目](/help/sites-cloud/authoring/projects/overview.md)
          + [管理项目](/help/sites-cloud/authoring/projects/managing.md)
          + [处理任务](/help/sites-cloud/authoring/projects/tasks.md)
-         + [使用项目工作流程](/help/sites-cloud/authoring/projects/workflows.md)
+         + [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)
       + 启动项 {#launches}
          + [使用启动项](/help/sites-cloud/authoring/launches/overview.md)
          + [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
@@ -401,10 +401,10 @@ ht-degree: 99%
          + [编辑启动项](/help/sites-cloud/authoring/launches/editing.md)
          + [使用回溯预览启动项](/help/sites-cloud/authoring/launches/preview.md)
          + [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)
-      + 工作流程 {#workflows}
-         + [使用工作流程](/help/sites-cloud/authoring/workflows/overview.md)
-         + [将工作流程应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
-         + [参与工作流程](/help/sites-cloud/authoring/workflows/participating.md)
+      + 工作流 {#workflows}
+         + [使用工作流](/help/sites-cloud/authoring/workflows/overview.md)
+         + [将工作流应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
+         + [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
       + 个性化 {#personalization}
          + [个性化概述](/help/sites-cloud/authoring/personalization/overview.md)
          + [使用 ContextHub 数据预览页面](/help/sites-cloud/authoring/personalization/contexthub.md)
@@ -476,7 +476,7 @@ ht-degree: 99%
             + [连接到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [翻译最佳实践](/help/sites-cloud/administering/translation/best-practices.md)
       + [管理标记](/help/sites-cloud/administering/tags.md)
-      + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
+      + [管理工作流](/help/sites-cloud/administering/workflows-administering.md)
       + [模板控制台](/help/sites-cloud/administering/templates-console.md)
    + 与 AEM as a Cloud Service 集成 {#integrations}
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
@@ -875,10 +875,10 @@ ht-degree: 99%
       + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
       + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
       + [常见问题解答](/help/forms/interactive-communications-faq.md)
-   + 以 Form 为中心的工作流程 {#create-form-centric-workflows}
+   + 以 Form 为中心的工作流 {#create-form-centric-workflows}
       + [以 Form 为中心的工作流简介](/help/forms/aem-forms-workflow.md)
-      + [在工作流程中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
-      + [在以表单为中心的工作流程中使用变体](/help/forms/variable-in-aem-workflows.md)
+      + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
+      + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
       + [AEM Workflow 中的动态用户或组选择](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
       + [在 AEM Inbox 中管理 Forms 应用程序和任务](/help/forms/manage-applications-inbox.md)
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
@@ -1038,9 +1038,9 @@ ht-degree: 99%
       + 所见即所得的创作 {#universal-editor}
          + [Edge Delivery Services 的表单通用编辑器简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用编辑器开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用通用编辑器创建您的第一个表单 - 分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [如何使用通用编辑器创建您的第一个表单——分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [让您的表单适应移动设备：通用编辑器中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [让您的表单便于移动设备使用：通用编辑器中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [设计精美的表单：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [向表单添加动态行为：规则编辑器完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [表单提交指南：配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
@@ -1432,10 +1432,10 @@ ht-degree: 99%
    + [查询和索引最佳实践](/help/operations/query-and-indexing-best-practices.md)
 + 合规性 {#compliance}
    + [AEM as a Cloud Service 中的合规性](/help/compliance/home.md)
-   + 数据隐私和保护就绪性 {#data-privacy}
-      + [用于数据保护和数据隐私法规的 AEM 就绪性](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-      + [用于数据保护和数据隐私法规的 AEM Foundation 就绪性](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
-      + [用于数据保护和数据隐私法规的 AEM Sites 就绪性](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+   + 数据隐私和保护准备工作 {#data-privacy}
+      + [用于数据保护和数据隐私法规的 AEM 准备工作](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+      + [用于数据保护和数据隐私法规的 AEM Foundation 准备工作](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+      + [用于数据保护和数据隐私法规的 AEM Sites 准备工作](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
    + 辅助功能 {#accessibility}
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
