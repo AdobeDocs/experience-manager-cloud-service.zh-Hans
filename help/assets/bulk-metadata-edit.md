@@ -2,9 +2,9 @@
 title: 在 [!DNL Assets View]中批量编辑元数据
 description: 了解如何为[DNL！中提供的多个资源更新一组预定义的标准元数据字段。 Assets视图]同时运行。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-[!DNL Assets View]的&#x200B;**[!DNL Bulk Metadata Edit]**&#x200B;功能允许您同时为多个资源文件编辑预定义的标准元数据字段集。 选择多个资源并一次批量更新其预定义的标准元数据集，而不是为每个资源单独更新这些标准元数据。 此功能可一次批量编辑多个资产的标准元数据属性集，从而维护这些标准元数据属性在大型资产集中的效率、一致性和准确性，从而提高这些资产的可搜索性和组织性。
+[!DNL Assets View]的&#x200B;**[!DNL Bulk Metadata Edit]**&#x200B;功能允许您同时为多个资源文件编辑预定义的标准元数据字段集。 选择多个资源并一次批量更新其预定义的标准元数据集，而不是为每个资源单独更新这些标准元数据。 此功能可跨大型资产集保持标准元数据属性集的效率、一致性和准确性，从而提高这些资产的可搜索性和组织性。
 
 ## 批量编辑资源元数据 {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
