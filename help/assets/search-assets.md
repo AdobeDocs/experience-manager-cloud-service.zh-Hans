@@ -6,12 +6,13 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5931'
 ht-degree: 6%
 
 ---
+
 
 # 在AEM中搜索资源 {#search-assets-in-aem}
 
@@ -248,7 +249,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 版权所有者 | 版权所有：“Adobe Systems” |
 | 参与者 | 投稿人：John |
 | 使用条款 | 使用条款：“保留复制权利” |
-| 已创建 | created：YYYY-MM-DDTHH |
+| 创建时间 | created：YYYY-MM-DDTHH |
 | 过期日期 | expires：YYYY-MM-DDTHH |
 | 准时 | ontime：YYYY-MM-DDTHH |
 | 关闭时间 | offtime：YYYY-MM-DDTHH |
@@ -313,7 +314,7 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 ## 资源选择器 {#asset-picker}
 
-资产选择器（在以前版本的[!DNL Adobe Experience Manager]中称为资产选择器）允许您以特殊方式搜索、筛选和浏览DAM资产。 资源选择器位于`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以获取使用资源选择器选择的资源的元数据。 您可以通过受支持的请求参数启动它，例如资产类型（图像、视频、文本）和选择模式（单选或多选）。 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
+[AEM资源选择器](/help/assets/overview-asset-selector.md)（在以前版本的[!DNL Adobe Experience Manager]中称为资源选择器）允许您以特殊方式搜索、筛选和浏览DAM资源。 资源选择器位于`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以获取使用资源选择器选择的资源的元数据。 您可以通过受支持的请求参数启动它，例如资产类型（图像、视频、文本）和选择模式（单选或多选）。 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
 
 资源选择器使用HTML5 `Window.postMessage`消息将选定资源的数据发送给收件人。 它仅在浏览模式下工作，并且仅适用于Omnisearch结果页面。
 
@@ -370,6 +371,8 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 * **索引**：搜索结果中只返回已编制索引的元数据和资源。 为了获得更好的覆盖率和性能，请确保正确编制索引并遵循最佳实践。 请参阅[索引](#searchindex)。
 
+查看更多[搜索最佳实践](search-best-practices.md)。
+
 ## 一些说明搜索的示例 {#samples}
 
 在关键字周围使用双引号可查找包含精确短语的资源，其顺序与用户指定的顺序完全一致。
@@ -407,62 +410,56 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 *图：使用短划线搜索不包含排除关键字的资源。*
 
-<!--
-## Configuration and administration tasks related to search functionality {#configadmin}
+## 与搜索功能相关的配置和管理任务 {#configadmin}
 
-### Search index configurations {#searchindex}
+### 搜索索引配置 {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
--->
+资产发现依赖于DAM内容（包括元数据）的索引。 更快、更准确地发现资产依赖于优化的索引和适当的配置。 请参阅[索引](/help/operations/indexing.md)。
 
-<!--
-### Visual or similarity search {#configvisualsearch}
+### 视觉或相似性搜索 {#configvisualsearch}
 
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
+可视化搜索使用智能标记。 配置智能标记功能后，请执行以下步骤。
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. 在[!DNL Experience Manager] CRXDE的`/oak:index/lucene`节点中，添加以下属性和值并保存更改。
 
-    * `costPerEntry` property of type `Double` with the value `10`.
+   * 值为`10`的类型`Double`的`costPerEntry`属性。
 
-    * `costPerExecution` property of type `Double` with the value `2`.
+   * 值为`2`的类型`Double`的`costPerExecution`属性。
 
-    * `refresh` property of type `Boolean` with the value `true`.
+   * 值为`true`的类型`Boolean`的`refresh`属性。
 
-   This configuration allows searches from the appropriate index.
+   此配置允许从相应的索引进行搜索。
 
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
+1. 要创建Lucene索引，请在CRXDE中的`/oak:index/damAssetLucene/indexRules/dam:Asset/properties`处创建类型为`nt-unstructured`的名为`imageFeatures`的节点。 在`imageFeatures`节点中，
 
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
+   * 添加值为`jcr:content/metadata/imageFeatures/haystack0`的类型为`String`的`name`属性。
 
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
+   * 添加值为`true`的类型为`Boolean`的`nodeScopeIndex`属性。
 
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
+   * 添加值为`true`的类型为`Boolean`的`propertyIndex`属性。
 
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
+   * 添加值为`true`的类型为`Boolean`的`useInSimilarity`属性。
 
-   Save the changes.
+   保存更改。
 
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
+1. 访问`/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`并添加值为`true`的`Boolean`类型的`similarityTags`属性。
+1. 将智能标记应用于[!DNL Experience Manager]存储库中的资源。 请参阅[如何配置智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring)。
+1. 在CRXDE的`/oak-index/damAssetLucene`节点中，将`reindex`属性设置为`true`。 保存更改。
+1. （可选）如果已自定义搜索表单，请将`/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch`节点复制到`/conf/global/settings/dam/search/facets/assets/jcr:content/items`。 保存更改。
 
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
--->
+有关相关信息，请参阅[了解Experience Manager中的智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)和[如何管理智能标记](/help/assets/smart-tags.md)。
 
-<!--
-### Mandatory metadata {#mandatorymetadata}
+### 必需元数据 {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+业务用户、管理员或DAM库管理员可以将某些元数据定义为必需元数据，这些元数据是业务流程正常运行所必需的。 出于各种原因，某些资产可能缺少此元数据，例如旧版资产或批量迁移的资产。 根据索引的元数据属性，检测和报告包含缺失或无效元数据的Assets。 要配置它，请参阅[必需的元数据](/help/assets/metadata-schemas.md#defining-mandatory-metadata)。
 
-### Modify search facets {#searchfacets}
+### 修改搜索彩块化 {#searchfacets}
 
-To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+为了提高发现速度，[!DNL Experience Manager Assets]提供了搜索Facet，您可以使用它来筛选搜索结果。 默认情况下，“筛选器”面板包含几个标准方面。 管理员可以自定义“筛选器”面板，以使用内置谓词修改默认Facet。 [!DNL Experience Manager]提供了一个良好的内置谓词集合和一个用于自定义Facet的编辑器。 查看[搜索Facet](/help/assets/search-facets.md)。
 
-### Extract text when uploading assets {#extracttextupload}
+### 上传资产时提取文本 {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
--->
+您可以将[!DNL Experience Manager]配置为在用户上传资源(如PSD或PDF文件)时从资源中提取文本。 [!DNL Experience Manager]对提取的文本编制索引，并帮助用户根据提取的文本搜索这些资源。 查看[上传资源](/help/assets/manage-digital-assets.md#uploading-assets)。
 
 ### 用于筛选搜索结果的自定义谓词 {#custompredicates}
 
@@ -507,7 +504,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 在列表视图中，您可以对搜索结果进行排序，就像对任何文件夹中的资源排序一样。 排序仅对以下列起作用 — 名称、标题、状态、维度、大小、评级、使用情况、（日期）创建、（日期）修改、（日期）发布、工作流和签出。
 
-有关排序功能的限制，请参阅[限制](#limitations)。
+<!--For limitations of sort functionality, see [limitations](#limitations).-->
 
 ### 检查资产的详细信息 {#checkinfo}
 
@@ -523,13 +520,13 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### 下载搜索到的资源 {#download}
 
-您可以下载搜索到的资源及其演绎版，就像从文件夹下载常规资源一样。 从搜索结果中选择一个或多个资源，然后单击工具栏中的&#x200B;**[!UICONTROL 下载]**。
+您可以下载搜索到的资源及其演绎版，就像从文件夹下载常规资源一样。 从搜索结果中选择一个或多个资源，然后单击工具栏中的&#x200B;**[!UICONTROL 下载]**。 查看[下载资源](/help/assets/download-assets-from-aem.md)
 
 ### 批量更新元数据属性 {#metadata-updates}
 
 可以对多个资源的常用元数据字段进行批量更新。 从搜索结果中，选择一个或多个资源。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**，并根据需要更新元数据。 完成后单击&#x200B;**[!UICONTROL 保存并关闭]**。 更新字段中先前存在的元数据将被覆盖。
 
-对于单个文件夹或收藏集中可用的资产，无需使用搜索功能，更容易[批量](/help/assets/manage-metadata.md#manage-assets-metadata)更新元数据。 对于跨文件夹可用的资源或符合通用标准的资源，通过搜索批量更新元数据会更快。
+对于单个文件夹或收藏集中可用的资产，无需使用搜索功能，更容易[批量](/help/assets/bulk-metadata-edit.md)更新元数据。 对于跨文件夹可用的资源或符合通用标准的资源，通过搜索批量更新元数据会更快。
 
 ### 智能收藏集 {#smart-collections}
 
@@ -578,7 +575,6 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 * [搜索最佳实践](search-best-practices.md)
 * [翻译资源](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
 * [资源支持的文件格式](file-format-support.md)
 * [连接的资源](use-assets-across-connected-assets-instances.md)
 * [资源报告](asset-reports.md)
