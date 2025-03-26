@@ -4,9 +4,10 @@ description: 了解如何管理内容片段模型；这些模型用作AEM中内�
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2288'
 ht-degree: 48%
 
 ---
@@ -49,7 +50,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 您可以使用[内容片段控制台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)最左侧的面板选择&#x200B;**内容片段模型**&#x200B;作为查看、浏览和管理的资源类型：
 
-![内容片段控制台 — 导航](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![内容片段控制台 — 导航](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 这将打开内容片段模型的视图：
 
@@ -62,7 +63,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 还会显示您的 IMS 组织
    * 提供多种[操作](#actions-unselected)
 * 左侧面板
-   * 将所有[配置](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)显示为文件夹
+   * 显示作为文件夹列出的所有配置](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)的[路径
    * 在此，可以隐藏或显示文件夹树
    * 您可以选择树的特定文件夹
    * 这可以调整为显示嵌套文件夹（子配置）
@@ -75,7 +76,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
          * [您可以选择要显示的列](#select-columns-console)
       * [有关内容片段模型的各种信息字段](#information-content-fragment-models)提供了链接；根据字段，这些链接可以：
          * 在编辑器中打开相应的模型
-         * 显示有关配置的信息
+         * 显示有关配置路径的信息
          * 显示有关模型状态的信息
       * [有关内容片段模型的某些其他信息字段](#information-content-fragments)可用于[快速筛选](#fast-filtering)：
          * 在列中选择一个值，该值将立即作为过滤器应用
@@ -96,8 +97,8 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 提供用于在编辑器中打开模型的链接。
 * 已锁定
    * 当模型被锁定时，用挂锁图标指示。
-* **配置**
-   * 提供用于在控制台中打开配置的链接。
+* **路径**
+   * 提供路径作为链接，以在控制台中打开配置。
 将鼠标悬停在文件夹名称上将显示 JCR 路径。
 * **状态**
    * 仅供参考。
@@ -123,7 +124,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 ![内容片段控制台 — 选定内容片段模型](assets/cf-managing-content-fragment-models-selected.png)的信息
 
-* **[配置](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[路径](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[状态](#enabling-a-content-fragment-model)**
 * **标题**
 * **标记**
@@ -233,7 +234,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    >* 如果已启用[使用内容片段模型](/help/sites-cloud/administering/content-fragments/setup.md)
    >* 选择要在其中创建模型的文件夹后。
 
-1. 选择&#x200B;**配置**&#x200B;并指定&#x200B;**名称**。
+1. 选择配置的&#x200B;**路径**&#x200B;并指定&#x200B;**名称**。
 
    >[!NOTE]
    >

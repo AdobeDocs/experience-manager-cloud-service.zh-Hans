@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
 source-wordcount: '2629'
 ht-degree: 79%
@@ -58,7 +58,7 @@ ht-degree: 79%
 
 您可以使用[内容片段控制台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)最左侧的面板选择&#x200B;**内容片段**&#x200B;作为查看、浏览和管理的资源类型：
 
-![内容片段控制台 — 导航](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![内容片段控制台 — 导航](/help/sites-cloud/administering/content-fragments/assets/cf-console-fragments-navigation.png)
 
 选择&#x200B;**内容片段**&#x200B;将在新选项卡中打开控制台。
 
