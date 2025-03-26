@@ -4,9 +4,9 @@ description: 了解如何在没有访问Git或Cloud Manager管道的情况下声
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
+source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ AEM as a Cloud Service提供了[多种方法来实施客户端重定向](https:/
 
 >[!NOTE]
 > 使用此功能的重定向映射管理器需要ACS Commons版本&#x200B;**6.7.0或更高版本**，而使用重定向管理器需要版本&#x200B;**6.10.0或更高版本**。
+
+有关详细的分步实施指南，请参阅[实施管道免费的URL重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)教程。
 
 ## 重写映射 {#rewrite-map}
 
@@ -75,7 +77,6 @@ RewriteCond ${map.foo:$1} !=""
 RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 ```
 
-
 ## 注意事项 {#considerations}
 
 请牢记以下内容：
@@ -83,3 +84,8 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 * 默认情况下，在加载重写映射时，Apache会启动，而不等待加载完整映射文件，因此在加载完整映射之前，可能存在临时不一致的情况。 可以更改此设置，以便Apache会等待加载完整映射内容，但Apache需要更长的时间才能启动。 若要更改此行为以便Apache等待，请将`wait:true`添加到`managed-rewrite-maps.yaml`文件。
 * 要更改加载之间的频率，请将`ttl: <integer>`添加到`managed-rewrite-maps.yaml`文件中。 例如：`ttl: 120`。
 * 对于RewriteMap单个条目，Apache的长度限制为1024。
+
+## 教程 {#tutorials}
+
+1. [正在实施无管道URL重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
