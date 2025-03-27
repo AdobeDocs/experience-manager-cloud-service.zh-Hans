@@ -1,15 +1,15 @@
 ---
 title: '在为 [!DNL Edge Delivery Services]创作内容时集成 [!DNL AEM Assets] '
-description: 了解如何将 [!DNL AEM Assets] 与 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 与 [!DNL Microsoft Word] 集成，将 [!DNL Google Docs], integrate [!DNL AEM Assets] 与 [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Universal Editor] 集成，以及如何将 [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Microsoft Word] 和 [!DNL Google Docs]集成。
+description: 了解如何将 [!DNL AEM Assets] 与 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 与 [!DNL Microsoft Word] 集成，将 [!DNL Google Docs], integrate [!DNL AEM Assets] 与 [!DNL Universal Editor], integrate [!DNL Dynamic Media] 与 [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Universal Editor] 集成，以及如何将 [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Microsoft Word] 和 [!DNL Google Docs]集成。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fe3286bf792f387c2209d7b827ba195b50c586b5
+source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 3%
 
 ---
 
-# 在为[!DNL Edge Delivery Services]创作内容时集成[!DNL AEM Assets] {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+# 在为[!DNL Edge Delivery Services]创作内容时集成[!DNL AEM Assets] {#integrate-aem-assets-with-edge-delivery-services}
 
 <table>
     <tr>
@@ -51,12 +51,12 @@ ht-degree: 3%
 
 您可以在以下位置编辑内容：
 
-* [[!DNL Microsoft Word]或 [!DNL Google Docs]](#integrate-aem-assets-with-document-based-authoring-tools)
-* [[!DNL Universal Editor]](#integrate-aem-assets-with-UE-universal-editor)
+* [[!DNL Microsoft Word]或 [!DNL Google Docs]](#integrate-dynamic-media-with-edge-delivery-services)
+* [[!DNL Universal Editor]](#integrate-aem-assets-with-universal-editor-UE)
 
 编辑内容后，您可以将其发布到Edge Delivery Services。
 
-## 将[!DNL AEM Assets]与[!DNL Edge Delivery Services]的基于文档的创作流集成 {#integrate-aem-assets-with-document-based-authoring-tools}
+## 将[!DNL AEM Assets]与[!DNL Edge Delivery Services]的基于文档的创作流集成 {#integrate-dynamic-media-with-edge-delivery-services}
 
 当[!DNL AEM Assets]与您的基于文档的创作工具（如[!DNL Microsoft Word]或[!DNL Google Docs]）集成时，它会在您的创作工具中提供资产选择器。 使用此资产选择器访问[!DNL AEM Assets]，并将批准的资产插入您的内容。
 如果您已经拥有[!DNL Edge Delivery Services]网站，请参阅[[!DNL AEM Assets] 插件](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)文档，以了解如何将[!DNL AEM Assets]与您现有的[!DNL AEM]项目集成。
@@ -88,7 +88,7 @@ ht-degree: 3%
 
 有关功能的更多详细信息，请参阅[[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)文档。
 
-### 先决条件 {#prerequisites-for-dm-with-openapi-capabilities-to-use-aem-assets}
+### 先决条件 {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
 要使用资源引用，您必须具有：
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 * [!DNL AEM Assets sidekick plugin]已启用，并启用了图像资源的复制引用。 有关更多详细信息，请参阅[此文档](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)以进行基于文档的创作，并参阅[此文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)以进行基于通用编辑器的创作。
 * 已批准的Assets。 批准的资源通过Assets Cloud Services后端或UI操作具有`dam:status=Approved`。
 
-### 使用通过[!DNL Dynamic Media with OpenAPI capabilities]交付的资产{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
+### 使用通过[!DNL Dynamic Media with OpenAPI capabilities]交付的资产{#Using-Dynamic-Media-with-edge-delivery-services}
 
 选择以下链接，了解如何使用[!DNL Dynamic Media with OpenAPI capabilities]在内容中传递图像、视频和其他资源类型：
 
@@ -109,11 +109,11 @@ ht-degree: 3%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
-## 示例[!DNL Edge Delivery Services]站点{#example-of-an-Edge-Delivery-Services-site}
+## 示例[!DNL Edge Delivery Services]站点{#dynamic-media-with-google-docs-and-ms-word}
 
 请参阅[WKND Travel](http://bit.ly/3DExLnf)，该网站是使用[!DNL Edge Delivery Services]的基于文档的创作功能生成的。 网站内容是在[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中创作的，而[!DNL Dynamic Media with OpenAPI capabilities]用于交付内容中的资源。 创作后，内容将直接从文档发布。 浏览此[Git存储库](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)以了解用于为此[!DNL Edge Delivery Services (EDS)]站点创建基于文档的创作设置的所有基本文件、文件夹、配置、网站样式和功能代码。
 
-## 将[!DNL AEM Assets]与[!DNL Edge Delivery Services]的基于[!DNL Universal Editor]的创作流集成 {#integrate-aem-assets-with-UE-universal-editor}
+## 将[!DNL AEM Assets]与[!DNL Edge Delivery Services]的基于[!DNL Universal Editor]的创作流集成 {#integrate-aem-assets-with-universal-editor-UE}
 
 设置[!DNL Universal Editor]以与[!DNL AEM Assets]集成。 此集成允许您使用[!DNL Dynamic Media with OpenAPI capabilities]交付资产。
 
