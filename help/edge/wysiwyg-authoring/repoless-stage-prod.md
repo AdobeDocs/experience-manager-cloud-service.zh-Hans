@@ -4,9 +4,9 @@ description: 了解如何通过不断利用单个代码库为您的暂存和生�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -141,3 +141,9 @@ ht-degree: 2%
 1. 在`https://main--wknd-prod--<your-github-org>.aem.page`访问您的新的Edge Delivery Services网站以获取该页面。
 
 如果您看到所做的更改，则表明您单独的生产站点设置运行正常。
+
+## 用途 {#usage}
+
+在配置具有重写暂存和生产环境的项目后，您可以独立管理这些环境的代码。 下图说明了AEM、Edge Delivery Services Sites和GitHub存储库中各种环境中的内容关系。
+
+![AEM环境和重写生产/暂存环境的插图](assets/repoless/aem-edge-github.png)
