@@ -2,10 +2,10 @@
 title: 将远程 AEM Assets 与 AEM Sites 集成
 description: 了解如何配置AEM站点并将其与批准的AEM Assets连接。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 17%
+source-wordcount: '1085'
+ht-degree: 16%
 
 ---
 
@@ -178,4 +178,4 @@ ht-degree: 17%
 
 ### 在Edge Delivery Services中访问远程资源 {#access-assets-eds}
 
-您还可以访问Edge Delivery Services中的远程资源。 有关详细信息，请参阅[将来自Assets as a Cloud Service的资源与OpenAPI功能结合使用Dynamic Media交付](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi)。
+在Microsoft Word、Google Docs或通用编辑器中创作内容时，您可以访问远程资产，然后将内容发布到Edge Delivery Services。 您还可以将Dynamic Media与OpenAPI一起使用来提供品牌批准的资产，并利用它提供的许多其他好处。 有关详细信息，请参阅[在为AEM Assets创作内容时集成Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)。
