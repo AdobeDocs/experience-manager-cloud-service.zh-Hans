@@ -4,7 +4,7 @@ description: 本文全面概述了 SPA 编辑器及其工作原理，包括 SPA 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -25,13 +25,13 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。此�
 
 要在 AEM 中启用 SPA 编辑，需要 SPA 的 JSON 输出与 AEM 存储库中的内容模型之间的映射以保存对内容所做的更改。
 
-AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中加载时与 SPA JS 代码进行交互，从而发送事件并激活编辑控件的位置以允许进行上下文编辑。此功能以Content Services API端点概念为基础，因为必须通过Content Services加载SPA中的内容。
+AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中加载时与 SPA JS 代码进行交互，从而发送事件并激活编辑控件的位置以允许进行上下文编辑。此功能以Content Services API端点概念为基础，因为必须通过Content Services加载来自SPA的内容。
 
 有关AEM中SPA的更多详细信息，请参阅以下内容：
 
 * 有关SPA的技术要求，请[SPA Blueprint](blueprint.md)。
-* [在AEM中使用React的SPA快速入门](getting-started-react.md)，快速了解使用React的简单SPA。
-* [使用Angular在AEM中使用SPA快速入门](getting-started-angular.md)，快速了解使用Angular的简单SPA。
+* [在AEM中使用React快速入门SPA](getting-started-react.md)，快速了解使用React的简单SPA。
+* [使用Angular的AEM中的SPA快速入门](getting-started-angular.md)，快速了解使用Angular的简单SPA。
 
 ## 设计 {#design}
 
@@ -189,6 +189,6 @@ AEM SPA Editor SDK 已获得 Adobe 的完全支持，并且在不断得到增强
 * 编辑配置（例如，监听器）
 * 还原/重做
 * 页面差异和时间扭曲
-* 执行HTML重写服务器端的功能，如链接检查器、CDN重写器服务、URL缩短等。
+* 执行HTML重写服务器端的功能，如[链接检查器、](/help/operations/link-checker.md) CDN重写器服务、URL缩短等。
 * 开发人员架构
 * AEM 启动项
