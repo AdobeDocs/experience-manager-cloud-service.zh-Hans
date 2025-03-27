@@ -5,10 +5,10 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 100%
+source-wordcount: '1320'
+ht-degree: 98%
 
 ---
 
@@ -132,19 +132,21 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ### 片段引用 {#fragment-references}
 
-**片段引用**：
+**片段引用**&#x200B;和&#x200B;**片段引用UUID**：
 
-* 是可在定义内容片段模型时可用的特定数据类型。
+* 是定义内容片段模型时可用的特定数据类型。
 * 引用另一个片段，具体取决于特定的内容片段模型。
 * 让您依次创建和检索结构化数据。
 
    * 定义为&#x200B;**多源**，则主片段可以引用（检索）多个子片段。
 
-### JSON 预览 {#json-preview}
+<!--
+### JSON Preview {#json-preview}
 
-要帮助设计和开发内容片段模型，您可以在内容片段编辑器中预览 JSON 输出。
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-![JSON 预览](assets/cfm-model-json-preview.png "JSON 预览")
+![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}

@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 96%
 
 ---
 
@@ -184,9 +184,10 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 * 日期和时间
 * 枚举
 * 标记
-* 内容引用
-* 片段引用
+* 片段引用/片段引用UUID
+* 内容引用/内容引用UUID
 * JSON 对象
+* 选项卡占位符
 
 ### 引用和嵌套内容 {#references-nested-content}
 
@@ -213,7 +214,9 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 >
 >请参阅“其他资源 – 配置浏览器中的内容片段”
 
-之后，可以创建内容片段模型并定义结构。可以在&#x200B;**工具** > **常规** > **内容片段模型**&#x200B;下完成此操作。例如：
+之后，可以创建内容片段模型并定义结构。所有这些都可以在内容片段控制台中完成。 从控制台中为内容片段模型选择面板，导航到相应的文件夹，然后使用&#x200B;**创建**&#x200B;打开&#x200B;**新建内容片段模型**&#x200B;对话框。
+
+创建模型后，即可编辑模型。 例如：
 
 ![内容片段模型](assets/cfm-model.png)
 
@@ -227,9 +230,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 ### 选择适当的模型 {#select-model}
 
-在实际创建内容的过程中，第一步是创建内容片段。可使用“资源” > “文件”下的所需文件夹中的“创建” > “内容片段”来执行此操作。该向导将会引导您完成这些步骤。
-
-内容片段基于特定的内容片段模型，在创建过程中，您首先会选择该模型。
+在实际创建内容的过程中，第一步是创建内容片段。这是使用内容片段控制台的&#x200B;**内容片段**&#x200B;选项卡中的&#x200B;**创建**&#x200B;完成的。
 
 ### 创建和编辑结构化内容 {#create-edit-structured-content}
 
@@ -247,7 +248,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 在选择适当的模型后，将在内容片段编辑器中打开一个内容片段以进行编辑：
 
-![内容片段编辑器](assets/cfm-editor.png)
+![内容片段编辑器 – 概述](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
