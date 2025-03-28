@@ -1,20 +1,20 @@
 ---
 title: 使用CTT后将主体批量上传到IMS
-description: 有关为组和用户批量上传文件，以及如何在Admin Console中使用这些文件在IMS中创建组和用户的概述。
+description: 概述组和用户的批量上传文件，以及如何在 Admin Console 上使用它们在 IMS 中创建组和用户。
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 使用CTT后将主体批量上传到IMS {#bulk-principal-uploading}
+# 使用 CTT 后将主体批量上传到 IMS {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
 >title="主体批量上传"
->abstract="有关为组和用户批量上传文件，以及如何在Admin Console中使用这些文件在IMS中创建组和用户的概述。"
+>abstract="概述组和用户的批量上传文件，以及如何在 Admin Console 上使用它们在 IMS 中创建组和用户。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 文档"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
