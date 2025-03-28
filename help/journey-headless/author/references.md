@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 89%
 
 ---
 
@@ -44,6 +44,13 @@ ht-degree: 100%
 
 内容引用就是这样做的 – 它们允许您引用任何其他内容。这将打开一个浏览器，其中您可选择内容项。
 
+有两种类型：
+
+* **内容引用**
+   * 指定引用资源的路径
+* **内容引用(UUID)**
+   * 在编辑器中，引用指定被引用资源的路径；在内部，引用作为引用该资源的通用唯一ID (UUID)来保存
+
 ## 资源/媒体引用 {#assets-media-references}
 
 可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器，其中您可选择资源。
@@ -75,6 +82,13 @@ ht-degree: 100%
 可以使用片段引用来表示这些相互关系，因为您（作者）和 Headless 应用程序都已理解它们。
 
 作为作者，虽然您不负责定义这些关系（这项工作由内容架构师在创建内容片段模型时完成），但您需要知道如何识别和编辑引用。
+
+有两种类型：
+
+* **片段引用**
+   * 指定引用资源的路径
+* **片段引用(UUID)**
+   * 在编辑器中，引用指定被引用资源的路径；在内部，引用作为引用该资源的通用唯一ID (UUID)来保存
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
