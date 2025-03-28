@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 85%
+source-wordcount: '2124'
+ht-degree: 77%
 
 ---
 
@@ -216,6 +216,39 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
    * 点击![复制图标](assets/do-not-localize/copy.svg)即可复制 URL。
    * 点击![编辑图标](assets/do-not-localize/edit.svg)即可编辑 URL。
 1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+
+
+### 使用元数据表单中的标记组件 {#tag-component-metadata-form}
+
+根元素表示可与资产关联的标记的树结构，有助于根据分配给资产的标记识别资产。 此外，在元数据编辑器中配置元数据表单时，您可以限制特定分类的访问。
+
+#### 标记组件配置 {#tags-component-configuration}
+
+通过执行以下步骤来配置标记组件：
+
+1. 转到元数据编辑器并导航到&#x200B;**[!UICONTROL 标记]**，然后将其放在画布上。
+1. 重命名画布上的组件。 为此，请转到“设置”面板中[!UICONTROL 元数据属性]下的&#x200B;**[!UICONTROL 标签]**，然后添加用于标识的文本。
+1. 在设置面板的[!UICONTROL 元数据属性]下，搜索要分配给该组件的元数据属性。
+1. 单击&#x200B;**[!UICONTROL 限制为特定分类]**&#x200B;以限制分类的根路径。 为此，请浏览标记并选择特定路径的分类。
+1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+
+   ![根标记配置](assets/root-tag-config.png)
+
+1. [将元数据表单分配给文件夹](#assign-metadata-form-folder)。
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+要查看配置的根标记，请转到资产的详细信息页面，其中执行元数据表单和根标记之间的映射。
 
 ## 后续步骤 {#next-steps}
 
