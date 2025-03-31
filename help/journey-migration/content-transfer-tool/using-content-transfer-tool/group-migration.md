@@ -2,9 +2,9 @@
 title: 群组迁移
 description: AEM as a Cloud Service中的组迁移概述。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ AEM as a Cloud Service的一项重大更改是完全集成使用Adobe ID来访�
 
 请注意，已迁移的组不再被视为AEM的“本地组”；它们是AEM中支持IMS的组，但IMS中可能尚不存在它们。  必须单独在IMS中重新创建它们，以便它们可以在AEM和IMS之间同步。  可以通过Admin Console和其他方法在IMS中单独或批量创建组。  有关在Admin Console上单独或批量创建组的详细信息，请参阅[管理用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html)。
 
-此IMS配置的例外情况是Assets收藏集创建的组。 在AEM上创建收藏集后，将创建组以访问该收藏集；此类组将迁移到云系统，但不会配置为由IMS管理。  要将IMS用户添加到这些组，必须在Assets UI的“组属性”页面中单独或集体地将这些用户添加为其他IMS组的一部分。
+此IMS配置的例外情况是Assets收藏集和专用文件夹创建的组。 在AEM上创建收藏集或专用文件夹后，将创建组以访问该内容；此类组将迁移到云系统，但不会配置为由IMS管理。  要将IMS用户添加到这些组，必须在Assets UI的“组属性”页面中单独或集体地将这些用户添加为其他IMS组的一部分。
 
 
 ## 选择退出组迁移 {#group-migration-option}
