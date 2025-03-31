@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 41155a724f48ad28a12aac615a3e9a13bb3afa26
+source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1075'
 ht-degree: 8%
 
 ---
@@ -67,31 +67,33 @@ ht-degree: 8%
 
 1. 单击&#x200B;**更新**。
 
-<!-- 
-## Go live readiness: Configure DNS settings for a custom domain {#go-live-readiness} 
 
-Before a custom domain can serve traffic in Adobe Cloud Manager, you must complete DNS configuration with your DNS provider. After deploying a domain mapping and clicking **Go live**, Cloud Manager displays a dialog box that guides you through the DNS record setup process. You have the option to go live by adding either a CNAME record type or an A record type representing Fastly's IPs, simplifying domain routing. This ability eliminates the restriction of relying solely on CNAME records for domain setup with Fastly.
+## 上线准备：为自定义域配置DNS设置 {#go-live-readiness}
 
-MAYBE There is support for A record types to improve Go Live readiness for domains using CDN configurations in AEM Cloud Manager. MAYBE
+在自定义域可以提供流量之前，您必须先向DNS提供商完成DNS配置。 部署域映射并单击&#x200B;**上线**&#x200B;后，Cloud Manager会显示一个对话框，引导您完成DNS记录设置过程。 您可以通过添加CNAME记录类型或A记录类型来选择上线。
 
-See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record).
+<!-- See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record). -->
 
-**To configure Go live readiness:**
+**要配置上线准备工作：**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+1. 在左侧菜单的&#x200B;**服务**&#x200B;下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **域映射**。
+1. 在域映射表中，单击与要配置其上线就绪性的CDN对应的行末尾附近的&#x200B;**上线**。
 
-1. In the left side menu, under **Services**, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain Mappings**.
+   ![上线准备情况对话框](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
 
-1. In the Domain Mappings table, click **Go live** near the end of a row that corresponds to a CDN whose Go Live readiness you want to configure. 
+1. 在&#x200B;**上线准备**&#x200B;对话框中，执行以下操作之一：
 
-1. In the Go live readiness dialog box, do one of the following:
+   | 选项 | 步骤 |
+   | --- | --- |
+   | 配置记录 | 建议对根域（如`example.com`<br>）使用<ol><li>登录到DNS服务提供商的门户。<li>转到DNS记录部分。<li>创建一个A记录以指向列出的所有IP地址。</li></ol> |
+   | 配置 CNAME | 建议对自定义域（如`www.example.com`<br>）使用<ol><li>登录到DMS服务提供商的门户。<li>转到DNS记录部分。<li>在DNS服务提供商（您的自定义域）的DNS记录中映射[cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) （CNAME记录）。 此映射可确保将在自定义域中收到的请求重定向到Adobe的CDN。</li></ol> |
 
-    | Configure  | Steps |
-    | --- | --- |
-    | A RECORD | Recommended for root domains like `example.com`<br><ol><li>Log in to your DNS service provider's portal.<li>Go to the DNS Records section.<li>Create an A record to point to all the listed IP addresses.<li>In the Go live readiness dialog box, click **OK**.<li>In the Domain Mappings table, under the **Status** column, click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).<br>The status is updated to **Verified** when the resolution is complete.</li></ol> |
-    | CNAME | Recommended for custom domains like `www.example.com`<br><ol><li>Log in to your DMS service provider's portal.<li>Go to the DNS Records section.<li>Map [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider (your custom domain). This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN.<li>In the **Go live readiness** dialog box, click **OK** to save the record.<br>Wait for DNS propogation (may take several minutes to a few hours). When the **[!UICONTROL Status]** column in the Domamin Mappings table updates to **[!UICONTROL Verified]**, the custom domain is ready to use. You may need to click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to refresh the status.</li></ol> | 
-    
--->
+1. 在&#x200B;**上线准备工作**&#x200B;对话框中，单击&#x200B;**确定**&#x200B;保存记录。
+
+   等待DNS传播；这可能需要几分钟到几小时。
+
+   当域映射表中的&#x200B;**[!UICONTROL 状态]**&#x200B;列更新为&#x200B;**[!UICONTROL 已验证]**&#x200B;时，自定义域已准备就绪。 您可能需要单击![刷新图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)来更新状态。
 
 ## 删除CDN配置 {#delete-cdn}
 
