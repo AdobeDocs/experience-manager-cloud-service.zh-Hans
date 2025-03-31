@@ -4,10 +4,10 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
+source-git-commit: 167e6f01cd9bca6191dd47c33561d37a0633be77
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 38%
+source-wordcount: '1932'
+ht-degree: 26%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 38%
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择要将外部存储库链接到的程序。
 
-1. 在侧菜单的&#x200B;**服务**&#x200B;下，单击![文件夹大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存储库**。
+1. 在侧菜单的&#x200B;**程序**&#x200B;下，单击![文件夹大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存储库**。
 
    ![存储库页面](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
@@ -64,9 +64,9 @@ ht-degree: 38%
    | 令牌类型 | 描述 |
    | --- | --- |
    | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
-   | **添加新的访问令牌** | **存储库类型：GitHub**<br>• 在&#x200B;**令牌名称**&#x200B;文本字段中，键入您正在创建的访问令牌的名称。<br>• 按照 [GitHub 文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<br>·有关所需权限，请参阅以下信息： ![为GitHub创建新PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>·在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
-   |  | **存储库类型：GitLab**<br>• 在&#x200B;**令牌名称**&#x200B;文本字段中，键入您正在创建的访问令牌的名称。<br>• 按照 [GitLab 文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<br>·有关所需权限，请参阅以下信息： ![为GitLab创建新的PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>·在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
-   |  | **存储库类型：Bitbucket**<br>• 在&#x200B;**令牌名称**&#x200B;文本字段中，键入您正在创建的访问令牌的名称。<br>• 使用 [Bitbucket 文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<br>·有关所需权限，请参阅以下信息![为Bitbucket创建新PAT](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png)。 |
+   | **添加新的访问令牌** | **存储库类型： GitHub**<br><ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>对于所需的权限，请设置以下内容：<ul><li>**GitHub个人访问令牌(PAT)所需的权限**<br>&#x200B;这些权限确保Cloud Manager能够验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。 在GitHub中，当您生成个人访问令牌(PAT)时，请确保它包括以下内容：<ul><li>**存储库权限：**<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></ul><li>**必需的webhook事件（用于GitHub托管的存储库）**<br>&#x200B;这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。 手动配置GitHub webhook时，请确保将webhook设置为在以下事件中触发：<ul><li>**必需的webhook事件：**<ol><li>拉取请求<li>推送<li>问题评论</li></li></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+   |  | **存储库类型： GitLab**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>对于所需的权限，请设置以下内容：<ul><li>**GitLab个人访问令牌(PAT)所需的权限**<br>&#x200B;这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。 在GitLab中创建个人访问令牌时，请确保该令牌包含以下范围：<ul><li>**令牌范围：**<ul><li>api<li>read_user</li></li></ul></ul><li>**必需的webhook事件（用于GitLab托管的存储库）**<br>&#x200B;这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。 在GitLab中手动配置webhook时，请确保包括以下事件：<ul><li>**必需的webhook事件：**<ol><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+   |  | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>对于所需的权限，请设置以下内容：<ul><li>**Bitbucket个人访问令牌(PAT)所需的权限**<br>&#x200B;这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。 在Bitbucket中创建应用程序密码时，请确保该密码包含以下内容：<ul><li>**必需的应用密码权限：**<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></ul><li>**必需的webhook事件（针对托管比特桶的存储库）**<br>&#x200B;这些事件确保Cloud Manager能够验证拉取请求、响应代码推送并与评论进行交互以便协调管道。 如果在Bitbucket中手动设置webhook，请将其配置为在以下事件中触发：<ul><li>**必需的webhook事件：**<ol><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
    >[!NOTE]
    >
