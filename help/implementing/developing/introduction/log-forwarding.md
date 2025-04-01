@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 如果客户拥有带日志记录供应商的许可证或托管日志记录产品，则可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
-* Amazon S3（私人测试版，请参阅[^1]）
+* Amazon S3（私人测试版，请参阅下面的注释）
 * Azure Blob存储
 * Datadog
 * Elasticsearch或OpenSearch
 * HTTPS
 * Splunk
-* Sumo Logic（私有Beta，请参阅[^1]）
+* Sumo Logic（私有测试版，请参阅下面的注释）
 
 日志转发以自助方式配置，方法是在Git中声明配置，并且可以通过Cloud Manager配置管道部署到开发、暂存和生产环境类型。 可以使用调用命令行工具将配置文件部署到快速开发环境（RDE）。
 
@@ -33,7 +33,9 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 请注意，与发送到日志记录目的地的日志相关联的网络带宽被视为您组织的网络I/O使用的一部分。
 
-[^1] Amazon S3和Sumo Logic位于Private Beta中，仅支持AEM日志(包括Apache/Dispatcher)。  通过HTTPS的New Relic还处于私人测试阶段。 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
+>[!NOTE]
+>
+>Amazon S3和Sumo Logic位于Private Beta中，仅支持AEM日志(包括Apache/Dispatcher)。  通过HTTPS的New Relic还处于私人测试阶段。 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
 
 ## 本文的结构 {#how-organized}
 
@@ -192,6 +194,7 @@ data:
 
 ### Amazon S3 {#amazons3}
 
+>[!NOTE]
 >
 >定期写入S3的日志，每种日志文件类型每10分钟写入一次。  这可能会导致切换功能后将日志写入S3的初始延迟。  可在[此处](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)找到有关这种行为存在原因的更多信息。
 
@@ -384,7 +387,7 @@ data:
 
 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
 
->
+>[!NOTE]
 >New Relic会根据您的New Relic帐户配置的位置，提供特定于区域的端点。  有关New Relic文档，请参阅[此处](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
 
 #### HTTPS CDN日志 {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > 您需要订购Sumo Logic Enterprise才能使用“索引”字段功能。  非企业订阅的日志将作为标准路由到`sumologic_default`分区。  有关详细信息，请参阅[Sumo逻辑分区文档](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 日志条目格式 {#log-formats}
