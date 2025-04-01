@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
+source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -19,17 +19,21 @@ ht-degree: 1%
 
 如果客户拥有带日志记录供应商的许可证或托管日志记录产品，则可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
+* Amazon S3（私人测试版，请参阅[^1]）
 * Azure Blob存储
 * Datadog
 * Elasticsearch或OpenSearch
 * HTTPS
 * Splunk
+* Sumo Logic（私有Beta，请参阅[^1]）
 
-日志转发以自助方式配置，方法是在Git中声明配置，并且可以通过Cloud Manager配置管道部署到开发、暂存和生产环境类型。 配置文件可以使用命令行工具部署到快速开发环境(RDE)。
+日志转发以自助方式配置，方法是在Git中声明配置，并且可以通过Cloud Manager配置管道部署到开发、暂存和生产环境类型。 可以使用调用命令行工具将配置文件部署到快速开发环境（RDE）。
 
 AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（如专用出口IP）进行路由。
 
 请注意，与发送到日志记录目的地的日志相关联的网络带宽被视为您组织的网络I/O使用的一部分。
+
+[^1] Amazon S3和Sumo Logic位于Private Beta中，仅支持AEM日志(包括Apache/Dispatcher)。  通过HTTPS的New Relic还处于私人测试阶段。 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
 
 ## 本文的结构 {#how-organized}
 
@@ -39,7 +43,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 * 传输和高级网络 — 在创建日志记录配置之前，应考虑网络设置
 * 记录目标配置 — 每个目标的格式略有不同
 * 日志条目格式 — 有关日志条目格式的信息
-* 从旧版日志转发迁移 — 如何从之前由Adobe设置的日志转发迁移到自助方法
+* 从旧版日志转发迁移 — 如何从Adobe之前设置的日志转发迁移到自助方法
 
 ## 设置 {#setup}
 
@@ -67,7 +71,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 配置中的令牌（如`${{SPLUNK_TOKEN}}`）表示不应存储在Git中的密钥。 请将其声明为Cloud Manager [机密环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 确保选择&#x200B;**全部**&#x200B;作为“已应用服务”字段的下拉列表值，以便可以将日志转发到作者、发布和预览层。
 
-通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志(包括Apache/Dispatcher)之间的不同值，其中的属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
+通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志(包括Apache/Dispatcher)之间的不同值，其中属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
 
 ```yaml
    kind: "LogForwarding"
@@ -177,7 +181,7 @@ data:
       advancedNetworking: true
 ```
 
-对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob存储区，其中可以写入逻辑以将已知IP的日志发送到其最终目标。
+对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob Store，其中可以写入逻辑，以将已知IP的日志发送到其最终目标。
 
 >[!NOTE]
 >CDN日志不可能显示自AEM日志显示来源的IP地址，这是因为日志是直接从Fastly而不是AEM Cloud Service发送的。
@@ -185,6 +189,43 @@ data:
 ## 记录目标配置 {#logging-destinations}
 
 下面列出了受支持的日志记录目标的配置以及任何特定注意事项。
+
+### Amazon S3 {#amazons3}
+
+>
+>定期写入S3的日志，每种日志文件类型每10分钟写入一次。  这可能会导致切换功能后将日志写入S3的初始延迟。  可在[此处](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)找到有关这种行为存在原因的更多信息。
+
+```yaml
+kind: "LogForwarding"
+version: "1.0"
+data:
+  awsS3:
+    default:
+      enabled: true
+      region: "your-bucket-region"
+      bucket: "your_bucket_name"
+      accessKey: "${{AWS_S3_ACCESS_KEY}}"
+      secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+```
+
+要使用S3日志转发器，您需要为AWS IAM用户预配置用于访问S3存储段的适当策略。  请参阅[此处](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)以了解如何创建IAM用户凭据。
+
+IAM策略应允许用户使用`s3:putObject`。  例如：
+
+```json
+{
+   "Version": "2012-10-17",
+   "Statement": [{
+       "Effect": "Allow",
+       "Action": [
+           "s3:PutObject"
+       ],
+       "Resource": "arn:aws:s3:::your_bucket_name/*"
+   }]
+}
+```
+
+有关AWS存储段策略实施的更多信息，请参阅[此处](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)。
 
 ### Azure Blob存储 {#azureblob}
 
@@ -309,7 +350,7 @@ data:
 ![弹性部署凭据](/help/implementing/developing/introduction/assets/ec-creds.png)
 
 * 对于AEM日志，`index`设置为`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`之一
-* optional pipeline属性应设置为Elasticsearch或OpenSearch引入管道的名称，可以将其配置为将日志条目路由到相应的索引。 管道的处理器类型必须设置为&#x200B;*script*，脚本语言应设置为&#x200B;*无痛苦*。 以下是将日志条目路由到索引（如aemaccess_dev_26_06_2024）的脚本片段示例：
+* 可选的pipeline属性应设置为Elasticsearch或OpenSearch摄取管道的名称，可以将其配置为将日志条目路由到相应的索引。 管道的处理器类型必须设置为&#x200B;*script*，脚本语言应设置为&#x200B;*无痛苦*。 以下是将日志条目路由到索引（如aemaccess_dev_26_06_2024）的脚本片段示例：
 
 ```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -338,6 +379,13 @@ data:
 
 * URL字符串必须包含&#x200B;**https://**，否则验证将失败。
 * URL可能包含端口。 例如，`https://example.com:8443/aem_logs/aem`。如果url字符串中未包含任何端口，则采用端口443（默认的HTTPS端口）。
+
+#### New Relic日志API {#newrelic-https}
+
+向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
+
+>
+>New Relic会根据您的New Relic帐户配置的位置，提供特定于区域的端点。  有关New Relic文档，请参阅[此处](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
 
 #### HTTPS CDN日志 {#https-cdn}
 
@@ -389,28 +437,34 @@ data:
 >
 > [如果将](#legacy-migration)从旧版日志转发迁移到此自助模型，则发送到您的Splunk索引的`sourcetype`字段的值可能已更改，因此请进行相应调整。
 
-<!--
-### Sumo Logic {#sumologic}
+### Sumo逻辑 {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+在配置Sumo Logic进行数据摄取时，您会看到“HTTP Source地址”，该地址在单个字符串中提供主机、接收者URI和私钥。  例如：
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+您需要复制URL的最后一个部分（前面没有`/`）并将其添加为[CloudManager机密环境变量](/help/operations/config-pipeline.md#secret-env-vars)，如上面[设置](#setup)部分中所述，然后在您的配置中引用该变量。  下面提供了一个示例。
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  sumologic:
+    default:
+      enabled: true
+      collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+      privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+      index: "aem-logs"
+```
+
+>
+> 您需要订购Sumo Logic Enterprise才能使用“索引”字段功能。  非企业订阅的日志将作为标准路由到`sumologic_default`分区。  有关详细信息，请参阅[Sumo逻辑分区文档](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 日志条目格式 {#log-formats}
 
-有关每种日志类型(CDN日志和包括Apache/Dispatcher的AEM日志)的格式，请参阅[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)。
+有关每种日志类型(CDN日志和包括Apache/Dispatcher的AEM as a Cloud ServiceAEM日志)的格式，请参阅[日志记录](/help/implementing/developing/introduction/logging.md)。
 
 由于来自多个程序和环境的日志可能会转发到同一日志记录目标，因此除了日志记录文章中所述的输出之外，每个日志条目中还将包含以下属性：
 
@@ -432,11 +486,11 @@ aem_tier: author
 
 在通过自助模型实现日志转发配置之前，已请求客户打开支持工单，Adobe将在其中启动集成。
 
-欢迎通过Adobe以这种方式设置的客户在方便时改用自助模式。 进行此过渡有几个原因：
+欢迎已由Adobe以这种方式设置的客户在方便时改用自助模式。 进行此过渡有几个原因：
 
 * 已配置新环境（例如，新的开发环境或RDE）。
 * 更改您现有的Splunk端点或凭据。
-* 在CDN日志可用之前，Adobe已设置您的日志转发，您希望接收CDN日志。
+* Adobe已在CDN日志可用之前设置日志转发，您想要接收CDN日志。
 * 有意识地决定主动适应自助服务模式，使您的组织甚至在对时间敏感的更改之前就拥有了知识。
 
 准备迁移时，只需按照前几节所述配置YAML文件即可。 使用Cloud Manager配置管道部署到应应用配置的每个环境。
