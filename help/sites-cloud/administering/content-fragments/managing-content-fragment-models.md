@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 48%
 
 ---
@@ -80,7 +80,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
          * 显示有关模型状态的信息
       * [有关内容片段模型的某些其他信息字段](#information-content-fragments)可用于[快速筛选](#fast-filtering)：
          * 在列中选择一个值，该值将立即作为过滤器应用
-         * **修改者**、**发布者**&#x200B;和&#x200B;**状态**&#x200B;列支持快速筛选。
+         * **Modified By**、**Published By**&#x200B;和&#x200B;**Status**&#x200B;列支持快速筛选。
       * 将鼠标悬停在列标题上方，可显示下拉操作选择器和宽度滑块。使用它们可以：
          * 排序 – 选择适当的升序或降序操作
 该操作将根据该列对整个表进行排序。排序仅适用于相应的列。
@@ -95,7 +95,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * **名称**
    * 提供用于在编辑器中打开模型的链接。
-* 已锁定
+* **已锁定** （挂锁图标）
    * 当模型被锁定时，用挂锁图标指示。
 * **路径**
    * 提供路径作为链接，以在控制台中打开配置。
