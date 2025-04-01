@@ -6,8 +6,8 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 
@@ -18,8 +18,6 @@ ht-degree: 100%
 欢迎使用面向 Adobe Experience Manager Headless CMS 新手开发人员的文档！
 
 了解强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 开发项目中利用它们。此历程为您提供了开发第一个 Headless 应用程序所需的所有信息。
-
-{{headless-trials-promotion}}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
@@ -92,7 +90,7 @@ AEM 的 Headless 实施使用内容片段模型和内容片段来专注于创建
 
 查看这些附加历程，详细了解 AEM 的强大功能如何协作。
 
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans) – 如果您更喜欢通过实践来学习并具备 AEM 知识基础，请参阅我们的按 API 和框架编排的实践教程，这些教程探究了如何创建和使用基于 AEM Headless 构建的应用程序。
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
