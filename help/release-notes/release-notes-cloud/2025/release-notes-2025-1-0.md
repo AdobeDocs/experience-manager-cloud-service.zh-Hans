@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.1.0 版�
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
+source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 92%
+source-wordcount: '1740'
+ht-degree: 93%
 
 ---
 
@@ -33,15 +33,11 @@ ht-degree: 92%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- 
+## 发布视频 {#release-video}
 
-## Release Video {#release-video}
+观看 2025 年 1 月版概述视频，大致了解 2025.1.0 版的新增功能：
 
-Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -134,7 +130,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### [自适应Forms中的HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 自适应Forms中的[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 通过自适应Forms，您可以使用HTML电子邮件模板。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 
