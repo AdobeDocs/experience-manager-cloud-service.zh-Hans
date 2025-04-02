@@ -4,9 +4,9 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2364'
 ht-degree: 9%
 
 ---
@@ -18,8 +18,8 @@ AEM as a Cloud Service是一个平台，客户可以在此平台上包含自定�
 AEM as a Cloud Service日志记录和日志级别在配置文件中进行管理，这些配置文件作为AEM项目的一部分存储在Git中，并通过Cloud Manager部署为AEM项目的一部分。 AEM as a Cloud Service中的日志记录可以划分为三个逻辑集：
 
 * AEM日志记录，在AEM应用程序级别执行日志记录
-* Apache HTTPD Web Server/Dispatcher日志记录，用于在Publish层上执行Web服务器和Dispatcher的日志记录。
-* CDN日志记录（如其名称所示）在CDN上执行日志记录。 此功能将在9月初逐步向客户推出。
+* Apache HTTPD Web Server/Dispatcher日志记录，用于在发布层上执行Web服务器和Dispatcher的日志记录。
+* CDN日志记录（如其名称所示）在CDN上执行日志记录。
 
 ## AEM日志记录 {#aem-logging}
 
@@ -27,15 +27,15 @@ AEM应用程序级别的日志记录由三个日志处理：
 
 1. AEM Java日志，用于呈现AEM应用程序的Java日志记录语句。
 1. HTTP请求日志，用于记录有关AEM提供的HTTP请求及其响应的信息
-1. HTTP访问日志，用于记录摘要信息和AEM提供的HTTP请求
+1. HTTP访问日志，用于记录由AEM提供的汇总信息和HTTP请求
 
 >[!NOTE]
 >
->从Publish层的Dispatcher缓存或上游CDN提供的HTTP请求不会反映在这些日志中。
+>从发布层的Dispatcher缓存或上游CDN提供的HTTP请求不会反映在这些日志中。
 
 ## AEM Java日志记录 {#aem-java-logging}
 
-AEM as a Cloud Service提供对Java log语句的访问。 AEM应用程序的开发人员应遵循常规Java日志记录最佳实践，在以下日志级别记录有关自定义代码执行的相关语句：
+AEM as a Cloud Service提供对Java log语句的访问。 AEM应用程序的开发人员应遵循常规Java日志记录最佳实践，在以下日志级别记录有关自定义代码执行的相关声明：
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ AEM as a Cloud Service提供对Java log语句的访问。 AEM应用程序的开�
 
 虽然Java日志记录支持若干其他级别的日志记录粒度，但AEM as a Cloud Service建议使用上述三个级别。
 
-AEM日志级别是通过OSGi配置为每个环境类型设置的，这反过来会提交到Git，并通过Cloud Manager部署到AEM as a Cloud Service。 因此，最好保持日志语句一致且环境类型众所周知，以确保在Cloud Service时通过AEM提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
+AEM日志级别是通过OSGi配置为每个环境类型设置的，这反过来会提交到Git，并通过Cloud Manager部署到AEM as a Cloud Service。 因此，最好保持日志语句一致且对于环境类型是众所周知的，以确保通过AEM as Cloud Service提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
 
 **示例日志输出**
 
@@ -135,14 +135,14 @@ AEM日志级别是通过OSGi配置为每个环境类型设置的，这反过来�
 </tr>
 <tr>
 <td>日志消息</td>
-<td>未指定审批者，默认为[创意审批者用户组]</td>
+<td>未指定审批者，默认为[ Creative审批者用户组]</td>
 </tr>
 </tbody>
 </table>
 
 ### 配置记录器 {#configuration-loggers}
 
-AEM Java日志被定义为OSGi配置，因此使用运行模式文件夹定位特定的AEM as a Cloud Service环境。
+AEM Java日志被定义为OSGi配置，因此使用运行模式文件夹定位特定AEM as a Cloud Service环境。
 
 通过Sling LogManager工厂的OSGi配置为自定义Java包配置Java日志记录。 有三种受支持的配置属性：
 
@@ -248,9 +248,9 @@ AEM as a Cloud Service的HTTP请求日志记录可按时间顺序深入分析向
 
 ## AEM HTTP访问日志记录 {#aem-http-access-logging}
 
-AEM作为Cloud ServiceHTTP访问日志记录按时间顺序显示HTTP请求。 每个日志条目表示访问AEM的HTTP请求。
+AEM as Cloud Service HTTP访问日志记录按时间顺序显示HTTP请求。 每个日志条目表示访问AEM的HTTP请求。
 
-此日志有助于快速了解向AEM发出的HTTP请求（如果这些请求通过查看随附的HTTP响应状态代码成功）以及HTTP请求完成所用的时间。 通过按用户筛选日志条目，此日志还有助于调试特定用户的活动。
+此日志有助于快速了解向AEM发出的哪些HTTP请求（如果这些请求通过查看随附的HTTP响应状态代码成功）以及HTTP请求完成所用的时间。 通过按用户筛选日志条目，此日志还有助于调试特定用户的活动。
 
 **示例日志输出**
 
@@ -270,7 +270,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | 协议 | HTTP/1.1 |
 | HTTP响应状态 | 200 |
 | 响应正文的大小（以字节为单位） | 1141 |
-| 引用 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| 反向链接 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | 用户代理 | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
 ### 配置HTTP访问日志 {#configuring-the-http-access-log}
@@ -279,19 +279,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 ## Apache Web Server和Dispatcher日志记录 {#apache-web-server-and-dispatcher-logging}
 
-AEM as a Cloud Service为Publish上的Apache Web Server和Dispatcher层提供三个日志：
+AEM as a Cloud Service在发布上为Apache Web Server和Dispatcher层提供三个日志：
 
 * Apache HTTPD Web Server访问日志
 * Apache HTTPD Web Server错误日志
 * Dispatcher日志
 
-这些日志仅可用于Publish层。
+这些日志仅适用于发布层。
 
-这组日志提供了在向AEM as a Cloud Service Publish层发送HTTP请求以将其送达AEM应用程序之前的见解。 这一点非常重要，因为理想情况下，发送到Publish层服务器的大多数HTTP请求都由Apache HTTPD Web Server和AEM Dispatcher缓存的内容提供，并且永远不会访问AEM应用程序本身。 因此，AEM的Java、请求或访问日志中没有这些请求的日志语句。
+这组日志提供了在向AEM as a Cloud Service发布层发送HTTP请求以访问AEM应用程序之前的见解。 这一点非常重要，因为理想情况下，对发布层服务器的大多数HTTP请求都由Apache HTTPD Web Server和AEM Dispatcher缓存的内容提供，并且永远不会访问AEM应用程序本身。 因此，AEM的Java、请求或访问日志中不包含这些请求的日志语句。
 
 ### Apache HTTPD Web Server访问日志 {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server访问日志为每个到Publish层的Web服务器/Dispatcher的HTTP请求提供语句。 从上游CDN提供的请求不会反映在这些日志中。
+Apache HTTP Web Server访问日志为到达发布层的Web服务器/Dispatcher的每个HTTP请求提供语句。 从上游CDN提供的请求不会反映在这些日志中。
 
 请参阅[官方Apache文档](https://httpd.apache.org/docs/2.4/logs.html#accesslog)中有关错误日志格式的信息。
 
@@ -360,7 +360,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ## Apache HTTPD Web Server错误日志 {#apache-httpd-web-server-error-log}
 
-Apache HTTP Web Server错误日志为Publish层的Web服务器/Dispatcher中的每个错误提供了语句。
+Apache HTTP Web Server错误日志为发布层的Web服务器/Dispatcher中的每个错误提供语句。
 
 请参阅[官方Apache文档](https://httpd.apache.org/docs/2.4/logs.html#errorlog)中有关错误日志格式的信息。
 
@@ -559,13 +559,13 @@ CDN日志不同于其他日志，它遵循JSON格式。
 
 ### 云环境 {#cloud-environments}
 
-可通过以下方式访问云服务的AEM as a Cloud Service日志：通过Cloud Manager界面下载，或使用命令行界面在命令行跟踪日志。Adobe I/O 有关详细信息，请参阅[Cloud Manager日志记录文档](/help/implementing/cloud-manager/manage-logs.md)。
+可通过以下方式访问云服务的AEM as a Cloud Service日志：通过Cloud Manager界面下载，或者使用Adobe I/O命令行界面在命令行跟踪日志。 有关详细信息，请参阅[Cloud Manager日志记录文档](/help/implementing/cloud-manager/manage-logs.md)。
 
-### 其他Publish地区的日志 {#logs-for-additional-publish-regions}
+### 其他发布区域的日志 {#logs-for-additional-publish-regions}
 
 如果为特定环境启用了其他发布区域，则可以从Cloud Manager下载每个区域的日志，如上所述。
 
-其他发布区域的AEM日志和Dispatcher日志将在环境ID之后的前3个字母中指定该区域，以下示例中的&#x200B;**nld2**&#x200B;即代表位于荷兰的其他AEM发布实例：
+其他发布区域的AEM日志和Dispatcher日志将在环境ID之后的前3个字母中指定该区域，以下示例中的&#x200B;**nld2**&#x200B;就是一个例子，它是指位于荷兰的其他AEM发布实例：
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
@@ -589,7 +589,7 @@ Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。
 1. 要登录到容器，请键入“`docker exec -it <container> /bin/sh`”，其中`<container>`是上一步骤中的调度程序容器ID
 1. 导航到`/mnt/var/www/html`下的缓存根
 1. 日志位于`/etc/httpd/logs`下
-1. Inspect日志：可在XYZ文件夹下访问日志，在其中查看以下日志：
+1. 检查日志：可以在XYZ文件夹下访问日志，在其中可以查看以下日志：
    * Apache HTTPD Web服务器访问日志 — `httpd_access.log`
    * Apache HTTPD Web Server错误日志 — `httpd_error.log`
    * Dispatcher日志 — `dispatcher.log`
