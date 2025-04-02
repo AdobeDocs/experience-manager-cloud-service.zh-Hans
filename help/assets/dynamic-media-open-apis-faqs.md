@@ -3,9 +3,9 @@ title: 具有 OpenAPI 功能的 Dynamic Media 常见问题解答
 description: 具有 OpenAPI 功能的 Dynamic Media 常见问题解答
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1600'
 ht-degree: 98%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -136,6 +136,12 @@ Experience Manager Assets 通过资产卡片上的已批准图标来区分“已
 +++**如何获得编辑资产审批状态的权限？**
 
 作为DAM用户，您可能没有权限[审批资产](approve-assets.md#approve-assets)。要获得编辑资产审批状态的权限，管理员可以编辑应用于资产文件夹的默认或任何其他元数据架构，以提供对&#x200B;**[!UICONTROL 查看状态]**&#x200B;字段的编辑权限。有关更多信息，请参阅[如何禁用对“查看状态”字段的编辑](approve-assets.md#configuration)。
+
++++
+
++++**支持的视频文件大小是多少？**
+
+具有OpenAPI功能的Dynamic Media支持长格式视频。 这些视频最多可支持50 GB和2小时。
 
 +++
 

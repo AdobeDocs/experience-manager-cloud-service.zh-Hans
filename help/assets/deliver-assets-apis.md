@@ -3,10 +3,10 @@ title: 传递 API
 description: 了解如何使用投放API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 11%
+source-wordcount: '653'
+ht-degree: 15%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 11%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,6 +74,8 @@ ht-degree: 11%
 | [资源元数据](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | 返回与资产关联的属性，例如标题、描述、CreateDate、ModifyDate等。 |
 | 视频资源的[播放器容器](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 返回视频资产的播放器容器。 您可以将播放器嵌入到iframe HTML元素中并播放视频。 |
 | [以所选输出格式显示的播放清单](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 以所选输出格式返回指定视频资源的播放清单文件。 您必须构建一个自定义播放器，该播放器能够通过HLS或DASH协议进行自适应流式传输，以便能够拉取播放清单文件并播放视频。 |
+
+具有OpenAPI功能的Dynamic Media还支持长格式视频。 这些视频最多可支持50 GB和2小时。
 
 有关可用的Dynamic Media产品及其功能的信息，请参阅[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
