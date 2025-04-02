@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service的微前端内容片段选择器属性
 description: 属性，用于将微前端内容片段选择器配置为从应用程序中搜索、查找和检索内容片段。
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 3%
 
 ---
-
 
 # 内容片段选择器 — 相关属性 {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ ht-degree: 3%
 | `filters` | Fragmentfilter | 否 | | 要应用于内容片段列表的过滤器。 默认情况下，将显示`/content/dam`下的片段。 默认值： `{ folder: "/content/dam" }` |
 | `isOpen` | 布尔型 | 是 | `false` | 用于触发打开或关闭选择器的标志。 |
 | `onDismiss` | () =>空白 | 是 | | 选择&#x200B;**解除**&#x200B;时要调用的函数。 |
-| `onSubmit` | ({ contentFragments： `{id: string, path: string}[]`， domainNames： `string[]` }) => void | 在选择一个或多个内容片段后使用&#x200B;**Select**&#x200B;时要调用的函数。 <br><br>函数将接收：<br><ul><li> 选定的内容片段，包含`id`和`path`字段</li><li>和与存储库的程序ID和环境ID相关的域名，其状态为`ready`和`tier`发布</li></ul><br>如果没有域名，它将使用发布实例作为回退域。 |
-| `theme` | &quot;light&quot; | &quot;dark&quot; | 否 | | 内容片段选择器的主题。 默认主题设置为UnifiedShell环境的主题。 |
-| `selectionType` | &quot;single&quot; | &quot;multiple&quot; | 否 | `single` | 可用于限制FragmentSelector的选择类型。 |
-| `dialogSize` | &quot;fullscreen&quot; | &quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 用于控制对话框大小的可选属性。 |
+| `onSubmit` | ({ contentFragments： `{id: string, path: string}[]`， domainNames： `string[]` }) => void | 是 | | 在选择一个或多个内容片段后使用&#x200B;**Select**&#x200B;时要调用的函数。 <br><br>函数将接收：<br><ul><li> 选定的内容片段，包含`id`和`path`字段</li><li>和与存储库的程序ID和环境ID相关的域名，其状态为`ready`和`tier`发布</li></ul><br>如果没有域名，它将使用发布实例作为回退域。 |
+| `theme` | “浅色”或“深色” | 否 | | 内容片段选择器的主题。 默认主题设置为UnifiedShell环境的主题。 |
+| `selectionType` | “单个”或“多个” | 否 | `single` | 可用于限制FragmentSelector的选择类型。 |
+| `dialogSize` | &quot;fullscreen&quot;或&quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 用于控制对话框大小的可选属性。 |
 | `waitForImsToken` | 布尔型 | 否 | `false` | 指示内容片段选择器是否在SUSI流的上下文中渲染，并需要等待`imsToken`准备就绪。 |
 | `imsAuthInfo` | ImsAuthInfo | 否 | | 包含登录用户的IMS身份验证信息的对象。 |
 | `runningInUnifiedShell` | 布尔型 | 否 | | 指示内容片段选择器是在UnifiedShell下运行还是独立运行。 |
