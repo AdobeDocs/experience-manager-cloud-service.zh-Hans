@@ -4,9 +4,9 @@ description: 了解Real Use Monitoring (RUM) ，它是一项允许监控客户�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
+source-git-commit: f3091a3868ac57150afd6f1640709ce3e9566bac
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,7 @@ RUM (Real Use Monitoring)服务是一种性能监控技术，可实时监控网�
 
 ## 谁可以从实时监控服务中受益？ {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring帮助客户和Adobe了解最终用户与AEM站点的交互方式。 “实时监控”可诊断性能问题，并衡量实验的有效性。 Real Use Monitoring通过取样保护访客的隐私 — 仅监控所有页面查看中的一小部分 — 并且不收集任何个人身份信息(PII)。
-
-## Real Use监控服务和隐私 {#rum-service-and-privacy}
-
-AEM中的实时监控服务可保护访客隐私并最大程度地减少数据收集。 作为访客，这意味着您正在访问或可供访问Adobe的网站不收集任何个人信息。
-
-作为站点操作员，无需其他选择加入即可通过此功能启用监控。 最终用户无需接受额外的弹出窗口或同意表单即可启用RUM。
+Real Use Monitoring帮助客户和Adobe了解最终用户与AEM站点的交互方式。 Real Use Monitoring通过有限的数据收集和取样保护访客的隐私 — 仅在所有页面查看中的一小部分受到监控。
 
 ## Real Use Monitoring服务数据采样 {#rum-service-data-sampling}
 
@@ -43,7 +37,7 @@ AEM中的实时监控服务可保护访客隐私并最大程度地减少数据�
 
 ## 会收集哪些数据？ {#what-data-is-being-collected}
 
-Real Use Monitoring服务旨在防止收集个人身份信息。 RUM收集的整套信息如下所示：
+Real Use Monitoring服务旨在最大限度地减少数据收集。 RUM收集的整套信息如下所示：
 
 * 正在访问的站点的主机名，例如： `experienceleague.adobe.com`
 * 用于显示页面的广泛用户代理类型和操作系统，如： `desktop:windows`或`mobile:ios`
@@ -105,7 +99,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    RUM库和RUM收藏集不会计为内容请求，也不会增加报告的页面查看次数或API调用数。 此外，对于将现成CDN与AEM as a Cloud Service一起使用的客户，[服务器端收藏集](#serverside-collection)是内容请求的基础。
 
-1. **如何选择退出？**
+1. **如何禁用RUM？**
 
    鉴于实时监控(RUM)具有显着优势，Adobe建议您使用实时监控(RUM)，这样可让Adobe帮助您通过提高网站性能来优化数字体验。 该服务旨在实现无缝连接，对网站的性能没有影响。
 
