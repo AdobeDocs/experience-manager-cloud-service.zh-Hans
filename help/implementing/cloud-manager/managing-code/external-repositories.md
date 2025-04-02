@@ -1,19 +1,19 @@
 ---
 title: 在Cloud Manager — 有限测试版中添加外部存储库
-description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise Server、GitLab和Bitbucket存储库集成。
+description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: e18368b1f16033790c91038d746c96d04a05ba21
+source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
 workflow-type: tm+mt
-source-wordcount: '1928'
-ht-degree: 26%
+source-wordcount: '1890'
+ht-degree: 27%
 
 ---
 
 # 在Cloud Manager — 有限测试版中添加外部存储库 {#external-repositories}
 
-了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise Server、GitLab和Bitbucket存储库集成。
+了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 
 >[!NOTE]
 >
@@ -26,6 +26,7 @@ ht-degree: 26%
 1. [将外部存储库 ](#add-external-repo) 添加到选择的程序。
 1. 向外部存储库提供访问令牌。
 1. 验证私有GitHub存储库的所有权。
+1. [将webhook](#configure-webhook)配置为外部存储库。
 
 
 
@@ -51,7 +52,7 @@ ht-degree: 26%
    | --- | --- |
    | **存储库名称** | 必需。为您的新存储库取一个富有表现力的名称。 |
    | **存储库 URL** | 必需。存储库的 URL。<br><br>如果您使用的是GitHub托管的存储库，则路径必须以`.git`结尾。<br>例如，*`https://github.com/org-name/repo-name.git`*（URL 路径仅用于说明目的）。<br><br>如果您使用外部存储库，则必须使用以下 URL 路径格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或 <br>`https://self-hosted-domain/org-name/repo-name.git`<br>，并与您的 Git 供应商匹配。 |
-   | **选择存储库类型** | 必需。选择正在使用的存储库类型：<ul><li>**GitHub**（GitHub企业服务器和GitHub的自托管版本）</li><li>**GitLab**（`gitlab.com`和GitLab的自托管版本） </li><li>**Bitbucket**（`bitbucket.org`和Bitbucket Server，以及Bitbucket的自托管版本）</li></ul>如果上面的存储库 URL 路径包含 Git 供应商名称，例如 GitLab 或 Bitbucket，则存储库类型已为您预先选择。 |
+   | **选择存储库类型** | 必需。选择正在使用的存储库类型：<ul><li>**GitHub**（GitHub Enterprise和GitHub的自托管版本）</li><li>**GitLab**（`gitlab.com`和GitLab的自托管版本） </li><li>**Bitbucket**（`bitbucket.org`和Bitbucket服务器，以及Bitbucket的自托管版本）</li></ul>如果上面的存储库 URL 路径包含 Git 供应商名称，例如 GitLab 或 Bitbucket，则存储库类型已为您预先选择。 |
    | **描述** | 可选。存储库的详细描述。 |
 
 1. 选择&#x200B;**保存**&#x200B;以添加存储库。
@@ -64,9 +65,9 @@ ht-degree: 26%
    | 令牌类型 | 描述 |
    | --- | --- |
    | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
-   | **添加新的访问令牌** | **存储库类型： GitHub**<br><ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>对于所需的权限，请设置以下内容：<ul><li>**GitHub个人访问令牌(PAT)所需的权限**<br>&#x200B;这些权限确保Cloud Manager能够验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub中，当您生成个人访问令牌(PAT)时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul><li>**必需的webhook事件（用于GitHub托管的存储库）**<br>&#x200B;这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>手动配置GitHub webhook时，请确保将webhook设置为在以下必需的webhook事件中触发：<ul><li>拉取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
-   | | **存储库类型： GitLab**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>对于所需的权限，请设置以下内容：<ul><li>**GitLab个人访问令牌(PAT)所需的权限**<br>&#x200B;这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中创建个人访问令牌时，请确保该令牌包含以下令牌范围：<ul><li>api<li>read_user</li></li></ul><li>**必需的webhook事件（用于GitLab托管的存储库）**<br>&#x200B;这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。<br>在GitLab中手动配置webhook时，请确保包含以下必需的webhook事件：<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
-   | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>对于所需的权限，请设置以下内容：<ul><li>**Bitbucket个人访问令牌(PAT)所需的权限**<br>&#x200B;这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul><li>**必需的webhook事件（针对托管比特桶的存储库）**<br>&#x200B;这些事件确保Cloud Manager能够验证拉取请求、响应代码推送并与评论进行交互以便协调管道。<br>如果在Bitbucket中手动设置webhook，请将其配置为在以下必需的webhook事件中触发：<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+   | **添加新的访问令牌** | **存储库类型： GitHub Enterprise**<br><ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+   | | **存储库类型： GitLab**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+   | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
    >[!NOTE]
    >
@@ -108,7 +109,8 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 * 未来基于评论的操作 — 允许工作流，例如直接从PR部署到快速开发环境(RDE)。
 
 在`GitHub.com`上托管的存储库不需要Webhook配置，因为Cloud Manager直接通过GitHub应用程序集成。
-对于已载入访问令牌的所有其他外部存储库（例如GitHub Enterprise Server、GitLab和Bitbucket），webhook配置可用，必须手动设置。
+
+对于已载入访问令牌的所有其他外部存储库（例如GitHub Enterprise、GitLab和Bitbucket），webhook配置可用，必须手动设置。
 
 **要为外部存储库配置webhook：**
 
@@ -146,8 +148,13 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
       要生成API密钥，您必须在Adobe Developer Console中创建集成项目。 有关完整详细信息，请参阅[创建API集成项目](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
 
 1. 将您之前复制的Webhook密码粘贴到&#x200B;**密码**（或&#x200B;**密钥**，或&#x200B;**密码令牌**）文本字段中。
-1. 配置webhook以发送Cloud Manager期望的适当事件。
+1. 配置webhook以发送Cloud Manager所需的事件。
 
+   | 存储库 | 必需的webhook事件 |
+   | --- | --- |
+   | GitHub企业版 | 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>确保将webhook设置为在下列必需的webhook事件上触发：<ul><li>拉取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul> |
+   | GitLab | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul> |
+   | Bitbucket | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
 
 ### 使用Webhook验证拉取请求
 
@@ -155,11 +162,11 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 以下行为适用：
 
-* **GitHub企业服务器**
+* **GitHub企业版**
 
-  创建检查后，它类似于下面的屏幕快照。 与`GitHub.com`的主要区别在于`GitHub.com`使用检查运行，而GitHub Enterprise Server（使用个人访问令牌）生成提交状态：
+  创建检查后，它类似于下面的屏幕快照。 与`GitHub.com`的主要区别在于`GitHub.com`使用检查运行，而GitHub Enterprise（使用个人访问令牌）生成提交状态：
 
-  ![提交状态以指示GitHub企业服务器上的PR验证过程](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+  ![提交状态以指示GitHub Enterprise上的PR验证过程](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 * **比特桶**
 

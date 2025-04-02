@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 14%
+source-wordcount: '1048'
+ht-degree: 13%
 
 ---
 
@@ -39,6 +39,10 @@ Cloud Manager概述了程序的所有证书的状态。
 当客户管理的证书过期时，与已过期证书一起使用的任何域不再工作。 更新证书可确保域继续按需工作。
 
 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
+
+>[!IMPORTANT]
+>
+>添加或更新SSL证书时，不要在证书链中包含新证书。 如果包含此参数，上传将无法成功完成。
 
 **要更新过期的客户管理的SSL证书，请执行以下操作：**
 
@@ -103,7 +107,7 @@ Cloud Manager概述了程序的所有证书的状态。
 
 >[!NOTE]
 >
->无法删除具有一个或多个关联活动域的Adobe托管SSL证书。 在删除SSL证书之前，必须删除所有关联的活动域。 请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以了解详情。
+>您无法删除具有一个或多个关联活动域的Adobe托管的SSL证书。 在删除SSL证书之前，必须删除所有关联的活动域。 请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以了解详情。
 
 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
 

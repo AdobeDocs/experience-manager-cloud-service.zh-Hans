@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 4%
+source-wordcount: '1021'
+ht-degree: 6%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 4%
 
 * **对于Adobe托管(DV) SSL证书：**
    * 添加自定义域并在Cloud Manager中验证后，将完成域验证过程。
-   * 现在，您必须[添加托管(DV) SSL证书](#add-adobe-managed-ssl-cert)Adobe。
+   * 现在，您必须[添加Adobe托管(DV) SSL证书](#add-adobe-managed-ssl-cert)。
 添加到Cloud Manager后，请等待Adobe代表您颁发并安装DV SSL证书。
    * 当证书处于活动状态时，您的自定义域即可使用。
 
@@ -59,7 +59,7 @@ ht-degree: 4%
 
 **添加Adobe托管(DV) SSL证书：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager，然后选择合适的程序。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧菜单。
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 
 1. 在“SSL证书”页面的右上角附近，单击&#x200B;**添加SSL证书**。
 
-1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据[您的特定用例](#which-ssl-to-add)，选择&#x200B;**托管Adobe(DV)**。
+1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据[您的特定用例](#which-ssl-to-add)，选择&#x200B;**Adobe托管(DV)**。
 
    ![添加DV证书](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
@@ -83,7 +83,7 @@ ht-degree: 4%
 
    成功颁发SSL证书后，**SSL证书**&#x200B;表中将显示绿色的有效复选标记。
 
-您现在已为项目添加了一个有效的Adobe托管DV SSL证书。 此步骤通常是第一个设置自定义域名的步骤。
+您现在已为项目添加了一个有效的Adobe托管的DV SSL证书。 此步骤通常是第一个设置自定义域名的步骤。
 
 您现在已准备好添加[CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
@@ -93,9 +93,13 @@ ht-degree: 4%
 
 需要帮助您选择在您的域中使用Adobe托管的SSL证书（推荐）还是客户托管的SSL证书？ 请参阅[选择要添加的SSL证书](#which-ssl-to-add)
 
+>[!IMPORTANT]
+>
+>添加或更新SSL证书时，不要在证书链中包含新证书。 如果包含此参数，上传将无法成功完成。
+
 **要添加客户管理的(OV/EV) SSL证书：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager，然后选择合适的程序。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
