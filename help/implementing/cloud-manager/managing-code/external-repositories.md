@@ -4,9 +4,9 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1866'
 ht-degree: 27%
 
 ---
@@ -206,16 +206,9 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 * 如果PR验证或管道触发器不起作用，请验证Cloud Manager和Git供应商中的Webhook密码是否为最新。
 
 
-
-
-
-
-
-
 ## 限制
 
 * 外部存储库无法链接到配置管道。
-* 具有外部存储库（未在GitHub上托管）和“在Git发生更改时”触发器的管道不会自动启动。 它们只能手动启动。
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
