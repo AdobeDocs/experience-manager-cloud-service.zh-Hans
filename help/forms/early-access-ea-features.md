@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 26%
+source-wordcount: '2286'
+ht-degree: 27%
 
 ---
 
@@ -74,9 +74,9 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 对话式Forms不仅仅是一种新外观，它还是改变用户体验的一种方式。  提升参与度，减少表单放弃，并使与您的网站互动成为每个人都更愉快的体验。
 
 
-### 适用于Edge Delivery Services for Forms的WYSIWYG创作（通用编辑器）
+### Edge Delivery Services的WYSIWYG创作
 
-通用编辑器提供了一个强大的WYSIWYG界面来构建[自适应表单，并将其发布到Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)，从而将简洁的可视化设计与高级功能相结合。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/create-forms.md)的所有功能，以及多种其他功能：
+WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及多种其他功能：
 
 * 用于创建复杂逻辑的高级规则编辑器。
 * 自定义功能的服务器端可扩展性。
@@ -86,26 +86,6 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 * 与各种数据源集成以预填充表单和提交数据。
 * 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
 * 能够从多个提交操作中进行选择，用于处理表单提交，包括将数据提交到Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多数据源。
-
-![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**福利：**
-
-* **加速实现价值(TTV)**：通过直观的可视化创作加快启动表单的速度，从而消除复杂的编码要求。
-* **降低开发成本**：通过使业务用户能够在最少的IT参与下创建和修改表单，降低总拥有成本。
-* **简化的开发**：仅使用HTML、CSS和JavaScript创建自定义组件 — 无需专门的框架知识。
-* **现代Web栈栈**：构建于前端开发人员熟悉的Web标准和现代技术之上。
-* **快速原型构建**：在投资进行全面开发之前，快速构建和测试表单概念
-
-
-**浏览文档以了解详情：**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**主要功能**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**使用响应式布局**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**配置提交操作**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**自适应Forms的通用编辑器入门**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**设置表单样式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**添加reCAPTCHA安全性**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
-| [**创建您的第一个表单**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**使用规则编辑器**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**发布表单**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**了解用户界面**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**创建自定义组件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### AEM Forms到Marketo的连接器
@@ -127,27 +107,38 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 * [为现有的自适应Forms配置Marketo Engage广告数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [将现有的自适应表单提交到Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### 价值实现仪表板
+### 云端交互式通信
 
-使用价值实现仪表板跟踪和分析表单的性能。 此分析工具可帮助您做出数据驱动型决策，以优化表单策略。
+Cloud上的Interactive Communications是一款功能强大的解决方案，可用于创建、管理和提供数据驱动的交互式信函，如业务信函、文档、声明、福利通知、营销邮件、账单和欢迎资料包。
 
-![Forms使用情况分析仪表板](/help/forms/assets/forms-usage-insights.png)
+![交互式通信编辑器](/help/forms/assets/ic-editor.png)
 
-**主要功能：**
+#### 主要功能：
 
-* 监控表单提交、文档呈现和表单创建/发布量度
-* 跟踪整个组织中的表单片段使用和重复使用
-* 确定趋势、高峰期和改进机会
+* **基于云的编辑器**：与只能在Windows计算机上安装的AEM Forms Desktop Designer不同，交互式通信编辑器在任何新式浏览器中运行，无需安装。 这种基于云的方法消除了安装麻烦，提供了跨平台的可访问性，并允许从任何位置通过Internet访问进行协作。
 
-功能板通过两个主要部分提供见解：
+* **用户友好设计**：需要最少技术知识的直观点击式界面。
 
-* **随时间变化的表单和文档活动**：跟踪提交、演绎版和表单创建/发布
-* **片段使用情况**：监视片段的采用和重用
+* **数据集成**：连接到架构、数据库和Web服务以生成动态内容。
 
-有关详细信息：
+* **富媒体**：无缝地合并文本、图像和交互元素。
 
-* [了解您的价值实现仪表板](/help/forms/aem-forms-value-realization-dashboard.md)
-* [解释表单和文档使用情况分析](/help/forms/using-the-value-realization-dashboard.md)
+* **文档片段**：在多个文档中重用模块化内容块，以提高一致性和效率。
+
+* **多渠道输出**：跨符合法规要求的打印和数字格式创建统一的体验。
+
+* **动态内容**：使用业务逻辑和数据绑定生成个性化内容。
+
+* **格式灵活性**：输出为PDF、HTML、PCL、PostScript®和ZPL格式。
+
+#### 用例：
+
+* 生成账户报表的金融机构
+* 政府机构精简福利通知
+* 创建高质量、安全且符合法律要求的信件
+* 管理数据驱动交互式信函的创建、汇编和交付
+
+准备好开始了吗？ 可通过提前访问程序找到交互式通信编辑器，以进行Forms as a Cloud Service部署。 若要请求访问，请将您的组织ID和计划详细信息通过电子邮件从您的官方地址发送到[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 
 ## 其他早期访问创新
 
