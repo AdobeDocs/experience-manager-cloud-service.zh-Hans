@@ -1,27 +1,29 @@
 ---
-title: 如何使用通用编辑器基于Edge Delivery Services模板创建独立表单？
-description: 本文介绍了如何使用通用编辑器通过在“表单创建向导”中选择基于Edge Delivery Services的模板来创建表单。 您还可以将表单发布到AEM Edge Delivery Services。
+title: 如何使用通用编辑器基于 Edge Delivery Services 模板创建独立表单？
+description: 本文介绍如何通过在表单创建向导中选择基于 Edge Delivery Services 的模板来使用通用编辑器创建表单。您还可以将表单发布到 AEM Edge Delivery Services。
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
+source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 83%
+source-wordcount: '1060'
+ht-degree: 87%
 
 ---
 
-# 在通用编辑器中创建独立表单的分步指南
+# 使用通用编辑器创建自适应Forms
 
 <span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
 
-通过从“表单创建向导”中选择基于Edge Delivery Services的模板，本文指导您完成使用通用编辑器创建和创作独立表单的过程。 您还可以使用通用编辑器将创作的表单发布到 AEM Edge Delivery Services。
+通用编辑器是一个通用的可视化编辑器，它为编辑表单提供了所见即所得(WYSIWYG)体验。 它使用文本框、单选按钮和复选框等可用的自适应Forms组件，通过拖放功能简化了响应式表单和用户友好表单的创建。
 
-AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery Services Forms，以捕获和存储数据。您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM Site 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM提供了一个称为自适应Forms块的块，以帮助您使用Universal Editor轻松创建Edge Delivery Services Forms以捕获和存储数据。 您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM Site 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github存储库工作流](/help/edge/assets/repo-workflow.png){width=50%}
+![Github 存储库工作流](/help/edge/assets/repo-workflow.png)
+
+通过从“表单创建向导”中选择基于Edge Delivery Services的模板，本文指导您完成使用通用编辑器创建和创作独立表单的过程。
 
 ## 先决条件
 
@@ -30,9 +32,9 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 * AEM Forms 作者实例包含一个基于 Edge Delivery Services 的模板。确保您的环境中安装了[最新版本的核心组件](https://github.com/adobe/aem-core-forms-components)。
 * 保存 AEM Forms as a Cloud Service 作者实例的 URL 和您方便的 GitHub 存储库。
 
-## 在通用编辑器中处理表单
+## 在通用编辑器中使用表单
 
-使用通用编辑器，您可以使用现成的组件（如文本字段、复选框和单选按钮）轻松创建响应式交互表单。它提供了诸如动态规则、流畅的数据集成和自定义选项等强大功能，允许您根据确切要求构建表单。 您还可以将表单发布到AEM Edge Delivery Services。 您可以在通用编辑器中对表单执行以下操作：
+使用通用编辑器，您可以轻松创建响应式交互式独立表单。 您可以在通用编辑器中对表单执行以下操作：
 * [创建表单](#create-a-form)
 * [创作表单](#author-a-form)
 * [发布表单](#publish-a-form)
@@ -55,7 +57,7 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 
    选择基于 Edge Delivery Services 的模板后，**[!UICONTROL 创建]**&#x200B;按钮就被启用。
 1. （可选）在&#x200B;**[!UICONTROL 数据源]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中，您可以选择数据源或提交操作。
-1. （可选）在&#x200B;**[!UICONTROL 交付]**&#x200B;选项卡中，您可以为表单指定发布或取消发布日期。
+1. （可选）在&#x200B;**[!UICONTROL 投放]**&#x200B;选项卡中，您可以为表单指定发布或取消发布日期。
 
 1. 单击&#x200B;**[!UICONTROL 创建]**，将出现&#x200B;**创建表单**&#x200B;向导。
 1. 指定&#x200B;**名称**&#x200B;和&#x200B;**标题**。
@@ -93,7 +95,7 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 
    ![联系我们表单](/help/edge/assets/contact-us.png)
 
-   现在您可以[配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)。
+   现在您可以[配置和自定义表单](/help/edge/docs/forms/universal-editor/submit-action.md)的提交操作。
 
 
 <!--
