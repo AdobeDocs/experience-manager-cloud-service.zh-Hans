@@ -4,10 +4,10 @@ description: 了解如何运行您自己的通用编辑器服务，以供本地�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 37%
+source-wordcount: '950'
+ht-degree: 36%
 
 ---
 
@@ -16,20 +16,24 @@ ht-degree: 37%
 
 了解如何运行您自己的通用编辑器服务，以供本地开发或作为您自己的基础架构的一部分。
 
+>[!NOTE]
+>
+>使用AEM创作和Edge Delivery Services的项目不需要或不支持本地通用编辑器服务。
+
 ## 概述 {#overview}
 
 Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑定的服务。要能够在本地开发通用编辑器，必须运行通用编辑器服务的本地副本。 这是因为：
 
 * Adobe的官方通用编辑器服务在全球托管，并且您的本地AEM实例需要向Internet公开。
-* 使用本地AEM SDK进行开发时，无法从Internet访问Adobe的通用编辑器服务。
+* 在使用本地AEM SDK进行开发时，无法从Internet访问Adobe的通用编辑器服务。
 * 如果您的AEM实例具有IP限制，并且Adobe的Universal Editor服务不在定义的IP范围内，则可以自行托管。
 
 ## 用例 {#use-cases}
 
 如果您希望：
 
-* 在AEM上进行本地开发，以便与通用编辑器一起使用。
-* 将您自己的Universal Editor服务作为您自己的基础架构的一部分运行，独立于Adobe的Universal Editor服务。
+* 在AEM上本地开发以与通用编辑器一起使用。
+* 将您自己的通用编辑器服务作为您自己的基础架构的一部分运行，独立于Adobe的通用编辑器服务。
 
 这两个用例都受支持。 本文档介绍如何在HTTPS中运行AEM以及Universal Editor服务的本地副本。
 
@@ -41,11 +45,11 @@ Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑�
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
+[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)以了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
 
 ## 安装 Universal Editor Service {#install-ue-service}
 
-Universal Editor服务不是Universal Editor的完整副本，而只是其功能的子集，以确保来自本地AEM环境的调用不会通过Internet进行路由，而是从您控制的已定义端点进行路由。
+Universal Editor服务不是Universal Editor的完整副本，而只是其功能的一个子集，可确保来自本地AEM环境的调用不会通过Internet路由，而是从您控制的已定义端点路由。
 
 需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能运行通用编辑器服务的本地副本。
 
