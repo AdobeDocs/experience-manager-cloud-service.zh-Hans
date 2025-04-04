@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 团队和产品配置文件可怎样�
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
-workflow-type: ht
-source-wordcount: '2059'
-ht-degree: 100%
+source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
+workflow-type: tm+mt
+source-wordcount: '2062'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供�
 
 >[!NOTE]
 >
-> 本文介绍的某些产品实例和产品配置文件可能仅出现在新创建的环境中。未来的机制将允许现有环境也进行更新。
+> 本文介绍的某些产品实例和产品配置文件可能仅出现在新创建的环境中。有关如何实现环境现代化的信息，请参阅[添加现有环境的产品配置文件部分](#adding-product-profiles-for-existing-environments)。
 
 当 Adobe 首次处理 AEM 解决方案的许可时，两个产品实例将出现在 Adobe Experience Manager as a Cloud Service 产品下的 Adobe Admin Console 中：
 
@@ -278,7 +278,7 @@ AEM 中与该服务关联的 AEM 组将拥有该环境层组合中该服务的�
 
 ### 为现有环境添加产品轮廓 {#adding-product-profiles-for-existing-environments}
 
-2024 年 11 月初之前创建的环境可能会缺少上述部分描述的组织级产品实例以及某些产品轮廓。现有的产品轮廓也会缺少服务切换功能。建议更新这些产品轮廓，这是访问某些未来 API 的前提条件。
+在2024年4月初之前创建的环境可能缺少上文中所述的组织级别产品实例，以及某些产品配置文件。 现有的产品轮廓也会缺少服务切换功能。建议更新这些产品轮廓，这是访问某些未来 API 的前提条件。
 
 如果程序中的一个或多个环境需要更新其产品轮廓，则 Cloud Manager 将会显示下面的通知。请注意，环境必须处于最新的 AEM 版本，然后才能更新其产品轮廓。
 
