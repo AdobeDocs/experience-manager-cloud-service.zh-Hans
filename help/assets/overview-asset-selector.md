@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资产选�
 description: 使用资产选择器在您的应用程序中搜索、查找和检索资产的元数据和演绎版。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1427'
+ht-degree: 94%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -81,7 +81,11 @@ ht-degree: 97%
 
 您必须确保采用以下通信方式：
 
-* 该应用程序在 HTTPS 上运行。
+* 主机应用程序正在HTTPS上运行。
+* 无法在`localhost`上运行应用程序。 如果要在本地计算机上集成资产选择器，则需要创建一个自定义域（例如`[https://<your_campany>.localhost.com:<port_number>]`），并在`redirectUrl list`中添加此自定义域。
+* 您可以使用相应的`imsClientId`配置`ADOBE_PROVIDED_CLIENT_ID`并将其添加到AEM Cloud Service环境变量中。
+  ![资产选择器IMS客户端ID环境](assets/asset-selector-ims-client-id-env.png)
+* 需要在环境配置中定义IMS作用域列表。
 * 该应用程序的 URL 位于 IMS 客户端的重定向 URL 允许列表中。
 * 使用 Web 浏览器上的弹出窗口配置和呈现 IMS 登录流。因此，应在目标浏览器上启用或允许弹出窗口。
 
@@ -91,7 +95,7 @@ ht-degree: 97%
 
 * [将资产选择器与 Adobe 应用程序集成](/help/assets/integrate-asset-selector-adobe-app.md)
 * [将资产选择器与一个非 Adobe 应用程序集成](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [集成资产选择器 Dynamic Media 开放 API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [集成资产选择器Dynamic Media Open API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
@@ -197,9 +201,6 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL **网格视图**] 网格视图以行和列的网格显示可滚动的文件和文件夹。
 * ![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL **库视图**] 库视图以居中锁定的水平列表显示文件或文件夹。
 * ![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布**&#x200B;视图]瀑布视图以桥的形式显示文件或文件夹。
-
-**概述图形**
-
 
 ## 详细了解关键功能 {#key-capabilities-asset-selector}
 
