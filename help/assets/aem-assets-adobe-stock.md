@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
+source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2254'
 ht-degree: 6%
 
 ---
@@ -68,16 +68,16 @@ ht-degree: 6%
 
 满足以下要求以启用此集成：
 
-* 已启动并作为[!DNL Cloud Service]实例运行的[!DNL Experience Manager Assets]
-* [企业 [!DNL Adobe Stock] 计划](https://stockenterprise.adobe.com/)
-* 在[!DNL Admin Console]中具有默认Stock产品配置文件权限的用户
-* 具有在[!DNL Adobe Developer Console]中创建集成的[!DNL Developer Access profile]权限的用户
+* 启动并作为[!DNL Cloud Service]实例运行[!DNL Experience Manager Assets]。
+* 企业[!DNL Adobe Stock]计划。
+* 在[!DNL Admin Console]中具有默认Stock产品配置文件权限的用户。
+* 具有在[!DNL Adobe Developer Console]中创建集成的[!DNL Developer Access profile]权限的用户。
 
 企业[!DNL Adobe Stock]计划，
 
-* 提供[!DNL Adobe Stock]的产品权利(与Experience Manager相关的股票)
-* 为[!DNL Adobe Admin Console]购买的股票权利积分
-* 允许在[!DNL Adobe Admin Console]内全局管理信用和许可
+* 提供[!DNL Adobe Stock]的产品权利(与Experience Manager连接的库存)。
+* 为[!DNL Adobe Admin Console]购买的股票权利积分。
+* 允许在[!DNL Adobe Admin Console]内全局管理信用和许可。
 
 在权利中，[!DNL Admin Console]中存在[!DNL Adobe Stock]的默认产品配置文件。 可以创建多个配置文件，这些配置文件确定谁可以许可Stock资产。 直接访问产品配置文件的用户可以访问[https://stock.adobe.com/](https://stock.adobe.com/)并许可Stock资产。 而则可以使用开发人员访问权限创建集成(API)的其他方法。 此集成验证[!DNL Experience Manager Assets]与[!DNL Adobe Stock]之间的通信。
 
@@ -91,9 +91,10 @@ ht-degree: 6%
 1. Click **[!UICONTROL Create new project]** and click **[!UICONTROL Add API]**. Select **[!UICONTROL Adobe Stock]** from the list of APIs that are available to you. Select [!UICONTROL OAUTH 2.0 Web].
 1. Provide **[!UICONTROL Default redirect URI]** and **[!UICONTROL Redirect URI pattern]** values. Click **[!UICONTROL Save configured API]**. Copy the generated ID and secret.
 1. In [!UICONTROL Adobe IMS Technical Account Configuration] screen, provide the values in the boxes titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. For detailed information about these values, see [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
-
 -->
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+
+<!-- 
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--
@@ -268,10 +269,13 @@ To configure the IMS account:
    * **[!UICONTROL 云解决方案]**：选择&#x200B;**[!UICONTROL Adobe Stock]**。
    * **[!UICONTROL 标题]**：指定此集成的名称。
    * **[!UICONTROL 授权服务器]**：添加[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)作为授权服务器。
-   * **[!UICONTROL 客户端ID]**：导航到项目的&#x200B;**[!UICONTROL OAuth服务器到服务器凭据详细信息]**&#x200B;页面，复制&#x200B;**[!UICONTROL 客户端ID]**&#x200B;并将其粘贴到此处(请参阅[在Developer Console中设置程序](#set-up-a-program-in-developer-console)部分中的步骤7)。
-   * **[!UICONTROL 客户端密钥]**：导航到项目的&#x200B;**[!UICONTROL OAuth服务器到服务器凭据详细信息]**&#x200B;页面，然后单击&#x200B;**[!UICONTROL 检索客户端密钥]**，复制&#x200B;**[!UICONTROL 客户端密钥]**&#x200B;并将其粘贴到此处(请参阅[在Developer Console中设置程序](#set-up-a-program-in-developer-console)分区中的步骤7)。
-   * **[!UICONTROL 作用域]**：导航到项目的&#x200B;**[!UICONTROL OAuth服务器到服务器凭据详细信息]**&#x200B;页面，复制&#x200B;**[!UICONTROL 作用域]**&#x200B;并将其粘贴到此处(请参阅[在Developer Console中设置程序](#set-up-a-program-in-developer-console)部分中的步骤7)。
-   * **[!UICONTROL 组织ID]**：导航到项目的&#x200B;**[!UICONTROL OAuth服务器到服务器凭据详细信息]**&#x200B;页面，复制&#x200B;**[!UICONTROL 组织ID]**&#x200B;并将其粘贴到此处(请参阅[在Developer Console中设置程序](#set-up-a-program-in-developer-console)分区中的步骤7)。
+   * **[!UICONTROL 客户端ID]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，复制&#x200B;**[!UICONTROL 客户端ID]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 客户端密钥]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，单击&#x200B;**[!UICONTROL 检索客户端密钥]**，复制&#x200B;**[!UICONTROL 客户端密钥]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 作用域]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，复制&#x200B;**[!UICONTROL 作用域]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 组织ID]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，复制&#x200B;**[!UICONTROL 组织ID]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
      ![aem assets和adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. 单击&#x200B;**[!UICONTROL 创建]**，将打开&#x200B;**[!UICONTROL Adobe IMS配置]**&#x200B;页面并显示您创建的[!DNL Adobe Stock]集成。
 
@@ -283,7 +287,7 @@ To configure the IMS account:
 1. 单击![aem assets和adobe stock](/help/assets/assets/Hammer.svg)，选择&#x200B;**[!UICONTROL 云服务]**，浏览并选择&#x200B;**[!UICONTROL Adobe Stock]**。
    ![将adobe stock与aem](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)一起使用
 1. 单击“**[!UICONTROL 创建]**”，“**[!UICONTROL Adobe Stock配置]**”页将显示多个字段。 按照以下说明在这些字段中指定详细信息：
-   * **[!UICONTROL 标题]**：在[在AEM创作实例中设置Adobe Stock IMS配置时，请指定在&#x200B;**[!UICONTROL Adobe IMS技术帐户配置]**&#x200B;页面中使用的相同标题名称](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)。
+   * **[!UICONTROL 标题]**：导航到&#x200B;**[!UICONTROL Adobe IMS技术帐户配置]**&#x200B;页面（请参阅[步骤3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)），复制标题并将其粘贴到此处。
    * **[!UICONTROL 关联的Adobe IMS配置]**：选择您创建的[!DNL Adobe Stock]集成。
    * **[!UICONTROL 区域设置]**：选择&#x200B;**[!UICONTROL 英语（美国）]**。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
