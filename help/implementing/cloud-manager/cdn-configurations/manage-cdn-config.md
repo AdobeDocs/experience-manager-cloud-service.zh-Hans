@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 8%
    | 选项 | 步骤 |
    | --- | --- |
    | 配置记录 | 建议对根域（如`example.com`<br>）使用<ol><li>登录到DNS服务提供商的门户。<li>转到DNS记录部分。<li>创建一个A记录以指向列出的所有IP地址。</li></ol> |
-   | 配置 CNAME | 建议对自定义域（如`www.example.com`<br>）使用<ol><li>登录到DMS服务提供商的门户。<li>转到DNS记录部分。<li>在DNS服务提供商（您的自定义域）的DNS记录中映射[cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) （CNAME记录）。 此映射可确保将在自定义域中收到的请求重定向到Adobe的CDN。</li></ol> |
+   | 配置 CNAME | 建议对自定义域（如`www.example.com`<br>）使用<ol><li>登录到DMS服务提供商的门户。<li>转到DNS记录部分。<li>在DNS服务提供商（您的自定义域）的DNS记录中映射`cdn.adobeaemcloud.com` （CNAME记录）。 此映射可确保将在自定义域中收到的请求重定向到Adobe的CDN。</li></ol> |
 
 1. 在&#x200B;**上线准备工作**&#x200B;对话框中，单击&#x200B;**确定**&#x200B;保存记录。
 
