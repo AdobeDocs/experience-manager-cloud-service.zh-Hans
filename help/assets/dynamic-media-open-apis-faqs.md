@@ -15,10 +15,10 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
@@ -97,7 +97,7 @@ Experience Manager Assets 通过资产卡片上的已批准图标来区分“已
 
 +++**如何获取 Adobe IMS（Adobe 身份管理服务）的用户或组 ID，以便在 Experience Manager 管理员视图中设置资产上的角色，从而确保传递和搜索体验？**
 
-需要访问 Experience Manager 作者环境的用户在 Adobe 的 Admin Console 中作为 Adobe IMS 用户进行管理。关于 Adobe IMS 用户的定义，以及如何在 Admin Console 中访问和管理这些用户，请参见 [Adobe IMS 用户](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users)。
+需要访问 Experience Manager 作者环境的用户在 Adobe 的 Admin Console 中作为 Adobe IMS 用户进行管理。关于 Adobe IMS 用户的定义，以及如何在 Admin Console 中访问和管理这些用户，请参见 [Adobe IMS 用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=zh-hans)。
 
 +++
 
