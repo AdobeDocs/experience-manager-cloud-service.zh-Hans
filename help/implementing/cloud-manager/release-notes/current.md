@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2025.4.0 版本�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
+source-git-commit: 6dc92a0f824ca9bc3726b48581ace232302691e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 60%
@@ -73,7 +73,6 @@ AEM 主页向早期采用者提供优化的体验，专注于改善工作流、�
 * 最适合您轮廓的角色：内容作者、开发人员、业务负责人、管理员或其他（提供描述）。
 * 您的主要 AEM 访问界面：AEM Sites、AEM Assets、AEM Forms、Cloud Manager 或其他（提供描述）。
 
-
 ## 错误修复
 
 * **证书缺少公用名(CN)字段的问题**
@@ -90,3 +89,4 @@ AEM 主页向早期采用者提供优化的体验，专注于改善工作流、�
 
 
 <!-- ## Known issues {#known-issues} -->
+
