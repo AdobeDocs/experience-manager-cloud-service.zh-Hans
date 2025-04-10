@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 63%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 63%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.3.0)的发布日期是2025年3月27日。 下一个功能版本(2025.4.0)计划于2025年4月24日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.3.0) 的发布日期为 2025 年 3 月 27 日。下一个功能版本 (2025.4.0) 计划于 2025 年 4 月 24 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -46,11 +46,11 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media中的新增功能 {#new-features-dynamic-media}
+### Dynamic Media 中的新增功能 {#new-features-dynamic-media}
 
-**对使用Dynamic Media和Open API提供的视频的长表单支持**
+**使用带有 Open API 的 Dynamic Media 投放的视频支持长格式**
 
-现在，带有OpenAPI的Dynamic Media支持长格式视频。 长格式视频最多可支持50 GB和2小时。
+带有 OpenAPI 的 Dynamic Media 现在支持长格式视频。长格式视频最多可支持50 GB和2小时。
 
 ### Dynamic Media Classic {#dmc}
 
@@ -64,9 +64,9 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 ## Assets 视图中的新增功能 {#new-features-assets-view}
 
 
-**对根标记的支持**
+**支持根标记**
 
-AEM Assets现在支持将元数据表单中的标记属性映射到自定义元数据。 此外，作为管理员，您可以通过限制对特定根标记以及根标记下存在的标记的访问，来限制标记对用户可用。
+AEM Assets 现在支持将元数据表单内的标记属性映射到自定义元数据中。此外，作为管理员，您可以通过限制对特定根标记及其下标记的访问权限来限制用户对标记的可用性。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,15 +96,15 @@ AEM Forms文档生成API现在允许您[直接将生成的PDF文档](/help/forms
 
 >[!IMPORTANT]
 >
-> Java 21 **运行时**&#x200B;已于2月部署到您的开发/RDE环境；它将于4月28日和29日&#x200B;**应用于暂存/生产环境。**&#x200B;请注意，使用Java 21（或Java 17）的&#x200B;**构建代码**&#x200B;独立于Java 21运行时 — 您必须显式采取措施使用Java 21（或Java 17）构建代码。
+> Java 21 **运行时**&#x200B;已于2月部署到您的开发/RDE环境；它将于4月28日和29日&#x200B;**应用于暂存/生产环境。**&#x200B;请注意，使用 Java 21（或 Java 17）**构建代码**&#x200B;与 Java 21 运行时无关，因此您必须明确采取相应步骤来用 Java 21（或 Java 17）构建代码。
 
-### AEM日志转发到更多目标 — Beta计划 {#log-forwarding-earlyadopter}
+### AEM 日志转发至更多目标 - Beta 项目 {#log-forwarding-earlyadopter}
 
-现在处于测试阶段，您可以将AEM日志转发到New Relic（使用HTTPS）、Amazon S3和Sumo Logic。 请注意，支持AEM日志(包括Apache/Dispatcher)，但不支持CDN日志。 发送电子邮件至[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以进行访问。
+目前处于 Beta 阶段，您可以将 AEM 日志转发到 New Relic（使用 HTTPS）、Amazon S3 和 Sumo Logic。请注意，支持 AEM 日志（包括 Apache/Dispatcher），但不支持 CDN 日志。发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
 
-虽然可以从Cloud Manager下载日志，但许多组织都发现将这些日志流式传输到首选日志记录目标会很有用。 AEM已支持(GA) AEM和CDN将日志转发到Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和OpenSearch）以及Splunk。 此功能以自助方式配置，并使用配置管道进行部署。
+虽然可以从 Cloud Manager 下载日志，但许多组织发现将这些日志流式传输到首选记录目标很有帮助。AEM 已经支持将 (GA) AEM 和 CDN 日志转发到 Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和 OpenSearch）和 Splunk。此功能以自助方式配置，并使用配置管道进行部署。
 
-请参阅[日志转发文档](/help/implementing/developing/introduction/log-forwarding.md)以了解详情。
+更多信息请参阅[日志转发文档](/help/implementing/developing/introduction/log-forwarding.md)。
 
 ### Edge 计算 - 请求反馈！ {#edge-computing-feedback}
 
