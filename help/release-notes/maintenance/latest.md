@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
+source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 95%
+source-wordcount: '1589'
+ht-degree: 94%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 95%
 
 ### 已知问题 {#known-issues-20133}
 
-无。
+* SITES-30727：AEM编辑器中的子组件拖放可能会失败。
 
 ### 已弃用的功能和 API {#deprecated-20133}
 
