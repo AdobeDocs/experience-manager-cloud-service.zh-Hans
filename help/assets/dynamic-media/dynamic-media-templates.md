@@ -4,7 +4,7 @@ description: 了解如何使用WYSIWYG模板编辑器创建Dynamic Media模板�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -313,13 +313,15 @@ Dynamic Media模板的一些主要优势包括：
 1. 导航到模板位置，选择模板并单击![编辑](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 编辑模板]**。 模板显示在画布上。
 1. 选择模板图层并[导航到其属性面板](#edit-or-delete-a-layer)以向其添加CTA链接。
 1. 在属性面板上，选择&#x200B;**[!UICONTROL 添加CTA]**，在&#x200B;**[!UICONTROL URL]**&#x200B;字段中指定目标URL，然后单击&#x200B;**[!UICONTROL 保存]**。
-   ![添加CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![添加CTA](/help/assets/assets/add-cta.png)
+
 1. 单击&#x200B;**[!UICONTROL 预览]**&#x200B;可预览您的模板并查看其定义的参数。
 1. 单击&#x200B;**[!UICONTROL 发布]**&#x200B;并选择&#x200B;**[!UICONTROL 是]**&#x200B;发布您的模板（如果未提前发布）。
 1. 导航到保存此模板的文件夹，选择该模板并单击![详细信息页面](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 详细信息]**。
 1. 单击&#x200B;**[!UICONTROL 复制选项]**&#x200B;并选择&#x200B;**[!UICONTROL 复制嵌入代码]**。
 
-   ![复制嵌入代码](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![复制嵌入代码](/help/assets/assets/copy-options1.png)
 
    以下是嵌入代码的示例：
 
