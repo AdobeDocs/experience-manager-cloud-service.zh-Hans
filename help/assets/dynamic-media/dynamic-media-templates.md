@@ -4,10 +4,10 @@ description: 了解如何使用WYSIWYG模板编辑器创建Dynamic Media模板�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 1%
+source-wordcount: '3050'
+ht-degree: 2%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 1%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -305,6 +305,41 @@ Dynamic Media模板的一些主要优势包括：
 2. 导航到模板位置。
 3. 选择模板。
 4. 单击&#x200B;**[!UICONTROL 编辑模板]**。 模板画布在“图层”面板中显示模板及其所有图层的列表。 根据您的要求开始编辑模板。
+
+## 将行动号召链接添加到模板层{#add-CTA-in-dynamic-media-templates}
+
+通过添加CTA链接将Dynamic Media模板的任何图像或文本图层转换为超链接，该链接可将用户定向到目标页面。 执行以下步骤以将CTA链接添加到层：
+
+1. 导航到模板位置，选择模板并单击![编辑](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 编辑模板]**。 模板显示在画布上。
+1. 选择模板图层并[导航到其属性面板](#edit-or-delete-a-layer)以向其添加CTA链接。
+1. 在属性面板上，选择&#x200B;**[!UICONTROL 添加CTA]**，在&#x200B;**[!UICONTROL URL]**&#x200B;字段中指定目标URL，然后单击&#x200B;**[!UICONTROL 保存]**。
+   ![添加CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. 单击&#x200B;**[!UICONTROL 预览]**&#x200B;可预览您的模板并查看其定义的参数。
+1. 单击&#x200B;**[!UICONTROL 发布]**&#x200B;并选择&#x200B;**[!UICONTROL 是]**&#x200B;发布您的模板（如果未提前发布）。
+1. 导航到保存此模板的文件夹，选择该模板并单击![详细信息页面](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 详细信息]**。
+1. 单击&#x200B;**[!UICONTROL 复制选项]**&#x200B;并选择&#x200B;**[!UICONTROL 复制嵌入代码]**。
+
+   ![复制嵌入代码](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   以下是嵌入代码的示例：
+
+   ```json
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. 将复制的嵌入代码添加到网站的HTML文件，并在浏览器中运行该代码以显示模板。
+
+单击模板上的CTA元素以导航到目标页面。
+
+观看此分步视频，了解如何将CTA链接添加到模板图层。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## 要注意的重要事项 {#important-points-to-note}
 
