@@ -4,7 +4,7 @@ description: 了解如何使用WYSIWYG模板编辑器创建Dynamic Media模板�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
+source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -314,7 +314,7 @@ Dynamic Media模板的一些主要优势包括：
 1. 选择模板图层并[导航到其属性面板](#edit-or-delete-a-layer)以向其添加CTA链接。
 1. 在属性面板上，选择&#x200B;**[!UICONTROL 添加CTA]**，在&#x200B;**[!UICONTROL URL]**&#x200B;字段中指定目标URL，然后单击&#x200B;**[!UICONTROL 保存]**。
 
-![添加CTA](/help/assets/assets/add-cta.png)
+   ![添加CTA](/help/assets/assets/add-cta.png)
 
 1. 单击&#x200B;**[!UICONTROL 预览]**&#x200B;可预览您的模板并查看其定义的参数。
 1. 单击&#x200B;**[!UICONTROL 发布]**&#x200B;并选择&#x200B;**[!UICONTROL 是]**&#x200B;发布您的模板（如果未提前发布）。
@@ -327,7 +327,7 @@ Dynamic Media模板的一些主要优势包括：
 
    ```json
     <div class="adobe-dynamicmedia-template-embed-container">
-    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
     <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
