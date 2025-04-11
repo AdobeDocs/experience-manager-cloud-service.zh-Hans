@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资产选�
 description: 使用资产选择器在您的应用程序中搜索、查找和检索资产的元数据和演绎版。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 94%
 
 ---
@@ -83,8 +83,9 @@ ht-degree: 94%
 
 * 主机应用程序正在HTTPS上运行。
 * 无法在`localhost`上运行应用程序。 如果要在本地计算机上集成资产选择器，则需要创建一个自定义域（例如`[https://<your_campany>.localhost.com:<port_number>]`），并在`redirectUrl list`中添加此自定义域。
-* 您可以使用相应的`imsClientId`配置`ADOBE_PROVIDED_CLIENT_ID`并将其添加到AEM Cloud Service环境变量中。
-  ![资产选择器IMS客户端ID环境](assets/asset-selector-ims-client-id-env.png)
+* 您可以使用相应的`imsClientId`配置clientID并将其添加到AEM Cloud Service环境变量中。
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * 需要在环境配置中定义IMS作用域列表。
 * 该应用程序的 URL 位于 IMS 客户端的重定向 URL 允许列表中。
 * 使用 Web 浏览器上的弹出窗口配置和呈现 IMS 登录流。因此，应在目标浏览器上启用或允许弹出窗口。

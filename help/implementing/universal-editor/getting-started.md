@@ -4,10 +4,10 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 07a8ad6083dbb7cf69148773d266b33e8cf32a38
+source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 38%
+source-wordcount: '981'
+ht-degree: 40%
 
 ---
 
@@ -124,9 +124,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 如果您有一个使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)的现有AEM项目，则在内容作者编辑页面时，页面将自动使用页面编辑器打开。 您可以根据内容路径或`sling:resourceType`定义应打开AEM的编辑器，从而让您的作者获得无缝体验，而不管所选内容需要哪个编辑器。
 
-1. 要利用此配置功能，请联系Adobe客户关怀团队以激活对程序的通用编辑器URL服务的访问。
-
-1. 客户关怀团队激活对通用编辑器URL服务的访问权限后，打开配置管理器。
+1. 打开Configuration Manager。
 
    `http://<host>:<port>/system/console/configMgr`
 

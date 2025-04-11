@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
+source-git-commit: 3323da83584c4511b15145c0106031df4597891c
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 39%
+source-wordcount: '1833'
+ht-degree: 40%
 
 ---
 
@@ -174,8 +174,8 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 以下限制适用于向 New Relic One 添加用户：
 
 * 最多可以添加 30 个用户。如果已达到最大用户数，请移除用户，以便能够添加新用户。
-* 添加到New Relic的用户为&#x200B;**受限制**&#x200B;类型。 有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
-* AEM as a Cloud Service仅提供&#x200B;**New Relic One APM**&#x200B;解决方案，不支持基础架构监控、警报、日志记录或API集成。
+* 添加到New Relic的用户为&#x200B;**Basic**&#x200B;类型。 有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)。
+* AEM as a Cloud Service 仅提供 New Relic One APM 解决方案，不支持警报、日志记录或 API 集成。
 
 >[!NOTE]
 >
