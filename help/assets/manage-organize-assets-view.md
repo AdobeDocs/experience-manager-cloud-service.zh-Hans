@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 71%
+source-wordcount: '1734'
+ht-degree: 63%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 71%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -135,17 +135,37 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
   ![版本历史记录中上传资源新版本的选项](assets/view-asset-versions2.png)
 
-### 查看资源的版本 {#view-versions}
+### 查看和比较资源的版本 {#view-and-compare-versions}
 
-上传资源的重复副本或者修改后的副本时，您可以创建其版本。利用版本控制，您可以查看历史资源，并在需要时还原为以前的版本。
+上传资源的重复副本或修改后的副本，以创建其版本。 版本控制允许您跟踪一段时间内对资源的修改，并在需要时还原到以前的版本。
 
-要查看版本，请打开资源的预览并单击右侧边栏中的&#x200B;**[!UICONTROL 版本]** ![版本图标](assets/do-not-localize/versions-clock-icon.png)。要预览特定版本，请选择该版本。要还原到该版本，请单击&#x200B;**[!UICONTROL 设为最新版本]**。
+要查看和比较版本，请执行以下操作：
 
-您还可以从版本时间线中创建版本。选择最新的版本，单击&#x200B;**[!UICONTROL 新版本]**，然后从本地文件系统上传资源的新副本。
+1. 导航到资产的详细信息页面。
+1. 单击右侧窗格中的![版本](/help/assets/assets/Clock.svg)以显示&#x200B;**[!UICONTROL 版本]**&#x200B;面板。 此面板上会显示原始资产及其上传版本的缩略图。
+1. 在面板上选择一个版本，以在预览区域中预览该版本。
+1. 选择除最新版本之外的任何版本，然后单击&#x200B;**[!UICONTROL 设为最新版本]**&#x200B;以将其设置为最新版本。
+1. 将预览中的滑块向左和向右拖动，以便在单个预览中快速查看图像的选定版本及其最新版本。 这使您能够快速比较映像的选定版本与其最新版本。
 
-![查看资源的版本](assets/view-asset-versions1.png)
+   >[!NOTE]
+   >
+   > 仅对图像资源启用版本比较。
 
-*图：查看资源的版本，还原到以前的版本，或者上传另一个新版本。*
+   ![比较资源的版本](/help/assets/assets/version-compare2.png)
+
+<!-- old content
+To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
+-->
+
+选择最新版本并单击&#x200B;**[!UICONTROL 新版本]**&#x200B;从本地文件系统上传资源的新副本以创建资源版本。
+
+<!-- old content
+You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
+
+![View versions of an asset](assets/view-asset-versions1.png)
+
+*Figure: View versions of an asset, revert to a previous version, or upload another new version.* 
+-->
 
 ## 管理资源状态 {#manage-asset-status}
 
