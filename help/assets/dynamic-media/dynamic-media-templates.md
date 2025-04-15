@@ -4,9 +4,9 @@ description: 了解如何使用WYSIWYG模板编辑器创建Dynamic Media模板�
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3071'
 ht-degree: 2%
 
 ---
@@ -87,6 +87,7 @@ Dynamic Media模板的一些主要优势包括：
 
 要创建DM模板，请执行以下步骤：
 
+1. 导航到您的[!DNL AEM Assets]主页，然后[将您的图像上载并发布到 [!DNL AEM] 和 [!DNL Dynamic Media] 同时](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以将其用于创建模板。
 1. [创建空白画布](#create-a-canvas)
 1. [将图像添加到画布](#add-images-to-the-canvas)
 1. [在画布中添加文本图层](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ Dynamic Media模板的一些主要优势包括：
 1. 使用此URL快速推销您的产品或服务。 您可以与客户共享此URL，或将其集成到您的网站或任何下游第三方应用程序，以显示横幅并实时更新以反映持续优惠。
 
 在此视频中了解如何分步创建Dynamic Media模板。
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## 从URL实时更新模板{#update-the-template-from-the-url}
 
