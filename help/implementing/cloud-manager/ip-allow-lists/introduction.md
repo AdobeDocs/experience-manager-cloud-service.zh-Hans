@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 25%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 25%
 
 ## 概述 {#overview}
 
-默认情况下，可通过Internet访问AEM as a cloud service。 虽然安全性是通过用户身份验证和授权来处理的，但 IP 允许列表是一种限制仅访问受信任的 IP 地址的方法。
+默认情况下，可通过Internet访问AEM as a cloud service 。 虽然安全性是通过用户身份验证和授权来处理的，但 IP 允许列表是一种限制仅访问受信任的 IP 地址的方法。
 
 Cloud Manager的IP允许列表可用于限制和控制对这些受信任IP地址的访问。 具有适当权限的Cloud Manager用户可以[创建和添加受信任IP地址的IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)，其网站的用户可以从这些地址访问其AEM域。
 
@@ -81,7 +81,3 @@ Cloud Manager的IP允许列表可用于限制和控制对这些受信任IP地址
 为避免前端管道运行中断，请确保添加此Cloud Manager IP允许列表。 然后，在启用管道之前&#x200B;*将该列表应用于创作环境*。
 
 有关详细信息，请参阅[应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)和[启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)。
-
-### Universal Editor和IP允许列表 {#universal-editor}
-
-{{ip-allow-lists-ue}}

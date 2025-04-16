@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '303'
+ht-degree: 12%
 
 ---
 
@@ -18,8 +18,6 @@ ht-degree: 0%
 应用IP允许列表时，列表定义中包含的所有IP范围都与环境中的创作或发布服务相关联。 取消应用列表与此过程相反。
 
 {{add-cm-allowlist-frontend-pipeline}}
-
-{{ip-allow-lists-ue}}
 
 ## 应用IP允许列表 {#applying}
 
@@ -33,7 +31,7 @@ ht-degree: 0%
 1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;屏幕。
 1. 在&#x200B;**环境**&#x200B;屏幕上，导航到特定环境详细信息页面。
 1. 导航到&#x200B;**IP允许列表**&#x200B;表。
-1. 使用表顶部的输入字段，以便选择IP允许列表以及要应用它的作者、Publish或预览服务。
+1. 使用表顶部的输入字段，以便选择IP允许列表以及要应用它的创作、发布或预览服务。
 IP允许列表必须已存在于Cloud Manager中才能应用它。 请参阅[添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。
 1. 单击![添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **应用**&#x200B;并确认您的提交。
 
