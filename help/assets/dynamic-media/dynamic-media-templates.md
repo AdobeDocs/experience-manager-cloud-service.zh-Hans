@@ -1,17 +1,17 @@
 ---
 title: 如何管理 [!DNL Dynamic Media] 模板？
-description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media] 模板，并包含多个图像和文本图层，以快速创建横幅和传单，并在下游应用程序中使用它们。
+description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media] 模板并包含多个图像和文本图层，以快速创建横幅和传单并在下游应用程序中使用。
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
+source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3026'
 ht-degree: 1%
 
 ---
 
-# [!DNL Dynamic Media]模板{#dynamic-media-templates}
+# [!DNL Dynamic Media]个模板{#dynamic-media-templates}
 
 <table>
     <tr>
@@ -87,11 +87,11 @@ ht-degree: 1%
 
 执行以下步骤以创建[!DNL Dynamic Media]模板：
 
-1. 导航到您的[!DNL Assets View]并在&#x200B;**[!UICONTROL Assets]**&#x200B;中[创建文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 **[!UICONTROL Assets]**&#x200B;中的文件夹树将在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中复制。 稍后使用此[!UICONTROL Dynamic Media Assets]文件夹保存[!DNL Dynamic Media]模板。
-1. 选择&#x200B;**[!UICONTROL Assets]**&#x200B;和[将您的图像上载并发布到 [!DNL AEM] 和 [!DNL Dynamic Media] 同时](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以将其用于创建模板。
+1. 导航到您的[!DNL Assets View]并[在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中创建文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的文件夹树将在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中复制。 将您的[!DNL Dynamic Media]模板保存在此[!UICONTROL Dynamic Media Assets]文件夹中。
+1. 选择![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[将您的图像上载并发布到 [!DNL AEM] 和 [!DNL Dynamic Media] 同时](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以将其用于创建模板。
 1. [创建空白画布](#create-a-canvas)
 1. [将图像添加到画布](#add-images-to-the-canvas)
-1. [将文本图层添加到画布](#add-text-to-the-canvas)
+1. [在画布中添加文本图层](#add-text-to-the-canvas)
 1. [编辑或删除图层](#edit-or-delete-a-layer)
 1. [参数化图层](#parameterise-a-layer)
 
@@ -99,13 +99,15 @@ ht-degree: 1%
 
 执行以下步骤可创建空白画布：
 
-1. 导航到[!DNL Assets View]并选择左侧面板中可用的&#x200B;**[!UICONTROL Dynamic Media Assets]**。
+1. 导航到[!DNL Assets View]，选择左侧面板中可用的&#x200B;**[!UICONTROL Dynamic Media Assets]**，然后导航到您的文件夹以将您的模板保存在该文件夹中。
 
    ![Dynamic Media 模板](/help/assets/assets/DM-Assets1.png)
 
-1. 在此页面上选择&#x200B;**[!UICONTROL 创建模板]**，或导航到您的&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;文件夹并选择&#x200B;**[!UICONTROL 创建模板]**。 模板将保存在创建该模板的位置 — 位于根文件夹(如&#x200B;**[!UICONTROL Dynamic Media Assets]**)或根中的文件夹。 选择&#x200B;**[!UICONTROL 创建模板]**&#x200B;后，将显示&#x200B;**[!UICONTROL 新建模板]**对话框。
+1. 选择&#x200B;**[!UICONTROL 创建模板]**。 此时将显示&#x200B;**[!UICONTROL 新模板]**对话框。
    ![如何创建可实时自定义的动态模板](/help/assets/assets/new-template.png)
-
+   >[!NOTE]
+   >
+   >  模板将保存在您创建该模板的位置。 在[!DNL Assets View]主页上，选择&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;并单击&#x200B;**[!UICONTROL 创建模板]**&#x200B;以将模板保存在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;根文件夹中。
 1. 指定模板名称，定义画布宽度和高度，然后单击&#x200B;**[!UICONTROL 创建]**。 屏幕上会显示一个空白画布，画布的两侧都有用于创建模板的菜单选项。 将鼠标悬停在菜单选项上可查看其工具提示。
    ![实时可自定义模板](/help/assets/assets/blank-canvas-page.png)
 
@@ -113,13 +115,13 @@ ht-degree: 1%
    >
    > 允许的宽度和高度范围是50到5000。
 
-**右窗格中的菜单选项：**&#x200B;使用这些选项将必要的图像和文本图层添加到画布中。
+**右侧窗格上的菜单选项：**&#x200B;使用这些选项将必要的图像和文本图层添加到画布中。
 
 * ![DM模板](/help/assets/assets/add-image.svg)：单击以将图像添加到画布。
-* ![可自定义的模板](/help/assets/assets/add-text.svg)：单击以将文本添加到画布。
-* ![可自定义的模板](/help/assets/assets/show-layers-list.svg)：单击可查看画布上所有图层（图像和文本）的列表。 添加到画布的每个图像和文本都表示为一个单独的图层。
+* ![可自定义的模板](/help/assets/assets/add-text.svg)：单击以向画布添加文本。
+* ![可自定义的模板](/help/assets/assets/show-layers-list.svg)：单击以查看画布上所有图层（图像和文本）的列表。 添加到画布中的每个图像和文本都表示为一个单独的图层。
 
-**左窗格中的菜单选项：**&#x200B;请将这些选项用于下面提到的常用编辑器操作。
+**左侧窗格上的菜单选项：**&#x200B;请将这些选项用于常见的编辑器操作，如下所述。
 
 * ![DM模板](/help/assets/assets/layer-selector.svg)：选择层。
 * ![支持自定义的模板](/help/assets/assets/bring-forward.svg)：单击以转发选定的图层，或按&#x200B;**Ctrl** + **]** (Windows)或&#x200B;**Cmd** + **]** (Mac)。
@@ -185,19 +187,19 @@ ht-degree: 1%
 从图层的属性面板中，选择画布上的另一个图层以导航到其属性面板。
 
 
-#### 调整图层位置、大小、旋转或删除图层{#reposition-resize-delete-a-layer}
+#### 重新定位、调整大小、旋转或删除图层{#reposition-resize-delete-a-layer}
 
 请参阅这些常见的图层编辑操作以编辑文本或图像图层：
 
-* **调整图层位置：**&#x200B;拖动图层以将其移动到画布上的任意位置。 此操作将更新“属性”面板中的X和Y值。
-* **调整图层大小：**&#x200B;选择图层并拖动其边缘手柄以调整其大小。 此操作将更新“属性”面板中的W（宽度）和H（高度）值。
+* **重新定位图层：**&#x200B;拖动图层可将其移动到画布上的任意位置。 此操作将更新属性面板中的X和Y值。
+* **调整图层大小：**&#x200B;选择图层并拖动其边缘手柄以调整其大小。 此操作更新属性面板中的W（宽度）和H（高度）值。
 * **旋转图层：**&#x200B;拖动垂直放置在图层上方的方形手柄，使其绕其中心旋转。 此操作将更新属性面板中的角度值。
 * **删除层：**&#x200B;按&#x200B;**Backspace**&#x200B;或&#x200B;**删除**，然后单击&#x200B;**[!UICONTROL 确认]**&#x200B;以删除选定的层。
 
 #### 文本格式设置选项{#text-formatting-options-on-properties-panel}
 
 通过更改面板&#x200B;**[!UICONTROL 文本]**部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层内）。
-确保包含**[!UICONTROL 智能文本调整大小]**。 [!UICONTROL 智能文本调整大小]适用于[版面组排](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，用于以最佳方式填充文本区域中的文本，防止文本溢出，并最大程度减少文本底部的额外空间。
+确保包括**[!UICONTROL 智能文本大小调整]**。 [!UICONTROL 智能文本调整大小]适用于[版面组排](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，用于以最佳方式填充文本区域中的文本，防止文本溢出，并最大程度减少文本底部的额外空间。
 
 ![立即创建内容](/help/assets/assets/smart-text-resize.png)
 
@@ -207,9 +209,9 @@ ht-degree: 1%
 
 要参数化图层，请执行以下操作：
 
-1. 单击![即时内容创建](/help/assets/assets/show-layers-list.svg)，选择一个图层，然后单击&#x200B;**[!UICONTROL 参数]**。 显示&#x200B;**[!UICONTROL 参数]**&#x200B;面板。
-1. 切换&#x200B;**[!UICONTROL 包含参数]**&#x200B;以参数化属性。 请参阅[参数面板选项](#parameterisation-options-or-allowed-parameters)，了解属性在参数化后的行为。
-1. **可选：**&#x200B;重命名参数名称。 参数名称具有层名称后跟一个后缀。 对于选定层，其所有参数化属性共享相同的层名称，后跟一个变化的后缀。 按照语义命名约定重命名层名称，以便在URL中包含参数时，参数名称本身可以说明层的内容或其用途。
+1. 单击![即时内容创建](/help/assets/assets/show-layers-list.svg)，选择图层，然后单击&#x200B;**[!UICONTROL 参数]**。 显示&#x200B;**[!UICONTROL 参数]**&#x200B;面板。
+1. 切换&#x200B;**[!UICONTROL 包含参数]**&#x200B;以参数化属性。 请参阅[“参数”面板选项](#parameterisation-options-or-allowed-parameters)，了解属性在参数化后的行为。
+1. **可选：**&#x200B;重命名参数名称。 参数名称具有图层名称后跟后缀。 对于选定图层，其所有参数化属性共享相同的图层名称，后跟不同的后缀。 按照语义命名约定重命名层名称，以便在URL中包含参数时，参数名称本身可以说明层的内容或其用途。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
    ![即时内容创建](/help/assets/assets/parameterise-a-layer.png)
 若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击**[!UICONTROL 参数]**。
@@ -267,13 +269,13 @@ ht-degree: 1%
    ![即时创建内容](/help/assets/assets/dm-templates-publish-status.png)
 您还可以切换**[!UICONTROL 包含所有参数]**以编辑所有显示的参数值，并在模板预览中查看更新。
    <br>
-1. 要在预览页面上发布模板，请单击&#x200B;**[!UICONTROL 发布]**&#x200B;并确认发布。 此时会显示Publish完成消息，并且发布状态会更新为“已发布”。
+1. 要在预览页面上发布模板，请单击&#x200B;**[!UICONTROL 发布]**&#x200B;并确认发布。 显示&#x200B;**[!UICONTROL 发布完成]**&#x200B;消息，发布状态更新为&#x200B;**[!UICONTROL 已发布]**。
 
 >[!NOTE]
 >
->发布模板要求首先发布模板图像。
+>发布模板需要先发布模板图像。
 
-### 复制传递URL
+### 复制投放URL
 
 **[!UICONTROL 预览]**&#x200B;页面上选定的参数将成为模板URL中的URL参数。
 
@@ -281,7 +283,7 @@ ht-degree: 1%
 
 1. 单击&#x200B;**[!UICONTROL 复制URL]**。 将显示&#x200B;**[!UICONTROL 复制URL]**&#x200B;对话框。 选择并复制显示的URL。 URL中的第一个参数在问号&#x200B;**([!UICONTROL ？])**&#x200B;和一个键值对以&#x200B;**[!UICONTROL $]**&#x200B;开头，以&#x200B;**[!UICONTROL &amp;]**&#x200B;结尾。 键和值用等号&#x200B;**([!UICONTROL =])**&#x200B;分隔，键在左侧，值在右侧。
 1. 将此URL粘贴到浏览器选项卡中，并查看您的实时模板。 通过直接更新URL中所需参数的值（键值）实时自定义模板，如&#x200B;**预览和发布**&#x200B;部分的[步骤2](#preview-and-publish-template-and-copy-template-deliver-url)所示。
-1. 使用此URL快速销售产品或服务。 您可以与客户共享此URL，或将其集成到您的网站或任何下游第三方应用程序中，以显示横幅并实时更新横幅以反映持续提供的内容。
+1. 使用此URL快速推销您的产品或服务。 您可以与客户共享此URL，或将其集成到您的网站或任何下游第三方应用程序，以显示横幅并实时更新以反映持续优惠。
 
 在此视频中了解如何分步创建[!DNL Dynamic Media]模板。
 >[!VIDEO](https://video.tv.adobe.com/v/3443281)
@@ -291,11 +293,11 @@ ht-degree: 1%
 直接在URL中编辑参数可能比较繁琐。 要简化：
 
 1. 复制URL并将其粘贴到记事本中。
-1. 使用Cmd+F (Mac)或Ctrl+F (Windows)查找并编辑参数值。 例如：
+1. 使用Cmd+F (Mac)或Ctrl+F (Windows)查找和编辑参数值。 例如：
    * 查找和替换图像图层的图像路径。
-   * 查找图层的[参数化](#parameterise-a-layer)坐标（宽度和高度）以调整其值。
+   * 查找图层的[参数化](#parameterise-a-layer)坐标、宽度和高度以调整其值。
    * 编辑文本图层的文本、字体、颜色、大小或对齐方式。
-   * 将可见性值更改为0和1。
+   * 在0和1之间更改可见性值。
 
 将此更新的URL粘贴到浏览器中以查看更改。
 
