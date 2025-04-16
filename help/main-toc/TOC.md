@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6152'
 ht-degree: 94%
 
 ---
@@ -1122,7 +1122,7 @@ ht-degree: 94%
       + [升级内容片段以支持 UUID 引用](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [GraphQL 查询示例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 查询疑难解答](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [用于内容片段传递的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [使用OpenAPI的AEM内容片段交付](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [内容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API 中的内容片段支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-hans)
    + 安全性 {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 94%
       + 通用编辑器 {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
+         + [通用编辑器和站点编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
          + [组件定义](/help/implementing/universal-editor/component-definition.md)
          + [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)

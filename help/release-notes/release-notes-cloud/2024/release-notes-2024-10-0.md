@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.10.0 版�
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 100%
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 **用于内容片段投放的 AEM REST OpenAPI**
 
-[用于内容片段投放的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 现已提供给 AEM as a Cloud Service 使用。
+[用于内容片段投放的 AEM REST OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) 现已提供给 AEM as a Cloud Service 使用。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
