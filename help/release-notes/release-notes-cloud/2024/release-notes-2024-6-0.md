@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.6.0 版�
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
+source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
 workflow-type: tm+mt
 source-wordcount: '1972'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ### Experience Manager Sites 的新增功能 {#new-feature-sites}
 
-**实际使用监控 (RUM) 数据服务** {#real-use-monitoring}
+**实际使用监控(RUM)数据服务** {#real-use-monitoring}
 
 [实际使用监控 (RUM) 数据服务](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)现已普遍可用，可为 AEM as a Cloud Service 启用客户端数据收集功能。该服务可以更准确地反映用户互动，确保可靠地衡量网站参与度。它为客户提供了有关其页面流量和性能的高级洞察，为了解和提高页面性能提供了宝贵的机会。
 
@@ -211,9 +211,9 @@ AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求�
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### 客户端重定向（早期采用者项目） {#client-side-redirects-early-adopter}
+#### 服务器端重定向（早期采用者计划） {#server-side-redirects-early-adopter}
 
-在源代码控制中配置 301/302 客户端重定向，并部署到 CDN。[了解详情](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 请注意，目前已有与 [CDN 配置](/help/implementing/dispatcher/cdn-configuring-traffic.md)相关的其他多项功能可用，包括请求和响应变换以及将流量路由到非 AEM Sites。
+在源代码管理中配置301/302服务器端重定向，并将其部署到CDN。 [了解详情](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 请注意，目前已有与 [CDN 配置](/help/implementing/dispatcher/cdn-configuring-traffic.md)相关的其他多项功能可用，包括请求和响应变换以及将流量路由到非 AEM Sites。
 
 #### 流量过滤规则警报（早期采用者计划） {#traffic-filter-rules-alerts-early-adopter}
 

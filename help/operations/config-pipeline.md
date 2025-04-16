@@ -4,7 +4,7 @@ description: 了解如何使用配置管道来部署各种配置AEM as a Cloud S
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 1%
@@ -38,15 +38,15 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 | [流量筛选器规则，包括WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 声明规则以阻止恶意流量 |
 | [请求转换](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | 声明规则以转换流量请求的形状 |
 | [响应转换](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 声明规则以转换给定请求的响应形状 |
-| [客户端重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 声明301/302样式客户端重定向 |
+| [服务器端重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | 声明301/302样式的服务器端重定向 |
 | [来源选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | 声明规则以将流量路由到其他后端，包括非Adobe应用程序 |
-| [CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 如果无法访问AEM源，则覆盖默认错误页面，并引用配置文件中自托管静态内容的位置 |
+| [CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 如果无法访问AEM源页面，请覆盖默认错误页面，并引用配置文件中自托管静态内容的位置 |
 | [CDN清除](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | 声明用于清除CDN的清除API密钥 |
-| [客户管理的CDN HTTP令牌](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | 声明从客户CDN调用AdobeCDN所需的X-AEM-Edge-Key的值 |
+| [客户管理的CDN HTTP令牌](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | 声明从客户CDN调用Adobe CDN所需的X-AEM-Edge-Key的值 |
 | [基本身份验证](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 为保护某些URL的基本身份验证对话框声明用户名和密码。 |
-| [版本清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明有关应清除内容版本的规则来优化AEM存储库 |
+| [版本清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明应何时清除内容版本的规则来优化AEM存储库 |
 | [审核日志清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明有关应清除日志时间的规则，优化AEM审核日志以提高性能 |
-| [日志转发](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 配置端点和凭据以将日志转发到各种目标，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk |
+| [日志转发](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 配置用于将日志转发到各种目标的端点和凭据，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk |
 
 ## 创建和管理配置管道 {#creating-and-managing}
 

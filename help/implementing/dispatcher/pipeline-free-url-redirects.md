@@ -4,7 +4,7 @@ description: 了解如何在没有访问Git或Cloud Manager管道的情况下声
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 * 重命名的HTML页面。
 * seo优化。
 
-AEM as a Cloud Service提供了[多种方法来实施客户端重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)，但在以下情况下，本文中所述的策略（管道免费重定向）是很好的选择：
+AEM as a Cloud Service提供了[多种方法来实施服务器端重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)，但在以下情况下，本文中所述的策略（管道免费重定向）是很好的选择：
 
 * 维护重定向的人员是业务用户，他们无权将文件更改提交到源代码管理或执行Cloud Manager Web层配置管道。
 * 重定向的数量范围从数到数万不等。

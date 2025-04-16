@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.3.0 版�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
 workflow-type: tm+mt
 source-wordcount: '2293'
 ht-degree: 93%
@@ -116,7 +116,7 @@ Assets Essentials 允许管理员管理存储库中可用的专用收藏集的�
 
 ### AEM Forms 的新功能 {#forms-new-features}
 
-* **[Adobe Experience Manager FormsEdge Delivery Services](/help/edge/docs/forms/overview.md)**： AEM FormsEdge Delivery Services是一组可组合的服务，可用于实现快速开发环境，以便作者能够快速更新、发布和启动新表单。 这些服务提供卓越且具有高影响力的表单体验，从而推动参与度和转化率。这些表单体验很容易创作和开发。
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**： Edge Delivery Services for AEM Forms是一组可组合的服务，它支持快速开发环境，让作者可以快速更新、发布和启动新表单。 这些服务提供卓越且具有高影响力的表单体验，从而推动参与度和转化率。这些表单体验很容易创作和开发。
 
   ![EDS Forms 功能](/help/edge/assets/eds-forms-features.png)
 
@@ -189,7 +189,7 @@ Assets Essentials 允许管理员管理存储库中可用的专用收藏集的�
 * **[您可以利用Real Use Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**启用AEM as a Cloud Service的客户端收集。
 Real Use Monitoring (RUM) Data Service提供了对用户交互的更精确的反映，从而确保了对网站参与度的可靠衡量。 这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
-  如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。然后，Adobe的产品团队将为您启用实时监控(RUM)数据服务。
+  如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。Adobe的产品团队将为您启用实时监控(RUM)数据服务。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -205,7 +205,7 @@ Real Use Monitoring (RUM) Data Service提供了对用户交互的更精确的反
 
 除了最近发布的[流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道声明和部署其他类型的 CDN 配置。[了解详情](/help/implementing/dispatcher/cdn-configuring-traffic.md)并通过向 **<aemcs-cdn-config-adopter@adobe.com>** 发送电子邮件加入早期采用者计划，以获得以下权限：
 
-* 301/302 客户端重定向
+* 301/302服务器端重定向
 * 将边缘请求代理到任意来源（例如非 AEM 应用程序）
 * URL 转换
 * 设置或修改请求或响应标头

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.9.0 版�
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -136,9 +136,9 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 通过弹出需要用户名和密码的基本身份验证对话框来保护某些内容资源。此功能主要针对轻度身份验证用例，例如业务利益相关者审查内容，而不是作为最终用户访问权限的综合解决方案。用户名和密码列表通过Git中的配置文件进行管理，该配置文件通过配置管道部署，并引用机密类型的Cloud Manager环境变量。 [了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-### 客户端重定向 {#client-side-redirects}
+### 服务器端重定向 {#server-side-redirects}
 
-在部署到CDN并在CDN上计算的配置文件Git中声明[浏览器重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。 这对于删除页面、更改的网站结构和SEO优化等方案非常有用。
+在部署到CDN并在CDN上计算的配置文件Git中声明[浏览器重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)。 这对于删除页面、更改的网站结构和SEO优化等方案非常有用。
 
 ### 新的 AEM Developer Console（公开 Beta） {#aem-developer-console-beta}
 
