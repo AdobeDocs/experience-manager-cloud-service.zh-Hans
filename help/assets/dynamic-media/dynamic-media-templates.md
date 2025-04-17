@@ -1,17 +1,17 @@
 ---
 title: 如何管理 [!DNL Dynamic Media] 模板？
-description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media] 模板并包含多个图像和文本图层，以快速创建横幅和传单并在下游应用程序中使用。
+description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media] 模板，并包含多个图像和文本图层，以快速创建横幅和传单，并在下游应用程序中使用它们。
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
 
-# [!DNL Dynamic Media]个模板{#dynamic-media-templates}
+# [!DNL Dynamic Media]模板{#dynamic-media-templates}
 
 <table>
     <tr>
@@ -50,7 +50,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-使用[!DNL Dynamic Media]模板(WYSIWYG模板编辑器)为您的横幅和传单创建实时可自定义的模板。 在下游应用程序中使用您的[!DNL Dynamic Media]模板。 [!DNL Dynamic Media]模板包含图像和文本图层。 向模板的图像和文本图层添加参数，并使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)重新定位图层并调整其大小以及实时更新其内容。
+使用[!DNL Dynamic Media]模板(WYSIWYG模板编辑器)为您的横幅和传单创建实时可自定义的模板。 发布[!DNL Dynamic Media]模板并将其用于下游应用程序。 [!DNL Dynamic Media]模板包含图像和文本图层。 向模板的图像和文本图层添加参数，并使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)重新定位图层并调整其大小以及实时更新其内容。
 
 一些主要功能包括：
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 执行以下步骤以创建[!DNL Dynamic Media]模板：
 
 1. 导航到您的[!DNL Assets View]并[在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中创建文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的文件夹树将在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中复制。 将您的[!DNL Dynamic Media]模板保存在此[!UICONTROL Dynamic Media Assets]文件夹中。
-1. 选择![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[将您的图像上载并发布到 [!DNL AEM] 和 [!DNL Dynamic Media] 同时](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以将其用于创建模板。
+1. 选择![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[将您的图像上载并发布到 [!DNL AEM] 和 [!DNL Dynamic Media] 同时](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以将其用于创建模板。 需要发布图像才能生成模板的投放URL，该URL可用于下游应用程序。
 1. [创建空白画布](#create-a-canvas)
 1. [将图像添加到画布](#add-images-to-the-canvas)
 1. [在画布中添加文本图层](#add-text-to-the-canvas)
@@ -107,7 +107,8 @@ ht-degree: 1%
    ![如何创建可实时自定义的动态模板](/help/assets/assets/new-template.png)
    >[!NOTE]
    >
-   >  模板将保存在您创建该模板的位置。 在[!DNL Assets View]主页上，选择&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;并单击&#x200B;**[!UICONTROL 创建模板]**&#x200B;以将模板保存在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;根文件夹中。
+   >  模板将保存在创建该模板的位置。 在[!DNL Assets View]主页上，选择&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;并单击&#x200B;**[!UICONTROL 创建模板]**&#x200B;以将模板保存在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;根文件夹中。
+
 1. 指定模板名称，定义画布宽度和高度，然后单击&#x200B;**[!UICONTROL 创建]**。 屏幕上会显示一个空白画布，画布的两侧都有用于创建模板的菜单选项。 将鼠标悬停在菜单选项上可查看其工具提示。
    ![实时可自定义模板](/help/assets/assets/blank-canvas-page.png)
 
@@ -115,24 +116,24 @@ ht-degree: 1%
    >
    > 允许的宽度和高度范围是50到5000。
 
-**右侧窗格上的菜单选项：**&#x200B;使用这些选项将必要的图像和文本图层添加到画布中。
+**右窗格中的菜单选项：**&#x200B;使用这些选项将必要的图像和文本图层添加到画布中。
 
 * ![DM模板](/help/assets/assets/add-image.svg)：单击以将图像添加到画布。
-* ![可自定义的模板](/help/assets/assets/add-text.svg)：单击以向画布添加文本。
-* ![可自定义的模板](/help/assets/assets/show-layers-list.svg)：单击以查看画布上所有图层（图像和文本）的列表。 添加到画布中的每个图像和文本都表示为一个单独的图层。
+* ![可自定义的模板](/help/assets/assets/add-text.svg)：单击以将文本添加到画布。
+* ![可自定义的模板](/help/assets/assets/show-layers-list.svg)：单击可查看画布上所有图层（图像和文本）的列表。 添加到画布的每个图像和文本都表示为一个单独的图层。
 
-**左侧窗格上的菜单选项：**&#x200B;请将这些选项用于常见的编辑器操作，如下所述。
+**左窗格中的菜单选项：**&#x200B;请将这些选项用于以下常用编辑器操作。
 
-* ![DM模板](/help/assets/assets/layer-selector.svg)：选择层。
-* ![支持自定义的模板](/help/assets/assets/bring-forward.svg)：单击以转发选定的图层，或按&#x200B;**Ctrl** + **]** (Windows)或&#x200B;**Cmd** + **]** (Mac)。
-* ![如何创建可轻松自定义的模板](/help/assets/assets/send-backward.svg)：单击以向后发送选定的图层，或按&#x200B;**Ctrl** + **[** (Windows)或&#x200B;**Cmd** + **[** (Mac)。
-* ![创建可立即自定义的模板](/help/assets/assets/undo.svg)：单击可撤消上一个操作，或按&#x200B;**Ctrl** + **Z** (Windows)或&#x200B;**Cmd** + **Z** (Mac)。
-* ![用于快速创建横幅的模板](/help/assets/assets/redo.svg)：单击以重做上一个操作或按&#x200B;**Ctrl** + **Y** (Windows)或&#x200B;**Cmd** + **Y** (Mac)。
-* ![用于快速创建传单的模板](/help/assets/assets/zoom-in.svg)：单击以放大画布或按&#x200B;**Ctrl** + **+** (Windows)或Cmd + **+** (Mac)。
-* ![用于快速创建横幅的模板](/help/assets/assets/Zoom-out.svg)：单击以缩小画布或按&#x200B;**Ctrl** + **-** (Windows)或&#x200B;**Cmd** + **-** (Mac)。
+* ![DM模板](/help/assets/assets/layer-selector.svg)：选择![DM模板](/help/assets/assets/layer-selector.svg)，然后单击画布上的某个图层将其选定。
+* ![支持自定义的模板](/help/assets/assets/bring-forward.svg)：单击![支持自定义的模板](/help/assets/assets/bring-forward.svg)或使用键盘快捷键、**Ctrl** + **]** (Windows)或&#x200B;**Cmd** + **]** (Mac)以转发选定的层。
+* ![如何创建可轻松自定义的模板](/help/assets/assets/send-backward.svg)：单击![如何创建可轻松自定义的模板](/help/assets/assets/send-backward.svg)或使用键盘快捷键，**Ctrl** + **[** (Windows)或&#x200B;**Cmd** + **[** (Mac)以向后发送选定的图层。
+* ![创建可立即自定义的模板](/help/assets/assets/undo.svg)：单击![创建可立即自定义的模板](/help/assets/assets/undo.svg)或使用键盘快捷键、**Ctrl** + **Z** (Windows)或&#x200B;**Cmd** + **Z** (Mac)以撤消上一个操作。
+* ![用于快速创建横幅的模板](/help/assets/assets/redo.svg)：单击![用于快速创建横幅的模板](/help/assets/assets/redo.svg)，或者使用键盘快捷键、**Ctrl** + **Y** (Windows)或&#x200B;**Cmd** + **Y** (Mac)用于重做上一个操作。
+* ![用于快速创建传单的模板](/help/assets/assets/zoom-in.svg)：单击![用于快速创建传单的模板](/help/assets/assets/zoom-in.svg)，或者使用键盘快捷键、**Ctrl** + **+** (Windows)或&#x200B;**Cmd** + **+** (Mac)来放大画布。
+* ![用于快速创建横幅的模板](/help/assets/assets/Zoom-out.svg)：单击![用于快速创建横幅的模板](/help/assets/assets/Zoom-out.svg)或使用键盘快捷键、**Ctrl** + **-** (Windows)或&#x200B;**Cmd** + **-** (Mac)以缩小画布。
 * 如果没有编辑文本或属性，请按&#x200B;**Backspace**&#x200B;或&#x200B;**delete**&#x200B;删除选定的图层。
 
-单击![模板可快速创建传单](/help/assets/assets/show-layers-list.svg) **>**&#x200B;画布层上的更多选项(![](/help/assets/assets/three-dots.svg))，以便在创建模板时随时编辑画布维度。
+单击![模板可快速创建传单](/help/assets/assets/show-layers-list.svg)，并在画布层上选择更多选项(![](/help/assets/assets/three-dots.svg))以在创建模板时随时编辑画布维度。
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ ht-degree: 1%
 
 执行以下步骤以将图像添加到画布：
 
-1. 单击![立即创建横幅](/help/assets/assets/add-image.svg)以显示[资产选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 该面板显示AEM Assets实例中已同步到[!DNL Dynamic Media]的图像。
+1. 单击![立即创建横幅](/help/assets/assets/add-image.svg)以打开[资产选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 该面板显示AEM Assets实例中已同步到[!DNL Dynamic Media]的图像。
 1. 浏览面板或使用搜索栏中的关键字查找特定图像。
 1. 将图像拖放到画布上以使用。 查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以调整画布上的图层大小或重新定位图层。
    ![在秒内创建横幅](/help/assets/assets/add-image-to-canvas.png)
@@ -199,7 +200,7 @@ ht-degree: 1%
 #### 文本格式设置选项{#text-formatting-options-on-properties-panel}
 
 通过更改面板&#x200B;**[!UICONTROL 文本]**部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层内）。
-确保包括**[!UICONTROL 智能文本大小调整]**。 [!UICONTROL 智能文本调整大小]适用于[版面组排](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，用于以最佳方式填充文本区域中的文本，防止文本溢出，并最大程度减少文本底部的额外空间。
+确保包括**[!UICONTROL 智能文本大小调整]**。 [!UICONTROL 智能文本大小调整]适用于[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，可在文本区域中以最佳方式填充文本，防止文本溢出，并最大程度地减少文本底部的额外空间。
 
 ![立即创建内容](/help/assets/assets/smart-text-resize.png)
 
@@ -209,9 +210,9 @@ ht-degree: 1%
 
 要参数化图层，请执行以下操作：
 
-1. 单击![即时内容创建](/help/assets/assets/show-layers-list.svg)，选择图层，然后单击&#x200B;**[!UICONTROL 参数]**。 显示&#x200B;**[!UICONTROL 参数]**&#x200B;面板。
-1. 切换&#x200B;**[!UICONTROL 包含参数]**&#x200B;以参数化属性。 请参阅[“参数”面板选项](#parameterisation-options-or-allowed-parameters)，了解属性在参数化后的行为。
-1. **可选：**&#x200B;重命名参数名称。 参数名称具有图层名称后跟后缀。 对于选定图层，其所有参数化属性共享相同的图层名称，后跟不同的后缀。 按照语义命名约定重命名层名称，以便在URL中包含参数时，参数名称本身可以说明层的内容或其用途。
+1. 单击![即时内容创建](/help/assets/assets/show-layers-list.svg)，选择一个图层，然后单击&#x200B;**[!UICONTROL 参数]**。 显示&#x200B;**[!UICONTROL 参数]**&#x200B;面板。
+1. 切换&#x200B;**[!UICONTROL 包含参数]**&#x200B;以参数化属性。 请参阅[参数面板选项](#parameterisation-options-or-allowed-parameters)，了解属性在参数化后的行为。
+1. **可选：**&#x200B;重命名参数名称。 参数名称具有层名称后跟一个后缀。 对于选定层，其所有参数化属性共享相同的层名称，后跟一个变化的后缀。 按照语义命名约定重命名层名称，以便在URL中包含参数时，参数名称本身可以说明层的内容或其用途。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
    ![即时内容创建](/help/assets/assets/parameterise-a-layer.png)
 若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击**[!UICONTROL 参数]**。
@@ -293,11 +294,11 @@ ht-degree: 1%
 直接在URL中编辑参数可能比较繁琐。 要简化：
 
 1. 复制URL并将其粘贴到记事本中。
-1. 使用Cmd+F (Mac)或Ctrl+F (Windows)查找和编辑参数值。 例如：
+1. 使用Cmd+F (Mac)或Ctrl+F (Windows)查找并编辑参数值。 例如：
    * 查找和替换图像图层的图像路径。
-   * 查找图层的[参数化](#parameterise-a-layer)坐标、宽度和高度以调整其值。
+   * 查找图层的[参数化](#parameterise-a-layer)坐标（宽度和高度）以调整其值。
    * 编辑文本图层的文本、字体、颜色、大小或对齐方式。
-   * 在0和1之间更改可见性值。
+   * 将可见性值更改为0和1。
 
 将此更新的URL粘贴到浏览器中以查看更改。
 
