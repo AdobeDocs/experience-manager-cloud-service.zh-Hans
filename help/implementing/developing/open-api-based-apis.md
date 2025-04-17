@@ -4,48 +4,52 @@ description: 了解AEM as a Cloud Service对基于OpenAPI的API的支持
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: e735f7d2a39e3165907969d2e27565639499a636
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
 
 # 基于 OpenAPI 的 API {#openapi-based-apis}
 
+较新的AEM as a Cloud Service API遵循OpenAPI规范，因此提供了一组一致且有充分文档记录的API。
+
 >[!NOTE]
 >
->OpenAPI作为早期访问计划的一部分提供。 如果您有兴趣访问它们，我们建议您通过电子邮件向[aem-apis@adobe.com](mailto:aem-apis@adobe.com)发送用例说明。
+> 建议使用[端到端教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)来了解如何配置和调用基于OpenAPI的AEM API。
 
-较新的AEM as a Cloud Service API遵循OpenAPI规范，因此可生成一致、有良好文档记录且用户友好的API。 以下页面提供了深入的信息：
+对于需要身份验证的端点，身份验证方法因端点而异，但可能使用OAuth服务器到服务器、OAuth Web应用程序或OAuth单页应用程序(SPA)。 凭据是通过[Adobe Developer Console](https://developer.adobe.com/developer-console/)中的项目配置的。
 
-* [端到端教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)，介绍如何使用服务器到服务器身份验证配置和调用基于OpenAPI的AEM API。
+常见API用例涉及与CRM或PIM等系统的集成，这些系统调用AEM API来检索或保留数据。 作为集成实施的一部分，应用程序可能会订阅[AEM发出的事件](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview)，这些事件可能会在Adobe App Builder或其他基础架构中触发业务逻辑。
+
+本文档可用作概览，但以下页面提供了更深入的文档：
+
+* [参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/)中基于OpenAPI的API部分的链接。 每个API的参考文档还包含一个API游乐场，这使得使用随Adobe Developer Console生成的持有者令牌来尝试端点更容易。
+
 * 信息性[指南](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/)，包括[API概念和语法](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/)。
-* API端点[引用文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/)，其中一些API基于OpenAPI，如[此Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)。 参考文档还包括API游乐场，这使得使用随Adobe Developer Console生成的持有者令牌尝试端点变得简单。
 
-常见的API用例涉及与CRM或PIM等系统的集成，在这些系统中，调用AEM API来检索或保留数据。 作为集成实施的一部分，应用程序可能会订阅[AEM发出的事件](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview)，这些事件可能会在Adobe App Builder或其他基础架构中触发业务逻辑。
+* 描述[身份验证方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support)和其他概念的顶级教程。
 
-支持的API身份验证类型因端点而异，但可以是OAuth服务器到服务器、OAuth Web应用程序和OAuth单页应用程序(SPA)。
+* 一个教程，其中包含重点介绍[如何配置基于OpenAPI的API](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)的视频。
 
->[!NOTE]
->
-> [端到端教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)是推荐的资源，用于了解如何配置和调用基于OpenAPI的AEM API。
-
+* [关于使用服务器到服务器身份验证策略配置和调用OpenAPI的端到端教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)。 此外，还可以找到有关Web应用程序和单页应用程序身份验证方法的类似教程。
 
 ## 配置API访问 {#configuring-api-access}
 
-许多基于OpenAPI的AEM API需要身份验证，这需要使用[Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/)生成凭据。 配置涉及以下步骤：
+某些基于OpenAPI的AEM API需要身份验证，这需要使用[Adobe Developer Console](https://developer.adobe.com/developer-console/)生成凭据。 配置涉及以下步骤：
 
-1. 确保已更新AEM程序的[产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)，并启用适当的服务来访问所需的API。
-1. 在Adobe Developer Console中创建新项目，并将所需的API添加到项目中，同时选择适当的身份验证类型。
-1. 生成凭据，在调用API时，稍后将使用该凭据交换持有者令牌。
-1. 通过配置YAML文件在环境中注册客户端ID，该文件使用配置管道（或RDE的命令行）部署。
+1. AEM as a Cloud Service环境的现代化。
+1. 使用产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)启用对AEM API [的访问。
+1. 创建一个Adobe Developer Console (ADC)项目。
+1. 配置ADC项目。 这将生成凭据，在调用API时，稍后将使用这些凭据交换持有者令牌。
+1. 配置AEM实例以启用ADC项目通信。 这涉及通过配置和部署YAML文件在环境中注册客户端ID，如下面的[注册客户端ID](#registering-a-client-id)部分中所述。
 
-有关分步说明，请参阅[设置基于OpenAPI的API教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/setup)。
+有关详细的分步说明，请参阅[设置基于OpenAPI的API教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)。
 
-## 注册客户端ID {#registering-a-client-id}
+### 注册客户端ID {#registering-a-client-id}
 
-客户端ID将Adobe Developer Console项目中的APis范围扩展到特定AEM环境。 其实现方式如下：
+客户端ID将Adobe Developer Console项目中的API范围扩展到特定的AEM环境。 其实现方式如下：
 
 1. 创建名为`api.yaml`或与其类似的文件，其配置类似于下面的代码片段，包括所需的层（创作、发布、预览）。 `Client_id`值应来自您的Adobe Developer Console API项目。
 

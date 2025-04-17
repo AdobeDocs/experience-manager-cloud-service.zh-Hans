@@ -1,19 +1,19 @@
 ---
 title: 使用配置管道
-description: 了解如何使用配置管道来部署各种配置AEM as a Cloud Service，例如日志转发设置、清除相关的维护任务和各种CDN配置。
+description: 了解如何使用配置管道在AEM as a Cloud Service中部署各种配置，例如日志转发设置、清除相关的维护任务和各种CDN配置。
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
 
 # 使用配置管道 {#config-pipelines}
 
-了解如何使用配置管道来部署各种配置AEM as a Cloud Service，例如日志转发设置、清除相关的维护任务和各种CDN配置。
+了解如何使用配置管道在AEM as a Cloud Service中部署各种配置，例如日志转发设置、清除相关的维护任务和各种CDN配置。
 
 ## 概述 {#overview}
 
@@ -47,6 +47,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 | [版本清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明应何时清除内容版本的规则来优化AEM存储库 |
 | [审核日志清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明有关应清除日志时间的规则，优化AEM审核日志以提高性能 |
 | [日志转发](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 配置用于将日志转发到各种目标的端点和凭据，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk |
+| [正在注册客户端ID](/help/implementing/developing/open-api-based-apis.md) | `API` | 通过注册客户端ID，可将Adobe Developer Console API项目范围设置为特定的AEM环境。 使用需要身份验证的基于OpenAPI的API时需要此项 |
 
 ## 创建和管理配置管道 {#creating-and-managing}
 
