@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 2%
+source-wordcount: '581'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,6 @@ ht-degree: 2%
 https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
-
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
-
 
 自适应表单核心组件提供的功能使表单作者能够将版本控制、注释和批注合并到表单中。 这些功能通过允许用户创建和管理表单的多个版本、通过注释参与协作讨论、将注释附加到特定表单组件来简化表单开发过程，从而增强整体表单构建体验。
 

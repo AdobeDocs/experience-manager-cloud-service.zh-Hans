@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 2%
+source-wordcount: '1566'
+ht-degree: 1%
 
 ---
 
-
 # 在基于核心组件的表单的可视规则编辑器中使用调用服务
-
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 自适应表单中的可视化规则编辑器支持&#x200B;**调用服务**&#x200B;功能，该功能允许您从为您的实例配置的表单数据模型(FDM)列表中选择服务。 您可以将表单字段直接映射到服务的输入参数。 要将表单字段映射到输出参数，请使用指定表单数据模型服务的事件有效负荷选项。 此外，可视规则编辑器允许您基于其输出响应为&#x200B;**调用服务**&#x200B;操作创建成功和失败处理程序的规则。 成功处理程序管理&#x200B;**调用服务**&#x200B;操作的成功执行，而失败处理程序处理发生的任何错误。
 
@@ -47,7 +45,7 @@ ht-degree: 2%
 
 您可以添加多个规则以处理&#x200B;**调用服务**&#x200B;操作的成功响应：
 
-![多个成功处理程序](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%， height=50%}
+![多个成功处理程序](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 同样，您可以添加规则以在操作不成功时处理&#x200B;**调用服务**&#x200B;输出响应。 下图显示了&#x200B;**[!UICONTROL 调用服务失败处理程序]**&#x200B;规则编辑器：
 
@@ -242,4 +240,3 @@ ht-degree: 2%
 ## 其他资源
 
 {{see-also-rule-editor}}
-

@@ -4,9 +4,9 @@ description: 了解如何将基于核心组件的自适应表单另存为草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 508265c72f458b062e1667fd42403743fa293586
+source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1365'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 将表单另存为草稿并将其在站点页面上列出
 
-<span class="preview">本文包含有关&#x200B;**草稿**&#x200B;功能（预发布功能）的内容。 该预发行功能仅可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 以某个用户为例，该用户开始填写表单，但需要暂停并稍后返回。 AEM提供了一个`save-as-draft`选项，允许用户将表单另存为草稿以供将来完成。 为方便起见，AEM现成提供了&#x200B;**草稿和提交** Forms Portal组件，该组件可在AEM Sites页面上显示草稿和提交。 该组件列出已另存为草稿以供以后完成的表单以及已提交的表单。 只有登录的用户才能编辑其草稿或查看其提交的表单。 但是，如果匿名用户使用&#x200B;**搜索和列表程序**&#x200B;组件浏览表单列表并将表单另存为草稿，则&#x200B;**草稿和提交**&#x200B;组件不会列出该草稿。 要查看草稿和提交，用户必须在提交表单时登录。
 

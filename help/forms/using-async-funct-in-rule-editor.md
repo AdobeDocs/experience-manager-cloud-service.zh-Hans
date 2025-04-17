@@ -4,13 +4,13 @@ description: 可视规则编辑器中的异步函数调用
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 1%
+source-wordcount: '1409'
+ht-degree: 0%
 
 ---
-
 
 # 在基于核心组件的自适应表单中使用异步函数
 
@@ -39,8 +39,6 @@ ht-degree: 1%
 
 ## 如何使用异步函数调用规则类型？
 
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
-
 您可以为异步操作编写[自定义函数](/help/forms/custom-function-core-component-create-function.md)，并在规则编辑器中使用&#x200B;**[!UICONTROL 异步函数调用]**&#x200B;规则类型配置异步函数。
 
 ### 通过用例探索异步函数调用规则类型
@@ -53,7 +51,7 @@ ht-degree: 1%
 
 下图说明了使用&#x200B;**[!UICONTROL 异步函数调用]**&#x200B;规则类型为自适应Forms调用异步函数的步骤：
 
-![用于添加异步函数的工作流](/help/forms/assets/workflow-to-add-async-func.png){width=50%， align=center}
+![添加异步函数的工作流](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
 
 ### 1.在JS文件中为异步操作编写自定义函数
 
@@ -149,7 +147,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]** 例如，隐藏`error message`文本框。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-![成功调用](/help/forms/assets/rule-editor-success-callback.png){width=50%， height=50%}
+![成功呼叫](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
 
 请参阅下面的屏幕截图，其中用户以`111`身份进入OTP，单击`Confirm`按钮时将显示`User Details`面板。
 
@@ -170,7 +168,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]** 例如，隐藏`userdetails`面板。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-![失败回调方法](/help/forms/assets/rule-editor-failure-callback.png){width=50%， height=50%}
+![失败回调方法](/help/forms/assets/rule-editor-failure-callback.png){width=50%, height=50%}
 
 请参阅下面的屏幕截图，其中用户以`123`身份进入OTP，单击`Confirm`按钮时将显示错误消息。
 
@@ -217,7 +215,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 ![为异步函数创建规则](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-请参阅下面控制台窗口的屏幕截图，以演示当用户单击`Fetch`按钮时，将调用自定义函数`callAsyncFunction`，进而调用异步函数`asyncFunction`。 在控制台窗口中Inspect以查看对单击按钮的响应：
+请参阅下面控制台窗口的屏幕截图，以演示当用户单击`Fetch`按钮时，将调用自定义函数`callAsyncFunction`，进而调用异步函数`asyncFunction`。 检查控制台窗口以查看对按钮单击的响应：
 
 ![控制台窗口](/help/forms/assets/async-custom-funct-console.png)
 
