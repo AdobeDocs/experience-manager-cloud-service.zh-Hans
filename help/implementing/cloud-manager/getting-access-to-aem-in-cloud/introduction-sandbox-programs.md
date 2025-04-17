@@ -5,9 +5,9 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '503'
 ht-degree: 32%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 32%
 
   ![为沙盒选择解决方案和附加组件](assets/sandbox-solutions-add-ons.png)
 
-* 使用基于[AEM项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)的示例项目设置项目git存储库。
+* 使用基于[AEM项目原型的示例项目设置项目git存储库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)。
 * 创建开发环境。
 * 创建部署到开发环境的非生产管道。
 
 沙盒程序只有一个开发环境。
 
-## 限制和条件 {#limitations}
+## 使用说明和条件 {#usage-notes-conditions}
 
 由于沙盒程序不适用于实时流量，因此其使用有一定的限制和条件，这使得沙盒程序与生产程序不同。
 

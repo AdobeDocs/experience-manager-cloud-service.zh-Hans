@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 41%
 
 ---
@@ -42,7 +42,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击要为其部署代码的程序。
 
-1. 在&#x200B;**概述**&#x200B;页面的行动号召区域中，单击&#x200B;**部署**。
+1. 在&#x200B;**概述**&#x200B;页面的call-to-action区域中，单击&#x200B;**部署**。
 
    ![行动号召 (CTA)](assets/deploy-code1.png)
 
@@ -134,7 +134,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 >
 >在重新执行中，在 UI 中为构建步骤加上标签以反映它复制工件而非重新构建。
 
-### 限制 {#limitations}
+### 使用说明 {#usage-notes}
 
 * 生产部署步骤的重新执行仅适用于上一次执行。
 * 重新执行不适用于推送更新执行。 如果最后一次执行是推送更新执行，则不可能重新执行。

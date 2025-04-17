@@ -4,9 +4,9 @@ description: 了解如何使用 Git 子模块在构建时跨 Git 存储库合并
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '391'
 ht-degree: 24%
 
 ---
@@ -68,14 +68,12 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 另请参阅[Git参考手册](https://git-scm.com/book/en/v2/Git-Tools-Submodules)以了解有关Git子模块的更多信息。
 
-## 限制和建议 {#limitations-recommendations}
-
-将Git子模块与Adobe管理的存储库结合使用时，请注意以下限制。
+## 使用说明 {#usage-notes}
 
 * Git URL必须完全遵循上一节中所述的语法。
 * 仅支持分支的根目录中的子模块。
 * 为安全起见，请勿在Git URL中嵌入凭据。
-* 除非另有必要，否则Adobe建议您通过运行以下命令来使用浅子模块：
+* 除非另有必要，否则Adobe建议您通过运行以下各项来使用浅子模块：
   每个子模块的`git config -f .gitmodules submodule.<submodule path>.shallow true`。
 * Git 子模块引用将存储到特定的 Git 承诺中。 因此，在对子模块存储库进行更改时，必须更新引用的承诺。
 例如，使用以下命令：
@@ -92,10 +90,8 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ![聚合器](assets/aggregator.png)
 
-### 限制和建议 {#limitations-recommendations-private-repos}
-
-将Git子模块与专用存储库结合使用时，请牢记以下限制：
+### 使用说明 {#usage-notes-recommendations-private-repos}
 
 * 子模块Git URL可以是HTTPS或SSH格式，但必须指向GitHub.com存储库。 不支持将Adobe存储库子模块添加到GitHub聚合器存储库或反之。
-* GitHub子模块必须可由AdobeGitHub应用程序访问。
+* GitHub子模块必须可由Adobe GitHub应用程序访问。
 * [使用 Git 子模块与 Adobe 管理的存储库的局限性](#limitations-recommendations)同样适用。

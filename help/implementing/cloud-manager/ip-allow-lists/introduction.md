@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 25%
+source-wordcount: '423'
+ht-degree: 26%
 
 ---
 
@@ -36,11 +36,7 @@ Cloud Manager的IP允许列表可用于限制和控制对这些受信任IP地址
 >
 >如果未应用任何IP允许列表，则默认情况下允许所有IP地址。 应用IP允许列表时，除IP允许列表上的地址外，不允许使用任何IP地址。
 
-## 限制 {#limitations}
-
-在使用IP允许列表之前，请了解其功能、使用和对其他功能的影响的以下限制。
-
-### IP允许列表的一般限制 {#general}
+## 使用说明 {#usage-notes}
 
 * 最多可以将50个IP允许列表添加到您的项目中。
 * 每个IP允许列表最多可以添加50个IP/CIDR地址。

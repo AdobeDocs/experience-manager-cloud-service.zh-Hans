@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1820'
 ht-degree: 40%
 
 ---
@@ -169,9 +169,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 * 如果适用，[将New Relic添加到您的电子邮件允许列表](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
 * 如果这两个建议都没有帮助，请提供有关支持票证的反馈。
 
-## 限制 {#limitations}
-
-以下限制适用于向 New Relic One 添加用户：
+## 使用说明 {#usage-notes}
 
 * 最多可以添加 30 个用户。如果已达到最大用户数，请移除用户，以便能够添加新用户。
 * 添加到New Relic的用户为&#x200B;**Basic**&#x200B;类型。 有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/)。
@@ -179,7 +177,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->如果在您的New Relic One子帐户中连续30天或更长时间未检测到&#x200B;**用户登录**&#x200B;活动，则APM代理将停止，并且数据不会从AEM Cloud Service发送到New Relic。  **在重新激活您的子帐户之前，不会再次发送数据。**
+>如果在您的New Relic One子帐户中连续超过30天未检测到&#x200B;**用户登录**&#x200B;活动，则APM代理将停止。 数据不会从AEM Cloud Service发送到New Relic。 *在重新激活您的子帐户之前，不会再次发送数据。*
 >
 >按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
 

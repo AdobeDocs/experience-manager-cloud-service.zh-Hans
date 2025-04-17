@@ -1,23 +1,23 @@
 ---
-title: 在Cloud Manager — 有限的Beta中添加外部存储库
+title: 在 Cloud Manager 中添加外部存储库 - 早期采用者
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
+source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 27%
+source-wordcount: '2307'
+ht-degree: 23%
 
 ---
 
-# 在Cloud Manager — 有限测试版中添加外部存储库 {#external-repositories}
+# 在Cloud Manager中添加外部存储库 — 早期采用者 {#external-repositories}
 
 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 
 >[!NOTE]
 >
->此功能仅通过早期采用计划提供。 有关更多详细信息，以及要注册为早期采用者，请参阅[自带Git — 现在支持GitLab和Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket)。
+>本文中介绍的功能只能通过早期采用计划获得。 有关更多详细信息，以及要注册为早期采用者，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
 
 ## 配置外部存储库
 
@@ -31,6 +31,14 @@ ht-degree: 27%
 
 
 ## 添加一个外部存储库 {#add-ext-repo}
+
+>[!NOTE]
+>
+>外部存储库无法链接到配置管道。
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -60,14 +68,14 @@ ht-degree: 27%
 1. 在&#x200B;**专用存储库所有权验证**&#x200B;对话框中，提供访问令牌来验证外部存储库的所有权，以便您可以访问它。
 
    ![为存储库选择现有的访问令牌](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
-   *为Bitbucket存储库选择现有访问令牌。*
+   *为Bitbucket存储库选择现有的访问令牌。*
 
    | 令牌类型 | 描述 |
    | --- | --- |
    | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
    | **添加新的访问令牌** | **存储库类型： GitHub Enterprise**<br><ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
    | | **存储库类型： GitLab**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
-   | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读和写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
+   | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
    >[!NOTE]
    >
@@ -100,7 +108,7 @@ ht-degree: 27%
 
 ## 为外部存储库配置webhook {#configure-webhook}
 
-通过Cloud Manager，可为已添加的外部Git存储库配置Webhook。 请参阅[添加外部存储库](#add-ext-repo)。 这些Webhook允许Cloud Manager接收与Git供应商解决方案中的其他操作相关的事件。
+Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参阅[添加外部存储库](#add-ext-repo)。 这些Webhook允许Cloud Manager接收与Git供应商解决方案中的其他操作相关的事件。
 
 例如，Webhook允许Cloud Manager根据以下事件触发操作：
 
@@ -108,9 +116,9 @@ ht-degree: 27%
 * 推送事件 — 在“在Git上提交”触发器打开（启用）时启动管道。
 * 未来基于评论的操作 — 允许工作流，例如直接从PR部署到快速开发环境(RDE)。
 
-`GitHub.com`上托管的存储库不需要Webhook配置，因为Cloud Manager直接通过GitHub应用程序集成。
+在`GitHub.com`上托管的存储库不需要Webhook配置，因为Cloud Manager直接通过GitHub应用程序集成。
 
-对于所有其它附有访问令牌的外部存储库，例如GitHub Enterprise、GitLab和Bitbucket，Webhook配置可用，必须手动进行设置。
+对于已载入访问令牌的所有其他外部存储库（例如GitHub Enterprise、GitLab和Bitbucket），webhook配置可用，必须手动设置。
 
 **要为外部存储库配置webhook：**
 
@@ -120,11 +128,11 @@ ht-degree: 27%
 
 1. 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
 
-1. 在左侧菜单的&#x200B;**程序**&#x200B;标题下，单击![文件夹大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存储库**。
+1. 在左侧菜单的&#x200B;**项目**&#x200B;标题下，单击![文件夹大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存储库**。
 
-1. 在&#x200B;**存储库**&#x200B;页面上，使用&#x200B;**类型**&#x200B;列指导您进行选择，找到您想要的存储库，然后单击它旁边的![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在&#x200B;**存储库**&#x200B;页面上，使用&#x200B;**类型**&#x200B;列引导您进行选择，找到所需的存储库，然后单击其旁边的![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
-   ![为所选存储库配置下拉菜单上的Webhook选项](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
+   ![在下拉菜单中配置选定存储库的Webhook选项](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
 1. 从下拉菜单中，单击&#x200B;**配置Webhook**。
 
@@ -153,7 +161,7 @@ ht-degree: 27%
    | 存储库 | 必需的webhook事件 |
    | --- | --- |
    | GitHub企业版 | 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>确保将webhook设置为在下列必需的webhook事件上触发：<ul><li>拉取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul> |
-   | GitLab | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还会跟踪与提取请求验证（通过附注事件）相关的注释。<br>确保将Webhook设置为在以下必需Webhook事件上触发<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul> |
+   | GitLab | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul> |
    | Bitbucket | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
 
 ### 使用Webhook验证拉取请求
@@ -180,7 +188,7 @@ ht-degree: 27%
 
 * **GitLab**
 
-  GitLab交互仅依赖评论。 验证开始时，将添加一条注释。 验证完成（无论成功还是失败）后，将移除初始注释，并替换为包含验证结果或错误详细信息的新注释。
+  GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完成（无论成功还是失败）后，将移除初始注释，并替换为包含验证结果或错误详细信息的新注释。
 
   运行代码质量验证时：
 
@@ -190,28 +198,104 @@ ht-degree: 27%
 
   ![冷质量验证完成后](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 
-  当代码质量验证失败并返回错误时：
+  当代码质量验证失败并出现错误时：
 
-  ![当代码质量验证失败并返回错误](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)时
+  ![当代码质量验证失败并出现错误](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)时
 
   当代码质量验证因客户问题而失败时：
 
   ![当代码质量验证因客户问题而失败时](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
 
 
-## Webhook问题疑难解答
+## webhook问题疑难解答
 
 * 确保Webhook URL包含有效的API密钥。
 * 检查是否在Git供应商设置中正确配置了webhook事件。
 * 如果PR验证或管道触发器不起作用，请验证Cloud Manager和Git供应商中的Webhook密码是否为最新。
 
 
-## 限制
+## 从外部Git提供商部署到快速开发环境 {#deploy-to-rde}
 
-* 外部存储库无法链接到配置管道。
+>[!NOTE]
+>
+>此功能可通过率先采用者计划获取。 如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)发送电子邮件。 请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+
+在使用[自带Git (BYOG)配置](/help/implementing/cloud-manager/managing-code/external-repositories.md)时，Cloud Manager支持直接从外部Git提供程序将代码部署到快速开发环境(RDE)。
+
+从外部Git存储库部署到RDE需要满足以下条件：
+
+* 使用与Cloud Manager集成的外部Git存储库（BYOG设置）。
+* 您的项目必须配置一个或多个RDE环境。
+* 如果您使用的是`github.com`，则必须查看并接受更新的GitHub应用程序安装以授予所需的新权限。
+
+**使用说明**
+
+* 当前，仅AEM内容和Dispatcher包支持部署到RDE。
+* 尚不支持部署其他包类型(例如，完整的AEM应用程序包)。
+* 目前，不支持使用注释重置RDE环境。 客户必须使用现有的AIO CLI命令，如此处](/help/implementing/developing/introduction/rapid-development-environments.md)所述的[。
+
+**工作方式**
+
+1. **代码质量验证消息。**
+
+   当拉取请求(PR)触发代码质量管道运行时，验证结果指示部署是否可以继续到RDE环境。
+
+   它在GitHub Enterprise上的外观：
+   GitHub Enterprise上的![代码质量验证消息](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+
+   它在GitLab上的外观：
+   在GitLab上![代码质量验证消息](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+
+   它对Bitbucket的看法：
+   ![比特桶上的代码质量验证消息](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
+
+1. **使用注释触发部署。**
+
+   要启动部署，请按以下格式向PR添加注释： `deploy on rde-environment-<envName>`
+
+   ![使用注释触发部署](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+
+   `<envName>`必须与现有RDE环境的名称匹配。 如果未找到该名称，则会返回一条注释，指示环境无效。
+
+   如果环境状态未就绪，您将获得以下注释：
+
+   ![环境未准备好部署](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
+1. **环境检查和工件部署。**
+
+   如果RDE已准备就绪，Cloud Manager会向PR发布一个新检查。
+
+   它在GitHub Enterprise上的外观：
+
+   GitHub上的![环境状态](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
+
+   它在GitLab上的外观：
+
+   GitLab上的![环境状态](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+   它对Bitbucket的看法：
+
+   Bitbucket上的![环境状态](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+
+
+1. **部署消息成功。**
+
+   部署完成后，Cloud Manager会发布一条成功消息，概述部署到目标环境的工件。
+
+   它在GitHub Enterprise上的外观：
+
+   GitHub上![环境的部署状态](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+
+   它在GitLab上的外观：
+
+   GitLab上的![环境的部署状态](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+   它对Bitbucket的看法：
+
+   ![Bitbucket上环境的部署状态](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 

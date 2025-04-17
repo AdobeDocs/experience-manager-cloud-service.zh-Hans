@@ -4,9 +4,9 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '968'
 ht-degree: 34%
 
 ---
@@ -153,9 +153,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 
 
-## 限制 {#limitations}
-
-某些限制适用于将专用GitHub Cloud存储库与Cloud Manager结合使用的情况。
+## 使用说明 {#usage-notes}
 
 * 专用存储库不支持 Web 层和配置管道。
 * 在生产全栈管道上使用专用存储库时，不会创建和推送任何 Git 标记。

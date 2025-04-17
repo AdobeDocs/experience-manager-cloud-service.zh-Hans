@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '710'
 ht-degree: 44%
 
 ---
@@ -38,7 +38,7 @@ Adobe Experience Manager as a Cloud Service 配置有默认域名，以 `*.adobe
 
 ## 自定义域名并使用您自己的CDN {#byo-cdn}
 
-AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还允许您通过BYO（自带）CDN来与AEM一起使用。 自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
+AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还允许您通过BYO（自带）CDN来与AEM结合使用。 自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
 
 * Cloud Manager可管理在AEM管理的CDN中安装的自定义域名和证书。
 * BYO CDN中安装的自定义域名和证书将直接在该CDN中进行管理。
@@ -63,9 +63,7 @@ AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还�
 >
 >一般而言，用 AEM as a Cloud Service 设置自定义域名是一个简单的过程。但是，有时可能会出现域委派问题，这可能需要1 - 2个工作日才能解决。 因此，建议在上线日期之前安装好域。 有关详细信息，请参阅文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
-## 限制 {#limitations}
-
-在AEMaaCS中使用自定义域名有几项限制。
+## 使用说明 {#usage-notes}
 
 * Cloud Manager仅支持Sites程序的发布和预览服务的自定义域名。
    * 不支持作者服务的自定义域。
