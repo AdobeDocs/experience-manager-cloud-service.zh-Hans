@@ -4,10 +4,10 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 23%
+source-wordcount: '1866'
+ht-degree: 28%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 23%
 1. 向外部存储库提供访问令牌。
 1. 验证私有GitHub存储库的所有权。
 1. [将webhook](#configure-webhook)配置为外部存储库。
-
 
 
 ## 添加一个外部存储库 {#add-ext-repo}
@@ -212,90 +211,5 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 * 确保Webhook URL包含有效的API密钥。
 * 检查是否在Git供应商设置中正确配置了webhook事件。
 * 如果PR验证或管道触发器不起作用，请验证Cloud Manager和Git供应商中的Webhook密码是否为最新。
-
-
-## 从外部Git提供商部署到快速开发环境 {#deploy-to-rde}
-
->[!NOTE]
->
->此功能可通过率先采用者计划获取。 如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)发送电子邮件。 请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
-
-在使用[自带Git (BYOG)配置](/help/implementing/cloud-manager/managing-code/external-repositories.md)时，Cloud Manager支持直接从外部Git提供程序将代码部署到快速开发环境(RDE)。
-
-从外部Git存储库部署到RDE需要满足以下条件：
-
-* 使用与Cloud Manager集成的外部Git存储库（BYOG设置）。
-* 您的项目必须配置一个或多个RDE环境。
-* 如果您使用的是`github.com`，则必须查看并接受更新的GitHub应用程序安装以授予所需的新权限。
-
-**使用说明**
-
-* 当前，仅AEM内容和Dispatcher包支持部署到RDE。
-* 尚不支持部署其他包类型(例如，完整的AEM应用程序包)。
-* 目前，不支持使用注释重置RDE环境。 客户必须使用现有的AIO CLI命令，如此处](/help/implementing/developing/introduction/rapid-development-environments.md)所述的[。
-
-**工作方式**
-
-1. **代码质量验证消息。**
-
-   当拉取请求(PR)触发代码质量管道运行时，验证结果指示部署是否可以继续到RDE环境。
-
-   它在GitHub Enterprise上的外观：
-   GitHub Enterprise上的![代码质量验证消息](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
-
-   它在GitLab上的外观：
-   在GitLab上![代码质量验证消息](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
-
-   它对Bitbucket的看法：
-   ![比特桶上的代码质量验证消息](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
-
-1. **使用注释触发部署。**
-
-   要启动部署，请按以下格式向PR添加注释： `deploy on rde-environment-<envName>`
-
-   ![使用注释触发部署](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
-
-   `<envName>`必须与现有RDE环境的名称匹配。 如果未找到该名称，则会返回一条注释，指示环境无效。
-
-   如果环境状态未就绪，您将获得以下注释：
-
-   ![环境未准备好部署](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
-
-
-
-
-1. **环境检查和工件部署。**
-
-   如果RDE已准备就绪，Cloud Manager会向PR发布一个新检查。
-
-   它在GitHub Enterprise上的外观：
-
-   GitHub上的![环境状态](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
-
-   它在GitLab上的外观：
-
-   GitLab上的![环境状态](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
-
-   它对Bitbucket的看法：
-
-   Bitbucket上的![环境状态](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
-
-
-1. **部署消息成功。**
-
-   部署完成后，Cloud Manager会发布一条成功消息，概述部署到目标环境的工件。
-
-   它在GitHub Enterprise上的外观：
-
-   GitHub上![环境的部署状态](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
-
-   它在GitLab上的外观：
-
-   GitLab上的![环境的部署状态](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
-
-   它对Bitbucket的看法：
-
-   ![Bitbucket上环境的部署状态](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
-
 
 

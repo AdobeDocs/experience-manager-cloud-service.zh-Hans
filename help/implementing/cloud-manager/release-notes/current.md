@@ -4,10 +4,10 @@ description: 了解Adobe Experience Manager as a Cloud Service中的Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 58%
+source-wordcount: '614'
+ht-degree: 45%
 
 ---
 
@@ -62,16 +62,17 @@ AEM as a Cloud Service中Cloud Manager 2025.4.0的发布日期是2025年4月10�
 
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
-### AEM 主页 {#aem-home}
+<!--
+### AEM Home {#aem-home}
 
-AEM 主页为在 Adobe Experience Manager 中管理内容、资产和网站引入了一个集中的起点。AEM 主页旨在提供个性化体验，让您可以根据自己的角色和目标无缝浏览 AEM 生态系统。作为指南，它可以提供关键洞察和建议操作，帮助您高效实现目标。AEM 主页采用清晰的、以角色为导向的版面，可确保快速访问基本工具，支持简化和有效地体验 AEM 的所有功能。
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-AEM 主页向早期采用者提供优化的体验，专注于改善工作流、确定目标优先级和交付成果。选择加入后，您可以通过提供反馈来影响 AEM 主页的发展，从而帮助它塑造未来，提高它对整个 AEM 社区的价值。
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)。请务必包含以下信息：
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
 
-* 最适合您轮廓的角色：内容作者、开发人员、业务负责人、管理员或其他（提供描述）。
-* 您的主要 AEM 访问界面：AEM Sites、AEM Assets、AEM Forms、Cloud Manager 或其他（提供描述）。
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
 
 ## 错误修复
 

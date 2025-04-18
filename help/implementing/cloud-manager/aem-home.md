@@ -1,5 +1,5 @@
 ---
-title: 关于AEM Launchpad &amp；ndash；早期采用者
+title: 关于AEM Launchpad
 description: 了解Adobe Experience Manager Launchpad页面。
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,18 +7,19 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
+source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 7%
+source-wordcount: '341'
+ht-degree: 9%
 
 ---
 
-# 关于AEM Launchpad — 率先采用者 {#aem-launchpad}
+# 关于AEM Launchpad {#aem-launchpad}
 
 AEM Launchpad为管理Adobe Experience Manager中的内容、资源和站点引入了一个集中的起点。 AEM Launchpad旨在提供个性化体验，可让您根据自己的角色和目标无缝导航AEM生态系统。 作为指南，它可以提供关键洞察和建议操作，帮助您高效实现目标。AEM Launchpad布局清晰、以人物为导向，可确保快速访问基本工具，支持在所有AEM功能中实现简化而有效的体验。
 
-AEM Launchpad可供早期采用者使用，它提供了侧重于改进工作流程、确定目标优先级和交付结果的优化体验。 选择加入允许您通过提供反馈来影响AEM Launchpad的开发，这些反馈有助于塑造其未来并提高其对于整个AEM社区的价值。
+<!--
+Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## AEM快速启动板特写 {#aem-launchpad-about}
 
@@ -28,7 +29,7 @@ AEM Launchpad可供早期采用者使用，它提供了侧重于改进工作流�
 * Cloud Acceleration Manager
 * Cloud Manager
 * Extension Manager
-* Software Distribution
+* 软件分发
 * 通用编辑器
 
 这些解决方案现在移至&#x200B;**工具**&#x200B;下的主导航区。 此外，**站点**&#x200B;和&#x200B;**Assets**&#x200B;的新导航元素提供了对Adobe Experience Manager关键功能(如Assets、收藏集、站点和内容片段)的快速访问。 这些功能可用于您有权访问的主要生产环境。
