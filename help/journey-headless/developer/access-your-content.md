@@ -1,27 +1,27 @@
 ---
-title: 如何通过 AEM 交付 API 访问您的内容
+title: 如何通过 AEM 传递 API 访问您的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用 GraphQL 查询访问内容片段的内容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1320'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 如何通过 AEM 交付 API 访问您的内容 {#access-your-content}
+# 如何通过 AEM 传递 API 访问您的内容 {#access-your-content}
 
-在 [AEM Headless 开发人员历程](overview.md)的这一部分中，您可以了解如何使用 GraphQL 查询访问内容片段的内容并将其提供给您的应用程序（Headless 交付）。
+在 [AEM Headless 开发人员历程](overview.md)的这一部分中，您可以了解如何使用 GraphQL 查询访问内容片段的内容并将其提供给您的应用程序（Headless 传递）。
 
 ## 迄今为止的故事 {#story-so-far}
 
 在 AEM Headless 历程的上一文档[如何为内容建模](model-your-content.md)中，您已学习 AEM 中内容建模的基础知识，因此，您现在应了解如何为您的内容结构建模，然后使用 AEM 内容片段模型和内容片段实施该结构：
 
 * 了解与内容建模相关的概念和术语。
-* 了解为什么需要进行内容建模才能进行 Headless 内容交付。
+* 了解为什么需要进行内容建模才能进行 Headless 内容传递。
 * 了解如何使用 AEM 内容片段模型实施此结构（以及使用内容片段创作内容）。
 * 了解如何为内容建模；带基本示例的准则。
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 您需要通过一种方式来锁定特定的内容，选择所需内容并将其返回到您的应用程序以供进一步处理。
 
-借助 Adobe Experience Manager (AEM) as a Cloud Service，您可以使用 AEM GraphQL API 选择性地访问您的内容片段以仅返回您需要的内容。这意味着您可以实施结构化内容的 Headless 交付以便在您的应用程序中使用。
+借助 Adobe Experience Manager (AEM) as a Cloud Service，您可以使用 AEM GraphQL API 选择性地访问您的内容片段以仅返回您需要的内容。这意味着您可以实施结构化内容的 Headless 传递以便在您的应用程序中使用。
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 内容片段可作为 GraphQL for AEM 架构和查询的基础，如下所示：
 
-* 它们允许您设计、创建、组织和发布独立于页面的内容，可以 Headless 方式交付这些内容。
+* 它们允许您设计、创建、组织和发布独立于页面的内容，可以 Headless 方式传递这些内容。
 * 它们基于内容片段模型，该模型使用一系列数据类型预定义了结果片段的结构。
 * 可使用定义模型时提供的片段引用数据类型来实现额外的结构层。
 
@@ -132,9 +132,9 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ### 片段引用 {#fragment-references}
 
-**片段引用**&#x200B;和&#x200B;**片段引用UUID**：
+**片段引用**&#x200B;和&#x200B;**片段引用 UUID**：
 
-* 是定义内容片段模型时可用的特定数据类型。
+* 是在定义内容片段模型时可用的特定数据类型。
 * 引用另一个片段，具体取决于特定的内容片段模型。
 * 让您依次创建和检索结构化数据。
 

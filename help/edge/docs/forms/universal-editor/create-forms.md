@@ -7,23 +7,23 @@ hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# 使用通用编辑器创建自适应Forms
+# 使用通用编辑器创建自适应表单
 
 <span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
 
-通用编辑器是一个通用的可视化编辑器，它为编辑表单提供了所见即所得(WYSIWYG)体验。 它使用文本框、单选按钮和复选框等可用的自适应Forms组件，通过拖放功能简化了响应式表单和用户友好表单的创建。
+通用编辑器是一个多功能的可视化编辑器，它提供了编辑表单时所见即所得（WYSIWYG）的体验。它使用文本框、单选按钮和复选框等各种可用的自适应表单组件，采用拖放功能，简化了响应式和用户友好的表单创建方法。
 
-AEM提供了一个称为自适应Forms块的块，以帮助您使用Universal Editor轻松创建Edge Delivery Services Forms以捕获和存储数据。 您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM Site 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM 提供了一个名为 Adaptive Forms Block 的块，可帮助您使用通用编辑器轻松创建 Edge Delivery Services Forms，以捕获和存储数据。您可以[创建预先配置了 Adaptive Forms Block 的新 AEM 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM Site 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
 ![Github 存储库工作流](/help/edge/assets/repo-workflow.png)
 
-通过从“表单创建向导”中选择基于Edge Delivery Services的模板，本文指导您完成使用通用编辑器创建和创作独立表单的过程。
+本文将指导您通过从表单创建向导中选择基于 Edge Delivery Services 的模板，使用通用编辑器创建并创作独立表单的过程。
 
 ## 先决条件
 
@@ -34,7 +34,7 @@ AEM提供了一个称为自适应Forms块的块，以帮助您使用Universal Ed
 
 ## 在通用编辑器中使用表单
 
-使用通用编辑器，您可以轻松创建响应式交互式独立表单。 您可以在通用编辑器中对表单执行以下操作：
+使用通用编辑器，您可以轻松创建响应式和交互式的独立表单。您可以在通用编辑器中对表单执行以下操作：
 * [创建表单](#create-a-form)
 * [创作表单](#author-a-form)
 * [发布表单](#publish-a-form)
@@ -95,7 +95,7 @@ AEM提供了一个称为自适应Forms块的块，以帮助您使用Universal Ed
 
    ![联系我们表单](/help/edge/assets/contact-us.png)
 
-   现在您可以[配置和自定义表单](/help/edge/docs/forms/universal-editor/submit-action.md)的提交操作。
+   您现在可以[配置和自定义表单的提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 
 
 <!--

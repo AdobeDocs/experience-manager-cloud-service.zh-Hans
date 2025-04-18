@@ -4,9 +4,9 @@ description: 具有 OpenAPI 功能的 Dynamic Media 常见问题解答
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -139,9 +139,9 @@ Experience Manager Assets 通过资产卡片上的已批准图标来区分“已
 
 +++
 
-+++**支持的视频文件大小是多少？**
++++„”**视频支持的文件大小是多少？**
 
-具有OpenAPI功能的Dynamic Media支持长格式视频。 这些视频最多可支持50 GB和2小时。
+具有 OpenAPI 功能的 Dynamic Media 支持长格式视频。视频可支持最大 50 GB，最长 2 小时。
 
 +++
 
