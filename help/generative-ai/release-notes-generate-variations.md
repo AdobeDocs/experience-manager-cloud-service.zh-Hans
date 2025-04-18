@@ -4,10 +4,10 @@ description: 从 AEM as a Cloud Service 和 Edge Delivery Services 的 Sidekick 
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 83%
+source-wordcount: '284'
+ht-degree: 89%
 
 ---
 
@@ -25,15 +25,15 @@ ht-degree: 83%
 
 ### 3.0.0 {#release-notes-3-0-0}
 
-您可以从以下编辑器[访问生成变体](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) （[在配置变体](#access-generate-variations)后）：
+您可以在以下编辑器（[在配置完成后](#access-generate-variations)）中[访问生成变体](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations)功能：
 
-* [在AEM Edge Delivery Services的Sidekick中；用于基于文档的创作](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [在 AEM Edge Delivery Services 的 Sidekick 中；用于基于文档的创作](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
 * [在通用编辑器中](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
 * [在内容片段编辑器中](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
 
 >[!NOTE]
 >
->仍可直接访问[生成变体的先前版本](/help/generative-ai/generate-variations.md)。
+>建议您使用版本3.0.0，因为虽然[生成变体的早期版本仍可以直接访问](/help/generative-ai/generate-variations.md)，但将来会弃用。
 
 ### 2.2.0 {#release-notes-2-2-0}
 
@@ -72,6 +72,6 @@ ht-degree: 83%
 * 展开或隐藏左侧导航面板
 * 小改进
 
-### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
+### 1.0.0——1.0.2 {#release-notes-1-0-0-1-0-2}
 
 * 内部改进

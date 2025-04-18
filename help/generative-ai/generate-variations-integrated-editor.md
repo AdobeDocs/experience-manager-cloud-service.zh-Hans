@@ -4,10 +4,10 @@ description: 了解“生成变体”，该功能可通过 AEM as a Cloud Servic
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 854ffd8fd40ba038003dbaed0d4a2b8830256484
-workflow-type: ht
-source-wordcount: '1324'
-ht-degree: 100%
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
+workflow-type: tm+mt
+source-wordcount: '1341'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->独立版本的[生成变体功能仍然可以直接访问](/help/generative-ai/generate-variations.md)。
+>建议您使用此版本，因为尽管仍可以直接访问[生成变体的独立版本](/help/generative-ai/generate-variations.md)，但将来会弃用。
 
 之后您可以：
 

@@ -4,9 +4,9 @@ description: 了解可从 AEM as a Cloud Service 和 Edge Delivery Services 的 
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3287'
 ht-degree: 99%
 
 ---
@@ -14,7 +14,12 @@ ht-degree: 99%
 
 # 生成变体 {#generate-variations}
 
-如果您正在寻找一种方法来优化您的数字渠道并加速内容创作，您可以使用“生成变体”功能。生成变体功能使用生成式人工智能 (AI) 根据提示创建内容变体；这些提示由 Adobe 提供或由用户创建和管理。创建变体后，您可以在您的网站上使用这些内容，并使用 [Edge Delivery Services](/help/edge/overview.md) 的[实验](https://www.aem.live/docs/experimentation)功能衡量它们的成功。
+
+>[!NOTE]
+>
+>建议您访问[生成集成到AEM编辑器中的变体](/help/generative-ai/generate-variations-integrated-editor.md)，因为此页面上描述的版本将来将被弃用。
+
+如果您正在寻找一种方法来优化您的数字渠道并加速内容创作，您可以使用“生成变体”功能。生成变体功能使用生成式人工智能 (AI) 根据提示创建内容变体；这些提示由 Adobe 提供或由用户创建和管理。创建变体后，您可以在您的网站上使用这些内容，并使用 [Edge Delivery Services](/help/edge/overview.md) 的[试验](https://www.aem.live/docs/experimentation)功能衡量它们的成功。
 
 您可以从以下位置[访问生成变体](#access-generate-variations)功能：
 
@@ -26,10 +31,6 @@ ht-degree: 99%
 >
 >在所有情况下，要使用生成变体功能，您必须确保满足[访问权限方面的先决条件](#access-prerequisites)。
 
->[!NOTE]
->
->您还可以访问[生成集成到AEM编辑器中的变体](/help/generative-ai/generate-variations-integrated-editor.md)。
-
 之后您可以：
 
 * [开始使用](#get-started) Adobe 为特定用例创建的提示模板。
@@ -39,7 +40,7 @@ ht-degree: 99%
    * [访问并使用整个组织的共享提示](#select-prompt)
 * 在[生成针对特定受众的个性化内容时](#generate-copy)，请定义提示中使用的[受众](#audiences)区段。
 * 在进行修改和优化结果（如有必要）之前，请根据提示预览输出。
-* 使用 [Adobe Express 根据副本变体生成图像](#generate-image)；这使用了 Firefly 的生成式 AI 功能。
+* 使用 [Adobe Express 根据文案变体生成图像](#generate-image)；这使用了 Firefly 的生成式 AI 功能。
 * 选择您想要在您的网站或试验中使用的内容。
 
 ## 法律和使用说明 {#legal-usage-note}
@@ -52,13 +53,13 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 
 在使用“生成变体”之前，您需要同意 [Adobe Generative AI 用户指南](https://www.adobe.com/cn/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)。
 
-[生成变体的使用](#generative-action-usage)与生成式操作的消耗相关。
+[生成变体的使用](#generative-action-usage)与生成式操作的使用相关。
 
 ## 概述 {#overview}
 
 当您打开“生成变体”（并展开左侧面板）时，您会看到：
 
-![生成变体 - 主面板](assets/generate-variations-main-panel.png)
+![生成变体——主面板](assets/generate-variations-main-panel.png)
 
 * 右面板
    * 这取决于您在左侧导航中做出的选择。
@@ -96,7 +97,7 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 * 在您的 IMS 组织中，可用的提示会用多头像图标进行标记。
 * 您的私人提示没有特别标记。
 
-![生成变体 - 提示模板](assets/generate-variations-prompt-templates.png)
+![生成变体——提示模板](assets/generate-variations-prompt-templates.png)
 
 ### 提供输入 {#provide-inputs}
 
@@ -106,7 +107,7 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 
 有几个关键输入字段是多个提示所共有的（某些字段并不总是可用）：
 
-* ****&#x200B;计数/****&#x200B;数量
+* **计数**/**数量**
    * 您可以选择在一代中创建多少个内容变体。
    * 根据提示，这可能带有各种标签之一；例如计数、变体数量、创意数量等。
 * **受众来源**/**目标受众**
@@ -122,13 +123,13 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 * **编辑提示**
    * 可以[编辑底层提示](#edit-the-prompt)以优化生成的结果。
 
-### 生成副本 {#generate-copy}
+### 生成文案 {#generate-copy}
 
 填写输入字段和/或修改提示后，您就可以生成内容并查看响应了。
 
 选择&#x200B;**生成**，查看生成式 AI 生成的响应。所生成的内容变体会显示在生成它们的提示下方。
 
-![生成变体 - 生成副本](assets/generate-variations-generate-content.png)
+![生成变体——生成文案](assets/generate-variations-generate-content.png)
 
 >[!NOTE]
 >
@@ -136,8 +137,8 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 
 当您选择单个变体时，可以执行以下操作：
 
-* **收藏**
-   * 标记为&#x200B;**收藏**，以供将来使用（将显示在[收藏夹](#favorites)）。
+* **收藏夹**
+   * 标记为&#x200B;**收藏夹**，以供将来使用（将显示在[收藏夹](#favorites)）。
 * 赞同/反对
    * 使用赞同/反对指示器来告知 Adobe 响应的质量。
 * **复制**
@@ -158,7 +159,7 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 
 选择一个变体，然后执行&#x200B;**生成图像**&#x200B;操作，直接在 [Adobe Express](https://www.adobe.com/cn/express/) 中打开&#x200B;**文本转图像**&#x200B;功能。提示是根据您的变体选择预先填充的，并且图像会根据该提示自动生成。
 
-![生成变体 - Express 图像](assets/generate-variations-express-images.png)
+![生成变体——Express 图像](assets/generate-variations-express-images.png)
 
 您可以做进一步的更改：
 
@@ -166,11 +167,11 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 * 调整&#x200B;**文本转图像**&#x200B;选项，
 * 然后&#x200B;**刷新**&#x200B;生成的图像。
 
-您还可以使用&#x200B;**探索更多**&#x200B;来发掘更多可能性。
+您还可以使用&#x200B;**浏览更多**&#x200B;来发掘更多可能性。
 
 完成后，选择所需的图像并点击&#x200B;**保存**&#x200B;以关闭 Adobe Express。返回图像，并随变体一同保存。
 
-![生成变体 - Express 图像已保存](assets/generate-variations-express-image-saved.png)
+![生成变体——Express 图像已保存](assets/generate-variations-express-image-saved.png)
 
 在这里，您可以将鼠标悬停在图像上，以显示以下操作项：
 
@@ -216,11 +217,11 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 
 选择&#x200B;**编辑提示**：
 
-![生成变体 - 编辑提示](assets/generate-variations-prompt-edit.png)
+![生成变体——编辑提示](assets/generate-variations-prompt-edit.png)
 
 这将会打开提示编辑器，您可以在其中进行更改：
 
-![生成变体 - 提示编辑器](assets/generate-variations-prompt-editor.png)
+![生成变体——提示编辑器](assets/generate-variations-prompt-editor.png)
 
 ### 添加提示输入 {#add-prompt-inputs}
 
@@ -239,7 +240,7 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
    * `default`
    * `type`
 
-#### 示例：添加新文本字段 - 语调 {#example-add-new-text-field-tone-of-voice}
+#### 示例：添加新文本字段——语调 {#example-add-new-text-field-tone-of-voice}
 
 要在提示中使用以下语法添加一个名为&#x200B;**语调**&#x200B;的新文本字段：
 
@@ -252,7 +253,7 @@ AEM 的生成式 AI 和生成变体是强大的工具，但对输出结果的使
 }}
 ```
 
-![生成变体 - 用语调编辑提示](assets/generate-variations-prompt-edited.png)
+![生成变体——用语调编辑提示](assets/generate-variations-prompt-edited.png)
 
 <!--
 #### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
@@ -296,7 +297,7 @@ To create an input field Page Type providing a dropdown selection:
 * 在第一个例子中，`Title`和`Description`被组合在一起
 * 在第二个示例中，它们被分别格式化：这是通过在提示中包含 JSON 请求来实现的。
 
-![生成变体 - 标题和描述分别格式化的提示](assets/generate-variations-prompt-formatted.png)
+![生成变体——标题和描述分别格式化的提示](assets/generate-variations-prompt-formatted.png)
 
 ## 保存提示 {#save-prompt}
 
@@ -306,7 +307,7 @@ To create an input field Page Type providing a dropdown selection:
 
 当被选中时，会打开&#x200B;**保存提示**&#x200B;对话框：
 
-![生成变体 - 保存提示对话框](assets/generate-variations-prompt-save-dialog.png)
+![生成变体——保存提示对话框](assets/generate-variations-prompt-save-dialog.png)
 
 1. 添加一个独特的&#x200B;**提示名称**；用于识别&#x200B;**提示模板**&#x200B;中的提示。
    1. 一个新颖且独特的名称会创建一个新的提示模板。
@@ -339,9 +340,9 @@ To create an input field Page Type providing a dropdown selection:
 * [Adobe Target](#audience-adobe-target)
 * [CSV 文件](#audience-csv-file)
 
-![生成变体 - 受众来源](assets/generate-variations-audiences.png)
+![生成变体——受众来源](assets/generate-variations-audiences.png)
 
-### 受众 - Adobe Target {#audience-adobe-target}
+### 受众——Adobe Target {#audience-adobe-target}
 
 在提示中选择一个 **Adobe Target** 受众，可以生成针对该受众进行个性化的内容。
 
@@ -356,13 +357,13 @@ To create an input field Page Type providing a dropdown selection:
    >
    >要使用 **Adobe Target** 受众，必须填写描述字段。如果不填写，下拉列表中会显示该受众不可用。要添加描述，请转到 Target，然后[添加受众描述](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/audiences/create-audiences)。
 
-   ![生成变体 - 受众来源 - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
+   ![生成变体——受众来源——Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
 #### 添加 Adobe Target 受众 {#add-adobe-target-audience}
 
 请参阅[创建受众](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/audiences/create-audiences)，以在 Adobe Target 中创建受众。
 
-### 受众 - CSV 文件 {#audience-csv-file}
+### 受众——CSV 文件 {#audience-csv-file}
 
 在提示中选择一个 **CSV 文件**&#x200B;受众，可以生成针对所选&#x200B;**目标受众**&#x200B;进行个性化定制的内容。
 
@@ -371,7 +372,7 @@ Adobe 提供了多种受众可以使用。
 1. 选择 **CSV 文件**。
 1. 然后从提供的列表中选择所需的&#x200B;**目标受众**。
 
-   ![生成变体 - 受众来源 - CSV 文件](assets/generate-variations-audiences-csv-file.png)
+   ![生成变体——受众来源——CSV 文件](assets/generate-variations-audiences-csv-file.png)
 
 #### 添加受众 CSV 文件 {#add-audience-csv-file}
 
@@ -399,7 +400,7 @@ Adobe 提供了多种受众可以使用。
 
    例如：
 
-   ![生成变体 - 添加受众 CSV 文件](assets/generate-variations-audiences-csv-save.png)
+   ![生成变体——添加受众 CSV 文件](assets/generate-variations-audiences-csv-save.png)
 
 ## 生成式操作的使用 {#generative-action-usage}
 
@@ -407,7 +408,7 @@ Adobe 提供了多种受众可以使用。
 
 * 生成变体
 
-  一个复制变体的生成等同于一个生成式操作。作为客户，您的 AEM 许可证附带了一定数量的生成式操作。一旦基本权限消耗完毕，您可以购买额外的操作。
+  一个文案变体的生成等同于一个生成式操作。作为客户，您的 AEM 许可证附带了一定数量的生成式操作。一旦基本权限消耗完毕，您可以购买额外的操作。
 
   >[!NOTE]
   >
@@ -477,11 +478,11 @@ Adobe 提供了多种受众可以使用。
    }
    ```
 
-1. 您可能需要确保用户具有对带有 [Edge Delivery Services 的 Experience Manager as a Cloud Service 的访问权限](#access-to-aemaacs-with-edge-delivery-services)。
+1. 您可能需要确保用户对带有 [Edge Delivery Services 的 Experience Manager as a Cloud Service 具有访问权限](#access-to-aemaacs-with-edge-delivery-services)。
 
 1. 然后，您可以通过在 Sidekick 的工具栏中选择&#x200B;**生成变体**&#x200B;来访问该功能：
 
-   ![生成变体 - 从 AEM Sidekicj 访问](assets/generate-variations-sidekick-toolbar.png)
+   ![生成变体——从 AEM Sidekicj 访问](assets/generate-variations-sidekick-toolbar.png)
 
 ## 更多信息 {#further-information}
 
@@ -500,7 +501,7 @@ Adobe 提供了多种受众可以使用。
 1. 转到要求部分。
 1. 您会发现一些关于输出的要求。
    1. 示例：“文本必须由三部分组成，即标题、正文和按钮标签。”或者“将响应格式化为一个包含属性“标题”、“正文”和“按钮标签”的有效 JSON 对象数组”。
-1. 根据您的需求调整这些要求。
+1. 根据您的需求修改这些要求。
 
    >[!NOTE]
    >
@@ -525,7 +526,7 @@ Adobe 提供了多种受众可以使用。
 **我所得到的响应并不完全是我想要的。我能做些什么来改善它们？**
 
 1. 尝试更改“高级”设置下的“温度”。
-   1. 温度升高会偏离提示，导致出现更多的变化、随机性和创造性。
+   1. 更高的温度会偏离提示，导致出现更多的变化、随机性和创造性。
    1. 较低的温度更具确定性，且符合提示中的要求。
 1. 在编辑模式下打开实际提示并查看提示。特别注意描述语调和其他重要标准的要求部分。
 
@@ -548,7 +549,7 @@ Adobe 提供了多种受众可以使用。
 
 ### v2.0.0 中的自定义提示 {#custom-prompts-v200}
 
-**在 v.2.0.0 中，我的自定义提示消失了 - 我该怎么办？**
+**在 v.2.0.0 中，我的自定义提示消失了——我该怎么办？**
 
 迁移到 v2.0.0 版本将会导致自定义提示模板损坏，因此它们将不可用。
 
