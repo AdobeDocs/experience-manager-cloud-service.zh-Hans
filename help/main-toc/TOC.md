@@ -219,7 +219,7 @@ ht-degree: 99%
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
    + 通用编辑器发行说明 {#univeral-editor}
-      + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
+      + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.03.10发行说明](/help/release-notes/universal-editor/2025/2025-03-10.md)
          + [2025.02.25 版发行说明](/help/release-notes/universal-editor/2025/2025-02-25.md)

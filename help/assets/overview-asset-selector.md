@@ -6,7 +6,7 @@ exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -81,12 +81,12 @@ ht-degree: 94%
 
 您必须确保采用以下通信方式：
 
-* 主机应用程序正在HTTPS上运行。
-* 无法在`localhost`上运行应用程序。 如果要在本地计算机上集成资产选择器，则需要创建一个自定义域（例如`[https://<your_campany>.localhost.com:<port_number>]`），并在`redirectUrl list`中添加此自定义域。
+* 主机应用程序在 HTTPS 上运行。
+* 您无法在 `localhost` 上运行此应用程序。如果您想在本地机器上集成资产选择器，则需要创建一个自定义域，例如 `[https://<your_campany>.localhost.com:<port_number>]`，并将此自定义域添加到 `redirectUrl list` 中。
 * 您可以使用相应的`imsClientId`配置clientID并将其添加到AEM Cloud Service环境变量中。
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
-* 需要在环境配置中定义IMS作用域列表。
+* 需要在环境配置中定义 IMS 范围列表。
 * 该应用程序的 URL 位于 IMS 客户端的重定向 URL 允许列表中。
 * 使用 Web 浏览器上的弹出窗口配置和呈现 IMS 登录流。因此，应在目标浏览器上启用或允许弹出窗口。
 
@@ -96,7 +96,7 @@ ht-degree: 94%
 
 * [将资产选择器与 Adobe 应用程序集成](/help/assets/integrate-asset-selector-adobe-app.md)
 * [将资产选择器与一个非 Adobe 应用程序集成](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [集成资产选择器Dynamic Media Open API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [集成资产选择器 Dynamic Media 开放 API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
