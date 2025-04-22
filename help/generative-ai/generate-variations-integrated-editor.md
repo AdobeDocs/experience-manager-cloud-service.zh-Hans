@@ -4,10 +4,10 @@ description: 了解“生成变体”，该功能可通过 AEM as a Cloud Servic
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
+source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 97%
+source-wordcount: '1355'
+ht-degree: 96%
 
 ---
 
@@ -60,6 +60,10 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 -->
 
 [生成变体的使用](#generative-action-usage)与生成式操作的使用相关。
+
+>[!NOTE]
+>
+>有关AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)中生成变体的详细信息，请参阅[安全资料单。
 
 ## 概述 {#overview}
 
