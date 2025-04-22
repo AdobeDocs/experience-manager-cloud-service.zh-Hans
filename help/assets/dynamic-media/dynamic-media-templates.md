@@ -4,9 +4,9 @@ description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
+source-git-commit: c237f53f771431cc15584b392106645b7eacaa30
 workflow-type: tm+mt
-source-wordcount: '3222'
+source-wordcount: '3168'
 ht-degree: 1%
 
 ---
@@ -75,21 +75,25 @@ ht-degree: 1%
 
 ## 开始之前{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-要创建[!DNL Dynamic Media]模板，您必须具有：
+满足以下要求以创建[!DNL Dynamic Media]模板并生成其投放URL：
 
 1. 访问[!DNL Dynamic Media]。
-1. [已与 [!DNL Dynamic Media] 同步您的 [!DNL AEM Assets] 实例中可用的图像，以便使用这些图像创建模板](/help/assets/dynamic-media/config-dm.md)。
-1. 已在触屏UI中验证以下内容：
+1. 在[!DNL Assets View]主页上，您有一个文件夹位于&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中以保存您的模板。 [在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中创建文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)以在**[!UICONTROL  Dynamic Media Assets ]**中复制该文件夹。
+1. [将 [!DNL AEM Assets] 实例中可用的图像与 [!DNL Dynamic Media] 同步，以将其用于创建模板](/help/assets/dynamic-media/config-dm.md)。
+1. 发布要在创建模板时使用的图像，以便在创建模板后生成模板的投放URL。 投放URL可用于下游应用程序。
+1. 若要在模板的文本图层中使用默认[!UICONTROL Adobe Sans F2]字体以外的字体，请[同时将该字体文件上载并发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 确保[重新处理](/help/assets/reprocessing-assets-view.md)现有的字体，以便在创建模板<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->时使用。 请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)以了解有关字体的更多信息。
+1. 在触屏UI中验证以下内容：
    * 在&#x200B;**[!UICONTROL 编辑[!DNL Dynamic Media]配置页面]**&#x200B;上，默认情况下设置为&#x200B;**[!UICONTROL 禁用的**[!UICONTROL [!DNL Dynamic Media]&#x200B;同步模式&#x200B;]**未应用于所有AEM文件夹（**[!UICONTROL &#x200B;同步所有内容&#x200B;]**未选中）。]**&#x200B;有关详细信息，请参阅[配置Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
    * **[!UICONTROL [!DNL Dynamic Media]同步模式]**&#x200B;设置为目标文件夹或子文件夹的子文件夹&#x200B;]**启用**[!UICONTROL &#x200B;创建后保存模板。 有关详细信息，请参阅[配置 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)。
 
 ## 创建[!DNL Dynamic Media]模板{#how-to-create-dynamic-media-template}
 
 执行以下步骤以创建[!DNL Dynamic Media]模板：
-
-1. 导航到您的[!DNL Assets View]并[在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中创建文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的文件夹树将在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中复制。 将您的[!DNL Dynamic Media]模板保存在此[!UICONTROL Dynamic Media Assets]文件夹中。
-1. 选择![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[将您的图像上载并发布到 [!DNL AEM] 和 [!DNL Dynamic Media] 同时](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以便在创建模板时使用这些图像。 创建模板后，需要发布图像来生成模板的投放URL。 投放URL可用于下游应用程序。
-1. [执行这些资源上传和发布步骤](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)，将字体文件同时上传和发布到AEM和Dynamic Media，以便在创建模板时使用该文件。 [!UICONTROL Adobe Sans F2]是文本图层中唯一可用的默认字体。 [支持的字体文件格式为：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 确保[重新处理](/help/assets/reprocessing-assets-view.md)现有的字体，以便在创建模板时使用(在[!DNL Assets View]主页上，单击![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**，导航到字体文件位置，一次选择一个字体文件，然后单击![重新处理](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL 重新处理]**)。 请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)以了解有关字体的更多信息。
+<!--
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+-->
 1. [创建空白画布](#create-a-canvas)
 1. [将图像添加到画布](#add-images-to-the-canvas)
 1. [在画布中添加文本图层](#add-text-to-the-canvas)
@@ -159,7 +163,7 @@ ht-degree: 1%
 1. 在“属性”面板中选择&#x200B;**[!UICONTROL 智能文本调整大小]**以自动调整文本长度和字体大小，使其以最佳方式适应指定区域。
    ![最佳可自定义横幅](/help/assets/assets/add-text-layer.png)
 
-查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。 **[!UICONTROL 字体系列]**&#x200B;字段显示[!UICONTROL Adobe Sans F2]默认字体、重新处理的现有字体以及新上载和发布的字体。 有关详细信息，请参阅上面的“创建 [!DNL Dynamic Media] 模板](#how-to-create-dynamic-media-template)”部分中的[步骤3。
+查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。 **[!UICONTROL 字体系列]**&#x200B;字段显示[!UICONTROL Adobe Sans F2]默认字体、重新处理的现有字体以及新上载和发布的字体。 有关详细信息，请参阅上面[开始之前](#prerequisites-for-dynamic-media-wysiwyg-template)部分中的第5点。
 
 ### 编辑或删除图层 {#edit-or-delete-a-layer}
 
@@ -269,15 +273,11 @@ ht-degree: 1%
    <br>
 1. 要从预览页面发布模板，请单击&#x200B;**[!UICONTROL 发布]**&#x200B;并确认发布。 显示&#x200B;**[!UICONTROL 发布完成]**&#x200B;消息，发布状态更新为&#x200B;**[!UICONTROL 已发布]**。
 
-   >[!NOTE]
-   >
-   >发布模板需要先发布模板图像。
-
 ### 复制投放URL
 
 **[!UICONTROL 预览]**&#x200B;页面上选定的参数将成为模板URL中的URL参数。
 
-确保将模板中的图像发布到AEM和Dynamic Media，以生成已发布模板的投放URL。
+确保模板中的图像已发布到AEM和Dynamic Media以生成模板的投放URL。
 
 执行以下步骤以复制模板的投放URL：
 
@@ -312,7 +312,9 @@ ht-degree: 1%
 
 ## 将行动号召(CTA)链接添加到模板层{#add-CTA-in-dynamic-media-templates}
 
-通过添加指向模板的CTA链接将您的[!DNL Dynamic Media]模板的任何图像或文本图层转换为超链接，该链接会将用户引导至目标页面。 执行以下步骤以将CTA链接添加到层：
+通过添加指向模板的CTA链接将您的[!DNL Dynamic Media]模板的任何图像或文本图层转换为超链接，该链接会将用户引导至目标页面。
+
+执行以下步骤以将CTA链接添加到层：
 
 1. 导航到模板位置，选择模板并单击![编辑](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL 编辑模板]**。 模板显示在画布上。
 1. 选择模板图层并[导航到其属性面板](#edit-or-delete-a-layer)以向其添加CTA链接。
@@ -323,7 +325,7 @@ ht-degree: 1%
 1. 单击&#x200B;**[!UICONTROL 预览]**&#x200B;可预览您的模板并查看其定义的参数。
 1. 单击&#x200B;**[!UICONTROL 发布]**&#x200B;并选择&#x200B;**[!UICONTROL 是]**&#x200B;发布您的模板（如果未提前发布）。
 1. 导航到保存此模板的文件夹，选择该模板并单击![详细信息页面](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 详细信息]**。
-1. 单击&#x200B;**[!UICONTROL 复制选项]**&#x200B;并选择&#x200B;**[!UICONTROL 复制嵌入代码]**。
+1. 单击&#x200B;**[!UICONTROL 复制选项]**&#x200B;并选择&#x200B;**[!UICONTROL 复制嵌入代码]**。 确保将模板图像发布到[!DNL AEM and Dynamic Media]以复制嵌入代码。
 
    ![复制嵌入代码](/help/assets/assets/copy-options1.png)
 
@@ -360,5 +362,3 @@ ht-degree: 1%
 
 1. 探索[[!DNL Dynamic Media] 及其功能](/help/assets/dynamic-media/dynamic-media.md)
 1. 使用OpenAPI功能浏览[[!DNL Dynamic Media] ](/help/assets/dynamic-media-open-apis-overview.md)
-
-
