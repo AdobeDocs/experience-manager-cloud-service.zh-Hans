@@ -4,8 +4,11 @@ description: 了解如何在使用 Edge Delivery Services 项目进行的所见�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 100%
 

@@ -4,7 +4,10 @@ description: 了解最佳实践建议，了解如何使用利用单个代码库(
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1260'
 ht-degree: 2%

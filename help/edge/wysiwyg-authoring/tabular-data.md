@@ -4,10 +4,13 @@ description: 了解如何使用电子表格来管理各种值的表格数据，�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1294'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -183,7 +186,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 * [占位符](https://www.aem.live/docs/placeholders)
 * [元数据](https://www.aem.live/docs/bulk-metadata)
 * [标头](https://www.aem.live/docs/custom-headers)
-* [配置](https://www.aem.live/docs/configuration) — 例如[缓存无效](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
+* [配置](https://www.aem.live/docs/configuration)——例如用于[缓存失效](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [分类](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 只需按照各部分中的相同步骤操作即可[创建电子表格](#spreadsheet)和[更新 paths.json](#paths-json)，选择合适的模板并`paths.json`相应地更新文件。

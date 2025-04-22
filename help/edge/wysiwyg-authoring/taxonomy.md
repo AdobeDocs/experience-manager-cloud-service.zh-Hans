@@ -1,20 +1,23 @@
 ---
 title: 管理分类数据
-description: 了解如何管理分类数据，以便在 AEM with Edge Delivery Services Site 上使用标签。
+description: 了解如何管理分类数据，以便在 AEM with Edge Delivery Services Sites 上使用标签。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # 管理分类数据 {#managing-taxonomy-data}
 
-了解如何管理分类数据，以便在 AEM with Edge Delivery Services Site上使用标签。
+了解如何管理分类数据，以便在 AEM with Edge Delivery Services Sites 上使用标签。
 
 ## 简介 {#introduction}
 
@@ -26,13 +29,13 @@ ht-degree: 97%
 
 >[!TIP]
 >
->有关可用于分类的AEM Tag字段的更多信息，请参阅文档[模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)。
+>请参阅文档[模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)，了解有关通用编辑器可用的 AEM 标记字段的更多信息，该字段可与您的分类法一起使用。
 
 ## 创建分类页面 {#creating}
 
 分类法的创建方式与 [AEM 中的任何其他页面一样](/help/sites-cloud/authoring/sites-console/creating-pages.md)。
 
-1. 导航至 [**Site** 控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。
+1. 导航至 [**Sites** 控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 
 1. 选择您想要创建分类的位置。
 
@@ -58,7 +61,7 @@ ht-degree: 97%
 
 您可以像编辑 AEM 中的其他页面一样开始编辑分类页面。
 
-1. 导航至 [**Site** 控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。
+1. 导航至 [**Sites** 控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 
 1. 选择您想要编辑的分类。
 
@@ -90,7 +93,7 @@ ht-degree: 97%
 
 1. 在 GitHub 中打开您的项目的根目录。
 
-1. 点击或单击 `paths.json` 文件以打开其详细信息，然后点击“**编辑**”图标。
+1. 点击或单击 `paths.json` 文件以打开其详细信息，然后点击&#x200B;**编辑**&#x200B;图标。
 
    ![paths.json 文件](assets/taxonomy/paths-json.png)
 
@@ -176,7 +179,7 @@ ht-degree: 97%
 
 默认情况下，您的分类将包含 `tag` 和 `title` 值，正如[以上示例中](#accessing)所示。您可以对分类进行配置，公开其他标记属性。在这个示例中，我们将公开标记描述。
 
-1. 使用 Site 控制台选择您创建的分类。
+1. 使用 Sites 控制台选择您创建的分类。
 1. 点击或单击工具栏中的&#x200B;**属性**&#x200B;图标。
 1. 在&#x200B;**其他属性**&#x200B;部分，点击或单击&#x200B;**添加**&#x200B;来添加字段。
 1. 在新字段中，输入 JRC 属性名称公开。在这种情况下，输入 `jcr:description` 用于标记描述。

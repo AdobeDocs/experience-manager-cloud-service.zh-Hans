@@ -1,13 +1,16 @@
 ---
-description: “在某些情况下，将元数据集中应用到网站会很有帮助。常见的使用案例包括：”
+description: 在某些情况下，将元数据批量应用到网站很有用。 常见的用例包括：
 title: 批量元数据
 feature: Edge Delivery Services
 exl-id: 2d56c4e9-1a0f-470b-8c42-bc48f61ea3eb
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '22'
-ht-degree: 100%
+ht-degree: 36%
 
 ---
 

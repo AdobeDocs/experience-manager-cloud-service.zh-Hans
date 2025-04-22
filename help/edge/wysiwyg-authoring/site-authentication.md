@@ -4,7 +4,10 @@ description: 了解AEM Live如何支持基于令牌的身份验证，以及如�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
-source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 2%
