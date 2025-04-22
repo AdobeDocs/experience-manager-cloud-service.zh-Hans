@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
+source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6135'
 ht-degree: 99%
 
 ---
@@ -1078,14 +1078,9 @@ ht-degree: 99%
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安装扩展](/help/edge/docs/sidekick-extension.md)
-         + [项目配置](https://www.aem.live/tools/sidekick/)
          + [Sidekick 库](/help/edge/docs/sidekick-library.md)
       + [常见问题解答](/help/edge/docs/faq.md)
-      + [管理员 API](https://www.aem.live/docs/admin.html)
-      + [AEM 状态](https://status.adobe.com)
       + 工具 {#tools}
-         + [AEM Sidekick Chrome 扩展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github 机器人](https://github.com/apps/aem-code-sync)
          + [审核日志](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
