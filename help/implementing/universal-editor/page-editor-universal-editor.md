@@ -1,19 +1,19 @@
 ---
 title: 页面编辑器和通用编辑器
-description: 页面编辑器仍然受Adobe支持，但通用编辑器为您的新项目带来了现有可能性。
+description: 页面编辑器仍受Adobe支持，但通用编辑器为您的新项目带来令人振奋的可能性。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
-
 # 页面编辑器和通用编辑器 {#page-editor-universal-editor}
 
-页面编辑器仍然受Adobe支持，但通用编辑器为您的新项目带来了现有可能性。
+页面编辑器仍受Adobe支持，但通用编辑器为您的新项目带来令人振奋的可能性。
 
 ## 背景 {#background}
 
@@ -34,29 +34,29 @@ Adobe认识到[页面编辑器](/help/sites-cloud/authoring/page-editor/introduc
 
 ## 功能比较 {#feature-comparison}
 
-由于两个编辑人员之间的功能差距不断缩小，请务必查阅[通用编辑器的发行说明](/help/release-notes/universal-editor/current.md)以了解最新发展。
+由于两个编辑器之间的功能差距不断缩小，请务必查阅Universal Editor [的发行说明](/help/release-notes/universal-editor/current.md)以了解最新动态。
 
 ### 交付 {#delivery}
 
 |  | 页面编辑器 | 注释 | 通用编辑器 | 注释 |
 |---|---|---|---|---|
 | [经典AEM投放](/help/sites-cloud/authoring/author-publish.md) | [!BADGE 可用]{type=Positive} | 建议与核心组件一起使用 | [!BADGE 不可用]{type=Negative} | 经典AEM页面通常依赖于多个特定于页面编辑器的功能，这些功能很难按原样与通用编辑器一起复制。 |
-| [边缘传递](/help/edge/overview.md) | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} |  |
+| [Edge Delivery](/help/edge/overview.md) | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} |  |
 | [Headless投放](/help/headless/introduction.md) | [!BADGE 部分可用]{type=Caution} | 仅对于[SPA编辑器](/help/implementing/developing/hybrid/introduction.md) [已弃用](/help/implementing/developing/hybrid/spa-editor-deprecation.md)而支持通用编辑器 | [!BADGE 可用]{type=Positive} | 通用编辑器允许开发人员自带Web应用程序，而无需强制实施任何特定的框架要求或实施限制。 |
 
 ### 持久性 {#persistence}
 
-|  | 页面编辑器 | 注意 | 通用编辑器 | 注释 |
+|  | 页面编辑器 | 注释 | 通用编辑器 | 注释 |
 |---|---|---|---|---|
 | 编辑页面组件 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | 编辑[内容片段](/help/assets/content-fragments/content-fragments.md) | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | 包括插入新片段和重新排序片段 |
 
 ### 功能 {#capabilities}
 
-|  | 页面编辑器 | 注意 | 通用编辑器 | 注释 |
+|  | 页面编辑器 | 注释 | 通用编辑器 | 注释 |
 |---|---|---|---|---|
 | 页面模板 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 通用编辑器与所使用的模板系统无关。 但是，典型的实施模式倾向于开发人员定义的模板，因为现代前端工具使得开发人员更容易直接在代码中定义和维护模板逻辑。 |
-| WYSIWYG编辑 | [!BADGE 可用]{type=Positive}仅限页面 |  | [!BADGE 可用]{type=Positive} | 支持页面和内容片段 |
+| WYSIWYG编辑 | [!BADGE 可用]{type=Positive} | 仅限于页面 | [!BADGE 可用]{type=Positive} | 支持页面和内容片段 |
 | [生成变体](/help/generative-ai/generate-variations.md) | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | [可用作扩展](/help/implementing/universal-editor/extending.md) |
 | 插入新块 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | 对块重新排序 | [!BADGE 可用]{type=Positive} | 上下文中拖放时可能使用，但在“树视图”侧面板中无法使用 | [!BADGE 可用]{type=Positive} | 可以通过“树视图”侧面板中的拖放操作实现，但尚无法实现上下文（已计划） |
