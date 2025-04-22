@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 26%
+source-wordcount: '515'
+ht-degree: 21%
 
 ---
 
@@ -77,3 +77,13 @@ Cloud Manager的IP允许列表可用于限制和控制对这些受信任IP地址
 为避免前端管道运行中断，请确保添加此Cloud Manager IP允许列表。 然后，在启用管道之前&#x200B;*将该列表应用于创作环境*。
 
 有关详细信息，请参阅[应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)和[启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)。
+
+### Universal Editor和IP允许列表 {#universal-editor}
+
+如果要使用通用编辑器创作内容，则必须将通用编辑器服务使用的IP地址添加到允许列表并应用它。
+
+1. 从以下API终结点检索Universal Editor服务使用的IP地址： `http://universal-editor-service.adobe.io/ip-ranges`。
+1. 创建具有这些IP地址的允许列表，将其命名为`Universal Editor Service`或类似名称。
+1. 应用`Universal Editor Service`允许列表。
+
+Universal Editor服务使用的IP地址列表可能会发生更改，您必须相应地更新允许列表。

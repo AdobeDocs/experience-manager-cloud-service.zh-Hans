@@ -1,8 +1,8 @@
 ---
-source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
-workflow-type: ht
-source-wordcount: '1497'
-ht-degree: 100%
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 98%
 
 ---
 # 代码片段 {#snippets}
@@ -187,20 +187,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->[通用编辑器](/help/implementing/universal-editor/introduction.md)与 IP 允许列表不兼容。
->
->如果您想使用通用编辑器，则不得启用 IP 允许列表。
-
-## 通用编辑器和 IP 允许列表 {#ue-ip-allow-lists}
-
->[!IMPORTANT]
->
->通用编辑器与 [IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不兼容。
->
->如果您想使用通用编辑器，则必须：
->
->* 不启用 IP 允许列表。
->* [运行您自己的通用编辑器服务实例](/help/implementing/universal-editor/local-dev.md)。
+>如果您使用[通用编辑器进行内容创作，](/help/implementing/universal-editor/introduction.md)，您还必须[添加并应用IP地址为通用编辑器服务的允许列表。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 

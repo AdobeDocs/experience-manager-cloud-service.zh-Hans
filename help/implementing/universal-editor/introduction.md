@@ -4,7 +4,7 @@ description: 通用编辑器是一款现代化的可视化创作工具，旨在�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 13%
@@ -108,7 +108,7 @@ ht-degree: 13%
 * 作为AEM的一部分，通用编辑器[支持与AEM相同的桌面浏览器。](/help/overview/supported-platforms.md)
    * 不支持这些浏览器的移动版本。
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## 后续步骤 {#next-steps}
 
