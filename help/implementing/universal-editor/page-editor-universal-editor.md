@@ -1,10 +1,10 @@
 ---
 title: 页面编辑器和通用编辑器
-description: 页面编辑器仍受Adobe支持，但通用编辑器为您的新项目带来令人振奋的可能性。
+description: 页面编辑器仍受Adobe支持，但通用编辑器为您的新项目带来了令人振奋的可能性。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
+source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 页面编辑器和通用编辑器 {#page-editor-universal-editor}
 
-页面编辑器仍受Adobe支持，但通用编辑器为您的新项目带来令人振奋的可能性。
+页面编辑器仍受Adobe支持，但通用编辑器为您的新项目带来了令人振奋的可能性。
 
 ## 背景 {#background}
 
