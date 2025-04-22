@@ -4,9 +4,9 @@ description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c9a4a361561cb03b17e0b931b8946116791c62e1
+source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3191'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 1. 导航到您的[!DNL Assets View]并[在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中创建文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的文件夹树将在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中复制。 将您的[!DNL Dynamic Media]模板保存在此[!UICONTROL Dynamic Media Assets]文件夹中。
 1. 选择![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[将您的图像上载并发布到 [!DNL AEM] 和 [!DNL Dynamic Media] 同时](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以便在创建模板时使用这些图像。 需要在创建模板后发布图像以生成模板的投放URL，该URL可用于下游应用程序。
-1. [执行资源上传和发布步骤](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)，将字体文件同时上传和发布到AEM和Dynamic Media，以便在文本图层中使用默认Adobe Sans F2字体系列以外的字体。 [支持的字体文件格式为：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 请确保[重新处理](/help/assets/reprocessing-assets-view.md)较旧的字体(在[!DNL Assets View]主页上，单击![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**，导航到字体文件位置，一次选择一个字体文件，然后单击![重新处理](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL 重新处理]**)，以便在创建模板时使用它们。 请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)以了解有关字体的更多信息。
+1. [执行这些资源上传和发布步骤](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)，将字体文件同时上传和发布到AEM和Dynamic Media，以便在创建模板时使用。 [!UICONTROL Adobe Sans F2]是文本图层中唯一可用的默认字体。 [支持的字体文件格式为：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 确保[重新处理](/help/assets/reprocessing-assets-view.md)现有的字体，以便在创建模板时使用(在[!DNL Assets View]主页上，单击![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**，导航到字体文件位置，一次选择一个字体文件，然后单击![重新处理](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL 重新处理]**)。 请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)以了解有关字体的更多信息。
 1. [创建空白画布](#create-a-canvas)
 1. [将图像添加到画布](#add-images-to-the-canvas)
 1. [在画布中添加文本图层](#add-text-to-the-canvas)
@@ -159,7 +159,7 @@ ht-degree: 1%
 1. 在“属性”面板中选择&#x200B;**[!UICONTROL 智能文本调整大小]**以自动调整文本长度和字体大小，使其以最佳方式适应指定区域。
    ![最佳可自定义横幅](/help/assets/assets/add-text-layer.png)
 
-查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。 有关字体相关信息，请参阅“创建 [!DNL Dynamic Media] 模板](#how-to-create-dynamic-media-template)”部分中的[步骤3。
+查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。 **[!UICONTROL 字体系列]**&#x200B;字段显示重新处理的现有字体以及新上载和发布的字体。 有关详细信息，请参阅上面的“创建 [!DNL Dynamic Media] 模板](#how-to-create-dynamic-media-template)”部分中的[步骤3。
 
 ### 编辑或删除图层 {#edit-or-delete-a-layer}
 
