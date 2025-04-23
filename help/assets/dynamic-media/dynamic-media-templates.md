@@ -4,9 +4,9 @@ description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c237f53f771431cc15584b392106645b7eacaa30
+source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
 workflow-type: tm+mt
-source-wordcount: '3168'
+source-wordcount: '3176'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 1%
 1. 在[!DNL Assets View]主页上，您有一个文件夹位于&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中以保存您的模板。 [在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中创建文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)以在**[!UICONTROL  Dynamic Media Assets ]**中复制该文件夹。
 1. [将 [!DNL AEM Assets] 实例中可用的图像与 [!DNL Dynamic Media] 同步，以将其用于创建模板](/help/assets/dynamic-media/config-dm.md)。
 1. 发布要在创建模板时使用的图像，以便在创建模板后生成模板的投放URL。 投放URL可用于下游应用程序。
-1. 若要在模板的文本图层中使用默认[!UICONTROL Adobe Sans F2]字体以外的字体，请[同时将该字体文件上载并发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 确保[重新处理](/help/assets/reprocessing-assets-view.md)现有的字体，以便在创建模板<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->时使用。 请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)以了解有关字体的更多信息。
+1. 若要在模板的文本图层中使用默认[!UICONTROL Adobe Sans F2]字体以外的字体，请[同时将该字体文件上载并发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [支持的字体文件格式为：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 另外，请确保[重新处理](/help/assets/reprocessing-assets-view.md)要使用的现有字体。 有关详细信息，请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. 在触屏UI中验证以下内容：
    * 在&#x200B;**[!UICONTROL 编辑[!DNL Dynamic Media]配置页面]**&#x200B;上，默认情况下设置为&#x200B;**[!UICONTROL 禁用的**[!UICONTROL [!DNL Dynamic Media]&#x200B;同步模式&#x200B;]**未应用于所有AEM文件夹（**[!UICONTROL &#x200B;同步所有内容&#x200B;]**未选中）。]**&#x200B;有关详细信息，请参阅[配置Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
    * **[!UICONTROL [!DNL Dynamic Media]同步模式]**&#x200B;设置为目标文件夹或子文件夹的子文件夹&#x200B;]**启用**[!UICONTROL &#x200B;创建后保存模板。 有关详细信息，请参阅[配置 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)。
