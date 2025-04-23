@@ -4,21 +4,15 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 92%
 
 ---
 
 
 # 用于内容片段的 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->与内容片段一起使用的GraphQL API的各种功能可通过早期采用者计划获取。
->
->要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 
@@ -1186,7 +1180,7 @@ query allTeams {
 * 如果从远程存储库中删除引用的资产，这将导致内容片段资产引用损坏。
 * 用户有权访问的所有投放资产存储库都将可供选择，可用列表不可限制。
 * AEM实例和远程资产存储库实例都必须是同一版本。
-* 没有通过[管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)和[投放API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)公开的资产元数据。 您必须使用资源元数据API来检索资源元数据详细信息。
+* 没有通过[管理站点API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)和使用OpenAPI的[AEM内容片段投放](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/)公开的资源元数据。 您必须使用资源元数据API来检索资源元数据详细信息。
 
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
 
