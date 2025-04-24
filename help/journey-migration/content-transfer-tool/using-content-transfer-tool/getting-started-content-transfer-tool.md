@@ -4,9 +4,9 @@ description: 了解如何开始使用内容传输工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1642'
 ht-degree: 14%
 
 ---
@@ -95,11 +95,13 @@ ht-degree: 14%
 
    将显示以下对话框。 请注意，迁移集将在长时间不活动后过期。 在项目信息卡和迁移作业表行上显示一段时间内的警告后，迁移集将过期，并且其数据将不再可用。 有关详细信息，请查看[迁移集过期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)。
 
+   在创建迁移集期间，您可以选取将存储临时迁移数据的地理区域。  建议您选择最接近目标云环境的区域，以确保在摄取期间获得最佳性能。  创建迁移集后无法更改区域；要使用其他区域，您需要创建新的迁移集。
+
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >名称必须遵循与AEM节点相同的约定，因此不能包含以下任何字符： . / ： [ ] | *
+   >名称必须遵循与AEM节点相同的约定，因此不能包含以下任何字符： &#39;. / ： [ ] | * &lt; > ^ ？ { } % # ”或任何异常符号或表情符号。
 
 1. 您现在应在列表视图中看到迁移列表。 选择三点符号(**...**)以打开下拉列表，然后选择&#x200B;**复制提取密钥**。 在提取阶段需要此密钥。 复制此提取密钥。
 
