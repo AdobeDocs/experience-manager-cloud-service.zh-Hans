@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -18,40 +18,40 @@ ht-degree: 46%
 
 ## 版本 20476 {#20476}
 
-以下总结了维护版本20476的持续改进，该版本于2025年4月15日公开发布。 上一个维护版本是版本 20133。
+下面总结了维护版本 20476 的持续改进，该版本已于 2025 年 4 月 15 日公开发布。上一个维护版本是版本 20133。
 
 激活 2025.4.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强功能 {#enhancements-20476}
 
-* CNTBF-411：添加删除sling作业的可能性，以防JCR丢弃。
-* CQ-4359813：AEM翻译包：3月20日。
-* CQ-4359811：Granite翻译包：3月20日。
+* CNTBF-411：增加删除吊索作业的可能性，以防 JCR 丢弃。
+* CQ-4359813：AEM 翻译套件：3 月 20 日。
+* CQ-4359811：花岗岩翻译套件：3 月 20 日。
 * GRANITE-57863：将 Filevault 更新到 3.8.4。
-* GRANITE-56154：在oak-segment-azure中配置指数重试。
-* GRANITE-55999：提高UserPropertiesService的性能。
+* GRANITE-56154：在 oak-segment-azure 中配置指数重试。
+* GRANITE-55999：提高 UserPropertiesService 的性能。
 * GRANITE-55781：避免对用户成员资格进行冗余重新配置。
-* GRANITE-53956：将Azure SDK V8升级到V12，以便使用oak-segment-azure。
-* GRANITE-50654：在“主体权限”选项卡上，默认删除前端上的“所有人”加载。
+* GRANITE-53956：将 oak-segment-azure 的 Azure SDK V8 升级到 V12。
+* GRANITE-50654：在主体权限选项卡上，删除前端默认的“所有人”负载。
 * SKYOPS-103444：更新至 Sling ResourceResolver 1.12.6。
-* SKYOPS-101147：更新caconfig实施。
-* SKYOPS-97124：为SPIFly捆绑包的过时版本添加分析器警告。
-* SKYOPS-95826：将运行时Java版本更新为11.0.26和21.0.6。
-* SKYOPS-53671：在(RDE) AEM重新启动时，使用功能模型中的客户安装的工件。
+* SKYOPS-101147：更新 caconfig 实现。
+* SKYOPS-97124：为 SPIFly 捆绑包的过时版本添加分析器警告。
+* SKYOPS-95826：将运行时 Java 版本更新至 11.0.26 和 21.0.6。
+* SKYOPS-53671：在 (RDE) AEM 重新启动时使用来自功能模型的客户安装的工件。
 
 ### 修复的问题 {#fixed-issues-20476}
 
-* Assets-49027： [回归] AemRequestEventFilter中断对OSGI Web控制台的POST请求。
-* Assets-44956：无法选择任何Dynamic Media呈现版本 — 脚本标记应加载到顶级组件中。
-* CNTBF-410： ContentCopy包中的CheckJob getId空指针。
-* CNTBF-341： ContentCopy导出索引超出边界。
-* CQ-4355411：工具提示仍显示在“用户首选项”对话框中。
-* GRANITE-57265：未选择下拉列表选择值。
-* GRANITE-57067 - UI上缺少有效策略。
+* ASSETS-49027：[回归] AemRequestEventFilter 中断了对 OSGI 网页控制台的 POST 请求。
+* ASSETS-44956：无法选择任何动态媒体演绎版 - 脚本标签应加载到顶级组件中。
+* CNTBF-410：ContentCopy 捆绑包中的 CheckJob getId 空指针。
+* CNTBF-341：ContentCopy 导出索引超出范围。
+* CQ-4355411：工具提示仍然显示在“用户首选项”对话框中。
+* GRANITE-57265：下拉选择值未被选中。
+* GRANITE-57067 - UI 上缺少有效策略。
 * SITES-30727：AEM 编辑器中的子组件拖放操作可能会失败。
-* SKYOPS-90607：在非活动部署/可变内容中执行Sling作业。
-* SKYOPS-95722：从AEM-SDK中的快速入门标记中删除`MaxPermSize`大小。
-* SKYOPS-103569：某些图像不能使用Java 21加载： `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`。
+* SKYOPS-90607：Sling Jobs 在非活动部署/可变内容中执行。
+* SKYOPS-95722：从 AEM-SDK 中的快速启动标志中移除 `MaxPermSize` 的大小。
+* SKYOPS-103569：某些图像无法使用 Java 21：`javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`加载。
 
 ### 已知问题 {#known-issues-20476}
 
