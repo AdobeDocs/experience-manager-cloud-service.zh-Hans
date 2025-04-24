@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 63%
+source-wordcount: '1700'
+ht-degree: 65%
 
 ---
 
@@ -214,10 +214,6 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
 
 
    有关可用选项的详细信息，请参阅[已批准资产的默认批准目标和发布目标](#default-approval-target-options-publish-destinations)。
-
-   >[!NOTE]
-   >
-   >设置批准目标是一项有限可用性功能。 您可以通过创建支持票证来启用或禁用它。 如果您已启用Dynamic Media并启用了OpenAPI，则默认情况下会启用它。
 
    ![审批状态](/help/assets/assets/approval-status-delivery.png)
 
