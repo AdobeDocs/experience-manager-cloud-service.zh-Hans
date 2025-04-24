@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager 2025.4.0 版的发行说明
-description: 了解Adobe Experience Manager as a Cloud Service中的Cloud Manager 2025.4.0版本。
+description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2025.4.0 版本。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
+source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 45%
+ht-degree: 98%
 
 ---
 
@@ -22,25 +22,25 @@ ht-degree: 45%
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service中Cloud Manager 2025.4.0的发布日期是2025年4月10日星期四。
+AEM as a Cloud Service 中的 Cloud Manager 2025.4.0 的发布日期是 2025 年 4 月 10 日星期四。
 
-下一个计划发布于2025年5月8日星期四。
+下一次计划发布时间为 2025 年 5 月 8 日星期四。
 
 ## 新增功能 {#what-is-new}
 
-* **(UI)改进了部署可见性**
+* **（UI）改进的部署可见性**
 
-  当部署等待另一个部署完成时，Cloud Manager中的管道执行详细信息页面现在显示状态消息（“*正在等待 — 其他更新正在进行中*”）。 此工作流使环境部署期间的排序更易于理解。 <!-- CMGR-66890 -->
+  当一个部署正在等待另一个部署完成时，Cloud Manager 中的管道执行详细信息页面现在会显示一条状态消息（“*等待 - 其他更新正在进行中*”）。此工作流程使得理解环境部署期间的排序变得更加容易。<!-- CMGR-66890 -->
 
-  ![显示详细信息和划分的开发部署对话框](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+  ![显示详细信息和细分的开发部署对话框](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-* **(UI)域验证增强**
+* **（UI）域验证增强**
 
-  添加域时，如果该域已安装在Fastly帐户中，则Cloud Manager现在显示错误：“*该域已安装在Fastly帐户中。 请先将它从此处删除，然后再添加到Cloud Service。*”
+  添加域时，如果域已安装在 Fastly 帐户中，Cloud Manager 现在会显示错误：“*该域已安装在 Fastly 帐户中。请先将其从那里删除，然后再添加到 Cloud Service。*”
 
 ## 早期采用计划 {#early-adoption}
 
-参与Cloud Manager的早期采用计划，在即将发布的功能正式发布之前获得独家访问权。
+参与 Cloud Manager 的早期采用计划，在即将推出的功能正式发布之前获得独家访问权。
 
 目前提供以下早期采用机会：
 
@@ -76,17 +76,17 @@ If you are interested in testing this new capability and sharing your feedback, 
 
 ## 错误修复
 
-* **证书缺少公用名(CN)字段的问题**
+* **证书缺少通用名称 (CN) 字段的问题**
 
-  处理主题字段中不包含公用名称(CN)的EV/OV证书时，Cloud Manager不再引发NullPointerException (NPE)和500 HTTP响应。 现代证书通常省略CN，而是使用主题替代名称(SAN)。 此修复确保当存在SAN时，在配置构建过程中缺少CN不再导致故障。<!-- CMGR-67548 -->
+  在处理主题字段中不包含通用名称 (CN) 的 EV/OV 证书时，Cloud Manager 不再抛出 NullPointerException (NPE) 和 500 HTTP 响应。现代证书通常省略 CN，而是使用主题备用名称 (SAN)。此修复可确保当存在 SAN 时，CN 的缺失不再导致配置构建过程中出现故障。<!-- CMGR-67548 -->
 
-* **与不正确的证书匹配的域验证问题**
+* **证书匹配不正确的域验证问题**
 
-  Cloud Manager不再使用错误的证书错误地验证域。 以前，验证逻辑使用基于模式的匹配而不是完全匹配，这会导致`should-not-be-verified.example.com`等域由于与`example.com`的有效证书重叠而显示为已验证。 此修复确保域验证现在检查完全匹配项，从而防止错误的证书关联。<!-- CMGR-67225 -->
+  Cloud Manager 不再使用错误的证书错误地验证域。以前，验证逻辑使用基于模式的匹配，而不是精确匹配，这导致像 `should-not-be-verified.example.com` 由于与有效证书重叠而显示为已验证 `example.com`。此修复确保域验证现在检查完全匹配，从而防止错误的证书关联。<!-- CMGR-67225 -->
 
-* **高级网络端口转发名称的强制唯一性**
+* **强制高级网络端口转发名称的唯一性**
 
-  Cloud Manager现在对高级网络端口转发实施唯一命名。 以前，允许使用重复的名称，这可能会导致冲突。 此修复确保每个端口转发条目都有一个不同的名称，符合网络配置完整性的最佳实践。<!-- CMGR-67082 -->
+  Cloud Manager 现在强制对高级网络端口转发进行唯一命名。以前，允许重复的名称，这可能会导致冲突。此修复确保每个端口转发条目都有一个不同的名称，符合网络配置完整性的最佳实践。<!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->

@@ -1,27 +1,27 @@
 ---
-title: 关于AEM Launchpad
-description: 了解Adobe Experience Manager Launchpad页面。
+title: 关于Experience Hub
+description: 了解AEM Experience Hub页面。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
+source-git-commit: ca046c1635e9de6b422e78fd7a87b8fd078a6bdc
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '340'
 ht-degree: 9%
 
 ---
 
-# 关于AEM Launchpad {#aem-launchpad}
+# 关于Experience Hub {#aem-experience-hub}
 
-AEM Launchpad为管理Adobe Experience Manager中的内容、资源和站点引入了一个集中的起点。 AEM Launchpad旨在提供个性化体验，可让您根据自己的角色和目标无缝导航AEM生态系统。 作为指南，它可以提供关键洞察和建议操作，帮助您高效实现目标。AEM Launchpad布局清晰、以人物为导向，可确保快速访问基本工具，支持在所有AEM功能中实现简化而有效的体验。
+Experience Hub为管理Adobe Experience Manager中的内容、资源和站点引入了一个集中的起点。 Experience Hub旨在提供个性化的体验，可让您根据自己的角色和目标无缝导航AEM生态系统。 作为指南，它可以提供关键洞察和建议操作，帮助您高效实现目标。Experience Hub布局清晰、以人物为导向，可确保快速访问基本工具，从而支持在所有AEM功能中实现简化而有效的体验。
 
 <!--
-Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
+Available to early adopters, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
-## AEM快速启动板特写 {#aem-launchpad-about}
+## Experience Hub近景 {#aem-experience-hub-about}
 
 [Adobe Experience Manager页面](https://experience.adobe.com/#/experiencemanager)已更新，具有增强的导航和交互式小组件。 上一组解决方案信息卡提供了对以下工具的访问：
 
@@ -34,25 +34,25 @@ Available to early adopters, AEM Launchpad offers an optimized experience focuse
 
 这些解决方案现在移至&#x200B;**工具**&#x200B;下的主导航区。 此外，**站点**&#x200B;和&#x200B;**Assets**&#x200B;的新导航元素提供了对Adobe Experience Manager关键功能(如Assets、收藏集、站点和内容片段)的快速访问。 这些功能可用于您有权访问的主要生产环境。
 
-![AEM Launchpad环境](/help/implementing/cloud-manager/assets/aem-launchpad-author-environments.png)
+![Experience Hub环境](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-作为Adobe Experience Manager的中心枢纽，AEM Launchpad页面进行了扩展，提供了针对每个用户角色定制的其他小部件和操作。 可完全自定义的页面，允许您为屏幕选择最佳布局。 可以过滤构件，以便只有选定的构件会显示在主页上，从而确保提供个性化体验。
+作为Adobe Experience Manager的中心枢纽，Experience Hub页面将进行扩展，以提供针对每个用户角色的其他小部件和操作。 可完全自定义的页面，允许您为屏幕选择最佳布局。 可以过滤构件，以便只有选定的构件会显示在主页上，从而确保提供个性化体验。
 
-![已自定义AEM Launchpad](/help/implementing/cloud-manager/assets/aem-launchpad-custom.png)
+![自定义的Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
 此外，还可以在页面上调整构件大小并重新放置构件，以更好地满足您的需求和首选项。
 
-![AEM Launchpad小组件](/help/implementing/cloud-manager/assets/aem-launchpad-widgets.png)
+![体验中心小组件](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
 **创作环境**&#x200B;部分显示您可以访问的所有AEM环境，而&#x200B;**最近访问**&#x200B;部分提供AEM系统中跟踪的最近访问页面的列表。
 
 导航元素包括Assets Browse，它加载用户可访问的生产环境的存储库。
 
-![AEM Launchpad导航元素](/help/implementing/cloud-manager/assets/aem-launchpad-navigation.png)
+![Experience Hub导航元素](/help/implementing/cloud-manager/assets/experience-hub-navigation.png)
 
 如果没有可用的生产AEM Cloud Service环境，则用户的选项将暗显（不可用）。
 
-![无生产环境的AEM Launchpad](/help/implementing/cloud-manager/assets/aem-launchpad-no-prod-environs.png)
+无生产环境的![体验中心](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
 
 
 
