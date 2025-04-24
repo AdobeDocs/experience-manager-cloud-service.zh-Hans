@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 Adobe Experience Manager (AEM) as a Cloud Service 为内容片段的结构化内容传递和内容片段管理提供了多个 API。有关特定 API 的更多详细信息，请参阅各个页面。
 
-* 使用OpenAPI的AEM内容片段交付
+* 通过 OpenAPI 进行 AEM 内容片段传递
    * 此 API 创建 JSON 响应，用于传递 AEM 中内容片段的结构化内容。
    * 它使用内容片段的路径作为端点。
    * 这个 API 基于 REST。
@@ -67,7 +67,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 为内容片段的结构化内
 
 * [Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [用于结构化内容传递和管理的 AEM API](/help/headless/apis-headless-and-content-fragments.md)
-* [使用OpenAPI的AEM内容片段交付](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+* [通过 OpenAPI 进行 AEM 内容片段传递](/help/headless/aem-content-fragment-delivery-with-openapi.md)
 * [用于内容片段传递的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 * [Content Fragments 和 Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
 * [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)

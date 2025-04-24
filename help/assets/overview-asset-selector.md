@@ -4,9 +4,9 @@ description: 使用资产选择器在您的应用程序中搜索、查找和检�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 98%
 
 * 主机应用程序在 HTTPS 上运行。
 * 您无法在 `localhost` 上运行此应用程序。如果您想在本地机器上集成资产选择器，则需要创建一个自定义域，例如 `[https://<your_campany>.localhost.com:<port_number>]`，并将此自定义域添加到 `redirectUrl list` 中。
-* 您可以使用相应的`imsClientId`配置clientID并将其添加到AEM Cloud Service环境变量中。
+* 您可以使用相应的 `imsClientId` 配置 clientID 并将其添加到 AEM Cloud Service 环境变量中。
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * 需要在环境配置中定义 IMS 范围列表。

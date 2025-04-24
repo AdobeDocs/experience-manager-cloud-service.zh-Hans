@@ -5,9 +5,9 @@ exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->建议您使用版本3.0.0，因为虽然[生成变体的早期版本仍可以直接访问](/help/generative-ai/generate-variations.md)，但将来会弃用。
+>建议您使用版本 3.0.0，因为虽然之前的[生成变体版本现在仍然可以直接访问](/help/generative-ai/generate-variations.md)，但未来将被弃用。
 
 ### 2.2.0 {#release-notes-2-2-0}
 

@@ -5,9 +5,9 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3287'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->建议您访问[生成集成到AEM编辑器中的变体](/help/generative-ai/generate-variations-integrated-editor.md)，因为此页面上描述的版本将来将被弃用。
+>建议您访问 [AEM 编辑器中集成的生成变体](/help/generative-ai/generate-variations-integrated-editor.md)，因为这个页面上描述的版本将被弃用。
 
 如果您正在寻找一种方法来优化您的数字渠道并加速内容创作，您可以使用“生成变体”功能。生成变体功能使用生成式人工智能 (AI) 根据提示创建内容变体；这些提示由 Adobe 提供或由用户创建和管理。创建变体后，您可以在您的网站上使用这些内容，并使用 [Edge Delivery Services](/help/edge/overview.md) 的[试验](https://www.aem.live/docs/experimentation)功能衡量它们的成功。
 
