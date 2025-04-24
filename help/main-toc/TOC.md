@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
 source-wordcount: '6135'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -221,7 +221,7 @@ ht-degree: 99%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
-         + [2025.03.10发行说明](/help/release-notes/universal-editor/2025/2025-03-10.md)
+         + [2025.03.10 版发行说明](/help/release-notes/universal-editor/2025/2025-03-10.md)
          + [2025.02.25 版发行说明](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [2025.02.17 版发行说明](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [2025.01.16 版发行说明](/help/release-notes/universal-editor/2025/2025-01-16.md)
@@ -1117,7 +1117,7 @@ ht-degree: 99%
       + [升级内容片段以支持 UUID 引用](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [GraphQL 查询示例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 查询疑难解答](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [使用OpenAPI的AEM内容片段交付](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   + [通过 OpenAPI 进行 AEM 内容片段传递](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [内容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API 中的内容片段支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-hans)
    + 安全性 {#security}

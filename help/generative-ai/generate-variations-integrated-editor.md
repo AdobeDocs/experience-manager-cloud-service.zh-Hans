@@ -7,7 +7,7 @@ exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->建议您使用此版本，因为尽管仍可以直接访问[生成变体的独立版本](/help/generative-ai/generate-variations.md)，但将来会弃用。
+>建议您使用此版本，因为虽然独立版本的[生成变体现在仍然可以直接访问](/help/generative-ai/generate-variations.md)，但未来将被弃用。
 
 之后您可以：
 
