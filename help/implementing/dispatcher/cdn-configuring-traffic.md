@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1493'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +113,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +120,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -134,7 +131,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -145,6 +141,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **操作**
@@ -153,12 +156,20 @@ data:
 
 | 名称 | 属性 | 含义 |
 |-----------|--------------------------|-------------|
-| **设置** | （reqProperty、reqHeader、queryParam或reqCookie），值 | 将指定的请求参数（仅支持“path”属性）或请求标头、查询参数或Cookie设置为给定值，该值可以是字符串文字或请求参数。 |
-|     | 变量，值 | 将指定的请求属性设置为给定值。 |
-| **取消设置** | reqProperty | 将指定的请求参数（仅支持“path”属性），或请求标头、查询参数或Cookie删除到给定值，该值可以是字符串文字或请求参数。 |
-|         | 变量 | 删除指定的变量。 |
-|         | queryParamMatch | 删除与指定正则表达式匹配的所有查询参数。 |
-|         | queryParamDoesNotMatch | 删除与指定的正则表达式不匹配的所有查询参数。 |
+| **设置** | reqProperty，值 | 设置指定的请求参数（仅支持“path”属性） |
+|     | reqHeader，值 | 将指定的请求标头设置为给定的值。 |
+|     | queryParam，值 | 将指定的查询参数设置为给定值。 |
+|     | reqCookie，值 | 将指定的请求Cookie设置为给定值。 |
+|     | logProperty，值 | 将指定的CDN日志属性设置为给定值。 |
+|     | 变量，值 | 将指定的变量设置为给定值。 |
+| **取消设置** | reqProperty | 删除指定的请求参数（仅支持“path”属性） |
+|     | reqHeader，值 | 删除指定的请求标头。 |
+|     | queryParam，值 | 删除指定的查询参数。 |
+|     | reqCookie，值 | 删除指定的Cookie。 |
+|     | logProperty，值 | 删除指定的CDN日志属性。 |
+|     | 变量 | 删除指定的变量。 |
+|     | queryParamMatch | 删除与指定正则表达式匹配的所有查询参数。 |
+|     | queryParamDoesNotMatch | 删除与指定的正则表达式不匹配的所有查询参数。 |
 | **转换** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie或var），匹配，替换 | 将部分请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量替换为新值。 |
 |              | op：tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 将请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量设置为其小写值。 |
 
@@ -240,9 +251,60 @@ data:
             value: some header value
 ```
 
+### 日志属性 {#logproperty}
+
+您可以使用请求和响应转换在CDN日志中添加自己的日志属性。
+
+配置示例：
+
+```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
+
+日志示例：
+
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
 ## 响应转换 {#response-transformations}
 
-响应转换规则允许您设置和取消设置CDN传出响应的标头。 另请参阅上述示例，以引用之前在请求转换规则中设置的变量。 也可以设置响应的状态代码。
+响应转换规则允许您设置和取消设置CDN传出响应的标头、Cookie和状态。 另请参阅上述示例，以引用之前在请求转换规则中设置的变量。
 
 配置示例：
 
@@ -262,7 +324,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -270,8 +331,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -283,7 +342,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -291,7 +349,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **操作**
@@ -300,9 +376,15 @@ data:
 
 | 名称 | 属性 | 含义 |
 |-----------|--------------------------|-------------|
-| **设置** | reqHeader，值 | 将指定的标头设置为响应中的给定值。 |
-|          | respProperty，值 | 设置响应属性。 仅支持“status”属性以设置状态代码。 |
+| **设置** | respProperty，值 | 设置响应属性。 仅支持“status”属性以设置状态代码。 |
+|     | respHeader，值 | 将指定的响应标头设置为给定值。 |
+|     | respCookie、属性（过期、域、路径、安全、httpOnly、扩展）、值 | 将具有特定属性的指定请求Cookie设置为给定值。 |
+|     | logProperty，值 | 将指定的CDN日志属性设置为给定值。 |
+|     | 变量，值 | 将指定的变量设置为给定值。 |
 | **取消设置** | 响应标头 | 从响应中删除指定的标头。 |
+|     | respCookie，值 | 删除指定的Cookie。 |
+|     | logProperty，值 | 删除指定的CDN日志属性。 |
+|     | 变量 | 删除指定的变量。 |
 
 ## 源选择器 {#origin-selectors}
 

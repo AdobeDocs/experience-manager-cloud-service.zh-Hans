@@ -4,9 +4,9 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2377'
 ht-degree: 9%
 
 ---
@@ -194,7 +194,7 @@ AEM Java日志被定义为OSGi配置，因此使用运行模式文件夹定位�
 
 ## AEM HTTP请求日志记录 {#aem-http-request-logging}
 
-AEM as a Cloud Service的HTTP请求日志记录可按时间顺序深入分析向AEM发出的HTTP请求及其HTTP响应。 此日志有助于了解向AEM发出的HTTP请求以及处理和响应这些请求的顺序。
+AEM as a Cloud Service的HTTP请求日志记录可按时间顺序将insight添加到向AEM发出的HTTP请求及其HTTP响应。 此日志有助于了解向AEM发出的HTTP请求以及处理和响应这些请求的顺序。
 
 了解此日志的关键是按其ID映射HTTP请求和响应对，这些ID由括号中的数值表示。 请求及其相应响应在日志中通常具有其他HTTP请求和响应。
 
@@ -411,7 +411,7 @@ mod_rewrite日志级别由文件`conf.d/variables/global.var`中的变量REWRITE
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Define REWRITE_LOG_LEVEL debug
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ CDN日志不同于其他日志，它遵循JSON格式。
 | *pop* | CDN 缓存服务器的数据中心。 |
 | *rules* | 任何匹配的[流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)和WAF标志的名称，也指示匹配是否导致阻塞。 如果没有匹配的规则，则为空。 |
 
+可以使用[请求/响应转换](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty)用您自己的属性扩展CDN日志。
 
 ## 如何访问日志 {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ AEM日志位于文件夹`crx-quickstart/logs`中，可以在其中查看以下�
 * AEM HTTP请求日志： `request.log`
 * AEM HTTP访问日志： `access.log`
 
-Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。 有关如何启动Dispatcher的信息，请参阅[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
+Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。 有关如何启动Dispatcher的信息，请参阅[Dispatcher文档](/help/implementing/dispatcher/disp-overview.md)。
 
 要检索日志，请执行以下操作：
 
