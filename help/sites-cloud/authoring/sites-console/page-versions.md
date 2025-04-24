@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 97%
+source-wordcount: '1574'
+ht-degree: 94%
 
 ---
 
@@ -25,6 +25,13 @@ ht-degree: 97%
 * 将页面的当前版本与之前的版本进行比较。
    * 突出显示文本和图像的差异。
 * 时间扭曲功能使用页面版本来确定发布环境的状态。
+
+>[!NOTE]
+>
+>AEM存储库中只对内容进行版本控制。 代码、CSS和JavaScript等动态资源不会进行版本控制。
+>
+>* 查看版本时，内容会使用存储库的当前代码、CSS和JavaScript进行查看。
+>* 恢复版本时，将仅恢复内容，并对其应用存储库的当前代码、CSS和JavaScript。
 
 ## 创建新版本 {#creating-a-new-version}
 
