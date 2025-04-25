@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 46%
+source-wordcount: '1713'
+ht-degree: 42%
 
 ---
 
@@ -162,6 +162,20 @@ CDN规则现在可以根据地区、大陆和组织的用例进行匹配，包�
 >[!IMPORTANT]
 >
 > Java 21 **运行时**&#x200B;已于 2 月份部署到您的开发/RDE 环境，它将于 **4 月 28 日和 29 日**&#x200B;应用于您的暂存/生产环境。请注意，使用 Java 21（或 Java 17）**构建代码**&#x200B;与 Java 21 运行时无关，因此您必须明确采取相应步骤来用 Java 21（或 Java 17）构建代码。
+
+### 实施AEM日志记录配置策略 {#logconfig-policy}
+
+为了确保有效监控客户环境，AEM Java日志必须保持一致的格式，并且不应被自定义配置覆盖。 日志输出必须保持定向到默认文件。 对于AEM产品代码，必须保留默认日志级别。 但是，可以调整客户开发的代码的日志级别。
+
+为此，不应更改以下OSGi属性：
+* **Apache Sling日志配置** (PID： `org.apache.sling.commons.log.LogManager`) — *所有属性*
+* **Apache Sling日志记录器配置** （工厂PID： `org.apache.sling.commons.log.LogManager.factory.config`）：
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+5月中旬，AEM将实施一项策略，该策略将忽略对这些资产所做的任何自定义修改。 请查看并相应地调整您的下游流程。 例如，如果您使用日志转发功能：
+* 如果您的日志记录目标需要自定义（非默认）日志格式，则可能需要更新摄取规则。
+* 如果日志级别更改降低了日志详细程度，请注意，默认的日志级别可能会导致日志量显着增加。
 
 ### AEM日志转发到更多目标 — Beta计划 {#log-forwarding-earlyadopter}
 
