@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1561'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,21 @@ ht-degree: 0%
 文章提供了基于核心组件的自适应表单的规则编辑器的详细示例，提供了有关不同场景下正确实施的见解。 规则编辑器允许开发人员定义和管理用于控制表单行为的逻辑。
 现在，让我们讨论规则编辑器的不同实施。
 
+## 如果第一个面板有效，则在单击按钮时将焦点设置为另一个面板
+
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+
+规则编辑器允许您在单击按钮时验证面板布局，例如水平选项卡、垂直选项卡、折叠面板或向导，并将焦点设置为另一个面板中的表单对象。 您可以使用此功能来改进表单导航和用户体验。
+
+想象一下，使用向导布局的多步应用程序表单。 您必须先完成`Personal Information`面板，然后才能移至`Employment Details`。 单击`Next`按钮时，规则编辑器将验证`Personal Information`面板。 如果所有必填字段都填写正确，则表单会自动将焦点转移到`Employment Details`面板。 否则，它会显示一条错误消息，提示用户填写缺少的字段。
+
+您可以在`Next`按钮上创建规则以验证第一个面板：
+
+![下一个按钮的规则](/help/forms/assets/next-rule.png){width=50%}
+
+单击&#x200B;**下一步**&#x200B;按钮时，将验证&#x200B;**个人信息**&#x200B;面板。 如果输入的详细信息正确，则焦点将转移到&#x200B;**帐户安全**&#x200B;面板；否则，将显示一条错误消息，提示您填写缺少的详细信息。
+
+<!--![Video]()-->
 
 ## 使用按钮在面板之间导航
 
@@ -122,7 +137,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 * 单选按钮&#x200B;**[!UICONTROL 您是现有Geometrixx客户吗？]**，提供[!UICONTROL 是]和[!UICONTROL 否]选项。 “是”的值为&#x200B;**0**，“否”的值为&#x200B;**1**。
 
-* 用于指定客户ID的文本字段&#x200B;**[!UICONTROL 客户ID]** Geometrixx。
+* 用于指定客户ID的文本字段&#x200B;**[!UICONTROL Geometrixx客户ID]**。
 
 在用于实施此行为的单选按钮上编写When规则时，该规则在可视规则编辑器中如下所示。
 

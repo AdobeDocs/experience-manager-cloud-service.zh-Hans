@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: 如何为自适应表单连接SharePoint文档库、提交到SharePoint、创建SharePoint文档库配置、在自适应表单中使用提交到SharePoint提交操作、AEM Forms数据模型SharePoint文档库、Forms数据模型SharePoint文档库、将Forms数据模型集成到SharePoint文档库
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 35%
+source-wordcount: '635'
+ht-degree: 33%
 
 ---
-
 
 # 将自适应表单连接到Microsoft® SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ ht-degree: 35%
 1. 选择要用于保存数据的&#x200B;**[!UICONTROL 存储配置]**。
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存提交设置。
 
-提交表单时，数据将保存在指定的Microsoft® Sharepoint文档库存储中。
-用于保存数据的文件夹结构是 `/folder_name/form_name/year/month/date/submission_id/data`。
+>[!NOTE]
+>
+> 提交表单时，数据将保存在指定的Microsoft® Sharepoint文档库存储中。 用于保存数据的文件夹结构是 `/folder_name/form_name/year/month/date/submission_id/data`。
+
+>[!NOTE]
+>
+> 附件也存储在`/folder_name/form_name/year/month/date/submission_id/data`目录中。 但是，如果选择&#x200B;**保存具有原始名称的附件**，则附件会使用其原始文件名存储在文件夹中。
+> ![图像](/help/forms/assets/sp-doc-attachment-af2.png){height=50%，width=50%}
 
 ## 相关文章
 

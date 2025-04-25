@@ -1,13 +1,13 @@
 ---
-title: 基于核心组件的自适应表单的规则编辑器中可用的各种运算符类型和事件有哪些？
-description: 自适应表单规则编辑器支持各种运算符类型和事件。
+title: 在基于核心组件的自适应表单的规则编辑器中可用的各种运算符类型和事件是什么？
+description: 自适应Forms规则编辑器支持各种运算符类型和事件。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 自适应表单的规则编辑器中提供的运算符类型为构建精确条件提供了一个强大的框架。 它们允许您以逻辑和一致的方式处理数据、执行计算并组合多个条件。 无论您是比较值、执行算术运算还是处理字符串，这些运算符都可以确保您的规则既灵活又强大。
 
-规则编辑器中的事件用作激活规则的触发器。 它们定义在满足特定条件时发生的特定作。 通过利用不同类型的事件，可以自动响应各种方案，例如用户交互、计划时间、数据更改和系统状态。 通过指定这些触发器的功能，您可以创建满足特定要求的动态响应规则。
+规则编辑器中的事件用作激活规则的触发器。 它们定义在满足某些条件时发生的具体操作。 利用不同类型的事件，您可以自动响应范围广泛的场景，例如用户交互、计划时间、数据更改和系统状态。 通过指定这些触发器，您可以创建符合您特定要求的动态响应规则。
 
 通过了解并使用可用的运算符类型和事件，您可以释放规则编辑器的全部潜力，从而创建高效、有效的规则来满足独特需求并改进整体系统功能。
 
@@ -26,17 +26,21 @@ ht-degree: 2%
 
 规则编辑器提供了以下逻辑运算符和事件，您可以使用这些运算符和事件创建规则。
 
-* **等于**
-* **不等于**
-* **开头为**
-* **结尾为**
-* **包含**
-* **不包含**
-* **为空**
-* **不为空**
-* **已选择：**&#x200B;当用户为复选框、下拉菜单单选按钮选择特定选项时，返回true。
-* **已初始化（事件）：**&#x200B;当表单对象在浏览器中呈现时返回true。
-* **Is Changed (event)：**&#x200B;当用户更改表单对象的输入值或选定选项时，返回true。
+* **等于** — 检查表单对象是否与指定的值匹配。
+* **不等于** — 检查表单对象是否与指定的值不匹配。
+* **开头为** – 检查表单对象是否以指定的字符串开头。
+* **结尾为** – 检查表单对象是否以指定的字符串结尾。
+* **包含** – 检查表单对象是否包含指定的子字符串。
+* **不包含** – 检查表单对象是否不包含指定的子字符串。
+* **为空** – 检查表单对象是否为空或未提供。
+* **不为空** – 检查表单对象是否存在且不为空。
+* **已选择** — 当用户选择特定的复选框、下拉列表或单选按钮选项时，返回true。
+* **已初始化（事件）** — 在浏览器中呈现表单对象时返回true。
+* **Is Changed (event)** — 当用户修改表单对象的值或选择时，返回true。
+* **Is Clicked (event)** — 当用户单击表单对象（例如，按钮）时，返回true。 用户可以[向按钮添加多个条件，然后单击](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid)。
+* **有效** — 检查表单对象是否符合验证条件。
+* **无效** — 检查表单对象是否未通过验证条件。
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -89,11 +93,11 @@ _
 
 在 When **条件中**，您可以选择添加应用规则的字段之外的其他字段。
 
-例如，使用 When 规则类型，您可以评估不同表单对象的条件并执行以下作：
+例如，使用When规则类型，您可以评估不同表单对象上的条件并执行操作：
 
-什么时候：
+时间：
 
-（对象 A 条件 1）
+（对象A条件1）
 
 和/或
 
@@ -112,6 +116,10 @@ _
 * 确保将[核心组件设置为版本3.0.14或更高版本](https://github.com/adobe/aem-core-forms-components)以在规则编辑器中使用此功能。
 * 如果将规则应用于When条件中的不同字段，则即使仅更改了这些字段之一，也会触发规则。
 * 您只能在&#x200B;**AND**&#x200B;规则的&#x200B;**When**&#x200B;条件中添加多个字段。 **OR**&#x200B;规则无法执行此操作。
+
+>[!NOTE]
+>
+> 要添加多个包含按钮点击的条件，请确保将按钮点击事件放置为第一个条件。 例如，`When button is clicked AND text input equals '5'`有效，而不支持`When text input equals '5' AND button is clicked`。
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -132,10 +140,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 如果When条件功能中允许的多个字段遇到任何问题，请按照以下疑难解答步骤操作：
 
-1. 在编辑模式下打开表单。
-1. 打开内容浏览器并选择 **[!UICONTROL 自适应表单的指南容器]** 组件。
+1. 在编辑模式下打开该表单。
+1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
-1. 单击“完成”并再次保存对话框。
+1. 单击完成，然后再次保存对话框。
 
 **[!UICONTROL 隐藏]**&#x200B;隐藏指定的对象。
 
@@ -145,19 +153,19 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 禁用]**&#x200B;禁用指定的对象。
 
-**[!UICONTROL 调用服务]**&#x200B;调用表单数据模型(FDM)中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点击该字段时，它将显示实例 [!DNL Experience Manager] 上在所有表单数据模型 （FDM） 中配置的所有服务。 选择表单数据模型服务时，将显示更多字段，您可以在其中将表单对象与指定服务的输入参数映射。 您可以通过指定服务的事件有效负载选项映射输出参数。 您还可以使用规则编辑器创建用于处理调用服务操作的成功和失败响应的规则。
+**[!UICONTROL 调用服务]**&#x200B;调用表单数据模型(FDM)中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段时，会显示在[!DNL Experience Manager]实例上的所有表单数据模型(FDM)中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中使用指定服务的输入参数映射表单对象。 您可以通过指定服务的事件有效负载选项映射输出参数。 您还可以使用规则编辑器创建用于处理调用服务操作的成功和失败响应的规则。
 
 >[!NOTE]
 >
-> 若要了解有关调用服务的更多信息，请[单击此处](/help/forms/invoke-service-enhancements-rule-editor.md)。
+> 要了解有关调用服务的更多信息， [请单击此处](/help/forms/invoke-service-enhancements-rule-editor.md)。
 
-请参阅有关调用表单数据模型(FDM)服务的示例规则。
+请参阅调用表单数据模型 （FDM） 服务的示例规则。
 
-除了表单数据模型服务之外，您还可以指定直接WSDL URL来调用Web服务。 但是，表单数据模型服务具有许多好处，并且推荐调用服务的方法。
+除了表单数据模型服务之外，您还可以指定直接 WSDL URL 来调用 Web 服务。 但是，表单数据模型服务具有许多好处，并且是调用服务的推荐方法。
 
-有关在表单数据模型(FDM)中配置服务的详细信息，请参阅[[!DNL Experience Manager Forms] 数据集成](data-integration.md)。
+有关在表单数据模型 （FDM） 中配置服务的详细信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md)。
 
-**[!UICONTROL 设置值]**&#x200B;计算并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 当您选择Web服务选项时，它将显示在[!DNL Experience Manager]实例上的所有表单数据模型(FDM)中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
+**[!UICONTROL 设置“计算”的值]** ，并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 当您选择Web服务选项时，它将显示在[!DNL Experience Manager]实例上的所有表单数据模型(FDM)中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
 
 有关在表单数据模型(FDM)中配置服务的详细信息，请参阅[[!DNL Experience Manager Forms] 数据集成](data-integration.md)。
 
@@ -228,15 +236,15 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
-下面的示例选择 as `True` 的值`Question2`并设置 as `correct`的值`Result`。
+以下示例选择`Question2`的值作为`True`，并将`Result`的值设置为`correct`。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表单数据模型服务的设置值规则示例。
+使用表单数据模型服务的设置值规则的示例。
 
-#### [!UICONTROL 显示] {#show}
+#### [!UICONTROL 节目] {#show}
 
-**[!UICONTROL 使用显示]**&#x200B;规则类型，您可以编写一个规则，以根据是否满足条件来显示或隐藏表单对象。Show规则类型还会触发Hide操作，以防条件不满足或返回`False`。
+使用&#x200B;**[!UICONTROL Show]**&#x200B;规则类型，您可以编写规则以根据条件是否满足来显示或隐藏表单对象。 Show规则类型还会触发Hide操作，以防条件不满足或返回`False`。
 
 典型的显示规则的结构如下所示：
 
@@ -252,9 +260,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 隐藏] {#hide}
 
-与“显示”规则类型类似，您可以使用&#x200B;**[!UICONTROL 隐藏]**&#x200B;规则类型，根据是否满足条件来显示或隐藏表单对象。 “隐藏”规则类型还会在条件不满足或返回 `False`时触发“显示”作。
+与“显示”规则类型类似，您可以使用&#x200B;**[!UICONTROL 隐藏]**&#x200B;规则类型，根据是否满足条件来显示或隐藏表单对象。 如果条件不满足或返回`False`，隐藏规则类型还会触发“显示”操作。
 
-典型的隐藏规则结构如下：
+典型的“隐藏”规则的结构如下所示：
 
 `Hide Object A;`
 
@@ -268,9 +276,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 启用] {#enable}
 
-**[!UICONTROL 启用]**&#x200B;规则类型允许您根据条件是否满足来启用或禁用表单对象。 Enable规则类型也会在条件不满足或返回`False`时触发Disable操作。
+启用&#x200B;****&#x200B;规则类型允许您根据是否满足条件来启用或禁用表单对象。如果条件不满足或返回 `False`，“启用”规则类型还会触发“禁用”作。
 
-典型的Enable规则的结构如下所示：
+典型的启用规则结构如下：
 
 `Enable Object A;`
 
@@ -284,7 +292,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 禁用] {#disable}
 
-与“启用”规则类型类似，**[!UICONTROL 禁用]**&#x200B;规则类型允许您根据条件是否满足来启用或禁用表单对象。 Disable规则类型还会触发Enable操作，以防条件不满足或返回`False`。
+与“启用”规则类型类似， **[!UICONTROL “禁用]** ”规则类型允许您根据是否满足条件来启用或禁用表单对象。 “禁用”规则类型还会在条件不满足或返回 `False`时触发“启用”作。
 
 典型的禁用规则的结构如下所示：
 
@@ -346,9 +354,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 <span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
 
-**[!UICONTROL 异步函数调用]**&#x200B;规则类型允许您执行异步函数。 它使您能够启动独立于主执行线程的函数调用，允许其他进程继续运行，而无需等待异步函数完成。
+**[!UICONTROL 异步函数调用]**&#x200B;规则类型允许您执行异步函数。它使您能够启动独立于主执行线程运行的函数调用，从而允许其他进程继续运行，而无需等待异步函数完成。
 
-用于执行异步函数的典型Async Function调用规则的结构如下所示：
+用于执行异步函数的典型异步函数调用规则的结构如下：
 
 `When:`
 

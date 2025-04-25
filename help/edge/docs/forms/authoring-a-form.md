@@ -1,67 +1,109 @@
 ---
-Title: Authoring a Form
-Description: This article provides information on various form authoring platforms, including the Universal Editor, document-based authoring, and Adaptive Forms editors (Core Components and Foundation Components).
-Keywords: Universal Editor for WYSIWYG authoring, document-based authoring, Adaptive Forms editors, Adaptive Forms editors for Core Components authoring, Adaptive Forms editors for Foundation Components authoring
-feature: Edge Delivery Services
-Role: User, Developer
+title: 如何在AEM中创作表单？
+description: 了解Adobe Experience Manager (AEM)中可用的各种表单创作平台，以及如何根据您的要求选择正确的平台。
+feature: Edge Delivery Services, Adaptive Forms, Core Components
+role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: bdc0e51a8b16df432f1f1aeabed11135fb8c8e0c
-workflow-type: ht
-source-wordcount: '877'
-ht-degree: 100%
+source-git-commit: f6c6b4c17482eb519fb0d4287704d775d0a5da00
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 7%
 
 ---
 
 
-# 创作表单
+# 如何在Adobe Experience Manager (AEM)中创作Forms？
 
-Adobe Experience Manager 提供并支持多个编辑器来创作表单。您可以使用：
-* 通用编辑器（用于所见即所得的创作）
-* Microsoft Excel 或 Google Sheets（称为基于文档的创作）
-* 自适应表单编辑器（用于核心组件或基于基础组件的创作）
+Adobe Experience Manager (AEM)为创建有吸引力、响应式、动态和自适应表单提供了一个灵活的平台。 它提供了直观的用户界面和一组丰富的现成组件，用于构建和管理自适应Forms。 Forms可以不使用表单模型或架构进行创作，具体取决于您的要求。
 
-**[要添加的图像]**
+## 选择创作平台时的主要注意事项
 
-## 通用编辑器（用于所见即所得的创作）
+AEM提供了多个表单创作选项，用于创建交互式且具有吸引力的表单。 选择表单创作环境时，请考虑以下因素：
 
-通用编辑器是一个多功能可视化编辑器，提供所见即所得（WYSIWYG）功能，确保获得直观的表单创建体验。建议在创建新表单时使用通用编辑器，因为它提供了现代、用户友好的设计和方便的拖放界面。
+| ??**注意事项** | ??**要问什么** |
+|----------------------|--------------------|
+| **用户专业知识** | 谁将创作表单 — 开发人员、业务用户或内容作者？ |
+| **表单复杂性** | 该表单是否需要高级规则、动态部分或集成？ |
+| **可重用性需求** | 表单的各个部分是否会在不同的表单或项目中重复使用？ |
+| **设计灵活性** | 是否需要完全控制布局、主题和样式？ |
+| **集成要求** | 表单是否需要连接到数据模型、工作流或外部系统？ |
+| **易用性** | 该平台对于您团队的技术技能水平是否直观？ |
+| **性能和可扩展性** | 表单是大规模使用还是在高流量环境中使用？ |
+| **全渠道投放** | 该表单是否会用于网站、移动应用程序、网亭或多个渠道？ |
+| **发布灵活性** | 表单将在AEM、Edge Delivery或自定义应用程序上的何处发布？ |
 
-要使用通用编辑器创建表单，需要使用 AEM 环境中可用的 Edge Delivery Services 模板。这些表单的外观继承自 Edge Delivery Services GitHub 存储库中的配置。[AEM 环境与 Edge Delivery Services GitHub 存储库之间的连接](/help/edge/docs/forms/publishing-forms.md)必须建立，才能在 Edge Delivery Services 上发布这些表单。
+## AEM中的表单创作方法概述
 
-有关如何使用通用编辑器进行创作的详细步骤，请参阅文章[使用通用编辑器创作内容](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring)。
+AEM支持多种创作方法，每种方法都适合不同的用户需求、技术技能水平和发布目标。
 
-## Microsoft Excel 或 Google Sheets（称为基于文档的创作）
+* [基础组件](/help/forms/create-adaptive-form-tutorial.md)：使用基础组件构建传统的交互式表单。 最适合与旧版系统集成或依赖长期建立的工作流的表单。 通过基础组件创作的Forms只能在AEM上发布，并且与Edge Delivery Services不兼容。
 
-您可以使用基于文档的创作方式通过 Microsoft Excel 或 Google Sheets 文件来创作表单，这样可以利用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 的强大生态系统和 API。这种方法对于创建没有高级提交服务的简单表单特别有用。
+* [核心组件](/help/forms/creating-adaptive-form-core-components.md)：使用核心组件创建现代、响应式且可伸缩的表单。 它们支持可重用性、可访问性和更好的性能。 使用核心组件创作的Forms可在AEM和Edge Delivery Services上发布，从而提供跨平台的灵活性。
 
-要开始使用 Microsoft Excel 或 Google Sheets 创建表单，[使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，并将相应的 GitHub 存储库克隆到本地计算机上。AEM Forms Edge Delivery 提供了一项称为自适应表单区块（Adaptive Forms Block）的功能，可简化创建用于捕获和存储数据的表单的过程。要了解如何使用 Edge Delivery Services 上的自适应表单区块创建和发布表单，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)。
+* [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md)： Edge Delivery Services Forms改变了表单的创作、执行和处理方式。 使用 Edge Delivery Services，组织可以快速、安全地创建高度可用的数字化表单，通过快速开发环境提升用户体验和运营效率。您可以通过两种方式创作Edge Delivery Services Forms：
+   * [WYSIWYG创作](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：使用通用编辑器创建可视、拖放的表单，非常适合技术知识有限的内容作者。 使用Universal Editor创作的Forms交付使用Edge Delivery Services，以实现快速、轻量级的渲染。
+   * [基于文档的创作](/help/edge/docs/forms/tutorial.md)：使用Microsoft Excel或Google Sheets等工具定义表单结构和内容。 此方法对于偏好使用电子表格驱动输入的业务用户非常有用。 这些表单通常通过Edge Delivery Services发布，适用于轻量、高容量的用例。
+* [Headless创作](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：使用API对任何前端(例如React、Angular、移动应用程序或信息亭)将表单渲染为JSON，而不依赖于AEM。 目前，仅核心组件支持Headless投放。 Headless表单非常适用于全渠道用例，并且在AEM页面渲染之外单独使用，使其灵活适用于自定义前端部署。
 
-## 自适应表单编辑器（用于核心组件或基于基础组件的创作）
+### AEM表单创作方法的比较分析
 
-您可以创建具有吸引力、响应性和动态性的表单。自适应表单编辑器提供了一个用户友好的向导，可让您快速创建自适应表单。表单向导具有简单的选项卡导航功能，使您能够为基础或核心组件、主题、数据模型和提交选项选择预配置模板，从而高效地创建表单。
+下&#x200B;表简要比较了各种AEM表单创作方法，重点介绍了方法、功能、发布选项和理想用例，以帮助您选择最符合自己需求的方法。
 
-[使用核心组件创作表单](/help/forms/creating-adaptive-form-core-components.md)可以利用可定制的标准化数据捕获组件，减少开发时间，降低维护成本，增强数字注册体验。这些表单可以使用 Edge Delivery Services 上的自适应表单区块或通过 AEM 发布实例进行发布。
+| **注意事项** | **基础组件** | **核心组件** | **通用编辑器(WYSIWYG)** | **基于文档的创作** | **Headless创作** |
+|--------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **适合** | 在AEM中维护旧版表单和工作流 | 具有复杂工作流和集成的可扩展现代表单 | 为具有复杂要求的Edge Delivery服务站点创建表单 | 无需高级提交服务的快速原型制作或基本表单 | 跨平台（Web、移动设备、网亭等）的全渠道体验 |
+| **用户专业知识** | 开发人员、内容作者 | 开发人员、高级作者 | 商业用户、内容作者 | 商业用户 | 开发人员 |
+| **表单复杂性** | 基本表单 | 具有动态部分的复杂表单 | 具有自定义操作的复杂表单 | 简单表单 | 高度复杂、API驱动的表单 |
+| **设计灵活性** | 有限 | 高（CSS/JS自定义） | 审核（基于模板） | 有限 | 高（前端框架控制） |
+| **集成功能** | 基本AEM工作流 | 高级（数据模型、工作流） | 与外部系统集成 | 基本(Google Sheets、Excel) | 通过API实现完全控制 |
+| **发布方式** | 仅限AEM | AEM 和 Edge Delivery Services | Edge Delivery Services | Edge Delivery Services | 通过API访问任何前端 |
+| **性能和SEO** | 标准 | 与基础组件相比有所改进 | Google Lighthouse得分较高，渲染速度更快，SEO更好 | Google Lighthouse得分较高，渲染速度更快，SEO更好 | 取决于实施 |
+| **全渠道投放** | 有限 | 审核 | 审核 | 有限 | 高 |
 
-[使用基础组件创作表单](/help/forms/create-an-adaptive-form.md) 使用的是经典的数据捕获组件。这些表单只能使用 AEM 发布实例发布。
+<!--
+| **Form authoring methods** | **Key Approach** | **Features** | **Publishing Method** | **Use Cases** |
+|-----------------------------|------------------|--------------|-----------------------|---------------|
+| **Foundation Components** | Classic AEM authoring interface designed for standard web pages. | Includes basic components like text, images, tables, and charts. Limited reuse capabilities and primarily web-based. | Published on AEM only. | Best for maintaining legacy forms and workflows within AEM. |
+| **Core Components** | Provides a modern, flexible approach with high customization capabilities. | Component-based authoring within AEM, offering high customization with CSS and JS. Built around accessibility guidelines and integrated with AEM Sites. | Published on AEM and Edge Delivery Services. | Suitable for scalable, modern forms with complex workflows and integrations. |
+| **Universal Editor (WYSIWYG)** | Offers a WYSIWYG interface for intuitive form creation. | Forms are designed using an intuitive drag-and-drop interface. These forms inherit look and feel from the configured Edge Delivery Services GitHub repository for the corresponding form. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for creating forms for Edge Delivery Service sites and pages, especially scenarios involving complex forms, workflows, custom actions, or integrations with external systems. |
+| **Document-based Authoring** | Uses familiar tools like Google Docs and Microsoft Office for form creation. | Forms are designed using spreadsheets, with data directly submitted to Google Sheets or Microsoft Excel. These forms are faster to create and deploy. No prior knowledge of AEM is required to develop custom components and styles for these forms. | Published on Edge Delivery Services, achieving high Google Lighthouse scores for faster rendering and better SEO. | Ideal for quick prototyping or basic forms where advanced submission services are not needed. Well-suited for surveys, registration, or feedback forms requiring data storage in spreadsheets. |
+| **Headless Authoring** | Enables API-driven content creation for omnichannel delivery. | Full control via frontend frameworks, allowing content delivery across various platforms through APIs. | Can be integrated with any frontend via APIs. | Ideal for omnichannel experiences across platforms, suitable for web, mobile, kiosks, and more. |-->
 
-您还可以在 AEM 环境和 Edge Delivery Services GitHub 存储库之间建立[连接后，在 Edge Delivery Services 上发布使用自适应表单编辑器创建的表单](/help/edge/docs/forms/publishing-forms.md)。
+### AEM表单创作方法的功能比较
 
-## 如何在不同类型的表单创作中进行选择？
+下表详细比较了不同AEM表单创作方法的主要功能，有助于您根据需求选择最合适的方法&#x200B;。
 
-下表概述了每个创作编辑器的功能和用例，帮助您根据自己的要求和表单提交需求选择合适的编辑器。
+| **功能** | **基础组件** | **核心组件** | **通用编辑器(WYSIWYG)** | **基于文档的创作** | **Headless创作** |
+|-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
+| **与站点的统一组合** | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **嵌入表单支持** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **规则（动态行为）** | 具有自定义函数的高级规则编辑器 | 具有自定义函数的高级规则编辑器 | 具有自定义函数的高级规则编辑器 | 有限：显示/隐藏、计算值、自定义函数 | 有限：需要自定义实施 |
+| **附件支持** | ✅ | ✅ | ✅ | ℹ️（早期访问） | ❌ |
+| **CAPTCHA支持** | reCAPTCHA v2/Enterprise、hCaptcha (EA)、Turnstile (EA) | reCAPTCHA v2/Enterprise、hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 需要自定义集成 |
+| **提交功能** | REST端点、电子邮件、表单数据模型(FDM)、调用AEM Workflow、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion (EA) | REST端点、电子邮件、表单数据模型(FDM)、调用AEM Workflow、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion (EA) | REST端点、电子邮件、表单数据模型(FDM)、调用AEM Workflow、SharePoint、OneDrive、Azure Blob Storage、Power Automate、Workfront Fusion (EA) | 仅限电子表格 | 自定义API端点 |
+| **数据架构** | FDM，自定义 | FDM，自定义 | FDM，自定义 | 自定义 | 自定义 |
+| **预填充** | ✅ | ✅ | ??（通过向导） | ✅ | 自定义实施 |
+| **片段** | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **可视规则编辑器** | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **本地化** | ✅ | ✅ | ??（通过Sites） | ℹ️(Excel — 手动， Google Sheets功能) | 自定义实施 |
+| **数据架构（数据树）** | ✅ | ✅ | ??（通过UI扩展） | ❌ | 自定义实施 |
+| **模板支持** | ✅ | ✅ | 仅初始内容，无策略 | ❌ | 自定义实施 |
+| **门户** | ✅ | ✅ | ❌ | ❌ | ❌ |
+| **DoR创作** | ✅ | ✅ | ??（经德里纳） | ❌ | ❌ |
+| **DoR生成** | ✅ | ✅ | ??(FORMS-2475新增) | ❌ | ❌ |
+| **主题** | ✅ | ✅ | ℹ️（项目级） | ℹ️（项目级） | 自定义实施 |
+| **自定义组件** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **OOTB和自定义函数** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **片段引用** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **签名集成** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **RTL支持** | ❌ | ✅ | ?? | ?? | 自定义实施 |
+| **试验** | ❌ | ❌ | ✅ | ✅ | 自定义实施 |
+| 通过Workfront进行&#x200B;**任务管理** | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **Personalization扩展** | ❌ | ❌ | ?? | ❌ | 自定义实施 |
+| **编辑器自定义** | ❌ | ❌ | ✅（通过UI扩展） | ❌ | 自定义实施 |
+| **提交操作** | ✅ | ✅ | ✅ | 仅限电子表格 | 自定义实施 |
 
-| **表单创作编辑器** | **关键方法** | **功能** | **发布方式** | **用例** |
-|--------|-----------|-------|-------|------------------------------------------------|
-| **基于文档的创作** | 利用熟悉的工具（如 Google Docs 和 Microsoft Office）来创建表单。 | 使用电子表格设计表单，数据直接提交到 Google Sheets 或 Microsoft Excel 工作表。</br> </br>这些表单的创建和部署速度更快。为这些表单开发自定义组件和样式不需要任何 AEM 知识。 | 这些表单发布在 Edge Delivery Services 上，在 Google Lighthouse 上得分非常高。</br> </br>高分可带来更快的渲染速度和更好的 SEO。 | 这些表单非常适合快速原型开发或不需要高级提交服务的基本表单。</br> </br>这些特点非常适合需要在电子表格中存储数据的调查、注册或反馈表单。这些表单发布在 Edge Delivery Services 上 |
-| **通用编辑器**</br> </br>如果要创建新表单，请使用通用编辑器来创建表单。 | 提供所见即所得的界面，用于直观的表单创建。 | 使用直观的拖放界面设计表单。</br> </br>这些表单借用了相应表单配置的 Edge Delivery Services GitHub 存储库外观。 | 这些表单发布在 Edge Delivery Services 上，在 Google Lighthouse 上得分非常高。</br> </br> 高分可带来更快的渲染速度和更好的 SEO。 | 这些表单非常适合创建 Edge Delivery Service 站点和页面表单。这些表单场景涉及复杂表单、复杂工作流、自定义操作或与外部系统集成 |
-| **自适应表单编辑器** | 提供向导驱动的方法，使用模板、样式和预定义字段快速开始表单创作。 | 使用这些编辑器来创建基于核心组件的表单或基于基础组件的表单。 | 这些表单可以在 Edge Delivery Services 上或通过 AEM 发布实例发布。 | 使用这些编辑器来创建基于核心组件的表单或基于基础组件的表单。非常适合涉及复杂表单、复杂工作流、自定义操作或与外部系统集成的场景。 |
-
-
->[!NOTE]
->
->
-> 如果发现通用编辑器中缺少自适应表单编辑器中以前提供的任何功能，可以使用您的官方电子邮件地址发送电子邮件至 aem-forms-ea@adobe.com 进行申请。
 
 ## 相关文章
 
@@ -69,7 +111,3 @@ Adobe Experience Manager 提供并支持多个编辑器来创作表单。您可�
 * [用于所见即所得创作的通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 * [创建自适应表单（基础组件）](/help/forms/creating-adaptive-form.md)
 * [创建自适应表单（核心组件）](/help/forms/create-an-adaptive-form.md)
-
-## 另请参阅
-
-{{see-more-forms-eds}}

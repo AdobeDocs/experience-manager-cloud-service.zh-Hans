@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.1.0 版�
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 93%
+source-wordcount: '1703'
+ht-degree: 92%
 
 ---
 
@@ -97,9 +97,6 @@ ht-degree: 93%
 
 * DASH 是自适应视频流式处理的国际标准协议，在业界得到广泛应用
 
-**资产关系**
-
-资产视图现在支持在简化的资产详细信息面板中查看和编辑资产关系。在内容中轻松添加来源和衍生等关系，以便用户可以更有效地找到相关的主要内容。
 
 **重新处理资产**
 
@@ -130,7 +127,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### [自适应Forms中的HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 自适应Forms中的[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 通过自适应Forms，您可以使用HTML电子邮件模板。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 

@@ -3,17 +3,19 @@ title: 如何创建表单片段用于进行基于所见即所得的创作
 description: 了解如何在通用编辑器中创建表单片段并将其添加到表单中。
 feature: Edge Delivery Services
 role: Admin, User, Developer
-hide: true
-hidefromtoc: true
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 615f4686fed0d17b7d7aa5cd86c545b11952d792
-workflow-type: ht
-source-wordcount: '1324'
-ht-degree: 100%
+source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 90%
 
 ---
 
-# 在通用编辑器中创建和使用 Edge Delivery Services 表单片段
+# 在通用编辑器中创建表单片段
+
+<span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
+
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
 
 表单通常包含联系方式、身份信息或同意协议等常见部分。表单开发人员每次生成新表单时都要创建这些部分，这是一项重复且耗时的工作。
 为了消除这种重复劳动，通用编辑器提供了一种方法，只需创建一次可重复使用的表单片段（如面板或字段组）即可在各种表单中重复使用它们。这些可重复使用的模块化独立片段称为表单片段。例如，相同的紧急联系方式片段可用于表单的不同部分，如员工和主管的联系方式。
@@ -22,8 +24,12 @@ ht-degree: 100%
 
 ## Edge Delivery Services 表单片段的功能
 
-* **使用表单片段保持一致性：**
-您可以将片段集成到不同的表单中，有助于保持一致的布局和标准化的内容。通过“一次更改，随处反映”的方法，对片段所做的任何更新都会自动应用于所有表单。
+* **与表单片段保持一致**
+您可以将片段集成到不同的表单中，从而帮助您保持一致的布局和标准化的内容。
+
+  >[!NOTE]
+  >
+  > 通过“更改一次，随处反映”方法，对片段所做的任何更新都会在预览模式下自动应用于所有表单。 但是，在发布模式下，必须发布片段或重新发布表单才能反映更改。
 
 * **在表单中多次添加表单片段：**
 您可以在一个表单中多次添加某个表单片段，并将其数据绑定属性配置为数据源或模式。
@@ -38,13 +44,13 @@ ht-degree: 100%
 ## 使用 Edge Delivery Services 表单片段时的考虑事项
 
 * 您需要将同一个 GitHub URL 添加到片段以及您打算使用该片段的表单中。
-* 您无法在表单内部编辑通过引用插入的表单片段。如要编辑，应更改该独立表单片段。
+* 您不能编辑表单中的表单片段。 要进行更改，请修改独立的表单片段。
 
-## 创建 Edge Delivery Services 表单片段的前提条件
+## 先决条件
 
 * [设置您的 GitHub 存储库](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)，以在您的 AEM 环境和 GitHub 存储库之间建立连接。
 * 如果您已经在使用 Edge Delivery Services，请将最新版本的 [Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) 添加到您的 GitHub 存储库。
-* AEM Forms 作者实例包含一个基于 Edge Delivery Services 的模板。确保您的环境中安装了[最新版本的核心组件](https://github.com/adobe/aem-core-forms-components)。
+* AEM Forms创作实例包括一个基于Edge Delivery Services的模板。
 * 保存 AEM Forms as a Cloud Service 作者实例的 URL 和您方便的 GitHub 存储库。
 
 ## 使用 Edge Delivery Services 表单片段
@@ -108,7 +114,7 @@ ht-degree: 100%
 
 ### 将表单片段添加到一个表单
 
-让我们创建一个简单的 `Employee Details` 表单，其中包含员工和主管信息。您可以在员工和主管面板中使用 `Contact Details` 片段。要在表单中使用表单片段，请执行以下步骤：
+让我们创建一个包含员工和主管信息的简单`Employee Details`表单。 您可以在员工和主管面板中使用 `Contact Details` 片段。要在表单中使用表单片段，请执行以下步骤：
 
 1. 在编辑模式下打开该表单。
 1. 将表单片段组件添加到表单。
@@ -132,7 +138,7 @@ ht-degree: 100%
 
 1. 单击&#x200B;**[!UICONTROL 选择]**。
 
-   表单片段通过引用添加到表单，并与独立表单片段保持同步。这意味着对该片段所做的任何更改都会反映在表单中包含了该片段的所有实例中。
+   该表单片段将引用该表单片段进行添加，并且保持与独立表单片段的同步。
 
    ![表单中的片段](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
