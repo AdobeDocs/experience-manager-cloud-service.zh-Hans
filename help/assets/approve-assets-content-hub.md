@@ -2,10 +2,10 @@
 title: 批准 Content Hub 的资产
 description: 了解如何在Assets as a Cloud Service中批准资源以使其在Content Hub中可用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 20%
+source-wordcount: '1276'
+ht-degree: 19%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 20%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ Assets as a Cloud Service中标记为`approved`的资源在Content Hub中自动�
 
 >[!NOTE]
 >
-Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Content Hub中显示资产。
+>Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Content Hub中显示资产。
 
 要使用AEM as a Cloud Service中的Assets视图将资源状态设置为`approved`，请执行以下操作：
 
@@ -98,6 +98,52 @@ Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Co
 1. 在右侧面板的[!UICONTROL 属性]部分，选择&#x200B;**[!UICONTROL 状态]**&#x200B;字段中的&#x200B;**[!UICONTROL 已批准]**。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
+
+## 设置审批目标 {#set-approval-target}
+
+通过Assets视图，您可以根据在“资源详细信息”页面上的&#x200B;**批准目标**&#x200B;字段中设置的值，使用OpenAPI功能和/或Content Hub将批准的资源发布到Dynamic Media。
+
+要设置审批目标，请执行以下操作：
+
+1. 选择资源并单击工具栏中的&#x200B;**[!UICONTROL 详细信息]**。
+
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 状态]**&#x200B;下拉列表中选择资源状态。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
+
+1. 如果您在步骤2中选择了&#x200B;**已批准**，请选择一个批准目标。 可能的值包括“交付”和“Content Hub”。
+
+   * **投放**&#x200B;是下拉菜单中的默认选项，如果将资产和[Dynamic Media均启用了Experience Manager Assets，则它将资产发布到[Content Hub](/help/assets/product-overview.md)和OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)。
+
+   * 选择&#x200B;**Content Hub**&#x200B;会将资源仅发布到Content Hub。 仅当Content Hub启用了Experience Manager Assets时，它才会显示为选项。
+
+   * 如果您未从下拉列表中选择选项，则为您的AEM as a Cloud Service环境启用的默认选项将自动应用于该资源。
+
+
+   有关可用选项的详细信息，请参阅[已批准资产的默认批准目标和发布目标](#default-approval-target-options-publish-destinations)。
+
+   >[!NOTE]
+   >
+   >设置批准目标是一项有限可用性功能。 您可以通过创建支持票证来启用或禁用它。 如果您已启用Dynamic Media并启用了OpenAPI，则默认情况下会启用它。
+
+   ![审批状态](/help/assets/assets/approval-status-delivery.png)
+
+1. 指定其他资源属性，然后单击&#x200B;**[!UICONTROL 保存]**。
+
+其他需要注意的要点包括：
+
+* 当您未使用默认元数据表单且无法查看&#x200B;**[!UICONTROL 批准目标]**&#x200B;字段时，[编辑您的元数据表单](/help/assets/metadata-assets-view.md#metadata-forms)以将&#x200B;**[!UICONTROL 批准]**&#x200B;字段从可用组件拖到您的元数据表单中，然后单击&#x200B;**[!UICONTROL 保存]**。
+
+* 当您使用Assets视图将审批目标选择为`Content Hub`时，Content Hub中的资源将可供属于同一组织的用户使用。
+
+### 已批准资产的默认批准目标和发布目标 {#default-approval-target-options-publish-destinations}
+
+下表说明了显示`Approval Target`下拉列表和默认批准目标(基于您的AEM as a Cloud Service环境中使用OpenAPI和Content Hub启用DM)的先决条件：
+
+| 带OpenAPI的Dynamic Media | Content Hub | 是否显示批准目标下拉列表？ | 已批准资产的默认审批目标 | 发布目标 |
+| --- | --- | --- | --- |---|
+| 已启用 | 已启用 | 是 | 交付 | 包含OpenAPI和Content Hub的Dynamic Media |
+| 未启用 | 已启用 | 是 | Content Hub | Content Hub |
+| 已启用 | 未启用 | 是 | 交付 | 带OpenAPI的Dynamic Media |
+| 未启用 | 未启用 | 否 | 不适用 | 不适用 |
 
 ## 在管理员视图中自动审批新摄取的资产 {#automate-approval-newly-ingested-assets}
 
@@ -135,7 +181,7 @@ Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Co
 
 >[!NOTE]
 > 
-此方法可批准文件夹中新创建的资产。 对于文件夹中的现有资源，您需要手动选择并批准它们。
+>此方法可批准文件夹中新创建的资产。 对于文件夹中的现有资源，您需要手动选择并批准它们。
 
 ## 管理使用Content Hub上传的资源 {#manage-assets-uploaded-using-content-hub}
 

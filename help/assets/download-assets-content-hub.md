@@ -3,10 +3,10 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载资源
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 8%
+source-wordcount: '938'
+ht-degree: 10%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 8%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@ Content Hub允许您下载和共享资源。 Content Hub用户界面仅显示批
 
    >[!NOTE]
    >
-   * 仅当使用[配置](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)用户界面启用呈现版本的可见性时，才会显示呈现版本。
-   * 您可以在下载资源时下载所有[静态、动态和智能裁剪演绎版](#types-of-renditions)。
+   >* 仅当使用[配置](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)用户界面启用呈现版本的可见性时，才会显示呈现版本。
+   >* 您可以在下载资源时下载所有[静态、动态和智能裁剪演绎版](#types-of-renditions)。
 
 1. 选择一个或多个呈现版本并单击&#x200B;**[!UICONTROL 下载]**。
 
@@ -86,7 +86,7 @@ Content Hub允许您下载和共享资源。 Content Hub用户界面仅显示批
 
 >[!NOTE]
 >
-有权访问[具有开放API功能的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)的用户可以查看和下载动态和智能裁剪演绎版。
+> 有权访问[具有开放API功能的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)的用户可以查看和下载动态和智能裁剪演绎版。
 
 ## 下载多个资产及其演绎版 {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Content Hub允许您下载和共享资源。 Content Hub用户界面仅显示批
 
      >[!NOTE]
      >
-     * 仅当使用[配置](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)用户界面启用呈现版本的可见性时，才会显示呈现版本。
-     * 下载多个资源时，只能下载[静态呈现版本](#types-of-renditions)。
+     >* 仅当使用[配置](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)用户界面启用呈现版本的可见性时，才会显示呈现版本。
+     >* 下载多个资源时，只能下载[静态呈现版本](#types-of-renditions)。
 
    如果任何选定资产是已许可资产，请单击左窗格中的资产许可证以查看其预览，该预览可让您选择&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后单击&#x200B;**[!UICONTROL 下载]**。 仅当使用Assets as a Cloud Service创作环境批准了资源时，才会显示许可证预览。 如需了解更多信息，请参阅[管理 Content Hub 上的已授予许可资源](/help/assets/manage-licensed-assets-on-content-hub.md)。
 
@@ -153,17 +153,35 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [静态演绎版](/help/assets/renditions.md#static-renditions)：静态演绎版是数字资源的预创建版本，通常在资源摄取或修改期间生成。 它们针对特定用途和平台进行了优化，例如Web缩略图、适用于响应式设计的移动友好格式，或适用于打印的高分辨率文件，从而提供简化且一致的体验。
 
-* [动态演绎版](/help/assets/renditions.md#dynamic-renditions)：动态演绎版是资产的实时、自定义版本，可执行各种操作，例如根据不同的设备分辨率调整图像大小或裁剪以适合各种长宽比。 这些演绎版允许您提供个性化和优化的体验，以满足更广泛的需求。 已在[!DNL Adobe Experience Manager Assets]创作环境中创建资源的动态演绎版。
+* [动态演绎版](/help/assets/renditions.md#dynamic-renditions)：动态演绎版是资产的实时、自定义版本，可执行各种操作，例如根据不同的设备分辨率调整图像大小或裁剪以适合各种长宽比。 这些演绎版允许您提供个性化和优化的体验，以满足更广泛的需求。 已在[!DNL Adobe Experience Manager Assets]创作环境中创建资源的动态演绎版。 有关启用动态呈现所需的步骤的信息，请参阅[启用动态呈现](#enable-dynamic-media-renditions)。
 
 * [智能裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智能裁切在裁切过程中仅专注于资源的重要部分。 适用于的Dynamic Media智能裁剪利用由Adobe Sensei提供的人工智能来跟踪目标点，确保我们的资源在所有屏幕大小上都具有最佳外观。 [!DNL Adobe Experience Manager]智能裁剪显示资源演绎版的宽度和高度以及标题。 请参阅[在AEM Assets Dynamic Media中使用智能裁剪](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)以了解详情。
 
+  智能裁剪呈现版本会显示，并且仅在您有权访问具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)时才可供下载。 智能裁剪演绎版仅适用于图像资源。
+
   ![节目类型](/help/assets/assets/renditions-types.png)
 
+### 启用动态呈现版本 {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* 动态和智能裁剪呈现版本功能处于早期采用者阶段。 要访问该功能，请[创建并提交Adobe客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
-* [Dynamic Media Open API服务](/help/assets/dynamic-media-open-apis-overview.md)上新加入的客户必须修改其现有图像预设以供审批。
+要启用动态呈现版本，请执行以下操作：
+
+1. 确保您有权访问具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)。
+
+   一旦您有权访问具有OpenAPI功能的Dynamic Media，则所有标记为`Approved`的资源都可用于Dynamic Media的公开交付。
+
+1. 将资源的[审批目标](/help/assets/approve-assets-content-hub.md#set-approval-target)设置为Content Hub以仅审批Content Hub的资源。
+
+1. 启用[配置](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)用户界面的&#x200B;**[!UICONTROL 呈现版本]**&#x200B;选项卡中提供的&#x200B;**[!UICONTROL 启用呈现版本可用性]**&#x200B;切换开关。
+
+1. 重新保存现有的图像预设，以使其在Content Hub上可用。 它仅适用于通过OpenAPI新载入到Dynamic Media的情况。
+
+   要重新保存现有的图像预设，请导航到“管理员”视图，然后选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**。 选择预设，单击&#x200B;**[!UICONTROL 编辑]**，然后单击&#x200B;**[!UICONTROL 保存]**。
+
+
+
+   >[!NOTE]
+   > 
+   > 动态演绎版仅适用于图像资源。
 
 
 
