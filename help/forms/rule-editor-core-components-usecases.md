@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%
@@ -31,7 +31,8 @@ ht-degree: 0%
 
 单击&#x200B;**下一步**&#x200B;按钮时，将验证&#x200B;**个人信息**&#x200B;面板。 如果输入的详细信息正确，则焦点将转移到&#x200B;**帐户安全**&#x200B;面板；否则，将显示一条错误消息，提示您填写缺少的详细信息。
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## 使用按钮在面板之间导航
 
