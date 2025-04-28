@@ -4,7 +4,7 @@ description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
+source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3165'
 ht-degree: 1%
@@ -72,6 +72,9 @@ ht-degree: 1%
 >[!NOTE]
 >
 >订阅增强安全性SKU的客户无法在该云服务计划中使用任何[!DNL Dynamic Media]功能，包括[!DNL Dynamic Media]模板。
+
+在此视频中了解如何分步创建[!DNL Dynamic Media]模板。
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## 开始之前{#prerequisites-for-dynamic-media-wysiwyg-template}
 
@@ -284,9 +287,6 @@ ht-degree: 1%
 1. 单击&#x200B;**[!UICONTROL 复制URL]**。 将显示&#x200B;**[!UICONTROL 复制URL]**&#x200B;对话框。 选择并复制显示的URL。 URL中的第一个参数在问号&#x200B;**([!UICONTROL ？])**&#x200B;和一个键值对以&#x200B;**[!UICONTROL $]**&#x200B;开头，以&#x200B;**[!UICONTROL &amp;]**&#x200B;结尾。 键和值用等号&#x200B;**([!UICONTROL =])**&#x200B;分隔，键在左侧，值在右侧。
 1. 将此URL粘贴到浏览器选项卡中，并查看您的实时模板。 通过直接更新URL中所需参数的值（键值）实时自定义模板，如&#x200B;**预览和发布**&#x200B;部分的[步骤2](#preview-and-publish-template-and-copy-template-deliver-url)所示。
 1. 使用此URL快速推销您的产品或服务。 您可以与客户共享此URL，或将其集成到您的网站或任何下游第三方应用程序，以显示横幅并实时更新以反映持续优惠。
-
-在此视频中了解如何分步创建[!DNL Dynamic Media]模板。
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## 从URL实时更新模板{#update-the-template-from-the-url}
 
