@@ -4,9 +4,9 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1500'
 ht-degree: 11%
 
 ---
@@ -703,12 +703,7 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
 
 #### 富文本 {#rich-text}
 
-富文本允许多行、富文本输入。 它提供了其他验证类型。
-
-| 验证类型 | 值类型 | 描述 | 必填 |
-|---|---|---|---|
-| `maxSize` | `number` | 允许的最大字符数 | 否 |
-| `customErrorMsg` | `string` | 超过`maxSize`时将显示的消息 | 否 |
+富文本允许多行、富文本输入。
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB 示例2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
