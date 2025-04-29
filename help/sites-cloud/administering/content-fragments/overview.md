@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 85%
+source-wordcount: '1977'
+ht-degree: 86%
 
 ---
 
 # 使用内容片段概述 {#overview-working-with-content-fragments}
-
->[!IMPORTANT]
->
->内容片段和内容片段模型的各种功能可通过早期采用者计划获得。
->
->要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 通过Adobe Experience Manager (AEM) as a Cloud Service，内容片段允许您设计、创建、管理和发布独立于页面的内容。 它们允许您准备内容以准备在多个位置和多个渠道上使用，非常适合[Headless投放](/help/headless/what-is-headless.md)和[页面创作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
@@ -291,7 +285,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
-* [资源](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+* [资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 * 有一批[键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)在此控制台中可用
 

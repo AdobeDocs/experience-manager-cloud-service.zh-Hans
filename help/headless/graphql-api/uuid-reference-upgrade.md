@@ -3,26 +3,21 @@ title: 升级您的内容片段以获取UUID引用
 description: 了解如何在Adobe Experience Manager as a Cloud Service中升级内容片段以优化UUID引用，从而提供Headless内容。
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5aa04f3b042f8e9f9af97148ceab0288ff210238
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1123'
 ht-degree: 2%
 
 ---
 
 # 升级您的内容片段以获取UUID引用 {#upgrade-content-fragments-for-UUID-references}
 
->[!IMPORTANT]
->
->与内容片段一起使用的GraphQL API的各种功能可通过早期采用者计划获取。
->
->要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
-
 为了优化GraphQL过滤器的稳定性，您可以升级内容片段中的内容和片段引用，以便它们使用通用唯一标识符(UUID)。
 
 内容片段模型最初提供了&#x200B;**内容引用**&#x200B;和&#x200B;**片段引用**&#x200B;的数据类型。 这两个引用都使用路径指向引用的资源，如果移动该资源，此路径可能会过期。 尽管此类引用在大多数情况下已经远远不够，但内容片段模型已得到扩展，还可根据UUID提供引用：
 
-* **内容引用(UUID)**
+* **内容引用（UUID）**
 * **片段引用(UUID)**。
 
 这些新引用类型既可用于新内容片段模型，也可用于扩展现有实例。
@@ -76,7 +71,7 @@ ht-degree: 2%
    * 无法通过OpenAPI创建具有内容片段UUID或内容引用UUID字段的新内容片段模型。
    * 模型的`id`字段尚未更改为基于UUID。 它使用模型的base64解码路径。 无法移动模型，因此，该值仍保持稳定。
 
-* 资源
+* 资产
 
    * 在通过OpenAPI创建内容片段时，`fragment-reference`或`content-reference`字段类型必须用于分别指定对片段或资产的引用 — 即使设置基于UUID的引用字段的值时也是如此。
 

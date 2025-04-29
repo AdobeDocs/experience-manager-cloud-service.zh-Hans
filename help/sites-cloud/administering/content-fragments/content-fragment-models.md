@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 64%
+source-wordcount: '2230'
+ht-degree: 67%
 
 ---
 
 # 定义内容片段模型 {#defining-content-fragment-models}
-
->[!IMPORTANT]
->
->内容片段模型的各种功能可通过早期采用者计划获得。
->
->要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)的内容结构。随后可使用这些片段创作页面或作为 Headless 内容的基础。
 
@@ -131,13 +125,13 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
       * 根据相应的模型创建新内容片段
       * 创建字段的新实例
    * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
-* **片段引用(UUID)**
+* **片段引用（UUID）**
    * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
    * 数据类型可配置为允许片段作者执行以下操作：
       * 直接编辑引用的片段。
       * 根据相应的模型创建新内容片段
       * 创建字段的新实例
-   * 在编辑器中，引用指定被引用资源的路径；在内部，引用作为引用该资源的通用唯一ID (UUID)来保存
+   * 在编辑器中，引用的作用是指定被引用资源的路径。在内部，引用被视为引用资源的通用唯一 ID（UUID）
       * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的片段
 
 * **内容引用**
@@ -145,11 +139,11 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 如果图像被引用，您可以选择显示缩略图
    * 字段可以配置为允许片段作者创建新字段实例
    * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
-* **内容引用(UUID)**
+* **内容引用（UUID）**
    * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
    * 如果图像被引用，您可以选择显示缩略图
    * 字段可以配置为允许片段作者创建新字段实例
-   * 在编辑器中，引用指定被引用资源的路径；在内部，引用作为引用该资源的通用唯一ID (UUID)来保存
+   * 在编辑器中，引用的作用是指定被引用资源的路径。在内部，引用被视为引用资源的通用唯一 ID（UUID）
       * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的资源资源
 
 * **JSON 对象**
