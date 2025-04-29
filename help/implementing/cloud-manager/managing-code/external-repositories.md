@@ -3,9 +3,9 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badgePremium: label="率先采用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
+badge: label="率先采用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ce6ddc47109e0e2ae6a11682122a30f1f679e349
+source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
 workflow-type: tm+mt
 source-wordcount: '1871'
 ht-degree: 27%
