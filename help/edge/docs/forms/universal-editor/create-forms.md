@@ -4,10 +4,10 @@ description: 本文介绍了如何通过在“表单创建向导”中选择基�
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
+source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 28%
+source-wordcount: '1626'
+ht-degree: 29%
 
 ---
 
@@ -97,13 +97,13 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
 1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。向导随即打开。
 1. 在&#x200B;**Source**&#x200B;选项卡中，选择基于&#x200B;**核心组件的模板**&#x200B;和&#x200B;**主题**，已启用&#x200B;**[!UICONTROL 创建]**&#x200B;按钮：
 
-基于![核心组件的模板](/help/forms/assets/core-component-based-template.png)
+   基于![核心组件的模板](/help/forms/assets/core-component-based-template.png)
 
 1. （可选）在&#x200B;**[!UICONTROL 数据源]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中，您可以选择数据源或提交操作。
 1. （可选）在&#x200B;**[!UICONTROL 投放]**&#x200B;选项卡中，您可以为表单指定发布或取消发布日期。
 1. 单击&#x200B;**[!UICONTROL 创建]**，将显示&#x200B;**创建表单**&#x200B;向导：
    1. 指定&#x200B;**名称**&#x200B;和&#x200B;**标题**。
-   2. 在&#x200B;**路径**&#x200B;字段中指定保存自适应表单的位置。
+   1. 在&#x200B;**路径**&#x200B;字段中指定保存自适应表单的位置。
 
    ![创建表单向导](/help/forms/assets/create-cc-form.png)
 
@@ -174,30 +174,30 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
 执行以下步骤以创建Edge Delivery Services配置：
 
 >[!BEGINTABS]
->[!TAB 对于使用基于Edge Delivery Services的模板创建的表单]
+>[!TAB 基于Edge Delivery Services的模板]
 
 
 在表单的配置容器中，会自动创建基于Edge Delivery Services模板的表单的Edge Delivery Services配置。
 
 ![Edge Delivery Services配置](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB 对于使用基于核心组件的模板创建的表单]
+>[!TAB 基于核心组件的模板]
 
 1. 导航至 AEM Forms as a Cloud Service 作者实例上的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Edge Delivery Services 配置]**。
 
    ![选择Edge Delivery Services配置](/help/edge/assets/select-eds-conf.png)
 
-1. 选择与表单名称匹配的文件夹。例如，如果您的表单名为`enrollment-form`，请选择文件夹`forms/enrollment-form`并单击&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 配置]**：
+2. 选择与表单名称匹配的文件夹。例如，如果您的表单名为`enrollment-form`，请选择文件夹`forms/enrollment-form`并单击&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 配置]**：
 
    ![Edge Delivery Services配置](/help/forms/assets/create-eds-conf.png)
 
-1. 单击&#x200B;**[!UICONTROL Edge Delivery Services配置]**，然后单击&#x200B;**[!UICONTROL 属性]**&#x200B;以打开属性：
+3. 单击&#x200B;**[!UICONTROL Edge Delivery Services配置]**，然后单击&#x200B;**[!UICONTROL 属性]**&#x200B;以打开属性：
 
    ![自动创建的配置](/help/forms/assets/eds-conf.png)
 
    此时将显示Edge Delivery Services配置。
 
-1. 在Edge Delivery Services配置中指定以下内容：
+4. 在Edge Delivery Services配置中指定以下内容：
 
    * **组织**：指定您的GitHub组织名称。
 
@@ -206,7 +206,7 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
    * **（可选） Edge Host**：保留Edge Host选项。 表单会发布到预览(.page)和实时(.live)环境。
    * **（可选）站点身份验证令牌**：使用站点身份验证令牌安全地对AEM实例和Edge Delivery Services之间的请求进行身份验证。
 
-1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。将创建配置。
+5. 选择&#x200B;**[!UICONTROL 保存并关闭]**。将创建配置。
 
 >[!ENDTABS]
 
@@ -254,7 +254,7 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
 以下屏幕截图比较了暂存表单URL和实时表单URL，以及使用基于Edge Delivery Services和基于核心组件的模板创建的表单的可视化预览：
 
 >[!BEGINTABS]
->[!TAB 访问使用基于Edge Delivery Services的模板创建的表单]
+>[!TAB 基于Edge Delivery Services的模板]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -275,7 +275,7 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
     </tbody>
   </table>
 
->[!TAB 访问使用基于核心组件的模板创建的表单]
+>[!TAB 基于核心组件的模板]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
