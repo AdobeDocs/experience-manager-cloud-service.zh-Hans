@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 27%
+source-wordcount: '2356'
+ht-degree: 26%
 
 ---
 
@@ -139,6 +139,12 @@ Cloud上的Interactive Communications是一款功能强大的解决方案，可�
 * 管理数据驱动交互式信函的创建、汇编和交付
 
 准备好开始了吗？ 可通过提前访问程序找到交互式通信编辑器，以进行Forms as a Cloud Service部署。 若要请求访问，请将您的组织ID和计划详细信息通过电子邮件从您的官方地址发送到[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
+
+### AEM Forms与Adobe Experience Platform (AEP)的集成
+
+您可以将AEM Forms与Adobe Experience Platform (AEP)连接起来，以利用客户配置文件和数据实现个性化的表单体验，并根据表单提交触发下游工作流。 通过将表单数据直接发送到AEP数据集，您可以丰富客户档案，并更深入地了解用户交互。
+
+准备好开始了吗？ [了解有关将AEM Forms与Adobe Experience Platform (AEP)集成的更多信息](/help/forms/aem-forms-aep-connector.md)。
 
 ## 其他早期访问创新
 
