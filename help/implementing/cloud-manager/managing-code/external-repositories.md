@@ -5,14 +5,14 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="率先采用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
+source-git-commit: d7278834cf5704d1b54d5713df22a7a980c78457
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1870'
 ht-degree: 27%
 
 ---
 
-# 在Cloud Manager中添加外部存储库 — 早期采用者 {#external-repositories}
+# 在 Cloud Manager 中添加外部存储库 {#external-repositories}
 
 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 
