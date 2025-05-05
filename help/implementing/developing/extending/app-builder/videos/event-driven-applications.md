@@ -22,10 +22,10 @@ ht-degree: 0%
 
 了解关于事件驱动型架构、Adobe I/O事件和自定义事件的信息。
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343683/?quality=12&learn=on&captions=chi_hans)
 
 ## 构建事件驱动的App Builder应用程序
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343690/?quality=12&learn=on&captions=chi_hans)
 
 了解如何构建发布可使用App Builder应用程序中的事件。

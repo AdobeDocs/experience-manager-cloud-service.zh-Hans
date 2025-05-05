@@ -32,7 +32,7 @@ Repository Modernizer通过创建以下部署结构来创建兼容的AEM Cloud S
 
 ## 使用存储库现代化器 {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412957/?quality=12&learn=on&captions=chi_hans)
 
 * 通过Adobe I/OCLI ：Adobe建议通过`aio-cli-plugin-aem-cloud-service-migration` (用于Adobe I/OCLI的AEM as a Cloud Service代码重构插件)使用Repository Modernizer。
 

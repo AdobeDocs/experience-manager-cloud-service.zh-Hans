@@ -30,7 +30,7 @@ Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager �
 
 本视频系列假定您具有 Git 和源代码控制管理的基本知识。 有关 Git 的更多详细信息，请参阅[以下附加资源](#additional-resources)。
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/31239?captions=chi_hans)
 
 本视频系列中概述的步骤和命名惯例代表了有关使用 Cloud Manager 中客户管理的 Git 存储库一些最佳实践。预计所描述的惯例和工作流适用于各个用例。
 
@@ -38,31 +38,31 @@ Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager �
 
 在本视频中，了解将客户管理的 Git 存储库与 Cloud Manager 的 Git 存储库同步的第一步。
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31238/?quality=12&captions=chi_hans)
 
 ## 基本分支策略 {#branching-strategy}
 
 在本视频中，了解基本分支策略。
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31237/?quality=12&captions=chi_hans)
 
 ## 功能分支开发 {#feature-development}
 
 使用功能分支隔离客户管理的 Git 存储库中的代码更改，并与 Cloud Manager 的 Git 存储库同步，以便使用非生产管道进行代码质量和验证测试。
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31236/?quality=12&captions=chi_hans)
 
 ## 生产部署 {#production-deployment}
 
 在客户管理的 Git 存储库中为生产版本准备代码，并与 Cloud Manager 的 Git 存储库同步，以便部署到暂存和生产环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31235/?quality=12&captions=chi_hans)
 
 ## 同步版本标记 {#sync-tags}
 
 将 Cloud Manager Git 存储库中的版本标记同步到客户管理的 Git 存储库中，以便公开已将哪些代码部署到暂存和生产环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31234/?quality=12&captions=chi_hans)
 
 ## 其他资源 {#additional-resources}
 

@@ -41,7 +41,7 @@ ht-degree: 94%
 
 以下视频高度概述了如何将代码部署到 AEM as a Cloud Service：
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/32908?quality=9&captions=chi_hans)
 
 <!--
 >[!NOTE]

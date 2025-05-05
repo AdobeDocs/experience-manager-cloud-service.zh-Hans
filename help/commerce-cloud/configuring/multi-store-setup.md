@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) CIF核心组件可用于多个AEM站点结构，�
 
 视频演练，详细介绍用于将多个Adobe Commerce Store视图与Adobe Experience Manager Sites集成的选项。
 
->[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/32824/?quality=12&captions=chi_hans)
 
 Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration framework配合使用，以全局方式跨地区和区域管理站点。
 

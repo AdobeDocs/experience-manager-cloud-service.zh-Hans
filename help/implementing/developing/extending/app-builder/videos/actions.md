@@ -22,22 +22,22 @@ ht-degree: 0%
 
 了解Adobe I/O Runtime、操作以及如何创建操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343385/?quality=12&learn=on&captions=chi_hans)
 
 ## 激活、顺序、触发器和规则
 
 了解操作如何与激活、Web操作、触发器和规则相关联。
 
->[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343395/?quality=12&learn=on&captions=chi_hans)
 
 ## App Builder应用程序中的操作
 
 了解如何创建可作为App Builder应用程序使用的操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343390/?quality=12&learn=on&captions=chi_hans)
 
 ## 创建操作
 
 了解如何创建App Builder操作。
 
->[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343400/?quality=12&learn=on&captions=chi_hans)

@@ -33,7 +33,7 @@ ht-degree: 81%
 
 请查看 2022 年 7 月发布概述视频，了解 2022.7.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3454206/?quality=12&captions=chi_hans)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

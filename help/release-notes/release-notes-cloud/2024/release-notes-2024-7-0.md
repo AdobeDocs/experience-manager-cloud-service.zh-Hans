@@ -37,7 +37,7 @@ ht-degree: 82%
 
 请观看 2024 年 7 月发布概述视频，大致了解 2024.7.0 版本中的新增功能：
 
->[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3432549?quality=12&captions=chi_hans)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

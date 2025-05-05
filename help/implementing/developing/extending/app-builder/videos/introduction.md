@@ -22,22 +22,22 @@ ht-degree: 100%
 
 了解 App Builder、其功能以及 App Builder 带来的商业价值。
 
->[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342921/?quality=12&learn=on&captions=chi_hans)
 
 ## Touchpoints
 
 了解最终用户如何与 App Builder SPA 交互，以及开发人员可在何处了解 App Builder 开发。
 
->[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342913/?quality=12&learn=on&captions=chi_hans)
 
 ## 架构
 
 了解 App Builder 的应用程序架构及其优势。
 
->[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342906/?quality=12&learn=on&captions=chi_hans)
 
 ## 商业价值和用例
 
 了解 App Builder 的设计原则和常见用例。
 
->[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342900/?quality=12&learn=on&captions=chi_hans)

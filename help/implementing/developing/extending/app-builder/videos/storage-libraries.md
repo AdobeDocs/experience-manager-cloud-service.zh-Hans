@@ -22,16 +22,16 @@ ht-degree: 0%
 
 了解App Builder存储选项以及为什么存储在App Builder应用程序中很重要。
 
->[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343545/?quality=12&learn=on&captions=chi_hans)
 
 ## 使用状态存储库
 
 了解如何在App Builder应用程序中安装状态存储库并使用它来管理状态。
 
->[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343551/?quality=12&learn=on&captions=chi_hans)
 
 ## 使用文件存储库
 
 了解如何在App Builder应用程序中安装文件存储库，以保存、检索和删除数据。
 
->[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343558/?quality=12&learn=on&captions=chi_hans)

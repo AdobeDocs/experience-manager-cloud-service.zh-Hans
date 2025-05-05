@@ -22,22 +22,22 @@ ht-degree: 0%
 
 了解创建您的第一个App Builder项目的基础知识。
 
->[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342301/?quality=12&learn=on&captions=chi_hans)
 
 ## 设置本地开发环境
 
 了解如何为App Builder开发设置本地环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342277/?quality=12&learn=on&captions=chi_hans)
 
 ## 初始化您的第一个项目
 
 了解如何初始化App Builder项目。
 
->[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342242/?quality=12&learn=on&captions=chi_hans)
 
 ## 构建、运行和测试您的应用程序
 
 了解如何构建、运行和测试App Builder应用程序。
 
->[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342229/?quality=12&learn=on&captions=chi_hans)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解Adobe Runtime操作安全性、用户以及AppBuilder身份验证和授权。
 
->[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343296/?quality=12&learn=on&captions=chi_hans)

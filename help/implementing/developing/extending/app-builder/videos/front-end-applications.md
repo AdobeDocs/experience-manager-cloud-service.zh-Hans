@@ -22,10 +22,10 @@ ht-degree: 0%
 
 了解关于前端App Builder应用程序的更多信息，包括项目初始化选项和Adobe Spectrum。
 
->[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346313/?quality=12&learn=on&captions=chi_hans)
 
 ## 构建前端App Builder应用程序
 
 了解如何使用应用程序中的React和Adobe Runtime操作构建前端App Builder应用程序。
 
->[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409735/?quality=12&learn=on&captions=chi_hans)

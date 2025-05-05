@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解部署对App Builder意味着什么，以及如何使用Adobe I/O CLI部署App Builder应用程序。
 
->[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343289/?quality=12&learn=on&captions=chi_hans)
