@@ -135,4 +135,4 @@ ht-degree: 3%
 
 ## 后续内容 {#whats-next}
 
-现在，您已了解如何为项目创建和管理显示，接下来应该通过查看文档[将渠道分配到Screens中的显示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html)，继续您的Screensas a Cloud Service之旅as a Cloud Service。
+现在，您已了解如何为项目创建和管理显示，接下来应该通过查看文档[将渠道分配到Screens中的显示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=zh-Hans)，继续您的Screensas a Cloud Service之旅as a Cloud Service。

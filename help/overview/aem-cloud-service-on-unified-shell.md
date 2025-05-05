@@ -60,7 +60,7 @@ AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用
 
 ## 识别 AEM as a Cloud Service 环境 {#identify-aemaacs-environment}
 
-AEM as a Cloud Service 提供三种类型的环境：“生产”、“暂存”和“开发”。有关更多详细信息，请参阅[环境类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。与 Unified Shell 进行这种集成后，将通过下方所示的标签在顶部标题上显示用户在 Author 服务上登录到的环境的类型。
+AEM as a Cloud Service 提供三种类型的环境：“生产”、“暂存”和“开发”。有关更多详细信息，请参阅[环境类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)。与 Unified Shell 进行这种集成后，将通过下方所示的标签在顶部标题上显示用户在 Author 服务上登录到的环境的类型。
 
 ![图像](/help/overview/assets/unifiedshell_header_label.png)
 

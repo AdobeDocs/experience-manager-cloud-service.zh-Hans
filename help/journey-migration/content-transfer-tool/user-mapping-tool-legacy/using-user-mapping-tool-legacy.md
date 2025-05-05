@@ -97,7 +97,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 用户映射完成后，您可以使用痕迹导航导航导航返回内容迁移页面。 用户映射信息卡显示状态和时间戳。 单击&#x200B;**内容传输**，以便创建迁移集以运行提取。 有关详细信息，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
+   >* 用户映射完成后，您可以使用痕迹导航导航导航返回内容迁移页面。 用户映射信息卡显示状态和时间戳。 单击&#x200B;**内容传输**，以便创建迁移集以运行提取。 有关详细信息，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#running-tool)。
 
 ### 恢复用户映射过程 {#resume-user-mapping-process}
 

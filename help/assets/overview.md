@@ -99,7 +99,7 @@ Edge Delivery 使您可快速创建吸引人的网站，作者从中可快速地
 
 ## 与 Adobe Journey Optimizer 集成 {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 简化了客户的历程管理，利用智能决策和见解为客户提供全渠道营销活动。在使用 Journey Optimizer 设计消息时，您可以直接从 Journey Optimizer 界面中访问 Assets as a Cloud Service 存储库。用户可以使用 Experience Manager Assets 的嵌入式用户界面访问资源。有关更多信息，请参阅[使用 Experience Manager Assets 创建和管理资源](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html)。
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 简化了客户的历程管理，利用智能决策和见解为客户提供全渠道营销活动。在使用 Journey Optimizer 设计消息时，您可以直接从 Journey Optimizer 界面中访问 Assets as a Cloud Service 存储库。用户可以使用 Experience Manager Assets 的嵌入式用户界面访问资源。有关更多信息，请参阅[使用 Experience Manager Assets 创建和管理资源](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=zh-Hans)。
 
 ## 新 Assets 功能 {#whats-new-assets}
 

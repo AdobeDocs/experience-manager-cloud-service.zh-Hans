@@ -27,7 +27,7 @@ ht-degree: 0%
 1. 在Screens Content Provider中导航到您的渠道。
 
    >[!NOTE]
-   >有关更多详细信息，请参阅[使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider)。
+   >有关更多详细信息，请参阅[使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hans#screens-content-provider)。
 
 1. 单击左侧导航栏中的“工具”部分，然后单击&#x200B;**Assets**，然后单击&#x200B;**处理配置文件**。
 

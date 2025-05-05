@@ -23,7 +23,7 @@ ht-degree: 6%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 已将切换添加到内容传输工具中的提取阶段，以允许用户在提取期间禁用[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)。 为获得最佳提取速度，对于小型迁移集或如果自上次提取以来只添加了少量Blob，则应禁用提取期间的预复制。
+* 已将切换添加到内容传输工具中的提取阶段，以允许用户在提取期间禁用[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hans)。 为获得最佳提取速度，对于小型迁移集或如果自上次提取以来只添加了少量Blob，则应禁用提取期间的预复制。
 
 ### 错误修复 {#bug-fixes-ctt}
 

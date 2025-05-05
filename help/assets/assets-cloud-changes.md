@@ -88,18 +88,18 @@ ht-degree: 10%
 
 | 功能或用例 | [!DNL Experience Manager]中作为[!DNL Cloud Service]的状态 | 评论 |
 |-----|-----|-----|
-| [重复资产检测](/help/assets/detect-duplicate-assets.md) | 但效果有所不同 | 查看[它在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/duplicate-detection)中的工作方式。 |
+| [重复资产检测](/help/assets/detect-duplicate-assets.md) | 但效果有所不同 | 查看[它在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/managing/duplicate-detection)中的工作方式。 |
 | [仅用于置入(FPO)的演绎版](/help/assets/configure-fpo-renditions.md) | 但效果有所不同 | 处理配置文件使用资产微服务生成FPO演绎版。 在Experience Manager 6.5中，有第三方解决方案（如[!DNL ImageMagick]）可用于生成演绎版。 |
 | 元数据写回 | 但效果有所不同 | 默认禁用。 如果需要，请启用相应的工作流启动器。 资源微服务处理写回。 |
 | 处理使用包管理器上传的资产 | 这需要手动干预 | 使用&#x200B;**[!UICONTROL 重新处理资产]**&#x200B;操作手动重新处理。 |
-| MIME类型检测 | 不支持。 | 如果您上传不带扩展或扩展不正确的数字资产，可能无法按需要处理该资产。 用户仍然可以在DAM中存储不带扩展名的二进制文件。 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)中的MIME类型检测。 |
-| 复合资产的子资产生成 | 不支持。 | 可能无法实现注释等依赖用例。 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)中的子资产创建。 从[2021.7.0版本](/help/release-notes/release-notes-cloud/release-notes-current.md)开始，某些文件类型的PDF预览可用。 |
-| 编辑图像 | 不受支持 | Experience Manager as a Cloud Service不支持编辑资源。 查看[它在Experience Manager 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images)中的工作方式。 |
-| 主页 | 不受支持 | 查看 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page)中的[!DNL Assets] 主页体验 |
-| 从ZIP存档中提取资产 | 不受支持 | 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip)中的ZIP提取。 |
+| MIME类型检测 | 不支持。 | 如果您上传不带扩展或扩展不正确的数字资产，可能无法按需要处理该资产。 用户仍然可以在DAM中存储不带扩展名的二进制文件。 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)中的MIME类型检测。 |
+| 复合资产的子资产生成 | 不支持。 | 可能无法实现注释等依赖用例。 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)中的子资产创建。 从[2021.7.0版本](/help/release-notes/release-notes-cloud/release-notes-current.md)开始，某些文件类型的PDF预览可用。 |
+| 编辑图像 | 不受支持 | Experience Manager as a Cloud Service不支持编辑资源。 查看[它在Experience Manager 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images)中的工作方式。 |
+| 主页 | 不受支持 | 查看 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/using/assets-home-page)中的[!DNL Assets] 主页体验 |
+| 从ZIP存档中提取资产 | 不受支持 | 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip)中的ZIP提取。 |
 | Assets评级 | 不受支持 | 不支持元数据架构编辑器中的评级小组件。 |
-| 内容处置过滤器 | 不受支持 | `ContentDispositionFilter`的常见用例是允许管理员配置[!DNL Experience Manager]以提供HTML文件并内联打开PDF文件而不是下载它们。 在发布实例上，您可以使用Dispatcher配置管理处置。 在创作实例上，Adobe不建议修改内容处置标头。 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter)中的内容处置筛选器。 |
-| 产品照片拍摄模板 | 不受支持 | 查看 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information)中的产品照片拍摄模板。 |
+| 内容处置过滤器 | 不受支持 | `ContentDispositionFilter`的常见用例是允许管理员配置[!DNL Experience Manager]以提供HTML文件并内联打开PDF文件而不是下载它们。 在发布实例上，您可以使用Dispatcher配置管理处置。 在创作实例上，Adobe不建议修改内容处置标头。 请参阅 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/content-disposition-filter)中的内容处置筛选器。 |
+| 产品照片拍摄模板 | 不受支持 | 查看 [!DNL Experience Manager] 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information)中的产品照片拍摄模板。 |
 | 智能翻译 | 不受支持 | [!DNL Experience Manager]不支持智能翻译作为[!DNL Cloud Service]。 |
 | WebDAV | 不受支持 | 有关备选方案，请参阅[[!DNL Creative Cloud] 集成](/help/assets/aem-cc-integration-best-practices.md)或[开发人员参考资料](/help/assets/developer-reference-material-apis.md)。 |
 | 经典 UI | 不受支持 | 仅触屏支持用户界面可用。 |
@@ -130,4 +130,4 @@ ht-degree: 10%
 >* [架构](/help/overview/architecture.md)
 >* [重要更改](/help/release-notes/aem-cloud-changes.md)
 >* [重要更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [视频教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/overview)
+>* [视频教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/overview)

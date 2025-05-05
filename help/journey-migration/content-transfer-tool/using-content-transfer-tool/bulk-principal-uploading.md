@@ -97,7 +97,7 @@ Admin Console包含两个用于上传和编辑用户详细信息的单独操作�
    1. 在出现的对话框中，从&#x200B;**下载文件……**&#x200B;下的下拉列表中选择&#x200B;**批量用户文件**，然后单击&#x200B;**下载**&#x200B;按钮。
    1. 保存生成的CSV文件
 1. 编辑批量用户文件
-   * 每一行表示要上传的用户，它有十五个字段（字段的名称构成了文件的第一行）。 某些字段是可选的，此处未对其进行说明。 请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。  这些字段包括：
+   * 每一行表示要上传的用户，它有十五个字段（字段的名称构成了文件的第一行）。 某些字段是可选的，此处未对其进行说明。 请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。  这些字段包括：
 
       * _标识类型_ — 可选。  如果未指定，则将其创建为Adobe ID
       * _用户名_ — 可选，不用于Adobe ID上传
@@ -108,14 +108,14 @@ Admin Console包含两个用于上传和编辑用户详细信息的单独操作�
       * _国家/地区代码_ — 可选，不用于Adobe ID上传
       * _ID_ — 可选，不用于Adobe ID上传
       * _产品配置_ — 可选。 此字段也将从用户所属的任何组继承
-      * _管理员角色_ — 可选。 如果用户是管理员，请使用此字段。 有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
-      * _已管理产品配置_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
+      * _管理员角色_ — 可选。 如果用户是管理员，请使用此字段。 有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
+      * _已管理产品配置_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
       * _用户组_ — 可选。 用户应指定为成员的组的列表。 每个组必须是已存在的IMS组。 从CAM下载批量用户文件时，此字段预先填充了迁移前用户作为成员且启用了IMS的组的名称（直接或间接）
-      * _用户组已管理_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
-      * _管理的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
-      * _管理的合同_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
-      * _开发人员访问权限_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
-      * _自动分配的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _用户组已管理_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
+      * _管理的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
+      * _管理的合同_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
+      * _开发人员访问权限_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
+      * _自动分配的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
 
    * 在编辑CSV时，某些应用程序可能会在保存时添加其他引号，从而导致处理失败。 好的做法是在简单的文本编辑器中检查原始CSV，以确保每个字段只有一个开头和结尾引号（并且它们不应是“智能引号”）
 

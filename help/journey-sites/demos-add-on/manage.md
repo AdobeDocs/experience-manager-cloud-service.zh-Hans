@@ -105,9 +105,9 @@ ht-degree: 100%
 
 ## 其他资源 {#additional-resources}
 
-* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
+* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=zh-Hans) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
 * [创建 Site](/help/sites-cloud/administering/site-creation/create-site.md) – 了解如何使用 AEM 创建 Site，并使用 Site 模板定义 Site 的样式和结构。
 * [AEM 的页面命名惯例。](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices) – 请参阅此页面，了解用于组织 AEM 页面的惯例。
 * [AEM 基本操作](/help/sites-cloud/authoring/basic-handling.md) – 如果您不熟悉 AEM，请参阅本文档，了解导航和控制台组织等基本概念。
-* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 有一定的了解，则可能需要直接参阅深入的技术文档。
+* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans) – 如果您已对 AEM 有一定的了解，则可能需要直接参阅深入的技术文档。
 * [Site 模板](/help/sites-cloud/administering/site-creation/site-templates.md) – 如果您想详细了解 Site 模板的结构以及如何使用它们创建 Site，请参阅本文档。

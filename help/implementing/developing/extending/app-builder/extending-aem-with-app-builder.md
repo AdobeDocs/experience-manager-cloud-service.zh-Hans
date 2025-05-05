@@ -29,7 +29,7 @@ App Builder自2020年夏季起通过Adobe开发人员预览版向企业客户和
 
 >[!NOTE]
 >
-> 对于希望使用App Builder的AEM 6.5客户，请参阅[使用Adobe Developer App Builder扩展Adobe Experience Manager 6.5&rbrace;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)。
+> 对于希望使用App Builder的AEM 6.5客户，请参阅[使用Adobe Developer App Builder扩展Adobe Experience Manager 6.5&rbrace;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=zh-Hans)。
 
 ## 架构 {#architecture}
 

@@ -47,11 +47,11 @@ Formsas a Cloud Service — 通信提供了用于计划文档生成的按需和�
 
 * **基于令牌的身份验证：**&#x200B;基于令牌的身份验证使用访问令牌（持有者身份验证令牌）向Experience Manageras a Cloud Service发出请求。 AEM Formsas a Cloud Service提供API以安全检索访问令牌。 要检索并使用令牌对请求进行身份验证，请执行以下操作：
 
-   1. [从Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)检索Experience Manageras a Cloud Service凭据。
-   1. [在环境中安装Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 (应用程序服务器、Web服务器或其他非AEM服务器)配置为向（调用）云服务发送请求。
-   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
+   1. [从Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)检索Experience Manageras a Cloud Service凭据。
+   1. [在环境中安装Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。 (应用程序服务器、Web服务器或其他非AEM服务器)配置为向（调用）云服务发送请求。
+   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。
    1. 将访问令牌作为持有者身份验证令牌运行Experience ManagerAPI。
-   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
+   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans#configure-access-in-aem)。
 
   >[!NOTE]
   >

@@ -16,7 +16,7 @@ ht-degree: 5%
 本节介绍如何在Cloud Manager中为项目创建环境。
 
 >[!NOTE]
->请参阅[在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)，了解用户如何创建环境。
+>请参阅[在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)，了解用户如何创建环境。
 
 ## 目标 {#objective}
 

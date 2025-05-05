@@ -37,7 +37,7 @@ AEM as a Cloud Service使用数百个云原生监视器，每年365天不间断�
 
 >[!NOTE]
 >
-> 此功能仅适用于具有[高级云支持](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)的生产环境和客户。 如果您有任何问题，请联系您的Adobe客户团队。
+> 此功能仅适用于具有[高级云支持](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=zh-Hans#support-add-ons)的生产环境和客户。 如果您有任何问题，请联系您的Adobe客户团队。
 
 ## 内部模块监控 {#module-monitoring}
 
@@ -55,10 +55,10 @@ AEM as a Cloud Service使用数百个云原生监视器，每年365天不间断�
 
 ## 客户可观察性 {#customer-observability}
 
-客户可以使用[New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)套件，该套件提供实时性能数据，这些数据已收集并绘制图表以供分析和疑难解答。 通过使用监控套件，客户可以直接观察各种量度，例如：JVM性能量度、Java™事务时间、后台外部调用和数据库调用。
+客户可以使用[New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=zh-Hans)套件，该套件提供实时性能数据，这些数据已收集并绘制图表以供分析和疑难解答。 通过使用监控套件，客户可以直接观察各种量度，例如：JVM性能量度、Java™事务时间、后台外部调用和数据库调用。
 
 ## 其他资源 {#resources}
 
-* [New Relic应用程序性能监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [正在记录AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [正在监视环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [New Relic应用程序性能监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=zh-Hans)
+* [正在记录AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=zh-Hans)
+* [正在监视环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=zh-Hans)

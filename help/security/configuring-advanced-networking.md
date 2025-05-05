@@ -22,7 +22,7 @@ ht-degree: 73%
 >
 >您可以通过Cloud Manager UI或使用AEM as a Cloud Service API（例如，cURL），在Cloud Manager中配置高级联网功能。
 >
->本文主要介绍如何使用UI方法。 如果您希望通过API自动进行配置，请参阅[虚拟专用网络(VPN)教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn)。
+>本文主要介绍如何使用UI方法。 如果您希望通过API自动进行配置，请参阅[虚拟专用网络(VPN)教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/vpn)。
 >
 >**使用API自动化高级联网**
 >要自动进行高级联网设置（例如VPN创建），您可以使用Cloud Manager API：
@@ -44,7 +44,7 @@ ht-degree: 73%
 >   }'
 >```
 >
->请参阅[虚拟专用网络(VPN)教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn)中的完整教程和更多API示例。
+>请参阅[虚拟专用网络(VPN)教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/vpn)中的完整教程和更多API示例。
 >
 
 ## 概述 {#overview}
@@ -59,7 +59,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 >[!CAUTION]
 >
->如果您已配置了旧版专用出口技术并希望配置这些高级网络选项之一，[请联系 Adobe 客户服务。](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)
+>如果您已配置了旧版专用出口技术并希望配置这些高级网络选项之一，[请联系 Adobe 客户服务。](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager#home)
 >
 >尝试使用传统出口技术配置高级网络可能会影响站点连接。
 

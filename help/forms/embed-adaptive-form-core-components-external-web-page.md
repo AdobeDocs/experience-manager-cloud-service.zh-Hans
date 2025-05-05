@@ -18,7 +18,7 @@ ht-degree: 98%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=zh-Hans) |
 
 
 可[将自适应表单嵌入到 AEM Sites 页面](/help/forms/embed-adaptive-form-aem-sites.md)或托管在 AEM 之外的网页中。嵌入的自适应表单功能齐全，用户无需离开页面即可填写并提交表单。它帮助用户留在网页上其他元素的上下文中，并同时与该表单交互。

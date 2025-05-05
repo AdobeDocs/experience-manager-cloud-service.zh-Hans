@@ -25,7 +25,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >**先决条件**
->在开始阅读本节之前，请参阅[设置Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)，了解如何从Screens服务提供程序导航到此用户界面。
+>在开始阅读本节之前，请参阅[设置Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hans)，了解如何从Screens服务提供程序导航到此用户界面。
 
 请按照以下步骤登录Screens Content Provider：
 
@@ -42,7 +42,7 @@ ht-degree: 15%
    Cloud Manager概述页面的![图标显示在工具栏的最左侧。](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >如果您尚未创建任何程序，请参阅[首次登录Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html)。 本主题将指导您在Cloud Manager中为Screensas a Cloud Service添加程序。
+   >如果您尚未创建任何程序，请参阅[首次登录Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=zh-Hans)。 本主题将指导您在Cloud Manager中为Screensas a Cloud Service添加程序。
 
 1. 从&#x200B;**环境**&#x200B;信息卡中选择链接，以便您可以访问Screens内容提供程序。
 
@@ -58,4 +58,4 @@ ht-degree: 15%
 
 ## 后续内容 {#whats-next}
 
-现在您已了解如何导航到Screens内容提供商，请通过查看文档[在Screens中创建和管理项目as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html)来继续您的Screensas a Cloud Service之旅。
+现在您已了解如何导航到Screens内容提供商，请通过查看文档[在Screens中创建和管理项目as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=zh-Hans)来继续您的Screensas a Cloud Service之旅。

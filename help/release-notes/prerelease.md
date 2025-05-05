@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 简介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
+Adobe Experience Manager as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)定期提供新功能。
 
 若要熟悉安排在以下功能版本中上线的功能，可订阅预发行版渠道（可通过配置开发环境或任何沙盒环境而访问该渠道）。可预览可通过 AEM 用户界面访问的更改，并可对照任何新的预发行版 API 构建代码。
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service 有两种类型的版本。
 
 ## 标记您的日历 {#mark-calendars}
 
-提前安排好功能版本，并在 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上公布功能版本激活日期。
+提前安排好功能版本，并在 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service) 上公布功能版本激活日期。
 
 记下发行日期，以便您可以计划时间来查看和测试即将推出的功能。
 
@@ -195,8 +195,8 @@ Javadocs 将发布到 Maven Central。
 
 Adobe Experience League 提供了大量学习 AEMaaCS 的资源。
 
-* [AEMaaCS 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [AEMaaCS 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans)
+* [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hans)
 * 发行说明中的[每月发行概览视频](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 注意事项 {#considerations}

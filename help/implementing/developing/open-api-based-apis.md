@@ -21,7 +21,7 @@ ht-degree: 1%
 
 对于需要身份验证的端点，身份验证方法因端点而异，但可能使用OAuth服务器到服务器、OAuth Web应用程序或OAuth单页应用程序(SPA)。 凭据是通过[Adobe Developer Console](https://developer.adobe.com/developer-console/)中的项目配置的。
 
-常见API用例涉及与CRM或PIM等系统的集成，这些系统调用AEM API来检索或保留数据。 作为集成实施的一部分，应用程序可能会订阅[AEM发出的事件](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview)，这些事件可能会在Adobe App Builder或其他基础架构中触发业务逻辑。
+常见API用例涉及与CRM或PIM等系统的集成，这些系统调用AEM API来检索或保留数据。 作为集成实施的一部分，应用程序可能会订阅[AEM发出的事件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-eventing/overview)，这些事件可能会在Adobe App Builder或其他基础架构中触发业务逻辑。
 
 本文档可用作概览，但以下页面提供了更深入的文档：
 
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 * 信息性[指南](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/)，包括[API概念和语法](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/)。
 
-* 描述[身份验证方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support)和其他概念的顶级教程。
+* 描述[身份验证方法](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support)和其他概念的顶级教程。
 
-* 一个教程，其中包含重点介绍[如何配置基于OpenAPI的API](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)的视频。
+* 一个教程，其中包含重点介绍[如何配置基于OpenAPI的API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)的视频。
 
 * [关于使用服务器到服务器身份验证策略配置和调用OpenAPI的端到端教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)。 此外，还可以找到有关Web应用程序和单页应用程序身份验证方法的类似教程。
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 1. 配置ADC项目。 这将生成凭据，在调用API时，稍后将使用这些凭据交换持有者令牌。
 1. 配置AEM实例以启用ADC项目通信。 这涉及通过配置和部署YAML文件在环境中注册客户端ID，如下面的[注册客户端ID](#registering-a-client-id)部分中所述。
 
-有关详细的分步说明，请参阅[设置基于OpenAPI的API教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)。
+有关详细的分步说明，请参阅[设置基于OpenAPI的API教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup)。
 
 ### 注册客户端ID {#registering-a-client-id}
 

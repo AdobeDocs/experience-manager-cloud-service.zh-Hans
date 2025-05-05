@@ -20,7 +20,7 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -35,7 +35,7 @@ ht-degree: 45%
 
 * [API弃用](/help/release-notes/deprecated-removed-features.md)：提供了AEM as a Cloud Service的最新弃用API列表。
 
-* [AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：将您的Maven项目更新到最新版本，其中包括弃用的Java API检查和其他改进。
+* [AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans)：将您的Maven项目更新到最新版本，其中包括弃用的Java API检查和其他改进。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

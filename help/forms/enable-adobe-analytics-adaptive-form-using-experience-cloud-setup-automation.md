@@ -17,7 +17,7 @@ ht-degree: 2%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=zh-Hans) |
 
 “Experience Cloud设置自动化”有助于将Adobe Analytics连接到Adaptive Forms，后者有助于快速跟踪分析用户与您的表单的交互，并提供有关访客交互和参与情况的洞察。 Experience Cloud设置自动化还有助于监控表单性能，其中涉及评估完成时间和流失点等指标。 此分析有助于优化表单以获得更好的用户体验，同时根据登录状态（例如，匿名用户）区分用户行为以确定一般趋势和模式。
 
@@ -71,7 +71,7 @@ Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**�
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=zh-Hans)
 -->
 
 ## 配置Adobe Analytics {#configure-adobe-analytics}
@@ -149,7 +149,7 @@ Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**�
 
 要在AEM Sites页面中连接自适应表单以启用Analytics以进行快速跟踪分析，请使用AEM Archetype/Git存储库和部署管道将`customfooterlibs`客户端库包含到AEM Sites页面。
 
-1. 在文本编辑器中打开[AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)项目。 例如，Visual Studio Code。
+1. 在文本编辑器中打开[AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)项目。 例如，Visual Studio Code。
 
 1. 导航到您的自适应表单所在的站点页面，例如，在此演示项目中，我们有`ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 
@@ -172,7 +172,7 @@ Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**�
 
    `customfooterlibs.html`用于JavaScript。
 
-1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)以部署更改。
+1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hans)以部署更改。
 
 ### 在站点中启用Forms的Form Analytics规则 {#bind-forms-analytics-rules-to-forms-in-sites}
 

@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_chooseteam"
 >title="选择合适的团队"
 >abstract="将合适的人员放在合适的职位上，帮助推动您成功部署 Adobe Experience Manager。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="选准 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="评估 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hans" text="选准 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=zh-Hans" text="评估 KPI"
 
 在您的组织中，可能会有多个部门负责数字体验的不同层面。如果没有合适的治理方式，这一阶段就会出现无休止的争论、内斗和混乱。
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 ![审查实施的角色](assets/team_involvement.png)
 
-**与实施团队一起查看这些清单**，确保在各个职位上都有具备相关资质的人员。不太熟悉 Adobe Experience Cloud 的团队成员可以使用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 学习资源来通过 [Adobe Digital Learning](https://learning.adobe.com/certification.html) 获取认证。
+**与实施团队一起查看这些清单**，确保在各个职位上都有具备相关资质的人员。不太熟悉 Adobe Experience Cloud 的团队成员可以使用 [Experience League](https://experienceleague.adobe.com/zh-hans#recommended/solutions/experience-manager) 学习资源来通过 [Adobe Digital Learning](https://learning.adobe.com/certification.html) 获取认证。
 
 ## **AEM Experience Manager Assets 的关键职位**
 
@@ -79,4 +79,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> 详细了解 Adobe Experience Cloud，使用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 上的资源，并通过 [Adobe Digital Learning](https://learning.adobe.com/certification.html) 获取认证。
+> 详细了解 Adobe Experience Cloud，使用 [Experience League](https://experienceleague.adobe.com/zh-hans#recommended/solutions/experience-manager) 上的资源，并通过 [Adobe Digital Learning](https://learning.adobe.com/certification.html) 获取认证。

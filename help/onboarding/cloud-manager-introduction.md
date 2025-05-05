@@ -70,7 +70,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 Cloud Manager 程序代表一系列支持业务计划逻辑分组的 Cloud Manager 环境。 这些分组通常对应于购买的服务级别协议 (SLA)。 例如，一个程序可能表示支持组织公共网站的 AEM 资源，而另一个程序表示内部 DAM。
 
 
-观看此[视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)，了解有关使用 Cloud Manager 程序的更多信息。
+观看此[视频](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=zh-Hans)，了解有关使用 Cloud Manager 程序的更多信息。
 
 用户可以创建&#x200B;**沙盒**&#x200B;或&#x200B;**生产**&#x200B;程序。
 
@@ -92,7 +92,7 @@ Cloud Manager 程序代表一系列支持业务计划逻辑分组的 Cloud Manag
 
 >[!TIP]
 >
-> 请参阅视频[使用 Adobe Cloud Manager 环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)，了解可用环境的概述。
+> 请参阅视频[使用 Adobe Cloud Manager 环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=zh-Hans)，了解可用环境的概述。
 >
 >请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)，了解有关用户可以创建的环境类型以及用户如何创建环境的更多信息。
 

@@ -23,7 +23,7 @@ ht-degree: 2%
 
 此外，AEM收件箱可整合来自各种AEM组件(包括Forms工作流程)的通知和任务。 触发包含“分配”Forms Workflow步骤的任务时，关联的应用程序将作为任务列在被分配人的收件箱中。 如果被分派人是组，则该任务会出现在所有组成员的“收件箱”中，直到个人声明或委派该任务为止。
 
-收件箱用户界面提供列表和日历视图以查看任务。 您还可以配置视图设置。 您可以根据各种参数筛选任务。 有关视图和筛选器的详细信息，请参阅[您的收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header)。
+收件箱用户界面提供列表和日历视图以查看任务。 您还可以配置视图设置。 您可以根据各种参数筛选任务。 有关视图和筛选器的详细信息，请参阅[您的收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=zh-Hans#inbox-in-the-header)。
 
 总之，收件箱允许您创建应用程序并管理分配的任务。
 
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 #### 任务详细信息 {#task-details}
 
-“任务详细信息”部分显示有关任务的信息。 所显示的信息取决于工作流中[分配任务步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)的配置设置。 上面的示例显示了用于任务的描述、状态、开始日期和工作流。 它还允许将文件附加到任务。
+“任务详细信息”部分显示有关任务的信息。 所显示的信息取决于工作流中[分配任务步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)的配置设置。 上面的示例显示了用于任务的描述、状态、开始日期和工作流。 它还允许将文件附加到任务。
 
 #### 表单 {#form}
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 #### 工作流详细信息 {#workflow-details}
 
-顶部的“工作流详细信息”选项卡显示任务在工作流中各个阶段的进度。 它显示任务的已完成阶段、当前阶段和待定阶段。 工作流的阶段在关联工作流的[分配任务步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)中定义。
+顶部的“工作流详细信息”选项卡显示任务在工作流中各个阶段的进度。 它显示任务的已完成阶段、当前阶段和待定阶段。 工作流的阶段在关联工作流的[分配任务步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)中定义。
 
 此外，选项卡显示工作流中每个已完成阶段的任务历史记录。 您可以为已完成的阶段选择&#x200B;**[!UICONTROL 查看详细信息]**，以了解有关该阶段的详细信息。 它显示有关任务的注释、表单和任务附件、状态、开始和结束日期等。
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 
 #### “操作”工具栏 {#actions-toolbar}
 
-“操作”工具栏显示任务的所有可用选项。 虽然保存、重置和委派是默认操作，但在[分配任务步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)中配置了其他可用操作。 以上示例中，在工作流中配置了批准和拒绝。
+“操作”工具栏显示任务的所有可用选项。 虽然保存、重置和委派是默认操作，但在[分配任务步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)中配置了其他可用操作。 以上示例中，在工作流中配置了批准和拒绝。
 
 当您处理任务时，它会进一步进入工作流。
 
@@ -112,7 +112,7 @@ AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 
 
 1. 选择以选择任务，然后单击&#x200B;**[!UICONTROL 打开]**。
 
-将打开任务以显示文档或与任务关联的自适应表单。 对于自适应表单，任务会显示只读的自适应表单或其PDF记录文档，如[分配任务工作流步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)的表单/文档选项卡中所配置。
+将打开任务以显示文档或与任务关联的自适应表单。 对于自适应表单，任务会显示只读的自适应表单或其PDF记录文档，如[分配任务工作流步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)的表单/文档选项卡中所配置。
 
 任务详细信息部分显示所采取的操作、任务状态、开始日期和结束日期等信息。
 
@@ -151,7 +151,7 @@ AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [创建属性索引并将其设置为true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index)。
+1. [创建属性索引并将其设置为true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=zh-Hans#the-property-index)。
 
 1. 在CRX DE中配置索引或通过包进行部署后，[重新索引存储库](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
 

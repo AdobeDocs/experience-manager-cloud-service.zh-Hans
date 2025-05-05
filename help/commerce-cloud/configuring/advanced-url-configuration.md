@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须解决Adobe Experience Manager (AEM) as a Cloud Service上的许多项目中的SEO问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)以了解更多信息。
+> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须解决Adobe Experience Manager (AEM) as a Cloud Service上的许多项目中的SEO问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=zh-Hans)以了解更多信息。
 
 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)提供了高级配置以自定义产品和类别页面的URL。 许多实施都会自定义这些URL，以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置[Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的`UrlProvider`服务和功能以自定义产品和类别页面的URL。
 
@@ -256,5 +256,5 @@ _&#x200B;**URL长度与编码信息之间的平衡。**&#x200B;_
 ## 其他资源 {#additional}
 
 * [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM资源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM资源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=zh-Hans)
 * [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

@@ -21,7 +21,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -66,11 +66,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-sep-2021}
 
-* **在自适应表单中使用Adobe Sign角色** — 用于商业和企业服务级别的Adobe Sign允许您选择扩展协议接受者的角色，而不只是签名者角色，以便更好地匹配他们的工作流要求。 您现在可以[在自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)中为每个协议收件人配置他们的角色，签名者是默认角色。
+* **在自适应表单中使用Adobe Sign角色** — 用于商业和企业服务级别的Adobe Sign允许您选择扩展协议接受者的角色，而不只是签名者角色，以便更好地匹配他们的工作流要求。 您现在可以[在自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=zh-Hans#addsignerstoanadaptiveform)中为每个协议收件人配置他们的角色，签名者是默认角色。
 
 * **Analytics for Adaptive Forms** — 您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪最终用户行为，从而收集最终用户洞察。 这有助于根据数据做出明智的决策，从而改善最终用户体验。
 
-* **轻松地将Adobe Experience Manager (AEM) Forms与Microsoft® Dynamics和Salesforce连接** — 该服务为Microsoft® Dynamics和Salesforce提供现成的数据源配置和数据模型。 这使开发人员能够更快、更轻松地将Microsoft®Dynamics和Salesforce配置为自适应表单[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html)的数据源。
+* **轻松地将Adobe Experience Manager (AEM) Forms与Microsoft® Dynamics和Salesforce连接** — 该服务为Microsoft® Dynamics和Salesforce提供现成的数据源配置和数据模型。 这使开发人员能够更快、更轻松地将Microsoft®Dynamics和Salesforce配置为自适应表单[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hans)的数据源。
 
 * **使用DocuSign对自适应表单进行电子签名** — 您可以使用DocuSign对自适应表单进行电子签名。 该服务提供了自定义提交操作，可将DocuSign与自适应表单结合使用。 您可以安装Software Distribution上提供的软件包以导入提交操作。
 
@@ -80,7 +80,7 @@ CQ-4328183 was not reported on CS so not documented here.
    * 启用 Forms Portal 的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
    * 将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** - [通信API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html)可帮助您组合XDP模板和XML数据以生成各种格式的打印文档。 该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - [通信API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans)可帮助您组合XDP模板和XML数据以生成各种格式的打印文档。 该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
    * 使用 XML 数据填充模板文件来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    * 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -114,10 +114,10 @@ CQ-4328183 was not reported on CS so not documented here.
 ### 新增功能 {#what-is-new-screens}
 
 * Screensas a Cloud Service现在支持基本回放监控。 播放器现在报告每次ping（默认为30秒）的各种回放指标。 它可以基于指标检测各种边缘情况（卡住体验、空白屏幕、调度问题等）。 团队可以使用此功能远程监控播放器是否正确播放内容。 它提高了对空白屏幕或现场中断体验的反应性，并降低了向用户显示中断体验的风险。
-有关更多详细信息，请参阅[基本回放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring)。
+有关更多详细信息，请参阅[基本回放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=zh-Hans#playback-monitoring)。
 
 * Screensas a Cloud Service现在支持视频缩略图。 内容作者可以定义视频的缩略图，以便在相应团队最终确定实际视频时，将图像用作占位符并正确测试内容播放和定位。 在视频播放失败时，也可以使用该图像。
-有关更多详细信息，请参阅[视频的缩略图支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html)。
+有关更多详细信息，请参阅[视频的缩略图支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=zh-Hans)。
 
 ### 错误修复 {#bug-fixes-screens}
 
@@ -184,7 +184,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager现在允许用户在可打印预览中查看BPA报告，并允许简单打印或打印以PDF以便于共享。 请参阅[中的步骤6和步骤7，使用最佳实践分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis)。
+* Cloud Acceleration Manager现在允许用户在可打印预览中查看BPA报告，并允许简单打印或打印以PDF以便于共享。 请参阅[中的步骤6和步骤7，使用最佳实践分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans#best-practices-analysis)。
 
 ## 内容转移工具 {#content-transfer-tool}
 
@@ -194,7 +194,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 通过简化的用户体验改进了用户映射，包括以下列出的功能。 有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool)。
+* 通过简化的用户体验改进了用户映射，包括以下列出的功能。 有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=zh-Hans#using-user-mapping-tool)。
    * 在运行用户映射之前测试与用户管理API的连接
    * 正常跳过错误并继续用户映射活动
    * 如果访问令牌过期（24小时后），用户映射不再失败。 可以从上次停止的位置重新运行用户映射。

@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->请参阅[配置对 AEM 的访问（适用于管理员）](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem_zh-hans)，了解用户如何使用 Adob&#x200B;e IMS 向 AEM as a Cloud Service 进行身份验证。此外，还可以了解如何使用 Adob&#x200B;e IMS 用户、用户组和产品配置文件来控制对 AEM 及其特性和功能的访问。需要 Adobe ID。
+>请参阅[配置对 AEM 的访问（适用于管理员）](https://experienceleague.adobe.com/?lang=zh-hans&recommended=ExperienceManager-A-1-2020.1.aem_zh-hans)，了解用户如何使用 Adob&#x200B;e IMS 向 AEM as a Cloud Service 进行身份验证。此外，还可以了解如何使用 Adob&#x200B;e IMS 用户、用户组和产品配置文件来控制对 AEM 及其特性和功能的访问。需要 Adobe ID。
 
 ## 主要亮点 {#key-highlights}
 

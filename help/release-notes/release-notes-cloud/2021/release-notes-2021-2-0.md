@@ -57,13 +57,13 @@ ht-degree: 32%
 
 * 可使用[!DNL Experience Manager Assets Brand Portal]来获取Assets。 它有助于从机构用户那里获得用于新营销活动、照片拍摄和项目的资产。
 
-* [!DNL Experience Manager Assets]作为[!DNL Cloud Service]有权拥有预配置的[!DNL Brand Portal]实例。 [!DNL Cloud Manager]用户可以在[!DNL Experience Manager Assets]上将[!DNL Brand Portal]激活为[!DNL Cloud Service]。 请参阅[激活Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
+* [!DNL Experience Manager Assets]作为[!DNL Cloud Service]有权拥有预配置的[!DNL Brand Portal]实例。 [!DNL Cloud Manager]用户可以在[!DNL Experience Manager Assets]上将[!DNL Brand Portal]激活为[!DNL Cloud Service]。 请参阅[激活Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=zh-Hans)。
 
 * 企业现在可以使用[!DNL Brand Portal]获取资源。 资源获取功能使用[!DNL Brand Portal]帮助客户与机构用户接洽，为新营销活动、照片拍摄和项目获取资源。 请参阅 [!DNL Brand Portal][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans)中的资源源。
 
-* [!DNL Brand Portal]使用情况报告现在仅显示活动用户。 现在不显示非活动用户。 活动用户是其帐户在[!DNL Admin Console]中被分配给产品配置文件的用户。 查看[[!DNL Brand Portal] 报告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
+* [!DNL Brand Portal]使用情况报告现在仅显示活动用户。 现在不显示非活动用户。 活动用户是其帐户在[!DNL Admin Console]中被分配给产品配置文件的用户。 查看[[!DNL Brand Portal] 报告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=zh-Hans)。
 
-* 在[!DNL Brand Portal]中引入了一个新的下载设置，通过该设置，在下载文件夹、收藏集等内容时，您可以为每个资源创建单独的文件夹。 请参阅[下载设置](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)。
+* 在[!DNL Brand Portal]中引入了一个新的下载设置，通过该设置，在下载文件夹、收藏集等内容时，您可以为每个资源创建单独的文件夹。 请参阅[下载设置](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=zh-Hans)。
 
 ## [!DNL Assets] 中的错误修复 {#bug-fixes-assets}
 
@@ -138,7 +138,7 @@ AEM as a Cloud Service 2021.2.0 中的 Cloud Manager 的发布日期是 2021 年
 ### 内容传输工具的新增功能 {#what-is-new-ctt}
 
 * 向内容传输工具添加了新功能和UI — 用户映射工具。 此功能在内容迁移活动中自动将现有用户和组映射到其AdobeIdentity Management系统ID。
-有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
+有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=zh-Hans)。
 * 内容传输工具现在迁移在迁移集中引用的所有组和用户，包括儿童。
 * 在创建迁移集时，允许用户选择`/etc`下的某些路径。
 
@@ -161,7 +161,7 @@ Best Practices Analyzer v2.1.2的发布日期是2021年2月18日。
 ### 代码重构工具的新增功能 {#what-is-new-crt}
 
 * 发布了AIO-CLI插件的新版本。 此插件的最新版本包括针对Repository Modernizer的多个错误修复。
-请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits)，了解有关此插件的更多信息。
+请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=zh-Hans#benefits)，了解有关此插件的更多信息。
 
 ### 错误修复 {#bug-fixes-crt}
 

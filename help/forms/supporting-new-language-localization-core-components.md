@@ -117,7 +117,7 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的逐步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
+   有关查找这些详细信息的逐步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
 
    **您的项目已准备就绪！**
 
@@ -373,9 +373,9 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    1. 部署更新的代码：
 
-      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)触发代码部署。 这会使用新的区域设置支持自动构建和部署更新的代码。
+      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)触发代码部署。 这会使用新的区域设置支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅[上的指南如何为AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)设置管道。
+      如果尚未设置管道，请参阅[上的指南如何为AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)设置管道。
 
 
 ## 预览具有新添加区域设置的自适应表单
@@ -394,7 +394,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 支持新本地化的最佳实践 {#best-practices}
 
 * Adobe建议在创建自适应表单之后创建翻译项目。 这简化了本地化过程。
-* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 为了缓解此问题，**语言**&#x200B;选项已合并到[日期选取器组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[数值框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的“配置”对话框中。
+* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 为了缓解此问题，**语言**&#x200B;选项已合并到[日期选取器组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[数值框组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的“配置”对话框中。
 
 
 * 处理新字段：

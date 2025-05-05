@@ -25,13 +25,13 @@ REST API通过HTTP提供对相同功能的访问，响应以JSON发送。
 
 >[!NOTE]
 >
->QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询AEM JCR。 有关信息，请参阅[使用JCR API查询Adobe Experience Manager数据](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)。
+>QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询AEM JCR。 有关信息，请参阅[使用JCR API查询Adobe Experience Manager数据](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=zh-Hans)。
 
 ## Gem会议 {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)是Adobe专家提供的一系列深入探讨Adobe Experience Manager的技术资料。
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=zh-Hans)是Adobe专家提供的一系列深入探讨Adobe Experience Manager的技术资料。
 
-您可以[查看专门用于查询生成器的会话](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html)以了解该工具的概述和使用情况。
+您可以[查看专门用于查询生成器的会话](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=zh-Hans)以了解该工具的概述和使用情况。
 
 ## 示例查询 {#sample-queries}
 

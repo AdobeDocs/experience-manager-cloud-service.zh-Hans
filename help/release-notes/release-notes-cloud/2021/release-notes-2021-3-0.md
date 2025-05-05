@@ -20,7 +20,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -64,7 +64,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 多年以来，AEM Forms已帮助众多组织创造了优异的入职和注册体验。 这些体验已帮助组织将潜在客户转化为销售、处理捕获的客户数据、根据受众个人资料提供响应式体验等等。 现在，AEM Forms以Cloud Service的形式提供。
 
-您可以使用[AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)创建数字表单、将表单连接到现有数据源、将表单与Adobe Sign集成以将电子签名添加到表单、生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可将您现有的PDF forms转换为数字表单。 除了标准的AEM Forms功能外，该服务还提供若干云原生功能，如自动扩展、升级零停机以及云原生开发环境。
+您可以使用[AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=zh-Hans)创建数字表单、将表单连接到现有数据源、将表单与Adobe Sign集成以将电子签名添加到表单、生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可将您现有的PDF forms转换为数字表单。 除了标准的AEM Forms功能外，该服务还提供若干云原生功能，如自动扩展、升级零停机以及云原生开发环境。
 
 您可以联系Adobe代表以索取演示或注册该服务。
 
@@ -149,7 +149,7 @@ AEM as a Cloud Service 2021.3.0中的Cloud Manager的发布日期是2021年3月1
 ### 内容传输工具的新增功能 {#what-is-new-ctt-march}
 
 * CTT现在安装到`/apps`，而不是`/libs`。某些页面的浏览器书签可能不再有效。
-* 安装CTT后，用户必须导航到其他级别才能转到内容传输页面。 有关详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)。
+* 安装CTT后，用户必须导航到其他级别才能转到内容传输页面。 有关详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hans)。
 
 ### 错误修复 {#bug-fixes-ctt-march}
 

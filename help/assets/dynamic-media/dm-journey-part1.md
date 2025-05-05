@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media教程_
 
-* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
+* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/zh-hans?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
 
 _Dynamic Media查看器_
 

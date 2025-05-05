@@ -19,7 +19,7 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service（核心组件） | 本文 |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/rule-editor.md) |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hans) |
 
 在基于核心组件的自适应表单中，规则编辑器功能使业务用户和开发人员均可编写自适应表单对象的规则。 这些规则根据预设条件、用户输入和用户对表单的操作，定义要在表单对象上触发的操作。 此功能有助于进一步简化表单填写体验，确保准确性和速度。
 

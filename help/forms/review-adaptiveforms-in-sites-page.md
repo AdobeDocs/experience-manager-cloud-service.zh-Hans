@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # 创建和管理自适应表单审核 {#review-step-forms-aem-sites-page}
 
-审核者使用AEM工作流的[分配步骤](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step)，审核提交的表单并对其执行操作。 要使用“分配任务”步骤复查已提交的表单，请执行以下步骤：
+审核者使用AEM工作流的[分配步骤](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans#assign-task-step)，审核提交的表单并对其执行操作。 要使用“分配任务”步骤复查已提交的表单，请执行以下步骤：
 
 1. [创建AEM工作流](#create-an-aem-workflow)
 1. [配置自适应表单容器的提交操作](#configure-submit-action)
@@ -46,7 +46,7 @@ ht-degree: 4%
 
 1. 转至站点的页面。
 1. 选择自适应表单容器的![settings_icon](assets/settings_icon.png)。 将打开&#x200B;**[!UICONTROL 自适应表单容器]**&#x200B;对话框。
-1. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡并指定&#x200B;**[!UICONTROL 提交操作]**&#x200B;以[调用AEM工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡并指定&#x200B;**[!UICONTROL 提交操作]**&#x200B;以[调用AEM工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=zh-Hans#invoke-an-aem-workflow)
 
 1. 单击[完成]以保存设置。
 

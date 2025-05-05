@@ -14,7 +14,7 @@ ht-degree: 11%
 
 # 比较自适应表单 {#compare-two-forms}
 
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
+<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
 
 当表单作者需要根据字段、内容和表单组件比较两个不同的表单时，他们会比较两个表单。 表单作者必须确保两个表单位于同一目录或文件夹中，才能进行比较。 要比较两个不同的自适应表单，请执行以下步骤：
 

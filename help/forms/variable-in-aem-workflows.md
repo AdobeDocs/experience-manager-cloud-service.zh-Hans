@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 工作流模型中的变量是一种根据其数据类型存储值的方法。 您可以在任何工作流步骤中使用变量的名称来检索存储在变量中的值。 您还可以使用变量名称来定义用于制定路由决策的表达式。
@@ -37,7 +37,7 @@ ht-degree: 1%
 您可以使用工作流模型Sidekick中提供的“变量”部分创建变量。 AEM工作流变量支持以下数据类型：
 
 * **原始数据类型**： Long、Double、Boolean、Date和String
-* **复杂数据类型**：[文档](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表单数据模型实例。
+* **复杂数据类型**：[文档](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表单数据模型实例。
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ OR拆分在工作流中创建拆分，之后只有一个分支处于活动状态
 
 您可以使用规则定义、ECMA脚本或外部脚本为分支定义路由表达式。
 
-您可以使用变量来定义使用表达式编辑器的路由表达式。 有关对OR拆分步骤使用路由表达式的详细信息，请参阅[OR拆分步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#or-split)。
+您可以使用变量来定义使用表达式编辑器的路由表达式。 有关对OR拆分步骤使用路由表达式的详细信息，请参阅[OR拆分步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem?lang=zh-Hans#or-split)。
 
 在此示例中，在定义路由表达式之前，请使用[example 2](variable-in-aem-workflows.md#example2)设置&#x200B;**totalvalue**&#x200B;变量的值。 如果&#x200B;**totalvalue**&#x200B;变量的值大于50000，则分支1处于活动状态。 同样，您可以定义一个规则，以使Branch 2在&#x200B;**totalvalue**&#x200B;变量的值小于50000时有效。
 
@@ -173,13 +173,13 @@ OR拆分在工作流中创建拆分，之后只有一个分支处于活动状态
 
 与OR拆分步骤类似，您可以使用规则定义、ECMA脚本或外部脚本为Goto步骤定义路由表达式。
 
-您可以使用变量来定义使用表达式编辑器的路由表达式。 有关为“转至”步骤使用路由表达式的详细信息，请参阅[转至步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#goto-step)。
+您可以使用变量来定义使用表达式编辑器的路由表达式。 有关为“转至”步骤使用路由表达式的详细信息，请参阅[转至步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem?lang=zh-Hans#goto-step)。
 
 ![转到规则](assets/variables_goto_rule1_new.png)
 
 在本例中，如果&#x200B;**actiontaked**&#x200B;变量的值等于&#x200B;**需要更多信息**，则“转至”步骤将审核信用卡申请指定为下一个步骤。
 
-有关在“转至”步骤中使用规则定义的更多示例，请参阅[模拟For循环](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#simulateforloop)。
+有关在“转至”步骤中使用规则定义的更多示例，请参阅[模拟For循环](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem?lang=zh-Hans#simulateforloop)。
 
 #### 以Forms为中心的工作流步骤 {#forms-workflow-centric-workflow-steps}
 

@@ -160,7 +160,7 @@ ht-degree: 82%
 
 另请参阅：
 
-* [关于如何将 CC 闭路字幕添加到 Dynamic Media 视频的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
+* [关于如何将 CC 闭路字幕添加到 Dynamic Media 视频的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans#add-cc-closed-captioning-to-dynamic-media-video)
 * [将 Dynamic Media 视频发布到 YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 在下列插图中，URL 反映了引用转录文件（.vtt 文件）的字幕部分。视频在视频中给定的时间戳将口语（转录文本）作为&#x200B;**[!UICONTROL 闭路字幕]**&#x200B;反映出来。用户可以使用 **[!UICONTROL CC]** 按钮启用或禁用字幕。

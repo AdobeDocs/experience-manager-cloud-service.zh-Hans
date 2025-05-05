@@ -94,7 +94,7 @@ ht-degree: 96%
    >
    >可以自定义内容片段选件的 JSON 格式。为此，请定义一个客户内容片段组件，然后注明如何在组件“Sling 模型”中导出其属性。
    >
-   >请参阅核心组件：[核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+   >请参阅核心组件：[核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
 
 1. 在 **Adobe Target** 下，选择：
 
@@ -196,7 +196,7 @@ ht-degree: 96%
 
      >[!NOTE]
      >
-     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
+     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hans) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
      >
      >mbox.js 已被弃用，将在稍后阶段删除。
      >
@@ -268,7 +268,7 @@ ht-degree: 96%
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hans).
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用内容片段 {#using-your-content-fragments-in-adobe-target}
 
-执行上述任务后，将在 Target 中的选件页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)以了解可以实现的目标。
+执行上述任务后，将在 Target 中的选件页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -405,10 +405,10 @@ When you associate a page with the framework, the child pages inherit the associ
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
 
 * [Adobe Target 开发](https://developers.adobetarget.com/)
 
-* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)
 
-* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=zh-Hans)

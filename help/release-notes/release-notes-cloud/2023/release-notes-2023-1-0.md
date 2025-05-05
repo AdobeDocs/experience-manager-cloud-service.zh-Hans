@@ -19,11 +19,11 @@ ht-degree: 100%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版、2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 ### [!DNL Forms] 预发行版本中的新增功能 {#prerelease-features-forms}
 
-* **[使用数据捕获核心组件以构建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)**:[使用自适应表单编辑器](/help/forms/creating-adaptive-form-core-components.md)创建基于标准化数据捕获组件（核心组件）的表单。对于您的数字注册体验，这些组件可以提供定制功能，缩短开发时间和降低维护成本。
+* **[使用数据捕获核心组件以构建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)**:[使用自适应表单编辑器](/help/forms/creating-adaptive-form-core-components.md)创建基于标准化数据捕获组件（核心组件）的表单。对于您的数字注册体验，这些组件可以提供定制功能，缩短开发时间和降低维护成本。
 * **[对设置基于核心组件的自适应表单样式的前端管道支持](/help/forms/using-themes-in-core-components.md)**：为基于核心组件的自适应表单使用易于定制的基于 BEM 的主题，方式是使用前端部署管道来部署它们以改进表单外观。
 * **[为基于核心组件的自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)**：在提交时为基于核心组件的自适应表单创建记录以进行长期存档（采用打印或文档格式）。
 

@@ -36,7 +36,7 @@ ht-degree: 68%
    * 这些分类在整个 AEM 中是全局性的。
 * 标记可以由作者应用并由网站访客使用。
 * 在分配给页面或进行搜索时，所有形式的标记都可供选择，而无论标记创建者如何。
-* 标记由[列表组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)用来根据所选标记生成动态列表。
+* 标记由[列表组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=zh-Hans)用来根据所选标记生成动态列表。
 
 ## 标记要求 {#requirements}
 

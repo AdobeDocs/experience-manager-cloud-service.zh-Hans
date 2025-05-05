@@ -45,5 +45,5 @@ Best Practices Analyzer v2.1.22 的发布日期是 2021 年 12 月 1 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 已将切换添加到内容传输工具中的摄取阶段，以便允许用户在摄取期间禁用[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)。 为获得最佳的摄取速度，对于小型迁移集或如果自上次摄取以来只添加了几个Blob，应禁用摄取期间的预复制。
+* 已将切换添加到内容传输工具中的摄取阶段，以便允许用户在摄取期间禁用[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hans)。 为获得最佳的摄取速度，对于小型迁移集或如果自上次摄取以来只添加了几个Blob，应禁用摄取期间的预复制。
 * 用户映射已更新，以使用改进的用户管理API，允许一次获取2000个用户，显着提高了性能。

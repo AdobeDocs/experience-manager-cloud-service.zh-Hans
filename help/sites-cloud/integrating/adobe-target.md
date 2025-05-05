@@ -27,27 +27,27 @@ ht-degree: 100%
 
 要与 Target 集成，请执行以下任务：
 
-* [执行必备任务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html)：向 Adobe Target 注册并配置 AEM 创作实例的某些方面。您的 Adobe Target 帐户必须至少具有&#x200B;**批准者**&#x200B;级别权限。此外，您必须保护发布节点上的活动设置，以便用户无法访问。
+* [执行必备任务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=zh-Hans)：向 Adobe Target 注册并配置 AEM 创作实例的某些方面。您的 Adobe Target 帐户必须至少具有&#x200B;**批准者**&#x200B;级别权限。此外，您必须保护发布节点上的活动设置，以便用户无法访问。
 
 * Adobe Launch 是用于通过 Target 功能（JS 库）检测 AEM 站点的实际工具。因此，将 AEM as a Cloud Service 与 Launch 和 Adobe Target 集成是密切相关的（请参阅下面的链接）。
 
 <!--   
-  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=zh-Hans)
 -->
 
-* [集成 Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-* [通过 Adobe I/O 将 AEM 与 Adobe Launch 集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-* [了解 AEM 与 Adobe Launch、Analytics 和 Target 的集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+* [集成 Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=zh-Hans)
+* [通过 Adobe I/O 将 AEM 与 Adobe Launch 集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=zh-Hans)
+* [了解 AEM 与 Adobe Launch、Analytics 和 Target 的集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=zh-Hans)
 
 >[!NOTE]
 >
 >已在 AEM as a Cloud Service 中预配置 Adobe Launch 的 IMS 配置（技术帐户）。用户无需创建此配置。
 
-1. [配置活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)：将您的活动与 Target 云配置相关联。
+1. [配置活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html?lang=zh-Hans)：将您的活动与 Target 云配置相关联。
 
 >[!CAUTION]
 >
->在 AEM as a Cloud Service 中，默认情况下，将选件和活动从 AEM 同步到 Adobe Target 的复制代理处于禁用状态。如果您需要重新启用此复制代理，请联系 [Adobe 支持](https://experienceleague.adobe.com/?support-solution=General#support)团队。
+>在 AEM as a Cloud Service 中，默认情况下，将选件和活动从 AEM 同步到 Adobe Target 的复制代理处于禁用状态。如果您需要重新启用此复制代理，请联系 [Adobe 支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)团队。
 
 >[!NOTE]
 >
@@ -61,9 +61,9 @@ ht-degree: 100%
 >
 >确保发布实例中的活动设置节点 **cq:ActivitySettings** 安全，以使其不可由普通用户访问。该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
 >
->请参阅[与 Adobe Target 集成的先决条件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node)，以了解详细信息。
+>请参阅[与 Adobe Target 集成的先决条件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=zh-Hans#securing-the-activity-settings-node)，以了解详细信息。
 
-在集成完成后，您可以[创作目标内容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html)来将访客数据发送到 Adobe Target。页面组件需要特定代码才能启用内容定位。（请参阅[针对目标内容进行开发](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)。）
+在集成完成后，您可以[创作目标内容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html?lang=zh-Hans)来将访客数据发送到 Adobe Target。页面组件需要特定代码才能启用内容定位。（请参阅[针对目标内容进行开发](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html?lang=zh-Hans)。）
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ ht-degree: 100%
 
 将 AEM as a Cloud Service 与 Adobe Target 集成需要了解 Adobe Target、AEM Activities 管理和 AEM Audiences 管理。您应熟悉以下信息：
 
-* Adobe Target（请参阅 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/target-home.html)）。
-* AEM 活动控制台（请参阅[管理活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)）。
-* AEM 受众（请参阅[管理受众](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)）。
+* Adobe Target（请参阅 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=zh-Hans)）。
+* AEM 活动控制台（请参阅[管理活动](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html?lang=zh-Hans)）。
+* AEM 受众（请参阅[管理受众](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=zh-Hans)）。
 
 >[!NOTE]
 >

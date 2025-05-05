@@ -82,17 +82,17 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 >
 >IdP 仅执行对用户凭据的初始身份验证，只要 AEM 登录令牌 Cookie 可用，就可使用该 Cookie 执行对 AEM 的后续请求。
 
-请参阅文档，了解有关 [SAML 2.0 身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)的更多信息。
+请参阅文档，了解有关 [SAML 2.0 身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=zh-Hans)的更多信息。
 
 **OAuth/SSO**
 
-请参阅[单点登录 (SSO) 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)，了解有关使用 AEM 的 SSO 身份验证处理程序服务的信息。
+请参阅[单点登录 (SSO) 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=zh-Hans)，了解有关使用 AEM 的 SSO 身份验证处理程序服务的信息。
 
 可以使用您选择的 OAuth 提供程序来实施 `com.adobe.granite.auth.oauth.provider` 接口。
 
 **先决条件：**
 
-作为最佳实践，在存储用户特定的数据时，始终依靠idP（身份提供程序）作为单一信任点。 如果其他用户信息存储在非idP一部分的本地存储库中，请通过向客户支持提交请求（指明适当的项目和环境）来启用[数据同步](#data-synchronization-data-synchronization)。 除了[数据同步](#data-synchronization-data-synchronization)之外，对于SAML身份验证提供程序，请确保已启用[动态组成员资格](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)。
+作为最佳实践，在存储用户特定的数据时，始终依靠idP（身份提供程序）作为单一信任点。 如果其他用户信息存储在非idP一部分的本地存储库中，请通过向客户支持提交请求（指明适当的项目和环境）来启用[数据同步](#data-synchronization-data-synchronization)。 除了[数据同步](#data-synchronization-data-synchronization)之外，对于SAML身份验证提供程序，请确保已启用[动态组成员资格](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)。
 
 ### 粘性会话和封装令牌 {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在�
 可通过两种方式写入和读取用户配置文件信息：
 
 * 通过 `com.adobe.granite.security.user` 接口 UserPropertiesManager 接口进行服务器端使用，这会将数据放置在 `/home/users` 中的用户节点下。确保不缓存每个用户的唯一页面。
-* 使用 ContextHub 的客户端，如[文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization)所述。
+* 使用 ContextHub 的客户端，如[文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=zh-Hans#personalization)所述。
 
 **先决条件：**
 
@@ -129,7 +129,7 @@ AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在�
 
 ## 权限（封闭用户组） {#permissions-closed-user-groups}
 
-Publish层访问策略(也称为封闭用户组(CUG))是在AEM创作中定义的，请参阅[创建封闭用户组](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)。 为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
+Publish层访问策略(也称为封闭用户组(CUG))是在AEM创作中定义的，请参阅[创建封闭用户组](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=zh-Hans#applying-your-closed-user-group-to-content-pages)。 为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
 
 * 如果用户通过使用 SAML 向标识提供者 (IdP) 进行身份验证来登录，则身份验证处理程序将识别用户的组成员资格（应与发布层上的 CUG 匹配），并通过存储库记录保留用户与组之间的关联
 * 如果在没有 IdP 集成的情况下完成登录，则自定义代码可应用相同的存储库结构关系。

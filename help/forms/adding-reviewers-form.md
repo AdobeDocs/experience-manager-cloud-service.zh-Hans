@@ -60,7 +60,7 @@ ht-degree: 0%
 执行以下步骤之前，请参阅[先决条件](adding-reviewers-form.md#prerequisite)。
 
 若要创建组并向其添加成员，请导航到&#x200B;**工具** > **操作** > **安全** > **组**。
-有关详细信息，请参阅[用户管理和服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。
+有关详细信息，请参阅[用户管理和服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)。
 确保将您创建的组添加为现成用户组的成员： **forms-submission-reviewers**。 此用户组随[!DNL AEM Forms]一起提供，它确保将用户添加为提交审核者。
 
 要将用户组与自适应表单关联，请执行以下操作：

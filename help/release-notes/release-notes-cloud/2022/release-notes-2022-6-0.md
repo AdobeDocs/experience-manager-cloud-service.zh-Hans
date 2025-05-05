@@ -21,7 +21,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -43,7 +43,7 @@ ht-degree: 79%
 
   ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 
-* 新[目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动呈现目录。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
+* 新[目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=zh-Hans)不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动呈现目录。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

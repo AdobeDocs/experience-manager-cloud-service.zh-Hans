@@ -107,9 +107,9 @@ AEM as a Cloud Service部署信息卡提供所有相关内容，可帮助您将�
    >迁移集在长时间不活动后过期。 有关详细信息，请参阅[迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)。
 
    >[!NOTE]
-   >在使用内容传输工具之前，请参阅[先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html)以及[最佳实践和准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)。
+   >在使用内容传输工具之前，请参阅[先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hans)以及[最佳实践和准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans)。
 
-1. 下载并安装内容传输工具以填充迁移集并完成内容传输的提取阶段。 查看[内容传输工具入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#)以了解如何使用内容传输工具。
+1. 下载并安装内容传输工具以填充迁移集并完成内容传输的提取阶段。 查看[内容传输工具入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#)以了解如何使用内容传输工具。
 
 1. 要将内容从迁移集摄取到AEM as a Cloud Service上的环境，您必须开始摄取。 导航到&#x200B;**引入作业**，然后单击&#x200B;**新建引入**。 查看[将内容摄取到Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，以便了解如何完成内容传输的摄取阶段。
 
@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 后续内容 {#whats-next}
 
-在了解如何登录Cloud Acceleration Manager以及如何使用“实施”阶段后，您就可以继续查看[上线阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html)的下一步。
+在了解如何登录Cloud Acceleration Manager以及如何使用“实施”阶段后，您就可以继续查看[上线阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=zh-Hans)的下一步。

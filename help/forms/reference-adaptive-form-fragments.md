@@ -34,7 +34,7 @@ ht-degree: 1%
 * 条款和条件
 * 带涂鸦的条款和条件
 
-安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 若要安装包，请参阅[通过Cloud Manager和包管理器部署内容包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)和[如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
+安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 若要安装包，请参阅[通过Cloud Manager和包管理器部署内容包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans#deploying-content-packages-via-cloud-manager-and-package-manager)和[如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)。
 
 ![列出了所有片段](assets/ootb-frags.png)
 

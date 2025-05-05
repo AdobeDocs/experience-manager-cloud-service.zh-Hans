@@ -97,7 +97,7 @@ ht-degree: 1%
 
 **响应行为：**&#x200B;在移动设备上，向导会保持其分步方式，但会调整每个步骤中的内容以适合较窄的屏幕，通常是将并排显示在较大屏幕上的元素栈叠在一起。
 
-您可以使用[向导组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表单中添加向导布局。 有关如何配置向导组件的各种属性的详细说明，请参阅[向导组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)一文。
+您可以使用[向导组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表单中添加向导布局。 有关如何配置向导组件的各种属性的详细说明，请参阅[向导组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)一文。
 
 ### 可折叠项布局
 
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 **响应式行为：**&#x200B;折叠面板在移动设备上效果特别好，因为它们仅显示扩展的内容部分，自然会节省垂直空间，非常适合较小的屏幕。
 
-您可以使用[折叠组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)在表单中添加折叠布局。 有关如何配置折叠组件的各种属性的详细说明，请参阅[折叠组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)文章。
+您可以使用[折叠组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)在表单中添加折叠布局。 有关如何配置折叠组件的各种属性的详细说明，请参阅[折叠组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)文章。
 
 ### 如何选择正确的布局？
 

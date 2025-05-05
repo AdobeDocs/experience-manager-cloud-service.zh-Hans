@@ -54,4 +54,4 @@ Cloud Acceleration Manager的发布日期是2022年6月2日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager现在为用户提供了启动和管理内容传输的功能，以便将内容从客户的AEM实例(内部部署或AdobeManaged Services)移动到AEM as a Cloud Service，作为迁移项目的一部分。 有关更多详细信息，请参阅[使用内容传输卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer)。
+* Cloud Acceleration Manager现在为用户提供了启动和管理内容传输的功能，以便将内容从客户的AEM实例(内部部署或AdobeManaged Services)移动到AEM as a Cloud Service，作为迁移项目的一部分。 有关更多详细信息，请参阅[使用内容传输卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=zh-Hans#content-transfer)。

@@ -46,7 +46,7 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 
 >[!TIP]
 >
->任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+>任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ### 什么是 SPA？ {#what-is-a-spa}
 

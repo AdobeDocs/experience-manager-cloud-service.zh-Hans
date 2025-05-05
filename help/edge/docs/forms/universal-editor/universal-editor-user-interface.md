@@ -191,7 +191,7 @@ Experience Cloud标题显示在控制台顶部，并在更广泛的Adobe Experie
 
   >[!NOTE]
   >
-  > 有关使用生成表单变体的详细说明，请参阅[生成变体](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)文章。
+  > 有关使用生成表单变体的详细说明，请参阅[生成变体](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)文章。
 
 - **正在试验**
 

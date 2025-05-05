@@ -27,6 +27,6 @@ ht-degree: 4%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 当源AEM实例配置为使用文件数据存储来显着加快提取阶段时，支持将可选[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)步骤添加到与内容传输工具一起使用。
+* 当源AEM实例配置为使用文件数据存储来显着加快提取阶段时，支持将可选[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hans)步骤添加到与内容传输工具一起使用。
 
 * 在内容传输工具UI中，向摄取阶段添加了其他描述性消息，以指示何时正在进行索引和蒙哥恢复步骤。

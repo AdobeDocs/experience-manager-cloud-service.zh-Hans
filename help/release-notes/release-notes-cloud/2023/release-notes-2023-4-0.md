@@ -19,11 +19,11 @@ ht-degree: 100%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版或 2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -44,9 +44,9 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 预发行版本中的新增功能 {#prerelease-sites}
 
-* 内容片段及其引用现在可以使用[内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)发布到 [AEM 预览服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html#access-preview-service)，允许用户在上线前在解耦的预览应用程序上预览最终体验。
-* 现在可以使用 AEM GraphQL 在 Headless 场景中动态优化图像以实现 Web 交付。[查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables)可以在 GraphQL 查询中定义，以允许解耦的客户端应用程序从 AEM 请求相应优化的图像。
-* [内容片段变体](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html)上的标记现在可以使用 AEM GraphQL 内容交付 API 将其输出为 JSON。
+* 内容片段及其引用现在可以使用[内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hans)发布到 [AEM 预览服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans#access-preview-service)，允许用户在上线前在解耦的预览应用程序上预览最终体验。
+* 现在可以使用 AEM GraphQL 在 Headless 场景中动态优化图像以实现 Web 交付。[查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=zh-Hans#query-variables)可以在 GraphQL 查询中定义，以允许解耦的客户端应用程序从 AEM 请求相应优化的图像。
+* [内容片段变体](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=zh-Hans)上的标记现在可以使用 AEM GraphQL 内容交付 API 将其输出为 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -68,11 +68,11 @@ ht-degree: 100%
    * 自适应流式处理 (DASH/HLS) 确保改善用户对视频的观看体验
    * DASH 是自适应视频流式处理的国际标准协议，在业界得到广泛应用
 
-* Dynamic Media _快照_ – 体验测试图像或 Dynamic Media URL，查看不同图像修改器的输出，以及针对文件大小（使用 WebP 和 AVIF 交付）、网络带宽和设备像素比率使用智能成像优化。请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)
+* Dynamic Media _快照_ – 体验测试图像或 Dynamic Media URL，查看不同图像修改器的输出，以及针对文件大小（使用 WebP 和 AVIF 交付）、网络带宽和设备像素比率使用智能成像优化。请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=zh-Hans)
 
 ### [!DNL Assets] 预发行版本中的功能 {#prerelease-feature-assets}
 
-* Dynamic Media – 图像配置文件中一些与 Smart Crop 相关的字段的用户界面现已更新，可反映当前定义 Smart Crop 的指南。请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options)。
+* Dynamic Media – 图像配置文件中一些与 Smart Crop 相关的字段的用户界面现已更新，可反映当前定义 Smart Crop 的指南。请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hans#crop-options)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

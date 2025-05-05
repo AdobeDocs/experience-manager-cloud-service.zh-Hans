@@ -29,7 +29,7 @@ Dispatcher配置结构在Managed Services和AEM as a Cloud Service之间有所�
 ## 如何将AMS转换为AEM as a Cloud Service Dispatcher配置
 
 以下部分提供了有关如何转换AMS配置的分步说明。 它假定
-您有一个存档，其结构与[Cloud Manager Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中所述的结构相似
+您有一个存档，其结构与[Cloud Manager Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=zh-Hans)中所述的结构相似
 
 ### 提取存档并删除最后的前缀
 

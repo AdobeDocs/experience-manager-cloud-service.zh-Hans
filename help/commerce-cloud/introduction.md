@@ -61,7 +61,7 @@ CIF 加载项将产品上下文引入 Experience Manager 中，并提供产品�
 
 ### 价值实现时间 (TTV) {#ttv}
 
-使用 [AEM 核心组件](https://www.aemcomponents.dev/)、[AEM Venia 引用店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)以及 PWA（Headless 内容和商务）的集成模式来加快项目开发。
+使用 [AEM 核心组件](https://www.aemcomponents.dev/)、[AEM Venia 引用店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)以及 PWA（Headless 内容和商务）的集成模式来加快项目开发。
 
 CIF 旨在通过始终保持最新的加载项持续创新，使客户能够访问新的和改进的功能。
 

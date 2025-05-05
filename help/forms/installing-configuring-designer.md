@@ -17,7 +17,7 @@ ht-degree: 7%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=zh-Hans) |
 
 Designer是一款点击式图形表单设计工具，可简化XDP和PDF表单模板的创建。 您可以设计表单模板、定义其逻辑以及满足严格的法规要求。 XDP和PDF表单用作自适应表单中的记录文档模板。 这些表单模板与[自适应表单模板](template-editor.md)不同。
 

@@ -76,7 +76,7 @@ AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 发布了AIO-CLI插件的新版本。 此插件的最新版本包括对AEM Dispatcher Converter和Repository Modernizer的错误修复，并且支持新的实用程序 — 索引转换器。 请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits)，了解有关此插件的更多信息。
+* 发布了AIO-CLI插件的新版本。 此插件的最新版本包括对AEM Dispatcher Converter和Repository Modernizer的错误修复，并且支持新的实用程序 — 索引转换器。 请参阅[统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=zh-Hans#benefits)，了解有关此插件的更多信息。
 
 * 索引转换器是一个实用程序，可用于将客户的自定义OAK索引定义转换为与AEM as a Cloud Service兼容的OAK索引定义。 有关详细信息，请参阅[索引转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 服务器到服务器身份验证的API调用 — 生成适当的访问令牌，以在外部应用程序和AEM as a Cloud Service环境之间进行经过身份验证的服务器到服务器API调用。 通过阅读[文档](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或参阅[教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication)了解更多信息。
+* 服务器到服务器身份验证的API调用 — 生成适当的访问令牌，以在外部应用程序和AEM as a Cloud Service环境之间进行经过身份验证的服务器到服务器API调用。 通过阅读[文档](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或参阅[教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hans#authentication)了解更多信息。
 
 ### SDK 内部版本分析程序 {#sdk-build-analyzers}
 
@@ -111,6 +111,6 @@ AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中
 
 ### [!DNL Content Transfer Tool] 的新增功能 {#what-is-new-ctt}
 
-* 向内容传输工具添加了新功能和UI — 用户映射工具。 此功能在内容迁移活动中自动将现有用户和组映射到其AdobeIdentity Management系统ID。 有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
+* 向内容传输工具添加了新功能和UI — 用户映射工具。 此功能在内容迁移活动中自动将现有用户和组映射到其AdobeIdentity Management系统ID。 有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=zh-Hans)。
 * 内容传输工具现在迁移在迁移集中引用的所有组和用户，包括儿童。
 * 在创建迁移集时，允许用户选择`/etc`下的某些路径。

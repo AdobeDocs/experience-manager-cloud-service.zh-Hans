@@ -40,7 +40,7 @@ ht-degree: 1%
 1. 导航到现有Screens渠道或创建渠道。
 
    >[!NOTE]
-   >要了解如何创建渠道并将内容添加到渠道，请参阅[在Screens中创建和管理渠道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)。
+   >要了解如何创建渠道并将内容添加到渠道，请参阅[在Screens中创建和管理渠道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=zh-Hans)。
 
 1. 选择渠道。 在操作栏上，单击&#x200B;**编辑**&#x200B;以打开编辑器。
 

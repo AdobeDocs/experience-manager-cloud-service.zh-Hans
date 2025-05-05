@@ -22,7 +22,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service（基础组件） | 本文 |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/adaptive-form-fragments-core-components.md) |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=zh-Hans) |
 
 虽然每个表单都是为特定目的而设计的，但大多数表单中都有一些常见的部分，例如提供个人详细信息，如姓名和地址、家庭详细信息、收入详细信息等。 每次创建新表单时，表单开发人员都需要创建这些常用区段。 自适应表单提供了一种便捷的机制，只需创建一次表单段（如面板或一组字段），并在自适应表单中重复使用它们。 这些可重用的独立区段称为自适应表单片段。
 

@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="选准 KPI"
 >abstract="在数字世界中，您几乎可以衡量一切指标。为 Adobe Experience Manager 实施选择合适的 KPI 可帮助您的团队将注意力放在最重要的事情上。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="评估 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="选择合适的团队"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=zh-Hans" text="评估 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=zh-Hans" text="选择合适的团队"
 
 在数字世界中，您几乎可以衡量一切指标。为 Adobe Experience Manager 实施选择三个 KPI 可帮助您的团队将注意力放在最重要的事情上。
 
@@ -42,4 +42,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->[**下载 KPI 方法模板**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**下载 KPI 方法模板**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=zh-Hans)

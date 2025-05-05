@@ -64,7 +64,7 @@ URL的第一个红色部分引用了服务器域本身。 在这种情况下，D
 现在将`500`像素的宽度值更改为`1000`像素，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}。
 当您按&#x200B;**[!UICONTROL Enter]**&#x200B;时，浏览器将返回到Dynamic Media图像服务器。 它会根据您刚刚输入的新宽度值生成手表的全新演绎版，然后将新图像发送回浏览器，然后进行缓存。
 
-Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资产。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)查看他们的列表。
+Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资产。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans)查看他们的列表。
 
 现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧跟`wid=1000`，键入`&rotate=90`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}。
 
@@ -216,7 +216,7 @@ _应用了弹出查看器的`Running`图像集。_
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -225,8 +225,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media教程_
 
-* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
+* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/zh-hans?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
 
 _Dynamic Media查看器_
 

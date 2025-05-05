@@ -16,7 +16,7 @@ ht-degree: 4%
 本节介绍如何在Cloud Manager中为项目创建分支。
 
 >[!NOTE]
->请参阅[在Cloud Manager中使用向导](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html)，了解如何使用该向导在Cloud Manager中创建AEM应用程序项目。
+>请参阅[在Cloud Manager中使用向导](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=zh-Hans)，了解如何使用该向导在Cloud Manager中创建AEM应用程序项目。
 
 ## 目标 {#objective}
 

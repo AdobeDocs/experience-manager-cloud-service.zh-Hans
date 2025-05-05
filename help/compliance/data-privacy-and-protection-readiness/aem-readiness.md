@@ -99,6 +99,6 @@ Adobe 提供过程用于处理与访问、删除和选择退出 Adobe Experience
 Adobe Experience Manager as a Cloud Service 与 Adobe Target 和 Adobe Analytics 之间的集成是通过数据保护和隐私（例如 GDPR）就绪型服务实现的。Adobe Target 或 Adobe Analytics 中的任何个人数据都不会存储在与集成相关的 AEM 中。
 有关更多信息，请参阅:
 
-* [Adobe Target - 隐私概述](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
+* [Adobe Target - 隐私概述](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=zh-Hans)
 
-* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)

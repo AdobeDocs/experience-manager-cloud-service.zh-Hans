@@ -27,7 +27,7 @@ Cloud Acceleration Manager的发布日期为2021年10月25日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager现在允许用户在趋势线报告中查看历史BPA报告。 通过此报表，用户能够以易于使用的图形表示形式查看他们所取得的进展。 有关更多详细信息，请参阅[使用查看趋势线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam)。
+Cloud Acceleration Manager现在允许用户在趋势线报告中查看历史BPA报告。 通过此报表，用户能够以易于使用的图形表示形式查看他们所取得的进展。 有关更多详细信息，请参阅[使用查看趋势线](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans#trendline-view-cam)。
 
 ### 发布日期 {#release-date-october-cam}
 
@@ -35,7 +35,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 ### 新增功能 {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager现在允许用户在可打印预览中查看BPA报告，并允许简单打印或打印以PDF以便于共享。 请参阅[使用最佳实践分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis)中的步骤6和步骤7。
+Cloud Acceleration Manager现在允许用户在可打印预览中查看BPA报告，并允许简单打印或打印以PDF以便于共享。 请参阅[使用最佳实践分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans#best-practices-analysis)中的步骤6和步骤7。
 
 
 ## 内容转移工具 {#ctt-release}
@@ -46,7 +46,7 @@ Cloud Acceleration Manager现在允许用户在可打印预览中查看BPA报告
 
 ### 新增功能 {#what-is-new-ctt-oct}
 
-* 改进了用户映射工具，简化了用户体验，包括以下列出的功能。 有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html)。
+* 改进了用户映射工具，简化了用户体验，包括以下列出的功能。 有关详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=zh-Hans)。
    * 在运行用户映射之前测试与用户管理API的连接
    * 正常跳过错误并继续用户映射活动
    * 如果&#x200B;**访问令牌**&#x200B;在24小时后过期，则用户映射不再失败。 可以从上次停止的位置重新运行用户映射。

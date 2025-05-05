@@ -99,9 +99,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->[内容片段组件是核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)的一部分。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)。
+>[内容片段组件是核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)的一部分。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
 
-可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供了&#x200B;**[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** — 一个[组件，它允许您在页面上包含内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此&#x200B;**[内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)**&#x200B;核心组件。
+可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供了&#x200B;**[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)** — 一个[组件，它允许您在页面上包含内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此&#x200B;**[内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)**&#x200B;核心组件。
 
 * 组件使用`fragmentPath`属性引用实际内容片段。 `fragmentPath`属性的处理方式与其他资产类型的类似属性相同；例如，当内容片段移动到其他位置时。
 
@@ -351,4 +351,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 有关更多信息，请参阅
 
-* [核心组件 — 内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) （推荐）
+* [核心组件 — 内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans) （推荐）

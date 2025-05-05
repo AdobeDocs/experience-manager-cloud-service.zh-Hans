@@ -15,11 +15,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 在创作表单时，可在编辑器中添加字段和组件以定义表单结构、内容和操作。 您在表单容器的`guideRootPanel`中添加字段和组件。 使用模板编辑器，您可以创建一个模板，其中包含作者可用于创建表单的基本结构和初始内容。
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 您可以从“工具”菜单访问模板编辑器，方法是导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 模板]**。 在此处，模板在启用可编辑模板的文件夹中进行组织。
 
-Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
+Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=zh-Hans#editing-templates-template-authors)。
 
 ### 创建模板 {#create-template}
 
@@ -160,7 +160,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
 ## 导入或导出模板 {#importing-or-exporting-a-template}
 
-表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`https://<server>:<port>/crx/packmgr`中的`/conf`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您也可以[使用AEM Archype创建模板并将其部署到Cloud Service实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
+表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`https://<server>:<port>/crx/packmgr`中的`/conf`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您也可以[使用AEM Archype创建模板并将其部署到Cloud Service实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=zh-Hans#prerequisites)。
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Perform the following steps to show and hide templates:
 
 * 在模板编辑器中修改表单的属性时，请勿使用BindReference属性。
 * 如果要添加断点，请在创作自适应表单模板时创建断点。
-有关断点的详细信息，请参阅[响应布局](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring)。
+有关断点的详细信息，请参阅[响应布局](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=zh-Hans#authoring)。
 
 
 ## 另请参阅 {#see-also}

@@ -635,7 +635,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 从旧模式迁移到灵活模式 {#migrating}
 
-在Cloud Manager 2021.7.0版本中，新的Cloud Manager程序将生成具有[AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)或更高版本的Maven项目结构，其中包括文件&#x200B;**opt-in/USE_SOURCES_DIRECTLY**。 它删除了[旧模式](/help/implementing/dispatcher/validation-debug-legacy.md)以前对文件数量和大小的限制，还导致SDK和运行时以改进的方式验证和部署配置。 如果您的Dispatcher配置没有此文件，强烈建议您迁移。 请使用以下步骤确保安全过渡：
+在Cloud Manager 2021.7.0版本中，新的Cloud Manager程序将生成具有[AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)或更高版本的Maven项目结构，其中包括文件&#x200B;**opt-in/USE_SOURCES_DIRECTLY**。 它删除了[旧模式](/help/implementing/dispatcher/validation-debug-legacy.md)以前对文件数量和大小的限制，还导致SDK和运行时以改进的方式验证和部署配置。 如果您的Dispatcher配置没有此文件，强烈建议您迁移。 请使用以下步骤确保安全过渡：
 
 1. **本地测试。**&#x200B;使用最新的Dispatcher tools SDK，添加文件夹和文件`opt-in/USE_SOURCES_DIRECTLY`。 按照本文中的“本地验证”说明进行操作，以便测试Dispatcher是否可以在本地工作。
 1. **云开发测试：**

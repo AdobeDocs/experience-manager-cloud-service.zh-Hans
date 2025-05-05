@@ -89,7 +89,7 @@ hidefromtoc: yes -->
 
   控制任何现有手动裁切定义的保留。
 
-  另请参阅Dynamic Media查看器参考指南中的[UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
+  另请参阅Dynamic Media查看器参考指南中的[UploadPostJob](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
 
 ## 默认上载选项 {#default-upload-options}
 
@@ -106,7 +106,7 @@ hidefromtoc: yes -->
 | **[!UICONTROL 阈值]** | 必需。<br>阈值是应用钝化蒙版滤镜时忽略的对比度范围。 这种效果非常重要，因此使用此滤波器时，图像不会引入“杂色”。 值范围为`0` - `255`，这是灰度图像中的亮度阶数。 `0`=黑色，`128`=50%灰色和`255`=白色。<br>阈值为`12`时，忽略肤色亮度的细微变化，以避免添加杂色，但仍会为相异区域（如睫毛与皮肤相遇的区域）添加边缘对比度。<br>如果您有某人的面部照片，则“钝化蒙版”会影响图像的对比度部分。 例如，睫毛和皮肤相遇可产生明显对比区域，而皮肤本身光滑。 即使最光滑的皮肤也会表现出亮度值的细微变化。 如果不使用阈值，则滤镜会强调外观像素中的这些细微变化。 反过来，在增加睫毛上的对比度的同时，产生噪音和不希望的效果，增强锐利度。<br>为了避免此问题，引入了一个阈值，该阈值告知滤镜忽略对比度没有显着变化的像素，如平滑外观。<br>在前面显示的拉链图形中，请注意拉链旁边的纹理。 由于阈值过低，图像噪声难以抑制。 |
 | **[!UICONTROL 单色]** | 选择以钝化蒙版图像亮度（强度）。<br>取消选择以分别取消锐化每个颜色分量的蒙版。 |
 
-另请参阅[在Adobe Dynamic Media和图像服务器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en)上锐化图像。
+另请参阅[在Adobe Dynamic Media和图像服务器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=zh-Hans)上锐化图像。
 
 ### PostScript选项卡 {#postscript-tab}
 

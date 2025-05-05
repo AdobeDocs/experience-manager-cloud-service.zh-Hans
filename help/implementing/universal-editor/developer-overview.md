@@ -32,8 +32,8 @@ ht-degree: 1%
 
 要遵循本概述，您需要以下可用项。
 
-* [AEM as a Cloud Service的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * 您的本地开发实例必须在`localhost`[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上使用HTTPS进行配置以进行开发。
+* [AEM as a Cloud Service的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
+   * 您的本地开发实例必须在`localhost`[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)上使用HTTPS进行配置以进行开发。
    * [必须安装WKND演示站点](https://github.com/adobe/aem-guides-wknd)。
 * [访问通用编辑器](/help/implementing/universal-editor/getting-started.md#onboarding)。
 * [本地通用编辑器服务](/help/implementing/universal-editor/local-dev.md)正在运行以进行开发。

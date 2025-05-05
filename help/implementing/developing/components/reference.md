@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 组件参考指南 {#components-reference-guide}
 
-组件是在AEM中构建体验的核心。 使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松开始使用一组现成的可靠组件。 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)将指导开发人员了解如何使用这些工具以及如何构建自定义组件来创建AEM站点。
+组件是在AEM中构建体验的核心。 使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，可以轻松开始使用一组现成的可靠组件。 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)将指导开发人员了解如何使用这些工具以及如何构建自定义组件来创建AEM站点。
 
 >[!TIP]
 >
->在引用此文档之前，请确保您已完成[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，并因此熟悉[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)。
+>在引用此文档之前，请确保您已完成[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，并因此熟悉[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)。
 
 由于WKND教程涵盖了大多数用例，因此，本文档仅用于补充这些资源。 它提供了有关如何在AEM中构建和配置组件的深入技术细节，并非旨在作为快速入门指南。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 #### 扩展核心组件 {#extending-core-components}
 
-核心组件还提供了[清晰的自定模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)，您可以使用这些模式来调整它们以适应您自己的项目需求。
+核心组件还提供了[清晰的自定模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans)，您可以使用这些模式来调整它们以适应您自己的项目需求。
 
 #### 覆盖组件 {#overlying-components}
 
@@ -61,12 +61,12 @@ ht-degree: 1%
 
 建议将负责标记和呈现的代码与控制用于选择组件内容的逻辑的代码分开。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
 
 此（可选）逻辑可以通过不同的方式实现，并且可通过特定命令从HTL调用：
 
-* 使用Java - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)让HTL文件可以访问自定义Java类中的Helper方法。 这使您能够使用Java代码实施用于选择和配置组件内容的逻辑。
-* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)让HTL文件可以访问使用JavaScript编写的帮助程序代码。 这使您能够使用JavaScript代码实施用于选择和配置组件内容的逻辑。
+* 使用Java - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=zh-Hans)让HTL文件可以访问自定义Java类中的Helper方法。 这使您能够使用Java代码实施用于选择和配置组件内容的逻辑。
+* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=zh-Hans)让HTL文件可以访问使用JavaScript编写的帮助程序代码。 这使您能够使用JavaScript代码实施用于选择和配置组件内容的逻辑。
 * 使用客户端库 — 现代网站在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 有关详细信息，请参阅文档[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用客户端库。
 
 ## 组件结构 {#structure}

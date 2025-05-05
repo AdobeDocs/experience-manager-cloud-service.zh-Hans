@@ -19,11 +19,11 @@ ht-degree: 91%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版或 2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 
 [通过声明按属性（包括 URL、IP 地址和用户代理）匹配网站流量的规则，过滤 Adobe Managed CDN ](/help/security/traffic-filter-rules-including-waf.md)上的流量，或设置自定义流量速率限制以防范 DoS 攻击。客户还可以许可一组高级 Web 应用程序防火墙 (WAF) 规则，以针对复杂的网站威胁提供额外的保护。
 
-我们建议您通过[尝试教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)来熟悉流量过滤器规则！ 它会引导您完成设置新的 Cloud Manager 配置管道、在配置文件中声明规则，以及分析 CDN 日志中的恶意流量。
+我们建议您通过[尝试教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=zh-Hans)来熟悉流量过滤器规则！ 它会引导您完成设置新的 Cloud Manager 配置管道、在配置文件中声明规则，以及分析 CDN 日志中的恶意流量。
 
 目前开发环境上具有可用的流量过滤规则，并将会在 11 月份逐步推广到暂存和生产环境。通过向 **aemcs-waf-adopter@adobe.com** 发送电子邮件，可申请提前在暂存和生产环境上使用该功能。
 

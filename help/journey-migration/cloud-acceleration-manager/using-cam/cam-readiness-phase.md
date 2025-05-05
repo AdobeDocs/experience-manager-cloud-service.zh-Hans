@@ -53,7 +53,7 @@ ht-degree: 7%
    1. 导航到[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*)门户，并将最佳实践分析器下载为zip文件。
 
       >[!NOTE]
-      >查看[使用最佳实践分析器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations)以了解如何运行BPA。
+      >查看[使用最佳实践分析器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=zh-Hans#imp-considerations)以了解如何运行BPA。
 
 1. 在CAM中，单击&#x200B;**获取上传密钥**，以便获取用于配置系统以将BPA报告自动直接上传到CAM的密钥。
 
@@ -161,7 +161,7 @@ ht-degree: 7%
 ![报告筛选器](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->请参阅[解释Best Practices Analyzer报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html)以了解调查结果类别和重要性级别。
+>请参阅[解释Best Practices Analyzer报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=zh-Hans)以了解调查结果类别和重要性级别。
 
 #### 最佳实践评估 {#best-practices-assessment}
 
@@ -222,4 +222,4 @@ ht-degree: 7%
 
 ## 后续内容 {#whats-next}
 
-在了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在已准备好继续查看[实施阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html)的下一步。
+在了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在已准备好继续查看[实施阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=zh-Hans)的下一步。

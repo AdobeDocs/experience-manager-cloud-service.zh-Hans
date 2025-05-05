@@ -136,7 +136,7 @@ AEM 提供了一个内置定位引擎 [ContextHub](/help/implementing/developing
 
 1. 配置受众。
 
-   1. 根据您的定位引擎，定义[目标受众](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)或者 [ContextHub 区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)，以及规则。
+   1. 根据您的定位引擎，定义[目标受众](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=zh-Hans)或者 [ContextHub 区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)，以及规则。
 
 1. 创建您的[品牌与活动](/help/sites-cloud/authoring/personalization/activities.md)。
 

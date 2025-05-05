@@ -20,11 +20,11 @@ ht-degree: 95%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版或 2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -105,7 +105,7 @@ Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内
 
   您可以通过您的官方电子邮件 ID 向 `aem-forms-ea@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
-* **[Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用 Headless 自适应表单使您的开发人员可创建、发布和管理可通过 API 而非传统图形用户界面访问和交互的交互式表单。Headless 自适应表单可帮助您：
+* **[Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hans)**：使用 Headless 自适应表单使您的开发人员可创建、发布和管理可通过 API 而非传统图形用户界面访问和交互的交互式表单。Headless 自适应表单可帮助您：
 
    * 使用选定的编程语言构建高质量的多渠道表单
    * 将表单本机集成到您的桌面和移动应用程序、网站和聊天应用程序

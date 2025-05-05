@@ -229,15 +229,15 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## 管理私人收藏集的权限{#manage-permissions-private-collection}
 
-您可以允许管理员管理存储库中专用收藏集的[访问级别](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。您可以向用户组或用户分配诸如 `Can View` 和 `Can Edit` 等权限。您还可以将权限管理权限委派给用户组。创建专用收藏集的用户是这些收藏的所有者。他们可以使用“[!UICONTROL 管理权限]”操作向其他用户授予访问权限。此外，管理员可以查看和管理 [!DNL Experience Manager] 存储库中专用收藏集的权限。
+您可以允许管理员管理存储库中专用收藏集的[访问级别](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。您可以向用户组或用户分配诸如 `Can View` 和 `Can Edit` 等权限。您还可以将权限管理权限委派给用户组。创建专用收藏集的用户是这些收藏的所有者。他们可以使用“[!UICONTROL 管理权限]”操作向其他用户授予访问权限。此外，管理员可以查看和管理 [!DNL Experience Manager] 存储库中专用收藏集的权限。
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-有关如何向用户组分配可用权限的信息，请参阅[向用户组添加权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
+有关如何向用户组分配可用权限的信息，请参阅[向用户组添加权限](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
-有关端到端工作流程的更多信息，请参阅[管理权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
+有关端到端工作流程的更多信息，请参阅[管理权限](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 后续步骤 {#next-steps}
 
@@ -245,4 +245,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)

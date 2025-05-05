@@ -66,4 +66,4 @@ Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问
 
 您可以随时撤消访问口令。
 
-为此，请[为此请求](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)创建支持工单。 票证将优先处理，通常在一天内撤销。
+为此，请[为此请求](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&amp;support-tab=home#support)创建支持工单。 票证将优先处理，通常在一天内撤销。

@@ -70,7 +70,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
    >
    > 用户无需修改客户端JavaScript验证URL和服务器端验证URL，因为它们已为Turnstile验证预先填充。
 
-   配置Turnstile Captcha服务后，即可在基于核心组件的[自适应表单中使用](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)。
+   配置Turnstile Captcha服务后，即可在基于核心组件的[自适应表单中使用](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction)。
 
 ## 在自适应表单中使用 Turnstile {#using-turnstile-core-components}
 

@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 可自定义的内容 {#what-can-be-customized}
 
-本文列出了自适应Forms的公开可用的css类。 您可以使用这些类设置自适应表单各种组件的样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法使用[主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)来样式组件时，才使用这些样式构造创建样式（使用CSS或更少）。
+本文列出了自适应Forms的公开可用的css类。 您可以使用这些类设置自适应表单各种组件的样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法使用[主题编辑器](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/themes.html)来样式组件时，才使用这些样式构造创建样式（使用CSS或更少）。
 
 ## 在自适应Forms中自定义样式 {#customizing-styles-in-adaptive-forms}
 

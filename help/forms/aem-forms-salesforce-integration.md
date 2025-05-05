@@ -16,7 +16,7 @@ ht-degree: 56%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 Adobe Experience Manager (AEM) Forms与Salesforce集成允许组织通过将表单创建和管理功能与Salesforce平台连接来简化流程。 将自适应表单与Salesforce连接可支持两种平台之间的无缝数据交换。 当用户提交表单时，数据将自动与Salesforce同步。 它确保所有客户信息都是最新的，并集中存在于系统中。
@@ -40,7 +40,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 * 为您的组织创建[采用 OAuth 2.0 客户端凭据流的 Salesforce 连接的应用程序](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5)和仅 API 用户，并获取应用程序的消费方密钥和消费方密码。
 
-* 确保已适当配置 Swagger 文件以匹配您组织的 API。或者，您可以选择从头[创建一个 Swagger 文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html)，该文件专门用于您的 AEM 环境。
+* 确保已适当配置 Swagger 文件以匹配您组织的 API。或者，您可以选择从头[创建一个 Swagger 文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=zh-Hans)，该文件专门用于您的 AEM 环境。
 
 
 ## 使用 OAuth 2.0 客户端凭据流配置 Salesforce 应用程序 {#steps-to-create-aem-datasource-configuration}

@@ -52,7 +52,7 @@ ht-degree: 98%
 
    >[!NOTE]
    >
-   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)中的最佳实践。
+   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=zh-Hans)中的最佳实践。
 
 ## 搜索工作流实例 {#search-workflow-instances}
 

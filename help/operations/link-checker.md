@@ -36,7 +36,7 @@ Link Checker具有多个[配置选项](#configuring)，例如定义内部链接�
 内部链接是指向AEM存储库中其他内容的链接。 可以使用路径选取器、富文本编辑器或使用自定义组件添加内部链接。 例如：
 
 * 您创建页面`/content/wknd/us/en/adventures/ski-touring`
-* 该页包含指向[文本组件中的`/content/wknd/us/en/adventures/extreme-ironing`的链接。](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* 该页包含指向[文本组件中的`/content/wknd/us/en/adventures/extreme-ironing`的链接。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/text)
 
 内容作者向页面添加此类链接后，将立即验证内部链接。 如果链接无效：
 
@@ -52,7 +52,7 @@ Link Checker具有多个[配置选项](#configuring)，例如定义内部链接�
 外部链接是指向AEM存储库外部内容的链接。 可以使用富文本编辑器或自定义组件添加外部链接。 例如：
 
 * 您创建页面`/content/wknd/us/en/adventures/ski-touring`
-* 该页包含指向[文本组件中的`https://bunwarmerthermalunderwear.com`的链接。](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* 该页包含指向[文本组件中的`https://bunwarmerthermalunderwear.com`的链接。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/text)
 
 验证外部链接的语法和检查其可用性。 此检查以可配置的间隔异步完成。 如果Link Checker发现外部链接无效：
 

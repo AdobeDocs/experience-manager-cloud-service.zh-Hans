@@ -55,7 +55,7 @@ ht-degree: 14%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 如果DAM用户上传一个或多个已存在于存储库中的资源，[!DNL Experience Manager]将检测重复并通知用户。 默认情况下禁用重复检测，因为它可能会产生性能影响，具体取决于存储库的大小和上传的资源数量。

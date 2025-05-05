@@ -22,7 +22,7 @@ Dynamic Media包含对360个视频资产交付的本机支持。 默认情况下
 
 当前不支持空间音频；如果音频混入立体声，则平衡(L/R)不会随着客户改变相机视角而改变。
 
-请参阅[在AEM Assets中使用Dynamic Media 360视频和自定义视频缩略图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)。
+请参阅[在AEM Assets中使用Dynamic Media 360视频和自定义视频缩略图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=zh-Hans#dynamic-media)。
 
 另请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -37,7 +37,7 @@ Dynamic Media包含对360个视频资产交付的本机支持。 默认情况下
 
 您可以使用Adobe Premier Pro查看和编辑360/VR素材。 例如，您可以在场景中正确放置徽标和文本，并应用专门为等矩形介质设计的效果和过渡。
 
-查看[编辑360/VR视频](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
+查看[编辑360/VR视频](https://helpx.adobe.com/cn/premiere-pro/how-to/edit-360-vr-video.html)。
 
 ## 上传资产以用于360视频查看器 {#uploading-assets-for-use-with-the-video-viewer}
 

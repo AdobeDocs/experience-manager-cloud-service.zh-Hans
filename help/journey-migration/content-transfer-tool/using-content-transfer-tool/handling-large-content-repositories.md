@@ -19,7 +19,7 @@ ht-degree: 8%
 >id="aemcloud_ctt_precopy"
 >title="处理大型内容存储库"
 >abstract="为了显著加快将内容移至 AEM as a Cloud Service 的内容转移活动的提取和引入阶段，内容转移工具（CTT）可使用 AzCopy 作为可选的复制前步骤。配置此前置步骤后，在提取阶段，AzCopy 将 blob 从 Amazon S3 或 Azure Blob 存储复制到迁移集 blob 存储。在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="AzCopy 作为复制前步骤的快速入门"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hans#setting-up-pre-copy-step" text="AzCopy 作为复制前步骤的快速入门"
 
 使用内容传输工具(CTT)复制多个Blob可能需要几天时间。
 为了加快内容传输活动的提取和摄取阶段以将内容移动到AEM as a Cloud Service，CTT可以使用[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)作为可选的预复制步骤。 当源AEM实例配置为使用Amazon S3、Azure Blob Storage数据存储或文件数据存储时，可以使用此预复制步骤。 预复制步骤对首次完全提取和摄取最有效。 但是，不建议对后续增补使用预复制（如果增补大小小于200 GB），因为这可能会增加整个过程所需的时间。 配置此预步骤后，在提取阶段，AzCopy会将Blob从Amazon S3、Azure Blob存储或文件数据存储中复制到迁移集Blob存储中。 在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。
@@ -32,13 +32,13 @@ ht-degree: 8%
 
 * Source AEM版本必须为6.3 - 6.5。
 
-* Source AEM的数据存储配置为使用Amazon S3或Azure Blob Storage。 有关更多详细信息，请参阅[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html)中配置节点存储和数据存储。
+* Source AEM的数据存储配置为使用Amazon S3或Azure Blob Storage。 有关更多详细信息，请参阅[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hans)中配置节点存储和数据存储。
 
 * 每个迁移集都会复制整个数据存储，因此只应使用单个迁移集。
 
 * 您需要访问权限才能在运行源AEM实例的实例（或VM）上安装[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)。
 
-* 在过去七天内，在源上运行了数据存储垃圾收集。 有关更多详细信息，请参阅[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)。
+* 在过去七天内，在源上运行了数据存储垃圾收集。 有关更多详细信息，请参阅[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hans#data-store-garbage-collection)。
 
 ### 如果源AEM实例配置为使用Amazon S3或Azure Blob存储数据存储，则其他注意事项 {#additional-considerations-amazons3-azure}
 

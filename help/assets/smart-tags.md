@@ -54,7 +54,7 @@ ht-degree: 7%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 本质上，它包括员工、合作伙伴和客户通常用于引用和搜索其数字资产的关键字列表。 使用分类控制的词汇标记资产可确保轻松地在搜索中识别和检索资产。

@@ -110,6 +110,6 @@ AEM 参考演示加载项包括多个模板，可满足各种测试和演示需�
 
 建议您通过查看[创建程序和管道](create-program.md)进入“快速创建 Site” 历程的下一部分，但是，以下是一些附加的可选资源。这些资源深入探讨了本文档中提到的概念。但是，继续进行该历程不需要查看这些资源。
 
-* [了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) – 从这里开始了解实时程序和沙盒程序之间的区别。
+* [了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=zh-Hans) – 从这里开始了解实时程序和沙盒程序之间的区别。
 * [Site 模板](/help/sites-cloud/administering/site-creation/site-templates.md) – 如果您想详细了解 Site 模板的结构以及如何使用它们创建 Site，请参阅本文档。
-* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
+* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=zh-Hans) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。

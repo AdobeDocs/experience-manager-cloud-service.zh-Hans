@@ -16,7 +16,7 @@ ht-degree: 19%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
@@ -41,7 +41,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 * **标记：** AEM Sites页面允许您[为页面、资源或其他内容分配标记或标签](/help/implementing/developing/introduction/tagging-framework.md)。 标记是关键字或元数据标签，它们提供了一种根据特定标准对内容进行分类和整理的方法。 您可以为AEM中的页面、资源或任何其他内容项分配一个或多个标记，以改进搜索并对资源分类。
 * **锁定和解锁内容：** AEM Sites允许用户在AEM Sites环境中[控制对页面的访问和修改](/help/sites-cloud/authoring/page-editor/edit-content.md)。 锁定页面时，即表示页面不会遭到其他用户未经授权的更改或编辑。 只有锁定了内容的用户或指定的管理员才能解锁内容以允许修改。
 
-此外，AEM页面编辑器中的自适应Forms使用[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 这些核心组件提供了简单标准的方法来样式化和自定义组件，与[AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)相同。
+此外，AEM页面编辑器中的自适应Forms使用[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans#features)。 这些核心组件提供了简单标准的方法来样式化和自定义组件，与[AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)相同。
 
 
 ## 如何在AEM Sites页面或AEM Experience Fragment中创建或添加自适应表单？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -80,7 +80,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 要启用自适应表单容器组件的完整功能，请使用部署管道将 Customheaderlibs 和 Customfooterlibs 客户端库添加到 AEM Sites 页面。要添加库：
 
-1. 访问并克隆 [AEM Cloud Service Git 存储库。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)
+1. 访问并克隆 [AEM Cloud Service Git 存储库。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=zh-Hans)
 1. 在计划文本编辑器中打开 AEM Cloud Service Git 存储库文件夹。例如，Microsoft Visual Code。
 1. 打开`ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html`文件并将以下代码添加到该文件中：
 
@@ -119,7 +119,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
        </sly> 
    ```
 
-1. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，将客户端库部署到 AEM as a Cloud Service 环境。
+1. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hans)，将客户端库部署到 AEM as a Cloud Service 环境。
 
 ### 为您的AEM Sites页面或体验片段启用自适应Forms容器
 

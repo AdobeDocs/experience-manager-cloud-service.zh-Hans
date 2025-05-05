@@ -47,14 +47,14 @@ ht-degree: 31%
   <tr>
     <td>版本清除</td>
     <td>客户</td>
-    <td>当前默认禁用版本清除，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
+    <td>当前默认禁用版本清除，但可以配置策略，如<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
     <td>客户</td>
-    <td>审核日志清除当前默认处于禁用状态，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
+    <td>审核日志清除当前默认处于禁用状态，但可以配置策略，如<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
    </td>
   </tr>
@@ -77,7 +77,7 @@ ht-degree: 31%
     <td>客户</td>
     <td>
     <p>必须在 git 中完成。通过在文件夹<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下创建属性，覆盖<code>/libs</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
-    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_WorkflowPurgeTask</code>），启用维护任务。配置 OSGI 属性，请参见<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances"> AEM 6.5 维护任务文档</a>。</p>
+    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_WorkflowPurgeTask</code>），启用维护任务。配置 OSGI 属性，请参见<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=zh-Hans#regular-purging-of-workflow-instances"> AEM 6.5 维护任务文档</a>。</p>
   </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ ht-degree: 31%
     <td>客户</td>
     <td>
     <p>必须在 git 中完成。通过在文件夹<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下创建属性，覆盖<code>/libs</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
-    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。查看<b>Adobe项目清除配置</b>的<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi属性</a>列表。</p>
+    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。查看<b>Adobe项目清除配置</b>的<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi属性</a>列表。</p>
   </td>
   </tr>
   </tbody>

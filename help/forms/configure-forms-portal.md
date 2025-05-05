@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=zh-Hans) |
 | AEM as a Cloud Service（核心组件） | 本文 |
 
 Forms Portal提供了一种在AEM Sites页面上显示和列出自适应Forms的有效方法。 对于需要平台以系统地向其用户呈现各种形式的组织而言，此插件非常有用。

@@ -115,5 +115,5 @@ ht-degree: 100%
 
 * [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品配置文件如何授予和限制访问您经许可的 Adobe 解决方案。
 * [在 Admin Console 管理产品和用户访问权限](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) – 了解如何使用 Admin Console 管理用户访问权限。
-* [配置 AEM 演练的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) – 查看此简化演练，了解如何在 Admin Console 中配置 Adobe IMS 用户、用户组和产品配置文件。
+* [配置 AEM 演练的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hans) – 查看此简化演练，了解如何在 Admin Console 中配置 Adobe IMS 用户、用户组和产品配置文件。
 

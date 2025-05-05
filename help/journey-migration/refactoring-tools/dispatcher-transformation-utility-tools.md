@@ -27,13 +27,13 @@ Dispatcher是Adobe Experience Manager的缓存或/和负载平衡工具。 使�
 >[!NOTE]
 >Dispatcher 最常见的用法是缓存来自 **AEM 发布实例**&#x200B;的响应，从而提高面向外部发布的网站的响应速度和安全性。
 
-请参阅[Dispatcher概述](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)，了解Dispatcher如何执行缓存、返回文档和执行负载平衡。
+请参阅[Dispatcher概述](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)，了解Dispatcher如何执行缓存、返回文档和执行负载平衡。
 
 ### Apache和Dispatcher配置和测试 {#dispatcher-configurations-cloud}
 
 了解如何构建AEM as a Cloud Service Apache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行该配置。
 
-有关详细信息，请参阅[云中的Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html)。
+有关详细信息，请参阅[云中的Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=zh-Hans)。
 
 ## AEM Dispatcher 转换器 {#aem-dispatcher-converter}
 

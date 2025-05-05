@@ -21,7 +21,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -41,7 +41,7 @@ ht-degree: 81%
 
 * [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)现在支持[键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)。
 
-* AEM作为Cloud Service的[Web优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)，通过交付WebP等格式，可显着提高页面速度。 这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的[核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)都允许您使用此服务，并通过单击图像组件策略中的选项将图像作为WebP交付。
+* AEM作为Cloud Service的[Web优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=zh-Hans)，通过交付WebP等格式，可显着提高页面速度。 这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的[核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=zh-Hans)都允许您使用此服务，并通过单击图像组件策略中的选项将图像作为WebP交付。
 
 * AEM个性化活动现在可以使用体验片段来代替我们的旧功能/服务。 该功能：
    * 启用一个迁移路径，其中 AEM 内容会推广体验片段功能/服务，而不是旧的库功能/服务，以便提供与未来大规模个性化保持一致的具有适当样式的内容。

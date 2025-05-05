@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 配置Forms提交服务
 
-创建配置有自适应AEM块的新Forms项目。 请参阅[快速入门 — 开发人员教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，了解如何创建新的AEM项目。 更新项目中的`fstab.yaml`文件。 将现有引用替换为您与`forms@adobe.com`共享的文件夹的路径。
+创建配置有自适应AEM块的新Forms项目。 请参阅[快速入门 — 开发人员教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，了解如何创建新的AEM项目。 更新项目中的`fstab.yaml`文件。 将现有引用替换为您与`forms@adobe.com`共享的文件夹的路径。
 
 您可以[手动配置Forms提交服务](#configuring-the-forms-submission-service-manually)或[使用API配置Forms提交服务](#configuring-the-forms-submission-service-using-api)。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 #### 1.使用表单定义创建表单
 
-使用Google Sheets或Microsoft Excel创作表单。 要了解如何使用Microsoft Excel或Google Sheets中的表单定义创建表单，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
+使用Google Sheets或Microsoft Excel创作表单。 要了解如何使用Microsoft Excel或Google Sheets中的表单定义创建表单，请[单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
 
 以下屏幕截图显示了用于创建表单的表单定义：
 
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 #### 2.启用电子表格以接受数据。
 
-创建并预览表单后，启用相应的电子表格以开始接收数据。 添加新工作表作为`incoming`。 您可以[手动启用电子表格以接受数据](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
+创建并预览表单后，启用相应的电子表格以开始接收数据。 添加新工作表作为`incoming`。 您可以[手动启用电子表格以接受数据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
 
 ![传入工作表](/help/forms/assets/form-submission-incoming-sheet.png)
 

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 您可以将自适应Forms、主题、模板和云配置从OSGi上的<!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms迁移或升级到[!DNL AEM]as a Cloud Service。 在迁移这些资源之前，请使用迁移实用程序将早期版本中使用的格式转换为[!DNL AEM]as a Cloud Service中使用的格式。
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 * (仅适用于AEM 6.5 Forms之前的版本)基于AEM 6.3 Forms或先前版本中提供的现成模板和主题的自适应Forms在[!DNL AEM Forms]as a Cloud Service上不受支持。
 
-* 与Adobe Experience Manager 6.5 Forms(内部部署和Adobe托管服务)环境相比，Adobe Experience Manager Formsas a Cloud Service对现有功能进行了一些显着更改。 在继续迁移到服务之前，[了解这些可注释的更改](notable-changes.md)和[功能级别差异](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report)，以决定根据组织所需的功能进行迁移。
+* 与Adobe Experience Manager 6.5 Forms(内部部署和Adobe托管服务)环境相比，Adobe Experience Manager Formsas a Cloud Service对现有功能进行了一些显着更改。 在继续迁移到服务之前，[了解这些可注释的更改](notable-changes.md)和[功能级别差异](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=zh-Hans#viewing-report)，以决定根据组织所需的功能进行迁移。
 
 
 
@@ -52,27 +52,27 @@ ht-degree: 1%
 | HTML5 Forms (Mobile Forms)     | The service does not support HTML5 Forms (Mobile Forms). If you render your XDP-based forms as HTML5 Forms, you can continue using the feature on AEM 6.5 Forms. |
 | Adaptive Forms     | <li><b>XSD-Based Adaptive Forms:</b> The service does not support HTML5 Forms (Mobile Forms). If you render your XDP-based forms as HTML5 Forms, you can continue using the feature on AEM 6.5 Forms. </li> <li><b> Adaptive Form templates:</b> Use build pipeline and corresponding Git repository of your program to import existing Adaptive Form templates. </li><li><b>Rule editor:</b> AEM Forms as a Cloud Service provides a hardened [Rule editor](rule-editor.md#visual-rule-editor). The code editor is not available on Forms as a Cloud Service. The migration utility helps you migrate your forms that have custom rules (created in code editor). The utility converts such rules into custom functions supported on Forms as a Cloud Service. You can use the reusable functions with Rule editor to continue obtaining results obtained with rule scripts  The `onSubmitError` or `onSubmitSuccess` functions are now available as actions the Rule Editor. </li> <li><b>Drafts and submissions:</b> The service does not retain metadata for drafts and submitted Adaptive Forms. </li> <li><b> Prefill Service:</b> By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server. </li><li><b>Submit actions:</b> The **Email as PDF** action is not available. The **Email** submit action provide options to send attachments and attach Document of Record (DoR) with email. </li>|
 | Form Data Model | <li>Forms data model supports only HTTP and HTTPs endpoints to submit data. </li><li>Forms as a Cloud Service allows to use Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive, and services supporting general CRUD (Create, Read, Update, and Delete) operations as data stores. The service does not support JDBC connector, Mutual SSL for Rest connector, and x509 certificate-based authentication for SOAP data sources. </li>|
-| Automated Forms Conversion Service     | The service does not provide meta-model for Automated Forms Conversion Service. You can [download it from Automated Forms Conversion Service documentation](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).|
-|Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
+| Automated Forms Conversion Service     | The service does not provide meta-model for Automated Forms Conversion Service. You can [download it from Automated Forms Conversion Service documentation](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=zh-Hans#default-meta-model).|
+|Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
 | Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>| -->
 
 ## 先决条件 {#prerequisites}
 
 要确保从AEM Forms 6.5顺利过渡到AEM as a Cloud Service环境，请务必考虑以下先决条件：
 
-* 为您的FormsCloud Service程序启用[Forms — 数字注册](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program)选项，并[运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
+* 为您的FormsCloud Service程序启用[Forms — 数字注册](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=zh-Hans&#editing-program)选项，并[运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hans)。
 
   ![练习结果](assets/enable-add-on.png)
 
-* 在Cloud Service环境中，迁移实用程序与内容传输工具结合使用。 迁移实用程序使[!DNL AEM Forms]资源与Cloud Service兼容，内容传输工具将内容从[!DNL AEM Forms]环境迁移到[!DNL AEM]as a Cloud Service环境。 在使用迁移实用程序之前，请了解[移至AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)的过程。 该流程使用以下工具：
-   * [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)：内容传输工具可帮助您准备内容并将内容从现有环境传输到Cloud Service环境。 它有助于用户轻松从AEM Forms升级到云环境。
+* 在Cloud Service环境中，迁移实用程序与内容传输工具结合使用。 迁移实用程序使[!DNL AEM Forms]资源与Cloud Service兼容，内容传输工具将内容从[!DNL AEM Forms]环境迁移到[!DNL AEM]as a Cloud Service环境。 在使用迁移实用程序之前，请了解[移至AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=zh-Hans)的过程。 该流程使用以下工具：
+   * [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans&#cloud-migration)：内容传输工具可帮助您准备内容并将内容从现有环境传输到Cloud Service环境。 它有助于用户轻松从AEM Forms升级到云环境。
 * 在[!DNL AEM Forms]as a Cloud Service和您的本地[!DNL AEM Forms]环境中具有管理员权限的帐户。
 * 从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载并安装Best Practice Analyzer、内容传输工具和[!DNL AEM Forms]迁移实用程序。
 
-* 运行[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)工具并修复报告的问题。 有关从Adobe Experience Manager Forms迁移到Adobe Experience Manager Formsas a Cloud Service可能存在的问题，请参阅[适用于Forms的AEM模式检测as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report)。
+* 运行[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hans#cloud-migration)工具并修复报告的问题。 有关从Adobe Experience Manager Forms迁移到Adobe Experience Manager Formsas a Cloud Service可能存在的问题，请参阅[适用于Forms的AEM模式检测as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=zh-Hans#viewing-report)。
 
 
-<!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
+<!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
 
 
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 1. 使用管理权限登录到您的克隆环境。
 
-1. 在克隆的环境中从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载并安装[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)和[!DNL AEM Forms]as a Cloud Service迁移实用程序。 可以使用AEM包管理器安装该工具和实用程序。
+1. 在克隆的环境中从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载并安装[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans&#cloud-migration)和[!DNL AEM Forms]as a Cloud Service迁移实用程序。 可以使用AEM包管理器安装该工具和实用程序。
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 内容迁移]**。
 
@@ -119,13 +119,13 @@ ht-degree: 1%
 
    Cloud Service不支持规则编辑器脚本。 **[!UICONTROL 代码编辑器脚本迁移]**&#x200B;工具将环境中的所有规则脚本转换为可重用的函数，并将可重用的函数应用到适当位置的可视化编辑器。 这些可重用函数以客户端库形式保存，并帮助您保持现有功能不变。 该工具会自动将生成的可重用函数应用于相应的自适应Forms。
 
-   AEM Form迁移到Cloud Service，请使用[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)将可重用的函数（客户端库）导出到包。
+   AEM Form迁移到Cloud Service，请使用[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans#contentmanagement)将可重用的函数（客户端库）导出到包。
 
-1. [将](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager)可重用的函数（客户端库）包、[自定义代码、组件、配置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager)以及特定于自定义区域设置的库部署到您的[!DNL AEM]as a Cloud Service环境。
+1. [将](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans#deploying-content-packages-via-cloud-manager-and-package-manager)可重用的函数（客户端库）包、[自定义代码、组件、配置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=zh-Hans#cloud-manager)以及特定于自定义区域设置的库部署到您的[!DNL AEM]as a Cloud Service环境。
 
-   <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
+   <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans&#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. 运行[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)。 在&#x200B;**[!UICONTROL 创建迁移集]**&#x200B;屏幕上指定参数时，请将自适应Forms、主题、模板、表单数据模型(FDM)、Cloud Service、自定义组件和其他特定于AEM Forms的资源路径指定为&#x200B;**[!UICONTROL 要包含的路径]**&#x200B;选项。 它将指定的[!DNL AEM Forms]资源添加到迁移集。
+1. 运行[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans&#cloud-migration)。 在&#x200B;**[!UICONTROL 创建迁移集]**&#x200B;屏幕上指定参数时，请将自适应Forms、主题、模板、表单数据模型(FDM)、Cloud Service、自定义组件和其他特定于AEM Forms的资源路径指定为&#x200B;**[!UICONTROL 要包含的路径]**&#x200B;选项。 它将指定的[!DNL AEM Forms]资源添加到迁移集。
 
 ## 各种特定于AEM Forms的资源的路径
 
@@ -159,9 +159,9 @@ ht-degree: 1%
 
 ## 查看下一个
 
-* [对现有Adobe Experience Manager 6.5 Forms用户的重要更改](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/notable-changes.html)
-* [载入AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
-* [在Cloud Service上创建您的第一个自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)
+* [对现有Adobe Experience Manager 6.5 Forms用户的重要更改](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/notable-changes.html?lang=zh-Hans)
+* [载入AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html?lang=zh-Hans)
+* [在Cloud Service上创建您的第一个自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=zh-Hans)
 
 ## 附加信息
 

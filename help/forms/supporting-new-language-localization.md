@@ -15,12 +15,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=zh-Hans) |
 | 核心组件 | [单击此处](supporting-new-language-localization-core-components.md) |
 | Foundation 组件  | 本文 |
 
@@ -56,7 +56,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 #### 1.克隆存储库 {#clone-the-repository}
 
 1. 在命令行中，导航到要克隆FormsCloud Service存储库的位置。
-1. 执行[从Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)检索到的命令。 它类似于`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
+1. 执行[从Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)检索到的命令。 它类似于`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
 1. 使用Git用户名和密码克隆存储库。
 1. 在首选编辑器中打开克隆的FormsCloud Service存储库文件夹。
 
@@ -115,11 +115,11 @@ I18N.js
    <filter root="/etc/languages"/>
    ```
 
-在将更改提交到AEM Git存储库之前，您需要访问[Git存储库信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)。
+在将更改提交到AEM Git存储库之前，您需要访问[Git存储库信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)。
 
 #### 5.在存储库中提交更改并部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
-添加区域设置支持后，将更改提交到GIT存储库。 使用全栈管道部署代码。 了解[如何设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)以添加新的区域设置支持。
+添加区域设置支持后，将更改提交到GIT存储库。 使用全栈管道部署代码。 了解[如何设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)以添加新的区域设置支持。
 管道完成后，新添加的区域设置将显示在AEM环境中。
 
 ### 在自适应Forms中使用添加的区域设置 {#use-added-locale-in-af}

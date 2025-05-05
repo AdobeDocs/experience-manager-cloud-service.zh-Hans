@@ -35,4 +35,4 @@ AEM中的![Extension Manager](/help/implementing/developing/extending/assets/hom
 * AEM App Builder
 
    * [使用Adobe Developer App Builder扩展AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-   * [AEM UI可扩展性](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)
+   * [AEM UI可扩展性](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)

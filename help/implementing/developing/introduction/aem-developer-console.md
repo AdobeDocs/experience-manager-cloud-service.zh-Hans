@@ -106,5 +106,5 @@ There are multiple ways of accessing it:
 
 对于生产程序，Adobe Admin Console中的“Cloud Manager — 开发人员角色”可控制对AEM as a Cloud Service Developer Console的访问。 对于沙盒程序，任何拥有授予AEM访问权限的产品配置文件的用户都可以使用Developer Console。 对于所有程序，状态转储和访问存储库浏览器需要“Cloud Manager — 开发人员角色”。 要查看创作和发布服务中的数据，还必须将用户分配到这两个服务上的AEM用户或AEM管理员产品配置文件。
 
-有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 

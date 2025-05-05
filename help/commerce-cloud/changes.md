@@ -40,12 +40,12 @@ AEM CIF加载项是通过Cloud Manager安装的。 安装需要CIF点数，但�
 
 ## 部署CIF Venia项目
 
-[Cloud Manager Git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html)中可用的项目，并通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)完成部署
+[Cloud Manager Git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html?lang=zh-Hans)中可用的项目，并通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=zh-Hans)完成部署
 
 **以前的CIF版本**
 
 * CIF Classic：通过AEM包安装
-* CIF开源：通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF开源：通过[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans)
 
 ## 产品目录数据
 

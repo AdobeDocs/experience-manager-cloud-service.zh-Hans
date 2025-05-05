@@ -62,11 +62,11 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于Mave
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;角色的用户现在可以从登陆页面（通过项目卡上的快速操作按钮）或项目中删除沙盒程序。
 
-  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=zh-Hans)。
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒程序用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从&#x200B;**项目概述**&#x200B;页面和&#x200B;**环境**&#x200B;页面上的环境卡中使用。在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
 
-  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=zh-Hans)。
 
 * 在登陆页面上显示引导标记，以告知和指示用户如何进行基本导航。
 
@@ -78,11 +78,11 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于Mave
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可访问 Admin Console 中的相应位置，以管理用户角色或 Cloud Manager 权限。现在，登陆页面上的&#x200B;**添加项目**&#x200B;按钮旁边提供了&#x200B;**管理访问权限**&#x200B;按钮。
 
-  有关更多详细信息，请参阅 [SysAdmin 任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)。
+  有关更多详细信息，请参阅 [SysAdmin 任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hans#sysadmin-tasks)。
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可直接从 Cloud Manager 中访问创作实例。
 
-  有关更多详细信息，请参阅[管理对创作实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)。
+  有关更多详细信息，请参阅[管理对创作实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hans#manage-access-aem)。
 
 * “生成”日志现在包含已发现项目的列表，包括跳过的内容包。
 

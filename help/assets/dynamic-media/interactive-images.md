@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-在上图所示的网页上，查看操作[&#128279;](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)中的交互式图像。
+在上图所示的网页上，查看操作[&#128279;](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=zh-Hans)中的交互式图像。
 
 ## 观看如何创建交互式图像横幅 {#watch-how-interactive-image-banners-are-created}
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 以下分步工作流描述旨在帮助您在Adobe Experience Manager Assets中快速启动和运行交互式图像。
 
-在某些快速入门任务中查找&#x200B;**Example**&#x200B;标题。 它包含一个简短的教程，该教程基于尚未向其添加交互式图像的[网页示例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
+在某些快速入门任务中查找&#x200B;**Example**&#x200B;标题。 它包含一个简短的教程，该教程基于尚未向其添加交互式图像的[网页示例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans)。
 
 
 
@@ -146,7 +146,7 @@ ht-degree: 1%
 
 **示例**
 
-您可以将上述三个示例中使用的相同方法应用于[演示网页](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
+您可以将上述三个示例中使用的相同方法应用于[演示网页](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans)。
 
 演示网页具有多个产品缩略图，每个缩略图都有一个标记为“查看更多”的“快速查看”按钮。 在Web浏览器的调试工具仍处于激活状态的情况下，选择每个按钮并记下记录的概览URL。 在激活页面上可用的所有四个产品快速视图后，您将获得向后端发出的概览请求列表：
 
@@ -342,13 +342,13 @@ ht-degree: 1%
 
 **示例**
 
-以[演示网站为例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)，请注意这三人的图片是一个静态`IMG`标记：
+以[演示网站为例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans)，请注意这三人的图片是一个静态`IMG`标记：
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-集成非常简单，只需删除`IMG`标记并将其替换为Experience Manager Assets中复制的嵌入代码即可。 您会看到结果[在页面上显示带有三个圆形热点](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)的可购物交互式图像。
+集成非常简单，只需删除`IMG`标记并将其替换为Experience Manager Assets中复制的嵌入代码即可。 您会看到结果[在页面上显示带有三个圆形热点](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=zh-Hans)的可购物交互式图像。
 
 >[!NOTE]
 >
@@ -356,9 +356,9 @@ ht-degree: 1%
 
 要在响应式环境中将“裁切”应用于购物交互式图像，请将“交互式图像”配置属性`ZoomView.iscommand`包含到路径。 在这种情况下，将调用`ZoomView`组件，`iscommand`是您应用的“裁切”图像服务命令。
 
-请参阅[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html)配置属性。
+请参阅[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=zh-Hans)配置属性。
 
-请参阅[裁切](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)图像服务命令。
+请参阅[裁切](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=zh-Hans)图像服务命令。
 
 现在，您便可以将交互式图像与网站上的现有概览集成。
 
@@ -495,7 +495,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-[最终演示网站具有完全集成的交互式图像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)。
+[最终演示网站具有完全集成的交互式图像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=zh-Hans)。
 
 ## 使用 Quickview 创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 

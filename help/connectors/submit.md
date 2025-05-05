@@ -22,7 +22,7 @@ ht-degree: 99%
 对于如何将包包含在项目中，有多种选择：
 
 1. 合作伙伴的公共存储库 – 合作伙伴将在可公开访问的 maven 存储库中托管内容包
-1. 合作伙伴的受密码保护的存储库 – 合作伙伴将在受密码保护的 maven 存储库中托管内容包。有关说明，请参阅[受密码保护的 maven 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories)。
+1. 合作伙伴的受密码保护的存储库 – 合作伙伴将在受密码保护的 maven 存储库中托管内容包。有关说明，请参阅[受密码保护的 maven 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=zh-Hans#password-protected-maven-repositories)。
 1. 捆绑式构件 – 在这种情况下，连接器包将本地包含在客户的 maven 项目中。
 
 无论包的托管位置如何，都必须在 pom.xml 中将包作为依赖项引用，如供应商提供的那样。

@@ -63,4 +63,4 @@ AEM Screens客户想要了解在哪个时间显示了哪些内容，以及显示
 Analytics事件离线存储在indexedDB中，稍后进行分块并发送到云。
 
 >[!NOTE]
->要了解有关事件的顺序和标准数据模型的详细信息，请参阅[为AEM Screens配置Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html)。
+>要了解有关事件的顺序和标准数据模型的详细信息，请参阅[为AEM Screens配置Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=zh-Hans)。

@@ -31,7 +31,7 @@ AEM as a Cloud Service允许您配置清除API令牌，然后将其用于清除A
 >[!CAUTION]
 >清除CDN缓存（尤其是使用硬标志）将增加源位置的流量，并且在未正确执行时可能导致中断。
 
-您可以引用[教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
+您可以引用[教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
 
 ## 单个URL清除 {#single-purge}
 

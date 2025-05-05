@@ -16,7 +16,7 @@ ht-degree: 3%
 本节介绍如何在Cloud Manager中将Screens作为加载项添加到新程序。
 
 >[!NOTE]
->请参阅[了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html)，了解有关Cloud Manager程序的更多信息。
+>请参阅[了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=zh-Hans)，了解有关Cloud Manager程序的更多信息。
 
 ## 目标 {#objective}
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 1. 导航到[Cloud Manager](https://my.cloudmanager.adobe.com/)。
 
    >[!NOTE]
-   >请参阅[Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html)，了解Cloud Manager。
+   >请参阅[Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=zh-Hans)，了解Cloud Manager。
 
 1. 从Cloud Manager登录页面单击&#x200B;**添加项目**。
 

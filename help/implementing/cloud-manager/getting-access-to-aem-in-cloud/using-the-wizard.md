@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # 项目创建向导 {#project-creation-wizard}
 
-创建生产程序后，Cloud Manger 会提供一个向导，根据 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)创建一个最小的 AEM 项目，以便快速入门。
+创建生产程序后，Cloud Manger 会提供一个向导，根据 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)创建一个最小的 AEM 项目，以便快速入门。
 
 按照以下步骤使用向导在 Cloud Manager 中创建 AEM 应用程序项目。
 

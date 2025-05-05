@@ -24,7 +24,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 
 ## 要求
 
-自动化设置旨在即时使用通过启用了 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)的 [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)构建的 AEM 站点。您可以使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或使用[站点模板](/help/journey-sites/quick-site/create-site.md)创建站点来生成已自动启用这些功能的新站点。
+自动化设置旨在即时使用通过启用了 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=zh-Hans)的 [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)构建的 AEM 站点。您可以使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 或使用[站点模板](/help/journey-sites/quick-site/create-site.md)创建站点来生成已自动启用这些功能的新站点。
 
 ## 前提条件 {#prerequisites}
 
@@ -51,7 +51,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 1. 选择&#x200B;**集成Analytics**&#x200B;按钮。
 1. 在生成的对话框中，为&#x200B;**报告包 ID** 提供名称。
 
-   此字符串用于在Adobe Analytics中创建[报表包ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html)作为所选AEM站点的分析数据的数据存储。 为提供的字符串附加环境和层标识符以确保唯一性。
+   此字符串用于在Adobe Analytics中创建[报表包ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=zh-Hans)作为所选AEM站点的分析数据的数据存储。 为提供的字符串附加环境和层标识符以确保唯一性。
 
 1. 刷新页面和面板，然后选择&#x200B;**检查集成状态**&#x200B;以检查自动化的状态。
 

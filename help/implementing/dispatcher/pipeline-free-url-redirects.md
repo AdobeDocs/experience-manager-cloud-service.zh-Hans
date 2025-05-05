@@ -21,7 +21,7 @@ ht-degree: 1%
 * 重命名的HTML页面。
 * seo优化。
 
-AEM as a Cloud Service提供了[多种方法来实施服务器端重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)，但在以下情况下，本文中所述的策略（管道免费重定向）是很好的选择：
+AEM as a Cloud Service提供了[多种方法来实施服务器端重定向](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/administration/url-redirection)，但在以下情况下，本文中所述的策略（管道免费重定向）是很好的选择：
 
 * 维护重定向的人员是业务用户，他们无权将文件更改提交到源代码管理或执行Cloud Manager Web层配置管道。
 * 重定向的数量范围从数到数万不等。
@@ -40,7 +40,7 @@ AEM as a Cloud Service提供了[多种方法来实施服务器端重定向](http
 >[!NOTE]
 > 使用此功能的重定向映射管理器需要ACS Commons版本&#x200B;**6.7.0或更高版本**，而使用重定向管理器需要版本&#x200B;**6.10.0或更高版本**。
 
-有关详细的分步实施指南，请参阅[实施管道免费的URL重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)教程。
+有关详细的分步实施指南，请参阅[实施管道免费的URL重定向](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)教程。
 
 ## 重写映射 {#rewrite-map}
 
@@ -87,5 +87,5 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 ## 教程 {#tutorials}
 
-1. [正在实施无管道URL重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [URL重定向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [正在实施无管道URL重定向](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL重定向](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/administration/url-redirection)

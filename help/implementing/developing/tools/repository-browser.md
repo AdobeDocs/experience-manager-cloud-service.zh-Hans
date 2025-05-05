@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->您还可以观看[此剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)，观看有关如何使用存储库浏览器调试AEM as a Cloud Service的快速视频介绍。
+>您还可以观看[此剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=zh-Hans)，观看有关如何使用存储库浏览器调试AEM as a Cloud Service的快速视频介绍。
 
 ## 简介 {#introduction}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 要访问AEM as a Cloud Service Developer Console或存储库浏览器，必须满足以下条件
 
-要访问AEM as a Cloud Service Developer Console，请参阅[Developer Console访问权限](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
+要访问AEM as a Cloud Service Developer Console，请参阅[Developer Console访问权限](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
 
 要访问存储库浏览器，必须满足与AEM as a Cloud Service Developer Console相同的条件（以上指定）。 要查看特定实例的存储库浏览器内容，请执行以下操作：
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * Publish实例：具有&#x200B;**Publish实例**&#x200B;的AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器。 如果没有该产品配置文件集，用户将以匿名用户身份导航，并且由于权限限制，某些路径将不会显示。
 
-有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)。
+有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=zh-Hans)。
 
 ### 启动存储库浏览器 {#launching-the-repository-browser}
 

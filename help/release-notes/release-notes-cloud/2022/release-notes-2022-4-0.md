@@ -21,7 +21,7 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中
 
 * `content-packages-validation` — 验证部署期间安装的包的格式正确的内容语法和结构
 
-强烈建议使用最新版本的分析器更新您的 maven 项目，或者包含分析器（如果尚未更新）。 有关更多信息，请参阅此文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)。
+强烈建议使用最新版本的分析器更新您的 maven 项目，或者包含分析器（如果尚未更新）。 有关更多信息，请参阅此文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans)。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础安全性 {#foundation-security}
 

@@ -26,7 +26,7 @@ ht-degree: 1%
 1. 导航到Screens Content Provider。
 
    >[!NOTE]
-   >请参阅[使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)，了解如何访问Screens内容提供程序以创建您的项目。
+   >请参阅[使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hans)，了解如何访问Screens内容提供程序以创建您的项目。
 
 1. 在操作栏的右上角附近，单击&#x200B;**创建Screens项目**。
 

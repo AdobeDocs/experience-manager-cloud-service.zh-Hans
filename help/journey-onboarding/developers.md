@@ -148,7 +148,7 @@ ht-degree: 100%
 
 * [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md) – 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Git 存储库。
 * [将 Git 和 Cloud Manager 结合使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) – 了解如何使用 Cloud Manager 的 Git 存储库，以及如何将您自己的本地客户管理的 Git 储存库与 Cloud Manager 集成。
-* [本地开发环境设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) – 本教程将指导您使用 AEM as a Cloud Service SDK 为 Adobe Experience Manager (AEM) 设置本地开发环境。
+* [本地开发环境设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hans) – 本教程将指导您使用 AEM as a Cloud Service SDK 为 Adobe Experience Manager (AEM) 设置本地开发环境。
 * [AEM Site 入门 – WKND 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans) – 此教程包含多个部分，是为新加入 Adobe Experience Manager (AEM) 的开发人员设计的。本教程介绍了虚拟生活方式品牌 WKND 的 AEM Site 的实现。此教程涵盖了项目设置、核心组件、可编辑模板、客户端库和使用 Adobe Experience Manager Site 进行组件开发等基本主题。
 * [在 AEM 中使用 React 快速入门 SPA](/help/implementing/developing/hybrid/getting-started-react.md) – 这篇文章介绍了一个 SPA 应用程序示例，解释 SPA 是如何进行组合，让您通过 React 框架快速启动和运行自己的 SPA。
 * [在 AEM 中使用 Angular 快速入门 SPA](/help/implementing/developing/hybrid/getting-started-angular.md) – 这篇文章介绍了一个 SPA 应用程序示例，解释 SPA 是如何进行组合，让您通过 Angular 框架快速启动和运行自己的 SPA。

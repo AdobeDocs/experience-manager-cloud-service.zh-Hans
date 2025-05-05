@@ -21,7 +21,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -114,7 +114,7 @@ ht-degree: 83%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用检查大小功能，用户可以1)在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及2)估计迁移集大小并验证其是否受支持。 如果违反了其中一项或两项检查，用户将在CTT UI中看到警告。 有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关详细信息，请参阅[确定迁移集大小和磁盘空间](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size)。
+* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用检查大小功能，用户可以1)在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及2)估计迁移集大小并验证其是否受支持。 如果违反了其中一项或两项检查，用户将在CTT UI中看到警告。 有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关详细信息，请参阅[确定迁移集大小和磁盘空间](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
 
 ## Best Practices Analyzer {#bpa-release}
 

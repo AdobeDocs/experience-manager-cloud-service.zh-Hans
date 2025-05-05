@@ -27,7 +27,7 @@ Adobe Experience Manager包含100多条Dynamic Media图像投放命令，可用�
 **智能成像：**
 
 * 在Dynamic Media中启用“智能成像”可基于客户端浏览器功能自动优化图像格式、大小和质量。
-想要了解更多信息？ 转到[智能成像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)。
+想要了解更多信息？ 转到[智能成像](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)。
 * 它通过动态调整这些参数来增强图像投放性能。
 * 您可以使用自我评估工具[快照](https://snapshot.scene7.com/)来评估智能成像。
 
@@ -87,7 +87,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 * 最佳实践白皮书[Adobe Dynamic Media Classic图像质量和锐化最佳实践](/help/assets/dynamic-media/assets/sharpening_images.pdf)也适用于Experience Manager。
 
-* 观看[在Experience Manager - Dynamic Media中使用图像锐化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+* 观看[在Experience Manager - Dynamic Media中使用图像锐化](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
 借助Experience Manager，您可以在摄取和/或交付时锐化图像。 但是，通常最好只使用一种方法或另一种方法来锐化图像，但不要同时使用这两种方法。 通常，在交付、URL上锐化图像可产生最佳效果。
 
@@ -111,7 +111,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
       * 最佳实践白皮书[Adobe Dynamic Media Classic图像质量和锐化最佳实践](/help/assets/dynamic-media/assets/sharpening_images.pdf)也适用于Experience Manager。
 
-      * 观看[在Experience Manager - Dynamic Media中使用图像锐化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+      * 观看[在Experience Manager - Dynamic Media中使用图像锐化](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
       * Experience Manager还允许您控制第四个参数：单色(0,1)。 此参数确定是使用值0分别将钝化蒙版应用于每个颜色组件，还是使用值1将钝化蒙版应用于图像亮度/强度。
 

@@ -27,7 +27,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->此功能仅适用于支持基于令牌的身份验证的Adobe Commerce或Cloud Edition以及第三方连接器。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
+>此功能仅适用于支持基于令牌的身份验证的Adobe Commerce或Cloud Edition以及第三方连接器。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=zh-Hans)。
 
 首先，我们来了解作者如何使用CIF访问暂存的产品数据。
 

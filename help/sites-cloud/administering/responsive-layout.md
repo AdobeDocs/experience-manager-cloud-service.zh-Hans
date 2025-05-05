@@ -54,7 +54,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 ## 启用模拟器 {#enabling-emulator}
 
-已启用[项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和[标准站点模板](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template)以使用模拟器。 如果您开发自己的内容不是基于核心组件或原型，请参阅文档[响应式设计](/help/implementing/developing/introduction/responsive-design.md)，了解如何在利用这些功能的同时开发组件的详细信息。
+已启用[项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)和[标准站点模板](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template)以使用模拟器。 如果您开发自己的内容不是基于核心组件或原型，请参阅文档[响应式设计](/help/implementing/developing/introduction/responsive-design.md)，了解如何在利用这些功能的同时开发组件的详细信息。
 
 ## 激活网站的布局模式 {#activate-layout-mode-for-your-site}
 

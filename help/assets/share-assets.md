@@ -52,16 +52,16 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets]允许您与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 使用以下方法以[!DNL Cloud Service]的形式共享[!DNL Experience Manager Assets]中的资源：
 
 * [共享为链接](#sharelink)。
 * [下载资源](/help/assets/download-assets-from-aem.md)并单独共享。
-* 使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)共享。
+* 使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hans)共享。
 * 使用[[!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)共享。
-* 使用[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)共享。
+* 使用[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=zh-Hans)共享。
 
 ## 先决条件 {#prerequisites}
 
@@ -87,7 +87,7 @@ ht-degree: 4%
 1. 操作栏中的&#x200B;**[!UICONTROL 链接共享]**&#x200B;按钮：
    * 所有具有`jcr:modifyAccessControl`权限的用户都可以查看[!UICONTROL 链接共享]选项。 默认情况下，它对所有管理员都可见。 默认情况下，[!UICONTROL 链接共享]按钮对所有人可见。 可以配置为仅对定义的组显示此选项，也可以从特定组拒绝此选项。 如果要允许特定组查看`Share Link`选项，请选择`Allow only for groups`。 选择`Deny from groups`以拒绝来自特定组的`Share Link`选项。 选择任意这些选项后，使用`Select Groups`字段指定组名以添加需要允许或拒绝的组名。
 
-有关电子邮件配置的相关设置，请访问[电子邮件服务文档](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+有关电子邮件配置的相关设置，请访问[电子邮件服务文档](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hans)
 
 ![配置电子邮件服务](/help/assets/assets/config-email-service.png)
 
@@ -284,7 +284,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 营销人员和业务线用户可以轻松地与其创意专业人士共享经过批准的资产，
 
-* **Experience Manager桌面应用程序**：该应用程序可在Windows和Mac上运行。 请参阅[桌面应用概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。 要了解任何授权桌面用户如何轻松访问共享资源，请参阅[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。 桌面用户可以创建资源，并通过上传新图像等方式，与作为Experience Manager用户的交易方共享该资源。 请参阅[使用桌面应用程序上传资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* **Experience Manager桌面应用程序**：该应用程序可在Windows和Mac上运行。 请参阅[桌面应用概述](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hans)。 要了解任何授权桌面用户如何轻松访问共享资源，请参阅[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)。 桌面用户可以创建资源，并通过上传新图像等方式，与作为Experience Manager用户的交易方共享该资源。 请参阅[使用桌面应用程序上传资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#upload-and-add-new-assets-to-aem)。
 
 * **Adobe Asset Link**：创意专业人士可以直接从[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]和[!DNL Adobe Photoshop]中搜索和使用资源。
 
@@ -333,7 +333,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 启用桌面操作以与桌面应用程序一起使用 {#desktop-actions}
 
-从浏览器的[!DNL Assets]用户界面中，您可以浏览资产位置或签出并打开资产以在桌面应用程序中编辑。 这些选项称为桌面操作，要启用它，请参阅[在 [!DNL Assets] Web界面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)中启用桌面操作。
+从浏览器的[!DNL Assets]用户界面中，您可以浏览资产位置或签出并打开资产以在桌面应用程序中编辑。 这些选项称为桌面操作，要启用它，请参阅[在 [!DNL Assets] Web界面](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#desktopactions-v2)中启用桌面操作。
 
 ![启用桌面操作以用作桌面应用程序时的快捷方式](assets/enable_desktop_actions.png)
 

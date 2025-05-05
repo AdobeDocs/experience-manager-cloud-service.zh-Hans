@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 将用户添加到Adobe Admin Console {#admin-console}
 
-配置AdobeIdentity Management System (IMS)组织ID后，您现在可以访问[Adobe Admin Console](https://adminconsole.adobe.com/)。 请参阅[Adobe Admin Console用户](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html)，了解有关将用户添加到Admin Console的更多信息。
+配置AdobeIdentity Management System (IMS)组织ID后，您现在可以访问[Adobe Admin Console](https://adminconsole.adobe.com/)。 请参阅[Adobe Admin Console用户](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/users.ug.html)，了解有关将用户添加到Admin Console的更多信息。
 
 >[!NOTE]
 >这些用户有权访问AEM Cloud Service产品配置文件，以便他们可以使用Adobe ID或Federated ID登录AEM。

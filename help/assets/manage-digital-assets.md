@@ -54,7 +54,7 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 本文介绍了如何在[!DNL Adobe Experience Manager Assets]中管理和编辑资源。 要管理[!DNL Content Fragments]，请参阅[[!DNL Content Fragments]](content-fragments/content-fragments.md)资源。
@@ -696,7 +696,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
+要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
 
 **另请参阅**
 

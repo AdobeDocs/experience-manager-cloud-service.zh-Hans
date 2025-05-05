@@ -19,11 +19,11 @@ ht-degree: 100%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版或 2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -43,8 +43,8 @@ ht-degree: 100%
 
 ![在内容片段控制台中预览](/help/assets/content-fragments-console-preview.png)
 
-* 现在可以使用 AEM GraphQL 在 Headless 场景中动态优化图像以实现 Web 交付。[查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables)可以在 GraphQL 查询中定义，以允许解耦的客户端应用程序从 AEM 请求相应优化的图像。
-* [内容片段变体](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html)上的标记现在可以使用 AEM GraphQL 内容交付 API 将其输出为 JSON。
+* 现在可以使用 AEM GraphQL 在 Headless 场景中动态优化图像以实现 Web 交付。[查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=zh-Hans#query-variables)可以在 GraphQL 查询中定义，以允许解耦的客户端应用程序从 AEM 请求相应优化的图像。
+* [内容片段变体](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=zh-Hans)上的标记现在可以使用 AEM GraphQL 内容交付 API 将其输出为 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +70,7 @@ Experience Manager Assets 现在使您能够通过搜索结果用户界面执行
 
 **Dynamic Media：更新了图像配置文件中与智能裁剪相关的字段**
 
-图像配置文件中一些与 Smart Crop 相关的字段的用户界面现已更新，可反映当前定义 Smart Crop 的指南。请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options)。
+图像配置文件中一些与 Smart Crop 相关的字段的用户界面现已更新，可反映当前定义 Smart Crop 的指南。请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hans#crop-options)。
 
 ### 资源视图中的新增功能 {#assets-view-features}
 
@@ -128,7 +128,7 @@ Experience Manager Assets 现在使您能够通过搜索结果用户界面执行
 
 * [增强了表单数据模型的身份验证方法](/help/forms/configure-data-sources.md)：通过引入基于客户端凭据的身份验证来将 AEM Forms 与兼容的数据源连接起来，体验更高的安全性。此增强功能消除了模拟或用户登录的需要，从而增强了对数据的保护。
 
-* [具有可重复部分的自适应表单](/help/forms/create-forms-repeatable-sections.md)：现在可在基于核心组件的自适应表单中放置[可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)和[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)组件，以创建可重复的部分。
+* [具有可重复部分的自适应表单](/help/forms/create-forms-repeatable-sections.md)：现在可在基于核心组件的自适应表单中放置[可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=zh-Hans)、[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=zh-Hans)、[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)和[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=zh-Hans)组件，以创建可重复的部分。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
@@ -138,7 +138,7 @@ Experience Manager Assets 现在使您能够通过搜索结果用户界面执行
 
 ### Headless 自适应表单早期采用者计划 {#forms-early-adopter}
 
-使用 [Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)可让您的开发人员创建、发布和管理交互式表单，这些交互式表单可通过 API 而不是传统的图形用户界面进行访问和交互。Headless 自适应表单可帮助您：
+使用 [Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hans)可让您的开发人员创建、发布和管理交互式表单，这些交互式表单可通过 API 而不是传统的图形用户界面进行访问和交互。Headless 自适应表单可帮助您：
 
 * 使用选定的编程语言构建高质量的多渠道表单
 * 将表单本机集成到您的桌面和移动应用程序、网站和聊天应用程序

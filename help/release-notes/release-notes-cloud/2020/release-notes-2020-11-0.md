@@ -36,7 +36,7 @@ ht-degree: 15%
 
 * **批量资源摄取**：为客户提供使用[!DNL Experience Manager]as a Cloud Service架构（包括资源微服务）的可扩展、云原生摄取服务。 关键用例包括大规模的摄取，以及监控、报告和计划，同时允许使用通用云上传工具将资产初始传输到云数据存储。 请参阅[资源批量引入器工具](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-  此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许进行大规模摄取，最好在初始摄取或偶尔进行大规模摄取期间使用。 对于较小的引入作业，请使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)或使用Assets用户界面[&#128279;](/help/assets/add-assets.md#upload-assets)的上传。
+  此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许进行大规模摄取，最好在初始摄取或偶尔进行大规模摄取期间使用。 对于较小的引入作业，请使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hans)或使用Assets用户界面[&#128279;](/help/assets/add-assets.md#upload-assets)的上传。
 
   ![批量导入程序的配置](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -107,7 +107,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 的发布日期是 2020 �
 
 ### 工作流 {#workflows}
 
-* 添加了基于工作流标题、工作流模型、状态、启动器、有效负荷路径和开始日期的用于搜索工作流实例的支持。 请参阅[搜索工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
+* 添加了基于工作流标题、工作流模型、状态、启动器、有效负荷路径和开始日期的用于搜索工作流实例的支持。 请参阅[搜索工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=zh-Hans)。
 
 ### Publish层用户数据同步 {#user-sync}
 
@@ -115,7 +115,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 的发布日期是 2020 �
 
 ### SDK 内部版本分析程序 {#analyzers}
 
-AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在使用Cloud Manager部署到云环境之前，在本地开发期间发现问题。 有关详细信息，请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing)和[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk)。
+AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在使用Cloud Manager部署到云环境之前，在本地开发期间发现问题。 有关详细信息，请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing)和[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=zh-Hans#building-for-the-sdk)。
 
 ### 其他  {#others-foundation}
 
@@ -123,7 +123,7 @@ AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中
 
 ## 内容传输工具 {#content-transfer-tool}
 
-阅读本节内容，了解[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)版本v1.1.12的新增功能和更新。
+阅读本节内容，了解[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans)版本v1.1.12的新增功能和更新。
 
 ### 新增功能 {#what-is-new-ctt}
 

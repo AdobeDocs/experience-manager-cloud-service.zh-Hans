@@ -119,7 +119,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 分配给项目的名称。 上图将“SecurBank Sample”显示为程序名称。
 * 服务类型：
    * **Experience Manager云** — 用于AEM as a Cloud Service程序
-   * **Experience Manager** — 用于[AMS (AdobeManaged Services)程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 用于[AMS (AdobeManaged Services)程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)
 * [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙盒
    * 生产

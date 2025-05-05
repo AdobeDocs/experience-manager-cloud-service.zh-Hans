@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->熟悉基本的[AEM项目原型use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和[FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md)，因为本文是在这些知识和概念的基础上进行构建的。
+>熟悉基本的[AEM项目原型use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)和[FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md)，因为本文是在这些知识和概念的基础上进行构建的。
 
 本文概述了Adobe Experience Manager Maven项目要与AEM as a Cloud Service兼容所需的更改，需要确保这些项目尊重可变和不可变内容的拆分。 此外，建立依赖关系以创建无冲突的确定性部署，并将它们打包到可部署结构中。
 
@@ -62,7 +62,7 @@ Oak索引(`/oak:index`)由AEM as a Cloud Service部署过程管理。 这是因�
 + 将生成OSGi捆绑包Jar文件，并直接将其嵌入所有项目中。
 
 + `ui.apps`包包含要部署的所有代码，并且只部署到`/apps`。 `ui.apps`包的常见元素包括但不限于：
-   + [组件定义和HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)脚本
+   + [组件定义和HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)脚本
       + `/apps/my-app/components`
    + JavaScript和CSS （通过[客户端库](/help/implementing/developing/introduction/clientlibs.md)）
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ Oak索引(`/oak:index`)由AEM as a Cloud Service部署过程管理。 这是因�
       + `/apps/settings`
    + ACL（权限）
       + `/apps`下的任何路径的任何`rep:policy`
-   + [预编译的捆绑脚本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [预编译的捆绑脚本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=zh-Hans)
 
 >[!NOTE]
 >

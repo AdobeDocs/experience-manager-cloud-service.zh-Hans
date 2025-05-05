@@ -93,6 +93,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 教程
 
-有关如何创建、部署和测试CDN提供的错误页面的分步说明，请参阅[CDN错误页面](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教程。
+有关如何创建、部署和测试CDN提供的错误页面的分步说明，请参阅[CDN错误页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教程。
 
 

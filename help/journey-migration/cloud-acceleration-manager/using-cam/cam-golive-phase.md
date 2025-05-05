@@ -20,7 +20,7 @@ ht-degree: 0%
 ![上线](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->请参阅[在Cloud Acceleration Manager中创建和管理项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project)以了解详情。
+>请参阅[在Cloud Acceleration Manager中创建和管理项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=zh-Hans#create-project)以了解详情。
 
 
 ## 使用上线活动信息卡 {#go-live}

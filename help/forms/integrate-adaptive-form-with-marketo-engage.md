@@ -18,7 +18,7 @@ ht-degree: 5%
 
 ![工作流](/help/forms/assets/workflow-marketo-4.png)
 
-在创建云服务配置以将Marketo Engage与AEM Forms集成后，您可以配置自适应表单以与[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)集成。
+在创建云服务配置以将Marketo Engage与AEM Forms集成后，您可以配置自适应表单以与[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/home)集成。
 
 您可以使用表单向导将Marketo Engage连接到自适应表单，该向导通过指导您完成每个步骤来简化配置过程。 这包括选择模板、样式和数据字段，以及设置数据映射以确保您的表单在创建后可以与Marketo Engage通信。 使用表单向导，您还可以配置自适应表单，以在提交时直接将数据提交到Adobe Marketo Engage。
 
@@ -95,7 +95,7 @@ ht-degree: 5%
 
 ## 下一步
 
-您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
+您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
 
 ## 相关文章
 
