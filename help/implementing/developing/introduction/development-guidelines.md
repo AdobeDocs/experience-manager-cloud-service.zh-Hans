@@ -17,7 +17,7 @@ ht-degree: 3%
 >id="development_guidelines"
 >title="AEM as a Cloud Service 开发准则"
 >abstract="了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。"
->additional-url="https://video.tv.adobe.com/v/330555/" text="包结构演示"
+>additional-url="https://video.tv.adobe.com/v/345900?captions=chi_hans" text="包结构演示"
 
 本文档提供了在AEM as a Cloud Service上进行开发的准则，以及它与AEM内部部署和AMS中的AEM不同的重要方式。
 

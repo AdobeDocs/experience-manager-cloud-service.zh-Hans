@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Cloud Service 对于管理 AEM 项目带来许多
 >id="aem_cloud_notable_changes"
 >title="AEM as a Cloud Service 中的重大更改"
 >abstract="在此选项卡中，可查看帮助您了解内部或 Adobe Managed Services 中的 AEM 与 AEM as a Cloud Service 之间区别的内容。"
->additional-url="https://video.tv.adobe.com/v/330543" text="AEM as a Cloud Service 的演变"
+>additional-url="https://video.tv.adobe.com/v/346172?captions=chi_hans" text="AEM as a Cloud Service 的演变"
 
 
 >[!NOTE]
