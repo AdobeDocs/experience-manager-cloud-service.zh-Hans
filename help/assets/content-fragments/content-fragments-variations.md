@@ -5,22 +5,26 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2530'
 ht-degree: 52%
 
 ---
 
-# 变体 – 创作片段内容{#variations-authoring-fragment-content}
+# 变体——创作片段内容{#variations-authoring-fragment-content}
 
-[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是Adobe Experience Manager (AEM)as a Cloud Service内容片段的一项重要功能。 这是因为它们允许您创建和编辑&#x200B;**母版**&#x200B;内容的副本，以用于特定渠道和方案。 特别是，这使Headless内容投放更加灵活。
+[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是Adobe Experience Manager (AEM) as a Cloud Service中内容片段的一项重要功能。 这是因为它们允许您创建和编辑&#x200B;**母版**&#x200B;内容的副本，以用于特定渠道和方案。 特别是，这使Headless内容投放更加灵活。
 
 >[!NOTE]
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>创作内容片段有两个编辑器 — 新编辑器和原始编辑器。 默认使用新编辑器。 虽然基本功能相同，但存在一些差异。
+>
+>本节介绍原始编辑器。 这是通过新编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)打开的[。
+>
+>有关新编辑器的完整详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
 在&#x200B;**变体**&#x200B;选项卡中，您可以执行以下操作：
 
@@ -47,7 +51,7 @@ ht-degree: 52%
 
 ## 创作内容 {#authoring-your-content}
 
-当您打开内容片段进行编辑时，**变体**&#x200B;选项卡默认处于打开状态。 在此，您可以为主要或任何变体创作内容。结构化片段包含在内容模型中定义的各种数据类型的字段。
+在原始编辑器中打开内容片段进行编辑时，**变体**&#x200B;选项卡默认打开。 在此，您可以为主要或任何变体创作内容。结构化片段包含在内容模型中定义的各种数据类型的字段。
 
 例如：
 

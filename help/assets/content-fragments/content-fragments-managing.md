@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 67%
+source-wordcount: '1925'
+ht-degree: 65%
 
 ---
 
@@ -37,11 +37,19 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->内容片段是一项站点功能，但存储为&#x200B;**资源**。
+>内容片段是一项&#x200B;**站点**&#x200B;功能，但存储为&#x200B;**资源**。
 >
->它们现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**Assets**&#x200B;控制台进行管理。 本节介绍如何从&#x200B;**Assets**&#x200B;控制台进行管理。
+>它们主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;控制台进行管理。
 >
->创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
+>创作内容片段有两个编辑器 — 新编辑器和原始编辑器。 默认使用新编辑器。 虽然基本功能相同，但存在一些差异。
+>
+>本节介绍原始编辑器。
+>
+>[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)的默认编辑器是新编辑器，可从&#x200B;**内容片段**&#x200B;控制台和&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>
+>若要使用[原始编辑器](/help/assets/content-fragments/content-fragments-variations.md)，请先打开新编辑器，然后取消激活&#x200B;**新编辑器**&#x200B;开关。
+>
+>两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ ht-degree: 67%
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
-打开片段进行编辑：
+要在原始编辑器中打开片段进行编辑，请执行以下操作：
 
 >[!CAUTION]
 >
 >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
 
-1. 使用&#x200B;**Assets**&#x200B;控制台导航到内容片段的位置。
-1. 打开片段进行编辑，方法是：
+1. 导航到内容片段的位置。
 
-   * 单击/点按片段或片段链接（具体取决于控制台视图）。
-   * 选择片段，然后从工具栏中&#x200B;**编辑**。
+1. 打开片段进行编辑。
 
-1. 片段编辑器将打开。 根据需要进行更改：
+1. 片段在新编辑器中打开。 取消激活&#x200B;**新编辑器**&#x200B;开关（右上方）以打开原始编辑器：
 
    ![片段编辑器](assets/cfm-managing-03.png)
 
-1. 进行更改后，请使用&#x200B;**保存**，**保存并关闭**&#x200B;或&#x200B;**关闭**。
+1. 根据需要进行更改。
+
+1. 准备就绪后，根据需要使用&#x200B;**保存**、**保存并关闭**&#x200B;或&#x200B;**关闭**。
 
    >[!NOTE]
    >

@@ -5,10 +5,10 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 90%
+source-wordcount: '1272'
+ht-degree: 85%
 
 ---
 
@@ -24,12 +24,11 @@ Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独
 >
 >内容片段是一项&#x200B;**站点**&#x200B;功能，但存储为&#x200B;**资源**。
 >
->现在主要用&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台管理它们，但仍可从&#x200B;**[资源](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;控制台管理它们。
+>它们主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;控制台进行管理。
 >
->有两个编辑器用于创作内容片段：
+>[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)的默认编辑器是新编辑器；可从&#x200B;**内容片段**&#x200B;控制台和&#x200B;**Assets**&#x200B;控制台访问。
 >
->* 主要从&#x200B;**内容片段**&#x200B;控制台访问[内容片段 - 创作](/help/sites-cloud/administering/content-fragments/authoring.md)的新编辑器。
->* 主要从&#x200B;**资源**&#x200B;控制台访问[原始编辑器](/help/assets/content-fragments/content-fragments-variations.md)。
+>若要使用[原始编辑器](/help/assets/content-fragments/content-fragments-variations.md)，请先打开新编辑器，然后取消激活&#x200B;**新编辑器**&#x200B;开关。
 
 >[!NOTE]
 >
