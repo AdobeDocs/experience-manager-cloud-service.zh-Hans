@@ -79,6 +79,7 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
 
    1. 指定&#x200B;**名称**&#x200B;和&#x200B;**标题**。
    1. 指定 **GitHub URL**。例如，如果您的 GitHub 存储库名为 `edsforms`，则它位于帐户 `wkndforms` 下，其 URL 为：
+
       `https://github.com/wkndforms/edsforms`
 
    ![创建表单向导](/help/edge/assets/create-form-wizard.png)
@@ -130,7 +131,7 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
 
    ![内容树](/help/edge/assets/content-tree.png)
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**列表中添加所需的组件。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加所需的组件。
    ![添加组件](/help/edge/assets/add-component.png)
 
    下面的屏幕截图显示了在Universal Editor中创作的`Registration Form`：
@@ -215,7 +216,7 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
 要在Edge Delivery Services上访问表单，必须发布表单。 执行以下步骤以发布表单：
 
 >[!BEGINTABS]
->在通用编辑器上[!TAB ]
+>[!TAB 在通用编辑器上] 
 
 1. 通过单击通用编辑器右上角的&#x200B;**[!UICONTROL 发布]**&#x200B;按钮发布表单。
 
@@ -224,8 +225,7 @@ Adobe Experience Manager (AEM)允许您创建有吸引力、响应式且动态�
 >[!NOTE]
 >
 > 请参阅[发布和部署](/help/edge/docs/forms/universal-editor/publish-forms.md)一文，了解如何将表单发布到 Edge Delivery Services。
-
->在自适应表单编辑器上[!TAB ]
+>[!TAB 在自适应表单编辑器上] 
 
 1. 在Experience Manager Forms控制台中，导航到父文件夹，然后选择要发布的表单。
 

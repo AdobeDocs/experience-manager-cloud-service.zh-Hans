@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 预设类型]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 图像集]**&#x200B;或&#x200B;**[!UICONTROL 旋转集]**。 请确保选择正确的预设类型；该预设类型以后将无法编辑。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
-1. 在&#x200B;**[!UICONTROL 编辑批次集预设]**&#x200B;页面的右侧，在&#x200B;**[!UICONTROL 预设详细信息]**&#x200B;和&#x200B;**[!UICONTROL 设置命名约定]**标题下设置您需要的可编辑选项。
+1. 在&#x200B;**[!UICONTROL 编辑批次集预设]**&#x200B;页面的右侧，在&#x200B;**[!UICONTROL 预设详细信息]**&#x200B;和&#x200B;**[!UICONTROL 设置命名约定]**&#x200B;标题下设置您需要的可编辑选项。
 要了解有关您可用的可编辑选项的更多信息，请参阅[预设详细信息、设置命名惯例和规则结果 — RegX选项](#features-options-bsp)。
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)

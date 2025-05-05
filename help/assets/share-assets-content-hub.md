@@ -91,7 +91,7 @@ ht-degree: 11%
 
 ## 预览和共享资源 {#preview-assets}
 
-您可以进行预览，以查看在与链接收件人共享之前，要共享的数字资产的外观。 单击需要预览的资源。 [!DNL Content Hub]显示资产](asset-properties-content-hub.md)的[详细视图。
+您可以进行预览，以查看在与链接收件人共享之前，要共享的数字资产的外观。 单击需要预览的资源。 [!DNL Content Hub]显示资产[&#128279;](asset-properties-content-hub.md)的详细视图。
 
 单击![共享图标](assets/share.svg)图标可共享资产。 使用&#x200B;**[!UICONTROL 过期]**&#x200B;字段指定链接的过期日期。 选择一个可用选项，如24小时、1周、30天、90天、1年，或指定自定义日期。 单击&#x200B;**[!UICONTROL 复制共享链接]**。 然后，您可以与收件人共享复制的链接。
 

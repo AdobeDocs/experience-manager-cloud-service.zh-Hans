@@ -293,7 +293,7 @@ Live Copy 的源可以是常规页面，也可以是 Blueprint 配置包含的�
 
 ### 转出冲突 {#rollout-conflicts}
 
-转出可能会变得复杂，尤其是当作者同时在源和 Live Copy 中编辑内容时。因此，了解AEM如何处理转出](rollout-conflicts.md)期间可能发生的任何[冲突很有用。
+转出可能会变得复杂，尤其是当作者同时在源和 Live Copy 中编辑内容时。因此，了解AEM如何处理转出[&#128279;](rollout-conflicts.md)期间可能发生的任何冲突很有用。
 
 ### 暂停和取消继承与同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 

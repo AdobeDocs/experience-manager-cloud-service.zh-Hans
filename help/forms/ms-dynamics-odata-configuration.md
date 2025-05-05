@@ -36,7 +36,7 @@ ht-degree: 2%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service （OData服务）在所有运行模式下均可用。 有关为[!DNL Experience Manager]实例配置运行模式的详细信息，请参阅[运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)。
+&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service （OData服务）在所有运行模式下均可用。 有关为[!DNL Experience Manager]实例配置运行模式的详细信息，请参阅[运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)。
 
 AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
@@ -105,6 +105,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    * `Client-ID`是使用任何GUID生成器生成的客户端ID。
    * `redirect-uri`是[!DNL Experience Manager Forms]上[!DNL Microsoft Dynamics] OData云服务的URL。 与[!DNL Experience Manager Forms]一起安装的默认云服务部署在以下URL上：
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 运行以下命令以授予AD FS计算机上的访问权限：
@@ -132,7 +133,7 @@ OData服务由其服务根URL标识。 要在[!DNL Experience Manager] as a Clou
    有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置文件夹](#cloud-folder)。
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL OData服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
-在**[!UICONTROL 身份验证设置]**&#x200B;选项卡中：
+在&#x200B;**[!UICONTROL 身份验证设置]**&#x200B;选项卡中：
 
    1. 输入&#x200B;**[!UICONTROL 服务根]**&#x200B;字段的值。 转到Dynamics实例并导航到&#x200B;**[!UICONTROL 开发人员资源]**，以查看服务根字段的值。 例如， https://&lt;tenant-name>/api/data/v9.1/
 

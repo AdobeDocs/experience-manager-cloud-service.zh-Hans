@@ -58,7 +58,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 建议您为AEM应用程序提供单元测试，这是每个测试策略的基础。 它们旨在快速且频繁地运行，并尽早提供快速反馈。 它们紧密集成到开发人员工作流、您自己的CI/CD和AEM云服务部署管道中。
 
-它们使用JUnit实现，并使用Maven执行。 请参阅AEM项目原型](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)的[核心模块，了解AEM的单元测试示例和入门。
+它们使用JUnit实现，并使用Maven执行。 请参阅AEM项目原型[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)的核心模块，了解AEM的单元测试示例和入门。
 
 ### 代码质量
 
@@ -83,7 +83,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 为了保持高效的管道运行，Adobe建议重点关注关键功能和主用户交互流程，旨在确保大约15分钟或更短的功能测试运行时间。 超过此时间的完整功能测试套件应在开发过程中作为常规客户验证管道的一部分执行。
 
-有关示例，请参阅[开源产品测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)或AEM项目原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)的[it.tests模块。
+有关示例，请参阅[开源产品测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)或AEM项目原型[&#128279;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)的it.tests模块。
 
 有关更多信息，请参阅 [Java 功能测试。](/help/implementing/cloud-manager/java-functional-testing.md)
 
@@ -101,7 +101,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 为了保持管道执行的有效性，Adobe建议重点关注关键功能和主要用户交互流程。 超出此质量关卡的完整UI测试包应作为常规客户验证管道的一部分执行。 将它们整合到客户的开发流程中。
 
-有关示例，请参阅[开源示例测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)或AEM项目原型](/help/implementing/cloud-manager/ui-testing.md)的[ui.tests模块。
+有关示例，请参阅[开源示例测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)或AEM项目原型[&#128279;](/help/implementing/cloud-manager/ui-testing.md)的ui.tests模块。
 
 有关详细信息，请参阅[自定义 UI 测试。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 

@@ -44,7 +44,7 @@ RTE功能可以在许多组件中使用。 主要组件是`Text`组件。
 新的语义块格式可供选择。
 
 1. 根据您的RTE，确定并导航到[配置位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)。
-1. [通过激活插件](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)启用段落选择字段](rich-text-editor.md)。[
+1. [通过激活插件](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)启用段落选择字段[&#128279;](rich-text-editor.md)。
 1. [指定您希望段落选择字段中可用的格式](rich-text-editor.md)。
 1. 然后，内容作者可以从RTE中的选择字段中使用段落格式。
 
@@ -52,7 +52,7 @@ RTE功能可以在许多组件中使用。 主要组件是`Text`组件。
 
 ## 使用Source编辑功能 {#use-of-the-source-edit-feature}
 
-在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE内创建的一段内容可能需要更多标记，以确保符合WCAG 2.0。可以使用RTE的[源编辑](rich-text-editor.md#aboutplugins)选项完成此操作。 您可以在`misctools`插件](rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
+在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE内创建的一段内容可能需要更多标记，以确保符合WCAG 2.0。可以使用RTE的[源编辑](rich-text-editor.md#aboutplugins)选项完成此操作。 您可以在`misctools`插件[&#128279;](rich-text-editor.md#aboutplugins)上指定`sourceedit`功能。
 
 >[!CAUTION]
 >

@@ -159,11 +159,11 @@ ht-degree: 3%
 ## 使用草稿和提交组件在Sites页面上查看草稿/提交的表单
 
 要查看已保存的草稿或已提交的表单，请使用&#x200B;**草稿和提交** Forms门户组件。
-在草稿和提交组件](#configure-properties-of-the-drafts--submissions-component)的[配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**草稿Forms**&#x200B;时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
+在草稿和提交组件[&#128279;](#configure-properties-of-the-drafts--submissions-component)的配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**草稿Forms**&#x200B;时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
 
 ![草稿图标](assets/drafts-component.png)
 
-在草稿和提交组件](#configure-properties-of-the-drafts--submissions-component)的[配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**已提交的Forms**&#x200B;时，将显示已提交的表单。 您可以查看已提交的表单，但无法编辑它们。
+在草稿和提交组件[&#128279;](#configure-properties-of-the-drafts--submissions-component)的配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**已提交的Forms**&#x200B;时，将显示已提交的表单。 您可以查看已提交的表单，但无法编辑它们。
 
 ![提交图标](assets/submission-listing.png)
 
@@ -171,7 +171,7 @@ ht-degree: 3%
 
 ## 后续步骤
 
-在下一篇文章中，让我们了解如何使用](/help/forms/add-form-link-to-aem-sites-page.md)链接Forms门户组件在“站点”页面上添加对表单的引用[。
+在下一篇文章中，让我们了解如何使用[&#128279;](/help/forms/add-form-link-to-aem-sites-page.md)链接Forms门户组件在“站点”页面上添加对表单的引用。
 
 ## 相关文章
 

@@ -173,7 +173,7 @@ GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构�
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为执行此操作，客户端必须获取包含查询所需的所有类型的[架构](#schema-generation)。
 
-对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
+对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**&#x200B;[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
 
 >[!CAUTION]
 >
@@ -963,7 +963,7 @@ GraphQL 中的解决方案意味着您可以：
 
    * `_smartCrops`属性公开可用于特定资源的智能裁剪配置
 
-   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[&#128279;](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >

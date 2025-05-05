@@ -33,7 +33,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->包只能包含内容。 任何功能（例如，存储在`/apps`下的内容）都必须使用Cloud Manager](/help/implementing/cloud-manager/deploy-code.md)中的CI/CD管道[部署。
+>包只能包含内容。 任何功能（例如，存储在`/apps`下的内容）都必须使用Cloud Manager[&#128279;](/help/implementing/cloud-manager/deploy-code.md)中的CI/CD管道部署。
 
 >[!IMPORTANT]
 >
@@ -471,7 +471,7 @@ Package Manager分为四个主要功能区域：
 
 可以通过两种不同的方式验证包：
 
-* 通过包管理器UI[](#via-package-manager)。
+* 通过包管理器UI[&#128279;](#via-package-manager)。
 * [通过HTTPPOST请求，例如使用cURL](#via-post-request)。
 
 在上传包后但在安装包之前应始终进行验证。

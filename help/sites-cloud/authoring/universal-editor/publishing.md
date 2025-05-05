@@ -52,7 +52,7 @@ ht-degree: 45%
 
 ## 从站点控制台中发布和取消发布 {#publishing-sites-console}
 
-您还可以从站点控制台](/help/sites-cloud/authoring/sites-console/publishing-pages.md)发布[，当您希望发布多个内容页面或计划发布或取消发布时，这非常有用。
+您还可以从站点控制台[&#128279;](/help/sites-cloud/authoring/sites-console/publishing-pages.md)发布，当您希望发布多个内容页面或计划发布或取消发布时，这非常有用。
 
 ## 与页面编辑器的相似之处 {#similarities}
 

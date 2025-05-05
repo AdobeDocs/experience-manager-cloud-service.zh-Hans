@@ -163,7 +163,7 @@ Edit Properties dialog for an interactive communication-->
 
 ### 使用自定义函数调用表单数据模型(FDM) {#invoke-form-data-model-using-custom-functions}
 
-您可以使用自定义函数](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)从规则编辑器[调用表单数据模型。 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
+您可以使用自定义函数[&#128279;](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)从规则编辑器调用表单数据模型。 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
 
 1. 转到位于`https://server:host/system/console/configMgr`的Experience Manager Web控制台。
 1. 找到&#x200B;**[!UICONTROL 用于服务调用的自适应表单级表单数据模型白名单 — 配置工厂]**。

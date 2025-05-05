@@ -69,7 +69,7 @@ AEM as a Cloud Service提供了[查询性能工具](#query-performance-tool)，�
 * 它可显示已执行的查询及其相关性能特征和查询计划。
 * 从仅显示查询计划到执行完整查询，它允许在不同级别执行特殊查询。
 
-查询性能工具可通过Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的[Developer Console访问。 与AEM 6.x版本相比，AEM as a Cloud Service的查询性能工具可提供更多有关查询执行细节的信息。
+查询性能工具可通过Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的Developer Console访问。 与AEM 6.x版本相比，AEM as a Cloud Service的查询性能工具可提供更多有关查询执行细节的信息。
 
 此图表说明了使用查询性能工具优化查询的一般流程。
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service提供了[查询性能工具](#query-performance-tool)，�
 
 ## 查询性能工具 {#query-performance-tool}
 
-查询性能工具(位于`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可通过Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的[Developer Console使用)提供 — 
+查询性能工具(位于`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可通过Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的Developer Console使用)提供 — 
 * 任何“慢查询”的列表；当前定义为读取/扫描超过5000行的查询。
 * “常见查询”列表
 * “Explain Query”工具，用于了解Oak如何执行特定查询。

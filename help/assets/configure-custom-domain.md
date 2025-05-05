@@ -69,7 +69,7 @@ ht-degree: 20%
    ![图像](/help/assets/assets/ssl-certificate.png)
 了解如何在Adobe Cloud Manager中添加[SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-1. 添加SSL证书后，添加自定义域。 单击&#x200B;**[!UICONTROL 域设置]**&#x200B;并针对&#x200B;**[!UICONTROL 发布服务]**选项指定自定义域。
+1. 添加SSL证书后，添加自定义域。 单击&#x200B;**[!UICONTROL 域设置]**&#x200B;并针对&#x200B;**[!UICONTROL 发布服务]**&#x200B;选项指定自定义域。
 了解有关[自定义域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)的更多信息。
 
 1. 在对应于发布域的DNS记录中添加两个[CNAME记录](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
@@ -79,4 +79,4 @@ ht-degree: 20%
 
 >[!NOTE]
 >
-将自定义域添加到允许的重定向URL列表。 该列表位于资产选择器的IMS客户端中。<br>通过提供自定义域字符串与相应的Adobe团队协调以执行此任务。
+>将自定义域添加到允许的重定向URL列表。 该列表位于资产选择器的IMS客户端中。<br>通过提供自定义域字符串与相应的Adobe团队协调以执行此任务。

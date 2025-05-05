@@ -278,7 +278,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后使用在配置期间提供的凭据登录到您的帐户。
 1. 转到&#x200B;**[!UICONTROL 设置>应用程序设置]**。
 1. 展开&#x200B;**[!UICONTROL 发布设置]**&#x200B;区域，然后选择&#x200B;**[!UICONTROL 图像服务器]**。设置发布实例的默认设置时，将&#x200B;**[!UICONTROL 发布上下文]**&#x200B;设置为&#x200B;**[!UICONTROL 图像提供]**。
-1. 滚动到必须更改的属性，例如&#x200B;**[!UICONTROL 颜色管理属性]**区域中的属性。
+1. 滚动到必须更改的属性，例如&#x200B;**[!UICONTROL 颜色管理属性]**&#x200B;区域中的属性。
 您可以设置以下颜色校正属性：
 
    | 属性 | 描述 |

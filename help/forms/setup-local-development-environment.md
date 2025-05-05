@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 为AEM Forms设置本地开发环境 {#overview}
 
-当您将[!DNL  Adobe Experience Manager Forms]设置并配置为[!DNL  Cloud Service]环境时，您需要在云上设置开发、暂存和生产环境。 此外，您还可以设置和配置本地开发环境。
+当您将[!DNL &#x200B; Adobe Experience Manager Forms]设置并配置为[!DNL &#x200B; Cloud Service]环境时，您需要在云上设置开发、暂存和生产环境。 此外，您还可以设置和配置本地开发环境。
 
 您可以使用本地开发环境执行以下操作，而无需登录到云开发环境：
 

@@ -22,7 +22,7 @@ ht-degree: 52%
 >
 >创作内容片段有两个编辑器 — 新编辑器和原始编辑器。 默认使用新编辑器。 虽然基本功能相同，但存在一些差异。
 >
->本节介绍原始编辑器。 这是通过新编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)打开的[。
+>本节介绍原始编辑器。 这是通过新编辑器[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)打开的。
 >
 >有关新编辑器的完整详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
@@ -502,7 +502,7 @@ ht-degree: 52%
 
 >[!CAUTION]
 >
->同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**&#x200B;复制到变体*。
 >
 >仅会同步变体的当前元素。
 >

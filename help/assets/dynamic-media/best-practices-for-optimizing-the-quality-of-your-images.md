@@ -126,7 +126,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 将单色参数设置保留为0。
 
-### JPEF压缩(`&qlt=`) {#best-practices-for-jpef-compression-qlt}的最佳实践
+### JPEF压缩(`&qlt=`)的最佳实践 {#best-practices-for-jpef-compression-qlt}
 
 * 此参数可控制JPG编码质量。 较高的值意味着较高质量的图像但文件大小较大；或者，较低的值意味着较低质量的图像但文件大小较小。 此参数的范围为0至100。
 * 要优化质量，请勿将参数值设置为100。 将90或95设置为100几乎可以察觉到差异。 而100则毫无必要地增加了图像文件的大小。 因此，要优化质量但避免图像文件过大，请将`qlt= value`设置为90或95。

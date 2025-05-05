@@ -78,7 +78,7 @@ ht-degree: 1%
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >单击&#x200B;**预览**以预览渠道的内容。
+   >单击&#x200B;**预览**&#x200B;以预览渠道的内容。
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 创建向导中的可用模板 {#available-templates}
@@ -174,7 +174,7 @@ ht-degree: 1%
 
 1. 单击&#x200B;*删除*&#x200B;以验证更改。
 
-**注意：**从渠道中删除默认分配详细信息将删除使用该渠道的所有显示器上的匹配分配。
+**注意：**&#x200B;从渠道中删除默认分配详细信息将删除使用该渠道的所有显示器上的匹配分配。
 因此，如果没有可播放的替代内容，这可能会导致出现空白屏幕。
 
 ## 后续内容 {#whats-next}

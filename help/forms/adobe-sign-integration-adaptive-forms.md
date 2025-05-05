@@ -84,7 +84,7 @@ ht-degree: 23%
 
    其中：
 
-   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -112,7 +112,7 @@ ht-degree: 23%
 
    ![OAuth 配置](/help/forms/assets/oauthconfig-new.png)
 
-1. 返回&#x200B;**[!UICONTROL 创建Adobe Acrobat Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定[**[!UICONTROL 客户端ID]** （也称为应用程序ID）和&#x200B;**[!UICONTROL 客户端密钥]**]。 使用您在上一步中创建的Adobe Acrobat Sign应用程序](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的[客户端ID和客户端密钥。
+1. 返回&#x200B;**[!UICONTROL 创建Adobe Acrobat Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定[**[!UICONTROL 客户端ID]** （也称为应用程序ID）和&#x200B;**[!UICONTROL 客户端密钥]**]。 使用您在上一步中创建的Adobe Acrobat Sign应用程序[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的客户端ID和客户端密钥。
 
 1. 在[!UICONTROL 授权范围]部分中，您可以根据需要通过将前缀“self”或“account”添加到范围中，将范围修改为“account”或“self”。
    ![授权范围](/help/forms/assets/authorization-scope.png)
@@ -225,7 +225,7 @@ Adobe Acrobat Sign政府解决方案团队要求为您的Adobe Acrobat Sign应�
 
    其中：
 
-   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -254,7 +254,7 @@ Adobe Acrobat Sign政府解决方案团队要求为您的Adobe Acrobat Sign应�
 AEM Formsas a Cloud Service提供调度程序服务，可按定义的时间间隔检查签名者的状态。 配置计划程序服务的方案：
 
 * 如果您使用[提交表单（在每个收件人完成签字仪式后）](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order)来签署文档，则只有在所有签名者都签署表单后才提交表单。
-* 如果您使用AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step)中的[签名步骤对文档进行签名，则签名步骤将等待所有签名者签名该文档，然后再继续工作流的下一步。
+* 如果您使用AEM Workflow[&#128279;](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step)中的签名步骤对文档进行签名，则签名步骤将等待所有签名者签名该文档，然后再继续工作流的下一步。
 
 默认情况下，[!DNL Adobe Acrobat Sign] 调度程序服务每 24 小时检查（轮询）一次签名者响应。您可以为您的环境更改此默认间隔。
 

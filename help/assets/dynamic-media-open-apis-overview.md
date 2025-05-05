@@ -102,7 +102,7 @@ ht-degree: 97%
 
   >[!NOTE]
   >
-  要与非 Adobe 应用程序集成，请将域名提供给托管该应用程序的允许列表。
+  >要与非 Adobe 应用程序集成，请将域名提供给托管该应用程序的允许列表。
 
 * 参与集成项目的关键客户联系人的详细信息。
 
@@ -112,7 +112,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
-从任何内容包中排除 `/conf/global/settings/dam/assets-configurations/assetdelivery`，以避免停用具有 OpenAPI 功能的 Dynamic Media。
+>从任何内容包中排除 `/conf/global/settings/dam/assets-configurations/assetdelivery`，以避免停用具有 OpenAPI 功能的 Dynamic Media。
 
 ## 深入了解关键功能 {#learn-more-key-capabilities}
 

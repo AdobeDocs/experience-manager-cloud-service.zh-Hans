@@ -55,7 +55,7 @@ hidefromtoc: yes -->
    * [Illustrator](#illustrator-tab)选项卡
 
    ![Dynamic Media常规设置页面](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**选项卡。*<br><br>
+   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**&#x200B;选项卡。*<br><br>
 
 1. 完成后，在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
 

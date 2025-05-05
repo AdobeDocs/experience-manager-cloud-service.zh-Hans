@@ -21,7 +21,7 @@ ht-degree: 66%
 
 了解Cloud Manager的自定义代码质量规则，这些规则基于Adobe Experience Manager工程最佳实践，旨在通过彻底测试确保高质量的代码。 另请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)。
 
-由于是 Adobe 专有信息，因此无法下载完整的 SonarQube 规则。您可以使用此链接](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载&#x200B;*当前*&#x200B;规则[的完整列表。 有关规则的描述和示例，请继续阅读本文档。
+由于是 Adobe 专有信息，因此无法下载完整的 SonarQube 规则。您可以使用此链接[&#128279;](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载&#x200B;*当前*&#x200B;规则的完整列表。 有关规则的描述和示例，请继续阅读本文档。
 
 >[!IMPORTANT]
 >

@@ -34,7 +34,7 @@ ht-degree: 9%
    * 若要关联派生文件，请从列表中选择&#x200B;**[!UICONTROL 添加派生]**。 您可以关联此类别中的多个资产。
    * 若要在资产之间创建双向关系，请从列表中选择&#x200B;**[!UICONTROL 添加其他]**。 您可以关联此类别中的多个资产。
 
-1. 从&#x200B;**[!UICONTROL 选择Assets]**&#x200B;屏幕中，导航到要关联的资源的位置，然后选择该资源。 您可以在单击时按住Shift键，一次选择单个资源或多个资源，该键可包括Assets视图](/help/assets/supported-file-formats-assets-view.md)中支持的[文件格式的任意。
+1. 从&#x200B;**[!UICONTROL 选择Assets]**&#x200B;屏幕中，导航到要关联的资源的位置，然后选择该资源。 您可以在单击时按住Shift键，一次选择单个资源或多个资源，该键可包括Assets视图[&#128279;](/help/assets/supported-file-formats-assets-view.md)中支持的文件格式的任意。
 
    ![添加相关资源](assets/add-related-asset.png)
 
@@ -62,4 +62,4 @@ ht-degree: 9%
 >
 >* [查看资源的版本](/help/assets/manage-organize-assets-view.md#view-versions)
 >* [在AEM中翻译资源](/help/assets/translate-assets.md)
->* Assets视图](/help/assets/supported-file-formats-assets-view.md)中的[支持的文件格式。
+>* Assets视图[&#128279;](/help/assets/supported-file-formats-assets-view.md)中的支持的文件格式。

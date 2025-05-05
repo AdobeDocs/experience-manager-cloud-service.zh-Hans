@@ -449,7 +449,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->时间轴包含多个特定于内容片段](content-fragments/content-fragments.md)的[选项。
+>时间轴包含多个特定于内容片段[&#128279;](content-fragments/content-fragments.md)的选项。
 
 ## 为资源作批注 {#annotating}
 
@@ -459,7 +459,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->对于内容片段，在片段编辑器](content-fragments/content-fragments.md)中创建[注释。
+>对于内容片段，在片段编辑器[&#128279;](content-fragments/content-fragments.md)中创建注释。
 
 1. 导航到要将注释添加到的资源的位置。
 1. 从以下任一选项中选择&#x200B;**[!UICONTROL 注释]**&#x200B;图标：

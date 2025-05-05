@@ -92,7 +92,7 @@ ht-degree: 8%
 
 有关旋转集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
-您可以像在Experience Manager Assets](/help/assets/manage-digital-assets.md)中[上传任何其他资源一样上传旋转集的图像。
+您可以像在Experience Manager Assets[&#128279;](/help/assets/manage-digital-assets.md)中上传任何其他资源一样上传旋转集的图像。
 
 ### 为旋转集捕获图像的准则 {#guidelines-for-shooting-spin-set-images}
 
@@ -222,6 +222,7 @@ ht-degree: 8%
    * 要删除资源，请选择该资源并选择&#x200B;**[!UICONTROL 删除资源]**。
    * 要应用预设，请选择“预设”图标并选择预设。
    * 要删除整个旋转集，请导航到该旋转集，选择它，然后选择&#x200B;**[!UICONTROL 删除]**
+
    >[!NOTE]
    >
    >您可以导航到旋转集，选择左边栏中的&#x200B;**[!UICONTROL 设置成员]**，然后选择单个资产上的“铅笔”图标以打开编辑窗口，来编辑图像。

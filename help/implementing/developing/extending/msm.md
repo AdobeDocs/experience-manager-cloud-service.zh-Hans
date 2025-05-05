@@ -183,14 +183,17 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. 向该节点添加以下属性：
 
    * **名称**：`jcr:title`
+
      **类型**：`String`
      **值**：在 UI 中出现的识别标题
 
    * **名称**：`jcr:description`
+
      **类型**：`String`
      **值**：可选描述。
 
    * **名称**：`cq:trigger`
+
      **类型**：`String`
      **值**：要使用的[转出触发器](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers)
       * `rollout`
@@ -636,6 +639,7 @@ MSM 使用存储的语言和国家/地区代码列表来确定与页面语言版
       * **类型**：`String`
       * **值**：持有对价属性的名称，与属性值相当`name`
          * 例如，请参阅
+
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 当定义了 `cq-msm-lockable` 时，断开/闭合链的操作会通过以下方式与 MSM 相互作用：

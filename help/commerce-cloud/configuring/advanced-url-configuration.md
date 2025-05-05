@@ -223,15 +223,15 @@ CIF配置中的![Url格式](assets/store-specific-url-formats.png)
 
 如在选择一种可用的默认格式，甚至实施自定义格式之前所述，这在很大程度上取决于存储的需求和要求。 以下建议可能有助于做出有教育意义的决定。
 
-_**使用包含SKU的产品页面URL格式。**_
+_&#x200B;**使用包含SKU的产品页面URL格式。**&#x200B;_
 
 CIF核心组件使用SKU作为所有组件中的主要标识符。 如果产品页面URL格式不包含SKU，则需要使用GraphQL查询来对其进行解析。 此解决方案可能会影响第一字节的时间。 此外，可能希望购物者能够使用搜索引擎通过SKU找到产品。
 
-_**使用包含类别上下文的产品页面URL格式。**_
+_&#x200B;**使用包含类别上下文的产品页面URL格式。**&#x200B;_
 
 CIF URL提供程序的某些功能仅适用于使用对类别上下文进行编码的产品URL格式，如类别`url_key`或类别`url_path`。 即使新存储可能不需要这些功能，一开始使用这些URL格式之一有助于减少未来的迁移工作。
 
-_**URL长度与编码信息之间的平衡。**_
+_&#x200B;**URL长度与编码信息之间的平衡。**&#x200B;_
 
 根据目录大小，特别是类别树的大小和深度，将整个`url_path`个类别编码到URL中可能不太合理。 在这种情况下，可以通过仅包含类别的`url_key`来缩短URL长度。 此方法支持使用类别`url_path`时的大多数可用功能。
 
@@ -243,7 +243,7 @@ _**URL长度与编码信息之间的平衡。**_
 
 另一方面，搜索引擎需要时间来使用新的URL格式重新爬网所有目录页面。 为了支持此过程并改善最终用户体验，建议提供可将用户从旧URL转发到新URL的重定向。
 
-其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取由CIF产品Sitemap生成器](../../overview/seo-and-url-management.md)为暂存环境和生产环境生成的[产品Sitemap，并使用它们创建[Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)。 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
+其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取由CIF产品Sitemap生成器[&#128279;](../../overview/seo-and-url-management.md)为暂存环境和生产环境生成的产品Sitemap，并使用它们创建[Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)。 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
 
 ## 示例 {#example}
 

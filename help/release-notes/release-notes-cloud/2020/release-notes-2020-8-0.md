@@ -40,7 +40,7 @@ ht-degree: 35%
 
 * 资源微服务的元数据提取提高了性能。 它可以提高总体资源摄取吞吐量。
 
-* 使用处理配置文件以使用计算服务生成自定义元数据。 查看使用处理配置文件](/help/assets/manage-metadata.md#metadata-compute-service)的[自定义元数据。
+* 使用处理配置文件以使用计算服务生成自定义元数据。 查看使用处理配置文件[&#128279;](/help/assets/manage-metadata.md#metadata-compute-service)的自定义元数据。
 
 * 管理员可配置的更简单的Brand Portal用户下载体验。 请参阅[下载体验概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 

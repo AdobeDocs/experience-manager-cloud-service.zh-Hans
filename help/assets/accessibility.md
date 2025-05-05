@@ -117,7 +117,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### [!DNL Assets]中的键盘快捷键 {#keyboard-shortcuts}
 
-[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)的[键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
+[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台[&#128279;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)的键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|

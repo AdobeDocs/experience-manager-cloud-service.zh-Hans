@@ -36,7 +36,7 @@ ht-degree: 15%
 
 * **批量资源摄取**：为客户提供使用[!DNL Experience Manager]as a Cloud Service架构（包括资源微服务）的可扩展、云原生摄取服务。 关键用例包括大规模的摄取，以及监控、报告和计划，同时允许使用通用云上传工具将资产初始传输到云数据存储。 请参阅[资源批量引入器工具](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-  此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许进行大规模摄取，最好在初始摄取或偶尔进行大规模摄取期间使用。 对于较小的引入作业，请使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)或使用Assets用户界面](/help/assets/add-assets.md#upload-assets)的[上传。
+  此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许进行大规模摄取，最好在初始摄取或偶尔进行大规模摄取期间使用。 对于较小的引入作业，请使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)或使用Assets用户界面[&#128279;](/help/assets/add-assets.md#upload-assets)的上传。
 
   ![批量导入程序的配置](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -44,7 +44,7 @@ ht-degree: 15%
 
   ![排序资源](/help/assets/assets/asset-sort-options.png)
 
-* 在此版本中，为[!DNL Experience Manager Assets]中的辅助功能进行了以下增强。 有关详细信息，请参阅 [!DNL Assets]](/help/assets/accessibility.md)中的[辅助功能。
+* 在此版本中，为[!DNL Experience Manager Assets]中的辅助功能进行了以下增强。 有关详细信息，请参阅 [!DNL Assets][&#128279;](/help/assets/accessibility.md)中的辅助功能。
 
    * 使用键盘导航时间轴时，Esc键可以折叠显示全部选项而不会失去焦点。
    * 使用键盘Tab键导航时，从添加的标记中删除最后一个标记后，标记字段将保持焦点。
@@ -69,7 +69,7 @@ ht-degree: 15%
    * 键盘和屏幕阅读器用户可以使用裁切功能。
    * 键盘用户可以更好地管理热点。
 
-  查看 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md)中的[辅助功能。
+  查看 [!DNL Dynamic Media][&#128279;](/help/assets/dynamic-media/accessibility-dm.md)中的辅助功能。
 
 ## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 

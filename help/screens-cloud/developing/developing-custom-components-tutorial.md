@@ -548,7 +548,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
 
 ## 完成的代码 {#finished-code}
 
-以下是教程中完成的代码。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是编译的AEM包。 **SRC-screens-weretail-run-0.0.1.zip **是可以使用Maven部署的未编译的源代码。
+以下是教程中完成的代码。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是编译的AEM包。 **SRC-screens-weretail-run-0.0.1.zip &#x200B;** 是可以使用Maven部署的未编译的源代码。
 
 [获取文件](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

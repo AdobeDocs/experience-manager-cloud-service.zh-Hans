@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 在基于核心组件的自适应表单中使用异步函数
 
-自适应Forms](/help/forms/rule-editor-core-components.md)中的[规则编辑器支持异步功能，允许您集成和管理需要等待外部进程或数据检索的操作，而不会中断用户与表单的交互。
+自适应Forms[&#128279;](/help/forms/rule-editor-core-components.md)中的规则编辑器支持异步功能，允许您集成和管理需要等待外部进程或数据检索的操作，而不会中断用户与表单的交互。
 
 ## 哪些因素决定了使用异步或同步功能？
 
@@ -114,7 +114,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的&#x200B;**When**&#x200B;部分中为单击按钮创建条件。 例如，单击&#x200B;**When[Confirm]**。
 1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 异步函数调用]**。
-当您选择**[!UICONTROL 异步函数调用]**，并且返回类型为`Promise`的函数出现时。
+当您选择&#x200B;**[!UICONTROL 异步函数调用]**，并且返回类型为`Promise`的函数出现时。
 1. 从列表中选择异步函数。 例如，选择`matchOTP()`函数，其回调将显示为`Add success callback`和`add failure callback`。
 1. 现在，选择&#x200B;**[!UICONTROL Input]**&#x200B;绑定。 例如，选择&#x200B;**[!UICONTROL 输入]**&#x200B;作为`Form Object`并将其与`OTP`字段进行比较。
 

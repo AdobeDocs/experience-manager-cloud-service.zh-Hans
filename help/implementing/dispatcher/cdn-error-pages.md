@@ -47,6 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+
 有关数据节点上方属性的说明，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 kind属性值应为&#x200B;*CDN*，`version`属性应设置为&#x200B;*1*。
 
 

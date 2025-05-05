@@ -55,14 +55,14 @@ AEM Forms as a Cloud Service支持以下CAPTCHA解决方案：
    1. 选择&#x200B;**[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页面。 选择您创建的配置容器，然后选择&#x200B;**[!UICONTROL 创建]**。
    1. 选择版本为[!DNL reCAPTCHA Enterprise]，并为reCAPTCHA Enterprise服务指定名称、项目ID、站点密钥和API密钥（在步骤2中获取）。
    1. 选择密钥类型，密钥类型应与您在[Google Cloud项目](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)中配置的站点密钥相同，例如，**复选框站点密钥**&#x200B;或&#x200B;**基于得分的站点密钥**。
-   1. 指定0到1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)范围内的[阈值分数。 分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
+   1. 指定0到1[&#128279;](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)范围内的阈值分数。 分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
    1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建云服务配置。
 
 <!--
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
-reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅在自适应表单](#using-reCAPTCHA)中使用CAPTCHA [。
+reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅在自适应表单[&#128279;](#using-reCAPTCHA)中使用CAPTCHA 。
 
 <!--
 ![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
@@ -134,8 +134,8 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
      >[!NOTE]
      >* 出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[通过Google将您的AEM Forms环境与reCAPTCHA服务连接](#connect-your-forms-environment-with-recaptcha-service-by-google)，了解如何创建通过Google将AEM Forms环境与reCAPTCHA服务连接的Cloud Service。
 
-   * **验证码大小：**&#x200B;您可以选择Google reCAPTCHA质询对话框的显示大小。 使用&#x200B;**[!UICONTROL 紧凑]**&#x200B;选项可显示小尺寸，使用&#x200B;**[!UICONTROL 普通]**选项可显示相对大尺寸的Google reCAPTCHA质询对话框。
-如果您选择**reCAPTCHA v2**&#x200B;版本：
+   * **验证码大小：**&#x200B;您可以选择Google reCAPTCHA质询对话框的显示大小。 使用&#x200B;**[!UICONTROL 紧凑]**&#x200B;选项可显示小尺寸，使用&#x200B;**[!UICONTROL 普通]**&#x200B;选项可显示相对大尺寸的Google reCAPTCHA质询对话框。
+如果您选择&#x200B;**reCAPTCHA v2**&#x200B;版本：
       1. 您可以为reCAPTCHA构件选择大小为&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**。
       1. 您可以选择&#x200B;**[!UICONTROL 不可见]**&#x200B;选项，以便仅在可疑活动的情况下显示验证码质询。
 
@@ -145,7 +145,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 
 1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-   现在，受reCAPTCHA保护的&#x200B;****&#x200B;显示在您的自适应表单上。 它显示在配置为使用Google reCAPTCHA服务的所有Adaptive Forms上。
+   现在，受reCAPTCHA保护的&#x200B;**&#x200B;**&#x200B;显示在您的自适应表单上。 它显示在配置为使用Google reCAPTCHA服务的所有Adaptive Forms上。
 
    现在，只允许提交合法表单，在这些表单中，表单填充程序成功清除Google reCAPTCHA服务带来的挑战。
 
@@ -169,7 +169,7 @@ Select the **[!UICONTROL Currency Value]** field in the form and create the foll
 ## 常见问题解答
 
 **问：能否在自适应表单中使用多个Captcha组件？**
-不支持在自适应表单中使用多个Captcha组件的**Ans：**。 此外，不建议在标记为延迟加载的片段或面板中使用验证码组件。
+不支持在自适应表单中使用多个Captcha组件的&#x200B;**Ans：**。 此外，不建议在标记为延迟加载的片段或面板中使用验证码组件。
 
 ## 另请参阅 {#see-also}
 

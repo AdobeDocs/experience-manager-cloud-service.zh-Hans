@@ -64,9 +64,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
         >[!CAUTION]
         >
-        在手动更新数据类型的&#x200B;**属性名称**&#x200B;属性时，名称必须&#x200B;*仅*&#x200B;包含 A-Z、a-z、0-9 和作为特殊字符的下划线“_”。
+        >在手动更新数据类型的&#x200B;**属性名称**&#x200B;属性时，名称必须&#x200B;*仅*&#x200B;包含 A-Z、a-z、0-9 和作为特殊字符的下划线“_”。
         >
-        如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
+        >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
      例如：
 
@@ -98,9 +98,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
   >[!NOTE]
   >
-  在模型中由&#x200B;**默认类型**&#x200B;属性定义该文本区域是富文本、纯文本还是 Markdown。
+  >在模型中由&#x200B;**默认类型**&#x200B;属性定义该文本区域是富文本、纯文本还是 Markdown。
   >
-  无法从[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)更改此格式，而只能从模型更改。
+  >无法从[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)更改此格式，而只能从模型更改。
 
 * **数字**
    * 添加数字字段
@@ -159,7 +159,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
      >[!NOTE]
      >
-     此数据类型仅用于格式设置，因此 AEM GraphQL 架构会忽略此数据类型。
+     >此数据类型仅用于格式设置，因此 AEM GraphQL 架构会忽略此数据类型。
 
 ## 属性（数据类型） {#properties}
 
@@ -171,14 +171,14 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
   >[!CAUTION]
   >
-  如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
+  >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
 
   用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。 当使用&#x200B;**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
 
 * **字段标签**
-输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
+输入&#x200B;**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。
@@ -202,11 +202,11 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
   >[!NOTE]
   >
-  确保每个语言根的唯一性。
+  >确保每个语言根的唯一性。
 
   >[!NOTE]
   >
-  变体可以具有与同一片段变体相同的&#x200B;*唯一*&#x200B;值，但与其他片段变体中使用的值不同。
+  >变体可以具有与同一片段变体相同的&#x200B;*唯一*&#x200B;值，但与其他片段变体中使用的值不同。
 
 * 有关特定数据类型及其属性的更多详细信息，请参阅&#x200B;**[内容参考](#content-reference)**。
 
@@ -262,28 +262,28 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
      >[!NOTE]
      >
-     当您使用[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)时，此方法尤其值得关注。
+     >当您使用[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)时，此方法尤其值得关注。
    * 可为（所得片段中的）一个或多个引用配置它。
 
 >[!NOTE]
 >
-有关内容/片段引用和内容/片段引用(UUID)以及升级到基于UUID的数据类型的详细信息，请参阅[为UUID引用升级内容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)。
+>有关内容/片段引用和内容/片段引用(UUID)以及升级到基于UUID的数据类型的详细信息，请参阅[为UUID引用升级内容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)。
 
 >[!NOTE]
 >
-AEM 对于以下各项具有重复保护：
+>AEM 对于以下各项具有重复保护：
 >
-* 内容引用
-这会阻止用户添加对当前片段的引用，并可能导致出现空的片段引用选取器对话框。
+>* 内容引用
+>这会阻止用户添加对当前片段的引用，并可能导致出现空的片段引用选取器对话框。
 >
-* GraphQL中的片段引用
-如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
+>* GraphQL中的片段引用
+>如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
 
 >[!CAUTION]
 >
-如果要查询多个引用的片段，则建议不要让各种片段模型具有具有相同名称但类型不同的字段名称。
+>如果要查询多个引用的片段，则建议不要让各种片段模型具有具有相同名称但类型不同的字段名称。
 >
-有关详细信息，请参阅用于内容片段的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
+>有关详细信息，请参阅用于内容片段的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 内容引用 {#content-reference}
 
@@ -294,16 +294,16 @@ AEM 对于以下各项具有重复保护：
 * **根路径**，它指定或表示存储任何引用内容的位置
   >[!NOTE]
   >
-  如果您在使用内容片段编辑器时要在此字段中直接上传并引用图像，则必须指定此属性。
+  >如果您在使用内容片段编辑器时要在此字段中直接上传并引用图像，则必须指定此属性。
   >
-  有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
+  >有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 可引用的内容类型
   >[!NOTE]
   >
-  如果您在使用内容片段编辑器时要直接在此字段中上传并引用图像，则其中必须包括&#x200B;**图像**。
+  >如果您在使用内容片段编辑器时要直接在此字段中上传并引用图像，则其中必须包括&#x200B;**图像**。
   >
-  有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
+  >有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 文件大小限制
 * 如果引用了图像：
@@ -337,7 +337,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-片段引用对于[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)尤其值得关注。
+>片段引用对于[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)尤其值得关注。
 
 除了标准属性之外，您还可以定义：
 
@@ -363,6 +363,6 @@ type CompanyModel {
 
 >[!NOTE]
 >
-已建立重复保护机制。它禁止用户在片段引用中选择当前内容片段，可能导致片段引用选取器对话框为空。
+>已建立重复保护机制。它禁止用户在片段引用中选择当前内容片段，可能导致片段引用选取器对话框为空。
 >
-GraphQL 中也有针对片段引用的重复保护。如果在两个互相引用的内容片段之间创建深层查询，则它返回 null。
+>GraphQL 中也有针对片段引用的重复保护。如果在两个互相引用的内容片段之间创建深层查询，则它返回 null。

@@ -115,7 +115,7 @@ AEM提供了一个直观的用户界面，用于使用提供的工作流步骤�
 
    ![OR拆分示例](assets/orsplit_branch2_active_new.png)
 
-   有关使用变量创建路由表达式的信息，请参阅 [!DNL AEM Forms] 工作流](variable-in-aem-workflows.md)中的[变量。
+   有关使用变量创建路由表达式的信息，请参阅 [!DNL AEM Forms] 工作流[&#128279;](variable-in-aem-workflows.md)中的变量。
 
 1. 添加其他工作流步骤以构建业务逻辑。
 

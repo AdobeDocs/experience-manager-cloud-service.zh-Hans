@@ -57,10 +57,12 @@ AEM Forms as a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 
 
 1. 配置Cloud Service：
    1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**，然后选择&#x200B;**[!UICONTROL hCaptcha®]**。
+
       ui中的![hCaptcha®](assets/hcaptcha-in-ui.png)
    1. 选择已创建或已更新的配置容器，如上一节所述。 选择&#x200B;**[!UICONTROL 创建]**。
+
       ![配置hCaptcha®](assets/config-hcaptcha.png)
-   1. 指定在必备项](#prerequisite)中获取的hCaptcha®服务[的&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 名称]**、**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。 选择&#x200B;**[!UICONTROL 创建]**。
+   1. 指定在必备项[&#128279;](#prerequisite)中获取的hCaptcha®服务的&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 名称]**、**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。 选择&#x200B;**[!UICONTROL 创建]**。
 
       ![配置Cloud Service以使用hCaptcha连接AEM Forms环境®](assets/create-hcaptcha-config.png)
 
@@ -69,7 +71,7 @@ AEM Forms as a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 
 
    配置hCAPTCHA服务后，便可在基于核心组件的[自适应表单](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)中使用。
 
-## 在自适应Forms核心组件®0}中使用hCaptcha}{#using-hCaptcha®-core-components}
+## 在自适应Forms核心组件®0&rbrace;中使用hCaptcha&rbrace;{#using-hCaptcha®-core-components}
 
 1. 打开AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。

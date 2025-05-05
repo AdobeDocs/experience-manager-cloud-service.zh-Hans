@@ -73,7 +73,7 @@ JavaScript™是自适应Forms的表达式语言。 所有表达式都是有效�
 
 **返回类型**：表达式返回与显示表达式结果的字段（例如，小数）兼容的值。
 
-**示例**：用于显示&#x200B;**field1**中两个字段之和的计算表达式是：
+**示例**：用于显示&#x200B;**field1**&#x200B;中两个字段之和的计算表达式是：
 `field2.value + field3.value`
 
 ### 单击表达式 {#click-expression}
@@ -133,7 +133,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **应用于**：字段
 
-**返回类型**：表达式返回代表字段验证状态的布尔值。 值&#x200B;**false**&#x200B;表示该字段无效，**true**表示该字段有效。
+**返回类型**：表达式返回代表字段验证状态的布尔值。 值&#x200B;**false**&#x200B;表示该字段无效，**true**&#x200B;表示该字段有效。
 **示例**：对于表示UK邮政编码的字段，验证表达式为：
 
 (**this.value**&#x200B;和&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -155,7 +155,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **返回类型：**&#x200B;值提交脚本表达式未返回任何值。 如果有任何表达式返回值，则忽略该值。
 
-**示例：**若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
+**示例：**&#x200B;若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -219,7 +219,7 @@ GuideBridge是API的集合，可用于与浏览器内存模型中的自适应For
 
 * 要重置表单字段，您可以在按钮的点击表达式上触发`guideBridge.reset()` API。 同样，有一个提交API可以调用为click表达式&#x200B;`guideBridge.submit()`**。**
 
-* 您可以使用`setFocus()` API在各种字段或面板中设置焦点（对于面板焦点自动设置为第一个字段）。 `setFocus()`提供多种导航选项，例如跨面板导航、上一个/下一个遍历、将焦点设置为特定字段等等。 例如，要移到下一个面板，您可以使用：`guideBridge.setFocus(this.panel.somExpression， &#39;nextItem&#39;)。
+* 您可以使用`setFocus()` API在各种字段或面板中设置焦点（对于面板焦点自动设置为第一个字段）。 `setFocus()`提供多种导航选项，例如跨面板导航、上一个/下一个遍历、将焦点设置为特定字段等等。 例如，要移到下一个面板，您可以使用：&grave;guideBridge.setFocus(this.panel.somExpression， &#39;nextItem&#39;)。
 
 * 要验证自适应表单或其特定面板，请使用`guideBridge.validate(errorList, somExpression).`
 

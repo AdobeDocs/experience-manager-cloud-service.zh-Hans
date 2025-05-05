@@ -34,7 +34,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ## 添加组件 {#adding-components}
 
-您可以从侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)中的[组件浏览器中选择新组件并将它们拖放到组件占位符中，从而将新组件拖放到页面上。
+您可以从侧面板[&#128279;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)中的组件浏览器中选择新组件并将它们拖放到组件占位符中，从而将新组件拖放到页面上。
 
 ### 组件占位符 {#component-placeholder}
 
@@ -166,7 +166,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ### 组件编辑对话框 {#component-edit-dialog}
 
-某些组件提供了就地可用内容以外的其他编辑选项。 您可以打开组件的“编辑”对话框，即组件工具栏](#component-toolbar)的[编辑（铅笔）图标以访问其他配置选项。
+某些组件提供了就地可用内容以外的其他编辑选项。 您可以打开组件的“编辑”对话框，即组件工具栏[&#128279;](#component-toolbar)的编辑（铅笔）图标以访问其他配置选项。
 
 确切的编辑选项取决于组件。对于某些组件[，某些操作将仅在全屏模式](#edit-content-full-screen-mode)下可用。 例如：
 

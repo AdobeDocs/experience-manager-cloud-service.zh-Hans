@@ -47,7 +47,7 @@ ht-degree: 20%
   ![在列视图和卡片视图的[!DNL Assets]中对搜索结果排序](/help/assets/assets/sort-searched-assets.png)
   *图：对列视图和卡片视图中的[!DNL Assets]中的搜索结果排序。*
 
-* 为了以编程方式使用资产微服务调用处理，引入了一个新的API。 开发人员现在可以对文件夹中的一个或多个特定资产应用现有的文件夹级别处理配置文件。 处理配置文件将根据自定义元数据属性更新进行应用。 请参阅[[!DNL Experience Manager] API引用](https://developer.adobe.com/experience-manager/reference-materials/)中的`AssetProcessor`。 与以前一样，可以从用户界面](/help/assets/asset-microservices-configure-and-use.md)中[使用资源微服务。
+* 为了以编程方式使用资产微服务调用处理，引入了一个新的API。 开发人员现在可以对文件夹中的一个或多个特定资产应用现有的文件夹级别处理配置文件。 处理配置文件将根据自定义元数据属性更新进行应用。 请参阅[[!DNL Experience Manager] API引用](https://developer.adobe.com/experience-manager/reference-materials/)中的`AssetProcessor`。 与以前一样，可以从用户界面[&#128279;](/help/assets/asset-microservices-configure-and-use.md)中使用资源微服务。
 
 <!-- Leave this commented.
 
@@ -70,7 +70,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Analytics for Adaptive Forms** — 您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪最终用户行为，从而收集最终用户洞察。 这有助于根据数据做出明智的决策，从而改善最终用户体验。
 
-* **轻松地将Adobe Experience Manager (AEM) Forms与Microsoft® Dynamics和Salesforce连接** — 该服务为Microsoft® Dynamics和Salesforce提供现成的数据源配置和数据模型。 这使开发人员能够更快、更轻松地将Microsoft®Dynamics和Salesforce配置为自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html)的数据源。[
+* **轻松地将Adobe Experience Manager (AEM) Forms与Microsoft® Dynamics和Salesforce连接** — 该服务为Microsoft® Dynamics和Salesforce提供现成的数据源配置和数据模型。 这使开发人员能够更快、更轻松地将Microsoft®Dynamics和Salesforce配置为自适应表单[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html)的数据源。
 
 * **使用DocuSign对自适应表单进行电子签名** — 您可以使用DocuSign对自适应表单进行电子签名。 该服务提供了自定义提交操作，可将DocuSign与自适应表单结合使用。 您可以安装Software Distribution上提供的软件包以导入提交操作。
 

@@ -30,7 +30,7 @@ ht-degree: 9%
 
 将提交操作配置为Marketo Engage的先决条件：
 
-* 为自适应表单](/help/forms/use-marketo-engage-data-source-in-form.md)配置[Marketo Engage数据源，并将表单元素与Marketo Engage字段绑定。
+* 为自适应表单[&#128279;](/help/forms/use-marketo-engage-data-source-in-form.md)配置Marketo Engage数据源，并将表单元素与Marketo Engage字段绑定。
 
 ## 如何配置提交操作以Marketo Engage现有表单？
 

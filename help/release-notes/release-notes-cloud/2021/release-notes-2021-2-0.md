@@ -59,7 +59,7 @@ ht-degree: 32%
 
 * [!DNL Experience Manager Assets]作为[!DNL Cloud Service]有权拥有预配置的[!DNL Brand Portal]实例。 [!DNL Cloud Manager]用户可以在[!DNL Experience Manager Assets]上将[!DNL Brand Portal]激活为[!DNL Cloud Service]。 请参阅[激活Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
 
-* 企业现在可以使用[!DNL Brand Portal]获取资源。 资源获取功能使用[!DNL Brand Portal]帮助客户与机构用户接洽，为新营销活动、照片拍摄和项目获取资源。 请参阅 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans)中的[资源源。
+* 企业现在可以使用[!DNL Brand Portal]获取资源。 资源获取功能使用[!DNL Brand Portal]帮助客户与机构用户接洽，为新营销活动、照片拍摄和项目获取资源。 请参阅 [!DNL Brand Portal][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans)中的资源源。
 
 * [!DNL Brand Portal]使用情况报告现在仅显示活动用户。 现在不显示非活动用户。 活动用户是其帐户在[!DNL Admin Console]中被分配给产品配置文件的用户。 查看[[!DNL Brand Portal] 报告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
 

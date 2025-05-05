@@ -26,14 +26,14 @@ ht-degree: 1%
 >
 >本文档采取额外步骤来说明通用编辑器的工作方式，并旨在加深开发人员对编辑器的了解。 因此，它不是检测应用程序的最直接途径，而是最能说明通用编辑器及其工作方式的途径。
 >
->如果您希望尽快启动并运行，请参阅AEM](/help/implementing/universal-editor/getting-started.md)文档中的[通用编辑器快速入门。
+>如果您希望尽快启动并运行，请参阅AEM[&#128279;](/help/implementing/universal-editor/getting-started.md)文档中的通用编辑器快速入门。
 
 ## 先决条件 {#prerequisites}
 
 要遵循本概述，您需要以下可用项。
 
 * [AEM as a Cloud Service的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * 您的本地开发实例必须在`localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上使用HTTPS进行[配置以进行开发。
+   * 您的本地开发实例必须在`localhost`[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上使用HTTPS进行配置以进行开发。
    * [必须安装WKND演示站点](https://github.com/adobe/aem-guides-wknd)。
 * [访问通用编辑器](/help/implementing/universal-editor/getting-started.md#onboarding)。
 * [本地通用编辑器服务](/help/implementing/universal-editor/local-dev.md)正在运行以进行开发。
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ## 启动AEM并登录到通用编辑器 {#sign-in}
 
-如果您尚未安装WKND，则必须运行本地AEM开发实例，并启用HTTPS，如先决条件](#prerequisites)中所述。 [此概述假定您的实例在`https://localhost:8443`上运行。
+如果您尚未安装WKND，则必须运行本地AEM开发实例，并启用HTTPS，如先决条件[&#128279;](#prerequisites)中所述。 此概述假定您的实例在`https://localhost:8443`上运行。
 
 1. 在AEM编辑器中打开主WKND英语母版页。
 
@@ -352,7 +352,7 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 
 您可以看到更改在JCR中持续存在。
 
-在JCR](assets/dev-write-back-jcr.png)中更新![
+在JCR![&#128279;](assets/dev-write-back-jcr.png)中更新
 
 >[!TIP]
 >
@@ -594,7 +594,7 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 
 请查阅以下文档，了解有关通用编辑器功能的更多信息和详细信息。
 
-* 如果您希望尽快启动并运行，请参阅AEM](/help/implementing/universal-editor/getting-started.md)文档中的[通用编辑器快速入门。
+* 如果您希望尽快启动并运行，请参阅AEM[&#128279;](/help/implementing/universal-editor/getting-started.md)文档中的通用编辑器快速入门。
 * 有关必要的OSGi配置的更多详细信息，请参阅文档[AEM中的通用编辑器入门](/help/implementing/universal-editor/getting-started.md#sameorigin)。
 * 有关连接元数据的更多详细信息，请参阅文档[AEM中的通用编辑器入门](/help/implementing/universal-editor/getting-started.md#connection)。
 * 有关通用编辑器结构的更多详细信息，请参阅文档[通用编辑器架构](/help/implementing/universal-editor/architecture.md#service)。

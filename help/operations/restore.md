@@ -31,7 +31,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 >[!TIP]
 >
->还可以使用公共API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)还原备份[。
+>还可以使用公共API[&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)还原备份。
 
 >[!WARNING]
 >

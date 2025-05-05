@@ -215,6 +215,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 此文件夹将显示在区段列表中。
    * 您的列排序方式将影响新文件夹在列表中的显示位置。
    * 您可以选择列标题来调整您的排序。
+
      ![新文件夹](../assets/contexthub-folder.png)
 
 ### 修改现有文件夹 {#modify-folders}

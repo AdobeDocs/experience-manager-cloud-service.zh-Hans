@@ -86,7 +86,7 @@ ht-degree: 16%
    >* 默认情况下，`forms-ootb-storage-adaptive-forms-submission`存在于选定的SharePoint站点中。
    >* 通过单击&#x200B;**创建文件夹**，将文件夹创建为`forms-ootb-storage-adaptive-forms-submission`(如果选定SharePoint站点的`Documents`库中尚不存在)。
 
-现在，您可以在自适应表单](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)中将此[SharePoint Sites配置用于提交操作。
+现在，您可以在自适应表单[&#128279;](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)中将此SharePoint Sites配置用于提交操作。
 
 ## 额外字节
 

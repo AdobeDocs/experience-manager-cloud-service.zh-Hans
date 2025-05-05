@@ -12,7 +12,7 @@ ht-degree: 56%
 
 ---
 
-# 将自适应表单与Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}集成
+# 将自适应表单与Salesforce集成 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |

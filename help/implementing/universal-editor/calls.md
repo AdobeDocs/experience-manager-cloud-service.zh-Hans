@@ -150,7 +150,7 @@ ht-degree: 2%
 
 其有效负载包括一个`path`对象，其中包含应添加内容的位置。
 
-它还包含一个`content`对象，该对象具有用于每个插件](/help/implementing/universal-editor/architecture.md)要存储的内容[的端点特定详细信息的其他对象。 例如，如果您的应用程序基于AEM和Magento中的内容，则有效负载将包含适用于每个系统的数据对象。
+它还包含一个`content`对象，该对象具有用于每个插件[&#128279;](/help/implementing/universal-editor/architecture.md)要存储的内容的端点特定详细信息的其他对象。 例如，如果您的应用程序基于AEM和Magento中的内容，则有效负载将包含适用于每个系统的数据对象。
 
 >[!BEGINTABS]
 

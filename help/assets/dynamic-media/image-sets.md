@@ -102,7 +102,7 @@ ht-degree: 4%
 
 有关图像集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
-您可以像在Assets](/help/assets/manage-digital-assets.md#uploading-assets)中[上传任何其他资源一样上传图像集的图像。
+您可以像在Assets[&#128279;](/help/assets/manage-digital-assets.md#uploading-assets)中上传任何其他资源一样上传图像集的图像。
 
 ### 准备图像集资源以供上传 {#preparing-image-set-assets-for-upload}
 
@@ -243,6 +243,7 @@ ht-degree: 4%
    * 要重新排序资产，请将图像拖动到新位置（选择重新排序图标以移动项目）。
    * 要按升序或降序对项目排序，请单击列标题。
    * 要添加资源或更新现有资源，请单击&#x200B;**[!UICONTROL 添加资源]**。 导航到某个资源，选择该资源，然后选择页面右上角附近的&#x200B;**[!UICONTROL 选择]**。
+
      >[!NOTE]
      >
      >如果通过将Experience Manager用于缩略图的图像替换为其他图像来删除该图像，则仍会显示原始资源。

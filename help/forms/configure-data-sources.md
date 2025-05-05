@@ -72,7 +72,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > 有关更多详细信息，请参阅使用JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)的[SQL连接。
+   > 有关更多详细信息，请参阅使用JDBC DataSourcePool[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)的SQL连接。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。
 
@@ -128,7 +128,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 >[!NOTE]
 > 若要在[!DNL Experience Manager]as a Cloud Service中配置RESTful Web服务，请确保您的文件系统上有[!DNL Swagger]文件（[Swagger版本2.0](https://swagger.io/specification/v2/)）或[!DNL Swagger]文件（[Swagger版本3.0](https://swagger.io/specification/v3/)），或者托管该文件的URL。
 
-### 为Open API规范版本2.0 {#configure-restful-services-open-api-2.0}配置RESTful服务
+### 为Open API规范版本2.0配置RESTful服务 {#configure-restful-services-open-api-2.0}
 
 1. 转到&#x200B;**[!UICONTROL 工具>Cloud Service>数据源]**。 选择以选择要创建云配置的文件夹。
 
@@ -137,8 +137,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
 1. 为RESTful服务指定以下详细信息：
 
-   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL  Swagger]定义文件的[!DNL Swagger URL]或从本地文件系统上传[!DNL Swagger]文件。
-   * 根据[!DNL  Swagger] Source输入，以下字段已预填充值：
+   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL &#x200B; Swagger]定义文件的[!DNL Swagger URL]或从本地文件系统上传[!DNL Swagger]文件。
+   * 根据[!DNL &#x200B; Swagger] Source输入，以下字段已预填充值：
 
       * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于[!DNL Swagger]源中定义的方案。
       * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
@@ -153,7 +153,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建RESTful服务的云配置。
 
-### 为Open API规范版本3.0 {#configure-restful-services-open-api-3.0}配置RESTful服务
+### 为Open API规范版本3.0配置RESTful服务 {#configure-restful-services-open-api-3.0}
 
 1. 转到&#x200B;**[!UICONTROL 工具>Cloud Service>数据源]**。 选择以选择要创建云配置的文件夹。
 
@@ -162,8 +162,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
 1. 为RESTful服务指定以下详细信息：
 
-   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL  Swagger]定义文件的[!DNL Swagger 3.0 URL]或从本地文件系统上传[!DNL Swagger]文件。
-   * 根据[!DNL  Swagger] Source输入，显示与目标服务器的连接信息。
+   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL &#x200B; Swagger]定义文件的[!DNL Swagger 3.0 URL]或从本地文件系统上传[!DNL Swagger]文件。
+   * 根据[!DNL &#x200B; Swagger] Source输入，显示与目标服务器的连接信息。
    * 选择身份验证类型 — None、OAuth2.0（[授权代码](https://oauth.net/2/grant-types/authorization-code/)、[客户端凭据](https://oauth.net/2/grant-types/client-credentials/)）、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
    如果选择&#x200B;**[!UICONTROL API密钥]**&#x200B;作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从&#x200B;**[!UICONTROL 位置]**&#x200B;下拉列表中选择其中一个选项，并在&#x200B;**[!UICONTROL 参数名称]**&#x200B;字段中相应地指定标头名称或查询参数。
@@ -210,7 +210,7 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 
 [!DNL Experience Manager Forms]在与RESTful Web服务集成时形成数据模型，因为数据源包括用于性能优化的HTTP客户端配置。
 
-为REST数据源&#x200B;]**配置设置**[!UICONTROL &#x200B;表单数据模型HTTP客户端配置的以下属性以指定正则表达式：
+为REST数据源&#x200B;**配置设置**&#x200B;表单数据模型HTTP客户端配置的以下属性以指定正则表达式：
 
 * 使用`http.connection.max.per.route`属性设置表单数据模型(FDM)和RESTful Web服务之间允许的最大连接数。 默认值为20个连接。
 
@@ -236,7 +236,7 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 } 
 ```
 
-1. 为REST数据源&#x200B;]**选择**[!UICONTROL &#x200B;表单数据模型HTTP客户端配置。
+1. 为REST数据源&#x200B;**选择**&#x200B;表单数据模型HTTP客户端配置。
 
 1. 在[!UICONTROL REST数据源]的表单数据模型HTTP客户端配置对话框中：
 

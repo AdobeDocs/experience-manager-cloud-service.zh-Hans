@@ -134,7 +134,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**[!UICONTROL  Warbant Salary ]**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
@@ -147,7 +147,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. 在Else语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![when-else](assets/when-else-1.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**[!UICONTROL  Warbant Salary ]**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
    ![when-else](assets/when-else-2.png)
 
    规则在规则编辑器中如下所示。
@@ -181,11 +181,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 在表达式字段中：
 
-   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL  Salary ]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B; Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 加号]**。
 
-   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**[!UICONTROL  Berphor Salary ]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**&#x200B;[!UICONTROL &#x200B; Berphor Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -209,7 +209,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    在When语句中：
 
-   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL &#x200B;婚姻状况&#x200B;]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B;婚姻状况&#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL Select Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL 等于]**。
 

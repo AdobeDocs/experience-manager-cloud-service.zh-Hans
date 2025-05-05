@@ -47,7 +47,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
    >[!VIDEO](https://video.tv.adobe.com/v/3444389/)
 
 1. **在Power Platform管理中心中创建帐户**
-在**Power Platform管理中心**&#x200B;中创建帐户以：
+在&#x200B;**Power Platform管理中心**&#x200B;中创建帐户以：
    * 添加Dataverse
    * 启用Microsoft Dynamics 365应用程序
 
@@ -105,18 +105,18 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 1. 选择&#x200B;**[!UICONTROL 身份验证类型]**&#x200B;作为&#x200B;**OAuth2.0**。
 1. 为连接的应用程序指定&#x200B;**客户端ID** （称为应用程序ID）和&#x200B;**客户端密钥**。
-您可以从Azure Active Directory应用程序中检索**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
+您可以从Azure Active Directory应用程序中检索&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
 
    ![客户端ID和客户端密钥](/help/forms/assets/dynamics-azure-app-resgistration.png)
 
-1. 在&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**[!UICONTROL 访问令牌URL]**字段中指定以下内容。
-您可以从Azure Active Directory应用程序的**端点**&#x200B;部分中检索&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**[!UICONTROL 访问令牌URL]**。
+1. 在&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**[!UICONTROL 访问令牌URL]**&#x200B;字段中指定以下内容。
+您可以从Azure Active Directory应用程序的&#x200B;**端点**&#x200B;部分中检索&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**[!UICONTROL 访问令牌URL]**。
 
    ![Azure应用终结点](/help/forms/assets/dynamics-azure-app-endpoints.png)
 
 1. 在[!DNL Microsoft® Dynamics 365]上授权进程的&#x200B;**[!UICONTROL 授权范围]**&#x200B;字段中指定`openid`。
 1. 在&#x200B;**[!UICONTROL 资源]**&#x200B;字段中指定动态实例URL以使用表单数据模型(FDM)配置[!DNL Microsoft® Dynamics 365]。
-您可以从**Power Platform管理中心**&#x200B;复制&#x200B;**环境URL**&#x200B;或使用&#x200B;**服务根** URL派生Dynamics实例URL。 资源URL的格式如下： `https://<tenant-name>.dynamics.com`。
+您可以从&#x200B;**Power Platform管理中心**&#x200B;复制&#x200B;**环境URL**&#x200B;或使用&#x200B;**服务根** URL派生Dynamics实例URL。 资源URL的格式如下： `https://<tenant-name>.dynamics.com`。
 
    ![电源应用资源字段](/help/forms/assets/dynamics-resource-field.png)
 
@@ -137,7 +137,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    出现&#x200B;**创建表单数据模型**&#x200B;向导。
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. 从&#x200B;**选择数据源**选项卡中选择创建的云配置。
+1. 从&#x200B;**选择数据源**&#x200B;选项卡中选择创建的云配置。
    ![选择云配置](/help/forms/assets/dynamics-select-cloud-config.png)
 
 1. 单击编辑![编辑](assets/edit.png)图标以查看和配置表单数据模型(FDM)。

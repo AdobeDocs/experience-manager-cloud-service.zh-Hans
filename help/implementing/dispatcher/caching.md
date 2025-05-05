@@ -26,8 +26,8 @@ AEM作为云服务的CDN中的HTTP响应的缓存由以下来自源的HTTP响应
 
 CDN资源的缓存键包含完整的请求url，其中包括查询参数，因此每个不同的查询参数都会产生不同的缓存条目。 请考虑删除不需要的查询参数；[请参阅下面的](#marketing-parameters)以提高缓存命中率。
 
-AEM as a Cloud Service的CDN不会缓存`Cache-Control`中包含`private`、`no-cache`或`no-store`的原始响应（请参阅[如何禁用CDN缓存）
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)以了解更多详细信息)。  此外，CDN不会缓存设置Cookie的响应，即具有`Set-Cookie`响应标头。
+AEM as a Cloud Service的CDN不会缓存`Cache-Control`中包含`private`、`no-cache`或`no-store`的原始响应（请参阅[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)如何禁用CDN缓存）
+以了解更多详细信息)。  此外，CDN不会缓存设置Cookie的响应，即具有`Set-Cookie`响应标头。
 
 ### HTML/文本 {#html-text}
 
@@ -110,7 +110,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-在Dispatcher层修改缓存标头时，请务必小心不要缓存太广。 请参阅](#html-text)上HTML/文本部分[中的讨论。 此外，请确保应该保持私有（而不是缓存）的资产不属于`LocationMatch`指令过滤器的一部分。
+在Dispatcher层修改缓存标头时，请务必小心不要缓存太广。 请参阅[&#128279;](#html-text)上HTML/文本部分中的讨论。 此外，请确保应该保持私有（而不是缓存）的资产不属于`LocationMatch`指令过滤器的一部分。
 
 AEM通常会将存储在Blob存储中的JCR资源（大于16KB）用作302重定向。 截获这些重定向后，CDN将跟随，内容将直接从blob存储中交付。 只能在这些响应上自定义一组有限的标头。 例如，要自定义`Content-Disposition`，您应按如下方式使用Dispatcher指令：
 

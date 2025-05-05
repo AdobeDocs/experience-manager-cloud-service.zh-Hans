@@ -87,7 +87,7 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
    1. 将AEM Forms附加组件(.far)文件添加到`AEM SDK/crx-quickstart/install`文件夹，
    1. 重新启动AEM SDK。
 
-+++
+   +++
 
 1. [配置用户权限](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：创建具有开发、创作和其他权限的用户，并将这些用户添加到预定义的表单组。
 
@@ -116,7 +116,7 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
 
    部署AEM项目后，您可以在环境中查看自适应Forms模板。
 
-+++
+   +++
 
 
 有关设置本地AEM Forms开发环境的详细说明和分步指南，请参阅[为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md)文章。

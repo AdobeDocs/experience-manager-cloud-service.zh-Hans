@@ -97,7 +97,7 @@ AEM更新需要执行大量且完全自动化的产品验证管道，该管道�
 
 ## 复合节点存储 {#composite-node-store}
 
-通常，更新会产生零停机时间，包括创作实例（节点集群）的停机时间。 由于Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)中的[复合节点存储功能，可能会进行滚动更新。
+通常，更新会产生零停机时间，包括创作实例（节点集群）的停机时间。 由于Oak[&#128279;](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)中的复合节点存储功能，可能会进行滚动更新。
 
 此功能允许AEM同时引用多个存储库。 在[滚动部署](/help/implementing/deploying/overview.md#how-rolling-deployments-work)中，新AEM版本包含其自己的`/libs` （基于TarMK的不可变存储库）。 它与旧版AEM不同，不过两者都引用基于DocumentMK的共享可变存储库，该存储库包含`/content`、`/conf`、`/etc`等区域。
 

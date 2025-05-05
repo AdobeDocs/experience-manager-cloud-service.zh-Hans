@@ -45,7 +45,7 @@ ht-degree: 1%
 1. 选择渠道。 在操作栏上，单击&#x200B;**编辑**&#x200B;以打开编辑器。
 
 
-   操作栏](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)上的![编辑按钮。
+   操作栏![&#128279;](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)上的编辑按钮。
 
 1. 添加或编辑现有视频组件，如下图所示。
 

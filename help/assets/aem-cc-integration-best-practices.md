@@ -99,7 +99,7 @@ Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系
 | 发现 — 浏览文件夹 | 是 | Experience Manager Web UI +桌面操作 | 浏览网络共享时，请关闭缩略图以避免下载资产的二进制文件。 |
 | 发现 — 访问收藏集 | 是 | Experience Manager Web UI +桌面操作 |  |
 | 发现 — 搜索资源 | 是 | Experience Manager Web UI +桌面操作 |  |
-| 使用 — 打开资源 | 是 | 是 — 适用于任何应用程序 | 从Web界面](/help/assets/manage-digital-assets.md#previewing-assets)或从Finder打开[ |
+| 使用 — 打开资源 | 是 | 是 — 适用于任何应用程序 | 从Web界面[&#128279;](/help/assets/manage-digital-assets.md#previewing-assets)或从Finder打开 |
 | 使用 — 将来自Experience Manager的资源放入文档中 | 是 — 嵌入 | 是 — 链接或嵌入 | Experience Manager桌面应用程序允许将资源作为本地文件系统上的文件访问。 本机应用程序中的这些链接由本地路径表示。 |
 | 编辑 — 打开以进行编辑 | 是 — 签出操作 | 是 — 打开操作（在网络共享中） | 默认情况下，[在AAL中签出](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)会将资源保存到用户的Creative Cloud Storage帐户(由Creative Cloud应用程序同步)。 |
 | 编辑 — Experience Manager外部正在进行中的工作 | 是 — 用户的Creative Cloud Storage帐户中可用的资产已同步到桌面。 | 是 |  |

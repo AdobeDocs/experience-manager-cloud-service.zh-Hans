@@ -102,7 +102,7 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
    >
    > 实例URL是指向特定AEM Forms实例的唯一网址。
 
-   您可以从创建连接所需的开发人员控制台](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)检索[服务凭据。
+   您可以从创建连接所需的开发人员控制台[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)检索服务凭据。
 
 1. 从开发人员控制台中的服务凭据中将&#x200B;**IMS端点**&#x200B;中的`ims-na1.adobelogin.com`替换为&#x200B;**imsEndpoint**&#x200B;的值。
 

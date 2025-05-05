@@ -36,7 +36,7 @@ ht-degree: 17%
 
    >[!IMPORTANT]
    >
-   >确保提取密钥有效并且不在到期之前。 如果密钥即将到期，您可以通过选择迁移集并单击属性来续订提取密钥。 单击&#x200B;**续订**。 这会将您转到Cloud Acceleration Manager，您可以在其中单击&#x200B;**复制提取密钥**。 每次单击&#x200B;**复制提取密钥**时，都会生成一个新的提取密钥，该密钥自创建之日起有效14天。
+   >确保提取密钥有效并且不在到期之前。 如果密钥即将到期，您可以通过选择迁移集并单击属性来续订提取密钥。 单击&#x200B;**续订**。 这会将您转到Cloud Acceleration Manager，您可以在其中单击&#x200B;**复制提取密钥**。 每次单击&#x200B;**复制提取密钥**&#x200B;时，都会生成一个新的提取密钥，该密钥自创建之日起有效14天。
    >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. 此时会显示“提取”对话框。 单击&#x200B;**提取**&#x200B;开始提取阶段。
@@ -88,7 +88,7 @@ ht-degree: 17%
 1. 此时将显示&#x200B;**迁移集提取**&#x200B;对话框。 单击&#x200B;**提取**。
 
    >[!IMPORTANT]
-   >您应该禁用&#x200B;**在提取期间覆盖暂存容器**选项。
+   >您应该禁用&#x200B;**在提取期间覆盖暂存容器**&#x200B;选项。
    >![图像](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 

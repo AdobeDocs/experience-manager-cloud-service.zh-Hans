@@ -38,7 +38,7 @@ ht-degree: 7%
    ![添加存储库对话框](assets/add-adobe-repository.png)
 
 1. 单击&#x200B;**保存**。
-您的新存储库显示在**存储库**&#x200B;页面上的表中。
+您的新存储库显示在&#x200B;**存储库**&#x200B;页面上的表中。
 
 您现在可以将[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)与其关联或在&#x200B;[**存储库**&#x200B;页面](managing-repositories.md)中管理它。
 

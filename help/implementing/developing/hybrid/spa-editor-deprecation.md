@@ -50,7 +50,7 @@ Adobe通过[2025.01版的AEM as a Cloud Service，](/help/release-notes/release-
 
 * **[通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)**&#x200B;是直接替换SPA编辑器的最佳工具。
    * 通用编辑器也是一个可视编辑器，专门为分离实施而设计，融入Adobe从SPA编辑器获得的全部体验。
-   * 此外，还为AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)发布了[通用编辑器(AEM 6.5的发行版本为2024.11.05)，因此除了Cloud Services之外，它还支持AMS和内部部署用例。
+   * 此外，还为AEM 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)发布了通用编辑器(AEM 6.5的发行版本为2024.11.05)，因此除了Cloud Services之外，它还支持AMS和内部部署用例。
 * **[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;是首选基于表单的编辑器的替代方法。
    * 将内容结构化为内容片段而非页面时，内容片段编辑器最合适。
 

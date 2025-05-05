@@ -94,7 +94,7 @@ Dynamic Media查看器最佳实践是基本准则，旨在优化AEM上Dynamic Me
 页面上仅包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`/s7viewers`上下文路径(称为合并的HTML include)直接链接到SDK5 SDK `Utils.js`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
 * **嵌入准则：**
 使用文档嵌入特定于每个查看器的准则。
-想要了解更多信息？ 转到AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[查看器。
+想要了解更多信息？ 转到AEM Assets[&#128279;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的查看器。
 * **SDK教程和示例：**
 查看[Viewer SDK教程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
 

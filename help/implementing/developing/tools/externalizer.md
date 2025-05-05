@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->与为AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration)应用任何[OSGi配置时一样，应在本地开发人员实例上执行以下步骤，然后提交到项目代码以进行部署。
+>与为AEM as a Cloud Service[&#128279;](/help/implementing/deploying/overview.md#osgi-configuration)应用任何OSGi配置时一样，应在本地开发人员实例上执行以下步骤，然后提交到项目代码以进行部署。
 
 要为Externalizer服务定义域映射，请执行以下操作：
 

@@ -108,7 +108,7 @@ ht-degree: 26%
 
 ## 站点 {#site}
 
-侧面板的&#x200B;**站点**&#x200B;视图显示使用站点模板](/help/sites-cloud/administering/site-creation/create-site.md)创建的站点[的详细信息。
+侧面板的&#x200B;**站点**&#x200B;视图显示使用站点模板[&#128279;](/help/sites-cloud/administering/site-creation/create-site.md)创建的站点的详细信息。
 
 ![网站面板](assets/console-side-panel-site-paenl.png)
 

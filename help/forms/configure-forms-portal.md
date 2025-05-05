@@ -42,7 +42,7 @@ AEM Forms提供了以下开箱即用的门户组件：
 
 ## 后续步骤
 
-在下一篇文章中，让我们了解如何使用Search &amp; Lister Forms Portal组件](/help/forms/list-forms-on-sites-page.md)在“站点”页面上列出表单[。
+在下一篇文章中，让我们了解如何使用Search &amp; Lister Forms Portal组件[&#128279;](/help/forms/list-forms-on-sites-page.md)在“站点”页面上列出表单。
 
 ## 相关文章
 

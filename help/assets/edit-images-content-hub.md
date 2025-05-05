@@ -64,7 +64,7 @@ Content Hub允许您使用Adobe Express创建新内容。 您可以使用易于�
 
 >[!NOTE]
 >
-您可以使用[!DNL Adobe Express]编辑PNG和JPG/JPEG文件类型的图像。
+>您可以使用[!DNL Adobe Express]编辑PNG和JPG/JPEG文件类型的图像。
 
 ## 使用 [!DNL Adobe Express] 编辑图像 {#edit-images-using-content-hub}
 

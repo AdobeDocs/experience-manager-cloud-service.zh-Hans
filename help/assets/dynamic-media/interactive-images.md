@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-在上图所示的网页上，查看操作](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)中的[交互式图像。
+在上图所示的网页上，查看操作[&#128279;](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)中的交互式图像。
 
 ## 观看如何创建交互式图像横幅 {#watch-how-interactive-image-banners-are-created}
 
@@ -426,27 +426,27 @@ Experience Manager Assets返回的嵌入代码具有一个已注释掉的现成�
  <tbody>
   <tr>
    <td><p>单个SKU，在查询字符串中找到</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>单个SKU，可在URL路径中找到</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>查询字符串中的SKU和类别ID</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>

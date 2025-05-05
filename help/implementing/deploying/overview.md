@@ -56,8 +56,8 @@ ht-degree: 94%
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-客户通过 Cloud Manager 将自定义代码部署到云环境。Cloud Manager 将本地汇编的内容包转换为符合 Sling 功能模型的构件，这就是在云环境中运行时描述 AEM as a Cloud Service 上的应用程序的方式。因此，在云环境中的[包管理器](/help/implementing/developing/tools/package-manager.md)中查看包时，名称会包含“cp2fm”，并且转换后的包中的所有元数据已被删除。它们无法进行交互，这意味着无法下载、复制或打开它们。有关转换器的详细文档，请参阅[
-GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上的sling-org-apache-sling-feature-cpconverter 。
+客户通过 Cloud Manager 将自定义代码部署到云环境。Cloud Manager 将本地汇编的内容包转换为符合 Sling 功能模型的构件，这就是在云环境中运行时描述 AEM as a Cloud Service 上的应用程序的方式。因此，在云环境中的[包管理器](/help/implementing/developing/tools/package-manager.md)中查看包时，名称会包含“cp2fm”，并且转换后的包中的所有元数据已被删除。它们无法进行交互，这意味着无法下载、复制或打开它们。有关转换器的详细文档，请参阅[&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
+GitHub上的sling-org-apache-sling-feature-cpconverter 。
 
 为 AEM as a Cloud Service 上的应用程序编写的内容包必须明确区分不可变内容和可变内容，并且 Cloud Manager 仅会安装可变内容，并输出如下消息：
 
@@ -159,7 +159,7 @@ GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上
 
 >[!WARNING]
 >
->对于为 `/apps` 或 `/libs``repoinit` 下的节点定义的 ACL， 执行会在空白存储库上开始。这些包是在 `repoinit` 之后安装的，因此，语句无法依赖包中定义的任何内容，但必须定义先决条件，例如下面的父结构。
+>对于为 `/apps` 或 `/libs` `repoinit` 下的节点定义的 ACL， 执行会在空白存储库上开始。这些包是在 `repoinit` 之后安装的，因此，语句无法依赖包中定义的任何内容，但必须定义先决条件，例如下面的父结构。
 
 >[!TIP]
 >

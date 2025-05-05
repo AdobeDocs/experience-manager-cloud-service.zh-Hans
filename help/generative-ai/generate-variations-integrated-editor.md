@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->有关AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)中生成变体的详细信息，请参阅[安全资料单。
+>有关AEM[&#128279;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)中生成变体的详细信息，请参阅安全资料单。
 
 ## 概述 {#overview}
 

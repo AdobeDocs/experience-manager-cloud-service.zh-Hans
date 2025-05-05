@@ -70,7 +70,7 @@ Additionally, you can [customize](/help/assets/asset-selector-customization.md) 
 
 ## 查看收藏集 {#view-collections}
 
-资产选择器允许您在![列表视图](assets/do-not-localize/list-view.png)列表视图或![网格视图](assets/do-not-localize/grid-view.png)网格视图中查看集合。 查看资产选择器](overview-asset-selector.md#types-of-view)中的[视图类型。
+资产选择器允许您在![列表视图](assets/do-not-localize/list-view.png)列表视图或![网格视图](assets/do-not-localize/grid-view.png)网格视图中查看集合。 查看资产选择器[&#128279;](overview-asset-selector.md#types-of-view)中的视图类型。
 
 ## 将资产拖放到收藏集 {#collection-drag-and-drop}
 

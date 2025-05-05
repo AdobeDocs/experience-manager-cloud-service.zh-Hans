@@ -116,14 +116,14 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 有些组织选择限制日志记录目标可以接收哪些流量，而有些组织则可能需要使用HTTPS (443)以外的端口。  如果是，则在部署日志转发配置之前，需要配置[高级网络](/help/security/configuring-advanced-networking.md)。
 
 根据您是否使用端口443以及是否需要从固定IP地址显示日志，使用下表查看高级联网和日志配置的要求。
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -155,7 +155,7 @@ table, th, td {
       <td>是</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >是否从单个IP地址显示日志取决于您选择的高级联网配置。  必须使用专用出口实现此目的。

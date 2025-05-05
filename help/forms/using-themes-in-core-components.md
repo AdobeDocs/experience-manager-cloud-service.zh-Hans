@@ -114,7 +114,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
       git clone [Path of Git Repository of the theme]
    ```
 
-   将主题]的Git存储库的[路径替换为主题的相应Git存储库的实际URL
+   将主题&rbrack;的Git存储库的&lbrack;路径替换为主题的相应Git存储库的实际URL
 
    例如，要克隆画布主题，请执行以下命令：
 
@@ -380,7 +380,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 选择&#x200B;**[!UICONTROL 添加非生产管道]**&#x200B;或基于Cloud Service环境选择&#x200B;**[!UICONTROL 添加生产管道]**。 例如，此处选择了&#x200B;**[!UICONTROL 添加生产管道]**&#x200B;选项。
 1. 在&#x200B;**[!UICONTROL 将生产管道]**&#x200B;添加为&#x200B;**[!UICONTROL 配置]**&#x200B;步骤的一部分对话框中，指定管道的名称。 例如，管道的名称为`customcanvastheme`。
 1. 单击&#x200B;**[!UICONTROL 继续]**。
-1. 选择&#x200B;**[!UICONTROL 目标部署]** > **[!UICONTROL 前端代码]**选项，位于
+1. 选择&#x200B;**[!UICONTROL 目标部署]** > **[!UICONTROL 前端代码]**&#x200B;选项，位于
 **[!UICONTROL Source代码]**&#x200B;步骤。
 1. 选择具有最新更改的&#x200B;**[!UICONTROL 存储库]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此处选定的存储库名称为`custom-canvas-theme-repo`，Git分支为`main`。
 1. 如果根文件夹中存在更改，请选择&#x200B;**[!UICONTROL 代码位置]**&#x200B;作为`/`。

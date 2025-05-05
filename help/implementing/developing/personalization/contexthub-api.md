@@ -677,7 +677,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 参数 {#parameters-off}
 
-* **`name`：**&#x200B;要取消绑定函数的事件](#contexthub-utils-eventing)的[名称。
+* **`name`：**&#x200B;要取消绑定函数的事件[&#128279;](#contexthub-utils-eventing)的名称。
 * **`selector`：**&#x200B;标识绑定的选择器。 （请参阅[`on`](#on-name-handler-selector-triggerforpastevents)和[`once`](#once-name-handler-selector-triggerforpastevents)函数的`selector`参数）。
 
 ##### 返回 {#returns-off}
@@ -690,7 +690,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 参数 {#parameters-on}
 
-* **`name`：** （字符串）要绑定函数的事件](#contexthub-utils-eventing)的[名称。
+* **`name`：** （字符串）要绑定函数的事件[&#128279;](#contexthub-utils-eventing)的名称。
 * **`handler`：** （函数）要绑定到事件的函数。
 * **`selector`：** （字符串）绑定的唯一标识符。 如果要使用`off`函数移除绑定，则需要选择器识别绑定。
 * **`triggerForPastEvents`：** （布尔值）指示是否应为过去发生的事件执行处理程序。 值为`true`会调用过去事件的处理程序。 值为`false`会调用未来事件的处理程序。 默认值为 `true`。
@@ -730,7 +730,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 参数 {#parameters-once}
 
-* **`name`：** （字符串）要绑定函数的事件](#contexthub-utils-eventing)的[名称。
+* **`name`：** （字符串）要绑定函数的事件[&#128279;](#contexthub-utils-eventing)的名称。
 * **`handler`：** （函数）要绑定到事件的函数。
 * **`selector`：** （字符串）绑定的唯一标识符。 如果要使用`off`函数移除绑定，则需要选择器识别绑定。
 * **`triggerForPastEvents`：** （布尔值）指示是否应为过去发生的事件执行处理程序。 值为`true`会调用过去事件的处理程序。 值为`false`会调用未来事件的处理程序。 默认值为 `true`。

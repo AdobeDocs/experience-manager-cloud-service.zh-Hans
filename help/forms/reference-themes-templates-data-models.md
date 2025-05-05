@@ -23,7 +23,7 @@ ht-degree: 5%
 >
 > Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
-AEM Formsas a Cloud Service提供了多个参考主题、模板和表单数据模型(FDM)，以帮助您快速开始创建自适应Forms。 您可以从软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)下载[参考内容包，并使用[包管理器](/help/implementing/developing/tools/package-manager.md)在生产、开发或本地开发环境中安装[参考内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)，以将这些参考资产发送到您的环境。
+AEM Formsas a Cloud Service提供了多个参考主题、模板和表单数据模型(FDM)，以帮助您快速开始创建自适应Forms。 您可以从软件分发门户[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)下载参考内容包，并使用[包管理器](/help/implementing/developing/tools/package-manager.md)在生产、开发或本地开发环境中安装[参考内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)，以将这些参考资产发送到您的环境。
 
 参考内容包中包含的主题、模板和表单数据模型(FDM)包括：
 

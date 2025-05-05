@@ -1,6 +1,6 @@
 ---
 title: 在 [!DNL Assets View]中批量编辑元数据
-description: 了解如何为[DNL！中提供的多个资源更新一组预定义的标准元数据字段。 Assets视图]同时运行。
+description: 了解如何为[!DNL ！中提供的多个资源更新一组预定义的标准元数据字段。 Assets视图]同时运行。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
@@ -64,7 +64,8 @@ ht-degree: 3%
    * **[!UICONTROL 作者]：**&#x200B;指定作者姓名。
    * **[!UICONTROL 关键字]：**&#x200B;添加提供有关资源的高层信息的特定术语或文本字符串，以增强资源的可发现性。 添加关键字并按&#x200B;**Enter**&#x200B;或&#x200B;**return**&#x200B;将另一关键字添加到列表。
    * **[!UICONTROL 标记]：**&#x200B;单击![批量元数据编辑](/help/assets/assets/tags-icon.svg)从可用选项中选择标记。 标记提供了有关资产的更具体信息并增强了它们的可发现性。 已应用于所选资源的标记会显示在&#x200B;**[!UICONTROL 属性]**&#x200B;面板中。 如果找不到相关标记，请创建这些标记并将其分配给选定的资源。 有关创建标记并将标记分配给资产的详细信息，请参阅[管理 [!DNL Assets view]](/help/assets/tagging-management-assets-view.md)中的标记。
-   * 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以将上述元数据更新应用于所选资源。 保存后，将附加&#x200B;**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**，而&#x200B;**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**&#x200B;和&#x200B;**[!UICONTROL 作者]**的更新详细信息将覆盖其现有详细信息。
+   * 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以将上述元数据更新应用于所选资源。 保存后，将附加&#x200B;**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**，而&#x200B;**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**&#x200B;和&#x200B;**[!UICONTROL 作者]**&#x200B;的更新详细信息将覆盖其现有详细信息。
+
      ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]
@@ -75,4 +76,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**、**[!UICONTROL 作者]**、**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**&#x200B;是可用于批量元数据编辑的标准元数据属性，而不考虑文件夹特定的元数据。 仅当这些元数据属性包含在应用于资源文件夹的元数据表单中时，它们才会显示在[!UICONTROL 资源详细信息页面]上。 如果在[!UICONTROL 资源详细信息页面]上找不到这些标准元数据属性，请编辑资源文件夹的元数据表单以包含这些属性。 请参阅 [!DNL Assets View]](/help/assets/metadata-assets-view.md)中的[元数据，了解如何创建或编辑元数据表单并将其应用到文件夹。
+>**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**、**[!UICONTROL 作者]**、**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**&#x200B;是可用于批量元数据编辑的标准元数据属性，而不考虑文件夹特定的元数据。 仅当这些元数据属性包含在应用于资源文件夹的元数据表单中时，它们才会显示在[!UICONTROL 资源详细信息页面]上。 如果在[!UICONTROL 资源详细信息页面]上找不到这些标准元数据属性，请编辑资源文件夹的元数据表单以包含这些属性。 请参阅 [!DNL Assets View][&#128279;](/help/assets/metadata-assets-view.md)中的元数据，了解如何创建或编辑元数据表单并将其应用到文件夹。

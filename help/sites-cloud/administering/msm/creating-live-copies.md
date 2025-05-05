@@ -102,8 +102,8 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
 唯一的区别是，**转出**&#x200B;命令在源/Blueprint 页面上的可用性取决于 Blueprint 配置是否引用了源：
 
-* 如果从 Blueprint 配置中引用的&#x200B;****&#x200B;源页面创建 Live Copy，则转出命令会在源/Blueprint 页面出现。
-* 如果从 Blueprint 配置中未引用的&#x200B;****&#x200B;源页面创建 Live Copy，则转出命令将不适用于源/Blueprint 页面。
+* 如果从 Blueprint 配置中引用的&#x200B;**&#x200B;**&#x200B;源页面创建 Live Copy，则转出命令会在源/Blueprint 页面出现。
+* 如果从 Blueprint 配置中未引用的&#x200B;**&#x200B;**&#x200B;源页面创建 Live Copy，则转出命令将不适用于源/Blueprint 页面。
 
 要创建 Live Copy，请执行以下操作：
 
@@ -275,7 +275,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 #### 从 Live Copy 概述转出 Blueprint {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-在选择 Blueprint 页面时，](live-copy-overview.md#using-the-live-copy-overview)也可以从 Live Copy 概述执行&#x200B;[**转出**&#x200B;操作。
+在选择 Blueprint 页面时，[&#128279;](live-copy-overview.md#using-the-live-copy-overview)也可以从 Live Copy 概述执行&#x200B;**转出**&#x200B;操作。
 
 1. 打开 [Live Copy 概述](live-copy-overview.md#using-the-live-copy-overview)并选择 Blueprint 页面。
 1. 从工具栏中选择&#x200B;**转出**。

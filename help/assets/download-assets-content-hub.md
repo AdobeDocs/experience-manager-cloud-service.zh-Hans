@@ -62,7 +62,7 @@ Content Hub允许您下载和共享资源。 Content Hub用户界面仅显示批
 
 您可以使用Content Hub下载单个或多个资源及其可用演绎版。
 
-查看Content Hub](#types-of-renditions)中可用的[类型的演绎版。
+查看Content Hub[&#128279;](#types-of-renditions)中可用的类型的演绎版。
 
 ## 下载资源及其演绎版 {#download-asset-renditions}
 

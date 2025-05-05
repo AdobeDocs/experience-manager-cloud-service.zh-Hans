@@ -109,6 +109,7 @@ ht-degree: 5%
          #base=js
        function.js
    ```
+
 1. 在`js`文件夹中，将javascript文件添加为`function.js`，其中包含自定义函数：
 
    ```javascript
@@ -133,6 +134,7 @@ ht-degree: 5%
     return age;
     }
    ```
+
 1. 保存文件。
 
 ![自定义函数文件夹结构](/help/forms/assets/custom-function-added-files.png)
@@ -187,11 +189,11 @@ ht-degree: 5%
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-您可以在自适应表单](/help/forms/rule-editor-core-components.md)的[规则编辑器中使用[JavaScript批注](##js-annotations)的自定义函数。
+您可以在自适应表单[&#128279;](/help/forms/rule-editor-core-components.md)的规则编辑器中使用[JavaScript批注](##js-annotations)的自定义函数。
 
 ## 在自适应表单中使用自定义函数
 
-在自适应表单中，您可以在规则编辑器](/help/forms/rule-editor-core-components.md)中使用[自定义函数。 让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。 创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
+在自适应表单中，您可以在规则编辑器[&#128279;](/help/forms/rule-editor-core-components.md)中使用自定义函数。 让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。 创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
 
 ```javascript
     /**

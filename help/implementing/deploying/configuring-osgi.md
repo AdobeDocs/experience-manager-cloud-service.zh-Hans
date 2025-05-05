@@ -322,6 +322,7 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 * 必须使用单独的`config.author`和`config.publish` OSGi文件夹，如[运行模式解析部分](#runmode-resolution)中所述。
 * 创建独立变量名称有两种选项，应使用：
    * 推荐使用的第一个选项：在声明为定义不同值的所有OSGi文件夹（如`config.author`和`config.publish`）中，使用相同的变量名称。 例如
+
      `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值对应于该层的默认值（创作或发布）。 在通过[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或通过客户端设置环境变量时，请按照[Cloud Manager API参考文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)中的说明，使用“服务”参数区分各个层。 “service”参数会将变量的值绑定到适当的OSGi层。 它可以是“创作”、“发布”或“预览”。
    * 第二个选项是使用前缀（如`author_<samevariablename>`和`publish_<samevariablename>`）声明不同的变量
 
@@ -348,11 +349,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -362,11 +363,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -391,11 +392,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -405,11 +406,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val2"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -419,11 +420,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -448,11 +449,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -462,11 +463,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -489,11 +490,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -503,11 +504,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "$[env：my_var1；default=val1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -595,7 +596,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->有关如何使用Cloud Manager插件为Adobe I/OCLI配置值的更多信息，请参阅GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)上的[aio-cli-plugin-cloudmanager 。
+>有关如何使用Cloud Manager插件为Adobe I/OCLI配置值的更多信息，请参阅GitHub[&#128279;](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)上的aio-cli-plugin-cloudmanager 。
 
 ### 变量数 {#number-of-variables}
 

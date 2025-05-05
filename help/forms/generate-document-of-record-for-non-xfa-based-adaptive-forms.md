@@ -450,7 +450,7 @@ When you select a form model, configure Document of Record using options availab
 **表单级别设置**
 
 * **包括DoR中未绑定的字段：**&#x200B;设置属性包括记录文档中基于架构的自适应表单中未绑定的字段。 默认情况下，它为true。
-* **如果隐藏，则从DoR中排除字段：**&#x200B;设置属性以在提交表单时从记录文档中排除隐藏字段。 在服务器](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上启用[重新验证时，服务器会先重新计算隐藏字段，然后再从记录文档中排除这些字段。
+* **如果隐藏，则从DoR中排除字段：**&#x200B;设置属性以在提交表单时从记录文档中排除隐藏字段。 在服务器[&#128279;](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上启用重新验证时，服务器会先重新计算隐藏字段，然后再从记录文档中排除这些字段。
 
 ## 使用自定义XCI文件
 

@@ -44,4 +44,4 @@ AEM组件用于保留、格式化和呈现网页上可用的内容。
 
 >[!NOTE]
 >
->要开发自定义组件，请使用***[AEM Screens示例组件模板](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***。
+>要开发自定义组件，请使用&#x200B;***[AEM Screens示例组件模板](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***。

@@ -65,8 +65,8 @@ ht-degree: 22%
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**，然后单击&#x200B;**[!UICONTROL 创建]**。
 1. 输入元数据配置文件的标题，例如示例元数据，然后选择&#x200B;**[!UICONTROL 提交]**。 此时将显示元数据配置文件的编辑表单。
-1. 单击组件并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中配置其属性。 例如，单击&#x200B;**[!UICONTROL Description]**组件并编辑其属性。
-编辑**[!UICONTROL Description]**&#x200B;组件的以下属性：
+1. 单击组件并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中配置其属性。 例如，单击&#x200B;**[!UICONTROL Description]**&#x200B;组件并编辑其属性。
+编辑&#x200B;**[!UICONTROL Description]**&#x200B;组件的以下属性：
 
    * **[!UICONTROL 字段标签]** — 元数据属性的显示名称。 仅供用户参考。
    * **[!UICONTROL 映射到属性]** — 此属性的值提供资产节点在存储库中保存的相对路径/名称。 该值应始终以`./`开头，因为它指示路径在资产的节点下。

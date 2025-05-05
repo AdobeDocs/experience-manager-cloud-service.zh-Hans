@@ -38,6 +38,7 @@ ht-degree: 4%
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
+
 1. 接下来，在`core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`处创建实现类`CustomCarouselImpl.java`。
 Sling模型的委托模式允许`CustomCarouselImpl`通过`sling:resourceSuperType`属性引用`ProductCarousel`模型：
 

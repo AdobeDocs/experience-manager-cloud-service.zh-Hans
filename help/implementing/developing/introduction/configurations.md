@@ -103,7 +103,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
    >
    >创建配置后，无法取消选择功能。
 
-1. 使用&#x200B;**有效权限**按钮查看角色矩阵以及当前授予配置的权限。
+1. 使用&#x200B;**有效权限**&#x200B;按钮查看角色矩阵以及当前授予配置的权限。
    ![有效权限窗口](assets/configuration-effective-permissions.png)
 1. 要分配新权限，请在&#x200B;**添加新权限**&#x200B;部分的&#x200B;**选择用户或组**&#x200B;字段中输入用户或组名称。
    * **选择用户或组**&#x200B;字段提供基于现有用户和角色的自动完成功能。
@@ -198,7 +198,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用配置 {#using-configurations}
 
-AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上一个示例](#developer-example)中所述[。
+AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上一个示例[&#128279;](#developer-example)中所述。
 
 有关上下文感知配置、示例及其使用方式的更多详细信息，请参阅[Sling文档](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)。
 

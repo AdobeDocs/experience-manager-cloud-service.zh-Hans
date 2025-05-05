@@ -40,7 +40,7 @@ ht-degree: 1%
 某些基于OpenAPI的AEM API需要身份验证，这需要使用[Adobe Developer Console](https://developer.adobe.com/developer-console/)生成凭据。 配置涉及以下步骤：
 
 1. AEM as a Cloud Service环境的现代化。
-1. 使用产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)启用对AEM API [的访问。
+1. 使用产品配置文件[&#128279;](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)启用对AEM API 的访问。
 1. 创建一个Adobe Developer Console (ADC)项目。
 1. 配置ADC项目。 这将生成凭据，在调用API时，稍后将使用这些凭据交换持有者令牌。
 1. 配置AEM实例以启用ADC项目通信。 这涉及通过配置和部署YAML文件在环境中注册客户端ID，如下面的[注册客户端ID](#registering-a-client-id)部分中所述。

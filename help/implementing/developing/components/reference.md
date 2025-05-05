@@ -172,7 +172,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 | `cq:isContainer` | `Boolean` | 该指示组件是否为容器组件，因此可以包含其他组件，例如段落系统。 |
 | `cq:dialog` | `nt:unstructured` | 这是组件的“编辑”对话框的定义。 |
 | `cq:design_dialog` | `nt:unstructured` | 这是组件的“设计”对话框的定义。 |
-| `cq:editConfig` | `cq:EditConfig` | 这会定义组件](#edit-behavior)的[编辑配置。 |
+| `cq:editConfig` | `cq:EditConfig` | 这会定义组件[&#128279;](#edit-behavior)的编辑配置。 |
 | `cq:htmlTag` | `nt:unstructured` | 这会返回添加到周围HTML标记的其他标记属性。 允许向自动生成的div添加属性。 |
 | `cq:noDecoration` | `Boolean` | 如果为true，则组件不会使用自动生成的div和css类渲染。 |
 | `cq:template` | `nt:unstructured` | 如果找到，则在从组件浏览器添加组件时，此节点将用作内容模板。 |
@@ -181,7 +181,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 | `jcr:title` | `String` | 这是组件的标题。 |
 | `sling:resourceSuperType` | `String` | 设置后，组件将继承此组件。 |
 | `component.html` | `nt:file` | 这是组件的HTL脚本文件。 |
-| `cq:icon` | `String` | 此值指向组件](#component-icon)的[图标，并显示在组件浏览器中。 |
+| `cq:icon` | `String` | 此值指向组件[&#128279;](#component-icon)的图标，并显示在组件浏览器中。 |
 
 如果查看&#x200B;**Text**&#x200B;组件，您可以看到以下几个元素：
 
@@ -225,7 +225,7 @@ AEM组件的对话框：
 
 “设计”对话框类似于用于编辑和配置内容的对话框，但它们为模板作者提供了界面，以便预配置页面模板上的该组件，并提供其设计详细信息。 然后，内容作者使用页面模板来创建内容页面。 有关如何创建模板的详细信息，请参阅[模板文档](/help/sites-cloud/authoring/page-editor/templates.md)。
 
-编辑页面模板](/help/sites-cloud/authoring/page-editor/templates.md)时使用了[设计对话框，但并非所有组件都需要。 例如，**标题**&#x200B;和&#x200B;**图像组件**&#x200B;都具有设计对话框，而&#x200B;**社交媒体共享组件**&#x200B;没有。
+编辑页面模板[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)时使用了设计对话框，但并非所有组件都需要。 例如，**标题**&#x200B;和&#x200B;**图像组件**&#x200B;都具有设计对话框，而&#x200B;**社交媒体共享组件**&#x200B;没有。
 
 ### Coral用户界面和Granite用户界面 {#coral-and-granite}
 

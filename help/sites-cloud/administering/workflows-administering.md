@@ -33,17 +33,21 @@ ht-degree: 98%
 1. **正在运行的工作流**&#x200B;显示正在运行的工作流的数量及其状态。 例如，在给定的图像中，显示的是&#x200B;**正在运行的工作流**&#x200B;的数量和 AEM 实例的&#x200B;**状态：**
 
    * **状态：健康**
+
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **状态：不健康**
+
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. 对于工作流实例的&#x200B;**状态详细信息**，单击&#x200B;**详细信息**，显示&#x200B;**正在运行的工作流实例**、**已完成的工作流实例**、**已中止的工作流实例**、**失败的工作流实例**&#x200B;等的数量。例如，以下是显示&#x200B;**状态详细信息**&#x200B;的给定图像：
 
    * **状态详细信息：健康**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **状态详细信息：不健康**
+
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -112,7 +116,7 @@ ht-degree: 98%
 当工作流失败时，AEM 会提供&#x200B;**故障**&#x200B;控制台，使您能够进行调查，并在找到初始原因后执行适当的操作：
 
 * **失败详细信息**
-打开一个窗口以显示**失败消息**、**步骤和&#x200B;**失败栈栈**。
+打开一个窗口以显示&#x200B;**失败消息**、**步骤和&#x200B;**&#x200B;失败栈栈**。
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。

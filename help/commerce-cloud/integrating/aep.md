@@ -329,7 +329,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    - 使用Experience Platform和/或ACDS的给定配置初始化它们
    - 从Peregrine订阅所有事件并将它们转发到SDK事件
 
-   您可以查看`EventCollectorContext`的实施详细信息。 请参阅GitHub](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)上的[aem-core-cif-components。
+   您可以查看`EventCollectorContext`的实施详细信息。 请参阅GitHub[&#128279;](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)上的aem-core-cif-components。
 
 ### 生成和部署更新的AEM项目
 
@@ -364,7 +364,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!TIP]
 >
->有关详细信息，请参阅架构组合](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)的[基础知识。
+>有关详细信息，请参阅架构组合[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)的基础知识。
 
 ### 创建数据集
 
@@ -460,7 +460,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ## 实施详细信息 {#implementation-details}
 
-[CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)基于Adobe Commerce](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)的[数据连接而构建，后者是[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)项目的一部分。
+[CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)基于Adobe Commerce[&#128279;](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)的数据连接而构建，后者是[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)项目的一部分。
 
 PWA Studio项目允许您创建由Adobe Commerce或Magento Open Source提供支持的Progressive Web Application (PWA)店面。 该项目还包含一个名为[Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)的组件库，用于向可视化组件添加逻辑。 [Peregrin库](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)还提供了[CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)用于与Experience Platform无缝集成的自定义React挂接。
 

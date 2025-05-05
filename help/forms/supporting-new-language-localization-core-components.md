@@ -265,7 +265,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. 找到示例英语文件：
 
-   AEM Forms在GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)上提供了[示例英语区域设置文件(.json)。
+   AEM Forms在GitHub[&#128279;](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)上提供了示例英语区域设置文件(.json)。
 
    英语文件包含默认字符串集以供参考。 区域设置特定的文件应模拟英语文件的结构。
 

@@ -64,7 +64,7 @@ HTML演绎版使用Sling重写器管道生成。 管道定义于`/libs/experienc
    * 最终演绎版中允许的HTML标签列表。
    * 默认情况下，允许使用以下标记（无需配置）：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link和script
 
-Adobe建议使用叠加配置重写器。 查看AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)中的[叠加。
+Adobe建议使用叠加配置重写器。 查看AEM as a Cloud Service[&#128279;](/help/implementing/developing/introduction/overlays.md)中的叠加。
 
 ## 体验片段的模板 {#templates-for-experience-fragments}
 
@@ -87,9 +87,11 @@ Adobe建议使用叠加配置重写器。 查看AEM as a Cloud Service](/help/im
 1. 两者：
 
    1. 模板的资源类型（初始节点）必须继承自：
+
       `cq/experience-fragments/components/xfpage`
 
    1. 模板名称必须以下列内容开头：
+
       `experience-fragments`
 此模式允许用户在/content/experience-fragments中创建体验片段，因为此文件夹的`cq:allowedTemplates`属性包括名称以`experience-fragment`开头的所有模板。 客户可以更新此属性以包含他们自己的命名方案或模板位置。
 

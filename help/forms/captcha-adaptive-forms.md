@@ -65,14 +65,14 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
    1. 选择&#x200B;**[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页面。 选择您创建的配置容器，然后选择&#x200B;**[!UICONTROL 创建]**。
    1. 选择版本为[!DNL reCAPTCHA Enterprise]，并为reCAPTCHA Enterprise服务指定名称、项目ID、站点密钥和API密钥（在步骤2中获取）。
    1. 选择密钥类型，密钥类型应与您在[Google Cloud项目](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)中配置的站点密钥相同，例如，**复选框站点密钥**&#x200B;或&#x200B;**基于得分的站点密钥**。
-   1. 指定0到1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)范围内的[阈值分数。 分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
+   1. 指定0到1[&#128279;](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)范围内的阈值分数。 分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
    1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建云服务配置。
 
 <!--
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
-reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅在自适应表单](#using-reCAPTCHA)中使用CAPTCHA [。
+reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅在自适应表单[&#128279;](#using-reCAPTCHA)中使用CAPTCHA 。
 
 <!--
 ![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
@@ -207,7 +207,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
    1. 您可以为reCAPTCHA构件选择大小为&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**。
    1. 您可以选择&#x200B;**[!UICONTROL 不可见]**&#x200B;选项，以便仅在可疑活动的情况下显示验证码质询。
 
-   已在自适应表单上启用reCAPTCHA服务。 您可以预览表单并查看验证码是否正常工作。 受reCAPTCHA保护的&#x200B;**徽章**将显示在受保护的表单上，如下所示。
+   已在自适应表单上启用reCAPTCHA服务。 您可以预览表单并查看验证码是否正常工作。 受reCAPTCHA保护的&#x200B;**徽章**&#x200B;将显示在受保护的表单上，如下所示。
    ![受reCAPTCHA徽章保护的Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 保存属性。
@@ -249,7 +249,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 要根据条件和用户操作验证验证码，请执行以下操作：
 
 1. 选择CAPTCHA组件并选择![cmppr](assets/configure-icon.svg)以查看组件属性。
-1. 在&#x200B;**[!UICONTROL 验证CAPTCHA]**&#x200B;部分中，针对用户操作&#x200B;]**选择**[!UICONTROL &#x200B;验证CAPTCHA。
+1. 在&#x200B;**[!UICONTROL 验证CAPTCHA]**&#x200B;部分中，针对用户操作&#x200B;**选择**&#x200B;验证CAPTCHA。
 1. 选择![完成](assets/save_icon.svg)以保存组件属性。
 
 [!DNL Experience Manager Forms]提供了`ValidateCAPTCHA` API以使用预定义条件验证验证码。 您可以使用自定义提交操作或通过定义自适应表单中组件的规则来调用API。

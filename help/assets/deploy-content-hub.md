@@ -93,7 +93,7 @@ Content Hub上各种权限的变体包括：
 
 >[!NOTE]
 >
-[Experience Manager Assets用户](#experience-manager-assets-users)能够在Experience Manager Assets as a Cloud Service环境中批准资源，以便这些资源可在Content Hub上使用。 必须使用Admin Console将这些用户添加到AEM >生产创作实例> AEM用户产品配置文件中。
+>[Experience Manager Assets用户](#experience-manager-assets-users)能够在Experience Manager Assets as a Cloud Service环境中批准资源，以便这些资源可在Content Hub上使用。 必须使用Admin Console将这些用户添加到AEM >生产创作实例> AEM用户产品配置文件中。
 
 ## 步骤1：使用Cloud Manager启用适用于Experience Manager Assets的Content Hub {#enable-content-hub}
 
@@ -112,7 +112,7 @@ Content Hub上各种权限的变体包括：
 
    >[!NOTE]
    >
-   如果在选择Content Hub后没有为您启用&#x200B;**[!UICONTROL 更新]**，请确保您已为项目指定上线设置。
+   >如果在选择Content Hub后没有为您启用&#x200B;**[!UICONTROL 更新]**，请确保您已为项目指定上线设置。
 
 1. 单击&#x200B;**[!UICONTROL 更新]**。
 
@@ -120,20 +120,20 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 >[!NOTE]
 >
-您最多可以对250个Content Hub用户访问和使用Content Hub。 如果您还有其他问题，请联系您的Adobe代表。
+>您最多可以对250个Content Hub用户访问和使用Content Hub。 如果您还有其他问题，请联系您的Adobe代表。
 
 
 如果您是Experience Manager Assets的新用户，请单击&#x200B;**[!UICONTROL 添加程序]**，然后提供程序详细信息（程序名称，为生产设置），然后单击&#x200B;**[!UICONTROL 继续]**。 然后在&#x200B;**[!UICONTROL 解决方案和加载项]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Assets]**&#x200B;和&#x200B;**[!UICONTROL Content Hub]**。
 
 ### Admin Console上的Content Hub实例和产品配置文件{#content-hub-instance-product-profile}
 
-使用Cloud Manager](#enable-content-hub)为Assets as a Cloud Service启用Content Hub[后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
+使用Cloud Manager[&#128279;](#enable-content-hub)为Assets as a Cloud Service启用Content Hub后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
 
 ![Content Hub的新实例](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
-如果您在2024年8月14日之前配置了Content Hub，则会创建新实例，并将`contenthub`作为后缀。
+>如果您在2024年8月14日之前配置了Content Hub，则会创建新实例，并将`contenthub`作为后缀。
 
 请注意，Content Hub的实例名称中没有`author`或`publish`。
 
@@ -143,7 +143,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 >[!NOTE]
 >
-如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
+>如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
 
 ## 步骤2：载入Content Hub管理员 {#onboard-content-hub-administrator}
 
@@ -163,7 +163,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
    Admin Console显示AEM as a Cloud Service的两个产品配置文件：管理员和用户。
-1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
+1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
    ![管理员产品配置文件](assets/aem-cs-admin-product-profile.png)
 
 1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
@@ -184,7 +184,7 @@ Content Hub用户可以访问门户上可用的资源，但无法添加任何新
 
 >[!NOTE]
 >
-可以使用所有高级企业功能，如与外部身份提供程序同步。
+>可以使用所有高级企业功能，如与外部身份提供程序同步。
 
 ### 如何访问 Content Hub？ {#access-content-hub}
 
@@ -262,4 +262,4 @@ Experience Manager Assets用户可以批准AEM as a Cloud Service上的资源，
 
    >[!NOTE]
    >
-   您无需添加到Experience Manager Assets用户的[Content Hub产品配置文件](#onboard-content-hub-users)。
+   >您无需添加到Experience Manager Assets用户的[Content Hub产品配置文件](#onboard-content-hub-users)。

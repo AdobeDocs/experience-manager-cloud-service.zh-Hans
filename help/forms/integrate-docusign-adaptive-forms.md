@@ -19,7 +19,7 @@ DocuSign是一个著名的电子签名解决方案。 您可以用它来电子�
 - 更快地完成人力资源流程，并为员工提供数字体验。
 - 缩短合同周期，更快地吸引供应商。
 
-AEM Formsas a Cloud Service为DocuSign](#deploy-custom-submit-action)提供了[自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。
+AEM Formsas a Cloud Service为DocuSign[&#128279;](#deploy-custom-submit-action)提供了自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。
 
 | 您还可以使用Adobe的电子签名解决方案Adobe Sign对自适应表单进行电子签名。 AEM Forms与Adobe Sign的集成更深入了，它提供了更精细的控制，如顺序和并行签名、多种身份验证方法、表单内签名体验等。 有关详细信息，请参阅[在自适应表单中使用Adobe Sign](working-with-adobe-sign.md)。 |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -163,7 +163,7 @@ AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 �
 您可以为现有的自适应表单启用[!DNL DocuSign]或创建启用[!DNL DocuSign]的自适应表单。 选择下列选项之一：
 
 - [创建启用 [!DNL DocuSign] 的自适应表单](#create-an-adaptive-form-for-docusign)
-- 为现有的自适应表单](#editafsign)启用[启用 [!DNL DocuSign] 。
+- 为现有的自适应表单[&#128279;](#editafsign)启用启用 [!DNL DocuSign] 。
 
 #### 创建DocuSign自适应表单 {#create-an-adaptive-form-for-docusign}
 

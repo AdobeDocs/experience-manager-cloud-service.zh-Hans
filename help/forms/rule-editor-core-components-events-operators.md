@@ -220,7 +220,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 设置值] {#set-value-of}
 
-]**规则类型的**[!UICONTROL &#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
+**规则类型的**&#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
 **Set Value Of**&#x200B;规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
@@ -276,7 +276,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 启用] {#enable}
 
-启用&#x200B;****&#x200B;规则类型允许您根据是否满足条件来启用或禁用表单对象。如果条件不满足或返回 `False`，“启用”规则类型还会触发“禁用”作。
+启用&#x200B;**&#x200B;**&#x200B;规则类型允许您根据是否满足条件来启用或禁用表单对象。如果条件不满足或返回 `False`，“启用”规则类型还会触发“禁用”作。
 
 典型的启用规则结构如下：
 
@@ -390,7 +390,7 @@ To define a rule based on a form data model:
 
 ## 后续步骤
 
-现在，让我们了解基于核心组件](/help/forms/rule-editor-core-components-usecases.md)的自适应表单的规则编辑器的各种[示例。
+现在，让我们了解基于核心组件[&#128279;](/help/forms/rule-editor-core-components-usecases.md)的自适应表单的规则编辑器的各种示例。
 
 ## 另请参阅
 

@@ -78,7 +78,7 @@ ht-degree: 4%
 
 要在将资产上传到其[!DNL Dynamic Media Publish Mode]设置为&#x200B;**[!UICONTROL 激活时]**&#x200B;的文件夹时发布资产，请执行以下操作：
 
-1. 单击&#x200B;**[!UICONTROL 添加Assets]** > **[!UICONTROL 浏览]** > **[!UICONTROL 浏览文件]**&#x200B;以导航到相应的文件夹以上传资源。 **[!UICONTROL 发布选项]**&#x200B;部分在激活时&#x200B;]**将**[!UICONTROL  DM发布模式&#x200B;]**显示为**[!UICONTROL 。
+1. 单击&#x200B;**[!UICONTROL 添加Assets]** > **[!UICONTROL 浏览]** > **[!UICONTROL 浏览文件]**&#x200B;以导航到相应的文件夹以上传资源。 **[!UICONTROL 发布选项]**&#x200B;部分在激活时&#x200B;**将**&#x200B;[!UICONTROL &#x200B; DM发布模式&#x200B;]&#x200B;**显示为**。
    ![激活时上传图像](/help/assets/assets/upload-uactivation.svg)
 2. 选择&#x200B;**[!UICONTROL 发布到AEM和Dynamic Media]**，然后单击&#x200B;**[!UICONTROL 上传]**。 资产将同时发布到[!DNL AEM and Dynamic Media]。 要查看这些资源的更新发布状态，请参阅[检查发布状态](#check-publish-status)。
 

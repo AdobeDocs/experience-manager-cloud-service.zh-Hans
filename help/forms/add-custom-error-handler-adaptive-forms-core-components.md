@@ -256,6 +256,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+
    在上述代码中，`return true`自动调用默认错误处理程序。 要防止默认调用默认错误处理程序，请包括`return false`。
 
    >[!NOTE]

@@ -39,7 +39,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->模板 **** 编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
+>模板 **&#x200B;**&#x200B;编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
 
 ## 开始之前 {#before-you-start}
 
@@ -95,7 +95,7 @@ ht-degree: 80%
 >
 >切勿在模板中输入任何必须[国际化](/help/implementing/developing/extending/i18n/dev.md)的信息。
 >
->对于必须本地化的模板元素（如页眉和页脚），请使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
+>对于必须本地化的模板元素（如页眉和页脚），请使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的本地化功能。
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
@@ -405,7 +405,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->[](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
+>[&#128279;](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
 
 #### 策略和属性（布局容器） {#policy-and-properties-layout-container}
 

@@ -52,10 +52,12 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 
 1. 配置Cloud Service：
    1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**，然后选择&#x200B;**[!UICONTROL Turnstile]**。
+
       在ui中![Turnstile](assets/turnstile-in-ui.png)
    1. 选择已创建或已更新的配置容器，如上一节所述。 选择&#x200B;**[!UICONTROL 创建]**。
+
       ![配置旋转门](assets/config-hcaptcha.png)
-   1. 将&#x200B;**[!UICONTROL 小组件类型]**&#x200B;指定为托管，小组件类型可以更改，具体取决于在必备项](#prerequisite)中获取的Turnstile服务[的&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 名称]**、**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**&#x200B;中获得的密钥。 选择&#x200B;**[!UICONTROL 创建]**。
+   1. 将&#x200B;**[!UICONTROL 小组件类型]**&#x200B;指定为托管，小组件类型可以更改，具体取决于在必备项[&#128279;](#prerequisite)中获取的Turnstile服务的&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 名称]**、**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**&#x200B;中获得的密钥。 选择&#x200B;**[!UICONTROL 创建]**。
 
       ![配置Cloud Service以将您的AEM Forms环境与Turnstile连接](assets/config-turntstile.png)
 

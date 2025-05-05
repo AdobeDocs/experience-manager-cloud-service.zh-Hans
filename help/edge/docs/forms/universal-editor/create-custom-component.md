@@ -391,6 +391,7 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
+
    代码可帮助您定义自定义组件的样式和视觉外观。
 
 1. 要添加功能，请导航到 `/blocks/form/components/range/range.js` 文件，并添加以下代码行：

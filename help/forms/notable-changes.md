@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * 在将客户捆绑包与Formsas a Cloud Service结合使用之前，请使用最新版本的adobe-aemfd-docmanager重新编译自定义代码。
 
-* 使用[AEM Formsas a Cloud Service迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md)准备自适应Forms、主题、模板和云配置，并将其从OSGi上的<!-- AEM 6.3 Forms-->AEM 6.4 Forms和OSGi上的AEM 6.5 Forms迁移到[!DNL AEM]as a Cloud Service。 使用程序](/help/implementing/cloud-manager/managing-code/managing-repositories.md)的[Git存储库导入现有的自适应表单模板。
+* 使用[AEM Formsas a Cloud Service迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md)准备自适应Forms、主题、模板和云配置，并将其从OSGi上的<!-- AEM 6.3 Forms-->AEM 6.4 Forms和OSGi上的AEM 6.5 Forms迁移到[!DNL AEM]as a Cloud Service。 使用程序[&#128279;](/help/implementing/cloud-manager/managing-code/managing-repositories.md)的Git存储库导入现有的自适应表单模板。
 
 * 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 * **提交操作：** **电子邮件**&#x200B;提交操作提供了选项，用于发送附件和使用电子邮件附加记录文档(DoR)。 您可以用它代替AEM 6.5 Forms中可用的&#x200B;**Email作为PDF**&#x200B;操作。
 
-* **Automated forms conversion服务**：该服务未提供Automated forms conversion服务的元模型。 您可以从Automated forms conversion服务文档](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model)中[下载它。
+* **Automated forms conversion服务**：该服务未提供Automated forms conversion服务的元模型。 您可以从Automated forms conversion服务文档[&#128279;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model)中下载它。
 
 * **基于XSD的自适应Forms：**&#x200B;您可以使用XDP-template为记录文档设计模板。 该服务不支持基于XFA的自适应Forms
 

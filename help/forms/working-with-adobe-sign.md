@@ -42,7 +42,7 @@ ht-degree: 1%
 * 以匿名或登录用户身份签署表单
 * 动态签名流程（与[!DNL AEM Forms]工作流集成）
 * 通过知识库、电话、社交个人资料和政府ID进行验证
-* 为每个协议收件人分配角色。 用于商业和企业服务级别的Adobe Sign可以选择展开协议收件人](#addsignerstoanadaptiveform)的[角色。
+* 为每个协议收件人分配角色。 用于商业和企业服务级别的Adobe Sign可以选择展开协议收件人[&#128279;](#addsignerstoanadaptiveform)的角色。
 
 <!-- * In-form and out-of-form signing experiences -->
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 您可以为现有的自适应表单启用[!DNL Adobe Sign]或创建启用[!DNL Adobe Sign]的自适应表单。 选择下列选项之一：
 
 * [创建启用 [!DNL Adobe Sign] 的自适应表单](#create-an-adaptive-form-for-adobe-sign)
-* 为现有的自适应表单](#editafsign)启用[启用 [!DNL Adobe Sign] 。
+* 为现有的自适应表单[&#128279;](#editafsign)启用启用 [!DNL Adobe Sign] 。
 
 #### 创建Adobe Sign自适应表单 {#create-an-adaptive-form-for-adobe-sign}
 
@@ -176,7 +176,7 @@ ht-degree: 1%
    * **提交表单（并发送签名协议）**：此选项将立即提交表单，然后将要签名的表单发送给收件人。
    * **提交表单（在每个收件人完成签名仪式后）**：此选项仅在所有签名者完成签名过程后提交自适应Forms。 您可以配置间隔以检查所有签名者的签名状态。 有关详细信息，请参阅[配置 [!DNL Adobe Acrobat Sign] 计划程序](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status)。
 
-1. 从&#x200B;**[!UICONTROL 收件人可以完成]**&#x200B;对话框中选择签名顺序。 收件人可以按任意顺序依次签署自适应表单&#x200B;**** — 一个接一个收件人，或&#x200B;**[!UICONTROL 同时]**。
+1. 从&#x200B;**[!UICONTROL 收件人可以完成]**&#x200B;对话框中选择签名顺序。 收件人可以按任意顺序依次签署自适应表单&#x200B;**&#x200B;** — 一个接一个收件人，或&#x200B;**[!UICONTROL 同时]**。
 
    按顺序排列，每个收件人一次收到Adobe Sign协议。 收件人完成分配的操作后，协议将发送给下一个收件人，依此类推。
 
@@ -205,7 +205,7 @@ Adobe Sign协议可以有一个或多个收件人。 添加收件人时，您还
 
    * **[!UICONTROL 收件人和填写表单的人员是否相同？]：**&#x200B;如果表单填写者和第一个收件人是同一个人，请选择&#x200B;**[!UICONTROL 是]**。<!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
-   * **[!UICONTROL 收件人角色]：**&#x200B;选择收件人的角色。 用于商业和企业服务级别的Adobe Sign可以选择扩展协议收件人](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html)的[角色，使其不仅限于&#x200B;**签名者**，以便更好地匹配他们的工作流要求。
+   * **[!UICONTROL 收件人角色]：**&#x200B;选择收件人的角色。 用于商业和企业服务级别的Adobe Sign可以选择扩展协议收件人[&#128279;](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html)的角色，使其不仅限于&#x200B;**签名者**，以便更好地匹配他们的工作流要求。
 
    * **[!UICONTROL 收件人电子邮件地址]：**&#x200B;指定收件人的电子邮件地址。 收件人通过指定的电子邮件地址接收Adobe Sign协议。 您可以选择使用表单字段、登录用户的Experience Manager用户配置文件中提供的电子邮件地址，或者手动输入电子邮件地址。 这是强制步骤。
 
@@ -350,8 +350,8 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 **问：**&#x200B;您可以将自适应表单嵌入到其他自适应表单中。 是否可以为嵌入式自适应表单启用[!DNL Adobe Sign]？
 **Ans：**&#x200B;否，Experience Manager Forms不支持使用嵌入启用了[!DNL Adobe Sign]的自适应表单以供签名的自适应表单
 
-**问：**当我使用高级模板创建自适应表单并打开它进行编辑时，出现错误消息“电子签名或收件人配置不正确”。 显示。 如何解决错误消息？
-使用高级模板创建的**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]收件人。
+**问：**&#x200B;当我使用高级模板创建自适应表单并打开它进行编辑时，出现错误消息“电子签名或收件人配置不正确”。 显示。 如何解决错误消息？
+使用高级模板创建的&#x200B;**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]收件人。
 
 **问：**&#x200B;我能否在自适应表单的静态文本组件中使用[!DNL Adobe Sign]文本标记？
 **答案：**&#x200B;是，您可以在文本组件中使用文本标记将[!DNL Adobe Sign]字段添加到启用记录文档（仅自动生成的记录文档选项）的自适应表单。 要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/using/text-tag.html)。 另请注意，自适应Forms对文本标记的支持有限。 您可以使用文本标记仅创建[Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支持的字段。
@@ -365,7 +365,7 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 
 **解决方法**
 
-* 检查自适应表单中使用的Adobe Sign Cloud Service](adobe-sign-integration-adaptive-forms.md)的[配置。
+* 检查自适应表单中使用的Adobe Sign Cloud Service[&#128279;](adobe-sign-integration-adaptive-forms.md)的配置。
 * 确保[!DNL Adobe Sign]服务器上用于配置[!DNL Adobe Sign]Cloud Service的API应用程序具有所需权限。
 * 如果您使用多个[!DNL Adobe Sign]Cloud Service，请将所有服务的&#x200B;**[!UICONTROL oAuth URL]**&#x200B;指向相同的&#x200B;**[!UICONTROL Adobe Sign分片]**。
 

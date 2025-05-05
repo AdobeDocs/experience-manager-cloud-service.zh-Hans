@@ -29,7 +29,7 @@ ht-degree: 1%
 要在响应模式下预览表单，请执行以下操作：
 
 1. 在通用编辑器中打开窗体以进行编辑。
-2. 单击工具栏中显示设备预览符号](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%，width=2%}图标的![模拟器图标。
+2. 单击工具栏中显示设备预览符号![&#128279;](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%，width=2%}图标的模拟器图标。
 3. 选择设备格式：
    - 桌面（默认）
    - 平板电脑

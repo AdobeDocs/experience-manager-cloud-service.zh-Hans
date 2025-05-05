@@ -102,9 +102,9 @@ ht-degree: 14%
       <td>图像</td>
       <td>
         <ul>
-            <li>[！UICONTROL JPEG]</li> 
-            <li>[！UICONTROL PNG]</li> 
-            <li>[！UICONTROL SVG]</li>
+            <li>[!UICONTROL JPEG]</li> 
+            <li>[!UICONTROL PNG]</li> 
+            <li>[!UICONTROL SVG]</li>
         </ul>
       </td>
      </tr>
@@ -112,8 +112,8 @@ ht-degree: 14%
       <td>视频</td>
       <td>
         <ul>
-            <li>[！UICONTROL Quicktime]</li>  
-            <li>[！UICONTROL MP4]</li> 
+            <li>[!UICONTROL Quicktime]</li>  
+            <li>[!UICONTROL MP4]</li> 
         </ul>
       </td>
      </tr>
@@ -121,9 +121,9 @@ ht-degree: 14%
       <td>文档</td>
       <td>
         <ul>
-            <li>[！UICONTROL txt]（纯）</li>  
-            <li>[！UICONTROL Doc/Docx]</li> 
-            <li>[！UICONTROL XML]</li>
+            <li>[!UICONTROL txt]（纯）</li>  
+            <li>[!UICONTROL Doc/Docx]</li> 
+            <li>[!UICONTROL XML]</li>
         </ul>
       </td>
      </tr>
@@ -131,7 +131,7 @@ ht-degree: 14%
       <td>打印介质</td>
       <td>
         <ul>
-            <li>[！UICONTROL PDF]</li>  
+            <li>[!UICONTROL PDF]</li>  
         </ul>
       </td>
      </tr>  

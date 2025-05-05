@@ -40,7 +40,7 @@ ht-degree: 0%
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**。
 
 1. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;部分中，从存储下拉列表中选择&#x200B;**[!UICONTROL Azure]**。
-1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置](#create-azure-storage-configuration)的[配置路径。
+1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置[&#128279;](#create-azure-storage-configuration)的配置路径。
 1. 选择&#x200B;**[!UICONTROL 发布]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。
 
 ### 为外部数据存储配置AEM工作流模型 {#configure-workflow-external-data-storage}

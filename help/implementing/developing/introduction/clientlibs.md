@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 在AEM as a Cloud Service上使用客户端库 {#using-client-side-libraries}
 
-数字体验在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 AEM客户端库(clientlibs)允许您在存储库中组织和集中存储这些客户端库。 结合AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)中的[前端构建过程，可以轻松管理AEM项目的前端代码。
+数字体验在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 AEM客户端库(clientlibs)允许您在存储库中组织和集中存储这些客户端库。 结合AEM项目原型[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)中的前端构建过程，可以轻松管理AEM项目的前端代码。
 
 在AEM中使用clientlibs的优点包括：
 
@@ -37,7 +37,7 @@ AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，�
 
 ## AEM as a Cloud Service的前端开发 {#fed-for-aemaacs}
 
-所有JavaScript、CSS和其他前端资源都应在AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)的[ui.frontend模块中进行维护。 原型的灵活性允许您使用所选择的现代Web工具来创建和管理这些资源。
+所有JavaScript、CSS和其他前端资源都应在AEM项目原型[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)的ui.frontend模块中进行维护。 原型的灵活性允许您使用所选择的现代Web工具来创建和管理这些资源。
 
 然后，原型可以将资源编译为单个CSS和JS文件，并将它们自动嵌入存储库中的`cq:clientLibraryFolder`中。
 

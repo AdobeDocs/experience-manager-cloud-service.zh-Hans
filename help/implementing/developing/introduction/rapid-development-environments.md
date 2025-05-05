@@ -545,7 +545,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 * 当前，仅AEM内容和Dispatcher包支持部署到RDE。
 * 尚不支持部署其他包类型(例如，完整的AEM应用程序包)。
-* 目前，不支持使用注释重置RDE环境。 相反，必须使用现有的AIO CLI重置命令，如此处](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)所述的[。
+* 目前，不支持使用注释重置RDE环境。 相反，必须使用现有的AIO CLI重置命令，如此处[&#128279;](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)所述的。
 
 **工作方式**
 

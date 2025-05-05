@@ -62,7 +62,7 @@ URL的第一个红色部分引用了服务器域本身。 在这种情况下，D
 请注意，将生成监视的新演绎版。 要理解这个更改图像宽度这一简单操作的一个关键点是，看到的图像是100%动态生成的。
 
 现在将`500`像素的宽度值更改为`1000`像素，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}。
-当您按**[!UICONTROL Enter]**&#x200B;时，浏览器将返回到Dynamic Media图像服务器。 它会根据您刚刚输入的新宽度值生成手表的全新演绎版，然后将新图像发送回浏览器，然后进行缓存。
+当您按&#x200B;**[!UICONTROL Enter]**&#x200B;时，浏览器将返回到Dynamic Media图像服务器。 它会根据您刚刚输入的新宽度值生成手表的全新演绎版，然后将新图像发送回浏览器，然后进行缓存。
 
 Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资产。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)查看他们的列表。
 

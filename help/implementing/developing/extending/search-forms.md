@@ -31,7 +31,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
 
 使用&#x200B;**搜索Forms**，您可以根据特定需求自定义和扩展这些面板。
 
-**搜索Forms**&#x200B;提供了可组合和定义的[谓词](#predicates-and-their-settings)的现成选择。 可通过以下方式访问用于配置这些表单](#configuring-your-search-forms)的[对话框：
+**搜索Forms**&#x200B;提供了可组合和定义的[谓词](#predicates-and-their-settings)的现成选择。 可通过以下方式访问用于配置这些表单[&#128279;](#configuring-your-search-forms)的对话框：
 
 * **工具**
    * **常规**
@@ -536,7 +536,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节点路径**
-与**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资产。
+与&#x200B;**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资产。
 
 * **单选**
 如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中此复选框，则可取消选中此复选框。

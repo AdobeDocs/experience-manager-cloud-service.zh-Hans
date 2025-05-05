@@ -155,7 +155,7 @@ ht-degree: 77%
 
      >[!NOTE]
      >
-     >计划发布的内容与页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中可用的&#x200B;[**开启时间**&#x200B;和&#x200B;**关闭时间**&#x200B;不同，但可在类似情况下使用。
+     >计划发布的内容与页面属性[&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中可用的&#x200B;**开启时间**&#x200B;和&#x200B;**关闭时间**&#x200B;不同，但可在类似情况下使用。
 
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 

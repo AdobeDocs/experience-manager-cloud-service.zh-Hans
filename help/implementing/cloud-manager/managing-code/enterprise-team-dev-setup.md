@@ -44,7 +44,7 @@ Cloud Manager支持灵活的多团队设置，可以根据企业的需求进行�
 
 每个企业都有不同的需求，包括不同的团队设置、流程和开发工作流。 Adobe 将下面描述的设置用于几个项目，这些项目基于 AEM as a Cloud Service 提供体验。
 
-例如，Adobe Creative Cloud 桌面版，如 Adobe Photoshop 或 Adobe Illustrator，包括可供最终用户使用的教程、示例和指南等内容资源。客户端应用程序以Headless方式使用AEM as a Cloud Service中的内容。 他们对AEM云发布层进行API调用，以将结构化内容检索为JSON流。 此外，AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery)中的[内容交付网络(CDN)用于以最佳性能为结构化和非结构化内容提供服务。
+例如，Adobe Creative Cloud 桌面版，如 Adobe Photoshop 或 Adobe Illustrator，包括可供最终用户使用的教程、示例和指南等内容资源。客户端应用程序以Headless方式使用AEM as a Cloud Service中的内容。 他们对AEM云发布层进行API调用，以将结构化内容检索为JSON流。 此外，AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#content-delivery)中的内容交付网络(CDN)用于以最佳性能为结构化和非结构化内容提供服务。
 
 参与该项目的团队遵循以下流程。
 

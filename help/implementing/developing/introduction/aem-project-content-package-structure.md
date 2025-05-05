@@ -281,7 +281,7 @@ Repo Init OSGi配置最好采用[`.config` OSGi配置格式](https://sling.apach
 
 第三方应用程序/连接器应使用其`all`包作为项目容器(`all`)包中的容器进行嵌入。
 
-添加Maven依赖项遵循标准Maven实践，嵌入第三方工件（代码和内容包）的步骤如上所述[](#embedding-3rd-party-packages)。
+添加Maven依赖项遵循标准Maven实践，嵌入第三方工件（代码和内容包）的步骤如上所述[&#128279;](#embedding-3rd-party-packages)。
 
 >[!TIP]
 >

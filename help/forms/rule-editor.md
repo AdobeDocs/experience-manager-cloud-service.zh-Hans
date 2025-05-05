@@ -56,7 +56,7 @@ ht-degree: 1%
 
 **条件-操作** 在此构造中，规则首先定义条件，然后是要触发的操作。 该结构可与编程语言中的 if-then 语句相媲美。
 
-在规则编辑器中，When **** 规则类型强制执行条件操作构造。
+在规则编辑器中，When **&#x200B;**&#x200B;规则类型强制执行条件操作构造。
 
 **操作条件** 在此构造中，规则首先定义要触发的操作，然后是评估条件。 此构造的另一种变体是操作-条件-备用操作，它还定义了在条件返回 False 时要触发的备用操作。
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 ### [!UICONTROL 什么时候] {#whenruletype}
 
-When **** 规则类型遵循条件-操作-备用操作&#x200B;**规则构造，或者有时仅**&#x200B;遵循&#x200B;**条件-操作**&#x200B;构造。在此规则类型中，您首先指定评估条件，然后在满足条件时触发操作 （ `True`）。 使用 When 规则类型时，您可以使用多个 AND 和 OR 运算符来创建 [嵌套表达式](#nestedexpressions)。
+When **&#x200B;**&#x200B;规则类型遵循条件-操作-备用操作&#x200B;**规则构造，或者有时仅**&#x200B;遵循&#x200B;**条件-操作**&#x200B;构造。在此规则类型中，您首先指定评估条件，然后在满足条件时触发操作 （ `True`）。 使用 When 规则类型时，您可以使用多个 AND 和 OR 运算符来创建 [嵌套表达式](#nestedexpressions)。
 
 使用 When 规则类型，您可以评估表单对象的条件并对一个或多个对象执行操作。
 
@@ -205,7 +205,7 @@ _
 
 ### [!UICONTROL 设置值] {#set-value-of}
 
-]**规则类型的**[!UICONTROL &#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
+**规则类型的**&#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
 “ **设置值”** 规则类型并非对所有表单对象（如面板和工具栏按钮）都可用。 标准“设置值”规则具有以下结构：
 
@@ -449,7 +449,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**[!UICONTROL  Warbant Salary ]**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -483,11 +483,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 在表达式字段中：
 
-   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL  Salary ]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B; Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 加号]**。
 
-   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**[!UICONTROL  Berphor Salary ]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**&#x200B;[!UICONTROL &#x200B; Berphor Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -511,7 +511,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    在When语句中：
 
-   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL &#x200B;婚姻状况&#x200B;]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B;婚姻状况&#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL Select Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL 等于]**。
 
@@ -651,7 +651,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存储库中添加客户端库后，在自适应表单中使用它。 它可让您在表单中将自定义函数用作规则。 要在自适应表单中添加客户端库，请执行以下步骤：
 
 1. 在编辑模式下打开表单。
-要在编辑模式下打开表单，请选择一个表单，然后选择**[!UICONTROL 打开]**。
+要在编辑模式下打开表单，请选择一个表单，然后选择&#x200B;**[!UICONTROL 打开]**。
 1. 在编辑模式下，选择一个组件，然后选择![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后选择![cmppr](assets/configure-icon.svg)。
 1. 在侧栏中的“Name of Client Library”（客户端库名称）下，添加您的客户端库。 （示例中为`customfunction`。）
 

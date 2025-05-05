@@ -64,7 +64,7 @@ ht-degree: 16%
 
 初始设置后，用户可以在AEM Sites实例上创建页面并根据需要添加资源。 添加资源时，用户可以选择存储在其本地DAM中的资源，也可以浏览并使用远程DAM中可用的资源。
 
-具有OpenAPI功能的Dynamic Media提供了其他一些好处，例如访问和使用内容片段中的远程资产，获取远程资产的元数据等等。 详细了解Dynamic Media与Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md)相比具有OpenAPI功能的[其他优势。
+具有OpenAPI功能的Dynamic Media提供了其他一些好处，例如访问和使用内容片段中的远程资产，获取远程资产的元数据等等。 详细了解Dynamic Media与Connected Assets[&#128279;](/help/assets/dynamic-media-open-apis-faqs.md)相比具有OpenAPI功能的其他优势。
 
 ## 开始之前 {#pre-requisites-sites-integration}
 
@@ -77,6 +77,7 @@ ht-degree: 16%
 * 为AEM as a Cloud Service设置以下[环境变量](/help/implementing/cloud-manager/environment-variables.md#add-variables)：
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX`引用程序ID <br>
      `eYYYY`引用环境ID
 
@@ -86,7 +87,7 @@ ht-degree: 16%
 
      或者，按照以下步骤在AEM Sites实例中为AEM 6.5配置[OSGi设置](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)：
 
-   1. 登录到控制台，然后单击&#x200B;**[!UICONTROL OSGi] >**或
+   1. 登录到控制台，然后单击&#x200B;**[!UICONTROL OSGi] >**&#x200B;或
 使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
 
    1. 按如下方式配置&#x200B;**下一代Dynamic Media配置** (`NextGenDynamicMediaConfigImpl`) OSGi配置，将值替换为远程资源环境的值。
@@ -161,11 +162,11 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   如果您没有AEM内容片段模型，则可能需要[创建一个](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en)。
+   >如果您没有AEM内容片段模型，则可能需要[创建一个](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en)。
 
 1. 单击文本组件旁边的![复选标记图标](/help/assets/assets/do-not-localize/checkmark-icon.svg)图标。
 1. 选择&#x200B;**[!UICONTROL 远程]**&#x200B;以从远程DAM获取资产。 <br>
-您可以根据需要选择**[!UICONTROL 本地]**&#x200B;或&#x200B;**[!UICONTROL 远程]** DAM存储库。
+您可以根据需要选择&#x200B;**[!UICONTROL 本地]**&#x200B;或&#x200B;**[!UICONTROL 远程]** DAM存储库。
 
    ![图像](/help/assets/assets/cf-pick.jpg)
 系统会提示您登录。

@@ -67,6 +67,6 @@ Adobe的微前端资产选择器提供了一个用户界面，可轻松与[!DNL 
 
 >[!MORELIKETHIS]
 >
-* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
-* [资产选择器属性](/help/assets/asset-selector-properties.md)
-* [资产选择器自定义](/help/assets/asset-selector-customization.md)
+>* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
+>* [资产选择器属性](/help/assets/asset-selector-properties.md)
+>* [资产选择器自定义](/help/assets/asset-selector-customization.md)

@@ -240,7 +240,7 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 
 ### 配置布局容器的网格 {#configure-the-grid-of-the-layout-container}
 
-您可以通过编辑页面模板](/help/sites-cloud/authoring/page-editor/templates.md)来配置布局容器[的每个特定实例的可用列数。
+您可以通过编辑页面模板[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)来配置布局容器的每个特定实例的可用列数。
 
 ### 嵌套响应式网格 {#nested-responsive-grids}
 

@@ -73,7 +73,7 @@ ht-degree: 2%
 
 ## 属性 {#properties}
 
-您可以编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)的[属性，其方式与[编辑页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)的方式非常相似。模板属性包括：
+您可以编辑模板[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)的属性，其方式与[编辑页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)的方式非常相似。模板属性包括：
 
 * 模板标题
 * 描述
