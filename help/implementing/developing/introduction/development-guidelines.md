@@ -17,7 +17,7 @@ ht-degree: 3%
 >id="development_guidelines"
 >title="AEM as a Cloud Service 开发准则"
 >abstract="了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。"
->additional-url="https://video.tv.adobe.com/v/345900?captions=chi_hans" text="包结构演示"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="包结构演示"
 
 本文档提供了在AEM as a Cloud Service上进行开发的准则，以及它与AEM内部部署和AMS中的AEM不同的重要方式。
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 请勿在AEM as a Cloud Service中使用实例的文件系统。 该盘是短暂的，并且在实例被回收时进行处置。 有限地使用文件系统进行与处理单个请求相关的临时存储是可能的，但不应滥用文件系统进行大型存储。 这是因为这可能会对资源使用配额产生负面影响，并遇到磁盘限制。
 
-例如，如果不支持使用文件系统，则Publish层应确保将必须保留的任何数据运送到外部服务以进行长期存储。
+例如，不支持使用文件系统，发布层应确保将必须保留的任何数据发送到外部服务以进行更长期存储。
 
 ## 观察 {#observation}
 
@@ -63,15 +63,15 @@ Adobe建议使用提供的[Apache HttpComponents Client 4.x库](https://hc.apach
 
 已知有效，但可能需要自己提供依赖关系的替代方案包括：
 
-* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)和/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html)(由AEM提供)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)和/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html)&#x200B;(由AEM提供)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)（不推荐，因为它已过时且已被版本4.x替换）
-* [确定Http](https://square.github.io/okhttp/)(AEM未提供)
+* [确定Http](https://square.github.io/okhttp/)&#x200B;(AEM未提供)
 
 除了提供超时之外，还应该对此类超时以及意外的HTTP状态代码进行正确处理。
 
 ## 处理请求速率限制 {#rate-limit-handling}
 
-当AEM传入请求的速率超过正常级别时，AEM将使用HTTP错误代码429响应新请求。 对AEM进行编程调用的应用程序可以考虑进行防御性编码，在几秒钟后使用指数回退策略重试。 2023年8月中旬之前，AEM使用HTTP错误代码503响应相同的条件。
+当AEM的传入请求率超过正常级别时，AEM将使用HTTP错误代码429响应新请求。 对AEM进行编程调用的应用程序可以考虑进行防御性编码，在几秒钟后使用指数回退策略重试。 2023年8月中旬之前，AEM使用HTTP错误代码503响应相同的条件。
 
 ## 无经典UI自定义 {#no-classic-ui-customizations}
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service仅支持第三方客户代码的Touch UI。 经典UI不�
 
 ## 无反向复制代理 {#no-reverse-replication-agents}
 
-AEM as a Cloud Service不支持从Publish反向复制到创作。 如果需要此类策略，您可以使用外部持久性存储，该存储在Publish实例的场中共享，并可能在Author集群中共享。
+AEM as a Cloud Service不支持从“发布”到“创作”的反向复制。 如果需要此类策略，您可以使用外部持久性存储，该存储在Publish实例的场中共享，并可能在Author集群中共享。
 
 ## 可能需要移植转发复制代理 {#forward-replication-agents}
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service不支持从Publish反向复制到创作。 如果需要�
 
 对于本地开发，日志条目将写入`/crx-quickstart/logs`文件夹中的本地文件。
 
-在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **设置日志级别**
 
@@ -172,7 +172,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 本地开发 {#local-development}
 
-对于本地开发，开发人员具有对CRXDE Lite(`/crx/de`)和AEM Web控制台(`/system/console`)的完全访问权限。
+对于本地开发，开发人员具有对CRXDE Lite (`/crx/de`)和AEM Web控制台(`/system/console`)的完全访问权限。
 
 在本地开发(使用SDK)中，`/apps`和`/libs`可以直接写入，这与那些顶级文件夹不可变的云环境不同。
 
@@ -183,13 +183,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >
 
 >[!NOTE]
->一些客户将可以选择为AEM Cloud Service Developer Console试用经过改进的体验。 有关详细信息，请参阅[本文](/help/implementing/developing/introduction/aem-developer-console.md)。
+>某些客户将可以选择为AEM Cloud Service Developer Console试用经过改进的体验。 有关详细信息，请参阅[本文](/help/implementing/developing/introduction/aem-developer-console.md)。
 
 客户可以在创作层的开发环境中访问CRXDE Lite，但不能在暂存或生产环境中访问。 运行时无法写入不可变存储库(`/libs`， `/apps`)，因此尝试这样做会导致错误。
 
 相反，存储库浏览器可以从AEM as a Cloud Service Developer Console启动，为创作、发布和预览层上的所有环境提供到存储库的只读视图。 有关详细信息，请参阅[存储库浏览器](/help/implementing/developing/tools/repository-browser.md)。
 
-AEM as a Cloud Service Developer Console中为RDE、开发、暂存和生产环境提供了一组用于调试AEM as a Cloud Service开发人员环境的工具。 可以通过调整Author或Publish服务URL来确定URL，如下所示：
+AEM as a Cloud Service Developer Console中为RDE、开发、暂存和生产环境提供了一组用于调试AEM as a Cloud Service开发人员环境的工具。 可以通过调整创作或发布服务URL来确定URL，如下所示：
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -215,11 +215,11 @@ AEM as a Cloud Service Developer Console具有一个指向Explain查询工具的
 
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于生产程序，对AEM as a Cloud Service Developer Console的访问权限由Adobe Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，AEM as a Cloud Service Developer Console可供任何拥有产品配置文件的用户访问AEM as a Cloud Service。 对于所有程序，状态转储和存储库浏览器需要“Cloud Manager — 开发人员角色”，您还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义用户，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=zh-Hans)。
+对于生产程序，对AEM as a Cloud Service Developer Console的访问权限由Adobe Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，AEM as a Cloud Service Developer Console可供任何拥有产品配置文件的用户访问AEM as a Cloud Service。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且存储库浏览器和用户还必须在AEM Users或AEM Administrators产品配置文件中，在创作和发布服务上定义，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### 性能监控 {#performance-monitoring}
 
-Adobe监视应用性能并在出现性能恶化时采取措施解决此问题。 此时，无法观察应用程序量度。
+Adobe监控应用程序性能，并在出现性能下降时采取措施解决此问题。 此时，无法观察应用程序量度。
 
 ## 发送电子邮件 {#sending-email}
 
@@ -239,13 +239,13 @@ Adobe监视应用性能并在出现性能恶化时采取措施解决此问题。
 
 ### 发送电子邮件 {#sending-emails}
 
-应使用[Day CQ邮件服务OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
+应使用[Day CQ邮件服务OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
 
 ### 配置 {#email-configuration}
 
-AEM中的电子邮件应使用[Day CQ邮件服务OSGi服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans#configuring-the-mail-service)发送。
+AEM中的电子邮件应使用[Day CQ邮件服务OSGi服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)发送。
 
-有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans)。 对于AEM as a Cloud Service，请注意对`com.day.cq.mailer.DefaultMailService OSGI`服务的以下必要调整：
+有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 对于AEM as a Cloud Service，请注意对`com.day.cq.mailer.DefaultMailService OSGI`服务的以下必要调整：
 
 * SMTP服务器主机名应设置为$[env：AEM_PROXY_HOST；default=proxy.tunnel]
 * 在配置高级联网时，SMTP服务器端口应设置为API调用中使用的portForwards参数中设置的原始代理端口的值。 例如，30465（而不是465）
@@ -307,4 +307,4 @@ Caused by: com.mongodb.MongoWriteException: Resulting document after update is l
 
 ## [!DNL Assets]开发准则和用例 {#use-cases-assets}
 
-要了解Assetsas a Cloud Service的开发用例、建议和参考资料，请参阅[Assets开发人员参考资料](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
+要了解Assets as a Cloud Service的开发用例、建议和参考资料，请参阅[Assets开发人员参考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。

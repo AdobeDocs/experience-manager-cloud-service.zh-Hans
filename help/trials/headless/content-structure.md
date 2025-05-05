@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="启动模型控制台"
 >abstract="让我们探讨如何在 Adobe Experience Manager as a Cloud Service 中为您的内容创建一个可重复使用的架构，即内容片段模型。观看视频以了解为什么这一步很重要。<br><br>在本学习单元中，您会以一个旅游网站为例，演练如何创建一个展示旅行的模型。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
->additional-url="https://video.tv.adobe.com/v/3436550?captions=chi_hans" text="内容结构介绍视频"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="内容结构介绍视频"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
