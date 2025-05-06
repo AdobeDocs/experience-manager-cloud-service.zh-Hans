@@ -3,9 +3,7 @@ title: 如何在AEM中创作表单？
 description: 了解Adobe Experience Manager (AEM)中可用的各种表单创作平台，以及如何根据您的要求选择正确的平台。
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: f6c6b4c17482eb519fb0d4287704d775d0a5da00
+source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 7%
@@ -44,7 +42,7 @@ AEM支持多种创作方法，每种方法都适合不同的用户需求、技�
 * [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md)： Edge Delivery Services Forms改变了表单的创作、执行和处理方式。 使用 Edge Delivery Services，组织可以快速、安全地创建高度可用的数字化表单，通过快速开发环境提升用户体验和运营效率。您可以通过两种方式创作Edge Delivery Services Forms：
    * [WYSIWYG创作](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：使用通用编辑器创建可视、拖放的表单，非常适合技术知识有限的内容作者。 使用Universal Editor创作的Forms交付使用Edge Delivery Services，以实现快速、轻量级的渲染。
    * [基于文档的创作](/help/edge/docs/forms/tutorial.md)：使用Microsoft Excel或Google Sheets等工具定义表单结构和内容。 此方法对于偏好使用电子表格驱动输入的业务用户非常有用。 这些表单通常通过Edge Delivery Services发布，适用于轻量、高容量的用例。
-* [Headless创作](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：使用API对任何前端(例如React、Angular、移动应用程序或信息亭)将表单渲染为JSON，而不依赖于AEM。 目前，仅核心组件支持Headless投放。 Headless表单非常适用于全渠道用例，并且在AEM页面渲染之外单独使用，使其灵活适用于自定义前端部署。
+* [Headless创作](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：使用API对任何前端(例如React、Angular、移动应用程序或信息亭)将表单渲染为JSON，而不依赖于AEM。 目前，仅核心组件支持Headless投放。 Headless表单非常适用于全渠道用例，并且在AEM页面渲染之外单独使用，使其灵活适用于自定义前端部署。
 
 ### AEM表单创作方法的比较分析
 
