@@ -4,10 +4,10 @@ description: 了解如何在通用编辑器中创建表单片段并将其添加�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
+source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 90%
    ![创建片段](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    现在会出现&#x200B;**创建自适应表单片段**&#x200B;向导。
-1. 从&#x200B;**选择模板**&#x200B;选项卡中选择基于 Egde Delivery Services 的模板，然后单击&#x200B;**[!UICONTROL 下一步]**。
+1. 从&#x200B;**选择模板**&#x200B;选项卡中选择基于Edge Delivery Services的模板，然后单击&#x200B;**[!UICONTROL 下一步]**。
    ![选择 Edge Delivery Services 模板](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 指定片段的标题、名称、描述和标记。确保为片段指定唯一的名称。如果存在另一个同名的片段，该片段创建就会失败。
@@ -123,7 +123,7 @@ ht-degree: 90%
 
    ![导航到该部分](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**组件。
    ![添加表单片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    如果您选择了&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件，片段就会添加到您的表单中。您可以打开已添加片段的&#x200B;**属性**，对其进行配置。例如，在片段的&#x200B;**属性**&#x200B;中隐藏其标题。
