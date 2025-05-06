@@ -4,9 +4,9 @@ description: 了解“生成变体”，该功能可通过 AEM as a Cloud Servic
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
+source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1372'
 ht-degree: 98%
 
 ---
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->有关AEM[&#128279;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)中生成变体的详细信息，请参阅安全资料单。
+>请参阅[关于在 AEM 中生成变体的详细信息的安全情况说明书](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)。
 
 ## 概述 {#overview}
 
@@ -323,6 +323,9 @@ The brand score shows you how on-brand the generated variation is.
 
 * [GenAI 在 GitHub 上生成变体](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 试验](https://www.aem.live/docs/experimentation)
+* [Experience Cloud产品中的创作AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+   * [Experience Cloud产品中的创作AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## 版本历史记录 {#release-history}
 
