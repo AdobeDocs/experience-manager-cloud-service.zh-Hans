@@ -4,7 +4,7 @@ description: 了解如何将 CDN 配置添加到 Edge Delivery Site或删除 Edg
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
+source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 76%
@@ -65,7 +65,9 @@ ht-degree: 76%
 
 使用`/program/{programId}/site/{siteId}` API端点在Helix 4和Helix 5之间迁移Edge Delivery站点。
 
-无法将Helix 4网站的CDN配置自动迁移到Helix 5。 存在此限制是因为客户生产站点可能仍在Helix 4上运行，而其Helix 5版本仍在开发中。
+>[!IMPORTANT]
+>
+>无法将Helix 4网站的CDN配置自动迁移到Helix 5。 存在此限制是因为客户生产站点可能仍在Helix 4上运行，而其Helix 5版本仍在开发中。
 
 **前提条件**
 
