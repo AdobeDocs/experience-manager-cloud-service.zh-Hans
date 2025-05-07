@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
+source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1595'
 ht-degree: 28%
 
 ---
@@ -84,7 +84,7 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 #### 迁移到使用Java 21或Java 17进行构建的先决条件 {#prereq-for-building}
 
-要迁移到使用Java 21或Java 17的构建环境，您必须首先升级到最新的SonarQube版本。 有关详细信息，请参阅[Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/current.md#what-is-new)的发行说明。
+要使用Java 21或Java 17进行构建，Cloud Manager现在使用与这些Java版本兼容的SonarQube 9.9。 此更改已在Cloud Manager 2025.1.0版中引入。无需客户执行任何操作即可升级SonarQube。 有关更多详细信息以及所做的更改，请参阅[Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)发行说明。
 
 将应用程序迁移到新的Java内部版本和运行时版本时，请先在开发和暂存环境中进行全面测试，然后再部署到生产环境。
 
