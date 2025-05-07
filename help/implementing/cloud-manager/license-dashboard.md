@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户
 
 >[!IMPORTANT]
 >
->许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
+>许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
 >
 >要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
@@ -56,7 +56,7 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 
 >[!TIP]
 >
->要了解如何从Admin Console管理整个组织的Adobe权利，请参阅[Admin Console概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
+>要了解如何从Admin Console管理整个组织中的Adobe权限，请参阅[Admin Console概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
 
 ## 查看使用情况详细信息 {#view-usage-details}
 
@@ -100,18 +100,18 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## 常见问题解答 {#faq}
 
-+++**什么是内容请求？** {#what-is-a-content-request}
++++**什么是内容请求？**{#what-is-a-content-request}
 
 内容请求是指定向到AEM Sites或客户提供的缓存系统（如内容交付网络）的任何请求。 它会为页面查看检索HTML格式的内容或数据。 或者，采用JSON格式进行API调用。
 
 每个页面视图或每五个 API 调用计算一个内容请求，在第一个接收内容请求的缓存系统入口测量。 内容请求仅按生产环境计算。
 
-Content Request不包括仅出于提供产品和服务的目的而由Adobe发起或代表用户发起的请求或活动。 Adobe 识别的用户代理流量也不包括与常见搜索引擎和社交媒体服务相关的机器人、爬虫和蜘蛛。
+内容请求不包括仅出于提供产品和服务的目的而由Adobe或其代表发起的请求或活动。 Adobe 识别的用户代理流量也不包括与常见搜索引擎和社交媒体服务相关的机器人、爬虫和蜘蛛。
 
 另请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
-+++**Adobe Experience Manager如何度量内容请求？** {#how-are-content-requests-measured}
++++**Adobe Experience Manager如何度量内容请求？**{#how-are-content-requests-measured}
 
 内容请求在 AEM as a Cloud Service 的边缘服务器进行跟踪。 源站流量不计入内容请求。 AEM as a Cloud Service 中内置的 CDN 跟踪有效的 HTML 和 JSON 请求。
 
@@ -120,18 +120,18 @@ AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷�
 另请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
-+++**为什么我的Analytics报告显示的结果与AEM内容请求不同？** {#why-are-reports-different}
++++**为什么我的Analytics报告显示的结果与AEM内容请求不同？**{#why-are-reports-different}
 
 内容请求可能与组织的Analytics报告工具不同。 有关详细信息，请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
-+++**如果我想了解有关我的内容请求卷的更多信息，该怎么办？** {#current-request-volumes}
++++**如果我想了解有关我的内容请求卷的更多信息，该怎么办？**{#current-request-volumes}
 
-如果您想进一步了解许可证仪表板中显示的内容请求量，您的Adobe团队可以提供一个报表，其中显示内容请求的主要数量驱动因素。 请联系您的Adobe团队或Adobe客户支持以请求最佳使用报告。
+如果您想进一步了解许可证仪表板中显示的内容请求量，您的Adobe团队可以提供一个报表，其中显示内容请求的主要数量驱动因素。 联系您的Adobe团队或Adobe客户支持以请求主要使用情况报表。
 +++
 
-+++**如果我使用自己的CDN怎么办？** {#using-own-cdn}
++++**如果我使用自己的CDN怎么办？**{#using-own-cdn}
 
-许可证仪表板仅显示Cloud ServiceCDN跟踪的数据。 如果您选择使用自己的CDN (BYOCDN)，请按照合同中的规定每年向Adobe报告您的内容请求量。
+许可证仪表板仅显示Cloud Service CDN跟踪的数据。 如果您选择使用自己的CDN (BYOCDN)，则按照合同中的规定，每年向Adobe报告您的内容请求量。
 +++
 
