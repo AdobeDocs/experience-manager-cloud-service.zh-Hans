@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1698'
 ht-degree: 29%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### Experience Manager {#experience-manager}
 
-选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)之类的工具。
+选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之类的工具。
 
 ![“全局导航”按钮](assets/global-navigation.png)
 
@@ -116,6 +116,8 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 ### 通用编辑器工具栏 {#universal-editor-toolbar}
 
 通用编辑器工具栏始终位于屏幕顶部[Experience Cloud标题](#experience-cloud-header)的正下方。 通过它，可快速导航到其他页面以编辑和发布当前页面。
+
+根据程序的配置，它还可以显示管理员已作为扩展启用的[其他功能。](#additional-toolbar-buttons)
 
 ![通用编辑器工具栏](assets/universal-editor-toolbar.png)
 
@@ -217,8 +219,9 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 通用编辑器提供了可自定义且可扩展的创作体验。 如果您在工具栏中看到其他按钮，则表示您的通用编辑器已扩展。
 
+* 有关单个扩展如何工作的详细信息，[请参阅Universal Editor创作文档。](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
 * 有关扩展可能性的详细信息，请参阅[扩展通用编辑器](/help/implementing/universal-editor/extending.md)。
-* 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
+* 有关如何安装单个扩展的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
 
 ### 编辑器 {#editor}
 

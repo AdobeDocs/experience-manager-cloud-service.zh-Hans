@@ -3,13 +3,13 @@ title: 扩展通用编辑器
 description: 了解用于扩展Universal Editor功能以支持内容作者需求的不同选项。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0cab4a807be4aa402667feddb6a948f0d2db371f
+exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
+source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # 扩展通用编辑器 {#extending}
 
@@ -23,6 +23,12 @@ ht-degree: 0%
 
 作为Adobe Experience Cloud服务，可以使用App Builder和Experience Manager扩展通用编辑器的UI。 Adobe提供了许多可用于项目的现成扩展。
 
+* **[AEM多站点管理(MSM)扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**：在组件级别中断或恢复继承
+* **[AEM页面属性扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**：在通用编辑器中访问该页面的页面属性窗口
+* **[AEM站点管理扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**：打开站点控制台，以在通用编辑器中访问页面的位置
+* **[AEM页面锁定扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**：从通用编辑器查看和更改页面锁定状态
+* **[AEM Workflows扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**：从通用编辑器启动页面工作流和页面内容
+* **[AEM Universal Editor开发登录扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**：在本地开发时轻松验证本地AEM SDK
 * **[通用编辑器的AEM产品选取器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**：通过选择编辑器中的产品数据或删除产品数据来集成Adobe Commerce数据。
 * **[通用编辑器内容草稿](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**：创建、编辑和管理多个内容草稿。
 * **[可配置的资产选取器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**：启用从已编辑页面使用的存储库以外的存储库中选择资产。
@@ -42,7 +48,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
+>如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
 
 [在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以为每个实例启用或禁用扩展，访问Adobe的第一方扩展（包括通用编辑器的第一方扩展）等等。
 

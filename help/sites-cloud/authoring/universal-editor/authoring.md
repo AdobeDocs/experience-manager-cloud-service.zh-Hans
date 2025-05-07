@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 32%
+source-wordcount: '2133'
+ht-degree: 21%
 
 ---
 
@@ -192,6 +192,122 @@ ht-degree: 32%
 
 在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
 
+## 编辑组件继承 {#inheritance}
+
+继承是一种机制，通过该机制，可以链接内容，以便更改一个内容会自动更改另一个内容。
+
+使用通用编辑器，您可以通过简单地更新内容来取消内容的继承。 编辑器会自动禁用作者在该页面上所做所有更改的继承，确保在从Blueprint同步更新时保留修改的内容。
+
+如果您的程序启用了&#x200B;**AEM多站点管理(MSM)扩展**，则您有[额外的工具栏选项](#inheritance-extension)来查看和更改通用编辑器中单个组件的继承状态。
+
+有关使用通用编辑器继承如何工作的更多详细信息，请参阅通用编辑器中的[内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。
+
+
+## 可选工具栏选项{#toolbar-options}
+
+附加功能可作为通用编辑器的扩展使用，以帮助您进一步管理页面和内容。 [这些扩展必须由管理员在程序中启用](/help/implementing/universal-editor/extending.md)，然后才能在[通用编辑器工具栏中作为内容作者显示给您。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+### 继承 {#inheritance-extension}
+
+**AEM多站点管理(MSM)扩展**&#x200B;显示所选组件的当前继承状态，并允许您[中断或恢复继承。](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+通用编辑器工具栏中的&#x200B;**安装的继承**&#x200B;图标显示继承对于所选组件仍然有效。
+
+![已安装继承图标](assets/inheritance-installed-icon.png)
+
+点击或单击图标可中断选定组件的继承。 如果编辑组件，继承会自动中断。
+
+**继承中断**&#x200B;图标显示选定组件的继承已中断。
+
+![继承中断图标](assets/inheritance-broken-icon.png)
+
+点击或单击图标可恢复所选组件的继承。 您需要重新加载页面以刷新内容以显示继承的内容。
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**安装的继承**&#x200B;和&#x200B;**继承中断**&#x200B;图标仅在选择组件并且该页面基于Blueprint时显示。
+
+>[!NOTE]
+>
+>**AEM多站点管理(MSM)扩展**&#x200B;仅适用于页面，不适用于内容片段。
+
+### 访问页面属性 {#page-properties}
+
+**AEM页面属性扩展**&#x200B;允许快速访问当前编辑的页面的[页面属性窗口](/help/sites-cloud/authoring/sites-console/page-properties.md)。
+
+![页面属性图标](assets/page-properties-icon.png)
+
+点按或单击通用编辑器工具栏中的&#x200B;**页面属性**&#x200B;图标，在新的浏览器选项卡中打开该页面的页面属性。
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**AEM页面属性扩展**&#x200B;仅适用于页面，不适用于内容片段。
+
+### 访问站点控制台 {#sites-console}
+
+**AEM站点管理扩展**&#x200B;允许快速访问AEM的[站点控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中正在编辑的页面，从而允许您在控制台中导航站点树或执行页面级操作。
+
+![在网站管理员图标中打开](assets/open-in-site-admin-icon.png)
+
+点按或单击图标可在新的浏览器选项卡中打开站点控制台，导航到编辑器中当前的页面。
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### 锁定和解锁页面 {#locking-pages}
+
+**AEM Page Lock扩展**&#x200B;在编辑器中显示页面的当前锁定状态，并允许您[锁定或解锁页面。](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+通用编辑器工具栏中的&#x200B;**已解锁**&#x200B;图标显示编辑器中当前未锁定页面。
+
+![解锁图标](assets/unlocked-icon.png)
+
+点击或单击图标可锁定页面。
+
+通用编辑器工具栏中的&#x200B;**已锁定**&#x200B;图标显示当前在编辑器中的页面已锁定。 将鼠标悬停在图标上可查看工具提示，指示锁定页面的用户。
+
+![锁定的图标](assets/locked-icon.png)
+
+如果您是锁定页面的用户，请点击或单击图标以解锁该页面。
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**AEM Page Lock扩展**&#x200B;仅适用于页面，不适用于内容片段。
+
+### 工作流 {#workflows}
+
+**AEM Workflows扩展**&#x200B;允许您[在编辑器的当前页面上启动工作流](/help/sites-cloud/authoring/workflows/overview.md)。
+
+![工作流图标](assets/workflows-icon.png)
+
+点按或单击通用编辑器工具栏中的&#x200B;**工作流**&#x200B;图标以打开&#x200B;**启动工作流**&#x200B;模式。 该窗口列出了可应用工作流的可能内容。
+
+![启动工作流模式](assets/start-a-workflow.png)
+
+1. 在&#x200B;**工作流模型**&#x200B;下拉列表中，选择要应用的工作流。
+1. 在&#x200B;**名称**&#x200B;字段中提供工作流的描述。
+1. 在要包含在工作流&#x200B;**列表中的**&#x200B;内容中，使用复选框定义要包含在工作流中的内容。
+1. 点按或单击&#x200B;**启动工作流**&#x200B;启动工作流，或者点按或单击&#x200B;**关闭**&#x200B;中止。
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### 开发人员登录 {#developer-login}
+
+**AEM Universal Editor开发登录扩展**&#x200B;对于在本地进行开发的开发人员很有用，它提供了一种便捷的方式来验证本地AEM SDK以进行测试。
+
+![开发人员登录图标](assets/developer-login-icon.png)
+
+点按或单击Universal Editor工具栏中的&#x200B;**开发人员登录**&#x200B;图标，提供用于登录本地AEM SDK的本地登录凭据。
+
+![开发人员登录模式](assets/developer-login.png)
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+
 ## 其他资源 {#additional-resources}
 
 要了解如何使用通用编辑器发布内容，请参阅此文档。
@@ -205,11 +321,3 @@ ht-degree: 32%
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。
-
-## 编辑组件继承 {#inheritance}
-
-继承是一种机制，通过该机制，可以链接内容，以便更改一个内容会自动更改另一个内容。
-
-使用通用编辑器，您可以通过简单地更新内容来取消内容的继承。 编辑器会自动禁用作者在该页面上所做所有更改的继承，确保在从Blueprint同步更新时保留修改的内容。
-
-有关使用通用编辑器继承如何工作的更多详细信息，请参阅通用编辑器中的[内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。
