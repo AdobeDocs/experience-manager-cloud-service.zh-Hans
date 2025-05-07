@@ -4,9 +4,9 @@ description: 了解 AEM as a Cloud Service 团队和产品配置文件可怎样�
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: ht
-source-wordcount: '2062'
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
+workflow-type: tm+mt
+source-wordcount: '2124'
 ht-degree: 100%
 
 ---
@@ -143,11 +143,10 @@ AEM 组织级产品实例内部有一个名为 AEM 组织级报告器的产品�
         <td>AEM Assets 协作者用户</td>
         <td>
         <ul>
-                <li>用于对 DAM 进行只读访问。此产品配置文件中的用户将成为 AEM 中自动创建的“投稿人”AEM 组的成员。
+                <li>通过集成您的组织在其他 Adobe 产品和非 Adobe 应用程序中可用的资产，使用 Experience Manager 中的资产。
                 </li>
-                <li>
-                此外，它还提供 Adobe Express 权限，以创建资产变体。
-                </li>
+                <li>使用内置的 Adobe Express 和 Firefly，利用专业设计的模板、品牌套件、Adobe Stock 资产等来创建和编辑资产。</li>
+                <li>通过 AEM Assets Content Hub 门户，访问并利用您组织中已批准的资产。</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ AEM 组织级产品实例内部有一个名为 AEM 组织级报告器的产品�
         <td>AEM Assets 高级用户</td>
 <td>
         <ul>
-                <li>用于对 DAM 进行只读访问。此产品配置文件中的用户将成为 AEM 中自动创建的“投稿人”AEM 组的成员。
+                <li>访问所有 AEM Assets 功能，包括管理资产、元数据以及围绕数字资产的全面治理和自动化。</li>
+                <li>通过集成您的组织在其他 Adobe 产品和非 Adobe 应用程序中可用的资产，使用 Experience Manager 中的资产。
                 </li>
-                <li>
-                此外，它还提供 Adobe Express 权限，以创建资产变体。
-                </li>
+                <li>使用内置的 Adobe Express 和 Firefly，利用专业设计的模板、品牌套件、Adobe Stock 资产等来创建和编辑资产。</li>
+                <li>通过 AEM Assets Content Hub 门户，访问并利用您组织中已批准的资产。</li>
           <ul>
 </td>
     </tr>
