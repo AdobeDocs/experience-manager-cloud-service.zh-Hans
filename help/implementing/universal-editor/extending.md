@@ -4,9 +4,9 @@ description: 了解用于扩展Universal Editor功能以支持内容作者需求
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 0%
 * **[AEM页面锁定扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**：从通用编辑器查看和更改页面锁定状态
 * **[AEM Workflows扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**：从通用编辑器启动页面工作流和页面内容
 * **[AEM Universal Editor开发登录扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**：在本地开发时轻松验证本地AEM SDK
+* **[生成变体](/help/generative-ai/generate-variations-integrated-editor.md)**：使用生成人工智能(AI)直接在属性面板中为您的内容创建变体。
 * **[通用编辑器的AEM产品选取器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**：通过选择编辑器中的产品数据或删除产品数据来集成Adobe Commerce数据。
 * **[通用编辑器内容草稿](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**：创建、编辑和管理多个内容草稿。
 * **[可配置的资产选取器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**：启用从已编辑页面使用的存储库以外的存储库中选择资产。
@@ -48,7 +49,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
+>如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
 
 [在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以为每个实例启用或禁用扩展，访问Adobe的第一方扩展（包括通用编辑器的第一方扩展）等等。
 

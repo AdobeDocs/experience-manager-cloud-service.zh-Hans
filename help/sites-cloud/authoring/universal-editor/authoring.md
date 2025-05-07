@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 21%
+source-wordcount: '2222'
+ht-degree: 20%
 
 ---
 
@@ -178,14 +178,6 @@ ht-degree: 21%
 >
 >如果目标容器[组件筛选器](/help/implementing/universal-editor/filtering.md)允许所选组件，则组件只能在容器之间移动。
 
-### 使用带有“生成变体”的GenAI创建变体 {#generate-variations-ai}
-
-使用创新型变体来利用创新型人工智能加快内容创建。
-
-打开通用编辑器以查找生成变体的入口点。
-
-请参阅[生成变体 — 集成在AEM编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)以了解详情。
-
 ## 预览内容 {#previewing-content}
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
@@ -202,8 +194,7 @@ ht-degree: 21%
 
 有关使用通用编辑器继承如何工作的更多详细信息，请参阅通用编辑器中的[内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。
 
-
-## 可选工具栏选项{#toolbar-options}
+## 可选工具栏功能 {#toolbar-options}
 
 附加功能可作为通用编辑器的扩展使用，以帮助您进一步管理页面和内容。 [这些扩展必须由管理员在程序中启用](/help/implementing/universal-editor/extending.md)，然后才能在[通用编辑器工具栏中作为内容作者显示给您。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
@@ -305,6 +296,20 @@ ht-degree: 21%
 点按或单击Universal Editor工具栏中的&#x200B;**开发人员登录**&#x200B;图标，提供用于登录本地AEM SDK的本地登录凭据。
 
 ![开发人员登录模式](assets/developer-login.png)
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+## 可选属性面板功能 {#properties-panel-options}
+
+附加功能可作为通用编辑器的扩展使用，以帮助您进一步管理页面内容。 [这些扩展必须由管理员在程序中启用](/help/implementing/universal-editor/extending.md)，然后才能在[通用编辑器属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中作为内容作者显示给您。
+
+### 生成变体 {#generate-variations}
+
+**生成变体**&#x200B;扩展允许您使用生成人工智能(AI)直接在属性面板中为内容创建变体。
+
+![生成变体图标](assets/generate-variations-icon.png)
+
+点按或单击“通用编辑器”属性面板中的&#x200B;**生成变体**&#x200B;图标以接收推荐和创建变体。 有关生成变体的工作方式的更多详细信息，请参阅文档[生成变体 — 集成在AEM编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)。
 
 有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
 

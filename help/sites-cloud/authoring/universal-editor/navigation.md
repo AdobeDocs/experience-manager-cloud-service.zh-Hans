@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 29%
+source-wordcount: '1729'
+ht-degree: 28%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### Experience Manager {#experience-manager}
 
-选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)之类的工具。
+选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之类的工具。
 
 ![“全局导航”按钮](assets/global-navigation.png)
 
@@ -219,9 +219,9 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 通用编辑器提供了可自定义且可扩展的创作体验。 如果您在工具栏中看到其他按钮，则表示您的通用编辑器已扩展。
 
-* 有关单个扩展如何工作的详细信息，[请参阅Universal Editor创作文档。](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
-* 有关扩展可能性的详细信息，请参阅[扩展通用编辑器](/help/implementing/universal-editor/extending.md)。
-* 有关如何安装单个扩展的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
+* 有关单个扩展如何工作的详细信息，[请参阅Universal Editor创作文档。](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* 有关扩展可能性的详细信息，请参阅[扩展通用编辑器。](/help/implementing/universal-editor/extending.md)
+* 有关如何安装单个扩展的详细信息，请参阅[Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### 编辑器 {#editor}
 
@@ -236,6 +236,8 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 属性面板始终显示在编辑器的右侧。 根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
 
 ![属性面板](assets/properties-rail.png)
+
+根据程序的配置，它还可以显示管理员已作为扩展启用的[其他功能。](#additional-properties-panel-buttons)
 
 #### 属性模式 {#properties-mode}
 
@@ -315,12 +317,13 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 >
 >使用热键 `Shift+Backspace` 从容器中删除选定的组件。
 
-## 其他功能 {#additional-features}
+#### 其他按钮 {#additional-properties-panel-buttons}
 
-通用编辑器提供了可自定义且可扩展的创作体验。 如果在属性面板或工具栏中看到其他按钮或选项，则表示已扩展通用编辑器。
+通用编辑器提供了可自定义且可扩展的创作体验。 如果在属性面板中看到其他按钮，则表示已扩展通用编辑器。
 
-* 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器](/help/implementing/universal-editor/customizing.md)。
-* 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
+* 有关单个扩展如何工作的详细信息，[请参阅Universal Editor创作文档。](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* 有关扩展可能性的详细信息，请参阅[扩展通用编辑器。](/help/implementing/universal-editor/extending.md)
+* 有关如何安装单个扩展的详细信息，请参阅[Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## 后续步骤 {#next-steps}
 

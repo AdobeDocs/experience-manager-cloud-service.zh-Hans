@@ -4,10 +4,10 @@ description: 了解“生成变体”，该功能可通过 AEM as a Cloud Servic
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 98%
+source-wordcount: '1401'
+ht-degree: 95%
 
 ---
 
@@ -311,7 +311,10 @@ The brand score shows you how on-brand the generated variation is.
 
 ### 通过 AEM 通用编辑器访问 {#access-aem-universal-editor}
 
-通过 [AEM 通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)访问是作为一个扩展实施的。有关更多详细信息，请参阅 [AEM Experience Manager 中的扩展管理器](https://developer.adobe.com/uix/docs/extension-manager/)。
+从[AEM通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)进行的访问已作为扩展实现。
+
+* 有关如何从通用编辑器访问生成变体的详细信息，请参阅文档[使用通用编辑器创作内容。](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* 有关如何启用扩展的详细信息，请参阅文档[AEM Experience Manager中的Extension Manager。](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### 通过 AEM 内容片段编辑器访问 {#access-aem-content-fragment-editor}
 
@@ -323,9 +326,9 @@ The brand score shows you how on-brand the generated variation is.
 
 * [GenAI 在 GitHub 上生成变体](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 试验](https://www.aem.live/docs/experimentation)
-* [Experience Cloud产品中的创作AI](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud产品中的创作AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud产品中的创作AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud产品中的创作AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## 版本历史记录 {#release-history}
 
