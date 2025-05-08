@@ -1,12 +1,13 @@
 ---
-title: 适用于 AEM Forms 的 Edge Delivery Services 快速入门。创建表单。
-description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文档的创作 = 速度极快、SEO 友好的表单，让用户更加满意，搜索引擎更加优异。
+title: 使用自适应Forms块创建表单
+description: 开始使用适用于AEM Forms的Edge Delivery Services。 快速制作完美的表单！AEM Forms Edge Delivery基于文档的创作=速度飞快，采用SEO友好的表单，可提供更开心的用户和搜索引擎。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 04fb65b4ec2d8bf6f54e1927469cda4bf94cbec8
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 98%
+source-wordcount: '784'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +26,7 @@ AEM Forms Edge Delivery 提供了一个称为 Adaptive Forms Block 的区块，�
 
 在开始之前，请确保您已完成以下步骤：
 
-* [使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [将自适应表单区块添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并克隆本地计算机上相应的 GitHub 存储库。
+* [使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)[将 Adaptive Forms Block 添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并克隆本地计算机上相应的 GitHub 存储库。
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅[如何使用 SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
@@ -112,7 +113,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 +++
 
-+++ 步骤2：使用Edge Delivery Services页面预览表单。
++++ 步骤 2：使用 Edge Delivery Service 页面预览表单。
 
 
 到目前为止，您已经准备好了表单的结构。现在，要预览表单，请执行以下操作：
@@ -125,7 +126,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. 移至文档中要添加表单的所需位置。
 
-1. 创建表单区块来呈现表单。选择“插入”>“表格”，然后创建一个一列两行的表格。将表命名为“表单”并将预览 URL 粘贴到第二行中。确保 URL 的格式为超链接，而不是纯文本，如下所示：
+1. 创建 Forms Block 来呈现表单。选择“插入”>“表格”，然后创建一个一列两行的表格。将表命名为“表单”并将预览 URL 粘贴到第二行中。确保 URL 的格式为超链接，而不是纯文本，如下所示：
 
    | 表单 |
    |---|
