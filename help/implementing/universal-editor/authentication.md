@@ -4,10 +4,10 @@ description: 了解 Universal Editor 如何使用 Adob​​e 的 Identity Manag
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 100%
+source-wordcount: '191'
+ht-degree: 93%
 
 ---
 
@@ -31,3 +31,7 @@ Universal Editor 使用 Adobe Identity Management System (IMS) 身份验证（�
 当用户执行 CRUD 操作时，将使用 HTTP 标头中的 IMS 持有者令牌向 Universal Editor Service 发送调用。随后，Universal Editor Service 使用持有者令牌对 AEM 后端系统的请求进行身份验证，以用户的名义执行操作。
 
 ![标准身份验证流程](assets/standard-flow.png)
+
+此图和文章描述了通用编辑器本身的内部身份验证。
+
+{{ue-headless-auth}}

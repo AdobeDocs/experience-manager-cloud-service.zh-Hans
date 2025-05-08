@@ -4,7 +4,7 @@ description: 使用SecurBank应用程序了解具有实践经验的通用编辑�
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 先决条件 {#prerequisites}
 
-* 您必须分配给&#x200B;**AEM管理员** [产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)，才能安装SecurBank应用。
+* 您必须分配给&#x200B;**AEM管理员** [产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)，才能安装SecurBank应用程序。
 * 您必须安装[Node.js](https://nodejs.org)版本20或更高版本，才能进行本地开发。
 
 ## 安装SecurBank {#installation}
@@ -66,7 +66,7 @@ SecurBank应用程序的安装很简单，但由于涉及AEM as a Cloud Service�
 
 ### 运行管道以部署SecurBank AEM项目。 {#run-pipeline}
 
-将SecurBank的AEM项目提交到沙盒存储库后，便可以部署管道了。
+将SecurBank的AEM项目提交到沙盒存储库后，即可使用管道部署该存储库。
 
 1. 返回到Cloud Manager中沙盒程序的&#x200B;**概述**&#x200B;选项卡，并运行全栈非生产管道。
 
@@ -137,3 +137,6 @@ SecurBank应用程序的安装很简单，但由于涉及AEM as a Cloud Service�
 如果内容尚未显示，请确保已成功完成您运行的&#x200B;**部署到开发**&#x200B;管道。
 
 浏览器中的![SecurBank应用](assets/securbank.png)
+
+{{ue-headless-auth}}
+

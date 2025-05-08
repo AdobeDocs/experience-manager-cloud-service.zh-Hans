@@ -4,7 +4,7 @@ description: 了解通用编辑器的主要用例，以及如何最好地了解�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -55,6 +55,8 @@ ht-degree: 0%
 * [用于通用编辑器的SecurBank示例应用程序](/help/implementing/universal-editor/securbank.md)
 
 阅读本文档后，您可以返回本页以了解WYSIWYG创作用例以及通用编辑器的常规工作方式。
+
+{{ue-headless-auth}}
 
 ## 通用编辑器的工作方式 {#how-ue-works}
 

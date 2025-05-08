@@ -4,7 +4,7 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 40%
@@ -178,6 +178,8 @@ data-aue-resource="urn:<referenceName>:<resource>"
 您的应用程序现已插桩，可以使用 Universal Editor 了！
 
 请参阅[使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)，了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
+
+{{ue-headless-auth}}
 
 ## 其他资源 {#additional-resources}
 
