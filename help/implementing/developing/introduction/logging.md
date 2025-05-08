@@ -4,9 +4,9 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
+source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2546'
 ht-degree: 9%
 
 ---
@@ -99,6 +99,10 @@ AEM as a Cloud Service提供对Java log语句的访问。 AEM应用程序的开�
 
 AEM日志级别是通过OSGi配置为每个环境类型设置的，这反过来会提交到Git，并通过Cloud Manager部署到AEM as a Cloud Service。 因此，最好保持日志语句一致且对于环境类型是众所周知的，以确保通过AEM as Cloud Service提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
 
+>[!NOTE]
+>
+>为确保有效监控客户环境，请勿更改默认日志级别。 此外，请勿修改默认日志记录格式。 日志输出必须保持定向到默认文件。 有关具体准则，请参阅下面的[部分](#configuration-loggers)。
+
 **示例日志输出**
 
 ```
@@ -153,6 +157,19 @@ AEM Java日志被定义为OSGi配置，因此使用运行模式文件夹定位�
 | `org.apache.sling.commons.log.file` | 指定输出的目标： `logs/error.log` |
 
 更改其他LogManager OSGi配置属性可能会导致AEM as a Cloud Service中出现可用性问题。
+
+如上一节中所述，为确保有效监控客户环境，请执行以下操作：
+* AEM产品代码的Java日志必须保留其默认日志级别“INFO”，并且不得被自定义配置覆盖。
+* 对于产品代码，可以将日志级别设置为DEBUG ，但请谨慎使用它以防止性能下降，并在不再需要它时恢复到INFO。
+* 调整客户开发的代码的日志级别是可接受的。
+* AEM产品代码和客户开发的代码的所有日志都必须保持默认的记录格式。
+* 日志输出必须保持指向默认文件“logs/error.log”。
+
+为此，不得对以下OSGi属性进行更改：
+* **Apache Sling日志配置** (PID： `org.apache.sling.commons.log.LogManager`) — *所有属性*
+* **Apache Sling日志记录器配置** （工厂PID： `org.apache.sling.commons.log.LogManager.factory.config`）：
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
 
 以下是三种AEM as a Cloud Service环境类型的推荐日志记录配置示例（使用`com.example`的占位符Java包）。
 
