@@ -326,9 +326,9 @@ The brand score shows you how on-brand the generated variation is.
 
 * [GenAI 在 GitHub 上生成变体](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 试验](https://www.aem.live/docs/experimentation)
-* [Experience Cloud产品中的创作AI](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud产品中的创作AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud产品中的创作AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud产品中的创作AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## 版本历史记录 {#release-history}
 
