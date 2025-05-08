@@ -4,9 +4,9 @@ description: 了解用于扩展Universal Editor功能以支持内容作者需求
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 扩展名 {#extensions}
 
-作为Adobe Experience Cloud服务，可以使用App Builder和Experience Manager扩展通用编辑器的UI。 Adobe提供了许多可用于项目的现成扩展。
+作为Adobe Experience Cloud服务，可以使用App Builder和Experience Manager扩展通用编辑器的UI。 Adobe提供了许多通过[Extension Manager](https://experience.adobe.com/aem/extension-manager)提供的现成的扩展，您可以将其用于项目。
 
 * **[AEM多站点管理(MSM)扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**：在组件级别中断或恢复继承
 * **[AEM页面属性扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**：在通用编辑器中访问该页面的页面属性窗口
@@ -37,6 +37,8 @@ ht-degree: 0%
 * **[将内容片段导出到Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**：将在Adobe Experience Manager as a Cloud Service中创建的内容片段导出到Adobe Target，以在Target活动中用作选件，从而测试和大规模个性化体验。
 * **[内容片段工作流](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**：为选定的内容片段启动AEM工作流。
 
+有关如何启用这些扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 ## 扩展UI {#extending-ui}
 
 通用编辑器的UI扩展是使用Adobe App Builder构建的JavaScript应用程序。 使用这些相同的工具，您还可以将自己的按钮和操作添加到标题菜单和属性面板，并为通用编辑器创建自己的事件。
@@ -49,7 +51,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
+>如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
 
 [在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以为每个实例启用或禁用扩展，访问Adobe的第一方扩展（包括通用编辑器的第一方扩展）等等。
 

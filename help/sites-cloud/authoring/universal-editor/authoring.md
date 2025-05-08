@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 20%
@@ -214,7 +214,7 @@ ht-degree: 20%
 
 点击或单击图标可恢复所选组件的继承。 您需要重新加载页面以刷新内容以显示继承的内容。
 
-有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ ht-degree: 20%
 
 点按或单击通用编辑器工具栏中的&#x200B;**页面属性**&#x200B;图标，在新的浏览器选项卡中打开该页面的页面属性。
 
-有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ ht-degree: 20%
 
 点按或单击图标可在新的浏览器选项卡中打开站点控制台，导航到编辑器中当前的页面。
 
-有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### 锁定和解锁页面 {#locking-pages}
 
@@ -264,7 +264,7 @@ ht-degree: 20%
 
 如果您是锁定页面的用户，请点击或单击图标以解锁该页面。
 
-有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ ht-degree: 20%
 1. 在要包含在工作流&#x200B;**列表中的**&#x200B;内容中，使用复选框定义要包含在工作流中的内容。
 1. 点按或单击&#x200B;**启动工作流**&#x200B;启动工作流，或者点按或单击&#x200B;**关闭**&#x200B;中止。
 
-有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### 开发人员登录 {#developer-login}
 
@@ -297,7 +297,7 @@ ht-degree: 20%
 
 ![开发人员登录模式](assets/developer-login.png)
 
-有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 可选属性面板功能 {#properties-panel-options}
 
@@ -311,7 +311,7 @@ ht-degree: 20%
 
 点按或单击“通用编辑器”属性面板中的&#x200B;**生成变体**&#x200B;图标以接收推荐和创建变体。 有关生成变体的工作方式的更多详细信息，请参阅文档[生成变体 — 集成在AEM编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)。
 
-有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/)
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 其他资源 {#additional-resources}
 

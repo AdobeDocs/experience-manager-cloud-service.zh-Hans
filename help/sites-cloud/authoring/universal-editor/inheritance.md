@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,9 @@ MSM和启动项是功能强大的工具，可帮助您使用继承重用内容�
 
 如果已安装，**AEM多站点管理(MSM)扩展**&#x200B;将显示选定组件的当前继承状态，并允许您在组件级别中断或恢复继承。
 
-有关详细信息，请参阅[创作文档。](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+有关如何使用此扩展的更多信息，请参阅[创作文档。](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
+有关如何启用此扩展的信息，[请参阅Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 限制 {#limitations}
 
