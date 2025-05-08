@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.4.0 的发布日期是 2025 年
 
 参与 Cloud Manager 的早期采用计划，在即将推出的功能正式发布之前获得独家访问权。
 
-目前提供以下早期采用机会：
+目前有以下早期采用机会可用：
 
 ### 自带 Git：现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
