@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -187,7 +187,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->如果您使用[通用编辑器进行内容创作，](/help/implementing/universal-editor/introduction.md)，并且希望同时使用[IP允许列表，](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)，则您还必须[添加并应用具有通用编辑器服务IP地址的允许列表。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>如果您使用[通用编辑器进行内容创作，](/help/implementing/universal-editor/introduction.md)并且希望使用 [IP 允许列表，](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)您还必须[添加并应用一个包含通用编辑器服务 IP 地址的允许列表。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ ht-degree: 97%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 
