@@ -4,10 +4,10 @@ description: 详细了解 Assets Ultimate 的核心要点，例如主要优势�
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: ccd2334528ed7309c271d069209adec333de356c
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 97%
+source-wordcount: '902'
+ht-degree: 94%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
@@ -138,6 +138,6 @@ Assets as a Cloud Service 提供四种用户类型。每种用户类型提供一
 | AEM > 生产作者实例 > AEM 管理员 | − | − | − | ✓ |
 | **更多信息** | 请参阅[启用 Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | 请参阅[加入协作者用户](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | 请参阅[加入高级用户](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-有关如何开始使用 Assets Ultimate 的信息，请参阅[启用 AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md)。
+有关如何开始使用Assets Ultimate的信息，请参阅[启用AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md)。 如果现有AEM Assets用户有关于何时可以升级到Assets Ultimate的疑问，请联系您的Adobe客户代表。 您还可以看到[为现有客户启用Assets Ultimate](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers)以了解更多信息。
 
 AEM Assets 还为没有高级需求（例如 UI 可扩展性、API 驱动的自动化和自定义代码部署）的客户提供了一种更轻量级的 DAM。请参阅 [AEM Assets Prime](/help/assets/assets-prime.md) 以了解更多信息。
