@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 98%
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 # 代码片段 {#snippets}
@@ -222,7 +222,7 @@ ht-degree: 98%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 
@@ -265,3 +265,11 @@ ht-degree: 98%
 >[!NOTE]
 >
 >如果您在Headless用例中使用通用编辑器，则Headless应用程序必须管理其自身的身份验证。
+
+## PWA弃用 {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>AEM Sites [的渐进式Web应用程序(PWA)功能已被弃用](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)。
+>
+>将继续支持使用此功能的现有项目，但新项目不应使用此功能。

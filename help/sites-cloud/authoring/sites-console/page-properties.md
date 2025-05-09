@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 89%
+source-wordcount: '2454'
+ht-degree: 83%
 
 ---
 
@@ -242,7 +242,9 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->请参阅[启用渐进式Web应用程序功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。
+>有关更多详细信息，请参阅[启用渐进式Web应用程序功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。
+
+{{pwa-deprecation}}
 
 * **配置安装体验**
 
@@ -337,3 +339,35 @@ ht-degree: 89%
       * 当您选择&#x200B;**完成**&#x200B;时，新值会应用于所有选定页面。
       * 当字段有多个值时（例如，“标记”），您可以附加新值或删除公共值。
    * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。
+
+## 属性继承 {#inheritance}
+
+如果页面基于Blueprint或从其他页面继承内容，则继承会反映在单个字段的&#x200B;**页面属性**&#x200B;窗口中。
+
+![继承的属性](assets/property-inhertiance.png)
+
+无法编辑继承的属性。 点按或单击特定字段旁边的&#x200B;**取消继承**&#x200B;图标以中断其继承。
+
+![取消继承](assets/cancel-inheritance.png)
+
+在&#x200B;**取消继承**&#x200B;模式中确认取消。
+
+![取消继承确认模式](assets/cancel-inheriance-confirmation.png)
+
+取消字段的继承后，该字段将变为可编辑。
+
+![已取消继承](assets/property-inheritance-broken.png)
+
+要恢复继承，请点击或单击字段旁边的&#x200B;**还原继承**&#x200B;图标。
+
+![还原继承](assets/revert-inheritance.png)
+
+在&#x200B;**还原继承**&#x200B;模式中确认还原。
+
+![还原继承确认模式](assets/revert-inhertiance-confirmation.png)
+
+选择&#x200B;**恢复继承后同步页面**&#x200B;以使用Blueprint中的最新值更新字段。 如果不这样做，则下次同步LiveCopy时将更新值。
+
+>[!TIP]
+>
+>有关继承的详细信息，请参阅文档[多站点管理器和翻译](/help/sites-cloud/administering/msm-and-translation.md)
