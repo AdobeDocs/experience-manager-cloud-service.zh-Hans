@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd207a7c3e9e5e52202456fa95dd31293639725f
+source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 3%
 内容请求包括发送到AEM Sites的请求。 这些请求可能会通过Edge Delivery Services或客户提供的缓存系统(例如Content Delivery Network (CDN))进行路由。 这些请求以HTML或JSON格式提供结构化数据，并支持页面视图（例如，页面和体验片段）或JSON以Headless方式通过API返回。
 
 当用户使用HTML或JSON查看页面时，系统会计算内容请求数。 它会在第一个缓存系统收到请求的位置测量请求。 出于计数内容请求的目的，包含或排除某些HTTP请求。 查看HTTP [包含的内容请求](#included-content-requests)和[排除的内容请求](#excluded-content-request)的完整列表。
+
+>[!NOTE]
+>
+>内容请求视图中显示的数据每24小时刷新一次。
 
 ## 关于Cloud Service内容请求 {#understanding-cloud-service-content-requests}
 

@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -30,7 +30,7 @@ ht-degree: 15%
 
 1. 在&#x200B;**项目目标**&#x200B;下，选择![魔棒图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **设置沙盒**。
 
-   ![项目类型创建](assets/create-sandbox.png)
+   ![创建程序类型](assets/create-sandbox.png)
 
 1. （可选）在向导对话框的右下角，执行以下任一操作：
 
@@ -71,7 +71,7 @@ ht-degree: 15%
 
    ![访问 AEM 链接](assets/create-program5.png)
 
-1. 完成非生产管道部署到开发后，行动号召中的向导将指导您访问AEM开发环境或将代码部署到开发环境。
+1. 完成非生产管道部署到开发后，call-to-action中的向导将指导您访问AEM开发环境或将代码部署到开发环境。
 
    ![部署沙盒](assets/create-program-setup-deploy.png)
 

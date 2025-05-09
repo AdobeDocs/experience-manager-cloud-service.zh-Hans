@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 11%
@@ -50,7 +50,7 @@ ht-degree: 11%
 
    * 如果您不确定是否需要一个或多个项目来提供各种解决方案，请选择您最感兴趣的项目。您可以稍后通过[编辑项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)来激活其他解决方案。有关更多项目设置建议，请参阅[生产项目简介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
    * 程序创建至少需要一个解决方案。
-   * 为优化数字体验的完全托管的CDN解决方案选择&#x200B;**Edge Deliver Services**。 查看[关于使用Edge Delivery Services交付您的Cloud Manager项目](#edge-overview)
+   * 为优化数字体验的完全托管的CDN解决方案选择&#x200B;**Edge Delivery Services**。 查看[关于使用Edge Delivery Services交付您的Cloud Manager项目](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * 如果您选择了&#x200B;**[启用增强安全性](#security)**&#x200B;选项，则您只能选择HIPAA权利可用的解决方案。
 
      ![选择解决方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -128,7 +128,7 @@ Sites和Forms提供标准的99.9%service level agreement (SLA)。 **99.99% Servi
 
 1. 选择&#x200B;**程序概述**&#x200B;信息卡，可导航至 Cloud Manager **概述**&#x200B;页面。
 
-1. 概述页面上的主要行动号召信息卡将指导您完成创建环境、非生产管道，最后创建生产管道。
+1. 概述页面上的主call-to-action信息卡将指导您创建环境、非生产管道，最后创建生产管道。
 
    ![程序概述](assets/set-up-prod5.png)
 
