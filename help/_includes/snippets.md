@@ -222,7 +222,7 @@ ht-degree: 96%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 
