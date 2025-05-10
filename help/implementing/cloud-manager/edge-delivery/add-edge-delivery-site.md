@@ -4,27 +4,25 @@ description: 了解如何将 Edge Delivery Site 添加到您的生产程序或�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 94%
 
 ---
 
 # 将 Edge Delivery Site 添加到 Cloud Manager {#adding}
 
-将 Edge Delivery Site 添加到生产程序后，您的 Edge Delivery Services 许可证将会应用于该 Site。
-
-需要将 Edge Delivery Site 添加到 Cloud Manager，才能[为您的 Edge Delivery 项目注册支持工单](/help/edge/overview.md##support-ticket)。
-
-请参阅 [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。
+>[!IMPORTANT]
+>
+>了解为什么必须将Edge交付服务网站载入Cloud Manager。 查看[为Edge Delivery Services使用Adobe推荐路径的优点](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
 
 **若要将 Edge Delivery Site 添加到 Cloud Manager：**
 
 1. 通过 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的程序。
 1. 执行下列操作之一：
 
-   * 从&#x200B;**程序概览**&#x200B;页面，单击 **Edge Delivery** 选项卡。然后，单击页面右下角附近的&#x200B;**添加 Edge Delivery Site**。
+   * 从&#x200B;**程序概述**&#x200B;页面，单击 **Edge Delivery** 选项卡。然后，单击页面右下角附近的&#x200B;**添加 Edge Delivery Site**。
 
      ![从 Edge Delivery 选项卡添加 Edge Delivery Site](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
