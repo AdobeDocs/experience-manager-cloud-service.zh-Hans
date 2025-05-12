@@ -42,7 +42,7 @@ Helix 4和Helix 5的内容源配置在以下方面有所不同：
 
 B **在您开始之前**
 
-如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[单击Edge Delivery，则您的网站为带有单个存储库的Helix 5。 按照Helix 5说明进行操作，并使用提供的Helix 4 YAML版本作为后备。
+如果您在Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用单击Edge Delivery，则您的网站为带有单个存储库的Helix 5。 按照Helix 5说明进行操作，并使用提供的Helix 4 YAML版本作为后备。
 
 **确定您的Helix版本**
 
