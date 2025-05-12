@@ -1,12 +1,12 @@
 ---
 title: 创建环境
-description: 本页介绍如何在Cloud Manager中为Screensas a Cloud Service创建环境。
+description: 本页介绍如何在Cloud Manager中为Screens as a Cloud Service创建环境。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 66cb3b49836d9bb52d7955edcf1f0b7f87b22802
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 5%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 5%
 本节介绍如何在Cloud Manager中为项目创建环境。
 
 >[!NOTE]
->请参阅[在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)，了解用户如何创建环境。
+>请参阅[在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)，了解用户如何创建环境。
 
 ## 目标 {#objective}
 
 以下部分介绍了如何在Cloud Manager中为项目创建环境。
 
-## 在Cloud Manager中为Screens项目创建环境的步骤 {#steps-branch-creation}
+## 在Cloud Manager中为项目创建环境的步骤 {#steps-branch-creation}
 
-项目创建成功完成后，您可以在Cloud Manager概述页面中看到行动号召信息卡更新。
+项目创建成功完成后，您可以在call-to-action概述页面中看到Cloud Manager信息卡更新。
 
 1. 导航到Cloud Manager并选择图标，以便您可以转到Cloud Manager的&#x200B;**概述**&#x200B;页面。
 
@@ -36,7 +36,7 @@ ht-degree: 5%
 
    ![图像](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. 添加环境完成后，行动号召信息卡将更新，如下图所示。
+1. 添加环境完成后，call-to-action信息卡将更新，如下图所示。
 
    ![图像](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
