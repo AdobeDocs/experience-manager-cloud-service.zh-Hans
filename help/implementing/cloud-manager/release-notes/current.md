@@ -1,93 +1,209 @@
 ---
-title: Cloud Manager 2025.4.0 版的发行说明
-description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2025.4.0 版本。
+title: Cloud Manager 2025.5.0 版的发行说明
+description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2025.5.0 版本。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
-workflow-type: ht
-source-wordcount: '614'
-ht-degree: 100%
+source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 18%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.4.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.5.0 的发行说明 {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2025.4.0 版本。
-
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2025.5.0 版本。
 
 另请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2025.4.0 的发布日期是 2025 年 4 月 10 日星期四。
+AEM as a Cloud Service中Cloud Manager 2025.5.0的发布日期是2025年5月8日星期四。
 
-下一次计划发布时间为 2025 年 5 月 8 日星期四。
+下一个计划发布于2025年6月5日星期四。
 
 ## 新增功能 {#what-is-new}
 
-* **（UI）改进的部署可见性**
+### 如何通过一次单击更改Edge Delivery Services的内容源
 
-  当一个部署正在等待另一个部署完成时，Cloud Manager 中的管道执行详细信息页面现在会显示一条状态消息（“*等待 - 其他更新正在进行中*”）。此工作流程使得理解环境部署期间的排序变得更加容易。<!-- CMGR-66890 -->
+Adobe Experience Manager (AEM) Edge Delivery Services允许使用全球分布式快速边缘网络从多个来源(如Google Drive、SharePoint或AEM本身)进行内容交付。
 
-  ![显示详细信息和细分的开发部署对话框](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+Helix 4和Helix 5的内容源配置在以下方面有所不同：
 
-* **（UI）域验证增强**
+| 版本 | 配置方法 |
+| --- | --- |
+| 螺旋4 | YAML文件(`fstab.yaml`) |
+| 螺旋5 | 配置服务API （*否`fstab.yaml`*） |
 
-  添加域时，如果域已安装在 Fastly 帐户中，Cloud Manager 现在会显示错误：“*该域已安装在 Fastly 帐户中。请先将其从那里删除，然后再添加到 Cloud Service。*”
+本文提供了两个版本的全面配置步骤、示例和验证说明。
 
-## 早期采用计划 {#early-adoption}
+B **在您开始之前**
 
-参与 Cloud Manager 的早期采用计划，在即将推出的功能正式发布之前获得独家访问权。
+如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[单击Edge Delivery，则您的网站为带有单个存储库的Helix 5。 按照Helix 5说明进行操作，并使用提供的Helix 4 YAML版本作为后备。
 
-目前有以下早期采用机会可用：
+**确定您的Helix版本**
 
-### 自带 Git：现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
+* Helix 4 — 您的项目包括`fstab.yaml`文件。
+* Helix 5 — 您的项目&#x200B;*不*&#x200B;使用`fstab.yaml`，是通过Edge Delivery Services UI或API设置的。
+
+通过存储库元数据确认，如果仍然不确定，请咨询管理员。
+
+#### 配置内容源(Helix 4)
+
+在Helix 4中，内容源在位于GitHub存储库根目录的名为`fstab.yaml`的YAML配置文件中定义。
+
+##### YAML文件格式
+
+`fstab.yaml`文件定义了与以下示例类似的装载点（映射到内容源URL的URL路径前缀）（仅供说明之用）：
+
+```yaml
+mountpoints:
+  /: https://drive.google.com/drive/folders/your-folder-id
+```
+
+##### 更改内容源
+
+步骤因您使用的源系统而异。
+
+* **Google驱动器**
+
+   1. 创建Google驱动器文件夹。
+   1. 与`helix@adobe.com`共享文件夹。
+   1. 获取可共享文件夹链接。
+   1. 更新您的`fstab.yaml`，如下所示：
+
+      ```yaml
+      mountpoints: 
+          /: https://drive.google.com/drive/folders/<folder-id>
+      ```
+
+   1. 提交更改并将其推送到GitHub。
+
+* **SharePoint**
+
+   1. 创建SharePoint文件夹或文档库。
+   1. 与`helix@adobe.com`共享访问权限。
+   1. 获取文件夹URL。
+   1. 更新您的`fstab.yaml`，如下所示：
+
+      ```yaml
+      mountpoints:
+        /: https://<tenant>.sharepoint.com/sites/<site>/Shared%20Documents/<folder>
+      ```
+
+   1. 提交更改并将其推送到GitHub。
+
+* **AEM**
+
+   1. 识别您的AEM内容路径。
+   1. 使用AEM内容导出URL，如下所示：
+
+      ```yaml
+      mountpoints:
+        /: https://author.<your-aem-instance>.com/bin/franklin.delivery/<org>/<repo>/main
+      ```
+
+   1. 提交更改并将其推送到GitHub。
+
+##### 验证
+
+* 使用AEM Sidekick Chrome扩展，单击&#x200B;**预览** > **发布** > **测试实时网站**。
+* 验证URL： `https://main--<repo>--<org>.hlx.page/`
+
+#### 配置内容源(Helix 5)
+
+Helix 5是重写的，不使用`fstab.yaml`，并且支持多个站点共享同一目录。 通过配置服务API或Edge Delivery Services UI管理配置。 配置是站点级别（而非存储库级别）。
+
+##### 概念差异
+
+| 长宽比 | 螺旋4 | 螺旋5 |
+| --- | --- | --- |
+| 配置文件 | `fstab.yaml` | API或用户界面配置 |
+| 装入点 | YAML定义的 | 非必需（隐式根） |
+
+##### 更改内容源
+
+使用配置服务API。
+
+1. 通过API密钥或访问令牌进行身份验证。
+1. 进行以下`PUT` API调用：
+
+   ```bash
+   PUT /api/{program}/{programId}/site/{siteId}
+   Content-Type: application/json
+   
+   {
+     "sitename": "my-site",
+     "branchName": "main",
+     "version": "v5",
+     "repo": "my-content-repo-link"
+   }
+   ```
+
+1. 验证响应（预期： HTTP 200 OK）。
+
+##### 验证
+
+* 使用AEM Sidekick Chrome扩展，单击&#x200B;**预览** > **发布** > **测试实时网站**。
+* 验证URL： `https://main--<repo>--<org>.aem.page/`
+* （可选）通过以下`GET` API调用检查当前配置：
+
+  ```bash
+  GET /api/{program}/{programId}/site/{siteId}
+  ```
+
+<!--
+* **AI-powered build summaries now available for internal use**
+
+    Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
+
+    ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
+-->
+
+
+## 早期采用者计划 {#early-adoption}
+
+参与Cloud Manager的早期采用者计划，在即将发布的功能正式发布之前获得对这些功能的独家访问权。
+
+目前提供以下早期采用商机：
+
+### 添加 Edge Delivery 管道 {#add-eds-pipeline}
+
+使用Edge Delivery Services构建的站点现在支持&#x200B;**管道**，此功能不仅限于Cloud Service环境。 在适用的情况下，您可以使用&#x200B;**管道**&#x200B;管理流量过滤规则和Web应用程序防火墙(WAF)配置等设置。 请参阅[支持的配置](/help/operations/config-pipeline.md#configurations)。
+
+<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+
+如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)发送电子邮件。
+
+### 自带Git — 现在支持Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
-**自带 Git** 功能已得到扩展，包括对 GitLab 和 Bitbucket 等外部存储库的支持。这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
+客户现在可以将其Azure DevOps Git存储库载入到Cloud Manager中，并支持现代Azure DevOps和旧版VSTS (Visual Studio Team Services)存储库。
 
-使用外部存储库（不包括 GitHub 托管的存储库）和&#x200B;**部署触发器**&#x200B;设置为&#x200B;**在 Git 发生更改时**&#x200B;的管道现在会自动启动。
+* 对于Edge Delivery Services用户，已载入的存储库可用于同步和部署网站代码。
+* 对于AEM as a Cloud Service和Adobe Managed Services (AMS)用户，存储库可以同时链接到全栈管道和前端管道。
+
+即将支持其他管道类型以及通过代码质量管道进行拉取请求验证。
 
 请参阅[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
-![添加“存储库”对话框](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
+![添加“存储库”对话框](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
 <!--
-### AEM Home {#aem-home}
+## Bug fixes
 
-AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+* Issue
 
-Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+* Issue
 
-If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
-
-* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
-* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
-
-## 错误修复
-
-* **证书缺少通用名称 (CN) 字段的问题**
-
-  在处理主题字段中不包含通用名称 (CN) 的 EV/OV 证书时，Cloud Manager 不再抛出 NullPointerException (NPE) 和 500 HTTP 响应。现代证书通常省略 CN，而是使用主题备用名称 (SAN)。此修复可确保当存在 SAN 时，CN 的缺失不再导致配置构建过程中出现故障。<!-- CMGR-67548 -->
-
-* **证书匹配不正确的域验证问题**
-
-  Cloud Manager 不再使用错误的证书错误地验证域。以前，验证逻辑使用基于模式的匹配，而不是精确匹配，这导致像 `should-not-be-verified.example.com` 由于与有效证书重叠而显示为已验证 `example.com`。此修复确保域验证现在检查完全匹配，从而防止错误的证书关联。<!-- CMGR-67225 -->
-
-* **强制高级网络端口转发名称的唯一性**
-
-  Cloud Manager 现在强制对高级网络端口转发进行唯一命名。以前，允许重复的名称，这可能会导致冲突。此修复确保每个端口转发条目都有一个不同的名称，符合网络配置完整性的最佳实践。<!-- CMGR-67082 -->
-
+* Issue
+-->
 
 <!-- ## Known issues {#known-issues} -->
 
