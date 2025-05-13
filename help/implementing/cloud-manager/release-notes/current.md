@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
+source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 18%
+source-wordcount: '830'
+ht-degree: 17%
 
 ---
 
@@ -27,13 +27,13 @@ AEM as a Cloud Service中Cloud Manager 2025.5.0的发布日期是2025年5月8日
 
 ## 新增功能 {#what-is-new}
 
-### 如何通过一次单击更改Edge Delivery Services的内容源
+### 通过一次单击为Edge Delivery Services配置内容源
 
 Adobe Experience Manager (AEM) Edge Delivery Services允许使用全球分布式快速边缘网络从多个来源(如Google Drive、SharePoint或AEM本身)进行内容交付。
 
 Helix 4和Helix 5的内容源配置在以下方面有所不同：
 
-| 版本 | 配置方法 |
+| 版本 | 内容源配置方法 |
 | --- | --- |
 | 螺旋4 | YAML文件(`fstab.yaml`) |
 | 螺旋5 | 配置服务API （*否`fstab.yaml`*） |
@@ -42,7 +42,7 @@ Helix 4和Helix 5的内容源配置在以下方面有所不同：
 
 **开始之前**
 
-如果您在Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用单击Edge Delivery，则您的网站为带有单个存储库的Helix 5。 按照Helix 5说明进行操作，并使用提供的Helix 4 YAML版本作为后备。
+如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[单击Edge Delivery，则您的网站为带有单个存储库的Helix 5。 按照Helix 5说明进行操作，并使用提供的Helix 4 YAML版本说明作为后备。
 
 **确定您的Helix版本**
 
@@ -51,20 +51,18 @@ Helix 4和Helix 5的内容源配置在以下方面有所不同：
 
 通过存储库元数据确认，如果仍然不确定，请咨询管理员。
 
-#### 配置内容源(Helix 4)
+#### 配置Helix 4的内容源
 
-在Helix 4中，内容源在位于GitHub存储库根目录的名为`fstab.yaml`的YAML配置文件中定义。
-
-##### YAML文件格式
-
-`fstab.yaml`文件定义了与以下示例类似的装载点（映射到内容源URL的URL路径前缀）（仅供说明之用）：
+在Helix 4中， fstab.yaml文件定义站点的内容源。 此文件位于GitHub存储库的根目录下，将URL路径前缀（称为装载点）映射到外部内容源。 典型示例如下所示：
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-##### 更改内容源
+此示例仅供说明之用。 实际URL应指向您的内容源，如特定的Google驱动器文件夹、SharePoint目录或AEM路径。
+
+**配置Helix 4的内容源：**
 
 步骤因您使用的源系统而异。
 
@@ -113,22 +111,20 @@ mountpoints:
 * 使用AEM Sidekick Chrome扩展，单击&#x200B;**预览** > **发布** > **测试实时网站**。
 * 验证URL： `https://main--<repo>--<org>.hlx.page/`
 
-#### 配置内容源(Helix 5)
+#### 配置Helix 5的内容源
 
 Helix 5是重写的，不使用`fstab.yaml`，并且支持多个站点共享同一目录。 通过配置服务API或Edge Delivery Services UI管理配置。 配置是站点级别（而非存储库级别）。
 
-##### 概念差异
+概念上的区别如下：
 
 | 长宽比 | 螺旋4 | 螺旋5 |
 | --- | --- | --- |
-| 配置文件 | `fstab.yaml` | API或用户界面配置 |
-| 装入点 | YAML定义的 | 非必需（隐式根） |
+| 配置 | 通过`fstab.yaml`完成 | 通过API或UI而不是YAML完成。 |
+| 装入点 | 在`fstab.yaml`中定义。 | 非必需。 隐含地理解了根。 |
 
-##### 更改内容源
+**配置Helix 5的内容源：**
 
-使用配置服务API。
-
-1. 通过API密钥或访问令牌进行身份验证。
+1. 使用配置服务API，通过API密钥或访问令牌进行身份验证。
 1. 进行以下`PUT` API调用：
 
    ```bash {.line-numbering}
