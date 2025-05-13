@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 437125b6819edf70539ebacb4a8beddb755fcb7a
+source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 36%
+source-wordcount: '1563'
+ht-degree: 13%
 
 ---
 
@@ -16,68 +16,107 @@ ht-degree: 36%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 20626 {#20626}
+## 版本 20783 {#20783}
 
-以下总结了维护版本20626的不断改进，该版本于2025年4月29日公开发布。 上一个维护版本是版本 20476。
+以下总结了维护版本20783的持续改进，该版本于2025年5月13日公开发布。 上一个维护版本是版本 20626。
 
 激活 2025.5.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-20626}
+### 增强功能 {#enhancements-20783}
 
-* Assets-46413、ASSETS-46580：添加了新审核状态“预览”。
-* Assets-49542：视频和音频转录及翻译支持的语言扩展。
-* Assets-48264：扩展了演绎版的PNG质量支持。
+* Forms-18455： AEM Forms核心组件自适应表单编辑器经过增强，可在数据源树中显示已在表单中使用或映射的数据对象的可视指示器（点），这项功能可帮助作者轻松识别已使用的数据元素。
+* Forms-18450：通过将reCaptcha V2域逻辑迁移到`AdaptiveFormConfigurationServiceImpl`，产品已得到增强。 此更改旨在集中配置，并与在核心组件中添加对不可见reCaptcha V2的支持保持一致。
+* Forms-19630： AEM 6.5 quickstart uber-jar已更新为包含最新的自适应Forms核心组件包，确保快速入门环境反映最新的自适应Forms功能并替换旧代码。
+* Forms-19125：核心组件自适应表单编辑器已得到增强，可在数据源树中的相应部分放入表单画布中时支持自动映射可用的自适应表单片段。 这会将基础编辑器的关键工作效率功能引入核心组件。
+* Forms-17887：AEM Forms现在通过其输出服务提供生成AFP（高级函数演示）格式文档的功能。 此增强功能可满足客户对通常使用AFP的高速、大容量打印环境的需求。
+* Forms-15089：AEM Forms引入了一项功能，可在表单发布时对其版本进行设置，使其所有构成片段均内联（嵌入）到该特定已发布版本中。 这可以确保表单在发布时呈现的准确、自包含形式，这对于存档、法律或法规遵从性目的可能至关重要。
+* SITES-27775：优化了发布期间的引用搜索。
+* SITES-30885：优化了持久查询中的JSON处理。
+* SITES-25433：带有通用编辑器的Edge Delivery：比较旧版本时支持完整页面渲染。
+* SITES-27792：使用通用编辑器的Edge Delivery：将EDS配置完全移至CA配置。
+* SITES-19754：使用通用编辑器的Edge Delivery：当设置损坏时显示引人注目的错误消息。
+* SITES-30267：带有通用编辑器的Edge Delivery：工作表V2（提前访问）。
+* SITES-30328：带有通用编辑器的Edge Delivery：从Sidekick支持预览。
+* SITES-23499：带有通用编辑器的Edge Delivery：允许将多个字段用于块选项。
+* SITES-29987：在创建内容片段模型时添加用于设置`previewUrlPattern`的功能。
+* sites-29874：在内容片段API中添加对LongTextField引用的支持。
+* SITES-29601：为通过LongText字段引用的内容片段添加验证。
+* SITES-24623：使GET和搜索片段API返回的ETags可用于修补。
+* SITES-28557：PATCH内容片段中允许URL参数`references`。
+* SITES-5358： [OpenAPI]复制具有子级的内容片段。
+* SITES-29614： GET工作流端点。
+* SITES-29615：列出批处理请求API端点。
+* SITES-25130：将核心组件升级到2.28.0
+* SITES-10575：“MSM Blueprint Bloomfilter加载器”尝试加载的行数大于100,000。
+* SITES-26711： RTE文本字段的链接未更新为指向MSM转出时的Live Copy。
+* SITES-25976：体验片段中的链接在MSM转出后不适用。
 
-### 修复的问题 {#fixed-issues-20626}
+### 修复的问题 {#fixed-issues-20783}
 
-* Assets-50387：在GenStudio中使用正确的内容片段默认缩略图。
-* Assets-49006：当用户没有写入权限时，显示视频属性。
-* Assets-46757、ASSETS-46997：改进智能裁剪编辑器中的辅助功能。
-* Assets-48018：改进Assets发布报表中的资源引用跟踪。
-* Assets-35846：提高创作层和交付层之间访问的一致性。
-* Assets-48171：提高Dynamic Media模板与画布的一致性。
-* Assets-49813：改进到期通知。
-* Assets-47768、ASSETS-49825、ASSETS-49008、ASSETS-48287：改进批量操作的管理和可见性。
-* Assets-50003、ASSETS-50004：改进对资源下载中包含的演绎版的命名和控制。
-* Assets-47939：改进Content Hub响应的组织方式。
-* Assets-46738：提高非常大型收藏集的性能。
-* Assets-50121：提高资源已发布事件的可靠性。
-* Assets-48490：提高图像摄取期间自动处理的恢复能力。
-* Assets-28106、ASSETS-49404：提高全文搜索的稳健性。
-* Assets-50006、ASSETS-50423：提高大文件夹中的搜索和遍历性能。
-* Assets-46021：改进Safari和移动设备浏览器的视频显示。
-* Assets-49002：改进对Dynamic Media模板的编辑处理。
-* Assets-48376： Content Hub UI中的其他改进。
-* Assets-48504、ASSETS-49378：对UI行为进行了其他改进。
-* Assets-49540：将资源关系OpenAPI移出实验阶段。
-* Assets-40284：更新有关Adobe Stock集成的文档。
-* Assets-49739：致力于从资产选择器集成Figma。
+* Assets-50994：传入流量在AemRequestEventFilter中被阻止。
+* CQ-4358591：从具有“创建翻译项目”选项的站点引用面板创建语言副本时，缺少少数语言的项目。
+* CQ-4359108：使用人工翻译导入/导出时，XLIFF 2.0格式失败。
+* CQ-4358722：由于Java 11和Java 17中的区域设置代码不同，本地化不适用于旧版ISO代码。
+* Forms-19808：保存包含已启用延迟加载的片段的大型表单时，用户无法提取草稿。
+* Forms-19887：在HTML5中呈现表单时，XFA表单中的下拉字段（最初设置为只读访问）无法更改为打开/可编辑状态。 字段保持为只读状态并阻止用户交互，这与PDF渲染中它按预期工作的情况不同。
+* Forms-19651：在规则编辑器中，如果在二进制条件中使用了按钮单击并且该规则的“then”语句中也使用了同一按钮，则规则将无法正常运行。
+* Forms-19628：在基于核心组件的自适应Forms的自动生成的记录文档(DoR)中，如果根面板启用了“允许为标题使用富文本”选项，则从DoR中排除嵌套面板的标题也会错误地隐藏根面板的标题。
+* Forms-18977：记录文档(DoR)服务生成的PDF缺少文档标题。 这可能会导致不符合PDF/UA和WCAG 2.1辅助功能标准，因为文档标题是辅助功能PDF的必需属性。
+* Forms-18526：当在其条件中包含多个字段的规则从一个字段复制到另一个字段时，这些条件中的固定字段引用错误地保留其对原始源字段的引用，而不是更新到复制规则的新字段。
+* Forms-19047：在AEM Forms上修改并重新发布自适应表单后（特别是6.5.22.0），某些表单元素（特别是文本框）的翻译可能缺失。
+* Forms-19234： AEM Forms中PDF的时间轴功能允许用户查看有关PDF创建和版本控制的详细信息，当任何PDF上传到“Forms和文档”部分下后，该功能就会停止工作。
+* Forms-19373：在“黄金发布”过程中，在未配置任何复制代理的环境中错误地报告复制错误。
+* Forms-18196：当XDP模板所需的可选字段数据在请求中留空时，`generatePrintedOutput`（或`generatePdfOutput`）同步HTTP API错误地返回200（成功）响应代码而不是预期的400（错误请求）错误代码。
+* Forms-19336：在核心组件自适应表单编辑器（AF2编辑器）中，数据Source树中的搜索功能无法正常工作或按预期工作，阻止用户轻松查找特定数据元素。
+* Forms-19629： JSON架构解析器生成的结果无效或错误解释某些客户提供的JSON架构。 此问题可能会对依赖正确架构解析的功能（如片段的自动映射）产生负面影响。
+* Forms-19380：引入对核心组件的版本控制支持自适应Forms无意中启用了对各种其他资源类型(如Foundation Forms、PDF文件、主题、FDM)的版本控制功能，而没有对这些资源类型进行特定设计或测试。 这种意外的副作用正在调查中。
+* Forms-17707：AEP (Adobe Experience Platform)连接器在配置为连接到AEP平台“暂存”环境时无法正常工作。
+* GRANITE-58276： OSGi依赖项循环导致HTL脚本引擎工厂无法正常工作。
+* Oak-11673：由refreshLease导致的Oak-segment-azure v12 CPU增加。
+* SITES-30752：生成持久查询响应时不使用`If-modified-since`/`last-modified`标头。
+* SITES-30353： AEM内容片段中“src”字段的GraphQL DataFetchingExceptions。
+* SITES-30333：从jcr中读取资产元数据以避免xmp解析问题。
+* SITES-30140：创建内容片段引用时出现双窗口问题。
+* SITES-29748：更正了renderconditions，以便在CF编辑器中显示managepublication/quickpublish操作。
+* SITES-15452：不应根据启动项中的唯一CF元素副本对其进行检查。
+* SITES-30386：带有通用编辑器的Edge Delivery：重复的UE cors.js导致UE在添加内容时产生重复部分。
+* SITES-29745：修复了引用变体未水合的罕见问题。
+* SITES-30585：在使用引用创建模型时无法设置“previewUrlPattern”。
+* SITES-30327：发布没有权限的内容片段将为每个有效负载资源创建单独的工作流。
+* SITES-29528：ETag不能用于发布实例上的缓存。
+* SITES-30583：查找并替换工具将所有字符更改为小写。
+* SITES-31157：由于ETag不一致，修补程序失败。
+* SITES-31327： [OpenAPI]创作实例上的获取内容片段请求可以响应304。
+* SITES-29691：尝试移动页面时出现NullPointerException。
+* SITES-30728：在资产属性上配置时，OnTime/OffTime未按预期发布/取消发布。
+* SITES-29789：AEM中已复制的根页面上的组件链接更改。
+* SITES-29191：无法向产品列表组件添加超过20个SKU。
+* SITES-30372：智能裁剪在AEM的图像(V2)核心组件上不起作用。
+* SITES-28693：当标题为空时，Teaser组件呈现损坏的HTML。
+* SITES-28668：无法使用 LaunchPromotionParameters 来推广发布。
+* SITES-31005：增强转出作业UI以向客户显示进度。
+* SITES-31020：增强创建Live Copy作业UI以向客户显示进度。
+* SITES-29816：创建体验片段的实时副本时出现“未找到资源”错误。
+* SITES-29363：重置实时复制按钮不可用于嵌套的实时复制内容层级。
+* SKYOPS-106509：添加补充的加载打开标志，以支持Java 21上的GSON反射访问。
 
-#### AEM 指南 {#guides}
-
-* GUIDES-21734：如果通过代码片段添加元素或通过模板创建元素，则无法为元素生成新ID，即使在XMLEditorConfig中启用了自动生成ID选项也是如此。
-* GUIDES-25969：如果DITA主题中的外部链接中缺少`scope=external`属性，HTML5发布将失败，且不会指示错误日志中缺少此属性的文件，尤其是启用了微服务时。
-* GUIDES-27288：无法传递元数据属性来映射使用新的AEM Sites发布生成的登陆页面。
-
-如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
-
-### 已知问题 {#known-issues-20626}
+### 已知问题 {#known-issues-20783}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-20626}
+### 已弃用的功能和 API {#deprecated-20783}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-20626}
+### 安全修复 {#security-20783}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 11 个已发现的漏洞，增强了我们对实现强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 19 个已发现的漏洞，增强了我们对实现强大系统保护的承诺。
 
-### 嵌套的技术 {#embedded-tech-20626}
+### 嵌入的技术 {#embedded-tech-20783}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM Oak | 1.78.0 | [Oak API 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
+| AEM Oak | 1.78.1公吨20250429061757 | [Oak API 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.26-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | AEM 核心组件 | 2.29.0 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
