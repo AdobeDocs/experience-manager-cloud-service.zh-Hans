@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a35378389765538fc085fdf009816807c417f1f
+source-git-commit: 962276d9645d273f5828ad3feea133bce9614668
 workflow-type: tm+mt
 source-wordcount: '6157'
 ht-degree: 99%
@@ -744,8 +744,8 @@ ht-degree: 99%
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
          + [将基于核心组件的自适应表单嵌入到外部 Web 页面](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [AEM Forms与Adobe Experience Platform (AEP)的集成](/help/forms/aem-forms-aep-connector.md)
-         + [将基于 Foundation 组件的自适应表单嵌入到外部 Web 页面](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [AEM Forms 与 Adobe Experience Platform (AEP) 集成](/help/forms/aem-forms-aep-connector.md)
+         + [将基于基础组件的自适应表单嵌入到外部 Web 页面](/help/forms/embed-adaptive-form-external-web-page.md)
          + 将自适应表单与 Adobe Marketo Engage 集成{#integrate-adaptive-form-with-market-engage}
             + [将 Adobe Marketo Engage 与 AEM Forms 集成](/help/forms/integrate-form-to-marketo-engage.md)
             + [配置新表单以与 Marketo Engage 集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
@@ -765,7 +765,7 @@ ht-degree: 99%
          + [为自适应表单设计 XML 架构](/help/forms/adaptive-form-xml-schema-form-model.md)
    + 自适应表单 {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
-      + [哪个自适应Forms最适合您？](/help/edge/docs/forms/authoring-a-form.md)
+      + [哪种自适应表单最适合您？](/help/edge/docs/forms/authoring-a-form.md)
       + [创建自适应表单片段](/help/forms/adaptive-form-fragments.md)
       + [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心组件 {#authoring-adaptive-forms-core-components}
@@ -1242,8 +1242,8 @@ ht-degree: 99%
          + [解决 SSL 证书错误](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 配置 {#cdn-configurations}
-         + [添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [管理 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [添加域映射](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [管理域映射](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允许列表 {#ip-allow-lists}
          + [IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
