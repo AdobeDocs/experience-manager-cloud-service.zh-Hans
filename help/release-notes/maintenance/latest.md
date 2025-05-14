@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 13%
 
 ---
@@ -33,9 +33,8 @@ ht-degree: 13%
 * SITES-27775：优化了发布期间的引用搜索。
 * SITES-30885：优化了持久查询中的JSON处理。
 * SITES-25433：带有通用编辑器的Edge Delivery：比较旧版本时支持完整页面渲染。
-* SITES-27792：使用通用编辑器的Edge Delivery：将EDS配置完全移至CA配置。
+* SITES-27792：带有通用编辑器的Edge Delivery：为Edge Delivery服务配置添加特定模板
 * SITES-19754：使用通用编辑器的Edge Delivery：当设置损坏时显示引人注目的错误消息。
-* SITES-30267：带有通用编辑器的Edge Delivery：工作表V2（提前访问）。
 * SITES-30328：带有通用编辑器的Edge Delivery：从Sidekick支持预览。
 * SITES-23499：带有通用编辑器的Edge Delivery：允许将多个字段用于块选项。
 * SITES-29987：在创建内容片段模型时添加用于设置`previewUrlPattern`的功能。
