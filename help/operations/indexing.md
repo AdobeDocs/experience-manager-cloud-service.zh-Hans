@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的内容搜索和索引编制。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
+source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
 workflow-type: tm+mt
-source-wordcount: '2767'
-ht-degree: 22%
+source-wordcount: '2850'
+ht-degree: 21%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 22%
 
 限制：
 
-* 目前，仅限类型为 `lucene` 的索引支持 AEM as a Cloud Service 上的索引管理。
-* 仅支持标准分析器（即产品附带的分析器）。 不支持自定义分析器。
+* 目前，仅类型`lucene`的索引支持AEM as a Cloud Service上的索引管理。 这意味着所有索引自定义项都必须是`lucene`类型。 `async`属性只能是以下属性之一： `[async]`、`[async,nrt]`或`[fulltext-async]`。
 * 可在内部配置其他索引并将其用于查询。例如，在 Skyline 上可能实际上针对 `damAssetLucene` 索引的 Elasticsearch 版本执行针对此索引编写的查询。应用程序和用户通常看不到此差异，但是，某些工具（如`explain`功能）报告不同的索引。 有关 Lucene 索引与 Elastic 索引之间的区别，请参阅 [Apache Jackrabbit Oak 中的 Elastic 文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。客户不需要直接配置Elasticsearch索引，也无法这样做。
+* 仅支持标准分析器（即产品附带的分析器）。 不支持自定义分析器。
 * 不支持按相似特征向量(`useInSimilarity = true`)搜索。
 
 >[!TIP]
@@ -79,6 +79,9 @@ ht-degree: 22%
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
+如限制部分中所述，自定义索引定义的`type`必须始终设置为`lucene`，即使使用包管理器提取的索引定义属于其他类型（例如`elasticsearch`）。
+如果提取的索引定义设置为`elastic-async`，则还必须更改`async`属性。 对于自定义索引定义，`async`属性必须设置为以下之一： `[async]`、`[async,nrt]`或`[fulltext-async]`。
+
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
 The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
@@ -96,7 +99,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 为了说明如何部署开箱即用索引`damAssetLucene-8`的自定义版本，我们将提供分步指南。 在此示例中，我们将它重命名为`damAssetLucene-8-custom-1`。 然后按照如下步骤进行操作：
 
 1. 在`ui.apps`目录中创建一个具有更新索引名称的新文件夹：
-   * 示例： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+   * 示例：`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. 添加包含已创建文件夹中的自定义配置的配置文件`.content.xml`。 以下是自定义示例：
 文件名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
