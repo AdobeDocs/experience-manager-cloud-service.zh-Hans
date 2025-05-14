@@ -7,10 +7,10 @@ role: User
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
+workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -59,4 +59,4 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 所见即所得创作对于内容作者来说是一个强大且直观的工具。然而，有许多不同的创作用例，这就是 AEM 提供额外创作解决方案的原因。
 
-请参阅文档[选择创作方法](/help/edge/authoring-methods.md)，以了解有关 AEM 提供的创作解决方案的更多信息，包括基于文档的创作和 Headless 创作。
+请参阅文档[Edge Delivery Services概述](/help/edge/overview.md#authoring-method)，了解有关AEM提供的创作解决方案（包括基于文档的创作和headless）的更多信息。

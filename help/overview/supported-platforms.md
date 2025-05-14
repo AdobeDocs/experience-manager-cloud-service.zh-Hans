@@ -5,13 +5,13 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 22d4e6b5f87221b2739cf1dd9d59b4652a014316
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # 支持的客户端平台 {#supported-platforms}
 
@@ -35,7 +35,7 @@ Adobe定义了对AEM客户端平台的以下支持级别。
 
 AEM用户界面已针对笔记本、台式计算机和平板电脑设备(如Apple iPad或Microsoft Surface)中的较大屏幕进行了优化。 任何创作用例均不支持电话外形。
 
-根据[创作方法，Adobe Experience Manager用户界面可与以下客户端平台配合使用。](/help/edge/authoring-methods.md)
+根据[创作方法，Adobe Experience Manager用户界面可与以下客户端平台配合使用。](/help/edge/overview.md#authoring-method)
 
 * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)
