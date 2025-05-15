@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -87,6 +87,6 @@ ht-degree: 26%
 
 ## 可编辑模板 {#editable-templates}
 
-使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)创建的页面也可以基于模板。 用于为通用编辑器和页面编辑器创建页面的模板都利用AEM [可编辑的模板](/help/implementing/developing/components/templates.md)。
+使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)创建的页面也可以基于模板。 用于为通用编辑器和页面编辑器创建页面的模板都利用AEM的[可编辑模板](/help/implementing/developing/components/templates.md)。
 
 用于创建可通过页面编辑器编辑的页面的模板利用了可编辑模板的所有功能。 用于创建可通过通用编辑器编辑的页面的模板仅使用初始内容功能。
