@@ -71,6 +71,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
       ![打开 fstab.yaml 文件](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. 编辑 **fstab.yaml** 文件，更新您项目的挂载点。将 URL 替换为 AEM as a Cloud Service 创作实例的 URL。
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![编辑 fstab.yaml 文件](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -176,7 +177,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    * [表单块](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)文件夹
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 文件
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 文件
-1. 导航到AEM项目中的`/scripts/editor-support.js`文件，并在AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)中使用[editor-support.js文件对其进行更新
+1. 导航到AEM项目中的`/scripts/editor-support.js`文件，并在AEM Forms样板[&#128279;](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)中使用editor-support.js文件对其进行更新
 1. 导航到AEM项目中的`/models/_section.json`，并将“form”和“embed-adaptive-form”附加到`filters`对象的组件数组：
 
    ```
@@ -344,7 +345,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
        npm install -g @adobe/aem-cli
    ```
 
-1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 <owner> 存储库所有者和 <repo> 存储库名称：
+1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 &lt;owner> 存储库所有者和 &lt;repo> 存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>
