@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
+source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 13%
+source-wordcount: '1750'
+ht-degree: 11%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 13%
 * Forms-19125：核心组件自适应表单编辑器已得到增强，可在数据源树中的相应部分放入表单画布中时支持自动映射可用的自适应表单片段。 这会将基础编辑器的关键工作效率功能引入核心组件。
 * Forms-17887：AEM Forms现在通过其输出服务提供生成AFP（高级函数演示）格式文档的功能。 此增强功能可满足客户对通常使用AFP的高速、大容量打印环境的需求。
 * Forms-15089：AEM Forms引入了一项功能，可在表单发布时对其版本进行设置，使其所有构成片段均内联（嵌入）到该特定已发布版本中。 这可以确保表单在发布时呈现的准确、自包含形式，这对于存档、法律或法规遵从性目的可能至关重要。
+* Forms-17107：AEM Forms现在提供增强的客户端自定义函数解析功能。 这包括支持现代JavaScript功能(ECMAScript ES10+)，例如可选链接，并引入了在自定义函数脚本中使用静态导入的功能。 这允许开发人员更好地组织代码，利用ESM模块，并移除在自适应Forms v2和Edge Delivery Services中使用自定义函数时遇到的先前限制，特别是对于之前需要对这些功能采取变通办法的用户。
 * SITES-27775：优化了发布期间的引用搜索。
 * SITES-30885：优化了持久查询中的JSON处理。
 * SITES-25433：带有通用编辑器的Edge Delivery：比较旧版本时支持完整页面渲染。
@@ -70,6 +71,8 @@ ht-degree: 13%
 * Forms-19629： JSON架构解析器生成的结果无效或错误解释某些客户提供的JSON架构。 此问题可能会对依赖正确架构解析的功能（如片段的自动映射）产生负面影响。
 * Forms-19380：引入对核心组件的版本控制支持自适应Forms无意中启用了对各种其他资源类型(如Foundation Forms、PDF文件、主题、FDM)的版本控制功能，而没有对这些资源类型进行特定设计或测试。 这种意外的副作用正在调查中。
 * Forms-17707：AEP (Adobe Experience Platform)连接器在配置为连接到AEP平台“暂存”环境时无法正常工作。
+Forms-18526：复制具有基于多个字段的条件的规则时，在规则的条件或操作中引用的字段（不是触发规则的主字段）未更新以正确引用要将规则复制到的新字段。 而是继续引用从中复制规则的原始源字段。
+Forms-18474：规则旨在当表单上任何字段的更改错误地触发特定字段的值更改（例如，字段“A”）时，将焦点设置到特定面板或组件。 例如，如果字段“B”被修改，则焦点仍将被设置为指定的面板，即使该规则仅针对字段“A”的更改进行了配置。
 * GRANITE-58276： OSGi依赖项循环导致HTL脚本引擎工厂无法正常工作。
 * Oak-11673：由refreshLease导致的Oak-segment-azure v12 CPU增加。
 * SITES-30752：生成持久查询响应时不使用`If-modified-since`/`last-modified`标头。
