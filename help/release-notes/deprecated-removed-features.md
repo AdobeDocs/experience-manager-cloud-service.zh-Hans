@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
 workflow-type: tm+mt
 source-wordcount: '2554'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -226,10 +226,10 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 </table>
 </details>
 
-以下是已删除的AEM API的详尽列表。
+以下是已移除的 AEM API 的详细列表。
 
 <details>
-  <summary>展开以查看已删除的API列表。</summary>
+  <summary>展开以查看已移除的 API 的列表。</summary>
 <table style="table-layout:auto">
   <tr>
     <th>包/类</th>
@@ -307,7 +307,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 </table>
 </details>
 
-### 删除`org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
+### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
 如果您正在使用 `org.apache.sling.commons.auth`、`org.apache.sling.commons.auth.spi` 或二者皆用，则可以通过将代码迁移到 `org.apache.sling.auth` 来替换用法。`org.apache.sling.auth.spi`。如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
 
@@ -316,7 +316,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 * 将 ACS AEM Commons 更新至最新版本
 * 分别从 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 迁移到 `org.apache.sling.auth`。`org.apache.sling.auth.spi`。
 
-### 删除`org.eclipse.jetty*` {#org.eclipse.jetty}
+### 移除 `org.eclipse.jetty*` {#org.eclipse.jetty}
 
 如果您使用 `org.eclipse.jetty` 包或其子包中的任何内容，可能需要迁移到具有类似功能的其他第三方库。如果迁移不可行，请将下面列表中所需的包添加到您的项目中。
 
@@ -333,7 +333,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
    * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
-### 删除`com.mongodb` {#com.mongodb}
+### 移除 `com.mongodb` {#com.mongodb}
 
 将 Mongo 客户端 API 添加到您的项目。
 
@@ -342,7 +342,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 * 将此包添加到您的项目中
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-### `org.apache.abdera*`和`org.apache.sling.atom.taglib`的使用情况 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
+### `org.apache.abdera*` 和 `org.apache.sling.atom.taglib` 的使用 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 使用提供类似功能或自有代码的第三方库替换 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 中任何包的用法。
 
@@ -350,7 +350,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 
 * 使用其他第三方库/自有代码替换 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 中包的用法。
 
-### `org.apache.felix.http.whiteboard`的使用情况 {#org.apache.felix.http.whiteboard}
+### 使用 `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
 将 `org.apache.felix.http.whiteboard` 的用法替换为 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)。官方 OSGi API 具有类似的功能，并且大多数情况下的替换只需要更改服务注册属性。
 
