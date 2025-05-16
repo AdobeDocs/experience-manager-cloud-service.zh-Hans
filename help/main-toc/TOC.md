@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7e4e35a6618f12757a3be5ea793d183fe31f48fe
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '6157'
 ht-degree: 99%
@@ -1242,8 +1242,8 @@ ht-degree: 99%
          + [解决 SSL 证书错误](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 域映射 {#cdn-configurations}
-         + [添加域映射](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [管理域映射](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
+         + [管理域映射](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
       + IP 允许列表 {#ip-allow-lists}
          + [IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

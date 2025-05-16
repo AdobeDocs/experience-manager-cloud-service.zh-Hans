@@ -4,7 +4,7 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 11%
@@ -23,7 +23,7 @@ AEM as a Cloud Service附带一个集成的CDN，旨在通过从靠近用户浏�
 
 AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布层，客户可以选择通过自己的CDN路由流量，他们必须管理此CDN。 此选项基于具体情况提供，尤其是当客户现有与难以替换的CDN提供商的旧版集成时。
 
-希望发布到Edge Delivery Services层的客户可以利用Adobe的托管CDN。 查看[Adobe托管CDN](#aem-managed-cdn)。<!-- CQDOC-21758, 5b -->
+希望发布到Edge Delivery Services层的客户可以利用Adobe的托管CDN。 查看[Adobe托管的CDN](#aem-managed-cdn)。<!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
@@ -32,22 +32,22 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 
 <!-- CQDOC-21758, 5a -->
 
-要通过Cloud Manager的自助UI使用AEM的内置CDN准备内容交付，您可以利用Adobe的托管CDN功能。 此功能允许您处理自助服务CDN管理，包括配置和安装SSL证书，如DV（域验证）或EV/OV（扩展/组织验证）证书。 有关这些方法的更多详细信息，请参阅以下内容：
+要通过AEM的自助UI使用Cloud Manager的内置CDN准备内容交付，您可以利用Adobe的托管CDN功能。 此功能允许您处理自助服务CDN管理，包括配置和安装SSL证书，如DV（域验证）或EV/OV（扩展/组织验证）证书。 有关这些方法的更多详细信息，请参阅以下内容：
 
 * [Cloud Manager中的Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [SSL 证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [配置CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [配置CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
 **限制流量**
 
-默认情况下，对于AEM管理的CDN设置，所有公共流量都可以进入发布服务，无论对于生产环境还是非生产（开发和暂存）环境。 您可以通过Cloud Manager用户界面将流量限制到给定环境的发布服务（例如，按一系列IP地址限制暂存）。
+默认情况下，对于AEM管理的CDN设置，生产环境和非生产（开发和暂存）环境的所有公共流量都可以进入发布服务。 您可以通过Cloud Manager用户界面将流量限制到给定环境的发布服务（例如，按一系列IP地址限制暂存）。
 
 请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)了解详细信息。
 
 >[!CAUTION]
 >
->AEM托管CDN仅处理来自允许的IP的请求。 如果您将自己的CDN指向AEM托管的CDN，请确保CDN的IP包含在IP允许列表中。
+>AEM的托管CDN仅处理来自允许的IP的请求。 如果您将自己的CDN指向AEM托管的CDN，请确保CDN的IP包含在IP允许列表中。
 
 ### 在CDN上配置流量 {#cdn-configuring-cloud}
 
@@ -56,7 +56,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 * 使用[流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)阻止恶意流量(包括可选许可的高级WAF规则)
 * 修改[请求和响应](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)的性质
 * 应用301/302 [客户端重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
-* 声明[原始选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)将请求反向代理到非AEM后端
+* 声明[原始选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)以将请求反向代理到非AEM后端
 
 使用Git中的YAML文件来配置这些功能。 并且，使用Cloud Manager [配置管道](/help/implementing/dispatcher/cdn-configuring-traffic.md)来部署它们。
 
@@ -91,14 +91,14 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 
 配置说明：
 
-1. 将CDN指向AdobeCDN的入口作为其源域。 例如 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
-1. 将SNI设置为AdobeCDN的入口。
+1. 将CDN指向Adobe CDN的入口作为其源域。 例如 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
+1. 将SNI设置为Adobe CDN的入口。
 1. 将Host标头设置为原始域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如：`X-Forwarded-Host:example.com`。
 1. 设置`X-AEM-Edge-Key`。 应使用Cloud Manager配置管道配置该值，如[本文](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)中所述。
 
-   * 需要，以便AdobeCDN能够验证请求的源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，受信任的调用方（即客户管理的CDN）有责任确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。
-   * （可选）当`X-AEM-Edge-Key`不存在时，可以阻止对AdobeCDN入口的访问。 如果需要直接访问AdobeCDN的入口，请通知Adobe（将被阻止）。
+   * 需要，以便Adobe CDN能够验证请求的源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，受信任的调用方（即客户管理的CDN）有责任确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。
+   * 或者，也可以在`X-AEM-Edge-Key`不存在时阻止对Adobe CDN入口的访问。 如果您需要直接访问Adobe CDN的入口（将被阻止），请通知Adobe。
 
 有关主要CDN供应商的配置示例，请参阅[示例CDN供应商配置](#sample-configurations)部分。
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->使用您自己的CDN时，您不需要在Cloud Manager中安装域和证书。 AdobeCDN中的路由是使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，该域应在`Host`标头中发送。 使用自定义域名覆盖请求`Host`标头可能会通过AdobeCDN错误地路由该请求，或导致421错误。
+>使用您自己的CDN时，您不需要在Cloud Manager中安装域和证书。 Adobe CDN中的路由是使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，该域应在`Host`请求标头中发送。 使用自定义域名覆盖请求`Host`标头可能会将该请求错误地通过Adobe CDN路由，或导致421错误。
 
 >[!NOTE]
 >
@@ -212,7 +212,7 @@ AEM托管的CDN通过以下方式向每个请求添加标头：
 >
 >如果存在客户管理的CDN，则这些标头反映的是客户CDN代理服务器的位置，而不是实际客户端的位置。 使用客户管理的CDN时，客户应通过自己的CDN管理地理位置标头。
 
-国家/地区代码的值是[ISO 3166-1](https://zh.wikipedia.org/wiki/cn/ISO_3166-1)下描述的Alpha2代码。
+国家/地区代码的值是[ISO 3166-1](https://zh.wikipedia.org/wiki/cn/ISO_3166-1)下描述的Alpha-2代码。
 
 大陆代码的值为：
 

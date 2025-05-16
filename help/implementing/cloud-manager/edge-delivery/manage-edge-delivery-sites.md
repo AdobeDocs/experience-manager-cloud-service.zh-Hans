@@ -4,10 +4,10 @@ description: 了解如何将 CDN 配置添加到 Edge Delivery Site或删除 Edg
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 76%
 
 了解如何通过向现有 Site 添加 CDN 配置来管理 Cloud Manager 中的 Edge Delivery Sites。或删除 Edge Delivery Site。
 
-## 将 CDN 配置添加到现有的 Edge Delivery Site {#add-cdn-to-edge-delivery-site}
+## 将域映射添加到现有Edge Delivery站点 {#add-cdn-to-edge-delivery-site}
 
-请参阅[添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+请参阅[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 ## 重命名 Edge Delivery Site (#rename-edge-delivery-site)
 
@@ -33,7 +33,7 @@ ht-degree: 76%
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台中，选择配置了 Edge Delivery Services 的程序，您要在其中添加 Edge Delivery Site。
 1. 执行以下任一操作：
 
-   * 从&#x200B;**程序概览**&#x200B;页面，单击 **Edge Delivery** 选项卡。在 Edge Delivery Site 表中，单击要重命名其 Site 的行末尾的省略号。单击&#x200B;**重命名**。
+   * 从&#x200B;**程序概述**&#x200B;页面，单击 **Edge Delivery** 选项卡。在 Edge Delivery Site 表中，单击要重命名其 Site 的行末尾的省略号。单击&#x200B;**重命名**。
    * 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。在&#x200B;**服务**&#x200B;标题下，单击 ![Web 页面图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**。
 在 Edge Delivery Site 表中，单击要重命名其 Site 的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。单击&#x200B;**重命名**。
 
@@ -51,7 +51,7 @@ ht-degree: 76%
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台中，选择配置了 Edge Delivery Services 的程序，您要在其中添加 Edge Delivery Site。
 1. 执行以下任一操作：
 
-   * 从&#x200B;**程序概览**&#x200B;页面，单击 **Edge Delivery** 选项卡。在 Edge Delivery Site 表中，单击要移除其 Site 的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+   * 从&#x200B;**程序概述**&#x200B;页面，单击 **Edge Delivery** 选项卡。在 Edge Delivery Site 表中，单击要移除其 Site 的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 单击![删除 Edge Delivery Site 图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**删除**，然后再次单击&#x200B;**删除**&#x200B;以确认移除该 Site。
 
      ![从 Edge Delivery 选项卡添加 Edge Delivery Site](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
@@ -61,28 +61,28 @@ ht-degree: 76%
 
      ![通过 Edge Delivery Sites 按钮添加 Edge Delivery Site](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## 在Helix 4和Helix 5之间管理Edge Delivery站点
+## 管理 Helix 4 和 Helix 5 之间的 Edge Delivery 站点
 
-使用`/program/{programId}/site/{siteId}` API端点在Helix 4和Helix 5之间迁移Edge Delivery站点。
+使用`/program/{programId}/site/{siteId}` API 端点在 Helix 4 和 Helix 5 之间迁移 Edge Delivery 站点。
 
 >[!IMPORTANT]
 >
->无法将Helix 4网站的CDN配置自动迁移到Helix 5。 存在此限制是因为客户生产站点可能仍在Helix 4上运行，而其Helix 5版本仍在开发中。
+>Helix 4 网站的 CDN 配置无法自动迁移到 Helix 5。存在这种限制是因为客户生产站点可能仍在 Helix 4 上运行，而他们的 Helix 5 版本仍在开发中。
 
-**前提条件**
+**先决条件**
 
-* `sitename`必须已存在。
-* 了解相应的`branchName`、Helix `version`和`repo`值。
-* 迁移仅修改`branchName`、Helix `version`和`repo`。 无法更改所有者字段。
+* `sitename` 必须已经存在。
+* 了解适当的 `branchName`、Helix `version` 和 `repo` 值。
+* 迁移仅更改 `branchName`、Helix `version` 和 `repo`。所有者字段无法更改。
 
-**API格式**
+**API 格式**
 
 ```http
 PUT /api/program/{programId}/site/{siteId}
 ```
 
 **请求正文参数**
-为Edge Delivery站点创建覆盖，以强制实施请求正文中指定的来源。
+为 Edge Delivery 站点创建一个覆盖，以强制执行请求正文中指定的来源。
 
 ```json
 {
@@ -93,7 +93,7 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-### 示例1：迁移到Helix 5
+### 示例 1：迁移到 Helix 5
 
 **http**
 
@@ -112,13 +112,13 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**源URL结果**
-返回具有以下源URL的Edge Delivery网站：
+**来源 URL 结果**
+返回具有以下来源 URL 的 Edge Delivery 站点：
 
 `"origin": "branch--my-website–Teo48.aem.live"`
 
 
-### 示例2：迁移到Helix 4
+### 示例 2：迁移到 Helix 4
 
 **http**
 
@@ -137,12 +137,12 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**源URL结果**
-返回具有以下源URL的Edge Delivery Site：
+**来源 URL 结果**
+返回具有以下来源 URL 的 Edge Delivery 站点：
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### 示例3：将可重写站点迁移到Helix 5
+### 示例 3：将无重复站点迁移到 Helix 5
 
 **http**
 
@@ -161,8 +161,8 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**源URL结果**
-返回具有以下源URL的Edge Delivery网站：
+**来源 URL 结果**
+返回具有以下来源 URL 的 Edge Delivery 站点：
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 

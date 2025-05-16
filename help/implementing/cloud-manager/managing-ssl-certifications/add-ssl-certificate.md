@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如果您使用客户管理的(OV/EV) SSL证书和客户管理的CDN提供程序，则可以跳过添加SSL证书，并在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+>如果您使用客户管理的(OV/EV) SSL证书和客户管理的CDN提供商，则可以跳过添加SSL证书，并在准备就绪后直接转到[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 配置证书可能需要几天时间。 因此，Adobe建议在任何截止日期或上线日期之前提前配置您自己的证书，以避免延迟。
 
@@ -85,7 +85,7 @@ ht-degree: 6%
 
 您现在已为项目添加了一个有效的Adobe托管的DV SSL证书。 此步骤通常是第一个设置自定义域名的步骤。
 
-您现在已准备好添加[CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+您现在已准备好添加[CDN配置](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 ## 添加客户管理的(OV/ED) SSL证书 {#add-customer-managed-ssl-cert}
 
@@ -113,7 +113,7 @@ ht-degree: 6%
 
 1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据[您的特定用例](#which-ssl-to-add)，选择&#x200B;**客户管理的(OV/EV)**。
 
-1. 在&#x200B;**证书名称**&#x200B;字段中，输入证书的名称。
+1. 在&#x200B;**证书名称**字段中，输入证书的名称。
 此字段仅供参考，可以是任何有助于您轻松引用SSL证书的名称。
 
 1. 在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;字段中，复制OV或EV SSL证书中的必需值，并将其粘贴到对话框中各自的字段中。
@@ -132,7 +132,7 @@ ht-degree: 6%
 
 您现在已为项目添加了一个有效的SSL证书。 此步骤通常是第一个设置自定义域名的步骤。
 
-您现在已准备好添加[CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+您现在已准备好添加[CDN配置](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 
 

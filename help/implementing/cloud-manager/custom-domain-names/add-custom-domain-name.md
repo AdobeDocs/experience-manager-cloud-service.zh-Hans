@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 16%
@@ -49,7 +49,7 @@ ht-degree: 16%
 
 1. 在&#x200B;**域设置**&#x200B;页面的右上角附近，单击&#x200B;**添加域**。
 
-1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**&#x200B;字段中，输入您正在使用的自定义域名。
+1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
 输入域名时，不要包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -75,7 +75,7 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >如果您使用自己的客户管理的（OV/EV或DV） SSL证书，则无需添加SSL证书。 如果您计划使用客户管理的CDN （内容交付网络） ***提供程序***，则此规则也适用。 相反，请在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用自己的客户管理的（OV/EV或DV） SSL证书，则无需添加SSL证书。 如果您计划使用客户管理的CDN （内容交付网络） ***提供程序***，则此规则也适用。 准备就绪后，请直接转到[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 
 ### Adobe托管的证书步骤 {#adobe-managed-cert-steps}
