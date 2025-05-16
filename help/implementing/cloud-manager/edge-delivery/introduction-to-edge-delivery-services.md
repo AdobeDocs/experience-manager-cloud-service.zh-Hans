@@ -83,7 +83,7 @@ Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入
 | 7 | 设置推送验证 | 请参阅[为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
 | 8 | 上线 | 请参阅[上线清单](/help/edge/docs/go-live-checklist.md)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441572?learn=on&captions=chi_hans)
 
 ## 记录支持工单 {#eds-support-ticket}
 
