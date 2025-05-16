@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 89%
 
 ## Edge Delivery Services 表单片段的功能
 
-* **与表单片段保持一致**
-您可以将片段集成到不同的表单中，从而帮助您保持一致的布局和标准化的内容。
+* **使用表单片段保持一致性：**
+您可以将片段集成到不同的表单中，有助于保持一致的布局和标准化的内容。
 
   >[!NOTE]
   >
-  > 通过“更改一次，随处反映”方法，对片段所做的任何更新都会在预览模式下自动应用于所有表单。 但是，在发布模式下，必须发布片段或重新发布表单才能反映更改。
+  > 通过“一次更改，随处反映”的方法，对片段所做的任何更新都会在预览模式中自动应用于所有表单。但是在发布模式下，您必须发布片段或重新发布表单才能反映更改。
 
 * **在表单中多次添加表单片段：**
 您可以在一个表单中多次添加某个表单片段，并将其数据绑定属性配置为数据源或模式。
@@ -44,13 +44,13 @@ ht-degree: 89%
 ## 使用 Edge Delivery Services 表单片段时的考虑事项
 
 * 您需要将同一个 GitHub URL 添加到片段以及您打算使用该片段的表单中。
-* 您不能编辑表单中的表单片段。 要进行更改，请修改独立的表单片段。
+* 您不能编辑一个表单内的表单片段。要进行更改，请更改独立的表单片段。
 
 ## 先决条件
 
 * [设置您的 GitHub 存储库](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)，以在您的 AEM 环境和 GitHub 存储库之间建立连接。
 * 如果您已经在使用 Edge Delivery Services，请将最新版本的 [Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) 添加到您的 GitHub 存储库。
-* AEM Forms创作实例包括一个基于Edge Delivery Services的模板。
+* AEM Forms 作者实例包含一个基于 Edge Delivery Services 的模板。
 * 保存 AEM Forms as a Cloud Service 作者实例的 URL 和您方便的 GitHub 存储库。
 
 ## 使用 Edge Delivery Services 表单片段
@@ -72,7 +72,7 @@ ht-degree: 89%
    ![创建片段](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    现在会出现&#x200B;**创建自适应表单片段**&#x200B;向导。
-1. 从&#x200B;**选择模板**&#x200B;选项卡中选择基于Edge Delivery Services的模板，然后单击&#x200B;**[!UICONTROL 下一步]**。
+1. 从&#x200B;**选择模板**&#x200B;选项卡中选择基于 Edge Delivery Services 的模板，然后点击&#x200B;**[!UICONTROL 下一步]**。
    ![选择 Edge Delivery Services 模板](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 指定片段的标题、名称、描述和标记。确保为片段指定唯一的名称。如果存在另一个同名的片段，该片段创建就会失败。
@@ -114,7 +114,7 @@ ht-degree: 89%
 
 ### 将表单片段添加到一个表单
 
-让我们创建一个包含员工和主管信息的简单`Employee Details`表单。 您可以在员工和主管面板中使用 `Contact Details` 片段。要在表单中使用表单片段，请执行以下步骤：
+让我们创建一个包含员工和主管信息的简单 `Employee Details` 表单。您可以在员工和主管面板中使用 `Contact Details` 片段。要在表单中使用表单片段，请执行以下步骤：
 
 1. 在编辑模式下打开该表单。
 1. 将表单片段组件添加到表单。
@@ -123,7 +123,7 @@ ht-degree: 89%
 
    ![导航到该部分](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**组件。
    ![添加表单片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    如果您选择了&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件，片段就会添加到您的表单中。您可以打开已添加片段的&#x200B;**属性**，对其进行配置。例如，在片段的&#x200B;**属性**&#x200B;中隐藏其标题。
@@ -138,7 +138,7 @@ ht-degree: 89%
 
 1. 单击&#x200B;**[!UICONTROL 选择]**。
 
-   该表单片段将引用该表单片段进行添加，并且保持与独立表单片段的同步。
+   表单片段通过引用添加到表单，并与独立表单片段保持同步。
 
    ![表单中的片段](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
