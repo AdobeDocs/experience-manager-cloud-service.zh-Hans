@@ -70,7 +70,7 @@ ht-degree: 4%
 
 具有OpenAPI功能的[!DNL Dynamic Media]将DAM置于灵活而高效的内容供应链生态系统的核心，以确保资产治理和交付。
 
-启用[!DNL Dynamic Media] Ultimate过程中的第一步是使用OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)为您的Cloud Service环境激活[[!DNL Dynamic Media] 。
+启用[!DNL Dynamic Media] Ultimate过程中的第一步是使用OpenAPI[&#128279;](/help/assets/dynamic-media-open-apis-overview.md)为您的Cloud Service环境激活[!DNL Dynamic Media] 。
 
 #### 准备开始使用 {#prerequisites}
 
@@ -94,7 +94,7 @@ ht-degree: 4%
 
 1. 在确认对话框中单击&#x200B;**[!UICONTROL 激活]**&#x200B;以开始[!DNL Dynamic Media with OpenAPI]激活过程。 成功激活后，Cloud Manager会显示以下状态更新：
    1. **[!UICONTROL 环境阶段]**： **[!UICONTROL 正在运行]**
-   1. ![已激活DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL &#x200B;已激活OpenAPI功能&#x200B;]**
+   1. ![已激活DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B;已激活OpenAPI功能&#x200B;]**
 
       ![激活成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -103,7 +103,7 @@ ht-degree: 4%
 如果激活失败，Cloud Manager会显示以下状态更新：
 
 * **[!UICONTROL 环境暂存]**：**[!UICONTROL OpenAPI的DM失败]**
-* ![DM已激活](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能无法激活&#x200B;]**
+* ![DM已激活](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI功能无法激活&#x200B;]**
 
   ![重试激活](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
