@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 81%
 
 ---
@@ -165,14 +165,14 @@ ht-degree: 81%
 ![内容片段控制台 – 选定片段的工具栏](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[在新编辑器中打开](#editing-the-content-of-your-fragment)**
-* **[打开](/help/assets/content-fragments/content-fragments-variations.md)**（在原始编辑器中）
 * **[发布](#publishing-and-previewing-a-fragment)**（和&#x200B;**[取消发布](#unpublishing-a-fragment)**）
 * **[管理标记](#manage-tags)**
-* **[复制](/help/assets/manage-digital-assets.md)**
-* **[移动](/help/assets/manage-digital-assets.md)**
-* **[重命名](/help/assets/manage-digital-assets.md)**
-* **[删除](#deleting-a-fragment)**
+* **复制**
 * **[替换](#find-and-replace)**
+* **移动**
+* **重命名**
+* **[删除](#deleting-a-fragment)**（仅适用于未发布的片段）
+
 
 >[!NOTE]
 >
