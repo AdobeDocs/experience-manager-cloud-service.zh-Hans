@@ -1,21 +1,23 @@
 ---
-title: 在Cloud Manager中只需单击一下即可创建Edge Delivery站点
+title: 只需单击一下即可创建您的第一个Edge Delivery站点
 description: 了解如何通过单击按钮在 Cloud Manager 中快速创建 Edge Delivery Site。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 767b1f89f42340cc9307a43ff9e97e9a074e592e
+source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 97%
+source-wordcount: '945'
+ht-degree: 95%
 
 ---
 
-# 关于在Cloud Manager中通过一次单击创建Edge Delivery站点{#about-one-click-edge-delivery-site}
+# 只需单击一下即可创建您的第一个Edge Delivery站点{#about-one-click-edge-delivery-site}
 
-创建 Edge Delivery Site 功能旨在帮助您自动完成 Cloud Manager 中 Edge Delivery Sites 的加入和部署。只需单击一个按钮即可，这大大简化了流程。单击即可设置所需的基础架构，与 GitHub 集成以进行版本控制，并在 Google Drive 中配置您的文档和资产存储。
+一键创建您的第一个Edge Delivery站点旨在帮助您在Cloud Manager中自动载入和部署Edge Delivery站点。 只需单击一个按钮即可，这大大简化了流程。单击即可设置所需的基础架构，与 GitHub 集成以进行版本控制，并在 Google Drive 中配置您的文档和资产存储。
 
 这种自动化有助于减少设置初始 Site 所需的手动工作量。它可确保无缝的工作流和可扩展性，并在管理边缘内容时提高团队的绩效。
+
+<!-- ADD LINK TO DORU'S VIDEO DEMO -->
 
 <!-- >
 ## Practical use cases {#use-cases}
