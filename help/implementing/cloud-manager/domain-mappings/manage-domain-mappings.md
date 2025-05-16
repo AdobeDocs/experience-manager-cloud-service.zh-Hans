@@ -5,14 +5,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 41f4619728e7c9a964f38c0d96b3cb88969c31b8
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 8%
 
 ---
 
-# 管理域映射 {#manage-cdn-configurations}
+# 管理域映射 {#manage-domain-mappings}
 
 了解如何使用Cloud Manager编辑或删除Edge Delivery站点或Cloud Manager环境的CDN配置。
 
@@ -47,7 +47,7 @@ ht-degree: 8%
 
 ## 从环境页面编辑CDN配置
 
-从&#x200B;**环境**&#x200B;页面编辑CDN配置的步骤与从“域映射”页面[&#128279;](#edit-cdn)编辑CDN配置的步骤几乎相同，但入口点不同。
+从&#x200B;**环境**&#x200B;页面编辑CDN配置的步骤与从“域映射”页面](#edit-cdn)编辑CDN配置的步骤[几乎相同，但入口点不同。
 
 **若要从环境页面编辑CDN配置：**
 
@@ -116,7 +116,7 @@ ht-degree: 8%
 
 ## 从环境页面删除CDN配置
 
-从&#x200B;**环境**&#x200B;页面中删除CDN配置的步骤与从“域映射”页面[&#128279;](#edit-cdn)中删除CDN配置的步骤几乎相同，但入口点不同。
+从&#x200B;**环境**&#x200B;页面中删除CDN配置的步骤与从“域映射”页面](#edit-cdn)中删除CDN配置的步骤[几乎相同，但入口点不同。
 
 **要从环境页面删除CDN配置：**
 
