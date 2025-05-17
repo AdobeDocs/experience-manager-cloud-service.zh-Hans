@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 41f4619728e7c9a964f38c0d96b3cb88969c31b8
+source-git-commit: c1040572085183f0ddd2a12f159f74e399c12df3
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 了解如何使用Cloud Manager编辑或删除Edge Delivery站点或Cloud Manager环境的CDN配置。
 
-## 从域映射页面编辑CDN配置 {#edit-cdn}
+## 从域映射页面编辑CDN配置 {#edit-domain-mapping}
 
 在Adobe Cloud Manager中，出于多种原因，您可能希望编辑CDN（内容分发网络）配置，包括环境层（发布或预览）和SSL证书。
 
@@ -47,7 +47,7 @@ ht-degree: 8%
 
 ## 从环境页面编辑CDN配置
 
-从&#x200B;**环境**&#x200B;页面编辑CDN配置的步骤与从“域映射”页面[&#128279;](#edit-cdn)编辑CDN配置的步骤几乎相同，但入口点不同。
+从&#x200B;**环境**&#x200B;页面编辑CDN配置的步骤与从“域映射”页面](#edit-cdn)编辑CDN配置的步骤[几乎相同，但入口点不同。
 
 **若要从环境页面编辑CDN配置：**
 
@@ -116,7 +116,7 @@ ht-degree: 8%
 
 ## 从环境页面删除CDN配置
 
-从&#x200B;**环境**&#x200B;页面中删除CDN配置的步骤与从“域映射”页面[&#128279;](#edit-cdn)中删除CDN配置的步骤几乎相同，但入口点不同。
+从&#x200B;**环境**&#x200B;页面中删除CDN配置的步骤与从“域映射”页面](#edit-cdn)中删除CDN配置的步骤[几乎相同，但入口点不同。
 
 **要从环境页面删除CDN配置：**
 

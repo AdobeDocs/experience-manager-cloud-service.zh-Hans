@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 41f4619728e7c9a964f38c0d96b3cb88969c31b8
+source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 9%
@@ -13,7 +13,7 @@ ht-degree: 9%
 ---
 
 
-# 添加域映射 {#add-cdn}
+# 添加域映射 {#add-domain-mapping}
 
 要将域与项目中由Adobe管理的CDN上的SSL证书链接，您必须添加CDN（内容分发网络）配置。
 
