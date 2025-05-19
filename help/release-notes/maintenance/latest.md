@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 14%
+source-wordcount: '1482'
+ht-degree: 13%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 14%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 20783 {#20783}
+## 版本 20936 {#20936}
 
-以下总结了维护版本20783的持续改进，该版本于2025年5月13日公开发布。 上一个维护版本是版本 20626。
+以下总结了维护版本20936的持续改进，该版本于2025年5月19日公开发布。 上一个维护版本是版本 20626。
 
-激活 2025.5.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2025.5.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-20783}
+>[!NOTE]
+>
+>发行说20783已于5月19日设为私有，并已被发行说20936取代。
+
+### 增强功能 {#enhancements-20936}
 
 * Forms-19125：核心组件自适应表单编辑器已得到增强，可在数据源树中的相应部分放入表单画布中时支持自动映射可用的自适应表单片段。 这会将基础编辑器的关键工作效率功能引入核心组件。
 * Forms-17107：AEM Forms现在提供增强的客户端自定义函数解析功能。 这包括支持现代JavaScript功能(ECMAScript ES10+)，例如可选链接，并引入了在自定义函数脚本中使用静态导入的功能。 这允许开发人员更好地组织代码，利用ESM模块，并移除在基于核心组件和Edge Delivery Services的自适应Forms中使用自定义函数时遇到的先前限制，特别是对于之前需要对这些功能采取变通办法的用户。
@@ -46,7 +50,7 @@ ht-degree: 14%
 * SITES-26711： RTE文本字段的链接未更新为指向MSM转出时的Live Copy。
 * SITES-25976：体验片段中的链接在MSM转出后不适用。
 
-### 修复的问题 {#fixed-issues-20783}
+### 修复的问题 {#fixed-issues-20936}
 
 * Assets-50994：传入流量在AemRequestEventFilter中被阻止。
 * CQ-4358591：从具有“创建翻译项目”选项的站点引用面板创建语言副本时，缺少少数语言的项目。
@@ -92,21 +96,22 @@ ht-degree: 14%
 * SITES-31020：增强创建Live Copy作业UI以向客户显示进度。
 * SITES-29816：创建体验片段的实时副本时出现“未找到资源”错误。
 * SITES-29363：重置实时复制按钮不可用于嵌套的实时复制内容层级。
+* SITES-31467：页面编辑器中来自`contexthub.authoring-hook.js`的JS错误。
 * SKYOPS-106509：添加补充的加载打开标志，以支持Java 21上的GSON反射访问。
 
-### 已知问题 {#known-issues-20783}
+### 已知问题 {#known-issues-20936}
 
-无。
+* SITES-28030：选择定位选项时缺少开始定位选项。
 
-### 已弃用的功能和 API {#deprecated-20783}
+### 已弃用的功能和 API {#deprecated-20936}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-20783}
+### 安全修复 {#security-20936}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 19 个已发现的漏洞，增强了我们对实现强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-20783}
+### 嵌入的技术 {#embedded-tech-20936}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
