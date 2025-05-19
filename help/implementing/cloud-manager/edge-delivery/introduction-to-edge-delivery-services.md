@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 传递您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 9d866df00c25a827d351fcaf21a8c63ab04e6e41
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 99%
+source-wordcount: '806'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,8 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 * [访问 SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)（*即将推出*）
 * 为您注册的生产程序[获取 Adobe 支持](/help/edge/overview.md#support-ticket)。
 
-此外，使用 Cloud Manager 可以让您为您的 Edge Delivery Site 使用 [Adobe 托管的内容传递网络](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，并享受自助式内容传递网络管理（包括配置和添加 DV 证书）等关键优势。此外，在创建 DV 证书后，Adobe 会每三个月自动续期一次，除非该证书被删除。如果您没有 Adobe 的 Edge Delivery Services 许可证，并决定放弃这些优势，那么您只能使用您自己的自托管内容传递网络。此设置必须位于 [`aem.live` 平台](https://www.aem.live/docs/go-live-checklist#cdn-configuration)上。
+此外，使用 Cloud Manager 可以让您为您的 Edge Delivery Site 使用 [Adobe 托管的内容传递网络](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，并享受自助式内容传递网络管理（包括配置和添加 DV 证书）等关键优势。此外，在创建 DV 证书后，Adobe 会每三个月自动续期一次，除非该证书被删除。如果您没有使用Adobe的Edge Delivery Services许可证，并选择使用您自己的自托管CDN，则该安装程序必须在[`aem.live`平台](https://www.aem.live/docs/go-live-checklist#cdn-configuration)上运行。
+
 
 ## 关于将 Edge Delivery Services 添加到生产程序或沙盒程序中
 
@@ -83,7 +84,7 @@ Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入
 | 7 | 设置推送验证 | 请参阅[为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
 | 8 | 上线 | 请参阅[上线清单](/help/edge/docs/go-live-checklist.md)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441572?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 记录支持工单 {#eds-support-ticket}
 
