@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
+source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
 workflow-type: tm+mt
-source-wordcount: '6157'
+source-wordcount: '6162'
 ht-degree: 99%
 
 ---
@@ -1227,8 +1227,9 @@ ht-degree: 99%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [在 Cloud Manager 中创建 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [只需单击一下即可创建您的第一个Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+         + [配置您的内容Source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 域设置 {#custom-domain-names}
          + [域设置简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
