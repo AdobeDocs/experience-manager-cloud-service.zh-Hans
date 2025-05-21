@@ -31,7 +31,7 @@ Helix 4 和 Helix 5 的内容源配置有以下几个不同之处：
 **确定您的 Helix 版本**
 
 * Helix 4 - 您的项目包含一个 `fstab.yaml` 文件。
-* Helix 5 — 您的项目&#x200B;*不*&#x200B;使用`fstab.yaml`，已使用引导式向导](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)或API通过[Cloud Manager进行设置。
+* Helix 5 — 您的项目&#x200B;*不*&#x200B;使用`fstab.yaml`，已使用引导式向导[&#128279;](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)或API通过Cloud Manager进行设置。
 
 如果您仍然不确定，请通过存储库元数据确认或者咨询您的管理员。
 
