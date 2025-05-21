@@ -1,14 +1,14 @@
 ---
-title: 应用和取消应用IP允许列表
+title: 应用和取消应用 IP 允许列表
 description: 了解如何对Cloud Manager环境应用和取消应用IP允许列表。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: aa33f84e6b38019f41ea0a4db8f49ccc201869f7
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
