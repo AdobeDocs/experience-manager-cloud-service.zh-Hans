@@ -1,21 +1,21 @@
 ---
-title: 使用OpenAPI的AEM内容片段交付
+title: 通过 OpenAPI 进行 AEM 内容片段传递
 description: 了解使用OpenAPI的tAEM内容片段交付
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 0%
+source-wordcount: '308'
+ht-degree: 4%
 
 ---
 
-# 使用OpenAPI的AEM内容片段交付 {#aem-content-fragment-delivery-with-openapi}
+# 通过 OpenAPI 进行 AEM 内容片段传递 {#aem-content-fragment-delivery-with-openapi}
 
 在Adobe Experience Manager (AEM) as a Cloud Service中，用于内容片段投放的AEM OpenAPI：
 
-* 是[AEM Edge Delivery Services](/help/edge/overview.md)上的HTTP REST API，旨在以JSON格式从内容片段提供结构化内容
+* 是一个OpenAPI，它针对JSON格式的AEM内容片段的实时投放进行了优化
 * 提供允许活动内容失效的现代CDN集成
 * 侧重于内容交付（性能、可扩展性、CDN集成、优化的JSON控制和输出）
 * 包括为引用的片段和资产水合JSON的功能
