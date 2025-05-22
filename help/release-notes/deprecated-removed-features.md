@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
 workflow-type: tm+mt
 source-wordcount: '2560'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -139,7 +139,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>此 API 已被弃用，因为 Apache Abdera 自 2017 年起已停用。</td>
-    <td>2019年4月8日</td>
+    <td>4/8/2019</td>
     <td>8/31/2025</td>
   </tr>
   <tr>
@@ -213,13 +213,13 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob。*</td>
-    <td>此API仅供内部使用。</td>
+    <td>此 API 仅供内部使用。</td>
     <td>9/23/2024</td>
     <td>8/31/2025</td>
   </tr>       
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
-    <td>此API仅供内部使用。</td>
+    <td>此 API 仅供内部使用。</td>
     <td>9/23/2024</td>
     <td>8/31/2025</td>
   </tr>       
@@ -302,7 +302,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.cache</td>
-    <td>此API仅供内部使用。</td>
+    <td>此 API 仅供内部使用。</td>
   </tr>
 </tbody>
 </table>
