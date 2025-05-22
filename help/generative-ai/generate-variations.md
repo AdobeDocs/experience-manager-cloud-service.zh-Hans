@@ -4,10 +4,10 @@ description: 了解可从 AEM as a Cloud Service 和 Edge Delivery Services 的 
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: ht
-source-wordcount: '3287'
-ht-degree: 100%
+source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
+workflow-type: tm+mt
+source-wordcount: '3294'
+ht-degree: 99%
 
 ---
 
@@ -490,6 +490,7 @@ Adobe 提供了多种受众可以使用。
 
 * [GenAI 在 GitHub 上生成变体](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 试验](https://www.aem.live/docs/experimentation)
+* [AEM as a Cloud Service中的创作](/help/generative-ai/generative-ai-in-aem.md)
 
 ## 常见问题解答 {#faqs}
 

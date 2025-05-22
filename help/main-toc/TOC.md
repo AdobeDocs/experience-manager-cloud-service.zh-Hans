@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
 workflow-type: tm+mt
-source-wordcount: '6162'
+source-wordcount: '6169'
 ht-degree: 99%
 
 ---
@@ -1011,10 +1011,10 @@ ht-degree: 99%
       + [管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [所见即所得和基于文档的 Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [包含 DAM 资产的页面](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [跨 Sites 重用代码](/help/edge/wysiwyg-authoring/repoless.md)
-      + [无重复多 Site 管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [无重复阶段和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [配置 Site 身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [跨网站重用代码](/help/edge/wysiwyg-authoring/repoless.md)
+      + [无重复多网站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [无重复的暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [配置网站身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [WIP Site 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
@@ -1166,6 +1166,7 @@ ht-degree: 99%
          + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
+   + [AEM as a Cloud Service中的创作](/help/generative-ai/generative-ai-in-aem.md)
    + [生成变体](/help/generative-ai/generate-variations.md)
    + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
    + [助手（有限 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
