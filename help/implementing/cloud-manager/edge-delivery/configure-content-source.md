@@ -30,12 +30,12 @@ Adobe Experience Manager (AEM) Edge Delivery Services 允许使用一个全球�
 
 **开始之前**
 
-如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[单击Edge Delivery，则您的网站正在将Helix 5与单个存储库一起使用。 [按照Helix 5说明进行操作](#config-helix5)，然后使用提供的Helix 4 YAML版本说明作为后备。
+如果您在Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用单击Edge Delivery，则您的网站正在将Helix 5与单个存储库一起使用。 [按照Helix 5说明进行操作](#config-helix5)，然后使用提供的Helix 4 YAML版本说明作为后备。
 
 **确定您的 Helix 版本**
 
 * Helix 4 - 您的项目包含一个 `fstab.yaml` 文件。
-* Helix 5 — 您的项目&#x200B;*不*&#x200B;使用`fstab.yaml`，已使用引导式向导](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)或API通过[Cloud Manager进行设置。
+* Helix 5 — 您的项目&#x200B;*不*&#x200B;使用`fstab.yaml`，已使用引导式向导[&#128279;](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)或API通过Cloud Manager进行设置。
 
 如果您仍然不确定，请通过存储库元数据确认或者咨询您的管理员。
 
