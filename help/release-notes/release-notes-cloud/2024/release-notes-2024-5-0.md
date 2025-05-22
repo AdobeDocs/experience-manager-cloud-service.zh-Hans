@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.5.0 版�
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 99%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2022 版或 2023 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 请查看 2024 年 5 月发布概述视频，了解 2024.5.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3448072?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,10 @@ ht-degree: 99%
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### 实际使用情况监控 (RUM) 数据服务 {#real-use-monitoring}
+#### 操作遥测服务 {#real-use-monitoring}
 
-* **[真实用户监控 (RUM) 数据服务现已全面上线](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**，可为 AEM as a Cloud Service 启用客户端数据收集功能。客户端收藏集的真实使用情况监控服务能够更准确地反映交互情况，确保可靠地衡量网站参与度。它使客户能够深入了解其页面流量和性能。这是深入了解您的页面性能并获取改进建议的绝佳机会。
+* **[可操作遥测服务现在为GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**，可为AEM as a Cloud Service启用客户端数据收集。
+客户端收藏集的真实使用情况监控服务能够更准确地反映交互情况，确保可靠地衡量网站参与度。它使客户能够深入了解其页面流量和性能。这是深入了解您的页面性能并获取改进建议的绝佳机会。
 
 #### 适用于 Edge Delivery Services 的 AEM 创作 {#edge-enhancements}
 

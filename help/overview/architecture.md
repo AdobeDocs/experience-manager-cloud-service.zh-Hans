@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 100%
+source-wordcount: '2712'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service 架构简介"
 >abstract="在此选项卡中，您可以查看 AEM as a Cloud Service 的新架构并了解更改。AEM 产生了一种动态架构，其中具有可变数量的图像，因此花时间了解云架构很重要。"
->additional-url="https://video.tv.adobe.com/v/346179?captions=chi_hans" text="架构概述"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="架构概述"
 
 Adobe Experience Manager (AEM) as a Cloud Service 提供一组可组合的服务，以创建和管理极具影响力的体验。
 
@@ -138,7 +138,7 @@ AEM as a Cloud Service 有四种类型的[环境](/help/implementing/cloud-manag
 * 数据服务：
    * 负责公开客户数据，例如许可量度（例如内容请求、存储、用户）或使用情况报告（例如上传和下载次数）。
    * 可通过 API 公开客户数据，也可在产品用户界面（如 Cloud Manager）中公开客户数据。
-* Real-User Metric (RUM) 服务：
+* 操作遥测服务：
    * 负责从客户体验收集关键量度（如页面查看次数、Core Web Vital、转化事件数）并对相关的查询（例如过去 7 天内给定域的页面查看次数前几名）作出回应。
 * 资源计算服务：
    * 负责处理上传的图像、视频和文档；例如，PDF 和 Adobe Photoshop 文件。处理操作可使用 Adobe Sensei 提取图像和视频元数据（例如描述性标记或原色色调），然后通过访问 Adobe Photoshop 和 Adobe Lightroom API 等 API 生成演绎版（如各种大小或格式）。
@@ -239,4 +239,4 @@ Cloud Manager 通过使用滚动更新模式更新所有服务节点，完全自
 * Edge Delivery Services：
    * [AEM as a Cloud Service 概述 - 带 Edge Delivery Services](/help/edge/overview.md)
    * [使用 Edge Delivery Services](/help/edge/using.md)
-   * [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hans)
+   * [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

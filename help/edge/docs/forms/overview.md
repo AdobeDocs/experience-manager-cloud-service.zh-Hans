@@ -1,13 +1,13 @@
 ---
 title: 适用于 AEM Forms 的 Edge Delivery Services 概述
-description: 适用于 AEM Forms 的 Edge Delivery Services
+description: '适用于 AEM Forms 的 Edge Delivery Services '
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1037'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 * **使用选定工具创建注册体验**：通过分离内容来源而提高创作效率。您可以使用开箱即用、基于文档的创作功能（Microsoft SharePoint 或 Google Drive）和所见即所得的创作功能（通用编辑器或自适应表单编辑器）。您可以在同一个表单网站上使用多个内容源，并使用首选的创作工具，如 Microsoft Excel、Google Sheets、通用编辑器或自适应表单编辑器。
 
-* **提供卓越的数字注册体验：**&#x200B;提供快速加载和渲染的数字注册体验，并通过实际使用监控 (RUM) 持续监控表单性能。更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
+* **提供卓越的数字注册体验：**&#x200B;通过操作遥测提供快速加载和渲染的数字注册体验，并持续监视表单性能。 更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
 * **使用易于开发人员使用的工具集：** 适用于 AEM Forms 的 Edge Delivery Services 使用纯 HTML、现代 CSS 和普通 JavaScript 来创建卓越的体验，避免特定框架所需的陡峭学习曲线。具有基本 Web 开发技能的开发人员可以自定义并轻松构建表单组件和体验。无需等待管道运行，只需将代码签入 GitHub，所做的更改就会生效。
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 * Google reCAPTCHA 集成用于垃圾邮件防护。
 * 能够根据特定需求创建自定义表单组件。
 * 直接将表单数据提交到 Microsoft Excel 或 Google Sheets 或电子邮件地址。
-* 通过实际使用监控 (RUM) 监控表单性能
+* 通过操作遥测监控表单性能
 
 #### 所见即所得的创作功能
 

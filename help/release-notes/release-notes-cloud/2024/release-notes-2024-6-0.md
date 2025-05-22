@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.6.0 版�
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1967'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 98%
 
 ### Experience Manager Sites 的新增功能 {#new-feature-sites}
 
-**实际使用监控(RUM)数据服务** {#real-use-monitoring}
+**操作遥测数据服务** {#real-use-monitoring}
 
-[实际使用监控 (RUM) 数据服务](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)现已普遍可用，可为 AEM as a Cloud Service 启用客户端数据收集功能。该服务可以更准确地反映用户互动，确保可靠地衡量网站参与度。它为客户提供了有关其页面流量和性能的高级洞察，为了解和提高页面性能提供了宝贵的机会。
+[操作遥测服务](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)现已正式可用，可为AEM as a Cloud Service启用客户端数据收集。 该服务可以更准确地反映用户互动，确保可靠地衡量网站参与度。它为客户提供了有关其页面流量和性能的高级洞察，为了解和提高页面性能提供了宝贵的机会。
 
 ### 早期采用者计划 {#sites-early-adopter}
 

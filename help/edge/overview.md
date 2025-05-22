@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
-workflow-type: ht
-source-wordcount: '1286'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 通过使用 Edge Delivery Services，您可以：
 
-* 快速创建 Lighthouse 分数优异的网站，并通过实际使用监控 (RUM) 持续监控网站性能。
+* 使用完美的Lighthouse得分创建快速站点，并通过操作遥测持续监控站点性能。
 * 通过分离内容来源而提高创作效率。开箱即用，您可以使用通用编辑器进行 AEM 创作，也可以使用基于文档的创作。这样即可在同一网站上使用多个内容源。
 * 使用一个内置的试验框架，通过该框架，可快速地创建测试、不影响性能地执行测试并快速地发布到测试获胜方的生产环境。
 
@@ -102,7 +102,7 @@ Edge Delivery Services 是 Adobe Experience Manager 的一部分。因此，Edge
 
 请参阅 aem.live 文档中的文档[快速入门 - 通用编辑器开发人员教程](https://www.aem.live/developer/ue-tutorial)，了解如何使用 AEM 和 Edge Delivery Services 启动您自己的项目进行创作。
 
-您还可以将 Edge Delivery Services 与 [Adobe Target](https://www.aem.live/developer/target-integration)、[实际使用监控 (RUM)](https://www.aem.live/developer/rum) 结合使用，以诊断网站的使用情况和性能，还可以与[启动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)结合使用。
+您还可以将Edge Delivery Services与[Adobe Target](https://www.aem.live/developer/target-integration)、[操作遥测](https://www.aem.live/developer/rum)一起使用，以诊断站点的使用情况和性能，以及[Launch。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)
 
 ## 从 Adobe 获取帮助 {#getting-help}
 
