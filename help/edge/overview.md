@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 76%
 通过使用 Edge Delivery Services，您可以：
 
 * 快速创建 Lighthouse 分数优异的网站，并通过实际使用监控 (RUM) 持续监控网站性能。
-* 通过分离内容来源而提高创作效率。开箱即用地将AEM创作与通用编辑器结合使用以及基于文档的创作结合使用。 这样即可在同一网站上使用多个内容源。
+* 通过分离内容来源而提高创作效率。开箱即用，您可以使用通用编辑器进行 AEM 创作，也可以使用基于文档的创作。这样即可在同一网站上使用多个内容源。
 * 使用一个内置的试验框架，通过该框架，可快速地创建测试、不影响性能地执行测试并快速地发布到测试获胜方的生产环境。
 
 ## 敏捷响应业务需求 {#agile-reaction}
@@ -46,9 +46,9 @@ ht-degree: 76%
 
 ## 为内容创作者提供灵活的创作工具 {#overview}
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您可以使用[AEM内容管理](/help/sites-cloud/authoring/author-publish.md)和使用[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)进行内容创作，也可以使用[基于文档的创作。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您既可以使用[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)进行 [AEM 内容管理](/help/sites-cloud/authoring/author-publish.md)和内容创作，也可以使用[基于文档的创作。](https://www.aem.live/docs/authoring)
 
-下图说明了如何在Microsoft Word（基于文档的创作）中编辑内容，以及如何使用通用编辑器将内容发布到Edge Delivery Services以及AEM内容创作。
+下图展示了如何在 Microsoft Word（基于文档的创作）中编辑内容并将其发布到 Edge Delivery Services，以及如何使用通用编辑器进行 AEM 内容创作。
 
 ![Edge Delivery 架构](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -67,25 +67,25 @@ Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储
 
 基于文档的创作文档中的进一步阅读内容：
 
-* 有关如何开始使用Edge Delivery的详细信息，请参阅aem.live文档的[内部版本部分。](https://www.aem.live/docs/#build)
-* 要了解如何使用Edge Delivery创作和发布内容，请参阅aem.live文档的[发布部分。](https://www.aem.live/docs/authoring)
-* 要了解如何正确启动您的网站项目，请参阅aem.live文档的[Launch部分](https://www.aem.live/docs/#launch)
+* 有关如何开始使用 Edge Delivery 的详细信息，请参阅 [aem.live 文档的“构建”部分。](https://www.aem.live/docs/#build)
+* 要了解如何使用 Edge Delivery 创作和发布内容，请参阅 [aem.live 文档的“发布”部分。](https://www.aem.live/docs/authoring)
+* 要了解如何正确启动您的网站项目，请参阅 [aem.live 文档的“启动”部分](https://www.aem.live/docs/#launch)
 
-### 使用通用编辑器创作AEM{#wysiwyg-authoring}
+### 使用通用编辑器进行 AEM 创作{#wysiwyg-authoring}
 
-通用编辑器是一个“所见即所得”(WYSIWYG)的可自定义一站式位置，可通过可视化预览实时编辑内容和在上下文中的内容。
+通用编辑器是一个所见即所得 (WYSIWYG) 的可自定义的一站式场所，可通过视觉预览在上下文中实时编辑内容。
 
-* 通过带有通用编辑器的AEM创作，您可以提高Headless或Headful的创作效率。
+* 使用通用编辑器进行 AEM 创作，您可以提高创作效率，无论是无头还是有头创作。
 * 您可以利用 AEM 全面的内容管理功能，包括工作流程和治理。
 * 利用众多扩展点来支持您自己的流程和集成。
 * 您可以使用 GitHub 中的 CSS 和 JavaScript 开发您网站的功能。
 
-使用通用编辑器进行![AEM创作](assets/wysiwyg-authoring.png)
+![使用通用编辑器进行 AEM 创作](assets/wysiwyg-authoring.png)
 
-使用通用编辑器和Edge Delivery Services开始创作AEM：
+开始使用通用编辑器和 Edge Delivery Services 进行 AEM 创作：
 
-* 有关使用通用编辑器进行AEM创作的概述，请参阅aem.live文档中的文档[使用AEM为Edge Delivery Services创作](https://www.aem.live/docs/aem-authoring)。
-* 有关开发人员概述，请参阅aem.live文档中的文档[快速入门 — Universal Editor开发人员教程](https://www.aem.live/developer/ue-tutorial)。
+* 有关使用通用编辑器进行 AEM 创作的概述，请参阅 aem.live 文档中的文档[为 Edge Delivery Services 进行 AEM 创作](https://www.aem.live/docs/aem-authoring)。
+* 有关开发人员概述，请参阅 aem.live 文档中的文档[快速入门 - 通用编辑器开发人员教程](https://www.aem.live/developer/ue-tutorial)。
 
 ### 决定你的创作方法 {#authoring-method}
 
@@ -100,9 +100,9 @@ AEM 的灵活性可确保满足您的创作需求。Adobe 可以帮助您确定�
 
 Edge Delivery Services 是 Adobe Experience Manager 的一部分。因此，Edge Delivery Services 和 AEM Sites 可以在同一个域中共存，这是大型网站的常见用例。此外，您的 AEM Sites 页面可以无缝使用来自 Edge Delivery Services 的内容，反之亦然。
 
-请参阅aem.live文档中的文档[快速入门 — Universal Editor开发人员教程](https://www.aem.live/developer/ue-tutorial)，了解如何开始自己的项目以使用AEM和Edge Delivery Services进行创作。
+请参阅 aem.live 文档中的文档[快速入门 - 通用编辑器开发人员教程](https://www.aem.live/developer/ue-tutorial)，了解如何使用 AEM 和 Edge Delivery Services 启动您自己的项目进行创作。
 
-您还可以将Edge Delivery Services与[Adobe Target](https://www.aem.live/developer/target-integration)、[实时监控(RUM)](https://www.aem.live/developer/rum)以及[Launch结合使用，以诊断网站的使用情况和性能。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)
+您还可以将 Edge Delivery Services 与 [Adobe Target](https://www.aem.live/developer/target-integration)、[实际使用监控 (RUM)](https://www.aem.live/developer/rum) 结合使用，以诊断网站的使用情况和性能，还可以与[启动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)结合使用。
 
 ## 从 Adobe 获取帮助 {#getting-help}
 
@@ -114,7 +114,7 @@ Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
 ### 访问社区资源 {#community-resources}
 
-Adobe致力于使您对Edge Delivery Services、使用通用编辑器进行AEM创作和基于文档的创作获得最佳的社区参与度和支持。
+Adobe 致力于为您提供最佳社区参与度以及有关 Edge Delivery Services、用通用编辑器进行 AEM 创作以及基于文档的创作的大力支持。
 
 * 请在[Experience League 社区](https://adobe.ly/3Q6kTKl)参与提问、分享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/支持者寻求帮助并实时与志同道合的人交流。
 * 加入[Discord 频道](https://discord.gg/aem-live)，通过这个更休闲的平台可实时互动和快速交流想法。
