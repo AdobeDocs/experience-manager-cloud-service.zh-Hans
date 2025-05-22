@@ -239,4 +239,4 @@ Cloud Manager 通过使用滚动更新模式更新所有服务节点，完全自
 * Edge Delivery Services：
    * [AEM as a Cloud Service 概述 - 带 Edge Delivery Services](/help/edge/overview.md)
    * [使用 Edge Delivery Services](/help/edge/using.md)
-   * [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+   * [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hans)
