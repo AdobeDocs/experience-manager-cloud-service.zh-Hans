@@ -458,7 +458,7 @@ ht-degree: 99%
             + [部署自定义主题](/help/journey-sites/quick-site/deploy-theme.md)
       + 重用内容  {#reusing-content}
          + [MSM 和翻译](/help/sites-cloud/administering/msm-and-translation.md)
-         + 多站点管理器 {#msm}
+         + 多 Site 管理器 {#msm}
             + [MSM 和 Live Copy 概述](/help/sites-cloud/administering/msm/overview.md)
             + [配置 Live Copy 同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [创建并同步 Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)
@@ -1012,10 +1012,10 @@ ht-degree: 99%
       + [管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [所见即所得和基于文档的 Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [包含 DAM 资产的页面](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [跨网站重用代码](/help/edge/wysiwyg-authoring/repoless.md)
-      + [无重复多网站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [跨 Sites 重用代码](/help/edge/wysiwyg-authoring/repoless.md)
+      + [无重复多 Site 管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [无重复的暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [配置网站身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [配置 Site 身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [WIP Site 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
@@ -1310,7 +1310,7 @@ ht-degree: 99%
       + 通用编辑器 {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
-         + [通用编辑器和站点编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [通用编辑器和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
          + [组件定义](/help/implementing/universal-editor/component-definition.md)
          + [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)

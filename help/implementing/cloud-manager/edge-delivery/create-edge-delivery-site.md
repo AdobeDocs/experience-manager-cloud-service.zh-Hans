@@ -1,6 +1,6 @@
 ---
 title: 只需单击一下即可创建您的第一个Edge Delivery站点
-description: 了解如何通过单击按钮在 Cloud Manager 中快速创建 Edge Delivery Site。
+description: 了解如何在 Cloud Manager 中一键快速创建 Edge Delivery Site。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
@@ -55,12 +55,11 @@ ht-degree: 95%
 1. 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
 1. 在左侧菜单中，在&#x200B;**程序**&#x200B;标题下，单击&#x200B;**概述**。
 1. 在&#x200B;**程序概述**&#x200B;页面上，单击 **Edge Delivery** 选项卡。
-1. 在 Edge Delivery 页面上的 **Edge Delivery 待办事项列表**&#x200B;对话框中，在&#x200B;**添加 Edge Delivery Site** 组框中，单击&#x200B;**立即创建站点**。
+1. 在 Edge Delivery 页面上的 **Edge Delivery 待办事项列表**&#x200B;对话框中，在&#x200B;**添加 Edge Delivery Site** 组框中，单击&#x200B;**立即创建 Site**。
 1. 在&#x200B;**创建 Edge Delivery Site** 对话框的&#x200B;**项目名称**&#x200B;文本字段中，输入 Site 的名称，然后单击&#x200B;**立即创建 Site**。
 
 
    屏幕顶部中央附近会出现一个提示，通知您 Edge Delivery Site 设置已开始。
-
 
 当 Cloud Manager 完成 Site 设置和验证后，**Site 名称**（您之前输入的项目名称）将会出现在 Edge Delivery 页面上的 **Edge Delivery Sites** 列表框中。此外，存储库 URL 的左侧会出现一个绿色复选标记。
 

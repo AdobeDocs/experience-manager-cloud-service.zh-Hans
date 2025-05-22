@@ -50,7 +50,7 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 
 ## 关于将 Edge Delivery Services 添加到生产程序或沙盒程序中
 
-根据您启动项目的方式或者当您要创建网站时，Edge Delivery Services 可以通过多种不同的方式添加。
+根据您启动项目的方式或者当您要创建 Site 时，Edge Delivery Services 可以通过多种不同的方式添加。
 
 | 用例 | 描述 |
 | --- | --- |
@@ -79,14 +79,14 @@ Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入
 | --- | --- | --- |
 | 1 | 加入产品协作渠道 | 单击&#x200B;**立即提交请求**&#x200B;向 Adobe 提交请求，为您的公司创建一个渠道。如果该渠道已经存在，您将被转到您公司的渠道。 |
 | 2 | 完成前提条件 | 请参阅[查看快速入门教程](https://www.aem.live/developer/tutorial)。 |
-| 3 | 添加 Edge Delivery Site 或<br>立即创建网站 | 请参阅[添加 Edge Delivery Site](#eds-add-site)。<br>查看[在 Cloud Manager 中创建 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
+| 3 | 添加 Edge Delivery Site 或<br>立即创建 Site | 请参阅[添加 Edge Delivery Site](#eds-add-site)。<br>查看[在 Cloud Manager 中创建 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
 | 4 | 添加域 | 请参阅[添加自定义域名称](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 添加 SSL 证书 | 请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 配置 Edge Delivery Site 的内容传递网络 | 请参阅[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。 |
 | 7 | 设置推送验证 | 请参阅[为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
 | 8 | 上线 | 请参阅[上线清单](/help/edge/docs/go-live-checklist.md)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441572?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 记录支持工单 {#eds-support-ticket}
 
