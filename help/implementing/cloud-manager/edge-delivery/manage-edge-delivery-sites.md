@@ -1,13 +1,13 @@
 ---
 title: 在 Cloud Manager 中管理 Edge Delivery Sites
-description: 了解如何将 CDN 配置添加到 Edge Delivery Site或删除 Edge Delivery Site。
+description: 了解如何将 CDN 配置添加到 Edge Delivery Site 或删除 Edge Delivery Site。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 了解如何通过向现有 Site 添加 CDN 配置来管理 Cloud Manager 中的 Edge Delivery Sites。或删除 Edge Delivery Site。
 
-## 将域映射添加到现有Edge Delivery站点 {#add-cdn-to-edge-delivery-site}
+## 将域映射添加到一个现有的 Edge Delivery Site {#add-cdn-to-edge-delivery-site}
 
 请参阅[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
@@ -61,13 +61,13 @@ ht-degree: 97%
 
      ![通过 Edge Delivery Sites 按钮添加 Edge Delivery Site](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## 管理 Helix 4 和 Helix 5 之间的 Edge Delivery 站点
+## 管理 Helix 4 和 Helix 5 之间的 Edge Delivery Site
 
-使用`/program/{programId}/site/{siteId}` API 端点在 Helix 4 和 Helix 5 之间迁移 Edge Delivery 站点。
+使用`/program/{programId}/site/{siteId}` API 端点在 Helix 4 和 Helix 5 之间迁移 Edge Delivery Site。
 
 >[!IMPORTANT]
 >
->Helix 4 网站的 CDN 配置无法自动迁移到 Helix 5。存在这种限制是因为客户生产站点可能仍在 Helix 4 上运行，而他们的 Helix 5 版本仍在开发中。
+>Helix 4 网站的 CDN 配置无法自动迁移到 Helix 5。存在这种限制是因为客户生产 Sites 可能仍在 Helix 4 上运行，而他们的 Helix 5 版本仍在开发中。
 
 **先决条件**
 
@@ -82,7 +82,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **请求正文参数**
-为 Edge Delivery 站点创建一个覆盖，以强制执行请求正文中指定的来源。
+为 EEdge Delivery Site 创建一个覆盖，以强制执行请求正文中指定的来源。
 
 ```json
 {
@@ -113,7 +113,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **来源 URL 结果**
-返回具有以下来源 URL 的 Edge Delivery 站点：
+返回具有以下来源 URL 的 Edge Delivery Site：
 
 `"origin": "branch--my-website–Teo48.aem.live"`
 
@@ -138,11 +138,11 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **来源 URL 结果**
-返回具有以下来源 URL 的 Edge Delivery 站点：
+返回具有以下来源 URL 的 Edge Delivery Site：
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### 示例 3：将无重复站点迁移到 Helix 5
+### 示例 3：将无重复 Site 迁移到 Helix 5
 
 **http**
 
@@ -162,7 +162,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **来源 URL 结果**
-返回具有以下来源 URL 的 Edge Delivery 站点：
+返回具有以下来源 URL 的 Edge Delivery Site：
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 

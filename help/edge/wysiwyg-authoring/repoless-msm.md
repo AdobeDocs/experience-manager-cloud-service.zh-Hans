@@ -1,6 +1,6 @@
 ---
 title: 无重复多 Site 管理
-description: 了解最佳实践建议，了解如何使用利用单个代码库(每个代码库由Edge Delivery Services提供)的本地化站点，以粗略的方式设置项目。
+description: 了解有关如何以无重复方式设置一个项目，制作全部由 Edge Delivery Services 提供支持且使用单一代码库的本地化 Sites 的最佳实践推荐。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
@@ -8,32 +8,32 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1260'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # 无重复多 Site 管理 {#repoless-msm}
 
-了解最佳实践建议，了解如何使用利用单个代码库(每个代码库由Edge Delivery Services提供)的本地化站点，以粗略的方式设置项目。
+了解有关如何以无重复方式设置一个项目，制作全部由 Edge Delivery Services 提供支持且使用单一代码库的本地化 Sites 的最佳实践推荐。
 
 ## 概述 {#overview}
 
-[多站点管理器(MSM)](/help/sites-cloud/administering/msm/overview.md)及其Live Copy功能允许您在多个位置使用相同的站点内容，并允许进行更改。 您可以创作内容一次并创建活动副本。 MSM维护源内容及其活动副本之间的实时关系，以便在您更改源内容时，可以同步源和活动副本。
+[多 Site 管理器 (MSM)](/help/sites-cloud/administering/msm/overview.md) 及其“实时副本”功能可让您在多个地点使用相同的 Site 内容，同时允许各种变体。您可以一次性创作内容，然后创建实时副本。MSM 维护您的源内容与其实时副本之间的实时关系，以便当您更改源内容时，来源和实时副本可以同步。
 
-您可以使用MSM跨区域设置和语言为品牌创建整个内容结构，并集中创作内容。 然后，可以利用集中的代码库，通过Edge Delivery Services交付每个本地化的网站。
+您可以使用 MSM 为您的品牌创建跨地区和跨语言的完整内容结构，集中进行内容创作。然后，您的每个本地化 Sites 都可以通过 Edge Delivery Services 使用一个中央代码库投放。
 
 ## 要求 {#requirements}
 
-要在可重写用例中配置MSM，必须首先完成以下任务：
+要在无重复用例中配置 MSM，您必须首先完成以下任务：
 
-* 本文档假定您已根据《使用Edge Delivery Services创作WYSIWYG的[开发人员快速入门指南》](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)为项目创建了一个站点。
-* 您必须已[为项目](/help/edge/wysiwyg-authoring/repoless.md)启用重写功能。
+* 此文档假设您已经根据[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)为您的项目创建了一个 Site。
+* 您必须已经[为您的项目启用了无重复功能](/help/edge/wysiwyg-authoring/repoless.md)。
 
 ## 用例 {#use-case}
 
-本文档假设您已经为项目创建了基本的本地化站点结构。 对于在瑞士和德国开展业务的wknd品牌，它使用以下结构。
+此文档假设您已经为您的项目创建了一个基本的本地化 Site 结构。以在瑞士和德国开展业务的 wknd 品牌为例，它采用了以下结构。
 
 ```text
 /content/wknd
@@ -52,26 +52,26 @@ ht-degree: 2%
 /content/wknd/de/en
 ```
 
-`language-masters`中的内容是本地化站点的活动副本源：德国(`de`)和瑞士(`ch`)。 本文档的目标是创建Edge Delivery Services站点，这些站点对每个本地化站点都使用相同的代码库。
+`language-masters` 中的内容是本地化 Sites：德国（`de`）和瑞士（`ch`）的实时副本的来源。此文档的目标是创建 Edge Delivery Services Sites，为每一个本地化 Site 都使用相同的代码库。
 
 ## 配置 {#configuration}
 
-配置MSM重写使用案例有几个步骤。
+配置 MSM 无重复用例有几个步骤。
 
-1. [更新AEM站点配置](#update-aem-configurations)。
-1. [为您的本地化页面创建新的Edge Delivery Services网站](#create-edge-sites)。
-1. [在AEM中更新本地化站点的云配置](#update-cloud-configurations)。
+1. [更新 AEM Site 配置](#update-aem-configurations)。
+1. [为您的本地化页面创建新的 Edge Delivery Services Sites](#create-edge-sites)。
+1. [在 AEM 中为您的本地化 Sites 更新云配置](#update-cloud-configurations)。
 
-### 更新AEM站点配置 {#update-aem-configurations}
+### 更新 AEM Site 配置 {#update-aem-configurations}
 
-[配置](/help/implementing/developing/introduction/configurations.md)可视为工作区，可用于收集设置组及其关联内容以进行组织。 在AEM中创建站点时，会自动为其创建配置。
+[配置](/help/implementing/developing/introduction/configurations.md)可被视为用于收集设置组及其相关内容以用于组织目的的工作区。当您在 AEM 中创建 Site 时，会自动为其创建一个配置。
 
-您通常希望在网站之间共享某些内容，例如：
+您通常希望在 Sites 之间共享某些内容，例如：
 
-* 从Blueprint中的内容创建的模板
-* 内容片段模型、持久、查询等。
+* 从蓝图中的内容创建的模板
+* 内容片段模型，持久查询等。
 
-您可以创建其他配置来促进此类共享。 对于wknd用例，我们需要配置以下路径。
+您可以额外创建配置来促进这种共享。在 wknd 用例中，我们需要以下路径的配置。
 
 ```text
 /content/wknd
@@ -79,46 +79,46 @@ ht-degree: 2%
 /content/wknd/de
 ```
 
-也就是说，您将具有由Blueprint使用的wknd品牌内容(`/content/wknd`)的根的配置以及由每个本地化站点（瑞士和德国）使用的配置。
+也就是说，您将具有蓝图所使用的 wknd 品牌内容根目录 (`/content/wknd`) 的一个配置以及每个本地化 Site（瑞士和德国）所使用的一个配置。
 
-1. 登录您的AEM创作实例。
-1. 通过转至&#x200B;**工具** -> **常规** -> **配置浏览器**&#x200B;导航到&#x200B;**配置浏览器**。
-1. 选择为您的项目自动创建的配置（在本例中为wknd），然后点按或单击工具栏中的&#x200B;**创建**。
-1. 在&#x200B;**创建配置**&#x200B;对话框中，为您的本地化站点（如`Switzerland`）提供描述性&#x200B;**名称**，对于&#x200B;**标题**，使用与本地化大小相同的标题（在此例中为`ch`）。
-1. 选择&#x200B;**云配置**&#x200B;功能以及您的项目可能需要的任何其他功能，如&#x200B;**可编辑模板**。
+1. 登录您的 AEM 创作实例。
+1. 导航至&#x200B;**配置浏览器**，即从&#x200B;**工具** -> **常规** -> **配置浏览器**。
+1. 选择为您的项目（在本例中为 wknd）自动创建的配置，然后点击或单击工具栏中的&#x200B;**创建**。
+1. 在&#x200B;**创建配置**&#x200B;对话框中，为您的本地化 Site 提供一个描述性的&#x200B;**名称**（例如 `Switzerland`），然后为&#x200B;**标题**&#x200B;使用与本地化尺寸相同的标题（在本例中为 `ch`）。
+1. 选择&#x200B;**云配置**&#x200B;功能以及您的项目可能需要的任何其他功能，例如&#x200B;**可编辑模板**。
 1. 点击或单击&#x200B;**创建**。
 
-为您需要的每个本地化站点创建配置。 对于wknd，您需要为`de`创建配置以及`ch`配置。
+为您需要的每一个本地化 Site 创建配置。在 wknd 的例子中，您需要为 `de` 创建一个配置，同时还要为 `ch` 创建一个配置。
 
-创建配置后，您需要确保本地化的网站使用它们。
+创建了配置后，您需要确保本地化 Sites 使用它们。
 
-1. 登录您的AEM创作实例。
-1. 通过转至&#x200B;**导航** -> **站点**&#x200B;来导航到&#x200B;**站点控制台**。
-1. 选择本地化的网站，如`Switzerland`。
-1. 点按或单击工具栏中的&#x200B;**属性**。
-1. 在页面属性窗口中，选择&#x200B;**高级**&#x200B;选项卡，在&#x200B;**配置**&#x200B;标题下，取消选择&#x200B;**继承自/content/wknd**&#x200B;选项，其中`wknd`是站点根。
-1. 在&#x200B;**云配置**&#x200B;字段中，使用路径浏览器选择您为本地化站点创建的配置，如`/conf/wknd/ch`下的`Switzerland`。
+1. 登录您的 AEM 创作实例。
+1. 导航至&#x200B;**Sites 控制台**，即从&#x200B;**导航**  -> **Sites**。
+1. 选择本地化 Site，例如 `Switzerland`。
+1. 在工具栏中点击或单击&#x200B;**属性**。
+1. 在页面属性窗口中选择&#x200B;**高级**&#x200B;选项卡，然后在&#x200B;**配置**&#x200B;标题下取消选择选项&#x200B;**从 /content/wknd 继承**，其中 `wknd` 是 Site 根目录。
+1. 在&#x200B;**云配置**&#x200B;字段中，使用路径浏览器选择您为本地化 Site 创建的配置，例如 `/conf/wknd/ch` 下的 `Switzerland`。
 1. 点击或单击&#x200B;**保存并关闭**。
 
-将相应的配置分配给其他本地化的站点。 对于wknd，您还需要将`/conf/wknd/de`配置分配给德国站点。
+将相应的配置分配给其他本地化 Sites。在 wknd 例子中，您还需要将 `/conf/wknd/de` 配置分配给德国 Site。
 
-### 为您的本地化页面创建新的Edge Delivery Services站点 {#create-edge-sites}
+### 为您的本地化页面创建新的 Edge Delivery Services Sites {#create-edge-sites}
 
-要将更多站点连接到Edge Delivery Services以进行多区域、多语言站点设置，您必须为每个AEM MSM站点设置新的aem.live站点。 AEM MSM Sites与具有共享Git存储库和代码库的aem.live站点之间存在1:1的关系。
+要将更多 Sites 连接到 Edge Delivery Services 以实现多区域、多语言 Site 设置，您必须为每个 AEM MSM Sites 设置一个新的 aem.live Site。AEM MSM Sites 与 aem.live Sites 之间是 1:1 的关系，具有共享的 Git 存储库和代码库。
 
-对于此示例，我们将为瑞士存在wknd创建站点`wknd-ch`，其本地化内容位于AEM路径`/content/wknd/ch`下。
+在这个例子中，我们将为 wknd 在瑞士的运营创建 Site `wknd-ch`，其本地化内容位于 AEM 路径 `/content/wknd/ch`。
 
-1. 检索您的身份验证令牌和项目的技术帐户。
-   * 有关如何[获取访问令牌](/help/edge/wysiwyg-authoring/repoless.md#access-token)和程序的[技术帐户](/help/edge/wysiwyg-authoring/repoless.md#access-control)的详细信息，请参阅文档&#x200B;**跨站点重用代码**。
-1. 通过以下方式调用配置服务来创建新站点。 请考虑：
-   * POST URL中的项目名称必须是您正在创建的新站点名称。 在此示例中，它是`wknd-ch`。
-   * `code`配置应与您在初始项目创建时使用的配置相同。
-   * `content` > `source` > `url`必须调整为您正在创建的新站点的名称。 在此示例中，它是`wknd-ch`。
-   * 即，POST URL中的网站名称和`content` > `source` > `url`必须相同。
-   * 调整`admin`块以定义应具有网站的完全管理访问权限的用户。
-      * 它是一个电子邮件地址数组。
-      * 可使用通配符`*`。
-      * 有关详细信息，请参阅文档[为作者配置身份验证](https://www.aem.live/docs/authentication-setup-authoring#default-roles)。
+1. 为您的程序检索授权令牌和技术帐户。
+   * 请参阅文档&#x200B;**跨 Sites 重用代码**，了解如何为您的程序[获取您的访问令牌](/help/edge/wysiwyg-authoring/repoless.md#access-token)和[技术帐户](/help/edge/wysiwyg-authoring/repoless.md#access-control)。
+1. 通过以下方式调用配置服务来创建一个新 Site。请考虑：
+   * POST URL 中的项目名称必须是您正在创建的新 Site 名称。在这个例子中，它是 `wknd-ch`。
+   * `code` 配置应该与您在初始创建项目时使用的配置相同。
+   * `content` > `source`  > `url` 必须根据您正在创建的新 Site 的名称进行调整。在这个例子中，它是 `wknd-ch`。
+   * 也就是说，POST URL 中的 Site 名称与 `content` > `source`  > `url` 必须相同。
+   * 调整 `admin` 块，定义应该对 Site 具有完全管理访问权限的用户。
+      * 这是一个电子邮件地址数组。
+      * 可以使用通配符 `*`。
+      * 查看文档[配置作者的身份验证](https://www.aem.live/docs/authentication-setup-authoring#default-roles)，了解更多信息。
 
    ```text
    curl --request POST \
@@ -157,7 +157,7 @@ ht-degree: 2%
    }'
    ```
 
-1. 通过对配置服务进行以下调用，为新站点添加路径映射。
+1. 通过以下方法调用配置服务，为您的新 Site 添加路径映射。
 
    ```text
    curl --request POST \
@@ -176,33 +176,33 @@ ht-degree: 2%
    }'
    ```
 
-1. 通过调用`https://main--wknd-ch--<your-github-org>.aem.page/config.json`并验证返回的JSON的内容，验证新站点的公共配置是否正常工作。
+1. 调用 `https://main--wknd-ch--<your-github-org>.aem.page/config.json` 验证新 Site 的公共配置是否正常工作，并验证返回的 JSON 的内容。
 
-重复这些步骤以创建其他本地化的站点。 对于wknd，您还需要为德语版创建一个`wknd-de`站点。
+重复这些步骤，创建其他本地化 Sites。在 wknd 的例子中，您还需要为德国的业务创建一个 `wknd-de` Site。
 
-### 在AEM中为本地化页面更新云配置 {#update-cloud-configurations}
+### 在 AEM 中为您的本地化页面更新云配置 {#update-cloud-configurations}
 
-您必须将AEM中的页面配置为使用在上一部分中创建的新Edge Delivery站点，以便进行本地化呈现。 在此示例中，`/content/wknd/ch`下的内容需要知道是否使用您创建的`wknd-ch`站点。 同样，`/content/wknd/de`下的内容需要使用`wknd-de`站点。
+AEM 中的页面必须配置为将您在上一节中创建的新 Edge Delivery Sites 用于您的本地化 Sites。在这个例子中，`/content/wknd/ch` 中的内容需要知道应使用您创建的 `wknd-ch` Site。`/content/wknd/de` 中的类似内容需要使用 `wknd-de` Site。
 
-1. 登录到AEM创作实例，然后转到&#x200B;**工具** -> **云服务** -> **Edge Delivery Services配置**。
-1. 选择为您的项目自动创建的配置，然后选择为本地化页面创建的文件夹。 在本例中，就是瑞士(`ch`)。
-1. 在工具栏中点按或单击&#x200B;**创建** > **配置**。
-1. 在&#x200B;**Edge Delivery Services配置**&#x200B;窗口中：
-   * 在&#x200B;**组织**&#x200B;字段中提供您的GitHub组织。
-   * 将站点名称更改为您在上一部分中创建的站点名称。 在这种情况下，那将为`wknd-ch`。
-   * 使用重写配置设置&#x200B;**将项目类型更改为** aem.live。
+1. 登录 AEM 作者实例，然后前往&#x200B;**工具** -> **Cloud Services** -> **Edge Delivery Services 配置**。
+1. 选择为您的项目自动创建的配置，然后选择为本地化页面创建的文件夹。在这个例子中是瑞士（`ch`）。
+1. 在工具栏中点击或单击&#x200B;**创建** > **配置**。
+1. 在 **Edge Delivery Services 配置**&#x200B;窗口中：
+   * 在&#x200B;**组织**&#x200B;字段中提供您的 GitHub 组织。
+   * 将 Site 名称改为您在上一节中创建的 Site 的名称。在这个例子中是 `wknd-ch`。
+   * 将项目类型改为&#x200B;**带有无重复配置设置的 aem.live**。
 1. 点击或单击&#x200B;**保存并关闭**。
 
-## 验证设置 {#verify}
+## 验证您的设置 {#verify}
 
-现在，您已进行了所有必要的配置更改，请确认一切都按预期运行。
+现在您完成了所有必要的配置更改，请验证一切是否按预期工作。
 
-1. 登录您的AEM创作实例。
-1. 通过转至&#x200B;**导航** -> **站点**&#x200B;来导航到&#x200B;**站点控制台**。
-1. 选择本地化的网站，如`Switzerland`。
-1. 点按或单击工具栏中的&#x200B;**编辑**。
-1. 确保页面在通用编辑器中正确呈现，并使用与站点根相同的代码。
-1. 对页面进行更改并重新发布。
-1. 在`https://main--wknd-ch--<your-github-org>.aem.page`访问您的新的Edge Delivery Services网站以获取该本地化页面。
+1. 登录您的 AEM 创作实例。
+1. 导航至&#x200B;**Sites 控制台**，即从&#x200B;**导航**  -> **Sites**。
+1. 选择本地化 Site，例如 `Switzerland`。
+1. 在工具栏中点击或单击&#x200B;**编辑**。
+1. 确保页面在通用编辑器中正确呈现，并使用与 Site 根目录相同的代码。
+1. 对页面进行更改，然后重新发布。
+1. 在 `https://main--wknd-ch--<your-github-org>.aem.page` 访问新的 Edge Delivery Services Site，查看此本地化页面。
 
-如果看到您所做的更改，则表示MSM设置运行正常。
+如果您能看到所做的更改，就说明您的 MSM 设置正常运行。

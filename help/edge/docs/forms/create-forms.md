@@ -1,13 +1,13 @@
 ---
-title: 使用自适应Forms块创建表单
-description: 开始使用适用于AEM Forms的Edge Delivery Services。 快速制作完美的表单！AEM Forms Edge Delivery基于文档的创作=速度飞快，采用SEO友好的表单，可提供更开心的用户和搜索引擎。
+title: 使用 Adaptive Forms Block 创建表单
+description: Edge Delivery Services for AEM Forms 快速入门。快速制作完美的表单！AEM Forms Edge Delivery 基于文档的创作 = 速度极快、SEO 友好的表单，让用户更加满意，搜索引擎更加优异。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 AEM Forms Edge Delivery 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻松创建表单，以捕获和存储捕获的数据。您可以[创建一个预先配置了 Adaptive Forms Block 的新 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
+这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流。
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
@@ -26,7 +26,7 @@ AEM Forms Edge Delivery 提供了一个称为 Adaptive Forms Block 的区块，�
 
 在开始之前，请确保您已完成以下步骤：
 
-* [使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [将 Adaptive Forms Block 添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并克隆本地计算机上相应的 GitHub 存储库。
+* [使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)[将 Adaptive Forms Block 添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并克隆本地计算机上相应的 GitHub 存储库。
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅[如何使用 SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)
 

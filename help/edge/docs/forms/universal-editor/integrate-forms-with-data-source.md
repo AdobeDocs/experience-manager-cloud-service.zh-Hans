@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 82%
 
 ## 注意事项
 
-* 如果您在通用编辑器界面中未看到&#x200B;**数据源**&#x200B;图标，或在右侧属性面板中未看到&#x200B;**绑定引用**&#x200B;属性，请在&#x200B;**Extension Manager**&#x200B;中启用&#x200B;**数据源**&#x200B;扩展。
+* 如果您在通用编辑器界面中看不到&#x200B;**数据源**&#x200B;图标，或者在右侧属性面板中看不到&#x200B;**绑定引用**&#x200B;属性，就请在&#x200B;**扩展管理器**&#x200B;中启用&#x200B;**数据源**&#x200B;扩展。
 
   ![扩展管理器](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用和禁用扩展。
+  请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用和禁用扩展。
 
 * 目前通用编辑器中不支持表单预填服务。
 
@@ -133,11 +133,10 @@ ht-degree: 82%
 
    ![生成表单](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-您可以添加数据绑定到表单字段，方法是从&#x200B;**绑定引用**&#x200B;属性中选择它。 例如，我们为表单中已存在的&#x200B;**Id**&#x200B;文本框添加一个数据绑定引用。
-要从数据源树中选择表单字段的数据绑定，请执行以下步骤：
+您可以从&#x200B;**绑定引用**&#x200B;属性中选择数据绑定，将其添加到一个表单字段中。例如，将数据绑定引用添加到表单中已有的 **Id** 文本框中。要从数据源树中为表单字段选择数据绑定，请执行以下步骤：
 
 1. 打开要为其添加数据绑定引用的表单字段的属性。
-1. 转到&#x200B;**绑定引用**&#x200B;属性，然后单击&#x200B;**浏览**&#x200B;图标。
+1. 前往&#x200B;**绑定引用**&#x200B;属性，然后单击&#x200B;**浏览**&#x200B;图标。
 
    ![将数据绑定手动添加到一个表单字段](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
@@ -147,13 +146,13 @@ ht-degree: 82%
 
 1. 从数据源树中选择要绑定到表单字段的数据元素，然后单击&#x200B;**选择**。
 
-   ![选择数据元素](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+   ![选择数据元素](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)。
 
-   表单字段绑定到数据元素，并且出现在&#x200B;**绑定引用**&#x200B;属性中。
+   表单字段绑定到数据元素，并显示在&#x200B;**绑定引用**&#x200B;属性中。
 
    ![自动数据绑定](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 
-   您还可以手动编辑表单字段的&#x200B;**绑定引用**&#x200B;属性。
+   您也可以为表单字段手动编辑&#x200B;**绑定引用**&#x200B;属性。
 
 您现在可以为表单添加和[配置提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 

@@ -1,6 +1,6 @@
 ---
-title: 无重复阶段和生产环境
-description: 了解如何通过不断利用单个代码库为您的暂存和生产环境设置单独的站点。
+title: 无重复的暂存和生产环境
+description: 了解如何使用单一代码库以无重复方式为您的暂存环境和生产环境设置一个单独的 Sites。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
@@ -8,57 +8,57 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# 无重复阶段和生产环境 {#repoless-stage-prod}
+# 无重复的暂存和生产环境 {#repoless-stage-prod}
 
-了解如何通过不断利用单个代码库为您的暂存和生产环境设置单独的站点。
+了解如何使用单一代码库以无重复方式为您的暂存环境和生产环境设置一个单独的 Sites。
 
 ## 概述 {#overview}
 
-您可能希望为独立于暂存环境的生产环境设置站点。 为单独的暂存和生产设置设置设置第二个站点类似于多站点管理[&#128279;](/help/edge/wysiwyg-authoring/repoless-msm.md)所需的设置。 事实上，如果需要，可以将其与MSM站点结构结合使用。
+您可能希望为生产环境设置一个与暂存环境分开的 Site。为一个单独的暂存和生产环境设置第二个 Site，类似于[多 Site 管理所需的设置](/help/edge/wysiwyg-authoring/repoless-msm.md)。事实上，在需要的情况下，它可以与 MSM Site 结构相结合。
 
-本文档使用单独的暂存环境和生产环境的典型示例。 您可以为所需的任何环境创建单独的环境。
+此文档使用单独的暂存和生产环境的典型示例。您可以为任何您希望的环境创建单独的环境。
 
 ## 要求 {#requirements}
 
-要配置重写暂存和生产环境，必须首先完成以下任务：
+要配置无重复的暂存和生产环境，您必须首先完成以下任务：
 
-* 本文档假定您已根据[使用Edge Delivery Services创作WYSIWYG的开发人员快速入门指南为您的项目创建了一个站点。](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-* 您必须已[为项目启用重写功能。](/help/edge/wysiwyg-authoring/repoless.md)
+* 此文档假设您已经根据[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)为您的项目创建了一个 Site。
+* 您必须已经[为您的项目启用了无重复功能。](/help/edge/wysiwyg-authoring/repoless.md)
 
 ## 配置 {#configuration}
 
-本文档介绍如何使用相同的代码库为您的项目设置单独的生产站点。 下列假设成立。
+此文档介绍了如何使用相同的代码库为您的项目设置一个单独的生产 Site。做了以下假设。
 
-* 暂存站点已设置，您现在要为生产站点创建配置。
-* AEM创作中的内容结构类似。
-* 相同的路径映射将用于暂存和生产。
+* 已经设置了暂存 Site，现在您要为生产 Site 创建配置。
+* AEM 创作中的内容结构是相似的。
+* 暂存和生产将使用相同的路径映射。
 
-在本例中，我们假设已经为名为wknd的项目（其GitHub存储库也称为wknd）创建了生产站点。
+在这个例子中，我们假设已经为名为 wknd 的项目创建了一个生产 Site，该项目的 GitHub 重复也称为 wknd。
 
-配置单独的生产站点需要两个步骤。
+配置一个单独的生产 Site 有两个步骤。
 
-1. [为您的生产环境创建新的Edge Delivery Services站点](#create-edge-site)。
-1. [在AEM中为生产站点更新云配置](#update-cloud-configuration)。
+1. [为您的生产环境创建新的 Edge Delivery Services Sites](#create-edge-site)。
+1. [在 AEM 中为您的生产 Site 更新云配置](#update-cloud-configuration)。
 
-### 为您的生产环境创建新的Edge Delivery Services站点 {#create-edge-site}
+### 为您的生产环境创建新的 Edge Delivery Services Sites {#create-edge-site}
 
-1. 检索您的身份验证令牌和项目的技术帐户。
-   * 有关如何[获取访问令牌](/help/edge/wysiwyg-authoring/repoless.md#access-token)和程序的[技术帐户](/help/edge/wysiwyg-authoring/repoless.md#access-control)的详细信息，请参阅文档&#x200B;**跨站点重用代码**。
-1. 通过以下方式调用配置服务来创建新站点。 请考虑：
-   * POST URL中的项目名称必须是您正在创建的新站点名称。 在此示例中，它是`wknd-prod`。
-   * `code`配置应与您在初始项目创建时使用的配置相同。
-   * `content` > `source` > `url`必须调整为您正在创建的新站点的名称。 在此示例中，它是`wknd-prod`。
-   * 即，POST URL中的网站名称和`content` > `source` > `url`必须相同。
-   * 调整`admin`块以定义应具有网站的完全管理访问权限的用户。
-      * 它是一个电子邮件地址数组。
-      * 可使用通配符`*`。
-      * 有关详细信息，请参阅文档[为作者配置身份验证](https://www.aem.live/docs/authentication-setup-authoring#default-roles)。
+1. 为您的程序检索授权令牌和技术帐户。
+   * 请参阅文档&#x200B;**跨 Sites 重用代码**，了解如何为您的程序[获取您的访问令牌](/help/edge/wysiwyg-authoring/repoless.md#access-token)和[技术帐户](/help/edge/wysiwyg-authoring/repoless.md#access-control)。
+1. 通过以下方式调用配置服务来创建一个新 Site。请考虑：
+   * POST URL 中的项目名称必须是您正在创建的新 Site 名称。在这个例子中，它是 `wknd-prod`。
+   * `code` 配置应该与您在初始创建项目时使用的配置相同。
+   * `content` > `source`  > `url` 必须根据您正在创建的新 Site 的名称进行调整。在这个例子中，它是 `wknd-prod`。
+   * 也就是说，POST URL 中的 Site 名称与 `content` > `source`  > `url` 必须相同。
+   * 调整 `admin` 块，定义应该对 Site 具有完全管理访问权限的用户。
+      * 这是一个电子邮件地址数组。
+      * 可以使用通配符 `*`。
+      * 查看文档[配置作者的身份验证](https://www.aem.live/docs/authentication-setup-authoring#default-roles)，了解更多信息。
 
    ```text
    curl --request POST \
@@ -97,7 +97,7 @@ ht-degree: 2%
    }'
    ```
 
-1. 通过对配置服务进行以下调用，为新站点添加路径映射。
+1. 通过以下方法调用配置服务，为您的新 Site 添加路径映射。
 
    ```text
    curl --request POST \
@@ -116,37 +116,37 @@ ht-degree: 2%
    }'
    ```
 
-通过调用`https://main--wknd-prod--<your-github-org>.aem.page/config.json`并验证返回的JSON的内容，验证新站点的公共配置是否正常工作。
+调用 `https://main--wknd-prod--<your-github-org>.aem.page/config.json` 验证新 Site 的公共配置是否正常工作，并验证返回的 JSON 的内容。
 
-### 在AEM中为生产站点更新云配置 {#update-cloud-configuration}
+### 在 AEM 中为您的生产 Site 更新云配置 {#update-cloud-configuration}
 
-必须将您的生产AEM配置为将您在上一部分中创建的新Edge Delivery站点用于专用生产站点。 在此示例中，生产环境中`/content/wknd`下的内容需要知道是否使用您创建的`wknd-prod`站点。
+生产 AEM 必须被配置为使用您在上一节中为专用生产 Site 创建的新 Edge Delivery Sites。在这个例子中，您的生产环境中 `/content/wknd` 中的内容需要知道应使用您创建的 `wknd-prod` Site。
 
-1. 登录到AEM生产实例，然后转到&#x200B;**工具** -> **Cloud Services** -> **Edge Delivery Services配置**。
+1. 登录 AEM 生产实例，然后前往&#x200B;**工具** -> **Cloud Services** -> **Edge Delivery Services 配置**。
 1. 选择为您的项目自动创建的配置。
-1. 点按或单击工具栏中的&#x200B;**属性**。
-1. 在&#x200B;**Edge Delivery Services配置**&#x200B;窗口中：
-   * 在&#x200B;**组织**&#x200B;字段中提供您的GitHub组织。
-   * 将站点名称更改为您在上一部分中创建的站点名称。 在这种情况下，那将为`wknd-prod`。
-   * 使用重写配置设置&#x200B;**将项目类型更改为** aem.live。
+1. 在工具栏中点击或单击&#x200B;**属性**。
+1. 在 **Edge Delivery Services 配置**&#x200B;窗口中：
+   * 在&#x200B;**组织**&#x200B;字段中提供您的 GitHub 组织。
+   * 将 Site 名称改为您在上一节中创建的 Site 的名称。在这个例子中是 `wknd-prod`。
+   * 将项目类型改为&#x200B;**带有无重复配置设置的 aem.live**。
 1. 点击或单击&#x200B;**保存并关闭**。
 
-## 验证设置 {#verify}
+## 验证您的设置 {#verify}
 
-现在，您已进行了所有必要的配置更改，请确认一切都按预期运行。
+现在您完成了所有必要的配置更改，请验证一切是否按预期工作。
 
-1. 登录您的AEM生产创作实例。
-1. 通过转至&#x200B;**导航** -> **站点**&#x200B;来导航到&#x200B;**站点控制台**。
-1. 在您的网站中选择一个页面。
-1. 点按或单击工具栏中的&#x200B;**编辑**。
-1. 确保页面在通用编辑器中正确呈现，并使用与站点根相同的代码。
-1. 对页面进行更改并重新发布。
-1. 在`https://main--wknd-prod--<your-github-org>.aem.page`访问您的新的Edge Delivery Services网站以获取该页面。
+1. 登录您的 AEM 生产创作实例。
+1. 导航至&#x200B;**Sites 控制台**，即从&#x200B;**导航**  -> **Sites**。
+1. 选择您 Site 中的一个页面。
+1. 在工具栏中点击或单击&#x200B;**编辑**。
+1. 确保页面在通用编辑器中正确呈现，并使用与 Site 根目录相同的代码。
+1. 对页面进行更改，然后重新发布。
+1. 在 `https://main--wknd-prod--<your-github-org>.aem.page` 访问新的 Edge Delivery Services Site，查看此本地化页面。
 
-如果您看到所做的更改，则表明您单独的生产站点设置运行正常。
+如果您能看到所做的更改，就说明单独的生产 Site 设置正常运行。
 
 ## 用途 {#usage}
 
-在配置具有重写暂存和生产环境的项目后，您可以独立管理这些环境的代码。 下图说明了AEM、Edge Delivery Services Sites和GitHub存储库中各种环境中的内容关系。
+您用无重复的暂存和生产环境配置了项目后，就可以独立管理它们的代码。下图说明了 AEM、Edge Delivery Services Sites 和 GitHub 存储库中各个环境中的内容之间的关系。
 
-![AEM环境和重写生产/暂存环境的插图](assets/repoless/aem-edge-github.png)
+![AEM 环境和无重复的生产/暂存环境的插图](assets/repoless/aem-edge-github.png)

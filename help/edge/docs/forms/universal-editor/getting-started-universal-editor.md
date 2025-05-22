@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1853'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,6 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
       ![打开 fstab.yaml 文件](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. 编辑 **fstab.yaml** 文件，更新您项目的挂载点。将 URL 替换为 AEM as a Cloud Service 创作实例的 URL。
-
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![编辑 fstab.yaml 文件](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -166,19 +165,19 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 >[!NOTE]
 >
 >
-> 此步骤适用于使用[AEM样板XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)构建的项目。 如果您使用 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 创建 AEM 项目，则可以跳过此步骤。
+> 此步骤适用于使用 [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) 构建的项目。如果您使用 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 创建 AEM 项目，则可以跳过此步骤。
 
 进行集成：
 
-1. 导航到本地系统上的AEM项目存储库文件夹。
+1. 导航到本地系统上的 AEM 项目存储库文件夹。
 
 1. 将下列文件夹和文件从 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 复制并粘贴到 AEM 项目中：
 
-   * [表单块](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)文件夹
+   * [Form Block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 文件夹
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 文件
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 文件
-1. 导航到AEM项目中的`/scripts/editor-support.js`文件，并在AEM Forms样板[&#128279;](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)中使用editor-support.js文件对其进行更新
-1. 导航到AEM项目中的`/models/_section.json`，并将“form”和“embed-adaptive-form”附加到`filters`对象的组件数组：
+1. 导航到 `/scripts/editor-support.js`AEM 项目中的文件，并通过 [AEM Forms Boilerplate 中的 editor-support.js 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)将其更新
+1. 导航到 AEM 项目中的 `/models/_section.json`，然后将“form”和“embed-adaptive-form”附加到 `filters` 对象的组件数组：
 
    ```
        "filters": [
@@ -194,7 +193,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
     }]
    ```
 
-1. （可选）导航到AEM项目中的`/.eslintignore`，并添加以下代码行：
+1. （可选）导航到 AEM 项目中的 `/.eslintignore`，然后添加以下代码行：
 
    ```
    blocks/form/rules/formula/*
@@ -204,7 +203,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    scripts/editor-support-rte.js
    ```
 
-1. （可选）导航到AEM项目中的`/.eslintrc.js`，并在`rules`对象中添加以下代码行：
+1. （可选）导航到 AEM 项目中的 `/.eslintrc.js`，然后在 `rules` 对象中添加以下代码行：
 
    ```
    'xwalk/max-cells': ['error', {
@@ -237,7 +236,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
    ```
 
-1. 打开终端并运行以下命令：
+1. 打开终端，运行以下命令：
 
    ```
    npm i
@@ -246,7 +245,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    >[!NOTE]
    >
-   > 将更改推送到GitHub上的AEM项目存储库之前，请确保使用与表单相关的对象更新位于AEM项目根级别的`component-definition.json`、`component-models.json`和`component-filters.json`文件。
+   > 在将更改推送到 GitHub 上的 AEM 项目存储库之前，请确保位于 AEM 项目的根级别的 `component-definition.json`、`component-models.json` 和 `component-filters.json` 文件已通过与表单相关的对象进行了更新。
 
 1. 提交这些更改并将其推送到 GitHub 上的 AEM 项目存储库。
 
@@ -345,7 +344,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
        npm install -g @adobe/aem-cli
    ```
 
-1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 &lt;owner> 存储库所有者和 &lt;repo> 存储库名称：
+1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 <owner> 存储库所有者和 <repo> 存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -375,7 +374,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS Project]/package.json 文件并将 “lint” 脚本从 `"lint": "npm run lint:js && npm run lint:css"` 修改为 `"lint": "echo 'skipping linting for now'"`。保存文件并将更改提交到您的 GitHub 项目。
 
 * **解决模块路径错误：**
-如果遇到错误“无法解析模块“&#39;/scripts/lib-franklin.js&#39;的路径”，请导航到[EDS项目]/blocks/forms/form.js文件。 将 lib-franklin.js 文件替换为 aem.js 文件，可更新导入语句。
+如果遇到错误“无法解析模块&quot;&#39;/scripts/lib-franklin.js&#39;的路径”，请导航至 [EDS 项目]/blocks/forms/form.js 文件。将 lib-franklin.js 文件替换为 aem.js 文件，可更新导入语句。
 
 ## 另请参阅
 

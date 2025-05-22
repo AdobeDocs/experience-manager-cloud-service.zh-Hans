@@ -8,9 +8,9 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选择来为 Edge Delivery Services 创作内容：
 
-* [通用编辑器](#universal-editor)——一种现代的所见即所得 (WYSIWYG) 用户界面，用于在 AEM 中创作内容
+* [通用编辑器](#universal-editor) - 一种现代的所见即所得 (WYSIWYG) 用户界面，用于在 AEM 中创作内容
 * [基于文档的创作](#document-based) - 例如 Microsoft Word 或 Google Docs
 
 ## 通用编辑器创作 {#universal-editor}
@@ -59,4 +59,4 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 所见即所得创作对于内容作者来说是一个强大且直观的工具。然而，有许多不同的创作用例，这就是 AEM 提供额外创作解决方案的原因。
 
-请参阅文档[Edge Delivery Services概述](/help/edge/overview.md#authoring-method)，了解有关AEM提供的创作解决方案（包括基于文档的创作和headless）的更多信息。
+请参阅文档 [Edge Delivery Services 概述](/help/edge/overview.md#authoring-method)，了解有关 AEM 提供的创作解决方案的更多信息，包括基于文档的创作和 Headless 创作。

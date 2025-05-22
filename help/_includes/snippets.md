@@ -1,8 +1,8 @@
 ---
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -222,7 +222,7 @@ ht-degree: 96%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 
@@ -260,16 +260,16 @@ ht-degree: 96%
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
 * [正在使用表单提交服务](/help/forms/forms-submission-service.md)
 
-## 通用编辑器Headless身份验证 {#ue-headless-auth}
+## 通用编辑器 Headless 身份验证 {#ue-headless-auth}
 
 >[!NOTE]
 >
->如果您在Headless用例中使用通用编辑器，则Headless应用程序必须管理其自身的身份验证。
+>如果您在一个 Headless 用例中使用通用编辑器，您的 Headless 应用程序就必须管理其自己的身份验证。
 
-## PWA弃用 {#pwa-deprecation}
+## PWA 弃用 {#pwa-deprecation}
 
 >[!IMPORTANT]
 >
->AEM Sites [的渐进式Web应用程序(PWA)功能已被弃用](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)。
+>AEM Sites [的渐进式网络应用程序 (PWA) 功能已被弃用](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)。
 >
->将继续支持使用此功能的现有项目，但新项目不应使用此功能。
+>使用该功能的现有项目将继续受到支持，但新项目不应使用此功能。

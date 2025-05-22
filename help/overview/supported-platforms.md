@@ -1,68 +1,68 @@
 ---
 title: 支持的客户端平台
-description: 了解哪些浏览器支持使用Adobe Experience Manager as a Cloud Service创作内容以及访问使用AEM发布的站点。
+description: 了解哪些浏览器受到支持，可使用 Adobe Experience Manager as a Cloud Service 创作内容以及访问用 AEM 发布的 Sites。
 topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
 source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # 支持的客户端平台 {#supported-platforms}
 
-了解哪些浏览器支持使用Adobe Experience Manager as a Cloud Service创作内容以及访问使用AEM发布的站点。
+了解哪些浏览器受到支持，可使用 Adobe Experience Manager as a Cloud Service 创作内容以及访问用 AEM 发布的 Sites。
 
 >[!TIP]
 >
->本文档介绍AEM as a Cloud Service支持的客户端平台。 有关用于开发AEM项目的生成环境的详细信息，请参阅文档[生成环境。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+>此文档涵盖 AEM as a Cloud Service 支持的客户端平台。有关用于 AEM 项目开发的构建环境的详细信息，请参阅文档[构建环境。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
 
 ## 支持级别 {#support-levels}
 
-Adobe定义了对AEM客户端平台的以下支持级别。
+Adobe 为 AEM 的客户端平台定义了以下支持级别。
 
 | 支持级别 | 描述 |
 |---|---|
-| 答：支持 | Adobe为此配置提供全面支持和维护。 Adobe的质量保证流程涵盖此配置。 |
-| R：有限的支持 | 支持需要向Adobe发出正式请求，才能在项目中使用配置。 获得Adobe确认后，Adobe将在受限支持项目中提供全面支持。 有关更多信息，请联系Adobe客户关怀部门。 |
-| Z：不支持 | 不支持该配置。 Adobe不声明配置是否有效，也不支持该配置。 |
+| A：受到支持 | Adobe 为此配置提供全面的支持和维护。此配置包含在 Adobe 质量保证流程中。 |
+| R：有限的支持 | 需要向 Adobe 提出正式的支持请求才能在项目中使用此配置。获得 Adobe 确认后，Adobe 将在有限支持计划范围内提供全面支持。有关详细信息，请联系 Adobe 客户关怀团队。 |
+| Z：不受支持 | 此配置不受支持。Adobe 未做出此配置是否有效的声明，也不支持此配置。 |
 
-## 受支持的内容创作浏览器 {#authoring}
+## 可用于内容创作的受支持浏览器 {#authoring}
 
-AEM用户界面已针对笔记本、台式计算机和平板电脑设备(如Apple iPad或Microsoft Surface)中的较大屏幕进行了优化。 任何创作用例均不支持电话外形。
+AEM 用户界面针对笔记本电脑、台式电脑和平板电脑设备（例如 Apple iPad 或 Microsoft Surface）中的较大屏幕进行了优化。任何创作用例都不支持手机外形规格。
 
-根据[创作方法，Adobe Experience Manager用户界面可与以下客户端平台配合使用。](/help/edge/overview.md#authoring-method)
+Adobe Experience Manager 用户界面可在以下客户端平台上使用，具体取决于[创作方法。](/help/edge/overview.md#authoring-method)
 
 * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)
-* 使用[Sidekick](/help/edge/docs/sidekick.md)的[基于文档的创作](/help/edge/docs/authoring.md)
+* [基于文档的创作](/help/edge/docs/authoring.md)使用 [Sidekick](/help/edge/docs/sidekick.md)
 
-所有浏览器都使用默认插件和加载项集进行测试。
+所有浏览器都用默认的插件和附加功能进行了测试。
 
-| 浏览器 | 通用编辑器支持级别 | 页面编辑器支持级别 | Sidekick支持级别 |
+| 浏览器 | 通用编辑器支持级别 | 页面编辑器支持级别 | Sidekick 支持级别 |
 |---|---|---|---|
-| Google Chrome（常绿市） | 答：支持 | 答：支持 | 答：支持 |
-| Microsoft Edge（常绿市） | 答：支持 | 答：支持 | Z：不支持 |
-| Mozilla Firefox （常绿） | 答：支持 | 答：支持 | Z：不支持 |
-| Mozilla Firefox最新的ESR [1] | 答：支持 | 答：支持 | Z：不支持 |
-| macOS上的Safari （常青） | 答：支持 | 答：支持 | Z：不支持 |
-| iOS上的Safari （常青） [2] | Z：不支持 | 答：支持 | Z：不支持 |
+| Google Chrome（常青内容） | A：受到支持 | A：受到支持 | A：受到支持 |
+| Microsoft Edge（常青内容） | A：受到支持 | A：受到支持 | Z：不受支持 |
+| Mozilla Firefox（常青内容） | A：受到支持 | A：受到支持 | Z：不受支持 |
+| Mozilla Firefox 最新 ESR [1] | A：受到支持 | A：受到支持 | Z：不受支持 |
+| macOS 上的 Safari（常青内容） | A：受到支持 | A：受到支持 | Z：不受支持 |
+| iOS 上的 Safari（常青内容）[2] | Z：不受支持 | A：受到支持 | Z：不受支持 |
 
-1. Firefox的扩展支持版本（[了解有关mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)的更多信息）
-1. 仅支持Apple iPad
+1. Firefox 的扩展支持版本（[访问 mozilla.org 了解更多信息](https://www.mozilla.org/en-US/firefox/enterprise/)）
+1. 仅支持 Apple iPad
 
 >[!NOTE]
 >
->**对具有快速发布周期的浏览器的支持：**
+>**支持发布周期较快的浏览器：**
 >
->Firefox、Chrome和Edge会定期发布更新。 Adobe致力于为这些浏览器即将发布的版本保持如上列出的支持级别。
+>Firefox、Chrome 和 Edge 定期发布更新。Adobe 致力于对这些浏览器即将推出的版本保持上述支持级别。
 
-## 支持的网站浏览器 {#websites}
+## 可用于网站的受支持的浏览器 {#websites}
 
-浏览器对AEM渲染的网站的支持取决于AEM页面模板、块、设计和组件输出的实施。 因此，实施项目的开发人员最终将控制您网站的兼容性。
+浏览器对 AEM 渲染的网站的支持取决于 AEM 页面模板、块、设计和组件输出的实施。因此，实施网站项目的开发人员最终可以控制网站的兼容性。
 
-AEM [项目样板、](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [核心组件、](/help/implementing/developing/components/overview.md#aem-core-components)和[WKND示例站点](/help/implementing/developing/introduction/develop-wknd-tutorial.md)都与所有新式浏览器兼容。
+AEM [项目样板代码、](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project)[核心组件](/help/implementing/developing/components/overview.md#aem-core-components)和 [WKND 示例网站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)全都与所有现代浏览器兼容。

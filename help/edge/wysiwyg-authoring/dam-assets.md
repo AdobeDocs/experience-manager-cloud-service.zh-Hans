@@ -1,6 +1,6 @@
 ---
-title: 使用Edge Delivery Services发布带DAM Assets的页面
-description: 了解确保将页面的DAM资产无缝发布到Edge Delivery Services所需的设置。
+title: 使用 Edge Delivery Services 发布包含 DAM 资产的页面
+description: 了解需要哪些设置可确保您页面的 DAM 资产顺利发布到 Edge Delivery Services。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
@@ -8,53 +8,53 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# 使用Edge Delivery Services发布带DAM Assets的页面 {#dam-assets}
+# 使用 Edge Delivery Services 发布包含 DAM 资产的页面 {#dam-assets}
 
-了解确保将页面的DAM资产无缝发布到Edge Delivery Services所需的设置。
+了解需要哪些设置可确保您页面的 DAM 资产顺利发布到 Edge Delivery Services。
 
-## 通用编辑器、DAM Assets和Edge Delivery {#overview}
+## 通用编辑器、DAM 资产和 Edge Delivery {#overview}
 
-在编辑通用编辑器的内容时，您当然可以从DAM中选择资源。 在将内容发布到Edge Delivery Services时，也会发布相关的DAM内容。
+为通用编辑器编辑内容时，您当然可以从 DAM 中选择资产。当您将内容发布到 Edge Delivery Services 时，相关的 DAM 内容也会发布。
 
-要确保这种无缝行为，AEM和Edge Delivery Services必须具有对DAM的正确访问权限才能发布。 这包括：
+为了确保这个过程顺利无缝，AEM 和 Edge Delivery Services 必须具有对 DAM 的适当访问权限才能正确发布。这包括：
 
-* [确保资源文件夹可访问](#accessible)。
-* [确保为资源文件夹分配了正确的配置（根据需要）](#configuration)。
+* [确保资产文件夹可访问](#accessible)。
+* [确保资产文件夹被分配了正确的配置（根据需要）](#configuration)。
 
-## 确保Assets文件夹可访问 {#accessible}
+## 确保资产文件夹可访问 {#accessible}
 
-将页面从AEM发布到Edge Delivery Services时，使用了[技术帐户](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)。 当您首次发布使用通用编辑器创建的页面时，Cloud Manager会在AEM中自动创建名称为`<hash>@techacct.adobe.com`格式的此帐户。
+将页面从 AEM 发布到 Edge Delivery Services 时，需要使用[技术帐户](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)。每当您首次发布使用通用编辑器创建的页面时，Cloud Manager 都会自动在 AEM 中创建此帐户作为一个用户，其名称格式为 `<hash>@techacct.adobe.com`。
 
 ![技术帐户](/help/edge/wysiwyg-authoring/assets/dam-assets/technical-account.png)
 
-此技术帐户必须具有对所有DAM文件夹的访问权限，才能发布其内容。 您可以：
+此技术帐户必须具有对所有 DAM 文件夹的访问权限才能发布这些文件夹的内容。您可以：
 
-* 不使用专用DAM文件夹。
-* 授予技术帐户用户对DAM文件夹的访问权限。
+* 不使用专用 DAM 文件夹。
+* 授予技术帐户对 DAM 文件夹的用户访问权限。
 
-## 确保为Assets文件夹分配了正确的配置 {#configuration}
+## 确保资产文件夹被分配了正确的配置 {#configuration}
 
-通常，确保技术帐户有权访问DAM中的资产，这足以将资产与页面发布到Edge Delivery Services。
+通常，确保您的技术帐户可以访问 DAM 中的资产，就可以确保将您的资产与页面一起发布到 Edge Delivery Services。
 
-但是，在另外两种情况下需要额外的配置：
+但是，在另外两种情况下还需要进行额外的配置：
 
-* 如果您希望将带有非图像资源（如PDF或视频）的页面发布到Edge Delivery Services。
-* 如果您希望将图像资产发布到Edge Delivery Services，而不依赖于页面。
+* 如果您希望将包含非图像资产（例如 PDF 或视频）的页面发布到 Edge Delivery Services。
+* 如果您希望将图像资产与页面分开发布到 Edge Delivery Services。
 
-要支持这两种使用案例，必须将[配置](/help/implementing/developing/introduction/configurations.md)分配给DAM文件夹。
+为了支持这两种用例，必须给 DAM 文件夹分配一个[配置](/help/implementing/developing/introduction/configurations.md)。
 
-1. 登录您的AEM创作环境。
-1. 在&#x200B;**站点**&#x200B;下，选择发布资产的站点或与资产关联的站点。
-1. 点按或单击工具栏中的&#x200B;**属性**。
-1. 在属性窗口的&#x200B;**高级**&#x200B;选项卡上，记下字段&#x200B;**云配置**&#x200B;中的配置。
-   * 当您以`/conf/<site-name>`格式创建站点时，将自动创建此项。
-1. 在属性窗口中点按或单击&#x200B;**取消**，然后导航到&#x200B;**Assets** -> **文件**，并选择您的DAM文件夹。
-1. 点按或单击工具栏中的&#x200B;**属性**。
-1. 在属性窗口的&#x200B;**云服务**&#x200B;选项卡的&#x200B;**云配置**&#x200B;字段中，选择与之前说明的相同的配置。
+1. 登录您的 AEM 创作环境。
+1. 在 **Sites** 中选择您要发布资产的 Site 或者要与资产相关联的 Site。
+1. 在工具栏中点击或单击&#x200B;**属性**。
+1. 在属性窗口中的&#x200B;**高级**&#x200B;选项卡中，记下&#x200B;**云配置**&#x200B;字段中的配置。
+   * 当您创建 `/conf/<site-name>` 格式的 Site 时，就会自动创建该配置。
+1. 在属性窗口中点击或单击&#x200B;**取消**，然后导航至&#x200B;**资产** -> **文件**，选择您的 DAM 文件夹。
+1. 在工具栏中点击或单击&#x200B;**属性**。
+1. 在属性窗口中的 **Cloud Services** 选项卡中，在&#x200B;**云配置**&#x200B;字段中选择与之前记下的相同的配置。
 1. 点击或单击&#x200B;**保存并关闭**。
