@@ -36,7 +36,7 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 1. 导航到&#x200B;**工具** → **云服务**。
    ![导航](assets/cloudservice1.png "导航")
 2. 选择 **Adobe Target**。
-3. 选择&#x200B;**创建**按钮。
+3. 选择&#x200B;**创建**&#x200B;按钮。
    ![创建](assets/tenant1.png "创建")
 4. 填写详细信息（见下文），然后选择&#x200B;**连接**。
    ![连接](assets/open_screen1.png "连接")
@@ -117,7 +117,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 1. 选择&#x200B;**新属性**&#x200B;按钮。
 2. 为属性提供名称。
 3. 作为域，输入要加载 Launch 库的 IP/主机。
-4. 选择&#x200B;**保存**按钮。
+4. 选择&#x200B;**保存**&#x200B;按钮。
    ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### 添加所需的扩展 {#add-extension}
@@ -128,7 +128,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 2. 选择&#x200B;**Adobe Target** at.js，然后单击“安装”选项。
    ![Target Search](assets/search_ext1.png "Target Search")
 3. 选择&#x200B;**配置**&#x200B;按钮。请注意包含已导入 Target 帐户凭据的配置窗口，以及此扩展的 at.js 版本。
-4. 选择&#x200B;**保存**&#x200B;以将 Target 扩展添加到 Launch 属性。**安装的扩展**列表的下方应列出 Target 扩展。
+4. 选择&#x200B;**保存**&#x200B;以将 Target 扩展添加到 Launch 属性。**安装的扩展**&#x200B;列表的下方应列出 Target 扩展。
    ![保存扩展](assets/configure_extension1.png "保存扩展")
 5. 重复上述步骤以搜索 **Adobe ContextHub** 扩展并安装它（该扩展是实现与 ContextHub 参数集成所必需的，并基于已执行的定位）。
 
