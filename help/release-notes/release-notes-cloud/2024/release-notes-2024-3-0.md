@@ -186,7 +186,7 @@ Assets Essentials 允许管理员管理存储库中可用的专用收藏集的�
 
   您可以通过您的官方电子邮件 ID 向 `aem-forms-ea@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
-* **[您可以利用操作遥测服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**启用AEM as a Cloud Service的客户端收集。
+* **[您可以利用操作遥测服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;启用AEM as a Cloud Service的客户端收集。
 运营遥测服务可更准确地反映用户交互，从而确保可靠地衡量网站参与度。 这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
   如果您有兴趣测试这项新功能并分享您的反馈，请向`aemcs-rum-adopter@adobe.com`发送一封电子邮件，同时附上您想要通过与Adobe ID关联的电子邮件地址为每个环境启用操作遥测的域名。 Adobe的产品团队将为您启用操作遥测服务。
