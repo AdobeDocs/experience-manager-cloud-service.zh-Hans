@@ -1,25 +1,30 @@
 ---
 title: 如何启用Adobe Analytics以进行自适应表单的快速跟踪分析？
-description: Experience Cloud设置自动化帮助Adobe Analytics连接到自适应表单，以便快速跟踪关于访客交互和参与的分析见解。
-keywords: 使用Experience Cloud设置自动化为自适应表单启用Adobe Analytics，在Forms中启用Adobe Analytics，在自适应Forms中启用Adobe Analytics，Forms Analytics集成、Forms和Adobe Analytics
+description: Experience Cloud Setup Automation帮助将Adobe Analytics连接到自适应表单，以便快速跟踪关于访客交互和参与的分析见解。
+keywords: 使用Adobe Analytics Setup Automation为自适应表单启用Experience Cloud、在Forms中启用Adobe Analytics、在自适应Forms中启用Adobe Analytics、Forms Analytics集成、Forms和Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
+source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 2%
+source-wordcount: '1597'
+ht-degree: 3%
 
 ---
 
-# 使用Experience Cloud设置自动为自适应表单启用Adobe Analytics {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+# （已弃用）使用Adobe Analytics Setup Automation为自适应表单启用Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+>[!CAUTION]
+>
+>Experience Cloud设置自动化功能已弃用。
+
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
-“Experience Cloud设置自动化”有助于将Adobe Analytics连接到Adaptive Forms，后者有助于快速跟踪分析用户与您的表单的交互，并提供有关访客交互和参与情况的洞察。 Experience Cloud设置自动化还有助于监控表单性能，其中涉及评估完成时间和流失点等指标。 此分析有助于优化表单以获得更好的用户体验，同时根据登录状态（例如，匿名用户）区分用户行为以确定一般趋势和模式。
+Experience Cloud Setup Automation有助于将Adobe Analytics连接到Adaptive Forms，后者有助于快速跟踪分析用户与表单的交互并提供有关访客交互和参与情况的见解。 Experience Cloud设置自动化还有助于监控表单性能，其中涉及评估完成时间和流失点等指标。 此分析有助于优化表单以获得更好的用户体验，同时根据登录状态（例如，匿名用户）区分用户行为以确定一般趋势和模式。
 
 ## 将Adobe Analytics与自适应Forms集成的优势 {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -58,11 +63,11 @@ Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**数据收集(以前为AdobeLaunch)**&#x200B;来管理跟踪脚本，以及&#x200B;**Experience Manager Forms许可证**&#x200B;来简化数据聚合和洞察生成。
+Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**数据收集(以前为Adobe Launch)**&#x200B;来管理跟踪脚本，以及&#x200B;**Experience Manager Forms许可证**&#x200B;来简化数据聚合和insight生成。
 
-如果您拥有&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Experience Manager Forms**&#x200B;的有效许可证，并且与&#x200B;**数据收集(以前为AdobeLaunch)**&#x200B;集成，则应在开发人员控制台中验证其可用性。
+如果您拥有&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Experience Manager Forms**&#x200B;的有效许可证，并且与&#x200B;**数据收集(以前为Adobe Launch)**&#x200B;集成，则应在开发人员控制台中验证其可用性。
 
-要验证上述内容是否可用于您的Formsas a Cloud Service环境，请访问[开发人员控制台](https://developer.adobe.com/console/projects)，导航到项目并使用项目ID — 环境ID搜索您的项目，例如，对于URL为`https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、项目ID — 环境ID为`p45913-e175111`的环境。 确保列出了Experience Cloud设置自动化、Adobe Analytics和Experience Platform LaunchAPI。 如果列出了这些参数，则可启用Adobe Analytics以进行自适应Forms的快速跟踪分析。
+要验证上述内容是否可用于您的Forms as a Cloud Service环境，请访问[开发人员控制台](https://developer.adobe.com/console/projects)，导航到项目并使用项目ID — 环境ID搜索您的项目，例如，对于URL为`https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、项目ID — 环境ID为`p45913-e175111`的环境。 确保列出了Experience Cloud设置自动化、Adobe Analytics和Experience Platform Launch API。 如果列出了这些参数，则可启用Adobe Analytics以进行自适应Forms的快速跟踪分析。
 
 ![预先Forms Analytics集成](assets/analytics-aem.png){width="100%"}
 
@@ -71,7 +76,7 @@ Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**�
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=zh-Hans)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## 配置Adobe Analytics {#configure-adobe-analytics}
@@ -95,7 +100,7 @@ Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**�
 1. 为云服务创建配置容器：
    1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
    1. 选择或创建配置容器，并启用&#x200B;**[!UICONTROL 云配置]**&#x200B;的文件夹。
-   1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存配置并退出对话框。
+   1. 选择&#x200B;**[!UICONTROL 保存并关闭]**，以保存配置并退出对话框。
 1. 在您的AEM实例上，转到&#x200B;**[Forms]** >> **[Forms和文档]**。
 1. 选择您的&#x200B;**[!UICONTROL 表单]** >> **[!UICONTROL 属性]**，在&#x200B;**[!UICONTROL 配置容器]**&#x200B;中，选择您在步骤1中的&#x200B;**[!UICONTROL 配置浏览器]**&#x200B;中创建或选择的配置容器。
 1. 选择左边栏上的“任务”面板，然后单击&#x200B;**设置Analytics**&#x200B;和&#x200B;**激活Adobe Analytics**。
@@ -149,7 +154,7 @@ Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**�
 
 要在AEM Sites页面中连接自适应表单以启用Analytics以进行快速跟踪分析，请使用AEM Archetype/Git存储库和部署管道将`customfooterlibs`客户端库包含到AEM Sites页面。
 
-1. 在文本编辑器中打开[AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)项目。 例如，Visual Studio Code。
+1. 在文本编辑器中打开[AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)项目。 例如，Visual Studio Code。
 
 1. 导航到您的自适应表单所在的站点页面，例如，在此演示项目中，我们有`ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 
@@ -172,7 +177,7 @@ Experience Cloud设置自动化需要&#x200B;**Adobe Analytics许可证**、**�
 
    `customfooterlibs.html`用于JavaScript。
 
-1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hans)以部署更改。
+1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)以部署更改。
 
 ### 在站点中启用Forms的Form Analytics规则 {#bind-forms-analytics-rules-to-forms-in-sites}
 
