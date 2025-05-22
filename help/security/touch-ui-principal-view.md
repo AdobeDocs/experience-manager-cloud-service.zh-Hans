@@ -63,7 +63,7 @@ CRXDE用于管理高级权限和限制。 该报表已合并到同一视图中�
 
 >[!NOTE]
 >
->有关权限和说明的完整列表，请参阅[用户、组和访问权限管理](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)。
+>有关权限和说明的完整列表，请参阅[用户、组和访问权限管理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)。
 
 给定路径的![搜索权限。](assets/image2019-3-21_0-5-47.png) ![为“dam-users”添加新条目，如在垂直列中选择的路径所示。](assets/image2019-3-21_0-6-53.png)
 
