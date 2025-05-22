@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1079'
 ht-degree: 11%
 
 ---
@@ -49,13 +49,18 @@ ht-degree: 11%
 1. 在&#x200B;**解决方案和加载项**&#x200B;列表框中，选择要包含在程序中的一个或多个解决方案。
 
    * 如果您不确定是否需要一个或多个项目来提供各种解决方案，请选择您最感兴趣的项目。您可以稍后通过[编辑项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)来激活其他解决方案。有关更多项目设置建议，请参阅[生产项目简介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
-   * 程序创建至少需要一个解决方案。
-   * 为优化数字体验的完全托管的CDN解决方案选择&#x200B;**Edge Delivery Services**。 查看[关于使用Edge Delivery Services交付您的Cloud Manager项目](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-   * 如果您选择了&#x200B;**[启用增强安全性](#security)**&#x200B;选项，则您只能选择HIPAA权利可用的解决方案。
+   * 需要您至少选择一个解决方案来创建程序。 例如，您可以选择为优化数字体验的完全托管的CDN解决方案选择&#x200B;**Edge Delivery Services**。 查看[关于使用Edge Delivery Services交付您的Cloud Manager项目](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 
-     ![选择解决方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![选择解决方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-   * 单击解决方案名称左侧的![V形300大小图标](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)以显示任何可选的加载项，例如&#x200B;**站点**&#x200B;下的&#x200B;**Commerce**&#x200B;加载项选项。
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+
+
+   * 单击解决方案名称左侧的![300号的V形图标](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)以显示任何可选的加载项。<!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![选择“插件”](assets/setup-prod-commerce.png)
 
