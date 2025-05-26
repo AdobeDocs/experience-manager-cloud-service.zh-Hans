@@ -113,7 +113,7 @@ Content Hub 是 Adobe 提供和维护的一项功能，它没有任何需要通�
 
 ## 为什么我的资源卡上看不到使用Adobe Express编辑选项以便能够重新混合资源以创建新变体？ {#edit-using-express-not-available}
 
-要查看资源信息卡上的&#x200B;**使用Adobe Express编辑**&#x200B;选项，用户必须具有Adobe Express Enterprise或Teams权利（请参阅[计划](https://www.adobe.com/express/pricing)），以及有权将资源重新混合到新变体](#onboard-content-hub-users-add-assets)的[Content Hub用户的权限。
+要查看资源信息卡上的&#x200B;**使用Adobe Express编辑**&#x200B;选项，用户必须具有Adobe Express Enterprise或Teams权利（请参阅[计划](https://www.adobe.com/express/pricing)），以及有权将资源重新混合到新变体[&#128279;](#onboard-content-hub-users-add-assets)的Content Hub用户的权限。
 
 有一些有关如何将用户分配给[!DNL Content Hub]和[!DNL Adobe Express]的配置：
 
@@ -127,7 +127,7 @@ Content Hub 是 Adobe 提供和维护的一项功能，它没有任何需要通�
    >
    >在两个Admin Console中分配给Express和Assets产品配置文件的用户需要拥有相同的电子邮件地址，并使用企业&#x200B;**企业或学校**&#x200B;帐户，而不是&#x200B;**个人**&#x200B;帐户。 理想的配置是将两个Admin Console都设置为&#x200B;**Federated ID**，并在它们之间设置信任关系，以便用户获得无缝的单点登录体验。 某些Express计划（例如， Express团队）不支持Federated ID/单点登录。
 
-除了正确的产品授权，Content Hub中的Adobe Express集成要求分配的用户在支持Content Hub的Assets创作环境中至少具有[!UICONTROL 可编辑]权限，至少具有在&#x200B;**[#UICONTROL /content/dam/hydrated-assets/]**&#x200B;文件夹层次结构中，Content Hub用户可以在其中保存他们使用Express创建的内容。 请参阅“管理员”视图(Touch UI)中的[权限管理](/help/security/touch-ui-principal-view.md)或Assets视图](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中简化的[权限管理。
+除了正确的产品授权，Content Hub中的Adobe Express集成要求分配的用户在支持Content Hub的Assets创作环境中至少具有[!UICONTROL 可编辑]权限，至少具有在&#x200B;**[!UICONTROL # /content/dam/hydrated-assets/]**&#x200B;文件夹层次结构中，Content Hub用户可以在其中保存他们使用Express创建的内容。 请参阅“管理员”视图(Touch UI)中的[权限管理](/help/security/touch-ui-principal-view.md)或Assets视图[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中简化的权限管理。
 
 ## 我可以设置 Content Hub，以便我的组织的品牌指南显示为主页上的关联吗？ {#content-hub-setup-brand-guidelines}
 
