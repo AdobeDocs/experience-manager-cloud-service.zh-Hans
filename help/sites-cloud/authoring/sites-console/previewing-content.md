@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 89%
+source-wordcount: '306'
+ht-degree: 72%
 
 ---
 
@@ -19,11 +19,15 @@ AEM 提供站点预览服务，让开发人员和内容作者可以在网站到�
 
 它有助于预览在创作环境中不可见的页面体验，例如页面过渡和其他仅发布方内容。
 
+>[!IMPORTANT]
+>
+>列入允许列表访问“预览”环境需要配置IP。 有关详细信息，请参阅[访问预览服务](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service)。
+>
+>有关所有环境的更多详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)。
+
 >[!NOTE]
 >
->将内容&#x200B;*发布*&#x200B;到预览环境时，可通过 URL 访问它（因此无需访问 AEM）。
-
-有关预览环境的更多详细信息，请参阅[管理环境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+>由于内容是&#x200B;*已发布*&#x200B;到预览环境，因此可通过URL访问该内容。
 
 ## 将内容发布到预览 {#publishing-content-to-preview}
 
@@ -48,7 +52,7 @@ AEM 提供站点预览服务，让开发人员和内容作者可以在网站到�
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-有关如何为您的环境检索 URL 的更多信息，请参阅文档[管理环境](/help/implementing/cloud-manager/manage-environments.md)。
+有关如何为您的环境检索URL的详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)。
 
 也可以使用[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)并将 `agentId` 参数设置为 `preview` 或使用[复制 API](/help/operations/replication.md#replication-api) 并为预览配置 `AgentFilter` 来将内容发布到预览。
 
