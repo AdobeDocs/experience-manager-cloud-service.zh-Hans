@@ -6,30 +6,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 18fe0125351c635c226bebf0f309710634230e64
-workflow-type: ht
-source-wordcount: '1199'
-ht-degree: 100%
+source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 86%
 
 ---
 
 # AEM as a Cloud Service 客户管理的密钥设置 {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service 当前将客户数据存储在 Azure Blob Storage 和 MongoDB 中，默认情况下利用提供商管理的加密密钥来保护数据。虽然这种设置满足了众多组织的安全需求，但在受管制行业或需要增强数据主权的企业可能会寻求对其加密实践的更大控制权。对于那些优先考虑数据安全、合规性以及管理加密密钥能力的组织来说，客户管理密钥 (CMK) 解决方案提供了一个关键的增强功能。
+AEM as a Cloud Service 当前将客户数据存储在 Azure Blob Storage 和 MongoDB 中，默认情况下利用提供商管理的加密密钥来保护数据。虽然这种设置满足了许多组织的安全需求，但受管控行业的企业或那些要求增强数据安全性的企业可能会寻求对其加密实践进行更大的控制。 对于那些优先考虑数据安全、合规性以及管理加密密钥能力的组织来说，客户管理密钥 (CMK) 解决方案提供了一个关键的增强功能。
 
 ## 正在解决的问题 {#the-problem-being-solved}
 
-提供商管理的密钥可能会给金融、医疗保健和政府等领域的企业带来担忧，因为这些部门有严格的法规要求对数据安全进行全面控制。如果不能控制密钥管理，组织在满足合规要求、实施自定义安全策略以及确保完整的数据主权方面将面临挑战。
+提供商管理的密钥可能会给需要额外隐私和完整性的企业带来顾虑。 如果不能控制关键管理，公司在满足法规遵从性要求、实施定制安全策略以及确保完整的数据安全方面将面临挑战。
 
 客户管理密钥 (CMK) 的引入解决了这些问题，它赋予 AEM 客户对其加密密钥的完全控制权。通过使用 Microsoft Entra ID（前身为 Azure Active Directory）进行身份验证，AEM CS 能够安全地连接到客户的 Azure 密钥存储库，使他们能够管理加密密钥的生命周期——包括密钥的创建、轮换和撤销。
 
 CMK 具有以下几个优点：
 
-* **安全性增强：**&#x200B;客户可以确保他们的加密实践满足特定的安全要求，从而在数据保护方面感到放心。
-* **合规灵活性：**&#x200B;通过全面控制关键的生命周期，企业可以轻松适应不断发展的监管标准，如 GDPR、HIPAA 或 CCPA，确保其合规态势保持强劲。
-* **无缝集成：** CMK 解决方案直接与 AEM CS 中的 Azure Blob Storage 和 MongoDB 集成，确保存储操作或可用性不受干扰，同时为客户提供强大的加密功能。
+* **控制数据和应用程序加密：**&#x200B;通过直接管理AEM应用程序和数据加密密钥来提高安全性。
+* **提高机密性和完整性：**&#x200B;通过完整的加密管理，降低无意访问和泄露敏感或专有数据的可能性。
+* **Azure Key Vault支持：**&#x200B;使用Azure Key Vault允许密钥存储、处理密钥操作和执行密钥轮替。
 
-通过采用 CMK，客户可以增强对其数据安全和加密实践的控制，提高合规性并降低风险，同时继续享受 AEM CS 的可扩展性和灵活性。
+通过采用CMK，客户可以增强对其数据安全和加密实践的控制，增强安全性和降低风险，同时继续享有AEM CS的可扩展性和灵活性。
 
 AEM as a Cloud Service 允许您使用自己的加密密钥来加密静态数据。本指南提供了在 Azure 密钥存储库中为 AEM as a Cloud Service 设置客户管理密钥 (CMK) 的步骤。
 
@@ -103,7 +103,7 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## 授予 Adobe 访问密钥存储库的权限 {#grant-adone-access-to-the-key-vault}
+## 授予 Adobe 访问密钥存储库的权限 {#grant-adobe-access-to-the-key-vault}
 
 在此步骤中，您将允许 Adobe 通过 Entra 应用程序访问您的密钥存储库。Entra 应用程序的 ID 应该已经由 Adobe 提供。
 
