@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
+source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 18%
+source-wordcount: '1160'
+ht-degree: 17%
 
 ---
 
@@ -58,6 +58,10 @@ Cloud Manager提供自助服务工具来安装和管理SSL证书，确保用户�
 DV证书是最基本级别的SSL证书，通常用于测试目的或用于通过基本加密保护网站。 DV证书在[生产程序和沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中均可用。
 
 创建DV证书后，除非将其删除，否则Adobe会每三个月自动更新一次。
+
+>[!IMPORTANT]
+>
+>如果您的环境使用具有基于CNAME的验证的(DV) SSL证书，请注意，在自动证书续订之前删除CNAME记录可能会导致续订失败。 删除可能会导致证书过期和服务中断。 要避免此问题，请确保CNAME记录在整个续订过程中保持不变。 续订过程依赖于域所有权验证的CNAME记录的存在。
 
 ### 客户管理的(OV/EV) SSL证书 {#customer-managed}
 
