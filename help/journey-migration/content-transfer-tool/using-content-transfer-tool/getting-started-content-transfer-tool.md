@@ -64,7 +64,7 @@ ht-degree: 14%
 >id="aemcloud_ctt_demo"
 >title="运行内容转移工具"
 >abstract="了解如何使用内容转移工具将内容迁移到 AEM as a Cloud Service（创作/发布）。"
->additional-url="https://video.tv.adobe.com/v/327074/?quality=12&amp;learn=on&captions=chi_hans" text=" 观看演示"
+>additional-url="https://video.tv.adobe.com/v/327074/?quality=12&learn=on&captions=chi_hans" text=" 观看演示"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
 
 以下部分适用于内容传输工具的新版本。 请阅读以下章节，了解如何使用内容传输工具将内容迁移到AEM as a Cloud Service：
