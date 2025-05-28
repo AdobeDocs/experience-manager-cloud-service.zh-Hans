@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b246b1729d7e598dc593ecce05bd8975d4752f5a
+source-git-commit: 35d50bc3c2663ff9113ed89dbaeb9b9a82cd9bb1
 workflow-type: tm+mt
-source-wordcount: '6173'
+source-wordcount: '6185'
 ht-degree: 99%
 
 ---
@@ -255,7 +255,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [为 AEM as a Cloud Service 设置 IMS 集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
-   + [权限管理的主体视图](/help/security/touch-ui-principal-view.md)
+   + [权限管理的主要视图](/help/security/touch-ui-principal-view.md)
    + [Sling Service 用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 客户管理的密钥](/help/security/customer-managed-keys.md)
 + 入门培训 {#onboarding}
@@ -439,6 +439,8 @@ ht-degree: 99%
          + [关于删除的注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [内容片段控制台内的资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [使用Adobe Journey Optimizer的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+         + [内容片段AJO外部引用扩展](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Site 创建  {#site-creation}
          + [创建新 Site](/help/sites-cloud/administering/site-creation/create-site.md)
