@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 98%
 **答：**&#x200B;有多种分析和跟踪选项：
 
 - Adobe Experience Platform Web SDK（主要推荐）
-- 采样度量的操作遥测
+- 用于抽样量度的操作遥测
 - 根据需要与其他分析系统集成
 
 ## 文档和资源

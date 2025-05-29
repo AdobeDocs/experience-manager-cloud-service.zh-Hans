@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->请参阅[关于在 AEM 中生成变体的详细信息的安全情况说明书](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)。
+>请参阅[关于在 AEM 中生成变体的详细信息的安全情况说明书](https://www.adobe.com/cn/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)。
 
 ## 概述 {#overview}
 
@@ -330,9 +330,9 @@ The brand score shows you how on-brand the generated variation is.
 
    * [Experience Cloud 产品中的生成式 AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai#aem)
 
-* 在Experience Cloud上[生成变体登录页面](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+* [在 Experience Cloud 上生成变体登陆页面](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
-* [AEM as a Cloud Service中的创作](/help/generative-ai/generative-ai-in-aem.md)
+* [AEM as a Cloud Service 中的生成式](/help/generative-ai/generative-ai-in-aem.md)
 
 ## 版本历史记录 {#release-history}
 
