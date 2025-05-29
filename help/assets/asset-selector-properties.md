@@ -1,12 +1,12 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
+title: 用于自定义的资源选择器属性
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: 89a7346f5b6bc1d65524c5ead935aa4a2a764ebb
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 44%
+source-wordcount: '1403'
+ht-degree: 41%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 44%
 | *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用[!DNL Adobe]应用程序进行集成，则需要`imsToken`。 |
 | *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用[!DNL Adobe]应用程序集成，则需要`apiKey`。 |
 | *filterSchema* | 数组 | 否 | | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
-| *filterFormProps* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。为了！ 例如，MIME类型JPG、PNG、GIF。 |
+| *filterForm属性* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。为了！ 例如，MIME类型JPG、PNG、GIF。 |
 | *selectedAssets* | 数组 `<Object>` | 否 |                 | 呈现资源选择器时指定选定资源。包含资源的 id 属性的必需对象数组。例如，`[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须在当前目录中可用。如果您需要使用其他目录，请也为 `path` 属性提供一个值。 |
 | *acvConfig* | 对象 | 否 | | 资产收藏集视图属性，该属性包含用于覆盖默认值的自定义配置的对象。 此外，此属性与`rail`属性一起使用，以启用资产查看器的边栏视图。 |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |                 | 如果OOTB翻译无法满足应用程序的需求，则可以公开一个界面，通过该界面可通过`i18nSymbols` prop传递您自己的自定义本地化值。 通过此界面传递值将覆盖提供的默认转换，并转而使用您自己的转换。 要执行覆盖，您必须将一个有效的[消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor)对象传递到要覆盖的 `i18nSymbols` 键。 |
@@ -66,12 +66,12 @@ ht-degree: 44%
 | *repositoryId* | 字符串 | 否 | &#39;&#39; | 资源选择器从中加载内容的存储库。 |
 | *additionalAemSolutions* | `Array<string>` | 否 | [ ] | 它允许您添加其他AEM存储库的列表。 如果此属性中未提供任何信息，则仅考虑媒体库或 AEM Assets 存储库。 |
 | *hideTreeNav* | 布尔值 | 否 |  | 指定是显示还是隐藏资源树导航侧边栏。它仅在模态视图中使用，因此，该属性在边栏视图中不起作用。 |
-| *onDrop* | 函数 | 否 | | 该属性允许资源的删除功能。 |
+| *onDrop* | 函数 | 否 | | 拖放功能用于将资产拖放至指定的拖放区域。 它支持交互式用户界面，可在其中无缝地移动和处理资产。 |
 | *dropOptions* | `{allowList?: Object}` | 否 | | 使用“allowList”配置删除选项。 |
 | *colorScheme* | 字符串 | 否 | | 为资源选择器配置主题（`light` 或 `dark`）。 |
 | *主题* | 字符串 | 否 | 默认 | 将主题应用于`default`到`express`之间的资产选择器应用程序。 它还支持`@react-spectrum/theme-express`。 |
-| *handleSelection* | 函数 | 否 | | 在资源已选定并单击模态上的 `Select` 按钮时调用资源项数组。仅在模态视图中调用此函数。对于边栏视图，请使用 `handleAssetSelection` 或 `onDrop` 函数。示例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 有关详细信息，请参阅[选择的资源](/help/assets/asset-selector-customization.md#selection-of-assets)。 |
-| *handleAssetSelection* | 函数 | 否 | | 在选择或取消选择资源时调用项目数组。如果您需要在用户选择资源时进行侦听，这会很有用。示例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 有关详细信息，请参阅[选择的资源](/help/assets/asset-selector-customization.md#selection-of-assets)。 |
+| *handleSelection* | 函数 | 否 | | 在资源已选定并单击模态上的 `Select` 按钮时调用资源项数组。仅在模态视图中调用此函数。对于边栏视图，请使用 `handleAssetSelection` 或 `onDrop` 函数。示例： <pre>handleSelection=（资源：资源[]）=> {...}</pre> 有关详细信息，请参阅[选择的资源](/help/assets/asset-selector-customization.md#selection-of-assets)。 |
+| *handleAssetSelection* | 函数 | 否 | | 在选择或取消选择资源时调用项目数组。如果您需要在用户选择资源时进行侦听，这会很有用。示例： <pre>handleSelection=（资源：资源[]）=> {...}</pre> 有关详细信息，请参阅[选择的资源](/help/assets/asset-selector-customization.md#selection-of-assets)。 |
 | *onClose* | 函数 | 否 | | 在按下模态视图中的 `Close` 按钮时调用。这仅在 `modal` 视图中被调用，在 `rail` 视图中将被忽略。 |
 | *onFilterSubmit* | 函数 | 否 | | 当用户更改其他过滤器条件时调用过滤器项。 |
 | *selectionType* | 字符串 | 否 | 单身 | 一次性为 `single` 或 `multiple` 资源选择配置。 |
@@ -94,11 +94,20 @@ ht-degree: 44%
 | *onFilesChange* | 函数 | 否 | | 它是一个回调函数，用于在文件更改时显示上载行为。 它会传递挂起的待上传文件的新数组以及上传的源类型。 如果发生错误，Source类型可以为null。 语法为`(newFiles: File[], uploadType: UploadType) => void` |
 | *uploadingPlaceholder* | 字符串 | | | 它是一个占位符图像，在启动资源上传时替换元数据表单。 语法为`{ href: string; alt: string; } ` |
 | *上载配置* | 对象 | | | 它是一个对象，其中包含用于上载的自定义配置。 |
-| *功能集* | 数组 | 字符串 | | `featureSet:[ ]`属性用于启用或禁用Asset Selector应用程序中的特定功能。 要启用该组件或功能，您可以在数组中传递字符串值，或将数组留空以禁用该组件。 例如，要在资产选择器中启用上载功能，请使用语法`featureSet:[0:"upload"]`。 |
+| *功能集* | 数组 | 字符串 | | `featureSet:[ ]`属性用于启用或禁用Asset Selector应用程序中的特定功能。 要启用该组件或功能，您可以在数组中传递字符串值，或将数组留空以禁用该组件。  例如，要在资产选择器中启用上载功能，请使用语法`featureSet:[0:"upload"]`。 同样，您可以使用`featureSet:[0:"collections"]`在资产选择器中启用收藏集。 另外，使用`featureSet:[0:"detail-panel"]`启用资源的[详细信息面板](overview-asset-selector.md#asset-details-and-metadata)。 要同时使用这些功能，语法为`featureSet:["upload", "collections", "detail-panel"]`。 |
 
 <!--
+| *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Asset Selector. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. Also, `featureSet:[0:"dm-renditions"]` to show Dynamic Media renditions of an asset.|
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
+
+>[!MORELIKETHIS]
+>
+>* [资产选择器自定义](/help/assets/asset-selector-customization.md)
+>* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
+>* [将资产选择器与具有 OpenAPI 功能的 Dynamic Media 集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [将资产选择器与第三方应用程序集成](/help/assets/integrate-asset-selector-non-adobe-app.md)

@@ -4,10 +4,10 @@ description: 了解AEM Assets和Dynamic Media如何通过静态和动态图像�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 3%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -86,7 +86,7 @@ Dynamic Media图像预设和智能裁切演绎版可促进符合品牌标准的�
    * [图像预设](/help/assets/dynamic-media/managing-image-presets.md)
 
   您可以[稍后切换视图](/help/assets/assets-view-introduction.md#how-to-access-assets-view)以在Assets视图中预览动态演绎版。
-* 将资源发布到Dynamic Media，以便在Assets视图中提供Dynamic Media演绎版。 有关详细信息，请参阅[将Assets发布到AEM和Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
+* 将资源发布到Dynamic Media，以便在Assets视图中提供Dynamic Media演绎版。 有关详细信息，请参阅[将Assets发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
 
 
 ### 查看和下载Dynamic Media演绎版 {#view-download-dm-renditions}
@@ -115,7 +115,7 @@ Dynamic Media图像预设和智能裁切演绎版可促进符合品牌标准的�
 
 ## 具有OpenAPI功能的Dynamic Media呈现版本 {#dm-with-openapi-renditions}
 
-### 开始之前
+### 开始之前 {#prereqs-dm-with-openapi-renditions}
 
 * 您必须是获得许可的AEM Dynamic Media用户。
 * 必须批准Assets才能显示具有OpenAPI功能的Dynamic Media演绎版。 有关详细信息，请参阅[在Experience Manager中批准资源](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
