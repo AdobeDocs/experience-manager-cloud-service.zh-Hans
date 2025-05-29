@@ -86,7 +86,7 @@ Dynamic Media图像预设和智能裁切演绎版可促进符合品牌标准的�
    * [图像预设](/help/assets/dynamic-media/managing-image-presets.md)
 
   您可以[稍后切换视图](/help/assets/assets-view-introduction.md#how-to-access-assets-view)以在Assets视图中预览动态演绎版。
-* 将资源发布到Dynamic Media，以便在Assets视图中提供Dynamic Media演绎版。 有关详细信息，请参阅[将Assets发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
+* 将资源发布到Dynamic Media，以便在Assets视图中提供Dynamic Media演绎版。 有关详细信息，请参阅[将Assets发布到AEM和Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
 
 
 ### 查看和下载Dynamic Media演绎版 {#view-download-dm-renditions}
