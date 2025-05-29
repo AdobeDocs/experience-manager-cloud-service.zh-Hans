@@ -5,15 +5,15 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 052f8425c3c7bc2c12882af4f7b88d559ea34fb3
+exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
+source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1554'
 ht-degree: 1%
 
 ---
 
-
-# AEM Forms与Adobe Experience Platform (AEP)的集成 {#aem-forms-aep-integration}
+# AEM Forms 与 Adobe Experience Platform (AEP) 集成 {#aem-forms-aep-integration}
 
 <span class="preview">将Adaptive Forms (AEM Forms)与Adobe Experience Platform (AEP)连接的功能属于早期访问计划。 若要请求访问功能，只需将电子邮件地址发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D)即可。 您还可以访问<a href="/help/forms/early-access-ea-features.md">提前访问计划</a>页面以发现所有可用的创新和功能。. </span>
 
@@ -56,16 +56,16 @@ ht-degree: 1%
 在AEM Forms中设置AEP连接器之前，请确保您已在Adobe Experience Platform中完成以下操作：
 
 1. 架构设置
-   * [创建XDM架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [启用架构以进行分析](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [定义标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [创建XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [启用架构以进行分析](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [定义标识字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. 数据配置
-   * [创建数据集](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [设置流连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （稍后需要该流端点URL，因此请立即记下它。）
+   * [创建数据集](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [设置流连接](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （稍后需要该流端点URL，因此请立即记下它。）
 
 3. 身份验证
-   * 从Adobe Developer Console [生成API凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials)（客户端ID和客户端密钥）
+   * 从Adobe Developer Console [生成API凭据](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials)（客户端ID和客户端密钥）
 
 
 ## 实施步骤
@@ -81,6 +81,8 @@ ht-degree: 1%
    * 客户端密码（从开发人员控制台获取）
    * OAuth URL（有默认URL，但也可以从开发人员控制台获取）
 
+   ![AEP云配置](/help/forms/assets/aep-cloud-configuration.png)
+
 1. 单击&#x200B;**连接**&#x200B;以建立连接。 建立连接后，配置以下附加设置：
    * 基本URL： platform.adobe.io （这是默认URL，也可以从开发人员控制台获取），将oauth和平台URL默认为生产URL。 在这种情况下，您需要连接到暂存 — 应使用暂存URL。)
    * 组织ID（这与客户端ID/密码一起从开发人员控制台获取）
@@ -94,13 +96,18 @@ ht-degree: 1%
 1. 在&#x200B;**源**&#x200B;选项卡中，选择一个模板
 1. 在&#x200B;**数据**&#x200B;选项卡中，选择&#x200B;**Adobe Experience Platform**&#x200B;选项。
 
-1. 在属性窗格中，选择您的云配置。 系统会从Adobe Experience Platform加载所有可用的架构
+1. 在属性窗格中，选择您的云配置。
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   系统会从Adobe Experience Platform加载所有可用的架构
 
    >[!NOTE]
    >
    >
    > * 仅获取启用配置文件和非系统生成的架构。
    > * 首次设置时，初始架构加载可能需要一些时间。
+
 1. 选择架构的相应/必填字段。 （有关详细步骤，请参阅视频）
 1. 在提交选项卡中：
    * 选择&#x200B;**提交到Adobe Experience Platform**&#x200B;提交操作
@@ -156,7 +163,7 @@ ht-degree: 1%
 答：目前，每个表单只能提交到一个数据集。
 
 **问：可处理的表单提交数量是否存在限制？**
-答：表单提交受您的AEP流摄取[配额和速率限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-lifecycle/api/quota)的约束。
+答：表单提交受您的AEP流摄取[配额和速率限制](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota)的约束。
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -194,10 +201,10 @@ AEM Forms与Adobe Experience Platform集成使组织能够在表单与更广泛�
 ## 相关资源 {#related-resources}
 
 * [AEM Forms as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)
-* [Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hans)
-* [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)
-* [在Adobe Experience Platform中流式引入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hans)
-* [实时客户个人资料概述](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)
+* [Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [在Adobe Experience Platform中流式引入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [实时客户个人资料概述](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [AEM Forms抢先访问功能](/help/forms/early-access-ea-features.md)
 * [使用核心组件创建自适应Forms](/help/forms/creating-adaptive-form-core-components.md)
 * [在AEM Forms中使用表单数据模型](/help/forms/using-form-data-model.md)
@@ -230,5 +237,3 @@ Schema markup for technical documentation
   "keywords": "AEM Forms, Adobe Experience Platform, XDM schema, data integration, form submission, customer profiles, personalization"
 }
 -->
-
-
