@@ -497,7 +497,7 @@ ht-degree: 99%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-   + [AEM as a Cloud Service的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+   + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
    + [对  [!DNL Assets] as a [!DNL Cloud Service] 的重要更改](/help/assets/assets-cloud-changes.md)
@@ -1080,7 +1080,7 @@ ht-degree: 99%
          + [让您的表单全球化：表单翻译指南](/help/edge/docs/forms/translate-forms.md)
          + [保护您的表单：添加 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [构建自定义表单组件：开发人员指南](/help/edge/docs/forms/custom-components-forms.md)
-         + [监视器表单性能：操作遥测指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+         + [监测表单性能：操作遥测指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Edge Delivery 资源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
@@ -1169,7 +1169,7 @@ ht-degree: 99%
          + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
-   + [AEM as a Cloud Service中的创新型人工智能](/help/generative-ai/generative-ai-in-aem.md)
+   + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
    + [生成变体](/help/generative-ai/generate-variations.md)
    + [助手（有限 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
@@ -1231,9 +1231,9 @@ ht-degree: 99%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [只需单击一下即可创建您的第一个Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [一键创建您的第一个 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [配置您的内容Source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
+         + [配置您的内容源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 域设置 {#custom-domain-names}
          + [域设置简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1437,7 +1437,7 @@ ht-degree: 99%
    + [内容搜索与索引](/help/operations/indexing.md)
    + [内容重复服务](/help/operations/replication.md)
    + [新增发布区域](/help/operations/additional-publish-regions.md)
-   + [AEM as a Cloud Service 中的基础设施和服务监控](/help/operations/monitoring.md)
+   + [AEM as a Cloud Service 中的基础设施和服务监测](/help/operations/monitoring.md)
    + [维护任务](/help/operations/maintenance.md)
    + [自助服务恢复](/help/operations/restore.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
