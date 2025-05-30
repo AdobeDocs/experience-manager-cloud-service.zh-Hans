@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e1fa4b3bcb04ab3e834b34f507f1350fb536b513
+source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 50%
+source-wordcount: '562'
+ht-degree: 49%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 50%
 * GRANITE-54164：从公共API中删除了`org.apache.jackrabbit.oak.plugins.blob`。
 * GRANITE-54280：从公共API中删除了`org.apache.jackrabbit.oak.cache`。
 * GRANITE-58332：在公共API中弃用`org.apache.jackrabbit.oak.plugins.memory`。
+* 已弃用适用于javascript的YUI压缩程序。
 * 已弃用[Experience Cloud安装程序自动化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)功能。
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
