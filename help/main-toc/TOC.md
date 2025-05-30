@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 35d50bc3c2663ff9113ed89dbaeb9b9a82cd9bb1
+source-git-commit: e44c109a8e64c2162f209bcf85b81336764ee9fe
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6184'
 ht-degree: 99%
 
 ---
@@ -534,7 +534,7 @@ ht-degree: 99%
       + [管理发布](/help/assets/manage-publication.md)
       + [预览 3D 资产](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [图像的智能标记](/help/assets/smart-tags.md)
-      + [为视频资产添加智能标记](/help/assets/smart-tags-video-assets.md)
+      + [视频的智能标记](/help/assets/smart-tags-for-videos.md)
       + [如何组织资产](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 资产](/help/assets/aem-assets-adobe-stock.md)
       + [管理收藏集](/help/assets/manage-collections.md)

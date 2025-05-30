@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 77%
+source-wordcount: '2448'
+ht-degree: 76%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 77%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@ ht-degree: 77%
 
 ![查看资产的元数据](assets/metadata-view.png)
 
-*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 标题、描述和上传日期等基本元数据在[!UICONTROL 基本]选项卡中提供。[!UICONTROL 高级]选项卡包含更多高级元数据，例如相机型号、镜头详细信息和地理位置标记。[!UICONTROL 标记]选项卡包含根据图像的内容自动应用的标记。
 
@@ -85,7 +85,7 @@ ht-degree: 77%
 
 ![查看资产的智能标记](assets/metadata-view-tags.png)
 
-*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 智能标记还包含以百分比显示的置信度分数。它指示与所应用标记对应的置信度。您可以审核自动应用的智能标记。
 
@@ -212,25 +212,25 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
 1. 转到资产详细信息页面并导航到&#x200B;**[!UICONTROL 链接 URL]**。
 1. 添加您想要用于重定向所选资产的 URL。
-1. 点击&#x200B;**[!UICONTROL 添加链接]**。执行以下操作之一：
-   * 点击![复制图标](assets/do-not-localize/copy.svg)即可复制 URL。
-   * 点击![编辑图标](assets/do-not-localize/edit.svg)即可编辑 URL。
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 添加链接]**。执行以下操作之一：
+   * 单击![复制图标](assets/do-not-localize/copy.svg)即可复制 URL。
+   * 单击![编辑图标](assets/do-not-localize/edit.svg)即可编辑 URL。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 
 ### 使用元数据表单中的标记组件 {#tag-component-metadata-form}
 
-根元素表示可与资产关联的标记的树结构，有助于根据分配给资产的标记识别资产。 此外，在元数据编辑器中配置元数据表单时，您可以限制特定分类的访问。
+根元素是可与资产相关联的标记的树结构，有助于根据分配给某个资产的标记来识别该资产。此外，您可以在元数据编辑器中配置元数据表单时限制特定分类的访问。
 
 #### 标记组件配置 {#tags-component-configuration}
 
-通过执行以下步骤来配置标记组件：
+执行以下步骤配置标记组件：
 
 1. 转到元数据编辑器并导航到&#x200B;**[!UICONTROL 标记]**，然后将其放在画布上。
-1. 重命名画布上的组件。 为此，请转到“设置”面板中[!UICONTROL 元数据属性]下的&#x200B;**[!UICONTROL 标签]**，然后添加用于标识的文本。
-1. 在设置面板的[!UICONTROL 元数据属性]下，搜索要分配给该组件的元数据属性。
-1. 单击&#x200B;**[!UICONTROL 限制为特定分类]**&#x200B;以限制分类的根路径。 为此，请浏览标记并选择特定路径的分类。
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 重命名画布上的组件。为此，在设置面板中前往[!UICONTROL 元数据属性]下的&#x200B;**[!UICONTROL 标签]**，然后添加用于标识的文本。
+1. 在设置面板中的[!UICONTROL 元数据属性]下，搜索您想要分配给组件的元数据属性。
+1. 单击&#x200B;**[!UICONTROL 限制特定分类]**&#x200B;以限制该分类的根路径。为此，浏览标记并选择该分类的特定路径。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
    ![根标记配置](assets/root-tag-config.png)
 
@@ -248,17 +248,44 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-要查看配置的根标记，请转到资产的详细信息页面，其中执行元数据表单和根标记之间的映射。
+要查看已配置的根标记，请转到资产的详细信息页面，在该页面中执行元数据表单和根标记之间的映射。
+
+## 使用AI生成的智能标记增强内容发现 {#ai-smart-tags}
+
+AI不会依赖手动输入，而是自动将描述性标记分配给数字资产。 这些AI生成的标记可提升元数据质量，使资产更容易搜索、分类和推荐。 此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。 例如，如果资产是图像，AI可以识别其中的对象、场景、情感甚至品牌徽标，并生成相关标记，如“日落”、“海滩”、“休假”或“微笑”。 人工智能生成的内容可以通过利用语义和词汇搜索技术增强对资产的搜索。 查看更多[搜索Assets](search-assets-view.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![增强型智能标记](assets/enhanced-smart-tags.png)
+
+### 使用AI生成的智能标记 {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+要使用增强型智能标记功能，请执行以下步骤：
+
+1. 在[!DNL Experience Manager]界面中，转到所需的文件夹，然后单击&#x200B;**[!UICONTROL 添加Assets]**。 <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.-->兼容的图像文件格式为`png`、`jpg`、`jpeg`、`psd`、`tiff`、`gif`、`webp`、`crw`、`cr2`、`3fr`、`nef`、`arw`和`bmp`。
+
+1. 等待新上传的资源得到处理。 完成后，转到资源详细信息。
+
+1. 转到&#x200B;**[!UICONTROL AI生成的]**&#x200B;选项卡。 如果[!DNL Experience Manager]版本不兼容或未更新，则此选项卡不可见。 所需的最低AEM版本为`20626`。 其中包含以下字段：
+
+   * **[!UICONTROL 生成的标题]：**&#x200B;标题提供了简洁明了的标题，其中捕获了已上传资源的核心概念，使其易于一目了然。 添加资源时，如果您提供标题（在`dc:title`中），则该标题将显示在资源浏览视图中。 如果留空，将自动分配AI生成的标题。
+   * **[!UICONTROL 生成的描述]：**&#x200B;该描述提供了资产相关内容的简短但信息丰富的摘要，可帮助用户和搜索模块快速掌握其相关性。
+   * **[!UICONTROL 生成的关键字]：**&#x200B;关键字是表示资产主题的目标术语，有助于标记和内容筛选。
+
+1. [可选]如果您觉得任何相关标记缺失，可以添加其他标记或创建自己的标记。 为此，请在&#x200B;**[!UICONTROL 生成的关键字]**&#x200B;字段中写入您的标记，然后单击&#x200B;**[!UICONTROL 保存]**。
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
