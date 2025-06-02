@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -60,9 +60,11 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 规则由名称、条件“when子句”和操作引用。
 
-when子句根据属性（包括域、路径、查询字符串、标头和Cookie）确定是否评估规则。 各种规则类型的语法相同；有关详细信息，请参阅“流量过滤规则”文章中的[条件结构部分](/help/security/traffic-filter-rules-including-waf.md#condition-structure)。
+“when”子句根据属性（包括域、路径、查询字符串、标头和Cookie）确定是否评估规则。 各种规则类型的语法相同；有关详细信息，请参阅“流量过滤规则”文章中的[条件结构部分](/help/security/traffic-filter-rules-including-waf.md#condition-structure)。
 
 “操作”节点的详细信息因规则类型而异，并在以下各个部分中进行了概述。
+
+在配置规则中，您可以引用定义为环境变量的密码（请参阅[配置密码](/help/implementing/dispatcher/cdn-credentials-authentication.md)）。
 
 ## 请求转换 {#request-transformations}
 

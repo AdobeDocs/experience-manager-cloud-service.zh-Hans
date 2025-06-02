@@ -4,10 +4,10 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 4%
+source-wordcount: '1712'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖凭据和身份验证以确保适当级别的企业安全。 通过使用Cloud Manager [配置管道](/help/operations/config-pipeline.md)部署的配置文件中声明规则，客户可以自助配置以下内容：
 
-* AdobeCDN用于验证来自客户管理的CDN的的X-AEM-Edge-Key HTTP标头值。
+* Adobe CDN用于验证来自客户管理的CDN的请求的X-AEM-Edge-Key HTTP标头值。
 * 用于清除CDN缓存中的资源的API令牌。
 * 通过提交基本身份验证表单，可访问受限内容的用户名/密码组合列表。
 
@@ -24,11 +24,17 @@ Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖
 
 有一部分介绍了如何[旋转密钥](#rotating-secrets)，这是一种很好的安全做法。
 
+>[!NOTE]
+> 定义为环境变量的密钥应被视为不可变。 您应该创建一个具有新名称的新密码并在配置中引用该密码，而不是更改其值。 否则，将导致无法可靠地更新密钥。
+
+>[!WARNING]
+>请勿删除CDN配置中引用的环境变量。 这样做可能会导致更新CDN配置失败（例如，更新规则或自定义域和证书）。
+
 ## 客户管理的CDN HTTP标头值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
+如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的[CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
 
-作为设置的一部分，AdobeCDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到AdobeCDN之前在客户CDN的每个上设置，然后验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
+作为设置的一部分，Adobe CDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到Adobe CDN之前，在客户CDN上针对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
 *X-AEM-Edge-Key*&#x200B;值由名为`cdn.yaml`或类似文件中的`edgeKey1`和`edgeKey2`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。  以下示例中介绍了语法。
 
@@ -59,7 +65,7 @@ data:
 
 请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
-有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
+有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
 
 其他属性包括：
 
@@ -81,7 +87,7 @@ data:
 
 ### 安全迁移以降低流量受阻的风险 {#migrating-safely}
 
-如果您的站点已上线，请在迁移到客户管理的CDN时务必谨慎，因为错误配置可能会阻止公共流量；这是因为AdobeCDN只会接受具有预期X-AEM-Edge-Key标头值的请求。 建议采用一种方法，在此方法中身份验证规则中临时包含附加条件，这样只有当包含测试标头或匹配路径时，才会阻止请求：
+如果您的站点已上线，请在迁移到客户管理的CDN时务必谨慎，因为错误配置可能会阻止公共流量；这是因为Adobe CDN只会接受具有预期X-AEM-Edge-Key标头值的请求。 建议采用一种方法，在此方法中身份验证规则中临时包含附加条件，这样只有当包含测试标头或匹配路径时，才会阻止请求：
 
 ```
     - name: edge-auth-rule
@@ -158,7 +164,7 @@ data:
 >[!NOTE]
 >在部署引用清除密钥的配置之前，必须将清除密钥配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 建议使用长度最小为32字节的唯一随机密钥；例如，Open SSL加密库可以通过执行命令openssl rand -hex 32来生成随机密钥
 
-您可以引用[教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
+您可以引用[教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
 
 ## 基本身份验证 {#basic-auth}
 
@@ -216,7 +222,9 @@ data:
 
 ## 旋转密钥 {#rotating-secrets}
 
-1. 偶尔更改凭据是很好的安全做法。 虽然清除键使用相同的策略，但可以使用Edge键的示例实现这一点，如下所示。
+定期更改凭据是一种良好的安全做法。 请记住，环境变量不应直接更改，而应创建新密钥并在配置中引用新名称。
+
+虽然清除键也可使用相同的策略，但此用例使用边缘键的示例如下所示。
 
 1. 最初只定义了`edgeKey1`，在本例中引用为`${{CDN_EDGEKEY_052824}}`，作为推荐的约定，它反映创建日期。
 
@@ -227,7 +235,6 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. 轮换密钥时，请创建新的Cloud Manager密钥，例如`${{CDN_EDGEKEY_041425}}`。
 1. 在配置中，从`edgeKey2`引用它并进行部署。
 
@@ -249,7 +256,6 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. 从Cloud Manager中删除旧密钥引用(`${{CDN_EDGEKEY_052824}}`)并进行部署。
 
 1. 准备下一次轮换时，请遵循相同的过程，但这次您将向配置中添加`edgeKey1`，并引用名为的新Cloud Manager环境密钥，例如`${{CDN_EDGEKEY_031426}}`。
@@ -262,3 +268,47 @@ data:
          edgeKey2: ${{CDN_EDGEKEY_041425}}
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
+
+当旋转在请求标头中设置的密钥（例如针对后端进行身份验证）时，建议分两步进行旋转，以确保标头值切换时没有临时间隙。
+
+1. 旋转前的初始配置。 在此状态下，将旧密钥发送到后端。
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+   ```
+
+1. 通过两次设置相同的标头来引入新键`API_KEY_2`（新键应在旧键之后设置）。 部署此项后，您将在后端中看到新键。
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+1. 从配置中删除旧键`API_KEY_1`。 部署此密钥后，您将在后端看到新密钥，可以安全地删除旧密钥的环境变量。
+
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+
