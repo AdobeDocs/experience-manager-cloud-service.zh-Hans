@@ -4,10 +4,10 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1899'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 98%
 
 ---
 
@@ -187,6 +187,10 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 示例内容包括一个 “enquiry” 表，用作 “enquiry” 表单的模板。工作表的每一行代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，并且列标题定义[字段属性](/help/edge/docs/forms/form-components.md#available-components)。此示例表单让您在构建表单方面取得了先机。
 
 ![“Enquiry” 表单](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
+
+>[!IMPORTANT]
+>
+>**表单创作所在的工作表对表单的命名方式有限制。 只有`helix-default`和`shared-aem`可用作工作表名称。**
 
 让我们从更新字段标签开始。打开 “enquiry” 表进行编辑，将提交按钮的标签更改为 `Let's Talk`，并使用 AEM Sidekick 预览和发布该文件。
 

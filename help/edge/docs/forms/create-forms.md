@@ -4,10 +4,10 @@ description: Edge Delivery Services for AEM Forms 快速入门。快速制作完
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 97%
 
 ---
 
@@ -81,6 +81,10 @@ Ensure a smooth GitHub build process by addressing potential issues:
 1. 打开创建的电子表格并将默认表重命名为 “shared-aem”。
 
    ![将默认工作表重命名为 “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+   >[!IMPORTANT]
+   >
+   >**表单创作所在的工作表对表单的命名方式有限制。 只有`helix-default`和`shared-aem`可用作工作表名称。**
 
 1. 要添加表单字段，请将行和列标题插入 “shared-aem” 表中。每行应该代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段[属性](/help/edge/docs/forms/form-components.md#components-properties)。
 
