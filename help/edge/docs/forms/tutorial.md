@@ -240,7 +240,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 克隆您的 GitHub 项目：使用以下命令从 GitHub 克隆您的项目存储库，替换为 <owner> 存储库所有者和 <repo> 存储库名称：
+1. 克隆您的 GitHub 项目：使用以下命令从 GitHub 克隆您的项目存储库，替换为 &lt;owner> 存储库所有者和 &lt;repo> 存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>

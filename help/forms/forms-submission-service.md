@@ -73,7 +73,7 @@ ht-degree: 6%
 
 1. 在Excel或Google工作表中，单击右上角的&#x200B;**共享**&#x200B;按钮。
 1. 添加`forms@adobe.com`帐户并
-单击眼睛图标，选择**编辑**&#x200B;访问权限，然后单击&#x200B;**发送**。
+单击眼睛图标，选择&#x200B;**编辑**&#x200B;访问权限，然后单击&#x200B;**发送**。
 
    ![共享传入工作表](/help/forms/assets/form-submission-share-incoming.png)
 
@@ -150,18 +150,17 @@ ht-degree: 6%
 
 
 >[!BEGINTABS]
+>[!TAB 用于macOS的] 
 
->用于macOS的[!TAB ]
-
-    ``json
+    &grave;&grave;json
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
      — header &quot;Content-Type： application/json&quot; \
      — header &quot;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
-     — data `{
-    `data&quot;： {
-    `startDate&quot;： &quot;2025-01-10&quot;，
-    `endDate&quot;： &quot;25-25&quot;，
-    `destination&quot;：澳大利亚”，
+     — data &grave;&lbrace;
+    &grave;data&quot;： &lbrace;
+    &grave;startDate&quot;： &quot;2025-01-10&quot;，
+    &grave;endDate&quot;： &quot;25-25&quot;，
+    &grave;destination&quot;：澳大利亚”，
     “class”：“First Class”，
     “budget”：“2000”，
     “amount”：“1000000”，
@@ -169,14 +168,14 @@ ht-degree: 6%
     “age”：“35”，
     “subscribe”： null，
     “email”：“mary@gmail.com”
-    }
-    }&#39;
+    &rbrace;
+    &rbrace;&#39;
     
     ”&#39;
 
->用于Windows操作系统的[!TAB ]
+>[!TAB 用于Windows操作系统的] 
 
-    ``json
+    &grave;&grave;json
     
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
      — 标头&quot;Content-Type： application/json&quot; ^
