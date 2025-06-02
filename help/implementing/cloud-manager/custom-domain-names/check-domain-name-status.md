@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 19%
@@ -58,7 +58,7 @@ Cloud Manager通过客户管理的(OV/EV) SSL证书验证域所有权。 完成�
 
 ## 域名错误 {#domain-error}
 
-以下是一些常见的域名验证错误及其典型分辨率。
+以下是常见的域名验证错误及其典型解决方案。
 
 ### 域未安装错误 {#domain-not-installed}
 
