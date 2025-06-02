@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
+source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 20%
+source-wordcount: '863'
+ht-degree: 19%
 
 ---
 
@@ -64,23 +64,21 @@ Cloud Manager通过客户管理的(OV/EV) SSL证书验证域所有权。 完成�
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-在Cloud Manager中添加域映射时，可能会遇到以下错误消息：
+当您尝试在Cloud Manager中添加域映射时，可能会遇到以下错误消息：
 
 *域已安装在Fastly帐户中。 请先将它从此处删除，然后再添加到Cloud Service。*
 
-此消息表示该域当前与其他Fastly帐户相关联，通常不在Adobe的控制范围之内。 要继续，必须先将域与其他帐户解除关联，然后才能将其添加到Adobe管理的Cloud Service。 在非Adobe Fastly配置中，当同一域已映射到其他源时，经常会发生此问题。
+<!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
-#### 错误原因 {#cause}
-
+**错误原因**
 Fastly将域锁定到首先注册它的帐户，而其他帐户必须请求权限来注册子域。 此外，Fastly 只允许您将一个 Apex 域和关联子域分配给一个 Fastly 服务和帐户。如果您现有的Fastly帐户链接了AEM Cloud Service域使用的相同Apex和子域，则会看到此错误。
 
-#### 错误解决 {#resolution}
-
+**错误解决**
 错误修复如下：
 
 * 在 Cloud Manager 中安装域之前，请从现有帐户中移除 Apex 和子域。
 
-* 使用此选项将 Apex 域和所有子域链接到 AEM as a Cloud Service Fastly 帐户。有关更多详细信息，请参阅[使用 Fastly 文档中的域](https://docs.fastly.com/en/guides/working-with-domains)。
+* 使用此选项将 Apex 域和所有子域链接到 AEM as a Cloud Service Fastly 帐户。有关更多详细信息，请参阅Fastly文档中的[使用域](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/)。
 
 * 如果您的Apex域有多个子域用于AEM as a Cloud Service和非AEM网站，并且这些子域需要链接到不同的Fastly帐户，请尝试在Cloud Manager中安装该域。 此过程有助于管理不同Fastly帐户之间的子域连接。 如果域安装失败，请使用Fastly创建客户支持工单，以便Adobe可以代表您跟进Fastly。
 
