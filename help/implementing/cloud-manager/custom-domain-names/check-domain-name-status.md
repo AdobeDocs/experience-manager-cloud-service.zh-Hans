@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 22%
+source-wordcount: '920'
+ht-degree: 20%
 
 ---
 
@@ -62,7 +62,13 @@ Cloud Manager通过客户管理的(OV/EV) SSL证书验证域所有权。 完成�
 
 ### 域未安装错误 {#domain-not-installed}
 
-此错误可能会在EV/OV证书的域验证期间发生，即使您已经检查证书是否已适当更新。
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+在Cloud Manager中添加域映射时，可能会遇到以下错误消息：
+
+*域已安装在Fastly帐户中。 请先将它从此处删除，然后再添加到Cloud Service。*
+
+此消息表示该域当前与其他Fastly帐户相关联，通常不在Adobe的控制范围之内。 要继续，必须先将域与其他帐户解除关联，然后才能将其添加到Adobe管理的Cloud Service。 在非Adobe Fastly配置中，当同一域已映射到其他源时，经常会发生此问题。
 
 #### 错误原因 {#cause}
 
