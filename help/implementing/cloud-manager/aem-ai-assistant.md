@@ -6,25 +6,26 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '1122'
 ht-degree: 1%
 
 ---
 
 # 关于Adobe Experience Manager中的AI助手 {#aem-home}
 
-AEM (Adobe Experience Manager)中的AI助手提供了一个对话界面，旨在简化对Adobe Experience Manager相关查询的查找。 它可帮助您访问产品知识、排除问题并探索Experience League中可用的信息。 在有限的Beta计划期间，AI助手支持Adobe Experience Manager as a Cloud Service，包括Sites、Assets、Forms和Cloud Manager。
+AEM (Adobe Experience Manager)中的AI助手提供了一个对话界面，旨在简化对Adobe Experience Manager相关查询的查找。 它可帮助您访问Experience League中的产品知识、排查问题并探索可用信息。 在有限的Beta计划期间，AI助手支持Adobe Experience Manager as a Cloud Service，包括Sites、Assets、Forms和Cloud Manager。
 
 >[!IMPORTANT]
->请确保您已查看并提交了用户协议，以便Adobe能够启用AI Assistant功能，以便您试用并参与Beta计划。
+>确保您已查看并提交了用户协议，以便Adobe能够启用AI助手功能，供您测试并参与Beta计划。
 >
 >如有任何问题，请通过与Adobe ID关联的电子邮件地址向[Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com)发送电子邮件。
 
 ## 隐私、安全和治理
 
-AEM中的AI助手在设计时特别强调隐私、安全和治理。
+AEM中的AI助手在设计中特别强调隐私、安全和治理。
 
 本文概述了AI Assistant提供的以信任为中心的功能：
 
@@ -36,7 +37,7 @@ AEM中的AI助手在设计时特别强调隐私、安全和治理。
 
 ## 了解产品知识的AI助手 {#ai-prod-insights}
 
-产品知识包含从Adobe Experience League文档派生出的概念和主题。 这些问题可划分为以下子组：
+产品知识包含从Adobe Experience League文档衍生的概念和主题。 这些问题可划分为以下子组：
 
 | 产品知识 | 示例 |
 | --- | --- |
@@ -45,6 +46,46 @@ AEM中的AI助手在设计时特别强调隐私、安全和治理。
 | 疑难解答 | <ul><li>为何无法访问通用编辑器？</li><li>我的管道为什么会失败？</li></ul> |
 
 AI Assistant的当前范围侧重于解决Adobe Experience Manager as a Cloud Service的产品知识问题。 此范围包括对关键领域(如Sites、Assets、Forms和Cloud Manager)的全面支持。
+
+## AEM Forms的AI助手(Forms Experience Builder) {#ai-forms-builder}
+
+除了用于产品知识的常规AI助手之外，AEM还为AEM Forms (Forms Experience Builder)提供专门的&#x200B;**AI助手**。 此增强型助理可以通过自然语言提示和回答表单特定问题来主动帮助您创建和配置表单。
+
+### 主要功能
+
+AEM Forms的AI助手提供：
+
+* **表单创建**：使用自然语言描述从头开始创建新表单
+* **设计导入**：将现有设计(PDF、Figma、图像)转换为功能性AEM表单
+* **表单配置**：添加字段、面板、验证规则和条件逻辑
+* **布局管理**：组织表单结构并优化不同设备
+* **集成设置**：配置表单提交和数据处理
+* **产品知识**：回答有关AEM Forms功能和最佳实践的问题
+
+### 访问位置
+
+适用于AEM Forms的AI助手可从以下位置获取：
+
+* **通用编辑器**：适用于具有可视化编辑功能的Edge Delivery Services表单
+* **自适应Forms编辑器**：有关详细的表单配置和高级功能
+* **Forms管理UI**：用于高级表单创建和管理任务
+
+### 快速入门
+
+>[!NOTE]
+>
+> 适用于AEM Forms的AI助手(Forms Experience Builder)可通过率先采用者程序获取。 将工作地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)以请求访问权限。
+
+要了解有关使用AEM Forms AI助手的详细信息（包括详细示例和最佳实践），请参阅适用于AEM Forms的AI助手文档。
+
+### 示例用例
+
+* **“创建包含姓名、电子邮件、评分和评论字段的客户反馈表单”**
+* **“将此上载的PDF应用程序表单转换为数字自适应表单”**
+* **“添加条件逻辑以仅在婚姻状态为“已婚”时显示配偶信息”**
+* **“配置此表单以将数据提交到我们的CRM系统”**
+
+这个专业化的Forms AI Assistant代表了表单构建的下一个发展方向，它将AI的强大功能与AEM的强大表单功能相结合，可简化表单创建工作流。
 
 ## 如何提出有效的问题 {#ai-craft-questions}
 
@@ -108,13 +149,10 @@ AI Assistant包括可发现性功能，可帮助您探索支持的主题和类�
 以下是有关AI助手的一些常见问题的答案：
 
 * **AI助手实时提供的信息吗？**\
-  不会。AI Assistant从Adobe Experience League文档获取其内容。 对内容的更新可能需要一些时间才能反映在其响应中。
-* **AI助手支持哪些Adobe应用程序？**\
+  不行。AI Assistant从Adobe Experience League文档获取其内容。 对内容的更新可能需要一些时间才能反映在其响应中。
+* **AI Assistant支持哪些Adobe应用程序？**\
   目前，AI Assistant支持AEM as a Cloud Service，包括Sites、Assets、Forms和Cloud Manager，专门用于产品知识查询。
 * **AI助手有哪些功能？**\
-  AI Assistant用于回答与Adobe产品知识相关的查询。
+  AI Assistant旨在回答与Adobe产品知识相关的查询。
 * **AI助手是否使用个人信息提供培训数据？**\
-  不会。AI助手不使用个人信息进行培训。 避免与AI助手共享您或其他人的个人信息，包括姓名或联系方式。
-
-
-
+  不行。AI助手不使用个人信息进行培训。 避免与AI助手共享您或其他人的个人信息，包括姓名或联系方式。
