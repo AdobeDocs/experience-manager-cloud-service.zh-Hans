@@ -4,10 +4,10 @@ description: 内容复制工具使用户能够按需将可变内容从其AEM as 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 36%
+source-wordcount: '1321'
+ht-degree: 35%
 
 ---
 
@@ -175,7 +175,7 @@ ht-degree: 36%
 >
 >取消内容复制操作时，可能会导致目标环境中的内容出现部分副本。 此情况可能会使目标环境处于不可用状态。
 >
->如果您的环境由于取消而处于这种状态，请联系Adobe客户关怀部门以寻求帮助。
+>如果您的环境由于取消而处于此类状态，请联系Adobe客户关怀部门以寻求帮助。
 
 ### 访问日志 {#accessing-logs}
 
@@ -200,3 +200,4 @@ ht-degree: 36%
 * 内容复制工具没有版本控制功能，并且自上次内容复制操作以来，无法自动检测内容集中的源环境中已修改的内容或已创建的内容。
    * 如果只想使用内容更改来更新目标环境，则自上次内容复制操作以来，您必须创建一个内容集。 然后，指定自上次内容复制操作以来在其中进行了更改的源实例上的路径。
 * 版本信息不包含在内容副本中。
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)可以根据通用唯一ID (UUID)指定引用字段。 此类UUID特定于存储库，因此在复制内容片段时，内容复制工具将在目标环境中重新计算这些UUID。
