@@ -4,10 +4,10 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
+source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 90%
+source-wordcount: '2912'
+ht-degree: 89%
 
 ---
 
@@ -35,6 +35,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 
 | 功能 | 已弃用功能 | 替换 |
 | ------------ | ------------------ | ----------- |
+| Sites | Assets HTTP API中的[内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI为](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>的内容片段交付<br> [内容片段和内容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 无 |
 | Sites | [SPA 编辑器](/help/implementing/developing/hybrid/introduction.md) | 管理 AEM 中的 Headless 内容时首选以下编辑器：<br>- [通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)，用于可视化编辑。<br>- [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/java-use-api) |

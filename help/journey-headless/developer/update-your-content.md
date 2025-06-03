@@ -5,10 +5,10 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: ht
-source-wordcount: '578'
-ht-degree: 100%
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 93%
 
 ---
 
@@ -47,12 +47,10 @@ Adobe Experience Manager (AEM) as a Cloud Service 为内容片段的结构化内
    * 这些 API 旨在用于结构化内容管理。
    * 各个 GET 运算符并未针对内容传递进行优化。
    * 这个 API 基于 REST。
-* AEM Assets HTTP API 中的内容片段支持
-   * 用于 AEM 中结构化内容传递的 JSON 输出的原始 API。
-      * 虽然该 API 功能强大且经过验证，但它不传递&#x200B;*完全水合的* JSON 输出。引用仅作为路径输出，需要辅助 API 请求来进一步检索内容。
-   * Assets HTTP API 还可用于管理内容片段和内容片段模型（CRUD）。
-   * 这个 API 基于 REST。
-   * 未来，Assets HTTP API 中对内容片段的支持将被弃用，因为它将被 Edge Delivery Services JSON REST API 取代。具体时间尚未确定。
+
+>[!NOTE]
+>
+>Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[内容片段支持现在[已弃用](/help/release-notes/deprecated-removed-features.md)。 它已被替换为[OpenAPI内容片段投放](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[内容片段和内容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 ## 后续内容 {#whats-next}
 
