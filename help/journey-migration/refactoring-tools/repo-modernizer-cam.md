@@ -40,7 +40,7 @@ Repository Modernizer现在还支持以下项目类型：
 
 ## 使用存储库现代化器 {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412957/?quality=12&learn=on&captions=chi_hans)
 
 - Repository Modernizer现在由重构服务在“重构作业”选项卡下自动调用。 客户只需上传其项目并触发重构作业即可，无需其他设置。
 

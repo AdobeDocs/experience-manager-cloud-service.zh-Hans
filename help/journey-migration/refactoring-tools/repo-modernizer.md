@@ -33,7 +33,7 @@ Adobe Experience Manager as a Cloud Service为您的AEM项目提供了许多新�
 
 ## 使用存储库现代化器 {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412957/?quality=12&learn=on&captions=chi_hans)
 
 * 通过Adobe I/O CLI ：Adobe建议通过`aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe I/O CLI的AEM as a Cloud Service代码重构插件)使用Repository Modernizer。
 
