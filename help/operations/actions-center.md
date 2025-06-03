@@ -4,10 +4,10 @@ description: 利用行动中心方便地对事件和其他重要信息采取行�
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 821dd9f172ea286a7a3de74cf8dec8001e9afee9
+source-git-commit: 7a05b5f19d9d59ad438c18ce510e0c54acd49a93
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 50%
+source-wordcount: '1187'
+ht-degree: 48%
 
 ---
 
@@ -74,18 +74,20 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 | 通知类型 | 相关产品配置文件 | 纠正措施 |
 |---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 已锁定的复制队列 | 问题 | 按照[复制文档](/help/operations/replication.md#troubleshooting)中的说明执行操作来解锁队列 |
-| 持久GraphQL查询无效 | 问题 | 通过引用[持久的GraphQL查询疑难解答文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=zh-Hans)修复无效的GraphQL查询 |
+| 持久GraphQL查询无效 | 问题 | 通过引用[持久的GraphQL查询疑难解答文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html)修复无效的GraphQL查询 |
 | 源头流量尖峰 | 问题 | 通过配置在低于默认源位置流量尖峰警报的阈值触发的速率限制流量过滤器规则来保护您的源。  请参阅引用了教程的流量过滤器规则文档中的[使用流量规则阻止DoS和DDoS攻击](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)部分。 |
 | 已触发CDN流量过滤器规则 | 问题 | 如果匹配的流量过滤器规则反映的是攻击，并且您的网站没有阻止该流量，请通过在阻止模式下配置流量过滤器规则来保护您的网站。 请参阅引用了教程的流量过滤器规则文档的[使用流量过滤器规则(包括WAF规则)保护网站](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites)部分。 |
 | Splunk日志转发错误 | 问题 | 检查您的Splunk端点是否工作正常，以及是否可以从您的AEM Cloud Service环境访问。 有关日志转发的详细信息，请访问[Splunk日志转发文档](/help/implementing/developing/introduction/logging.md#splunk-logs)。 如果您在疑难解答方面需要帮助，或者需要对日志记录配置进行更改，请向Adobe提交支持工单。 |
-| 页面包含大量节点 | 主动 | 减少页面中的节点总数。 请参阅[页面复杂性文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| 页面包含大量节点 | 主动 | 减少页面中的节点总数。 请参阅[页面复杂性文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | 大量正在运行的工作流实例 | 主动 | 终止不再需要的正在运行的工作流。 了解如何[配置清除作业](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
-| 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 | 高连接数 | 主动 | 与高级联网文档[&#128279;](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)一起了解连接池中的连接池 |
-| 已弃用的服务用户映射 | 主动 | 了解如何使用新的Sling服务用户映射格式，如[Sling服务用户映射和服务用户定义的最佳实践](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition)中所述 |
+| 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 | 高连接数 | 主动 | 与高级联网文档](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)一起了解[连接池中的连接池 |
+| 已弃用的服务用户映射 | 主动 | 了解如何使用新的Sling服务用户映射格式，如[Sling服务用户映射和服务用户定义的最佳实践](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition)中所述 |
 | 高连接数 | 主动 | 在[高级联网文档](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)中了解连接池 |  |
 | 直接添加到自定义组的用户 | 主动 | 需要将用户添加到相关的IMS组，并且这些IMS组需要添加为AEM组的成员。 与[IMS最佳实践保持一致](/help/security/ims-support.md) | |
-| 缺少JCR内容 | 主动 | 添加缺失的JCR内容节点。 请参阅[Assets内容验证器文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| 缺少JCR内容 | 主动 | 添加缺失的JCR内容节点。 请参阅[Assets内容验证器文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | 未清除已完成的工作流 | 主动 | 通过清除已超过90天的工作流实例，最大程度地减少工作流实例数并提高性能。 了解如何[配置维护任务](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| 页面中缺少Sling资源类型 | 主动 | 添加缺少的Sling资源类型节点。 请参阅[Assets内容验证器文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
-| 查询缓慢 | 主动 | 按照[JCQ查询备忘表](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=zh-Hans)的建议，通过定义正确的索引定义修复较慢查询 | |
-| 无索引查询 | 主动 | 避免执行不使用索引的查询 — [指向索引文档的链接](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing) |
+| 页面中缺少Sling资源类型 | 主动 | 添加缺少的Sling资源类型节点。 请参阅[Assets内容验证器文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| 查询缓慢 | 主动 | 按照[JCQ查询备忘表](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)的建议，通过定义正确的索引定义修复较慢查询 | |
+| 无索引查询 | 主动 | 避免执行不使用索引的查询 — [指向索引文档的链接](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing) | |
+| 已弃用的库警报 | 主动 | 将已弃用的包替换为其推荐的较新版本（如[弃用文章](/help/release-notes/deprecated-removed-features.md)中所述），以保持应用程序的安全性和性能 | |
+| 已弃用的配置警报 | 主动 | 将已弃用的配置替换为其推荐的较新版本（如[弃用文章](/help/release-notes/deprecated-removed-features.md)中所述），以保持应用程序的安全性和性能 |
