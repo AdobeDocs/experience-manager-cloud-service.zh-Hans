@@ -80,7 +80,7 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 | Splunk日志转发错误 | 问题 | 检查您的Splunk端点是否工作正常，以及是否可以从您的AEM Cloud Service环境访问。 有关日志转发的详细信息，请访问[Splunk日志转发文档](/help/implementing/developing/introduction/logging.md#splunk-logs)。 如果您在疑难解答方面需要帮助，或者需要对日志记录配置进行更改，请向Adobe提交支持工单。 |
 | 页面包含大量节点 | 主动 | 减少页面中的节点总数。 请参阅[页面复杂性文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | 大量正在运行的工作流实例 | 主动 | 终止不再需要的正在运行的工作流。 了解如何[配置清除作业](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
-| 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 | 高连接数 | 主动 | 与高级联网文档](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)一起了解[连接池中的连接池 |
+| 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 | 高连接数 | 主动 | 与高级联网文档[&#128279;](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)一起了解连接池中的连接池 |
 | 已弃用的服务用户映射 | 主动 | 了解如何使用新的Sling服务用户映射格式，如[Sling服务用户映射和服务用户定义的最佳实践](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition)中所述 |
 | 高连接数 | 主动 | 在[高级联网文档](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)中了解连接池 |  |
 | 直接添加到自定义组的用户 | 主动 | 需要将用户添加到相关的IMS组，并且这些IMS组需要添加为AEM组的成员。 与[IMS最佳实践保持一致](/help/security/ims-support.md) | |
