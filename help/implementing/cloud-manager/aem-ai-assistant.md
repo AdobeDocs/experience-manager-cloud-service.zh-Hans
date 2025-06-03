@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AI Assistant的当前范围侧重于解决Adobe Experience Manager as a Cloud Se
 
 ## AEM Forms的AI助手(Forms Experience Builder) {#ai-forms-builder}
 
-除了用于产品知识的常规AI助手之外，AEM还为AEM Forms (Forms Experience Builder)提供专门的&#x200B;**AI助手**。 此增强型助理可以通过自然语言提示和回答表单特定问题来主动帮助您创建和配置表单。
+除了用于产品知识的常规AI助手之外，AEM还为AEM Forms (Forms Experience Builder)提供专门的&#x200B;**[AI助手](/help/edge/docs/forms/forms-ai-assistant.md)**。 此增强型助理可以通过自然语言提示和回答表单特定问题来主动帮助您创建和配置表单。
 
 ### 主要功能
 
@@ -76,7 +76,7 @@ AEM Forms的AI助手提供：
 >
 > 适用于AEM Forms的AI助手(Forms Experience Builder)可通过率先采用者程序获取。 将工作地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)以请求访问权限。
 
-要了解有关使用AEM Forms AI助手的详细信息（包括详细示例和最佳实践），请参阅适用于AEM Forms的AI助手文档。
+要了解有关使用AI Assistant for AEM Forms的更多信息（包括详细示例和最佳实践），请参阅[AI Assistant for AEM Forms文档](/help/edge/docs/forms/forms-ai-assistant.md)。
 
 ### 示例用例
 
