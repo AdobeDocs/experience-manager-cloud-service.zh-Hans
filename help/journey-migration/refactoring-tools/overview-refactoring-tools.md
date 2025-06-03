@@ -14,7 +14,7 @@ ht-degree: 2%
 >id="aemcloud_rs_overview"
 >title="概述"
 >abstract="重构工具是由Adobe开发的一个解决方案，用于帮助重构现有AEM项目以便与AEM as a Cloud Service兼容。 这些工具通过Cloud Acceleration Manager (CAM)来执行，并自动执行关键的现代化任务。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hans" text="准则和最佳实践"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="准则和最佳实践"
 
 # 重构工具快速入门 {#getting-started-refactoring-tools}
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 重构工具以前仅作为CLI实用程序提供，现在可提供具有自动检查、配置生成和作业执行等功能的统一界面 — 减少手动开销并提高可见性。
 
-&#x200B;---
+---
 
 ## 检查工作流 {#inspection-workflow}
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 * **配置生成** — 工具将检查上传的源代码，并生成必要的配置。
 * **有效负载提交** — 这些配置将直接传递到所选工具以供执行。
 
-&#x200B;---
+---
 
 ## 可用的重构工具
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 **代码转换器**&#x200B;使用智能模式识别和AI驱动的分析来检测和更新与AEMaaCS不兼容的代码段。 此工具可简化迁移工作并减少手动代码更改。
 
-&#x200B;---
+---
 
 ## 重构工作流阶段 {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 >[!NOTE]
 >在检查过程中，不允许上传其他项目。
 
-&#x200B;---
+---
 
 ### 阶段2：触发重构作业
 
