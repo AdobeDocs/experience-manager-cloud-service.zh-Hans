@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
@@ -50,10 +50,9 @@ Adobe Experience Manager 用户界面可在以下客户端平台上使用，具�
 | Mozilla Firefox（常青内容） | A：受到支持 | A：受到支持 | Z：不受支持 |
 | Mozilla Firefox 最新 ESR [1] | A：受到支持 | A：受到支持 | Z：不受支持 |
 | macOS 上的 Safari（常青内容） | A：受到支持 | A：受到支持 | Z：不受支持 |
-| iOS 上的 Safari（常青内容）[2] | Z：不受支持 | A：受到支持 | Z：不受支持 |
+| iPadOS上的Safari（常青） | Z：不受支持 | A：受到支持 | Z：不受支持 |
 
 1. Firefox 的扩展支持版本（[访问 mozilla.org 了解更多信息](https://www.mozilla.org/en-US/firefox/enterprise/)）
-1. 仅支持 Apple iPad
 
 >[!NOTE]
 >
