@@ -4,12 +4,13 @@ description: 了解可用于结构化内容交付和内容片段管理的API
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 28%
 
 ---
+
 
 # 用于结构化内容传递和管理的 AEM API {#aem-apis-structured-content-delivery-and-management}
 
@@ -30,7 +31,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 为内容片段的结构化内
 
 >[!NOTE]
 >
->Assets HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的内容片段支持现在[已弃用](/help/release-notes/deprecated-removed-features.md)。 它已被替换为[OpenAPI的内容片段投放](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[内容片段和内容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)。
+>Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[内容片段支持现在[已弃用](/help/release-notes/deprecated-removed-features.md)。 它已被替换为[OpenAPI的内容片段投放](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[内容片段和内容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)。
 
 ## REST与GraphQL {#rest-vs-graphql}
 
@@ -40,7 +41,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 为内容片段的结构化内
 
 * 简单性
 
-   * 开发人员（通常）熟悉HTTP和REST。 根据API报告[&#128279;](https://www.postman.com/state-of-api/)的Postman状态，有高百分比的开发人员使用REST。
+   * 开发人员（通常）熟悉HTTP和REST。 根据API报告](https://www.postman.com/state-of-api/)的[Postman状态，有高百分比的开发人员使用REST。
 
    * 简单又熟悉。 对于REST，不存在关于谁拥有查询以及谁拥有应用程序的组织问题，而GraphQL可能会出现这些问题。
 
