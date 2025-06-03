@@ -42,7 +42,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 为内容片段的结构化内
 
 * 简单性
 
-   * 开发人员（通常）熟悉HTTP和REST。 根据API报告](https://www.postman.com/state-of-api/)的[Postman状态，有高百分比的开发人员使用REST。
+   * 开发人员（通常）熟悉HTTP和REST。 根据API报告[&#128279;](https://www.postman.com/state-of-api/)的Postman状态，有高百分比的开发人员使用REST。
 
    * 简单又熟悉。 对于REST，不存在关于谁拥有查询以及谁拥有应用程序的组织问题，而GraphQL可能会出现这些问题。
 
