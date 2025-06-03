@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e44c109a8e64c2162f209bcf85b81336764ee9fe
+source-git-commit: fd134169b97204d9338c99c113045226b073456b
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6192'
 ht-degree: 99%
 
 ---
@@ -339,8 +339,10 @@ ht-degree: 99%
             + [重要注意事项](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [使用用户映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + 代码重构工具  {#refactoring-tools}
+      + [重构工具快速入门](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [统一体验](/help/journey-migration/unified-experience.md)
       + [存储库现代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+      + [存储库现代化器(CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [索引转换器](/help/journey-migration/refactoring-tools/index-converter.md)
       + [资产工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
