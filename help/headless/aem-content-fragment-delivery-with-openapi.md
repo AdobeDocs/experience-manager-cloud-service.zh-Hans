@@ -4,10 +4,10 @@ description: 了解使用OpenAPI的tAEM内容片段交付
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
+source-git-commit: 163964a7183996226b14f3c803afa4c5bd58f848
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 4%
+source-wordcount: '475'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,14 @@ ht-degree: 4%
 >
 >有关可用的各种API的概述以及所涉及概念的比较，请参阅结构化内容交付和管理的[AEM API](/help/headless/apis-headless-and-content-fragments.md)。
 
+>[!IMPORTANT]
+>
+>要在AEM as a Cloud Service上使用OpenAPI启用内容片段投放，请确保尚未启用，然后提交标题为&#x200B;**使用OpenAPI启用内容片段投放**&#x200B;的Adobe支持票证，并指定：
+>
+>* Cloud Service项目和环境ID
+>* 您希望通过内容片段投放OpenAPI解决的用例的详细信息
+>* Adobe应响应并随时了解请求和项目（如果需要）的所有联系人的详细信息
+
 ## 缓存 {#caching}
 
 AEM与AEM CDN Fastly集成。 这意味着在发布层上提供的JSON响应将缓存在Fastly级别。
@@ -49,4 +57,28 @@ AEM与AEM CDN Fastly集成。 这意味着在发布层上提供的JSON响应将�
 * 过时内容可错误提供长达1天
    * `stale-on-error`=`86400`
 
-AEM还随附活动的CDN缓存失效功能。 这意味着每当更新或发布内容时，相应的JSON OpenAPI响应都会通过向Fastly发出的软清除请求自动失效。 这样，您就可以在到达实际CDN缓存期限(`s-maxage`)之前，看到在JSON输出中反映的更改。
+使用OpenAPI的内容片段投放支持活动CDN缓存失效。 这意味着每当更新或发布内容时，相应的JSON OpenAPI响应都会通过向Fastly发出的软清除请求自动失效。 这样，您就可以在到达实际CDN缓存期限(`s-maxage`)之前，看到在JSON输出中反映的更改。
+
+## 可用性 {#availability}
+
+使用OpenAPI的内容片段投放在预览层和发布层上可用。 OpenAPI以JSON格式提供内容片段，用于预览和实时交付。
+
+要预览使用OpenAPI的内容片段投放，可以：
+
+* 发布到预览
+* 启用访问以通过IP允许列表预览
+* 获取预览URL
+
+## CORS {#cors}
+
+[CORS允许的源](/help/headless/deployment/cross-origin-resource-sharing.md)定义可以调用API的源。
+
+此API不考虑在Dispatcher配置端定义、专门用于GraphQL的CORS允许的源。
+
+<!-- 
+## API Rate Limits {#api-rate-limits}
+-->
+
+<!-- 
+## Limitations {#limitations}
+-->
