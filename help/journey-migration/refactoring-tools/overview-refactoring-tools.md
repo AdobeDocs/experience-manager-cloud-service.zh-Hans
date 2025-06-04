@@ -1,28 +1,29 @@
 ---
-title: 重构工具快速入门
+title: 重构工具概述
 description: 了解如何使用AEM重构工具
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: fa65b489d54d5333811145a1875a8f6fc89317bc
+source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
 
+<!-- Alexandru: temporarily commeting this out, since it breaks validation
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_overview"
->title="概述"
->abstract="重构工具是由Adobe开发的一个解决方案，用于帮助重构现有AEM项目以便与AEM as a Cloud Service兼容。 这些工具通过Cloud Acceleration Manager (CAM)来执行，并自动执行关键的现代化任务。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hans" text="准则和最佳实践"
+>title="Overview"
+>abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-# 重构工具快速入门 {#getting-started-refactoring-tools}
+-->
+
+# 重构工具概述 {#refactoring-tools-overview}
 
 **重构工具**&#x200B;简化了更新现有AEM项目以使其与&#x200B;**AEM as a Cloud Service (AEMaaCS)**&#x200B;兼容的流程。 这些工具可自动执行常见的重构和现代化任务，并与&#x200B;**Cloud Acceleration Manager (CAM)**&#x200B;集成以实现无缝体验。
 
 重构工具以前仅作为CLI实用程序提供，现在可提供具有自动检查、配置生成和作业执行等功能的统一界面 — 减少手动开销并提高可见性。
-
-&#x200B;---
 
 ## 检查工作流 {#inspection-workflow}
 
@@ -34,8 +35,6 @@ ht-degree: 2%
 * **配置生成** — 工具将检查上传的源代码，并生成必要的配置。
 * **有效负载提交** — 这些配置将直接传递到所选工具以供执行。
 
-&#x200B;---
-
 ## 可用的重构工具
 
 ### 存储库现代化器 {#repo-modernizer}
@@ -45,8 +44,6 @@ ht-degree: 2%
 ### 代码转换器 {#code-transformer}
 
 **代码转换器**&#x200B;使用智能模式识别和AI驱动的分析来检测和更新与AEMaaCS不兼容的代码段。 此工具可简化迁移工作并减少手动代码更改。
-
-&#x200B;---
 
 ## 重构工作流阶段 {#phases-in-refactoring-tools}
 
@@ -59,8 +56,6 @@ ht-degree: 2%
 
 >[!NOTE]
 >在检查过程中，不允许上传其他项目。
-
-&#x200B;---
 
 ### 阶段2：触发重构作业
 

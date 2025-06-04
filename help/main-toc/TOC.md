@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6211'
 ht-degree: 99%
 
 ---
@@ -340,6 +340,7 @@ ht-degree: 99%
             + [使用用户映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + 代码重构工具  {#refactoring-tools}
       + [重构工具快速入门](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
+      + [重构工具概述](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [统一体验](/help/journey-migration/unified-experience.md)
       + [存储库现代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [存储库现代化器(CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
