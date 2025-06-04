@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的内容搜索和索引编制。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
+source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 21%
+source-wordcount: '2918'
+ht-degree: 17%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 21%
 
 ## AEM as a Cloud Service 更改 {#changes-in-aem-as-a-cloud-service}
 
-随着 AEM as a Cloud Service 的推出，Adobe 正在从以 AEM 实例为中心的模型转向基于服务的视图，该视图包含 n-x AEM 容器，由 Cloud Manager 中的 CI/CD 管道驱动。必须在部署之前指定索引配置，而不得在单个 AEM 实例上配置和维护索引。在生产过程中更改配置显然违反 CI/CD 策略。同样的情况也适用于更改索引，因为如果未指定，在将索引投入生产之前，测试和重新编制索引可能会影响系统稳定性和性能。
+随着 AEM as a Cloud Service 的推出，Adobe 正在从以 AEM 实例为中心的模型转向基于服务的视图，该视图包含 n-x AEM 容器，由 Cloud Manager 中的 CI/CD 管道驱动。必须在部署之前指定索引配置，而不是在单个AEM实例上配置和维护索引。 在生产过程中更改配置将违反CI/CD策略。 同样的情况也适用于更改索引，因为如果未指定、测试和重新编制索引，在将索引投入生产之前，更改索引可能会影响系统稳定性和性能。
 
 以下列出与 AEM 6.5 和更低版本相比的主要变化：
 
 1. 用户无法访问单个AEM实例的索引管理器，无法再调试、配置或维护索引。 它仅用于本地开发和内部部署。
 1. 用户不会更改单个AEM实例上的索引，也不必再担心一致性检查或重新编制索引。
 1. 一般在投入生产之前开始更改索引，以免回避Cloud Manager CI/CD管道中的质量关卡以及影响生产过程中的业务KPI。
-1. 客户可在运行时获得所有相关量度（包括生产过程中的搜索性能），以提供关于搜索和索引编制主题的整体视图。
+1. 客户可在运行时获得所有相关指标（包括生产过程中的搜索性能），以提供关于搜索和索引编制主题的整体视图。
 1. 客户能够根据自己的需求设置警报。
 1. SRE全天候监控系统运行状况，并尽早采取行动。
 1. 通过部署更改索引配置。像其他内容更改一样配置索引定义更改。
@@ -32,7 +32,7 @@ ht-degree: 21%
 限制：
 
 * 目前，仅类型`lucene`的索引支持AEM as a Cloud Service上的索引管理。 这意味着所有索引自定义项都必须是`lucene`类型。 `async`属性只能是以下属性之一： `[async]`、`[async,nrt]`或`[fulltext-async]`。
-* 可在内部配置其他索引并将其用于查询。例如，在 Skyline 上可能实际上针对 `damAssetLucene` 索引的 Elasticsearch 版本执行针对此索引编写的查询。应用程序和用户通常看不到此差异，但是，某些工具（如`explain`功能）报告不同的索引。 有关 Lucene 索引与 Elastic 索引之间的区别，请参阅 [Apache Jackrabbit Oak 中的 Elastic 文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。客户不需要直接配置Elasticsearch索引，也无法这样做。
+* 可在内部配置其他索引并将其用于查询。例如，在AEM as a Cloud Service上，可能实际上针对`damAssetLucene`索引的Elasticsearch版本执行针对索引编写的查询。 此差异对用户不可见。 但是，某些工具（如`explain`功能）报告不同的索引。 有关 Lucene 索引与 Elastic 索引之间的区别，请参阅 [Apache Jackrabbit Oak 中的 Elastic 文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。客户不需要直接配置Elasticsearch索引，也无法这样做。
 * 仅支持标准分析器（即产品附带的分析器）。 不支持自定义分析器。
 * 不支持按相似特征向量(`useInSimilarity = true`)搜索。
 
@@ -55,23 +55,23 @@ ht-degree: 21%
 
 索引定义可以分为以下类别之一：
 
-1. 开箱即用(OOTB)索引。 对于实例： `/oak:index/cqPageLucene-2`或`/oak:index/damAssetLucene-8`。
+1. 开箱即用(OOTB)索引。 这些是AEM提供的预定义索引。 对于实例： `/oak:index/cqPageLucene-2`或`/oak:index/damAssetLucene-8`。
 
-2. 自定义OOTB索引。 在原始索引名后附加`-custom-`后跟数字标识符表示这些值。 例如：`/oak:index/damAssetLucene-8-custom-1`。
+2. 自定义OOTB索引。 要自定义OOTB索引，请附加`-custom-`后跟一个数字。 例如，`/oak:index/damAssetLucene-8-custom-1`是OOTB索引`/oak:index/damAssetLucene-8`的自定义。 自定义通常是OOTB索引的副本，外加需要编制索引的其他属性。
 
-3. 完全自定义索引：可以从头开始创建全新的索引。 它们的名称必须具有前缀以避免命名冲突。 例如： `/oak:index/acme.product-1-custom-2`，前缀为`acme.`
+3. 完全自定义索引：您可以从头开始创建全新的索引。 这些索引还需要以`-custom-`和版本号结尾。 此外，为了避免命名冲突，请在索引名称中使用前缀。 例如： `/oak:index/acme.product-1-custom-2`，其中`acme.`是前缀。
 
 >[!NOTE]
 >
->强烈建议不要在`dam:Asset`节点类型中引入新索引（特别是全文索引），因为这些索引可能会与OOTB产品功能冲突，从而导致功能和性能问题。 通常，向当前`damAssetLucene-*`索引版本添加其他属性是对`dam:Asset`节点类型上的查询进行索引的最合适方式（如果随后发布这些更改，将自动合并到索引的新产品版本中）。 如有疑问，请联系Adobe支持人员以获取建议。
+>强烈建议不要在`dam:Asset`节点类型中引入新索引（特别是全文索引），因为这些索引可能会与OOTB产品功能冲突，从而导致功能和性能问题。 相反，对`dam:Asset`节点类型上的查询进行索引的最合适方法是通过添加其他属性来自定义`damAssetLucene-*`索引。 在后续版本中，这些更改将自动合并到新产品版本中。 如有疑问，请联系Adobe支持人员以获取建议。
 
 ## 准备新索引定义 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->如果自定义开箱即用索引，例如`damAssetLucene-8`，请使用CRX DE包管理器(`/crx/packmgr/`)从&#x200B;*Cloud Service环境*&#x200B;复制最新的开箱即用索引定义。 将其重命名为`damAssetLucene-8-custom-1`（或更高版本），并在XML文件中添加自定义项。 这样可确保不会无意中删除所需的配置。 例如，在部署到AEM Cloud Service环境的自定义索引中，`/oak:index/damAssetLucene-8/tika`下的`tika`节点是必需的，但在本地AEM SDK上不存在。
+>自定义开箱即用索引（例如`damAssetLucene-8`）时，使用CRX DE包管理器(`/crx/packmgr/`)从&#x200B;*Cloud Service环境*&#x200B;复制最新的开箱即用索引定义。 将其重命名为`damAssetLucene-8-custom-1`（或更高版本），并在XML文件中添加自定义项。 如果云环境中的索引是`elasticsearch`类型，则需要其他更改：将`type`属性更改为`lucene`，将`async`属性更改为`[async,nrt]`，并将属性`similarityTags`更改为`true`。 这样可确保不会无意中删除所需的配置。 例如，在部署到AEM Cloud Service环境的自定义索引中，`/oak:index/damAssetLucene-8/tika`下的`tika`节点是必需的，但在本地AEM SDK上不存在。
 
-对于OOTB索引的自定义，请准备一个新的包，其中包含遵循此命名模式的实际索引定义：
+要自定义OOTB索引，请准备一个包含自定义或自定义索引定义的新包。 索引名称需要遵循命名模式：
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -256,7 +256,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 什么是滚动部署 {#what-are-rolling-deployments}
 
-滚动部署可减少停机时间。 它还可实现零停机升级并提供快速回滚。应用程序的旧版本与应用程序的新版本同时运行。
+滚动部署允许零停机升级，并提供快速回滚。 应用程序的旧版本与应用程序的新版本同时运行。
 
 ### 只读和读写区域 {#read-only-and-read-write-areas}
 
@@ -282,7 +282,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 使用滚动部署，不会出现停机。 在更新过程中，应用程序的旧版本（例如，版本1）和新版本（版本2）会针对同一存储库同时运行。 如果版本1要求某个索引可用，则不得在版本2中删除此索引。 稍后应删除索引，例如在版本3中，此时应确保应用程序的版本1不再运行。 此外，应用程序应编写得即使版本 2 正在运行以及有版本 2 的索引可用，版本 1 也能正常运行。
 
-升级到新版本后，系统可以对旧索引进行垃圾回收。旧索引可能仍会保留一段时间，以加快回滚（如果需要回滚）。
+升级到新版本后，系统可以对旧索引进行垃圾回收。旧索引通常保留一周，以加快回滚（如果需要回滚）。
 
 下表显示五个索引定义：在两个版本中都使用索引 `cqPageLucene`，而仅在版本 2 中使用索引 `damAssetLucene-custom-1`。
 
@@ -292,23 +292,23 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 | 索引 | 开箱即用索引 | 在版本 1 中使用 | 在版本 2 中使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene | 是 | 是 | 否 |
-| /oak:index/damAssetLucene-custom-1 | 是（自定义） | 否 | 是 |
-| /oak:index/acme.product-custom-1 | 否 | 是 | 否 |
-| /oak:index/acme.product-custom-2 | 否 | 否 | 是 |
-| /oak:index/cqPageLucene | 是 | 是 | 是 |
+| /oak：index/damAssetLucene-8 | 是 | 是 | 否 |
+| /oak：index/damAssetLucene-8-custom-1 | 是（自定义） | 否 | 是 |
+| /oak：index/acme.product-1-custom-1 | 否 | 是 | 否 |
+| /oak：index/acme.product-1-custom-2 | 否 | 否 | 是 |
+| /oak:index/cqPageLucene-2 | 是 | 是 | 是 |
 
 每次更改索引时，版本号都增大。为了避免自定义索引名与产品本身的索引名冲突，自定义索引以及对开箱即用索引的更改必须以`-custom-<number>`结尾。
 
 ### 对开箱即用索引的更改 {#changes-to-out-of-the-box-indexes}
 
-在Adobe更改开箱即用索引（如“damAssetLucene”或“cqPageLucene”）后，将创建名为`damAssetLucene-2`或`cqPageLucene-2`的新索引。 或者，如果已自定义索引，则自定义的索引定义将与现成索引中的更改合并，如下所示。 这些更改自动合并。这意味着，如果开箱即用索引发生更改，您无需执行任何操作。 但是，之后可以再次自定义索引。
+Adobe更改开箱即用索引（如`damAssetLucene`或`cqPageLucene`）后，将创建名为`damAssetLucene-2`或`cqPageLucene-2`的新索引。 或者，如果已自定义索引，则自定义的索引定义将与现成索引中的更改合并，如下所示。 这些更改自动合并。这意味着，如果开箱即用索引发生更改，您无需执行任何操作。 但是，以后可以再次自定义索引。 在这种情况下，务必要使用最新（合并的）版本作为基准。
 
 | 索引 | 开箱即用索引 | 在版本 2 中使用 | 在版本 3 中使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene-custom-1 | 是（自定义） | 是 | 否 |
-| /oak:index/damAssetLucene-2-custom-1 | 是（自动从 damAssetLucene-custom-1 和 damAssetLucene-2 合并） | 否 | 是 |
-| /oak:index/cqPageLucene | 是 | 是 | 否 |
+| /oak：index/damAssetLucene-1-custom-1 | 是（自定义） | 是 | 否 |
+| /oak:index/damAssetLucene-2-custom-1 | 是（自动从damAssetLucene-1-custom-1和damAssetLucene-2合并） | 否 | 是 |
+| /oak:index/cqPageLucene-1 | 是 | 是 | 否 |
 | /oak:index/cqPageLucene-2 | 是 | 否 | 是 |
 
 请注意，环境可能使用不同的AEM版本，这一点很重要。 例如： `dev`环境在版本`X+1`上，而暂存和生产仍在版本`X`上，并且正在等待在`dev`上执行了所需的测试之后升级到版本`X+1`。 如果版本`X+1`附带已自定义的产品索引的较新版本，并且需要对该索引进行新的自定义，则下表将说明需要基于基于AEM版本的环境设置哪些版本：
@@ -328,11 +328,11 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 目前，不支持对`/oak:index`的内容编制索引。
 
-为获得最佳运行性能，索引不应过大。 所有索引的总大小均可作为参考使用。 如果在添加了自定义索引并在开发环境中调整了标准索引后，此大小增加超过100%，则应调整自定义索引定义。 AEM as a Cloud Service可以阻止部署可能对系统稳定性和性能产生负面影响的索引。
+为获得最佳运行性能，索引不应过大。 所有索引的总大小均可作为参考使用。 如果在添加了自定义索引并在开发环境中调整了标准索引后，此大小增加超过100%，则应调整自定义索引定义。 AEM as a Cloud Service可以阻止部署或删除可能会对系统稳定性和性能产生负面影响的索引。
 
 ### 添加索引 {#adding-an-index}
 
-要添加一个要在应用程序的新版本和更高版本中使用的名为`/oak:index/acme.product-custom-1`的完全自定义索引，必须按如下方式配置该索引：
+要添加一个要在应用程序的新版本和更高版本中使用的名为`/oak:index/acme.product-1-custom-1`的完全自定义索引，必须按如下方式配置该索引：
 
 `acme.product-1-custom-1`
 
@@ -342,15 +342,15 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 更改索引 {#changing-an-index}
 
-更改现有索引时，必须添加更改了索引定义的新索引。 例如，设想更改了现有的索引 `/oak:index/acme.product-custom-1`。旧索引存储在 `/oak:index/acme.product-custom-1` 下，而新索引存储在 `/oak:index/acme.product-custom-2` 下。
+更改现有索引时，必须添加更改了索引定义的新索引。 例如，设想更改了现有的索引 `/oak:index/acme.product-1-custom-1`。旧索引存储在 `/oak:index/acme.product-1-custom-1` 下，而新索引存储在 `/oak:index/acme.product-1-custom-2` 下。
 
 应用程序的旧版本使用以下配置：
 
-`/oak:index/acme.product-custom-1`
+`/oak:index/acme.product-1-custom-1`
 
 应用程序的新版本使用以下（经过更改的）配置：
 
-`/oak:index/acme.product-custom-2`
+`/oak:index/acme.product-1-custom-2`
 
 >[!NOTE]
 >
@@ -358,19 +358,20 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 还原更改 {#undoing-a-change}
 
-有时，需要撤消索引定义中的修改。 这可能是由于意外错误或不再需要修改而导致的。 例如，以错误地创建且已经部署的索引定义`damAssetLucene-8-custom-3,`为例。 因此，要恢复为上一个索引定义`damAssetLucene-8-custom-2.`要实现此目的，需要引入名为`damAssetLucene-8-custom-4`的新索引，该索引包含上一个索引`damAssetLucene-8-custom-2.`中的定义
+有时候，有必要撤消索引定义中的修改，例如由于错误或不再需要该修改。 例如，如果索引定义`damAssetLucene-8-custom-3`包含错误，您可能希望还原到以前的定义`damAssetLucene-8-custom-2`。 要完成此操作，请创建一个名为`damAssetLucene-8-custom-4`的新索引，它是上一个索引`damAssetLucene-8-custom-2.`的副本
 
 ### 删除索引 {#removing-an-index}
 
 以下内容仅适用于现成(OOTB)索引的自定义以及完全自定义的索引。 请注意，无法删除原始OOTB索引，因为它们由AEM使用。
 
-为确保系统完整性和稳定性，索引定义在部署后应被视为不可变。 要达到删除自定义索引或自定义的效果，请创建自定义索引或自定义索引的新版本，其定义可有效地模拟索引的删除。
+为确保系统完整性和稳定性，索引定义在部署后应被视为不可变。 如果需要删除自定义索引或自定义项，请使用该定义创建该索引的新版本，该定义可以有效地模拟删除
+（请参阅下面的示例）。
 
 一旦部署了索引的新版本，查询将不再使用同一索引的旧版本。
 较旧的版本不会立即从环境中删除，
 但将可以通过定期运行的清理机制进行垃圾收集。
 经过宽限期后，在发生错误时可以进行恢复
-（索引被删除但可能会更改，目前距此日期还有7天），
+（目前，索引从被删除起还有7天，但可能会发生更改），
 这种清理机制将删除未使用的索引数据，
 和将禁用或从环境中删除旧版本的索引。
 
@@ -382,10 +383,10 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 #### 删除完全自定义索引
 
-按照[使用虚拟索引作为新版本撤消更改](#undoing-a-change-undoing-a-change)中描述的步骤操作。 虚拟索引从未用于查询，并且不包含任何数据，因此其效果与不存在索引相同。 对于此示例，您可以将其命名为`/oak:index/acme.product-custom-3`。 此名称替换索引`/oak:index/acme.product-custom-2`。 这种虚拟索引的一个例子是：
+按照[使用虚拟索引作为新版本撤消更改](#undoing-a-change-undoing-a-change)中描述的步骤操作。 虚拟索引从未用于查询，并且不包含任何数据，因此其效果与不存在索引相同。 对于此示例，您可以将其命名为`/oak:index/acme.product-1-custom-3`。 此名称替换索引`/oak:index/acme.product-1-custom-2`。 这种虚拟索引的一个例子是：
 
 ```xml
-<acme.product-custom-3
+<acme.product-1-custom-3
         jcr:primaryType="oak:QueryIndexDefinition"
         async="async"
         compatVersion="2"
@@ -402,10 +403,8 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
                 </properties>
             </rep:root>
         </indexRules>
-</acme.product-custom-3>
+</acme.product-1-custom-3>
 ```
-
-
 
 ## 索引和查询优化 {#index-query-optimizations}
 
