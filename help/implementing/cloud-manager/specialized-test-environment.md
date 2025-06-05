@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->>本文中介绍的功能只能通过早期采用计划获得。 若要注册为早期采用者，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>&#x200B;>本文中介绍的功能只能通过早期采用计划获得。 若要注册为早期采用者，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 专业化测试环境（简称DevXL）是您可以创建的一种新型Cloud Manager环境。 它旨在支持高级用例，例如用户验收测试(UAT)和性能验证。 与传统开发、快速开发或暂存环境不同，DevXL环境在生产部署管道之外运行。 因此，它们为您提供了更大的灵活性，同时保持严格的隔离以防止对生产工作流的干扰。
 

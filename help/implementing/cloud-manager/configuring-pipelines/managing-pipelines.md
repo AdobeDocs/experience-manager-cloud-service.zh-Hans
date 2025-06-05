@@ -70,7 +70,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 1. 从&#x200B;**项目概述**&#x200B;页面，单击![管道选项卡 — 工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;选项卡。
 1. 在管道页面的管道名称和类型左侧，单击取消收藏的管道的![星型轮廓图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)以将其添加到收藏夹列表。
-或者，单击收藏管道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的![星形图标以将该管道从收藏夹列表中删除。
+或者，单击收藏管道![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的星形图标以将该管道从收藏夹列表中删除。
 
 
 ## 活动页面 {#activity}
@@ -117,7 +117,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 1. 在左侧菜单中，点击![工作流图标 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
-1. 在&#x200B;**管道**页面的表格中，选择要运行的管道旁边的复选框。
+1. 在&#x200B;**管道**&#x200B;页面的表格中，选择要运行的管道旁边的复选框。
 需要时，点击![“过滤器”图标，漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **过滤器**，按名称、环境、部署的代码类型或所有三者组合对管道进行排序。
 1. 在页面的右上角附近，点击&#x200B;**运行所选（x）**。
 1. 在&#x200B;**运行选定的管道 (x)** 对话框中，点击&#x200B;**运行 (x)**。

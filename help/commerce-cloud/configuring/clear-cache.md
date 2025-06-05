@@ -26,10 +26,11 @@ ht-degree: 2%
 * 通过在项目中添加`com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`配置，使侦听器能够清除AEM的每个实例（发布和创作）的缓存，如[此处](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)所示。
    * 应为创作实例和发布实例启用配置。
    * 启用Dispatcher缓存（可选）：您可以通过在上述配置中将`enableDispatcherCacheInvalidation`属性设置为true来启用Dispatcher清除缓存设置。 这提供了从Dispatcher清除缓存的功能。
+
   >[!NOTE]
   >
   > 这仅适用于发布实例。
-   * 此外，请确保提供适合您的产品、类别和CMS页面的相应模式，并将其添加到上述配置文件中，以便将其从Dispatcher缓存中删除。
+  > * 此外，请确保提供适合您的产品、类别和CMS页面的相应模式，并将其添加到上述配置文件中，以便将其从Dispatcher缓存中删除。
 * 要提高SQL查询查找与产品和类别相关的相应页面的性能，请在项目中添加相应的索引（推荐）。 有关详细信息，请参阅[cifCacheInvalidationSupport/]&#x200B;(链接https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)。
 
 ## 验证清除缓存功能 {#verify-clear-cache}
@@ -56,6 +57,7 @@ ht-degree: 2%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 如果一切顺利，新变化将反映在所有实例中。 如果更改未反映在发布实例中，请在专用窗口中查看相应的PLP和PDP页面。
 
 >[!NOTE]
