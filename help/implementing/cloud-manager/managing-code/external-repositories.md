@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="率先采用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
+source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 23%
+source-wordcount: '2079'
+ht-degree: 25%
 
 ---
 
@@ -18,12 +18,13 @@ ht-degree: 23%
 
 客户现在还可以将其Azure DevOps Git存储库载入到Cloud Manager中，并支持现代Azure DevOps和旧版VSTS (Visual Studio Team Services)存储库。
 
-* 对于Edge Delivery Services用户，已载入的存储库可用于同步和部署网站代码。
-* 对于AEM as a Cloud Service和Adobe Managed Services (AMS)用户，存储库可以同时链接到全栈管道和前端管道。
-’
+* Edge Delivery Services 用户可以使用已加入的存储库来同步和部署网站代码。
+* 对于 AEM as a Cloud Service 和 Adobe Managed Services (AMS) 用户，该存储库可以链接到全栈和前端两种管道。
+
 >[!NOTE]
 >
 >本文中介绍的功能只能通过早期采用计划获得。 有关更多详细信息，以及要注册为早期采用者，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
+
 
 ## 配置外部存储库
 
@@ -83,13 +84,16 @@ ht-degree: 23%
    | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
    | | **存储库类型： Azure DevOps**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>当您在Azure DevOps中创建应用程序密码时，请确保它包含以下必需的应用密码权限：<ul><li>存储库（只读）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
+   另请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
+
    >[!IMPORTANT]
    >
    >功能&#x200B;**添加新访问令牌**&#x200B;当前处于早期采用者阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
 
 1. 点击&#x200B;**验证**。
 
-验证后，外部存储库即可使用并链接到管道。
+   验证后，外部存储库即可使用并链接到管道。
+
 
 ## 将经过验证的外部存储库链接到管道 {#validate-ext-repo}
 
@@ -113,6 +117,7 @@ ht-degree: 23%
 >[!TIP]
 >
 >有关在 Cloud Manager 中管理存储库的详细信息，请参阅 [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
+
 
 ## 为外部存储库配置webhook {#configure-webhook}
 
@@ -172,6 +177,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
    | GitLab | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul> |
    | Bitbucket | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
    | Azure DevOps | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>存储库：推送</li></li></ul></ul></ul> |
+
 
 ### 使用Webhook验证拉取请求
 

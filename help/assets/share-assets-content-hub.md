@@ -3,10 +3,10 @@ title: 在 [!DNL the Content Hub]中共享Assets
 description: 在 [!DNL the Content Hub]中共享Assets
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 0e66b355d09e2fd2c4c8a5ddacc9b2d033b41bf2
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 11%
+source-wordcount: '486'
+ht-degree: 17%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 11%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -57,50 +57,47 @@ ht-degree: 11%
 >
 >[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-通过链接共享资源是一种方便的方法，可使[!DNL the Content Hub]用户可以使用这些资源。 该功能允许授权用户访问和下载与其共享的资产。 从共享链接下载资源时，[!DNL the Content Hub]使用异步服务，该服务可提供更快且无中断的下载。
+创建指向所选资产的链接以轻松与他人共享。 作为授权[!DNL Content Hub]用户，请选择您的[!DNL Content Hub]环境中可用的一个或多个资源，生成链接，并将其发送给其他专用或公共用户。
 
 ## 先决条件 {#prerequisites}
 
-[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users)可以执行本文中提到的操作。
+[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users)可以创建指向所选资源的链接并与其他用户共享。
 
-## 共享单个资产 {#share-a-single-asset}
+## 共享资产 {#share-assets}
 
-您可以通过执行以下步骤来共享单个资源：
+要与专用或公共用户共享一个或多个资产，请执行以下步骤：
+1. 导航到您的[!DNL Content Hub]主页，选择一个或多个资源并单击![共享](/help/assets/assets/share.svg) **[!UICONTROL 共享]**&#x200B;以在&#x200B;**[!UICONTROL 共享资源]**对话框中显示单个选定资源或多个选定资源的列表。
+您还可以选择并共享![收藏集](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL 收藏集]**&#x200B;中可用的资产。
+1. 在&#x200B;**[!UICONTROL 共享资源]**&#x200B;对话框中查看资源或查看可用资源列表。 单击资产旁边的![取消选择](/help/assets/assets/Close.svg)以将其从列表中取消选择。
+1. 选择&#x200B;**[!UICONTROL 过期时间]**&#x200B;并单击&#x200B;**[!UICONTROL 生成专用链接]**&#x200B;以生成与专用用户共享的链接。 私有用户登录到其[!DNL Content Hub]环境以访问共享资源页面。
+   ![私有和公共链接](/help/assets/assets/private-and-public-link.png)
+启用**[!UICONTROL 公共链接]**&#x200B;切换，选择&#x200B;**[!UICONTROL 过期时间]**，然后单击&#x200B;**[!UICONTROL 生成公共链接]**&#x200B;以生成要与公共用户共享的链接。 公共用户作为来宾无需登录到[!DNL Content Hub]即可访问共享资源页面。
+   ![私有和公共链接](/help/assets/assets/public-and-private-link.png)
 
-1. 选择资产并单击![共享图标](assets/share.svg)图标可共享资产。
+   >[!NOTE]
+   > 
+   > [从配置页面](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing)启用公共链接共享，以在&#x200B;**[!UICONTROL 共享资源]**&#x200B;对话框上显示&#x200B;**[!UICONTROL 公共链接]**&#x200B;切换开关。
 
-   ![共享单个资源](assets/sharing-single-asset.png)
+## 从其预览页面共享资源 {#share-asset-from-preview-page}
 
-1. 使用&#x200B;**[!UICONTROL 过期]**&#x200B;字段指定链接的过期日期。 选择一个可用选项，如24小时、1周、30天、90天、1年，或指定自定义日期。
+执行以下步骤以在预览资产时共享资产：
 
-1. 单击&#x200B;**[!UICONTROL 复制共享链接]**。 然后，您可以与收件人共享复制的链接。
-
-## 共享多个资产 {#share-multiple-assets}
-
-[!DNL The Content Hub]允许您通过共享链接共享多个资源。 执行以下步骤：
-
-1. 选择需要与授权收件人共享的资源。 您可以逐个选择多个资源，或单击&#x200B;**[!UICONTROL 全选]**&#x200B;以一次选择所有可用资源。 仅当您至少选择一个资产时，才会显示&#x200B;**[!UICONTROL 全选]**&#x200B;选项。
-
-1. 单击![共享图标](assets/share.svg)图标。
-
-   ![共享多个资产](assets/sharing-multiple-assets.png)
-
-1. 在预览部分中，您还可以根据要求删除资产。 使用&#x200B;**[!UICONTROL 过期]**&#x200B;字段指定链接的过期日期。 选择一个可用选项，如24小时、1周、30天、90天、1年，或指定自定义日期。
-
-1. 单击&#x200B;**[!UICONTROL 复制共享链接]**。 然后，您可以与收件人共享复制的链接。
-
-## 预览和共享资源 {#preview-assets}
-
-您可以进行预览，以查看在与链接收件人共享之前，要共享的数字资产的外观。 单击需要预览的资源。 [!DNL Content Hub]显示资产[&#128279;](asset-properties-content-hub.md)的详细视图。
-
-单击![共享图标](assets/share.svg)图标可共享资产。 使用&#x200B;**[!UICONTROL 过期]**&#x200B;字段指定链接的过期日期。 选择一个可用选项，如24小时、1周、30天、90天、1年，或指定自定义日期。 单击&#x200B;**[!UICONTROL 复制共享链接]**。 然后，您可以与收件人共享复制的链接。
-
-![在Content Hub中预览资源](assets/preview-assets-content-hub.png)
+1. 导航到[!DNL Content Hub]主页，然后单击资产缩略图以预览资产，并在对话框的右侧窗格中显示菜单选项。
+1. 选择![共享](/help/assets/assets/share.svg)以显示&#x200B;**[!UICONTROL 共享]**面板。
+   预览资产时![共享资产](/help/assets/assets/share-assets-from-share-panel.png)
+1. 执行[共享资产](#share-assets)部分中的步骤3以从此&#x200B;**[!UICONTROL 共享]**&#x200B;面板生成并共享资产链接（私有或公共）。
 
 ## 访问共享资源 {#access-shared-assets}
 
-共享资产的链接后，授权的收件人可以单击该链接，在Web浏览器中预览或下载共享资产。
+通过链接访问共享资源页面，并执行以下操作：
 
-单击共享链接，然后单击资产卡上可用的下载图标以下载资产。  您还可以选择多个资产并单击&#x200B;**[!UICONTROL 下载]**。<!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub]将每个资源逐个下载到本地文件系统。
+* 选择一个或多个资源并单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**&#x200B;从可用下载选项中选择&#x200B;**[!UICONTROL 原始]**、**[!UICONTROL 静态]**或两个呈现版本。
+  ![](/help/assets/assets/download-shared-assets.png)
+* 单击资源缩略图可查看资源的元数据。
+* 在共享资源页面（[通过专用链接访问](#share-assets)）上，单击资源缩略图并选择![下载](/help/assets/assets/download-icon.svg)以选择并查看&#x200B;**[!UICONTROL 下载]**面板上的可用资源动态演绎版，然后再选择并下载。
+  ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
-![访问共享链接](assets/content-hub-access-shared-links.png)
+
+
+
+

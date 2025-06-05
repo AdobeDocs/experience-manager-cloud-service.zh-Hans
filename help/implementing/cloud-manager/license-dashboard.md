@@ -5,21 +5,21 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
+source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 26%
+source-wordcount: '909'
+ht-degree: 24%
 
 ---
 
 
 # 许可证仪表板 {#license-dashboard}
 
-Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户可用的 AEMaaCS 产品权利。
+Cloud Manager提供了一个仪表板，用于轻松查看您的组织或租户可用的Adobe Experience Manager as a Cloud Service (AEMaaCS)产品权利。
 
 >[!IMPORTANT]
 >
->许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
+>许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
 >
 >要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
@@ -41,7 +41,10 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 
 仪表板分为三个部分，向您显示：
 
-* **解决方案** — 您已授予许可的解决方案。
+* **解决方案** — 您已授予许可的解决方案。 例如，Sites、Edge Delivery Services、Assets等。
+
+  ![解决方案列表](assets/solutions.png)
+
 * **加载项** — 您可用的许可解决方案的哪些加载项。
 * **其他权利** — 可在租户中使用的沙盒和开发环境及其他权利。
 

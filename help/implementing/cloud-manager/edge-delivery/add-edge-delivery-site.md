@@ -4,10 +4,10 @@ description: 了解如何将 Edge Delivery Site 添加到您的生产程序或�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
-workflow-type: ht
-source-wordcount: '502'
-ht-degree: 100%
+source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
    | 文本字段 | 描述 |
    | - | --- |
    | Site 名称 | 输入您要添加的 Edge Delivery Site 的名称。<br>该名称是 Cloud Manager 内 Site 的唯一标识符。 |
-   | 存储库 URL | 进入存储您网站代码的 Git 存储库。<br>此字段允许 Cloud Manager 在部署过程中从该存储库中提取代码。 |
+   | Edge Delivery Origin | 此值指定在Edge Delivery Services中网站的内容源的URL路径。 它还将Cloud Manager链接到您的实时网站。<br>URL通常包括&#x200B;*分支*、*项目*&#x200B;和&#x200B;*租户*，如以下示例所示（仅供说明之用）：<br>`https://main--projectname--tenant.aem.live` |
    | Site 描述（可选） | 输入您要添加的 Edge Delivery Site 的简短描述。<br>描述信息有助于识别和区分 Site，使您在添加的其他 Sites 中更容易管理和识别该 Site。 |
 
 1. 在对话框的右下角，单击&#x200B;**添加**。

@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 44%
+source-wordcount: '2430'
+ht-degree: 42%
 
 ---
 
@@ -26,6 +26,11 @@ ht-degree: 44%
 | **生产+暂存** | 生产和暂存环境成对可用，分别用于生产和测试目的。 在暂存环境中执行性能测试和安全性测试。 它的规模与生产环境相同。 |
 | **开发** | 开发环境可以创建用于开发和测试目的，并且只能与非生产管道相关联。 开发环境的规模与暂存和生产环境不同，不应用于进行性能和安全测试。 |
 | **快速开发** | 快速开发环境(RDE)允许开发人员快速部署和查看更改。 此功能可减少测试已在本地开发环境中验证的功能所需的时间。 请参阅[快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md)，了解有关如何使用 RDE 的详细信息。 |
+| **专业测试环境** | 专门的测试环境提供了一个专用空间，用于在接近生产环境的条件下验证功能，非常适合于压力测试和高级部署前检查。 请参阅[添加专门的测试环境](/help/implementing/cloud-manager/specialized-test-environment.md) |
+
+>[!NOTE]
+>
+>**专业测试环境**&#x200B;功能目前仅通过早期采用计划提供。 若要注册为早期采用者，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 各个环境的功能取决于环境的[项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中启用的解决方案。
 
@@ -105,7 +110,7 @@ ht-degree: 44%
 
 ### 编辑多个发布区域 {#edit-regions}
 
-如果您最初没有指定任何附加区域，并且您拥有必要的权限，则可以在创建环境后执行此操作。
+如果您最初没有指定任何附加区域，则可以在创建环境并且您拥有必要的权利之后执行此操作。
 
 您还可以删除附加发布区域。但是，在一个事务中只能添加或删除区域。 如果您需要添加一个区域并删除一个区域，请先添加、保存您的更改，然后再删除（反之亦然）。
 
@@ -282,7 +287,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 >[!TIP]
 >
->请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)，了解AEM as a Cloud Service团队和产品配置文件如何授予和限制对您的许可Adobe解决方案的访问权限。
+>请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)，了解AEM as a Cloud Service团队和产品配置文件如何授予和限制对您许可的Adobe解决方案的访问权限。
 
 ## 访问开发人员控制台 {#accessing-developer-console}
 
@@ -294,7 +299,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console**。
 
-有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
 
 单击单个环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)时，也可以从&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡中使用此选项。
 

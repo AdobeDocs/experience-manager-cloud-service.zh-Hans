@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
+source-git-commit: 1b569e7e14cd27a8963e230fba5bcdc55f2bcdf6
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6235'
 ht-degree: 99%
 
 ---
@@ -123,6 +123,7 @@ ht-degree: 99%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [当前](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -697,6 +698,7 @@ ht-degree: 99%
       + [批准 Content Hub 的资产](/help/assets/approve-assets-content-hub.md)
       + [在 Content Hub 搜索资产](/help/assets/search-assets-content-hub.md)
       + [资产属性](/help/assets/asset-properties-content-hub.md)
+      + [基于属性的访问控制](/help/assets/attribute-based-access-control.md)
       + [在 Content Hub 共享资产](/help/assets/share-assets-content-hub.md)
       + [使用 Content Hub 下载资产](/help/assets/download-assets-content-hub.md)
       + [管理 Content Hub 上的许可资产](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -993,12 +995,14 @@ ht-degree: 99%
          + [缓存选项](/help/commerce-cloud/configuring/caching.md)
          + [自定义 HTTP 标头](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [购物车和 Dispatcher 设置](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+         + [组件和GraphQL清除缓存](/help/commerce-cloud/configuring/clear-cache.md)
       + 开发 {#developing}
          + [使用 AEM Cloud Service SDK 进行开发](/help/commerce-cloud/develop.md)
          + [设置 CIF 组件的样式](/help/commerce-cloud/customizing/style-cif-component.md)
          + [自定义 CIF 组件](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [使用 CIF 目录选取器](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [CIF 产品轮播的自定义属性](/help/commerce-cloud/customizing/product-carousel.md)
+         + [JSON-LD元数据](/help/commerce-cloud/customizing/json-ld.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
@@ -1196,12 +1200,14 @@ ht-degree: 99%
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [生成环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
+      + [专业测试环境（率先采用者）](/help/implementing/cloud-manager/specialized-test-environment.md)
       + 管理您的代码  {#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [添加一个 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [添加一个专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [添加一个外部存储库（早期采用者）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [管理外部存储库的访问令牌（早期采用者）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
