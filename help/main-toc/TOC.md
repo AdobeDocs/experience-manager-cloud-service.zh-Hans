@@ -442,8 +442,8 @@ ht-degree: 99%
          + [关于删除的注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [内容片段控制台内的资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
-         + [使用Adobe Journey Optimizer的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-         + [内容片段AJO外部引用扩展](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
+         + [使用 Adobe Journey Optimizer 的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+         + [内容片段 AJO 外部引用扩展](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Site 创建  {#site-creation}
          + [创建新 Site](/help/sites-cloud/administering/site-creation/create-site.md)
