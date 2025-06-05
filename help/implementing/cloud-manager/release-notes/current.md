@@ -4,9 +4,9 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 57%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service中Cloud Manager 2025.6.0的发布日期是2025年6月5日
 
 ## 新增功能 {#what-is-new}
 
-* **(UI)许可证仪表板现在包含Edge Delivery Services许可证**
+* **许可证仪表板现在包含Edge Delivery Services许可证**
 
   Edge Delivery Services许可证使用情况现在显示在许可证仪表板中，使您能够更清楚地查看权利和状态。<!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service中Cloud Manager 2025.6.0的发布日期是2025年6月5日
 
   查看[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
-* **(UI) Edge Delivery站点配置已更新**
+* **Edge Delivery站点配置已更新**
 
   通过请求&#x200B;**Edge Delivery Origin**&#x200B;而不是&#x200B;**存储库URL**，简化了添加Edge Delivery站点的流程，使载入和设置更快、更直观<!-- CMGR-67686 -->
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service中Cloud Manager 2025.6.0的发布日期是2025年6月5日
 
   请参阅[添加Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。
 
-* **(UI)管道收藏夹**
+* **管道收藏夹**
 
   在此版本中，Cloud Manager引入了pin收藏管道的功能，允许您将特定管道标记为收藏夹，以便它们显示在&#x200B;**管道**&#x200B;页面上的列表顶部。 此增强功能使经常访问的管道更容易查找和运行。<!-- CMGR-68293 -->
 
@@ -111,7 +111,7 @@ Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在添加管道下拉列表中添加Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**项目概述**&#x200B;页面，**管道**&#x200B;信息卡添加Edge Delivery管道。*
+![在添加管道下拉列表中添加Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**项目概述**页面，**管道**信息卡添加Edge Delivery管道。*
 
 ![添加Edge Delivery管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加Edge Delivery管道对话框。*
 
