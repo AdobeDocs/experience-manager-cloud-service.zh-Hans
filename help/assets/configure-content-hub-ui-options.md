@@ -2,10 +2,10 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 16%
+source-wordcount: '1987'
+ht-degree: 15%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 16%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -100,7 +100,7 @@ ht-degree: 16%
 
 * [过滤器](#configure-filters-content-hub)
 
-* [资源详情](#configure-asset-details-content-hub)
+* [资产详情](#configure-asset-details-content-hub)
 * [资产卡](#asset-card)
 
 * [搜索](#configure-metadata-search-content-hub)
@@ -156,7 +156,7 @@ Content Hub允许管理员配置在搜索资源时显示的过滤器。 执行�
 
    >[!NOTE]
    >
-   >仅当存储库中还有另一个资源与筛选条件匹配时，新筛选器才会显示在“搜索”页面上。
+   >仅当存储库中至少有一个资源与筛选条件匹配时，新筛选器才会显示在“搜索”页面上。
 
 同样，您可以单击每个可用筛选器旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑标签，或者单击删除图标来删除任何现有筛选器。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
@@ -167,7 +167,7 @@ Content Hub允许管理员配置在搜索资源时显示的过滤器。 执行�
 ![在Content Hub上搜索](assets/filters-for-search.png)
 
 
-### 资源详情 {#configure-asset-details-content-hub}
+### 资产详情 {#configure-asset-details-content-hub}
 
 您还可以配置为每个资源显示的资源属性，例如文件名、标题、格式、大小等。 若要禁用，请执行以下步骤：
 
@@ -197,7 +197,7 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**资产卡**。
 2. 单击&#x200B;**添加元数据**。 显示&#x200B;**添加资源卡元数据**&#x200B;对话框。
 3. 在&#x200B;**标签**&#x200B;字段中指定元数据名称，并在&#x200B;**元数据**&#x200B;字段中选择元数据属性。
-4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**&#x200B;以应用更改，以便新属性显示在资源详细信息页面上。
+4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**以应用更改，以便新属性显示在资源详细信息页面上。
    ![资产卡](/help/assets/assets/asset-card.png)
 
 同样，单击每个可用属性旁边可用的![编辑](/help/assets/assets/edit-content-hub.svg)以进行任何必需的修改，或单击![删除](/help/assets/assets/delete-content-hub.svg)删除任何现有的元数据属性。 完成所有修改后单击&#x200B;**保存**&#x200B;以应用更改。
@@ -212,26 +212,38 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改，以便新的元数据属性显示在元数据字段列表中。
 
-同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
-
+同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
 在Content Hub上![配置UI搜索](assets/configuration-ui-metadata-search.png)
-
 
 ### 品牌化 {#configure-branding-content-hub}
 
-管理员还可以根据您的品牌要求，个性化Content Hub门户横幅上的标题和正文文本。 若要禁用，请执行以下步骤：
+作为管理员，自定义您的[!DNL Content Hub]门户以满足您的品牌要求。 在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**、**[!UICONTROL 颜色]**&#x200B;和&#x200B;**[!UICONTROL 横幅图像]**&#x200B;部分执行以下自定义设置：
 
-1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 品牌]**。
+1. [从[!UICONTROL 横幅图像]部分更改横幅图像](#Change-the-banner-image)
+1. [更新横幅上的标题和正文文本，并更改[!UICONTROL 横幅]部分的文本颜色](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [从[!UICONTROL 颜色]部分更改主要颜色和次要颜色，以应用与品牌主题一致的颜色方案](#Change-the-primary-and-secondary-color)
 
-1. 指定横幅&#x200B;**的**&#x200B;[!UICONTROL &#x200B;标题文本和横幅&#x200B;]&#x200B;**字段的**&#x200B;正文文本。
+选择&#x200B;**[!UICONTROL 重置默认值]**&#x200B;选项以还原您的更改并还原默认主题。
 
-1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
+#### 更改横幅图像{#Change-the-banner-image}
 
-Content Hub上的![配置UI品牌](assets/configuration-ui-branding.png)
+在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，执行以下步骤以更改[!DNL Content Hub]部署的横幅图像：
 
-在配置用户界面上启用的品牌更新将显示在Content Hub门户横幅上：
+1. 单击![选择图像](/help/assets/assets/Browse.svg) **[!UICONTROL 从图库中选择]**&#x200B;以使用“资产选择器”对话框选择横幅图像。 资源选择器仅显示批准的图像。
+1. 选择图像，单击&#x200B;**[!UICONTROL 选择]**，然后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以将其显示为[!DNL Content Hub]部署的横幅图像。
 
-Content Hub上的![配置UI品牌](assets/configuration-ui-branding-updates.png)
+#### 将标题和正文文本添加到横幅并更改文本颜色{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**部分中的相应字段将标题和正文添加到横幅中。
+单击**[!UICONTROL 横幅文本颜色]**&#x200B;旁边的方框可从横幅文本的拾色器中选择文本颜色，或在拾色器方框旁边的字段中指定颜色的十六进制代码。
+
+#### 更改主颜色和次颜色{#Change-the-primary-and-secondary-color}
+
+在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 颜色]**&#x200B;部分设置主要颜色和次要颜色，方法为使用拾色器选择颜色或定义颜色的十六进制代码。 这些颜色可设置UI元素的背景、文本和图标颜色，以使您的[!DNL Content Hub] UI与品牌主题保持一致。
+
+**[!UICONTROL 主颜色]：**&#x200B;主颜色方案适用于选择操作、交互元素（如复选框、搜索栏）以及跨[!DNL Content Hub]切换开关（包括[!DNL Content Hub]主页和[!UICONTROL 配置]页）。 它还适用于主[!DNL Content Hub]界面上可用的操作选项，如&#x200B;**[!UICONTROL 所有Assets]**&#x200B;和&#x200B;**[!UICONTROL 收藏集]**&#x200B;页面上可用的选项。
+
+**[!UICONTROL 次要颜色]：**&#x200B;在[!DNL Content Hub]主页上，次要颜色方案应用于对话框中可用的UI选项和输入字段。 它适用于[!UICONTROL 配置]页面上可用的所有配置菜单选项，但选择操作、复选框、搜索栏和切换开关除外。
 
 ### 过期资产{#expired-assets-content-hub}
 
@@ -261,7 +273,7 @@ Content Hub上的![配置UI品牌](assets/configuration-ui-branding-updates.png)
 
 ### 演绎版 {#renditions-content-hub}
 
-演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关呈现形式的更多信息。
+演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关[呈现形式的更多信息。
 
 若要禁用，请执行以下步骤：
 
