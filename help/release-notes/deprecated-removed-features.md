@@ -4,9 +4,9 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
+source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
 workflow-type: tm+mt
-source-wordcount: '3028'
+source-wordcount: '3039'
 ht-degree: 71%
 
 ---
@@ -428,41 +428,65 @@ Cloud Service不支持Logback，请删除它的所有用法。 如果您正在�
 
 可在[此位置](/help/implementing/deploying/configuring-osgi.md)找到有关 OSGI 配置的其他信息。
 
-### 已弃用的OSGi属性（不再可修改的属性） {#deprecated-osgi-properties}
+### 已弃用的OSGi属性（即将不可修改） {#deprecated-unmodifiable-osgi-properties}
 
-无法再修改以下OSGi组件PID的某些属性。 这将在下面描述的时间范围内执行。
+以下OSGi组件PID的属性已被弃用，应在实施日期之前停止使用。
 
 | **OSGI组件ID** | **不可修改的属性** | **弃用** | **强制** |
 |---|---|---|---|
 | **`org.apache.sling.commons.log.LogManager`** | 全部 | 4/24/25 | 2025年8月31日（配置在6月被忽略） |
 | **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file， org.apache.sling.commons.log.pattern | 4/24/25 | 2025年8月31日（配置在6月被忽略） |
-| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | 全部 | 2024 | 8/31/25 |
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | 全部 | 2024 |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | 全部 | 2024 | 8/31/25 |
-| **`org.apache.felix.http (Factory)`** | 全部 | 2024 | 8/31/25 |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 全部 | 2024 | 8/31/25 |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | 全部 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | 全部 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.impl`** | 全部 | 6/3/25 | 8/31/25 |
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 全部 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | 全部 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | 全部 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | 全部 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | 全部 | 6/3/25 | 8/31/25 |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | 全部 | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | 全部 | 6/3/25 | 8/31/25 |
-| **`org.apache.sling.feature.apiregions.factory`** | 全部 | 6/3/25 | 8/31/25 |
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | 全部 | 6/3/25 | 8/31/25 |
 
-<!--
-### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+### 不可修改的OSGi属性 {#unmodifiable-osgi-properties}
 
-Properties for the following OSGi component PIDs cannot be modified, as described below.
--->
+无法修改以下OSGi组件PID的属性，如下所述。
+
+| **OSGI组件ID** | **不可修改的属性** |
+|---|---|
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | 全部 |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | 全部 |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | 全部 |
+| **`org.apache.sling.feature.apiregions.impl`** | 全部 |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | 全部 |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | 全部 |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | 全部 |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | 全部 |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | 全部 |
+| **`org.apache.sling.feature.apiregions.factory`** | 全部 |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | 全部 |
+
+
+### 将来强制实施的OSGi属性限制 {#future-restrictions-osgi-properties}
+
+将来，Adobe将强制实施以下OSGi属性限制，以便停止使用。
+
+| OSGi组件PID |   | 必填 | 类型 | 限制（如果适用） |
+|---|---|---|---|---|
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 字符串 |   |
+|   | `smtp.port` | 是 | 整数 | “465”、“587”或“25” |
+|   | `smtp.user` |   | 字符串 |   |
+|   | `smtp.password` |   | 字符串 |   |
+|   | `from.address` |   | 字符串 |   |
+|   | `smtp.ssl` |   | 字符串 |   |
+|   | `smtp.starttls` |   | 布尔型 |   |
+|   | `smtp.requiretls` |   | 布尔型 |   |
+|   | `debug.email` |   | 布尔型 |   |
+|   | `oauth.flow` |   | 布尔型 |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 是 | 字符串 | “INFO”、“DEBUG”或“TRACE” |
+|   | `org.apache.sling.commons.log.names` |   | 字符串数组 |   |
+|   | `org.apache.sling.commons.log.additiv` |   | 布尔型 |   |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 否 | 字符串[] |   |
+|   | `externalizer.encodedpath` | 否 | 布尔型 |   |
+|   | `externalizer.host` | 否 | 字符串 |   |
+|   | `externalizer.contextpath` | 否 | 字符串 |   |
 
 ### OSGi属性限制 {#restrictions-osgi-properties}
 
-某些OSGi属性的值限制为以下所述的规则。
+这些OSGi属性的值仅限于下面描述的规则。
 
 | OSGi组件PID |   | 必填 | 类型 | 限制（如果适用） |
 |---|---|---|---|---|
@@ -504,19 +528,6 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 |   | `org.apache.felix.http.session.uniqueid` |   | 布尔型 |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | 是 | 整数 | >= 2048 |
 |   | `org.apache.sling.scripting.cache.additional_extensions` | 是 | 字符串数组 | 必须包含“js” |
-| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 字符串 |   |
-|   | `smtp.port` | 是 | 整数 | “465”、“587”或“25” |
-|   | `smtp.user` |   | 字符串 |   |
-|   | `smtp.password` |   | 字符串 |   |
-|   | `from.address` |   | 字符串 |   |
-|   | `smtp.ssl` |   | 字符串 |   |
-|   | `smtp.starttls` |   | 布尔型 |   |
-|   | `smtp.requiretls` |   | 布尔型 |   |
-|   | `debug.email` |   | 布尔型 |   |
-|   | `oauth.flow` |   | 布尔型 |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 是 | 字符串 | “INFO”、“DEBUG”或“TRACE” |
-|   | `org.apache.sling.commons.log.names` |   | 字符串数组 |   |
-|   | `org.apache.sling.commons.log.additiv` |   | 布尔型 |   |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 否 | 字符串 |   |
 |   | `request.log.outputtype` | 否 | 字符串 |   |
 |   | `request.log.entry.format` | 否 | 字符串 |   |
@@ -531,10 +542,6 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 |   | `servletresolver.defaultExtensions` | 否 | 字符串 |   |
 |   | `servletresolver.mountProviders` | 否 | 布尔型 |   |
 |   | `servletresolver.scriptUser` | 否 | 字符串 | 已弃用，请勿使用 |
-| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 否 | 字符串[] |   |
-|   | `externalizer.encodedpath` | 否 | 布尔型 |   |
-|   | `externalizer.host` | 否 | 字符串 |   |
-|   | `externalizer.contextpath` | 否 | 字符串 |   |
 
 ## Java 运行时更新至版本 21 {#java-runtime-update-21}
 
