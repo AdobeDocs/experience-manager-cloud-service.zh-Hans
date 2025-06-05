@@ -3,9 +3,9 @@ title: Content Hub 概述
 description: 了解有关 Content Hub 的更多信息、其主要优势、如何访问它以及如何围绕 Content Hub 中的可用选项提供反馈。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: f728e29110808b6b5a8181120086ab82349c9835
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Content Hub 允许您使用 Adobe Express 创建新内容（如果您有 Adobe E
 
 [!DNL Content Hub] 提供了对资产的宝贵见解，解决了营销利益相关者经常遇到的共同挑战——营销活动、渠道和不同地区使用的资产使用情况统计数据。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
 
-## Content Hub演示 {#content-hub-demo}
+## Content Hub 演示 {#content-hub-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459547)
 
