@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
+source-git-commit: f01e5f505074ea32f313ba781ddb4e026cd47888
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 30%
@@ -41,7 +41,7 @@ ht-degree: 30%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -247,7 +247,7 @@ Edge计算允许您在CDN层执行JavaScript，使数据处理更接近于最终
 
 我们为实时生产站点的AEM Publish Delivery或Edge Delivery Services项目提供的机会有限。 如果您有兴趣参与或想了解更多信息，请发送电子邮件至[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，并提供您用例的简短描述。
 
-### Edge Delivery Services的CDN配置(Beta项目) {#cdn-eds-beta}
+### Edge Delivery Services (Beta计划)的CDN配置 {#cdn-eds-beta}
 
 Adobe-Managed CDN提供了灵活的配置选项，如[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
 
