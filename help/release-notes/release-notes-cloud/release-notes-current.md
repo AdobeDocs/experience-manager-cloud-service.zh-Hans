@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 99%
+source-wordcount: '2067'
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,8 @@ ht-degree: 99%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.4.0) 的发布日期为 2025 年 4 月 24 日。下一个功能版本 (2025.5.0) 计划于 2025 年 6 月 5 日发布。
+
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.5.0)的发布日期是2025年6月5日。 下一个功能版本(2025.6.0)计划于2025年6月26日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -40,52 +41,80 @@ ht-degree: 99%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Experience Manager Sites 的新增功能 {#enhancements-sites}
-
-**新的内容片段模型管理用户界面**
-
-进一步完善了使用 AEM 内容片段时的新客户端用户界面的列表，现在为内容片段模型提供一个新的管理用户界面。新的用户界面提供了一个简洁、现代的列表视图，允许使用过滤器搜索模型，并显示模型标记以及存在哪些基于特定模型的内容片段。文档请参见[这里](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)。
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media (Scene7) {#dynamic-media-scene7}
+**AI生成的元数据**
 
-**增强安全性环境不支持 Dynamic Media (Scene7)**
+AEM Assets现在使用[AI自动生成元数据，包括标题、描述和关键字](/help/assets/metadata-assets-view.md#ai-smart-tags)。 这些AI生成的字段可提高元数据的准确性，使资源更易于搜索、分类和推荐。 此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。
 
-AEM as a Cloud Service 上的 Dynamic Media (Scene7) 没有为 HIPAA 做好准备，不能在启用了增强安全性的 AEM 环境中使用。
+![AI生成的元数据](/help/assets/assets/enhanced-smart-tags.png)
 
-从 2025 年 4 月 AEM as a Cloud Service 发布开始，一项技术限制阻止了在启用了增强安全性的环境中配置 Dynamic Media (Scene7)。因此，**工具** > **云服务**&#x200B;中的&#x200B;**动态媒体配置**&#x200B;卡在这些环境中不再显示。
+**与Figma集成**
 
-此外，使用 AEM 6.5 的客户应注意 Dynamic Media (Scene7) 堆栈没有为 HIPAA 做好准备。
+AEM Assets与Figma原生集成，允许设计人员从Figma用户界面中直接访问AEM Assets中存储的资源。 您可以将AEM Assets中管理的内容放在Figma画布中，然后在AEM Assets存储库中保存新内容或编辑的内容。
 
-### Dynamic Media Classic {#dynamic-media-classic}
-
-**报告**
-
-自 2025 年 4 月起，不再支持 Dynamic Media Classic 报告仪表板中的带宽选项卡。
-
-请参阅[带宽和存储、报告类型](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)。
+![与Figma集成](/help/assets/assets/figma-integration.png)
 
 
-## Assets 视图中的新增功能 {#new-features-assets-view}
+### Content Hub中的新增功能 {#new-features-content-hub}
 
-**资产关系**
+**基于属性的访问控制(ABAC)**
 
-资产视图现在支持在简化的资产详细信息面板中查看和编辑资产关系。在内容中轻松添加来源和衍生等关系，以便用户可以更有效地找到相关的主要内容。
+Content Hub现在允许您应用基于规则的限制来访问资源。 资源权限可确保治理，还可确保用户只能访问相关的资源。
 
-![资产关系示例](/help/assets/assets/asset-relations-example.png)
+资源限制规则基于元数据，如果规则中定义的条件与资源元数据匹配，则资源将向用户组显示。
 
-**比较资产的版本**
+基于属性的访问控制的一些主要优势包括：
 
-现在，您可以使用 Assets 视图快速选择资产的任何版本并将其与其最新版本进行比较。
+* 消除权限对文件夹结构的依赖性
 
-![比较资产的版本](/help/assets/assets/version-compare2.png)
+* 允许管理员上传资源并追溯确定权限结构
+
+* 减少重复项数量 — 提高资源完整性。 当同一资产与不同组共享时，基于文件夹的权限需要重复项。
+
+**UI品牌**
+
+Content Hub现在允许管理员使用品牌特定的元素自定义用户界面，这些元素包括横幅图像、横幅标题和正文文本以及主要颜色和次要颜色。 这些增强功能有助于确保品牌一致性、简化用户登录和建立信任。
+
+![UI品牌](/help/assets/assets/content-hub-ui-branding.png)
+
+**公共链接共享**
+
+Content Hub现在支持生成可共享链接，以允许没有应用程序访问权限的外部用户查看资源元数据或下载资源。
+
+![UI品牌](/help/assets/assets/public-and-private-link.png)
+
+**收藏集管理**
+
+Content Hub现在允许您在创建过程中控制对收藏集的访问，确保只有授权用户可以查看或管理分组的资源。 它可确保改进的安全性、更好的协作、有条理的资产管理和简化的治理。
+
+![收藏集管理](/help/assets/assets/collection-permissions.png)
+
+>[!NOTE]
+>
+>收藏集治理是一项受限制的可用性功能。 您可以通过创建支持票证来启用它。
+
+**以ZIP格式下载多个资产**
+
+Content Hub现在还允许您以ZIP文件格式下载所选资源及其演绎版，而不是作为单独的文件来简化文件管理。
+
+在Content Hub中&#x200B;**Dynamic Media演绎版**
+
+直接在Content Hub用户界面中访问所有Dynamic Media预设呈现版本和智能裁剪以供下载。
+
+![&#x200B;Dynamic Media演绎版](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Dynamic Media中的新增功能 {#new-features-dynamic-media}
+
+**Dynamic Media与AJO B2C的本机集成&#x200B;**
+
+Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
+
+![&#x200B;Dynamic Media演绎版](/help/assets/assets/dm-ajo-integration.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,7 +125,7 @@ AEM as a Cloud Service 上的 Dynamic Media (Scene7) 没有为 HIPAA 做好准�
 * [SharePoint 文档库 - 使用原始文件名保存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：现在，您可以选择使用表单附件的原始文件名将其保存在 SharePoint 文档库中。此增强功能简化了上传文件的识别和管理。
 
 * **规则编辑器**：
-   * [“When”子句中带有点击事件的二进制条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：规则编辑器现在允许您在“When”子句中将按钮点击事件（_Is Clicked_）与其他条件相结合。这样就可以根据用户交互和其他因素更精确地控制规则的执行。注意：如果使用多个条件，点击事件必须是列出的第一个条件。
+   * [“When”子句中带有单击事件的二进制条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：规则编辑器现在允许您在“When”子句中将按钮单击事件（_Is Clicked_）与其他条件相结合。这样就可以根据用户交互和其他因素更精确地控制规则的执行。注意：如果使用多个条件，单击事件必须是列出的第一个条件。
    * [字段和面板的验证条件](/help/forms/rule-editor-core-components-usecases.md)：规则编辑器现在包括 _IsValid_ 和 _IsNotValid_ 两个条件。这些条件允许您检查特定字段或整个面板（包括水平选项卡、垂直选项卡、可折叠项和向导等布局方法）的验证状态，从而根据验证结果改善表单导航和用户体验。
 * [改进了 SharePoint 列表的范围管理](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint 网站现在支持所有管理路径，例如 /sites 和 /teams。这一增强功能有助于更加广泛地集成不同的 SharePoint 网站结构，为连接组织内容提供了更大的灵活性。
 * [支持将记录文档保存到 SharePoint 列表](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：使用基于 SharePoint 列表的表单数据模型 (FDM) 创建的表单现在可以通过配置记录文档绑定引用字段属性将记录文档 (DoR) 保存到 SharePoint 列表。此增强功能可将受支持的表单数据和文档与 SharePoint 存储无缝集成。
@@ -111,94 +140,126 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 Forms 与 AEP 的集成功能现在可供早期采用者使用。
 
-## CIF 加载项 {#cloud-services-cif}
-
-### 增强功能 {#enhancements-cif}
-
-* 为 CIF 产品引用数据类型添加产品变体选择
-* [实验]：PDP 中 CIF 核心组件的 JSON+LD。
-* [实验]：CIF 清除缓存的能力
-
-### 错误修复 {#bug-fixes-cif}
-
-* 修复产品字段中的搜索问题
-* 产品 URL 格式对于 #variant_sku 不按预期工作
-* 无法向产品列表组件添加超过 20 个 SKU
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 基于 OpenAPI 的 API {#open-apis}
+### 更新了弃用流程 {#updated-deprecation-process}
 
-开发人员可以将 AEM as Cloud Service 功能深度集成到他们自己的应用程序和工具中。新的 AEM as a Cloud Service API 遵循 OpenAPI 规范，目标是保持一致、记录良好且用户友好。需要身份验证的端点的凭据通过创建 Adobe Developer Console 项目生成，支持 OAuth 服务器到服务器、网页应用程序和单页面应用程序 (SPA)。
+Adobe会定期审查功能、库、API和配置，以确保它们符合性能、安全性和价值标准。 当功能不再符合这些标准时，将标记它们以供弃用，并且必须在指定的删除日期之前停止使用。 在此日期之前，Adobe将通过电子邮件通知提醒客户，以及在继续使用或部署新内部版本之前需要在Cloud Manager中执行的操作。 如果未能采取必要措施，可能会导致无法升级到新版本的AEM，进而可能对安全性、性能、可靠性和可用性造成影响。
 
-[请参阅](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis)基于 OpenAPI 的 API[的完整列表了解详情](/help/implementing/developing/open-api-based-apis.md)，并尝试[端到端教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)了解配置和使用方法。
+有关详细信息，请参阅[弃用文章](/help/release-notes/deprecated-removed-features.md)。
 
-观看此视频以了解如何配置经过身份验证的 API，以便以后使用：
+#### 已弃用的Java API和OSGi配置接近删除日期 {#deprecated-near-removals}
 
->[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+展开以下列表以查看不再使用的已弃用API和OSGi配置。 有关完整的详细信息（包括删除时间线），请参阅弃用文章。
 
-### 与域映射相关的增强功能 {#cdn-enhancements}
+<details>
+  <summary>展开以查看弃用项</summary>
 
-Adobe 管理的 CDN 提供灵活的配置选项，如这篇[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。以下是一些最新功能：
+Java API：
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
-#### 在 CDN 日志中包含其他属性 {#props-in-cdnlogs}
+OSGi属性：
 
-这对于包括纠错调试和数据分析在内的场景很有用，您可以通过在[请求和响应变换](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)中设置 `logProperty` 操作，在 CDN 日志中包含超出默认属性的更多信息。
+* `org.apache.sling.commons.log.LogManager` （所有属性）
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`， `org.apache.sling.commons.log.pattern`)
 
-#### 区域、大洲和组织属性作为匹配条件 {#matching-conditions}
+</details>
 
-CDN 规则现在可以为包括阻止流量和重定向在内的用例根据区域、大洲和组织进行匹配。`clientRegion` 和 `clientContinent` 增强已受支持的 `clientCountry`，以基于地理位置进行匹配，`clientAsName` 和 `clientAsNumber` 则匹配自治系统，以识别大型 ISP、公司或云提供商。详细了解这些[新公开的请求属性](/help/security/traffic-filter-rules-including-waf.md#condition-structure)。
+### 弃用Java 11运行时 {#java11-runtime-deprecation}
 
-#### 设置 Cookie 值 {#cookie-attributes}
+**Java 11运行时**&#x200B;现已弃用，并且大多数环境已升级到性能更高的&#x200B;**Java 21运行时**。
 
-您可以在[响应变换](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)中设置 cookie 属性。
+如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含具体的后续步骤。 请确保在&#x200B;**2025年8月28日**&#x200B;之前完成所有必需的更新，以便您的环境可以升级而不会中断。
 
-### Java 21 支持 {#java21}
+注意：运行时版本与代码的内部版本不同。 虽然我们建议使用Java 21进行构建，但目前仍支持Java 11内部版本。 未来将共享有关Java 11内部版本的单独弃用通知。
 
-从 1 月份的版本开始，您可以使用 Java 21 和 Java 17 构建代码。您可以访问模式匹配、密封类和各种性能改进等新功能。有关配置步骤（包括更新 Maven 项目和库版本），请参阅文章[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
+### 实施AEM Java日志配置策略 {#logconfig-policy}
 
-当检测到 Java 17 或 21 版本时，会自动部署性能更高的 Java 21 **运行时**。不过，Adobe 也建议使用 Java 11 构建的环境选择 Java 21 运行时，具体方法是发送电子邮件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [ Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
+如4月发行说明中所述，AEM Java日志必须遵循标准格式，以确保在所有客户环境中进行可靠的监控。 不再支持自定义日志配置，如更改日志格式、输出文件或默认日志级别。 日志必须保持定向到默认文件，并且必须保留AEM产品代码的默认日志级别。 请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)中的完整详细信息。
 
->[!IMPORTANT]
->
-> Java 21 **运行时**&#x200B;已于 2 月份部署到您的开发/RDE 环境，它将于 **4 月 28 日和 29 日**&#x200B;应用于您的暂存/生产环境。请注意，使用 Java 21（或 Java 17）**构建代码**&#x200B;与 Java 21 运行时无关，因此您必须明确采取相应步骤来用 Java 21（或 Java 17）构建代码。
+从&#x200B;**8月底**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。 根据我们的分析，大多数客户不会受到影响，Adobe将直接联系任何其当前配置可能受到影响的客户。
 
-### 强制执行 AEM 的记录配置策略 {#logconfig-policy}
+请检查并更新依赖自定义日志记录行为的任何下游进程。 例如：
 
-为了确保有效监控客户环境，AEM Java 日志必须保持一致的格式，并且不能被自定义配置覆盖。日志输出必须一直定向到默认文件。必须为 AEM 产品代码保留默认的日志级别。但是，可以为客户开发的代码调整日志级别。
+* 如果您的日志转发系统需要自定义日志格式，您可能需要调整摄取规则。
+* 如果您之前通过更改日志级别降低了日志详细程度，请注意，恢复到默认级别可能会增加日志量。
 
-为此，不得更改以下 OSGi 属性：
-* **Apache Sling 日志配置**（PID：`org.apache.sling.commons.log.LogManager`）—*所有属性*
-* **Apache Sling 日志记录器配置**（工厂 PID：`org.apache.sling.commons.log.LogManager.factory.config`）：
-   * `org.apache.sling.commons.log.file`
-   * `org.apache.sling.commons.log.pattern`
+### 默认清除旧版本和审核日志 {#mt-defaults}
 
-5 月中旬，AEM 将强制实施一项政策，对这些属性所做的任何自定义更改都将被忽略。请检查并相应调整您的下游流程。例如，如果您使用日志转发功能：
-* 如果您的日志记录目标需要一个自定义（非默认）日志格式，您可能需要更新您的摄取规则。
-* 如果对日志级别的更改降低了日志的详细程度，请注意默认的日志级别可能会导致日志数量显著增加。
+目前，内容版本和审核日志在默认情况下禁用其关联的&#x200B;*清除维护任务*，因此除非通过它们各自的OSGi属性明确配置，否则不会删除任何数据。
 
-### AEM 日志转发至更多目标 - Beta 项目 {#log-forwarding-earlyadopter}
+但是，为优化存储库性能，从2025年6月下旬&#x200B;**开始**，默认情况下将按照以下准则启用清除：
 
-目前处于 Beta 阶段，您可以将 AEM 日志转发到 New Relic（使用 HTTPS）、Amazon S3 和 Sumo Logic。请注意，支持 AEM 日志（包括 Apache/Dispatcher），但不支持 CDN 日志。发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
+#### 内容版本 {#mt-content}
 
-虽然可以从 Cloud Manager 下载日志，但许多组织发现将这些日志流式传输到首选记录目标很有帮助。AEM 已经支持将 (GA) AEM 和 CDN 日志转发到 Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和 OpenSearch）和 Splunk。此功能以自助方式配置，并使用配置管道进行部署。
+* **新环境** (在即将到来的日期之后创建（稍后通知）
+   * 将定期删除超过&#x200B;**30天**&#x200B;的版本。
+   * 会保留过去30天内的最近五个版本，以及最新版本和当前版本，而不考虑其存在时间。
+
+* **现有环境** （在此即将到来的日期之前创建）：
+   * 将定期删除超过&#x200B;**7年**&#x200B;的版本。
+   * 过去7年内的所有版本都将保留。
+   * 此高默认阈值可防止意外删除最近的数据。 但是，建议配置较低的值以优化存储库性能。
+
+* 您可以通过OSGi配置覆盖来修改这些默认值。
+
+#### 审核日志 {#mt-auditlogs}
+
+* **新环境**（在即将到来的日期之后创建，将单独通知）：
+   * 将定期删除超过&#x200B;**7天**&#x200B;的复制、DAM和页面审核日志。
+   * 默认情况下，将记录所有事件。
+
+* **现有环境** （在此即将到来的日期之前创建）：
+   * 将定期删除超过&#x200B;**7年**&#x200B;的复制、DAM和页面审核日志。
+   * 默认情况下，将记录所有事件。
+   * 此高默认阈值可防止意外删除最近的数据。 但是，建议配置较低的值以优化存储库性能。
+
+* 您可以通过OSGi配置覆盖来修改这些默认值。
+
+有关更多详细信息，请参阅[维护任务文章](/help/operations/maintenance.md#default)。
+
+### Edge计算(Alpha计划) {#edge-computing}
+
+Edge计算允许您在CDN层执行JavaScript，使数据处理更接近于最终用户。 这减少了延迟，并可在边缘实现响应式动态体验。
+
+常见的用例包括：
+
+* 在授予对内容的访问权限之前，使用身份提供程序验证用户
+* 根据地理位置、设备类型或用户属性个性化内容
+* 充当CDN与您的来源之间的中间件
+* 在将来自第三方API的响应交付给浏览器之前，重新设置响应格式（可能聚合多个API响应）
+* 使用从各种后端拼合的内容，在边缘构成并提供服务器渲染的HTML
+
+我们为实时生产站点的AEM Publish Delivery或Edge Delivery Services项目提供的机会有限。 如果您有兴趣参与或想了解更多信息，请发送电子邮件至[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，并提供您用例的简短描述。
+
+### Edge Delivery Services的CDN配置(Beta项目) {#cdn-eds-beta}
+
+Adobe-Managed CDN提供了灵活的配置选项，如[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
+
+现在在Beta版中，为包括CDN源选择器、响应和请求转换等功能部署配置管道。 请联系[aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)以了解您的用例的详细信息。
+
+### AEM日志转发到更多目标(Beta程序) {#log-forwarding-beta}
+
+虽然可以从 Cloud Manager 下载日志，但许多组织发现将这些日志流式传输到首选记录目标很有帮助。AEM已支持AEM和CDN将日志转发到Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和OpenSearch）以及Splunk。 此功能以自助方式配置，并使用配置管道进行部署。
+
+现在处于Beta阶段，您可以将AEM日志转发到Amazon S3、Sumo Logic和您自己的New Relic帐户(而不是Adobe提供的帐户)。 请注意，这些日志记录目标支持AEM日志(包括Apache/Dispatcher)，但CDN日志不支持。 发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
 
 更多信息请参阅[日志转发文档](/help/implementing/developing/introduction/log-forwarding.md)。
-
-### Edge 计算 - 请求反馈！ {#edge-computing-feedback}
-
-Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Adobe 希望了解您是否认为这项技术对 AEM Publish Delivery 和 Edge Delivery Services 项目有用。此外，请告诉我们您设想将其用于哪些用途，以便为产品路线图提供意见。
-
-一些可能的用例：
-
-* 使用 IdP 进行身份验证以控制内容访问权限
-* 根据地理位置、设备类型、用户属性等呈现动态内容，从而进行个性化。
-* 高级图像操作
-* CDN 和来源之间的中间件
-* 浏览器和第三方 API 之间的一层，可能用于重新格式化 API 响应
-* 聚合多个来源的数据，使客户端浏览器更容易呈现它
-
-请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，欢迎提问并发表评论！
 
 ## [!DNL Experience Manager] Guides {#guides}
 
