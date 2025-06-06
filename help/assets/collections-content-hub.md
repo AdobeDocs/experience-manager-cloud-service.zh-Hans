@@ -48,6 +48,7 @@ ht-degree: 10%
         </td>
     </tr>
 </table>
+
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![管理收藏集](assets/manage-collection.png)
 
