@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 57%
+source-wordcount: '954'
+ht-degree: 55%
 
 ---
 
@@ -59,15 +59,6 @@ AEM as a Cloud Service中Cloud Manager 2025.6.0的发布日期是2025年6月5日
 目前提供以下早期采用者机会：
 
 
-### 管理访问令牌{#manage-access-tokens}
-
-在Cloud Manager中使用&#x200B;**管理访问令牌**&#x200B;查看、重命名和删除与外部自带Git存储库（例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）关联的访问令牌。
-
-查看[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-
-如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至与Adobe ID关联的电子邮件地址。
-
-
 ### 专用测试环境 {#specialized-test-environment}
 
 Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**&#x200B;的新环境类型。 此环境旨在帮助团队在接近生产的情况下验证功能，然后再上线。 此环境类型不同于&#x200B;*生产+暂存*、*开发*&#x200B;或&#x200B;*快速开发*&#x200B;环境，并为运行高级验证方案提供了集中的空间。
@@ -79,7 +70,7 @@ Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**
 如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)发送电子邮件。
 
 
-### 自带 Git - 现支持 Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### 自带Git (BYOG) — 现在支持Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -97,7 +88,7 @@ Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
 
-#### 关于自带 Git 的常见问题解答
+**有关BYOG的常见问题解答**
 
 | 问题 | 解答 |
 |---|---|
@@ -107,11 +98,20 @@ Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**
 | *所有 GitLab 存储库 URL 都有效吗？使用的存储库 URL 采用此格式 `https://gitlab_dedicated_url.com/path/repo-name.git`，这与文档中的示例不同。* | 是的，任何支持 API V3 或 V4 的 GitLab 存储库都受支持，包括自托管的 GitLab URL，例如[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)中描述的存储库（`https://git-vendor-name.com/org-name/repo-name.git`）。 |
 
 
+#### 管理访问令牌{#manage-access-tokens}
+
+在Cloud Manager中使用&#x200B;**管理访问令牌**&#x200B;查看、重命名和删除与外部BYOG存储库（例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）关联的访问令牌。
+
+请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)发送电子邮件。
+
+
 ### 添加 Edge Delivery 配置管道 {#add-eds-pipeline}
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在添加管道下拉列表中添加Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**项目概述**&#x200B;页面，**管道**&#x200B;信息卡添加Edge Delivery管道。*
+![在添加管道下拉列表中添加Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**项目概述**页面，**管道**信息卡添加Edge Delivery管道。*
 
 ![添加Edge Delivery管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加Edge Delivery管道对话框。*
 
