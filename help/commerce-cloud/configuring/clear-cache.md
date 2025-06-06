@@ -4,9 +4,9 @@ description: 了解如何在AEM CIF中启用和验证clear-cache功能。
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
+source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # 组件和GraphQL清除缓存 {#clear-cache}
 
 本文档提供了有关在AEM CIF中启用和验证clear-cache功能的综合指南。
+
+>[!NOTE]
+>
+> 此功能属于实验性质。
 
 ## 在CIF配置中启用清除缓存功能 {#enable-clear-cache}
 
@@ -27,10 +31,9 @@ ht-degree: 2%
 * 通过在项目中添加`com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`配置，使侦听器能够清除AEM的每个实例（发布和创作）的缓存，如[此处](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)所示。
    * 应为创作实例和发布实例启用配置。
    * 启用Dispatcher缓存（可选）：您可以通过在上述配置中将`enableDispatcherCacheInvalidation`属性设置为true来启用Dispatcher清除缓存设置。 这提供了从Dispatcher清除缓存的功能。
-
-  >[!NOTE]
-  >
-  > 这仅适用于发布实例。
+     >[!NOTE]
+     >
+     > 这仅适用于发布实例。
 
    * 此外，请确保提供适合您的产品、类别和CMS页面的相应模式，并将其添加到上述配置文件中，以便将其从Dispatcher缓存中删除。
 
@@ -60,7 +63,6 @@ ht-degree: 2%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 如果一切顺利，新变化将反映在所有实例中。 如果更改未反映在发布实例中，请在专用窗口中查看相应的PLP和PDP页面。
 
 >[!NOTE]
@@ -98,7 +100,6 @@ ht-degree: 2%
 | 属性 | 值 | 类型（数组/字符串/布尔值） | 这将清除Dispatcher缓存吗？ | 注释 |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | 需要从中删除缓存的站点路径的对应值（示例： `/content/venia/us/en`作为对Venia项目的引用）。 | 字符串 | 是 | 需要以`invalidateType.`的组合提供此值 |
-
 
 ### 示例API请求
 
