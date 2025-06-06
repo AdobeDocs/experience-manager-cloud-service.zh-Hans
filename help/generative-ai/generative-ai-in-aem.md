@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的生成式 
 feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
-source-git-commit: df463616bcc85fc0065fb708e69d4f7bd5bac131
-workflow-type: ht
-source-wordcount: '292'
-ht-degree: 100%
+source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 83%
 
 ---
 
@@ -37,6 +37,10 @@ Adobe Experience Manager（AEM）as a Cloud Service 的 Adobe 生成式 AI 使�
 * [Content Hub 概述](/help/assets/product-overview.md)
 
   Content Hub 允许您使用 Adobe Express 创建新内容（如果您有 Adobe Express 权限）。您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
+
+* [AI生成的智能标记](/help/assets/metadata-assets-view.md#ai-smart-tags)
+
+  对于数字Assets，您可以使用AI自动分配描述性标记，而不是依赖手动输入。 这些AI生成的标记可提升元数据质量，使资产更容易搜索、分类和推荐。 此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)

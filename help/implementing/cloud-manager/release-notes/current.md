@@ -4,7 +4,7 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
+source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 57%
@@ -72,7 +72,7 @@ AEM as a Cloud Service中Cloud Manager 2025.6.0的发布日期是2025年6月5日
 
 Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**&#x200B;的新环境类型。 此环境旨在帮助团队在接近生产的情况下验证功能，然后再上线。 此环境类型不同于&#x200B;*生产+暂存*、*开发*&#x200B;或&#x200B;*快速开发*&#x200B;环境，并为运行高级验证方案提供了集中的空间。
 
-请参阅[添加专用测试环境](/help/implementing/cloud-manager/specialized-test-environment.md)。
+请参阅[添加专门的测试环境](/help/implementing/cloud-manager/specialized-test-environment.md)。
 
 ![已选中“专用测试环境”单选按钮的“添加环境”对话框](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
@@ -111,7 +111,7 @@ Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在添加管道下拉列表中添加Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**项目概述**&#x200B;页面，**管道**&#x200B;信息卡添加Edge Delivery管道。*
+![在添加管道下拉列表中添加Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**项目概述**页面，**管道**信息卡添加Edge Delivery管道。*
 
 ![添加Edge Delivery管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加Edge Delivery管道对话框。*
 

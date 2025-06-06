@@ -2,9 +2,9 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
+source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2110'
 ht-degree: 14%
 
 ---
@@ -113,9 +113,7 @@ ht-degree: 14%
 
 * [自定义链接](#configure-custom-links-content-hub)
 
-* [收藏集管理](#configure-collections-content-hub)
-
-* [启用公共链接共享](#enable-public-link-sharing)
+* [收藏集和共享](#configure-collections-sharing-content-hub)
 
 ### 导入 {#configure-import-options-content-hub}
 
@@ -201,7 +199,7 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**资产卡**。
 2. 单击&#x200B;**添加元数据**。 显示&#x200B;**添加资源卡元数据**&#x200B;对话框。
 3. 在&#x200B;**标签**&#x200B;字段中指定元数据名称，并在&#x200B;**元数据**&#x200B;字段中选择元数据属性。
-4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**&#x200B;以应用更改，以便新属性显示在资源详细信息页面上。
+4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**以应用更改，以便新属性显示在资源详细信息页面上。
    ![资产卡](/help/assets/assets/asset-card.png)
 
 同样，单击每个可用属性旁边可用的![编辑](/help/assets/assets/edit-content-hub.svg)以进行任何必需的修改，或单击![删除](/help/assets/assets/delete-content-hub.svg)删除任何现有的元数据属性。 完成所有修改后单击&#x200B;**保存**&#x200B;以应用更改。
@@ -216,7 +214,7 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改，以便新的元数据属性显示在元数据字段列表中。
 
-同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
+同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
 在Content Hub上![配置UI搜索](assets/configuration-ui-metadata-search.png)
 
 ### 品牌化 {#configure-branding-content-hub}
@@ -238,8 +236,8 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 
 #### 将标题和正文文本添加到横幅并更改文本颜色{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**&#x200B;部分中的相应字段将标题和正文添加到横幅中。
-单击&#x200B;**[!UICONTROL 横幅文本颜色]**&#x200B;旁边的方框可从横幅文本的拾色器中选择文本颜色，或在拾色器方框旁边的字段中指定颜色的十六进制代码。
+在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**部分中的相应字段将标题和正文添加到横幅中。
+单击**[!UICONTROL 横幅文本颜色]**&#x200B;旁边的方框可从横幅文本的拾色器中选择文本颜色，或在拾色器方框旁边的字段中指定颜色的十六进制代码。
 
 #### 更改主颜色和次颜色{#Change-the-primary-and-secondary-color}
 
@@ -277,7 +275,7 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 
 ### 演绎版 {#renditions-content-hub}
 
-演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关呈现形式的更多信息。
+演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关[呈现形式的更多信息。
 
 若要禁用，请执行以下步骤：
 
@@ -313,9 +311,9 @@ Content Hub上的![配置UI自定义链接](assets/configuration-ui-custom-links
 
 ![Content Hub上的配置UI自定义链接选项卡](assets/configuration-ui-custom-link-tab.png)
 
-### 收藏集管理 {#configure-collections-content-hub}
+### 收藏集和共享 {#configure-collections-sharing-content-hub}
 
-管理员可以在创建收藏集时定义用户权限。 要启用这些设置，请执行以下步骤：
+管理员可以在创建收藏集时定义用户权限，并允许Content Hub用户生成公共链接。 要启用这些设置，请执行以下步骤：
 
 1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 收藏集和共享]**。
 
@@ -323,18 +321,11 @@ Content Hub上的![配置UI自定义链接](assets/configuration-ui-custom-links
 
 1. 启用&#x200B;**[!UICONTROL 公共收藏集]**&#x200B;切换功能，以允许所有人都可以访问和编辑收藏集。
 
+1. 启用&#x200B;**[!UICONTROL 启用公共链接]**&#x200B;切换功能，让Content Hub用户生成公共链接。
+
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
-   Content Hub上的![配置集合选项卡](assets/configuration-collections-tab.png)
+   Content Hub上的![配置集合选项卡](assets/collections-link-sharing.png)
 
-### 启用公共链接共享 {#enable-public-link-sharing}
 
-在“配置”用户界面中启用以下设置，以允许Content Hub用户生成公共链接：
-
-1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 收藏集和共享]**。
-
-1. 启用&#x200B;**[!UICONTROL 启用公共链接]**&#x200B;切换功能，然后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
-
-   ![在Content Hub中启用公共链接共享](assets/enable-public-link-sharing-tab.png)
-
-了解有关[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资产的更多信息。
+   有关收藏集和共享资源的详细信息，请参阅[在Content Hub中管理收藏集](/help/assets/collections-content-hub.md)和[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资源。
