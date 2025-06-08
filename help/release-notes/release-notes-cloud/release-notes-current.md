@@ -104,7 +104,7 @@ Content Hub现在还允许您[将所选资源及其演绎版](/help/assets/downl
 
 在Content Hub中&#x200B;**Dynamic Media演绎版**
 
-直接在Content Hub用户界面](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有[Dynamic Media预设演绎版和智能裁剪以供下载。
+直接在Content Hub用户界面[&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有Dynamic Media预设演绎版和智能裁剪以供下载。
 
 ![&#x200B;Dynamic Media演绎版](/help/assets/assets/dm-renditions-content-hub.png)
 
