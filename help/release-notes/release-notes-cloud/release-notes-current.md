@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
+source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 30%
+source-wordcount: '2062'
+ht-degree: 31%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 30%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets与Figma原生集成，允许设计人员从Figma用户界面中直接
 
 **基于属性的访问控制(ABAC)**
 
-Content Hub现在允许您应用基于规则的限制来访问资源。 资源权限可确保治理，还可确保用户只能访问相关的资源。
+[Content Hub现在允许您应用基于规则的限制来访问资源](/help/assets/attribute-based-access-control.md)。 资源权限可确保治理，还可确保用户只能访问相关的资源。
 
 资源限制规则基于元数据，如果规则中定义的条件与资源元数据匹配，则资源将向用户组显示。
 
@@ -78,21 +78,21 @@ Content Hub现在允许您应用基于规则的限制来访问资源。 资源�
 
 **UI品牌**
 
-Content Hub现在允许管理员使用品牌特定的元素自定义用户界面，这些元素包括横幅图像、横幅标题和正文文本以及主要颜色和次要颜色。 这些增强功能有助于确保品牌一致性、简化用户登录和建立信任。
+Content Hub现在允许管理员[使用特定于品牌的元素](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)自定义用户界面，这些元素包括横幅图像、横幅标题和正文文本以及主要颜色和次要颜色。 这些增强功能有助于确保品牌一致性、简化用户登录和建立信任。
 
 ![UI品牌](/help/assets/assets/content-hub-ui-branding.png)
 
 **公共链接共享**
 
-Content Hub现在支持生成可共享链接，以允许没有应用程序访问权限的外部用户查看资源元数据或下载资源。
+Content Hub现在支持[生成可共享链接，以允许没有应用程序访问权限的外部用户](/help/assets/share-assets-content-hub.md##share-assets)查看资源元数据或下载资源。
 
 ![UI品牌](/help/assets/assets/public-and-private-link.png)
 
 **收藏集管理**
 
-Content Hub现在允许您在创建过程中控制对收藏集的访问，确保只有授权用户可以查看或管理分组的资源。 它可确保改进的安全性、更好的协作、有条理的资产管理和简化的治理。
+Content Hub现在允许您[在创建过程中控制对收藏集的访问，确保只有授权用户才能查看或管理分组的资源](/help/assets/collections-content-hub.md##create-collections)。 它可确保改进的安全性、更好的协作、有条理的资产管理和简化的治理。
 
-![收藏集管理](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ Content Hub现在允许您在创建过程中控制对收藏集的访问，确保
 
 **以ZIP格式下载多个资产**
 
-Content Hub现在还允许您以ZIP文件格式下载所选资源及其演绎版，而不是作为单独的文件来简化文件管理。
+Content Hub现在还允许您[将所选资源及其演绎版](/help/assets/download-assets-content-hub.md#download-asset-renditions)下载到ZIP文件中，而不是作为单独的文件来为您简化文件管理。
 
 在Content Hub中&#x200B;**Dynamic Media演绎版**
 
-直接在Content Hub用户界面中访问所有Dynamic Media预设呈现版本和智能裁剪以供下载。
+直接在Content Hub用户界面](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有[Dynamic Media预设演绎版和智能裁剪以供下载。
 
 ![&#x200B;Dynamic Media演绎版](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Content Hub现在还允许您以ZIP文件格式下载所选资源及其演绎版
 
 **Dynamic Media与AJO B2C的本机集成&#x200B;**
 
-Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
+[Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
 
-![&#x200B;Dynamic Media演绎版](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
