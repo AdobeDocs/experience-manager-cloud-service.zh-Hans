@@ -4,10 +4,10 @@ description: 了解 [!DNL AEM Assets View]. [!DNL AEM Assets View] UI的UI可扩
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
+source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '633'
+ht-degree: 6%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 3%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 ## 在[!DNL Assets View]中查看UI扩展 {#ui-extensibility-panel-assets-view}
 
-在[!DNL Assets View]内，导航到资产、文件夹或收藏集的&#x200B;**[!UICONTROL 详细信息]**&#x200B;页面。 **[!UICONTROL 详细信息]**&#x200B;页面在专用面板上显示添加的UI扩展。
+在[!DNL Assets View]内，导航到资产、文件夹或收藏集的&#x200B;**[!UICONTROL 详细信息]**&#x200B;页面。 **[!UICONTROL 详细信息]**页面在专用面板上显示添加的UI扩展。
 ![我的工作区](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## 添加可扩展性组件的先决条件{#assets-view-ui-extensibility}
@@ -83,5 +83,13 @@ ht-degree: 3%
 1. 请参阅创建扩展中的[常见概念](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/)，了解为[!DNL AEM Assets View]开发UI扩展所需的基础。
 1. 将自定义侧面板添加到[!DNL Assets View]界面。 主机应用程序([!DNL Assets View])管理这些面板以处理UI交互，如切换和深层链接。 扩展使用`aem/assets/details/1`扩展点来集成指定属性的自定义面板，如面板ID、标题和内容URL。 开发人员使用`getPanels()`方法注册自定义面板，并构建显示自定义内容的路由。 有关详细实施（包括API引用和代码示例），请参阅[详细信息视图](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/)。
 1. 设置您的本地环境并创建您的第一个UI扩展，以在[!DNL Assets View]中亲身体验开发UI扩展的过程。 有关更多详细信息，请参阅[AEM Assets分步查看扩展开发](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)。
-1. 使用AIO CLI设置应用程序以生成基本扩展结构和所需代码。 有关详细信息，请参阅 [!DNL AEM Assets View][&#128279;](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的代码生成。
+1. 使用AIO CLI设置应用程序以生成基本扩展结构和所需代码。 有关详细信息，请参阅 [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的[代码生成。
 1. 在本地测试您的扩展，以确保它们在部署之前可按预期工作。 在完全隔离的环境中或以部分隔离的方式运行扩展，并将扩展连接到生产[!DNL AEM Assets View]以进行测试。 有关详细信息，请参阅[疑难解答 —  [!DNL AEM Assets View] 可扩展性](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)。
+
+## 自定义Assets视图中的快速操作和操作栏 {#customize-quick-actions-and-actions-bar}
+
+您可以自定义在Assets视图中选择一个或多个资源（操作栏）时显示的操作。 Assets视图还允许您自定义在单击资源卡中的更多选项(...)时显示的操作。 有关详细信息，请参阅[浏览视图](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/)。
+
+## 在Assets视图中打开自定义对话框 {#open-custom-dialogs-assets-view}
+
+Assets视图还提供了使用所选文本打开自定义对话框的功能。 您还可以向文本添加链接。 有关详细信息，请参阅[模式API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api)。
