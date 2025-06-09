@@ -60,6 +60,7 @@ ht-degree: 2%
    * 预览和发布视频资产
 
       * 查看源视频、视频的编码呈现版本及其关联的缩略图：
+
         [预览视频](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)或[预览资源](/help/assets/dynamic-media/previewing-assets.md)
         [管理视频演绎版](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -69,6 +70,7 @@ ht-degree: 2%
    * 使用视频元数据
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
+
         [编辑视频属性](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [管理数字资源的元数据](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ ht-degree: 2%
    * 如果您使用的是第三方WCM系统，则可以将视频链接或嵌入到网页。
 
       * 使用URL集成视频：
+
         [将URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * 在网页上使用嵌入代码集成视频：
+
         [在网页上嵌入视频查看器](/help/assets/dynamic-media/embed-code.md)。
 
    * [生成视频报告](#viewing-video-reports)。
@@ -439,11 +443,11 @@ Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.2
 1. 选择Experience Manager左上角的Experience Manager徽标。 在左边栏中，单击![锤子图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL 视频报表]**。
 1. 在“视频报表”页面上，执行以下操作之一：
 
-   * 在右上角附近，选择&#x200B;**[!UICONTROL 刷新视频报告]**图标。
+   * 在右上角附近，选择&#x200B;**[!UICONTROL 刷新视频报告]**&#x200B;图标。
 仅当报表的结束日期为当天时，才能使用刷新。 此功能可确保您能够查看自上次运行报表以来发生的视频跟踪。
 
-   * 在右上角附近，选择&#x200B;**[!UICONTROL 日期选取器]**图标。
-指定要获取其视频数据的开始和结束日期范围，然后选择**[!UICONTROL 运行报表]**。
+   * 在右上角附近，选择&#x200B;**[!UICONTROL 日期选取器]**&#x200B;图标。
+指定要获取其视频数据的开始和结束日期范围，然后选择&#x200B;**[!UICONTROL 运行报表]**。
 
    “排名最前的量度”组框标识了您网站上所有&#x200B;*已发布*&#x200B;视频的各种聚合量度。
 
@@ -536,7 +540,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 |  | 评论轨道 |
 |  | 描述性音频 |
 
-支持在Dynamic Media ](/help/assets/file-format-support.md)和所有Dynamic Media视频查看器中使用的所有[视频格式（Dynamic Media *Video_360*&#x200B;查看器除外）与多个字幕和音轨一起使用。
+支持在Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic Media视频查看器中使用的所有视频格式（Dynamic Media *Video_360*&#x200B;查看器除外）与多个字幕和音轨一起使用。
 
 ### 为视频添加多个字幕和音轨 {#add-msma}
 
@@ -836,7 +840,7 @@ Dynamic Media支持通过URL修饰符将单个字幕与视频相加。 请参阅
 
 1. 要开始播放，请单击![PLay图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
 如有需要，请单击![最大化图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg)以最大化查看窗口。
-请注意页面左下角附近的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/dynamic-media/embed-code.md)。
+请注意页面左下角附近的&#x200B;**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/dynamic-media/embed-code.md)。
 1. 在预览页面的右上角附近，单击&#x200B;**[!UICONTROL 关闭]**。
 
 ### 从视频中删除字幕或音频跟踪文件
