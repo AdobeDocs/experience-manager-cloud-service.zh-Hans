@@ -3,9 +3,9 @@ title: 将资产选择器与Dynamic Media Open API集成
 description: 将资产选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '949'
 ht-degree: 9%
 
 ---
@@ -141,7 +141,7 @@ URL格式：
 
 ![动态投放URL](assets/dynamic-delivery-url.png)
 
-* **缩略图：**&#x200B;缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
 以下演绎版集可用于PDF类型资源：
 在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
 
@@ -160,7 +160,7 @@ URL格式：
 
 在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
-* **视频：**&#x200B;您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -206,6 +206,10 @@ URL格式：
 * **F**： [按升序或降序排序](#sorting)
 * **G**：取消选择
 * **H**：选择单个或多个资源
+
+>[!NOTE]
+>
+>仅当连接到创作存储库时支持文件夹，不支持带有OpenAPI存储库的Dynamic Media。
 
 >[!MORELIKETHIS]
 >
