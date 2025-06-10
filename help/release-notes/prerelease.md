@@ -25,7 +25,7 @@ Adobe Experience Manager as a Cloud Service会定期提供新功能。 [发行�
 * 作为率先采用者方案的一部分
 * 作为预发行渠道的一部分
 
-本文档介绍如何启用预发行版渠道。 通过预发行渠道可访问将在AEM的未来功能版本中引入的早期功能。 这样，您就有机会在未来版本发布之前验证新功能并规划其采用情况。 有关Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md)发行计划的详细信息，请参阅文档[AEM发行说明。
+本文档介绍如何启用预发行版渠道。 通过预发行渠道可访问将在AEM的未来功能版本中引入的早期功能。 这样，您就有机会在未来版本发布之前验证新功能并规划其采用情况。 有关Adobe Experience Manager (AEM) as a Cloud Service[&#128279;](/help/release-notes/home.md)发行计划的详细信息，请参阅文档AEM发行说明。
 
 ## 启用预发行渠道以访问和尝试即将推出的功能 {#enable-prerelease}
 
