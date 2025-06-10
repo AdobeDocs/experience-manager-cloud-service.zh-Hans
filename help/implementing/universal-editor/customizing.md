@@ -54,7 +54,7 @@ ht-degree: 8%
 
 ## 有条件地显示和隐藏属性面板中的组件 {#conditionally-hide}
 
-尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型](/help/implementing/universal-editor/field-types.md#fields)的[字段添加`condition`属性来隐藏属性面板中的组件。
+尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型[&#128279;](/help/implementing/universal-editor/field-types.md#fields)的字段添加`condition`属性来隐藏属性面板中的组件。
 
 可以使用[JsonLogic架构](https://jsonlogic.com/)定义条件。 如果条件为true，则会显示字段。 如果条件为false，则字段将隐藏。
 
