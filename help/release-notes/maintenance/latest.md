@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
+source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 49%
+source-wordcount: '380'
+ht-degree: 47%
 
 ---
 
@@ -16,82 +16,45 @@ ht-degree: 49%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 21005 {#21005}
+## 版本 21193 {#21193}
 
-以下总结了维护版本21005的持续改进，该版本于2025年5月27日公开发布。 上一个维护版本是版本 20626。
+以下总结了维护版本21193的不断改进，该版本于2025年6月10日公开发布。 上一个维护版本是版本 21005。
 
-激活 2025.5.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2025.6.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-21005}
+### 增强功能 {#enhancements-21193}
 
-* GRANITE-58927：改进了语义搜索切换功能。
-* GRANITE-58800：将Apache Commons集合更新至版本4.5.0。
-* GRANITE-58866：将Oak更新为1.80.0。
-* SKYOPS-106509：通过Java 21中的反射式访问增强了GSON兼容性。
-* SKYOPS-107761：将Sling模型Jackson导出程序更新为1.1.6。
-* SKYOPS-107813：更新至 Sling ResourceResolver 1.12.8。
+* Assets-51245：提高了触屏UI中大型文件夹列表的性能。
+* Assets-51686：改进了批量操作作业，包括更轻松的作业取消、增强的日志记录、审核下载以获取大量结果。
+* CQ-4360131：改进了OpenAPI端点的错误响应，允许API客户端接收正确的结构化错误信息。
 
-### 修复的问题 {#fixed-issues-21005}
+### 修复的问题 {#fixed-issues-21193}
 
-* CNTBF-443：修复了SearchSlingJob `EVENT_JOB_TOPIC`属性。
-* GRANITE-57853：修复了UI中的下拉列表对齐问题。
-* GRANITE-58107：通过在OAuth处理程序中禁用基于用户的面板亲和度，修复了Publish上的404错误。
-* GRANITE-58276、SLING-12755：修复了OSGi依赖项循环，这些循环可能会阻止HTL脚本引擎工厂正确启动，从而导致间歇性的服务器端渲染错误。
-* SKYOPS-105151：修复了访问包列表时的NPE。
-* SKYOPS-83910、SKYOPS-82371 — 修复了JSP编译并发问题。
+* Assets-41007：已删除的资产可以在Content Hub中保持可见。
+* Assets-50994： AemRequestEventFilter导致Jetty线程过多争用。
+* Assets-50155：触发了重复的元数据更改事件。
+* Assets-50716：在Assets列表视图中按标题排序无法按预期工作。
+* Assets-50820：确保正确拒绝对资源关系API的无效请求，并显示400错误。
+* Assets-50562：默认情况下，资源上传API会创建名称冲突版本。
+* Assets-50992： Assets API initiateUpload.json端点应返回“application/json”内容类型。
+* Assets-51322：自动移除并过期在失败作业后无限期保留的异步阻止程序。
+* Assets-51809：由于浏览器缓存，CSV编辑器未显示最近保存的更改。
+* SITES-31678：具有上下文感知引用的体验片段(XF)未在XF发布API中解析正确的语言根。
 
-#### AEM 指南 {#guides}
 
-* GUIDES-26919 ：在启用Unified Shell的情况下打开DITA映射时，编辑器会间歇性地刷新。
-* GUIDES-26282：更新或创建主题时无法关闭JCR会话连接，从而导致内存泄漏和服务停机。
-* GUIDES-26434：如果DITA内容具有Weblink但没有作用域为`external`，则本机PDF发布将无限期继续。
-* GUIDES-26516：当内容中出现错误时，原生PDF和AEM站点的发布会停止并排队等候。
-
-如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
-
-### 已知问题 {#known-issues-21005}
+### 已知问题 {#known-issues-21193}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-21005}
-
-* GRANITE-54164：从公共API中删除了`org.apache.jackrabbit.oak.plugins.blob`。
-* GRANITE-54280：从公共API中删除了`org.apache.jackrabbit.oak.cache`。
-* GRANITE-58332：在公共API中弃用`org.apache.jackrabbit.oak.plugins.memory`。
-* 已弃用适用于javascript的YUI压缩程序。
-* 已弃用[Experience Cloud安装程序自动化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)功能。
+### 已弃用的功能和 API {#deprecated-21193}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-21005}
+### 安全修复 {#security-21193}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 5 个已发现的漏洞，增强了我们对实现强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 2 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 更改通知 {#change-notice-21005}
-
-* 此版本包含以下新的产品索引版本：
-   * **damAssetLucene-12**
-
-先前索引版本的自定义版本将自动与新产品索引版本合并。请对合并版本应用进一步的自定义更新。
-
-#### 更新aem-cloud-testing-clients {#update-aem-cloud-testing-clients-21005}
-
-即将进行的更改需要将在自定义功能测试中使用的库[aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients)至少更新为版本&#x200B;**1.2.1**（推荐：最新版本1.2.9）
-
-确保您在 `it.tests/pom.xml` 中的依赖项已经升级。
-
-```xml
-<dependency>
-   <groupId>com.adobe.cq</groupId>
-   <artifactId>aem-cloud-testing-clients</artifactId>
-   <version>1.2.9</version>
-</dependency>
-```
-
-此更改需要在2025年6月15日之前执行。
-如果未更新依赖项库，则会导致“自定义功能测试”步骤中的管道失败。
-
-### 嵌入的技术 {#embedded-tech-21005}
+### 嵌入的技术 {#embedded-tech-21193}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
