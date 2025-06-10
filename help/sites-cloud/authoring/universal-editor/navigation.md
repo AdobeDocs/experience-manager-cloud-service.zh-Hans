@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1756'
 ht-degree: 28%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### Experience Manager {#experience-manager}
 
-选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)之类的工具。
+选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之类的工具。
 
 ![“全局导航”按钮](assets/global-navigation.png)
 
@@ -183,9 +183,9 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 >
 >使用热键`p`切换到预览模式或从预览模式切换。
 
-#### 打开应用程序预览 {#open-app-preview}
+#### 打开页面 {#open-page}
 
-选择打开应用程序预览图标可在自身浏览器选项卡中打开您当前编辑的页面，无需编辑即可预览您的内容。
+选择打开页面图标可在自身浏览器选项卡中打开您当前编辑的页面，无需编辑即可预览您的内容。
 
 ![打开应用程序预览](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 >
 >可以自定义应用[的预览URL](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
 
+>[!NOTE]
+>
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+
 #### 发布 {#publish}
 
 选择“发布”按钮，以便将更改发布到实时内容以供读者使用或预览环境以供审阅。
@@ -206,6 +210,10 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 >[!TIP]
 >
 >有关使用 Universal Editor 发布内容的更多信息，请参阅文档[使用 Universal Editor 发布内容](publishing.md)。
+
+>[!NOTE]
+>
+>发布按钮[可以禁用](/help/implementing/universal-editor/customizing.md#disable-publish)，因此可能不会显示在您的编辑器中。
 
 #### 省略号 {#ellipsis}
 
