@@ -4,10 +4,10 @@ description: 了解用于自定义通用编辑器的不同选项，以支持内�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 8%
+source-wordcount: '429'
+ht-degree: 6%
 
 ---
 
@@ -48,13 +48,25 @@ ht-degree: 8%
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
+## 禁用复制按钮 {#duplicate-button}
+
+某些创作工作流可能需要限制内容作者复制组件的能力。 您可以通过添加以下元数据来禁用[重复图标](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## 更改您的端点 {#custom-endpoint}
+
+如果您不希望使用由Adobe托管、但却是您自己的托管版本的通用编辑器服务，则可以在Meta标记中设置此项。 有关详细信息，请参阅文档[AEM中的通用编辑器入门](/help/implementing/universal-editor/getting-started.md##configuration-settings)。
+
 ## 筛选组件 {#filtering-components}
 
 您可以使用组件过滤器在通用编辑器中限制每个容器允许的组件。 有关详细信息，请参阅文档[筛选组件](/help/implementing/universal-editor/filtering.md)。
 
 ## 有条件地显示和隐藏属性面板中的组件 {#conditionally-hide}
 
-尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型[&#128279;](/help/implementing/universal-editor/field-types.md#fields)的字段添加`condition`属性来隐藏属性面板中的组件。
+尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型](/help/implementing/universal-editor/field-types.md#fields)的[字段添加`condition`属性来隐藏属性面板中的组件。
 
 可以使用[JsonLogic架构](https://jsonlogic.com/)定义条件。 如果条件为true，则会显示字段。 如果条件为false，则字段将隐藏。
 
