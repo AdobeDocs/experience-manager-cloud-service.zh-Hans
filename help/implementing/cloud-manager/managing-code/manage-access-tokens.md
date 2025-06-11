@@ -4,13 +4,13 @@ description: 了解如何在AEM Cloud Manager中查看、编辑和删除用于�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="率先采用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#manage-access-tokens"
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
+source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '420'
 ht-degree: 3%
 
 ---
-
 
 # 管理外部存储库的访问令牌 {#manage-access-tokens}
 
@@ -43,9 +43,9 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 ## 编辑访问令牌 {#edit-access-tokens}
 
 1. 在&#x200B;**管理访问令牌**&#x200B;对话框中，单击令牌名称右侧的![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)。
-1. 在&#x200B;**编辑访问令牌**&#x200B;对话框的&#x200B;**令牌名称**&#x200B;文本字段中，更新令牌名称。
+1. 在&#x200B;**编辑访问令牌**&#x200B;对话框中，更新&#x200B;**令牌名称**&#x200B;或&#x200B;**访问令牌**&#x200B;值，或同时更新两者。
 
-   无法编辑访问令牌密码本身。
+   如果&#x200B;**访问令牌**&#x200B;当前正在使用中，则会显示一条通知，警告您在更新后将自动重新验证所有关联的存储库。
 
    ![编辑访问令牌对话框](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
