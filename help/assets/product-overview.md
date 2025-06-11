@@ -2,10 +2,10 @@
 title: Content Hub 概述
 description: 了解有关 Content Hub 的更多信息、其主要优势、如何访问它以及如何围绕 Content Hub 中的可用选项提供反馈。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: ecbc1783e6327b7d187eba01b698948111c3a2d3
+source-git-commit: cc6c227a566c4d4fd8c9a20d1bb39020974f494f
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 97%
 
 ---
 
@@ -54,6 +54,10 @@ ht-degree: 100%
 Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在为组织及其业务合作伙伴提供对品牌内容的普及化访问。它侧重于大规模分发资产以进行激活，并创建品牌内容变体，以提高营销敏捷度。
 
 ## Content Hub 演示 {#content-hub-demo}
+
+>[!IMPORTANT]
+>
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md)和Assets as a Cloud Service包含250名Content Hub用户。 [Assets Prime](/help/assets/assets-prime.md)包含50名Content Hub用户。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
