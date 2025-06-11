@@ -1,67 +1,66 @@
 ---
-title: AEM Forms AI助手 — 提示库
-description: 收集经验证的提示模式和示例，用于在Forms管理UI、自适应Forms编辑器和通用编辑器的人工智能帮助下构建表单。
+title: AEM Forms AI 助手 - 提示词库
+description: 收集经过验证的提示词模式和示例，用于在表单管理用户界面、自适应表单编辑器和通用编辑器中使用 AI 辅助构建表单。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
-workflow-type: tm+mt
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
+workflow-type: ht
 source-wordcount: '1613'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# AEM Forms AI 助手 - 提示词库
 
-
-# AEM Forms AI助手 — 提示库
-
-可重用提示模式和常见表单构建方案的示例的集合。 您可以将这些视为可适应您特定需求的模板。 每个部分都涵盖一个特定用例，其中包含使用时机和已验证示例的指导。
+收集可重复使用的提示词模式和常见表单构建场景的示例。将它们视为可以根据您的特定需求进行调整的模板。每个部分都涵盖了一个特定的用例，并提供了何时使用该用例的指导以及经过验证的示例。
 
 >[!NOTE]
 >
-> 适用于AEM Forms的AI助手可在率先采用者项目下使用。 将您工作地址的电子邮件发送到mailto:aem-forms-ea@adobe.com以请求获取访问权限。
+> AEM Forms 的 AI 助手可在早期采用者计划中使用。请使用您的工作邮箱发送邮件至 mailto:aem-forms-ea@adobe.com，以申请访问权限。
 
 >[!IMPORTANT]
 >
-> **文档可能会发生更改**：此提示库当前正在针对产品进行测试，可能会受到更新和修订。 提示、示例和最佳实践可能会随着AEM Forms的AI助手在率先采用者项目中的不断演变而发生变化。
+> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 AEM Forms 的 AI 助手在早期采用者计划期间不断发展，提示词、示例和最佳实践可能会发生变化。
 
 ## 获得最佳结果的最佳实践
 
-要充分利用AI助手，请记住以下提示：
+为了充分利用 AI 助手，请考虑以下建议：
 
 ### 从简单开始，逐步构建
 
-从更小的、特定的命令开始（例如“为‘名字’添加文本输入”），而不是从一开始就过于复杂的多步骤请求。 此方法有助于确保准确性，并且当某些内容无法按预期工作时，还可以使其更易于故障诊断。
+一开始先从较小的具体的命令开始（例如，“添加一个‘名字’的文本输入框”），而不是一开始就提出过于复杂的多步骤请求。这种方法有助于确保准确性，并在出现异常情况时更便于修改错误。
 
-**简单开始示例：**
+**简单开始的示例：**
 
 ```
 Add a text input field for "First Name" with placeholder "Enter your first name"
 ```
 
-**然后增量生成：**
+**然后逐步构建：**
 
 ```
 Make @firstName mandatory and add validation message "First name is mandatory"
 ```
 
-### 使用AEM Forms术语
+### 使用 AEM Forms 术语
 
-使用“面板”、“文本输入字段”、“复选框组”、“提交操作”、“规则”等术语，以使助理更好地理解。 这可确保AI在AEM Forms上下文中正确解释您的请求。
+使用“面板”、“文本输入字段”、“复选框组”、“提交操作”、“规则”等术语，以便助手更好地理解。这可确保 AI 在 AEM Forms 上下文中正确理解您的请求。
 
 **首选术语：**
 
 - “文本输入字段”而不是“文本框”
-- “复选框组”而不是“复选框”
+- “复选框组”而不是“多个复选框”
 - “下拉列表”而不是“选择列表”
-- “panel”而不是“section”或“container”
-- “提交操作”而非“表单提交”
-- “rule”而不是“logic”或“condition”
+- “面板”而不是“部分”或“容器”
+- “提交操作”而不是“表单提交”
+- “规则”而不是“逻辑”或“条件”
 
 ### 明确引用字段
 
-配置现有字段时，请使用@fieldName符号(例如，“@firstName为必填”)。 这有助于AI准确地识别您引用的字段，尤其是在具有许多字段的复杂表单中。
+在配置现有字段时，请使用 @firstName 符号（例如，“将 @firstName 设为必填”）。这有助于 AI 准确识别您所指的字段，尤其是在包含许多字段的复杂表单中。
 
 **示例：**
 
@@ -69,124 +68,124 @@ Make @firstName mandatory and add validation message "First name is mandatory"
 - `Show @spouseInfo panel when @maritalStatus equals "Married"`
 - `Set @country default value to "United States"`
 
-### 始终查看计划
+### 务必审阅计划
 
-在单击“应用”之前，请务必仔细检查助理员在通用编辑器中提出的更改计划。 AI将向您显示它打算执行的操作 — 请花些时间验证它是否符合您的预期。
+在点击“应用”之前，请务必仔细审阅通用编辑器中的助手提出的更改建议。AI 助手会显示它的更改计划——请花点时间确认这是否符合您的期望。
 
 ### 手动验证
 
-助手进行更改后，请始终预览和测试您的表单，以确保其行为方式和外观符合预期。 人工智能是一个强大的工具，但最终验证是确保质量的关键。
+助手完成更改后，请务必预览并测试表单，以确保其功能和外观均符合预期。人工智能是一个强大的工具，但最终验证是确保质量的关键。
 
-**验证核对清单：**
+**验证清单：**
 
 - 在预览模式下测试表单功能
-- 验证条件逻辑是否正常工作
-- 检查移动响应能力
+- 验证条件逻辑是否工作正常
+- 检查移动端响应能力
 - 测试表单提交
-- 验证辅助功能
+- 验证无障碍访问功能
 
 ### 迭代和优化
 
-如果第一个提示不能产生准确的结果，请尝试重新措辞或将请求细分为较小的步骤。 AI从上下文学习，因此提供更具体的详细信息通常会改善结果。
+如果第一个提示词没有产生准确的结果，请尝试重新措辞或将请求分解为几个更小的步骤。人工智能会从上下文中学习，因此提供更具体的细节通常可以改善结果。
 
 **迭代示例：**
 
-1. 首次尝试：“使表单适合移动设备”
-2. 细化：“针对768像素以下的移动屏幕优化表单布局，具有单列布局和更大的触控目标”
+1. 第一次尝试：“使表单适合在移动设备上使用”
+2. 优化：“针对 768px 以下的移动设备屏幕优化表单布局，采用单栏布局和较大的触摸目标”
 
 ### 提供反馈
 
-使用内置的反馈机制帮助助理学习和改进。 您的反馈有助于使AI对每个人更好。
+使用内置的反馈机制帮助助手学习和改进。您的反馈有助于让 AI 更好地为每个人服务。
 
 
-## 增量开发示例
+## 逐步开发示例
 
-这些示例展示了如何分步构建表单，从简单开始，逐步增加复杂性：
+这些示例展示了如何逐步构建表单，从简单开始，逐渐增加复杂性：
 
-### 示例1：增量构建联系人表单
+### 示例 1：逐步构建一个联系表单
 
-**步骤1 — 简单开始：**
+**步骤 1 - 从简单开始：**
 
 ```
 Create a basic contact form with name, email, and message fields
 ```
 
-**步骤2 — 添加验证：**
+**步骤 2 - 添加验证：**
 
 ```
 Make @name and @email mandatory fields with appropriate validation
 ```
 
-**步骤3 — 增强用户体验：**
+**步骤 3 - 增强用户体验**
 
 ```
 Add placeholder text: @name "Your full name", @email "your.email@company.com", @message "Tell us how we can help"
 ```
 
-**步骤4 — 添加高级功能：**
+**步骤 4 - 添加高级功能：**
 
 ```
 Add a dropdown @inquiryType with options: "General Question", "Support Request", "Sales Inquiry", "Partnership"
 ```
 
-**步骤5 — 实施条件逻辑：**
+**步骤 5 - 实施条件逻辑：**
 
 ```
 Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "Support Request"
 ```
 
-### 示例2：增量构建注册表单
+### 示例 2：逐步构建一个注册表单
 
-**步骤1 — 基本结构：**
+**步骤 1- 基本结构：**
 
 ```
 Create a user registration form with personal information panel
 ```
 
-**第2步 — 添加核心字段：**
+**步骤 2 - 添加核心字段：**
 
 ```
 Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
 ```
 
-**步骤3 — 添加验证：**
+**步骤 3 - 添加验证：**
 
 ```
 Make @firstName, @lastName, and @email mandatory with real-time validation
 ```
 
-**步骤4 — 添加帐户信息：**
+**步骤 4 - 添加帐户信息：**
 
 ```
 Create a new panel "Account Information" with @username and @password fields
 ```
 
-**步骤5 — 增强安全性：**
+**步骤 5 - 增强安全性：**
 
 ```
 Add password confirmation field @confirmPassword with validation to match @password
 ```
 
-**步骤6 — 添加首选项：**
+**步骤 6 - 添加首选项：**
 
 ```
 Create "Preferences" panel with @newsletter checkbox and @communicationMethod radio group (Email, SMS, Phone)
 ```
 
-这种增量方法可帮助您：
+这种渐进式方法可以帮助您：
 
-- 在问题复合之前及早发现问题
-- 彻底测试每个功能
+- 在问题变得严重之前及早发现并解决
+- 对每个功能进行全面测试
 - 根据用户反馈进行调整
 - 更好地控制开发过程
 
-## 开始新的Forms
+## 开始构建新表单
 
-**何时使用：**&#x200B;在任何表单项目的开头。 此提示可帮助AI了解您的要求并构建基础结构。
+**何时使用：**&#x200B;在任何表单项目开始时。该提示词可以帮助 AI 了解您的要求并构建基础结构。
 
-**如何使用：**&#x200B;从基本结构和核心要求开始。 指定表单类型、目标受众和主要用途。 在后续提示中添加复杂性。
+**如何使用：**&#x200B;从基本结构和核心要求开始。指定表单类型、目标受众和主要目的。在后续提示词中增加复杂性。
 
-**示例提示 — 开始简单：**
+**提示词示例 - 从简单开始：**
 
 ```
 Create a **customer onboarding form** for new bank account applications with:
@@ -199,7 +198,7 @@ Create a **customer onboarding form** for new bank account applications with:
 Start with a simple layout that we can enhance step by step.
 ```
 
-**然后增量生成：**
+**然后逐步构建：**
 
 ```
 Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
@@ -213,7 +212,7 @@ Add employment information panel with @employer, @jobTitle, and @annualIncome fi
 Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
 ```
 
-**备用简单启动提示：**
+**其他简单的开始提示词：**
 
 ```
 Create a basic **event registration form** with name, email, and event selection fields
@@ -227,13 +226,13 @@ Build a simple **contact form** with name, email, and message fields
 Design a basic **feedback survey** with rating scale and comments field
 ```
 
-## 窗体结构和布局
+## 表单结构和布局
 
-**何时使用：**&#x200B;需要组织复杂表单或通过更好的布局设计改善用户体验时。
+**何时使用：**&#x200B;当您需要组织多个复杂的表单或通过更好的布局设计来提升用户体验时。
 
-**使用方式：**&#x200B;侧重于用户历程和信息逻辑分组。 指定布局首选项和导航模式。
+**如何使用：**&#x200B;关注用户历程和信息的逻辑分组。指定布局偏好和导航模式。
 
-**示例提示 — 多步骤表单结构：**
+**提示词示例 - 多步骤表单结构：**
 
 ```
 Convert this single-page form into a **3-step wizard** with:
@@ -258,7 +257,7 @@ Convert this single-page form into a **3-step wizard** with:
 Include "Previous" and "Next" buttons, allow users to jump between completed steps, save progress automatically.
 ```
 
-**布局优化提示：**
+**布局优化提示词：**
 
 ```
 Reorganize this form using a **wizard layout** for desktop and single column for mobile. 
@@ -272,13 +271,13 @@ Convert this long form into an **accordion layout** where users can expand/colla
 Create a **vertical tabbed interface** for this form with tabs for: Basic Info, Contact Details, Preferences, and Review.
 ```
 
-## 现场管理和验证
+## 字段管理与验证
 
-**何时使用：**&#x200B;需要添加、修改或增强具有特定验证规则和行为的表单字段时。
+**何时使用：**&#x200B;当您需要添加、更改或增强具有特定验证规则和行为的表单字段时。
 
-**使用方法：**&#x200B;具体说明字段类型、验证要求和用户体验期望。 使用@fieldName语法引用现有字段。
+**如何使用：**&#x200B;明确说明字段类型、验证要求以及用户体验预期。使用 @fileName 语法引用现有字段。
 
-**示例提示 — 字段增强功能：**
+**提示词示例 - 增强字段：**
 
 ```
 Enhance the form fields with these specific requirements:
@@ -305,7 +304,7 @@ Enhance the form fields with these specific requirements:
 - Show upload progress and file names after upload
 ```
 
-**特定字段的提示：**
+**字段特定的提示词：**
 
 ```
 Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
@@ -321,11 +320,11 @@ Build a **repeatable panel** for work experience where users can add/remove mult
 
 ## 条件逻辑和规则
 
-**何时使用：**&#x200B;需要基于用户输入或业务规则的动态表单行为时。
+**何时使用：**&#x200B;当您需要根据用户输入或业务规则实现动态表单行为时。
 
-**使用方式：**&#x200B;明确定义条件和生成的操作。 使用特定的字段引用和逻辑运算符。
+**如何使用：**&#x200B;明确定义条件和由此产生的行动。使用特定字段引用和逻辑运算符。
 
-**示例提示 — 复杂条件逻辑：**
+**提示词示例 - 复杂条件逻辑：**
 
 ```
 Implement these conditional rules for the application form:
@@ -357,7 +356,7 @@ Implement these conditional rules for the application form:
   - Add accessibility preferences section
 ```
 
-**特定于规则的提示：**
+**规则特定的提示词：**
 
 ```
 Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
@@ -371,13 +370,13 @@ Add **progressive disclosure** where additional questions appear based on previo
 Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override.
 ```
 
-## 数据集成和提交
+## 数据集成与提交
 
 **何时使用：**&#x200B;当您需要将表单连接到后端系统、数据库或外部服务时。
 
-**如何使用：**&#x200B;从基本提交设置开始，然后增量添加其他集成。 指定集成类型、数据格式要求和错误处理首选项。
+**如何使用：**&#x200B;从基本的提交设置开始，然后逐步添加其他集成。指定集成类型、数据格式要求和错误处理偏好。
 
-**示例提示 — 以基本提交开始：**
+**提示词示例 - 从基本提交开始：**
 
 ```
 Configure basic form submission for @applicationForm:
@@ -389,7 +388,7 @@ Configure basic form submission for @applicationForm:
 - Show error message if submission fails: "Submission failed, please try again"
 ```
 
-**然后增量添加辅助操作：**
+**然后逐步添加次要操作：**
 
 ```
 Add email notification to @applicationForm: Send confirmation email to @email address with application reference number
@@ -399,7 +398,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**示例提示 — 高级多渠道提交：**
+**提示词示例 - 高级多渠道提交：**
 
 ```
 Configure form submission with multiple data destinations:
@@ -428,7 +427,7 @@ Configure form submission with multiple data destinations:
 - Display estimated processing timeline
 ```
 
-**集成特定的提示：**
+**集成特定的提示词：**
 
 ```
 Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New".
@@ -442,13 +441,13 @@ Set up **workflow trigger** when form is submitted. Pass all form data and trigg
 Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
 ```
 
-## 设计导入和转换
+## 设计导入和转化
 
-**何时使用：**&#x200B;当现有表单设计(PDF、Figma、图像)需要转换为功能性AEM表单时。
+**何时使用：**&#x200B;当您需要将现有的表单设计（PDF、Figma、图像）转换为功能性的 AEM 表单时。
 
-**如何使用：**&#x200B;提供有关源设计的清晰上下文，并指定所需的任何修改或增强功能。
+**如何使用：**&#x200B;提供关于源设计的清晰背景，并明确说明所需的任何修改或改进。
 
-**示例提示 — PDF表单转换：**
+**提示词示例 - PDF 表单转化：**
 
 ```
 Convert this uploaded **PDF application form** into a functional AEM adaptive form:
@@ -480,7 +479,7 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 Preserve all original field labels and help text, but improve the user experience with modern form interactions.
 ```
 
-**设计导入提示：**
+**设计导入提示词：**
 
 ```
 Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
@@ -494,13 +493,13 @@ Analyze this **image of a paper form** and recreate it digitally. Improve the la
 Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes.
 ```
 
-## 移动优化和响应能力
+## 移动端优化与响应能力
 
-**何时使用：**&#x200B;当表单需要在所有设备类型和屏幕大小之间无缝工作时。
+**何时使用：**&#x200B;当表单需要在所有设备类型和屏幕尺寸上无缝工作时。
 
-**如何使用：**&#x200B;从基本的移动优化开始，然后使用高级功能进行增强。 强调移动优先方法并以增量方式指定断点行为。
+**如何使用：**&#x200B;从基本的移动端优化开始，然后通过高级功能将其增强。强调移动端优先的方法，逐步指定断点行为。
 
-**示例提示 — 从基本移动优化开始：**
+**提示词示例 - 从基本的移动端优化开始：**
 
 ```
 Make @contactForm mobile-friendly with:
@@ -511,7 +510,7 @@ Make @contactForm mobile-friendly with:
 - Responsive design that works on phones and tablets
 ```
 
-**然后添加高级移动功能：**
+**然后添加高级移动端功能：**
 
 ```
 Enhance @contactForm mobile experience with:
@@ -520,7 +519,7 @@ Enhance @contactForm mobile experience with:
 - Swipe gestures for multi-step navigation
 ```
 
-**示例提示 — 综合Mobile-First优化：**
+**提示词示例 - 全面的移动端优先优化：**
 
 ```
 Optimize this form for **mobile-first responsive design**:
@@ -557,7 +556,7 @@ Optimize this form for **mobile-first responsive design**:
 - Progressive enhancement approach
 ```
 
-**特定于移动设备的简单提示：**
+**移动设备特定的简单提示词：**
 
 ```
 Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
@@ -571,13 +570,13 @@ Add touch-friendly controls to @surveyForm for tablet users
 Enable offline functionality for @applicationForm with local data saving
 ```
 
-## 辅助功能和合规性
+## 无障碍访问和合规性
 
-**何时使用：**&#x200B;当表单必须符合辅助功能标准(WCAG 2.1 AA)或合规性要求时。
+**何时使用：**&#x200B;表单必须符合无障碍访问标准（WCAG 2.1 AA）或合规性要求。
 
-**如何使用：**&#x200B;指定必须满足的辅助功能要求和符合性标准。
+**如何使用：**&#x200B;指定必须满足的无障碍访问要求和合规标准。
 
-**示例提示 — 辅助功能实现：**
+**提示词示例 - 无障碍访问实施：**
 
 ```
 Make this form **WCAG 2.1 AA compliant** with these accessibility features:
@@ -619,7 +618,7 @@ Make this form **WCAG 2.1 AA compliant** with these accessibility features:
 - Validate HTML for semantic correctness
 ```
 
-**特定于合规性的提示：**
+**合规性特定的提示词：**
 
 ```
 Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
@@ -633,13 +632,13 @@ Make this **financial form PCI DSS compliant** with secure payment field handlin
 Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
 ```
 
-## 测试和质量Assurance
+## 测试和质量保证
 
-**何时使用：**&#x200B;需要验证表单功能、用户体验和技术性能时。
+**何时使用：**&#x200B;当您需要验证表单功能、用户体验和技术性能时。
 
-**如何使用：**&#x200B;指定必须验证的测试方案、边缘案例和质量标准。
+**如何使用：**&#x200B;指定必须验证的测试场景、边缘情况和质量标准。
 
-**示例提示 — 完整的表单测试：**
+**提示词示例 - 综合表单测试：**
 
 ```
 Create a **comprehensive testing plan** for this application form:
@@ -687,7 +686,7 @@ Create a **comprehensive testing plan** for this application form:
 - Check print functionality across browsers
 ```
 
-**特定于测试的提示：**
+**测试特定的提示词：**
 
 ```
 Create **automated test scripts** for this form's critical user paths: successful submission, validation errors, and conditional logic.
@@ -703,11 +702,11 @@ Set up **performance monitoring** to track form completion rates, abandonment po
 
 ## 高级功能和集成
 
-**何时使用：**&#x200B;需要高级表单功能（如AI帮助、高级工作流或复杂集成）时。
+**何时使用：**&#x200B;当您需要复杂的表单功能时，如 AI 辅助、高级工作流或复杂集成。
 
-**使用方式：**&#x200B;明确定义高级功能和集成要求。
+**如何使用：**&#x200B;明确定义高级功能和集成要求。
 
-**示例提示 — AI增强表单：**
+**提示词示例 - AI 增强表单：**
 
 ```
 Add **AI-powered features** to enhance this application form:
@@ -749,7 +748,7 @@ Add **AI-powered features** to enhance this application form:
 - Extract structured data from unstructured input
 ```
 
-**高级集成提示：**
+**高级集成提示词：**
 
 ```
 Integrate with **CRM system** to pre-populate known customer data, update records in real-time, and trigger automated follow-up sequences.
@@ -763,13 +762,13 @@ Connect to **payment gateway** for secure transaction processing with PCI compli
 Implement **blockchain verification** for document authenticity, immutable audit trails, and decentralized identity verification.
 ```
 
-## 故障排除和优化
+## 错误修改和优化
 
-**何时使用：**&#x200B;当表单出现性能问题、用户体验问题或技术难题时。
+**何时使用：**&#x200B;当表单存在性能问题、用户体验问题或技术难题时。
 
-**使用方式：**&#x200B;明确描述具体问题和期望的结果。
+**如何使用：**&#x200B;清晰描述具体的问题和期望的结果。
 
-**示例提示 — 性能优化：**
+**提示词示例 - 性能优化：**
 
 ```
 Optimize this form for **better performance and user experience**:
@@ -809,7 +808,7 @@ Optimize this form for **better performance and user experience**:
 - A/B test improvements with real users
 ```
 
-**故障排除提示：**
+**错误修改提示词：**
 
 ```
 **Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
@@ -823,9 +822,9 @@ Optimize this form for **better performance and user experience**:
 **Resolve validation conflicts:** Some users can't submit even with valid data. Review validation rules for conflicts and edge cases.
 ```
 
-## 特定于环境的最佳实践
+## 环境特定的最佳实践
 
-### Forms管理UI
+### 表单管理用户界面
 
 **何时使用：**&#x200B;用于高级表单创建和管理任务。
 
@@ -833,9 +832,9 @@ Optimize this form for **better performance and user experience**:
 In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
 ```
 
-### 自适应Forms编辑器
+### 自适应表单编辑器
 
-**何时使用：**&#x200B;有关详细的表单配置和复杂的规则创建。
+**何时使用：**&#x200B;用于详细的表单配置和复杂的规则创建。
 
 ```
 In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
@@ -843,7 +842,7 @@ In the Adaptive Forms Editor, configure **advanced business rules** for this loa
 
 ### 通用编辑器
 
-**何时使用：**&#x200B;对于可视化编辑的Edge Delivery Services表单。
+**何时使用：**&#x200B;适用于具有可视化编辑功能的 Edge Delivery Services 表单。
 
 ```
 In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
@@ -853,91 +852,91 @@ In Universal Editor, create a **responsive contact form** for the company websit
 
 | 命令 | 最佳用例 | 示例 |
 |---------|---------------|---------|
-| `/create-form` | 开始新表单 | `/create-form employee onboarding with personal info and benefits selection` |
+| `/create-form` | 开始构建新表单 | `/create-form employee onboarding with personal info and benefits selection` |
 | `/add-form` | 将表单添加到页面 | `/add-form newsletter signup with email and preferences` |
-| `/update-layout` | 更改窗体结构 | `/update-layout wizard with 4 steps: info, preferences, review, confirm` |
-| `/update-field` | 修改字段属性 | `/update-field @email to be mandatory with real-time validation` |
+| `/update-layout` | 改变表单结构 | `/update-layout wizard with 4 steps: info, preferences, review, confirm` |
+| `/update-field` | 更改字段属性 | `/update-field @email to be mandatory with real-time validation` |
 | `/create-rule` | 添加动态行为 | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
-| `/create-panel` | 组织表单节 | `/create-panel Employment Details with job title, company, salary fields` |
+| `/create-panel` | 组织表单部分 | `/create-panel Employment Details with job title, company, salary fields` |
 | `/add-panel` | 转换设计 | `/add-panel from uploaded form image with field recognition` |
 | `/configure-submit` | 设置数据处理 | `/configure-submit to CRM and send confirmation email` |
-| `/help` | 正在获取帮助 | `/help how to implement multi-step validation?` |
+| `/help` | 获取帮助 | `/help how to implement multi-step validation?` |
 
 ## 支持的组件属性参考
 
 ### 通用属性（所有组件）
 
-- **类型**：组件类型（文本、电子邮件、数字、电话、日期、复选框、单选、下拉列表、文件等）
+- **类型**：组件类型（文本、电子邮件、数字、电话、日期、复选框、单选按钮、下拉菜单、文件等）
 - **名称**：表单提交的字段标识符
 - **标签**：显示字段的文本
 - **描述**：字段的帮助文本
-- **Visible**：初始可见性的布尔值
-- **必填**：必填字段的布尔值
+- **可视**：表示初始可见性的布尔值
+- **必填**：表示必填字段的布尔值
 
 ### 输入字段属性
 
-- **值**：默认值/初始值
+- **值**：默认/初始值
 - **占位符**：输入字段的提示文本
 - **Min**：最小值（数字/日期）
 - **Max**：最大值（数字/日期）
 
 ### 文件上传属性
 
-- **接受**：文件类型（.pdf、.doc、.docx、.jpg、.png等）
+- **接受**：文件类型（.pdf、.doc、.docx、.jpg、.png 等）
 - **Multiple**：用于选择多个文件的布尔值
 
-### 选择控件属性
+### 选择控制属性
 
-- **选项**：下拉列表选项（逗号分隔列表）
-- **已选中**：复选框/单选按钮的默认选择
+- **选项**：下拉菜单的选项（逗号分隔的列表）
+- **已选中**：复选框/单选框的默认选择
 
 ### 容器属性
 
-- **字段集**：分组相关字段
+- **Fieldset**：对相关字段进行分组
 - **可重复**：可重复部分的布尔值
 
 ### 高级属性
 
-- **可见表达式**：条件可见性的公式(=formula)
-- **值表达式**：计算值的公式(=formula)
+- **可见表达式**：条件可见性的公式（=公式）
+- **值表达式**：计算值的公式（=公式）
 
 ## 最佳实践摘要
 
-### 技术准则
+### 技术指南
 
-- **仅使用官方的AEM Forms组件规范中支持的属性**
-- **对于字段引用(@fieldName)和表达式(=formula)，请遵循正确的语法**
-- 每次更改后&#x200B;**增量测试**&#x200B;以提前捕获问题
-- **从头开始规划辅助功能**，而不是作为事后考虑
-- 在每个设计决策中&#x200B;**考虑移动用户**
-- **记录复杂规则**，以便将来维护和团队协作
+- **仅使用官方 AEM 表单组件规范中支持的属性**
+- **遵循字段引用 (@fieldName) 和表达式 (=formula) 的正确语法** 
+- **每次变更后**&#x200B;进行逐步测试，以便及早发现问题
+- **从一开始就考虑无障碍访问**，而非事后补救
+- **在每一个设计决策中考虑移动端用户** 
+- **记录复杂的规则**，以便于未来维护和团队协作
 
-### 战略方针
+### 战略方法
 
-- **从用户需求开始** — 关注用户需要完成的工作，而不仅仅是技术功能
-- **完成设计** — 最小化表单设计中的摩擦和认知负荷
-- **提前计划数据流** — 考虑如何处理、存储和使用数据
-- **为规模构建** — 设计可处理预期用户量和数据增长的表单
-- **实施渐进式增强功能** — 确保基本功能正常工作，然后添加高级功能
+- **从用户需求入手** - 关注用户需要完成的任务，而不仅仅是技术特性
+- **为完成表单而设计** - 在表单设计中尽量减少摩擦和认知负荷
+- **尽早规划数据流** - 考虑如何处理、存储和使用数据
+- **为规模化而构建** - 设计能够应对预期用户量和数据增长的表单
+- **实现渐进式增强功能** - 确保基本功能正常运作，再添加高级功能
 
-### 要避免的常见陷阱
+### 需要避免的常见陷阱
 
-- **过于复杂的初始请求** — 将大型任务分解成更小的、可管理的步骤
-- **使用AEM Forms规范中不支持的属性**
-- **忽略移动体验**，直到开发过程的后期为止
-- **跳过用户测试**&#x200B;真实情景和边缘案例
-- **假设AI理解上下文**，但不提供清晰、具体的说明
-- **忘记辅助功能**&#x200B;和合规性要求
-- **在转到下一步之前，未验证更改**
+- **过于复杂的初始请求** - 将大型任务分解为多个更小、更易于管理的步骤
+- **使用 AEM Forms 规范中不受支持的属性**
+- **在开发过程的后期才考虑移动端体验**
+- **跳过真实场景和边缘情况的用户测试**
+- **假设人工智能无需提供明确、具体的指令就能理解上下文** 
+- **忽略无障碍访问**&#x200B;和合规性要求
+- **在进入下一步之前未验证更改** 
 
-### 质量Assurance方法
+### 质量保证方法
 
-1. **经常预览** — 每次重大更改后，在预览模式下检查您的工作
-2. **测试边缘用例** — 尝试不寻常的输入、长文本、特殊字符
-3. **跨设备验证** — 在移动设备、平板电脑和桌面上进行测试
-4. **检查辅助功能** — 验证键盘导航和屏幕阅读器兼容性
-5. **性能测试** — 确保表单加载快速且响应顺畅
-6. **用户验收测试** — 在部署之前让真实用户测试表单
+1. **经常预览** - 每次做出重大更改后，在预览模式下进行检查
+2. **测试边缘情况** - 尝试输入不常见的内容、长文本、特殊字符
+3. **跨设备验证** - 在移动设备、平板电脑和桌面设备上进行测试
+4. **检查无障碍访问** - 验证键盘导航和屏幕阅读器兼容性
+5. **性能测试** - 确保表单快速加载并顺畅响应
+6. **用户验收测试** - 部署前让真实用户测试表单
 
 
-*此提示库会根据用户反馈和新的AI Assistant功能不断更新。 有关最新功能和示例，请查看[AEM Forms文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。*
+*此提示词库会根据用户反馈和新的 AI 助手功能不断更新。如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*

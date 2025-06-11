@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 为内容片段的结构化内
 
 >[!NOTE]
 >
->Assets HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的内容片段支持现在[已弃用](/help/release-notes/deprecated-removed-features.md)。 它已被替换为[OpenAPI的内容片段投放](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[内容片段和内容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)。
+>[Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)现在[已弃用](/help/release-notes/deprecated-removed-features.md)。它已被[通过 OpenAPI 进行内容片段传递](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[内容片段和内容片段模型管理 OpenAPI](/help/headless/content-fragment-openapis.md) 所取代。
 
 ## 后续内容 {#whats-next}
 

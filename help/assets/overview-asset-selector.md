@@ -4,9 +4,9 @@ description: 使用资产选择器在您的应用程序中搜索、查找和检�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -201,21 +201,21 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL **列表视图**]&#x200B;列表视图在单个列中显示可滚动的文件和文件夹。
 * ![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL **网格视图**] 网格视图以行和列的网格显示可滚动的文件和文件夹。
 * ![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL **库视图**] 库视图以居中锁定的水平列表显示文件或文件夹。
-* ![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布**&#x200B;视图]瀑布视图以桥的形式显示文件或文件夹。
+* ![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布**&#x200B;视图]瀑布视图以桥的形式显示文件或文件夹。
 
-### 资源详细信息和元数据 {#asset-details-and-metadata}
+### 资产详细信息和元数据 {#asset-details-and-metadata}
 
-“资产详细信息”页面提供特定资产的全面视图，将所有关键信息整合到一个位置。 它包括带有名称、文件格式、状态的概述、简要描述，以及便于视觉识别的预览或缩略图。 它还包含资源的元数据，例如创建日期、作者、大小、颜色方案等。 这些属性有助于高效地搜索、筛选和分类资源。 资产选择器的边栏和模式视图中均提供了资产详细信息面板。 在边栏视图中，需要启用并配置`onDrop`属性以返回资产。 或者，在模式视图中，`handleSelection`属性返回资产。 请参阅[资产选择器属性](asset-selector-properties.md)。
+资产详情页面提供特定资产的全面视图，可将所有关键信息集中在一处。它包括带有名称、文件格式、状态和简要说明的概述，以及预览或缩略图，以便于视觉识别。它还包括资产的元数据，例如创建日期、作者、大小、配色方案等。这些属性有助于有效地搜索、过滤和分类资产。资产选择器的边栏视图和模态视图中均提供资产详细信息面板。在边栏视图中，需要启用并配置 `onDrop` 属性来返回资产。或者在模态视图中，`handleSelection` 属性会返回一项资产。请参阅[资产选择器属性](asset-selector-properties.md)。
 
 要查看资产和元数据的详细信息，请执行以下步骤：
 
-1. 打开资产选择器MFE并导航到资产。
-1. 将鼠标悬停在资产上并单击![信息图标](/help/assets/assets/info-icon-solid-black.svg)。
-1. 转到&#x200B;**[!UICONTROL 信息]**&#x200B;选项卡以查看资源的详细信息。<!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+1. 打开资产选择器 MFE 并导航到资产。
+1. 将鼠标悬停在资产上，然后点击![信息图标](/help/assets/assets/info-icon-solid-black.svg)。
+1. 转到&#x200B;**[!UICONTROL 信息]**&#x200B;选项卡，以查看资产的详细信息。 <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
-要自定义资产的详细信息视图面板，请参阅[在模态视图中自定义信息](asset-selector-customization.md#customize-info-in-modal-view)。
+要自定义资产的详细信息视图面板，请参阅[自定义模态视图中的信息](asset-selector-customization.md#customize-info-in-modal-view)。
 
-![资源详细信息](assets/asset-details.png)
+![资产详细信息](assets/asset-details.png)
 
 <!--
 
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -309,7 +309,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="资产选择器收藏集图形"><br/>
         <a href="asset-selector-collections.md">资产选择器收藏集</a>
         <p>
-        <em>了解如何使用Experience Manager存储库在资产选择器中使用收藏集。</em>
+        <em>了解如何使用 Experience Manager 存储库在资产选择器中使用收藏集。</em>
         </p>
     </td>
     <td>
