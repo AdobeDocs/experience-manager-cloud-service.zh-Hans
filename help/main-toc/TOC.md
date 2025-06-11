@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: be4c57c1703831b8c71fc722761515b32cfc0683
+source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
 workflow-type: tm+mt
-source-wordcount: '6240'
+source-wordcount: '6242'
 ht-degree: 99%
 
 ---
@@ -341,11 +341,11 @@ ht-degree: 99%
             + [重要注意事项](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [使用用户映射工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + 代码重构工具  {#refactoring-tools}
-      + [重构工具快速入门](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
+      + [重构工具入门](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [重构工具概述](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [统一体验](/help/journey-migration/unified-experience.md)
       + [存储库现代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)
-      + [存储库现代化器(CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
+      + [存储库现代化工具 (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [索引转换器](/help/journey-migration/refactoring-tools/index-converter.md)
       + [资产工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -408,7 +408,7 @@ ht-degree: 99%
          + [管理项目](/help/sites-cloud/authoring/projects/managing.md)
          + [处理任务](/help/sites-cloud/authoring/projects/tasks.md)
          + [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)
-      + 启动项 {#launches}
+      + 页面启动项 {#launches-for-pages}
          + [使用启动项](/help/sites-cloud/authoring/launches/overview.md)
          + [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
          + [管理启动项中的页面](/help/sites-cloud/authoring/launches/managing-pages.md)
@@ -539,7 +539,7 @@ ht-degree: 99%
       + [管理发布](/help/assets/manage-publication.md)
       + [预览 3D 资产](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [图像的智能标记](/help/assets/smart-tags.md)
-      + [视频的智能标记](/help/assets/smart-tags-for-videos.md)
+      + [视频的智能标签](/help/assets/smart-tags-for-videos.md)
       + [如何组织资产](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 资产](/help/assets/aem-assets-adobe-stock.md)
       + [管理收藏集](/help/assets/manage-collections.md)
@@ -1181,8 +1181,8 @@ ht-degree: 99%
    + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
    + [生成变体](/help/generative-ai/generate-variations.md)
    + [助手（有限 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms的AI助手(Forms Experience Builder)（早期采用者）](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Forms AI助手 — 提示库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [AEM Forms 的 AI 助手（表单体验构建器）（早期采用者）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms AI 助手 - 提示库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager  {#using-cloud-manager}
