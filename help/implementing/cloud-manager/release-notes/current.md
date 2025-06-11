@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 55%
+ht-degree: 89%
 
 ---
 
@@ -21,35 +21,35 @@ ht-degree: 55%
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service中Cloud Manager 2025.6.0的发布日期是2025年6月5日星期四。
+AEM as a Cloud Service 中的 Cloud Manager 2025.6.0 的发布日期是 2025 年 6 月 5 日星期四。
 
-下一个计划发布于2025年7月10日星期四。
+下一个版本计划于 2025 年 7 月 10 日星期四发布。
 
 ## 新增功能 {#what-is-new}
 
 * **许可证仪表板现在包含Edge Delivery Services许可证**
 
-  Edge Delivery Services许可证使用情况现在显示在许可证仪表板中，使您能够更清楚地查看权利和状态。<!-- CMGR-67686 -->
+  许可仪表板现已显示 Edge Delivery Services 的许可使用情况，帮助您更清晰地了解您的授权权益与当前状态。<!-- CMGR-67686 -->
 
-  ![许可证功能板](/help/implementing/cloud-manager/assets/license-dashboard.png)
+  ![许可证仪表板](/help/implementing/cloud-manager/assets/license-dashboard.png)
 
-  查看[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
+  参阅[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
 * **Edge Delivery站点配置已更新**
 
-  通过请求&#x200B;**Edge Delivery Origin**&#x200B;而不是&#x200B;**存储库URL**，简化了添加Edge Delivery站点的流程，使载入和设置更快、更直观<!-- CMGR-67686 -->
+  通过请求 **Edge Delivery 原始地址**，而非&#x200B;**存储库 URL**，简化了添加 Edge Delivery 站点的流程，使入门与配置更加快捷直观<!-- CMGR-67686 -->。
 
-  ![添加Edge Delivery站点对话框](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+  ![添加 Edge Delivery 站点对话框](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
 
-  请参阅[添加Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。
+  请参阅[添加 Edge Delivery 站点](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。
 
 * **管道收藏夹**
 
-  在此版本中，Cloud Manager引入了pin收藏管道的功能，允许您将特定管道标记为收藏夹，以便它们显示在&#x200B;**管道**&#x200B;页面上的列表顶部。 此增强功能使经常访问的管道更容易查找和运行。<!-- CMGR-68293 -->
+  在本次版本更新中，Cloud Manager 引入了管道收藏功能，您可以将特定的 Pipeline 标记为收藏项，使其显示在&#x200B;**管道**&#x200B;页面列表的顶部。此项增强功能可帮助您更轻松地查找并运行常用的管道。<!-- CMGR-68293 -->
 
-  ![管道标记为收藏](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *两个管道标记为收藏。*
+  ![标记为收藏的管道](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *已标记为收藏的两个管道。*
 
-  查看[标记管道收藏夹](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites)。
+  请参阅[将管道标记为收藏](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites)。
 
 
 ## 早期采用者计划 {#early-adoption}
@@ -61,13 +61,13 @@ AEM as a Cloud Service中Cloud Manager 2025.6.0的发布日期是2025年6月5日
 
 ### 专用测试环境 {#specialized-test-environment}
 
-Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**&#x200B;的新环境类型。 此环境旨在帮助团队在接近生产的情况下验证功能，然后再上线。 此环境类型不同于&#x200B;*生产+暂存*、*开发*&#x200B;或&#x200B;*快速开发*&#x200B;环境，并为运行高级验证方案提供了集中的空间。
+Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的新环境类型。该环境旨在帮助团队在正式上线之前在接近生产的条件下验证功能。此环境类型不同于&#x200B;*生产 + 预发布*、*开发*&#x200B;或&#x200B;*快速开发*&#x200B;环境，而是专为运行高级验证场景提供的集中空间。
 
 请参阅[添加专门的测试环境](/help/implementing/cloud-manager/specialized-test-environment.md)。
 
-![已选中“专用测试环境”单选按钮的“添加环境”对话框](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+![“添加环境”对话框中，其中选中了“专门测试环境”单选按钮](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)发送电子邮件。
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 相关联的电子邮件地址发送电子邮件至 [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)。
 
 
 ### 自带Git (BYOG) — 现在支持Azure DevOps {#gitlab-bitbucket-azure-vsts}
@@ -111,17 +111,17 @@ Cloud Manager现在支持添加名为&#x200B;**Specialized Testing Environment**
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在添加管道下拉列表中添加Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**项目概述**&#x200B;页面，**管道**&#x200B;信息卡添加Edge Delivery管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
-![添加Edge Delivery管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加Edge Delivery管道对话框。*
+![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 相关联的电子邮件地址发送电子邮件至 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)。
 
 
 ## 错误修复
 
-* 以前标记为`HIBERNATED`的沙盒环境不再保持卡在该状态，从而允许管道执行或部署按预期进行。<!-- CMGR-67705 -->
-* 现在，AEM Cloud Manager在获取客户工件时将由409错误（冲突）导致的Maven构建失败正确映射到由客户导致的失败。 此更改通过区分内部错误和与客户环境设置相关的问题改进了错误消息传递。<!-- CMGR-66673 -->
+* 先前标记为 `HIBERNATED` 的沙盒环境不再停留在该状态，从而允许管道执行或部署按预期进行。 <!-- CMGR-67705 -->
+* AEM Cloud Manager 现在能够正确地将由于在获取客户工件时发生 409 错误（冲突）导致的 Maven 构建失败，映射为客户导致的失败。这一变更通过区分内部错误和与客户环境设置相关的问题，改进了错误消息的显示方式。<!-- CMGR-66673 -->
 
 
 <!-- ## Known issues {#known-issues} -->

@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
 source-wordcount: '2062'
-ht-degree: 31%
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 31%
 ## 发布日期 {#release-date}
 
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.5.0)的发布日期是2025年6月5日。 下一个功能版本(2025.6.0)计划于2025年6月26日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.5.0) 的发布日期为 2025 年 6 月 5 日。下一个功能版本 (2025.6.0) 计划于 2025 年 6 月 26 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -41,78 +41,78 @@ ht-degree: 31%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI生成的元数据**
+**AI 生成的元数据**
 
-AEM Assets现在使用[AI自动生成元数据，包括标题、描述和关键字](/help/assets/metadata-assets-view.md#ai-smart-tags)。 这些AI生成的字段可提高元数据的准确性，使资源更易于搜索、分类和推荐。 此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。
+AEM Assets 现在使用 [AI 自动生成元数据，其中包括标题、描述和关键字](/help/assets/metadata-assets-view.md#ai-smart-tags)。这些由 AI 生成的字段提高了元数据的准确性，使资产更易于搜索、分类和推荐。这种方法不仅通过消除手动标记来提高效率，而且确保了大量数字内容之间的一致性和可扩展性。
 
-![AI生成的元数据](/help/assets/assets/enhanced-smart-tags.png)
+![AI 生成的元数据](/help/assets/assets/enhanced-smart-tags.png)
 
-**与Figma集成**
+**与 Figma 集成**
 
-AEM Assets与Figma原生集成，允许设计人员从Figma用户界面中直接访问AEM Assets中存储的资源。 您可以将AEM Assets中管理的内容放在Figma画布中，然后在AEM Assets存储库中保存新内容或编辑的内容。
+AEM Assets 与 Figma 在本地集成，这使得设计师可以直接从 Figma 用户界面访问存储在 AEM Assets 中的资产。可将在 AEM Assets 中管理的内容放入 Figma 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。
 
-![与Figma集成](/help/assets/assets/figma-integration.png)
+![与 Figma 集成](/help/assets/assets/figma-integration.png)
 
 
-### Content Hub中的新增功能 {#new-features-content-hub}
+### Content Hub 的新增强功能 {#new-features-content-hub}
 
-**基于属性的访问控制(ABAC)**
+**基于属性的访问控制 (ABAC)**
 
-[Content Hub现在允许您应用基于规则的限制来访问资源](/help/assets/attribute-based-access-control.md)。 资源权限可确保治理，还可确保用户只能访问相关的资源。
+[Content Hub现在允许您应用基于规则的限制来访问资源](/help/assets/attribute-based-access-control.md)。 资产权限可用于强化治理策略，并确保仅授权用户可访问相关资产。
 
-资源限制规则基于元数据，如果规则中定义的条件与资源元数据匹配，则资源将向用户组显示。
+资产限制规则基于元数据定义。当资产的元数据满足规则中设定的条件时，该资产将对相应的用户组可见。
 
-基于属性的访问控制的一些主要优势包括：
+基于属性的访问控制具有以下几个主要优势：
 
-* 消除权限对文件夹结构的依赖性
+* 消除了权限对文件夹结构的依赖
 
-* 允许管理员上传资源并追溯确定权限结构
+* 允许管理员上传资产并追溯确定权限结构
 
-* 减少重复项数量 — 提高资源完整性。 当同一资产与不同组共享时，基于文件夹的权限需要重复项。
+* 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
 
-**UI品牌**
+**UI 品牌化**
 
-Content Hub现在允许管理员[使用特定于品牌的元素](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)自定义用户界面，这些元素包括横幅图像、横幅标题和正文文本以及主要颜色和次要颜色。 这些增强功能有助于确保品牌一致性、简化用户登录和建立信任。
+Content Hub现在允许管理员[使用特定于品牌的元素](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)自定义用户界面，这些元素包括横幅图像、横幅标题和正文文本以及主要颜色和次要颜色。 这些改进有助于确保品牌一致性，简化用户引导流程，并建立信任。
 
-![UI品牌](/help/assets/assets/content-hub-ui-branding.png)
+![UI 品牌化](/help/assets/assets/content-hub-ui-branding.png)
 
 **公共链接共享**
 
 Content Hub现在支持[生成可共享链接，以允许没有应用程序访问权限的外部用户](/help/assets/share-assets-content-hub.md##share-assets)查看资源元数据或下载资源。
 
-![UI品牌](/help/assets/assets/public-and-private-link.png)
+![UI 品牌化](/help/assets/assets/public-and-private-link.png)
 
-**收藏集管理**
+**收藏集治理**
 
-Content Hub现在允许您[在创建过程中控制对收藏集的访问，确保只有授权用户才能查看或管理分组的资源](/help/assets/collections-content-hub.md##create-collections)。 它可确保改进的安全性、更好的协作、有条理的资产管理和简化的治理。
+Content Hub现在允许您[在创建过程中控制对收藏集的访问，确保只有授权用户才能查看或管理分组的资源](/help/assets/collections-content-hub.md##create-collections)。 它确保了安全性的提升、协作的优化、资产管理的有序化以及治理的简化。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
->收藏集治理是一项受限制的可用性功能。 您可以通过创建支持票证来启用它。
+>收藏集治理是一项可用性有限的功能。您可以通过创建支持工单来启用它。
 
-**以ZIP格式下载多个资产**
+**将多个资产下载为 ZIP 文件**
 
 Content Hub现在还允许您[将所选资源及其演绎版](/help/assets/download-assets-content-hub.md#download-asset-renditions)下载到ZIP文件中，而不是作为单独的文件来为您简化文件管理。
 
-在Content Hub中&#x200B;**Dynamic Media演绎版**
+**Content Hub 中的 Dynamic Media 演绎版**
 
-直接在Content Hub用户界面[&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有Dynamic Media预设演绎版和智能裁剪以供下载。
+直接在Content Hub用户界面](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有[Dynamic Media预设演绎版和智能裁剪以供下载。
 
-![&#x200B;Dynamic Media演绎版](/help/assets/assets/dm-renditions-content-hub.png)
+&#x200B;![Dynamic Media 演绎版](/help/assets/assets/dm-renditions-content-hub.png)
 
-### Dynamic Media中的新增功能 {#new-features-dynamic-media}
+### Dynamic Media 中的新增功能 {#new-features-dynamic-media}
 
-**Dynamic Media与AJO B2C的本机集成&#x200B;**
+**Dynamic Media 与 AJO B2C 的原生集成**
 
-[Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic)的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
+[Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
@@ -142,18 +142,18 @@ Forms 与 AEP 的集成功能现在可供早期采用者使用。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 更新了弃用流程 {#updated-deprecation-process}
+### 更新的弃用流程 {#updated-deprecation-process}
 
-Adobe会定期审查功能、库、API和配置，以确保它们符合性能、安全性和价值标准。 当功能不再符合这些标准时，将标记它们以供弃用，并且必须在指定的删除日期之前停止使用。 在此日期之前，Adobe将通过电子邮件通知提醒客户，以及在继续使用或部署新内部版本之前需要在Cloud Manager中执行的操作。 如果未能采取必要措施，可能会导致无法升级到新版本的AEM，进而可能对安全性、性能、可靠性和可用性造成影响。
+Adobe 会定期审查功能、库、API 和配置，以确保它们符合性能、安全和价值方面的标准。当功能不再满足这些标准时，它们将被标记为弃用，且必须在指定的移除日期前停止使用。在此日期之前，Adobe 将通过电子邮件通知提醒客户，并告知客户在继续或部署新版本之前需要在 Cloud Manager 中采取的行动。若未能采取必要行动，则可能无法升级至 AEM 的新版本，进而对安全性、性能、可靠性和可用性造成潜在影响。
 
-有关详细信息，请参阅[弃用文章](/help/release-notes/deprecated-removed-features.md)。
+请参阅[弃用文章](/help/release-notes/deprecated-removed-features.md)，以了解更多信息。
 
-#### 已弃用的Java API和OSGi配置接近删除日期 {#deprecated-near-removals}
+#### 即将移除的已弃用 Java API 和 OSGi 配置 {#deprecated-near-removals}
 
-展开以下列表以查看不再使用的已弃用API和OSGi配置。 有关完整的详细信息（包括删除时间线），请参阅弃用文章。
+展开下方列表，查看已弃用且不得再使用的 API 和 OSGi 配置。如需了解全部详情（包括移除时间表），请参阅弃用文章。
 
 <details>
-  <summary>展开以查看弃用项</summary>
+  <summary>展开以查看弃用内容</summary>
 
 Java API：
 * `org.apache.sling.commons.auth`
@@ -173,91 +173,91 @@ Java API：
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-OSGi属性：
+OSGi 属性：
 
-* `org.apache.sling.commons.log.LogManager` （所有属性）
-* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`， `org.apache.sling.commons.log.pattern`)
+* `org.apache.sling.commons.log.LogManager`（所有属性）
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
 
 </details>
 
-### 弃用Java 11运行时 {#java11-runtime-deprecation}
+### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-**Java 11运行时**&#x200B;现已弃用，并且大多数环境已升级到性能更高的&#x200B;**Java 21运行时**。
+**Java 11 运行时环境**&#x200B;现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
 
-如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含具体的后续步骤。 请确保在&#x200B;**2025年8月28日**&#x200B;之前完成所有必需的更新，以便您的环境可以升级而不会中断。
+如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
-注意：运行时版本与代码的内部版本不同。 虽然我们建议使用Java 21进行构建，但目前仍支持Java 11内部版本。 未来将共享有关Java 11内部版本的单独弃用通知。
+注意：运行时版本与代码的构建版本是分开的。虽然我们建议使用 Java 21 进行构建，但目前仍支持使用 Java 11 进行构建。未来将另行发布针对 Java 11 版本的弃用通知。
 
-### 实施AEM Java日志配置策略 {#logconfig-policy}
+### AEM Java 日志配置策略的执行 {#logconfig-policy}
 
-如4月发行说明中所述，AEM Java日志必须遵循标准格式，以确保在所有客户环境中进行可靠的监控。 不再支持自定义日志配置，如更改日志格式、输出文件或默认日志级别。 日志必须保持定向到默认文件，并且必须保留AEM产品代码的默认日志级别。 请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)中的完整详细信息。
+正如4月发布说明中所述，AEM Java 日志必须遵循标准格式，以确保在所有客户环境中进行可靠监控。自定义日志配置（如更改日志格式、输出文件或默认日志级别）已不再受支持。日志必须继续定向到默认文件，且必须保留 AEM 产品代码的默认日志级别。请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)，以了解完整详情。
 
-从&#x200B;**8月底**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。 根据我们的分析，大多数客户不会受到影响，Adobe将直接联系任何其当前配置可能受到影响的客户。
+从 **8 月下旬**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将直接与其联系。
 
-请检查并更新依赖自定义日志记录行为的任何下游进程。 例如：
+请审查并更新所有依赖自定义日志记录行为的下游流程。例如：
 
-* 如果您的日志转发系统需要自定义日志格式，您可能需要调整摄取规则。
-* 如果您之前通过更改日志级别降低了日志详细程度，请注意，恢复到默认级别可能会增加日志量。
+* 如果您的日志转发系统需要自定义日志格式，您可能需要调整您的摄取规则。
+* 如果您之前通过更改日志级别来降低日志详细程度，请注意，恢复默认级别可能会增加日志量。
 
-### 默认清除旧版本和审核日志 {#mt-defaults}
+### 默认清除旧版本和审计日志 {#mt-defaults}
 
-目前，内容版本和审核日志在默认情况下禁用其关联的&#x200B;*清除维护任务*，因此除非通过它们各自的OSGi属性明确配置，否则不会删除任何数据。
+目前，内容版本和审计日志的相关&#x200B;*清除维护任务*&#x200B;默认处于禁用状态，因此除非通过各自的 OSGi 属性进行明确配置，否则不会删除任何数据。
 
-但是，为优化存储库性能，从2025年6月下旬&#x200B;**开始**，默认情况下将按照以下准则启用清除：
+然而，为了优化存储库性能，从 **2025 年 6 月下旬**&#x200B;开始，将默认启用清除功能，并遵循以下指南：
 
 #### 内容版本 {#mt-content}
 
-* **新环境** (在即将到来的日期之后创建（稍后通知）
-   * 将定期删除超过&#x200B;**30天**&#x200B;的版本。
-   * 会保留过去30天内的最近五个版本，以及最新版本和当前版本，而不考虑其存在时间。
+* **新环境**（在即将到来的日期（稍后通知）之后创建）
+   * 超过&#x200B;**30 天**&#x200B;的版本将定期被删除。
+   * 保留过去30天内最新的五个版本，以及最新版本和当前版本，无论其历史时间如何。
 
-* **现有环境** （在此即将到来的日期之前创建）：
-   * 将定期删除超过&#x200B;**7年**&#x200B;的版本。
-   * 过去7年内的所有版本都将保留。
-   * 此高默认阈值可防止意外删除最近的数据。 但是，建议配置较低的值以优化存储库性能。
+* **现有环境**（在此即将到来的日期之前创建）：
+   * 超过&#x200B;**7 年**&#x200B;的版本将定期被删除。
+   * 过去 7 年内的所有版本均予以保留。
+   * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
-* 您可以通过OSGi配置覆盖来修改这些默认值。
+* 您可以通过 OSGi 配置覆盖来修改这些默认设置。
 
 #### 审核日志 {#mt-auditlogs}
 
-* **新环境**（在即将到来的日期之后创建，将单独通知）：
-   * 将定期删除超过&#x200B;**7天**&#x200B;的复制、DAM和页面审核日志。
-   * 默认情况下，将记录所有事件。
+* **新环境**（在即将到来的日期之后创建，具体日期将另行通知）：
+   * 超过 **7 天**&#x200B;的复制、DAM 和页面审计日志将定期删除。
+   * 默认情况下，所有事件都会被记录。
 
-* **现有环境** （在此即将到来的日期之前创建）：
-   * 将定期删除超过&#x200B;**7年**&#x200B;的复制、DAM和页面审核日志。
-   * 默认情况下，将记录所有事件。
-   * 此高默认阈值可防止意外删除最近的数据。 但是，建议配置较低的值以优化存储库性能。
+* **现有环境**（在此即将到来的日期之前创建）：
+   * 超过 **7 年**&#x200B;的复制、DAM 和页面审计日志将定期删除。
+   * 默认情况下，所有事件都会被记录。
+   * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
-* 您可以通过OSGi配置覆盖来修改这些默认值。
+* 您可以通过 OSGi 配置覆盖来修改这些默认设置。
 
 有关更多详细信息，请参阅[维护任务文章](/help/operations/maintenance.md#defaults)。
 
-### Edge计算(Alpha计划) {#edge-computing}
+### 边缘计算（Alpha 计划） {#edge-computing}
 
-Edge计算允许您在CDN层执行JavaScript，使数据处理更接近于最终用户。 这减少了延迟，并可在边缘实现响应式动态体验。
+边缘计算允许您在内容传递网络 (CDN) 层执行 JavaScript，使数据处理更接近最终用户。这降低了延迟，使得边缘设备能够提供响应迅速、动态丰富的体验。
 
 常见的用例包括：
 
-* 在授予对内容的访问权限之前，使用身份提供程序验证用户
-* 根据地理位置、设备类型或用户属性个性化内容
-* 充当CDN与您的来源之间的中间件
-* 在将来自第三方API的响应交付给浏览器之前，重新设置响应格式（可能聚合多个API响应）
-* 使用从各种后端拼合的内容，在边缘构成并提供服务器渲染的HTML
+* 在授予内容访问权限之前，通过身份标识提供商对用户进行身份验证
+* 根据地理位置、设备类型或用户属性对内容进行个性化设置
+* 充当 CDN 与您的源站之间的中间件
+* 在将第三方 API 的响应（可能还包括聚合多个 API 的响应）传递给浏览器之前，对其进行重新格式化
+* 使用从各种后端拼接的内容，在边缘构建并呈现服务器渲染的 HTML
 
-我们为实时生产站点的AEM Publish Delivery或Edge Delivery Services项目提供的机会有限。 如果您有兴趣参与或想了解更多信息，请发送电子邮件至[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，并提供您用例的简短描述。
+我们为实时生产站点提供的 AEM Publish Delivery 或 Edge Delivery Services 项目的机会数量有限。如果您有兴趣参与或想了解更多信息，请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) 并简要描述您的用例。
 
 ### Edge Delivery Services (Beta计划)的CDN配置 {#cdn-eds-beta}
 
-Adobe-Managed CDN提供了灵活的配置选项，如[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
+Adobe 管理的 CDN 提供灵活的配置选项，如这篇[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
 
-现在在Beta版中，为包括CDN源选择器、响应和请求转换等功能部署配置管道。 请联系[aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)以了解您的用例的详细信息。
+现在处于 beta 阶段，为包括 CDN 源选择器、响应和请求转换等功能部署配置管道。请联系 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 并提供您的用例详情。
 
-### AEM日志转发到更多目标(Beta程序) {#log-forwarding-beta}
+### AEM 日志转发至更多目标（Beta 项目） {#log-forwarding-beta}
 
-虽然可以从 Cloud Manager 下载日志，但许多组织发现将这些日志流式传输到首选记录目标很有帮助。AEM已支持AEM和CDN将日志转发到Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和OpenSearch）以及Splunk。 此功能以自助方式配置，并使用配置管道进行部署。
+虽然可以从 Cloud Manager 下载日志，但许多组织发现将这些日志流式传输到首选记录目标很有帮助。AEM 已经支持将 AEM 和 CDN 日志转发到 Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和 OpenSearch）和 Splunk。此功能以自助方式配置，并使用配置管道进行部署。
 
-现在处于Beta阶段，您可以将AEM日志转发到Amazon S3、Sumo Logic和您自己的New Relic帐户(而不是Adobe提供的帐户)。 请注意，这些日志记录目标支持AEM日志(包括Apache/Dispatcher)，但CDN日志不支持。 发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
+目前处于 beta 阶段，您可以将 AEM 日志转发到 Amazon S3、Sumo Logic 以及您自己的 New Relic 账户（非 Adobe 提供的账户）。请注意，这些日志记录目标支持 AEM 日志（包括 Apache/Dispatcher），但不支持 CDN 日志。发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
 
 更多信息请参阅[日志转发文档](/help/implementing/developing/introduction/log-forwarding.md)。
 
