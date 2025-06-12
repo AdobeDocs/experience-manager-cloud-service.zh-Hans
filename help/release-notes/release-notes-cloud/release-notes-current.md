@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 88%
+source-wordcount: '2077'
+ht-degree: 87%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 88%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -104,7 +104,7 @@ Content Hub现在还允许您[将所选资源及其演绎版](/help/assets/downl
 
 **Content Hub 中的 Dynamic Media 演绎版**
 
-直接在Content Hub用户界面[&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有Dynamic Media预设演绎版和智能裁剪以供下载。
+直接在Content Hub用户界面](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有[Dynamic Media预设演绎版和智能裁剪以供下载。
 
 &#x200B;![Dynamic Media 演绎版](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Content Hub现在还允许您[将所选资源及其演绎版](/help/assets/downl
 
 **Dynamic Media 与 AJO B2C 的原生集成**
 
-[Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic)的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
+[Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463792/?learn=on&enablevpops=&autoplay=true&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ OSGi 属性：
 
 ### 默认清除旧版本和审计日志 {#mt-defaults}
 
-目前，内容版本和审计日志的相关&#x200B;*清除维护任务*&#x200B;默认处于禁用状态，因此除非通过各自的 OSGi 属性进行明确配置，否则不会删除任何数据。
+目前，默认情况下，内容版本和审核日志已禁用其关联的&#x200B;*清除维护任务*，因此除非明确配置，否则不会删除任何数据。
 
 然而，为了优化存储库性能，从 **2025 年 6 月下旬**&#x200B;开始，将默认启用清除功能，并遵循以下指南：
 

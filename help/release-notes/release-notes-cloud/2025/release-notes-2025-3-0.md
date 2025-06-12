@@ -3,9 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.3.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.3.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: b1a551aeebd0b3c5cf8111bf30341bd4ac41536f
+exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
+source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1123'
 ht-degree: 100%
 
 ---
@@ -32,15 +33,11 @@ ht-degree: 100%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- 
+## 发布视频 {#release-video}
 
-## Release Video {#release-video}
+请查看 2025 年 3 月发布概述视频，了解 2025.3.0 版本中的新增功能摘要：
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
