@@ -3,13 +3,13 @@ title: 使用 [!DNL Adobe Sensei] 智能服务自动标记资产
 description: 使用可应用上下文和描述性业务标记的人工智能服务标记资产。
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # AEM Assets的智能标记 {#using-smart-tags}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中的未标记Assets {#smart-tag-existing-assets}
 
-DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hans#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
+DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## 使用AI生成的智能标记增强内容发现 {#ai-smart-tags}
+## 使用AI生成的元数据增强内容发现 {#ai-smart-tags}
 
 AI不会依赖手动输入，而是自动将描述性标记分配给数字资产。 这些AI生成的标记可提升元数据质量，使资产更容易搜索、分类和推荐。 此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。 例如，如果资产是图像，AI可以识别其中的对象、场景、情感甚至品牌徽标，并生成相关标记，如“日落”、“海滩”、“休假”或“微笑”。 人工智能生成的内容可以通过利用语义和词汇搜索技术增强对资产的搜索。 查看更多[搜索Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![增强型智能标记](assets/enhanced-smart-tags1.png)
 
-### 使用AI生成的智能标记 {#using-ai-generated-smart-tags}
+### 如何启用AI生成的元数据？ {#enable-ai-generated-metadata}
+
+要启用AI生成的元数据：
+
+* 所需的最低AEM版本为`20626`。
+
+* 你必须签署GenAI Rider协议。 有关更多信息，请与您的Adobe代表联系。
+
+  >[!IMPORTANT]
+  >
+  > 仅当您未定义资产标题时，AI生成的资产标题才会显示在资产卡中。 它不会覆盖您指定的资源标题。
+
+### 使用人工智能生成的元数据 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 1. 等待新上传的资源得到处理。 完成后，转到资源属性。
 
-1. 转到&#x200B;**[!UICONTROL AI生成的]**&#x200B;选项卡。 如果[!DNL Experience Manager]版本不兼容或未更新，则此选项卡不可见。 所需的最低AEM版本为`20626`。 其中包含以下字段：
+1. 转到&#x200B;**[!UICONTROL AI生成的]**&#x200B;选项卡。 如果[!DNL Experience Manager]版本不兼容或未更新，则此选项卡不可见。 其中包含以下字段：
 
    * **[!UICONTROL 生成的标题]：**&#x200B;标题提供了简洁明了的标题，其中捕获了已上传资源的核心概念，使其易于一目了然。 添加资源时，如果您提供标题（在`dc:title`中），则该标题将显示在资源浏览视图中。 如果留空，将自动分配AI生成的标题。
    * **[!UICONTROL 生成的描述]：**&#x200B;该描述提供了资产相关内容的简短但信息丰富的摘要，可帮助用户和搜索模块快速掌握其相关性。

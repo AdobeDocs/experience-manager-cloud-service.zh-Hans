@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 76%
+source-wordcount: '2499'
+ht-degree: 74%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 76%
 
 ![查看资产的元数据](assets/metadata-view.png)
 
-*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 标题、描述和上传日期等基本元数据在[!UICONTROL 基本]选项卡中提供。[!UICONTROL 高级]选项卡包含更多高级元数据，例如相机型号、镜头详细信息和地理位置标记。[!UICONTROL 标记]选项卡包含根据图像的内容自动应用的标记。
 
@@ -85,7 +85,7 @@ ht-degree: 76%
 
 ![查看资产的智能标记](assets/metadata-view-tags.png)
 
-*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 智能标记还包含以百分比显示的置信度分数。它指示与所应用标记对应的置信度。您可以审核自动应用的智能标记。
 
@@ -250,13 +250,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 要查看已配置的根标记，请转到资产的详细信息页面，在该页面中执行元数据表单和根标记之间的映射。
 
-## 使用AI生成的智能标记增强内容发现 {#ai-smart-tags}
+## 使用AI生成的元数据增强内容发现 {#ai-smart-tags}
 
 AI不会依赖手动输入，而是自动将描述性标记分配给数字资产。 这些AI生成的标记可提升元数据质量，使资产更容易搜索、分类和推荐。 此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。 例如，如果资产是图像，AI可以识别其中的对象、场景、情感甚至品牌徽标，并生成相关标记，如“日落”、“海滩”、“休假”或“微笑”。 人工智能生成的内容可以通过利用语义和词汇搜索技术增强对资产的搜索。 查看更多[搜索Assets](search-assets-view.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![增强型智能标记](assets/enhanced-smart-tags.png)
+![AI生成的元数据](/help/assets/assets/enhanced-smart-tags.png)
 
-### 使用AI生成的智能标记 {#using-ai-generated-smart-tags}
+### 如何启用AI生成的元数据？ {#enable-ai-generated-metadata}
+
+要启用AI生成的元数据：
+
+* 所需的最低AEM版本为`20626`。
+
+* 你必须签署GenAI Rider协议。 有关更多信息，请与您的Adobe代表联系。
+
+  >[!IMPORTANT]
+  >
+  > 仅当您未定义资产标题时，AI生成的资产标题才会显示在资产卡中。 它不会覆盖您指定的资源标题。
+
+### 使用人工智能生成的元数据 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -269,7 +281,7 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 1. 等待新上传的资源得到处理。 完成后，转到资源详细信息。
 
-1. 转到&#x200B;**[!UICONTROL AI生成的]**&#x200B;选项卡。 如果[!DNL Experience Manager]版本不兼容或未更新，则此选项卡不可见。 所需的最低AEM版本为`20626`。 其中包含以下字段：
+1. 转到&#x200B;**[!UICONTROL AI生成的]**&#x200B;选项卡。 如果[!DNL Experience Manager]版本不兼容或未更新，则此选项卡不可见。  其中包含以下字段：
 
    * **[!UICONTROL 生成的标题]：**&#x200B;标题提供了简洁明了的标题，其中捕获了已上传资源的核心概念，使其易于一目了然。 添加资源时，如果您提供标题（在`dc:title`中），则该标题将显示在资源浏览视图中。 如果留空，将自动分配AI生成的标题。
    * **[!UICONTROL 生成的描述]：**&#x200B;该描述提供了资产相关内容的简短但信息丰富的摘要，可帮助用户和搜索模块快速掌握其相关性。
@@ -279,13 +291,13 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
