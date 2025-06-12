@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 42%
@@ -30,7 +30,7 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->**专业测试环境**&#x200B;功能目前仅通过早期采用计划提供。 若要注册为早期采用者，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>**专业测试环境**&#x200B;功能目前仅通过私人测试版计划提供。 要注册私密测试版，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 各个环境的功能取决于环境的[项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中启用的解决方案。
 
@@ -299,7 +299,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console**。
 
-有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
 
 单击单个环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)时，也可以从&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡中使用此选项。
 

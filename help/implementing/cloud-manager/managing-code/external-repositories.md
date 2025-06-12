@@ -3,11 +3,11 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab、Bitbucket和Azure DevOps存储库集成。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="率先采用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
+badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2077'
 ht-degree: 25%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->本文中介绍的功能只能通过早期采用计划获得。 有关更多详细信息，以及要注册为早期采用者，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
+>本文中介绍的功能只能通过私有Beta版计划获得。 有关更多详细信息以及注册私人测试版，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
 
 
 ## 配置外部存储库
@@ -82,13 +82,13 @@ ht-degree: 25%
    | **添加新的访问令牌** | **存储库类型： GitHub Enterprise**<br><ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
    | | **存储库类型： GitLab**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
    | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
-   | | **存储库类型： Azure DevOps**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>当您在Azure DevOps中创建应用程序密码时，请确保它包含以下必需的应用密码权限：<ul><li>存储库（只读）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+   | | **存储库类型： Azure DevOps**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>当您在Azure DevOps中创建应用程序密码时，请确保它包含以下必需的应用密码权限：<ul><li>存储库（只读）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
    另请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
    >[!IMPORTANT]
    >
-   >功能&#x200B;**添加新访问令牌**&#x200B;当前处于早期采用者阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
+   >功能&#x200B;**添加新访问令牌**&#x200B;当前为私人测试版。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
 
 1. 点击&#x200B;**验证**。
 

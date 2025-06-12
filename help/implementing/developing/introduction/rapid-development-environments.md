@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '5392'
+source-wordcount: '5391'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ RDE使开发人员能够快速部署和审查更改，从而最大限度地减�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-您可以看到其他视频演示[如何设置它](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[开发生命周期](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)。
+您可以看到其他视频演示[如何设置它](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[开发生命周期](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)。
 
 ## 简介 {#introduction}
 
@@ -179,7 +179,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 可以使用[查看组织ID](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下记录的方法查找您自己的组织ID。
+   * 可以使用[查看组织ID](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下记录的方法查找您自己的组织ID。
 
 1. 接下来，配置您的项目ID：
 
@@ -195,7 +195,7 @@ retrieving programs of your organization ...
 
    这些步骤要求您成为Cloud Manager **开发人员 — Cloud Service**&#x200B;产品配置文件的成员。 有关更多详细信息，请参阅[将团队成员分配给Cloud Manager产品配置文件 — 分配开发人员产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
 
-有关更多信息和演示，请观看视频教程[如何设置RDE (06:24)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
+有关更多信息和演示，请观看视频教程[如何设置RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
 </details>
 
 ## 在开发新功能时使用RDE {#using-rde-while-developing-a-new-feature}
@@ -524,14 +524,14 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-有关更多信息和演示，请参阅视频教程[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
+有关更多信息和演示，请参阅视频教程[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
 
 
 ## 从外部Git提供商部署到RDE {#deploy-to-rde}
 
 >[!NOTE]
 >
->此功能可通过率先采用者计划获取。 如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)发送电子邮件。 请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+>此功能可通过Beta程序使用。 如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)发送电子邮件。 请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
 在使用[自带Git (BYOG)配置](/help/implementing/cloud-manager/managing-code/external-repositories.md)时，Cloud Manager支持直接从外部Git提供程序将代码部署到RDE。
 
@@ -545,7 +545,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 * 当前，仅AEM内容和Dispatcher包支持部署到RDE。
 * 尚不支持部署其他包类型(例如，完整的AEM应用程序包)。
-* 目前，不支持使用注释重置RDE环境。 相反，必须使用现有的AIO CLI重置命令，如此处[&#128279;](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)所述的。
+* 目前，不支持使用注释重置RDE环境。 相反，必须使用现有的AIO CLI重置命令，如此处](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)所述的[。
 
 **工作方式**
 
@@ -1151,7 +1151,7 @@ Forms开发人员可以使用AEM Forms Cloud Service快速开发环境快速开�
 
 ## rde教程
 
-要了解AEM as a Cloud Service中的RDE，请参阅视频教程，其中演示了[如何设置它、如何使用它以及开发生命周期(01:25)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/overview)。
+要了解AEM as a Cloud Service中的RDE，请参阅视频教程，其中演示了[如何设置它、如何使用它以及开发生命周期(01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)。
 
 ## 疑难解答 {#troubleshooting}
 

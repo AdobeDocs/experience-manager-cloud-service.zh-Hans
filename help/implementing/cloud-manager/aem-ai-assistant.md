@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager(Beta有限公司)人工智能助手
+title: Adobe Experience ManagerAI助手（私人测试版）
 description: 使用Adobe Experience Manager中的AI助手帮助您查找答案、排除故障并浏览Sites、Assets、Forms和Cloud Manager。
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,19 +7,19 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
 
 # 关于Adobe Experience Manager中的AI助手 {#aem-home}
 
-AEM (Adobe Experience Manager)中的AI助手提供了一个对话界面，旨在简化对Adobe Experience Manager相关查询的查找。 它可帮助您访问Experience League中的产品知识、排查问题并探索可用信息。 在有限的Beta计划期间，AI助手支持Adobe Experience Manager as a Cloud Service，包括Sites、Assets、Forms和Cloud Manager。
+AEM (Adobe Experience Manager)中的AI助手提供了一个对话界面，旨在简化对Adobe Experience Manager相关查询的查找。 它可帮助您访问Experience League中的产品知识、排查问题并探索可用信息。 在私人测试版计划期间，AI Assistant支持Adobe Experience Manager as a Cloud Service，包括Sites、Assets、Forms和Cloud Manager。
 
 >[!IMPORTANT]
->确保您已查看并提交了用户协议，以便Adobe能够启用AI助手功能，供您测试并参与Beta计划。
+>请确保您已查看并提交了用户协议，以便Adobe能够启用AI Assistant功能，以便您试用并参与私人测试版计划。
 >
 >如有任何问题，请通过与Adobe ID关联的电子邮件地址向[Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com)发送电子邮件。
 
@@ -47,7 +47,7 @@ AEM中的AI助手在设计中特别强调隐私、安全和治理。
 
 AI Assistant的当前范围侧重于解决Adobe Experience Manager as a Cloud Service的产品知识问题。 此范围包括对关键领域(如Sites、Assets、Forms和Cloud Manager)的全面支持。
 
-## AEM Forms的AI助手(Forms Experience Builder) {#ai-forms-builder}
+## AEM Forms 的 AI 助手（表单体验生成器） {#ai-forms-builder}
 
 除了用于产品知识的常规AI助手之外，AEM还为AEM Forms (Forms Experience Builder)提供专门的&#x200B;**[AI助手](/help/edge/docs/forms/forms-ai-assistant.md)**。 此增强型助理可以通过自然语言提示和回答表单特定问题来主动帮助您创建和配置表单。
 
@@ -74,7 +74,7 @@ AEM Forms的AI助手提供：
 
 >[!NOTE]
 >
-> 适用于AEM Forms的AI助手(Forms Experience Builder)可通过率先采用者程序获取。 将工作地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)以请求访问权限。
+> AEM Forms的AI助手(Forms Experience Builder)在私人测试版计划下提供。 将工作地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)以请求访问权限。
 
 要了解有关使用AI Assistant for AEM Forms的更多信息（包括详细示例和最佳实践），请参阅[AI Assistant for AEM Forms文档](/help/edge/docs/forms/forms-ai-assistant.md)。
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '6242'
+source-wordcount: '6239'
 ht-degree: 99%
 
 ---
@@ -1201,14 +1201,14 @@ ht-degree: 99%
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [生成环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
-      + [专业测试环境（率先采用者）](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [专业测试环境(Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + 管理您的代码  {#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [添加一个 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [添加一个专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [添加一个外部存储库（早期采用者）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [管理外部存储库的访问令牌（早期采用者）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [添加外部存储库(Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [管理外部存储库的访问令牌(Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

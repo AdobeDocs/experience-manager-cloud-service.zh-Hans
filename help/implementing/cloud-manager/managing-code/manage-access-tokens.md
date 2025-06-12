@@ -3,9 +3,9 @@ title: 在Cloud Manager中管理外部存储库的访问令牌
 description: 了解如何在AEM Cloud Manager中查看、编辑和删除用于自带Git的访问令牌。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="率先采用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#manage-access-tokens"
+badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 
 >[!NOTE]
 >
->本文中介绍的功能只能通过早期采用计划获得。 有关更多详细信息，以及要注册为早期采用者，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
+>本文中介绍的功能只能通过私有Beta版计划获得。 有关更多详细信息以及注册私人测试版，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
 
 ## 查看访问令牌 {#view-access-tokens}
 
