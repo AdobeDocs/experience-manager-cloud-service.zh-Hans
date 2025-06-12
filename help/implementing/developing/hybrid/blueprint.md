@@ -83,7 +83,7 @@ SPA组件必须与页面模型同步，并根据对内容所做的任何更改�
 * `:itemsOrder`：已排序的子项列表。 JSON映射对象不保证其字段的顺序。 通过同时具有映射和当前数组，API的使用者可以同时拥有这两种结构的好处
 * `:path`：项目的内容路径（位于表示页面的项目上）
 
-另请参阅[AEM Content Services快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)。
+另请参阅[AEM Content Services快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)。
 
 ### 特定于Framework的模块 {#framework-specific-module}
 
