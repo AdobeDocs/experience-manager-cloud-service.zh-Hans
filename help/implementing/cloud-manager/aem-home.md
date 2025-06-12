@@ -20,7 +20,7 @@ Experience Hub引入了一个集中化的起点，以便在Adobe Experience Mana
 
 观看重新构建的AEM Experience Hub工作区的快速导览（1分钟27秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3463277?quality=12&learn=on&captions=chi_hans)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
