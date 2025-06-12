@@ -5,18 +5,25 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 85%
+source-wordcount: '1338'
+ht-degree: 83%
 
 ---
 
-# 样式系统{#style-system}
+
+# 样式系统 {#style-system}
 
 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 
 使用样式系统，您无需为每种样式开发自定义组件，也无需自定义组件对话框来启用此类样式功能。样式系统允许使用更多可重用组件，可以快速轻松地调整这些组件以满足内容作者的需求，而无需进行任何 AEM 后端开发。
+
+>[!NOTE]
+>
+>样式系统仅适用于使用页面编辑器创建的页面。
+>
+>使用[通用编辑器](/help/implementing/universal-editor/introduction.md)创建并与[Edge Delivery Services](/help/edge/overview.md)一起提供的样式页面可以完全通过您的GitHub项目来完成。
 
 ## 用例 {#use-case}
 

@@ -5,14 +5,16 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1113'
-ht-degree: 100%
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 了解 Cloud Manager 和快速 Site 创建工作流 {#understand-cloud-manager}
+
+{{traditional-aem}}
 
 了解 Cloud Manager 以及它如何将新的快速 Site 创建流程联系起来。
 
@@ -128,7 +130,7 @@ Cloud Manager 是 AEM as a Cloud Service 的必要组件，并且充当平台的
 
 我们建议您查看文档[从模板创建 Site](create-site.md)来继续快速 Site 创建历程的下一部分，以下是一些其他可选资源，这些资源对文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=zh-Hans) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
-* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=zh-Hans) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色及其管理方式的详细信息，请参阅本文档。
+* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
+* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色及其管理方式的详细信息，请参阅本文档。
 * [npm](https://www.npmjs.com) – 用于快速构建 Site 的 AEM 主题基于 npm。
 * [webpack](https://webpack.js.org) – 用于快速构建 Site 的 AEM 主题依赖 webpack。

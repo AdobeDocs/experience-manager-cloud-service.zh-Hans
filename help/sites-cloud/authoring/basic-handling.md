@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 61%
@@ -15,13 +15,11 @@ ht-degree: 61%
 
 # 基本处理 {#basic-handling}
 
-此文档旨在概述使用AEM创作环境时的基本处理。
+本文档旨在概述使用AEM创作环境时的基本操作。
 
 >[!TIP]
 >
->在整个AEM环境中都可以使用键盘快捷键。 特别是当[使用站点控制台](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)和[页面编辑器](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)时。
-
-{{edge-delivery-authoring}}
+>用户在整个AEM环境中都可以使用键盘快捷键。 特别是当[使用站点控制台](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)和[页面编辑器](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)时。
 
 ## 触屏优化 UI {#a-touch-enabled-ui}
 
@@ -37,7 +35,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ## 产品导航 {#product-navigation}
 
-每当用户首次访问某个控制台时，都会启动一个产品导航教程。请花上一分钟时间选择以全面了解AEM的基本处理。
+每当用户首次访问某个控制台时，都会启动一个产品导航教程。请花上一分钟时间来选择，了解有关AEM基本处理方式的详尽概述。
 
 ![导航教程](assets/basic-handling-tutorial.png)
 
@@ -64,7 +62,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 **导航**&#x200B;面板：
 
-![“导航”面板](assets/basic-handling-navigation.png)
+![导航面板](assets/basic-handling-navigation.png)
 
 当您在控制台和内容中导航时，浏览器选项卡的标题将更新以反映您的位置。
 
@@ -78,7 +76,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 | 资源 | 通过“资源”控制台，您可以导入和管理[数字资源，如图像、视频、文档和音频文件](/help/assets/overview.md)。随后，这些资源便可由同一 AEM 实例上运行的任何站点使用。您还可以从 Assets 控制台创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 个性化 | 此控制台为[创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md)提供了一个工具框架。 |
 | 内容片段 | 您可使用[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)设计、创建、管理和发布独立于页面的内容。它们允许您准备结构化内容，以准备在多个位置/多个渠道上使用，非常适合于页面创作和 headless 投放。 |
-| 生成变体 | [生成变体](/help/generative-ai/generate-variations.md)使用生成人工智能(AI)根据提示创建内容变体；这些提示由Adobe提供，或由用户创建和管理。 |
+| 生成变体 | [生成变体](/help/generative-ai/generate-variations.md)使用生成人工智能(AI)根据提示创建内容变体；这些提示由Adobe提供或由用户创建和管理。 |
 
 ## “工具”面板 {#tools-panel}
 
@@ -130,7 +128,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
   ![“帮助”图标](assets/basic-handling-help.png)
 
-* **控制台** — 第一次导航系统时，[一系列幻灯片将介绍AEM导航](#product-navigation)。
+* **控制台** — 第一次导航系统时，[一连串幻灯片将介绍AEM导航](#product-navigation)。
 
   ![教程](assets/basic-handling-console-tutorial.png)
 

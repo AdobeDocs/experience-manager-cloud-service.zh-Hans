@@ -1,11 +1,11 @@
 ---
 title: AEM页面编辑器
-description: AEM页面编辑器是一个用于创作内容的强大工具。
+description: AEM页面编辑器是用于创作内容的强大工具。
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -14,7 +14,7 @@ ht-degree: 39%
 
 # AEM页面编辑器 {#editing-page-content}
 
-在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中创建页面后，您可以使用AEM页面编辑器编辑该页面的内容，该编辑器是用于创作内容的强大工具。
+在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中创建页面后，您可以使用AEM页面编辑器来编辑该页面的内容，该编辑器是用于创作内容的强大工具。
 
 >[!NOTE]
 >
@@ -23,6 +23,8 @@ ht-degree: 39%
 >[!NOTE]
 >
 >您的帐户需要拥有适当的访问权限和权限才能编辑页面。 如果您没有权限，请联系您的系统管理员。
+
+{{traditional-aem}}
 
 ## 方向 {#orientation}
 

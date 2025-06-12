@@ -4,12 +4,14 @@ description: 本文介绍了 SPA 的概念，演练了如何使用基本 SPA 应
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
 
 ---
+
 
 # SPA 简介和演练 {#spa-introduction}
 
@@ -46,7 +48,7 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 
 >[!TIP]
 >
->任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+>任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ### 什么是 SPA？ {#what-is-a-spa}
 
@@ -211,7 +213,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
 ### 与 SPA 编辑器进行交互 {#interaction-with-the-spa-editor}
 
-使用示例WKND SPA Project应用程序，可清楚地了解该应用程序在发布时的行为和加载方式，使用内容服务进行JSON内容交付和异步加载资源。
+使用示例WKND SPA项目应用程序，可清楚地了解该应用程序在发布时的行为和加载方式，使用内容服务进行JSON内容交付和异步加载资源。
 
 此外，对于内容作者，使用SPA编辑器在AEM中可无缝创建内容。
 
@@ -245,7 +247,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
 ## AEM 中的 Headful 和 Headless {#headful-headless}
 
-可以通过 AEM 中灵活的集成级别启用 SPA，包括在 AEM 外部开发和维护的 SPA。此外，SPA也可以在AEM中使用，同时使用AEM无头向其他端点交付内容。
+可以通过 AEM 中灵活的集成级别启用 SPA，包括在 AEM 外部开发和维护的 SPA。此外，还可在AEM中使用SPA，同时使用AEM将内容无头交付给其他端点。
 
 >[!TIP]
 >

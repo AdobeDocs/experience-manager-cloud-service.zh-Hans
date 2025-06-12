@@ -1,17 +1,19 @@
 ---
-title: 快速站点创建和前端自定义
+title: 快速 Site 创建和前端自定义
 description: 了解快速站点创建工具如何使用站点模板、主题和前端管道来快速部署新站点并使前端开发脱钩。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%
 
 ---
 
-# 快速站点创建和前端自定义 {#quick-site-creation}
+# 快速 Site 创建和前端自定义 {#quick-site-creation}
+
+{{traditional-aem}}
 
 了解快速站点创建工具如何使用站点模板、主题和前端管道来快速部署新站点并使前端开发脱钩。
 
@@ -31,7 +33,7 @@ ht-degree: 4%
 
 ## 其他资源 {#additional-resources}
 
-由于快速站点创建工具使用许多AEM功能，因此这些附加资源可能会有所帮助。
+由于快速站点创建工具使用许多AEM功能，因此这些附加资源可能会很有用。
 
 * [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md) — 了解如何使用AEM站点模板来预定义站点结构和初始内容，以便您快速创建新站点。
 * [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) — 了解如何使用AEM站点主题自定义站点的样式和设计。

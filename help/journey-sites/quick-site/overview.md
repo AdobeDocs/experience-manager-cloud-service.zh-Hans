@@ -5,14 +5,16 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1020'
-ht-degree: 100%
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # AEM 快速 Site 创建历程 {#quick-site-creation-journey}
+
+{{traditional-aem}}
 
 从这里开始引导式历程，通过易用的 AEM 快速 Site 创建工具来简化 AEM Site 的前端开发并在不具备 AEM 后端知识的情况下快速自定义您的 Site。
 
@@ -76,5 +78,5 @@ AEM Site 是用于创建和管理数字体验的强大工具集。内容作者�
 
 查看这些附加资源，详细了解 AEM 的强大功能如何协作。
 
-* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans) – 如果您已对 AEM 有一定的了解，则可能需要直接参阅深入的技术文档。
+* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 有一定的了解，则可能需要直接参阅深入的技术文档。
 * [Site 管理文档](/help/sites-cloud/administering/site-creation/create-site.md) - 查看有关 Site 创建的技术文档，了解有关快速 Site 创建工具的功能的更多详细信息。

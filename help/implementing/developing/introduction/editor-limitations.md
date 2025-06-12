@@ -1,19 +1,20 @@
 ---
-title: 编辑器限制
-description: 触屏UI中的编辑器利用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。
+title: 页面编辑器限制
+description: 页面编辑器使用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 4%
 
 ---
 
-# 编辑器限制 {#editor-limitations}
 
-触屏UI中的编辑器利用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。 本页总结了这些限制，并在可能的情况下提供了解决方案或变通办法。
+# 页面编辑器限制 {#editor-limitations}
+
+[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)使用叠加与iframe中限定的内容交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。 本页总结了这些限制，并在可能的情况下提供了解决方案或变通办法。
 
 ## 功能限制 {#functional-limitations}
 

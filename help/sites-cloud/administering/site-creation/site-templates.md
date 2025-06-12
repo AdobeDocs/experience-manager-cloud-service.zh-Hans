@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 85%
@@ -14,13 +14,15 @@ ht-degree: 85%
 
 # 站点模板 {#site-templates}
 
+{{traditional-aem}}
+
 了解如何使用 AEM 站点模板来预定义站点结构和初始内容，以便您快速创建站点。
 
 ## 概述 {#overview}
 
 使用预定义的结构可以方便地根据一组现有标准快速部署新站点。站点模板是一种将基本站点内容组合成方便且可重用的包的方法。
 
-站点模板通常包含基本站点内容和结构以及站点样式信息（称为[站点主题](site-themes.md)），以便快速启动新站点。 管理员在站点创建过程[&#128279;](create-site.md)中选择站点所基于的站点模板。
+站点模板通常包含基本站点内容和结构以及站点样式信息（称为[站点主题](site-themes.md)），以便快速启动新站点。 管理员在站点创建过程](create-site.md)中选择站点[所基于的站点模板。
 
 模板具有强大的功能，因为它们可重用和自定义。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
 
@@ -34,17 +36,17 @@ ht-degree: 85%
 
 您可以将多个模板添加到 AEM，然后将其用于[创建站点。](create-site.md)
 
-1. 登录到您的 AEM 创作环境，并导航到 Sites 控制台
+1. 登录到您的 AEM 创作环境，并导航到 Site 控制台
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 在屏幕的右上角选择&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建站点**。
+1. 在屏幕的右上角选择&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建 Site**。
 
    ![从模板创建站点](../assets/create-site-from-template.png)
 
-1. 在“创建站点向导”中，在左栏的顶部选择&#x200B;**导入**。
+1. 在“创建 Site 向导”中，在左栏的顶部选择&#x200B;**导入**。
 
-   ![站点创建向导](../assets/site-creation-wizard.png)
+   ![Site 创建向导](../assets/site-creation-wizard.png)
 
 1. 在文件浏览器中，找到要使用的模板并选择&#x200B;**上传**。
 
@@ -61,8 +63,8 @@ ht-degree: 85%
 站点模板只是带有逻辑结构的包，它清楚地反映了包内容的目的。站点模板具有以下结构。
 
 * `files`：包含 UI 套件、XD 文件和可能的其他文件的文件夹
-* `previews`：包含站点模板的屏幕截图的文件夹
-* `site`：为从此模板创建的每个站点复制的内容的内容包，例如页面模板、页面等。
+* `previews`：包含 Site 模板的屏幕截图的文件夹
+* `site`：为从此模板创建的每个 Site 复制的内容的内容包，例如页面模板、页面等。
 * `theme`：用于修改站点外观的[站点主题](site-themes.md)的源，包括CSS、JavaScript等。
 
 ## 标准站点模板 {#standard-site-template}

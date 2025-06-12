@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 86%
@@ -13,6 +13,8 @@ ht-degree: 86%
 ---
 
 # 站点主题 {#site-themes}
+
+{{traditional-aem}}
 
 了解如何使用 AEM 站点主题来自定义站点的样式和设计。
 
@@ -42,7 +44,7 @@ AEM 站点主题是一个包，其中包含的 CSS、JavaScript 和静态资源�
 站点主题只是带有逻辑结构的包，它清楚地反映了包内容的目的。对于典型的前端项目，Adobe建议为站点主题使用以下结构：
 
 * `src/theme.ts`：JS &amp; CSS 主题的主要入口点
-* `src/site`：应用于整个站点的 JS &amp; CSS 文件
+* `src/site`：应用于整个 Site 的 JS &amp; CSS 文件
 * `src/components`：特定于 AEM 组件的 JS &amp; CSS 文件
 * `src/resources`：图标、徽标和字体等静态文件
 

@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '1282'
-ht-degree: 100%
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 97%
 
 ---
 
@@ -21,6 +21,12 @@ ht-degree: 100%
 * 快速创建 Lighthouse 分数优异的网站，并通过 Operational Telemetry 持续监控网站性能。
 * 通过分离内容来源而提高创作效率。开箱即用，您可以使用通用编辑器进行 AEM 创作，也可以使用基于文档的创作。这样即可在同一网站上使用多个内容源。
 * 使用一个内置的试验框架，通过该框架，可快速地创建测试、不影响性能地执行测试并快速地发布到测试获胜方的生产环境。
+
+>[!TIP]
+>
+>**要立即动手操作吗？**
+>
+>如果要立即动手，您可以[在aem.live上查看教程，从而在30分钟内通过AEM创作开始您自己的Edge Delivery Services项目。](https://www.aem.live/developer/ue-tutorial)
 
 ## 敏捷响应业务需求 {#agile-reaction}
 
@@ -54,6 +60,22 @@ Edge Delivery Services 是一组可组合的服务，通过这些服务，可非
 
 Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储库管理和部署代码。新内容可立即添加，而不经过重建过程。
 
+### 使用通用编辑器进行 AEM 创作{#wysiwyg-authoring}
+
+通用编辑器是一个所见即所得 (WYSIWYG) 的可自定义的一站式场所，可通过视觉预览在上下文中实时编辑内容。
+
+* 使用通用编辑器进行 AEM 创作，您可以提高创作效率，无论是无头还是有头创作。
+* 您可以利用 AEM 全面的内容管理功能，包括工作流程和治理。
+* 利用众多扩展点来支持您自己的流程和集成。
+* 您可以使用 GitHub 中的 CSS 和 JavaScript 开发您网站的功能。
+
+![使用通用编辑器进行 AEM 创作](assets/wysiwyg-authoring.png)
+
+开始使用通用编辑器和 Edge Delivery Services 进行 AEM 创作：
+
+* 有关使用通用编辑器进行 AEM 创作的概述，请参阅 aem.live 文档中的文档[为 Edge Delivery Services 进行 AEM 创作](https://www.aem.live/docs/aem-authoring)。
+* 有关开发人员概述，请参阅 aem.live 文档中的文档[快速入门 - 通用编辑器开发人员教程](https://www.aem.live/developer/ue-tutorial)。
+
 ### 基于文档的创作 {#document-based}
 
 通过基于文档的创作，您可以直接使用 Microsoft Word 或 Google Docs 中的内容，以便这些来源成为您网站上的页面。此外，标题、列表、图像、字体元素都可以从初始源转移到网站中。
@@ -70,22 +92,6 @@ Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储
 * 有关如何开始使用 Edge Delivery 的详细信息，请参阅 [aem.live 文档的“构建”部分。](https://www.aem.live/docs/#build)
 * 要了解如何使用 Edge Delivery 创作和发布内容，请参阅 [aem.live 文档的“发布”部分。](https://www.aem.live/docs/authoring)
 * 要了解如何正确启动您的网站项目，请参阅 [aem.live 文档的“启动”部分](https://www.aem.live/docs/#launch)
-
-### 使用通用编辑器进行 AEM 创作{#wysiwyg-authoring}
-
-通用编辑器是一个所见即所得 (WYSIWYG) 的可自定义的一站式场所，可通过视觉预览在上下文中实时编辑内容。
-
-* 使用通用编辑器进行 AEM 创作，您可以提高创作效率，无论是无头还是有头创作。
-* 您可以利用 AEM 全面的内容管理功能，包括工作流程和治理。
-* 利用众多扩展点来支持您自己的流程和集成。
-* 您可以使用 GitHub 中的 CSS 和 JavaScript 开发您网站的功能。
-
-![使用通用编辑器进行 AEM 创作](assets/wysiwyg-authoring.png)
-
-开始使用通用编辑器和 Edge Delivery Services 进行 AEM 创作：
-
-* 有关使用通用编辑器进行 AEM 创作的概述，请参阅 aem.live 文档中的文档[为 Edge Delivery Services 进行 AEM 创作](https://www.aem.live/docs/aem-authoring)。
-* 有关开发人员概述，请参阅 aem.live 文档中的文档[快速入门 - 通用编辑器开发人员教程](https://www.aem.live/developer/ue-tutorial)。
 
 ### 决定你的创作方法 {#authoring-method}
 

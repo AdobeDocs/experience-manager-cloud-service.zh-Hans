@@ -4,7 +4,7 @@ description: 前端管道增强了开发人员的独立性，并加快了开发�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 
 
 # 使用前端管道开发站点 {#developing-site-with-front-end-pipeline}
+
+{{traditional-aem}}
 
 [前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)为前端开发人员提供了更大的独立性，并显着加快了开发。 本文介绍了该过程的工作方式，并重点介绍了可帮助您充分利用该过程的关键注意事项。
 

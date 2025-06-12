@@ -1,17 +1,18 @@
 ---
-title: 弃用SPA编辑器
+title: SPA 编辑器弃用
 description: 尽管SPA编辑器仍受Adobe支持，但请了解它弃用对您的项目有何影响以及您对未来项目有哪些选项。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7bff178eabdf7e0d89e7195be6ca109db19ee655
+exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 弃用SPA编辑器 {#spa-editor-deprecation}
+# SPA 编辑器弃用 {#spa-editor-deprecation}
 
 尽管SPA编辑器仍受Adobe支持，但请了解它弃用对您的项目有何影响以及您对未来项目有哪些选项。
 
@@ -32,7 +33,7 @@ Adobe通过[2025.01版的AEM as a Cloud Service，](/help/release-notes/release-
 * [AEM SPA项目核心](https://github.com/adobe/aem-spa-project-core)
 * [AEM SPA页面模型管理器](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA组件映射](https://github.com/adobe/aem-spa-component-mapping)
-* [AEM SPA React可编辑组件](https://github.com/adobe/aem-react-editable-components)
+* [AEM SPA React 可编辑组件](https://github.com/adobe/aem-react-editable-components)
    * [AEM React核心组件](https://github.com/adobe/aem-react-core-wcm-components)
    * [AEM React核心组件库](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [AEM React核心组件SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
@@ -50,7 +51,7 @@ Adobe通过[2025.01版的AEM as a Cloud Service，](/help/release-notes/release-
 
 * **[通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)**&#x200B;是直接替换SPA编辑器的最佳工具。
    * 通用编辑器也是一个可视编辑器，专门为分离实施而设计，融入Adobe从SPA编辑器获得的全部体验。
-   * 此外，还为AEM 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)发布了通用编辑器(AEM 6.5的发行版本为2024.11.05)，因此除了Cloud Services之外，它还支持AMS和内部部署用例。
+   * 此外，还为AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)发布了[通用编辑器(AEM 6.5的发行版本为2024.11.05)，因此除了Cloud Services之外，它还支持AMS和内部部署用例。
 * **[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;是首选基于表单的编辑器的替代方法。
    * 将内容结构化为内容片段而非页面时，内容片段编辑器最合适。
 

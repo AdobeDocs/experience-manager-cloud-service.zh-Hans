@@ -1,13 +1,13 @@
 ---
 title: 在AEM中创作内容的方法
-description: 了解在AEM中创作内容的不同方式以及它们之间的差异。
+description: 了解在AEM中创作内容的各种方式以及它们之间的差异。
 feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -16,22 +16,32 @@ ht-degree: 0%
 
 了解在AEM中创作内容的不同方式、它们的不同之处，以及何时可以相互使用内容。
 
-## AEM创作灵活性 {#authoring-flexibility}
+## AEM的创作灵活性 {#authoring-flexibility}
 
 AEM as a Cloud Service提供了多个不同的编辑器，用于编辑不同类型的内容并支持不同的创作用例。
 
-* [使用页面编辑器进行WYSIWYG创作](#page-editor) — 页面编辑器是用于在AEM中创作内容的经典编辑器，已尝试数千个网站并受其信任。
-* [使用通用编辑器进行WYSIWYG创作](#universal-editor) — 通用编辑器是一种新式UI，允许您以与内容无关的方式创作AEM内容，可用于利用Edge Delivery Services的AEM项目。
-* [基于文档的创作](#document-based) — 如果您使用Edge Delivery服务，则可以选择在AEM控制台之外完全作为常规文档(如Microsoft Word或Google Docs)创作内容。
+* [使用通用编辑器进行WYSIWYG创作](#universal-editor) — 通用编辑器是一个新式UI，允许您以与内容无关的方式创作AEM内容，可用于利用Edge Delivery Services的AEM项目。
+* [使用页面编辑器进行WYSIWYG创作](#page-editor) — 页面编辑器是AEM中创作内容的经典编辑器，已尝试数千个网站并受其信任。
+* [基于文档的创作](#document-based) — 如果您使用Edge Delivery服务，则可以选择完全在AEM控制台之外创作Microsoft Word或Google Docs等传统文档的内容。
 * [AEM内容片段编辑器](#cf-editor) — 这是创建Headless内容的首选编辑器。
 
-由于AEM的集成和可伸缩性质，这些方法可单独使用，也可以根据项目的需求相互组合使用。
+由于AEM的集成性和可扩展性，这些方法可单独使用，也可以根据项目的需求相互结合使用。
 
 如果您不确定可以使用哪些创作选项，或者您想探索用于创作内容的新选项，请与您的系统管理员或项目经理联系。
 
+## 使用通用编辑器创作WYSIWYG {#universal-editor}
+
+通用编辑器是一个现代化的UI，允许您以与内容无关的方式创作AEM内容，并且是利用Edge Delivery Services的AEM项目的首选。
+
+![Universal Editor](assets/authoring-methods-ue.png)
+
+通用编辑器通过AEM中的站点控制台访问，但它提供了强大且与内容无关的灵活性，不仅可创作您的AEM内容，还可创作正确分析的外部内容。
+
+要了解有关通用编辑器的更多信息，请参阅文档[使用通用编辑器创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+
 ## 使用页面编辑器进行WYSIWYG创作 {#page-editor}
 
-这是用于在AEM中创作内容的经典编辑器，已尝试并受数千个网站的信任。
+这是用于编写传统AEM项目内容的经典编辑器，已尝试并受数千个网站的信任。
 
 ![AEM页面编辑器](assets/authoring-methods-page-editor.png)
 
@@ -39,23 +49,13 @@ AEM页面编辑器提供了一个集成环境，用于使用“所见即所得�
 
 要了解有关AEM页面编辑器的更多信息，请参阅文档[AEM页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)。
 
-## 使用通用编辑器创作WYSIWYG {#universal-editor}
-
-通用编辑器是一个现代化的用户界面，可让您以与内容无关的方式创作AEM内容，并且是利用Edge Delivery Services的AEM项目的首选。
-
-![Universal Editor](assets/authoring-methods-ue.png)
-
-通用编辑器通过AEM中的站点控制台访问，但它提供了强大且与内容无关的灵活性，不仅可以创作AEM内容，还可以创作正确仪表化的外部内容。
-
-要了解有关通用编辑器的更多信息，请参阅文档[使用通用编辑器创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)。
-
 ## 基于文档的创作  {#document-based}
 
-如果您使用Edge Delivery服务，则可以选择在[AEM **Sites**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)之外将内容作为常规文档进行创作，如Microsoft Word或Google Docs。
+如果您使用Edge Delivery服务，则可以选择在[AEM **站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)之外将内容作为常规文档进行创作，例如Microsoft Word或Google Docs。
 
 ![正在编辑基于文档的内容](assets/authoring-methods-document.jpg)
 
-通过基于文档的创作，作者可以使用他们已知并且仍从AEMEdge Delivery Services的速度和性能中受益的工具来发布其内容。 基于文档的创作不需要使用AEM控制台。
+通过基于文档的创作，作者可以使用他们已知并且仍从AEM Edge Delivery Services的速度和性能中受益的工具来发布其内容。 基于文档的创作不需要使用AEM控制台。
 
 要了解有关基于文档的创作的更多信息，请参阅[创作和发布内容](/help/edge/docs/authoring.md)。
 

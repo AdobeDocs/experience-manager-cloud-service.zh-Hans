@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 25%
@@ -13,6 +13,8 @@ ht-degree: 25%
 ---
 
 # 启用前端管道 {#enable-front-end-pipeline}
+
+{{traditional-aem}}
 
 了解如何启用现有站点的前端管道以使用站点主题更快地自定义您的站点。
 
@@ -44,7 +46,7 @@ AEM可以将站点配置为加载使用前端管道部署的主题，即使您�
 
 ## 要求 {#requirements}
 
-AEM 可以自动调整您的现有站点以使用前端管道。若要执行此工作流，您的网站必须使用核心组件[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/page)的v2或更高版本页面组件。
+AEM 可以自动调整您的现有站点以使用前端管道。若要执行此工作流，您的网站必须使用核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)的[v2或更高版本页面组件。
 
 ## 启用前端管道 {#enabling}
 

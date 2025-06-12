@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -16,8 +16,6 @@ ht-degree: 67%
 # 组织页面 {#creating-and-organizing-pages}
 
 了解如何使用AEM整理您的网站。 了解如何组织页面后，您可以[创建新页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)和[管理现有页面](/help/sites-cloud/authoring/sites-console/managing-pages.md)。
-
-{{edge-delivery-authoring}}
 
 ## 组织您的站点 {#organizing-your-site}
 
@@ -95,7 +93,7 @@ ht-degree: 67%
 
 ### 标题 {#title}
 
-如果您在创建页面时只提供页面&#x200B;**Title**，则AEM将从此字符串派生页面&#x200B;**Name**，然后[根据AEM和JCR实行的约定](/help/implementing/developing/introduction/naming-conventions.md)验证该名称。
+如果您在创建页面时只提供页面&#x200B;**Title**，AEM将从此字符串派生页面&#x200B;**Name**，然后[根据AEM和JCR实行的约定](/help/implementing/developing/introduction/naming-conventions.md)验证该名称。
 
 虽然接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称会将无效的字符替换掉。例如：
 

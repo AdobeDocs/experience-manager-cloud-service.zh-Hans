@@ -4,12 +4,14 @@ description: 本文全面概述了 SPA 编辑器及其工作原理，包括 SPA 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
 
 ---
+
 
 # SPA 编辑器概述 {#spa-editor-overview}
 

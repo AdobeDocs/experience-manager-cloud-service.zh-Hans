@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 80%
@@ -13,6 +13,8 @@ ht-degree: 80%
 ---
 
 # 创建站点 {#creating-site}
+
+{{traditional-aem}}
 
 了解如何使用 AEM 创建站点，并使用站点模板定义站点的样式和结构。
 
@@ -22,7 +24,7 @@ ht-degree: 80%
 
 借助AEM快速站点创建工具，非开发人员可以使用站点模板从头开始快速创建站点。
 
-创建后，还可利用快速站点创建工具快速自定义 AEM 站点的主题和样式（JavaScript、CSS 和静态资源）。这样一来，无需了解 AEM 的前端开发人员既可独立于内容创建者工作，又可与内容创建者并行工作。AEM 管理员只需下载站点主题并将它提供给前端开发人员，后者会使用他们喜欢的工具来自定义站点主题，再将更改提交到 AEM 代码存储库，随后进行部署。
+创建后，还可利用快速 Site 创建工具快速自定义 AEM Site 的主题和样式（JavaScript、CSS 和静态资源）。这样一来，无需了解 AEM 的前端开发人员既可独立于内容创建者工作，又可与内容创建者并行工作。AEM 管理员只需下载站点主题并将它提供给前端开发人员，后者会使用他们喜欢的工具来自定义站点主题，再将更改提交到 AEM 代码存储库，随后进行部署。
 
 本文档重点介绍如何使用快速站点创建工具来创建站点。如果您希望大致了解站点创建和自定义工作流，请参阅 [AEM 快速站点创建历程](/help/journey-sites/quick-site/overview.md)
 
@@ -52,17 +54,17 @@ ht-degree: 80%
 
 可以使用模板轻松创建站点。
 
-1. 登录到您的 AEM 创作环境，并导航到 Sites 控制台
+1. 登录到您的 AEM 创作环境，并导航到 Site 控制台
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 在屏幕的右上角选择&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建站点**。
+1. 在屏幕的右上角选择&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建 Site**。
 
    ![从模板创建站点](../assets/create-site-from-template.png)
 
 1. 在“创建站点”向导中，在左面板中选择现有模板，或选择左列顶部&#x200B;**导入**&#x200B;以导入新模板。
 
-   ![站点创建向导](../assets/site-creation-wizard.png)
+   ![Site 创建向导](../assets/site-creation-wizard.png)
 
    1. 如果您已选择导入，请在文件浏览器中，找到要使用的模板并选择&#x200B;**上传**。
 
@@ -72,15 +74,15 @@ ht-degree: 80%
 
    ![选择模板](../assets/select-site-template.png)
 
-1. 为站点提供标题。可以提供站点名称，也可以从标题生成站点名称（如果被忽略）。
+1. 为 Site 提供标题。可以提供站点名称，也可以从标题生成站点名称（如果被忽略）。
 
-   * 站点标题显示在浏览器标题栏中。
-   * 站点名称会成为 URL 的一部分。
+   * Site 标题显示在浏览器标题栏中。
+   * Site 名称会成为 URL 的一部分。
    * 站点名称必须遵循 [AEM 的页面命名惯例。](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)
 
 1. 选择&#x200B;**创建**&#x200B;并从站点模板创建站点。
 
-   ![新站点的详细信息](../assets/create-site-details.png)
+   ![新 Site 的详细信息](../assets/create-site-details.png)
 
 1. 在显示的确认对话框中，选择&#x200B;**完成**。
 

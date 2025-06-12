@@ -1,19 +1,21 @@
 ---
 title: SPA的动态模型到组件映射
-description: 本文介绍了在JavaScript SPA SDK for AEM中如何实现组件映射的动态模型。
+description: 本文介绍了在AEM的JavaScript SPA SDK中如何进行组件映射的动态模型。
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
+
 # SPA的动态模型到组件映射 {#dynamic-model-to-component-mapping-for-spas}
 
-本文档介绍在JavaScript SPA SDK for AEM中如何进行组件动态映射。
+本文档介绍在AEM的JavaScript SPA SDK中如何进行组件动态映射。
 
 {{ue-over-spa}}
 
@@ -29,7 +31,7 @@ ht-degree: 0%
 
 ## 模型驱动的单页应用程序 {#model-driven-single-page-application}
 
-使用JavaScript SPA SDK for AEM的单页应用程序是模型驱动的：
+使用适用于AEM的JavaScript SPA SDK的单页应用程序是模型驱动的：
 
 1. 前端组件向[组件映射存储](#componentmapping-module)注册自身。
 1. 然后[容器](blueprint.md#container)一旦由[模型提供程序](blueprint.md#the-model-provider)提供了模型，便会迭代其模型内容(`:items`)。

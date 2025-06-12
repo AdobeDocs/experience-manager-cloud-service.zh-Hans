@@ -4,28 +4,30 @@ description: RemotePage组件是一个自定义页面组件，用于在AEM中编
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
 
 ---
 
+
 # RemotePage 组件 {#remote-page-component}
 
-在决定您希望在外部SPA与AEM之间进行[何种级别的集成](/help/implementing/developing/headful-headless.md)时，通常很明显您需要能够查看和编辑AEM中的SPA。 RemotePage组件只是用于此目的的自定义页面组件。
+在决定[您希望在外部SPA与AEM之间进行哪种级别的集成](/help/implementing/developing/headful-headless.md)时，通常很明显您需要能够在AEM中查看和编辑SPA。 RemotePage组件只是用于此目的的自定义页面组件。
 
 {{ue-over-spa}}
 
 ## 概述 {#overview}
 
-RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必需的资源，并使用此资源在AEM中呈现SPA。
+RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必需的资源，并使用此资源在AEM中渲染SPA。
 
 * RemotePage允许您将SPA的脚本和样式表插入AEM Page组件的正文中。
-* 虚拟前端组件允许在AEM SPA编辑器中将部分标记为可编辑。
-* 托管在不同域上的SPA可以一起在AEM中编辑。
+* 虚拟前端组件允许在AEM SPA Editor中将部分标记为可编辑。
+* 可以将托管在其他域上的SPA一起设置为在AEM中可编辑。
 
-有关AEM中可编辑的外部SPA的更多详细信息，请参阅文章[在AEM](editing-external-spa.md)中编辑外部SPA。
+有关AEM中可编辑的外部SPA的更多详细信息，请参阅文章[在AEM中编辑外部SPA](editing-external-spa.md)。
 
 ## 要求 {#requirements}
 
@@ -36,14 +38,13 @@ RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必�
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
-
      ![entrypoints属性示例](assets/asset-manifest-entrypoints.png)
 * 应用程序必须能够在`body`元素下的`<div id="root"></div>`中初始化。 如果应用程序需要不同的标记才能实例化，则必须在具有`sling:resourceSuperType="spa-project-core/components/remotepage`的代理组件的HTL脚本中相应地调整此标记。
 
 ## 限制 {#limitations}
 
-* RemotePage组件希望该实施提供类似于此处[&#128279;](https://github.com/shellscape/webpack-manifest-plugin)所提供的的资源清单。 但是，RemotePage组件仅经过测试可用于React框架（以及通过remote-page-next组件的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
-* 在AEM中执行远程渲染时，在应用程序的根HTML文件中定义的内部CSS和根DOM节点上的内联CSS将不可用。
+* RemotePage组件希望该实施提供类似于此处](https://github.com/shellscape/webpack-manifest-plugin)所提供的[的资源清单。 但是，RemotePage组件仅经过测试可用于React框架（和通过远程下一页组件使用的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
+* 在AEM中进行远程呈现时，在应用程序的根HTML文件中定义的内部CSS和根DOM节点上的内联CSS将不可用。
 
 ## 技术详细信息 {#technical-details}
 
