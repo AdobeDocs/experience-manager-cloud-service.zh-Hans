@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.2.0 版�
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 98%
+source-wordcount: '1527'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
 
 **内容片段编辑器推出**
 
-我们将继续在 AEM as a Cloud Service 中启用新的基于 Spectrum UI 的内容片段编辑器。它已在 2024 年 11 月成为所有 Cloud Service 开发者环境的默认设置，2025 年 4 月 1 日将成为所有暂存环境的默认设置，并将在 2025 年 5 月 1 日成为所有生产环境的默认设置。在所有情况下，用户仍然可以选择恢复到 AEM Touch UI 中传统的内容片段编辑器。
+我们将继续使用[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)（使用频谱UI）在AEM as a Cloud Service中启用新的[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)。 它已在 2024 年 11 月成为所有 Cloud Service 开发者环境的默认设置，2025 年 4 月 1 日将成为所有暂存环境的默认设置，并将在 2025 年 5 月 1 日成为所有生产环境的默认设置。在所有情况下，用户仍然可以选择恢复到 AEM Touch UI 中传统的内容片段编辑器。
 
 **翻译 HTTP API**
 

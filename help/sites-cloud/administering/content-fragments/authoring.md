@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '2817'
-ht-degree: 71%
+source-wordcount: '2824'
+ht-degree: 70%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 71%
 
 >[!WARNING]
 >
->*只有**在线* Adobe Experience Manager (AEM) as a Cloud Service 中有此部分中所述的编辑器可用。
+>此部分中描述的编辑器在[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)中仅为&#x200B;*可用*；因此&#x200B;*联机* Adobe Experience Manager (AEM) as a Cloud Service，而不是本地实例。
 
 ## 内容片段编辑器 {#content-fragment-editor}
 
@@ -178,7 +178,7 @@ ht-degree: 71%
 
     >[！NOTE]
     >
-    >您无法删除&#x200B;**Main**.
+    >您无法删除**Main**.
 
 1. 选择变体。
 
@@ -267,7 +267,7 @@ ht-degree: 71%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
@@ -493,7 +493,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->这些注释在原始编辑器[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不可见，在Assets控制台的[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中不可见。
+>这些注释在原始编辑器](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不可见，在Assets控制台的[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中不可见。[
 
 ## 预览您的片段 {#preview-content-fragment}
 
@@ -502,7 +502,7 @@ ht-degree: 71%
 要使用此功能，您首先需要：
 
 * 与您的 IT 团队一起设置外部前端应用程序，该应用程序将使用其 JSON 输出来渲染内容片段。
-* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型[&#128279;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的属性。
+* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的[属性。
 
 在定义 URL 后，**预览**&#x200B;按钮将处于活动状态。您可以选择此按钮来启动外部应用程序（在单独的选项卡中）以渲染内容片段。
 
