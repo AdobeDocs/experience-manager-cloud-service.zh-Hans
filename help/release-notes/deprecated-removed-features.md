@@ -4,10 +4,10 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
-workflow-type: ht
-source-wordcount: '3039'
-ht-degree: 100%
+source-git-commit: c7615247be1e237c72508ae4dfc3156fdcde9905
+workflow-type: tm+mt
+source-wordcount: '3181'
+ht-degree: 96%
 
 ---
 
@@ -143,7 +143,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
     <td>8/31/2025</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava 核心库已弃用。</td>
+    <td>Google Guava核心库在Cloud Service中已弃用。 <a href="#com.google.common">请参阅下面的删除说明。</a></td>
     <td>5/15/2023</td>
     <td>8/31/2025</td>
   </tr>
@@ -362,6 +362,19 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 * 将此包添加到您的项目中
    * `org.mongodb:mongo-java-driver:3.12.7`
+
+您可能需要根据您的要求选择不同的版本。
+
+### 移除 `com.google.common*` {#com.google.common}
+
+移除对Google Guava Core Libraries的使用或在您的项目中包含适当的版本。 在许多情况下，此库的用法可替换为JDK或Apache Commons Collections4中的收藏集类。 如果您未找到任何替代库，请在项目中包含最新版本的Google Guave核心库。 如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
+
+操作列表：
+
+* 将 ACS AEM Commons 更新至最新版本（至少 6.11.0）
+* 将使用的Google Guava Core Library替换为JDK收藏集或Apache Commons收藏集4
+* 如果仍需要，请将此捆绑包添加到您的项目中（将版本替换为最新的可用版本）：
+   * `com.google.guava:guava:33.4.8-jre`
 
 ### 移除 `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
 
