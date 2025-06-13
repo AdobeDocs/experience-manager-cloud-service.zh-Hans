@@ -4,7 +4,7 @@ description: 了解如何使用AEM Developer Tools for Eclipse，这是一个基
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # 适用于 Eclipse 的 AEM 开发人员工具{#aem-developer-tools-for-eclipse}
 
-![Experience ManagerEclipse徽标的开发人员工具](assets/eclipse-logo.png)
+![适用于Eclipse徽标的Experience Manager Developer Tools](assets/eclipse-logo.png)
 
 ## 概述 {#overview}
 
-_适用于Eclipse的Experience Manager开发人员工具_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)的Eclipse插件的Eclipse插件。
+_适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html)的[Eclipse插件的Eclipse插件。
 
-它提供了几项使AEM开发更轻松的功能：
+它提供了多项功能，可简化AEM的开发：
 
-* 通过Eclipse服务器连接器与AEM实例无缝集成
+* 通过Eclipse Server Connector与AEM实例无缝集成
 * 内容和OSGi捆绑包的同步
 * 使用代码热插拔功能调试支持
 * 通过特定项目创建向导简单BootstrapAEM项目
@@ -32,7 +32,7 @@ _适用于Eclipse的Experience Manager开发人员工具_&#x200B;是一个基于
 在使用AEM Developer Tools之前，您需要：
 
 * 下载并安装适用于Enterprise Java™开发人员的[Eclipse IDE](https://www.eclipse.org/downloads/packages/)。
-* 按照[Eclipse常见问题解答](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse)中的说明，通过编辑`eclipse.ini`配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
+* 按照[Eclipse常见问题解答](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)中的说明，通过编辑`eclipse.ini`配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ _适用于Eclipse的Experience Manager开发人员工具_&#x200B;是一个基于
 
 在Eclipse中，透视可确定窗口内可用的操作和视图，并支持与Eclipse中的资源进行面向任务的交互。 有关透视的详细信息，请参阅[Eclipse文档](https://help.eclipse.org/latest/index.jsp)。
 
-_Eclipse的Experience Manager开发工具_&#x200B;提供了AEM Perspective，可让您完全控制AEM项目和实例。 要打开AEM Perspective，请执行以下操作：
+_适用于Eclipse的Experience Manager开发工具_&#x200B;提供了一个AEM视角，可让您完全控制AEM项目和实例。 要打开AEM透视，请执行以下操作：
 
 1. 从Eclipse菜单栏中选择&#x200B;**窗口** > **透视** > **打开透视** > **其他**。
 1. 在对话框中选择&#x200B;**AEM**，然后单击&#x200B;**打开**。
@@ -73,7 +73,7 @@ _Eclipse的Experience Manager开发工具_&#x200B;提供了AEM Perspective，可
 
 ## 示例多模块项目 {#sample-multi-module-project}
 
-_适用于Eclipse的Experience Manager开发人员工具_&#x200B;附带了一个示例的多模块项目，可帮助您快速掌握Eclipse中的项目设置。 它还可用作几项AEM功能的最佳实践指南。 [了解有关项目原型的更多信息](https://github.com/adobe/aem-project-archetype)。
+_适用于Eclipse的Experience Manager Developer Tools_&#x200B;附带了一个示例的多模块项目，可帮助您快速掌握Eclipse中的项目设置。 它还可用作几项AEM功能的最佳实践指南。 [了解有关项目原型的更多信息](https://github.com/adobe/aem-project-archetype)。
 
 按照以下步骤创建示例项目：
 
@@ -106,7 +106,7 @@ _适用于Eclipse的Experience Manager开发人员工具_&#x200B;附带了一个
 
 1. 然后，配置Eclipse连接的AEM服务器。
 
-   要使用Debugger功能，您需要以调试模式启动AEM — 这可以通过在命令行中添加以下内容来实现：
+   要使用Debugger功能，您需要以调试模式启动AEM — 可以通过在命令行中添加以下内容来实现：
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -192,7 +192,7 @@ _适用于Eclipse的Experience Manager开发人员工具_&#x200B;附带了一个
 1. 确保保存所有更改。 您现在可以将该新内容同步到您的AEM实例。
 
 1. 在“服务器”面板中，确保连接已启动，如果未启动，则确保连接已启动。
-1. 单击&#x200B;**清理和Publish**&#x200B;图标。
+1. 单击&#x200B;**清理并发布**&#x200B;图标。
 
 完成后，您应在实例上运行包，保存后，任何更改都会自动同步到实例。
 

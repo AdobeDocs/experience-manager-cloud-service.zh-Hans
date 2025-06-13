@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '5931'
+source-wordcount: '5926'
 ht-degree: 6%
 
 ---
@@ -19,19 +19,19 @@ ht-degree: 6%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -55,7 +55,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets]提供强大的资源搜索方法，帮助您实现更高的内容速度。 您的团队可以使用开箱即用的功能和自定义方法，通过无缝、智能的资产搜索体验缩短上市时间。 搜索资产功能对于数字资产管理系统的使用至关重要，无论是由创意人员进一步使用、由业务用户和营销人员稳健管理资产，还是由DAM管理员进行管理。 您可以通过[!DNL Assets]用户界面或其他应用和表面执行的简单、高级和自定义搜索有助于完成这些用例。
@@ -90,19 +90,19 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 ![了解Experience Manager Assets搜索结果界面](assets/aem-search-interface.png)
 *图：了解[!DNL Experience Manager Assets]搜索结果界面。*
 
-**A.**&#x200B;将搜索另存为智能收藏集。
-**B.**&#x200B;筛选条件或谓词以缩小搜索结果。
-**C.**&#x200B;显示文件、文件夹或两者。
-**D.**&#x200B;搜索位置为DAM。
-**E.**&#x200B;访问保存的搜索。
-**F.**&#x200B;单击“筛选器”以打开或关闭左边栏。
-**G.**&#x200B;将Assets显示为默认搜索。
-**小时**&#x200B;搜索位置为DAM。
-**I.**&#x200B;包含用户提供的搜索关键字的Omnisearch字段。
-**J.**&#x200B;选择加载的搜索结果。
-**K.**&#x200B;按已创建、已修改、名称、无进行排序。
-**L.**&#x200B;按升序或降序排序。
-**M.**&#x200B;显示的搜索结果数占总搜索结果数。 **N.**&#x200B;关闭搜索。
+**A.**将搜索另存为智能收藏集。
+**B.**筛选条件或谓词以缩小搜索结果。
+**C.**显示文件、文件夹或两者。
+**D.**搜索位置为DAM。
+**E.**访问保存的搜索。
+**F.**单击“筛选器”以打开或关闭左边栏。
+**G.**将Assets显示为默认搜索。
+**小时**搜索位置为DAM。
+**I.**包含用户提供的搜索关键字的Omnisearch字段。
+**J.**选择加载的搜索结果。
+**K.**按已创建、已修改、名称、无进行排序。
+**L.**按升序或降序排序。
+**M.**&#x200B;显示的搜索结果数占总搜索结果数。 **N.**关闭搜索。
 **O.**&#x200B;在卡片视图和列表视图之间切换。
 
 ### 动态搜索Facet {#dynamicfacets}
@@ -123,7 +123,7 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 
 `damAssetLucene-9`更改了Oak查询Facet计数的行为，使其不再评估基础搜索索引返回的Facet计数的访问控制，这将缩短搜索响应时间。 因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
 
-如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=zh-Hans)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，Adobe不建议切换到`secure`模式。
+如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，Adobe不建议切换到`secure`模式。
 
 有关Oak的Facet功能的详细信息，包括这些模式的详细说明，请参阅[Facet - Oak文档 — Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
 
@@ -184,9 +184,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 1. 在&#x200B;**[!UICONTROL 搜索提升]**&#x200B;框中，指定要提升图像搜索的关键字，然后单击&#x200B;**[!UICONTROL 添加]**。 您可以按相同方式指定多个关键字。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。 您针对此关键字提升的资产将显示在排名最前的搜索结果中。
 
-利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)。
+利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410334/?quality=6&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *视频：了解搜索结果的排名方式以及排名会受到何种影响。*
 
@@ -219,7 +219,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 *图：通过在“筛选器”面板中添加文件夹路径，将搜索结果限制为文件夹。*
 
-### 查找类似图像 {#visualsearch}
+### 查找相似图像 {#visualsearch}
 
 要查找与用户选择的图像视觉上相似的图像，请从图像的卡片视图或工具栏中单击&#x200B;**[!UICONTROL 查找类似]**&#x200B;选项。[!DNL Experience Manager]显示DAM存储库中与用户选择的图像类似的智能标记图像。
 
@@ -290,15 +290,15 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 在[!DNL Experience Manager]桌面应用程序中搜索资产 {#desktop-app}
 
-Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面(Win或Mac)上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)。
+Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面(Win或Mac)上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
 
 ### 在 [!DNL Brand Portal] 中搜索资产 {#brand-portal}
 
-业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=zh-Hans)中搜索资源。
+业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)中搜索资源。
 
 ### 搜索[!DNL Adobe Stock]图像 {#adobe-stock1}
 
-在[!DNL Experience Manager]用户界面中，用户可以搜索Adobe Stock资源并许可所需的资源。 在Omnisearch字段中添加`Location: Adobe Stock`。 您还可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。 查看 [!DNL Experience Manager][&#128279;](/help/assets/aem-assets-adobe-stock.md#usemanage)中的管理 [!DNL Adobe Stock] 图像。
+在[!DNL Experience Manager]用户界面中，用户可以搜索Adobe Stock资源并许可所需的资源。 在Omnisearch字段中添加`Location: Adobe Stock`。 您还可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。 查看 [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage)中的[管理 [!DNL Adobe Stock] 图像。
 
 ### 搜索[!DNL Dynamic Media]资源 {#search-dynamic-media-assets}
 
@@ -360,7 +360,7 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 ## 搜索提示 {#tips}
 
 * 在监控资产的审核状态时，使用相应的选项查找已批准的资产或待批准的资产。
-* 使用见解谓词，根据从各种创意应用程序获得的使用情况统计数据，搜索支持的资产。 使用情况数据按使用情况得分、展示次数、点击次数和媒体渠道进行分组，资产在这些渠道中显示类别。
+* 使用分析谓词，根据从各种Creative应用程序获得的使用情况统计数据，搜索支持的资源。 使用情况数据按使用情况得分、展示次数、点击次数和媒体渠道进行分组，资产在这些渠道中显示类别。
 * 使用&#x200B;**[!UICONTROL 全选]**&#x200B;复选框选择搜索到的资源。 [!DNL Experience Manager]最初在卡片视图中显示100个资源，在列表视图中显示200个资源。 滚动搜索结果时会加载更多资源。 您可以选择比已加载的资源更多的资源。 选定资源的计数将显示在搜索结果页面的右上角。 您可以对选择进行操作，例如，下载所选资源，批量更新所选资源的元数据属性，或将所选资源添加到收藏集。 当选择的资源多于显示的资源时，会对所有选定的资源应用操作，或者显示应用操作的资源数的对话框。 要将操作应用于未加载的资源，请确保已显式选择所有资源。
 * 要搜索不包含必需元数据的资源，请参阅[必需元数据](#mandatorymetadata)。
 * 搜索使用所有元数据字段。 一般搜索（例如搜索12）通常会返回许多结果。 为了获得更好的结果，请使用双引号（而非单引号）或确保数字与不带特殊字符（例如，`shoe12`）的单词相邻。
@@ -443,11 +443,11 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
    保存更改。
 
 1. 访问`/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`并添加值为`true`的`Boolean`类型的`similarityTags`属性。
-1. 将智能标记应用于[!DNL Experience Manager]存储库中的资源。 请参阅[如何配置智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=zh-Hans#configuring)。
+1. 将智能标记应用于[!DNL Experience Manager]存储库中的资源。 请参阅[如何配置智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring)。
 1. 在CRXDE的`/oak-index/damAssetLucene`节点中，将`reindex`属性设置为`true`。 保存更改。
 1. （可选）如果已自定义搜索表单，请将`/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch`节点复制到`/conf/global/settings/dam/search/facets/assets/jcr:content/items`。 保存更改。
 
-有关相关信息，请参阅[了解Experience Manager中的智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hans)和[如何管理智能标记](/help/assets/smart-tags.md)。
+有关相关信息，请参阅[了解Experience Manager中的智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)和[如何管理智能标记](/help/assets/smart-tags.md)。
 
 ### 必需元数据 {#mandatorymetadata}
 
@@ -562,7 +562,7 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 | 错误、问题、症状 | 可能的原因 | 对问题的可能修复或了解 |
 |---|---|---|
 | 搜索缺少元数据的资源时，结果不正确。 | 在搜索缺少必需元数据的资源时，[!DNL Experience Manager]可能会显示一些具有有效元数据的资源。 结果基于索引的元数据属性。 | 元数据更新后，需要重新索引以反映资源元数据的正确状态。 请参阅[必需的元数据](metadata-schemas.md#define-mandatory-metadata)。 |
-| 搜索结果过多。 | 广泛搜索参数。 | 考虑限制搜索[&#128279;](#scope)的范围。 使用智能标记可能会为您提供比预期更多的搜索结果。 查看带有智能标记的[搜索行为](#withsmarttags)。 |
+| 搜索结果过多。 | 广泛搜索参数。 | 考虑限制搜索](#scope)的[范围。 使用智能标记可能会为您提供比预期更多的搜索结果。 查看带有智能标记的[搜索行为](#withsmarttags)。 |
 | 不相关或部分相关的搜索结果。 | 使用智能标记可更改搜索行为。 | 了解[智能标记后搜索如何更改](#withsmarttags)。 |
 | 没有针对资产的自动完成建议。 | 新上传的资产尚未编制索引。 当您开始在Omnisearch栏中输入搜索关键字时，元数据无法立即作为建议使用。 | [!DNL Experience Manager]将等待超时时间（默认为一小时）到期，然后再运行后台作业，为所有新上传或更新后的资源索引元数据，然后将元数据添加到建议列表中。 |
 | 无搜索结果。 | <ul><li>匹配您的查询的Assets不存在。 </li><li> 在搜索查询之前添加了空格。 </li><li> 不支持的元数据字段包含您搜索的关键字。</li><li> 在资产空闲时间进行的搜索。 </li></ul> | <ul><li>使用其他关键词进行搜索。 或者，使用智能标记或相似性搜索来改进搜索结果。 </li><li>[已知限制](#limitations)。</li><li>搜索不考虑所有元数据字段。 查看[作用域](#scope)。</li><li>稍后搜索或修改所需资源的开始时间和结束时间。</li></ul> |
@@ -588,6 +588,5 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=zh-Hans)
->* [高级配置以提升搜索结果](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)
->* [配置智能翻译搜索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
+>* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [高级配置以提升搜索结果](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)

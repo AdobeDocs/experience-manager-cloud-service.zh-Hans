@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
-source-wordcount: '2195'
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '2160'
 ht-degree: 100%
 
 ---
@@ -645,8 +645,3 @@ AEM 中提供的许多默认页面属性都映射到文档中相应的页面元�
 请参阅文档[创建与通用编辑器配合使用的块](/help/edge/wysiwyg-authoring/create-block.md)，了解如何在所见即所得的创作中使用 Edge Delivery Services 项目创建与通用编辑配合使用的块。
 
 如果您已经熟悉如何创建块，请参阅文档[使用 Edge Delivery Services 进行所见即所得创作的开发者入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以使用 Edge Delivery Services 和通用编辑器进行内容创作，从而启动并运行新的 Adobe Experience Manager Site。
-
->[!TIP]
->
->有关创建新的 Edge Delivery Services 项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[该 AEM GEM 网络研讨会](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)。
-

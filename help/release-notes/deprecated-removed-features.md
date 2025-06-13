@@ -4,7 +4,7 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: c7615247be1e237c72508ae4dfc3156fdcde9905
+source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
 workflow-type: tm+mt
 source-wordcount: '3181'
 ht-degree: 96%
@@ -47,7 +47,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 | [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理出版物](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation)方法。 |
 | [!DNL Foundation] | 复制代理管理屏幕的“分发”选项卡和复制 API 都不能复制大于 10MB 的内容包。 | [管理出版物](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成正在逐步失去对服务帐户（JWT）凭据的支持。自 2024 年 5 月 1 日起，无法在 Adobe Developer Console 中创建新的服务帐户（JWT）凭据。现有的服务帐户（JWT）凭据在 2025 年 1 月 1 日前仍可用于已配置的集成，之后将停止使用，客户需要迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)到 OAuth 服务器到服务器凭据。 |
+| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成正在逐步失去对服务帐户（JWT）凭据的支持。自 2024 年 5 月 1 日起，无法在 Adobe Developer Console 中创建新的服务帐户（JWT）凭据。现有的服务帐户（JWT）凭据在 2025 年 1 月 1 日前仍可用于已配置的集成，之后将停止使用，客户需要迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)到 OAuth 服务器到服务器凭据。 |
 | [!DNL Foundation] | 发布内容树工作流和相关的发布内容树工作流步骤，用于复制内容层次结构。 | 使用[树激活工作流步骤](/help/operations/replication.md#tree-activation)，其性能更佳。 |
 | [!DNL Foundation] | 使用 YUI 对 JavaScript 客户端库进行压缩/缩小。Adobe 不打算进一步更新 YUI 库。 | Adobe 建议客户切换到 Google Closure Compiler (GCC) 来进行实施。 |
 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.1.0 版�
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 92%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 92%
 
 观看 2025 年 1 月版概述视频，大致了解 2025.1.0 版的新增功能：
 
->[!VIDEO](https://video.tv.adobe.com/v/3456084?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -127,7 +127,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### [自适应Forms中的HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 自适应Forms中的[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 通过自适应Forms，您可以使用HTML电子邮件模板。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 
@@ -165,7 +165,7 @@ AEM Forms Document Generation API现在支持将生成的PDF文档直接上传�
 
 * [Sites 内容片段 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [资产 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites 和资产文件夹 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites和Assets文件夹API
 * [ Forms 通信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge 计算 - 请求反馈！ {#edge-computing-feedback}
@@ -180,7 +180,7 @@ Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Ado
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
+您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 

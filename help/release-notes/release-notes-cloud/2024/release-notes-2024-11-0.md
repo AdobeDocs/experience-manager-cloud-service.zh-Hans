@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.11.0 版�
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1808'
 ht-degree: 99%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 观看 2024 年 11 月版概述视频可了解在 2024.11.0 版中添加的功能的概要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -175,7 +175,7 @@ intuitive and improving the mobile form-filling experience.
 具体来说，下面列出的 API 端点可作为早期采用者计划的一部分使用。如果有兴趣，请发邮件至 [aem-apis@adobe.com](mailto:aem-apis@adobe.com)，描述您打算如何使用它们。
 * [Sites 内容片段 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [资产 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites 和资产文件夹 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites和Assets文件夹API
 * [ Forms 通信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge 计算 - 请求反馈！ {#edge-computing-feedback}

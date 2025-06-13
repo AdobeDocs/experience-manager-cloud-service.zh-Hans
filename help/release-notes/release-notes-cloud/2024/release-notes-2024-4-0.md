@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.4.0 版�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2689'
 ht-degree: 95%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 95%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版或 2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -37,7 +37,7 @@ ht-degree: 95%
 
 请查看 2024 年 4 月发布概述视频，了解 2024.4.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3446319?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -163,7 +163,7 @@ Experience Manager Assets 现在提供[通过单击来重命名资产或文件�
 
   您可以通过您的官方电子邮件 ID 向 `aem-forms-ea@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
-* **[您可以利用操作遥测服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;启用AEM as a Cloud Service的客户端收集。
+* **[您可以利用操作遥测服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**启用AEM as a Cloud Service的客户端收集。
 运营遥测服务可更准确地反映用户交互，从而确保可靠地衡量网站参与度。 这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
   如果您有兴趣测试这项新功能并分享您的反馈，请向`aemcs-rum-adopter@adobe.com`发送一封电子邮件，同时附上您想要通过与Adobe ID关联的电子邮件地址为每个环境启用操作遥测的域名。 Adobe的产品团队将为您启用操作遥测服务。
@@ -238,9 +238,6 @@ Experience Manager Guides 现在允许您创建语言组，并轻松地将您的
 
 
 总体而言，创建语言组可以提高翻译项目的效率和生产力，最终可以改善多种语言的本地化流程。
-
-
-了解如何[从 Web 编辑器中翻译文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
 
 ### 改进了在存储库视图中搜索和过滤文件的体验
 

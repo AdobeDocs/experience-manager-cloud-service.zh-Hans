@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.2.0 版�
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1523'
 ht-degree: 98%
 
 ---
@@ -147,7 +147,7 @@ Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Ado
 
 * [Sites 内容片段 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [资产 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites 和资产文件夹 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites和Assets文件夹API
 * [ Forms 通信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### 新的 AEM Developer Console（公开 Beta） {#aem-developer-console-beta}
@@ -158,7 +158,7 @@ Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Ado
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 

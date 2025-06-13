@@ -4,10 +4,10 @@ description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
-workflow-type: ht
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console
 
 重点在于，AEM 现支持 AEM as a Cloud Service 的新 OAuth 服务器到服务器凭据。您可能已经收到一封关于迁移 JWT 凭据的说明邮件，现在可以进行迁移了。
 
-在以下部分中列出的场景中，既然 AEM 支持 OAuth 服务器到服务器凭据，客户就必须（或在某些情况下不得）将其服务帐户 (JWT) 凭据替换为这些凭据。[了解如何](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)迁移凭据。
+在以下部分中列出的场景中，既然 AEM 支持 OAuth 服务器到服务器凭据，客户就必须（或在某些情况下不得）将其服务帐户 (JWT) 凭据替换为这些凭据。[了解如何](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)迁移凭据。
 
 >[!NOTE]
 >

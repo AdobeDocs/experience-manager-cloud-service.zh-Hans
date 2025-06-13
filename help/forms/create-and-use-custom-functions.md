@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 2%
@@ -15,11 +15,11 @@ ht-degree: 2%
 ---
 
 
-# 基于核心组件的自适应Forms自定义函数介绍
+# 基于核心组件的自适应表单的自定义函数简介
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | 本文 |
 
 AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们允许根据预定义的标准动态更改表单行为。 通过自定义函数，开发人员还可以实施复杂的验证逻辑、执行动态计算，以及根据用户交互或预定义标准控制表单元素的显示或行为。
@@ -168,7 +168,6 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
             // code to be executed
         }
 ```
-
 如果用户没有将任何JavaScript注释添加到自定义函数，则它按函数名称在规则编辑器中列出。 但是，建议包含JavaScript注释，以提高自定义函数的可读性。
 
 ### 带有强制JavaScript注释或注释的Arrow函数

@@ -1,14 +1,14 @@
 ---
-title: 在AEM FormsCloud Service上，哪些工作流步骤可用于创建工作流或用于业务流程自动化(BPM)？
-description: 以Forms为中心的工作流允许您快速构建基于自适应Forms的工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将数据发送到多个数据源以及发送电子邮件通知
+title: 在AEM Forms Cloud Service上，哪些工作流步骤可用于创建工作流或用于业务流程自动化(BPM)？
+description: 以Forms为中心的工作流允许您快速构建基于自适应Forms的工作流。 您可以使用Adobe Sign对文档进行电子签名，创建基于表单的业务流程，检索数据并将数据发送到多个数据源，以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签名文档步骤，生成打印输出步骤，生成非交互式PDF输出
+keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签署文档步骤，生成打印输出步骤，生成非交互式PDF输出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '7379'
+source-wordcount: '7370'
 ht-degree: 0%
 
 ---
@@ -18,20 +18,20 @@ ht-degree: 0%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以[在模型中包括各种AEM Workflow步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem)。
+您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以[在模型中包含各种AEM工作流步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem)。
 
 ## 以Forms为中心的步骤 {#forms-workflow-steps}
 
-以Forms为中心的工作流步骤在AEM Workflow中执行特定于AEM Forms的操作。 这些步骤允许您在OSGi上快速构建基于Adaptive Forms的以Forms为中心的工作流。 这些工作流可用于开发基本的审核和批准工作流、内部和跨防火墙业务流程。 您还可以使用Forms Workflow步骤执行以下操作：
+以Forms为中心的工作流步骤在AEM工作流中执行特定于AEM Forms的操作。 这些步骤允许您在OSGi上快速构建基于Adaptive Forms的以Forms为中心的工作流。 这些工作流可用于开发基本的审核和批准工作流、内部和跨防火墙业务流程。 您还可以使用Forms Workflow步骤执行以下操作：
 
 * 创建业务流程、提交后工作流和后端工作流以管理注册流程。
 
 * 创建任务并将其分配给用户或组。
 
-* 在AEM Workflow中使用[!DNL Adobe Sign]发送要签名的文档。
+* 在AEM工作流中使用[!DNL Adobe Sign]发送要签名的文档。
 
 * 按需或提交表单时生成记录文档。
 
@@ -41,11 +41,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果为外部存储标记了工作流模型，则对于所有Forms Workflow步骤，您只能选择“变量”选项来存储或检索数据文件和附件。
+>如果将工作流模型标记为外部存储，则对于所有Forms Workflow步骤，您只能选择变量选项来存储或检索数据文件和附件。
 
 ## 分配任务步骤 {#assign-task-step}
 
-分配任务步骤创建工作项并将其分配给用户或组。 在分配任务的同时，组件还会为任务指定自适应表单或非交互式PDF。 接受来自用户的输入且非交互式PDF需要自适应表单，或者只读自适应表单用于仅审阅工作流。
+分配任务步骤创建工作项并将其分配给用户或组。 在分配任务的同时，组件还为任务指定自适应表单或非交互式PDF。 从用户处接受输入需要自适应表单，非交互式PDF或只读自适应表单用于仅审阅工作流。
 
 您还可以使用组件控制任务的行为。 例如，创建自动记录文档，将任务分配给特定用户或组，指定提交数据的路径，指定要预填充的数据路径，以及指定默认操作。 “分配任务”步骤具有以下属性：
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 * **[!UICONTROL 描述]**：任务中正在执行的操作的说明。 当您在共享开发环境中工作时，此信息对于其他流程开发人员非常有用。
 
 * **[!UICONTROL 缩略图路径]**：任务缩略图的路径。 如果未指定路径，则对于自适应表单，将显示默认缩略图；对于记录文档，将显示默认图标。
-* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个暂存。 这些阶段显示在AEM收件箱中。 您可以在模型的属性(“Sidekick”>“页面”>“页面属性”>“阶段”)中定义这些阶段。
+* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个暂存。 这些阶段显示在AEM收件箱中。 您可以在模型的属性(Sidekick >页面>页面属性>阶段)中定义这些阶段。
 * **[!UICONTROL 优先级]**：选定的优先级显示在AEM收件箱中。 可用的选项包括高、Medium和低。 默认值为Medium。
 * **[!UICONTROL 到期日期]**：指定任务被标记为超期的天数或小时数。 如果您选择&#x200B;**[!UICONTROL 关闭]**，则不会将任务标记为过期。 您还可以指定超时处理程序，以便在任务过期后执行特定任务。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 * **[!UICONTROL 到期日期之后超时]**：选择此选项可启用“超时处理程序”选择字段。
 * **[!UICONTROL 超时处理程序]**：选择分配任务步骤超过到期日期时要执行的脚本。 放置在[apps]/fd/dashboard/scripts/timeoutHandler的CRX存储库中的脚本可供选择。 crx-repository中不存在指定的路径。 管理员在使用该路径之前先创建该路径。
 * **[!UICONTROL 在任务详细信息中突出显示上一个任务的操作和注释]**：选择此选项可显示任务任务详细信息部分中执行的最后一个操作和收到的注释。
-* **[!UICONTROL 类型]**：选择工作流启动时要填充的文档类型。 您可以选择只读自适应表单和非交互式PDF文档。
+* **[!UICONTROL 类型]**：选择工作流启动时要填充的文档类型。 您可以选择自适应表单、只读自适应表单和非交互式PDF文档。
 
 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 -->
 
 * **[!UICONTROL 自适应表单路径]**：指定自适应表单的路径。 您可以使用提交给工作流的自适应表单（在绝对路径上可用），或从字符串数据类型变量中存储的路径检索自适应表单。
-* **[!UICONTROL 使用]**&#x200B;选择输入PDF：指定非交互式PDF的路径。 在“类型”字段中选择非交互式PDF文档时，该字段可用。 您可以使用相对于有效负荷的路径、以绝对路径保存的路径或使用Document数据类型的变量来选择输入PDF。 例如，[Payload_Directory]/Workflow/PDF/credit-card.pdf。 crx-repository中不存在路径。 管理员在使用该路径之前先创建该路径。 要使用“PDF路径”选项，您需要启用记录文档选项或基于表单模板的自适应Forms 。
+* **[!UICONTROL 使用]**&#x200B;选择输入PDF：指定非交互式PDF文档的路径。 在类型字段中选择非交互式PDF文档时，该字段可用。 您可以使用相对于有效负荷的路径（以绝对路径保存）或使用Document数据类型的变量来选择输入PDF。 例如，[Payload_Directory]/Workflow/PDF/credit-card.pdf。 crx-repository中不存在路径。 管理员在使用该路径之前先创建该路径。 要使用“PDF路径”选项，您需要启用记录文档选项或基于表单模板的自适应Forms。
 * **[!UICONTROL 对于已完成的任务，将自适应表单渲染为]**：当任务标记为完成时，可以将自适应表单渲染为只读自适应表单或PDF文档。 您需要启用记录文档选项或基于表单模板的自适应Forms才能将自适应表单渲染为记录文档。
 * **[!UICONTROL 已预填充]**：下面列出的以下字段用作任务的输入：
 
@@ -98,7 +98,7 @@ ht-degree: 0%
     
     -->
 
-   * **[!UICONTROL 请求属性映射]**：使用“请求属性映射”部分定义请求属性[&#128279;](work-with-form-data-model.md#bindargument)的名称和值。 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。
+   * **[!UICONTROL 请求属性映射]**：使用“请求属性映射”部分定义请求属性](work-with-form-data-model.md#bindargument)的[名称和值。 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。
 
   <!--  
      
@@ -121,7 +121,7 @@ ht-degree: 0%
     -->
 
 * **[!UICONTROL 代理人]** > **[!UICONTROL 分配选项]**：指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
-* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans&amp;CID=RedirectAEMCommunityKautuk)。
+* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[创建自定义Adobe Experience Manager动态参与者步骤](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 参与者]**：在&#x200B;**[!UICONTROL 参与者选择器]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;选项时，该字段可用。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 
@@ -136,10 +136,10 @@ ht-degree: 0%
 
 * **[!UICONTROL 收件人电子邮件地址]**：您可以将电子邮件地址存储在变量中，使用文本指定永久电子邮件地址，或使用在受让人的配置文件中指定的受让人的默认电子邮件地址。 您可以使用文本或变量指定组的电子邮件地址。 变量选项有助于动态检索和使用电子邮件地址。 **[!UICONTROL 使用被分派人的默认电子邮件地址]**&#x200B;选项仅适用于单个被分派人。 在这种情况下，将使用存储在被分配人用户配置文件中的电子邮件地址。
 
-* **[!UICONTROL HTML电子邮件模板]**：为通知电子邮件选择电子邮件模板。 要编辑模板，请在crx-repository中修改位于/libs/fd/dashboard/templates/email/htmlEmailTemplate.txt的文件。
+* **[!UICONTROL HTML电子邮件模板]**：选择通知电子邮件的电子邮件模板。 要编辑模板，请在crx-repository中修改位于/libs/fd/dashboard/templates/email/htmlEmailTemplate.txt的文件。
 * **[!UICONTROL 允许委派给]**： AEM收件箱为登录用户提供了一个将分配的工作流委派给其他用户的选项。 允许您在同一组内委派给另一个组的工作流用户。 如果任务被分配给单个用户，并且选择了&#x200B;**[!UICONTROL 允许委派给被分派人组]**&#x200B;的成员，则无法将任务委派给其他用户或组。
 * **[!UICONTROL 共享设置]**： AEM收件箱提供了选项，用于与其他用户共享收件箱中的单个或所有任务：
-   * 选择&#x200B;**[!UICONTROL 允许被分派人在收件箱]**&#x200B;中明确共享选项后，用户可以在AEM收件箱中选择任务并与其他AEM用户共享。
+   * 选择&#x200B;**[!UICONTROL 允许被分派人在收件箱]**&#x200B;中明确共享选项后，用户可以在AEM收件箱中选择该任务并将其与其他AEM用户共享。
    * 如果选择了&#x200B;**[!UICONTROL 允许被分派人通过收件箱共享进行共享]**&#x200B;选项，并且用户共享其收件箱项目或允许其他用户访问其收件箱项目时，只有之前提到的启用选项的任务才会与其他用户共享。
    * 选择&#x200B;**[!UICONTROL 允许被分派人使用“外出”设置]**&#x200B;进行委派时。 被分派人可以启用将任务委派给其他用户的选项以及其他外出选项。 任何分配给外出用户的新任务都会自动委派（分配）给外出设置中提到的用户。
 
@@ -150,11 +150,11 @@ ht-degree: 0%
 * **[!UICONTROL 路由]**：任务可以分支到不同的路由。 在AEM收件箱中选择后，该路由将返回一个值，并根据所选路由选择工作流分支。 您可以将路由存储在String数据类型的数组中，也可以选择&#x200B;**[!UICONTROL 文本]**&#x200B;来手动添加路由。
 
 * **[!UICONTROL 路由标题]**：指定路由的标题。 它会显示在AEM收件箱中。
-* **[!UICONTROL Coral图标]**：指定coral图标的HTML属性。 AdobeCorelUI库提供了一组大量的“触摸优先”图标。 您可以选择并使用路由的图标。 它会与标题一起显示在AEM收件箱中。 如果将路由存储在变量中，则路由会使用默认的“标记”珊瑚色图标。
+* **[!UICONTROL Coral图标]**：指定coral图标的HTML属性。 Adobe CorelUI库提供了一组大量的“触摸优先”图标。 您可以选择并使用路由的图标。 它会与标题一起显示在AEM收件箱中。 如果将路由存储在变量中，则路由会使用默认的“标记”珊瑚色图标。
 * **[!UICONTROL 允许被分派人添加评论]**：选择此选项可启用该任务的评论。 被分派人可以在任务提交时从AEM收件箱中添加注释。
 * **[!UICONTROL 在变量中保存注释]**：将注释保存在String数据类型的变量中。 仅当您选中&#x200B;**[!UICONTROL 允许被分派人添加评论]**&#x200B;复选框时，才会显示此选项。
 
-* **[!UICONTROL 允许被分派人向任务添加附件]**：选择此选项可启用任务的附件。 任务接受者可以在提交任务时从AEM收件箱中添加附件。 您还可以限制附件的最大大小&#x200B;**[!UICONTROL （最大文件大小）]**。 默认大小为2 MB。
+* **[!UICONTROL 允许被分派人向任务添加附件]**：选择此选项可启用任务的附件。 被分派人可以在任务提交时从AEM收件箱中添加附件。 您还可以限制附件的最大大小&#x200B;**[!UICONTROL （最大文件大小）]**。 默认大小为2 MB。
 
 * **[!UICONTROL 使用]**&#x200B;保存输出任务附件：指定附件文件夹的位置。 您可以使用相对于有效负荷的路径或在文档数据类型数组的变量中保存输出任务附件。 仅当您选中&#x200B;**[!UICONTROL 允许被分派人向任务添加附件]**&#x200B;复选框，并从&#x200B;**[!UICONTROL 表单/文档]**&#x200B;选项卡的&#x200B;**[!UICONTROL 类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 自适应表单]**、**[!UICONTROL 只读自适应表单]**&#x200B;或&#x200B;**[!UICONTROL 非交互式PDF文档]**&#x200B;时，才会显示此选项。
 
@@ -166,20 +166,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->为外部数据存储配置AEM Workflow模型时，将分配任务步骤保存为草稿并检索分配任务步骤历史记录的选项将被禁用。 此外，在收件箱中，将禁用保存选项。
+>为外部数据存储配置AEM工作流模型时，将分配任务步骤另存为草稿和检索分配任务步骤历史记录的选项将被禁用。 此外，在收件箱中，将禁用保存选项。
 
 ## 转换为PDF/A步骤 {#convert-pdfa}
 
-PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体并解压缩文件来实现。 因此，PDF/A 文档通常比标准 PDF 文档大。您可以使用AEM Workflow中的&#x200B;***转换为PDF/A***&#x200B;步骤将PDF文档转换为PDF/A格式。
+PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体并解压缩文件来实现。 因此，PDF/A 文档通常比标准 PDF 文档大。您可以使用AEM工作流中的&#x200B;***转换为PDF/A***&#x200B;步骤将PDF文档转换为PDF/A格式。
 
 转换为PDF/A步骤具有以下属性：
 
 **[!UICONTROL 输入文档]**：输入文档可以相对于有效负荷，具有绝对路径，可以作为有效负荷提供，或存储在Document数据类型的变量中。
 
 **[!UICONTROL 转换选项]**：使用此属性，指定了将PDF文档转换为PDF/A文档的设置。 此选项卡下可用的各种选项包括：
-* **[!UICONTROL 符合性]**：指定输出PDF/A文档必须符合的标准。 它支持不同的PDF标准，如PDF/A-1b、PDF/A-2b或PDF/A-3b。
+* **[!UICONTROL 符合性]**：指定输出PDF/A文档必须符合的标准。 它支持不同的PDF标准，例如PDF/A-1b、PDF/A-2b或PDF/A-3b。
 * **[!UICONTROL 结果级别]**：将转换输出的结果级别指定为PassFail、Summary或Detailed。
-* **[!UICONTROL 色彩空间]**：指定预定义的色彩空间为S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，它们可用于输出PDF/A文件。
+* **[!UICONTROL 色彩空间]**：指定预定义的色彩空间，即S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，它们可用于输出PDF/A文件。
 * **[!UICONTROL 可选内容]**：仅当满足指定的标准集时，才允许在输出PDF/A文档中显示特定图形对象和/或注释。
 
 **[!UICONTROL 输出文档]**：指定保存输出文件的位置。 输出文件可以保存在有效负荷的相对位置，如果有效负荷是文件或是Document数据类型的变量，则覆盖有效负荷。
@@ -187,9 +187,9 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 ## 发送电子邮件步骤 {#send-email-step}
 
-使用电子邮件步骤发送电子邮件，例如，包含记录文档、自适应表单<!-- , link of an interactive communication-->链接或附加PDF文档的电子邮件。 发送电子邮件步骤支持[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
+使用电子邮件步骤发送电子邮件，例如，包含记录文档、自适应表单<!-- , link of an interactive communication-->链接或附加的PDF文档的电子邮件。 发送电子邮件步骤支持[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
 
-电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
+电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
 
 电子邮件步骤具有以下属性：
 
@@ -203,7 +203,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 * **[!UICONTROL 从工作流元数据中检索]** — 从元数据属性中检索主题。
 * **[!UICONTROL 变量]** — 从字符串数据类型的变量中存储的值检索主题。
 
-**[!UICONTROL HTML的电子邮件模板]**：电子邮件的HTML模板。 您可以在电子邮件模板中指定变量。 电子邮件步骤可提取并显示模板中包含的所有变量以供输入。
+**[!UICONTROL HTML电子邮件模板]**： HTML电子邮件模板。 您可以在电子邮件模板中指定变量。 电子邮件步骤可提取并显示模板中包含的所有变量以供输入。
 
 **[!UICONTROL 电子邮件模板元数据]**：电子邮件模板变量的值可以是用户指定的值、创作或发布服务器上资源的路径、图像或工作流元数据属性。
 
@@ -229,7 +229,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 ## 生成记录文档步骤 {#generate-document-of-record-step}
 
-填写或提交表单时，您可以以打印或文档格式保留表单记录。 此记录称为记录文档(DoR)。 您可以使用“生成记录文档”步骤创建自适应表单的只读或交互式PDF版本。 PDF版本包含填写到表单中的信息以及自适应表单的布局。
+填写或提交表单时，您可以以打印或文档格式保留表单记录。 此记录称为记录文档(DoR)。 您可以使用“生成记录文档”步骤来创建自适应表单的只读或交互式PDF版本。 PDF版本包含填写到表单中的信息以及自适应表单的布局。
 
 记录文档步骤具有以下属性：
 
@@ -250,7 +250,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 ## 调用DDX步骤 {#invokeddx}
 
-文档描述XML (DDX)是一种声明性标记语言，其元素代表文档的构建块。 这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX定义了一组操作，这些操作可以应用于一个或多个输入文档，以生成一个或多个输出文档。 单个 DDX 可用于一系列源文档。您可以在AEM Workflow中使用&#x200B;***调用DDX步骤***&#x200B;执行各种操作，如汇编和反汇编文档、创建和修改Acrobat和XFA Forms，以及[DDX参考文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)中描述的其他操作。
+文档描述XML (DDX)是一种声明性标记语言，其元素代表文档的构建块。 这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX定义了一组操作，这些操作可以应用于一个或多个输入文档，以生成一个或多个输出文档。 单个 DDX 可用于一系列源文档。您可以在AEM工作流中使用&#x200B;***调用DDX步骤***&#x200B;执行各种操作，如汇编和反汇编文档、创建和修改Acrobat和XFA Forms，以及[DDX参考文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)中描述的其他操作。
 
 调用DDX步骤具有以下属性：
 
@@ -368,7 +368,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
    * **[!UICONTROL 映射来自输入JSON的输入字段]**：指定JSON文件的路径，以从JSON文件中获取某些服务参数的输入值。 JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径，您也可以使用JSON或表单数据模型(FDM)类型的变量选择输入JSON文档。
 
 * **[!UICONTROL 服务输入]** > **[!UICONTROL 使用变量或JSON文件提供输入数据]**：选择相应选项，以从在绝对路径、有效负荷的相对路径或变量中保存的JSON文件中获取所有参数的值。
-* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数值的JSON文件。 JSON文件的路径可以是有效负载&#x200B;**的相对路径**&#x200B;或&#x200B;**[!UICONTROL 绝对路径]**。 您还可以使用JSON或表单数据模型(FDM)数据类型的变量检索输入JSON文档。
+* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数值的JSON文件。 JSON文件的路径可以是有效负载&#x200B;]**的相对路径**[!UICONTROL &#x200B;或&#x200B;**[!UICONTROL 绝对路径]**。 您还可以使用JSON或表单数据模型(FDM)数据类型的变量检索输入JSON文档。
 
 * **[!UICONTROL JSON点表示法]**：将该字段留空可使用指定JSON文件的所有对象作为服务参数的输入。 要从指定的JSON文件中读取特定JSON对象作为服务参数的输入，请为JSON对象指定点表示法，例如，如果您的JSON与部分开头列出的类似，请指定insurance.customerDetails以提供客户的所有详细信息作为服务的输入。
 * **[!UICONTROL 服务输出]** > **[!UICONTROL 将输出值映射并写入变量或元数据]**：选择选项以将输出值保存为crx-repository中工作流实例元数据节点的属性。 指定元数据属性的名称，然后选择要与元数据属性映射的相应服务输出属性，例如，将输出服务返回的phone_number映射到工作流元数据的phone_number属性。 同样，可以将输出存储在Long数据类型的变量中。 为&#x200B;**[!UICONTROL 要映射的服务输出属性]**&#x200B;选项选择属性时，**[!UICONTROL 将输出保存到]**&#x200B;选项仅填充能够存储所选属性数据的变量。
@@ -568,7 +568,7 @@ Send a document directly to a printer. It supports the following printing access
 
 ## 生成非交互式PDF输出步骤   {#generatePDFdocuments}
 
-1. 在“Sidekick”中，将“生成非交互式PDF输出”Forms Workflow拖动到“工作流”选项卡下。
+1. 在Sidekick中，将生成非交互式PDF输出工作流拖动到Forms Workflow选项卡下。
 1. 双击添加的工作流步骤以编辑组件。
 1. 在“编辑组件”对话框中，配置输入文档、输出文档和其他参数，然后单击&#x200B;**[!UICONTROL 确定]**。
 
@@ -585,15 +585,15 @@ Send a document directly to a printer. It supports the following printing access
 ### 其他参数 {#additional-parameters-1}
 
 * **内容根**：指定存储输入XDP模板中使用的片段或图像的存储库中的文件夹的路径。
-* **区域设置**：为生成的PDF表单指定默认区域设置。
+* **区域设置**：指定生成的PDF表单的默认区域设置。
 * **Acrobat版本**：为生成的PDF表单指定目标Acrobat版本。
 * **线性化PDF**：指定是否优化生成的PDF以进行Web查看。
-* **已标记的PDF**：指定是否使生成的PDF可访问。
+* **标记的PDF**：指定是否使生成的PDF可访问。
 * **XCI文档**：指定XCI文件的路径。
 
 ## 另请参阅 {#see-also}
 
-* [以Forms为中心的AEM Workflow中的变量](/help/forms/variable-in-aem-workflows.md)
+* [以Forms为中心的AEM工作流中的变量](/help/forms/variable-in-aem-workflows.md)
 * [配置外出设置](/help/forms/configure-out-of-office-settings.md)
 
 <!--
