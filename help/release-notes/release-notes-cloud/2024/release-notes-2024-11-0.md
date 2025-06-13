@@ -37,7 +37,7 @@ ht-degree: 99%
 
 观看 2024 年 11 月版概述视频可了解在 2024.11.0 版中添加的功能的概要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
