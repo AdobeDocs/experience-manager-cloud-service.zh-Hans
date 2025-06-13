@@ -84,7 +84,7 @@ ht-degree: 23%
 
    其中：
 
-   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -112,7 +112,7 @@ ht-degree: 23%
 
    ![OAuth 配置](/help/forms/assets/oauthconfig-new.png)
 
-1. 返回&#x200B;**[!UICONTROL 创建Adobe Acrobat Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定[**[!UICONTROL 客户端ID]** （也称为应用程序ID）和&#x200B;**[!UICONTROL 客户端密钥]**]。 使用您在上一步中创建的Adobe Acrobat Sign应用程序](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的[客户端ID和客户端密钥。
+1. 返回&#x200B;**[!UICONTROL 创建Adobe Acrobat Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定[**[!UICONTROL 客户端ID]** （也称为应用程序ID）和&#x200B;**[!UICONTROL 客户端密钥]**]。 使用您在上一步中创建的Adobe Acrobat Sign应用程序[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的客户端ID和客户端密钥。
 
 1. 在[!UICONTROL 授权范围]部分中，您可以根据需要通过将前缀“self”或“account”添加到范围中，将范围修改为“account”或“self”。
    ![授权范围](/help/forms/assets/authorization-scope.png)
@@ -225,7 +225,7 @@ Adobe Acrobat Sign政府解决方案团队要求为您的Adobe Acrobat Sign应�
 
    其中：
 
-   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
