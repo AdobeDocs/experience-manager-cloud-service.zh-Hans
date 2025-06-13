@@ -5,10 +5,10 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 95%
+source-wordcount: '635'
+ht-degree: 91%
 
 ---
 
@@ -90,6 +90,7 @@ ht-degree: 95%
 
 在某些情况下，页面差异功能可能检测不到预期的差异。
 
+* 当创建用于与[Edge Delivery Services，](/help/edge/overview.md)一起使用的不同页面时，为了便于比较，这些页面将并排显示，但不会突出显示差异。
 * 在比较版本和启动项时，差异不会考虑动态组件，如痕迹导航、菜单、产品列表或徽标（依赖站点结构呈现其内容的组件）。
 * 对于版本，差异不会重新创建访问控制策略和 Live Copy 关系。
 * 如果页面发生移动，将无法再使用移动前制作的任何版本执行差异。
