@@ -4,9 +4,9 @@ description: 页面编辑器仍受Adobe支持，但通用编辑器为您的新�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Adobe认识到[页面编辑器](/help/sites-cloud/authoring/page-editor/introduc
 
 |  | 页面编辑器 | 注释 | 通用编辑器 | 注释 |
 |---|---|---|---|---|
-| [经典AEM投放](/help/sites-cloud/authoring/author-publish.md) | [!BADGE 可用]{type=Positive} | 建议与核心组件一起使用 | [!BADGE 不可用]{type=Negative} | 经典AEM页面通常依赖于多个特定于页面编辑器的功能，这些功能很难按原样与通用编辑器一起复制。 |
+| [发布投放](/help/sites-cloud/authoring/author-publish.md) | [!BADGE 可用]{type=Positive} | 建议与核心组件和传统AEM项目一起使用 | [!BADGE 不可用]{type=Negative} | 传统的AEM页面通常依赖于多个特定于页面编辑器的功能，这些功能在使用通用编辑器时很难按原样复制。 |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} |  |
 | [Headless投放](/help/headless/introduction.md) | [!BADGE 部分可用]{type=Caution} | 仅对于[SPA编辑器](/help/implementing/developing/hybrid/introduction.md) [已弃用](/help/implementing/developing/hybrid/spa-editor-deprecation.md)而支持通用编辑器 | [!BADGE 可用]{type=Positive} | 通用编辑器允许开发人员自带Web应用程序，而无需强制实施任何特定的框架要求或实施限制。 |
 
@@ -67,7 +67,7 @@ Adobe认识到[页面编辑器](/help/sites-cloud/authoring/page-editor/introduc
 | 发布（也用于预览） | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | [开始工作流](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 作为扩展提供 |
 | 注释 | [!BADGE 可用]{type=Positive} | 使用[注释](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE 不可用]{type=Negative} | 已计划 |
-| Workfront集成 | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | 作为扩展提供 |
+| Workfront 集成 | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | 作为扩展提供 |
 | [MSM和启动项](/help/sites-cloud/administering/msm-and-translation.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可用于作为扩展的页面 |
 | 试验性和个性化 | [!BADGE 可用]{type=Positive} | 使用[目标模式](/help/sites-cloud/authoring/personalization/targeted-content.md) | [!BADGE 可用]{type=Positive} | 作为Edge Delivery Services的扩展提供 |
 | 内容树 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 还允许在树中重新排序 |
@@ -103,6 +103,6 @@ Adobe认识到[页面编辑器](/help/sites-cloud/authoring/page-editor/introduc
    * 这会影响对话框的许多区域，例如自定义构件、字段验证、显示/隐藏规则和基于模板的自定义项。
       * 虽然这些功能仍然可用，但通用编辑器通过配置解决它们，而不是在对话框中部署的自定义JavaScript。
 
-虽然从技术上讲，通用编辑器可以为经典AEM页面（例如，使用核心组件构建的）启用编辑，但这些网站通常依赖于多个页面编辑器特定的功能，例如样式系统、响应式网格、可编辑模板和对话框中的自定义Javascript。
+虽然通用编辑器在技术上可以为传统的AEM项目（例如，使用核心组件构建的）启用编辑页面，但这些网站通常依赖于多个页面编辑器特定的功能，例如样式系统、响应式网格、可编辑模板和对话框中的自定义Javascript。
 
 由于通用编辑器遵循一种更精简的现代方法，该方法不支持这些旧功能，因此迁移此类站点将需要大量重构。 因此，仅建议在迁移到Edge Delivery Services的项目中&#x200B;**将页面编辑器站点迁移到通用编辑器。**
