@@ -87,7 +87,7 @@ ht-degree: 6%
 
       * **[!UICONTROL 后处理工作流]：**&#x200B;选择此选项时，需要额外处理无法使用处理配置文件实现的资产。 可以向配置中添加其他后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。
 
-请参阅[使用资产微服务和处理配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)，了解有关处理配置文件和后处理工作流的详细信息。
+请参阅[使用资产微服务和处理配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=zh-Hans)，了解有关处理配置文件和后处理工作流的详细信息。
 
 ![高级重新处理Assets选项2](assets/reprocessing-options-advanced-2.png)
 
@@ -103,21 +103,21 @@ ht-degree: 6%
 
 与自然语言词汇相比，根据业务分类标记数字资产有助于使其与公司的业务保持一致，并确保最相关的资产出现在搜索中。
 
-阅读有关[重新处理DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images)中现有图像的颜色标记的详细信息。
+阅读有关[重新处理DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hans#color-tags-existing-images)中现有图像的颜色标记的详细信息。
 
 ### 智能裁剪 {#reprocessing-smart-crop}
 
-了解有关[Dynamic Media智能裁切](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en)的更多信息，该智能裁切允许您对上传的资源应用特定裁切（**[!UICONTROL 智能裁切]**&#x200B;和像素裁切）和锐化配置。
+了解有关[Dynamic Media智能裁切](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hans)的更多信息，该智能裁切允许您对上传的资源应用特定裁切（**[!UICONTROL 智能裁切]**&#x200B;和像素裁切）和锐化配置。
 
 ### 元数据 {#reprocessing-metadata}
 
 [!DNL Adobe Experience Manager Assets]保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 利用从上载到Experience Manager Assets的文件中提取元数据的功能，元数据管理与创作工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
 
-阅读有关[重新处理元数据配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en)的详细信息。
+阅读有关[重新处理元数据配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=zh-Hans)的详细信息。
 
 ### 重新处理文件夹中的Dynamic Media资产 {#reprocessing-dynamic-media}
 
-如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问[重新处理文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)中的Dynamic Media资源。
+如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问[重新处理文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hans)中的Dynamic Media资源。
 
 >[!NOTE]
 >
@@ -126,4 +126,4 @@ ht-degree: 6%
 
 ### 工作流
 
-阅读有关[处理配置文件和后处理工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)的更多信息。
+阅读有关[处理配置文件和后处理工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=zh-Hans)的更多信息。
