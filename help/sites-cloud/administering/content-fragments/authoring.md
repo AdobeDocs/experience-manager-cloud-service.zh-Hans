@@ -178,7 +178,7 @@ ht-degree: 70%
 
     >[！NOTE]
     >
-    >您无法删除**Main**.
+    >您无法删除&#x200B;**Main**.
 
 1. 选择变体。
 
@@ -267,7 +267,7 @@ ht-degree: 70%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
@@ -493,7 +493,7 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->这些注释在原始编辑器](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不可见，在Assets控制台的[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中不可见。[
+>这些注释在原始编辑器[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不可见，在Assets控制台的[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中不可见。
 
 ## 预览您的片段 {#preview-content-fragment}
 
@@ -502,7 +502,7 @@ ht-degree: 70%
 要使用此功能，您首先需要：
 
 * 与您的 IT 团队一起设置外部前端应用程序，该应用程序将使用其 JSON 输出来渲染内容片段。
-* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的[属性。
+* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型[&#128279;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的属性。
 
 在定义 URL 后，**预览**&#x200B;按钮将处于活动状态。您可以选择此按钮来启动外部应用程序（在单独的选项卡中）以渲染内容片段。
 
