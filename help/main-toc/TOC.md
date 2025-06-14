@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
 workflow-type: tm+mt
-source-wordcount: '6239'
+source-wordcount: '6253'
 ht-degree: 99%
 
 ---
@@ -408,7 +408,7 @@ ht-degree: 99%
          + [管理项目](/help/sites-cloud/authoring/projects/managing.md)
          + [处理任务](/help/sites-cloud/authoring/projects/tasks.md)
          + [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)
-      + 页面启动项 {#launches-for-pages}
+      + 页面的启动项 {#launches-for-pages}
          + [使用启动项](/help/sites-cloud/authoring/launches/overview.md)
          + [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
          + [管理启动项中的页面](/help/sites-cloud/authoring/launches/managing-pages.md)
@@ -514,7 +514,6 @@ ht-degree: 99%
    + [启用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 协作者用户](/help/assets/assets-collaborator-users.md)
-   + [在为 Edge Delivery Services 创作内容时集成 AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + 管理数字资产 {#manage}
       + 微前端资产选择器 {#asset-selector}
          + [资产选择器概述](/help/assets/overview-asset-selector.md)
@@ -710,6 +709,9 @@ ht-degree: 99%
    + 最佳实践{#best-practices}
       + [搜索最佳实践](/help/assets/search-best-practices.md)
       + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
+
+   + 与Figma集成 {#integration-figma}
+      + [与Figma的本机集成](/help/assets/Integrate-aem-assets-with-figma.md)
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [配置资产元数据映射](/help/assets/configure-asset-metadata-mapping.md)
@@ -721,6 +723,8 @@ ht-degree: 99%
       + [与 Adobe Express 的原生集成](/help/assets/native-integration-adobe-express.md)
    + 与 Creative Cloud 集成 {#integration-creative-cloud}
       + [将 AEM Assets 连接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+   + 将AEM Assets与Edge Delivery Services集成 {#integrate-aem-assets-edge-delivery-services}
+      + 在为AEM Assets创作内容时[集成Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
@@ -996,14 +1000,14 @@ ht-degree: 99%
          + [缓存选项](/help/commerce-cloud/configuring/caching.md)
          + [自定义 HTTP 标头](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [购物车和 Dispatcher 设置](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [组件和GraphQL清除缓存](/help/commerce-cloud/configuring/clear-cache.md)
+         + [组件和 GraphQL 清除缓存](/help/commerce-cloud/configuring/clear-cache.md)
       + 开发 {#developing}
          + [使用 AEM Cloud Service SDK 进行开发](/help/commerce-cloud/develop.md)
          + [设置 CIF 组件的样式](/help/commerce-cloud/customizing/style-cif-component.md)
          + [自定义 CIF 组件](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [使用 CIF 目录选取器](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [CIF 产品轮播的自定义属性](/help/commerce-cloud/customizing/product-carousel.md)
-         + [JSON-LD元数据](/help/commerce-cloud/customizing/json-ld.md)
+         + [JSON-LD 元数据](/help/commerce-cloud/customizing/json-ld.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
