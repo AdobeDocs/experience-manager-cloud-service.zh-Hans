@@ -724,7 +724,7 @@ ht-degree: 99%
    + 与 Creative Cloud 集成 {#integration-creative-cloud}
       + [将 AEM Assets 连接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
    + 将AEM Assets与Edge Delivery Services集成 {#integrate-aem-assets-edge-delivery-services}
-      + [在为AEM Assets创作内容时集成Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+      + 在为AEM Assets创作内容时[集成Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
