@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6263'
 ht-degree: 99%
 
 ---
@@ -724,7 +724,7 @@ ht-degree: 99%
    + 与 Creative Cloud 集成 {#integration-creative-cloud}
       + [将 AEM Assets 连接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
    + 将AEM Assets与Edge Delivery Services集成 {#integrate-aem-assets-edge-delivery-services}
-      + [在为AEM Assets创作内容时集成Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+      + 在为AEM Assets创作内容时[集成Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
@@ -1073,7 +1073,8 @@ ht-degree: 99%
          + [如何发布和部署表单：通用编辑器发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [构建自定义表单组件：通用编辑器开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表单数据模型集成：将表单与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [可重复使用的、模块化的独立片段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [可重用、模块化和独立区段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [对Edge Delivery Services表单提交中的403禁止的错误进行故障排除](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 基于文档的创作 {#getting-started-edge-delivery-services-forms}
          + [构建您的第一个表单：使用 Google Sheets 和 Excel 的快速入门指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 创建表单：分步指南](/help/edge/docs/forms/create-forms.md)
