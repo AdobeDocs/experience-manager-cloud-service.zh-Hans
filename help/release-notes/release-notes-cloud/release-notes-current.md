@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
 source-wordcount: '2077'
-ht-degree: 87%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 87%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets 与 Figma 在本地集成，这使得设计师可以直接从 Figma �
 
 **基于属性的访问控制 (ABAC)**
 
-[Content Hub现在允许您应用基于规则的限制来访问资源](/help/assets/attribute-based-access-control.md)。 资产权限可用于强化治理策略，并确保仅授权用户可访问相关资产。
+[Content Hub 现在允许您应用基于规则的限制来访问资产](/help/assets/attribute-based-access-control.md)。资产权限可用于强化治理策略，并确保仅授权用户可访问相关资产。
 
 资产限制规则基于元数据定义。当资产的元数据满足规则中设定的条件时，该资产将对相应的用户组可见。
 
@@ -78,19 +78,19 @@ AEM Assets 与 Figma 在本地集成，这使得设计师可以直接从 Figma �
 
 **UI 品牌化**
 
-Content Hub现在允许管理员[使用特定于品牌的元素](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)自定义用户界面，这些元素包括横幅图像、横幅标题和正文文本以及主要颜色和次要颜色。 这些改进有助于确保品牌一致性，简化用户引导流程，并建立信任。
+Content Hub 现在允许管理员[使用品牌特定的元素来自定义用户界面](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)，这些元素包括横幅图像、横幅标题和正文，以及主色和辅色。这些改进有助于确保品牌一致性，简化用户引导流程，并建立信任。
 
 ![UI 品牌化](/help/assets/assets/content-hub-ui-branding.png)
 
 **公共链接共享**
 
-Content Hub现在支持[生成可共享链接，以允许没有应用程序访问权限的外部用户](/help/assets/share-assets-content-hub.md##share-assets)查看资源元数据或下载资源。
+Content Hub 现在支持[生成可共享的链接，允许外部用户](/help/assets/share-assets-content-hub.md##share-assets)无需应用程序访问权限即可查看资产元数据或下载资产。
 
 ![UI 品牌化](/help/assets/assets/public-and-private-link.png)
 
 **收藏集治理**
 
-Content Hub现在允许您[在创建过程中控制对收藏集的访问，确保只有授权用户才能查看或管理分组的资源](/help/assets/collections-content-hub.md##create-collections)。 它确保了安全性的提升、协作的优化、资产管理的有序化以及治理的简化。
+Content Hub 现在允许您[在创建过程中控制对收藏集的访问权限，确保只有授权用户才能查看或管理分组资产](/help/assets/collections-content-hub.md##create-collections)。它确保了安全性的提升、协作的优化、资产管理的有序化以及治理的简化。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
@@ -100,11 +100,11 @@ Content Hub现在允许您[在创建过程中控制对收藏集的访问，确�
 
 **将多个资产下载为 ZIP 文件**
 
-Content Hub现在还允许您[将所选资源及其演绎版](/help/assets/download-assets-content-hub.md#download-asset-renditions)下载到ZIP文件中，而不是作为单独的文件来为您简化文件管理。
+Content Hub 现在还允许您[将所选资产及其演绎版下载为 ZIP 文件，而非单独的文件，从而简化文件管理。](/help/assets/download-assets-content-hub.md#download-asset-renditions)
 
 **Content Hub 中的 Dynamic Media 演绎版**
 
-直接在Content Hub用户界面[&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions)中访问所有Dynamic Media预设演绎版和智能裁剪以供下载。
+您可以直接[在 Content Hub 用户界面中访问所有 Dynamic Media 预设演绎版和智能裁剪，并进行下载](/help/assets/download-assets-content-hub.md#download-asset-renditions)。
 
 &#x200B;![Dynamic Media 演绎版](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Content Hub现在还允许您[将所选资源及其演绎版](/help/assets/downl
 
 **Dynamic Media 与 AJO B2C 的原生集成**
 
-[Experience Manager (AEM) Dynamic Media与Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic)的本机集成，使营销人员能够轻松地将AEM Dynamic Media资产（演绎版和DM模板）嵌入到AJO内容中，并在各个渠道中提供实时更新和超个性化体验。
+[Experience Manager (AEM) Dynamic Media 与 Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic) 的原生集成，使营销人员能够轻松地将 AEM Dynamic Media 资产（演绎版和 DM 模板）嵌入到 AJO 内容中，并通过各个渠道提供实时更新和超个性化体验。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463792/?learn=on&enablevpops=&autoplay=true&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -247,7 +247,7 @@ OSGi 属性：
 
 我们为实时生产站点提供的 AEM Publish Delivery 或 Edge Delivery Services 项目的机会数量有限。如果您有兴趣参与或想了解更多信息，请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) 并简要描述您的用例。
 
-### Edge Delivery Services (Beta计划)的CDN配置 {#cdn-eds-beta}
+### Edge Delivery Services 的 CDN 配置（Beta 计划） {#cdn-eds-beta}
 
 Adobe 管理的 CDN 提供灵活的配置选项，如这篇[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
 

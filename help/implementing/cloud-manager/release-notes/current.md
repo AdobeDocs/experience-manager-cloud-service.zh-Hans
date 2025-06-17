@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.6.0 的发布日期是 2025 年
 
 ## 新增功能 {#what-is-new}
 
-* **许可证仪表板现在包含Edge Delivery Services许可证**
+* **许可证仪表板现已包含 Edge Delivery Services 许可证信息**
 
   许可仪表板现已显示 Edge Delivery Services 的许可使用情况，帮助您更清晰地了解您的授权权益与当前状态。<!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.6.0 的发布日期是 2025 年
 
   参阅[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
-* **Edge Delivery站点配置已更新**
+* **Edge Delivery 网站配置已更新**
 
   通过请求 **Edge Delivery 原始地址**，而非&#x200B;**存储库 URL**，简化了添加 Edge Delivery 站点的流程，使入门与配置更加快捷直观<!-- CMGR-67686 -->。
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.6.0 的发布日期是 2025 年
 
   请参阅[添加 Edge Delivery 站点](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。
 
-* **管道收藏夹**
+* **管道收藏功能**
 
   在本次版本更新中，Cloud Manager 引入了管道收藏功能，您可以将特定的 Pipeline 标记为收藏项，使其显示在&#x200B;**管道**&#x200B;页面列表的顶部。此项增强功能可帮助您更轻松地查找并运行常用的管道。<!-- CMGR-68293 -->
 
@@ -70,7 +70,7 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 相关联的电子邮件地址发送电子邮件至 [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)。
 
 
-### 自带Git (BYOG) — 现在支持Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### 自带 (BYOG) Git - 现支持 Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -88,7 +88,7 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
 
-**有关BYOG的常见问题解答**
+**有关 BYOG 的常见问题解答**
 
 | 问题 | 解答 |
 |---|---|
@@ -100,18 +100,18 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 
 #### 管理访问令牌{#manage-access-tokens}
 
-在Cloud Manager中使用&#x200B;**管理访问令牌**&#x200B;查看、重命名和删除与外部BYOG存储库（例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）关联的访问令牌。
+在 Cloud Manager 中使用&#x200B;**管理访问令牌**&#x200B;功能，可查看、重命名并删除与外部自带 Git 存储库（如 GitHub Enterprise、GitLab、Bitbucket 和 Azure DevOps）关联的访问令牌。
 
 请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
-如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)发送电子邮件。
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。
 
 
 ### 添加 Edge Delivery 配置管道 {#add-eds-pipeline}
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
