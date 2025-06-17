@@ -45,7 +45,7 @@ Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑�
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)以了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
+[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)以了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
 
 ## 安装 Universal Editor Service {#install-ue-service}
 
@@ -53,7 +53,7 @@ Universal Editor服务不是Universal Editor的完整副本，而只是其功能
 
 需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能运行通用编辑器服务的本地副本。
 
-Universal Editor服务可通过Software Distribution使用。 有关如何访问它的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+Universal Editor服务可通过Software Distribution使用。 有关如何访问它的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
 
 将`universal-editor-service.cjs`文件从Software Distribution保存到本地开发环境。
 
