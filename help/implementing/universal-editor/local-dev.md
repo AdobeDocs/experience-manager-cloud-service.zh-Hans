@@ -4,7 +4,7 @@ description: 了解如何运行您自己的通用编辑器服务，以供本地�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 36%
@@ -45,7 +45,7 @@ Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑�
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)以了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
+[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)以了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
 
 ## 安装 Universal Editor Service {#install-ue-service}
 
@@ -53,7 +53,7 @@ Universal Editor服务不是Universal Editor的完整副本，而只是其功能
 
 需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能运行通用编辑器服务的本地副本。
 
-Universal Editor服务可通过Software Distribution使用。 有关如何访问它的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
+Universal Editor服务可通过Software Distribution使用。 有关如何访问它的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
 将`universal-editor-service.cjs`文件从Software Distribution保存到本地开发环境。
 
@@ -92,7 +92,7 @@ UES_CORS_PRIVATE_NETWORK=true
 
 下表详细说明这些值和可用的其他值。
 
-| 价值 | 可选 | 默认 | 描述 |
+| 值 | 可选 | 默认 | 描述 |
 |---|---|---|---|
 | `UES_PORT` | 是 | `8080` | 服务器运行的端口 |
 | `UES_PRIVATE_KEY` | 是 | 无 | HTTPS服务器私钥的路径 |
@@ -156,7 +156,7 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 ## 使用本地 Universal Editor Service 编辑页面 {#editing}
 
-如果[通用编辑器服务在本地运行](#running-ue)，并且您的[内容页面配置为使用本地服务](#using-loca-ue)，您现在可以启动该编辑器。
+如果[通用编辑器服务在本地运行](#running-ue)，并且您的[内容页面配置为使用本地服务](/help/implementing/universal-editor/getting-started.md)，您现在可以启动该编辑器。
 
 1. 打开您的浏览器以转至 `https://localhost:8000/ping`。
 1. 引导浏览器接受[您的自签名证书](#ue-https)。
