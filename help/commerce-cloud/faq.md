@@ -5,9 +5,9 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ PIM 数据通过 GraphQL 请求向 AEM 和客户端公开。我们的建议是�
 
 ## &#x200B;9. AEM Dispatcher 的缓存失效如何与 AEM 和 Commerce 配合使用？
 
-Adobe 建议为 Dispatcher 上缓存的页面设置基于 TTL 的缓存失效。对于价格或库存等动态信息，Adobe 建议在客户端呈现数据。有关基于TTL的缓存失效的详细信息，请参阅[优化Dispatcher缓存。](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=zh-Hans)
+Adobe 建议为 Dispatcher 上缓存的页面设置基于 TTL 的缓存失效。对于价格或库存等动态信息，Adobe 建议在客户端呈现数据。有关基于 TTL 的缓存失效的详细信息，请参阅[优化 Dispatcher 缓存。](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
 
 ## &#x200B;10. 对于使用 Commerce 跨 AEM 内容进行统一搜索有什么建议吗？
 

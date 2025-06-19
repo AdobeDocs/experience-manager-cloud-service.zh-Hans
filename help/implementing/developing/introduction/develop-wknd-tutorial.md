@@ -5,7 +5,7 @@ exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
 ht-degree: 100%
 
@@ -31,9 +31,9 @@ ht-degree: 100%
 
 教程实施利用了 AEM 的许多强大的功能。站点会通过以下项目实施：
 
-* [Maven AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)
+* [Maven AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=zh-Hans)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
 * [可编辑模板](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=zh-Hans)
-* [样式系统](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=zh-Hans)
+* [样式系统](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)

@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6263'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -710,8 +710,8 @@ ht-degree: 99%
       + [搜索最佳实践](/help/assets/search-best-practices.md)
       + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
 
-   + 与Figma集成 {#integration-figma}
-      + [与Figma的本机集成](/help/assets/Integrate-aem-assets-with-figma.md)
+   + 与 Figma 集成 {#integration-figma}
+      + [与 Figma 的原生集成](/help/assets/Integrate-aem-assets-with-figma.md)
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [配置资产元数据映射](/help/assets/configure-asset-metadata-mapping.md)
@@ -723,8 +723,8 @@ ht-degree: 99%
       + [与 Adobe Express 的原生集成](/help/assets/native-integration-adobe-express.md)
    + 与 Creative Cloud 集成 {#integration-creative-cloud}
       + [将 AEM Assets 连接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
-   + 将AEM Assets与Edge Delivery Services集成 {#integrate-aem-assets-edge-delivery-services}
-      + [在为AEM Assets创作内容时集成Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + 将 AEM Assets 与 Edge Delivery Services 集成 {#integrate-aem-assets-edge-delivery-services}
+      + [在为 Edge Delivery Services 创作内容时集成 AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
@@ -1073,8 +1073,8 @@ ht-degree: 99%
          + [如何发布和部署表单：通用编辑器发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [构建自定义表单组件：通用编辑器开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表单数据模型集成：将表单与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [可重用、模块化和独立区段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [对Edge Delivery Services表单提交中的403禁止的错误进行故障排除](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [可重复使用的、模块化的独立片段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [解决 Edge Delivery Services 表单提交中的 403 禁止错误](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 基于文档的创作 {#getting-started-edge-delivery-services-forms}
          + [构建您的第一个表单：使用 Google Sheets 和 Excel 的快速入门指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 创建表单：分步指南](/help/edge/docs/forms/create-forms.md)
@@ -1206,14 +1206,14 @@ ht-degree: 99%
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [生成环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
-      + [专业测试环境(Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [专门的测试环境 (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + 管理您的代码  {#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [添加一个 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [添加一个专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [添加外部存储库(Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [管理外部存储库的访问令牌(Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [添加一个外部存储库 (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [管理外部存储库的访问令牌 (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

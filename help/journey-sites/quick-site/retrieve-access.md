@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '874'
+ht-degree: 100%
 
 ---
 
