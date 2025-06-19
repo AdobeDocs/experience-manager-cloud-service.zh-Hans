@@ -4,9 +4,9 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ ht-degree: 100%
 * **仪表板工具：**&#x200B;分析您的 CDN 日志以提出新的流量过滤规则。
 * **推荐的入门规则：**&#x200B;一组入门规则。
 * **教程：**&#x200B;有关该功能的实用知识，包括如何使用仪表板工具声明正确的规则。
-
-Adobe 邀请您通过发送电子邮件至 **aemcs-waf-adopter@adobe.com** 提供反馈或询问有关流量过滤规则的问题。
 
 ## 流量保护概述 {#traffic-protection-overview}
 
