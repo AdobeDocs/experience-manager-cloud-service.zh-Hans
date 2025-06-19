@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 6ca65f5833dc26043a27945ae02aac6e29ad62d2
+source-git-commit: f51730be823782ba722a33be6da409fad14429eb
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2301'
 ht-degree: 28%
 
 ---
@@ -83,6 +83,9 @@ ht-degree: 28%
 
 >[!TAB GitHub企业版]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-venders/github —>
+
 | 访问令牌选项 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
@@ -93,6 +96,8 @@ ht-degree: 28%
 另请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | 访问令牌选项 | 描述 |
 | --- | --- |
@@ -105,6 +110,8 @@ ht-degree: 28%
 
 >[!TAB 比特桶]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | 访问令牌选项 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
@@ -115,6 +122,8 @@ ht-degree: 28%
 另请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 访问令牌选项 | 描述 |
 | --- | --- |
@@ -208,11 +217,16 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitHub企业版]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-venders/github —>
+
 | 必需的webhook事件 |
 | --- |
 | 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>确保将webhook设置为在下列必需的webhook事件上触发：<ul><li>拉取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | 必需的webhook事件 |
 | --- |
@@ -220,11 +234,15 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB 比特桶]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | 必需的webhook事件 |
 | --- |
 | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 必需的webhook事件 |
 | --- |
@@ -244,12 +262,17 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitHub企业版]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-venders/github —>
+
 创建检查后，它类似于下面的屏幕快照。 与`GitHub.com`的主要区别在于`GitHub.com`使用检查运行，而GitHub Enterprise（使用个人访问令牌）生成提交状态：
 
 ![提交状态以指示GitHub Enterprise上的PR验证过程](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完成（无论成功还是失败）后，将移除初始注释，并替换为包含验证结果或错误详细信息的新注释。
 
@@ -271,6 +294,8 @@ GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完
 
 
 >[!TAB 比特桶]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 运行代码质量验证时：
 
