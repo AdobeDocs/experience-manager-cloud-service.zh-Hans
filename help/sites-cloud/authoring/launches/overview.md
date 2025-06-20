@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 75%
+source-wordcount: '977'
+ht-degree: 76%
 
 ---
 
@@ -115,11 +115,13 @@ ht-degree: 75%
 
 ## “启动项”控制台 {#the-launches-console}
 
+<!--
 >[!NOTE]
 >
->此控制台仅适用于页面的启动项。
+>This console is only for Launches for Pages. 
 >
->要管理您的内容片段，请参阅[内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 启动项控制台提供了启动项的概述，并允许您对列出的启动项执行操作。
 
