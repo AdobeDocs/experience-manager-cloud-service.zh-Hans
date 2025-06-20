@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
-workflow-type: ht
-source-wordcount: '6263'
-ht-degree: 100%
+source-git-commit: 72f6a0597b59efd9bf17fba0ea286e14cfa5903d
+workflow-type: tm+mt
+source-wordcount: '6267'
+ht-degree: 99%
 
 ---
 
@@ -443,6 +443,7 @@ ht-degree: 100%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [关于删除的注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [内容片段控制台内的资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [使用 Adobe Journey Optimizer 的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
          + [内容片段 AJO 外部引用扩展](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)

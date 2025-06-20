@@ -1,22 +1,30 @@
 ---
-title: 启动项
-description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
+title: 页面的启动项
+description: 了解如何在Adobe Experience Manager as a Cloud Service中使用页面启动项。 通过启动项，您可以高效地为未来版本开发内容，同时维护当前页面。
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 83%
+source-wordcount: '995'
+ht-degree: 75%
 
 ---
 
-# 启动项 {#launches}
+# 页面的启动项 {#launches-for-pages}
 
-使用启动项，您可以有效地开发内容的将来版本。
+在Adobe Experience Manager (AEM) as a Cloud Service中，通过启动项，您可以高效地为未来版本开发内容。
 
-创建&#x200B;*Launch*&#x200B;是为了允许您进行更改以准备将来发布，同时维护当前页面。 这意味着您要同时有效编辑两个版本：当前已发布的页面，以及将来要同时发布的这些页面的一个版本。 到达该时间后，您可以替换原始页面并发布新版本。
+创建&#x200B;*Launch*&#x200B;是为了允许您进行更改以准备将来发布，同时维护当前内容。 对于AEM页面，这意味着您可以同时有效编辑两个版本：当前发布的页面，以及将来要同时发布的这些页面的一个版本。 到达该时间后，您可以替换原始页面并发布新版本。
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 您创建了一个&#x200B;*Launch*，然后在编辑和更新&#x200B;*Launch*&#x200B;页面后，您&#x200B;*将它们提升回* Source *。*&#x200B;然后，您可以激活这些&#x200B;*Source*&#x200B;页面（顶级）。 提升会将启动项内容复制回源页面，此操作可以手动或自动完成（具体取决于创建和编辑启动项时设置的字段）。
 
@@ -28,7 +36,7 @@ ht-degree: 83%
 您也可以：
 
 * 在启动项分支中导航内容；根据需要添加或删除页面。
-* 预览已发布内容在将来的特定日期/时间的外观。
+* 预览已发布内容在将来的特定日期的外观。
 
 当下一季度到来时，您需要提升启动页面，以便发布源页面（包含更新的内容）。您可以提升所有页面，也可以仅提升已修改的页面。
 
@@ -106,6 +114,12 @@ ht-degree: 83%
    ![要对 Sites 控制台中的启动项执行的操作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## “启动项”控制台 {#the-launches-console}
+
+>[!NOTE]
+>
+>此控制台仅适用于页面的启动项。
+>
+>要管理您的内容片段，请参阅[内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
 
 启动项控制台提供了启动项的概述，并允许您对列出的启动项执行操作。
 
