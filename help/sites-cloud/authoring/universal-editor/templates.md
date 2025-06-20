@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -57,7 +57,7 @@ ht-degree: 26%
 
 1. 使用&#x200B;**站点**&#x200B;控制台可[导航到要用作模板的新页面或现有页面](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)，然后点按或单击该页面以将其选定。
 
-1. 选择页面后，点按或单击工具栏中的&#x200B;[**属性**&#x200B;图标](/help/sites-cloud/authoring/sites-console/page-properties.md)。
+1. 选择页面后，点按或单击工具栏中的&#x200B;[**属性**&#x200B;图标](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)。
 
 1. 在&#x200B;**模板设置**&#x200B;部分下的属性对话框的&#x200B;**高级**&#x200B;选项卡上，选择切换&#x200B;**将页面用作模板**。
 

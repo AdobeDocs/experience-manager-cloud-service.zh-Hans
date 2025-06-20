@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 89%
@@ -30,7 +30,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 您可以选择一个组件，并将其拖动到页面上的所需位置。然后，可以使用下列方法编辑该组件：
 
-* [配置属性](/help/sites-cloud/authoring/sites-console/page-properties.md)
+* [配置属性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 * [编辑内容](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [编辑内容 – 全屏模式](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
@@ -42,11 +42,11 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ## 核心组件 {#core-components}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
 它们是使用AEM最佳实践构建的，是AEM创作体验的基础。 开发人员可以轻松扩展核心组件，以满足特定项目需求。
 
-除了 WCM 核心组件之外，您还可以使用[自适应表单核心组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans#features)这些核心组件提供了更简单的标准方法，以便[创建表单或将表单添加到 AEM Sites 页面。](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+除了 WCM 核心组件之外，您还可以使用[自适应表单核心组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)这些核心组件提供了更简单的标准方法，以便[创建表单或将表单添加到 AEM Sites 页面。](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 ### 配置模板 {#configuring-templates}
 

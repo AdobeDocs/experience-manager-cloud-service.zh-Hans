@@ -1,28 +1,35 @@
 ---
-title: 发布页面
-description: 了解如何使用 AEM 中的各种机制发布和取消发布页面。
+title: 从站点控制台发布页面
+description: 了解如何使用站点控制台发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 77%
+source-wordcount: '1635'
+ht-degree: 74%
 
 ---
 
-# 发布页面 {#publishing-pages}
+
+# 从站点控制台发布页面 {#publishing-pages}
 
 在创作环境中创建并审核内容后，接下来的目标就是[让内容在您的公共网站（发布环境）中可供使用](/help/sites-cloud/authoring/author-publish.md)。
 
 这称为“发布页面”。当您要从发布环境中删除页面时，此过程称为“取消发布”。发布和取消发布时，该页面在删除之前仍可在创作环境中用于进一步更改。
 
-您可以立即发布/取消发布页面，或者在某个预定义的未来日期/时间发布/取消发布页面。
+您可以使用&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)立即发布/取消发布页面，或者在预定义的将来日期/时间发布/取消发布页面。
 
->[!NOTE]
+>[!TIP]
 >
->发布[体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)的过程与发布页面的过程基本相同，只是从体验片段控制台或编辑器中发布。
+>您可以从站点控制台以外的位置发布。
+>
+>* 页面编辑器中的[](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* 从通用编辑器[](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* 从体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)控制台或编辑器中[
+>
+>从这些位置发布提供了不同的选项，但遵循了此处所述的类似过程和一般想法。
 
 ## 术语 {#terminology}
 
@@ -38,14 +45,6 @@ ht-degree: 77%
    * 这些是技术术语，用于描述发布页面（例如，从作者到预览）时数据（例如，页面内容、文件、代码、用户评论）从一个服务移动到另一个服务。
    * 这些术语主要由开发人员使用。
 
-## 发布页面 {#publishing-pages-1}
-
-根据您所在的位置，可以通过下列方式发布：
-
-* [从页面编辑器中](#publishing-from-the-page-editor)
-* [从 ](#publishing-from-the-sites-console)
-* [从通用编辑器](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >如果您没有必要的权限来发布特定页面：
@@ -60,50 +59,17 @@ ht-degree: 77%
 >
 >不保证页面顺序：
 >
->* 只选择要发布的子页面（因为订单信息保存在父页面上）
+>* 如果只选择子页面进行发布（因为订单信息保存在父页面上）
 >* 如果父页面和子页面是在单独的操作中发布的
 
-### 从页面编辑器发布 {#publishing-from-the-page-editor}
-
-如果您在[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)中编辑页面，则可以直接从编辑器中发布该页面。
-
-1. 选择&#x200B;**页面信息**&#x200B;图标以打开相应的菜单，然后选择&#x200B;**发布页面**&#x200B;选项。
-
-   ![通过页面选项发布页面](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. 根据页面是否包含需要发布的引用：
-
-   * 如果不包含要发布的引用，则会直接发布页面。
-   * 如果页面包含需要发布的引用，则会在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
-      * 指定要与页面一起发布的资产或标记等，然后使用&#x200B;**发布**&#x200B;完成该过程。
-      * 使用&#x200B;**取消**&#x200B;中止操作。
-
-   ![使用页面发布引用](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. 选择&#x200B;**发布**&#x200B;会将页面复制到发布环境。在页面编辑器中，会显示一个确认发布操作的信息横幅。
-
-   ![发布状态信息横幅](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   当在控制台中查看同一页面时，将显示更新的发布状态。
-
-   ![Sites 控制台列视图中的页面发布状态](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->从页面编辑器发布是一种简单的发布方式，即仅发布选定的一个或多个页面，而不发布任何子页面。
-
->[!NOTE]
->
->无法发布编辑器中按[别名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
-
-### 从站点控制台中发布 {#publishing-from-the-sites-console}
+## 从站点控制台发布页面 {#publishing-from-the-sites-console}
 
 在&#x200B;**站点**&#x200B;控制台中，有两个发布选项：
 
 * [快速发布](#quick-publish)
 * [管理发布](#manage-publication)
 
-#### 快速发布 {#quick-publish}
+### 快速发布 {#quick-publish}
 
 **快速发布**&#x200B;适用于一些简单的情况，可立即发布选定的页面，而无需进行任何进一步的交互。正因为这一点，任何未发布的引用也将被自动发布。
 
@@ -123,7 +89,7 @@ ht-degree: 77%
 >
 >“快速发布”是一种简单的发布方式，即只会发布选定的一个或多个页面，而不会发布任何子页面。
 
-#### 管理发布 {#manage-publication}
+### 管理发布 {#manage-publication}
 
 **管理发布**&#x200B;提供的选项比&#x200B;**快速发布**&#x200B;多，允许包含子页面、自定义引用、发布到预览服务（如果可用）和启动任何适用的工作流，并提供在以后的日期发布的选项。
 
@@ -149,13 +115,13 @@ ht-degree: 77%
 
      稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流程。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流程。
 
-     >[!NOTE]
+     >[!TIP]
      >
      >如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流程。
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >计划发布的内容与页面属性[&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中可用的&#x200B;**开启时间**&#x200B;和&#x200B;**关闭时间**&#x200B;不同，但可在类似情况下使用。
+     >计划发布的内容会复制内容并遵循发布工作流程。 如果要临时隐藏已发布的内容而不取消发布，请考虑在页面属性中提供&#x200B;[**开始时间**&#x200B;和&#x200B;**结束时间**。](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -230,26 +196,9 @@ ht-degree: 77%
 
 1. 单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
 
-
-
 ## 取消发布页面 {#unpublishing-pages}
 
 取消发布页面会将其从您的发布或[预览](/help/sites-cloud/authoring/sites-console/previewing-content.md)环境中移除，因此不再将其提供给您的读者。
-
-以类似于发布 [ 的 ](#publishing-pages) 方式，可以从所需目标取消发布一个或多个页面：
-
-* [从页面编辑器中](#unpublishing-from-the-editor)
-* [从 Sites 控制台中](#unpublishing-from-the-console)
-
-### 从编辑器中取消发布 {#unpublishing-from-the-editor}
-
-在编辑页面时，如果要取消发布该页面，请在&#x200B;**页面信息**&#x200B;菜单中选择&#x200B;**取消发布页面**，操作方式与[发布页面](#publishing-from-the-editor)类似。
-
->[!NOTE]
->
->无法取消发布编辑器中按[别名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
-
-### 从控制台中取消发布 {#unpublishing-from-the-console}
 
 正如[使用“管理发布”选项发布页面](#manage-publication)一样，也可以使用它来取消发布页面。
 

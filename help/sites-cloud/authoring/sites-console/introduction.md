@@ -5,7 +5,7 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 45%
@@ -84,7 +84,7 @@ ht-degree: 45%
 * [页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [站点](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
-* [启动](/help/sites-cloud/authoring/launches/overview.md)
+* [发布](/help/sites-cloud/authoring/launches/overview.md)
 * [语言复制](/help/sites-cloud/administering/translation/overview.md)
 * [CSV 报表](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
@@ -185,7 +185,7 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 
 ![快速操作](assets/sites-console-quick-actions.png)
 
-您可以通过点按/单击卡片对树进行向下导航（注意避免点按快速操作），或使用标题[&#128279;](#the-header)中的痕迹导航再次向上导航。
+您可以通过点按/单击卡片对树进行向下导航（注意避免点按快速操作），或使用标题](#the-header)中的[痕迹导航再次向上导航。
 
 ### 列表视图 {#list-view}
 
@@ -194,7 +194,7 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 ![列表视图](assets/sites-console-list-view.png)
 
 * 您可以通过点按/单击资源名称对树进行向下导航，并使用[标题中的痕迹导航](#the-header)再次向上导航。
-* 要轻松选择列表中的所有项目，请使用工具栏[&#128279;](#select-all)中的&#x200B;**全选**&#x200B;复选框。
+* 要轻松选择列表中的所有项目，请使用工具栏](#select-all)中的&#x200B;[**全选**&#x200B;复选框。
 
 * 可使用位于“视图”按钮下方的&#x200B;**查看设置**&#x200B;选项选择要显示的列。可以显示以下列：
 
@@ -238,11 +238,11 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 * **编辑** — 根据所选页面的创建方式，**编辑**&#x200B;操作将打开相应的编辑器。
    * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md) — 对于使用AEM页面编辑器创建的页面
    * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md) — 对于使用通用编辑器创建的页面
-* [**属性**](/help/sites-cloud/authoring/sites-console/page-properties.md) — 打开页面属性窗口
+* [**属性**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) — 打开页面属性窗口
 * [**锁定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) — 锁定页面以防止其他人更改它
 * [**复制**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) — 复制页面
 * [**移动**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) — 移动或重命名页面
-* [**快速Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) — 立即Publish一个或多个页面
+* [**快速发布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) — 立即发布一个或多个页面
 * [**管理发布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) — 计划发布一个或多个页面
 * [**还原**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) — 还原页面或页面树的版本
 * [**删除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) — 删除一个或多个页面

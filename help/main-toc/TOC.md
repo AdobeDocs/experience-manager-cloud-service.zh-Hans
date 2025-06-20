@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 72f6a0597b59efd9bf17fba0ea286e14cfa5903d
+source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
-source-wordcount: '6267'
+source-wordcount: '6281'
 ht-degree: 99%
 
 ---
@@ -372,6 +372,7 @@ ht-degree: 99%
          + [创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [管理页面](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [编辑页面属性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [预览页面](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [页面版本](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -384,6 +385,7 @@ ht-degree: 99%
          + [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [编辑器侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [编辑页面](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [从页面编辑器发布页面](/help/sites-cloud/authoring/page-editor/publishing.md)
          + [页面模板](/help/sites-cloud/authoring/page-editor/templates.md)
          + [添加页面注释](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [富文本编辑器](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -397,7 +399,7 @@ ht-degree: 99%
       + 通用编辑器 {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [发布](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [从通用编辑器中发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [页面模板](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}

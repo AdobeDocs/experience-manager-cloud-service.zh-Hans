@@ -4,7 +4,7 @@ description: 了解如何配置批量编辑，以便您可以一次编辑多个�
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 94%
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 # 配置对页面属性的批量编辑 {#configuring-bulk-editing-of-page-properties}
 
-[批量编辑页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages)功能让您一次编辑多个页面的属性。
+[批量编辑页面属性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#from-the-sites-console-multiple-pages)功能让您一次编辑多个页面的属性。
 
 ## 注意事项 {#considerations}
 

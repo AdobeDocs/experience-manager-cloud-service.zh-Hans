@@ -4,7 +4,7 @@ description: 页面编辑器仍受Adobe支持，但通用编辑器为您的新�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Adobe认识到[页面编辑器](/help/sites-cloud/authoring/page-editor/introduc
 | 内容树 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 还允许在树中重新排序 |
 | 设备模拟 | [!BADGE 可用]{type=Positive} | [可以模拟已配置的设备，](/help/sites-cloud/administering/responsive-layout.md)，但用户无法手动输入要模拟的任何不同的屏幕尺寸。 | [!BADGE 可用]{type=Positive} | [可以手动输入要模拟的任何屏幕维度，](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)，但无法配置默认断点。 |
 | [页面锁定](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 尊重站点控制台中设置的锁定状态，该控制台中的扩展可用于从编辑器锁定/解锁页面 |
-| [页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可从站点管理员获得，其扩展还可通过编辑器访问页面的属性 |
+| [页面属性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可从站点管理员获得，其扩展还可通过编辑器访问页面的属性 |
 | 多字段属性 | [!BADGE 可用]{type=Positive} |  | [!BADGE 不可用]{type=Negative} | 已计划 |
 | [远程DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | [页面版本控制](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
