@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: f51730be823782ba722a33be6da409fad14429eb
+source-git-commit: 54f86f7bc204c6171fb031ecb94dd3da0379dacf
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2298'
 ht-degree: 28%
 
 ---
@@ -83,8 +83,7 @@ ht-degree: 28%
 
 >[!TAB GitHub企业版]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-venders/github —>
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | 访问令牌选项 | 描述 |
 | --- | --- |
