@@ -25,9 +25,9 @@ ht-degree: 74%
 >
 >您可以从站点控制台以外的位置发布。
 >
->* 页面编辑器中的[](/help/sites-cloud/authoring/page-editor/publishing.md)
->* 从通用编辑器[](/help/sites-cloud/authoring/universal-editor/publishing.md)
->* 从体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)控制台或编辑器中[
+>* 页面编辑器中的[&#128279;](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* 从通用编辑器[&#128279;](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* 从体验片段[&#128279;](/help/sites-cloud/authoring/fragments/experience-fragments.md)控制台或编辑器中
 >
 >从这些位置发布提供了不同的选项，但遵循了此处所述的类似过程和一般想法。
 
