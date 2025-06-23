@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
 workflow-type: tm+mt
-source-wordcount: '13685'
+source-wordcount: '13672'
 ht-degree: 92%
 
 ---
@@ -70,11 +70,11 @@ ht-degree: 92%
 
 #### 如何达到标准 – 非文本内容 (1.1.1) {#how-to-meet-non-text-content}
 
-对于静态图形，基本的要求是为图形提供对等的替换文本。该方法可以在&#x200B;**替换文本**&#x200B;字段中完成。例如，参见核心组件&#x200B;**[图像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hans)**。
+对于静态图形，基本的要求是为图形提供对等的替换文本。该方法可以在&#x200B;**替换文本**&#x200B;字段中完成。例如，参见核心组件&#x200B;**[图像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**。
 
 >[!NOTE]
 >
->某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hans)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hans#accessibility-tab)**&#x200B;选项卡）。
+>某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
 >在为您的 AEM 实例实施这些版本时，您的开发团队必须配置此类组件以支持 `alt` 属性。这样做可确保作者可以将其添加到该内容中（请参阅[添加对其他 HTML 元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
 
@@ -185,7 +185,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 用途 – 字幕（预先录制）(1.2.2) {#purpose-captions-prerecorded}
 
-耳聋或听力欠佳的用户无法或很难获取音频内容。字幕是讲话和非讲话音频的对等文本，在视频播放过程中会在相应的时间显示在屏幕上。这让无法听到音频的用户可以了解正在播放的内容。
+耳聋或听力缺佳的人无法或很难获取音频内容。 字幕是讲话和非讲话音频的对等文本，在视频播放过程中会在相应的时间显示在屏幕上。这让无法听到音频的用户可以了解正在播放的内容。
 
 #### 如何达到标准 – 字幕（预先录制）(1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -202,13 +202,13 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 更多信息 – 字幕（预先录制）(1.2.2) {#more-information-captions-prerecorded}
 
-* [了解成功标准1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)。
-* [如何达到成功标准1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)。
+* [了解成功标准 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [如何达到成功标准 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C：同步的多媒体](https://www.w3.org/AudioVideo/)。
-* [字幕、成绩单和音频描述 — 按WebAIM](https://webaim.org/techniques/captions/)。
-—>
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
 ### 音频描述或替代媒体（预先录制）(1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -319,9 +319,9 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
 * **列表**：可以使用 HTML 指定三种不同类型的列表：
    * `<ul>` 元素用于表示&#x200B;*无序*（项目符号）列表。单个列表项使用 `<li>` 元素进行标识。
-在 RTE 中，使用&#x200B;**项目符号列表**&#x200B;图标。
+在 RTE 中，使用**项目符号列表**&#x200B;图标。
    * `<ol>` 元素用于表示&#x200B;*编号*&#x200B;列表。单个列表项使用 `<li>` 元素进行标识。
-在 RTE 中，使用&#x200B;**编号列表**&#x200B;图标。
+在 RTE 中，使用**编号列表**&#x200B;图标。
 
   如果要将现有内容更改为特定列表类型，请突出显示相应的文本并选择相应的列表类型。正如前面显示如何输入段落文本的示例一样，相应的列表元素会自动添加到您的 HTML 中。
 
@@ -346,7 +346,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
   要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
 
    * 定义相应的&#x200B;**题注**。
-   * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、**&#x200B;**&#x200B;** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
+   * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
 
   然后，您可以使用&#x200B;**单元格属性**&#x200B;来选择单元格是数据单元格还是标题单元格：
 
