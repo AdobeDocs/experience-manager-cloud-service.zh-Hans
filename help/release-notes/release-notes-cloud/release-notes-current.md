@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2077'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 95%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,7 +55,7 @@ AEM Assets 现在使用 [AI 自动生成元数据，其中包括标题、描述�
 
 **与 Figma 集成**
 
-AEM Assets 与 Figma 在本地集成，这使得设计师可以直接从 Figma 用户界面访问存储在 AEM Assets 中的资产。您可以将AEM Assets中管理的内容放在Figma画布中，然后在AEM Assets存储库中保存新内容或编辑的内容。 要访问Figma社区页面上提供的AEM Assets Connector，请单击[此处](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
+AEM Assets 与 Figma 在本地集成，这使得设计师可以直接从 Figma 用户界面访问存储在 AEM Assets 中的资产。可将在 AEM Assets 中管理的内容放入 Figma 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。要访问 Figma 社区页面上提供的 AEM Assets 连接器，请单击[此处](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -114,7 +114,7 @@ Content Hub 现在还允许您[将所选资产及其演绎版下载为 ZIP 文�
 
 [Experience Manager (AEM) Dynamic Media 与 Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic) 的原生集成，使营销人员能够轻松地将 AEM Dynamic Media 资产（演绎版和 DM 模板）嵌入到 AJO 内容中，并通过各个渠道提供实时更新和超个性化体验。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463792/?learn=on&enablevpops=&autoplay=true&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ OSGi 属性：
 
 ### 默认清除旧版本和审计日志 {#mt-defaults}
 
-目前，默认情况下，内容版本和审核日志已禁用其关联的&#x200B;*清除维护任务*，因此除非明确配置，否则不会删除任何数据。
+目前，内容版本和审计日志的相关&#x200B;*清除维护任务*&#x200B;默认处于禁用状态，因此除非进行明确配置，否则不会删除任何数据。
 
 然而，为了优化存储库性能，从 **2025 年 6 月下旬**&#x200B;开始，将默认启用清除功能，并遵循以下指南：
 
@@ -216,7 +216,7 @@ OSGi 属性：
    * 过去 7 年内的所有版本均予以保留。
    * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
-* 您可以通过使用配置管道部署的YAML配置来修改这些默认值。
+* 您可以通过使用配置管道部署的 YAML 配置来修改这些默认值。
 
 #### 审核日志 {#mt-auditlogs}
 
@@ -229,7 +229,7 @@ OSGi 属性：
    * 默认情况下，所有事件都会被记录。
    * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
-* 您可以通过使用配置管道部署的YAML配置来修改这些默认值。
+* 您可以通过使用配置管道部署的 YAML 配置来修改这些默认值。
 
 有关更多详细信息，请参阅[维护任务文章](/help/operations/maintenance.md#defaults)。
 

@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 54%
 ## 新增功能 {#what-is-new}
 
 * **禁用“打开页面”按钮** - “打开页面”按钮[现在支持禁用。](/help/implementing/universal-editor/customizing.md#open-page)
-* **从内容树访问属性** - [双击内容树中的条目时，](/help/sites-cloud/authoring/universal-editor/navigation.md)关联的属性将自动在侧面板中打开。
+* **从内容树中访问属性** —— [当您在内容树中双击某个条目时，](/help/sites-cloud/authoring/universal-editor/navigation.md)其关联的属性将自动在侧边面板中打开。
 
 ## 其他改进 {#other-improvements}
 
-* 现在，在“发布”对话框中会默认取消选择已发布的引用，以防止重新发布。
-* 扩展加载已得到改进。
-* 现在，可更好地处理由扩展引发的异常，以免影响编辑器。
+* 为避免重复发布，发布对话框中已发布的引用现在默认不再选中。
+* 扩展加载性能已获得优化。
+* 扩展引发的异常现在得到了更妥善的处理，避免影响编辑器的正常运行。

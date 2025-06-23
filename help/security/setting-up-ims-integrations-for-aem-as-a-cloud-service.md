@@ -5,9 +5,9 @@ exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
 source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,5 +101,5 @@ Adobe Experience Manager (AEM) as a Cloud Service 可以与许多其他 Adobe �
 
    ![填写 OAuth 详细信息](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. 使用&#x200B;**保存并关闭**&#x200B;来保存您的更新。
+1. 使用&#x200B;**保存并关闭**来保存您的更新。
 当您返回控制台时，**JWT 凭据（已弃用）**&#x200B;警告将消失。

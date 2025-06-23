@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,11 +52,11 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.6.0 的发布日期是 2025 年
   请参阅[将管道标记为收藏](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites)。
 
 
-## 私人Beta计划 {#private-beta-program}
+## Private Beta 计划 {#private-beta-program}
 
-参与Cloud Manager的私有Beta计划，在即将发布的功能正式发布之前获得对即将发布的功能的独家访问权限。
+参与 Cloud Manager 的 Private Beta 计划，在即将推出的功能正式发布之前获得独家访问权限。
 
-目前提供以下私人测试版机会：
+目前提供以下 Private Beta 机会：
 
 
 ### 专用测试环境 {#specialized-test-environment}
@@ -111,7 +111,7 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 

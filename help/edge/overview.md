@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 97%
 
 >[!TIP]
 >
->**要立即动手操作吗？**
+>**想立即亲身体验吗？**
 >
->如果要立即动手，您可以[在aem.live上查看教程，从而在30分钟内通过AEM创作开始您自己的Edge Delivery Services项目。](https://www.aem.live/developer/ue-tutorial)
+>如果您希望立即动手实践，只需[参考 aem.live 上的教程](https://www.aem.live/developer/ue-tutorial)，即可在 30 分钟内启动一个包含 AEM 创作功能的 Edge Delivery Services 项目。
 
 ## 敏捷响应业务需求 {#agile-reaction}
 
