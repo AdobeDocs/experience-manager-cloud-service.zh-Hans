@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '403'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,9 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 1. 在&#x200B;**管理访问令牌**&#x200B;对话框中，单击令牌名称右侧的![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)。
 1. 在&#x200B;**编辑访问令牌**&#x200B;对话框中，更新&#x200B;**令牌名称**&#x200B;或&#x200B;**访问令牌**&#x200B;值，或同时更新两者。
 
-   如果&#x200B;**访问令牌**&#x200B;当前正在使用中，则会显示一条通知，警告您在更新后将自动重新验证所有关联的存储库。
-
    ![编辑访问令牌对话框](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. 如果令牌正在使用中，则会出现通知，警告您所有关联的存储库都会自动重新验证。
+1. 如果&#x200B;**访问令牌**&#x200B;当前正在使用中，则会显示一条通知，警告您在更新后将自动重新验证所有关联的存储库。
 
 1. 单击&#x200B;**更新**&#x200B;以保存更改。
 
