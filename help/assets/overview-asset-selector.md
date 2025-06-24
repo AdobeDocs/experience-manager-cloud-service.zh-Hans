@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -323,4 +323,4 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 >* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
 >* [将资产选择器与具有 OpenAPI 功能的 Dynamic Media 集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* 由Commerce的AEM Assets集成提供支持的[产品视觉效果](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)
+>* 由Commerce的AEM Assets集成提供支持的[产品视觉效果](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-visuals/overview)
