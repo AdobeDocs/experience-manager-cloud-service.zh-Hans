@@ -3,9 +3,9 @@ title: 将资产选择器与Dynamic Media Open API集成
 description: 将资产选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '967'
 ht-degree: 9%
 
 ---
@@ -105,25 +105,26 @@ aemTierType:[1: "delivery"]
 #### 批准的资产交付API规范 {#approved-assets-delivery-api-specification}
 
 URL格式：
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 其中，
 
 * 主机为`https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API根是`"/adobe/dynamicmedia/deliver"`
+* API根是`"/adobe/assets"`
 * `<asset-id>`是资产标识符
 * `<seo-name>`是资源的名称
 * `<format>`为输出格式
 * `<image modification query parameters>`作为已批准资产的投放API规范的支持
 
-#### 批准的资产交付API {#approved-assets-delivery-api}
+#### 批准的资产原始演绎版投放API {#approved-assets-delivery-api}
 
 动态投放URL具有以下语法：
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`，其中，
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`，其中，
 
 * 主机为`https://delivery-pxxxxx-exxxxxx.adobe.com`
-* 原始节目投放的API根为`"/adobe/assets/deliver"`
+* 原始节目投放的API根为`"/adobe/assets"`
 * `<asset-id>`是资产标识符
+* `/original/as`是开放API规范的常量部分，指明了原始演绎版的含义
 * `<seo-name>`是包含扩展名或不包含扩展名的资源的名称
 
 ### 准备挑选动态投放URL {#ready-to-pick-dynamic-delivery-url}
@@ -133,7 +134,7 @@ URL格式：
 | 对象 | JSON |
 |---|---|
 | 主机 | `assetJsonObj["repo:repositoryId"]` |
-| API根 | `/adobe/assets/deliver` |
+| API根 | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
@@ -141,7 +142,7 @@ URL格式：
 
 ![动态投放URL](assets/dynamic-delivery-url.png)
 
-* **缩略图：**&#x200B;缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
 以下演绎版集可用于PDF类型资源：
 在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
 
@@ -153,21 +154,21 @@ URL格式：
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **视频：**&#x200B;您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -176,7 +177,7 @@ URL格式：
 
   上述屏幕快照中的代码片段是视频资源的一个示例。 它包括呈现版本链接数组。 摘录中的`selection[5]`是图像缩略图的示例，可用作目标体验中视频缩略图的占位符。 演绎版数组中的`selection[5]`适用于视频播放器。 它提供一个HTML，可以设置为iframe的`src`。 它支持自适应比特率流，该流是Web优化的视频交付。
 
-  在上例中，视频播放器URL为`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  在上例中，视频播放器URL为`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
 
 ### 配置自定义筛选条件 {#configure-custom-filters-dynamic-media-open-api}
 

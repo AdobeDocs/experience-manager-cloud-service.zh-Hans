@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5981'
 ht-degree: 92%
 
 ---
@@ -173,7 +173,7 @@ GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构�
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为执行此操作，客户端必须获取包含查询所需的所有类型的[架构](#schema-generation)。
 
-对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**&#x200B;[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
+对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
 
 >[!CAUTION]
 >
@@ -375,7 +375,7 @@ ID字段还可用作在AEM GraphQL中的标识符。 它表示AEM存储库中内
 >[!NOTE]
 >
 >**普通和数组元数据之间的不同**
->请记住，`StringMetadata` 和 `StringArrayMetadata` 均引用存储在存储库中的内容，而非您如何检索它们。
+>>请记住，`StringMetadata` 和 `StringArrayMetadata` 均引用存储在存储库中的内容，而非您如何检索它们。
 >
 >举例而言，通过调用 `stringMetadata` 字段，您应该以 `String` 的形式收到存储在存储库中所有元数据的数组，如果您调用 `stringArrayMetadata`，则会以 `String[]` 的形式收到存储在存储库中所有元数据的数组。
 
@@ -794,7 +794,6 @@ GraphQL 中的解决方案意味着您可以：
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL 的枚举
 * `quality`：1 和 100 之间的整数，表示图像质量的百分比
 * `width`：定义输出图像宽度的整数，但会被图像生成器忽略
-* `preferWebp`：指示是否首选 webp（默认值为 false）的布尔值
 
 URL 转换适用于所有查询类型：按路径、列表或分页。
 
@@ -822,7 +821,6 @@ URL 转换适用于所有查询类型：按路径、列表或分页。
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -861,7 +859,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -900,7 +897,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -963,7 +959,7 @@ GraphQL 中的解决方案意味着您可以：
 
    * `_smartCrops`属性公开可用于特定资源的智能裁剪配置
 
-   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[&#128279;](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
