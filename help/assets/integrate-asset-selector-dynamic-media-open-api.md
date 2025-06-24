@@ -3,10 +3,10 @@ title: 将资产选择器与Dynamic Media Open API集成
 description: 将资产选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 9%
+source-wordcount: '982'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,7 @@ aemTierType:[1: "delivery"]
 | 对象 | JSON |
 |---|---|
 | 主机 | `assetJsonObj["repo:repositoryId"]` |
-| API根 | `/adobe/dynamicmedia/deliver` |
+| API根 | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | 格式 | `.jpg` |
@@ -105,16 +105,17 @@ aemTierType:[1: "delivery"]
 #### 批准的资产交付API规范 {#approved-assets-delivery-api-specification}
 
 URL格式：
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 其中，
 
 * 主机为`https://delivery-pxxxxx-exxxxxx.adobe.com`
 * API根是`"/adobe/assets"`
 * `<asset-id>`是资产标识符
+* `as`是开放API规范中的常量部分，用于指示将资源称为
 * `<seo-name>`是资源的名称
 * `<format>`为输出格式
-* `<image modification query parameters>`作为已批准资产的投放API规范的支持
+* `<image modification query parameters>`由批准的资产的投放API规范支持
 
 #### 批准的资产原始演绎版投放API {#approved-assets-delivery-api}
 
@@ -142,7 +143,7 @@ URL格式：
 
 ![动态投放URL](assets/dynamic-delivery-url.png)
 
-* **缩略图：**&#x200B;缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
 以下演绎版集可用于PDF类型资源：
 在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
 
@@ -161,14 +162,14 @@ URL格式：
 
 在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **视频：**&#x200B;您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ URL格式：
 
 ![具有OpenAPI功能UI的Dynamic Media](assets/polaris-ui.png)
 
-* **A**：[隐藏/显示面板](#hide-show-panel)
-* **B**： [Assets](#repository)
-* **C**： [排序](#sorting)
-* **D**：[过滤器](#filters)
-* **E**：[搜索栏](#search-bar)
-* **F**： [按升序或降序排序](#sorting)
+* **A**：隐藏/显示面板
+* **B**： Assets
+* **C**：排序
+* **D**：筛选器
+* **E**：搜索栏
+* **F**：按升序或降序排序
 * **G**：取消选择
 * **H**：选择单个或多个资源
 
