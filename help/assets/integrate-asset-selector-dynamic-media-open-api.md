@@ -143,7 +143,7 @@ URL格式：
 
 ![动态投放URL](assets/dynamic-delivery-url.png)
 
-* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+* **缩略图：**&#x200B;缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
 以下演绎版集可用于PDF类型资源：
 在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
 
@@ -162,7 +162,7 @@ URL格式：
 
 在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+* **视频：**&#x200B;您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
