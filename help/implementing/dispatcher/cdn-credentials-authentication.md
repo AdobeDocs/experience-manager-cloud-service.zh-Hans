@@ -4,9 +4,9 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1939'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖
 
 ## 客户管理的CDN HTTP标头值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
+如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的[CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
 
 作为设置的一部分，Adobe CDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到Adobe CDN之前，在客户CDN上针对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
@@ -65,7 +65,7 @@ data:
 
 请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
-有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
+有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
 
 其他属性包括：
 
@@ -119,6 +119,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 成功测试后，可以删除其他条件并重新部署配置。
 
+### 迁移过程(如果Adobe支持以前生成了`X-AEM-Edge-Key` HTTP标头值) {#migrating-legacy}
+
+>[!NOTE]
+>在继续迁移之前，请在暂存环境中安排测试迁移以验证策略。
+
+>[!WARNING]
+> 在步骤4之前，请勿更改客户管理的CDN中的键。
+
+以前，与客户管理的CDN集成的过程涉及客户向Adobe支持请求X-AEM-Edge-Key HTTP标头值，而不是自行定义该值。 要迁移到新的自助方法（用于定义自己的Edge键值），请按照以下步骤确保顺利过渡且无停机：
+
+1. 使用指定为`edgeKey1`和`edgeKey2`的新密码（客户生成的）和旧密码(Adobe生成的)配置CDN配置。 这是[旋转密钥](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets)文档的变体。
+
+2. 部署密钥和自助式CDN配置。 在此过程中的这一阶段，Adobe定义的旧密钥仍应保留为客户管理的CDN传递的X-AEM-Edge-Key值。
+
+3. 联系Adobe支持部门，请求Adobe切换使用自助配置，并指定您已部署该配置。
+
+4. 在Adobe确认已执行该操作后，将客户管理的CDN配置为对`X-AEM-Edge-Key` HTTP标头值使用客户定义的新密钥。
+
+5. 从CDN配置中删除旧键并重新部署配置管道。
+
+>[!WARNING]
+>如果您未同时配置这两个密钥的回退，则可能会导致迁移期间出现停机。
+
 ## 清除API令牌 {#purge-API-token}
 
 客户可以使用声明的清除API令牌[清除CDN缓存](/help/implementing/dispatcher/cdn-cache-purge.md)。 令牌在名为`cdn.yaml`或类似的文件中声明，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。
@@ -164,7 +187,7 @@ data:
 >[!NOTE]
 >在部署引用清除密钥的配置之前，必须将清除密钥配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 建议使用长度最小为32字节的唯一随机密钥；例如，Open SSL加密库可以通过执行命令openssl rand -hex 32来生成随机密钥
 
-您可以引用[教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
+您可以引用[教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
 
 ## 基本身份验证 {#basic-auth}
 
@@ -235,7 +258,6 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. 轮换密钥时，请创建新的Cloud Manager密钥，例如`${{CDN_EDGEKEY_041425}}`。
 1. 在配置中，从`edgeKey2`引用它并进行部署。
 
@@ -257,7 +279,6 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. 从Cloud Manager中删除旧密钥引用(`${{CDN_EDGEKEY_052824}}`)并进行部署。
 
 1. 准备下一次轮换时，请遵循相同的过程，但这次您将向配置中添加`edgeKey1`，并引用名为的新Cloud Manager环境密钥，例如`${{CDN_EDGEKEY_031426}}`。
