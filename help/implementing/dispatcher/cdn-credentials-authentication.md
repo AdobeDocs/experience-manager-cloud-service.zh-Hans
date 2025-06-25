@@ -32,7 +32,7 @@ Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖
 
 ## 客户管理的CDN HTTP标头值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的[CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
+如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
 
 作为设置的一部分，Adobe CDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到Adobe CDN之前，在客户CDN上针对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
@@ -258,6 +258,7 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
+
 1. 轮换密钥时，请创建新的Cloud Manager密钥，例如`${{CDN_EDGEKEY_041425}}`。
 1. 在配置中，从`edgeKey2`引用它并进行部署。
 
@@ -279,6 +280,7 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
+
 1. 从Cloud Manager中删除旧密钥引用(`${{CDN_EDGEKEY_052824}}`)并进行部署。
 
 1. 准备下一次轮换时，请遵循相同的过程，但这次您将向配置中添加`edgeKey1`，并引用名为的新Cloud Manager环境密钥，例如`${{CDN_EDGEKEY_031426}}`。
