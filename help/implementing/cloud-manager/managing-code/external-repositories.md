@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 26892959443a16203184f4a0798d9c7fdc75dd8f
+source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 28%
+source-wordcount: '2322'
+ht-degree: 27%
 
 ---
 
@@ -242,9 +242,9 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
-| 必需的webhook事件 |
+| 所需的webhook事件和身份验证 |
 | --- |
-| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>存储库：推送</li></li></ul></ul></ul> |
+| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>存储库：推送</li></ul>设置身份验证： <br>1。 在&#x200B;**基本身份验证用户名**&#x200B;字段中，键入`cloudmanager`。<br>2。在&#x200B;**基本身份验证密码**&#x200B;字段中，键入从Cloud Manager用户界面生成的Webhook密码。 |
 
 >[!ENDTABS]
 
