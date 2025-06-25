@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d4dc40497113aded6abbf3d9a92b24f94f0b25b
+source-git-commit: f4bcd84684aea304ecc1e55c2b1c0a78b94ac6eb
 workflow-type: tm+mt
-source-wordcount: '6281'
+source-wordcount: '6292'
 ht-degree: 99%
 
 ---
@@ -445,7 +445,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [关于删除的注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+         + [内容片段内的启动](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [内容片段控制台内的资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [使用 Adobe Journey Optimizer 的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
          + [内容片段 AJO 外部引用扩展](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
@@ -745,6 +745,7 @@ ht-degree: 99%
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资产](/help/forms/import-export-forms-templates.md)
+      + [在Adobe Experience Software Development Kit (AEM SDK)上启用功能切换](/help/forms/enable-feature-toggle.md)
    + 快速入门 {#getting-started-forms}
       + [用例和设置开发环境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [创建贷款申请表](/help/forms/create-adaptive-form-tutorial.md)
