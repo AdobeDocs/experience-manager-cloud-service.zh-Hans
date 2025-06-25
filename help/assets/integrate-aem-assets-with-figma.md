@@ -4,7 +4,7 @@ description: 了解如何将 [!DNL AEM Assets] 与 [!DNL Figma] 集成，以在 
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 1d4dc40497113aded6abbf3d9a92b24f94f0b25b
+source-git-commit: b8c9fa5350547bb03a010932102013cb13bcfd4f
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 10%
@@ -70,13 +70,13 @@ ht-degree: 10%
 
 >[!NOTE]
 >
-> 如果您在登录到[!DNL AEM]环境后看到&#x200B;**[!UICONTROL 网络错误]**&#x200B;消息，请[联系Adobe支持](https://helpx.adobe.com/cn/contact.html)以获取帮助。
+> 如果您在登录到[!DNL AEM]环境后看到&#x200B;**[!UICONTROL 网络错误]**&#x200B;消息，请[联系Adobe支持](https://helpx.adobe.com/contact.html)以获取帮助。
 
 ## 将[!DNL AEM]资源导入[!DNL Figma]画布{#import-aem-assets-into-figma-workflow}
 
 在您的[!DNL Figma]设计界面中[访问[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板](#access-aem-assets-connector)，并执行以下操作：
 
-1. 在[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板中搜索资源。 有关详细信息，请参阅[使用资产选择器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)。
+1. 在[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板中搜索资源。 有关详细信息，请参阅[使用资产选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)。
 
 1. 将资源拖放到画布上，或者选择资源并单击&#x200B;**[!UICONTROL 选择]**&#x200B;以将资源放到画布上。
 
@@ -92,7 +92,7 @@ Figma设计就绪后，您可以[将资源导出到AEM Assets存储库](#export-
 1. 导航到要保存[!DNL Figma]设计的目标文件夹。 如果您已在文件夹中，请单击文件夹路径中的“更多”选项（![三个圆点](/help/assets/assets/three-dots.svg)）以选择其他目标文件夹。
 1. 可选：将画布上的资产分组，以作为单个单元将其选择并上传到您的文件夹中。
 1. 单击![文件上传](/help/assets/assets/upload-icon.svg) **[!UICONTROL 上传]**&#x200B;以显示&#x200B;**[!UICONTROL 上传资产]**&#x200B;对话框。
-1. 在该对话框中，指定文件名，选择文件格式，选择&#x200B;**[!UICONTROL 选定项]**&#x200B;或&#x200B;**[!UICONTROL 页面]**，然后单击&#x200B;**[!UICONTROL 上传]**&#x200B;以将选定资源或整个设计上传到目标文件夹。
+1. 在该对话框中，指定文件名，选择文件格式，选择&#x200B;**[!UICONTROL 选定项]**&#x200B;或&#x200B;**[!UICONTROL 页面]**，然后单击&#x200B;**[!UICONTROL 上传]**以将选定资源或整个设计上传到目标文件夹。
    ![上载图形设计](/help/assets/assets/upload-figma-design.png)
 
 ## 要注意的重要事项{#Limitations-of-using-aem-assets-into-figma}
@@ -101,3 +101,4 @@ Figma设计就绪后，您可以[将资源导出到AEM Assets存储库](#export-
 
 * 要将[!DNL AEM]资源导入Figma，支持的格式为&#x200B;**JPEG**、**PNG**。
 * 要将设计从[!DNL Figma]导出到[!DNL AEM Assets]，支持的格式为&#x200B;**PNG**、**PDF**、**JPG**、**SVG**。
+
