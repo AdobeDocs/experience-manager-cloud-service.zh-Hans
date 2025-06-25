@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
-workflow-type: ht
-source-wordcount: '380'
-ht-degree: 100%
+source-git-commit: 7ae30d2053a17c2855c66b265c831ea27d19d535
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 18%
 
 ---
 
@@ -16,45 +16,132 @@ ht-degree: 100%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 21193 {#21193}
+## 版本 21331 {#21331}
 
-下面总结了维护版本 21193 的持续改进，该版本已于 2025 年 6 月 10 日公开发行。上一个维护版本是版本 21005。
+以下总结了维护版本21331的不断改进，该版本于2025年6月24日公开发布。 上一个维护版本是版本 21193。
 
-激活 2025.6.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2025.7.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-21193}
+### 增强功能 {#enhancements-21331}
 
-* ASSETS-51245：在 Touch UI 中优化了大型文件夹列表的性能。
-* ASSETS-51686：批量操作作业功能获得改进，包括更便捷的作业取消、更完善的日志记录，以及支持下载大型结果的审计日志。
-* CQ-4360131：优化了 OpenAPI 端点的错误响应，使 API 客户端能够接收到结构化的错误信息。
+* CQ-4356522： `WorkflowResourceStatusProvider`优化。
+* Forms-16458：用于选择字体属性（字体）的UI。
+* Forms-17707： AEP连接器不适用于AEP platform stage。
+* Forms-19125：支持AF编辑器中的自动片段映射。
+* Forms-19336：在AF编辑器的数据Source树中添加了搜索。
+* Forms-19417：支持层次结构视图中的单选按钮。
+* Forms-19603：在规则编辑器中支持母版页和设计页。
+* SITES-10575：“MSM Blueprint Bloomfilter加载器”尝试加载的行数超过100000行。
+* SITES-14542：重命名/移动Live Copy源页面应触发发布重命名的/移动的Live Copy页面（如果之前已发布）。
+* SITES-19754：使用通用编辑器的Edge Delivery：在集成遇到问题时添加一条用户可读的错误消息。
+* SITES-23499：带有通用编辑器的Edge Delivery：添加对要用于块选项的多个字段的支持。
+* SITES-23518：带有通用编辑器的Edge Delivery：添加对特定于Edge Delivery的资源演绎版的支持。
+* SITES-25913：内容片段Rest API：在启动发布工作流之前对资源进行时间分组验证。
+* SITES-25976：MSM 转出后，体验片段中的链接未调整。
+* SITES-26271：内容片段Rest API：切换到GET变体端点的BFS遍历。
+* sites-27486：通用编辑器 — AEM集成。
+* SITES-27775：优化了发布期间的引用搜索（元数据延迟加载）。
+* SITES-27782：带有通用编辑器的Edge Delivery：添加特定的发布者 — 订阅者实施以将内容发布到Edge Delivery（提前访问）。
+* SITES-27792：带有通用编辑器的Edge Delivery：添加专用的Edge Delivery服务配置模板。
+* sites-28683：允许MSM LiveRelationship搜索跳过高级状态。
+* SITES-29930：内容片段Rest API：为内容片段发布工作流添加量度。
+* SITES-29986：内容片段Rest API：支持CF模型技术命名。
+* SITES-30088：内容片段Rest API： CF发布 — 当filterReferencesByStatus为空时，跳过检索引用。
+* SITES-30328：带有通用编辑器的Edge Delivery：添加对从Sidekick预览的支持。
+* SITES-30445：内容片段Rest API： CF模型UI架构：添加一个选项以控制可折叠的初始状态。
+* SITES-30604：内容片段Rest API：支持在新UI中采用模型元数据架构。
+* SITES-30885：优化了持久查询中的 JSON 处理。
+* SITES-30886：内容片段Rest API：内容片段端点的GET工作流基于存储在工作流元数据中的片段uuid。
+* SITES-31005：增强转出作业UI以显示进度。
+* SITES-31020：增强创建Live Copy作业UI以显示进度。
+* SITES-31472：删除启动项会导致存储库在启动项大量增加时暂停。
+* SITES-31677：自定义工作区支持将AEM内容片段导出到Target。
+* SITES-31782：内容片段Rest API：添加对本地资产的描述。
+* SITES-32175：允许中间提交以用于Live Copy创建和MSM页面转出。
+* SITES-5358：内容片段Rest API：复制具有子项的CF。
 
-### 修复的问题 {#fixed-issues-21193}
+### 修复的问题 {#fixed-issues-21331}
 
-* ASSETS-41007：已删除的资源可能仍会在 Content Hub. 中显示。
-* ASSETS-50994：AemRequestEventFilter 导致 Jetty 线程竞争过高。
-* ASSETS-50155：触发了重复的元数据变更事件。
-* ASSETS-50716：在资源列表视图中按标题排序未按预期工作。
-* ASSETS-50820：确保对资源关系 API 的无效请求以正确的方式拒绝，并返回 400 错误。
-* ASSETS-50562：在发生名称冲突时，Asset Upload API 应默认创建新版本。
-* ASSETS-50992：Assets API 的 initiateUpload.json 端点应返回的内容类型为 &#39;application/json&#39;。
-* ASSETS-51322：自动移除和过期处理因作业失败而无限期保留的异步阻隔。
-* ASSETS-51809：由于浏览器缓存，CSV 编辑器未显示最近保存的更改。
-* SITES-31678：在 XF 发布 API 中，包含上下文感知引用的体验片段（XF）未能解析到正确的语言根路径。
+* CQ-4359756：翻译规则现在包括组件级别的过滤器属性。
+* CQ-4359826：解决内容片段引用面板中状态不一致的问题。
+* CQ-4359866： LanguageUtils类现在支持单元测试，而不添加其他依赖关系。
+* Forms-13990： Forms服务API：文档生成：选择后留空的数据字段在预期为400时提供200。
+* Forms-14309： Forms服务API ：提取数据响应代码纠正。
+* Forms-18526：复制条件中包含多个字段的规则时，固定字段不会更改。
+* Forms-18977：记录文档服务未传递文档标题。
+* Forms-19047：在SP22上的AEM Forms上发布自适应表单后缺少翻译。
+* Forms-19234：无法在AEM表单中使用PDF的时间轴功能。
+* Forms-19628：在自动生成的DOR中，排除嵌套面板标题也会隐藏根面板标题。
+* Forms-19651：当单击的按钮在二进制条件中使用，并且在then语句中使用同一按钮时，修复规则。
+* Forms-19808：FormsPortal — 启用延迟加载时，无法提取草稿。
+* Forms-19887：Access属性在HTML5 Preview中不起作用。
+* SITES-15452：发布时不应根据唯一 CF 元素的副本检查这些元素。
+* SITES-24492：ARIA标签没有可访问的名称。
+* SITES-24623：内容片段Rest API：修复同一CF的端点之间的ETag不匹配。
+* SITES-24668：当缩放比例增加到400%时，引用边栏功能中断。
+* SITES-24678：引用边栏状态消息不由屏幕阅读器通知。
+* SITES-24697：屏幕阅读器不会声明图像模型的加载状态。
+* SITES-24708：当缩放比例增加到400%时，过滤器边栏功能中断。
+* SITES-25235：屏幕阅读器未公告筛选边栏内容加载消息。
+* SITES-25254：当内容查看速度为320px时，水平滚动条会显示在轮盘模式中。
+* SITES-25433：带有通用编辑器的Edge Delivery：修复了多语言站点结构的页面版本渲染问题。
+* SITES-26890：使用键盘时，在管理发布页面中无法显示“表标题”键盘焦点范围。
+* SITES-29075：Live Copy概述不适用于高流量网站。
+* SITES-29514：使用通用编辑器的Edge Delivery：将GitHub/项目URL设为创建新站点时的必需项。
+* SITES-29691：无法移动特定启动项相关案例中的页面。
+* SITES-29745：内容片段Rest API：在BFS遍历中实施引用变体的水合。
+* SITES-29748：更正渲染条件，以显示 CF 编辑器中的管理发布/快速发布操作。
+* SITES-29789：复制的根页面上的组件链接更改问题。
+* SITES-29987：内容片段重置API：创建和编辑内容片段模型不支持`previewUrlPattern`。
+* SITES-30140：创建内容片段引用时出现双重窗口问题。
+* SITES-30260：内容片段Rest API：使用最新ETag更新/删除CF时出错。
+* SITES-30327：内容片段Rest API：发布没有权限的CF将为每个有效负载资源创建单独的工作流。
+* SITES-30333：从 jcr 读取资产元数据，以避免 xmp 解析问题。
+* SITES-30353：AEM 内容片段中“src”字段的 GraphQL DataFetchingExceptions。
+* SITES-30377：使用通用编辑器的Edge Delivery：整理组织和站点名称。
+* SITES-30386：使用通用编辑器的Edge Delivery：删除重复的旧版UE `cors.js`。
+* SITES-30583：内容片段Rest API：查找并替换工具将所有字符更改为小写。
+* SITES-30585：创建包含引用的CFM时未设置内容片段Rest API： `previewUrlPattern`。
+* SITES-30634： RTE图像替换文本和对齐方式不一致。
+* SITES-30660：自定义AEM组件存在ADA合规性问题。
+* SITES-30695：使用通用编辑器的Edge Delivery：提高重写器管道的排名，以免干扰自定义代码。
+* SITES-30727：无法在生产创作编辑器中拖放组件。
+* SITES-30752：生成持久查询响应时不要使用 `If-modified-since`/`last-modified` 标头。
+* SITES-30871：触发afteredit侦听器后，DOM更新。
+* SITES-30877：子页面转出状态不正确。
+* SITES-30899：转出“稍后”选项允许在未选择日期的情况下继续。
+* SITES-30947：由于转出期间的Blueprint上缺少“行为”属性，出现空指针异常。
+* SITES-31157：内容片段Rest API：修补程序失败是特定案例。
+* SITES-31272：无法通过PageManager.copy创建Assets语言副本。
+* SITES-31327：内容片段Rest API：删除GET片段请求中的ETag验证。
+* SITES-31387：重新启用Ghost组件继承时，JavaScript出现“ns.ui.alert is not a function”错误。
+* SITES-31455：内容片段Rest API：修复相同内容片段模型的端点之间的ETag不匹配。
+* SITES-31459：内容片段Rest API：当存在内容引用字段时，无法编辑CF Live Copy。
+* SITES-31467：页面编辑器中contexthub.authoring-hook.js的js-errors。
+* SITES-31594：内容片段Rest API： `extractMetadataSchemaFieldLabel`错误。
+* SITES-31621：带有通用编辑器的Edge Delivery：从作为活动副本的电子表格中删除空行。
+* SITES-31676：创作或删除组件会在页面底部留下空格。
+* SITES-31822：经典UI复选框标签缺失并编码的HTML。
+* SITES-31857：在具有单引号的文件夹中创建CF失败。
+* SITES-31888：内容片段删除无法传播到预览。
+* SITES-31922：内容片段Rest API：referencedBy端点不返回页面引用。
+* SITES-31987：在将内容片段发布到预览时不会显示内容片段的previewURL。
+* SITES-32095：在Live Copy中的afterchilddelete事件侦听器执行后自动刷新失败。
+* SITES-32237：使用通用编辑器的Edge Delivery：修复了呈现空/格式错误的文本组件的问题。
 
-
-### 已知问题 {#known-issues-21193}
+### 已知问题 {#known-issues-21331}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-21193}
+### 已弃用的功能和 API {#deprecated-21331}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-21193}
+### 安全修复 {#security-21331}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 2 个已发现的漏洞，增强了我们对强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 21 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-21193}
+### 嵌入的技术 {#embedded-tech-21331}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
