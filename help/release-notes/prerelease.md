@@ -4,10 +4,10 @@ description: 了解如何使用预发行渠道预览 AEM as a Cloud Service 即�
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
-workflow-type: ht
-source-wordcount: '889'
-ht-degree: 100%
+source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service 会按照固定节奏定期推出新
 
 即将发布的功能通常通过以下两种方式之一提供：
 
-* 作为早期采用者计划的一部分
+* 作为Alpha、Beta或有限可用性计划的一部分
 * 作为预发布渠道的一部分
 
 本文档介绍如何启用预发布渠道。预发布渠道可让您抢先体验将在未来 AEM 功能版本中引入的新功能。这使您有机会在功能正式发布前进行验证，并提前规划其采纳与部署。有关 AEM 发布计划的详细信息，请参阅 [Adobe Experience Manager (AEM) as a Cloud Service 的发布说明](/help/release-notes/home.md)文档。
