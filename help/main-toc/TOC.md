@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c6a27f511da3226bbe4b5312ebdeb948a6ae609b
+source-git-commit: 7e78b8eeb0dfed7bfd69b57454303fba20ed4ad3
 workflow-type: tm+mt
 source-wordcount: '6298'
 ht-degree: 99%
@@ -714,7 +714,7 @@ ht-degree: 99%
       + [搜索最佳实践](/help/assets/search-best-practices.md)
       + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
    + 与 Figma 集成 {#integration-figma}
-      + [与Figma本机集成](/help/assets/integrate-aem-assets-with-figma.md)
+      + [与Figma本机集成](/help/assets/integrating-aem-assets-with-figma.md)
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [配置资产元数据映射](/help/assets/configure-asset-metadata-mapping.md)
