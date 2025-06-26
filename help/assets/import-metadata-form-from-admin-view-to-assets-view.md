@@ -77,8 +77,10 @@ ht-degree: 8%
 1. 选择表中的一个或多个表单，然后单击&#x200B;**[!UICONTROL 开始导入]**&#x200B;以将元数据表单及其关联的文件夹导入[!DNL Assets View]。 显示处理消息(例如，*正在导入3个元数据表单。 请稍候！*)。 导入完成后，将显示一条成功消息，确认表单已成功导入，并且&#x200B;**[!UICONTROL 元数据Forms]**&#x200B;页面（共[!DNL Assets View]页）会显示最近导入的表单以及[!DNL Assets View]中可用的现有表单。 您可以在此页面上执行以下操作：
    * 单击列标题可按[!UICONTROL 名称]、[!UICONTROL 修改时间]或[!UICONTROL 作者]对表进行排序。
    * 选择导入的表单并单击&#x200B;**[!UICONTROL 从文件夹删除]**，然后验证文件夹路径中的文件夹名称以确认文件夹已正确移植。
+
      ![验证元数据表单页面](/help/assets/assets/confirm-ported-folder.png)
    * 选择导入的表单，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;查看元数据表单的所有受支持配置。 有关元数据表单、其组件和字段的更多信息，请参阅[设置元数据Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)。
+
      ![验证元数据表单页面](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## 验证导入的元数据表单{#Verify-the-imported-metadata-forms}
