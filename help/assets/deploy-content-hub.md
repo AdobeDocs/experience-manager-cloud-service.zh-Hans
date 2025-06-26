@@ -3,9 +3,9 @@ title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源和Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: be6c75dc12d80b252131e4e7369c1c5555432215
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1649'
 ht-degree: 10%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 10%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -49,7 +49,7 @@ ht-degree: 10%
     </tr>
 </table>
 
-![部署Content Hub](assets/deploy-content-hub.png)
+![部署 Content Hub](assets/deploy-content-hub.png)
 
 >[!AVAILABILITY]
 >
@@ -97,7 +97,14 @@ Content Hub上各种权限的变体包括：
 
 ## 步骤1：使用Cloud Manager启用适用于Experience Manager Assets的Content Hub {#enable-content-hub}
 
-要访问Content Hub门户，管理员首先需要使用Cloud Manager为Experience Manager Assets as a Cloud Service启用Content Hub。 执行以下步骤：
+
+要访问Content Hub门户，管理员首先需要使用Cloud Manager为Experience Manager Assets as a Cloud Service启用Content Hub。
+
+### 权限 {#permissions-edit-program}
+
+您必须具有业务负责人角色才能在Cloud Manager中编辑项目。 有关详细信息，请参阅[编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
+
+要为Experience Manager Assets启用Content Hub：
 
 1. 登录到Cloud Manager。 确保在登录时选择正确的组织。 Cloud Manager列出了您的所有程序。
 
@@ -127,7 +134,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 ### Admin Console上的Content Hub实例和产品配置文件{#content-hub-instance-product-profile}
 
-使用Cloud Manager[&#128279;](#enable-content-hub)为Assets as a Cloud Service启用Content Hub后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
+使用Cloud Manager](#enable-content-hub)为Assets as a Cloud Service启用Content Hub[后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
 
 ![Content Hub的新实例](assets/new-instance-content-hub.png)
 
@@ -155,7 +162,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 1. 单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户或用户组添加到产品配置文件。
 
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 1. 将用户添加到Content Hub产品配置文件后，单击Admin Console产品列表中的AEM as a Cloud Service产品名称以访问Experience Manager Assets产品配置文件。
 
@@ -163,10 +170,10 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
    Admin Console显示AEM as a Cloud Service的两个产品配置文件：管理员和用户。
-1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
+1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
    ![管理员产品配置文件](assets/aem-cs-admin-product-profile.png)
 
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 ## 步骤3：载入Content Hub用户 {#onboard-content-hub-users}
 
@@ -178,7 +185,7 @@ Content Hub用户可以访问门户上可用的资源，但无法添加任何新
 
 1. 单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户或用户组添加到产品配置文件。
 
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 这些用户现在可以访问Content Hub门户中提供的资源。
 
@@ -224,7 +231,7 @@ Content Hub用户可以访问门户上可用的资源，但无法添加任何新
 1. 单击“用户”产品配置文件，然后单击“**[!UICONTROL 添加用户]**”以将该用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-cs-user-product-profile.png)
 
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 ## 步骤4：让有权将资源重新混合到新变体的Content Hub用户上线（可选） {#onboard-content-hub-users-remix-assets}
 
@@ -241,7 +248,7 @@ Content Hub用户可以访问门户上可用的资源，但无法添加任何新
 1. 单击“用户”产品配置文件，然后单击“**[!UICONTROL 添加用户]**”以将该用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-cs-user-product-profile.png)
 
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
 ## Experience Manager Assets用户 {#experience-manager-assets-users}
 
@@ -258,8 +265,8 @@ Experience Manager Assets用户可以批准AEM as a Cloud Service上的资源，
 1. 单击“用户”产品配置文件，然后单击“**[!UICONTROL 添加用户]**”以将该用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-cs-user-product-profile.png)
 
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
    >[!NOTE]
    >
-   >您无需添加到Experience Manager Assets用户的[Content Hub产品配置文件](#onboard-content-hub-users)。
+   > 您无需添加到Experience Manager Assets用户的[Content Hub产品配置文件](#onboard-content-hub-users)。
