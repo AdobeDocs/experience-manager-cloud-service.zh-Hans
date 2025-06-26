@@ -134,7 +134,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 ### Admin Console上的Content Hub实例和产品配置文件{#content-hub-instance-product-profile}
 
-使用Cloud Manager](#enable-content-hub)为Assets as a Cloud Service启用Content Hub[后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
+使用Cloud Manager[&#128279;](#enable-content-hub)为Assets as a Cloud Service启用Content Hub后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
 
 ![Content Hub的新实例](assets/new-instance-content-hub.png)
 
@@ -170,7 +170,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
    Admin Console显示AEM as a Cloud Service的两个产品配置文件：管理员和用户。
-1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
+1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
    ![管理员产品配置文件](assets/aem-cs-admin-product-profile.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
