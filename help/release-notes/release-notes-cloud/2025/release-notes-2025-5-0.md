@@ -36,7 +36,7 @@ ht-degree: 98%
 
 请查看 2025 年 5 月发布概述视频，了解 2025.5.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464360?quality=12&captions=chi_hans)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -107,7 +107,7 @@ Content Hub 现在还允许您[将所选资产及其演绎版下载为 ZIP 文�
 
 [Experience Manager (AEM) Dynamic Media 与 Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic) 的原生集成，使营销人员能够轻松地将 AEM Dynamic Media 资产（演绎版和 DM 模板）嵌入到 AJO 内容中，并通过各个渠道提供实时更新和超个性化体验。
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463792/?learn=on&enablevpops=&autoplay=true&captions=chi_hans)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
