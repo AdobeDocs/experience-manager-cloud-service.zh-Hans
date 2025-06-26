@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.5.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.5.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
+source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 87%
+source-wordcount: '2108'
+ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.5.0 版的发行说明 {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
+以下部分概述了 2025.5.0 版的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
 >[!NOTE]
 >
@@ -28,37 +26,112 @@ ht-degree: 87%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.6.0)的发布日期是2025年6月26日。 下一个功能版本(2025.7.0)计划于2025年7月31日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.5.0) 的发布日期为 2025 年 6 月 5 日。下一个功能版本 (2025.6.0) 计划于 2025 年 6 月 26 日发布。
 
 ## 维护发行说明 {#maintenance}
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- 
+## 发布视频 {#release-video}
 
-## Release Video {#release-video}
+请查看 2025 年 5 月发布概述视频，了解 2025.5.0 版本中新增功能摘要：
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Assets视图中增强的元数据表单管理**
+**AI 生成的元数据**
 
-您现在可以直接将元数据表单从管理员视图导入Assets视图。 在Assets视图中对这些表单所做的任何更新都会自动反映在管理员视图中，从而确保两个体验之间的一致性。 此功能支持无缝过渡到新的Assets视图，同时保持与现有元数据配置的连续性。
+AEM Assets 现在使用 [AI 自动生成元数据，其中包括标题、描述和关键字](/help/assets/metadata-assets-view.md#ai-smart-tags)。这些由 AI 生成的字段提高了元数据的准确性，使资产更易于搜索、分类和推荐。这种方法不仅通过消除手动标记来提高效率，而且确保了大量数字内容之间的一致性和可扩展性。
 
-![AI 生成的元数据](/help/assets/assets/import-metadata-forms-page.png)
+![AI 生成的元数据](/help/assets/assets/enhanced-smart-tags.png)
+
+**与 Figma 集成**
+
+AEM Assets 与 Figma 在本地集成，这使得设计师可以直接从 Figma 用户界面访问存储在 AEM Assets 中的资产。可将在 AEM Assets 中管理的内容放入 Figma 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。要访问 Figma 社区页面上提供的 AEM Assets 连接器，请单击[此处](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
+
 
 ### Content Hub 的新增强功能 {#new-features-content-hub}
+
+**基于属性的访问控制 (ABAC)**
+
+[Content Hub 现在允许您应用基于规则的限制来访问资产](/help/assets/attribute-based-access-control.md)。资源权限可确保治理，还可确保用户只能访问相关的资源。
+
+资产限制规则基于元数据定义。当资产的元数据满足规则中设定的条件时，该资产将对相应的用户组可见。
+
+基于属性的访问控制具有以下几个主要优势：
+
+* 消除了权限对文件夹结构的依赖
+
+* 允许管理员上传资产并追溯确定权限结构
+
+* 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
+
+**UI 品牌化**
+
+Content Hub 现在允许管理员[使用品牌特定的元素来自定义用户界面](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)，这些元素包括横幅图像、横幅标题和正文，以及主色和辅色。这些改进有助于确保品牌一致性，简化用户引导流程，并建立信任。
+
+![UI 品牌化](/help/assets/assets/content-hub-ui-branding.png)
+
+**公共链接共享**
+
+Content Hub 现在支持[生成可共享的链接，允许外部用户](/help/assets/share-assets-content-hub.md##share-assets)无需应用程序访问权限即可查看资产元数据或下载资产。
+
+![UI 品牌化](/help/assets/assets/public-and-private-link.png)
 
 **收藏集治理**
 
 Content Hub 现在允许您[在创建过程中控制对收藏集的访问权限，确保只有授权用户才能查看或管理分组资产](/help/assets/collections-content-hub.md##create-collections)。它确保了安全性的提升、协作的优化、资产管理的有序化以及治理的简化。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>收藏集治理是一项可用性有限的功能。您可以通过创建支持工单来启用它。
+
+**将多个资产下载为 ZIP 文件**
+
+Content Hub 现在还允许您[将所选资产及其演绎版下载为 ZIP 文件，而非单独的文件，从而简化文件管理。](/help/assets/download-assets-content-hub.md#download-asset-renditions)
+
+**Content Hub 中的 Dynamic Media 演绎版**
+
+您可以直接[在 Content Hub 用户界面中访问所有 Dynamic Media 预设演绎版和智能裁剪，并进行下载](/help/assets/download-assets-content-hub.md#download-asset-renditions)。
+
+&#x200B;![Dynamic Media 演绎版](/help/assets/assets/dm-renditions-content-hub.png)
+
+### Dynamic Media 中的新增功能 {#new-features-dynamic-media}
+
+**Dynamic Media 与 AJO B2C 的原生集成**
+
+[Experience Manager (AEM) Dynamic Media 与 Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic) 的原生集成，使营销人员能够轻松地将 AEM Dynamic Media 资产（演绎版和 DM 模板）嵌入到 AJO 内容中，并通过各个渠道提供实时更新和超个性化体验。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### 预发行版功能
+
+* [通用编辑器 - 表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)：通用编辑器现在允许您为自适应表单创建和重复使用表单片段。这些片段是可重复使用的表单部分（例如，联系方式、同意字段），只需构建一次即可应用于多个表单。此功能简化了表单创建，确保了一致性，提高了创作效率。
+
+* [SharePoint 文档库 - 使用原始文件名保存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：现在，您可以选择使用表单附件的原始文件名将其保存在 SharePoint 文档库中。此增强功能简化了上传文件的识别和管理。
+
+* **规则编辑器**：
+   * [“When”子句中带有单击事件的二进制条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：规则编辑器现在允许您在“When”子句中将按钮单击事件（_Is Clicked_）与其他条件相结合。这样就可以根据用户交互和其他因素更精确地控制规则的执行。注意：如果使用多个条件，单击事件必须是列出的第一个条件。
+   * [字段和面板的验证条件](/help/forms/rule-editor-core-components-usecases.md)：规则编辑器现在包括 _IsValid_ 和 _IsNotValid_ 两个条件。这些条件允许您检查特定字段或整个面板（包括水平选项卡、垂直选项卡、可折叠项和向导等布局方法）的验证状态，从而根据验证结果改善表单导航和用户体验。
+* [改进了 SharePoint 列表的范围管理](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint 网站现在支持所有管理路径，例如 /sites 和 /teams。这一增强功能有助于更加广泛地集成不同的 SharePoint 网站结构，为连接组织内容提供了更大的灵活性。
+* [支持将记录文档保存到 SharePoint 列表](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：使用基于 SharePoint 列表的表单数据模型 (FDM) 创建的表单现在可以通过配置记录文档绑定引用字段属性将记录文档 (DoR) 保存到 SharePoint 列表。此增强功能可将受支持的表单数据和文档与 SharePoint 存储无缝集成。
+
+### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
+
+AEM Forms Early Access Program 项目为您提供了一个独特的机会，让您可以独家访问尖端创新技术，并帮助塑造其发展。
+
+本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
+
+#### Adobe Experience Platform (AEP) 与 Forms 集成
+
+Forms 与 AEP 的集成功能现在可供早期采用者使用。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -104,7 +177,7 @@ OSGi 属性：
 
 **Java 11 运行时环境**&#x200B;现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
 
-如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含具体的后续步骤。 请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
+如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
 注意：运行时版本与代码的构建版本是分开的。虽然我们建议使用 Java 21 进行构建，但目前仍支持使用 Java 11 进行构建。未来将另行发布针对 Java 11 版本的弃用通知。
 
@@ -112,7 +185,7 @@ OSGi 属性：
 
 正如4月发布说明中所述，AEM Java 日志必须遵循标准格式，以确保在所有客户环境中进行可靠监控。自定义日志配置（如更改日志格式、输出文件或默认日志级别）已不再受支持。日志必须继续定向到默认文件，且必须保留 AEM 产品代码的默认日志级别。请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)，以了解完整详情。
 
-从 **8 月下旬**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。根据我们的分析，大多数客户不会受到影响，并且Adobe已联系其当前配置可能受到影响的客户。
+从 **8 月下旬**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将直接与其联系。
 
 请审查并更新所有依赖自定义日志记录行为的下游流程。例如：
 
@@ -123,7 +196,7 @@ OSGi 属性：
 
 目前，内容版本和审计日志的相关&#x200B;*清除维护任务*&#x200B;默认处于禁用状态，因此除非进行明确配置，否则不会删除任何数据。
 
-但是，为优化存储库性能，从&#x200B;**2025年7月初**&#x200B;开始，将默认启用清除，遵循以下准则：
+然而，为了优化存储库性能，从 **2025 年 6 月下旬**&#x200B;开始，将默认启用清除功能，并遵循以下指南：
 
 #### 内容版本 {#mt-content}
 

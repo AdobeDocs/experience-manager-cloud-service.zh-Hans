@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7ae30d2053a17c2855c66b265c831ea27d19d535
+source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 18%
+source-wordcount: '1758'
+ht-degree: 15%
 
 ---
 
@@ -31,11 +31,14 @@ ht-degree: 18%
 * Forms-19336：在AF编辑器的数据Source树中添加了搜索。
 * Forms-19417：支持层次结构视图中的单选按钮。
 * Forms-19603：在规则编辑器中支持母版页和设计页。
+* SITES-5358：内容片段Rest API：复制具有子项的CF。
 * SITES-10575：“MSM Blueprint Bloomfilter加载器”尝试加载的行数超过100000行。
 * SITES-14542：重命名/移动Live Copy源页面应触发发布重命名的/移动的Live Copy页面（如果之前已发布）。
 * SITES-19754：使用通用编辑器的Edge Delivery：在集成遇到问题时添加一条用户可读的错误消息。
 * SITES-23499：带有通用编辑器的Edge Delivery：添加对要用于块选项的多个字段的支持。
 * SITES-23518：带有通用编辑器的Edge Delivery：添加对特定于Edge Delivery的资源演绎版的支持。
+* SITES-24436：内容片段Rest API：引入了本地缓存，以加快重复引用的检索。
+* SITES-25155：内容片段Rest API：删除模型列表中已弃用的“enabledForFolder”查询参数。
 * SITES-25913：内容片段Rest API：在启动发布工作流之前对资源进行时间分组验证。
 * SITES-25976：MSM 转出后，体验片段中的链接未调整。
 * SITES-26271：内容片段Rest API：切换到GET变体端点的BFS遍历。
@@ -43,10 +46,16 @@ ht-degree: 18%
 * SITES-27775：优化了发布期间的引用搜索（元数据延迟加载）。
 * SITES-27782：带有通用编辑器的Edge Delivery：添加特定的发布者 — 订阅者实施以将内容发布到Edge Delivery（提前访问）。
 * SITES-27792：带有通用编辑器的Edge Delivery：添加专用的Edge Delivery服务配置模板。
+* SITES-28557：内容片段Rest API：允许使用通过`references=direct`调用`/cf/fragments/{fragmentId}`检索到的ETags修补内容片段。
 * sites-28683：允许MSM LiveRelationship搜索跳过高级状态。
+* SITES-29601：内容片段Rest API：验证长文本字段的内容片段引用。
+* SITES-29614：内容片段Rest API：使用`/cf/workflows/{workflowInstanceId}`端点检索工作流，其中workflowInstanceIda是发布请求返回的id。
+* SITES-29615：内容片段Rest API：列出使用`GET /cf/batch`通过POST `/cf/batch`创建的所有批次请求。
+* SITES-29874：内容片段Rest API：现在可检索内容片段的长文本字段中的引用并进行水合。
 * SITES-29930：内容片段Rest API：为内容片段发布工作流添加量度。
 * SITES-29986：内容片段Rest API：支持CF模型技术命名。
 * SITES-30088：内容片段Rest API： CF发布 — 当filterReferencesByStatus为空时，跳过检索引用。
+* SITES-30126：内容片段Rest API：CF发布性能改进：用最小的检查替换了资源是否为片段的检查。
 * SITES-30328：带有通用编辑器的Edge Delivery：添加对从Sidekick预览的支持。
 * SITES-30445：内容片段Rest API： CF模型UI架构：添加一个选项以控制可折叠的初始状态。
 * SITES-30604：内容片段Rest API：支持在新UI中采用模型元数据架构。
@@ -54,11 +63,14 @@ ht-degree: 18%
 * SITES-30886：内容片段Rest API：内容片段端点的GET工作流基于存储在工作流元数据中的片段uuid。
 * SITES-31005：增强转出作业UI以显示进度。
 * SITES-31020：增强创建Live Copy作业UI以显示进度。
+* SITES-31111：内容片段Rest API：允许变量修补程序API接受内容片段启动项中的内容片段引用。
+* SITES-31343：内容片段Rest API：按日期向列出批处理请求的端点添加筛选和分页。
 * SITES-31472：删除启动项会导致存储库在启动项大量增加时暂停。
+* SITES-31641：内容片段Rest API：将属性添加到模型字段，用于存储与扩展相关的动态映射。
 * SITES-31677：自定义工作区支持将AEM内容片段导出到Target。
+* SITES-31770：内容片段Rest API：PATCH性能改进。
 * SITES-31782：内容片段Rest API：添加对本地资产的描述。
 * SITES-32175：允许中间提交以用于Live Copy创建和MSM页面转出。
-* SITES-5358：内容片段Rest API：复制具有子项的CF。
 
 ### 修复的问题 {#fixed-issues-21331}
 
@@ -85,6 +97,7 @@ ht-degree: 18%
 * SITES-25235：屏幕阅读器未公告筛选边栏内容加载消息。
 * SITES-25254：当内容查看速度为320px时，水平滚动条会显示在轮盘模式中。
 * SITES-25433：带有通用编辑器的Edge Delivery：修复了多语言站点结构的页面版本渲染问题。
+* SITES-26064：内容片段Rest API：修复了在后端创建片段并获取`AccessDeniedException`时返回的状态代码。
 * SITES-26890：使用键盘时，在管理发布页面中无法显示“表标题”键盘焦点范围。
 * SITES-29075：Live Copy概述不适用于高流量网站。
 * SITES-29514：使用通用编辑器的Edge Delivery：将GitHub/项目URL设为创建新站点时的必需项。
@@ -94,7 +107,6 @@ ht-degree: 18%
 * SITES-29789：复制的根页面上的组件链接更改问题。
 * SITES-29987：内容片段重置API：创建和编辑内容片段模型不支持`previewUrlPattern`。
 * SITES-30140：创建内容片段引用时出现双重窗口问题。
-* SITES-30260：内容片段Rest API：使用最新ETag更新/删除CF时出错。
 * SITES-30327：内容片段Rest API：发布没有权限的CF将为每个有效负载资源创建单独的工作流。
 * SITES-30333：从 jcr 读取资产元数据，以避免 xmp 解析问题。
 * SITES-30353：AEM 内容片段中“src”字段的 GraphQL DataFetchingExceptions。
@@ -112,13 +124,16 @@ ht-degree: 18%
 * SITES-30899：转出“稍后”选项允许在未选择日期的情况下继续。
 * SITES-30947：由于转出期间的Blueprint上缺少“行为”属性，出现空指针异常。
 * SITES-31157：内容片段Rest API：修补程序失败是特定案例。
+* SITES-31162：内容片段Rest API：修复了`ModelFieldMapper`中`DateTimeField`字段的强制转换问题。
+* SITES-31174：内容片段Rest API：标记未与发布请求一起发布。
 * SITES-31272：无法通过PageManager.copy创建Assets语言副本。
 * SITES-31327：内容片段Rest API：删除GET片段请求中的ETag验证。
 * SITES-31387：重新启用Ghost组件继承时，JavaScript出现“ns.ui.alert is not a function”错误。
+* SITES-31454：内容片段Rest API：放松片段引用字段的模式，使其也接受UUID。
 * SITES-31455：内容片段Rest API：修复相同内容片段模型的端点之间的ETag不匹配。
 * SITES-31459：内容片段Rest API：当存在内容引用字段时，无法编辑CF Live Copy。
 * SITES-31467：页面编辑器中contexthub.authoring-hook.js的js-errors。
-* SITES-31594：内容片段Rest API： `extractMetadataSchemaFieldLabel`错误。
+* SITES-31487：内容片段Rest API：允许为根文件夹调用权限端点。
 * SITES-31621：带有通用编辑器的Edge Delivery：从作为活动副本的电子表格中删除空行。
 * SITES-31676：创作或删除组件会在页面底部留下空格。
 * SITES-31822：经典UI复选框标签缺失并编码的HTML。
