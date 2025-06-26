@@ -78,7 +78,7 @@ ht-degree: 8%
    * 选择导入的表单并单击&#x200B;**[!UICONTROL 从文件夹删除]**，然后验证文件夹路径中的文件夹名称以确认文件夹已正确移植。
 
      ![验证元数据表单页面](/help/assets/assets/confirm-ported-folder.png)
-   * 选择导入的表单，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;查看元数据表单的所有受支持配置。 有关元数据表单、其组件和字段的更多信息，请参阅[设置元数据Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)。
+   * 选择导入的表单，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;查看元数据表单的所有受支持配置。 有关元数据表单、其组件和字段的更多信息，请参阅[设置元数据Forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)。
 
      ![验证元数据表单页面](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -87,8 +87,8 @@ ht-degree: 8%
 将元数据表单从[!DNL Admin View]导入到[!DNL Assets View]后，请按照以下步骤验证导入：
 
 1. 导航到导入的元数据表单的任何关联文件夹。
-1. 导航到[资源的详细信息页面](/help/assets/navigate-assets-view.md#preview-assets)，并验证支持的元数据组件、组件字段和字段值是否已从[!DNL Admin View]同步。 有关元数据组件、组件字段和字段值的更多信息，请参阅Assets Essentials中的[元数据](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata)文章。
+1. 导航到[资源的详细信息页面](/help/assets/navigate-assets-view.md#preview-assets)，并验证支持的元数据组件、组件字段和字段值是否已从[!DNL Admin View]同步。 有关元数据组件、组件字段和字段值的更多信息，请参阅Assets Essentials中的[元数据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/metadata)文章。
 
    >[!NOTE]
    >
-   > 在[[!DNL Assets View] 详细信息页面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms)或[[!DNL Admin View] 属性页面](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas)中，对元数据属性值的更改将在两个界面之间自动同步。 但是，表单中的结构更改（如添加或删除字段或其他修改）不会同步。
+   > 在[[!DNL Assets View] 详细信息页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms)或[[!DNL Admin View] 属性页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/administer/metadata-schemas)中，对元数据属性值的更改将在两个界面之间自动同步。 但是，表单中的结构更改（如添加或删除字段或其他修改）不会同步。
