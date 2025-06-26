@@ -81,7 +81,7 @@ Assets视图UI支持由Adobe Express提供的基础图像编辑，该视图已�
 1. 单击左侧窗格中的 **调整图像大小**。对话框显示由 Adobe Express 提供支持的调整图像大小功能。
 1. 从“调整大小对象”下拉列表中选择适当的社交媒体平台，并从显示的选项中选择图像的大小。
 1. 如果需要，使用&#x200B;**“图像比例”**&#x200B;字段缩放图像。
-1. 单击&#x200B;**[!UICONTROL 应用]**以应用您的更改。
+1. 单击&#x200B;**[!UICONTROL 应用]**&#x200B;以应用您的更改。
    ![使用 Adobe Express 进行图像编辑](assets/adobe-express-resize-image.png)
 
    您编辑的图像可供下载。您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
@@ -92,7 +92,7 @@ Assets视图UI支持由Adobe Express提供的基础图像编辑，该视图已�
 您可以按照以下步骤从图像中移除背景：
 
 1. 单击左侧窗格中的 **删除背景**。Experience Manager Assets 不含背景地显示该图像。
-1. 单击&#x200B;**[!UICONTROL 应用]**以应用您的更改。
+1. 单击&#x200B;**[!UICONTROL 应用]**&#x200B;以应用您的更改。
    ![使用 Adobe Express 保存图像](assets/adobe-express-remove-background.png)
 
    您编辑的图像可供下载。您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
