@@ -83,6 +83,7 @@ ht-degree: 8%
 
    * 单击列标题可按[!UICONTROL 名称]、[!UICONTROL 修改时间]或[!UICONTROL 作者]对表进行排序。
    * 选择导入的表单并单击&#x200B;**[!UICONTROL 从文件夹删除]**，然后验证文件夹路径中的文件夹名称以确认文件夹已正确移植。
+
      ![验证元数据表单页面](/help/assets/assets/confirm-ported-folder.png)
    * 选择导入的表单，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;查看元数据表单的所有受支持配置。 有关元数据表单、其组件和字段的更多信息，请参阅[设置元数据Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms)。
 
