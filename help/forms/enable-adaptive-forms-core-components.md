@@ -17,7 +17,7 @@ ht-degree: 76%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 在AEM Forms as a Cloud Service上启用自适应Forms核心组件，允许您开始创建、发布和交付基于核心组件的自适应Forms和Headless Forms，其中使用AEM Forms Cloud Service实例对多个渠道进行实施。 您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
@@ -299,7 +299,7 @@ ht-degree: 76%
 
    成功构建该包后，可在 [Git Repository Folder]\all\target\[appid].all-[version].zip 中找到它
 
-1. 使用[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)将 [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip 包部署在本地开发环境上。
+1. 使用[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)将 [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip 包部署在本地开发环境上。
 
 
 ### 构建更新后的代码并将其部署在 AEM Forms as a Cloud Service 环境上 {#core-components-on-aem-forms-cs}
@@ -315,7 +315,7 @@ ht-degree: 76%
     git push origin
    ```
 
-1. 将文件提交到 Git 存储库后，[运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
+1. 将文件提交到 Git 存储库后，[运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hans)。
 
    成功运行管道后，即为相应的环境启用自适应表单核心组件。此外，还将自适应表单（核心组件）模板和 Canvas 3.0 主题添加到您的 Forms as a Cloud Service 环境，并为您提供自定义和创建基于核心组件的自适应表单的选项。
 
@@ -324,7 +324,7 @@ ht-degree: 76%
 
 ### 什么是核心组件？ {#core-components}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
 
 ### 启用核心组件时将添加哪些功能？ {#core-components-capabilities}
 
@@ -333,7 +333,7 @@ ht-degree: 76%
 * [创建基于核心组件的自适应表单](/help/forms/creating-adaptive-form-core-components.md)。
 * [创建基于核心组件的自适应表单模板](/help/forms/template-editor.md)。
 * [为基于核心组件的自适应表单模板创建自定义主题](/help/forms/using-themes-in-core-components.md)。
-* [可以将基于核心组件的自适应表单的 JSON 表示形式提供给需要表单的 Headless 表示形式的移动、Web、原生应用程序和服务等渠道](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)。
+* [可以将基于核心组件的自适应表单的 JSON 表示形式提供给需要表单的 Headless 表示形式的移动、Web、原生应用程序和服务等渠道](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hans)。
 
 ### 我的环境是否启用了自适应表单核心组件？ {#enable-components}
 
