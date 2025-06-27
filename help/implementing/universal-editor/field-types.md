@@ -4,9 +4,9 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 11%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 11%
 | 配置 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
 | `component` | `ComponentType` | 组件的呈现器 | 是 |
-| `name` | `string` | 需要保留数据的属性 | 是 |
+| `name` | `string` | 保留数据的属性[或path](#nesting) | 是 |
 | `label` | `FieldLabel` | 字段的标签 | 是 |
 | `description` | `FieldDescription` | 字段描述 | 否 |
 | `placeholder` | `string` | 字段的占位符 | 否 |
@@ -104,6 +104,14 @@ ht-degree: 11%
 | `multi` | `boolean` | 字段是否为多字段 | 否 |
 | `validation` | `ValidationType` | 字段的验证规则 | 否 |
 | `raw` | `unknown` | 组件可以使用的原始数据 | 否 |
+
+### 名称字段和嵌套 {#nesting}
+
+`name`字段可以直接指向当前资源的属性，或者，对于`cq:Pages`中的组件，它也可以使用嵌套属性的路径。 例如：
+
+```json
+"name": "teaser/image/fileReference"
+```
 
 ### 组件类型 {#component-types}
 
@@ -281,7 +289,7 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
 
 #### 容器 {#container}
 
-容器组件类型允许对组件进行分组。 它提供了额外的配置。
+容器组件类型允许对包括多字段支持的组件进行分组。 它提供了额外的配置。
 
 | 配置 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
@@ -324,7 +332,36 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
 
 ![容器组件类型的屏幕快照](assets/component-types/container.png)
 
+>[!TAB 多字段支持]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### 内容片段 {#content-fragment}
 
