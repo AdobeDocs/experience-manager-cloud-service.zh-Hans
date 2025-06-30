@@ -148,7 +148,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 此工具仅提供给管理员组，用于从Azure或S3数据存储中大规模摄取资产。 观看配置和摄取的视频演练。
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341379/?quality=12&learn=on&captions=chi_hans)
 
 下图说明了将资产从数据存储摄取到Experience Manager时的各个阶段：
 
