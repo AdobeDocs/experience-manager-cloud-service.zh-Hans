@@ -96,7 +96,7 @@ ht-degree: 99%
    + AEMaaCS 维护发行说明 {#maintenance}
       + [当前维护发行说明](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
-         + [2025.6.0 的维护发行说明](/help/release-notes/maintenance/2025/2025-6-0.md)
+         + [2025.6.0 的维护版本发行说明](/help/release-notes/maintenance/2025/2025-6-0.md)
          + [2025.5.0 的维护发行说明](/help/release-notes/maintenance/2025/2025-5-0.md)
          + [2025.4.0 的维护发行说明](/help/release-notes/maintenance/2025/2025-4-0.md)
          + [2025.3.0 的维护发行说明](/help/release-notes/maintenance/2025/2025-3-0.md)
@@ -403,7 +403,7 @@ ht-degree: 99%
       + 通用编辑器 {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [从通用编辑器中发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [从通用编辑器发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [页面模板](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}
@@ -685,7 +685,7 @@ ht-degree: 99%
       + [编辑视频](/help/assets/edit-videos-assets-view.md)
       + [查看和管理演绎版](/help/assets/renditions.md)
       + [管理资产元数据](/help/assets/metadata-assets-view.md)
-      + [将元数据表单从管理员视图导入Assets视图](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
+      + [将元数据表单从管理视图导入到资产视图](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
       + [批量重命名](/help/assets/bulk-rename-assets-view.md)
       + [批量元数据编辑](/help/assets/bulk-metadata-edit.md)
       + [共享资产](/help/assets/share-links-for-assets-view.md)
@@ -718,7 +718,7 @@ ht-degree: 99%
       + [搜索最佳实践](/help/assets/search-best-practices.md)
       + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
    + 与 Figma 集成 {#integration-figma}
-      + [与Figma本机集成](/help/assets/integrate-aem-assets-with-figma.md)
+      + [与 Figma 的原生集成](/help/assets/integrate-aem-assets-with-figma.md)
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [配置资产元数据映射](/help/assets/configure-asset-metadata-mapping.md)
@@ -750,7 +750,7 @@ ht-degree: 99%
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资产](/help/forms/import-export-forms-templates.md)
-      + [在Adobe Experience Software Development Kit (AEM SDK)上启用功能切换](/help/forms/enable-feature-toggle.md)
+      + [在 Adobe Experience 软件开发工具包 (AEM SDK) 上启用功能切换](/help/forms/enable-feature-toggle.md)
    + 快速入门 {#getting-started-forms}
       + [用例和设置开发环境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [创建贷款申请表](/help/forms/create-adaptive-form-tutorial.md)
