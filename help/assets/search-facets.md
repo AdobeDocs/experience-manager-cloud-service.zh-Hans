@@ -15,7 +15,7 @@ ht-degree: 19%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 Adobe Experience Manager Assets的企业范围部署具有存储许多资源的能力。 有时，如果只使用Experience Manager的通用搜索功能，则查找合适的资源可能会很费时费力。

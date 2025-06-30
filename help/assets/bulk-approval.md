@@ -16,7 +16,7 @@ ht-degree: 9%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 使用Adobe Experience Manager Assets，您可以为文件夹或收藏集中的资源设置临时审核工作流。 您可以与审阅人或创意合作伙伴共享此内容，以征求他们的反馈。 您可以将审阅工作流与项目关联或创建独立审阅任务。

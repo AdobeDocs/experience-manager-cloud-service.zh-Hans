@@ -97,7 +97,7 @@ experience manager metadata-->
 
 >[!NOTE]
 >
->了解如何[管理数字资源的元数据](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)。
+>了解如何[管理数字资源的元数据](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hans)。
 
 ### 与元数据策略一致
 
@@ -136,7 +136,7 @@ experience manager metadata-->
    1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 使用添加的关键字搜索资源。 该资源会出现在排名最前的搜索结果中。
 
-  了解如何[提升Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中的搜索量。
+  了解如何[提升Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)中的搜索量。
 
 * **自定义元数据字段：**&#x200B;自定义您的元数据字段以捕获有关资源的其他信息。 例如，为项目详细信息、版权信息或任何其他增强搜索功能的相关数据添加特定字段。 了解如何在Experience Manager Assets中编辑或添加自定义元数据[&#128279;](meta-edit.md)。
 
@@ -166,4 +166,4 @@ experience manager metadata-->
 
 及早沟通目标、进展、里程碑和挑战，以接受所有利益相关者的投入和合作。 鼓励整个组织内的协作，创建高效的流程和重要的元数据。
 
-了解有关[元数据及其相关概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)的更多信息，以便有效地管理Experience Manager元数据。
+了解有关[元数据及其相关概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=zh-Hans)的更多信息，以便有效地管理Experience Manager元数据。

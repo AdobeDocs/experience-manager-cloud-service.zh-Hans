@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Stock]服务允许设计人员和企业访问其所有创意项目中的数百万张高质量、精选的、免版税的照片、矢量、插图、视频、模板和3D资产。
@@ -525,6 +525,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [有关将Adobe Stock资源与Experience Manager Assets结合使用的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Adobe Stock企业计划帮助](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Adobe Stock常见问题解答](https://helpx.adobe.com/stock/faq.html)
+>* [有关将Adobe Stock资源与Experience Manager Assets结合使用的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=zh-Hans)
+>* [Adobe Stock企业计划帮助](https://helpx.adobe.com/cn/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock常见问题解答](https://helpx.adobe.com/cn/stock/faq.html)

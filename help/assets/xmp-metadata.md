@@ -16,7 +16,7 @@ ht-degree: 17%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 XMP（可扩展元数据平台）是Experience Manager Assets用于所有元数据管理的元数据标准。 XMP为各种应用程序的元数据的创建、处理和交换提供了一个标准格式。

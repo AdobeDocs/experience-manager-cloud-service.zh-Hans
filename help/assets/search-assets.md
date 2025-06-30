@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets]提供强大的资源搜索方法，帮助您实现更高的内容速度。 您的团队可以使用开箱即用的功能和自定义方法，通过无缝、智能的资产搜索体验缩短上市时间。 搜索资产功能对于数字资产管理系统的使用至关重要，无论是由创意人员进一步使用、由业务用户和营销人员稳健管理资产，还是由DAM管理员进行管理。 您可以通过[!DNL Assets]用户界面或其他应用和表面执行的简单、高级和自定义搜索有助于完成这些用例。
@@ -86,7 +86,7 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 
 `damAssetLucene-9`更改了Oak查询Facet计数的行为，使其不再评估基础搜索索引返回的Facet计数的访问控制，这将缩短搜索响应时间。 因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
 
-如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，Adobe不建议切换到`secure`模式。
+如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=zh-Hans)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，Adobe不建议切换到`secure`模式。
 
 有关Oak的Facet功能的详细信息，包括这些模式的详细说明，请参阅[Facet - Oak文档 — Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
 
@@ -147,7 +147,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 1. 在&#x200B;**[!UICONTROL 搜索提升]**&#x200B;框中，指定要提升图像搜索的关键字，然后单击&#x200B;**[!UICONTROL 添加]**。 您可以按相同方式指定多个关键字。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。 您针对此关键字提升的资产将显示在排名最前的搜索结果中。
 
-利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)。
+利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -253,11 +253,11 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 在[!DNL Experience Manager]桌面应用程序中搜索资产 {#desktop-app}
 
-Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面(Win或Mac)上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
+Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面(Win或Mac)上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)。
 
 ### 在 [!DNL Brand Portal] 中搜索资产 {#brand-portal}
 
-业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)中搜索资源。
+业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=zh-Hans)中搜索资源。
 
 ### 搜索[!DNL Adobe Stock]图像 {#adobe-stock1}
 
@@ -406,11 +406,11 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
    保存更改。
 
 1. 访问`/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`并添加值为`true`的`Boolean`类型的`similarityTags`属性。
-1. 将智能标记应用于[!DNL Experience Manager]存储库中的资源。 请参阅[如何配置智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring)。
+1. 将智能标记应用于[!DNL Experience Manager]存储库中的资源。 请参阅[如何配置智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=zh-Hans#configuring)。
 1. 在CRXDE的`/oak-index/damAssetLucene`节点中，将`reindex`属性设置为`true`。 保存更改。
 1. （可选）如果已自定义搜索表单，请将`/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch`节点复制到`/conf/global/settings/dam/search/facets/assets/jcr:content/items`。 保存更改。
 
-有关相关信息，请参阅[了解Experience Manager中的智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)和[如何管理智能标记](/help/assets/smart-tags.md)。
+有关相关信息，请参阅[了解Experience Manager中的智能标记](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hans)和[如何管理智能标记](/help/assets/smart-tags.md)。
 
 ### 必需元数据 {#mandatorymetadata}
 
@@ -551,5 +551,5 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [高级配置以提升搜索结果](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=zh-Hans)
+>* [高级配置以提升搜索结果](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)

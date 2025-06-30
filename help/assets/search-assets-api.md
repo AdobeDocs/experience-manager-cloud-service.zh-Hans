@@ -56,6 +56,6 @@ headers: {
     },
 ```
 
-要调用搜索API，需要在`Authorization`详细信息中定义IMS令牌。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)以生成IMS令牌并在搜索资产API请求标头中正确使用它。
+要调用搜索API，需要在`Authorization`详细信息中定义IMS令牌。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#fetch-the-aem-as-a-cloud-service-credentials)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#generating-the-access-token)以生成IMS令牌并在搜索资产API请求标头中正确使用它。
 
 要查看请求示例、响应示例和响应代码，请参阅[搜索Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)。

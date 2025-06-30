@@ -47,7 +47,7 @@ Document Cloud PDF查看器可通过以下方式为AEM Assets带来好处：
 
 通过Adobe Experience Manager Assets，您可以预览包含多个页面的PDF文档。 要预览PDF文档的多个页面，请考虑以下步骤：
 
-1. 按照步骤[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上传资源。
+1. 按照步骤[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=zh-Hans)中上传资源。
 1. 浏览要上载并预览的PDF文档。
 1. 打开文档。
 1. 默认情况下，会加载PDF文档查看器。 您还可以在呈现版本面板下选择PDF呈现版本。
@@ -126,7 +126,7 @@ Experience Manager Assets允许向PDF文档添加注释。 一个PDF文档可以
 
 对于其他支持的文档格式的多页预览，请执行以下步骤：
 
-1. 按照步骤[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上传资源。
+1. 按照步骤[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=zh-Hans)中上传资源。
 1. 浏览要上载和预览的文档。
 1. 打开文档。
 1. 在左侧面板的静态部分下选择PDF 。 右侧面板可显示资产的多个页面预览。 从左侧面板中选择缩略图以选择要预览的页面。

@@ -97,5 +97,5 @@ Experience Manager 客户端是产品的一部分，默认情况下都支持使�
 >* [开始使用资源微服务](asset-microservices-configure-and-use.md)
 >* [支持的文件格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hans)
 >* [关于直接二进制访问的 Apache Oak 文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

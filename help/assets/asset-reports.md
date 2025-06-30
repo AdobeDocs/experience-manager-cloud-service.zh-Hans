@@ -16,7 +16,7 @@ ht-degree: 9%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 通过资产报告，您可以评估[!DNL Adobe Experience Manager Assets]部署的实用程序。 通过[!DNL Assets]，您可以为数字资源生成各种报告。 这些报表提供有关系统使用情况、用户如何与资源交互以及<!-- downloaded and -->共享哪些资源的有用信息。
@@ -66,7 +66,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >使自己有权使用&#x200B;**AEM管理员产品配置文件**&#x200B;来创建&#x200B;**下载**&#x200B;报告。 请参阅[分配AEM产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，以授予您使用AEM管理员产品配置文件的权限。
+   >使自己有权使用&#x200B;**AEM管理员产品配置文件**&#x200B;来创建&#x200B;**下载**&#x200B;报告。 请参阅[分配AEM产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，以授予您使用AEM管理员产品配置文件的权限。
 
    ![选择报表类型](assets/choose_report.png)
 

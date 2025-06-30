@@ -16,7 +16,7 @@ ht-degree: 21%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 元数据配置文件允许您将默认元数据应用到文件夹中的资源。 创建元数据配置文件并将其应用到文件夹。 您随后上传到文件夹的任何资产都会继承您在元数据配置文件中配置的默认元数据。

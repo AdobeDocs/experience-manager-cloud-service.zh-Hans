@@ -16,7 +16,7 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 组织可以提供一个元数据模型，用于增强资产发现、使用、互操作性等。 正确的元数据应用程序对于维护元数据驱动的工作流程和流程至关重要。 要遵循组织范围的元数据策略和标准，您可以使用帮助DAM用户一致的元数据架构。 [!DNL Adobe Experience Manager]允许使用简单灵活的方法创建、维护和应用元数据架构。

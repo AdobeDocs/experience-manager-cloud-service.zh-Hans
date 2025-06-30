@@ -16,7 +16,7 @@ ht-degree: 17%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 多语言资源是指具有多种语言的二进制文件、元数据和标记的资源。 通常，资产的二进制文件、元数据和标记都以一种语言存在，然后会翻译成其他语言以用于多语言项目。 通过Adobe Experience Manager Assets，您可以自动执行工作流以翻译资源（包括二进制文件、元数据和标记），并生成其他语言的资源以用于多语言项目。
@@ -30,11 +30,11 @@ AEM中的机器资源翻译：机器翻译服务将立即翻译资源的元数�
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=zh-Hans
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=zh-Hans
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=zh-Hans)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=zh-Hans
 
 -->
 

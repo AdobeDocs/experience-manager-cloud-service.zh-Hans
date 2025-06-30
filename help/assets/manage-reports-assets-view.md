@@ -141,7 +141,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 先决条件 {#prereqs-dynamic-media-delivery-reports}

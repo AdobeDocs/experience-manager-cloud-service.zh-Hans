@@ -268,7 +268,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 ## 自定义搜索Facet {#custom-search-facets}
 
-通过Adobe Experience Manager中的搜索彩块化，您可以通过多种方式搜索资源，而不是按单个、预先确定的或分类顺序搜索。 您可以根据需要自定义搜索彩块化和添加谓词。 有关添加自定义谓词的分步指南，请阅读[搜索Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#)。
+通过Adobe Experience Manager中的搜索彩块化，您可以通过多种方式搜索资源，而不是按单个、预先确定的或分类顺序搜索。 您可以根据需要自定义搜索彩块化和添加谓词。 有关添加自定义谓词的分步指南，请阅读[搜索Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hans#)。
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -316,7 +316,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> 自定义Facet </td>
-        <td> 您可以根据需要添加<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">自定义搜索彩块化。</td>
+        <td> 您可以根据需要添加<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hans">自定义搜索彩块化。</td>
         <td> Assets视图部分支持自定义Facet。 支持的Facet包括：
             <ul>
             <li> 预测的标记
@@ -430,5 +430,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [搜索资产](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
->* [搜索 Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)
+>* [搜索资产](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=zh-Hans)
+>* [搜索 Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hans)

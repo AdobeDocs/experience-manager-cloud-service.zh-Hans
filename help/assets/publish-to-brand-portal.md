@@ -160,7 +160,7 @@ ht-degree: 85%
 
 1. 切换到列表视图![列表视图](assets/list-view.svg)以查看资源的当前发布状态。
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![已生成报告状态](assets/report-status.JPG)
 
@@ -258,11 +258,11 @@ ht-degree: 85%
 
 除了上述功能，您还可以将元数据架构、图像预设、搜索 Facet 和标记从 AEM Assets 发布到 Brand Portal。
 
-* [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=zh-Hans)
+* [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=zh-Hans)
 
 
-有关详细信息，请参阅 [Brand Portal 文档](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)。
+有关详细信息，请参阅 [Brand Portal 文档](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hans)。
 
 
 <!--
