@@ -73,7 +73,7 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 1. 在[!DNL Experience Manager]用户界面中，单击&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
 1. 导航到要下载的资源。 选择文件夹或文件夹中的一个或多个资源。 在工具栏上，单击&#x200B;**[!UICONTROL 下载]**。
 
-   从[!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)下载资源时![可用选项
+   从[!DNL Experience Manager Assets]![&#128279;](/help/assets/assets/asset-download1.png)下载资源时可用选项
 
 1. 在下载对话框中，选择所需的下载选项。
 

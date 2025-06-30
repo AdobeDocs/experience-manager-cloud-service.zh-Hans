@@ -55,7 +55,7 @@ Figma设计就绪后，您可以[将资源导出到AEM Assets存储库](#export-
 1. 导航到要保存[!DNL Figma]设计的目标文件夹。 如果您已在文件夹中，请单击文件夹路径中的“更多”选项（![三个圆点](/help/assets/assets/three-dots.svg)）以选择其他目标文件夹。
 1. 可选：将画布上的资产分组，以作为单个单元将其选择并上传到您的文件夹中。
 1. 单击![文件上传](/help/assets/assets/upload-icon.svg) **[!UICONTROL 上传]**&#x200B;以显示&#x200B;**[!UICONTROL 上传资产]**&#x200B;对话框。
-1. 在该对话框中，指定文件名，选择文件格式，选择&#x200B;**[!UICONTROL 选定项]**&#x200B;或&#x200B;**[!UICONTROL 页面]**，然后单击&#x200B;**[!UICONTROL 上传]**以将选定资源或整个设计上传到目标文件夹。
+1. 在该对话框中，指定文件名，选择文件格式，选择&#x200B;**[!UICONTROL 选定项]**&#x200B;或&#x200B;**[!UICONTROL 页面]**，然后单击&#x200B;**[!UICONTROL 上传]**&#x200B;以将选定资源或整个设计上传到目标文件夹。
    ![上载图形设计](/help/assets/assets/upload-figma-design.png)
 
 ## 要注意的重要事项{#Limitations-of-using-aem-assets-into-figma}

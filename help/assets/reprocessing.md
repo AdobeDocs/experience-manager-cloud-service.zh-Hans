@@ -47,7 +47,7 @@ ht-degree: 0%
 
       * **[!UICONTROL 元数据]：**&#x200B;如果要提取所选资源的元数据信息和智能标记，请选择此选项。
 
-      * **[!UICONTROL 处理配置文件]：**&#x200B;要重新处理选定的配置文件时，请选择此选项。 您可以选择&#x200B;**[!UICONTROL 完整流程]**选项以包括在文件夹级别分配的默认处理和自定义配置文件。
+      * **[!UICONTROL 处理配置文件]：**&#x200B;要重新处理选定的配置文件时，请选择此选项。 您可以选择&#x200B;**[!UICONTROL 完整流程]**&#x200B;选项以包括在文件夹级别分配的默认处理和自定义配置文件。
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
       * **[!UICONTROL 后处理工作流]：**&#x200B;选择此选项时，需要额外处理无法使用处理配置文件实现的资产。 可以向配置中添加其他后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。

@@ -34,7 +34,7 @@ ht-degree: 4%
 
 ## 使用“管理发布”发布资源 {#manage-publication}
 
-管理发布允许您向所选目标发布内容或从中取消发布内容，[将内容从DAM存储库添加到发布列表，[包含文件夹设置](#include-folder-settings)以发布所选文件夹的内容并应用筛选器，以及[将发布安排](#publish-assets-later)安排在以后的日期或时间。](#add-content)
+管理发布允许您向所选目标发布内容或从中取消发布内容，[&#128279;](#add-content)将内容从DAM存储库添加到发布列表，[包含文件夹设置](#include-folder-settings)以发布所选文件夹的内容并应用筛选器，以及[将发布安排](#publish-assets-later)安排在以后的日期或时间。
 
 从[!DNL Experience Manager Assets]控制台中，导航到父文件夹，然后选择要发布的所有资源或文件夹。 单击工具栏中的&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项。 如果您未在您的[!DNL Experience Manager Assets]实例中配置[!DNL Dynamic Media]和[!DNL Brand Portal]，则只能将资源和文件夹发布到[!DNL Experience Manager Assets]。
 

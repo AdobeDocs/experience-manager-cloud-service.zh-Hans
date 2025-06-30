@@ -91,6 +91,7 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
    1. 在&#x200B;**[!UICONTROL 字段标签]**&#x200B;字段中指定`Project Name`。
 
    1. 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中指定`./jcr:content/metadata/wm:projectName`。 作为指导，请使用以下模板在Experience Manger Assets中定义字段映射：
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       在Workfront中配置映射时，您已将`wm:projectName`个Experience Manager Assets字段映射到项目>命名Workfront字段。
@@ -119,7 +120,7 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
 
 ## 将元数据设置应用于图像文件夹 {#apply-metadata-settings-image-folder}
 
-在Experience Manager as a Cloud Service应用程序中配置元数据设置后，将这些设置应用到包含从Workfront应用程序](#send-image-workfront-assets)发送的图像的[文件夹。
+在Experience Manager as a Cloud Service应用程序中配置元数据设置后，将这些设置应用到包含从Workfront应用程序[&#128279;](#send-image-workfront-assets)发送的图像的文件夹。
 
 要将元数据设置应用到图像文件夹，请执行以下操作：
 

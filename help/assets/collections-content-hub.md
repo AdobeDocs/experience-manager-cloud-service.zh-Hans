@@ -87,7 +87,7 @@ ht-degree: 3%
 
 ### 筛选收藏集视图 {#filter-collections-view}
 
-通过Content Hub，可筛选收藏集视图，根据您的偏好缩小选项范围，轻松找到所需内容。 确保Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的[配置。
+通过Content Hub，可筛选收藏集视图，根据您的偏好缩小选项范围，轻松找到所需内容。 确保Content Hub[&#128279;](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的配置。
 
 要筛选收藏集视图，请转到&#x200B;**[!DNL Collections]**&#x200B;选项卡并导航到收藏集下拉列表。 从以下选项中进行选择：
 
@@ -134,7 +134,7 @@ ht-degree: 3%
 
 ## 共享收藏集中可用的资产 {#share-assets-available-within-collection}
 
-您还可以共享收藏集中可用的资产。 确保在Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing)中[启用公共链接共享。 导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;选项卡。 选择收藏卡上的![共享图标](assets/share.svg)图标。 将复制共享链接。 您可以与收件人共享复制的链接。 了解有关[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资产的更多信息。
+您还可以共享收藏集中可用的资产。 确保在Content Hub[&#128279;](configure-content-hub-ui-options.md#enable-public-link-sharing)中启用公共链接共享。 导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;选项卡。 选择收藏卡上的![共享图标](assets/share.svg)图标。 将复制共享链接。 您可以与收件人共享复制的链接。 了解有关[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资产的更多信息。
 
 Content Hub收藏集提供了全面的治理工具以实现有效的资产管理，包括可自定义的共享权限和协作功能。 从只读访问到完全管理控制，这些设置支持对资产分发进行精细管理。 单独或作为收藏集的一部分共享资产时，访问范围由分配给用户的收藏集当前访问级别确定。 或者，您无法共享专用收藏集。
 

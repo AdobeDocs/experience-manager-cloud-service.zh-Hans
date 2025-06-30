@@ -113,7 +113,7 @@ experience manager metadata-->
 * **有效使用控制词汇：**&#x200B;通过为标记使用标准化术语来实现控制词汇。 了解如何有效实施[AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md)。  <br>
 例如，在为图像标记主题以保持系统顺序时，始终使用诸如*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;之类的术语。
 
-* **保持准确性和完整性：**要保持元数据的一致性，准确性、完整性和跨各种源的一致性至关重要。
+* **保持准确性和完整性：**&#x200B;要保持元数据的一致性，准确性、完整性和跨各种源的一致性至关重要。
 例如，将元数据添加到PDF文档时，请验证诸如作者姓名和关键字等详细信息是否准确且完整。
 
 #### 视频：将批量元数据添加到资源
@@ -138,7 +138,7 @@ experience manager metadata-->
 
   了解如何[提升Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中的搜索量。
 
-* **自定义元数据字段：**&#x200B;自定义您的元数据字段以捕获有关资源的其他信息。 例如，为项目详细信息、版权信息或任何其他增强搜索功能的相关数据添加特定字段。 了解如何在Experience Manager Assets中编辑或添加自定义元数据](meta-edit.md)。[
+* **自定义元数据字段：**&#x200B;自定义您的元数据字段以捕获有关资源的其他信息。 例如，为项目详细信息、版权信息或任何其他增强搜索功能的相关数据添加特定字段。 了解如何在Experience Manager Assets中编辑或添加自定义元数据[&#128279;](meta-edit.md)。
 
 
 * **元数据验证：**&#x200B;对元数据条目实施验证检查以确保一致性和准确性。 使用受控词汇表可以使验证过程更加顺畅，减少条目不清晰或不一致的几率。 这可能涉及为某些元数据属性设置准则，以避免信息模糊或不一致。

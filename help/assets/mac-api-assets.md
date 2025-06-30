@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## AEM [!DNL Assets] HTTP API入门 {#overview}
 
-AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源启用CRUD（创建、读取、更新和删除）操作。 这些操作适用于资源元数据、演绎版和注释。 它包括对内容片段](/help/assets/content-fragments/assets-api-content-fragments.md)的[支持。
+AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源启用CRUD（创建、读取、更新和删除）操作。 这些操作适用于资源元数据、演绎版和注释。 它包括对内容片段[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)的支持。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 [内容片段](/help/assets/content-fragments/content-fragments.md)是存储文本、数字和日期的结构化资产。 由于`standard`资产（如图像或文档）存在若干差异，因此处理内容片段时适用一些其他规则。
 
-有关详细信息，请参阅 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[内容片段支持。
+有关详细信息，请参阅 [!DNL Experience Manager Assets] HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的内容片段支持。
 
 >[!NOTE]
 >
@@ -315,4 +315,4 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Assets]](/help/assets/developer-reference-material-apis.md)的[开发人员参考文档
+>*  [!DNL Assets][&#128279;](/help/assets/developer-reference-material-apis.md)的开发人员参考文档

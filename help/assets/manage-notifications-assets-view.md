@@ -72,7 +72,7 @@ ht-degree: 70%
 
    Assets视图中的![通知](assets/enable-notifications.png)
 
-1. 单击&#x200B;**[!UICONTROL 自定义]**以查看通知类别。
+1. 单击&#x200B;**[!UICONTROL 自定义]**&#x200B;以查看通知类别。
    Assets视图中的![通知](assets/enable-notification-categories.png)
 
 1. 选择需要通知您的通知类别。

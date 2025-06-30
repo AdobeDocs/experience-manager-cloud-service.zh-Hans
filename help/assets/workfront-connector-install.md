@@ -18,7 +18,7 @@ ht-degree: 1%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
 | AEM as a Cloud Service | 本文 |
 
-在[!DNL Adobe Experience Manager]中具有[!DNL Cloud Service]管理员访问权限的用户安装增强型连接器。 安装之前，请查看平台支持以及连接器](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的其他[先决条件。
+在[!DNL Adobe Experience Manager]中具有[!DNL Cloud Service]管理员访问权限的用户安装增强型连接器。 安装之前，请查看平台支持以及连接器[&#128279;](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的其他先决条件。
 
 >[!IMPORTANT]
 >
@@ -52,7 +52,7 @@ ht-degree: 1%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. 确保[!DNL Experience Manager]存储库中不存在以下叠加。 如果您在这些路径上预先存在叠加图，则需要删除叠加图，或合并两个路径之间的更改增量：
@@ -67,7 +67,7 @@ ht-degree: 1%
 1. 此安装要求了解如何在[!DNL Experience Manager]中将Maven项目设置为[!DNL Cloud Service]。 请使用以下资源了解如何在Maven项目中包含第三方软件包：
 
    * [在您的Maven项目中包含第三方包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party)。
-   * 使用 [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)部署[。
+   * 使用 [!DNL Cloud Manager][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)部署。
 
 要将加载项作为[!DNL Cloud Service]安装在[!DNL Experience Manager]中，请执行以下步骤：
 

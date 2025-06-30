@@ -51,7 +51,7 @@ Highlights upcoming features for Assets.
    ![为群组固定项目](assets/pin-items-for-groups.png)
 1. 单击&#x200B;**[!UICONTROL “固定”。]**
 
-   选择的项目会显示在“我的工作区”的&#x200B;**[!UICONTROL “快速访问”]**部分。
+   选择的项目会显示在“我的工作区”的&#x200B;**[!UICONTROL “快速访问”]**&#x200B;部分。
    ![工作区中的“任务”](assets/quick-access.png)
 
 **见解**

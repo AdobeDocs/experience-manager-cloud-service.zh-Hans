@@ -268,10 +268,10 @@ interface SelectedDestination {
 
 通过目标选择器，您可以在四种不同的视图中查看资源：
 
-* ![列表视图](assets/do-not-localize/list-view.png)[!UICONTROL **列表视图**]：列表视图在单个列中显示可滚动的文件和文件夹。
-* ![网格视图](assets/do-not-localize/grid-view.png)[!UICONTROL **网格视图**]：网格视图在行和列的网格中显示可滚动的文件和文件夹。
-* ![库视图](assets/do-not-localize/gallery-view.png)[!UICONTROL **库视图**]：库视图在居中锁定的水平列表中显示文件或文件夹。
-* ![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布视图**]：瀑布视图以桥的形式显示文件或文件夹。
+* ![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL **列表视图**]：列表视图在单个列中显示可滚动的文件和文件夹。
+* ![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL **网格视图**]：网格视图在行和列的网格中显示可滚动的文件和文件夹。
+* ![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL **库视图**]：库视图在居中锁定的水平列表中显示文件或文件夹。
+* ![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布视图**]：瀑布视图以桥的形式显示文件或文件夹。
 
 ### 信息 {#info}
 

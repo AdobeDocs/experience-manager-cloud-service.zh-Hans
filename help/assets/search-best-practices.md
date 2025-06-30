@@ -22,8 +22,8 @@ ht-degree: 2%
 
 以下是开始搜索之前要在Experience Manager中执行的基本步骤：
 
-* 在&#x200B;**管理员视图**中，转到Experience Manager中的Assets >文件，然后单击顶部栏上的搜索图标。 或者，使用正斜杠(/)打开“全搜索”字段。
-在**Assets视图**&#x200B;中，搜索栏显示在顶部，可以直接访问。
+* 在&#x200B;**管理员视图**&#x200B;中，转到Experience Manager中的Assets >文件，然后单击顶部栏上的搜索图标。 或者，使用正斜杠(/)打开“全搜索”字段。
+在&#x200B;**Assets视图**&#x200B;中，搜索栏显示在顶部，可以直接访问。
 * 已预选择`Location:Assets`和`Path:/content/dam`以将搜索范围限制为您的Experience Manager Assets存储库。 如果导航到任何其他文件夹，则`Path:/content/dam/<folder name>`将显示在全搜索字段中，以将搜索范围限制为当前文件夹。
 
 ## 基本搜索 {#basic-search}
