@@ -4,10 +4,10 @@ description: 了解元数据最佳实践以有效管理您的数字资源。
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 2%
+source-wordcount: '1384'
+ht-degree: 1%
 
 ---
 
@@ -17,40 +17,6 @@ aem metadata
 experience manager metadata-->
 
 # 元数据管理和最佳实践 {#metadata-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 要让您的企业脱颖而出，吸引更多客户，利用高质量的视觉效果（如图像、视频和其他数字资产）至关重要。 要实现此目的，您需要一个流程，用于向所有数字资源添加元数据，使其可轻松搜索。 元数据是提供有关数字资源的基本详细信息（包括资源的名称、类型、在存储库中的位置、修改日期和关联的标记）的数据。 元数据可简化资产管理，提高可搜索性和可访问性，并确保有效的版本控制。
 
@@ -131,7 +97,7 @@ experience manager metadata-->
 
 >[!NOTE]
 >
->了解如何[管理数字资源的元数据](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hans)。
+>了解如何[管理数字资源的元数据](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)。
 
 ### 与元数据策略一致
 
@@ -147,7 +113,7 @@ experience manager metadata-->
 * **有效使用控制词汇：**&#x200B;通过为标记使用标准化术语来实现控制词汇。 了解如何有效实施[AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md)。  <br>
 例如，在为图像标记主题以保持系统顺序时，始终使用诸如*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;之类的术语。
 
-* **保持准确性和完整性：**&#x200B;要保持元数据的一致性，准确性、完整性和跨各种源的一致性至关重要。
+* **保持准确性和完整性：**要保持元数据的一致性，准确性、完整性和跨各种源的一致性至关重要。
 例如，将元数据添加到PDF文档时，请验证诸如作者姓名和关键字等详细信息是否准确且完整。
 
 #### 视频：将批量元数据添加到资源
@@ -170,9 +136,9 @@ experience manager metadata-->
    1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 使用添加的关键字搜索资源。 该资源会出现在排名最前的搜索结果中。
 
-  了解如何[提升Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)中的搜索量。
+  了解如何[提升Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中的搜索量。
 
-* **自定义元数据字段：**&#x200B;自定义您的元数据字段以捕获有关资源的其他信息。 例如，为项目详细信息、版权信息或任何其他增强搜索功能的相关数据添加特定字段。 了解如何在Experience Manager Assets中编辑或添加自定义元数据[&#128279;](meta-edit.md)。
+* **自定义元数据字段：**&#x200B;自定义您的元数据字段以捕获有关资源的其他信息。 例如，为项目详细信息、版权信息或任何其他增强搜索功能的相关数据添加特定字段。 了解如何在Experience Manager Assets中编辑或添加自定义元数据](meta-edit.md)。[
 
 
 * **元数据验证：**&#x200B;对元数据条目实施验证检查以确保一致性和准确性。 使用受控词汇表可以使验证过程更加顺畅，减少条目不清晰或不一致的几率。 这可能涉及为某些元数据属性设置准则，以避免信息模糊或不一致。
@@ -200,4 +166,4 @@ experience manager metadata-->
 
 及早沟通目标、进展、里程碑和挑战，以接受所有利益相关者的投入和合作。 鼓励整个组织内的协作，创建高效的流程和重要的元数据。
 
-了解有关[元数据及其相关概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=zh-Hans)的更多信息，以便有效地管理Experience Manager元数据。
+了解有关[元数据及其相关概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)的更多信息，以便有效地管理Experience Manager元数据。

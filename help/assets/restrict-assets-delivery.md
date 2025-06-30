@@ -3,57 +3,14 @@ title: 使用具有OpenAPI功能的Dynamic Media限制资源投放
 description: 了解如何使用OpenAPI功能限制资源交付。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 7%
+source-wordcount: '1098'
+ht-degree: 0%
 
 ---
 
 # 使用具有OpenAPI功能的Dynamic Media限制资源投放 {#restrict-access-to-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
-
->[!AVAILABILITY]
->
->具有 OpenAPI 功能的 Dynamic Media 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
->
->[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager中的中央资产治理允许DAM管理员或品牌管理员使用OpenAPI功能管理对通过Dynamic Media提供的资产的访问。 他们可以通过在Adobe Identity Management System (IMS)用户的AEM as a Cloud Service创作服务上配置资源的特定元数据，将已批准的资源（精确到单个资源）限制为选定的[个System (IMS)用户](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)投放。
 
@@ -113,7 +70,7 @@ DAM作者还可以通过定义资产属性中可用的激活的开启或关闭�
 
 ## 受限资产的交付 {#delivery-restricted-assets}
 
-受限资产的交付基于访问资产的成功授权。 授权是通过[IMS持有者令牌](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/)&#x200B;(用于从[AEM Asset Selector](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)启动的请求的应用程序)或安全Cookie(如果您在AEM发布/预览服务中设置自定义身份提供程序，并在页面上设置Cookie创建和包含)进行的。
+受限资产的交付基于访问资产的成功授权。 授权是通过[IMS持有者令牌](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/)&#x200B;(用于从[AEM Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)启动的请求的应用程序)或安全Cookie(如果您在AEM发布/预览服务中设置自定义身份提供程序，并在页面上设置Cookie创建和包含)进行的。
 
 ### AEM创作或资产选择器请求的交付 {#delivery-aem-author-asset-selector}
 
@@ -125,8 +82,8 @@ DAM作者还可以通过定义资产属性中可用的激活的开启或关闭�
 >要详细了解如何在基于AEM Asset Selector的集成上启用IMS身份验证，请联系企业支持
 
 1. 对于非基于资产选择器的体验，具有OpenAPI功能的AEM as a Cloud Service和Dynamic Media当前支持服务器端API集成，并可生成IMS持有者令牌。
-   * 按照[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)的说明执行服务到服务器API集成，这些集成可以通过[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)检索IMS持有者令牌
-   * 在有限持续时间内，本地开发人员访问（不适用于生产用例）可通过按照[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)的说明生成[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)上身份验证的用户的短期IMS持有者令牌
+   * 按照[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)的说明执行服务到服务器API集成，这些集成可以通过[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)检索IMS持有者令牌
+   * 在有限持续时间内，本地开发人员访问（不适用于生产用例）可通过按照[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)的说明生成[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)上身份验证的用户的短期IMS持有者令牌
 
 1. 在发出[Search](search-assets-api.md)和[Delivery](deliver-assets-apis.md) API请求时，将获取的IMS持有者令牌添加到HTTP请求的&#x200B;**[!UICONTROL Authorization]**&#x200B;标头中（请确保其值带有&#x200B;**[!UICONTROL 持有者]**&#x200B;前缀）。
 
@@ -136,4 +93,4 @@ DAM作者还可以通过定义资产属性中可用的激活的开启或关闭�
 
 ### 在Publish服务上交付自定义身份提供程序 {#delivery-custom-identity-provider}
 
-可将AEM Sites、AEM Assets和具有OpenAPI许可证的Dynamic Media结合使用，允许在托管于AEM Publish或Preview服务的网站上配置受限的资产交付。 安全交付流利用浏览器Cookie建立用户的访问权限，并具有作为发布域子域的交付层的自定义域，是实施此用例的先决条件。 如果AEM Sites的发布和预览服务配置为使用[自定义身份提供程序(IdP)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，则必须在发布域发布用户的身份验证上设置一个名为`delivery-token`的新Cookie（封装用户的组成员资格）。 投放层从安全Cookie中提取授权材料并验证访问。 有关更多详细信息，请记录[企业支持票证](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)。
+可将AEM Sites、AEM Assets和具有OpenAPI许可证的Dynamic Media结合使用，允许在托管于AEM Publish或Preview服务的网站上配置受限的资产交付。 安全交付流利用浏览器Cookie建立用户的访问权限，并具有作为发布域子域的交付层的自定义域，是实施此用例的先决条件。 如果AEM Sites的发布和预览服务配置为使用[自定义身份提供程序(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，则必须在发布域发布用户的身份验证上设置一个名为`delivery-token`的新Cookie（封装用户的组成员资格）。 投放层从安全Cookie中提取授权材料并验证访问。 有关更多详细信息，请记录[企业支持票证](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)。

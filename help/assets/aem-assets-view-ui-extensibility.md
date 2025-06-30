@@ -4,48 +4,14 @@ description: 了解 [!DNL AEM Assets View]. [!DNL AEM Assets View] UI的UI可扩
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 6%
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 # 在[!DNL AEM Assets View]中启用用户界面可扩展性 {#AEM-Assets-View-UI-Extensibility}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets View]支持UI可扩展性，使您能够为[!DNL AEM Assets View]的开箱即用功能无法满足的特定工作流和业务要求将自定义UI组件添加到[!DNL Assets View] UI。 [!DNL AEM Assets View]的这个UI可扩展性功能增强了它的灵活性，使组织能够针对特定的工作流和要求调整界面。\
 您可以将扩展添加到&#x200B;**Asset**、**Folder**&#x200B;和&#x200B;**Collection**&#x200B;级别。 添加的扩展显示在&#x200B;**Asset**、**Collection**&#x200B;或&#x200B;**Folder** **[!UICONTROL Details]**&#x200B;页面的专用面板上。
@@ -63,7 +29,7 @@ ht-degree: 6%
 
 ## 在[!DNL Assets View]中查看UI扩展 {#ui-extensibility-panel-assets-view}
 
-在[!DNL Assets View]内，导航到资产、文件夹或收藏集的&#x200B;**[!UICONTROL 详细信息]**&#x200B;页面。 **[!UICONTROL 详细信息]**&#x200B;页面在专用面板上显示添加的UI扩展。
+在[!DNL Assets View]内，导航到资产、文件夹或收藏集的&#x200B;**[!UICONTROL 详细信息]**&#x200B;页面。 **[!UICONTROL 详细信息]**页面在专用面板上显示添加的UI扩展。
 ![我的工作区](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## 添加可扩展性组件的先决条件{#assets-view-ui-extensibility}
@@ -83,7 +49,7 @@ ht-degree: 6%
 1. 请参阅创建扩展中的[常见概念](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/)，了解为[!DNL AEM Assets View]开发UI扩展所需的基础。
 1. 将自定义侧面板添加到[!DNL Assets View]界面。 主机应用程序([!DNL Assets View])管理这些面板以处理UI交互，如切换和深层链接。 扩展使用`aem/assets/details/1`扩展点来集成指定属性的自定义面板，如面板ID、标题和内容URL。 开发人员使用`getPanels()`方法注册自定义面板，并构建显示自定义内容的路由。 有关详细实施（包括API引用和代码示例），请参阅[详细信息视图](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/)。
 1. 设置您的本地环境并创建您的第一个UI扩展，以在[!DNL Assets View]中亲身体验开发UI扩展的过程。 有关更多详细信息，请参阅[AEM Assets分步查看扩展开发](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)。
-1. 使用AIO CLI设置应用程序以生成基本扩展结构和所需代码。 有关详细信息，请参阅 [!DNL AEM Assets View][&#128279;](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的代码生成。
+1. 使用AIO CLI设置应用程序以生成基本扩展结构和所需代码。 有关详细信息，请参阅 [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的[代码生成。
 1. 在本地测试您的扩展，以确保它们在部署之前可按预期工作。 在完全隔离的环境中或以部分隔离的方式运行扩展，并将扩展连接到生产[!DNL AEM Assets View]以进行测试。 有关详细信息，请参阅[疑难解答 —  [!DNL AEM Assets View] 可扩展性](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)。
 
 ## 自定义Assets视图中的快速操作和操作栏 {#customize-quick-actions-and-actions-bar}

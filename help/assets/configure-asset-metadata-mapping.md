@@ -4,51 +4,14 @@ description: 在Adobe Workfront和Experience Manager as a Cloud Service应用程
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 6%
+source-wordcount: '1012'
+ht-degree: 4%
 
 ---
 
 # 配置Adobe Workfront和Experience Manager Assets之间的资源元数据映射 {#asset-metadata-mapping-workfront-aem-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 您可以在Adobe Workfront和Experience Manager as a Cloud Service应用程序之间映射资源元数据字段。 作为映射元数据字段的结果，在将资源从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资源元数据。
 
@@ -68,7 +31,7 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
 
 * 拥有Workfront和Experience Manager Assets as a Cloud Service应用程序的管理员访问权限。
 
-* [Workfront与Experience Manager Assets as a Cloud Service应用程序](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus)之间的集成。
+* [Workfront与Experience Manager Assets as a Cloud Service应用程序](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&_LANG=enus)之间的集成。
 
 ## 在Workfront中设置元数据映射 {#set-up-metadata-mapping}
 
@@ -128,7 +91,6 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
    1. 在&#x200B;**[!UICONTROL 字段标签]**&#x200B;字段中指定`Project Name`。
 
    1. 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中指定`./jcr:content/metadata/wm:projectName`。 作为指导，请使用以下模板在Experience Manger Assets中定义字段映射：
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       在Workfront中配置映射时，您已将`wm:projectName`个Experience Manager Assets字段映射到项目>命名Workfront字段。
@@ -151,13 +113,13 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
    1. 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中指定`./jcr:content/metadata/dc:description`。
 在Workfront中配置映射时，您已将`dc:description`个Experience Manager Assets字段映射到文档>描述Workfront字段。
 
-1. 点击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
    >[!VIDEO](https://video.tv.adobe.com/v/344314)
 
 ## 将元数据设置应用于图像文件夹 {#apply-metadata-settings-image-folder}
 
-在Experience Manager as a Cloud Service应用程序中配置元数据设置后，将这些设置应用到包含从Workfront应用程序[&#128279;](#send-image-workfront-assets)发送的图像的文件夹。
+在Experience Manager as a Cloud Service应用程序中配置元数据设置后，将这些设置应用到包含从Workfront应用程序](#send-image-workfront-assets)发送的图像的[文件夹。
 
 要将元数据设置应用到图像文件夹，请执行以下操作：
 

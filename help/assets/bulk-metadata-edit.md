@@ -1,52 +1,15 @@
 ---
 title: 在 [!DNL Assets View]中批量编辑元数据
-description: 了解如何为[!DNL ！中提供的多个资源更新一组预定义的标准元数据字段。 Assets视图]同时运行。
+description: 了解如何为[DNL！中提供的多个资源更新一组预定义的标准元数据字段。 Assets视图]同时运行。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 3%
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
 # 在[!DNL Assets View]中批量编辑元数据{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Assets View]的&#x200B;**[!DNL Bulk Metadata Edit]**&#x200B;功能允许您同时为多个资源文件编辑预定义的标准元数据字段集。 选择多个资源并一次批量更新其预定义的标准元数据集，而不是为每个资源单独更新这些标准元数据。 此功能可跨大型资产集保持标准元数据属性集的效率、一致性和准确性，从而提高这些资产的可搜索性和组织性。
 
@@ -64,8 +27,7 @@ ht-degree: 3%
    * **[!UICONTROL 作者]：**&#x200B;指定作者姓名。
    * **[!UICONTROL 关键字]：**&#x200B;添加提供有关资源的高层信息的特定术语或文本字符串，以增强资源的可发现性。 添加关键字并按&#x200B;**Enter**&#x200B;或&#x200B;**return**&#x200B;将另一关键字添加到列表。
    * **[!UICONTROL 标记]：**&#x200B;单击![批量元数据编辑](/help/assets/assets/tags-icon.svg)从可用选项中选择标记。 标记提供了有关资产的更具体信息并增强了它们的可发现性。 已应用于所选资源的标记会显示在&#x200B;**[!UICONTROL 属性]**&#x200B;面板中。 如果找不到相关标记，请创建这些标记并将其分配给选定的资源。 有关创建标记并将标记分配给资产的详细信息，请参阅[管理 [!DNL Assets view]](/help/assets/tagging-management-assets-view.md)中的标记。
-   * 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以将上述元数据更新应用于所选资源。 保存后，将附加&#x200B;**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**，而&#x200B;**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**&#x200B;和&#x200B;**[!UICONTROL 作者]**&#x200B;的更新详细信息将覆盖其现有详细信息。
-
+   * 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以将上述元数据更新应用于所选资源。 保存后，将附加&#x200B;**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**，而&#x200B;**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**&#x200B;和&#x200B;**[!UICONTROL 作者]**的更新详细信息将覆盖其现有详细信息。
      ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]
@@ -76,4 +38,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**、**[!UICONTROL 作者]**、**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**&#x200B;是可用于批量元数据编辑的标准元数据属性，而不考虑文件夹特定的元数据。 仅当这些元数据属性包含在应用于资源文件夹的元数据表单中时，它们才会显示在[!UICONTROL 资源详细信息页面]上。 如果在[!UICONTROL 资源详细信息页面]上找不到这些标准元数据属性，请编辑资源文件夹的元数据表单以包含这些属性。 请参阅 [!DNL Assets View][&#128279;](/help/assets/metadata-assets-view.md)中的元数据，了解如何创建或编辑元数据表单并将其应用到文件夹。
+>**[!UICONTROL 状态]**、**[!UICONTROL 到期日期]**、**[!UICONTROL 作者]**、**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 标记]**&#x200B;是可用于批量元数据编辑的标准元数据属性，而不考虑文件夹特定的元数据。 仅当这些元数据属性包含在应用于资源文件夹的元数据表单中时，它们才会显示在[!UICONTROL 资源详细信息页面]上。 如果在[!UICONTROL 资源详细信息页面]上找不到这些标准元数据属性，请编辑资源文件夹的元数据表单以包含这些属性。 请参阅 [!DNL Assets View]](/help/assets/metadata-assets-view.md)中的[元数据，了解如何创建或编辑元数据表单并将其应用到文件夹。

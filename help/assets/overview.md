@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 97%
+source-wordcount: '927'
+ht-degree: 100%
 
 ---
 
@@ -16,43 +16,6 @@ ht-degree: 97%
 # 在 AEM 中引入 Assets as a [!DNL Cloud Service] 数字资产管理 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云原生的 PaaS 解决方案，不仅可用于快速执行其数字资源管理和动态媒体运营来实现影响力，而且还可在始终最新、始终可用和不断学习的系统中使用新一代智能功能，例如 AI/ML。
 
@@ -99,7 +62,7 @@ Edge Delivery 使您可快速创建吸引人的网站，作者从中可快速地
 
 ## 与 Adobe Journey Optimizer 集成 {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 简化了客户的历程管理，利用智能决策和见解为客户提供全渠道营销活动。在使用 Journey Optimizer 设计消息时，您可以直接从 Journey Optimizer 界面中访问 Assets as a Cloud Service 存储库。用户可以使用 Experience Manager Assets 的嵌入式用户界面访问资源。有关更多信息，请参阅[使用 Experience Manager Assets 创建和管理资源](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=zh-Hans)。
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 简化了客户的历程管理，利用智能决策和见解为客户提供全渠道营销活动。在使用 Journey Optimizer 设计消息时，您可以直接从 Journey Optimizer 界面中访问 Assets as a Cloud Service 存储库。用户可以使用 Experience Manager Assets 的嵌入式用户界面访问资源。有关更多信息，请参阅[使用 Experience Manager Assets 创建和管理资源](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html)。
 
 ## 新 Assets 功能 {#whats-new-assets}
 

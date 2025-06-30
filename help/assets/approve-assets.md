@@ -3,57 +3,14 @@ title: 在Experience Manager中批准资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 11%
+source-wordcount: '1063'
+ht-degree: 7%
 
 ---
 
 # 批准[!DNL Experience Manager]中的资源
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
-
->[!AVAILABILITY]
->
->具有 OpenAPI 功能的 Dynamic Media 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
->
->[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 品牌经理和营销人员对品牌资产进行严格控制。 只有经过批准的最新版本资产可供使用，以确保所有渠道和应用程序的品牌一致性。
 
@@ -72,7 +29,7 @@ ht-degree: 11%
 1. 向下滚动并单击&#x200B;**[!UICONTROL 审核状态]**。
 1. 单击右侧面板上的&#x200B;**[!UICONTROL 规则]**&#x200B;选项卡。
 1. 取消选中&#x200B;**[!UICONTROL 禁用编辑]**。
-如果需要查看&#x200B;**[!UICONTROL 审阅状态]**&#x200B;字段映射到的属性，请导航到&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡，并查看&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中的`./jcr:content/metadata/dam:status`值。
+如果需要查看**[!UICONTROL 审阅状态]**&#x200B;字段映射到的属性，请导航到&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡，并查看&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中的`./jcr:content/metadata/dam:status`值。
 1. 将&#x200B;**[!UICONTROL 下拉]**&#x200B;字段从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖放到表单中的元数据分区。
 1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
    1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_审批目标_。
@@ -112,7 +69,7 @@ ht-degree: 11%
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**。
 1. 单击页面右上方的&#x200B;**[!UICONTROL 创建]**。
 1. 添加配置文件标题并单击&#x200B;**[!UICONTROL 创建]**。 已成功创建元数据配置文件。
-1. 选择新创建的元数据配置文件，然后单击&#x200B;**[!UICONTROL 编辑&#x200B;_(e)_]**。 <br>将打开&#x200B;**[!UICONTROL 编辑元数据配置文件]**&#x200B;表单，其中突出显示&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡。
+1. 选择新创建的元数据配置文件，然后单击&#x200B;**[!UICONTROL 编辑&#x200B;_(e)_]**。 <br>将打开&#x200B;**[!UICONTROL 编辑元数据配置文件]**表单，其中突出显示&#x200B;**[!UICONTROL 基本]**选项卡。
 1. 将&#x200B;**[!UICONTROL 单行文本字段]**&#x200B;从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖放到表单中的元数据分区。
 1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
    1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_已批准的Assets_。
@@ -173,7 +130,7 @@ ht-degree: 11%
 
 1. 选择&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中提供的&#x200B;**[!UICONTROL Dynamic Media with OpenAPI]**。
 
-1. 单击&#x200B;**[!UICONTROL 复制URL]**&#x200B;以复制资产的投放URL。
+1. 单击&#x200B;**[!UICONTROL 复制URL]**以复制资产的投放URL。
    ![动态演绎](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]

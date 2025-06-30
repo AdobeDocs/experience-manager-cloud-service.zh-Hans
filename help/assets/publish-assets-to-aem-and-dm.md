@@ -4,51 +4,14 @@ description: 通过 [!DNL Assets view] 中的快速发布，可同时或单独�
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, [!DNL Dynamic Media]
 role: User
-source-git-commit: 138f7ef2023399ce5da9fe80447ac45fd9542064
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 4%
+source-wordcount: '1053'
+ht-degree: 0%
 
 ---
 
 # 将Assets发布到[!DNL AEM and Dynamic Media]{#Publish-Assets-to-AEM-and-Dynamic-Media}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 通过[!DNL Experience Manager Assets]，您可以使用[!DNL Assets view]快速将资源发布到[!DNL Experience Manager]和[!DNL Dynamic Media]。 这可确保您管理资产，然后使用[[!DNL Assets view] 发布资产，而无需切换到 [!DNL Admin view]](/help/assets/overview.md##persona-based-experiences)。
 
@@ -78,7 +41,7 @@ ht-degree: 4%
 
 要在将资产上传到其[!DNL Dynamic Media Publish Mode]设置为&#x200B;**[!UICONTROL 激活时]**&#x200B;的文件夹时发布资产，请执行以下操作：
 
-1. 单击&#x200B;**[!UICONTROL 添加Assets]** > **[!UICONTROL 浏览]** > **[!UICONTROL 浏览文件]**&#x200B;以导航到相应的文件夹以上传资源。 **[!UICONTROL 发布选项]**&#x200B;部分在激活时&#x200B;**将**&#x200B;[!UICONTROL &#x200B; DM发布模式&#x200B;]&#x200B;**显示为**。
+1. 单击&#x200B;**[!UICONTROL 添加Assets]** > **[!UICONTROL 浏览]** > **[!UICONTROL 浏览文件]**&#x200B;以导航到相应的文件夹以上传资源。 **[!UICONTROL 发布选项]**&#x200B;部分在激活时&#x200B;]**将**[!UICONTROL  DM发布模式&#x200B;]**显示为**[!UICONTROL 。
    ![激活时上传图像](/help/assets/assets/upload-uactivation.svg)
 2. 选择&#x200B;**[!UICONTROL 发布到AEM和Dynamic Media]**，然后单击&#x200B;**[!UICONTROL 上传]**。 资产将同时发布到[!DNL AEM and Dynamic Media]。 要查看这些资源的更新发布状态，请参阅[检查发布状态](#check-publish-status)。
 

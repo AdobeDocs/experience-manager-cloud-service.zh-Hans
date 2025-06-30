@@ -4,51 +4,14 @@ description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Ado
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '3190'
-ht-degree: 10%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
 # 将数字资产作为[!DNL Cloud Service]添加到[!DNL Adobe Experience Manager][!DNL Assets] {#add-assets-to-experience-manager}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets]接受来自多个来源的多种数字资源。 它存储二进制文件和创建的演绎版，可以使用各种工作流和[!DNL Adobe Sensei]服务进行资产处理，允许跨多个表面通过多个渠道进行分发。
 
@@ -66,7 +29,7 @@ ht-degree: 10%
 |---------------------|----------------|-----------------|
 | [Assets控制台用户界面](#upload-assets) | 偶尔上传、轻松按压和拖动、查找器上传。 请勿使用上传许多资源。 | 所有用户 |
 | [上传API](#upload-using-apis) | 用于上传期间的动态决策。 | 开发人员 |
-| [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans) | 低流量资产摄取，但不适用于迁移。 | 管理员、营销人员 |
+| [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低流量资产摄取，但不适用于迁移。 | 管理员、营销人员 |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | 当创意人员和营销人员从支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | Creative，营销人员 |
 | [资源批量引入器](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔进行批量引入。 仅适用于支持的数据存储。 | 管理员、开发人员 |
 
@@ -178,20 +141,20 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 要上传更多文件，请使用以下方法之一。 另请参阅[用例和方法](#upload-methods-comparison)
 
 * [资源上传API](developer-reference-material-apis.md#asset-upload)：如有必要，请使用自定义上传脚本或使用API添加其他资源处理（例如，翻译元数据或重命名文件）的工具。
-* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans)：对于从本地文件系统上传资产的创意专业人员和营销人员非常有用。 使用它可上载本地可用的嵌套文件夹。
+* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)：对于从本地文件系统上传资产的创意专业人员和营销人员非常有用。 使用它可上载本地可用的嵌套文件夹。
 * [批量摄取工具](#asset-bulk-ingestor)：在部署[!DNL Experience Manager]时用于偶尔或最初摄取大量资源。
 
 ### 资产批量导入工具 {#asset-bulk-ingestor}
 
 此工具仅提供给管理员组，用于从Azure或S3数据存储中大规模摄取资产。 观看配置和摄取的视频演练。
 
->[!VIDEO](https://video.tv.adobe.com/v/341379/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 下图说明了将资产从数据存储摄取到Experience Manager时的各个阶段：
 
 ![批量摄取工具](assets/bulk-ingestion.png)
 
-**前提条件**
+**先决条件**
 
 需要来自Azure或AWS的外部存储帐户或存储段才能使用此功能。
 
@@ -234,7 +197,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 要使用&#x200B;**[!UICONTROL 资源目标文件夹]**&#x200B;字段在 DAM 中定义要导入资源的位置，请指定路径。例如：`/content/dam/imported_assets`。
 
-1. （可选）在&#x200B;**[!UICONTROL 元数据文件]**&#x200B;字段中指定要导入的元数据文件（以 CSV 格式提供）。在源Blob位置中指定CSV文件，并在配置批量导入工具时引用路径。 当您[批量导入和导出资产元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=zh-Hans)时，此字段引用的CSV文件格式与CSV文件格式相同。 如果选择&#x200B;**导入后删除源文件**&#x200B;选项，请使用&#x200B;**排除**、**包含MIME类型**&#x200B;或&#x200B;**按路径/文件筛选**&#x200B;字段筛选CSV文件。 您可以使用正则表达式在这些字段中筛选CSV文件。
+1. （可选）在&#x200B;**[!UICONTROL 元数据文件]**&#x200B;字段中指定要导入的元数据文件（以 CSV 格式提供）。在源Blob位置中指定CSV文件，并在配置批量导入工具时引用路径。 当您[批量导入和导出资产元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html)时，此字段引用的CSV文件格式与CSV文件格式相同。 如果选择&#x200B;**导入后删除源文件**&#x200B;选项，请使用&#x200B;**排除**、**包含MIME类型**&#x200B;或&#x200B;**按路径/文件筛选**&#x200B;字段筛选CSV文件。 您可以使用正则表达式在这些字段中筛选CSV文件。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。
 
@@ -389,7 +352,7 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 除了Web浏览器用户界面外，[!DNL Experience Manager]还支持桌面上的其他客户端。 它们还提供了上传体验，无需转至Web浏览器。
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)提供了从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的[!DNL Experience Manager]访问资源的权限。 您可以从这些桌面应用程序中直接从Adobe Asset Link用户界面将当前打开的文档上传到[!DNL Experience Manager]。
-* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans)可简化在桌面上使用资产的过程，而与资产的文件类型或处理这些资产的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件很有用，因为浏览器上传仅支持上传平面文件列表。
+* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)可简化在桌面上使用资产的过程，而与资产的文件类型或处理这些资产的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件很有用，因为浏览器上传仅支持上传平面文件列表。
 
 ## 上传时处理资源 {#process-when-uploaded}
 
@@ -453,7 +416,7 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hans)
+>* [[!DNL Adobe Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [关于 [!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 >* [资产上传的技术参考](developer-reference-material-apis.md#asset-upload)

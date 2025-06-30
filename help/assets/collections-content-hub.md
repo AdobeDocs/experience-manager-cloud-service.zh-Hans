@@ -3,60 +3,17 @@ title: 在Content Hub中管理收藏集
 description: 了解如何在Content Hub中管理收藏集
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: c98d5ba776f13549c4b82bdbe8f9220663ccb50e
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 9%
+source-wordcount: '1036'
+ht-degree: 3%
 
 ---
 
 # 管理[!DNL Content Hub]中的收藏集 {#manage-collections}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 与 Edge Delivery Services 集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用 Dynamic Media Prime 和 Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
-
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![管理收藏集](assets/manage-collection.png)
-
->[!AVAILABILITY]
->
->Content Hub 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
->
->[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 收藏集是指可在用户之间共享的一组资源。 收藏集可以包含来自不同位置的资产，同时保持其引用完整性。
 
@@ -130,7 +87,7 @@ ht-degree: 9%
 
 ### 筛选收藏集视图 {#filter-collections-view}
 
-通过Content Hub，可筛选收藏集视图，根据您的偏好缩小选项范围，轻松找到所需内容。 确保Content Hub[&#128279;](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的配置。
+通过Content Hub，可筛选收藏集视图，根据您的偏好缩小选项范围，轻松找到所需内容。 确保Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的[配置。
 
 要筛选收藏集视图，请转到&#x200B;**[!DNL Collections]**&#x200B;选项卡并导航到收藏集下拉列表。 从以下选项中进行选择：
 
@@ -177,7 +134,7 @@ ht-degree: 9%
 
 ## 共享收藏集中可用的资产 {#share-assets-available-within-collection}
 
-您还可以共享收藏集中可用的资产。 确保在Content Hub[&#128279;](configure-content-hub-ui-options.md#enable-public-link-sharing)中启用公共链接共享。 导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;选项卡。 选择收藏卡上的![共享图标](assets/share.svg)图标。 将复制共享链接。 您可以与收件人共享复制的链接。 了解有关[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资产的更多信息。
+您还可以共享收藏集中可用的资产。 确保在Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing)中[启用公共链接共享。 导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;选项卡。 选择收藏卡上的![共享图标](assets/share.svg)图标。 将复制共享链接。 您可以与收件人共享复制的链接。 了解有关[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资产的更多信息。
 
 Content Hub收藏集提供了全面的治理工具以实现有效的资产管理，包括可自定义的共享权限和协作功能。 从只读访问到完全管理控制，这些设置支持对资产分发进行精细管理。 单独或作为收藏集的一部分共享资产时，访问范围由分配给用户的收藏集当前访问级别确定。 或者，您无法共享专用收藏集。
 

@@ -4,51 +4,14 @@ description: 了解如何使用新的资源 UI（资源视图）批量导入资�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 89%
+source-wordcount: '1881'
+ht-degree: 90%
 
 ---
 
 # 使用资源视图批量导入资源  {#bulk-import-assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源从数据源导入到 AEM Assets。管理员不再需要将单个资源或文件夹上传到 AEM Assets。
 
@@ -170,7 +133,7 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
    >* 源文件夹必须位于目录的根目录下。 不支持文件夹路径。
 
 1. （可选）选择&#x200B;**[!UICONTROL “导入后删除源文件”]**&#x200B;选项，以在文件导入到 Experience Manager Assets 后，从源数据存储中删除原始文件。
-1. 选择&#x200B;**[!UICONTROL “导入模式”。]**&#x200B;选择&#x200B;**[!UICONTROL “跳过”]**、**[!UICONTROL “代替”]**，或者&#x200B;**[!UICONTROL 创建版本。]**&#x200B;跳过模式是默认模式，在该模式下，如果资源已经存在，则摄取器会跳过导入该资源。
+1. 选择&#x200B;**[!UICONTROL “导入模式”。]**&#x200B;选择&#x200B;**[!UICONTROL “跳过”]**、**[!UICONTROL “代替”]**，或者&#x200B;**[!UICONTROL 创建版本。]**跳过模式是默认模式，在该模式下，如果资源已经存在，则摄取器会跳过导入该资源。
    ![导入源详细信息](/help/assets/assets/bulk-import-source-details.png)
 
 1. （可选）在&#x200B;**[!UICONTROL 元数据文件]**&#x200B;字段中指定要导入的元数据文件（以 CSV 格式提供）。元数据源文件必须位于源文件夹中。单击&#x200B;**[!UICONTROL 下一步]**，导航至&#x200B;**[!UICONTROL 位置和过滤器]**。
@@ -209,7 +172,7 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
 ## 查看现有的批量导入配置 {#view-import-configuration}
 
 若要查看现有的批量导入内容，请选择左侧窗格中的&#x200B;**[!UICONTROL 批量导入]**&#x200B;选项。批量导入页面会显示，其中包含&#x200B;**[!UICONTROL 已执行导入]**&#x200B;列表。<br>
-您还可以从下拉选项中查看&#x200B;**[!UICONTROL 已保存的导入]**&#x200B;和&#x200B;**[!UICONTROL 计划的导入]**。
+您还可以从下拉选项中查看**[!UICONTROL 已保存的导入]**&#x200B;和&#x200B;**[!UICONTROL 计划的导入]**。
 
 ![保存批量导入配置](assets/bulk-import-options.png)
 

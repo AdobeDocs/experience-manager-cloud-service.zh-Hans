@@ -5,51 +5,14 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 84%
+source-wordcount: '1887'
+ht-degree: 85%
 
 ---
 
 # 微前端目标选择器 {#Overview}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 微前端目标选择器在您的应用程序中提供了一个用户界面，可以轻松地与 [!DNL Experience Manager Assets as a Cloud Service] 存储库集成。您可以搜索或浏览到 [!DNL Experience Manager Assets as a Cloud Service] 存储库中的相应文件夹，并从应用程序上传资源。
 
@@ -305,10 +268,10 @@ interface SelectedDestination {
 
 通过目标选择器，您可以在四种不同的视图中查看资源：
 
-* ![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL **列表视图**]：列表视图在单个列中显示可滚动的文件和文件夹。
-* ![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL **网格视图**]：网格视图在行和列的网格中显示可滚动的文件和文件夹。
-* ![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL **库视图**]：库视图在居中锁定的水平列表中显示文件或文件夹。
-* ![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布视图**]：瀑布视图以桥的形式显示文件或文件夹。
+* ![列表视图](assets/do-not-localize/list-view.png)[!UICONTROL **列表视图**]：列表视图在单个列中显示可滚动的文件和文件夹。
+* ![网格视图](assets/do-not-localize/grid-view.png)[!UICONTROL **网格视图**]：网格视图在行和列的网格中显示可滚动的文件和文件夹。
+* ![库视图](assets/do-not-localize/gallery-view.png)[!UICONTROL **库视图**]：库视图在居中锁定的水平列表中显示文件或文件夹。
+* ![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布视图**]：瀑布视图以桥的形式显示文件或文件夹。
 
 ### 信息 {#info}
 

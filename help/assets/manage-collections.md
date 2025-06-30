@@ -6,55 +6,18 @@ mini-toc-levels: 1
 feature: Collections, Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2398'
 ht-degree: 19%
 
 ---
 
 # 管理收藏集 {#manage-collections}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
-
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 收藏集是Adobe Experience Manager Assets中的一组资源。 使用收藏集可在用户之间共享资源。集合可以是静态集合或基于搜索结果的动态集合。
@@ -106,7 +69,7 @@ ht-degree: 19%
 您可以将资源从Assets UI拖到收藏集中。 您还可以创建收藏集的副本，并将资产拖到该处。
 
 1. 从Assets用户界面中，选择要添加到收藏集的资源。
-1. 将资源拖到收藏集&#x200B;**区域中的**&#x200B;拖放位置。 或者，从工具栏中选择&#x200B;**[!UICONTROL 目标收藏集]**&#x200B;图标。
+1. 将资源拖到收藏集&#x200B;]**区域中的**[!UICONTROL &#x200B;拖放位置。 或者，从工具栏中选择&#x200B;**[!UICONTROL 目标收藏集]**&#x200B;图标。
 1. 在&#x200B;**[!UICONTROL 添加到收藏集]**&#x200B;页面中，从工具栏中选择&#x200B;**[!UICONTROL 创建收藏集]**&#x200B;图标。 如果要将资源添加到现有收藏集，请从页面中选择它，然后选择&#x200B;**[!UICONTROL 添加]**。 默认情况下，将选择最近更新的集合。
 1. 在&#x200B;**[!UICONTROL 创建新收藏集]**&#x200B;对话框中，指定收藏集的名称。如果希望所有用户都可以访问该收藏集，请选择&#x200B;**[!UICONTROL 公共收藏集]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**&#x200B;以创建集合。
@@ -125,7 +88,7 @@ ht-degree: 19%
    >
    >如果选择&#x200B;**[!UICONTROL 公共]**，则创建智能收藏集后，所有具有“所有者”角色的人都可以使用该收藏集。 如果取消&#x200B;**[!UICONTROL Public]**&#x200B;选项，则DAM用户组不再与智能收藏集关联。
 
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以创建智能收藏集，然后关闭消息框以完成该过程。 新的智能收藏集也已添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以创建智能收藏集，然后关闭消息框以完成该过程。 新的智能收藏集也已添加到&#x200B;**[!UICONTROL 保存的搜索]**列表。
 “创建智能选 **[!UICONTROL 择”按钮的标签会变]** 为“编 **[!UICONTROL 辑智能选择”]**。 要编辑智能收藏集的设置，请从“文件和文 **[!UICONTROL 件夹]** ”列 **[!UICONTROL 表中选择“文件]** ”。 然后选择&#x200B;**[!UICONTROL 编辑智能选择]**&#x200B;按钮。
 
 ## 将资源添加到收藏集 {#add-assets-to-a-collection}
@@ -137,7 +100,7 @@ ht-degree: 19%
 >智能收藏集使用搜索查询来填充资源。 因此，对资源和文件夹的静态引用不适用于它们。
 
 1. 在Assets UI中，导航到要添加到收藏集的资源的位置。
-1. 选择资产并从工具栏中选择&#x200B;**[!UICONTROL 到收藏集]**&#x200B;图标。 或者，您可以将资产拖到收藏集&#x200B;**区域中的**&#x200B;放置。 当放置区域变为活动状态并且其标签更改为&#x200B;**[!UICONTROL 放置到“添加”]**&#x200B;时，释放鼠标按钮。
+1. 选择资产并从工具栏中选择&#x200B;**[!UICONTROL 到收藏集]**&#x200B;图标。 或者，您可以将资产拖到收藏集&#x200B;]**区域中的**[!UICONTROL &#x200B;放置。 当放置区域变为活动状态并且其标签更改为&#x200B;**[!UICONTROL 放置到“添加”]**&#x200B;时，释放鼠标按钮。
 1. 在&#x200B;**[!UICONTROL 添加到收藏集]**&#x200B;页面中，选择要将资产添加到的收藏集。
 1. 选择&#x200B;**[!UICONTROL 添加]**，然后关闭确认消息。 资产将会添加到收藏集。
 
@@ -228,7 +191,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->批量编辑方法适用于收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索[&#128279;](/help/assets/search-assets.md#metadata-updates)后批量更新元数据。
+>批量编辑方法适用于收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索](/help/assets/search-assets.md#metadata-updates)后[批量更新元数据。
 
 1. 从收藏集控制台中，选择要编辑的收藏集。
 1. 从工具栏中选择&#x200B;**[!UICONTROL 属性]**&#x200B;以打开所选收藏集的[!UICONTROL 属性]页面。

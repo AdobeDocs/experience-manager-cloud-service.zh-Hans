@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2891'
 ht-degree: 3%
 
 ---
 
 # 使用资产微服务和处理配置文件 {#get-started-using-asset-microservices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets与Edge Delivery Services的集成</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI可扩展性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新建</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>启用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜索最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>元数据最佳实践</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 开发人员文档</b></a>
-        </td>
-    </tr>
-</table>
 
 资产微服务提供使用云原生应用程序（也称为工作程序）进行可扩展和弹性资产处理。 Adobe管理各种服务，以优化各种资源类型和处理选项的处理。
 
@@ -76,7 +39,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [默认配置](#default-config) | 它按原样可用，无法修改。 此配置提供基本的演绎版生成功能。 | <ul> <li>[!DNL Assets]用户界面使用的标准缩略图（48、140和319像素） </li> <li> 大型预览（Web呈现版本 — 1280像素） </li><li> 元数据和文本提取。</li></ul> |
 | [自定义配置](#standard-config) | 由管理员通过用户界面配置。 通过扩展默认选项，为生成演绎版提供了更多选项。 扩展现成选项以提供不同的格式和演绎版。 | <ul><li>FPO（仅用于置入）演绎版。 </li> <li>更改图像的文件格式和分辨率</li> <li> 有条件地应用于配置的文件类型。 </li> </ul> |
-| [自定义配置文件](#custom-config) | 管理员通过用户界面配置通过自定义应用程序使用自定义代码来调用[Asset Compute服务](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/introduction)。 以云原生的可伸缩方法支持更复杂的需求。 | 查看[允许的用例](#custom-config)。 |
+| [自定义配置文件](#custom-config) | 管理员通过用户界面配置通过自定义应用程序使用自定义代码来调用[Asset Compute服务](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。 以云原生的可伸缩方法支持更复杂的需求。 | 查看[允许的用例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -102,9 +65,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **MIME类型包含规则**：在处理具有特定MIME类型的资源时，将首先根据演绎版规范的排除MIME类型值检查MIME类型。 如果与该列表匹配，则不会为资源(阻止列表)生成此特定演绎版。 否则，将针对包含的MIME类型检查MIME类型，如果它与列表匹配，则生成演绎版(允许列表)。
 
-* **特殊FPO演绎版**：将来自[!DNL Experience Manager]的大型资源放入[!DNL Adobe InDesign]文档时，创意专业人士会在[放置资源](https://helpx.adobe.com/cn/indesign/using/placing-graphics.html)后等待相当长的时间。 同时，用户被阻止使用[!DNL InDesign]。 这会中断创作流并对用户体验产生负面影响。 Adobe允许首先在[!DNL InDesign]文档中临时放置小型演绎版，之后可按需使用全分辨率资源替换小型演绎版。 [!DNL Experience Manager]提供仅用于放置的演绎版。 这些FPO呈现版本的文件大小较小，但纵横比相同。
+* **特殊FPO演绎版**：将来自[!DNL Experience Manager]的大型资源放入[!DNL Adobe InDesign]文档时，创意专业人士会在[放置资源](https://helpx.adobe.com/indesign/using/placing-graphics.html)后等待相当长的时间。 同时，用户被阻止使用[!DNL InDesign]。 这会中断创作流并对用户体验产生负面影响。 Adobe允许首先在[!DNL InDesign]文档中临时放置小型演绎版，之后可按需使用全分辨率资源替换小型演绎版。 [!DNL Experience Manager]提供仅用于放置的演绎版。 这些FPO呈现版本的文件大小较小，但纵横比相同。
 
-处理配置文件可以包含FPO（仅用于放置）演绎版。 请参阅[!DNL Adobe Asset Link] [文档](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)以了解是否需要为处理配置文件启用它。 有关详细信息，请参阅[Adobe Asset Link完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
+处理配置文件可以包含FPO（仅用于放置）演绎版。 请参阅[!DNL Adobe Asset Link] [文档](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)以了解是否需要为处理配置文件启用它。 有关详细信息，请参阅[Adobe Asset Link完整文档](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
 
 ### 创建标准配置文件 {#create-standard-profile}
 
@@ -127,7 +90,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/32910?quality=9&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
 <!-- This image was removed per cqdoc-15624, as requested by engineering.
@@ -136,7 +99,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自定义用户档案和用例 {#custom-config}
 
-[!DNL Asset Compute Service]支持各种用例，包括默认处理和处理Adobe特定的格式，如Photoshop文件。 它还允许实施自定义或特定于组织的处理。 以前所需的DAM更新资产工作流自定义可自动处理，或通过处理用户档案配置的方式处理。 如果这些处理选项无法满足您的业务需求，Adobe建议开发和使用[!DNL Asset Compute Service]来扩展默认功能。 有关概述，请参阅[了解可扩展性和何时使用它](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/extend/understand-extensibility)。
+[!DNL Asset Compute Service]支持各种用例，包括默认处理和处理Adobe特定的格式，如Photoshop文件。 它还允许实施自定义或特定于组织的处理。 以前所需的DAM更新资产工作流自定义可自动处理，或通过处理用户档案配置的方式处理。 如果这些处理选项无法满足您的业务需求，Adobe建议开发和使用[!DNL Asset Compute Service]来扩展默认功能。 有关概述，请参阅[了解可扩展性和何时使用它](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility)。
 
 >[!NOTE]
 >
@@ -144,7 +107,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可以将图像、视频、文档和其他文件格式转换为不同的呈现形式，包括缩略图、提取的文本和元数据以及存档。
 
-开发人员可以使用[!DNL Asset Compute Service]到[为支持的用例创建自定义应用程序](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/extend/develop-custom-application)。 [!DNL Experience Manager]可以使用管理员配置的自定义配置文件从用户界面调用这些自定义应用程序。 [!DNL Asset Compute Service]支持以下调用外部服务的用例：
+开发人员可以使用[!DNL Asset Compute Service]到[为支持的用例创建自定义应用程序](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application)。 [!DNL Experience Manager]可以使用管理员配置的自定义配置文件从用户界面调用这些自定义应用程序。 [!DNL Asset Compute Service]支持以下调用外部服务的用例：
 
 * 使用[!DNL Adobe Photoshop]的[ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/)并将结果保存为演绎版。
 * 调用第三方系统以进行更改，例如PIM系统。
@@ -162,8 +125,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 在“名称”文本字段中，键入所需的格式副本文件名，然后提供以下信息。
 
    * 每个演绎版的文件名和支持的文件扩展名。
-   * App Builder自定义应用的[端点URL](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/extend/deploy-custom-application)。 应用程序必须来自Experience Manager帐户所在的相同组织。
-   * 将服务参数添加到[可将额外信息或参数传递给自定义应用程序](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/extend/develop-custom-application#extend)。
+   * App Builder自定义应用的[端点URL](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application)。 应用程序必须来自Experience Manager帐户所在的相同组织。
+   * 将服务参数添加到[可将额外信息或参数传递给自定义应用程序](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend)。
    * 包含和排除的MIME类型可将处理限制为几种特定的文件格式。
 
 1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
@@ -218,7 +181,7 @@ Asset Compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 对于需要使用处理配置文件无法实现的额外资产处理情况，可以向配置添加额外的后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。
 
-在微服务处理完成后，[!DNL Experience Manager]自动运行后处理工作流，或者[自动启动工作流](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/configuring/auto-start-workflows)（如果已配置）。 无需手动添加工作流启动器即可触发工作流。 示例包括：
+在微服务处理完成后，[!DNL Experience Manager]自动运行后处理工作流，或者[自动启动工作流](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/auto-start-workflows)（如果已配置）。 无需手动添加工作流启动器即可触发工作流。 示例包括：
 
 * 用于处理资产的自定义工作流步骤。
 * 集成以将元数据或属性从外部系统添加到资源，例如产品或流程信息。
@@ -317,9 +280,9 @@ Asset Compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 >[!MORELIKETHIS]
 >
->* [Asset Compute服务简介](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/introduction)。
->* [了解可扩展性以及何时使用它](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/extend/understand-extensibility)。
->* [如何创建自定义应用程序](https://experienceleague.adobe.com/zh-hans/docs/asset-compute/using/extend/develop-custom-application)。
+>* [Asset Compute服务简介](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。
+>* [了解可扩展性以及何时使用它](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility)。
+>* [如何创建自定义应用程序](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application)。
 >* [各种用例支持的MIME类型](/help/assets/file-format-support.md)。
 
 <!-- TBD: 
