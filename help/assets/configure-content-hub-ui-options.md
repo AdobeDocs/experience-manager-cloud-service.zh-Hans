@@ -118,7 +118,7 @@ Content Hub允许管理员配置在搜索资源时显示的过滤器。 执行�
    >
    >仅当存储库中至少有一个资源与筛选条件匹配时，新筛选器才会显示在“搜索”页面上。
 
-同样，您可以单击每个可用筛选器旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑标签，或者单击删除图标来删除任何现有筛选器。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
+同样，您可以单击每个可用筛选器旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑标签，或者单击删除图标来删除任何现有筛选器。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 在Content Hub上![配置UI筛选器](assets/configuration-filter.png)
 
 “搜索”页上将显示在“配置用户界面”中启用的过滤器：
@@ -148,14 +148,14 @@ Content Hub上的![资源属性](assets/asset-details-page-content-hub.png)
 
 ### 资产卡 {#asset-card}
 
-您还可以配置需要在&#x200B;**资产卡**上显示的密钥元数据属性，最多可显示6个字段。
+您还可以配置需要在&#x200B;**资产卡**&#x200B;上显示的密钥元数据属性，最多可显示6个字段。
 资产卡上的![密钥元数据](/help/assets/assets/asset-card-metadata.png)
-执行以下步骤可配置元数据属性以将其显示在**[!UICONTROL 资产卡片]**&#x200B;上：
+执行以下步骤可配置元数据属性以将其显示在&#x200B;**[!UICONTROL 资产卡片]**&#x200B;上：
 
 1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**资产卡**。
 2. 单击&#x200B;**添加元数据**。 显示&#x200B;**添加资源卡元数据**&#x200B;对话框。
 3. 在&#x200B;**标签**&#x200B;字段中指定元数据名称，并在&#x200B;**元数据**&#x200B;字段中选择元数据属性。
-4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**以应用更改，以便新属性显示在资源详细信息页面上。
+4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**&#x200B;以应用更改，以便新属性显示在资源详细信息页面上。
    ![资产卡](/help/assets/assets/configuration-asset-card.png)
 同样，单击每个可用属性旁边可用的![编辑](/help/assets/assets/edit-content-hub.svg)以进行任何必需的修改，或单击![删除](/help/assets/assets/delete-content-hub.svg)删除任何现有的元数据属性。 完成所有修改后单击&#x200B;**保存**&#x200B;以应用更改。
 
@@ -169,7 +169,7 @@ Content Hub上的![资源属性](assets/asset-details-page-content-hub.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改，以便新的元数据属性显示在元数据字段列表中。
 
-同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
+同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 在Content Hub上![配置UI搜索](assets/configuration-search.png)
 
 ### 品牌化 {#configure-branding-content-hub}
@@ -194,8 +194,8 @@ Content Hub上的![资源属性](assets/asset-details-page-content-hub.png)
 
 #### 将标题和正文文本添加到横幅并更改文本颜色{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**部分中的相应字段将标题和正文添加到横幅中。
-单击**[!UICONTROL 横幅文本颜色]**旁边的方框可从横幅文本的拾色器中选择文本颜色，或在拾色器方框旁边的字段中指定颜色的十六进制代码。
+在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**&#x200B;部分中的相应字段将标题和正文添加到横幅中。
+单击&#x200B;**[!UICONTROL 横幅文本颜色]**&#x200B;旁边的方框可从横幅文本的拾色器中选择文本颜色，或在拾色器方框旁边的字段中指定颜色的十六进制代码。
 ![横幅文本内容中心](/help/assets/assets/banner-text-content-hub.png)
 
 #### 更改主颜色和次颜色{#Change-the-primary-and-secondary-color}
@@ -234,7 +234,7 @@ Content Hub上的![资源属性](assets/asset-details-page-content-hub.png)
 
 ### 演绎版 {#renditions-content-hub}
 
-演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关[呈现形式的更多信息。
+演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关呈现形式的更多信息。
 
 若要禁用，请执行以下步骤：
 
@@ -262,7 +262,7 @@ Content Hub上的![资源属性](assets/asset-details-page-content-hub.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
-同样，您可以单击每个URL旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑链接，或者单击删除图标来删除任何现有的URL。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
+同样，您可以单击每个URL旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑链接，或者单击删除图标来删除任何现有的URL。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 Content Hub上的![配置UI自定义链接](assets/configuration-custom-links.png)
 
 自定义链接在Content Hub主页的“分析”选项卡旁边显示为新选项卡。
