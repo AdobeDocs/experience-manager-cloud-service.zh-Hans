@@ -4,10 +4,10 @@ description: 了解使用OpenAPI的tAEM内容片段交付
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
@@ -76,9 +76,11 @@ AEM与AEM CDN Fastly集成。 这意味着在发布层上提供的JSON响应将�
 
 此API不考虑在Dispatcher配置端定义、专门用于GraphQL的CORS允许的源。
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## API速率限制 {#api-rate-limits}
+
+API允许新请求的速率为每环境每秒最多200个请求。
+
+一旦超过此限制，API就会开始发送429错误。 这些错误必须由任何客户端应用程序处理，并且失败的请求在指数回退重试后重试。
 
 <!-- 
 ## Limitations {#limitations}
