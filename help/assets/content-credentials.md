@@ -3,7 +3,7 @@ title: Content Credentials集成
 description: Content Credentials集成到AEM Assets并在Assets View中起作用，它可以提供资产历史记录的上下文，包括资产的创建方式以及参与创建该资产的用户。 就像数字内容的营养标签一样，Content Credentials可以帮助提高透明度并与受众建立信任。
 role: User
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -36,12 +36,9 @@ Adobe Experience Manager Assets现在支持Content Credentials，使用户能够
 1. 导航到文件夹，然后选择所需的资产。
 1. 单击&#x200B;**详细信息**&#x200B;并从最右边的窗格中选择`Cr pin`。 Content Credentials选项卡显示有关该资源的以下信息。
    1. **生成的图像：**&#x200B;应用Content Credentials的日期和时间。
-   1. **内容摘要：**&#x200B;指示资源是部分还是完全由AI生成，或者是如何编辑的。
-
+   1. **内容摘要：**指示资源是部分还是完全由AI生成，或者是如何编辑的。
       ![内容凭据](/help/assets/assets/content-credentials1.png)
-   1. **进程：**&#x200B;详细介绍用于生成资源的应用程序、设备和AI工具(如Adobe Firefly)，以及随后进行的更改。
-
+   1. **进程：**详细介绍用于生成资源的应用程序、设备和AI工具(如Adobe Firefly)，以及随后进行的更改。
       ![进程](/help/assets/assets/CR-Process.png)
-   1. **关于此Content Credentials：**&#x200B;颁发者的名称以及颁发的日期和时间。
-
+   1. **关于此Content Credentials：**颁发者的名称以及颁发的日期和时间。
       ![颁发者](/help/assets/assets/CR-issuer.png)

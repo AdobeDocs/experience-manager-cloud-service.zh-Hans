@@ -3,7 +3,7 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载单个或多个资源及其演绎版。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 您可以使用[!DNL Content Hub]下载单个或多个资源及其可用演绎版。
 
-查看Content Hub[&#128279;](#types-of-renditions)中可用的类型的节目。
+查看Content Hub](#types-of-renditions)中可用的[类型的演绎版。
 
 ## 下载一个或多个资源及其演绎版 {#download-asset-renditions}
 
@@ -27,11 +27,11 @@ ht-degree: 1%
 
    或者，单击资产缩略图并选择![下载](/help/assets/assets/download-icon.svg)以选择并查看对话框上的可用演绎版，然后再下载。
 
-1. 要下载多个资源，请选择这些资源，单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**，然后在&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框中查看选定资源的列表。 单击资产旁边的![取消选择](/help/assets/assets/Close.svg)以将其从列表中取消选择。 选择一个或多个格式副本并单击&#x200B;**[!UICONTROL 下载]**&#x200B;以将它们下载为单个ZIP文件。 选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;和&#x200B;**[!UICONTROL 静态演绎版]**&#x200B;可下载每个所选资源的所有可用静态演绎版和智能裁切演绎版。
+1. 要下载多个资源，请选择这些资源，单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**，然后在&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框中查看选定资源的列表。 单击资产旁边的![取消选择](/help/assets/assets/Close.svg)以将其从列表中取消选择。 选择一个或多个格式副本并单击&#x200B;**[!UICONTROL 下载]**&#x200B;以将它们下载为单个ZIP文件。 选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;和&#x200B;**[!UICONTROL 静态演绎版]**可下载每个所选资源的所有可用静态演绎版和智能裁切演绎版。
    ![下载多个资源](/help/assets/assets/download-multiple-assets-CH.png)
 在下载过程中，您可以继续使用[!DNL Content Hub]。 在下载过程中，Content Hub不会中断您的工作流。
    ![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载它们。
+如果**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**以下载它们。
    ![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]

@@ -4,10 +4,10 @@ description: 如何访问  [!DNL Assets View]，其登录体验，支持的用�
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 * **步骤 2**：[搜索](/help/assets/search-assets-view.md)和[下载](/help/assets/manage-organize-assets-view.md#download)资源。
 * **步骤 3**：[管理和组织](/help/assets/manage-organize-assets-view.md)资源。
 
-要使用 [!DNL Assets View]，请通过 [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) 登录。在登录时，选择 `Company or School Account`。要获得访问权限，请联系您组织的管理员。
+要使用 [!DNL Assets View]，请通过 [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) 登录。在登录时，选择 `Company or School Account`。要获得访问权限，请联系贵组织的管理员。
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
@@ -60,13 +60,13 @@ ht-degree: 89%
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何开始使用资源视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=zh-Hans)
+* [观看视频，了解如何开始使用资源视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.
