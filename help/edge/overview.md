@@ -4,23 +4,21 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
-workflow-type: ht
-source-wordcount: '1321'
-ht-degree: 100%
+source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 37%
 
 ---
 
 
 # Edge Delivery Services 概述 {#edge-delivery-services}
 
-利用 Edge Delivery Services，AEM 能够提供可提高参与和转化的卓越体验。AEM 通过投放可快速创作并开发且极具影响力的体验实现这一点。这是一组可组合的服务，这些服务构成一个快速开发环境，以使作者可快速更新和发布，并且快速推出新站点。因此，借助 Edge Delivery Services，可提高转化率、降低成本并为内容大幅提速。
+## 什么是Edge Delivery Services？ {#what-is-edge}
 
-通过使用 Edge Delivery Services，您可以：
+Edge Delivery Services是一个现代化的内容交付框架，可重新设想网站的构建和交付方式，针对速度、简洁性和可扩展性进行优化。 它是Adobe Experience Manager的核心部分，通过在网络边缘将渲染和交付推送到更接近用户的位置，实现更快的数字体验。
 
-* 快速创建 Lighthouse 分数优异的网站，并通过 Operational Telemetry 持续监控网站性能。
-* 通过分离内容来源而提高创作效率。开箱即用，您可以使用通用编辑器进行 AEM 创作，也可以使用基于文档的创作。这样即可在同一网站上使用多个内容源。
-* 使用一个内置的试验框架，通过该框架，可快速地创建测试、不影响性能地执行测试并快速地发布到测试获胜方的生产环境。
+它不是内容交付网络(CDN)的替代产品，而是与您自己的CDN或随附的[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md)无缝集成。
 
 >[!TIP]
 >
@@ -28,95 +26,79 @@ ht-degree: 100%
 >
 >如果您希望立即动手实践，只需[参考 aem.live 上的教程](https://www.aem.live/developer/ue-tutorial)，即可在 30 分钟内启动一个包含 AEM 创作功能的 Edge Delivery Services 项目。
 
-## 敏捷响应业务需求 {#agile-reaction}
 
-作为长期公认的行业领导者，Adobe 知道能够为客户快速创建和发布新的、有意义的内容是多么重要。市场已经明确了扩大内容创作规模所面临的常见挑战，包括：
+## 为什么选择Edge Delivery Services？ {#why-edge}
 
-1. **对内容的需求持续增长。**
-   * 需要培养新的内容作者来满足这一需求。
-   * 内容创建过程必须在整个业务范围内有效扩展。
-   * 作者必须能够对不断变化的趋势做出快速反应。
-1. **需要全渠道内容。**
-   * 无论内容传递如何，都需要布局控制。
-   * 作者需要被授权直接更改内容布局。
-1. **提高内容投资回报率的压力越来越大。**
-   * 作者本身需要有优化自己创作的内容的能力。
+### 提高可发现性和流量 {#increase-traffic}
 
-事实证明，这些趋势在整个行业都是一致的。但是，每个项目的个体要求必然会有所不同。任何 Edge Delivery Services 项目的目标都是专注于找到适合您的用户的解决方案。
+Edge Delivery网站是针对LLM优化的搜索引擎(SEO)和创成引擎优化(GEO)。 这确保在自然流量的所有现有和即将到来的源头上具有高可见性和可发现性。 **性能优先的端对端体系结构**&#x200B;可确保客户获得愉快的体验，从而积极地影响参与。
 
-1. **注重价值而不是功能。** - 确定最优化的工作流程来为您的作者服务，而不是迷失在 AEM 的扩展功能集中。
-1. **充分利用 AEM 的灵活性。** - AEM 功能不需要在真空中使用。根据用例使用您需要的功能。
-1. **利用作者的专业知识。** - 从一开始就让真正的内容作者参与到项目中，以确保通过实现合理的功能来提供他们所需的价值。
+### 开发人员效率 {#developer-efficientcy}
 
-通过关注作者的价值，您的 Edge Delivery Services 项目可以满足内容创建者面临的现代行业需求，并快速提供内容以取悦您的客户。
+只需几天或几周即可上线，而无需几个月或几年！ Edge Delivery提供了&#x200B;**现代Web开发人员**&#x200B;喜爱的所有工具：GitHub、具有自动重新加载功能的本地开发、性能、简单性，并且没有复杂性：无转换、无捆绑包、无配置、无开销。
 
-## 为内容创作者提供灵活的创作工具 {#overview}
+Edge Delivery的简单性不要求您使用复杂框架、工具或流程，这些都是AI代码创建的理想选择。 使用纯HTML、现代化CSS和vanilla JavaScript，以前所未有的速度创建卓越的体验。 专注于工作，减少花在培训和学习新工具上的时间。
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您既可以使用[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)进行 [AEM 内容管理](/help/sites-cloud/authoring/author-publish.md)和内容创作，也可以使用[基于文档的创作。](https://www.aem.live/docs/authoring)
+Edge Delivery使每个开发人员都能获得100的Lighthouse分数。
 
-下图展示了如何在 Microsoft Word（基于文档的创作）中编辑内容并将其发布到 Edge Delivery Services，以及如何使用通用编辑器进行 AEM 内容创作。
+### 支持多个内容源 {#multiple-content-sources}
 
-![Edge Delivery 架构](assets/AEM-with-EDS-publishing-simple2.png)
+来自各种解决方案的内容可以直接与Edge Delivery集成，**包括所有现有AEM实例**。 作者可以从任何系统(如SharePoint)管理内容并将内容&#x200B;**发布到Edge Delivery**，以便使用他们已知道的工具获得更快的速度。
+
+### 可组合架构 {#composable-architeture}
+
+无头式或Headful均可按正确的格式提供正确的内容，并添加正确的修饰以使其成为在任何渠道中脱颖而出的体验。
+
+## 它的工作原理 {#how-does-it-work}
+
+Edge Delivery Services 是一组可组合的服务，使您在网站上创作内容时具有高度的灵活性。它将AEM Publish/Dispatcher和使用AEM核心组件构建体验的传统方式替换为多云SaaS解决方案和纯前端开发方法。
+
+![Edge Delivery 架构](assets/AEM-with-EDS-architecture.png)
 
 Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储库管理和部署代码。新内容可立即添加，而不经过重建过程。
 
-### 使用通用编辑器进行 AEM 创作{#wysiwyg-authoring}
+## 创作 {#authoring}
 
-通用编辑器是一个所见即所得 (WYSIWYG) 的可自定义的一站式场所，可通过视觉预览在上下文中实时编辑内容。
+### In-context editing {#in-context-editing}
 
-* 使用通用编辑器进行 AEM 创作，您可以提高创作效率，无论是无头还是有头创作。
+WYSIWYG [通用编辑器](/help/implementing/universal-editor/introduction.md)是一个可自定义的一站式位置，可用于编辑具有可视化预览的实时和上下文内容。
+
+* 通过AEM创作和通用编辑器，您可以提高Headless或Headful的创作效率。
 * 您可以利用 AEM 全面的内容管理功能，包括工作流程和治理。
-* 利用众多扩展点来支持您自己的流程和集成。
+* 您可以利用大量扩展点来支持您自己的流程和集成。
 * 您可以使用 GitHub 中的 CSS 和 JavaScript 开发您网站的功能。
 
 ![使用通用编辑器进行 AEM 创作](assets/wysiwyg-authoring.png)
 
-开始使用通用编辑器和 Edge Delivery Services 进行 AEM 创作：
+### 基于文档的编辑 {#document-based-editing}
 
+[另一种方法是基于文档的创作](https://www.aem.live/docs/authoring)，其中内容作为文档进行管理。 Microsoft Word是一个很受欢迎的选择，因为许多企业都将SharePoint放在初始内容创建的位置。 无需学习新工具，即可直接从SharePoint和Word发布内容，从而消除了将内容复制并粘贴到AEM中的麻烦。 没有SharePoint的客户还可以使用Google Drive作为替代方法。
+
+## 操作遥测 {#telemetry}
+
+Adobe Experience Manager使用[操作遥测](https://www.aem.live/docs/operational-telemetry)来收集发现并修复Adobe Experience Manager支持的站点上的功能和性能问题所必须的操作数据。 使用遥测数据可用来诊断性能问题和衡量试验的有效性。 操作遥测通过[采样](https://www.aem.live/docs/operational-telemetry#operational-telemetry-data-is-sampled)（只监视所有页面查看的一小部分）和[明智地排除个人身份信息](https://www.aem.live/docs/operational-telemetry#what-data-is-being-collected) (PII)来保护访客的隐私。
+
+## 开始浏览 {#start-exploring}
+
+开始将AEM创作与通用编辑器和Edge Delivery Services结合使用：
+
+* Edge Delivery Services文档[Edge Delivery Services](https://www.aem.live)
 * 有关使用通用编辑器进行 AEM 创作的概述，请参阅 aem.live 文档中的文档[为 Edge Delivery Services 进行 AEM 创作](https://www.aem.live/docs/aem-authoring)。
 * 有关开发人员概述，请参阅 aem.live 文档中的文档[快速入门 - 通用编辑器开发人员教程](https://www.aem.live/developer/ue-tutorial)。
-
-### 基于文档的创作 {#document-based}
-
-通过基于文档的创作，您可以直接使用 Microsoft Word 或 Google Docs 中的内容，以便这些来源成为您网站上的页面。此外，标题、列表、图像、字体元素都可以从初始源转移到网站中。
-
-* 通过基于文档的创作，每个营销人员都可以使用已知的创作工具（Microsoft Word, Google Docs 等）快速创建内容。
-* 通过允许直接在源文档中创作、审查和发布，简化了内容创建。
-* 由于使用已知工具，内容作者无需任何入职培训，从而提高了内容速度。
-* 您可以使用 GitHub 中的 CSS 和 JavaScript 开发您网站的功能。
-
-![基于文档的创作](assets/document-based-authoring.png)
-
-基于文档的创作文档中的进一步阅读内容：
-
-* 有关如何开始使用 Edge Delivery 的详细信息，请参阅 [aem.live 文档的“构建”部分。](https://www.aem.live/docs/#build)
-* 要了解如何使用 Edge Delivery 创作和发布内容，请参阅 [aem.live 文档的“发布”部分。](https://www.aem.live/docs/authoring)
-* 要了解如何正确启动您的网站项目，请参阅 [aem.live 文档的“启动”部分](https://www.aem.live/docs/#launch)
-
-### 决定你的创作方法 {#authoring-method}
-
-AEM 的灵活性可确保满足您的创作需求。Adobe 可以帮助您确定最适合您要求的方法。
-
-* 始终让内容作者参与决策。
-* 可以实现多种创作方法。
-* 事后您可以随时改变您的创作方法。
-* 您不需要在实施之前做出决定，而应该将其作为实施的一部分。
 
 ## Edge Delivery Services 和其他 Adobe Experience Cloud 产品 {#edge-other-products}
 
 Edge Delivery Services 是 Adobe Experience Manager 的一部分。因此，Edge Delivery Services 和 AEM Sites 可以在同一个域中共存，这是大型网站的常见用例。此外，您的 AEM Sites 页面可以无缝使用来自 Edge Delivery Services 的内容，反之亦然。
 
-请参阅 aem.live 文档中的文档[快速入门 - 通用编辑器开发人员教程](https://www.aem.live/developer/ue-tutorial)，了解如何使用 AEM 和 Edge Delivery Services 启动您自己的项目进行创作。
-
-您还可以将 Edge Delivery Services 与 [Adobe Target](https://www.aem.live/developer/target-integration)、[Operational Telemetry](https://www.aem.live/developer/rum) 结合使用，以诊断网站的使用情况和性能，还可以与[启动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)结合使用。
+您还可以将Edge Delivery Services与[Adobe Target](https://www.aem.live/developer/target-integration)和[Launch.](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)一起使用
 
 ## 从 Adobe 获取帮助 {#getting-help}
 
-Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
+Adobe提供三层来帮助您使用Edge Delivery Services：
 
 * 利用[社区资源](#community-resources)进行一般查询。
 * 访问您的[产品协作渠道](#collaboration-channel)以解决特定问题。
-* [记录支持工单以](#support-ticket)解决重大和关键问题。
+* [记录支持票证](#support-ticket)以解决合同支持SLA **中的主要和关键问题**。
 
 ### 访问社区资源 {#community-resources}
 
@@ -124,14 +106,6 @@ Adobe 致力于为您提供最佳社区参与度以及有关 Edge Delivery Servi
 
 * 请在[Experience League 社区](https://adobe.ly/3Q6kTKl)参与提问、分享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/支持者寻求帮助并实时与志同道合的人交流。
 * 加入[Discord 频道](https://discord.gg/aem-live)，通过这个更休闲的平台可实时互动和快速交流想法。
-
-### 如何访问您的产品协作渠道 {#collaboration-channel}
-
-考虑到与用户建立的直接沟通渠道的作用，所有 AEM 项目都将在启动时建立一个 Slack 频道以快速获得关键更新和针对体验质量的大规模报告。您会从 Adobe 收到一条加入您组织特有的 Slack 频道的邀请。
-
-有关更多信息，请参阅[使用 Slack 机器人](https://www.aem.live/docs/slack)文档。
-
-您可以通过已配置的产品协作渠道与 Adobe 产品团队互动，回答有关产品使用或最佳实践的问题。没有服务水平目标 (SLT) 与通过该产品协作渠道进行的对话关联。
 
 ### 记录支持工单 {#support-ticket}
 
