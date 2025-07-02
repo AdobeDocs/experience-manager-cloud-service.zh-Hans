@@ -4,9 +4,9 @@ description: 了解使用OpenAPI的tAEM内容片段交付
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
+source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '551'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ AEM与AEM CDN Fastly集成。 这意味着在发布层上提供的JSON响应将�
 
 API允许新请求的速率为每环境每秒最多200个请求。
 
-一旦超过此限制，API就会开始发送429错误。 这些错误必须由任何客户端应用程序处理，并且失败的请求在指数回退重试后重试。
+一旦超过此限制，API将开始发送[429错误](https://www.rfc-editor.org/rfc/rfc6585#section-4)响应。 这些错误必须由任何客户端应用程序处理，并且失败的请求在指数回退重试后重试。 HTTP响应带有特定的标头`Retry-After`，该标头会向客户端指示再次发送请求之前需要等待的时间。
 
 <!-- 
 ## Limitations {#limitations}
