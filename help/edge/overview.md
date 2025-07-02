@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
+source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 37%
@@ -53,7 +53,7 @@ Edge Delivery使每个开发人员都能获得100的Lighthouse分数。
 
 Edge Delivery Services 是一组可组合的服务，使您在网站上创作内容时具有高度的灵活性。它将AEM Publish/Dispatcher和使用AEM核心组件构建体验的传统方式替换为多云SaaS解决方案和纯前端开发方法。
 
-![Edge Delivery 架构](assets/AEM-with-EDS-architecture.png)
+![Edge Delivery 架构](assets/aem-with-eds-architecture.png)
 
 Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储库管理和部署代码。新内容可立即添加，而不经过重建过程。
 
