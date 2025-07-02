@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1654'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 63%
 
 您可以通过 [!DNL Assets view] 简单易用的用户界面，执行各种数字资源管理 (DAM) 任务。添加资源之后，您可以搜索、下载、移动、复制、重命名、删除、更新和编辑资源。
 
-使用 [!DNL Assets view] 完成以下资源管理任务。选择资源时，顶部的工具栏会显示以下选项。
+使用 [!DNL Assets view] 完成以下资源管理任务。选择某个资源时，顶部的工具栏显示以下选项。
 
 ![选中资源时的工具栏选项](assets/toolbar-image-selected.png)
 
@@ -150,7 +150,7 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
 
 1. 选择资源并单击工具栏中的&#x200B;**[!UICONTROL 详细信息]**。
 
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 状态]**&#x200B;下拉列表中选择资源状态。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 状态]**下拉列表中选择资源状态。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
 如果您的环境配置了具有 OpenAPI 功能的 Dynamic Media，则 Experience Manager Assets 会在您将资产标记为 `Approved`时立即生成一个公共 URL。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
@@ -169,7 +169,7 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
 
 1. 如果您在步骤2中选择了&#x200B;**已批准**，请选择一个批准目标。 可能的值包括“交付”和“Content Hub”。
 
-   * **投放**&#x200B;是下拉菜单中的默认选项，如果将资产和[&#128279;](/help/assets/dynamic-media-open-apis-overview.md)Dynamic Media均启用了Experience Manager Assets，则它将资产发布到[Content Hub](/help/assets/product-overview.md)和OpenAPI。
+   * **投放**&#x200B;是下拉菜单中的默认选项，如果将资产和[Dynamic Media均启用了Experience Manager Assets，则它将资产发布到[Content Hub](/help/assets/product-overview.md)和OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)。
 
    * 选择&#x200B;**Content Hub**&#x200B;会将资源仅发布到Content Hub。 仅当Content Hub启用了Experience Manager Assets时，它才会显示为选项。
 
@@ -231,11 +231,11 @@ Assets视图还允许您为存储库中可用的资源设置到期日期。 然�
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 

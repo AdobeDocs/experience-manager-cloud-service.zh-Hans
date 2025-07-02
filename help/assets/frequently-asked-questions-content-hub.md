@@ -2,10 +2,10 @@
 title: Content Hub 常见问题 (FAQ)
 description: 获取有关 Content Hub 的一些最常见问题 (FAQ) 的答复。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ## 什么是 Content Hub？ {#what-is-content-hub}
 
-Content Hub是Adobe Experience Manager Assets as a Cloud Service的一项功能。
+Content Hub 是 Adobe Experience Manager Assets as a Cloud Service 的一项功能。
 
 Content Hub 使更广泛的团队能够通过直观的门户轻松发现相关的、经过批准的资产，并快速根据他们的需求进行调整。此外，Content Hub 还提供了一种引入机制，允许用户在将资产上传到 DAM 时轻松地进行自助服务。这直接满足了组织对更高内容创建速度的需求，同时保持了品牌一致性并遵守了适当的保障措施。
 
@@ -84,7 +84,7 @@ Content Hub 是 Adobe 提供和维护的一项功能，它没有任何需要通�
    >
    >如果用户在两个 Admin Consoles 中被分配到 Express 和 Assets 产品轮廓，则需要有相同的电子邮件地址并使用一个商业的&#x200B;**企业或学校**&#x200B;帐户，而不能是&#x200B;**个人**&#x200B;帐户。理想的配置是将两个 Admin Console 都设置为&#x200B;**联合 ID**，并在它们之间设置信任关系，以确保用户获得无缝的单点登录体验。一些 Express 计划（例如 Express Teams）不支持 Federated ID/单点登录。
 
-除了正确的产品授权外，Content Hub 中的 Adobe Express 集成还要求被分配的用户至少对支持 Content Hub 的 Assets 作者环境具有[!UICONTROL 可编辑]权限，并且至少在 **[!UICONTROL # /content/dam/hydrated-assets/]** 文件夹层级结构中具有该权限，这样 Content Hub 用户可以在其中保存他们用 Express 创建的内容。请参阅管理员视图（触屏 UI）中的[权限管理](/help/security/touch-ui-principal-view.md)或者简化的 [Assets 视图中的权限管理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
+除了正确的产品授权外，Content Hub 中的 Adobe Express 集成还要求被分配的用户至少对支持 Content Hub 的 Assets 作者环境具有[!UICONTROL 可编辑]权限，并且至少在 **[#UICONTROL /content/dam/hydrated-assets/]** 文件夹层级结构中具有该权限，这样 Content Hub 用户可以在其中保存他们用 Express 创建的内容。请参阅管理员视图（触屏 UI）中的[权限管理](/help/security/touch-ui-principal-view.md)或者简化的 [Assets 视图中的权限管理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 我可以设置 Content Hub，以便我的组织的品牌指南显示为主页上的关联吗？ {#content-hub-setup-brand-guidelines}
 

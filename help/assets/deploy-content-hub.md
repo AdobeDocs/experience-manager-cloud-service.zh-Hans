@@ -3,7 +3,7 @@ title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源和Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 6%
@@ -89,7 +89,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 ### Admin Console上的Content Hub实例和产品配置文件{#content-hub-instance-product-profile}
 
-使用Cloud Manager[&#128279;](#enable-content-hub)为Assets as a Cloud Service启用Content Hub后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
+使用Cloud Manager](#enable-content-hub)为Assets as a Cloud Service启用Content Hub[后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
 
 ![Content Hub的新实例](assets/new-instance-content-hub.png)
 
@@ -125,7 +125,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
    Admin Console显示AEM as a Cloud Service的两个产品配置文件：管理员和用户。
-1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
+1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
    ![管理员产品配置文件](assets/aem-cs-admin-product-profile.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。

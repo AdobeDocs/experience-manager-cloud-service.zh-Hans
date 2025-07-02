@@ -4,10 +4,10 @@ description: 上传资产到 [!DNL Assets view]，查看上传状态，以及解
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 您可以使用以下方法上传一个或多个资产或包含资产的文件夹：
 
 * 将资产或文件夹拖动到用户界面上，然后按照屏幕上的说明操作。
-* 在工具栏中单击&#x200B;**[!UICONTROL 添加Assets]**&#x200B;选项并将一些文件添加到上传对话框。
+* 在工具栏中单击&#x200B;**[!UICONTROL 添加资产]**&#x200B;选项并将一些文件添加到上传对话框。
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
@@ -102,10 +102,10 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)

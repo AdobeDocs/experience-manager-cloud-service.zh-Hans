@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Adobe Experience Manager as a [!DNL Cloud Service] 提供了一种云原生方法来利用 Experience Manager 应用程序和功能。这种新架构的关键元素之一是由资源微服务提供支持的资源摄取和处理。资源微服务使用云服务来对资源进行可扩展的弹性处理。Adobe 管理云服务以实施对不同的资源类型和处理选项的最优处理。云原生资源微服务的主要好处是：
 
-* 可扩展的体系结构，允许对资源密集型操作进行无缝处理。
+* 可扩展架构，允许无缝处理资源密集型操作。
 * 高效索引和文本提取，不影响 Experience Manager 环境的性能。
 * 最大限度地减少对用于在 Experience Manager 环境中控制资源处理的工作流的需求。这将释放资源，最大限度地减少 Experience Manager 上的负载，并提供可扩展性。
 * 提高了资源处理的弹性。处理非典型的文件（例如，损坏的文件或超大文件）时出现的潜在问题再也不会影响部署的性能。
@@ -97,5 +97,5 @@ Experience Manager 客户端是产品的一部分，默认情况下都支持使�
 >* [开始使用资源微服务](asset-microservices-configure-and-use.md)
 >* [支持的文件格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hans)
+>* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [关于直接二进制访问的 Apache Oak 文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
