@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 924fa9e731935ca43387801d10ddd339929cc3d4
+source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
 workflow-type: tm+mt
-source-wordcount: '6320'
+source-wordcount: '6325'
 ht-degree: 99%
 
 ---
@@ -228,8 +228,8 @@ ht-degree: 99%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
-         + [2025.05.21发行说明](/help/release-notes/universal-editor/2025/2025-05-21.md)
-         + [2025.04.04发行说明](/help/release-notes/universal-editor/2025/2025-04-04.md)
+         + [2025.05.21 版发行说明](/help/release-notes/universal-editor/2025/2025-05-21.md)
+         + [2025.04.04 版发行说明](/help/release-notes/universal-editor/2025/2025-04-04.md)
          + [2025.03.10 版发行说明](/help/release-notes/universal-editor/2025/2025-03-10.md)
          + [2025.02.25 版发行说明](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [2025.02.17 版发行说明](/help/release-notes/universal-editor/2025/2025-02-17.md)
@@ -700,6 +700,7 @@ ht-degree: 99%
       + [AEM Assets 视图 UI 扩展性](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [概述](/help/assets/product-overview.md)
+      + [Content Hub的新增功能](/help/assets/whats-new.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
       + [将品牌认可的资产上传或导入至 Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [配置 Content Hub 用户界面](/help/assets/configure-content-hub-ui-options.md)
@@ -1113,7 +1114,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
-   + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+   + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
    + [最佳实践——设置和使用](/help/headless/best-practices-setup-use.md)
    + 设置 {#setup}
       + [简介](/help/headless/setup/introduction.md)
@@ -1169,7 +1170,7 @@ ht-degree: 99%
          + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
          + [可选——如何使用 AEM 创建单页面应用程序](/help/journey-headless/developer/create-spa.md)
-         + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+         + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
       + Headless 内容架构师历程  {#architect}
          + [AEM Headless 内容架构师历程概述](/help/journey-headless/architect/overview.md)
          + [使用 AEM 对 Headless 进行内容建模——简介](/help/journey-headless/architect/introduction.md)
