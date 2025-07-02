@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 83%
+source-wordcount: '1768'
+ht-degree: 99%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 83%
 * SITES-19754：Edge Delivery 与通用编辑器集成失败时，新增可读性高的错误提示信息。
 * SITES-23499：Edge Delivery 与通用编辑器：支持为区块选项使用多个字段。
 * SITES-23518：Edge Delivery 与通用编辑器：支持 Edge Delivery 专属资产的呈现。
-* SITES-24436：内容片段Rest API：引入了本地缓存，以加快重复引用的检索。
-* SITES-25155：内容片段Rest API：删除模型列表中已弃用的“enabledForFolder”查询参数。
+* SITES-24436：内容片段 REST API：引入本地缓存机制，加快重复引用的检索速度。
+* SITES-25155：内容片段 REST API：已移除模型列表中的已弃用查询参数 “enabledForFolder”。
 * SITES-25913：Content Fragments Rest API：在启动发布工作流前执行资源的限时验证。
 * SITES-25976：MSM 转出后，体验片段中的链接未调整。
 * SITES-26271：Content Fragments Rest API：将 GET Variation 端点切换为使用 BFS 遍历方式。
@@ -46,16 +46,16 @@ ht-degree: 83%
 * SITES-27775：优化发布过程中的引用搜索（启用元数据延迟加载）。
 * SITES-27782：Edge Delivery 与通用编辑器：新增特定的发布者-订阅者实现机制，用于将内容发布至 Edge Delivery（抢先体验）。
 * SITES-27792：Edge Delivery 与通用编辑器：新增专用的 Edge Delivery Service 配置模板。
-* SITES-28557：内容片段Rest API：允许使用通过`references=direct`调用`/cf/fragments/{fragmentId}`检索到的ETags修补内容片段。
+* SITES-28557：内容片段 REST API：现在支持使用通过调用 `/cf/fragments/{fragmentId}` 并携带 `references=direct` 获取的 ETag，对内容片段进行 Patch 更新。
 * SITES-28683：支持 MSM LiveRelationship 搜索跳过高级状态检查。
-* SITES-29601：内容片段Rest API：验证长文本字段的内容片段引用。
-* SITES-29614：内容片段Rest API：使用`/cf/workflows/{workflowInstanceId}`端点检索工作流，其中workflowInstanceIda是发布请求返回的id。
-* SITES-29615：内容片段Rest API：列出使用`GET /cf/batch`通过POST `/cf/batch`创建的所有批次请求。
-* SITES-29874：内容片段Rest API：现在可检索内容片段的长文本字段中的引用并进行水合。
+* SITES-29601：内容片段 REST API：新增对长文本字段中内容片段引用的校验功能。
+* SITES-29614：内容片段 REST API：通过 `/cf/workflows/{workflowInstanceId}` 端点检索工作流，其中 workflowInstanceId 是发布请求返回的 ID。
+* SITES-29615：内容片段 REST API：使用 `GET /cf/batch` 列出通过 POST `/cf/batch` 创建的所有批处理请求。
+* SITES-29874：内容片段 REST API：现在支持检索并填充内容片段长文本字段中的引用内容。
 * SITES-29930：Content Fragments Rest API：为内容片段发布工作流新增量度统计。
 * SITES-29986：Content Fragments Rest API：支持内容片段模型的技术命名方式。
 * SITES-30088：Content Fragments Rest API：当 filterReferencesByStatus 为空时，将跳过引用检索。
-* SITES-30126：内容片段Rest API：CF发布性能改进：用最小的检查替换了资源是否为片段的检查。
+* SITES-30126：内容片段 REST API：优化了内容片段发布性能，将判断资源是否为片段的校验替换为最小化检查。
 * SITES-30328：Edge Delivery 与通用编辑器：新增支持从 Sidekick 进行预览的功能。
 * SITES-30445：Content Fragments Rest API：内容片段模型 UI 架构：新增控制可折叠组件初始状态的选项。
 * SITES-30604：Content Fragments Rest API：支持在新版 UI 中采用模型元数据架构。
@@ -63,12 +63,12 @@ ht-degree: 83%
 * SITES-30886：Content Fragments Rest API：基于工作流元数据中存储的片段 UUID，实现获取内容片段端点的 GET 工作流。
 * SITES-31005：优化 Rollout Job 用户界面，以显示执行进度。
 * SITES-31020：优化 Live Copy 创建作业的用户界面，支持显示执行进度。
-* SITES-31111：内容片段Rest API：允许变量修补程序API接受内容片段启动项中的内容片段引用。
-* SITES-31343：内容片段Rest API：按日期向列出批处理请求的端点添加筛选和分页。
-* SITES-31472：删除大型 Launch 时可能导致存储库暂停响应。
-* SITES-31641：内容片段Rest API：将属性添加到模型字段，用于存储与扩展相关的动态映射。
+* SITES-31111：内容片段 REST API：变体更新 API 现已支持在内容片段发布版本中使用内容片段引用。
+* SITES-31343：内容片段 REST API：为批处理请求列表端点新增按日期过滤和分页功能。
+* SITES-31472：删除大型发布版本（Launch）可能导致存储库暂停响应。
+* SITES-31641：内容片段 REST API：在模型字段中新增属性，用于存储与扩展相关的动态映射数据。
 * SITES-31677：自定义工作区现已支持将 AEM 内容片段导出至 Target。
-* SITES-31770：内容片段Rest API：PATCH性能改进。
+* SITES-31770：内容片段 REST API：提升了 PATCH 操作的性能。
 * SITES-31782：Content Fragments Rest API：为本地资产添加描述字段。
 * SITES-32175：允许在创建 Live Copy 和 MSM 页面转出过程中进行中间提交。
 
@@ -97,7 +97,7 @@ ht-degree: 83%
 * SITES-25235：筛选器轨道的内容加载提示未被屏幕阅读器播报。
 * SITES-25254：在视口宽度为 320px 时，Carousel 模态窗口中出现水平滚动条。
 * SITES-25433：Edge Delivery 与通用编辑器：修复多语言网站结构中页面版本的渲染问题。
-* SITES-26064：内容片段Rest API：修复了在后端创建片段并获取`AccessDeniedException`时返回的状态代码。
+* SITES-26064：内容片段 REST API：修复了在创建片段时后端出现 `AccessDeniedException` 错误时返回的状态码问题。
 * SITES-26890：在使用键盘导航时，“表头范围”在“发布管理”页面中无可见的键盘焦点。
 * SITES-29075：Live Copy 概览在高访问量网站上无法正常工作。
 * SITES-29514：Edge Delivery 与通用编辑器：创建新站点时，GitHub/Project URL 字段改为必填。
@@ -124,16 +124,16 @@ ht-degree: 83%
 * SITES-30899：“稍后转出”选项在未选择日期时仍允许继续。
 * SITES-30947：转出期间，因 Blueprint 缺少 “behavior” 属性导致空指针异常。
 * SITES-31157：Content Fragments Rest API：在特定场景中 PATCH 请求失败。
-* SITES-31162：内容片段Rest API：修复了`ModelFieldMapper`中`DateTimeField`字段的强制转换问题。
-* SITES-31174：内容片段Rest API：标记未与发布请求一起发布。
+* SITES-31162：内容片段 REST API：修复了 `ModelFieldMapper` 中 `DateTimeField` 字段的类型转换问题。
+* SITES-31174：内容片段 REST API：标签未随发布请求一同发布的问题已修复。
 * SITES-31272：无法通过 PageManager.copy 创建资产语言副本。
 * SITES-31327：Content Fragments Rest API：移除 GET 片段请求中的 ETag 验证。
 * SITES-31387：重新启用幽灵组件继承时出现 JavaScript 错误：“ns.ui.alert 不是函数”。
-* SITES-31454：内容片段Rest API：放松片段引用字段的模式，使其也接受UUID。
+* SITES-31454：内容片段 REST API：放宽片段引用字段的格式限制，现已支持 UUID。
 * SITES-31455：Content Fragments Rest API：修复同一内容片段模型不同端点间的 ETag 不一致问题。
 * SITES-31459：Content Fragments Rest API：当存在内容引用字段时，CF 的 Live Copy 无法编辑。
 * SITES-31467：页面编辑器中的 contexthub.authoring-hook.js 抛出 JavaScript 错误。
-* SITES-31487：内容片段Rest API：允许为根文件夹调用权限端点。
+* SITES-31487：内容片段 REST API：现已支持对根文件夹调用权限端点。
 * SITES-31621：Edge Delivery 与通用编辑器：从为 Live Copy 的电子表格中移除空行。
 * SITES-31676：撰写或删除组件后，页面底部出现空白区域。
 * SITES-31822：ClassicUI 中复选框标签缺失且 HTML 被编码显示。
@@ -146,7 +146,7 @@ ht-degree: 83%
 
 ### 已知问题 {#known-issues-21331}
 
-无。
+* SITES-33177：作为逗号分隔字符串存储的节样式已损坏。
 
 ### 已弃用的功能和 API {#deprecated-21331}
 
