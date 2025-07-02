@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ ht-degree: 0%
 
 您还可以检查控制台窗口以查看提交到服务器的数据：
 
-在控制台窗口![Inspect数据](/help/forms/assets/custom-function-submit-data-console-data.png)
+![在控制台窗口中检查数据](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## 覆盖表单提交成功和错误处理程序
 
@@ -513,6 +513,15 @@ function testRemoveInstance(globals)
 
 ![删除面板](/help/forms/assets/custom-function-delete-panel.gif)
 
+## 已知问题
+
+* 自定义函数不支持JavaScript正则表达式文本。 在执行期间，在自定义函数中使用正则表达式文本会导致错误。 例如：
+  `const pattern = /^abc$/;`
+
+  要确保兼容性，请在自定义函数中使用RegExp构造函数。
+
+  `const pattern = new RegExp("^abc$");`
+重构正则表达式以使用RegExp构造函数确保一致且可靠的执行。
 
 ## 疑难解答
 

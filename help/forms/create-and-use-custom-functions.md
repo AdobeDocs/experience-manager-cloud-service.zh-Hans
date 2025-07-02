@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | 本文 |
 
 AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们允许根据预定义的标准动态更改表单行为。 通过自定义函数，开发人员还可以实施复杂的验证逻辑、执行动态计算，以及根据用户交互或预定义标准控制表单元素的显示或行为。
@@ -214,6 +214,16 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 ```
 
 如果用户没有将任何JavaScript注释添加到自定义函数，则该自定义函数不会列在自适应表单的规则编辑器中。
+
+## 已知问题
+
+* 自定义函数不支持JavaScript正则表达式文本。 在执行期间，在自定义函数中使用正则表达式文本会导致错误。 例如：
+  `const pattern = /^abc$/;`
+
+  要确保兼容性，请在自定义函数中使用RegExp构造函数。
+
+  `const pattern = new RegExp("^abc$");`
+重构正则表达式以使用RegExp构造函数确保一致且可靠的执行。
 
 ## 后续步骤
 
