@@ -4,7 +4,7 @@ description: 具有 OpenAPI 功能的 Dynamic Media 常见问题解答
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
 ht-degree: 100%
 
