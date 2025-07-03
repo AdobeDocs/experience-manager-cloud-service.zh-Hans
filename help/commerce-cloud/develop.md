@@ -27,7 +27,7 @@ ht-degree: 6%
 
 ## 使用AEM as a Cloud Service SDK进行本地开发 {#local}
 
->[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/347034/?quality=12&learn=on&captions=chi_hans)
 
 建议使用本地开发环境来处理CIF项目。 为AEM as a Cloud Service提供的CIF加载项也可用于本地开发。 可从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载。
 
