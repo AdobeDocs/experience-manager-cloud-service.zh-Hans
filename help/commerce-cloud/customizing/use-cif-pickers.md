@@ -49,7 +49,7 @@ AEM内容和Commerce创作提供了一系列创作工具，可帮助AEM作者和
 >[!CAUTION]
 >
 >`cifproductfield`组件需要`cif.shell.picker`客户端库。 要将clientlib添加到对话框，您可以使用extraClientlibs属性。
->>[!CAUTION]
+>&#x200B;>[!CAUTION]
 >
 >从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`sku`或`slug`作为产品标识符。 Adobe仍仅对使用CIF核心组件版本1.x的项目支持`id`。
 
@@ -79,7 +79,7 @@ AEM内容和Commerce创作提供了一系列创作工具，可帮助AEM作者和
 >[!CAUTION]
 >
 >与`cifproductfield`组件相同，`cifcategoryfield`组件还需要`cif.shell.picker` clientlib。 要将clientlib添加到对话框，您可以使用`extraClientlibs`属性。 请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)。
->>[!CAUTION]
+>&#x200B;>[!CAUTION]
 >
 >从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`uid`或`urlPath`作为类别标识符。 Adobe继续仅对使用CIF核心组件版本1.x的项目支持`id`和`idAndUrlPath`。
 
