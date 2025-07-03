@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1082'
 ht-degree: 9%
 
 ---
@@ -33,6 +33,12 @@ ht-degree: 9%
 | ✓ | 支持 |
 | * | 请参阅表下方的说明 |
 | - | 不适用 |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets]仅支持本文中列出的文件格式。
+>>某些功能可能与其他格式配合使用，但这些格式不受正式支持。 结果可能不一致，并且功能可能无法按预期工作。
+>>要确保一致和可靠的结果，请仅使用支持的格式。
 
 ## Adobe格式 {#adobe-formats}
 
@@ -192,7 +198,7 @@ ht-degree: 9%
 
 ## 提示和限制 {#limitations-and-tips}
 
-* 目前，元数据提取的文件大小限制约为15 GB。 上传大型资源时，有时元数据提取操作失败。
+* 目前，元数据提取的文件大小限制约为15 GB。 上传大型资源时，元数据提取操作有时会失败。
 
 ## Dynamic Media — 支持的用于转码的输入视频格式 {#video-dynamic-media-transcoding}
 
@@ -246,7 +252,7 @@ ht-degree: 9%
 
 ## Dynamic Media — 不支持的栅格图像格式 {#unsupported-raster-image-formats-dm}
 
-[!DNL Dynamic Media]不支持&#x200B;*的*&#x200B;光栅图像文件格式的以下子类型：
+*不支持*&#x200B;的[!DNL Dynamic Media]光栅图像文件格式的以下子类型：
 
 * IDAT区块大小大于100 MB的PNG文件。
 * psb文件。
