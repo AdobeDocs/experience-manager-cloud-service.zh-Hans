@@ -30,7 +30,7 @@ Classic CIF 及其依赖项不再可用。对于依赖使用`com.adobe.cq.commer
 
 ## 项目结构
 
-了解[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)和AEM as a Cloud Service的特性。 使项目设置适应AEM as a Cloud Service布局。
+了解[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)和AEM as a Cloud Service的特性。 使项目设置适应AEM as a Cloud Service布局。
 与AEM 6.5部署相比，以下两个主要区别：
 
 * GraphQL客户端OSGI捆绑包&#x200B;**不得再包含在AEM项目中，它是通过CIF加载项部署的**

@@ -26,9 +26,9 @@ ht-degree: 1%
 
 ## 配置 {#configuration}
 
-必须在AEM中配置产品目录。 有关详细信息，请参阅[配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)。
+必须在AEM中配置产品目录。 有关详细信息，请参阅[配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hans#catalog)。
 
-启用暂存目录功能需要身份验证。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)。
+启用暂存目录功能需要身份验证。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

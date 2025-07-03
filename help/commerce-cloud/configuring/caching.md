@@ -55,11 +55,11 @@ venia/components/structure/navigation:true:10:600
 
 ## Dispatcher缓存 {#dispatcher}
 
-在[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)中缓存AEM页面或片段是任何AEM项目的最佳实践。 通常，它依赖于失效技术，以确保在AEM中更改的任何内容在Dispatcher中正确更新。 此功能是AEM Dispatcher缓存策略的核心。
+在[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)中缓存AEM页面或片段是任何AEM项目的最佳实践。 通常，它依赖于失效技术，以确保在AEM中更改的任何内容在Dispatcher中正确更新。 此功能是AEM Dispatcher缓存策略的核心。
 
 除了纯AEM管理的内容CIF之外，页面通常还可以显示通过GraphQL从Adobe Commerce动态获取的商务数据。 虽然页面结构本身可能永远不会更改，但商业内容可能会更改。 例如，如果产品数据（如名称和价格）在Adobe Commerce中发生更改。
 
-为了确保CIF页面在AEM Dispatcher中缓存的时间有限，Adobe建议在AEM Dispatcher中缓存CIF页面时使用[基于时间的缓存无效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)（也称为基于TTL的缓存）。 可在AEM中使用额外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)包配置此功能。
+为了确保CIF页面在AEM Dispatcher中缓存的时间有限，Adobe建议在AEM Dispatcher中缓存CIF页面时使用[基于时间的缓存无效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-time-based-cache-invalidation-enablettl)（也称为基于TTL的缓存）。 可在AEM中使用额外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)包配置此功能。
 
 对于基于TTL的缓存，开发人员通常会为选定的AEM页面定义一个或多个缓存持续时间。 此持续时间可确保仅在AEM Dispatcher中缓存CIF页面，最长为配置的持续时间，并且经常更新内容。
 
@@ -71,4 +71,4 @@ venia/components/structure/navigation:true:10:600
 
 * [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
 * [GraphQL缓存配置](https://github.com/adobe/commerce-cif-graphql-client#caching)
-* [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)

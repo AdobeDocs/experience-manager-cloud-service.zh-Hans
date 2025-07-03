@@ -118,4 +118,4 @@ ht-degree: 2%
 
 * [创作Commerce体验](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [产品 Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-* [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
