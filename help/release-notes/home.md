@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: ccf148d66fbee68e057b05afc69e4bf9eef65c77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 93%
 
 这一发布节奏为您提供了一个持续的评估窗口，可用于分析即将发布功能对项目和自定义配置的影响，并规划相关功能的上线部署、测试以及用户培训工作。
 
-请查阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)，了解即将发布版本的详细信息。
+请查阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)，了解即将发布版本的详细信息。
 
 ## 如何准备发布 {#how-to-prepare}
 
@@ -51,7 +51,7 @@ ht-degree: 93%
 
 ## 标记您的日历 {#mark-calendars}
 
-提前安排好功能版本，并在 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service) 上公布功能版本激活日期。
+提前安排好功能版本，并在 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上公布功能版本激活日期。
 
 请留意各版本的发布日期，以便您安排时间审阅和测试即将发布的功能。
 
@@ -67,12 +67,12 @@ ht-degree: 93%
 
 即将发布的功能通常通过以下两种方式之一提供：
 
-* 作为Alpha、Beta或有限可用性计划的一部分
+* 作为 Alpha、Beta 或限量发布计划的一部分
 * 作为预发布渠道的一部分
 
 即将发布功能的提供方式将在[发行说明](#release-notes)中详细说明。
 
-* 如果它是Alpha、Beta或有限可用性计划的一部分，则通常需要联系Adobe以启用它，如发行说明中所述。
+* 如果该功能属于 Alpha、Beta 或限量发布计划，通常需要按照发行说明中的说明联系 Adobe 以启用该功能。
 * 如果该功能属于预发布渠道，您需要[在开发或沙盒环境中启用预发布渠道。](/help/release-notes/prerelease.md)
 
 ## 培训您的用户 {#train-users}
@@ -81,8 +81,8 @@ ht-degree: 93%
 
 Adobe Experience League 提供了大量学习 AEMaaCS 的资源。
 
-* [AEMaaCS 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans)
-* [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hans)
+* [AEMaaCS 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
 * 发行说明中的[每月发行概述视频](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 关键发行信息 {#key-articles}

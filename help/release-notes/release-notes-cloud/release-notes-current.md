@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 87%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.6.0)的发布日期是2025年6月26日。 下一个功能版本(2025.7.0)计划于2025年7月31日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.6.0) 的发布日期为 2025 年 6 月 26 日。下一个功能版本 (2025.7.0) 计划于 2025 年 7 月 31 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -40,15 +40,15 @@ ht-degree: 87%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Assets视图中增强的元数据表单管理**
+**在资源视图中增强了元数据表单管理功能。**
 
-您现在可以直接将元数据表单从管理员视图导入Assets视图。 在Assets视图中对这些表单所做的任何更新都会自动反映在管理员视图中，从而确保两个体验之间的一致性。 此功能支持无缝过渡到新的Assets视图，同时保持与现有元数据配置的连续性。
+您现在可以直接从管理视图将元数据表单导入至资源视图。在资源视图中对这些表单所做的任何更新都会自动同步至管理视图，确保两个视图之间的一致性。此功能支持无缝过渡至新版资源视图，同时保持现有元数据配置的连续性。
 
 ![AI 生成的元数据](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -104,7 +104,7 @@ OSGi 属性：
 
 **Java 11 运行时环境**&#x200B;现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
 
-如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含具体的后续步骤。 请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
+如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
 注意：运行时版本与代码的构建版本是分开的。虽然我们建议使用 Java 21 进行构建，但目前仍支持使用 Java 11 进行构建。未来将另行发布针对 Java 11 版本的弃用通知。
 
@@ -112,7 +112,7 @@ OSGi 属性：
 
 正如4月发布说明中所述，AEM Java 日志必须遵循标准格式，以确保在所有客户环境中进行可靠监控。自定义日志配置（如更改日志格式、输出文件或默认日志级别）已不再受支持。日志必须继续定向到默认文件，且必须保留 AEM 产品代码的默认日志级别。请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)，以了解完整详情。
 
-从 **8 月下旬**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。根据我们的分析，大多数客户不会受到影响，并且Adobe已联系其当前配置可能受到影响的客户。
+从 **8 月下旬**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将会与其联系。
 
 请审查并更新所有依赖自定义日志记录行为的下游流程。例如：
 
@@ -123,7 +123,7 @@ OSGi 属性：
 
 目前，内容版本和审计日志的相关&#x200B;*清除维护任务*&#x200B;默认处于禁用状态，因此除非进行明确配置，否则不会删除任何数据。
 
-但是，为优化存储库性能，从&#x200B;**2025年7月初**&#x200B;开始，将默认启用清除，遵循以下准则：
+然而，为了优化存储库性能，从 **2025 年 7 月上旬**&#x200B;开始，将默认启用清除功能，并遵循以下指南：
 
 #### 内容版本 {#mt-content}
 
@@ -162,7 +162,7 @@ OSGi 属性：
 * 在授予内容访问权限之前，通过身份标识提供商对用户进行身份验证
 * 根据地理位置、设备类型或用户属性对内容进行个性化设置
 * 充当 CDN 与您的源站之间的中间件
-* 在将来自第三方API的响应传递到浏览器之前，请重新设置响应格式（可能还会聚合多个API响应）
+* 在将第三方 API 的响应（可能还包括聚合多个 API 的响应）传递给浏览器之前，对其进行重新格式化
 * 使用从各种后端拼接的内容，在边缘构建并呈现服务器渲染的 HTML
 
 我们为实时生产站点提供的 AEM Publish Delivery 或 Edge Delivery Services 项目的机会数量有限。如果您有兴趣参与或想了解更多信息，请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) 并简要描述您的用例。
