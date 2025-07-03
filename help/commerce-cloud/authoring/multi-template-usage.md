@@ -11,10 +11,11 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)使内容作者能够创建其他类别和产品页面。 这些页面可以通过附加营销内容进行扩充，并配置为针对特定类别和产品。 以下视频介绍了此功能的设置。
 
->[!VIDEO](https://video.tv.adobe.com/v/32787/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 可以按SKU或产品类别选择特定的产品页面。 仅某些可用的默认产品页面URL格式支持后者，因为它需要在产品URL中编码类别信息。
 

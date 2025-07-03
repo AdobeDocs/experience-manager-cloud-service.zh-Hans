@@ -4,7 +4,8 @@ description: 了解如何构建随后可在各种渠道中使用的产品内容�
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 2%
@@ -25,15 +26,15 @@ ht-degree: 2%
 
 ## 产品体验管理 {#management}
 
-产品体验管理是一门学科，用于在AEM中将产品数据（由PIM或商业解决方案拥有）与营销内容进行修饰。 然后，可以将这种包含内容的丰富产品数据用于各种渠道以创建沉浸式购物体验。
+产品体验管理是一门学科，用于在AEM中将产品数据（由PIM或商业解决方案拥有）与营销内容一起修饰。 然后，可以将这种包含内容的丰富产品数据用于各种渠道以创建沉浸式购物体验。
 
 在AEM中，您可以创建各种类型的内容，并将它们链接到产品目录。 可以轻松发现和使用相关内容，从而提高工作效率。
 
-### 资源 {#assets}
+### 资产 {#assets}
 
 从较高层面来看，有两种类型的资产与产品相关：产品和营销。 产品资产由商家管理，并专注于显示产品（通常在中性背景前）。 资产在商务解决方案或AEM Assets中进行管理(与Assets集成到商务/pim解决方案)。
 
-营销资产与推广和使用营销所拥有的产品相关。 例如，显示特定上下文中的多个产品(“shop the look”)、“outdoor fall collection”)或操作方法pdf。 CIF提供了一种将任何AEM资源与产品目录对象关联的简单方法。
+营销资产与推广和使用营销所拥有的产品相关。 例如，显示特定上下文中的多个产品(“shop the look”)、“outdoor fall collection”)或操作方法pdf。 CIF提供了一种将任何AEM资源与产品目录对象关联的简便方法。
 
 打开资源属性并切换到&#x200B;**Commerce**&#x200B;选项卡。 利用此选项卡，可管理与产品的关联。 选取器下方的表格提供了有关链接对象的附加信息（仅对选定内容可见）。 单击详细信息图标，以便获取产品驾驶舱的完整视图。 要关联新对象，请单击产品选取器图标（文件夹图标），选择对象并关闭选取器。
 
@@ -57,7 +58,7 @@ ht-degree: 2%
 
 ### 产品 Cockpit {#product-cockpit}
 
-在前面的模块中，您被介绍到了产品驾驶舱（或控制台）。 驾驶舱不仅是一种浏览产品目录的简单方法，而且还可以在一个位置查看所有关联的AEM内容。 转到产品控制台，然后打开具有关联内容的产品的属性。 切换到相应的选项卡以查看关联的内容。
+在前面的模块中，您被介绍到了产品驾驶舱（或控制台）。 驾驶舱不仅可以轻松浏览产品目录，还可以在一个位置查看所有关联的AEM内容。 转到产品控制台，然后打开具有关联内容的产品的属性。 切换到相应的选项卡以查看关联的内容。
 
 ![pem驾驶舱](assets/pem-cockpit.png)
 
@@ -83,9 +84,9 @@ ht-degree: 2%
 
 ![pem CF对话框](assets/pem-dialog-cf.png)
 
-此对话框会重用核心组件内容片段对话框。 在其他资源下查找更多信息。 唯一的区别是配置内容片段模型中的标识符字段（产品SKU或类别UID）的&#x200B;**Link Element**&#x200B;属性。
+此对话框会重用核心组件内容片段对话框。 在其他资源下查找更多信息。 唯一的区别是配置内容片段模型中的标识符字段(产品SKU或类别UID)的&#x200B;**Link Element**&#x200B;属性。
 
-立即预览具有关联内容片段和/或体验片段的产品页面。 AEM渲染页面时，会根据类型（内容或体验片段）、标识符和体验片段的占位符名称对每个占位符进行查找。 AEM使用URL解析器获取标识符（SKU用于产品，UID用于类别）。 如果返回体验或内容片段，则会将其呈现到占位符位置，否则会忽略占位符。
+立即预览具有关联内容片段和/或体验片段的产品页面。 AEM渲染页面时，会根据类型（内容或体验片段）、标识符和体验片段的占位符名称对每个占位符进行查找。 AEM使用URL解析器获取标识符(SKU用于产品，UID用于类别)。 如果返回体验或内容片段，则会将其呈现到占位符位置，否则会忽略占位符。
 
 ![pem结果](assets/pem-result.png)
 
@@ -105,7 +106,7 @@ ht-degree: 2%
 
 ## 历程结束？ {#end-of-journey}
 
-恭喜！您已完成AEM Content和Commerce开发人员历程！ 您现在应：
+恭喜！您已完成AEM内容和Commerce开发人员历程！ 现在应：
 
 * 了解如何将任何AEM内容关联到产品目录对象
 * 使用占位符单独扩充产品和类别页面
@@ -117,4 +118,4 @@ ht-degree: 2%
 
 * [创作Commerce体验](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [产品 Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-* [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

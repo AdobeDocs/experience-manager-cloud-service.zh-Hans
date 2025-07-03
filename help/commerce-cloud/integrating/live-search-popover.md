@@ -1,17 +1,18 @@
 ---
-title: “[!DNL Live Search]弹出框CIF组件”
-description: 使用CIF组件在AEM站点上启用 [!DNL Live Search] 弹出组件
+title: '[!DNL Live Search]弹出窗口CIF组件'
+description: 使用CIF组件在AEM网站上启用 [!DNL Live Search] 弹出组件
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search]弹出框CIF组件 {#live-search-popover}
+# [!DNL Live Search]弹出窗口CIF组件 {#live-search-popover}
 
 [!DNL Live Search]弹出框是在搜索字段中键入内容时包含[!DNL Live Search]个结果的元素。
 本主题介绍如何将此组件集成到AEM站点。

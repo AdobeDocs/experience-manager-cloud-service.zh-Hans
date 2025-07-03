@@ -11,7 +11,8 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 2%
@@ -22,11 +23,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须解决Adobe Experience Manager (AEM) as a Cloud Service上的许多项目中的SEO问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=zh-Hans)以了解更多信息。
+> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须解决Adobe Experience Manager (AEM) as a Cloud Service上的许多项目中的SEO问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html)以了解更多信息。
 
-[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)提供了高级配置以自定义产品和类别页面的URL。 许多实施都会自定义这些URL，以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置[Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的`UrlProvider`服务和功能以自定义产品和类别页面的URL。
+[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)提供了高级配置以自定义产品和类别页面的URL。 许多实施都会自定义这些URL，以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置`UrlProvider`Sling映射[的](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)服务和功能以自定义产品和类别页面的URL。
 
->[!VIDEO](https://video.tv.adobe.com/v/38584/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 配置 {#configuration}
 
@@ -223,15 +224,15 @@ CIF配置中的![Url格式](assets/store-specific-url-formats.png)
 
 如在选择一种可用的默认格式，甚至实施自定义格式之前所述，这在很大程度上取决于存储的需求和要求。 以下建议可能有助于做出有教育意义的决定。
 
-_&#x200B;**使用包含SKU的产品页面URL格式。**&#x200B;_
+_**使用包含SKU的产品页面URL格式。**_
 
 CIF核心组件使用SKU作为所有组件中的主要标识符。 如果产品页面URL格式不包含SKU，则需要使用GraphQL查询来对其进行解析。 此解决方案可能会影响第一字节的时间。 此外，可能希望购物者能够使用搜索引擎通过SKU找到产品。
 
-_&#x200B;**使用包含类别上下文的产品页面URL格式。**&#x200B;_
+_**使用包含类别上下文的产品页面URL格式。**_
 
 CIF URL提供程序的某些功能仅适用于使用对类别上下文进行编码的产品URL格式，如类别`url_key`或类别`url_path`。 即使新存储可能不需要这些功能，一开始使用这些URL格式之一有助于减少未来的迁移工作。
 
-_&#x200B;**URL长度与编码信息之间的平衡。**&#x200B;_
+_**URL长度与编码信息之间的平衡。**_
 
 根据目录大小，特别是类别树的大小和深度，将整个`url_path`个类别编码到URL中可能不太合理。 在这种情况下，可以通过仅包含类别的`url_key`来缩短URL长度。 此方法支持使用类别`url_path`时的大多数可用功能。
 
@@ -243,7 +244,7 @@ _&#x200B;**URL长度与编码信息之间的平衡。**&#x200B;_
 
 另一方面，搜索引擎需要时间来使用新的URL格式重新爬网所有目录页面。 为了支持此过程并改善最终用户体验，建议提供可将用户从旧URL转发到新URL的重定向。
 
-其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取由CIF产品Sitemap生成器[&#128279;](../../overview/seo-and-url-management.md)为暂存环境和生产环境生成的产品Sitemap，并使用它们创建[Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)。 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
+其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取由CIF产品Sitemap生成器[为暂存环境和生产环境生成的](../../overview/seo-and-url-management.md)产品Sitemap，并使用它们创建[Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html)。 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
 
 ## 示例 {#example}
 
@@ -251,10 +252,10 @@ _&#x200B;**URL长度与编码信息之间的平衡。**&#x200B;_
 
 >[!NOTE]
 >
->此配置必须使用项目使用的外部域进行调整。 Sling映射基于主机名和域工作。 因此，此配置默认处于禁用状态，必须在部署之前启用。 为此，请根据使用的域名重命名`ui.content/src/main/content/jcr_root/etc/map.publish/https`中的Sling映射`hostname.adobeaemcloud.com`文件夹，并通过将`resource.resolver.map.location="/etc/map.publish"`添加到项目的`JcrResourceResolver`配置中来启用此配置。
+>此配置必须使用项目使用的外部域进行调整。 Sling映射基于主机名和域工作。 因此，此配置默认处于禁用状态，必须在部署之前启用。 为此，请根据使用的域名重命名`hostname.adobeaemcloud.com`中的Sling映射`ui.content/src/main/content/jcr_root/etc/map.publish/https`文件夹，并通过将`resource.resolver.map.location="/etc/map.publish"`添加到项目的`JcrResourceResolver`配置中来启用此配置。
 
 ## 其他资源 {#additional}
 
 * [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM资源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=zh-Hans)
+* [AEM资源映射](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

@@ -4,7 +4,8 @@ description: 了解如何管理产品目录页面和模板
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM Content and Commerce创作历程的上一个文档[AEM CIF创作基础知识快速入门](getting-started.md)中，您已了解CIF创作的基础知识。
+在AEM内容和Commerce创作历程的上一个文档[AEM CIF创作基础知识快速入门](getting-started.md)中，您已了解CIF创作的基础知识。
 
 本文基于这些基础之上。
 
@@ -33,7 +34,7 @@ ht-degree: 1%
 
 Venia storefront提供典型的产品目录体验，包括导航、登陆、类别(PLP)和产品详细信息页面(PDP)。
 
-目录页面是使用AEM CIF目录模板以及实时产品数据动态构建的，在需要时可以从商务端点获取。 每个目录都有一个用于产品和类别页面的通用模板。
+目录页面是使用AEM CIF目录模板以及实时产品数据动态构建的，在需要时可以从商务端点获取这些数据。 每个目录都有一个用于产品和类别页面的通用模板。
 ![目录结构](assets/catalog-structure.png)
 
 导航组件显示内容和目录页面。 可以在导航中显示目录登陆页面或第一级类别。 将鼠标悬停在类别上会将二级类别显示为第二行。
@@ -116,4 +117,4 @@ Venia storefront提供典型的产品目录体验，包括导航、登陆、类�
 我们建议您查看文档[管理暂存产品目录体验](staged-catalog.md)来继续历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续无头历程所必需的：
 
 * [创建多个类别和产品页面](/help/commerce-cloud/authoring/multi-template-usage.md)
-* Experience Manager Cloud Service的[迁移指南](/help/commerce-cloud/migration.md) — 如何从旧版本迁移到AEMCommerce integration framework(CIF)加载项
+* Experience Manager Cloud Service [迁移指南](/help/commerce-cloud/migration.md) — 如何从旧版本迁移到AEM Commerce integration framework (CIF)加载项

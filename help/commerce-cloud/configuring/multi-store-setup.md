@@ -11,7 +11,8 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -24,7 +25,7 @@ Adobe Experience Manager (AEM) CIF核心组件可用于多个AEM站点结构，�
 
 视频演练，详细介绍用于将多个Adobe Commerce Store视图与Adobe Experience Manager Sites集成的选项。
 
->[!VIDEO](https://video.tv.adobe.com/v/32824/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration framework配合使用，以全局方式跨地区和区域管理站点。
 
@@ -34,7 +35,7 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
 ## 配置 {#configuration}
 
-1. 根据[Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)中描述的模式配置多个商店和商店视图
+1. 根据[Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)中描述的模式配置多个商店和商店视图
 
 2. 确保AEM与Adobe Commerce之间的连接正常。
 
@@ -60,7 +61,7 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
 ## 其他资源
 
-* [Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)
+* [Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [AEM CIF核心组件 — 多存储/站点配置](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [使用多站点管理器](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=zh-Hans)
+* [使用多站点管理器](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [重用内容：多站点管理器和 Live Copy](/help/sites-cloud/administering/msm/overview.md)

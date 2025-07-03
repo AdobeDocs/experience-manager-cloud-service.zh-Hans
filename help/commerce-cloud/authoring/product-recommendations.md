@@ -11,7 +11,8 @@ kt: 9649
 thumbnail: 340130.jpg
 exl-id: ee6f3423-175d-4a13-a587-63c285b6075f
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 7%
@@ -22,4 +23,4 @@ ht-degree: 7%
 
 Adobe Commerce具有由Adobe Sensei提供支持的推荐引擎。 了解如何在Adobe Experience Manager (AEM)店面中动态插入这些产品推荐。
 
->[!VIDEO](https://video.tv.adobe.com/v/342985/?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)

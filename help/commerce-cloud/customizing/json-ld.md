@@ -1,17 +1,18 @@
 ---
-title: JSON-LD元数据
+title: JSON-LD 元数据
 description: 了解如何在AEM CIF中启用和验证JSON+LD功能。
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
-source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# JSON-LD元数据 {#json-ld}
+# JSON-LD 元数据 {#json-ld}
 
 本指南介绍如何在AEM CIF中启用和验证JSON+LD功能。
 
@@ -21,9 +22,9 @@ ht-degree: 2%
 
 ## 在CIF配置中启用JSON+LD {#enabling}
 
-默认情况下，**启用JSON+LD**&#x200B;复选框在CIF配置中不可见。 要启用此功能，项目必须包括必要的OSGi配置，该配置可允许显示复选框。 此配置允许用户在产品页面上切换JSON+LD脚本支持。
-要使&#x200B;**启用JSON+LD**&#x200B;复选框在CIF配置中可用，请将以下OSGi配置添加到您的项目中： &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;。
+默认情况下，**启用JSON+LD**复选框在CIF配置中不可见。 要启用此功能，项目必须包括必要的OSGi配置，该配置可允许显示复选框。 此配置允许用户在产品页面上切换JSON+LD脚本支持。
+要使**启用JSON+LD**&#x200B;复选框在CIF配置中可用，请将以下OSGi配置添加到您的项目中： `
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable`。
 有关添加此配置的更多详细信息，请参阅公共aem-cif-guides-venia存储库中的[添加Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json)的配置。
 
 添加和部署此配置后，该复选框将在CIF配置设置中可见，以下是启用&#x200B;**JSON+LD**&#x200B;的步骤：

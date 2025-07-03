@@ -4,7 +4,8 @@ description: 了解如何在AEM CIF中启用和验证clear-cache功能。
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 3%
@@ -31,7 +32,6 @@ ht-degree: 3%
 * 通过在项目中添加`com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`配置，使侦听器能够清除AEM的每个实例（发布和创作）的缓存，如[此处](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)所示。
    * 应为创作实例和发布实例启用配置。
    * 启用Dispatcher缓存（可选）：您可以通过在上述配置中将`enableDispatcherCacheInvalidation`属性设置为true来启用Dispatcher清除缓存设置。 这提供了从Dispatcher清除缓存的功能。
-
      >[!NOTE]
      >
      > 这仅适用于发布实例。
@@ -64,7 +64,6 @@ ht-degree: 3%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 如果一切顺利，新变化将反映在所有实例中。 如果更改在发布实例上不可见，请尝试在私人/无痕浏览器窗口中访问相关的PLP和PDP页面。
 
 >[!NOTE]
@@ -135,4 +134,4 @@ curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/i
 * 如果需要从内部内存和Dispatcher缓存中清除缓存，则需要遵循[此引用](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)。
   >[!NOTE]
   >
-  > 您可以通过返回`getPatterns()`方法的`null`来忽略内部清除缓存。
+  > 您可以通过返回`null`方法的`getPatterns()`来忽略内部清除缓存。

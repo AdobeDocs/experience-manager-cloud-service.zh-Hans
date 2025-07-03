@@ -1,10 +1,11 @@
 ---
-title: “[!DNL Live Search]产品列表页CIF组件”
+title: '[!DNL Live Search]产品列表页CIF组件'
 description: 使用CIF组件在AEM网站上启用 [!DNL Live Search] 产品列表页面组件
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Adobe Commerce Live Search可提供快速、相关和直观的搜索体验，而
 
 ## 先决条件 {#prerequisites}
 
-本主题假定您已设置本地[AEM环境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hans)。
+本主题假设您已设置本地[AEM环境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-hans)。
 
 PLP组件要求安装[[!DNL Live Search] Popover CIF组件](live-search-popover.md)。 PLP构件需要由弹出窗口生成的浏览器会话变量。
 

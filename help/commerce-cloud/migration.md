@@ -1,10 +1,11 @@
 ---
-title: 迁移到AEMCommerce integration framework(CIF)加载项
-description: 如何从旧版本迁移到AEMCommerce integration framework(CIF)加载项
+title: 迁移到AEM Commerce integration framework (CIF)加载项
+description: 如何从旧版本迁移到AEM Commerce integration framework (CIF)加载项
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 20%
@@ -17,19 +18,19 @@ ht-degree: 20%
 
 ## CIF加载项
 
-对于Experience Manageras a Cloud Service，CIF加载项是唯一受Adobe Commerce和第三方商务解决方案支持的商务集成解决方案。 CIF 加载项自动为 Experience Manager as a Cloud Service 上的客户部署，无需手动部署。请参阅 [AEM Commerce as a Cloud Service 快速入门](getting-started.md)。
+对于Experience Manager as a Cloud Service，CIF加载项是唯一受Adobe Commerce和第三方商务解决方案支持的商务集成解决方案。 CIF 加载项自动为 Experience Manager as a Cloud Service 上的客户部署，无需手动部署。请参阅 [AEM Commerce as a Cloud Service 快速入门](getting-started.md)。
 
-要支持部署CIFAdobe的项目，请提供[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)。
+为了支持部署CIF Adobe的项目，请提供[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)。
 
 CIF 加载项可用于 AEM 6.5 以及通过[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)使用。它是兼容的，提供了与 Experience Manager as a Cloud Service 的 CIF 加载项相同的功能，无需调整。
 
-Classic CIF 及其依赖项不再可用。依赖使用`com.adobe.cq.commerce.api` Java API的此CIF版本的代码必须调整为CIF加载项及其原则。
+Classic CIF 及其依赖项不再可用。对于依赖使用`com.adobe.cq.commerce.api` Java API的此CIF版本的代码，必须调整为CIF加载项及其原则。
 
 无法再安装以前可用的CIF连接器。 依赖此连接器的代码需要调整为CIF加载项及其原则。
 
 ## 项目结构
 
-了解[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)和AEM as a Cloud Service的特性。 使项目设置适应AEM as a Cloud Service布局。
+了解[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)和AEM as a Cloud Service的特性。 使项目设置适应AEM as a Cloud Service布局。
 与AEM 6.5部署相比，以下两个主要区别：
 
 * GraphQL客户端OSGI捆绑包&#x200B;**不得再包含在AEM项目中，它是通过CIF加载项部署的**
@@ -49,7 +50,7 @@ Classic CIF 及其依赖项不再可用。依赖使用`com.adobe.cq.commerce.api
 
 ## 具有AEM渲染的产品目录体验
 
-如果您将目录Blueprint与Classic CIF一起使用，则需要更新产品目录工作流程。 CIF加载项现在可使用AEM目录模板动态呈现产品目录体验。 不再需要复制产品数据或产品页面。
+如果您将目录Blueprint与经典CIF结合使用，则需要更新产品目录工作流程。 CIF加载项现在使用AEM目录模板动态呈现产品目录体验。 不再需要复制产品数据或产品页面。
 
 ## 不可缓存的数据和购物交互
 

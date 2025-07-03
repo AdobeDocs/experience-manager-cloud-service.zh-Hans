@@ -4,7 +4,8 @@ description: 了解如何使用产品驾驶舱，它提供了链接产品目录�
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 1%
@@ -25,9 +26,9 @@ ht-degree: 1%
 
 ## 配置 {#configuration}
 
-必须在AEM中配置产品目录。 有关详细信息，请参阅[配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hans#catalog)。
+必须在AEM中配置产品目录。 有关详细信息，请参阅[配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)。
 
-启用暂存目录功能需要身份验证。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hans)。
+启用暂存目录功能需要身份验证。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)。
 
 >[!NOTE]
 >
@@ -75,11 +76,11 @@ ht-degree: 1%
 
 ### Commerce选项卡 {#tabs}
 
-常规和变量选项卡显示来自商业后端的预定义商业属性。 此数据(包括 变体)是AEM中的只读数据，因为记录系统是商务后端。 变体选项卡仅显示具有变体的产品，并显示所有变体的列表。
+常规和变量选项卡显示来自商业后端的预定义商业属性。 此数据(包括 变体)是AEM中的只读数据，因为记录系统是commerce后端。 变体选项卡仅显示具有变体的产品，并显示所有变体的列表。
 
 ![目录属性](../assets/catalog-properties.png)
 
-### AEM内容选项卡 {#content-tabs}
+### AEM“内容”选项卡 {#content-tabs}
 
 这些按AEM内容类型(体验片段、内容片段、关联的Assets)分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
 

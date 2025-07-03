@@ -9,10 +9,11 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -20,27 +21,27 @@ ht-degree: 4%
 
 基于适用于AEM的Commerce integration framework (CIF)开发AEM as a Cloud Service Commerce项目时，遵循与AEM as a Cloud Service上的其他AEM项目相同的规则和最佳实践。 请先查看以下内容：
 
-- [AEM 项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=zh-Hans)
-- [AEM as a Cloud Service 开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hans)
+- [AEM 项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service 开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
 
 ## 使用AEM as a Cloud Service SDK进行本地开发 {#local}
 
->[!VIDEO](https://video.tv.adobe.com/v/347034/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
 建议使用本地开发环境来处理CIF项目。 为AEM as a Cloud Service提供的CIF加载项也可用于本地开发。 可从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载。
 
 CIF加载项是作为Sling功能存档提供的。 软件分发门户上提供的zip文件包括两个Sling功能存档文件，一个用于AEM创作，一个用于AEM发布实例。
 
-**是AEM as a Cloud Service的新用户？**&#x200B;查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-hans)。
+**刚接触 AEM as a Cloud Service？**&#x200B;查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
 
 ### 所需的软件
 
 下列内容应本地安装：
 
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) （3.3.9或更高版本）
+- [Apache Maven](https://maven.apache.org/)（3.3.9 或更新版本）
 - [Node.js v10+](https://nodejs.org/en)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
@@ -85,7 +86,7 @@ CIF加载项是作为Sling功能存档提供的。 软件分发门户上提供�
 
    AEM使用此变量连接到您的商务系统。 此外，CIF加载项包括一个本地反向代理，以使Commerce GraphQL端点可在本地使用。 此代理由CIF创作工具（产品控制台和选取器）和用于执行直接GraphQL调用的CIF客户端组件使用。
 
-   此外，还必须为AEM as a Cloud Service环境设置此变量。 有关变量的详细信息，请参阅[为AEM as a Cloud Service配置OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hans#local-development)。
+   此外，还必须为AEM as a Cloud Service环境设置此变量。 有关变量的详细信息，请参阅[为AEM as a Cloud Service配置OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. （可选）要启用暂存目录功能，必须为Adobe Commerce实例创建集成令牌。 按照[快速入门](./getting-started.md#staging)中的步骤创建令牌。
 
@@ -95,7 +96,7 @@ CIF加载项是作为Sling功能存档提供的。 软件分发门户上提供�
    Authorization: Bearer <Access Token>
    ```
 
-   有关密钥的详细信息，请参阅[为AEM as a Cloud Service配置OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hans#local-development)。
+   有关密钥的详细信息，请参阅[为AEM as a Cloud Service配置OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)。
 
 1. 启动AEM as a Cloud Service SDK
 

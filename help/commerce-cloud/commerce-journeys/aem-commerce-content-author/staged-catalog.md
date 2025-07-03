@@ -4,7 +4,8 @@ description: 了解如何管理分阶段的产品目录体验。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 10%
@@ -17,7 +18,7 @@ ht-degree: 10%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM Content and Commerce历程的上一个文档[管理产品目录页面和模板](catalog-templates.md)中，您已了解如何基于模板管理和构建产品目录体验。
+在AEM内容和Commerce历程的上一个文档[管理产品目录页面和模板](catalog-templates.md)中，您已了解如何基于模板管理和构建产品目录体验。
 
 本文基于这些基础之上。
 
@@ -27,13 +28,13 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->此功能仅适用于支持基于令牌的身份验证的Adobe Commerce或Cloud Edition以及第三方连接器。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=zh-Hans)。
+>此功能仅适用于支持基于令牌的身份验证的Adobe Commerce或Cloud Edition以及第三方连接器。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
 
 首先，我们来了解作者如何使用CIF访问暂存的产品数据。
 
 ## 使用暂存的产品数据 {#staged-product-data}
 
-访问暂存产品数据的一种方法是使用产品驾驶舱。 单击主AEM菜单中的Commerce图标以打开产品目录。 这将授予您访问实时产品数据的权限。 打开左侧的筛选器选项卡，并展开&#x200B;**暂存目录**。 现在，您可以使用预览数据访问任何时间点的暂存产品数据。 暂存数据包括新类别、产品或更新的字段，如价格。
+访问暂存产品数据的一种方法是使用产品驾驶舱。 单击AEM主菜单中的Commerce图标以打开产品目录。 这将授予您访问实时产品数据的权限。 打开左侧的筛选器选项卡，并展开&#x200B;**暂存目录**。 现在，您可以使用预览数据访问任何时间点的暂存产品数据。 暂存数据包括新类别、产品或更新的字段，如价格。
 
 ![阶段驾驶舱](assets/staged-cockpit.png)
 

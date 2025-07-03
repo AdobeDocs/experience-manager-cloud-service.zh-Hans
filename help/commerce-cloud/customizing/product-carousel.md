@@ -1,9 +1,11 @@
 ---
 title: CIF 产品轮播的自定义属性
-description: 了解如何通过更新Sling模型和自定义标记来扩展AEM CIF产品轮盘组件。
+description: 了解如何通过更新Sling模型和自定义标记来扩展AEM CIF产品轮播组件。
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 4%
@@ -38,9 +40,8 @@ ht-degree: 4%
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-
-1. 接下来，在`core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`处创建实现类`CustomCarouselImpl.java`。
-Sling模型的委托模式允许`CustomCarouselImpl`通过`sling:resourceSuperType`属性引用`ProductCarousel`模型：
+1. 接下来，在`CustomCarouselImpl.java`处创建实现类`core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`。
+Sling模型的委托模式允许`CustomCarouselImpl`通过`ProductCarousel`属性引用`sling:resourceSuperType`模型：
 
    ```
    @Self
@@ -69,7 +70,7 @@ Sling模型的委托模式允许`CustomCarouselImpl`通过`sling:resourceSuperTy
 
 要进一步自定义标记，请执行以下操作：
 
-1. 创建从`/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` （核心组件crxde路径）到ui.apps模块`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`的`productcard.html`的副本。
+1. 创建从`productcard.html` （核心组件crxde路径）到ui.apps模块`/apps/core/cif/components/commerce/productcarousel/v1/productcarousel`的`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`的副本。
 
 1. 编辑`productcard.html`以调用实现类中提到的自定义属性：
 
@@ -87,4 +88,4 @@ Sling模型的委托模式允许`CustomCarouselImpl`通过`sling:resourceSuperTy
    ..
    ```
 
-1. 使用命令行终端的Maven命令保存更改并将更新部署到AEM。 您将能够在页面上看到所选产品的自定义属性`accessory_gemstone_addon`值。
+1. 从命令行终端，使用Maven命令保存更改并将更新部署到AEM。 您将能够在页面上看到所选产品的自定义属性`accessory_gemstone_addon`值。

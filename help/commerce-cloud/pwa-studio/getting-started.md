@@ -1,35 +1,36 @@
 ---
-title: AEMPWA Studio扩展快速入门
-description: 了解如何使用PWA Studio部署AEM Headless Content和Commerce项目。
+title: 适用于PWA Studio的AEM扩展快速入门
+description: 了解如何使用PWA Studio部署AEM headless Content和Commerce项目。
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
 
 ---
 
-# AEMPWA Studio扩展快速入门 {#getting-started-pwa}
+# 适用于PWA Studio的AEM扩展快速入门 {#getting-started-pwa}
 
-开箱即用的PWA Studio通过GraphQL与Adobe Commerce无缝集成，提供了无限数量的选项来打造创新和引人入胜的店面及其他数字体验。
+开箱即用的PWA Studio通过GraphQL与Adobe Commerce无缝集成，提供了无限多的选项用于创建创新和引人入胜的店面及其他数字体验。
 
 内容片段是具有预定义结构的内容片段，允许以无头方式使用GraphQL作为各种格式（例如，JSON、Markdown）的API并独立渲染。 内容片段包括GraphQL所需的所有数据类型和字段，以确保您的应用程序仅请求可用内容并接收预期内容。 它们在结构方面提供的灵活性使其非常适合在多个位置和多个渠道上使用。
 
-使用Adobe Experience Manager中的内容片段模型编辑器，可以轻松设计所需的结构。 将Adobe Experience Manager内容片段（或任何其他数据）与PWA Studio应用程序集成的主要挑战是从多个GraphQL端点获取数据。 这是因为PWA Studio开箱即用地使用单个Adobe Commerce GraphQL端点。
+使用Adobe Experience Manager中的内容片段模型编辑器，可以轻松设计所需的结构。 将Adobe Experience Manager内容片段（或任何其他数据）与PWA Studio应用程序集成的主要挑战是从多个GraphQL端点获取数据。 这是因为开箱即用地使用PWA Studio与单个Adobe Commerce GraphQL端点配合使用。
 
 ## 架构 {#architecture}
 
-![PWAHeadless架构](/help/commerce-cloud/assets/PWA-Studio_Architecture.png)
+![PWA headless架构](/help/commerce-cloud/assets/PWA-Studio_Architecture.png)
 
 ## 设置PWA Studio {#setup-pwa}
 
-按照Adobe Commerce [PWA Studio文档](https://developer.adobe.com/commerce/pwa-studio/tutorials/)设置您的PWA Studio应用。
+按照Adobe Commerce [PWA Studio文档](https://developer.adobe.com/commerce/pwa-studio/tutorials/)设置您的PWA Studio应用程序。
 
-要将PWA Studio连接到AEM的GraphQL端点，您可以为PWA Studio[&#128279;](https://github.com/adobe/aem-pwa-studio-extensions)使用AEM扩展。
+要将PWA Studio与AEM的GraphQL端点连接，您可以使用PWA Studio的[AEM扩展](https://github.com/adobe/aem-pwa-studio-extensions)。
 
 1. 签出存储库
 
@@ -61,12 +62,12 @@ ht-degree: 0%
    }    
    ```
 
-   您可以在[addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js)和PWA Studio的[Extensibility Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/)文档中查找有关自定义导航组件的更多详细信息。
+   您可以在[addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js)和PWA Studio的[可扩展性框架](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/)文档中查找有关自定义导航组件的更多详细信息。
 
-1. Apollo客户端需要位于`<https://pwa-studio/endpoint.js>`的AEM GraphQL端点。 要将端点映射到此位置，请自定义PWA Studio应用程序的UPPER配置：
+1. Apollo客户端将预期AEM GraphQL终结点位于`<https://pwa-studio/endpoint.js>`。 要将端点映射到此位置，请自定义PWA Studio应用程序的“向上”配置：
 a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并将其调整为指向您的AEM内容片段GraphQL端点。
 
-   示例： `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
+   示例：`AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b.将代理解析程序添加到UPGRADE配置。 UPPER配置示例可能如下所示：
 
@@ -91,9 +92,9 @@ a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并将其调整为指向您�
 
 ## 设置AEM {#setup-aem}
 
-按照AEM内容片段文档中的说明，为您的AEM项目设置GraphQL端点。 此外，在您的AEM项目中，添加以下配置以允许PWA Studio应用程序访问GraphQL端点：
+按照AEM内容片段文档中的说明，为AEM项目设置GraphQL端点。 此外，在您的AEM项目中，添加以下配置以允许PWA Studio应用程序访问GraphQL端点：
 
-* AdobeGranite跨源资源共享策略(com.adobe.granite.cors.impl.CORSPolicyImpl)
+* Adobe Granite跨源资源共享策略(com.adobe.granite.cors.impl.CORSPolicyImpl)
 
   将allowedorigin属性设置为PWA应用程序的完整主机名。
 
@@ -103,15 +104,15 @@ a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并将其调整为指向您�
 
   将allow.hosts属性设置为PWA应用程序的主机名。
 
-  示例： `pwa-studio-test-vflyn.local.pwadev`
+  示例：`pwa-studio-test-vflyn.local.pwadev`
 
 您可以在此处找到这两种配置的完整示例： <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>。
 
-为了显示GraphQL端点，有一些通过内容包准备的示例内容片段模型和数据。 这些组件与随PWA Studio扩展提供的React组件配合使用效果良好。
+为了显示GraphQL端点，有一些通过内容包准备的示例内容片段模型和数据。 这些组件与随PWA Studio扩展提供的React组件配合使用非常好。
 
 ## 使用方法 {#how-to-use}
 
-此扩展被视为有关如何将PWA Studio应用程序连接到AEM以通过GraphQL检索和呈现内容的示例实施。
+此扩展被视为如何将PWA Studio应用程序与AEM连接以通过GraphQL检索和呈现内容的示例实施。
 
 根据您的用例，要创建自己的自定义内容片段模型，这些模型会产生自定义GraphQL架构，然后您自己的React组件可以使用该架构。
 

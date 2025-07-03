@@ -4,7 +4,8 @@ description: 从这里开始，通过 AEM Commerce 创作实施引导式历程
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 95%
@@ -31,7 +32,7 @@ ht-degree: 95%
 
 文档历程是围绕最佳实践准则而设计的，其中参考了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及客户项目产生的反馈。
 
-如果您想了解 Adobe 就如何使用 AEM 解决站点业务案例提出的建议，则可以从 AEM Sites 历程开始。
+如果您想了解 Adobe 就如何使用 AEM 解决 Site 业务案例提出的建议，则可以从 AEM Site 历程开始。
 
 ## 受众 {#audience}
 

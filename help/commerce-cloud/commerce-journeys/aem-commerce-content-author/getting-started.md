@@ -4,7 +4,8 @@ description: CIF创作快速入门。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 2%
@@ -23,15 +24,15 @@ ht-degree: 2%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何使用CIF进行内容创作以及特定于Commerce的创作。 阅读本文档后，您应：
+本文档可帮助您了解如何使用CIF进行内容创作以及特定于Commerce的创作。 阅读本文档后，您应该：
 
-* 了解使用AEM中的页面编辑器进行CIF创作的概念
+* 了解CIF创作过程中使用AEM中的页面编辑器的概念
 * 如何使用产品和类别选取器访问AEM中的产品目录数据
 * 如何使用产品驾驶舱和AEM Omnisearch访问内容和商业数据
 
-## AEM页面编辑器中的CIF创作 {#cif-authoring}
+## 在AEM页面编辑器中创作CIF {#cif-authoring}
 
-CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情况下访问实时产品数据：
+CIF对AEM中的页面编辑器进行了扩展，使其能够在不离开上下文的情况下访问实时产品数据：
 
 打开侧面板，然后从下拉列表中选择“产品”。
 ![选择产品类型](assets/asset-finder-overview.png)
@@ -43,7 +44,7 @@ CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情�
 
 ## 产品和类别选取器 {#pickers}
 
-如果商务组件或AEM后台对话框需要产品和类别数据，AEM作者可以使用选取器（即UI元素）来舒适地搜索和选择产品目录数据。
+如果Commerce组件或AEM后台对话框需要产品和类别数据，AEM作者可以使用选取器（即UI元素）来舒适地搜索和选择产品目录数据。
 
 ### 产品选取器
 
@@ -81,7 +82,7 @@ CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情�
 您可以通过单击资产图标来打开产品资产。 图标通过将鼠标悬停在产品图块上来显示。
 ![驾驶舱产品属性](assets/cockpit-properties.png)
 
-所有产品属性均为只读，因为数据是从连接的后端实时加载的。 更改产品属性必须在后端系统（记录系统）中完成。 选项卡&#x200B;**变体**&#x200B;仅在产品具有变体时显示。 单击选项卡会显示所有变体及其属性。
+所有产品属性均为只读，因为数据是从连接的后端实时加载的。 更改产品属性必须在后端系统（记录系统）中完成。 选项卡&#x200B;**变体**仅在产品具有变体时显示。 单击选项卡会显示所有变体及其属性。
 ![驾驶舱产品变型](assets/cockpit-properties-variants.png)
 
 其余选项卡显示与产品关联的所有AEM内容。 这些选项卡将在下一模块中进行讨论。
@@ -91,7 +92,7 @@ CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情�
 使用Omnisearch是一种通过全文搜索查找AEM内容的简单方法。 CIF对Omnisearch进行了扩展，对产品目录及其关联的AEM内容进行了全文搜索。
 ![商务菜单项](assets/omnisearch.png)
 
-Omnisearch在商务后端运行全文搜索以查找所有相关产品。 结果列在&#x200B;**查看所有产品**&#x200B;下。 Omnisearch还会搜索AEM中与搜索到的产品相关的内容。 结果列在相应的AEM类别下。 在此示例中，一个内容片段与产品相关。
+Omnisearch在商务后端运行全文搜索以查找所有相关产品。 结果列在&#x200B;**查看所有产品**&#x200B;下。 Omnisearch还会搜索AEM以查找与搜索的产品相关的内容。 结果列在相应的AEM类别下。 在此示例中，一个内容片段与产品相关。
 
 ## 后续内容 {#what-is-next}
 
