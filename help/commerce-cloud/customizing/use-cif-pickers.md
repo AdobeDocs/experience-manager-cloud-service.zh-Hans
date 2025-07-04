@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 role: Admin
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: 8a9438f095a060ebd334f627c681e7e1473ce3c9
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
@@ -49,11 +49,12 @@ AEM内容和Commerce创作提供了一系列创作工具，可帮助AEM作者和
 >[!CAUTION]
 >
 >`cifproductfield`组件需要`cif.shell.picker`客户端库。 要将clientlib添加到对话框，您可以使用extraClientlibs属性。
->&#x200B;>[!CAUTION]
+
+>[!CAUTION]
 >
 >从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`sku`或`slug`作为产品标识符。 Adobe仍仅对使用CIF核心组件版本1.x的项目支持`id`。
 
-在`cifproductfield`CIF核心组件[项目中可以找到](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)的完整工作示例。 另请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans#customizing-dialogs)。
+在`cifproductfield`CIF核心组件[项目中可以找到](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)的完整工作示例。 另请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)。
 
 ## 类别选取器 {#category-picker}
 
@@ -78,8 +79,9 @@ AEM内容和Commerce创作提供了一系列创作工具，可帮助AEM作者和
 
 >[!CAUTION]
 >
->与`cifproductfield`组件相同，`cifcategoryfield`组件还需要`cif.shell.picker` clientlib。 要将clientlib添加到对话框，您可以使用`extraClientlibs`属性。 请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans#customizing-dialogs)。
->&#x200B;>[!CAUTION]
+>与`cifproductfield`组件相同，`cifcategoryfield`组件还需要`cif.shell.picker` clientlib。 要将clientlib添加到对话框，您可以使用`extraClientlibs`属性。 请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)。
+
+>[!CAUTION]
 >
 >从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`uid`或`urlPath`作为类别标识符。 Adobe继续仅对使用CIF核心组件版本1.x的项目支持`id`和`idAndUrlPath`。
 
