@@ -4,9 +4,9 @@ description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 63%
 
 ---
@@ -31,7 +31,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 >[!TIP]
 >
->还可以使用公共API[&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)还原备份。
+>还可以使用公共API[还原备份](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)。
 
 >[!WARNING]
 >
@@ -56,7 +56,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 1. 创建一个产品配置文件，其表达式名称引用了内容恢复。
 1. 提供所需程序的&#x200B;**程序访问权限**&#x200B;权限。
-1. 根据您的用例，对程序的所需环境或所有环境提供&#x200B;**内容还原**&#x200B;权限。
+1. 根据您的用例，对程序的所需环境或所有环境提供&#x200B;**环境还原创建**&#x200B;权限。
 1. 将用户分配给该配置文件配置文件。
 
 有关管理权限的详细信息，请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)文档。
