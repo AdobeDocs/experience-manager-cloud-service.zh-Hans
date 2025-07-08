@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -453,9 +453,9 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 全部 | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | 全部 | 6/3/25 | 8/31/25 |
 
-### 不可修改的OSGi配置 {#unmodifiable-osgi-properties}
+### 不可修改的 OSGi 配置 {#unmodifiable-osgi-properties}
 
-无法修改以下OSGi组件PID的属性，因此不得配置这些PID。
+以下 OSGi 组件 PID 的属性不可修改，因此不得对其进行配置。
 
 | **OSGI 组件 ID** | **不可修改的属性** |
 |---|---|
@@ -475,7 +475,7 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 
 ### 未来强制执行的 OSGi 属性限制 {#future-restrictions-osgi-properties}
 
-将来，Adobe将实施以下OSGi资产限制。 对于提到的PID，只允许配置列出的属性。
+未来，Adobe 将强制执行以下 OSGi 属性限制。对于上述 PID，仅允许配置列出的属性。
 
 | OSGi 组件 PID |   | 必填 | 类型 | 限制（如适用） |
 |---|---|---|---|---|
