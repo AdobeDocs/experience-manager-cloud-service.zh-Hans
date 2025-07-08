@@ -1,20 +1,20 @@
 ---
 title: 使用AEM页面编辑器编辑页面内容
-description: AEM页面编辑器是一个用于创作内容的强大工具。
+description: AEM页面编辑器是用于创作内容的强大工具。
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1628'
 ht-degree: 34%
 
 ---
 
 # 使用AEM页面编辑器编辑页面内容 {#edit-content}
 
-AEM页面编辑器是一个用于创作页面内容的强大工具。 了解如何使用它来就地拖放内容和编辑内容。
+AEM页面编辑器是一款用于创作页面内容的强大工具。 了解如何使用它来就地拖放内容和编辑内容。
 
 ## 概述 {#overview}
 
@@ -32,9 +32,13 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 * [编辑组件布局](#editing-component-layout)
 * [编辑组件继承](#inherited-components)
 
+>[!NOTE]
+>
+>如有必要，您的项目团队可以自定义编辑器。 有关详细信息，请参阅[自定义页面创作](/help/implementing/developing/extending/page-authoring.md)。
+
 ## 添加组件 {#adding-components}
 
-您可以从侧面板[&#128279;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)中的组件浏览器中选择新组件并将它们拖放到组件占位符中，从而将新组件拖放到页面上。
+您可以从侧面板[中的](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)组件浏览器中选择新组件并将它们拖放到组件占位符中，从而将新组件拖放到页面上。
 
 ### 组件占位符 {#component-placeholder}
 
@@ -166,7 +170,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ### 组件编辑对话框 {#component-edit-dialog}
 
-某些组件提供了就地可用内容以外的其他编辑选项。 您可以打开组件的“编辑”对话框，即组件工具栏[&#128279;](#component-toolbar)的编辑（铅笔）图标以访问其他配置选项。
+某些组件提供了就地可用内容以外的其他编辑选项。 您可以打开组件的“编辑”对话框，即组件工具栏[的](#component-toolbar)编辑（铅笔）图标以访问其他配置选项。
 
 确切的编辑选项取决于组件。对于某些组件[，某些操作将仅在全屏模式](#edit-content-full-screen-mode)下可用。 例如：
 
