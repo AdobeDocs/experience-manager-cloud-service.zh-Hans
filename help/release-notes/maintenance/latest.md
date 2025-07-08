@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ ht-degree: 98%
 
 ### 已知问题 {#known-issues-21331}
 
-* SITES-33177：作为逗号分隔字符串存储的节样式已损坏。
+* SITES-33177：以逗号分隔字符串形式存储的章节样式已损坏。
 * SITES-33262：没有名称属性的块会导致页面渲染和发布失败。
 
 ### 已弃用的功能和 API {#deprecated-21331}
