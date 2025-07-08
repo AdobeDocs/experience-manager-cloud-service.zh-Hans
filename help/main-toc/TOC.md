@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6325'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -700,7 +700,7 @@ ht-degree: 99%
       + [AEM Assets 视图 UI 扩展性](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [概述](/help/assets/product-overview.md)
-      + [Content Hub的新增功能](/help/assets/whats-new.md)
+      + [Content Hub 的新增功能](/help/assets/whats-new.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
       + [将品牌认可的资产上传或导入至 Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [配置 Content Hub 用户界面](/help/assets/configure-content-hub-ui-options.md)
