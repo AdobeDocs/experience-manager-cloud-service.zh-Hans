@@ -4,10 +4,10 @@ description: 了解用于自定义通用编辑器的不同选项，以支持内�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 6%
+source-wordcount: '409'
+ht-degree: 2%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 6%
 
 ## 有条件地显示和隐藏属性面板中的组件 {#conditionally-hide}
 
-尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型[&#128279;](/help/implementing/universal-editor/field-types.md#fields)的字段添加`condition`属性来隐藏属性面板中的组件。
+尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型`condition`的[字段添加](/help/implementing/universal-editor/field-types.md#fields)属性来隐藏属性面板中的组件。
 
 可以使用[JsonLogic架构](https://jsonlogic.com/)定义条件。 如果条件为true，则会显示字段。 如果条件为false，则字段将隐藏。
 
@@ -107,9 +107,7 @@ ht-degree: 6%
 
 ## 自定义预览URL {#custom-preview-urls}
 
-您可以通过`urn:adobe:aue:config:preview`元配置指定自定义预览URL，单击[编辑器右上角工具栏](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)中的&#x200B;**打开页面**&#x200B;按钮时，将打开该配置。
-
-这对于具有特定预览要求的应用程序特别有用，例如那些[使用具有所见即所得创作的 Edge Delivery Services 的应用程序](/help/edge/wysiwyg-authoring/authoring.md)。
+您可以通过`urn:adobe:aue:config:preview`元配置指定自定义预览URL，单击&#x200B;**编辑器右上角工具栏**&#x200B;中的[打开页面](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)按钮时，将打开该配置。
 
 要实现此目的，只需将所需的预览URL包含在所检测应用程序的meta标记中，如下例所示。
 
