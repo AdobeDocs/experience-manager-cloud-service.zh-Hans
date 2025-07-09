@@ -4,10 +4,12 @@ description: 了解 Adobe Experience Manager (AEM) 中提供的各种表单创�
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +21,7 @@ Adobe Experience Manager (AEM) 提供了一个灵活的平台，用于创建引�
 
 AEM 提供多种表单创作选项来创建引人入胜的交互式表单。选择表单创作环境时，请考虑以下因素：
 
-| ?? **考虑因素** | ?? **要问什么** |
+| 📝 **注意事项** | 💡 **要问什么** |
 |----------------------|--------------------|
 | **用户专业知识** | 谁将创作表单——开发人员、业务用户还是内容作者？ |
 | **表单复杂性** | 表单是否需要高级规则、动态部分或集成？ |
@@ -81,25 +83,25 @@ AEM 支持多种创作方法，每种方法都适合不同的用户需求、技�
 | **验证码支持** | reCAPTCHA v2/Enterprise、hCaptcha (EA)、Turnstile (EA) | reCAPTCHA v2/Enterprise、hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 需要自定义集成 |
 | **提交功能** | REST 端点、电子邮件、表单数据模型 (FDM)、调用 AEM 工作流、SharePoint, OneDrive, Azure Blob 存储、Power Automate、Workfront Fusion (EA) | REST 端点、电子邮件、表单数据模型 (FDM)、调用 AEM 工作流、SharePoint, OneDrive, Azure Blob 存储、Power Automate、Workfront Fusion (EA) | REST 端点、电子邮件、表单数据模型 (FDM)、调用 AEM 工作流、SharePoint, OneDrive, Azure Blob 存储、Power Automate、Workfront Fusion (EA) | 仅限电子表格 | 自定义 API 端点 |
 | **数据架构** | FDM，自定义 | FDM，自定义 | FDM，自定义 | 自定义 | 自定义 |
-| **预填充** | ✅ | ✅ | ??（通过向导） | ✅ | 自定义实施 |
+| **预填充** | ✅ | ✅ | 💡 （通过向导） | ✅ | 自定义实施 |
 | **片段** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **可视化规则编辑器** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **本地化** | ✅ | ✅ | ??（通过网站） | ℹ️（Excel - 手册，Google Sheets 函数） | 自定义实施 |
-| **数据架构（数据树）** | ✅ | ✅ | ??（通过 UI 扩展） | ❌ | 自定义实施 |
+| **本地化** | ✅ | ✅ | 💡 （通过站点） | ℹ️（Excel - 手册，Google Sheets 函数） | 自定义实施 |
+| **数据架构（数据树）** | ✅ | ✅ | 💡 （通过UI扩展） | ❌ | 自定义实施 |
 | **模板支持** | ✅ | ✅ | 仅初始内容，无策略 | ❌ | 自定义实施 |
 | **门户** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **记录文档创作** | ✅ | ✅ | ??（通过 Derlina） | ❌ | ❌ |
-| **记录文档生成** | ✅ | ✅ | ??（FORMS-2475 新） | ❌ | ❌ |
+| **记录文档创作** | ✅ | ✅ | 💡 （通过Derlina） | ❌ | ❌ |
+| **记录文档生成** | ✅ | ✅ | 💡 (FORMS-2475新版) | ❌ | ❌ |
 | **主题** | ✅ | ✅ | ℹ️（在项目层面） | ℹ️（在项目层面） | 自定义实施 |
 | **自定义组件** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB 与自定义函数** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **片段引用** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Sign 集成** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **RTL 支持** | ❌ | ✅ | ?? | ?? | 自定义实施 |
+| **RTL 支持** | ❌ | ✅ | 💡 | 💡 | 自定义实施 |
 | **试验** | ❌ | ❌ | ✅ | ✅ | 自定义实施 |
 | **通过 Workfront 进行任务管理** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **个性化扩展** | ❌ | ❌ | ?? | ❌ | 自定义实施 |
-| **编辑器自定义** | ❌ | ❌ | ✅（通过 UI 扩展） | ❌ | 自定义实施 |
+| **个性化扩展** | ❌ | ❌ | 💡 | ❌ | 自定义实施 |
+| **编辑器自定义** | ❌ | ❌ | ✅ （通过UI扩展） | ❌ | 自定义实施 |
 | **提交操作** | ✅ | ✅ | ✅ | 仅限电子表格 | 自定义实施 |
 
 
