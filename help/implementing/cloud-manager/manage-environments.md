@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 42%
+source-wordcount: '2474'
+ht-degree: 41%
 
 ---
 
@@ -130,26 +130,29 @@ ht-degree: 42%
 
 如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在将附加发布区域添加到环境之前完成该设置。否则，附加发布区域的流量会通过主要区域的代理。
 
-## 访问环境详细信息 {#viewing-environment}
+## 查看环境的详细信息 {#viewing-environment}
 
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 要访问环境详细信息，请执行以下操作之一：
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击要查看其环境详细信息的程序。
 
-   * 在&#x200B;**概述**&#x200B;页面的左侧菜单中，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**。
+1. 通过执行以下操作之一，列出程序的所有环境：
 
-   ![“环境”信息卡](assets/environments-tab2.png)
+   * 从左侧菜单的&#x200B;**服务**&#x200B;下，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**。
 
-   * 在&#x200B;**环境**&#x200B;信息卡中，单击![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **显示所有**。
+   ![“环境”信息卡](assets/environments-1.png)
 
-     ![显示所有选项](assets/environment-showall.png)
+   * 从左侧菜单的&#x200B;**程序**&#x200B;下，单击&#x200B;**概述**，然后从&#x200B;**环境**&#x200B;信息卡中，单击![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **显示所有**。
 
-   **环境**&#x200B;页面将打开，并列出程序的所有环境。
+     ![显示所有选项](assets/environments-2.png)
 
-   ![“环境”选项卡](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >**环境**&#x200B;信息卡仅列出三个环境。 单击卡片中的&#x200B;**显示全部**&#x200B;以查看程序的&#x200B;*全部*&#x200B;环境。
 
 1. 在环境页面上，执行以下操作之一：
 
-   * 单击列表中的环境以显示其详细信息。
+   * 单击列表中的环境可查看其详细信息。
 
    ![环境详细信息](assets/environ-preview1.png)
 
@@ -157,9 +160,11 @@ ht-degree: 42%
 
    ![查看环境详细信息](assets/view-environment-details.png)
 
->[!NOTE]
->
->**环境**&#x200B;信息卡仅列出三个新环境。 单击卡片中的&#x200B;**显示全部**&#x200B;以查看程序的所有环境。
+
+## 恢复环境的内容(Alpha) {#restore-environment}
+
+请参阅AEM as a Cloud Service[中的](/help/operations/restore.md)内容还原。
+
 
 ### 访问预览服务 {#access-preview-service}
 
@@ -299,9 +304,9 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console**。
 
-有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
 
-单击单个环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)时，也可以从&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡中使用此选项。
+单击单个环境的&#x200B;**更多图标**&#x200B;时，也可以从&#x200B;**概述**&#x200B;窗口的![环境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)选项卡中使用此选项。
 
 ## 本地登录 {#login-locally}
 
@@ -327,7 +332,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 Cloud Manager支持IP允许列表，用于Sites程序的创作、发布和预览服务。
 
-要管理IP允许列表，请导航到程序的&#x200B;**概述**&#x200B;页面的![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**&#x200B;页面。 单击单个环境管理其详细信息。
+要管理IP允许列表，请导航到程序的![概述](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)页面的&#x200B;**数据图标** **环境**&#x200B;页面。 单击单个环境管理其详细信息。
 
 ### 应用IP允许列表 {#apply-ip-allow-list}
 

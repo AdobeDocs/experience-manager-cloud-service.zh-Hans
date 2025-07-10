@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 24%
+source-wordcount: '938'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager提供了一个仪表板，用于轻松查看您的组织或租户�
 
 >[!IMPORTANT]
 >
->许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
+>许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
 >
 >要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
@@ -34,7 +34,7 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 >必须登录具有&#x200B;**业务负责人**&#x200B;角色的用户才能查看许可证仪表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击[Cloud Manager标题](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)。 此操作将显示选项卡。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击![Cloud Manager标题](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)上的[显示菜单图标](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)。 此操作将显示选项卡。
 1. 单击选项卡中的&#x200B;**许可证**&#x200B;选项。
 
 ![许可证功能板](assets/license-dashboard.png)
@@ -77,6 +77,8 @@ Cloud Manager的“许可证”区域中的&#x200B;**查看使用情况详细信
 窗口的左侧显示一个饼图，其中显示在&#x200B;**查看合同年度**&#x200B;下拉列表中选定合同年度的合同细目。
 
 窗口的右侧显示一个面积图，其中显示了所选合同年度内按项目在一段时间内细分的使用情况。 将鼠标悬停在其上方将显示一个弹出窗口，其中包含所选时间点的每个项目的详细信息。
+
+在仪表板页面的右上角附近，您可以单击&#x200B;**下载报表**&#x200B;以将其数据导出为CSV文件。 此下载可简化分析和共享使用趋势。
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}

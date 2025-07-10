@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 26fbc60b1348e8c5f42adc8fd0e596b639fe9b44
+source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 64%
+source-wordcount: '1198'
+ht-degree: 59%
 
 ---
 
@@ -37,34 +37,50 @@ AEM as a Cloud Service中Cloud Manager 2025.7.0的发布日期是2025年7月10�
 
   ![站点使用情况详细信息页面](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+  参阅[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
+
 ## 早期采用者计划 {#private-beta-program}
 
 参与Cloud Manager的Alpha和Beta计划，在正式发布之前独家提前访问即将推出的功能。
 
 当前提供以下机会：
 
-
 ### 管道部署的一键式回滚 {#one-click-rollback}
 
-如果最新的代码无法按预期工作，请快速还原到以前的部署，而无需重新运行完整管道或手动还原提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+如果最新的客户源代码无法按预期工作，请快速还原到以前的部署，而无需重新运行完整管道或手动还原提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+![从环境信息卡](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *环境信息卡还原客户源代码，其中显示选定环境的&#x200B;**还原**>**已部署的先前代码**选项。*
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+![还原先前部署的代码对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的版本，然后单击&#x200B;**确认***。
+
+
+![正在还原激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager将环境回滚到以前的生成，保持内容和配置不变，并标记环境&#x200B;**正在还原**，直到部署完成。*
+
+
+![正在使用的Source代码版本](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *如上所示，“环境”详细信息视图现在也显示了正在使用的活动源代码版本。*
+
+如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[restorecode@adobe.com](mailto:restorecode@adobe.com)发送电子邮件。
+
+另请参阅[AEM as a Cloud Service中的内容还原](/help/operations/restore.md)。
+
+
+### 专用测试环境 {#specialized-test-environment}
+
+Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的新环境类型。该环境旨在帮助团队在正式上线之前在接近生产的条件下验证功能。此环境类型不同于&#x200B;*生产 + 预发布*、*开发*&#x200B;或&#x200B;*快速开发*&#x200B;环境，而是专为运行高级验证场景提供的集中空间。
+
+最近的增强功能：您现在可以通过更简单、更直观的工作流程在非生产管道上配置专门的测试环境。 简化的设置可加快完成过程并减少配置错误。
+
+请参阅[添加专门的测试环境](/help/implementing/cloud-manager/specialized-test-environment.md)。
+
+![“添加环境”对话框中，其中选中了“专门测试环境”单选按钮](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 相关联的电子邮件地址发送电子邮件至 [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)。
+
+
+### 自带 (BYOG) Git - 现支持 Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -105,7 +121,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
