@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: afae63ae84d3807cc3563f6b0fbff73931ff051b
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 27%
@@ -153,7 +153,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 如果您需要[设置自定义身份验证标头以进行本地开发](/help/implementing/universal-editor/developer-overview.md#auth-header)，请选择身份验证标头设置图标。
 
-![身份验证标题设置按钮](assets/authentication-header-settings.png)
+![身份验证标头设置按钮](assets/authentication-header-settings.png)
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 
