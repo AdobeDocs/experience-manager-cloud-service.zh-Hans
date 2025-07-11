@@ -2,10 +2,10 @@
 title: Content Hub 常见问题 (FAQ)
 description: 获取有关 Content Hub 的一些最常见问题 (FAQ) 的答复。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ Content Hub 是 Adobe 提供和维护的一项功能，它没有任何需要通�
 
 在沙盒程序及其作者生产环境中，有一个早期访问 Content Hub 的计划。请参阅[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。若要了解详情有关早期访问计划的更多信息，联系您的 Adobe 帐户团队。
 
-目前，Content Hub 尚不适用于非生产环境（阶段和开发）。Assets Ultimate 的阶段/开发环境预计将于 2025 年 3 月可用。
+目前，Content Hub 尚不适用于非生产环境（阶段和开发）。Assets Ultimate的暂存/开发环境预计将于2025年3月推出。
 
 ## 为什么登录 Content Hub 后我看不到任何资产？ {#no-assets-in-content-hub}
 
@@ -97,3 +97,42 @@ Adobe 提供从 Brand Portal 到 Content Hub 的迁移支持，您可以通过�
 ## 为什么我在 Content Hub 看不到产品设置/配置选项？ {#ui-configuration-option-missing}
 
 要访问[配置用户界面](/help/assets/configure-content-hub-ui-options.md)，您需要成为 [Content Hub 管理员](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)。如果您在 Adobe Admin Console 中的生产作者实例中被分配到 AEM 管理员产品配置文件，但仍然看不到配置选项，请确保 AEM 管理员产品配置文件未重命名。有关更多详细信息，请参阅 [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)。
+
+## Content Hub如何解决Brand Portal的限制？ {#content-hub-brand-portal-comparison}
+
+
+下表概述了两种解决方案之间的主要区别：
+
+| 区域 | 功能 | Content Hub | Brand Portal |
+|---|---|----|----|
+| 配置分发体验 | 为筛选器、资源详细信息以及添加资源页面配置元数据 | ✓ | − |
+|  | 从门户配置外部链接 | ✓ | − |
+|  | 配置横幅消息 | ✓ | ✓ |
+|  | 配置用于品牌推广的横幅图像 | ✓ | ✓ |
+|  | 根据品牌要求为UI配置主颜色和次颜色 | ✓ | − |
+| 从DAM共享资产 | 从DAM共享原始批准的资产 | ✓ | ✓ |
+|  | 已批准资源更改已自动同步 | ✓ | − |
+| 搜索和筛选条件 | 动态筛选器（选项根据显示的资产动态显示） | ✓ | − |
+|  | 搜索历史记录 | ✓ | − |
+| 资产上传 | 本地驱动器 | ✓ | ✓ |
+|  | 上传资源时添加可配置元数据 | ✓ | − |
+| 下载和演绎版 | 下载原始资源 | ✓ | ✓ |
+|  | 从DAM共享和下载静态演绎版 | ✓ | ✓ |
+|  | 下载动态演绎版（预设和智能裁剪） | ✓ | ✓ |
+|  | 能够限制查看和下载已过期的资源 | ✓ | − |
+| 链接共享和收藏集 | 登录用户的链接共享 | ✓ | ✓ |
+|  | 公共收藏集 | ✓ | ✓ |
+|  | 在收藏集中搜索 | ✓ | − |
+|  | 匿名链接共享 | ✓ | ✓ |
+|  | 专用收藏集 | ✓ | ✓ |
+| 权限 | 基于ACL的权限 | − | ✓ |
+|  | 基于属性的访问控制 | ✓ | − |
+| Express集成 | 在Adobe Express中编辑Content Hub Assets并保存到DAM | ✓ | − |
+| 功能板和报表 | 分析仪表板 | ✓ | − |
+| UI 可扩展性 | 资源详细信息页面上的自定义扩展点 | 有限可用性 | − |
+| 创新即将推出 | 收藏夹（按用户） | ✓ | − |
+|  | 管理员固定的收藏集 | ✓ | − |
+|  | 语义搜索 | ✓ | − |
+|  | 本地化的搜索和元数据显示 | ✓ | − |
+
+

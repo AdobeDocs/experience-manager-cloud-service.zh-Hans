@@ -3,10 +3,10 @@ title: 将品牌批准的资产上传到 [!DNL Content Hub]
 description: 了解如何将品牌批准的资产上传到Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 14%
+source-wordcount: '761'
+ht-degree: 17%
 
 ---
 
@@ -61,21 +61,6 @@ Assets as a Cloud Service中标记为`Approved`的资源在Content Hub中自动�
 1. 单击&#x200B;**[!UICONTROL 上传]**&#x200B;以将资源上传到Content Hub。 [!UICONTROL 查看详细信息]确认框出现。 单击[!UICONTROL 继续]。
 
 1. Assets开始上传。 单击[!UICONTROL 新建上载]以重新启动上载过程。 单击[!UICONTROL 完成]以完成上载。
-
-管理员还可以配置上传资产时显示的必填和可选字段，例如营销策划名称、关键字、渠道等。 有关详细信息，请参阅[配置Content Hub用户界面](configure-content-hub-ui-options.md#configure-upload-options-content-hub)。
-
-
-## 将资源从OneDrive或Dropbox数据源添加到Content Hub {#add-assets-onedrive-dropbox}
-
-要将资源从OneDrive或Dropbox数据源添加到Content Hub，请执行以下操作：
-
-1. 单击&#x200B;**[!UICONTROL 添加Assets]**&#x200B;以查看&#x200B;**[!UICONTROL 添加已批准的资源]**&#x200B;对话框，该对话框允许您从OneDrive或Dropbox导入资源。
-
-1. 单击&#x200B;**[!UICONTROL OneDrive]**&#x200B;或&#x200B;**[!UICONTROL Dropbox]**&#x200B;开始导入过程。 Content Hub会提示您登录OneDrive或Dropbox帐户，然后在左窗格中显示您的OneDrive或Dropbox文件夹结构。
-
-1. 单击文件旁边的+图标或文件夹名称，以查看选定项目列表中的项目。 选择需要添加到Content Hub门户的所有文件后，重复步骤3至6[从本地文件系统](#add-assets-local-file-system)将资源添加到Content Hub以完成上传过程。
-
-   ![从OneDrive或Dropbox将资源上传到Content Hub](assets/add-assets-onedrive-dropbox.png)
 
 管理员还可以配置上传资产时显示的必填和可选字段，例如营销策划名称、关键字、渠道等。 有关详细信息，请参阅[配置Content Hub用户界面](configure-content-hub-ui-options.md#configure-upload-options-content-hub)。
 
