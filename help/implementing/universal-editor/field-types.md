@@ -4,9 +4,9 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1568'
 ht-degree: 11%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 11%
 ]
 ```
 
-有关如何定义`fields`数组的详细信息，请参阅本文档的&#x200B;**[字段](#fields)**&#x200B;部分。
+有关如何定义&#x200B;**[数组的详细信息，请参阅本文档的](#fields)**&#x200B;字段`fields`部分。
 
 您可以通过两种方式将模型链接到组件：使用[组件定义](#component-definition)或通过检测使用[。](#instrumentation)
 
@@ -49,7 +49,7 @@ ht-degree: 11%
 
 这是将模型链接到组件的首选方法。 通过执行此操作，您可以在组件定义中集中维护链接，并允许在容器之间拖动组件。
 
-只需在`component-definition.json`文件的`components`数组中的组件对象中包含`model`属性即可。
+只需在`model`文件的`components`数组中的组件对象中包含`component-definition.json`属性即可。
 
 有关详细信息，请参阅文档[组件定义。](/help/implementing/universal-editor/component-definition.md)
 
@@ -101,7 +101,7 @@ ht-degree: 11%
 | `readOnly` | `boolean` | 字段是否为只读 | 否 |
 | `hidden` | `boolean` | 默认情况下是否隐藏字段 | 否 |
 | `condition` | `RulesLogic` | 根据[条件](/help/implementing/universal-editor/customizing.md#conditionally-hide)显示或隐藏字段的规则 | 否 |
-| `multi` | `boolean` | 字段是否为多字段 | 否 |
+| `multi` | `boolean` | 字段是否为多字段<br/>请注意，属性面板中的多字段不允许容器嵌套 | 否 |
 | `validation` | `ValidationType` | 字段的验证规则 | 否 |
 | `raw` | `unknown` | 组件可以使用的原始数据 | 否 |
 
@@ -289,7 +289,7 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
 
 #### 容器 {#container}
 
-容器组件类型允许对包括多字段支持的组件进行分组。 它提供了额外的配置。
+容器组件类型允许对包括多字段支持的组件进行分组。 它提供了额外的配置。 请注意，属性面板中的多个字段不允许进行容器嵌套
 
 | 配置 | 值类型 | 描述 | 必填 |
 |---|---|---|---|

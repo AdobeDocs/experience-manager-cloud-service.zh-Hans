@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 20%
 
 ---
@@ -129,6 +129,8 @@ ht-degree: 20%
 1. 然后，在属性面板中选择添加图标。
 
    ![选择“添加”图标](assets/add-icon.png)
+
+1. 如果容器允许多个组件，请从下拉列表中选择要插入的组件。 如果只允许一个组件，则会自动插入该组件。
 
 该组件被插入到容器中并可以在编辑器中进行编辑。
 
