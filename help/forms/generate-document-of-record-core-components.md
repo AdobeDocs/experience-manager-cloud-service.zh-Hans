@@ -4,9 +4,9 @@ description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3207'
 ht-degree: 1%
 
 ---
@@ -290,7 +290,7 @@ When you select a form model, configure Document of Record using options availab
 
 **字段的样式约定**
 
-* 要对记录文档中的字段应用样式，基础模板提供位于`AF_METATEMPLATE`根子表单下的`AF_FIELDSSUBFORM`子表单中的字段。
+* 要对记录文档中的字段应用样式，基础模板提供位于`AF_FIELDSSUBFORM`根子表单下的`AF_METATEMPLATE`子表单中的字段。
 
 * 这些字段的属性应用于记录文档中的字段。 这些字段应遵循`AF_<name of field in all caps>_XFO`命名约定。 例如，复选框的字段名称应为`AF_CHECKBOX_XFO`。
 
@@ -380,7 +380,13 @@ When you select a form model, configure Document of Record using options availab
 
 1. 要保存品牌策略更改，请选择&#x200B;**[!UICONTROL 完成]**。
 
-
+>[!NOTE]
+> 
+> 要在记录文档中显示自定义表单标题，请在&#x200B;**记录文档属性** > **母版页属性**&#x200B;中编辑&#x200B;**自定义表单标题**。 此自定义标题：
+> 
+> * 在生成的PDF的标题中显示
+> * 在PDF的文档属性中显示为标题
+> * 在打开PDF时显示为初始视图标题
 
 ## 记录文档中面板的表格和列布局 {#table-and-column-layouts-for-panels-in-document-of-record}
 

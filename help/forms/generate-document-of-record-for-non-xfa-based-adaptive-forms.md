@@ -4,9 +4,9 @@ description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4225'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
@@ -309,7 +309,7 @@ When you select a form model, configure Document of Record using options availab
 
 **字段的样式约定**
 
-* 要对记录文档中的字段应用样式，基础模板提供位于`AF_METATEMPLATE`根子表单下的`AF_FIELDSSUBFORM`子表单中的字段。
+* 要对记录文档中的字段应用样式，基础模板提供位于`AF_FIELDSSUBFORM`根子表单下的`AF_METATEMPLATE`子表单中的字段。
 
 * 这些字段的属性应用于记录文档中的字段。 这些字段应遵循`AF_<name of field in all caps>_XFO`命名约定。 例如，复选框的字段名称应为`AF_CHECKBOX_XFO`。
 
@@ -396,6 +396,14 @@ When you select a form model, configure Document of Record using options availab
 
 1. 要保存品牌策略更改，请选择&#x200B;**[!UICONTROL 完成]**。
 
+>[!NOTE]
+> 
+> 要在记录文档中显示自定义表单标题，请在&#x200B;**记录文档属性** > **母版页属性**&#x200B;中编辑&#x200B;**自定义表单标题**。 此自定义标题：
+> 
+> * 在生成的PDF的标题中显示
+> * 在PDF的文档属性中显示为标题
+> * 在打开PDF时显示为初始视图标题
+
 ## 自适应表单编辑器中的记录文档支持 {#dor-support-in-adaptiveform}
 
 可直接从自适应表单编辑器或自适应表单模板编辑器配置[!UICONTROL 记录文档]模板。
@@ -450,7 +458,7 @@ When you select a form model, configure Document of Record using options availab
 **表单级别设置**
 
 * **包括DoR中未绑定的字段：**&#x200B;设置属性包括记录文档中基于架构的自适应表单中未绑定的字段。 默认情况下，它为true。
-* **如果隐藏，则从DoR中排除字段：**&#x200B;设置属性以在提交表单时从记录文档中排除隐藏字段。 在服务器[&#128279;](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上启用重新验证时，服务器会先重新计算隐藏字段，然后再从记录文档中排除这些字段。
+* **如果隐藏，则从DoR中排除字段：**&#x200B;设置属性以在提交表单时从记录文档中排除隐藏字段。 在服务器[上启用](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)重新验证时，服务器会先重新计算隐藏字段，然后再从记录文档中排除这些字段。
 
 ## 使用自定义XCI文件
 

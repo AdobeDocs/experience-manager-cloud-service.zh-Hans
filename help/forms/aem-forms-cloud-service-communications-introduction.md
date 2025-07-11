@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 34%
+source-wordcount: '2663'
+ht-degree: 28%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 34%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM文档服务概述](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hans)
+> * **AEM 6.5**： [AEM文档服务概述](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：本文
 
 ## 简介
@@ -44,7 +44,7 @@ Communications API提供了一组全面的文档处理功能，可划分为以�
 
 ## 文档生成
 
-通信文档生成 API 有助于将模板（XFA 或 PDF）与客户数据（XML）相结合，生成 PDF 和打印格式（如 PS、PCL、DPL、IPL 和 ZPL 格式）的文档。这些 API 将 PDF 和 XFA 模板与 [XML 数据](communications-known-issues-limitations.md#form-data)结合使用，按需生成单个文档或使用批处理作业生成多个文档。
+通信文档生成API帮助将模板(XFA或PDF)与客户数据(XML)相结合，以生成PDF、AFP（高级功能演示）和打印格式（如PS、PCL、DPL、IPL和ZPL格式）的文档。 这些API使用带有[XML数据](communications-known-issues-limitations.md#form-data)的PDF和XFA模板来根据需要生成单个文档，或使用批处理作业生成多个文档。
 
 通常，您使用 [Designer](use-forms-designer.md) 创建模板，并使用通信 API 将数据与模板合并。您的应用程序可以将输出文档发送到网络打印机、本地打印机或存储系统以进行存档。典型的现成和自定义工作流如下所示：
 
@@ -54,14 +54,28 @@ Communications API提供了一组全面的文档处理功能，可划分为以�
 
 ### 关键文档生成功能
 
-#### 创建 PDF 文档 {#create-pdf-documents}
+#### 创建PDF/AFP电子格式的文档
 
-您可以使用文档生成 API 创建基于表单设计和 XML 表单数据的 PDF 文档。输出是非交互式 PDF 文档。也就是说，用户无法输入或修改表单数据。基本工作流是将 XML 表单数据与表单设计合并来创建 PDF 文档。下图说明如何合并表单设计和 XML 表单数据以生成 PDF 文档。
+您可以使用文档生成API创建基于表单设计和XML表单数据的PDF或AFP格式文档。 输出是非交互式文档。 也就是说，用户无法输入或修改表单数据。一个基本的工作流程是将XML表单数据与表单设计合并，以创建文档。 下图说明如何合并表单设计和 XML 表单数据以生成 PDF 文档。
 
-![创建 PDF 文档](assets/outPutPDF_popup.png)
-图：典型的 PDF 文档创建工作流
+![创建PDF文档](assets/outPutPDF_popup.png)
+图：创建文档的典型工作流
 
-文档生成API返回生成的PDF文档。 您还可以选择将生成的PDF上传到Azure Blob Storage。
+下表显示了AFP格式与PDF格式之间的差异：
+
+| **功能** | **AFP（高级函数演示）** | **PDF（可移植文档格式）** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **用途** | 大量印刷和制作交易文件 | 通用文档共享和查看 |
+| **用例** | 银行对帐单、票据、发票、保险单据 | 电子书、表格、报告、简历、手册 |
+| **平台来源** | 由IBM开发 | 由 Adobe 开发 |
+| **结构** | 具有结构化字段和对象的面向页面的格式 | 面向页面，但布局固定 |
+| **可编辑性** | 专为生产打印而设计，很少进行编辑 | 可使用各种工具进行编辑，例如Adobe Acrobat |
+| **文件大小和性能** | 针对高速打印环境的性能而优化 | 对于批量输出，可能会更大，优化程度更低 |
+| **交互性** | 最小到无；静态页面 | 支持交互式元素，如表单、链接、JavaScript |
+| **输出控件** | 对打印机布局的细粒度控制 | 针对屏幕和打印优化的可视布局 |
+| **字体和图形** | 使用字体和资源引用；需要渲染器来解释 | 将字体和图像直接嵌入到文件中 |
+
+文档生成API返回生成的PDF文档或AFP文档。 您还可以选择将生成的PDF上传到Azure Blob Storage。
 
 <span class="preview">使用文档生成API将生成的PDF上传到Azure Blob Storage功能位于[早期采用者计划](/help/forms/early-access-ea-features.md)下。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54fedd6eb2abe4f60af20c39ac70e21378687b45
+source-git-commit: abee266772fc2b09d59a2fa4dcc6a60ba3fe1752
 workflow-type: tm+mt
-source-wordcount: '6343'
+source-wordcount: '6351'
 ht-degree: 99%
 
 ---
@@ -908,6 +908,7 @@ ht-degree: 99%
    + 交互式通信 {#interactive-communocation}
       + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
       + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
+      + [使用AEM Forms API生成AFP输出](/help/forms/document-generation-afp-api.md)
       + [常见问题解答](/help/forms/interactive-communications-faq.md)
    + 以 Form 为中心的工作流  {#create-form-centric-workflows}
       + [以 Form 为中心的工作流简介](/help/forms/aem-forms-workflow.md)

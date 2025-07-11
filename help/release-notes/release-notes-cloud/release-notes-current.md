@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: ht
-source-wordcount: '1332'
-ht-degree: 100%
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+workflow-type: tm+mt
+source-wordcount: '1810'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -59,6 +59,33 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 Content Hub 现在允许您[在创建过程中控制对收藏集的访问权限，确保只有授权用户才能查看或管理分组资产](/help/assets/collections-content-hub.md##create-collections)。它确保了安全性的提升、协作的优化、资产管理的有序化以及治理的简化。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+* [自适应Forms和表单片段的通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：通用编辑器现在支持创建自适应Forms和可重用的表单片段。 作者能够以可视方式构建表单、配置提交操作和添加reCAPTCHA验证，所有这些都可以在简化的WYSIWYG创作环境中完成。 此功能可加快表单创建、增强一致性，并增强针对垃圾邮件和自动滥用的保护。
+
+### 预发行版功能
+
+* [从自适应Forms生成并同步AFP演绎版](/help/forms/document-generation-afp-api.md)： AFP输出同步API使管理员和用户能够从自适应Forms生成AFP（高级函数演示）输出，并将输出与外部系统或存储位置同步。 AFP是一种针对打印而优化的高性能文档格式，通常用于大型企业环境中。
+
+* [SharePoint 文档库 - 使用原始文件名保存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：现在，您可以选择使用表单附件的原始文件名将其保存在 SharePoint 文档库中。此增强功能简化了上传文件的识别和管理。
+
+* **规则编辑器**：
+   * [“When”子句中带有单击事件的二进制条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：规则编辑器现在允许您在“When”子句中将按钮单击事件（_Is Clicked_）与其他条件相结合。这样就可以根据用户交互和其他因素更精确地控制规则的执行。注意：如果使用多个条件，单击事件必须是列出的第一个条件。
+   * [字段和面板的验证条件](/help/forms/rule-editor-core-components-usecases.md)：规则编辑器现在包括 _IsValid_ 和 _IsNotValid_ 两个条件。这些条件允许您检查特定字段或整个面板（包括水平选项卡、垂直选项卡、可折叠项和向导等布局方法）的验证状态，从而根据验证结果改善表单导航和用户体验。
+* [改进了 SharePoint 列表的范围管理](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint 网站现在支持所有管理路径，例如 /sites 和 /teams。这一增强功能有助于更加广泛地集成不同的 SharePoint 网站结构，为连接组织内容提供了更大的灵活性。
+* [支持将记录文档保存到 SharePoint 列表](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：使用基于 SharePoint 列表的表单数据模型 (FDM) 创建的表单现在可以通过配置记录文档绑定引用字段属性将记录文档 (DoR) 保存到 SharePoint 列表。此增强功能可将受支持的表单数据和文档与 SharePoint 存储无缝集成。
+
+### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
+
+AEM Forms Early Access Program 项目为您提供了一个独特的机会，让您可以独家访问尖端创新技术，并帮助塑造其发展。
+
+本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
+
+#### Adobe Experience Platform (AEP) 与 Forms 集成
+
+* [AEM Forms与Adobe Experience Platform的集成](/help/forms/aem-forms-aep-connector.md)： AEM Forms到Adobe Experience Platform的连接器实现了自适应Forms与Adobe Experience Platform之间的无缝集成。 此功能允许将表单数据映射到XDM架构并实时直接提交到AEP。 它简化了跨Adobe Experience Cloud解决方案的个性化和激活用例的数据捕获。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

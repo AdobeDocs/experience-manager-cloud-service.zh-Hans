@@ -4,17 +4,17 @@ description: 自适应Forms规则编辑器帮助用户编写规则，以根据�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
+source-git-commit: 7d5e9690d84d2389576eb85b2030271b76588488
 workflow-type: tm+mt
 source-wordcount: '2298'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
+# 基于核心组件的自适应表单规则编辑器简介
 
-# 基于核心组件的自适应Forms的规则编辑器用户界面
-
-基于核心组件的自适应Forms的规则编辑器用户界面增强了Adobe Experience Manager (AEM)中的表单创建过程。 它使商业用户和开发人员能够通过编写规则来根据预定义的条件、用户输入和交互触发操作，从而将动态行为和复杂逻辑实施到表单中。 此功能支持现代JavaScript功能（包括ES10功能），并提供了一个直观的可视化编辑器，从而简化了规则编写过程。
+基于核心组件的自适应Forms的规则编辑器用户界面增强了Adobe Experience Manager (AEM)中的表单创建过程。 它使商业用户和开发人员能够通过编写规则来根据预定义的条件、用户输入和交互触发操作，从而将动态行为和复杂逻辑实施到表单中。 此功能支持到ES2022的现代JavaScript功能，并提供一个直观的可视化编辑器，从而简化规则编写过程。
 规则编辑器有助于简化表单填写体验，确保准确性和效率。 它允许验证或重置面板和表单，并执行自定义函数以计算表单对象的值。 由于规则编辑器用户界面支持嵌套条件和能够调用表单数据模型服务，因此它是创建响应式、用户友好和自适应表单的关键组件。
 
 ## 了解规则编辑器用户界面 {#understanding-the-rule-editor-user-interface}
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ### C.表单对象和功能切换 {#c-form-objects-and-functions-toggle-br}
 
-点按切换按钮可切换表单对象和函数窗格。
+点击切换按钮，可切换表单对象和功能窗格。
 
 ### D.可视规则编辑器 {#visual-rule-editor}
 
@@ -85,7 +85,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按钮 {#done-and-cancel-buttons}
 
-**[!UICONTROL Done]**&#x200B;按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整部分无效，因此不会运行。 当您下次从同一表单对象启动规则编辑器时，会列出表单对象中已保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅[管理规则](rule-editor.md#p-manage-rules-p)。
+**[!UICONTROL 完成]**&#x200B;按钮用于保存规则。您可以保存不完整的规则。 但是，不完整部分无效，因此不会运行。 当您下次从同一表单对象启动规则编辑器时，会列出表单对象中已保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅[管理规则](rule-editor.md#p-manage-rules-p)。
 
 使用&#x200B;**[!UICONTROL 取消]**&#x200B;按钮可放弃对规则所做的任何更改并关闭规则编辑器。
 
@@ -134,7 +134,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的]** Warbant Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
@@ -147,14 +147,14 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. 在Else语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![when-else](assets/when-else-1.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的]** Warbant Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**字段，该字段列出了表单中的所有表单对象。
    ![when-else](assets/when-else-2.png)
 
    规则在规则编辑器中如下所示。
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7-cc.png)
 
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
 
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
@@ -175,25 +175,25 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. 选择&#x200B;**[!UICONTROL 选择选项]**&#x200B;并选择&#x200B;**[!UICONTROL 数学表达式]**。 用于编写数学表达式的字段打开。
+1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。打开用于编写数学表达式的字段。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
 1. 在表达式字段中：
 
-   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B; Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的]** Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 加号]**。
 
-   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**&#x200B;[!UICONTROL &#x200B; Berphor Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的]** Berphor Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. 接下来，在表达式字段周围高亮显示的区域中选择，然后选择&#x200B;**[!UICONTROL 扩展表达式]**。
+1. 接下来，选择表达式字段周围的突出显示区域，并选择&#x200B;**[!UICONTROL 扩展表达式]**。
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   在扩展表达式字段中，从&#x200B;**[!UICONTROL Select Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL 除以]**&#x200B;并从&#x200B;**[!UICONTROL Select Option]**&#x200B;字段中选择&#x200B;**[!UICONTROL Number]**。 然后在数字字段中指定&#x200B;**[!UICONTROL 2]**。
+   在扩展表达式字段中，从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 除以]**，并从&#x200B;**[!UICONTROL 选择选项]**&#x200B;字段中选择&#x200B;**[!UICONTROL 数字]**。然后在数字字段中指定&#x200B;**[!UICONTROL 2]**。
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -209,7 +209,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    在When语句中：
 
-   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B;婚姻状况&#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
+   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的]**&#x200B;婚姻状况&#x200B;**[!UICONTROL 字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL Select Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL 等于]**。
 
@@ -238,7 +238,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -257,7 +257,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### 规则编辑器中的自定义函数 {#custom-functions}
 
-除了在&#x200B;**函数输出**&#x200B;下列出的现成函数（如&#x200B;*总和*）之外，您还可以在规则编辑器中使用自定义函数。 规则编辑器支持脚本和自定义函数的JavaScript ECMAScript 2019语法。 有关创建自定义函数的说明，请参阅文章[自适应Forms中的自定义函数](/help/forms/create-and-use-custom-functions.md)。
+除了在&#x200B;*函数输出*&#x200B;下列出的现成函数（如&#x200B;**总和**）之外，您还可以在规则编辑器中使用自定义函数。 规则编辑器支持脚本和自定义函数的JavaScript ECMAScript 2019语法。 有关创建自定义函数的说明，请参阅文章[自适应Forms中的自定义函数](/help/forms/create-and-use-custom-functions.md)。
 
 <!--
 
@@ -340,7 +340,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -474,7 +474,7 @@ var c = {
    >
    >仅当表单对象支持复制的规则事件时，才能将规则粘贴到另一个表单对象。 例如，按钮支持click事件。 您可以将包含点击事件的规则粘贴到按钮，但不能粘贴到复选框。
 
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
 
 ## 后续步骤
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.4.0 版�
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 99%
+source-wordcount: '1828'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 请查看 2025 年 4 月发布概述视频，了解 2025.4.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464012?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -81,19 +81,21 @@ AEM as a Cloud Service 上的 Dynamic Media (Scene7) 没有为 HIPAA 做好准�
 
 ![比较资产的版本](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### 预发行版功能
 
-* [通用编辑器 - 表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)：通用编辑器现在允许您为自适应表单创建和重复使用表单片段。这些片段是可重复使用的表单部分（例如，联系方式、同意字段），只需构建一次即可应用于多个表单。此功能简化了表单创建，确保了一致性，提高了创作效率。
+* [自适应Forms和表单片段的通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：通用编辑器现在支持创建自适应Forms和可重用的表单片段。 作者能够以可视方式构建表单、配置提交操作和添加reCAPTCHA验证，所有这些都可以在简化的WYSIWYG创作环境中完成。 此功能可加快表单创建、增强一致性，并增强针对垃圾邮件和自动滥用的保护。
 
 * [SharePoint 文档库 - 使用原始文件名保存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：现在，您可以选择使用表单附件的原始文件名将其保存在 SharePoint 文档库中。此增强功能简化了上传文件的识别和管理。
 
 * **规则编辑器**：
    * [“When”子句中带有单击事件的二进制条件](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor)：规则编辑器现在允许您在“When”子句中将按钮单击事件（_Is Clicked_）与其他条件相结合。这样就可以根据用户交互和其他因素更精确地控制规则的执行。注意：如果使用多个条件，单击事件必须是列出的第一个条件。
    * [字段和面板的验证条件](/help/forms/rule-editor-core-components-usecases.md)：规则编辑器现在包括 _IsValid_ 和 _IsNotValid_ 两个条件。这些条件允许您检查特定字段或整个面板（包括水平选项卡、垂直选项卡、可折叠项和向导等布局方法）的验证状态，从而根据验证结果改善表单导航和用户体验。
-* **改进了 SharePoint 列表的范围管理**：SharePoint 网站现在支持所有管理路径，例如 /sites 和 /teams。这一增强功能有助于更加广泛地集成不同的 SharePoint 网站结构，为连接组织内容提供了更大的灵活性。
-* **支持将记录文档保存到 SharePoint 列表**：使用基于 SharePoint 列表的表单数据模型 (FDM) 创建的表单现在可以通过配置记录文档绑定引用字段属性将记录文档 (DoR) 保存到 SharePoint 列表。此增强功能可将受支持的表单数据和文档与 SharePoint 存储无缝集成。
+* [改进了 SharePoint 列表的范围管理](/help/forms/connect-forms-to-sharepoint-list.md)：SharePoint 网站现在支持所有管理路径，例如 /sites 和 /teams。这一增强功能有助于更加广泛地集成不同的 SharePoint 网站结构，为连接组织内容提供了更大的灵活性。
+* [支持将记录文档保存到 SharePoint 列表](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields)：使用基于 SharePoint 列表的表单数据模型 (FDM) 创建的表单现在可以通过配置记录文档绑定引用字段属性将记录文档 (DoR) 保存到 SharePoint 列表。此增强功能可将受支持的表单数据和文档与 SharePoint 存储无缝集成。
+* [自适应表单片段的自动映射支持](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)：当架构对象与定义的片段结构对齐时，自适应Forms现在支持自动插入匹配片段，从而简化表单创建并促进重用。
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
@@ -103,7 +105,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 #### Adobe Experience Platform (AEP) 与 Forms 集成
 
-Forms 与 AEP 的集成功能现在可供早期采用者使用。
+* [AEM Forms与Adobe Experience Platform的集成](/help/forms/aem-forms-aep-connector.md)： AEM Forms到Adobe Experience Platform的连接器实现了自适应Forms与Adobe Experience Platform之间的无缝集成。 此功能允许将表单数据映射到XDM架构并实时直接提交到AEP。 它简化了跨Adobe Experience Cloud解决方案的个性化和激活用例的数据捕获。
 
 ## CIF 加载项 {#cloud-services-cif}
 
