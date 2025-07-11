@@ -1,18 +1,18 @@
 ---
-title: AEM as a Cloud Service 中的内容恢复
+title: 在AEM as a Cloud Service中恢复内容
 description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 32%
+source-wordcount: '1359'
+ht-degree: 29%
 
 ---
 
 
-# AEM as a Cloud Service中的内容恢复 {#content-restore}
+# 在AEM as a Cloud Service中恢复内容 {#content-restore}
 
 您可以使用Cloud Manager从备份中恢复AEM as a Cloud Service内容。
 
@@ -20,7 +20,7 @@ ht-degree: 32%
 
 Cloud Manager 的自助恢复过程将数据从 Adobe 系统备份中复制并还原到其原始环境。执行恢复，将丢失、损坏或意外删除的数据返回到其原始状态。
 
-恢复过程只影响内容，而不会更改您的代码和 AEM 版本。您可以随时启动单个环境的恢复操作。
+恢复过程只影响内容，而不会更改您的代码和 AEM 版本。您可以随时启动单个环境的恢复操作。 （如果您需要轻松快速地恢复以前部署的源代码，而无需启动新的管道执行，则可以使用[恢复以前部署的代码](/help/operations/restore-previous-code-deployed.md)）。
 
 Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
@@ -87,7 +87,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
      >
      >**环境**&#x200B;信息卡仅列出三个环境。 单击卡片中的&#x200B;**显示全部**&#x200B;以查看程序的&#x200B;*全部*&#x200B;环境。
 
-1. 在“环境”表格中，在要恢复其内容的环境的右侧，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**恢复内容**。
+1. 在“环境”表格中，在要恢复其内容的环境的右侧，单击![更多图标或省略号菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**恢复内容**。
 
    从省略号菜单![还原内容选项](/help/operations/assets/environments-ellipsis-menu.png)
 
