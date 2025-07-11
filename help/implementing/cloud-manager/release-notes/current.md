@@ -49,11 +49,11 @@ AEM as a Cloud Service中Cloud Manager 2025.7.0的发布日期是2025年7月10�
 
 如果最新的客户源代码无法按预期工作，请快速还原到以前的部署，而无需重新运行完整管道或手动还原提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从环境信息卡](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *环境信息卡还原客户源代码，其中显示选定环境的&#x200B;**还原**>**已部署的先前代码**选项。*
+![从环境信息卡](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *环境信息卡还原客户源代码，其中显示选定环境的&#x200B;**还原**>**已部署的先前代码**&#x200B;选项。*
 
 
 ![还原先前部署的代码对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的版本，然后单击&#x200B;**确认***。
+*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的版本，然后单击&#x200B;**确认***。
 
 
 ![正在还原激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
@@ -123,7 +123,7 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
