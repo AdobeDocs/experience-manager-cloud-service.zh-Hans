@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->>本文中介绍的功能只能通过早期采用者alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>&#x200B;>本文中介绍的功能只能通过早期采用者alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
 
 使用&#x200B;**还原先前部署的代码**&#x200B;将环境立即回滚到其上次成功生成 — 无需运行管道。
 
