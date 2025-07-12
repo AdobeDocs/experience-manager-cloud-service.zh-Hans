@@ -4,9 +4,10 @@ description: 了解如何将环境恢复到其上次成功构建&amp；ndash；�
 feature: Operations
 role: Admin
 badge: label="英文字母" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
-source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
+exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
+source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->&#x200B;>本文中介绍的功能只能通过早期采用者alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>本文中介绍的功能只能通过早期采用者alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
 
 使用&#x200B;**还原先前部署的代码**&#x200B;将环境立即回滚到其上次成功生成 — 无需运行管道。
 
@@ -31,10 +32,10 @@ ht-degree: 4%
 
 * 您拥有&#x200B;**环境还原创建**&#x200B;权限。 有关管理权限的详细信息，请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)。
 * 您的组织已注册率先采用者计划，并且功能标志已打开。
-* 程序在&#x200B;**AEM as a Cloud Service**&#x200B;上运行。
-* 所选环境是&#x200B;**开发**&#x200B;环境(临时Alpha限制)。
-* 该环境的最后一个管道已成功完成&#x200B;**个**，运行时间少于&#x200B;**10天**&#x200B;前。
-* 环境状态为&#x200B;**正在运行**，没有管道正在进行中。
+* 程序在AEM as a Cloud Service上运行。
+* 选择的环境是`Development`环境(临时Alpha限制)。
+* 该环境的最后一个管道已成功完成，并在&#x200B;**天内**&#x200B;前运行。
+* 环境状态为&#x200B;*正在运行*，没有管道正在进行中。
 * 您要还原的目标源代码版本已在30天内&#x200B;**部署**。
 
 如果任何检查失败，Cloud Manager将打开以下对话框，其中列出了一个或多个未满足的条件，并禁用&#x200B;**确认**，从而阻止还原。
