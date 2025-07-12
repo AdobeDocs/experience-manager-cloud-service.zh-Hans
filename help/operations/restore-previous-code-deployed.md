@@ -1,13 +1,13 @@
 ---
-title: 恢复之前在AEM as a Cloud Service中部署的Source代码
+title: 恢复之前部署的Source代码
 description: 了解如何将环境恢复到其上次成功构建&amp；ndash；而无需运行管道。
 feature: Operations
 role: Admin
 badge: label="英文字母" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 3%
+source-wordcount: '523'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>本文中介绍的功能只能通过早期采用者alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>>本文中介绍的功能只能通过早期采用者alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
 
 使用&#x200B;**还原先前部署的代码**&#x200B;将环境立即回滚到其上次成功生成 — 无需运行管道。
 
