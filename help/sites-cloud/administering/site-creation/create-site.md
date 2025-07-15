@@ -5,36 +5,25 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 80%
+source-wordcount: '726'
+ht-degree: 55%
 
 ---
 
-# 创建站点 {#creating-site}
 
-{{traditional-aem}}
+# 创建站点 {#creating-site}
 
 了解如何使用 AEM 创建站点，并使用站点模板定义站点的样式和结构。
 
 ## 概述 {#overview}
 
-必须先创建站点，之后内容作者才能创建包含内容的页面。这通常由定义初始站点结构的 AEM 管理员执行。使用站点模板可以快速灵活地创建站点。
-
-借助AEM快速站点创建工具，非开发人员可以使用站点模板从头开始快速创建站点。
-
-创建后，还可利用快速 Site 创建工具快速自定义 AEM Site 的主题和样式（JavaScript、CSS 和静态资源）。这样一来，无需了解 AEM 的前端开发人员既可独立于内容创建者工作，又可与内容创建者并行工作。AEM 管理员只需下载站点主题并将它提供给前端开发人员，后者会使用他们喜欢的工具来自定义站点主题，再将更改提交到 AEM 代码存储库，随后进行部署。
-
-本文档重点介绍如何使用快速站点创建工具来创建站点。如果您希望大致了解站点创建和自定义工作流，请参阅 [AEM 快速站点创建历程](/help/journey-sites/quick-site/overview.md)
+必须先创建站点，之后内容作者才能创建包含内容的页面。这通常由定义初始站点结构的 AEM 管理员执行。使用站点模板可以使非开发人员快速灵活地创建站点。
 
 ## 规划站点结构 {#structure}
 
-花点时间提前考虑您站点的目的以及规划的内容。这将改善站点结构的设计方式。良好的站点结构有助于站点访客轻松导航和探索内容，并支持各种 AEM 功能，例如[多站点管理和翻译。](/help/sites-cloud/administering/msm-and-translation.md)
-
->[!TIP]
->
->[WKND 参考站点](https://wknd.site)提供功能齐全的户外体验品牌网站的最佳实践实施。探索该站点，了解构建良好的 AEM 站点的结构。
+花点时间提前考虑您站点的目的以及规划的内容。这将改善站点结构的设计方式。良好的站点结构支持站点访客轻松导航和发现内容，并支持各种AEM功能，如[多站点管理和翻译。](/help/sites-cloud/administering/msm-and-translation.md)
 
 ## 站点模板 {#site-templates}
 
@@ -44,11 +33,15 @@ ht-degree: 80%
 
 >[!TIP]
 >
->有关站点模板的更多详细信息，请参阅[站点模板。](site-templates.md)
+>有关站点模板的更多详细信息，请参阅文档[站点模板。](site-templates.md)
 
 >[!NOTE]
 >
->不要将站点模板与页面模板混淆。站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
+>不要将站点模板与[页面模板混淆。](/help/sites-cloud/authoring/page-editor/templates.md)站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
+
+### Adobe提供的站点模板 {#adobe-templates}
+
+{{adobe-templates}}
 
 ## 创建站点 {#create-site}
 
@@ -80,6 +73,11 @@ ht-degree: 80%
    * Site 名称会成为 URL 的一部分。
    * 站点名称必须遵循 [AEM 的页面命名惯例。](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)
 
+1. 提供站点模板所需的其他站点详细信息。
+
+   * 不同的模板可能需要其他详细信息。
+   * 例如，[Edge Delivery Services项目](https://www.aem.live/developer/ue-tutorial)的模板需要您项目的GitHub存储库。
+
 1. 选择&#x200B;**创建**&#x200B;并从站点模板创建站点。
 
    ![新 Site 的详细信息](../assets/create-site-details.png)
@@ -96,10 +94,10 @@ ht-degree: 80%
 
 ## 站点自定义 {#site-customization}
 
-如果您的站点需要在可用模板之外进行自定义，则您有多个选项。
+模板有助于快速设置网站的基本结构和样式。 但是，大多数项目需要额外的样式和自定义。 站点模板有助于消除站点样式的影响，以便前端开发人员无需了解AEM即可设置站点的样式，并且可以
+独立于内容创建者工作并与内容创建者并行工作。 根据项目类型，这可以采用两种形式。
 
-* 如果必须调整站点结构或初始内容，[可以自定义站点模板以满足您的要求](site-templates.md)。
-* 如果必须调整站点样式，则可以下载[站点主题并自定义该主题](/help/journey-sites/quick-site/overview.md)。
-* 如果必须调整站点功能，则[可以完全自定义站点](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
-
-任何自定义都应在开发团队的支持下进行。
+* 对于使用Universal Editor创作AEM页面并通过[Edge交付的项目，](/help/edge/overview.md)所有样式设置都在GitHub项目中完成。
+   * 有关详细信息，请参阅文档[快速入门 — Universal Editor开发人员教程](https://www.aem.live/developer/ue-tutorial)。
+* 对于通过[发布交付进行传统AEM页面创作和交付的项目，](/help/sites-cloud/authoring/author-publish.md)AEM管理员只需下载站点主题并将其提供给前端开发人员，后者会使用他们喜欢的工具对其进行自定义，然后将更改提交到AEM代码存储库，随后进行部署。
+   * 有关详细信息，请参阅文档[AEM快速站点创建历程](/help/journey-sites/quick-site/overview.md)。

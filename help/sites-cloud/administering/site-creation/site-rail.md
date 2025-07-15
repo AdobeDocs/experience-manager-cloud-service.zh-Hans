@@ -1,14 +1,14 @@
 ---
 title: 使用站点面板管理站点主题
-description: 了解站点面板的强大功能，帮助您轻松自定义和管理站点主题。
+description: 了解站点面板的强大功能，这些功能可帮助您通过发布交付轻松自定义和管理传统AEM创作项目的站点主题。
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 31%
+source-wordcount: '607'
+ht-degree: 36%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 31%
 
 {{traditional-aem}}
 
-了解站点面板的强大功能，帮助您轻松自定义和管理站点主题。
+了解站点面板的强大功能，这些功能可帮助您通过发布交付轻松自定义和管理传统AEM创作项目的站点主题。
 
 ## 概述 {#overview}
 
-站点面板允许您管理站点的主题和模板资源。 [与其他面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)（如“内容树”面板、“引用”面板或“时间轴”面板）一样，“站点”面板在站点控制台中显示为最左侧的面板，显示有关选定项的信息。 与其他面板不同，“站点”面板仅适用于站点根。
+通过“站点”面板，您可以管理具有[发布交付的传统AEM创作项目的站点主题和模板资源。](/help/sites-cloud/authoring/author-publish.md) [与其他面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)（如“内容树”面板、“引用”面板或“时间轴”面板）类似，“站点”面板在站点控制台中显示为最左侧的面板，显示有关选定项的信息。 与其他面板不同，“站点”面板仅适用于站点根。
 
 站点面板用于管理站点的主题和模板相关信息，包括：
 
@@ -46,7 +46,7 @@ ht-degree: 31%
 
 ## 下载模板资源 {#downloading-template-resources}
 
-[站点模板](site-templates.md)可以包含信息以及站点内容结构和[站点主题](site-themes.md)。 例如，站点模板可以包含线框设计或其他与站点相关的文件。
+[站点模板](site-templates.md)可以包含信息以及站点内容结构和[站点主题。](site-themes.md)例如，站点模板可以包含线框设计或其他与站点相关的文件。
 
 如果站点基于站点模板，利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息，包括其他站点资源。
 
@@ -86,4 +86,4 @@ ht-degree: 31%
 
 ![启用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 
-有关详细信息，请参阅文档[启用前端管道](enable-front-end-pipeline.md)。
+有关更多信息，请参阅[启用前端管道](enable-front-end-pipeline.md)文档。
