@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
 source-wordcount: '1210'
-ht-degree: 58%
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 58%
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service中Cloud Manager 2025.7.0的发布日期是2025年7月10日星期四。
+AEM as a Cloud Service 中的 Cloud Manager 2025.7.0 的发布日期是 2025 年 7 月 10 日星期四。
 
-下一个计划发布于2025年8月7日星期四。
+下一个版本计划于 2025 年 8 月 7 日星期四发布。
 
 ## 新增功能 {#what-is-new}
 
-* **Cloud Manager添加了ECDSA（椭圆曲线数字签名算法）SSL证书支持**
+* **Cloud Manager 增加了 ECDSA（椭圆曲线数字签名算法）SSL 证书支持**
 
-  Cloud Manager现在支持ECDSA证书。 该功能通过较小的密钥大小提供强大的安全性，使客户能够在其CDN配置中应用轻量级现代加密。<!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+  Cloud Manager 现在支持 ECDSA 证书。该功能通过使用更小的密钥尺寸提供强大的安全性，使客户能够在其 CDN 配置中应用轻量级的现代加密技术。<!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
 
-* **下载网站许可证使用情况报告**
+* **下载站点许可证使用情况报告**
 
-  在&#x200B;**站点使用情况详细信息**&#x200B;页面(在Cloud Manager中，单击&#x200B;**许可证**)。 在“解决方案”表的&#x200B;**站点**&#x200B;行中，单击&#x200B;**查看使用情况详细信息**，客户现在可以单击&#x200B;**下载报表**，将其数据导出为CSV文件。 此下载可简化分析和共享使用趋势。<!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+  在&#x200B;**站点使用情况详情**&#x200B;页面（在 Cloud Manager 中），单击&#x200B;**许可证**。在“解决方案”表中的&#x200B;**站点**&#x200B;行中，点击&#x200B;**查看使用情况详情**），客户现在可以点击&#x200B;**下载报告**&#x200B;将其数据导出为 CSV 文件。此下载内容简化了使用趋势的分析与共享。<!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
 
   ![站点使用情况详细信息页面](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
@@ -41,39 +41,39 @@ AEM as a Cloud Service中Cloud Manager 2025.7.0的发布日期是2025年7月10�
 
 ## 早期采用者计划 {#private-beta-program}
 
-参与Cloud Manager的Alpha和Beta计划，在正式发布之前独家提前访问即将推出的功能。
+参与 Cloud Manager 的 Alpha 和 Beta 计划，在即将推出的功能正式发布之前获得独家早期访问权限。
 
-当前提供以下机会：
+目前提供以下机会：
 
-### 管道部署的一键式回滚 {#one-click-rollback}
+### 管道部署一键回滚 {#one-click-rollback}
 
-如果最新的客户源代码无法按预期工作，请快速还原到以前的部署，而无需重新运行完整管道或手动还原提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+当最新的客户源代码未如预期运行时，可迅速回滚至先前的部署，无需重新运行完整管道或手动回退提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从环境信息卡](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *环境信息卡还原客户源代码，其中显示选定环境的&#x200B;**还原**>**已部署的先前代码**&#x200B;选项。*
-
-
-![还原先前部署的代码对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的版本，然后单击&#x200B;**确认***。
+![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**选项。*
 
 
-![正在还原激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager将环境回滚到以前的生成，保持内容和配置不变，并标记环境&#x200B;**正在还原**，直到部署完成。*
+![“还原先前部署的代码”对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
 
 
-![正在使用的Source代码版本](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *如上所示，“环境”详细信息视图现在也显示了正在使用的活动源代码版本。*
+![恢复激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager 会将环境回滚至较早的构建版本，保留内容和配置不变，并在部署完成前将该环境标记为&#x200B;**还原中**。*
 
-如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[restorecode@adobe.com](mailto:restorecode@adobe.com)发送电子邮件。
+
+![正在使用的源代码版本](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *如上所示，“环境详细信息”视图现已显示当前正在使用的源代码版本。*
+
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [restorecode@adobe.com](mailto:restorecode@adobe.com)。
 
 请参阅[还原之前在AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md)中部署的代码。
 
-另请参阅[AEM as a Cloud Service中的内容还原](/help/operations/restore.md)。
+另请参阅 [AEM as a Cloud Service 中的内容恢复](/help/operations/restore.md)。
 
 
 ### 专用测试环境 {#specialized-test-environment}
 
 Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的新环境类型。该环境旨在帮助团队在正式上线之前在接近生产的条件下验证功能。此环境类型不同于&#x200B;*生产 + 预发布*、*开发*&#x200B;或&#x200B;*快速开发*&#x200B;环境，而是专为运行高级验证场景提供的集中空间。
 
-最近的增强功能：您现在可以通过更简单、更直观的工作流程在非生产管道上配置专门的测试环境。 简化的设置可加快完成过程并减少配置错误。
+最新增强功能：您现在可以通过更简洁直观的工作流程，在非生产管道中配置专用测试环境。这一精简的设置流程可加快配置完成速度，并降低配置出错的风险。
 
 请参阅[添加专门的测试环境](/help/implementing/cloud-manager/specialized-test-environment.md)。
 
@@ -123,7 +123,7 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 
 现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理设置，例如流量过滤规则和 Web 应用程序防火墙 (WAF) 配置（如适用）。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
@@ -132,13 +132,13 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 
 ## 错误修复
 
-* Cloud Manager现在会在环境升级期间更新所有管道的发行版本，以确保在所有管道类型间进行一致的版本跟踪。<!-- CMGR-69043 -->
-* 现在，当域验证(DV) SSL证书失败时，UI会显示状态和详细错误消息，这有助于了解并解决证书问题。<!-- CMGR-68872 -->
-* 在编辑域映射时，UI现在会阻止选择与所选域不匹配的SSL证书，从而减少错误配置并提高安装期间的可靠性。<!-- CMGR-64307 -->
-* 在某些情况下，证书未被正确删除，维护域仍处于活动状态。<!-- CMGR-69867 -->
-* 修复了在某些情况下可能阻止从&#x200B;*Adobe Assets*&#x200B;升级到&#x200B;*Adobe Assets Ultimate*&#x200B;的问题。 现在，过渡更加顺畅、更加可靠。<!-- CMGR-69506 -->
-* 解决了在创建多区域环境时自动设置关键区域字段以支持顺利的下游服务和部署的问题。<!-- CMGR-69471 -->
-* 解决了某些配置管道在执行后未正确停止的问题。 现在，管道已成功完成并按预期关闭，提高了可靠性。<!-- CMGR-69344 -->
+* Cloud Manager 现在会在环境升级期间更新所有管道的发布版本，从而确保所有管道类型的版本跟踪保持一致。<!-- CMGR-69043 -->
+* 当域名验证（DV）SSL 证书验证失败时，UI 现在会显示状态信息及详细的错误消息，帮助用户了解并解决证书相关问题。<!-- CMGR-68872 -->
+* 在编辑域名映射时，UI 现在会阻止选择与所选域名不匹配的 SSL 证书，从而减少配置错误，并提升设置过程的可靠性。<!-- CMGR-64307 -->
+* 在某些情况下，证书未被正确删除，导致系统仍将该域名视为处于激活状态。<!-- CMGR-69867 -->
+* 修复了在某些情况下可能阻止从 *Adobe Assets* 升级到 *Adobe Assets Ultimate* 的问题。现在过渡更加顺畅、更加可靠。<!-- CMGR-69506 -->
+* 已修复在创建多区域环境时关键区域字段会被自动设置的问题，确保下游服务与部署流程顺利进行。<!-- CMGR-69471 -->
+* 已修复部分配置管道在执行完成后未能正常停止的问题。现在，流水线可按预期顺利完成并关闭，从而提升了系统的可靠性。<!-- CMGR-69344 -->
 
 
 <!-- ## Known issues {#known-issues} -->
