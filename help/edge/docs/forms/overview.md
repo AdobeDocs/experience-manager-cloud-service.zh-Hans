@@ -46,7 +46,7 @@ Adobe Experience Manager (AEM) Edge Delivery Services (EDS)让您可以从边缘
 
 ## 详细创作方法
 
-###  Universal Editor 
+### Universal Editor 
 
 <span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
 

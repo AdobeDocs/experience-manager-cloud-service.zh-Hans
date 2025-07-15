@@ -227,7 +227,7 @@ ht-degree: 99%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   +  Universal Editor 发行说明 {#univeral-editor}
+   + Universal Editor 发行说明 {#univeral-editor}
       + [ Universal Editor 当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.06.19发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
@@ -403,7 +403,7 @@ ht-degree: 99%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      +  Universal Editor  {#universal-editor}
+      + Universal Editor  {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [从 Universal Editor 发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -1342,7 +1342,7 @@ ht-degree: 99%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      +  Universal Editor  {#universal-editor}
+      + Universal Editor  {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
          + [ Universal Editor 和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
