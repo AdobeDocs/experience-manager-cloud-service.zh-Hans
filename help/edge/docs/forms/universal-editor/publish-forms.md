@@ -29,7 +29,7 @@ ht-degree: 97%
 <!--1. Select the **Adaptive Form** that you want to publish and click the **Edit** ![edit icon](/help/forms/assets/edit.svg) icon.
    ![Select EDS-Based Form](/help/forms/assets/select-eds-based-form.png)-->
 
-1. 在编辑器中打开自适应表单，然后单击上方边栏上的&#x200B;**发布**图标。
+1. 在编辑器中打开自适应表单，然后单击上方边栏上的&#x200B;**发布**&#x200B;图标。
    ![单击发布](/help/forms/assets/publish-icon-eds-form.png)
 
 1. 单击&#x200B;**发布**&#x200B;后，会出现一个屏幕或弹出窗口，显示发布资产，包括表单标题。本例中使用了 **Wknd_Form** 模板。
@@ -57,6 +57,7 @@ ht-degree: 97%
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
+
 **对于本地开发：**
 
 ```js
@@ -79,6 +80,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
+
 对于本地开发，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)，从&#x200B;**开发 UI 主机 URL** 中启用 CORS。
 
 ### 配置推荐人过滤器
