@@ -4,11 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -37,7 +39,7 @@ ht-degree: 6%
 
 ## 配置Forms提交服务
 
-创建配置有自适应AEM块的新Forms项目。 请参阅[快速入门 — 开发人员教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，了解如何创建新的AEM项目。 更新项目中的`fstab.yaml`文件。 将现有引用替换为您与`forms@adobe.com`共享的文件夹的路径。
+创建配置有自适应AEM块的新Forms项目。 请参阅[快速入门 — 开发人员教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，了解如何创建新的AEM项目。 更新项目中的`fstab.yaml`文件。 将现有引用替换为您与`forms@adobe.com`共享的文件夹的路径。
 
 您可以[手动配置Forms提交服务](#configuring-the-forms-submission-service-manually)或[使用API配置Forms提交服务](#configuring-the-forms-submission-service-using-api)。
 
@@ -47,7 +49,7 @@ ht-degree: 6%
 
 #### 1.使用表单定义创建表单
 
-使用Google Sheets或Microsoft Excel创作表单。 要了解如何使用Microsoft Excel或Google Sheets中的表单定义创建表单，请[单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
+使用Google Sheets或Microsoft Excel创作表单。 要了解如何使用Microsoft Excel或Google Sheets中的表单定义创建表单，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
 
 以下屏幕截图显示了用于创建表单的表单定义：
 
@@ -55,11 +57,11 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->**表单创作所在的工作表对表单的命名方式有限制。 只有`helix-default`和`shared-aem`可用作工作表名称。**
+>**表单创作所在的工作表对其命名有限制。仅 `helix-default` 和 `shared-aem` 可用作工作表名称。**
 
 #### 2.启用电子表格以接受数据。
 
-创建并预览表单后，启用相应的电子表格以开始接收数据。 添加新工作表作为`incoming`。 您可以[手动启用电子表格以接受数据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
+创建并预览表单后，启用相应的电子表格以开始接收数据。 添加新工作表作为`incoming`。 您可以[手动启用电子表格以接受数据](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
 
 ![传入工作表](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -73,7 +75,7 @@ ht-degree: 6%
 
 1. 在Excel或Google工作表中，单击右上角的&#x200B;**共享**&#x200B;按钮。
 1. 添加`forms@adobe.com`帐户并
-单击眼睛图标，选择&#x200B;**编辑**&#x200B;访问权限，然后单击&#x200B;**发送**。
+单击眼睛图标，选择**编辑**&#x200B;访问权限，然后单击&#x200B;**发送**。
 
    ![共享传入工作表](/help/forms/assets/form-submission-share-incoming.png)
 
@@ -150,17 +152,18 @@ ht-degree: 6%
 
 
 >[!BEGINTABS]
->[!TAB 用于macOS的] 
 
-    &grave;&grave;json
+>用于macOS的[!TAB ]
+
+    ``json
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
      — header &quot;Content-Type： application/json&quot; \
      — header &quot;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
-     — data &grave;&lbrace;
-    &grave;data&quot;： &lbrace;
-    &grave;startDate&quot;： &quot;2025-01-10&quot;，
-    &grave;endDate&quot;： &quot;25-25&quot;，
-    &grave;destination&quot;：澳大利亚”，
+     — data `{
+    `data&quot;： {
+    `startDate&quot;： &quot;2025-01-10&quot;，
+    `endDate&quot;： &quot;25-25&quot;，
+    `destination&quot;：澳大利亚”，
     “class”：“First Class”，
     “budget”：“2000”，
     “amount”：“1000000”，
@@ -168,14 +171,14 @@ ht-degree: 6%
     “age”：“35”，
     “subscribe”： null，
     “email”：“mary@gmail.com”
-    &rbrace;
-    &rbrace;&#39;
+    }
+    }&#39;
     
     ”&#39;
 
->[!TAB 用于Windows操作系统的] 
+>用于Windows操作系统的[!TAB ]
 
-    &grave;&grave;json
+    ``json
     
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
      — 标头&quot;Content-Type： application/json&quot; ^
