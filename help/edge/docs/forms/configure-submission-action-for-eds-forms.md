@@ -46,6 +46,7 @@ ht-degree: 99%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Forms Submission](/help/forms/assets/eds-fss.png)
 
 该流程图展示了 Forms Submission Service 如何接收已提交的数据，并将其发送到预设的电子表格或电子邮件地址。
@@ -144,6 +145,7 @@ ht-degree: 99%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![嵌入式表单架构](/help/forms/assets/eds-embedded-form.png)
 此架构图展示了宿主页面如何从表单源获取表单 HTML 并将其显示。表单的提交仍使用原始表单配置的提交端点。
 
