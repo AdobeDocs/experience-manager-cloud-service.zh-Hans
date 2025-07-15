@@ -4,10 +4,10 @@ description: 了解如何在通用编辑器中创建表单片段并将其添加�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
-workflow-type: ht
-source-wordcount: '1355'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1401'
+ht-degree: 96%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 100%
 
    下面的屏幕快照显示了在通用编辑器中创建的 `contact fragment`。
 
-   ![内容片段](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![通用编辑器中已填写的联系人详细信息表片段的屏幕截图，其中显示了可以在多个表单中重复使用的姓名、电话、电子邮件和地址字段](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    创建片段后，您可以[在 Edge Delivery Services Forms 中添加创建的片段](#adding-form-fragments-in-forms)。
 
@@ -140,7 +140,7 @@ ht-degree: 100%
 
    表单片段通过引用添加到表单，并与独立表单片段保持同步。
 
-   ![表单中的片段](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![屏幕截图显示已成功集成到通用编辑器的员工表单中的联系人详细信息片段，演示片段在重用时如何保持其结构](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    您可以预览表单以查看在&#x200B;**预览**&#x200B;模式中该表单如何显示。
 

@@ -4,10 +4,10 @@ description: 了解如何基于表单数据模型（FDM）创建表单。在 FDM
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 * 如果您在通用编辑器界面中看不到&#x200B;**数据源**&#x200B;图标，或者在右侧属性面板中看不到&#x200B;**绑定引用**&#x200B;属性，就请在&#x200B;**扩展管理器**&#x200B;中启用&#x200B;**数据源**&#x200B;扩展。
 
-  ![扩展管理器](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![通用编辑器Extension Manager界面的屏幕截图，其中显示了可用的扩展，包括可以为表单集成启用的数据源扩展](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
   请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用和禁用扩展。
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
    单击&#x200B;**[!UICONTROL 创建]**&#x200B;后，表单就会在通用编辑器中打开以供创作。
 
-   ![创作表单](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![通用编辑器的屏幕截图，其中显示预填充了表单字段的基于架构的表单，内容浏览器则显示可用的数据源元素](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    创建该表单时使用了来自关联数据源的数据元素，其中的表单字段已预配置了数据绑定。
 
@@ -131,7 +131,7 @@ ht-degree: 100%
 
    您还可以拖放这些元素来生成自适应表单。单击&#x200B;**[!UICONTROL 添加]**&#x200B;后，在&#x200B;**[!UICONTROL 数据源]**&#x200B;选项卡中选定的元素将添加到表单中，添加的元素前面会显示一个对勾。
 
-   ![生成表单](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![屏幕截图显示正在通过从Data Source选项卡将数据元素拖放到表单结构中来构建非架构表单的通用编辑器](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 您可以从&#x200B;**绑定引用**&#x200B;属性中选择数据绑定，将其添加到一个表单字段中。例如，将数据绑定引用添加到表单中已有的 **Id** 文本框中。要从数据源树中为表单字段选择数据绑定，请执行以下步骤：
 

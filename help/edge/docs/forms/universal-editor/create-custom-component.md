@@ -4,23 +4,23 @@ description: 为 EDS Form 创建自定义组件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 87%
+source-wordcount: '1841'
+ht-degree: 95%
 
 ---
 
 # 在“所见即所得创作”中创建自定义组件
 
-<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将包含您的GitHub组织名称和存储库名称的电子邮件(从您的官方地址发送到<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> )。 例如，如果存储库URL为https://github.com/adobe/abc，则组织名称为adobe，存储库名称为abc。</span>
+<span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
 
 
 Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构建定制的表单组件。这些自定义组件可以无缝集成到所见即所得的创作体验中，使表单作者能够在表单编辑器中轻松添加、配置和管理这些组件。通过自定义组件，作者可以增强功能，同时确保流畅、直观的创作过程。
 
 本文档概述了通过设置原生 HTML 表单组件的样式来创建自定义组件的步骤，以改善用户体验并增加表单的视觉吸引力。
 
-## 前提条件
+## 先决条件
 
 在开始创建自定义组件之前，您应该：
 
@@ -39,11 +39,11 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
 现在我们以创建一个名为 **Range** 的新自定义组件为例。Range 组件外表为直线形式，显示最小值、最大值或选定值等数值。
 
-![Range 组件样式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![显示具有最小值和最大值滑块以及选定值指示器的范围组件的可视化表示形式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 本文结束时，您将学会从头开始创建自定义组件。
 
-### 1. 为新的自定义组件添加结构
+### &#x200B;1. 为新的自定义组件添加结构
 
 自定义组件在使用之前必须先注册，以便通用编辑器将其识别为可用选项。这是通过组件定义实现的，组件定义包括唯一标识符、默认属性和组件的结构。执行以下步骤，使自定义组件可用于表单创作：
 
@@ -69,9 +69,9 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
    * **标题**：通用编辑器中显示的组件的标题。
    * **ID**：组件的唯一标识符。
-   * **fieldType**：表单支持各种 **fieldType** 来捕获特定类型的用户输入。您可以在 Extra Byte 分区中找到 [支持的 fieldType](#supported-fieldtypes)。
-   * **resourceType**：每个自定义组件都有一个基于其 fieldType 关联的资源类型。您可以在 Extra Byte 分区中找到 [支持的 resourceType](#supported-resourcetype)。
-   * **jcr：title**：它类似于标题，但存储在组件的结构中。
+   * **fieldType**：表单支持各种 **fieldType** 来捕获特定类型的用户输入。您可以在 Extra Byte 分区中找到[支持的 fieldType](#supported-fieldtypes)。
+   * **resourceType**：每个自定义组件都有一个基于其 fieldType 关联的资源类型。您可以在 Extra Byte 分区中找到[支持的 resourceType](#supported-resourcetype)。
+   * **jcr:title**：它类似于标题，但存储在组件的结构中。
    * **fd:viewType**：表示自定义组件的名称。它是组件的唯一标识符。需要为组件创建自定义视图。
 
 添加组件定义之后，`_range.json` 文件如下：
@@ -105,7 +105,7 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 >
 > 在通用编辑器中添加块时，所有与表单相关的组件都遵循与 Sites 相同的方法。您可以参考[创建与通用编辑器配合使用的块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)文章以获取更多信息。
 
-### 2. 定义自定义组件的属性以供创作
+### &#x200B;2. 定义自定义组件的属性以供创作
 
 自定义组件包括一个组件模型，该模型指定了表单作者可以配置哪些属性。这些属性出现在通用编辑器的&#x200B;**属性**&#x200B;对话框中，允许作者调整标签、验证规则、样式和其他属性等设置。定义属性：
 
@@ -183,16 +183,16 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
       }
 ```
 
-JSON代码片段为&#x200B;**Range**&#x200B;组件定义了一个名为&#x200B;**Step Value**&#x200B;的自定义属性。 每个字段的划分如下：
+JSON 代码片段为 **Range** 组件定义了一个名为 **Step Value** 的自定义属性。以下是每个字段的细分：
 
-* **组件**：指定属性对话框中使用的输入字段的类型。 在这种情况下，`number`表示该字段接受数字值。
-* **name**：属性的标识符，用于在组件的逻辑中引用它。 此处，`stepValue`表示范围的步骤值设置。
-* **label**：在“属性”对话框中看到的属性的显示名称。
-* **valueType**：定义属性所需的数据类型。 `number`确保只允许数字输入。
+* **组件**：指定“属性”对话框中使用的输入字段的类型。在这种情况下，`number` 表示该字段接受数值。
+* **名称**：属性的标识符，用于在组件的逻辑中引用它。这里的 `stepValue` 代表范围的步长值设置。
+* **标签**：在“属性”对话框中看到的属性的显示名称。
+* **valueType**：定义属性所需的数据类型。`number` 确保只允许数字输入。
 
-您现在可以将`stepValue`用作`range.js`的JSON属性中的自定义属性，并在运行时根据其值实施动态行为。
+您现在可以使用 `stepValue` 作为 `range.js` 的 JSON 属性中的自定义属性，并根据其运行时的值实施动态行为。
 
-因此，添加组件定义、组件模型和自定义属性后的最终`_range.json`文件如下所示：
+因此，在添加完组件定义、组件模型和自定义属性后，最终的 `_range.json` 文件如下：
 
 ```javascript
  {
@@ -252,7 +252,7 @@ JSON代码片段为&#x200B;**Range**&#x200B;组件定义了一个名为&#x200B;*
 ![组件定义和模型](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. 使您的自定义组件在所见即所得的组件列表中可见
+### &#x200B;3. 使您的自定义组件在所见即所得的组件列表中可见
 
 过滤器定义了在通用编辑器中可以使用自定义组件的分区。这可确保组件只能在适当的分区中使用，从而保持结构和可用性。
 
@@ -298,7 +298,7 @@ JSON代码片段为&#x200B;**Range**&#x200B;组件定义了一个名为&#x200B;*
 
 ![组件过滤器](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. 注册您的自定义组件
+### &#x200B;4. 注册您的自定义组件
 
 要使 Form Block 能够识别自定义组件，并在表单创作中加载组件模型中定义的属性，请将 `fd:viewType` 值从组件定义添加到 `mappings.js` 文件。
 注册组件：
@@ -323,15 +323,15 @@ const OOTBComponentDecorators = ['file-input',
 
 完成上述步骤后，自定义组件将出现在通用编辑器内的表单组件列表中。然后您可以将其拖放到表单分区。
 
-![Range 组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![通用编辑器组件面板的屏幕截图，其中显示了可用于拖放到表单中的自定义范围组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
-下面的屏幕快照显示了添加到组件模型的`range`组件的属性，该组件指定了表单作者可以配置的属性：
+下面的屏幕快照显示了添加到组件模型中的 `range` 组件的属性，该组件指定了表单作者可以配置的属性：
 
-![范围组件](/help/edge/docs/forms/universal-editor/assets/range-properties.png)的属性
+![通用编辑器属性面板屏幕截图显示范围组件的可配置设置，包括基本属性、验证规则和样式选项](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 您现在可以通过添加样式和功能来定义自定义组件的运行时行为。
 
-### 5. 添加自定义组件的运行时行为
+### &#x200B;5. 添加自定义组件的运行时行为
 
 您可以使用预定义标记来修改自定义组件，如[表单字段的样式](/help/edge/docs/forms/style-theme-forms.md)中所述。这可以通过自定义 CSS（级联样式表）和自定义代码来实现，以增强组件的外观。添加组件的运行时行为：
 
@@ -391,7 +391,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    代码可帮助您定义自定义组件的样式和视觉外观。
 
 1. 要添加功能，请导航到 `/blocks/form/components/range/range.js` 文件，并添加以下代码行：
@@ -456,7 +455,7 @@ const OOTBComponentDecorators = ['file-input',
    加入自定义样式和功能后，Range 组件的外观和行为得到增强。更新后的设计反映了应用的样式，而增加的功能则确保了更动态化和交互式的用户体验。
 下面的屏幕快照显示了更新的 Range 组件。
 
-![Range 组件样式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![正在操作的最后一个范围组件，该组件在通用编辑器中显示具有值泡显示和交互功能的样式滑块](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## 常见问题解答
 

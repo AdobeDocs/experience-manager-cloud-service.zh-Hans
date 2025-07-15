@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 26%
+source-wordcount: '2219'
+ht-degree: 25%
 
 ---
 
@@ -73,21 +73,6 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 
 对话式Forms不仅仅是一种新外观，它还是改变用户体验的一种方式。  提升参与度，减少表单放弃，并使与您的网站互动成为每个人都更愉快的体验。
 
-
-### Edge Delivery Services的WYSIWYG创作
-
-WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及多种其他功能：
-
-* 用于创建复杂逻辑的高级规则编辑器。
-* 自定义功能的服务器端可扩展性。
-* WYSIWYG 的编辑体验，可轻松创建表单和可视化。
-* 记录文档功能可创建提交数据的防篡改档案。
-* 与 Adobe Sign 集成以进行电子签名。
-* 与各种数据源集成以预填充表单和提交数据。
-* 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
-* 能够从多个提交操作中进行选择，用于处理表单提交，包括将数据提交到Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多数据源。
-
-
 ### AEM Forms到Marketo的连接器
 
 [AEM Forms到Marketo连接器](/help/forms/integrate-form-to-marketo-engage.md)弥合了使用Adobe Experience Manager (AEM)构建的Web表单(自适应Forms)与营销自动化平台Marketo之间的差距。
@@ -140,7 +125,7 @@ Cloud上的Interactive Communications是一款功能强大的解决方案，可�
 
 准备好开始了吗？ 可通过提前访问程序找到交互式通信编辑器，以进行Forms as a Cloud Service部署。 若要请求访问，请将您的组织ID和计划详细信息通过电子邮件从您的官方地址发送到[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 
-### AEM Forms与Adobe Experience Platform (AEP)的集成
+### AEM Forms 与 Adobe Experience Platform (AEP) 集成
 
 您可以将AEM Forms与Adobe Experience Platform (AEP)连接起来，以利用客户配置文件和数据实现个性化的表单体验，并根据表单提交触发下游工作流。 通过将表单数据直接发送到AEP数据集，您可以丰富客户档案，并更深入地了解用户交互。
 

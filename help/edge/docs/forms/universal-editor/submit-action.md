@@ -4,14 +4,52 @@ description: 配置自适应表单的提交操作。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 78%
 
 ---
 
 # 自适应表单提交操作
+
+## 概述
+
+表单提交是用户历程中的关键最后一步，它是处理收集的数据并执行操作的地方。 本文档提供了在Universal Editor中配置和管理自适应Forms提交操作的综合指南。
+
+### 您将了解的内容
+
+在本文档结束时，您将了解如何：
+
+* 为您的表单配置不同类型的提交操作
+* 设置REST端点提交以与外部系统集成
+* 为表单响应配置电子邮件提交
+* 实施针对特定业务需求的自定义提交操作
+* 在提交期间处理表单验证和错误情况
+
+### 目标受众
+
+本指南面向以下群体：
+
+* **表单开发人员**&#x200B;正在实现提交逻辑
+* **系统集成商**&#x200B;将表单连接到后端系统
+* **业务分析员**&#x200B;定义表单工作流
+* **技术架构师**&#x200B;设计表单提交流程
+
+### 可用的提交操作
+
+通用编辑器提供两种主要的提交操作类型：
+
+1. **提交到REST端点** *将表单数据发送到API端点
+2. **发送电子邮件** *通过电子邮件提交表单回复
+
+### 先决条件
+
+在配置提交操作之前，请确保您已：
+
+* 访问通用编辑器
+* 表单配置的适当权限
+* 了解Target提交端点或电子邮件配置
 
 提交操作指定了通过自适应表单所收集数据的目标。当用户单击表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，提交过程就开始了。AEM Forms 提供以下两种类型的提交操作，您可以创建和使用自定义提交操作，以满足您的特定需求。开箱即用的提交操作有：
 
@@ -42,7 +80,7 @@ ht-degree: 100%
 1. 指定 REST 端点 URL。
 1. 您也可以&#x200B;**启用 POST 请求**&#x200B;并提供用于发布请求的 URL。
 
-![启用自适应表单的 POST 请求](/help/forms/assets/enable-post-request-ue.png)
+![通用编辑器属性面板屏幕截图，其中显示REST端点配置字段，包括URL输入和为表单提交启用POST请求切换](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ ht-degree: 100%
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 

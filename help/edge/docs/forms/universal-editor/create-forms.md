@@ -4,10 +4,10 @@ description: 本文介绍如何通过在表单创建向导中选择一个基于�
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Adobe Experience Manager (AEM) 可让您创建引人入胜的响应式动态表�
 
 请按照以下步骤在 AEM 中创作表单并将其发布到 Edge Delivery Services：
 
-[1. 选择一个模板，创建表单](#choose-a-template-and-create-the-form)
+[&#x200B;1. 选择一个模板，创建表单](#choose-a-template-and-create-the-form)
 
-[2. 创作表单](#author-the-form)
+[&#x200B;2. 创作表单](#author-the-form)
 
-[3. 发布表单](#publish-a-form)
+[&#x200B;3. 发布表单](#publish-a-form)
 
 ### 选择一个模板，创建表单
 
@@ -85,7 +85,7 @@ Adobe Experience Manager (AEM) 可让您创建引人入胜的响应式动态表�
 
    单击&#x200B;**[!UICONTROL 创建]**&#x200B;后，表单就会在通用编辑器中打开以供创作。
 
-   ![创作表单](/help/edge/assets/author-form.png)
+   ![通用编辑器的屏幕截图，其中左侧显示使用组件面板创作的表单，中央显示表单画布，右侧显示属性面板](/help/edge/assets/author-form.png)
 1. 点击&#x200B;**[!UICONTROL 创建]**，创建表单。现在，您可以[使用通用编辑器创作表单](#author-the-form)。
 
 >[!TAB 基于核心组件的模板]
@@ -135,7 +135,7 @@ Adobe Experience Manager (AEM) 可让您创建引人入胜的响应式动态表�
 
    下面的屏幕快照显示了在通用编辑器中创作的 `Registration Form` 表单：
 
-   ![联系我们表单](/help/edge/assets/contact-us.png)
+   ![通用编辑器中已填写的联系我们表单屏幕截图，该表单显示名称、电子邮件、电话和消息等表单字段的样式和布局正确](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Adobe Experience Manager (AEM) 可让您创建引人入胜的响应式动态表�
 
 1. 点击通用编辑器右上角的&#x200B;**[!UICONTROL 发布]**&#x200B;按钮发布表单。
 
-![发布表单](/help/edge/assets/publish-form.png)
+![通用编辑器的屏幕截图，其中显示带有表单发布选项和确认按钮的发布对话框](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >

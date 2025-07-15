@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
 source-wordcount: '6362'
 ht-degree: 99%
@@ -227,7 +227,7 @@ ht-degree: 99%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   + Universal Editor 发行说明 {#univeral-editor}
+   +  Universal Editor 发行说明 {#univeral-editor}
       + [ Universal Editor 当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.06.19发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
@@ -403,7 +403,7 @@ ht-degree: 99%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [从 Universal Editor 发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -1075,7 +1075,7 @@ ht-degree: 99%
       + [概述](/help/edge/docs/forms/overview.md)
       + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-      + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)
+      + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
       + 所见即所得的创作 {#universal-editor}
          + [Edge Delivery Services 的表单 Universal Editor 简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用 Universal Editor 开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1342,7 +1342,7 @@ ht-degree: 99%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
          + [ Universal Editor 和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
