@@ -227,8 +227,8 @@ ht-degree: 99%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   + 通用编辑器发行说明 {#univeral-editor}
-      + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
+   +  Universal Editor 发行说明 {#univeral-editor}
+      + [ Universal Editor 当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.06.19发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
          + [2025.05.21 版发行说明](/help/release-notes/universal-editor/2025/2025-05-21.md)
@@ -301,7 +301,7 @@ ht-degree: 99%
       + [创建 Headless 内容](/help/trials/headless/create-content.md)
       + [通过 GraphQL API 提取内容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 获取 JSON 内容](/help/trials/headless/code-playground.md)
-      + [使用通用编辑器进行内联编辑](/help/trials/headless/universal-editor.md)
+      + [使用 Universal Editor 进行内联编辑](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 迁移历程  {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [准备阶段](/help/journey-migration/readiness.md)
@@ -403,10 +403,10 @@ ht-degree: 99%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + 通用编辑器 {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [从通用编辑器发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [从 Universal Editor 发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [页面模板](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}
@@ -807,7 +807,7 @@ ht-degree: 99%
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
-            + [将自适应表单提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [将自适应表单提交到 Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + 将自适应表单连接到 Microsoft® SharePoint{#connect-to-sharepoint}
                + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -1045,7 +1045,7 @@ ht-degree: 99%
       + [无重复的暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
       + [配置 Site 身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [WIP Site 功能](/help/edge/wysiwyg-authoring/wip-features.md)
-   + 基于文档的创作 {#document-authoring}
+   + 文档式创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
       + [批量元数据](/help/edge/docs/bulk-metadata.md)
       + [占位符](/help/edge/docs/placeholders.md)
@@ -1073,25 +1073,25 @@ ht-degree: 99%
       + [重定向](/help/edge/docs/redirects.md)
    + 构建表单 {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
-      + [为Edge Delivery Services Forms配置提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)
       + 所见即所得的创作 {#universal-editor}
-         + [Edge Delivery Services 的表单通用编辑器简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用编辑器开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用通用编辑器创建您的第一个表单——分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [让您的表单便于移动设备使用：通用编辑器中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [设计精美的表单：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Edge Delivery Services 的表单 Universal Editor 简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [如何使用 Universal Editor 开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用 Universal Editor 创建您的第一个表单——分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [ Universal Editor 界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [让您的表单便于移动设备使用： Universal Editor 中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [设计精美的表单： Universal Editor 的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [向表单添加动态行为：规则编辑器完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [表单提交指南：配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [保护您的表单免受垃圾邮件的侵害：添加 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [如何发布和部署表单：通用编辑器发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [构建自定义表单组件：通用编辑器开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [如何发布和部署表单： Universal Editor 发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [构建自定义表单组件： Universal Editor 开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表单数据模型集成：将表单与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [可重复使用的、模块化的独立片段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [解决 Edge Delivery Services 表单提交中的 403 禁止错误](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-      + 基于文档的创作 {#getting-started-edge-delivery-services-forms}
+      + 文档式创作 {#getting-started-edge-delivery-services-forms}
          + [构建您的第一个表单：使用 Google Sheets 和 Excel 的快速入门指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 创建表单：分步指南](/help/edge/docs/forms/create-forms.md)
          + [Adaptive Forms Block 的各种组件](/help/edge/docs/forms/form-components.md)
@@ -1342,10 +1342,10 @@ ht-degree: 99%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + 通用编辑器 {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
-         + [通用编辑器和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [ Universal Editor 和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
          + [组件定义](/help/implementing/universal-editor/component-definition.md)
          + [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)

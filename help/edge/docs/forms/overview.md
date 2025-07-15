@@ -1,53 +1,53 @@
 ---
 title: 适用于 AEM Forms 的 Edge Delivery Services 概述
-description: 适用于AEM Forms的Edge Delivery Services专为实现卓越性能而构建，使您能够预见未来简化数据收集和用户参与。
+description: 适用于 AEM Forms 的 Edge Delivery Services 专为实现最佳性能而构建，让您能够畅想简化数据收集和用户参与的未来。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 67fe933807f8a1bca681a6bcee7164f7c117bcac
 workflow-type: tm+mt
 source-wordcount: '1874'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
-# AEM Edge Delivery Services上的Forms快速入门
+# 入门指南：在 AEM Edge Delivery Services 中使用表单
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features)访问。</span>
 
-本指南可帮助您使用Adobe Experience Manager (AEM) Edge Delivery Services (EDS)了解和实施表单。 无论您是创建简单的联系人表单还是复杂的数据收集工具，本页都会向您介绍您的选项。
+本指南将帮助您了解并实施 Adobe Experience Manager (AEM) Edge Delivery Services (EDS) 中的表单功能。无论是创建简单的联系表单，还是构建复杂的数据采集工具，此页面都会引导您了解相关选项。
 
-## 了解Edge Delivery Services中的Forms
+## 了解 Edge Delivery Services 中的表单功能
 
-Edge Delivery Services是Adobe的现代化解决方案，用于以卓越的性能和灵活性交付Web内容（包括表单）。 通过在表单中使用Edge Delivery Services，您可以：
+Edge Delivery Services 是 Adobe 为实现卓越性能和敏捷交付而打造的现代 Web 内容交付方案，其中支持表单等内容类型。使用 Edge Delivery Services 表单，您将获得以下优势：
 
-* **提供更快的体验：** Forms加载速度惊人，因为它们是从邻近用户的边缘服务器的全局网络(CDN)中提供的。 这提高了用户满意度，并可提高表单完成率。
-* **更轻松地更新Forms：** Edge Delivery Services方法通常允许更快的开发周期和内容更新，因此您可以快速调整表单。
-* **构建响应式新式Forms：**&#x200B;创建外观出众、可在任何设备上无缝工作的表单。
-* **从可扩展性和可靠性中获益：**&#x200B;您的表单将像基础边缘基础架构一样强大且可扩展。
+* **更快的体验交付：**&#x200B;表单加载速度极快，因为它们是通过靠近用户的全球边缘服务器网络（CDN）进行交付的。这有助于提升用户满意度，并可能提高表单完成率。
+* **更轻松地更新表单：** Edge Delivery Services 的架构通常支持更快速的开发周期和内容更新，使您能够更灵活地调整表单内容。
+* **构建现代化响应式表单：**&#x200B;创建在各类设备上均具有出色外观和顺畅体验的表单。
+* **受益于可扩展性与高可靠性：**&#x200B;您的表单将具备与底层边缘架构同等的强大稳定性与可扩展性。
 
-本指南将：
+本指南将会：
 
-* 解释您可以为Edge Delivery Sites创建（创作）表单的各种方式。
-* 向您说明如何配置用户提交表单后发生的情况（提交操作）。
-* 帮助您根据特定需求和团队技能选择最佳方法。
-* 提供架构图和最佳实践。
+* 讲解如何为您的 Edge Delivery 站点创建（编写）表单的多种方式。
+* 演示如何配置用户提交表单后的处理方式（提交操作）。
+* 帮助您根据具体需求和团队技能选择最合适的方法。
+* 提供架构图示与最佳实践建议。
 
 ## 您应了解的关键术语
 
-* **Edge Delivery Services (EDS)：** Adobe通过CDN提供AEM内容的性能优先的架构。 也称为富兰克林计划。
-* **AEM Forms：** Adobe用于创建、管理和处理表单的解决方案。
-* **通用编辑器(UE)：**&#x200B;用于AEM内容（包括表单）的可视WYSIWYG编辑器。
-* **基于文档的创作：**&#x200B;使用Microsoft Word或Google Docs/工作表创建表单。
-* **文档创作(DA)：** Adobe托管的服务，用于为Edge Delivery Services创作内容（包括可以托管表单的页面）。
-* **Forms提交服务(FSS)：**&#x200B;一种Adobe服务，可简化将表单数据发送到电子表格或电子邮件的过程。
-* **AEM发布实例：**&#x200B;可处理复杂表单提交的实时AEM环境。
-* **CORS（跨源资源共享）：**&#x200B;一种浏览器安全功能，在嵌入来自不同域的表单时需要配置此功能。
-* **CDN （内容分发网络）：**&#x200B;服务器网络，可根据用户的地理位置快速为其提供Web内容。
+* **Edge Delivery Services (EDS):** Adobe 面向性能优先的架构，通过 CDN 交付 AEM 内容。也称为 Project Franklin。
+* **AEM Forms:** Adobe 提供的表单创建、管理与处理解决方案。
+* **Universal Editor （UE）：**&#x200B;款所见即所得（WYSIWYG）的可视化编辑器，用于创建 AEM 内容，包括表单。
+* **Document-Based Authoring：**&#x200B;通过 Microsoft Word 或 Google Docs/Sheets 创建表单的方式。
+* **Document Authoring（DA）：** Adobe 托管的内容创作服务，用于为 Edge Delivery Services 创建内容（包括可嵌入表单的页面）。
+* **Forms Submission Service（FSS）：** Adobe 提供的一项服务，用于简化将表单数据发送至电子表格或电子邮件的流程。
+* **AEM Publish Instance：**&#x200B;用于处理复杂表单提交的线上 AEM 环境。
+* **CORS（跨源资源共享）：**&#x200B;一种浏览器安全机制，当从不同域嵌入表单时需要进行相应配置。
+* **CDN（内容分发网络）：**&#x200B;由多个服务器组成的网络，根据用户的地理位置快速传输网页内容。
 
 
-**Edge Delivery Services表单交互的概念图**
+**Edge Delivery Services 表单交互概念图示**
 
 <!--  
 ```mermaid
@@ -63,11 +63,11 @@ graph LR
 ``` -->
 
 ![表单交互](/help/forms/assets/eds-form-interaction.png)
-此图显示了用户与通过CDN快速投放的表单进行交互的情况。 然后它们提交的数据由后端系统处理。
+该图展示了用户与通过 CDN 快速交付的表单之间的交互过程。用户提交的数据随后由后端系统进行处理。
 
-## Forms如何在Edge上运行？
+## 表单在 Edge 上如何运行？
 
-使用EDS，您的网站内容（包括表单结构）可以源自各种来源，如AEM as a Cloud Service、SharePoint、Google Drive或文档创作(DA)服务。 然后，将此内容发布到全局CDN。 当用户访问您的网站时，将从最近的CDN边缘服务器直接提供内容，从而确保实现最高速度。
+借助 EDS，您的网站内容（包括表单结构）可以来自多种来源，如 AEM as a Cloud Service、SharePoint、Google Drive 或 Document Authoring（DA）服务。这些内容随后会发布到全球 CDN 网络中。当用户访问您的网站时，内容将直接从距离最近的 CDN 边缘服务器提供，从而实现极致的加载速度。
 
 <!--*   **Where AEM Forms Fit In**
     Forms in an EDS architecture are designed to be:
@@ -76,7 +76,7 @@ graph LR
     *   **Flexible to Create:** You have different tools to build your forms.
     *   **Configurable for Submission:** You can send data to simple services or powerful AEM backends.-->
 
-**简化的Forms Edge Delivery Services架构**
+**简化的 Edge Delivery Services 表单架构图示**
 
 <!--
 ```mermaid
@@ -93,16 +93,16 @@ graph LR
         style Backend fill:#fca,stroke:#333,stroke-width:2px
 ``` -->
 
-![架构](/help/forms/assets/eds-simplified-architecture.png)
-此图显示了历程：表单在创作系统中定义，发布到边缘，提供给用户，提交的数据由后端处理。
+![架构说明](/help/forms/assets/eds-simplified-architecture.png)
+本图展示了整个流程：表单在创作系统中定义，发布至边缘，传递给用户，提交的数据由后端系统处理。
 
-## 选择表单创作方法
+## 选择表单创作方式
 
-您可以通过三种主要方式为Edge Delivery Services站点创建表单。 您的选择将取决于您团队的技能、表单的复杂性和项目需求。
+您可以通过三种主要方式为 Edge Delivery Services 站点创建表单。您的选择将取决于团队的技能水平、表单的复杂程度以及项目需求。
 
-### 哪种创作方法适合您？
+### 哪种创作方式最适合您？
 
-使用此决策树帮助您选择：
+请参考以下决策树，帮助您做出选择：
 
 **表单创作决策树**
 <!--    
@@ -122,40 +122,40 @@ graph LR
         style G fill:#ccf,stroke:#333,stroke-width:2px
 ``` -->
 
-![选择正确的平台](/help/forms/assets/eds-authoring-selection.png)
+![选择合适的平台](/help/forms/assets/eds-authoring-selection.png)
 
-此决策树可帮助您根据团队和表单需求选择创作方法。
+此决策树可根据您的团队构成与表单需求，帮助您选择合适的创作方式。
 
-### 使用文档创建Forms (Word/Google Docs)
+### 使用文档（Word/Google Docs）创建表单
 
-如果您的团队熟悉Microsoft Word或Google Docs/工作表[，则此方法非常适用于快速](/help/edge/docs/forms/create-forms.md)创建表单。
+如果[您的团队熟悉使用 Microsoft Word 或 Google Docs/Sheets](/help/edge/docs/forms/create-forms.md)，此方法非常适合快速创建表单。
 
-**工作方式：从文档到Web窗体**
+**工作原理：从文档到网页表单**
 
-您可以使用特殊表格格式或“表单块”直接在Word文档或Google工作表中定义表单的字段、标签和类型。 发布此文档时，Edge Delivery Services会自动将其转换为用户可在您的网站上与之交互的适用于Web的HTML表单。
+您可在 Word 文档或 Google Sheets 中，使用特定的表格格式或“表单区块”直接定义表单字段、标签和类型。当您发布该文档后，Edge Delivery Services 会自动将其转换为可在网站中交互使用的 HTML 网页表单。
 
-**功能和特性**
+**功能与特性**
 
-* 在熟悉的工具中创作：Word、Google Docs、Google Sheets。
-* 定义字段：文本输入、电子邮件、下拉列表、复选框、单选按钮、文本区域。
-* 添加标签、占位符和帮助消息。
-* 设置基本验证规则：必填字段、电子邮件格式。
-* 集成reCAPTCHA以保护垃圾邮件。
-* 允许文件上传。
-* 立即发布：文档中的更改会快速反映在实时网站上。
-* 使用自定义代码扩展：高级用户可以通过GitHub添加自定义表单组件和样式。
+* 可在熟悉的工具中进行创作：Word、Google Docs、Google Sheets。
+* 支持定义字段类型：文本输入、电子邮件、下拉菜单、复选框、单选按钮、多行文本框等。
+* 添加标签、占位符和帮助信息。
+* 设置基本验证规则：必填字段、电子邮件格式等。
+* 集成 reCAPTCHA 以防止垃圾提交。
+* 支持文件上传功能。
+* 即时发布： 您在文档中的修改可快速同步至线上站点。
+* 支持自定义代码扩展：高级用户可通过 GitHub 添加自定义表单组件和样式。
 
 **注意事项**
 
-* 您的团队会定期使用Word或Google Docs/Sheets获取内容。
-* 您需要快速创建从简单到中等复杂的表单。
-* 您希望通过最少的设置将表单数据直接发送到电子表格或电子邮件地址。
+* 您的团队经常使用 Word 或 Google Docs/Sheets 进行内容创作。
+* 您需要快速创建简单到中等复杂度的表单。
+* 您希望将表单数据直接发送到电子表格或电子邮件地址，且只需最小化配置。
 
-**提交的工作方式(主要是Forms提交服务)**
+**提交原理（主要使用 Forms Submission Service）**
 
-Forms以此方式创建，通常会[将其数据发送到AEM Forms提交服务](/help/forms/forms-submission-service.md)。 您将配置此项（通常在源文档本身）以将数据发送到Google工作表、OneDrive/SharePoint上的Excel文件或电子邮件。
+通过此方式创建的表单通常会[将数据发送至 AEM Forms Submission Service](/help/forms/forms-submission-service.md)。您可在源文档中配置它，以将表单数据发送至 Google Sheets、存储于 OneDrive/SharePoint 的 Excel 文件，或作为电子邮件发送。
 
-**基于文档的创作概念**
+**文档式创作概念**
 <!--    
 ```mermaid
     graph LR
@@ -172,38 +172,38 @@ Forms以此方式创建，通常会[将其数据发送到AEM Forms提交服务](
 ```-->
 
 ![基于文档](/help/forms/assets/eds-doc-based.png)
-此图显示了文档中定义的表单如何变成实时Web表单。
+该图示展示了如何将文档中定义的表单转化为可在线使用的网页表单。
 
-### 使用通用编辑器以可视方式显示Forms
+### 使用 Universal Editor 进行可视化表单创建
 
-[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供了一个现代化的拖放界面，可直接在Web浏览器中构建表单。
+[ Universal Editor ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供了一种现代化的拖放式界面，可直接在网页浏览器中创建表单。
 
-**工作方式：拖放表单生成**
+**工作原理：拖放式表单构建**
 
-您可以使用可视化界面将表单组件（如输入字段、按钮、下拉列表）拖动到页面上。 然后，您可以通过属性面板配置每个组件的属性（标签、验证等）。 通用编辑器可让您实时预览表单。
+您可以使用可视化界面，将表单组件（如输入字段、按钮、下拉菜单等）拖放至页面中。随后，您可通过属性面板配置每个组件的属性，如标签、验证规则等。使用 Universal Editor 可实时预览您正在构建的表单。
 
-**功能和特性**
+**功能与特性**
 
-* 使用预建组件库创建可视化表单。
-* 配置实时验证和业务逻辑（例如，根据选择显示/隐藏字段）。
-* 查看不同设备（桌面、移动设备）的实时预览。
-* 与AEM功能(如内容片段、AEM工作流和用户权限)集成。
-* 使用“Experience Builder”获得使用提示创建或编辑表单的AI帮助。
+* 提供可视化表单创建界面，内置丰富的预构建组件库。
+* 支持配置实时验证和业务逻辑（例如：根据选项显示/隐藏字段）。
+* 可实时预览不同设备（桌面端、移动端）上的表单效果。
+* 支持与 AEM 功能集成，例如内容片段、AEM 工作流和用户权限管理。
+* 借助“Experience Builder”，通过提示词获取 AI 协助来创建或编辑表单。
 
 **注意事项**
 
-* 您需要使用条件逻辑、多步骤面板或个性化来构建复杂表单。
-* 您的团队（例如，营销人员、企业用户）更喜欢可视化工具。
-* 您需要与AEM as a Cloud Service紧密集成，以便在表单中进行治理、工作流或使用AEM资源。
+* 您需要构建具备条件逻辑、多步骤面板或个性化体验的复杂表单。
+* 您的团队成员（如市场营销人员或业务用户）更倾向于使用可视化工具。
+* 您需要与 AEM as a Cloud Service 紧密集成，以实现治理、工作流管理，或在表单中使用 AEM 资产。
 
-**提交的工作方式(Forms提交服务或AEM发布)**
+**提交原理（使用 Forms Submission Service 或 AEM Publish 实例）**
 
-使用通用编辑器构建的Forms可以：
+使用 Universal Editor 创建的表单可以：
 
-* 使用简单的[Forms提交服务](/help/forms/forms-submission-service.md)（用于将数据发送到电子表格或电子邮件）。
-* 将数据提交到AEM Publish实例以进行更高级的处理(例如，启动AEM工作流、使用表单数据模型或与其他企业系统集成)。
+* 使用简单的 [Forms Submission Service](/help/forms/forms-submission-service.md)，将数据发送至电子表格或电子邮件。
+* 将数据提交至 AEM Publish 实例，以进行更高级的处理（例如启动 AEM 工作流、使用表单数据模型，或与其他企业系统集成）。
 
-**通用编辑器概念**
+**Universal Editor 概念说明**
 
 <!--    
 ```mermaid
@@ -222,33 +222,33 @@ Forms以此方式创建，通常会[将其数据发送到AEM Forms提交服务](
     style RenderedForm fill:#ffe6e6,stroke:#333
 ```-->
 
-![通用编辑器](/help/forms/assets/eds-ue-based.png)
+![ Universal Editor ](/help/forms/assets/eds-ue-based.png)
 
-此图显示了用于构建表单的通用编辑器的主要部分。
+该图展示了 Universal Editor 中用于构建表单的主要部分。
 
-### 将Forms用于文档创作(DA)
+### 在文档创作（DA）中使用表单
 
-[Document Authoring (DA)](https://www.aem.live/developer/da-tutorial)是一项由Adobe托管的服务，用于创建和管理将通过Edge Delivery Services交付的主要网站内容（页面、文章）。 它是使用SharePoint或Google Drive作为Edge Delivery Services源内容的替代方法。
+[文档创作（DA）](https://www.aem.live/developer/da-tutorial)是 Adobe 托管的服务，用于创建和管理网站主要内容（如页面和文章），这些内容将通过 Edge Delivery Services 进行交付。它是使用 SharePoint 或 Google Drive 来管理 Edge Delivery Services 源内容的替代方案。
 
-**了解Edge Delivery Services内容的文档创作(DA)**
+**了解用于 Edge Delivery Services 内容的文档创作（DA）**
 
-文档创作使用Adobe的设计系统(Spectrum)和AEM的文档模型(Blocks， Sections)，提供了一个企业级创作环境。 它专为EDS的结构化内容管理而设计。
+文档创作采用 Adobe 的设计系统（Spectrum）与 AEM 的文档模型（如 Blocks、Sections），提供企业级的创作环境。该工具专为 EDS 提供结构化内容管理而设计。
 
-**DA如何处理Forms（嵌入，而非直接创作）**
+**DA 如何处理表单（嵌入，而非直接创作）**
 
-DA本身&#x200B;**不是从头开始构建表单的工具**。 相反，您使用DA创建网页，然后将&#x200B;*嵌入*&#x200B;表单（使用基于文档的创作或通用编辑器创建的）到这些DA创作的页面中。
+DA 本身并&#x200B;**不是用于从零开始构建表单的工具**。相反，您应使用 DA 创建网页内容，并将表单（这些表单通过文档式创作或 Universal Editor 创建）*嵌入*&#x200B;到这些由 DA 编写的页面中。
 
-**将Forms嵌入到DA页面的步骤**
+**将表单嵌入 DA 页面中的步骤**
 
-1. **创建表单：**&#x200B;使用以下任一方式生成表单：
-   * 基于文档的创作(Word/Google Docs)
-   * 通用编辑器
+1. **创建表单：**&#x200B;使用以下任一方式构建表单：
+   * 文档式创作方式（Word/Google Docs）
+   *  Universal Editor 
 
-1. **发布您的表单：**&#x200B;请确保此表单已发布，并且可通过其自己的Edge Delivery URL访问（例如，`https://your-eds-project.hlx.page/forms/contact-us`）。
-1. **在DA中创作您的页面：**&#x200B;在“文档创作”中创建或编辑您希望在其中显示表单的页面。
-1. **嵌入表单：**&#x200B;在DA页面中使用特定的“块”或组件引用并嵌入其URL中的表单。 然后，DA页面将获取并显示此外部创建的表单。
+1. **发布表单：**&#x200B;确保该表单已发布，并可通过其独立的 Edge Delivery URL 访问（例如：`https://your-eds-project.hlx.page/forms/contact-us`）。
+1. **在 DA 中创建页面：**&#x200B;在文档创作中创建或编辑页面，以指定表单出现的位置。
+1. **嵌入表单：**&#x200B;在 DA 页面中使用特定的“区块”或组件，通过表单的 URL 引用并嵌入该表单。DA 页面随后将会获取并显示该外部创建的表单。
 
-**嵌入表单的文档创作**
+**在文档创作中嵌入表单**
 <!--
 ```mermaid
     graph TD
@@ -273,22 +273,22 @@ DA本身&#x200B;**不是从头开始构建表单的工具**。 相反，您使�
 
 ![文档创作](/help/forms/assets/eds-da-based.png)
 
-此图显示您首先使用UE或文档创建表单，然后将其嵌入到在“文档创作”中构建的页面。
+该图示说明您需先使用 Universal Editor 或文档来创建表单，再将其嵌入至通过文档创作构建的页面中。
 
 
-### 比较创作选项
+### 对比不同的创作方式
 
-| 标准 | 基于文档的创作 | 通用编辑器(WYSIWYG) | 文档创作(DA)中的Forms |
+| 标准 | 文档式创作 |  Universal Editor （所见即所得） | 在文档创作（DA）中使用表单 |
 |----------------------------------|---------------------------------------|-----------------------------------------|-------------------------------------------|
-| **主要创作工具** | Word/Google Docs/工作表 | 浏览器(AEM通用编辑器) | 不适用(Forms为&#x200B;*嵌入式*) |
-| **团队技能级别** | 熟悉文档编辑器 | 熟悉可视化Web工具 | 将DA用于页面内容 |
-| **典型表单复杂性** | 从简单到适中 | 中等到复杂，企业级 | 取决于嵌入的形式 |
-| **提交选项1 （简单）** | Forms提交服务（至工作表/电子邮件） | Forms提交服务（至工作表/电子邮件） | 遵循嵌入式表单的设置 |
-| **提交选项2 （高级）** | 不适用 | AEM Publish（工作流、FDM等） | 遵循嵌入式表单的设置 |
-| **AEM后端集成** | 最小 | 高(使用AEM发布提交) | 通过嵌入的通用编辑器表单间接进行 |
-| **最适合……** | 内容团队快速创建简单表单，快速捕获数据。 | 需要可视化控制、复杂表单或深度AEM集成的营销人员、业务用户。 | 在DA中管理主要内容的站点，需要来自其他来源的表单。 |
+| **主要创作工具** | Word/Google Docs/Sheets | 浏览器（AEM  Universal Editor ） | 不适用（表单以&#x200B;*嵌入*&#x200B;形式使用） |
+| **团队技能水平** | 熟悉文档编辑器 | 熟练使用可视化网页工具 | 使用 DA 进行页面内容创作 |
+| **典型的表单复杂度** | 简单到中等复杂度 | 中等至复杂，支持企业级表单需求 | 取决于所嵌入的表单 |
+| **提交方式选项 1（简单）** | 使用 Forms Submission Service（提交至电子表格或电子邮件） | 使用 Forms Submission Service（提交至电子表格或电子邮件） | 遵循嵌入表单的设置方式 |
+| **提交方式选项 2（高级）** | 不适用 | AEM Publish（工作流、FDM 等） | 遵循嵌入表单的设置方式 |
+| **AEM 后端集成能力** | 最小 | 高度集成（通过 AEM Publish 提交） | 以嵌入的 Universal Editor 表单方式间接集成 |
+| **最适合...** | 内容团队快速创建简单表单，实现高效数据采集。 | 营销人员或业务用户需要可视化控制、复杂表单或深入 AEM 集成。 | 主体内容由 DA 管理的网站，需要从其他来源嵌入表单。 |
 
-**增强决策树**
+**增强版决策树**
 <!--
 ```mermaid
     graph TD
@@ -316,36 +316,36 @@ DA本身&#x200B;**不是从头开始构建表单的工具**。 相反，您使�
 
 ![决策树](/help/forms/assets/eds-enhanced-decision.png)
 
-## 创作方法的功能比较
+## 创作方式的功能比较
 
 下表详细比较了不同 AEM 表单创作方法的主要功能，帮助您选择最适合您需求的方法。&#x200B;
 
-| **功能** | **通用编辑器（所见即所得）** | **基于文档的创作** | **文档创作(DA)** |
+| **功能** | **Universal Editor （所见即所得）** | **文档式创作** | **文档创作（DA）** |
 |-----------------------------------------|-------------------------------|-----------------------------|-----------------------------|
-| **统一构成网站** | ✅ |                              | ✅ （含嵌入表单） |
-| **嵌入表单支持** | ✅ | ✅ | ✅ （从通用编辑器或文档嵌入） |
-| **规则（动态行为）** | 带有自定义函数的高级规则编辑器 | 有限制：显示/隐藏、计算值、自定义函数 | 取决于嵌入的形式 |
-| **附件支持** | ✅ | ℹ️（早期访问） | 取决于嵌入的形式 |
-| **验证码支持** | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 取决于嵌入的形式 |
-| **提交功能** | REST、电子邮件、FDM、工作流、SharePoint、OneDrive、Azure Blob、Power Automate、Workfront Fusion (EA) | 仅限电子表格 | 遵循嵌入式表单的设置 |
-| **数据架构** | FDM，自定义 | 自定义 | 基于嵌入式表单 |
-| **预填充** | 💡 （通过向导） | ✅ | 取决于嵌入的形式 |
-| **片段** | ✅ | ✅ | 取决于嵌入的形式 |
+| **与 Sites 的统一构成组合** | ✅ |                              | ✅（支持嵌入表单） |
+| **嵌入表单支持** | ✅ | ✅ | ✅（可嵌入来自 Universal Editor 或文档的表单） |
+| **规则（动态行为）** | 带有自定义函数的高级规则编辑器 | 有限制：显示/隐藏、计算值、自定义函数 | 取决于所嵌入的表单 |
+| **附件支持** | ✅ | ℹ️（抢先体验） | 取决于所嵌入的表单 |
+| **验证码支持** | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 取决于所嵌入的表单 |
+| **提交功能** | REST、电子邮件、FDM、工作流、SharePoint, OneDrive, Azure Blob、Power Automate、Workfront Fusion (EA) | 仅限电子表格 | 遵循嵌入表单的设置方式 |
+| **数据架构** | FDM，自定义 | 自定义 | 遵循所嵌入的表单 |
+| **预填充** | 💡（通过向导） | ✅ | 取决于所嵌入的表单 |
+| **片段** | ✅ | ✅ | 取决于所嵌入的表单 |
 | **可视化规则编辑器** | ✅ |                              |                              |
-| **本地化** | 💡 （通过站点） | ℹ️ （Excel/Sheets手册） | 取决于嵌入的形式 |
-| **数据架构（数据树）** | 💡 （通过UI扩展） |                              |                              |
-| **模板支持** | 仅初始内容 |                              |                              |
+| **本地化** | 💡（通过 Sites） | ℹ️（Excel/Sheets 手册） | 取决于所嵌入的表单 |
+| **数据架构（数据树）** | 💡（通过 UI 扩展） |                              |                              |
+| **模板支持** | 仅限初始内容 |                              |                              |
 | **门户** |                               |                              |                              |
-| **主题** | ℹ️（在项目层面） | ℹ️（在项目层面） | ℹ️（基于托管站点） |
-| **自定义组件** | ✅ | ✅ | ✅ （如果嵌入的组件支持它） |
-| **OOTB 与自定义函数** | ✅ | ✅ | ✅（嵌入形式） |
+| **主题** | ℹ️（在项目层面） | ℹ️（在项目层面） | ℹ️（基于托管网站） |
+| **自定义组件** | ✅ | ✅ | ✅（如果嵌入式组件支持的话） |
+| **OOTB 与自定义函数** | ✅ | ✅ | ✅（在嵌入的表单中） |
 | **片段引用** |                               |                              |                              |
 | **Sign 集成** |                               |                              |                              |
-| **试验** | ✅ | ✅ | 取决于嵌入上下文 |
+| **试验** | ✅ | ✅ | 取决于嵌入的上下文 |
 | **通过 Workfront 进行任务管理** | ✅ |                              |                              |
 | **个性化扩展** | 💡 |                              |                              |
-| **编辑器自定义** | ✅ （通过UI扩展） |                              |                              |
-| **提交操作** | ✅ | 仅限电子表格 | 基于嵌入式表单 |
+| **编辑器自定义** | ✅（通过 UI 扩展） |                              |                              |
+| **提交操作** | ✅ | 仅限电子表格 | 遵循所嵌入的表单 |
 
 <!--
 
@@ -421,20 +421,20 @@ Let's bring it all together to help you decide on the best approach for your for
     *   **For visually rich forms with potential for AEM backend integration:** Universal Editor is your tool. You can start with the Forms Submission Service for simple needs and scale to full AEM Publish submissions for complex workflows.
     *   **If your site content is managed in Document Authoring (DA):** You'll create forms using one of the above methods and then embed them into your DA pages. The submission logic will be tied to how the original embedded form was configured.-->
 
-为了在您所学知识的基础上再接再厉，您可以采取以下措施：
+为了进一步实践您所掌握的内容，您可以按以下方式继续推进：
 
-[选择您的提交策略](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)决定您的项目是需要Forms提交服务的简单性（适用于电子表格/电子邮件输出），还是需要AEM发布提交操作提供的灵活性和后端集成。
+[选择合适的提交策略](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)判断您的项目是需要 Forms Submission Service 的简洁方式（适用于输出至电子表格/邮件），还是 AEM Publish Submit Actions 提供的灵活性与后端集成能力。
 
-请参阅[创建Forms的最佳实践](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)一文，了解如何设计有效、可访问且用户友好的表单。
+请参阅[创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)文章，了解如何设计高效、可访问且用户友好的表单。
 
 ## 后续步骤
 
-本指南概述了如何将表单与AEM Edge Delivery Services结合使用。 有关特定配置的更多详细分步说明，请参阅Adobe Experience Manager官方文档：
+本指南概述了如何将表单与 AEM Edge Delivery Services 集成使用。如需更详细的配置步骤和说明，请参阅 Adobe Experience Manager 官方文档。
 
-* [使用Edge Delivery Services Forms进行基于文档的创作](/help/edge/docs/forms/tutorial.md)
-* [带有Edge Delivery Services Forms的通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [文档创作(DA)和嵌入内容](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms提交服务](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [使用 Edge Delivery Services 表单进行文档式创作](/help/edge/docs/forms/tutorial.md)
+* [使用 Universal Editor 与 Edge Delivery Services 表单](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [文档创作（DA）与内容嵌入](https://www.aem.live/developer/da-tutorial)
+* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
 
 
 <!-- 

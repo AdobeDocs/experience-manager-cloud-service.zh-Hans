@@ -1,68 +1,68 @@
 ---
-title: 设计高性能Forms的最佳实践
-description: 了解使用AEM Forms创建用户友好、可访问和高性能表单的基本最佳实践。 提高数据质量、用户体验和提交成功率。
+title: 高性能表单设计最佳实践
+description: 学习使用 AEM Forms 创建用户友好、可访问且高性能表单的关键最佳实践。提升数据质量、用户体验和提交成功率。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
 source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 0%
+ht-degree: 99%
 
 ---
 
-# 创建Forms的最佳实践
+# 创建表单的最佳实践
 
-构建绝佳的形式不仅仅是技术。 下面是如何确保表单对用户友好并实现其目标的：
+打造优秀表单不仅仅关乎技术本身。以下是确保您的表单具有良好用户体验并能实现其目标的方法：
 
-## 设计用户友好且易于访问的Forms
+## 设计用户友好且具备可访问性的表单
 
-* **使用清晰可见的标签：**&#x200B;每个表单字段都需要一个`<label>`。 不要只依赖占位符文本（输入字段内的文本），因为当用户键入内容时，占位符文本会消失，并且不利于访问。
-   * *良好：* `<label for="email">Email Address:</label> <input type="email" id="email" placeholder="you@example.com">`
-   * *错误：* `<input type="email" placeholder="Email Address">`
-* **保持简单：**&#x200B;尽可能使用标准HTML输入类型(`<input type="date">`、`<input type="tel">`)。 与复杂的自定义构件相比，它们通常可提供更好的移动支持和辅助功能。
-* **逻辑顺序和分组：**&#x200B;以对用户有意义的方式排列字段。 使用`<fieldset>`和`<legend>`将相关字段分组在一起。
-* **提供清晰的说明：**&#x200B;对于任何可能令人困惑的字段，提供简洁的帮助文本或工具提示。
-* **键盘导航：**&#x200B;确保用户仅使用键盘（Tab、Shift+Tab、Enter、空格键）即可导航浏览整个表单。
-* **错误处理：**&#x200B;使错误明显且易于纠正。 在相关字段旁边显示错误消息，并解释哪些内容需要修复。
+* **使用清晰、可见的标签：**&#x200B;每个表单字段都应配有 `<label>`。请勿仅依赖占位符文本（即输入框内的文字），因为在用户开始输入时占位符会消失，且不利于无障碍访问。
+   * *推荐：* `<label for="email">Email Address:</label> <input type="email" id="email" placeholder="you@example.com">`
+   * *不推荐：* `<input type="email" placeholder="Email Address">`
+* **保持简洁：**&#x200B;尽可能使用标准 HTML 输入类型（如 `<input type="date">`、`<input type="tel">`）。它们通常比复杂的自定义控件更支持移动端并具备更好的无障碍访问性。
+* **逻辑顺序和字段分组：**&#x200B;按对用户而言合乎逻辑的方式排列字段。可使用 `<fieldset>` 和 `<legend>` 将相关字段进行分组。
+* **提供清晰指引：**&#x200B;对于可能引起混淆的字段，提供简洁的帮助文本或提示说明。
+* **键盘导航：**&#x200B;确保用户可以仅通过键盘完成整个表单的操作流程（Tab、Shift+Tab、Enter、空格键）。
+* **错误处理：**&#x200B;让错误提示明确、易于理解。在相关字段旁边显示错误信息，并说明如何修正。
 
-* **确保您的Forms加载快速且可见**
+* **确保表单加载迅速且易于发现**
 
-   * **突出放置Forms：**&#x200B;如果表单很重要，请确保用户可轻松地查看表单，而无需过度滚动（如果可能，请将“折叠”放在上方）。 Adobe的研究表明，许多表单由于是隐藏的，互动程度很低。
-   * **优化Assets：**&#x200B;将表单的任何自定义JavaScript或CSS尽可能的减小以确保快速加载时间。 Edge Delivery Services有助于加载基本页面，但较大的表单脚本仍可能会减慢加载速度。
+   * **将表单放在显眼的位置：**&#x200B;如果表单很重要，请确保用户能轻松看见，而无需大量滚动页面（如尽可能放置在“首屏”区域）。Adobe 研究显示，许多表单因隐藏太深而互动率低下。
+   * **优化资源体积：**&#x200B;将表单使用的自定义 JavaScript 或 CSS 保持尽可能轻量，以提升加载速度。Edge Delivery Services 可加快基础页面加载，但大型表单脚本仍可能影响性能。
 
 * **负责任地处理用户数据**
-   * **仅询问您需要的内容：**&#x200B;您要求的个人身份识别信息(PII)越少越好。 每个字段都是用户放弃表单的潜在原因。
-   * **透明：**&#x200B;清楚地解释&#x200B;*为什么*&#x200B;您需要某些信息以及&#x200B;*如何使用它*。 链接至您的隐私政策。 这会建立信任。
+   * **只收集必要信息：**&#x200B;请求的个人可识别信息（PII）越少越好。每一个字段都有可能成为用户放弃填写表单的理由。
+   * **保持透明：**&#x200B;清晰说明您&#x200B;*为何*&#x200B;需要收集某些信息，以及&#x200B;*这些信息将如何使用*。提供隐私政策链接。这可以建立信任。
 
 * **改善用户体验：验证码替代方案**
 
-   * **重新思考可见的字幕：**&#x200B;那些“键入波动文本”或“单击所有红绿灯”测试可能会让用户（尤其是残障用户）非常沮丧，并通常会导致高流失率。
+   * **重新考虑可见验证码：**&#x200B;让用户输入扭曲字符或点击所有“红绿灯”的验证方式常常令人沮丧，尤其对有障碍的用户更不友好，并且容易导致高流失率。
 
-* **考虑替代项：**
-   * **Honeypot字段：**&#x200B;添加只由机器人填写的隐藏字段。 如果其中包含数据，则提交内容可能是垃圾邮件。
-   * **基于时间的检查：**&#x200B;衡量提交表单的速度。 提交太快通常是机器人。
-   * **不可见的reCAPTCHA (v3)：**&#x200B;此Google服务在后台分析用户行为，仅当用户看起来可疑时才会提出质询。 这通常是更好的用户体验。
+* **考虑替代方案：**
+   * **蜜罐字段（Honeypot Fields）：**&#x200B;添加一个只有机器人会填写的隐藏字段。如果该字段有数据，极可能是垃圾提交。
+   * **基于时间的检测：**&#x200B;检测表单提交速度。如果提交过快，往往是机器人操作。
+   * **Invisible reCAPTCHA (v3)：** Google 提供的这项服务会在后台分析用户行为，只有在行为可疑时才弹出验证挑战。这通常能带来更好的用户体验。
 
-## 窗体设计应该做和不应该做
+## 表单设计的注意事项
 
-| ✅可以 — 为了获得更好的Forms | ❌不 — 避免这些 |
+| ✅推荐 — 优化表单体验 | ❌不推荐 — 应避免的问题 |
 |----------------------------------------------------------------------|------------------------------------------------------------------|
-| 对所有字段使用可见的`<label>`标记 | 仅使用占位符文本而不是适当的标签 |
-| 首选标准HTML输入类型（如`<input type="email">`） | 使用过于复杂的自定义构件 |
-| 确保完整的键盘导航 | 提供模糊或缺少的错误消息 |
-| 显示清除、可操作的错误消息 | 无正当理由请求过多的个人数据 |
-| 仅询问必要信息 | 使用难以解析的可见验证码 |
-| 说明如何使用数据（隐私信息或链接） | 在页面内隐藏表单 |
-| 使用不可见或行为验证码技术 |                                                                  |
-| 使表单易于在页面上找到（突出放置） |                                                                  |
+| 使用可见的 `<label>` 标记标注所有字段 | 仅使用占位符文字，缺少适当的标签 |
+| 优先使用标准 HTML 输入类型（如 `<input type="email">`） | 使用过于复杂的自定义控件 |
+| 确保支持完整的键盘导航 | 提示信息模糊或缺失 |
+| 显示清晰、可操作的错误提示 | 无正当理由请求过多的个人信息 |
+| 仅收集必要的信息 | 使用难以解决的可见 CAPTCHA |
+| 说明数据用途（提供隐私说明或链接） | 将表单隐藏在页面较深的位置 |
+| 使用不可见或行为型 CAPTCHA 技术 |                                                                  |
+| 将表单放置在页面易于发现的位置（显眼的位置） |                                                                  |
 
 
 ## 后续步骤
 
-本指南概述了如何将表单与AEM Edge Delivery Services结合使用。 有关特定配置的更多详细分步说明，请参阅Adobe Experience Manager官方文档：
+本指南概述了如何将表单与 AEM Edge Delivery Services 集成使用。如需更详细的配置步骤和说明，请参阅 Adobe Experience Manager 官方文档。
 
-* [使用Edge Delivery Services Forms进行基于文档的创作](/help/edge/docs/forms/tutorial.md)
-* [带有Edge Delivery Services Forms的通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [文档创作(DA)和嵌入内容](https://www.aem.live/developer/da-tutorial)
+* [使用 Edge Delivery Services 表单进行文档式创作](/help/edge/docs/forms/tutorial.md)
+* [使用 Universal Editor 与 Edge Delivery Services 表单](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [文档创作（DA）与内容嵌入](https://www.aem.live/developer/da-tutorial)
 * [AEM Forms提交服务](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
