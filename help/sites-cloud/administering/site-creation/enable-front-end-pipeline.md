@@ -47,7 +47,7 @@ AEM可以将站点配置为加载使用前端管道部署的主题，即使您�
 
 ## 要求 {#requirements}
 
-AEM 可以自动调整您的现有站点以使用前端管道。若要执行此工作流，您的网站必须使用核心组件[的](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)v2或更高版本页面组件。
+AEM 可以自动调整您的现有站点以使用前端管道。若要执行此工作流，您的网站必须使用核心组件[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/page)v2或更高版本页面组件。
 
 ## 启用前端管道 {#enabling}
 
