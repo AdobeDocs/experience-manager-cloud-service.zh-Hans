@@ -37,7 +37,7 @@ Adobe Experience Manager (AEM) Edge Delivery Services (EDS)让您可以从边缘
 
 ## 详细创作方法
 
-###  Universal Editor 
+### Universal Editor 
 
 通用编辑器是面向营销人员和设计人员的可视化拖放创作工具，将速度和企业级功能相结合：
 

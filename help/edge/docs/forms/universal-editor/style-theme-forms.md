@@ -142,6 +142,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
   }
   
 ```
+
 * `.{Type}-wrapper`：根据字段类型锁定外部 `div` 元素。例如，`.text-wrapper` 会锁定所有文本字段。
 * `.field-{Name}`：根据特定字段名称进一步选择元素。例如：`.field-first-name`锁定“名字”文本字段。虽然此选择器可用于定位字段为 — {Name}类的元素，但务必谨慎。 在这种特定情况下，它对于设置输入字段的样式不是很有帮助，因为它不仅针对输入本身，还针对标签和描述元素。建议使用更具体的选择器，例如用于定位文本输入字段（.text-wrapper input）的选择器。
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * 锁定包装器：第一个选择器 (`.drop-down-wrapper`) 锁定外部包装器元素，确保样式应用于整个下拉组件。
 * Flexbox 布局：Flexbox 垂直排列标签、下拉菜单和描述以实现干净布局。
 * 标签样式：标签以更粗的字体和微小边距脱颖而出。
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### 单选按钮组
 
@@ -282,6 +284,7 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
+
 此选择器针对具有 radio-group-wrapper 类的任何字段集。这对于将通用样式应用于整个单选按钮组非常有用。
 
 * 定位单选按钮标签
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * Fieldset 元素充当面板容器，具有 panel-wrapper 类和基于面板名称 (field-login) 进行样式设置的附加类。
-* 图例元素 (<legend>) 用作面板标题，其中包含文本“登录信息”和类字段标签。data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
+* 图例元素 (&lt;legend>) 用作面板标题，其中包含文本“登录信息”和类字段标签。data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
 * 在字段集中，多个。{Type}包装元素（在本例中为.text-wrapper和.password-wrapper）表示面板中的各个表单字段。
 * 每个包装器都包含一个标签、输入字段和描述，与前面的示例类似。
 
@@ -483,7 +486,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
  }
 ```
 
-*  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
+* `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -499,7 +502,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
   }
 ```
 
-*  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
+* `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
 1. 定位面板中的各个字段：
@@ -512,7 +515,7 @@ main .form form .panel-wrapper .{Type}-wrapper {
 }
 ```
 
-*  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
+* `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
 1. 定位特定领域（可选）：
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 此选择器对可重复面板中的所有字段包装器进行样式设置，从而保持字段之间的间距一致。
 
 * 定位特定领域（在面板内）：
