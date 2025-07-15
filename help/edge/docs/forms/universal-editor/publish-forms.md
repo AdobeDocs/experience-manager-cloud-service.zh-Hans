@@ -4,16 +4,16 @@ description: 快速无缝地发布您的 Edge Delivery Services Forms。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 97%
 
 ---
 
 # 将自适应表单发布到 Edge Delivery Services
 
-<span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
+<span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
 
 
 当表单最终完成并可供使用时，您就可以发布表单，使客户可以访问表单，进行数据收集和提交。发布后可确保表单在 Edge Delivery 上可用，使用户能够与之无缝交互。在此过程中，客户可以实时填写和提交表单，确保高效的数据捕获和简化的处理过程。

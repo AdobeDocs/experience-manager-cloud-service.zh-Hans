@@ -4,17 +4,17 @@ description: 通用编辑器中的规则编辑器允许您在表单中添加动�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 98%
+source-wordcount: '2216'
+ht-degree: 97%
 
 ---
 
 
 # 所见即所得创作中的规则编辑器简介
 
-<span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
+<span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
 
 
 您可以使用规则编辑器添加动态表单行为，该编辑器允许您创建规则。这些规则可实现条件字段的可见性，根据用户输入进行自动计算，并改善整体用户体验。通过简化表单填写流程，规则编辑器有助于确保准确性和效率。
@@ -229,31 +229,31 @@ ht-degree: 98%
 
 创作表单后，编写第一条规则，即只有当工资总额超过 50000 美元时才显示 `Additional Deduction` 字段。要添加条件规则：
 
-1. 在通用编辑器中打开要编辑的表单，在内容树中选择&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段，然后选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)。或者，也可以直接从&#x200B;**[!UICONTROL 表单对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段。
+1. 在通用编辑器中打开要编辑的表单，在内容树中选择&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段，然后选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)。或者，也可以直接从&#x200B;**[!UICONTROL 表单对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 工资总额]**字段。
    ![规则编辑器示例 1](/help/edge/docs/forms/assets/rule-editor3.png)
 出现可视化规则编辑器界面。
-1. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;以创建规则。
+1. 单击&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 2](/help/edge/docs/forms/assets/rule-editor4.png)
 默认情况下，已选择 `Set Value Of` 规则类型。虽然不能更改或修改所选对象，但可以使用规则下拉列表选择其他规则类型。\
    ![规则编辑器示例 3](/help/edge/docs/forms/assets/rule-editor5.png)
-1. 打开规则类型下拉列表，并选择&#x200B;**[!UICONTROL 时间]**&#x200B;规则类型。
+1. 打开规则类型下拉列表，并选择&#x200B;**[!UICONTROL 时间]**规则类型。
    ![规则编辑器示例 4](/help/edge/docs/forms/assets/rule-editor6.png)
-1. 选择&#x200B;**[!UICONTROL 选择状态]**&#x200B;下拉列表，并选择&#x200B;**[!UICONTROL 大于]**。出现&#x200B;**[!UICONTROL 输入数字]**&#x200B;字段。
+1. 选择&#x200B;**[!UICONTROL 选择状态]**&#x200B;下拉列表，并选择&#x200B;**[!UICONTROL 大于]**。出现&#x200B;**[!UICONTROL 输入数字]**字段。
    ![规则编辑器示例 5](/help/edge/docs/forms/assets/rule-editor7.png)
 1. 在规则&#x200B;**[!UICONTROL 输入数字]**&#x200B;字段中输入 `50000`。
    ![规则编辑器示例 6](/help/edge/docs/forms/assets/rule-editor8.png)
 您已将条件定义为 `When Gross Salary is greater than 50000`。接下来，定义如果条件为 `True` 时要执行的操作。
 1. 在 `Then` 声明中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 显示]**。
    ![规则编辑器示例 7](/help/edge/docs/forms/assets/rule-editor9.png)
-1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。
+1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**字段。
    ![规则编辑器示例 8](/help/edge/docs/forms/assets/rule-editor10.png)
-1. 如果输入的工资低于 `50000`，单击&#x200B;**[!UICONTROL 添加其他部分]**&#x200B;为&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段添加另一个条件。
+1. 如果输入的工资低于 `50000`，单击&#x200B;**[!UICONTROL 添加其他部分]**&#x200B;为&#x200B;**[!UICONTROL 工资总额]**字段添加另一个条件。
    ![规则编辑器示例 9](/help/edge/docs/forms/assets/rule-editor11.png)
 1. 在 `Else` 声明中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![规则编辑器示例 10](/help/edge/docs/forms/assets/rule-editor12.png)
-1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。
+1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**字段。
    ![规则编辑器示例 11](/help/edge/docs/forms/assets/rule-editor13.png)
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
+1. 选择&#x200B;**[!UICONTROL 完成]**保存规则。
 规则编辑器中的规则显示如下。
    ![规则编辑器示例 12](/help/edge/docs/forms/assets/rule-editor14.png)
 
@@ -266,7 +266,7 @@ ht-degree: 98%
 接下来，编写规则计算 `Taxable Income`，即 `Gross Salary` 和 `Additional Deduction` 之间的差值（如果适用）。要在&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段添加计算规则，请执行以下步骤：
 
 1. 在创作模式下，选择&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。或者，也可以直接从&#x200B;**[!UICONTROL 表单对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段。
-1. 接下来，选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建规则。
+1. 接下来，选择&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 13](/help/edge/docs/forms/assets/rule-editor16.png)
 1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。打开用于编写数学表达式的字段。
    ![规则编辑器示例 14](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -277,15 +277,14 @@ ht-degree: 98%
 
    * 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 减号]**。
 
-   * 从“表单对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 放置对象或在此处选择]**&#x200B;字段中的&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。
-
+   * 从“表单对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 放置对象或在此处选择]**&#x200B;字段中的&#x200B;**[!UICONTROL 额外扣除]**字段。
      ![规则编辑器示例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
 
    现在，为 `Tax Payable ` 字段添加规则，该规则由应税收入乘以税率确定。为简单起见，假设固定税率为 `10%`。
 
-1. 在创作模式下，选择&#x200B;**[!UICONTROL 应缴税款]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。接下来，选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建规则。
+1. 在创作模式下，选择&#x200B;**[!UICONTROL 应缴税款]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。接下来，选择&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 16](/help/edge/docs/forms/assets/rule-editor19.png)
 1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。打开用于编写数学表达式的字段。
    ![规则编辑器示例 17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -296,7 +295,6 @@ ht-degree: 98%
    * 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 乘以]**。
 
    * 从&#x200B;**[!UICONTROL 选择选项]**&#x200B;字段中选择&#x200B;**数字**，然后在&#x200B;**[!UICONTROL 输入数字]**&#x200B;字段中输入值 `10`。
-
      ![规则编辑器示例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 接下来，选择表达式字段周围的突出显示区域，并选择&#x200B;**[!UICONTROL 扩展表达式]**。
    ![规则编辑器示例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![添加自定义函数](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### 使用规则编辑器中的自定义函数
