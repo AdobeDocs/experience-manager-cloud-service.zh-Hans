@@ -3,10 +3,10 @@ title: 用于自定义的资源选择器属性
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 39%
+source-wordcount: '1420'
+ht-degree: 37%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 39%
 |---|---|---|---|---|
 | *边栏* | 布尔值 | 否 | 假 | 如果标记为`true`，则资产选择器将在左边栏视图中呈现。 如果资产选择器标记为`false`，则会在模式视图中呈现该资产选择器。 |
 | *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要使用`imsOrg`密钥来验证您访问的组织是否位于Adobe IMS下。 |
-| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用[!DNL Adobe]应用程序进行集成，则需要`imsToken`。 |
-| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用[!DNL Adobe]应用程序集成，则需要`apiKey`。 |
+| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用`imsToken`应用程序进行集成，则需要[!DNL Adobe]。 |
+| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用`apiKey`应用程序集成，则需要[!DNL Adobe]。 |
 | *filterSchema* | 数组 | 否 | | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
 | *filterForm属性* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。为了！ 例如，MIME类型JPG、PNG、GIF。 |
 | *selectedAssets* | 数组 `<Object>` | 否 |                 | 呈现资源选择器时指定选定资源。包含资源的 id 属性的必需对象数组。例如，`[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须在当前目录中可用。如果您需要使用其他目录，请也为 `path` 属性提供一个值。 |
@@ -47,16 +47,16 @@ ht-degree: 39%
 | *filterRepoList* | 函数 | 否 |  | 您可以使用调用Experience Manager存储库并返回存储库筛选列表的`filterRepoList`回调函数。 |
 | *expiryOptions* | 函数 | | | 您可以在以下两个属性之间使用：**getExpiryStatus**，它提供已过期资源的状态。 函数根据您提供的资源的到期日期返回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 请参阅[自定义过期的资源](/help/assets/asset-selector-customization.md#customize-expired-assets)。 此外，您可以使用&#x200B;**allowSelectionAndDrag**，其中函数的值可以是`true`或`false`。 如果该值设置为`false`，则无法在画布上选择或拖动过期的资产。 |
 | *showToast* | | 否 | | 它允许资产选择器为已过期的资产显示自定义的toast消息。 |
-| *metadataSchema* | 数组 | 否 | | 添加您为从用户那里收集元数据而提供的字段数组。 使用此属性，您还可以使用自动分配给资源但用户不可见的隐藏元数据。 |
-| *onMetadataFormChange* | 回调函数 | 否 | | 它包含`property`和`value`。 `Property`等于从&#x200B;*metadataSchema*&#x200B;传递的字段&#x200B;*mapToProperty*，该字段的值正在更新。 而，`value`等于提供的新值作为输入。 |
-| *targetUploadPath* | 字符串 |  | `"/content/dam"` | 默认为资源存储库根目录的文件目标上传路径。 |
-| *hideUploadButton* | 布尔值 | | 假 | 它确保内部上传按钮是否隐藏。 |
-| *onUploadStart* | 函数 | 否 |  | 它是一个回调函数，用于在Dropbox、OneDrive或本地之间传递上传源。 语法为`(uploadInfo: UploadInfo) => void` |
-| *importSettings* | 函数 | | | 它支持从第三方来源导入资产。 `sourceTypes`使用要启用的导入源数组。 支持的源为Onedrive和Dropbox。 语法为`{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
-| *onUploadComplete* | 函数 | 否 | | 它是一个回调函数，用于在成功、失败或复制之间传递文件上传状态。 语法为`(uploadStats: UploadStats) => void` |
-| *onFilesChange* | 函数 | 否 | | 它是一个回调函数，用于在文件更改时显示上载行为。 它会传递挂起的待上传文件的新数组以及上传的源类型。 如果发生错误，Source类型可以为null。 语法为`(newFiles: File[], uploadType: UploadType) => void` |
-| *uploadingPlaceholder* | 字符串 | | | 它是一个占位符图像，在启动资源上传时替换元数据表单。 语法为`{ href: string; alt: string; } ` |
-| *上载配置* | 对象 | | | 它是一个对象，其中包含用于上载的自定义配置。 |
+| *上载配置* | 对象 | | | 它是一个对象，其中包含用于上载的自定义配置。 请参阅[上传配置](#asset-selector-customization.md#upload-config)以了解可用性。 |
+| *metadataSchema* | 数组 | 否 | | 此属性嵌套在`uploadConfig`属性下。 添加您为从用户那里收集元数据而提供的字段数组。 使用此属性，您还可以使用自动分配给资源但用户不可见的隐藏元数据。 |
+| *onMetadataFormChange* | 回调函数 | 否 | | 此属性嵌套在`uploadConfig`属性下。 它包含`property`和`value`。 `Property`等于从&#x200B;*metadataSchema*&#x200B;传递的字段&#x200B;*mapToProperty*，该字段的值正在更新。 而，`value`等于提供的新值作为输入。 |
+| *targetUploadPath* | 字符串 |  | `"/content/dam"` | 此属性嵌套在`uploadConfig`属性下。 默认为资源存储库根目录的文件目标上传路径。 |
+| *hideUploadButton* | 布尔值 | | 假 | 它确保内部上传按钮是否隐藏。 此属性嵌套在`uploadConfig`属性下。 |
+| *onUploadStart* | 函数 | 否 |  | 它是一个回调函数，用于在Dropbox、OneDrive或本地之间传递上传源。 语法为`(uploadInfo: UploadInfo) => void`。 此属性嵌套在`uploadConfig`属性下。 |
+| *importSettings* | 函数 | | | 它支持从第三方来源导入资产。 `sourceTypes`使用要启用的导入源数组。 支持的源为Onedrive和Dropbox。 语法为`{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`。 此外，此属性嵌套在`uploadConfig`属性下。 |
+| *onUploadComplete* | 函数 | 否 | | 它是一个回调函数，用于在成功、失败或复制之间传递文件上传状态。 语法为`(uploadStats: UploadStats) => void`。 此外，此属性嵌套在`uploadConfig`属性下。 |
+| *onFilesChange* | 函数 | 否 | | 此属性嵌套在`uploadConfig`属性下。 它是一个回调函数，用于在文件更改时显示上载行为。 它会传递挂起的待上传文件的新数组以及上传的源类型。 如果发生错误，Source类型可以为null。 语法为`(newFiles: File[], uploadType: UploadType) => void` |
+| *uploadingPlaceholder* | 字符串 | | | 它是一个占位符图像，在启动资源上传时替换元数据表单。 语法为`{ href: string; alt: string; }`，此外，此属性嵌套在`uploadConfig`属性下。 |
 | *功能集* | 数组 | 字符串 | | `featureSet:[ ]`属性用于启用或禁用Asset Selector应用程序中的特定功能。 要启用该组件或功能，您可以在数组中传递字符串值，或将数组留空以禁用该组件。  例如，要在资产选择器中启用上载功能，请使用语法`featureSet:[0:"upload"]`。 同样，您可以使用`featureSet:[0:"collections"]`在资产选择器中启用收藏集。 另外，使用`featureSet:[0:"detail-panel"]`启用资源的[详细信息面板](overview-asset-selector.md#asset-details-and-metadata)。 要同时使用这些功能，语法为`featureSet:["upload", "collections", "detail-panel"]`。 |
 
 <!--

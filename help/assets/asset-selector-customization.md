@@ -3,9 +3,9 @@ title: 自定义资产选择器应用程序
 description: 使用函数可自定义应用程序中的资产选择器。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1261'
 ht-degree: 25%
 
 ---
@@ -102,7 +102,7 @@ assetSelectorProps.infoPopoverMap = infoPopoverMap;
 
 ## 启用或禁用拖放模式 {#enable-disable-drag-and-drop}
 
-将以下属性添加到`assetSelectorProp`以启用拖放模式。 要禁用拖放，请使用`false`替换`true`参数。
+将以下属性添加到`assetSelectorProp`以启用拖放模式。 要禁用拖放，请使用`true`替换`false`参数。
 
 ```
 rail: true,
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## 在资产选择器中上传 {#upload-in-asset-selector}
 
-您可以从本地文件系统将文件或文件夹上传到Asset Selector。 要使用本地文件系统上传文件，您通常需要使用Asset Selector微型前端应用程序提供的上传功能。 在资产选择器中调用上传所需的各种代码片段包括：
+您可以从本地文件系统将文件或文件夹上传到Asset Selector。 要使用本地文件系统上传文件，您通常需要使用Asset Selector微型前端应用程序提供的上传功能。 在资产选择器中调用上传所需的`upload`各种代码片段包括：
 
 * [基本上传表单代码段](#basic-upload)
+* [上传配置](#upload-config)
 * [上载元数据](#upload-with-metadata)
 * [自定义上载](#customized-upload)
 * [使用第三方源上传](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### 上传配置 {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*更多属性包括`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings`、`onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`*。 有关详细信息，请参阅[资产选择器属性](#asset-selector-properties.md)。
 
 ### 上载元数据 {#upload-with-metadata}
 
