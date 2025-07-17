@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '6362'
-ht-degree: 99%
+source-wordcount: '6521'
+ht-degree: 97%
 
 ---
 
@@ -227,7 +227,7 @@ ht-degree: 99%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   + Universal Editor 发行说明 {#univeral-editor}
+   +  Universal Editor 发行说明 {#univeral-editor}
       + [ Universal Editor 当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.06.19发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
@@ -403,7 +403,7 @@ ht-degree: 99%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [从 Universal Editor 发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -908,6 +908,35 @@ ht-degree: 99%
          + [创建和管理自适应表单的审核](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
+   + HTML5 表单 {#html5-forms}
+      + [HTML5表单简介](/help/forms/introductionhtml5.md)
+      + [HTML5表单快速入门](/help/forms/get-started.md)
+      + [HTML5表单的架构](/help/forms/html5-forms-architecture.md)
+      + [HTML5 Forms与PDF forms的功能差异](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [HTML5表单常见问题解答(FAQ)](/help/forms/faqhtml5.md)
+      + [为HTML5表单设计表单模板](/help/forms/designing-form-template.md)
+      + [HTML5表单的最佳实践](/help/forms/best-practices-for-html5-forms.md)
+      + [设计无障碍的HTML5表单](/help/forms/design-accessible-html5-forms.md)
+      + [生成XDP表单的HTML5预览](/help/forms/preview-xdp-forms-html.md)
+      + [HTML5表单的渲染表单模板](/help/forms/rendering-form-template.md)
+      + [为HTML5表单启用附件](/help/forms/enabling-attachments-html5-form.md)
+      + [HTML5 forms服务代理](/help/forms/service-proxy.md)
+      + [优化HTML5表单](/help/forms/optimize-html5-forms.md)
+      + [HTML5表单的屏幕阅读器](/help/forms/screen-readers.md)
+      + [创建HTML5表单的自定义配置文件](/help/forms/custom-profile.md)
+      + [HTML5表单中的从右至左语言](/help/forms/right-left-languages.md)
+      + [将Form Bridge与HTML5表单的自定义门户集成](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [在HTML5表单中创建自定义外观](/help/forms/custom-widgets.md)
+      + [更改HTML5表单的默认样式](/help/forms/changing-default-styles.md)
+      + [HTML5 Forms的Picture子句支持](/help/forms/picture-clause-support.md)
+      + [在HTML5表单中创建可访问的复杂表](/help/forms/accessible-tables.md)
+      + [为HTML5表单创建CSS样式](/help/forms/css-styles.md)
+      + [自定义HTML5表单的错误消息](/help/forms/customzing-errors-html5-forms.md)
+      + [将HTML5表单另存为草稿](/help/forms/saving-html5-form-draft.md)
+      + [为HTML5表单启用日志记录](/help/forms/enable-logs.md)
+      + [调试HTML5 forms](/help/forms/debug.md)
+      + [对HTML5表单的脚本支持](/help/forms/scripting-support.md)
+      + [AEM Forms中的表单集](/help/forms/formset-in-aem-forms.md)
    + 交互式通信 {#interactive-communocation}
       + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
       + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
@@ -1342,7 +1371,7 @@ ht-degree: 99%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
          + [ Universal Editor 和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
