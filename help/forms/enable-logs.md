@@ -172,9 +172,9 @@ ht-degree: 4%
 >[!NOTE]
 >
 >每个日志类别a (xfa)、b (xfaView)和c (xfaPerf)的默认日志级别为2 (ERROR)。 因此，对于日志配置：2-b6，不同类别的日志级别为：
->>a (xfa)：2（默认级别错误）
->>b (xfaView)：6(用户指定的TRACE)
->>a (xfaPerf)：2（默认级别错误）
+>&#x200B;>a (xfa)：2（默认级别错误）
+>&#x200B;>b (xfaView)：6(用户指定的TRACE)
+>&#x200B;>a (xfaPerf)：2（默认级别错误）
 
 ### 使用Configuration Manager启用记录 {#enabling-logging-using-configuration-manager}
 
