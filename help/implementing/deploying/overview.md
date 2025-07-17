@@ -4,10 +4,10 @@ description: 了解部署到 AEM as a Cloud Service 的基础知识和最佳实�
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 94%
 
 以下视频高度概述了如何将代码部署到 AEM as a Cloud Service：
 
->[!VIDEO](https://video.tv.adobe.com/v/32908?quality=9&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -56,8 +56,8 @@ ht-degree: 94%
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-客户通过 Cloud Manager 将自定义代码部署到云环境。Cloud Manager 将本地汇编的内容包转换为符合 Sling 功能模型的构件，这就是在云环境中运行时描述 AEM as a Cloud Service 上的应用程序的方式。因此，在云环境中的[包管理器](/help/implementing/developing/tools/package-manager.md)中查看包时，名称会包含“cp2fm”，并且转换后的包中的所有元数据已被删除。它们无法进行交互，这意味着无法下载、复制或打开它们。有关转换器的详细文档，请参阅[&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
-GitHub上的sling-org-apache-sling-feature-cpconverter 。
+客户通过 Cloud Manager 将自定义代码部署到云环境。Cloud Manager 将本地汇编的内容包转换为符合 Sling 功能模型的构件，这就是在云环境中运行时描述 AEM as a Cloud Service 上的应用程序的方式。因此，在云环境中的[包管理器](/help/implementing/developing/tools/package-manager.md)中查看包时，名称会包含“cp2fm”，并且转换后的包中的所有元数据已被删除。它们无法进行交互，这意味着无法下载、复制或打开它们。有关转换器的详细文档，请参阅[
+GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上的sling-org-apache-sling-feature-cpconverter 。
 
 为 AEM as a Cloud Service 上的应用程序编写的内容包必须明确区分不可变内容和可变内容，并且 Cloud Manager 仅会安装可变内容，并输出如下消息：
 
@@ -112,7 +112,7 @@ GitHub上的sling-org-apache-sling-feature-cpconverter 。
    * 上下文感知配置（`/conf` 下的任何内容）（添加、修改、删除）
    * 脚本（包可以在包安装的安装过程的各个阶段触发安装挂钩。有关安装挂钩的信息，请参阅 [Jackrabbit filevault 文档](https://jackrabbit.apache.org/filevault/installhooks.html)。AEM CS 目前使用 Filevault 版本 3.4.0，它仅允许管理员用户、系统用户和管理员组的成员安装挂钩）。
 
-可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。反映此分隔的重构已在AEM 6.5中完成，有关建议的项目重构的详细信息可在[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=zh-Hans)中找到。
+可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。反映此分隔的重构已在AEM 6.5中完成，有关建议的项目重构的详细信息可在[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到。
 
 >[!NOTE]
 >内容包将部署到所有环境类型（开发、暂存、生产）。无法将部署限于特定环境。施加此限制以确保能够选择自动执行的测试运行。特定于环境的内容需要通过[包管理器](/help/implementing/developing/tools/package-manager.md)手动安装。
@@ -121,7 +121,7 @@ GitHub上的sling-org-apache-sling-feature-cpconverter 。
 
 必须确认任何包含的第三方包与 AEM as a Cloud Service 兼容，否则包含此包会导致部署失败。
 
-如上所述，具有现有代码库的客户应遵循[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=zh-Hans)中所述的6.5存储库更改所需的存储库重构练习。
+如上所述，具有现有代码库的客户应遵循[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中所述的6.5存储库更改所需的存储库重构练习。
 
 ## Repoinit {#repoinit}
 
@@ -159,7 +159,7 @@ GitHub上的sling-org-apache-sling-feature-cpconverter 。
 
 >[!WARNING]
 >
->对于为 `/apps` 或 `/libs` `repoinit` 下的节点定义的 ACL， 执行会在空白存储库上开始。这些包是在 `repoinit` 之后安装的，因此，语句无法依赖包中定义的任何内容，但必须定义先决条件，例如下面的父结构。
+>对于为 `/apps` 或 `/libs``repoinit` 下的节点定义的 ACL， 执行会在空白存储库上开始。这些包是在 `repoinit` 之后安装的，因此，语句无法依赖包中定义的任何内容，但必须定义先决条件，例如下面的父结构。
 
 >[!TIP]
 >
@@ -177,7 +177,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="包管理器 – 迁移可变内容包"
 >abstract="探索将包管理器用于某些用例的情况，在这些用例中应“一次性”安装内容包。安装过程包括将特定内容从生产导入到暂存以调试生产问题，并将小型内容包从内部部署环境转移到 AEM 云环境等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans" text="内容传输工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="内容传输工具"
 
 在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境来调试生产问题。在这些场景中，可以在 AEM as a Cloud Service 上的环境中使用[包管理器](/help/implementing/developing/tools/package-manager.md)。
 
@@ -263,7 +263,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 复制 {#replication}
 
-发布机制与 [AEM Replication Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans) 向后兼容。
+发布机制与 [AEM Replication Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 向后兼容。
 
 若要使用云就绪 AEM 快速入门来开发和测试复制，必须将经典的复制功能与创作/发布设置结合使用。如果已为云删除 AEM 创作上的用户界面入口点，用户会转到 `http://localhost:4502/etc/replication` 以进行配置。
 
@@ -279,7 +279,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 索引更改 {#index-changes}
 
-如果对索引进行了更改，新版本必须继续使用其索引直至被终止，而旧版本使用自己的一组已修改的索引。开发人员应遵循[内容搜索和索引](/help/operations/indexing.md)下描述的索引管理技术。
+如果对索引进行了更改，则旧版本应继续使用其索引，直到其终止，而新版本则使用自己的修改后的索引集，这一点非常重要。 开发人员应遵循[内容搜索和索引](/help/operations/indexing.md)下描述的索引管理技术。
 
 ### 用于回滚的保守编码 {#conservative-coding-for-rollbacks}
 
