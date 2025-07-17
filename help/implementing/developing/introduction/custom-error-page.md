@@ -77,7 +77,7 @@ HTTP [500内部服务器错误](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >[!NOTE]
 >
 >在AEM as Cloud Service中，当从后端收到5XX错误时，CDN会提供一个通用错误页面。 要允许后端的实际响应通过，您需要将以下标头添加到响应： `x-aem-error-pass: true`。
->>这仅适用于来自AEM或Apache/Dispatcher层的响应。 来自中间基础架构层的其他意外错误仍会显示常规错误页面。
+>&#x200B;>这仅适用于来自AEM或Apache/Dispatcher层的响应。 来自中间基础架构层的其他意外错误仍会显示常规错误页面。
 
 >[!CAUTION]
 >
