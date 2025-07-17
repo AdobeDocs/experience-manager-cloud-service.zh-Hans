@@ -2,10 +2,11 @@
 title: 基于属性的访问控制
 description: 了解如何启用基于属性的访问控制来定义基于元数据的规则，以定义对Content Hub中可用资源的访问级别
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 4%
 
 ---
 
@@ -21,15 +22,26 @@ ht-degree: 0%
 
 基于属性的访问控制的一些主要优势包括：
 
-* 消除权限对文件夹结构的依赖性
+* 消除了权限对文件夹结构的依赖
 
-* 允许管理员上传资源并追溯确定权限结构
+* 允许管理员上传资产并追溯确定权限结构
 
-* 减少重复项数量 — 提高资源完整性。 当同一资产与不同组共享时，基于文件夹的权限需要重复项。
+* 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
 
 ## 如何启用基于属性的访问控制？ {#enable-attribute-based-access-control}
 
-截至目前，您无法使用Content Hub用户界面自行创建基于属性的访问控制规则。 创建Adobe支持工单，以使用本文中定义的准则在电子表格中定义规则。
+截至目前，您无法使用Content Hub用户界面自行创建基于属性的访问控制规则。
+
+单击&#x200B;**下载电子表格**&#x200B;下载并在电子表格中定义规则。 创建Adobe支持工单并将电子表格中定义的规则提供给Adobe。
+
+[!BADGE 下载电子表格]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+使用本文中定义的准则，在电子表格中定义规则。
+
+>[!IMPORTANT]
+>
+> 定义规则后，导航到电子表格的&#x200B;**验证错误**&#x200B;选项卡，然后单击&#x200B;**运行ABAC验证**。 **所有验证均通过**&#x200B;消息，确认您可以向Adobe提供定义的规则。
 
 ## 基于属性的访问控制用例示例 {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ ht-degree: 0%
 * 捕获评论中规则的业务意图，无论条件是否正确写入，因为意图有助于我们验证并更正逻辑（如果需要）。
 
 * 为DRM设置的许可证PDF文件需要对所有人可见，以便用户在使用许可证下载资源时能够看到这些文件。
-
-
-
-
-
-
-
-
-
-
