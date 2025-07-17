@@ -79,7 +79,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### 向XFA脚本引擎注册自定义构件  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-当自定义构件代码准备就绪时，请使用适用于`registerConfig`表单Bridge[的](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API在脚本引擎中注册该构件。 它将widgetConfigObject作为输入。
+当自定义构件代码准备就绪时，请使用适用于`registerConfig`表单Bridge[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API在脚本引擎中注册该构件。 它将widgetConfigObject作为输入。
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
