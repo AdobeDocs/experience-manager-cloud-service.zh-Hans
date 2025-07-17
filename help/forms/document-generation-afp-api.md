@@ -3,16 +3,17 @@ title: 如何使用AFP输出同步API？
 description: 了解如何使用AFP输出同步API检索和同步输出呈现版本。
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
-source-git-commit: 0b86f3bf71505b69ef995369045b7c682d7db8e3
+exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
+source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 10%
+source-wordcount: '235'
+ht-degree: 11%
 
 ---
 
 # 使用AEM Forms API生成AFP输出
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features)访问。</span>
 
 高级功能演示(AFP)是一种高性能文档格式，主要用于打印目的。\
 本指南概述了使用AEM Forms生成AFP输出所需的所有步骤和配置。
@@ -100,4 +101,4 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 您可以保存响应并在AFP阅读器中打开保存的文件进行查看。
 
-![PDF读取器](/help/forms/assets/afp-pdf.png)
+<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
