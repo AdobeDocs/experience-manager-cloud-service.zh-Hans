@@ -4,10 +4,10 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 1%
+source-wordcount: '2409'
+ht-degree: 3%
 
 ---
 
@@ -19,23 +19,107 @@ ht-degree: 1%
 
 如果客户拥有带日志记录供应商的许可证或托管日志记录产品，则可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
-* Amazon S3（私人测试版，请参阅下面的注释）
-* Azure Blob存储
-* Datadog
-* Elasticsearch或OpenSearch
-* HTTPS
-* Splunk
-* Sumo Logic（私有测试版，请参阅下面的注释）
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>日志技术</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+    <tr>
+      <td>Azure Blob存储</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>Datacog</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch<br>OpenSearch</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>Sumo逻辑</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> 对于Private Beta中的技术，请发送电子邮件至[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以请求获取访问权限。
 
 日志转发以自助方式配置，方法是在Git中声明配置，并且可以通过Cloud Manager配置管道部署到开发、暂存和生产环境类型。 可以使用调用命令行工具将配置文件部署到快速开发环境（RDE）。
 
 AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（如专用出口IP）进行路由。
 
 请注意，与发送到日志记录目的地的日志相关联的网络带宽被视为您组织的网络I/O使用的一部分。
-
->[!NOTE]
->
->Amazon S3和Sumo Logic位于Private Beta中，仅支持AEM日志(包括Apache/Dispatcher)。  通过HTTPS的New Relic还处于私人测试阶段。 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
 
 ## 本文的结构 {#how-organized}
 
@@ -49,7 +133,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 ## 设置 {#setup}
 
-1. 创建名为`logForwarding.yaml`的文件。 它应包含元数据，如[配置管道项目](/help/operations/config-pipeline.md#common-syntax)中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
+1. 创建名为`logForwarding.yaml`的文件。 它应包含元数据，如[配置管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
 
    ```yaml
    kind: "LogForwarding"
@@ -116,14 +200,14 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 有些组织选择限制日志记录目标可以接收哪些流量，而有些组织则可能需要使用HTTPS (443)以外的端口。  如果是，则在部署日志转发配置之前，需要配置[高级网络](/help/security/configuring-advanced-networking.md)。
 
 根据您是否使用端口443以及是否需要从固定IP地址显示日志，使用下表查看高级联网和日志配置的要求。
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,7 +217,7 @@ table, th, td &lbrace;
       <th>需要LogForwarding.yaml端口定义</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS (443)</td>
+      <td rowspan="2" ro>HTTPS (443)</td>
       <td>否</td>
       <td>否</td>
       <td>否</td>
@@ -155,7 +239,7 @@ table, th, td &lbrace;
       <td>是</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >是否从单个IP地址显示日志取决于您选择的高级联网配置。  必须使用专用出口实现此目的。
@@ -194,13 +278,17 @@ data:
 
 ### Amazon S3 {#amazons3}
 
+日志转发到Amazon S3支持AEM和Dispatcher日志，尚不支持CDN日志。
+
 >[!NOTE]
 >
->定期写入S3的日志，每种日志文件类型每10分钟写入一次。  这可能会导致切换功能后将日志写入S3的初始延迟。  可在[此处](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)找到有关这种行为存在原因的更多信息。
+>定期写入S3的日志，每种日志文件类型每10分钟写入一次。  这可能会导致切换功能后将日志写入S3的初始延迟。  [有关此行为的详细信息](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)。
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-要使用S3日志转发器，您需要为AWS IAM用户预配置用于访问S3存储段的适当策略。  请参阅[此处](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)以了解如何创建IAM用户凭据。
+要使用S3日志转发器，您需要为AWS IAM用户预配置用于访问S3存储段的适当策略。  有关如何创建IAM用户凭据的信息，请参阅[AWS IAM用户文档](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)。
 
 IAM策略应允许用户使用`s3:putObject`。  例如：
 
@@ -228,7 +316,7 @@ IAM策略应允许用户使用`s3:putObject`。  例如：
 }
 ```
 
-有关AWS存储段策略实施的更多信息，请参阅[此处](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)。
+有关如何实施的更多信息，请参阅[AWS存储段策略文档](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)。
 
 ### Azure Blob存储 {#azureblob}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-注意事项：
+#### 注意事项
 
 * 创建API密钥，而不与特定的云提供商进行任何集成。
 * 标记属性是可选的
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-注意事项：
+#### 注意事项
 
 * 默认情况下，端口为443。 可以选择使用名为`port`的属性覆盖它
 * 对于凭据，请确保使用部署凭据，而不是帐户凭据。 这些是在屏幕中生成的凭据，可能与以下图像类似：
@@ -378,17 +466,10 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-注意事项：
+#### 注意事项
 
 * URL字符串必须包含&#x200B;**https://**，否则验证将失败。
 * URL可能包含端口。 例如，`https://example.com:8443/aem_logs/aem`。如果url字符串中未包含任何端口，则采用端口443（默认的HTTPS端口）。
-
-#### New Relic日志API {#newrelic-https}
-
-向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
-
->[!NOTE]
->New Relic会根据您的New Relic帐户配置的位置，提供特定于区域的端点。  有关New Relic文档，请参阅[此处](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
 
 #### HTTPS CDN日志 {#https-cdn}
 
@@ -413,6 +494,52 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 * aemhttpdaccess
 * aemhttpderror
 
+### New Relic日志API {#newrelic-https}
+
+将日志转发到New Relic会利用New Relic HTTPS API进行摄取。  目前，它仅支持来自AEM和Dispatcher的日志；尚不支持CDN日志。
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>日志转发到New Relic仅适用于客户拥有的New Relic帐户。
+>
+>向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
+>
+>New Relic根据您的New Relic帐户配置位置提供特定于区域的端点。  有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
+
+### Dynatrace日志API {#dynatrace-https}
+
+将日志转发到Dynatrace会利用Dynatrace HTTPS API进行摄取。  目前，它仅支持来自AEM和Dispatcher的日志；尚不支持CDN日志。
+
+令牌需要“摄取日志”范围属性。
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
+
 ### Splunk {#splunk}
 
 ```yaml
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-注意事项：
+#### 注意事项
 
 * 默认情况下，端口为443。 可以选择使用名为`port`的属性覆盖它。
 * 根据特定日志，sourcetype字段将具有以下值之一： *aemaccess*，*aemerror*，
@@ -441,6 +568,8 @@ data:
 > [如果将](#legacy-migration)从旧版日志转发迁移到此自助模型，则发送到您的Splunk索引的`sourcetype`字段的值可能已更改，因此请进行相应调整。
 
 ### Sumo逻辑 {#sumologic}
+
+日志转发到Sumo Logic支持AEM和Dispatcher日志；尚不支持CDN日志。
 
 在配置Sumo Logic进行数据摄取时，您会看到“HTTP Source地址”，该地址在单个字符串中提供主机、接收者URI和私钥。  例如：
 
