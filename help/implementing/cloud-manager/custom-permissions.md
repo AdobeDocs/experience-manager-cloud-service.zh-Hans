@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 40%
 
 ---
@@ -48,7 +48,7 @@ Cloud Manager具有一组预定义的角色，这些角色可管理对各种Clou
 
 ### 创建新的产品配置文件 {#create}
 
-首先，创建您可以为其分配自定义权限的产品配置文件。
+首先创建可为其分配自定义权限的产品配置文件。
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager。
 
@@ -174,7 +174,7 @@ Cloud Manager具有一组预定义的角色，这些角色可管理对各种Clou
 
 | 权限项类型 | 示例 | 描述 |
 | --- | --- | --- |
-| 组织 | 组织：A 公司 | 所有对组织适用的资源。资源可以是项目、环境或管道。如果用户为任意权限添加一个组织，则该组织中的所有新资源也会具有此权限。 |
+| 组织 | 组织:companyA | 所有对组织适用的资源。资源可以是项目、环境或管道。如果用户为任意权限添加一个组织，则该组织中的所有新资源也会具有此权限。 |
 | 项目 | 项目 A | 项目的所有适用资源。 |
 | 环境 | 项目 A：环境 | 适用于特定环境。 |
 | 管道 | 项目 A：管道 | 适用于特定管道。 |

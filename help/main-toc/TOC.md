@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
 workflow-type: tm+mt
-source-wordcount: '6521'
+source-wordcount: '6522'
 ht-degree: 97%
 
 ---
@@ -227,7 +227,7 @@ ht-degree: 97%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   + Universal Editor 发行说明 {#univeral-editor}
+   +  Universal Editor 发行说明 {#univeral-editor}
       + [ Universal Editor 当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.06.19发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
@@ -403,7 +403,7 @@ ht-degree: 97%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [从 Universal Editor 发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -1230,8 +1230,8 @@ ht-degree: 97%
    + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
    + [生成变体](/help/generative-ai/generate-variations.md)
-   + [助手（有限 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms 的 AI 助手（表单体验生成器）（早期采用者）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM人工智能助理(Beta有限公司)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms AI助手(Forms Experience Builder)（早期采用者）](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
@@ -1371,7 +1371,7 @@ ht-degree: 97%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
          + [ Universal Editor 和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
