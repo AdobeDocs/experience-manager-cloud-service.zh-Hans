@@ -81,7 +81,7 @@ Admin Console中的![AEM AI助手](/help/implementing/cloud-manager/assets/ai-as
 
 ![在Admin Console的AEM AI助手中创建技术支持票证](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-有关在AEM as a Cloud Service中设置用户和组的引导式演练，请参阅[配置对AEM as a Cloud Service的访问权限](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview)。
+有关在AEM as a Cloud Service中设置用户和组的引导式演练，请参阅[配置对AEM as a Cloud Service的访问权限](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/overview)。
 
 另请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)。
 
