@@ -5,9 +5,9 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 23%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 23%
 
 选择相应的引用类型可获取详细信息。在某些情况下，当您选择了某个特定引用后，您还可以执行其他操作，包括：
 
-* **传入链接**，提供直接引用所选页面的页面列表，同时提供在您选择特定链接时直接访问&#x200B;**编辑**&#x200B;这些页面之一的权限。
+* **传入链接**，提供直接引用所选页面的页面列表，以及在选择特定链接时直接访问这些页面中的&#x200B;**编辑**&#x200B;页面。
    * 这仅显示静态链接，而不显示动态生成的链接，例如来自列表组件的链接。
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)，提供对相关启动项的访问权
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md) 显示基于选定资源的所有 Live Copy 的路径。
