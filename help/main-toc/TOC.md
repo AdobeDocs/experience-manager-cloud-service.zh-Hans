@@ -227,10 +227,10 @@ ht-degree: 97%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   + Universal Editor 发行说明 {#univeral-editor}
+   +  Universal Editor 发行说明 {#univeral-editor}
       + [ Universal Editor 当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
-         + [2025.06.19发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
+         + [2025.06.19 版发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
          + [2025.05.21 版发行说明](/help/release-notes/universal-editor/2025/2025-05-21.md)
          + [2025.04.04 版发行说明](/help/release-notes/universal-editor/2025/2025-04-04.md)
          + [2025.03.10 版发行说明](/help/release-notes/universal-editor/2025/2025-03-10.md)
@@ -403,7 +403,7 @@ ht-degree: 97%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [从 Universal Editor 发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -940,7 +940,7 @@ ht-degree: 97%
    + 交互式通信 {#interactive-communocation}
       + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
       + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
-      + [使用AEM Forms API生成AFP输出](/help/forms/document-generation-afp-api.md)
+      + [使用 AEM Forms API 生成 AFP 输出](/help/forms/document-generation-afp-api.md)
       + [常见问题解答](/help/forms/interactive-communications-faq.md)
    + 以 Form 为中心的工作流  {#create-form-centric-workflows}
       + [以 Form 为中心的工作流简介](/help/forms/aem-forms-workflow.md)
@@ -1371,7 +1371,7 @@ ht-degree: 97%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor  {#universal-editor}
+      +  Universal Editor  {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
          + [ Universal Editor 和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
@@ -1502,7 +1502,7 @@ ht-degree: 97%
    + [AEM as a Cloud Service 中的基础设施和服务监测](/help/operations/monitoring.md)
    + [维护任务](/help/operations/maintenance.md)
    + [恢复内容](/help/operations/restore.md)
-   + [恢复之前部署的代码(Alpha)](/help/operations/restore-previous-code-deployed.md)
+   + [恢复之前部署的代码（Alpha 版）](/help/operations/restore-previous-code-deployed.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
    + [使用配置管道](/help/operations/config-pipeline.md)
    + [删除通用 lucene 索引](/help/operations/removal-generic-lucene-index.md)
