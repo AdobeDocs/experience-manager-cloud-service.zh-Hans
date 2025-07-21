@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2166'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,6 @@ ht-degree: 99%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Forms Submission](/help/forms/assets/eds-fss.png)
 
 该流程图展示了 Forms Submission Service 如何接收已提交的数据，并将其发送到预设的电子表格或电子邮件地址。
@@ -74,7 +73,7 @@ ht-degree: 99%
 * [提交至 Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交至 Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交至 Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [提交到Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [提交至 Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 >[!NOTE]
 >
@@ -145,7 +144,6 @@ ht-degree: 99%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![嵌入式表单架构](/help/forms/assets/eds-embedded-form.png)
 此架构图展示了宿主页面如何从表单源获取表单 HTML 并将其显示。表单的提交仍使用原始表单配置的提交端点。
 

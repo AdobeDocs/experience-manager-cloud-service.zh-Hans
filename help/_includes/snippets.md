@@ -1,8 +1,8 @@
 ---
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -111,9 +111,9 @@ ht-degree: 93%
    </td>
    </tr>
    <tr>
-    <td>ES2022支持 </td>
-    <td>尚不支持ES2022；仅支持ES5 JavaScript功能。 </td>
-    <td>自定义函数中提供了对现代JavaScript功能（例如，直到ES2022的let和arrow函数）的支持。 
+    <td>ES2022 支持 </td>
+    <td>尚不支持 ES2022；当前仅支持 ES5 JavaScript 特性。 </td>
+    <td>在自定义函数中支持现代 JavaScript 特性，例如 `let` 和箭头函数，支持范围扩展至 ES2022。 
    </td>
    </tr>
    </tr>
@@ -169,11 +169,11 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >前端管道要求预先将以下 IP 允许列表添加到 Cloud Manager。
->&#x200B;>如果需要，通过复制下面的地址 Block [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将 Block 粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
->&#x200B;>为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
+>>如果需要，通过复制下面的地址 Block [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将 Block 粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
+>>为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
 >
 >**Cloud Manager IP 允许列表**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## 添加 Cloud Manager IP 允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >如果您使用或打算使用前端管道来开发 Sites，则必须事先添加 Cloud Manager IP 允许列表。
->&#x200B;>请参阅[将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
+>>请参阅[将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
 
 ## IP 允许列表和通用编辑器 {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ ht-degree: 93%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 
@@ -282,10 +282,10 @@ ht-degree: 93%
 >
 >您可以继续为现有项目使用本文档中描述的方法。但是对于新项目，Adobe 建议使用 [Edge Delivery Services。](/help/edge/overview.md)
 
-## Adobe提供的站点模板 {#adobe-templates}
+## Adobe 提供的网站模板 {#adobe-templates}
 
-为了加快站点创建，Adobe提供了大量适用于不同用途的模板。
+为加速网站创建，Adobe 提供多种适用于不同用途的模板。
 
-* 使用Edge Delivery Services的[AEM站点](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) — 使用通用编辑器创作AEM页面并通过[Edge投放](/help/edge/overview.md)传递
-* 适用于Commerce的[具有AEM的Edge Delivery Services创作](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) — 用于使用Universal Editor为商业项目创作AEM页面，并通过[edge delivery](/help/edge/overview.md)交付
-* [标准AEM站点模板](https://github.com/adobe/aem-site-template-standard/releases) — 用于创作传统AEM页面并通过[发布投放](/help/sites-cloud/authoring/author-publish.md)投放
+* [具有 Edge Delivery Services 的 AEM 网站](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) — 用于通过 Universal Editor 编写 AEM 页面，并通过[边缘交付](/help/edge/overview.md)进行内容投放
+* [面向电商项目的 AEM 内容创作与 Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) — 用于通过 Universal Editor 编写电商项目的 AEM 页面，并通过[边缘交付](/help/edge/overview.md)进行内容投放
+* [标准 AEM 网站模板](https://github.com/adobe/aem-site-template-standard/releases) — 用于编写传统 AEM 页面，并通过[发布交付](/help/sites-cloud/authoring/author-publish.md)进行内容投放

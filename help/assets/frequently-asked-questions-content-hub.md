@@ -3,9 +3,9 @@ title: Content Hub 常见问题 (FAQ)
 description: 获取有关 Content Hub 的一些最常见问题 (FAQ) 的答复。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Content Hub 是 Adobe 提供和维护的一项功能，它没有任何需要通�
 
 在沙盒程序及其作者生产环境中，有一个早期访问 Content Hub 的计划。请参阅[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。若要了解详情有关早期访问计划的更多信息，联系您的 Adobe 帐户团队。
 
-目前，Content Hub 尚不适用于非生产环境（阶段和开发）。Assets Ultimate的暂存/开发环境预计将于2025年3月推出。
+目前，Content Hub 尚不适用于非生产环境（阶段和开发）。Assets Ultimate 预计将于 2025 年 3 月在阶段（stage）和开发（dev）环境中提供。
 
 ## 为什么登录 Content Hub 后我看不到任何资产？ {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Content Hub 是 Adobe 提供和维护的一项功能，它没有任何需要通�
    >
    >如果用户在两个 Admin Consoles 中被分配到 Express 和 Assets 产品轮廓，则需要有相同的电子邮件地址并使用一个商业的&#x200B;**企业或学校**&#x200B;帐户，而不能是&#x200B;**个人**&#x200B;帐户。理想的配置是将两个 Admin Console 都设置为&#x200B;**联合 ID**，并在它们之间设置信任关系，以确保用户获得无缝的单点登录体验。一些 Express 计划（例如 Express Teams）不支持 Federated ID/单点登录。
 
-除了正确的产品授权外，Content Hub 中的 Adobe Express 集成还要求被分配的用户至少对支持 Content Hub 的 Assets 作者环境具有[!UICONTROL 可编辑]权限，并且至少在 **[!UICONTROL # /content/dam/hydrated-assets/]** 文件夹层级结构中具有该权限，这样 Content Hub 用户可以在其中保存他们用 Express 创建的内容。请参阅管理员视图（触屏 UI）中的[权限管理](/help/security/touch-ui-principal-view.md)或者简化的 [Assets 视图中的权限管理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
+除了正确的产品授权外，Content Hub 中的 Adobe Express 集成还要求被分配的用户至少对支持 Content Hub 的 Assets 作者环境具有[!UICONTROL 可编辑]权限，并且至少在 **[#UICONTROL /content/dam/hydrated-assets/]** 文件夹层级结构中具有该权限，这样 Content Hub 用户可以在其中保存他们用 Express 创建的内容。请参阅管理员视图（触屏 UI）中的[权限管理](/help/security/touch-ui-principal-view.md)或者简化的 [Assets 视图中的权限管理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 我可以设置 Content Hub，以便我的组织的品牌指南显示为主页上的关联吗？ {#content-hub-setup-brand-guidelines}
 
@@ -98,41 +98,41 @@ Adobe 提供从 Brand Portal 到 Content Hub 的迁移支持，您可以通过�
 
 要访问[配置用户界面](/help/assets/configure-content-hub-ui-options.md)，您需要成为 [Content Hub 管理员](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)。如果您在 Adobe Admin Console 中的生产作者实例中被分配到 AEM 管理员产品配置文件，但仍然看不到配置选项，请确保 AEM 管理员产品配置文件未重命名。有关更多详细信息，请参阅 [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)。
 
-## Content Hub如何解决Brand Portal的限制？ {#content-hub-brand-portal-comparison}
+## Content Hub 如何解决 Brand Portal 的局限性？ {#content-hub-brand-portal-comparison}
 
 
 下表概述了两种解决方案之间的主要区别：
 
 | 区域 | 功能 | Content Hub | Brand Portal |
 |---|---|----|----|
-| 配置分发体验 | 为筛选器、资源详细信息以及添加资源页面配置元数据 | ✓ | − |
-|  | 从门户配置外部链接 | ✓ | − |
+| 配置分发体验 | 为过滤器、资产详细信息和“添加资产”页面配置元数据 | ✓ | − |
+|  | 从门户中配置外部链接 | ✓ | − |
 |  | 配置横幅消息 | ✓ | ✓ |
-|  | 配置用于品牌推广的横幅图像 | ✓ | ✓ |
-|  | 根据品牌要求为UI配置主颜色和次颜色 | ✓ | − |
-| 从DAM共享资产 | 从DAM共享原始批准的资产 | ✓ | ✓ |
-|  | 已批准资源更改已自动同步 | ✓ | − |
-| 搜索和筛选条件 | 动态筛选器（选项根据显示的资产动态显示） | ✓ | − |
+|  | 配置横幅图像以实现品牌化 | ✓ | ✓ |
+|  | 根据品牌要求配置 UI 的主色和次色 | ✓ | − |
+| 从 DAM 共享资产 | 从 DAM 共享原始已批准资产 | ✓ | ✓ |
+|  | 已批准的资产更改将自动同步 | ✓ | − |
+| 搜索与筛选 | 动态过滤器（根据所显示的资产动态呈现选项） | ✓ | − |
 |  | 搜索历史记录 | ✓ | − |
 | 资产上传 | 本地驱动器 | ✓ | ✓ |
-|  | 上传资源时添加可配置元数据 | ✓ | − |
-| 下载和演绎版 | 下载原始资源 | ✓ | ✓ |
-|  | 从DAM共享和下载静态演绎版 | ✓ | ✓ |
+|  | 上传资产时添加可配置元数据 | ✓ | − |
+| 下载与演绎版 | 下载原始资产 | ✓ | ✓ |
+|  | 从 DAM 共享和下载静态演绎版 | ✓ | ✓ |
 |  | 下载动态演绎版（预设和智能裁剪） | ✓ | ✓ |
-|  | 能够限制查看和下载已过期的资源 | ✓ | − |
-| 链接共享和收藏集 | 登录用户的链接共享 | ✓ | ✓ |
+|  | 可以限制查看和下载过期资产 | ✓ | − |
+| 链接共享和收藏集 | 面向已登录用户的链接共享 | ✓ | ✓ |
 |  | 公共收藏集 | ✓ | ✓ |
-|  | 在收藏集中搜索 | ✓ | − |
+|  | 在收藏集内搜索 | ✓ | − |
 |  | 匿名链接共享 | ✓ | ✓ |
 |  | 专用收藏集 | ✓ | ✓ |
-| 权限 | 基于ACL的权限 | − | ✓ |
+| 权限 | 基于 ACL 的权限 | − | ✓ |
 |  | 基于属性的访问控制 | ✓ | − |
-| Express集成 | 在Adobe Express中编辑Content Hub Assets并保存到DAM | ✓ | − |
-| 功能板和报表 | 分析仪表板 | ✓ | − |
-| UI 可扩展性 | 资源详细信息页面上的自定义扩展点 | 有限可用性 | − |
-| 创新即将推出 | 收藏夹（按用户） | ✓ | − |
-|  | 管理员固定的收藏集 | ✓ | − |
+| Express 集成 | 在 Adobe Express 中编辑 Content Hub 资产并保存至 DAM | ✓ | − |
+| 仪表板和报告 | 洞察仪表板  | ✓ | − |
+| UI 可扩展性 | 资产详情页上的自定义扩展点 | 限量发布版 | − |
+| 即将推出的创新功能 | 用户收藏的收藏集 | ✓ | − |
+|  | 管理员置顶的收藏集 | ✓ | − |
 |  | 语义搜索 | ✓ | − |
-|  | 本地化的搜索和元数据显示 | ✓ | − |
+|  | 本地化搜索和元数据显示 | ✓ | − |
 
 
