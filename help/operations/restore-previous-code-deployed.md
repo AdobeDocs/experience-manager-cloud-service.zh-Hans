@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="英文字母" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '504'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->本文中介绍的功能只能通过早期采用者alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>本文中介绍的功能只能通过alpha程序使用。 要注册Alpha，请参阅管道部署的[一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
 
 使用&#x200B;**还原先前部署的代码**&#x200B;将环境立即回滚到其上次成功生成 — 无需运行管道。
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 仅当下面的&#x200B;**every**&#x200B;条件为true时，**还原先前部署的代码**&#x200B;功能才可用：
 
 * 您拥有&#x200B;**环境还原创建**&#x200B;权限。 有关管理权限的详细信息，请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)。
-* 您的组织已注册率先采用者计划，并且功能标志已打开。
+* 您的组织已注册Alpha计划，并且功能标记已启用。
 * 程序在AEM as a Cloud Service上运行。
 * 选择的环境是`Development`环境(临时Alpha限制)。
 * 该环境的最后一个管道已成功完成，并在&#x200B;**天内**&#x200B;前运行。
