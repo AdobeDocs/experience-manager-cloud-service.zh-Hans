@@ -30,12 +30,12 @@ ht-degree: 2%
 
 1. 本地开发环境
 
-使用&#x200B;**CRXDE Lite**&#x200B;执行教程步骤和屏幕截图。 IDE也可用于完成本教程。 有关使用IDE开发带有AEM的[的详细信息，请参见此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
+使用&#x200B;**CRXDE Lite**&#x200B;执行教程步骤和屏幕截图。 IDE也可用于完成本教程。 有关使用IDE开发带有AEM的[的详细信息，请参见此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hans)。
 
 
 ## 项目设置 {#project-setup}
 
-Screens项目的源代码通常作为多模块Maven项目进行管理。 为了加快本教程，已使用[AEM项目原型13](https://github.com/adobe/aem-project-archetype)预生成了一个项目。 有关使用Maven AEM项目原型创建项目的更多详细信息，请参阅[项目设置](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
+Screens项目的源代码通常作为多模块Maven项目进行管理。 为了加快本教程，已使用[AEM项目原型13](https://github.com/adobe/aem-project-archetype)预生成了一个项目。 有关使用Maven AEM项目原型创建项目的更多详细信息，请参阅[项目设置](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hans)。
 
 1. 使用[CRX包管理器](http://localhost:4502/crx/packmgr/index.jsp)下载并安装以下包：
 
@@ -131,7 +131,7 @@ AEM Screens具有一些有趣的限制，对于传统的WCM Sites组件未必是
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   根据正在使用的[创作模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes)，Screens组件需要两种不同的渲染：
+   根据正在使用的[创作模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=zh-Hans#page-modes)，Screens组件需要两种不同的渲染：
 
    1. **生产**：预览或发布模式(wcmmode=disabled)
    1. **编辑**：用于所有其他创作模式，即编辑、设计、基架、开发人员……
@@ -378,7 +378,7 @@ AEM Screens组件在编辑模式与预览/生产模式中的呈现方式有所�
 
 ## 创建设计页面 {#design-page}
 
-AEM Screens使用[静态页面模板](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html)和[设计配置](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html)进行全局更改。 设计配置通常用于为通道上的Parsys配置允许的组件。 最佳做法是以特定于应用程序的方式存储这些配置。
+AEM Screens使用[静态页面模板](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=zh-Hans)和[设计配置](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=zh-Hans)进行全局更改。 设计配置通常用于为通道上的Parsys配置允许的组件。 最佳做法是以特定于应用程序的方式存储这些配置。
 
 将在下面创建We.Retail运行设计页面，该页面存储特定于We.Retail运行项目的所有配置。
 
