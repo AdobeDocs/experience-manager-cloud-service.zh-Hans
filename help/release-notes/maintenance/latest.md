@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
+source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '632'
 ht-degree: 31%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 31%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 21644 {#21644}
+## 版本 21706 {#21706}
 
-以下总结了维护版本21644的持续改进，该版本于2025年7月22日公开发布。 上一个维护版本是版本 21570。
+以下总结了维护版本21706的持续改进，该版本于2025年7月24日公开发布。 上一个维护版本是版本 21570。
+
+>[!NOTE]
+>
+>发行说21644已设为私有，并由发行21706取代。
 
 激活 2025.7.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-21644}
+### 增强功能 {#enhancements-21706}
 
 * Assets-39377：在Assets批量导入程序中改进对远程存储429的处理。
 * Assets-46026：元数据导出器的可配置最大深度。
@@ -39,7 +43,7 @@ ht-degree: 31%
 * SITES-31677：自定义工作区现已支持将 AEM 内容片段导出至 Target。
 * SKYOPS-112741：从AEM-CS SDK中删除`com.adobe.granite.product.support`捆绑包。
 
-### 修复的问题 {#fixed-issues-21644}
+### 修复的问题 {#fixed-issues-21706}
 
 * Assets-12882：打开查看器预设后，UI对齐出现问题。
 * Assets-48958：资产同步更改站点本地AEM中的已发布状态的问题。
@@ -65,19 +69,19 @@ ht-degree: 31%
 * GRANITE-60311： AEM SDK Quickstart - “OSGi Installer Configuration Printer”上的NPE。
 * GS-15285：用户显示为已停用。
 
-### 已知问题 {#known-issues-21644}
+### 已知问题 {#known-issues-21706}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-21644}
+### 已弃用的功能和 API {#deprecated-21706}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-21644}
+### 安全修复 {#security-21706}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 4 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-21644}
+### 嵌入的技术 {#embedded-tech-21706}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
