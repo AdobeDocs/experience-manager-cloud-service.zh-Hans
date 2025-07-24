@@ -3,9 +3,9 @@ title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源和Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1586'
 ht-degree: 6%
 
 ---
@@ -17,6 +17,10 @@ Content Hub作为Experience Manager Assets as a Cloud Service的一部分提供�
 在Experience Manager Assets as a Cloud Service上标记为“已批准”的资源可用于Content Hub上的资源分发。
 
 本文提供了一个端到端的工作流，以向用户提供Content Hub访问权限，包括根据用户的需求提供各种权限。
+
+请观看以下视频，了解如何为Experience Manager Assets启用Content Hub：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469851)
 
 Content Hub上各种权限的变体包括：
 
@@ -89,7 +93,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 ### Admin Console上的Content Hub实例和产品配置文件{#content-hub-instance-product-profile}
 
-使用Cloud Manager[&#128279;](#enable-content-hub)为Assets as a Cloud Service启用Content Hub后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
+使用Cloud Manager[为Assets as a Cloud Service启用Content Hub](#enable-content-hub)后，Admin Console上的AEM Assets as a Cloud Service中创建了一个新实例，后缀为`delivery`：
 
 ![Content Hub的新实例](assets/new-instance-content-hub.png)
 
@@ -105,7 +109,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
+>如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`contenthub`之后提及`Limited Users`，而不是`delivery`。
 
 ## 步骤2：载入Content Hub管理员 {#onboard-content-hub-administrator}
 
@@ -125,7 +129,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
    Admin Console显示AEM as a Cloud Service的两个产品配置文件：管理员和用户。
-1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
+1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
    ![管理员产品配置文件](assets/aem-cs-admin-product-profile.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
