@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 >[!NOTE]
 >
 >如果您有兴趣批量发布内容，请使用[树激活工作流步骤](#tree-activation)创建工作流，以便有效地处理大型负载。
->>不建议自行构建批量发布自定义代码。
->>如果您必须出于任何原因进行自定义，则可以使用现有工作流API通过此步骤触发工作流。
->>始终最好是仅发布必须发布的内容。 如果不需要的话，谨慎不要尝试发布大量内容。 但是，使用树激活工作流步骤可以通过工作流发送的内容数量没有限制。
+>&#x200B;>不建议自行构建批量发布自定义代码。
+>&#x200B;>如果您必须出于任何原因进行自定义，则可以使用现有工作流API通过此步骤触发工作流。
+>&#x200B;>始终最好是仅发布必须发布的内容。 如果不需要的话，谨慎不要尝试发布大量内容。 但是，使用树激活工作流步骤可以通过工作流发送的内容数量没有限制。
 
 ### 快速取消/发布 – 计划取消/发布 {#publish-unpublish}
 
@@ -193,6 +193,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### 复制 API {#replication-api}
