@@ -1,19 +1,19 @@
 ---
 title: 为 Screens as a Cloud Service 开发自定义组件
-description: 以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式和技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
+description: 以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式与技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2039'
 ht-degree: 2%
 
 ---
 
-# 为AEM Screens开发自定义组件as a Cloud Service{#developing-a-custom-component-for-aem-screens}
+# 为AEM Screens as a Cloud Service开发自定义组件{#developing-a-custom-component-for-aem-screens}
 
-以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式和技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
+以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式与技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
 
 ## 概述 {#overview}
 
@@ -30,12 +30,12 @@ ht-degree: 2%
 
 1. 本地开发环境
 
-使用&#x200B;**CRXDE Lite**&#x200B;执行教程步骤和屏幕截图。 IDE也可用于完成本教程。 有关使用IDE开发带有AEM的[的详细信息，请参见此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hans)。
+使用&#x200B;**CRXDE Lite**&#x200B;执行教程步骤和屏幕截图。 IDE也可用于完成本教程。 有关使用IDE开发带有AEM的[的详细信息，请参见此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 
 ## 项目设置 {#project-setup}
 
-Screens项目的源代码通常作为多模块Maven项目进行管理。 为了加快本教程，已使用[AEM项目原型13](https://github.com/adobe/aem-project-archetype)预生成了一个项目。 有关使用Maven AEM项目原型创建项目的更多详细信息，请参阅[项目设置](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hans)。
+Screens项目的源代码通常作为多模块Maven项目进行管理。 为了加快本教程，已使用[AEM项目原型13](https://github.com/adobe/aem-project-archetype)预生成了一个项目。 有关使用Maven AEM项目原型创建项目的更多详细信息，请参阅[项目设置](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 1. 使用[CRX包管理器](http://localhost:4502/crx/packmgr/index.jsp)下载并安装以下包：
 
@@ -69,7 +69,7 @@ Screens项目的源代码通常作为多模块Maven项目进行管理。 为了�
 
    ![CRXDE Lite中ui.apps代码的表示形式](/help/screens-cloud/developing/assets/uipps-contents.png)
 
-   ui.apps代码的CRXDE Lite表示形式
+   CRXDE Lite中ui.apps代码的表示形式
 
    **`helloworld`**&#x200B;组件只是一个占位符。 在本教程中，新增了功能，作者可以更新组件显示的消息。
 
@@ -83,7 +83,7 @@ Screens项目的源代码通常作为多模块Maven项目进行管理。 为了�
 
 1. **导航到AEM Screens > We.Retail Run项目：**
 
-   从AEM开始菜单>单击Screens的图标。 验证是否可看到We.Retail运行项目。
+   在AEM全局导航中，单击Screens图标。 验证是否可看到We.Retail运行项目。
 
    ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
@@ -131,9 +131,9 @@ AEM Screens具有一些有趣的限制，对于传统的WCM Sites组件未必是
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   根据正在使用的[创作模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=zh-Hans#page-modes)，Screens组件需要两种不同的渲染：
+   根据正在使用的[创作模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes)，Screens组件需要两种不同的渲染：
 
-   1. **生产**：预览或Publish模式(wcmmode=disabled)
+   1. **生产**：预览或发布模式(wcmmode=disabled)
    1. **编辑**：用于所有其他创作模式，即编辑、设计、基架、开发人员……
 
    `helloworld.html`充当开关，检查哪个创作模式处于活动状态并重定向到另一个HTL脚本。 Screens组件使用的常见约定是，对于编辑模式，具有`edit.html`脚本；对于生产模式，具有`production.html`脚本。
@@ -157,7 +157,7 @@ AEM Screens具有一些有趣的限制，对于传统的WCM Sites组件未必是
 
    该组件呈现带有文本的`div`和`h1`标记。 `${properties.message}`是HTL脚本的一部分，该脚本输出名为`message`的JCR属性的内容。 稍后将创建一个对话框，允许用户输入`message`属性文本的值。
 
-   另请注意，组件使用BEM（块元素修饰符）表示法。 BEM是一种CSS编码约定，它使创建可重用组件变得更容易。 BEM是[AEM核心组件](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions)使用的表示法。<!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
+   另请注意，组件使用BEM（块元素修饰符）表示法。 BEM是一种CSS编码约定，它使创建可重用组件变得更容易。 BEM是[AEM的核心组件](https://github.com/adobe/aem-core-wcm-components/wiki/CSS-coding-conventions)使用的表示法。<!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. 在`/apps/weretail-run/components/content/helloworld`下创建名为`edit.html.`的文件
 
@@ -265,7 +265,7 @@ AEM Screens具有一些有趣的限制，对于传统的WCM Sites组件未必是
 
 ## 创建客户端库 {#clientlibs}
 
-客户端库提供了一种机制，用于组织和管理AEM实施所需的CSS和JavaScript文件。
+客户端库提供了一种机制，用于整理和管理AEM实施所需的CSS和JavaScript文件。
 
 AEM Screens组件在编辑模式与预览/生产模式中的呈现方式有所不同。 创建了两个客户端库：一个用于编辑模式，另一个用于预览/生产模式。
 
@@ -303,7 +303,7 @@ AEM Screens组件在编辑模式与预览/生产模式中的呈现方式有所�
    styles.less
    ```
 
-1. 在`shared`文件夹下创建名为`css`的文件夹。 在`css`文件夹下添加名为`style.less`的文件。 客户端库的结构现在应如下所示：
+1. 在`css`文件夹下创建名为`shared`的文件夹。 在`style.less`文件夹下添加名为`css`的文件。 客户端库的结构现在应如下所示：
 
    ![2018-04-30_at_3_11pm](/help/screens-cloud/developing/assets/2018-04-30_at_3_11pm.png)
 
@@ -378,7 +378,7 @@ AEM Screens组件在编辑模式与预览/生产模式中的呈现方式有所�
 
 ## 创建设计页面 {#design-page}
 
-AEM Screens使用[静态页面模板](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=zh-Hans)和[设计配置](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=zh-Hans)进行全局更改。 设计配置通常用于为通道上的Parsys配置允许的组件。 最佳做法是以特定于应用程序的方式存储这些配置。
+AEM Screens使用[静态页面模板](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html)和[设计配置](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html)进行全局更改。 设计配置通常用于为通道上的Parsys配置允许的组件。 最佳做法是以特定于应用程序的方式存储这些配置。
 
 将在下面创建We.Retail运行设计页面，该页面存储特定于We.Retail运行项目的所有配置。
 
@@ -390,7 +390,7 @@ AEM Screens使用[静态页面模板](https://experienceleague.adobe.com/docs/ex
    |---|---|---|
    | jcr:title | 字符串 | We.Retail运行 |
    | sling:resourceType | 字符串 | wcm/core/components/designer |
-   | cq：doctype | 字符串 | html_5 |
+   | cq:doctype | 字符串 | html_5 |
 
    ![设计页面，位于/apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 
@@ -400,7 +400,7 @@ AEM Screens使用[静态页面模板](https://experienceleague.adobe.com/docs/ex
 
 Hello World组件旨在用于序列频道。 要测试组件，将创建一个新的序列渠道。
 
-1. 从AEM“开始”菜单中，导航到&#x200B;**Screens** > **We.Retail Ru** n >并选择&#x200B;**渠道**。
+1. 在AEM全局导航中，导航到&#x200B;**Screens** > **We.Retail Ru** n >并选择&#x200B;**渠道**。
 
 1. 单击&#x200B;**创建**&#x200B;按钮
 
@@ -548,7 +548,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
 
 ## 完成的代码 {#finished-code}
 
-以下是教程中完成的代码。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是编译的AEM包。 **SRC-screens-weretail-run-0.0.1.zip &#x200B;** 是可以使用Maven部署的未编译的源代码。
+以下是教程中完成的代码。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是编译的AEM包。 **SRC-screens-weretail-run-0.0.1.zip **是可以使用Maven部署的未编译的源代码。
 
 [获取文件](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 
