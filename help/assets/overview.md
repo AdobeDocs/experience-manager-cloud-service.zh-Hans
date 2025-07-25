@@ -57,11 +57,11 @@ Adobe的数字资产管理的一些主要功能包括：
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/using">
    <img alt="使用AEM桌面应用程序" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/using">
       <strong>使用AEM桌面应用程序</strong>
       </a>
    </div>
@@ -517,7 +517,7 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
 
 * **与Adobe Workfront集成**： [!DNL Adobe Workfront]是一个工作管理应用程序，可帮助您在一个地方管理整个工作生命周期。 [!DNL Workfront]和[!DNL Adobe Experience Manager Assets]之间的集成使组织能够通过将工作和数字资产管理内在地连接起来，提高内容速度和上市时间。 在Workfront中管理其工作的情况下，用户有权访问所需的文档和图像。
 
-  Adobe选件与[集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 本机](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html)。
+  Adobe选件与[集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 本机](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=zh-Hans)。
 
 * **与Figma集成**： AEM Assets与Figma原生集成，这允许设计人员从Figma用户界面中直接访问AEM Assets中存储的资源。 可将在 AEM Assets 中管理的内容放入 Figma 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。要访问 Figma 社区页面上提供的 AEM Assets 连接器，请单击[此处](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
 
@@ -583,11 +583,11 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="与 Adobe Journey Optimizer 集成" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>与Adobe Journey Optimizer集成</strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="与Commerce集成" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>与Commerce集成</strong>
       </a>
    </div>
