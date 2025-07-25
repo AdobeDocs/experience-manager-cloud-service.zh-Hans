@@ -61,8 +61,8 @@ Azure 命令行界面 (CLI) 是本指南的唯一要求。如果您尚未安装 
 
 ## 启动AEM as a Cloud Service的CMK配置过程 {#request-cmk-for-aem-as-a-cloud-service}
 
-您需要通过UI为AEM as a Cloud Service环境请求客户管理的密钥(CMK)配置。 为此，请导航到&#x200B;**客户管理的密钥**部分下的AEM主页安全UI。
-然后，您可以通过单击**开始载入**&#x200B;按钮来开始载入流程。
+您需要通过UI为AEM as a Cloud Service环境请求客户管理的密钥(CMK)配置。 为此，请导航到&#x200B;**客户管理的密钥**&#x200B;部分下的AEM主页安全UI。
+然后，您可以通过单击&#x200B;**开始载入**&#x200B;按钮来开始载入流程。
 
 ![使用CMK UI开始载入网站](./assets/cmk/step1.png)
 
@@ -182,6 +182,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
+
 在CMK UI中提供以下信息：
 ![在UI中填写信息](./assets/cmk/step3a.png)
 
