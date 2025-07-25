@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 在“所见即所得创作”中创建自定义组件
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 
 Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构建定制的表单组件。这些自定义组件可以无缝集成到所见即所得的创作体验中，使表单作者能够在表单编辑器中轻松添加、配置和管理这些组件。通过自定义组件，作者可以增强功能，同时确保流畅、直观的创作过程。

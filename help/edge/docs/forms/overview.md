@@ -48,7 +48,7 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 
 ### 通用编辑器
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 [通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是一款面向市场营销人员和设计师的可视化拖放式创作工具，兼具高速与企业级性能优势：
 

@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 自定义表单的外观&#x200B;
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 
 表单对于网站上的用户交互至关重要，用户可以在其中输入数据。您可以使用级联样式表 (CSS) 来设置表单字段的样式，以增强表单的视觉呈现效果，并改善用户体验。

@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 将自适应表单发布到 Edge Delivery Services
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 
 当表单最终完成并可供使用时，您就可以发布表单，使客户可以访问表单，进行数据收集和提交。发布后可确保表单在 Edge Delivery 上可用，使用户能够与之无缝交互。在此过程中，客户可以实时填写和提交表单，确保高效的数据捕获和简化的处理过程。

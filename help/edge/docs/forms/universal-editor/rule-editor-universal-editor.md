@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # 所见即所得创作中的规则编辑器简介
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 
 您可以使用规则编辑器添加动态表单行为，该编辑器允许您创建规则。这些规则可实现条件字段的可见性，根据用户输入进行自动计算，并改善整体用户体验。通过简化表单填写流程，规则编辑器有助于确保准确性和效率。

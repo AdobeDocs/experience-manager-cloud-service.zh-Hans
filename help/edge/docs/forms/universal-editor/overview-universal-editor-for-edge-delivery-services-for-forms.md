@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Edge Delivery Services for Forms通用编辑器
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 通用编辑器通过提供简单、可视和直观的所见即所得（WYSIWYG）界面，彻底改变了 Adobe Edge Delivery Services 的表单创建方式。它专为内容创建者和表单作者设计，消除了传统表单构建流程的复杂性，使非技术用户也能使用。
 
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 入门培训
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 ## 常见问题解答（FAQ）
 

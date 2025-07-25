@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # 入门指南：在 AEM Edge Delivery Services 中使用表单
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘区域交付极快且高度可扩展的 Web 体验。本指南说明了&#x200B;**如何构建并发布表单来确保提供这样的体验**，并提供明确的推荐层级：
 
