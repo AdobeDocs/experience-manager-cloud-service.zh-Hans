@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 31%
+ht-degree: 95%
 
 ---
 
@@ -28,46 +28,46 @@ ht-degree: 31%
 
 ### 增强功能 {#enhancements-21706}
 
-* Assets-39377：在Assets批量导入程序中改进对远程存储429的处理。
-* Assets-46026：元数据导出器的可配置最大深度。
-* Assets-49172： Dynamic Media模板资源应继承文件夹中的元数据。
-* Assets-50209：支持DM模板中的子字符串。
-* Assets-52326： AEM Assets配置页面可设置Assets的标题显示首选项。
-* Assets-52805：为批量操作作业添加CSV输出/下载支持。
-* Assets-52873：在文件夹属性中添加新配置以禁用该文件夹的AI处理。
-* Assets-53535：改进了YouTube视频上传性能。
-* Assets-53612：控制Assets Omnisearch中的混合搜索。
-* GRANITE-60183：将commons-fileupload依赖项更新为1.6.0。
-* GRANITE-60287：将QS更新为Jackrabbit 2.22.1。
-* SITES-30452：带ASO的内容API — 标题和描述建议。
+* ASSETS-39377：改进资产批量导入器中远程存储的 429 的处理。
+* ASSETS-46026：元数据导出器的可配置最大深度。
+* ASSETS-49172：动态媒体模板资产应从文件夹继承元数据。
+* ASSETS-50209：支持 DM 模板中的子字符串。
+* ASSETS-52326：AEM Assets 配置页面用于设置 Assets 的标题显示偏好。
+* ASSETS-52805：添加批量操作任务的 CSV 输出/下载支持。
+* ASSETS-52873：在文件夹属性中添加一个新配置，以禁用该文件夹的 AI 处理。
+* ASSETS-53535：改进了 YouTube 视频上传性能。
+* ASSETS-53612：控制 Assets 全方位搜索中的混合搜索。
+* GRANITE-60183：将 commons-fileupload 依赖项更新至 1.6.0。
+* GRANITE-60287：将 QS 更新到 Jackrabbit 2.22.1。
+* SITES-30452：带有 ASO 的内容 API - 标题和描述建议。
 * SITES-31677：自定义工作区现已支持将 AEM 内容片段导出至 Target。
-* SKYOPS-112741：从AEM-CS SDK中删除`com.adobe.granite.product.support`捆绑包。
+* SKYOPS-112741：从 AEM-CS SDK 中移除 `com.adobe.granite.product.support` 捆绑包。
 
 ### 修复的问题 {#fixed-issues-21706}
 
-* Assets-12882：打开查看器预设后，UI对齐出现问题。
-* Assets-48958：资产同步更改站点本地AEM中的已发布状态的问题。
-* Assets-50856： completeUpload未重置`dam:processingAttempts`。
-* Assets-51604：链接共享报表CSV缺少“共享对象”数据。
-* Assets-51783：如果使用搜索查询未找到配置，则回退到`/conf/global`下的DM配置。
-* Assets-51857：资源表项目不可重新排序。
-* Assets-52169：新的BAT计算机演绎版错误地包含在资源下载中。
-* Assets-52229：AEM as a Cloud Service中缺少资产报表的收件箱通知。
-* Assets-52399： com.day.cq.dam.api中的版本提升可能会破坏客户代码。
-* Assets-52780：即使未启用切换，也可以将资源标记为预览。
-* Assets-52866：在禁用DM同步的情况下，迁移的DM视频在文件夹下保持处理状态。
-* Assets-53237：“图像预设”编辑器中的“颜色配置文件”下拉列表为空。
-* Assets-53240：资源报表 — 从Dynamic Media获取资源演绎版大小时，“磁盘使用情况”失败。
-* Assets-53446：由于NPE，YouTube身份验证令牌间歇性刷新失败。
-* Assets-53827： ACL验证阻止保存混合媒体集。
-* Assets-5403：发布实例上使用的Dynamicmedia clientlibs应具有`allowProxy=true`。
-* Assets-54261：元数据导入会泄漏连接，如果文件无法下载，则会被阻止。
-* CQ-4359863：内容片段编辑器/资产编辑器中关键字的标记搜索顺序不正确。
-* CQ-4359958：使openapi-support与AEM 6.5.22.0及更高版本兼容。
-* CQ-4360256：在通过`/adobe` servlet上下文处理的HTTP请求的请求路径中包含servlet上下文路径。
-* CQ-4360317：添加用于在构建响应时设置失效日期标头的方法。
-* GRANITE-60311： AEM SDK Quickstart - “OSGi Installer Configuration Printer”上的NPE。
-* GS-15285：用户显示为已停用。
+* ASSETS-12882：打开查看器预设后出现 UI 对齐问题。
+* ASSETS-48958：资产同步问题导致 Sites 本地 AEM 中的已发布状态发生变化。
+* ASSETS-50856：`dam:processingAttempts` 在 completeUpload 上未重置。
+* ASSETS-51604：链接共享报告的 CSV 文件缺少 “共享对象” 数据。
+* ASSETS-51783：如果使用搜索查询未找到配置，则回退到 `/conf/global` 中的 DM 配置。
+* ASSETS-51857：资产表项目不可重新排序。
+* ASSETS-52169：资产下载中错误包含了新的 BAT 机器演绎版。
+* ASSETS-52229：在 AEM as a Cloud Service 中未收到资产报告的收件箱通知。
+* ASSETS-52399：com.day.cq.dam.api 中的版本提升可能会破坏客户代码。
+* ASSETS-52780：即使未启用切换选项，资产仍可被标记为预览。
+* ASSETS-52866：迁移后的 DM 视频在禁用 DM 同步的文件夹中仍处于正在处理的状态。
+* ASSETS-53237：图像预设编辑器中的颜色轮廓下拉菜单为空白。
+* ASSETS-53240：资产报告 - 从 Dynamic Media 获取资产演绎版大小时，磁盘使用情况报告失败。
+* ASSETS-53446：NPE 导致 YouTube 身份验证令牌刷新间歇性失败。
+* ASSETS-53827：ACL 验证阻止了混合媒体集的保存。
+* ASSETS-5403：发布实例上使用的 Dynamic Media 客户端库应该具有 `allowProxy=true`。
+* ASSETS-54261：如果文件下载失败，元数据导入将导致连接泄漏并最终被阻塞。
+* CQ-4359863：内容片段编辑器/资产编辑器中，标记搜索因关键词顺序错误而中断。
+* CQ-4359958：使 openapi-support 与 AEM 6.5.22.0 及更高版本兼容。
+* CQ-4360256：对于通过 `/adobe` servlet 上下文处理的 HTTP 请求，在请求路径中包含 servlet 上下文路径。
+* CQ-4360317：添加在构建响应时设置 Sunset 日期标头的方法。
+* GRANITE-60311：AEM SDK 快速启动 — “OSGi Installer Configuration Printer” 出现空指针异常（NPE）。
+* GS-15285：用户显示为已被停用。
 
 ### 已知问题 {#known-issues-21706}
 
@@ -88,5 +88,5 @@ AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护
 | AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
+| Apache HTTP 服务器 | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM 核心组件 | 2.29.0 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
