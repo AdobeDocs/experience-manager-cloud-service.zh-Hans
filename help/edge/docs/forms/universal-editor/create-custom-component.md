@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1802'
+ht-degree: 100%
 
 ---
 
 # 在“所见即所得创作”中创建自定义组件
 
-<span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 
 Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构建定制的表单组件。这些自定义组件可以无缝集成到所见即所得的创作体验中，使表单作者能够在表单编辑器中轻松添加、配置和管理这些组件。通过自定义组件，作者可以增强功能，同时确保流畅、直观的创作过程。
@@ -39,7 +39,7 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
 现在我们以创建一个名为 **Range** 的新自定义组件为例。Range 组件外表为直线形式，显示最小值、最大值或选定值等数值。
 
-![显示具有最小值和最大值滑块以及选定值指示器的范围组件的可视化表示形式](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![范围组件的可视化示意图，展示了具有最小值和最大值的滑块以及选定值指示器](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 本文结束时，您将学会从头开始创建自定义组件。
 
@@ -323,11 +323,11 @@ const OOTBComponentDecorators = ['file-input',
 
 完成上述步骤后，自定义组件将出现在通用编辑器内的表单组件列表中。然后您可以将其拖放到表单分区。
 
-![通用编辑器组件面板的屏幕截图，其中显示了可用于拖放到表单中的自定义范围组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![通用编辑器组件面板截图，展示了可拖放至表单中的自定义范围组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 下面的屏幕快照显示了添加到组件模型中的 `range` 组件的属性，该组件指定了表单作者可以配置的属性：
 
-![通用编辑器属性面板屏幕截图显示范围组件的可配置设置，包括基本属性、验证规则和样式选项](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![通用编辑器属性面板截图，展示了可配置的范围组件设置，包括基本属性、验证规则及样式选项](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 您现在可以通过添加样式和功能来定义自定义组件的运行时行为。
 
@@ -391,7 +391,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    代码可帮助您定义自定义组件的样式和视觉外观。
 
 1. 要添加功能，请导航到 `/blocks/form/components/range/range.js` 文件，并添加以下代码行：
@@ -456,7 +455,7 @@ const OOTBComponentDecorators = ['file-input',
    加入自定义样式和功能后，Range 组件的外观和行为得到增强。更新后的设计反映了应用的样式，而增加的功能则确保了更动态化和交互式的用户体验。
 下面的屏幕快照显示了更新的 Range 组件。
 
-![正在操作的最后一个范围组件，该组件在通用编辑器中显示具有值泡显示和交互功能的样式滑块](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![最终效果中的范围组件截图，展示了通用编辑器中的样式化滑块、数值气泡显示及交互功能的组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## 常见问题解答
 

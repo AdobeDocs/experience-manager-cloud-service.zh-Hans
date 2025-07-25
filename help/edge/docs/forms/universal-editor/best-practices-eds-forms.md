@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
 source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -17,36 +17,36 @@ ht-degree: 78%
 
 ## 概述
 
-创建有效的表单不仅限于技术实施，还需要了解用户心理学、辅助功能标准和性能优化。 本全面指南提供了经验证的最佳实践，用于设计用户实际希望完成的表单。
+创建高效表单不仅仅是技术上的实施，更需要正确理解用户心理、无障碍访问标准以及性能优化。本综合指南提供经过验证的最佳实践，帮助您设计出用户愿意填写的表单。
 
 ### 您将了解的内容
 
-在本文档结束时，您将了解如何：
+阅读本文档后，您将掌握以下内容：
 
-* 设计适合每个人的用户友好且易于访问的表单
-* 优化表单性能和加载时间
-* 负责任且透明地处理用户数据
-* 实施正确的错误处理和验证
-* 创建具有高完成率的表单
+* 设计对所有用户友好并且所有人都能无障碍访问的表单
+* 优化表单性能与加载时间
+* 以负责任且透明的方式处理用户数据
+* 实施规范的错误处理与验证方法
+* 创建出可达到极高填写完成率的表单
 
 ### 目标受众
 
-本指南面向以下群体：
+本指南面向以下人群：
 
-* 希望创建更好的用户体验的&#x200B;**表单设计者**
-* **开发人员**&#x200B;正在实施表单功能
-* **UX专业人员**&#x200B;正在优化表单工作流
-* **业务利益相关者**&#x200B;寻求提高表单转化率
+* 希望打造更佳用户体验的&#x200B;**表单设计人员**
+* 负责实施表单功能的&#x200B;**开发人员**
+* 致力于优化表单工作流的&#x200B;**用户体验专业人员**
+* 希望提升表单转化率的&#x200B;**业务利益相关者**
 
 ### 关键原则
 
-最佳表单遵循以下核心原则：
+优秀的表单设计遵循以下核心原则：
 
-1. **以用户为中心的设计** — 关注用户需要完成的任务
-2. **可访问性优先** — 确保每个人都可以使用您的表单
-3. **性能优化** — 快速表单更频繁地完成
-4. **数据责任** — 尊重用户隐私并最大限度地减少数据收集
-5. **清除通信** — 引导用户顺利完成此过程
+1. **以用户为中心的设计** — 聚焦于用户需要完成的内容
+2. **优先确保无障碍性** — 确保所有用户都能顺利使用您的表单
+3. **性能优化** — 可快速填写的表单可达到更高的完成率
+4. **数据责任** — 尊重用户隐私，尽量减少数据收集
+5. **清晰的沟通** — 以顺畅明了的方式引导用户完成整个流程
 
 打造优秀表单不仅仅关乎技术本身。以下是确保您的表单具有良好用户体验并能实现其目标的方法：
 
@@ -97,7 +97,7 @@ ht-degree: 78%
 
 本指南概述了如何将表单与 AEM Edge Delivery Services 集成使用。如需更详细的配置步骤和说明，请参阅 Adobe Experience Manager 官方文档。
 
-* [使用 Edge Delivery Services 表单进行文档式创作](/help/edge/docs/forms/tutorial.md)
-* [使用 Universal Editor 与 Edge Delivery Services 表单](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [使用 Edge Delivery Services 表单进行基于文档的创作](/help/edge/docs/forms/tutorial.md)
+* [使用通用编辑器与 Edge Delivery Services 表单](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [文档创作（DA）与内容嵌入](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms提交服务](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

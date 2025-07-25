@@ -1,13 +1,13 @@
 ---
 title: 适用于 AEM Forms 的 Edge Delivery Services 概述
-description: 在Adobe Experience Manager Edge Delivery Services上创建并提供高性能表单，重点使用通用编辑器创作方法。
+description: 使用 Adobe Experience Manager Edge Delivery Services 创建并分发高性能表单，重点采用通用编辑器创作方式。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -28,33 +28,33 @@ ht-degree: 50%
 ## 选择创作方法
 
 
-Adobe Experience Manager (AEM) Edge Delivery Services (EDS)让您可以从边缘提供超快、高度可扩展的Web体验。 本指南介绍&#x200B;**如何为那些体验构建和发布表单** — 具有明确的推荐层次结构：
+Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘区域交付极快且高度可扩展的 Web 体验。本指南说明了&#x200B;**如何构建并发布表单来确保提供这样的体验**，并提供明确的推荐层级：
 
-* **通用编辑器(UE) — 大多数团队的最佳选择**
-* **基于文档的创作（文档/工作表） — 非常适用于快速、简单的表单**
-* **文档创作(DA) — 用于将表单嵌入到DA创作的页面**
+* **通用编辑器（UE）——大多数团队的首选方式**
+* **基于文档的创作（Docs/Sheets）——适用于快速创建简单表单**
+* **文档创作（DA） —— 用于将表单嵌入由 DA 创作的页面中**
 
-到最后，您将能够选择正确的创作方法、了解提交选项，并遵循后续步骤以生成可用于生产的表单。
+完成本指南后，您将能够选择合适的创作方式，了解不同的提交选项，然后可采取创作生产就绪表单的后续步骤。
 
 
-| 团队和要求 | 推荐的方法 | 原因 |
+| 团队与需求 | 推荐的方式 | 原因 |
 |--------------------|--------------------|-----|
-| 营销人员/设计人员需要可视化控制、条件逻辑或AEM集成 | **Universal Editor** | 拖放、高级规则，提交到FSS或AEM Publish |
-| 内容作者已在Word/Google Docs/Sheets中工作；简单的数据捕获到电子表格/电子邮件 | **基于文档的创作** | 熟悉的工具，适用于基本表单的最快路径 |
-| 在&#x200B;**文档创作(DA)**&#x200B;中内置的网页 | **将UE或基于Doc的表单嵌入** DA页面 | DA不会构建表单本身 |
+| 适用于需要视觉控制、条件逻辑或 AEM 集成功能的市场营销人员/设计师 | **通用编辑器** | 支持拖放操作、高级规则，将数据提交至 FSS 或 AEM Publish 环境 |
+| 内容作者已在使用 Word / Google Docs / Sheets，适用于将简单数据捕获至电子表格或通过电子邮件接收 | **基于文档的创作方式** | 使用熟悉的工具，是创建基础表单的最快途径 |
+| 由&#x200B;**文档创作（DA）**&#x200B;构建的网站页面 | 可将 UE 表单或基于文档的表单&#x200B;**嵌入**&#x200B;至 DA 页面中 | DA 本身不具备表单构建功能 |
 
 
-## 详细创作方法
+## 创作方式详解
 
-### Universal Editor 
+### 通用编辑器
 
-<span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
 
-[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是面向营销人员和设计人员的可视化拖放创作工具，集速度和企业级功能于一体：
+[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是一款面向市场营销人员和设计师的可视化拖放式创作工具，兼具高速与企业级性能优势：
 
-* 实时WYSIWYG编辑和设备预览。
-* 与AEM资源、工作流和表单数据模型(FDM)的直接集成。
-* 将vanilla JS/CSS中的自定义组件无缝移交给开发人员。
+* 支持实时所见即所得（WYSIWYG）编辑与设备预览。
+* 可直接集成 AEM 资产、工作流和表单数据模型（FDM）。
+* 可无缝交接给开发人员，使用原生 JS/CSS 开发自定义组件
 * 用于创建复杂逻辑的高级规则编辑器。
 * 自定义功能的服务器端可扩展性。
 * WYSIWYG 的编辑体验，可轻松创建表单和可视化。
@@ -64,14 +64,14 @@ Adobe Experience Manager (AEM) Edge Delivery Services (EDS)让您可以从边缘
 * 与各种数据源集成以预填充表单和提交数据。
 * 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
 * 能够从多个提交操作中进行选择来处理表单提交，包括将数据提交到 Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多数据源。
-* 使用Forms提交服务(FSS)或AEM Publish提交操作提交
+* 支持通过 Forms Submission Service（FSS）或 AEM Publish 提交操作完成提交
 
-**推荐**：使用通用编辑器启动每个新表单项目，除非您的团队完全以文档为中心，并且表单非常基本。
+**推荐**：除非您的团队完全以文档为中心，且要创建非常基础的表单，否则建议所有新表单项目均采用通用编辑器开始构建。
 
 
-### 基于文档的创作(使用Microsoft文档或Google工作表)
+### 基于文档的创作（使用 Microsoft Docs 或 Google Sheets）
 
-[基于文档的创作](/help/edge/docs/forms/tutorial.md)最适合使用熟悉的工具(如Microsoft Word、Google Docs或Google Sheets)创建简单、低复杂度的表单。 此方法非常适合需要快速而直接构建表单的内容团队。
+[基于文档的创作](/help/edge/docs/forms/tutorial.md)最适合使用熟悉的工具（如 Microsoft Word、Google Docs 或 Google Sheets）创建结构简单、复杂度较低的表单。此方法非常适合内容团队，以快速且简便的方式构建表单。
 
 * 可访问的组件可提供用户友好的体验。
 * 标准化 HTML 结构，实现一致的渲染。
@@ -83,13 +83,13 @@ Adobe Experience Manager (AEM) Edge Delivery Services (EDS)让您可以从边缘
 * 通过操作遥测监测表单性能
 
 
-### 在文档创作(DA)中嵌入Forms
+### 在文档创作（DA）中嵌入表单
 
-文档创作(DA)专为创建结构化页面内容而设计，不支持原生表单创建。 要将表单添加到DA创作的页面，您可以使用&#x200B;**通用编辑器**（推荐）或基于文档的创作来创建表单，并将表单嵌入到文档创作页面。
+文档创作（DA）旨在用于构建结构化页面内容，不支持原生表单创建功能。若需将表单添加至由 DA 创作的页面，您可以使用&#x200B;**通用编辑器**（推荐）或基于文档的方式创建表单，并将其嵌入到文档创作页面中。
 
-## 发布Edge Delivery Services Forms {#edge-overview}
+## 发布 Edge Delivery Services 表单 {#edge-overview}
 
-下图说明如何在 Microsoft Excel 或 Google Sheets（基于文档的创作）中编辑表单并将其发布到 Edge Delivery Services。它还显示了使用AEM创作（通用编辑器）的WYSIWYG发布方法。
+下图说明如何在 Microsoft Excel 或 Google Sheets（基于文档的创作）中编辑表单并将其发布到 Edge Delivery Services。它也说明了如何使用所见即所得创作工具（通用编辑器）进行 AEM 发布。
 
 ![发布到 Edge Delivery Services 和 AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -112,13 +112,13 @@ Adobe Experience Manager (AEM) Edge Delivery Services (EDS)让您可以从边缘
 
 ## 后续步骤
 
-* [Edge Delivery Services for Forms的通用编辑器的特性和功能](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [使用通用编辑器创建您的第一个表单](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [使用Google Sheets或Microsoft Excel创建您的第一个表单](/help/edge/docs/forms/tutorial.md)。
-* [在文档创作(DA)中嵌入Forms](https://www.aem.live/developer/da-tutorial)
+* [通用编辑器在 Edge Delivery Services for Forms 中的功能与优势](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [使用通用编辑器创建您的首个表单](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [使用 Google Sheets 或 Microsoft Excel 创建首个表单](/help/edge/docs/forms/tutorial.md)。
+* [在文档创作（DA）中嵌入表单](https://www.aem.live/developer/da-tutorial)
 
 
-您现在可以使用AEM Edge Delivery Services创建您的第一个高性能表单了。
+现在，您已准备好使用 AEM Edge Delivery Services 创建首个高性能表单。
 
 
 <!-- 

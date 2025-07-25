@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6522'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -227,8 +227,8 @@ ht-degree: 97%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   + Universal Editor 发行说明 {#univeral-editor}
-      + [ Universal Editor 当前发行说明](/help/release-notes/universal-editor/current.md)
+   + 通用编辑器发行说明 {#univeral-editor}
+      + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.06.19 版发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
          + [2025.05.21 版发行说明](/help/release-notes/universal-editor/2025/2025-05-21.md)
@@ -301,7 +301,7 @@ ht-degree: 97%
       + [创建 Headless 内容](/help/trials/headless/create-content.md)
       + [通过 GraphQL API 提取内容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 获取 JSON 内容](/help/trials/headless/code-playground.md)
-      + [使用 Universal Editor 进行内联编辑](/help/trials/headless/universal-editor.md)
+      + [使用通用编辑器进行内联编辑](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 迁移历程  {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [准备阶段](/help/journey-migration/readiness.md)
@@ -403,10 +403,10 @@ ht-degree: 97%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor  {#universal-editor}
+      + 通用编辑器 {#universal-editor}
          + [导航](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [创作](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [从 Universal Editor 发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [从通用编辑器发布页面](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [页面模板](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}
@@ -909,34 +909,34 @@ ht-degree: 97%
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
    + HTML5 表单 {#html5-forms}
-      + [HTML5表单简介](/help/forms/introductionhtml5.md)
-      + [HTML5表单快速入门](/help/forms/get-started.md)
-      + [HTML5表单的架构](/help/forms/html5-forms-architecture.md)
-      + [HTML5 Forms与PDF forms的功能差异](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
-      + [HTML5表单常见问题解答(FAQ)](/help/forms/faqhtml5.md)
-      + [为HTML5表单设计表单模板](/help/forms/designing-form-template.md)
-      + [HTML5表单的最佳实践](/help/forms/best-practices-for-html5-forms.md)
-      + [设计无障碍的HTML5表单](/help/forms/design-accessible-html5-forms.md)
-      + [生成XDP表单的HTML5预览](/help/forms/preview-xdp-forms-html.md)
-      + [HTML5表单的渲染表单模板](/help/forms/rendering-form-template.md)
-      + [为HTML5表单启用附件](/help/forms/enabling-attachments-html5-form.md)
-      + [HTML5 forms服务代理](/help/forms/service-proxy.md)
-      + [优化HTML5表单](/help/forms/optimize-html5-forms.md)
-      + [HTML5表单的屏幕阅读器](/help/forms/screen-readers.md)
-      + [创建HTML5表单的自定义配置文件](/help/forms/custom-profile.md)
-      + [HTML5表单中的从右至左语言](/help/forms/right-left-languages.md)
-      + [将Form Bridge与HTML5表单的自定义门户集成](/help/forms/integrate-form-bridge-forms-portal.md)
-      + [在HTML5表单中创建自定义外观](/help/forms/custom-widgets.md)
-      + [更改HTML5表单的默认样式](/help/forms/changing-default-styles.md)
-      + [HTML5 Forms的Picture子句支持](/help/forms/picture-clause-support.md)
-      + [在HTML5表单中创建可访问的复杂表](/help/forms/accessible-tables.md)
-      + [为HTML5表单创建CSS样式](/help/forms/css-styles.md)
-      + [自定义HTML5表单的错误消息](/help/forms/customzing-errors-html5-forms.md)
-      + [将HTML5表单另存为草稿](/help/forms/saving-html5-form-draft.md)
-      + [为HTML5表单启用日志记录](/help/forms/enable-logs.md)
-      + [调试HTML5 forms](/help/forms/debug.md)
-      + [对HTML5表单的脚本支持](/help/forms/scripting-support.md)
-      + [AEM Forms中的表单集](/help/forms/formset-in-aem-forms.md)
+      + [HTML5 表单简介](/help/forms/introductionhtml5.md)
+      + [HTML5 表单快速入门](/help/forms/get-started.md)
+      + [HTML5 表单的架构](/help/forms/html5-forms-architecture.md)
+      + [HTML5 表单与 PDF 表单的功能差异](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [HTML5 表单常见问题解答（FAQ）](/help/forms/faqhtml5.md)
+      + [为 HTML5 表单设计表单模板](/help/forms/designing-form-template.md)
+      + [HTML5 表单的最佳实践](/help/forms/best-practices-for-html5-forms.md)
+      + [无障碍 HTML5 表单设计](/help/forms/design-accessible-html5-forms.md)
+      + [生成 XDP 表单的 HTML5 预览](/help/forms/preview-xdp-forms-html.md)
+      + [为 HTML5 表单渲染表单模板](/help/forms/rendering-form-template.md)
+      + [为 HTML5 表单启用附件功能](/help/forms/enabling-attachments-html5-form.md)
+      + [HTML5 表单服务代理](/help/forms/service-proxy.md)
+      + [优化 HTML5 表单](/help/forms/optimize-html5-forms.md)
+      + [HTML5 表单的屏幕阅读器](/help/forms/screen-readers.md)
+      + [为 HTML5 表单创建自定义轮廓](/help/forms/custom-profile.md)
+      + [HTML5 表单中的从右至左语言](/help/forms/right-left-languages.md)
+      + [将 Form Bridge 集成至 HTML5 表单的自定义门户中](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [在 HTML5 表单中创建自定义外观](/help/forms/custom-widgets.md)
+      + [更改 HTML5 表单的默认样式](/help/forms/changing-default-styles.md)
+      + [HTML5 表单的 Picture 子句支持](/help/forms/picture-clause-support.md)
+      + [在 HTML5 表单中创建无障碍复杂表格](/help/forms/accessible-tables.md)
+      + [为 HTML5 表单创建 CSS 样式](/help/forms/css-styles.md)
+      + [自定义 HTML5 表单的错误消息](/help/forms/customzing-errors-html5-forms.md)
+      + [将 HTML5 表单保存为草稿](/help/forms/saving-html5-form-draft.md)
+      + [为 HTML5 表单启用日志记录功能](/help/forms/enable-logs.md)
+      + [调试 HTML5 表单](/help/forms/debug.md)
+      + [HTML5 表单的脚本支持](/help/forms/scripting-support.md)
+      + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
    + 交互式通信 {#interactive-communocation}
       + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
       + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
@@ -1074,7 +1074,7 @@ ht-degree: 97%
       + [无重复的暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
       + [配置 Site 身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [WIP Site 功能](/help/edge/wysiwyg-authoring/wip-features.md)
-   + 文档式创作 {#document-authoring}
+   + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
       + [批量元数据](/help/edge/docs/bulk-metadata.md)
       + [占位符](/help/edge/docs/placeholders.md)
@@ -1105,21 +1105,21 @@ ht-degree: 97%
       + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + 所见即所得的创作 {#universal-editor}
-         + [Edge Delivery Services 的表单 Universal Editor 简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用 Universal Editor 开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用 Universal Editor 创建您的第一个表单——分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [ Universal Editor 界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [让您的表单便于移动设备使用： Universal Editor 中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [设计精美的表单： Universal Editor 的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Edge Delivery Services 的表单通用编辑器简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [如何使用通用编辑器开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [如何使用通用编辑器创建您的第一个表单——分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [让您的表单便于移动设备使用：通用编辑器中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [设计精美的表单：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [向表单添加动态行为：规则编辑器完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [表单提交指南：配置和自定义表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [保护您的表单免受垃圾邮件的侵害：添加 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [如何发布和部署表单： Universal Editor 发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [构建自定义表单组件： Universal Editor 开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [如何发布和部署表单：通用编辑器发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [构建自定义表单组件：通用编辑器开发人员指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表单数据模型集成：将表单与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [可重复使用的、模块化的独立片段：在表单中创建和使用表单片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [解决 Edge Delivery Services 表单提交中的 403 禁止错误](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-      + 文档式创作 {#getting-started-edge-delivery-services-forms}
+      + 基于文档的创作 {#getting-started-edge-delivery-services-forms}
          + [构建您的第一个表单：使用 Google Sheets 和 Excel 的快速入门指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 创建表单：分步指南](/help/edge/docs/forms/create-forms.md)
          + [Adaptive Forms Block 的各种组件](/help/edge/docs/forms/form-components.md)
@@ -1230,8 +1230,8 @@ ht-degree: 97%
    + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
    + [生成变体](/help/generative-ai/generate-variations.md)
-   + [AEM人工智能助理(Beta有限公司)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms AI助手(Forms Experience Builder)（早期采用者）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM AI 助手（限量 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms AI 助手（Forms Experience Builder）（早期采用者）](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
@@ -1371,10 +1371,10 @@ ht-degree: 97%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor  {#universal-editor}
+      + 通用编辑器 {#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
-         + [ Universal Editor 和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [通用编辑器和 Sites 编辑器](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
          + [组件定义](/help/implementing/universal-editor/component-definition.md)
          + [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)

@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '1247'
+ht-degree: 100%
 
 ---
 
 
 # 所见即所得创作中的响应式模式
 
-<span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 ## 响应式表单简介
 
@@ -148,7 +148,7 @@ ht-degree: 99%
 
 | 问题 | 可能的原因 | 解决方案 |
 |-------|---------------|----------|
-| 表单在移动设备上显示被截断 | 固定宽度设置或溢出问题 | 使用相对单位（%，rem）而不是像素，并检查 overflow:hidden 属性 |
+| 表单在移动设备上显示被截断 | 固定宽度设置或溢出问题 | 请使用相对单位（如 %、rem）代替像素单位，并检查 overflow:hidden 属性 |
 | 触摸元素难以交互 | 触摸目标太小或距离太近 | 将按钮/输入尺寸增加到至少 44px x 44px，并在交互元素之间添加更多空间 |
 | 内容在小屏幕上溢出 | 对于较小的视口没有响应规则 | 添加媒体查询或响应类别来调整不同屏幕尺寸的布局 |
 | 移动设备上的表单速度太慢 | 大图像或脚本过多 | 优化图像，最小化 JavaScript，并考虑对非关键元素进行延迟加载 |

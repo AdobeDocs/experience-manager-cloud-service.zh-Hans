@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 96%
 
    下面的屏幕快照显示了在通用编辑器中创建的 `contact fragment`。
 
-   ![通用编辑器中已填写的联系人详细信息表片段的屏幕截图，其中显示了可以在多个表单中重复使用的姓名、电话、电子邮件和地址字段](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![通用编辑器中已完成的联系人信息表单片段截图，其中包含姓名、电话、电子邮件和地址字段，这些可在多个表单中重复使用](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    创建片段后，您可以[在 Edge Delivery Services Forms 中添加创建的片段](#adding-form-fragments-in-forms)。
 
@@ -123,7 +123,7 @@ ht-degree: 96%
 
    ![导航到该部分](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**组件。
    ![添加表单片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    如果您选择了&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件，片段就会添加到您的表单中。您可以打开已添加片段的&#x200B;**属性**，对其进行配置。例如，在片段的&#x200B;**属性**&#x200B;中隐藏其标题。
@@ -140,7 +140,7 @@ ht-degree: 96%
 
    表单片段通过引用添加到表单，并与独立表单片段保持同步。
 
-   ![屏幕截图显示已成功集成到通用编辑器的员工表单中的联系人详细信息片段，演示片段在重用时如何保持其结构](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![通用编辑器中的员工表单截图，展示了成功嵌入的联系人信息片段，说明了片段在重复使用时如何保持其结构一致性](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    您可以预览表单以查看在&#x200B;**预览**&#x200B;模式中该表单如何显示。
 

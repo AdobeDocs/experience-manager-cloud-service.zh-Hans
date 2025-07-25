@@ -1,20 +1,20 @@
 ---
-title: Edge Delivery Services for Forms 通用编辑器
-description: 使用 Edge Delivery Services for Forms 通用编辑器创建自适应表单。
+title: Edge Delivery Services for Forms通用编辑器
+description: 使用 Edge Delivery Services for Forms通用编辑器创建自适应表单。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1012'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services for Forms 通用编辑器
+# Edge Delivery Services for Forms通用编辑器
 
-<span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 通用编辑器通过提供简单、可视和直观的所见即所得（WYSIWYG）界面，彻底改变了 Adobe Edge Delivery Services 的表单创建方式。它专为内容创建者和表单作者设计，消除了传统表单构建流程的复杂性，使非技术用户也能使用。
 
@@ -22,9 +22,9 @@ ht-degree: 98%
 
 无论您是要管理轻量级客户端渲染、确保跨浏览器兼容性，还是要遵守严格的可访问性标准，通用编辑器都能为创建和管理表单提供简化的解决方案。
 
-![ Universal Editor ](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
-## Edge Delivery Services for Forms 通用编辑器的主要功能
+## Edge Delivery Services for Forms通用编辑器的主要功能
 
 
 
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 入门培训
 
-<span class="preview">这是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hans#new-features">预发行渠道</a>提供的预发行功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 ## 常见问题解答（FAQ）
 
