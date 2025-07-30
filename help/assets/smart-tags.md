@@ -4,9 +4,9 @@ description: 使用可应用上下文和描述性业务标记的人工智能服�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2696'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 先决条件和配置 {#smart-tags-prereqs-config}
 
-智能标记作为[!DNL Cloud Service]自动配置给[!DNL Adobe Experience Manager]，因此无需配置。
+智能标记作为[!DNL Adobe Experience Manager]自动配置给[!DNL Cloud Service]，因此无需配置。
 
 ## 智能标记工作流程 {#smart-tags-workflow}
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 ## 为开箱即用的智能标记准备资产
 
-当您将资源[作为[!DNL Cloud Service]上载到[!DNL Adobe Experience Manager]时，将处理上载的资源。 ](add-assets.md#upload-assets)处理完成后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的资源。 资源微服务使用[!DNL Adobe Sensei]创建这些智能标记。
+当您将资源[作为](add-assets.md#upload-assets)上载到[!DNL Adobe Experience Manager]时，将处理上载的资源。 [!DNL Cloud Service]处理完成后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的资源。 资源微服务使用[!DNL Adobe Sensei]创建这些智能标记。
 
 ![智能标记已添加到视频中，并在资产属性的“基本”选项卡中显示](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中的未标记Assets {#smart-tag-existing-assets}
 
-DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hans#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
+DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -200,7 +200,7 @@ In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, 
 
 >[!IMPORTANT]
 >
->如果您在上传时选择退出对文件夹的标记，并且希望在上传后对文件夹进行智能标记，则请在文件夹[!UICONTROL 属性]的[!UICONTROL 资产处理]选项卡中&#x200B;**[!UICONTROL 启用智能标记]**，并使用[[!UICONTROL 重新处理资产]选项](#smart-tag-existing-assets)将智能标记添加到资产中。
+>如果您在上传时选择退出对文件夹的标记，并且希望在上传后对文件夹进行智能标记，则请在文件夹&#x200B;**[!UICONTROL 属性]**&#x200B;的[!UICONTROL 资产处理]选项卡中[!UICONTROL 启用智能标记]，并使用[[!UICONTROL 重新处理资产]选项](#smart-tag-existing-assets)将智能标记添加到资产中。
 
 <!--
 ## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}
@@ -215,7 +215,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 ## 使用AI生成的元数据增强内容发现 {#ai-smart-tags}
 
-AI不会依赖手动输入，而是自动将描述性标记分配给数字资产。 这些AI生成的标记可提升元数据质量，使资产更容易搜索、分类和推荐。 此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。 例如，如果资产是图像，AI可以识别其中的对象、场景、情感甚至品牌徽标，并生成相关标记，如“日落”、“海滩”、“休假”或“微笑”。 人工智能生成的内容可以通过利用语义和词汇搜索技术增强对资产的搜索。 查看更多[搜索Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+AI不会依赖手动输入，而是自动将描述性标记分配给数字资产。 这些 AI 生成的标记提高了元数据的质量，使资产更易于搜索、分类和推荐。此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。 例如，如果资产是图像，AI可以识别其中的对象、场景、情感甚至品牌徽标，并生成相关标记，如“日落”、“海滩”、“休假”或“微笑”。 人工智能生成的内容可以通过利用语义和词汇搜索技术增强对资产的搜索。 查看更多[搜索Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![增强型智能标记](assets/enhanced-smart-tags1.png)
 
@@ -227,9 +227,23 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 * 你必须签署GenAI Rider协议。 有关更多信息，请与您的Adobe代表联系。
 
-  >[!IMPORTANT]
-  >
-  > 仅当您未定义资产标题时，AI生成的资产标题才会显示在资产卡中。 它不会覆盖您指定的资源标题。
+### 配置人工智能生成的标题 {#configure-ai-generated-titles}
+
+通过AEM，您可以在Asset Browse页面上配置卡片视图或列表视图中的资源标题显示。 您可以选择显示您定义的资源标题、使用AI生成的标题，或者仅在资源没有现有标题时使用人工智能生成的标题。
+
+要配置AI生成的标题：
+
+1. 导航到&#x200B;**[!UICONTROL 工具> Assets > Assets配置>智能标记增强配置]**。
+
+1. 选择以下选项之一：
+
+   * **显示DC标题（默认）**：在资产属性中可用的&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定标题，以将其显示在卡片视图或列表视图中。 如果未定义资源标题，AEM Assets将显示文件名。
+
+   * **显示人工智能生成的标题**：显示人工智能生成的标题并忽略资产属性中指定的标题。 如果AI生成的标题不适用于某个资源，则AEM Assets会显示其属性中可用的默认资源标题。
+
+   * **仅在DC标题不存在时显示人工智能生成的标题**：仅当没有为资源定义资源标题时，AEM Assets才会显示人工智能生成的标题。
+
+     ![配置AI生成的标题](assets/configure-title-ai-generated.png)
 
 ### 使用人工智能生成的元数据 {#using-ai-generated-smart-tags}
 
@@ -251,6 +265,26 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
    * **[!UICONTROL 生成的关键字]：**&#x200B;关键字是表示资产主题的目标术语，有助于标记和内容筛选。
 
 1. [可选]如果您觉得任何相关标记缺失，可以添加其他标记或创建自己的标记。 为此，请在&#x200B;**[!UICONTROL 生成的关键字]**&#x200B;字段中写入您的标记，然后单击&#x200B;**[!UICONTROL 保存]**。
+
+### 禁用AI生成的元数据 {#disable-ai-generated-metadata}
+
+您可以在文件夹级别禁用AI生成的元数据。 所有子文件夹都从父文件夹继承属性。
+
+要在文件夹级别禁用AI生成的元数据，请执行以下操作：
+
+1. 导航到&#x200B;**[!UICONTROL Adobe Experience Manager > Assets >文件]**。
+
+1. 选择文件夹并单击&#x200B;**[!UICONTROL 属性]**。
+
+1. 在&#x200B;**[!UICONTROL 资产处理]**&#x200B;选项卡中，导航到&#x200B;**[!UICONTROL 图像智能标记增强功能]**&#x200B;文件夹。 从下拉列表中选择以下值之一：
+
+   * 已继承 — 文件夹从父文件夹继承启用或禁用选项。
+
+   * 启用 — 为选定的文件夹启用AI生成的元数据。
+
+   * 禁用 — 为选定的文件夹禁用AI生成的元数据。
+
+     ![禁用AI生成的元数据](assets/disable-ai-generated-metadata.png)
 
 ## 与智能标记相关的限制和最佳实践 {#limitations-best-practices-smart-tags}
 

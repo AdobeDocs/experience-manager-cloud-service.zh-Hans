@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2430'
 ht-degree: 74%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 74%
 
 ![查看资产的元数据](assets/metadata-view.png)
 
-*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 标题、描述和上传日期等基本元数据在[!UICONTROL 基本]选项卡中提供。[!UICONTROL 高级]选项卡包含更多高级元数据，例如相机型号、镜头详细信息和地理位置标记。[!UICONTROL 标记]选项卡包含根据图像的内容自动应用的标记。
 
@@ -48,7 +48,7 @@ ht-degree: 74%
 
 ![查看资产的智能标记](assets/metadata-view-tags.png)
 
-*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 智能标记还包含以百分比显示的置信度分数。它指示与所应用标记对应的置信度。您可以审核自动应用的智能标记。
 
@@ -129,10 +129,10 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 | 复选框 | 添加布尔值。保存值后，存储为 TRUE 或 FALSE。 |
 | 日期 | 添加一个日期组件。 |
 | 下拉面板 | 添加一个下拉列表。 |
-| 状态 | 添加存储库状态属性（映射到 repo:state） |
-| 资产状态 | 添加默认的资产状态属性（映射到 dam:assetStatus） |
-| 标记 | 从分类管理中存储的值添加标记（映射到 xcm:tags）。 |
-| 关键字 | 添加自由格式关键字（映射到 dc:subject）。 |
+| 状态 | 添加存储库状态属性（映射到存储库:state） |
+| 资产状态 | 添加默认资源状态属性（映射到dam:assetStatus） |
+| 标记 | 从分类管理中存储的值（映射到xcm:tags）添加标记。 |
+| 关键字 | 添加自由格式关键字（映射到dc:subject）。 |
 | 智能标记 | 通过自动添加元数据标记来增强搜索功能。 |
 
 ### 将元数据表单分配给文件夹 {#assign-metadata-form-folder}
@@ -227,9 +227,6 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 * 你必须签署GenAI Rider协议。 有关更多信息，请与您的Adobe代表联系。
 
-  >[!IMPORTANT]
-  >
-  > 仅当您未定义资产标题时，AI生成的资产标题才会显示在资产卡中。 它不会覆盖您指定的资源标题。
 
 ### 使用人工智能生成的元数据 {#using-ai-generated-smart-tags}
 
@@ -252,15 +249,17 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 1. [可选]如果您觉得任何相关标记缺失，可以添加其他标记或创建自己的标记。 为此，请在&#x200B;**[!UICONTROL 生成的关键字]**&#x200B;字段中写入您的标记，然后单击&#x200B;**[!UICONTROL 保存]**。
 
+有关如何禁用AI生成的元数据的信息，请参阅[禁用AI生成的元数据](/help/assets/smart-tags.md#disable-ai-generated-metadata)。
+
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
