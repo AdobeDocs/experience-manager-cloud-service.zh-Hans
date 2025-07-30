@@ -69,7 +69,8 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
       ![打开 fstab.yaml 文件](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. 将项目的挂载点添加到&#x200B;**fstab.yaml**文件中。 添加AEM as a Cloud Service创作实例的URL。
+   1. 将项目的挂载点添加到&#x200B;**fstab.yaml**&#x200B;文件中。 添加AEM as a Cloud Service创作实例的URL。
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![编辑 fstab.yaml 文件](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -343,7 +344,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
        npm install -g @adobe/aem-cli
    ```
 
-1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 <owner> 存储库所有者和 <repo> 存储库名称：
+1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 &lt;owner> 存储库所有者和 &lt;repo> 存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>
