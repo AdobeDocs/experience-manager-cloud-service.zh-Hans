@@ -4,10 +4,10 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 ![Github 存储库工作流](/help/edge/assets/repo-workflow.png){width=auto}
 
 本教程将指导您使用通用编辑器的所见即所得创作功能，在新的或现有的 Adobe Experience Manager Site 项目中创建、预览和发布自己的表单。
-
 
 ## 先决条件
 
@@ -66,16 +65,16 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 1. 现在，将您使用 AEM Forms Boilerplate 创建的 GitHub 存储库链接到您的 AEM 项目创作环境。连接：
 
    1. 转到您之前使用 AEM Forms Boilerplate 创建的 GitHub 存储库。
-   1. 打开 **fstab.yaml** 文件进行编辑。
+   1. 在根文件夹中添加&#x200B;**fstab.yaml**&#x200B;文件。
 
       ![打开 fstab.yaml 文件](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. 编辑 **fstab.yaml** 文件，更新您项目的挂载点。将 URL 替换为 AEM as a Cloud Service 创作实例的 URL。
+   1. 将项目的挂载点添加到&#x200B;**fstab.yaml**文件中。 添加AEM as a Cloud Service创作实例的URL。
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![编辑 fstab.yaml 文件](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. 一旦更新了参考，并且一切看起来都很好，就提交更新后的 **fstab.yaml** 文件。
+   1. 添加引用且一切看起来良好后，提交&#x200B;**fstab.yaml**&#x200B;文件。
 
       ![提交更改](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 

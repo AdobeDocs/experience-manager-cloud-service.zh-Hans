@@ -4,10 +4,10 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,8 +111,8 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 1. 现在您已经设置了内容文件夹，是时候将其链接到您之前使用 AEM Forms Boilerplate 创建的 GitHub 上的项目了。连接：
 
    1. 转到您之前使用 AEM Forms Boilerplate 创建的 GitHub 存储库。
-   1. 打开 `fstab.yaml` 以供编辑。
-   1. 将现有引用替换为您与 AEM 用户共享的文件夹的路径（forms@adobe.com）。
+   1. 在根文件夹中添加`fstab.yaml`文件。
+   1. 添加引用，其中包含您与AEM用户共享的文件夹的路径(forms@adobe.com)。
 
       ![Google Drive 上的示例内容](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
       有关使用 Microsoft SharePoint 管理文件的更多信息，请参阅[如何使用 Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)。
 
 
-   1. 提交更新的`fsatb.yaml`文件，一旦您更新了参考并且一切看起来都很好。如果您遇到任何构建问题，请参阅[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
+   1. 提交`fsatb.yaml`文件，添加引用且一切正常。 如果您遇到任何构建问题，请参阅[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
 
       ![提交更新的 fsatab.yaml 文件](/help/edge/assets/commit-updated-fstab-yaml.png)
 
