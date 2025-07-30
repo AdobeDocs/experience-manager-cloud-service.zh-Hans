@@ -1,29 +1,48 @@
 ---
-title: Adobe Experience ManagerAI助手（私人测试版）
-description: 使用Adobe Experience Manager中的AI助手帮助您查找答案、排除故障并浏览Sites、Assets、Dynamic Media、Cloud Manager和Forms。
+title: Adobe Experience Manager (Beta)的人工智能助手
+description: 使用AI Assistant帮助您查找Adobe Experience Manager中可用解决方案的答案和故障排除。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
+source-git-commit: 577e15165057fcf6537b4b0b738a1f45e5feb097
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 0%
+source-wordcount: '1308'
+ht-degree: 1%
 
 ---
 
-# 关于Adobe Experience Manager中的AEM AI助手 {#aem-home}
+# Adobe Experience Manager的人工智能助手 {#aem-home}
 
-AEM (Adobe Experience Manager)中的AI助手提供了一个对话界面，旨在简化对Adobe Experience Manager相关查询的查找。 它可帮助您访问Experience League中的产品知识、排查问题并探索可用信息。 在私人测试版计划期间，AEM AI Assistant支持Adobe Experience Manager as a Cloud Service，包括Sites、Assets、Dynamic Media、Cloud Manager和Forms。
+AEM (Adobe Experience Manager) AI Assistant提供了一个对话界面，旨在简化对Adobe Experience Manager相关查询的查找。 它可以帮助您即时获得AEM产品相关问题的答案（*可供所有用户使用*），并自动创建支持工单（*可供支持管理员使用*）。
+
+在专用测试版中，AEM AI Assistant支持AEM as a Cloud Service，包括以下解决方案：
+
+* Sites
+* Assets
+* Dynamic Media
+* Edge Delivery Services
+* Cloud Manager
+* Forms
+
+它直接嵌入到AEM中，可从AEM Experience Hub、Cloud Manager和创作UI访问。
 
 >[!IMPORTANT]
 >请确保您已查看并提交了用户协议，以便Adobe能够启用AI Assistant功能，以便您试用并参与私人测试版计划。
 >
 >如有任何问题，请通过与Adobe ID关联的电子邮件地址向[Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com)发送电子邮件。
 
-## 隐私、安全和治理
+## 范围 {#scope}
+
+AEM AI Assistant的当前范围侧重于解决Adobe Experience Manager as a Cloud Service的产品知识问题。 此范围包括对关键领域(如Sites、Assets、Forms、Edge Delivery Services和Cloud Manager)的全面支持。
+
+* **表面**：在AEM Experience Hub、创作UI、Cloud Manager中可用。
+* **功能**：产品知识以及故障排除和指导的第一站，支持票证的自动创建和查找。
+* **值**：节省时间，加快学习并加快价值实现，减少手动创建支持票证的需求，并提高创建支持票证的效率。
+
+## 隐私、安全和治理{#privacy-security-governance}
 
 AEM AI Assistant的设计高度强调隐私、安全和治理。
 
@@ -37,17 +56,22 @@ AEM AI Assistant的设计高度强调隐私、安全和治理。
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
 
-## 了解产品知识的AEM AI Assistant {#ai-prod-insights}
+## 了解用于产品知识和自动支持工单创建的AEM AI助手 {#ai-prod-insights}
 
 产品知识包含从Adobe Experience League文档衍生的概念和主题。 这些问题可划分为以下子组：
 
-| 产品知识 | 示例 |
-| --- | --- |
+
+| 产品知识 | 可供所有用户使用<br>示例 |
+| :--- | :--- |
 | 点式学习 | <ul><li>什么是通用编辑器？</li><li>如何在Cloud Manager中创建程序？</li></ul> |
 | 打开发现 | <ul><li>如何使用通用编辑器？</li><li>是否有办法将内容从一个环境复制到另一个环境？</li></ul> |
 | 疑难解答 | <ul><li>为何无法访问通用编辑器？</li><li>我的管道为什么会失败？</li></ul> |
+| **支持票证创建** | **仅支持管理员&#x200B;**<br>**示例** |
+| 自动创建支持工单，以捕获AI Assistant聊天历史记录和上下文 | <ul><li>为我创建支持工单。</li></ul> |
+| 检索支持票证的状态 | <ul><li>显示我已打开的所有支持票证。</li><li>显示票证“E-----------”的状态</li></ul> |
 
-AEM AI Assistant的当前范围侧重于解决Adobe Experience Manager as a Cloud Service的产品知识问题。 此范围包括对关键领域(如Sites、Assets、Forms和Cloud Manager)的全面支持。
+{style="table-layout:auto"}
+
 
 ## 如何提出有效的问题 {#ai-craft-questions}
 
@@ -56,7 +80,7 @@ AEM AI Assistant的当前范围侧重于解决Adobe Experience Manager as a Clou
 * 以简洁明了的方式清楚地陈述您的任务或问题。
 * 避免使用含糊不清的措辞或过于复杂的语法，以增进理解。
 * 包含有关您的任务或问题的相关上下文，因为此方法有助于AEM AI助手提供更精确且相关的答案。
-例如，在提示符下，为您正在使用的AEM解决方案命名(Sites、Assets、Dynamic Media、Cloud Manager和Forms)会很有帮助。
+例如，在提示符下，为您正在使用的AEM解决方案命名(Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager或Forms)会很有帮助。
 
 ### 不支持的问题的示例 {#ai-unsupported-questions}
 
@@ -69,21 +93,22 @@ AEM AI Assistant的当前范围侧重于解决Adobe Experience Manager as a Clou
 
 ## 使用AEM AI助手 {#ai-use}
 
-### 通过Admin Console启用AEM AI助手访问
+<!-- UNHIDE AFTER BETA or at GA
+### Enable AEM AI Assistant access through Admin Console 
 
-要使用AEM AI助手，您的组织必须选择Admin Console级别的加入。 产品管理员创建（或选择）用户组并授予其新的“AI助手”权限。 任何添加到该组的人都会立即获得AEM中的“助手”访问权限。 如果目标是实现公司范围的可用性，管理员只需将所有用户分配给该组即可。
+To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
-Admin Console中的![AEM AI助手](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
+![AEM AI Assistant in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
-从员工的角度来看，此过程非常简单：确定贵组织中Adobe Experience Manager的产品管理员，并请求将其添加到支持AI的用户组。 一旦您出现在该组中，“助理”图标将在您下次登录时自动显示。
+From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
-管理员应牢记常规的Cloud Manager管理。 您必须在Admin Console中拥有产品管理员权限才能创建配置文件、管理用户组或编辑权限。 如果用户还需要该助理的内置&#x200B;**创建支持票证**&#x200B;功能，请将标准&#x200B;**支持管理员**&#x200B;角色(标准Admin Console角色)添加到相同的个人或组。
+Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![在Admin Console的AEM AI助手中创建技术支持票证](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-有关在AEM as a Cloud Service中设置用户和组的引导式演练，请参阅[配置对AEM as a Cloud Service的访问权限](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/overview)。
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-另请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)。
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
 ### 启动或重置对话
