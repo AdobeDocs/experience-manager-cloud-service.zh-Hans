@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 22%
+source-wordcount: '833'
+ht-degree: 21%
 
 ---
 
@@ -105,6 +105,12 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
 
 
 ### 从特定环境中删除自定义域名 {#delete-cdn-specific}
+
+>[!WARNING]
+>
+>在&#x200B;*删除Cloud Manager中的域之前，请通过您的DNS提供商*&#x200B;删除域的DNS记录。 丢弃（挂起）的DNS条目可能会被劫持并带来安全风险。
+
+**要从特定环境删除自定义域名：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 

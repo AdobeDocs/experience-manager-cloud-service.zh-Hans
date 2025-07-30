@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 9%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 9%
 
    ![配置CDN对话框](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
-   | 来源 | 描述 |
+   | 源站 | 描述 |
    | --- | --- |
    | Sites | 选择Edge Delivery站点。 |
    | 环境 | 选择要在AEM设置中定位的特定Cloud Service环境。<br>在&#x200B;**层**&#x200B;下拉列表中，选择以下选项之一：<br>·选择&#x200B;**发布**&#x200B;以将内容交付给最终用户的实时生产环境作为目标。<br>·选择&#x200B;**预览**&#x200B;用于暂存或非生产环境，您可在这些环境中测试更改的上线时间。 |
@@ -53,3 +53,22 @@ ht-degree: 9%
    | 其他 CDN 提供商 | 如果您使用自己的CDN提供商，而不是您可用的Adobe托管的CDN，请选择此选项。<br>在&#x200B;**配置详细信息**&#x200B;下，在&#x200B;**域**&#x200B;下拉列表中，选择要使用的域名。<br>下拉列表中没有可用的验证域？ 请参阅[添加自定义域名称](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 
 1. 单击&#x200B;**保存**。
+
+   Adobe建议您测试域映射。
+
+## 测试域映射 {#test-domain-mapping}
+
+您可以验证新域映射在Adobe管理的CDN上是否处于活动状态，而无需等待公共DNS传播。
+
+运行覆盖DNS解析并直接指向CDN边缘的&#x200B;**curl**&#x200B;命令：
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* 将&#x200B;**`www.example.com`**&#x200B;替换为您的域。
+* 将&#x200B;**151.101.3.10**&#x200B;替换为Cloud Manager中显示的Edge IP地址作为此映射。
+
+`--resolve`标记强制将请求发送到指定的IP，并且仅在域的证书和路由安装正确后才返回成功。
+

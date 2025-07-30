@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 44%
+source-wordcount: '698'
+ht-degree: 41%
 
 ---
 
@@ -49,15 +49,19 @@ AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还�
 
 ## 工作流 {#workflow}
 
-添加自定义域名需要 DNS 服务和云管理器之间的交互。由于此工作流，安装、配置和验证自定义域名需要执行多个步骤。 下表概述了所需的步骤，包括指向完成这些步骤的文档资源的链接。
+添加自定义域名需要 DNS 服务和云管理器之间的交互。由于此工作流，安装、配置和验证自定义域名需要执行多个步骤。 下表概述了完成这些步骤所需的步骤，并提供了指向文档资源的链接。
 
-| 步骤 | 描述 | 文档 |
-| --- | --- | --- |
-| 1 | 将 SSL 证书添加到 Cloud Manager | [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | 将自定义域添加到Cloud Manager | [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | 通过添加指向 AEM as a Cloud Service 的 DNS CNAME 或 APEX 记录来配置 DNS 设置 | [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | 查看域验证状态 | [检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | 检查 DNS 记录状态 | [检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+>[!WARNING]
+>
+>仅在&#x200B;*步骤3 （添加域映射）成功完成后运行步骤4 （配置DNS）*。 按照此顺序，向Adobe的CDN注册域并设置正确的路由，保护您的网站免受域收购。
+
+| 步骤 | 描述 |
+| --- | --- |
+| 1 | [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | [添加自定义域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | [添加域映射](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 4 | [配置DNS](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | [检查DNS状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
