@@ -651,7 +651,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存储库中添加客户端库后，在自适应表单中使用它。 它可让您在表单中将自定义函数用作规则。 要在自适应表单中添加客户端库，请执行以下步骤：
 
 1. 在编辑模式下打开表单。
-要在编辑模式下打开表单，请选择一个表单，然后选择**[!UICONTROL 打开]**。
+要在编辑模式下打开表单，请选择一个表单，然后选择&#x200B;**[!UICONTROL 打开]**。
 1. 在编辑模式下，选择一个组件，然后选择![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后选择![cmppr](assets/configure-icon.svg)。
 1. 在侧栏中的“Name of Client Library”（客户端库名称）下，添加您的客户端库。 （示例中为`customfunction`。）
 
