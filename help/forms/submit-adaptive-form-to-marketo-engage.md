@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![工作流](/help/forms/assets/workflow-marketo-3.png)
 
-自适应Forms编辑器提供&#x200B;**提交到Marketo Engage**&#x200B;提交操作，以将自适应Forms数据发送到Adobe Marketo Engage进行处理。 您可以将现有自适应表单配置为在提交时将数据提交到[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)。
+自适应Forms编辑器提供&#x200B;**提交到Marketo Engage**&#x200B;提交操作，以将自适应Forms数据发送到Adobe Marketo Engage进行处理。 您可以将现有自适应表单配置为在提交时将数据提交到[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/home)。
 
 提供了用于处理表单提交的各种现成提交操作。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
@@ -94,7 +94,7 @@ ht-degree: 8%
 
 ## 下一步
 
-您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
+您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
 
 ## 相关文章
 
