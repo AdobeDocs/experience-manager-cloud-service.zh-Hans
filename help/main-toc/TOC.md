@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
-workflow-type: ht
-source-wordcount: '6522'
-ht-degree: 100%
+source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
+workflow-type: tm+mt
+source-wordcount: '6551'
+ht-degree: 99%
 
 ---
 
@@ -766,17 +766,9 @@ ht-degree: 100%
          + [将 AEM Forms as a Cloud Service 与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [将自适应表单集成到 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [查看和理解自适应表单分析报告](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [向 Adobe Workfront Fusion 提交自适应表单](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
          + [将基于核心组件的自适应表单嵌入到外部 Web 页面](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [AEM Forms 与 Adobe Experience Platform (AEP) 集成](/help/forms/aem-forms-aep-connector.md)
-         + [将基于基础组件的自适应表单嵌入到外部 Web 页面](/help/forms/embed-adaptive-form-external-web-page.md)
-         + 将自适应表单与 Adobe Marketo Engage 集成{#integrate-adaptive-form-with-market-engage}
-            + [将 Adobe Marketo Engage 与 AEM Forms 集成](/help/forms/integrate-form-to-marketo-engage.md)
-            + [配置新表单以与 Marketo Engage 集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [为现有自适应表单配置 Adobe Marketo Engage 数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [将现有表单的提交操作配置到 Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+         + [将基于 Foundation 组件的自适应表单嵌入到外部 Web 页面](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
          + [将 AEM Forms 连接到数据库或数据源](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
@@ -789,6 +781,29 @@ ht-degree: 100%
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
          + [为自适应表单设计 XML 架构](/help/forms/adaptive-form-xml-schema-form-model.md)
+      + 设置自适应表单的提交操作 {#set-submit-action}
+         + [提交由自适应Forms支持的操作](/help/forms/aem-forms-submit-action.md)
+         + [为基于基础组件的自适应表单配置提交操作](/help/forms/configuring-submit-actions.md)
+         + [根据核心组件配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
+         + [为Edge Delivery Services Forms配置提交操作](/help/forms/configure-submit-action-eds-forms.md)
+         + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
+         + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
+         + 将自适应表单连接到 Microsoft® SharePoint{#connect-to-sharepoint}
+            + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [提交到 SharePoint 文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
+            + [提交到 SharePoint 列表](/help/forms/connect-forms-to-sharepoint-list.md)
+            + [使用授权范围配置具有有限访问权限的 SharePoint Site](/help/forms/configure-sharepoint-site-limited-access.md)
+         + [向 Adobe Workfront Fusion 提交自适应表单](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [将自适应表单提交到 Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+         + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
+         + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
+         + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
+         + [AEM Forms 与 Adobe Experience Platform (AEP) 集成](/help/forms/aem-forms-aep-connector.md)
+         + 将自适应表单与 Adobe Marketo Engage 集成{#integrate-adaptive-form-with-market-engage}
+            + [将 Adobe Marketo Engage 与 AEM Forms 集成](/help/forms/integrate-form-to-marketo-engage.md)
+            + [配置新表单以与 Marketo Engage 集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [为现有自适应表单配置 Adobe Marketo Engage 数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [将现有表单的提交操作配置到 Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + 自适应表单 {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
       + [哪种自适应表单最适合您？](/help/edge/docs/forms/authoring-a-form.md)
@@ -806,17 +821,6 @@ ht-degree: 100%
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
-            + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
-            + [将自适应表单提交到 Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + 将自适应表单连接到 Microsoft® SharePoint{#connect-to-sharepoint}
-               + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [提交到 SharePoint 文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [提交到 SharePoint 列表](/help/forms/connect-forms-to-sharepoint-list.md)
-               + [使用授权范围配置具有有限访问权限的 SharePoint Site](/help/forms/configure-sharepoint-site-limited-access.md)
-            + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
-            + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
-            + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单核心组件中使用 hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [在自适应表单核心组件中使用 Turnstile CAPTCHA](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -889,7 +893,6 @@ ht-degree: 100%
          + 用法 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 对自适应表单进行电子签名](/help/forms/working-with-adobe-sign.md)
          + 配置提交操作和元数据提交 {#configure-submit-actions-and-metadata-submission}
-            + [设置自适应表单的提交操作](/help/forms/configuring-submit-actions.md)
             + [配置重定向页面](/help/forms/configuring-redirect-page.md)
             + [为自适应表单配置异步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [创建自定义提交操作](/help/forms/custom-submit-action-form.md)

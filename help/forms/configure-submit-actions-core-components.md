@@ -5,81 +5,81 @@ keywords: 如何为自适应表单选择提交操作、将自适应表单连接�
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 48%
+source-wordcount: '347'
+ht-degree: 41%
 
 ---
 
 
-# 自适应表单提交操作 {#configuring-the-submit-action}
+# 基于核心组件的自适应Forms中支持的提交操作
 
 <span class="preview"> Adobe 建议使用核心组件[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)或[创建独立的自适应表单](/help/forms/creating-adaptive-form-core-components.md)。</span>
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service（核心组件） | 本文 |
+| AEM as a Cloud Service (Edge Delivery Services) | [单击此处](/help/forms/configure-submit-action-eds-forms.md) |
 
-提交操作让您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，将触发此操作。Forms as a Cloud Service（针对基于核心组件的自适应表单）提供了一系列预建的提交操作。这些现成的提交操作可让您：
+提交操作让您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，将触发此操作。基于核心组件的自适应Forms支持各种[现成的提交操作](#submit-actions-supported-by-adaptive-forms-based-on-core-components)。
 
-* 通过电子邮件轻松发送表单数据。
-* 在传输数据时启动Microsoft®Power Automate流或AEM Workflow。
-* 直接将表单数据传输到Microsoft®SharePoint Server、Microsoft®Azure Blob Storage或Microsoft® OneDrive。
-* 使用表单数据模型(FDM)将数据无缝发送到配置的数据源。
-* 方便地将数据提交到 REST 端点。
+<!--You can also configure different actions for an Adaptive Form submissions.
 
-您可以[扩展默认的提交操作](custom-submit-action-form.md)。 您还可以自定义提交操作，以满足组织特定的要求。
+* **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
 
-要为自适应定义提交操作，请使用&#x200B;**自适应表单容器**&#x200B;组件的“配置”对话框。 **自适应表单容器**&#x200B;组件的“配置”对话框包括：
+## 提交基于核心组件的Forms操作
 
-* “基本”选项卡
-* 表单数据模型选项卡
-* “提交”选项卡
-
-您可以使用“配置”对话框定义表单容器属性。 若要了解有关表单容器组件的“配置”对话框的详细信息，请[单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=zh-Hans)。
-
-## 选择并配置自适应表单的提交操作 {#select-and-configure-submit-action}
-
-要为表单选择并配置提交操作，请执行以下操作：
-
-1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
-1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
-
-1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。
-
-   ![单击扳手图标以打开“自适应表单容器”对话框来配置提交操作](/help/forms/assets/adaptive-forms-submit-message.png)
-
-1. 根据您的要求，选择并配置&#x200B;**[!UICONTROL 提交操作]**。
-
-您还可以为自适应表单提交配置不同的操作。
-* **重定向URL/路径** — 此选项允许用户为每个表单配置一个页面，表单用户在提交自适应表单后会重定向到该页面。
-* **显示消息** - 通过此选项，用户可添加在成功提交自适应表单时显示的消息。预定义文本包含在对话框中，用户可对其进行修改。
-
-有关以下提交操作的详细信息，请参阅：
+基于核心组件的自适应Forms支持以下提交操作：
 
 * [发送电子邮件](/help/forms/configure-submit-action-send-email.md)
 * [调用 Power Automate 流](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [调用Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [使用表单数据模型(FDM)提交](/help/forms/using-form-data-model.md)
+* [使用表单数据模型（FDM）提交](/help/forms/using-form-data-model.md)
 * [提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交到 REST 端点](/help/forms/configure-submit-action-restpoint.md)
 * [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [调用 AEM 工作流](/help/forms/configure-submit-action-workflow.md)
 * [提交到Marketo启用](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [提交到Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 
-您还可以将自适应表单提交到其他存储配置：
+您还可以将基于核心组件的自适应表单提交到其他存储配置：
 
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
 * [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-* [将自适应表单连接到 Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
-您可以[自定义默认的提交操作](custom-submit-action-form.md)。 此外，您可以自定义提交操作以符合特定的组织要求。
+此外，您可以[自定义默认的提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)以符合特定的组织要求。
 
+
+### 根据核心组件配置自适应表单的提交操作
+
+<!--To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+
+* Basic Tab
+* Form Data Model Tab
+* Submission Tab
+  ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
+  -->
+
+您可以使用“配置”对话框的“提交”选项卡定义表单容器属性。 若要了解有关表单容器组件的“配置”对话框的详细信息，请[单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)。
+
+![单击扳手图标以打开“自适应表单容器”对话框来配置提交操作](/help/forms/assets/adaptive-forms-submit-message.png)
+
+<!--To select and configure a Submit Action for your form:
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+
+1. Click the  **[!UICONTROL Submission]** tab. 
+
+    ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. -->
 
 <!--
 ## Send Email {#send-email}
@@ -87,7 +87,7 @@ ht-degree: 48%
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
 Refer to [configure the send email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
-[!NOTE]
+>[!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
@@ -125,7 +125,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -141,7 +141,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 
@@ -211,18 +211,14 @@ If end-user bypass those validations and submit the forms, the server again perf
 >[!NOTE]
 >
 >Server-side validation validates the form model. You are recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
--->
 
-## 提交操作的错误处理 {#error-handling-on-submit-action}
+## Error handling on Submit Action {#error-handling-on-submit-action}
 
-作为 AEM 安全和强化指南的一部分，配置自定义错误页面，例如 400.jsp、404.jsp 和 500.jsp。如果提交表单时出现 400、404 或 500 错误，则将调用这些处理程序。在发布节点上触发这些错误代码时，也将调用处理程序。您还可以为其他 HTTP 错误代码创建 JSP 页面。
+As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-当您将包含XML或JSON数据投诉的表单数据模型(FDM)或基于架构的自适应表单预填充到数据不包含`<afData>`、`<afBoundData>`和`</afUnboundData>`标记的架构时，自适应表单的未绑定字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型(FDM)。 未绑定的字段是自适应表单字段，不带 `bindref` 属性。
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
-
-
-<!--
+<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). 
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
@@ -233,5 +229,5 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 ## 另请参阅 {#see-also}
 
-{{see-also}}
+{{af-submit-action}}
 

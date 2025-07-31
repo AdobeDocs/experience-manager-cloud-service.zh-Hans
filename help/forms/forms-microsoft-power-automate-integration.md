@@ -3,12 +3,12 @@ title: 如何将自适应表单与Microsoft&amp；reg； Power Automate集成？
 description: 将自适应表单与Microsoft&amp；reg；Power Automate集成。
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 将AEM表单连接到power automate、Power automate automation AEM Forms、将power automate集成到Adaptive Forms、将数据从Adaptive Forms发送到Power Automate
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 12%
+source-wordcount: '1531'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 自适应Forms编辑器提供&#x200B;**调用Microsoft®Power Automate流**&#x200B;提交操作以将自适应表单数据、附件和记录文档发送到Power Automate Cloud Flow。
 
-AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/aem-forms-submit-action.md)文章中了解有关这些选项的更多信息。
 
 
 ## 优点
@@ -38,7 +38,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 将自适应表单与Microsoft® Power Automate连接需要以下项：
 
 * Microsoft® Power Automate Premium许可证。
-* Microsoft® [带`When an HTTP request is received`触发器的Power Automate流](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)接受自适应表单提交数据。
+* Microsoft® [带](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)触发器的Power Automate流`When an HTTP request is received`接受自适应表单提交数据。
 * 具有[Forms作者](/help/forms/forms-groups-privileges-tasks.md)和[Forms管理员](/help/forms/forms-groups-privileges-tasks.md)权限的Experience Manager用户
 * 用于连接到Microsoft的帐户®Power Automate是配置为从自适应表单接收数据的Power Automate流的所有者
 
@@ -138,7 +138,11 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 ## 使用调用Microsoft® Power Automate流提交操作将数据发送到Power Automate流 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-将Forms as a Cloud Service实例与Microsoft® Power Automate[&#128279;](#connect-forms-server-with-power-automate)连接后，执行以下操作以配置自适应表单以在提交表单时将捕获的数据发送到Microsoft®流。
+将Forms as a Cloud Service实例与Microsoft® Power Automate[连接后，执行以下操作以配置自适应表单以在提交表单时将捕获的数据发送到Microsoft®流。](#connect-forms-server-with-power-automate)
+
+>[!BEGINTABS]
+
+>[!TAB 基础组件]
 
 1. 登录到创作实例，选择您的自适应表单并单击&#x200B;**[!UICONTROL 属性]**。
 1. 在配置容器中，浏览并选择在[创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)部分创建的容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
@@ -146,6 +150,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 在属性容器中，为&#x200B;**[!UICONTROL 提交操作]**&#x200B;选择&#x200B;**[!UICONTROL 调用Power Automate流]**&#x200B;选项并选择&#x200B;**[!UICONTROL Power Automate流]**。 选择所需的流程，并在提交时向其提交自适应Forms数据。
 
    ![配置提交操作](assets/submission.png)
+1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 >[!NOTE]
 >
@@ -210,6 +215,167 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
             }
         }
 ```
+
+>[!TAB 核心组件]
+
+1. 登录到创作实例，选择您的自适应表单并单击&#x200B;**[!UICONTROL 属性]**。
+1. 在配置容器中，浏览并选择在[创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)部分创建的容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
+1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
+1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。
+1. 从“提交操作”下拉列表中选择&#x200B;**[!UICONTROL 调用Power Automate流]**&#x200B;选项，然后选择&#x200B;**[!UICONTROL Power Automate流]**。 选择所需的流程，并在提交时向其提交自适应Forms数据。
+
+   ![配置提交操作](/help/forms/assets/power-automate-cc.png)
+1. 单击&#x200B;**[!UICONTROL 完成]**。
+
+>[!NOTE]
+>
+> 在提交自适应表单之前，请确保将具有以下JSON架构的`When an HTTP Request is received`触发器添加到您的Power Automate流中。
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!TAB 通用编辑器]
+
+1. 登录到创作实例，选择您的自适应表单。
+1. 在配置容器中，浏览并选择在[创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)部分创建的容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 打开自适应表单进行编辑。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
+
+   >[!NOTE]
+   >
+   > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+   > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+
+
+1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 调用Power Automate流]**&#x200B;提交操作。 选择所需的流程，并在提交时向其提交自适应Forms数据。
+
+   ![配置提交操作](/help/forms/assets/power-automate-ue.png)
+1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+
+>[!NOTE]
+>
+> 在提交自适应表单之前，请确保将具有以下JSON架构的`When an HTTP Request is received`触发器添加到您的Power Automate流中。
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also

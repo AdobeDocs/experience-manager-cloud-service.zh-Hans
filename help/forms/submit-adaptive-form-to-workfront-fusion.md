@@ -3,13 +3,13 @@ title: Adobe Workfront Fusion与AEM Forms提交的集成
 description: Adobe Workfront Fusion允许您专注于新任务，而不是重复的任务。 您可以使用表单提交功能将Adobe Workfront Fusion连接到自适应表单。
 keywords: 将自适应表单提交到Adobe Workfront Fusion、Adobe Workfront Fusion与AEM Forms提交的集成、Adobe Workfront Fusion与AEM Forms的集成、Workfront Fusion与AEM Forms的集成、将Workfront Fusion连接到AEM Forms、AEM Forms和Workfront Fusion、如何将Workfront Fusion与AEM Forms连接？以及将Workfront Fusion连接到表单
 topic-tags: author, developer
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 5%
+source-wordcount: '1287'
+ht-degree: 6%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 5%
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=zh-Hans)自动执行重复相同任务的流程，例如文档审批工作流、电子邮件筛选和排序，从而让您能够专注于新任务而不是重复任务。 Adobe Workfront Fusion包含多个场景。 场景由一系列模块组成，这些模块在应用程序和Web服务之间执行数据传输。 在场景中，添加各种步骤（模块）以自动执行任务。
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html)自动执行重复相同任务的流程，例如文档审批工作流、电子邮件筛选和排序，从而让您能够专注于新任务而不是重复任务。 Adobe Workfront Fusion包含多个场景。 场景由一系列模块组成，这些模块在应用程序和Web服务之间执行数据传输。 在场景中，添加各种步骤（模块）以自动执行任务。
 
 例如，使用Workfront Fusion，您可以创建一个方案，以便使用自适应表单收集数据、处理数据并将数据发送到数据存储进行存档。 一旦设置了场景，Workfront Fusion就会在用户填写表单时自动执行任务，从而无缝更新数据存储。
 
-AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应表单并将其提交到Adobe Workfront Fusion。 将表单提交到Adobe Workfront Fusion可以具备以下优势：
+AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应表单并将其提交到Adobe Workfront Fusion。 将表单提交到Adobe Workfront Fusion可以具备以下优势：
 * 它支持将表单提交数据无缝传输到Workfront Fusion工作流。
 * 它有助于自动执行由表单提交触发的各种任务。 这可以包括启动项目、将任务分配给特定团队成员、发送通知以及更新项目状态 — 所有这些操作都不需要手动干预。
 * 在Workfront Fusion中捕获的所有表单提交都为项目相关信息提供了单一的真实来源
@@ -35,8 +35,8 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
 
 要在Workfront Fusion与AEM Forms之间建立连接，需要满足以下条件：
 
-* 有效的[Workfront和Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=zh-Hans)。
-* 有权访问[开发控制台](https://my.cloudmanager.adobe.com/)以[检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)的AEM用户。
+* 有效的[Workfront和Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html)。
+* 有权访问[开发控制台](https://my.cloudmanager.adobe.com/)以[检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)的AEM用户。
 
 ## 将AEM Forms与Adobe Workfront Fusion集成
 
@@ -51,6 +51,7 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
 #### 创建方案 {#create-scenario}
 
 要创建方案，请执行以下操作：
+
 1. 登录您的[Workfront Fusion帐户](https://app-qa.workfrontfusion.com/)。
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]** ![共享图标](/help/forms/assets/Smock_ShareAndroid_18_N.svg)。
 1. 单击页面右上角的&#x200B;**[!UICONTROL 创建新方案]**。 屏幕上会显示创建新方案的页面。
@@ -102,13 +103,13 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
    >
    > 实例URL是指向特定AEM Forms实例的唯一网址。
 
-   您可以从创建连接所需的开发人员控制台[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)检索服务凭据。
+   您可以从创建连接所需的开发人员控制台[检索](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)服务凭据。
 
-1. 从开发人员控制台中的服务凭据中将&#x200B;**IMS端点**&#x200B;中的`ims-na1.adobelogin.com`替换为&#x200B;**imsEndpoint**&#x200B;的值。
+1. 从开发人员控制台中的服务凭据中将`ims-na1.adobelogin.com`IMS端点&#x200B;**中的**&#x200B;替换为&#x200B;**imsEndpoint**&#x200B;的值。
 
    >[!NOTE]
    >
-   > 添加`imsEndpoint` URL时，在&#x200B;**IMS终结点**&#x200B;文本框中保留`https://`。
+   > 添加`https://` URL时，在&#x200B;**IMS终结点**&#x200B;文本框中保留`imsEndpoint`。
 
 1. 在&#x200B;**[!UICONTROL 创建连接]**&#x200B;对话框中指定以下值：
    * 从开发人员控制台中的服务凭据中指定值为&#x200B;**clientId**&#x200B;的&#x200B;**客户端ID**。
@@ -145,51 +146,58 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
 
 ### 2.配置Workfront Fusion自适应表单的提交操作
 
-您可以为Workfront Fusion配置提交操作，用于：
-* [新的自适应Forms](#new-af-submit-action)
-* [现有自适应表单](#existing-af-submit-action)
+>[!BEGINTABS]
 
-#### 配置适用于Workfront Fusion的新自适应表单的提交操作 {#new-af-submit-action}
+>[!TAB 基础组件]
 
-要配置适用于Workfront Fusion的新自适应表单的提交操作，请执行以下操作：
+要配置基于Workfront Fusion基础组件的自适应表单的提交操作，请执行以下操作：
 
-1. 登录到您的AEM实例。
-1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]** > **[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。 出现&#x200B;**[!UICONTROL 创建表单]**&#x200B;向导。
-1. 从&#x200B;**[!UICONTROL Source]**&#x200B;选项卡中选择自适应表单模板。
-1. 从&#x200B;**[!UICONTROL 样式]**&#x200B;选项卡中选择主题。
+1. 打开自适应表单进行编辑，然后导航到自适应表单容器属性的&#x200B;**[!UICONTROL 提交]**&#x200B;部分。
+1. 从&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 调用Workfront Fusion方案]**。
+   适用于Workfront Fusion的![提交操作](/help/forms/assets/workfront-fusion-fc.png)
 
-   适用于Workfront Fusion的![提交操作](/help/forms/assets/workfront-scenario-new-af.png)
-
-1. 从&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL 调用Workfront Fusion方案]**。
-1. 从&#x200B;**[!UICONTROL 属性]**&#x200B;窗口的&#x200B;**[!UICONTROL 选项]**&#x200B;选项卡中选择已创建的webhook。
-
-   >[!NOTE]
-   >
-   > Workfront方案的webhook名称显示在&#x200B;**选项**&#x200B;下拉列表中。
-
-1. 单击&#x200B;**[!UICONTROL 创建]**。
-1. 指定新自适应表单的名称，然后单击&#x200B;**[!UICONTROL 创建]**。
-
-#### 配置现有Workfront Fusion自适应表单的提交操作 {#existing-af-submit-action}
-
-要配置现有Workfront Fusion自适应表单的提交操作，请执行以下操作：
-
-1. 登录到您的AEM实例。
-1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
-1. 选择一个自适应表单，然后在编辑模式下打开该表单。
-1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
-1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
-
-   适用于Workfront Fusion的![提交操作](/help/forms/assets/workfront-scenario-existing-af.png)
-
-1. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。
-1. 选择&#x200B;**[!UICONTROL 提交操作]**&#x200B;作为&#x200B;**[!UICONTROL 调用Workfront Fusion方案]**
 1. 从下拉列表中选择&#x200B;**[!UICONTROL Workfront Fusion场景]**。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
+
+>[!TAB 核心组件]
+
+要配置基于Workfront Fusion核心组件的自适应表单的提交操作，请执行以下操作：
+
+1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
+1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
+1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。
+1. 从&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 调用Workfront Fusion方案]**。
+
+   适用于Workfront Fusion的![提交操作](/help/forms/assets/workfront-scenario-existing-af.png)
+1. 从下拉列表中选择&#x200B;**[!UICONTROL Workfront Fusion场景]**。
+1. 单击&#x200B;**[!UICONTROL 完成]**。
+
+>[!TAB 通用编辑器]
+
+要为使用通用编辑器创作的自适应表单配置提交操作，请执行以下操作：
+
+1. 打开自适应表单进行编辑。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
+
+   >[!NOTE]
+   >
+   > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+   > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+
+1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 调用Workfront Fusion方案]**&#x200B;提交操作。
+
+   适用于Workfront Fusion的![提交操作](/help/forms/assets/workfront-fusion-ue.png)
+
+1. 从下拉列表中选择&#x200B;**[!UICONTROL Workfront Fusion场景]**。
+1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+
+>[!ENDTABS]
+
 ## 最佳实践 {#best-practices}
 
-* 建议您仔细选择您的webhook名称，因为在AEM实例上无法获取场景名称。 如果将来更改webhook名称，该名称将不会反映在AEM Forms提交操作下拉列表中。
+* 建议仔细选择您的webhook名称，因为在AEM实例中无法获取场景名称。 如果将来更改webhook名称，该名称将不会反映在AEM Forms提交操作下拉列表中。
 * 一个方案可以有多个webhook链接，但一次只能有一个webhook链接处于活动状态。 建议删除未链接的webhook，以便它不会出现在AEM Forms提交操作下拉列表中。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->

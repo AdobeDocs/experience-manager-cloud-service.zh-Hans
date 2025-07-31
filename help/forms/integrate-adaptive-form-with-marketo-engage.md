@@ -5,10 +5,10 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 5%
+source-wordcount: '1012'
+ht-degree: 7%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 5%
 
 ![工作流](/help/forms/assets/workflow-marketo-4.png)
 
-在创建云服务配置以将Marketo Engage与AEM Forms集成后，您可以配置自适应表单以与[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/home)集成。
+在创建云服务配置以将Marketo Engage与AEM Forms集成后，您可以配置自适应表单以与[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)集成。
 
-您可以使用表单向导将Marketo Engage连接到自适应表单，该向导通过指导您完成每个步骤来简化配置过程。 这包括选择模板、样式和数据字段，以及设置数据映射以确保您的表单在创建后可以与Marketo Engage通信。 使用表单向导，您还可以配置自适应表单，以在提交时直接将数据提交到Adobe Marketo Engage。
+您可以使用表单向导将Marketo Engage连接到自适应表单，该向导通过指导您完成每个步骤来简化配置过程。 其中包括选择模板、样式和数据字段，以及设置数据映射，以确保您的表单在创建后可以与Marketo Engage通信。 使用表单向导，您还可以配置自适应表单，以在提交时直接将数据提交到Adobe Marketo Engage。
 
 ## 为表单配置Marketo Engage数据源的注意事项
 
-为表单配置Marketo Engage数据源时的注意事项如下：
+为表单配置Marketo Engage数据源时的注意事项包括：
 
-* 无法将Edge Delivery ServicesForms与Marketo Engage连接。
+* 无法将Edge Delivery Services Forms与Marketo Engage连接。
 
 ## 将Marketo Engage与表单连接的先决条件
 
@@ -38,13 +38,56 @@ ht-degree: 5%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
-要配置新的自适应表单以与Marketo Engage集成，请执行以下步骤：
+>[!BEGINTABS]
 
-1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
+>[!TAB 基础组件]
+
+要配置基于Foundation组件的新自适应表单以与Marketo Engage集成，请执行以下步骤：
+
+1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 
    ![选择Forms和文档](/help/forms/assets/select-forms.png)
 
-1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应Forms]**。 将打开表单创建向导。
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。将打开表单创建向导。
+
+   ![选择AF](/help/forms/assets/select-create-forms.png)
+
+1. 在&#x200B;**[!UICONTROL Source]**&#x200B;选项卡中，选择一个模板
+
+   ![选择模板](/help/forms/assets/select-template-af1.png)
+
+1. 从&#x200B;**[!UICONTROL 样式]**&#x200B;中选择主题。
+
+   ![选择主题](/help/forms/assets/select-form-theme-af1.png)
+1. 在&#x200B;**[!UICONTROL 数据]**&#x200B;选项卡中，选择一个数据模型作为&#x200B;**Marketo Engage**。
+1. 从屏幕右窗格中显示的下拉列表中选择&#x200B;**[!UICONTROL 云配置]**。
+默认情况下，将显示关联配置的所有字段。 该向导通过使用复选框来为您提供便利性，允许您有选择地选择应在自适应表单中包含的字段。
+
+   ![选择数据模型](/help/forms/assets/select-marketo-data-af1.png)
+
+1. 在&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中，选择提交操作作为&#x200B;**[!UICONTROL 提交到Marketo]**。
+
+   当您将数据模型选择为&#x200B;**Marketo Engage**&#x200B;时，将自动选择作为&#x200B;**提交到Marketo**&#x200B;的提交操作。 您可以从&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中选择其他提交操作。 **[!UICONTROL 提交]**&#x200B;选项卡显示所有可用的提交操作。
+
+   ![提交到Marketo engage](/help/forms/assets/select-marketo-engage.png)
+
+1. 选择&#x200B;**[!UICONTROL 创建]**。指定标题、名称和位置以保存自适应表单。
+
+   ![创建表单](/help/forms/assets/create-marketo-form.png)
+
+1. 选择&#x200B;**[!UICONTROL 创建]**。
+
+自适应表单现在配置为连接Marketo Engage实例。 或者，您也可以编辑自适应表单属性以更改其关联配置
+
+>[!TAB 核心组件]
+
+要配置基于核心组件的新自适应表单以与Marketo Engage集成，请执行以下步骤：
+
+1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
+
+   ![选择Forms和文档](/help/forms/assets/select-forms.png)
+
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。将打开表单创建向导。
 
    ![选择AF](/help/forms/assets/select-create-forms.png)
 
@@ -76,26 +119,66 @@ ht-degree: 5%
 
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 
-自适应表单现在配置为与Marketo Engage实例连接。 或者，您也可以编辑自适应表单属性以更改其关联配置。
+自适应表单现在配置为连接Marketo Engage实例。 或者，您也可以编辑自适应表单属性以更改其关联配置。
+
+>[!TAB 通用编辑器]
+
+要配置在Universal Editor中创作的新自适应表单以与Marketo Engage集成，请执行以下步骤：
+
+1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
+
+   ![选择Forms和文档](/help/forms/assets/select-forms.png)
+
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。将打开表单创建向导。
+
+   ![选择AF](/help/forms/assets/select-create-forms.png)
+
+1. 在&#x200B;**[!UICONTROL Source]**&#x200B;选项卡中，选择一个模板
+
+   ![选择模板](/help/forms/assets/select-template-ue.png)
+
+1. 在&#x200B;**[!UICONTROL 数据]**&#x200B;选项卡中，选择一个数据模型作为&#x200B;**Marketo Engage**。
+
+1. 从屏幕右窗格中显示的下拉列表中选择&#x200B;**[!UICONTROL 云配置]**。
+默认情况下，将显示关联配置的所有字段。 该向导通过使用复选框来为您提供便利性，允许您有选择地选择应在自适应表单中包含的字段。
+
+   ![选择数据模型](/help/forms/assets/select-marketo-data-ue.png)
+
+1. 在&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中，选择提交操作作为&#x200B;**[!UICONTROL 提交到Marketo]**。
+
+   当您将数据模型选择为&#x200B;**Marketo Engage**&#x200B;时，将自动选择作为&#x200B;**提交到Marketo**&#x200B;的提交操作。 您可以从&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中选择其他提交操作。 **[!UICONTROL 提交]**&#x200B;选项卡显示所有可用的提交操作。
+
+   ![提交到Marketo engage](/help/forms/assets/select-marketo-engage-ue.png)
+
+1. 选择&#x200B;**[!UICONTROL 创建]**。指定标题、名称和位置以保存自适应表单。
+
+   ![创建表单](/help/forms/assets/create-marketo-form.png)
+
+1. 选择&#x200B;**[!UICONTROL 创建]**。
+
+自适应表单现在配置为连接Marketo Engage实例。 或者，您也可以编辑自适应表单属性以更改其关联配置。
+
+>[!ENDTABS]
 
 ## 常见问题解答(FAQ)
 
 **问：是否可以更改配置为与Marketo Engage架构连接的表单的提交操作？**
-**A：**&#x200B;默认情况下，将表单配置为与Marketo Engage架构连接时，将选择&#x200B;**提交到Marketo**&#x200B;操作。 但是，您可以根据需要更改表单的提交操作。
+**A：**&#x200B;默认情况下，将表单配置为连接Marketo架构时，将选择&#x200B;**提交到Marketo Engage**&#x200B;操作。 但是，您可以根据需要更改表单的提交操作。
 
 
 **问：更改表单的连接器时会出现什么情况？**\
 **A：**&#x200B;如果更改表单的连接器，则现有绑定将无效。
 
-**问：对于与Marketo Engage集成的表单，在规则编辑器的调用服务中可用的三项操作是什么？**\
-**A：**&#x200B;在与Marketo Engage集成的&#x200B;**调用服务**&#x200B;中可用的三个现成操作是：
+**问：在规则编辑器的调用服务中，有哪三项操作可用于与Marketo Engage集成的表单？**\
+**A：**&#x200B;在与Marketo Engage集成的表单的&#x200B;**调用服务**&#x200B;中可用的三个现成操作包括：
+
 * 同步潜在客户
 * 按ID获取潜在客户
 * 按筛选器类型获取潜在客户
 
 ## 下一步
 
-您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
+您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
 
 ## 相关文章
 
