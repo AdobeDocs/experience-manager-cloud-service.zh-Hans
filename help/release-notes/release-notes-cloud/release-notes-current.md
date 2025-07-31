@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: b4aec70b13575366c1d40ccf935481580a1fb6d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1810'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 

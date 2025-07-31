@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ AEM as a Cloud Service 允许您使用自己的加密密钥来加密静态数据
 1. 设置环境
 1. 从 Adobe 获取应用程序 ID
 1. 创建新资源组
-1. 创建密钥保管库
-1. 授予Adobe对密钥库的访问权限
+1. 创建密钥存储库
+1. 授予 Adobe 访问密钥存储库的权限
 1. 创建加密密钥
 
 您需要与 Adobe 共享密钥存储库 URL、加密密钥名称以及有关密钥存储库的信息。
@@ -52,30 +52,30 @@ AEM as a Cloud Service 允许您使用自己的加密密钥来加密静态数据
 
 Azure 命令行界面 (CLI) 是本指南的唯一要求。如果您尚未安装 Azure CLI，请按照[此处](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)的官方安装说明进行操作。
 
-在继续本指南的其余部分之前，请使用`az login`登录您的CLI。
+在继续阅读本指南的其余部分之前，请使用 `az login` 登录您的 CLI。
 
 >[!NOTE]
 >
 >虽然本指南使用 Azure CLI，但也可以经由 Azure 控制台执行相同的操作。如果您更喜欢使用 Azure 控制台，请使用以下命令作为参考。
 
 
-## 启动AEM as a Cloud Service的CMK配置过程 {#request-cmk-for-aem-as-a-cloud-service}
+## 启动 AEM as a Cloud Service 的 CMK 配置流程 {#request-cmk-for-aem-as-a-cloud-service}
 
-您需要通过UI为AEM as a Cloud Service环境请求客户管理的密钥(CMK)配置。 为此，请导航到&#x200B;**客户管理的密钥**&#x200B;部分下的AEM主页安全UI。
-然后，您可以通过单击&#x200B;**开始载入**&#x200B;按钮来开始载入流程。
+您需要通过 UI 请求 AEM as a Cloud Service 环境的客户管理的密钥 (CMK) 配置。为此，请导航到 AEM Home Security UI 的&#x200B;**客户管理的密钥**部分。
+然后，您可以点击**开始加入**&#x200B;按钮，启动加入过程。
 
-![使用CMK UI开始载入网站](./assets/cmk/step1.png)
+![使用 CMK UI 开始网站加入](./assets/cmk/step1.png)
 
 
 ## 从 Adobe 获取应用程序 ID {#obtain-an-application-id-from-adobe}
 
-开始载入流程后，Adobe将提供Entra应用程序ID。 该应用程序ID是本指南其余部分所必需的，将用于创建允许Adobe访问您的密钥库的服务主体。 如果您还没有应用程序ID，则需要等待Adobe提供此ID。
+加入过程启动后，Adobe 将提供一个 Entra 应用程序 ID。本指南的其余部分需要使用此应用程序 ID 来创建一个服务主体，用于允许 Adobe 访问您的密钥存储库。如果您还没有应用程序 ID，就需要等待 Adobe 提供此 ID。
 
-![正在处理请求，请等待Adobe提供Entra应用程序ID](./assets/cmk/step2.png)
+![请求正在处理中，等待 Adobe 提供 Entra 应用程序 ID](./assets/cmk/step2.png)
 
-请求完成后，您将能够在CMK UI中看到应用程序ID。
+请求完成后，您将能够在 CMK UI 中看到这个应用程序 ID。
 
-![Entra应用程序ID由Adobe提供](./assets/cmk/step3.png)
+![Entra 应用程序 ID 由 Adobe 提供](./assets/cmk/step3.png)
 
 ## 创建新资源组 {#create-a-new-resource-group}
 
@@ -94,7 +94,7 @@ az group create --location $location --resource-group $resourceGroup
 
 ## 创建密钥存储库 {#create-a-key-vault}
 
-您需要创建一个密钥存储库来保存您的加密密钥。密钥存储库必须启用清除保护。清除保护对于加密来自其他 Azure 服务的静态数据是必要的。必须启用公共网络访问，以确保Adobe服务可以访问密钥保管库。
+您需要创建一个密钥存储库来保存您的加密密钥。密钥存储库必须启用清除保护。清除保护对于加密来自其他 Azure 服务的静态数据是必要的。必须启用公共网络访问权限，以确保 Adobe 服务能够访问密钥存储库。
 
 >[!IMPORTANT]
 >创建禁用了公共网络访问权限的密钥存储库会强制所有与密钥存储库相关的操作（如密钥创建或轮换）必须从具有密钥存储库网络访问权限的环境中执行（例如，可以访问密钥存储库的虚拟机）。
@@ -122,7 +122,7 @@ az keyvault create `
 
 在此步骤中，您将允许 Adobe 通过 Entra 应用程序访问您的密钥存储库。Entra 应用程序的 ID 应该已经由 Adobe 提供。
 
-首先，您必须创建一个附加到Entra应用程序的服务主体，并为其分配&#x200B;**密钥保管库Reader**&#x200B;和&#x200B;**密钥保管库加密用户**&#x200B;角色。 这些角色仅限于本指南中创建的密钥存储库。
+首先，您必须创建一个附加到 Entra 应用程序的服务主体，并为其分配&#x200B;**密钥存储库读取者**&#x200B;和&#x200B;**密钥存储库加密用户**&#x200B;角色。这些角色仅限于本指南中创建的密钥存储库。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -162,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## 共享密钥存储库信息 {#share-the-key-vault-information}
 
-至此，您已全部设置完毕。您只需通过CMK UI共享一些必需的信息，这将启动环境配置过程。
+至此，您已全部设置完毕。您只需通过 CMK UI 共享一些必需的信息，环境配置过程就会启动。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -182,9 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
-在CMK UI中提供以下信息：
-![在UI中填写信息](./assets/cmk/step3a.png)
+在 CMK UI 中提供此信息：
+![在 UI 中填写信息](./assets/cmk/step3a.png)
 
 ## 撤销密钥访问权限的影响 {#implications-of-revoking-key-access}
 
@@ -194,16 +193,15 @@ $subscriptionId="<Subscription ID>"
 
 ## 后续步骤 {#next-steps}
 
-在CMK UI中提供所需信息后，Adobe将为您的AEM as a Cloud Service环境启动配置过程。 此过程可能需要一些时间，完成后，您将收到通知。
+在 CMK UI 中提供必需的信息后，Adobe 将启动 AEM as a Cloud Service 环境的配置过程。此过程可能需要一些时间，完成后您会收到通知。
 
-![等待Adobe配置环境。](./assets/cmk/step4.png)
+![等待 Adobe 配置环境。](./assets/cmk/step4.png)
 
 
-## 完成CMK设置 {#complete-the-cmk-setup}
+## 完成 CMK 设置 {#complete-the-cmk-setup}
 
-配置过程完成后，您将能够在UI中查看CMK设置的状态。 您还可以看到密钥保管库和加密密钥。
-![进程现已完成](./assets/cmk/step5.png)
+配置过程完成后，您将能够在 UI 中看到 CMK 设置的状态。您还可以看到密钥存储库和加密密钥。![现在过程已完成](./assets/cmk/step5.png)
 
-## 问题和支持 {#questions-and-support}
+## 问题与支持 {#questions-and-support}
 
-如果您对AEM as a Cloud Service的客户托管密钥设置有任何疑问、查询或需要帮助，请联系我们。 Adobe支持可以帮助您解答您可能遇到的任何问题。
+如果您对 AEM as a Cloud Service 的客户管理的密钥设置有任何疑问、问题或需要帮助，请联系我们。Adobe 支持部门可以帮助解决您可能遇到的任何问题。

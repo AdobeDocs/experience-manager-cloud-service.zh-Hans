@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 95%
 
 ## 版本 21706 {#21706}
 
-以下总结了维护版本21706的持续改进，该版本于2025年7月24日公开发布。 上一个维护版本是版本 21570。
+以下是 2025 年 7 月 24 日正式发布的维护版本 21706 的持续改进摘要。上一个维护版本是版本 21570。
 
 >[!NOTE]
 >
->发行说21644已设为私有，并由发行21706取代。
+>版本 21644 已设为专用，被版本 21706 取代。
 
 激活 2025.7.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
