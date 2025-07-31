@@ -1,44 +1,44 @@
 ---
-title: 在AEM中引入用于数字资产管理的Assets as a Cloud Service
-description: 在AEM中引入用于数字资产管理的Assets as a Cloud Service
+title: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
+description: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
 source-git-commit: 707c2125b3a5401cd5b0ebe19f3bc9c46302b697
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5032'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
 
-# 在AEM中引入用于数字资产管理的Assets as a Cloud Service {#assets-as-cloud-service-digital-asset-management-aem}
+# 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service {#assets-as-cloud-service-digital-asset-management-aem}
 
-Adobe Experience Manager Assets as a Cloud Service 为企业提供了云原生的 PaaS 解决方案，不仅可用于快速执行其数字资源管理和 Dynamic Media 运营来实现影响力，而且还可在始终最新、始终可用和不断学习的系统中使用新一代智能功能，例如 AI/ML。
+Adobe Experience Manager Assets as a Cloud Service 提供了一种云原生的 PaaS 解决方案，帮助企业不仅能够高效、卓有成效地开展数字资产管理与 Dynamic Media 处理，还可在始终保持最新、始终在线、持续自我学习的系统中，利用人工智能与机器学习等新一代智能功能。
 
-Adobe 为您提供强大的数字资源管理（DAM）解决方案，让您能够充分利用数字资源。 Adobe Experience Manager Assets具有两种单独的体验，它们使用相同的Cloud Services存储库来满足您的要求。 有关AEM Assets基于角色的体验的信息，请参阅[数字资产管理可用的基于角色的体验](#persona-based-experiences)。
+Adobe 提供强大的数字资产管理（DAM）解决方案，助您充分发挥数字资产的价值。Adobe Experience Manager Assets 提供两种独立的使用体验，共享同一 Cloud Services 存储库，以满足您的不同需求。关于 AEM Assets 中基于角色的使用体验，请参阅《[适用于数字资产管理的基于角色的使用体验](#persona-based-experiences)》。
 
-有关AEM Assets Ultimate和AEM Assets Prime产品的信息，请参阅[Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)和[Assets as a Cloud Service Prime](/help/assets/assets-prime.md)。
+关于 AEM Assets Ultimate 和 AEM Assets Prime 的相关信息，请参阅 [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) 和 [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)。
 
-Adobe的数字资产管理的一些主要功能包括：
+Adobe 数字资产管理的部分核心功能包括：
 
-![添加标记](assets/aem-assets-features-landing-page.png)
+![add-tags](assets/aem-assets-features-landing-page.png)
 
 
 >[!BEGINTABS]
 
->[!TAB 资源引入]
+>[!TAB 资产摄取]
 
-## 资源引入 {#asset-ingestion}
+## 资产摄取 {#asset-ingestion}
 
-使用批量导入功能将大量资源直接从数据源(如Azure、AWS、Google Cloud、Dropbox和OneDrive)导入Assets as a Cloud Service。
+使用批量导入功能，可将大量资产直接从数据源（如 Azure、AWS、Google Cloud、Dropbox 和 OneDrive）导入至 Assets as a Cloud Service。
 
-您可以使用管理员视图或Assets视图执行批量导入操作。 与管理员视图相比，Assets视图提供了更多数据源选项。
+您可以通过“管理员视图”或“资产视图”执行批量导入操作。与“管理员视图”相比，“资产视图”提供了更多数据源选项。
 
-除了Web浏览器用户界面外，Experience Manager还支持桌面上的其他客户端。 它们还提供了上传体验，无需转至Web浏览器。
+除了网页浏览器用户界面外，Experience Manager 还支持桌面端的其他客户端。这些客户端同样支持上传操作，无需打开网页浏览器即可完成。
 
-* Adobe Asset Link允许从Adobe Photoshop、Adobe Illustrator和Adobe InDesign桌面应用程序中的Experience Manager访问资源。 您可以从这些桌面应用程序中直接从Experience Manager Asset Link用户界面将当前打开的文档上传到Adobe。
+* Adobe Asset Link 可在 Adobe Photoshop、Adobe Illustrator 和 Adobe InDesign 桌面应用程序中访问 Experience Manager 中的资产。您可以直接通过这些桌面应用程序内的 Adobe Asset Link 用户界面，将当前打开的文档上传至 Experience Manager。
 
-* Experience Manager桌面应用程序可简化在桌面上使用资产的过程，而与资产的文件类型或处理这些资产的本机应用程序无关。 从本地文件系统上传嵌套文件夹层次结构中的文件很有用，因为浏览器上传仅支持上传平面文件列表。
+* Experience Manager 桌面应用可简化在桌面端处理资产的流程，无论资产的文件类型或其原生应用程序为何，均可轻松操作。该应用程序适用于从本地文件系统上传包含嵌套文件夹结构的文件，因为浏览器上传仅支持上传扁平的文件列表。
 
-使用这些链接可访问有关这些资产摄取工具的详细文档：
+请通过以下链接访问这些资产摄取工具的详细文档：
 
 <table>
 <td>
@@ -51,22 +51,22 @@ Adobe的数字资产管理的一些主要功能包括：
       </a>
    </div>
    <p>
-      <em>了解如何直接从数据源导入大量资源</em>
+      <em>了解如何直接从数据源导入大量资产</em>
    </p>
 </td>
 
 
 <td>
    <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/using">
-   <img alt="使用AEM桌面应用程序" src="./assets/desktop-app-upload.jpeg" />
+   <img alt="使用 AEM 桌面应用程序" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/using">
-      <strong>使用AEM桌面应用程序</strong>
+      <strong>使用 AEM 桌面应用程序</strong>
       </a>
    </div>
    <p>
-      <em>了解如何使用AEM桌面应用程序从本地文件系统上传嵌套文件夹层次结构中的文件。</em>
+      <em>了解如何使用 AEM 桌面应用程序，从本地文件系统上传包含嵌套文件夹结构的文件。</em>
    </p>
 </td>
 <td>
@@ -75,74 +75,74 @@ Adobe的数字资产管理的一些主要功能包括：
    </a>
    <div>
       <a href="https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html">
-      <strong>使用Adobe Asset Link</strong>
+      <strong>使用 Adobe Asset Link</strong>
       </a>
    </div>
    <p>
-      <em>了解如何使用Creative Cloud应用程序将资源上传到Experience Manager。</em>
+      <em>了解如何通过 Creative Cloud 应用程序将资产上传至 Experience Manager。</em>
    </p>
 </td>
 </table>
 
->[!TAB AI支持的功能]
+>[!TAB AI 驱动的功能]
 
-**智能标记**：智能标记使用Adobe Sensei的人工智能框架根据您的标记结构和业务分类培训其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。 默认情况下，AEM会自动将智能标记应用于上传的资源。
+**智能标记**：智能标记借助 Adobe Sensei 的人工智能框架，基于您的标记结构和业务分类法训练图像识别算法。随后，该内容智能可用于为另一组资产自动应用相关标记。AEM 默认会自动为上传的资产应用智能标记。
 
-**基于颜色的智能标记和搜索**： AEM Assets使用Adobe Sensei AI功能区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用。 这些标记可根据图像颜色组合来增强搜索体验。
+**智能基于颜色的标记与搜索**：AEM Assets 利用 Adobe Sensei 的 AI 功能识别图像中的颜色，并在摄取时自动将这些颜色作为标记应用。这些标记可基于图像的颜色构成，提供更优的搜索体验。
 
-**AI生成的元数据**： AEM Assets使用AI自动生成元数据，包括标题、描述和关键字。 这些由 AI 生成的字段提高了元数据的准确性，使资产更易于搜索、分类和推荐。这种方法不仅通过消除手动标记来提高效率，而且确保了大量数字内容之间的一致性和可扩展性。
+**AI 生成的元数据**：AEM Assets 利用 AI 自动生成包括标题、描述和关键词在内的元数据信息。这些由 AI 生成的字段提高了元数据的准确性，使资产更易于搜索、分类和推荐。这种方法不仅通过消除手动标记来提高效率，而且确保了大量数字内容之间的一致性和可扩展性。
 
-**AI支持的资源批量重命名**： [Assets视图允许您使用人工智能](/help/assets/bulk-rename-assets-view.md)同时重命名多个资源。 您可以同时选择多个文件并将它们重命名在一起。 一些示例会话重命名提示包括&#x200B;*将所有文件更改为“my-file”并附加递增数字*&#x200B;和&#x200B;*为文件添加001、002等前缀。 并将它翻译成英文*。
+**AI 驱动的资产批量重命名**：[通过“资产视图”可借助人工智能一次性重命名多个资产](/help/assets/bulk-rename-assets-view.md)。您可以一次选择多个文件，并统一进行重命名。一些示例对话式重命名提示包括：*将所有文件更名为“my-file”并追加递增编号* 和 *为文件添加 001、002 等前缀并翻译为英文*。
 
 <table>
 <td>
    <a href="/help/assets/smart-tags.md">
-   <img alt="AEM Assets中的智能标记" src="./assets/smart-tags-ai.jpeg" />
+   <img alt="AEM Assets 中的智能标记" src="./assets/smart-tags-ai.jpeg" />
    </a>
    <div>
       <a href="/help/assets/smart-tags.md">
-      <strong>将AI智能标记添加到资源</strong>
+      <strong>为资产添加 AI 智能标记</strong>
       </a>
    </div>
    <p>
-      <em>了解如何将智能标记自动应用于上传的资产。</em>
+      <em>了解如何为上传的资产自动应用智能标记。</em>
    </p>
 </td>
 
 
 <td>
    <a href="/help/assets/color-tag-images.md">
-   <img alt="添加基于颜色的智能标记" src="./assets/color-tags.jpg" />
+   <img alt="添加智能基于颜色的标记" src="./assets/color-tags.jpg" />
    </a>
    <div>
       <a href="/help/assets/manage-notifications-assets-view.md">
-      <strong>添加基于颜色的智能标记</strong>
+      <strong>添加智能基于颜色的标记</strong>
       </a>
    </div>
    <p>
-      <em>了解如何在摄取时自动应用基于颜色的标记。</em>
+      <em>了解如何在导入过程中自动应用基于颜色的标记。</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/metadata-assets-view.md">
-   <img alt="AI生成的元数据" src="./assets/ai-generated-metadata-landing.jpg" />
+   <img alt="AI 生成的元数据" src="./assets/ai-generated-metadata-landing.jpg" />
    </a>
    <div>
       <a href="/help/assets/metadata-assets-view.md">
-      <strong>AI生成的元数据</strong>
+      <strong>AI 生成的元数据</strong>
       </a>
    </div>
    <p>
-      <em>使用AI生成资源元数据，如标题和描述。</em>
+      <em>使用 AI 自动生成资产元数据，如标题和描述。</em>
    </p>
 </td>
 </table>
 
-**上下文搜索**： AEM Assets允许您通过定义文本提示来搜索存储库中可用的资源。 Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“筛选器”窗格查看和修改自动筛选器，以进一步缩小搜索结果。 一些对话式文本提示示例包括&#x200B;*高度至少为200px、宽度至少为100px的图像（带沙滩和晴天）*&#x200B;和&#x200B;*我需要高度为1500和2500像素的蓝天图像（在上个月创建，未过期且已批准）*。
+**上下文搜索**：AEM Assets 支持通过定义文本提示词，在存储库中搜索可用资产。Experience Manager Assets 会自动将这些文本提示转换为搜索过滤条件，并显示相应的搜索结果。您可以通过“过滤器面板”查看并修改自动生成的过滤条件，以进一步缩小搜索结果范围。一些对话式文本提示示例如下：*高度至少为 200px、宽度至少为 100px，包含海滩和晴朗天空的图像*，以及&#x200B;*我需要高度在 1500 到 2500 像素之间的蓝天图像，需为过去一个月内创建、未过期且已获批准的图像*。
 
-**在AEM中使用Adobe Firefly生成资源**：如果您的搜索查询未返回任何结果，AEM Assets允许您实时使用Adobe Firefly生成资源。 然后，您还可以通过AEM Assets在AEM Assets用户界面中将生成的图像上传到AEM Assets存储库。
+**在 AEM 中通过 Adobe Firefly 生成资产**：如果搜索查询未返回任何结果，AEM Assets 可实时调用 Adobe Firefly 生成所需资产。AEM Assets 还支持您直接在其用户界面中，将生成的图像上传至 AEM Assets 存储库。
 
-**与Adobe Express集成**： AEM Assets与Adobe Express本机集成，这使您能够从Adobe Express用户界面中直接访问AEM Assets中存储的资源。 您还可以使用Express中的Adobe Firefly Artifical Intelligence通过简单的文本提示生成图像，并将其放置在Express画布上。 然后，您可以将新内容或编辑的内容保存到AEM Assets存储库中。
+**与 Adobe Express 集成**：AEM Assets 原生集成 Adobe Express，使您能够在 Adobe Express 用户界面中直接访问存储于 AEM Assets 中的资产。您还可以在 Adobe Express 中使用 Adobe Firefly 人工智能，通过简单的文本提示生成图像，并将其添加到 Express 画布中。随后，您可以将新建或编辑的内容保存至 AEM Assets 存储库中。
 
 <table>
 <td>
@@ -155,22 +155,22 @@ Adobe的数字资产管理的一些主要功能包括：
       </a>
    </div>
    <p>
-      <em>了解如何使用简单的文本提示搜索资源。</em>
+      <em>了解如何使用简单的文本提示词搜索资产。</em>
    </p>
 </td>
 
 
 <td>
    <a href="/help/assets/search-assets-view.md#search-firefly">
-   <img alt="使用Adobe Firefly生成资源" src="./assets/adobe-firefly.jpg" />
+   <img alt="使用 Adobe Firefly 生成资产" src="./assets/adobe-firefly.jpg" />
    </a>
    <div>
       <a href="/help/assets/search-assets-view.md#search-firefly">
-      <strong>使用Adobe Firefly生成资源</strong>
+      <strong>使用 Adobe Firefly 生成资产</strong>
       </a>
    </div>
    <p>
-      <em>使用Adobe Firefly实时生成资源。</em>
+      <em>使用 Adobe Firefly 实时生成资产。</em>
    </p>
 </td>
 <td>
@@ -179,56 +179,56 @@ Adobe的数字资产管理的一些主要功能包括：
    </a>
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
-      <strong>与Adobe Express集成</strong>
+      <strong>与 Adobe Express 集成</strong>
       </a>
    </div>
    <p>
-      <em>在AEM Assets用户界面中使用Adobe Express AI功能。</em>
+      <em>在 AEM Assets 用户界面中使用 Adobe Express 的 AI 功能。</em>
    </p>
 </td>
 </table>
 
-**智能成像**：智能成像根据客户的浏览器功能自动优化图像的格式和文件大小，从而提供更好的图像资产投放性能。 它可与您现有的图像预设配合使用，并在投放时使用智能。 这种智能根据浏览器和网络连接速度进一步减小图像文件大小。
+**智能图像处理**：智能图像处理可根据用户浏览器的能力，自动优化图像格式和文件大小，从而显著提升图像资产的交付性能。该功能可与您现有的图像预设配合使用，并在交付时智能优化图像内容。该智能机制还会根据浏览器类型和网络连接速度，进一步压缩图像文件大小。
 
-**智能裁切**：一种Adobe Sensei AI功能，可自动检测任何图像或视频中的焦点，并裁切以对其进行维护。 它可捕获目标兴趣点，而不管屏幕大小如何，从而消除繁琐的手动任务，并提供在任何设备或屏幕上看起来都良好的高质量、快速加载的图像和视频。
+**智能裁剪**：借助 Adobe Sensei 的 AI 能力，自动识别图像或视频中的焦点，并在裁剪时保持该焦点不变。该功能可在不同屏幕尺寸下准确保留图像或视频中的目标焦点，从而省去繁琐的手动操作，提供高质量、加载迅速的图像和视频内容，确保在任何设备或屏幕上均呈现良好效果。
 
-**AI生成的视频字幕**： Adobe Dynamic Media中的AI生成的视频字幕使用人工智能自动为视频内容生成字幕。 此功能旨在通过提供准确的字幕来提高视频的可观看性，并增强用户体验。字幕从原始音频生成，任何附加的音频曲目或额外的字幕在视频属性页面的`Captions and Audio`选项卡中提供。 支持超过 60 种语言，可以在发布视频之前查看和预览字幕。
+**AI 生成的视频字幕**：Adobe Dynamic Media 利用人工智能自动为视频内容生成字幕。此功能旨在通过提供精准字幕，提高内容的可访问性并优化用户体验。字幕可根据原始音频生成，也可以通过视频属性页面中的 `Captions and Audio` 选项卡添加额外音轨或字幕内容。支持 60 多种语言，字幕可在发布视频前进行审核与预览。
 <table>
 <td>
    <a href="/help/assets/dynamic-media/imaging-faq.md">
-   <img alt="智能成像" src="./assets/smart-imaging.jpg" />
+   <img alt="智能图像处理" src="./assets/smart-imaging.jpg" />
    </a>
    <div>
       <a href="/help/assets/dynamic-media/imaging-faq.md">
-      <strong>智能成像</strong>
+      <strong>智能图像处理</strong>
       </a>
    </div>
    <p>
-      <em>根据用户的浏览器功能和网络速度优化图像的格式和文件大小。</em>
+      <em>根据用户的浏览器能力和网络速度优化图像格式和文件大小。</em>
    </p>
 </td>
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html">
+   <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html">
    <img alt="智能裁切" src="./assets/smart-cropping.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html">
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html">
       <strong>智能裁切</strong>
       </a>
    </div>
    <p>
-      <em>使用AI自动检测任何图像或视频中的焦点，并裁切以保持该焦点</em>
+      <em>使用 AI 自动识别图像或视频中的焦点，并在裁剪时保留该焦点</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/dynamic-media/video.md">
-   <img alt="人工智能生成的视频字幕" src="./assets/videos-with-captions.jpg" />
+   <img alt=" AI 生成的视频字幕" src="./assets/videos-with-captions.jpg" />
    </a>
    <div>
       <a href="/help/assets/dynamic-media/video.md">
-      <strong>AI生成的视频字幕</strong>
+      <strong>AI 生成的视频字幕</strong>
       </a>
    </div>
    <p>
@@ -237,31 +237,31 @@ Adobe的数字资产管理的一些主要功能包括：
 </td>
 </table>
 
->[!TAB 资源发现]
+>[!TAB 资产发现]
 
-## 资源发现 {#asset-discovery}
+## 资产发现 {#asset-discovery}
 
-在将您的资源导入AEM Assets后，要从如此庞大的收藏集中快速找到合适的资源是一项挑战。
+在将资产导入 AEM Assets 后，如何从如此庞大的资产库中快速找到所需资产是一大挑战。
 
-AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生成的标记（智能标记）、自定义元数据，以及可提升您搜索体验的功能。
+AEM Assets 提供多项功能，助您迅速定位所需资产，包括 AI 自动生成的标记（智能标记）、自定义元数据，以及优化搜索体验的相关能力。
 
-**元数据管理**：元数据是开始资源管理历程时最重要的方面。 将资源分配给用户后，管理元数据将完全脱离管理员的控制。 有效的资产元数据可确保更好的搜索，这是任何DAM工具的最终目标。
+**元数据管理**：在开启资产管理工作时，元数据是最关键的组成部分。一旦资产分发给用户，元数据的管理就会完全脱离管理员的掌控。高质量的资产元数据能够显著提升搜索效果，而这正是任何数字资产管理（DAM）工具的最终目标。
 
 
-**元数据Forms**： Assets as a Cloud Service默认提供了许多标准元数据字段。 如果您有其他元数据需求，并且需要更多元数据字段来添加特定于业务的元数据。 通过元数据表单，可将自定义元数据字段添加到资产的“详细信息”页面。业务特有的元数据改善对其资产的治理和发现。您可以从头开始创建表单，也可以重新利用现有表单。
+**元数据表单**：Assets as a Cloud Service 默认提供众多标准元数据字段。如果您有额外的元数据需求，并希望添加更多字段以补充与业务相关的元数据信息。元数据表单允许企业在资产的“详细信息”页面中添加自定义元数据字段。业务特有的元数据改善对其资产的治理和发现。您可以从头开始创建表单，也可以重新利用现有表单。
 
 <table>
 <td>
    <a href="/help/assets/metadata-assets-view.md">
-   <img alt="管理元数据Assets视图" src="./assets/manage-metadata-assets-view.jpeg" />
+   <img alt="管理元数据资产视图" src="./assets/manage-metadata-assets-view.jpeg" />
    </a>
    <div>
       <a href="/help/assets/metadata-assets-view.md">
-      <strong>在Assets视图中管理元数据</strong>
+      <strong>在资产视图中管理元数据</strong>
       </a>
    </div>
    <p>
-      <em>了解如何使用Assets视图管理元数据和元数据表单。</em>
+      <em>了解如何使用资产视图管理元数据及元数据表单。</em>
    </p>
 </td>
 
@@ -276,7 +276,7 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
       </a>
    </div>
    <p>
-      <em>了解如何将资源迁移到AEM之前和之后管理元数据。</em>
+      <em>了解在将资产迁移至 AEM 之前和之后如何进行元数据管理。</em>
    </p>
 </td>
 <td>
@@ -289,44 +289,44 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
       </a>
    </div>
    <p>
-      <em>了解如何使用管理员视图管理元数据和元数据表单。</em>
+      <em>了解如何使用管理员视图管理元数据及元数据表单。</em>
    </p>
 </td>
 </table>
 
-**智能标记**：智能标记使用Adobe Sensei的人工智能框架根据您的标记结构和业务分类培训其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。 默认情况下，AEM会自动将智能标记应用于上传的资源。
+**智能标记**：智能标记借助 Adobe Sensei 的人工智能框架，基于您的标记结构和业务分类法训练图像识别算法。随后，该内容智能可用于为另一组资产自动应用相关标记。AEM 默认会自动为上传的资产应用智能标记。
 
-**搜索资源**：准备好正确的元数据后，AEM Assets允许您使用各种运算符、通配符、高级查询和自定义筛选条件进行搜索。
+**搜索资产**：一旦配置了合适的元数据，AEM Assets 便可支持使用多种运算符、通配符、高级查询和自定义筛选器进行搜索。
 
-**上下文搜索**：AEM Assets还提供了上下文搜索功能，该功能允许您通过定义文本提示来搜索存储库中可用的资源。 Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，进一步缩小搜索结果。
+**上下文搜索**：AEM Assets 还提供上下文搜索功能，您可通过输入文本提示词，在资产库中搜索相关资产。Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，进一步缩小搜索结果。
 
 <table>
 <td>
    <a href="/help/assets/smart-tags.md">
-   <img alt="AEM Assets中的智能标记" src="./assets/smart-tags-ai.jpeg" />
+   <img alt="AEM Assets 中的智能标记" src="./assets/smart-tags-ai.jpeg" />
    </a>
    <div>
       <a href="/help/assets/smart-tags.md">
-      <strong>将智能标记添加到资源</strong>
+      <strong>为资产添加 AI 智能标记</strong>
       </a>
    </div>
    <p>
-      <em>了解如何将智能标记自动应用于上传的资产。</em>
+      <em>了解如何为上传的资产自动应用智能标记。</em>
    </p>
 </td>
 
 
 <td>
    <a href="/help/assets/search-assets-view.md">
-   <img alt="搜索Assets视图" src="./assets/search-assets-view-landing.jpeg" />
+   <img alt="搜索资产视图" src="./assets/search-assets-view-landing.jpeg" />
    </a>
    <div>
       <a href="/help/assets/search-assets-view.md">
-      <strong>在Assets视图中搜索资源</strong>
+      <strong>在资产视图中搜索资产</strong>
       </a>
    </div>
    <p>
-      <em>了解如何在Assets视图中有效地使用上下文搜索和其他搜索功能。</em>
+      <em>了解如何在资产视图中高效使用上下文搜索及其他搜索功能。</em>
    </p>
 </td>
 <td>
@@ -339,24 +339,24 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
       </a>
    </div>
    <p>
-      <em>描述各种方案，以帮助AEM用户执行从基础到高级的搜索。</em>
+      <em>介绍多种使用场景，帮助 AEM 用户执行从基础到高级级别的搜索操作。</em>
    </p>
 </td>
 </table>
 
->[!TAB 资产管理]
+>[!TAB 资产治理]
 
 ## 资产管理和治理 {#asset-management-governance}
 
-在将资源上传到AEM Assets并设置其元数据以提高可发现性后，您可以使用Assets视图的用户友好界面执行各种数字资源管理任务。
+将资产上传至 AEM Assets 并设置好元数据以提升可发现性后，您即可通过资产视图的用户友好界面，执行多项数字资产管理任务。
 
-**资产管理任务**：一些基本任务包括搜索、下载、移动、复制、重命名、删除、更新和编辑操作。
+**资产管理任务**：基本任务包括搜索、下载、移动、复制、重命名、删除、更新和编辑等操作。
 
-您还可以维护资产版本、设置资产状态和设置资产到期。
+您还可以管理资产版本、设置资产状态以及配置资产过期时间。
 
-**我的Workspace**： Assets视图还包括可自定义的工作区，该工作区提供了小部件，以便您轻松访问Assets用户界面的关键区域以及与您最相关的信息。 此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。
+**我的工作区**：资产视图还包含一个可自定义的工作区，提供各类小组件，便于访问 Assets 用户界面的关键区域及与您最相关的信息。此页面作为一站式解决方案，可概览您的工作项，并快速访问关键工作流。
 
-**Content Credentials**： AEM Assets支持的另一个强大功能是Content Credentials。 各品牌比以往任何时候都更关注内容透明度、人工智能披露，以及防止资产被篡改。 Adobe的Content Authenticity Initiative (CAI)构建了与Coalition for Content Provenance and Authenticity (C2PA)技术标准兼容的工具。 Content Credentials是一种新型加密的、易于篡改的元数据，可帮助查看者了解内容的谱系并确保品牌资产的完整性。 它们可以包含范围广泛的来源数据，可将insight纳入数字资源的历史记录中。
+**Content Credentials**：AEM Assets 支持的另一项强大功能是 Content Credentials。品牌对内容透明度、AI 来源披露以及防止资产被篡改的关注程度空前提高。Adobe 发起的 Content Authenticity Initiative（简称 CAI）致力于构建符合内容出处与真实性联盟（Coalition for Content Provenance and Authenticity，C2PA）技术标准的工具。Content Credentials 是一种全新的加密且可防篡改的元数据，有助于帮助查看者了解内容的来源与演变，并保障品牌资产的完整性。Content Credentials 可包含多种溯源数据，深入呈现数字资产的历史信息。
 
 <table>
 <td>
@@ -365,26 +365,26 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
    </a>
    <div>
       <a href="/help/assets/manage-organize-assets-view.md">
-      <strong>资源管理任务</strong>
+      <strong>资产管理任务</strong>
       </a>
    </div>
    <p>
-      <em>了解如何执行一些基本和高级资源管理任务。</em>
+      <em>了解如何执行基础及高级的资产管理任务。</em>
    </p>
 </td>
 
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
-   <img alt="Mt Workspace" src="./assets/my-workspace.jpeg" />
+   <img alt="我的工作区" src="./assets/my-workspace.jpeg" />
    </a>
    <div>
       <a href="/help/assets/my-workspace-assets-view.md">
-      <strong>我的Workspace</strong>
+      <strong>我的工作区</strong>
       </a>
    </div>
    <p>
-      <em>了解如何使用My Workspace快速访问Assets用户界面的关键区域。</em>
+      <em>了解如何使用“我的工作区”，快速访问 Assets 用户界面的关键区域。</em>
    </p>
 </td>
 <td>
@@ -397,16 +397,16 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
       </a>
    </div>
    <p>
-      <em>使用Content Credentials深入了解数字资源的历史记录。</em>
+      <em>通过 Content Credentials 深入了解数字资产的历史信息。</em>
    </p>
 </td>
 </table>
 
-**收藏集**：通过AEM Assets，还可以将资源整理为收藏集。 收藏集是Adobe Experience Manager Assets视图中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资源。收藏集与文件夹的不同之处是可包含来自不同位置的资源。您可以与一个用户共享多个收藏集。每个收藏集都包含对资源的引用。收藏集中会保持资源的引用完整性。
+**收藏集**：AEM Assets 还支持将资产组织到收藏集中进行管理。收藏集是指在 Adobe Experience Manager Assets 视图中，由资产、文件夹或其他集合组成的一组内容。使用收藏集可在用户之间共享资产。收藏集与文件夹的不同之处是可包含来自不同位置的资产。您可以与一个用户共享多个收藏集。每个收藏集都包含对资产的引用。收藏集中会保持资产的引用完整性。
 
-**通知**： Assets查看通知允许您监视对存储库中可用的资源、文件夹或收藏集执行的操作。 需要选择并订阅将向您发送其通知的内容。还可配置向您发送其通知的类别。
+**通知**：资产视图中的通知功能可帮助您监控存储库中对资产、文件夹或收藏集执行的各类操作。需要选择并订阅将向您发送其通知的内容。还可配置向您发送其通知的类别。
 
-**检测重复资源**： AEM Assets还支持检测重复资源。 如果DAM用户上传一个或多个已存在于存储库中的资源，Experience Manager会检测重复并通知用户。
+**检测重复资产**：AEM Assets 还支持检测重复资产。如果 DAM 用户上传的一个或多个资产已存在于存储库中，Experience Manager 将自动检测到重复项并通知用户。
 
 
 
@@ -421,7 +421,7 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
       </a>
    </div>
    <p>
-      <em>了解如何将资源组织为收藏集，以便有效共享资源。</em>
+      <em>了解如何将资产整理为收藏集，以实现高效的资产共享。</em>
    </p>
 </td>
 
@@ -436,7 +436,7 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
       </a>
    </div>
    <p>
-      <em>了解如何设置通知以监视对资源、文件夹或收藏集执行的操作。</em>
+      <em>了解如何设置通知，以监控对资产、文件夹或收藏集执行的各项操作。</em>
    </p>
 </td>
 <td>
@@ -445,40 +445,40 @@ AEM Assets提供的功能可帮助您快速访问正确的资源，例如AI生�
    </a>
    <div>
       <a href="/help/assets/detect-duplicate-assets.md">
-      <strong>检测重复的资源</strong>
+      <strong>检测重复的资产</strong>
       </a>
    </div>
    <p>
-      <em>检测上传到AEM Assets的重复资源并通知用户。</em>
+      <em>检测上传至 AEM Assets 的重复资产并向用户发出通知。</em>
    </p>
 </td>
 </table>
 
 >[!TAB 集成]
 
-## 与Adobe和非Adobe应用程序集成 {#integration-adobe-non-adode-apps}
+## 与 Adobe 及非 Adobe 应用程序的集成 {#integration-adobe-non-adode-apps}
 
-AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可用集成的概要视图：
+AEM Assets 可与多种 Adobe 及非 Adobe 应用程序实现无缝集成。以下是可用集成方式的概览：
 
-+++**与Adobe和非Adobe应用程序的集成**
++++**与 Adobe 及非 Adobe 应用程序的集成**
 
-* **具有OpenAPI功能的Dynamic Media**： [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)提供了一组[搜索](/help/assets/search-assets-api.md)和[投放](/help/assets/deliver-assets-apis.md) API。 它允许开发人员轻松地将资产交付与其应用程序集成。 这些应用程序包括 Adobe 以及第三方应用程序。它提供了一个微型前端资产选择器用户界面，用于搜索和选择批准的资产。 该选择器可以轻松地与基于 JavaScript 框架（如 React JS、Angular JS 和 Vanilla JS）的任何应用程序集成。
+* **具有 OpenAPI 功能的 Dynamic Media**： [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) 提供一整套完整的[搜索](/help/assets/search-assets-api.md)和[交付](/help/assets/deliver-assets-apis.md) API。它可帮助开发人员轻松将资产交付功能集成到其应用程序中。这些应用程序既包括 Adobe 应用，也包括第三方应用。它提供了微前端资产选择器用户界面，用于搜索并选择已审核的资产。该选择器可轻松集成到基于 JavaScript 框架（如 React JS、Angular JS 和 Vanilla JS）的任何应用程序中。
 
-* **微前端资源选择器**：微前端资源选择器提供了一个用户界面，该界面可与Experience Manager Assets存储库轻松集成，因此您可以浏览或搜索存储库中可用的数字资源，并在应用程序创作体验中使用这些资源。
-您可以将资源选择器与Adobe或非Adobe应用程序集成。
+* **微前端资产选择器**：微前端资产选择器提供一个用户界面，可轻松集成至 Experience Manager Assets 存储库，让您能够浏览或搜索存储库中的数字资产，并在应用程序创作体验中加以使用。
+您可以将资产选择器集成至 Adobe 应用程序或非 Adobe 应用程序中。
 
 <table>
 <td>
    <a href="/help/assets/dynamic-media-open-apis-overview.md">
-   <img alt="具有OpenAPI功能的Dynamic Media概述" src="./assets/dm-openapi-uses.jpeg" />
+   <img alt="具有 OpenAPI 功能的 Dynamic Media 概述" src="./assets/dm-openapi-uses.jpeg" />
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>具有OpenAPI功能的Dynamic Media概述</strong>
+      <strong>具有 OpenAPI 功能的 Dynamic Media 概述</strong>
       </a>
    </div>
    <p>
-      <em>了解主要优势以及如何启用它。</em>
+      <em>了解其主要优势及启用方法。</em>
    </p>
 </td>
 
@@ -493,37 +493,37 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
       </a>
    </div>
    <p>
-      <em>配置角色以限制对已批准资源的访问。</em>
+      <em> 配置角色以限制对已审核资产的访问权限。</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/overview-asset-selector.md">
-   <img alt="资源选择器" src="./assets/integration-asset-selector.jpeg" />
+   <img alt="资产选择器" src="./assets/integration-asset-selector.jpeg" />
    </a>
    <div>
       <a href="/help/assets/overview-asset-selector.md">
-      <strong>微型前端资产选择器</strong>
+      <strong>微前端资产选择器</strong>
       </a>
    </div>
    <p>
-      <em>了解如何将微型前端资产选择器与Adobe或非Adobe应用程序集成。</em>
+      <em>了解如何将微前端资产选择器集成至 Adobe 或非 Adobe 应用程序中。</em>
    </p>
 </td>
 </table>
 
 +++
 
-+++**与Adobe应用程序的本机集成**
++++**与 Adobe 应用程序的原生集成**
 
-* **与Adobe Workfront集成**： [!DNL Adobe Workfront]是一个工作管理应用程序，可帮助您在一个地方管理整个工作生命周期。 [!DNL Workfront]和[!DNL Adobe Experience Manager Assets]之间的集成使组织能够通过将工作和数字资产管理内在地连接起来，提高内容速度和上市时间。 在Workfront中管理其工作的情况下，用户有权访问所需的文档和图像。
+* **与 Adobe Workfront 集成**：[!DNL Adobe Workfront] 是一款工作管理应用程序，帮助您在一个平台中统一管理工作全流程。[!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 的集成，通过将工作管理与数字资产管理深度融合，帮助组织提升内容产出效率并加快产品上市速度。在 Workfront 的工作管理环境中，用户可以访问所需的文档和图像。
 
-  Adobe选件与[集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 本机](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=zh-Hans)。
+  Adobe 提供原生方式[将 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 集成](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html)。
 
-* **与Figma集成**： AEM Assets与Figma原生集成，这允许设计人员从Figma用户界面中直接访问AEM Assets中存储的资源。 可将在 AEM Assets 中管理的内容放入 Figma 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。要访问 Figma 社区页面上提供的 AEM Assets 连接器，请单击[此处](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
+* **与 Figma 集成**：AEM Assets 可与 Figma 原生集成，使设计人员能够直接在 Figma 用户界面中访问存储于 AEM Assets 的资产。可将在 AEM Assets 中管理的内容放入 Figma 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。要访问 Figma 社区页面上提供的 AEM Assets 连接器，请单击[此处](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
 
-* **与Adobe Express的本机集成**： AEM Assets与Adobe Express本机集成，这使您能够从Adobe Express用户界面中直接访问AEM Assets中存储的资源。 可将在 AEM Assets 中管理的内容放入 Express 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。
+* **与 Adobe Express 的原生集成**：AEM Assets 可与 Adobe Express 原生集成，使您能够直接在 Adobe Express 用户界面中访问存储于 AEM Assets 的资产。您可以将 AEM Assets 中管理的内容放入 Express 画布中，并将新建或编辑的内容保存回 AEM Assets 存储库。
 
-* **将AEM Assets连接到Creative Cloud**： Experience Manager Assets能够连接到已为其他IMS组织设置的Creative Cloud权利，以便轻松地使用AEM Assets中的最新Creative Cloud集成，包括Express和Creative Cloud Libraries。 如果您的 Creative Cloud 产品和 AEM Assets 预配给单独的 IMS 组织，则您可连接到其他 Creative Cloud 组织，以便可在这两个解决方案之间执行集成的工作流程。
+* **将 AEM Assets 连接至 Creative Cloud**：Experience Manager Assets 支持连接至其他 IMS 组织中配置的 Creative Cloud 使用权限，从而轻松在 AEM Assets 中使用最新的 Creative Cloud 集成功能，包括 Express 和 Creative Cloud Libraries。如果您的 Creative Cloud 产品与 AEM Assets 分别配置在不同的 IMS 组织中，您可以连接至其他 Creative Cloud 组织，从而在这两个解决方案之间执行集成工作流。
 
 <table>
 <td>
@@ -532,11 +532,11 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
    </a>
    <div>
       <a href="/help/assets/workfront-integrations.md">
-      <strong>与Adobe Workfront集成</strong>
+      <strong>与 Adobe Workfront 集成</strong>
       </a>
    </div>
    <p>
-      <em>与Adobe Workfront集成以在一个位置管理整个工作生命周期。</em>
+      <em>集成 Adobe Workfront，实现工作全生命周期的一体化管理。</em>
    </p>
 </td>
 <td>
@@ -545,24 +545,24 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
    </a>
    <div>
       <a href="/help/assets/manage-collections-assets-view.md">
-      <strong>与Figma集成</strong>
+      <strong>与 Figma 集成</strong>
       </a>
    </div>
    <p>
-      <em>从Figma用户界面中访问AEM Assets中存储的资源</em>
+      <em>在 Figma 用户界面中访问存储于 AEM Assets 的资产</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/native-integration-adobe-express.md">
-   <img alt="与Adobe Express的本机集成" src="./assets/integration-adobe-express.jpeg" />
+   <img alt="与 Adobe Express 的原生集成" src="./assets/integration-adobe-express.jpeg" />
    </a>
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
-      <strong>与Adobe Express的本机集成</strong>
+      <strong>与 Adobe Express 的原生集成</strong>
       </a>
    </div>
    <p>
-      <em>将AEM Assets中可用的资源放在Express画布上，并将更新的资源保存到AEM。</em>
+      <em>将 AEM Assets 中的资产置入 Express 画布，并将更新后的资产保存至 AEM。</em>
    </p>
 </td>
 
@@ -570,16 +570,16 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
 </table>
 
 
-* **与Adobe Journey Optimizer集成**：使用Adobe Experience Manager Assets将营销和创意工作流程结合使用。 与Adobe Journey Optimizer本机集成，访问Assets as a Cloud Service以存储、管理、发现和分发数字资源。 它提供了单一集中式资源存储库，您可以使用它填充消息。
+* **与 Adobe Journey Optimizer 集成**：通过 Adobe Experience Manager Assets 将营销与创意工作流融合在一起。通过与 Adobe Journey Optimizer 的原生集成，您可访问 Assets as a Cloud Service 来存储、管理、查找及分发数字资产。它提供一个统一的集中式存储库，便于您在创建消息内容时直接调用所需资产。
 
-* **与Commerce的集成**： Adobe Experience Manager (AEM) Assets与Commerce的集成将AEM as a Digital Asset Management (DAM)系统的强大功能与Adobe Commerce相结合，以增强电子商务体验。 要提供这些功能，需要将Commerce项目连接到AEM强大的资产管理环境，以便提供一种无缝、可扩展且高效的方式来跨商业商店管理和交付资产。
-* **将AEM Assets与Edge Delivery Services的基于文档的创作流集成**：当[!DNL AEM Assets]与您的基于文档的创作工具（如[!DNL Microsoft Word]或[!DNL Google Docs]）集成时，它在您的创作工具中提供资源选择器。 使用此资产选择器访问[!DNL AEM Assets]，并将批准的资产插入您的内容。
-如果您已经拥有[!DNL Edge Delivery Services]网站，请参阅[[!DNL AEM Assets] 插件](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)文档，以了解如何将[!DNL AEM Assets]与您现有的[!DNL AEM]项目集成。
+* **与 Commerce 集成**：Adobe Experience Manager (AEM) Assets 的 Commerce 集成功能将 AEM 强大的数字资产管理（DAM）能力与 Adobe Commerce 相结合，全面提升电商体验。通过将 Commerce 项目连接至 AEM 强大的资产管理环境，这些能力得以实现，从而为管理和交付电商前端资产提供无缝、可扩展且高效的解决方案。
+* **将 AEM Assets 与用于 Edge Delivery Services 的基于文档的创作流程集成**：当 [!DNL AEM Assets] 与您的基于文档的创作工具（如 [!DNL Microsoft Word] 或 [!DNL Google Docs]）集成时，将在创作工具中提供一个资产选择器。使用此资产选择器可访问 [!DNL AEM Assets]，并将已批准的资产插入到您的内容中。
+如果您已有一个 [!DNL Edge Delivery Services] 网站，请参阅 [[!DNL AEM Assets] 插件](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) 文档，了解如何将 [!DNL AEM Assets] 集成到您现有的 [!DNL AEM] 项目中。
 
-* **将[!DNL AEM Assets]与[!DNL Universal Editor]的基于[!DNL Edge Delivery Services]**&#x200B;的创作流集成：将[!DNL Universal Editor]设置为与[!DNL AEM Assets]集成。 此集成允许您使用[!DNL Dynamic Media with OpenAPI capabilities]交付资产。
+* **将 [!DNL AEM Assets] 集成至基于 [!DNL Universal Editor] 的[!DNL Edge Delivery Services]** 创作流程中：配置 [!DNL Universal Editor] 以实现与 [!DNL AEM Assets] 的集成。通过此集成，您可以借助具备 OpenAPI 功能的 [!DNL Dynamic Media with OpenAPI capabilities] 交付资产。
 
-   * 查看[站点 [!DNL Edge Delivery] 中的](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)配置，了解如何在[!DNL Universal Editor]中添加自定义资产选取器函数。 自定义资产选取器允许您将资产直接插入到[!DNL Universal Editor]内容中。
-   * 请参阅[扩展概述](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)，了解如何在[!DNL AEM Assets]中创作时访问[!DNL Universal Editor]并插入资产。
+   * 请参阅[在  [!DNL Edge Delivery]  站点](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)中进行配置，了解如何在 [!DNL Universal Editor] 中添加自定义资产选择器功能。自定义资产选择器可让您将资产直接插入至 [!DNL Universal Editor] 内容中。
+   * 请参阅[扩展概述](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)，了解如何在 [!DNL Universal Editor] 创作内容时访问 [!DNL AEM Assets] 并插入所需资产。
 
 <table>
 <td>
@@ -588,37 +588,37 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/assets">
-      <strong>与Adobe Journey Optimizer集成</strong>
+      <strong>与 Adobe Journey Optimizer 集成</strong>
       </a>
    </div>
    <p>
-      <em>使用与AJO的集成，将营销和创意工作流程结合使用</em>
+      <em>通过与 AJO 的集成，将营销与创意工作流程无缝融合</em>
    </p>
 </td>
 <td>
    <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
-   <img alt="与Commerce集成" src="./assets/integration-ajo.jpeg" />
+   <img alt="与 Commerce 的集成" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
-      <strong>与Commerce集成</strong>
+      <strong>与 Commerce 的集成</strong>
       </a>
    </div>
    <p>
-      <em>将AEM Assets与Commerce集成以增强电子商务体验。</em>
+      <em>将 AEM Assets 与 Commerce 集成，提升电商体验。</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md">
-   <img alt="将AEM Assets与EDS集成" src="./assets/integrate-ue-assets.jpeg" />
+   <img alt="将 AEM Assets 与 EDS 集成" src="./assets/integrate-ue-assets.jpeg" />
    </a>
    <div>
       <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md">
-      <strong>将AEM Assets与EDS集成</strong>
+      <strong>将 AEM Assets 与 EDS 集成</strong>
       </a>
    </div>
    <p>
-      <em>将AEM Assets与基于文档和通用编辑器的创作流集成。</em>
+      <em>将 AEM Assets 集成至基于文档和 Universal Editor 的创作流程中。</em>
    </p>
 </td>
 </table>
@@ -629,7 +629,7 @@ AEM Assets可与各种Adobe和非Adobe应用程序无缝集成。 以下是可�
 
 ## 资产激活 {#asset-activation}
 
-使用Content Hub到Dynamic Media（包括强大的OpenAPI功能），通过AEM Assets释放数字资源的全部潜力。 AEM Assets提供了一整套解决方案，旨在简化资产转换并优化各种渠道的交付。
+借助 AEM Assets，通过从 Content Hub 到 Dynamic Media 的集成（包括强大的 OpenAPI 功能），充分释放数字资产的全部潜能。AEM Assets 提供一整套全面的解决方案，旨在简化资产转换流程，并优化跨多个渠道的投放效率。
 
 +++**Content Hub**
 
@@ -637,13 +637,13 @@ Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨�
 
 Content Hub 具有以下主要优势：
 
-* **在一个直观的门户中查找并共享所有品牌批准的资源**：AEM Assets作为单一的真实来源，所有批准的资源在Content Hub中以平面层次结构自动提供，以改善搜索体验。
+* **在直观的门户中查找并共享所有品牌批准的资产**：AEM Assets 作为统一可信的数据源，所有经批准的资产将自动以扁平化层级结构呈现在 Content Hub 中，从而提升搜索体验。
 
-* **可配置的用户界面**： Content Hub中最常见的属性（如搜索筛选器）、添加或导入资源时可用的字段、资源属性、品牌推广的横幅内容，这些属性均可配置，管理员可以根据自己的要求轻松配置Content Hub用户界面。
+* **可配置的用户界面**：Content Hub 中最常用的属性（如搜索筛选器、添加或导入资产时可用的字段、资产属性以及品牌横幅内容）均支持配置，管理员可根据需求轻松自定义 Content Hub 的用户界面。
 
-* **让非创意人员能够编辑和混合内容，同时不离开品牌**：通过Content Hub，您可以使用Adobe Express创建新内容(如果您拥有Adobe Express权限)。 您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
+* **使非创意人员在保持品牌一致性的前提下编辑与重混内容**：Content Hub 支持使用 Adobe Express 创建新内容（需具备 Adobe Express 授权）。您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
 
-* **深入了解如何跨团队使用内容**： [!DNL Content Hub]提供了有关资产的宝贵见解，从而解决了营销利益相关者经常遇到的共同难题 — 营销活动、渠道和不同区域中使用的资产使用情况统计数据。 通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
+* **深入了解内容在各团队中的使用情况**：[!DNL Content Hub] 提供有关资产的宝贵洞察，解决营销相关方常见的难题——即资产在营销活动、渠道和不同地区的使用情况统计数据。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
 
 <table>
 <td>
@@ -652,39 +652,39 @@ Content Hub 具有以下主要优势：
    </a>
    <div>
       <a href="/help/assets/product-overview.md">
-      <strong>Content Hub概述</strong>
+      <strong>Content Hub 概述</strong>
       </a>
    </div>
    <p>
-      <em>进一步了解Content Hub、其主要优势以及如何访问它。</em>
+      <em>深入了解 Content Hub 的主要优势及访问方式。</em>
    </p>
 </td>
 
 
 <td>
    <a href="/help/assets/configure-content-hub-ui-options.md">
-   <img alt="配置Content Hub用户界面" src="./assets/content-hub-configuration.jpeg" />
+   <img alt="配置 Content Hub 用户界面" src="./assets/content-hub-configuration.jpeg" />
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-      <strong>配置Content Hub用户界面</strong>
+      <strong>配置 Content Hub 用户界面</strong>
       </a>
    </div>
    <p>
-      <em>了解如何在Content Hub用户界面上配置可用选项。</em>
+      <em>了解如何配置 Content Hub 用户界面中的各项选项。</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/edit-images-content-hub.md">
-   <img alt="使用Adobe Express编辑" src="./assets/content-hub-express.jpeg" />
+   <img alt="使用 Adobe Express 进行编辑" src="./assets/content-hub-express.jpeg" />
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-      <strong>使用Adobe Express编辑</strong>
+      <strong>使用 Adobe Express 进行编辑</strong>
       </a>
    </div>
    <p>
-      <em>了解如何使用Adobe Express在Content Hub中编辑图像。</em>
+      <em>了解如何使用 Adobe Express 在 Content Hub 中编辑图像。</em>
    </p>
 </td>
 </table>
@@ -693,25 +693,25 @@ Content Hub 具有以下主要优势：
 
 +++**Dynamic Media**
 
-Dynamic Media可帮助您按需提供丰富的可视化推销和营销资产。 它还帮助您创建并提供交互式查看体验，包括缩放、360度旋转和视频。 您的资产会动态缩放以用于Web、移动和社交网站。 使用一组主要源资产（如图像、视频和3D ），Dynamic Media通过其可扩展、性能优化的全局CDN（内容交付网络）实时生成和交付此丰富内容的多种变体。
+Dynamic Media 可帮助您按需交付丰富的视觉营销和推广资产。它还能帮助您创建并呈现互动式浏览体验，包括缩放、360 度旋转以及视频内容。您的资产会根据需求动态缩放，以适配网页、移动端和社交平台的展示。通过一组主要源资产（如图像、视频和 3D 文件），Dynamic Media 能够实时生成并分发多种内容变体，并借助其全球化、可扩展且性能优化的内容分发网络（CDN）进行高效交付。
 
-Dynamic Media提供以下主要功能：
+Dynamic Media 提供以下关键功能：
 
-* **智能成像**：智能成像根据客户的浏览器功能自动优化图像的格式和文件大小，从而提供更好的图像资产投放性能。 它可与您现有的图像预设配合使用，并在投放时使用智能。 这种智能根据浏览器和网络连接速度进一步减小图像文件大小。
+* **智能图像处理**：智能图像处理可根据用户浏览器的能力，自动优化图像格式和文件大小，从而显著提升图像资产的交付性能。该功能可与您现有的图像预设配合使用，并在交付时智能优化图像内容。该智能机制还会根据浏览器类型和网络连接速度，进一步压缩图像文件大小。
 
-* **自适应视频集**：自适应视频集对以不同比特率和格式编码的相同视频的版本进行分组。 首先从您上传到系统中的原始主视频开始。 Dynamic Media会自动调整该视频的大小，或将其转码为多个视频。 然后，在交付时，它会智能地确定要使用哪种视频屏幕、哪种质量和哪种格式，并将其交付到手机、平板电脑或台式计算机。
+* **自适应视频集**：自适应视频集将同一视频的多个版本（以不同码率和格式编码）进行分组管理。您首先上传原始主视频至系统，作为创建自适应视频集的起点。Dynamic Media 会自动对该视频进行调整尺寸或转码，生成多个不同版本的视频。在内容投放时，Dynamic Media 会智能判断应使用的视频尺寸、质量和格式，并将最合适的版本传递至手机、平板或桌面设备。
 
-* **智能裁切**：一种Adobe Sensei AI功能，可自动检测任何图像或视频中的焦点，并裁切以对其进行维护。 它可捕获目标兴趣点，而不管屏幕大小如何，从而消除繁琐的手动任务，并提供在任何设备或屏幕上看起来都良好的高质量、快速加载的图像和视频。
+* **智能裁切**：借助 Adobe Sensei 的 AI 能力，自动识别图像或视频中的焦点，并在裁剪时保持该焦点不变。该功能可在不同屏幕尺寸下准确保留图像或视频中的目标焦点，从而省去繁琐的手动操作，提供高质量、加载迅速的图像和视频内容，确保在任何设备或屏幕上均呈现良好效果。
 
-* **Dynamic Media模板**：使用Dynamic Media模板、WYSIWYG模板编辑器，为您的横幅和传单创建实时可自定义的模板。 发布Dynamic Media模板并将其用于下游应用程序。 Dynamic Media模板包括图像和文本图层。 向模板的图像和文本图层添加参数，并使用Dynamic Media URL重新定位和调整图层大小并实时更新其内容。
+* **Dynamic Media 模板**：使用 Dynamic Media 模板这一所见即所得的模板编辑器，为横幅和宣传单创建可实时自定义的模板。发布您的 Dynamic Media 模板，并在下游应用程序中使用该模板。Dynamic Media 模板包含图像图层和文本图层。为模板中的图像图层和文本图层添加参数，并通过 Dynamic Media URL 实现图层的实时重定位、调整尺寸及内容更新。
 
-* **多音频和字幕**：向主视频添加多个字幕和多个音轨。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+* **多音轨与字幕**：为主视频添加多个字幕和多条音轨。此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
-* **支持HTTP (DASH)的Dynamic Adaptive Streaming**： Dynamic Media支持Dynamic Media视频交付中的Adaptive streaming（启用了CMAF），从而确保获得更好的视频用户查看体验。 DASH是自适应视频流的国际标准协议，在业界得到广泛应用。
+* **支持动态自适应流媒体传输（DASH）**：Dynamic Media 支持在启用 CMAF 的情况下，通过动态自适应流技术分发视频内容，从而为用户带来更佳的视频观看体验。DASH 是自适应视频流的国际标准协议，已在业界被广泛采用。
 
-* **AI生成的视频字幕**： Adobe Dynamic Media中的AI生成的视频字幕使用人工智能自动为视频内容生成字幕。 支持超过 60 种语言，可以在发布视频之前查看和预览字幕。
+* **AI 生成的视频字幕**：Adobe Dynamic Media 利用人工智能自动为视频内容生成字幕。支持超过 60 种语言，可以在发布视频之前查看和预览字幕。
 
-有关可用的Dynamic Media产品的信息，请参阅[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+有关可用的 Dynamic Media 产品信息，请参阅 [Dynamic Media Prime 和 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
 
 
@@ -722,26 +722,26 @@ Dynamic Media提供以下主要功能：
    </a>
    <div>
       <a href="/help/assets/dynamic-media/dynamic-media.md">
-      <strong>使用Dynamic Media</strong>
+      <strong>使用 Dynamic Media</strong>
       </a>
    </div>
    <p>
-      <em>了解如何投放资源以供在Web、移动和社交网站上使用。</em>
+      <em>了解如何投放资产，以适配网页、移动端和社交平台的使用需求。</em>
    </p>
 </td>
 
 
 <td>
    <a href="/help/assets/dynamic-media/dm-journey-part1.md">
-   <img alt="Dynamic Media历程" src="./assets/dm-journey.jpeg" />
+   <img alt="Dynamic Media 历程" src="./assets/dm-journey.jpeg" />
    </a>
    <div>
       <a href="/help/assets/dynamic-media/dm-journey-part1.md">
-      <strong>Dynamic Media历程</strong>
+      <strong>Dynamic Media 历程</strong>
       </a>
    </div>
    <p>
-      <em>了解Dynamic Media如何为您的工作带来价值。</em>
+      <em>了解 Dynamic Media 如何为您的工作带来价值。</em>
    </p>
 </td>
 <td>
@@ -750,11 +750,11 @@ Dynamic Media提供以下主要功能：
    </a>
    <div>
       <a href="/help/assets/dynamic-media/dm-best-practices.md">
-      <strong>Dynamic Media最佳做法</strong>
+      <strong>Dynamic Media 最佳实践</strong>
       </a>
    </div>
    <p>
-      <em>处理图像、视频和查看者时的最佳实践。</em>
+      <em>处理图像、视频和查看器时的最佳实践。</em>
    </p>
 </td>
 </table>
@@ -767,7 +767,7 @@ Dynamic Media提供以下主要功能：
 
 具有 OpenAPI 功能的 Dynamic Media 将 DAM 置于敏捷高效的内容供应链生态系统的核心，以确保资产治理和传递。
 
-具有OpenAPI功能的Dynamic Media提供以下主要优势：
+具有 OpenAPI 功能的 Dynamic Media 提供以下关键优势：
 
 * **无缝集成**：具有 OpenAPI 功能的 Dynamic Media 提供了一套全面的搜索和传递 API。它有助于开发人员轻松地[将资产传递与其应用程序集成](/help/assets/integrate-dynamic-media-open-apis.md)。这些应用程序包括 Adobe 以及第三方应用程序。它提供了一个[微前端资产选择器用户界面](/help/assets/overview-asset-selector.md)，用于搜索和选择已批准的资产。该选择器可以轻松地与基于 JavaScript 框架（如 React JS、Angular JS 和 Vanilla JS）的任何应用程序集成。
 
@@ -783,20 +783,20 @@ Dynamic Media提供以下主要功能：
 
 * **安全传递资产**：具有 OpenAPI 功能的 Dynamic Media 提供了一种控制访问您的数字资产的机制。您可以将用户角色或组指定为要保护的资产的元数据，并设置预定义的时间范围，在此期间[只有授权用户才能访问这些资产](/help/assets/restrict-assets-delivery.md)。在限制期内，未经授权的用户无法解析受保护资产的传递 URL。
 
-有关可用的Dynamic Media产品的信息，请参阅[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+有关可用的 Dynamic Media 产品信息，请参阅 [Dynamic Media Prime 和 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
 <table>
 <td>
    <a href="/help/assets/dynamic-media-open-apis-overview.md">
-   <img alt="具有OpenAPI功能的Dynamic Media概述" src="./assets/dm-openapi-uses.jpeg" />
+   <img alt="具有 OpenAPI 功能的 Dynamic Media 概述" src="./assets/dm-openapi-uses.jpeg" />
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>具有OpenAPI功能的Dynamic Media概述</strong>
+      <strong>具有 OpenAPI 功能的 Dynamic Media 概述</strong>
       </a>
    </div>
    <p>
-      <em>了解主要优势以及如何启用它。</em>
+      <em>了解其主要优势及启用方法。</em>
    </p>
 </td>
 
@@ -811,7 +811,7 @@ Dynamic Media提供以下主要功能：
       </a>
    </div>
    <p>
-      <em>配置角色以限制对已批准资源的访问。</em>
+      <em> 配置角色以限制对已审核资产的访问权限。</em>
    </p>
 </td>
 <td>
@@ -824,7 +824,7 @@ Dynamic Media提供以下主要功能：
       </a>
    </div>
    <p>
-      <em>将远程AEM Assets与AEM Sites环境集成。</em>
+      <em>将远程 AEM Assets 集成至 AEM Sites 环境中。</em>
    </p>
 </td>
 </table>
@@ -835,56 +835,56 @@ Dynamic Media提供以下主要功能：
 
 ## 资产分析 {#asset-insights}
 
-通过资源报表，管理员可了解Adobe Experience Manager Assets视图环境的活动。 这些数据提供关于用户如何与内容和产品进行交互的有用信息。所有用户都可以访问 Insights 仪表板，分配给管理员产品配置文件的用户可以创建用户定义的报告。
+资产报告使管理员能够全面了解 Adobe Experience Manager Assets View 环境中的各类活动。这些数据可提供有关用户如何与内容及产品交互的有价值信息。所有用户都可以访问 Insights 仪表板，分配给管理员产品配置文件的用户可以创建用户定义的报告。
 
-您可以生成各种类型的报表，例如上传、下载和Dynamic Media交付。
+您可以生成多种类型的报告，例如上传、下载以及 Dynamic Media 投放报告。
 
-* Assets视图中的&#x200B;**分析**： Assets视图允许您使用分析仪表板查看Assets视图环境的实时数据。 可以查看过去30天或过去12个月的实时事件量度。 这些事件包括下载、上传、存储使用情况、热门搜索、按大小划分的资源计数以及按资源类型划分的资源计数。
+* **资产视图中的洞察功能**：资产视图支持通过 Insights 仪表板查看 Assets 视图环境的实时数据。可查看过去 30 天或过去 12 个月的实时事件指标。这些事件包括下载、上传、存储使用情况、热门搜索、按资产大小分类的资产数量，以及按资产类型分类的资产数量。
 
-* 在管理员视图中&#x200B;**Adobe Analytics集成**： Assets Insights功能允许您跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计数据。 它有助于提供有关图像的性能和常用程度的洞察。 Assets Insights会捕获用户活动详细信息，例如对图像进行评级、单击的次数和展示次数（图像加载到网站上的次数）。 它根据这些统计数据为图像分配分数。 您可以使用得分和性能统计信息选择热门图像以将其包含在目录、营销活动等中。 您甚至可以根据这些统计数据制定存档和许可证更新策略。 要让Assets Insights显示资源的使用情况统计数据，请首先配置该功能以从Adobe Analytics获取报表数据。
+* **管理员视图中的 Adobe Analytics 集成**：Assets Insights 功能可用于追踪图像在第三方网站、营销活动以及 Adobe 创意解决方案中的用户评分和使用统计数据。该功能有助于深入了解图像的表现和受欢迎程度。Assets Insights 可捕获用户活动的详细信息，例如图像被评分的次数、点击次数，以及曝光量（即图像在网站上的加载次数）。系统会根据这些统计数据为图像分配评分。您可以利用这些评分和性能统计数据，挑选热门图像用于产品目录、营销活动等用途。您甚至可以根据这些统计数据制定资产归档和许可续订策略。若要让 Assets Insights 显示资产的使用统计数据，需先配置该功能，以便从 Adobe Analytics 获取报告数据。
 
-* **Content Hub Insights**：Content Hub提供了有关资产的宝贵见解，解决了营销利益相关者经常遇到的共同挑战 — 营销活动、渠道和其他区域中使用的资产使用情况统计数据。 通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
+* **Content Hub 洞察功能**：Content Hub 提供有关资产的宝贵洞察，解决营销相关方常见的难题——即资产在营销活动、各渠道及不同地区中的使用统计问题。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
 
 <table>
 <td>
    <a href="/help/assets/manage-reports-assets-view.md">
-   <img alt="在“资源”视图中管理报告" src="./assets/assets-insights-assets-view.jpeg" />
+   <img alt="在资产视图中管理报告" src="./assets/assets-insights-assets-view.jpeg" />
    </a>
    <div>
       <a href="/help/assets/manage-reports-assets-view.md">
-      <strong>在Assets视图中管理报告</strong>
+      <strong>在资产视图中管理报告</strong>
       </a>
    </div>
    <p>
-      <em>使用Assets视图获取有关关键成功指标的见解。</em>
+      <em>通过资产视图获取关键成功指标的洞察。</em>
    </p>
 </td>
 
 
 <td>
    <a href="/help/assets/asset-reports.md">
-   <img alt="在“管理员”视图中管理报表" src="./assets/assets-insights-admin-view.jpeg" />
+   <img alt="在管理员视图中管理报告" src="./assets/assets-insights-admin-view.jpeg" />
    </a>
    <div>
       <a href="/help/assets/asset-reports.md">
-      <strong>以管理员视图管理报告</strong>
+      <strong>在管理员视图中管理报告</strong>
       </a>
    </div>
    <p>
-      <em>了解如何在管理员视图中管理Adobe Analytics集成的报告。</em>
+      <em>了解如何在管理员视图中管理与 Adobe Analytics 集成的报告。</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/insights-content-hub.md">
-   <img alt="Content Hub中的Assets分析" src="./assets/asset-insights-content-hub.jpeg" />
+   <img alt="Content Hub 中的资产洞察" src="./assets/asset-insights-content-hub.jpeg" />
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-      在Content Hub中<strong>Assets分析</strong>
+      <strong>Content Hub 中的资产洞察</strong>
       </a>
    </div>
    <p>
-      <em>了解如何在Content Hub中查看资源分析。</em>
+      <em>了解如何在 Content Hub 中查看资产洞察信息。</em>
    </p>
 </td>
 </table>
@@ -893,18 +893,18 @@ Dynamic Media提供以下主要功能：
 
 ## 基于角色的数字资产管理可用体验 {#persona-based-experiences}
 
-Adobe 为您提供强大的数字资源管理（DAM）解决方案，让您能够充分利用数字资源。 Adobe Experience Manager Assets 具有两种使用相同 Cloud Service 存储库的独立体验：
+Adobe 为您提供强大的数字资产管理（DAM）解决方案，让您能够充分利用数字资产。 Adobe Experience Manager Assets 具有两种使用相同 Cloud Service 存储库的独立体验：
 
-* **管理视图**：现有资源作为 Cloud Service 用户界面。使用管理视图实现所有高级数字资产管理功能，包括集成、工作流程、内容自动化、发布等。
+* **管理视图**：现有资产作为 Cloud Service 用户界面。使用管理视图实现所有高级数字资产管理功能，包括集成、工作流程、内容自动化、发布等。
 
-* **资产视图**：Adobe 的轻量级资源管理体验，用于存储、管理、发现和使用数字资产。简化的用户界面包含基本的数字资产管理功能。专为轻量级 DAM 用户设计，专注于上传、元数据管理、搜索、下载和共享。
+* **资产视图**：Adobe 的轻量级资产管理体验，用于存储、管理、发现和使用数字资产。简化的用户界面包含基本的数字资产管理功能。专为轻量级 DAM 用户设计，重点支持上传、元数据管理、搜索、下载与共享等功能。
 
-![添加标记](assets/newui-overview.svg)
+![add-tags](assets/newui-overview.svg)
 
-有权访问管理视图的用户也可以访问资源视图。资源视图提供简化的用户界面，使您可以轻松管理、探索和分发数字资源。 来自不同职能部门（包括创意团队、营销团队和业务线团队）的广泛用户可以就资源进行协作，并在需要时随时随地访问正确的、经批准的资源。许多临时 DAM 用户更喜欢资源视图，因为它只包含一部分功能。该体验面向创意人员、只读资源消费者和轻量级 DAM 用户。
+有权访问管理视图的用户也可以访问资产视图。资产视图提供简化的用户界面，使您可以轻松管理、探索和分发数字资产。 来自不同职能部门（包括创意团队、营销团队和业务线团队）的广泛用户可以就资产进行协作，并在需要时随时随地访问正确的、经批准的资产。许多临时 DAM 用户更喜欢资产视图，因为它只包含一部分功能。该体验面向创意人员、只读资产消费者和轻量级 DAM 用户。
 
 DAM 库管理员、开发人员和超级用户可以继续使用管理视图，或根据需要在这些用户界面之间切换。您可以选择最适合您角色的体验。
 
-有关如何访问资源视图及其通过“管理”视图提供的一些简化功能的信息，请参阅[资源视图简介。](/help/assets/assets-view-introduction.md)
+有关如何访问资产视图及其通过“管理”视图提供的一些简化功能的信息，请参阅[资产视图简介。](/help/assets/assets-view-introduction.md)
 
 
