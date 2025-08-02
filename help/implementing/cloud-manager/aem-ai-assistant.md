@@ -31,7 +31,7 @@ AEM (Adobe Experience Manager) AI Assistant提供了一个对话界面，旨在�
 
 以下时长3分钟、时长39秒的视频分步介绍AEM AI助手。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470365?learn=on&captions=chi_hans)
 
 >[!IMPORTANT]
 >请确保您已查看并提交了用户协议，以便Adobe能够启用AI Assistant功能，以便您试用并参与私人测试版计划。
