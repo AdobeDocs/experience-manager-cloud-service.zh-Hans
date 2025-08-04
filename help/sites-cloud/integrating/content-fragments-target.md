@@ -5,10 +5,10 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 96%
+source-wordcount: '1997'
+ht-degree: 92%
 
 ---
 
@@ -16,10 +16,9 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->* AEM 内容片段将导出到 Adobe Target 的默认工作区。
->* 必须按照[与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)下的说明将 AEM 与 Adobe Target 集成。
+>必须按照[与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)下的说明将 AEM 与 Adobe Target 集成。
 
-您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的选件以大规模测试和打造个性化体验。
+您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的产品建议以大规模测试和打造个性化体验。
 
 此选项可用于将内容片段导出到 Adobe Target：
 
@@ -47,7 +46,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Adobe Target 工作区可用于允许组织（组）的成员仅为该组织创建和管理选件和活动；不向其他用户授予访问权限。例如，全球关注的国家/地区特定的组织。
+>Adobe Target 工作区可用于允许组织（组）的成员仅为该组织创建和管理产品建议和活动；不向其他用户授予访问权限。例如，全球关注的国家/地区特定的组织。
 
 ## 前提条件 {#prerequisites}
 
@@ -70,50 +69,24 @@ ht-degree: 96%
 
 * 指定要用于导出的格式选项
 * 选择 Target 工作区作为目标
-* 选择一个外部化器域以重写内容片段中的引用（可选）
 
-可以在所需的文件夹和/或片段的&#x200B;**页面属性**&#x200B;中选择所需的选项；规范会根据需要继承。
+可以在所需文件夹的&#x200B;**属性**&#x200B;中选择所需的选项；根据需要继承规范。
 
 1. 导航到&#x200B;**资源**&#x200B;控制台。
 
-1. 打开相应的文件夹或片段的&#x200B;**页面属性**。
+1. 打开相应文件夹的&#x200B;**属性**。
 
    >[!NOTE]
    >
    >如果将云配置添加到内容片段父文件夹，则该配置将由所有子级继承。
-   >
-   >如果将云配置添加到内容片段本身，则该配置将由所有变体继承。
 
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
 
-1. 在&#x200B;**云服务配置**&#x200B;下，从下拉列表中选择 **Adobe Target**。
+1. 在&#x200B;**Cloud Service配置**&#x200B;下，从下拉列表中选择您的Target配置。
 
-   <!-- is this note appropriate? -->
+1. 选择您的Adobe Target工作区。
 
-   >[!NOTE]
-   >
-   >可以自定义内容片段选件的 JSON 格式。为此，请定义一个客户内容片段组件，然后注明如何在组件“Sling 模型”中导出其属性。
-   >
-   >请参阅核心组件：[核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
-
-1. 在 **Adobe Target** 下，选择：
-
-   * 相应的配置
-   * 所需的格式选项
-   * Adobe Target 工作区
-   * 如有必要 — 外部化器域
-
-   >[!CAUTION]
-   >
-   >外部化器域是可选的。
-   >
-   > 如果您希望导出的内容指向特定的&#x200B;*发布*&#x200B;域，可配置 AEM 外部化器。有关更多详细信息，请参阅[配置 AEM 链接外部化器](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer)。
-   >
-   > 另请注意，外部化器域仅与发送到 Target 的内容片段的内容相关，与查看选件内容等元数据无关。
-
-   例如，对于文件夹：
-
-   <!-- need a new screenshot -->
+   例如：
 
    ![文件夹 – 云服务](assets/cf-target-integration-01.png "文件夹 – 云服务")
 
@@ -140,7 +113,7 @@ ht-degree: 96%
 使用以下过程可在 AEM 中创建 Target 云配置：
 
 1. 通过 **AEM 徽标** > **工具** > **云服务** > **旧版云服务**&#x200B;导航到&#x200B;**旧版云服务**。
-例如：([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+例如： ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    **Adobe Experience Cloud** 概述页面随即打开。
 
@@ -196,7 +169,7 @@ ht-degree: 96%
 
      >[!NOTE]
      >
-     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hans) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
+     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
      >
      >mbox.js 已被弃用，将在稍后阶段删除。
      >
@@ -221,7 +194,7 @@ ht-degree: 96%
      >
      >准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
      >
-     >对于创作实例，“准确定位”始终处于启用状态。但在发布实例上，您可以通过清除云服务配置中“准确定位”旁边的复选标记来选择全局关闭准确定位 (**http://localhost:4502/etc/cloudservices.html**)。无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
+     >对于创作实例，“准确定位”始终处于启用状态。但是，在发布实例上，您可以通过清除云服务配置(**http://localhost:4502/etc/cloudservices.html**)中“准确定位”旁边的复选标记来选择全局关闭准确定位。 无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
      >
      >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。您必须直接对这些组件进行任何更改。
 
@@ -268,7 +241,7 @@ ht-degree: 96%
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hans).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -337,7 +310,7 @@ When you associate a page with the framework, the child pages inherit the associ
    
    -->
 
-1. 根据需要选择&#x200B;**导出而不发布**&#x200B;或&#x200B;**Publish**。
+1. 根据需要选择&#x200B;**导出而不发布**&#x200B;或&#x200B;**发布**。
 
    >[!NOTE]
    >
@@ -367,7 +340,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用内容片段 {#using-your-content-fragments-in-adobe-target}
 
-执行上述任务后，将在 Target 中的选件页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)以了解可以实现的目标。
+执行上述任务后，将在 Target 中的产品建议页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -379,7 +352,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ![在 Adobe Target 中删除](assets/cfm-export-target-02.png)
 
-如果已在 Target 的选件中使用已导出到 Target 的某个内容片段，则删除该内容片段可能会导致出现问题。由于 AEM 正在交付片段内容，因此，删除片段会导致选件不可用。
+如果已在 Target 的产品建议中使用已导出到 Target 的某个内容片段，则删除该内容片段可能会导致出现问题。由于 AEM 正在交付片段内容，因此，删除片段会导致产品建议不可用。
 
 <!-- if the information about deleting-if-used correct, or is it not allowed at all? -->
 
@@ -390,9 +363,9 @@ When you associate a page with the framework, the child pages inherit the associ
 
   AEM 中的错误消息不会禁止用户（强制）删除内容片段。如果删除内容片段：
 
-   * 带有 AEM 内容片段的 Target 选件可能会显示意外行为
+   * 带有 AEM 内容片段的 Target 产品建议可能会显示意外行为
 
-      * 该选件可能仍会呈现，因为内容片段已推送到 Target
+      * 该产品建议可能仍会呈现，因为内容片段已推送到 Target
       * 如果引用的资源也已经从 AEM 中删除，则内容片段中的任何引用都无法正常工作。
 
    * 当然，由于内容片段在 AEM 中不再存在，因此无法对内容片段进行任何进一步的修改。
@@ -405,10 +378,10 @@ When you associate a page with the framework, the child pages inherit the associ
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 * [Adobe Target 开发](https://developers.adobetarget.com/)
 
-* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)
+* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
 
-* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=zh-Hans)
+* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
