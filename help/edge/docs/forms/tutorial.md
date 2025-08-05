@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1923'
+ht-degree: 100%
 
 ---
 
@@ -111,8 +111,8 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 1. 现在您已经设置了内容文件夹，是时候将其链接到您之前使用 AEM Forms Boilerplate 创建的 GitHub 上的项目了。连接：
 
    1. 转到您之前使用 AEM Forms Boilerplate 创建的 GitHub 存储库。
-   1. 在根文件夹中添加`fstab.yaml`文件。
-   1. 添加引用，其中包含您与AEM用户共享的文件夹的路径(forms@adobe.com)。
+   1. 在根文件夹中添加 `fstab.yaml` 文件。
+   1. 将引用与路径一起添加到您与 AEM 用户共享的那个文件夹（forms@adobe.com）。
 
       ![Google Drive 上的示例内容](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
       有关使用 Microsoft SharePoint 管理文件的更多信息，请参阅[如何使用 Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)。
 
 
-   1. 提交`fsatb.yaml`文件，添加引用且一切正常。 如果您遇到任何构建问题，请参阅[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
+   1. 添加引用并且确保一切看起来正常后，就提交 `fsatb.yaml` 文件。如果您遇到任何构建问题，请参阅[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
 
       ![提交更新的 fsatab.yaml 文件](/help/edge/assets/commit-updated-fstab-yaml.png)
 
@@ -240,7 +240,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 克隆您的 GitHub 项目：使用以下命令从 GitHub 克隆您的项目存储库，替换为 &lt;owner> 存储库所有者和 &lt;repo> 存储库名称：
+1. 克隆您的 GitHub 项目：使用以下命令从 GitHub 克隆您的项目存储库，替换为 <owner> 存储库所有者和 <repo> 存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>

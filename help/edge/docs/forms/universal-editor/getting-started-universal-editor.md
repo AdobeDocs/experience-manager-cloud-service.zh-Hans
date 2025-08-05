@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1849'
+ht-degree: 100%
 
 ---
 
@@ -65,17 +65,16 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 1. 现在，将您使用 AEM Forms Boilerplate 创建的 GitHub 存储库链接到您的 AEM 项目创作环境。连接：
 
    1. 转到您之前使用 AEM Forms Boilerplate 创建的 GitHub 存储库。
-   1. 在根文件夹中添加&#x200B;**fstab.yaml**&#x200B;文件。
+   1. 在根文件夹中添加 **fstab.yaml** 文件。
 
       ![打开 fstab.yaml 文件](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. 将项目的挂载点添加到&#x200B;**fstab.yaml**&#x200B;文件中。 添加AEM as a Cloud Service创作实例的URL。
-
+   1. 将您项目的挂载点添加到 **fstab.yaml** 文件中。添加您的 AEM as a Cloud Service 的创作实例的 URL。
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![编辑 fstab.yaml 文件](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. 添加引用且一切看起来良好后，提交&#x200B;**fstab.yaml**&#x200B;文件。
+   1. 添加引用并且确保一切看起来正常后，就提交 **fstab.yaml** 文件。
 
       ![提交更改](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -344,7 +343,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
        npm install -g @adobe/aem-cli
    ```
 
-1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 &lt;owner> 存储库所有者和 &lt;repo> 存储库名称：
+1. **克隆您的 GitHub 项目**：使用以下命令从 GitHub 克隆您的 AEM 项目存储库，替换为 <owner> 存储库所有者和 <repo> 存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>

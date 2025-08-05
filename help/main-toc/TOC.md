@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6551'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -782,10 +782,10 @@ ht-degree: 99%
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
          + [为自适应表单设计 XML 架构](/help/forms/adaptive-form-xml-schema-form-model.md)
       + 设置自适应表单的提交操作 {#set-submit-action}
-         + [提交由自适应Forms支持的操作](/help/forms/aem-forms-submit-action.md)
-         + [为基于基础组件的自适应表单配置提交操作](/help/forms/configuring-submit-actions.md)
-         + [根据核心组件配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
-         + [为Edge Delivery Services Forms配置提交操作](/help/forms/configure-submit-action-eds-forms.md)
+         + [自适应表单支持的提交操作](/help/forms/aem-forms-submit-action.md)
+         + [配置基于基础组件的自适应表单的提交操作](/help/forms/configuring-submit-actions.md)
+         + [配置基于核心组件的自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
+         + [配置 Edge Delivery Services 表单的提交操作](/help/forms/configure-submit-action-eds-forms.md)
          + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + 将自适应表单连接到 Microsoft® SharePoint{#connect-to-sharepoint}
