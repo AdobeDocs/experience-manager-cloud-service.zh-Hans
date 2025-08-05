@@ -2,9 +2,9 @@
 title: Content Hub 概述
 description: 了解有关 Content Hub 的更多信息、其主要优势、如何访问它以及如何围绕 Content Hub 中的可用选项提供反馈。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
 workflow-type: ht
-source-wordcount: '683'
+source-wordcount: '627'
 ht-degree: 100%
 
 ---
@@ -36,10 +36,6 @@ Content Hub 中最常见的属性，如搜索过滤器、添加或导入资产�
 **让非创意人员也能编辑和合成内容，同时保持品牌一致性**
 
 Content Hub 允许您使用 Adobe Express 创建新内容（如果您有 Adobe Express 权限）。您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
-
-**深入了解内容在团队间的使用情况**
-
-[!DNL Content Hub] 提供了对资产的宝贵见解，解决了营销利益相关者经常遇到的共同挑战——营销活动、渠道和不同地区使用的资产使用情况统计数据。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
 
 ## 先决条件 {#prerequisites-content-hub}
 
