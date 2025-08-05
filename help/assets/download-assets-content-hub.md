@@ -3,9 +3,9 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载单个或多个资源及其演绎版。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 您可以使用[!DNL Content Hub]下载单个或多个资源及其可用演绎版。
 
-查看Content Hub[&#128279;](#types-of-renditions)中可用的类型的节目。
+查看Content Hub[中可用的](#types-of-renditions)类型的节目。
 
 ## 下载一个或多个资源及其演绎版 {#download-asset-renditions}
 
@@ -27,11 +27,11 @@ ht-degree: 1%
 
    或者，单击资产缩略图并选择![下载](/help/assets/assets/download-icon.svg)以选择并查看对话框上的可用演绎版，然后再下载。
 
-1. 要下载多个资源，请选择这些资源，单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**，然后在&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框中查看选定资源的列表。 单击资产旁边的![取消选择](/help/assets/assets/Close.svg)以将其从列表中取消选择。 选择一个或多个格式副本并单击&#x200B;**[!UICONTROL 下载]**&#x200B;以将它们下载为单个ZIP文件。 选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;和&#x200B;**[!UICONTROL 静态演绎版]**&#x200B;可下载每个所选资源的所有可用静态演绎版和智能裁切演绎版。
+1. 要下载多个资源，请选择这些资源，单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**，然后在&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框中查看选定资源的列表。 单击资产旁边的![取消选择](/help/assets/assets/Close.svg)以将其从列表中取消选择。 选择一个或多个格式副本并单击&#x200B;**[!UICONTROL 下载]**&#x200B;以将它们下载为单个ZIP文件。 选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;和&#x200B;**[!UICONTROL 静态演绎版]**可下载每个所选资源的所有可用静态演绎版和智能裁切演绎版。
    ![下载多个资源](/help/assets/assets/download-multiple-assets-CH.png)
 在下载过程中，您可以继续使用[!DNL Content Hub]。 在下载过程中，Content Hub不会中断您的工作流。
    ![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载它们。
+如果**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**以下载它们。
    ![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
@@ -139,6 +139,10 @@ The dialog box that displays depends on whether the download list includes expir
 
   ![节目类型](/help/assets/assets/renditions-types.png)
 
+  >[!NOTE]
+  > 
+  > “下载”面板仅显示自定义静态呈现版本。 默认`cq5dam.*`缩略图未显示在Content Hub中。
+
 ### 启用动态呈现版本 {#enable-dynamic-media-renditions}
 
 要启用动态呈现版本，请执行以下操作：
@@ -149,7 +153,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. 将资源的[审批目标](/help/assets/approve-assets-content-hub.md#set-approval-target)设置为Content Hub以仅审批Content Hub的资源。
 
-1. 启用[配置](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)用户界面的&#x200B;**[!UICONTROL 呈现版本]**&#x200B;选项卡中提供的&#x200B;**[!UICONTROL 启用呈现版本可用性]**&#x200B;切换开关。
+1. 启用&#x200B;**[!UICONTROL 配置]**&#x200B;用户界面的&#x200B;**[!UICONTROL 呈现版本]**&#x200B;选项卡中提供的[启用呈现版本可用性](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)切换开关。
 
 1. 重新保存现有的图像预设，以使其在Content Hub上可用。 它仅适用于通过OpenAPI新载入到Dynamic Media的情况。
 

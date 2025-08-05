@@ -2,10 +2,10 @@
 title: Content Hub 常见问题 (FAQ)
 description: 获取有关 Content Hub 的一些最常见问题 (FAQ) 的答复。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 89%
 
 ---
 
@@ -134,5 +134,29 @@ Adobe 提供从 Brand Portal 到 Content Hub 的迁移支持，您可以通过�
 |  | 管理员置顶的收藏集 | ✓ | − |
 |  | 语义搜索 | ✓ | − |
 |  | 本地化搜索和元数据显示 | ✓ | − |
+
+## 如何选择存储库以仅查看选定环境的资源？ {#select-repository-multiple-environments}
+
+为同一项目配置了Content Hub for Production和其他较低环境后，您可以选择存储库并显示所选环境的资源。 执行以下步骤：
+
+1. 单击右窗格中的用户图标。
+
+1. 在&#x200B;**[!UICONTROL 产品设置]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 选择存储库]**。
+
+1. 从&#x200B;**[!UICONTROL 存储库]**&#x200B;下拉菜单中选择存储库，然后单击&#x200B;**[!UICONTROL 确定]**&#x200B;进行确认。
+
+   Content Hub现在显示选定环境的资源。
+
+## Content Hub如何显示.ZIP文件类型的缩略图预览？ {#thumbnail-preview-zip-file}
+
+要为Content Hub中的.ZIP等文件类型提供缩略图预览，您可以将名为`cq5dam.preview.jpg`或`cq5dam.preview.png`的演绎版添加到路径根目录，其中.ZIP在AEM as a Cloud Service创作环境中可用。
+
+您添加为演绎版的图像：
+
+* 可以是JPG、JPEG或PNG格式。
+
+* 必须小于50MB
+
+当可用时，Content Hub会将图像显示为Content Hub上.ZIP文件的预览缩略图。
 
 
