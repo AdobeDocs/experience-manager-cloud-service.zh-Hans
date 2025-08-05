@@ -1,87 +1,64 @@
 ---
 title: 简介和概述
-description: 了解如何使用和管理 Experience Manager Content 和 Commerce as a Cloud Service。
+description: 了解不同的店面选项
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 145cd4961bd9c0c7bb7e39a1d6dae67f240ecb4d
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 98%
+source-wordcount: '635'
+ht-degree: 1%
 
 ---
 
 
 # Content and Commerce {#content-commerce}
 
-借助 Adobe Experience Manager Content and Commerce，品牌可以更快地扩展和创新，区分商务体验并捕获快速增长的在线支出。AEM Content and Commerce 将 Experience Manager 中的沉浸式、全渠道和个性化体验与任意数量的商务解决方案相结合，为购物历程的各个部分带来差异化的体验，缩短价值实现时间并加快实现更高的转化率。
+随着客户对基于意图的高性能商业体验的期望日益增长，品牌面临着更快交付更多内容的压力，同时不能牺牲质量。 借助Adobe Experience Manager，品牌可以更快地扩展和创新，打造沉浸式商务体验，并获取更多流量和不断增长的在线支出。
 
-## Content and Commerce 如何帮助客户取得成功 {#successful}
+Adobe Experience Manager提供了强大的工具来创建和管理内容丰富、个性化的客户体验。 通过将AEM与商业解决方案(如Adobe Commerce、Salesforce Commerce、SAP Commerce Cloud或任何其他解决方案)集成，品牌商可以整合内容和商业，从而跨渠道提供无缝的购物历程。
 
-随着客户对在线商务体验的期望不断提高，品牌不得不更快地交付差异化的体验和更多内容。然而，实施内容管理平台通常需要花费大量时间和预算来开发基础元素（例如，自定义组件和创作工具），并且会增加维护和升级成本。Experience Manager Sites 提供 Content and Commerce 作为 Experience Manager as a Cloud Service 的附加模块，这将提供现成的商务核心组件、创作工具和引用店面，以加速上线，实现跨团队的无缝协作并提高转化率。
+## 概述店面方法 {#overview}
 
-品牌可以将 Experience Manager 与 Adobe Commerce（Adobe Experience Cloud 的一部分）以及任何选定商务引擎集成。借助 Experience Manager Content and Commerce，品牌可以：
+AEM可以根据您的情况和偏好为您提供支持。 请遵循以下指导选择适合您的方法：
 
-* 更快地扩展和创新
-* 用于推动转化的个性化体验
-* 一次创建，随处发布
-* 丰富和区分面向客户的体验
-* 通过商业数据访问简化创作
+* [使用Edge Delivery Services（推荐）](#edge)
+* [使用您自己的店面(headless AEM集成)](#own-storefront)
+* [使用AEM CIF店面](#cif)
 
-## 介绍 AEM Commerce Integration Framework (CIF) {#cif-intro}
+### 使用Edge Delivery Services（推荐） {#edge}
 
-由于这些项目必须处理集成商务解决方案方面的复杂性。商务解决方案可以是从商业解决方案（如 Adobe Commerce Cloud）到一组自定义商务服务的任何内容。集成高度依赖于用例和生态系统。它通常涉及不同的位置并具有许多不同的风格：
+如果您的企业希望在Web上拥有最快、最适合AI的店面，而您的开发人员希望获得一流的开发人员体验，请使用[Edge Delivery Services。](../edge/overview.md) Edge Delivery Services满足今天和明天的所有要求。 根据我们的后端和解决方案，您有不同的选择：
 
-* 集成复杂、动态的生态系统（示例产品目录）
-* 企业必须以高效、全渠道的方式管理其自身生命周期中的产品内容
-* 为各种头构建复杂、个性化的购物历程
-* 能够在后端和前端快速适应并进行创新
-* 运行可扩展、稳定的 E2E 基础架构，该基础架构专为实现最佳性能而构建（限时抢购、黑色星期五...）。这包括统一搜索和缓存管理。
+#### 1.与Adobe Commerce as a Cloud Service集成 {#acaacs}
 
-这种复杂性会导致出现潜在故障点、增加 TCO、产生延迟和减少实现的价值。这些原因促使开发 Commerce Integration Framework (CIF)，它是 Experience Manager 的加载项。CIF 利用商务功能扩展 Experience Manager，并实施与商务引擎的集成的标准化。最终获得具有前瞻性、稳定且可扩展的解决方案，同时 TCO 更低。它通过敏捷的工具和无缝集成的功能解锁技术和业务创新，从而构建引人入胜的商务体验。
+如果您使用Edge Delivery和[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/)作为起点，那么这是一个完美的解决方案。 店面附带有与Adobe Commerce服务、API预集成的模板，并提供各种Commerce插入组件以快速构建店面。
 
-![CIF 元素](./assets/CIF/CIF_Overview.png)
+适合：Adobe Commerce as a Cloud Service的典型店面体验
 
-## 自 2013 年以来，CIF 一直为客户提供强有力的支持 {#support}
+#### 2.与Adobe Commerce Optimizer集成（适用于任何第三方解决方案） {#aco}
 
-CIF 拥有 200 多家客户，已成为促使 Content and Commerce 项目取得成功的重要因素。这为当今和将来的 IT 和企业提供了价值。最近的客户项目将 CIF 描述为“用于加速和节省大量时间的绝佳工具，具有巨大的价值”。
+如果要集成现有的商务解决方案并提高目录性能，Adobe建议使用[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)作为现代集成层。 Commerce Optimizer通过用于目录和推销的高性能SaaS服务来增强您的商务解决方案。 与Adobe Commerce as a Cloud Service一样，[Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)可与其一起开箱即用。
 
-## CIF 好处 {#cif-benefits}
+可与商业商业解决方案(如Salesforce Commerce)集成。 请联系您的Adobe代表。
 
-CIF 提供现成的商务核心组件，可减少对自定义代码的需求，从而加快品牌的上市速度。所有核心组件都与 Adobe 的客户端数据层即时集成以补充客户配置文件（例如，统一配置文件）。此配置文件详细捕获访客行为，可用于实时预测和个性化设置客户历程。
+契合度：现有商务解决方案的典型店面体验
 
-CIF 加载项将产品上下文引入 Experience Manager 中，并提供产品控制台和产品/类别选取器等创作工具，使营销人员能够在 Experience Manager 中创建和交付可购买的体验，而无需依靠开发人员。优势包括：
+#### 3.自定义集成 {#custom}
 
-### 体验 {#experiences}
+如果您要构建自定义集成，Adobe还建议使用Edge Delivery Services 。 您可以从头开始，也可以在Edge Delivery店面中重复使用现有JS-framework商业组件（例如，用于事务性部件）。 这样一来，您的客户将获得无与伦比的超快购物体验，同时您可以重复利用现有投资来增加TTV。 您的起始点是默认的[Edge Delivery样板](https://www.aem.live/developer/tutorial)。
 
-利用 AEM 中功能强大的 CIF 工具，内容创建者能够以可扩展且与交付无关的方式快速构建丰富且个性化的商务体验来抓住商机。
+适合：Edge Deliery店面的价值较低
 
-![CIF 元素](./assets/CIF/CIF_Product_Experience_Management.png)
+### 使用您自己的店面(Headless AEM集成) {#own-storefront}
 
-### 价值实现时间 (TTV) {#ttv}
+您有一个现有的店面（例如，使用React JS构建），并希望使用Adobe Experience Manager进行内容管理和交付（内容片段）、资源以及上下文编辑（通用编辑器）。 集成的起点是[Adobe Experience Manager as a Headless CMS简介](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF加载项](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF加载项允许将您的产品数据无缝集成到AEM(在AEM UI中搜索、浏览和查找产品)中，以便用于构建特定于商业的体验。
 
-使用 [AEM 核心组件](https://www.aemcomponents.dev/)、[AEM Venia 引用店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)以及 PWA（Headless 内容和商务）的集成模式来加快项目开发。
+### AEM CIF店面 {#cif}
 
-CIF 旨在通过始终保持最新的加载项持续创新，使客户能够访问新的和改进的功能。
+Adobe的推荐和参考架构是使用Edge Delivery Services。 CIF店面及其AEM CIF核心组件现在处于维护模式，不应在新项目中使用。 有关参考，请参阅[CIF文档。](/help/commerce-cloud/cif-introduction.md)
 
-### 集成 {#integrations}
-
-使用 [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)（一项基于微服务的无服务器 PaaS）和 [CIF 的引用实施](https://github.com/adobe/commerce-cif-graphql-integration-reference)，将生态系统（例如商务解决方案）与 Experience Cloud 互联。
-
-## 经过验证的模式和最佳实践 {#proven}
-
-CIF 利用基于最佳实践的标准化集成模式来为客户提供支持。这有助于客户在当今环境中取得成功，能够灵活地与客户一起成长并满足未来要求：
-
-* 消除了可能出现的产品目录集成方面的典型挑战。示例：
-   * 目录量或复杂性增加所带来的性能问题
-   * 无法访问暂存数据
-   * 需要实时产品数据和体验
-* 不断提高的数字化成熟度产生了对体验管理的需求。CIF 附带产品体验管理功能，无需额外的 IT 工作即可逐步整合这些功能。
-* 全渠道就绪：CIF 支持具有模式、加速器和核心组件的多种接触点技术（服务器端、混合、客户端）。
-
-## 历程 {#journey}
-
-如果您正在进行 Commerce 历程，请转到下一步：
-
-* [AEM 内容作者历程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+>[!NOTE]
+>
+>希望利用新AEM/Commerce功能的现有客户应将其网站移动到Edge Delivery。 一种常见模式是，首先仅将一部分页面移动到Edge Delivery并以并排方式运行Edge Deliery和CIF页面。 还可以使用新的[AEM CIF放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)替换Commerce组件，以利用新的Commerce功能。
