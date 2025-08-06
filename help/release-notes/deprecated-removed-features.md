@@ -1,11 +1,11 @@
 ---
 title: 已弃用和已删除的功能
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的功能的发行说明。
-mini-toc-levels: 2
+mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 6c7d7823fbe8440d414461c61d37681c5f205418
+source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
 workflow-type: ht
 source-wordcount: '3193'
 ht-degree: 100%
