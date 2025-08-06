@@ -131,7 +131,7 @@ ht-degree: 12%
 
 ### 已知问题 {#known-issues-21772}
 
-* SITES-31791：内容片段GraphQL — 查询失败，显示“超出最大字段计数”。 请参阅[知识库文章](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231)。
+* SITES-31791：内容片段GraphQL — 查询失败，显示“超出最大字段计数”。 请参阅[知识库文章](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-27231)。
 
 ### 已弃用的功能和 API {#deprecated-21772}
 
@@ -151,5 +151,5 @@ AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护
 | AEM HTL | 1.4.28-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | Apache HTTP 服务器 | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM 核心组件 | 2.29.0 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14（默认） | [支持的Node.js版本](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14（默认） | [支持的Node.js版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
 
