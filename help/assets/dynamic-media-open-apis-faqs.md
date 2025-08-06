@@ -3,9 +3,9 @@ title: 具有 OpenAPI 功能的 Dynamic Media 常见问题解答
 description: 具有 OpenAPI 功能的 Dynamic Media 常见问题解答
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1573'
 ht-degree: 87%
 
 ---
@@ -133,7 +133,7 @@ Adobe 的一般建议是，对于任何集成用例（第一方或第三方应�
 
 ## 某些修饰符被标记为有限可用。 如何开始使用它们？ {#use-limited-availability-modifiers}
 
-要在您的帐户中启用在有限可用性的修饰符的生产使用，请执行以下操作：
+要在您的帐户中启用[修饰符在有限可用性](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)中的生产使用：
 
 1. [使用Admin Console创建Adobe支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 
