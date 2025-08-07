@@ -4,7 +4,9 @@ description: 本文探讨了基于核心组件的自适应表单中规则编辑�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 4ff533de73fcb91fb2b68cfdb3fd2602645ff7aa
+hide: true
+hidefromtoc: true
+source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 规则编辑器增强功能和用例
 
-<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。
+<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。
 
 本文介绍了自适应Forms中规则编辑器的最新增强功能。 这些更新旨在帮助您更轻松地定义表单行为，而无需编写自定义代码，并创建更动态、响应更快且个性化的表单体验。
 
@@ -87,7 +89,7 @@ ht-degree: 0%
 
 ## 在规则中支持动态变量
 
-增强型规则编辑器现在支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**&#x200B;函数在表单的整个生命周期内设置和检索这些变量。
+增强型规则编辑器现在支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**函数在表单的整个生命周期内设置和检索这些变量。
 这些变量包括：
 
 * 未随表单数据一起提交。
