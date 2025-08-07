@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
 workflow-type: tm+mt
-source-wordcount: '6563'
+source-wordcount: '6566'
 ht-degree: 99%
 
 ---
@@ -841,6 +841,7 @@ ht-degree: 99%
                + [基于核心组件的自适应Form规则编辑器示例](/help/forms/rule-editor-core-components-usecases.md)
                + [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
                + [在可视化规则编辑器中针对基于核心组件的表单调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [规则编辑器增强功能](/help/forms/rule-editor-enhancements-use-cases.md)
             + 基于核心组件的自适应表单的自定义函数简介{#create-and-use-custom-function-core-component}
                + [基于核心组件的自适应表单的自定义函数简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)

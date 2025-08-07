@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: ht
-source-wordcount: '1637'
-ht-degree: 100%
+source-git-commit: deffd60c1a77bdfb0dbf939632d4384c74316148
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 # 代码片段 {#snippets}
@@ -111,10 +111,9 @@ ht-degree: 100%
    </td>
    </tr>
    <tr>
-    <td>ES2022 支持 </td>
-    <td>尚不支持 ES2022；当前仅支持 ES5 JavaScript 特性。 </td>
-    <td>在自定义函数中支持现代 JavaScript 特性，例如 `let` 和箭头函数，支持范围扩展至 ES2022。 
-   </td>
+    <td>ECMAScript版本支持</td>
+    <td>仅支持ES5 JavaScript功能。</td>
+    <td>在自定义函数中支持现代JavaScript功能（例如<code>let</code>、箭头函数）。</td>
    </tr>
    </tr>
    <tr>
@@ -222,7 +221,7 @@ ht-degree: 100%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 
