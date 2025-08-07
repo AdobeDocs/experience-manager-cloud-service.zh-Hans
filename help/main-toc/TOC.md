@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 51993fe0eabb1e96931e6d64757e165b1b0d0ea9
+source-git-commit: 56c51ea764cc59687766e7f8b069b083e0677af8
 workflow-type: tm+mt
-source-wordcount: '6591'
+source-wordcount: '6609'
 ht-degree: 99%
 
 ---
@@ -128,6 +128,7 @@ ht-degree: 99%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [当前](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
@@ -1280,6 +1281,7 @@ ht-degree: 99%
          + [CI-CD 管道简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [配置Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [部署您的代码](/help/implementing/cloud-manager/deploy-code.md)
@@ -1303,6 +1305,7 @@ ht-degree: 99%
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [一键创建您的第一个 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [配置Edge Delivery站点以使用外部Git存储库](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [配置您的内容源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)

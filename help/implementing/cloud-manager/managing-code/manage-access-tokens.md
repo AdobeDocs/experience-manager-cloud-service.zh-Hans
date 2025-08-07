@@ -3,16 +3,17 @@ title: 在Cloud Manager中管理外部存储库的访问令牌
 description: 了解如何在AEM Cloud Manager中查看、编辑和删除用于自带Git的访问令牌。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '366'
 ht-degree: 3%
 
 ---
 
 # 管理外部存储库的访问令牌 {#manage-access-tokens}
+
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens" -->
 
 Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 以前，如果令牌过期，则必须重新载入关联的存储库才能保持可操作性。
 
@@ -20,9 +21,11 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 
 另请参阅[在Cloud Manager中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
+<!--
 >[!NOTE]
 >
->本文中介绍的功能只能通过私有Beta版计划获得。 有关更多详细信息以及注册私人测试版，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
+>The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+-->
 
 ## 查看访问令牌 {#view-access-tokens}
 

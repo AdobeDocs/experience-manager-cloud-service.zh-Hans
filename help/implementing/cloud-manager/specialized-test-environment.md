@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '519'
 ht-degree: 10%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->&#x200B;>本文中介绍的功能只能通过私人测试版计划获得。 要注册私密测试版，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>>本文中介绍的功能只能通过私人测试版计划获得。 要注册私密测试版，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 专业化测试环境（简称DevXL）是您可以创建的一种新型Cloud Manager环境。 它旨在支持高级用例，例如用户验收测试(UAT)和性能验证。 与传统开发、快速开发或暂存环境不同，DevXL环境在生产部署管道之外运行。 因此，它们为您提供了更大的灵活性，同时保持严格的隔离以防止对生产工作流的干扰。
 
@@ -31,7 +31,7 @@ DevXL旨在镜像典型暂存环境的大小、可扩展性和配置。 此方�
 | 环境大小 | 匹配暂存环境。 |
 | 隔离 | 与其他环境完全隔离。 |
 | 代码管道 | 与开发环境（验证、生成、部署）相同。 |
-| 内容复制 | 从生产或暂存环境中允许。 |
+| 复制内容 | 从生产、暂存或专业测试环境中允许。 |
 | 内容恢复 | 与开发环境相同。 |
 | 访问日志 | 与开发环境相同。 |
 | Developer Console | 与开发环境相同。 |
@@ -52,9 +52,8 @@ DevXL旨在镜像典型暂存环境的大小、可扩展性和配置。 此方�
 
 1. 执行下列操作之一：
 
-   如果&#x200B;**添加环境**&#x200B;选项灰显（已禁用），则可能是由于缺少权限或依赖于许可资源。
-
    * 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台的&#x200B;**环境**&#x200B;信息卡上，单击&#x200B;**添加环境**。
+如果**添加环境**&#x200B;选项灰显（已禁用），则可能是由于缺少权限或依赖于许可资源。
 
    ![环境信息卡](assets/no-environments.png)
 

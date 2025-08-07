@@ -3,27 +3,28 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab、Bitbucket和Azure DevOps存储库集成。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: b4bbf73cd49f6d7beb47d2edce0910d957879e39
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2321'
 ht-degree: 27%
 
 ---
 
 # 在 Cloud Manager 中添加外部存储库 {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 
-客户现在还可以将其Azure DevOps Git存储库载入到Cloud Manager中，并支持现代Azure DevOps和旧版VSTS (Visual Studio Team Services)存储库。
+客户现在还可以将其Azure DevOps (Beta) Git存储库载入到Cloud Manager中，并支持现代Azure DevOps和旧版VSTS (Visual Studio Team Services)存储库。
 
 * Edge Delivery Services 用户可以使用已加入的存储库来同步和部署网站代码。
 * 对于 AEM as a Cloud Service 和 Adobe Managed Services (AMS) 用户，该存储库可以链接到全栈和前端两种管道。
 
 >[!NOTE]
 >
->本文中介绍的功能只能通过私有Beta版计划获得。 有关更多详细信息以及注册私人测试版，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
+>本文中介绍的为Azure DevOps添加的支持仅通过私人测试版计划提供。 有关更多详细信息以及注册测试版，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts)。
 
 
 ## 配置外部存储库
@@ -120,7 +121,7 @@ ht-degree: 27%
 
 另请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -238,7 +239,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 | --- |
 | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
