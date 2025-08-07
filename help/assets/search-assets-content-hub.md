@@ -3,9 +3,9 @@ title: 在 Content Hub 搜索资产
 description: 了解如何在 [!DNL Content Hub]中搜索资源
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 要对[!DNL the Content Hub]执行基本搜索，请导航到搜索栏并指定您需要搜索的关键字。 导航到左窗格中可用的筛选器并应用它们以缩小搜索结果。
 
-例如，搜索包含关键字`architect`的所有&#x200B;**[!UICONTROL JPEG]**&#x200B;图像，该关键字在去年内进行了修改。 要执行此方案，请执行以下步骤：
+例如，搜索包含关键字&#x200B;**[!UICONTROL 的所有]** JPEG`architect`图像，该关键字在去年内进行了修改。 要执行此方案，请执行以下步骤：
 
 1. 指定`architect`作为搜索关键词。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## 使用过滤器缩小搜索结果 {#narrow-down-search-results}
 
-使用过滤器面板根据元数据搜索资源。 您可以根据各种搜索谓词筛选搜索结果。 您可以选择所有适当的谓词，以最小化或缩小搜索结果。 在筛选器中选择多个选项时，Content Hub会显示与筛选器中所选任何选项均匹配的资源。 但是，当您跨筛选器选择多个选项时，Content Hub仅显示与跨筛选器选择的所有选项匹配的资源，以缩小搜索结果的范围。
+使用过滤器面板根据元数据搜索资源。 您可以根据各种搜索谓词筛选搜索结果。 您可以选择所有适当的谓词，以最小化或缩小搜索结果。 在筛选搜索结果时，可以选择10个以上的谓词。 在筛选器中选择多个选项时，Content Hub会显示与筛选器中所选任何选项均匹配的资源。 但是，当您跨筛选器选择多个选项时，Content Hub仅显示与跨筛选器选择的所有选项匹配的资源，以缩小搜索结果的范围。
 
 默认过滤器包括文件格式、批准者、批准日期、已过期和未过期的资源以及过期日期。 管理员还可以配置显示在过滤器列表中的过滤器。 有关详细信息，请参阅[配置Content Hub用户界面](configure-content-hub-ui-options.md#configure-filters-content-hub)。
 

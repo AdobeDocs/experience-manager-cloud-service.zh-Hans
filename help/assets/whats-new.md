@@ -3,10 +3,10 @@ title: Content Hub 的新增功能
 description: 详细了解最近推出的一些Content Hub功能
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: dfbe7a639f69c2e5a8a6fc864b6071e1aa1fb7ba
+source-git-commit: 9f185b48405cd6924ea1483ca79b2acbf36b1be9
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 68%
+source-wordcount: '628'
+ht-degree: 50%
 
 ---
 
@@ -24,7 +24,23 @@ Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨�
 
 ## 发布日期 {#release-date}
 
-Content Hub功能版本(2025.6.0)的发布日期为2025年6月26日(与AEM as a Cloud Service版本的发布日期相同)。 下一个功能版本 (2025.7.0) 计划于 2025 年 7 月 31 日发布。
+Content Hub功能版(2025.7.0)的发布日期为2025年8月7日(与AEM as a Cloud Service版本的发布日期相同)。 下一个功能版本(2025.8.0)计划于2025年8月28日发布。
+
+## 7月版功能 {#july-release-features}
+
+**在Content Hub中增强了品牌灵活性**
+
+在现有个性化功能的基础上，Content Hub现在允许管理员通过添加自定义徽标图像来进一步定制其部署。 还增加了对TIFF文件格式的支持，用于横幅和徽标图像，从而实现了更大的设计灵活性。
+
+**与标题链接更智能地共享**
+
+现在，无论是在资源详细信息视图中，还是在选择一个或多个资源后，您都可以在生成共享链接时添加标题。 这有助于收件人轻松识别每个链接的用途，尤其是在接收多个共享资产时。
+
+![私有和公共链接](/help/assets/assets/shared-link-for-assets.png)
+
+**已改进筛选器导航**
+
+Content Hub现在在筛选器中包括&#x200B;**显示所有**&#x200B;选项，允许用户查看所有可用彩块以及资源计数，而当前限制是最多只能查看十个彩块。 每个过滤器中的增强搜索和排序功能使更轻松地更高效地发现和管理资源。
 
 ## 6月版功能 {#june-release-features}
 
@@ -34,7 +50,7 @@ Content Hub 现在允许您在创建过程中控制对收藏集的访问权限�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 ## 5月发布功能 {#may-release-features}
 
@@ -64,7 +80,7 @@ Content Hub 现在允许您应用基于规则的限制来访问资产。资源�
 
 * 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ### 用户界面品牌化 {#ui-branding}
 
@@ -72,7 +88,7 @@ Content Hub 现在允许管理员使用品牌特定的元素来自定义用户�
 
 ![UI 品牌化](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ### 公共链接共享 {#public-link-sharing}
 
@@ -80,13 +96,13 @@ Content Hub 现在支持生成可共享的链接，允许外部用户无需应�
 
 ![UI 品牌化](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ### 以ZIP格式下载多个资产 {#download-multiple-assets-as-zip}
 
 Content Hub 现在还允许您将所选资产及其演绎版下载为 ZIP 文件，而非单独的文件，从而简化文件管理。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Content Hub中的Dynamic Media呈现版本 {#dynamic-media-renditions}
 
@@ -94,4 +110,4 @@ Content Hub 现在还允许您将所选资产及其演绎版下载为 ZIP 文件
 
 &#x200B;![Dynamic Media 演绎版](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
