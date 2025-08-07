@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # 使用通用编辑器创建响应式Forms
 
 用户在各种设备上访问表单，包括台式机、平板电脑和智能手机。 设计响应式表单可确保为所有用户带来最佳体验，而不管使用的是何种设备。 本指南介绍如何使用通用编辑器针对任意屏幕大小设计、测试和优化表单。
+
 
 响应式表单创建涉及两个主要活动：
 

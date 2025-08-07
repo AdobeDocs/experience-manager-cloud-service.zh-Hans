@@ -4,9 +4,9 @@ description: 使用 Edge Delivery Services for Forms通用编辑器创建自适�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '986'
 ht-degree: 100%
 
 ---
@@ -157,9 +157,6 @@ ht-degree: 100%
     </tr>
   </tbody>
 </table>
-
-
-## 入门培训
 
 ## 常见问题解答（FAQ）
 

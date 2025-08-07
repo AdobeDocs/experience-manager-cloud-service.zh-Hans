@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
+source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
 workflow-type: tm+mt
-source-wordcount: '6566'
+source-wordcount: '6586'
 ht-degree: 99%
 
 ---
@@ -787,6 +787,7 @@ ht-degree: 99%
          + [配置基于核心组件的自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
          + [配置 Edge Delivery Services 表单的提交操作](/help/forms/configure-submit-action-eds-forms.md)
          + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
+         + [集成自适应表单与表单数据模型](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + 将自适应表单连接到 Microsoft® SharePoint{#connect-to-sharepoint}
             + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -1111,6 +1112,7 @@ ht-degree: 99%
          + [Edge Delivery Services 的表单通用编辑器简介——完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用编辑器开始创作——分步教程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [如何使用通用编辑器创建您的第一个表单——分步教程](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [提交后指导用户：在Universal Editor中配置重定向和感谢消息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [通用编辑器界面指南：工具、功能和导航说明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [让您的表单便于移动设备使用：通用编辑器中的响应式设计](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [设计精美的表单：通用编辑器的样式和主题指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

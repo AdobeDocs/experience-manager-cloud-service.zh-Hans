@@ -5,9 +5,9 @@ Keywords: Submit data to Marketo engage, Configure submit action as Submit to Ma
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '733'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![工作流](/help/forms/assets/workflow-marketo-3.png)
 
-自适应Forms编辑器提供&#x200B;**提交到Marketo Engage**&#x200B;提交操作，以将自适应Forms数据发送到Adobe Marketo Engage进行处理。 您可以将现有自适应表单配置为在提交时将数据提交到[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/home)。
+自适应Forms编辑器提供&#x200B;**提交到Marketo Engage**&#x200B;提交操作，以将自适应Forms数据发送到Adobe Marketo Engage进行处理。 您可以将现有自适应表单配置为在提交时将数据提交到[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)。
 
 提供了用于处理表单提交的各种现成提交操作。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
@@ -35,6 +35,9 @@ ht-degree: 8%
 ## 如何为现有表单配置提交到Marketo Engage的操作？
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
+<span>此视频仅适用于核心组件。 对于UE/Foundation组件，请参阅文章。</span>
+
 
 >[!BEGINTABS]
 
@@ -69,8 +72,8 @@ ht-degree: 8%
 您可以配置在Universal Editor中创作的自适应表单的提交操作，以将数据提交到Adobe Marketo Engage。 要配置提交到Marketo Engage的操作，请执行以下步骤：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
@@ -94,7 +97,7 @@ ht-degree: 8%
 
 ## 下一步
 
-您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
+您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
 
 ## 相关文章
 

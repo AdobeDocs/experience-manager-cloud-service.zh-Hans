@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 23%
@@ -16,6 +16,7 @@ ht-degree: 23%
 # 通用编辑器中动态Forms的规则编辑器
 
 通用编辑器中的规则编辑器允许您创建实时响应用户输入的智能动态表单。 您可以将静态表单转换为具有条件字段可视性、自动计算和复杂业务逻辑的交互式体验，而所有这些操作都无需编写代码。
+
 
 ## 您将了解的内容
 
@@ -431,31 +432,31 @@ SET Tax Payable = Taxable Income × 10%
 
 创作表单后，编写第一条规则，即只有当工资总额超过 50000 美元时才显示 `Additional Deduction` 字段。要添加条件规则：
 
-1. 在通用编辑器中打开要编辑的表单，在内容树中选择&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段，然后选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)。或者，也可以直接从&#x200B;**[!UICONTROL 表单对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段。
+1. 在通用编辑器中打开要编辑的表单，在内容树中选择&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段，然后选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)。或者，也可以直接从&#x200B;**[!UICONTROL 表单对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 工资总额]**字段。
    ![规则编辑器示例 1](/help/edge/docs/forms/assets/rule-editor3.png)
 出现可视化规则编辑器界面。
-1. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;以创建规则。
+1. 单击&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 2](/help/edge/docs/forms/assets/rule-editor4.png)
 默认情况下，已选择 `Set Value Of` 规则类型。虽然不能更改或修改所选对象，但可以使用规则下拉列表选择其他规则类型。\
    ![规则编辑器示例 3](/help/edge/docs/forms/assets/rule-editor5.png)
-1. 打开规则类型下拉列表，并选择&#x200B;**[!UICONTROL 时间]**&#x200B;规则类型。
+1. 打开规则类型下拉列表，并选择&#x200B;**[!UICONTROL 时间]**规则类型。
    ![规则编辑器示例 4](/help/edge/docs/forms/assets/rule-editor6.png)
-1. 选择&#x200B;**[!UICONTROL 选择状态]**&#x200B;下拉列表，并选择&#x200B;**[!UICONTROL 大于]**。出现&#x200B;**[!UICONTROL 输入数字]**&#x200B;字段。
+1. 选择&#x200B;**[!UICONTROL 选择状态]**&#x200B;下拉列表，并选择&#x200B;**[!UICONTROL 大于]**。出现&#x200B;**[!UICONTROL 输入数字]**字段。
    ![规则编辑器示例 5](/help/edge/docs/forms/assets/rule-editor7.png)
 1. 在规则&#x200B;**[!UICONTROL 输入数字]**&#x200B;字段中输入 `50000`。
    ![规则编辑器示例 6](/help/edge/docs/forms/assets/rule-editor8.png)
 您已将条件定义为 `When Gross Salary is greater than 50000`。接下来，定义如果条件为 `True` 时要执行的操作。
 1. 在 `Then` 声明中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 显示]**。
    ![规则编辑器示例 7](/help/edge/docs/forms/assets/rule-editor9.png)
-1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。
+1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**字段。
    ![规则编辑器示例 8](/help/edge/docs/forms/assets/rule-editor10.png)
-1. 如果输入的工资低于 `50000`，单击&#x200B;**[!UICONTROL 添加其他部分]**&#x200B;为&#x200B;**[!UICONTROL 工资总额]**&#x200B;字段添加另一个条件。
+1. 如果输入的工资低于 `50000`，单击&#x200B;**[!UICONTROL 添加其他部分]**&#x200B;为&#x200B;**[!UICONTROL 工资总额]**字段添加另一个条件。
    ![规则编辑器示例 9](/help/edge/docs/forms/assets/rule-editor11.png)
 1. 在 `Else` 声明中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![规则编辑器示例 10](/help/edge/docs/forms/assets/rule-editor12.png)
-1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。
+1. 从&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段上的“表单对象”选项卡拖放&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。或者，从列出了表单中所有表单对象的弹出窗口菜单选择&#x200B;**[!UICONTROL 放置对象或选择此处]**&#x200B;字段，并选择&#x200B;**[!UICONTROL 额外扣除]**字段。
    ![规则编辑器示例 11](/help/edge/docs/forms/assets/rule-editor13.png)
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
+1. 选择&#x200B;**[!UICONTROL 完成]**保存规则。
 规则编辑器中的规则显示如下。
    ![规则编辑器示例 12](/help/edge/docs/forms/assets/rule-editor14.png)
 
@@ -470,7 +471,7 @@ SET Tax Payable = Taxable Income × 10%
 接下来，编写规则计算 `Taxable Income`，即 `Gross Salary` 和 `Additional Deduction` 之间的差值（如果适用）。要在&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段添加计算规则，请执行以下步骤：
 
 1. 在创作模式下，选择&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。或者，也可以直接从&#x200B;**[!UICONTROL 表单对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段。
-1. 接下来，选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建规则。
+1. 接下来，选择&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 13](/help/edge/docs/forms/assets/rule-editor16.png)
 1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。打开用于编写数学表达式的字段。
    ![规则编辑器示例 14](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -481,14 +482,14 @@ SET Tax Payable = Taxable Income × 10%
 
    - 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 减号]**。
 
-   - 从“表单对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 放置对象或在此处选择]**&#x200B;字段中的&#x200B;**[!UICONTROL 额外扣除]**&#x200B;字段。
+   - 从“表单对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 放置对象或在此处选择]**&#x200B;字段中的&#x200B;**[!UICONTROL 额外扣除]**字段。
      ![规则编辑器示例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
 
    现在，为 `Tax Payable ` 字段添加规则，该规则由应税收入乘以税率确定。为简单起见，假设固定税率为 `10%`。
 
-1. 在创作模式下，选择&#x200B;**[!UICONTROL 应缴税款]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。接下来，选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建规则。
+1. 在创作模式下，选择&#x200B;**[!UICONTROL 应缴税款]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。接下来，选择&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 16](/help/edge/docs/forms/assets/rule-editor19.png)
 1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。打开用于编写数学表达式的字段。
    ![规则编辑器示例 17](/help/edge/docs/forms/assets/rule-editor20.png)

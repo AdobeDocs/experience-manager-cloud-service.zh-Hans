@@ -1,5 +1,5 @@
 ---
-source-git-commit: deffd60c1a77bdfb0dbf939632d4384c74316148
+source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
 workflow-type: tm+mt
 source-wordcount: '1622'
 ht-degree: 98%
@@ -43,7 +43,7 @@ ht-degree: 98%
 * [发送电子邮件](/help/forms/configure-submit-action-send-email.md)
 * [提交到 SharePoint 文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [提交到 SharePoint 列表](/help/forms/connect-forms-to-sharepoint-list.md)
-* [使用表单数据模型提交](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [使用表单数据模型提交](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交到 REST 端点](/help/forms/configure-submit-action-restpoint.md)
 * [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -168,11 +168,11 @@ ht-degree: 98%
 >[!IMPORTANT]
 >
 >前端管道要求预先将以下 IP 允许列表添加到 Cloud Manager。
->&#x200B;>如果需要，通过复制下面的地址 Block [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将 Block 粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
->&#x200B;>为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
+>>如果需要，通过复制下面的地址 Block [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将 Block 粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
+>>为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
 >
 >**Cloud Manager IP 允许列表**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## 添加 Cloud Manager IP 允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
@@ -180,7 +180,7 @@ ht-degree: 98%
 >[!IMPORTANT]
 >
 >如果您使用或打算使用前端管道来开发 Sites，则必须事先添加 Cloud Manager IP 允许列表。
->&#x200B;>请参阅[将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
+>>请参阅[将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
 
 ## IP 允许列表和通用编辑器 {#ip-allow-lists-ue}
 
@@ -221,7 +221,7 @@ ht-degree: 98%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 

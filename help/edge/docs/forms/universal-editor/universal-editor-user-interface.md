@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -180,14 +180,14 @@ ht-degree: 4%
 **用途：**&#x200B;在没有编辑器界面的新选项卡中查看您的表单\
 **何时使用：**&#x200B;对于全屏测试，请与利益相关者共享以进行审核
 
-    ！[打开页面](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![打开页面](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **发布**
 
 **用途：**&#x200B;让您的表单上线并可供用户访问\
 **何时使用：**&#x200B;在预览和响应模式下进行全面测试后
 
-    ！[发布](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![发布](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 发布前&#x200B;**验证核对清单：**
 
@@ -216,12 +216,22 @@ ht-degree: 4%
 
 **这些工具用于特定方案或高级设置：**
 
-#### **编辑表单属性**
+#### **AEM表单属性**
 
 **用途：**&#x200B;配置表单级设置，如表单数据模型(FDM)和发布日期\
 **何时使用：**&#x200B;设置数据集成，计划发布
 
 ![表单属性](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![表单属性向导](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+“表单属性”面板包括以下部分：
+
+- **提交**：定义用户提交表单后发生的情况。 从多个提交操作中进行选择，例如通过电子邮件发送数据，提交到SharePoint，使用表单数据模型，或与Adobe Experience Platform或Microsoft Power Automate等服务集成。 有关支持的提交操作的完整列表，请参阅[提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)文章。
+
+- **预填充**：配置在用户与表单交互之前自动填充表单字段的方式。 您可以连接到表单数据模型(FDM)等数据源，或使用URL参数预填充字段，从而增强用户体验并减少手动输入。 若要了解详细信息，请参阅[预填充服务](/help/edge/docs/forms/universal-editor/prefill-form.md)文章。
+
+- **谢谢**：自定义提交表单后用户看到的内容。 您可以显示确认消息或将它们重定向到其他网页，以确保流畅而专业的完成体验。 要了解如何为表单配置感谢消息，请参阅[配置感谢消息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)文章。
 
 #### **规则编辑器** （早期访问）
 
@@ -521,4 +531,3 @@ ht-degree: 4%
 4. **主规则编辑器** — 使用[规则编辑器指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)添加动态行为
 
 **请记住：**&#x200B;通用编辑器旨在使窗体生成变得直观。 从基本功能开始，随着需求的增长，逐步探索高级功能。
-
