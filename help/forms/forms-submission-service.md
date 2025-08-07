@@ -320,7 +320,7 @@ API方法允许开发人员以编程方式将数据提交到Forms提交服务，
 - `Content-Type: application/json`
 - `x-adobe-routing: tier=live,bucket=main--[repository]--[organization]`
 
-**API文档：**[完整API引用](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+**API文档：**&#x200B;[完整API引用](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
 ### 使用Postman
 

@@ -121,7 +121,7 @@ ht-degree: 1%
       1. 提供描述。
       1. 选择&#x200B;**[!UICONTROL 已启用]**。
       1. 在覆盖下，根据sling覆盖语法中的环境，提供需要更改的字段。 有关详细信息，请参阅[Apache Sling上下文感知配置 — 覆盖](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。 例如，`cloudconfigs/fdm/{configName}/url="newURL"`。
-通过选择**[!UICONTROL +]**，可以添加多个覆盖。
+通过选择&#x200B;**[!UICONTROL +]**，可以添加多个覆盖。
       1. 选择&#x200B;**[!UICONTROL 保存]**。
       1. 要获取OSGi配置JSON，请按照[使用AEM SDK快速入门生成OSGi配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中的步骤操作。
       1. 将JSON放置在上一步中创建的OSGi工厂配置文件中。
