@@ -4,7 +4,7 @@ description: 有效地自定义通过 Edge Delivery Services 交付的 AEM Forms
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 83%
@@ -133,27 +133,29 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 +++ 常规组件的 CSS 选择器
 
 ```CSS
-/- Primary Pattern: Target field wrapper by type */
-.form .{Type}-wrapper {
-  /- Add your styles here */
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-
-/- Primary Pattern: Target input fields within wrapper */
-.form .{Type}-wrapper input {
-  /- Add your styles here */
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  width: 100%;
-}
-
-/- Context-specific: Target element by field name when higher specificity needed */
-.form .field-{Name} input {
-  /- Add your styles here */
-  /- Use this pattern for specific field customization */
-}
+  
+  /- Primary Pattern: Target field wrapper by type */
+  .form .{Type}-wrapper {
+    /- Add your styles here */
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  
+  /- Primary Pattern: Target input fields within wrapper */
+  .form .{Type}-wrapper input {
+    /- Add your styles here */
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /- Context-specific: Target element by field name when higher specificity needed */
+  .form .field-{Name} input {
+    /- Add your styles here */
+    /- Use this pattern for specific field customization */
+  }
+  
 ```
 
 - `.form .{Type}-wrapper`：基于字段类型定位字段包装器元素。 例如，`.form .text-wrapper`以所有文本字段容器为目标。
@@ -525,7 +527,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
  }
 ```
 
-- `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
+-  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -541,7 +543,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
   }
 ```
 
-- `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
+-  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
 1. 定位面板中的各个字段：
@@ -554,7 +556,7 @@ main .form form .panel-wrapper .{Type}-wrapper {
 }
 ```
 
-- `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
+-  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
 1. 定位特定领域（可选）：
 

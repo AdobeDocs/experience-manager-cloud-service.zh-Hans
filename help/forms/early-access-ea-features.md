@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 22%
+source-wordcount: '2837'
+ht-degree: 19%
 
 ---
 
@@ -116,6 +116,8 @@ Cloud上的Interactive Communications是一款功能强大的解决方案，可�
 
 * **格式灵活性**：输出为PDF、HTML、PCL、PostScript®和ZPL格式。
 
+* **规则编辑器**：使用直观的点击式界面，直接在文档中生成动态的数据驱动操作。 轻松定义条件逻辑、自动化工作流并个性化内容，而无需编写代码。
+
 #### 用例：
 
 * 生成账户报表的金融机构
@@ -154,6 +156,38 @@ AEM Forms HTML5 Forms允许您以HTML5格式呈现现有XFA(XML Forms架构)表�
 * **保存草稿**：将HTML5表单另存为草稿，并在稍后阶段继续填写表单。
 
 准备好开始了吗？ [HTML5表单简介](/help/forms/introductionhtml5.md)文档提供了此创新的全面概述和入门指南。
+
+### 用于自定义组件的AEM Forms Scaffolder CLI
+
+使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services开发。 此命令行界面使您能够立即生成启动自定义组件开发所需的代码和布线 — 无样板，无麻烦。
+
+>[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms开发工具)
+
+**关键功能：**
+
+* **快速基架**：立即为新自定义组件生成结构和代码，从而缩短手动设置时间。
+* **内置最佳实践**：该工具遵循AEM Forms Edge Delivery Services的建议模式，确保一致性和可维护性。
+* **开发人员工作效率**：在CLI处理重复设置任务的同时，专注于构建业务逻辑和UI。
+* **无缝集成**：生成的组件已准备就绪，可与您现有的AEM Forms项目集成和使用。
+
+准备好开始了吗？ 在Forms as a Cloud Service部署的抢先访问计划下，提供了AEM Forms CLI工具。 若要请求访问，请将您的组织ID和计划详细信息通过电子邮件从您的官方地址发送到[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
+
+### 动态表单数据的API集成工具
+
+利用API集成工具，表单作者可以创建动态、智能的表单，这些表单会根据用户交互自动从外部REST API获取和填充数据。 这种无代码集成功能将静态表单转换为响应式数据收集界面。
+
+主要功能包括：
+
+* **可视化配置界面**：通过直观的点击式界面创建API集成，无需自定义编码
+* **实时数据填充**：根据用户的输入自动填充表单字段（例如，在用户输入邮政编码时自动填充城市和州/省）
+* **灵活的API支持**：连接到任何可公开访问的REST API，支持GET/POST方法、身份验证和JSON/XML响应
+* **基于规则的触发器**：定义何时使用内置规则引擎触发API调用（例如，字段更改、表单事件）
+* **智能数据映射**：使用Adobe的JSON分析功能配置API响应数据映射到特定表单字段的方式
+* **增强的用户体验**：减少手动数据输入，提高数据准确性，并创建更吸引人的表单交互
+
+此工具对于地址自动完成、动态下拉群体、针对外部数据库的实时验证以及创建根据用户输入进行调整的上下文感知表单体验等方案特别有用。
+
+
 
 ## 其他早期访问创新
 

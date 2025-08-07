@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Edge Delivery Services for AEM Forms将高性能Web交付与Universal Editor中�
 
 >[!TIP]
 >
-> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hans)开始。
+> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)开始。
 
 ## 路径A：使用Forms创建新项目
 
@@ -182,8 +182,8 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
 **验证：**&#x200B;确认您的GitHub存储库与AEM的连接。
 
->[!NOTE]
->
+    >[！NOTE]
+    >
 >存在生成问题？ 请参阅[GitHub生成问题疑难解答](#troubleshooting-github-build-issues)。
 
 +++
@@ -239,7 +239,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
    **成功！**&#x200B;您的AEM站点现已创建并连接到GitHub。
 
-6. 在通用编辑器中打开&#x200B;**&#x200B;**
+6. 在通用编辑器中打开&#x200B;****
    - 在站点控制台中，找到新站点
    - 选择`index`页面
    - 单击&#x200B;**编辑**
@@ -308,7 +308,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 > - **主页：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **其他页面：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**下一步：**&#x200B;[创建您的第一个表单](#create-your-first-form)
+**下一步：**[创建您的第一个表单](#create-your-first-form)
 
 +++
 
@@ -399,11 +399,11 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **更新.eslintrc.js**
@@ -490,7 +490,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
 +++
 
-**下一步：**&#x200B;[创建您的第一个表单](#create-your-first-form)
+**下一步：**[创建您的第一个表单](#create-your-first-form)
 
 ## 创建您的第一个表单
 
@@ -648,7 +648,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
    AEM CLI简化了本地开发任务：
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **克隆存储库**
