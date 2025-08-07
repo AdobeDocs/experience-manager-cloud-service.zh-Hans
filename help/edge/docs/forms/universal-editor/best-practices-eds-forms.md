@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -23,20 +23,20 @@ ht-degree: 100%
 
 阅读本文档后，您将掌握以下内容：
 
-* 设计对所有用户友好并且所有人都能无障碍访问的表单
-* 优化表单性能与加载时间
-* 以负责任且透明的方式处理用户数据
-* 实施规范的错误处理与验证方法
-* 创建出可达到极高填写完成率的表单
+- 设计对所有用户友好并且所有人都能无障碍访问的表单
+- 优化表单性能与加载时间
+- 以负责任且透明的方式处理用户数据
+- 实施规范的错误处理与验证方法
+- 创建出可达到极高填写完成率的表单
 
 ### 目标受众
 
 本指南面向以下人群：
 
-* 希望打造更佳用户体验的&#x200B;**表单设计人员**
-* 负责实施表单功能的&#x200B;**开发人员**
-* 致力于优化表单工作流的&#x200B;**用户体验专业人员**
-* 希望提升表单转化率的&#x200B;**业务利益相关者**
+- 希望打造更佳用户体验的&#x200B;**表单设计人员**
+- 负责实施表单功能的&#x200B;**开发人员**
+- 致力于优化表单工作流的&#x200B;**用户体验专业人员**
+- 希望提升表单转化率的&#x200B;**业务利益相关者**
 
 ### 关键原则
 
@@ -52,32 +52,32 @@ ht-degree: 100%
 
 ## 设计用户友好且具备可访问性的表单
 
-* **使用清晰、可见的标签：**&#x200B;每个表单字段都应配有 `<label>`。请勿仅依赖占位符文本（即输入框内的文字），因为在用户开始输入时占位符会消失，且不利于无障碍访问。
-   * *推荐：* `<label for="email">Email Address:</label> <input type="email" id="email" placeholder="you@example.com">`
-   * *不推荐：* `<input type="email" placeholder="Email Address">`
-* **保持简洁：**&#x200B;尽可能使用标准 HTML 输入类型（如 `<input type="date">`、`<input type="tel">`）。它们通常比复杂的自定义控件更支持移动端并具备更好的无障碍访问性。
-* **逻辑顺序和字段分组：**&#x200B;按对用户而言合乎逻辑的方式排列字段。可使用 `<fieldset>` 和 `<legend>` 将相关字段进行分组。
-* **提供清晰指引：**&#x200B;对于可能引起混淆的字段，提供简洁的帮助文本或提示说明。
-* **键盘导航：**&#x200B;确保用户可以仅通过键盘完成整个表单的操作流程（Tab、Shift+Tab、Enter、空格键）。
-* **错误处理：**&#x200B;让错误提示明确、易于理解。在相关字段旁边显示错误信息，并说明如何修正。
+- **使用清晰、可见的标签：**&#x200B;每个表单字段都应配有 `<label>`。请勿仅依赖占位符文本（即输入框内的文字），因为在用户开始输入时占位符会消失，且不利于无障碍访问。
+   - *推荐：* `<label for="email">Email Address:</label> <input type="email" id="email" placeholder="you@example.com">`
+   - *不推荐：* `<input type="email" placeholder="Email Address">`
+- **保持简洁：**&#x200B;尽可能使用标准 HTML 输入类型（如 `<input type="date">`、`<input type="tel">`）。它们通常比复杂的自定义控件更支持移动端并具备更好的无障碍访问性。
+- **逻辑顺序和字段分组：**&#x200B;按对用户而言合乎逻辑的方式排列字段。可使用 `<fieldset>` 和 `<legend>` 将相关字段进行分组。
+- **提供清晰指引：**&#x200B;对于可能引起混淆的字段，提供简洁的帮助文本或提示说明。
+- **键盘导航：**&#x200B;确保用户可以仅通过键盘完成整个表单的操作流程（Tab、Shift+Tab、Enter、空格键）。
+- **错误处理：**&#x200B;让错误提示明确、易于理解。在相关字段旁边显示错误信息，并说明如何修正。
 
-* **确保表单加载迅速且易于发现**
+- **确保表单加载迅速且易于发现**
 
-   * **将表单放在显眼的位置：**&#x200B;如果表单很重要，请确保用户能轻松看见，而无需大量滚动页面（如尽可能放置在“首屏”区域）。Adobe 研究显示，许多表单因隐藏太深而互动率低下。
-   * **优化资源体积：**&#x200B;将表单使用的自定义 JavaScript 或 CSS 保持尽可能轻量，以提升加载速度。Edge Delivery Services 可加快基础页面加载，但大型表单脚本仍可能影响性能。
+   - **将表单放在显眼的位置：**&#x200B;如果表单很重要，请确保用户能轻松看见，而无需大量滚动页面（如尽可能放置在“首屏”区域）。Adobe 研究显示，许多表单因隐藏太深而互动率低下。
+   - **优化资源体积：**&#x200B;将表单使用的自定义 JavaScript 或 CSS 保持尽可能轻量，以提升加载速度。Edge Delivery Services 可加快基础页面加载，但大型表单脚本仍可能影响性能。
 
-* **负责任地处理用户数据**
-   * **只收集必要信息：**&#x200B;请求的个人可识别信息（PII）越少越好。每一个字段都有可能成为用户放弃填写表单的理由。
-   * **保持透明：**&#x200B;清晰说明您&#x200B;*为何*&#x200B;需要收集某些信息，以及&#x200B;*这些信息将如何使用*。提供隐私政策链接。这可以建立信任。
+- **负责任地处理用户数据**
+   - **只收集必要信息：**&#x200B;请求的个人可识别信息（PII）越少越好。每一个字段都有可能成为用户放弃填写表单的理由。
+   - **保持透明：**&#x200B;清晰说明您&#x200B;*为何*&#x200B;需要收集某些信息，以及&#x200B;*这些信息将如何使用*。提供隐私政策链接。这可以建立信任。
 
-* **改善用户体验：验证码替代方案**
+- **改善用户体验：验证码替代方案**
 
-   * **重新考虑可见验证码：**&#x200B;让用户输入扭曲字符或点击所有“红绿灯”的验证方式常常令人沮丧，尤其对有障碍的用户更不友好，并且容易导致高流失率。
+   - **重新考虑可见验证码：**&#x200B;让用户输入扭曲字符或点击所有“红绿灯”的验证方式常常令人沮丧，尤其对有障碍的用户更不友好，并且容易导致高流失率。
 
-* **考虑替代方案：**
-   * **蜜罐字段（Honeypot Fields）：**&#x200B;添加一个只有机器人会填写的隐藏字段。如果该字段有数据，极可能是垃圾提交。
-   * **基于时间的检测：**&#x200B;检测表单提交速度。如果提交过快，往往是机器人操作。
-   * **Invisible reCAPTCHA (v3)：** Google 提供的这项服务会在后台分析用户行为，只有在行为可疑时才弹出验证挑战。这通常能带来更好的用户体验。
+- **考虑替代方案：**
+   - **蜜罐字段（Honeypot Fields）：**&#x200B;添加一个只有机器人会填写的隐藏字段。如果该字段有数据，极可能是垃圾提交。
+   - **基于时间的检测：**&#x200B;检测表单提交速度。如果提交过快，往往是机器人操作。
+   - **Invisible reCAPTCHA (v3)：** Google 提供的这项服务会在后台分析用户行为，只有在行为可疑时才弹出验证挑战。这通常能带来更好的用户体验。
 
 ## 表单设计的注意事项
 
@@ -97,7 +97,7 @@ ht-degree: 100%
 
 本指南概述了如何将表单与 AEM Edge Delivery Services 集成使用。如需更详细的配置步骤和说明，请参阅 Adobe Experience Manager 官方文档。
 
-* [使用 Edge Delivery Services 表单进行基于文档的创作](/help/edge/docs/forms/tutorial.md)
-* [使用通用编辑器与 Edge Delivery Services 表单](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [文档创作（DA）与内容嵌入](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+- [使用 Edge Delivery Services 表单进行基于文档的创作](/help/edge/docs/forms/tutorial.md)
+- [使用通用编辑器与 Edge Delivery Services 表单](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [文档创作（DA）与内容嵌入](https://www.aem.live/developer/da-tutorial)
+- [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

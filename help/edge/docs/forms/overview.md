@@ -4,8 +4,8 @@ description: 使用 Adobe Experience Manager Edge Delivery Services 创建并分
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
 
@@ -19,20 +19,20 @@ ht-degree: 100%
 
 这些服务使您能够：
 
-* **使用选定工具创建注册体验**：通过分离内容来源而提高创作效率。您可以使用开箱即用、基于文档的创作功能（Microsoft SharePoint 或 Google Drive）和所见即所得的创作功能（通用编辑器或自适应表单编辑器）。您可以在同一个表单网站上使用多个内容源，并使用首选的创作工具，如 Microsoft Excel、Google Sheets、通用编辑器或自适应表单编辑器。
+- **使用选定工具创建注册体验**：通过分离内容来源而提高创作效率。您可以使用开箱即用、基于文档的创作功能（Microsoft SharePoint 或 Google Drive）和所见即所得的创作功能（通用编辑器或自适应表单编辑器）。您可以在同一个表单网站上使用多个内容源，并使用首选的创作工具，如 Microsoft Excel、Google Sheets、通用编辑器或自适应表单编辑器。
 
-* **提供卓越的数字注册体验：**&#x200B;提供快速加载和渲染的数字注册体验，并通过操作遥测持续监测表单性能。更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
+- **提供卓越的数字注册体验：**&#x200B;提供快速加载和渲染的数字注册体验，并通过操作遥测持续监测表单性能。更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
-* **使用易于开发人员使用的工具集：** 适用于 AEM Forms 的 Edge Delivery Services 使用纯 HTML、现代 CSS 和普通 JavaScript 来创建卓越的体验，避免特定框架所需的陡峭学习曲线。具有基本 Web 开发技能的开发人员可以自定义并轻松构建表单组件和体验。无需等待管道运行，只需将代码签入 GitHub，所做的更改就会生效。
+- **使用易于开发人员使用的工具集：** 适用于 AEM Forms 的 Edge Delivery Services 使用纯 HTML、现代 CSS 和普通 JavaScript 来创建卓越的体验，避免特定框架所需的陡峭学习曲线。具有基本 Web 开发技能的开发人员可以自定义并轻松构建表单组件和体验。无需等待管道运行，只需将代码签入 GitHub，所做的更改就会生效。
 
 ## 选择创作方法
 
 
 Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘区域交付极快且高度可扩展的 Web 体验。本指南说明了&#x200B;**如何构建并发布表单来确保提供这样的体验**，并提供明确的推荐层级：
 
-* **通用编辑器（UE）——大多数团队的首选方式**
-* **基于文档的创作（Docs/Sheets）——适用于快速创建简单表单**
-* **文档创作（DA） —— 用于将表单嵌入由 DA 创作的页面中**
+- **通用编辑器（UE）——大多数团队的首选方式**
+- **基于文档的创作（Docs/Sheets）——适用于快速创建简单表单**
+- **文档创作（DA） —— 用于将表单嵌入由 DA 创作的页面中**
 
 完成本指南后，您将能够选择合适的创作方式，了解不同的提交选项，然后可采取创作生产就绪表单的后续步骤。
 
@@ -48,23 +48,23 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 
 ### 通用编辑器
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 [通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是一款面向市场营销人员和设计师的可视化拖放式创作工具，兼具高速与企业级性能优势：
 
-* 支持实时所见即所得（WYSIWYG）编辑与设备预览。
-* 可直接集成 AEM 资产、工作流和表单数据模型（FDM）。
-* 可无缝交接给开发人员，使用原生 JS/CSS 开发自定义组件
-* 用于创建复杂逻辑的高级规则编辑器。
-* 自定义功能的服务器端可扩展性。
-* WYSIWYG 的编辑体验，可轻松创建表单和可视化。
-* 记录文档功能可创建提交数据的防篡改档案。
-* 与 Adobe Sign 集成以进行电子签名。
-* 与 Adobe Workfront Fusion 集成，在提交表单时触发 Adobe Workfront Fusion 场景。
-* 与各种数据源集成以预填充表单和提交数据。
-* 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
-* 能够从多个提交操作中进行选择来处理表单提交，包括将数据提交到 Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多数据源。
-* 支持通过 Forms Submission Service（FSS）或 AEM Publish 提交操作完成提交
+- 支持实时所见即所得（WYSIWYG）编辑与设备预览。
+- 可直接集成 AEM 资产、工作流和表单数据模型（FDM）。
+- 可无缝交接给开发人员，使用原生 JS/CSS 开发自定义组件
+- 用于创建复杂逻辑的高级规则编辑器。
+- 自定义功能的服务器端可扩展性。
+- WYSIWYG 的编辑体验，可轻松创建表单和可视化。
+- 记录文档功能可创建提交数据的防篡改档案。
+- 与 Adobe Sign 集成以进行电子签名。
+- 与 Adobe Workfront Fusion 集成，在提交表单时触发 Adobe Workfront Fusion 场景。
+- 与各种数据源集成以预填充表单和提交数据。
+- 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
+- 能够从多个提交操作中进行选择来处理表单提交，包括将数据提交到 Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多数据源。
+- 支持通过 Forms Submission Service（FSS）或 AEM Publish 提交操作完成提交
 
 **推荐**：除非您的团队完全以文档为中心，且要创建非常基础的表单，否则建议所有新表单项目均采用通用编辑器开始构建。
 
@@ -73,14 +73,14 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 
 [基于文档的创作](/help/edge/docs/forms/tutorial.md)最适合使用熟悉的工具（如 Microsoft Word、Google Docs 或 Google Sheets）创建结构简单、复杂度较低的表单。此方法非常适合内容团队，以快速且简便的方式构建表单。
 
-* 可访问的组件可提供用户友好的体验。
-* 标准化 HTML 结构，实现一致的渲染。
-* 确保数据准确性的规则和验证。
-* 用于收集附加信息的文件附件选项。
-* Google reCAPTCHA 集成用于垃圾邮件防护。
-* 能够根据特定需求创建自定义表单组件。
-* 直接将表单数据提交到 Microsoft Excel 或 Google Sheets 或电子邮件地址。
-* 通过操作遥测监测表单性能
+- 可访问的组件可提供用户友好的体验。
+- 标准化 HTML 结构，实现一致的渲染。
+- 确保数据准确性的规则和验证。
+- 用于收集附加信息的文件附件选项。
+- Google reCAPTCHA 集成用于垃圾邮件防护。
+- 能够根据特定需求创建自定义表单组件。
+- 直接将表单数据提交到 Microsoft Excel 或 Google Sheets 或电子邮件地址。
+- 通过操作遥测监测表单性能
 
 
 ### 在文档创作（DA）中嵌入表单
@@ -112,10 +112,10 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 
 ## 后续步骤
 
-* [通用编辑器在 Edge Delivery Services for Forms 中的功能与优势](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [使用通用编辑器创建您的首个表单](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [使用 Google Sheets 或 Microsoft Excel 创建首个表单](/help/edge/docs/forms/tutorial.md)。
-* [在文档创作（DA）中嵌入表单](https://www.aem.live/developer/da-tutorial)
+- [通用编辑器在 Edge Delivery Services for Forms 中的功能与优势](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [使用通用编辑器创建您的首个表单](/help/edge/docs/forms/universal-editor/create-forms.md)
+- [使用 Google Sheets 或 Microsoft Excel 创建首个表单](/help/edge/docs/forms/tutorial.md)。
+- [在文档创作（DA）中嵌入表单](https://www.aem.live/developer/da-tutorial)
 
 
 现在，您已准备好使用 AEM Edge Delivery Services 创建首个高性能表单。
@@ -125,15 +125,15 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 
 ## Start creating forms
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
-* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
-* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+- [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
+- [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+- [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+- [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
+- [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
+- [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
+- [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
+- [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+- [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
@@ -149,10 +149,10 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /* Adding transition effect */
+        transition: background-color 0.3s ease; /- Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /* Changing background color on hover */
+        background-color: #f0f0f0; /- Changing background color on hover */
     }
 </style>
 

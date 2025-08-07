@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -37,14 +37,14 @@ AEM 提供多种表单创作选项来创建引人入胜的交互式表单。选�
 
 AEM 支持多种创作方法，每种方法都适合不同的用户需求、技术技能水平和发布目标。
 
-* [基础组件](/help/forms/create-adaptive-form-tutorial.md)：使用基础组件构建传统的交互式表单。最适合要与旧版系统集成或者要采用长期建立的工作流程的表单。使用基础组件创作的表单只能在 AEM 上发布，并且与 Edge Delivery Services 不兼容。
+- [基础组件](/help/forms/create-adaptive-form-tutorial.md)：使用基础组件构建传统的交互式表单。最适合要与旧版系统集成或者要采用长期建立的工作流程的表单。使用基础组件创作的表单只能在 AEM 上发布，并且与 Edge Delivery Services 不兼容。
 
-* [核心组件](/help/forms/creating-adaptive-form-core-components.md)：使用核心组件创建现代化、响应式且可扩展的表单。它们支持可重用性、无障碍可访问性和更佳的性能。使用核心组件创作的表单可以在 AEM 和 Edge Delivery Services 上发布，从而提供跨平台的灵活性。
+- [核心组件](/help/forms/creating-adaptive-form-core-components.md)：使用核心组件创建现代化、响应式且可扩展的表单。它们支持可重用性、无障碍可访问性和更佳的性能。使用核心组件创作的表单可以在 AEM 和 Edge Delivery Services 上发布，从而提供跨平台的灵活性。
 
-* [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md)：Edge Delivery Services Forms 改变了表单的创作、执行和处理方式。使用 Edge Delivery Services，组织可以快速、安全地创建高度可用的数字化表单，通过快速开发环境提升用户体验和运营效率。您可以通过两种方式创作 Edge Delivery Services 表单：
-   * [所见即所得创作](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：使用 Universal Editor 进行可视化拖放式表单创建，非常适合技术知识有限的内容创作者。使用 Universal Editor 创作的表单通过 Edge Delivery Services 投放，以实现快速的轻量级渲染。
-   * [文档式创作](/help/edge/docs/forms/tutorial.md)：使用 Microsoft Excel 或 Google Sheets 等工具来定义表单结构和内容。此方法对于喜欢采用电子表格驱动输入方式的商业用户很有用。这些表单通常通过 Edge Delivery Services 发布，适用于轻量级、大容量的用例。
-* [无头创作](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：使用 API 将表单为任何前端呈现 JSON，例如 React、Angular、移动应用程序或信息亭，而无需依赖 AEM。目前，只有核心组件支持无头投放。无头表单非常适合全渠道用例，并可独立于 AEM 的页面渲染使用，这使其能够灵活地用于自定义前端部署。
+- [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md)：Edge Delivery Services Forms 改变了表单的创作、执行和处理方式。使用 Edge Delivery Services，组织可以快速、安全地创建高度可用的数字化表单，通过快速开发环境提升用户体验和运营效率。您可以通过两种方式创作 Edge Delivery Services 表单：
+   - [所见即所得创作](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：使用 Universal Editor 进行可视化拖放式表单创建，非常适合技术知识有限的内容创作者。使用 Universal Editor 创作的表单通过 Edge Delivery Services 投放，以实现快速的轻量级渲染。
+   - [文档式创作](/help/edge/docs/forms/tutorial.md)：使用 Microsoft Excel 或 Google Sheets 等工具来定义表单结构和内容。此方法对于喜欢采用电子表格驱动输入方式的商业用户很有用。这些表单通常通过 Edge Delivery Services 发布，适用于轻量级、大容量的用例。
+- [无头创作](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：使用 API 将表单为任何前端呈现 JSON，例如 React、Angular、移动应用程序或信息亭，而无需依赖 AEM。目前，只有核心组件支持无头投放。无头表单非常适合全渠道用例，并可独立于 AEM 的页面渲染使用，这使其能够灵活地用于自定义前端部署。
 
 ### AEM 表单创作方法的比较分析
 
@@ -107,7 +107,7 @@ AEM 支持多种创作方法，每种方法都适合不同的用户需求、技�
 
 ## 相关文章
 
-* [使用 Microsoft Excel 或 Google Sheets 进行文档式创作](/help/edge/docs/forms/create-forms.md)
-* [用于所见即所得创作的 Universal Editor ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [创建自适应表单（基础组件）](/help/forms/creating-adaptive-form.md)
-* [创建自适应表单（核心组件）](/help/forms/create-an-adaptive-form.md)
+- [使用 Microsoft Excel 或 Google Sheets 进行文档式创作](/help/edge/docs/forms/create-forms.md)
+- [用于所见即所得创作的 Universal Editor ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [创建自适应表单（基础组件）](/help/forms/creating-adaptive-form.md)
+- [创建自适应表单（核心组件）](/help/forms/create-an-adaptive-form.md)

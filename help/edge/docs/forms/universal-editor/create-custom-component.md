@@ -4,17 +4,14 @@ description: 为 EDS Form 创建自定义组件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1802'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 98%
 
 ---
 
 # 在“所见即所得创作”中创建自定义组件
-
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
-
 
 Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构建定制的表单组件。这些自定义组件可以无缝集成到所见即所得的创作体验中，使表单作者能够在表单编辑器中轻松添加、配置和管理这些组件。通过自定义组件，作者可以增强功能，同时确保流畅、直观的创作过程。
 
@@ -24,8 +21,8 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
 在开始创建自定义组件之前，您应该：
 
-* 掌握 [原生 HTML 组件](/help/edge/docs/forms/form-components.md)的基本知识。
-* 了解如何 [使用 CSS 选择器根据字段类型设置表单字段的样式](/help/edge/docs/forms/style-theme-forms.md)
+- 掌握 [原生 HTML 组件](/help/edge/docs/forms/form-components.md)的基本知识。
+- 了解如何 [使用 CSS 选择器根据字段类型设置表单字段的样式](/help/edge/docs/forms/style-theme-forms.md)
 
 ## 创建自定义组件
 
@@ -51,9 +48,9 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
    1. 打开 AEM 项目并导航到 `../blocks/form/components/`。
    1. 在 `../blocks/form/components/<component_name>` 为自定义组件添加一个新文件夹。在这个例子中，我们创建一个名为 `range` 的文件夹。
    1. 导航到在 `../blocks/form/components/<component_name>` 新创建的文件夹。例如，导航到 `../blocks/form/components/range`，并添加以下文件：
-      * `/blocks/form/components/range/_range.json`：包含自定义组件的定义。
-      * `../blocks/form/components/range/range.css`：定义自定义组件的样式。
-      * `../blocks/form/components/range/range.js`：在运行时定制自定义组件。
+      - `/blocks/form/components/range/_range.json`：包含自定义组件的定义。
+      - `../blocks/form/components/range/range.css`：定义自定义组件的样式。
+      - `../blocks/form/components/range/range.js`：在运行时定制自定义组件。
 
         ![添加自定义组件以供创作](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
@@ -67,12 +64,12 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
    要添加定义，需要在 `_range.json` 文件中添加以下字段：
 
-   * **标题**：通用编辑器中显示的组件的标题。
-   * **ID**：组件的唯一标识符。
-   * **fieldType**：表单支持各种 **fieldType** 来捕获特定类型的用户输入。您可以在 Extra Byte 分区中找到[支持的 fieldType](#supported-fieldtypes)。
-   * **resourceType**：每个自定义组件都有一个基于其 fieldType 关联的资源类型。您可以在 Extra Byte 分区中找到[支持的 resourceType](#supported-resourcetype)。
-   * **jcr:title**：它类似于标题，但存储在组件的结构中。
-   * **fd:viewType**：表示自定义组件的名称。它是组件的唯一标识符。需要为组件创建自定义视图。
+   - **标题**：通用编辑器中显示的组件的标题。
+   - **ID**：组件的唯一标识符。
+   - **fieldType**：表单支持各种 **fieldType** 来捕获特定类型的用户输入。您可以在 Extra Byte 分区中找到[支持的 fieldType](#supported-fieldtypes)。
+   - **resourceType**：每个自定义组件都有一个基于其 fieldType 关联的资源类型。您可以在 Extra Byte 分区中找到[支持的 resourceType](#supported-resourcetype)。
+   - **jcr:title**：它类似于标题，但存储在组件的结构中。
+   - **fd:viewType**：表示自定义组件的名称。它是组件的唯一标识符。需要为组件创建自定义视图。
 
 添加组件定义之后，`_range.json` 文件如下：
 
@@ -117,17 +114,17 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
    1. **创建新的模型**
 
-      * 在模型数组中，添加一个新对象并设置组件模型的 `id`，以匹配先前在组件定义中配置的 `fd:viewType` 属性。
-      * 在此对象内包含一个字段数组。
+      - 在模型数组中，添加一个新对象并设置组件模型的 `id`，以匹配先前在组件定义中配置的 `fd:viewType` 属性。
+      - 在此对象内包含一个字段数组。
 
    2. **定义属性对话框的字段**
 
-      * 字段数组中的每个对象都应为容器类型组件，这样它就会作为选项卡出现在&#x200B;**属性**&#x200B;对话框中。
-      * 某些字段可以参考 `models/form-common` 中提供的可重复使用属性。
+      - 字段数组中的每个对象都应为容器类型组件，这样它就会作为选项卡出现在&#x200B;**属性**&#x200B;对话框中。
+      - 某些字段可以参考 `models/form-common` 中提供的可重复使用属性。
 
    3. **使用现有组件模型作为参考**
 
-      * 您可以复制与您选择的 `fieldType` 相对应的现有组件模型的内容，并根据需要进行修改。例如，扩展 `number-input` 组件以创建 **Range** 组件，因此我们可以使用 `models/form-components/_number-input.json` 中的模型数组作为参考。
+      - 您可以复制与您选择的 `fieldType` 相对应的现有组件模型的内容，并根据需要进行修改。例如，扩展 `number-input` 组件以创建 **Range** 组件，因此我们可以使用 `models/form-components/_number-input.json` 中的模型数组作为参考。
 
    添加组件模型之后，`_range.json` 文件如下：
 
@@ -185,10 +182,10 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
 JSON 代码片段为 **Range** 组件定义了一个名为 **Step Value** 的自定义属性。以下是每个字段的细分：
 
-* **组件**：指定“属性”对话框中使用的输入字段的类型。在这种情况下，`number` 表示该字段接受数值。
-* **名称**：属性的标识符，用于在组件的逻辑中引用它。这里的 `stepValue` 代表范围的步长值设置。
-* **标签**：在“属性”对话框中看到的属性的显示名称。
-* **valueType**：定义属性所需的数据类型。`number` 确保只允许数字输入。
+- **组件**：指定“属性”对话框中使用的输入字段的类型。在这种情况下，`number` 表示该字段接受数值。
+- **名称**：属性的标识符，用于在组件的逻辑中引用它。这里的 `stepValue` 代表范围的步长值设置。
+- **标签**：在“属性”对话框中看到的属性的显示名称。
+- **valueType**：定义属性所需的数据类型。`number` 确保只允许数字输入。
 
 您现在可以使用 `stepValue` 作为 `range.js` 的 JSON 属性中的自定义属性，并根据其运行时的值实施动态行为。
 
@@ -262,46 +259,48 @@ JSON 代码片段为 **Range** 组件定义了一个名为 **Step Value** 的自
 1. 定位组件数组在具有 `id="form"` 的对象中的位置。
 1. 将 `fd:viewType` 值从 `definitions[]` 添加到带有 `id="form"` 的对象组件数组中。
 
-```javascript
- "filters": [
-    {
-      "id": "form",
-      "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-    }
-  ]
-```
+   ```javascript
+   "filters": [
+     {
+       "id": "form", 
+       "components": [
+         "captcha",
+         "checkbox",
+         "checkbox-group",
+         "date-input",
+         "drop-down",
+         "email",
+         "file-input",
+         "form-accordion",
+         "form-button",
+         "form-fragment",
+         "form-image",
+         "form-modal",
+         "form-reset-button",
+         "form-submit-button",
+         "number-input",
+         "panel",
+         "plain-text",
+         "radio-group",
+         "rating",
+         "telephone-input",
+         "text-input",
+         "tnc",
+         "wizard",
+         "range"
+       ]
+     }
+   ]
+   ```
 
 ![组件过滤器](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
 ### &#x200B;4. 注册您的自定义组件
 
-要使 Form Block 能够识别自定义组件，并在表单创作中加载组件模型中定义的属性，请将 `fd:viewType` 值从组件定义添加到 `mappings.js` 文件。
+要使表单块能够识别自定义组件并在表单创作期间加载其在组件模型中定义的属性，请将组件定义中的`fd:viewType`值添加到`mappings.js`文件中。
+
 注册组件：
+
 1. 导航到 `/blocks/form/mappings.js` 文件。
 1. 找到 `customComponents[]` 数组的位置。
 1. 将 `fd:viewType` 值从 `definitions[]` 数组添加到 `customComponents[]` 数组。
@@ -346,7 +345,7 @@ const OOTBComponentDecorators = ['file-input',
    height: 5px;
    border-radius: 5px;
    border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% * var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps)/var(--total-steps)));
+   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
    }
    
    main .form .range-widget-wrapper.decorated input[type="range"]:focus {
@@ -358,18 +357,18 @@ const OOTBComponentDecorators = ['file-input',
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
+   background: #00008B; /- Dark Blue */
+   border: 3px solid #00008B; /- Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
+   border-color: #00008B; /- Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
+   color: #00008B; /- Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -391,6 +390,7 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
+
    代码可帮助您定义自定义组件的样式和视觉外观。
 
 1. 要添加功能，请导航到 `/blocks/form/components/range/range.js` 文件，并添加以下代码行：
@@ -406,7 +406,7 @@ const OOTBComponentDecorators = ['file-input',
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
+   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
@@ -459,18 +459,18 @@ const OOTBComponentDecorators = ['file-input',
 
 ## 常见问题解答
 
-* **如果同时在 component.css 和 forms.css 中添加样式，哪个优先？**
+- **如果同时在 component.css 和 forms.css 中添加样式，哪个优先？**
 同时在 `component.css` 和 **forms.css** 中定义样式时，`component.css` 优先。这是因为组件级样式更具体，并且会覆盖 `forms.css` 的全局样式。
 
-* **我的自定义组件在通用编辑器的可用组件列表中不可见。如何解决这个问题？**
+- **我的自定义组件在通用编辑器的可用组件列表中不可见。如何解决这个问题？**
 如果您的自定义组件没有出现，请检查以下文件，确保组件已正确注册：
-   * **component-definition.json**：验证组件是否已正确定义。
-   * **component-filters.json**：确保在适当的分区中允许使用该组件。
-   * **component-models.json**：确认组件模型已正确配置。
+   - **component-definition.json**：验证组件是否已正确定义。
+   - **component-filters.json**：确保在适当的分区中允许使用该组件。
+   - **component-models.json**：确认组件模型已正确配置。
 
 ## 最佳实践
 
-* 建议[设置本地 AEM 开发环境](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)，以便在本地开发自定义样式和组件。
+- 建议[设置本地 AEM 开发环境](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)，以便在本地开发自定义样式和组件。
 
 
 ## Extra Byte
@@ -495,19 +495,17 @@ const OOTBComponentDecorators = ['file-input',
 ### 支持的 fieldTypes
 
 表单支持的 fieldTypes 有：
-* 文本输入
-* 数字输入
-* 日期输入
-* 面板
-* 复选框
-* 下拉面板
-* 单选按钮组
-* 纯文本
-* 文件输入
-* 电子邮件
-* 图像
-* 按钮
 
-## 另请参阅
+- 文本输入
+- 数字输入
+- 日期输入
+- 面板
+- 复选框
+- 下拉面板
+- 单选按钮组
+- 纯文本
+- 文件输入
+- 电子邮件
+- 图像
+- 按钮
 
-{{universal-editor-see-also}}

@@ -4,7 +4,7 @@ description: 通过响应式设计，可以在多个设备上以多个方向有�
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 1%
@@ -85,7 +85,7 @@ W3C组提供了描述此CSS3功能和语法的[媒体查询](https://www.w3.org/
 
 ### 在AEM页面中使用媒体查询 {#using-media-queries-with-aem-pages}
 
-[WKND示例项目](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)使用[页面核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=zh-Hans)，该组件通过页面策略包含clientlibs。
+[WKND示例项目](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)使用[页面核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html)，该组件通过页面策略包含clientlibs。
 
 如果您自己的页面组件不基于页面核心组件，则还可以将客户端库文件夹包含在其的HTL或JSP脚本中。 这样做将生成并引用CSS文件，其中包含响应式网格正常运行所需的媒体查询。
 
@@ -102,7 +102,7 @@ W3C组提供了描述此CSS3功能和语法的[媒体查询](https://www.w3.org/
 <ui:includeClientLib categories="apps.weretail.all"/>
 ```
 
-JSP脚本将生成引用样式表的以下HTML代码：
+JSP脚本会生成以下引用样式表的HTML代码：
 
 ```xml
 <link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
@@ -135,16 +135,16 @@ JSP脚本将生成引用样式表的以下HTML代码：
 
 响应式页面将动态适应渲染它们的设备，为用户提供更好的体验。 不过，将资产优化到断点和设备以最大限度地缩短页面加载时间也很重要。
 
-[核心组件图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hans)具有自适应图像选择等功能。
+[核心组件图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)具有自适应图像选择等功能。
 
-* 默认情况下，图像组件使用[自适应图像Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=zh-Hans)来提供正确的演绎版。
+* 默认情况下，图像组件使用[自适应图像Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html)来提供正确的演绎版。
 * [Web优化图像投放](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=zh-Hans)也可通过其策略中的简单复选框使用，该复选框以WebP格式从DAM投放图像资产，平均可将图像的下载大小减小约25%。
 
 ## 布局容器 {#layout-container}
 
-通过AEM布局容器，您可以高效实施响应式布局，以根据客户端视区调整页面尺寸。
+AEM的布局容器允许您高效实施响应式布局，以根据客户端视区调整页面尺寸。
 
->[响应式网格的GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)是可供前端开发人员使用的参考，例如在为将来的AEM站点创建静态AEM模型时，允许他们在AEM外部使用HTML网格。
+>[响应式网格的GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)是可供前端开发人员参考的文档，以便他们能够在AEM之外使用AEM网格，例如，在为将来的AEM站点创建静态HTML模型时。
 
 >[!TIP]
 >
@@ -152,7 +152,7 @@ JSP脚本将生成引用样式表的以下HTML代码：
 
 ## 嵌套响应式网格 {#nested-responsive-grids}
 
-在某些情况下，您可能会发现有必要嵌套响应式网格来支持项目的需求。 但是，请记住，Adobe推荐的最佳做法是尽可能保持结构平整。
+在某些情况下，您可能会发现有必要嵌套响应式网格来支持项目的需求。 但是，请记住，Adobe推荐的最佳做法是保持结构尽可能平坦。
 
 当您无法避免使用嵌套的响应式网格时，请确保：
 
@@ -184,7 +184,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB 示例结果HTML]
+>[!TAB 示例生成的HTML]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

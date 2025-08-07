@@ -4,8 +4,8 @@ description: 了解如何使用 Adobe Experience Manager Edge Delivery Services 
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # 入门指南：在 AEM Edge Delivery Services 中使用表单
 
-<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。</span>
+<span class="preview">这是一项通过<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。</span>
 
 Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘区域交付极快且高度可扩展的 Web 体验。本指南说明了&#x200B;**如何构建并发布表单来确保提供这样的体验**，并提供明确的推荐层级：
 
@@ -41,11 +41,11 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 
 通用编辑器是一款面向市场营销人员和设计师的可视化拖放式创作工具，兼具高速与企业级性能优势：
 
-* 支持实时所见即所得（WYSIWYG）编辑与设备预览。
-* 高级规则与验证界面 — 无需代码。
-* 可直接集成 AEM 资产、工作流和表单数据模型（FDM）
-* 可无缝交接给开发人员，使用原生 JS/CSS 开发自定义组件
-* 灵活的提交目标：可从简单的 **Forms Submission Service（FSS）**&#x200B;起步，随着需求增长再切换至 **AEM Publish 环境提交操作**。
+- 支持实时所见即所得（WYSIWYG）编辑与设备预览。
+- 高级规则与验证界面 — 无需代码。
+- 可直接集成 AEM 资产、工作流和表单数据模型（FDM）
+- 可无缝交接给开发人员，使用原生 JS/CSS 开发自定义组件
+- 灵活的提交目标：可从简单的 **Forms Submission Service（FSS）**&#x200B;起步，随着需求增长再切换至 **AEM Publish 环境提交操作**。
 
 > **推荐**：除非您的团队完全以文档为中心，且要创建非常基础的表单，否则建议所有新表单项目均采用通用编辑器开始构建。
 
@@ -54,10 +54,10 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 
 基于文档的创作最适合使用熟悉的工具（如 Microsoft Word、Google Docs 或 Google Sheets）创建结构简单、复杂度较低的表单。此方法非常适合内容团队，以快速且简便的方式构建表单。
 
-* 在 Docs 中以表格形式定义表单字段，或在 Sheets 中以行的方式定义字段。
-* 支持基本字段验证，并可集成 Google reCAPTCHA 提供防垃圾信息保护。
-* 表单提交操作仅通过 Forms Submission Service 进行处理。
-* 即时发布——源文档中的任何更改都会立即反映到网站上，无需经过部署管道。
+- 在 Docs 中以表格形式定义表单字段，或在 Sheets 中以行的方式定义字段。
+- 支持基本字段验证，并可集成 Google reCAPTCHA 提供防垃圾信息保护。
+- 表单提交操作仅通过 Forms Submission Service 进行处理。
+- 即时发布——源文档中的任何更改都会立即反映到网站上，无需经过部署管道。
 
 
 ### 在文档创作（DA）中嵌入表单

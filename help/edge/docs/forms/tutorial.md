@@ -4,9 +4,9 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
-workflow-type: ht
-source-wordcount: '1923'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1921'
 ht-degree: 100%
 
 ---
@@ -23,10 +23,10 @@ AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻
 
 ## 先决条件
 
-* 您有 GitHub 帐户，并且了解 Git 基础知识。
-* 您有一个 Google 或 Microsoft SharePoint 帐户。
-* 您了解 HTML、CSS 和 JavaScript 的基础知识。
-* 您已安装 Node/npm 以进行本地开发。
+- 您有 GitHub 帐户，并且了解 Git 基础知识。
+- 您有一个 Google 或 Microsoft SharePoint 帐户。
+- 您了解 HTML、CSS 和 JavaScript 的基础知识。
+- 您已安装 Node/npm 以进行本地开发。
 
 **小心！** 本教程使用 macOS、Chrome 和 Visual Studio Code。虽然这些步骤可以针对其他设置进行调整，但屏幕截图和特定 UI 元素可能会根据您选择的操作系统、浏览器和代码编辑器而有所不同。
 
@@ -63,9 +63,9 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    恭喜！您有一个在 `https://<branch>--<repo>--<owner>.aem.page/` 上运行的新网站。
 
-   * `<branch>` 指 GitHub 存储库的分支。
-   * `<repository>` 表示您的 GitHub 存储库。
-   * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
+   - `<branch>` 指 GitHub 存储库的分支。
+   - `<repository>` 表示您的 GitHub 存储库。
+   - `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
    例如，如果分支名称为 `main`，存储库为 `wefinance`，所有者为 `wkndforms`，则网站将在 `https://main--wefinance--wkndforms.aem.page` 启动并运行
 &lt;!--(https://main--wefinance--wkndform.aem.page)-->
@@ -173,9 +173,9 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    https://<branch>--<repository>--<owner>.aem.live
    ```
 
-   * `<branch>` 指 GitHub 存储库的分支。
-   * `<repository>` 表示您的 GitHub 存储库。
-   * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
+   - `<branch>` 指 GitHub 存储库的分支。
+   - `<repository>` 表示您的 GitHub 存储库。
+   - `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
@@ -280,9 +280,9 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 
 1. 将下列文件夹和文件从 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 复制并粘贴到 AEM 项目中：
 
-   * [Form Block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 文件夹
-   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 文件
-   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 文件
+   - [Form Block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 文件夹
+   - [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 文件
+   - [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 文件
 1. 导航到 `/scripts/editor-support.js`AEM 项目中的文件，并通过 [AEM Forms Boilerplate 中的 editor-support.js 文件](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)将其更新
 1. 导航到 AEM 项目中的 `/models/_section.json`，然后将“form”和“embed-adaptive-form”附加到 `filters` 对象的组件数组：
 
@@ -362,13 +362,9 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 
 通过解决潜在问题，确保 GitHub 构建过程顺利进行：
 
-* **解决模块路径错误：**
+- **解决模块路径错误：**
 如果遇到错误“无法解析模块&quot;&#39;/scripts/lib-franklin.js&#39;的路径”，请导航至 [EDS 项目]/blocks/forms/form.js 文件。将 lib-franklin.js 文件替换为 aem.js 文件，可更新导入语句。
 
-* **处理 Linting 错误：**
+- **处理 Linting 错误：**
 如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS Project]/package.json 文件并将 “lint” 脚本从 `"lint": "npm run lint:js && npm run lint:css"` 修改为 `"lint": "echo 'skipping linting for now'"`。保存文件并将更改提交到您的 GitHub 项目。
 
-
-## 另请参阅
-
-{{see-more-forms-eds}}

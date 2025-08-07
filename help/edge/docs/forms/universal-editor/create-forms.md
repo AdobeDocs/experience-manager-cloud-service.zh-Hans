@@ -1,391 +1,533 @@
 ---
-title: 如何基于核心组件或 Edge Delivery Services 模板创建独立表单并将其发布到 Edge Delivery Services 上
-description: 本文介绍如何通过在表单创建向导中选择一个基于核心组件或基于 Edge Delivery Services 的模板来创建自适应表单。您还可以将表单发布到 AEM Edge Delivery Services。
+title: 使用Edge Delivery Services创建和发布自适应Forms
+description: 关于使用AEM中的核心组件或Edge Delivery Services模板创建、创作和发布自适应Forms的分步说明，侧重于技术准确性和清晰度。
+keywords: 自适应表单， edge delivery services，边缘交付服务，核心组件，通用编辑器，表单创建， AEM forms，模板选择，表单发布
 feature: Edge Delivery Services
-role: User
+role: User, Developer
+level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1774'
+ht-degree: 3%
 
 ---
 
 
-# 从创作到发布：Edge Delivery Services 上的 AEM 表单
+# 使用Edge Delivery Services创建和发布自适应Forms
 
-<span class="preview"> 此功能通过早期访问计划提供。要请求获得访问权限，请通过您的官方地址向 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 发送电子邮件，并附上您的 GitHub 组织名称和存储库名称。例如，如果存储库 URL 为 https://github.com/adobe/abc，则组织名称为 adobe，存储库名称为 abc。</span>
+本文档提供了有关使用Edge Delivery Services在AEM中创建、配置和发布自适应Forms的说明。 其中涵盖核心组件和Edge Delivery Services模板。
 
-Adobe Experience Manager (AEM) 可让您创建引人入胜的响应式动态表单。它提供多种创作方法，每种方法都适合不同的要求和用户专业知识水平。&#x200B;
+在本指南结束时，您将学习如何：
 
-本文重点介绍在 AEM 环境中创作表单并通过 Edge Delivery Services 发布的方法。使用基于核心组件的模板构建的表单可以在 AEM 和 Edge Delivery Services 上发布，从而提供部署灵活性。相比之下，使用基于 Edge Delivery Services 的模板创作的表单只能在 Edge Delivery Services 上发布。&#x200B;
+- 为您的用例选择适当的模板类型
+- 使用核心组件或Edge Delivery Services模板创建表单
+- 使用正确的编辑器创作表单
+- 配置表单并将其发布到Edge Delivery Services
+- 访问已发布的表单并验证部署
 
-![创作和发布自适应表单](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
+## 模板选择
 
-## 在 AEM 中创作表单并使用 Edge Delivery Services 发布的优势：
+在开始之前，请确定哪种模板类型符合您的要求：
 
-* **保留现有的 AEM 工作流**：组织可以继续使用其已建立的 AEM 工作流和治理结构，确保对内容创建的控制及其一致性。&#x200B;
+| 标准 | 核心组件模板 | Edge Delivery Services模板 |
+|-------------------------|-----------------------------------------|-------------------------------------|
+| 最适合 | 企业工作流，复杂的集成 | 高性能公共表单 |
+| 编辑器 | 自适应表单编辑器 | 通用编辑器 |
+| 发布 | AEM发布+ Edge Delivery Services | 仅限Edge Delivery Services |
+| 复杂度 | 高级表单功能 | 简化、快速的表单 |
+| 集成 | 完整的AEM生态系统 | 基于Git的开发 |
+| 学习曲线 | AEM用户熟悉 | 现代、简化的方法 |
 
-* **增强性能**：通过 Edge Delivery Services 发布可以加快渲染时间，改善用户体验，减少页面加载时间。&#x200B;
+**决策指导：**
 
-* **改进 SEO**：Edge Delivery Services 旨在提供具有 Google Lighthouse 高评分的内容，从而实现更好的搜索引擎优化并提高可见性。&#x200B;
+- 将&#x200B;**核心组件**&#x200B;用于复杂的工作流、深层AEM集成，或者利用现有AEM资源。
+- 使用&#x200B;**Edge Delivery Services**&#x200B;实现高性能、简洁性和现代开发实践。
 
-* **灵活的部署选项**：使用核心组件构建的表单可以在 AEM 和 Edge Delivery Services 上发布，从而提供部署策略方面的灵活性。
+![模板选择决定](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+*用于选择相应模板类型的决策流程图*
 
-## 开始之前
+## 先决条件
 
-在 AEM 中开始创作表单并通过 Edge Delivery Services 发布表单之前，请确保满足以下先决条件：
+在继续之前，请确保满足以下先决条件：
 
-* 确保您已为 Edge Delivery Services 配置了 Github 存储库。
-   * 如果您没有存储库，[预先配置了自适应表单块的新 AEM 项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)。
-   * 如果您有存储库，请将自适应表单块添加到您现有的存储库。详细说明请参阅[适用于 AEM 表单 的 Edge Delivery Services 入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)。
-* 在您的 AEM 环境和 GitHub 存储库之间建立连接。[怎么做？](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
+### 技术要求
 
-指导进行自适应表单设置和发布的决策流程图：
+- **AEM Forms as a Cloud Service**：具有Forms许可证的活动创作实例。
+- **GitHub帐户**：用于存储库管理的个人或组织帐户。
+- **存储库设置**：选择下列选项之一：
+   - **新项目**： [创建具有自适应AEM块的新Forms项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)。 已为Edge Delivery Services预配置存储库。
+   - **现有项目**： [将自适应Forms块添加到现有存储库](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)并更新配置。
 
-![Github 存储库工作流](/help/forms/assets/repo-workflow.png){width=auto}
+### 环境配置
 
-## 在 AEM 中创作表单并将其发布到 Edge Delivery Services
+- **AEM-GitHub连接**： [在AEM实例和GitHub存储库之间建立连接](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)。
+- **Edge Delivery Services**：确保存储库配置为自动部署。
+- **权限**：验证您是否具有创建和发布表单所需的访问权限。
 
-请按照以下步骤在 AEM 中创作表单并将其发布到 Edge Delivery Services：
+### 设置验证
 
-[&#x200B;1. 选择一个模板，创建表单](#choose-a-template-and-create-the-form)
 
-[&#x200B;2. 创作表单](#author-the-form)
+1. 确认GitHub存储库包含自适应Forms块。
+2. 测试AEM与GitHub存储库之间的连接。
+3. 确保您可以将内容发布到Edge Delivery Services。
 
-[&#x200B;3. 发布表单](#publish-a-form)
 
-### 选择一个模板，创建表单
 
-您可以在 AEM 实例上创建表单，然后使用以下方式发布到 Edge Delivery Services：
+## 表单创建和发布工作流程
+
+该过程包括三个主要阶段：
+
+- **阶段1：**[模板选择和表单创建](#step-1-template-selection-and-form-creation)
+- **阶段2：**[表单创作和设计](#step-2-form-authoring-and-design)
+- **阶段3：** [配置和发布](#step-3-configuration-and-publishing)
+
+每个阶段都包括验证步骤，以确认设置正确。
+
+![三阶段工作流](/help/edge/docs/forms/universal-editor/assets/three-phase-workflow.svg)
+*表单创建和发布的三个主要阶段概述*
+
+### 步骤1：模板选择和表单创建
+
+根据模板选择选择工作流：
 
 >[!BEGINTABS]
 
->[!TAB 基于 Edge Delivery Services 的模板]
+>[!TAB Edge Delivery Services模板]
 
-执行以下步骤来选择模板并创建表单：
+**用例：**&#x200B;高性能表单和现代开发工作流。
 
-1. 登录您的 AEM Forms as a Cloud Service 作者实例。
-1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
-1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。向导随即打开。
-1. 在&#x200B;**源**&#x200B;选项卡中，选择一个&#x200B;**基于 Edge Delivery Services 的模板**：
+**功能：**&#x200B;通用编辑器创作和Edge Delivery Services发布。
 
-   ![创建 EDS 表单](/help/edge/assets/create-eds-forms.png)
+#### 程序
 
-   选择&#x200B;**基于 Edge Delivery Services 的模板**&#x200B;后，**[!UICONTROL 创建]**&#x200B;按钮就被启用。
-1. （可选）在&#x200B;**[!UICONTROL 数据源]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中，您可以选择数据源或提交操作。
-1. （可选）在&#x200B;**[!UICONTROL 投放]**&#x200B;选项卡中，您可以为表单指定发布或取消发布日期。
-1. 点击&#x200B;**[!UICONTROL 创建]**，会出现&#x200B;**创建表单**&#x200B;向导：
+1. **访问表单创建**
+   - 登录到您的AEM Forms as a Cloud Service创作实例。
+   - 导航到&#x200B;**Adobe Experience Manager** > **Forms** > **Forms和文档**。
+   - 单击&#x200B;**创建** > **自适应Forms**。
 
-   1. 指定&#x200B;**名称**&#x200B;和&#x200B;**标题**。
-   1. 指定 **GitHub URL**。例如，如果您的 GitHub 存储库名为 `edsforms`，则它位于帐户 `wkndforms` 下，其 URL 为：
-      `https://github.com/wkndforms/edsforms`
+1. **选择模板**
+   - 在&#x200B;**Source**&#x200B;选项卡中，选择基于&#x200B;**Edge Delivery Services的模板**。
+   - **创建**&#x200B;按钮变为启用状态。
+
+     ![创建 EDS 表单](/help/edge/assets/create-eds-forms.png)
+
+1. **配置选项（可选）**
+   - **数据Source选项卡**：根据需要选择数据集成。
+   - **提交选项卡**：选择提交操作（可以稍后配置）。
+   - **传递选项卡**：设置发布/取消发布计划。
+
+1. **完成表单设置**
+   - 单击&#x200B;**创建**&#x200B;以打开表单创建向导。
+   - 输入以下内容：
+      - **名称**：内部标识符（无空格，使用连字符）。
+      - **标题**：表单的显示名称。
+      - **GitHub URL**：存储库URL （例如，`https://github.com/your-org/your-repo`）。
 
    ![创建表单向导](/help/edge/assets/create-form-wizard.png)
 
-   单击&#x200B;**[!UICONTROL 创建]**&#x200B;后，表单就会在通用编辑器中打开以供创作。
+1. **验证**
+   - 单击&#x200B;**创建**&#x200B;后，请验证：
+      - 该表单将在通用编辑器中打开。
+      - GitHub URL链接正确。
+      - 组件面板可用。
+      - 表单画布可见。
 
-   ![通用编辑器界面截图，展示了表单创作过程：左侧为组件面板，中间为表单画布，右侧为属性面板](/help/edge/assets/author-form.png)
-1. 点击&#x200B;**[!UICONTROL 创建]**，创建表单。现在，您可以[使用通用编辑器创作表单](#author-the-form)。
+   ![通用编辑器界面](/help/edge/assets/author-form.png)
 
->[!TAB 基于核心组件的模板]
+**结果：**&#x200B;表单已准备好在通用编辑器中创作。
 
-执行以下步骤来选择模板并创建表单：
+>[!TAB 核心组件模板]
 
-1. 登录您的 AEM Forms as a Cloud Service 作者实例。
-1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
-1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。向导随即打开。
-1. 在&#x200B;**源**&#x200B;选项卡中选择一个&#x200B;**基于核心组件的模板**&#x200B;和一个&#x200B;**主题**，**[!UICONTROL 创建]**&#x200B;按钮就会启用。
+**用例：**&#x200B;企业工作流和复杂集成。
 
-   ![基于核心组件的模板](/help/forms/assets/core-component-based-template.png)
+**功能：**&#x200B;自适应Forms编辑器创作、双重发布(AEM + Edge Delivery Services)、高级表单功能。
 
-1. （可选）在&#x200B;**[!UICONTROL 数据源]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡中，您可以选择数据源或提交操作。
-1. （可选）在&#x200B;**[!UICONTROL 投放]**&#x200B;选项卡中，您可以为表单指定发布或取消发布日期。
-1. 点击&#x200B;**[!UICONTROL 创建]**，会出现&#x200B;**创建表单**&#x200B;向导：
-   1. 指定&#x200B;**名称**&#x200B;和&#x200B;**标题**。
-   1. 在&#x200B;**路径**&#x200B;字段中指定自适应表单的保存位置。
+#### 程序
 
-   ![创建表单向导](/help/forms/assets/create-cc-form.png)
+1. **访问表单创建**
+   - 登录到您的AEM Forms as a Cloud Service创作实例。
+   - 导航到&#x200B;**Adobe Experience Manager** > **Forms** > **Forms和文档**。
+   - 单击&#x200B;**创建** > **自适应Forms**。
 
-   点击&#x200B;**[!UICONTROL 创建]**，表单就会在自适应表单编辑器中打开以供创作。
+1. **选择模板和主题**
+   - 在&#x200B;**Source**&#x200B;选项卡中，选择&#x200B;**基于核心组件的模板**。
+   - 选择样式的&#x200B;**主题**。
+   - **创建**&#x200B;按钮变为启用状态。
 
-   ![自适应表单编辑器](/help/forms/assets/af-editor-form.png)
+   ![核心组件模板选择](/help/forms/assets/core-component-based-template.png)
 
-1. 点击&#x200B;**[!UICONTROL 创建]**，创建表单。现在，您可以[使用自适应表单编辑器创作表单](#author-the-form)。
+1. **配置选项（可选）**
+   - **数据Source选项卡**：根据需要选择数据集成。
+   - **提交选项卡**：选择提交操作（可以稍后配置）。
+   - **传递选项卡**：设置发布/取消发布计划。
+
+1. **完成表单设置**
+   - 单击&#x200B;**创建**&#x200B;以打开表单创建向导。
+   - 输入以下内容：
+      - **名称**：内部标识符（无空格，使用连字符）。
+      - **标题**：表单的显示名称。
+      - **路径**： AEM存储库中的存储位置。
+
+     ![创建表单向导](/help/forms/assets/create-cc-form.png)
+
+1. **验证**
+   - 单击&#x200B;**创建**&#x200B;后，请验证：
+      - 该表单将在自适应Forms编辑器中打开。
+      - 组件工具栏可用。
+      - 属性面板可访问。
+      - 应用主题样式。
+
+     ![自适应表单编辑器](/help/forms/assets/af-editor-form.png)
+
+**结果：**&#x200B;表单已准备好在自适应Forms编辑器中创作。
 
 >[!ENDTABS]
 
-### 创作表单
+### 第2步：表单创作和设计
 
-使用基于 Edge Delivery Services 的模板创建的表单可以在[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)中打开进行创作。但是，使用基于核心组件的模板创建的表单会在自适应表单编辑器中打开以供创作。
+创作体验因模板而异：
 
-执行以下步骤，为基于 Edge Delivery Services 的模板使用通用编辑器或为基于核心组件的模板使用自适应表单编辑器来创作表单：
+- **Edge Delivery Services模板**：通用编辑器
+- **核心组件模板**：自适应Forms编辑器
+
+![编辑器比较](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg)
+*通用编辑器与自适应Forms编辑器功能的比较*
 
 >[!BEGINTABS]
 
->[!TAB 基于 Edge Delivery Services 的模板]
+>[!TAB 通用编辑器(Edge Delivery Services)]
 
+**界面：**&#x200B;针对性能进行了优化的现代简化编辑。
 
-1. 打开内容浏览器，然后导航到&#x200B;**内容树**&#x200B;中的&#x200B;**[!UICONTROL 自适应表单]**&#x200B;组件。
+#### 添加表单组件
 
-   ![内容树](/help/edge/assets/content-tree.png)
+1. **访问组件库**
+   - 在通用编辑器中打开内容浏览器。
+   - 导航到内容树中的&#x200B;**自适应表单**&#x200B;组件。
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**列表中添加所需的组件。
+   ![内容树导航](/help/edge/assets/content-tree.png)
+
+1. **添加表单字段**
+   - 单击&#x200B;**添加**&#x200B;图标以打开组件库。
+   - 从&#x200B;**自适应表单组件**&#x200B;列表中选择组件。
+   - 将组件拖放到表单画布上。
+
    ![添加组件](/help/edge/assets/add-component.png)
 
-   下面的屏幕快照显示了在通用编辑器中创作的 `Registration Form` 表单：
+1. **设计表单**
+   - 在属性面板中配置字段属性。
+   - 设置验证规则和行为。
+*s根据需要调整样式和布局。
 
-   ![通用编辑器中已完成的“联系我们”表单截图，其中包含姓名、电子邮件、电话和留言字段，并具备良好的样式和布局](/help/edge/assets/contact-us.png)
+   ![已填写注册表单](/help/edge/assets/contact-us.png)
 
->[!NOTE]
->
-> 有关使用通用编辑器创作自适应表单的详细说明，[请点击此处](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)。
+#### 验证
 
-您现在可以[配置和自定义表单的提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)。
+- 所有必填字段都存在。
+- 字段属性已正确配置。
+- 布局响应灵敏且可访问。
+- 验证规则按预期运行。
 
->[!TAB 基于核心组件的模板]
+#### 后续步骤
 
-1. 点击&#x200B;**将组件拖放至此**&#x200B;部分中的&#x200B;**[!UICONTROL 插入组件]**。
+- [配置提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)以进行数据处理。
+- 用于高级功能的[通用编辑器指南](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)。
 
-   ![将组件拖放至此](/help/forms/assets/drag-components-af-editor.png)
+>[!TAB 自适应Forms编辑器（核心组件）]
 
-1. 从&#x200B;**自适应表单组件**&#x200B;列表中添加所需的组件。
+**界面：**&#x200B;具有高级表单功能的全功能编辑。
 
-   ![添加组件](/help/forms/assets/add-component-af.png)
+#### 添加表单组件
 
-下面的屏幕快照显示了在自适应表单编辑器中创作的 `Enrollment Form` 表单：
+1. **访问组件库**
+   - 点击&#x200B;**将组件拖放至此**&#x200B;部分中的&#x200B;**插入组件**。
 
-![自适应表单编辑器](/help/forms/assets/af-editor-form.png)
+   ![组件插入区域](/help/forms/assets/drag-components-af-editor.png)
 
->[!NOTE]
->
-> 有关基于核心组件的模板创建自适应表单的详细说明，[请点击此处](/help/forms/creating-adaptive-form-core-components.md)。
+2. **添加表单字段**
+   - 浏览&#x200B;**自适应表单组件**&#x200B;列表。
+   - 将所需的组件拖到表单中。
+   - 使用高级组件，例如面板、向导和数据集成。
 
-您现在可以[配置表单提交操作](/help/forms/configure-submit-actions-core-components.md)。
+   ![添加组件库](/help/forms/assets/add-component-af.png)
 
->[!ENDTABS]
+3. **设计表单**
+   - 在属性面板中配置字段属性。
+   - 设置复杂的验证规则和业务逻辑。
+   - 应用主题和高级样式。
 
-### 发布该表单
+   ![已填写注册表单](/help/forms/assets/af-editor-form.png)
 
-要在 Edge Delivery Services 上发布自适应表单，您需要[在 AEM 实例上创建 Edge Delivery Services 配置](#create-an-edge-delivery-services-configuration)。
+#### 验证
 
-#### 创建 Edge Delivery Services 配置
+- 所有必填字段都存在。
+- 配置复杂的验证规则。
+- 应用主题样式。
+- 数据集成按预期工作（如果适用）。
 
-执行以下步骤来创建 Edge Delivery Services 配置：
+#### 后续步骤
 
->[!BEGINTABS]
->[!TAB 基于 Edge Delivery Services 的模板]
-
-
-基于 Edge Delivery Services 模板的表单的 Edge Delivery Services 配置会在表单的配置容器中自动创建。
-
-![Edge Delivery Services 配置](/help/edge/assets/aem-instance-eds-configuration.png)
-
->[!TAB 基于核心组件的模板]
-
-1. 导航至 AEM Forms as a Cloud Service 作者实例上的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Edge Delivery Services 配置]**。
-
-   ![选择 Edge Delivery Services 配置](/help/edge/assets/select-eds-conf.png)
-
-2. 选择与表单名称匹配的文件夹。例如，如果您的表单名为 `enrollment-form`，请选择文件夹 `forms/enrollment-form`，然后点击&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 配置]**：
-
-   ![Edge Delivery Services 配置](/help/forms/assets/create-eds-conf.png)
-
-3. 点击 **[!UICONTROL Edge Delivery Services 配置]**，然后点击&#x200B;**[!UICONTROL 属性]**，打开属性：
-
-   ![自动创建的配置](/help/forms/assets/eds-conf.png)
-
-   Edge Delivery Services 配置出现。
-
-4. 在 Edge Delivery Services 配置中指定以下各项：
-
-   * **组织**：指定您的 GitHub 组织名称。
-
-   * **站点名称**：指定您的 GitHub 存储库名称。
-   * **分支**：指定分支名称。如果使用主分支，请将该文本框留空。
-   * **（可选）Edge Host**：将 Edge Host 选项保留原样。表单被发布到预览（.page）和实时（.live）两个环境。
-   * **（可选）站点身份验证令牌**：使用站点身份验证令牌安全地验证 AEM 实例和 Edge Delivery Services 之间的请求。
-
-5. 选择&#x200B;**[!UICONTROL 保存并关闭]**。现在创建配置。
+- [为高级工作流配置提交操作](/help/forms/configure-submit-actions-core-components.md)。
+- 用于企业功能的[核心组件指南](/help/forms/creating-adaptive-form-core-components.md)。
 
 >[!ENDTABS]
 
-#### 在 Edge Delivery Services 上访问表单
+### 步骤3：配置和发布
 
-要访问 Edge Delivery Services 上的表单，必须发布该表单。执行以下步骤来发布表单：
+配置Edge Delivery Services并发布表单。 该流程因模板类型而异。
+
+#### Edge Delivery Services配置
 
 >[!BEGINTABS]
->[!TAB 在通用编辑器上]
+>[!TAB Edge Delivery Services模板（自动）]
 
-1. 点击通用编辑器右上角的&#x200B;**[!UICONTROL 发布]**&#x200B;按钮发布表单。
+**配置：**&#x200B;自动（无需手动设置）。
 
-![通用编辑器界面截图，展示了包含表单发布选项和确认按钮的发布对话框](/help/edge/assets/publish-form.png)
+- GitHub存储库连接和Edge Delivery Services配置是在表单创建期间创建的。
+- 发布端点会自动配置。
 
->[!NOTE]
->
-> 请参阅[发布和部署](/help/edge/docs/forms/universal-editor/publish-forms.md)一文，了解如何将表单发布到 Edge Delivery Services。
+**验证：**
 
->[!TAB 在自适应表单编辑器上]
+- 确认表单设置中显示配置。
+- 确保GitHub URL链接正确。
 
-1. 从 Experience Manager Forms 控制台导航到父级文件夹，然后选择要发布的表单。
+![自动EDS配置](/help/edge/assets/aem-instance-eds-configuration.png)
 
-1. 点击工具栏中的&#x200B;**[!UICONTROL 发布]** 选项，查看将随表单发布的所有引用资产。
+>[!TAB 核心组件模板（手动）]
+
+**配置：**&#x200B;需要手动安装。
+
+#### 手动配置步骤
+
+1. **访问配置工具**
+   - 导航到&#x200B;**工具** > **云服务** > **Edge Delivery Services配置**。
+
+   ![EDS配置访问权限](/help/edge/assets/select-eds-conf.png)
+
+1. **创建配置**
+   - 选择与表单名称匹配的文件夹（例如，`forms/enrollment-form`）。
+   - 单击&#x200B;**创建** > **配置**。
+
+   ![创建EDS配置](/help/forms/assets/create-eds-conf.png)
+
+1. **配置属性**
+   - 单击&#x200B;**Edge Delivery Services配置**。
+   - 选择&#x200B;**属性**&#x200B;以打开配置对话框。
+
+   ![配置属性](/help/forms/assets/eds-conf.png)
+
+1. **设置参数**
+   - **必需：**
+      - **组织**： GitHub组织名称。
+      - **站点名称**： GitHub存储库名称。
+      - **分支**：分支名称（主名称留空）。
+   - **可选：**
+      - **Edge主机**：默认值（发布到.page和.live）。
+      - **站点身份验证令牌**：用于安全身份验证（如果需要）。
+
+1. **保存配置**
+   - 单击&#x200B;**保存并关闭**。
+
+#### 验证
+
+- 配置创建成功。
+- 正确指定GitHub组织和存储库。
+- 分支设置与存储库结构匹配。
+- 该表单将显示在配置文件夹中。
+
+>[!ENDTABS]
+
+#### 发布表单
+
+>[!BEGINTABS]
+>[!TAB 通用编辑器发布]
+
+用于Edge Delivery Services模板的&#x200B;****
+
+1. 在通用编辑器中，单击&#x200B;**发布**&#x200B;按钮（右上角）。
+2. 在对话框中确认发布成功。
+3. 请注意为暂存版本和实时版本生成的URL。
+
+   ![通用编辑器发布](/help/edge/assets/publish-form.png)
+
+- [发布指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
+
+>[!TAB 自适应Forms编辑器发布]
+
+1. 在Experience Manager Forms控制台中，选择要发布的表单。
+2. 单击工具栏中的&#x200B;**[!UICONTROL 发布]**。 查看要发布的参考资源。
 
 ![在自适应表单编辑器上发布表单](/help/forms/assets/publish-af-editor.png)
 
 >[!NOTE]
 >
-> 请参阅[在 Experience Manager Forms 中管理发布](/help/forms/manage-publication.md)文章，了解如何在自适应表单编辑器上发布表单。
+> 有关详细信息，请参阅[在Experience Manager Forms中管理发布](/help/forms/manage-publication.md)。
 
 >[!ENDTABS]
 
-* **暂存版本（用于测试）**：暂存版本显示的是表单的未发布工作版本，用于测试目的。在表单上线前，请使用以下 URL 格式预览表单：
+## 表单URL
 
-  `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
+可通过Edge Delivery Services URL访问发布的表单。
 
+### URL结构
 
+- **暂存（预览/测试）：**
 
-* **实时版本（已发布的表单）**：实时版本显示表单的最新发布版本，可供最终用户访问。使用以下 URL 格式访问已发布的表单实时版本：
+  ```
+  https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
+  ```
 
-  `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
+- **实时（生产）：**
 
-  暂存版本和实时版本的 URL 结构相同。不过，根据上下文的不同，您看到的内容也有所不同。
+  ```
+  https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
+  ```
 
-以下屏幕快照比较了使用基于 Edge Delivery Services 和基于核心组件的模板创建的表单的暂存及实时表单 URL 以及视觉预览：
+#### URL 参数
 
->[!BEGINTABS]
->[!TAB 基于 Edge Delivery Services 的模板]
+- `<branch>`： GitHub分支名称（例如，`main`，`develop`）
+- `<repo>`： GitHub存储库名称（例如，`my-forms-project`）
+- `<owner>`： GitHub组织或用户名（例如，`company-name`）
+- `<form_name>`：在AEM中定义的表单标识符（例如，`contact-us`）
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead>
-    <tr>
-      <th style="width: 20%;"><strong>版本</strong></th>
-      <th style="width: 80%;"><strong>图像</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>暂存版本</td>
-      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="注册表单暂存版本" style="width: 100%; height: auto;" /></td>
-    </tr>
-    <tr>
-      <td>实时版本</td>
-      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="注册表单实时版本" style="width: 100%; height: auto;" /></td>
-    </tr>
-    </tbody>
-  </table>
+#### 示例
 
->[!TAB 基于核心组件的模板]
+组织`contact-us`下的存储库`forms-project`中的表单`acme-corp`示例：
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-  <thead>
-    <tr>
-      <th style="width: 20%;"><strong>版本</strong></th>
-      <th style="width: 80%;"><strong>图像</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>暂存版本</td>
-      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="登记表单暂存版本" style="width: 100%; height: auto;" /></td>
-    </tr>
-    <tr>
-      <td>实时版本</td>
-      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="登记表单实时版本" style="width: 100%; height: auto;" /></td>
-    </tr>
-  </tbody>
-  </table>
+- **已暂存：** `https://main--forms-project--acme-corp.aem.page/content/forms/af/contact-us`
+- **实时：**`https://main--forms-project--acme-corp.aem.live/content/forms/af/contact-us`
 
->[!ENDTABS]
+#### 环境差异
+
+- **暂存(.page)：**&#x200B;测试的最新更改。
+- **实时(.live)：**&#x200B;已发布用于生产的内容。
+
+![URL结构](/help/edge/docs/forms/universal-editor/assets/url-structure.svg)
+*Edge Delivery Services表单URL结构划分*
+
+#### 可视化示例
+
+**Edge Delivery Services模板：**
+
+- 暂存： ![注册表单暂存版本](/help/forms/assets/registration-form-staged-version.png)
+- 实时：![注册表实时版本](/help/forms/assets/registration-form-live-version.png)
+
+**核心组件模板：**
+
+- 暂存： ![注册表单暂存版本](/help/forms/assets/enrollment-form-staged-version.png)
+- 实时：![注册表单实时版本](/help/forms/assets/enrollment-form-live-version.png)
 
 ## 疑难解答
 
-是否在加载表单时遇到了问题？以下是一些常见问题及其解决方法：
+以下是带有Edge Delivery Services的AEM Forms的常见问题和解决方案。
 
-* **表单 URL**：仔细检查表单的 URL 末尾是否包含 “.html” 扩展名。Edge Deliver Service 不需要此扩展名。
++++表单未加载
 
-* **AEM 作者 URL**：确保 `fstab.yaml` 文件中列出的 AEM 作者 URL 格式正确。它应包括以下详细信息：
+**问题：**&#x200B;表单URL返回404或空白页。
 
-   * 正确的 GitHub 所有者
-   * 正确的存储库名称
-   * 用于 Edge Delivery Services 的特定分支
+**分辨率：**
 
-## 开始创建表单
+- 从URL中删除`.html`扩展名。
+- 验证表单是否已发布。
+- 查看GitHub存储库中的自适应Forms块。
+- 确保表单名称与URL匹配（区分大小写）。
 
-{{universal-editor-see-also}}
++++
 
-<!-- * **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
++++配置问题
 
-### Managing a form
+**问题：** Edge Delivery Services配置无法正常工作。
 
-You can perform several operations on form using the AEM Forms user interface.
+**分辨率：**
 
-1. Login into your AEM Forms as a Cloud Service author instance.
-1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+- 确保GitHub URL为`https://github.com/owner/repository`格式。
+- 在配置中使用正确的分支名称。
+- 验证存储库访问权限（公开或已验证）。
+- 检查`fstab.yaml`以了解正确的GitHub详细信息。
 
-1. Select a form and the toolbar displays the following operations you can perform on the selected form.
++++
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Operation</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Edit</p> </td>
-   <td><p>Opens the form in edit mode.<br /> <br /> </p> </td>
-  </tr>
-    <tr>
-   <td><p>Properties</p> </td>
-   <td><p>Provides options to modify the properties of the form.<br /> <br /> </p> </td>
-  </tr>
-  <td><p>Copy</p> </td>
-   <td><p> Provides options to copy the form  and paste it at the desired location. <br /> <br /> </p> </td>
-  </tr>
-   <tr>
-   <td><p>Preview</p> </td>
-   <td><p>Provides options to preview the form as HTML or perform a custom preview by merging data from an XML file with the form. <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Download</p> </td>
-   <td><p>Downloads the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Start Review/Manage Review</p> </td>
-   <td><p>Allows initiating and managing a review of the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Publish / Unpublish</p> </td>
-   <td><p>Publishes / unpublishes the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Delete</p> </td>
-   <td><p>Deletes the selected form.<br /> <br /> </p> </td>
-  </tr>
-  <tr>
-   <td><p>Compare</p> </td>
-   <td><p>Compares two different form for previewing purposes.<br /> <br /> </p> </td>
-  </tr>
- </tbody>
-</table> 
++++发布问题
 
+**问题：**&#x200B;更改未出现在实时网站上。
 
-## How Edge Delivery Services Forms Work?
+**分辨率：**
 
-Users can author Edge Delivery Services Forms using document-based authoring tools such as Google Drive, SharePoint, or the Universal Editor (WYSIWYG authoring), while leveraging the basic styling, behaviour and components available in the GitHub repository. Once authored, Edge Delivery Services Forms can send data to any platform using the Forms Submission Service.
+- 等待2-3分钟以刷新CDN缓存。
+- 确认发布工作流已完成。
+- 首先在暂存(.page)环境中测试。
+- 确保GitHub存储库已更新。
 
-![How Edge Delivery Services Forms works](/help/edge/docs/forms/assets/eds-forms-working.png)
++++
 
-### Key components of Edge Delivery Services Forms
++++通用编辑器问题
 
-The key components of Edge Delivery Servies Forms are:
+**问题：**&#x200B;无法编辑未加载的表单或组件。
 
-* **GitHub Repository**: The GitHub repository serves as a boilerplate for creating Edge Delivery Services Forms. The forms leverage basic styling and functionality from the repository and allow users to add customizations and custom components to the Edge Delivery Services Forms.
+**分辨率：**
 
-* **Form Authoring**: Edge Delivery Services Forms support two types of authoring: WYSIWYG and document-based authoring. Document-based authoring enables users to create forms using familiar tools like Google Docs and Microsoft Office. WYSIWYG authoring allows users to design forms visually using the Universal Editor, making it easy for non-technical users to create and manage forms. Universal Editor offers an intuitive form creation experience and provides access to numerous form capabilities.
+- 使用支持的浏览器(Chrome、Firefox、Safari)。
+- 清除浏览器缓存和Cookie。
+- 检验网络连接。
+- 确认作者权限。
 
-* **Forms Submission Service**: The Forms Submission Service allows you to store data from forms submissions on any platform, such as OneDrive, SharePoint, or Google Sheets, making it easy to access and manage form data within your preferred system.-->
++++
+
++++表单提交错误
+
+**问题：**&#x200B;表单提交不起作用。
+
+**分辨率：**
+
+- 在表单属性中配置提交操作。
+- 手动测试提交端点。
+- 如果嵌入表单，请选中CORS设置。
+- 验证是否已配置必填字段。
+
++++
+
++++性能问题
+
+**问题：**&#x200B;表单加载缓慢或性能不佳。
+
+**分辨率：**
+
+- 优化图像。
+- 删除不必要的组件。
+- 利用Edge Delivery Services CDN。
+- 最大程度地减少自定义JavaScript/CSS。
+
++++
+
++++获取帮助
+
+如果问题仍然存在：
+
+1. 检查Adobe Experience Cloud服务状态。
+2. 查看[Edge Delivery Services文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。
+3. 访问[Adobe Experience League社区](https://experienceleaguecommunities.adobe.com/)。
+4. 联系Adobe客户关怀部门。
+
++++
+
+## 后续步骤
+
+完成表单创建和发布后，请考虑以下事项：
+
+### 立即操作
+
+- 使用本指南测试您的表单。
+- 验证GitHub存储库和AEM连接。
+- 查看示例表单。
+
+### 高级主题
+
+- [配置提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)：设置数据处理和集成。
+- [表单数据模型](/help/forms/create-form-data-models.md)：将表单连接到后端数据源。
+
+### 性能优化
+
+- [Edge Delivery Services最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)：最大化性能。
+- [表单分析](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html)：跟踪表单性能和用户行为。
+

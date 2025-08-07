@@ -4,9 +4,9 @@ description: Edge Delivery Services for AEM Forms 快速入门。快速制作完
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '807'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '805'
 ht-degree: 100%
 
 ---
@@ -26,9 +26,9 @@ AEM Forms Edge Delivery 提供了一个称为 Adaptive Forms Block 的区块，�
 
 在开始之前，请确保您已完成以下步骤：
 
-* [使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)[将 Adaptive Forms Block 添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并克隆本地计算机上相应的 GitHub 存储库。
+- [使用 AEM Forms 样板设置 AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)[将 Adaptive Forms Block 添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)，并克隆本地计算机上相应的 GitHub 存储库。
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅[如何使用 SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)
+- 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅[如何使用 SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
@@ -54,10 +54,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ 步骤 1：使用 Microsoft Excel 或 Google Sheet 创建表单。
@@ -105,9 +105,9 @@ Ensure a smooth GitHub build process by addressing potential issues:
        https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` 指 GitHub 存储库的分支。
-   * `<repository>` 表示您的 GitHub 存储库。
-   * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
+   - `<branch>` 指 GitHub 存储库的分支。
+   - `<repository>` 表示您的 GitHub 存储库。
+   - `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
    例如，如果您的项目存储库名为 “wefinance” 且位于帐户 “wkndform” 下，并且您使用的是 “main” 分支，则 URL 如下所示：
 
@@ -164,6 +164,3 @@ Ensure a smooth GitHub build process by addressing potential issues:
 [准备您的电子表格](/help/edge/docs/forms/submit-forms.md)以在表单提交后开始接受数据。
 
 
-## 另请参阅
-
-{{see-more-forms-eds}}

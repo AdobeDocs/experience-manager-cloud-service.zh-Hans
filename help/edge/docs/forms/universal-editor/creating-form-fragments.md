@@ -4,10 +4,10 @@ description: 了解如何在通用编辑器中创建表单片段并将其添加�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1401'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1407'
+ht-degree: 97%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 100%
 
 ## Edge Delivery Services 表单片段的功能
 
-* **使用表单片段保持一致性：**
+- **使用表单片段保持一致性：**
 您可以将片段集成到不同的表单中，有助于保持一致的布局和标准化的内容。
 
   >[!NOTE]
   >
   > 通过“一次更改，随处反映”的方法，对片段所做的任何更新都会在预览模式中自动应用于所有表单。但是在发布模式下，您必须发布片段或重新发布表单才能反映更改。
 
-* **在表单中多次添加表单片段：**
+- **在表单中多次添加表单片段：**
 您可以在一个表单中多次添加某个表单片段，并将其数据绑定属性配置为数据源或模式。
 
-* **在片段中使用片段：**
+- **在片段中使用片段：**
 您可以创建表单片段嵌套，这意味着您可以在一个片段中添加另一个片段，形成片段嵌套结构。
 
   >[!NOTE]
@@ -43,23 +43,23 @@ ht-degree: 100%
 
 ## 使用 Edge Delivery Services 表单片段时的考虑事项
 
-* 您需要将同一个 GitHub URL 添加到片段以及您打算使用该片段的表单中。
-* 您不能编辑一个表单内的表单片段。要进行更改，请更改独立的表单片段。
+- 您需要将同一个 GitHub URL 添加到片段以及您打算使用该片段的表单中。
+- 您不能编辑一个表单内的表单片段。要进行更改，请更改独立的表单片段。
 
 ## 先决条件
 
-* [设置您的 GitHub 存储库](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)，以在您的 AEM 环境和 GitHub 存储库之间建立连接。
-* 如果您已经在使用 Edge Delivery Services，请将最新版本的 [Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) 添加到您的 GitHub 存储库。
-* AEM Forms 作者实例包含一个基于 Edge Delivery Services 的模板。
-* 保存 AEM Forms as a Cloud Service 作者实例的 URL 和您方便的 GitHub 存储库。
+- [设置您的 GitHub 存储库](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)，以在您的 AEM 环境和 GitHub 存储库之间建立连接。
+- 如果您已经在使用 Edge Delivery Services，请将最新版本的 [Adaptive Forms Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) 添加到您的 GitHub 存储库。
+- AEM Forms 作者实例包含一个基于 Edge Delivery Services 的模板。
+- 保存 AEM Forms as a Cloud Service 作者实例的 URL 和您方便的 GitHub 存储库。
 
 ## 使用 Edge Delivery Services 表单片段
 
 您可以在通用编辑器中创建 Edge Delivery Services 表单片段，然后将创建的片段添加到 Edge Delivery Services 表单。您可以使用 Edge Delivery Services 表单片段执行以下操作：
 
-* [创建表单片段](#creating-form-fragments)
-* [将表单片段添加到一个表单](#adding-form-fragments-to-a-form)
-* [管理表单片段](#managing-form-fragments)
+- [创建表单片段](#creating-form-fragments)
+- [将表单片段添加到一个表单](#adding-form-fragments-to-a-form)
+- [管理表单片段](#managing-form-fragments)
 
 ### 创建表单片段
 
@@ -84,14 +84,14 @@ ht-degree: 100%
 
    ![显示“表单模型”选项卡中的模型类型](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   * **表单数据模型 (FDM)**：将来自数据源的数据模型对象和服务集成到您的片段中。如果您的表单需要从多个来源读写数据，请选择表单数据模型 (FDM)。
+   - **表单数据模型 (FDM)**：将来自数据源的数据模型对象和服务集成到您的片段中。如果您的表单需要从多个来源读写数据，请选择表单数据模型 (FDM)。
 
-   * **JSON 架构**：通过关联一个定义数据结构的 JSON 架构将您的表单与后端系统集成。它允许您使用架构元素添加动态内容。
-   * **无**：指定从头开始创建片段，不使用任何表单模型。
+   - **JSON 架构**：通过关联一个定义数据结构的 JSON 架构将您的表单与后端系统集成。它允许您使用架构元素添加动态内容。
+   - **无**：指定从头开始创建片段，不使用任何表单模型。
 
    >[!NOTE]
    >
-   > 要了解如何在通用编辑器中将表单或片段与表单数据模型 (FDM) 集成以使用不同的后端数据源，[单击这里](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
+   > 要了解如何将表单或片段与通用编辑器中的表单数据模型(FDM)集成以使用多种后端数据源，请参阅[将表单与通用编辑器中的表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
 
 1. （可选）在&#x200B;**高级**&#x200B;选项卡中为该片段指定&#x200B;**发布日期**&#x200B;或者&#x200B;**取消发布日期**。
 
@@ -211,10 +211,8 @@ ht-degree: 100%
 
 ## 最佳实践
 
-* 确保片段名称是唯一的。如果已经存在一个同名的片段，该片段创建就会失败。
-* 独立表单片段在通过引用插入表单或嵌入表单时，其中的任何表达式、脚本或样式都会被保留。
-* 当您发布表单时，表单内通过引用插入的表单片段将自动发布。
+- 确保片段名称是唯一的。如果已经存在一个同名的片段，该片段创建就会失败。
+- 独立表单片段在通过引用插入表单或嵌入表单时，其中的任何表达式、脚本或样式都会被保留。
+- 当您发布表单时，表单内通过引用插入的表单片段将自动发布。
 
-## 另请参阅
 
-{{universal-editor-see-also}}

@@ -4,7 +4,7 @@ description: 使用自适应表单主题设计自适应表单的样式并提供�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -15,16 +15,16 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | 本文 |
 
 您可以创建并应用主题来使自适应表单<!-- or an interactive communication-->风格化。 主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。主题是独立管理的，没有引用自适应表单<!-- or interactive communication -->。
 
-您可以从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载并安装[!DNL AEM Forms]引用内容包，以将引用主题和模板导入到您的环境。
+您可以从[!DNL AEM Forms]软件分发[门户下载并安装](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)引用内容包，以将引用主题和模板导入到您的环境。
 
 ## 创建、下载或上传主题 {#creating-downloading-or-uploading-a-theme}
 
@@ -125,7 +125,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>4.</td>
-   <td>已创建</td>
+   <td>创建时间</td>
    <td>否</td>
    <td>主题创建日期</td>
   </tr>
@@ -212,7 +212,7 @@ ht-degree: 1%
 
 * **画布** — 显示在右侧。 它显示了一个自适应表单<!--  or interactive communication -->的示例，其中所有样式更改都会立即反映。 也可以直接从画布中选择对象来查找与其关联的样式，并编辑这些样式。 顶部的设备分辨率标尺控制画布。 从标尺中选择分辨率断点将显示相应分辨率的样本表单<!--  or interactive communication -->的预览。 下面详细讨论了[的画布](themes.md#using-canvas)。
 
-* **侧栏** — 显示在左侧。 它包括以下项：
+* **侧栏***显示在左侧。 它包括以下项：
 
    * **选择器：**&#x200B;显示选定用于设置样式的组件及其可以设置样式的属性。 选择器表示某个类型的所有组件。 如果您选择主题中的文本框组件来设置样式，则表单<!-- or interactive communication -->中的所有文本框将继承该样式。 选择器允许您选择通用组件或特定组件来设置样式。 例如，字段组件是通用组件，文本框是特定组件。
 
@@ -328,7 +328,7 @@ ht-degree: 1%
 
 1. 在主题编辑器面板中，单击&#x200B;**[!UICONTROL 主题选项]** ![主题选项](assets/theme-options.png) > **[!UICONTROL 配置]**。
 
-1. 在“常规”选项卡中，浏览并选择&#x200B;**[!UICONTROL 自适应表单]**&#x200B;字段的表单<!-- or interactive communication -->。
+1. 在“常规”选项卡中，浏览并选择<!-- or interactive communication -->自适应表单&#x200B;**[!UICONTROL 字段的表单]**。
 
 ### 重做/撤消 {#redo-undo}
 
@@ -456,7 +456,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL 数字框小组件]**。
 1. 侧栏标题将更改为数值框小组件，并显示用于自定义其外观的选项。
-使用侧边栏中的&#x200B;**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
+使用侧边栏中的**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
 
 不要选择&#x200B;**[!UICONTROL 数值框小组件]**，请在组件工具栏中选择&#x200B;**[!UICONTROL 字段小组件]**，然后执行上述步骤。 为&#x200B;**[!UICONTROL 字段小组件]**&#x200B;选项选择维度时，除数字框之外的所有文本框都具有相同的大小。
 

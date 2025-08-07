@@ -4,9 +4,9 @@ description: 本文档概述了适用于 AEM Forms 的 Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ Adaptive Forms Block 为所有字段类型和容器（面板）生成[统一的 
 
 ### 输入字段
 
-* 所有有效的 HTML5“[input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)”和“[textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)”。例如，按钮、复选框、颜色、日期、本地日期时间、电子邮件、文件、隐藏、图像、月份、数字、密码、单选、范围、重置、提交、电话、文本、时间、URL 和星期。
+- 所有有效的 HTML5“[input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)”和“[textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)”。例如，按钮、复选框、颜色、日期、本地日期时间、电子邮件、文件、隐藏、图像、月份、数字、密码、单选、范围、重置、提交、电话、文本、时间、URL 和星期。
 
 ### 选择控件
 
-* [复选框组](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)：用于选择多个选项。
-* [单选按钮组](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)：用于从一个组中仅选择一个选项。
-* [下拉菜单](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)：显示选项菜单。例如，下拉框。
+- [复选框组](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)：用于选择多个选项。
+- [单选按钮组](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)：用于从一个组中仅选择一个选项。
+- [下拉菜单](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)：显示选项菜单。例如，下拉框。
 
 ### 容器
 
-* 面板/容器：将相关的表单元素组合在一起，以便更好地组织。这是[字段集](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)和[图例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)的组合。
+- 面板/容器：将相关的表单元素组合在一起，以便更好地组织。这是[字段集](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)和[图例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)的组合。
 
 
 ## 组件属性
@@ -64,8 +64,3 @@ Adaptive Forms Block 为所有字段类型和容器（面板）生成[统一的 
 | 可重复 | 所有 | `fieldset` 的布尔值属性表示特定字段集可以重复指定的 `Min` 和 `Max` 次数。 `Min` 属性应设置为 1 或更大的值，请勿将 `Min` 属性设置为 0。 |
 | 可见表达式 | 所有 | 可见表达式指的是电子表格公式，由“=”标记表示，用于控制字段的可见性。在这个公式中，只能使用其他字段的值属性，以便直接管理系统内的字段可见性。 |
 | 值表达式 | 所有 | 值表达式指的是电子表格公式，由“=”标记表示，用于控制字段的值。在这个公式中，只能使用其他字段的值属性，以便直接管理系统内的字段值。 |
-
-
-## 另请参阅
-
-{{see-more-forms-eds}}

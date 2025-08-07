@@ -4,9 +4,9 @@ description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4221'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
@@ -281,7 +281,6 @@ When you select a form model, configure Document of Record using options availab
 | 自适应表单组件 | 对应的XFA组件 | 注释 |
 |---|---|---|
 | 图像 | 图像 | 除非使用记录文档设置进行排除，否则TextDraw和Image组件（无论已绑定还是未绑定）始终显示在基于XSD的自适应表单的记录文档中。 |
-| 文本 | 文本 |
 
 ### 表 {#tables}
 
@@ -364,7 +363,7 @@ When you select a form model, configure Document of Record using options availab
       * **对于复选框和单选按钮组件，仅显示选定值**：设置属性将仅显示[!UICONTROL 记录文档]中复选框和单选按钮的选定值。
       * **用于多个值的分隔符**：您可以选择任意分隔符（如逗号或换行符）来显示多个值。
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置字段的对齐方式，如要显示在[!UICONTROL 记录文档]上的复选框或单选按钮。 默认情况下，[!UICONTROL 记录文档]中的字段会设置垂直对齐方式。 设置DoR的[!UICONTROL 表单字段属性]中的属性会覆盖自适应表单上字段的[!UICONTROL 项对齐方式]中设置的属性。 如果选择[!UICONTROL 与自适应表单相同]选项，则自适应表单创作实例中配置的对齐方式将用于[!UICONTROL 记录文档]字段。
-      * **水平对齐方式的选项数**：您可以为水平对齐方式设置要在记录文档上显示的选项数。
+      * **水平对齐的选项数**:You&#x200B;可以设置要在记录文档上显示的水平对齐选项数。
 
       ![表单字段属性](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -414,9 +413,7 @@ When you select a form model, configure Document of Record using options availab
 1. 单击![配置](/help/forms/assets/configure-icon.svg)图标来打开自适应表单容器的&#x200B;**[!UICONTROL 属性]**。
 1. 打开&#x200B;**[!UICONTROL 记录文档模板]**&#x200B;选项卡并从以下选项中选择：
    * **[!UICONTROL 无]**：选择此选项时，没有为您的自适应表单创建[!UICONTROL 记录文档]模板。
-
-   * **[!UICONTROL 将表单模板关联为记录文档模板]**：选择此选项时，将使用XFA表单作为记录文档的模板。
-
+   * **[!UICONTROL 将表单模板关联为记录文档模板]**:When选择了此选项，XFA表单用作记录文档的模板。
    * **[!UICONTROL 生成记录文档]**：选择此选项时，将自动为自适应表单生成[!UICONTROL 记录文档]模板。
 
 1. 选择![保存](/help/forms/assets/check-button.png)以保存属性。

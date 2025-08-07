@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1537'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
    在&#x200B;**[!UICONTROL 更新Source]**&#x200B;选项卡中：
 
-   * 在&#x200B;**[!UICONTROL 上下文感知配置]**&#x200B;字段中选择浏览图标，然后选择要添加的数据源的云配置驻留的配置节点。 如果不选择节点，则在选择&#x200B;**[!UICONTROL 添加源]**&#x200B;时，将列出仅驻留在`global`节点中的云配置。
+   * 在&#x200B;**[!UICONTROL 上下文感知配置]**&#x200B;字段中选择浏览图标，然后选择要添加的数据源的云配置驻留的配置节点。 如果不选择节点，则在选择`global`添加源&#x200B;**[!UICONTROL 时，将列出仅驻留在]**&#x200B;节点中的云配置。
 
    * 要添加新数据源，请选择&#x200B;**[!UICONTROL 添加源]**，然后选择要添加到表单数据模型(FDM)的数据源。 将显示在`global`中配置的所有数据源和选定的配置节点（如果有）。
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 ## 特定运行模式的上下文感知配置 {#runmode-specific-context-aware-config}
 
-[!UICONTROL 表单数据模型(FDM)]利用[Sling上下文感知配置](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=zh-Hans)支持不同的数据源参数以连接不同[!DNL Experience Manager]运行模式的数据源。
+[!UICONTROL 表单数据模型(FDM)]利用[Sling上下文感知配置](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html)支持不同的数据源参数以连接不同[!DNL Experience Manager]运行模式的数据源。
 
 当[!UICONTROL 表单数据模型(FDM)]使用云配置存储参数时，这些参数在签入并通过源代码管理（Cloud-Manager GIT存储库）部署时会为所有运行模式（开发、暂存和生产）创建具有相同参数的云配置。 但是，对于测试和生产环境需要拥有不同数据集的用例，我们为不同的[!DNL Experience Manager]运行模式使用数据源参数（例如，数据源URL）。
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 1. 在[!DNL Experience Manager]原型项目中集成云配置。
    1. 解压缩下载的包。
    1. 复制`jcr_root`文件夹并将其放入您的`ui.content` > `src` > `main` > `content`。
-   1. 更新`ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml`以包含筛选器`/conf/{foldername}/settings/cloudconfigs/fdm`。 有关详细信息，请参阅AEM项目原型的[ui.content模块](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=zh-Hans)。 当通过CM管道部署此原型项目时，将在所有环境（或运行模式）上安装相同的云配置。 要根据环境更改云配置的字段（如URL）值，请使用以下步骤中讨论的OSGi配置。
+   1. 更新`ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml`以包含筛选器`/conf/{foldername}/settings/cloudconfigs/fdm`。 有关详细信息，请参阅AEM项目原型的[ui.content模块](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)。 当通过CM管道部署此原型项目时，将在所有环境（或运行模式）上安装相同的云配置。 要根据环境更改云配置的字段（如URL）值，请使用以下步骤中讨论的OSGi配置。
 
 1. 创建Apache Sling上下文感知配置。 要创建OSGi配置，请执行以下操作：
    1. **在[!DNL Experience Manager]原型项目中设置OSGi配置文件。**
@@ -121,7 +121,7 @@ ht-degree: 1%
       1. 提供描述。
       1. 选择&#x200B;**[!UICONTROL 已启用]**。
       1. 在覆盖下，根据sling覆盖语法中的环境，提供需要更改的字段。 有关详细信息，请参阅[Apache Sling上下文感知配置 — 覆盖](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。 例如，`cloudconfigs/fdm/{configName}/url="newURL"`。
-通过选择&#x200B;**[!UICONTROL +]**，可以添加多个覆盖。
+通过选择**[!UICONTROL +]**，可以添加多个覆盖。
       1. 选择&#x200B;**[!UICONTROL 保存]**。
       1. 要获取OSGi配置JSON，请按照[使用AEM SDK快速入门生成OSGi配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中的步骤操作。
       1. 将JSON放置在上一步中创建的OSGi工厂配置文件中。
@@ -131,7 +131,7 @@ ht-degree: 1%
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service]用户可以使用加密支持来加密密码值以了解详细信息，请参阅对配置属性的[加密支持](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=zh-Hans#enabling-encryption-support)，并在[上下文感知配置在Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=zh-Hans#runmode-specific-context-aware-config)中可用之后将加密文本置于值中。
+      >[!DNL Adobe Managed Service]用户可以使用加密支持来加密密码值以了解详细信息，请参阅对配置属性的[加密支持](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support)，并在[上下文感知配置在Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config)中可用之后将加密文本置于值中。
 
 1. 使用[表单数据模型编辑器](#data-sources)中刷新数据源定义的选项刷新数据源定义，以通过FDM UI刷新FDM缓存并获取最新配置。
 
@@ -142,6 +142,3 @@ ht-degree: 1%
 有关详细信息，请参阅[使用表单数据模型](work-with-form-data-model.md)。
 
 
->[!MORELIKETHIS]
->
->* [使用表单数据模型(FDM)](/help/forms/using-form-data-model.md)

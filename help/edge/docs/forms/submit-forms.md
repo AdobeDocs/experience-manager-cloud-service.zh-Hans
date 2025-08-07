@@ -4,10 +4,10 @@ description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 97%
+source-wordcount: '871'
+ht-degree: 100%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 97%
 
 在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格开始接收数据。您可以
 
-* [手动启用电子表格以接受数据](#manually-enable-the-spreadsheet-to-accept-data)
-* [使用管理 API 使电子表格能够接受数据](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
+- [手动启用电子表格以接受数据](#manually-enable-the-spreadsheet-to-accept-data)
+- [使用管理 API 使电子表格能够接受数据](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -59,7 +59,7 @@ ht-degree: 97%
 
 将字段名称添加到 `incoming` 工作表后，您的表单便能接受提交。您可以预览表单并使用它向工作表提交数据。
 
-将工作表设置为接收数据后，您可以[预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)-->并开始将数据发送到工作表。
+将工作表设置为接收数据后，您可以[预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)<!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)-->并开始将数据发送到工作表。
 
 >[!WARNING]
 >
@@ -154,7 +154,7 @@ ht-degree: 97%
 
    您的表单现已能够接受数据。您还可以在电子表格中观察到以下变化：
 
-## 启用工作表接受数据后自动更改工作表。
+## 一旦启用接受数据，就会自动更改工作表。
 
 将工作表设置为接收数据后，您会在电子表格中观察到以下变化：
 
@@ -174,138 +174,5 @@ ht-degree: 97%
 
 
 
-<!--
-## Send data to your sheet {#send-data-to-your-sheet}
-
-After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
-
-### Use Admin APIs to send data to your sheet
-
-You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
-
-
-```JSON
-
-POST https://branch–repo–owner.aem.(page|live)/email-form
-POST https://my-domain.com/email-form
-
-```
-
->[!NOTE] 
->
-> The URL should not have the .json extension. You must publish the sheet for POST operations to function on `.live` or on the production domain.
-
-#### Formatting the form data
-
-There are a few different ways that you can format the form data in the POST body. You can use: 
-
-* array of `name:value` pairs: 
-    
-    ```JSON
-    
-    {
-      "data": [
-        { "name": "name", "value": "Clark Kent" },
-        { "name": "email", "value": "superman@example.com" },
-        { "name": "subject", "value": "Regarding Product Inquiry" },
-        { "name": "message", "value": "I have some questions about your products." },
-        { "name": "phone", "value": "123-456-7890" },
-        { "name": "company", "value": "Example Inc." },
-        { "name": "country", "value": "United States" },
-        { "name": "preferred_contact_method", "value": "Email" },
-        { "name": "newsletter_subscribe", "value": true }
-      ]
-    }
-
-    ```
-
-    For example
-
-    ```JSON
-
-    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
-        --header 'Content-Type: application/json' \
-        --data '{
-        "data": [
-            { "name": "name", "value": "Clark Kent" },
-            { "name": "email", "value": "superman@example.com" },
-            { "name": "subject", "value": "Regarding Product Inquiry" },
-            { "name": "message", "value": "I have some questions about your        products." },
-            { "name": "phone", "value": "123-456-7890" },
-            { "name": "company", "value": "Example Inc." },
-            { "name": "country", "value": "United States" },
-            { "name": "preferred_contact_method", "value": "Email" },
-            { "name": "newsletter_subscribe", "value": true }
-        ]
-    }'
-
-    ```
-
-
-
-* an object with `key:value` pairs:
-
-    ```JSON
-
-        {
-          "data": {
-            "name": "Jessica Jones",
-            "email": "jj@example.com",
-            "subject": "Regarding Product Inquiry",
-            "message": "I have some questions about your products.",
-            "phone": "123-456-7890",
-            "company": "Example Inc.",
-            "country": "United States",
-            "preferred_contact_method": "Email",
-            "newsletter_subscribe": true
-          }
-        }
-
-    ```
-
-    For example,
-
-    ```JSON
-
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "khushwant@wknd.com",
-            "Name": "khushwant",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
-
-* URL encoded (`x-www-form-urlencoded`) body (with `content-type` header set to `application/x-www-form-urlencoded`)
-
-    ```Shell
-
-    'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
-
-    ```
-
-    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
-
-    ```Shell
-
-    curl -s -i -X POST \
-      -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-      https://main--wefinance--wkndform.aem.live/contact-us
-
-    ```
--->
-
 接下来，您可以[自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)。
 
-## 另请参阅
-
-{{see-more-forms-eds}}

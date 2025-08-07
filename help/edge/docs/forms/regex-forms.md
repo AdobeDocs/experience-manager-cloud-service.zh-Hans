@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 100%
 
 确保至少 8 个字符，包含：
 
-* 小写字母 (a-z)
-* 大写字母 (A-Z)
-* 数字 (0-9)
-* 特殊字符 (@$!%*?&amp;)
+- 小写字母 (a-z)
+- 大写字母 (A-Z)
+- 数字 (0-9)
+- 特殊字符 (@$!%*?&amp;)
 
 
 ## 电子邮件地址
@@ -70,13 +70,13 @@ ht-degree: 100%
 验证格式为 YYYY-MM-DD 的日期。
 
 
-## 时间 (HH:MM)
+## 时间(HH:MM)
 
 ```regex
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-验证格式为 HH:MM（24 小时格式）的时间。
+以HH:MM格式（24小时格式）验证时间。
 
 
 ## 邮政编码（美国格式）
