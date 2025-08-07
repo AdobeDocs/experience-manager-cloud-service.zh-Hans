@@ -4,7 +4,7 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
 workflow-type: tm+mt
 source-wordcount: '2321'
 ht-degree: 27%
@@ -68,7 +68,7 @@ ht-degree: 27%
    | --- | --- |
    | **存储库名称** | 必需。为您的新存储库取一个富有表现力的名称。 |
    | **存储库 URL** | 必需。存储库的 URL。<br><br>如果您使用的是GitHub托管的存储库，则路径必须以`.git`结尾。<br>例如，*`https://github.com/org-name/repo-name.git`*（URL 路径仅用于说明目的）。<br><br>如果您使用外部存储库，则必须使用以下 URL 路径格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或 <br>`https://self-hosted-domain/org-name/repo-name.git`<br>，并与您的 Git 供应商匹配。 |
-   | **选择存储库类型** | 必需。选择您正在使用的存储库类型。 如果存储库URL路径包含Git供应商名称（如GitLab或Bitbucket），则已为您预先选择存储库类型。: <ul><li>**GitHub**（GitHub Enterprise和GitHub的自托管版本）</li><li>**GitLab**（`gitlab.com`和GitLab的自托管版本） </li><li>支持&#x200B;**Bitbucket**（仅`bitbucket.org` — 云版本）。 Bitbucket的自托管版本从2024年2月15日开始被弃用。)</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
+   | **选择存储库类型** | 必需。选择您正在使用的存储库类型。 如果存储库URL路径包含Git供应商名称（如GitLab或Bitbucket），则已为您预先选择存储库类型。: <ul><li>**GitHub**（GitHub Enterprise和GitHub的自托管版本）</li><li>**GitLab**（`gitlab.com`和GitLab的自托管版本） </li><li>支持&#x200B;**Bitbucket**（仅`bitbucket.org` — 云版本）。 自2024年2月15日起，弃用了Bitbucket的自托管版本。</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
    | **描述** | 可选。存储库的详细描述。 |
 
 1. 选择&#x200B;**保存**&#x200B;以添加存储库。
