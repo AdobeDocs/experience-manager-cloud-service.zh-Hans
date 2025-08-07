@@ -68,7 +68,7 @@ ht-degree: 47%
 您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
 
 **如何为在Universal Editor中创作的Forms配置提交操作？**
-您可以使用**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
+您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
 
 ![表单属性图标](/help/forms/assets/ue-form-properties-icon.png)
 
