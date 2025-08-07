@@ -15,7 +15,7 @@ ht-degree: 97%
 
 <!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>-->
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features). </span>-->
 
 表单通常包含联系方式、身份信息或同意协议等常见部分。表单开发人员每次生成新表单时都要创建这些部分，这是一项重复且耗时的工作。
 为了消除这种重复劳动，通用编辑器提供了一种方法，只需创建一次可重复使用的表单片段（如面板或字段组）即可在各种表单中重复使用它们。这些可重复使用的模块化独立片段称为表单片段。例如，相同的紧急联系方式片段可用于表单的不同部分，如员工和主管的联系方式。
