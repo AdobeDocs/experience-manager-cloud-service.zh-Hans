@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 50%
+source-wordcount: '2235'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 50%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites 的新增功能 {#enhancements-sites}
 
-**内容片段增强功能**
-
-* 您现在可以复制具有子级的内容片段。
-* 您现在可以在文件夹设置中配置自定义工作区，以将内容片段导出到Adobe Target中已配置的工作区。
+* 现在，您可以在一次操作中复制具有引用的片段（子项）的内容片段。 这允许重复使用现有的内容片段结构来创建新内容。
+* 在内容片段管理UI中，您现在可以查看内容片段的工作流状态，以及有关所选片段过去和当前运行的工作流的详细信息。
+* 重命名或移动Live Copy源页面现在会触发重新发布相应地重命名或移动的Live Copy页面。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -90,7 +89,7 @@ Content Hub现在在筛选器中包括&#x200B;**显示所有**&#x200B;选项，�
 
 享受新文件和文件夹的自动上传、增强的文件操作、更智能的资源发现以及与AEM的无缝集成 — 使内容管理更快、更清晰、更直观。
 
-有关完整的功能列表，请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/release-notes)。
+有关完整的功能列表，请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)。
 
 ### 具有OpenAPI功能的Dynamic Media的新增功能 {#new-features-dynamic-media-with-openapi}
 
@@ -223,7 +222,7 @@ OSGi 属性：
 
 ### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-**Java 11运行时* — 现已弃用，并且大多数环境都已升级到性能更高的&#x200B;**&#x200B;Java 21运行时**。
+**Java 11运行时* — 现已弃用，并且大多数环境都已升级到性能更高的&#x200B;**Java 21运行时**。
 
 如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
