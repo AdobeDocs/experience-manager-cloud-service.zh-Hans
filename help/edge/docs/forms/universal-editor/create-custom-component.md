@@ -4,10 +4,10 @@ description: 为 EDS Form 创建自定义组件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -44,10 +44,14 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
 自定义组件在使用之前必须先注册，以便通用编辑器将其识别为可用选项。这是通过组件定义实现的，组件定义包括唯一标识符、默认属性和组件的结构。执行以下步骤，使自定义组件可用于表单创作：
 
-1. **添加新文件夹和文件**&#x200B;在 AEM 项目中为新的自定义组件添加新文件夹和文件。
+1. **添加新文件夹和文件**
+
+   在AEM项目中为新自定义组件添加新文件夹和文件。
+
    1. 打开 AEM 项目并导航到 `../blocks/form/components/`。
    1. 在 `../blocks/form/components/<component_name>` 为自定义组件添加一个新文件夹。在这个例子中，我们创建一个名为 `range` 的文件夹。
    1. 导航到在 `../blocks/form/components/<component_name>` 新创建的文件夹。例如，导航到 `../blocks/form/components/range`，并添加以下文件：
+
       - `/blocks/form/components/range/_range.json`：包含自定义组件的定义。
       - `../blocks/form/components/range/range.css`：定义自定义组件的样式。
       - `../blocks/form/components/range/range.js`：在运行时定制自定义组件。
@@ -357,18 +361,18 @@ const OOTBComponentDecorators = ['file-input',
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /- Dark Blue */
-   border: 3px solid #00008B; /- Dark Blue */
+   background: #00008B; /* Dark Blue */
+   border: 3px solid #00008B; /* Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /- Dark Blue */
+   border-color: #00008B; /* Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /- Dark Blue */
+   color: #00008B; /* Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -406,7 +410,7 @@ const OOTBComponentDecorators = ['file-input',
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
+   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
