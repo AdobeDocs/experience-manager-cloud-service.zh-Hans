@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器 2025.07.09 发行说明
-description: 这些是通用编辑器 2025.07.09 版本的发行说明。
+title: 通用编辑器2025.07.31发行说明
+description: 这些是通用编辑器2025.07.31版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 52%
 
 ---
 
 
-# 通用编辑器 2025.07.09 发行说明 {#release-notes}
+# 通用编辑器2025.07.31发行说明 {#release-notes}
 
-这些是通用编辑器 2025 年 7 月 9 日版本的发行说明。
+这些是通用编辑器 2025 年 7 月 31 日版本的发行说明。
 
 >[!TIP]
 >
@@ -22,9 +22,15 @@ ht-degree: 100%
 
 ## 新增功能 {#what-is-new}
 
-* [当单击容器上的&#x200B;**添加**&#x200B;工具栏按钮时，](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)如果仅允许一种组件类型，则会直接插入该组件，而无需从下拉菜单中进行选择。
-* 由于大多数情况下用处不大，[身份验证标头工具栏选项](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)已被置于功能开关之后。
-* [由于属性面板中的多字段不允许容器嵌套，](/help/implementing/universal-editor/field-types.md#fields)渲染流程现在会从字段列表中过滤嵌套的容器，以防止出现无效嵌套。
+* [身份验证标题工具栏选项](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)保持在[版本2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)中引入的功能切换之后
+   * 但是，现在默认启用它。
+* [RTE早期采用者的新功能](#new-rte)
+   * 添加了深色模式支持。
+   * 添加了文本对齐支持。
+      * 默认情况下处于禁用状态，并且仅适用于Headless项目
+   * 添加了缩进支持。
+      * 默认情况下处于禁用状态，并且仅适用于Headless项目
+   * 现在在Shift+Enter键上插入分隔符(`<br>`)。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -43,14 +49,12 @@ ht-degree: 100%
 
 ## 其他改进 {#other-improvements}
 
-* 已修复一个问题：通过属性边栏编辑时，无法移除单个资源引用。
-* 已修复一个问题：由于资源引用被自动转换为数组，导致属性面板无限加载。
-   * 资源引用值现在将按原样存储，不再自动转换为数组。
-* 已修复一个问题：当模型已定义但未包含任何内容时，属性面板未能显示字段。
-   * 该问题会导致属性面板在遇到空的详情响应（如空的内容片段）时进入无限加载状态。
-* ESLint 配置已重构以兼容第 9 版，涵盖规则更新及插件支持的调整。
+* 早期采用者RTE的修复
+   * 按Enter键现在会在列表内创建一个新的列表项(`<li>`)。
+* 使用远程DAM时，视频现在可以正确更新。
+* 为6.5 LTS添加了服务支持。
 
 ## 弃用 {#deprecations}
 
-* `text-input` 组件现已正式弃用。
+* `text-input`和`text-area`组件已正式在[版本2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)中弃用
    * 在 `model-definition.json` 中，请使用文本组件为属性面板创建文本输入字段。
