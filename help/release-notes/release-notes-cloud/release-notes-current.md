@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2271'
 ht-degree: 49%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 49%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,7 +68,6 @@ AEM Assets现在使您能够[在“资源浏览”页面的“卡片视图”或
 
 您现在还可以选择在文件夹级别禁用AI生成的元数据。
 
-
 ### Content Hub 的新增强功能 {#new-features-content-hub}
 
 **在Content Hub中增强了品牌灵活性**
@@ -89,7 +88,7 @@ Content Hub现在在筛选器中包括&#x200B;**显示所有**&#x200B;选项，�
 
 享受新文件和文件夹的自动上传、增强的文件操作、更智能的资源发现以及与AEM的无缝集成 — 使内容管理更快、更清晰、更直观。
 
-有关完整的功能列表，请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/release-notes)。
+有关完整的功能列表，请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)。
 
 ### 具有OpenAPI功能的Dynamic Media的新增功能 {#new-features-dynamic-media-with-openapi}
 
@@ -181,6 +180,10 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### 权限管理的主要视图 {#principal-view}
+
+AEM 引入了用户和群组的权限管理。主要功能与经典UI相同，但更加用户友好且高效。 有关详细信息，请参阅[专用文章](/help/security/touch-ui-principal-view.md)。
+
 ### 更新的弃用流程 {#updated-deprecation-process}
 
 Adobe 会定期审查功能、库、API 和配置，以确保它们符合性能、安全和价值方面的标准。当功能不再满足这些标准时，它们将被标记为弃用，且必须在指定的移除日期前停止使用。在此日期之前，Adobe 将通过电子邮件通知提醒客户，并告知客户在继续或部署新版本之前需要在 Cloud Manager 中采取的行动。若未能采取必要行动，则可能无法升级至 AEM 的新版本，进而对安全性、性能、可靠性和可用性造成潜在影响。
@@ -222,7 +225,7 @@ OSGi 属性：
 
 ### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-**Java 11运行时* — 现已弃用，并且大多数环境都已升级到性能更高的&#x200B;**&#x200B;Java 21运行时**。
+**Java 11运行时* — 现已弃用，并且大多数环境都已升级到性能更高的&#x200B;**Java 21运行时**。
 
 如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
