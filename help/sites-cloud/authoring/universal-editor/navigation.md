@@ -199,7 +199,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 
