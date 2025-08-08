@@ -1,10 +1,10 @@
 ---
-title: 如何配置重定向页面或感谢消息？
+title: 如何配置重定向页面或感谢消息
 description: 了解如何向用户显示感谢消息或重定向到表单作者在创建表单时可以配置的网页。
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

@@ -1,14 +1,14 @@
 ---
-Title: How to integrate AEM workflow with an Adaptive Form?
-Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
+title: 如何将AEM工作流与自适应表单集成？
+description: 探索使用AEM Forms提交操作自动启动工作流的过程。
 keywords: AEM Workflow，将自适应表单与AEM Workflow集成，调用AEM Workflow提交操作
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: dc9fc0c7d886d976f9b0b9daa955f98402341527
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 62%
+source-wordcount: '1434'
+ht-degree: 61%
 
 ---
 
@@ -105,8 +105,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 要为在Universal Editor中创作的自适应表单设置使用[AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem)的自动进程，请执行以下步骤：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >

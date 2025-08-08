@@ -1,14 +1,14 @@
 ---
-Title: How to configure Marketo Engage data for Adaptive Forms?
-Description: Learn how to use Marketo Engage schema in Adaptive Forms.
-Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: 如何为自适应Forms配置Marketo Engage数据？
+description: 了解如何在自适应Forms中使用Marketo Engage架构。
+keywords: 在自适应Forms中使用Marketo Engage数据源，如何将Marketo实例数据源与表单连接？，将表单连接到Marketo。
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 8%
+source-wordcount: '797'
+ht-degree: 7%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-Title: How to Integrate Marketo Engage with AEM Forms?
-Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
-Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: 如何将Marketo Engage与AEM Forms集成？
+description: 了解如何将Marketo Engage实例与AEM Forms集成。
+keywords: 如何将Marketo实例与表单连接？，将表单连接到Marketo，将表单与Marketo Engage集成，将自适应表单与Marketo实例集成。
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 6%
+source-wordcount: '794'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-将AEM Forms与[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/home)集成后，用户可以利用Marketo Engage的功能，从捕获的数据创建业务逻辑并自动化工作流，包括智能营销活动和电子邮件自动化。 配置的表单可以将捕获的数据发送到Marketo Engage进行处理。
+将AEM Forms与[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)集成后，用户可以利用Marketo Engage的功能，从捕获的数据创建业务逻辑并自动化工作流，包括智能营销活动和电子邮件自动化。 配置的表单可以将捕获的数据发送到Marketo Engage进行处理。
 
 ## 将Marketo Engage与表单集成的优势
 
@@ -52,7 +52,7 @@ ht-degree: 6%
 将Marketo Engage与AEM Forms集成时的一些注意事项：
 
 * AEM仅支持各种Marketo数据库中的People(Leads)数据库。
-* Marketo允许创建[10个自定义对象](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)作为用户定义的对象，以存储Leads中标准字段以外的专用数据，从而支持独特的业务需求。
+* Marketo允许创建[10个自定义对象](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)作为用户定义的对象，以存储Leads中标准字段以外的专用数据，从而支持独特的业务需求。
 * 仅当自定义对象与Lead数据库关联时，AEM才能访问这些对象
 
 ## 将Marketo Engage与表单集成的先决条件
@@ -60,7 +60,7 @@ ht-degree: 6%
 以下是将Marketo Engage与AEM Forms连接的先决条件：
 
 * 有效的Adobe Marketo Engage许可证
-* 用于[检索客户端ID和客户端密钥](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)以创建云配置的工作实例Marketo Engage。
+* 用于[检索客户端ID和客户端密钥](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)以创建云配置的工作实例Marketo Engage。
 
 ## 创建云服务配置以将AEM Forms (自适应Forms)与Marketo Engage连接
 

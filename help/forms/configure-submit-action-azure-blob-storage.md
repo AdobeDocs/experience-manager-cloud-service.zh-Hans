@@ -1,15 +1,14 @@
 ---
-Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
-Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
+description: 了解如何在AEM Forms中创建Azure Blob Storage配置并在自适应Forms中使用它以实现高效数据存储。
 keywords: Azure Blob Storage与AEM Forms集成，将数据提交到Azure Storage，在AEM Forms中创建Azure Storage配置，在自适应Forms中使用Azure Blob Storage提交操作
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 title: 如何为自适应表单配置提交操作？
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 46%
+source-wordcount: '828'
+ht-degree: 44%
 
 ---
 
@@ -52,8 +51,8 @@ Azure Blob Storage与AEM Forms集成的一些优势包括：
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hans)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hans)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
@@ -113,15 +112,15 @@ Azure Blob Storage与AEM Forms集成的一些优势包括：
 执行以下步骤，使用在Universal Editor中创作的自适应表单中的Azure存储容器配置：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
    > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
    > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
 
-1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 提交到Azure Blob存储]**&#x200B;提交操作。
+1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 提交到Azure Blob存储]**提交操作。
    ![Azure Blob存储](/help/forms/assets/azure-blob-storage-ue.png)
 
    如果选择&#x200B;**保存具有原始名称的附件**，则附件会使用其原始文件名存储在文件夹中。 您还可以将记录文档(DoR)保存到Azure Blob存储中。

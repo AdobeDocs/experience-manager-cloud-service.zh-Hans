@@ -1,20 +1,20 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: 如何使用授权范围配置具有有限访问权限的SharePoint站点？
+description: 了解如何使用授权范围以受限访问权限配置SharePoint站点。
 keywords: 如何配置具有有限访问权限的SharePoint站点？，配置具有有限访问权限的SharePoint，使用授权范围限制SharePoint站点的访问权限。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 16%
+source-wordcount: '842'
+ht-degree: 15%
 
 ---
 
-
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-# 使用授权范围配置具有有限访问权限的 SharePoint 网站
+# 使用授权范围配置具有有限访问权限的 SharePoint Site
 
 受限或受限访问的目的是通过允许管理员控制用户对特定SharePoint站点或一组SharePoint站点的访问来增强安全管理。 当您需要授予用户或组访问特定网站的权限而不允许他们查看任何其他不允许的SharePoint网站时，权限级别非常有用。
 
@@ -45,20 +45,20 @@ ht-degree: 16%
 
 ![SharePoint选定的站点](/help/forms/assets/sharepoint-selected-site.png)
 
-有关如何检索`OAuth URL`的`Client ID`、`Client Secret`和`Tenant ID`的信息，请参阅[Microsoft®文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
+有关如何检索`Client ID`的`Client Secret`、`Tenant ID`和`OAuth URL`的信息，请参阅[Microsoft®文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
 * 在 Microsoft® Azure 门户中，将重定向 URI 添加为 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`。将 `[author-instance]` 替换为创作实例 URL。
 * 在Microsoft的Graph API中添加`offline_access`和`Sites.Selected`权限范围，以提供对站点的受限制访问。
 * 对于OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。 将 `<tenant-id>` 替换为 Microsoft® Azure 门户中应用程序的 `tenant-id`。
 
 要使用`Sites.Selected` API权限，需要在Azure门户中注册的应用程序，该应用程序具有为SharePoint Online Sites设置的相应权限。 这种设置可确保应用程序拥有在定义的范围内与SharePoint站点交互所需的授权，从而提供所需的有限访问。
 
-请参阅[博客文章 — 开发使用Sites的应用程序。有关开发使用SharePoint Online Sites `Sites.Selected`权限的应用程序的说明，请参阅SPO Sites的选定权限](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)。
+请参阅[博客文章 — 开发使用Sites的应用程序。有关开发使用SharePoint Online Sites ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)权限的应用程序的说明，请参阅SPO Sites的选定权限`Sites.Selected`。
 
 ### 在AEM实例中设置授权范围
 
 要提供对Microsoft SharePoint站点的有限访问，必须正确设置授权范围。 要设置授权范围并将AEM Forms连接到您的Microsoft® SharePoint存储，请执行以下操作：
 
-1. 转到您的&#x200B;**AEM Forms创作**&#x200B;实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®SharePoint]**。
+1. 转到您的&#x200B;**AEM Forms作者**&#x200B;实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**。
 1. 选择&#x200B;**[!UICONTROL Microsoft® SharePoint]**&#x200B;后，您将被重定向到&#x200B;**[!UICONTROL SharePoint浏览器]**。
 1. 选择&#x200B;**配置容器**。配置存储在选定的配置容器中。
 1. 从下拉列表中单击&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL SharePoint文档库]**。 这将显示 SharePoint 配置向导。
@@ -73,7 +73,7 @@ ht-degree: 16%
    >
    > **客户端密码**&#x200B;字段是必填还是可选字段取决于 Azure Active Directory 应用程序配置。如果应用程序配置为使用客户端密码，则必须提供客户端密码。
 
-1. 在`Authorization Scope`字段中添加`offline_access Sites.Selected`。 当您在`Authorization Scope`文本框字段中添加`offline_access Sites.Selected`范围时，`SharePoint Site ID`文本框将出现在屏幕上。
+1. 在`offline_access Sites.Selected`字段中添加`Authorization Scope`。 当您在`offline_access Sites.Selected`文本框字段中添加`Authorization Scope`范围时，`SharePoint Site ID`文本框将出现在屏幕上。
 
 1. 指定SharePoint站点ID。 要了解如何检索SharePoint站点ID，请参阅[额外字节](#extra-bytes)部分。
 
@@ -84,9 +84,9 @@ ht-degree: 16%
    >[!NOTE]
    >
    >* 默认情况下，`forms-ootb-storage-adaptive-forms-submission`存在于选定的SharePoint站点中。
-   >* 通过单击&#x200B;**创建文件夹**，将文件夹创建为`forms-ootb-storage-adaptive-forms-submission`(如果选定SharePoint站点的`Documents`库中尚不存在)。
+   >* 通过单击`forms-ootb-storage-adaptive-forms-submission`创建文件夹`Documents`，将文件夹创建为&#x200B;**(如果选定SharePoint站点的**&#x200B;库中尚不存在)。
 
-现在，您可以在自适应表单[&#128279;](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)中将此SharePoint Sites配置用于提交操作。
+现在，您可以在自适应表单[中将此](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)SharePoint Sites配置用于提交操作。
 
 ## 额外字节
 
