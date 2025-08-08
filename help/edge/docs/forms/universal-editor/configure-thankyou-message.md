@@ -4,7 +4,7 @@ description: 了解如何向用户显示感谢消息或重定向到表单作者�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> * 如果您在通用编辑器界面中未看到&#x200B;**表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
-> * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+>* 如果您在通用编辑器界面中未看到&#x200B;**表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+>* 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
 
 ## 如何配置重定向或感谢消息？
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 配置重定向页面或感谢消息：
 
 1. 打开自适应表单进行编辑。
-2. 打开内容树并选择&#x200B;**[!UICONTROL 指南容器]**。
-3. 单击自适应表单容器属性![自适应表单容器属性](/help/forms/assets/configure-icon.svg)图标。 此时将打开用于配置数据模型的自适应表单容器对话框。
-4. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。 显示用于配置重定向页面或消息的选项：
+1. 打开内容树并选择&#x200B;**[!UICONTROL 指南容器]**。
+1. 单击自适应表单容器属性![自适应表单容器属性](/help/forms/assets/configure-icon.svg)图标。 此时将打开用于配置数据模型的自适应表单容器对话框。
+1. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。 显示用于配置重定向页面或消息的选项：
 
    向导容器的![提交对话框用于配置重定向页面或消息](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
