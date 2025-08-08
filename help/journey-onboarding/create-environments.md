@@ -93,7 +93,7 @@ ht-degree: 62%
 如果您想了解加入历程以外的内容，以下是额外的可选资源。
 
 * [管理环境](/help/implementing/cloud-manager/manage-environments.md) – 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境
-* [使用 Adobe Cloud Manager – 环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments) – 此视频概述了由 AEM 创作、发布和 Dispatcher 服务组成的 Cloud Manager 环境。了解不同的环境如何支持角色，以及如何使用不同的CI/CD管道与其互动。
+* [使用 Adobe Cloud Manager – 环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/cloud-manager/environments) – 此视频概述了由 AEM 创作、发布和 Dispatcher 服务组成的 Cloud Manager 环境。了解不同的环境如何支持角色，以及如何使用不同的CI/CD管道与其互动。
 * [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) - 请参阅该文档了解有关如何使用 RDE 的详细信息。
 <!-- ERROR: Not Found (HTTP error 404) FIND AN ALTERNATE RESOURCE? * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 
