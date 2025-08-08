@@ -89,7 +89,7 @@ Content Hub现在在筛选器中包括&#x200B;**显示所有**&#x200B;选项，�
 
 享受新文件和文件夹的自动上传、增强的文件操作、更智能的资源发现以及与AEM的无缝集成 — 使内容管理更快、更清晰、更直观。
 
-有关完整的功能列表，请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)。
+有关完整的功能列表，请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/release-notes)。
 
 ### 具有OpenAPI功能的Dynamic Media的新增功能 {#new-features-dynamic-media-with-openapi}
 
