@@ -4,10 +4,10 @@ description: 了解如何访问 Cloud Manager，以便您可以设置项目资�
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1040'
-ht-degree: 100%
+source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 75%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 ## 目标 {#objective}
 
-在本次加入历程的前一篇文章[将团队成员分配给 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)中，您已授予 AEMaaCS 团队适当的角色。 现在学习如何访问 Cloud Manager，以使您可设置您的团队使用的项目资源。
+在本次加入历程的前一篇文章[将团队成员分配给 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)中，您已授予 AEMaaCS 团队适当的角色。 现在，了解如何访问Cloud Manager，以便您可以设置团队打算使用的项目资源。
 
-由于您完成了本次历程的前一步，您的团队可以访问 Cloud Manager。 Cloud Manager 用于创建和管理项目资源，如程序和环境。
+由于您完成了本次历程的前一步，您的团队可以访问 Cloud Manager。 Cloud Manager用于创建和管理项目资源，如程序和环境。
 
 阅读本文档后，您应该了解以下内容：
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的单一入口点。 它通过其专门构建的 CI/CD 管道为具有企业开发设置的客户提供支持，这些管道可确保全面测试和最佳代码质量，从而提供卓越的体验。 Cloud Manager 提供以自助方式启动所需的一切，包括创建云资源和环境的能力。
+Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的单一入口点。 它通过其专门构建的 CI/CD 管道为具有企业开发设置的客户提供支持，这些管道可确保全面测试和最佳代码质量，从而提供卓越的体验。 Cloud Manager提供以自助方式开始所需的一切，包括创建云资源和环境的能力。
 
 通常，分配给&#x200B;**业务负责人**&#x200B;产品配置文件的团队成员负责添加您的云资源，如程序和环境。 此人了解业务需求，并了解由谁完成初始 Cloud Manager 设置。
 
@@ -36,17 +36,17 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 ## 作为系统管理员和业务负责人访问 Cloud Manager {#access-sysadmin-bo}
 
-必须为系统管理员分配&#x200B;**业务负责人**&#x200B;角色，然后您分配给&#x200B;**业务负责人**&#x200B;角色的团队成员才能访问 Cloud Manager 并开始创建云资源。他们还必须像您在此加入历程上一步中的那样登录到 Cloud Manager。
+在您分配给&#x200B;**业务负责人**&#x200B;角色的团队成员可以访问Cloud Manager并开始创建云资源之前，必须为系统管理员分配&#x200B;**业务负责人**&#x200B;角色。 他们还必须像您在此加入历程上一步中的那样登录到 Cloud Manager。
 
 1. 确保为作为系统管理员的您分配了&#x200B;**业务负责人**&#x200B;角色。
 
-   * 返回本次历程中的上一步，[将团队成员分配给 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md)，以获得有关将&#x200B;**业务负责人**&#x200B;角色分配给系统管理员的详细信息。
+   返回上一步[将团队成员分配给Cloud Manager产品配置文件](assign-profiles-cloud-manager.md)，了解有关将&#x200B;**业务负责人**&#x200B;角色分配给系统管理员的详细信息。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并显示正常登陆页面。
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager。
 
-通过使用&#x200B;**业务负责人**&#x200B;角色以系统管理员身份成功登录，您可以通过&#x200B;**业务负责人**&#x200B;角色初始化 Cloud Manager，以供其他用户使用。 您不会收到确认或任何消息。只需登录即可。
+通过使用&#x200B;**业务负责人**&#x200B;角色以系统管理员身份成功登录，您可以通过&#x200B;**业务负责人**&#x200B;角色初始化Cloud Manager以供其他用户使用。 您不会收到确认或任何消息。只需登录即可。
 
-直到您作为具有&#x200B;**业务负责人**&#x200B;角色的系统管理员身份登录到 Cloud Manager，其他具有&#x200B;**业务负责人**&#x200B;角色的用户才能在 Cloud Manager 中创建程序。即使为这些用户分配的角色正确无误，这条规则也适用。
+在您使用&#x200B;**业务负责人**&#x200B;角色以系统管理员身份登录Cloud Manager之前，具有&#x200B;**业务负责人**&#x200B;角色的其他用户无法在Cloud Manager中创建程序。 即使为这些用户分配的角色正确无误，这条规则也适用。
 
 ## 导航到 Cloud Manager {#navigate-cloud-manager}
 
@@ -63,7 +63,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 1. 您被引入 Cloud Manager 的登陆页面。
 
-或者，您也可以按照以下步骤从 Adobe Experience Cloud 主页导航到 Cloud Manager 的&#x200B;**程序和产品**&#x200B;页面
+或者，您也可以使用这些步骤从Cloud Manager主页导航到Adobe Experience Cloud的&#x200B;**程序和产品**&#x200B;页面。
 
 1. 直接导航到 [Adobe Experience Cloud](https://experience.adobe.com) 并使用 Adobe ID 登录。
 
@@ -101,7 +101,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 ### 当程序存在且您是系统管理员时 {#programs-exist-sysadmin}
 
-如果您所在的组织中存在程序，并且您是系统管理员，则登陆页面将显示&#x200B;**管理访问权限**&#x200B;按钮以及&#x200B;**添加程序**&#x200B;选项。
+如果您的组织中存在程序，并且您是系统管理员，则登陆页面将显示&#x200B;**管理访问权限**&#x200B;按钮以及&#x200B;**添加程序**&#x200B;选项。
 
 ![系统管理员视图](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
