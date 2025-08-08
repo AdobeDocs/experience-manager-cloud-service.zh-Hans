@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 预填自适应表单、自适应表单边缘交付服务、自适应表单自动填写
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 2%
+source-wordcount: '1829'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 | 收益 | 描述 |
 |---------|-------------|
-| 更快地完成&#x200B;**&#x200B;** | 减少手动数据输入，帮助用户快速完成表单 |
+| 更快地完成&#x200B;**** | 减少手动数据输入，帮助用户快速完成表单 |
 | **已改进的用户体验** | Forms更加个性化和方便，对于回头用户来说更是如此 |
 | **更高的转化率** | 通过最大程度地减少所需的用户工作量来减少表单放弃 |
 | **减少输入错误** | 来自可靠来源的数据可减少拼写错误和不正确条目 |
@@ -140,9 +140,9 @@ Universal Editor提供两种预填充服务选项：
 
 6. 单击&#x200B;**完成**&#x200B;保存参数，单击&#x200B;**保存**&#x200B;保存FDM
 
-       >[！注意]
-       >
-       > 了解有关在[使用表单数据模型(FDM)](/help/forms/work-with-form-data-model.md)中配置FDM服务的更多信息。
+   >[!NOTE]
+   >
+   > 了解有关在[使用表单数据模型(FDM)](/help/forms/work-with-form-data-model.md)中配置FDM服务的更多信息。
 
 +++
 
@@ -151,35 +151,36 @@ Universal Editor提供两种预填充服务选项：
 ### 第3步：创建自适应表单
 
 1. 导航到&#x200B;**Adobe Experience Manager** > **Forms** > **Forms和文档**
-2. 选择&#x200B;**创建** > **自适应Forms**
-3. 在&#x200B;**Source**&#x200B;选项卡中，选择一个Edge Delivery Services模板：
+1. 选择&#x200B;**创建** > **自适应Forms**
+1. 在&#x200B;**Source**&#x200B;选项卡中，选择一个Edge Delivery Services模板：
 
-       ！[Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
-   
-4. 单击&#x200B;**创建**&#x200B;以打开&#x200B;**创建表单**&#x200B;向导
-5. 指定表单详细信息：
+   ![选择 Edge Delivery Services 模板](/help/edge/assets/create-eds-forms.png)
+
+1. 单击&#x200B;**创建**&#x200B;以打开&#x200B;**创建表单**&#x200B;向导
+1. 指定表单详细信息：
+
    - **名称**：为您的表单输入描述性名称
    - **标题**：提供用户友好的标题
    - **GitHub URL**：输入您的存储库URL（例如，`https://github.com/wkndforms/edsforms`）
 
-6. 单击&#x200B;**创建**
+1. 单击&#x200B;**创建**
 
-       ！[创建基于架构的表单](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![创建基于架构的表单](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 表单在通用编辑器中打开以进行创作。
 
 ### 步骤4：配置表单数据Source
 
 1. 选择您的表单并单击&#x200B;**属性**
 
-       ！[选择表单属性](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![选择表单属性](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. 打开&#x200B;**表单模型**&#x200B;选项卡
 3. 从&#x200B;**选择自**&#x200B;下拉列表中，选择&#x200B;**表单数据模型(FDM)**
 4. 从下拉列表中选择您创建的表单数据模型（例如PetFDM）
 
-       ！[选择表单模型选项卡](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![选择表单模型选项卡](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. 单击&#x200B;**保存并关闭**
 6. 打开表单以在通用编辑器中编辑
 
@@ -193,6 +194,7 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
    ![显示基于架构的表单的通用编辑器屏幕截图](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. 将数据绑定添加到表单字段：
+
    - 选择表单字段
    - 在&#x200B;**属性**&#x200B;面板中，找到&#x200B;**绑定引用**&#x200B;属性
    - 选择适当的数据绑定引用
@@ -208,12 +210,14 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 确保在通用编辑器中启用这些扩展：
 
 1. **AEM表单属性扩展**
+
    - 在通用编辑器中打开&#x200B;**Extension Manager**
    - 启用&#x200B;**AEM表单属性**&#x200B;扩展
 
    ![表单属性图标](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Data Source扩展**
+1. **Data Source扩展**
+
    - 如果您没有看到&#x200B;**数据源**&#x200B;图标，请启用&#x200B;**数据源**&#x200B;扩展
 
    ![通用编辑器Extension Manager屏幕截图](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 3. 单击&#x200B;**预填充**&#x200B;选项卡
 4. 选择&#x200B;**表单数据模型预填充服务**
 
-       ！[选择预填充服务](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![选择预填充服务](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. 单击&#x200B;**保存并关闭**
 
 +++
@@ -247,14 +251,14 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 3. 选择&#x200B;**预览为HTML**
 4. 通过将参数附加到URL来测试预填充：
 
-       https://your-preview-url.com？&lt;bindreferencefield>=&lt;value>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **示例：**
 
-       https://your-preview-url.com?petid=12345
-       
-       ！[预填表单](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![预填表单](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 表单应基于提供的参数自动填充数据。
 
 +++
@@ -267,19 +271,19 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 
     “
     
-    &lbrace;
-    ”afBoundData“： &lbrace;
-    ”user“： &lbrace;
-    ”firstName“： &lbrace;”John“，
+    {
+    ”afBoundData“： {
+    ”user“： {
+    ”firstName“： {”John“，
     ”lastName“： ”Doe“，
     ”email“： ”john.doe@example.com“，
     ”phone“：“+1-555-0123”
-    &rbrace;
-    &rbrace;，
-    ”afUnBoundData“： &lbrace;
+    }
+    }，
+    ”afUnBoundData“： {
     ”additionalInfo“： ”用户首选项已加载“
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     ”“
 ”
@@ -306,11 +310,11 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 
 **基本预填充测试：**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **多个参数测试：**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## 疑难解答
@@ -330,21 +334,25 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 +++调试步骤
 
 1. **验证FDM配置：**
+
    - 检查服务是否正确配置
    - 独立测试FDM服务
    - 验证数据源连接
 
 2. **检查表单配置：**
+
    - 确认表单与正确的FDM相关联
    - 验证字段`bindRef`值
    - 先测试不含预填充的表单
 
 3. **测试数据流：**
+
    - 使用浏览器开发人员工具检查网络请求
    - 检查JavaScript错误的控制台
    - 验证响应数据格式
 
 4. **常见错误消息：**
+
    - “未找到预填充服务”：检查服务配置
    - “数据绑定失败”：验证`bindRef`准确性
    - “数据格式无效”：确保数据与架构匹配
