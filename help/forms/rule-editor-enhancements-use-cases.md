@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 规则编辑器增强功能和用例
 
-<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。
+<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。
 
 本文介绍了自适应Forms中规则编辑器的最新增强功能。 这些更新旨在帮助您更轻松地定义表单行为，而无需编写自定义代码，并创建更动态、响应更快且个性化的表单体验。
 
