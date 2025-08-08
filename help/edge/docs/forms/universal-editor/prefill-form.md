@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 预填自适应表单、自适应表单边缘交付服务、自适应表单自动填写
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 | 收益 | 描述 |
 |---------|-------------|
-| 更快地完成&#x200B;**&#x200B;** | 减少手动数据输入，帮助用户快速完成表单 |
+| 更快地完成&#x200B;**** | 减少手动数据输入，帮助用户快速完成表单 |
 | **已改进的用户体验** | Forms更加个性化和方便，对于回头用户来说更是如此 |
 | **更高的转化率** | 通过最大程度地减少所需的用户工作量来减少表单放弃 |
 | **减少输入错误** | 来自可靠来源的数据可减少拼写错误和不正确条目 |
@@ -142,7 +142,7 @@ Universal Editor提供两种预填充服务选项：
 
        >[！注意]
        >
-       > 了解有关在[使用表单数据模型(FDM)](/help/forms/work-with-form-data-model.md)中配置FDM服务的更多信息。
+   > 了解有关在[使用表单数据模型(FDM)](/help/forms/work-with-form-data-model.md)中配置FDM服务的更多信息。
 
 +++
 
@@ -267,19 +267,19 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 
     “
     
-    &lbrace;
-    ”afBoundData“： &lbrace;
-    ”user“： &lbrace;
-    ”firstName“： &lbrace;”John“，
+    {
+    ”afBoundData“： {
+    ”user“： {
+    ”firstName“： {”John“，
     ”lastName“： ”Doe“，
     ”email“： ”john.doe@example.com“，
     ”phone“：“+1-555-0123”
-    &rbrace;
-    &rbrace;，
-    ”afUnBoundData“： &lbrace;
+    }
+    }，
+    ”afUnBoundData“： {
     ”additionalInfo“： ”用户首选项已加载“
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     ”“
 ”
@@ -431,8 +431,6 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 您可以为每个表单配置一个主预填充服务。 但是，您可以在单个表单数据模型中组合不同的数据源，以实现相似的功能。
 
 +++
-
-=
 
 ## 相关主题
 
