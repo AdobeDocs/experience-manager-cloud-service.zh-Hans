@@ -21,7 +21,7 @@ ht-degree: 3%
 
 | 收益 | 描述 |
 |---------|-------------|
-| 更快地完成&#x200B;**** | 减少手动数据输入，帮助用户快速完成表单 |
+| 更快地完成&#x200B;**&#x200B;** | 减少手动数据输入，帮助用户快速完成表单 |
 | **已改进的用户体验** | Forms更加个性化和方便，对于回头用户来说更是如此 |
 | **更高的转化率** | 通过最大程度地减少所需的用户工作量来减少表单放弃 |
 | **减少输入错误** | 来自可靠来源的数据可减少拼写错误和不正确条目 |
@@ -249,7 +249,7 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 3. 选择&#x200B;**预览为HTML**
 4. 通过将参数附加到URL来测试预填充：
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **示例：**
 
@@ -269,19 +269,19 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 
     “
     
-    {
-    ”afBoundData“： {
-    ”user“： {
-    ”firstName“： {”John“，
+    &lbrace;
+    ”afBoundData“： &lbrace;
+    ”user“： &lbrace;
+    ”firstName“： &lbrace;”John“，
     ”lastName“： ”Doe“，
     ”email“： ”john.doe@example.com“，
     ”phone“：“+1-555-0123”
-    }
-    }，
-    ”afUnBoundData“： {
+    &rbrace;
+    &rbrace;，
+    ”afUnBoundData“： &lbrace;
     ”additionalInfo“： ”用户首选项已加载“
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     ”“
 ”
