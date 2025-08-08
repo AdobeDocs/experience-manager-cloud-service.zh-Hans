@@ -8,7 +8,7 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -18,11 +18,14 @@ ht-degree: 0%
 # 关于配置Dynamic Media公司别名帐户 {#about-dm-alias-acct}
 
 <!-- hide: yes
-hidefromtoc: yes -->
+hidefromtoc: yes 
+-->
 
-<!-- >[!NOTE]
+<!-- 
+>[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. -->
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+-->
 
 Dynamic Media URL和查看器嵌入代码包含您的公司帐户名称。 此帐户名称是在预配Dynamic Media时创建的。 在某些情况下，您的企业可能会经历收购、品牌再造，或者您只想使用更令人难忘的名字。 在这种情况下，在开箱即用的所有URL和查看器嵌入代码中手动更新公司帐户名称并不容易。 此外，您还可能会影响现有的Dynamic Media存储库或影响实时内容。 要解决此问题，您可以配置Dynamic Media公司别名帐户。
 
@@ -34,7 +37,7 @@ Dynamic Media公司别名帐户可确保用户界面中所有开箱即用的Dyna
 * Dynamic Media公司别名帐户功能仅限于Experience Manager Assets创作模式和交付。 公司别名不适用于Experience Manager Sites。 没有为此更改更新WCM （Web内容管理）组件。 这些组件将继续与用于获取Dynamic Media资产的原始Dynamic Media公司名称一起使用。
 * 您只能在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上设置一个公司别名帐户。 但是，您可以通过支持案例创建尽可能多的公司别名帐户，并在Dynamic Media URL或查看器嵌入代码中手动反映必要的别名。
 * Dynamic Media的现成[缓存无效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)功能使在Cloud Services的Dynamic Media配置页面中配置的公司和公司别名帐户的URL失效。
-* 当您在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上配置公司别名帐户时，为了成功使缓存失效，您必须同时使&#x200B;**&#x200B; &#x200B;**&#x200B;[!UICONTROL 公司]&#x200B;**&#x200B;帐户和&#x200B;**&#x200B;[!UICONTROL 公司别名]**&#x200B;帐户的URL失效。
+* 当您在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上配置公司别名帐户时，为了成功使缓存失效，您必须同时使&#x200B;** **[!UICONTROL 公司]**&#x200B;帐户和&#x200B;**[!UICONTROL 公司别名]**&#x200B;帐户的URL失效。
 
 另请参阅[在云服务中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 

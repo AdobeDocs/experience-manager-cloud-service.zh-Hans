@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 23%
+source-wordcount: '2197'
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 23%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=zh-Hans#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Acrobat Sign]为自适应Forms和AEM工作流启用电子签名工作流。 电子签名改进了法律、销售、工资单、人力资源管理和其他许多方面的文档的处理工作流。
@@ -37,7 +37,7 @@ ht-degree: 23%
 1. 有效的[Adobe Acrobat Sign开发人员帐户。](https://www.adobe.com/acrobat/business/developer-form.html)
 1. [Adobe Acrobat Sign API应用程序](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 1. [!DNL Adobe Acrobat Sign] API 应用程序的凭据（客户端 ID 和客户端密码）。
-1. （仅适用于基于Government ID的身份验证）[为政府ID身份验证启用身份验证方法](https://helpx.adobe.com/cn/sign/using/adobesign-authentication-government-id.html#AuditReport)。
+1. （仅适用于基于Government ID的身份验证）[为政府ID身份验证启用身份验证方法](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport)。
 
 ### 将AEM Forms创作和发布实例连接到Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
 
@@ -65,7 +65,7 @@ ht-degree: 23%
 [create URL](#create-a-redirect-url-for-your-aem-instance)
  -->
 
-1. 将当前浏览器窗口中存在的URL复制到笔记本，并从URL中删除部分`/ui#/aem`。 在后续步骤中，需要修改的URL才能使用[!DNL AEM Forms]配置[!DNL Adobe Acrobat Sign]应用程序。 选择&#x200B;**[!UICONTROL 下一步]**。
+1. 将当前浏览器窗口中存在的URL复制到笔记本，并从URL中删除部分`/ui#/aem`。 在后续步骤中，需要修改的URL才能使用[!DNL Adobe Acrobat Sign]配置[!DNL AEM Forms]应用程序。 选择&#x200B;**[!UICONTROL 下一步]**。
 
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，
    * **[!UICONTROL OAuth URL]**&#x200B;字段包含默认URL，其中包含Adobe Sign数据库分片。 URL 的格式为：
@@ -84,11 +84,11 @@ ht-degree: 23%
 
    其中：
 
-   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/cn/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
-   >* 保持&#x200B;**创建Adobe Acrobat Sign配置**&#x200B;页面打开。 不要关闭它。 在为[!DNL Adobe Acrobat Sign]应用程序配置OAuth设置后，您可以检索&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**，如即将执行的步骤中所述。
+   >* 保持&#x200B;**创建Adobe Acrobat Sign配置**&#x200B;页面打开。 不要关闭它。 在为&#x200B;**应用程序配置OAuth设置后，您可以检索**&#x200B;客户端ID **和**&#x200B;客户端密钥[!DNL Adobe Acrobat Sign]，如即将执行的步骤中所述。
    > * 登录Adobe Sign帐户后，导航至&#x200B;**[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API信息]** > **[!UICONTROL REST API方法文档]** > **[!UICONTROL OAuth访问令牌]**，以访问与Adobe Sign OAuth URL和访问令牌URL相关的信息。
 
 1. 配置 [!DNL Adobe Acrobat Sign] 应用程序的 OAuth 设置：
@@ -112,14 +112,14 @@ ht-degree: 23%
 
    ![OAuth 配置](/help/forms/assets/oauthconfig-new.png)
 
-1. 返回&#x200B;**[!UICONTROL 创建Adobe Acrobat Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定[**[!UICONTROL 客户端ID]** （也称为应用程序ID）和&#x200B;**[!UICONTROL 客户端密钥]**]。 使用您在上一步中创建的Adobe Acrobat Sign应用程序[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的客户端ID和客户端密钥。
+1. 返回&#x200B;**[!UICONTROL 创建Adobe Acrobat Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定[**[!UICONTROL 客户端ID]** （也称为应用程序ID）和&#x200B;**[!UICONTROL 客户端密钥]**]。 使用您在上一步中创建的Adobe Acrobat Sign应用程序[的](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)客户端ID和客户端密钥。
 
 1. 在[!UICONTROL 授权范围]部分中，您可以根据需要通过将前缀“self”或“account”添加到范围中，将范围修改为“account”或“self”。
    ![授权范围](/help/forms/assets/authorization-scope.png)
 
 1. 选择&#x200B;**[!UICONTROL 为附件启用Adobe Acrobat Sign]**&#x200B;选项以将附加到自适应表单的文件附加到已发送以供签名的相应[!DNL Adobe Acrobat Sign]文档。
 
-1. 选择&#x200B;**[!UICONTROL 连接到Adobe Acrobat Sign]**。 在系统提示输入凭据时，提供创建[!DNL Adobe Acrobat Sign]应用程序时使用的帐户的&#x200B;**用户名**&#x200B;和&#x200B;**密码**。 当要求您确认`your developer account`的访问时，请单击&#x200B;**[!UICONTROL 允许访问]**。 如果凭据正确，并且您允许 [!DNL AEM Forms] 访问您的 [!DNL Adobe Acrobat Sign] 开发人员帐户，系统会显示一条与以下内容类似的成功消息。
+1. 选择&#x200B;**[!UICONTROL 连接到Adobe Acrobat Sign]**。 在系统提示输入凭据时，提供创建&#x200B;**应用程序时使用的帐户的**&#x200B;用户名&#x200B;**和**&#x200B;密码[!DNL Adobe Acrobat Sign]。 当要求您确认`your developer account`的访问时，请单击&#x200B;**[!UICONTROL 允许访问]**。 如果凭据正确，并且您允许 [!DNL AEM Forms] 访问您的 [!DNL Adobe Acrobat Sign] 开发人员帐户，系统会显示一条与以下内容类似的成功消息。
 
    ![Adobe Acrobat Sign云配置成功](assets/adobe-sign-cloud-configuration-success.png)
 
@@ -181,7 +181,7 @@ AEM Forms as a Cloud Service提供开发、暂存和生产环境。 您可以将
 
 Adobe Acrobat Sign政府解决方案团队要求为您的Adobe Acrobat Sign应用程序（如下所列）启用`re-direct URL`和某些范围，以生成凭据（客户端ID和客户端密钥），从而允许您将AEM Forms与适用于政府的Adobe Acrobat Sign Solutions连接。
 
-与您的Adobe Acrobat Sign政府解决方案代表([Adobe Professional Services团队成员](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password))共享`scopes`（如下所列），并共享在上一部分中创建并记下的最后一步的`re-direct URL`。
+与您的Adobe Acrobat Sign政府解决方案代表(`scopes`Adobe Professional Services团队成员`re-direct URL`)共享[（如下所列），并共享在上一部分中创建并记下的最后一步的](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)。
 
 **_范围_**
 
@@ -197,7 +197,7 @@ Adobe Acrobat Sign政府解决方案团队要求为您的Adobe Acrobat Sign应�
 
 #### 使用收到的凭据将AEM Forms与适用于政府的Adobe Acrobat Sign Solutions连接
 
-1. 在浏览器中打开`re-direct URL`。 您在[在AEM实例](#create-a-redirect-url-for-your-aem-instance)部分中创建重定向URL的最后一步中创建并记下了`re-direct URL`。
+1. 在浏览器中打开`re-direct URL`。 您在`re-direct URL`在AEM实例[部分中创建重定向URL的最后一步中创建并记下了](#create-a-redirect-url-for-your-aem-instance)。
 
 1. 在&#x200B;**[!UICONTROL 创建Adobe Sign配置]**&#x200B;页面的&#x200B;**[!UICONTROL 常规]**&#x200B;选项卡中，为该配置指定一个&#x200B;**[!UICONTROL 名称]**，然后选择&#x200B;**[!UICONTROL 下一步]**。 您可以选择指定&#x200B;**[!UICONTROL 标题]**&#x200B;并浏览以选择配置的&#x200B;**[!UICONTROL 缩略图]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 
@@ -225,7 +225,7 @@ Adobe Acrobat Sign政府解决方案团队要求为您的Adobe Acrobat Sign应�
 
    其中：
 
-   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/cn/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。您可以修改数据库分片的值。确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -239,7 +239,9 @@ Adobe Acrobat Sign政府解决方案团队要求为您的Adobe Acrobat Sign应�
 
    ![Adobe Acrobat Sign云配置成功](assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      -->
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建配置。
 
@@ -258,9 +260,9 @@ AEM Forms as a Cloud Service提供调度程序服务，可按定义的时间间�
 
 默认情况下，[!DNL Adobe Acrobat Sign] 调度程序服务每 24 小时检查（轮询）一次签名者响应。您可以为您的环境更改此默认间隔。
 
-要更改默认间隔，请为&#x200B;**Adobe Acrobat Sign Configuration Service**&#x200B;配置的&#x200B;**sign.status.exp**&#x200B;属性指定[cron表达式](https://en.wikipedia.org/wiki/Cron#CRON_expression)。
+要更改默认间隔，请为[Adobe Acrobat Sign Configuration Service](https://en.wikipedia.org/wiki/Cron#CRON_expression)配置的&#x200B;**sign.status.exp**&#x200B;属性指定&#x200B;**cron表达式**。
 
-例如，要在每天凌晨00:00运行配置服务，请设置&#x200B;**Adobe Acrobat Sign Configuration Service**&#x200B;配置的&#x200B;**sign.status.exp**&#x200B;属性以指定`0 0 0 1/1 * ? *`。 以下 JSON 文件显示了每天凌晨 00:00 运行配置服务的示例：
+例如，要在每天凌晨:00运行配置服务，请设置&#x200B;**Adobe Acrobat Sign Configuration Service**&#x200B;配置的&#x200B;**sign.status.exp**&#x200B;属性以指定`0 0 0 1/1 * ? *`。 以下JSON文件显示了每天凌晨00:00运行配置服务的示例：
 
 ```json
 {
@@ -268,7 +270,7 @@ AEM Forms as a Cloud Service提供调度程序服务，可按定义的时间间�
 }
 ```
 
-要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
+要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)。
 
 ## 常见问题解答
 

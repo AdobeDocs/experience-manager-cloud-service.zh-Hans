@@ -4,7 +4,7 @@ description: 扩展Adobe Experience Manager as a Cloud Service的体验片段
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 可以从浏览器中找到此演绎版。 但是，其主要目的是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问体验片段的内容。
 
-纯HTML演绎版将协议、主机和上下文路径添加到路径中，这些路径为：
+纯HTML演绎版将协议、主机和上下文路径添加到路径中：
 
 * 类型： `src`、`href`或`action`
 
@@ -47,24 +47,24 @@ ht-degree: 0%
 >
 >有关详细信息，请参阅[外部化URL](/help/implementing/developing/tools/externalizer.md)。
 
-![普通HTML演绎版](assets/xf-14.png)
+![纯HTML演绎版](assets/xf-14.png)
 
 纯格式副本选择器使用转换器，而不是其他脚本。 [Sling重写器](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html)用作转换器。 此转换器的配置如下：
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### 配置HTML演绎版生成 {#configuring-html-rendition-generation}
+### 配置HTML呈现版本生成 {#configuring-html-rendition-generation}
 
-HTML演绎版使用Sling重写器管道生成。 管道定义于`/libs/experience-fragments/config/rewriter/experiencefragments`。 HTML转换器支持以下选项：
+HTML演绎版使用Sling重写器管道生成。 管道定义于`/libs/experience-fragments/config/rewriter/experiencefragments`。 HTML Transformer支持以下选项：
 
 * `allowedCssClasses`
    * 匹配应在最终演绎版中保留的CSS类的RegEx表达式。
    * 如果客户想要删除某些特定的CSS类，则此选项非常有用
 * `allowedTags`
-   * 最终演绎版中允许的HTML标签列表。
+   * 最终演绎版中允许的HTML标记列表。
    * 默认情况下，允许使用以下标记（无需配置）：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link和script
 
-Adobe建议使用叠加配置重写器。 查看AEM as a Cloud Service[&#128279;](/help/implementing/developing/introduction/overlays.md)中的叠加。
+Adobe建议使用叠加来配置重写器。 查看AEM as a Cloud Service[中的](/help/implementing/developing/introduction/overlays.md)叠加。
 
 ## 体验片段的模板 {#templates-for-experience-fragments}
 
@@ -74,12 +74,14 @@ Adobe建议使用叠加配置重写器。 查看AEM as a Cloud Service[&#128279;
 >
 >体验片段只能在基于可编辑模板的页面上使用。
 
-<!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
+<!-- 
+***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
 
 为体验片段开发新模板时，您可以遵循可编辑模板的标准实践。
 
-<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- 
+When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 要创建&#x200B;**创建体验片段**&#x200B;向导检测到的体验片段模板，必须遵循以下规则集之一：
@@ -87,11 +89,9 @@ Adobe建议使用叠加配置重写器。 查看AEM as a Cloud Service[&#128279;
 1. 两者：
 
    1. 模板的资源类型（初始节点）必须继承自：
-
       `cq/experience-fragments/components/xfpage`
 
    1. 模板名称必须以下列内容开头：
-
       `experience-fragments`
 此模式允许用户在/content/experience-fragments中创建体验片段，因为此文件夹的`cq:allowedTemplates`属性包括名称以`experience-fragment`开头的所有模板。 客户可以更新此属性以包含他们自己的命名方案或模板位置。
 
@@ -101,7 +101,8 @@ Adobe建议使用叠加配置重写器。 查看AEM as a Cloud Service[&#128279;
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!-- 
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
@@ -138,25 +139,25 @@ The only additional configuration is to ensure that the components are [allowed 
 * 向其中添加组件，
 * 然后以HTML格式或JSON格式将其导出为Adobe Target选件。
 
-此功能可以在AEM的创作实例上启用。 它需要有效的Adobe Target配置以及Link Externalizer配置。
+可以在AEM的创作实例上启用此功能。 它需要有效的Adobe Target配置以及Link Externalizer配置。
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-链接外部化器用于确定在创建Target选件的HTML版本时所需的正确URL，然后会将该URL发送到Adobe Target。 此过程是必需的，因为Adobe Target要求可以公开访问TargetHTML选件中的所有链接。 这意味着链接引用的任何资源以及体验片段本身必须先发布，然后才能使用。
+链接外部化器用于确定在创建Target选件的HTML版本(随后将发送到Adobe Target)时所需的正确URL。 此过程是必需的，因为Adobe Target要求可以公开访问Target HTML选件中的所有链接。 这意味着链接引用的任何资源以及体验片段本身必须先发布，然后才能使用。
 
-默认情况下，构造TargetHTML选件时，会向AEM中的自定义Sling选择器发送请求。 此选择器名为`.nocloudconfigs.html`。 顾名思义，它创建了体验片段的纯HTML渲染，但不包括云配置（这会是多余的信息）。
+默认情况下，构造Target HTML选件时，会向AEM中的自定义Sling选择器发送请求。 此选择器名为`.nocloudconfigs.html`。 顾名思义，它创建了体验片段的纯HTML渲染，但不包括云配置（这会是多余的信息）。
 
-生成HTML页面后，Sling重写器管道将修改为输出：
+生成HTML页面后，会将Sling重写器管道修改为输出：
 
 1. `html`、`head`和`body`元素已替换为`div`元素。 已删除`meta`、`noscript`和`title`元素（它们是原始`head`元素的子元素，在被`div`元素替换时不会考虑这些元素）。
 
-   完成此过程是为了确保Target活动可以包含HTMLTarget选件。
+   完成此过程是为了确保HTML Target选件可包含在Target活动中。
 
-2. AEM修改HTML中存在的任何内部链接，使其指向已发布的资源。
+2. AEM会修改HTML中存在的任何内部链接，以便这些链接指向已发布的资源。
 
-   要确定要修改的链接，AEM对HTML元素的属性遵循以下模式：
+   要确定要修改的链接，AEM会对HTML元素的属性遵循以下模式：
 
    1. `src`属性
    2. `href`属性
@@ -167,18 +168,18 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
    >
    >HTML中的内部链接是相对链接，但在某些情况下，自定义组件可能会在HTML中提供完整的URL。 默认情况下，AEM会忽略这些功能齐全的URL且不进行任何修改。
 
-   这些属性中的链接通过AEM Link Externalizer `publishLink()`运行，以重新创建URL，就像在已发布的实例上一样，因此是公开可用的。
+   这些属性中的链接通过AEM链接外部化器`publishLink()`运行，以重新创建URL，就像在已发布的实例上一样，因此是公开可用的。
 
 使用开箱即用的实施时，上述流程应足以从体验片段生成Target选件，然后将其导出到Adobe Target。 但是，有一些用例未在此流程中说明。 其中有些未说明的案例包括：
 
 * Sling映射仅在发布实例上可用
 * Dispatcher重定向
 
-对于这些用例，AEM提供了链接重写器提供程序接口。
+对于这些用例，AEM提供了链接重写器提供程序界面。
 
 ### 链接重写器提供程序界面 {#link-rewriter-provider-interface}
 
-对于[default](#default-link-rewriting)未涵盖的更复杂的情况，AEM提供链接重写器提供程序接口。 此接口是您可以在捆绑包中作为服务实现的`ConsumerType`接口。 它绕过AEM对HTML选件的内部链接执行的修改（从Experience Fragment渲染）。 利用此界面，您可以根据业务需求自定义内部HTML链接的重写流程。
+对于[default](#default-link-rewriting)未涵盖的更复杂的情况，AEM提供链接重写器提供程序接口。 此接口是您可以在捆绑包中作为服务实现的`ConsumerType`接口。 它绕过AEM对HTML选件的内部链接执行的修改，这些修改是从Experience Fragment渲染的。 利用此界面，可自定义重写HTML内部链接的流程，以满足您的业务需求。
 
 实施此接口作为服务的用例示例包括：
 
@@ -349,7 +350,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### 优先级 — getPriority {#priorities-getpriority}
 
-需要多个服务来满足不同类型的体验片段的情况并不少见，甚至需要拥有一项通用服务来处理所有体验片段的外部化和映射操作。 在这些情况下，可能会发生与使用哪个服务有关的冲突，因此AEM提供了为不同服务定义&#x200B;**优先级**&#x200B;的可能性。 使用下列方法指定优先级：
+需要多个服务来满足不同类型的体验片段的情况并不少见，甚至需要拥有一项通用服务来处理所有体验片段的外部化和映射操作。 在这些情况下，可能会发生与使用哪个服务有关的冲突，因此AEM提供了为其他服务定义&#x200B;**优先级**&#x200B;的可能性。 使用下列方法指定优先级：
 
 * `getPriority()`
 
