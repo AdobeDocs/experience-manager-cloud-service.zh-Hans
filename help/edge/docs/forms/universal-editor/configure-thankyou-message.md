@@ -4,7 +4,7 @@ description: 了解如何向用户显示感谢消息或重定向到表单作者�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -56,5 +56,3 @@ ht-degree: 0%
 ![感谢](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 表单作者可为每个表单配置一个页面，表单用户在提交表单后会重定向到该页面。
-
-

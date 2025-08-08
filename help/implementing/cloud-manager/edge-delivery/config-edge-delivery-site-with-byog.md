@@ -3,7 +3,7 @@ title: 配置Edge Delivery站点以使用外部Git存储库
 description: 了解如何将Edge Delivery站点链接到专用或企业Git存储库。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 239ee3021057dd108d18ab2d7729680692223403
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 7%

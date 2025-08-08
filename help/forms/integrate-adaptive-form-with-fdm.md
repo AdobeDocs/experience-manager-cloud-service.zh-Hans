@@ -3,7 +3,7 @@ title: 如何将表单的表单数据模型(FDM)与自适应表单集成？
 description: 了解如何基于表单数据模型（FDM）创建表单。在 FDM 中生成并编辑数据模型对象的样本数据。
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 28%
@@ -42,8 +42,8 @@ ht-degree: 28%
 
    ![使用表单数据模型提交](/help/forms/assets/submit-uisng-fdm-fc.png)
 
-1. 选择要提交&#x200B;**[!UICONTROL 配置的已创建]**&#x200B;数据模型。
-要将附件提交到数据库，请选择&#x200B;**提交表单附件**。 通过选择&#x200B;**提交记录文档**&#x200B;将记录文档(DoR)保存在数据库中。
+1. 选择要提交&#x200B;**[!UICONTROL 配置的已创建]**数据模型。
+要将附件提交到数据库，请选择**提交表单附件**。 通过选择&#x200B;**提交记录文档**&#x200B;将记录文档(DoR)保存在数据库中。
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存提交设置。
 
 >[!TAB 核心组件]
@@ -56,8 +56,8 @@ ht-degree: 28%
 1. 从&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中，选择&#x200B;**[使用表单数据模型提交]**。
    ![使用表单数据模型提交](/help/forms/assets/submit-uisng-fdm-cc.png)
 
-1. 选择要提交&#x200B;**[!UICONTROL 配置的已创建]**&#x200B;数据模型。
-要将附件提交到数据库，请选择&#x200B;**提交表单附件**。 通过选择&#x200B;**提交记录文档**&#x200B;将记录文档(DoR)保存在数据库中。
+1. 选择要提交&#x200B;**[!UICONTROL 配置的已创建]**数据模型。
+要将附件提交到数据库，请选择**提交表单附件**。 通过选择&#x200B;**提交记录文档**&#x200B;将记录文档(DoR)保存在数据库中。
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存提交设置。
 
 >[!TAB 通用编辑器]
@@ -66,15 +66,19 @@ ht-degree: 28%
 
 1. 打开自适应表单进行编辑。
 1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+
+   出现&#x200B;**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
    > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
    > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+
 1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 使用表单数据模型提交]**。
+
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
-如果选择&#x200B;**保存具有原始名称的附件**，则附件会使用其原始文件名存储在文件夹中。 您还可以将记录文档(DoR)保存到Azure Blob存储中。
+如果选择**保存具有原始名称的附件**，则附件会使用其原始文件名存储在文件夹中。 您还可以将记录文档(DoR)保存到Azure Blob存储中。
+
 1. 选择要用于保存数据的&#x200B;**[!UICONTROL 存储配置]**。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**
 

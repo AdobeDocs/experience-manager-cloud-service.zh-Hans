@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 规则编辑器增强功能和用例
 
-<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。
+<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。
 
 本文介绍了自适应Forms中规则编辑器的最新增强功能。 这些更新旨在帮助您更轻松地定义表单行为，而无需编写自定义代码，并创建更动态、响应更快且个性化的表单体验。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 您可以对表单、片段或单个字段使用&#x200B;**validate()**&#x200B;方法。 当片段包含在表单中时，表单和片段将作为选项显示在验证上下文中。 在这种情况下，片段是指其中的字段，而表单是指嵌入片段的父表单。
+>您可以对表单、片段或单个字段使用&#x200B;**validate()**&#x200B;方法。 当片段包含在表单中时，表单和片段将作为选项显示在验证上下文中。 在这种情况下，片段是指其中的字段，而表单是指嵌入片段的父表单。
 
 ## 在规则编辑器中将DownloadDor下载为OOTB函数
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 如果表单未针对记录文档进行配置，则在使用&#x200B;**downloadDoR()**&#x200B;函数的规则应用于按钮时显示错误消息。
+>如果表单未针对记录文档进行配置，则在使用&#x200B;**downloadDoR()**&#x200B;函数的规则应用于按钮时显示错误消息。
 
 **方案**：政府机构提供了用于颁发证书的数字申请表。 在提交表单后，申请人通常需要填写完毕的表单副本以作记录或与另一个部门共享。 为了改善用户体验，FDA希望让申请者可以选择在提交后立即下载记录文档(DoR)，或选择在最终提交前的任何阶段下载。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## 在规则中支持动态变量
 
-增强型规则编辑器现在支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**&#x200B;函数在表单的整个生命周期内设置和检索这些变量。
+增强型规则编辑器现在支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**函数在表单的整个生命周期内设置和检索这些变量。
 这些变量包括：
 
 * 未随表单数据一起提交。
