@@ -59,7 +59,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
    `String att=request.getParameter("attachments");`
 
    在此示例中，`data`存储XML数据，`att`存储附件数据。
-**[!UICONTROL 提交到 REST 端点]**提交操作将表单中填入的数据作为 HTTP GET 请求的一部分提交到配置的确认页面。您可以添加要请求的字段的名称。 请求的格式为：
+**[!UICONTROL 提交到 REST 端点]**&#x200B;提交操作将表单中填入的数据作为 HTTP GET 请求的一部分提交到配置的确认页面。您可以添加要请求的字段的名称。 请求的格式为：
    `{fieldName}={request parameter name}`
 
    如下图所示，`param1` 和 `param2` 作为参数传递，其值是从下一操作中使用的&#x200B;**文本框**&#x200B;和&#x200B;**数字框**&#x200B;字段复制的。
@@ -115,13 +115,13 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    您也可以&#x200B;**[!UICONTROL 启用 POST 请求]**&#x200B;并提供用于发布请求的 URL。要将数据提交到托管表单的 AEM 服务器，请使用与 AEM 服务器的根路径对应的相对路径。例如，`/content/forms/af/SampleForm.html`。要将数据提交到任何其他服务器，请使用绝对路径。
 
-+++
+   +++
 
    +++配置
 
    此选项允许您添加通过AEM的配置浏览器管理的预定义HTTP配置。 您可以选择为服务Rest端点身份验证类型和内容类型创建的配置。 要了解有关身份验证类型和内容类型的更多信息，请访问[配置数据源](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
@@ -130,8 +130,8 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 要根据在Universal Editor中为自适应表单创作的Swagger Open API规范配置提交操作，请执行以下操作：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
-出现**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
+出现&#x200B;**表单属性**&#x200B;对话框。
    >[!NOTE]
    >
    > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
@@ -172,13 +172,13 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    您也可以&#x200B;**[!UICONTROL 启用 POST 请求]**&#x200B;并提供用于发布请求的 URL。要将数据提交到托管表单的 AEM 服务器，请使用与 AEM 服务器的根路径对应的相对路径。例如，`/content/forms/af/SampleForm.html`。要将数据提交到任何其他服务器，请使用绝对路径。
 
-+++
+   +++
 
    +++配置
 
    此选项允许您添加通过AEM的配置浏览器管理的预定义HTTP配置。 您可以选择为服务Rest端点身份验证类型和内容类型创建的配置。 要了解有关身份验证类型和内容类型的更多信息，请访问[配置数据源](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 

@@ -105,8 +105,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 要为在Universal Editor中创作的自适应表单设置使用[AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem)的自动进程，请执行以下步骤：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
-出现**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
+出现&#x200B;**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
