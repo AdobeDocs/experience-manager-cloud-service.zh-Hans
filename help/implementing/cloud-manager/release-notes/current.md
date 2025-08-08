@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3111e74e844fb37afa0c7d218c37014d32ad0a64
+source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 59%
+source-wordcount: '1308'
+ht-degree: 58%
 
 ---
 
@@ -25,11 +25,6 @@ AEM as a Cloud Service中Cloud Manager 2025.8.0的发布日期是2025年8月7日
 
 下一个计划发布于2025年9月4日星期四。
 
-
-
-
-
-
 ## 新增功能 {#what-is-new}
 
 * **Edge Delivery Services许可证可以自助方式包含在HIPAA程序中**
@@ -42,7 +37,7 @@ AEM as a Cloud Service中Cloud Manager 2025.8.0的发布日期是2025年8月7日
 
 * **自动配置新的Forms加载项**
 
-  仅使用站点的客户通常需要一种轻量级、低成本的方式来构建营销表单。 新的AEM Forms Sites加载项通过将有限的Forms功能添加到Sites程序来满足相应需求。 如果需要，它还创建了通往完整AEM Forms产品的清晰升级路径。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  仅使用站点的客户通常需要一种轻量级、低成本的方式来构建营销表单。 新的AEM Forms Sites加载项通过将有限的Forms功能添加到Sites程序来满足相应需求。 它还为整个AEM Forms产品提供了明确的升级途径。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   加载项：
    * 附加到Sites项目并与之一起部署 — 没有单独的Forms项目或权利。
@@ -53,7 +48,7 @@ AEM as a Cloud Service中Cloud Manager 2025.8.0的发布日期是2025年8月7日
 
      ![创建生产程序时，解决方案和加载项中的Forms加载项](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *在程序创建过程中，您可以在Sites解决方案中选择Forms加载项。*
 
-     编辑生产程序时![Forms加载项](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**编辑程序**&#x200B;中，为Sites程序选择Forms加载项，然后运行管道以在环境中激活它。*
+     编辑生产程序时![Forms加载项](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**编辑程序**中，为Sites程序选择Forms加载项，然后运行管道以在环境中激活它。*
 
      有关详细信息，请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 
@@ -67,10 +62,10 @@ AEM as a Cloud Service中Cloud Manager 2025.8.0的发布日期是2025年8月7日
 
 当最新的客户源代码未如预期运行时，可迅速回滚至先前的部署，无需重新运行完整管道或手动回退提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**&#x200B;选项。*
+![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**选项。*
 
 ![“还原先前部署的代码”对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
+*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
 
 ![恢复激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager 会将环境回滚至较早的构建版本，保留内容和配置不变，并在部署完成前将该环境标记为&#x200B;**还原中**。*
@@ -82,7 +77,6 @@ AEM as a Cloud Service中Cloud Manager 2025.8.0的发布日期是2025年8月7日
 请参阅[在 AEM as a Cloud Service 中还原先前部署的代码](/help/operations/restore-previous-code-deployed.md)。
 
 另请参阅 [AEM as a Cloud Service 中的内容恢复](/help/operations/restore.md)。
-
 
 ### 专用测试环境 {#specialized-test-environment}
 
@@ -152,13 +146,13 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 
   ![过滤器面板，显示Edge投放和发布投放的新投放类型](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
 请参阅[添加Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 相关联的电子邮件地址发送电子邮件至 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)。
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## 错误修复
