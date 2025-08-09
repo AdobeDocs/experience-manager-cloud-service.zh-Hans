@@ -119,7 +119,7 @@ Forms提交服务具备多项优势可简化数据收集：
 
 >[!TIP]
 >
->**是Edge Delivery Services的新用户？**&#x200B;从[入门教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)开始，设置您的项目基础。
+>**是Edge Delivery Services的新用户？**&#x200B;从[入门教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)开始，设置您的项目基础。
 
 ## 配置方法
 
@@ -139,7 +139,7 @@ Forms提交服务提供了两种配置方法。 选择最适合您的工作流�
 
 在配置任一方法之前，请确保您的AEM项目基础已准备就绪：
 
-1. **使用最新的自适应AEM块创建或更新您的Forms项目** （[入门教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）
+1. **使用最新的自适应AEM块创建或更新您的Forms项目** （[入门教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）
 
 2. **更新项目根目录中的`fstab.yaml`**：
 
@@ -172,7 +172,7 @@ Forms提交服务提供了两种配置方法。 选择最适合您的工作流�
 1. **打开您的电子表格平台**(Google Sheets或Microsoft Excel)
 2. **为您的表单项目创建新电子表格**
 3. **为您的工作表命名**（必须为`helix-default`或`shared-aem`）
-4. **使用**&#x200B;表单创建指南[定义您的表单结构](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **使用**&#x200B;表单创建指南[定义您的表单结构](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![表单定义](/help/forms/assets/form-submission-definition.png)
 *示例：具有字段类型、标签和验证规则的表单定义*
@@ -599,7 +599,7 @@ Solutions:
 
 +++ 增强您的Forms
 
-- **[创建高级Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 添加验证、条件逻辑和自定义样式
+- **[创建高级Forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 添加验证、条件逻辑和自定义样式
 - **[表单组件指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** — 浏览可用的表单字段类型
 
 +++

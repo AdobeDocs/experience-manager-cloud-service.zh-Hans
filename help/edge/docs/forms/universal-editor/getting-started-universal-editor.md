@@ -70,7 +70,7 @@ Edge Delivery Services for AEM Forms将高性能Web交付与Universal Editor中�
 
 >[!TIP]
 >
-> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)开始。
+> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hans)开始。
 
 ## 路径A：使用Forms创建新项目
 
