@@ -147,6 +147,7 @@ ht-degree: 55%
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ 布局和结构变量
@@ -782,7 +783,7 @@ main .form .text-wrapper input {
  }
 ```
 
--  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
+- `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -798,7 +799,7 @@ main .form .text-wrapper input {
   }
 ```
 
--  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
+- `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
 1. 定位面板中的各个字段：
@@ -811,7 +812,7 @@ main .form form .panel-wrapper .{Type}-wrapper {
 }
 ```
 
--  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
+- `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
 1. 定位特定领域（可选）：
 
@@ -1108,6 +1109,7 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
   text-align: center;
 }
 ```
+
 +++
 
 +++ 基于字段名称的样式设置
@@ -1495,6 +1497,7 @@ main .form form .text-wrapper input {
   cursor: not-allowed;
 }
 ```
+
 +++
 
 ### **特定于组件的最佳实践**
