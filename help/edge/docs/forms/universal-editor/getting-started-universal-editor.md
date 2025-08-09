@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2609'
 ht-degree: 1%
 
 ---
@@ -48,45 +48,47 @@ Edge Delivery Services for AEM Forms将高性能Web交付与Universal Editor中�
 
 ## 先决条件
 
-在开始之前，请确保您具备以下条件：
+要确保在使用通用编辑器的AEM Forms中顺利、成功地使用Edge Delivery Services，请在继续之前查看并确认以下先决条件：
 
-### 所需访问权限
+### 访问要求
 
-- **GitHub帐户**&#x200B;具有创建存储库的权限
-- **AEM as a Cloud Service**&#x200B;创作访问权限
+- **GitHub帐户**：您必须拥有有权创建新存储库的GitHub帐户。 这对于管理项目源代码并与团队协作至关重要。
+- **AEM as a Cloud Service创作访问权限**：确保您拥有AEM as a Cloud Service环境的创作级别访问权限。 创建、编辑和发布表单需要此访问权限。
 
 ### 技术要求
 
-- **Git基础知识**：克隆、提交、推送操作
-- **Web技术**：HTML、CSS、JavaScript基础知识
-- 用于本地开发的&#x200B;**Node.js**（建议使用版本16+）
-- **npm**&#x200B;或&#x200B;**yarn**&#x200B;包管理器
+- **熟悉Git**：您应该能够熟练执行基本的Git操作，如克隆存储库、提交更改和推送更新。 这些技能是源代码控制和项目协作的基础。
+- **了解Web技术**：建议具备有关HTML、CSS和JavaScript的工作知识。 这些技术构成了表单自定义和故障排除的基础。
+- **Node.js（版本16或更高版本）**：本地开发和运行生成工具需要Node.js。 确保系统上安装了版本16或更高版本。
+- **包管理器（npm或yarn）**：您需要npm（节点包管理器）或yarn来管理项目依赖项和脚本。
 
-### 推荐的知识
+### 建议的背景
 
-- 对AEM Sites概念的基本了解
-- 熟悉窗体设计原则
-- WYSIWYG编辑器的使用体验
+- **AEM Sites概念**：对AEM Sites的基本了解（包括网站结构和内容创作）将帮助您有效地导航和集成表单。
+- **表单设计原则**：熟悉表单设计的最佳实践（例如可用性、可访问性和数据验证）将使您能够创建有效且用户友好的表单。
+- **WYSIWYG编辑器的使用体验**：以前使用What You See Is What You Get (WYSIWYG)编辑器的体验将帮助您更有效地利用通用编辑器的可视化创作功能。
 
 >[!TIP]
 >
-> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hans)开始。
+> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)开始。
 
 ## 路径A：使用Forms创建新项目
 
-**最适合：**&#x200B;新实施或概念验证
+**推荐用于：**&#x200B;新项目、试验或概念验证计划
 
-AEM Forms样板提供了一个带有集成的自适应Forms块的预配置模板。
+利用AEM Forms样板加快项目设置。 此样板提供了可无缝集成自适应Forms块的现成模板，使您能够在AEM站点中快速构建和部署表单。
 
-### 步骤概述
+### 概述
 
-1. 从模板设置GitHub存储库
-2. 安装AEM代码同步
-3. 配置AEM项目连接
-4. 创建和发布AEM站点
-5. 使用通用编辑器添加表单
+要成功启动具有集成表单的新项目，您将：
 
-下面我们来了解一下每个步骤：
+1. 使用AEM Forms样板模板创建GitHub存储库。
+2. 设置AEM代码同步以自动执行AEM与您的存储库之间的内容同步。
+3. 配置GitHub项目与AEM环境之间的连接。
+4. 建立和发布新的AEM站点。
+5. 使用通用编辑器添加和管理表单。
+
+以下部分将详细指导您完成每个步骤，确保顺利、高效地进行项目设置。
 
 +++步骤1：从模板创建GitHub存储库
 
@@ -184,7 +186,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
     >[！NOTE]
     >
-    >存在生成问题？ 请参阅[GitHub生成问题疑难解答](#troubleshooting-github-build-issues)。
+>存在生成问题？ 请参阅[GitHub生成问题疑难解答](#troubleshooting-github-build-issues)。
 
 +++
 
@@ -239,7 +241,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
    **成功！**&#x200B;您的AEM站点现已创建并连接到GitHub。
 
-6. 在通用编辑器中打开&#x200B;**&#x200B;**
+6. 在通用编辑器中打开&#x200B;****
    - 在站点控制台中，找到新站点
    - 选择`index`页面
    - 单击&#x200B;**编辑**
@@ -308,7 +310,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 > - **主页：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **其他页面：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**下一步：**&#x200B;[创建您的第一个表单](#create-your-first-form)
+**下一步：**[创建您的第一个表单](#create-your-first-form)
 
 +++
 
@@ -320,20 +322,26 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
 ### 路径B的先决条件
 
-- 使用[AEM样板XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)构建的现有AEM项目
-- 本地开发环境设置
-- Git对您的项目存储库的访问权限
+要继续将表单集成到您现有的AEM项目中，请确保满足以下先决条件：
 
-**使用AEM Forms样板？**&#x200B;如果您的项目是使用[AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms)创建的，则表单已集成。 跳至[创建您的第一个表单](#create-your-first-form)。
+- 您有一个使用[AEM样板XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)创建的现有AEM项目。
+- 您已设置[本地开发环境](#set-up-local-development-environment)
+- 您拥有对项目存储库的Git访问权限，允许您根据需要克隆、修改和推送更改。
 
-下面我们来了解一下每个步骤：
+>[!NOTE]
+>
+> 如果您的项目最初是使用[AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms)设置的，则已包含表单功能。 在这种情况下，您可以转到[创建您的第一个表单](#create-your-first-form)部分。
 
-### 步骤概述
+以下指南提供了一种将表单功能添加到现有项目的结构化方法。 每个步骤都旨在确保在Universal Editor环境中实现无缝集成和最佳功能。
 
-1. 复制自适应Forms块文件
-2. 更新项目配置
-3. 配置ESLint规则
-4. 生成和提交更改
+### 概述
+
+您将完成以下高级步骤：
+
+1. 将自适应Forms块文件复制到项目中。
+2. 更新项目配置以识别和支持表单组件。
+3. 调整ESLint规则以适应新文件和编码模式。
+4. 构建项目并将更改提交到存储库。
 
 +++步骤1：复制Forms块文件
 
@@ -490,23 +498,35 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
 +++
 
-**下一步：**&#x200B;[创建您的第一个表单](#create-your-first-form)
+**下一步：**[创建您的第一个表单](#create-your-first-form)
 
 ## 创建您的第一个表单
 
-**同时应用于路径A和路径B的用户：**
+**谁应关注此部分：**\
+本节与路径A（新项目）或路径B（现有项目）之后的用户相关。
 
-现在，您的项目已设置了表单功能，让我们使用通用编辑器的WYSIWYG界面创建您的第一个表单。
+利用现在可用于创建表单的项目，您可以使用通用编辑器中直观的WYSIWYG创作环境构建第一个表单。 以下步骤提供了一种结构化方法，用于在AEM站点中设计、配置和发布表单。
 
-### 表单创建过程概述
+### 概述
 
-1. **将自适应表单块**&#x200B;添加到您的页面
-2. **添加表单组件**（文本输入、按钮等）
-3. **配置组件属性**
-4. **预览和测试**&#x200B;您的表单
-5. **发布**&#x200B;更新的页面
+在通用编辑器中创建表单的过程包括几个关键阶段：
 
-下面我们来了解一下每个步骤：
+1. **插入自适应表单块**\
+   首先，将自适应表单块添加到您选择的页面。
+
+2. **添加表单组件**\
+   通过插入文本字段、按钮和其他输入元素等组件填充表单。
+
+3. **配置组件属性**\
+   根据表单要求，调整每个组件的设置和属性。
+
+4. **预览和测试您的表单**\
+   使用预览功能在发布之前验证表单的外观和行为。
+
+5. **发布更新的页面**\
+   满意后，发布您的页面以使表单可供最终用户使用。
+
+以下部分将详细指导您完成其中的每个步骤，确保获得流畅有效的表单创建体验。
 
 +++步骤1：添加自适应表单块
 

@@ -1,13 +1,13 @@
 ---
+title: 如何在提交自适应表单时发送电子邮件？
 description: 探索在提交自适应表单时设置电子邮件通知的过程。
 keywords: 如何发送自适应表单的电子邮件、电子邮件提交操作、自适应表单电子邮件、表单提交电子邮件、发送电子邮件指南
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: 如何为自适应表单配置提交操作？
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '841'
 ht-degree: 19%
 
 ---
@@ -84,8 +84,8 @@ ht-degree: 19%
 要在Universal Editor中配置发送电子邮件提交操作，请执行以下操作：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >

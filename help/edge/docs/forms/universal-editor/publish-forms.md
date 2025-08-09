@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [发布表单、Edge Delivery Services、表单配置、CORS、反向链接筛选条件]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 2%
 
 ---
 
 # 使用Edge Delivery Services发布自适应Forms
-
-## 概述
 
 发布自适应表单后，该表单便可在Edge Delivery Services上供最终用户访问和提交。 此过程包括三个主要阶段：发布表单、配置安全设置和访问实时表单。
 
@@ -28,29 +26,35 @@ ht-degree: 2%
 
 ## 先决条件
 
-- **表单要求：**
-   - 使用Edge Delivery Services模板创建的自适应表单
-   - 表单已测试并可供生产使用
+- 使用Edge Delivery Services模板创建的自适应表单
+- 表单已测试并可供生产使用
+- AEM Forms作者权限
+- Cloud Manager访问权限（用于生产配置）
+- 开发人员对表单块代码的访问权限（用于提交设置）
 
-- **访问要求：**
-   - AEM Forms作者权限
-   - Cloud Manager访问权限（用于生产配置）
-   - 开发人员对表单块代码的访问权限（用于提交设置）
+## 发布流程概述
 
-- **相关文档：**
-   - [使用Edge Delivery Services创建表单](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [配置提交操作](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+将表单发布到Edge Delivery Services的过程分为三个阶段：
 
-## 第1阶段：发布表单
+- **阶段1：表单发布** — 将表单发布到CDN并验证发布状态
+- **第2阶段：安全配置** — 设置CORS策略和反向链接筛选器以便安全提交
+- **阶段3：访问和验证** — 测试表单功能并验证完整的工作流
 
-### 步骤1：启动发布
+每个阶段都以上一个阶段为基础，以确保安全且功能正常的部署。
+
+### 第1阶段：发布表单
+
++++ 步骤1：启动发布
 
 1. **访问您的表单**：在通用编辑器中打开您的自适应表单
 2. **开始发布**：单击工具栏中的&#x200B;**发布**&#x200B;图标
 
    ![单击发布](/help/forms/assets/publish-icon-eds-form.png)
 
-### 第2步：查看和确认
++++
+
+
++++ 第2步：查看和确认
 
 1. **审阅发布资产**：系统将显示所有正在发布的资产，包括您的表单
 
@@ -61,7 +65,10 @@ ht-degree: 2%
 
    ![发布成功](/help/forms/assets/publish-success.png)
 
-### 步骤3：验证发布状态
++++
+
+
++++ 步骤3：验证发布状态
 
 **检查状态**：再次单击&#x200B;**发布**&#x200B;图标以查看当前状态
 
@@ -73,7 +80,10 @@ ht-degree: 2%
 - 发布过程中无错误消息
 - 表单显示在已发布的资源列表中
 
-### 管理已发布的Forms
++++
+
+
++++ 管理已发布的Forms
 
 **要取消发布表单：**
 
@@ -83,9 +93,12 @@ ht-degree: 2%
 
 ![取消发布表单](/help/forms/assets/unpublish--form.png)
 
-## 阶段2：配置安全设置
++++
 
-### 为什么需要安全配置
+
+### 阶段2：配置安全设置
+
++++ 为什么需要安全配置
 
 要启用安全表单提交，您必须配置安全设置，以便：
 
@@ -96,9 +109,13 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->生产环境需要&#x200B;**&#x200B;**：这些配置是表单提交在生产环境中工作的必备配置。
+>生产环境需要&#x200B;****：这些配置是表单提交在生产环境中工作的必备配置。
 
-### 步骤1：配置表单提交URL
++++
+
+
+
++++ 步骤1：配置表单提交URL
 
 **用途**：直接向AEM实例提交表单
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - URL与您的环境（生产、暂存或本地）匹配
 - URL中没有尾随斜杠
 
-### 步骤2：配置CORS设置
++++
+
+
+
++++ 步骤2：配置CORS设置
 
 **目的**：允许来自Edge Delivery Services域的表单提交请求
 
@@ -151,7 +172,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [CORS配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [反向链接筛选条件文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### 步骤3：配置反向链接过滤器
++++
+
+
+
++++ 步骤3：配置反向链接过滤器
 
 **目的**：将写入操作限制为授权的Edge Delivery Services域
 
@@ -198,9 +223,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [通过Cloud Manager配置反向链接筛选器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## 第3阶段：访问已发布的表单
++++
 
-### Edge Delivery Services的URL结构
+
+### 第3阶段：访问已发布的表单
+
+
+
++++ Edge Delivery Services的URL结构
 
 **标准URL格式：**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### 最终验证步骤
++++
+
+
+
++++ 最终验证步骤
 
 **验证表单可访问性：**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - 数据会显示在配置的目标中（电子表格、电子邮件等）
 - 没有与CORS或安全策略相关的控制台错误
 
++++
+
 
 ## 后续步骤
 
-**立即操作：**
-
-- 彻底测试已发布的表单
-- 监控表单提交数据
-- 根据需要设置分析跟踪
-
-**高级主题：**
 
 - [配置表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [表单的样式和主题](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [添加reCAPTCHA保护](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [创建响应式表单布局](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## 摘要
 
-您已成功：
-
-- 已将自适应表单发布到Edge Delivery Services
-- 已配置表单提交的安全设置
-- 为最终用户设置适当的URL访问权限
-- 已验证表单功能和辅助功能
-
-您的表单现已上线，可随时用于生产。
