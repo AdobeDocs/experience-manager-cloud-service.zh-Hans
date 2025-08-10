@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 预填自适应表单、自适应表单边缘交付服务、自适应表单自动填写
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1787'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 | 收益 | 描述 |
 |---------|-------------|
-| 更快地完成&#x200B;**&#x200B;** | 减少手动数据输入，帮助用户快速完成表单 |
+| 更快地完成&#x200B;**** | 减少手动数据输入，帮助用户快速完成表单 |
 | **已改进的用户体验** | Forms更加个性化和方便，对于回头用户来说更是如此 |
 | **更高的转化率** | 通过最大程度地减少所需的用户工作量来减少表单放弃 |
 | **减少输入错误** | 来自可靠来源的数据可减少拼写错误和不正确条目 |
@@ -249,7 +249,7 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 3. 选择&#x200B;**预览为HTML**
 4. 通过将参数附加到URL来测试预填充：
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **示例：**
 
@@ -267,40 +267,36 @@ FDM中的表单元素显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;**�
 
 基于FDM的表单的&#x200B;**JSON示例：**
 
-    “
-    
-    &lbrace;
-    ”afBoundData“： &lbrace;
-    ”user“： &lbrace;
-    ”firstName“： &lbrace;”John“，
-    ”lastName“： ”Doe“，
-    ”email“： ”john.doe@example.com“，
-    ”phone“：“+1-555-0123”
-    &rbrace;
-    &rbrace;，
-    ”afUnBoundData“： &lbrace;
-    ”additionalInfo“： ”用户首选项已加载“
-    &rbrace;
-    &rbrace;
-    
-    ”“
-”
+```
+  {
+    "afBoundData": {
+      "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123"
+      }
+    },
+    "afUnBoundData": {
+      "additionalInfo": "User preferences loaded"
+    }
+  }
+```
+
 基于XFA的表单的&#x200B;**XML示例：**
 
-    “
-    
-    &lt;？xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;？>
-    &lt;afData>
-    &lt;afBoundData>
-    &lt;user>
-    &lt;firstName>John&lt;/firstName>
-    &lt;lastName>Doe&lt;/lastName>
-    &lt;email>john.doe@example.com&lt;/email>
-    &lt;/user>
-    &lt;/afBoundData>
-    &lt;/afData>
-    
-    &quot;&#39;
+```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <afData>
+    <afBoundData>
+      <user>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <email>john.doe@example.com</email>
+      </user>
+    </afBoundData>
+  </afData>
+```
 
 ### 预填充URL示例
 
