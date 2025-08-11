@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 74%
+source-wordcount: '2557'
+ht-degree: 70%
 
 ---
+
 
 # 资源视图中的元数据 {#metadata}
 
@@ -32,7 +33,7 @@ ht-degree: 74%
 
 ![查看资产的元数据](assets/metadata-view.png)
 
-*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 标题、描述和上传日期等基本元数据在[!UICONTROL 基本]选项卡中提供。[!UICONTROL 高级]选项卡包含更多高级元数据，例如相机型号、镜头详细信息和地理位置标记。[!UICONTROL 标记]选项卡包含根据图像的内容自动应用的标记。
 
@@ -48,7 +49,7 @@ ht-degree: 74%
 
 ![查看资产的智能标记](assets/metadata-view-tags.png)
 
-*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 智能标记还包含以百分比显示的置信度分数。它指示与所应用标记对应的置信度。您可以审核自动应用的智能标记。
 
@@ -180,7 +181,6 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
    * 单击![编辑图标](assets/do-not-localize/edit.svg)即可编辑 URL。
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
 
-
 ### 使用元数据表单中的标记组件 {#tag-component-metadata-form}
 
 根元素是可与资产相关联的标记的树结构，有助于根据分配给某个资产的标记来识别该资产。此外，您可以在元数据编辑器中配置元数据表单时限制特定分类的访问。
@@ -212,6 +212,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 要查看已配置的根标记，请转到资产的详细信息页面，在该页面中执行元数据表单和根标记之间的映射。
+
+## 编辑元数据Forms {#edit-metadata-forms}
+
+执行以下步骤以编辑元数据表单：
+
+1. 导航到[!DNL Assets View]主页并选择&#x200B;**[!DNL Metadata Forms]**&#x200B;查看元数据表单列表。
+1. 选择表单并单击&#x200B;**[!UICONTROL 编辑]**&#x200B;以打开[!DNL Metadata Form Editor]页面。 此页面在左窗格中显示元数据表单的组件，在中间窗格中显示诸如“基本”、“高级”、“标记”等选项卡，在右窗格中显示用于编辑元数据属性的“设置”面板。
+1. 打开选项卡（**[!DNL Basic]**、**[!DNL Advanced]**&#x200B;或&#x200B;**[!DNL Tags]**）。
+1. 选择一个元数据属性以在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中编辑其设置。 您可以在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中更新属性映射、重命名标签、修改或添加属性值，以及执行更多此类编辑。
+1. 单击&#x200B;**[!UICONTROL 预览]**&#x200B;以在保存这些更改之前查看对表单所做的更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
 ## 使用AI生成的元数据增强内容发现 {#ai-smart-tags}
 
@@ -253,13 +264,13 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
@@ -290,4 +301,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
