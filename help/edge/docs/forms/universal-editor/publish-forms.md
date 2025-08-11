@@ -4,11 +4,11 @@ description: 了解如何使用Edge Delivery Services发布、配置和访问自
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: [发布表单、Edge Delivery Services、表单配置、CORS、反向链接筛选条件]
+keywords: 发布表单，Edge Delivery Services，表单配置，CORS，反向链接过滤器
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
 workflow-type: tm+mt
-source-wordcount: 746
+source-wordcount: '746'
 ht-degree: 2%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->生产环境需要&#x200B;**&#x200B;**：这些配置是表单提交在生产环境中工作的必备配置。
+>生产环境需要&#x200B;****：这些配置是表单提交在生产环境中工作的必备配置。
 
 +++
 
