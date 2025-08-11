@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [发布表单、Edge Delivery Services、表单配置、CORS、反向链接筛选条件]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: 746
 ht-degree: 2%
@@ -109,7 +109,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->生产环境需要&#x200B;**&#x200B;**：这些配置是表单提交在生产环境中工作的必备配置。
+>生产环境需要&#x200B;****：这些配置是表单提交在生产环境中工作的必备配置。
 
 +++
 
@@ -284,7 +284,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [配置表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [表单的样式和主题](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [添加reCAPTCHA保护](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [创建响应式表单布局](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [添加reCAPTCHA保护](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 

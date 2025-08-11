@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -308,7 +308,7 @@ ht-degree: 1%
 
 1. **打开通用编辑器**：
    - 导航到AEM Sites控制台，选择您的页面，单击&#x200B;**编辑**
-   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按此顺序添加表单组件**：
    - 标题(H2)：“计税表单”
@@ -664,7 +664,7 @@ Forms成为用于数据收集、潜在客户资格鉴定和用户参与的强大
 
 +++
 
-+++ 后续步骤
+## 后续步骤
 
 **推荐的学习路径**：
 
@@ -676,8 +676,7 @@ Forms成为用于数据收集、潜在客户资格鉴定和用户参与的强大
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)，了解更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)，了解更广泛的上下文
 - 用于启用其他功能的[Extension Manager指南](/help/implementing/developing/extending/extension-manager.md)
 - [Edge Delivery Services表单](/help/edge/docs/forms/overview.md)以了解全面的表单开发指导
 
-+++

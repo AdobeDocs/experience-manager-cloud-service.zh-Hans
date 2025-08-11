@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 3%
@@ -41,10 +41,12 @@ ht-degree: 3%
 
 **决策指导：**
 
+![模板选择决定](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - 将&#x200B;**核心组件**&#x200B;用于复杂的工作流、深层AEM集成，或者利用现有AEM资源。
 - 使用&#x200B;**Edge Delivery Services**&#x200B;实现高性能、简洁性和现代开发实践。
 
-![模板选择决定](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *用于选择相应模板类型的决策流程图*
 
 ## 先决条件
@@ -78,8 +80,8 @@ ht-degree: 3%
 
 该过程包括三个主要阶段：
 
-- **阶段1：**&#x200B;[模板选择和表单创建](#step-1-template-selection-and-form-creation)
-- **阶段2：**&#x200B;[表单创作和设计](#step-2-form-authoring-and-design)
+- **阶段1：**[模板选择和表单创建](#step-1-template-selection-and-form-creation)
+- **阶段2：**[表单创作和设计](#step-2-form-authoring-and-design)
 - **阶段3：** [配置和发布](#step-3-configuration-and-publishing)
 
 每个阶段都包括验证步骤，以确认设置正确。
@@ -343,7 +345,7 @@ ht-degree: 3%
 >[!BEGINTABS]
 >[!TAB 通用编辑器发布]
 
-用于Edge Delivery Services模板的&#x200B;**&#x200B;**
+用于Edge Delivery Services模板的&#x200B;****
 
 1. 在通用编辑器中，单击&#x200B;**发布**&#x200B;按钮（右上角）。
 2. 在对话框中确认发布成功。
@@ -505,7 +507,7 @@ ht-degree: 3%
 如果问题仍然存在：
 
 1. 检查Adobe Experience Cloud服务状态。
-2. 查看[Edge Delivery Services文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hans)。
+2. 查看[Edge Delivery Services文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。
 3. 访问[Adobe Experience League社区](https://experienceleaguecommunities.adobe.com/)。
 4. 联系Adobe客户关怀部门。
 
@@ -528,6 +530,6 @@ ht-degree: 3%
 
 ### 性能优化
 
-- [Edge Delivery Services最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hans)：最大化性能。
+- [Edge Delivery Services最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)：最大化性能。
 - [表单分析](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html)：跟踪表单性能和用户行为。
 

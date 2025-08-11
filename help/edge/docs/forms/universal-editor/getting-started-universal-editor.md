@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Edge Delivery Services for AEM Forms将高性能Web交付与Universal Editor中�
 
 >[!TIP]
 >
-> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hans)开始。
+> 初次使用AEM？ 从[AEM Sites快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)开始。
 
 ## 路径A：使用Forms创建新项目
 
@@ -186,7 +186,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
     >[！NOTE]
     >
-    >存在生成问题？ 请参阅[GitHub生成问题疑难解答](#troubleshooting-github-build-issues)。
+>存在生成问题？ 请参阅[GitHub生成问题疑难解答](#troubleshooting-github-build-issues)。
 
 +++
 
@@ -241,7 +241,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
    **成功！**&#x200B;您的AEM站点现已创建并连接到GitHub。
 
-6. 在通用编辑器中打开&#x200B;**&#x200B;**
+6. 在通用编辑器中打开&#x200B;****
    - 在站点控制台中，找到新站点
    - 选择`index`页面
    - 单击&#x200B;**编辑**
@@ -310,7 +310,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 > - **主页：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **其他页面：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**下一步：**&#x200B;[创建您的第一个表单](#create-your-first-form)
+**下一步：**[创建您的第一个表单](#create-your-first-form)
 
 +++
 
@@ -498,7 +498,7 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
 +++
 
-**下一步：**&#x200B;[创建您的第一个表单](#create-your-first-form)
+**下一步：**[创建您的第一个表单](#create-your-first-form)
 
 ## 创建您的第一个表单
 
@@ -759,27 +759,6 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 
 +++
 
-+++通用编辑器问题
-
-**问题：**&#x200B;表单组件未出现在通用编辑器中
-
-**解决方案：**
-
-- 验证是否已安装并运行AEM代码同步
-- 检查`fstab.yaml`是否具有正确的AEM作者URL
-- 确保您的AEM实例已启用提前访问
-- 确认`component-definition.json`包含表单组件
-
-**问题：**&#x200B;发布后更改不可见
-
-**解决方案：**
-
-- 等待CDN缓存刷新
-- 检查浏览器缓存（尝试无痕模式/私有模式）
-- 验证是否使用了正确的URL格式
-
-+++
-
 +++表单功能问题
 
 **问题：**&#x200B;表单提交不起作用
@@ -801,4 +780,27 @@ AEM代码同步会在AEM创作环境和GitHub存储库之间自动同步内容�
 - 在本地开发环境中测试
 
 +++
+
++++通用编辑器问题
+
+**问题：**&#x200B;表单组件未出现在通用编辑器中
+
+**解决方案：**
+
+- 验证是否已安装并运行AEM代码同步
+- 检查`fstab.yaml`是否具有正确的AEM作者URL
+- 确保您的AEM实例已启用提前访问
+- 确认`component-definition.json`包含表单组件
+
+**问题：**&#x200B;发布后更改不可见
+
+**解决方案：**
+
+- 等待CDN缓存刷新
+- 检查浏览器缓存（尝试无痕模式/私有模式）
+- 验证是否使用了正确的URL格式
+
++++
+
+
 

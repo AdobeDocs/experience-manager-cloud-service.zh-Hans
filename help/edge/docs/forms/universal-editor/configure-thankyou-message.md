@@ -4,292 +4,248 @@ description: 了解如何向用户显示感谢消息或重定向到表单作者�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 38%
+source-wordcount: '1133'
+ht-degree: 0%
 
 ---
 
 
 # 配置感谢消息和重定向URL
 
-表单片段是可重用的组件，可消除重复开发工作并确保组织表单之间的一致性。 您可以一次性将这些元素构建为片段并在多个表单中重复使用，而不是为每个表单重新创建常用部分，如联系信息、地址详细信息或同意协议。
+提交后的体验会显着影响用户满意度和表单完成率。 Adobe的通用编辑器提供了全面的选项，可用于配置用户在提交表单后看到的内容，无论是通过个性化的感谢消息还是到特定页面的策略重定向。
 
-**您将在本文中完成的内容：**
-
-- 了解表单片段的业务价值和技术功能
-- 使用通用编辑器创建可重用的表单片段
-- 通过正确的配置将片段集成到现有表单中
-- 管理片段生命周期并维护各表单的一致性
-
-**业务优势：**
-
-- **缩短开发时间**：一次性构建通用表单节，随时随地重复使用
-- **已改进一致性**：所有表单中的标准化版面和内容
-- **简化的维护**：更新片段一次，以反映使用片段的所有表单中的更改
-- **合规性增强**：确保法规部分保持一致且最新
-
-Edge Delivery Services中的表单片段支持各种高级功能，包括嵌套片段、单个表单中的多个实例以及与数据源的无缝集成。
-
-## 了解表单片段
-
-Edge Delivery Services中的表单片段为模块化表单开发提供了强大的功能：
-
-**核心功能：**
-
-- **一致性管理**：片段在多个表单中维护相同的布局和内容。 通过“更改一次，随处反映”方法，片段的更新将自动应用于预览模式中的所有表单。
-- **多种用法**：在单个表单中多次添加相同的片段，每个片段都具有到不同数据源或架构元素的独立数据绑定。
-- **嵌套结构**：通过将片段嵌入其他片段以创建复杂的层次结构。
-
-**技术要求：**
-
-- **GitHub URL一致性**：片段和使用它的任何表单都必须指定相同的GitHub存储库URL
-- **独立编辑**：片段只能在其独立表单中修改；无法在主机表单中进行更改
-
-**发布行为：**
-
->[!IMPORTANT]
->
->在预览模式下，片段更改会在所有表单中立即反映。 在发布模式下，必须重新发布片段以及使用该片段查看更新的任何表单。
-
->[!CAUTION]
->
->避免递归片段引用（在其自身内嵌套片段），因为这会导致渲染错误和意外行为。
+本文提供有关实施感谢消息和重定向URL的详细指导，包括技术注意事项、最佳实践和用户体验指南，以最大限度地提高表单提交的有效性。
 
 ## 先决条件
 
-**技术设置要求：**
+在配置提交后体验之前，请确保您已：
 
-- [GitHub存储库已配置](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)，您的AEM环境与GitHub存储库之间已建立连接
-- [最新自适应Forms块](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)已添加到您的GitHub存储库(适用于现有Edge Delivery Services项目)
-- 提供了带有Edge Delivery Services模板的AEM Forms创作实例
-- 访问您的AEM Forms as a Cloud Service创作实例URL和GitHub存储库URL
+**技术设置：**
 
-**所需的知识和权限：**
+- 使用适当的权限访问通用编辑器
+- 在通用编辑器中创建的现有自适应表单
+- 了解贵组织的重定向URL要求
 
-- 基本了解表单设计概念和组件层次结构
-- 熟悉通用编辑器界面和表单创建工作流
-- 在AEM Forms中创建和管理表单资产的作者级别权限
-- 了解贵组织的表单标准和可重用组件要求
+**规划注意事项：**
 
-## 使用 Edge Delivery Services 表单片段
+- **消息策略**：定义要包含在感谢消息中的语调、长度和特定信息
+- **重定向策略**：识别目标页面并确保它们已针对表单后完成体验进行了优化
+- **Analytics集成**：规划如何跟踪用户与感谢消息或重定向目标的交互
 
-您可以在通用编辑器中创建 Edge Delivery Services 表单片段，然后将创建的片段添加到 Edge Delivery Services 表单。您可以使用 Edge Delivery Services 表单片段执行以下操作：
+## 配置感谢消息
 
-- [创建表单片段](#creating-form-fragments)
-- [将表单片段添加到一个表单](#adding-form-fragments-to-a-form)
-- [管理表单片段](#managing-form-fragments)
+感谢消息会即时确认表单提交成功，并且可能包含个性化内容、后续步骤或与用户提交相关的重要信息。
 
-+++ 创建表单片段
+### 何时使用感谢邮件
 
-要在通用编辑器中创建表单片段，请执行以下步骤：
+在以下情况下，发送感谢消息效果最佳：
 
-1. 登录到您的AEM Forms as a Cloud Service创作实例。
-1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
-1. 单击&#x200B;**创建 > 自适应表单片段**。
+- **简单确认**：用户需要确认，无需额外的导航要求
+- **指导性内容**：您需要提供具体的后续步骤或重要信息
+- **品牌一致性**：消息可以精心定制，以符合您组织的通信风格
+- **单页面体验**：为了保持工作流的连续性，用户应停留在当前页面
 
-   ![创建片段](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
+### 实施步骤
 
-   现在会出现&#x200B;**创建自适应表单片段**&#x200B;向导。
-1. 从&#x200B;**选择模板**&#x200B;选项卡中选择基于 Edge Delivery Services 的模板，然后点击&#x200B;**[!UICONTROL 下一步]**。
-   ![选择 Edge Delivery Services 模板](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
+**1. 访问表单属性**
 
-1. 指定片段的标题、名称、描述和标记。确保为片段指定唯一的名称。如果存在另一个同名的片段，该片段创建就会失败。
-1. 指定 **GitHub URL**。例如，如果您的GitHub存储库名为`edsforms`，则它位于帐户`wkndforms`下，URL为`https://github.com/wkndforms/edsforms`。
+在通用编辑器中打开自适应表单，然后单击工具栏中的&#x200B;**编辑表单属性**&#x200B;图标。 这将打开完整的表单属性对话框。
 
-   ![基本属性](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
+**2。导航到感谢配置**
 
-1. （可选）单击打开&#x200B;**表单模型**&#x200B;选项卡，然后在&#x200B;**从中选择**&#x200B;下拉菜单中为该片段选择下面的一个模型：
+在“表单属性”对话框中，选择&#x200B;**感谢**&#x200B;选项卡以访问提交后配置选项。
 
-   ![显示“表单模型”选项卡中的模型类型](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
+**3。 配置消息显示**
 
-   - **表单数据模型 (FDM)**：将来自数据源的数据模型对象和服务集成到您的片段中。如果您的表单需要从多个来源读写数据，请选择表单数据模型 (FDM)。
+从可用选项中选择&#x200B;**显示消息**。 这将激活具有富文本功能的消息内容编辑器。
 
-   - **JSON 架构**：通过关联一个定义数据结构的 JSON 架构将您的表单与后端系统集成。它允许您使用架构元素添加动态内容。
-   - **无**：指定从头开始创建片段，不使用任何表单模型。
+**4。 创建您的消息内容**
 
-   >[!NOTE]
-   >
-   > 要了解如何将表单或片段与通用编辑器中的表单数据模型(FDM)集成以使用多种后端数据源，请参阅[将表单与通用编辑器中的表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
+在&#x200B;**消息内容**&#x200B;字段中，使用富文本编辑器制作感谢消息。 该编辑器支持：
 
-1. （可选）在&#x200B;**高级**&#x200B;选项卡中为该片段指定&#x200B;**发布日期**&#x200B;或者&#x200B;**取消发布日期**。
+- **文本格式**：粗体、斜体、下划线和颜色选项
+- **列表**：用于组织信息的项目符号和编号列表
+- **链接**：相关资源的直接链接或后续步骤
+- **全屏编辑**：单击展开图标，查看更大的编辑工作区
 
-   ![高级选项卡](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. 单击&#x200B;**创建**&#x200B;以生成片段。 此时将显示一个包含编辑选项的成功对话框。
+### 技术注意事项
 
-   ![编辑片段](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
+**消息显示行为：**
 
-1. 单击&#x200B;**编辑**&#x200B;以在应用了默认模板的情况下在通用编辑器中打开片段。
+- 消息在提交表单后立即显示在模式叠加图中
+- 内容支持HTML格式并保持响应式设计
+- 消息可由用户取消或配置自动关闭计时器
 
-   通用编辑器中的![片段用于创作](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+**内容准则：**
 
-1. **设计片段内容**：添加表单组件（文本字段、下拉列表、复选框）以构建可重用部分。 有关详细的组件指南，请参阅[使用通用编辑器的AEM FormsEdge Delivery Services快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)。
+- 保持消息简洁，同时提供必要信息
+- 在适当时包括明确的后续步骤
+- 考虑包括参考号或确认详细信息
+- 确保设置适合移动设备的格式
 
-1. **配置组件属性**：根据用例需要设置字段名称、验证规则和默认值。
+### 实施示例
 
-1. **保存并预览**：保存片段并使用预览模式验证布局和功能。
+    感谢您的提交！
+    
+    您的申请已收到，并分配了参考号#REF-2024-001234。
+    
+    **后续发生的情况：**
+     — 您将在15分钟内收到一封确认电子邮件
+     — 我们的团队将在2个工作日内审核您的提交
+     — 如果需要其他信息，我们将直接联系您
+    
+    **需要帮助?**通过support@example.com联系我们的支持团队
 
-   ![通用编辑器中已完成的联系人信息表单片段截图，其中包含姓名、电话、电子邮件和地址字段，这些可在多个表单中重复使用](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+## 配置重定向URL
 
-**验证检查点：**
+在提交表单后，重定向URL会自动将用户导航到特定页面，从而实现与现有工作流的无缝集成，或将用户定向到相关内容。
 
-- 在通用编辑器中加载片段时没有出现错误
-- 所有表单组件均正确呈现
-- 字段属性和验证规则按预期工作
-- 片段已保存并可在Forms和文档控制台中使用
+### 何时使用重定向URL
 
-片段完成后，您可以[将其集成到任何Edge Delivery Services表单](#adding-form-fragments-to-a-form)。
+重定向URL最适合：
 
-+++
+- **工作流集成**：将用户定向到功能板、帐户页面或进程中的后续步骤
+- **内容投放**：根据表单回复展示相关产品、服务或信息
+- **Analytics跟踪**：定向到具有特定跟踪实施的页面
+- **多步骤流程**：将用户移动到复杂工作流的下一个阶段
 
+### 实施步骤
 
-+++ 将表单片段添加到一个表单
+**1. 访问表单属性**
 
-此示例演示了如何创建一个`Employee Details`表单，该表单将`Contact Details`片段同时用于雇员和主管信息部分。 此方法可确保数据收集的一致性，同时减少开发工作。
+在通用编辑器中打开自适应表单，然后单击&#x200B;**编辑表单属性**&#x200B;图标以打开表单配置对话框。
 
-要将表单片段集成到表单中，请执行以下操作：
+**2。导航到感谢配置**
 
-1. 在编辑模式下打开该表单。
-1. 将表单片段组件添加到表单。
-1. 打开内容浏览器，然后导航到&#x200B;**内容树**&#x200B;中的&#x200B;**[!UICONTROL 自适应表单]**&#x200B;组件。
-1. 导航到您想要添加片段的那个部分。例如，导航到&#x200B;**员工详细信息**&#x200B;面板。
+在“表单属性”对话框中选择&#x200B;**感谢**&#x200B;选项卡以访问重定向配置选项。
 
-   ![导航到该部分](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
+**3。 启用重定向功能**
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件。
-   ![添加表单片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
+从可用的提交后选项中选择&#x200B;**重定向到URL**。
 
-   如果您选择了&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件，片段就会添加到您的表单中。您可以打开已添加片段的&#x200B;**属性**，对其进行配置。例如，在片段的&#x200B;**属性**&#x200B;中隐藏其标题。
+**4。 配置目标URL**
 
-   ![配置片段的属性](/help/edge/docs/forms/universal-editor/assets/fragment-properties.png)
+在提供的字段中输入您的目标URL。 该系统支持多种URL格式，以实现灵活实施。
 
-1. 在&#x200B;**基本**&#x200B;选项卡中选择&#x200B;**片段引用** 。根据表单的模型，将显示表单可用的所有片段。
+### URL配置选项
 
-   例如，导航至 `/content/forms/af`，然后选择 `Contact Details` 片段。
+**绝对URL**
 
-   ![选择片段](/help/edge/docs/forms/universal-editor/assets/select-fragment.png)
+完整的Web地址，包括协议和域：
 
-1. 单击&#x200B;**[!UICONTROL 选择]**。
+    https://www.example.com/thank-you
+    https://dashboard.example.com/user/profile
 
-   该表单片段将引用该表单片段进行添加，并且保持与独立表单片段的同步。
+**相对路径**
 
-   ![通用编辑器中的员工表单截图，展示了成功嵌入的联系人信息片段，说明了片段在重复使用时如何保持其结构一致性](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+相对于当前域的路径：
 
-   您可以预览表单以查看在&#x200B;**预览**&#x200B;模式中该表单如何显示。
+    /thank-you
+    /dashboard/user-profile
+    ../confirmation-page.html
 
-   ![预览](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
+**AEM Sites页面引用**
 
-   同样，您可以重复步骤 3 至 7 来为 `Supervisor Details` 面板插入 `Contact Details` 片段。
+对AEM Sites实施中其他页面的引用：
 
-   ![员工详细信息表单](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+    /content/mysite/en/thank-you
+    /content/mysite/en/next-steps
 
-+++
+### 技术注意事项
 
+**重定向行为：**
 
+- 在成功提交表单后立即进行重定向
+- 浏览器历史记录包括重定向，以实现适当的后退按钮功能
+- 可以使用可选延迟来配置重定向计时
 
-+++ 管理表单片段
+**URL验证：**
 
-您可以使用 AEM Forms 用户界面对表单片段执行多项操作。
+- 在允许配置之前，系统会验证URL格式
+- 相对URL针对当前域进行解析
+- 如果需要，外部URL需要正确的CORS配置
 
-1. 登录到您的AEM Forms as a Cloud Service创作实例。
-1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
+## 最佳实践和建议
 
-1. 选择一个表单片段，工具栏就会显示您可以在所选片段上执行以下操作。
+### 用户体验准则
 
-   ![管理片段](/help/edge/docs/forms/universal-editor/assets/manage-fragment.png)
+**消息优化：**
 
-   <table>
-    <tbody>
-    <tr>
-   <td><p><strong>操作</strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
-    </tr>
-    <tr>
-   <td><p>编辑</p> </td>
-   <td><p>在编辑模式中打开片段。<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>属性</p> </td>
-   <td><p>提供更改表单片段属性的选项。<br /> <br /> </p> </td>
-    </tr>
-    <td><p>复制</p> </td>
-   <td><p> 提供复制表单片段并将其粘贴到所需位置的选项。<br /> <br /> </p> </td>
-    </tr>
-   <tr>
-   <td><p>预览</p> </td>
-   <td><p>提供以 HTML 形式预览片段或通过将某个 XML 文件中的数据与片段合并来执行自定义预览的选项。<br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>下载</p> </td>
-   <td><p>下载选定的片段。<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>开始审阅/管理审阅</p> </td>
-   <td><p>允许启动和管理对所选片段的审阅。<br /> <br /> </p> </td>
-    </tr>
-    <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
-    <tr>
-   <td><p>发布/取消发布</p> </td>
-   <td><p>发布/取消发布选定的片段。<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>删除</p> </td>
-   <td><p>删除选定的片段。<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>比较</p> </td>
-   <td><p>比较两种不同的表单片段用于预览。<br /> <br /> </p> </td>
-    </tr>
-    </tbody>
-    </table>
+- **首先澄清**：确保用户立即了解其提交成功
+- **加值**：提供可帮助用户完成后续步骤的信息
+- **一致的品牌**：保持组织的声音和视觉风格
+- **移动注意事项**：测试各种屏幕大小的邮件
 
-+++
+**重定向优化：**
 
-## 最佳实践
+- **页面优化**：确保为表单后的访客优化了重定向目标
+- **正在加载性能**：验证重定向页面是否快速加载以保持用户体验
+- **内容相关性**：确保重定向内容与表单上下文相关
 
-**片段设计和命名：**
+### 安全性注意事项
 
-- **使用描述性的、唯一的名称**：选择明确指示片段用途的名称（例如，“contact-details-with-validation”而不是“fragment1”）
-- **规划可重用性**：设计片段与上下文无关，因此它们可以在不同的表单类型中使用
-- **使片段聚焦**：创建单一用途的片段，而不是创建复杂的多功能组件
+**URL验证：**
 
-**开发工作流：**
+- 对重定向URL实施正确的验证以防止恶意重定向
+- 考虑将允许的重定向域列入白名单方法
+- 监测异常活动的重定向模式
 
-- **独立测试片段**：在集成到表单中之前验证片段功能
-- **保持一致的GitHub URL**：确保在所有相关片段和表单中使用相同的存储库URL
-- **文档片段用途**：包含清晰的描述和标记，以帮助团队成员了解何时使用每个片段
+**内容安全性：**
 
-**发布和维护：**
+- 整理感谢消息内容以防止脚本注入
+- 为富文本内容实施适当的内容安全策略
+- 定期对重定向目标进行安全审查
 
-- **协调发布**：更新片段时，计划同时重新发布所有依赖的表单
-- **版本控制**：在更新片段时使用有意义的提交消息来跟踪一段时间的更改
-- **监视依赖项**：跟踪哪些表单使用每个片段来评估更新影响
+### 分析与跟踪
 
->[!TIP]
->
->嵌入时，会保留片段样式、脚本和表达式，因此设计时要牢记此继承。
+**实施注意事项：**
 
-## 摘要
+- **目标跟踪**：为感谢消息视图和重定向完成设置分析目标
+- **用户历程映射**：跟踪用户与提交后体验的交互方式
+- **转化优化**： A/B测试不同感谢消息和重定向目标
 
-您已成功了解如何在Edge Delivery Services中利用表单片段提高开发效率并保持组织表单的一致性。
+**测量策略：**
 
-**关键成就：**
+- 监控删除前在感谢消息上花费的时间
+- 跟踪感谢消息中链接的点进率
+- 分析重定向目标页面上的用户行为
 
-- **了解**：了解表单片段的业务价值和技术功能
-- **创建**：使用具有正确配置的通用编辑器生成可重用的表单片段
-- **集成**：将片段添加到具有正确引用设置和属性配置的表单
-- **管理**：探索了片段生命周期操作和维护工作流
+## 验证检查点
 
-**后续步骤：**
+配置您的后提交体验后：
 
-- 为您的组织创建常用片段库
-- 为片段使用建立命名约定和治理策略
-- 探索与动态数据驱动片段的[表单数据模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)的高级集成
-- 实施基于片段的表单模板以实现一致的用户体验
+**配置验证：**
 
-您的表单现在受益于模块化、可维护的架构，该架构可在各个项目中高效扩展，同时确保一致的用户体验。
+- 表单属性正确显示所选的感谢选项
+- 消息内容在预览模式下正确显示
+- 重定向URL的格式正确且可访问
+- 消息中的所有链接均可正常工作
+
+**用户体验测试：**
+
+- 提交测试表单以验证是否正确显示了感谢消息
+- 跨不同浏览器测试重定向功能
+- 验证感谢消息的移动响应性
+- 确认重定向目标加载正确
+
+**Analytics设置：**
+
+- 正确实施感谢消息的跟踪代码
+- 已配置重定向目标跟踪
+- 目标完成事件正确触发
+
+## 后续步骤
+
+成功配置后提交体验后：
+
+- **监测性能**：查看Analytics以了解用户参与感谢消息或重定向页面的情况
+- **迭代和改进**：使用用户反馈和数据分析来优化您的提交后策略
+- **扩展实施**：在组织内的其他表单中应用成功的模式
+
+**相关文档：**
+
+- [表单提交配置指南](submit-action.md)
+- [用户体验最佳实践](responsive-layout.md)
 

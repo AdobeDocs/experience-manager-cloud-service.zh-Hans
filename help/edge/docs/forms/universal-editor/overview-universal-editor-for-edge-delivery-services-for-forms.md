@@ -4,7 +4,7 @@ description: 使用 Edge Delivery Services for Forms通用编辑器创建自适�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 99%
@@ -173,11 +173,13 @@ ht-degree: 99%
 **问：可以自定义表单组件吗？**
 可以，通用编辑器允许开发人员创建符合特定组织需求的自定义组件。此外，您还可以通过 UI 扩展和自定义工作流来扩展编辑器的功能。
 
+**问：可以从表单中获得哪些分析结果？**
+通用编辑器包含内置分析和跟踪工具，可监测用户互动、表单提交率和转化量度。这些洞察有助于优化表单，提高性能。
+
 **问：通用编辑器如何处理可访问性？**
 通用编辑器的设计严格遵守可访问性标准，包括 WCAG（Web 内容无障碍准则）。这可确保残障人士也能使用表单，从而提供一种包容性的体验。
 
-**问：可以从表单中获得哪些分析结果？**
-通用编辑器包含内置分析和跟踪工具，可监测用户互动、表单提交率和转化量度。这些洞察有助于优化表单，提高性能。
+
 
 
 
