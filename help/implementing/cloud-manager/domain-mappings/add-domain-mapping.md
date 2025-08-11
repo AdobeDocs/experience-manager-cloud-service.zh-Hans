@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 840db9fff35af0da212fa03e2d9255cca9524ae6
+source-git-commit: 060a00e887a8709a4fd3c4b160b540a8e2867769
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 8%
@@ -67,8 +67,8 @@ curl -svo /dev/null https://www.example.com \
 --resolve www.example.com:443:151.101.3.10
 ```
 
-* 将&#x200B;**`www.example.com`**&#x200B;替换为您的域。
-* IP地址``151.101.3.10``是可用于访问AEM Cloud Service的IP之一。 另请参阅[APEX记录](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record)。
+* 将`www.example.com`替换为您的域。
+* IP地址`151.101.3.10`是可用于访问AEM Cloud Service的IP之一。 另请参阅[APEX记录](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record)。
 
 `--resolve`标记强制将请求发送到指定的IP，并且仅在域的证书和路由安装正确后才返回成功。
 
