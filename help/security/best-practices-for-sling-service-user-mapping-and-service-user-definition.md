@@ -4,10 +4,10 @@ description: 了解 Sling 服务用户映射和服务用户定义的最佳实践
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 100%
+source-wordcount: '1883'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 
 1. 从  `ServiceUserMapper` => 预授权存储库登录中获取主体名称，如下所述
 1. 从 `ServiceUserMapper` 中检索用户 id
-1. 检查当前用户 id 是否已弃用 1ServiceUserConfiguration`
+1. 检查当前用户ID中是否存在已弃用的`1ServiceUserConfiguration`
 1. 默认 Sling 服务使用用户 id 登录（例如，序列为 `createAdministrativeSession` 并模拟服务用户 id）
 
 具有主体名称的新映射使存储库登录得到简化：

@@ -4,7 +4,7 @@ description: 了解AEM as a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 31%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 >[!NOTE]
 >
 >如果您有兴趣批量发布内容，请使用[树激活工作流步骤](#tree-activation)创建工作流，以便有效地处理大型负载。
->&#x200B;>不建议自行构建批量发布自定义代码。
->&#x200B;>如果您必须出于任何原因进行自定义，则可以使用现有工作流API通过此步骤触发工作流。
->&#x200B;>始终最好是仅发布必须发布的内容。 如果不需要的话，谨慎不要尝试发布大量内容。 但是，使用树激活工作流步骤可以通过工作流发送的内容数量没有限制。
+>>不建议自行构建批量发布自定义代码。
+>>如果您必须出于任何原因进行自定义，则可以使用现有工作流API通过此步骤触发工作流。
+>>始终最好是仅发布必须发布的内容。 如果不需要的话，谨慎不要尝试发布大量内容。 但是，使用树激活工作流步骤可以通过工作流发送的内容数量没有限制。
 
 ### 快速取消/发布 – 计划取消/发布 {#publish-unpublish}
 
@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 1. 从AEM as a Cloud Service主页，转到&#x200B;**工具 — 工作流 — 模型**。
 1. 在“工作流模型”页面中，按屏幕右上角的&#x200B;**创建**。
-1. 为模型添加标题和名称。 有关详细信息，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans)。
+1. 为模型添加标题和名称。 有关详细信息，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
 1. 从列表中选择已创建的模型，然后按&#x200B;**编辑**
 1. 在以下窗口中，删除默认显示的步骤
 1. 将“流程步骤”拖放到当前模型流中：
@@ -126,8 +126,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 >
 >此功能已弃用，支持更高效的树激活步骤，此步骤可包含在自定义工作流中。
 
-<details>
-<summary>单击此处了解有关此已弃用功能的更多信息。</summary>
++++ 单击此处了解有关此已弃用功能的更多信息。
 
 您可以通过选择&#x200B;**工具 – 工作流 – 模型**&#x200B;和复制&#x200B;**发布内容树**&#x200B;现成的工作流模型，如下所示：
 
@@ -135,13 +134,13 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 请勿调用原始模型。 相反，请确保首先复制模型并调用该副本。
 
-与所有工作流一样，也可以通过 API 调用。 有关详细信息，请参阅[以编程方式与工作流交互](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=zh-Hans#extending-aem)。
+与所有工作流一样，也可以通过 API 调用。 有关详细信息，请参阅[以编程方式与工作流交互](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)。
 
 或者，您也可以创建使用`Publish Content Tree`进程步骤的工作流模型。
 
 1. 从AEM as a Cloud Service主页，转到&#x200B;**工具 — 工作流 — 模型**。
 1. 在“工作流模型”页面中，按屏幕右上角的&#x200B;**创建**。
-1. 为模型添加标题和名称。 有关详细信息，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans)。
+1. 为模型添加标题和名称。 有关详细信息，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
 1. 从列表中选择已创建的模型，然后按&#x200B;**编辑**
 1. 在以下窗口中，将“流程步骤”拖放到当前模型流中：
 
@@ -194,7 +193,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-</details>
++++
 
 ### 复制 API {#replication-api}
 

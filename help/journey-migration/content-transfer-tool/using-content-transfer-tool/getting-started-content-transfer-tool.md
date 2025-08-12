@@ -4,7 +4,7 @@ description: 了解如何开始使用内容传输工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 0c76419b5efa6d45cf4db51990633fea3b489063
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 14%
@@ -21,10 +21,10 @@ ht-degree: 14%
 >id="aemcloud_ctt_download"
 >title="下载"
 >abstract="可从软件分发门户下载 zip 文件形式的内容转移工具。可通过包管理器将该包安装在源 Adobe Experience Manager (AEM) 实例上。确保下载最新版本。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=zh-Hans" text="发行说明"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="发行说明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="软件分发门户"
 
-可从软件分发门户下载 zip 文件形式的内容转移工具。您可以通过源Adobe Experience Manager (AEM)实例上的[包管理器](/help/implementing/developing/tools/package-manager.md)安装该包。 确保下载最新版本。 有关最新版本的更多详细信息，请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=zh-Hans)。
+可从软件分发门户下载 zip 文件形式的内容转移工具。您可以通过源Adobe Experience Manager (AEM)实例上的[包管理器](/help/implementing/developing/tools/package-manager.md)安装该包。 确保下载最新版本。 有关最新版本的更多详细信息，请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html)。
 
 仅支持版本2.0.0及更高版本，建议使用最新版本。
 
@@ -48,7 +48,7 @@ ht-degree: 14%
 
 了解SSL/TLS连接问题有时可能很困难。 要对提取过程中的连接问题进行故障诊断，您可以通过源AEM环境的“系统控制台”启用SSL日志记录，步骤如下：
 
-1. 通过转到&#x200B;**工具>操作> Web控制台**&#x200B;导航到源实例上的Adobe Experience Manager Web控制台，或直接导航到&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;上的URL
+1. 通过转到&#x200B;**工具>操作> Web控制台**&#x200B;或直接转到&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;的URL，导航到源实例上的Adobe Experience Manager Web控制台
 1. 搜索&#x200B;**内容传输工具提取服务配置**
 1. 使用铅笔图标按钮编辑其配置值
 1. 启用&#x200B;**为提取启用SSL日志记录**&#x200B;设置，然后按&#x200B;**保存**：
@@ -56,6 +56,7 @@ ht-degree: 14%
    ![图像](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
+>
 >此标记仅用于调试SSL问题。 请确保在运行提取之前禁用该标志，因为它可能需要大量磁盘空间。 这可能会占用驱动器容量，并导致提取过程失败。
 
 ## 运行内容转移工具 {#running-tool}
@@ -64,8 +65,8 @@ ht-degree: 14%
 >id="aemcloud_ctt_demo"
 >title="运行内容转移工具"
 >abstract="了解如何使用内容转移工具将内容迁移到 AEM as a Cloud Service（创作/发布）。"
->additional-url="https://video.tv.adobe.com/v/327074/?quality=12&learn=on&captions=chi_hans" text=" 观看演示"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 观看演示"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 - 使用内容转移工具"
 
 以下部分适用于内容传输工具的新版本。 请阅读以下章节，了解如何使用内容传输工具将内容迁移到AEM as a Cloud Service：
 
@@ -75,7 +76,7 @@ ht-degree: 14%
 >id="aemcloud_ctt_extraction_setup"
 >title="提取设置阶段"
 >abstract="了解如何创建和管理迁移集以及如何复制提取密钥。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 - 使用内容转移工具"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
@@ -101,7 +102,7 @@ ht-degree: 14%
 
    >[!NOTE]
    >
-   >名称必须遵循与AEM节点相同的约定，因此不能包含以下任何字符： &#39;. / ： [ ] | * &lt; > ^ ？ { } % # ”或任何异常符号或表情符号。
+   >名称必须遵循AEM节点的相同约定，因此不能包含以下任何字符： `. / : [ ] | * < > ^ ? { } % # `或任何异常符号或表情符号。
 
 1. 您现在应在列表视图中看到迁移列表。 选择三点符号(**...**)以打开下拉列表，然后选择&#x200B;**复制提取密钥**。 在提取阶段需要此密钥。 复制此提取密钥。
 
@@ -117,7 +118,7 @@ ht-degree: 14%
 >id="aemcloud_ctt_populate_migrationset"
 >title="填充迁移集"
 >abstract="创建迁移集后，必须为它填入需从源实例移至 AEM as a Cloud Service 环境的内容。为此，必须在源实例上安装内容转移工具。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=zh-Hans#" text="提取内容"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#" text="提取内容"
 
 要填充您在Cloud Acceleration Manager中创建的迁移集，请在源Adobe Experience Manager (AEM)实例上安装最新版本的内容传输工具。 要了解如何填充迁移集，请参阅此部分。
 
@@ -148,7 +149,6 @@ ht-degree: 14%
       >从CTT版本(3.0.24)开始，内容传输工具已包含新功能，从而增强了包含和排除路径的过程。 以前，必须逐个选择路径，这既繁琐又耗时。 现在，用户可以直接从UI包含路径，也可以根据自己的偏好上传CSV文件。  CSV文件的每行必须具有一个路径，并且不能使用逗号。
 
    1. **要包含的路径**：使用路径浏览器选择需要迁移的路径。 路径选取器通过键入或选择接受输入。 用户只能选择一个选项来包含路径：通过UI或上传CSV文件。
-
       >[!IMPORTANT]
       >创建迁移集时，以下路径受到限制：
       >* `/apps`

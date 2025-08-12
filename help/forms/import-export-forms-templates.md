@@ -5,21 +5,19 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 3%
 
 ---
 
-
+# 导入或导出自适应Forms和AEM Forms资源 {#importing-and-exporting-assets-to-aem-forms}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | 本文 |
-
-# 导入或导出自适应Forms和AEM Forms资源 {#importing-and-exporting-assets-to-aem-forms}
 
 您可以在[!DNL AEM Forms]实例之间移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型(FDM)、自适应表单模板、片段和PDF forms。
 
@@ -70,10 +68,10 @@ ht-degree: 3%
 
 ## 下载主题
 
-您可以导出[!DNL AEM Forms]中在其他项目或实例中使用的主题。 AEM允许您将主题下载为zip文件，并可在实例上上传这些主题。
+您可以导出[!DNL AEM Forms]中在其他项目或实例中使用的主题。 通过AEM，您可以将主题下载为zip文件，并可在实例上上传。
 要下载主题，请执行以下操作：
 
-1. 登录到您的[!DNL Experience Manager Forms]创作实例。
+1. 登录到[!DNL Experience Manager Forms]作者实例。
 1. 选择&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL 主题]**。
 
    ![选择主题](/help/forms/assets/select-theme.png)
@@ -106,7 +104,7 @@ ht-degree: 3%
 
 1. 浏览并选择计算机上的主题包，然后单击&#x200B;**[!UICONTROL 上传]**。 上传的主题将显示在“主题”页面上。
 
-## 使用文件夹整理自适应Forms、PDF forms和相关资源  {#folders-and-organizing-assets}
+## 使用文件夹整理Adaptive Forms、PDF forms和相关资源  {#folders-and-organizing-assets}
 
 您可以使用文件夹来排列和组织资源。 在文件夹中组织文档和资产可让您将文件分组以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。
 
@@ -183,7 +181,7 @@ ht-degree: 3%
 
    ![搜索资产](/help/forms/assets/search-bar.png)
 
-有关使用搜索功能的更多信息和说明，请参阅[搜索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=zh-Hans)。
+有关使用搜索功能的更多信息和说明，请参阅[搜索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

@@ -5,7 +5,7 @@ keywords: 添加自定义函数、使用自定义函数、创建自定义函数�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 5%
@@ -42,9 +42,10 @@ ht-degree: 5%
 
 ## 创建自定义功能
 
-创建客户端库以在规则编辑器中调用自定义函数。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing)。
+创建客户端库以在规则编辑器中调用自定义函数。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 
 创建自定义函数的步骤包括：
+
 1. [创建客户端库](#create-client-library)
 1. [将客户端库添加到自适应表单](#use-custom-function)
 
@@ -54,7 +55,7 @@ ht-degree: 5%
 
 **克隆存储库**
 
-克隆[AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)：
+克隆[AEM Forms as a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)：
 
 1. 打开命令行或终端窗口。
 
@@ -141,7 +142,7 @@ ht-degree: 5%
 
 **在filter.xml中包含新文件夹**：
 
-1. 导航到[AEMaaCS项目目录]中的`/ui.apps/src/main/content/META-INF/vault/filter.xml`文件。
+1. 导航到`/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS项目目录[中的]文件。
 
 1. 打开文件，并在末尾添加以下行：
 
@@ -168,7 +169,7 @@ ht-degree: 5%
 
    1. 通过现有的全栈管道触发代码部署。 这会自动构建和部署更新的代码。
 
-如果尚未设置管道，请参阅[上的指南如何为AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)设置管道。
+如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
 成功执行管道后，客户端库中添加的自定义函数将在[自适应表单规则编辑器](/help/forms/rule-editor-core-components.md)中变得可用。
 
@@ -189,11 +190,11 @@ ht-degree: 5%
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-您可以在自适应表单[&#128279;](/help/forms/rule-editor-core-components.md)的规则编辑器中使用[JavaScript批注](##js-annotations)的自定义函数。
+您可以在自适应表单[的](/help/forms/rule-editor-core-components.md)规则编辑器中使用[JavaScript批注](##js-annotations)的自定义函数。
 
 ## 在自适应表单中使用自定义函数
 
-在自适应表单中，您可以在规则编辑器[&#128279;](/help/forms/rule-editor-core-components.md)中使用自定义函数。 让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。 创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
+在自适应表单中，您可以在规则编辑器[中使用](/help/forms/rule-editor-core-components.md)自定义函数。 让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。 创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
 
 ```javascript
     /**
@@ -232,9 +233,9 @@ ht-degree: 5%
 
 ## 自定义函数的功能
 
-AEM Forms中的自定义函数为扩展和个性化表单的功能提供了可靠的解决方案。 您可以使用自定义函数来满足组织的特定需求。
+AEM表单中的自定义函数为扩展表单功能和个性化表单功能提供了可靠的解决方案。 您可以使用自定义函数来满足组织的特定需求。
 
-这些函数支持各种功能，包括使用特定字段、使用全局字段和异步操作，以及合并缓存机制。 这种灵活性确保表单能够适应复杂的需求，并提供高效、量身定制的用户体验。 利用这些高级功能，您可以增强表单交互并优化性能，使AEM表单功能更强、响应更灵敏。
+这些函数支持各种功能，包括使用特定字段、使用全局字段和异步操作，以及合并缓存机制。 这种灵活性确保表单能够适应复杂的需求，并提供高效、量身定制的用户体验。 利用这些高级功能，您可以增强表单交互并优化性能，从而使您的AEM表单功能更强、响应更灵敏。
 
 让我们深入了解一下自定义函数的功能。
 
@@ -254,7 +255,7 @@ AEM Forms中的自定义函数为扩展和个性化表单的功能提供了可�
 
 ### 自定义函数中的缓存支持
 
-自适应Forms在规则编辑器中检索自定义函数列表时，为自定义函数实施缓存以增强响应时间。 `error.log`文件中显示一条消息，名称为`Fetched following custom functions list from cache`。
+自适应Forms在规则编辑器中检索自定义函数列表时，为自定义函数实施缓存以增强响应时间。 `Fetched following custom functions list from cache`文件中显示一条消息，名称为`error.log`。
 
 支持缓存的![自定义函数](/help/forms/assets/custom-function-cache-error.png)
 
@@ -266,7 +267,7 @@ AEM Forms中的自定义函数为扩展和个性化表单的功能提供了可�
 
   ![错误日志文件](/help/forms/assets/custom-function-list-error-file.png)
 
-  如果没有错误，则会获取自定义函数并显示在`error.log`文件中。 `error.log`文件中显示一条消息，名称为`Fetched following custom functions list`：
+  如果没有错误，则会获取自定义函数并显示在`error.log`文件中。 `Fetched following custom functions list`文件中显示一条消息，名称为`error.log`：
 
   使用正确的自定义函数![错误日志文件](/help/forms/assets/custom-function-list-fetched-in-error.png)
 

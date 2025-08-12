@@ -5,9 +5,9 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5357'
 ht-degree: 38%
 
 ---
@@ -172,7 +172,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 | `imsClientId` | 表示用于身份验证的IMS客户端ID的字符串值。 此值由Adobe提供，特定于您的Adobe AEM CS组织。 |
 | `imsScope` | 描述身份验证中使用的范围。 范围决定了应用程序对组织资源的访问级别。 多个范围可以用逗号分隔。 |
 | `redirectUrl` | 表示验证后用户被重定向到的URL。 此值通常设置为应用程序的当前URL。 如果未提供`redirectUrl`，`ImsAuthService`将使用用于注册`imsClientId`的redirectUrl |
-| `modalMode` | 布尔值，指示是否应在模态（弹出窗口）中显示身份验证流程。 如果设置为`true`，则身份验证流程将在弹出窗口中显示。 如果设置为`false`，则身份验证流程将以整页重新加载方式显示。 _注意：_&#x200B;为获得更好的UX，如果用户禁用了浏览器弹出窗口，则可以动态控制此值。 |
+| `modalMode` | 布尔值，指示是否应在模态（弹出窗口）中显示身份验证流程。 如果设置为`true`，则身份验证流程将在弹出窗口中显示。 如果设置为`false`，则身份验证流程将以整页重新加载方式显示。 _Note :_为获得更好的UX，如果用户禁用了浏览器弹出窗口，则可以动态控制此值。 |
 | `onImsServiceInitialized` | Adobe IMS身份验证服务初始化时调用的回调函数。 此函数接受一个参数`service`，该参数是表示Adobe IMS服务的对象。 有关更多详细信息，请参阅[`ImsAuthService`](#imsauthservice-ims-auth-service)。 |
 | `onAccessTokenReceived` | 在从Adobe IMS身份验证服务收到`imsToken`时调用的回调函数。 此函数接受一个参数`imsToken`，该参数是一个表示访问令牌的字符串。 |
 | `onAccessTokenExpired` | 访问令牌过期时调用的回调函数。 此函数通常用于触发新的身份验证流程以获取新的访问令牌。 |
@@ -181,7 +181,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 +++
 
 +++**ImsAuthService**
-`ImsAuthService`类用于处理资产选择器的身份验证流程。 它负责从Adobe IMS身份验证服务获取`imsToken`。 `imsToken`用于对用户进行身份验证并授权作为[!DNL Cloud Service] Assets存储库访问[!DNL Adobe Experience Manager]。 ImsAuthService使用`ImsAuthProps`属性来控制身份验证流并注册各种身份验证事件的侦听器。 您可以使用方便的[`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice)函数向资产选择器注册&#x200B;_ImsAuthService_&#x200B;实例。 `ImsAuthService`类中有以下函数可用。 但是，如果您使用&#x200B;_registerAssetsSelectorsAuthService_&#x200B;函数，则无需直接调用这些函数。
+`ImsAuthService`类用于处理资产选择器的身份验证流程。 它负责从Adobe IMS身份验证服务获取`imsToken`。 `imsToken`用于对用户进行身份验证并授权作为[!DNL Adobe Experience Manager] Assets存储库访问[!DNL Cloud Service]。 ImsAuthService使用`ImsAuthProps`属性来控制身份验证流并注册各种身份验证事件的侦听器。 您可以使用方便的[`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice)函数向资产选择器注册&#x200B;_ImsAuthService_&#x200B;实例。 `ImsAuthService`类中有以下函数可用。 但是，如果您使用&#x200B;_registerAssetsSelectorsAuthService_&#x200B;函数，则无需直接调用这些函数。
 
 | 函数名称 | 描述 |
 |---|---|
@@ -272,7 +272,7 @@ onErrorReceived: (type, msg) => {
 * imsOrg
 * apikey
 
-将资产选择器与非Adobe应用程序集成时，该资产选择器支持使用Identity Management System (IMS)属性（如`imsScope`或`imsClientID`）对[!DNL Experience Manager Assets]存储库进行身份验证。
+将资产选择器与非Adobe应用程序集成时，该资产选择器支持使用Identity Management System (IMS)属性（如[!DNL Experience Manager Assets]或`imsScope`）对`imsClientID`存储库进行身份验证。
 
 +++**为非Adobe应用程序配置资源选择器**
 要为非Adobe应用程序配置Asset Selector，您必须先记录用于预配的支持票证，然后执行集成步骤。
@@ -291,15 +291,15 @@ onErrorReceived: (type, msg) => {
 +++**集成步骤**
 在将Asset Selector与非Adobe应用程序集成时，使用此示例`index.html`文件进行身份验证。
 
-使用`Script`标记访问资产选择器包，如示例`index.html`文件的&#x200B;*第9*&#x200B;行到&#x200B;*第11*&#x200B;行所示。
+使用`Script`标记访问资产选择器包，如示例&#x200B;*文件的*&#x200B;第9 *行到*&#x200B;第11`index.html`行所示。
 
 示例的&#x200B;*行14*&#x200B;到&#x200B;*行38*&#x200B;描述了IMS流属性，如`imsClientId`、`imsScope`和`redirectURL`。 函数要求您至少定义`imsClientId`和`imsScope`属性之一。 如果您没有为`redirectURL`定义值，则使用客户端ID的注册重定向URL。
 
-由于您没有生成`imsToken`，请使用`registerAssetsSelectorsAuthService`和`renderAssetSelectorWithAuthFlow`函数，如示例`index.html`文件的第40行至第50行所示。 使用`renderAssetSelectorWithAuthFlow`之前的`registerAssetsSelectorsAuthService`函数通过资产选择器注册`imsToken`。 [!DNL Adobe]建议在实例化组件时调用`registerAssetsSelectorsAuthService`。
+由于您没有生成`imsToken`，请使用`registerAssetsSelectorsAuthService`和`renderAssetSelectorWithAuthFlow`函数，如示例`index.html`文件的第40行至第50行所示。 使用`registerAssetsSelectorsAuthService`之前的`renderAssetSelectorWithAuthFlow`函数通过资产选择器注册`imsToken`。 [!DNL Adobe]建议在实例化组件时调用`registerAssetsSelectorsAuthService`。
 
-在`const props`部分中定义身份验证和其他Assets as a Cloud Service访问相关的属性，如示例`index.html`文件的&#x200B;*行54*&#x200B;到&#x200B;*行60*&#x200B;所示。
+在`const props`部分中定义身份验证和其他Assets as a Cloud Service访问相关的属性，如示例&#x200B;*文件的*&#x200B;行54 *到*&#x200B;行60`index.html`所示。
 
-*行65*&#x200B;中提到的`PureJSSelectors`全局变量用于呈现Web浏览器中的资产选择器。
+`PureJSSelectors`行65 *中提到的*&#x200B;全局变量用于呈现Web浏览器中的资产选择器。
 
 资产选择器在`<div>`容器元素中呈现，如&#x200B;*行74*&#x200B;到&#x200B;*行81*&#x200B;中所述。 此示例使用对话框来显示资源选择器。
 
@@ -416,7 +416,7 @@ onErrorReceived: (type, msg) => {
 aemTierType:[1: "delivery"]
 ```
 
-利用此配置，可查看所有批准的资产，但不包含文件夹或采用平面结构。 有关详细信息，请导航到[资产选择器属性](#asset-selector-properties)下的`aemTierType`属性
+利用此配置，可查看所有批准的资产，但不包含文件夹或采用平面结构。 有关详细信息，请导航到`aemTierType`资产选择器属性[下的](#asset-selector-properties)属性
 
 +++
 
@@ -486,7 +486,7 @@ URL格式：
 
 ![动态投放URL](assets/dynamic-delivery-url.png)
 
-* **缩略图：**&#x200B;缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
 以下演绎版集可用于PDF类型资源：
 在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
 
@@ -505,7 +505,7 @@ URL格式：
 
 在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **视频：**&#x200B;您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -565,8 +565,8 @@ URL格式：
 |---|---|---|---|---|
 | *边栏* | 布尔值 | 否 | 假 | 如果标记为`true`，则资产选择器将在左边栏视图中呈现。 如果资产选择器标记为`false`，则会在模式视图中呈现该资产选择器。 |
 | *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要使用`imsOrg`密钥来验证您访问的组织是否位于Adobe IMS下。 |
-| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用[!DNL Adobe]应用程序进行集成，则需要`imsToken`。 |
-| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用[!DNL Adobe]应用程序集成，则需要`apiKey`。 |
+| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用`imsToken`应用程序进行集成，则需要[!DNL Adobe]。 |
+| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用`apiKey`应用程序集成，则需要[!DNL Adobe]。 |
 | *filterSchema* | 数组 | 否 | | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
 | *filterFormProps* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。为了！ 例如，MIME类型JPG、PNG、GIF。 |
 | *selectedAssets* | 数组 `<Object>` | 否 |                 | 呈现资源选择器时指定选定资源。包含资源的 id 属性的必需对象数组。例如，`[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须在当前目录中可用。如果您需要使用其他目录，请也为 `path` 属性提供一个值。 |
@@ -722,7 +722,7 @@ assetSelectorProps.infoPopoverMap = infoPopoverMap;
 
 ### 启用或禁用拖放模式 {#enable-disable-drag-and-drop}
 
-将以下属性添加到`assetSelectorProp`以启用拖放模式。 要禁用拖放，请使用`false`替换`true`参数。
+将以下属性添加到`assetSelectorProp`以启用拖放模式。 要禁用拖放，请使用`true`替换`false`参数。
 
 ```
 rail: true,
@@ -790,18 +790,18 @@ interface SelectedAsset {
 
 | 属性 | 类型 | 描述 |
 |---|---|---|
-| *repo:repositoryId* | 字符串 | 存储资源的存储库的唯一标识符。 |
-| *repo:id* | 字符串 | 资源的唯一标识符。 |
-| *repo:assetClass* | 字符串 | 资源的分类（例如，图像、视频或文档）。 |
-| *repo:name* | 字符串 | 资源的名称，包括文件扩展名。 |
-| *repo:size* | 数字 | 资源的大小，以字节为单位。 |
-| *repo:path* | 字符串 | 资源在存储库中的位置。 |
-| *repo:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
-| *repo:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
-| *repo:createdBy* | 字符串 | 创建资源的用户或系统。 |
-| *repo:createDate* | 字符串 | 资源的创建日期和时间。 |
-| *repo:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
-| *repo:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
+| *存储库:repositoryId* | 字符串 | 存储资源的存储库的唯一标识符。 |
+| *存储库:id* | 字符串 | 资源的唯一标识符。 |
+| *存储库:assetClass* | 字符串 | 资源的分类（例如，图像、视频或文档）。 |
+| *存储库:name* | 字符串 | 资源的名称，包括文件扩展名。 |
+| *存储库:size* | 数字 | 资源的大小，以字节为单位。 |
+| *存储库:path* | 字符串 | 资源在存储库中的位置。 |
+| *存储库:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
+| *存储库:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
+| *存储库:createdBy* | 字符串 | 创建资源的用户或系统。 |
+| *存储库:createDate* | 字符串 | 资源的创建日期和时间。 |
+| *存储库:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
+| *存储库:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
 | *dc:format* | 字符串 | 资源的格式，如文件类型(例如，JPEG、PNG等)。 |
 | *tiff:imageWidth* | 数字 | 资源的宽度。 |
 | *tiff:imageLength* | 数字 | 资源的高度。 |
@@ -840,6 +840,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

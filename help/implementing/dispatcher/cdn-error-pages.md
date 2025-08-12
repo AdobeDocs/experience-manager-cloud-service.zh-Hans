@@ -4,7 +4,7 @@ description: 了解如何覆盖默认错误页面，其中将静态文件托管�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 配置CDN错误页面 {#cdn-error-pages}
 
-万一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)无法访问AEM源服务器（这种情况不太可能发生），默认情况下，CDN会提供一个非品牌的一般错误页，指示无法访问服务器。 您可以覆盖默认错误页，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，并在使用Cloud Manager [配置管道](/help/operations/config-pipeline.md#managing-in-cloud-manager)部署的配置文件中引用它们。
+万一[Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)无法访问AEM源服务器（这种情况不太可能发生），默认情况下，CDN会提供一个非品牌的一般错误页面，指示无法访问服务器。 您可以覆盖默认错误页，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，并在使用Cloud Manager [配置管道](/help/operations/config-pipeline.md#managing-in-cloud-manager)部署的配置文件中引用它们。
 
 ## 设置 {#setup}
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ### 语法 {#syntax}
 
-错误页面作为单页应用程序(SPA)实施，并引用一些属性，如下面的示例所示。  URL引用的静态文件应由您在可访问Internet的服务(如Amazon S3或Azure Blob Storage)上托管。
+错误页面作为单页应用程序(SPA)实施，并引用少数属性，如下面的示例所示。  URL引用的静态文件应由您在可访问Internet的服务(如Amazon S3或Azure Blob Storage)上托管。
 
 配置示例：
 
@@ -93,6 +93,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 教程
 
-有关如何创建、部署和测试CDN提供的错误页面的分步说明，请参阅[CDN错误页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教程。
+有关如何创建、部署和测试CDN提供的错误页面的分步说明，请参阅[CDN错误页面](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教程。
 
 

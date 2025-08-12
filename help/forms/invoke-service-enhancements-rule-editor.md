@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 自适应表单中的可视化规则编辑器支持&#x200B;**调用服务**&#x200B;功能，该功能允许您从为您的实例配置的表单数据模型(FDM)列表中选择服务。 您可以将表单字段直接映射到服务的输入参数。 要将表单字段映射到输出参数，请使用指定表单数据模型服务的事件有效负荷选项。 此外，可视规则编辑器允许您基于其输出响应为&#x200B;**调用服务**&#x200B;操作创建成功和失败处理程序的规则。 成功处理程序管理&#x200B;**调用服务**&#x200B;操作的成功执行，而失败处理程序处理发生的任何错误。
 
-### 在表单的规则编辑器中使用“调用服务”的优势
+## 在表单的规则编辑器中使用“调用服务”的优势
 
 在自适应表单的规则编辑器中使用“调用服务”操作的优点很少：
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 您还可以添加多个规则来处理来自&#x200B;**调用服务**&#x200B;操作的不成功响应。
 
-**在服务器**&#x200B;上启用错误验证&rbrace;功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
+**在服务器**&#x200B;上启用错误验证}功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
 
 ## 在规则编辑器中使用调用服务的先决条件
 
@@ -106,9 +106,9 @@ ht-degree: 1%
 
 **数据源**
 
-在此示例中，[Swagger Petstore](https://petstore.swagger.io/) API用于配置数据源。 已为[getPetById](https://petstore.swagger.io/#/pet/getPetById)服务配置[表单数据模型](/help/forms/create-form-data-models.md)，该服务根据输入的ID检索宠物详细信息。
+在此示例中，[Swagger Petstore](https://petstore.swagger.io/) API用于配置数据源。 已为[getPetById](/help/forms/create-form-data-models.md)服务配置[表单数据模型](https://petstore.swagger.io/#/pet/getPetById)，该服务根据输入的ID检索宠物详细信息。
 
-让我们使用[Swagger Petstore](https://petstore.swagger.io/) API中的[addPet](https://petstore.swagger.io/#/pet/addPet)服务发布以下JSON：
+让我们使用[Swagger Petstore](https://petstore.swagger.io/#/pet/addPet) API中的[addPet](https://petstore.swagger.io/)服务发布以下JSON：
 
 ```
 {
@@ -141,7 +141,7 @@ ht-degree: 1%
 ```
 
 
-规则和逻辑是使用`Pet ID`文本框上的规则编辑器中的&#x200B;**调用服务**&#x200B;操作实现的，用于演示上述用例。
+规则和逻辑是使用&#x200B;**文本框上的规则编辑器中的**&#x200B;调用服务`Pet ID`操作实现的，用于演示上述用例。
 
 现在，让我们详细探讨每个用例的实施。
 
@@ -151,13 +151,13 @@ ht-degree: 1%
 
 #### 实施
 
-要实现此目的，请在`Pet ID`文本框上创建规则以调用`getPetById`服务。 在规则中，将&#x200B;**[!UICONTROL 添加成功处理程序]**&#x200B;中`photo-url`下拉列表的`enum`属性设置为`photoUrls`。
+要实现此目的，请在`Pet ID`文本框上创建规则以调用`getPetById`服务。 在规则中，将`enum`添加成功处理程序`photo-url`中`photoUrls`下拉列表的&#x200B;**[!UICONTROL 属性设置为]**。
 
 ![设置下拉值](/help/forms/assets/set-dropdownoption.png)
 
 #### 输出
 
-在`Pet ID`文本框中输入`101`以根据输入的值动态填充下拉选项。
+在`101`文本框中输入`Pet ID`以根据输入的值动态填充下拉选项。
 
 ![结果](/help/forms/assets/output1.png)
 
@@ -178,7 +178,7 @@ ht-degree: 1%
 
 #### 输出
 
-在`Pet ID`文本框中输入`101`以根据输入值动态填充可重复面板。
+在`101`文本框中输入`Pet ID`以根据输入值动态填充可重复面板。
 
 ![输出](/help/forms/assets/output2.png)
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 #### 输出
 
-在`Pet ID`文本框中输入`101`以根据输入值动态填充面板。
+在`101`文本框中输入`Pet ID`以根据输入值动态填充面板。
 
 ![输出](/help/forms/assets/output3.png)
 
@@ -209,13 +209,13 @@ ht-degree: 1%
 
 #### 实施
 
-在`Pet ID`文本框上创建规则以调用`getPetById`服务。 在&#x200B;**[!UICONTROL 添加失败处理程序]**&#x200B;中，添加失败处理程序响应。 如果输入的`Pet ID`不正确，请隐藏&#x200B;**提交**&#x200B;按钮。
+在`Pet ID`文本框上创建规则以调用`getPetById`服务。 在&#x200B;**[!UICONTROL 添加失败处理程序]**&#x200B;中，添加失败处理程序响应。 如果输入的&#x200B;**不正确，请隐藏**&#x200B;提交`Pet ID`按钮。
 
 ![失败处理程序](/help/forms/assets/create-rule-failure-handler.png)
 
 #### 输出
 
-在`Pet ID`文本框中输入`102`，且&#x200B;**提交**&#x200B;按钮已隐藏。
+在`102`文本框中输入`Pet ID`，且&#x200B;**提交**&#x200B;按钮已隐藏。
 
 ![输出](/help/forms/assets/output4.png)
 

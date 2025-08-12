@@ -4,10 +4,10 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -240,7 +240,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 克隆您的 GitHub 项目：使用以下命令从 GitHub 克隆您的项目存储库，替换为 <owner> 存储库所有者和 <repo> 存储库名称：
+1. 克隆GitHub项目：使用以下命令从GitHub克隆项目存储库，将`<owner>`替换为存储库所有者，将`<repo>`替换为存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>

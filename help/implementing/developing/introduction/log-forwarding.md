@@ -4,7 +4,7 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -19,22 +19,6 @@ ht-degree: 3%
 
 如果客户拥有带日志记录供应商的许可证或托管日志记录产品，则可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 有些组织选择限制日志记录目标可以接收哪些流量，而有些组织则可能需要使用HTTPS (443)以外的端口。  如果是，则在部署日志转发配置之前，需要配置[高级网络](/help/security/configuring-advanced-networking.md)。
 
 根据您是否使用端口443以及是否需要从固定IP地址显示日志，使用下表查看高级联网和日志配置的要求。
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>是</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >是否从单个IP地址显示日志取决于您选择的高级联网配置。  必须使用专用出口实现此目的。
@@ -270,6 +247,7 @@ data:
 对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob Store，其中可以写入逻辑，以将已知IP的日志发送到其最终目标。
 
 >[!NOTE]
+>
 >CDN日志不可能显示自AEM日志显示来源的IP地址，这是因为日志是直接从Fastly而不是AEM Cloud Service发送的。
 
 ## 记录目标配置 {#logging-destinations}
@@ -304,15 +282,15 @@ data:
 IAM策略应允许用户使用`s3:putObject`。  例如：
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,6 +490,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 ```
 
 >[!NOTE]
+>
 >日志转发到New Relic仅适用于客户拥有的New Relic帐户。
 >
 >向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
@@ -538,6 +517,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 ```
 
 >[!NOTE]
+>
 > 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
 
 ### Splunk {#splunk}
@@ -630,6 +610,7 @@ aem_tier: author
 建议将配置部署到所有环境，以便所有环境都处于自助控制状态，但不是必需的。 如果没有，您可能会忘记哪些环境已由Adobe配置，哪些是自助式配置的。
 
 >[!NOTE]
+>
 >发送到Splunk索引的`sourcetype`字段的值可能已更改，因此请进行相应调整。
 >
 >在将日志转发部署到之前由Adobe支持配置的环境时，您最多可能会收到几个小时的重复日志。 这将最终自动解决。

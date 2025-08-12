@@ -1,10 +1,11 @@
 ---
 title: 重构工具快速入门
 description: 了解如何开始使用AEM as a Cloud Service中的重构工具
-source-git-commit: 20bb756c4a2eb37341da4582f19cf41e4d60304a
+exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=zh-Hans" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -34,8 +35,6 @@ ht-degree: 2%
 1. 首次访问&#x200B;**Source代码视图**&#x200B;时，您将看到一个空状态，提示您上传源代码。
 
    ![图像](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
-&#x200B;---
 
 ## 上传Source代码 {#uploading}
 
@@ -67,12 +66,12 @@ ht-degree: 2%
    ![图像](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >上传新项目将删除现有项目。 在继续之前，请确保已保存所有必需的数据。
 
 >[!NOTE]
+>
 >仅当源代码上载成功时，才能执行重构作业。
-
-&#x200B;---
 
 ## 重构作业 {#refactoring-jobs}
 
@@ -89,9 +88,8 @@ ht-degree: 2%
 ![图像](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >您可以使用&#x200B;**所有工具一起**&#x200B;选项触发单个重构作业或一次性执行所有可用工具。
-
-&#x200B;---
 
 ### 2.作业状态
 
@@ -110,5 +108,5 @@ ht-degree: 2%
 ![图像](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >每项作业最多可能需要1小时才能完成。 如果状态未更新，请联系Adobe支持部门。
-

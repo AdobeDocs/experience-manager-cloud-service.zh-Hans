@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -172,8 +172,8 @@ data:
 |     | 变量 | 删除指定的变量。 |
 |     | queryParamMatch | 删除与指定正则表达式匹配的所有查询参数。 |
 |     | queryParamDoesNotMatch | 删除与指定的正则表达式不匹配的所有查询参数。 |
-| **转换** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie或var），匹配，替换 | 将部分请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量替换为新值。 |
-|              | op：tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 将请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量设置为其小写值。 |
+| **转换** | op:replace，（reqProperty或reqHeader、queryParam或reqCookie或var），匹配，替换 | 将部分请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量替换为新值。 |
+|              | op:tolower，（reqProperty或reqHeader、queryParam或reqCookie或var） | 将请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量设置为其小写值。 |
 
 替换操作支持捕获组，如下图所示：
 
@@ -474,7 +474,7 @@ data:
 ```
 
 >[!NOTE]
-> 由于使用的是Adobe Managed CDN，请务必按照Edge Delivery Services [安装程序推送失效文档](https://www.aem.live/docs/byo-dns#setup-push-invalidation)中的说明，在&#x200B;**Managed**&#x200B;模式下配置推送失效。
+> 由于使用的是Adobe Managed CDN，请务必按照Edge Delivery Services **安装程序推送失效文档**&#x200B;中的说明，在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式下配置推送失效。
 
 
 ## 服务器端重定向 {#server-side-redirectors}

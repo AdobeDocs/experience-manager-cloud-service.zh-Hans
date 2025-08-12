@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 3%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 3%
 默认情况下，CIF配置中禁用清除缓存功能。 要启用该功能，您需要将以下内容添加到相应的项目中：
 
 * 启用Servlet `/bin/cif/invalidate-cache`，它可以通过在项目中添加项目中的`com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json`配置来帮助触发清除缓存API及其相应请求，如[此处](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)所示。
+
   >[!NOTE]
   >
   > 只需为创作实例启用配置。
@@ -45,11 +46,12 @@ ht-degree: 3%
 
 要验证是否正确设置了所有内容，请执行以下操作：
 
-* 触发与创作实例AEM对应的servlet，例如[http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)，您应会收到200 HTTP响应。
+* 将相应的servlet触发到创作实例AEM，例如[http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache)，您应会收到200 HTTP响应。
 * 验证已在创作实例中的以下路径下创建节点：`/var/cif/cacheinvalidation`。 节点名称遵循以下模式： `cmd_{{timestamp}}`。
 * 验证是否已在每个发布实例中创建相同的节点。
 
 现在，要检查缓存是否正确清除，请执行以下操作：
+
 1. 导航到相应的PLP和PDP页面。
 2. 在商业引擎中更新产品或类别名称。 根据缓存配置，这些更改不会立即反映在AEM中。
 3. 触发servlet API，如下所示：
@@ -57,7 +59,7 @@ ht-degree: 3%
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -109,7 +111,7 @@ ht-degree: 3%
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

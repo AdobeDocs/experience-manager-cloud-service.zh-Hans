@@ -2,7 +2,7 @@
 title: 使用CTT后将主体批量上传到IMS
 description: 概述组和用户的批量上传文件，以及如何在 Admin Console 上使用它们在 IMS 中创建组和用户。
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
-source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 3%
@@ -37,9 +37,10 @@ ht-degree: 3%
 
 ## 批量组上载 {#group-upload}
 
-#### 用例：组已迁移到AEM as a Cloud Service，但这些组未出现在IMS/Admin Console中，因此需要通过Admin Console将它们上传到IMS。
+### 用例：组已迁移到AEM as a Cloud Service，但这些组未出现在IMS/Admin Console中，因此需要通过Admin Console将它们上传到IMS。
 
 要在运行CTT/CAM迁移后使用Admin Console的批量组上传功能，请执行以下步骤：
+
 1. 从CAM下载批量组文件
 
    1. 在CAM中，转到&#x200B;**内容传输**&#x200B;并选择&#x200B;**引入作业**。
@@ -54,7 +55,6 @@ ht-degree: 3%
       * _用户组名称_ — 需要该组名称，最多可包含255个字符。  此组名称在IMS和AEM中必须相同
       * _描述_ — 此字段为可选字段，最多可包含255个字符
       * _用户组管理员_ — 此字段必须至少包含一个组管理员。 通过用逗号分隔每个管理员并将列表用引号引起来，可分配多个管理员。 每个管理员的条目必须包含用户的身份类型，后跟一个连字符，然后是电子邮件地址。  例如
-
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`。不要在管理员之间的逗号后包含空格。 您不能在Admin Console中包含当前不属于组织的用户（作为管理员）
       * _已分配的产品配置文件_ — 此字段是可选的。 您可以通过以下方式分配多个产品配置文件：用逗号分隔每个配置文件，并将列表用引号引起来。 但是，您必须已经为组织设置所包含的产品配置文件。 请确保您指定的是产品配置文件名称，而不是产品名称。  分配给组的产品配置文件的成员资格将由该组中的所有用户继承。  要查找产品配置文件，请执行以下操作：
 
@@ -97,7 +97,7 @@ Admin Console包含两个用于上传和编辑用户详细信息的单独操作�
    1. 在出现的对话框中，从&#x200B;**下载文件……**&#x200B;下的下拉列表中选择&#x200B;**批量用户文件**，然后单击&#x200B;**下载**&#x200B;按钮。
    1. 保存生成的CSV文件
 1. 编辑批量用户文件
-   * 每一行表示要上传的用户，它有十五个字段（字段的名称构成了文件的第一行）。 某些字段是可选的，此处未对其进行说明。 请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。  这些字段包括：
+   * 每一行表示要上传的用户，它有十五个字段（字段的名称构成了文件的第一行）。 某些字段是可选的，此处未对其进行说明。 请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。  这些字段包括：
 
       * _标识类型_ — 可选。  如果未指定，则将其创建为Adobe ID
       * _用户名_ — 可选，不用于Adobe ID上传
@@ -108,14 +108,14 @@ Admin Console包含两个用于上传和编辑用户详细信息的单独操作�
       * _国家/地区代码_ — 可选，不用于Adobe ID上传
       * _ID_ — 可选，不用于Adobe ID上传
       * _产品配置_ — 可选。 此字段也将从用户所属的任何组继承
-      * _管理员角色_ — 可选。 如果用户是管理员，请使用此字段。 有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
-      * _已管理产品配置_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
+      * _管理员角色_ — 可选。 如果用户是管理员，请使用此字段。 有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _已管理产品配置_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
       * _用户组_ — 可选。 用户应指定为成员的组的列表。 每个组必须是已存在的IMS组。 从CAM下载批量用户文件时，此字段预先填充了迁移前用户作为成员且启用了IMS的组的名称（直接或间接）
-      * _用户组已管理_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
-      * _管理的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
-      * _管理的合同_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
-      * _开发人员访问权限_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
-      * _自动分配的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html#csv-format)
+      * _用户组已管理_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
+      * _管理的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此字段也将从用户所属的任何组继承
+      * _管理的合同_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _开发人员访问权限_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _自动分配的产品_ — 可选。  有关详细信息，请参阅[批量用户CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
 
    * 在编辑CSV时，某些应用程序可能会在保存时添加其他引号，从而导致处理失败。 好的做法是在简单的文本编辑器中检查原始CSV，以确保每个字段只有一个开头和结尾引号（并且它们不应是“智能引号”）
 

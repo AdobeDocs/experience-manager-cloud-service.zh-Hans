@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| Foundation | [单击此处](/help/forms/adaptive-form-json-schema-form-model.md) |
+| 基础 | [单击此处](/help/forms/adaptive-form-json-schema-form-model.md) |
 | 核心组件 | 本文 |
 
 
@@ -128,176 +128,176 @@ JSON元素与自适应表单组件的映射如下所示：
 >[!TAB JSON架构v4]
 
 ```json
-{
-"$schema": "https://json-schema.org/draft-04/schema#",
-"definitions": {
-  "employee": {
-  "type": "object",
-  "properties": {
-    "userName": {
-     "type": "string"
-   },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
+    "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
     },
-    "email": {
-    "type": "string",
-    "format": "email"
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
     },
-    "language": {
-     "type": "string"
-   },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-   },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
     "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
+     "type": "array",
+     "items": {
+     "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projects": {
+      "$ref": "#/definitions/projects"
+     }
     }
-  },
-  "required": [
-   "userName",
-   "dateOfBirth",
-   "language"
-  ]
-  },
-    "personalDetails": {
-   "type": "object",
-  "properties": {
-     "GeneralDetails": {
-    "$ref": "#/definitions/GeneralDetails"
    },
-    "Family": {
-     "$ref": "#/definitions/Family"
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projects": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projectsAdditional": {
+      "$ref": "#/definitions/projectsAdditional"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projectsAdditional": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "Additional_name": {
+      "type": "string"
+     },
+     "Additional_areacode": {
+      "type": "number"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "GeneralDetails": {
+   "type": "object",
+   "properties": {
+    "age": {
+     "type": "number"
+    },
+    "married": {
+     "type": "boolean"
+    },
+    "phone": {
+     "type": "number",
+    },
+    "address": {
+     "type": "string"
+    }
+   }
+  },
+  "Family": {
+   "type": "object",
+   "properties": {
+    "spouse": {
+     "$ref": "#/definitions/spouse"
+    },
+    "kids": {
+     "$ref": "#/definitions/kids"
+    }
+   }
+  },
+  "Income": {
+   "type": "object",
+   "properties": {
+    "monthly": {
+     "type": "number"
+    },
+    "yearly": {
+     "type": "number"
+    }
+   }
+  },
+  "spouse": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
     },
     "Income": {
      "$ref": "#/definitions/Income"
+    }
    }
-   }
-     },
-  "projectDetails": {
-   "type": "array",
-   "items": {
-   "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projects": {
-    "$ref": "#/definitions/projects"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projects": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projectsAdditional": {
-    "$ref": "#/definitions/projectsAdditional"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projectsAdditional": {
- "type": "array",
- "items": {
-  "properties": {
-   "Additional_name": {
-    "type": "string"
-   },
-   "Additional_areacode": {
-    "type": "number"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"GeneralDetails": {
- "type": "object",
- "properties": {
-  "age": {
-   "type": "number"
-  },
-  "married": {
-   "type": "boolean"
-  },
-  "phone": {
-   "type": "number",
-  },
-  "address": {
-   "type": "string"
-  }
- }
-},
-"Family": {
- "type": "object",
- "properties": {
-  "spouse": {
-   "$ref": "#/definitions/spouse"
   },
   "kids": {
-   "$ref": "#/definitions/kids"
-  }
- }
-},
-"Income": {
- "type": "object",
- "properties": {
-  "monthly": {
-   "type": "number"
-  },
-  "yearly": {
-   "type": "number"
-  }
- }
-},
-"spouse": {
- "type": "object",
- "properties": {
-  "name": {
-   "type": "string"
-  },
-  "Income": {
-   "$ref": "#/definitions/Income"
-  }
- }
-},
-"kids": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     }
+    }
    },
-   "age": {
-    "type": "number"
-   }
+   "minItems": 1,
+   "maxItems": 4
   }
  },
- "minItems": 1,
- "maxItems": 4
-}
-},
-"type": "object",
-"properties": {
-"employee": {
- "$ref": "#/definitions/employee"
-}
-}
+ "type": "object",
+ "properties": {
+  "employee": {
+   "$ref": "#/definitions/employee"
+  }
+ }
 }
 ```
 
@@ -429,6 +429,7 @@ JSON元素与自适应表单组件的映射如下所示：
 >[!ENDTABS]
 
 从JSON架构V4到版本2020-12规范的主要更改包括：
+
 * ID声明为`$id`
 * 定义声明为`$defs`
 
@@ -482,8 +483,10 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 
 ```
+-->
 
-<!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
+<!-- 
+## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](adaptive-form-expressions.md) on a form event.
 
@@ -857,7 +860,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 要启用所有基于JSON架构的自适应Forms在提交表单时生成与架构兼容的数据，请执行以下步骤：
 
-1. 转到`https://server:host/system/console/configMgr`上的Experience ManagerWeb控制台。
+1. 转到位于`https://server:host/system/console/configMgr`的Experience Manager Web控制台。
 1. 找到&#x200B;**[!UICONTROL 自适应表单和交互通信Web渠道配置]**。
 1. 选择以在编辑模式下打开配置。
 1. 选中&#x200B;**[!UICONTROL 生成符合架构的数据]**&#x200B;复选框。

@@ -2,8 +2,8 @@
 title: 管理主体
 description: 使用 Admin Console 管理迁移主体
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 在将内容传输到 AEM as a Cloud Service 云环境之前，可以在 Admin Console 上执行一些任务。这些任务是：创建用户、创建组以及将用户分配到组；这些用户和组将存在于 IMS（Adobe 的身份管理服务）中，该服务用于管理所有 Adobe 基于云的服务的用户和组。
 
-### 在 Admin Console 中创建组及其用户
+## 在 Admin Console 中创建组及其用户
 
 [使用 Admin Console 管理 AEM 主体](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up)提供了有关如何在 IMS 中创建用户和组以及如何同时或稍后将用户添加到组的详细说明。该文档包括三个创建选项：通过 Admin Console 手动创建、通过 Admin Console 上传 CSV 创建以及通过用户同步工具创建。
 

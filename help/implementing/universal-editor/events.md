@@ -4,9 +4,9 @@ description: 了解通用编辑器发送的不同事件，您可以使用这些�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '510'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 简介 {#introduction}
 
-应用程序对页面或组件更新可能有不同的要求。 因此，Universal Editor会将定义的事件发送到远程应用程序。 如果远程应用程序没有已发送事件的自定义事件侦听器，则会执行`universal-editor-cors`包提供的[回退事件侦听器](#fallback-listeners)。
+应用程序对页面或组件更新可能有不同的要求。 因此，Universal Editor会将定义的事件发送到远程应用程序。 如果远程应用程序没有已发送事件的自定义事件侦听器，则会执行[包提供的](#fallback-listeners)回退事件侦听器`universal-editor-cors`。
 
 所有事件均会在远程页面中受影响的DOM元素上调用。 事件向上冒泡到`BODY`元素，其中注册了`universal-editor-cors`包提供的默认事件侦听器。 UI包含内容和事件。
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ## 内容更新事件 {#content-events}
 
-### aue：content-add {#content-add}
+### aue:content-add {#content-add}
 
 向容器添加新组件时触发`aue:content-add`事件。
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-details {#content-details}
+### aue:content-details {#content-details}
 
 在属性面板中加载组件时触发`aue:content-details`事件。
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-move {#content-move}
+### aue:content-move {#content-move}
 
 移动组件时会触发`aue:content-move`事件。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-patch {#content-patch}
+### aue:content-patch {#content-patch}
 
 当在属性面板中更新组件的数据时，会触发`aue:content-patch`事件。
 
@@ -108,7 +108,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-remove {#content-remove}
+### aue:content-remove {#content-remove}
 
 从容器中删除组件时触发`aue:content-remove`事件。
 
@@ -124,7 +124,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-update {#content-update}
+### aue:content-update {#content-update}
 
 在上下文中更新组件的属性时，会触发`aue:content-update`事件。
 
@@ -180,21 +180,9 @@ ht-degree: 2%
 
 ## UI事件 {#ui-events}
 
-### aue：ui-preview {#ui-preview}
+### aue:ui-preview {#ui-preview}
 
-当页面的编辑模式更改为&#x200B;**预览**&#x200B;时，将触发`aue:ui-preview`事件。
-
-此事件的有效负载为空。
-
-```json
-{
-    details: {}
-}
-```
-
-### aue：ui-edit {#ui-edit}
-
-当页面的编辑模式更改为&#x200B;**编辑**&#x200B;时，将触发`aue:ui-edit`事件。
+当页面的编辑模式更改为`aue:ui-preview`预览&#x200B;**时，将触发**&#x200B;事件。
 
 此事件的有效负载为空。
 
@@ -204,7 +192,19 @@ ht-degree: 2%
 }
 ```
 
-### aue：ui-viewport-change {#ui-viewport-change}
+### aue:ui-edit {#ui-edit}
+
+当页面的编辑模式更改为`aue:ui-edit`编辑&#x200B;**时，将触发**&#x200B;事件。
+
+此事件的有效负载为空。
+
+```json
+{
+    details: {}
+}
+```
+
+### aue:ui-viewport-change {#ui-viewport-change}
 
 更改视区大小时会触发`aue:ui-viewport-change`事件。
 
@@ -219,7 +219,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：initialized {#initialized}
+### aue:initialized {#initialized}
 
 触发`aue:initialized`事件是为了让远程页面知道它已成功加载到通用编辑器中。
 

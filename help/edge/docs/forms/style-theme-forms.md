@@ -4,7 +4,7 @@ description: 自定义 Edge Delivery Services for AEM Forms 的主题和样式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -476,7 +476,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 ```
 
 - Fieldset 元素充当面板容器，具有 panel-wrapper 类和基于面板名称 (field-login) 进行样式设置的附加类。
-- 图例元素 (&lt;legend>) 用作面板标题，其中包含文本“登录信息”和类字段标签。data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
+- 图例元素(`<legend>`)用作包含文本“登录信息”和类字段标签的面板标题。 data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
 - 在字段集中，多个。{Type}-wrapper 元素（在本例中为 .text-wrapper 和 .password-wrapper）代表面板中的各个表单字段。
 - 每个包装器都包含一个标签、输入字段和描述，与前面的示例类似。
 
@@ -497,7 +497,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
  }
 ```
 
-- `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
+-  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -513,7 +513,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
   }
 ```
 
-- `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
+-  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
 1. 定位面板中的各个字段：
@@ -526,7 +526,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 }
 ```
 
-- `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
+-  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
 1. 定位特定领域（可选）：
 
@@ -637,7 +637,6 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
   margin-bottom: 10px;
 }
 ```
-
 此选择器对可重复面板中的所有字段包装器进行样式设置，从而保持字段之间的间距一致。
 
 - 定位特定领域（在面板内）：

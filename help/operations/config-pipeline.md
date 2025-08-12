@@ -4,7 +4,7 @@ description: 了解如何使用配置管道在AEM as a Cloud Service中部署各
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 1%
@@ -63,10 +63,10 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 每个配置文件都以类似于以下示例片段的属性开头：
 
 ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
 ```
 
 | 属性 | 描述 | 默认 |
@@ -152,7 +152,7 @@ data:
 ```
 
 当属性值可能存在差异时，请使用此结构。 在文件中，可以预期`envTypes`数组值与后缀相对应，例如
-值为`["dev"]`的`cdn-dev.yaml`和`logForwarding-dev.yaml`、值为`["stage"]`的`cdn-stage.yaml`和`logForwarding-stage.yaml`等。
+值为`cdn-dev.yaml`的`logForwarding-dev.yaml`和`["dev"]`、值为`cdn-stage.yaml`的`logForwarding-stage.yaml`和`["stage"]`等。
 
 ### 每个环境的文件夹 {#folder-per-env}
 

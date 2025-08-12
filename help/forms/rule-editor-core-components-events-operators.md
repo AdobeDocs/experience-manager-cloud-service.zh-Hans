@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2327'
 ht-degree: 2%
 
 ---
@@ -28,12 +28,12 @@ ht-degree: 2%
 
 * **等于** — 检查表单对象是否与指定的值匹配。
 * **不等于** — 检查表单对象是否与指定的值不匹配。
-* **开头为** – 检查表单对象是否以指定的字符串开头。
-* **结尾为** – 检查表单对象是否以指定的字符串结尾。
-* **包含** – 检查表单对象是否包含指定的子字符串。
-* **不包含** – 检查表单对象是否不包含指定的子字符串。
-* **为空** – 检查表单对象是否为空或未提供。
-* **不为空** – 检查表单对象是否存在且不为空。
+* **Starts With** — 检查表单对象是否以指定的字符串开头。
+* **结尾为** — 检查表单对象是否以指定的字符串结尾。
+* **包含** — 检查表单对象是否包含指定的子字符串。
+* **不包含** — 检查表单对象是否不包含指定的子字符串。
+* **为空** — 检查表单对象是否为空。
+* **不为空** — 检查表单对象是否存在且不为空。
 * **已选择** — 当用户选择特定的复选框、下拉列表或单选按钮选项时，返回true。
 * **已初始化（事件）** — 在浏览器中呈现表单对象时返回true。
 * **Is Changed (event)** — 当用户修改表单对象的值或选择时，返回true。
@@ -68,12 +68,11 @@ ht-degree: 2%
 
 `Action 2 on Object B;`
 `AND`
-&#39;对对象C执行操作3；
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 当具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，会自动检索选项并使这些选项可用于规则创建者。 您无需再次键入选项值。
 
@@ -89,9 +88,9 @@ _
 >
 > 当规则类型仅支持单级then-else语句时。
 
-##### 允许在“何时”中使用 [!UICONTROL 多个字段] {#allowed-multiple-fields}
+##### [!UICONTROL When]中允许使用多个字段 {#allowed-multiple-fields}
 
-在 When **条件中**，您可以选择添加应用规则的字段之外的其他字段。
+在&#x200B;**When**&#x200B;条件中，您可以选择添加应用规则的字段以外的其他字段。
 
 例如，使用When规则类型，您可以评估不同表单对象上的条件并执行操作：
 
@@ -157,15 +156,15 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 >[!NOTE]
 >
-> 要了解有关调用服务的更多信息， [请单击此处](/help/forms/invoke-service-enhancements-rule-editor.md)。
+> 若要了解有关调用服务的更多信息，请[单击此处](/help/forms/invoke-service-enhancements-rule-editor.md)。
 
-请参阅调用表单数据模型 （FDM） 服务的示例规则。
+请参阅有关调用表单数据模型(FDM)服务的示例规则。
 
-除了表单数据模型服务之外，您还可以指定直接 WSDL URL 来调用 Web 服务。 但是，表单数据模型服务具有许多好处，并且是调用服务的推荐方法。
+除了表单数据模型服务之外，您还可以指定直接WSDL URL来调用Web服务。 但是，表单数据模型服务具有许多好处，并且推荐调用服务的方法。
 
-有关在表单数据模型 （FDM） 中配置服务的详细信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md)。
+有关在表单数据模型(FDM)中配置服务的详细信息，请参阅[[!DNL Experience Manager Forms] 数据集成](data-integration.md)。
 
-**[!UICONTROL 设置“计算”的值]** ，并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 当您选择Web服务选项时，它将显示在[!DNL Experience Manager]实例上的所有表单数据模型(FDM)中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
+**[!UICONTROL 设置值]**&#x200B;计算并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 当您选择Web服务选项时，它将显示在[!DNL Experience Manager]实例上的所有表单数据模型(FDM)中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
 
 有关在表单数据模型(FDM)中配置服务的详细信息，请参阅[[!DNL Experience Manager Forms] 数据集成](data-integration.md)。
 
@@ -220,7 +219,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 设置值] {#set-value-of}
 
-**规则类型的**&#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
+**[!UICONTROL 规则类型的]**&#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
 **Set Value Of**&#x200B;规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
@@ -234,7 +233,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 时间（可选）：
 
-（条件 1 和条件 2 和条件 3）为 TRUE;
+（条件1和条件2和条件3）为TRUE；
 
 以下示例选择`Question2`的值作为`True`，并将`Result`的值设置为`correct`。
 
@@ -276,9 +275,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 启用] {#enable}
 
-启用&#x200B;**&#x200B;**&#x200B;规则类型允许您根据是否满足条件来启用或禁用表单对象。如果条件不满足或返回 `False`，“启用”规则类型还会触发“禁用”作。
+**[!UICONTROL 启用]**&#x200B;规则类型允许您根据条件是否满足来启用或禁用表单对象。 Enable规则类型也会在条件不满足或返回`False`时触发Disable操作。
 
-典型的启用规则结构如下：
+典型的Enable规则的结构如下所示：
 
 `Enable Object A;`
 
@@ -292,7 +291,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 禁用] {#disable}
 
-与“启用”规则类型类似， **[!UICONTROL “禁用]** ”规则类型允许您根据是否满足条件来启用或禁用表单对象。 “禁用”规则类型还会在条件不满足或返回 `False`时触发“启用”作。
+与“启用”规则类型类似，**[!UICONTROL 禁用]**&#x200B;规则类型允许您根据条件是否满足来启用或禁用表单对象。 Disable规则类型还会触发Enable操作，以防条件不满足或返回`False`。
 
 典型的禁用规则的结构如下所示：
 
@@ -352,11 +351,11 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 异步函数调用]
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
-**[!UICONTROL 异步函数调用]**&#x200B;规则类型允许您执行异步函数。它使您能够启动独立于主执行线程运行的函数调用，从而允许其他进程继续运行，而无需等待异步函数完成。
+**[!UICONTROL 异步函数调用]**&#x200B;规则类型允许您执行异步函数。 它使您能够启动独立于主执行线程的函数调用，允许其他进程继续运行，而无需等待异步函数完成。
 
-用于执行异步函数的典型异步函数调用规则的结构如下：
+用于执行异步函数的典型Async Function调用规则的结构如下所示：
 
 `When:`
 
@@ -390,7 +389,7 @@ To define a rule based on a form data model:
 
 ## 后续步骤
 
-现在，让我们了解基于核心组件[&#128279;](/help/forms/rule-editor-core-components-usecases.md)的自适应表单的规则编辑器的各种示例。
+现在，让我们了解基于核心组件[的自适应表单的规则编辑器的各种](/help/forms/rule-editor-core-components-usecases.md)示例。
 
 ## 另请参阅
 

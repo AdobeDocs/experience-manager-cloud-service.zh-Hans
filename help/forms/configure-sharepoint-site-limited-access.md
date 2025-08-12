@@ -5,16 +5,16 @@ keywords: 如何配置具有有限访问权限的SharePoint站点？，配置具
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 15%
 
 ---
 
-<span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
-
 # 使用授权范围配置具有有限访问权限的 SharePoint Site
+
+<span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 受限或受限访问的目的是通过允许管理员控制用户对特定SharePoint站点或一组SharePoint站点的访问来增强安全管理。 当您需要授予用户或组访问特定网站的权限而不允许他们查看任何其他不允许的SharePoint网站时，权限级别非常有用。
 

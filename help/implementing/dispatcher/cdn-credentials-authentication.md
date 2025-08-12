@@ -4,7 +4,7 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 3%
@@ -32,11 +32,11 @@ Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖
 
 ## 客户管理的CDN HTTP标头值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
+如AEM as a Cloud Service[页面中的](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
 
 作为设置的一部分，Adobe CDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到Adobe CDN之前，在客户CDN上针对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
-*X-AEM-Edge-Key*&#x200B;值由名为`cdn.yaml`或类似文件中的`edgeKey1`和`edgeKey2`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。  以下示例中介绍了语法。
+*X-AEM-Edge-Key*&#x200B;值由名为`edgeKey1`或类似文件中的`edgeKey2`和`cdn.yaml`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。  以下示例中介绍了语法。
 
 有关进一步的调试信息和常见错误，请检查[常见错误](/help/implementing/dispatcher/cdn.md#common-errors)。
 
@@ -65,11 +65,11 @@ data:
 
 请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
-有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
+有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
 
 其他属性包括：
 
-* 包含子`authentication`节点的`Data`节点。
+* 包含子`Data`节点的`authentication`节点。
 * 在`authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
 * 身份验证者：用于声明令牌或凭据的类型，在本例中为Edge密钥。 它包括以下属性：
    * name — 描述性字符串。
@@ -172,7 +172,7 @@ data:
 
 其他属性包括：
 
-* 包含子`authentication`节点的`data`节点。
+* 包含子`data`节点的`authentication`节点。
 * 在`authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
 * 身份验证者：用于声明令牌或凭据的类型，在本例中是清除密钥。 它包括以下属性：
    * name — 描述性字符串。
@@ -187,7 +187,7 @@ data:
 >[!NOTE]
 >在部署引用清除密钥的配置之前，必须将清除密钥配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 建议使用长度最小为32字节的唯一随机密钥；例如，Open SSL加密库可以通过执行命令openssl rand -hex 32来生成随机密钥
 
-您可以引用[教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
+您可以引用[教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
 
 ## 基本身份验证 {#basic-auth}
 
@@ -227,7 +227,7 @@ data:
 
 此外，语法包括：
 
-* 包含`authentication`节点的`data`节点。
+* 包含`data`节点的`authentication`节点。
 * 在`authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
 * 验证者：在此场景中，声明一个基本验证者，该验证者具有以下结构：
    * 名称 — 描述性字符串
@@ -241,6 +241,7 @@ data:
    * 操作 — 必须在引用的目标验证者中指定“authenticate”，对于此方案而言，这是基本验证
 
 >[!NOTE]
+>
 >在部署引用密码的配置之前，必须将密码配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。
 
 ## 旋转密钥 {#rotating-secrets}

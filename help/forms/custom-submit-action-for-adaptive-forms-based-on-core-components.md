@@ -4,13 +4,13 @@ description: 了解如何为自适应Forms创建自定义提交操作，以便�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 4%
 
 ---
-
 
 # 创建自适应Forms（核心组件）的自定义提交操作
 
@@ -47,11 +47,11 @@ ht-degree: 4%
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的逐步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
 
    **您的项目已准备就绪！**
 
-   当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的应用程序（例如，app-id）命名。 此文件夹包含从AEM as a Cloud Service Git存储库下载的所有文件和代码。 您可以在`archetype.properties`文件中找到AEM项目的`<appid>`。
+   当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的应用程序（例如，app-id）命名。 此文件夹包含从AEM as a Cloud Service Git存储库下载的所有文件和代码。 您可以在`<appid>`文件中找到AEM项目的`archetype.properties`。
 
    ![原型属性](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
@@ -81,7 +81,7 @@ ht-degree: 4%
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`：替换 &lt;app-id> 以及实际的应用程序ID。
+   `Important`：将`<app-id>`替换为您的实际应用程序ID。
 
 1. 创建新的配置文件。
 在`customsubmitaction`文件夹中，创建一个名为`.content.xml`的新文件。
@@ -112,7 +112,7 @@ ht-degree: 4%
 
 **在`filter.xml`**&#x200B;中包含新文件夹
 
-1. 导航到[AEMaaCS项目目录]中的`/ui.apps/src/main/content/META-INF/vault/filter.xml`文件。
+1. 导航到`/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS项目目录[中的]文件。
 
 1. 打开文件，并在末尾添加以下行：
 
@@ -120,7 +120,7 @@ ht-degree: 4%
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
 
-   例如，添加以下代码行以在`filter.xml`文件中添加`customsubmitaction`文件夹：
+   例如，添加以下代码行以在`customsubmitaction`文件中添加`filter.xml`文件夹：
 
    ```
    <filter root="/apps/wknd/customsubmitaction"/>
@@ -134,7 +134,7 @@ ht-degree: 4%
 
 1. 导航到`[AEMaaCS project directory]`中的以下目录：
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`：替换 &lt;app-id> 以及实际的应用程序ID。
+   `Important`：将`<app-id>`替换为您的实际应用程序ID。
 1. 创建新的Java文件以便为添加的提交操作实施服务。 例如，添加新的Java文件作为`CustomSubmitService.java`。
 
    ![自定义提交操作文件夹](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -214,9 +214,9 @@ ht-degree: 4%
 
    1. 部署更新的代码：
 
-      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
+      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅[上的指南如何为AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)设置管道。
+      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
       ![云部署](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -230,7 +230,7 @@ ht-degree: 4%
 
 ### 使用新添加的提交操作预览自适应表单
 
-1. 登录到您的AEM Formsas a Cloud Service实例。
+1. 登录到您的AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**Forms** > **Forms和文档**。
 
    ![Forms和文档](/help/forms/assets/custom-submit-action-fnd.png)
@@ -255,7 +255,7 @@ ht-degree: 4%
    成功提交表单后，您可以检查&#x200B;**Adobe Experience Manager Web控制台配置**&#x200B;以验证本地开发环境中自定义提交操作的操作。
 1. 转到 `http://<host>:<port>/system/console/configMgr`.
 
-1. 导航到`http://<host>:<port>/system/console/slinglog`上的&#x200B;**Adobe Experience Manager Web控制台日志支持**。
+1. 导航到&#x200B;**上的** Adobe Experience Manager Web控制台日志支持`http://<host>:<port>/system/console/slinglog`。
 
    ![ConfigMgr](/help/forms/assets/custom-submit-action-sling-log.png)
 
