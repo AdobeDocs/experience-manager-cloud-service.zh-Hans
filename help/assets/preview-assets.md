@@ -51,13 +51,13 @@ ht-degree: 0%
    >
    > 资源选择器显示最近状态更新设置为“已批准”或“预览”的资源。
 
-1. 使用&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项将页面发布到预览层。 执行[将内容发布到预览](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content)部分中的步骤以将页面发布到预览层。 发布后，生成页面的预览URL。 “预览”页面显示站点页面中的资源（具有最近的状态更新）。
+1. 使用&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项将页面发布到预览层。 执行[将内容发布到预览](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content)部分中的步骤以将页面发布到预览层。 发布后，生成页面的预览URL。 “预览”页面显示站点页面中的资源（具有最近的状态更新）。
 
-与利益相关者共享此预览URL，以供审阅和反馈。 确保您的利益相关者有权访问预览页面。 有关提供预览页面访问权限的信息，请参阅[访问预览服务](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service)。
+与利益相关者共享此预览URL，以供审阅和反馈。 确保您的利益相关者有权访问预览页面。 有关提供预览页面访问权限的信息，请参阅[访问预览服务](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service)。
 
 >[!NOTE]
 >
->默认情况下，[图像V3核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility)支持预览版本的资源。 使用[资源选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload)面板选择资源的预览版本（具有预览状态的资源）时，图像V3组件会在预览层（站点作者页面上的预览版本）中自动呈现该资源。
+>默认情况下，[图像V3核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility)支持预览版本的资源。 使用[资源选择器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload)面板选择资源的预览版本（具有预览状态的资源）时，图像V3组件会在预览层（站点作者页面上的预览版本）中自动呈现该资源。
 
 在最终确定资源版本后，[将您的页面发布到发布层](#publish-your-pages-to-publish-tier)以供公众使用。
 
@@ -66,8 +66,8 @@ ht-degree: 0%
 最终确定资源版本以供公共使用后，将资源状态设置为&#x200B;**[!UICONTROL 已批准]**。 然后将页面发布到发布层。 执行以下步骤以发布页面：
 
 1. 按照上面[在网站预览页面](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities)中预览资源部分中的步骤1，将资源状态更改为&#x200B;**[!UICONTROL 已批准]**。
-1. 导航到您的站点作者页面并将其发布到[!DNL Publish tier]。 通过执行从页面编辑器[部分中](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)发布中的步骤来发布页面。
-或者，按照[从站点控制台](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)部分发布页面中的步骤操作，从站点控制台发布页面。
+1. 导航到您的站点作者页面并将其发布到[!DNL Publish tier]。 通过执行从页面编辑器[部分中](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)发布中的步骤来发布页面。
+或者，按照[从站点控制台](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)部分发布页面中的步骤操作，从站点控制台发布页面。
 
    >[!NOTE]
    >
