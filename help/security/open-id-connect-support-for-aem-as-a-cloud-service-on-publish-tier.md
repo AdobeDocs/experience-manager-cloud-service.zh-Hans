@@ -115,6 +115,7 @@ OIDC是在OAuth 2.0协议之上的标识层，它支持强大的用户身份验�
       "storeRefreshToken": false
    }
    ```
+
 1. 然后，按如下方式配置其属性：
    * `groupsInIdToken`：如果在ID令牌中发送组，则设置为true。 如果值为false或未指定，则从UserInfo端点读取组。
    * `groupsClaimName`：声明的名称包含要在AEM中同步的组。
