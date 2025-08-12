@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | 本文 |
 
 您可以在[!DNL AEM Forms]实例之间移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型(FDM)、自适应表单模板、片段和PDF forms。
@@ -181,7 +181,7 @@ ht-degree: 3%
 
    ![搜索资产](/help/forms/assets/search-bar.png)
 
-有关使用搜索功能的更多信息和说明，请参阅[搜索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
+有关使用搜索功能的更多信息和说明，请参阅[搜索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=zh-Hans)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

@@ -111,7 +111,7 @@ ht-degree: 93%
    * 上下文感知配置（`/conf` 下的任何内容）（添加、修改、删除）
    * 脚本（包可以在包安装的安装过程的各个阶段触发安装挂钩。有关安装挂钩的信息，请参阅 [Jackrabbit filevault 文档](https://jackrabbit.apache.org/filevault/installhooks.html)。AEM CS 目前使用 Filevault 版本 3.4.0，它仅允许管理员用户、系统用户和管理员组的成员安装挂钩）。
 
-可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。反映此分隔的重构已在AEM 6.5中完成，有关建议的项目重构的详细信息可在[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到。
+可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。反映此分隔的重构已在AEM 6.5中完成，有关建议的项目重构的详细信息可在[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=zh-Hans)中找到。
 
 >[!NOTE]
 >内容包将部署到所有环境类型（开发、暂存、生产）。无法将部署限于特定环境。施加此限制以确保能够选择自动执行的测试运行。特定于环境的内容需要通过[包管理器](/help/implementing/developing/tools/package-manager.md)手动安装。
@@ -120,7 +120,7 @@ ht-degree: 93%
 
 必须确认任何包含的第三方包与 AEM as a Cloud Service 兼容，否则包含此包会导致部署失败。
 
-如上所述，具有现有代码库的客户应遵循[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中所述的6.5存储库更改所需的存储库重构练习。
+如上所述，具有现有代码库的客户应遵循[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=zh-Hans)中所述的6.5存储库更改所需的存储库重构练习。
 
 ## Repoinit {#repoinit}
 
@@ -176,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="包管理器 – 迁移可变内容包"
 >abstract="探索将包管理器用于某些用例的情况，在这些用例中应“一次性”安装内容包。安装过程包括将特定内容从生产导入到暂存以调试生产问题，并将小型内容包从内部部署环境转移到 AEM 云环境等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="内容传输工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans" text="内容传输工具"
 
 在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境来调试生产问题。在这些场景中，可以在 AEM as a Cloud Service 上的环境中使用[包管理器](/help/implementing/developing/tools/package-manager.md)。
 
@@ -262,7 +262,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 复制 {#replication}
 
-发布机制与 [AEM Replication Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 向后兼容。
+发布机制与 [AEM Replication Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans) 向后兼容。
 
 若要使用云就绪 AEM 快速入门来开发和测试复制，必须将经典的复制功能与创作/发布设置结合使用。如果已为云删除 AEM 创作上的用户界面入口点，用户会转到 `http://localhost:4502/etc/replication` 以进行配置。
 
