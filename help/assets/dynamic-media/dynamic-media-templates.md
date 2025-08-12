@@ -83,7 +83,7 @@ ht-degree: 1%
 满足以下要求以创建[!DNL Dynamic Media]模板并生成其投放URL：
 
 1. 访问[!DNL Dynamic Media]。
-1. 在[!DNL Assets View]主页上，您有一个文件夹位于&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中以保存您的模板。 [在](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)Assets![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL 中创建文件夹&#x200B;]**以在**[!UICONTROL  Dynamic Media Assets ]**中复制该文件夹。
+1. 在[!DNL Assets View]主页上，您有一个文件夹位于&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中以保存您的模板。 [在](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)Assets![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL 中创建文件夹&#x200B;]**&#x200B;以在&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;中复制该文件夹。
 1. [将 [!DNL AEM Assets] 实例中可用的图像与 [!DNL Dynamic Media] 同步，以将其用于创建模板](/help/assets/dynamic-media/config-dm.md)。
 1. 发布要在创建模板时使用的图像，以便在创建模板后生成模板的投放URL。 投放URL可用于下游应用程序。
 1. 若要在模板的文本图层中使用默认[!UICONTROL Adobe Sans F2]字体以外的字体，请[同时将该字体文件上载并发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [支持的字体文件格式为：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 另外，请确保[重新处理](/help/assets/reprocessing-assets-view.md)要使用的现有字体。 有关详细信息，请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
@@ -163,7 +163,7 @@ ht-degree: 1%
 1. 浏览面板或使用搜索栏中的关键字查找特定图像。
 1. 将图像拖放到画布上以使用。 查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以调整画布上的图层大小或重新定位图层。
    ![在秒内创建横幅](/help/assets/assets/add-image-to-canvas.png)
-1. 启用&#x200B;**[!UICONTROL 均匀半径]**&#x200B;切换开关并使用&#x200B;**[!UICONTROL 圆角半径]**滑块均匀调整图像所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
+1. 启用&#x200B;**[!UICONTROL 均匀半径]**&#x200B;切换开关并使用&#x200B;**[!UICONTROL 圆角半径]**&#x200B;滑块均匀调整图像所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
    ![调整图像的角圆度](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### 在画布中添加文本图层{#add-text-to-the-canvas}
@@ -172,7 +172,7 @@ ht-degree: 1%
 
 1. 单击![创建新横幅fastly](/help/assets/assets/add-text.svg)以将文本图层添加到画布并打开“属性”面板。
 1. 选择图层并单击文本进行更新。
-1. 在“属性”面板中选择&#x200B;**[!UICONTROL 智能文本调整大小]**以自动调整文本长度和字体大小，使其以最佳方式适应指定区域。
+1. 在“属性”面板中选择&#x200B;**[!UICONTROL 智能文本调整大小]**&#x200B;以自动调整文本长度和字体大小，使其以最佳方式适应指定区域。
    ![最佳可自定义横幅](/help/assets/assets/add-text-layer.png)
 
 查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。 **[!UICONTROL 字体系列]**&#x200B;字段显示[!UICONTROL Adobe Sans F2]默认字体、重新处理的现有字体以及新上载和发布的字体。 有关详细信息，请参阅上面[开始之前](#prerequisites-for-dynamic-media-wysiwyg-template)部分中的第5点。
@@ -183,7 +183,7 @@ ht-degree: 1%
 
 1. 单击![创建形状](/help/assets/assets/Shapes.svg)，选择一个形状（矩形或圆形）以将其添加到画布中。 使用形状的[[!UICONTROL 属性面板]](#reposition-resize-delete-a-layer)重新定位、调整大小、旋转或删除图层。
 1. 滚动到面板的&#x200B;**[!UICONTROL 样式]**&#x200B;部分，在&#x200B;**[!UICONTROL 形状颜色]**&#x200B;字段中定义十六进制代码，或者使用拾色器填充所选形状中的颜色。
-1. 启用&#x200B;**[!UICONTROL 统一半径]**&#x200B;切换功能，并使用&#x200B;**[!UICONTROL 圆角半径]**滑块来统一调整矩形所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
+1. 启用&#x200B;**[!UICONTROL 统一半径]**&#x200B;切换功能，并使用&#x200B;**[!UICONTROL 圆角半径]**&#x200B;滑块来统一调整矩形所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
    ![调整形状的圆角度](/help/assets/assets/enable-uniform-radius-shape.png)
 1. [将&#x200B;**[!UICONTROL 隐藏]**&#x200B;参数添加到选定的图层](#parameterise-a-layer)以使用模板URL实时显示或隐藏模板中的图层。
 1. 选择图层以[向其中添加[!UICONTROL CTA]链接](#add-CTA-in-dynamic-media-templates)，允许用户在实时模板中单击形状作为超链接。
@@ -218,8 +218,8 @@ ht-degree: 1%
 
 #### 文本格式设置选项{#text-formatting-options-on-properties-panel}
 
-通过更改面板&#x200B;**[!UICONTROL 文本]**部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层内）。
-确保包括**[!UICONTROL 智能文本大小调整]**。 [!UICONTROL 智能文本大小调整]适用于[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，可在文本区域中以最佳方式填充文本，防止文本溢出，并最大程度地减少文本底部的额外空间。
+通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层内）。
+确保包括&#x200B;**[!UICONTROL 智能文本大小调整]**。 [!UICONTROL 智能文本大小调整]适用于[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，可在文本区域中以最佳方式填充文本，防止文本溢出，并最大程度地减少文本底部的额外空间。
 
 ![立即创建内容](/help/assets/assets/smart-text-resize.png)
 
@@ -234,7 +234,7 @@ ht-degree: 1%
 1. **可选：**&#x200B;重命名参数名称。 参数名称具有层名称后跟一个后缀。 对于选定层，其所有参数化属性共享相同的层名称，后跟一个变化的后缀。 按照语义命名约定重命名层名称，以便在URL中包含参数时，参数名称本身可以说明层的内容或其用途。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
    ![即时内容创建](/help/assets/assets/parameterise-a-layer.png)
-若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击**[!UICONTROL 参数]**。
+若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击&#x200B;**[!UICONTROL 参数]**。
 
 #### “参数”面板选项 {#parameterisation-options-or-allowed-parameters}
 
@@ -243,19 +243,19 @@ ht-degree: 1%
 **图像参数：**
 
 **[!UICONTROL X]：** Include可通过更改URL中的参数值，沿图层中心线水平移动图层，平行于模板平面的X轴。
-**[!UICONTROL Y]：**包含可通过更改URL中的参数值，沿图层中心线垂直移动图层，平行于模板平面的Y轴。
-**[!UICONTROL 宽度]：**包含可通过更改URL中的参数值来调整图层的宽度。
-**[!UICONTROL 高度]：**包含可通过更改URL中的参数值来调整图层的高度。
-**[!UICONTROL 隐藏]：**包含以使用0（显示）和1（隐藏）来隐藏或显示模板中的图层。
+**[!UICONTROL Y]：**&#x200B;包含可通过更改URL中的参数值，沿图层中心线垂直移动图层，平行于模板平面的Y轴。
+**[!UICONTROL 宽度]：**&#x200B;包含可通过更改URL中的参数值来调整图层的宽度。
+**[!UICONTROL 高度]：**&#x200B;包含可通过更改URL中的参数值来调整图层的高度。
+**[!UICONTROL 隐藏]：**&#x200B;包含以使用0（显示）和1（隐藏）来隐藏或显示模板中的图层。
 **[!UICONTROL Source]：**&#x200B;包含以通过更改URL中参数值中的图像路径来使用新图像替换图层的图像。
 
 **文本格式参数：**
 
 包括以下参数，以便通过更新URL中的参数值从URL中编辑文本、其字体、颜色和大小。
 
-**[!UICONTROL 文本]：**包含以从URL更新文本。
-**[!UICONTROL 字体系列]：**包含以从URL更新文本的字体。
-**[!UICONTROL 字体大小]：**包含以从URL更新文本的字体大小。
+**[!UICONTROL 文本]：**&#x200B;包含以从URL更新文本。
+**[!UICONTROL 字体系列]：**&#x200B;包含以从URL更新文本的字体。
+**[!UICONTROL 字体大小]：**&#x200B;包含以从URL更新文本的字体大小。
 **[!UICONTROL 文本颜色]：**&#x200B;包含以从URL更新文本的字体颜色。
 
 ### 将层分组以同时控制其可见性{#group-layers}
@@ -287,7 +287,7 @@ ht-degree: 1%
 1. **可选：**&#x200B;将&#x200B;**[!UICONTROL 隐藏]**&#x200B;参数值在0和1之间更改，然后单击&#x200B;**[!UICONTROL 刷新]**&#x200B;以查看更改内容。 具有相同&#x200B;**[!UICONTROL Hide]**&#x200B;参数的图层会一起隐藏或显示。 同样，您可以从URL控制图层的可见性。
 
    ![即时创建内容](/help/assets/assets/dm-templates-publish-status.png)
-您还可以切换**[!UICONTROL 包含所有参数]**以编辑所有显示的参数值，并在模板预览中查看更新。
+您还可以切换&#x200B;**[!UICONTROL 包含所有参数]**&#x200B;以编辑所有显示的参数值，并在模板预览中查看更新。
    <br>
 1. 要从预览页面发布模板，请单击&#x200B;**[!UICONTROL 发布]**&#x200B;并确认发布。 显示&#x200B;**[!UICONTROL 发布完成]**&#x200B;消息，发布状态更新为&#x200B;**[!UICONTROL 已发布]**。
 

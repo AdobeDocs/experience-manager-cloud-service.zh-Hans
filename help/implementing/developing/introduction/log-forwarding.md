@@ -93,7 +93,7 @@ ht-degree: 3%
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
       <td>是</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >是否从单个IP地址显示日志取决于您选择的高级联网配置。  必须使用专用出口实现此目的。
