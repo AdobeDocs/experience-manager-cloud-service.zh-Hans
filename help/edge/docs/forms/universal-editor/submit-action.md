@@ -4,7 +4,8 @@ description: 自适应表单提供了多个提交操作。提交操作定义了�
 keywords: 如何为自适应表单选择提交操作、将自适应表单连接到sharepoint列表、将自适应表单连接到sharepoint文档库、将自适应表单连接到表单数据模型(FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 47%
@@ -15,7 +16,7 @@ ht-degree: 47%
 
 | 版本 | 文章链接 |
 |---------|-----------------------------|
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | 本文 |
@@ -23,7 +24,7 @@ ht-degree: 47%
 
 表单提交是用户旅程中至关重要的最后一步——在此阶段，将会处理所收集的数据并触发相应操作。本文档提供了在通用编辑器中配置和管理自适应表单提交操作的完整指南。
 
-### 您将了解的内容
+## 您将了解的内容
 
 阅读本文档后，您将掌握以下内容：
 
@@ -33,7 +34,7 @@ ht-degree: 47%
 - 实施针对特定业务需求的自定义提交操作
 - 处理表单提交过程中的验证与出错场景
 
-### 目标受众
+## 目标受众
 
 本指南面向以下人群：
 
@@ -67,7 +68,7 @@ ht-degree: 47%
 您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
 
 **如何为在Universal Editor中创作的Forms配置提交操作？**
-您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
+您可以使用**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
 
 ![表单属性图标](/help/forms/assets/ue-form-properties-icon.png)
 
@@ -77,6 +78,3 @@ ht-degree: 47%
 >
 > - 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
 > - 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
-
-
-

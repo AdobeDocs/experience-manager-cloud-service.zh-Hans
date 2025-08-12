@@ -4,7 +4,7 @@ description: 自定义 Edge Delivery Services for AEM Forms 的主题和样式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -497,7 +497,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
  }
 ```
 
-- `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
+-  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -513,7 +513,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
   }
 ```
 
-- `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
+-  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
 1. 定位面板中的各个字段：
@@ -526,7 +526,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 }
 ```
 
-- `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
+-  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
 1. 定位特定领域（可选）：
 

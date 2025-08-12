@@ -4,7 +4,7 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -93,7 +93,6 @@ ht-degree: 3%
     </tr>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +215,6 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
       <td>是</td>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >是否从单个IP地址显示日志取决于您选择的高级联网配置。  必须使用专用出口实现此目的。
