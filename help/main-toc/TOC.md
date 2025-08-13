@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2038e0884718a2c0cd0b661ebe0426540a32e35a
+source-git-commit: 8689041bffbdd6edb048a1ba50f0ebd82ad740e7
 workflow-type: tm+mt
-source-wordcount: '6605'
+source-wordcount: '6604'
 ht-degree: 98%
 
 ---
@@ -745,7 +745,6 @@ ht-degree: 98%
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
-      + [简介](/help/forms/home2.md)
       + [顶级 Adobe Experience Manager Forms 创新](/help/forms/latest-innovations.md)
       + [Early Access (EA) 能力](/help/forms/early-access-ea-features.md)
       + [重要更改](/help/forms/notable-changes.md)
