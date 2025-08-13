@@ -54,7 +54,7 @@ AEM as a Cloud Service中Cloud Manager 2025.8.0的发布日期是2025年8月7日
 
      ![创建生产程序时，解决方案和加载项中的Forms加载项](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *在程序创建过程中，您可以在Sites解决方案中选择Forms加载项。*
 
-     编辑生产程序时![Forms加载项](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**编辑程序**中，为Sites程序选择Forms加载项，然后运行管道以在环境中激活它。*
+     编辑生产程序时![Forms加载项](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**编辑程序**&#x200B;中，为Sites程序选择Forms加载项，然后运行管道以在环境中激活它。*
 
      有关详细信息，请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 
@@ -68,10 +68,10 @@ AEM as a Cloud Service中Cloud Manager 2025.8.0的发布日期是2025年8月7日
 
 当最新的客户源代码未如预期运行时，可迅速回滚至先前的部署，无需重新运行完整管道或手动回退提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**选项。*
+![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**&#x200B;选项。*
 
 ![“还原先前部署的代码”对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
+*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
 
 ![恢复激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager 会将环境回滚至较早的构建版本，保留内容和配置不变，并在部署完成前将该环境标记为&#x200B;**还原中**。*
@@ -157,7 +157,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![过滤器面板，显示Edge投放和发布投放的新投放类型](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
