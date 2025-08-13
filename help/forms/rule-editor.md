@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 2830f06817b65a2ae059c1381a9d5588b661d74e
 workflow-type: tm+mt
-source-wordcount: '6727'
+source-wordcount: '6649'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service（基础组件） | 本文 |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## 概述 {#overview}
 
@@ -404,7 +404,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ## 写入规则 {#write-rules}
 
-您可以使用可视规则编辑器编写规则&lt;！ — 或代码编辑器>。 首次启动规则编辑器时，它将在可视编辑器模式下打开。 您可以切换到代码编辑器模式并编写规则。 但是，如果在代码编辑器中编写或修改规则，则除非清除代码编辑器，否则无法切换到该规则的可视编辑器。 当您下次启动规则编辑器时，它将在您最后创建规则时使用的模式下打开。
+您可以使用可视规则编辑器编写规则。
 
 我们首先看一下如何使用可视编辑器编写规则。
 
@@ -537,7 +537,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -641,7 +641,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 要创建客户端库并将其添加到CRX存储库中，请执行以下步骤：
 
-1. 创建客户端库。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing)。
+1. 创建客户端库。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 1. 在CRXDE中，将字符串类型值为`categories`的属性`customfunction`添加到`clientlib`文件夹中。
 
    >[!NOTE]
@@ -651,7 +651,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存储库中添加客户端库后，在自适应表单中使用它。 它可让您在表单中将自定义函数用作规则。 要在自适应表单中添加客户端库，请执行以下步骤：
 
 1. 在编辑模式下打开表单。
-要在编辑模式下打开表单，请选择一个表单，然后选择&#x200B;**[!UICONTROL 打开]**。
+要在编辑模式下打开表单，请选择一个表单，然后选择**[!UICONTROL 打开]**。
 1. 在编辑模式下，选择一个组件，然后选择![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后选择![cmppr](assets/configure-icon.svg)。
 1. 在侧栏中的“Name of Client Library”（客户端库名称）下，添加您的客户端库。 （示例中为`customfunction`。）
 

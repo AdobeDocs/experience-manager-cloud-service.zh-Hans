@@ -1,13 +1,13 @@
 ---
 title: 关于Experience Hub
-description: 了解AEM Experience Hub页面。
+description: 了解Adobe Experience Hub页面。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f02457a115d00262b61f09769b9ac0e210942059
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 7%
@@ -16,11 +16,11 @@ ht-degree: 7%
 
 # 关于Experience Hub {#aem-experience-hub}
 
-Experience Hub引入了一个集中化的起点，以便在Adobe Experience Manager中管理内容、资源和站点。 Experience Hub旨在提供个性化的体验，可让您根据自己的角色和目标无缝导航AEM生态系统。 作为指南，它可以提供关键洞察和建议操作，帮助您高效实现目标。Experience Hub布局清晰、以人物为导向，可确保快速访问基本工具，从而支持在所有AEM功能中实现简化而有效的体验。
+Experience Hub引入了一个集中化的起点，以便在Adobe Experience Manager中管理内容、资源和站点。 Experience Hub旨在提供个性化体验，可让您根据自己的角色和目标，无缝导航AEM生态系统。 作为指南，它可以提供关键洞察和建议操作，帮助您高效实现目标。Experience Hub布局清晰、以人物为导向，可确保快速访问基本工具，支持在所有AEM功能中实现简化而有效的体验。
 
 观看重新构建的AEM Experience Hub工作区的快速导览（1分钟27秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463277?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
