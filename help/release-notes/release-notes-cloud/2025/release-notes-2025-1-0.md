@@ -180,7 +180,7 @@ Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Ado
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 
