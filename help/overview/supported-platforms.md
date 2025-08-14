@@ -64,4 +64,4 @@ Adobe Experience Manager 用户界面可在以下客户端平台上使用，具�
 
 浏览器对 AEM 渲染的网站的支持取决于 AEM 页面模板、块、设计和组件输出的实施。因此，实施网站项目的开发人员最终可以控制网站的兼容性。
 
-AEM [项目样板代码、](https://www.aem.live/developer/ue-tutorial#create-github-project)[核心组件](/help/implementing/developing/components/overview.md#aem-core-components)和 [WKND 示例网站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)全都与所有现代浏览器兼容。
+AEM [项目样板代码、](https://www.aem.live/developer/ue-tutorial#create-github-project) [核心组件](/help/implementing/developing/components/overview.md#aem-core-components)和 [WKND 示例网站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)全都与所有现代浏览器兼容。
