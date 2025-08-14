@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # 在AEM Forms的通用编辑器界面中导航
 
-[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供了一个用于使用Edge Delivery Services创建AEM Forms的可视化界面。 本指南可帮助您了解用于高效构建表单的界面。
+[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供了一个用于使用Edge Delivery Services创建AEM Forms的可视化界面。 它提供了一种&#x200B;**What You See Is What You Get (WYSIWYG)**&#x200B;体验，可向用户准确显示您的表单的显示方式。
 
 ![通用编辑器界面概述](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## 概述
-
-通用编辑器提供了一个&#x200B;**What You See Is What You Get (WYSIWYG)**&#x200B;体验，该体验向用户准确显示您的表单的显示方式。 无论您是刚开始构建团队还是经验丰富的开发人员，本指南都将帮助您：
+本指南可帮助您了解用于高效构建表单的界面。 无论您是刚开始构建团队还是经验丰富的开发人员，本指南都将帮助您：
 
 **学习基本技能：**
 
@@ -37,6 +35,8 @@ ht-degree: 4%
 - 从概念到发布的构建表单
 - 跨设备测试和预览表单
 - 与团队成员协作处理表单项目
+
+
 
 ## 快速入门
 
@@ -378,7 +378,7 @@ ht-degree: 4%
 
 +++
 
-+++Collaboration工具
++++Collaboration Tools
 
 #### **任务管理**
 

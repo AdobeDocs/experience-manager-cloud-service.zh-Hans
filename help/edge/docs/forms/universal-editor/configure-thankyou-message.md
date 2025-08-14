@@ -4,7 +4,7 @@ description: 了解如何向用户显示感谢消息或重定向到表单作者�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -96,7 +96,7 @@ ht-degree: 0%
      — 我们的团队将在2个工作日内审核您的提交
      — 如果需要其他信息，我们将直接联系您
     
-    **需要帮助?**&#x200B;通过support@example.com联系我们的支持团队
+    **需要帮助?**通过support@example.com联系我们的支持团队
 
 ## 配置重定向URL
 

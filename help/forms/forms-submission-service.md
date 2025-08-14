@@ -5,12 +5,10 @@ keywords: Forms提交服务， Edge Delivery Services forms，电子表格集成
 feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -115,7 +113,7 @@ Forms提交服务具备多项优势可简化数据收集：
 
 >[!TIP]
 >
->**是Edge Delivery Services的新用户？**&#x200B;从[入门教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)开始，设置您的项目基础。
+>**是Edge Delivery Services的新用户？**&#x200B;从[入门教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)开始，设置您的项目基础。
 
 ## 配置方法
 
@@ -135,7 +133,7 @@ Forms提交服务提供了两种配置方法。 选择最适合您的工作流�
 
 在配置任一方法之前，请确保您的AEM项目基础已准备就绪：
 
-1. **使用最新的自适应AEM块创建或更新您的Forms项目** （[入门教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）
+1. **使用最新的自适应AEM块创建或更新您的Forms项目** （[入门教程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)）
 
 2. **更新项目根目录中的`fstab.yaml`**：
 
@@ -147,6 +145,8 @@ Forms提交服务提供了两种配置方法。 选择最适合您的工作流�
 
 
 3. **与**&#x200B;共享您的项目文件夹`forms@adobe.com`（需要编辑权限）
+
++++
 
 +++
 
@@ -168,7 +168,7 @@ Forms提交服务提供了两种配置方法。 选择最适合您的工作流�
 1. **打开您的电子表格平台**(Google Sheets或Microsoft Excel)
 2. **为您的表单项目创建新电子表格**
 3. **为您的工作表命名**（必须为`helix-default`或`shared-aem`）
-4. **使用**&#x200B;表单创建指南[定义您的表单结构](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **使用**&#x200B;表单创建指南[定义您的表单结构](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![表单定义](/help/forms/assets/form-submission-definition.png)
 *示例：具有字段类型、标签和验证规则的表单定义*
@@ -354,7 +354,7 @@ API方法允许开发人员以编程方式将数据提交到Forms提交服务，
 - `Content-Type: application/json`
 - `x-adobe-routing: tier=live,bucket=main--[repository]--[organization]`
 
-**API文档：**&#x200B;[完整API引用](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
+**API文档：**[完整API引用](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
 +++
 
@@ -367,34 +367,34 @@ Postman为测试API提交提供了一个用户友好的界面。
 1. **在Postman中创建新的POST请求**
 2. **配置终结点：** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 3. **替换占位符：**
-
    - `{id}`→您的实际表单ID
    - `[repository]`→您的GitHub存储库名称
    - `[organization]`→您的GitHub组织/用户名
 
 **请求配置：**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+    “&#39;json
+”
+发帖https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Headers:
-Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+标头：
+Content-Type： application/json
+x-adobe-routing： tier=live，bucket=main—your-repo—your-org
 
-Body (JSON):
+正文(JSON)：
 {
-        "data": {
-            "startDate": "2025-01-10",
-            "endDate": "2025-01-25",
-            "destination": "Australia",
-            "class": "First Class",
-            "budget": "2000",
-            "amount": "1000000",
-            "name": "Mary",
-            "age": "35",
-            "subscribe": null,
-            "email": "mary@gmail.com"
-                }
+&quot;data&quot;： {
+“startDate”：“2025-01-10”，
+“endDate”：“2025-01-25”，
+&quot;destination&quot;： &quot;Australia&quot;，
+“班”：“头等舱”，
+“预算”：“2000”，
+&quot;amount&quot;： &quot;1000000&quot;，
+&quot;name&quot;： &quot;Mary&quot;，
+“年龄”：“35”，
+&quot;subscribe&quot;：空，
+&quot;email&quot;： &quot;mary@gmail.com&quot;
+}
 }
 ```
 
@@ -442,9 +442,9 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
->[!TAB Windows命令提示符]
+>[!TAB Windows Command Prompt]
 
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
@@ -475,15 +475,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
 +++
 
-+++ API响应和验证
++++ API Response & Verification
 
-**成功的响应：**
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -580,7 +580,7 @@ Solutions:
 
 +++ 增强您的Forms
 
-- **[创建高级Forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 添加验证、条件逻辑和自定义样式
+- **[创建高级Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 添加验证、条件逻辑和自定义样式
 - **[表单组件指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** — 浏览可用的表单字段类型
 
 +++

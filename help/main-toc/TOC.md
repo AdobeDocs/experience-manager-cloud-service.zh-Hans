@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1095,7 +1095,6 @@ ht-degree: 97%
          + [表单字段验证：向表单添加错误检查](/help/edge/docs/forms/validate-forms.md)
          + [设计精美的表单：样式和自定义指南](/help/edge/docs/forms/style-theme-forms.md)
          + [创建成功消息：自定义表单的感谢页面](/help/edge/docs/forms/thank-you-page-form.md)
-         + [表单提交指南：使用表单提交服务](/help/forms/forms-submission-service.md)
          + [动态表单字段：从 URL 加载选项](/help/edge/docs/forms/load-options-from-url.md)
          + [添加智能行为：表单规则和逻辑指南](/help/edge/docs/forms/rules-forms.md)
          + [高级表单验证：正则表达式指南](/help/edge/docs/forms/regex-forms.md)
@@ -1106,6 +1105,7 @@ ht-degree: 97%
          + [构建自定义表单组件：开发人员指南](/help/edge/docs/forms/custom-components-forms.md)
          + [监测表单性能：操作遥测指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [表单提交指南：使用表单提交服务](/help/forms/forms-submission-service.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
