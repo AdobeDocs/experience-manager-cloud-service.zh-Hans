@@ -4,9 +4,9 @@ description: 了解“生成变体”，该功能可通过 AEM as a Cloud Servic
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: ht
-source-wordcount: '1416'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '1417'
 ht-degree: 100%
 
 ---
@@ -196,7 +196,7 @@ The brand score shows you how on-brand the generated variation is.
 
 ### 通过 AEM Sidekick 访问基于文档的创作功能 {#access-aem-sidekick}
 
-通过 AEM Sidekick 的访问用于[基于文档的创作](/help/edge/wysiwyg-authoring/authoring.md)。
+通过 AEM Sidekick 的访问用于[基于文档的创作](https://www.aem.live/docs/aem-authoring)。
 
 在访问 Edge Delivery Services 的 Sidekick 的“生成变体”功能之前，需要进行一些配置。
 

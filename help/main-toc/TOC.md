@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8689041bffbdd6edb048a1ba50f0ebd82ad740e7
+source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
 workflow-type: tm+mt
-source-wordcount: '6604'
-ht-degree: 98%
+source-wordcount: '6470'
+ht-degree: 97%
 
 ---
 
@@ -837,7 +837,7 @@ ht-degree: 98%
             + [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [自适应表单中的电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [&#x200B;在 Experience Manager Forms 中管理发布](/help/forms/manage-publication.md)
+            + [在Experience Manager Forms中管理发布](/help/forms/manage-publication.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1065,51 +1065,8 @@ ht-degree: 98%
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery Services 概述](/help/edge/overview.md)
-   + [将 Edge Delivery Services 与 AEM 结合使用](/help/edge/using.md)
-   + [选择创作方法](/help/edge/authoring-methods.md)
-   + 所见即所得的创作 {#wysiwyg-authoring}
-      + [Edge Delivery 的所见即所得内容创作](/help/edge/wysiwyg-authoring/authoring.md)
-      + [针对 Edge Delivery 发布内容](/help/edge/wysiwyg-authoring/publishing.md)
-      + [开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-      + [创建 Blocks](/help/edge/wysiwyg-authoring/create-block.md)
-      + [内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)
-      + [路径映射](/help/edge/wysiwyg-authoring/path-mapping.md)
-      + [表格数据和电子表格](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [所见即所得和基于文档的 Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [包含 DAM 资产的页面](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [跨 Sites 重用代码](/help/edge/wysiwyg-authoring/repoless.md)
-      + [无重复多 Site 管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [无重复的暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [配置 Site 身份验证](/help/edge/wysiwyg-authoring/site-authentication.md)
-      + [WIP Site 功能](/help/edge/wysiwyg-authoring/wip-features.md)
-   + 基于文档的创作 {#document-authoring}
-      + [创作](/help/edge/docs/authoring.md)
-      + [批量元数据](/help/edge/docs/bulk-metadata.md)
-      + [占位符](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
-      + [SharePoint 设置](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack 机器人](/help/edge/docs/slack.md)
-   + 构建应用程序  {#build}
-      + [快速入门——开发人员教程](/help/edge/developer/tutorial.md)
-      + [项目剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [块集合](/help/edge/developer/block-collection.md)
-      + [电子表格](/help/edge/developer/spreadsheets.md)
-      + [Forms](/help/edge/developer/forms.md)
-      + [索引](/help/edge/developer/indexing.md)
-      + [保持 100](/help/edge/developer/keeping-it-100.md)
-      + [标记——部分](/help/edge/developer/markup-sections-blocks.md)
-      + [网站图标](/help/edge/developer/favicon.md)
-      + [自定义标头](/help/edge/docs/custom-headers.md)
-      + [开发人员最佳实践](/help/edge/docs/dev-collab-and-good-practices.md)
-   + 启动应用程序  {#launch}
-      + [上线清单](/help/edge/docs/go-live-checklist.md)
-      + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-      + [Cloudflare Worker 设置](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Akamai 设置](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Fastly 设置](/help/edge/docs/byo-cdn-fastly-setup.md)
-      + [重定向](/help/edge/docs/redirects.md)
+   + [Edge Delivery Services概述](/help/edge/overview.md)
+{#wysiwyg-authoring}
    + 构建表单 {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
       + 所见即所得的创作 {#universal-editor}
@@ -1151,14 +1108,6 @@ ht-degree: 98%
       + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
-   + Edge Delivery 资源 {#resources}
-      + Sidekick {#sidekick}
-         + [使用 Sidekick](/help/edge/docs/sidekick.md)
-         + [安装扩展](/help/edge/docs/sidekick-extension.md)
-         + [Sidekick 库](/help/edge/docs/sidekick-library.md)
-      + [常见问题解答](/help/edge/docs/faq.md)
-      + 工具 {#tools}
-         + [审核日志](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)

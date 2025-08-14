@@ -4,9 +4,9 @@ description: 了解用于扩展Universal Editor功能以支持内容作者需求
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
+>如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
 
 [在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以为每个实例启用或禁用扩展，访问Adobe的第一方扩展（包括通用编辑器的第一方扩展）等等。
 
@@ -59,6 +59,6 @@ ht-degree: 0%
 
 除了UI可扩展性之外，通用编辑器还提供了许多其他灵活的扩展点，以实现自定义业务要求的无缝集成。
 
-* **[块](/help/edge/developer/block-collection.md)**：在简单的JSON格式中，项目可以调整可用于内容创建的块和UE功能。
+* **[块](https://www.aem.live/developer/block-collection)**：在简单的JSON格式中，项目可以调整可用于内容创建的块和UE功能。
 * **[自定义用户界面](#extending-ui)**：扩展可以在侧面板或模式对话框中显示必要的UI。
 * **[事件](/help/implementing/universal-editor/events.md)**：扩展将接收有关作者在页面上的操作和选择的事件，以便做出适当响应。

@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager 用户界面可在以下客户端平台上使用，具�
 
 * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [基于文档的创作](/help/edge/docs/authoring.md)使用 [Sidekick](/help/edge/docs/sidekick.md)
+* [基于文档的创作](https://www.aem.live/docs/aem-authoring)使用 [Sidekick](https://www.aem.live/docs/sidekick)
 
 所有浏览器都用默认的插件和附加功能进行了测试。
 
@@ -64,4 +64,4 @@ Adobe Experience Manager 用户界面可在以下客户端平台上使用，具�
 
 浏览器对 AEM 渲染的网站的支持取决于 AEM 页面模板、块、设计和组件输出的实施。因此，实施网站项目的开发人员最终可以控制网站的兼容性。
 
-AEM [项目样板代码、](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project)[核心组件](/help/implementing/developing/components/overview.md#aem-core-components)和 [WKND 示例网站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)全都与所有现代浏览器兼容。
+AEM [项目样板代码、](https://www.aem.live/developer/ue-tutorial#create-github-project)[核心组件](/help/implementing/developing/components/overview.md#aem-core-components)和 [WKND 示例网站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)全都与所有现代浏览器兼容。

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.8.0 版�
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 98%
 
 此外，现在还支持以下页面管理功能：
 
-* [AEM 标记](/help/sites-cloud/authoring/sites-console/tags.md)可以作为一项[分类法](/help/edge/wysiwyg-authoring/taxonomy.md)导出至 Edge Delivery Services。
+* [AEM 标记](/help/sites-cloud/authoring/sites-console/tags.md)可以作为一项[分类法](https://www.aem.live/docs/authoring-taxonomy)导出至 Edge Delivery Services。
 * Edge Delivery Services 的[模板](/help/sites-cloud/authoring/universal-editor/templates.md)即将推出！
 
 ### 早期采用者计划 {#sites-early-adopter}

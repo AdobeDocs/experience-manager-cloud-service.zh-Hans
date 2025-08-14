@@ -4,9 +4,9 @@ description: 了解通用编辑器的主要用例，以及如何最好地了解�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 如果您有这样的用例，作为紧接着的下一步，请参阅以下文档，全面了解如何在AEM中启动并运行通用编辑器。
 
-1. [使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) — 开始使用AEM中的第一个通用编辑器项目
-1. [创建检测为与通用编辑器一起使用的块](/help/edge/wysiwyg-authoring/create-block.md) — 了解如何检测块以使您的内容可在通用编辑器中编辑
-1. [用于WYSIWYG创作的Edge Delivery Services项目的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md) — 了解关于如何构建块以有效地对您的内容建模以便与通用编辑器一起使用的详细信息。
+1. [使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](https://www.aem.live/developer/ue-tutorial) — 开始使用AEM中的第一个通用编辑器项目
+1. [创建检测为与通用编辑器一起使用的块](https://www.aem.live/developer/universal-editor-blocks) — 了解如何检测块以使您的内容可在通用编辑器中编辑
+1. [用于WYSIWYG创作的Edge Delivery Services项目的内容建模](https://www.aem.live/developer/component-model-definitions) — 了解关于如何构建块以有效地对您的内容建模以便与通用编辑器一起使用的详细信息。
 
 阅读这些文档后，您可以返回本页以了解Headless创作用例以及通用编辑器的常规工作方式。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 通用编辑器的工作方式如下。
 
 1. 开发人员对应用程序或页面进行工具设置，以使用通用编辑器。 此检测告知编辑器哪些内容可编辑以及如何保留内容。
-   * 如果您遵循[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)文档，则您的页面会自动进行检测。
+   * 如果您遵循[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](https://www.aem.live/developer/ue-tutorial)文档，则您的页面会自动进行检测。
    * 对于Headless创作，可以轻松检测您的应用程序。
 1. 内容作者将加载通用编辑器，该编辑器反过来将加载您的页面以进行编辑。 由于它是仪器化的，因此它知道哪些内容可以编辑，以及它如何表示和保留。
 1. 内容作者在直观的WYSIWYG界面中编辑页面内容，并就地编辑。

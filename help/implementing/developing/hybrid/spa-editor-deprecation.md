@@ -4,10 +4,10 @@ description: 尽管SPA编辑器仍受Adobe支持，但请了解它弃用对您�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 1%
+source-wordcount: '915'
+ht-degree: 2%
 
 ---
 
@@ -49,9 +49,9 @@ Adobe通过[2025.01版的AEM as a Cloud Service，](/help/release-notes/release-
 
 最适合替换SPA Editor的替换取决于您的项目需求。
 
-* **[通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)**&#x200B;是直接替换SPA编辑器的最佳工具。
+* **[通用编辑器](https://www.aem.live/docs/aem-authoring)**&#x200B;是SPA编辑器的最佳直接替代。
    * 通用编辑器也是一个可视编辑器，专门为分离实施而设计，融入Adobe从SPA编辑器获得的全部体验。
-   * 此外，还为AEM 6.5[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)发布了通用编辑器(AEM 6.5的发行版本为2024.11.05)，因此除了Cloud Services之外，它还支持AMS和内部部署用例。
+   * 此外，还为AEM 6.5[发布了](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)通用编辑器(AEM 6.5的发行版本为2024.11.05)，因此除了Cloud Services之外，它还支持AMS和内部部署用例。
 * **[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;是首选基于表单的编辑器的替代方法。
    * 将内容结构化为内容片段而非页面时，内容片段编辑器最合适。
 

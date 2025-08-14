@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '618'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '619'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ Edge Delivery Services 还通过提供新的创作选项来提高您的内容创
 
 通用编辑器提供了一种无缝的、所见即所得的创作体验，可用于创作任何内容。
 
-请参阅文档 [Edge Delivery Services 所见即所得内容创作](/help/edge/wysiwyg-authoring/authoring.md)，以了解有关使用通用编辑器进行内容创作的更多信息。
+请参阅文档 [Edge Delivery Services 所见即所得内容创作](https://www.aem.live/docs/aem-authoring)，以了解有关使用通用编辑器进行内容创作的更多信息。
 
 ### 基于文档的创作 {#document-authoring}
 

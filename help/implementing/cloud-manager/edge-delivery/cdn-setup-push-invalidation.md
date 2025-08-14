@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
-workflow-type: ht
-source-wordcount: '172'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -27,6 +27,6 @@ ht-degree: 100%
 | `cdn.prod.host` | `<Production Host>` | 生产网站的主机名。例如 `www.example.com`。 |
 | `cdn.prod.type` | 托管 |   |
 
-在对配置表进行更改后，用户必须使用 [Sidekick 工具](/help/edge/docs/sidekick.md)进行预览并激活，以应用更新。
+在对配置表进行更改后，用户必须使用 [Sidekick 工具](https://www.aem.live/docs/sidekick)进行预览并激活，以应用更新。
 
 另请参阅[关于 Cloud Manager 中的 Edge Delivery 待办事项列表](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。

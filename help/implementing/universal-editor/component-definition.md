@@ -4,10 +4,10 @@ description: 详细了解组件定义与通用编辑器之间的JSON约定。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 >[!TIP]
 >
->有关内容建模过程的概述，请参阅文档[使用Edge Delivery Services项目进行WYSIWYG创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)。
+>有关内容建模过程的概述，请参阅文档[使用Edge Delivery Services项目进行WYSIWYG创作的内容建模。](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->您不需要从头开始创建自己的`component-definition.json`文件。 您用于[引导项目](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)的项目样板包含一个[功能齐全的`component-definition.json`文件](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)，您可以根据自己的需求对其进行调整。
+>您不需要从头开始创建自己的`component-definition.json`文件。 您用于[引导项目](https://www.aem.live/developer/ue-tutorial)的项目样板包含一个[功能齐全的`component-definition.json`文件](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)，您可以根据自己的需求对其进行调整。
 
 ## 示例组件定义 {#example}
 
@@ -83,11 +83,11 @@ ht-degree: 1%
 
 * `title`定义UI中显示的组件的文本说明。
 * `id`唯一标识该组件。
-   * 同一`id`的[组件模型](/help/implementing/universal-editor/field-types.md#model-structure)定义了组件的字段。
+   * 同一[的](/help/implementing/universal-editor/field-types.md#model-structure)组件模型`id`定义了组件的字段。
    * 由于它是唯一的，因此例如可在[筛选器定义](/help/implementing/universal-editor/filtering.md)中使用它来确定可将哪些组件添加到容器中。
 * `model`定义将哪个[模型](/help/implementing/universal-editor/field-types.md#model-structure)与组件一起使用。
    * 因此，模型将在组件定义中集中维护，并且不需要[指定检测。](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * 这允许您跨容器移动组件。
+   * 这样您就能跨容器移动组件。
 * `filter`定义应与组件一起使用的[筛选器](/help/implementing/universal-editor/filtering.md)。
 
 ## `plugins` {#plugins}
