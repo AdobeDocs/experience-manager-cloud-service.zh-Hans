@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 16%
+source-wordcount: '1089'
+ht-degree: 15%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 16%
 
 1. 在&#x200B;**域设置**&#x200B;页面的右上角附近，单击&#x200B;**添加域**。
 
-1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**&#x200B;字段中，输入您正在使用的自定义域名。
+1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
 输入域名时，不要包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -94,13 +94,18 @@ ht-degree: 16%
 >
 >对于由Adobe管理的CDN，在使用DV（域验证）证书时，只允许使用具有ACME验证的站点。
 
-#### 要求 {#adobe-managed-cert-dv-requirements}
 
-请在配置DNS记录之前满足这些要求。
+### 配置DNS{#config-dns}
+
+>[!WARNING]
+>
+>“先注册再广告”原则在此处适用。 即，只有在成功添加域映射&#x200B;*后*&#x200B;才应配置DNS。 这样做可确保Cloud Manager在可以响应其请求之前，识别并验证其自身的配置中是否存在该域。 它还可避免任何域接管尝试。
+
+请确保在配置DNS记录&#x200B;*之前*&#x200B;满足以下要求：
 
 * 如果您还不知道您的域主机或注册商，请确定它。
 * 能够编辑组织域的DNS记录，或联系能够编辑记录的适当人员。
-* 您必须已按照文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述验证配置的自定义域名。
+* 您已按照文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述验证配置的自定义域名。
 
 #### CNAME记录 {#adobe-managed-cert-cname-record}
 
