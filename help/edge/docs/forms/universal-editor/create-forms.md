@@ -290,7 +290,7 @@ ht-degree: 1%
 如果问题仍然存在：
 
 1. 检查Adobe Experience Cloud服务状态。
-2. 查看[Edge Delivery Services文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。
+2. 查看[Edge Delivery Services文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hans)。
 3. 访问[Adobe Experience League社区](https://experienceleaguecommunities.adobe.com/)。
 4. 联系Adobe客户关怀部门。
 
@@ -302,6 +302,6 @@ ht-degree: 1%
 
 - [配置提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)：设置数据处理和集成。
 - [表单数据模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)：将表单连接到后端数据源。
-- [Edge Delivery Services最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)：最大化性能。
+- [Edge Delivery Services最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hans)：最大化性能。
 - [表单分析](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html)：跟踪表单性能和用户行为。
 
