@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 15%
@@ -49,7 +49,7 @@ ht-degree: 15%
 
 1. 在&#x200B;**域设置**&#x200B;页面的右上角附近，单击&#x200B;**添加域**。
 
-1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**&#x200B;字段中，输入您正在使用的自定义域名。
+1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
 输入域名时，不要包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -95,7 +95,7 @@ ht-degree: 15%
 >对于由Adobe管理的CDN，在使用DV（域验证）证书时，只允许使用具有ACME验证的站点。
 
 
-### 配置DNS{#config-dns}
+## 配置DNS{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ ht-degree: 15%
 * 能够编辑组织域的DNS记录，或联系能够编辑记录的适当人员。
 * 您已按照文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述验证配置的自定义域名。
 
-#### CNAME记录 {#adobe-managed-cert-cname-record}
+### CNAME记录 {#adobe-managed-cert-cname-record}
 
 规范名称或 CNAME 记录是一种将别名映射为真实或规范域名的 DNS 记录类型。CNAME 记录通常用于映射子域，例如 `www.example.com` 到托管该子域内容的域。
 
@@ -117,7 +117,7 @@ ht-degree: 15%
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX记录 {#adobe-managed-cert-apex-record}
+### APEX记录 {#adobe-managed-cert-apex-record}
 
 Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的DNS提供商，Apex域配置有`A`、`ALIAS`或`ANAME`记录。 Apex 域必须指向特定的IP地址。
 
