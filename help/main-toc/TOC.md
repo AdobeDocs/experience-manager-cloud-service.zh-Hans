@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: 1eae2bed903a1dace808a85ad984065351f3a41d
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1104,8 +1104,8 @@ ht-degree: 97%
          + [保护您的表单：添加 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [构建自定义表单组件：开发人员指南](/help/edge/docs/forms/custom-components-forms.md)
          + [监测表单性能：操作遥测指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
-      + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [表单提交指南：使用表单提交服务](/help/forms/forms-submission-service.md)
+      + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
