@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 79%
+source-wordcount: '595'
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从[内容片段](/help/sites-cloud/administering/content-fragments/authoring.md)控制台访问）的详细信息，请参阅站点文档&#x200B;**内容片段 — 创作**。
 
 ![Markdown 编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -136,7 +136,7 @@ ht-degree: 79%
 
 您可以创建已排序和未排序的列表。
 
-要创建未排序的列表，请使用 &ast; 符号。例如：
+要创建未排序的列表，请使用 &amp;ast; 符号。例如：
 
     `* item in list`
 
@@ -172,7 +172,7 @@ ht-degree: 79%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-要指示代码跨度，请用反勾号 (&grave;) 将代码换行。与预格式化的代码块不同，代码范围表示普通段落中的代码。
+要指示代码跨度，请用反勾号(`` ` ``)将其换行。 与预格式化的代码块不同，代码范围表示普通段落中的代码。
 
 例如：
 

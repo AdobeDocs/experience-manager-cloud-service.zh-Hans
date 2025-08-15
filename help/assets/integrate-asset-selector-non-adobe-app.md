@@ -3,7 +3,7 @@ title: 将资源选择器与非Adobe或第三方应用程序集成
 description: 将资产选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 9%
@@ -25,7 +25,7 @@ Asset Selector允许您使用各种非Adobe或第三方应用程序进行集成�
 * imsOrg
 * apikey
 
-将资产选择器与非Adobe应用程序集成时，该资产选择器支持使用Identity Management System (IMS)属性（如`imsScope`或`imsClientID`）对[!DNL Experience Manager Assets]存储库进行身份验证。
+将资产选择器与非Adobe应用程序集成时，该资产选择器支持使用Identity Management System (IMS)属性（如[!DNL Experience Manager Assets]或`imsScope`）对`imsClientID`存储库进行身份验证。
 
 ## 为非Adobe应用程序配置资源选择器 {#configure-non-adobe-app}
 
@@ -46,15 +46,15 @@ Asset Selector允许您使用各种非Adobe或第三方应用程序进行集成�
 
 在将Asset Selector与非Adobe应用程序集成时，使用此示例`index.html`文件进行身份验证。
 
-使用`Script`标记访问资产选择器包，如示例`index.html`文件的&#x200B;*第9*&#x200B;行到&#x200B;*第11*&#x200B;行所示。
+使用`Script`标记访问资产选择器包，如示例&#x200B;*文件的*&#x200B;第9 *行到*&#x200B;第11`index.html`行所示。
 
 示例的&#x200B;*行14*&#x200B;到&#x200B;*行38*&#x200B;描述了IMS流属性，如`imsClientId`、`imsScope`和`redirectURL`。 函数要求您至少定义`imsClientId`和`imsScope`属性之一。 如果您没有为`redirectURL`定义值，则使用客户端ID的注册重定向URL。
 
-由于您没有生成`imsToken`，请使用`registerAssetsSelectorsAuthService`和`renderAssetSelectorWithAuthFlow`函数，如示例`index.html`文件的第40行至第50行所示。 使用`renderAssetSelectorWithAuthFlow`之前的`registerAssetsSelectorsAuthService`函数通过资产选择器注册`imsToken`。 [!DNL Adobe]建议在实例化组件时调用`registerAssetsSelectorsAuthService`。
+由于您没有生成`imsToken`，请使用`registerAssetsSelectorsAuthService`和`renderAssetSelectorWithAuthFlow`函数，如示例`index.html`文件的第40行至第50行所示。 使用`registerAssetsSelectorsAuthService`之前的`renderAssetSelectorWithAuthFlow`函数通过资产选择器注册`imsToken`。 [!DNL Adobe]建议在实例化组件时调用`registerAssetsSelectorsAuthService`。
 
-在`const props`部分中定义身份验证和其他Assets as a Cloud Service访问相关的属性，如示例`index.html`文件的&#x200B;*行54*&#x200B;到&#x200B;*行60*&#x200B;所示。
+在`const props`部分中定义身份验证和其他Assets as a Cloud Service访问相关的属性，如示例&#x200B;*文件的*&#x200B;行54 *到*&#x200B;行60`index.html`所示。
 
-*行65*&#x200B;中提到的`PureJSSelectors`全局变量用于呈现Web浏览器中的资产选择器。
+`PureJSSelectors`行65 *中提到的*&#x200B;全局变量用于呈现Web浏览器中的资产选择器。
 
 资产选择器在`<div>`容器元素中呈现，如&#x200B;*行74*&#x200B;到&#x200B;*行81*&#x200B;中所述。 此示例使用对话框来显示资源选择器。
 
@@ -102,6 +102,7 @@ Asset Selector允许您使用各种非Adobe或第三方应用程序进行集成�
         
 
         //function that will render the asset selector
+        function renderAssetSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by asset selector
             }
@@ -113,7 +114,7 @@ Asset Selector允许您使用各种非Adobe或第三方应用程序进行集成�
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
