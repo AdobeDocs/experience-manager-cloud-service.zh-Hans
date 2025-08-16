@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ## 1 — 在Adobe Admin Console中创建新产品配置文件{#create-profile}
 
-1. 按照Experience Platform文档中的[在Adobe Admin Console中创建新产品配置文件](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)中的详细说明操作。
+1. 按照Experience Platform文档中的[在Adobe Admin Console中创建新产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/create-profile)中的详细说明操作。
 
 1. 创建新的产品配置文件时，您可以为AI助手使用以下建议值。
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 将自定义权限分配给产品配置文件的过程遵循标准Adobe Cloud Manager自定义权限工作流程。
 
-参考文章： [将自定义权限分配给新产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+参考文章： [将自定义权限分配给新产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. 在Admin Console中，单击新创建的产品配置文件的名称(`AEM AI Assistant`)
 
