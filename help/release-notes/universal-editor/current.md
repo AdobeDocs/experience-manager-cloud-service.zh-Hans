@@ -1,18 +1,18 @@
 ---
-title: 通用编辑器2025.07.31发行说明
-description: 这些是通用编辑器2025.07.31版的发行说明。
+title: 通用编辑器 2025.07.31 发行说明
+description: 这些是通用编辑器 2025.07.31 版本的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
-# 通用编辑器2025.07.31发行说明 {#release-notes}
+# 通用编辑器 2025.07.31 发行说明 {#release-notes}
 
 这些是通用编辑器 2025 年 7 月 31 日版本的发行说明。
 
@@ -22,15 +22,15 @@ ht-degree: 52%
 
 ## 新增功能 {#what-is-new}
 
-* [身份验证标题工具栏选项](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)保持在[版本2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)中引入的功能切换之后
-   * 但是，现在默认启用它。
-* [RTE早期采用者的新功能](#new-rte)
+* [身份验证标头工具栏选项](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)仍然隐藏在[发行版本 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md) 中引入的功能切换后面。
+   * 但现在此功能在默认情况下启用。
+* 为 [RTE 早期采用者](#new-rte)提供的新功能
    * 添加了深色模式支持。
    * 添加了文本对齐支持。
-      * 默认情况下处于禁用状态，并且仅适用于Headless项目
+      * 默认情况下被停用，仅适用于无头项目
    * 添加了缩进支持。
-      * 默认情况下处于禁用状态，并且仅适用于Headless项目
-   * 现在在Shift+Enter键上插入分隔符(`<br>`)。
+      * 默认情况下被停用，仅适用于无头项目
+   * 现在，按 shift+enter 键可插入中断 (`<br>`)。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -49,12 +49,12 @@ ht-degree: 52%
 
 ## 其他改进 {#other-improvements}
 
-* 早期采用者RTE的修复
-   * 按Enter键现在会在列表内创建一个新的列表项(`<li>`)。
-* 使用远程DAM时，视频现在可以正确更新。
-* 为6.5 LTS添加了服务支持。
+* 为早期采用者 RTE 所做的错误修复
+   * 现在，在列表中按回车键会创建一个新的列表项 (`<li>`)。
+* 现在，使用远程 DAM 时，视频可以正确更新。
+* 为 6.5 LTS 增加了服务支持。
 
 ## 弃用 {#deprecations}
 
-* `text-input`和`text-area`组件已正式在[版本2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)中弃用
+* `text-input` 和 `text-area` 组件已在[发行版本 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md) 中正式弃用。
    * 在 `model-definition.json` 中，请使用文本组件为属性面板创建文本输入字段。

@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1619'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 99%
 * SITES-33678：为 SITES-33529 添加切换功能。
 * SITES-33468：AEMaaCS 无法连接到 ACS。
 
-### 更改功能 {#altered-functionality-21772}
+### 改变的功能 {#altered-functionality-21772}
 
 * SITES-26344：统一端点之间 `fragmentId`/`modelId` 的验证 - 这些 ID 经过验证，如果无效，就会返回 400 状态代码。
 * SITES-29598：更新内容片段模型时，验证片段引用字段中添加的内容片段引用。
