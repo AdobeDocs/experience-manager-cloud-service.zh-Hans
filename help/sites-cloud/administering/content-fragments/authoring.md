@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 70%
@@ -35,7 +35,7 @@ ht-degree: 70%
 
 >[!WARNING]
 >
->此部分中描述的编辑器在[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)中仅为&#x200B;*可用*；因此&#x200B;*联机* Adobe Experience Manager (AEM) as a Cloud Service，而不是本地实例。
+>此部分中描述的编辑器在&#x200B;*Unified Shell*&#x200B;中仅为[可用](/help/overview/aem-cloud-service-on-unified-shell.md)；因此&#x200B;*联机* Adobe Experience Manager (AEM) as a Cloud Service，而不是本地实例。
 
 ## 内容片段编辑器 {#content-fragment-editor}
 
@@ -178,7 +178,7 @@ ht-degree: 70%
 
     >[！NOTE]
     >
-    >您无法删除&#x200B;**Main**.
+    >您无法删除**Main**.
 
 1. 选择变体。
 
@@ -267,7 +267,7 @@ ht-degree: 70%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
@@ -354,9 +354,9 @@ ht-degree: 70%
 
 * 通过管理API或投放API，不会公开任何资产元数据。 您必须使用资源元数据API来检索资源元数据详细信息：
 
-   * 单个资源元数据： [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+   * 单个资源元数据： [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * 使用搜索API（实验性）获取批量元数据信息： [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * 使用搜索API（实验性）获取批量元数据信息： [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
@@ -493,7 +493,7 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->这些注释在原始编辑器[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不可见，在Assets控制台的[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中不可见。
+>这些注释在原始编辑器[中不可见，在Assets控制台的](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)时间轴[中不可见。](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)
 
 ## 预览您的片段 {#preview-content-fragment}
 
@@ -502,7 +502,7 @@ ht-degree: 70%
 要使用此功能，您首先需要：
 
 * 与您的 IT 团队一起设置外部前端应用程序，该应用程序将使用其 JSON 输出来渲染内容片段。
-* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型[&#128279;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的属性。
+* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型[的](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)属性。
 
 在定义 URL 后，**预览**&#x200B;按钮将处于活动状态。您可以选择此按钮来启动外部应用程序（在单独的选项卡中）以渲染内容片段。
 

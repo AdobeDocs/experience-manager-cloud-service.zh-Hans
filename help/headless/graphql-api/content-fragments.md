@@ -4,10 +4,10 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '5981'
-ht-degree: 92%
+source-wordcount: '5984'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ GraphQL 是：
 
   请参阅[探索 GraphQL](https://www.graphql.com)。
 
-* *“...一种数据查询语言和规范，由 Facebook 在 2012 年内部开发，然后在 2015 年公开开源发布。它提供了对基于 REST 的架构的替代，其目的是为了提高开发人员的工作效率并尽可能减少传输的数据量。GraphQL 已由各种规模的数百家组织用于生产环境中...”*
+* *“...一种数据查询语言和规范，由 Facebook 在 2012 年内部开发，然后在 2015 年公开开源发布。它提供了对基于REST的体系结构的替代，目的是提高开发人员的工作效率并最大限度地减少传输的数据量。 GraphQL 已由各种规模的数百家组织用于生产环境中...”*
 
   请参阅 [GraphQL 基础](https://foundation.graphql.org/)。
 
@@ -109,7 +109,7 @@ GraphQL 使用以下对象：
 
 * **[条目列表](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Dispatcher 和 CDN 缓存](/help/headless/graphql-api/persisted-queries.md)。
+AEM提供将查询（两种类型）转换为[持久化查询的功能，可由Dispatcher和CDN缓存](/help/headless/graphql-api/persisted-queries.md)。
 
 ### GraphQL 查询最佳实践（Dispatcher 和 CND） {#graphql-query-best-practices}
 
@@ -173,7 +173,7 @@ GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构�
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为执行此操作，客户端必须获取包含查询所需的所有类型的[架构](#schema-generation)。
 
-对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**&#x200B;[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
+对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
 
 >[!CAUTION]
 >
@@ -375,7 +375,7 @@ ID字段还可用作在AEM GraphQL中的标识符。 它表示AEM存储库中内
 >[!NOTE]
 >
 >**普通和数组元数据之间的不同**
->&#x200B;>请记住，`StringMetadata` 和 `StringArrayMetadata` 均引用存储在存储库中的内容，而非您如何检索它们。
+>>请记住，`StringMetadata` 和 `StringArrayMetadata` 均引用存储在存储库中的内容，而非您如何检索它们。
 >
 >举例而言，通过调用 `stringMetadata` 字段，您应该以 `String` 的形式收到存储在存储库中所有元数据的数组，如果您调用 `stringArrayMetadata`，则会以 `String[]` 的形式收到存储在存储库中所有元数据的数组。
 
@@ -959,7 +959,7 @@ GraphQL 中的解决方案意味着您可以：
 
    * `_smartCrops`属性公开可用于特定资源的智能裁剪配置
 
-   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[&#128279;](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1170,7 +1170,7 @@ query allTeams {
 
   >[!NOTE]
   >
-  >然后，需要在客户端基于[资产交付API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)构建完整URL。
+  >然后，需要在客户端基于[资产交付API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)构建完整URL。
 
 * 只有&#x200B;*个已批准*&#x200B;的资源可供远程存储库引用
 * 如果从远程存储库中删除引用的资产，这将导致内容片段资产引用损坏。
