@@ -64,7 +64,7 @@ headers: {
     }
 ```
 
-要调用交付API，需要`Authorization`详细信息中的IMS令牌以交付受限制的资产。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以生成IMS令牌并在投放API请求标头中正确使用它。
+要调用交付API，需要`Authorization`详细信息中的IMS令牌以交付受限制的资产。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以生成IMS令牌并在投放API请求标头中正确使用它。
 
 
 要查看请求示例、响应示例和响应代码，请参阅[交付API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)。
