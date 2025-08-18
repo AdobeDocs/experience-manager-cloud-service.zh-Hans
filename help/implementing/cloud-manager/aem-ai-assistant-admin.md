@@ -136,7 +136,7 @@ AEM AI Assistant的配置过程包含以下步骤：
    ![将用户添加到此用户组页面](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. 在页面的右下角，单击&#x200B;**保存**。
-1. 现在，将产品配置文件分配给用户组](#assign-product-profile)。
+1. 现在，将产品配置文件分配给用户组&rbrack;(#assign-product-profile)。
 
 >[!TAB 批量添加用户]
 
@@ -144,7 +144,7 @@ AEM AI Assistant的配置过程包含以下步骤：
 
 1. 准备包含用户信息的CSV文件。
 1. 使用&#x200B;**`Add users by CSV`**&#x200B;选项进行高效的批量添加。
-1. 现在，将产品配置文件分配给用户组](#assign-product-profile)。
+1. 现在，将产品配置文件分配给用户组&rbrack;(#assign-product-profile)。
 
 >[!ENDTABS]
 
