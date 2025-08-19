@@ -224,7 +224,7 @@ OSGi 属性：
 
 ### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-**Java 11 运行时环境*- 现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
+**Java 11 运行时环境*- 现已弃用，大多数环境已经升级到性能更高的 &#x200B;** Java 21 运行时环境**。
 
 如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
