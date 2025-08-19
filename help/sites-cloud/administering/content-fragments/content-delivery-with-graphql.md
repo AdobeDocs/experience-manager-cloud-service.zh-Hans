@@ -5,10 +5,10 @@ feature: Content Fragments, GraphQL API
 role: Developer, Architect
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 100%
+source-wordcount: '736'
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 >
 >GraphQL 当前用于 Adobe Experience Manager (AEM) as a Cloud Service 中的两种（分隔的）场景：
 >
->* [AEM Commerce 通过 GraphQL 使用来自 Commerce 平台的数据](/help/commerce-cloud/integrating/magento.md)。
+>* [AEM Commerce通过GraphQL使用来自commerce平台的数据。](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* [AEM 内容片段与 AEM GraphQL API（一种自定义实现，基于标准 GraphQL）配合使用，提供结构化内容用于您的应用程序](/help/headless/graphql-api/content-fragments.md)。
 
 ## Headless CMS {#headless-cms}
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 在 AEM 中创作内容片段时，这意味着：
 
-* 您可以使用内容片段来创作主要不打算在格式化页面上直接发布 (1:1) 的内容。
+* 您可以使用内容片段来创作主要不打算在格式化页面上直接发布(1:1)的内容。
 
 * 您的内容片段的内容将以预先确定的方式构建 – 根据内容片段模型。这简化了对应用程序的访问，这将进一步处理您的内容。
 
@@ -81,7 +81,7 @@ AEM GraphQL API 实施基于 [GraphQL Java 库](https://graphql.org/code/#java)�
 
 这些[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)：
 
-* 一旦&#x200B;**启用**，用于生成[模式](https://graphql.org/learn/schema/)。
+* 一旦&#x200B;**启用**，用于生成[架构](https://graphql.org/learn/schema/)。
 
 * 提供 GraphQL 所需的数据类型和字段。它们确保您的应用程序仅请求可能的内容，并接收预期内容。
 
@@ -115,4 +115,4 @@ AEM GraphQL API 实施基于 [GraphQL Java 库](https://graphql.org/code/#java)�
 
 ## 教程 – AEM Headless 和 GraphQL 快速入门
 
-正在寻找实践教程？请查看 [AEM Headless 和 GraphQL 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)端到端教程，其中说明了在 Headless CMS 场景中，如何使用 AEM GraphQL API 构建和公开内容并由外部应用程序使用。
+正在寻找实践教程？请查看 [AEM Headless 和 GraphQL 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)端到端教程，其中说明了在 Headless CMS 场景中，如何使用 AEM GraphQL API 构建和公开内容并由外部应用程序使用。

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83c3c9189fe7885ee260eceaea0d53ca3e0f4b4a
+source-git-commit: 1aa9e870df5eae6045bb7fb082d084e9b6821e55
 workflow-type: tm+mt
-source-wordcount: '6486'
+source-wordcount: '6497'
 ht-degree: 97%
 
 ---
@@ -1025,47 +1025,52 @@ ht-degree: 97%
    + [Screens as a Cloud Service 常见问题](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [简介和概述](/help/commerce-cloud/introduction.md)
-   + [CIF 简介](/help/commerce-cloud/cif-introduction.md)
-   + [对 AEM Content and Commerce as a Cloud Service 的重要更改](/help/commerce-cloud/changes.md)
-   + Commerce 历程  {#journeys}
-      + 内容创作历程  {#author}
-         + [AEM Content and Commerce 内容创作历程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
-         + [CIF 创作快速入门](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-         + [管理产品目录页面和模板](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
-         + [构建分阶段的产品目录体验](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
-         + [构建产品体验](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
-   + 集成 {#integrations}
-      + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [实时搜索 CIF 组件](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [实时搜索弹出框 CIF 组件](/help/commerce-cloud/integrating/live-search-popover.md)
-      + [第三方商业解决方案](/help/commerce-cloud/integrating/third-party.md)
-      + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-   + AEM 店面 {#storefront}
-      + [快速入门](/help/commerce-cloud/getting-started.md)
-      + 创作 {#authoring}
-         + [Commerce 体验](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-         + [产品 Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-         + [多模板使用](/help/commerce-cloud/authoring/multi-template-usage.md)
-         + [用关联内容扩充产品数据](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
-         + [产品推荐](/help/commerce-cloud/authoring/product-recommendations.md)
-      + 管理  {#administering}
-         + [多存储设置](/help/commerce-cloud/configuring/multi-store-setup.md)
-         + [多商务系统设置](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
-         + [配置 SEO 的 URL](/help/commerce-cloud/configuring/advanced-url-configuration.md)
-         + [缓存选项](/help/commerce-cloud/configuring/caching.md)
-         + [自定义 HTTP 标头](/help/commerce-cloud/configuring/custom-http-headers.md)
-         + [购物车和 Dispatcher 设置](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [组件和 GraphQL 清除缓存](/help/commerce-cloud/configuring/clear-cache.md)
-      + 开发 {#developing}
-         + [使用 AEM Cloud Service SDK 进行开发](/help/commerce-cloud/develop.md)
-         + [设置 CIF 组件的样式](/help/commerce-cloud/customizing/style-cif-component.md)
-         + [自定义 CIF 组件](/help/commerce-cloud/customizing/customize-cif-components.md)
-         + [使用 CIF 目录选取器](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [CIF 产品轮播的自定义属性](/help/commerce-cloud/customizing/product-carousel.md)
-         + [JSON-LD 元数据](/help/commerce-cloud/customizing/json-ld.md)
-   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
-   + [迁移](/help/commerce-cloud/migration.md)
-   + [常见问题解答](/help/commerce-cloud/faq.md)
+   + Edge Delivery Services店面 {#edge-storefront}
+      + [简介](/help/commerce-cloud/edge-storefront/introduction.md)
+   + 第三方店面 {#thrid-party-storefront}
+      + [简介](/help/commerce-cloud/third-party-storefront/introduction.md)
+   + CIF店面 {#cif-storefront}
+      + [CIF 简介](/help/commerce-cloud/cif-storefront/introduction.md)
+      + [对 AEM Content and Commerce as a Cloud Service 的重要更改](/help/commerce-cloud/cif-storefront/changes.md)
+      + Commerce 历程  {#journeys}
+         + 内容创作历程  {#author}
+            + [AEM Content and Commerce 内容创作历程](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/overview.md)
+            + [CIF 创作快速入门](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)
+            + [管理产品目录页面和模板](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+            + [构建分阶段的产品目录体验](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+            + [构建产品体验](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+      + 集成 {#integrations}
+         + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+         + [实时搜索 CIF 组件](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
+         + [实时搜索弹出框 CIF 组件](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)
+         + [第三方商业解决方案](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
+         + [Experience Platform](/help/commerce-cloud/cif-storefront/integrating/aep.md)
+      + AEM 店面 {#storefront}
+         + [快速入门](/help/commerce-cloud/cif-storefront/getting-started.md)
+         + 创作 {#authoring}
+            + [Commerce 体验](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
+            + [产品 Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
+            + [多模板使用](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+            + [用关联内容扩充产品数据](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
+            + [产品推荐](/help/commerce-cloud/cif-storefront/authoring/product-recommendations.md)
+         + 管理  {#administering}
+            + [多存储设置](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+            + [多商务系统设置](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
+            + [配置 SEO 的 URL](/help/commerce-cloud/cif-storefront/configuring/advanced-url-configuration.md)
+            + [缓存选项](/help/commerce-cloud/cif-storefront/configuring/caching.md)
+            + [自定义 HTTP 标头](/help/commerce-cloud/cif-storefront/configuring/custom-http-headers.md)
+            + [购物车和 Dispatcher 设置](/help/commerce-cloud/cif-storefront/configuring/shopping-cart-dispatcher.md)
+            + [组件和 GraphQL 清除缓存](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
+         + 开发 {#developing}
+            + [使用 AEM Cloud Service SDK 进行开发](/help/commerce-cloud/cif-storefront/develop.md)
+            + [设置 CIF 组件的样式](/help/commerce-cloud/cif-storefront/customizing/style-cif-component.md)
+            + [自定义 CIF 组件](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md)
+            + [使用 CIF 目录选取器](/help/commerce-cloud/cif-storefront/customizing/use-cif-pickers.md)
+            + [CIF 产品轮播的自定义属性](/help/commerce-cloud/cif-storefront/customizing/product-carousel.md)
+            + [JSON-LD 元数据](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+      + [Adobe Commerce PWA Studio](/help/commerce-cloud/cif-storefront/pwa-studio/getting-started.md)
+      + [迁移](/help/commerce-cloud/cif-storefront/migration.md)
+      + [常见问题解答](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services概述](/help/edge/overview.md)
 {#wysiwyg-authoring}
