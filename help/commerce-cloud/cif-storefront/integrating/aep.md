@@ -22,11 +22,11 @@ ht-degree: 1%
 
 # AEM-CIF核心组件与Adobe Experience Platform集成 {#aem-cif-aep-integration}
 
-[Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components)核心组件提供与[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html)的无缝集成，以便从客户端交互（如&#x200B;__添加到购物车__）转发店面事件及其数据。
+[Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components)核心组件提供与[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=zh-Hans)的无缝集成，以便从客户端交互（如&#x200B;__添加到购物车__）转发店面事件及其数据。
 
 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)项目提供了一个名为[Adobe Experience Platform connector for Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)的JavaScript库，用于从Commerce店面收集事件数据。 该事件数据会被发送到Experience Platform，并在其他Adobe Experience Cloud产品(如Adobe Analytics和Adobe Target)中使用，以构建涵盖客户历程的360度个人资料。 通过将Commerce数据连接到Adobe Experience Cloud中的其他产品，您可以执行分析网站上的用户行为、执行AB测试以及创建个性化营销活动等任务。
 
-详细了解[Experience Platform数据收集](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)成套技术，这些技术允许您从客户端源收集客户体验数据。
+详细了解[Experience Platform数据收集](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=zh-Hans)成套技术，这些技术允许您从客户端源收集客户体验数据。
 
 ## 将`addToCart`事件数据发送到Experience Platform {#send-addtocart-to-aep}
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 使用本地开发环境完成此演示。 这包括一个AEM正在运行的实例，该实例已配置并连接到Adobe Commerce实例。 查看[使用AEM as a Cloud Service SDK设置本地开发的要求和步骤。](/help/commerce-cloud/cif-storefront/develop.md)
 
-您还需要访问[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html)和权限以创建用于数据收集的架构、数据集和数据流。 有关详细信息，请参阅[权限管理。](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)
+您还需要访问[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=zh-Hans)和权限以创建用于数据收集的架构、数据集和数据流。 有关详细信息，请参阅[权限管理。](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=zh-Hans)
 
 ## AEM Commerce as a Cloud Service设置 {#aem-setup}
 
@@ -366,7 +366,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!TIP]
 >
->有关详细信息，请参阅架构组合[的](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)基础知识。
+>有关详细信息，请参阅架构组合[的](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans)基础知识。
 
 ### 创建数据集 {#create-dataset}
 
@@ -392,7 +392,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!TIP]
 >
->有关详细信息，请参阅[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)。
+>有关详细信息，请参阅[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hans)。
 
 
 ### 创建数据流 {#create-datastream}
@@ -419,7 +419,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!TIP]
 >
->有关详细信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。
+>有关详细信息，请参阅[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。
 
 ## 将数据流值添加到AEM Commerce配置 {#add-aep-values-to-aem}
 
@@ -494,6 +494,6 @@ __配置文件XDM事件&#x200B;:__
 有关更多信息，请参阅以下资源：
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] 概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
-- [[!DNL Data Connection] 个事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
-- [Adobe Experience Platform概述](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+- [[!DNL Data Connection] 概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=zh-Hans)
+- [[!DNL Data Connection] 个事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=zh-Hans)
+- [Adobe Experience Platform概述](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hans)

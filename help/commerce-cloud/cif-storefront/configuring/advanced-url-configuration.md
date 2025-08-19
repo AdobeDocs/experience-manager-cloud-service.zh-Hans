@@ -258,5 +258,5 @@ CIF URL提供程序的某些功能仅适用于使用对类别上下文进行编�
 ## 其他资源 {#additional}
 
 * [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM资源映射](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [AEM资源映射](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

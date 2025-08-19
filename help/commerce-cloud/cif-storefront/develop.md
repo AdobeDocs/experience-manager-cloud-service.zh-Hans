@@ -37,13 +37,13 @@ CIF加载项是作为Sling功能存档提供的。 软件分发门户上提供�
 >[!TIP]
 >
 >**是AEM as a Cloud Service新用户？**
->&#x200B;>查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+>&#x200B;>查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hans)
 
 ### 所需的软件 {#required-software}
 
 下列内容应本地安装：
 
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans#download-the-aem-as-a-cloud-service-sdk)
 * [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/)（3.3.9 或更新版本）
 * [Node.js v10+](https://nodejs.org/en)
