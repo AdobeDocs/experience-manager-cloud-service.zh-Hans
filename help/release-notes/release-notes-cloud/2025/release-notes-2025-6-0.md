@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.6.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.6.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
+source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 98%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -32,15 +33,11 @@ ht-degree: 98%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- 
+## 发布视频 {#release-video}
 
-## Release Video {#release-video}
+请查看 2025 年 6 月发布概述视频，了解 2025.6.0 版本中新增功能摘要：
 
-Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +67,7 @@ Adobe 会定期审查功能、库、API 和配置，以确保它们符合性能�
 
 展开下方列表，查看已弃用且不得再使用的 API 和 OSGi 配置。如需了解全部详情（包括移除时间表），请参阅弃用文章。
 
-+++展开以查看弃用项
++++展开以查看弃用内容
 
 Java API：
 
