@@ -37,7 +37,7 @@ CIF加载项是作为Sling功能存档提供的。 软件分发门户上提供�
 >[!TIP]
 >
 >**是AEM as a Cloud Service新用户？**
->>查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+>&#x200B;>查看[有关使用AEM as a Cloud Service SDK设置本地开发环境的更详细指南。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 ### 所需的软件 {#required-software}
 
