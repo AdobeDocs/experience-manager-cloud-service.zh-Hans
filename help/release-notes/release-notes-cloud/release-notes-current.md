@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
 workflow-type: tm+mt
 source-wordcount: '2269'
-ht-degree: 48%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 48%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.7.0)的发布日期是2025年8月7日。 下一个功能版本(2025.8.0)计划于2025年8月28日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.7.0) 的发布日期为 2025 年 8 月 7 日。下一个功能版本 (2025.8.0) 计划于 2025 年 8 月 28 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -40,7 +40,7 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,83 +48,83 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites 的新增功能 {#enhancements-sites}
 
-* 现在，您可以在一次操作中复制具有引用的片段（子项）的内容片段。 这允许重复使用现有的内容片段结构来创建新内容。
-* 在内容片段管理UI中，您现在可以查看内容片段的工作流状态，以及有关所选片段过去和当前运行的工作流的详细信息。
-* 重命名或移动Live Copy源页面现在会触发重新发布相应地重命名或移动的Live Copy页面。
+* 现在，您可以在一次操作中复制内容片段及其引用的片段（子片段）。这样就可以重复使用现有的内容片段结构来创建新内容。
+* 在内容片段管理界面中，您现在可以查看内容片段的工作流状态，其中包含关于所选片段的过去和当前正在运行的工作流的详细信息。
+* 现在，重命名或移动实时副本的源页面将触发重新发布相应的被重命名或被移动的实时副本页面。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**将形状添加到Dynamic Media模板**
+**将形状添加到动态媒体模板**
 
-您现在可以[将形状图层添加到Experience Manager Assets中的Dynamic Media模板](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas)。 与图像和文本图层类似，形状图层也支持通过模板URL进行实时更新的参数。 您还可以在模板中包含指向形状的call-to-action (CTA)链接。
+您现在可以在 Experience Manager Assets 中[将形状图层添加到动态媒体模板](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas)。与图像和文本图层类似，形状图层支持使用参数通过模板 URL 进行实时更新。您还可以在模板的形状中添加行动号召 (CTA) 链接。
 
-![向Dynamic Media模板添加形状](/help/assets/assets/enable-uniform-radius-shape.png)
+![将形状添加到动态媒体模板](/help/assets/assets/enable-uniform-radius-shape.png)
 
-**AI生成的元数据增强**
+**AI 生成的元数据增强功能**
 
-AEM Assets现在使您能够[在“资源浏览”页面的“卡片视图”或“列表视图”中](/help/assets/smart-tags.md#configure-ai-generated-titles)配置资源标题的显示。 您可以选择显示您定义的资源标题、使用AI生成的标题，或者仅在资源没有现有标题时使用人工智能生成的标题。
+现在，AEM Assets 允许您在资产浏览页面上[配置卡片视图或列表视图中资产标题的显示方法](/help/assets/smart-tags.md#configure-ai-generated-titles)。您可以选择显示您定义的资产标题、用 AI 生成的标题，或者仅在资产缺少标题时使用 AI 生成的标题。
 
-![配置AI生成的标题](/help/assets/assets/configure-title-ai-generated.png)
+![配置 AI 生成的标题](/help/assets/assets/configure-title-ai-generated.png)
 
-您现在还可以选择在文件夹级别禁用AI生成的元数据。
+您现在还可以选择在文件夹级别禁用 AI 生成的元数据。
 
-### Content Hub 的新增强功能 {#new-features-content-hub}
+### Content Hub 的新功能 {#new-features-content-hub}
 
-**在Content Hub中增强了品牌灵活性**
+**增强了 Content Hub 中的品牌化灵活性**
 
-在现有个性化功能的基础上，Content Hub现在允许管理员通过添加自定义徽标图像来进一步定制其部署。 还增加了对TIFF文件格式的支持，用于横幅和徽标图像，从而实现了更大的设计灵活性。
+在现有的个性化功能的基础上，Content Hub 现在允许管理员通过添加自定义徽标图像来进一步定制他们的部署。还为横幅和徽标图像增加了对 TIFF 文件格式的支持，有助于更大的设计灵活性。
 
-**与标题链接更智能地共享**
+**通过带标题的链接促进共享**
 
-现在，无论是在资源详细信息视图中，还是在选择一个或多个资源后，您都可以在生成共享链接时添加标题。 这有助于收件人轻松识别每个链接的用途，尤其是在接收多个共享资产时。
+现在，您可以在生成共享链接时添加一个标题——可以从资产详细信息视图中添加或者在选择一个或多个资产后。这有助于接收者轻松识别每个链接的用途，尤其是在接收多个共享资产时。
 
-![私有和公共链接](/help/assets/assets/shared-link-for-assets.png)
+![专用和公开链接](/help/assets/assets/shared-link-for-assets.png)
 
-**已改进筛选器导航**
+**改进了过滤器导航**
 
-Content Hub现在在筛选器中包括&#x200B;**显示所有**&#x200B;选项，允许用户查看所有可用彩块以及资源计数，而当前限制是最多只能查看十个彩块。 每个过滤器中的增强搜索和排序功能使更轻松地更高效地发现和管理资源。
+现在，Content Hub 在过滤器中包含一个&#x200B;**显示全部**&#x200B;选项，允许用户查看所有可用的方面以及资产数量，而当前限制只能查看最多十个方面。增强了每个过滤器中的搜索和排序功能，使用户可以更轻松、更有效地发现和管理资产。
 
-### AEM桌面应用程序3.0.0版 {#desktop-app-release-3.0.0}
+### AEM 桌面应用程序发行版本 3.0.0 {#desktop-app-release-3.0.0}
 
-享受新文件和文件夹的自动上传、增强的文件操作、更智能的资源发现以及与AEM的无缝集成 — 使内容管理更快、更清晰、更直观。
+愉快地使用新文件和文件夹的自动上传、改进的文件操作、更佳的资产浏览以及与 AEM 的无缝集成——有助于更快、更清晰、更直观地管理内容。
 
-有关完整的功能列表，请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/release-notes)。
+完整的功能列表请参阅[桌面应用程序发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/release-notes)。
 
-### 具有OpenAPI功能的Dynamic Media的新增功能 {#new-features-dynamic-media-with-openapi}
+### 具有 OpenAPI 功能的动态媒体中的新功能 {#new-features-dynamic-media-with-openapi}
 
-**发布前预览资源**
+**发布前预览资产**
 
-[!DNL Dynamic Media with OpenAPI capabilities]现在允许直接在[!DNL AEM Sites]创作页面中预览资产，然后再将其公开。 与利益相关者共享预览页面，以收集关于视觉质量和上下文适应的反馈。 在审核周期中，您可以创建和管理多个资源版本，然后再最终确定它们以供发布。
+[!DNL Dynamic Media with OpenAPI capabilities] 现在允许直接在 [!DNL AEM Sites] 作者页面中预览资产，然后再将其公布。与利益相关者共享预览页面，以收集有关外观质量和上下文适应度的反馈。在审阅周期内，您可以在最终发布之前创建和管理多个资产版本。
 
-**针对OpenAPI图像请求的增强型智能成像**
+**为 OpenAPI 图像请求增强了智能成像**
 
-现在，所有OpenAPI图像请求都可充分利用具有自动促销和回退逻辑的智能成像。 此增强功能根据设备和网络条件优化图像，从而加快页面加载速度并减少带宽使用量，同时保持视觉质量。
+现在，所有 OpenAPI 图像请求都充分利用具有自动提升和回退逻辑的智能成像功能。此增强功能可根据设备和网络条件优化图像，提供更快的页面加载速度，并减少带宽使用——同时保持视觉质量。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### AEM Forms 中的新功能 {#forms-new-features}
 
-**自适应Forms和表单片段的通用编辑器**
+**用于自适应表单和表单片段的通用编辑器**
 
-[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)现在支持创建自适应Forms和可重用的表单片段。 内容作者可在简化的所见即所得（WYSIWYG）创作环境中，以可视化方式构建表单、配置提交操作，并添加 reCAPTCHA 验证。此功能可加快表单创建流程，提升一致性，并增强对垃圾信息及自动滥用行为的防护能力。
+[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)现在支持自适应表单创建和可重复使用的表单片段。内容作者可在简化的所见即所得（WYSIWYG）创作环境中，以可视化方式构建表单、配置提交操作，并添加 reCAPTCHA 验证。此功能可加快表单创建流程，提升一致性，并增强对垃圾信息及自动滥用行为的防护能力。
 
 ![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-适用于Edge Delivery Services Forms的&#x200B;**Forms提交服务**
+**Edge Delivery Services Forms 的表单提交服务**
 
-请参阅[Forms提交服务](/help/forms/forms-submission-service.md)。 允许您将自适应表单提交的数据无缝地直接存储到流行的电子表格平台，如Google Sheets、Microsoft OneDrive或SharePoint。 此集成允许将表单数据直接提交到您选择的电子表格，从而简化数据管理，消除手动数据传输并减少错误。
+参见[表单提交服务](/help/forms/forms-submission-service.md)。允许您将自适应表单提交的数据无缝地直接存储到流行的电子表格平台中，例如 Google Sheets、Microsoft OneDrive 或 SharePoint。这一集成方式将表单数据直接提交到您选择的电子表格，从而简化了数据管理，消除了手动数据传输方法，减少了错误。
 
 主要优势包括：
 
-* **直接集成：**&#x200B;将表单配置为将数据直接提交到指定的电子表格。
-* **自定义数据映射：**&#x200B;将表单字段映射到相应的电子表格列，以便进行有组织的存储。
-* **访问控制：**&#x200B;利用现有的电子表格权限来管理谁可以访问或修改提交的数据。
+* **直接集成：**&#x200B;配置您的表单，将数据直接提交到指定的电子表格。
+* **自定义数据映射：**&#x200B;将表单字段映射到相应的电子表格列，有条理地存储。
+* **访问控制：**&#x200B;使用现有的电子表格权限来管理谁可以访问或更改已提交的数据。
 
-**从自适应Forms生成并同步AFP演绎版**
+**从自适应表单生成并同步 AFP 演绎版**
 
-[AFP Output Sync API](/help/forms/document-generation-afp-api.md)使管理员和用户能够从Adaptive Forms生成AFP（高级函数演示）输出，并将输出与外部系统或存储位置同步。 AFP 是一种专为打印优化的高性能文档格式，常用于大型企业环境。
+[AFP 输出同步 API](/help/forms/document-generation-afp-api.md) 使管理员和用户能够从自适应表单生成 AFP（高级功能呈现）输出，并将该输出与外部系统或存储位置同步。AFP 是一种专为打印优化的高性能文档格式，常用于大型企业环境。
 
 <!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
@@ -141,11 +141,11 @@ Content Hub现在在筛选器中包括&#x200B;**显示所有**&#x200B;选项，�
 
  -->
 
-### AEM Forms中的新增抢先访问功能 {#forms-new-early-access-features}
+### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
-AEM Forms早期访问计划为您提供独一无二的机会，让您能够访问前沿创新并帮助形成其发展。
+AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以独家访问尖端创新技术，并帮助塑造其发展。
 
-这些发行说明列出了当前版本中提供的创新。 有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
+这些发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
 
 <!-- **Forms Optimization opportunities**
@@ -165,23 +165,23 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **交互式通信编辑器的规则编辑器**
 
-使用直观的点击式界面，直接在文档中构建动态的数据驱动操作。 轻松定义条件逻辑、自动化工作流并个性化内容，而无需编写代码。
+使用直观的点击界面直接在文档中构建数据驱动的动态操作。无需编写代码，轻松定义条件逻辑、自动化工作流、个性化内容。
 
-自定义组件的&#x200B;**AEM Forms Scaffolder CLI**
+**用于自定义组件的 AEM Forms Scaffolder CLI**
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms开发工具)
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
-使用此CLI工具加速AEM Forms Edge Delivery Services开发。 即时生成启动自定义组件开发所需的代码和布线 — 无样板，轻松无忧。
+使用此 CLI 工具加快您的 AEM Forms Edge Delivery Services 开发。立即生成启动自定义组件开发所需的代码和连接——无需样板，毫无麻烦。
 
-用于动态表单数据的&#x200B;**API集成工具**
+**动态表单数据的 API 集成工具**
 
-利用API集成工具，表单作者可以创建动态、智能的表单，这些表单会根据用户交互自动从外部REST API获取和填充数据。 这种无代码集成功能将静态表单转换为响应式数据收集界面。
+API 集成工具使表单作者能够创建可根据用户交互自动从外部 REST API 获取和填充数据的动态、智能的表单。这种无代码集成功能可以将静态表单转换为响应式数据收集界面。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 权限管理的节点视图 {#node-view}
 
-AEM引入了节点视图权限管理。 主要功能与经典UI相同，但更加用户友好且高效。 有关详细信息，请参阅[专用文章](/help/security/touch-ui-principal-view.md)。
+AEM引入了节点视图权限管理。 主要功能与经典用户界面一样，但更加友好和高效。请参阅[专用文章](/help/security/touch-ui-principal-view.md)，了解更多信息。
 
 ### 更新的弃用流程 {#updated-deprecation-process}
 
@@ -224,7 +224,7 @@ OSGi 属性：
 
 ### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-**Java 11运行时* — 现已弃用，并且大多数环境都已升级到性能更高的&#x200B;**&#x200B;Java 21运行时**。
+**Java 11 运行时环境*- 现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
 
 如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
@@ -243,18 +243,18 @@ OSGi 属性：
 
 ### 默认清除旧版本和审计日志 {#mt-defaults}
 
-目前，内容版本和审核日志在默认情况下禁用其关联的*清除维护任务，因此除非明确配置，否则不会删除任何数据。
+目前，内容版本和审核日志相关的*清除维护任务-默认处于禁用状态，因此除非进行明确配置，否则不会删除任何数据。
 
-但是，为优化存储库性能，默认情况下，将在未来宣布的日期启用清除，遵循以下准则：
+然而，为了优化存储库性能，将在未来公布的某个日期默认启用清除功能，并遵循以下指南：
 
 #### 内容版本 {#mt-content}
 
-* **新环境*-(在即将到来的日期之后创建（稍后通知）
-   * 将定期删除早于**30天* — 的版本。
+* **新环境*-（在未来某个日期（稍后通知）之后创建）
+   * **30 天*-以上的旧版本将定期被删除。
    * 保留过去30天内最新的五个版本，以及最新版本和当前版本，无论其历史时间如何。
 
-* **现有环境* — （在此即将到来的日期之前创建）：
-   * 将定期删除早于**7年* — 的版本。
+* **现有环境*-（在这个未来日期之前创建）：
+   * **7 年*-以上的版本将定期被删除。
    * 过去 7 年内的所有版本均予以保留。
    * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
@@ -262,12 +262,12 @@ OSGi 属性：
 
 #### 审核日志 {#mt-auditlogs}
 
-* **新环境* — （在即将到来的日期之后创建，将单独通知）：
-   * 将定期删除早于**7天* — 的复制、DAM和页面审核日志。
+* **新环境*-（在未来某个日期之后创建，具体日期将另行通知）：
+   * **7 天*-以上的旧复制、DAM 和页面审核日志将被定期删除。
    * 默认情况下，所有事件都会被记录。
 
-* **现有环境* — （在此即将到来的日期之前创建）：
-   * 将定期删除早于**7年* — 的复制、DAM和页面审核日志。
+* **现有环境*-（在这个未来日期之前创建）：
+   * **7 年*-以上的旧复制、DAM 和页面审核日志将被定期删除。
    * 默认情况下，所有事件都会被记录。
    * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
@@ -286,7 +286,7 @@ OSGi 属性：
 * 充当 CDN 与您的源站之间的中间件
 * 在将第三方 API 的响应（可能还包括聚合多个 API 的响应）传递给浏览器之前，对其进行重新格式化
 * 使用从各种后端拼接的内容，在边缘构建并呈现服务器渲染的 HTML
-* 为ChatGPT和Claude等LLM公开MCP服务器以访问自定义工具
+* 为 ChatGPT 和 Claude 等 LLM 公开 MCP 服务器，以访问自定义工具
 
 我们为实时生产站点提供的 AEM Publish Delivery 或 Edge Delivery Services 项目的机会数量有限。如果您有兴趣参与或想了解更多信息，请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) 并简要描述您的用例。
 
@@ -294,19 +294,19 @@ OSGi 属性：
 
 Adobe 管理的 CDN 提供灵活的配置选项，如这篇[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
 
-现在在Beta版中，为包括CDN源选择器、响应和请求转换、CDN日志转发等功能部署配置管道。 请联系 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 并提供您的用例详情。
+现在在 beta 版中，为 CDN 源选择器、响应和请求转换、CDN 日志转发等功能部署配置管道。请联系 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 并提供您的用例详情。
 
-### RDE快照(Alpha计划) {#rde-snapshot-beta}
+### RDE 快照（Alpha 程序） {#rde-snapshot-beta}
 
-在Alpha中，快速开发环境(RDE)现在支持一种功能，可拍摄代码和内容的当前状态的快照，以后可以恢复。 在同步可能需要还原的代码或在开发不同功能之间切换时，这可能会很有用。 也可以仅恢复可变内容作为测试的已知起点。
+在 alpha 版本中，快速开发环境 (RDE) 现在支持对代码和内容的当前状态制作快照的功能，这些快照可以在以后恢复。在将可能需要恢复的代码同步时，或在不同功能的开发之间切换时，这个功能很有用。还可以仅恢复可变内容，将其作为一个已知的测试起点。
 
-如果对此功能有兴趣提供反馈，请发送电子邮件至[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)。
+如果想提供关于此功能的反馈，请发送电子邮件至 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)。
 
 ### AEM 日志转发至更多目标（Beta 项目） {#log-forwarding-beta}
 
 虽然可以从 Cloud Manager 下载日志，但许多组织发现将这些日志流式传输到首选记录目标很有帮助。AEM 已经支持将 AEM 和 CDN 日志转发到 Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和 OpenSearch）和 Splunk。此功能以自助方式配置，并使用配置管道进行部署。
 
-现在处于Beta阶段，您可以将AEM日志转发到Amazon S3、Sumo Logic、Dynatrace以及您自己的New Relic帐户(而不是Adobe提供的帐户)。 请注意，这些日志记录目标支持 AEM 日志（包括 Apache/Dispatcher），但不支持 CDN 日志。发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
+现在在 beta 版本中，您可以将 AEM 日志转发到 Amazon S3、Sumo Logic、Dynatrace 以及您自己的 New Relic 帐户（不是 Adobe 提供的帐户）。请注意，这些日志记录目标支持 AEM 日志（包括 Apache/Dispatcher），但不支持 CDN 日志。发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
 
 更多信息请参阅[日志转发文档](/help/implementing/developing/introduction/log-forwarding.md)。
 
