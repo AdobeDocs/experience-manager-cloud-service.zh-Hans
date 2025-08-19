@@ -37,7 +37,7 @@ ht-degree: 99%
 
 请查看 2025 年 6 月发布概述视频，了解 2025.6.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3470888?quality=12&captions=chi_hans)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
