@@ -4,10 +4,10 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -162,3 +162,4 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 * [工件重用功能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)不适用于专用存储库。
 * 使用Cloud Manager中的GitHub检查，无法暂停拉取请求验证。
 如果在Cloud Manager中验证GitHub存储库，则Cloud Manager始终会尝试验证为该存储库创建的拉取请求。
+* 如果GitHub组织具有IP限制，请创建一个支持案例，以接收允许的IP地址列表。
