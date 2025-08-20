@@ -134,7 +134,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 * **已增强受限文件类型的错误处理**
 
-  [现在支持对受限文件类型进行错误处理](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)，这会阻止不支持的文件上载。 当用户尝试通过将文件类型更改为不支持的格式来提交文件时，表单会在提交期间引发错误。
+  [现在支持对受限文件类型进行错误处理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)，这会阻止不支持的文件上载。 当用户尝试通过将文件类型更改为不支持的格式来提交文件时，表单会在提交期间引发错误。
 
 
 <!--
