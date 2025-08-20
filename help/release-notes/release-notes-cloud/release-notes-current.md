@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 99%
+source-wordcount: '2350'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -105,32 +105,44 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### AEM Forms 中的新功能 {#forms-new-features}
 
-**用于自适应表单和表单片段的通用编辑器**
+* **用于自适应表单和表单片段的通用编辑器**
 
-[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)现在支持自适应表单创建和可重复使用的表单片段。内容作者可在简化的所见即所得（WYSIWYG）创作环境中，以可视化方式构建表单、配置提交操作，并添加 reCAPTCHA 验证。此功能可加快表单创建流程，提升一致性，并增强对垃圾信息及自动滥用行为的防护能力。
+  [通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)现在支持自适应表单创建和可重复使用的表单片段。内容作者可在简化的所见即所得（WYSIWYG）创作环境中，以可视化方式构建表单、配置提交操作，并添加 reCAPTCHA 验证。此功能可加快表单创建流程，提升一致性，并增强对垃圾信息及自动滥用行为的防护能力。
 
-![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**Edge Delivery Services Forms 的表单提交服务**
+* **Edge Delivery Services Forms 的表单提交服务**
 
-参见[表单提交服务](/help/forms/forms-submission-service.md)。允许您将自适应表单提交的数据无缝地直接存储到流行的电子表格平台中，例如 Google Sheets、Microsoft OneDrive 或 SharePoint。这一集成方式将表单数据直接提交到您选择的电子表格，从而简化了数据管理，消除了手动数据传输方法，减少了错误。
+  [Forms提交服务](/help/forms/forms-submission-service.md)允许您将数据从自适应表单提交中直接无缝存储到常用的电子表格平台，如Google Sheets、Microsoft OneDrive或SharePoint。 此集成允许将表单数据直接提交到您选择的电子表格，从而简化数据管理，消除手动数据传输并减少错误。主要优势包括：
 
-主要优势包括：
+   * **直接集成：**&#x200B;配置您的表单，将数据直接提交到指定的电子表格。
+   * **自定义数据映射：**&#x200B;将表单字段映射到相应的电子表格列，有条理地存储。
+   * **访问控制：**&#x200B;使用现有的电子表格权限来管理谁可以访问或更改已提交的数据。
 
-* **直接集成：**&#x200B;配置您的表单，将数据直接提交到指定的电子表格。
-* **自定义数据映射：**&#x200B;将表单字段映射到相应的电子表格列，有条理地存储。
-* **访问控制：**&#x200B;使用现有的电子表格权限来管理谁可以访问或更改已提交的数据。
+* **从自适应表单生成并同步 AFP 演绎版**
 
-**从自适应表单生成并同步 AFP 演绎版**
+  [AFP 输出同步 API](/help/forms/document-generation-afp-api.md) 使管理员和用户能够从自适应表单生成 AFP（高级功能呈现）输出，并将该输出与外部系统或存储位置同步。AFP 是一种专为打印优化的高性能文档格式，常用于大型企业环境。
 
-[AFP 输出同步 API](/help/forms/document-generation-afp-api.md) 使管理员和用户能够从自适应表单生成 AFP（高级功能呈现）输出，并将该输出与外部系统或存储位置同步。AFP 是一种专为打印优化的高性能文档格式，常用于大型企业环境。
+* **自适应表单片段的自动映射支持**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  自适应Forms现在支持[自动映射自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form)。 利用此增强功能，当架构对象与定义的片段结构对齐时，会自动插入匹配的片段。 它简化了表单创建，提高了片段的可重用性，并确保了数据集成表单之间的一致性。
+
+* 记录文档中的&#x200B;**自定义表单标题**
+
+  作者现在可以通过编辑自定义表单标题在记录文档[中定义](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)自定义表单标题。 自定义标题显示在PDF标题中、PDF的文档属性中，并在打开PDF时显示为初始视图标题，从而确保清晰的标识和一致的品牌策略。
+
+* **已增强受限文件类型的错误处理**
+
+  [现在支持对受限文件类型进行错误处理](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)，这会阻止不支持的文件上载。 当用户尝试通过将文件类型更改为不支持的格式来提交文件时，表单会在提交期间引发错误。
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以独家访问尖端创新技术，并帮助塑造其发展。
-
-这些发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -224,7 +234,7 @@ OSGi 属性：
 
 ### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-**Java 11 运行时环境*- 现已弃用，大多数环境已经升级到性能更高的 &#x200B;** Java 21 运行时环境**。
+**Java 11 运行时环境*- 现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
 
 如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 8 月 28 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不受干扰的情况下进行升级。
 
