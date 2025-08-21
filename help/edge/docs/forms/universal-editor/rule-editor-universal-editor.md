@@ -308,7 +308,7 @@ ht-degree: 4%
 
 1. **打开通用编辑器**：
    - 导航到AEM Sites控制台，选择您的页面，单击&#x200B;**编辑**
-   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
+   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
 
 2. **按此顺序添加表单组件**：
    - 标题(H2)：“计税表单”
@@ -676,7 +676,7 @@ Forms成为用于数据收集、潜在客户资格鉴定和用户参与的强大
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)，了解更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)，了解更广泛的上下文
 - 用于启用其他功能的[Extension Manager指南](/help/implementing/developing/extending/extension-manager.md)
 - [Edge Delivery Services表单](/help/edge/docs/forms/overview.md)以了解全面的表单开发指导
 
