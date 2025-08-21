@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 174e7a7591714e60b508a2d29ffdd4ccddf528db
 workflow-type: tm+mt
-source-wordcount: '6515'
+source-wordcount: '6520'
 ht-degree: 98%
 
 ---
@@ -1194,16 +1194,18 @@ ht-degree: 98%
          + [使用 AEM 为 Headless 创作基本内容](/help/journey-headless/author/basics.md)
          + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
++ AI 助手 {#ai-assistant-in-aem}
+   + [在AEM中配置AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+   + [关于AEM中的AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + 生成式 AI {#generative-ai}
    + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
    + [生成变体](/help/generative-ai/generate-variations.md)
-   + [助手（有限 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [在AEM中配置AI助手](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [AEM Forms 的 AI 助手（表单体验生成器）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [AEM Forms AI助手快速入门](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Forms AI助手快速入门(Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [AEM中的AI助手 — 设置](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [AEM (Beta)的人工智能助手](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms中的AI助手(Forms Experience Builder)（率先采用）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms中的AI助手 — 提示库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [AEM Forms中的AI助手 — 快速入门](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager  {#using-cloud-manager}

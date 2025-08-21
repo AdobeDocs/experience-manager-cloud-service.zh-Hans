@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
-
 
 # Forms Experience Builder — 提示库
 
@@ -141,7 +140,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **何时使用：**&#x200B;需要创建新表单或修改现有表单时。
 
-**使用方法：**&#x200B;从头开始创建或导入并转换（请参阅[入门指南](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)）。
+**使用方法：**&#x200B;从头开始创建或导入并转换（请参阅[入门指南](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)）。
 
 **示例提示 — 简单表单创建：**
 
@@ -518,7 +517,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **何时使用：**&#x200B;当已有表单、文档或设计可转换为现代AEM表单时。
 
-**如何使用：**&#x200B;上载您的源文件并描述转换要求（请参阅[导入指南](forms-ai-assistant-getting-started.md#2-import-and-convert)）。
+**如何使用：**&#x200B;上载您的源文件并描述转换要求（请参阅[导入指南](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)）。
 
 **提示词示例 - PDF 表单转化：**
 
@@ -1059,4 +1058,4 @@ Set up **security monitoring** to detect and prevent unauthorized access to form
 
 有关全面的最佳实践和验证准则，请参阅[Forms Experience Builder快速入门指南](forms-ai-assistant-getting-started.md#best-practices)。
 
-*此提示库会根据用户反馈和新的Forms Experience Builder功能不断更新。 如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。*
+*此提示库会根据用户反馈和新的Forms Experience Builder功能不断更新。 如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*
