@@ -3,22 +3,23 @@ title: AEM Forms 的 AI 助手（表单体验生成器）
 description: 使用表单片段更快地制作强大的表单
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: ht
-source-wordcount: '1141'
-ht-degree: 100%
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 97%
 
 ---
 
-# AEM Forms 的 AI 助手（表单体验生成器）
+
+# AEM Forms AI助手快速入门(Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> AEM 表单的 AI 助手（表单体验生成器）功能可通过&#x200B;**早期采用者计划**&#x200B;获取。如果您有兴趣，请从您的工作地址向 mailto:aem-forms-ea@adobe.com 快速发送一封电子邮件，以申请访问该功能。
+> AEM 表单的 AI 助手（表单体验生成器）功能可通过&#x200B;**早期采用者计划**&#x200B;获取。如果您有兴趣，请将工作地址中的快速电子邮件发送到mailto:aem-forms-ea@adobe.com，以请求访问功能。
 
 >[!IMPORTANT]
 >
