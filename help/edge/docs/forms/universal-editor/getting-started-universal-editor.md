@@ -186,7 +186,7 @@ AEM Code Sync 会将您的 AEM 创作环境与您的 GitHub 存储库之间的�
 
     >[！NOTE]
     >
->有构建问题吗？参见[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
+    >有构建问题吗？参见[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
 
 +++
 
@@ -654,7 +654,7 @@ AEM Code Sync 会将您的 AEM 创作环境与您的 GitHub 存储库之间的�
 
 >[!TIP]
 >
-> **了解详情：**[在通用编辑器中创建独立表单](/help/edge/docs/forms/universal-editor/create-forms.md)
+> **了解详情：**&#x200B;[在通用编辑器中创建独立表单](/help/edge/docs/forms/universal-editor/create-forms.md)
 
 ## 设置本地开发环境
 

@@ -51,8 +51,8 @@ ht-degree: 87%
 此过程包括三个主要阶段：
 
 - **阶段1：** [表单创建](#step-1-form-creation)
-- **阶段 2：**[创作和设计表单](#step-2-form-authoring-and-design)
-- **阶段 3：**[配置和发布](#step-3-configuration-and-publishing)
+- **阶段 2：**&#x200B;[创作和设计表单](#step-2-form-authoring-and-design)
+- **阶段 3：**&#x200B;[配置和发布](#step-3-configuration-and-publishing)
 
 每个阶段都包括验证步骤，以确认设置正确。
 
