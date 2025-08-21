@@ -4,20 +4,20 @@ description: 具有 OpenAPI 功能的 Dynamic Media 常见问题解答
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1573'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 具有 OpenAPI 功能的 Dynamic Media 常见问题解答 {#new-dynaminc-media-apis-frequently-asked-questions}
 
-## 使用具有OpenAPI功能的Dynamic Media来搜索和交付Experience Manager Assets as a Cloud Service存储库中的所有资源吗？ {#assets-available-for-search}
+## 在 Experience Manager Assets as a Cloud Service 存储库中的所有资产是否都可以通过具有 OpenAPI 功能的 Dynamic Media 进行搜索和传递？ {#assets-available-for-search}
 
 否，只有[经过批准的最新版本资产](/help/assets/approve-assets.md)才可通过具备 OpenAPI 功能的 Dynamic Media 进行搜索和传递，以确保所有渠道和应用程序中的品牌一致性。
 
 
-## 管理员如何将添加到文件夹的新资源和现有资源标记为已批准？ {#add-assets-to-folder-as-approved}
+## 管理员如何将添加到文件夹中的新资产和现有资产标记为已批准？ {#add-assets-to-folder-as-approved}
 
 Experience Manager Assets 中资产状态由 `jcr:content/metadata/dam:status` 属性控制。此属性的值可以是：
 
@@ -49,12 +49,12 @@ Experience Manager Assets 通过资产卡片上的已批准图标来区分“已
 ![资产视图中被拒绝的资产](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-## 如何获取Adobe IMS (Adobe Identity Management Services)用户或组ID，以便在Experience Manager管理视图中设置资产角色，进而保护交付和搜索体验？ {#set-roles-secure-delivery-search}
+## 如何获取 Adobe IMS（Adobe 身份管理服务）的用户或组 ID，以便在 Experience Manager 管理员视图中设置资产上的角色，从而确保传递和搜索体验？ {#set-roles-secure-delivery-search}
 
 需要访问 Experience Manager 作者环境的用户在 Adobe 的 Admin Console 中作为 Adobe IMS 用户进行管理。关于 Adobe IMS 用户的定义，以及如何在 Admin Console 中访问和管理这些用户，请参见 [Adobe IMS 用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=zh-hans)。
 
 
-## 能否在一个文件夹中同时批准多个资产？ {#approve-multiple-assets-in-folder}
+## 您可以同时批准一个文件夹内的多个资产吗？ {#approve-multiple-assets-in-folder}
 
 您可以同时批准一个文件夹内的多个资产吗？
 
@@ -74,7 +74,7 @@ Experience Manager Assets 通过资产卡片上的已批准图标来区分“已
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 
-## 如何保护资产交付和Dynamic Media OpenAPI搜索安全？ {#secure-asset-delivery}
+## 如何确保资产安全传递，并搜索 Dynamic Media OpenAPI？ {#secure-asset-delivery}
 
 在 Experience Manager 中，中央资产治理允许 DAM 管理员或品牌经理管理对资产的访问。他们可以通过配置角色，或在创作端为已批准的资产设置激活和停用时间来限制访问，特别是在 AEM as a Cloud Service 作者实例中。
 
@@ -83,7 +83,7 @@ Experience Manager Assets 通过资产卡片上的已批准图标来区分“已
 有关更多信息，请参阅[限制对 Experience Manager 中资产的访问](restrict-assets-delivery.md#authoring)。
 
 
-## 您如何获得权限以编辑资源的审批状态？ {#permissions-edit-approval-status}
+## 如何获得编辑资产审批状态的权限？ {#permissions-edit-approval-status}
 
 作为DAM用户，您可能没有权限[审批资产](approve-assets.md#approve-assets)。要获得编辑资产审批状态的权限，管理员可以编辑应用于资产文件夹的默认或任何其他元数据架构，以提供对&#x200B;**[!UICONTROL 查看状态]**&#x200B;字段的编辑权限。有关更多信息，请参阅[如何禁用对“查看状态”字段的编辑](approve-assets.md#configuration)。
 
@@ -93,7 +93,7 @@ Experience Manager Assets 通过资产卡片上的已批准图标来区分“已
 具有 OpenAPI 功能的 Dynamic Media 支持长格式视频。视频可支持最大 50 GB，最长 2 小时。
 
 
-## 具有OpenAPI功能的Dynamic Media与Dynamic Media解决方案有何不同？ {#dynamic-media-and-dynamic-media-with-openapi-differences}
+## 具有 OpenAPI 功能的 Dynamic Media 与 Dynamic Media 解决方案有何不同？ {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 具有 OpenAPI 功能的 Dynamic Media 和 Dynamic Media 代表了不同的解决方案，每种解决方案都提供了其专门的传递能力。请务必彻底审查您的具体要求，以确定最符合您需求的解决方案。
 
@@ -116,7 +116,7 @@ Adobe 的一般建议是，对于任何集成用例（第一方或第三方应�
 | 难以猜测基于资产 UID 的 URL（允许 URL 混淆），但已经过 SEO 优化。 | URL 混淆仅适用于 URL 查询参数。URL 中的资产 ID（资产名称）是可识别的。 |
 
 
-## 具有OpenAPI功能的Dynamic Media如何解决连接的Assets功能的限制？ {#dynamic-media-openapi-addresses-connected-assets-limitations}
+## 具有 OpenAPI 功能的 Dynamic Media 如何解决互联资产功能的局限性？ {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 下表概述了两种解决方案之间的主要区别：
 
@@ -131,13 +131,13 @@ Adobe 的一般建议是，对于任何集成用例（第一方或第三方应�
 | 对远程 DAM 部署上可用的已批准资产所做的任何更改，包括版本更新和元数据修改，都会在10分钟的短生存时间 (TTL) 值内自动反映在 Sites 实例上。 | 远程 DAM 部署上的资产更新是通过生命周期事件自动处理的，但与具有 OpenAPI 功能的 Dynamic Media 相比，需要更多的时间。 |
 | 远程 DAM 上的资产元数据在 AEM Sites 实例上也可用。 | 远程 DAM 上的资产元数据在 AEM Sites 实例上不可用。 |
 
-## 某些修饰符被标记为有限可用。 如何开始使用它们？ {#use-limited-availability-modifiers}
+## 一些修饰符被标记为“可用性受限”。应如何开始使用它们？ {#use-limited-availability-modifiers}
 
-要在您的帐户中启用[修饰符在有限可用性](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)中的生产使用：
+如要在您的帐户中启用[可用性受限的修饰符](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)用于生产：
 
-1. [使用Admin Console创建Adobe支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+1. [使用 Admin Console 创建 Adobe 支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 
-1. 在Adobe支持案例中提及以下详细信息：
+1. 在 Adobe 支持案例中提供以下详细信息：
 
    * IMS 组织
 
