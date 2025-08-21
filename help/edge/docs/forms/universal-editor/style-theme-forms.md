@@ -7,7 +7,7 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
@@ -252,7 +252,7 @@ ht-degree: 55%
 }
 ```
 
-+++
++++ 
 
 +++ 高级自定义模式
 
@@ -368,10 +368,10 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 }
 ```
 
-- `.form .{Type}-wrapper`：基于字段类型定位字段包装器元素。 例如，`.form .text-wrapper`以所有文本字段容器为目标。
-- `.form .{Type}-wrapper input`：定位包装器中的实际输入元素。 这是为表单输入设置样式的推荐模式。
-- `.form .field-{Name}`：基于特定字段名称的目标元素。 例如，`.form .field-first-name`以“名字”字段容器为目标。 使用`.form .field-{Name} input`专门定向输入元素。
-- **避免**： `main .form form .{Type}-wrapper` — 这会创建不必要的CSS特殊性，且更难维护。
+- `.form .{Type}-wrapper`：根据字段类型针对不同的字段包装器元素。例如，`.form .text-wrapper` 针对所有文本字段容器。
+- `.form .{Type}-wrapper input`：针对包装器中的实际输入元素。这是推荐的表单输入样式模式。
+- `.form .field-{Name}`：根据特定字段名称针对不同的元素。例如：`.form .field-first-name` 针对“名”字段容器。使用 `.form .field-{Name} input` 专门针对输入元素。
+- **避免**：`main .form form .{Type}-wrapper`  - 这会产生不必要的 CSS 特定性并且更难维护。
 
 **常规组件的示例 CSS 选择器**
 
@@ -763,7 +763,7 @@ main .form .text-wrapper input {
 ```
 
 - Fieldset 元素充当面板容器，具有 panel-wrapper 类和基于面板名称 (field-login) 进行样式设置的附加类。
-- 图例元素(`<legend>`)用作包含文本“登录信息”和类字段标签的面板标题。 data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
+- 图例元素 (`<legend>`) 用作面板标题，其中包含“登录信息”文本和类字段标签。data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
 - 在字段集中，多个。{Type}-wrapper 元素（在本例中为 .text-wrapper 和 .password-wrapper）代表面板中的各个表单字段。
 - 每个包装器都包含一个标签、输入字段和描述，与前面的示例类似。
 
@@ -783,7 +783,7 @@ main .form .text-wrapper input {
  }
 ```
 
-- `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
+-  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -799,7 +799,7 @@ main .form .text-wrapper input {
   }
 ```
 
-- `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
+-  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
 1. 定位面板中的各个字段：
@@ -812,7 +812,7 @@ main .form form .panel-wrapper .{Type}-wrapper {
 }
 ```
 
-- `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
+-  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
 1. 定位特定领域（可选）：
 
@@ -1158,7 +1158,7 @@ main .form .field-otp input {
 }
 ```
 
-此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。Edge Delivery Services表单结构遵循自适应Forms块惯例，其中容器使用特定于字段的类进行标记，例如“field-otp”用于名为“otp”的字段。
+此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。Edge Delivery Services 表单结构遵循自适应表单块的惯例，容器被标记为字段特定的类，例如名称为“otp”的字段被标记为“field-otp”。
 
 
 ## CSS文件结构和实施
@@ -1408,7 +1408,7 @@ https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.cs
 
 +++
 
-## CSS问题疑难解答
+## 解决 CSS 问题
 
 +++ CSS特殊性问题
 
@@ -1502,7 +1502,7 @@ main .form form .text-wrapper input {
 
 
 
-### **特定于组件的最佳实践**
+### **组件特定的最佳实践**
 
 
 +++ 按钮样式
@@ -1549,12 +1549,12 @@ main .form form .text-wrapper input {
 
 ## 最佳实践摘要
 
-1. **使用CSS自定义属性**：利用变量设置一致的主题
-2. **遵循基于块的架构**：使用`.form`作为主块选择器
-3. **避免过度特异性**：除非必要，否则不要使用`main .form form`
-4. **目标包装器**：使用`.{Type}-wrapper`模式进行组件定位
+1. **使用 CSS 自定义属性**：使用变量确保主题一致
+2. **遵循基于分块的架构**：使用 `.form` 作为主要分块选择器
+3. **避免特定性过高**：除非必要，否则不要使用 `main .form form`
+4. **目标包装器**：使用 `.{Type}-wrapper` 模式确定组件目标
 5. **保持一致性**：在整个项目中使用相同的选择器模式
-6. **跨设备测试**：确保表单在移动设备、平板电脑和桌面上正常运行
-7. **验证辅助功能**：确保样式不会干扰屏幕阅读器或键盘导航
+6. **跨设备测试**：确保表单在移动设备、平板电脑和桌面设备上能正常运行
+7. **验证无障碍可访问性**：确保样式不会干扰屏幕阅读器或键盘导航
 
 

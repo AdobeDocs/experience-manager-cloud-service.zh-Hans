@@ -1,6 +1,6 @@
 ---
-title: 在通用编辑器中将Google reCAPTCHA添加到Forms
-description: 在Edge Delivery Services表单中实施Google reCAPTCHA保护以阻止垃圾邮件和自动攻击的指南
+title: 在通用编辑器中将 Google reCAPTCHA 添加到表单
+description: 在 Edge Delivery Services 表单中实施防止垃圾邮件和自动攻击的 Google reCAPTCHA 保护指南
 feature: Edge Delivery Services
 keywords: 表单中的 reCAPTCHA，在通用编辑器中使用 reCAPTCHA，在表单中添加 reCAPTCHA，表单安全性，垃圾邮件防护
 role: Developer, Admin
@@ -9,209 +9,209 @@ exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 4%
+ht-degree: 91%
 
 ---
 
 
-# 在通用编辑器中将Google reCAPTCHA添加到Forms
+# 在通用编辑器中将 Google reCAPTCHA 添加到表单
 
-Google reCAPTCHA通过区分人类用户和自动机器人，帮助保护表单。 本指南介绍如何在通用编辑器中实施reCAPTCHA Enterprise和Standard版本。
+Google reCAPTCHA 通过区分人类用户和自动机器人来帮助保护表单。本指南介绍了如何在通用编辑器中实施 reCAPTCHA Enterprise 和 Standard 两个版本。
 
 **目标：**
 
-- 选择适当的reCAPTCHA解决方案
-- 配置reCAPTCHA Enterprise或Standard
-- 将reCAPTCHA添加到表单
-- 验证和测试实施
+- 选择合适的 reCAPTCHA 解决方案
+- 配置 reCAPTCHA Enterprise 或 Standard
+- 将 reCAPTCHA 添加到您的表单中
+- 验证并测试实施
 - 监控和优化性能
 
 ## 先决条件
 
-开始之前，请确保您满足以下条件：
+开始之前，请确保您已：
 
-### 访问要求
+### 满足访问权限要求
 
-- AEM as a Cloud Service创作访问权限
-- 具有表单编辑权限的通用编辑器访问
-- 注册抢先访问计划以获得reCAPTCHA功能
+- AEM as a Cloud Service 创作访问权限
+- 通用编辑器访问权限和表单编辑权限
+- 注册 reCAPTCHA 功能早期访问计划
 
 ### 技术要求
 
-- 有效的Google帐户
-- 企业：启用了计费的Google Cloud Platform项目
-- 对于Standard：Google reCAPTCHA帐户
+- 活跃的 Google 帐户
+- 对于 Enterprise 版本：已启用计费的 Google 云平台项目
+- 对于 Standard 版本：Google reCAPTCHA 帐户
 - 已验证表单的域所有权
 
 ### 知识要求
 
-- 对AEM Forms和通用编辑器的基本了解
+- 具有 AEM Forms 和通用编辑器的基本知识
 - 熟悉云服务配置
-- 了解表单安全概念
+- 理解表单安全概念
 
-## 为何在Forms中使用reCAPTCHA？
+## 为什么要在表单中使用 reCAPTCHA？
 
 | ![安全性](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![机器人防护](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![用户体验](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **增强安全性** | **机器人和垃圾邮件防范** | **无缝的用户体验** |
-| 保护表单免受欺诈活动和攻击 | 阻止自动机器人提交表单 | 不可见reCAPTCHA不会中断合法用户 |
+| 保护表单免受欺诈活动的侵扰和攻击 | 防止自动机器人提交表单 | 不可见的 reCAPTCHA 不会干扰合法用户 |
 
-**密钥概念：** reCAPTCHA使用机器学习分析用户行为并分配一个分数（0.0到1.0），该分数用于指示人机交互的可能性。 得分越高表示人类用户；得分越低表示机器人。
+**关键概念：** reCAPTCHA 使用机器学习来分析用户行为，并为人机交互的可能性分配一个分数（0.0 到 1.0）。分数越高表明是人类用户，分数越低表明是机器人。
 
-**示例：**&#x200B;处理敏感数据的税务计算表单需要针对自动攻击的保护。 reCAPTCHA验证提交的是真实用户而不是机器人。
+**举例：**&#x200B;处理敏感数据的税费计算表需要防范自动攻击。reCAPTCHA 会验证提交是来自真人用户，而不是机器人。
 
 ## 选择您的 reCAPTCHA 解决方案
 
-Edge Delivery Services Forms支持两个Google reCAPTCHA选项。 使用以下标准选择正确的解决方案：
+Edge Delivery Services Forms 支持两个 Google reCAPTCHA 选项。使用以下标准选择正确的解决方案：
 
 ### 快速决策指南
 
-**在以下情况下使用reCAPTCHA Enterprise：**
+**在以下情况下使用 reCAPTCHA Enterprise：**
 
-- 高流量表单（每月超过10,000个请求）
-- 严格的合规要求(GDPR、SOX、HIPAA)
+- 高流量表单（每月 >10,000 个请求）
+- 要满足严格的合规要求（GDPR、SOX、HIPAA）
 - 需要高级分析和报告
-- 高级安全功能的预算
-- 复杂的多域部署
+- 有高级安全功能的预算
+- 进行复杂的多域部署
 
-**如果您具有以下特征，请使用reCAPTCHA Standard：**
+**在以下情况下使用 reCAPTCHA Standard：**
 
-- 低到中等流量（每月少于10,000个请求）
-- 基本安全需求
-- 预算有限（免费套餐）
+- 低到中等流量（每月 &lt;10,000 个请求）
+- 有基本安全需求
+- 预算有限（免费层）
 - 简单的单域设置
-- 初次使用reCAPTCHA
+- reCAPTCHA 新手
 
 ### 详细比较
 
 | **功能** | **reCAPTCHA Enterprise** | **reCAPTCHA Standard** |
 |-------------|--------------------------|------------------------|
-| **成本** | 付费（基于使用率的定价） | 免费 |
-| **请求限制** | 无限制 | 每月100万项请求 |
-| **高级分析** | 详细报告 | 仅基本统计信息 |
-| **自定义规则** | 特定于帐户的规则 | 仅限全局规则 |
+| **成本** | 付费（基于使用情况定价） | 免费 |
+| **请求限制** | 无限制 | 每月 100 万个请求 |
+| **高级分析** | 详细报告 | 仅基本统计数据 |
+| **自定义规则** | 帐户特有的规则 | 仅限全局规则 |
 | **多域支持** | 高级管理 | 基本支持 |
-| **SLA** | 99.9%的正常运行时间保证 | 尽力 |
+| **SLA** | 99.9% 正常运行时间保证 | 尽力 |
 | **支持** | 企业支持 | 社区支持 |
 | **合规性** | 企业级 | 标准合规性 |
 
-**两个解决方案都提供：**
+**两种解决方案均提供：**
 
-- 基于分数的检测（0.0到1.0分制）
-- 不可见的操作（无需用户交互）
+- 基于分数的检测（0.0 到 1.0 分度）
+- 不可见操作（无需用户交互）
 - 机器学习驱动的机器人检测
 - 实时风险评估
 
 ## 设置 reCAPTCHA Enterprise
 
 
-+++ 步骤1：准备Google Cloud环境
++++ 步骤 1：准备 Google 云环境
 
 **要求：**
 
-1. 已启用计费的Google云项目
-2. 项目ID（从GCP功能板）
+1. 已启用计费的 Google 云项目
+2. 项目 ID（来自 GCP 仪表板）
 3. 表单的域验证
-4. 管理员对GCP和AEM的访问权限
+4. GCP 和 AEM 的管理员访问权限
 
-**设置：**
+**设置：** 
 
-1. 创建或选择Google Cloud项目
-   - 转到[Google Cloud Console](https://console.cloud.google.com/)
-   - 创建新项目或选择现有项目
-   - 记下您的项目ID
+1. 创建或选择 Google 云项目
+   - 前往 [Google 云控制台](https://console.cloud.google.com/)
+   - 创建新项目或选择一个现有项目
+   - 记下您的项目 ID
 
-2. 启用reCAPTCHA Enterprise API
-   - 转到API和服务>库
+2. 启用 reCAPTCHA Enterprise API
+   - 前往 API 和服务 > 库
    - 搜索“reCAPTCHA Enterprise API”
-   - 单击启用
+   - 点击“启用”
 
-3. 创建API凭据
-   - 转到“API和服务”>“凭据”
-   - 单击创建凭据> API密钥
-   - 复制并存储您的API密钥
+3. 创建 API 凭据
+   - 前往 API 和服务 > 凭据
+   - 点击创建凭据 > API 密钥
+   - 复制并存储您的 API 密钥
 
-4. 创建站点密钥
-   - 转到“安全”>“reCAPTCHA Enterprise”
-   - 单击“创建密钥”
-   - 选择基于得分的键类型
-   - 添加域
-   - 设置阈值分数（推荐： 0.5）
+4. 创建网站密钥
+   - 前往“安全” > reCAPTCHA Enterprise
+   - 点击创建密钥
+   - 选择基于分数的密钥类型
+   - 添加您的域
+   - 设置阈值分数（建议：0.5）
 
-**验证检查点：**&#x200B;确保您具有：
+**验证检查点：**&#x200B;确保您有：
 
 - 项目 ID
-- API 键
-- 站点密钥
-- Google Cloud中已验证的域
+- API 密钥
+- 网站密钥
+- 已验证 Google 云中的域
 
 +++
 
-+++ 步骤2：配置AEM Cloud配置容器
++++ 步骤 2：创建 AEM 云配置容器
 
-![逐步云配置设置](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
-*图：正在为表单容器启用云配置*
+![逐步的云配置设置](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+*图：为表单容器启用云配置*
 
-**设置：**
+**设置：** 
 
 1. 访问配置浏览器
    - 登录到 AEM 作者实例
-   - 转到“工具”>“常规”>“配置浏览器”
+   - 前往工具 > 常规 > 配置浏览器
 
 2. 启用云配置
    - 找到表单的配置容器
    - 选择属性
    - 检查云配置
-   - 单击保存并关闭
+   - 点击“保存并关闭”
 
 3. 验证配置
-   - 确认容器属性中显示“云配置”
+   - 确认“云配置”出现在容器属性中
 
 **验证检查点：**
 
-- 为您的容器启用的云配置
-- 容器显示在配置浏览器中
-- 属性将“云配置”显示为已启用
+- 为您的容器启用云配置
+- 容器出现在配置浏览器中
+- 属性显示“云配置”已启用
 
 +++
 
-+++ 步骤3：在AEM中配置reCAPTCHA企业服务
++++ 步骤 3：在 AEM 中配置 reCAPTCHA Enterprise 服务
 
-![reCAPTCHA Enterprise配置屏幕](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
-*图： AEM中的reCAPTCHA企业配置接口*
+![reCAPTCHA Enterprise 配置屏幕](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+*图：AEM 中的 reCAPTCHA Enterprise 配置界面*
 
 **配置：**
 
-1. 访问recaptcha配置
-   - 转到“工具”>“云服务”>“reCAPTCHA”
+1. 访问 reCAPTCHA 配置
+   - 前往工具 > 云服务 > reCAPTCHA
    - 选择表单的配置容器
-   - 单击创建
+   - 点击创建
 
-2. 配置企业设置
+2. 配置 Enterprise 设置
    - 标题：描述性名称（例如“Production reCAPTCHA”）
    - 名称：系统名称（自动生成或自定义）
-   - 版本：选择ReCAPTCHA Enterprise
-   - 项目ID：输入您的Google Cloud项目ID
-   - 站点密钥：输入Google Cloud中的站点密钥
-   - API密钥：输入您的Google Cloud API密钥
-   - 密钥类型：选择基于得分的网站密钥
+   - 版本：选择 ReCAPTCHA Enterprise
+   - 项目 ID：输入您的 Google 云项目 ID
+   - 网站密钥：输入来自 Google 云的网站密钥
+   - API 密钥：输入您的 Google 云 API 密钥
+   - 密钥类型：选择基于分数的网站密钥
 
-3. 设置安全阈值
-   - 阈值分数：设置为0.0到1.0之间
+3. 设置安全性阈值
+   - 阈值分数：设置在 0.0 到 1.0 之间
    - 建议值：
-      - 0.7-0.9：高安全性（可能会阻止某些合法用户）
-      - 0.5-0.7：均衡安全性（推荐）
-      - 0.1-0.5：较低的安全性（允许更多用户）
+      - 0.7-0.9：高安全性（可能会阻止一些合法用户）
+      - 0.5-0.7：平衡安全性（推荐）
+      - 0.1-0.5：低安全性（允许更多用户）
 
 4. 保存并发布
-   - 单击创建以保存配置
-   - 单击“发布”使其可用
+   - 点击创建，以保存配置
+   - 点击发布即可用
 
 **验证检查点：**
 
-- 配置保存成功
-- 所有必填字段已完成
-- 配置已发布并可见
+- 已成功保存配置
+- 已完成所有必填字段
+- 已发布配置且可见
 - 无错误消息
 
 +++
@@ -222,43 +222,43 @@ Edge Delivery Services Forms支持两个Google reCAPTCHA选项。 使用以下�
 
 >[!IMPORTANT]
 >
-> Edge Delivery Services Forms仅支持reCAPTCHA v2（基于得分）。 请勿使用复选框版本。
+> Edge Delivery Services Forms 仅支持 reCAPTCHA 服务 v2（基于分数）。不要使用复选框版本。
 
 **密钥生成：**
 
-1. 访问Google reCAPTCHA控制台
+1. 访问 Google reCAPTCHA 控制台
 
-   - 转到[Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)
-   - 使用您的Google帐户登录
+   - 前往 [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)
+   - 使用您的 Google 帐户登录
 
-2. 创建新站点
+2. 创建新网站
 
-   - 单击+以添加新站点
-   - 标签：输入描述性名称
-   - reCAPTCHA类型：选择reCAPTCHA v2 >“我不是机器人”不可见
+   - 点击“+”添加新网站
+   - 标签：输入一个描述性名称
+   - reCAPTCHA 类型：选择 reCAPTCHA v2 > “我不是机器人”不可见
    - 域：添加您的表单域
-   - 接受条款并单击“提交”
+   - 接受条款后点击提交
 
 3. 收集您的密钥
 
-   - 站点密钥：复制站点密钥（公共密钥）
+   - 网站密钥：复制网站密钥（公钥）
    - 密钥：复制密钥（私钥）
 
 **验证检查点：**
 
-- 在reCAPTCHA控制台中创建的站点
+- 已在 reCAPTCHA 控制台中创建了网站
 
-- 站点密钥已获取
+- 已获取网站密钥
 
 - 已获取密钥
 
-- 已添加和验证的域
+- 已添加并验证域
 
 +++
 
-+++步骤2：配置AEM云配置容器（请参阅详细信息）
++++步骤2：配置AEM Cloud配置容器（请参阅详细信息）
 
-遵循与企业设置中相同的过程：
+遵循与 Enterprise 设置中相同的流程：
 
 1. 在配置浏览器中启用云配置
 
@@ -270,98 +270,98 @@ Edge Delivery Services Forms支持两个Google reCAPTCHA选项。 使用以下�
 
 +++步骤3：在AEM中配置reCAPTCHA标准服务（请参阅详细信息）
 
-![reCAPTCHA标准配置屏幕](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
-*图： AEM中的reCAPTCHA标准配置接口*
+![reCAPTCHA Standard 配置屏幕](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
+*图：AEM 中的 reCAPTCHA Standard 配置界面*
 
 **配置：**
 
-1. 访问recaptcha配置
+1. 访问 reCAPTCHA 配置
 
-   - 转到“工具”>“云服务”>“reCAPTCHA”
+   - 前往工具 > 云服务 > reCAPTCHA
    - 选择表单的配置容器
-   - 单击创建
+   - 点击创建
 
-2. 配置标准设置
+2. 配置 Standard 设置
 
-   - 标题：描述性名称（例如“标准reCAPTCHA”）
+   - 标题：描述性名称（例如“Standard reCAPTCHA”）
    - 名称：系统名称（自动生成或自定义）
-   - 版本：选择ReCAPTCHA v2
-   - 站点密钥：输入您的Google reCAPTCHA站点密钥
-   - 密钥：输入您的Google reCAPTCHA密钥
+   - 版本：选择 ReCAPTCHA v2
+   - 网站密钥：输入您的 Google reCAPTCHA 网站密钥
+   - 密钥：输入您的 Google reCAPTCHA 密钥
 
 3. 保存并发布
 
-   - 单击创建以保存配置
-   - 单击“发布”使其可用
+   - 点击创建，以保存配置
+   - 点击发布即可用
 
 **验证检查点：**
 
-- 创建配置时没有出现错误
+- 配置已创建，未发生任何错误
 
-- 两个键都输入正确
+- 两个密钥均输入正确
 
-- 配置发布成功
+- 配置已成功发布
 
-- 配置显示在列表中
+- 配置出现在列表中
 
 +++
 
-## 将reCAPTCHA添加到表单
+## 将 reCAPTCHA 添加到您的表单中
 
-配置reCAPTCHA服务后，按如下方式向表单添加保护：
+配置 reCAPTCHA 服务后，按如下方式在您的表单中添加保护：
 
-![正在将reCAPTCHA组件添加到表单](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
-*图：正在将不可见的Captcha组件添加到表单*
+![将 reCAPTCHA 组件添加到表单](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
+*图：将不可见的验证码组件添加到表单*
 
-+++1. 在通用编辑器中打开表单
-转到AEM Sites中的表单，然后单击“编辑”以在通用编辑器中打开该表单。 等待加载编辑器。
++++1.在通用编辑器中打开表单
+转到AEM Sites中的表单，然后单击“编辑”以在通用编辑器中打开该表单。 等待编辑器加载。
 
-- 转到AEM Sites中的表单
-- 单击编辑以在通用编辑器中打开
+- 前往 AEM Sites 中的表单
+- 点击编辑，在通用编辑器中打开
 - 等待编辑器加载
 +++
 
-+++2. 查找表单结构
++++2.查找表单结构
 在内容树（左面板）中，找到您的自适应表单部分，并展开表单结构以查看插入点。
 
-- 在内容树（左面板）中，找到您的自适应表单部分
-- 展开窗体结构以查看插入点
+- 在内容树（左侧面板）中，找到您的自适应表单分区
+- 展开表单结构，查看插入点
 +++
 
-+++3. 添加reCAPTCHA组件
++++3.添加reCAPTCHA组件
 将Captcha（不可见）组件添加到表单。
 
-- 单击表单部分中的添加(+)图标
-- 从组件列表中，选择Captcha （不可见）
-- 或者，从组件面板中拖放组件
+- 点击表单分区中的添加 (+) 图标
+- 从组件列表中选择验证码（不可见）
+- 也可以从组件面板中拖放组件
 +++
 
-+++4. 配置组件（可选）
++++4.配置组件（可选）
 选择新添加的captcha组件并验证它是否使用您的reCAPTCHA配置。
 
 - 选择新添加的验证码组件
-- 在“属性”面板中，验证它是否使用您的reCAPTCHA配置
-- 基本设置无需其他配置
+- 在“属性”面板中，验证它是否使用您的 reCAPTCHA 配置
+- 基本设置不需要额外配置
 +++
 
-+++5. 发布更改
++++5.发布更改
 发布更改并验证没有错误。
 
-- 单击在通用编辑器中发布
+- 点击通用编辑器中的发布
 - 等待确认
-- 验证未显示任何错误
+- 确认没有出现错误
 +++
 
 ### 验证实施
 
-您的受保护表单现在在以下位置提供：
+现在，受到保护的表单位于：
 
 ```
 https://<branch>--<repo>--<owner>.aem.live/content/forms/af/
 <form-name>
 ```
 
-**示例URL：**
+**URL 示例：**
 
 ```
 https://main--my-forms--company.aem.live/content/forms/af/

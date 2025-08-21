@@ -7,7 +7,7 @@ exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -301,7 +301,8 @@ JSON 代码片段为 **Range** 组件定义了一个名为 **Step Value** 的自
 
 ### &#x200B;4. 注册您的自定义组件
 
-要使表单块能够识别自定义组件并在表单创作期间加载其在组件模型中定义的属性，请将组件定义中的`fd:viewType`值添加到`mappings.js`文件中。
+要使表单区块能够识别自定义组件，并在表单创作过程中加载组件模型中定义的组件属性，请将 `fd:viewType` 值从组件定义添加到 `mappings.js` 文件。
+
 
 注册组件：
 

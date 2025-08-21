@@ -1,6 +1,6 @@
 ---
-title: 通用编辑器中动态Forms的规则编辑器
-description: 使用通用编辑器中的规则编辑器创建动态、智能的表单。 无需编码即可添加条件逻辑、计算和交互行为。
+title: 通用编辑器中的动态表单规则编辑器
+description: 使用通用编辑器中的规则编辑器创建动态、智能的表单。无需编码即可添加条件逻辑、计算和交互式行为。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
@@ -8,12 +8,12 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# 通用编辑器中动态Forms的规则编辑器
+# 通用编辑器中的动态表单规则编辑器
 
 规则编辑器允许作者将静态表单转换为响应式智能体验，而无需编写代码。 您可以有条件地显示字段、执行计算、验证数据、引导用户完成流以及集成根据人员类型调整的业务逻辑。
 
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 在本指南结束时，您将能够：
 
-- 了解规则的工作方式以及何时使用不同的规则类型
-- 在通用编辑器中启用和访问规则编辑器
+- 了解规则如何起作用以及在什么情况下需要使用不同的规则类型
+- 能够在通用编辑器中启用并访问规则编辑器
 - 创建条件逻辑以动态显示或隐藏字段
-- 实施自动计算和数据验证
-- 为复杂的业务规则构建自定义函数
+- 能够实施自动计算和数据验证
+- 能够为复杂的业务规则构建自定义函数
 - 将最佳实践应用于性能、可维护性和UX
 
 ## 为何使用规则编辑器？
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 +++ 现实世界示例
 
-- **条件**：“总薪金超过$50,000”
+- **条件**：“总收入超过 50,000 美元”
 - **主要操作**：显示“附加扣款”
 - **备用操作**：隐藏“附加扣款”
 - **结果**：用户只能看到适用于他们的字段
@@ -267,7 +267,7 @@ ht-degree: 1%
 
 +++ 窗体结构
 
-| 字段名 | 类型 | 用途 | 行为 |
+| 字段名称 | 类型 | 用途 | 行为 |
 |-------------------------|---------------|--------------------------------|-----------------------------------------|
 | 薪金毛额 | 数字输入 | 用户的年收入 | 触发条件逻辑 |
 | 附加扣款 | 数字输入 | 附加扣减额（如果适用） | 仅在薪金> $50,000时可见 |
@@ -308,7 +308,7 @@ ht-degree: 1%
 
 1. **打开通用编辑器**：
    - 导航到AEM Sites控制台，选择您的页面，单击&#x200B;**编辑**
-   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按此顺序添加表单组件**：
    - 标题(H2)：“计税表单”
@@ -676,7 +676,7 @@ Forms成为用于数据收集、潜在客户资格鉴定和用户参与的强大
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)，了解更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)，了解更广泛的上下文
 - 用于启用其他功能的[Extension Manager指南](/help/implementing/developing/extending/extension-manager.md)
 - [Edge Delivery Services表单](/help/edge/docs/forms/overview.md)以了解全面的表单开发指导
 

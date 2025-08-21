@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,8 +92,8 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 - 类：div 元素包含几个用于定位特定元素和样式的类。您需要 `{Type}-wrapper` 或 `field-{Name}` 类来开发 CSS 选择器以设置表单字段的样式：
    - {Type}：通过字段类型标识组件。例如，文本 (text-wrapper)、数字 (number-wrapper)、日期 (date-wrapper)
    - {Name}：通过名称标识组件。字段名称只能包含字母数字字符；名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字 (field-first-name field-wrapper)
-   - {FieldId}：它是自动生成的字段的唯一标识符
-   - {Required}：它是一个布尔值，指示该字段是否为必填字段
+   - {FieldId}：这是为此字段自动生成的唯一标识符
+   - {Required}：这是表示此字段是否为必填项的布尔值
 - 标签：`label` 元素为字段提供描述性文本，并使用 `for` 属性将它与输入元素关联
 - 输入：`input` 元素定义要输入的数据类型。例如，文本、数字、电子邮件
 - 描述（可选）：带类 `field-description` 的 `div` 为用户提供附加信息或说明
@@ -240,7 +240,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 
 与下拉组件类似，单选按钮组也拥有自己的 HTML 结构和 CSS 结构：
 
-+++ 单选按钮组的 HTML 结构
++++ 单选按钮组的 HTML 结构 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 }
 ```
 
-+++
++++ 
 
 ### 复选框组
 
-+++ 复选框组的 HTML 结构
++++ 复选框组的 HTML 结构 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
      }
   ```
 
-+++
++++ 
 
 ### 面板/容器组件
 
@@ -476,11 +476,11 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 ```
 
 - Fieldset 元素充当面板容器，具有 panel-wrapper 类和基于面板名称 (field-login) 进行样式设置的附加类。
-- 图例元素(`<legend>`)用作包含文本“登录信息”和类字段标签的面板标题。 data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
+- 图例元素 (`<legend>`) 用作面板标题，其中包含“登录信息”文本和类字段标签。data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
 - 在字段集中，多个。{Type}-wrapper 元素（在本例中为 .text-wrapper 和 .password-wrapper）代表面板中的各个表单字段。
 - 每个包装器都包含一个标签、输入字段和描述，与前面的示例类似。
 
-+++
++++ 
 
 +++ 面板/容器组件的 CSS 选择器示例
 
@@ -497,7 +497,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
  }
 ```
 
-- `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
+-  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -513,7 +513,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
   }
 ```
 
-- `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
+-  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
 1. 定位面板中的各个字段：
@@ -526,7 +526,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 }
 ```
 
-- `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
+-  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
 1. 定位特定领域（可选）：
 
@@ -608,7 +608,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 
 - 唯一 ID 和名称：面板中的每个元素都有一个唯一 ID（例如 name-1、email-1）和基于面板索引的名称属性（例如 name=&quot;contacts[0 ].name”）。这样可以在提交多个面板时进行正确的数据收集。
 
-+++
++++ 
 
 +++ 可重复面板的 CSS 选择器
 
@@ -698,7 +698,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 - 输入元素的 id 和名称属性与文件附件名称 (claim_form) 匹配。
 - 文件列表部分最初是空的。当文件上传时，它会用 JavaScript 动态填充。
 
-+++
++++ 
 
 +++ 文件附件组件的 CSS 选择器
 
@@ -816,7 +816,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 - 每个字段都有相应的标签、输入元素和潜在的附加元素（例如占位符和描述）。
 
 
-+++
++++ 
 
 
 +++ 示例 CSS 选择器
@@ -864,7 +864,7 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 </div>
 ```
 
-+++
++++ 
 
 +++ 示例 CSS 选择器
 
@@ -878,5 +878,5 @@ Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保�
 
 此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。表单的 HTML 结构遵循 Adaptive Forms Block 的惯例，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
 
-+++
++++ 
 

@@ -7,7 +7,7 @@ exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -84,7 +84,7 @@ Edge Delivery Services中的表单片段为模块化表单开发提供了强大�
 
 要在通用编辑器中创建表单片段，请执行以下步骤：
 
-1. 登录到您的AEM Forms as a Cloud Service创作实例。
+1. 登录您的 AEM Forms as a Cloud Service 作者实例。
 1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 1. 单击&#x200B;**创建 > 自适应表单片段**。
 
@@ -110,7 +110,7 @@ Edge Delivery Services中的表单片段为模块化表单开发提供了强大�
 
    >[!NOTE]
    >
-   > 要了解如何将表单或片段与通用编辑器中的表单数据模型(FDM)集成以使用多种后端数据源，请参阅[将表单与通用编辑器中的表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
+   > 要了解如何在通用编辑器中将表单或片段与表单数据模型 (FDM) 集成以使用不同的后端数据源，请参阅[在通用编辑器中将表单与表单数据模型集成](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
 
 1. （可选）在&#x200B;**高级**&#x200B;选项卡中为该片段指定&#x200B;**发布日期**&#x200B;或者&#x200B;**取消发布日期**。
 
@@ -156,7 +156,7 @@ Edge Delivery Services中的表单片段为模块化表单开发提供了强大�
 
    ![导航到该部分](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**组件。
    ![添加表单片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    如果您选择了&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件，片段就会添加到您的表单中。您可以打开已添加片段的&#x200B;**属性**，对其进行配置。例如，在片段的&#x200B;**属性**&#x200B;中隐藏其标题。
@@ -191,7 +191,7 @@ Edge Delivery Services中的表单片段为模块化表单开发提供了强大�
 
 您可以使用 AEM Forms 用户界面对表单片段执行多项操作。
 
-1. 登录到您的AEM Forms as a Cloud Service创作实例。
+1. 登录您的 AEM Forms as a Cloud Service 作者实例。
 1. 选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 
 1. 选择一个表单片段，工具栏就会显示您可以在所选片段上执行以下操作。
@@ -246,7 +246,7 @@ Edge Delivery Services中的表单片段为模块化表单开发提供了强大�
     </tbody>
     </table>
 
-+++
++++ 
 
 ## 最佳实践
 
