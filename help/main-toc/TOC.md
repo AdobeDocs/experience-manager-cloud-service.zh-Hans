@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 95ef5d2257c6f074ddd1a6a01ec09ab708e88af0
+source-git-commit: 42dc06910f6309fa8ac72c065f908a8cdbe37fb8
 workflow-type: tm+mt
-source-wordcount: '6498'
-ht-degree: 97%
+source-wordcount: '6500'
+ht-degree: 98%
 
 ---
 
@@ -1078,19 +1078,19 @@ ht-degree: 97%
       + [概述](/help/edge/docs/forms/overview.md)
       + 所见即所得的创作 {#universal-editor}
          + [Edge Delivery Services for Forms通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [在AEM Forms的通用编辑器界面中导航](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [使用通用编辑器的AEM Forms Edge Delivery Services快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [使用Edge Delivery Services创建和发布自适应Forms](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [使用通用编辑器创建响应式Forms](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [导航 AEM Forms 的通用编辑器界面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [使用通用编辑器完成 Edge Delivery Services for AEM Forms 快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [使用 Edge Delivery Services 创建和发布自适应表单](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [使用通用编辑器创建响应式表单](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [自定义 Edge Delivery Services for AEM Forms 的主题和样式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [通用编辑器中动态Forms的规则编辑器](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [通用编辑器中的动态表单规则编辑器](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [如何创建表单片段用于进行基于所见即所得的创作](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [如何为自适应表单配置提交操作？](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [如何配置重定向页面或感谢消息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [在通用编辑器中将Google reCAPTCHA添加到Forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [在通用编辑器中将 Google reCAPTCHA 添加到表单](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [如何在通用编辑器中为一个表单集成表单数据模型 (FDM)？](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [如何预填自适应表单字段](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [使用Edge Delivery Services发布自适应Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [通过 Edge Delivery Services 发布自适应表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [为 EDS Form 创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [解决 Edge Delivery Services 表单提交中的 403 禁止错误](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 基于文档的创作 {#getting-started-edge-delivery-services-forms}
@@ -1113,7 +1113,7 @@ ht-degree: 97%
          + [监测表单性能：操作遥测指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [表单提交指南：使用表单提交服务](/help/forms/forms-submission-service.md)
       + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [常见问题解答](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + [常见问题](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
@@ -1207,6 +1207,7 @@ ht-degree: 97%
    + 使用 Cloud Manager  {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
       + [AEM 快速启动板](/help/implementing/cloud-manager/aem-home.md)
+      + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
       + 程序 {#programs}
          + [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
