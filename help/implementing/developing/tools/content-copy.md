@@ -4,10 +4,10 @@ description: 内容复制工具使用户能够按需将可变内容从其AEM as 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 35%
+source-wordcount: '1340'
+ht-degree: 34%
 
 ---
 
@@ -133,6 +133,7 @@ ht-degree: 35%
       * 生产
       * 暂存
       * 开发/RDE
+   * 默认情况下，跨项目内容复制处于禁用状态。 但是，根据客户请求，可以启用该功能，这将使附加&#x200B;**目标计划**&#x200B;输入字段可用。
 
 1. 如有必要，您还可以选择在复制过程中&#x200B;**包含访问控制列表**。
 
@@ -193,7 +194,6 @@ ht-degree: 35%
 
 * 内容无法从较低级别的环境复制到较高级别的环境。
 * 只能将内容从创作服务复制到创作服务。
-* 跨程序的内容复制是不可能的。
 * 在同一环境中运行并发的内容复制操作是不可能的。
 * 每个内容集最多可以指定50个路径。 排除的路径没有限制。
 * 请勿将内容复制工具用作克隆或镜像工具，因为它不能跟踪源上已移动或删除的内容。
