@@ -165,5 +165,5 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 ## 最佳实践 {#best-practices}
 
-* 确保您的基于基础组件的表单，仅使用具有等效的[核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的组件。 如果您使用的基础组件没有等效的核心组件，则不会转换基础组件。 因此，它在创作表单时无法正常运行
+* 确保您的基于基础组件的表单，仅使用具有等效的[核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的组件。 如果您使用的基础组件没有等效的核心组件，则不会转换基础组件。 因此，它在创作表单时无法正常运行
 * 确保将基础组件转换为核心组件的规则采用XML格式。

@@ -20,7 +20,7 @@ ht-degree: 92%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html?lang=zh-Hans) |
 
 AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提供用于自定义错误处理函数的功能。例如，可在后端为特定的错误代码调用自定义工作流或通知客户服务已停止。处理程序是根据服务器响应执行的客户端函数。在使用 API 调用外部服务时，数据会传输到服务器以进行验证，这会向客户端返回响应，其中包含有关提交的成功或错误事件的信息。该信息作为参数传递给相关处理程序以执行该函数。错误处理程序可帮助管理和显示遇到的错误或验证问题。
 
@@ -173,12 +173,12 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 * 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 
-* 了解如何[创建自定义函数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules)。
+* 了解如何[创建自定义函数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hans#write-rules)。
 
 
 ## 使用规则编辑器添加错误处理程序 {#add-error-handler-using-rule-editor}
 
-通过使用[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html#invoke)操作，可以根据用于自适应表单的数据源来定义验证标准。如果您使用 RESTful Web 服务作为数据源，则可以在 Swagger 定义文件中定义验证标准。通过在自适应表单中使用错误处理函数和规则编辑器，可以有效地管理和自定义错误处理。可以使用规则编辑器定义条件，并配置在触发规则时要执行的所需操作。自适应表单根据预设验证标准验证您在字段中输入的信息。如果输入值未达到验证标准，则将在自适应表单的字段级别显示错误消息。
+通过使用[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hans#invoke)操作，可以根据用于自适应表单的数据源来定义验证标准。如果您使用 RESTful Web 服务作为数据源，则可以在 Swagger 定义文件中定义验证标准。通过在自适应表单中使用错误处理函数和规则编辑器，可以有效地管理和自定义错误处理。可以使用规则编辑器定义条件，并配置在触发规则时要执行的所需操作。自适应表单根据预设验证标准验证您在字段中输入的信息。如果输入值未达到验证标准，则将在自适应表单的字段级别显示错误消息。
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 ### 添加默认错误处理程序函数 {#add-default-errror-handler}
 
 如果错误响应处于标准架构或服务器端验证失败，则支持默认错误处理程序以在字段上显示错误消息。
-为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#invoke)操作来使用默认错误处理程序，以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用默认错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用规则编辑器的调用服务操作添加默认错误处理程序，请执行以下步骤：
+为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hans#invoke)操作来使用默认错误处理程序，以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用默认错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用规则编辑器的调用服务操作添加默认错误处理程序，请执行以下步骤：
 
 1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
@@ -222,7 +222,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 除了提及的操作之外，自定义错误处理程序还可用于执行满足特定用户要求的自定义函数。
 
 自定义错误处理程序是一个函数（客户端库），旨在响应由外部服务返回的错误并向最终用户提供自定义响应。任何带注释 `@errorHandler` 的客户端库均被视为自定义错误处理程序函数。该注释有助于识别 `.js` 文件中指定的错误处理程序函数。
-为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#invoke)操作来创建和使用自定义错误处理程序，我们以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用自定义错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。
+为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hans#invoke)操作来创建和使用自定义错误处理程序，我们以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用自定义错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。
 
 要在自适应表单中添加和使用自定义错误处理程序，请执行以下步骤：
 
@@ -235,7 +235,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 要创建自定义错误函数，请执行以下步骤：
 
-1. [克隆AEM Forms as a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)。
+1. [克隆AEM Forms as a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)。
 1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹下创建一个文件夹。例如，创建一个名为 `experience-league` 的文件夹
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建一个`ClientLibraryFolder` 作为 `clientlibs`。
 1. 创建一个名为 `js` 的文件夹。
@@ -283,7 +283,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
    >[!NOTE]
    >
-   > 要了解有关如何创建自定义函数的更多信息，请单击[规则编辑器中的自定义函数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules)。
+   > 要了解有关如何创建自定义函数的更多信息，请单击[规则编辑器中的自定义函数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hans#write-rules)。
 
 
 1. 使用以下命令在存储库中添加、提交和推送更改：
@@ -294,7 +294,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
        git push
    ```
 
-1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
+1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)。
 
 成功执行管道后，便能在自适应表单规则编辑器中使用自定义错误处理程序。现在，让我们了解如何使用 AEM Forms 中规则编辑器的调用服务来配置和使用自定义错误处理程序。
 
