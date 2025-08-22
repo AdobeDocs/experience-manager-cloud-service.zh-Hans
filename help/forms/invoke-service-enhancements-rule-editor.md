@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 您还可以添加多个规则来处理来自&#x200B;**调用服务**&#x200B;操作的不成功响应。
 
-**在服务器**&#x200B;上启用错误验证&rbrace;功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
+**在服务器**&#x200B;上启用错误验证}功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
 
 ## 在规则编辑器中使用调用服务的先决条件
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 * 确保已配置数据源。 有关配置数据源的说明，[单击此处](/help/forms/configure-data-sources.md)。
 * 使用配置的数据源创建表单数据模型。 有关创建表单数据模型的指导，[单击此处](/help/forms/create-form-data-models.md)。
-* 确保为您的环境启用了核心组件。 有关如何为您的环境启用核心组件的详细说明，请[单击此处](/help/forms/enable-adaptive-forms-core-components.md)。
+* 确保为您的环境启用了核心组件。 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 
 ## 通过不同的用例探索调用服务
 

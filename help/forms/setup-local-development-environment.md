@@ -1,24 +1,24 @@
 ---
 title: 如何为AEM Forms设置本地开发环境？
-description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
+description: 为Adobe Experience Manager Forms as a Cloud Service设置本地开发环境
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2762'
+source-wordcount: '2759'
 ht-degree: 2%
 
 ---
 
 # 为AEM Forms设置本地开发环境 {#overview}
 
-当您将[!DNL &#x200B; Adobe Experience Manager Forms]设置并配置为[!DNL &#x200B; Cloud Service]环境时，您需要在云上设置开发、暂存和生产环境。 此外，您还可以设置和配置本地开发环境。
+当您将[!DNL  Adobe Experience Manager Forms]设置并配置为[!DNL  Cloud Service]环境时，您需要在云上设置开发、暂存和生产环境。 此外，您还可以设置和配置本地开发环境。
 
 您可以使用本地开发环境执行以下操作，而无需登录到云开发环境：
 
 * [创建表单](creating-adaptive-form.md)和相关资产（主题、模板、自定义提交操作等）
-* [将 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
+* [将 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-hans)
 * 构建应用程序以按需或以批处理模式生成[客户通信](aem-forms-cloud-service-communications-introduction.md)。
 
 在本地开发实例或应用程序上准备好自适应表单或相关资源以生成[客户通信]后，您可以将自适应表单或客户通信应用程序从本地开发环境导出到Cloud Service环境，以进行进一步测试或迁移到生产环境。
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 * [设置开发工具](#setup-development-tools-for-AEM-projects)
 
-* [设置本地创作实例和Publish实例](#set-up-local-experience-manager-environment-for-development)
+* [设置本地创作和发布实例](#set-up-local-experience-manager-environment-for-development)
 
 * [将Forms存档添加到本地开发实例并配置用户](#add-forms-archive-configure-users)
 
@@ -63,7 +63,7 @@ Use a local development environment:
 
 You can use the local development environment to create and test Adaptive Forms without connecting to the service. Adobe provides a SDK for the local development to help test all the cloud-ready functionalities. When your forms and related assets are ready and tested on the local development environment, you can import these forms and related assets to an [!DNL AEM Forms] as a Cloud Service instance for publishing. 
 
-You can use the [development tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/dev-tools.html?lang=zh-Hans) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
+You can use the [development tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/dev-tools.html) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
 
 -->
 
@@ -73,7 +73,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 | 软件 | 描述 | 下载链接 |
 |---|---|---|
-| ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE SDK | SDK包含[!DNL Adobe Experience Manager]快速入门和Dispatcher工具 | 从[软件分发](#software-distribution)下载最新的SDK |  |
+| Adobe Experience Manager as a Cloud Service SDK | SDK包括[!DNL Adobe Experience Manager]快速入门和Dispatcher工具 | 从[软件分发](#software-distribution)下载最新的SDK |  |
 | Adobe Experience Manager Forms功能存档(AEM Forms附加组件) | 用于创建、设置和优化自适应Forms和其他Adobe Experience Manager Forms功能的工具 | 从[软件分发](#software-distribution)下载 |
 | （可选）Adobe Experience Manager Forms参考内容 | 用于创建、设置和优化自适应Forms和其他Adobe Experience Manager Forms功能的工具 | 从[软件分发](#software-distribution)下载 |
 | （可选）Adobe Experience Manager Forms Designer | 用于创建、设置和优化自适应Forms和其他Adobe Experience Manager Forms功能的工具 | 从[软件分发](#software-distribution)下载 |
@@ -86,7 +86,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
    >[!NOTE]
    >
-   > 必须为AEM as a Cloud Service配置您的Adobe组织才能下载AEM as a Cloud Service SDK。
+   > 必须为AEM as a Cloud Service配置您的Adobe组织，才能下载AEM as a Cloud Service SDK。
 
 1. 导航到&#x200B;**[!UICONTROL AEM as a Cloud Service]**&#x200B;选项卡。
 1. 按发布日期降序排序。
@@ -94,44 +94,44 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
    >[!NOTE]
    >
-   > 建议下载最新版本的Experience Manager Forms功能存档(AEM Forms加载项)、表单引用资产或Forms Designer，以便与Adobe Experience Manager as a Cloud Service SDK无缝兼容。
+   > 建议下载最新版本的Experience Manager Forms功能存档(AEM Forms加载项)、表单引用资源或Forms Designer，以便与Adobe Experience Manager as a Cloud Service SDK无缝兼容。
 
 1. 查看并接受EULA。 选择&#x200B;**[!UICONTROL 下载]**&#x200B;按钮。
 
 ## 为AEM项目设置开发工具 {#setup-development-tools-for-AEM-projects}
 
-Adobe Experience Manager Forms项目是一个自定义代码库。 它包含通过Cloud Manager部署到[!DNL Adobe Experience Manager]as a Cloud Service的代码、配置和内容。 [AEM项目Maven原型](https://github.com/adobe/aem-project-archetype)提供项目的基线结构。
+Adobe Experience Manager Forms项目是一个自定义代码库。 它包含通过Cloud Manager部署到[!DNL Adobe Experience Manager] as a Cloud Service的代码、配置和内容。 [AEM项目Maven原型](https://github.com/adobe/aem-project-archetype)提供项目的基线结构。
 
 设置以下开发工具以用于您的[!DNL Adobe Experience Manager]项目进行开发：
 
-* [Java™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans#local-development-environment-set-up)
-* [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans#install-git)
-* [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans#node-js)
-* [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans#install-maven)
+* [Java™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)
+* [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)
+* [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)
+* [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)
 
-有关设置上述开发工具的详细说明，请参阅[设置开发工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans)。
+有关设置上述开发工具的详细说明，请参阅[设置开发工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html)。
 
 ## 设置本地Experience Manager环境以进行开发
 
-Cloud ServiceSDK提供了一个快速启动文件。 它运行本地版本的Experience Manager。 您可以在本地运行Author或Publish实例。
+Cloud Service SDK提供了一个快速入门文件。 它运行本地版本的Experience Manager。 您可以在本地运行创作实例或发布实例。
 
-虽然QuickStart提供了本地开发体验，但它在[!DNL Adobe Experience Manager]as a Cloud Service中没有所有可用功能。 因此，在将功能移至暂存或生产环境之前，请始终使用[!DNL Adobe Experience Manager]as a Cloud Service开发环境测试您的功能和代码。
+虽然QuickStart提供了本地开发体验，但它并不具有[!DNL Adobe Experience Manager] as a Cloud Service中的所有可用功能。 因此，在将功能和代码移至暂存或生产环境之前，请始终使用[!DNL Adobe Experience Manager] as a Cloud Service开发环境测试这些功能和代码。
 
 要安装和配置本地Experience Manager环境，请执行以下步骤：
 
-* [下载并提取](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) [!DNL Adobe Experience Manager]as a Cloud ServiceSDK
-* [设置创作实例](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans#set-up-local-aem-author-service)
-* [设置Publish实例](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans#set-up-local-aem-publish-service)
+* [下载并解压缩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) [!DNL Adobe Experience Manager] as a Cloud Service SDK
+* [设置创作实例](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#set-up-local-aem-author-service)
+* [设置发布实例](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#set-up-local-aem-publish-service)
 
-## 将Forms存档添加到本地创作实例和Publish实例，并配置特定于Forms的用户 {#add-forms-archive-configure-users}
+## 将Forms存档添加到本地创作和发布实例，并配置特定于Forms的用户 {#add-forms-archive-configure-users}
 
 按照列出的顺序执行以下步骤，将Forms存档添加到Experience Manager实例并配置特定于表单的用户：
 
 ### 安装最新的Forms附加功能存档 {#add-forms-archive}
 
-Adobe Experience Manager Formsas a Cloud Service功能存档提供了用于在本地开发环境中创建、样式化和优化自适应Forms的工具。 安装包以创建自适应表单并使用[!DNL AEM Forms]的各种其他功能。 要安装包，请执行以下操作：
+Adobe Experience Manager Forms as a Cloud Service功能存档提供了用于在本地开发环境中创建、样式化和优化自适应Forms的工具。 安装包以创建自适应表单并使用[!DNL AEM Forms]的各种其他功能。 要安装包，请执行以下操作：
 
-1. 从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载并提取操作系统的最新[!DNL AEM Forms]存档。
+1. 从[!DNL AEM Forms]Software Distribution[下载并提取操作系统的最新](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)存档。
 
 1. 导航到crx-quickstart/install目录。 如果该文件夹不存在，请创建它。
 
@@ -140,7 +140,7 @@ Adobe Experience Manager Formsas a Cloud Service功能存档提供了用于在�
 
    >[!NOTE]
    >
-   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java流程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 <!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
 **A**: To resolve the issue:
@@ -151,9 +151,9 @@ Adobe Experience Manager Formsas a Cloud Service功能存档提供了用于在�
 
 ### 配置用户和权限 {#configure-users-and-permissions}
 
-创建像表单开发人员和表单从业者这样的用户，并[将这些用户添加到预定义的表单组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hans#accessing)以为他们提供所需的权限。 下表列出了所有类型的用户和每种表单用户的预定义组：
+创建像表单开发人员和表单从业者这样的用户，并[将这些用户添加到预定义的表单组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=en#accessing)以为他们提供所需的权限。 下表列出了所有类型的用户和每种表单用户的预定义组：
 
-| 用户类型 | AEM组 |
+| 用户类型 | AEM集团 |
 |---|---|
 | 表单操作者/ | [!DNL forms-users] (AEM Forms用户)、[!DNL template-authors]、[!DNL workflow-users]、[!DNL workflow-editors]和[!DNL fdm-authors] |
 | 表单开发人员 | [!DNL forms-users] (AEM Forms用户)、[!DNL template-authors]、[!DNL workflow-users]、[!DNL workflow-editors]和[!DNL fdm-authors] |
@@ -167,7 +167,7 @@ Adobe Experience Manager Formsas a Cloud Service功能存档提供了用于在�
 
 Perform the following steps in the listed order to set up and configure your local development environment:
 
-1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans).  
+1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html).  
 
 1. **Install the latest [!DNL AEM Forms] add-on feature archive:** [!DNL AEM Forms] add-on feature archive provides tools to create, style, and optimize Adaptive Forms on the local development environment. Install the package to create an Adaptive Form and use various other features of [!DNL AEM Forms]. To install the package:
 
@@ -192,16 +192,16 @@ Perform the following steps in the listed order to set up and configure your loc
 
 Use this project to update configurations, create overlays, develop custom Adaptive Form components, and custom code using the local development environment. To set up the project:
 
-1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=zh-Hans).
+1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html).
 
-1. Configure the project to use [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
+1. Configure the project to use [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
 
-1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hans#set-up-an-integrated-development-environment) for detailed instructions.
+1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) for detailed instructions.
  -->
 
 ## 为记录文档(DoR)设置本地开发环境{#docker-microservices}
 
-AEM Forms as aCloud Service提供了基于Docker的SDK环境，可更轻松地开发记录文档并使用其他微服务。 它使您无需手动配置特定于平台的二进制文件和自适应。 要设置环境，请执行以下操作：
+AEM Forms as a Cloud Services提供了基于Docker的SDK环境，可更轻松地开发记录文档并使用其他微服务。 它使您无需手动配置特定于平台的二进制文件和自适应。 要设置环境，请执行以下操作：
 
 1. 安装和配置Docker：
 
@@ -259,7 +259,7 @@ AEM Forms as aCloud Service提供了基于Docker的SDK环境，可更轻松地�
 
 ## 为基于Experience Manager原型的Forms设置开发项目 {#forms-cloud-service-local-development-environment}
 
-使用此项目可在本地[!DNL Experience Manager Forms] SDK上创建自适应Forms、部署配置更新、叠加、创建自定义自适应表单组件、测试和自定义代码。 在本地测试后，您可以将项目部署到[!DNL Experience Manager Forms]as a Cloud Service生产环境和非生产环境。 在部署项目时，还会部署以下AEM Forms资源：
+使用此项目在本地[!DNL Experience Manager Forms] SDK上创建自适应Forms、部署配置更新、叠加、创建自定义自适应表单组件、测试和自定义代码。 在本地测试后，您可以将项目部署到[!DNL Experience Manager Forms]个as a Cloud Service生产环境和非生产环境。 在部署项目时，还会部署以下AEM Forms资源：
 
 | 主题 | 模板 | 表单数据模型(FDM) |
 ---------|----------|---------
@@ -271,21 +271,21 @@ AEM Forms as aCloud Service提供了基于Docker的SDK环境，可更轻松地�
 
 >[!NOTE]
 >
-> 设置基于AEM Archetype版本30或更高版本的项目，以获取并使用Microsoft®Dynamics 365和Salesforce Form Data Model (FDM)以及AEM Formsas a Cloud Service。
-> 设置基于AEM Archetype版本32或更高版本的项目以通过AEM Formsas a Cloud Service获取和使用Tranquil、Urbane和Ultraminary主题。
+> 设置基于AEM Archetype版本30或更高版本的项目，以获取并使用Microsoft®Dynamics 365和Salesforce表单数据模型(FDM)与AEM Forms as a Cloud Service。
+> > 设置基于AEM Archetype版本32或更高版本的项目，以通过AEM Forms as a Cloud Service获取和使用Tranquil、Urbane和Ultraminary主题。
 
 要设置项目，请执行以下操作：
 
-1. **在本地开发实例上克隆Cloud Manager Git存储库：**&#x200B;您的Cloud Manager Git存储库包含默认的AEM项目。 它基于[AEM原型](https://github.com/adobe/aem-project-archetype/)。 使用Cloud Manager UI中的自助Git帐户管理克隆Cloud Manager Git存储库，以将项目引入本地开发环境。 有关访问存储库的详细信息，请参阅[访问存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=zh-Hans)。
+1. **在本地开发实例上克隆Cloud Manager Git存储库：**&#x200B;您的Cloud Manager Git存储库包含默认的AEM项目。 它基于[AEM原型](https://github.com/adobe/aem-project-archetype/)。 使用Cloud Manager UI中的自助Git帐户管理克隆Cloud Manager Git存储库，以将项目引入本地开发环境。 有关访问存储库的详细信息，请参阅[访问存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html)。
 
 <!-- 1. 
-After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=zh-Hans)
+After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
 
-**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
+**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **创建[!DNL Experience Manager Forms]作为[Cloud Service]项目：**&#x200B;根据最新的[AEM原型](https://github.com/adobe/aem-project-archetype)或更高版本，创建[!DNL Experience Manager Forms]作为[Cloud Service]项目。 原型可帮助开发人员轻松开始开发[!DNL AEM Forms]as a Cloud Service。 它还包含一些示例主题和模板，可帮助您快速入门。
+1. **创建[!DNL Experience Manager Forms]作为[Cloud Service]项目：**&#x200B;根据最新的[!DNL Experience Manager Forms]Cloud Service原型[或更高版本，创建]作为[AEM](https://github.com/adobe/aem-project-archetype)项目。 原型可帮助开发人员轻松开始开发[!DNL AEM Forms] as a Cloud Service。 它还包含一些示例主题和模板，可帮助您快速入门。
 
-   打开命令提示符并运行以下命令以创建[!DNL Experience Manager Forms]as a Cloud Service项目。
+   打开命令提示符并运行以下命令以创建[!DNL Experience Manager Forms]个as a Cloud Service项目。
 
    ```shell
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
@@ -305,30 +305,30 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    `mvn -PautoInstallPackage clean install`
 
-   有关命令的完整列表，请参阅[生成和安装](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#building-and-installing)
+   有关命令的完整列表，请参阅[生成和安装](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [将代码部署到您的 [!DNL AEM Forms] as a Cloud Service环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans#customer-releases)。
+1. [将代码部署到您的 [!DNL AEM Forms] as a Cloud Service环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases)。
 
 ## 设置本地Dispatcher工具 {#setup-local-dispatcher-tools}
 
-Dispatcher是一个Apache HTTP Web服务器模块，在CDN和AEM Publish层之间提供了一个安全和性能层。 Dispatcher是整个Experience Manager架构的组成部分，应当是本地开发环境的一部分。
+Dispatcher是一个Apache HTTP Web Server模块，在CDN和AEM发布层之间提供了一个安全和性能层。 Dispatcher是Experience Manager整体架构的组成部分，应当是本地开发环境的一部分。
 
 执行以下步骤以配置本地Dispatcher，然后向其添加特定于Forms的规则：
 
 ### 设置本地Dispatcher {#setup-local-dispatcher}
 
-[!DNL Experience Manager] as a Cloud Service SDK包含推荐的Dispatcher Tools版本，该版本有助于在本地配置、验证和模拟Dispatcher。 Dispatcher Tools基于Docker，它提供了命令行工具，用于将Apache HTTP Web Server和Dispatcher配置文件转换为兼容的格式并将其部署到在Docker容器中运行的Dispatcher。
+[!DNL Experience Manager] as a Cloud Service SDK包括推荐的Dispatcher工具版本，该版本便于在本地配置、验证和模拟Dispatcher。 Dispatcher Tools基于Docker，它提供了命令行工具，用于将Apache HTTP Web Server和Dispatcher配置文件转换为兼容的格式并将其部署到在Docker容器中运行的Dispatcher。
 
 Dispatcher上的缓存允许[!DNL AEM Forms]在客户端预填充自适应Forms。 它提高了预填充表单的渲染速度。
 
-有关设置Dispatcher的详细说明，请参阅[设置本地Dispatcher工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=zh-Hans#local-development-environment-set-up)
+有关设置Dispatcher的详细说明，请参阅[设置本地Dispatcher工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#local-development-environment-set-up)
 
 ### 将特定于Forms的规则添加到Dispatcher {#forms-specific-rules-to-dispatcher}
 
-执行以下步骤可为Experience Manager Formsas a Cloud Service配置Dispatcher缓存：
+执行以下步骤为Experience Manager Forms as a Cloud Service配置Dispatcher缓存：
 
 1. 打开您的AEM项目并导航到`\src\conf.dispatcher.d\available_farms`
-1. 创建`default.farm`文件的副本。 例如：`forms.farm`。
+1. 创建`default.farm`文件的副本。 例如 `forms.farm`。
 1. 打开创建的`forms.farm`文件进行编辑并替换以下代码：
 
    ```json
@@ -349,12 +349,12 @@ Dispatcher上的缓存允许[!DNL AEM Forms]在客户端预填充自适应Forms�
 
 1. 保存并关闭文件。
 1. 转到`conf.d/enabled_farms`并创建指向`forms.farm`文件的符号链接。
-1. 编译项目并将其部署到您的[!DNL AEM Forms]as a Cloud Service环境。
+1. 编译项目并将其部署到您的[!DNL AEM Forms] as a Cloud Service环境。
 
 ### 有关缓存的注意事项 {#considerations-about-caching}
 
 * Dispatcher缓存允许[!DNL AEM Forms]在客户端预填充自适应Forms。 它提高了预填充表单的渲染速度。
-* 默认情况下，缓存受保护内容功能处于禁用状态。 要启用该功能，您可以执行[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)文章中提供的说明
+* 默认情况下，缓存受保护内容功能处于禁用状态。 要启用该功能，您可以执行[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en)文章中提供的说明
 * Dispatcher可能无法使某些自适应Forms和相关自适应Forms失效。 要解决此类问题，请参阅疑难解答部分中的[[!DNL AEM Forms] 缓存](troubleshooting-caching-performance.md)。
 * 缓存本地化的自适应Forms：
    * 使用URL格式`http://host:port/content/forms/af/<afName>.<locale>.html`而不是`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`请求自适应表单的本地化版本
@@ -366,20 +366,21 @@ Dispatcher上的缓存允许[!DNL AEM Forms]在客户端预填充自适应Forms�
 
 ## 在 AEM Forms as a Cloud Service 和本地开发环境上启用自适应表单核心组件
 
-在AEM Formsas a Cloud Service上启用自适应Forms核心组件后，您可以将AEM FormsCloud Service实例用于多个渠道，开始创建、发布和交付基于核心组件的自适应Forms和Headless Forms。 您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
+在AEM Forms as a Cloud Service上启用自适应Forms核心组件，允许您开始创建、发布和交付基于核心组件的自适应Forms和Headless Forms，其中使用AEM Forms Cloud Service实例对多个渠道进行实施。 您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
 
-有关说明，请参阅[在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)
-
+>[!NOTE]
+>
+> 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 
 ## 升级本地开发环境 {#upgrade-your-local-development-environment}
 
-将SDK升级到新版本需要替换整个本地开发环境，从而导致本地存储库中所有代码、配置和内容的丢失。 确保任何不应销毁的代码、配置或内容都会安全提交到Git，或从本地Experience Manager实例中导出为CRX包。
+将SDK升级到新版本需要替换整个本地开发环境，从而导致本地存储库中所有代码、配置和内容丢失。 确保任何不应销毁的代码、配置或内容都会安全提交到Git，或从本地Experience Manager实例中导出为CRX包。
 
-### 如何在升级SDK时避免内容丢失 {#avoid-content-loss-when-upgrading--SDK}
+### 如何避免在升级SDK时丢失内容 {#avoid-content-loss-when-upgrading--SDK}
 
-升级SDK将有效地创建一个全新的创作实例和Publish实例，包括新的存储库([设置AEM项目](#forms-cloud-service-local-development-environment))，这意味着对先前SDK的存储库所做的任何更改都将丢失。 有关在SDK升级之间帮助保留内容的可行策略，请参阅[在升级AEM SDK时如何避免内容丢失](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans#optional-local-aem-runtime-set-up-tasks)
+升级SDK将有效地创建一个全新的创作和发布实例，包括新的存储库([设置AEM项目](#forms-cloud-service-local-development-environment))，这意味着对先前的SDK存储库所做的任何更改都将丢失。 有关在SDK升级期间帮助保留内容的可行策略，请参阅[在升级AEM SDK时如何避免内容丢失](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#optional-local-aem-runtime-set-up-tasks)
 
-<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/32908?quality=9&captions=chi_hans).
+<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
 
 ## Upgrade your local development environment {#update-local-setup}
 
@@ -397,15 +398,15 @@ Upgrading the AEM SDK is effectively creating a brand new AEM runtime ([Set up a
 
 Remember, using the above approaches to maintain code between AEM SDK upgrades, indicates a development anti-pattern. Non-disposable code should originate in your Development IDE and flow into AEM SDK via deployments.
 
-For information about troubleshooting, stopping local AEM environment, run modes, and deployment, see [Set up local AEM Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans#local-development-environment-set-up).-->
+For information about troubleshooting, stopping local AEM environment, run modes, and deployment, see [Set up local AEM Runtime](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#local-development-environment-set-up).-->
 
 ### 备份特定于Forms的内容并将其导入到新的SDK环境中 {#backup-and-import-Forms-specific-content-to-new-SDK-environment}
 
-要将资产从现有SDK备份并移动到新的SDK环境，请执行以下操作：
+要将资源从现有SDK备份并移动到新的SDK环境，请执行以下操作：
 
 * 创建现有内容的备份。
 
-* 设置全新SDK环境。
+* 设置全新的SDK环境。
 
 * 将备份导入到新的SDK环境。
 
@@ -418,7 +419,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 1. 下载表单数据模型
 
-1. 导出可编辑的模板、云配置和工作流模型。 要从现有SDK中导出前面提到的所有项目，请创建包含以下过滤器的[CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans)：
+1. 导出可编辑的模板、云配置和工作流模型。 若要从现有SDK中导出前面提到的所有项目，请创建具有以下过滤器的[CRX-Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)：
 
    * /conf/ReferenceEditableTemplates
    * /conf/global/settings/cloudconfigs
@@ -435,12 +436,12 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 将自适应Forms、模板、表单数据模型、主题、配置和自定义代码导入新环境。 您可以执行以下操作来导入备份：
 
-1. [将](import-export-forms-templates.md#manage-forms-and-related-assets)自适应Forms、主题和PDF forms导入新SDK环境。
-1. 将自适应表单模板导入到新的SDK环境。
+1. [将](import-export-forms-templates.md#manage-forms-and-related-assets)自适应Forms、主题和PDF forms导入新的SDK环境。
+1. 将自适应表单模板导入新的SDK环境。
 
 1. 将表单数据模型上传到新的SDK环境。
 
-1. 导入可编辑的模板、云配置和工作流模型。 要导入新SDK环境中前面提到的所有项目，请将包含这些项目的CRX包导入到新SDK环境中。
+1. 导入可编辑的模板、云配置和工作流模型。 要将前面提到的所有项目导入到新的SDK环境，请将包含这些项目的CRX包导入到新的SDK环境。
 
 1. 从本地开发环境导入电子邮件配置、提交和预填充操作代码。 要导入这些设置和配置，请将以下文件从旧的原型项目放置到新原型项目中：
 

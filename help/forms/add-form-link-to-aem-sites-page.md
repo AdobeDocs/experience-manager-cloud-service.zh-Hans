@@ -3,13 +3,13 @@ title: 如何使用链接Forms Portal组件在AEM Sites页面上添加表单链�
 description: 了解如何将表单链接添加到AEM Sites页面。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
-
 
 # 将表单链接添加到站点页面
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 先决条件
 
-在探索Forms Portal组件的各种功能之前，请确保为您的环境启用了核心组件。 有关如何为您的环境启用核心组件的详细说明，请[单击此处](/help/forms/enable-adaptive-forms-core-components.md)。
+在探索Forms Portal组件的各种功能之前，请确保为您的环境启用了核心组件。 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 
 将最新的核心组件部署到环境后，即可在创作环境中访问Forms Portal组件。
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 1. 转到&#x200B;**[!UICONTROL 页面信息]** > **[!UICONTROL 编辑模板]**
    ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. 单击&#x200B;**[!UICONTROL 策略]**&#x200B;并选择&#x200B;**[AEM原型项目名称] - Forms和通信门户**&#x200B;下的&#x200B;**[!UICONTROL 链接]**&#x200B;复选框。
+1. 单击&#x200B;**[!UICONTROL 策略]**&#x200B;并选择&#x200B;**[!UICONTROL AEM原型项目名称]** - Forms和通信门户&#x200B;**[下的]链接**&#x200B;复选框。
 
    ![策略选择](/help/forms/assets/add-link.png)
 

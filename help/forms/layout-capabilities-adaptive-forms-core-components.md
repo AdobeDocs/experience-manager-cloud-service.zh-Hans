@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 keywords: 基于核心组件的自适应表单布局、表单的不同布局、动态表单布局AEM、AEM Cloud Service表单布局、AEM核心组件中的表单布局类型、自适应表单布局
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
-ht-degree: 1%
+source-wordcount: '2106'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service（核心组件） | 本文 |
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 先决条件
 
-在浏览布局的各种功能之前，请确保为环境启用了核心组件。 有关如何为您的环境启用核心组件的详细说明，请[单击此处](/help/forms/enable-adaptive-forms-core-components.md)。
+在浏览布局的各种功能之前，请确保为环境启用了核心组件。 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 
 ## 自适应Forms布局类型
 
@@ -42,23 +42,23 @@ ht-degree: 1%
 
 >[!TAB 面板布局]
 
-面板布局有助于以更便于导航和查找相应内容的方式组织相关字段。 面板布局将表单组件排列在自适应表单的不同部分或面板中。
+面板布局对于组织相关字段很有帮助，它使得导航和查找相应内容变得更加容易。面板布局将表单组件排列在自适应表单的不同部分或面板中。
 
 ![面板布局](/help/forms/assets/panel-layout.png)
 
 面板布局
 
-您可以使用[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)在表单中添加面板布局。 有关如何配置面板组件的各种属性的详细说明，请参阅[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)文章。
+您可以使用[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)在表单中添加面板布局。有关如何配置面板组件各种属性的详细说明，请参阅[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)一文。
 
 >[!TAB 向导布局]
 
-向导布局通过将复杂表单划分为不同的步骤来帮助简化该表单。 每个步骤代表流程的不同部分，用户按顺序浏览这些步骤，通常使用&#x200B;**下一个**&#x200B;和&#x200B;**上一个**&#x200B;按钮。 您可以使用向导布局创建包含多个部分或步骤的表单。
+向导布局通过将复杂表单划分为不同的步骤来帮助简化该表单。 每个步骤代表流程的不同部分，用户按顺序浏览这些步骤，通常使用&#x200B;**下一个**&#x200B;和&#x200B;**上一个**&#x200B;按钮。 您可以使用向导布局来创建涉及多个部分或步骤的表单。
 
 ![向导布局](/help/forms/assets/wizard-layout-compare.gif)
 
 向导布局
 
-您可以使用[向导组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表单中添加向导布局。 有关如何配置向导组件的各种属性的详细说明，请参阅[向导组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)一文。
+您可以使用[向导组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表单中添加向导布局。有关如何配置向导组件各种属性的详细说明，请参阅[向导组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)一文。
 
 >[!TAB 垂直制表符布局]
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 垂直选项卡布局
 
-您可以使用[垂直制表符组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)在表单中添加垂直制表符布局。 有关如何配置垂直选项卡组件的各种属性的详细说明，请参阅[垂直选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
+您可以使用[垂直制表符组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)在表单中添加垂直制表符布局。 有关如何配置垂直选项卡组件的各种属性的详细说明，请参阅[垂直选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
 
 
 >[!TAB 水平选项卡布局]
@@ -80,18 +80,18 @@ ht-degree: 1%
 
 水平选项卡布局
 
-您可以使用[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
 >[!TAB 折叠布局]
 
-折叠布局在自适应表单中以可折叠部分或面板显示内容。 展开某个部分时，会在其中显示内容，而其他部分仍保持折叠状态。 此布局非常适用于以紧凑形式显示大量信息。
+折叠布局在自适应表单中以可折叠的部分或面板显示内容。当某个部分展开时，它会显示其中的内容，而其他部分则保持折叠状态。这种布局非常适合以紧凑的形式显示大量信息。
 
 ![折叠布局](/help/forms/assets/accordion-layout-compare.gif)
 
-可折叠项布局
+折叠布局
 
-您可以使用[折叠组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)在表单中添加折叠布局。 有关如何配置折叠组件的各种属性的详细说明，请参阅[折叠组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)文章。
+您可以使用[折叠组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)在表单中添加折叠布局。有关如何配置折叠组件各种属性的详细说明，请参阅[折叠组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)一文。
 
 >[!ENDTABS]
 
@@ -101,13 +101,13 @@ ht-degree: 1%
 
 选择正确的自适应表单布局以优化用户体验和表单功能很重要。 该表可帮助您了解可用的各种布局选项，并指导您根据特定需求和用例选择最合适的布局：
 
-| 专题 | 面板布局 | 向导布局 | 选项卡在顶部/垂直选项卡布局中 | 选项卡位于左侧选项卡/水平选项卡布局 | 可折叠项布局 |
+| 功能 | 面板布局 | 向导布局 | 选项卡在顶部/垂直选项卡布局中 | 选项卡位于左侧选项卡/水平选项卡布局 | 折叠布局 |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
-| **目的** | 将相关内容分组为不同的部分 | 指导用户完成多步骤流程或表单 | 允许在同一页面上的各个部分/视图之间切换 | 与顶部选项卡类似，但在左侧垂直排列 | 将内容整理到可折叠部分中 |
-| **结构** | 不同的部分 | 连续步骤/页面 | 顶部的水平选项卡 | 左侧垂直选项卡 | 可折叠面板/区域 |
-| **导航** | 单击面板标题以进行导航 |  — 前进：“下一步”按钮<br> — 后退：“后退”按钮<br> — 可选跳过步骤 | 单击选项卡以切换节 | 单击选项卡以切换节 | 单击标题可展开/折叠部分 |
-| **用户体验** | 以可管理的方式组织大量内容 | 逐步指导，减少负担 | 清晰、可访问的视图间切换 | 有效利用垂直空间，始终显示选项卡 | 具有展开/折叠部分的紧凑视图 |
-| **用例** | 具有已分类分区的复杂表单 | 设置流程，复杂表单 | 组织设置或内容类别 | 仪表板、复杂数据视图 | 常见问题解答、设置菜单、详细内容部分 |
+| **用途** | 将相关内容分组为不同的部分 | 引导用户完成多步骤流程或填写表格 | 允许在同一页面上的各个部分/视图之间切换 | 与顶部选项卡类似，但在左侧垂直排列 | 将内容组织成可折叠的部分 |
+| **结构** | 不同的部分 | 连续步骤/页面 | 顶部的水平选项卡 | 左侧垂直选项卡 | 可折叠面板/部分 |
+| **导航** | 单击面板标头来进行导航 | - 前进：“下一步”按钮<br>- 后退：“返回”按钮<br>- 跳过步骤（可选） | 单击选项卡以切换节 | 单击选项卡以切换节 | 单击标头可展开/折叠相关部分 |
+| **用户体验** | 以可管理的方式组织大量内容 | 逐步指导，减少压力 | 清晰、可访问的视图间切换 | 有效利用垂直空间，始终显示选项卡 | 带有展开/折叠部分的紧凑视图 |
+| **用例** | 具有分类部分的复杂表单 | 设置流程，复杂表单 | 组织设置或内容类别 | 仪表板、复杂数据视图 | 常见问题解答、设置菜单、详细内容部分 |
 
 
 ## 如何插入布局并向其中添加表单组件？
@@ -116,7 +116,7 @@ ht-degree: 1%
 
 ![用于添加布局和表单组件的工作流](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-考虑在[自适应Forms布局类型](#adaptive-forms-layout-types)部分中显示的&#x200B;**IT请求表单**。 该表单从遇到网络或笔记本电脑相关技术问题的员工那里收集信息。 它包括三个面板：
+考虑在&#x200B;**自适应Forms布局类型**&#x200B;部分中显示的[IT请求表单](#adaptive-forms-layout-types)。 该表单从遇到网络或笔记本电脑相关技术问题的员工那里收集信息。 它包括三个面板：
 
 * **员工详细信息**：该面板收集有关该员工的信息，并包含三个标有“姓名”、“电子邮件ID”和“部门”的文本框。
 
@@ -223,7 +223,7 @@ ht-degree: 1%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在允许您添加组件的面板中查找部分。
-1. 单击&#x200B;**添加**&#x200B;图标。 图标是一个加号(+)，表示添加新组件的选项。
+1. 单击&#x200B;**添加**图标。 图标是一个加号(+)，表示添加新组件的选项。
    ![插入布局](/help/forms/assets/tabs-on-top-add-component.png)
 
    单击&#x200B;**添加**&#x200B;图标会显示&#x200B;**插入新组件**&#x200B;对话框，其中显示了要插入的各种组件。

@@ -1,5 +1,5 @@
 ---
-title: 迁移实用程序工具/AEM现代化工具，用于将基于基础组件的自适应Forms转换为基于核心组件的表单
+title: 迁移实用程序工具/AEM可借助现代化工具将基于基础组件的自适应Forms转换为基于核心组件的表单
 description: 了解如何安装并使用迁移实用程序/AEM现代化工具将基于基础组件的自适应Forms转换为基于核心组件的表单。
 Keywords: Migration Utility Tool, Convert Adaptive Forms based on Foundation Components to Core Component based forms, Convert Foundation forms to Core Components forms, Using Modernizer Tool to convert Foundation Components to Core Components in forms.
 role: User, Developer, Admin
@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ Forms转换实用程序是[AEM现代化工具](https://opensource.adobe.com/aem-
 
 [AEM现代化工具](https://opensource.adobe.com/aem-modernize-tools/)是指一组旨在促进现代化或更新Adobe Experience Manager (AEM)项目的实用程序或软件应用程序。 这些工具通常有助于将AEM中的旧组件或功能转换为更新、更高效且受支持的替代项。 Forms转换实用程序安装在“AEM现代化工具”下，用于将基于基础组件的自适应Forms转换为基于核心组件的表单。
 
-Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基于新版核心组件的表单。 此转换过程可确保表单符合现代标准和功能，从而潜在地提高AEM环境中的性能、兼容性和易维护性。
+Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基于新版核心组件的表单。 此转换过程可确保表单与现代标准和功能保持一致，从而潜在地提高AEM环境中的性能、兼容性和易维护性。
 
 ![AEM现代化工具](/help/forms/assets/aem-modernize-tools.png)
 
@@ -54,7 +54,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 ## 使用AEM现代化工具的先决条件
 
 * [为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md)。
-* [为您的环境启用自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)。
+* 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 * 将您的用户添加到[!DNL forms-users]组。 [!DNL forms-users]组的成员有权创建自适应表单。
 * 具有以下角色的用户有权在AEM环境中安装AEM现代化工具：
 
@@ -65,7 +65,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 ## 安装和配置AEM现代化工具
 
-安装和配置AEM现代化工具：
+要安装和配置AEM现代化工具，请执行以下操作：
 
 1. [将AEM现代化工具安装到本地AEM Forms环境](#install-aem-modernize-Tools)
 1. [为本地AEM Forms环境启用AEM现代化工具](#enable-aem-modernize-Tools)
@@ -79,13 +79,13 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    `java -jar aem-author-p4502.jar`
 
-1. 在本地系统中克隆[AEM Modernize Tool](https://github.com/adobe/forms-modernizer)存储库。
+1. 在本地系统中克隆[AEM现代化工具](https://github.com/adobe/forms-modernizer)存储库。
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
    ```
 
-   成功执行该命令后，您的计算机上即存在AEM Modernize Tool存储库的本地副本。
+   成功执行命令后，您的计算机上即有AEM Modernize Tool存储库的本地副本可用。
 
 1. 导航到本地系统中的`[AEM Modernize Tool Repository]`。
 1. 运行以下命令：
@@ -103,19 +103,19 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 ### 为本地AEM Forms环境启用AEM现代化工具{#enable-aem-modernize-Tools}
 
-要为您的AEM环境启用和使用AEM现代化工具，请务必映射用于将Foundation组件迁移到核心组件的规则：
+要为您的AEM环境启用和使用AEM现代化工具，请务必映射将基础组件迁移到核心组件的规则：
 
 1. 登录到您的创作实例。
-1. 导航到`http://[host]:[port]/system/console/configMgr`
+1. 导航至 `http://[host]:[port]/system/console/configMgr`
 1. 查找并编辑`AEM Modernize Tools - Component Rewrite Rule Service`。
 1. 将`Component Rule Paths`添加为`/apps/forms-modernizer/rules`。
-1. 点击&#x200B;**保存**&#x200B;即可保存更改。
+1. 单击&#x200B;**保存**&#x200B;即可保存更改。
 
 ![AEM现代化组件规则](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
 ## 运行表单转换实用程序，将基于基础组件的表单转换为基于核心组件的表单
 
-1. 转到&#x200B;**[!UICONTROL 工具> AEM现代化工具> Forms转换]**。
+1. 转到&#x200B;**[!UICONTROL 工具> AEM现代化工具> Forms转化]**。
 
    ![选择AEM现代化工具](/help/forms/assets/aem-modernize-tools-select-form.png)
 
@@ -136,8 +136,8 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    在本例中，已选择&#x200B;**复制到目标**&#x200B;选项。 如果选择了&#x200B;**复制到目标**&#x200B;选项，则&#x200B;**[!UICONTROL Source路径]**&#x200B;和&#x200B;**[!UICONTROL 目标路径]**&#x200B;选项将变为可见。
 
-1. 在&#x200B;**[!UICONTROL Source路径]**&#x200B;中指定`source folder`名称。
-1. 在&#x200B;**[!UICONTROL 目标路径]**&#x200B;中指定`target folder`名称。
+1. 在`source folder`Source路径&#x200B;**[!UICONTROL 中指定]**&#x200B;名称。
+1. 在`target folder`目标路径&#x200B;**[!UICONTROL 中指定]**&#x200B;名称。
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
 1. 单击&#x200B;**[!UICONTROL 添加Forms]**。 `source folder`中的所有表单都会显示在屏幕上。
 1. 选择基于基础组件的自适应Forms以将其转换为基于核心组件的表单。 您还可以选择多个表单。
@@ -158,12 +158,12 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    ![AEM现代化工具目标文件夹](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以再次保存已转换表单的属性。
+1. 选择&#x200B;**[!UICONTROL 保存并关闭]**以再次保存已转换表单的属性。
    ![AEM现代化工具自适应表单属性](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 现在，您可以看到基于基础组件构建的自适应表单已转换为基于核心组件构建的自适应表单。
 
 ## 最佳实践 {#best-practices}
 
-* 确保您的基于基础组件的表单，仅使用具有等效的[核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的组件。 如果您使用的基础组件没有等效的核心组件，则不会转换基础组件。 因此，它在创作表单时无法正常运行
+* 确保您的基于基础组件的表单，仅使用具有等效的[核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的组件。 如果您使用的基础组件没有等效的核心组件，则不会转换基础组件。 因此，它在创作表单时无法正常运行
 * 确保将基础组件转换为核心组件的规则采用XML格式。
