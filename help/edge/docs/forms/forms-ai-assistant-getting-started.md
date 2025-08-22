@@ -6,13 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1737'
 ht-degree: 15%
 
 ---
+
 
 # Forms Experience Builder快速入门
 
@@ -97,11 +97,10 @@ ht-degree: 15%
 * **请求帮助**：类型`/help`，后跟您的问题
 * **迭代**：一次进行一项更改以获得最佳结果
 
-## 核心功能
 
-### 创建Forms的两种方法
+## 开始创建表单的方法
 
-#### 1.从头开始创建
+### 1.从自然语言提示开始
 
 使用自然语言描述您的表单要求，Forms Experience Builder将生成完整的表单结构：
 
@@ -111,17 +110,17 @@ ht-degree: 15%
 * “构建包含评级、评论和产品类别的客户反馈表单”
 * “我需要一张多步骤注册表，以便参加具有支付处理功能的会议”
 
-#### 2.导入和转换
+### 2.导入和转换
 
 将现有表单和文档转换为现代交互式体验：
 
 **支持的源：**
 
-* **PDF forms**：上传静态PDF→交互式数字表单，并进行验证
-* **屏幕截图/图像**：纸质表单→功能数字版本的照片
-* **HTML Forms**：具有高级功能的基本Web窗体→增强型AEM Forms
-* **XFA Forms**：旧版Adobe表单→现代响应式表单
-* **URL**：具有改进UX→本机AEM Forms的现有Web窗体
+* **PDF forms**：上传静态PDF以将其转换为具有验证的交互式数字表单。
+* **屏幕快照或图像**：上传纸质表单的照片以生成功能性的数字版本
+* **HTML Forms**：导入基本Web窗体并将其转换为具有高级功能的增强型AEM Forms
+* **XFA Forms**：将旧版基于XFA的表单转换为现代响应式表单
+* **URL**：将现有Web窗体转换为改进了UX的本机AEM Forms
 
 **如何导入：**
 
@@ -482,4 +481,4 @@ Forms Experience Builder还可以向您讲授AEM Forms的功能：
 
 **仍需要帮助？**&#x200B;键入`/help`，后跟您的特定问题或联系您的系统管理员。
 
-有关其他支持，请参阅主[Forms Experience Builder提示库](/help/edge/docs/forms/ai-assistant-prompt-library.md)，或与系统管理员联系以获得技术帮助。
+有关其他支持，请参阅主[Forms Experience Builder提示库](ai-assistant-prompt-library.md)，或与系统管理员联系以获得技术帮助。
