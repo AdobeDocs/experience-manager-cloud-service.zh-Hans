@@ -223,7 +223,7 @@ ht-degree: 15%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在允许您添加组件的面板中查找部分。
-1. 单击&#x200B;**添加**图标。 图标是一个加号(+)，表示添加新组件的选项。
+1. 单击&#x200B;**添加**&#x200B;图标。 图标是一个加号(+)，表示添加新组件的选项。
    ![插入布局](/help/forms/assets/tabs-on-top-add-component.png)
 
    单击&#x200B;**添加**&#x200B;图标会显示&#x200B;**插入新组件**&#x200B;对话框，其中显示了要插入的各种组件。

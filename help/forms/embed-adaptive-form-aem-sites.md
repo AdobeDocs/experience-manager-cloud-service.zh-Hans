@@ -163,7 +163,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![自适应Forms — 嵌入组件](/help/forms/assets/aemformcontainer.png)
 
-1. 从&#x200B;**[!UICONTROL 表单创建]**向导创建新的自适应表单。
+1. 从&#x200B;**[!UICONTROL 表单创建]**&#x200B;向导创建新的自适应表单。
 **[!UICONTROL 资产路径]**&#x200B;已包含已创建的自适应表单的路径
 1. 保存设置。 现在，自适应表单已嵌入到页面中。
 
@@ -182,7 +182,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![自适应Forms — 嵌入组件](/help/forms/assets/aemformcontainer.png)
 
-1. 从&#x200B;**[!UICONTROL 表单创建]**向导创建新的自适应表单。
+1. 从&#x200B;**[!UICONTROL 表单创建]**&#x200B;向导创建新的自适应表单。
 **[!UICONTROL 资产路径]**&#x200B;已包含已创建的自适应表单的路径
 1. 保存设置。 自适应表单现在嵌入到体验片段中。
 
@@ -258,7 +258,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
   >
   > 您只能对自适应表单(Foundation)使用&#x200B;**使用页面语言**、**设置焦点**&#x200B;和&#x200B;**主题**&#x200B;选项。
 
-* **表单覆盖框架**的整个宽度：
+* **表单覆盖框架**&#x200B;的整个宽度：
 内联框架(iframe)是一个HTML元素，用于将自适应表单加载到AEM Sites页面。
 
    * 如果选中&#x200B;**[!UICONTROL 表单覆盖框架]**&#x200B;的整个宽度，则自适应表单将占据其所在容器的整个宽度。 在这种情况下，不使用iframe呈现表单。 自适应表单的布局和设计可适应容器的整个宽度，使其响应速度快并可根据不同的屏幕大小进行调整。 利用此选项，您可以在AEM Sites页面中嵌入多个自适应Forms。

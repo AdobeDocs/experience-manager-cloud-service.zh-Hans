@@ -158,7 +158,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    ![AEM现代化工具目标文件夹](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存并关闭]**以再次保存已转换表单的属性。
+1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以再次保存已转换表单的属性。
    ![AEM现代化工具自适应表单属性](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 现在，您可以看到基于基础组件构建的自适应表单已转换为基于核心组件构建的自适应表单。
