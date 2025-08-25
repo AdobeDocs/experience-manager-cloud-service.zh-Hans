@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 94%
+source-wordcount: '2496'
+ht-degree: 93%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 94%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
@@ -157,7 +157,7 @@ XML 和 JSON 架构代表组织中的后端系统在其中生成或使用数据�
   </tr>
   <tr>
    <td>电子邮件</td>
-   <td><p>添加字段以捕获电子邮件地址。默认情况下，电子邮件组件使用以下正则表达式来验证电子邮件地址。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>添加字段以捕获电子邮件地址。默认情况下，电子邮件组件使用以下正则表达式来验证电子邮件地址。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>文件附件</td>
@@ -363,6 +363,10 @@ J. **其他**：提供更多选项来处理所选组件。
 * **工具栏：**&#x200B;自适应表单容器有一个关联的全局工具栏，它是表单的全局工具栏。可以使用编辑栏中的&#x200B;**[!UICONTROL 添加工具栏]**&#x200B;操作来添加此工具栏，这可让作者添加操作，例如提交、保存、重置等。
 
 * **资源：**&#x200B;此节点包含用于表单创作的附加信息。例如，表单模型详细信息、本地化详细信息等。
+
+## AEM的人工智能助手
+
+对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
 
 ## 另请参阅 {#see-also}
 

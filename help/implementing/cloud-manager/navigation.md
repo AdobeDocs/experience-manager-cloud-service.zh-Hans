@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1693'
 ht-degree: 38%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 38%
 
 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 
+
 Cloud manage UI 主要由两个图形界面组成：
 
 * 在[我的程序控制台](#my-programs-console)中，您可以查看和管理您的所有程序。
@@ -25,6 +26,12 @@ Cloud manage UI 主要由两个图形界面组成：
 >[!TIP]
 >
 >另请查看[入门文档历程](/help/journey-onboarding/overview.md)，全面了解如何使用Cloud Manager启动和运行AEM as a Cloud Service。
+
+
+## AEM的人工智能助手
+
+对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
+
 
 ## 我的程序控制台 {#my-programs-console}
 
@@ -36,9 +43,9 @@ Cloud manage UI 主要由两个图形界面组成：
 
 1. 用于组织选择、警报和帐户设置的[工具栏](#toolbars-my-programs-toolbars)
 1. 使用选项卡可以切换程序的当前视图。
-   * **主页** 视图（默认），选择 **我的程序** 视图，其中显示所有项目的概览
-   * 访问[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)的&#x200B;**许可证**。
-   * 请注意，这些选项卡默认为已关闭，可以使用[Cloud Manager标题](#cloud-manager-header)中的![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)显示。
+   * **主页** 视图（默认），选择 **我的程序** 视图，其中显示所有项目的概述
+   * 访问&#x200B;**许可证仪表板**&#x200B;的[许可证](/help/implementing/cloud-manager/license-dashboard.md)。
+   * 请注意，这些选项卡默认为已关闭，可以使用![Cloud Manager标题](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)中的[显示菜单图标](#cloud-manager-header)显示。
 1. [统计数据和行动号召](#statistics)，用于概述您最近的活动
 1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
 1. [快速链接](#quick-links-section)以轻松访问相关资源。
@@ -58,10 +65,10 @@ Cloud manage UI 主要由两个图形界面组成：
 ![Experience Cloud 标头](assets/experience-cloud-header.png)
 
 1. 单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)（显示或隐藏侧菜单）可让您访问各种选项卡，这些选项卡可引导您访问各个程序的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
-1. 单击“AdobeCloud Manager”按钮可让您返回Cloud Manager的“我的程序”控制台，无论您在Cloud Manager中的哪个位置。
-1. 单击&#x200B;**反馈**&#x200B;向Adobe提供有关Cloud Manager的反馈。
+1. 单击Adobe Cloud Manager按钮可让您返回Cloud Manager的“我的程序”控制台，无论您在Cloud Manager中的哪个位置。
+1. 单击&#x200B;**反馈**，向 Adobe 提供有关 Cloud Manager 的反馈。
 1. 单击组织选择器可显示您当前已登录的组织（在本例中为Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请单击以切换到另一个组织。
-1. 单击![应用图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) （解决方案切换器）可快速跳转到其他Experience Cloud解决方案。
+1. 单击![应用程序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) （解决方案切换器）可快速跳转到其他Experience Cloud解决方案。
 1. 单击![帮助图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg)可让您快速访问学习和支持资源。
 1. 单击![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）查看通知和公告等。
 1. 单击表示用户对您的用户设置的访问权限的图标。 如果您尚未配置用户图片，系统会随机分配一个图标。
@@ -78,7 +85,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ### 统计和行动号召 {#statistics}
 
-统计和行动号召部分提供组织的汇总数据，例如，如果您已成功设置程序，则可能会显示过去90天的活动统计数据，包括：
+统计和call-to-action部分提供组织的汇总数据，例如，如果您已成功设置程序，则可能会显示过去90天的活动统计数据，包括：
 
 * [部署](/help/implementing/cloud-manager/deploy-code.md)次数
 * 已发现的[代码质量问题](/help/implementing/cloud-manager/code-quality-testing.md)数量
@@ -118,8 +125,8 @@ Cloud manage UI 主要由两个图形界面组成：
 * 与项目关联的图像（如果已配置）。 上图为“WKND”。
 * 分配给项目的名称。 上图将“SecurBank Sample”显示为程序名称。
 * 服务类型：
-   * **Experience Manager云** — 用于AEM as a Cloud Service程序
-   * **Experience Manager** — 用于[AMS (AdobeManaged Services)程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager Cloud** — 用于AEM as a Cloud Service程序
+   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙盒
    * 生产
@@ -146,7 +153,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 导航到项目的特定![数据图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [环境](/help/implementing/cloud-manager/manage-environments.md)
 * 打开![项目概述图标](/help/implementing/cloud-manager/assets/program-overview.svg) [项目概述](#program-overview)
 * ![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -175,7 +182,7 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 对程序[环境的概述](#environments)
 1. 对程序[管道的概述](#pipelines)
 1. [计划绩效](#performance)概述
-1. [有用资源](#useful-resources)的链接
+1.  [有用资源](#useful-resources)的链接
 
 ### 工具栏 {#program-overview-toolbar}
 
@@ -183,11 +190,11 @@ Cloud manage UI 主要由两个图形界面组成：
 
 #### Cloud Manager 标头 {#cloud-manager-header-2}
 
-页面的左上角是Cloud Manager标题Adobe。 您可以单击![侧菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)来显示或隐藏选项卡的侧菜单到软件的其他区域。
+页面的左上角是Adobe Cloud Manager标题。 您可以单击![侧菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)来显示或隐藏选项卡的侧菜单到软件的其他区域。
 
 ![Cloud Manager侧菜单](assets/cloud-manager-hamburger.png)
 
-单击AdobeCloud Manager以返回到主页。
+单击Adobe Cloud Manager以返回到主页。
 
 #### 程序工具栏 {#program-toolbar-2}
 
@@ -233,7 +240,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 行动号召部分会根据您的程序状态为您提供有用的信息。 对于新计划，您可能会看到给出的后续步骤以及上线日期提醒，[在计划创建期间设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
 
-新项目的![行动号召](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+新计划的![Call-to-action](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
 对于实时程序，上次部署的状态包含详细信息链接以及开始新部署的链接。
 

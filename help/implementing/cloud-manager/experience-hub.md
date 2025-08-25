@@ -8,9 +8,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 7835fba8383893a961226a8cc77cc9c38d4f2959
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -84,4 +84,4 @@ Adobe Experience Manager页面已更新，导航和交互式构件已得到增�
 
 ## AEM的人工智能助手
 
-对于具有[已完成必备条件](/help/implementing/cloud-manager/aem-ai-assistant.md#get-access)的客户，其组织的用户可以使用AEM中的AEM AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/aem-ai-assistant.md)。
+对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。

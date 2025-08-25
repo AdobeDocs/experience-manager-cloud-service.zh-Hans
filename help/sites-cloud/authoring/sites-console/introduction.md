@@ -5,9 +5,9 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1653'
 ht-degree: 45%
 
 ---
@@ -185,7 +185,7 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 
 ![快速操作](assets/sites-console-quick-actions.png)
 
-您可以通过点按/单击卡片对树进行向下导航（注意避免点按快速操作），或使用标题[&#128279;](#the-header)中的痕迹导航再次向上导航。
+您可以通过点按/单击卡片对树进行向下导航（注意避免点按快速操作），或使用标题[中的](#the-header)痕迹导航再次向上导航。
 
 ### 列表视图 {#list-view}
 
@@ -194,7 +194,7 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 ![列表视图](assets/sites-console-list-view.png)
 
 * 您可以通过点按/单击资源名称对树进行向下导航，并使用[标题中的痕迹导航](#the-header)再次向上导航。
-* 要轻松选择列表中的所有项目，请使用工具栏[&#128279;](#select-all)中的&#x200B;**全选**&#x200B;复选框。
+* 要轻松选择列表中的所有项目，请使用工具栏&#x200B;[**中的**&#x200B;全选](#select-all)复选框。
 
 * 可使用位于“视图”按钮下方的&#x200B;**查看设置**&#x200B;选项选择要显示的列。可以显示以下列：
 
@@ -263,3 +263,8 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 ## 模板
 
 在&#x200B;[**列视图**](/help/sites-cloud/authoring/basic-handling.md#column-view)&#x200B;或&#x200B;[**列表视图**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;中选择页面时，您可以轻松查看该页面所基于的模板。
+
+## AEM的人工智能助手
+
+对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
+

@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 05cd6bd0a4e4a65ac81053e6058cfd39cbd08148
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.8.0 的发布日期是 2025 年
 
 ## 新增功能 {#what-is-new}
 
-* **Adobe Experience Hub即将推出**
+* **Adobe Experience Hub 即将推出**
 
-  从2025年8月19日开始，Adobe将分阶段向所有Adobe Experience Manager用户推出新的Experience Hub。
+  从 2025 年 8 月 19 日开始，Adobe 开始分阶段向所有 Adobe Experience Manager 用户推出新的 Experience Hub。
 
-  Experience Hub是一个统一的起点，可提供个性化的情境式体验，帮助用户更快地实现目标。 该推出将于2025年8月26日结束，可供所有用户使用。 新的Experience Hub可直接在[experience.adobe.com](https://experience.adobe.com/)中访问。 若要了解更多信息，请参阅[Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md)。
+  Experience Hub 是一个统一的起点，提供个性化的上下文体验，帮助用户更快地实现目标。推出过程于 2025 年 8 月 26 日结束，届时所有用户均可使用。新的 Experience Hub 可直接在 [experience.adobe.com](https://experience.adobe.com/) 上访问。更多信息请参阅 [Adobe Experience Hub](/help/implementing/cloud-manager/experience-hub.md)。
 
 * **Edge Delivery Services 许可证可以通过自助方式纳入 HIPAA 计划**
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.8.0 的发布日期是 2025 年
 
      ![创建生产程序时解决方案和附加组件中的 Forms 附加组件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *在创建程序期间，您可以选择 Sites 解决方案中的 Forms 附加组件。*
 
-     ![编辑生产程序时的 Forms 附加组件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**编辑程序**&#x200B;中为 Sites 计划选择 Forms 附加组件，然后运行管道，在环境中将其激活。*
+     ![编辑生产程序时的 Forms 附加组件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**编辑程序**中为 Sites 计划选择 Forms 附加组件，然后运行管道，在环境中将其激活。*
 
      更多信息请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 
@@ -68,10 +68,10 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.8.0 的发布日期是 2025 年
 
 当最新的客户源代码未如预期运行时，可迅速回滚至先前的部署，无需重新运行完整管道或手动回退提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**&#x200B;选项。*
+![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**选项。*
 
 ![“还原先前部署的代码”对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
+*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
 
 ![恢复激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager 会将环境回滚至较早的构建版本，保留内容和配置不变，并在部署完成前将该环境标记为&#x200B;**还原中**。*
@@ -95,11 +95,11 @@ Cloud Manager 现已支持添加名为&#x200B;**专用测试环境**&#x200B;的�
 
 请参阅[添加专门的测试环境](/help/implementing/cloud-manager/specialized-test-environment.md)。
 
-![“添加环境”对话框中，其中选中了“专门测试环境”单选按钮](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+![“添加环境”对话框中选中了“专用测试环境”单选按钮](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
 >[!NOTE]
 >
->Adobe已关闭针对专业测试环境的测试版访问请求，参与者数量已足够。 该功能现在正在准备正式发布。
+>Adobe 已关闭针对专用测试环境的 Beta 版访问请求，因为已获得足够多的参与者。该功能目前正在为全面推出做准备。
 
 <!--
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
@@ -156,7 +156,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![过滤器面板显示新的投放类型：边缘投放和发布投放](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 

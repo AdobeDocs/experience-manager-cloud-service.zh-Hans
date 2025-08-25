@@ -7,9 +7,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d36eb5807718f3d20ea0c3de4491981cb7942b44
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ AI助手支持AEM as a Cloud Service，包括以下解决方案：
 
 以下时长3分钟、时长39秒的视频分步介绍AEM中的AI助手。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470365?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## 访问AEM中的AI助手{#get-access}
 
@@ -44,17 +45,15 @@ AI助手支持AEM as a Cloud Service，包括以下解决方案：
 
 AEM中的AI助手请求通过Adobe Identity Management服务(IMS)进行身份验证。 有关详细信息，请参阅[Adobe Identity Management服务概述](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)。
 
->[!NOTE]
-> 
->客户组织必须接受其他法律条款才能启用AI助手。 有关详细信息，请联系您的Adobe客户代表。
-
 **要访问AEM中的AI助手：**
 
-1. [客户必须使用Adobe签署Gen AI附加程序](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1)。
+1. 客户必须签订附加协议才能访问Adobe Experience Manager中的大多数AI支持的和代理功能。 有关详细信息，请与Adobe代表联系。
 
-   GenAI Rider是客户与Adobe之间的法律协议，需要使用大多数AI和代理功能。 请联系Adobe客户关怀团队以了解更多信息。
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
 
-1. AEM管理员可配置AI助手，以供在其组织中使用。 请参阅[在AEM中配置AI助手](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)。
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+
+1. AEM管理员可配置AI助手，以供在其组织中使用。 请参阅[在AEM中配置AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)。
 
 <!--
 >[!IMPORTANT]
@@ -133,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -148,7 +147,11 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
    工具栏上的![AI助手图标](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. 在底部附近的&#x200B;**AI助手**&#x200B;面板文本框中，键入您的问题，然后按`Enter`或单击![发送图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg)。
+1. 在底部附近的&#x200B;**AI助手**&#x200B;面板文本框中，键入您的问题或提示，然后按`Enter`或单击![发送图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg)。
+
+   >[!NOTE]
+   >
+   >个人数据不应包含在您的输入中，因为使用此工具没有必要。
 
    ![AI助手面板底部的文本框](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -168,7 +171,7 @@ AEM中的AI助手包括可发现功能，可帮助您探索支持的主题和类
    显示AI助手中的提示类别的&#x200B;*面板。*
 
 1. 选择一个类别以查看相关提示的列表。
-1. 选择提示以查看AEM AI助手可以回答的问题类型的示例。
+1. 选择提示以查看AI助手可以回答的问题类型的示例。
 
 1. 若要隐藏提示发现面板，请再次单击![学习图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)。
 
