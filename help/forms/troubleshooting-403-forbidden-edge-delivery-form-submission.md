@@ -3,13 +3,13 @@ title: 对Edge Delivery Services表单提交中的403禁止错误进行故障诊
 description: 了解如何诊断和解决在从Edge Delivery Services提交表单到AEM Publish时出现403禁止显示的错误。 本指南涵盖的常见原因包括CORS、Dispatcher规则和反向链接筛选条件问题。
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
-
 
 # 对Edge Delivery Services表单提交中的403禁止错误进行故障诊断 {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -169,7 +169,7 @@ Dispatcher过滤器配置示例：
 
 >[!IMPORTANT]
 >
->**Forrepoless设置：**&#x200B;您必须将每个站点域单独添加到`allow.hosts`数组。 仅使用正则表达式模式可能并不足以满足所有场景。 包括特定域和正则表达式模式以实现全面覆盖。
+>**对于重写设置：**&#x200B;必须将每个站点域单独添加到`allow.hosts`数组。 仅使用正则表达式模式可能并不足以满足所有场景。 包括特定域和正则表达式模式以实现全面覆盖。
 
 >[!WARNING]
 >
@@ -186,7 +186,7 @@ Dispatcher过滤器配置示例：
 3. 尝试提交表单
 4. 查找与CORS相关的错误消息
 
-**如果存在CORS错误：**&#x200B;请按照上述CORS解决方案操作。
+**如果存在CORS错误：**请按照上述CORS解决方案操作。
 **如果没有CORS错误：**&#x200B;请继续执行步骤2。
 
 ### 步骤2：检查网络选项卡
@@ -197,7 +197,7 @@ Dispatcher过滤器配置示例：
 4. 检查失败的请求详细信息
 5. 查看响应标头和状态
 
-**如果请求未到达服务器：**&#x200B;可能是Dispatcher问题。
+**如果请求未到达服务器：**可能是Dispatcher问题。
 **如果请求到达服务器但失败：**&#x200B;可能是反向链接筛选条件问题。
 
 ### 步骤3：检查AEM日志
@@ -262,14 +262,14 @@ Dispatcher过滤器配置示例：
 ## 其他资源
 
 - [AEM Headless的反向链接筛选条件配置](/help/headless/deployment/referrer-filter.md)
-- [CORS配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [CORS 配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [了解跨源资源共享](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Edge Delivery Services Forms文档](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## 相关主题
 
 - [配置提交操作](/help/forms/configuring-submit-actions.md)
-- [Forms提交服务](/help/forms/forms-submission-service.md)
+- [Forms Submission Service](/help/forms/forms-submission-service.md)
 - [Edge Delivery Services 概述](/help/edge/overview.md)
 
 

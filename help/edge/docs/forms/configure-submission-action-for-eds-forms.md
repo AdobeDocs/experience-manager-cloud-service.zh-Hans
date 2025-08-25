@@ -4,10 +4,10 @@ description: 了解如何在使用 Edge Delivery Services 的 AEM Forms 中配�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
-source-wordcount: '855'
-ht-degree: 100%
+source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 79%
 
 ---
 
@@ -98,27 +98,100 @@ ht-degree: 100%
 
 ### 配置要求
 
-#### &#x200B;1. AEM Dispatcher 配置
+#### 1.在Edge Delivery中更新AEM实例URL
 
-在 AEM 发布实例上配置 Dispatcher：
+在`constant.js`下的`form`块的`submitBaseUrl`文件中更新AEM Cloud Service实例URL。 您可以根据环境配置URL：
 
-- **允许提交路径**：更改 `filters.any` 以允许对 `/adobe/forms/af/submit/...` 的 POST 请求
-- **不重定向**：确保 Dispatcher 规则不会将表单提交路径重定向
+用于Cloud Service实例的&#x200B;****
+
+```js
+export const submitBaseUrl = '<aem-publish-instance-URL>';
+```
+
+用于本地开发的&#x200B;****
+
+```js
+export const submitBaseUrl = 'http://localhost:<port-number>';
+```
 
 #### &#x200B;2. OSGi 引荐来源过滤器
 
-在 AEM OSGi 控制台 (`/system/console/configMgr`) 中：
+配置反向链接筛选条件，以允许您的特定Edge Delivery站点域：
 
-1. 查找“Apache Sling 引荐来源过滤器”
-2. 将您的 Edge Delivery 域添加到“允许主机”列表
-3. 包括以下域 `https://your-eds-domain.hlx.page`
+1. 创建或更新OSGi配置文件： `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-#### &#x200B;3. CDN 重定向规则
+2. 为您的特定站点域添加以下配置：
 
-将 Edge Delivery CDN 配置为路由提交：
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "main--abc--adobe.aem.live",
+       "main--abc1--adobe.aem.live"
+     ],
+     "allow.hosts.regexp": [
+       "https://.*\\.aem\\.live:443",
+       "https://.*\\.aem\\.page:443",
+       "https://.*\\.hlx\\.page:443",
+       "https://.*\\.hlx\\.live:443"
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
 
-- 将请求从 `/adobe/forms/af/submit/...` 路由到 AEM 发布实例
-- 实施因 CDN 提供商（Fastly、Akamai、Cloudflare）而异
+3. 通过Cloud Manager部署配置
+
+有关详细的OSGi反向链接筛选条件配置，请参阅[反向链接筛选条件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)指南。
+
+#### &#x200B;3. CORS（跨源资源共享）问题
+
+在AEM中配置CORS设置，以允许来自您的特定Edge Delivery站点域的请求：
+
+**开发人员本地主机**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+```
+
+**Edge Delivery站点 — 单独添加每个站点域**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+```
+
+**旧版Franklin域（如果仍在使用）**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+```
+
+>[!NOTE]
+>
+>将`main--abc--adobe.aem.live`和`main--abc1--adobe.aem.live`替换为您的实际网站域。 从同一存储库托管的每个站点都需要一个单独的CORS配置条目。
+
+有关详细的CORS配置，请参阅[CORS配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
+
+
+要为本地开发环境启用CORS，请参阅[了解跨源资源共享(CORS)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)文章。
+
+<!--
+#### 4. CDN Redirect Rules
+
+Configure your Edge Delivery CDN to route submissions:
+
+- Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### &#x200B;4. 表单配置
 
@@ -128,54 +201,54 @@ ht-degree: 100%
 4. 将表单发布到 Edge Delivery 网站
 
 +++
+<!--
++++ Form Embedding
 
-+++ 表单嵌入（可选）
+Embed forms created in one location into different web pages or sites.
 
-将在一个位置创建的表单嵌入到不同的网页或网站中。
+### Use Cases
 
-### 用例
+- Reuse standard forms across multiple landing pages
+- Include specialized forms in Document-Authored content
+- Maintain single form across multiple EDS projects
 
-- 在多个登陆页面上重复使用标准表单
-- 在文档创作的内容中包含专门的表单
-- 在多个 EDS 项目中维护一个表单
+### CORS Configuration
 
-### CORS 配置
+Configure Cross-Origin Resource Sharing on the form source:
 
-配置表单源上的跨来源资源共享：
-
-1. **将 CORS 标头添加**&#x200B;到表单源响应：
+1. **Add CORS Headers** to form source responses:
    - `Access-Control-Allow-Origin: https://your-host-domain.com`
-   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`  
    - `Access-Control-Allow-Headers: Content-Type`
 
-2. **配置示例**：
+2. **Example Configuration**:
 
-       # 托管表单的网站的配置
-       标头：
-       - 路径：/forms/**
-       自定义：
-       Access-Control-Allow-Origin: https://host-domain.com
-       Access-Control-Allow-Methods: GET, OPTIONS
-   
-### 嵌入步骤
+        # Configuration for site hosting the form
+        headers:
+          - path: /forms/**
+            custom:
+              Access-Control-Allow-Origin: https://host-domain.com
+              Access-Control-Allow-Methods: GET, OPTIONS
 
-1. **创建并发布表单**
-   - 使用文档创作或通用编辑器构建表单
-   - 配置提交方法（FSS 或 AEM 发布）
-   - 发布到独立 URL
+### Embedding Steps
 
-2. **配置 CORS**
-   - 设置表单源网站上的 CORS 标头
-   - 允许主机页面的域获取表单
+1. **Create and Publish Form**
+   - Build form using Document Authoring or Universal Editor
+   - Configure submission method (FSS or AEM Publish)
+   - Publish to standalone URL
 
-3. **嵌入到主机页面**
-   - 将表单嵌入块添加到主机页面
-   - 将嵌入块指向已发布的表单 URL
-   - 发布主机页面
+2. **Configure CORS**
+   - Set up CORS headers on form source site
+   - Allow host page domain to fetch form
 
-![嵌入式表单架构](/help/forms/assets/eds-embedded-form.png)
+3. **Embed in Host Page**
+   - Add form embedding block to host page
+   - Point block to published form URL
+   - Publish host page
 
-+++
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
+
++++-->
 
 +++ 常见问题
 
