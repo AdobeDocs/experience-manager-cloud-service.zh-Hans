@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 43e2abd67486b5c4b93f4022b57533d269d60c92
+source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
 workflow-type: tm+mt
-source-wordcount: '6541'
+source-wordcount: '6560'
 ht-degree: 97%
 
 ---
@@ -269,7 +269,7 @@ ht-degree: 97%
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [发布层上为 AEM as a Cloud Service 的 Open ID Connect 支持](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [发布层上为 AEM as a Cloud Service 提供 Open ID Connect 支持](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [为 AEM as a Cloud Service 设置 IMS 集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [权限管理的主要视图](/help/security/touch-ui-principal-view.md)
    + [Sling Service 用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
@@ -950,6 +950,10 @@ ht-degree: 97%
       + [HTML5 表单的脚本支持](/help/forms/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
    + 交互式通信 {#interactive-communocation}
+      + [交互式通信编辑器简介](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
+      + [创建交互式通信](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [创建交互式通信模板](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [创建交互式通信片段](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
       + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
       + [使用 AEM Forms API 生成 AFP 输出](/help/forms/document-generation-afp-api.md)
