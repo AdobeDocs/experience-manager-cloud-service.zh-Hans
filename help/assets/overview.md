@@ -57,11 +57,11 @@ Adobe 数字资产管理的部分核心功能包括：
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/get-started">
    <img alt="使用 AEM 桌面应用程序" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/get-started">
       <strong>使用 AEM 桌面应用程序</strong>
       </a>
    </div>
@@ -520,7 +520,7 @@ AEM Assets 可与多种 Adobe 及非 Adobe 应用程序实现无缝集成。以�
 
 * **与 Adobe Workfront 集成**：[!DNL Adobe Workfront] 是一款工作管理应用程序，帮助您在一个平台中统一管理工作全流程。[!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 的集成，通过将工作管理与数字资产管理深度融合，帮助组织提升内容产出效率并加快产品上市速度。在 Workfront 的工作管理环境中，用户可以访问所需的文档和图像。
 
-  Adobe 提供原生方式[将 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 集成](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)。
+  Adobe 提供原生方式[将 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 集成](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)。
 
 * **与Figma集成**： AEM Assets与Figma原生集成，这允许设计人员从Figma用户界面中访问直接存储在AEM Assets中的资源。 您可以将AEM Assets中管理的内容放在Figma画布中，然后将新内容或编辑的内容保存到AEM Assets存储库中。 要访问 Figma 社区页面上提供的 AEM Assets 连接器，请单击[此处](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
 
@@ -599,11 +599,11 @@ AEM Assets 可与多种 Adobe 及非 Adobe 应用程序实现无缝集成。以�
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/overview">
    <img alt="与 Commerce 的集成" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/overview">
       <strong>与 Commerce 的集成</strong>
       </a>
    </div>
