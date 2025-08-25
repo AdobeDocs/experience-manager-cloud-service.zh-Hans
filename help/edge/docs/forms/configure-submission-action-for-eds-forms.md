@@ -102,13 +102,13 @@ ht-degree: 79%
 
 在`constant.js`下的`form`块的`submitBaseUrl`文件中更新AEM Cloud Service实例URL。 您可以根据环境配置URL：
 
-用于Cloud Service实例的&#x200B;****
+用于Cloud Service实例的&#x200B;**&#x200B;**
 
 ```js
 export const submitBaseUrl = '<aem-publish-instance-URL>';
 ```
 
-用于本地开发的&#x200B;****
+用于本地开发的&#x200B;**&#x200B;**
 
 ```js
 export const submitBaseUrl = 'http://localhost:<port-number>';
