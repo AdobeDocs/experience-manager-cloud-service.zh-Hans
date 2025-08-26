@@ -4,11 +4,11 @@ description: 使用AI Assistant帮助您查找Adobe Experience Manager中可用�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-index: false
+hide: false
+hidefromtoc: false
+index: true
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 10d1788e222843c0c382ecf021f3c85c6bc09af9
+source-git-commit: a9fb3838feb17fa9ead35f432e4937ee01f500b7
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AI助手支持AEM as a Cloud Service，包括以下解决方案：
 
 以下时长3分钟、时长39秒的视频分步介绍AEM中的AI助手。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470365?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## 访问AEM中的AI助手{#get-access}
 
@@ -132,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
