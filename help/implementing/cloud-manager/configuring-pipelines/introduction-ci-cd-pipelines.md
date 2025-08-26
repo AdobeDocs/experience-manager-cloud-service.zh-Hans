@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 35%
+source-wordcount: '1489'
+ht-degree: 33%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager 提供两种类型的管道：
 
 除了生产环境和非生产环境外，管道还可能会因它们部署的代码类型而异。
 
-* **[全栈管道](#full-stack-pipeline)** — 同时部署包含一个或多个AEM服务器应用程序以及HTTPD/Dispatcher配置的后端和前端代码构建。
+* **[全栈管道](#full-stack-pipeline)** — 同时部署后端和前端代码构建，其中包含一个或多个AEM服务器应用程序以及HTTPD/Dispatcher配置。
 * **[配置管道](#config-deployment-pipeline)** — 您可以快速部署日志转发和清除相关维护任务等功能的配置。 它还包含各种CDN（内容分发网络）配置，例如流量过滤器规则，包括Web应用程序防火墙(WAF)规则。 此外，您还可以管理请求和响应转换、源选择器、客户端重定向、错误页面、CDN密钥、清除API密钥和基本身份验证。 有关详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md)。
 * **[前端管道](#front-end)** — 部署包含一个或多个客户端用户界面应用程序的前端代码版本。
 * **[Web层配置管道](#web-tier-config-pipelines)** — 部署HTTPD/Dispatcher配置。
@@ -71,7 +71,7 @@ Cloud Manager 提供两种类型的管道：
 | 生产或非生产 | 部署 | 全栈 | 同时部署后端和前端代码构建以及 HTTPD/Dispatcher 配置 | 当前端代码必须与AEM服务器代码同时部署时使用。 在尚未采用前端管道或Web层配置管道时使用。 |
 | 生产或非生产 | 部署 | 前端 | 部署包含一个或多个客户端 UI 应用程序的前端代码版本 | 支持多个并发的前端管道<br>比全栈部署快得多。 |
 | 生产或非生产 | 部署 | Web层配置 | 部署 HTTPD/Dispatcher 配置 | 几分钟即可部署 |
-| 生产或非生产 | 部署 | 配置 | 为与CDN、日志转发和清除维护任务相关的许多功能[&#128279;](/help/operations/config-pipeline.md)部署配置 | 几分钟即可部署 |
+| 生产或非生产 | 部署 | 配置 | 为与CDN、日志转发和清除维护任务相关的许多功能[部署](/help/operations/config-pipeline.md)配置 | 几分钟即可部署 |
 | 非生产 | 代码质量 | 全栈 | 在不部署的情况下对全栈代码运行代码质量扫描 | 支持多条管道 |
 | 非生产 | 代码质量 | 前端 | 在不部署的情况下对前端代码运行代码质量扫描 | 支持多条管道 |
 | 非生产 | 代码质量 | Web层配置 | 在不部署的情况下对Dispatcher配置运行代码质量扫描 | 支持多条管道 |
@@ -102,7 +102,7 @@ Cloud Manager 提供两种类型的管道：
 此外，如果您选择引入[Web层配置管道](#web-tier-config-pipelines)，请注意全栈管道的行为。
 
 * 如果存在相应的Web层配置管道，则环境的全栈管道将忽略Dispatcher配置。
-* 如果环境的相应 Web 层配置管道不存在，则用户可以配置全栈管道，包括或忽略 Dispatcher 配置。
+* 如果环境的相应Web层配置管道不存在，则用户可以配置全栈管道以包含或忽略Dispatcher配置。
 
 全栈管道可以是代码质量管道或部署。
 
