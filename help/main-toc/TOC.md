@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8bd6fd4a7abcfbf37ba8aa458a9d2a035cca050e
+source-git-commit: 37c1d1bda4543d0182952dc5ee84f8ff6dd6630f
 workflow-type: tm+mt
-source-wordcount: '6548'
+source-wordcount: '6549'
 ht-degree: 97%
 
 ---
@@ -1216,14 +1216,15 @@ ht-degree: 97%
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager  {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
-      + [Experience Hub](/help/experience-hub.md) {#programs}
-         + [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
-         + [生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-         + [沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+      + [Experience Hub](/help/experience-hub.md)
+   + 程序 {#programs}
+      + [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+      + [生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      + [沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+      + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+      + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 创建一个 AEM 应用程序项目  {#create-application-project}
          + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
