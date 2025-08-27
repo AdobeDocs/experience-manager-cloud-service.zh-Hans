@@ -4,21 +4,25 @@ description: 了解如何监测问题并提高性能。
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 22%
+source-wordcount: '417'
+ht-degree: 14%
 
 ---
 
 # 上线后 {#post-go-live}
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="AEM 故障排除"
->abstract="回顾持续开发和管理日志的最佳实践。了解 Developer Console 和 CRXDE Lite 等工具来帮助解决 AEM 问题。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="访问和管理日志"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
+>title="Troubleshooting AEM"
+>abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+
+-->
 
 此历程是最后一部分，您将了解如何监测问题并在迁移完成后提高性能。 确保清理临时文件，审查持续开发的最佳实践并管理日志。
 
@@ -34,7 +38,7 @@ ht-degree: 22%
 * **CRXDE Lite**
 * **管理日志**
 
-## 开发人员控制台 {#developer-console}
+## Developer Console {#developer-console}
 
 Developer Console中提供了调试AEM as a Cloud Service开发人员环境的功能，可用于开发、暂存和生产环境。
 
@@ -42,12 +46,12 @@ Developer Console中提供了调试AEM as a Cloud Service开发人员环境的�
 
 ## CRXDE Lite {#crxde-lite}
 
-作为用户，您可以在开发环境中访问CRXDE Lite，但不能在暂存或生产环境中访问。
+作为用户，您可以在开发环境中访问CRXDE Lite ，但不能在暂存或生产环境中访问。
 
 >[!IMPORTANT]
 >在运行时写入不可变存储库（如`/libs`和`/apps`）会导致错误。 此外，您无法访问用于暂存和生产环境的开发人员工具。
 
-有关如何使用CRXDE Lite开发AEMCRXDE Lite的详细信息，请参阅[使用Application](/help/implementing/developing/tools/crxde.md)。
+有关如何使用CRXDE Lite开发AEM应用程序的更多信息，请参阅[使用CRXDE Lite进行开发](/help/implementing/developing/tools/crxde.md)。
 
 ## 管理日志 {#managing-logs}
 
@@ -63,7 +67,7 @@ Developer Console中提供了调试AEM as a Cloud Service开发人员环境的�
 >abstract="请联系 Adobe 的 AEM 支持团队，获取说明或解决任意问题。"
 >additional-url="https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 支持"
 
-如果您对访问Cloud Service有任何疑问，请联系您的Adobe代表或[Experience Cloud支持](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)以获取更多详细信息。
+如果您对Cloud Service的访问权限存有任何疑问，请联系您的Adobe代表或[Experience Cloud支持](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)以了解更多详细信息。
 
 ## 文档学习 {#document-learnings}
 
@@ -71,7 +75,7 @@ Developer Console中提供了调试AEM as a Cloud Service开发人员环境的�
 
 * 哪些方法行之有效，哪些方法无效？
 * 主要棘手问题有哪些？
-* 如果将来发生迁移，则使用Recommendations。
+* 建议（如果存在未来迁移）。
 
 与组织中的利益相关者和团队共享这些迁移后学习。
 
