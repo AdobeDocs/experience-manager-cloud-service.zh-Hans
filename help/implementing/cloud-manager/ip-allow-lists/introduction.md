@@ -21,8 +21,8 @@ ht-degree: 21%
 >id="aemcloud_golive_ipallowlist"
 >title="管理 IP 允许列表"
 >abstract="可通过 Internet 访问 AEM as a Cloud Service，并通过用户身份验证和授权保护它。Cloud Manager 的 IP 允许列表可用于仅限制和控制对受信任 IP 地址的访问。 具有适当权限的 Cloud Manager 用户可创建受信任的 IP 地址的允许列表，其站点的用户可从这些地址访问其 AEM 域。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/add-ip-allow-lists" text="添加 IP 允许列表"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/managing-ip-allow-lists" text="查看和更新 IP 允许列表"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/add-ip-allow-lists" text="添加 IP 允许列表"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/managing-ip-allow-lists" text="查看和更新 IP 允许列表"
 
 ## 概述 {#overview}
 
