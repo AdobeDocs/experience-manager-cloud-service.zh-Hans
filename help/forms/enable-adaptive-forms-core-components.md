@@ -1,6 +1,6 @@
 ---
-title: 如何在Forms as a Cloud Service和本地开发环境中启用自适应AEM Forms核心组件？
-description: 了解如何在AEM Forms as a Cloud Service上启用自适应Forms核心组件。
+title: 在AEM Forms as a Cloud Service上检查并启用自适应Forms核心组件
+description: 了解如何检查是否已启用自适应Forms核心组件，以及如何根据需要在AEM Forms as a Cloud Service上启用它们。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
@@ -8,34 +8,66 @@ feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+source-git-commit: 3c1931d67e69d155e777c8761fe2bbbd21461ddf
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 76%
+source-wordcount: '1235'
+ht-degree: 54%
 
 ---
 
-# 启用自适应表单核心组件 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# 检查和启用自适应Forms核心组件 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | 本文 |
 
-在AEM Forms as a Cloud Service上启用自适应Forms核心组件，允许您开始创建、发布和交付基于核心组件的自适应Forms和Headless Forms，其中使用AEM Forms Cloud Service实例对多个渠道进行实施。 您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
+已针对大多数Forms as a Cloud Service客户启用了自适应AEM Forms核心组件和Headless自适应Forms 。 这使您能够使用AEM Forms Cloud Service实例创建、发布基于核心组件的自适应Forms和Headless Forms，并将其交付到多个渠道。
 
-## 注意事项
+## 检查是否已启用自适应Forms核心组件 {#check-if-enabled}
 
-* 创建全新的 AEM Forms as a Cloud Service 程序时，[即已为您的环境启用自适应表单核心组件和 Headless 自适应表单](#are-adaptive-forms-core-components-enabled-for-my-environment)。
+在执行以下任何启用步骤之前，请检查是否已为您的环境启用了自适应Forms核心组件：
 
-* 如果您拥有的是其中[未启用](#enable-components)核心组件的旧版 Forms as a Cloud Service 程序，则您可[将自适应表单核心组件依赖项添加到](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)您的 AEM as a Cloud Service 存储库，并将该存储库部署到您的 Cloud Service 环境以启用 Headless 自适应表单。
+### 对于新的AEM Forms as a Cloud Service程序
 
-* 如果您现有的Cloud Service环境提供了[创建基于核心组件的自适应Forms](creating-adaptive-form-core-components.md)的选项，则您的环境已启用了自适应Forms核心组件和Headless自适应Forms，您可以将基于核心组件的自适应Forms作为Headless表单提供给需要Adaptive Forms的Headless呈现的移动、Web、本机应用程序和服务。
+当您创建新的AEM Forms as a Cloud Service项目时，已针对您的环境启用了自适应Forms核心组件和Headless自适应Forms。
 
-## 启用自适应表单核心组件和 Headless 自适应表单 {#enable-headless-forms}
+### 对于现有Cloud Service环境
 
-按列出的顺序执行以下步骤，以便为 AEM Forms as a Cloud Service 环境启用自适应表单核心组件和 Headless 自适应表单
+如果您现有的Cloud Service环境提供了[创建基于核心组件的自适应Forms](creating-adaptive-form-core-components.md)的选项，则您的环境已启用了自适应Forms核心组件和Headless自适应Forms。
 
+### 通过检查存储库进行验证
+
+要确认已为您的环境启用自适应Forms核心组件，请执行以下操作：
+
+1. 克隆AEM Forms as a Cloud Service存储库。
+
+1. 打开您的 AEM Forms Cloud Service Git 存储库的 `[AEM Repository Folder]/all/pom.xml` 文件。
+
+1. 搜索以下依赖项：
+
+   * core-forms-components-af-core
+   * core-forms-components-core
+   * core-forms-components-apps
+   * core-forms-components-af-apps
+   * core-forms-components-examples-apps
+   * core-forms-components-examples-content
+
+   ![找到 all/pom.xml 中的 core-forms-components-af-core 工件](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
+
+   如果存在这些依赖项，则为您的环境启用自适应Forms核心组件。
+
+## 需要手动启用时 {#when-manual-enablement-needed}
+
+仅当您的旧版Forms as a Cloud Service程序未启用核心组件（由上面的检查确认）时，您才需要手动将Adaptive Forms核心组件依赖项添加到AEM as a Cloud Service存储库，并将存储库部署到Cloud Service环境。
+
++++ 手动启用步骤 
+
+>[!WARNING]
+>
+>如果上述验证检查确认没有为您的环境启用自适应Forms核心组件，请仅执行以下步骤。
+
+按照列出的顺序，执行以下步骤，为AEM Forms as a Cloud Service环境启用自适应Forms核心组件和Headless自适应Forms：
 
 ![启用核心组件和Headless自适应表单](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
@@ -301,7 +333,7 @@ ht-degree: 76%
 
    成功构建该包后，可在 [Git Repository Folder]\all\target\[appid].all-[version].zip 中找到它
 
-1. 使用[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)将 [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip 包部署在本地开发环境上。
+1. 使用[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)将 [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip 包部署在本地开发环境上。
 
 
 ### 构建更新后的代码并将其部署在 AEM Forms as a Cloud Service 环境上 {#core-components-on-aem-forms-cs}
@@ -317,16 +349,17 @@ ht-degree: 76%
     git push origin
    ```
 
-1. 将文件提交到 Git 存储库后，[运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hans)。
+1. 将文件提交到 Git 存储库后，[运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
 
    成功运行管道后，即为相应的环境启用自适应表单核心组件。此外，还将自适应表单（核心组件）模板和 Canvas 3.0 主题添加到您的 Forms as a Cloud Service 环境，并为您提供自定义和创建基于核心组件的自适应表单的选项。
 
++++
 
 ## 常见问题解答 {#faq}
 
 ### 什么是核心组件？ {#core-components}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
 
 ### 启用核心组件时将添加哪些功能？ {#core-components-capabilities}
 
@@ -335,28 +368,16 @@ ht-degree: 76%
 * [创建基于核心组件的自适应表单](/help/forms/creating-adaptive-form-core-components.md)。
 * [创建基于核心组件的自适应表单模板](/help/forms/template-editor.md)。
 * [为基于核心组件的自适应表单模板创建自定义主题](/help/forms/using-themes-in-core-components.md)。
-* [可以将基于核心组件的自适应表单的 JSON 表示形式提供给需要表单的 Headless 表示形式的移动、Web、原生应用程序和服务等渠道](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hans)。
+* [可以将基于核心组件的自适应表单的 JSON 表示形式提供给需要表单的 Headless 表示形式的移动、Web、原生应用程序和服务等渠道](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)。
 
-### 我的环境是否启用了自适应表单核心组件？ {#enable-components}
+### 如何知道是否需要手动启用自适应Forms核心组件？ {#manual-enablement-needed-faq}
 
-要查看是否为您的环境启用了自适应表单核心组件，请执行以下操作：
+大多数客户已经启用了自适应Forms核心组件。 在以下情况下，您只需手动启用它们：
 
-1. [克隆您的 AEM Forms as a Cloud Service 存储库](#1-clone-your-aem-forms-as-a-cloud-service-git-repository)。
+1. 在自动包含核心组件之前，您已创建了一个较早的Forms as a Cloud Service程序
+1. [检查自适应Forms核心组件是否已启用](#check-if-enabled)部分中的验证检查，确认存储库中缺少所需的依赖项
 
-1. 打开您的 AEM Forms Cloud Service Git 存储库的 `[AEM Repository Folder]/all/pom.xml` 文件。
-
-1. 搜索以下依赖项：
-
-   * core-forms-components-af-core
-   * core-forms-components-core
-   * core-forms-components-apps
-   * core-forms-components-af-apps
-   * core-forms-components-examples-apps
-   * core-forms-components-examples-content
-
-   ![找到 all/pom.xml 中的 core-forms-components-af-core 工件](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
-
-   如果存在依赖项，则为您的环境启用了自适应表单核心组件。
+如果不确定，请按照上面[检查自适应Forms核心组件是否已启用](#check-if-enabled)部分中的验证步骤操作。
 
 ### 为什么基于核心组件的表单无法在项目中呈现？
 
