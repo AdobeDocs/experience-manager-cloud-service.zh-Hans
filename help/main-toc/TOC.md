@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 139c3d2f071a18336a5196bed0e33874b6eb5ce6
+source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
 workflow-type: tm+mt
 source-wordcount: '6549'
 ht-degree: 97%
@@ -949,8 +949,8 @@ ht-degree: 97%
       + [调试 HTML5 表单](/help/forms/debug.md)
       + [HTML5 表单的脚本支持](/help/forms/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
-   + 交互式通信 {#interactive-communocation}
-      + [交互式通信编辑器简介](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
+   + 交互式通信 {#interactive-communication}
+      + [交互式通信编辑器简介](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
       + [创建交互式通信](/help/forms/interactive-communication/create-interactive-communication.md)
       + [创建交互式通信模板](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [创建交互式通信片段](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
