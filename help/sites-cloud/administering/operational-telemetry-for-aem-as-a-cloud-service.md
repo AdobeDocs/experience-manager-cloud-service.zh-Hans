@@ -1,13 +1,13 @@
 ---
-title: AEM as a Cloud Service的操作遥测
+title: 用于 AEM as a Cloud Service 的操作遥测
 description: 了解操作遥测，它是一项允许监控客户端数据收集的自动服务。
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 0%
+source-wordcount: '974'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 * 正在访问的站点的主机名，例如： `experienceleague.adobe.com`
 * 用于显示页面的广泛用户代理类型和操作系统，如： `desktop:windows`或`mobile:ios`
 * 数据收集的时间，如： `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* 正在访问的页面的URL，例如： `https://experienceleague.adobe.com/docs?lang=zh-Hans`
+* 正在访问的页面的URL，例如： `https://experienceleague.adobe.com/docs`
 * 反向链接URL（链接到当前页面的页面的URL，如果用户点击链接）
 * 随机生成的页面视图ID，格式类似于： `2Ac6`
 * 采样速率的加权或反值，如： `100`。 这意味着仅记录一百分之一的页面查看次数
@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **我的网站上阻止了`/.rum`路径，我应该如何修复？**
 
-   操作遥测收集需要`/.rum`路径才能正常工作。 如果您在Adobe的AEM as a Cloud Service之前使用CDN，请确保`/.rum`路径转发到与其他AEM内容相同的AEM源。 并且，确保不会以任何方式对其进行调整。
+   操作遥测收集需要`/.rum`路径才能正常工作。 如果您在Adobe的AEM as a Cloud Service之前使用CDN，请确保`/.rum`路径转发到与其他AEM内容相同的AEM源。 并且，确保不会以任何方式对其进行调整。 或者，您也可以通过`rum.hlx.page`将Cloud Manager[中名为](/help/implementing/cloud-manager/environment-variables.md#add-variables)的环境变量设置为值`AEM_OPTEL_EXTERNAL`，将用于操作遥测的主机更改为`true`。 如果您希望以后更改回相同的域请求，只需再次删除该环境变量即可。
 
 1. **操作遥测集合是否计入合同目的的内容请求？**
 
@@ -103,4 +103,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe建议您使用操作遥测，因为它具有重大优势，并且可让Adobe通过提高网站性能来帮助您优化数字体验。 该服务旨在实现无缝连接，对网站的性能没有影响。
 
-   选择退出可能意味着错失了改进网站流量参与度的机会。 但是，如果您遇到任何问题，请联系Adobe支持部门。
+   选择退出可能意味着错失了改进网站流量参与度的机会。 但是，如果您遇到任何问题，可以通过[将Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables)中名为`AEM_OPTEL_DISABLED`的环境变量设置为值`true`来禁用操作遥测。 如果以后要再次启用操作遥测，只需再次删除该环境变量即可。
