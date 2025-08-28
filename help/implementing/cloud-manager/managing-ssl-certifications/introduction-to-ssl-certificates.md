@@ -21,8 +21,8 @@ ht-degree: 17%
 >id="aemcloud_golive_sslcert"
 >title="管理 SSL 证书"
 >abstract="了解 Cloud Manager 如何通过自助服务工具安装和管理 SSL 证书，从而为用户保护您的网站安全。Cloud Manager 使用平台 TLS 服务来管理客户拥有并从第三方认证机构获得的 SSL 证书和私钥。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="查看、更新和替换 SSL 证书"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="检查 SSL 证书的状态"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="查看、更新和替换 SSL 证书"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="检查 SSL 证书的状态"
 
 ## 什么是SSL证书？ {#overview}
 
