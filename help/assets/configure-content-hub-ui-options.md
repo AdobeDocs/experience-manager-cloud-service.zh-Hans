@@ -262,7 +262,7 @@ Content Hub上的![资源属性](assets/asset-details-page-content-hub1.png)
 
 ### 演绎版 {#renditions-content-hub}
 
-演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets[中查看有关](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)呈现形式的更多信息。
+演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets[中查看有关](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)呈现形式的更多信息。
 
 若要禁用，请执行以下步骤：
 
