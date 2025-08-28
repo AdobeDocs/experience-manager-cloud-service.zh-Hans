@@ -3,16 +3,16 @@ title: 在 Content Hub 搜索资产
 description: 了解如何在 [!DNL Content Hub]中搜索资源
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
 
 # 在[!DNL Content Hub]中搜索Assets {#search-assets}
 
-当存储库中有大量资源时，搜索合适的资源会非常耗时。 [!DNL The Content Hub]搜索使您能够查找已批准的资产，以便您可以对其执行其他操作，如下载、共享或创建收藏集。 您可以利用各种功能来缩小搜索结果的范围，例如，执行基于文本的搜索、使用过滤器、执行标记或智能标记特定的搜索、搜索特定的文件格式等。
+当存储库中有大量资源时，搜索合适的资源会非常耗时。 [!DNL The Content Hub]搜索使您能够查找已批准的资产，以便您可以对其执行其他操作，如下载、共享或创建收藏集。 您可以利用各种功能来缩小搜索结果的范围，如执行基于文本的搜索、使用过滤器、执行标记或智能标记特定的搜索、搜索特定的文件格式等。
 
 ## 先决条件 {#prerequisites}
 
@@ -148,6 +148,24 @@ ht-degree: 0%
 
 -->
 
+## 批量搜索 {#bulk-search}
+
+批量搜索资产允许您通过输入标识符列表（如名称、文件格式、颜色、标记等）同时查找多个资产。 [!DNL Content Hub]批量搜索可加快发现所需资源的速度，而不是逐个搜索资源。 利用此功能，您可以为任何过滤器属性输入多个值(以分隔符（例如，多个SKU ID）分隔)，并通过一次搜索即时检索所有匹配的资产。
+
+要一次搜索多个资产，请使用分隔符` [ , | \t | \r | \n | \r\n ]`分隔多个值，从而在单个查询中输入多个值。 您还可以根据用例添加更多分隔符。 请参阅[配置批量搜索](configure-content-hub-ui-options.md#bulk-search-configuration)。
+
+要在[!DNL Content Hub]中执行批量搜索，请执行以下步骤：
+
+1. 在[配置批量搜索](configure-content-hub-ui-options.md#bulk-search-configuration)后，您可以在配置的[!DNL Content Hub]筛选器属性上看到批量搜索切换。 您可以根据需要启用或禁用它。
+
+1. 添加包含配置中指定的分隔符的搜索查询。 搜索查询应包含一个字符串，并随附多个逗号分隔值。
+
+![批量搜索UI](assets/bulk-search-ui.png)
+
 ## 执行更多搜索操作 {#do-more-with-search}
 
 [!DNL The Content Hub]不限于搜索，而是允许您直接从搜索或预览界面执行其他操作，如[下载](download-assets-content-hub.md)、[共享](share-assets-content-hub.md)和[将资产添加到收藏集](collections-content-hub.md)。 选择搜索结果页面上的资源可查看这些选项。
+
+了解有关[在 [!DNL Content Hub]](configure-content-hub-ui-options.md)中配置资产的更多信息。
+
+
