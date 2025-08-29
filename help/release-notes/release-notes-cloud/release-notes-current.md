@@ -83,7 +83,7 @@ Content Hub现在可帮助您更快地发现所需的资源。 借助新的批�
 
 ### AEM Forms 中的新功能 {#forms-new-features}
 
-* [日期和时间输入组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日期和时间组件现已可用，使用户可以使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
+* [日期和时间输入组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日期和时间组件现已可用，使用户可以使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
 * [增强了文件上载的错误处理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：文件附件组件现在将自动根据允许列表验证上载的文件类型。 如果用户以不支持的格式上传文件，则表单在提交期间显示错误。 该组件还会检查文件内容以验证其类型，从而提高表单的整体安全性。
 * [为自定义提交操作指定的错误响应](/help/forms/custom-submit-action-troubleshooting.md)：当自定义提交操作遇到未处理的错误时，返回错误代码502。 这有助于确定问题与自定义提交操作相关，从而简化调试过程。
 * [从记录文档排除隐藏字段](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：添加了一个新属性，以允许从记录文档排除隐藏字段。 默认情况下，不选中此选项，该选项适用于所有表单字段。
@@ -105,7 +105,7 @@ Content Hub现在可帮助您更快地发现所需的资源。 借助新的批�
 
 ### AEM Forms 中的早期采用者功能
 
-* [涂写签名组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：您现在可以使用涂写签名组件来帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、手写笔或触摸屏直接在表单中绘制其签名。
+* [涂写签名组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：您现在可以使用涂写签名组件来帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、手写笔或触摸屏直接在表单中绘制其签名。
 * [规则编辑器中的直接API集成](/help/forms/api-integration-in-rule-editor.md)：自适应Forms现在支持可视化规则编辑器中的直接API集成，而无需表单数据模型。 作者可以使用URL或cURL导入来配置API，映射输入/输出参数，以及使用身份验证的安全调用。
 
 <!--
