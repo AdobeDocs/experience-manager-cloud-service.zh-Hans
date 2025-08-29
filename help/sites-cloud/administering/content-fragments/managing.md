@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: bda1ef43d452222036e9df20b6f3acee7bec8855
+source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 76%
+source-wordcount: '2885'
+ht-degree: 72%
 
 ---
 
@@ -245,18 +245,83 @@ ht-degree: 76%
 
 ## 复制内容片段 {#copy-a-content-fragment}
 
+<!--
+**Copy** creates a copy of the selected fragment at its location.
+
+* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+
+  * Creates a copy of the selected Content Fragment at its location.
+  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
+
+* The copy of the selected fragment will reference the copies of the referenced fragments.
+
+* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
+
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+-->
+
+<!-- CQDOC-22785 - will replace above text -->
+
 **副本**&#x200B;在其位置创建所选片段的副本。
 
-* 在&#x200B;**复制**&#x200B;操作中，您可以选择是否&#x200B;**复制带有子项的**（引用的片段）。 这样可让您复制选定的内容片段和所有引用的片段。 AEM：
+* 在&#x200B;**复制**&#x200B;操作中，您可以选择是否&#x200B;**复制还引用的内容片段**。 这样可让您复制选定的内容片段和所有引用的片段。 AEM：
 
    * 在其位置创建所选内容片段的副本。
-   * 创建所选片段引用的所有片段的副本；这些副本将复制到与原始引用的片段相同的位置。
+   * 创建所选片段引用的所有片段的副本。
+
+     引用片段复制到[的](#locations-that-the-referenced-fragments-are-copied-to)位置取决于您选择的选项：
+
+      * **复制到选定的文件夹**
+选中后，引用的片段将被复制到与原始选定片段相同的位置。
+
+      * **复制到其原始位置**
+引用的片段将被复制到与原始引用的片段相同的位置。 这是默认设置，未选中任何选项时将使用此设置。
 
 * 所选片段的副本将引用引用片段的副本。
 
 * 将会创建深层副本；因此，如果引用的内容片段也引用片段，则也会复制这些片段。
 
 * **复制**&#x200B;操作不会影响其他引用的内容，如资源或图像。 引用（内容引用）会作为新片段的一部分复制，但不会复制资产/图像内容本身。
+
+### 引用的片段复制到其中的位置 {#locations-that-the-referenced-fragments-are-copied-to}
+
+在复制内容片段时，您可以使用&#x200B;**同时复制引用的内容片段**&#x200B;和相关选项来指定应将引用的片段复制到何处：
+
+![复制片段](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+
+#### 复制到原始位置 {#copy-to-their-original-locations}
+
+选择&#x200B;**复制到其原始位置**&#x200B;时，引用的片段将复制到与原始引用的片段相同的位置。 如果未进行任何选择，这也是默认操作。
 
 因此，如果我们从以下内容开始：
 
@@ -288,75 +353,11 @@ FolderC
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
-<!-- CQDOC-22785 - will replace above text -->
+#### 复制到选定文件夹 {#copy-to-the-selected-folder}
 
-<!--
-**Copy** creates a copy of the selected fragment at its location.
+选中后，引用的片段将被复制到与原始选定片段相同的位置。
 
-* In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment.
-
-    The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
-
-    * **Copy to the selected folder**
-      When selected, the referenced fragments are copied to the same location as the original selected fragment. 
-
-    * **Copy to their original locations**
-      The referenced fragments are copied to the same location as the original referenced fragment. This is the default, and will be used when no option is selected.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
-
-When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
-
-![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
-
-#### Copy to their original locations {#copy-to-their-original-locations}
-
-When you select **Copy to their original locations**, the referenced fragments are copied to the same location as the original referenced fragment. This is also the default action when no selection is made.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
-
-#### Copy to the selected folder {#copy-to-the-selected-folder}
-
-When selected, the referenced fragments are copied to the same location as the original selected fragment.
-
-So, if we start with:
+因此，如果我们从以下内容开始：
 
 ```xml
 FolderA 
@@ -369,7 +370,7 @@ FolderB
    FragmentB
 ```
 
-Copying FragmentA to FolderC, would result in:
+将FragmentA复制到FolderC将导致：
 
 ```xml
 FolderA 
@@ -387,7 +388,6 @@ FolderC
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
--->
 
 ## 查看和管理标记 {#manage-tags}
 
