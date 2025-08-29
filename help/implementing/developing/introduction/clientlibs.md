@@ -1,12 +1,12 @@
 ---
 title: 在AEM as a Cloud Service上使用客户端库
-description: AEM提供了客户端库文件夹，允许您在存储库中存储客户端代码(clientlibs)，将其组织为不同类别，并定义何时以及如何向客户端提供每种类别的代码
+description: AEM提供了客户端库文件夹，利用该文件夹，您可以在存储库中存储客户端代码(clientlibs)，将其归为不同类别，并定义何时以及如何向客户端提供每种类别的代码
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
 workflow-type: tm+mt
-source-wordcount: '2497'
+source-wordcount: '2422'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 在AEM as a Cloud Service上使用客户端库 {#using-client-side-libraries}
 
-数字体验在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 AEM客户端库(clientlibs)允许您在存储库中组织和集中存储这些客户端库。 结合AEM项目原型[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)中的前端构建过程，可以轻松管理AEM项目的前端代码。
+数字体验在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 AEM客户端库(clientlibs)允许您整理这些客户端库并将其集中存储在存储库中。 结合AEM项目原型[中的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)前端构建过程，可以轻松管理AEM项目的前端代码。
 
 在AEM中使用clientlibs的优点包括：
 
@@ -27,17 +27,17 @@ Clientlibs是内置解决方案，用于从AEM提供CSS和JavaScript。
 
 >[!TIP]
 >
->为AEM项目创建CSS和JavaScript的前端开发人员还应熟悉[AEM项目原型及其自动前端构建过程](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)。
+>为AEM项目创建CSS和JavaScript的前端开发人员还应熟悉[AEM项目原型及其自动前端构建过程](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)。
 
 ## 什么是客户端库 {#what-are-clientlibs}
 
-站点需要在客户端处理JavaScript和CSS以及静态资源，例如图标和Web字体。 clientlib是AEM的机制，用于引用（如有必要，按类别分类）并为此类资源提供服务。
+站点需要在客户端处理JavaScript和CSS以及静态资源，例如图标和Web字体。 clientlib是AEM的引用机制（如有必要，按类别分类）并为此类资源提供服务。
 
-AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，以确保HTML输出中仅包含任何资源的一个副本。 这样可以最大限度地提高交付效率，并通过代理在存储库中集中维护此类资源，从而确保访问安全。
+AEM将站点的CSS和JavaScript收集到一个集中的文件中，以确保HTML输出中只包含任何资源的一个副本。 这样可以最大限度地提高交付效率，并通过代理在存储库中集中维护此类资源，从而确保访问安全。
 
 ## AEM as a Cloud Service的前端开发 {#fed-for-aemaacs}
 
-所有JavaScript、CSS和其他前端资源都应在AEM项目原型[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)的ui.frontend模块中进行维护。 原型的灵活性允许您使用所选择的现代Web工具来创建和管理这些资源。
+所有JavaScript、CSS和其他前端资源都应在AEM项目原型[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)ui.frontend模块中进行维护。 原型的灵活性允许您使用所选择的现代Web工具来创建和管理这些资源。
 
 然后，原型可以将资源编译为单个CSS和JS文件，并将它们自动嵌入存储库中的`cq:clientLibraryFolder`中。
 
@@ -75,7 +75,7 @@ AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，�
 
 客户端库必须位于`/apps`下。 此规则是更好地将代码与内容和配置隔离所必需的。
 
-为了能够访问`/apps`下的客户端库，使用了代理servelt。 仍在客户端库文件夹上强制执行ACL，但如果`allowProxy`属性设置为`true`，则servlet允许通过`/etc.clientlibs/`读取内容。
+为了能够访问`/apps`下的客户端库，使用了代理servelt。 仍在客户端库文件夹上强制执行ACL，但如果`/etc.clientlibs/`属性设置为`allowProxy`，则servlet允许通过`true`读取内容。
 
 1. 在Web浏览器(`https://<host>:<port>/crx/de`)中打开CRXDE Lite。
 1. 选择`/apps`文件夹并单击&#x200B;**创建>创建节点**。
@@ -92,7 +92,7 @@ AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，�
 1. 如果您需要管理静态资源，请在客户端库文件夹下创建名为`resources`的子文件夹。
    * 如果您将静态资源存储在文件夹`resources`下以外的任何位置，则无法在发布实例上引用这些资源。
 1. 将源文件添加到库文件夹中。
-   * 这通常由[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)的前端构建过程完成。
+   * 这通常由[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)的前端构建过程完成。
    * 如果需要，可以在子文件夹中组织源文件。
 1. 选择客户端库文件夹，然后单击&#x200B;**创建>创建文件**。
 1. 在“文件名”框中，键入以下文件名之一，然后单击“确定”：
@@ -123,11 +123,11 @@ AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，�
 
 成功将clientlibs存储和管理在其客户端库文件夹中后，可以通过HTL访问它们。
 
-客户端库是通过AEM提供的帮助程序模板加载的，可通过`data-sly-use`访问该模板。 帮助程序模板在此文件中可用，可通过`data-sly-call`调用这些模板。
+客户端库是通过AEM提供的帮助程序模板加载的，该模板可通过`data-sly-use`访问。 帮助程序模板在此文件中可用，可通过`data-sly-call`调用这些模板。
 
 每个帮助程序模板都需要一个 `categories` 选项来引用所需的客户端库。该选项可以是字符串值的数组，也可以是包含逗号分隔值列表的字符串。
 
-[有关通过HTL加载clientlibs的更多详细信息，请参阅HTL文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=zh-Hans#loading-client-libraries)。
+[有关通过HTL加载clientlibs的更多详细信息，请参阅HTL文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries)。
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -135,7 +135,7 @@ AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，�
 This is possible. Still need detail.
 -->
 
-## 创作实例与Publish上的客户端库 {#clientlibs-author-publish}
+## 有关创作与发布的客户端库 {#clientlibs-author-publish}
 
 AEM发布实例上需要大多数clientlibs。 也就是说，大多数clientlibs的目的是生成内容的最终用户体验。 对于发布实例上的clientlibs，[前端生成工具](#fed-for-aemaacs)可以通过[客户端库文件夹使用和部署，如上所述](#creating-clientlib-folders)。
 
@@ -178,15 +178,15 @@ AEM中的客户端库文件夹支持其他一些功能。 但是，AEM as a Clou
 >
 >AEM as a Cloud Service上不需要客户端库文件夹的这些附加功能，因此建议不要使用这些功能。 为了完整起见，此处列出了它们。
 
-### AdobeGraniteHTML库管理器 {#html-library-manager}
+### Adobe Granite HTML库管理器 {#html-library-manager}
 
-其他客户端库设置可以通过位于`https://<host>:<port>/system/console/configMgr`的系统控制台的&#x200B;**AdobeGraniteHTML库管理器**&#x200B;面板进行控制。
+其他客户端库设置可以通过位于&#x200B;**的系统控制台的** Adobe Granite HTML Library Manager`https://<host>:<port>/system/console/configMgr`面板进行控制。
 
 ### 其他文件夹属性 {#additional-folder-properties}
 
 其他文件夹属性包括允许控制依赖项和嵌入，但通常不再需要这些属性，因此建议不要使用这些属性：
 
-* `dependencies`：这是此库文件夹所依赖的其他客户端库类别的列表。 例如，在给定两个`cq:ClientLibraryFolder`节点`F`和`G`的情况下，如果`F`中的某个文件需要`G`中的另一个文件才能正常工作，则`G`的`categories`中至少有一个应属于`F`的`dependencies`中。
+* `dependencies`：这是此库文件夹所依赖的其他客户端库类别的列表。 例如，在给定两个`cq:ClientLibraryFolder`节点`F`和`G`的情况下，如果`F`中的某个文件需要`G`中的另一个文件才能正常工作，则`categories`的`G`中至少有一个应属于`dependencies`的`F`中。
 * `embed`：用于嵌入来自其他库的代码。 如果节点`F`嵌入了节点`G`和`H`，则生成的HTML是来自节点`G`和`H`的内容串联。
 
 ### 链接到依赖项 {#linking-to-dependencies}
@@ -197,7 +197,7 @@ AEM中的客户端库文件夹支持其他一些功能。 但是，AEM as a Clou
 
 * **名称：**&#x200B;依赖项
 * **类型：**&#x200B;字符串[]
-* **值：**&#x200B;当前库文件夹所依赖的cq：ClientLibraryFolder节点的categories属性值。
+* **值：**&#x200B;当前库文件夹所依赖的cq:ClientLibraryFolder节点的categories属性值。
 
 例如，`/etc/clientlibs/myclientlibs/publicmain`依赖于`cq.jquery`库。 引用主客户端库的页面会生成包含以下代码的HTML：
 
@@ -226,7 +226,7 @@ AEM中的客户端库文件夹支持其他一些功能。 但是，AEM as a Clou
 
 在某些情况下，您可能会发现发布实例为典型页面生成的最终HTML包含相对大量的`<script>`元素。
 
-在这种情况下，有必要将所有所需的客户端库代码合并到单个文件中，以便减少页面加载上的来回请求数量。 为此，您可以使用`cq:ClientLibraryFolder`节点的嵌入属性，将所需的库`embed`到特定于应用程序的客户端库中。
+在这种情况下，有必要将所有所需的客户端库代码合并到单个文件中，以便减少页面加载上的来回请求数量。 为此，您可以使用`embed`节点的嵌入属性，将所需的库`cq:ClientLibraryFolder`到特定于应用程序的客户端库中。
 
 #### CSS文件中的路径 {#paths-in-css-files}
 
@@ -254,7 +254,7 @@ body {
 }
 ```
 
-#### 请参阅HTML输出中的嵌入式文件 {#see-embedded-files}
+#### 请参阅HTML输出中的嵌入文件 {#see-embedded-files}
 
 要跟踪嵌入代码的来源，或确保嵌入的客户端库产生预期的结果，您可以查看运行时嵌入的文件的名称。 要查看文件名，请将`debugClientLibs=true`参数附加到网页的URL。 生成的库包含`@import`语句，而不是嵌入的代码。
 
@@ -277,7 +277,7 @@ body {
 
 ### 使用预处理器 {#using-preprocessors}
 
-AEM允许可插拔预处理器，并且为CSS和JavaScript提供了[YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor)支持，为JavaScript提供了[Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/)支持，并将YUI设置为AEM的默认预处理器。
+AEM允许可插拔的预处理器，并随附对CSS和JavaScript的[YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor)和JavaScript的[Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/)的支持，并将YUI设置为AEM的默认预处理器。
 
 可插拔预处理器允许灵活使用，包括：
 
@@ -288,7 +288,7 @@ AEM允许可插拔预处理器，并且为CSS和JavaScript提供了[YUI Compress
 
 >[!NOTE]
 >
->默认情况下，AEM使用YUI压缩程序。 有关已知问题的列表，请参阅[YUI压缩程序GitHub文档](https://github.com/yui/yuicompressor/issues)。 为特定clientlibs切换到GCC压缩程序可以解决使用YUI时观察到的一些问题。
+>默认情况下，AEM使用GCC Compressor来缩小Javascript。
 
 >[!CAUTION]
 >
@@ -299,9 +299,8 @@ AEM允许可插拔预处理器，并且为CSS和JavaScript提供了[YUI Compress
 您可以选择为每个客户端库或系统范围配置预处理器配置。
 
 * 在clientlibrary节点上添加多值属性`cssProcessor`和`jsProcessor`
-* 或通过&#x200B;**HTML库管理器** OSGi配置定义系统默认配置
 
-clientlib节点上的预处理器配置优先于OSGI配置。
+不支持通过&#x200B;**HTML Library Manager** OSGi配置定义系统默认配置。 它仅适用于本地SDK，不适用于全栈管道执行。
 
 #### 格式和示例 {#format-and-examples}
 
@@ -337,7 +336,7 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
@@ -345,11 +344,4 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 #### 设置系统默认缩小器 {#set-system-default-minifier}
 
-在AEM中，YUI被设置为默认小型化器。 要将其更改为GCC，请执行以下步骤。
-
-1. 转到位于(`http://<host>:<port/system/console/configMgr`)的Apache Felix配置管理器
-1. 查找并编辑&#x200B;**AdobeGraniteHTML库管理器**。
-1. 启用&#x200B;**最小化**&#x200B;选项（如果尚未启用）。
-1. 将&#x200B;**JS处理器默认配置**&#x200B;的值设置为`min:gcc`。
-   * 如果用分号分隔，例如`min:gcc;obfuscate=true`，则可以传递选项。
-1. 点击&#x200B;**保存**&#x200B;即可保存更改。
+在AEM as a Cloud Service中不支持设置系统默认微型程序。
