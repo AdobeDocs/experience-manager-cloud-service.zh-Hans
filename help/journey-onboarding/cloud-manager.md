@@ -4,7 +4,7 @@ description: 了解如何访问 Cloud Manager，以便您可以设置项目资�
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 63%
@@ -42,7 +42,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
    返回上一步[将团队成员分配给Cloud Manager产品配置文件](assign-profiles-cloud-manager.md)，了解有关将&#x200B;**业务负责人**&#x200B;角色分配给系统管理员的详细信息。
 
-1. 在[experience.adobe.com](https://experience.adobe.com/)登录Cloud Manager。
+1. 在[experience.adobe.com](https://experience.adobe.com)登录Cloud Manager。
 1. 在快速访问分组中，单击&#x200B;**Experience Manager**。
 1. 单击左侧面板中的&#x200B;**Cloud Manager**。
 
