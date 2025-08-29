@@ -6,10 +6,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2d2a206fea14d7e786a98e848bc2f2592ac65429
+source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -70,13 +70,10 @@ EDS with CDN integration is beneficial for various scenarios, including e-commer
 
 ## 先决条件 {#prerequisites}
 
-1. 在Cloud Manager中载入您的网站
- — 两种部署模型均需要。 关注载入AEM站点。
+1. 在Cloud Manager中载入您的站点 — 两种部署模型均需要。 关注载入AEM站点。
 
-2. 自带Git (BYOG)（可选）
- — 如果您将网站代码存储在Adobe Git之外，请完成BYOG载入。
+2. 自带Git (BYOG)（可选） — 如果您在Adobe Git之外存储网站代码，请完成BYOG载入。
 
-3. Edge Delivery许可证
- — 确保您的项目获得Edge Delivery Services许可。
+3. Edge Delivery许可证 — 确保您的项目已获得Edge Delivery Services许可。
 
 
