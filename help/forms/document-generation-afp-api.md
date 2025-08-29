@@ -13,7 +13,7 @@ ht-degree: 14%
 
 # 使用 AEM Forms API 生成 AFP 输出
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
 
 高级功能演示(AFP)是一种高性能文档格式，主要用于打印目的。\
 本指南概述了使用AEM Forms生成AFP输出所需的所有步骤和配置。

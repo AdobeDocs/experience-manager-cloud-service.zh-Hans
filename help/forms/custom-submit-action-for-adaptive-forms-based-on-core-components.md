@@ -47,7 +47,7 @@ ht-degree: 4%
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
 
    **您的项目已准备就绪！**
 
@@ -214,9 +214,9 @@ ht-degree: 4%
 
    1. 部署更新的代码：
 
-      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
+      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
+      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)。
 
       ![云部署](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
