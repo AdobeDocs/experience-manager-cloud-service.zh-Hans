@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1137'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 4%
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
 
    **您的项目已准备就绪！**
 
@@ -214,9 +214,9 @@ ht-degree: 4%
 
    1. 部署更新的代码：
 
-      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
+      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)。
+      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
       ![云部署](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -268,7 +268,14 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   > 要查看AEM as a Cloud Service环境中的错误日志，您可以使用Splunk。
+   > * 要查看AEM as a Cloud Service环境中的错误日志，您可以使用Splunk。
+   > * 如果自定义提交操作服务遇到未处理的错误，AEM as a Cloud Service会在HTML中返回502错误页面。
+
+
+## 常见问题解答
+
+**问：为什么我的自适应表单在提交后显示5.x.x错误页面？**
+自定义提交操作服务失败，出现未处理的错误。 然后，AEM Cloud Service返回其默认错误页面。
 
 <!--
 ## Best practices

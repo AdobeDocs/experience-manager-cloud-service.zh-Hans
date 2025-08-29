@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2781'
 ht-degree: 4%
 
 ---
@@ -308,7 +308,7 @@ ht-degree: 4%
 
 1. **打开通用编辑器**：
    - 导航到AEM Sites控制台，选择您的页面，单击&#x200B;**编辑**
-   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保已正确配置[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按此顺序添加表单组件**：
    - 标题(H2)：“计税表单”
@@ -533,6 +533,7 @@ export { getFullName, days };
 规则编辑器中的![自定义函数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 图：在规则编辑器界面中选择并配置自定义函数
 
+
 **函数使用的最佳实践**：
 
 - **错误处理**：始终包含函数失败的回退行为
@@ -541,6 +542,56 @@ export { getFullName, days };
 - **测试**：创建涵盖正常和边缘案例的测试案例
 
 +++
+
+
+### 自定义函数的静态导入
+
+通用编辑器的规则编辑器支持静态导入，使您能够跨多个文件和表单组织可重用的逻辑。 您可以从其他模块导入函数，而不是将所有自定义函数保存在单个文件(/blocks/form/functions.js)中。
+例如：从外部文件导入函数
+请考虑以下文件夹结构：
+
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+您可以将函数从`commonLib/functions.js`导入主`functions.js`文件，如下所示：
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### 组织不同Forms中的自定义函数
+
+您可以在单独的文件或文件夹中创建不同的功能集，并根据需要导出它们：
+
+- 如果您希望某些函数仅在特定表单中可用，则可以在表单配置中提供函数文件的路径。
+
+- 如果路径的文本框留空，则规则编辑器默认为从`/blocks/form/functions.js`加载函数
+
+UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自定义函数
+
+在上面的屏幕快照中，自定义函数的路径已添加到自定义函数路径文本框中。 此表单的自定义函数是从指定的文件(`cc_function.js`)加载的。
+
+这样就可以灵活地跨多个表单共享功能或按表单将其隔离。
 
 ## 规则开发的最佳实践
 
@@ -676,7 +727,7 @@ Forms成为用于数据收集、潜在客户资格鉴定和用户参与的强大
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)，了解更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)，了解更广泛的上下文
 - 用于启用其他功能的[Extension Manager指南](/help/implementing/developing/extending/extension-manager.md)
 - [Edge Delivery Services表单](/help/edge/docs/forms/overview.md)以了解全面的表单开发指导
 

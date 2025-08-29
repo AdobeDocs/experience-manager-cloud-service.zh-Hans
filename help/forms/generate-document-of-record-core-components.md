@@ -4,9 +4,9 @@ description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '3207'
+source-wordcount: '3244'
 ht-degree: 1%
 
 ---
@@ -348,7 +348,7 @@ When you select a form model, configure Document of Record using options availab
       * **对于复选框和单选按钮组件，仅显示选定值**：设置属性将仅显示[!UICONTROL 记录文档]中复选框和单选按钮的选定值。
       * **用于多个值的分隔符**：您可以选择任意分隔符（如逗号或换行符）来显示多个值。
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置字段的对齐方式，如要显示在[!UICONTROL 记录文档]上的复选框或单选按钮。 默认情况下，[!UICONTROL 记录文档]中的字段会设置垂直对齐方式。 设置DoR的[!UICONTROL 表单字段属性]中的属性会覆盖自适应表单上字段的[!UICONTROL 项对齐方式]中设置的属性。 如果选择[!UICONTROL 与自适应表单相同]选项，则自适应表单创作实例中配置的对齐方式将用于[!UICONTROL 记录文档]字段。
-      * **水平对齐方式的选项数**：您可以为水平对齐方式设置要在记录文档上显示的选项数。
+      * **水平对齐的选项数**:You&#x200B;可以设置要在记录文档上显示的水平对齐选项数。
 
 
 
@@ -415,6 +415,7 @@ When you select a form model, configure Document of Record using options availab
 * **将面板显示为表：**&#x200B;如果面板中的字段少于6个，则在记录文档中将该属性设置为将面板显示为表。 仅适用于面板。
 * **从记录文档排除标题：**&#x200B;设置属性从记录文档排除面板/表的标题。 仅适用于面板和表格。
 * **从记录文档排除描述：**&#x200B;设置属性从记录文档排除面板/表的描述。 仅适用于面板和表格。
+* **从记录文档排除隐藏字段**：选择此属性会从记录文档排除隐藏字段。 它适用于所有表单字段。 默认情况下，未选择&#x200B;**从记录文档排除隐藏字段**&#x200B;选项。
 
 **表单级别设置**
 

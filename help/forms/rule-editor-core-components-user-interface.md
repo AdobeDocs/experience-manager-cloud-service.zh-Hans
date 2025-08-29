@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 659351c76c53631834d20b032b6dff2a3b017ac4
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2390'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. 在Else语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![when-else](assets/when-else-1.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的]** Warbant Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的]** Warbant Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**字段，该字段列出了表单中的所有表单对象。
    ![when-else](assets/when-else-2.png)
 
    规则在规则编辑器中如下所示。
@@ -231,12 +231,23 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 +++
 
+### 处理损坏的规则
+
+如果移动或删除引用的字段，规则有时可能会中断。 发生这种情况时，规则编辑器会使用红点指示器标记受影响的规则。
+
+* 当字段移动（例如，从一个面板移动到另一个面板）时，关联的规则可能会中断。 在这种情况下，请打开规则并再次保存。 规则将自动恢复。
+
+* 删除字段时，无法修复规则。
+
+  要了解此问题，请将鼠标悬停在规则编辑器中的规则状态上以查看错误消息。
+
+  ![损坏的规则](/help/forms/assets/rule-editor-broken-rules.png)
 
 <!-- ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -338,7 +349,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]

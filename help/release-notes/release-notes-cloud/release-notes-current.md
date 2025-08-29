@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 96022123209fff18548b77a4cbd63ccec697119b
+source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1903'
 ht-degree: 46%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 46%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -81,30 +81,30 @@ Content Hub现在可帮助您更快地发现所需的资源。 借助新的批�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* **日期和时间输入组件**：日期和时间组件现已可用，使用户可以使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
+* [日期和时间输入组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：日期和时间组件现已可用，使用户可以使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
 * [增强了文件上载的错误处理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：文件附件组件现在将自动根据允许列表验证上载的文件类型。 如果用户以不支持的格式上传文件，则表单在提交期间显示错误。 该组件还会检查文件内容以验证其类型，从而提高表单的整体安全性。
-* **为自定义提交操作指定的错误响应**：当自定义提交操作遇到未处理的错误时，返回错误代码502。 这有助于确定问题与自定义提交操作相关，从而简化调试过程。
+* [为自定义提交操作指定的错误响应](/help/forms/custom-submit-action-troubleshooting.md)：当自定义提交操作遇到未处理的错误时，返回错误代码502。 这有助于确定问题与自定义提交操作相关，从而简化调试过程。
 * [从记录文档排除隐藏字段](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：添加了一个新属性，以允许从记录文档排除隐藏字段。 默认情况下，不选中此选项，该选项适用于所有表单字段。
 
 ### AEM Forms中的预发行功能
 
 * [生成并同步AFP呈现版本](/help/forms/document-generation-afp-api.md)：您现在可以使用AEM Forms Communication API将XDP文件转换为AFP格式。 AFP是一种广泛应用于大型企业印刷的高性能格式。
 * 规则编辑器中的&#x200B;**增强功能**
-   * **验证和重置函数增强功能**：验证和重置方法现在支持在面板、字段和表单级别执行。 以前，仅在表单级别支持它们。
-   * **现代JavaScript支持**：为自定义函数添加了对ECMAScript 2019及更高版本功能的支持，允许您编写更高效、模块化且可重用的代码
-   * **规则编辑器中的“下载DoR选项”**：规则编辑器中已将用于下载记录文档(DoR)的函数作为现成(OOTB)选项添加。
+   * [函数列表中的验证方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：验证和重置方法现在支持在面板、字段和表单级别执行。 以前，仅在表单级别支持它们。
+   * [现代JavaScript支持](/help/forms/rule-editor-core-components-difference-tables.md)：为自定义函数添加了对ECMAScript 2019及更高版本功能的支持，允许您编写更高效、模块化且可重用的代码
+   * [规则编辑器中的“下载DoR选项”](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：规则编辑器中已将用于下载记录文档(DoR)的函数作为现成(OOTB)选项添加。
      ![记录文档](/help/forms/assets/document-of-record-rn.gif)
-   * **规则编辑器中的动态变量**：您现在可以在规则编辑器中使用动态（临时）变量，以便在定义条件和操作时更加灵活。 不再需要隐藏字段来存储临时值。
-   * **规则编辑器中的自定义基于事件的规则**：您现在可以定义自定义事件并根据这些事件触发规则。
-   * **上下文感知的可重复面板规则**：在可重复面板中，规则现在基于上下文执行，而不是仅应用于最后一个面板实例。
-   * **由参数触发的规则**：规则编辑器现在支持基于查询参数、UTM参数或浏览器参数执行规则。
-   * **特定于表单的自定义函数**： Edge Delivery Services Forms现在支持特定于表单的自定义函数脚本，在管理可重用逻辑方面提供了更大的灵活性。
-   * **自定义函数的静态导入**：通用编辑器中的规则编辑器现在支持静态导入，允许开发人员跨多个表单组织、共享和重用函数。
+   * [规则编辑器中的动态变量](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：您现在可以在规则编辑器中使用动态（临时）变量，以便在定义条件和操作时更加灵活。 不再需要隐藏字段来存储临时值。
+   * [基于自定义事件的规则支持](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：您现在可以定义自定义事件并根据这些事件触发规则。
+   * [上下文感知的可重复面板规则](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：在可重复面板中，规则现在基于上下文执行，而不是仅应用于最后一个面板实例。
+   * [由参数触发的规则](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：规则编辑器现在支持基于查询参数、UTM参数或浏览器参数执行规则。
+   * [特定于表单的自定义函数](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)： Edge Delivery Services Forms现在支持特定于表单的自定义函数脚本，在管理可重用逻辑方面提供了更大的灵活性。
+   * [自定义函数的静态导入](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：通用编辑器中的规则编辑器现在支持静态导入，允许开发人员跨多个表单组织、共享和重用函数。
 
 ### AEM Forms 中的早期采用者功能
 
-* **涂写签名组件**：您现在可以使用涂写签名组件来帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、手写笔或触摸屏直接在表单中绘制其签名。
-* **规则编辑器中的直接API集成**：自适应Forms现在支持可视化规则编辑器中的直接API集成，而无需表单数据模型。 作者可以使用URL或cURL导入来配置API，映射输入/输出参数，以及使用身份验证的安全调用。
+* [涂写签名组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：您现在可以使用涂写签名组件来帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、手写笔或触摸屏直接在表单中绘制其签名。
+* [规则编辑器中的直接API集成](/help/forms/api-integration-in-rule-editor.md)：自适应Forms现在支持可视化规则编辑器中的直接API集成，而无需表单数据模型。 作者可以使用URL或cURL导入来配置API，映射输入/输出参数，以及使用身份验证的安全调用。
 
 <!--
 **Forms Optimization opportunities**
