@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 72%
+source-wordcount: '2920'
+ht-degree: 71%
 
 ---
 
@@ -133,6 +133,18 @@ ht-degree: 72%
    * 选择计数以打开显示所有语言副本的对话框。 要打开特定的语言副本，请单击对话框中的&#x200B;**标题**。
 
      ![内容片段控制台 –“语言”对话框](assets/cf-managing-console-languages-dialog.png)
+
+* **工作流程**
+
+   * 仅供参考
+
+   * 选择特定片段的图标：
+
+     ![内容片段控制台 — 工作流图标](assets/cf-managing-console-workflows-icon.png)
+
+     打开一个对话框，其中包含有关片段的工作流（过去和当前）的详细信息。: 
+
+     ![内容片段控制台 — 工作流对话框](assets/cf-managing-console-workflows-dialog.png)
 
 ## 操作 {#actions}
 
