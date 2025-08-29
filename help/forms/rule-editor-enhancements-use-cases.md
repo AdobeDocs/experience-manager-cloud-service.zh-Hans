@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 规则编辑器增强功能和用例
 
-<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
+<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
 
 本文介绍了自适应Forms中规则编辑器的最新增强功能。 这些更新旨在帮助您更轻松地定义表单行为，而无需编写自定义代码，并创建更动态、响应更快且个性化的表单体验。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 在规则中支持动态变量
 
-增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**&#x200B;函数在表单的整个生命周期内设置和检索这些变量。
+增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**函数在表单的整个生命周期内设置和检索这些变量。
 这些变量包括：
 
 * 未随表单数据一起提交。
@@ -105,6 +105,8 @@ ht-degree: 0%
 
 **在规则编辑器中使用Set Variable Value和Get Variable Value函数实现**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 已使用&#x200B;**Set Variable Value**&#x200B;函数在&#x200B;**Address**&#x200B;片段上配置规则，以分配名为&#x200B;**extracharge**&#x200B;的临时变量。 此变量的值会根据所选国家/地区进行动态更改。 例如：
 
 * 如果用户选择“美国”，则&#x200B;**extracharge**&#x200B;设置为500。
@@ -116,13 +118,13 @@ ht-degree: 0%
 
 ![获取变量值](/help/forms/assets/getvalue.png)
 
-随着用户更改国家/地区或数量，**总装运成本**&#x200B;字段会动态更新以反映产品成本和装运费用。
+随着用户更改国家/地区或数量，**总装运成本**字段会动态更新以反映产品成本和装运费用。
 ![输出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您还可以在When条件中添加&#x200B;**Get Variable value**&#x200B;函数。
-> &#x200B;> ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
+> 您还可以在When条件中添加&#x200B;**Get Variable value**函数。
+> > ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
 
 这种方法可以实现动态的实时计算，而无需向表单中添加额外的字段，保持结构干净和用户友好。
 
@@ -135,6 +137,9 @@ ht-degree: 0%
 该表单不使用直接绑定到字段的逻辑，而是使用基于事件的方法搭配&#x200B;**调度事件**&#x200B;和&#x200B;**触发事件**&#x200B;来提高模块性和可维护性。
 
 **使用调度事件和触发器事件实施**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 登录片段将添加到表单中，其中包含用户名和密码的预定义字段。 在&#x200B;**获取OTP**&#x200B;按钮上配置了用于显示&#x200B;**验证面板**&#x200B;的规则，该面板包括用于输入和验证OTP的输入字段。
 
