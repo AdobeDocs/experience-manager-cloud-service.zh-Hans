@@ -85,7 +85,7 @@ Content Hub现在可帮助您更快地发现所需的资源。 借助新的批�
 
 **日期和时间输入组件**
 
-[日期和时间组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)现已可用，允许用户使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
+[日期和时间组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)现已可用，允许用户使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
 
 **增强了文件上传的错误处理**
 
@@ -129,7 +129,7 @@ AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以�
 
 **涂写签名组件**
 
-您现在可以使用[涂写签名组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、手写笔或触摸屏直接在表单中绘制其签名。
+您现在可以使用[涂写签名组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、手写笔或触摸屏直接在表单中绘制其签名。
 
 在规则编辑器中&#x200B;**直接API集成**
 
