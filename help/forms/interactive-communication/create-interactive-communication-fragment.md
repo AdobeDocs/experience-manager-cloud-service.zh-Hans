@@ -42,7 +42,7 @@ ht-degree: 8%
 
 1. 选择交互式通信片段后，会出现一个屏幕，您可以在其中定义关键片段详细信息，例如标题、名称、描述、数据模型（后端数据的结构化表示形式）和标记。
 
-   有关详细信息，请参阅[数据模型配置指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
+   有关详细信息，请参阅[数据模型配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
 
    ![查找IC文档](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
