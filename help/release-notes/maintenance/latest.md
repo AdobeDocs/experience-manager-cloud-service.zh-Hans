@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 36%
+source-wordcount: '632'
+ht-degree: 35%
 
 ---
 
@@ -65,6 +65,8 @@ ht-degree: 36%
 ### 已知问题 {#known-issues-21994}
 
 * 由于作为安全修复的一部分实施的新限制，Apache HTTPD版本2.4.65引入的更改可能会影响某些配置。 这些修复通过确保用于修改Content-Type标头的`RequestHeader set`、`edit`和`edit_r`等指令现在正确限制为请求标头来解决漏洞。 此更改可防止对响应标头（尤其是静态内容）进行意外修改。
+* 在使用ProxyRemote连接时，Apache HTTPD版本2.4.65引入了mod_proxy中的更改。 如果您遇到问题，请将disablereuse标志设置为On。
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### 已弃用的功能和 API {#deprecated-21994}
 
