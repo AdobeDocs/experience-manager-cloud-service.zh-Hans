@@ -3,10 +3,10 @@ title: 具有 OpenAPI 功能的 Dynamic Media
 description: 了解关键概念，例如为什么使用具有 OpenAPI 功能的 Dynamic Media 以及如何启用它。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1062'
-ht-degree: 100%
+source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 * **针对网络优化的传递**：数字资产以针对网络优化的格式传递，以提升您的数字体验的核心网页关键指标。这包括支持图像的 WebP 演绎版、通过 HLS 或 DASH 协议实现视频的自适应流式处理，以及文档的原始演绎版。
 
-* **动态资产转换**：我们的系统允许使用称为图像修改器的 URL 参数进行即时图像转换。[例如宽度、高度、旋转、翻转、质量、裁切、格式和智能裁剪](/help/assets/deliver-assets-apis.md)。转换后的演绎版是动态生成的，并通过内容传递网络无缝传递。
+* [动态资产转换](https://developer.adobe.com/experience-cloud/experience-manager-apis)：我们的系统允许使用称为图像修改器的 URL 参数进行即时图像转换。例如，宽度、高度、旋转、翻转、质量、裁切、格式和智能裁切。 转换后的演绎版是动态生成的，并通过内容传递网络无缝传递。
 
 * **安全传递资产**：具有 OpenAPI 功能的 Dynamic Media 提供了一种控制访问您的数字资产的机制。您可以将用户角色或组指定为要保护的资产的元数据，并设置预定义的时间范围，在此期间[只有授权用户才能访问这些资产](/help/assets/restrict-assets-delivery.md)。在限制期内，未经授权的用户无法解析受保护资产的传递 URL。
 
