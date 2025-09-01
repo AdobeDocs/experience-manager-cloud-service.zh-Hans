@@ -4,16 +4,19 @@ description: 内容复制工具使用户能够按需将可变内容从其AEM as 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 34%
+source-wordcount: '1450'
+ht-degree: 31%
 
 ---
 
 # 内容复制工具 {#content-copy}
 
 内容复制工具使用户能够按需将可变内容从其AEM as a Cloud Service上的生产环境复制到较低环境中，以供测试之用。
+
+>[!NOTE]
+>当主内容复制流从较高环境复制到较低环境时，附加功能&#x200B;**转发流**&#x200B;允许从较低非生产环境复制到较高非生产环境(例如Dev → Stage、RDE → Stage)。 有关详细信息（包括可用性要求），请参阅[限制](#limitations)。
 
 ## 简介 {#introduction}
 
@@ -105,7 +108,7 @@ ht-degree: 34%
 创建内容集后，您可以使用该内容集复制内容。 请按照以下步骤操作，以便复制内容。
 
 >[!NOTE]
-> 当[内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)操作正在环境中运行时，请勿在该环境中使用内容复制。
+> 当[内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)操作正在环境中运行时，请勿在该环境中使用内容副本。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -192,7 +195,9 @@ ht-degree: 34%
 
 内容复制工具具有以下限制。
 
-* 内容无法从较低级别的环境复制到较高级别的环境。
+* 内容复制工具支持两种流模式：
+   1. 自上而下流 — 内容可以从较高的环境复制到较低的环境(例如，生产→暂存、暂存→开发/RDE)。
+   2. 正向流量（新功能） — 内容也可以从较低级别的非生产环境复制到较高级别的非生产环境(例如，开发→暂存、RDE→暂存)。 此功能仅在显式请求时可用，并且在显式请求禁用之前保持启用状态。 生产环境从来不是转发流的有效目标。
 * 只能将内容从创作服务复制到创作服务。
 * 在同一环境中运行并发的内容复制操作是不可能的。
 * 每个内容集最多可以指定50个路径。 排除的路径没有限制。
