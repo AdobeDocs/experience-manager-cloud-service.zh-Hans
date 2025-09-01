@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '317'
+ht-degree: 9%
 
 ---
 
-
 # 创建交互式通信模板
+
+>[!NOTE]
+>
+> 交互式通信功能在早期采用者计划下提供。 将工作地址中的电子邮件发送至`aem-forms-ea@adobe.com`以请求访问权限。
+
+>[!IMPORTANT]
+>
+> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着Forms Experience Builder在率先采用者计划中的不断演变，提示、示例和最佳实践可能会发生变化。
 
 AEM中的交互式通信模板允许用户定义可重用的布局结构，例如页眉、页脚、徽标和默认样式。 这些模板是创建一致、品牌化且高效的通信的基础。
 
