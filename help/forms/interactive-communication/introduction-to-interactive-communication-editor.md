@@ -8,14 +8,22 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
+source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 6%
 
 ---
 
 # 交互式通信编辑器简介
+
+>[!NOTE]
+>
+> 交互式通信功能在早期采用者计划下提供。 将工作地址中的电子邮件发送至`aem-forms-ea@adobe.com`以请求访问权限。
+
+>[!IMPORTANT]
+>
+> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着Forms Experience Builder在率先采用者计划中的不断演变，提示、示例和最佳实践可能会发生变化。
 
 ## 什么是交互式通信编辑器？
 
