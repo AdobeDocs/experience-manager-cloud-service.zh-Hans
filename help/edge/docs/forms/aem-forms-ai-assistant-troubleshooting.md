@@ -6,7 +6,8 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 1%
@@ -197,7 +198,6 @@ ht-degree: 1%
         — 消息（所需文本区域，最多500个字符）
         — 提交至电子邮件通知
    
-
 ### 布局和样式问题
 
 **症状：**
@@ -532,7 +532,7 @@ ht-degree: 1%
 
 - [Forms Experience Builder提示库](ai-assistant-prompt-library.md)
 - [Forms体验生成器最佳实践](aem-forms-ai-assistant-best-practices.md)
-- [AEM Forms文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)
+- [AEM Forms文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
 
 ### 上报和支持
 
@@ -573,4 +573,4 @@ ht-degree: 1%
 - 培训和知识共享课程
 - 产品团队关于功能改进的反馈
 
-本疑难解答指南会根据用户反馈和Forms Experience Builder新增功能不断更新。 有关最新信息和其他资源，请查看[AEM Forms文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。
+本疑难解答指南会根据用户反馈和Forms Experience Builder新增功能不断更新。 有关最新信息和其他资源，请查看[AEM Forms文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。

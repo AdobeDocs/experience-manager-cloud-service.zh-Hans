@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '946'
 ht-degree: 3%
 
 ---
@@ -20,46 +20,21 @@ ht-degree: 3%
 >
 > **文档可能会发生变化**：此文档目前正在针对产品进行测试，因此可能会进行更新和修订。随着Forms Experience Builder在率先采用者计划中的不断演进，功能、命令和示例可能会发生变化。
 
-Forms Experience Builder为Adobe Experience Manager (AEM) Forms引入了人工智能的强大功能。 这一创新的解决方案改变了组织通过自然语言交互和智能自动化来创建、管理和优化其数字表单的方式。
+AEM Forms Experience Builder利用创新型人工智能的强大功能实现民主化并加速数字表单体验的创建和更新。 通过支持通过自然语言交互驱动的基于意图的工作流，它使用户能够快速轻松地无缝设计、修改和优化表单。
 
-Forms Experience Builder构建于现代Web技术之上，由高级AI服务提供支持，它使技术用户和非技术用户都能够通过对话界面创建完善的专业级表单。 无论您是需要简单的注册表单的业务分析师，还是创建复杂的多步骤工作流的开发人员，Forms Experience Builder都可以简化整个表单创建过程。
+Forms Experience Builder构建于现代Web技术之上，由高级AI服务提供支持，它使技术用户和非技术用户都能够通过对话界面创建完善的专业级表单。 这种革命性的方法可将实现价值的时间从数天减少到数小时，通过界面简化消除技术障碍，并可在整个形式的生态系统中扩展现代化工作。
 
-## 对话界面
 
-Forms Experience Builder提供了基于聊天的直观界面，使表单创建变得简单，就像聊天：
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ Forms Experience Builder                               │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  👤 User: Create a customer feedback form              │
-│                                                         │
-│  🤖 AI: I'll help you create a feedback form. What    │
-│       type of feedback do you want to collect?         │
-│                                                         │
-│  👤 User: Product reviews with ratings and comments    │
-│                                                         │
-│  🤖 AI: Perfect! I've created a feedback form with:   │
-│       * Product rating (1-5 stars)                     │
-│       * Comment field                                   │
-│       * Customer email (optional)                       │
-│       * Submit to email notification                    │
-│                                                         │
-│  👤 User: Add a field for product category             │
-│                                                         │
-│  🤖 AI: Added a dropdown field with common categories  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
 
 ## 核心功能
 
-### AI支持的表单创建
+Forms Experience Builder提供两种用于创建强大数字表单的主要工作流程：
+
+### &#x200B;1. AI支持的表单创建
 
 **自然语言表单生成**
 
-使用纯英文描述从头开始创建完整的表单。 您只需描述自己的要求，例如“创建一个具有评级尺度和评论字段的客户反馈表单”，Forms Experience Builder即会生成相应的表单结构、字段类型和验证规则。
+使用纯英文描述从头开始创建完整的表单。 您只需描述自己的要求，例如“创建一个具有评级尺度和评论字段的客户反馈表单”，Forms Experience Builder即会生成相应的表单结构。 您可以使用可视编辑器的体验生成器来添加更多字段、验证规则和提交逻辑。
 
 **动态字段管理**
 
@@ -67,27 +42,7 @@ Forms Experience Builder提供了基于聊天的直观界面，使表单创建�
 
 **布局优化**
 
-通过自然语言更新表单布局和配置。 请求更改，如“使表单更便于移动使用”或“在逻辑流中重新组织字段”，Forms Experience Builder将应用适当的样式和布局调整。
-
-### 智能导入和转换
-
-**PDF到表单的转换**
-
-将静态PDF文档转换为交互式动态表单。 上传任意PDF文档，Forms Experience Builder将分析结构以创建具有相应字段类型和验证的相应数字表单。
-
-表单转换的&#x200B;**URL**
-
-将现有Web窗体或页面转换为AEM Forms。 只需提供一个URL，Forms Experience Builder即可提取表单元素，并将其重新创建为具有增强功能的本机AEM Forms。
-
-**多格式文件支持**
-
-处理各种用于表单创建的文件类型，包括PDF、图像、屏幕截图和现有表单模板。 Forms Experience Builder可以处理这些内容并将其转换为功能性AEM Forms。
-
-### 高级表单逻辑和集成
-
-**智能规则生成**
-
-通过自然语言创建复杂的表单验证和业务逻辑规则。 Forms Experience Builder可以生成复杂的条件逻辑、字段依赖项和验证规则，这些通常需要丰富的编码知识。
+通过自然语言更新表单布局和配置。 请求更改（如“将表单布局更改为向导布局”）以及Forms Experience Builder应用适当的样式和布局调整。
 
 **完整的提交操作配置**
 
@@ -100,126 +55,86 @@ Forms Experience Builder提供了基于聊天的直观界面，使表单创建�
 - **营销平台**：与Marketo直接集成，用于潜在客户管理
 - **AEM工作流**：利用现有AEM工作流功能
 
-**性能分析**
 
-分析表单转化绩效和用户参与模式。 Forms Experience Builder提供了有关表单有效性的见解以及改进完成率和用户体验的优化建议。
+### 2.智能导入和转换
+
+**支持的导入格式**
+
+将现有表单和文档转换为交互式数字体验。 Forms Experience Builder支持：
+
+- **Acroforms**：具有现有字段结构的交互式PDF forms
+- **XFA PDF**：复杂的基于XML的表单架构
+- **平面PDF**：转换为交互式表单的静态文档
+- **图像和屏幕截图**：JPG、PNG格式（与团队核对大小限制）
+- **手绘Forms**：草图和纸质照片
+
+
+**智能转换进程**
+
+分析上传的内容以便：
+
+- 检测字段类型和关系
+- 尽可能保留布局
+- 通过现代响应式设计进行增强
+- 添加高级验证和条件逻辑
+- 优化辅助功能和移动体验
 
 ## 工作原理
 
 Forms Experience Builder遵循一种简单的对话式方法：
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  1. Describe    │───▶│  2. AI Creates  │───▶│  3. Refine &    │
-│  Your Form      │    │  Initial Form   │    │  Configure      │
-│  Requirements   │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  "Create a loan application form"  →  Form with relevant        │
-│  "Add conditional logic"           →  fields and basic          │
-│  "Connect to CRM system"           →  validation rules          │
-└─────────────────────────────────────────────────────────────────┘
-```
+    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+    │ 1. 描述    │───▶│ 2. AI创建│───▶│ 3。 优化和    │
+    │您的表单      │    │初始表单   │    │配置      │
+    │要求   │    │                 │    │                 │
+    └─────────────────┘    └─────────────────┘    └─────────────────┘
+    │                       │                       │
+    │                       │                       │
+    ▼                       ▼                       ▼
+    ┌───────────────────────────────────────────────────────────────────────────┐
+    │ “创建贷款申请表”→含相关内容的表格                  │
+    │ “添加电子邮件字段”           →字段和基本                          │
+    │“将电子邮件字段的值设置为@firstname@gmail.com”→验证规则   │
+    └───────────────────────────────────────────────────────────────────────────┘
 
-## 用例示例
+## 示例场景
 
-### 贷款申请表
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Loan Application - Multi-Step Form                    │
-├─────────────────────────────────────────────────────────┤
-│ Step 1: Personal Information                           │
-│  🏠 Property Type: [Primary] [Investment] [Commercial] │
-│  💰 Loan Amount: [$_______] (triggers different paths) │
-│  📊 Income Verification: [W2] [Self-Employed] [Other]  │
-│                                                         │
-│ Step 2: Financial Details (conditional based on above) │
-│  ↳ If Self-Employed: Show tax returns, profit/loss     │
-│  ↳ If W2: Show employment history, pay stubs           │
-│  ↳ Complex debt-to-income calculations                 │
-│                                                         │
-│ Step 3: Compliance & Review                            │
-│  📋 Regulatory disclosures, digital signatures         │
-│  🔍 Automated eligibility pre-screening                │
-└─────────────────────────────────────────────────────────┘
-```
+**将PDF forms转换为数字Forms**
 
-### 保险索赔表
+将Acroform、XFA PDF或平面PDF文档转换为具有增强功能的响应式交互式数字表单。
+:::
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Insurance Claim - Adaptive Form                        │
-├─────────────────────────────────────────────────────────┤
-│ 🚗 Claim Type: [Auto] [Property] [Health] [Business]   │
-│                                                         │
-│ ↳ Auto Selected: Shows accident details, police report │
-│ ↳ Property: Shows damage assessment, repair estimates  │
-│ ↳ Health: Shows medical provider network, pre-auth     │
-│                                                         │
-│ 📎 Dynamic Document Requirements:                       │
-│   * Photos/videos of damage                            │
-│   * Police reports (auto only)                         │
-│   * Medical records (health only)                      │
-│   * Repair estimates (property only)                   │
-│                                                         │
-│ 🔄 Real-time claim status updates                      │
-└─────────────────────────────────────────────────────────┘
-```
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
 
-### 迁移和转换方案
+**使旧版XFA Forms符合现代化要求**
 
-通过AI支持的转换，将现有表单转换为强大的数字体验。
+通过改进的用户工作流程，将复杂的XFA应用程序转换为现代的、可访问的数字体验。
+:::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
 
-#### 将PDF forms转换为数字Forms
+**将屏幕截图转换为数字Forms**
 
-通过自动计算和移动响应式设计，将具有多个字段的PDF forms转换为动态的数字体验。
+将图像、屏幕快照或手绘表单转换为功能齐全的数字体验。
+:::
+::::
 
-**主要优点：**
+<!-- #### Import and Enhance Web Forms
 
-- 自动计税和字段依赖关系
-- 数字签名和电子归档集成
-- 移动响应布局优化
-- 处理错误减少95%
+Import existing HTML forms and enhance them with advanced features while preserving existing functionality.
 
+**Key benefits:**
 
-#### 现代化基于XFA的旧版表单
-
-您可以通过实时验证和可访问性合规性将复杂的XFA应用程序转换为现代的多步向导。
-
-**主要优点：**
-
-- 简化的多步向导界面
-- 利用情景式帮助进行实时验证
-- 政府数据库集成
-- 完全符合WCAG 2.1无障碍要求
-
-
-#### 将表单的屏幕快照转换为数字表单
-
-您可以将任何纸质表单转换为数字体验。 AEM Forms会自动优化布局，并根据屏幕快照创建集成就绪的数字表单。
-
-**主要优点：**
-
-- 智能字段类型检测
-- 优化响应布局生成
-- 在原始纸面文档之外增强了验证
-- 集成就绪型架构
-
-#### 导入和增强现有Web窗体
-
-您可以导入现有Web表单，并将高级验证、条件逻辑和多渠道提交添加到表单，而无需中断现有功能。
-
-**主要优点：**
-
-- 高级验证逻辑和规则
-- 条件字段行为和工作流
-- 多渠道提交选项
-- 内置分析和性能跟踪
+- Advanced validation and business logic
+- Conditional field behaviors
+- Multi-channel submission options
+- Enhanced user experience design -->
 
 ## Forms Experience Builder与传统开发
 
@@ -228,46 +143,83 @@ Forms Experience Builder遵循一种简单的对话式方法：
 | **创建时间** | 2-3天 | 2-3小时 |
 | **技术知识** | 必填 | 非必需 |
 | **验证规则** | 手动编码 | 自然语言 |
-| **移动优化** | 手动CSS/JS | 自动 |
 | **辅助功能** | 手动实施 | 内置合规性 |
-| **更新** | 需要更改代码 | 自然语言 |
 
 
 ## 为组织带来的好处
 
-### 民主化表单创建
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
 
-使非技术性用户无需编程知识即可创建复杂的表单。 业务分析员、主题专家和内容创建者可以通过自然语言对话直接将其需求转换为功能形式。
+**民主化表单创建**
 
-### 缩短实现价值的时间(TTV)
+通过自然语言对话，使非技术性用户能够在不具备编程知识的情况下创建复杂的表单。
+:::
 
-将表单开发速度从数天大幅提升到数小时。 以前需要较长的开发周期现在可以通过对话式人工智能在单个会话中完成，从而加快数字计划的上市速度。
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg)
 
-### 界面简化
+**缩短实现值的时间(TTV)**
 
-通过直观的对话界面消除学习曲线。 用户可以使用自然语言创建复杂的表单，而不是学习技术表单构建工具，从而减少培训时间并提高采用率。
+大幅加快表单开发，从几天缩短到几小时，使数字计划更快走向市场。
+:::
 
-### 扩展现代化工作
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
 
-高效地使旧版表单项目组合符合现代化要求。 将现有PDF、XFA和HTML表单转换为响应式数字体验，同时保留业务逻辑并增强整个表单生态系统的用户体验。
+**接口简洁性**
+
+通过直观的对话界面消除学习曲线，减少培训时间并提高采用率。
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
+
+**扩展现代化工作**
+
+高效地实现旧版表单产品组合现代化，保留业务逻辑并增强整个表单生态系统的用户体验。
+:::
+::::
+
+## 加入
+
+Forms Experience Builder目前作为早期访问(EA)计划的一部分提供。 要参与并获得访问权限，您需要以下信息：
+
+### 所需信息
+
+- **IMS组织ID**：您的Adobe组织标识符
+- **项目ID**：您在Adobe Experience Cloud中的特定项目标识符
+- **项目详细信息**：时间表、范围和预期用例
+- **正式工作电子邮件**：与您组织的Adobe帐户关联
+
+
+### 如何获取IMS组织ID和项目ID
+
+有关查找IMS组织ID和项目ID的详细步骤，请参阅：
+
+- [Adobe Experience Cloud组织设置指南](/help/onboarding/cloud-manager-introduction.md)
+- [项目和环境管理](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+### 请求访问
+
+1. 使用上述指南收集您的IMS组织ID和项目ID
+2. 向[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)发送一封请求访问的电子邮件
+3. 在您的请求中包含：
+   - 组织名称和IMS组织ID
+   - 项目ID
+   - 项目时间表和范围
+   - 预期用例和业务目标
+
+>[!IMPORTANT]
+>
+> **有限可用性计划**：访问Forms Experience Builder需要获得内部利益相关者的批准。 Adobe将根据项目容量以及与早期访问标准的符合情况审查您的请求。 批准并不保证，具体取决于当前计划的可用性。
+
+有关提前访问程序及其功能的详细信息，请参阅[AEM Forms提前访问文档](/help/forms/early-access-ea-features.md)。
+
 
 ## 快速入门
 
 要开始使用Forms Experience Builder，请访问[Forms Experience Builder文档](forms-ai-assistant-getting-started.md)。 您可以通过Forms编辑器或通用编辑器访问AEM Forms Experience Builder，具体取决于您的首选工作流程。
 
 对于希望转变表单创建过程的组织，Forms Experience Builder提供了一个强大、直观的解决方案，它将对话式人工智能的灵活性与企业级表单管理的强大功能结合起来。
-
-## 载入和抢先体验
-
-Forms Experience Builder目前作为早期访问(EA)计划的一部分提供。 要参与并获得访问权限，请执行以下步骤：
-
-1. 确保您使用的是与组织关联的官方工作电子邮件地址。
-2. 向[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)发送一封电子邮件，请求访问Forms Experience Builder。
-3. 在您的请求中包含您的组织名称和任何相关的项目详细信息，以帮助加快载入流程。
-
->[!NOTE]
->
-> Forms Experience Builder的访问权限仅限于“抢先体验”计划中的已批准参与者。 如果您符合条件，Adobe将审核您的请求并提供入门的进一步说明。
-
-有关提前访问程序及其功能的详细信息，请参阅[AEM Forms提前访问文档](/help/forms/early-access-ea-features.md)。
-

@@ -7,10 +7,10 @@ index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 28%
+source-wordcount: '2193'
+ht-degree: 13%
 
 ---
 
@@ -42,31 +42,30 @@ ht-degree: 28%
 
 **提前准备品牌资产以创建一致的表单：**
 
-- **品牌模板** — 使用您组织的颜色、字体和布局模式创建标准化表单模板
-- **样式准则** — 定义一致的字段样式、按钮设计和间距标准
-- **组件库** — 生成与您的品牌标识匹配的可重用表单组件
+- **品牌模板** — 使用您组织的颜色、字体和布局模式准备标准化表单模板
+- **样式准则** — 定义Forms Experience Builder可以应用的一致字段样式、按钮设计和间距标准
+- **组件库** — 与开发团队合作，准备与您的品牌标识相匹配的可重用表单组件
 - **可视化Assets** — 为表单集成准备徽标、图标和背景元素
 
-**示例品牌模板提示：**
+<!-- **Example Brand Application Prompt:**
 
-```
-Create a brand template for financial services forms with:
-- Corporate blue (#003366) and silver (#C0C0C0) color scheme
-- Open Sans font family for all text
-- 16px minimum font size for accessibility
-- Consistent 24px spacing between sections
-- Corporate logo in header with proper sizing
-- Professional button styling with hover effects
-```
+    Apply our financial services brand template with:
+    - Corporate blue (#003366) and silver (#C0C0C0) color scheme
+    - Open Sans font family for all text
+    - 16px minimum font size for accessibility
+    - Consistent 24px spacing between sections
+    - Corporate logo in header with proper sizing
+    - Professional button styling with hover effects
 
 >[!NOTE]
 >
->**自定义组件**：在实施自定义品牌元素之前，请与您的开发团队联系，了解如何使用特定于组织的组件及其与Forms Experience Builder的兼容性。
+>**Custom Components**: Check with your development team about using organization-specific components and their compatibility with Forms Experience Builder before implementing custom brand elements.
 
 >[!NOTE]
 >
-> 此提示库已更新，以反映简化的Forms Experience Builder功能。 示例中显示的某些高级集成和测试功能可能需要额外的配置。
+> This prompt library has been updated to reflect the streamlined Forms Experience Builder capabilities. Some advanced integration and testing features shown in examples may require additional configuration.
 
+-->
 
 
 ## 逐步开发示例
@@ -77,65 +76,45 @@ Create a brand template for financial services forms with:
 
 **步骤 1 - 从简单开始：**
 
-```
-Create a basic contact form with name, email, and message fields
-```
+    创建包含姓名、电子邮件和消息字段的基本联系人表单
 
 **步骤 2 - 添加验证：**
 
-```
-Make @name and @email mandatory fields with appropriate validation
-```
+    使@name和@email必填字段具有适当的验证
 
 **步骤 3 - 增强用户体验**
 
-```
-Add placeholder text: @name "Your full name", @email "your.email@company.com", @message "Tell us how we can help"
-```
+    添加占位符文本： @name “您的全名”、“your.email@company.com”@email以@message“告诉我们如何提供帮助”
 
 **步骤 4 - 添加高级功能：**
 
-```
-Add a dropdown @inquiryType with options: "General Question", "Support Request", "Sales Inquiry", "Partnership"
-```
+    添加包含下列选项的下拉列表inquiryType：“General Question”、“Support Request”、“Sales Inquiry”、“Partnership”
 
 **步骤 5 - 实施条件逻辑：**
 
-```
-Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "Support Request"
-```
-
+仅当@inquiryType等于“支持请求”    时，
+/create-rule才会显示@urgencyLevel下拉列表(下限、Medium、上限)
 ### 示例 2：逐步构建一个注册表单
 
 **步骤 1- 基本结构：**
 
-```
-Create a user registration form with personal information panel
-```
+    创建包含个人信息面板的用户注册表
 
 **第2步 — 添加必填字段：**
 
-```
-Add fields for @firstName, @lastName, @email, @phoneNumber with appropriate validation
-```
+    添加@firstName、@lastName、@email、@phoneNumber的字段并进行适当的验证
 
 **步骤3 — 添加业务逻辑：**
 
-```
-Create a rule: if @age is under 18, show parent/guardian information section
-```
+    创建规则：如果@age低于18，则显示父/监护人信息部分
 
 **步骤4 — 使用首选项进行增强：**
 
-```
-Add a preferences panel with @newsletterSubscription, @marketingConsent, @termsAccepted
-```
-
+    添加包含@newsletterSubscription、@marketingConsent、@termsAccepted
+的首选项面板
 **步骤5 — 添加文件上传：**
 
-```
-Include a file upload field for @profilePicture with size limit of 5MB
-```
+    包含大小限制为5MB的@profilePicture的文件上载字段
 
 ## 表单创建和管理
 
@@ -145,70 +124,60 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **示例提示 — 简单表单创建：**
 
-```
-Create a customer feedback form with:
-- Product rating (1-5 stars)
-- Comment field for detailed feedback
-- Customer email (optional)
-- Submit to email notification
-```
+    创建客户反馈表，其内容为：
+     — 产品评分（1-5星）
+     — 详细反馈的评论字段
+     — 客户电子邮件（可选）
+     — 提交至电子邮件通知
 
 **示例提示 — 复杂表单创建：**
 
-```
-Create a comprehensive employee onboarding form with:
-
-**Personal Information Section:**
-- Full name (first, middle, last)
-- Date of birth with age validation
-- Contact information (email, phone, address)
-- Emergency contact details
-
-**Employment Details:**
-- Position and department selection
-- Start date with business day validation
-- Salary information with confidentiality notice
-- Reporting structure
-
-**Document Upload:**
-- Resume/CV upload (PDF, DOC, DOCX)
-- ID verification documents
-- Tax forms and banking information
-- Signed employment agreement
-
-**Preferences:**
-- Benefits selection with cost calculator
-- Work schedule preferences
-- Training requirements
-- Equipment needs
-
-**Validation Rules:**
-- Email format validation
-- Phone number format validation
-- Age must be 18 or older
-- All required documents must be uploaded
-- Terms and conditions must be accepted
-
-**Submit Actions:**
-- Send confirmation email to new employee
-- Notify HR department
-- Create employee record in HR system
-- Schedule orientation meeting
-```
+    使用以下内容创建全面的员工入职表单：
+    
+    **个人信息部分：**
+     — 全名（名字、中间名、姓氏）
+     — 出生日期及年龄验证
+     — 联系信息（电子邮件、电话、地址）
+     — 紧急联系详细信息
+    
+    **雇佣详细信息：**
+     — 职位和部门选择
+     — 开始日期及工作日期验证
+     — 带有保密通知的薪金信息
+     — 报告结构
+    
+    **文档上传：**
+     — 简历/简历上传(PDF、DOC、DOCX) ID验证文件
+    - ID验证文件
+     — 纳税表单和银行信息
+     — 已签署的雇佣协议
+    
+    **首选项：**
+     — 使用成本计算器的福利选择
+     — 工作计划首选项
+     — 培训要求
+     — 设备需求
+    
+    **验证规则：**
+     — 电子邮件格式验证
+     — 电话号码格式验证
+     — 年龄必须为18岁或以上
+     — 必须上载所有必需的文件
+     — 条款和条件被接受
+    
+    **提交操作：**
+     — 向新员工发送确认电子邮件
+     — 通知HR部门
+     — 在HR系统中创建员工记录
+     — 安排指导会议
 
 **表单管理提示：**
 
-```
-Import this PDF application form and convert it to an adaptive form with enhanced validation
-```
-
-```
-Update the existing contact form to include social media handles and preferred contact method
-```
-
-```
-Reorganize the registration form into a 3-step wizard: personal info, preferences, confirmation
-```
+    导入此PDF应用程序表单，并将其转换为具有增强型验证的自适应表单
+    
+    更新现有联系人表单以包含社交媒体句柄和首选联系方式
+    
+    将注册表单重新组织为三步向导：个人信息、首选项、确认
 
 ## 字段管理和配置
 
@@ -218,52 +187,40 @@ Reorganize the registration form into a 3-step wizard: personal info, preference
 
 **示例提示 — 基本字段添加：**
 
-```
-Add a text input field for "Company Name" with placeholder "Enter your company name"
-```
+    为“公司名称”添加一个文本输入字段，其占位符为“输入您的公司名称”
 
 **示例提示 — 高级字段配置：**
 
-```
-Add a comprehensive address section with:
-
-**Street Address:**
-- Address line 1 (required, max 100 characters)
-- Address line 2 (optional, max 100 characters)
-- City (required, dropdown with common cities)
-- State/Province (required, dropdown)
-- Postal code (required, format validation)
-- Country (required, default to "United States")
-
-**Validation Rules:**
-- Postal code must match state selection
-- Address line 1 cannot be empty
-- City must be a valid city for selected state
-
-**User Experience:**
-- Auto-complete for address fields
-- Clear labels and help text
-- Mobile-friendly input fields
-- Accessibility compliance
-```
+    添加综合地址部分，地址为：
+    
+    **街道地址：**
+     — 地址行1（必需，最多100个字符）
+     — 地址行2（可选，最多100个字符）
+     — 城市（必需，包含常用城市的下拉列表）
+     — 州/省（必需，下拉列表）
+     — 邮政编码（必需，格式验证）
+     — 国家/地区（必需，默认为“美国”）
+    
+    **验证规则：**
+     — 邮政编码必须与州选择匹配
+     — 地址行1 empty
+     — 城市必须是选定州
+    
+    **用户体验：**
+     — 自动完成地址字段
+     — 清除标签和帮助文本
+     — 移动友好的输入字段
+     — 辅助功能合规性
 
 **字段配置提示：**
 
-```
-Make @email field required with real-time validation and custom error message
-```
-
-```
-Add a dropdown for @country with options for USA, Canada, UK, Germany, France, and "Other"
-```
-
-```
-Configure @phoneNumber field with format (XXX) XXX-XXXX and validation
-```
-
-```
-Add a file upload field for @resume with PDF and DOC restrictions, max 5MB
-```
+    使@email字段为实时验证和自定义错误消息所必需
+    
+    添加一个下拉列表，以便@country表具有USA、Canada、UK、Germany、France和“Other”选项
+    
+    使用(XXX) XXX-XXXX和验证格式配置@phoneNumber字段
+    
+    添加一个文件上传字段，以便@resume用PDF和DOC限制，最大为5MB
 
 ## LLM增强型智能字段
 
@@ -275,123 +232,95 @@ Add a file upload field for @resume with PDF and DOC restrictions, max 5MB
 
 **机场和运输：**
 
-```
-Add a dropdown for departure airports with all major international airports
-Add arrival airport field with IATA codes and full names
-Create a field for nearest airport to user location
-Add a selection of train stations for European cities
-```
+    添加包含所有主要国际机场的出发机场的下拉菜单
+    添加包含IATA代码和全名的到达机场字段
+    创建与用户位置最接近的机场的字段
+    添加欧洲城市的火车站选择
 
 **管理区域：**
 
-```
-Add a complete list of US states with abbreviations
-Create a country dropdown with ISO codes and full names
-Add a field for major world cities with time zones
-Include a dropdown of Canadian provinces and territories
-Add a field for UK counties and postal areas
-```
+    添加包含缩写的美国州的完整列表
+    创建包含ISO代码和全名的国家/地区下拉列表
+    添加包含时区的世界主要城市的字段
+    包含加拿大省和地区的下拉列表
+    添加英国县和邮政区域的字段
 
 ### 商业和行业数据
 
 **公司分类：**
 
-```
-Add a field for industry classification with NAICS codes
-Create a dropdown of business entity types (LLC, Corporation, Partnership, etc.)
-Add a field for company size categories (startup, SME, enterprise)
-Include department selection for large organizations
-Add a field for professional service types
-```
+    添加具有NAICS代码的行业分类字段
+    创建业务实体类型（LLC、公司、合作伙伴等）的下拉列表
+    为公司规模类别（启动、SME、企业）添加字段
+    包括大型组织的部门选择
+    为专业服务类型添加字段
 
 **专业分类：**
 
-```
-Add a field for job titles with common industry roles
-Create a dropdown of professional certifications by field
-Include education levels with degree types
-Add a field for years of experience ranges
-Create a selection for programming languages and frameworks
-```
+    为具有常见行业角色的职称添加字段
+    按字段创建专业认证下拉列表
+    包含学位类型的教育级别
+    添加具有多年经验范围的字段
+    为编程语言和框架创建选择
 
 ### 标准和法规
 
 **财务和法律信息：**
 
-```
-Add a field for currency codes with symbols and exchange rates
-Create a dropdown of tax ID types by country
-Include a field for legal document types
-Add payment method options with security features
-Create a selection for banking institutions by country
-```
+    为具有符号和汇率的货币代码添加字段
+    按国家/地区创建税务ID类型的下拉列表
+    包括合法文档类型的字段
+    添加具有安全功能的付款方法选项
+    按国家/地区为银行机构创建选择项
 
 **技术标准：**
 
-```
-Add a dropdown of file format types with extensions
-Include network protocol options
-Add a field for database types and versions
-Create a selection for API authentication methods
-```
+    添加具有扩展名的文件格式类型的下拉列表
+    包含网络协议选项
+    添加数据库类型和版本的字段
+    为API身份验证方法创建选择
 
 ### 医疗保健业
 
 **医疗分类：**
 
-```
-Add a field for medical specialties
-Create a dropdown of common medications with generic names
-Include a field for insurance provider types
-Add a selection for medical emergency contact relationships
-Create a field for dietary restrictions and allergies
-```
+    添加医疗专长字段
+    创建具有通用名称的常用药物下拉列表
+    包含保险公司类型的字段
+    添加医疗紧急联系关系的选择项
+    创建饮食限制和过敏字段
 
 ### 时间和日历智能
 
 **日期和时间字段：**
 
-```
-Add a field for business hours with time zone handling
-Create a dropdown of public holidays by country
-Include seasonal options with date ranges
-Add a field for conference room booking with availability
-Create a selection for recurring meeting patterns
-```
+    添加包含时区处理的营业时间字段
+    按国家/地区创建公共假日的下拉列表
+    包含日期范围的季节性选项
+    添加包含可用性的会议室预订字段
+    为定期会议模式创建选择
 
 ### 产品和服务类别
 
 **电子商务分类：**
 
-```
-Add a field for product categories with subcategories
-Create a dropdown of shipping methods with delivery estimates
-Include a field for return policy options
-Add a selection for customer priority levels
-Create a field for subscription billing cycles
-```
+    为包含子类别的产品类别添加字段
+    创建包含交货估计值的配送方式下拉列表
+    包含退货政策选项字段
+    添加客户优先级别选项
+    创建订阅计费周期字段
 
 **智能字段提示示例：**
 
-```
-"Add a departure airport field with all major airports worldwide including IATA codes and city names"
-```
-
-```
-"Create a comprehensive industry field using standard NAICS classification with technology subcategories"
-```
-
-```
-"Include a professional certification dropdown that adapts based on the selected job field"
-```
-
-```
-"Add an international phone number field that formats based on the selected country"
-```
-
-```
-"Create a university selection field with major institutions organized by country and ranking"
-```
+    “添加一个出发机场字段，其中包含全球所有主要机场，包括IATA代码和城市名称”
+    
+    “使用具有技术子类别的标准NAICS分类创建一个全面的行业字段”
+    
+    “包含一个根据所选工作字段进行调整的专业认证下拉列表”
+    
+    “添加一个根据所选国家/地区设置格式的国际电话号码字段”
+    
+    “创建一个包含按国家/地区和排名进行组织的主要机构的大学选择字段”
 
 ## 规则创建和业务逻辑
 
@@ -401,47 +330,37 @@ Create a field for subscription billing cycles
 
 **示例提示 — 简单条件逻辑：**
 
-```
-Create a rule that shows @spouseInformation panel only when @maritalStatus equals "Married"
-```
+    创建一个规则，该规则仅在@maritalStatus等于“已婚”时显示@spouseInformation面板
 
 **示例提示 — 复杂业务规则：**
 
-```
-Implement comprehensive loan application validation:
-
-**Income Validation:**
-- If @annualIncome is less than 30000:
-  - Show warning message: "Income may be insufficient for requested loan amount"
-  - Require additional income documentation
-  - Display message: "Additional documentation may be required"
-- If @annualIncome is greater than 100000:
-  - Show premium services options
-  - Enable priority processing checkbox
-
-**Age-Based Validation:**
-- If @age is under 18:
-  - Show parent/guardian information section
-  - Make parent signature upload mandatory
-  - Change submit button text to "Submit for Review"
-- If @age is 65 or older:
-  - Show senior discount options
-  - Add accessibility preferences section
-```
+    实施全面的贷款申请验证：
+    
+    **收入验证：**
+     — 如果@annualIncome小于30000：
+     — 显示警告消息：“收入可能不足以偿还请求的贷款金额”
+     — 需要其他收入文档
+     — 显示消息：“可能需要其他文档”
+     — 如果@annualIncome大于100000：
+     — 显示高级服务选项
+     — 启用优先级处理复选框
+    
+    **基于年龄的验证：**
+     — 如果@age低于18：
+     — 显示父/监护人信息部分
+     — 制作强制签名上传
+     — 将提交按钮文本更改为“提交以供审核”
+     — 如果@age的年龄为65岁或以上：
+     — 显示高级折扣选项
+     — 添加辅助功能首选项部分
 
 **规则特定的提示词：**
 
-```
-Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership"
-```
-
-```
-Add **progressive disclosure** where additional questions appear based on previous answers. Start with basic info, then show relevant follow-ups
-```
-
-```
-Implement **smart defaults** where @country selection auto-sets related fields. Allow manual override
-```
+    创建一个**可见性规则**，该规则仅在@maritalStatus等于“已婚”或“家庭伙伴关系”时显示@spouseInformation面板
+    
+    添加**渐进式披露**，其中根据先前的回答显示其他问题。 从基本信息开始，然后显示相关跟进
+    
+    实施**智能默认值**，@country选择会自动设置相关字段。 允许手动覆盖
 
 ## 数据集成与提交
 
@@ -451,520 +370,310 @@ Implement **smart defaults** where @country selection auto-sets related fields. 
 
 **提示词示例 - 从基本提交开始：**
 
-```
-Configure basic form submission for @applicationForm:
-
-**Primary Submission:**
-- Send form data to REST endpoint: `/api/v1/applications`
-- Format data as JSON
-- Show success message: "Application submitted successfully"
-- Show error message if submission fails: "Submission failed, please try again"
-```
+    配置@applicationForm的基本表单提交：
+    
+    **主要提交：**
+     — 将表单数据发送到REST终结点：“/api/v1/applications”
+     — 将数据格式化为JSON
+     — 显示成功消息：“已成功提交应用程序”
+     — 如果提交失败，则显示错误消息：“提交失败，请重试”
 
 **然后逐步添加次要操作：**
 
-```
-Add email notification to @applicationForm: Send confirmation email to @email address with application reference number
-```
-
-```
-Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
-```
+    向@applicationForm添加电子邮件通知：向@email地址发送确认电子邮件，该地址具有应用程序参考编号
+    
+    向@applicationForm添加CRM集成：创建具有@firstName、@lastName、@email的新潜在客户记录，并将Status设置为“New Application”
 
 **示例提示 — 标准多渠道提交：**
 
-```
-Configure form submission with multiple data destinations:
-
-**Primary Submission:**
-- Send form data to REST endpoint: `/api/v1/applications`
-- Include authentication header with API key
-- Format data as JSON with nested objects for address and employment
-- Handle success response (201) by showing thank you message
-
-**Secondary Actions:**
-- Send notification email to applicant at @email address
-- Copy application data to tracking system
-- Trigger workflow for approval process
-- Create record in CRM with lead status "New Application"
-
-**Error Handling:**
-- If primary submission fails, save data locally and retry
-- Show user-friendly error message: "Submission temporarily unavailable"
-- Provide option to download form data as backup
-- Send alert email to admin team about failed submission
-
-**Success Flow:**
-- Redirect to confirmation page with application reference number
-- Send confirmation email with next steps
-- Display estimated processing timeline
-```
+    配置具有多个数据目标的表单提交：
+    
+    **主提交：**
+     — 将表单数据发送到REST终结点：“/api/v1/applications”
+     — 包含带有API密钥的身份验证标头
+     — 将数据格式化为带有嵌套对象的JSON用于地址和雇佣
+     — 通过显示感谢消息处理成功响应(201)
+    
+    **辅助操作：**
+     — 将通知电子邮件发送到@email地址上的申请人
+     — 将应用程序数据复制到跟踪系统
+     — 触发审批流程工作流
+     — 在带有潜在客户的CRM状态中创建记录“新应用程序”
+    
+    **错误处理：**
+     — 如果主提交失败，请将数据保存在本地并重试
+     — 显示用户友好的错误消息：“提交暂时不可用”
+     — 提供将表单数据下载为备份的选项
+     — 向管理员团队发送有关提交失败的警报电子邮件
+    
+    **成功流程：**
+     — 重定向到具有应用程序参考编号的确认页面
+     — 发送包含后续步骤的确认电子邮件
+     — 显示估计的处理时间线
 
 **集成特定的提示词：**
 
-```
-Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New"
-```
+    将此表单连接到**CRM系统**以创建新潜在客户。 将@firstName映射到FirstName，@email映射到Email，将LeadSource设置为“Web表单”，将Status设置为“新建”
+    
+    在提交表单时设置**工作流触发器**。 通过经理通知
+    
+    配置**数据库集成**传递所有表单数据并触发审批工作流，以将表单提交另存为记录。 为上载文档的每个提交创建新文件夹
 
-```
-Set up **workflow trigger** when form is submitted. Pass all form data and trigger approval workflow with manager notification
-```
+<!-- ## Import & Convert Existing Forms
 
-```
-Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents
-```
+**When to use:** When you have existing forms, documents, or designs to transform into modern AEM forms.
 
-## 导入和转换现有Forms
+**How to use:** Upload your source file and describe the conversion requirements (see [Import Guide](forms-ai-assistant-getting-started.md#2-import-and-convert)).
 
-**何时使用：**&#x200B;当已有表单、文档或设计可转换为现代AEM表单时。
 
-**如何使用：**&#x200B;上载您的源文件并描述转换要求（请参阅[导入指南](forms-ai-assistant-getting-started.md#2-import-and-convert)）。
+**Design Import Prompts:**
 
-**提示词示例 - PDF 表单转化：**
+    Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness
 
-```
-Convert this uploaded **PDF application form** into a functional AEM adaptive form:
+    Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields
 
-**Source Analysis:**
-- Analyze the PDF layout and identify all form fields
-- Preserve the visual hierarchy and grouping
-- Maintain the professional appearance and branding
+    Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes
 
-**Field Mapping:**
-- Convert PDF text fields to adaptive form text inputs
-- Transform checkboxes to checkbox components
-- Convert dropdown lists to AEM dropdown components
-- Map signature areas to digital signature fields
+## Mobile Optimization & Responsiveness
 
-**Enhancements:**
-- Add real-time validation that wasn't possible in PDF
-- Implement conditional logic for dependent fields
-- Make the form responsive for mobile devices
-- Add progress saving capability
-- Include accessibility improvements (ARIA labels, keyboard navigation)
+**When to use:** When forms need to work seamlessly across all device types and screen sizes.
 
-**Styling:**
-- Match the original color scheme and fonts
-- Maintain professional business appearance
-- Ensure consistent spacing and alignment
-- Add subtle animations for better user experience
+**How to use:** Start with basic mobile optimization, then enhance with advanced features. Emphasize mobile-first approach and specify breakpoint behaviors incrementally.
 
-Preserve all original field labels and help text, but improve the user experience with modern form interactions
-```
+**Example Prompt - Start with Basic Mobile Optimization:**
 
-**设计导入提示词：**
+    Make @contactForm mobile-friendly with:
+    
+    **Basic Mobile Layout:**
+    - Single column layout for all form sections
+    - Larger touch targets for buttons and inputs
+    - Responsive design that works on phones and tablets
 
-```
-Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness
-```
+**Then Add Advanced Mobile Features:**
 
-```
-Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields
-```
+    Enhance @contactForm mobile experience with:
+    - Sticky submit button at bottom of screen
+    - Touch-friendly date pickers
+    - Swipe gestures for multi-step navigation
 
-```
-Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes
-```
+**Example Prompt - Comprehensive Mobile-First Optimization:**
 
-## 移动端优化与响应能力
+    Optimize this form for **mobile-first responsive design**:
+    
+    **Mobile Layout (320px - 768px):**
+    - Single column layout for all form sections
+    - Larger touch targets (minimum 44px height)
+    - Simplified navigation with collapsible sections
+    - Sticky submit button at bottom of screen
+    - Auto-zoom disabled on input focus
+    
+    **Tablet Layout (768px - 1024px):**
+    - Two-column layout for shorter fields (name, email)
+    - Single column for complex fields (address, comments)
+    - Side navigation for multi-step forms
+    - Optimized for both portrait and landscape
+    
+    **Desktop Layout (1024px+):**
+    - Multi-column layouts where appropriate
+    - Horizontal form sections for related fields
+    - Sidebar navigation for long forms
+    - Hover states and advanced interactions
 
-**何时使用：**&#x200B;当表单需要在所有设备类型和屏幕尺寸上无缝工作时。
+**Mobile-Specific Prompts:**
 
-**如何使用：**&#x200B;从基本的移动端优化开始，然后通过高级功能将其增强。强调移动端优先的方法，逐步指定断点行为。
+    Make this form **touch-friendly** with larger buttons and simplified navigation for mobile users
 
-**提示词示例 - 从基本的移动端优化开始：**
+    Optimize form for **tablet users** with appropriate field sizes and navigation patterns
 
-```
-Make @contactForm mobile-friendly with:
+    Add **swipe gestures** for multi-step form navigation on mobile devices
 
-**Basic Mobile Layout:**
-- Single column layout for all form sections
-- Larger touch targets for buttons and inputs
-- Responsive design that works on phones and tablets
-```
+## Accessibility & Compliance
 
-**然后添加高级移动端功能：**
+**When to use:** When forms need to meet accessibility standards (WCAG) or compliance requirements.
 
-```
-Enhance @contactForm mobile experience with:
-- Sticky submit button at bottom of screen
-- Touch-friendly date pickers
-- Swipe gestures for multi-step navigation
-```
+**How to use:** Specify the required compliance level and any specific accessibility features needed.
 
-**提示词示例 - 全面的移动端优先优化：**
+**Example Prompt - Basic Accessibility:**
 
-```
-Optimize this form for **mobile-first responsive design**:
+    Make @contactForm accessible with:
+    
+    **Basic Accessibility:**
+    - Proper ARIA labels for all form fields
+    - Keyboard navigation support
+    - High contrast color scheme
+    - Screen reader compatibility
+    - Focus indicators for all interactive elements
 
-**Mobile Layout (320px - 768px):**
-- Single column layout for all form sections
-- Larger touch targets (minimum 44px height)
-- Simplified navigation with collapsible sections
-- Sticky submit button at bottom of screen
-- Auto-zoom disabled on input focus
+**Example Prompt - Advanced Accessibility:**
 
-**Tablet Layout (768px - 1024px):**
-- Two-column layout for shorter fields (name, email)
-- Single column for complex fields (address, comments)
-- Side navigation for multi-step forms
-- Optimized for both portrait and landscape
+    Implement comprehensive accessibility for @applicationForm:
+    
+    **WCAG 2.1 AA Compliance:**
+    
+    - Semantic HTML structure with proper headings
+    - ARIA landmarks and roles for navigation
+    - Color contrast ratio of at least 4.5:1
+    - Keyboard-only navigation support
+    - Screen reader announcements for dynamic content
+    
+    **Form-Specific Accessibility:**
+    
+    - Error messages announced to screen readers
+    - Field validation with clear error descriptions
+    - Progress indicators for multi-step forms
+    - Skip navigation links for keyboard users
+    - Alternative text for all images and icons
+    
+    **User Experience:**
+    
+    - Clear focus indicators on all interactive elements
+    - Logical tab order through form fields
+    - Descriptive link text and button labels
+    - Help text available for complex fields
+    - Timeout warnings for session expiration
 
-**Desktop Layout (1024px+):**
-- Multi-column layouts where appropriate
-- Horizontal form sections for related fields
-- Sidebar navigation for long forms
-- Hover states and advanced interactions
-```
+**Accessibility-Specific Prompts:**
 
-**特定于移动设备的提示：**
+    Add **screen reader support** to this form with proper ARIA labels and announcements
 
-```
-Make this form **touch-friendly** with larger buttons and simplified navigation for mobile users
-```
+    Implement **keyboard navigation** for all form interactions and navigation elements
 
-```
-Optimize form for **tablet users** with appropriate field sizes and navigation patterns
-```
+    Ensure **color contrast** meets WCAG AA standards for all text and interactive elements  
 
-```
-Add **swipe gestures** for multi-step form navigation on mobile devices
-```
+## Performance Optimization
 
-## 无障碍访问和合规性
+**When to use:** When forms need to load quickly and perform well under various conditions.
 
-**何时使用：**&#x200B;当表单需要满足辅助功能标准(WCAG)或合规性要求时。
+**How to use:** Specify performance requirements and optimization strategies.
 
-**使用方式：**&#x200B;指定所需的合规性级别以及所需的任何特定辅助功能。
+**Example Prompt - Basic Performance:**
 
-**示例提示 — 基本辅助功能：**
-
-```
-Make @contactForm accessible with:
-
-**Basic Accessibility:**
-- Proper ARIA labels for all form fields
-- Keyboard navigation support
-- High contrast color scheme
-- Screen reader compatibility
-- Focus indicators for all interactive elements
-```
-
-**示例提示 — 高级辅助功能：**
-
-```
-Implement comprehensive accessibility for @applicationForm:
-
-**WCAG 2.1 AA Compliance:**
-- Semantic HTML structure with proper headings
-- ARIA landmarks and roles for navigation
-- Color contrast ratio of at least 4.5:1
-- Keyboard-only navigation support
-- Screen reader announcements for dynamic content
-
-**Form-Specific Accessibility:**
-- Error messages announced to screen readers
-- Field validation with clear error descriptions
-- Progress indicators for multi-step forms
-- Skip navigation links for keyboard users
-- Alternative text for all images and icons
-
-**User Experience:**
-- Clear focus indicators on all interactive elements
-- Logical tab order through form fields
-- Descriptive link text and button labels
-- Help text available for complex fields
-- Timeout warnings for session expiration
-```
-
-**特定于辅助功能的提示：**
-
-```
-Add **screen reader support** to this form with proper ARIA labels and announcements
-```
-
-```
-Implement **keyboard navigation** for all form interactions and navigation elements
-```
-
-```
-Ensure **color contrast** meets WCAG AA standards for all text and interactive elements
-```
-
-## 性能优化
-
-**何时使用：**&#x200B;当表单需要快速加载并在各种条件下运行良好时。
-
-**如何使用：**&#x200B;指定性能要求和优化策略。
-
-**示例提示 — 基本性能：**
-
-```
+    
 Optimize @contactForm for performance:
 
 **Loading Optimization:**
+
 - Lazy load non-critical form sections
 - Minimize initial bundle size
 - Optimize images and assets
 - Enable caching for static resources
-```
+    
 
-**示例提示 — 高级性能：**
+**Example Prompt - Advanced Performance:**
 
-```
+    
 Implement comprehensive performance optimization for @applicationForm:
 
 **Loading Performance:**
+
 - Progressive loading of form sections
 - Optimize images with WebP format
 - Minimize JavaScript bundle size
 - Enable gzip compression for all assets
 
 **Runtime Performance:**
+
 - Debounce validation calls to reduce API requests
 - Optimize conditional logic execution
 - Cache frequently used data
 - Implement virtual scrolling for long lists
 
 **User Experience:**
+
 - Show loading indicators for async operations
 - Provide offline capability for form data
 - Auto-save form progress every 30 seconds
 - Optimize form submission with retry logic
 
 **Monitoring:**
+
 - Track form load times and user interactions
 - Monitor validation performance
 - Measure submission success rates
 - Alert on performance degradation
-```
+    
 
-**特定于性能的提示：**
+**Performance-Specific Prompts:**
 
-```
+    
 Optimize form **loading speed** by implementing progressive loading and asset optimization
-```
+    
 
-```
+    
 Add **auto-save functionality** to prevent data loss during form completion
-```
+    
 
-```
+    
 Implement **offline support** so users can complete forms without internet connection
-```
+    
 
-## 测试和质量保证
+## Testing & Quality Assurance
 
-**何时使用：**&#x200B;当表单需要全面测试以确保可靠性和用户满意度时。
+**When to use:** When forms need comprehensive testing to ensure reliability and user satisfaction.
 
-**如何使用：**&#x200B;指定测试方案、验证要求和质量量度。
+**How to use:** Specify testing scenarios, validation requirements, and quality metrics.
 
-**示例提示 — 基本测试：**
+**Example Prompt - Basic Testing:**
 
-```
+    
 Add comprehensive testing for @contactForm:
 
 **Functional Testing:**
+
 - Test all form field validations
 - Verify submit functionality works correctly
 - Test error handling and user feedback
 - Validate conditional logic and rules
-```
+    
 
-**示例提示 — 高级测试：**
+**Example Prompt - Advanced Testing:**
 
-```
+    
 Implement comprehensive testing strategy for @applicationForm:
 
 **Functional Testing:**
+
 - Unit tests for all validation rules
 - Integration tests for submit actions
 - End-to-end testing for complete user flows
 - Cross-browser compatibility testing
 
 **User Experience Testing:**
+
 - Usability testing with target user groups
 - Accessibility testing with screen readers
 - Mobile device testing on various screen sizes
 - Performance testing under load conditions
 
 **Quality Assurance:**
+
 - Automated testing for regression prevention
 - Manual testing for edge cases and scenarios
 - Security testing for data protection
 - Compliance testing for regulatory requirements
 
 **Monitoring:**
+
 - Track form completion rates and abandonment
 - Monitor error rates and user feedback
 - Measure performance metrics and load times
 - Analyze user behavior and interaction patterns
-```
+    
 
-**测试特定的提示词：**
+**Testing-Specific Prompts:**
 
-```
+    
 Add **automated testing** for all form validations and submit functionality
-```
+    
 
-```
+    
 Implement **user acceptance testing** scenarios for complete form workflows
-```
+    
 
-```
+    
 Set up **performance monitoring** to track form load times and user interactions
-```
-
-## 疑难解答
-
-Forms Experience Builder常见问题的快速解决方案：
-
-| 问题 | 快速修复 |
-|-------|-----------|
-| 表单未提交 | 检查提交操作配置和验证规则 |
-| 未显示验证错误 | 验证字段验证设置和错误消息放置 |
-| 移动布局问题 | 查看响应式设计设置和字段大小 |
-| 未显示字段 | 检查条件逻辑和可见性规则 |
-| 导入失败 | 验证文件格式兼容性和大小限制 |
-| 集成错误 | 验证API端点和身份验证凭据 |
-| 性能问题 | 优化字段计数并删除不必要的验证 |
-| 辅助功能问题 | 审查字段标签、ARIA属性和选项卡顺序 |
-
-**调试模式提示：**
-
-```
-Enable debug mode to identify issues with form submission and field validation
-```
-
-**错误分析提示：**
-
-```
-Analyze form errors: check validation rules, API responses, and user input patterns
-```
-
-## 高级分析和见解
-
-**使用时间：**&#x200B;需要了解表单性能和用户行为时。
-
-**如何使用：**&#x200B;指定所需的分析要求和见解。
-
-**示例提示 — 基本分析：**
-
-```
-Add analytics to @contactForm:
-
-**Basic Metrics:**
-- Form completion rates
-- Field abandonment rates
-- Submit success/failure rates
-- User session duration
-```
-
-**示例提示 — 高级分析：**
-
-```
-Implement comprehensive analytics for @applicationForm:
-
-**User Behavior Analytics:**
-- Track field completion rates and abandonment
-- Monitor user session duration and patterns
-- Analyze form navigation and user flow
-- Identify bottlenecks and friction points
-
-**Performance Analytics:**
-- Measure form load times and performance
-- Track API response times and failures
-- Monitor validation rule effectiveness
-- Analyze submission success rates
-
-**Business Intelligence:**
-- Generate reports on form effectiveness
-- Track conversion rates and ROI
-- Monitor user satisfaction and feedback
-- Identify opportunities for optimization
-
-**Predictive Analytics:**
-- Predict form completion likelihood
-- Identify users likely to abandon
-- Recommend form improvements
-- Optimize user experience based on data
-```
-
-**特定于Analytics的提示：**
-
-```
-Add **conversion tracking** to measure form completion rates and user behavior
-```
-
-```
-Implement **A/B testing** to compare different form designs and optimize performance
-```
-
-```
-Create **analytics dashboard** to monitor form performance and user insights
-```
-
-## 安全性与数据保护
-
-**何时使用：**&#x200B;当表单处理敏感数据并需要安全措施时。
-
-**如何使用：**&#x200B;指定安全要求和数据保护措施。
-
-**示例提示 — 基本安全性：**
-
-```
-Add security measures to @contactForm:
-
-**Basic Security:**
-- HTTPS encryption for all data transmission
-- Input validation and sanitization
-- CSRF protection for form submissions
-- Secure session management
-```
-
-**示例提示 — 高级安全性：**
-
-```
-Implement comprehensive security for @applicationForm:
-
-**Data Protection:**
-- End-to-end encryption for sensitive data
-- PII data masking and anonymization
-- Secure file upload with virus scanning
-- Data retention and deletion policies
-
-**Access Control:**
-- Role-based access control for form data
-- Multi-factor authentication for admin access
-- Audit logging for all data access
-- Secure API authentication and authorization
-
-**Compliance:**
-- GDPR compliance for data handling
-- HIPAA compliance for health information
-- PCI DSS compliance for payment data
-- SOC 2 compliance for data security
-
-**Monitoring:**
-- Real-time security monitoring and alerts
-- Intrusion detection and prevention
-- Data breach notification systems
-- Regular security audits and assessments
-```
-
-**特定于安全性的提示：**
-
-```
-Implement **data encryption** for sensitive form submissions and user information
-```
-
-```
-Add **access control** to restrict form data access based on user roles and permissions
-```
-
-```
-Set up **security monitoring** to detect and prevent unauthorized access to form data
-```
+    
+-->
 
 ## 命令引用
 
@@ -979,7 +688,6 @@ Set up **security monitoring** to detect and prevent unauthorized access to form
 | `/create-rule` | 添加动态行为 | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
 | `/create-panel` | 组织表单部分 | `/create-panel Employment Details with job title, company, salary fields` |
 | `/add-panel` | 转换设计 | `/add-panel from uploaded form image with field recognition` |
-| `/configure-submit` | 设置数据处理 | `/configure-submit to CRM and send confirmation email` |
 | `/help` | 获取帮助 | `/help how to implement multi-step validation?` |
 
 ### 字段引用
@@ -1059,4 +767,4 @@ Set up **security monitoring** to detect and prevent unauthorized access to form
 
 有关全面的最佳实践和验证准则，请参阅[Forms Experience Builder快速入门指南](forms-ai-assistant-getting-started.md#best-practices)。
 
-*此提示库会根据用户反馈和新的Forms Experience Builder功能不断更新。 如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。*
+*此提示库会根据用户反馈和新的Forms Experience Builder功能不断更新。 如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*
