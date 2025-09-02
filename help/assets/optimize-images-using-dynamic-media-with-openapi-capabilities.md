@@ -3,7 +3,7 @@ title: 使用具有OpenAPI功能的Dynamic Media优化图像
 description: 了解如何使用具有OpenAPI功能的Dynamic Media的图像优化功能，在公共交付之前快速优化图像
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 74c5fbda5ee1ad46b5fcab5ba89f0fd96873e3cf
+source-git-commit: 5a01aff1d6c10d86e2faef22da2dbe724e24e673
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [智能裁切](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)是[!DNL Dynamic Media with OpenAPI capabilities]的动态大小调整功能。 [!DNL Smart Crop]是一种高级图像处理技术，它使用AI支持的内容感知裁剪来智能地裁剪各种屏幕大小的图像，同时保留裁剪版本中的可视上下文。 人工智能分析图像以识别焦点或目标点，然后自动裁剪图像以在所有裁剪的版本中保留焦点。 [!DNL Smart Crop]是响应式设计的一个关键元素，它提供了一种经济高效且省时的方法来裁剪图像。
 
-请参阅[Dynamic Media图像配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)文章以了解如何在[中](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)创建智能裁剪演绎版[!DNL Admin View]、[将它们应用于文件夹](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)或[编辑演绎版](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)这些演绎版已应用于图像或文件夹。 在此[!DNL Smart Crop]视频[中了解如何分步创建](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
+请参阅[Dynamic Media图像配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)文章以了解如何在[中](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)创建智能裁剪演绎版[!DNL Admin View]、[将它们应用于文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)或[编辑演绎版](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)这些演绎版已应用于图像或文件夹。 在此[!DNL Smart Crop]视频[中了解如何分步创建](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
 [!DNL Smart Crop]参数需要named-smartcrop-profiles存在并已应用于资源。 请参阅[智能裁剪配置文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)，了解有关[!DNL Smart Crop]参数以及如何应用名为[!DNL Smart Crop]的配置文件的更多信息。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 您可以通过图像的[!DNL Dynamic Media with OpenAPI]投放URL将单个预设应用于多个图像。 这可以确保跨资源的一致格式，而无需手动编辑每个资源。
 
-请参阅[管理图像预设](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)文章以了解[如何在管理员视图中创建图像预设](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)，以及[如何创建响应式图像预设](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)，这些预设可自动调整资产以适合不同的屏幕大小。
+请参阅[管理图像预设](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)文章以了解[如何在管理员视图中创建图像预设](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)，以及[如何创建响应式图像预设](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)，这些预设可自动调整资产以适合不同的屏幕大小。
 
 ### 使用图像预设的好处{#benefits-of-image-presets}
 
@@ -50,30 +50,39 @@ ht-degree: 0%
 ### 使用图像预设{#use-image-presets-using-dynamic-media-with-openapi-capabilities}
 
 创建[!DNL Image Presets]后，您可以将其用于以下工作流：
+
 * [在图像交付URL中使用预设动态创建其演绎版，然后再将其交付给最终用户](#use-presets-in-delivery-urls)
 * [在AEM Sites中进行创作时使用预设](#use-presets-during-authoring-in-aem-sites)
 
 #### 在图像投放URL中使用预设{#use-presets-in-delivery-urls}
 
-预设使您的投放URL更短且更易于使用。  每个预设名称用作投放URL中的唯一标识符。 请引用预设名称以立即生成其演绎版，而不是向资产的投放URL添加多个修饰符。 [了解如何将Dynamic Media图像预设应用于图像](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
+预设使您的投放URL更短且更易于使用。  每个预设名称用作投放URL中的唯一标识符。 请引用预设名称以立即生成其演绎版，而不是向资产的投放URL添加多个修饰符。 [了解如何将Dynamic Media图像预设应用于图像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
 以下示例将带有预设的URL与没有预设的URL进行比较。
 
 **没有预设的URL （长URL）**：
 
-`https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?width=400&height=300&fit=crop&qualit=85&sharpen=true`
+```
+https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?width=400&height=300&fit=crop&qualit=85&sharpen=true
+```
 
 带有预设的&#x200B;**URL （短URL）**：
 
-`https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?preset=thumbnail`。
+```
+https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?preset=thumbnail
+```
+
 预设缩略图捆绑了相同的图像修饰符设置。
 
 #### 在AEM Sites中进行创作时使用预设{#use-presets-during-authoring-in-aem-sites}
 
 启用[!DNL Image Presets]支持后，作者可以在[!DNL AEM Sites]创作页面中的页面编辑期间选择[!DNL Dynamic Media]。
+
 执行以下步骤以在创作页面中使用图像预设：
+
 1. 导航到站点创作页面。
 1. 执行[访问AEM页面编辑器中的远程资源](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor)部分中的步骤，以使用[!DNL Asset Selector]面板选择资源。
 1. 在[!DNL asset selector]面板中，向下滚动到&#x200B;**[!UICONTROL 预设类型]**，并在`Preset=Preset Name`图像修饰符&#x200B;**[!UICONTROL 字段中指定]**。
+
    ![预设](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## 智能图像处理{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
@@ -81,18 +90,22 @@ ht-degree: 0%
 当您使用[!DNL Dynamic Media with OpenAPI capabilities]进行图像投放时，将通过[智能成像](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)自动优化图像。 优化的投放确保图像加载更快，具有最大的视觉质量和最小的文件大小。 这样可以在各种设备和网络中实现最快的页面加载速度并始终保持较高的视觉质量，同时占用最少的带宽，从而使您的网站速度更快、响应速度更快。
 
 [!DNL Smart Imaging]包括以下功能：
+
 * [自动格式转换](#auto-format-conversion)
 * [网络带宽优化](#network-bandwidth-optimisation)
 
 ### 自动格式转换{#auto-format-conversion}
 
 [!DNL Dynamic Media with OpenAPI] [自动将图像转换为现代的Web优化格式，如AVIF或WEBP](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request)。 转换取决于浏览器的功能和[license-entitlement](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate)，而不管请求的格式如何。
+
 AVIF和WEBP格式提供了更好的压缩，使图像变得更小，交付和加载速度更快。 AVIF用作默认格式，因为它处理所有浏览器功能。
+
 [!DNL Dynamic Media with OpenAPI]使用`auto-format`查询参数来控制浏览器将图像转换为各种格式以进行优化投放的行为。 自动格式转换包括&#x200B;**自动提升**&#x200B;和&#x200B;**自动降级**。 当系统通过JPEG或PNG促销网络优化格式（AVIF或WEBP）以进行交付时，它称为自动促销。
 
 默认情况下，`auto-format`查询参数设置为`true`。 启用`auto-format` (true)时，系统会忽略请求的格式，并根据图像特征、浏览器功能和[许可证授权](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate)自动选择Web优化格式（AVIF或WEBP）。
 
 当`auto-format`为true时，系统按以下顺序提供图像格式：
+
 * ***AVIF***：如果浏览器支持并且许可证允许，将交付AVIF。 这称为自动促销活动。
 * ***WEBP***：如果AVIF不受支持或未经许可，则会交付WEBP。 这也是自动促销活动。
 * ***JPEG***：仅当不支持AVIF和WEBP时，才会交付JPEG，并且图像没有Alpha通道（透明度）。 这称为自动降级。
@@ -118,6 +131,3 @@ AVIF和WEBP格式提供了更好的压缩，使图像变得更小，交付和加
 #### Max-quality参数{#max-quality-parameter}
 
 Max-quality可根据客户的网络速度平衡图像质量和加载时间。 它通过降低较慢网络上的图像质量来优先处理较快的加载时间，同时仍提供给定网络条件下的最高质量(1-100)。 了解有关[max-quality参数](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request)的更多信息。
-
-
-
