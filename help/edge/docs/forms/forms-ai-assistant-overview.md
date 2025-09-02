@@ -101,7 +101,7 @@ Forms Experience Builder遵循一种简单的对话式方法：
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=zh-Hans)
 
 **将PDF forms转换为数字Forms**
 
@@ -117,7 +117,7 @@ Forms Experience Builder遵循一种简单的对话式方法：
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=zh-Hans)
 
 **将屏幕截图转换为数字Forms**
 
@@ -150,7 +150,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=zh-Hans)
 
 **民主化表单创建**
 
@@ -158,7 +158,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=zh-Hans)
 
 **缩短实现值的时间(TTV)**
 
@@ -166,7 +166,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=zh-Hans)
 
 **接口简洁性**
 
