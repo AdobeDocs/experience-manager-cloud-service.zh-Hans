@@ -1,6 +1,6 @@
 ---
 title: 关于Experience Hub
-description: 了解Adobe Experience Hub页面。
+description: 了解 Adobe Experience Hub 页面。
 landing-page-description: 了解Experience Hub，它是访问所有AEM功能的集中式起点。
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -9,7 +9,7 @@ exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
 source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -80,6 +80,6 @@ Adobe Experience Manager页面已更新，导航和交互式构件已得到增�
 
 ![无生产环境的Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
 
-## AEM的人工智能助手
+## AEM 中的 AI 助手
 
 对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
