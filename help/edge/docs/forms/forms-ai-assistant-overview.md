@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
+source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -99,31 +99,38 @@ Forms Experience Builder遵循一种简单的对话式方法：
 
 ## 示例场景
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=zh-Hans)
-
-**将PDF forms转换为数字Forms**
-
-将Acroform、XFA PDF或平面PDF文档转换为具有增强功能的响应式交互式数字表单。
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
-
-**使旧版XFA Forms符合现代化要求**
-
-通过改进的用户工作流程，将复杂的XFA应用程序转换为现代的、可访问的数字体验。
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=zh-Hans)
-
-**将屏幕截图转换为数字Forms**
-
-将图像、屏幕快照或手绘表单转换为功能齐全的数字体验。
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">将PDF forms转换为数字Forms</p>
+                    <p class="is-size-6">将Acroform、XFA PDF或平面PDF文档转换为具有增强功能的响应式交互式数字表单。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernize Legacy XFA Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">实现旧版XFA Forms的现代化</p>
+                    <p class="is-size-6">通过改进的用户工作流程，将复杂的XFA应用程序转换为现代的、可访问的数字体验。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Convert Screenshots to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">将屏幕截图转换为数字Forms</p>
+                    <p class="is-size-6">将图像、屏幕快照或手绘表单转换为功能齐全的数字体验。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- #### Import and Enhance Web Forms
 
@@ -148,39 +155,48 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## 为组织带来的好处
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=zh-Hans)
-
-**民主化表单创建**
-
-通过自然语言对话，使非技术性用户能够在不具备编程知识的情况下创建复杂的表单。
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=zh-Hans)
-
-**缩短实现值的时间(TTV)**
-
-大幅加快表单开发，从几天缩短到几小时，使数字计划更快走向市场。
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=zh-Hans)
-
-**接口简洁性**
-
-通过直观的对话界面消除学习曲线，减少培训时间并提高采用率。
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
-
-**扩展现代化工作**
-
-高效地实现旧版表单产品组合现代化，保留业务逻辑并增强整个表单生态系统的用户体验。
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">民主化表单创建</p>
+                    <p class="is-size-6">通过自然语言对话，使非技术性用户能够在不具备编程知识的情况下创建复杂的表单。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Reduced Time to Value (TTV)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">缩短实现价值的时间(TTV)</p>
+                    <p class="is-size-6">大幅加快表单开发，从几天缩短到几小时，使数字计划更快走向市场。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Interface Simplicity">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">界面简化</p>
+                    <p class="is-size-6">通过直观的对话界面消除学习曲线，减少培训时间并提高采用率。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Scaling Modernization Efforts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">扩展现代化工作</p>
+                    <p class="is-size-6">高效地实现旧版表单产品组合现代化，保留业务逻辑并增强整个表单生态系统的用户体验。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 ## 加入
 
