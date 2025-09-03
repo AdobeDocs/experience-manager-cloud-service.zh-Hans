@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: 39af50d05fcbd22b3f4b4664f2c99590e7fb9da9
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 14%
+source-wordcount: '310'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,9 @@ ht-degree: 14%
 
 **添加IP允许列表：**
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
+1. 在[experience.adobe.com](https://experience.adobe.com/experiencemanager/)登录Cloud Manager。
+
+1. 在左侧菜单中，单击Cloud Manager，然后选择相应的组织。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
@@ -38,7 +40,12 @@ ht-degree: 14%
 
 1. 在&#x200B;**添加IP允许列表**&#x200B;对话框的&#x200B;**IP允许列表名称**&#x200B;字段中，输入要用于引用IP允许列表的名称。 此名称仅供参考。 请确保其描述性足以帮助您识别列表。
 
-1. 在&#x200B;**IP地址/ CIDR**&#x200B;字段中，输入IP或IP CIDR块。 用逗号或制表符分隔多个块。
+1. 在&#x200B;**IP地址/ CIDR**&#x200B;字段中，输入最多50个IP地址或CIDR块。 您可以通过以下任一方式添加它们：
+
+   * 一次一个：键入地址，然后按`Enter`。 对每个其他地址重复此操作。
+   * 一次多个：键入用逗号(，)或制表符分隔的地址，然后按`Enter`以单独识别每个地址。
+
+1. 完成输入最后一个IP地址或CIDR块后，按`Enter`确认输入。 只有在您按`Enter`后才会确认该条目，并且&#x200B;**保存**&#x200B;按钮变为活动状态。
 
 1. 单击&#x200B;**保存**。
 
