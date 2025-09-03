@@ -35,7 +35,7 @@ Adobe Enterprise文档不仅是一组用户指南。 探索我们不断扩大的
 ### Content and Commerce
 
 + [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
-+ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
++ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5磅](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
 + [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
@@ -87,8 +87,8 @@ Adobe Enterprise文档不仅是一组用户指南。 探索我们不断扩大的
 
 ### 文档
 
-+ [Acrobat学习与支持](https://helpx.adobe.com/support/acrobat.html)
-+ [Acrobat Sign学习与支持](https://helpx.adobe.com/support/sign.html)
++ [Acrobat学习与支持](https://helpx.adobe.com/cn/support/acrobat.html)
++ [Acrobat Sign学习与支持](https://helpx.adobe.com/cn/support/sign.html)
 
 ### 开发人员
 
@@ -97,8 +97,8 @@ Adobe Enterprise文档不仅是一组用户指南。 探索我们不断扩大的
 
 ### 有用的Document Cloud资源
 
-+ [Document Cloud学习与支持](https://helpx.adobe.com/support/document-cloud.html)
-+ [Document Cloud Enterprise教程](https://experienceleague.adobe.com/docs/home-tutorials.html#document-cloud-tutorials)
++ [Document Cloud学习与支持](https://helpx.adobe.com/cn/support/document-cloud.html)
++ [Document Cloud Enterprise教程](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=zh-Hans#document-cloud-tutorials)
 + [Adobe状态](https://status.adobe.com/)
 + [管理员指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)
 
@@ -106,7 +106,7 @@ Adobe Enterprise文档不仅是一组用户指南。 探索我们不断扩大的
 
 ### 文档
 
-+ [Creative Cloud学习与支持](https://helpx.adobe.com/support/creative-cloud.html)
++ [Creative Cloud学习与支持](https://helpx.adobe.com/cn/support/creative-cloud.html)
 
 ### Creative Cloud企业版实用资源
 
@@ -119,7 +119,7 @@ Adobe Enterprise文档不仅是一组用户指南。 探索我们不断扩大的
 
 ### 跨云资源
 
-+ [Experience League活动](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#events)
++ [Experience League活动](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans#events)
 + [Adobe状态](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
 + [管理员指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)
@@ -135,10 +135,10 @@ Adobe Enterprise文档不仅是一组用户指南。 探索我们不断扩大的
 
 + [Experience Cloud 发行说明](release-notes#experience-cloud)
 + [教程](home-tutorials.md)
-+ [播放列表](https://experienceleague.adobe.com/en/playlists)
++ [播放列表](https://experienceleague.adobe.com/zh-hans/playlists)
 + [认证](certification#program)
 + [社区论坛](https://experienceleaguecommunities.adobe.com)
-+ [支持](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
++ [支持](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)
 
 <!--
 + [Events](events.md)
