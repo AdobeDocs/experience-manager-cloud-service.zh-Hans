@@ -3,9 +3,9 @@ title: 使用具有OpenAPI功能的Dynamic Media优化图像
 description: 了解如何使用具有OpenAPI功能的Dynamic Media的图像优化功能，在公共交付之前快速优化图像
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 5a01aff1d6c10d86e2faef22da2dbe724e24e673
+source-git-commit: 3d5ae3bae9635625912a4afb2f74d002cd0ab670
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [智能裁切](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)是[!DNL Dynamic Media with OpenAPI capabilities]的动态大小调整功能。 [!DNL Smart Crop]是一种高级图像处理技术，它使用AI支持的内容感知裁剪来智能地裁剪各种屏幕大小的图像，同时保留裁剪版本中的可视上下文。 人工智能分析图像以识别焦点或目标点，然后自动裁剪图像以在所有裁剪的版本中保留焦点。 [!DNL Smart Crop]是响应式设计的一个关键元素，它提供了一种经济高效且省时的方法来裁剪图像。
 
-请参阅[Dynamic Media图像配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)文章以了解如何在[中](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)创建智能裁剪演绎版[!DNL Admin View]、[将它们应用于文件夹](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)或[编辑演绎版](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)这些演绎版已应用于图像或文件夹。 在此[!DNL Smart Crop]视频[中了解如何分步创建](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
+请参阅[Dynamic Media图像配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)文章以了解如何在[中](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)创建智能裁剪演绎版[!DNL Admin View]、[将它们应用于文件夹](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)或[编辑演绎版](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)这些演绎版已应用于图像或文件夹。 在此[!DNL Smart Crop]视频[中了解如何分步创建](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
 [!DNL Smart Crop]参数需要named-smartcrop-profiles存在并已应用于资源。 请参阅[智能裁剪配置文件](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)，了解有关[!DNL Smart Crop]参数以及如何应用名为[!DNL Smart Crop]的配置文件的更多信息。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 您可以通过图像的[!DNL Dynamic Media with OpenAPI]投放URL将单个预设应用于多个图像。 这可以确保跨资源的一致格式，而无需手动编辑每个资源。
 
-请参阅[管理图像预设](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)文章以了解[如何在管理员视图中创建图像预设](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)，以及[如何创建响应式图像预设](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)，这些预设可自动调整资产以适合不同的屏幕大小。
+请参阅[管理图像预设](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)文章以了解[如何在管理员视图中创建图像预设](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)，以及[如何创建响应式图像预设](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)，这些预设可自动调整资产以适合不同的屏幕大小。
 
 ### 使用图像预设的好处{#benefits-of-image-presets}
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 #### 在图像投放URL中使用预设{#use-presets-in-delivery-urls}
 
-预设使您的投放URL更短且更易于使用。  每个预设名称用作投放URL中的唯一标识符。 请引用预设名称以立即生成其演绎版，而不是向资产的投放URL添加多个修饰符。 [了解如何将Dynamic Media图像预设应用于图像](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
+预设使您的投放URL更短且更易于使用。  每个预设名称用作投放URL中的唯一标识符。 请引用预设名称以立即生成其演绎版，而不是向资产的投放URL添加多个修饰符。 [了解如何将Dynamic Media图像预设应用于图像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
 以下示例将带有预设的URL与没有预设的URL进行比较。
 
 **没有预设的URL （长URL）**：
@@ -76,13 +76,10 @@ https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:ae
 #### 在AEM Sites中进行创作时使用预设{#use-presets-during-authoring-in-aem-sites}
 
 启用[!DNL Image Presets]支持后，作者可以在[!DNL AEM Sites]创作页面中的页面编辑期间选择[!DNL Dynamic Media]。
-
 执行以下步骤以在创作页面中使用图像预设：
-
 1. 导航到站点创作页面。
 1. 执行[访问AEM页面编辑器中的远程资源](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor)部分中的步骤，以使用[!DNL Asset Selector]面板选择资源。
-1. 在[!DNL asset selector]面板中，向下滚动到&#x200B;**[!UICONTROL 预设类型]**，并在`Preset=Preset Name`图像修饰符&#x200B;**[!UICONTROL 字段中指定]**。
-
+1. 在[!DNL asset selector]面板中，向下滚动到&#x200B;**[!UICONTROL 预设类型]**，在`Preset=Preset Name`图像修饰符&#x200B;**[!UICONTROL 字段中指定]**，然后单击&#x200B;**[!UICONTROL 完成]**。
    ![预设](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## 智能图像处理{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
