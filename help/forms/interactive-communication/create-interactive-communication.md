@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 假设您需要向数千名客户发送银行对帐单、保险单或水电费。 每个报表都具有相同的布局但个性化的数据。 交互式通信(IC)使这成为可能。
 
-![查找IC文档](/help/forms/interactive-communication/assets/Picture1.png)
+![查找IC文档](/help/forms/interactive-communication/assets/introimg.png)
 
 手动生成这些文档可能非常耗时，并且经常会导致不一致，特别是在需要个性化和数据集成时。 使用交互式通信编辑器，用户可以简化创建交互式通信的过程。
 
