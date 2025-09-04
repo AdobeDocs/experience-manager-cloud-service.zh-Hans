@@ -4,7 +4,7 @@ description: 这些是通用编辑器2025.09.04版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ca329ad8fe64ab4c45b01ce5906d51c8db45155
+source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 67%
@@ -24,6 +24,13 @@ ht-degree: 67%
 
 * [早期采用者可以复制并粘贴](#copy-paste)
 
+### 还原/重做 {#undo-redo}
+
+通用编辑器现已支持内容创作者使用撤销与重做功能。
+
+* 此功能涵盖上下文中的编辑操作、通过属性面板进行的修改，以及区块的新增（或复制）、移动与删除。
+* 撤销与重做功能仅限于当前浏览器会话内使用。
+
 ## 早期采用的功能 {#early-adopter}
 
 如果您有兴趣测试这些即将推出的功能并分享您的反馈，请使用与您的 Adobe ID 关联的电子邮件地址发送邮件至您的 Adobe 客户成功经理。
@@ -31,13 +38,6 @@ ht-degree: 67%
 ### 新 RTE {#new-rte}
 
 全新的 ProseMirror RTE 现已在右侧面板中提供，链接对话框中引入了页面选择器功能。
-
-### 还原/重做 {#undo-redo}
-
-通用编辑器现已支持内容创作者使用撤销与重做功能。
-
-* 此功能涵盖上下文中的编辑操作、通过属性面板进行的修改，以及区块的新增（或复制）、移动与删除。
-* 撤销与重做功能仅限于当前浏览器会话内使用。
 
 ### 复制/粘贴 {#copy-paste}
 
