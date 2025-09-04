@@ -125,7 +125,7 @@ ht-degree: 11%
 
 * **智能标记：** [!DNL The Content Hub]使用Adobe Sensei的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 随后，该内容智能可用于为另一组资产自动应用相关标记。智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
 
-* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可帮助您识别使用通过Adobe的Sensei AI功能在资源中自动识别的颜色的资源。
+* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hans)可帮助您识别使用通过Adobe的Sensei AI功能在资源中自动识别的颜色的资源。
 
 * 上传日期
 
