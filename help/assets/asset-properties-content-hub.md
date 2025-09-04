@@ -61,15 +61,15 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL JPEG]</td>
+        <td>[!UICONTROL JPEG]</td>
         <td> 8000 X 8000像素，最大40MB</td>
     </tr>
     <tr>
-        <td>[！UICONTROL PNG]</td>
+        <td>[!UICONTROL PNG]</td>
         <td> 8000 X 8000像素，最大40MB</td>
     </tr>
     <tr>
-        <td>[！UICONTROL SVG]</td>
+        <td>[!UICONTROL SVG]</td>
         <td> 最大250 KB</td>
     </tr>
     <tr>
@@ -77,15 +77,15 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL Quicktime]</td>
+        <td>[!UICONTROL Quicktime]</td>
         <td> - </td>
     </tr>
     <tr>
-        <td>[！UICONTROL MP4]</td>
+        <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840像素，最大200 MB</td>
     </tr>
     <tr>
-        <td>[！UICONTROL MPEG]</td>
+        <td>[!UICONTROL MPEG]</td>
         <td> 最大200 MB </td>
     </tr>
     <tr>
@@ -93,15 +93,15 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL txt]（纯）</td>
+        <td>[!UICONTROL txt]（纯）</td>
         <td> - </td>
     </tr>
     <tr>
-        <td>[！UICONTROL Doc/Docx]</td>
+        <td>[!UICONTROL Doc/Docx]</td>
         <td> - </td>
     </tr>
     <tr>
-        <td>[！UICONTROL XML]</td>
+        <td>[!UICONTROL XML]</td>
         <td> - </td>
     </tr>
     <tr>
@@ -109,7 +109,7 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL PDF]</td>
+        <td>[!UICONTROL PDF]</td>
         <td> - </td>
     </tr>
     </tbody>
