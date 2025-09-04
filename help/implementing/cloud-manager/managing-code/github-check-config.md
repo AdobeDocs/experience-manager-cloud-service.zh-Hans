@@ -1,28 +1,28 @@
 ---
-title: GitHub 检查专用存储库的配置
-description: 了解如何控制自动创建的管道以验证对专用存储库的每个拉取请求。
+title: 对专用存储库的拉取请求检查
+description: 了解如何控制自动创建的管道以验证对专用存储库的每个提取请求。
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 33%
+source-wordcount: '296'
+ht-degree: 28%
 
 ---
 
-# GitHub 检查专用存储库的配置 {#github-check-config}
+# 对专用存储库的拉取请求检查 {#github-check-config}
 
 了解如何控制自动创建的管道以验证对专用存储库的每个提取请求。
 
-## GitHub 检查的配置 {#configuration}
+## 专用存储库检查的配置 {#configuration}
 
 使用[专用存储库](private-repositories.md#using)时，系统会自动创建一个[全栈代码质量管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。每次更新提取请求时，此管道便会启动。
 
 可以通过在专用存储库的默认分支中创建`.cloudmanager/pr_pipelines.yml`配置文件来控制这些检查。
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:

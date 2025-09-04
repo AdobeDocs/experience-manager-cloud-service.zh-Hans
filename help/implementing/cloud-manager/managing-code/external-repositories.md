@@ -4,10 +4,10 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
+source-git-commit: 7a4fbb5bb217a43a223be01e142458ba9a962cc9
 workflow-type: tm+mt
-source-wordcount: '2321'
-ht-degree: 27%
+source-wordcount: '2452'
+ht-degree: 26%
 
 ---
 
@@ -17,14 +17,15 @@ ht-degree: 27%
 
 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 
-客户现在还可以将其Azure DevOps (Beta) Git存储库载入到Cloud Manager中，并支持现代Azure DevOps和旧版VSTS (Visual Studio Team Services)存储库。
+客户现在还可以将其Azure DevOps Git存储库载入到Cloud Manager中，并支持现代Azure DevOps和旧版VSTS (Visual Studio Team Services)存储库。
 
 * Edge Delivery Services 用户可以使用已加入的存储库来同步和部署网站代码。
 * 对于 AEM as a Cloud Service 和 Adobe Managed Services (AMS) 用户，该存储库可以链接到全栈和前端两种管道。
 
+<!--
 >[!NOTE]
 >
->本文中介绍的为Azure DevOps添加的支持仅通过私人测试版计划提供。 有关更多详细信息以及注册测试版，请参阅[自带Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts)。
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
 
 
 ## 配置外部存储库
@@ -121,14 +122,14 @@ ht-degree: 27%
 
 另请参阅[管理访问令牌](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 访问令牌选项 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
-| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>当您在Azure DevOps中创建应用程序密码时，请确保它包含以下必需的应用密码权限：<ul><li>存储库（只读）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>当您在Azure DevOps中创建应用程序密码时，请确保它包含以下必需的应用密码权限：<ul><li>代码（读取）</li><li>代码（状态）</li><li>拉取请求Threads（读写）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
 验证后，外部存储库即可使用并链接到管道。
 
@@ -239,13 +240,13 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 | --- |
 | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 所需的webhook事件和身份验证 |
 | --- |
-| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>存储库：推送</li></ul>设置身份验证： <br>1。 在&#x200B;**基本身份验证用户名**&#x200B;字段中，键入`cloudmanager`。<br>2。在&#x200B;**基本身份验证密码**&#x200B;字段中，键入从Cloud Manager用户界面生成的Webhook密码。 |
+| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送的代码</li><li>拉取请求已评论</li><li>已创建拉取请求</li><li>拉取请求已更新</li></ul>设置身份验证： <br>1。 在&#x200B;**基本身份验证用户名**&#x200B;字段中，键入`cloudmanager`。<br>2。在&#x200B;**基本身份验证密码**&#x200B;字段中，键入从Cloud Manager用户界面生成的Webhook密码。 |
 
 >[!ENDTABS]
 
@@ -303,6 +304,25 @@ GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完
 
 Bitbucket的![拉取请求验证状态](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
+>[!TAB Azure DevOps]
+
+Azure DevOps通过状态检查跟踪拉取请求验证。 当Cloud Manager运行拉取请求验证时，它将添加显示在Azure DevOps拉取请求界面中的状态检查。
+
+在代码质量验证期间，状态检查会显示该流程正在进行中：
+
+使用webhooks-1![对拉取请求进行](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)Azure DevOps验证
+
+代码质量验证完成后，状态检查将更新以反映结果：
+
+使用webhooks-2![对拉取请求进行](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)Azure DevOps验证
+
+如果验证失败，状态检查详细信息中会提供详细的错误信息。 您可以单击状态检查以在Cloud Manager中查看完整的验证结果。
+
+使用webhooks-3![对拉取请求进行](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)Azure DevOps验证
+
+对于拉取请求注释和反馈，Cloud Manager会直接将注释添加到Azure DevOps中的拉取请求，其中包含验证详细信息以及所需的任何必要操作。
+
+使用webhooks-4![对拉取请求进行](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)Azure DevOps验证
 
 
 >[!ENDTABS]

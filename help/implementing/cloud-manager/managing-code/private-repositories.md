@@ -4,10 +4,10 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '1000'
+ht-degree: 34%
 
 ---
 
@@ -19,9 +19,10 @@ ht-degree: 33%
 >
 >您还可以添加包含Webhook的以下存储库类型：
 >
->* GitHub企业服务器（GitHub的自托管版本）存储库
->* GitLab（GitLab的`gitlab.com`版本和自托管版本）存储库
->* Bitbucket (`bitbucket.org`和Bitbucket服务器（BitBucket的自托管版本）存储库
+>* GitHub企业服务器（GitHub的自托管版本）存储库。
+>* GitLab（GitLab的`gitlab.com`版本和自托管版本）存储库。
+>* Bitbucket (`bitbucket.org`和Bitbucket服务器（BitBucket的自托管版本）存储库。
+>* Azure DevOps （[dev.azure.com](http://dev.azure.com)和Azure DevOps的自托管版本）存储库。
 >
 >请参阅[在Cloud Manager中添加外部存储库 — 私有测试版](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
@@ -153,13 +154,13 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 
 
-## 使用说明 {#usage-notes}
+## 限制 {#limitations}
 
-* 专用存储库不支持 Web 层和配置管道。
+在 Cloud Manager 中使用专用存储库时会受到某些限制。
+
 * 在生产全栈管道上使用专用存储库时，不会创建和推送任何 Git 标记。
 * 如果从您的GitHub组织中删除了Adobe GitHub应用程序，则会删除适用于所有存储库的拉取请求验证功能。
 * 当将新提交推送到所选分支时，使用专用GitHub云存储库和“承诺”构建触发器的管道不会自动启动。
 * [工件重用功能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)不适用于专用存储库。
-* 使用Cloud Manager中的GitHub检查，无法暂停拉取请求验证。
-如果在Cloud Manager中验证GitHub存储库，则Cloud Manager始终会尝试验证为该存储库创建的拉取请求。
-* 如果GitHub组织具有IP限制，请创建一个支持案例，以接收允许的IP地址列表。
+* 您无法使用 Cloud Manager 的 GitHub 检查来暂停提取请求验证。 如果在Cloud Manager中验证GitHub存储库，则Cloud Manager始终会尝试验证为该存储库创建的拉取请求。
+* 如果您的GitHub组织强制执行IP限制，请打开支持案例以获取必须允许的IP地址列表。

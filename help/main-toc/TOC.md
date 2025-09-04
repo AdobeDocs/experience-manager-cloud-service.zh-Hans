@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8d1010eccc1f3bc7579aa0042cb7c3b5acb7ef27
+source-git-commit: ac2c4511d02433e968519da4c2e1eb13270ea8c4
 workflow-type: tm+mt
-source-wordcount: '6579'
+source-wordcount: '6591'
 ht-degree: 98%
 
 ---
@@ -130,6 +130,7 @@ ht-degree: 98%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [当前](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
@@ -1250,13 +1251,14 @@ ht-degree: 98%
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [GitHub 检查配置](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [对专用存储库的拉取请求检查](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [GitHub 检查批注](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [环境变体](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [CI-CD 管道简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [拆分暂存和仅生产管道(Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
          + [配置 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
