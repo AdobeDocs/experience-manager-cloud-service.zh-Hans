@@ -3,10 +3,10 @@ title: 在 [!DNL the Content Hub]中预览资源及其属性
 description: 了解如何在 [!DNL Content Hub]中预览资源和属性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 8%
+source-wordcount: '661'
+ht-degree: 11%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 8%
 * **K：**&#x200B;关闭预览屏幕
 * **L：**&#x200B;资产的信息，包括标题、格式、大小、分辨率、标记、颜色标记和智能标记。
 
-## 支持的资源格式 {#supported-formats}
+## 支持的文件格式 {#supported-formats}
 
 [!DNL Content Hub]支持基础[!DNL Assets]存储库支持的所有资源类型和格式。 下表列出了[!DNL the Content Hub]中的关键文件格式，这些格式为直观预览资产提供了额外的支持：
 
@@ -54,58 +54,78 @@ ht-degree: 8%
      <tr>
       <th><strong>文件类型</strong></th>
       <th><strong>支持的格式</strong></th>
+      <th><strong>大小</strong></th>
      </tr>
      <tr>
-      <td>图像</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>视频</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>文档</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt]（纯）</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>打印介质</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="4"> 图像 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL JPEG]</td>
+        <td> 8000 X 8000像素，最大40MB</td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL PNG]</td>
+        <td> 8000 X 8000像素，最大40MB</td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL SVG]</td>
+        <td> 最大250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 视频 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL MP4]</td>
+        <td> 3840 X 3840像素，最大200 MB</td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL MPEG]</td>
+        <td> 最大200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 文档 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL txt]（纯）</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> 打印介质 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### 派生属性 {#derived-properties}
 
-在将资源上传到[!DNL Assets]并批准其在[!DNL Content Hub]上可用时，[!DNL Content Hub]中显示的资源的某些属性是派生的，或自动生成的。 以下是其中一些规则列表：
+在将资源上传到[!DNL Content Hub]并批准其在[!DNL Assets]上可用时，[!DNL Content Hub]中显示的资源的某些属性是派生的，或自动生成的。 以下是其中一些规则列表：
 
 * **大小：**&#x200B;大小表示基础存储库中存储的资产二进制文件的大小。
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **智能标记：** [!DNL The Content Hub]使用Adobe Sensei的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 然后，此内容智能可用于将相关标记应用到其他资产集。 智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
+* **智能标记：** [!DNL The Content Hub]使用Adobe Sensei的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 随后，该内容智能可用于为另一组资产自动应用相关标记。智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
 
-* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hans)可帮助您识别使用通过Adobe的Sensei AI功能在资源中自动识别的颜色的资源。
+* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可帮助您识别使用通过Adobe的Sensei AI功能在资源中自动识别的颜色的资源。
 
 * 上传日期
 
