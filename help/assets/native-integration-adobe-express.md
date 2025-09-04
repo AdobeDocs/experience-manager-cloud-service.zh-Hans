@@ -4,10 +4,10 @@ description: AEM Assets与Adobe Express的本机集成允许您从Adobe Express�
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 16%
+source-wordcount: '646'
+ht-degree: 17%
 
 ---
 
@@ -50,87 +50,49 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
    ![将资源保存在 AEM 中](assets/adobe-express-share.png)
 
-2. 从右窗格的“存储”部分中，选择&#x200B;**AEM Assets**。 Adobe Express显示上传对话框。
+2. 从右窗格中的&#x200B;**[!UICONTROL 推荐]**&#x200B;部分，选择&#x200B;**AEM Assets**。 Adobe Express显示上传对话框。
+
+   ![将资源保存在 AEM 中](assets/adobe-express-aem.png)
+
 3. 选择&#x200B;**当前页面**&#x200B;或&#x200B;**所有页面**。 指定要导出的资产的名称和格式。 您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式导出画布内容。 格式会根据画布页面上的资产自动进行调整。
-选择&#x200B;**当前页面**&#x200B;会将当前页面上的资产保存到目标文件夹中。 如果选择&#x200B;**所有页面**，并且导出格式不是PDF，则所有画布页面都将作为单独的文件保存到目标文件夹中的新文件夹中。 如果导出格式为PDF，则所有画布页面都将作为单个PDF文件保存到目标文件夹中。
+选择**当前页面**&#x200B;会将当前页面上的资产保存到目标文件夹中。 如果选择&#x200B;**所有页面**，并且导出格式不是PDF，则所有画布页面都将作为单独的文件保存到目标文件夹中的新文件夹中。 如果导出格式为PDF，则所有画布页面都将作为单个PDF文件保存到目标文件夹中。
 
 4. 单击&#x200B;**目标文件夹**&#x200B;下的文件夹图标以选择一个位置并保存资产。
 
    ![将资源保存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. 可选：您可以使用&#x200B;**项目或营销活动名称**&#x200B;字段为上载添加营销活动元数据。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
+5. 可选：您可以使用&#x200B;**项目或营销活动名称**字段为上载添加营销活动元数据。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
 作为最佳实践，Adobe建议在其余字段中指定值，并为您上传的资源创建增强的搜索体验。
 
 6. 同样，为&#x200B;**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 渠道]**&#x200B;字段定义值。
 
 7. 单击&#x200B;**[!UICONTROL 上传]**&#x200B;以将资源上传到AEM Assets。
 
-请参阅[支持的文件格式](asset-properties-content-hub.md#supported-formats)。
-
-[!DNL Content Hub]支持基础[!DNL Assets]存储库支持的所有资源类型和格式。 下表列出了[!DNL the Content Hub]中的关键文件格式，这些格式为直观预览资产提供了额外的支持：
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>文件类型</strong></th>
       <th><strong>支持的格式</strong></th>
       <th><strong>大小</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> 图像 </td>
-    </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL JPEG]</td>
+        <td>[！UICONTROL JPEG]</td>
         <td> 8000 X 8000像素，最大40MB</td>
     </tr>
     <tr>
-        <td>[!UICONTROL PNG]</td>
+        <td>[！UICONTROL PNG]</td>
         <td> 8000 X 8000像素，最大40MB</td>
     </tr>
     <tr>
-        <td>[!UICONTROL SVG]</td>
+        <td>[！UICONTROL SVG]</td>
         <td> 最大250 KB</td>
     </tr>
     <tr>
-        <td rowspan="4"> 视频 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MP4]</td>
+        <td>[！UICONTROL MP4]</td>
         <td> 3840 X 3840像素，最大200 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> 最大200 MB </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> 文档 </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt]（纯）</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> 打印介质 </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -139,7 +101,7 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
 1. 对于导入和导出，支持的视频文件类型为MP4。
 
-2. 有关&#x200B;**MP4视频导入**，请参阅[支持的文件格式](asset-properties-content-hub.md#supported-formats)。 此外，不支持具有透明背景（Alpha通道）的视频。
+2. 对于&#x200B;**MP4视频导入**，不支持具有透明背景（Alpha通道）的视频。
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
