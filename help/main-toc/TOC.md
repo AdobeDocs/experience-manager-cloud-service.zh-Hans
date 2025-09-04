@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 29b1f3f24a92d45c4be7429fe3401147eb4c782a
+source-git-commit: 99e17dbc675a6dd86afddcc44e0fd9e1d84b3858
 workflow-type: tm+mt
-source-wordcount: '6571'
-ht-degree: 97%
+source-wordcount: '6575'
+ht-degree: 98%
 
 ---
 
@@ -234,9 +234,10 @@ ht-degree: 97%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [2025.08.22发行说明](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [2025.08.14发行说明](/help/release-notes/universal-editor/2025/2025-08-14.md)
-         + [2025.07.31发行说明](/help/release-notes/universal-editor/2025/2025-07-31.md)
-         + [2025.07.09发行说明](/help/release-notes/universal-editor/2025/2025-07-09.md)
+         + [2025.07.31 版发行说明](/help/release-notes/universal-editor/2025/2025-07-31.md)
+         + [2025.07.09 版发行说明](/help/release-notes/universal-editor/2025/2025-07-09.md)
          + [2025.06.19 版发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
          + [2025.05.21 版发行说明](/help/release-notes/universal-editor/2025/2025-05-21.md)
          + [2025.04.04 版发行说明](/help/release-notes/universal-editor/2025/2025-04-04.md)
@@ -270,7 +271,7 @@ ht-degree: 97%
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [发布层上为 AEM as a Cloud Service 提供 Open ID Connect 支持](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [Open ID Connect 支持发布层上的 AEM as a Cloud Service](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [为 AEM as a Cloud Service 设置 IMS 集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [权限管理的主要视图](/help/security/touch-ui-principal-view.md)
    + [Sling Service 用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
@@ -681,7 +682,7 @@ ht-degree: 97%
          + [传递 API](/help/assets/deliver-assets-apis.md)
          + [限制资产传递](/help/assets/restrict-assets-delivery.md)
          + [将远程 AEM Assets 与 AEM Sites 集成](/help/assets/integrate-remote-approved-assets-with-sites.md)
-         + [预览资源](/help/assets/preview-assets.md)
+         + [预览资产](/help/assets/preview-assets.md)
          + [常见问题解答](/help/assets/dynamic-media-open-apis-faqs.md)
          + [配置自定义域](/help/assets/configure-custom-domain.md)
          + [优化图像](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
@@ -798,7 +799,7 @@ ht-degree: 97%
          + [配置基于核心组件的自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
          + [配置 Edge Delivery Services 表单的提交操作](/help/forms/configure-submit-action-eds-forms.md)
          + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
-         + [集成自适应表单与表单数据模型](/help/forms/integrate-adaptive-form-with-fdm.md)
+         + [将自适应表单与表单数据模型集成](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + 将自适应表单连接到 Microsoft® SharePoint{#connect-to-sharepoint}
             + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -844,7 +845,7 @@ ht-degree: 97%
             + [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [自适应表单中的电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [在Experience Manager Forms中管理发布](/help/forms/manage-publication.md)
+            + [&#x200B;在 Experience Manager Forms 中管理发布](/help/forms/manage-publication.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1036,11 +1037,11 @@ ht-degree: 97%
    + [Screens as a Cloud Service 常见问题](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [简介和概述](/help/commerce-cloud/introduction.md)
-   + Edge Delivery Services店面 {#edge-storefront}
+   + Edge Delivery Services 店面 {#edge-storefront}
       + [简介](/help/commerce-cloud/edge-storefront/introduction.md)
    + 第三方店面 {#thrid-party-storefront}
       + [简介](/help/commerce-cloud/third-party-storefront/introduction.md)
-   + CIF店面 {#cif-storefront}
+   + CIF 店面 {#cif-storefront}
       + [CIF 简介](/help/commerce-cloud/cif-storefront/introduction.md)
       + [对 AEM Content and Commerce as a Cloud Service 的重要更改](/help/commerce-cloud/cif-storefront/changes.md)
       + Commerce 历程  {#journeys}
@@ -1083,12 +1084,12 @@ ht-degree: 97%
       + [迁移](/help/commerce-cloud/cif-storefront/migration.md)
       + [常见问题解答](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery Services概述](/help/edge/overview.md)
+   + [Edge Delivery Services 概述](/help/edge/overview.md)
 {#wysiwyg-authoring}
    + 构建表单 {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
       + 所见即所得的创作 {#universal-editor}
-         + [Edge Delivery Services for Forms通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [用于 Edge Delivery Services for Forms 的通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [导航 AEM Forms 的通用编辑器界面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [使用通用编辑器完成 Edge Delivery Services for AEM Forms 快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [使用 Edge Delivery Services 创建和发布自适应表单](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1096,11 +1097,11 @@ ht-degree: 97%
          + [自定义 Edge Delivery Services for AEM Forms 的主题和样式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [通用编辑器中的动态表单规则编辑器](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [如何创建表单片段用于进行基于所见即所得的创作](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [如何为自适应表单配置提交操作？](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [如何配置自适应表单的提交操作？](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [如何配置重定向页面或感谢消息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [在通用编辑器中将 Google reCAPTCHA 添加到表单](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [如何在通用编辑器中为一个表单集成表单数据模型 (FDM)？](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [如何预填自适应表单字段](/help/edge/docs/forms/universal-editor/prefill-form.md)
+         + [如何预填充自适应表单字段](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [通过 Edge Delivery Services 发布自适应表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [为 EDS Form 创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [解决 Edge Delivery Services 表单提交中的 403 禁止错误](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
@@ -1255,7 +1256,7 @@ ht-degree: 97%
          + [CI-CD 管道简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [配置Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+         + [配置 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [部署您的代码](/help/implementing/cloud-manager/deploy-code.md)
@@ -1279,7 +1280,7 @@ ht-degree: 97%
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [一键创建您的第一个 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
-         + [配置Edge Delivery站点以使用外部Git存储库](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
+         + [配置 Edge Delivery 网站以使用外部 Git 存储库](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [配置您的内容源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
