@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
 workflow-type: tm+mt
 source-wordcount: '1961'
-ht-degree: 47%
+ht-degree: 86%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 47%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.8.0)的发布日期是2025年8月28日。 下一个功能版本(2025.9.0)计划于2025年9月25日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.8.0) 的发布日期为 2025 年 8 月 28 日。下一个功能版本 (2025.9.0) 计划于 2025 年 9 月 25 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -40,44 +40,44 @@ ht-degree: 47%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## Experience Hub {#experience-hub}
 
-[Experience Hub](/help/experience-hub.md)是您访问所有AEM功能的集中式起点。 它根据您的用户角色和您可用的许可证进行个性化，使每个用户能够有效地实现他们的成果。
+[Experience Hub](/help/experience-hub.md) 是您访问所有 AEM 功能的统一起点。它根据您的用户角色和可用的许可证进行个性化，使每个用户都能高效实现自己的目标。
 
-## AEM的人工智能助手 {#AI-assistant}
+## AEM 中的 AI 助手 {#AI-assistant}
 
-适用于AEM的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)提供了一个对话界面，旨在让您即时获得与AEM产品相关问题的答案（*可供所有用户使用*）并自动创建支持票证（*可供支持管理员使用*）。 它直接嵌入到AEM中，可从AEM Experience Hub、Cloud Manager和创作UI访问。
+AEM 的 [AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)提供了一个对话界面，旨在让您立即获得 AEM 产品相关问题的回答（*为所有用户提供*），并能自动创建支持票证（*为支持管理员提供*）。它直接嵌入在 AEM 中，可从 AEM Experience Hub、Cloud Manager 和 Author UI 访问。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites 的新增功能 {#enhancements-sites}
 
-* 在内容片段管理界面中，您现在可以查看内容片段的工作流状态，其中包含关于所选片段的过去和当前正在运行的工作流的详细信息。
-* 在常见情况下，通过通过UUID而不是通过路径打开片段，在新的内容片段编辑器中打开内容片段的性能提升了25%。
-* 现在，在复制包含引用的片段的内容片段时，引用的片段的副本存储在与父片段副本相同的位置。
-* 您现在可以在文件夹设置中配置自定义工作区，以将内容片段导出到Adobe Target中已配置的工作区。
+* 在内容片段管理用户界面中，您现在可以查看内容片段的工作流状态，其中包含关于所选片段的过去和当前正在运行的工作流的详细信息。
+* 在新的内容片段编辑器中，通过 UUID 而不是通过路径打开内容片段，使性能在常见情况下提高了 25%。
+* 当复制带引用片段的内容片段时，引用片段的副本现在存储在与父级片段副本相同的位置。
+* 您现在可以在文件夹设置中配置一个自定义工作区，以将内容片段导出到 Adobe Target 中配置的工作区。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Content Hub 的新功能 {#new-features-content-hub}
 
-**通过筛选器属性进行批量搜索**
+**通过过滤器属性进行批量搜索**
 
-Content Hub现在可帮助您更快地发现所需的资源。 借助新的批量搜索功能，您可以为任何筛选器属性输入多个值(以分隔符（例如，多个SKU ID）分隔)，并使用单个搜索即时检索所有匹配的资产。
+Content Hub 现在可以更快地发现您需要的资产。使用新的批量搜索功能，您可以为任何过滤器属性以分隔符分隔的方式输入多个值（例如多个 SKU ID），只通过一个搜索就能立即检索所有匹配的资产。
 
 ### 具有 OpenAPI 功能的动态媒体中的新功能 {#new-features-dynamic-media-with-openapi}
 
-**具有OpenAPI URL的SEO友好DM**
+**带有 OpenAPI URL 的 SEO 友好型 DM**
 
-在DM中使用OpenAPI创建资产交付的虚URL，将系统生成的长UUID替换为简短的可读标识符。 这使得链接更符合SEO要求，并且更好地与您的品牌或营销活动保持一致。 虚URL在运行时自动解析为原始资产UUID，而不会中断现有工作流。
+使用 OpenAPI 创建用于在 DM 中交付资产的虚名 URL，用可读的短标识符替换系统生成的长 UUID。这使得关联变得 SEO 友好，并且与您的品牌或营销活动更加一致。虚名 URL 会在运行时自动解析为原始资产 UUID，不会中断现有工作流。
 
 >[!NOTE]
 >
->此功能将在9月10日作为有限可用功能提供。 您可以[创建并提交Adobe客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，以便为您的部署启用它。
+>此功能将于 9 月 10 日作为有限发布版推出。您可以[创建并提交 Adobe 客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，为您的部署启用该功能。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -85,41 +85,41 @@ Content Hub现在可帮助您更快地发现所需的资源。 借助新的批�
 
 **日期和时间输入组件**
 
-[日期和时间组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)现已可用，允许用户使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
+[日期和时间组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)现已可用，允许用户使用日历和时钟界面选择日期和时间，或以支持的格式手动输入值。
 
 **增强了文件上传的错误处理**
 
-[文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)现在根据允许列表自动验证上载的文件类型。 如果用户以不支持的格式上传文件，则表单在提交期间显示错误。 该组件还会检查文件内容以验证其类型，从而提高表单的整体安全性。
+[文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)现在根据允许列表自动验证上载的文件类型。 如果用户上传不受支持格式的文件，表单就会在提交过程中显示错误。该组件还检查文件内容以验证其类型，增强表单的整体安全性。
 
 **为自定义提交操作指定的错误响应**
 
-当[自定义提交操作](/help/forms/custom-submit-action-troubleshooting.md)遇到未处理的错误时，系统返回错误代码502。 这有助于确定问题与自定义提交操作相关，从而简化调试过程。
+当[自定义提交操作](/help/forms/custom-submit-action-troubleshooting.md)遇到未处理的错误时，系统返回错误代码502。 这有助于识别问题是否与自定义提交操作有关，使调试更容易。
 
 **从记录文档排除隐藏字段**
 
-新属性允许从[记录文档](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)中排除隐藏字段。 默认情况下，不选中此选项，该选项适用于所有表单字段。
+新属性允许从[记录文档](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)中排除隐藏字段。 默认情况下此选项未选中，且适用于所有表单字段。
 
 
-### AEM Forms中的预发行功能
+### AEM Forms 中的预发行版功能
 
 **生成并同步AFP演绎版**
 
-您现在可以使用[AEM Forms通信API](/help/forms/document-generation-afp-api.md)将XDP文件转换为AFP格式。 AFP是一种广泛应用于大型企业印刷的高性能格式。
+您现在可以使用[AEM Forms通信API](/help/forms/document-generation-afp-api.md)将XDP文件转换为AFP格式。 AFP 是一种广泛用于大型企业打印的高性能格式。
 
-规则编辑器中的&#x200B;**增强功能**
+**规则编辑器的增强功能**
 
-* [函数列表中的验证方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：验证和重置方法现在支持在面板、字段和表单级别执行。 以前，仅在表单级别支持它们。
+* [函数列表中的验证方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：验证和重置方法现在支持在面板、字段和表单级别执行。 以前仅在表单级别支持这些方法。
 * [现代JavaScript支持](/help/forms/rule-editor-core-components-difference-tables.md)：为自定义函数添加了对ECMAScript 2019及更高版本功能的支持，允许您编写更高效、模块化且可重用的代码。
-* [规则编辑器中的“下载DoR选项”](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：规则编辑器中已将用于下载记录文档(DoR)的函数作为现成(OOTB)选项添加。
+* [规则编辑器中的下载 DoR 选项](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：规则编辑器中添加了一个下载记录文档 (DoR) 的功能，是一个开箱即用 (OOTB) 选项。
 
   ![记录文档](/help/forms/assets/document-of-record-rn.gif)
 
-* [规则编辑器中的动态变量](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：您现在可以在规则编辑器中使用动态（临时）变量，以便在定义条件和操作时更加灵活。 不再需要隐藏字段来存储临时值。
+* [规则编辑器中的动态变量](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：您现在可以在规则编辑器中使用动态（临时）变量，以便更灵活地定义条件和操作。隐藏字段不再需要存储临时值。
 * [基于自定义事件的规则支持](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：您现在可以定义自定义事件并根据这些事件触发规则。
-* [上下文感知的可重复面板规则](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：在可重复面板中，规则现在基于上下文执行，而不是仅应用于最后一个面板实例。
-* [由参数触发的规则](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：规则编辑器现在支持基于查询参数、UTM参数或浏览器参数执行规则。
-* [特定于表单的自定义函数](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)： Edge Delivery Services Forms现在支持特定于表单的自定义函数脚本，在管理可重用逻辑方面提供了更大的灵活性。
-* [自定义函数的静态导入](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：通用编辑器中的规则编辑器现在支持静态导入，允许开发人员跨多个表单组织、共享和重用函数。
+* [上下文感知的可重复面板规则](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：在可重复面板中现在会根据上下文执行规则，而不是将规则仅应用于最后一个面板实例。
+* [通过参数触发规则](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：规则编辑器现在支持基于查询参数、UTM 参数或浏览器参数执行规则。
+* [表单特有的自定义函数](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)：Edge Delivery Services 表单现在支持表单特有的自定义函数脚本，这样可以更灵活地管理可复用逻辑。
+* [自定义函数的静态导入](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：通用编辑器中的规则编辑器现在支持静态导入，允许开发人员在多个表单上组织、共享和复用函数。
 
 ### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
@@ -129,11 +129,11 @@ AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以�
 
 **涂写签名组件**
 
-您现在可以使用[涂写签名组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、手写笔或触摸屏直接在表单中绘制其签名。
+您现在可以使用[涂写签名组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)帮助用户将其签名添加到表单，如协议表单中。 该组件允许用户使用鼠标、触控笔或触摸屏直接在表单中绘制自己的签名。
 
 在规则编辑器中&#x200B;**直接API集成**
 
-自适应Forms现在支持在可视规则编辑器中[直接API集成](/help/forms/api-integration-in-rule-editor.md)，而无需表单数据模型。 作者可以使用URL或cURL导入来配置API，映射输入/输出参数，以及使用身份验证的安全调用。
+自适应Forms现在支持在可视规则编辑器中[直接API集成](/help/forms/api-integration-in-rule-editor.md)，而无需表单数据模型。 作者可以使用 URL 或 cURL 导入、映射输入/输出参数来配置 API，并通过身份验证确保安全调用。
 
 <!--
 **Forms Optimization opportunities**
@@ -153,16 +153,16 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### JavaScript编译更新 {#javascript-compilation}
+### JavaScript 编译更新 {#javascript-compilation}
 
-默认客户端库(clientlibs) JavaScript编译现在以ECMASCRIPT_2018而不是ECMASCRIPT5为目标。 虽然此更新在过去可以覆盖，但默认情况下，它支持性能改进、现代JavaScript语法和功能。
+现在，默认的客户端库（clientlibs）JavaScript 编译输出目标是 ECMASCRIPT_2018 而不是 ECMASCRIPT5。虽然过去可以覆盖配置，但这一更新默认启用了增强的性能和现代 JavaScript 语法及功能。
 
-### 即将弃用Java API {#java-api-deprecation}
+### 即将弃用 Java API {#java-api-deprecation}
 
-多个已弃用的API将于8月31日定向删除，因此不应再引用。 9月初，如果检测到API使用情况，将发送操作中心通知，9月25日之后，将在Cloud Manager构建期间显示通知，强调删除使用情况的重要性。 有关完整的详细信息，请参阅[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，但为了方便起见，下面列出了这些API：
+一些已弃用的 API 将于 8 月 31 日被移除，因此不应再引用。9月初，如果检测到API使用情况，将发送操作中心通知，9月25日之后，将在Cloud Manager构建期间显示通知，强调删除使用情况的重要性。 请查看[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整详细信息。但为了方便起见，下面列出了这些 API：
 
 <details>
-  <summary>展开以查看Java API的弃用情况</summary>
+  <summary>展开查看 Java API 弃用项</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -196,7 +196,7 @@ OSGi properties:
 
 *Java 11 运行时环境*&#x200B;现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
 
-如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在&#x200B;**2025年10月1日**&#x200B;之前完成所有必需的更新，以便您的环境可以升级而不会中断。
+如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 10 月 1 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不中断的情况下进行升级。
 
 注意：运行时版本与代码的构建版本是分开的。虽然我们建议使用 Java 21 进行构建，但目前仍支持使用 Java 11 进行构建。未来将另行发布针对 Java 11 版本的弃用通知。
 
@@ -204,14 +204,14 @@ OSGi properties:
 
 正如4月发布说明中所述，AEM Java 日志必须遵循标准格式，以确保在所有客户环境中进行可靠监控。自定义日志配置（如更改日志格式、输出文件或默认日志级别）已不再受支持。日志必须继续定向到默认文件，且必须保留 AEM 产品代码的默认日志级别。请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)，以了解完整详情。
 
-从&#x200B;**9月25日**&#x200B;开始，将忽略任何不受支持的自定义日志记录覆盖。 根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将会与其联系。
+从 **9 月 25 日**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将会与其联系。
 
 请审查并更新所有依赖自定义日志记录行为的下游流程。例如：
 
 * 如果您的日志转发系统需要自定义日志格式，您可能需要调整您的摄取规则。
 * 如果您之前通过更改日志级别来降低日志详细程度，请注意，恢复默认级别可能会增加日志量。
 
-### Edge计算(Beta计划) {#edge-computing}
+### 边缘计算（Beta 计划） {#edge-computing}
 
 边缘计算允许您在内容传递网络 (CDN) 层执行 JavaScript，使数据处理更接近最终用户。这降低了延迟，使得边缘设备能够提供响应迅速、动态丰富的体验。
 
@@ -220,7 +220,7 @@ OSGi properties:
 * 在授予内容访问权限之前，通过身份标识提供商对用户进行身份验证
 * 根据地理位置、设备类型或用户属性对内容进行个性化设置
 * 充当 CDN 与您的源站之间的中间件
-* 在将来自第三方API的响应传递到浏览器之前，请重新设置响应格式（可能还会聚合多个API响应）
+* 在将第三方 API 的响应（可能还包括聚合多个 API 的响应）传递给浏览器之前，重新设置响应的格式
 * 使用从各种后端拼接的内容，在边缘构建并呈现服务器渲染的 HTML
 * 为 ChatGPT 和 Claude 等 LLM 公开 MCP 服务器，以访问自定义工具
 
@@ -230,7 +230,7 @@ OSGi properties:
 
 Adobe 管理的 CDN 提供灵活的配置选项，如这篇[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
 
-现在在Beta版中，您可以为功能部署配置管道，包括CDN源选择器、响应和请求转换、CDN日志转发等。 请联系 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 并提供您的用例详情。
+现在在 beta 版中，您可以为内容传递网络源选择器、响应和请求转换、内容传递网络日志转发等功能部署一个配置管道。请联系 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 并提供您的用例详情。
 
 ### RDE 快照（Alpha 程序） {#rde-snapshot-program}
 
