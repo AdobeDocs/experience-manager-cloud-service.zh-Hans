@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 38%
 
 ---
@@ -28,7 +28,7 @@ Cloud manage UI 主要由两个图形界面组成：
 >另请查看[入门文档历程](/help/journey-onboarding/overview.md)，全面了解如何使用Cloud Manager启动和运行AEM as a Cloud Service。
 
 
-## AEM的人工智能助手
+## AEM 中的 AI 助手
 
 对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
 
@@ -126,7 +126,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 分配给项目的名称。 上图将“SecurBank Sample”显示为程序名称。
 * 服务类型：
    * **Experience Manager Cloud** — 用于AEM as a Cloud Service程序
-   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙盒
    * 生产
@@ -153,7 +153,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 导航到项目的特定![数据图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [环境](/help/implementing/cloud-manager/manage-environments.md)
 * 打开![项目概述图标](/help/implementing/cloud-manager/assets/program-overview.svg) [项目概述](#program-overview)
 * ![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -182,7 +182,7 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 对程序[环境的概述](#environments)
 1. 对程序[管道的概述](#pipelines)
 1. [计划绩效](#performance)概述
-1. [有用资源](#useful-resources)的链接
+1.  [有用资源](#useful-resources)的链接
 
 ### 工具栏 {#program-overview-toolbar}
 
