@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 93%
+source-wordcount: '2142'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 93%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ ht-degree: 93%
 * 当您需要重复使用体验时。
    * 重复使用相同或相似内容的体验。
 * 当您使用 AEM 作为第三方的内容投放平台时。
-   * 任何需要使用AEM作为内容交付平台的解决方案。
+   * 任何希望使用AEM作为内容交付平台的解决方案。
    * 将内容嵌入第三方触点。
 * 当您有一个具有不同变体或呈现版本的体验时。
    * 特定于渠道或上下文的变体。
@@ -335,7 +335,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 体验片段的个性化允许您作为营销人员为体验片段定义一次目标受众，然后在任何页面中重复使用该片段。此功能：
 
 * 无需在每次使用片段时为每个受众指定所需的变体
-* 保持整个优惠的样式
+* 保持整个产品建议的样式
 
 您可以创建一个体验片段，并将多个组件分组在此单个片段中。您还可以为每个特定的受众群体创建片段的变体，然后在所需的渠道中重复使用这些体验片段。
 
@@ -394,7 +394,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 可以查看片段的详细信息：
 
 1. 导航到体验片段的位置（请勿进一步导航到片段中的变体）。
-详细信息将显示在&#x200B;**体验片段**&#x200B;控制台的所有视图中，其中&#x200B;**列表视图**&#x200B;包含[导出到 Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 的详细信息：
+详细信息将显示在**体验片段**&#x200B;控制台的所有视图中，其中&#x200B;**列表视图**&#x200B;包含[导出到 Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 的详细信息：
 
    ![体验片段详细信息](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -445,6 +445,16 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 发布体验片段的方式与[发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)相同（从体验片段控制台或编辑器中进行）。
 
 或者，您也可以[发布到预览](/help/sites-cloud/authoring/sites-console/previewing-content.md)（再次从体验片段控制台或编辑器中发布）。
+
+>[!CAUTION]
+>
+>默认情况下，发布体验片段的根文件夹（直接位于`/content/experience-fragments`下）：
+>
+>* 仅发布容器文件夹本身
+>* 不发布任何子项
+>* 取消发布任何已发布的子项
+>
+>要发布文件夹中的所有体验片段，必须单独发布每个体验片段。
 
 ## 导出体验片段 {#exporting-experience-fragments}
 
