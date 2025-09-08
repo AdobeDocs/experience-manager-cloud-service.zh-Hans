@@ -4,10 +4,10 @@ description: 详细了解组件定义与通用编辑器之间的 JSON 契约。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 96%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 100%
 
 `plugins` 定义了哪个插件负责保留组件。常用的插件有：
 
-* `aem`：用于 AEM as a Cloud Service。
-* `aem5`：用于 AEM 6.5。
-* `xwalk`：用于 AEM as a Cloud Service 所见即所得创作。
+* `aem`AEM as a Cloud Service的[。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service)
+* `aem65`AEM 6.5.[的](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+* 使用AEM Sites为Edge Delivery Services创作`xwalk`的[。](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` 或 `cf` {#page-cf}
 
