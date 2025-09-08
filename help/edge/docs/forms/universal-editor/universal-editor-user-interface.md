@@ -7,20 +7,20 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2355'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # 导航 AEM Forms 的通用编辑器界面
 
-[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供了一个可视界面，用于通过 Edge Delivery Services 创建 AEM Forms。它提供了一种&#x200B;**What You See Is What You Get (WYSIWYG)**&#x200B;体验，可向用户准确显示您的表单的显示方式。
+[通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供了一个可视界面，用于通过 Edge Delivery Services 创建 AEM Forms。它提供一种&#x200B;**所见即所得 (WYSIWYG)** 的体验，可以准确显示您的表单如何显示给用户。
 
 ![通用编辑器界面概述](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-本指南可帮助您了解用于高效构建表单的界面。 无论您是表单构建新手还是经验丰富的开发人员，本指南都将帮助您：
+本指南可帮助您了解该界面，以有效构建表单。无论您是表单构建新手还是经验丰富的开发人员，本指南都将帮助您：
 
 **了解基本技能：**
 
@@ -216,7 +216,7 @@ ht-degree: 90%
 
 **这些工具用于一些特定场景或高级设置：**
 
-#### **AEM表单属性**
+#### **AEM 表单属性**
 
 **用途：**&#x200B;配置表单级别的设置，例如表单数据模型 (FDM) 和发布日期\
 **何时使用：**&#x200B;设置数据集成、安排发布时间
@@ -225,13 +225,13 @@ ht-degree: 90%
 
 ![表单属性向导](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
-“表单属性”面板包括以下部分：
+表单属性面板包括以下分区：
 
-- **提交**：定义用户提交表单后发生的情况。 从多个提交操作中进行选择，例如通过电子邮件发送数据，提交到SharePoint，使用表单数据模型，或与Adobe Experience Platform或Microsoft Power Automate等服务集成。 有关支持的提交操作的完整列表，请参阅[提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)文章。
+- **提交**：定义用户提交表单后会发生什么。从多种提交操作中选择一种，例如通过电子邮件发送数据、提交给 SharePoint、使用表单数据模型或者与 Adobe Experience Platform 或 Microsoft Power Automate 等服务集成。有关受支持的提交操作的完整列表，请参阅[提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)文章。
 
-- **预填充**：配置在用户与表单交互之前自动填充表单字段的方式。 您可以连接到表单数据模型(FDM)等数据源，或使用URL参数预填充字段，从而增强用户体验并减少手动输入。 若要了解详细信息，请参阅[预填充服务](/help/edge/docs/forms/universal-editor/prefill-form.md)文章。
+- **预填充**：配置在用户与表单交互之前如何自动填充表单字段。您可以连接到表单数据模型 (FDM) 等数据源，或者使用 URL 参数预填充字段，从而增强用户体验，减少手动输入。要了解更多信息，请参阅[预填充服务](/help/edge/docs/forms/universal-editor/prefill-form.md)文章。
 
-- **谢谢**：自定义提交表单后用户看到的内容。 您可以显示确认消息或将它们重定向到其他网页，以确保流畅而专业的完成体验。 要了解如何为表单配置感谢消息，请参阅[配置感谢消息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)文章。
+- **感谢消息**：自定义用户提交表单后看到的内容。您可以显示一条确认消息或将用户重定向到另一个网页，以确保顺畅、专业的表单完成体验。要了解如何配置表单的感谢消息，请参阅[配置感谢消息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)文章。
 
 #### **规则编辑器**（早期访问）
 
@@ -340,7 +340,7 @@ ht-degree: 90%
 
 +++
 
-+++AI支持的工具
++++AI 驱动的工具
 
 #### **生成变体**
 
@@ -349,7 +349,7 @@ ht-degree: 90%
 
     ![生成变体](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**了解详情：**&#x200B;[生成变体指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**了解详情：**[生成变体指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **内容草稿**
 
@@ -378,7 +378,7 @@ ht-degree: 90%
 
 +++
 
-+++Collaboration Tools
++++协作工具
 
 #### **任务管理**
 
@@ -459,7 +459,7 @@ ht-degree: 90%
 
 ### **界面问题**
 
-+++接口元素未加载
++++界面元素未加载
 
 **问题：**&#x200B;工具栏按钮、属性面板或其他界面元素未显示
 
@@ -472,7 +472,7 @@ ht-degree: 90%
 
 +++
 
-+++组件没有响应
++++组件不响应
 
 **问题：**&#x200B;无法选择组件或属性面板不更新
 

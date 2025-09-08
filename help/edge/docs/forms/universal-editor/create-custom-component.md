@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
 1. **添加新文件夹和文件**
 
-   在AEM项目中为新自定义组件添加新文件夹和文件。
+   在您的 AEM 项目中为新的自定义组件添加新文件夹和文件。
 
    1. 打开 AEM 项目并导航到 `../blocks/form/components/`。
    1. 在 `../blocks/form/components/<component_name>` 为自定义组件添加一个新文件夹。在这个例子中，我们创建一个名为 `range` 的文件夹。

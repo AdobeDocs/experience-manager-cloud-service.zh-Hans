@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -218,7 +218,7 @@ Edge Delivery Services Forms 支持两个 Google reCAPTCHA 选项。使用以下
 
 ## 设置 reCAPTCHA Standard
 
-+++步骤1：获取reCAPTCHA API密钥（请参阅详细信息）
++++步骤 1：获取 reCAPTCHA API 密钥（参见详细信息）
 
 >[!IMPORTANT]
 >
@@ -256,7 +256,7 @@ Edge Delivery Services Forms 支持两个 Google reCAPTCHA 选项。使用以下
 
 +++
 
-+++步骤2：配置AEM Cloud配置容器（请参阅详细信息）
++++步骤 2：配置 AEM 云配置容器（参见详细信息）
 
 遵循与 Enterprise 设置中相同的流程：
 
@@ -268,7 +268,7 @@ Edge Delivery Services Forms 支持两个 Google reCAPTCHA 选项。使用以下
 
 +++
 
-+++步骤3：在AEM中配置reCAPTCHA标准服务（请参阅详细信息）
++++步骤 3：在 AEM 中配置 reCAPTCHA 标准服务（参见详细信息）
 
 ![reCAPTCHA Standard 配置屏幕](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *图：AEM 中的 reCAPTCHA Standard 配置界面*
@@ -313,39 +313,39 @@ Edge Delivery Services Forms 支持两个 Google reCAPTCHA 选项。使用以下
 ![将 reCAPTCHA 组件添加到表单](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *图：将不可见的验证码组件添加到表单*
 
-+++1.在通用编辑器中打开表单
-转到AEM Sites中的表单，然后单击“编辑”以在通用编辑器中打开该表单。 等待编辑器加载。
++++&#x200B;1. 在通用编辑器中打开表单
+前往 AEM Sites 中的表单，然后点击“编辑”，在通用编辑器中将其打开。等待编辑器加载。
 
 - 前往 AEM Sites 中的表单
 - 点击编辑，在通用编辑器中打开
 - 等待编辑器加载
 +++
 
-+++2.查找表单结构
-在内容树（左面板）中，找到您的自适应表单部分，并展开表单结构以查看插入点。
++++&#x200B;2. 找到表单结构
+在内容树（左侧面板）中，找到自适应表单分区，展开表单结构以查看插入点。
 
 - 在内容树（左侧面板）中，找到您的自适应表单分区
 - 展开表单结构，查看插入点
 +++
 
-+++3.添加reCAPTCHA组件
-将Captcha（不可见）组件添加到表单。
++++&#x200B;3. 添加 reCAPTCHA 组件
+将验证码（不可见）组件添加到您的表单。
 
 - 点击表单分区中的添加 (+) 图标
 - 从组件列表中选择验证码（不可见）
 - 也可以从组件面板中拖放组件
 +++
 
-+++4.配置组件（可选）
-选择新添加的captcha组件并验证它是否使用您的reCAPTCHA配置。
++++&#x200B;4. 配置组件（可选）
+选择新添加的验证码组件，验证它是否使用您的 reCAPTCHA 配置。
 
 - 选择新添加的验证码组件
 - 在“属性”面板中，验证它是否使用您的 reCAPTCHA 配置
 - 基本设置不需要额外配置
 +++
 
-+++5.发布更改
-发布更改并验证没有错误。
++++&#x200B;5. 发布更改
+发布您的更改并验证未发生任何错误。
 
 - 点击通用编辑器中的发布
 - 等待确认

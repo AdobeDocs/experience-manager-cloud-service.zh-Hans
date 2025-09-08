@@ -1,35 +1,35 @@
 ---
 title: 组件定义
-description: 详细了解组件定义与通用编辑器之间的JSON约定。
+description: 详细了解组件定义与通用编辑器之间的 JSON 契约。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # 组件定义 {#component-definition}
 
-详细了解组件定义与通用编辑器之间的JSON约定。
+详细了解组件定义与通用编辑器之间的 JSON 契约。
 
 ## 概述 {#overview}
 
-`component-definition.json`文件定义了项目内容作者可用的组件。 本文档详细介绍此文件的用途以及通用编辑器如何使用它向作者展示页面创作组件。
+`component-definition.json` 文件定义了项目的内容作者可用的组件。本文档详细介绍了此文件的用途以及通用编辑器如何使用它向作者展示页面创作组件。
 
 >[!TIP]
 >
->有关内容建模过程的概述，请参阅文档[使用Edge Delivery Services项目进行WYSIWYG创作的内容建模。](https://www.aem.live/developer/component-model-definitions)
+>有关内容建模过程的概述，请参阅文档[使用 Edge Delivery Services 项目进行所见即所得创作的内容建模。](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->您不需要从头开始创建自己的`component-definition.json`文件。 您用于[引导项目](https://www.aem.live/developer/ue-tutorial)的项目样板包含一个[功能齐全的`component-definition.json`文件](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)，您可以根据自己的需求对其进行调整。
+>您不需要从头开始创建自己的 `component-definition.json` 文件。您用于[引导项目](https://www.aem.live/developer/ue-tutorial)的项目样板中包含一个[完全正常工作的 `component-definition.json` 文件](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)，您可以根据需要对其进行调整。
 
-## 示例组件定义 {#example}
+## 组件定义示例 {#example}
 
-以下是一个完整但简单的`component-definition.json`示例。
+下面是一个完整而简单的 `component-definition.json` 示例。
 
 ```json
 {
@@ -72,76 +72,76 @@ ht-degree: 2%
 
 ## `groups` {#groups}
 
-`groups`定义作者在通用编辑器中看到的组件组，在编辑器的属性面板中单击&#x200B;**添加**&#x200B;图标以[向页面添加新组件](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)。 组可帮助组织组件。 公共组可能是&#x200B;**常规组件**&#x200B;和&#x200B;**高级组件**。
+`groups` 定义了当作者点击编辑器属性面板中的&#x200B;**添加**&#x200B;图标以[在页面中添加新组件](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)时，在通用编辑器中看到的组件组。组有助于组织组件。常用的组包括&#x200B;**一般组件**&#x200B;和&#x200B;**高级组件**。
 
-* `title`定义编辑器UI中显示的组的文本说明。
-* `id`唯一标识该组。
+* `title` 定义了编辑器 UI 中显示的组的文字描述。
+* `id` 是组的唯一标识。
 
 ## `components` {#components}
 
-`components`定义哪些组件属于组。
+`components` 定义了哪些组件属于某个组。
 
-* `title`定义UI中显示的组件的文本说明。
-* `id`唯一标识该组件。
-   * 同一[的](/help/implementing/universal-editor/field-types.md#model-structure)组件模型`id`定义了组件的字段。
-   * 由于它是唯一的，因此例如可在[筛选器定义](/help/implementing/universal-editor/filtering.md)中使用它来确定可将哪些组件添加到容器中。
-* `model`定义将哪个[模型](/help/implementing/universal-editor/field-types.md#model-structure)与组件一起使用。
-   * 因此，模型将在组件定义中集中维护，并且不需要[指定检测。](/help/implementing/universal-editor/field-types.md#instrumentation)
+* `title` 定义了 UI 中显示的组件的文字描述。
+* `id` 是组件的唯一标识。
+   * 相同 `id` 的[组件模型](/help/implementing/universal-editor/field-types.md#model-structure)定义了组件的字段。  
+   * 因为它是唯一的，所以可用在例如[过滤器定义](/help/implementing/universal-editor/filtering.md)中，以确定哪些组件可以添加到容器中。
+* `model` 定义了哪个[模型](/help/implementing/universal-editor/field-types.md#model-structure)与组件一起使用。
+   * 此模型在组件定义中集中维护，无需被[指定适配。](/help/implementing/universal-editor/field-types.md#instrumentation)
    * 这样您就能跨容器移动组件。
-* `filter`定义应与组件一起使用的[筛选器](/help/implementing/universal-editor/filtering.md)。
+* `filter` 定义了哪个[过滤器](/help/implementing/universal-editor/filtering.md)应与组件一起使用。
 
 ## `plugins` {#plugins}
 
-`plugins`定义哪个插件负责持久化该组件。 常用插件包括：
+`plugins` 定义了哪个插件负责保留组件。常用的插件有：
 
-* AEM as a Cloud Service的`aem`。
-* 适用于AEM 6.5的`aem5`。
-* 用于AEM as a Cloud Service WYSIWYG创作的`xwalk`。
+* `aem`：用于 AEM as a Cloud Service。
+* `aem5`：用于 AEM 6.5。
+* `xwalk`：用于 AEM as a Cloud Service 所见即所得创作。
 
 ## `page` 或 `cf` {#page-cf}
 
-定义`plugin`后，您需要指示它是与页面相关还是与片段相关。
+定义了 `plugin` 之后，您需要指明它是与页面相关还是与片段相关。
 
-* `page`指示组件在当前页面上为内容。
-* `cf`指示组件与[内容片段](/help/assets/content-fragments/content-fragments.md)中的内容相关。
+* `page` 表示该组件是当前页面上的内容。
+* `cf` 表示该组件与一个[内容片段](/help/assets/content-fragments/content-fragments.md)中的内容相关。
 
 ### `page` {#page}
 
 如果组件是页面上的内容，您可以提供以下信息。
 
-* `resourceType`定义用于呈现组件的[Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType`。
-* `template`定义要自动写入新创建的组件的可选键/值，并定义应将哪个筛选器和/或模型应用于该组件。
-   * 用于说明性文本、示例文本或占位符文本。
+* `resourceType` 定义了用于渲染组件的 [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType`。
+* `template` 定义了要自动写入新创建的组件的可选键/值，还定义了应将哪个过滤器和/或模型应用于该组件。
+   * 适用于解释性文本、示例文本或占位符文本。
 
 #### `template` {#template}
 
-通过提供可选的键/值对，`template`可以自动将它们写入新组件。 此外，还可以指定以下可选值。
+通过提供可选的键/值对，`template` 可以将这些自动写入新组件。此外，还可以指定以下可选值。
 
 ### `cf` {#cf}
 
-如果组件与内容片段中的内容相关，您可以提供以下信息。
+如果组件与一个内容片段中的内容相关，您可以提供以下信息。
 
-* `name`为新创建的组件定义保存到JCR的可选名称。
-   * 仅供参考，通常不会在UI中显示为`title`。
-* `cfModel`为新创建的组件定义[内容片段](/help/assets/content-fragments/content-fragments-models.md)模型。
-* `cfFolder`定义将在哪个文件夹中创建内容片段。
-* `title`定义新内容片段的标题。
-* `description`定义新内容片段的描述。
-* `template`定义了要自动写入新创建的内容片段的可选键/值。
-   * 用于说明性文本、示例文本或占位符文本。
+* `name` 为新创建的组件定义了一个保存到 JCR 的可选名称。
+   * 仅供参考，通常不会在 UI 中按 `title` 原样显示。
+* `cfModel` 为新创建的组件定义[内容片段](/help/assets/content-fragments/content-fragments-models.md)模型。
+* `cfFolder` 定义了应在哪个文件夹中创建内容片段。
+* `title` 定义了新内容片段的标题。
+* `description` 定义了新内容片段的描述。
+* `template` 定义了被自动写入新创建的内容片段的可选键/值。
+   * 适用于解释性文本、示例文本或占位符文本。
 
-### `cf`可以默示 {#cf-implied}
+### `cf` 可以被隐含 {#cf-implied}
 
-如果页面[检测为](/help/implementing/universal-editor/getting-started.md#instrument-page)以指向引用字段，则将假定为`cf`。
+如果页面被[适配](/help/implementing/universal-editor/getting-started.md#instrument-page)指向一个引用字段，就会认为是 `cf`。
 
 ```html
 <div data-aue-resource="urn:aem:/content" data-aue-type="container" data-aue-prop="field"></div>
 ```
 
-在这种情况下，假定为`cf`，因为`data-aue-prop`指向参考字段。 如果没有`data-aue-prop`，通用编辑器将采用`page`，因为在这种情况下，组件不通过引用字段链接。
+在这种情况下认为是 `cf`，因为 `data-aue-prop` 指向一个引用字段。如果没有 `data-aue-prop`，通用编辑器就会认为是 `page`，因为在这种情况下组件不是通过引用字段关联。
 
 ```html
 <div data-aue-resource="urn:aem:/content" data-aue-type="container"></div>
 ```
 
-组件只是资源下的子节点。
+组件只是资源下方的子节点。

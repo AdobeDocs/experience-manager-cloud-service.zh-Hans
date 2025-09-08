@@ -1,26 +1,26 @@
 ---
 title: 使用 Edge Delivery Services 创建和发布自适应表单
-description: 关于使用AEM中的Edge Delivery Services模板创建、创作和发布自适应Forms的分步说明，侧重于技术准确性和清晰度。
-keywords: 自适应表单， edge delivery services，通用编辑器，表单创建， AEM forms，表单发布
+description: 关于在 AEM 中使用 Edge Delivery Services 模板创建、创作和发布自适应表单的分步说明，重点关注技术准确性和清晰度。
+keywords: 自适应表单，Edge Delivery Services，通用编辑器，表单创建，AEM 表单，表单发布
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # 使用 Edge Delivery Services 创建和发布自适应表单
 
-本文档提供了使用AEM中的Edge Delivery Services模板创建、配置和发布自适应Forms的分步说明。 它涵盖了从表单创建到生产部署的完整工作流。
+此文档分步详细介绍了如何使用 Edge Delivery Services 模板在 AEM 中创建、配置和发布自适应表单。它涵盖了从表单创建到生产部署的完整工作流。
 
 本指南结束时，您将了解如何：
 
-- 使用Edge Delivery Services模板创建表单
+- 使用 Edge Delivery Services 模板创建表单
 - 使用通用编辑器创作表单
 - 配置表单并将其发布到 Edge Delivery Services
 - 访问已发布的表单并验证部署
@@ -50,14 +50,14 @@ ht-degree: 87%
 
 此过程包括三个主要阶段：
 
-- **阶段1：** [表单创建](#step-1-form-creation)
-- **阶段 2：**&#x200B;[创作和设计表单](#step-2-form-authoring-and-design)
-- **阶段 3：**&#x200B;[配置和发布](#step-3-configuration-and-publishing)
+- **阶段 1：** [创建表单](#step-1-form-creation)
+- **阶段 2：**[创作和设计表单](#step-2-form-authoring-and-design)
+- **阶段 3：**[配置和发布](#step-3-configuration-and-publishing)
 
 每个阶段都包括验证步骤，以确认设置正确。
 
 
-### 步骤1：创建表单
+### 步骤 1：创建表单
 
 1. **访问表单创建**
    - 登录您的 AEM Forms as a Cloud Service 作者实例。
@@ -114,6 +114,7 @@ ht-degree: 87%
 1. **设计表单**
    - 在属性面板中配置字段属性。
    - 设置验证规则和行为。
+
    - 根据需要调整样式和布局。
 
    ![完成的注册表](/help/edge/assets/contact-us.png)
@@ -132,7 +133,7 @@ ht-degree: 87%
 
 ### 步骤 3：配置和发布
 
-配置Edge Delivery Services并发布表单。
+配置 Edge Delivery Services 并发布表单。
 
 **配置：**&#x200B;自动（无需手动设置）。
 
@@ -285,12 +286,12 @@ ht-degree: 87%
 
 +++
 
-+++获取帮助
++++获取帮助 
 
 如果问题仍然存在：
 
 1. 检查 Adobe Experience Cloud 服务状态。
-2. 查看 [Edge Delivery Services 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hans)。
+2. 查看 [Edge Delivery Services 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。
 3. 访问 [Adobe Experience League 社区](https://experienceleaguecommunities.adobe.com/)。
 4. 联系 Adobe 客户关怀部门。
 
@@ -302,6 +303,6 @@ ht-degree: 87%
 
 - [配置提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)：设置数据处理和集成。
 - [表单数据模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)：将表单与后端数据源连接。
-- [Edge Delivery Services 最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hans)：最大限度提高性能。
+- [Edge Delivery Services 最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)：最大限度提高性能。
 - [表单分析](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html)：跟踪表单性能和用户行为。
 

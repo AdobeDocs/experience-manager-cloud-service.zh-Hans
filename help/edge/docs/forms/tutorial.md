@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -240,7 +240,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 克隆GitHub项目：使用以下命令从GitHub克隆项目存储库，将`<owner>`替换为存储库所有者，将`<repo>`替换为存储库名称：
+1. 克隆您的 GitHub 项目：使用以下命令从 GitHub 克隆您的项目存储库，将 `<owner>` 替换为存储库所有者，将 `<repo>` 替换为存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>

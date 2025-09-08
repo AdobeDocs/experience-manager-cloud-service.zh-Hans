@@ -4,12 +4,12 @@ description: 了解如何使用 Edge Delivery Services 发布、配置和访问�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: 发布表单，Edge Delivery Services，表单配置，CORS，反向链接过滤器
+keywords: 发布表单，Edge Delivery Services，表单配置，CORS，引荐来源过滤器
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 89%
 
 ## 发布流程概述
 
-将表单发布到Edge Delivery Services的过程分为三个阶段：
+将表单发布到 Edge Delivery Services 采用一个三阶段方法：
 
-- **阶段1：表单发布** — 将表单发布到CDN并验证发布状态
-- **第2阶段：安全配置** — 设置CORS策略和反向链接筛选器以便安全提交
-- **阶段3：访问和验证** — 测试表单功能并验证完整的工作流
+- **第一阶段：表单发布** - 将您的表单发布到内容传递网络并验证发布状态
+- **第二阶段：安全配置** - 设置 CORS 策略和引荐来源过滤器以确保安全提交
+- **第三阶段：访问和验证** - 测试表单功能并验证完整的工作流
 
-每个阶段都以上一个阶段为基础，以确保安全且功能正常的部署。
+每个阶段都以前一个阶段为基础，以确保安全、正确地部署。
 
 ### 阶段 1：发布表单
 

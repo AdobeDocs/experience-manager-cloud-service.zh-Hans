@@ -1,13 +1,13 @@
 ---
 title: 如何在通用编辑器中为一个表单集成表单数据模型 (FDM)？
-description: 了解如何基于表单数据模型(FDM)为边缘交付服务创建表单。 在 FDM 中生成并编辑数据模型对象的样本数据。
+description: 了解如何基于表单数据模型 (FDM) 为 Edge Delivery Services 创建表单。在 FDM 中生成并编辑数据模型对象的样本数据。
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

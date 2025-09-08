@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '823'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,14 +80,14 @@ Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入
 | 1 | 加入产品协作渠道 | 单击&#x200B;**立即提交请求**&#x200B;向 Adobe 提交请求，为您的公司创建一个渠道。如果该渠道已经存在，您将被转到您公司的渠道。 |
 | 2 | 完成前提条件 | 请参阅[查看快速入门教程](https://www.aem.live/developer/tutorial)。 |
 | 3 | 添加 Edge Delivery Site 或<br>立即创建 Site | 请参阅[添加 Edge Delivery Site](#eds-add-site)。<br>查看[在 Cloud Manager 中创建 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
-| 4 | 配置Edge Delivery站点以使用外部Git存储库 | 请参阅[将Edge Delivery站点配置为使用外部Git存储库](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)。 |
+| 4 | 配置 Edge Delivery 网站以使用外部 Git 存储库 | 参见[配置 Edge Delivery 网站以使用外部 Git 存储库 ](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)。 |
 | 5 | 添加域 | 请参阅[添加自定义域名称](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 6 | 添加 SSL 证书 | 请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 7 | 配置 Edge Delivery Site 的内容传递网络 | 请参阅[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。 |
 | 8 | 设置推送验证 | 请参阅[为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
 | 9 | 上线 | 请参阅[上线清单](https://www.aem.live/docs/go-live-checklist)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441572?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 记录支持工单 {#eds-support-ticket}
 

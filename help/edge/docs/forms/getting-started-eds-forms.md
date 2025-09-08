@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 # 入门指南：在 AEM Edge Delivery Services 中使用表单
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘区域交付极快且高度可扩展的 Web 体验。本指南说明了&#x200B;**如何构建并发布表单来确保提供这样的体验**，并提供明确的推荐层级：

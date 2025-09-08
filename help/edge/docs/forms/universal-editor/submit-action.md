@@ -1,14 +1,14 @@
 ---
-title: 如何为自适应表单配置提交操作？
+title: 如何配置自适应表单的提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
-keywords: 如何为自适应表单选择提交操作、将自适应表单连接到sharepoint列表、将自适应表单连接到sharepoint文档库、将自适应表单连接到表单数据模型(FDM)
+keywords: 如何选择自适应表单的提交操作，将自适应表单与 sharepoint 列表连接，将自适应表单与 sharepoint 文档库连接，将自适应表单与表单数据模型 (FDM) 连接
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 47%
 
 | 版本 | 文章链接 |
 |---------|-----------------------------|
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | 本文 |
@@ -43,21 +43,21 @@ ht-degree: 47%
 - 负责定义表单工作流的&#x200B;**业务分析师**
 - 负责设计表单提交流程的&#x200B;**技术架构师**
 
-## 为在通用编辑器中创建的Forms提交操作
+## 在通用编辑器中创建的表单的提交操作
 
-在通用编辑器中创作的[自适应Forms](/help/edge/docs/forms/universal-editor/create-forms.md)支持以下提交操作：
+[在通用编辑器中创作的自适应表单](/help/edge/docs/forms/universal-editor/create-forms.md)支持以下提交操作：
 
 - [发送电子邮件](/help/forms/configure-submit-action-send-email.md)
-- [调用Power Automate流](/help/forms/forms-microsoft-power-automate-integration.md)
+- [调用 Power Automate 流](/help/forms/forms-microsoft-power-automate-integration.md)
 - [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-- [调用Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+- [调用 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 - [使用表单数据模型（FDM）提交](/help/forms/integrate-adaptive-form-with-fdm.md)
-- [提交至 Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-- [提交到REST端点](/help/forms/configure-submit-action-restpoint.md)
+- [提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [提交到 REST 端点](/help/forms/configure-submit-action-restpoint.md)
 - [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
 - [调用 AEM 工作流](/help/forms/configure-submit-action-workflow.md)
 - [提交至 Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-- [提交到Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+- [提交到 Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 - [提交到电子表格](/help/forms/forms-submission-service.md)
 
 <!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
@@ -65,10 +65,10 @@ ht-degree: 47%
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
 
-您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
+您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡，配置在通用编辑器中创建的表单的提交操作。
 
-**如何为在Universal Editor中创作的Forms配置提交操作？**
-您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡为在Universal Editor中创建的表单配置提交操作。
+**如何配置通用编辑器中创作的表单的提交操作？**
+您可以使用**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡，配置在通用编辑器中创建的表单的提交操作。
 
 ![表单属性图标](/help/forms/assets/ue-form-properties-icon.png)
 
@@ -76,5 +76,5 @@ ht-degree: 47%
 
 >[!NOTE]
 >
-> - 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
-> - 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+> - 如果您在通用编辑器界面中没有看到&#x200B;**编辑表单属性**&#x200B;图标，请在 Extension Manager 中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+> - 请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用或禁用扩展。

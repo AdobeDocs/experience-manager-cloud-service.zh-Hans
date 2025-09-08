@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service 架构简介"
 >abstract="在此选项卡中，您可以查看 AEM as a Cloud Service 的新架构并了解更改。AEM 产生了一种动态架构，其中具有可变数量的图像，因此花时间了解云架构很重要。"
->additional-url="https://video.tv.adobe.com/v/346179?captions=chi_hans" text="架构概述"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="架构概述"
 
 Adobe Experience Manager (AEM) as a Cloud Service 提供一组可组合的服务，以创建和管理极具影响力的体验。
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service 有四种类型的[环境](/help/implementing/cloud-manag
 
 * 暂存环境：
 
-   * 暂存环境通常以1:1关系耦合到生产环境。
+   * 暂存环境一般以 1:1 的关系与生产环境相连接。
    * 暂存环境主要旨在执行自动化测试后再将对应用程序作出的更改推送到生产环境。
       * 这与 Adobe 在维护更新中发起的更改或由您的代码部署发起的更改无关。
       * 在代码部署的情况下，您还可执行手动测试。
@@ -239,4 +239,4 @@ Cloud Manager 通过使用滚动更新模式更新所有服务节点，完全自
 * Edge Delivery Services：
    * [AEM as a Cloud Service 概述 - 带 Edge Delivery Services](/help/edge/overview.md)
    * [使用 Edge Delivery Services](/help/edge/overview.md)
-   * [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hans)
+   * [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
