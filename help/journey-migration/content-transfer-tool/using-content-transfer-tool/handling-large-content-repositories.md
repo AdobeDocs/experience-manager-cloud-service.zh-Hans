@@ -4,10 +4,10 @@ description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 8%
+source-wordcount: '1842'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 >id="aemcloud_ctt_precopy"
 >title="处理大型内容存储库"
 >abstract="为了显著加快将内容移至 AEM as a Cloud Service 的内容转移活动的提取和引入阶段，内容转移工具（CTT）可使用 AzCopy 作为可选的复制前步骤。配置此前置步骤后，在提取阶段，AzCopy 将 blob 从 Amazon S3 或 Azure Blob 存储复制到迁移集 blob 存储。在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hans#setting-up-pre-copy-step" text="AzCopy 作为复制前步骤的快速入门"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="AzCopy 作为复制前步骤的快速入门"
 
 使用内容传输工具(CTT)复制多个Blob可能需要几天时间。
 为了加快内容传输活动的提取和摄取阶段以将内容移动到AEM as a Cloud Service，CTT可以使用[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)作为可选的预复制步骤。 当源AEM实例配置为使用Amazon S3、Azure Blob Storage数据存储或文件数据存储时，可以使用此预复制步骤。 预复制步骤对首次完全提取和摄取最有效。 但是，不建议对后续增补使用预复制（如果增补大小小于200 GB），因为这可能会增加整个过程所需的时间。 配置此预步骤后，在提取阶段，AzCopy会将Blob从Amazon S3、Azure Blob存储或文件数据存储中复制到迁移集Blob存储中。 在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。
@@ -32,21 +32,21 @@ ht-degree: 8%
 
 * Source AEM版本必须为6.3 - 6.5。
 
-* Source AEM的数据存储配置为使用Amazon S3或Azure Blob Storage。 有关更多详细信息，请参阅[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hans)中配置节点存储和数据存储。
+* Source AEM的数据存储配置为使用Amazon S3或Azure Blob Storage。 有关更多详细信息，请参阅[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html)中配置节点存储和数据存储。
 
 * 每个迁移集都会复制整个数据存储，因此只应使用单个迁移集。
 
 * 您需要访问权限才能在运行源AEM实例的实例（或VM）上安装[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)。
 
-* 在过去七天内，在源上运行了数据存储垃圾收集。 有关更多详细信息，请参阅[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hans#data-store-garbage-collection)。
+* 在过去七天内，在源上运行了数据存储垃圾收集。 有关更多详细信息，请参阅[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)。
 
-### 如果源AEM实例配置为使用Amazon S3或Azure Blob存储数据存储，则其他注意事项 {#additional-considerations-amazons3-azure}
+### 如果将源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储，则还需要考虑其他事项 {#additional-considerations-amazons3-azure}
 
 * 从Amazon S3和Azure Blob Storage传输数据会产生成本。 传输成本与现有存储容器中的数据总量相关(无论是否在AEM中引用)。 有关更多详细信息，请参阅[Amazon S3](https://aws.amazon.com/s3/pricing/)和[Azure Blob存储](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)。
 
 * 您既需要现有源Amazon S3存储段的访问密钥和密钥对，也需要现有源Azure Blob存储容器的SAS URI（只读访问正常）。
 
-### 如果将源AEM实例配置为使用文件数据存储，则应考虑其他事项 {#additional-considerations-aem-instance-filedatastore}
+### 如果将源AEM实例配置为使用文件数据存储，则其他注意事项 {#additional-considerations-aem-instance-filedatastore}
 
 * 本地系统的可用空间必须严格大于源数据存储大小的1/256。 例如，如果数据存储的大小为3 TB，则源的`crx-quickstart/cloud-migration`文件夹中必须存在大于11.72 GB的可用空间，AzCopy才能正常工作。 源系统至少应有1 GB的可用空间。 在Linux®实例上使用`df -h`命令，在Windows实例上使用dir命令可获得可用空间。
 
@@ -162,7 +162,7 @@ azCopyPath属性必须包含源AEM实例上安装azCopy命令行工具的位置�
 
 >[!NOTE]
 >如果未正确配置AzCopy，您将在日志中看到以下消息：
->`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
 
 1. 从CTT UI开始提取。 有关更多详细信息，请参阅[内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)和[提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
@@ -195,6 +195,9 @@ AzCopy在后续运行时会自动跳过在错误之前复制的任何Blob，并�
 
 >[!TIP]
 >现在，提取成功后，可以将摄取计划为立即自动开始。 有关详细信息，请参阅[将内容摄取到Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)。
+
+>[!TIP]
+>如果使用AzCopy的Blob传输进行了一段时间，但仅对某些Blob传输失败，则重新运行提取，并取消选中“预复制”和“覆盖暂存容器”选项。 这将仅迁移以前未传输的剩余Blob。
 
 #### 用于文件数据存储 {#file-data-store-extract}
 
