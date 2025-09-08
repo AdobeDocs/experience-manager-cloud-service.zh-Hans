@@ -1,12 +1,12 @@
 ---
 title: Content Hub 的新增功能
-description: 详细了解最近推出的一些Content Hub功能
+description: 了解最近推出的一些 Content Hub 功能的详细信息
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 66%
+ht-degree: 95%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 66%
 
 Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在为组织及其业务合作伙伴提供对品牌内容的普及化访问。它侧重于大规模分发资产以进行激活，并创建品牌内容变体，以提高营销敏捷度。
 
-以下视频演示了Content Hub的关键功能：
+以下视频演示了 Content Hub 的主要功能：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
@@ -24,17 +24,17 @@ Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨�
 
 ## 发布日期 {#release-date}
 
-Content Hub功能版(2025.8.0)的发布日期为2025年8月28日(与AEM as a Cloud Service版本的发布日期相同)。 下一个功能版本(2025.9.0)计划于2025年9月25日发布。
+Content Hub功能版(2025.8.0)的发布日期为2025年8月28日(与AEM as a Cloud Service版本的发布日期相同)。 下一个功能版本 (2025.9.0) 计划于 2025 年 9 月 25 日发布。
 
 ## 8月版功能 {#august-release-features}
 
 **通过筛选器属性进行批量搜索**
 
-Content Hub现在可帮助您更快地发现所需的资源。 借助新的批量搜索功能，您可以为任何筛选器属性输入多个值(以分隔符（例如，多个SKU ID）分隔)，并使用单个搜索即时检索所有匹配的资产。
+Content Hub 现在可以更快地发现您需要的资产。使用新的批量搜索功能，您可以为任何过滤器属性以分隔符分隔的方式输入多个值（例如多个 SKU ID），只通过一个搜索就能立即检索所有匹配的资产。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
-## 7月版功能 {#july-release-features}
+## 7 月发行版本功能 {#july-release-features}
 
 **增强了 Content Hub 中的品牌化灵活性**
 
@@ -54,9 +54,9 @@ Content Hub现在可帮助您更快地发现所需的资源。 借助新的批�
 
 现在，Content Hub 在过滤器中包含一个&#x200B;**显示全部**&#x200B;选项，允许用户查看所有可用的方面以及资产数量，而当前限制只能查看最多十个方面。增强了每个过滤器中的搜索和排序功能，使用户可以更轻松、更有效地发现和管理资产。
 
-## 6月版功能 {#june-release-features}
+## 6 月发行版本功能 {#june-release-features}
 
-### 收藏集管理 {#collections-governance}
+### 收藏集治理 {#collections-governance}
 
 Content Hub 现在允许您在创建过程中控制对收藏集的访问权限，确保只有授权用户才能查看或管理分组资产。它确保了安全性的提升、协作的优化、资产管理的有序化以及治理的简化。
 
@@ -64,23 +64,23 @@ Content Hub 现在允许您在创建过程中控制对收藏集的访问权限�
 
 [!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
-## 5月发布功能 {#may-release-features}
+## 5 月发行版本功能 {#may-release-features}
 
-Content Hub 5月版本包括以下功能：
+Content Hub 5 月发行版本包含以下功能：
 
 * [基于属性的访问控制](#attribute-based-access-control)
 
-* [用户界面品牌化](#ui-branding)
+* [UI 品牌化](#ui-branding)
 
 * [公共链接共享](#public-link-sharing)
 
-* [以ZIP格式下载多个资产](#download-multiple-assets-as-zip)
+* [将多个资产下载为一个 ZIP 文件](#download-multiple-assets-as-zip)
 
-* [Content Hub中的Dynamic Media呈现版本](#dynamic-media-renditions)
+* [Content Hub 中的 Dynamic Media 演绎版](#dynamic-media-renditions)
 
-### 基于属性的访问控制(ABAC) {#attribute-based-access-control}
+### 基于属性的访问控制 (ABAC) {#attribute-based-access-control}
 
-Content Hub 现在允许您应用基于规则的限制来访问资产。资源权限可确保治理，还可确保用户只能访问相关的资源。
+Content Hub 现在允许您应用基于规则的限制来访问资产。资产权限可确保治理，并确保用户只能访问相关资产。
 
 资产限制规则基于元数据定义。当资产的元数据满足规则中设定的条件时，该资产将对相应的用户组可见。
 
@@ -94,7 +94,7 @@ Content Hub 现在允许您应用基于规则的限制来访问资产。资源�
 
 [!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
-### 用户界面品牌化 {#ui-branding}
+### UI 品牌化 {#ui-branding}
 
 Content Hub 现在允许管理员使用品牌特定的元素来自定义用户界面，这些元素包括横幅图像、横幅标题和正文，以及主色和辅色。这些改进有助于确保品牌一致性，简化用户引导流程，并建立信任。
 
@@ -110,13 +110,13 @@ Content Hub 现在支持生成可共享的链接，允许外部用户无需应�
 
 [!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
-### 以ZIP格式下载多个资产 {#download-multiple-assets-as-zip}
+### 将多个资产下载为一个 ZIP 文件 {#download-multiple-assets-as-zip}
 
 Content Hub 现在还允许您将所选资产及其演绎版下载为 ZIP 文件，而非单独的文件，从而简化文件管理。
 
 [!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
-### Content Hub中的Dynamic Media呈现版本 {#dynamic-media-renditions}
+### Content Hub 中的 Dynamic Media 演绎版 {#dynamic-media-renditions}
 
 您可以直接在 Content Hub 用户界面中访问所有 Dynamic Media 预设演绎版和智能裁剪，并进行下载。
 
