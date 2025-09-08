@@ -162,7 +162,7 @@ azCopyPath属性必须包含源AEM实例上安装azCopy命令行工具的位置�
 
 >[!NOTE]
 >如果未正确配置AzCopy，您将在日志中看到以下消息：
->>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
+>&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
 
 1. 从CTT UI开始提取。 有关更多详细信息，请参阅[内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)和[提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
