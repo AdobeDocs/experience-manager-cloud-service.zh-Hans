@@ -32,7 +32,7 @@ Content Hub功能版(2025.8.0)的发布日期为2025年8月28日(与AEM as a Clo
 
 Content Hub 现在可以更快地发现您需要的资产。使用新的批量搜索功能，您可以为任何过滤器属性以分隔符分隔的方式输入多个值（例如多个 SKU ID），只通过一个搜索就能立即检索所有匹配的资产。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## 7 月发行版本功能 {#july-release-features}
 
