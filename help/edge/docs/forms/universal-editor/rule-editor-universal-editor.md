@@ -1,21 +1,21 @@
 ---
-title: 通用编辑器中的动态表单规则编辑器
+title: Edge Delivery Services Forms的规则编辑器
 description: 使用通用编辑器中的规则编辑器创建动态、智能的表单。无需编码即可添加条件逻辑、计算和交互式行为。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 93%
+source-wordcount: '2780'
+ht-degree: 92%
 
 ---
 
 
-# 通用编辑器中的动态表单规则编辑器
+# Edge Delivery Services Forms的规则编辑器
 
-规则编辑器允许作者将静态表单转变为响应式的智能的体验——无需编写代码。您可以有条件地显示字段、执行计算、验证数据、引导用户完成流程、集成随输入而调整的业务逻辑。
+规则编辑器允许作者将静态表单转换为响应式智能体验，而无需编写代码。 您可以有条件地显示字段、执行计算、验证数据、引导用户完成流程、集成随输入而调整的业务逻辑。
 
 ## 您将了解的内容
 
@@ -308,7 +308,7 @@ ht-degree: 93%
 
 1. **打开通用编辑器**：
    - 导航到 AEM Sites 控制台，选择您的页面，点击&#x200B;**编辑**
-   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按以下顺序添加表单组件**：
    - 标题 (H2)：“税费计算表”
@@ -727,7 +727,7 @@ UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自定义函
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)：用于更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)：用于更广泛的上下文
 - [扩展管理器指南](/help/implementing/developing/extending/extension-manager.md)：用于启用附加功能
 - [Edge Delivery Services 表单](/help/edge/docs/forms/overview.md)：提供全面的表单开发指导
 
