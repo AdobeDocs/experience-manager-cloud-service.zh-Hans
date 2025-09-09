@@ -35,7 +35,7 @@ ht-degree: 5%
 >[!IMPORTANT]
 >
 >您可以测试任何修饰符，但通常无法通过实验API获得该修饰符。 例如，`</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->>单击此处了解有关如何使用[实验API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修饰符完整列表](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的更多信息。
+>&#x200B;>单击此处了解有关如何使用[实验API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修饰符完整列表](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的更多信息。
 
 具有OpenAPI功能的Dynamic Media还支持长格式视频。 视频可支持最大 50 GB，最长 2 小时。
 
