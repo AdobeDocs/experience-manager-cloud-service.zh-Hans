@@ -3,9 +3,9 @@ title: 传递 API
 description: 了解如何使用投放API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -32,9 +32,18 @@ ht-degree: 5%
 | 视频资源的[播放器容器](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | 返回视频资产的播放器容器。 您可以将播放器嵌入到iframe HTML元素中并播放视频。 |
 | [以所选输出格式显示的播放清单](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | 以所选输出格式返回指定视频资源的播放清单文件。 您必须构建一个自定义播放器，该播放器能够通过HLS或DASH协议进行自适应流式传输，以便能够拉取播放清单文件并播放视频。 |
 
+>[!IMPORTANT]
+>
+>您可以测试任何修饰符，但通常无法通过实验API获得该修饰符。 例如，`</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>>单击此处了解有关如何使用[实验API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修饰符完整列表](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的更多信息。
+
 具有OpenAPI功能的Dynamic Media还支持长格式视频。 视频可支持最大 50 GB，最长 2 小时。
 
 有关可用的Dynamic Media产品及其功能的信息，请参阅[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+
+>[!NOTE]
+>
+>DM Prime客户可以使用基本的图像修饰符，包括旋转、裁切、翻转、高度、宽度和质量。 智能成像不支持DM Prime客户使用AVIF。
 
 ## 投放API端点 {#delivery-apis-endpoint}
 
@@ -64,7 +73,7 @@ headers: {
     }
 ```
 
-要调用交付API，需要`Authorization`详细信息中的IMS令牌以交付受限制的资产。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以生成IMS令牌并在投放API请求标头中正确使用它。
+要调用交付API，需要`Authorization`详细信息中的IMS令牌以交付受限制的资产。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以生成IMS令牌并在投放API请求标头中正确使用它。
 
 
 要查看请求示例、响应示例和响应代码，请参阅[交付API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)。

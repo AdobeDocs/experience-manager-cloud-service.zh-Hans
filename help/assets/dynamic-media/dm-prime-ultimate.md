@@ -3,9 +3,9 @@ title: Dynamic Media Prime 和 Ultimate
 description: 详细了解Dynamic Media Prime和Ultimate、它们的好处以及它们之间的差异。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '421'
 ht-degree: 12%
 
 ---
@@ -30,6 +30,10 @@ Dynamic Media Prime的一些其他主要优势包括：
 * Web优化图像交付
 * 自适应视频流
 
+>[!NOTE]
+>
+>DM Prime客户可以使用基本的图像修饰符，包括旋转、裁切、翻转、高度、宽度和质量。 智能成像不支持DM Prime客户使用AVIF。
+
 ### 先决条件 {#pre-requisites-dm-prime}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
@@ -50,8 +54,8 @@ Dynamic Media Ultimate是Experience Manager Assets的激活服务，包括[具�
 * AEM as a Cloud Service中的[Dynamic Media解决方案](/help/assets/dynamic-media/dynamic-media.md)，其中还包括以下关键功能：
 
    * [Dynamic Media 模板](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [模板基础知识](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [可视化配置](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [模板基础知识](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [可视化配置](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 先决条件 {#pre-requisites-dm-ultimate}
 
