@@ -95,7 +95,7 @@ ht-degree: 96%
 `plugins` 定义了哪个插件负责保留组件。常用的插件有：
 
 * `aem`AEM as a Cloud Service的[。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5.[和](https://experienceleague.adobe.com/en/docs/experience-manager-65)AEM 6.5 LTS[的](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
+* `aem65`AEM 6.5.[和](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)AEM 6.5 LTS[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts)
 * 使用AEM Sites为Edge Delivery Services创作`xwalk`的[。](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` 或 `cf` {#page-cf}
