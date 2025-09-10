@@ -1,18 +1,18 @@
 ---
-title: 通用编辑器2025.09.04发行说明
-description: 这些是通用编辑器2025.09.04版的发行说明。
+title: 通用编辑器 2025.09.04 发行说明
+description: 这些是通用编辑器 2025.09.04 版本的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
+source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 67%
+source-wordcount: '215'
+ht-degree: 83%
 
 ---
 
 
-# 通用编辑器2025.09.04发行说明 {#release-notes}
+# 通用编辑器 2025.09.04 发行说明 {#release-notes}
 
 这些是 2025 年 9 月 4 日发布的通用编辑器的发行说明。
 
@@ -22,14 +22,10 @@ ht-degree: 67%
 
 ## 新增功能 {#what-is-new}
 
-* [早期采用者可以复制并粘贴](#copy-paste)
-
-### 还原/重做 {#undo-redo}
-
-通用编辑器现已支持内容创作者使用撤销与重做功能。
-
-* 此功能涵盖上下文中的编辑操作、通过属性面板进行的修改，以及区块的新增（或复制）、移动与删除。
-* 撤销与重做功能仅限于当前浏览器会话内使用。
+* 复制粘贴功能现在可供[早期采用者](#copy-paste)使用
+* [撤消和重做](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)现在可供内容作者使用。
+   * 可以执行撤消和重做以在上下文中完成的编辑、通过“属性”面板完成的编辑，以及添加、复制、移动和删除块。
+   * 撤销与重做功能仅限于当前浏览器会话内使用。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -41,14 +37,9 @@ ht-degree: 67%
 
 ### 复制/粘贴 {#copy-paste}
 
-内容作者现在可以在同一页面中复制和粘贴组件。
+内容作者现在可以在同一页面内复制和粘贴组件。
 
 ## 其他改进 {#other-improvements}
 
-* 编辑器工具栏的样式已更新，以更好地与即将推出的新RTE保持一致。
-* 已恢复资产选取器对话框中的筛选器。
-
-## 弃用 {#deprecations}
-
-* `text-input` 和 `text-area` 组件已在[发行版本 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md) 中正式弃用。
-   * 在 `model-definition.json` 中，请使用文本组件为属性面板创建文本输入字段。
+* 更新了编辑器工具栏的样式，将更好地与即将推出的新 RTE 保持一致。
+* 恢复了资产选取器对话框中的过滤器。

@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 27%
+source-wordcount: '1854'
+ht-degree: 23%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### Experience Manager {#experience-manager}
 
-选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)之类的工具。
+选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之类的工具。
 
 ![“全局导航”按钮](assets/global-navigation.png)
 
@@ -89,15 +89,9 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ![组织指示器](assets/organization.png)
 
-#### 解决方案 {#solutions}
+#### 帮助中心 {#help}
 
-点按或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
-
-![解决方案切换器](assets/solutions.png)
-
-#### 帮助 {#help}
-
-可使用帮助图标快速访问学习和支持资源。
+通过帮助中心图标，可快速访问学习和支持资源。
 
 ![帮助](assets/help.png)
 
@@ -107,9 +101,15 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ![通知](assets/notifications.png)
 
-#### 用户属性 {#user-properties}
+#### 应用程序 {#solutions}
 
-选择代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
+通过点按或单击应用程序切换器，可快速跳转到其他Experience Cloud解决方案。
+
+![应用程序切换器](assets/solutions.png)
+
+#### 帐户 {#user-properties}
+
+选择代表您的用户的图标以访问您的帐户设置。 如果您尚未配置用户图片，系统会随机分配一个图标。
 
 ![用户属性](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 >
 >要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器](/help/implementing/universal-editor/getting-started.md)。
 
+**快速链接**&#x200B;部分为您提供帮助资源，**最近访问**&#x200B;部分为您最近使用通用编辑器打开的页面提供链接。
+
 #### 位置栏 {#location-bar}
 
 位置栏为您显示正在编辑的页面的位置。选择可输入另一个要编辑的页面的地址。
@@ -149,21 +151,32 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 >
 >要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器](/help/implementing/universal-editor/getting-started.md)。
 
-#### 身份验证标头设置 {#authentication-settings}
+#### “撤消”和“重做” {#undo-redo}
 
-如果您需要[设置自定义身份验证标头以进行本地开发](/help/implementing/universal-editor/developer-overview.md#auth-header)，请选择身份验证标头设置图标。
+选择“撤消”或“重做”按钮以撤消或重做编辑器中上一次的编辑。 有关详细信息，请参阅文档[使用通用编辑器创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)。
+
+![撤消图标](assets/undo.png)
+![重做图标](assets/redo.png)
+
+>[!TIP]
+>
+>使用热键`Command-Z`或`Shift-Command-Z`分别撤消或重做。
+
+#### 身份验证标头 {#authentication-settings}
+
+如果需要[设置自定义身份验证标头以用于本地开发目的，请选择身份验证标头图标](/help/implementing/universal-editor/developer-overview.md#auth-header)。
 
 ![身份验证标头设置按钮](assets/authentication-header-settings.png)
 
-#### 模拟器设置 {#emulator}
+#### 响应式模式 {#emulator}
 
-选择模拟图标以定义通用编辑器呈现页面的方式。
+选择响应模式图标以定义通用编辑器呈现页面的方式。
 
-![“模拟器”图标](assets/emulator.png)
+![响应模式图标](assets/emulator.png)
 
-点按或单击模拟图标将显示选项。
+点按或单击响应模式图标会显示选项。
 
-![模拟选项](assets/emulation-options.png)
+![响应模式选项](assets/emulation-options.png)
 
 默认情况下，编辑器会在桌面布局中打开，其中高度和宽度由浏览器自动定义。
 
@@ -173,7 +186,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 * 定义宽度和高度
 * 更改方向
 
-#### 预览模式 {#preview-mode}
+#### 预览 {#preview-mode}
 
 在预览模式中，编辑器中呈现的页面与在您发布的服务上看到的一样。这允许内容作者通过单击链接等来导航内容。
 
@@ -199,7 +212,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 20%
+source-wordcount: '2319'
+ht-degree: 21%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 20%
 
 蓝色细轮廓变为蓝色粗轮廓以指示选择，并且出现光标。 进行更改，然后按Enter/Return或选择文本框外部以保存更改。
 
-当您选择文本组件时，其详细信息将显示在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中。 您还可以在面板中编辑文本。
+选择文本组件后，其详细信息将显示在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中。 您还可以在面板中编辑文本。
 
 ![在属性面板中编辑文本](assets/ue-editing-text-component-rail.png)
 
@@ -116,7 +116,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->通用编辑器[根据其模型验证内容片段字段](/help/assets/content-fragments/content-fragments-models.md#validation)，允许您实施数据完整性规则，如正则表达式模式和唯一性约束。
+>通用编辑器[根据模型验证内容片段字段](/help/assets/content-fragments/content-fragments-models.md#validation)，允许您强制执行数据完整性规则，例如正则表达式模式和唯一性约束。
 >
 >这可确保您的内容在发布之前满足特定的业务要求。
 
@@ -172,13 +172,27 @@ ht-degree: 20%
 
    ![重新排序组件](assets/ue-reordering-components.png)
 
-1. 拖动的组件在内容树中变为灰色，而您的插入点以蓝线表示。 释放组件以将其放置在新位置。
+1. 拖动的组件在内容树中呈灰显状态，而插入点以蓝线表示。 释放组件以将其放置在新位置。
 
 组件在内容树和编辑器中都会重新排序。
 
 >[!NOTE]
 >
 >如果目标容器[组件筛选器](/help/implementing/universal-editor/filtering.md)允许所选组件，则组件只能在容器之间移动。
+
+### “撤消”和“重做” {#undo-redo}
+
+选择“撤消”或“重做”按钮以撤消或重做编辑器中上一次的编辑。
+
+![撤消图标](assets/undo.png)
+![重做图标](assets/redo.png)
+
+* 可以执行撤消和重做以在上下文中完成的编辑、通过“属性”面板完成的编辑，以及添加、复制、移动和删除块。
+* 撤销与重做功能仅限于当前浏览器会话内使用。
+
+>[!TIP]
+>
+>使用热键`Command-Z`或`Shift-Command-Z`分别撤消或重做。
 
 ## 预览内容 {#previewing-content}
 
@@ -321,7 +335,7 @@ ht-degree: 20%
 
 * [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 
-要了解有关通用编辑器的技术详细信息的更多信息，请参阅这些开发人员文档。
+要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
 * [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
