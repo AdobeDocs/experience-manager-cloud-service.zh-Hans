@@ -6,9 +6,9 @@ keywords: 表单中的 reCAPTCHA，在通用编辑器中使用 reCAPTCHA，在�
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1290'
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1281'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,6 @@ Google reCAPTCHA 通过区分人类用户和自动机器人来帮助保护表单
 
 - AEM as a Cloud Service 创作访问权限
 - 通用编辑器访问权限和表单编辑权限
-- 注册 reCAPTCHA 功能早期访问计划
 
 ### 技术要求
 

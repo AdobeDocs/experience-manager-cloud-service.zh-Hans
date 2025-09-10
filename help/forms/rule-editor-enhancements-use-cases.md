@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 规则编辑器增强功能和用例
 
-<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
+<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
 
 本文介绍了自适应Forms中规则编辑器的最新增强功能。 这些更新旨在帮助您更轻松地定义表单行为，而无需编写自定义代码，并创建更动态、响应更快且个性化的表单体验。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 对规则编辑器的增强功能也适用于Edge Delivery Services Forms。
+> 增强功能还适用于Edge Delivery Services Forms[的](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)规则编辑器。
 
 现在，让我们通过特定用例详细探索每种方法，以帮助您了解如何使用这些功能为用户提供个性化体验
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 在规则中支持动态变量
 
-增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**&#x200B;函数在表单的整个生命周期内设置和检索这些变量。
+增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**函数在表单的整个生命周期内设置和检索这些变量。
 这些变量包括：
 
 * 未随表单数据一起提交。
@@ -118,13 +118,13 @@ ht-degree: 0%
 
 ![获取变量值](/help/forms/assets/getvalue.png)
 
-随着用户更改国家/地区或数量，**总装运成本**&#x200B;字段会动态更新以反映产品成本和装运费用。
+随着用户更改国家/地区或数量，**总装运成本**字段会动态更新以反映产品成本和装运费用。
 ![输出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您还可以在When条件中添加&#x200B;**Get Variable value**&#x200B;函数。
-> &#x200B;> ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
+> 您还可以在When条件中添加&#x200B;**Get Variable value**函数。
+> > ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
 
 这种方法可以实现动态的实时计算，而无需向表单中添加额外的字段，保持结构干净和用户友好。
 

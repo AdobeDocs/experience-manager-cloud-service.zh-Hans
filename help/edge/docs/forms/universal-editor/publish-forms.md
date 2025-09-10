@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: 发布表单，Edge Delivery Services，表单配置，CORS，引荐来源过滤器
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 1. **访问您的表单**：在通用编辑器中打开自适应表单
 2. **开始发布**：点击工具栏中的&#x200B;**发布**&#x200B;图标
 
-   ![单击发布](/help/forms/assets/publish-icon-eds-form.png)
+   ![单击发布](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ ht-degree: 100%
 
 1. **审阅发布资产**：系统显示所有正在发布的资产，包括您的表单
 
-   ![在单击发布上](/help/forms/assets/on-click-publish.png)
+   ![在单击发布上](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **确认发布**：点击&#x200B;**发布**&#x200B;以继续
 3. **验证成功**：查看确认消息
 
-   ![发布成功](/help/forms/assets/publish-success.png)
+   ![发布成功](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 **检查状态**：再次点击&#x200B;**发布**&#x200B;图标，查看当前状态
 
-![发布状态](/help/forms/assets/publish-status.png)
+![发布状态](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **验证检查点：**
 
@@ -91,7 +91,7 @@ ht-degree: 100%
 2. 点击右上角的三圆点菜单（⋯）
 3. 选择&#x200B;**取消发布**
 
-![取消发布表单](/help/forms/assets/unpublish--form.png)
+![取消发布表单](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 

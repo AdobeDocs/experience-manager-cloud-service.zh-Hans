@@ -4,513 +4,641 @@ description: 为 EDS Form 创建自定义组件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+workflow-type: tm+mt
+source-wordcount: '2120'
+ht-degree: 4%
 
 ---
 
-# 在“所见即所得创作”中创建自定义组件
+
+# 在自适应表单块中创建自定义表单组件
 
 Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构建定制的表单组件。这些自定义组件可以无缝集成到所见即所得的创作体验中，使表单作者能够在表单编辑器中轻松添加、配置和管理这些组件。通过自定义组件，作者可以增强功能，同时确保流畅、直观的创作过程。
 
 本文档概述了通过设置原生 HTML 表单组件的样式来创建自定义组件的步骤，以改善用户体验并增加表单的视觉吸引力。
 
-## 先决条件
+## 架构概述
 
-在开始创建自定义组件之前，您应该：
+Forms块的自定义组件遵循&#x200B;**MVC (Model-View-Controller)**&#x200B;架构模式：
 
-- 掌握 [原生 HTML 组件](/help/edge/docs/forms/form-components.md)的基本知识。
-- 了解如何 [使用 CSS 选择器根据字段类型设置表单字段的样式](/help/edge/docs/forms/style-theme-forms.md)
+### 模型
 
-## 创建自定义组件
+- 由JSON架构为每个`field/component`定义。
 
-在通用编辑器中添加自定义组件意味着表单作者可以在设计表单时使用新组件。这包括注册组件、定义组件属性以及配置组件的使用位置。创建自定义组件的步骤：
+- 可创作属性在相应的JSON文件中指定（请参阅块/表单/模型/表单组件）。
 
-[1. 为新的自定义组件添加结构](#1-adding-structure-for-new-custom-component)
-[2.定义自定义组件的属性以供创作](#2-defining-the-properties-of-your-custom-component-for-authoring)
-[3.使您的自定义组件在所见即所得的组件列表中可见](#3-making-your-custom-component-visible-in-the-wysiwyg-component-list)
-[4.注册您的自定义组件](#4-registering-your-custom-component)
-[5.添加自定义组件的运行时行为](#5-adding-the-runtime-behaviour-for-your-custom-component)
+- 这些属性可供表单生成器中的作者使用，并作为字段定义(fd)的一部分传递到组件。
 
-现在我们以创建一个名为 **Range** 的新自定义组件为例。Range 组件外表为直线形式，显示最小值、最大值或选定值等数值。
+### 查看
 
-![范围组件的可视化示意图，展示了具有最小值和最大值的滑块以及选定值指示器](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+- 表单字段类型中介绍了每种字段类型的HTML结构。
 
-本文结束时，您将学会从头开始创建自定义组件。
+- 这是组件的基本结构，可以对其进行扩展或修改。
 
-### &#x200B;1. 为新的自定义组件添加结构
+- 表单字段类型中记录了每个OOTB组件的基本HTML结构。
 
-自定义组件在使用之前必须先注册，以便通用编辑器将其识别为可用选项。这是通过组件定义实现的，组件定义包括唯一标识符、默认属性和组件的结构。执行以下步骤，使自定义组件可用于表单创作：
+### 控制器/组件逻辑
 
-1. **添加新文件夹和文件**
+- 在JavaScript中以OOTB（现成）或自定义组件的形式实施。   — 位于自定义组件的`blocks/form/components`中。
 
-   在您的 AEM 项目中为新的自定义组件添加新文件夹和文件。
+## OOTB组件
 
-   1. 打开 AEM 项目并导航到 `../blocks/form/components/`。
-   1. 在 `../blocks/form/components/<component_name>` 为自定义组件添加一个新文件夹。在这个例子中，我们创建一个名为 `range` 的文件夹。
-   1. 导航到在 `../blocks/form/components/<component_name>` 新创建的文件夹。例如，导航到 `../blocks/form/components/range`，并添加以下文件：
+**OOTB（现成）**&#x200B;组件为自定义开发奠定了基础：
 
-      - `/blocks/form/components/range/_range.json`：包含自定义组件的定义。
-      - `../blocks/form/components/range/range.css`：定义自定义组件的样式。
-      - `../blocks/form/components/range/range.js`：在运行时定制自定义组件。
+- OOTB组件位于`blocks/form/models/form-components`中。
 
-        ![添加自定义组件以供创作](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
+- 每个OOTB组件都有一个定义其可创作属性（如` _text-input.json`，`_drop-down.json`）的JSON文件。
 
-        >[!NOTE]
-        >
-        > 确保 json 文件的文件名包含下划线（_）作为前缀。
+- 这些属性在表单生成器中可供作者使用，并作为字段定义(fd)的一部分传递到组件。
 
-1. 导航到 `/blocks/form/components/range/_range.json` 文件，并添加自定义组件的组件定义。
+- 表单字段类型中记录了每个OOTB组件的基本HTML结构。
 
-1. **添加组件定义**
+扩展现有OOTB组件允许您重复使用其基本结构、行为和属性，同时对其进行自定义以满足您的需求。
 
-   要添加定义，需要在 `_range.json` 文件中添加以下字段：
+- 自定义组件必须从预定义的OOTB组件集进行扩展。
 
-   - **标题**：通用编辑器中显示的组件的标题。
-   - **ID**：组件的唯一标识符。
-   - **fieldType**：表单支持各种 **fieldType** 来捕获特定类型的用户输入。您可以在 Extra Byte 分区中找到[支持的 fieldType](#supported-fieldtypes)。
-   - **resourceType**：每个自定义组件都有一个基于其 fieldType 关联的资源类型。您可以在 Extra Byte 分区中找到[支持的 resourceType](#supported-resourcetype)。
-   - **jcr:title**：它类似于标题，但存储在组件的结构中。
-   - **fd:viewType**：表示自定义组件的名称。它是组件的唯一标识符。需要为组件创建自定义视图。
+- 系统会根据字段JSON中的`viewType`属性标识要扩展的OOTB组件。
 
-添加组件定义之后，`_range.json` 文件如下：
+- 系统维护允许的自定义组件变体的注册表。 只能使用此注册表中所列的变体，例如`customComponents[]`中的`mappings.js`。
 
-```javascript
-{
-  "definitions": [
-    {
-      "title": "Range",
-      "id": "range",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-            "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-            }
-          }
-        }
-      }
-    }
-  ]
-}
-```
+- 呈现表单时，系统会检查变量属性或`:type/fd:viewType`，如果它与注册的自定义组件匹配，则会从`blocks/form/components`文件夹加载相应的JS和CSS文件。
+
+- 自定义组件随后将应用于OOTB组件的基本HTML结构，允许您增强或覆盖其行为和外观。
+
+## 自定义组件的结构
+
+要创建自定义组件，您可以使用&#x200B;**基架CLI**&#x200B;设置组件所需的文件和文件夹，然后添加自定义组件的代码。
+
+- 自定义组件驻留在`blocks/form/components`文件夹中。
+
+- 每个自定义组件必须置于其自身的文件夹中，以组件命名，例如卡片。 在文件夹中，以下文件应为：
+
+   - **_cards.json** — 扩展OOTB组件的组件定义、定义其可创作属性（模型[]）和加载时内容结构（定义[]）的JSON文件。
+   - **cards.js** — 包含主逻辑的JavaScript文件。
+   - **卡片.css** — 可选，适用于样式。
+
+- 文件夹名称与JS/CSS文件必须匹配。
+
+### 重用和扩展自定义组件中的字段
+
+在自定义组件的JSON中定义字段时（适用于任何字段组、基本、验证、帮助等），请遵循以下可维护性和一致性最佳实践：
+
+- 通过引用现有的共享容器或字段定义（例如，`../form-common/_basic-input-placeholder-fields.json#/fields`、`../form-common/_basic- validation-fields.json#/fields`）重用标准/共享字段。 这可确保您继承所有标准选项而不复制它们。
+
+- 在容器中明确只添加新的或自定义字段。 这样可使您的架构保持干燥和专注。
+
+- 移除或避免复制已通过引用包含的字段。 仅定义组件的逻辑特有的字段。
+
+- 根据一致性和可维护性的需要，引用帮助容器和其他共享内容（例如`../form-common/_help-container.json`）。
+
+>[!TIP]
+>
+> - 此模式可让您在未来轻松更新或扩展逻辑，并确保自定义组件与表单系统的其他组件保持一致。
+> - 添加新共享容器或字段定义之前，请始终检查现有共享容器或字段定义。
+
+### 为自定义组件定义新属性
+
+- 如果您需要从作者中为自定义组件捕获新属性，可以通过在组件的JSON中的组件的`fields[]`数组中定义字段来实现此操作。
+
+- 自定义组件使用:type属性进行标识，该属性可在JSON文件中设置为`fd:viewType`（例如，`fd:viewType: cards`）。 这允许系统识别和加载正确的自定义组件，因此对于自定义组件是必需的
+
+- 在JSON定义中添加的任何新属性在字段定义中均可作为属性使用。 组件的JS逻辑中的`<propertyName>`
+
+## 自定义组件JavaScript API
+
+自定义组件JavaScript API定义了如何控制自定义表单组件的行为、外观和反应性。
+
+### 装饰功能
+
+**decorate**&#x200B;函数是自定义组件的入口点。 它会初始化组件，将其链接到其JSON定义，并允许您处理其HTML结构和行为。
 
 >[!NOTE]
 >
-> 在通用编辑器中添加块时，所有与表单相关的组件都遵循与 Sites 相同的方法。您可以参考[创建与通用编辑器配合使用的块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)文章以获取更多信息。
+> 自定义组件的JavaScript文件必须将默认函数导出为decorate：
 
-### &#x200B;2. 定义自定义组件的属性以供创作
+#### 函数签名：
 
-自定义组件包括一个组件模型，该模型指定了表单作者可以配置哪些属性。这些属性出现在通用编辑器的&#x200B;**属性**&#x200B;对话框中，允许作者调整标签、验证规则、样式和其他属性等设置。定义属性：
+```javascript
+export default function decorate(element, fieldJson, container, formId) {
+// element: The HTML structure of the OOTB component you are extending
+// fieldJson: The JSON field definition (all authorable properties)
+// container: The parent element (fieldset or form)
+// formId: The id of the form
+// ... your logic here ...
+}
+```
 
-1. 导航到 `/blocks/form/components/range/_range.json` 文件，并添加自定义组件的组件模型。
+它可以：
 
-1. **添加组件模型**
+- **修改元素**：添加事件侦听器、更新属性或插入其他标记。
 
-   要定义自定义组件的组件模型，您需要将相关字段添加到 `_range.json` 文件中。
+- **访问JSON属性**：使用`fd.properties.<propertyName>`读取JSON架构中定义的值并在组件逻辑中应用这些值。
 
-   1. **创建新的模型**
+## 订阅函数
 
-      - 在模型数组中，添加一个新对象并设置组件模型的 `id`，以匹配先前在组件定义中配置的 `fd:viewType` 属性。
-      - 在此对象内包含一个字段数组。
+**subscribe**&#x200B;函数使您的组件能够对字段值或自定义事件的更改做出反应。 这可确保组件与表单的数据模型保持同步，并可动态更新其UI。
 
-   2. **定义属性对话框的字段**
+### 函数签名：
 
-      - 字段数组中的每个对象都应为容器类型组件，这样它就会作为选项卡出现在&#x200B;**属性**&#x200B;对话框中。
-      - 某些字段可以参考 `models/form-common` 中提供的可重复使用属性。
+```JavaScript
+import { subscribe } from '../../rules/index.js';
 
-   3. **使用现有组件模型作为参考**
+export default function decorate(fieldDiv, fieldJson, container, formId) {
+// Access custom properties defined in the JSON
+const { initialText, finalText, time } = fieldJson?.properties;
+// ... setup logic ...
+subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
+// React to custom event (e.g., resetCardOption)
+// ... logic ...
+}, 'resetCardOption');
+});
+}
+```
 
-      - 您可以复制与您选择的 `fieldType` 相对应的现有组件模型的内容，并根据需要进行修改。例如，扩展 `number-input` 组件以创建 **Range** 组件，因此我们可以使用 `models/form-components/_number-input.json` 中的模型数组作为参考。
+它可以：
 
-   添加组件模型之后，`_range.json` 文件如下：
+- **注册回调**：调用&#x200B;**subscribe(element， formId， callback)**&#x200B;将您的回调注册为每当字段数据更改时运行。使用两个回调参数：
+   - **element**：表示字段的HTML元素。
+   - **fieldModel**：表示字段状态和事件API的对象。
+
+- **侦听更改或事件**：每当值更改或触发自定义事件时，使用`fieldModel.subscribe((event) => { ... }, 'eventName')`执行逻辑。 事件对象包含有关更改内容的详细信息。
+
+## 创建自定义组件
+
+在本节中，您将了解通过扩展OOTB单选按钮组件来创建&#x200B;**卡自定义组件**&#x200B;的过程。
+
+![卡自定义组件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+
+### 1.代码设置
+
+#### 1.1文件和文件夹
+
+第一步是设置自定义组件的必要文件，并将其连接到存储库中的代码。 此过程由&#x200B;**AEM Forms Scaffolder CLI**&#x200B;自动完成，这样可以更快地搭建基架并连接必要的文件。
+
+1. 打开终端并导航到表单项目的根目录。
+2. 运行以下命令：
+
+```bash
+npm install
+npm run create:custom-component
+```
+
+![基架CLI](/help/edge/docs/forms/universal-editor/assets/scaffolder-cli.png)
+
+它将：
+
+- **提示您为新组件命名**。 例如，在此例中，使用卡。
+- **要求您选择**&#x200B;基本组件（选择单选按钮组）
+
+这将创建所有必需的文件夹和文件，包括：
+
+```
+blocks/form/
+└── components/
+  └── cards/
+    ├── cards.js
+    └── cards.css
+    └── _cards.json
+```
+
+并将其与存储库中的其余代码连接起来，如CLI的输出中所示。
+它自动执行以下功能：
+
+- 将卡片添加到过滤器中，允许在自适应表单块内添加。
+- 更新`mappings.js`的允许列表以包含新卡片组件。
+- 在通用编辑器中的&#x200B;**自定义组件**&#x200B;列表下注册卡片组件的定义。
+
+>[!NOTE]
+>
+> 您也可以使用手动（旧版）方法创建自定义组件。 有关详细信息，请参阅[手动或旧式方法](#manual-or-legacy-method-to-create-custom-component)以创建自定义组件部分。
+
+#### 1.2在通用编辑器中使用组件
+
+1. **刷新通用编辑器**：在通用编辑器中打开您的表单并刷新页面，以确保它从存储库加载最新代码。
+
+2. **添加自定义组件**
+
+   1. 单击表单画布上的&#x200B;**添加(+)**&#x200B;按钮。
+   2. 滚动到自定义组件部分。
+   3. 选择新创建的&#x200B;**卡片组件**&#x200B;以将其插入到您的表单中。
+
+      ![选择自定义组件](/help/edge/docs/forms/universal-editor/assets/select-custom-component.png)
+
+由于`cards.js`内不存在代码，因此自定义组件呈现为单选按钮组。
+
+#### 1.3在本地预览和测试
+
+现在，表单包含自定义组件，您可以代理表单并在本地对其进行更改并查看更改：
+
+1. 转到终端并运行`aem up`。
+
+2. 打开在`http://localhost:3000/{path-to-your-form}`启动的代理服务器（路径示例： `/content/forms/af/custom-component-form`）
+
+
+### 2.为自定义组件实施自定义行为
+
+#### 2.1设置自定义组件的样式
+
+让我们将类&#x200B;**卡**&#x200B;添加到组件中以设置样式，并为每个无线电添加图像，为此使用以下代码。
+
+**在cards.js中使用修饰函数设置自定义组件的样式**
+
+```javascript
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+
+export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
+element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
+jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
+});
+return element;
+}
+```
+
+**在cards.css中为自定义组件添加运行时行为**
+
+```javascript
+.card .radio-wrapper { min-width: 320px;
+/* or whatever width fits your design */ max-width: 340px;
+background: #fff;
+border-radius: 16px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+flex: 0 0 auto;
+scroll-snap-align: start; padding: 24px 16px;
+margin-bottom: 0;
+position: relative;
+transition: box-shadow 0.2s; display: flex;
+align-items: flex-start; gap: 12px;
+}
+```
+
+现在，卡片组件显示如下：
+
+![添加卡片css和js](/help/edge/docs/forms/universal-editor/assets/add-card-css.png)
+
+#### 2.2使用Subscribe函数添加动态行为
+
+更改下拉列表后，将获取卡片并将其设置在单选按钮组的枚举中。 但当前视图无法处理此情况。 因此，它呈现如下：
+
+![订阅函数](/help/edge/docs/forms/universal-editor/assets/card-subscribe.png)
+
+调用API时，它会设置字段模型，并且必须侦听更改并相应地呈现视图。 这是使用&#x200B;**subscribe函数**&#x200B;实现的。
+
+让我们将上一步中的视图代码转换为函数，并在`cards.js`中的subscribe函数中调用它，如下所示：
+
+```javascript
+import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+
+import { subscribe } from '../../rules/index.js';  
+function createCard(element, enums) {  
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+
+    if (enums[index]?.name) {  
+
+      let label = radioWrapper.querySelector('label');  
+
+      if (!label) {  
+
+        label = document.createElement('label');  
+
+        radioWrapper.appendChild(label);  
+
+      }  
+
+      label.textContent = enums[index]?.name;  
+
+    }  
+
+    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
+
+   radioWrapper.appendChild(image);  
+
+  });  
+
+}  
+export default function decorate(element, fieldJson, container, formId) {  
+
+    element.classList.add('card');  
+
+    createCard(element, fieldJson.enum);  
+
+    subscribe(element, formId, (fieldDiv, fieldModel) => {  
+
+        fieldModel.subscribe((e) => {  
+
+            const { payload } = e;  
+
+            payload?.changes?.forEach((change) => {  
+
+                if (change?.propertyName === 'enum') {  
+
+                    createCard(element, change.currentValue);  
+
+                }  
+
+            });  
+
+        });  
+
+    });  
+    return element;  
+
+} 
+```
+
+**使用Subscribe函数监听cards.js中的事件更改**
+
+现在，当您更改下拉列表时，信息卡会被填充，如下所示：
+
+![订阅函数](/help/edge/docs/forms/universal-editor/assets/card-subscribe-final.png)
+
+#### 2.3正在将视图更新与字段模型同步
+
+要将视图更改同步到“模型”字段，必须设置选定卡片的值。 因此，在cards.js中添加以下更改事件侦听器，如下所示：
+
+**在cards.js中使用字段模型API**
+
+```javascript
+ 
+
+import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+
+import { subscribe } from '../../rules/index.js';  
+
+  
+
+  
+
+function createCard(element, enums) {  
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+
+    if (enums[index]?.name) {  
+
+      let label = radioWrapper.querySelector('label');  
+
+      if (!label) {  
+
+        label = document.createElement('label');  
+
+        radioWrapper.appendChild(label);  
+
+      }  
+
+      label.textContent = enums[index]?.name;  
+
+    }  
+
+    radioWrapper.querySelector('input').dataset.index = index;  
+
+    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
+
+   radioWrapper.appendChild(image);  
+
+  });  
+
+}  
+export default function decorate(element, fieldJson, container, formId) {  
+
+    element.classList.add('card');  
+    createCard(element, fieldJson.enum);  
+
+    subscribe(element, formId, (fieldDiv, fieldModel) => {  
+
+        fieldModel.subscribe((e) => {  
+
+            const { payload } = e;  
+
+            payload?.changes?.forEach((change) => {  
+
+                if (change?.propertyName === 'enum') {  
+
+                    createCard(element, change.currentValue);  
+
+                }  
+
+            });  
+
+        });  
+        element.addEventListener('change', (e) => {  
+
+            e.stopPropagation();  
+
+            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
+
+            fieldModel.value = value.name;  
+
+        });  
+
+    });  
+
+    return element;  
+} 
+```
+
+现在会显示自定义卡组件，如下所示：
+
+![卡自定义组件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+
+## 提交和推送更改
+
+为自定义组件实施JavaScript和CSS并在本地验证后，提交更改并将其推送到Git存储库。
+
+```bash
+git add . && git commit -m "Add card custom component" && git push
+```
+
+您仅需几个简单步骤即可成功创建复杂的自定义信息卡选择组件。
+
+## 创建自定义组件的手动或传统方法
+
+传统的方法是手动执行以下步骤：
+
+1. **选择要扩展的OOTB组件**（例如，按钮、下拉列表、文本输入等）。 在这种情况下，请扩展单选按钮组件。
+
+2. **在**&#x200B;中创建包含组件名称（在此例中为卡片）的文件夹`blocks/form/components`。
+
+3. **添加同名JS文件**：
+   - `blocks/form/components/cards/cards.js`。
+
+4. （可选） **为自定义样式添加CSS文件**：
+   - `blocks/form/components/cards/cards.css.`
+
+5. **在与**&#x200B;组件JS文件` _cards.json` (**)相同的文件夹中定义新的JSON文件** （例如，`blocks/form/components/cards/_cards.json`）。 此JSON应扩展现有组件，并在其定义中，将`fd:viewType`设置为组件的名称（在此例中为卡片）：
+
+   - 对于所有字段组（基本、验证、帮助等），请显式添加自定义字段。
+
+6. **实施JS和CSS逻辑：**
+   - 导出默认函数，如上所述。
+   - 使用&#x200B;**element**&#x200B;参数修改基本HTML结构。
+   - 如果需要，请使用标准字段数据的&#x200B;**fieldJson**&#x200B;参数。
+   - 如果需要，可使用&#x200B;**subscribe**&#x200B;函数侦听字段更改或自定义事件。
+
+     >[!NOTE]
+     >
+     >如上所述，为自定义组件实施JS和CSS逻辑。
+
+7. 在表单生成器中将组件注册为变体并设置变体属性或
+   将JSON中的`fd:viewType/:type`添加到组件的名称，例如，将`fd:viewType`中的`definitions[]`值作为卡片添加到具有`id="form`的对象的组件数组。
 
    ```javascript
-   "models": [
    {
-     "id": "range",
-     "fields": [
-       {
-         "component": "container",
-         "name": "basic",
-         "label": "Basic",
-         "collapsible": false,
-         "...": "../../../../models/form-common/_basic-input-fields.json"
-       },
-       {
-         "...": "../../../../models/form-common/_help-container.json"
-       },
-       {
-         "component": "container",
-         "name": "validation",
-         "label": "Validation",
-         "collapsible": true,
-         "...": "../../../../models/form-common/_number-validation-fields.json"
-       }
-     ]
+   "definitions": [
+   {
+   "title": "Cards",
+   "id": "cards", "plugins": {
+   "xwalk": {
+   "page": {
+   "resourceType":
+   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
+   "jcr:title": "Cards",
+   "fieldType": "radio-button", "fd:viewType": "cards",
+   "enabled": true, "visible": true}
    }
-   ]
+   } }
+   }
+   ]}
    ```
 
-   >[!NOTE]
-   >
-   > 要向自定义组件的&#x200B;**属性**&#x200B;对话框中添加新字段，请遵循[定义的模式](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model)。
+8. **更新mappings.js**：将组件名称添加到&#x200B;**OOTBComponentDecorators**（对于OOTB样式组件）或&#x200B;**customComponents**&#x200B;列表，以便系统能够识别并加载该组件。
 
-   您还可以在自定义组件中[添加自定义属性](#adding-custom-properties-for-your-custom-component)以扩展其功能。
+   ```javascript
+   let customComponents = ["cards"];
+   const OOTBComponentDecorators = [];
+   ```
 
-#### 添加自定义组件的自定义属性
-
-自定义属性可让您根据组件属性对话框中设置的值定义特定行为。这有助于扩展组件的功能和自定义选项。
-
-在这个例子中，我们将步进值作为自定义属性添加到 Range 组件。
-
-![步进值自定义属性](/help/edge/docs/forms/universal-editor/assets/customcomponent-stepvalue.png)
-
-要添加步进值自定义属性，需要在组件模型 ` _<component>.json` 文件中加入以下代码行：
-
-```javascript
-      {
-      "component": "number",
-      "name": "stepValue",
-      "label": "Step Value",
-      "valueType": "number"
-      }
-```
-
-JSON 代码片段为 **Range** 组件定义了一个名为 **Step Value** 的自定义属性。以下是每个字段的细分：
-
-- **组件**：指定“属性”对话框中使用的输入字段的类型。在这种情况下，`number` 表示该字段接受数值。
-- **名称**：属性的标识符，用于在组件的逻辑中引用它。这里的 `stepValue` 代表范围的步长值设置。
-- **标签**：在“属性”对话框中看到的属性的显示名称。
-- **valueType**：定义属性所需的数据类型。`number` 确保只允许数字输入。
-
-您现在可以使用 `stepValue` 作为 `range.js` 的 JSON 属性中的自定义属性，并根据其运行时的值实施动态行为。
-
-因此，在添加完组件定义、组件模型和自定义属性后，最终的 `_range.json` 文件如下：
-
-```javascript
- {
-  "definitions": [
-    {
-      "title": "Range",
-      "id": "range",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-            "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-            }
-          }
-        }
-      }
-    }
-  ],
-  "models": [
-    {
-      "id": "range",
-      "fields": [
-        {
-          "component": "container",
-          "name": "basic",
-          "label": "Basic",
-          "collapsible": false,
-          "...": "../../../../models/form-common/_basic-input-fields.json"
-         {
-           "component": "number",
-           "name": "stepValue",
-            "label": "Step Value",
-             "valueType": "number"
-}
-        },
-        {
-          "...": "../../../../models/form-common/_help-container.json"
-        },
-        {
-          "component": "container",
-          "name": "validation",
-          "label": "Validation",
-          "collapsible": true,
-          "...": "../../../../models/form-common/_number-validation-fields.json"
-        }
-      ]
-    }
-  ]
-}
-```
-
-![组件定义和模型](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
-
-
-### &#x200B;3. 使您的自定义组件在所见即所得的组件列表中可见
-
-过滤器定义了在通用编辑器中可以使用自定义组件的分区。这可确保组件只能在适当的分区中使用，从而保持结构和可用性。
-
-确保在所见即所得表单创作过程中自定义组件出现在可用组件列表中：
-
-1. 导航到 `/blocks/form/_form.json` 文件。
-1. 定位组件数组在具有 `id="form"` 的对象中的位置。
-1. 将 `fd:viewType` 值从 `definitions[]` 添加到带有 `id="form"` 的对象组件数组中。
+9. **更新_form.json**：将组件的名称添加到`filters.components`数组，以便在创作UI中放置该组件。
 
    ```javascript
    "filters": [
-     {
-       "id": "form", 
-       "components": [
-         "captcha",
-         "checkbox",
-         "checkbox-group",
-         "date-input",
-         "drop-down",
-         "email",
-         "file-input",
-         "form-accordion",
-         "form-button",
-         "form-fragment",
-         "form-image",
-         "form-modal",
-         "form-reset-button",
-         "form-submit-button",
-         "number-input",
-         "panel",
-         "plain-text",
-         "radio-group",
-         "rating",
-         "telephone-input",
-         "text-input",
-         "tnc",
-         "wizard",
-         "range"
+   {
+       "id": "form",
+       "components": [ "cards"]}
        ]
-     }
-   ]
    ```
 
-![组件过滤器](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
+10. **更新_component-definition.json**：在`models/_component-definition.json`中，通过以下方式使用对象`id custom-components`更新组中的数组：
 
-### &#x200B;4. 注册您的自定义组件
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-要使表单区块能够识别自定义组件，并在表单创作过程中加载组件模型中定义的组件属性，请将 `fd:viewType` 值从组件定义添加到 `mappings.js` 文件。
+   这是为了提供对将与其余组件一起构建的新卡组件的引用
 
+11. **运行生成:json脚本**：执行`npm run build:json`以编译所有组件JSON定义并将其合并到单个文件中，以便从服务器提供服务。 这可确保在合并输出中包含新组件的架构。
 
-注册组件：
+12. 提交更改并将其推送到Git存储库。
 
-1. 导航到 `/blocks/form/mappings.js` 文件。
-1. 找到 `customComponents[]` 数组的位置。
-1. 将 `fd:viewType` 值从 `definitions[]` 数组添加到 `customComponents[]` 数组。
+现在，您可以将自定义组件添加到表单。
+
+## 创建复合组件
+
+组合组件是通过组合多个组件创建的。
+例如，条款和条件复合组件包含一个父面板，其中包含：
+
+- 用于显示术语的纯文本字段
+
+- 用于捕获用户协议的复选框
+
+此组合结构在相应组件的JSON文件中定义为模板。 以下示例说明如何为条款和条件组件定义模板：
 
 ```javascript
-let customComponents = ["range"];
-const OOTBComponentDecorators = ['file-input',
-                                 'wizard', 
-                                 'modal', 'tnc',
-                                'toggleable-link',
-                                'rating',
-                                'datetime',
-                                'list',
-                                'location',
-                                'accordion'];
+{ 
+
+  "definitions": [ 
+
+    { 
+
+      "title": "Terms and conditions", 
+
+      "id": "tnc", 
+
+      "plugins": { 
+
+        "xwalk": { 
+
+          "page": { 
+
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
+
+            "template": { 
+
+              "jcr:title": "Terms and conditions", 
+
+              "fieldType": "panel", 
+
+              "fd:viewType": "tnc", 
+
+              "text": { 
+
+                "value": "Text related to the terms and conditions come here.", 
+
+                "sling:resourceType": "core/fd/components/form/text/v1/text", 
+
+                "fieldType": "plain-text", 
+
+                "textIsRich": true 
+
+              }, 
+
+              "approvalcheckbox": { 
+
+                "name": "approvalcheckbox", 
+
+                "jcr:title": "I agree to the terms & conditions.", 
+
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
+
+                "fieldType": "checkbox", 
+
+                "required": true, 
+
+                "type": "string", 
+
+                "enum": [ 
+
+                  "true" 
+
+                ] 
+
+              } 
+
+            } 
+
+          } 
+
+        } 
+
+      } 
+
+    } 
+
+  ], 
+
+  ... 
+
+} 
 ```
-
-![组件映射](/help/edge/docs/forms/universal-editor/assets/custom-component-mapping-file.png)
-
-完成上述步骤后，自定义组件将出现在通用编辑器内的表单组件列表中。然后您可以将其拖放到表单分区。
-
-![通用编辑器组件面板截图，展示了可拖放至表单中的自定义范围组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
-
-下面的屏幕快照显示了添加到组件模型中的 `range` 组件的属性，该组件指定了表单作者可以配置的属性：
-
-![通用编辑器属性面板截图，展示了可配置的范围组件设置，包括基本属性、验证规则及样式选项](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
-
-您现在可以通过添加样式和功能来定义自定义组件的运行时行为。
-
-### &#x200B;5. 添加自定义组件的运行时行为
-
-您可以使用预定义标记来修改自定义组件，如[表单字段的样式](/help/edge/docs/forms/style-theme-forms.md)中所述。这可以通过自定义 CSS（级联样式表）和自定义代码来实现，以增强组件的外观。添加组件的运行时行为：
-
-1. 要添加样式，请导航到 `/blocks/form/components/range/range.css` 文件，并添加以下代码行：
-
-   ```javascript
-   /** Styling for range */
-   main .form .range-widget-wrapper.decorated input[type="range"] {
-   margin: unset;
-   padding: unset;
-   appearance: none;
-   height: 5px;
-   border-radius: 5px;
-   border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
-   }
-   
-   main .form .range-widget-wrapper.decorated input[type="range"]:focus {
-   outline: none;
-   }
-   
-   .range-widget-wrapper.decorated input[type="range"]::-webkit-slider-thumb {
-   appearance: none;
-   width: 25px;
-   height: 25px;
-   border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
-   cursor: pointer;
-   outline: 3px solid #fff;
-   }
-   
-   .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
-   }
-   
-   .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
-   font-size: 20px;
-   line-height: 28px;
-   position: relative;
-   display: inline-block;
-   padding-bottom: 12px;
-   font-weight: bold;
-   }
-   
-   .range-widget-wrapper.decorated .range-min,
-   .range-widget-wrapper.decorated .range-max {
-   font-size: 14px;
-   line-height: 22px;
-   color: #494f50;
-   margin-top: 16px;
-   display: inline-block;
-   }
-   
-   .range-widget-wrapper.decorated .range-max {
-   float: right;
-   }
-   ```
-
-   代码可帮助您定义自定义组件的样式和视觉外观。
-
-1. 要添加功能，请导航到 `/blocks/form/components/range/range.js` 文件，并添加以下代码行：
-
-   ```javascript
-   function updateBubble(input, element) {
-   const step = input.step || 1;
-   const max = input.max || 0;
-   const min = input.min || 1;
-   const value = input.value || 1;
-   const current = Math.ceil((value - min) / step);
-   const total = Math.ceil((max - min) / step);
-   const bubble = element.querySelector('.range-bubble');
-   // during initial render the width is 0. Hence using a default here.
-   const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
-   bubble.innerText = `${value}`;
-   const steps = {
-       '--total-steps': Math.ceil((max - min) / step),
-       '--current-steps': Math.ceil((value - min) / step),
-   };
-   const style = Object.entries(steps).map(([varName, varValue]) => `${varName}:${varValue}`).join(';');
-   bubble.style.left = `calc(${left})`;
-   element.setAttribute('style', style);
-   }
-   
-   export default async function decorate(fieldDiv, fieldJson) {
-   console.log('RANGE DIV: ', fieldDiv);
-   console.log('RANGE JSON: fieldJson', fieldJson);
-    const input = fieldDiv.querySelector('input');
-   // modify the type in case it is not range.
-   input.type = 'range';
-   input.min = input.min || 10;
-   input.max = input.max || 1000;
-   // create a wrapper div to provide the min/max and current value
-   const div = document.createElement('div');
-   div.className = 'range-widget-wrapper decorated';
-   input.after(div);
-   const hover = document.createElement('span');
-   hover.className = 'range-bubble';
-   const rangeMinEl = document.createElement('span');
-   rangeMinEl.className = 'range-min';
-   const rangeMaxEl = document.createElement('span');
-   rangeMaxEl.className = 'range-max';
-   rangeMinEl.innerText = `${input.min || 1}`;
-   rangeMaxEl.innerText = `${input.max}`;
-   div.appendChild(hover);
-   // move the input element within the wrapper div
-   div.appendChild(input);
-   div.appendChild(rangeMinEl);
-   div.appendChild(rangeMaxEl);
-   input.addEventListener('input', (e) => {
-   updateBubble(e.target, div);
-   });
-   updateBubble(input, div);
-   return fieldDiv;
-   }
-   ```
-
-   它可以控制自定义组件与用户输入的交互方式、数据处理方式以及与通用编辑器中表单块的集成方式。
-
-   加入自定义样式和功能后，Range 组件的外观和行为得到增强。更新后的设计反映了应用的样式，而增加的功能则确保了更动态化和交互式的用户体验。
-下面的屏幕快照显示了更新的 Range 组件。
-
-![最终效果中的范围组件截图，展示了通用编辑器中的样式化滑块、数值气泡显示及交互功能的组件](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
-
-## 常见问题解答
-
-- **如果同时在 component.css 和 forms.css 中添加样式，哪个优先？**
-同时在 `component.css` 和 **forms.css** 中定义样式时，`component.css` 优先。这是因为组件级样式更具体，并且会覆盖 `forms.css` 的全局样式。
-
-- **我的自定义组件在通用编辑器的可用组件列表中不可见。如何解决这个问题？**
-如果您的自定义组件没有出现，请检查以下文件，确保组件已正确注册：
-   - **component-definition.json**：验证组件是否已正确定义。
-   - **component-filters.json**：确保在适当的分区中允许使用该组件。
-   - **component-models.json**：确认组件模型已正确配置。
 
 ## 最佳实践
 
-- 建议[设置本地 AEM 开发环境](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)，以便在本地开发自定义样式和组件。
+在创建您自己的自定义组件之前，请记住以下要点：
 
+- **让组件逻辑保持集中**：仅添加/覆盖自定义行为所需的内容
 
-## Extra Byte
+- **利用基本结构**：使用OOTB HTML作为起点
 
-### 支持的 resourceType
+- **使用可创作属性：**&#x200B;通过JSON架构公开可配置选项
 
-| 字段类型 | 资源类型 |
-|--------------|------------------------------------------------------------------|
-| 文本输入 | core/fd/components/form/textinput/v1/textinput |
-| 数字输入 | core/fd/components/form/numberinput/v1/numberinput |
-| 日期输入 | core/fd/components/form/datepicker/v1/datepicker |
-| 面板 | core/fd/components/form/panelcontainer/v1/panelcontainer |
-| 复选框 | core/fd/components/form/checkbox/v1/checkbox |
-| 下拉面板 | core/fd/components/form/dropdown/v1/dropdown |
-| 单选按钮组 | core/fd/components/form/radiobutton/v1/radiobutton |
-| 纯文本 | core/fd/components/form/text/v1/text |
-| 文件输入 | core/fd/components/form/fileinput/v2/fileinput |
-| 电子邮件 | core/fd/components/form/emailinput/v1/emailinput |
-| 图像 | core/fd/components/form/image/v1/image |
-| 按钮 | core/fd/components/form/button/v1/button |
+- **命名空间CSS**：使用唯一的类名避免样式冲突
 
-### 支持的 fieldTypes
+## 引用
 
-表单支持的 fieldTypes 有：
+- form-field-types：所有字段类型的基本HTML结构和属性。 [单击此处](/help/edge/docs/forms/eds-form-field-properties)查看详细的表单字段结构和属性。
 
-- 文本输入
-- 数字输入
-- 日期输入
-- 面板
-- 纯文本
-- 文件输入
-- 电子邮件
-- 图像
-- 按钮
-- 复选框
-- 下拉面板
-- 单选按钮组
+- **块/表单/模型/表单组件**： OOTB和自定义组件属性定义。
 
+- **块/表单/组件**：放置您的自定义组件。 例如： `blocks/form/components/countdown-timer/_countdown-timer.json`显示如何扩展基础组件和添加新属性。

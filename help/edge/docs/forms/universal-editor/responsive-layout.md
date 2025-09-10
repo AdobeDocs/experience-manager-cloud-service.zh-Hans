@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2382'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 94%
 
 ---
 
 
-# 使用通用编辑器创建响应式表单
+# 使用通用编辑器创建响应式Forms — 完整指南
 
 现代网络环境要求表单能够在不断扩展的各种设备类型和屏幕尺寸上无缝衔接运行。从大型台式机显示器到小型智能手机屏幕，无论用户选择哪种设备，都希望能获得一致、直观的使用体验。创建响应式表单不再是可选的选项——而是提供专业、无障碍、转化优化的数字体验的基本要求。
 
@@ -33,20 +33,21 @@ ht-degree: 100%
 - 解决响应式表单的常见问题
 - 为提高移动设备性能优化表单
 
-## 为什么响应式表单非常重要
+<!--
+## Why Responsive Forms Are Important
 
-**影响用户体验：**
+**User Experience Impact:**
 
-- 超过 60% 的用户是在移动设备上访问表单
-- 不佳的移动设备体验会导致 67% 以上的放弃率
-- 响应式表单最多可将完成率提高 25%
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**商业优势：**
+**Business Benefits:**
 
-- 提高表单完成率
-- 提高用户满意度
-- 更好地符合无障碍性要求
-- 降低开发和维护成本
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -299,7 +300,7 @@ ht-degree: 100%
 
 **布局和可用性：**
 
-- 为相关字段使用双列布局，充分利用较大的屏幕空间。
+- 为相关字段使用双列布局以利用增加的屏幕空间。
 - 以纵向和横向方式测试表单外观和可用性。
 - 设计时考虑到触摸和鼠标两种输入，确保可轻松使用所有控件。
 - 增加内容区域大小，同时保持清晰的视觉层级结构和可读性。
@@ -316,6 +317,40 @@ ht-degree: 100%
 - 为复杂表单提供高级验证，包括清晰、详细的错误消息。
 
 +++
+
+## 使用媒体查询断点配置自定义布局
+
+在使用&#x200B;**通用编辑器**&#x200B;为自适应Forms中的组件生成自定义布局时，必须使用&#x200B;**CSS媒体查询断点**&#x200B;定义响应式行为。 这可以确保表单在不同设备和屏幕大小之间正确呈现。
+
+**推荐的断点(基于AEM核心组件)**
+
+| **设备类型** | **建议的断点** |
+|-----------------|---------------------------|
+| **桌面设备** | `min-width: 1200px` |
+| **平板电脑** | `min-width: 768px and max-width: 1199px` |
+| **移动设备** | `max-width: 767px` |
+
+**关键点**
+
+- 使用这些断点可控制组件在不同设备上调整、栈叠或隐藏大小的方式。
+- 遵循贵组织的响应式设计准则，以获得一致的UX。
+- 在多个设备和方向上测试布局，以确保可用性和可访问性。
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> 通用编辑器不提供用于定义响应行为的UI。 必须通过CSS处理所有版面自定义。
+
+
 
 ## 疑难解答
 

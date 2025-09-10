@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 预填充自适应表单、自适应表单 edge delivery services、自适应表单自动填充
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1787'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 99%
 
 ---
 
@@ -156,6 +156,11 @@ ht-degree: 100%
    ![Edge Delivery Services 模板](/help/edge/assets/create-eds-forms.png)
 
 1. 点击&#x200B;**创建**，打开&#x200B;**创建表单**&#x200B;向导
+
+   >
+   >
+   > 您可以通过编辑表单属性，从&#x200B;**数据**&#x200B;选项卡或更高版本配置数据源。
+
 1. 指定表单详细信息：
 
    - **名称**：输入表单的描述性名称
@@ -250,7 +255,7 @@ FDM 中的表单元素将显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;
 3. 选择&#x200B;**作为 HTML 预览**
 4. 通过将参数附加到 URL 来测试预填充：
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **示例：**
 

@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: ht
-source-wordcount: '2355'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2390'
+ht-degree: 98%
 
 ---
 
@@ -112,11 +112,16 @@ ht-degree: 100%
 
 **为您的第一个表单：**
 
-1. **开始构建** - 通过&#x200B;**添加**&#x200B;按钮 (`a`) 添加组件
-2. **配置字段** - 选择组件，使用&#x200B;**属性模式** (`d`)
-3. **测试您的表单** - 使用&#x200B;**预览模式** (`p`) 与您的表单进行交互
-4. **检查移动设备视图** - 切换到&#x200B;**响应模式**&#x200B;进行移动设备测试
-5. **上线** - 准备就绪后，点击&#x200B;**发布**
+1. **添加自适应表单组件** — 将`Adaptive Form`组件插入节。
+2. **开始构建** - 通过&#x200B;**添加**&#x200B;按钮 (`a`) 添加组件
+3. **配置字段** - 选择组件，使用&#x200B;**属性模式** (`d`)
+4. **测试您的表单** - 使用&#x200B;**预览模式** (`p`) 与您的表单进行交互
+5. **检查移动设备视图** - 切换到&#x200B;**响应模式**&#x200B;进行移动设备测试
+6. **上线** - 准备就绪后，点击&#x200B;**发布**
+
+>[!NOTE]
+>
+> 要了解在通用编辑器中创建表单的详细步骤，请参阅[使用Edge Delivery Services创建和发布自适应Forms](/help/edge/docs/forms/universal-editor/create-forms.md)。
 
 **验证检查点：**
 
@@ -218,7 +223,7 @@ ht-degree: 100%
 
 #### **AEM 表单属性**
 
-**用途：**&#x200B;配置表单级别的设置，例如表单数据模型 (FDM) 和发布日期\
+**用途：**&#x200B;配置表单级设置，如表单数据模型(FDM)，配置提交操作和发布日期\
 **何时使用：**&#x200B;设置数据集成、安排发布时间
 
 ![表单属性](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ ht-degree: 100%
 
 **属性面板**（右侧）是您构建和配置表单的控制中心。它会根据您的选择而变化，为不同的任务提供不同的工具。
 
-![属性面板](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![属性面板](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **核心表单构建工具**
 

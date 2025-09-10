@@ -5,10 +5,10 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
-source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
-workflow-type: ht
-source-wordcount: '1133'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 99%
 
 ---
 
@@ -53,13 +53,19 @@ ht-degree: 100%
 
 在通用编辑器中打开您的自适应表单，然后点击工具栏中的&#x200B;**编辑表单属性**&#x200B;图标。现在会打开综合表单属性对话框。
 
+![表单属性图标](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. 导航至感谢消息配置**
 
 在表单属性对话框中选择&#x200B;**感谢消息**&#x200B;选项卡，访问提交后配置选项。
 
+![通用编辑器表单属性](/help/forms/assets/ue-form-properties.png)
+
 **3. 配置消息显示**
 
-从可用选项中选择&#x200B;**显示消息**。现在会打开具有富文本功能的消息内容编辑器。
+从可用选项中选择&#x200B;**显示消息**。
+
+![感谢](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. 创建您的消息内容**
 
@@ -117,13 +123,19 @@ ht-degree: 100%
 
 在通用编辑器中打开您的自适应表单，然后点击&#x200B;**编辑表单属性**&#x200B;图标，打开表单配置对话框。
 
+![表单属性图标](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. 导航至感谢消息配置**
 
 在表单属性对话框中选择&#x200B;**感谢消息**&#x200B;选项卡，访问重定向配置选项。
 
+![通用编辑器表单属性](/help/forms/assets/ue-form-properties.png)
+
 **3. 启用重定向功能**
 
 从可用的提交后选项中选择&#x200B;**重定向到 URL**。
+
+![重定向](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. 配置目标 URL**
 

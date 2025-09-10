@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> AEM 新手？从 [AEM Sites 快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hans)开始。
+> AEM 新手？从 [AEM Sites 快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)开始。
 
 ## 路径 A：通过 Forms 创建新项目
 
@@ -157,7 +157,10 @@ AEM Code Sync 会将您的 AEM 创作环境与您的 GitHub 存储库之间的�
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **替换：**
@@ -184,9 +187,9 @@ AEM Code Sync 会将您的 AEM 创作环境与您的 GitHub 存储库之间的�
 
 **验证：**&#x200B;确认您的 GitHub 存储库与 AEM 连接。
 
-    >[!注意]
-    >
->有构建问题吗？参见[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
+>[!NOTE]
+>
+> 有构建问题吗？参见[解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
 
 +++
 
@@ -627,13 +630,13 @@ AEM Code Sync 会将您的 AEM 创作环境与您的 GitHub 存储库之间的�
    您的表单现已上线：
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **URL 示例：**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![上线表单页面](/help/edge/docs/forms/assets/publish-index-page.png)

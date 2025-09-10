@@ -4,10 +4,10 @@ description: 了解如何在通用编辑器中创建表单片段并将其添加�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,12 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
 
 您可以在通用编辑器中创建 Edge Delivery Services 表单片段，然后将创建的片段添加到 Edge Delivery Services 表单。您可以使用 Edge Delivery Services 表单片段执行以下操作：
 
-- [创建表单片段](#creating-form-fragments)
-- [将表单片段添加到一个表单](#adding-form-fragments-to-a-form)
-- [管理表单片段](#managing-form-fragments)
+- [在通用编辑器中创建表单片段](#creating-form-fragments-in-universal-editor)
+   - [了解表单片段](#understanding-form-fragments)
+   - [先决条件](#prerequisites)
+   - [使用 Edge Delivery Services 表单片段](#working-with-edge-delivery-services-form-fragments)
+   - [最佳实践](#best-practices)
+   - [摘要](#summary)
 
 +++ 创建表单片段
 
@@ -174,6 +177,10 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
    表单片段通过引用的方式添加到表单中，并与独立表单片段保持同步。
 
    ![通用编辑器中的员工表单截图，展示了成功嵌入的联系人信息片段，说明了片段在重复使用时如何保持其结构一致性](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+
+   >[!NOTE]
+   >
+   > **编辑片段**&#x200B;按钮允许用户直接导航到表单片段进行编辑。
 
    您可以预览表单以查看在&#x200B;**预览**&#x200B;模式中该表单如何显示。
 
@@ -285,10 +292,10 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
 
 **后续步骤：**
 
-- 为您的组织创建一个常用片段库
-- 为片段使用建立命名惯例和治理策略
+- 为您的组织创建常用片段库。
+- 为片段使用建立命名约定和治理策略。
 - 了解与[表单数据模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)的高级集成，以实现动态数据驱动的片段
-- 实施基于片段的表单模板，以获得一致的用户体验
+- 实施基于片段的表单模板以实现一致的用户体验。
 
 现在，您的表单获益于可维护的模块化架构，该架构可在各种项目中有效扩展，同时确保一致的用户体验。
 

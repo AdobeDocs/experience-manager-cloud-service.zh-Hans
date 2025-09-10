@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 92%
+source-wordcount: '2824'
+ht-degree: 90%
 
 ---
 
@@ -165,13 +165,15 @@ ht-degree: 92%
 ![规则编辑器用户界面](/help/edge/docs/forms/assets/rule-editor-interface.png)
 图：完整的规则编辑器界面和带编号的组件
 
-- **组件标题和规则类型**：确认所选组件和活跃规则类型。
-- **表单对象和函数面板**：
+1. **组件标题和规则类型**：确认所选组件和活跃规则类型。
+2. **表单对象和函数面板**：
+
    - 表单对象：可以在规则中引用的字段和容器的层级视图
    - 函数：内置的数学、字符串、日期和验证助手
-- **面板切换**：显示/隐藏对象和函数面板，增加工作区
-- **可视化规则生成器**：拖放式、下拉驱动的规则编写器
-- **控件**：完成（保存）、取消（放弃）。保存之前务必测试规则。
+
+3. **面板切换**：显示/隐藏对象和函数面板，增加工作区
+4. **可视化规则生成器**：拖放式、下拉驱动的规则编写器
+5. **控件**：完成（保存）、取消（放弃）。保存之前务必测试规则。
 
 +++
 
@@ -302,13 +304,13 @@ ht-degree: 92%
 
 +++
 
-+++ 步骤 1：创建基本表单
++++ 第1步：创建表单
 
 **目标**：构建包含所有字段和初始设置的基本表单。
 
 1. **打开通用编辑器**：
    - 导航到 AEM Sites 控制台，选择您的页面，点击&#x200B;**编辑**
-   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按以下顺序添加表单组件**：
    - 标题 (H2)：“税费计算表”
@@ -533,6 +535,9 @@ export { getFullName, days };
 ![规则编辑器中的自定义函数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 图：在规则编辑器界面中选择和配置自定义函数
 
+>
+>
+> Edge Delivery Services Forms还提供了规则编辑器的增强功能，包括基于事件的自定义规则、对动态变量的支持以及API集成。 要了解有关这些增强功能以及如何使用它们的更多信息，请参阅[规则编辑器增强功能和用例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
 
 **函数使用的最佳实践**：
 
@@ -727,7 +732,7 @@ UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自定义函
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)：用于更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)：用于更广泛的上下文
 - [扩展管理器指南](/help/implementing/developing/extending/extension-manager.md)：用于启用附加功能
 - [Edge Delivery Services 表单](/help/edge/docs/forms/overview.md)：提供全面的表单开发指导
 
