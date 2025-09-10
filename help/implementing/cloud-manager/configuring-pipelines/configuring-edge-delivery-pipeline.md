@@ -9,10 +9,10 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 5%
+source-wordcount: '518'
+ht-degree: 4%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 5%
 
 用户必须具有&#x200B;**[部署管理员](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能配置生产管道。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >在发生以下情况之前，无法配置Edge Delivery管道：
 >
->* 将创建一个程序，其中包含一个Edge Delivery Services站点和一个映射的域。 否则，用户界面中的选项&#x200B;**添加Edge Delivery管道**&#x200B;显示为禁用，并且工具提示将说明缺少的要求。
->* Git存储库至少有一个分支。
->* 将创建生产和暂存环境。
+>* 将创建一个程序，其中包含一个Edge Delivery Services站点和一个映射的域。 否则，用户界面中的选项&#x200B;**添加Edge Delivery管道**&#x200B;显示为禁用，并且工具提示将说明缺少的要求。 查看[在Cloud Manager中创建Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+>* Git存储库至少有一个分支。 请参阅[在Cloud Manager中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
+>* 将创建生产和暂存环境。 请参阅[CI/CD管道简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 <!-- CMGR‑69680 -->
 
@@ -41,7 +41,9 @@ ht-degree: 5%
 
 **添加Edge Delivery管道：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择所需的组织。
+1. 在[experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/)登录Cloud Manager，然后在左侧面板中单击&#x200B;**Cloud Manager**。
+
+1. 选择所需的组织。
 
 1. 在&#x200B;**我的程序**&#x200B;页面上，选择所需的程序。
 

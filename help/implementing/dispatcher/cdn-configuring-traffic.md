@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1523'
 ht-degree: 1%
 
 ---
@@ -445,8 +445,9 @@ data:
 
 在某些情况下，源选择器应该用于通过AEM Publish将流量路由到AEM Edge Delivery Services：
 
-* 某些内容由AEM Publish管理的域交付，而来自同一域的其他内容由Edge Delivery Services交付
-* Edge Delivery Services提供的内容将受益于通过配置管道部署的规则，包括流量过滤器规则或请求/响应转换
+* 某些内容由AEM Publish管理的域交付，而来自同一域的其他内容由Edge Delivery Services交付。
+* Edge Delivery Services提供的内容将受益于通过配置管道部署的规则，包括流量过滤器规则或请求/响应转换。
+* Edge Delivery配置管道允许您通过定义规则（如`trafficFilters`、`originSelectors`和`redirects`）来配置Adobe管理的CDN设置。<!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 以下是可以实现此目标的原点选择器规则的示例：
 
@@ -474,7 +475,8 @@ data:
 ```
 
 >[!NOTE]
-> 由于使用的是Adobe Managed CDN，请务必按照Edge Delivery Services **安装程序推送失效文档**&#x200B;中的说明，在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式下配置推送失效。
+>
+>由于使用的是Adobe Managed CDN，请确保按照Edge Delivery Services **安装程序推送失效文档**&#x200B;在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式下配置推送失效。
 
 
 ## 服务器端重定向 {#server-side-redirectors}
