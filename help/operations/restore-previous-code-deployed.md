@@ -39,7 +39,7 @@ ht-degree: 3%
 * 环境状态为&#x200B;*正在运行*，没有管道正在进行中。
 
 恢复所选环境是`Development`、暂存或专用测试环境。
-如果任何检查失败，Cloud Manager将打开以下对话框，其中列出了一个或多个未满足的条件，并禁用**确认**，从而阻止还原。
+如果任何检查失败，Cloud Manager将打开以下对话框，其中列出了一个或多个未满足的条件，并禁用&#x200B;**确认**，从而阻止还原。
 
 ![还原以前的代码部署失败对话框](/help/operations/assets/restore-previous-code-deployment-not-allowed.png)。
 
