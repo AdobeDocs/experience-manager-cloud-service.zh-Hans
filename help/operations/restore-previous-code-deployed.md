@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 650ef846b469337c96e728277af02ca890e85117
+source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 3%
+source-wordcount: '523'
+ht-degree: 4%
 
 ---
 
@@ -28,17 +28,16 @@ ht-degree: 3%
 >
 >![Source代码版本正在使用中](/help/operations/assets/environments-view-details-sourcecodeversion.png)
 
-仅当下面的&#x200B;**every**&#x200B;条件为true时，**还原先前部署的代码**&#x200B;功能才可用：
+**仅当满足以下条件时，**&#x200B;才能恢复先前部署的代码：
 
 * 每次成功执行管道仅允许一个恢复；要再次恢复，请完成另一次成功的管道运行。
 * 您拥有&#x200B;**环境还原创建**&#x200B;权限。 有关管理权限的详细信息，请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)。
 * 您的组织已注册测试版计划，并且功能标记已启用。
 * 程序在AEM as a Cloud Service上运行。
-* 可以在`Development`环境、`Stage`环境或`Specialized Testng Environment`上还原以前的源代码。
 * 该环境的最后一个管道已成功完成，并在&#x200B;**天内**&#x200B;前运行。
 * 环境状态为&#x200B;*正在运行*，没有管道正在进行中。
+* **可以在**&#x200B;环境、`Development`环境或`Stage`上还原以前部署的代码`Specialized Testng Environment`。
 
-恢复所选环境是`Development`、暂存或专用测试环境。
 如果任何检查失败，Cloud Manager将打开以下对话框，其中列出了一个或多个未满足的条件，并禁用&#x200B;**确认**，从而阻止还原。
 
 ![还原以前的代码部署失败对话框](/help/operations/assets/restore-previous-code-deployment-not-allowed.png)。
