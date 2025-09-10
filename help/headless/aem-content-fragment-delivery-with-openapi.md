@@ -4,9 +4,9 @@ description: 了解使用OpenAPI的tAEM内容片段交付
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -81,6 +81,14 @@ AEM与AEM CDN Fastly集成。 这意味着在发布层上提供的JSON响应将�
 API允许新请求的速率为每环境每秒最多200个请求。
 
 一旦超过此限制，API将开始发送[429错误](https://www.rfc-editor.org/rfc/rfc6585#section-4)响应。 这些错误必须由任何客户端应用程序处理，并且失败的请求在指数回退重试后重试。 HTTP响应带有特定的标头`Retry-After`，该标头会向客户端指示再次发送请求之前需要等待的时间。
+
+## 经过身份验证的请求 {#authenticated-requests}
+
+可以使用[AEM CDN Edge密钥](/help/implementing/dispatcher/cdn-credentials-authentication.md)实现身份验证请求的支持。 通过使用AEM CDN Edge密钥，您可以依赖AEM CDN，并根据提供的Edge密钥标头，确保只有特定请求才能访问API。
+
+>[!NOTE]
+>
+>当前不支持基于特定于存储库的ACL进行授权。
 
 <!-- 
 ## Limitations {#limitations}
