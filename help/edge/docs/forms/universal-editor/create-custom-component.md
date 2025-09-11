@@ -4,9 +4,9 @@ description: 为 EDS Form 创建自定义组件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
 ![卡自定义组件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## 提交和推送更改
+### 3.提交和推送更改
 
 为自定义组件实施JavaScript和CSS并在本地验证后，提交更改并将其推送到Git存储库。
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 您仅需几个简单步骤即可成功创建复杂的自定义信息卡选择组件。
 
-## 创建自定义组件的手动或传统方法
++++ ##创建自定义组件的手动或传统方法
 
 传统的方法是手动执行以下步骤：
 
@@ -522,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新_component-definition.json**：在`models/_component-definition.json`中，通过以下方式使用对象`id custom-components`更新组中的数组：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    这是为了提供对将与其余组件一起构建的新卡组件的引用
+   这是为了提供对将与其余组件一起构建的新卡组件的引用
 
 11. **运行生成:json脚本**：执行`npm run build:json`以编译所有组件JSON定义并将其合并到单个文件中，以便从服务器提供服务。 这可确保在合并输出中包含新组件的架构。
 
