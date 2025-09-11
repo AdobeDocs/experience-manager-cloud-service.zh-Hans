@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2422'
 ht-degree: 21%
 
 ---
@@ -193,6 +193,24 @@ ht-degree: 21%
 >[!TIP]
 >
 >使用热键`Command-Z`或`Shift-Command-Z`分别撤消或重做。
+
+### 复制并粘贴 {#copy-paste}
+
+您可以复制和粘贴[容器中的组件。](/help/implementing/universal-editor/field-types.md#container)只有在同一页面中且[target容器允许粘贴该组件时，才能执行此操作。](/help/implementing/universal-editor/filtering.md)
+
+![复制图标](assets/copy.png)
+![粘贴图标](assets/paste.png)
+
+1. 在编辑器或内容树中选择组件。
+1. **复制**&#x200B;图标显示在[属性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)点击或单击它。
+1. 属性面板中会显示&#x200B;**粘贴**&#x200B;图标。
+1. 选择要将复制的组件粘贴到&#x200B;_之后的组件_。
+1. 点按或单击粘贴。
+1. 复制的组件粘贴在&#x200B;_之后_&#x200B;选定的组件。
+
+>[!TIP]
+>
+>分别使用热键`Command-C`或`Command-V`进行复制或粘贴。
 
 ## 预览内容 {#previewing-content}
 

@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器 2025.09.04 发行说明
-description: 这些是通用编辑器 2025.09.04 版本的发行说明。
+title: 通用编辑器2025.09.11发行说明
+description: 这些是通用编辑器2025.09.11版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 83%
+source-wordcount: '220'
+ht-degree: 41%
 
 ---
 
 
-# 通用编辑器 2025.09.04 发行说明 {#release-notes}
+# 通用编辑器2025.09.11发行说明 {#release-notes}
 
-这些是 2025 年 9 月 4 日发布的通用编辑器的发行说明。
+这些是 2025 年 9 月 11 日发布的通用编辑器的发行说明。
 
 >[!TIP]
 >
@@ -22,10 +22,9 @@ ht-degree: 83%
 
 ## 新增功能 {#what-is-new}
 
-* 复制粘贴功能现在可供[早期采用者](#copy-paste)使用
-* [撤消和重做](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)现在可供内容作者使用。
-   * 可以执行撤消和重做以在上下文中完成的编辑、通过“属性”面板完成的编辑，以及添加、复制、移动和删除块。
-   * 撤销与重做功能仅限于当前浏览器会话内使用。
+* [复制并粘贴](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)现在可用于同一页面上容器中的组件。
+* 现在支持6.5 LTS SP1。
+* 通用编辑器现在支持内容片段的[多站点管理继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)，包括在编辑Live Copy内容片段时自动中断继承。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -35,11 +34,11 @@ ht-degree: 83%
 
 全新的 ProseMirror RTE 现已在右侧面板中提供，链接对话框中引入了页面选择器功能。
 
-### 复制/粘贴 {#copy-paste}
+### 跨页面复制和粘贴 {#copy-paste}
 
-内容作者现在可以在同一页面内复制和粘贴组件。
+除了在同一页面中之外，现在还可以跨页面复制和粘贴。
 
 ## 其他改进 {#other-improvements}
 
-* 更新了编辑器工具栏的样式，将更好地与即将推出的新 RTE 保持一致。
-* 恢复了资产选取器对话框中的过滤器。
+* 已围绕AEM作为后端系统使用Universal Editor实施了几项小的性能改进。
+* 现在使用开放API发布内容片段，从而改进了性能并与内容片段编辑器和控制台发布方式保持一致。

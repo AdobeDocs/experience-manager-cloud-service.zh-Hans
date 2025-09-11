@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '524'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ MSM和启动项是功能强大的工具，可帮助您使用继承重用内容�
 
 * [Live Copy概述控制台](/help/sites-cloud/administering/msm/live-copy-overview.md)
 * [启动项控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-* 使用[页面属性窗口](/help/sites-cloud/authoring/sites-console/page-properties.md)的&#x200B;**Live Copy**&#x200B;选项卡上的&#x200B;**重置**&#x200B;按钮。
+* 使用&#x200B;**页面属性窗口**&#x200B;的&#x200B;**Live Copy**&#x200B;选项卡上的[重置](/help/sites-cloud/authoring/sites-console/page-properties.md)按钮。
 
 通用编辑器不会影响继承的底层机制。 有关继承如何工作的更多详细信息，请参阅以下文档。
 
@@ -67,4 +67,3 @@ MSM和启动项是功能强大的工具，可帮助您使用继承重用内容�
 
 * 要还原单个组件的继承，必须启用&#x200B;**AEM多站点管理(MSM)扩展**。
 * 若要获得可视反馈，以查看哪些组件的继承已禁用，哪些组件仍保留其继承，则必须启用&#x200B;**AEM多站点管理(MSM)扩展**。
-* 这些功能当前仅限于页面中的组件，尚不适用于[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)，尽管这些片段也具有MSM和Launch功能。
