@@ -4,7 +4,7 @@ description: 为 EDS Form 创建自定义组件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
+source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 4%
@@ -120,12 +120,14 @@ Forms块的自定义组件遵循&#x200B;**MVC (Model-View-Controller)**&#x200B;�
 #### 函数签名：
 
 ```javascript
-export default function decorate(element, fieldJson, container, formId) {
-// element: The HTML structure of the OOTB component you are extending
-// fieldJson: The JSON field definition (all authorable properties)
-// container: The parent element (fieldset or form)
-// formId: The id of the form
-// ... your logic here ...
+export default function decorate(element, fieldJson, container, formId) 
+{
+  // element: The HTML structure of the OOTB component you are extending
+  // fieldJson: The JSON field definition (all authorable properties)
+  // container: The parent element (fieldset or form)
+  // formId: The id of the form
+
+  // ... your logic here ...
 }
 ```
 
@@ -141,18 +143,20 @@ export default function decorate(element, fieldJson, container, formId) {
 
 ### 函数签名：
 
-```JavaScript
+```javascript
 import { subscribe } from '../../rules/index.js';
-
 export default function decorate(fieldDiv, fieldJson, container, formId) {
-// Access custom properties defined in the JSON
-const { initialText, finalText, time } = fieldJson?.properties;
-// ... setup logic ...
-subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
-// React to custom event (e.g., resetCardOption)
-// ... logic ...
-}, 'resetCardOption');
-});
+  // Access custom properties defined in the JSON
+  const { initialText, finalText, time } = fieldJson?.properties;
+
+  // ... setup logic ...
+
+  subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => {
+    fieldModel.subscribe(() => {
+      // React to custom event (e.g., resetCardOption)
+      // ... logic ...
+    }, 'resetCardOption');
+  });
 }
 ```
 
@@ -249,28 +253,39 @@ blocks/form/
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
 
-export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
-element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
-jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
-});
-return element;
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
+    const image = createOptimizedPicture(
+      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'card-image'
+    );
+    radioWrapper.appendChild(image);
+  });
+
+  return element;
 }
 ```
 
 **在cards.css中为自定义组件添加运行时行为**
 
 ```javascript
-.card .radio-wrapper { min-width: 320px;
-/* or whatever width fits your design */ max-width: 340px;
-background: #fff;
-border-radius: 16px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-flex: 0 0 auto;
-scroll-snap-align: start; padding: 24px 16px;
-margin-bottom: 0;
-position: relative;
-transition: box-shadow 0.2s; display: flex;
-align-items: flex-start; gap: 12px;
+.card .radio-wrapper {
+  min-width: 320px; /* or whatever width fits your design */
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 24px 16px;
+  margin-bottom: 0;
+  position: relative;
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 ```
 
@@ -289,64 +304,49 @@ align-items: flex-start; gap: 12px;
 让我们将上一步中的视图代码转换为函数，并在`cards.js`中的subscribe函数中调用它，如下所示：
 
 ```javascript
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { subscribe } from '../../rules/index.js';  
-function createCard(element, enums) {  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-    if (enums[index]?.name) {  
+      label.textContent = enums[index]?.name;
+    }
 
-      let label = radioWrapper.querySelector('label');  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-      if (!label) {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-        label = document.createElement('label');  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-        radioWrapper.appendChild(label);  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      }  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
+  });
 
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-
-    });  
-    return element;  
-
-} 
+  return element;
+}
 ```
 
 **使用Subscribe函数监听cards.js中的事件更改**
@@ -362,81 +362,58 @@ export default function decorate(element, fieldJson, container, formId) {
 **在cards.js中使用字段模型API**
 
 ```javascript
- 
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-import { subscribe } from '../../rules/index.js';  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-  
+      label.textContent = enums[index]?.name;
+    }
 
-  
+    // Attach index to input element for later reference
+    radioWrapper.querySelector('input').dataset.index = index;
 
-function createCard(element, enums) {  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-    if (enums[index]?.name) {  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-      let label = radioWrapper.querySelector('label');  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      if (!label) {  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
 
-        label = document.createElement('label');  
+    element.addEventListener('change', (e) => {
+      e.stopPropagation();
+      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
+      fieldModel.value = value.name;
+    });
+  });
 
-        radioWrapper.appendChild(label);  
-
-      }  
-
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    radioWrapper.querySelector('input').dataset.index = index;  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-        element.addEventListener('change', (e) => {  
-
-            e.stopPropagation();  
-
-            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
-
-            fieldModel.value = value.name;  
-
-        });  
-
-    });  
-
-    return element;  
-} 
+  return element;
+}
 ```
 
 现在会显示自定义卡组件，如下所示：
@@ -453,7 +430,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 您仅需几个简单步骤即可成功创建复杂的自定义信息卡选择组件。
 
-+++ ##创建自定义组件的手动或传统方法
++++ **创建自定义组件的手动或传统方法**
 
 传统的方法是手动执行以下步骤：
 
@@ -484,23 +461,29 @@ git add . && git commit -m "Add card custom component" && git push
 7. 在表单生成器中将组件注册为变体并设置变体属性或
    将JSON中的`fd:viewType/:type`添加到组件的名称，例如，将`fd:viewType`中的`definitions[]`值作为卡片添加到具有`id="form`的对象的组件数组。
 
-   ```javascript
-   {
-   "definitions": [
-   {
-   "title": "Cards",
-   "id": "cards", "plugins": {
-   "xwalk": {
-   "page": {
-   "resourceType":
-   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
-   "jcr:title": "Cards",
-   "fieldType": "radio-button", "fd:viewType": "cards",
-   "enabled": true, "visible": true}
+   ```
+       {
+     "definitions": [
+       {
+         "title": "Cards",
+         "id": "cards",
+         "plugins": {
+           "xwalk": {
+             "page": {
+               "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+               "template": {
+                 "jcr:title": "Cards",
+                 "fieldType": "radio-button",
+                 "fd:viewType": "cards",
+                 "enabled": true,
+                 "visible": true
+               }
+             }
+           }
+         }
+       }
+     ]
    }
-   } }
-   }
-   ]}
    ```
 
 8. **更新mappings.js**：将组件名称添加到&#x200B;**OOTBComponentDecorators**（对于OOTB样式组件）或&#x200B;**customComponents**&#x200B;列表，以便系统能够识别并加载该组件。
@@ -522,19 +505,21 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新_component-definition.json**：在`models/_component-definition.json`中，通过以下方式使用对象`id custom-components`更新组中的数组：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    这是为了提供对将与其余组件一起构建的新卡组件的引用
+   这是为了提供对将与其余组件一起构建的新卡组件的引用
 
 11. **运行生成:json脚本**：执行`npm run build:json`以编译所有组件JSON定义并将其合并到单个文件中，以便从服务器提供服务。 这可确保在合并输出中包含新组件的架构。
 
 12. 提交更改并将其推送到Git存储库。
 
 现在，您可以将自定义组件添加到表单。
+
++++
 
 ## 创建复合组件
 
@@ -548,81 +533,44 @@ git add . && git commit -m "Add card custom component" && git push
 此组合结构在相应组件的JSON文件中定义为模板。 以下示例说明如何为条款和条件组件定义模板：
 
 ```javascript
-{ 
-
-  "definitions": [ 
-
-    { 
-
-      "title": "Terms and conditions", 
-
-      "id": "tnc", 
-
-      "plugins": { 
-
-        "xwalk": { 
-
-          "page": { 
-
-            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
-
-            "template": { 
-
-              "jcr:title": "Terms and conditions", 
-
-              "fieldType": "panel", 
-
-              "fd:viewType": "tnc", 
-
-              "text": { 
-
-                "value": "Text related to the terms and conditions come here.", 
-
-                "sling:resourceType": "core/fd/components/form/text/v1/text", 
-
-                "fieldType": "plain-text", 
-
-                "textIsRich": true 
-
-              }, 
-
-              "approvalcheckbox": { 
-
-                "name": "approvalcheckbox", 
-
-                "jcr:title": "I agree to the terms & conditions.", 
-
-                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
-
-                "fieldType": "checkbox", 
-
-                "required": true, 
-
-                "type": "string", 
-
-                "enum": [ 
-
-                  "true" 
-
-                ] 
-
-              } 
-
-            } 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
-
-  ], 
-
-  ... 
-
-} 
+{
+  "definitions": [
+    {
+      "title": "Terms and conditions",
+      "id": "tnc",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions",
+            "template": {
+              "jcr:title": "Terms and conditions",
+              "fieldType": "panel",
+              "fd:viewType": "tnc",
+              "text": {
+                "value": "Text related to the terms and conditions come here.",
+                "sling:resourceType": "core/fd/components/form/text/v1/text",
+                "fieldType": "plain-text",
+                "textIsRich": true
+              },
+              "approvalcheckbox": {
+                "name": "approvalcheckbox",
+                "jcr:title": "I agree to the terms & conditions.",
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox",
+                "fieldType": "checkbox",
+                "required": true,
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  ...
+}
 ```
 
 ## 最佳实践
