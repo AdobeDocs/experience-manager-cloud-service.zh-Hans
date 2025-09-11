@@ -5,7 +5,7 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
+source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 4%
@@ -36,7 +36,7 @@ ht-degree: 4%
 * 程序在AEM as a Cloud Service上运行。
 * 该环境的最后一个管道已成功完成，并在&#x200B;**天内**&#x200B;前运行。
 * 环境状态为&#x200B;*正在运行*，没有管道正在进行中。
-* **可以在**&#x200B;环境、`Development`环境或`Stage`上还原以前部署的代码`Specialized Testng Environment`。
+* **可以在**&#x200B;环境、`Development`环境或`Stage`上还原以前部署的代码`Specialized Testing Environment`。
 
 如果任何检查失败，Cloud Manager将打开以下对话框，其中列出了一个或多个未满足的条件，并禁用&#x200B;**确认**，从而阻止还原。
 
