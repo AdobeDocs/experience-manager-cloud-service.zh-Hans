@@ -4,7 +4,7 @@ description: 为 EDS Form 创建自定义组件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 4%
@@ -175,6 +175,8 @@ subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(()
 #### 1.1文件和文件夹
 
 第一步是设置自定义组件的必要文件，并将其连接到存储库中的代码。 此过程由&#x200B;**AEM Forms Scaffolder CLI**&#x200B;自动完成，这样可以更快地搭建基架并连接必要的文件。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. 打开终端并导航到表单项目的根目录。
 2. 运行以下命令：
@@ -520,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新_component-definition.json**：在`models/_component-definition.json`中，通过以下方式使用对象`id custom-components`更新组中的数组：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    这是为了提供对将与其余组件一起构建的新卡组件的引用
+   这是为了提供对将与其余组件一起构建的新卡组件的引用
 
 11. **运行生成:json脚本**：执行`npm run build:json`以编译所有组件JSON定义并将其合并到单个文件中，以便从服务器提供服务。 这可确保在合并输出中包含新组件的架构。
 
