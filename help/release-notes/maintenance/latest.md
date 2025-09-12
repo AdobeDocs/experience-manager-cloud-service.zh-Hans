@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 65%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 22171 {#22171}
+## 发行版本 22171 {#22171}
 
-以下总结了维护版本22171的持续改进，该版本于2025年9月2日公开发布。 上一个维护版本是版本 21994。
+下面总结了对 2025 年 9 月 2 日公开发布的维护版本 22171 的持续改进。上一个维护版本是版本 21994。
 
 激活 2025.9.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 新增功能  {#new-features-22171}
 
-* Assets-53136：使用OpenAPI的Dynamic Media支持虚ID。
+* ASSETS-53136：具有 OpenAPI 功能的 Dynamic Media 支持虚域 ID。
 
 ### 增强 {#enhancements-22171}
 
@@ -32,15 +32,15 @@ ht-degree: 65%
 
 ### 修复的问题 {#fixed-issues-22171}
 
-* Assets-52510：对包含Unicode `U+202F`的文件名进行重复文件名检测失败。
-* Assets-53489：从Assets视图UI中删除文件夹时，不会取消批准包含的所有资源。
-* Assets-54821：Asset Link中出现间歇性“服务器错误”。
-* Assets-55024： AEM Assets“通过电子邮件下载”模板中的图像损坏。
-* Assets-55325：重命名资源后，Dynamic Media静态URL会忽略文件扩展名。
-* Assets-55334：“链接共享”对话框会短暂闪烁并消失或从不显示。
-* Assets-55382：已重新启动异步资源作业，并创建了重复的目标文件夹。
-* Assets-55472：忽略管理发布选项“仅包括已发布的页面”。
-* SITES-31600：Contexthub js错误中断了个性化。
+* ASSETS-52510：对于包含 Unicode `U+202F` 的文件名，对重复文件名的检测失败。
+* ASSETS-53489：从资产视图 UI 中删除文件夹不会取消批准其包含的所有资产。
+* ASSETS-54821：资产链接中偶尔出现“服务器错误”。
+* ASSETS-55024：AEM Assets 的“通过电子邮件下载”模板中图像显示不正确。
+* ASSETS-55325：资产重命名后，Dynamic Media 静态 URL 漏掉了文件扩展名。
+* ASSETS-55334：链接共享对话框会短暂闪烁然后消失，或者完全不显示。
+* ASSETS-55382：重新启动异步资产作业后，会创建重复的目标文件夹。
+* ASSETS-55472：管理发布选项“仅包含已发布的页面”被忽略。
+* SITES-31600：Contexthub js 错误中断个性化。
 
 如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
