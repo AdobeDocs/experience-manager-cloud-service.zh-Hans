@@ -4,9 +4,9 @@ description: 了解 Adobe Experience Hub 页面。
 landing-page-description: 了解 Experience Hub，它是访问所有 AEM 功能的统一起点。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
+source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 9%
