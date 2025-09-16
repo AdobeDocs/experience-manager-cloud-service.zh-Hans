@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
+source-git-commit: 3a8670061ce0e45f9ae70ab8d8f5df0604ed503a
 workflow-type: tm+mt
-source-wordcount: '6619'
+source-wordcount: '6618'
 ht-degree: 97%
 
 ---
@@ -525,7 +525,7 @@ ht-degree: 97%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -1002,6 +1002,21 @@ ht-degree: 97%
       + [重新启动 AEM SDK](/help/forms/restart-aem-sdk.md)
       + [解决表单创建失败](/help/forms/form-creation-failing.md)
       + [自定义提交操作中的502错误页面](/help/forms/custom-submit-action-troubleshooting.md)
++ AEM的人工智能 {#ai-in-aem}
+   + [概述](/help/ai-in-aem/overview.md)
+   + AI 助手 {#ai-assistant}
+      + [在AEM中配置AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+      + [关于AEM中的AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+   + 生成式 AI {#generative-ai}
+      + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
+      + [生成变体](/help/generative-ai/generate-variations.md)
+   + Forms Experience Builder {#forms-experience-builder}
+      + [AEM Forms 的 AI 助手（表单体验生成器）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+      + [AEM Forms AI助手快速入门](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [AEM Forms AI助手快速入门(Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+      + [Forms Experience Builder — 最佳做法](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [Forms Experience Builder — 故障排除指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概述 {#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
@@ -1216,19 +1231,6 @@ ht-degree: 97%
          + [使用 AEM 为 Headless 创作基本内容](/help/journey-headless/author/basics.md)
          + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
-+ AI 助手 {#ai-assistant}
-   + [在AEM中配置AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-   + [关于AEM中的AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-+ 生成式 AI {#generative-ai}
-   + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
-   + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
-   + [生成变体](/help/generative-ai/generate-variations.md)
-   + [AEM Forms 的 AI 助手（表单体验生成器）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [AEM Forms AI助手快速入门](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Forms AI助手快速入门(Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-   + [Forms Experience Builder — 最佳做法](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-   + [Forms Experience Builder — 故障排除指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager  {#using-cloud-manager}

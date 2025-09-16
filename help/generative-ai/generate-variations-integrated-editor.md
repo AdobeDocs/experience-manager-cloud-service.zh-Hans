@@ -1,12 +1,12 @@
 ---
 title: 生成变体
 description: 了解“生成变体”，该功能可通过 AEM as a Cloud Service 中的各种编辑器进行访问
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '1417'
+source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
+workflow-type: tm+mt
+source-wordcount: '1418'
 ht-degree: 100%
 
 ---
@@ -332,7 +332,7 @@ The brand score shows you how on-brand the generated variation is.
 
 * [在 Experience Cloud 上生成变体登陆页面](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
-* [AEM as a Cloud Service 中的生成式](/help/generative-ai/generative-ai-in-aem.md)
+* [AEM as a Cloud Service 中的生成式 AI](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## 版本历史记录 {#release-history}
 

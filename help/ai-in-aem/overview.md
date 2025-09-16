@@ -1,0 +1,62 @@
+---
+title: AEM as a Cloud Service的人工智能
+description: 了解Adobe Experience Manager as a Cloud Service中的AI
+feature: Generative AI, AI Assistant, AI Tools
+role: Admin, Architect, Developer, User
+source-git-commit: 728163aca6ca8829829dd64cdc563d9c3b812c9d
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 81%
+
+---
+
+
+# AEM as a Cloud Service的人工智能 {#ai-in-aem-as-a-cloud-service}
+
+人工智能是Adobe Experience Manager as a Cloud Service的一个组成部分，用于支持用户查找信息或生成体验。
+
+## AI 助手 {#ai-assistant}
+
+Adobe Experience Manager[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI助手提供了一个对话界面，旨在简化查找与AEM相关的查询的答案。
+
+## AEM中的创新型人工智能 {#generative-ai-in-aem}
+
+Adobe Experience Manager（AEM）as a Cloud Service 的 Adobe 生成式 AI 使品牌能够在编辑界面内通过复制和图像生成来创造高性能体验。通过生成式 AI，您可以自主创建以下内容：
+
+* 品牌意识——创建包含品牌语调、风格指南和其他具体要求的内容。
+* 按受众个性化——利用细粒度的内容性能洞察来为所有渠道中的任何角色定制内容。
+* 特定区域——超越翻译并根据区域偏好和行为模式调整您的内容。
+* 持续优化——运行试验来确定哪些变体表现最佳，并利用洞察来改进未来 AI 生成的内容。
+
+生成式 AI 在整个 AEM 中得到广泛应用：
+
+* [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
+
+  “生成变体”功能使用生成式人工智能（AI）根据您的输入内容创建内容变体。创建变体后，您可以在您的网站上使用这些内容，并使用 Edge Delivery Services 的试验功能衡量它们的成功。
+
+   * 以及以前的版本[生成变体](/help/generative-ai/generate-variations.md)
+
+     >[!NOTE]
+     >
+     >建议您访问 [AEM 编辑器中集成的生成变体](/help/generative-ai/generate-variations-integrated-editor.md)，因为以前的版本将来会被弃用。
+   * [生成变体的发行说明](/help/generative-ai/release-notes-generate-variations.md)
+
+* [Content Hub 概述](/help/assets/product-overview.md)
+
+  Content Hub 允许您使用 Adobe Express 创建新内容（如果您有 Adobe Express 权限）。您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
+
+* [AI 生成的智能标记](/help/assets/metadata-assets-view.md#ai-smart-tags)
+
+  对于数字资产，您可以使用 AI 自动分配描述性标记，而不用依赖手动输入。这些 AI 生成的标记提高了元数据的质量，使资产更易于搜索、分类和推荐。这种方法不仅通过消除手动标记提高了效率，而且确保了大量数字内容之间的一致性和可扩展性。
+
+<!-- 
+  * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
+-->
+
+## 更多信息 {#further-information}
+
+* [Adobe AI 概述](https://www.adobe.com/cn/ai/overview.html)
+
+* [Experience Cloud 产品中的生成式 AI](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai)
+
+   * [Experience Cloud 产品中的生成式 AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai#aem)
