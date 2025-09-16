@@ -176,7 +176,7 @@ ht-degree: 1%
    * **提交表单（并发送签名协议）**：此选项将立即提交表单，然后将要签名的表单发送给收件人。
    * **提交表单（在每个收件人完成签名仪式后）**：此选项仅在所有签名者完成签名过程后提交自适应Forms。 您可以配置间隔以检查所有签名者的签名状态。 有关详细信息，请参阅[配置 [!DNL Adobe Acrobat Sign] 计划程序](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status)。
 
-1. 从&#x200B;**[!UICONTROL 收件人可以完成]**&#x200B;对话框中选择签名顺序。 收件人可以按任意顺序依次签署自适应表单&#x200B;**** — 一个接一个收件人，或&#x200B;**[!UICONTROL 同时]**。
+1. 从&#x200B;**[!UICONTROL 收件人可以完成]**&#x200B;对话框中选择签名顺序。 收件人可以按任意顺序依次签署自适应表单&#x200B;**&#x200B;** — 一个接一个收件人，或&#x200B;**[!UICONTROL 同时]**。
 
    收件人按顺序每次收到Adobe Sign协议。 收件人完成分配的操作后，协议将发送给下一个收件人，依此类推。
 
@@ -350,8 +350,8 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 **问：**&#x200B;您可以将自适应表单嵌入到其他自适应表单中。 是否可以为嵌入式自适应表单启用[!DNL Adobe Sign]？
 **Ans：**&#x200B;否，Experience Manager Forms不支持使用嵌入启用了[!DNL Adobe Sign]的自适应表单以供签名的自适应表单
 
-**问：**当我使用高级模板创建自适应表单并打开它进行编辑时，出现错误消息“电子签名或收件人配置不正确”。 显示。 如何解决错误消息？
-使用高级模板创建的**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]收件人。
+**问：**&#x200B;当我使用高级模板创建自适应表单并打开它进行编辑时，出现错误消息“电子签名或收件人配置不正确”。 显示。 如何解决错误消息？
+使用高级模板创建的&#x200B;**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]收件人。
 
 **问：**&#x200B;我能否在自适应表单的静态文本组件中使用[!DNL Adobe Sign]文本标记？
 **答案：**&#x200B;是，您可以在文本组件中使用文本标记将[!DNL Adobe Sign]字段添加到启用记录文档（仅自动生成的记录文档选项）的自适应表单。 要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/using/text-tag.html)。 另请注意，自适应Forms对文本标记的支持有限。 您只能使用文本标记创建[Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支持的字段。
