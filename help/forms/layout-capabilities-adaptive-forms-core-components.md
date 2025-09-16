@@ -17,7 +17,7 @@ ht-degree: 16%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hans) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service（核心组件） | 本文 |
 
@@ -69,7 +69,7 @@ ht-degree: 16%
 
 垂直选项卡布局
 
-您可以使用[垂直制表符组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)在表单中添加垂直制表符布局。 有关如何配置垂直选项卡组件的各种属性的详细说明，请参阅[垂直选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
+您可以使用[垂直制表符组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)在表单中添加垂直制表符布局。 有关如何配置垂直选项卡组件的各种属性的详细说明，请参阅[垂直选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
 
 
 >[!TAB 水平选项卡布局]
@@ -81,7 +81,7 @@ ht-degree: 16%
 
 水平选项卡布局
 
-您可以使用[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
 >[!TAB 折叠布局]

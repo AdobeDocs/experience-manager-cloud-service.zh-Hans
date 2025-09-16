@@ -20,7 +20,7 @@ ht-degree: 13%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service（核心组件） | 本文 |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=zh-Hans) |
 
 虽然每个表单都针对特定目的而设计，但大多数表单中都存在一些通用区段，例如提供个人详细信息，如姓名和地址、家庭详细信息、收入详细信息。 每次创建新表单时，表单开发人员都需要创建这些常用区段。
 
@@ -32,7 +32,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
-> 您可以使用表单片段组件[的](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)配置对话框和设计对话框轻松自定义用户的片段体验。
+> 您可以使用表单片段组件[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)配置对话框和设计对话框轻松自定义用户的片段体验。
 
 ## 创建自适应表单片段 {#create-a-fragment}
 

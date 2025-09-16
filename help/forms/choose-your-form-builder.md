@@ -199,6 +199,6 @@ AEM Forms提供了三种主要的表单构建方法，每种方法均针对不�
 ## 相关文章
 
 - [详细的表单创作比较](/help/edge/docs/forms/authoring-a-form.md)
-- [AEM Forms核心组件概述](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+- [AEM Forms核心组件概述](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)
 - [适用于Forms的Edge Delivery Services概述](/help/edge/docs/forms/overview.md)
 - [带核心组件的Headless自适应Forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)

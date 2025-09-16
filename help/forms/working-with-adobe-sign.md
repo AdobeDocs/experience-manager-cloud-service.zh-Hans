@@ -17,12 +17,12 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL Adobe Sign]**&#x200B;字段![Adobe Sign](assets/adobesign.png)图标。 它显示用于选择和添加[!DNL Adobe Sign]字段的选项。
 
-   展开&#x200B;**[!UICONTROL 类型]**&#x200B;下拉字段以选择[!DNL Adobe Sign]字段，然后选择“完成![保存](assets/save_icon.svg)”图标以将所选字段添加到[!DNL Adobe Sign]块。 **[!UICONTROL 类型]**&#x200B;下拉字段包括签名、收件人信息和数据字段类型。 [!DNL Adobe Sign]与AEM的集成[!DNL Forms]仅支持[!UICONTROL 类型]下拉框中列出的字段。 有关[!DNL Adobe Sign]字段的详细信息，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/help/field-types.html)。
+   展开&#x200B;**[!UICONTROL 类型]**&#x200B;下拉字段以选择[!DNL Adobe Sign]字段，然后选择“完成![保存](assets/save_icon.svg)”图标以将所选字段添加到[!DNL Adobe Sign]块。 **[!UICONTROL 类型]**&#x200B;下拉字段包括签名、收件人信息和数据字段类型。 [!DNL Adobe Sign]与AEM的集成[!DNL Forms]仅支持[!UICONTROL 类型]下拉框中列出的字段。 有关[!DNL Adobe Sign]字段的详细信息，请参阅[Adobe Sign文档](https://helpx.adobe.com/cn/sign/help/field-types.html)。
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -144,7 +144,7 @@ ht-degree: 1%
 
    如果从下拉列表中选择&#x200B;**[!UICONTROL 数字签名]**，则可以将数字签名应用于自适应表单：
 
-   * 使用云签名在线使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)签名。
+   * 使用云签名在线使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/cn/sign/kb/digital-certificate-providers.html)签名。
    * 使用智能卡、USB令牌或基于文件的数字ID通过Adobe Acrobat或Reader下载文档，从而在本地下载文档。
 
 ### 为自适应表单启用[!DNL Adobe Sign] {#enableadobsignforanadaptiveform}
@@ -205,7 +205,7 @@ ht-degree: 1%
 
    * **[!UICONTROL 收件人和填写表单的人员是否相同？]：**&#x200B;如果表单填写者和第一个收件人是同一个人，请选择&#x200B;**[!UICONTROL 是]**。<!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
-   * **[!UICONTROL 收件人角色]：**&#x200B;选择收件人的角色。 用于商业和企业服务级别的Adobe Sign可以选择扩展协议收件人[的](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html)角色，而不只是&#x200B;**签名者**，以便更好地匹配他们的工作流要求。
+   * **[!UICONTROL 收件人角色]：**&#x200B;选择收件人的角色。 用于商业和企业服务级别的Adobe Sign可以选择扩展协议收件人[的](https://helpx.adobe.com/cn/sign/using/set-up-signer-approver-roles.html)角色，而不只是&#x200B;**签名者**，以便更好地匹配他们的工作流要求。
 
    * **[!UICONTROL 收件人电子邮件地址]：**&#x200B;指定收件人的电子邮件地址。 收件人通过指定的电子邮件地址接收Adobe Sign协议。 您可以选择使用表单字段、登录用户的Experience Manager用户配置文件中提供的电子邮件地址，或手动输入电子邮件地址。 这是强制步骤。
 
@@ -213,7 +213,7 @@ ht-degree: 1%
      >
      >确保第一个收件人或唯一收件人（如果有单个收件人）的电子邮件地址与用于配置AEM Cloud Service的[!DNL Adobe Sign]帐户不同。
 
-   * **[!UICONTROL 收件人身份验证方法]：**&#x200B;指定在打开Adobe Sign协议之前对收件人进行身份验证的方法。 您可以在电话、知识库、基于社交身份的身份验证和[的](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html)政府ID[!DNL Adobe Acrobat Sign]之间进行选择。 对于[!DNL Adobe Acrobat Sign for Government]，您可以在电话和基于知识的身份验证之间进行选择。
+   * **[!UICONTROL 收件人身份验证方法]：**&#x200B;指定在打开Adobe Sign协议之前对收件人进行身份验证的方法。 您可以在电话、知识库、基于社交身份的身份验证和[的](https://helpx.adobe.com/cn/sign/using/adobesign-authentication-government-id.html)政府ID[!DNL Adobe Acrobat Sign]之间进行选择。 对于[!DNL Adobe Acrobat Sign for Government]，您可以在电话和基于知识的身份验证之间进行选择。
 
    >[!NOTE]
    >
@@ -327,7 +327,7 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 
    使用以下方式将数字签名应用于自适应表单：
 
-   * 云签名：使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)签名。
+   * 云签名：使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/cn/sign/kb/digital-certificate-providers.html)签名。
    * Adobe Acrobat或Reader：使用Adobe Acrobat或Reader下载并打开文档，以使用智能卡、USB令牌或基于文件的数字ID进行签名。
 
      >[!NOTE]
@@ -354,7 +354,7 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 使用高级模板创建的&#x200B;**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]收件人。
 
 **问：**&#x200B;我能否在自适应表单的静态文本组件中使用[!DNL Adobe Sign]文本标记？
-**答案：**&#x200B;是，您可以在文本组件中使用文本标记将[!DNL Adobe Sign]字段添加到启用记录文档（仅自动生成的记录文档选项）的自适应表单。 要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/using/text-tag.html)。 另请注意，自适应Forms对文本标记的支持有限。 您只能使用文本标记创建[Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支持的字段。
+**答案：**&#x200B;是，您可以在文本组件中使用文本标记将[!DNL Adobe Sign]字段添加到启用记录文档（仅自动生成的记录文档选项）的自适应表单。 要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/cn/sign/using/text-tag.html)。 另请注意，自适应Forms对文本标记的支持有限。 您只能使用文本标记创建[Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支持的字段。
 
 ## 疑难解答 {#troubleshoot}
 
