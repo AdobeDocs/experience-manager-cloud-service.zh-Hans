@@ -1,28 +1,28 @@
 ---
 title: 如何创建自适应表单？
-description: 通过我们的分步教程了解如何创建移动响应式自适应表单。这些表单可以跨设备无缝适应，从而确保流畅体验。
-keywords: 自适应Forms、响应式Forms、HTML5 Forms
+description: 了解如何使用AEM Forms的表单生成器创建移动响应式自适应表单。 非常适合表单创建者和开发人员，他们需要能够跨设备无缝调整的表单。
+keywords: 表单生成器，表单生成器，创建表单，表单生成器，自适应表单，响应式表单， HTML5 forms，构建表单， AEM forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '2679'
-ht-degree: 78%
+source-wordcount: '2703'
+ht-degree: 73%
 
 ---
 
-# 创建自适应表单 {#creating-an-adaptive-form}
+# 表单生成器快速入门指南 {#creating-an-adaptive-form}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | 本文 |
 
-自适应表单使您能够创建引人入胜、响应式、动态和自适应的表单。AEM Forms 提供便于企业用户使用的向导以快速创建自适应表单。该向导可快速地在选项卡之间导航，从而轻松地选择预先配置的模板、样式、字段和提交选项以创建自适应表单。
+AEM Forms的表单生成器允许您创建有吸引力、响应式、动态和自适应表单。 无论您是构建专业表单的表单创建者，还是需要快速创建响应式表单，AEM Forms都可以提供用户友好的向导。 该向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项。
 
 ![创建自适应表单的向导](/help/release-notes/assets/wizard.png){width="100%" align="center"}
 
@@ -117,7 +117,7 @@ ht-degree: 78%
 
 * **权限**：将用户添加到[!DNL forms-users]，为他们提供创建自适应表单的权限。有关特定于表单的用户组的详细列表，请参阅[组和权限](forms-groups-privileges-tasks.md)。
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#create-project)。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。它的预格式化的组件包含某些属性和内容结构。它还提供用于定义主题和提交操作的选项。主题定义外观，提交操作定义在提交自适应表单时执行的操作。例如，将收集到的数据发送到数据源。Cloud Service 支持两种类型的模板：
 
@@ -198,7 +198,7 @@ To use a Form Data Model for creating an Adaptive Form:
 >
 >You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Create an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
 XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
@@ -243,7 +243,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存属性。
 
-您还可以在自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。
+您还可以从自适应表单生成器或自适应表单模板生成器中修改表单模型属性。
 
 1. 选择&#x200B;**[!UICONTROL 自适应表单容器（根）]**&#x200B;组件。
 1. 单击![配置](/help/forms/assets/configure-icon.svg)图标来打开自适应表单容器的&#x200B;**[!UICONTROL 属性]**。

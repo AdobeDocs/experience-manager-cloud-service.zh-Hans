@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 5%
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
 可以使用[主题编辑器](themes.md)指定样式来定义自适应表单的整体外观和样式。 此外，您还可以将内联CSS样式应用于各个自适应表单组件并即时预览更改。 内联样式会覆盖主题中提供的样式。
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 要将内联样式添加到组件，请执行以下操作：
 
-1. 在表单编辑器中打开表单，并将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中选择![画布下拉列表](assets/Smock_ChevronDown.svg) > **[!UICONTROL 样式]**。
+1. 在表单生成器中打开表单，然后将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中选择![画布下拉列表](assets/Smock_ChevronDown.svg) > **[!UICONTROL 样式]**。
 1. 在页面中选择组件，然后选择编辑按钮![edit-button](assets/edit.svg)。 样式属性在侧栏中打开。
 
    您还可以从侧栏中的表单层次结构树中选择组件。 表单层次结构树在侧栏中可用作表单对象。
@@ -40,7 +40,7 @@ ht-degree: 5%
 
 1. 单击侧边栏中的选项卡以指定CSS属性。 您可以指定属性，例如：
 
-   * [!UICONTROL Dimension和位置] （显示设置、填充、高度、宽度、边距、位置、z索引、浮动、清除、溢出）
+   * [!UICONTROL 维度和位置]（显示设置、填充、高度、宽度、边距、位置、z索引、浮动、清除、溢出）
    * [!UICONTROL 文本] （字体系列、粗细、颜色、大小、行高和对齐）
    * [!UICONTROL 背景]（图像和渐变，背景颜色）
    * [!UICONTROL 边框]（宽度、样式、颜色、半径）
@@ -65,7 +65,7 @@ ht-degree: 5%
   <tr>
    <td><p>选择器</p> </td>
    <td><p>CSS属性</p> </td>
-   <td><p>价值</p> </td>
+   <td><p>值</p> </td>
    <td><p>效果</p> </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>标签</p> </td>
-   <td><p>Dimension和位置&gt;宽度</p> </td>
+   <td><p>“尺寸和位置”&gt;“宽度”</p> </td>
    <td><p>100像素</p> </td>
    <td><p>将标签的宽度固定为100px</p> </td>
   </tr>

@@ -10,7 +10,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # 参考自适应表单片段 {#reference-adaptive-form-fragments}
 
-自适应表单片段是一组字段，或包含一组可在创建表单时使用的字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中编辑该表单片段。
+自适应表单片段是一组字段，或包含一组可在创建表单时使用的字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单生成器中编辑该表单片段。
 
 对于自适应Forms作者，[!DNL AEM Forms]包[!DNL AEM FORMS]参考片段中提供了参考片段。 它包括以下片段：
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 * 条款和条件
 * 带涂鸦的条款和条件
 
-安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 若要安装包，请参阅[通过Cloud Manager和包管理器部署内容包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans#deploying-content-packages-via-cloud-manager-and-package-manager)和[如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)。
+安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 若要安装包，请参阅[通过Cloud Manager和包管理器部署内容包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)和[如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 ![列出了所有片段](assets/ootb-frags.png)
 

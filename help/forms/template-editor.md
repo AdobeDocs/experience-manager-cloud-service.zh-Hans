@@ -4,7 +4,7 @@ description: 使用模板编辑器创建自适应表单模板以定义基本结�
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 2%
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
 | AEM as a Cloud Service | 本文 |
 
 在创作表单时，可在编辑器中添加字段和组件以定义表单结构、内容和操作。 您在表单容器的`guideRootPanel`中添加字段和组件。 使用模板编辑器，您可以创建一个模板，其中包含作者可用于创建表单的基本结构和初始内容。
@@ -30,13 +30,13 @@ ht-degree: 2%
 * 提供表单的初始内容。
 * 指定主题“提交操作”。
 
-您可以从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)门户下载并安装[!DNL AEM Forms]引用内容包，以将引用主题和模板导入到您的环境。
+您可以从[!DNL AEM Forms]软件分发[门户下载并安装](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)引用内容包，以将引用主题和模板导入到您的环境。
 
 ## 使用模板 {#working-with-templates}
 
 您可以从“工具”菜单访问模板编辑器，方法是导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 模板]**。 在此处，模板在启用可编辑模板的文件夹中进行组织。
 
-Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=zh-Hans#editing-templates-template-authors)。
+Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
 
 ### 创建模板 {#create-template}
 
@@ -52,7 +52,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
 ### 模板编辑器用户界面 {#template-editor-ui}
 
-在打开模板进行编辑时，您可以看到以下AEM Editor组件：
+在打开模板进行编辑时，您可以看到以下AEM编辑器组件：
 
 * **页面工具栏**
 包含以下选项：
@@ -160,11 +160,11 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
 ## 导入或导出模板 {#importing-or-exporting-a-template}
 
-表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`https://<server>:<port>/crx/packmgr`中的`/conf`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您也可以[使用AEM Archype创建模板并将其部署到Cloud Service实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=zh-Hans#prerequisites)。
+表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`/conf`中的`https://<server>:<port>/crx/packmgr`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您还可以[使用AEM Archype创建模板并将其部署到云服务实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
 
 >[!NOTE]
 >
-> * 您还可以直接从自适应表单编辑器或自适应表单模板编辑器配置[!UICONTROL 记录文档]模板。 有关详细信息，请参阅[生成自适应Forms的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
+> * 您还可以直接从自适应表单生成器或自适应表单模板生成器配置[!UICONTROL 记录文档]模板。 有关详细信息，请参阅[生成自适应Forms的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
 
 
 ## 将表单数据模型架构关联到模板 {#associating-form-data-model-schema-in-template}
@@ -226,7 +226,7 @@ Perform the following steps to show and hide templates:
 
 * 在模板编辑器中修改表单的属性时，请勿使用BindReference属性。
 * 如果要添加断点，请在创作自适应表单模板时创建断点。
-有关断点的详细信息，请参阅[响应布局](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=zh-Hans#authoring)。
+有关断点的详细信息，请参阅[响应布局](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring)。
 
 
 ## 另请参阅 {#see-also}

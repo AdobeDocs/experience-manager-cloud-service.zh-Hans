@@ -4,7 +4,7 @@ description: 使用自适应表单主题设计自适应表单的样式并提供�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | 本文 |
 
 您可以创建并应用主题来使自适应表单<!-- or an interactive communication-->风格化。 主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。主题是独立管理的，没有引用自适应表单<!-- or interactive communication -->。
@@ -149,7 +149,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>8.</td>
-   <td>准时发布</td>
+   <td>发布开启时间</td>
    <td>是</td>
    <td>自动发布主题的时间。</td>
   </tr>
@@ -299,7 +299,7 @@ ht-degree: 1%
 
 在此示例中，字段标签的样式发生了更改，并且当为样式选择了响应面板描述时，列表条目会添加到资产库中。 资源库中的条目可用于更改响应面板描述的样式。
 
-将样式添加到资产库时，该样式可用于其他主题以及表单编辑器UI的[样式模式](inline-style-adaptive-forms.md)。 同样，当您使用表单编辑器<!-- or interactive communication editor --> UI的样式模式来设置组件的样式时，该样式将被缓存，并可用于主题中。
+将样式添加到资产库时，该样式可用于其他主题以及表单生成器UI的[样式模式](inline-style-adaptive-forms.md)。 同样，当您使用表单生成器<!-- or interactive communication editor --> UI的样式模式来设置组件的样式时，该样式将被缓存，并可用于主题中。
 
 通过资产库旁边的加号按钮，您可以使用提供的名称永久保存样式。 加号按钮可保存样式，即使您未单击侧边栏中的“保存”按钮以将样式应用于组件也是如此。 在样式模式中，保存样式以供以后使用的加号按钮不可用。
 
@@ -456,7 +456,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL 数字框小组件]**。
 1. 侧栏标题将更改为数值框小组件，并显示用于自定义其外观的选项。
-使用侧边栏中的&#x200B;**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
+使用侧边栏中的**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
 
 不要选择&#x200B;**[!UICONTROL 数值框小组件]**，请在组件工具栏中选择&#x200B;**[!UICONTROL 字段小组件]**，然后执行上述步骤。 为&#x200B;**[!UICONTROL 字段小组件]**&#x200B;选项选择维度时，除数字框之外的所有文本框都具有相同的大小。
 
@@ -673,10 +673,10 @@ You can use the theme configuration service to add more fonts to the theme edito
 
   不建议更改容器面板布局宽度。 指定容器面板的宽度时，其将变为静态并且不会适应不同的显示。
 
-* **何时使用表单编辑器或主题编辑器来处理页眉和页脚**
+* **何时使用表单生成器或主题编辑器来处理页眉和页脚**
 
   如果要使用字体样式、背景和透明度等样式选项来设置页眉和页脚的样式，请使用主题编辑器。
-如果要提供徽标图像、标题中的公司名称以及页脚中的版权信息等信息，请使用表单编辑器选项。
+如果要提供徽标图像、标题中的公司名称以及页脚中的版权信息等信息，请使用表单生成器选项。
 
 
 ## 另请参阅 {#see-also}

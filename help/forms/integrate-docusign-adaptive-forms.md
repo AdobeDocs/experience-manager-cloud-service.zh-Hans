@@ -4,10 +4,10 @@ description: 了解如何将DocuSign与自适应表单一起使用来收集电�
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -19,9 +19,9 @@ DocuSign是一个著名的电子签名解决方案。 您可以用它来电子�
 - 更快地完成人力资源流程，并为员工提供数字体验。
 - 缩短合同周期，更快地吸引供应商。
 
-AEM Formsas a Cloud Service为DocuSign[&#128279;](#deploy-custom-submit-action)提供了自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。
+AEM Forms as a Cloud Service为DocuSign[提供了](#deploy-custom-submit-action)自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。
 
-| 您还可以使用Adobe的电子签名解决方案Adobe Sign对自适应表单进行电子签名。 AEM Forms与Adobe Sign的集成更深入了，它提供了更精细的控制，如顺序和并行签名、多种身份验证方法、表单内签名体验等。 有关详细信息，请参阅[在自适应表单中使用Adobe Sign](working-with-adobe-sign.md)。 |
+| 您还可以使用Adobe的电子签名解决方案Adobe Sign对自适应表单进行电子签名。 AEM Forms与Adobe Sign集成更深，并提供更精细的控制，如顺序和并行签名、多种身份验证方法、表单内签名体验等。 有关详细信息，请参阅[在自适应表单中使用Adobe Sign](working-with-adobe-sign.md)。 |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## 先决条件 {#prerequisites}
@@ -36,12 +36,12 @@ AEM Formsas a Cloud Service为DocuSign[&#128279;](#deploy-custom-submit-action)�
 
 ## 配置自定义提交操作和DocuSign云服务 {#deploy-custom-submit-action}
 
-AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。 自定义提交操作的代码在[AEM Forms示例公共Git存储库](https://github.com/adobe/aem-forms-docusign-sample)上可用。 您可以在您的AEM Forms环境中按原样部署代码，也可以根据贵组织的要求自定义代码。
+AEM Forms as a Cloud Service为DocuSign提供了一个自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。 自定义提交操作的代码在[AEM Forms示例公共Git存储库](https://github.com/adobe/aem-forms-docusign-sample)上可用。 您可以在您的AEM Forms环境中按原样部署代码，也可以根据贵组织的要求自定义代码。
 
-执行以下步骤以配置现成的自定义提交操作和DocuSignCloud Service：
+执行以下步骤以配置现成的自定义提交操作和DocuSign Cloud Service：
 
-1. [克隆AEM Formsas a Cloud Service项目](setup-local-development-environment.md#forms-cloud-service-local-development-environment)或基于[AEM Archetype 27](https://github.com/adobe/aem-project-archetype)或更高版本将[!DNL Experience Manager Forms]创建为[!DNL Cloud Service]项目。 要基于AEM原型将[!DNL Experience Manager Forms]创建为[!DNL Cloud Service]项目，请执行以下操作：
-   </br>打开命令提示符并运行以下命令以创建[!DNL Experience Manager Forms]as a Cloud Service项目：
+1. [克隆AEM Forms as a Cloud Service项目](setup-local-development-environment.md#forms-cloud-service-local-development-environment)或基于[!DNL Experience Manager Forms]AEM Archetype 27[!DNL Cloud Service]或更高版本将[创建为](https://github.com/adobe/aem-project-archetype)项目。 要基于AEM原型将[!DNL Experience Manager Forms]创建为[!DNL Cloud Service]项目，请执行以下操作：
+   </br>打开命令提示符并运行以下命令以创建[!DNL Experience Manager Forms] as a Cloud Service项目：
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=27 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -51,7 +51,7 @@ AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 �
 
 1. 克隆[aem-forms-samples](https://github.com/adobe/aem-forms-docusign-sample)存储库。 此存储库包含用于DocuSign的自定义提交操作以及连接到DocuSign服务器的配置详细信息。
 
-1. 打开在步骤1中创建的AEM Formsas a Cloud Service项目，以便在您选择的IDE中进行编辑。
+1. 打开在步骤1中创建的AEM Forms as a Cloud Service项目，以便在您选择的IDE中进行编辑。
 
 1. 打开`[AEM Forms as a Cloud Service project]\pom.xml`文件进行编辑，并进行以下更改：
 
@@ -118,15 +118,15 @@ AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 �
 
    `mvn -PautoInstallPackage clean install`
 
-   执行这些步骤后，您可以查看本地开发环境中的自适应表单和[DocuSign云服务配置](#configure-docusign-with-aem-forms)的提交选项列表中提供的新的自定义提交操作[使用DocuSign电子签名提交](#enabledocusign)。
+   执行这些步骤后，您可以查看本地开发环境中的自适应表单和[DocuSign云服务配置](#enabledocusign)的提交选项列表中提供的新的自定义提交操作[使用DocuSign电子签名提交](#configure-docusign-with-aem-forms)。
 
-1. 编译代码并将其[部署到您的 [!DNL AEM Forms] as a Cloud Service环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans#customer-releases)。
+1. 编译代码并将其[部署到您的 [!DNL AEM Forms] as a Cloud Service环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases)。
 
 ## 将[!DNL DocuSign]与[!DNL AEM Forms]集成 {#configure-docusign-with-aem-forms}
 
 满足前提条件后，执行以下步骤以在创作实例上将[!DNL DocuSign]与[!DNL AEM Forms]集成。
 
-1. 导航到&#x200B;**[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]**，然后选择要承载配置的文件夹。
+1. 导航到&#x200B;**[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL DocuSign]**，然后选择要托管配置的文件夹。
 
 1. 在配置页面上，选择&#x200B;**[!UICONTROL 创建]**&#x200B;以在AEM Forms中创建[!DNL DocuSign]配置。
 1. 在&#x200B;**[!UICONTROL 创建DocuSign配置]**&#x200B;页面的&#x200B;**[!UICONTROL 常规]**&#x200B;选项卡中，为该配置指定一个&#x200B;**[!UICONTROL 名称]**，然后选择&#x200B;**[!UICONTROL 下一步]**。 您可以选择指定&#x200B;**[!UICONTROL 标题]**。
@@ -152,7 +152,7 @@ AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 �
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建[!DNL DocuSign]配置。
 
-1. 选择配置并单击&#x200B;**[!UICONTROL Publish]**，选择配置，然后单击&#x200B;**[!UICONTROL Publish]**。 这会将配置复制到相应的发布环境。
+1. 选择配置并单击&#x200B;**[!UICONTROL 发布]**，选择配置，然后单击&#x200B;**[!UICONTROL 发布]**。 这会将配置复制到相应的发布环境。
 
 1. 在开发人员实例、暂存实例和生产实例（以剩下的实例为准）上重复上述所有步骤以使用 [!DNL AEM Forms] 为环境配置 [!DNL DocuSign]。
 
@@ -163,21 +163,21 @@ AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 �
 您可以为现有的自适应表单启用[!DNL DocuSign]或创建启用[!DNL DocuSign]的自适应表单。 选择下列选项之一：
 
 - [创建启用 [!DNL DocuSign] 的自适应表单](#create-an-adaptive-form-for-docusign)
-- 为现有的自适应表单[&#128279;](#editafsign)启用启用 [!DNL DocuSign] 。
+- 为现有的自适应表单[启用 [!DNL DocuSign] 启用](#editafsign)。
 
 #### 创建DocuSign自适应表单 {#create-an-adaptive-form-for-docusign}
 
 要创建启用签名的自适应表单，请执行以下操作：
 
-1. 导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
+1. 导航至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;并选择&#x200B;**[!UICONTROL 自适应表单]**。 此时将显示模板列表。 选择模板并选择&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中：
 
    1. 为自适应表单指定&#x200B;**[!UICONTROL 名称]**&#x200B;和&#x200B;**[!UICONTROL 标题]**。
 
-   1. 选择在[集成 [!DNL DocuSign] 与 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)时创建的[配置容器](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)。
+   1. 选择在[集成](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)与[时创建的 [!DNL DocuSign] 配置容器 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)。
 
-   配置容器包含为您的环境配置的[!DNL DocuSign]Cloud Service。 这些服务可在自适应表单编辑器中选择。
+   配置容器包含为您的环境配置的[!DNL DocuSign]云服务。 这些服务可在自适应表单生成器中选择。
 
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡中，选择以下选项之一：
 
@@ -200,9 +200,9 @@ AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 �
 
 要在现有自适应表单中使用[!DNL DocuSign]，请执行以下操作：
 
-1. 导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
+1. 导航至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 1. 选择自适应表单并选择&#x200B;**[!UICONTROL 属性]**。
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，选择将[!DNL DocuSign]与[!DNL AEM Forms]集成时创建的[配置容器](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，选择将[与](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)集成时创建的[!DNL DocuSign]配置容器[!DNL AEM Forms]。
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡中，选择以下选项之一：
 
    - 如果您有自定义表单模板，并且需要基于表单模板的记录文档，请选择&#x200B;**[!UICONTROL 关联表单模板作为记录文档模板]**&#x200B;选项，然后选择记录文档模板。 使用选项时，发送以供签名的文档仅显示基于关联表单模板的字段。 它不会显示自适应表单的所有字段。

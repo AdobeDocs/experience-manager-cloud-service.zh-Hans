@@ -1,18 +1,18 @@
 ---
-title: 如何基于核心组件创建自适应表单模板？
-description: 使用模板编辑器基于核心组件创建自适应表单模板以定义基本结构和初始内容。
+title: 如何使用核心组件构建自适应表单模板？
+description: 使用模板编辑器基于核心组件构建自适应表单模板以定义基本结构和初始内容。
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1949'
 ht-degree: 4%
 
 ---
 
-# 创建基于核心组件的自适应表单模板 {#adaptive-form-templates}
+# 使用核心组件构建自适应表单模板 {#adaptive-form-templates}
 
 在创作表单时，可在编辑器中添加字段和组件以定义表单结构、内容和操作。 您在表单容器的`guideRootPanel`中添加字段和组件。 使用模板编辑器，您可以创建一个模板，其中包含作者可用于创建表单的基本结构和初始内容。
 
@@ -42,7 +42,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 >
 > 您可以在特定于核心组件的文件夹中找到基于核心组件的可编辑模板。
 
-Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=zh-Hans#editing-templates-template-authors)。
+Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
 
 ## 创建模板 {#create-template}
 
@@ -139,7 +139,7 @@ Header and footer are added in the Initial Content layer.
 
 ![结构图层中的布局容器](/help/forms/assets/layout-template-core-component.png)
 
-有关其他信息，请参阅文章[了解响应式布局](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=zh-Hans)。
+有关其他信息，请参阅文章[了解响应式布局](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en)。
 
 ## 启用模板 {#enabling-the-template}
 
@@ -152,11 +152,11 @@ Header and footer are added in the Initial Content layer.
 
 ## 导入或导出模板 {#importing-or-exporting-a-template}
 
-表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`/conf`中的`https://<server>:<port>/crx/packmgr`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您还可以[使用AEM原型创建模板并将其部署到云服务实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=zh-Hans#prerequisites)。
+表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`/conf`中的`https://<server>:<port>/crx/packmgr`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您还可以[使用AEM原型创建模板并将其部署到云服务实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
 
 >[!NOTE]
 >
-> * 您还可以直接从自适应表单编辑器或自适应表单模板编辑器配置[!UICONTROL 记录文档]模板。 有关详细信息，请参阅[生成自适应Forms的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
+> * 您还可以直接从自适应表单生成器或自适应表单模板生成器配置[!UICONTROL 记录文档]模板。 有关详细信息，请参阅[生成自适应Forms的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
 
 ## 将表单数据模型架构关联到模板 {#associating-form-data-model-schema-in-template}
 
@@ -280,7 +280,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## 最佳实践 {#best-practices}
 
-* 使用基于核心组件的组件创建模板，例如自适应表单文本、自适应表单容器等。 要获取有关自适应Forms核心组件的信息，请[单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。
+* 使用基于核心组件的组件创建模板，例如自适应表单文本、自适应表单容器等。 要获取有关自适应Forms核心组件的信息，请[单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。
 * 限制模板的数量以匹配网站上提供的截然不同的表单类型
 * 为模板中使用的自定义组件提供必要的灵活性和配置功能。
 
@@ -295,6 +295,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## 另请参阅 {#see-also}
 
 {{see-also}}
+
 * [为表单创建样式或主题](using-themes-in-core-components.md)
 * [创建自适应表单（核心组件）](/help/forms/creating-adaptive-form-core-components.md)
 

@@ -1,14 +1,14 @@
 ---
 title: 如何为自适应表单创建表单数据模型(FDM)？
-description: 了解如何基于表单数据模型(FDM)创建自适应Forms和片段。 在FDM中生成并编辑数据模型对象的示例数据。
+description: 了解如何基于表单数据模型(FDM)创建自适应Forms和片段。 在 FDM 中生成并编辑数据模型对象的样本数据。
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
    ![create-af-3](assets/create-af-3.png)
 
-   创建基于表单数据模型(FDM)的自适应表单或自适应表单片段后，表单数据模型对象会显示在自适应表单编辑器中的内容浏览器的&#x200B;**[!UICONTROL 数据源]**&#x200B;选项卡中。
+   创建基于表单数据模型(FDM)的自适应表单或自适应表单片段后，表单数据模型对象会显示在自适应表单生成器中内容浏览器的&#x200B;**[!UICONTROL 数据源]**&#x200B;选项卡中。
 
    >[!NOTE]
    >
@@ -163,7 +163,7 @@ Edit Properties dialog for an interactive communication-->
 
 ### 使用自定义函数调用表单数据模型(FDM) {#invoke-form-data-model-using-custom-functions}
 
-您可以使用自定义函数[&#128279;](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)从规则编辑器调用表单数据模型。 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
+您可以使用自定义函数[从规则编辑器](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)调用表单数据模型。 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
 
 1. 转到位于`https://server:host/system/console/configMgr`的Experience Manager Web控制台。
 1. 找到&#x200B;**[!UICONTROL 用于服务调用的自适应表单级表单数据模型白名单 — 配置工厂]**。

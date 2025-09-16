@@ -1,36 +1,37 @@
 ---
-title: 如何创建自适应Forms？
-description: 了解如何创建自适应表单以简化信息收集和处理。 此外，了解如何基于表单数据模型(FDM)创建自适应表单。
+title: 表单生成器：使用基础组件创建表单
+description: 了解如何使用AEM Forms的表单生成器通过基础组件创建自适应表单。 非常适合维护现有表单或使用旧版集成的表单创建者。
+keywords: 表单生成器、基础组件、创建表单、表单创建器、自适应表单、构建表单、AEM表单、表单生成器
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 66%
+source-wordcount: '1588'
+ht-degree: 62%
 
 ---
 
-# 创建自适应表单（基础组件） {#creating-an-adaptive-form}
+# 表单生成器：使用基础组件创建表单 {#creating-an-adaptive-form}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | 本文 |
 
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
-自适应表单使您能够创建引人入胜、响应式、动态和自适应的表单。AEM Forms提供便于企业用户使用的向导以快速创作自适应Forms。 该向导可快速地在选项卡之间导航，从而轻松地选择预先配置的模板、样式、字段和提交选项以创建自适应表单。
+AEM Forms的表单生成器允许您创建有吸引力、响应式、动态和自适应表单。 无论您是维护现有基于基础的表单的表单创建者，还是需要使用已建立的组件快速创建表单，AEM Forms都可以提供用户友好的向导。 该向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项。
 
 在开始之前，了解可使用的表单组件类型：
 
 * [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)是标准化数据捕获组件。 这些组件提供自定义功能，缩短开发时间并降低数字注册体验的维护成本。 开发人员可以轻松地自定义这些组件并设置其样式。Adobe建议使用这些现代化的、可扩展的组件来开发自适应Forms。
 
-* [自适应Forms Foundation组件](creating-adaptive-form.md)是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑您现有的基于基础组件的自适应表单。如果创建新表单，Adobe建议使用[自适应Forms核心组件](creating-adaptive-form-core-components.md)创建自适应Forms。
+* [自适应Forms Foundation组件](creating-adaptive-form.md)是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑您现有的基于基础组件的自适应表单。如果创建新表单，Adobe建议使用[自适应Forms核心组件](creating-adaptive-form-core-components.md)来创建自适应Forms。
 
 
 
@@ -64,7 +65,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **权限**：将用户添加到[!DNL forms-users]，为他们提供创建自适应表单的权限。有关表单特定用户组的详细列表，请参阅[组和权限](forms-groups-privileges-tasks.md)。
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#create-project)。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。它的预格式化的组件包含某些属性和内容结构。它还提供用于定义主题和提交操作的选项。主题定义外观，提交操作定义在提交自适应表单时执行的操作。例如，将收集到的数据发送到数据源。Cloud Service 支持两种类型的模板：
 
@@ -74,15 +75,15 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 
 
-## 创建自适应表单（基础组件） {#create-an-adaptive-form-foundation-components}
+## 构建自适应表单（基础组件） {#create-an-adaptive-form-foundation-components}
 
 1. 访问 [!DNL Experience Manager Forms] 创作实例。它可以是云实例或本地开发实例。
 
 1. 在 Experience Manager 登录页面上输入您的凭据。
 
-   登录后，在左上角选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
+   登录后，在左上角选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 
-1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应Forms]**。 向导随即打开。
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。向导随即打开。
 1. 在“源”选项卡中，选择一个模板：
 
    * 选择一个可编辑模板时，会自动选择该模板中指定的主题和提交操作，并启用&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡以选择不同的主题或提交操作。如果所选可编辑模板未指定主题，则“创建”按钮将保持禁用状态。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;选项卡以手动选择主题。
@@ -146,7 +147,7 @@ To use a Form Data Model for creating an Adaptive Form:
 >
 >You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Build an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
 XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
@@ -191,7 +192,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存属性。
 
-您还可以在自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。
+您还可以从自适应表单生成器或自适应表单模板生成器中修改表单模型属性。
 
 1. 选择&#x200B;**[!UICONTROL 自适应表单容器（根）]**&#x200B;组件。
 1. 单击![配置](/help/forms/assets/configure-icon.svg)图标来打开自适应表单容器的&#x200B;**[!UICONTROL 属性]**。
@@ -214,7 +215,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 在AEM Forms用户界面中选择自适应表单。
 1. 单击位于上边栏上的&#x200B;**属性**。
 1. 在&#x200B;**标题**&#x200B;选项卡中更改表单的名称，如下图所示。
-1. 单击&#x200B;**保存并关闭**。
+1. 选择&#x200B;**保存并关闭**。
 
 ![重命名AEM自适应表单](/help/forms/assets/change-af-name.png)
 
