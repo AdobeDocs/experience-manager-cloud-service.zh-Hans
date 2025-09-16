@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a8670061ce0e45f9ae70ab8d8f5df0604ed503a
+source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
 workflow-type: tm+mt
 source-wordcount: '6618'
 ht-degree: 97%
@@ -525,7 +525,7 @@ ht-degree: 97%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -1007,7 +1007,7 @@ ht-degree: 97%
    + AI 助手 {#ai-assistant}
       + [在AEM中配置AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
       + [关于AEM中的AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-   + 生成式 AI {#generative-ai}
+   + 生成变体 {#generate-variations}
       + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
       + [生成变体](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
