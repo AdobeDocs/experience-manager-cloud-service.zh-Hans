@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
+source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
 workflow-type: tm+mt
-source-wordcount: '6618'
+source-wordcount: '6624'
 ht-degree: 97%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 97%
    + AEMaaCS 维护发行说明 {#maintenance}
       + [当前维护发行说明](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [2025.9.0 的维护版本发行说明](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [2025.8.0 的维护版本发行说明](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [2025.7.0 的维护版本发行说明](/help/release-notes/maintenance/2025/2025-7-0.md)
          + [2025.6.0 的维护版本发行说明](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -525,7 +526,7 @@ ht-degree: 97%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
