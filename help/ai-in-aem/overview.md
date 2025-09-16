@@ -3,7 +3,7 @@ title: AEM as a Cloud Service的人工智能
 description: 了解Adobe Experience Manager as a Cloud Service中的AI
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: 728163aca6ca8829829dd64cdc563d9c3b812c9d
+source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 81%
@@ -39,6 +39,7 @@ Adobe Experience Manager（AEM）as a Cloud Service 的 Adobe 生成式 AI 使�
      >[!NOTE]
      >
      >建议您访问 [AEM 编辑器中集成的生成变体](/help/generative-ai/generate-variations-integrated-editor.md)，因为以前的版本将来会被弃用。
+
    * [生成变体的发行说明](/help/generative-ai/release-notes-generate-variations.md)
 
 * [Content Hub 概述](/help/assets/product-overview.md)
