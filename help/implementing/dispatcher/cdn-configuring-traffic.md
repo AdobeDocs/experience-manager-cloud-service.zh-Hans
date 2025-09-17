@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -426,6 +426,8 @@ data:
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | 其中一个已定义源的名称。 |
 |     | skipCache （可选，默认为false） | 标记是否将缓存用于与此规则匹配的请求。 默认情况下，将根据响应缓存标头（例如，Cache-Control或Expires）缓存响应 |
+| **选择AemOrigin** | originName | 其中一个预定义的AEM源的名称（支持的值： `static`）。 |
+|     | skipCache （可选，默认为false） | 标记是否将缓存用于与此规则匹配的请求。 默认情况下，将根据响应缓存标头（例如，Cache-Control或Expires）缓存响应 |
 
 **源**
 
@@ -441,6 +443,29 @@ data:
 | **forwardAuthorization**（可选，默认为false） | 如果设置为true ，则客户端请求中的“Authorization”标头将传递到后端，否则删除Authorization标头。 |
 | **timeout**（可选，以秒为单位，默认为60） | CDN应等待后端服务器传递HTTP响应主体的第一个字节的秒数。 此值还用作后端服务器的字节超时之间的值。 |
 
+### 将自定义域代理到AEM静态层 {#proxy-custom-domain-static}
+
+源选择器可用于将AEM发布流量路由到使用[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)部署的AEM静态内容。 用例包括在与页面相同的域(例如example.com/static)上或在明显不同的域(例如static.example.com)上提供静态资源。
+
+以下是可以实现此目标的原点选择器规则的示例：
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### 代理到Edge Delivery Services {#proxying-to-edge-delivery}
 
 在某些情况下，源选择器应该用于通过AEM Publish将流量路由到AEM Edge Delivery Services：
@@ -454,6 +479,8 @@ data:
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
