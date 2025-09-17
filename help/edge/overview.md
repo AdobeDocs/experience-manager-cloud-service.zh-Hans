@@ -4,28 +4,29 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
-workflow-type: ht
-source-wordcount: '963'
-ht-degree: 100%
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
 
 # Edge Delivery Services 概述 {#edge-delivery-services}
 
+>[!TIP]
+>
+>**想立即亲身体验吗？**
+>
+>如果要立即动手使用Edge Delivery Services，您有两个选项。
+>* [使用预建的教程环境立即开始创作 — 已完全配置并准备就绪。](https://www.aem.live/developer/ue-trial)
+>* 通过[在aem.live上查看教程，了解更多详细信息并在30分钟内设置您自己的环境。](https://www.aem.live/developer/ue-tutorial)
+
 ## 什么是 Edge Delivery Services？ {#what-is-edge}
 
 Edge Delivery Services 是一套现代化内容传递框架，重新定义了网站的构建与传递方式，旨在优化速度、简化流程，并实现高度可扩展性。它是 Adobe Experience Manager 的核心组成部分，通过将渲染和传递推向网络边缘，更贴近用户，从而加快数字体验的响应速度。
 
 它并非用来取代内容传递网络（CDN），而是可无缝集成至您现有的 CDN，或使用 [Adobe 提供的托管 CDN](/help/implementing/dispatcher/cdn.md)。
-
->[!TIP]
->
->**想立即亲身体验吗？**
->
->如果您希望立即动手实践，只需[参考 aem.live 上的教程](https://www.aem.live/developer/ue-tutorial)，即可在 30 分钟内启动一个包含 AEM 创作功能的 Edge Delivery Services 项目。
-
 
 ## 为何选择 Edge Delivery Services？ {#why-edge}
 
