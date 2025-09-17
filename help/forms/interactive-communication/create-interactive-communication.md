@@ -4,13 +4,10 @@ description: 创建个性化、数据驱动的通信。 通过指南和教程，
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -18,11 +15,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> 交互式通信功能在早期采用者计划下提供。 将工作地址中的电子邮件发送至`aem-forms-ea@adobe.com`以请求访问权限。
+> 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
 
 >[!IMPORTANT]
 >
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着Forms Experience Builder在率先采用者计划中的不断演变，提示、示例和最佳实践可能会发生变化。
+> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 交互式通信使您能够创建、管理和提供个性化的交互式通信，包括客户服务、计费、载入文档、优惠信函、帐户更新等。 它旨在支持任何场景，其中动态、特定于用户的内容可增强各行业的通信体验。
 
