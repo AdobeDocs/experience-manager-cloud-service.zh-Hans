@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -98,17 +98,17 @@ ht-degree: 79%
 
 ### 配置要求
 
-#### 1.在Edge Delivery中更新AEM实例URL
+#### &#x200B;1. 在 Edge Delivery 中更新 AEM 实例 URL
 
-在`constant.js`下的`form`块的`submitBaseUrl`文件中更新AEM Cloud Service实例URL。 您可以根据环境配置URL：
+更新 `submitBaseUrl` 下 `form` 块中 `constant.js` 文件中的 AEM Cloud Service 实例 URL。您可以根据您的环境配置 URL：
 
-用于Cloud Service实例的&#x200B;**&#x200B;**
+**对于 Cloud Service 实例**
 
 ```js
 export const submitBaseUrl = '<aem-publish-instance-URL>';
 ```
 
-用于本地开发的&#x200B;**&#x200B;**
+**对于本地开发**
 
 ```js
 export const submitBaseUrl = 'http://localhost:<port-number>';
@@ -116,11 +116,11 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 
 #### &#x200B;2. OSGi 引荐来源过滤器
 
-配置反向链接筛选条件，以允许您的特定Edge Delivery站点域：
+配置引荐来源过滤器，以允许您的特定 Edge Delivery 网站域：
 
-1. 创建或更新OSGi配置文件： `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
+1. 创建或更新 OSGi 配置文件：`org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. 为您的特定站点域添加以下配置：
+2. 通过您的特定网站域添加以下配置：
 
    ```json
    {
@@ -148,13 +148,13 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
    }
    ```
 
-3. 通过Cloud Manager部署配置
+3. 通过 Cloud Manager 部署配置
 
-有关详细的OSGi反向链接筛选条件配置，请参阅[反向链接筛选条件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)指南。
+有关 OSGi 引荐来源过滤器的详细配置，请参阅[引荐来源过滤器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)指南。
 
 #### &#x200B;3. CORS（跨源资源共享）问题
 
-在AEM中配置CORS设置，以允许来自您的特定Edge Delivery站点域的请求：
+在 AEM 中配置 CORS 设置，允许来自您的特定 Edge Delivery 网站域的请求：
 
 **开发人员本地主机**
 
@@ -162,14 +162,14 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 ```
 
-**Edge Delivery站点 — 单独添加每个站点域**
+**Edge Delivery Sites - 单独添加每一个网站域**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 ```
 
-**旧版Franklin域（如果仍在使用）**
+**旧版 Franklin 域（如果仍在使用）**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
@@ -178,12 +178,12 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->将`main--abc--adobe.aem.live`和`main--abc1--adobe.aem.live`替换为您的实际网站域。 从同一存储库托管的每个站点都需要一个单独的CORS配置条目。
+>将 `main--abc--adobe.aem.live` 和 `main--abc1--adobe.aem.live` 替换为您的真实网站域。从同一个存储库托管的每个网站都需要一个单独的 CORS 配置条目。
 
-有关详细的CORS配置，请参阅[CORS配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
+有关 CORS 的详细配置，请参阅 [CORS 配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
 
 
-要为本地开发环境启用CORS，请参阅[了解跨源资源共享(CORS)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)文章。
+要为您的本地开发环境启用 CORS，请参阅文章[了解跨源资源共享 (CORS)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)。
 
 <!--
 #### 4. CDN Redirect Rules

@@ -6,9 +6,9 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -40,15 +40,15 @@ Adobe Experience Manager 是一组功能强大的可组合内容服务，它在�
 
 <!-- Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.-->
 
-AEM as a Cloud Service入门培训历程的核心是以下核心元素：
+AEM as a Cloud Service 的加入历程围绕着以下几个核心要素：
 
-* **合同** — 审查您的Adobe合同，了解载入流程的关键详细信息。
-* **Experience Hub** — 使用[experience.adobe.com](https://experience.adobe.com/)作为AEM功能的中心入口点。 Experience Hub会根据您的角色和权限进行调整，以便您能够高效地工作。 从此处，导航到：
-   * **Admin Console** — 管理用户和分配角色。
-   * **Cloud Manager** — 设置程序和环境，访问Git，并创建管道以管理和部署自定义代码。
-   * **站点** — 创建、管理和提供数字体验。 （基于许可证的权利）
-   * **Assets** — 组织、存储和分发您的数字资源。 （基于许可证的权利）
-   * **Forms** — 创建和管理自适应表单和响应式表单。 （基于许可证的权利）
+* **合同** - 查看您的 Adobe 合同，了解加入流程的重要详情。
+* **Experience Hub** - 使用 [experience.adobe.com](https://experience.adobe.com/) 作为 AEM 功能的中心入口点。Experience Hub 可适应您的角色和权利，使您能高效工作。从这里导航至：
+   * **Admin Console** - 管理用户并分配角色。
+   * **Cloud Manager** - 设置程序和环境、访问 Git，以及创建管道来管理和部署自定义代码。
+   * **Sites** - 创建、管理和传递数字体验。（基于许可证的权利）
+   * **Assets** - 组织、存储和分发您的数字资产。（基于许可证的权利）
+   * **Forms** - 创建和管理自适应和响应式表单。（基于许可证的权利）
 
 这些概念会在此次加入历程中详细阐述。目标是在历程结束时，您可以做到以下几点：
 
@@ -66,10 +66,10 @@ AEM as a Cloud Service入门培训历程的核心是以下核心元素：
 
 | 角色 | 描述 | 历程中的角色 |
 | --- | --- | --- |
-| 系统管理员 | 此历程的目标是提供云资源的初始配置，并根据用户的工作职责将其分配给适当的角色。 | 角色可帮助您管理用户从访问到权限的各个方面。 |
-| 内容作者 | 在AEM中创建和查看内容。 | 一旦系统管理员授予权限，作者就可以开始自己的内容创建历程。 |
-| 开发人员 | 开发使用不同来源内容的AEM应用程序。 | 一旦系统管理员授予权限，开发人员就可以开始自己的解决方案开发历程。 |
-| 部署管理员 | 添加或更新环境，运行管道，并将代码部署到 AEM 环境或代码质量。 | 一旦系统管理员授予权限，部署管理员就可以开始自己的管理部署的历程。 |
+| 系统管理员 | 此历程的目标是提供云资源的初始配置，并根据用户的工作职责将其分配给适当的角色。 | 角色可以帮助您管理用户的从访问到权限的各个方面。 |
+| 内容作者 | 创建并查看 AEM 中的内容。 | 由系统管理员授予权限后，作者就可以开始自己的内容创作之旅。 |
+| 开发人员 | 开发使用不同来源内容的 AEM 应用程序。 | 由系统管理员授予权限后，开发人员就可以启动自己的解决方案开发之旅。 |
+| 部署管理员 | 添加或更新环境，运行管道，并将代码部署到 AEM 环境或代码质量。 | 由系统管理员授予权限后，部署管理员就可以开始自己管理部署的历程。 |
 
 本载入指南说明了作为系统管理员载入的完整过程。 作为历程的附加可选部分，对 AEM 用户、开发人员和部署管理员的角色进行了简要探讨。
 
@@ -87,13 +87,13 @@ AEM as a Cloud Service入门培训历程的核心是以下核心元素：
 | 1 | [载入准备](preparation.md) | 在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。 | 系统管理员 |
 | 2 | [AEM as a Cloud Service 术语](terminology.md) | 在首次登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。 | 系统管理员 |
 | 3 | [Admin Console](admin-console.md) | 了解什么是 Admin Console，如何登录，以及如何以系统管理员身份验证您的配置文件。 | 系统管理员 |
-| 4 | [分配 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md) | 查看Cloud Manager产品配置文件，并了解如何将团队成员分配给Cloud Manager产品配置文件。 | 系统管理员 |
-| 5 | [访问Experience Hub](/help/experience-hub.md) | 使用Experience Hub，它可作为AEM生态系统的统一、个性化的入口点。 | AEM 用户 |
+| 4 | [分配 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md) | 查看 Cloud Manager 产品配置文件，了解如何将团队成员分配给 Cloud Manager 产品配置文件。 | 系统管理员 |
+| 5 | [访问 Experience Hub](/help/experience-hub.md) | 使用 Experience Hub 作为 AEM 生态系统的统一的个性化入口点。 | AEM 用户 |
 | 6 | [访问 Cloud Manager](cloud-manager.md) | 了解如何访问 Cloud Manager，以便您可以设置项目资源。 | 系统管理员 |
 | 7 | [创建项目](create-program.md) | 了解如何使用 Cloud Manager 创建项目。 | 系统管理员 |
 | 8 | [创建环境](create-environments.md) | 了解如何使用 Cloud Manager 创建环境。 | 系统管理员 |
-| 9 | [分配 AEM 产品配置文件](assign-profiles-aem.md) | 了解系统管理员如何将您的团队成员分配给AEM as a Cloud Service中的产品配置文件。 | 系统管理员 |
-| 10 | [开发人员和部署管理员任务](developers.md) | 可选 — 作为开发人员，了解如何访问和管理Cloud Manager Git。 作为部署管理员，了解如何在Cloud Manager中设置管道和部署代码。 | 开发人员和部署管理器 |
+| 9 | [分配 AEM 产品配置文件](assign-profiles-aem.md) | 了解系统管理员如何将您的团队成员分配给 AEM as a Cloud Service 中的产品配置文件。 | 系统管理员 |
+| 10 | [开发人员和部署管理员任务](developers.md) | 可选 - 作为开发人员，了解如何访问和管理 Cloud Manager Git。作为部署管理员，了解如何在 Cloud manager 中设置管道并部署代码。 | 开发人员和部署管理员 |
 | 11 | [AEM 用户任务](aem-users.md) | 可选 – 了解作为 AEM 作者如何访问 AEM as a Cloud Service 实例，并熟悉 AEM as a Cloud Service.的创作内容。 | AEM 用户 |
 
 ## 后续内容 {#what-is-next}

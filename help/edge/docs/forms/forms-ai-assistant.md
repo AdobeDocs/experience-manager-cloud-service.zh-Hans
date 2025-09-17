@@ -7,19 +7,19 @@ index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# AEM Forms AI助手快速入门(Forms Experience Builder)
+# AEM Forms 的 AI 助手（Forms Experience Builder）快速入门
 
 >[!NOTE]
 >
 >
-> AEM 表单的 AI 助手（表单体验生成器）功能可通过&#x200B;**早期采用者计划**&#x200B;获取。如果您有兴趣，请将工作地址中的快速电子邮件发送到mailto:aem-forms-ea@adobe.com，以请求访问功能。
+> AEM Forms 的 AI 助手 (Forms Experience Builder) 功能可在&#x200B;**早期采用者计划**&#x200B;中使用。如果您有兴趣，请从您的工作地址向 :aem-forms-ea@adobe.com 快速发送一封电子邮件，申请访问该功能。
 
 >[!IMPORTANT]
 >

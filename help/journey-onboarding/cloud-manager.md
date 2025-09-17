@@ -5,9 +5,9 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,14 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
    返回到上一步，[将团队成员分配给 Cloud Manager 产品轮廓](assign-profiles-cloud-manager.md)，以获得有关将&#x200B;**业务负责人**&#x200B;角色分配给系统管理员的详细信息。
 
-1. 在[experience.adobe.com](https://experience.adobe.com)登录Cloud Manager。
-1. 在快速访问分组中，单击&#x200B;**Experience Manager**。
-1. 单击左侧面板中的&#x200B;**Cloud Manager**。
+1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在快速访问分组中，点击 **Experience Manager**。
+1. 在左侧面板中点击 **Cloud Manager**。
 
-   控制台![Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
+   ![Cloud Manager 在控制台](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-通过使用&#x200B;**业务负责人**&#x200B;角色以系统管理员身份成功登录，您可以使用Cloud Manager供具有&#x200B;**业务负责人**&#x200B;角色的其他用户使用。 您不会收到确认或任何消息。只需登录即可。
+作为系统管理员用&#x200B;**业务负责人**&#x200B;角色成功登录后，您就可以通过 Cloud Manager 让其他&#x200B;**业务负责人**角色的用户使用。
+您不会收到确认或任何消息。只需登录即可。
 
 在您使用&#x200B;**业务负责人**&#x200B;角色作为系统管理员身份登录 Cloud Manager 之前，其他具有&#x200B;**业务负责人**&#x200B;角色的用户都不能在 Cloud Manager 中创建程序。即使为这些用户分配的角色正确无误，这条规则也适用。
 
@@ -88,23 +89,23 @@ How you access your programs and products via Cloud Manager is up to you and has
 >
 >Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
-## 查看项目群 {#viewing-programs}
+## 查看程序 {#viewing-programs}
 
-一旦您成功访问 Cloud Manager，您所看到的内容将取决于您的程序状态，详见以下部分。
+您成功访问 Cloud Manager 后，您所看到的内容取决于您的程序状态，详见下面几小节。
 
-### 当不存在程序时 {#no-programs}
+### 如果不存在任何程序 {#no-programs}
 
 如果您的组织中不存在任何程序，则登陆页面会指示您创建第一个程序。
 
 ![无程序](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### 当程序已存在时 {#programs-exist}
+### 如果已经存在程序 {#programs-exist}
 
 如果您的组织中存在程序，则登陆页将显示现有程序，并提供添加其他程序的按钮。
 
 ![程序存在](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### 当程序存在并且您是系统管理员时 {#programs-exist-sysadmin}
+### 如果程序存在并且您是系统管理员 {#programs-exist-sysadmin}
 
 如果您的组织中已经有程序，并且您是系统管理员，那么您的登陆页面就会显示&#x200B;**管理访问权限**&#x200B;按钮以及&#x200B;**添加程序**&#x200B;选项。
 
@@ -112,11 +113,11 @@ How you access your programs and products via Cloud Manager is up to you and has
 
 ## 验证您的用户角色 {#verify-user-roles}
 
-成功登录Cloud Manager后，您可以验证您是否分配了&#x200B;**业务负责人**&#x200B;产品配置文件。
+成功登录 Cloud Manager 后，您可以验证自己是否被分配了&#x200B;**业务负责人**&#x200B;产品配置文件。
 
-1. 在页面的右上角附近，单击&#x200B;**帐户**&#x200B;图标。
+1. 在页面的右上角附近，点击&#x200B;**帐户**&#x200B;图标。
 
-1. 单击&#x200B;**用户角色**。
+1. 点击&#x200B;**用户角色**。
 
    ![用户角色](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
@@ -124,7 +125,7 @@ How you access your programs and products via Cloud Manager is up to you and has
 
    ![用户角色列表](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-您已作为业务负责人成功登录Cloud Manager。 如果您未被分配&#x200B;**业务负责人**&#x200B;角色，请联系您的系统管理员。
+您已作为业务负责人成功登录了 Cloud Manager。如果您未被分配&#x200B;**业务负责人**&#x200B;角色，请联系您的系统管理员。
 
 ## 后续内容 {#whats-next}
 
