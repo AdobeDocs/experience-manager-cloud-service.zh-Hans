@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
+source-git-commit: 5074e777c68c51955b9ad8f055e04067163b9596
 workflow-type: tm+mt
-source-wordcount: '6624'
-ht-degree: 97%
+source-wordcount: '6631'
+ht-degree: 99%
 
 ---
 
@@ -237,8 +237,8 @@ ht-degree: 97%
       + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [2025.09.04发行说明](/help/release-notes/universal-editor/2025/2025-09-04.md)
-         + [2025.08.22发行说明](/help/release-notes/universal-editor/2025/2025-08-22.md)
-         + [2025.08.14发行说明](/help/release-notes/universal-editor/2025/2025-08-14.md)
+         + [2025.08.22 版发行说明](/help/release-notes/universal-editor/2025/2025-08-22.md)
+         + [2025.08.14 版发行说明](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [2025.07.31 版发行说明](/help/release-notes/universal-editor/2025/2025-07-31.md)
          + [2025.07.09 版发行说明](/help/release-notes/universal-editor/2025/2025-07-09.md)
          + [2025.06.19 版发行说明](/help/release-notes/universal-editor/2025/2025-06-19.md)
@@ -280,7 +280,7 @@ ht-degree: 97%
    + [Sling Service 用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 客户管理的密钥](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
-   + [关于Experience Hub](/help/experience-hub.md)
+   + [关于 Experience Hub](/help/experience-hub.md)
 + 入门培训 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hans)
    + 加入历程 {#journey}
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -538,7 +538,7 @@ ht-degree: 97%
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [启用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [AEM Assets问题疑难解答](/help/assets/troubleshoot-aem-assets.md)
+   + [AEM Assets 问题故障排除](/help/assets/troubleshoot-aem-assets.md)
    + [Assets 协作者用户](/help/assets/assets-collaborator-users.md)
    + 管理数字资产 {#manage}
       + 微前端资产选择器 {#asset-selector}
@@ -860,7 +860,7 @@ ht-degree: 97%
                + [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
                + [在可视化规则编辑器中针对基于核心组件的表单调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
                + [规则编辑器增强功能](/help/forms/rule-editor-enhancements-use-cases.md)
-               + [规则编辑器中的API集成](/help/forms/api-integration-in-rule-editor.md)
+               + [规则编辑器中的 API 集成](/help/forms/api-integration-in-rule-editor.md)
             + 基于核心组件的自适应表单的自定义函数简介{#create-and-use-custom-function-core-component}
                + [基于核心组件的自适应表单的自定义函数简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
@@ -1002,22 +1002,22 @@ ht-degree: 97%
       + [Dispatcher 和 CDN 缓存](/help/forms/troubleshooting-caching-performance.md)
       + [重新启动 AEM SDK](/help/forms/restart-aem-sdk.md)
       + [解决表单创建失败](/help/forms/form-creation-failing.md)
-      + [自定义提交操作中的502错误页面](/help/forms/custom-submit-action-troubleshooting.md)
+      + [自定义提交操作中的 502 错误页面](/help/forms/custom-submit-action-troubleshooting.md)
 + AEM的人工智能 {#ai-in-aem}
    + [概述](/help/ai-in-aem/overview.md)
    + AI 助手 {#ai-assistant}
-      + [在AEM中配置AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-      + [关于AEM中的AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+      + [配置 AEM 中的 AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+      + [关于 AEM 中的 AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
    + 生成变体 {#generate-variations}
       + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
       + [生成变体](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
       + [AEM Forms 的 AI 助手（表单体验生成器）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [AEM Forms AI助手快速入门](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [AEM Forms AI助手快速入门(Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [AEM Forms 的 AI 助手快速入门](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [AEM Forms 的 AI 助手（Forms Experience Builder）快速入门](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
       + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder — 最佳做法](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder — 故障排除指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Forms Experience Builder - 最佳实践](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [Forms Experience Builder - 故障排除指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概述 {#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
@@ -1262,14 +1262,14 @@ ht-degree: 97%
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [对专用存储库的拉取请求检查](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [使用专用存储库的提取请求检查](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [GitHub 检查批注](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [环境变体](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [CI-CD 管道简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [拆分暂存和仅生产管道(Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
+         + [拆分阶段和仅生产管道（Beta 版）](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
          + [配置 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
@@ -1518,3 +1518,5 @@ ht-degree: 97%
    + 辅助功能 {#accessibility}
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
++ 疑难解答 {#troubleshooting}
+   + [AEM Assets和Forms问题疑难解答](/help/troubleshooting/home.md)
