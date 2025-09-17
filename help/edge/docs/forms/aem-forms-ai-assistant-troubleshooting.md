@@ -532,7 +532,7 @@ ht-degree: 100%
 
 - [Forms Experience Builder 提示词库](ai-assistant-prompt-library.md)
 - [Forms Experience Builder 最佳实践](aem-forms-ai-assistant-best-practices.md)
-- [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+- [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)
 
 ### 问题升级和支持
 
@@ -573,4 +573,4 @@ ht-degree: 100%
 - 举办培训和知识共享会议
 - 为产品团队提供反馈，帮助改进功能
 
-此故障排除指南会根据用户反馈和新的 Forms Experience Builder 功能不断更新。如需了解最新信息和其他资源，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。
+此故障排除指南会根据用户反馈和新的 Forms Experience Builder 功能不断更新。如需了解最新信息和其他资源，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。
