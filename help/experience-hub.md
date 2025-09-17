@@ -3,14 +3,14 @@ title: 关于 Experience Hub
 description: 了解 Adobe Experience Hub 页面。
 landing-page-description: 了解 Experience Hub，它是访问所有 AEM 功能的统一起点。
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
+source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 14%
+source-wordcount: '568'
+ht-degree: 15%
 
 ---
 
@@ -51,11 +51,11 @@ Adobe Experience Manager页面已更新，导航和交互式构件已得到增�
 >
 >显示的构件、工具和工件取决于用户角色、权限和AEM部署类型(AEM as a Cloud Service或Managed Services 6.5/6.5 LTS)。
 
-这些解决方案现已移至&#x200B;**工具**&#x200B;或&#x200B;**服务**&#x200B;下的主导航。 此外，通过新的导航元素，还可以快速访问特定于已启用解决方案(如Assets、Sites、Forms、内容片段、启动项等)的关键Adobe Experience Manager功能。
+这些解决方案现已移至&#x200B;**工具**&#x200B;或&#x200B;**服务**&#x200B;下的主导航。 通过新的导航元素，可快速访问与已启用的解决方案关联的AEM功能。 跳转到Assets、Sites、Forms、内容片段、启动项等。
 
 ![Experience Hub环境](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-这些功能可用于您有权访问的主要生产环境，或者，如果您有权访问多个AEM实例，则可以选择要定位的特定环境。
+在主生产环境中使用这些功能。 如果您有权访问多个AEM实例，请选择要定位的环境。
 
 ![生产和暂存环境](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -67,7 +67,7 @@ Adobe Experience Manager页面已更新，导航和交互式构件已得到增�
 
 ![Experience Hub小组件](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-**创作环境**&#x200B;部分显示了您有权访问的所有AEM环境，其中提供了解决方案和可供它们使用的页面的特定快捷方式，还允许您在列表顶部固定要显示的特定环境。
+**创作环境**&#x200B;部分列出了您可以访问的所有AEM环境，并包含其解决方案和页面的快捷方式。 您可以固定特定环境，以使其位于列表顶部。
 
 下图中的&#x200B;**最近访问**&#x200B;部分列出了您最近在AEM中访问的页面。 根据租户的许可，构件可能包括“项目”、“管道执行”、“Assets”、“页面编辑器”和“表单编辑器”等项目。
 
@@ -83,4 +83,4 @@ Adobe Experience Manager页面已更新，导航和交互式构件已得到增�
 
 ## AEM 中的 AI 助手
 
-对于已 [满足先决条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，AEM 中的 AI 助手可供其组织的用户使用。参见 [AEM 中的 AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
+对于已[满足先决条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，AEM 中的 AI 助手可供其组织的用户使用。参见 [AEM 中的 AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
