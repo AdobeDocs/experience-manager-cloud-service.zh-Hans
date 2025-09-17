@@ -30,9 +30,9 @@ Forms Experience Builder 提供了两种用于创建强大数字表单的主要�
 
 ### &#x200B;1. AI 驱动的表单创建
 
-**自然语言表单生成**
+**使用自然语言生成表单**
 
-使用简单的英语描述从头开始创建完整的表单。只需描述您的要求，例如“创建一个带有评分量表和评论字段的客户反馈表”，Forms Experience Builder 就会生成适当的表单结构。您可以使用可视化编辑器的体验生产器来添加更多字段、验证规则和提交逻辑。
+使用简单的英语描述从头开始创建完整的表单。只需描述您的要求，例如“创建一个带有评分量表和评论字段的客户反馈表”，Forms Experience Builder 就会生成适当的表单结构。您可以使用可视化编辑器的体验生成器来添加更多字段、验证规则和提交逻辑。
 
 **动态字段管理**
 
@@ -40,7 +40,7 @@ Forms Experience Builder 提供了两种用于创建强大数字表单的主要�
 
 **布局优化**
 
-通过自然语言更新表单布局和配置。请求进行更改，例如“将表单布局改为向导式布局”， Forms Experience Builder 就会应用适当的样式进行布局调整。
+通过自然语言更新表单布局和配置。要求进行更改，例如“将表单布局改为向导式布局”， Forms Experience Builder 就会应用适当的样式调整布局。
 
 **全面的提交操作配置**
 
@@ -51,7 +51,7 @@ Forms Experience Builder 提供了两种用于创建强大数字表单的主要�
 - **云存储**：与 Azure Blob 存储、SharePoint 和 OneDrive 集成
 - **工作流自动化**：与 Power Automate 和 Workfront Fusion 连接
 - **营销平台**：与 Marketo 直接集成，实现潜在客户管理
-- **AEM 工作流**：利用现有的 AEM 工作流程功能
+- **AEM 工作流**：利用现有的 AEM 工作流功能
 
 ### &#x200B;2. 智能导入和转换
 
@@ -67,13 +67,13 @@ Forms Experience Builder 提供了两种用于创建强大数字表单的主要�
 
 **智能转换过程**
 
-对上传的内容进行分析：
+对上传的内容进行分析，以便：
 
-- 以检测字段类型和关系
-- 以尽可能保留布局
-- 以通过现代响应式设计进行增强
-- 以添加高级验证和条件逻辑
-- 以针对无障碍和移动设备体验进行优化
+- 检测字段类型和关系
+- 尽可能保留布局
+- 增强为现代响应式设计
+- 添加高级验证和条件逻辑
+- 针对无障碍和移动设备体验进行优化
 
 ## 如何工作
 
@@ -139,14 +139,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
 - Multi-channel submission options
 - Enhanced user experience design -->
 
-## Forms Experience Builder 与传统开发
+## Forms Experience Builder 与传统开发的比较
 
 | 方面 | 传统表单创建 | Forms Experience Builder |
 |--------|---------------------------|----------------------|
 | **创建时间** | 2-3 天 | 2-3 小时 |
 | **技术知识** | 必需 | 不必需 |
 | **验证规则** | 手动编码 | 自然语言 |
-| **辅助功能** | 手动实施 | 内置合规性 |
+| **无障碍访问** | 手动实施 | 内置合规 |
 
 
 ## 给组织带来的好处
@@ -224,7 +224,7 @@ Forms Experience Builder 目前是早期访问 (EA) 计划的一部分。要参�
 
 >[!IMPORTANT]
 >
-> **限制提供计划**：Forms Experience Builder 的访问权限需经内部利益相关者的审批。Adobe 将根据计划容量和是否符合早期访问标准来审核您的申请。不保证一定能通过审批，并且取决于当前计划的可用性。
+> **限制提供计划**：Forms Experience Builder 的访问权限需经过内部利益相关者的审批。Adobe 将根据计划容量和是否符合早期访问标准来审核您的申请。不保证一定能通过审批，并且取决于当前计划的可用性。
 
 有关早期访问计划及其功能的更多信息，请参阅 [AEM Forms 早期访问文档](/help/forms/early-access-ea-features.md)。
 

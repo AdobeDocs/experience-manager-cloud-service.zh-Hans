@@ -8,7 +8,7 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
 source-wordcount: '2824'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -310,7 +310,7 @@ ht-degree: 90%
 
 1. **打开通用编辑器**：
    - 导航到 AEM Sites 控制台，选择您的页面，点击&#x200B;**编辑**
-   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按以下顺序添加表单组件**：
    - 标题 (H2)：“税费计算表”
@@ -551,9 +551,9 @@ export { getFullName, days };
 
 ### 自定义函数的静态导入
 
-通用编辑器的规则编辑器支持静态导入，使您能够跨多个文件和表单组织可重用的逻辑。 您可以从其他模块导入函数，而不是将所有自定义函数保存在单个文件(/blocks/form/functions.js)中。
+通用编辑器的规则编辑器支持静态导入，使您能够在各种文件和表单中组织可重复使用的逻辑。您可以从其他模块导入函数，而不必将所有自定义函数保存在一个文件 (/blocks/form/functions.js) 中。
 例如：从外部文件导入函数
-请考虑以下文件夹结构：
+考虑以下文件夹结构：
 
 ```
       form
@@ -565,7 +565,7 @@ export { getFullName, days };
       ┗ functions.js
 ```
 
-您可以将函数从`commonLib/functions.js`导入主`functions.js`文件，如下所示：
+您可以从 `commonLib/functions.js` 将函数导入您的 `functions.js` 主文件中，如下所示：
 
 ```
 `import {days} from './commonLib/functions';
@@ -584,19 +584,19 @@ function getFullName(firstname, lastname) {
 export { getFullName, days};
 ```
 
-### 组织不同Forms中的自定义函数
+### 在不同的表单中组织自定义函数
 
-您可以在单独的文件或文件夹中创建不同的功能集，并根据需要导出它们：
+您可以在单独的文件或文件夹中创建不同的函数集，然后根据需要导出它们：
 
-- 如果您希望某些函数仅在特定表单中可用，则可以在表单配置中提供函数文件的路径。
+- 如果您希望某些函数仅供特定表单使用，可以在表单配置中提供相关函数文件的路径。
 
-- 如果路径的文本框留空，则规则编辑器默认为从`/blocks/form/functions.js`加载函数
+- 如果此路径的文本框为空白，规则编辑器就默认从 `/blocks/form/functions.js` 加载函数
 
-UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自定义函数
+![UE 中的自定义函数](/help/forms/assets/custom-function-in-ue.png){width=50%}
 
-在上面的屏幕快照中，自定义函数的路径已添加到自定义函数路径文本框中。 此表单的自定义函数是从指定的文件(`cc_function.js`)加载的。
+在上面的屏幕快照中，“自定义函数路径”文本框中添加了自定义函数的路径。此表单的自定义函数就从指定文件 (`cc_function.js`) 加载。
 
-这样就可以灵活地跨多个表单共享功能或按表单将其隔离。
+这样就可以在各种表单中共享函数，也可以将函数在每个表单中分开使用，为用户提供了灵活性。
 
 ## 规则开发的最佳实践
 
@@ -732,7 +732,7 @@ UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自定义函
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)：用于更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)：用于更广泛的上下文
 - [扩展管理器指南](/help/implementing/developing/extending/extension-manager.md)：用于启用附加功能
 - [Edge Delivery Services 表单](/help/edge/docs/forms/overview.md)：提供全面的表单开发指导
 

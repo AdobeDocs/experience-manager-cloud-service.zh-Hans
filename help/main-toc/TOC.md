@@ -526,7 +526,7 @@ ht-degree: 99%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -1013,7 +1013,7 @@ ht-degree: 99%
       + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
       + [生成变体](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [AEM Forms 的 AI 助手（表单体验生成器）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+      + [AEM Forms 的 AI 助手（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
       + [AEM Forms 的 AI 助手快速入门](/help/edge/docs/forms/forms-ai-assistant.md)
       + [AEM Forms 的 AI 助手（Forms Experience Builder）快速入门](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
       + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
@@ -1263,7 +1263,7 @@ ht-degree: 99%
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [使用专用存储库的提取请求检查](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [专用存储库的提取请求检查](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [GitHub 检查批注](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [环境变体](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
