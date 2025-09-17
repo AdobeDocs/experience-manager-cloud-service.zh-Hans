@@ -33,22 +33,22 @@ AEM Assets简化了您跨体验管理、组织和交付数字资源的方式。 
     <td><strong>PDF和文本提取</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM as a Cloud Service中大型MP4文件的资源处理失败</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639">DAM呈现与原始文件不匹配</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM在10万个令牌之后截断从大型PDF提取的文本</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM as a Cloud Service中大型MP4文件的资源处理失败</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26639">DAM呈现与原始文件不匹配</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM在10万个令牌之后截断从大型PDF提取的文本</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916">具有ZIP压缩上载的TIFF文件不生成演绎版</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233">图像在AEM as a Cloud Service中未显示缩略图演绎版</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518">AEM as a Cloud Service中大型PDF的文本提取限制</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23916">具有ZIP压缩上载的TIFF文件不生成演绎版</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26233">图像在AEM as a Cloud Service中未显示缩略图演绎版</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25518">AEM as a Cloud Service中大型PDF的文本提取限制</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865">将资源文件夹拖放到AEM Assets Web UI失败</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-21865">将资源文件夹拖放到AEM Assets Web UI失败</a></td>
     <td></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528">资产轮换问题使后续轮换不可见</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26528">资产轮换问题使后续轮换不可见</a></td>
   </tr>
   <tr>
-  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450">提高Photoshop Firefly API集成的单部分资源上传限制</a></td>
+  <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26450">提高Photoshop Firefly API集成的单部分资源上传限制</a></td>
   <td></td>
   <td></td>
   </tr>
@@ -65,29 +65,29 @@ AEM Assets简化了您跨体验管理、组织和交付数字资源的方式。 
     <td><strong>交付和设置</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533">修复了AEM中的视频上传、处理和渲染问题</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715">旋转集卡在处理状态</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628">更改资产的Dynamic Media URL</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26533">修复了AEM中的视频上传、处理和渲染问题</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26715">旋转集卡在处理状态</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-17628">更改资产的Dynamic Media URL</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677">Dynamic Media和DAM卡片视图之间的视频缩略图不匹配</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873">AEM as a Cloud Service中未生成智能裁剪演绎版</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367">AEM 6.5中的智能裁剪存在的图像中断问题</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26677">Dynamic Media和DAM卡片视图之间的视频缩略图不匹配</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26873">AEM as a Cloud Service中未生成智能裁剪演绎版</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26367">AEM 6.5中的智能裁剪存在的图像中断问题</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM Dynamic Media中的资源处理失败</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637">TIFF演绎版的背景颜色问题</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294">Dynamic Media常规设置页面未打开</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26610">AEM Dynamic Media中的资源处理失败</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26637">TIFF演绎版的背景颜色问题</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25294">Dynamic Media常规设置页面未打开</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197">使用Dynamic Media解决视频文件中的音频问题</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885">Dynamic Media中的资产同步失败</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461">解决不同环境中的资源名称差异</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26197">使用Dynamic Media解决视频文件中的音频问题</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25885">Dynamic Media中的资产同步失败</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26461">解决不同环境中的资源名称差异</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871">Dynamic Media视频播放器在较低环境中无法正常工作</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471">Dynamic Media同步用户建议</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902">使用API从Dynamic Media导出资源和元数据</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26871">Dynamic Media视频播放器在较低环境中无法正常工作</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25471">Dynamic Media同步用户建议</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26902">使用API从Dynamic Media导出资源和元数据</a></td>
   </tr>
   </tbody>
 </table>
@@ -102,14 +102,14 @@ AEM Assets简化了您跨体验管理、组织和交付数字资源的方式。 
     <td><strong>访问和共享</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828">AEM Assets中的图像元数据差异</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925">自动标记新上传的资产</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26928">尽管具有读取权限，但在Assets视图中仍受限制发表评论</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25828">AEM Assets中的图像元数据差异</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25925">自动标记新上传的资产</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26928">尽管具有读取权限，但在Assets视图中仍受限制发表评论</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655">解决非管理员用户的元数据架构可见性问题</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889">将JWT迁移到OAuth后，智能标记不起作用</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903">解决AEM Managed Services中的共享链接问题</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26655">解决非管理员用户的元数据架构可见性问题</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25889">将JWT迁移到OAuth后，智能标记不起作用</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25903">解决AEM Managed Services中的共享链接问题</a></td>
   </tr>
 
 </tbody>
@@ -124,18 +124,18 @@ AEM Assets简化了您跨体验管理、组织和交付数字资源的方式。 
       <td><strong>许可和定制</strong></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922">Adobe Asset Link使链接在InDesign中不可访问</a></td>
+      <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26922">Adobe Asset Link使链接在InDesign中不可访问</a></td>
       <td>
-        <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26616">内容片段未包含在AEM Assets许可证中</a><br>
+        <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26616">内容片段未包含在AEM Assets许可证中</a><br>
         </td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562">解决InDesign中的AEM Asset Link连接问题</a></td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525">解决AEM as a Cloud Service中的资源处理问题</a></td>
+      <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25562">解决InDesign中的AEM Asset Link连接问题</a></td>
+      <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25525">解决AEM as a Cloud Service中的资源处理问题</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506">Adobe Asset Link插件网络错误：服务器不可访问</a></td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829">正在更新AEM as a Cloud Service中视频资源的自定义缩略图</a>
+      <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25506">Adobe Asset Link插件网络错误：服务器不可访问</a></td>
+      <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-25829">正在更新AEM as a Cloud Service中视频资源的自定义缩略图</a>
       </td>
     </tr>
   </tbody>
@@ -187,17 +187,17 @@ AEM Forms as a Cloud Service提供了强大的表单创建和管理功能。 但
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md">403表单提交中禁止出现错误</a></td>
     <td><a href="/help/forms/custom-submit-action-troubleshooting.md">自定义提交操作出现502错误</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27434">DRM-SAML重定向失败</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-27434">DRM-SAML重定向失败</a></td>
   </tr>
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md#cors-issues">CORS配置问题</a></td>
     <td><a href="/help/forms/custom-submit-action-troubleshooting.md#resolution">未处理的异常处理</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27075">AEM Sites上禁用了“提交”按钮</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-27075">AEM Sites上禁用了“提交”按钮</a></td>
   </tr>
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md#referrer-filter-issues">反向链接筛选条件配置</a></td>
     <td><a href="/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md">自定义操作的最佳实践</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26532">升级后的隐藏字段可见性</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26532">升级后的隐藏字段可见性</a></td>
   </tr>
   </tbody>
 </table>
@@ -212,19 +212,19 @@ AEM Forms as a Cloud Service提供了强大的表单创建和管理功能。 但
     <td><strong>版本和兼容性</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26558">Designer 6.5升级后未打开</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27089">定位器无法以JDK 8/11开头</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26862">AEM Forms (AEMFD)包版本显示问题</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26558">Designer 6.5升级后未打开</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-27089">定位器无法以JDK 8/11开头</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26862">AEM Forms (AEMFD)包版本显示问题</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21018">PDF Generator JPEG 2000错误</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-22689">JBoss日志路径配置</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26846">Windows中的版本号不正确</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-21018">PDF Generator JPEG 2000错误</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-22689">JBoss日志路径配置</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26846">Windows中的版本号不正确</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27406">PDF输出中缺少按钮</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18084">Configuration Manager升级错误</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17339">索引损坏解决方法</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-27406">PDF输出中缺少按钮</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-18084">Configuration Manager升级错误</a></td>
+    <td><a href="https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-17339">索引损坏解决方法</a></td>
   </tr>
   </tbody>
 </table>
