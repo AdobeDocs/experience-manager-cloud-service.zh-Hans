@@ -1,14 +1,14 @@
 ---
 title: Forms Experience Builder
-description: 使用表单片段更快地制作强大的表单
+description: Forms Experience Builder 简介
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
+source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -64,7 +64,6 @@ Forms Experience Builder 提供了两种用于创建强大数字表单的主要�
 - **扁平化 PDF**：将静态文档转换为交互式表单
 - **图像和屏幕快照**：JPG、PNG 格式（与团队确认大小限制）
 - **手绘表单**：草图和纸质照片
-
 
 **智能转换过程**
 
@@ -206,7 +205,6 @@ Forms Experience Builder 目前是早期访问 (EA) 计划的一部分。要参�
 - **项目详细信息**：时间表、范围和预期用例
 - **官方工作电子邮件地址**：与您组织的 Adobe 帐户关联的地址
 
-
 ### 如何获取 IMS 组织 ID 和项目群 ID
 
 有关查找 IMS 组织 ID 和项目群 ID 的详细步骤，请参阅：
@@ -229,7 +227,6 @@ Forms Experience Builder 目前是早期访问 (EA) 计划的一部分。要参�
 > **限制提供计划**：Forms Experience Builder 的访问权限需经内部利益相关者的审批。Adobe 将根据计划容量和是否符合早期访问标准来审核您的申请。不保证一定能通过审批，并且取决于当前计划的可用性。
 
 有关早期访问计划及其功能的更多信息，请参阅 [AEM Forms 早期访问文档](/help/forms/early-access-ea-features.md)。
-
 
 ## 快速入门
 
