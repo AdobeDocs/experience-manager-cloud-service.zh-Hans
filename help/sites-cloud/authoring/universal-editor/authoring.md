@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2495'
+ht-degree: 20%
 
 ---
 
@@ -80,6 +80,22 @@ ht-degree: 21%
 ![富文本编辑对话框](assets/rich-text-canvas.png)
 
 点击或单击&#x200B;**取消**&#x200B;或&#x200B;**完成**&#x200B;可分别放弃或保存更改。
+
+#### 富文本格式选项 {#formatting-options}
+
+通用编辑器的富文本编辑器(RTE)允许作者应用标准文本格式。 默认情况下，以下选项可用。
+
+* 段落（h1、h2、h3等）
+* 粗体
+* 斜体
+* 下划线
+* 上标
+* 下标
+* 带项目符号的列表
+* 编号列表
+* 链接
+
+RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有关详细信息，请参阅文档[为通用编辑器配置RTE](/help/implementing/universal-editor/configure-rte.md)。
 
 ### 编辑媒体 {#edit-media}
 

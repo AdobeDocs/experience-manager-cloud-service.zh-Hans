@@ -1,20 +1,21 @@
 ---
-title: 将富文本编辑器配置为在 [!DNL Adobe Experience Manager] as a Cloud Service中创作内容。
+title: 配置富文本编辑器以在 [!DNL Adobe Experience Manager] as a Cloud Service中创作内容。
 description: 配置富文本编辑器以在 [!DNL Adobe Experience Manager] as a Cloud Service中创作内容。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
 
+
 # 配置富文本编辑器 {#configure-the-rich-text-editor}
 
-富文本编辑器(RTE)为作者提供了一系列广泛的功能来编辑文本内容。 为所见即所得文本编辑体验提供了图标、选择框、工具栏和菜单。 管理员配置RTE以启用、禁用和扩展创作组件中可用的功能。 查看作者[如何使用RTE创作](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) Web内容。
+富文本编辑器(RTE)为作者提供了一系列广泛的功能来编辑文本内容。 提供了图标、选择框、工具栏和菜单，以提供WYSIWYG文本编辑体验。 管理员配置RTE以启用、禁用和扩展创作组件中可用的功能。 查看作者[如何使用RTE创作](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) Web内容。
 
 下面列出了配置RTE所需的概念和步骤。
 
@@ -23,6 +24,10 @@ ht-degree: 0%
 | [了解接口](#understand-rte-ui) | [了解并设置配置位置](#understand-the-configuration-paths-and-locations) | [配置插件](#enable-rte-functionalities-by-activating-plug-ins) |
 | [编辑模式类型](#editingmodes) | [激活插件](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [设置功能属性](#aboutplugins) |
 | [关于插件](#aboutplugins) | [配置RTE工具栏](#dialogfullscreen) | [配置粘贴模式](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
+
+>[!NOTE]
+>
+>本文档中介绍的RTE描述了页面编辑器中可用的RTE。 如果您使用的是现代通用编辑器，有关详细信息，请参阅文档[为通用编辑器配置RTE](/help/implementing/universal-editor/configure-rte.md)。
 
 ## 了解可供作者使用的用户界面 {#understand-rte-ui}
 
@@ -118,7 +123,7 @@ RTE的基本功能由相应插件专属的节点上的`features`属性值激活�
 
 ## 了解配置路径和位置 {#understand-the-configuration-paths-and-locations}
 
-当您[激活RTE插件](configure-rich-text-editor-plug-ins.md#activateplugin)时，RTE编辑的[模式和您为作者提供的界面](#editingmodes)将决定配置详细信息的位置。 这些位置包括：
+当您[激活RTE插件](#editingmodes)时，RTE编辑的[模式和您为作者提供的界面](configure-rich-text-editor-plug-ins.md#activateplugin)将决定配置详细信息的位置。 这些位置包括：
 
 * 内联模式： `cq:editConfig/cq:inplaceEditing`。
 * 全屏模式： `cq:editConfig/cq:inplaceEditing`。
@@ -137,7 +142,7 @@ RTE的基本功能由相应插件专属的节点上的`features`属性值激活�
 
 配置以下在对话框编辑模式下应用的属性：
 
-* `useFixedInlineToolbar`：您可以将RTE工具栏变为固定工具栏而不是浮动工具栏。 在sling：resourceType= `cq/gui/components/authoring/dialog/richtext`的RTE节点上将定义的此Boolean属性设置为`True`。 当此属性设置为`True`时，将在`foundation-contentloaded`事件上开始富文本编辑。 要防止出现这种情况，请将属性`customStart`设置为`True`并触发`rte-start`事件以开始RTE编辑。 当此属性为`true`时，单击时不会启动RTE，这是默认行为。
+* `useFixedInlineToolbar`：您可以将RTE工具栏变为固定工具栏而不是浮动工具栏。 在sling:resourceType= `cq/gui/components/authoring/dialog/richtext`到`True`的RTE节点上设置此布尔值属性。 当此属性设置为`True`时，将在`foundation-contentloaded`事件上开始富文本编辑。 要防止出现这种情况，请将属性`customStart`设置为`True`并触发`rte-start`事件以开始RTE编辑。 当此属性为`true`时，单击时不会启动RTE，这是默认行为。
 
 * `customStart`：将RTE节点上定义的此Boolean属性设置为`True`，以通过触发事件`rte-start`来控制何时启动RTE。
 
@@ -154,7 +159,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[核心组件文本组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hans#the-text-component-and-the-rich-text-editor)允许模板编辑器使用用户界面作为内容策略配置许多RTE插件，而无需技术配置。 内容策略可以与RTE UI配置配合使用，如本文档所述。 有关详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md)和[核心组件开发人员文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=zh-Hans)。
+[核心组件文本组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)允许模板编辑器使用用户界面作为内容策略配置许多RTE插件，而无需技术配置。 内容策略可以与RTE UI配置配合使用，如本文档所述。 有关详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md)和[核心组件开发人员文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >出于参考目的，默认文本组件（作为标准安装的一部分提供）可以在以下位置找到：
 >
@@ -214,7 +219,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 如果该选项是一个弹出窗口（包含插件的某些功能），则将其指定为`#PluginName`（例如，`#format`）。
 
-可以使用`-`在选项组之间指定分隔符(`|`)。
+可以使用`|`在选项组之间指定分隔符(`-`)。
 
 内联或全屏模式下的弹出窗口节点包含正在使用的弹出窗口列表。 `popovers`节点下的每个子节点均以插件名称（例如，格式）命名。 它具有包含插件功能列表（例如，format#bold）的“items”属性。
 
@@ -228,13 +233,13 @@ RTE中的可用选项会从用户界面配置下游流向内容策略。
 * 如果RTE的用户界面配置已移除或未启用某个项目，则内容策略无法对其进行配置。
 * 作者只能访问由用户界面配置和内容策略提供的功能。
 
-例如，您可以看到[文本核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hans#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[文本核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
 
 ## 自定义工具栏图标和命令之间的映射 {#iconstoolbar}
 
 您可以自定义RTE工具栏上显示的Coral图标与可用命令之间的映射。 除了Coral图标之外，您无法使用任何其他图标。
 
-1. 在`uiSettings/cui`下创建名为`icons`的节点。
+1. 在`icons`下创建名为`uiSettings/cui`的节点。
 
 1. 为下面的单个图标创建节点。
 1. 在每个图标节点上，指定一个Coral图标和一个用于映射到该图标的命令。
