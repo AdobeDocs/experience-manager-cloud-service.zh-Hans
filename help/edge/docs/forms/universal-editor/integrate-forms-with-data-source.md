@@ -4,8 +4,8 @@ description: 了解如何基于表单数据模型 (FDM) 为 Edge Delivery Servic
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
+source-git-commit: 7d3ea5bdc6545b9610f595660fcfb2ef70c837de
+workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
 
