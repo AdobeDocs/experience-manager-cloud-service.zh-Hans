@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
+source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
 workflow-type: tm+mt
-source-wordcount: '6642'
-ht-degree: 99%
+source-wordcount: '6648'
+ht-degree: 98%
 
 ---
 
@@ -526,7 +526,7 @@ ht-degree: 99%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -638,7 +638,7 @@ ht-degree: 99%
       + [配置 Dynamic Media 别名帐户](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media 中的辅助功能](/help/assets/dynamic-media/accessibility-dm.md)
       + [管理 Dynamic Media 资产](/help/assets/dynamic-media/managing-assets.md)
-      + [优化图像质量的最佳实践](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
+      + [优化图像质量的最佳做法](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [图像配置文件](/help/assets/dynamic-media/image-profiles.md)
       + [视频配置文件](/help/assets/dynamic-media/video-profiles.md)
       + [管理 Dynamic Media 图像预设](/help/assets/dynamic-media/managing-image-presets.md)
@@ -648,7 +648,7 @@ ht-degree: 99%
       + [批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [通过 Dynamic Media 使 CDN 缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [通过 Dynamic Media Classic 使 CDN 缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [智能成像](/help/assets/dynamic-media/imaging-faq.md)
+      + [智能图像处理](/help/assets/dynamic-media/imaging-faq.md)
       + [具有客户端设备像素比的智能成像](/help/assets/dynamic-media/client-side-dpr.md)
       + [传递 Dynamic Media 资产](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media 模板](/help/assets/dynamic-media/dynamic-media-templates.md)
@@ -933,33 +933,33 @@ ht-degree: 99%
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
    + HTML5 表单 {#html5-forms}
-      + [HTML5 表单简介](/help/forms/introductionhtml5.md)
-      + [HTML5 表单快速入门](/help/forms/get-started.md)
-      + [HTML5 表单的架构](/help/forms/html5-forms-architecture.md)
-      + [HTML5 表单与 PDF 表单的功能差异](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
-      + [HTML5 表单常见问题解答（FAQ）](/help/forms/faqhtml5.md)
-      + [为 HTML5 表单设计表单模板](/help/forms/designing-form-template.md)
-      + [HTML5 表单的最佳实践](/help/forms/best-practices-for-html5-forms.md)
-      + [无障碍 HTML5 表单设计](/help/forms/design-accessible-html5-forms.md)
+      + [HTML5 Forms 简介](/help/forms/introductionhtml5.md)
+      + [HTML5 Forms 快速入门](/help/forms/get-started.md)
+      + [HTML5 Forms 的架构](/help/forms/html5-forms-architecture.md)
+      + [HTML5 Forms 与 PDF Forms 的功能差异](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [HTML5 Forms 常见问题解答（FAQ）](/help/forms/faqhtml5.md)
+      + [为 HTML5 Forms 设计表单模板](/help/forms/designing-form-template.md)
+      + [HTML5 Forms 的最佳做法](/help/forms/best-practices-for-html5-forms.md)
+      + [无障碍 HTML5 Forms 设计](/help/forms/design-accessible-html5-forms.md)
       + [生成 XDP 表单的 HTML5 预览](/help/forms/preview-xdp-forms-html.md)
-      + [为 HTML5 表单渲染表单模板](/help/forms/rendering-form-template.md)
-      + [为 HTML5 表单启用附件功能](/help/forms/enabling-attachments-html5-form.md)
-      + [HTML5 表单服务代理](/help/forms/service-proxy.md)
-      + [优化 HTML5 表单](/help/forms/optimize-html5-forms.md)
-      + [HTML5 表单的屏幕阅读器](/help/forms/screen-readers.md)
-      + [为 HTML5 表单创建自定义轮廓](/help/forms/custom-profile.md)
-      + [HTML5 表单中的从右至左语言](/help/forms/right-left-languages.md)
-      + [将 Form Bridge 集成至 HTML5 表单的自定义门户中](/help/forms/integrate-form-bridge-forms-portal.md)
-      + [在 HTML5 表单中创建自定义外观](/help/forms/custom-widgets.md)
-      + [更改 HTML5 表单的默认样式](/help/forms/changing-default-styles.md)
-      + [HTML5 表单的 Picture 子句支持](/help/forms/picture-clause-support.md)
-      + [在 HTML5 表单中创建无障碍复杂表格](/help/forms/accessible-tables.md)
-      + [为 HTML5 表单创建 CSS 样式](/help/forms/css-styles.md)
-      + [自定义 HTML5 表单的错误消息](/help/forms/customzing-errors-html5-forms.md)
-      + [将 HTML5 表单保存为草稿](/help/forms/saving-html5-form-draft.md)
-      + [为 HTML5 表单启用日志记录功能](/help/forms/enable-logs.md)
-      + [调试 HTML5 表单](/help/forms/debug.md)
-      + [HTML5 表单的脚本支持](/help/forms/scripting-support.md)
+      + [为 HTML5 Forms 渲染表单模板](/help/forms/rendering-form-template.md)
+      + [为 HTML5 Forms 启用附件功能](/help/forms/enabling-attachments-html5-form.md)
+      + [HTML5 Forms 服务代理](/help/forms/service-proxy.md)
+      + [优化 HTML5 Forms](/help/forms/optimize-html5-forms.md)
+      + [HTML5 Forms 的屏幕阅读器](/help/forms/screen-readers.md)
+      + [为 HTML5 Forms 创建自定义轮廓](/help/forms/custom-profile.md)
+      + [HTML5 Forms 中的从右至左语言](/help/forms/right-left-languages.md)
+      + [将 Form Bridge 集成至 HTML5 Forms 的自定义门户中](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [在 HTML5 Forms 中创建自定义外观](/help/forms/custom-widgets.md)
+      + [更改 HTML5 Forms 的默认样式](/help/forms/changing-default-styles.md)
+      + [HTML5 Forms 的 Picture 子句支持](/help/forms/picture-clause-support.md)
+      + [在 HTML5 Forms 中创建无障碍复杂表格](/help/forms/accessible-tables.md)
+      + [为 HTML5 Forms 创建 CSS 样式](/help/forms/css-styles.md)
+      + [自定义 HTML5 Forms 的错误消息](/help/forms/customzing-errors-html5-forms.md)
+      + [将 HTML5 Forms 保存为草稿](/help/forms/saving-html5-form-draft.md)
+      + [为 HTML5 Forms 启用日志记录功能](/help/forms/enable-logs.md)
+      + [调试 HTML5 Forms ](/help/forms/debug.md)
+      + [HTML5 Forms 的脚本支持](/help/forms/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
    + 交互式通信 {#interactive-communication}
       + [交互式通信编辑器简介](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
@@ -1474,6 +1474,7 @@ ht-degree: 99%
    + 部署到 AEM as a Cloud Service {#deploying}
       + [部署到 AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
+      + [无讯息小时数和更新空闲时段](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)
       + [资产映射](/help/implementing/deploying/resource-mapping.md)
    + 创作层 {#author-tier}

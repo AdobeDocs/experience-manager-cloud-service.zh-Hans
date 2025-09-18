@@ -4,7 +4,7 @@ description: 了解Adobe Experience Manager (AEM) as a Cloud Service如何使用
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01de7b0c4e0408a3bbc5322e37db5075d43c4c5f
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
@@ -23,7 +23,7 @@ AEM as a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的
 >[!NOTE]
 > 由于开发实例已自动更新，因此&#x200B;_某些_&#x200B;程序可能无法使用开发实例的手动更新。 此功能正在转换为自动更新。
 
-在自动更新实例之前，将提前3-5天发布新的AEM维护版本。 在此期间，您的开发实例可能会自动更新，如果该实例可用，您可以选择[触发开发实例的更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)。 版本更新首先自动应用于您的开发环境。 如果更新成功，则更新流程将继续到暂存和生产实例。 开发和暂存实例充当自动化的质量关卡，在生产环境应用更新之前，可在其中运行自定义编写的测试。
+在自动更新实例之前，新的AEM维护版本会提前3-5天发布。 在此期间，您的开发实例可能会自动更新，如果该实例可用，您可以选择[触发开发实例的更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)。 版本更新首先自动应用于您的开发环境。 如果更新成功，则更新流程将继续到暂存和生产实例。 开发和暂存实例充当自动化的质量关卡，在生产环境应用更新之前，可在其中运行自定义编写的测试。
 
 ### NIMU（非侵入式维护更新） {#nimu}
 
@@ -32,13 +32,12 @@ AEM as a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的
 
 #### 更新活动
 
-与之前一样，使用Cloud Manager UI环境面板仍然可以检查每个环境的当前AEM版本。 非侵入式维护更新（包括客户编写的测试）使用管道中使用的相同质量审核。
+与之前一样，使用AEM UI环境面板仍然可以检查每个环境的当前Cloud Manager版本。 非侵入式维护更新（包括客户编写的测试）使用管道中使用的相同质量审核。
 每当对程序环境应用非侵入式维护更新时，将发送[Cloud Manager UI通知](/help/implementing/cloud-manager/notifications.md)。 您可以将其配置为也发送到您的电子邮件。
 
 >[!NOTE]
 >
 > 注意：非侵入式维护更新将于2024年逐步为所有客户启用。
-
 
 ## 更新类型 {#update-types}
 
@@ -55,11 +54,11 @@ AEM as a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的
 
 >[!NOTE]
 >
-> 在[Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)上检查每月发布的关键日期，并标记您的日历，自行为关键活动做好准备以便进行发布。
+> 在[Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)中检查每月发布的关键日期，并标记您的日历以做好准备来开展关键活动，为发布做好准备。
 
 ## 更新失败 {#update-failure}
 
-AEM更新需要执行大量且完全自动化的产品验证管道，该管道包含多个步骤，可确保生产中的任何系统都不会出现服务中断。 运行状况检查用于监视应用程序的运行状况。 如果这些检查在AEM as a Cloud Service更新期间失败，则发布不会继续，并且Adobe会调查更新导致此意外行为的原因。
+AEM更新通过密集、完全自动化的产品验证管道，涉及多个步骤，确保生产中的任何系统不会出现服务中断。 运行状况检查用于监视应用程序的运行状况。 如果这些检查在AEM as a Cloud Service更新期间失败，则发布不会继续，并且Adobe会调查更新导致此意外行为的原因。
 
 当您在环境中部署新版本的自定义代码时，[产品和自定义功能测试](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)将发挥关键作用。 它们可确保生产系统在应用更改后仍保持稳定和正常运行。 这些测试还应用于AEM版本更新过程。
 
@@ -70,7 +69,7 @@ AEM更新需要执行大量且完全自动化的产品验证管道，该管道�
 >
 >如果自定义代码推送到暂存而不是生产环境，则下次AEM更新时会删除这些更改，以反映上次成功发布到生产环境的客户的Git标记。 因此，必须重新部署仅在暂存上可用的自定义代码。
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
 * **暂存环境使用情况**
    * 使用其他环境（而不是暂存）完成较长的QA/UAT周期。
@@ -89,7 +88,7 @@ AEM更新需要执行大量且完全自动化的产品验证管道，该管道�
 
 * **自动化功能测试**
    * 在管道中包含自动测试，以便测试关键功能。
-   * [客户功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)和[自定义UI测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)如果失败，则将阻止AEM版本，并且不会推出。
+   * [客户功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)和[自定义UI测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)如果失败，则将阻止AEM版本。
 
 ## 回归 {#regression}
 
@@ -97,9 +96,9 @@ AEM更新需要执行大量且完全自动化的产品验证管道，该管道�
 
 ## 复合节点存储 {#composite-node-store}
 
-通常，更新会产生零停机时间，包括创作实例（节点集群）的停机时间。 由于Oak[&#128279;](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)中的复合节点存储功能，可能会进行滚动更新。
+通常，更新会产生零停机时间，包括创作实例（节点集群）的停机时间。 由于Oak[中的](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)复合节点存储功能，可能会进行滚动更新。
 
-此功能允许AEM同时引用多个存储库。 在[滚动部署](/help/implementing/deploying/overview.md#how-rolling-deployments-work)中，新AEM版本包含其自己的`/libs` （基于TarMK的不可变存储库）。 它与旧版AEM不同，不过两者都引用基于DocumentMK的共享可变存储库，该存储库包含`/content`、`/conf`、`/etc`等区域。
+此功能允许AEM同时引用多个存储库。 在[滚动部署](/help/implementing/deploying/overview.md#how-rolling-deployments-work)中，新的AEM版本包含其自己的`/libs` （基于TarMK的不可变存储库）。 它与旧版AEM不同，不过两者都引用基于DocumentMK的共享可变存储库，该存储库包含`/content`、`/conf`、`/etc`等区域。
 
 由于旧版本和新版本都有各自的`/libs`版本，因此在滚动更新期间它们都可以处于活动状态。 而且，在旧设备完全被新设备取代之前，这两种设备都可以承受流量。
 
