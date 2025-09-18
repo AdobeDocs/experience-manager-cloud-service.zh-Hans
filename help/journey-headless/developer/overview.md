@@ -6,9 +6,9 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 20914cde3be3ff3061b061d930154bd72da45d11
+source-git-commit: f9634228fed8c194f1bdcdc9a368d4c0492b7fd5
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1070'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 100%
 >id="aemcloud_headless_developer_resources"
 >title="AEM Headless 开发人员资源和高级文档"
 >abstract="了解 AEM Headless CMS 以及构建和交付更好的应用程序和更快的体验所需的一切。"
+>additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans" text="AEM Headless 开发人员资源"
 
 
 ## 简介 {#introduction}
@@ -95,5 +96,5 @@ AEM 的 Headless 实施使用内容片段模型和内容片段来专注于创建
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 * [Headless 架构师历程](/help/journey-headless/architect/overview.md) – 从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。
-* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans) – 如果您已对 AEM 和 Headless 技术有一定的了解，请参阅深入的技术文档。
+* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 和 Headless 技术有一定的了解，请参阅深入的技术文档。
    * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
