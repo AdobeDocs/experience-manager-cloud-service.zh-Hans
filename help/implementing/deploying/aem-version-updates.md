@@ -54,7 +54,7 @@ AEM as a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的
 
 >[!NOTE]
 >
-> 在[Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)中检查每月发布的关键日期，并标记您的日历以做好准备来开展关键活动，为发布做好准备。
+> 在[Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)中检查每月发布的关键日期，并标记您的日历以做好准备来开展关键活动，为发布做好准备。
 
 ## 更新失败 {#update-failure}
 
