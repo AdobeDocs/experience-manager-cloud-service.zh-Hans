@@ -4,10 +4,10 @@ description: 了解 Content Fragments 和 Content Fragment Models OpenAPIs。
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: d683051387af5c0de45917a50003c2194d887bc4
+source-git-commit: 1fb1201fa976e4c0e3c87f22bd9327a55828efef
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 47%
+ht-degree: 37%
 
 ---
 
@@ -15,7 +15,11 @@ ht-degree: 47%
 
 内容片段管理 API 的现代化 OpenAPI 实现允许开发人员以编程方式在 AEM 作者上执行创建、读取、更新和删除操作，以管理存储在 AEM 中的内容片段模型和内容片段。这些 API 支持多种用例。
 
-内容片段的现有 [资产 HTTP API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) 使用应迁移至新的 Content Fragment Management OpenAPI。有关完整文档，请参阅 [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)。
+有关完整文档，请参阅 [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)。
+
+>[!NOTE]
+>
+>用于内容片段的[Assets HTTP API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets)的现有使用应迁移到新的内容片段管理OpenAPI。
 
 >[!NOTE]
 >
