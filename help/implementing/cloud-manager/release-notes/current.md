@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,17 +29,17 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.9.0 的发布日期是 2025 年
 
 * **手动续订 Adobe 管理的域验证证书**
 
-  您现在可以从Cloud Manager或公共API手动续订失败的Adobe管理的域验证(DV)证书，以主动刷新证书。<!-- CMGR-68738 -->
+  您现在可以从 Cloud Manager 或公共 API 手动续订失败的 Adobe 管理的域验证 (DV) 证书，以主动刷新证书。<!-- CMGR-68738 -->
 
   ![SSL 证书续订](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* 现在为Azure DevOps （专用存储库）添加了&#x200B;**支持**
+* **现在添加了对 Azure DevOps（专用存储库）的支持**
 
   文档更新包括使用 Azure DevOps 时为自带 Git 配置的步骤以及提取请求验证。请参阅[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
-* **将您自己的Git (BYOG)支持扩展到配置管道（专用存储库）**
+* **自带 Git (BYOG) 的支持已扩展到配置管道（专用存储库）**
 
-  Cloud Manager 现在支持用于 GitHub、Bitbucket、Azure DevOps 和 GitLab 的专用存储库配置管道。这种支持进一步加快了开发周期。 请参阅[使用专用存储库的提取请求检查](/help/implementing/cloud-manager/managing-code/github-check-config.md)。
+  Cloud Manager 现在支持用于 GitHub、Bitbucket、Azure DevOps 和 GitLab 的专用存储库配置管道。这一支持进一步加快了开发周期。请参阅[使用专用存储库的提取请求检查](/help/implementing/cloud-manager/managing-code/github-check-config.md)。
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,10 +63,10 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 当最新的客户源代码未如预期运行时，可迅速回滚至先前的部署，无需重新运行完整管道或手动回退提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**&#x200B;选项。*
+![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**选项。*
 
 ![“还原先前部署的代码”对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
+*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
 
 ![恢复激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager 会将环境回滚至较早的构建版本，保留内容和配置不变，并在部署完成前将该环境标记为&#x200B;**还原中**。*
@@ -152,7 +152,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![过滤器面板显示新的投放类型：边缘投放和发布投放](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**&#x200B;页面的&#x200B;**管道**&#x200B;卡片中添加 Edge Delivery 管道。*
+![在“添加管道”下拉列表中添加 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *从&#x200B;**程序概览**页面的&#x200B;**管道**卡片中添加 Edge Delivery 管道。*
 
 ![添加 Edge Delivery 管道对话框](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *添加 Edge Delivery 管道对话框。*
 
