@@ -3,7 +3,7 @@ title: 使用具有OpenAPI功能的Dynamic Media创建虚名URL
 description: 使用Dynamic Media OpenAPI功能将您的长资源投放URL转换为简短且带品牌的虚名URL。 虚URL是复杂投放URL的简短、干净、易于记忆和可读的版本。 您可以在虚URL中包含品牌名称、产品名称和相关的关键词，以提高品牌知名度和用户参与度
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 73574b3358451dfe135b91011abb5cad372a783e
+source-git-commit: 54c592e4db4cbaa884e298cc5e81115cd5573b28
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 是否使用虚URL？{#vanity-urls}
+# 使用虚URL{#vanity-urls}
 
 使用[!DNL Dynamic Media OpenAPI capabilities]将您的长资源投放URL转换为短的、品牌化的虚URL。 标准资产交付URL包括系统生成的资产UUID，这些UUID使交付URL复杂、难以记忆和共享。 将这些资产UUID替换为简单标识符（虚ID）以生成虚URL。 虚URL是复杂投放URL的简短、干净和可读版本。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 虚URL包含虚标识符来代替资产UUID，并遵循以下格式。
 
-***格式：*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+***格式：*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 虚URL包含`avid`之后的&#x200B;*（*&#x200B;实际虚标识符`urn:`）以及介于`urn:avid:aem:`和`/<seoname>.<format>`之间的虚ID。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 * **SEO优化：**&#x200B;包含相关关键字的URL提高了搜索引擎排名和可发现性。
 
-* **增强的品牌可见性：**&#x200B;品牌特定的URL增强了所有营销渠道（包括电子邮件、社交媒体和广告营销活动）中的品牌影响力。
+* **增强的品牌可见性：**品牌特定的URL增强了所有营销渠道（包括电子邮件、社交媒体和广告营销活动）中的品牌影响力。
 此外，在所有通信中始终如一地使用品牌URL可加强品牌标识和知名度。
 
 * **促销活动跟踪和分析：**&#x200B;为不同的促销活动和渠道使用唯一的虚URL，以详细了解流量源和转化效果。
@@ -134,13 +134,13 @@ ht-degree: 0%
 
 ## 使用虚URL进行扩展{#scale-using-vanity-url}
 
-AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 将这些AEMCS功能与您的虚URL结合使用，将它们转换为清洁、描述性、品牌化、直观的唯一Web地址，并提供上述[好处](#key-benefits)。
+AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 将这些AEMCS功能与您的虚URL结合使用，将它们转换为清洁、描述性、品牌化、直观的唯一Web地址，并提供上述[好处](#key-benefits)。
 
 请参阅以下虚URL及其可自定义的组件：
 
 **虚URL格式：**
 
-`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
 <tr valign="top">
@@ -161,14 +161,14 @@ AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://ex
 <div style="text-align:center;"><a href="#create-vanity-urls">创建虚ID</a></div>
 </td>
 <td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
-<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+<code>/as/&lt;seoname&gt;.&lt;format&gt;</code>
 </td>
 </tr>
 </table>
 
 **具有自定义DNS和CDN名称的虚名URL格式：**
 
-`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
+`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/as/<seoname>.<format>`
 
 **可自定义的URL组件**
 
@@ -184,7 +184,7 @@ AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://ex
 执行以下步骤可重写用于投放的CDN规则：
 
 1. 导航到您的AEM存储库以创建YAML配置文件。
-2. 执行[设置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)部分中的步骤以配置CDN规则并通过Cloud Manager配置管道部署配置。
+2. 执行[设置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)部分中的步骤以配置CDN规则并通过Cloud Manager配置管道部署配置。
 按照这些[最佳实践](#best-practices)创建域路径。
    [了解有关CDN重写规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 
