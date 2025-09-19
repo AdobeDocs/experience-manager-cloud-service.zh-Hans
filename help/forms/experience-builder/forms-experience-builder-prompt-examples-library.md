@@ -492,4 +492,4 @@ ht-degree: 99%
 
 如需了解全面的最佳实践和验证指南，请参阅 [Forms Experience Builder 快速入门指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
 
-*此提示词库会根据用户反馈和新的 Forms Experience Builder 功能不断更新。如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*
+*此提示词库会根据用户反馈和新的 Forms Experience Builder 功能不断更新。如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。*
