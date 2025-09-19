@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
+source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
 workflow-type: tm+mt
-source-wordcount: '6648'
+source-wordcount: '6665'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -1013,12 +1013,16 @@ ht-degree: 98%
       + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
       + [生成变体](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [AEM Forms 的 AI 助手（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [AEM Forms 的 AI 助手快速入门](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [AEM Forms 的 AI 助手（Forms Experience Builder）快速入门](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [AEM Forms AI 助手 - 提示词库](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder - 最佳实践](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder - 故障排除指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Forms Experience Builder — 概述](/help/forms/experience-builder/product-overview.md)
+      + [Forms Experience Builder快速入门](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [部署和配置Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + 操作方式 {#forms-experience-builder-how-to}
+         + [如何将图像转换为表单？](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + [如何配置表单提交和集成？](/help/forms/experience-builder/form-submission-integration.md)
+         + [如何在Forms Experience Builder中创建LLM增强型智能字段？](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + [如何在Forms Experience Builder中启动新的线程对话？](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + [提示库](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + [常见问题解答（FAQ）](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概述 {#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
