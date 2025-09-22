@@ -4,9 +4,9 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 7a4fbb5bb217a43a223be01e142458ba9a962cc9
+source-git-commit: aa3556ec4460ae9b0ffb85bb761a79e8f99a0ec4
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2444'
 ht-degree: 26%
 
 ---
@@ -40,10 +40,6 @@ ht-degree: 26%
 
 
 ## 添加一个外部存储库 {#add-ext-repo}
-
->[!NOTE]
->
->外部存储库无法链接到配置管道。
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
@@ -246,7 +242,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 | 所需的webhook事件和身份验证 |
 | --- |
-| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送的代码</li><li>拉取请求已评论</li><li>已创建拉取请求</li><li>拉取请求已更新</li></ul>设置身份验证： <br>1。 在&#x200B;**基本身份验证用户名**&#x200B;字段中，键入`cloudmanager`。<br>2。在&#x200B;**基本身份验证密码**&#x200B;字段中，键入从Cloud Manager用户界面生成的Webhook密码。 |
+| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送的代码</li><li>拉取请求已评论</li><li>已创建拉取请求</li><li>拉取请求已更新</li></ul>设置身份验证： <br>1。 在&#x200B;**基本身份验证用户名**&#x200B;字段中，键入`cloudmanager`。<br>2. 在&#x200B;**基本身份验证密码**&#x200B;字段中，键入从Cloud Manager用户界面生成的Webhook密码。 |
 
 >[!ENDTABS]
 
