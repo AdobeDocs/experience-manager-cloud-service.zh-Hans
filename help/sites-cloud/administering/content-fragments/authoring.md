@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
 workflow-type: tm+mt
-source-wordcount: '2824'
-ht-degree: 70%
+source-wordcount: '2823'
+ht-degree: 71%
 
 ---
 
@@ -176,9 +176,9 @@ ht-degree: 70%
 
 要删除内容片段的变体，请执行以下操作：
 
-    >[！NOTE]
-    >
-    >您无法删除&#x200B;**Main**.
+>[!NOTE]
+>
+>无法删除&#x200B;**主控**。
 
 1. 选择变体。
 
@@ -267,7 +267,7 @@ ht-degree: 70%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
