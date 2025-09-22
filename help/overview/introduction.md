@@ -4,7 +4,7 @@ description: 了解 Experience Manager as a Cloud Service 的工作方式以及�
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
@@ -46,6 +46,7 @@ AEM as a Cloud Service 可帮助您以云原生的方式将 AEM 应用程序资�
 * 市场营销专家可以更快地实现价值。
 
 >[!NOTE]
+>
 >请参阅[术语](terminology.md)，了解 AEM as a Cloud Service 引入的某些新术语。
 
 ## 云服务的附加价值 {#value-added-as-a-cloud-service}
