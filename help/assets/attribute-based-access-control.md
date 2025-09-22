@@ -3,7 +3,7 @@ title: 基于属性的访问控制
 description: 了解如何启用基于属性的访问控制来定义基于元数据的规则，以定义对Content Hub中可用资源的访问级别
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 4%
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 单击&#x200B;**下载电子表格**&#x200B;下载并在电子表格中定义规则。 创建Adobe支持工单并将电子表格中定义的规则提供给Adobe。
 
-[!BADGE 下载电子表格]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE 下载电子表格]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 使用本文中定义的准则，在电子表格中定义规则。
