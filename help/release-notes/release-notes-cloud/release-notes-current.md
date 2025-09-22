@@ -5,8 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: ht
+source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
+workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -149,7 +149,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
+-->
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -161,8 +162,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 一些已弃用的 API 将于 8 月 31 日被移除，因此不应再引用。9 月初，在检测到使用 API 时会发送操作中心通知。9 月 25 日之后，会在 Cloud Manager 构建过程中显示通知，强调移除 API 使用的重要性。请查看[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整详细信息。但为了方便起见，下面列出了这些 API：
 
-<details>
-  <summary>展开查看 Java API 弃用项</summary>
++++ 展开查看 Java API 弃用项
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -181,7 +181,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-</details>
++++
 
 <!--
 OSGi properties:
