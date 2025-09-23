@@ -4,9 +4,9 @@ description: AEM提供了客户端库文件夹，利用该文件夹，您可以�
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
+source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 在AEM as a Cloud Service上使用客户端库 {#using-client-side-libraries}
 
-数字体验在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 AEM客户端库(clientlibs)允许您整理这些客户端库并将其集中存储在存储库中。 结合AEM项目原型[中的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)前端构建过程，可以轻松管理AEM项目的前端代码。
+数字体验在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 AEM客户端库(clientlibs)允许您整理这些客户端库并将其集中存储在存储库中。 结合AEM项目原型[中的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)前端构建过程，可以轻松管理AEM项目的前端代码。
 
 在AEM中使用clientlibs的优点包括：
 
@@ -27,7 +27,7 @@ Clientlibs是内置解决方案，用于从AEM提供CSS和JavaScript。
 
 >[!TIP]
 >
->为AEM项目创建CSS和JavaScript的前端开发人员还应熟悉[AEM项目原型及其自动前端构建过程](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)。
+>为AEM项目创建CSS和JavaScript的前端开发人员还应熟悉[AEM项目原型及其自动前端构建过程](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)。
 
 ## 什么是客户端库 {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM将站点的CSS和JavaScript收集到一个集中的文件中，以确保HTML
 
 ## AEM as a Cloud Service的前端开发 {#fed-for-aemaacs}
 
-所有JavaScript、CSS和其他前端资源都应在AEM项目原型[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)ui.frontend模块中进行维护。 原型的灵活性允许您使用所选择的现代Web工具来创建和管理这些资源。
+所有JavaScript、CSS和其他前端资源都应在AEM项目原型[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)ui.frontend模块中进行维护。 原型的灵活性允许您使用所选择的现代Web工具来创建和管理这些资源。
 
 然后，原型可以将资源编译为单个CSS和JS文件，并将它们自动嵌入存储库中的`cq:clientLibraryFolder`中。
 
@@ -92,7 +92,7 @@ AEM将站点的CSS和JavaScript收集到一个集中的文件中，以确保HTML
 1. 如果您需要管理静态资源，请在客户端库文件夹下创建名为`resources`的子文件夹。
    * 如果您将静态资源存储在文件夹`resources`下以外的任何位置，则无法在发布实例上引用这些资源。
 1. 将源文件添加到库文件夹中。
-   * 这通常由[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)的前端构建过程完成。
+   * 这通常由[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)的前端构建过程完成。
    * 如果需要，可以在子文件夹中组织源文件。
 1. 选择客户端库文件夹，然后单击&#x200B;**创建>创建文件**。
 1. 在“文件名”框中，键入以下文件名之一，然后单击“确定”：
@@ -127,7 +127,7 @@ AEM将站点的CSS和JavaScript收集到一个集中的文件中，以确保HTML
 
 每个帮助程序模板都需要一个 `categories` 选项来引用所需的客户端库。该选项可以是字符串值的数组，也可以是包含逗号分隔值列表的字符串。
 
-[有关通过HTL加载clientlibs的更多详细信息，请参阅HTL文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=zh-Hans#loading-client-libraries)。
+[有关通过HTL加载clientlibs的更多详细信息，请参阅HTL文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries)。
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -288,7 +288,7 @@ AEM允许可插拔的预处理器，并随附对CSS和JavaScript的[YUI Compress
 
 >[!NOTE]
 >
->默认情况下，AEM使用GCC Compressor来缩小Javascript。
+>默认情况下，AEM使用GCC Compressor来缩小Javascript并将任何代码传输到`ECMASCRIPT_2018`。
 
 >[!CAUTION]
 >
