@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
+source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '572'
 ht-degree: 15%
 
 ---
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloud主页](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. 在&#x200B;**快速访问**&#x200B;分组中，单击&#x200B;[**Experience Manager**](https://experience.adobe.com)。
-1. 首次访问时，请在&#x200B;**告诉我们您要执行的操作**&#x200B;页面上单击所需的选项，以便Adobe可以定制您的体验。
+1. 首次访问时，系统会为您分配&#x200B;**内容作者**&#x200B;预设（显示在页面的右上角附近）。 它控制您看到的构件、导航项和内容。
 
-   您可以随时更改此首选项。
+   您可以随时更改此预设。
 
-   ![告诉我们您要执行的操作页面](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png)
+   ![已选定显示内容作者预设的下拉列表](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 Adobe Experience Manager页面已更新，导航和交互式构件已得到增强。 上一组解决方案信息卡提供了对以下工具的访问：
 
