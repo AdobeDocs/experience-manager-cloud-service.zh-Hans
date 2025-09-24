@@ -4,9 +4,9 @@ description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4221'
+source-wordcount: '4217'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
@@ -142,7 +142,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 处理自适应Forms的记录文档时，请牢记以下注意事项和限制。
 
-* 记录文档模板不支持富文本。 因此，静态自适应表单中或用户填写的信息中的任何富文本都会在记录文档中显示为纯文本。
+* **富文本支持**：记录文档支持富文本字段中的HTML标记标记。 有关支持的标记和可访问性注意事项的完整详细信息，请参阅记录文档[中的](html-markup-tags-support-in-document-of-record.md)支持的HTML标记标记。
 * 自适应表单中的文档片段未出现在记录文档中。 但是，支持自适应表单片段。
 * 不支持为基于XML架构的自适应表单生成的记录文档中的内容绑定。
 * 当用户请求呈现记录文档时，记录文档的本地化版本是应区域设置的要求创建的。 记录文档的本地化与自适应表单的本地化同时发生。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -282,7 +282,7 @@ When you select a form model, configure Document of Record using options availab
 |---|---|---|
 | 图像 | 图像 | 除非使用记录文档设置进行排除，否则TextDraw和Image组件（无论已绑定还是未绑定）始终显示在基于XSD的自适应表单的记录文档中。 |
 
-### 表 {#tables}
+### 表格 {#tables}
 
 自适应Forms表组件（如页眉、页脚和行）映射到相应的XFA组件。 可将可重复面板映射到记录文档中的表格。
 
@@ -405,9 +405,9 @@ When you select a form model, configure Document of Record using options availab
 
 ## 自适应表单编辑器中的记录文档支持 {#dor-support-in-adaptiveform}
 
-可直接从自适应表单生成器或自适应表单模板生成器中配置[!UICONTROL 记录文档]模板。
+可直接从自适应表单编辑器或自适应表单模板编辑器配置[!UICONTROL 记录文档]模板。
 
-从自适应表单生成器的创作实例中执行以下步骤：
+从自适应表单编辑器的创作实例中执行以下步骤：
 
 1. 选择&#x200B;**[!UICONTROL 自适应表单容器（根）]**&#x200B;组件。
 1. 单击![配置](/help/forms/assets/configure-icon.svg)图标来打开自适应表单容器的&#x200B;**[!UICONTROL 属性]**。
