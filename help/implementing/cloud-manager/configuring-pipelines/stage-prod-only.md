@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -81,7 +82,7 @@ ht-degree: 49%
 
    在“添加非生产管道”对话框中![Source“代码”选项卡](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. 在&#x200B;**体验审核**&#x200B;选项卡上，指定的站点URL是Cloud Manager审核页面质量的发布URL。
+1. 在&#x200B;**体验审核**&#x200B;选项卡上，指定的站点URL是Cloud Manager审核页面质量的已发布URL。
 
 1. 在&#x200B;**页面路径**&#x200B;字段中，指定要审核的页面，然后单击&#x200B;**![添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)添加页面**。
 
@@ -94,13 +95,13 @@ ht-degree: 49%
 
 ### 创建仅生产管道 {#prod-only}
 
-1. 在&#x200B;**添加仅生产管道**&#x200B;对话框的&#x200B;**管道名称**&#x200B;文本字段中，输入管道的自由文本名称。
+1. 在对话框&#x200B;**添加仅生产管道**&#x200B;中，在&#x200B;**管道名称**&#x200B;文本字段中，输入管道的自由文本名称。
 1. 在&#x200B;**管道名称**&#x200B;字段中，键入所需的名称。
 1. 在&#x200B;**生产部署选项**&#x200B;下，选择&#x200B;**在部署到生产之前暂停**。
 
    此选项直接在生产步骤之前插入手动审批审核。 管道将停止并等待批准者（例如部署管理器或业务负责人）批准或取消生产部署。
 
-   将此用于更改控制或最新检查。
+   用于更改控制或最新检查。
 
 1. 单击&#x200B;**保存**&#x200B;以使用这些选项创建仅限生产的管道。
 
@@ -129,7 +130,7 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 ![仅暂存管道运行](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-单击&#x200B;**提升内部版本**&#x200B;后，如果存在仅暂存管道，将打开确认对话框以启动它。 单击&#x200B;**运行**。
+单击&#x200B;**提升内部版本**&#x200B;后，将打开一个对话框，供您确认运行相关的仅生产管道。 单击&#x200B;**运行**&#x200B;以启动它。
 
 ![提升生成 — 运行管道对话框](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 
 ![工件详细信息](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
