@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '988'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 94%
 >
 >**想立即亲身体验吗？**
 >
->如果要立即动手使用Edge Delivery Services，您有两个选项。
->* [使用预建的教程环境立即开始创作 — 已完全配置并准备就绪。](https://www.aem.live/developer/ue-trial)
->* 通过[在aem.live上查看教程，了解更多详细信息并在30分钟内设置您自己的环境。](https://www.aem.live/developer/ue-tutorial)
+>如果您希望立即上手体验 Edge Delivery Services，有两种方式：
+>* [立即在预建的教程环境中开始创作。已完全配置，随时可用。](https://www.aem.live/developer/ue-trial)
+>* 深入了解详情，并在 30 分钟内完成您自己的环境设置，[请参阅 aem.live 上的教程。](https://www.aem.live/developer/ue-tutorial)
 
 ## 什么是 Edge Delivery Services？ {#what-is-edge}
 
