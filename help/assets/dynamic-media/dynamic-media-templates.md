@@ -4,9 +4,9 @@ description: 了解如何使用WYSIWYG模板编辑器创建 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 97be1d044ae23859e263756116c8bac8701178b4
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-使用[!DNL Dynamic Media]模板(WYSIWYG模板编辑器)为您的横幅和传单创建实时可自定义的模板。 发布[!DNL Dynamic Media]模板并将其用于下游应用程序。 [!DNL Dynamic Media]模板包含图像和文本图层。 向模板的图像和文本图层添加参数，并使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)重新定位图层并调整其大小以及实时更新其内容。
+使用[!DNL Dynamic Media]模板(WYSIWYG模板编辑器)为您的横幅和传单创建实时可自定义的模板。 发布[!DNL Dynamic Media]模板并将其用于下游应用程序。 [!DNL Dynamic Media]模板包含图像和文本图层。 向模板的图像和文本图层添加参数，并使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)重新定位图层并调整其大小以及实时更新其内容。
 
 一些主要功能包括：
 
@@ -83,10 +83,10 @@ ht-degree: 1%
 满足以下要求以创建[!DNL Dynamic Media]模板并生成其投放URL：
 
 1. 访问[!DNL Dynamic Media]。
-1. 在[!DNL Assets View]主页上，您有一个文件夹位于&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中以保存您的模板。 [在](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)Assets![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL 中创建文件夹&#x200B;]**&#x200B;以在&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;中复制该文件夹。
+1. 在[!DNL Assets View]主页上，您有一个文件夹位于&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中以保存您的模板。 [在](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)Assets![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL 中创建文件夹&#x200B;]**以在**[!UICONTROL  Dynamic Media Assets ]**中复制该文件夹。
 1. [将 [!DNL AEM Assets] 实例中可用的图像与 [!DNL Dynamic Media] 同步，以将其用于创建模板](/help/assets/dynamic-media/config-dm.md)。
 1. 发布要在创建模板时使用的图像，以便在创建模板后生成模板的投放URL。 投放URL可用于下游应用程序。
-1. 若要在模板的文本图层中使用默认[!UICONTROL Adobe Sans F2]字体以外的字体，请[同时将该字体文件上载并发布到AEM和Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [支持的字体文件格式为：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 另外，请确保[重新处理](/help/assets/reprocessing-assets-view.md)要使用的现有字体。 有关详细信息，请参阅[字体](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/support-files/fonts)。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. 若要在模板的文本图层中使用默认[!UICONTROL Adobe Sans F2]字体以外的字体，请[同时将该字体文件上载并发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [支持的字体文件格式为：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 另外，请确保[重新处理](/help/assets/reprocessing-assets-view.md)要使用的现有字体。 有关详细信息，请参阅[字体](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. 在触屏UI中验证以下内容：
    * 在&#x200B;**[!UICONTROL 编辑[!DNL Dynamic Media]配置页面]**&#x200B;上，默认情况下设置为&#x200B;**[!UICONTROL [!DNL Dynamic Media]禁用的]**&#x200B;同步模式&#x200B;**[!UICONTROL 未应用于所有AEM文件夹（]**&#x200B;同步所有内容&#x200B;**[!UICONTROL 未选中）。]**&#x200B;有关详细信息，请参阅[配置Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
    * **[!UICONTROL [!DNL Dynamic Media]同步模式]**&#x200B;设置为目标文件夹或子文件夹的子文件夹&#x200B;**[!UICONTROL 启用]**&#x200B;创建后保存模板。 有关详细信息，请参阅[配置 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)。
@@ -96,9 +96,9 @@ ht-degree: 1%
 执行以下步骤以创建[!DNL Dynamic Media]模板：
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [创建空白画布](#create-a-canvas)
@@ -159,11 +159,11 @@ ht-degree: 1%
 
 执行以下步骤以将图像添加到画布：
 
-1. 单击![立即创建横幅](/help/assets/assets/add-image.svg)以打开[资产选择器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 该面板显示AEM Assets实例中已同步到[!DNL Dynamic Media]的图像。
+1. 单击![立即创建横幅](/help/assets/assets/add-image.svg)以打开[资产选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 该面板显示AEM Assets实例中已同步到[!DNL Dynamic Media]的图像。
 1. 浏览面板或使用搜索栏中的关键字查找特定图像。
 1. 将图像拖放到画布上以使用。 查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以调整画布上的图层大小或重新定位图层。
    ![在秒内创建横幅](/help/assets/assets/add-image-to-canvas.png)
-1. 启用&#x200B;**[!UICONTROL 均匀半径]**&#x200B;切换开关并使用&#x200B;**[!UICONTROL 圆角半径]**&#x200B;滑块均匀调整图像所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
+1. 启用&#x200B;**[!UICONTROL 均匀半径]**&#x200B;切换开关并使用&#x200B;**[!UICONTROL 圆角半径]**滑块均匀调整图像所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
    ![调整图像的角圆度](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### 在画布中添加文本图层{#add-text-to-the-canvas}
@@ -172,10 +172,24 @@ ht-degree: 1%
 
 1. 单击![创建新横幅fastly](/help/assets/assets/add-text.svg)以将文本图层添加到画布并打开“属性”面板。
 1. 选择图层并单击文本进行更新。
-1. 在“属性”面板中选择&#x200B;**[!UICONTROL 智能文本调整大小]**&#x200B;以自动调整文本长度和字体大小，使其以最佳方式适应指定区域。
+1. 在“属性”面板中选择&#x200B;**[!UICONTROL 智能文本调整大小]**以自动调整文本长度和字体大小，使其以最佳方式适应指定区域。
    ![最佳可自定义横幅](/help/assets/assets/add-text-layer.png)
 
 查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。 **[!UICONTROL 字体系列]**&#x200B;字段显示[!UICONTROL Adobe Sans F2]默认字体、重新处理的现有字体以及新上载和发布的字体。 有关详细信息，请参阅上面[开始之前](#prerequisites-for-dynamic-media-wysiwyg-template)部分中的第5点。
+
+[对子字符串应用格式以单独设置文本特定部分的样式并控制它们。](#apply-formatting-to-substring)
+
+#### 设置选择性文本格式{#apply-formatting-to-substring}
+
+执行以下步骤来格式化字符串的特定部分：
+
+1. 在字符串中选择一个或多个字符设置格式。
+1. 使用[属性面板](#properties-panel)将格式设置应用于选定内容。 以下格式选项适用于子字符串及其部分：
+   * **字体样式**：使用&#x200B;**[!UICONTROL 字体样式]**&#x200B;选项的粗体、斜体、下划线、下标和上标。
+   * **字体属性**：使用相应的面板选项更改字体系列、颜色和大小。
+     ![format-substring](/help/assets/assets/format-substring.png)
+
+[每个带格式的字符串部分在子字符串选择器中显示为子字符串，可在参数面板中使用。 向这些格式化部分添加参数，以使用模板的投放URL](#substring-parameterisation)动态格式化它们。
 
 ### 将形状添加到画布 {#add-shapes-to-the-canvas}
 
@@ -183,7 +197,7 @@ ht-degree: 1%
 
 1. 单击![创建形状](/help/assets/assets/Shapes.svg)，选择一个形状（矩形或圆形）以将其添加到画布中。 使用形状的[[!UICONTROL 属性面板]](#reposition-resize-delete-a-layer)重新定位、调整大小、旋转或删除图层。
 1. 滚动到面板的&#x200B;**[!UICONTROL 样式]**&#x200B;部分，在&#x200B;**[!UICONTROL 形状颜色]**&#x200B;字段中定义十六进制代码，或者使用拾色器填充所选形状中的颜色。
-1. 启用&#x200B;**[!UICONTROL 统一半径]**&#x200B;切换功能，并使用&#x200B;**[!UICONTROL 圆角半径]**&#x200B;滑块来统一调整矩形所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
+1. 启用&#x200B;**[!UICONTROL 统一半径]**&#x200B;切换功能，并使用&#x200B;**[!UICONTROL 圆角半径]**滑块来统一调整矩形所有四个角的圆度。 禁用切换功能，以通过为每个拐角指定特定半径值来自定义拐角圆度。
    ![调整形状的圆角度](/help/assets/assets/enable-uniform-radius-shape.png)
 1. [将&#x200B;**[!UICONTROL 隐藏]**&#x200B;参数添加到选定的图层](#parameterise-a-layer)以使用模板URL实时显示或隐藏模板中的图层。
 1. 选择图层以[向其中添加[!UICONTROL CTA]链接](#add-CTA-in-dynamic-media-templates)，允许用户在实时模板中单击形状作为超链接。
@@ -218,8 +232,8 @@ ht-degree: 1%
 
 #### 文本格式设置选项{#text-formatting-options-on-properties-panel}
 
-通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层内）。
-确保包括&#x200B;**[!UICONTROL 智能文本大小调整]**。 [!UICONTROL 智能文本大小调整]适用于[Copyfitting](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，可在文本区域中以最佳方式填充文本，防止文本溢出，并最大程度地减少文本底部的额外空间。
+通过更改面板&#x200B;**[!UICONTROL 文本]**部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层内）。
+确保包括**[!UICONTROL 智能文本大小调整]**。 [!UICONTROL 智能文本大小调整]适用于[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)算法，可在文本区域中以最佳方式填充文本，防止文本溢出，并最大程度地减少文本底部的额外空间。
 
 ![立即创建内容](/help/assets/assets/smart-text-resize.png)
 
@@ -234,29 +248,63 @@ ht-degree: 1%
 1. **可选：**&#x200B;重命名参数名称。 参数名称具有层名称后跟一个后缀。 对于选定层，其所有参数化属性共享相同的层名称，后跟一个变化的后缀。 按照语义命名约定重命名层名称，以便在URL中包含参数时，参数名称本身可以说明层的内容或其用途。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
    ![即时内容创建](/help/assets/assets/parameterise-a-layer.png)
-若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击&#x200B;**[!UICONTROL 参数]**。
+若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击**[!UICONTROL 参数]**。
 
 #### “参数”面板选项 {#parameterisation-options-or-allowed-parameters}
 
 参数化的属性可以作为URL参数包含在模板URL中，以使用URL实时编辑模板。
 
-**图像参数：**
+##### 图层参数{#layer-parameters}
+
+下面是适用于图像和文本图层的图层参数。
 
 **[!UICONTROL X]：** Include可通过更改URL中的参数值，沿图层中心线水平移动图层，平行于模板平面的X轴。
-**[!UICONTROL Y]：**&#x200B;包含可通过更改URL中的参数值，沿图层中心线垂直移动图层，平行于模板平面的Y轴。
-**[!UICONTROL 宽度]：**&#x200B;包含可通过更改URL中的参数值来调整图层的宽度。
-**[!UICONTROL 高度]：**&#x200B;包含可通过更改URL中的参数值来调整图层的高度。
+**[!UICONTROL Y]：**包含可通过更改URL中的参数值，沿图层中心线垂直移动图层，平行于模板平面的Y轴。
+**[!UICONTROL 宽度]：**包含可通过更改URL中的参数值来调整图层的宽度。
+**[!UICONTROL 高度]：**包含可通过更改URL中的参数值来调整图层的高度。
 **[!UICONTROL 隐藏]：**&#x200B;包含以使用0（显示）和1（隐藏）来隐藏或显示模板中的图层。
-**[!UICONTROL Source]：**&#x200B;包含以通过更改URL中参数值中的图像路径来使用新图像替换图层的图像。
 
-**文本格式参数：**
+##### 图像参数{#image-parameter}
 
-包括以下参数，以便通过更新URL中的参数值从URL中编辑文本、其字体、颜色和大小。
+包含&#x200B;**[!UICONTROL Source]**参数，以通过更改URL中参数值中的图像路径来使用新图像替换图层的图像。
+![图像源参数](/help/assets/assets/image-parameter.png)
 
-**[!UICONTROL 文本]：**&#x200B;包含以从URL更新文本。
-**[!UICONTROL 字体系列]：**&#x200B;包含以从URL更新文本的字体。
-**[!UICONTROL 字体大小]：**&#x200B;包含以从URL更新文本的字体大小。
+##### 文本格式设置参数{#text-formatting-parameters}
+
+包括以下参数，以便通过更新URL中的参数值来编辑投放URL中的文本、其字体、颜色和大小：
+
+**[!UICONTROL 文本]：**包含以从URL更新文本。
+**[!UICONTROL 字体系列]：**包含以从URL更新文本的字体。
+**[!UICONTROL 字体大小]：**包含以从URL更新文本的字体大小。
 **[!UICONTROL 文本颜色]：**&#x200B;包含以从URL更新文本的字体颜色。
+
+##### 参数化子字符串{#substring-parameterisation}
+
+在&#x200B;**[!UICONTROL 参数]**&#x200B;面板中，滚动到&#x200B;**[!UICONTROL 子字符串参数]**&#x200B;部分。 此部分包含一个&#x200B;**子字符串选择器**，该选择器将格式一致的完整字符串（选定文本图层）或其格式化部分显示为单独的子字符串。 选择一个子字符串以[参数化其文本、字体系列、字体大小和颜色](#text-formatting-parameters)。
+使用子字符串选择器[拆分子字符串](#split-substring)以参数化其各个部分，或者使用[合并子字符串](#merge-substring)以应用统一的参数。
+
+###### 拆分子字符串{#split-substring}
+
+要参数化子字符串的一部分，请将其拉出以使其成为单独的子字符串以供单独选择和参数化。
+执行以下步骤，将子字符串拆分为单独的子字符串：
+
+1. 在子字符串选择器中，选择子字符串中的字符以将其分开。
+1. 单击![拆分子字符串](/help/assets/assets/unmerge.svg)以将其拉出，并使其成为&#x200B;**子字符串选择器**中的单独子字符串。
+   ![拆分子字符串](/help/assets/assets/split-a-substring.png)
+您可以选择所需的子字符串以[参数化其文本、字体系列、字体大小和颜色](#text-formatting-parameters)。
+
+###### 合并子字符串{#merge-substring}
+
+合并子字符串会删除其现有的单个参数，并允许您在新形成的子字符串中应用一致的参数。
+执行以下步骤以合并两个相邻的子字符串，将统一的参数应用于生成的子字符串：
+
+1. 在子字符串选择器中，跨两个具有相同格式的相邻子字符串选择字符。
+1. 单击![合并子字符串](/help/assets/assets/merge.svg)以合并子字符串。
+   ![合并相同的子字符串](/help/assets/assets/merge-two-substrings.png)
+可以将统一参数应用到新形成的子字符串。
+   >[!NOTE]
+   >
+   >只能合并具有相同格式的子字符串。
 
 ### 将层分组以同时控制其可见性{#group-layers}
 
@@ -287,7 +335,7 @@ ht-degree: 1%
 1. **可选：**&#x200B;将&#x200B;**[!UICONTROL 隐藏]**&#x200B;参数值在0和1之间更改，然后单击&#x200B;**[!UICONTROL 刷新]**&#x200B;以查看更改内容。 具有相同&#x200B;**[!UICONTROL Hide]**&#x200B;参数的图层会一起隐藏或显示。 同样，您可以从URL控制图层的可见性。
 
    ![即时创建内容](/help/assets/assets/dm-templates-publish-status.png)
-您还可以切换&#x200B;**[!UICONTROL 包含所有参数]**&#x200B;以编辑所有显示的参数值，并在模板预览中查看更新。
+您还可以切换**[!UICONTROL 包含所有参数]**以编辑所有显示的参数值，并在模板预览中查看更新。
    <br>
 1. 要从预览页面发布模板，请单击&#x200B;**[!UICONTROL 发布]**&#x200B;并确认发布。 显示&#x200B;**[!UICONTROL 发布完成]**&#x200B;消息，发布状态更新为&#x200B;**[!UICONTROL 已发布]**。
 
