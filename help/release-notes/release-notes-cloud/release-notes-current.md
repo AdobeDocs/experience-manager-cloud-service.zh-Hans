@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
+source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 100%
+source-wordcount: '2066'
+ht-degree: 68%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.8.0) 的发布日期为 2025 年 8 月 28 日。下一个功能版本 (2025.9.0) 计划于 2025 年 9 月 25 日发布。
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.9.0)的发布日期是2025年9月25日。 下一个功能版本(2025.10.0)计划于2025年10月30日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -40,34 +40,23 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Experience Hub {#experience-hub}
-
-[Experience Hub](/help/experience-hub.md) 是您访问所有 AEM 功能的统一起点。它根据您的用户角色和可用的许可证进行个性化，使每个用户都能高效实现自己的目标。
-
-## AEM 中的 AI 助手 {#AI-assistant}
-
-AEM 的 [AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)提供了一个对话界面，旨在让您立即获得 AEM 产品相关问题的回答（*为所有用户提供*），并能自动创建支持票证（*为支持管理员提供*）。它直接嵌入在 AEM 中，可从 AEM Experience Hub、Cloud Manager 和 Author UI 访问。
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Experience Manager Sites 的新增功能 {#enhancements-sites}
+### Experience Manager Sites预发行版中的新增功能 {#prerelease-sites}
 
-* 在内容片段管理用户界面中，您现在可以查看内容片段的工作流状态，其中包含关于所选片段的过去和当前正在运行的工作流的详细信息。
-* 在新的内容片段编辑器中，通过 UUID 而不是通过路径打开内容片段，使性能在常见情况下提高了 25%。
-* 当复制带引用片段的内容片段时，引用片段的副本现在存储在与父级片段副本相同的位置。
-* 您现在可以在文件夹设置中配置一个自定义工作区，以将内容片段导出到 Adobe Target 中配置的工作区。
+AEM内容片段的内容模型编辑器已经过现代化，与AEM中其他基于React光谱的界面保持一致。 其用户界面实施和可扩展性模型现在与内容片段编辑器和通用编辑器一致。 现在，从新的内容模型管理员UI打开新的模型编辑器时，默认使用新的模型编辑器。 在触屏UI中打开内容模型会打开触屏UI编辑器，并提供用于尝试新编辑器的功能。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Content Hub 的新功能 {#new-features-content-hub}
+### Assets视图中的新增功能 {#new-features-assets-view}
 
-**通过过滤器属性进行批量搜索**
+**Dynamic Media模板中带子字符串的增强文本格式**
 
-Content Hub 现在可以更快地发现您需要的资产。使用新的批量搜索功能，您可以为任何过滤器属性以分隔符分隔的方式输入多个值（例如多个 SKU ID），只通过一个搜索就能立即检索所有匹配的资产。
+您现在可以对Dynamic Media模板文本图层中的子字符串应用格式。 选定的单词或短语将被视为单独的图层，允许您调整其字体、字体大小、颜色等。 子字符串层已进行参数化，以便您可以使用模板的投放URL实时更新它
 
 ### 具有 OpenAPI 功能的动态媒体中的新功能 {#new-features-dynamic-media-with-openapi}
 
@@ -77,7 +66,25 @@ Content Hub 现在可以更快地发现您需要的资产。使用新的批量�
 
 >[!NOTE]
 >
->此功能将于 9 月 10 日作为有限发布版推出。您可以[创建并提交 Adobe 客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，为您的部署启用该功能。
+>此功能作为“有限可用性”功能提供。 您可以[创建并提交 Adobe 客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，为您的部署启用该功能。
+
+<!--
+
+### New Features in Content Hub {#new-features-content-hub}
+
+**Mark Collections as Favourites**
+
+You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
+
+**Pin collections for quick access**
+
+Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
+
+>[!NOTE]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -154,13 +161,29 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### JavaScript 编译更新 {#javascript-compilation}
+### Release Management中的新增功能 {#new-features-release-management}
 
-现在，默认的客户端库（clientlibs）JavaScript 编译输出目标是 ECMASCRIPT_2018 而不是 ECMASCRIPT5。虽然过去可以覆盖配置，但这一更新默认启用了增强的性能和现代 JavaScript 语法及功能。
+**暂停自动维护更新**
+
+上线日、现场活动、销售高峰 — 这些时刻无法中断。 [我们新的自助服务功能](/help/implementing/deploying/quiet-hours-update-free-periods.md)在需要的时候停止自动维护更新，以便您的团队集中精力。
+
+* 安静时间：阻止在每天的设定时间进行自动维护。 适合工作时间、夜间跑步或早上切换。
+* 无更新时段：阻止整周的自动维护。 将其用于启动项、促销活动或每年冻结。
+
+>[!NOTE]
+>
+>9月25日作为有限可用功能提供。
+>>请发送电子邮件至[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的项目中激活它。
+
+### 适用于Eclipse的AEM开发人员工具的新版本 {#aem-develeper-tools-for-eclipse}
+
+已发布适用于Eclipse的AEM Developer Tools 1.4.0版本。 此版本添加了对Eclipse IDE 2022-12或更高版本的支持，并已通过当前版本(2025-09)的验证。 该工具现在可与AEM项目原型的现代版本配合使用，并包含了Sling IDE Tooling 1.3.0中的改进。
+
+从[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse)进行安装，有关更多详细信息，请参阅[AEM开发人员工具页面](https://eclipse.adobe.com)。
 
 ### 即将弃用 Java API {#java-api-deprecation}
 
-一些已弃用的 API 将于 8 月 31 日被移除，因此不应再引用。9 月初，在检测到使用 API 时会发送操作中心通知。9 月 25 日之后，会在 Cloud Manager 构建过程中显示通知，强调移除 API 使用的重要性。请查看[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整详细信息。但为了方便起见，下面列出了这些 API：
+多个已弃用的API在8月31日标记为删除，因此不应再引用。 如果在代码中检测到已弃用的API，您将会收到操作中心通知，11月13日之后，将在Cloud Manager构建期间显示通知，以强调删除使用的重要性。 请查看[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整详细信息。但为了方便起见，下面列出了这些 API：
 
 +++ 展开查看 Java API 弃用项
 
@@ -194,17 +217,19 @@ OSGi properties:
 
 ### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-*Java 11 运行时环境*&#x200B;现已弃用，大多数环境已经升级到性能更高的 **Java 21 运行时环境**。
+已弃用&#x200B;*Java 11运行时*，并且大多数环境已升级到更高性能的&#x200B;**Java 21运行时**。
 
-如果由于存在不受支持的依赖项（请参阅 [Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您的环境无法升级，您应该已经收到了 Adobe 发来的电子邮件，其中包含了具体的后续操作步骤。请确保在 **2025 年 10 月 1 日**&#x200B;之前完成所有必要的更新，以确保您的环境能够在不中断的情况下进行升级。
+如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含后续步骤。 如该处所述，Adobe已于2025年9月18日&#x200B;**升级**&#x200B;开发&#x200B;**和** RDE **环境，以便您验证站点和流程并解决任何问题。****阶段**&#x200B;和&#x200B;**生产**&#x200B;的升级将于&#x200B;**2025年10月14日**&#x200B;继续。
 
-注意：运行时版本与代码的构建版本是分开的。虽然我们建议使用 Java 21 进行构建，但目前仍支持使用 Java 11 进行构建。未来将另行发布针对 Java 11 版本的弃用通知。
+>[!NOTE]
+>
+>运行时版本与代码的构建版本不同。 虽然我们建议使用Java 21进行构建，但目前仍接受Java 11构建。 未来将另行发布针对 Java 11 版本的弃用通知。
 
 ### AEM Java 日志配置策略的执行 {#logconfig-policy}
 
 正如4月发布说明中所述，AEM Java 日志必须遵循标准格式，以确保在所有客户环境中进行可靠监控。自定义日志配置（如更改日志格式、输出文件或默认日志级别）已不再受支持。日志必须继续定向到默认文件，且必须保留 AEM 产品代码的默认日志级别。请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)，以了解完整详情。
 
-从 **9 月 25 日**&#x200B;开始，任何不受支持的自定义日志记录覆盖都将被忽略。根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将会与其联系。
+从&#x200B;**10月30日**&#x200B;开始，将忽略任何不受支持的自定义日志记录覆盖。 根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将会与其联系。
 
 请审查并更新所有依赖自定义日志记录行为的下游流程。例如：
 
@@ -217,7 +242,6 @@ OSGi properties:
 
 常见的用例包括：
 
-* 在授予内容访问权限之前，通过身份标识提供商对用户进行身份验证
 * 根据地理位置、设备类型或用户属性对内容进行个性化设置
 * 充当 CDN 与您的源站之间的中间件
 * 在将第三方 API 的响应（可能还包括聚合多个 API 的响应）传递给浏览器之前，重新设置响应的格式
@@ -226,11 +250,22 @@ OSGi properties:
 
 我们为实时生产站点提供的 AEM Publish Delivery 或 Edge Delivery Services 项目的机会数量有限。如果您有兴趣参与或想了解更多信息，请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) 并简要描述您的用例。
 
-### Edge Delivery Services 的 CDN 配置（Beta 计划） {#cdn-eds-beta}
+### 适用于Edge Delivery Services的Edge身份验证(Beta计划) {#edge-authentication}
 
-Adobe 管理的 CDN 提供灵活的配置选项，如这篇[配置管道文章](/help/operations/config-pipeline.md#configurations)中所述。
+通过Edge身份验证，您可以将对Edge Delivery Services页面的访问限制为仅访问已通过您的身份提供程序(IdP)身份验证的用户。 这是通过部署OpenID Connect (OIDC)配置YAML文件实现的。
 
-现在在 beta 版中，您可以为内容传递网络源选择器、响应和请求转换、内容传递网络日志转发等功能部署一个配置管道。请联系 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 并提供您的用例详情。
+如有兴趣，请发送电子邮件至[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，并提供用例的简短描述以及您可能遇到的任何问题。
+
+请注意，我们今年早些时候发布了为AEM Cloud Service发布层项目[配置Open ID Connect ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)以保护AEM页面的功能(独立于Edge Delivery Services)。
+
+<!--
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
 
 ### RDE 快照（Alpha 程序） {#rde-snapshot-program}
 
@@ -245,6 +280,11 @@ Adobe 管理的 CDN 提供灵活的配置选项，如这篇[配置管道文章](
 现在在 beta 版本中，您可以将 AEM 日志转发到 Amazon S3、Sumo Logic、Dynatrace 以及您自己的 New Relic 帐户（不是 Adobe 提供的帐户）。请注意，这些日志记录目标支持 AEM 日志（包括 Apache/Dispatcher），但不支持 CDN 日志。发送电子邮件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，以获得访问权限。
 
 更多信息请参阅[日志转发文档](/help/implementing/developing/introduction/log-forwarding.md)。
+
+### 扩展的应用程序性能监控(APM) (Alpha计划) {#apm-alpha}
+
+为了便于观察，AEM Cloud Service当前支持Adobe提供的[New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客户管理的[Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我们探索对其他APM选项的支持时，请发送电子邮件至[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，向您的首选供应商或技术发送电子邮件，并提供使用案例。
+
 
 ## [!DNL Experience Manager] Guides {#guides}
 

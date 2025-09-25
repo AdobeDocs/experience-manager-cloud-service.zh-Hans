@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+source-git-commit: 94533c74b8254c1a16671ca28ccc021cbdfa903f
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6680'
 ht-degree: 98%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 98%
    + AEMaaCS 功能发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)版发行说明
          + [2025.7.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [2025.6.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
@@ -236,7 +237,7 @@ ht-degree: 98%
    + 通用编辑器发行说明 {#universal-editor}
       + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
-         + [2025.09.04发行说明](/help/release-notes/universal-editor/2025/2025-09-04.md)
+         + [2025.09.04 版发行说明](/help/release-notes/universal-editor/2025/2025-09-04.md)
          + [2025.08.22 版发行说明](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [2025.08.14 版发行说明](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [2025.07.31 版发行说明](/help/release-notes/universal-editor/2025/2025-07-31.md)
@@ -277,7 +278,7 @@ ht-degree: 98%
    + [Open ID Connect 支持发布层上的 AEM as a Cloud Service](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [为 AEM as a Cloud Service 设置 IMS 集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [权限管理的主要视图](/help/security/touch-ui-principal-view.md)
-   + [Sling Service 用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
+   + [Sling Service 用户映射和服务用户定义的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 客户管理的密钥](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
    + [关于 Experience Hub](/help/experience-hub.md)
@@ -342,7 +343,7 @@ ht-degree: 98%
       + 内容传输工具 {#content-transfer-tool}
          + [概述](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [内容转移工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-         + [有关使用内容转移工具的指南和最佳实践](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+         + [有关使用内容转移工具的指南和最佳做法](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [内容转移工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [验证内容转移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
@@ -495,7 +496,7 @@ ht-degree: 98%
             + [创建并同步 Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)
             + [Live Copy 概述控制台](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [转出冲突](/help/sites-cloud/administering/msm/rollout-conflicts.md)
-            + [MSM 最佳实践](/help/sites-cloud/administering/msm/best-practices.md)
+            + [MSM 最佳做法](/help/sites-cloud/administering/msm/best-practices.md)
             + [疑难解答和常见问题解答](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 翻译 {#translation}
             + Sites 翻译历程  {#sites}
@@ -506,7 +507,7 @@ ht-degree: 98%
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
                + [翻译内容](/help/journey-sites/translation/translate-content.md)
                + [发布翻译的内容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Headless/journeys/translation/overview.html?lang=zh-hans)
+            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻译多语言 Sites 的内容](/help/sites-cloud/administering/translation/overview.md)
             + [准备内容以进行翻译](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -514,7 +515,7 @@ ht-degree: 98%
             + [标识要翻译的内容](/help/sites-cloud/administering/translation/rules.md)
             + [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md)
             + [连接到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
-            + [翻译最佳实践](/help/sites-cloud/administering/translation/best-practices.md)
+            + [翻译最佳做法](/help/sites-cloud/administering/translation/best-practices.md)
       + [管理标记](/help/sites-cloud/administering/tags.md)
       + [管理工作流](/help/sites-cloud/administering/workflows-administering.md)
       + [模板控制台](/help/sites-cloud/administering/templates-console.md)
@@ -526,7 +527,7 @@ ht-degree: 98%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -625,7 +626,7 @@ ht-degree: 98%
       + Dynamic Media 历程：基础知识 {#dm-journey}
          + [第一部分：什么是 Dynamic Media——用例——资产如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
          + [第二部分：Dynamic Media URL 的剖析——图像预设的基础知识——关于图像集、旋转集和混合媒体集](/help/assets/dynamic-media/dm-journey-part2.md)
-         + [Dynamic Media 最佳实践](/help/assets/dynamic-media/dm-best-practices.md)
+         + [Dynamic Media 最佳做法](/help/assets/dynamic-media/dm-best-practices.md)
       + [Experience League 存档的 Dynamic Media 新闻稿](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [设置 Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -691,7 +692,7 @@ ht-degree: 98%
          + [常见问题解答](/help/assets/dynamic-media-open-apis-faqs.md)
          + [配置自定义域](/help/assets/configure-custom-domain.md)
          + [优化图像](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
-         + [创建虚URL](/help/assets/vanity-urls.md)
+         + [创建虚名 URL](/help/assets/vanity-urls.md)
    + 使用资产视图 {#assets-view}
       + [简介](/help/assets/assets-view-introduction.md)
       + [快速入门](/help/assets/get-started-assets-view.md)
@@ -738,9 +739,9 @@ ht-degree: 98%
       + [使用 Content Hub 中的 Adobe Express 编辑图像](/help/assets/edit-images-content-hub.md)
       + [Content Hub 的资产洞察](/help/assets/insights-content-hub.md)
       + [Content Hub 常见问题解答](/help/assets/frequently-asked-questions-content-hub.md)
-   + 最佳实践{#best-practices}
-      + [搜索最佳实践](/help/assets/search-best-practices.md)
-      + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
+   + 最佳做法{#best-practices}
+      + [搜索最佳做法](/help/assets/search-best-practices.md)
+      + [元数据管理和最佳做法](/help/assets/metadata-best-practices.md)
    + 与 Figma 集成 {#integration-figma}
       + [与 Figma 的原生集成](/help/assets/integrate-aem-assets-with-figma.md)
    + 与 Adobe Workfront 集成 {#integrations}
@@ -942,7 +943,7 @@ ht-degree: 98%
       + [HTML5 Forms 与 PDF Forms 的功能差异](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
       + [HTML5 Forms 常见问题解答（FAQ）](/help/forms/faqhtml5.md)
       + [为 HTML5 Forms 设计表单模板](/help/forms/designing-form-template.md)
-      + [HTML5 Forms 的最佳做法](/help/forms/best-practices-for-html5-forms.md)
+      + [HTML5 表单的最佳做法](/help/forms/best-practices-for-html5-forms.md)
       + [无障碍 HTML5 Forms 设计](/help/forms/design-accessible-html5-forms.md)
       + [生成 XDP 表单的 HTML5 预览](/help/forms/preview-xdp-forms-html.md)
       + [为 HTML5 Forms 渲染表单模板](/help/forms/rendering-form-template.md)
@@ -989,7 +990,7 @@ ht-degree: 98%
       + [在 Designer 中更改 Page Zero 内容](/help/forms/changing-page-zero-content-designer.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [PDF 文档中支持的字体列表](/help/forms/supported-out-of-the-box-fonts.md)
-      + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
+      + [已知问题、最佳做法和常见问题](/help/forms/communications-known-issues-limitations.md)
    + 交易报告  {#using-communications}
       + [交易报告计费 API](/help/forms/transaction-reports-billable-apis.md)
       + [记录自定义实施的交易](/help/forms/record-transaction-custom-implementation.md)
@@ -1007,7 +1008,7 @@ ht-degree: 98%
       + [重新启动 AEM SDK](/help/forms/restart-aem-sdk.md)
       + [解决表单创建失败](/help/forms/form-creation-failing.md)
       + [自定义提交操作中的 502 错误页面](/help/forms/custom-submit-action-troubleshooting.md)
-+ AEM的人工智能 {#ai-in-aem}
++ AEM 中的 AI {#ai-in-aem}
    + [概述](/help/ai-in-aem/overview.md)
    + AI 助手 {#ai-assistant}
       + [配置 AEM 中的 AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
@@ -1015,7 +1016,7 @@ ht-degree: 98%
    + 生成变体 {#generate-variations}
       + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
       + [生成变体](/help/generative-ai/generate-variations.md)
-   + Forms Experience Builder {#forms-experience-builder}
+   + Forms 体验生成器 {#forms-experience-builder}
       + [Forms Experience Builder — 概述](/help/forms/experience-builder/product-overview.md)
       + [Forms Experience Builder快速入门](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
       + [部署和配置Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
@@ -1133,9 +1134,9 @@ ht-degree: 98%
          + [如何预填充自适应表单字段](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [通过 Edge Delivery Services 发布自适应表单](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [为 EDS Form 创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [对Edge Delivery Services表单提交中的403禁止错误进行故障诊断](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-         + [使用API集成创建Salesforce潜在客户对象](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
-         + 级联下拉框 {#cascading-drop-down-list}
+         + [排查 Edge Delivery Services 表单提交中的 403 Forbidden 错误](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [使用 API 集成创建 Salesforce 商机对象](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + 级联下拉列表 {#cascading-drop-down-list}
             + [简介](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [创建 API 集成](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
             + [创建表单](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
@@ -1161,12 +1162,12 @@ ht-degree: 98%
       + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [自适应Forms块字段属性](/help/edge/docs/forms/eds-form-field-properties.md)
       + [常见问题](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [创建表单的最佳实践](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+   + [创建表单的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
    + [开发人员门户（其他资产）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
-   + [最佳实践——设置和使用](/help/headless/best-practices-setup-use.md)
+   + [最佳做法——设置和使用](/help/headless/best-practices-setup-use.md)
    + 设置 {#setup}
       + [简介](/help/headless/setup/introduction.md)
       + [配置](/help/headless/setup/create-configuration.md)
@@ -1514,11 +1515,11 @@ ht-degree: 98%
    + [AEM as a Cloud Service 中的基础设施和服务监测](/help/operations/monitoring.md)
    + [维护任务](/help/operations/maintenance.md)
    + [恢复内容](/help/operations/restore.md)
-   + [恢复之前部署的代码(Beta)](/help/operations/restore-previous-code-deployed.md)
+   + [恢复先前部署的代码（Beta 版）](/help/operations/restore-previous-code-deployed.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
    + [使用配置管道](/help/operations/config-pipeline.md)
    + [删除通用 lucene 索引](/help/operations/removal-generic-lucene-index.md)
-   + [查询和索引最佳实践](/help/operations/query-and-indexing-best-practices.md)
+   + [查询和索引最佳做法](/help/operations/query-and-indexing-best-practices.md)
    + [链接检查器](/help/operations/link-checker.md)
 + 合规性 {#compliance}
    + [AEM as a Cloud Service 中的合规性](/help/compliance/home.md)
@@ -1530,4 +1531,4 @@ ht-degree: 98%
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 + 疑难解答 {#troubleshooting}
-   + [AEM Assets和Forms问题疑难解答](/help/troubleshooting/home.md)
+   + [排查 AEM Assets 和 Forms 问题](/help/troubleshooting/home.md)
