@@ -7,7 +7,7 @@ exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
 source-wordcount: '2103'
-ht-degree: 4%
+ht-degree: 99%
 
 ---
 
@@ -20,102 +20,102 @@ Edge Delivery Services Forms 提供自定义功能，允许前端开发人员构
 
 ## 架构概述
 
-Forms块的自定义组件遵循&#x200B;**MVC (Model-View-Controller)**&#x200B;架构模式：
+表单块的自定义组件遵循 **MVC（模型-视图-控制器）**&#x200B;架构模式：
 
 ### 模型
 
-- 由JSON架构为每个`field/component`定义。
+- 由每个 `field/component` 的 JSON 架构定义。
 
-- 可创作属性在相应的JSON文件中指定（请参阅块/表单/模型/表单组件）。
+- 可编辑属性在相应的 JSON 文件中指定（参见 blocks/form/models/form-components）。
 
-- 这些属性可供表单生成器中的作者使用，并作为字段定义(fd)的一部分传递到组件。
+- 这些属性可在表单构建器中供作者使用，并作为字段定义（fd）的一部分传递给组件。
 
-### 查看
+### 视图
 
-- 表单字段类型中介绍了每种字段类型的HTML结构。
+- 每种字段类型的 HTML 结构在 form-field-types 中进行描述。
 
-- 这是组件的基本结构，可以对其进行扩展或修改。
+- 这是组件的基础结构，可扩展或修改。
 
-- 表单字段类型中记录了每个OOTB组件的基本HTML结构。
+- 每个 OOTB（开箱即用）组件的基础 HTML 结构在 form-field-types 中均有文档说明。
 
 ### 控制器/组件逻辑
 
-- 在JavaScript中以OOTB（现成）或自定义组件的形式实施。   — 位于自定义组件的`blocks/form/components`中。
+- 通过 JavaScript 实施，可以是 OOTB（开箱即用）组件，也可以是自定义组件。- 自定义组件位于 `blocks/form/components` 文件夹中。
 
-## OOTB组件
+## OOTB 组件
 
-**OOTB（现成）**&#x200B;组件为自定义开发奠定了基础：
+**OOTB（开箱即用）**&#x200B;组件为自定义开发提供基础：
 
-- OOTB组件位于`blocks/form/models/form-components`中。
+- OOTB 组件位于 `blocks/form/models/form-components` 中。
 
-- 每个OOTB组件都有一个定义其可创作属性（如` _text-input.json`，`_drop-down.json`）的JSON文件。
+- 每个 OOTB 组件都有一个 JSON 文件，用于定义其可编辑属性（例如 ` _text-input.json`、`_drop-down.json`）。
 
-- 这些属性在表单生成器中可供作者使用，并作为字段定义(fd)的一部分传递到组件。
+- 这些属性可在表单构建器中供作者使用，并作为字段定义（fd）的一部分传递给组件。
 
-- 表单字段类型中记录了每个OOTB组件的基本HTML结构。
+- 每个 OOTB（开箱即用）组件的基础 HTML 结构在 form-field-types 中均有文档说明。
 
-扩展现有OOTB组件允许您重复使用其基本结构、行为和属性，同时对其进行自定义以满足您的需求。
+扩展现有的 OOTB 组件，可以复用其基础结构、行为和属性，并根据需要进行自定义。
 
-- 自定义组件必须从预定义的OOTB组件集进行扩展。
+- 自定义组件必须从预定义的 OOTB 组件集扩展。
 
-- 系统会根据字段JSON中的`viewType`属性标识要扩展的OOTB组件。
+- 系统会根据字段 JSON 中的 `viewType` 属性识别应扩展的 OOTB 组件。
 
-- 系统维护允许的自定义组件变体的注册表。 只能使用此注册表中所列的变体，例如`customComponents[]`中的`mappings.js`。
+- 系统维护了允许的自定义组件变体注册表。只能使用注册表中列出的变体，例如 `mappings.js` 中的 `customComponents[]`。
 
-- 呈现表单时，系统会检查变量属性或`:type/fd:viewType`，如果它与注册的自定义组件匹配，则会从`blocks/form/components`文件夹加载相应的JS和CSS文件。
+- 渲染表单时，系统会检查变体属性或 `:type/fd:viewType`，如果与已注册的自定义组件匹配，则从 `blocks/form/components` 文件夹加载相应的 JS 和 CSS 文件。
 
-- 自定义组件随后将应用于OOTB组件的基本HTML结构，允许您增强或覆盖其行为和外观。
+- 然后系统会将自定义组件应用到 OOTB 组件的基础 HTML 结构上，从而增强或覆盖其行为和外观。
 
 ## 自定义组件的结构
 
-要创建自定义组件，您可以使用&#x200B;**基架CLI**&#x200B;设置组件所需的文件和文件夹，然后添加自定义组件的代码。
+要创建自定义组件，可以使用 **Scaffolder CLI** 设置组件所需的文件和文件夹，然后为自定义组件编写代码。
 
-- 自定义组件驻留在`blocks/form/components`文件夹中。
+- 自定义组件存放在 `blocks/form/components` 文件夹中。
 
-- 每个自定义组件必须置于其自身的文件夹中，以组件命名，例如卡片。 在文件夹中，以下文件应为：
+- 每个自定义组件必须放置在其独立文件夹中，文件夹名称与组件名称相同，例如卡片。在该文件夹内，应包含以下文件：
 
-   - **_cards.json** — 扩展OOTB组件的组件定义、定义其可创作属性（模型[]）和加载时内容结构（定义[]）的JSON文件。
-   - **cards.js** — 包含主逻辑的JavaScript文件。
-   - **卡片.css** — 可选，适用于样式。
+   - **_cards.json**——扩展某个 OOTB 组件定义的 JSON 文件，定义其可编辑属性（模型[]）以及加载时的内容结构（定义[]）。
+   - **cards.js**——包含主要逻辑的 JavaScript 文件。
+   - **cards.css**——可选，用于样式。
 
-- 文件夹名称与JS/CSS文件必须匹配。
+- 文件夹名称必须与 JS/CSS 文件名称保持一致。
 
-### 重用和扩展自定义组件中的字段
+### 在自定义组件中复用和扩展字段
 
-在自定义组件的JSON中定义字段时（适用于任何字段组、基本、验证、帮助等），请遵循以下可维护性和一致性最佳实践：
+在自定义组件的 JSON 文件中定义字段（无论是基础、验证、帮助等任意字段组）时，请遵循以下最佳做法以保持可维护性和一致性：
 
-- 通过引用现有的共享容器或字段定义（例如，`../form-common/_basic-input-placeholder-fields.json#/fields`、`../form-common/_basic- validation-fields.json#/fields`）重用标准/共享字段。 这可确保您继承所有标准选项而不复制它们。
+- 通过引用现有的共享容器或字段定义来复用标准/共享字段（例如 `../form-common/_basic-input-placeholder-fields.json#/fields`、`../form-common/_basic- validation-fields.json#/fields`）。这样可继承所有标准选项，而无需重复定义。
 
-- 在容器中明确只添加新的或自定义字段。 这样可使您的架构保持干燥和专注。
+- 仅在容器中显式添加新的或自定义字段。这样可以保持架构精简（DRY）且聚焦。
 
-- 移除或避免复制已通过引用包含的字段。 仅定义组件的逻辑特有的字段。
+- 移除或避免重复已通过引用包含的字段。只需定义与组件逻辑唯一相关的字段。
 
-- 根据一致性和可维护性的需要，引用帮助容器和其他共享内容（例如`../form-common/_help-container.json`）。
+- 根据需要引用帮助容器和其他共享内容（例如 `../form-common/_help-container.json`），以确保一致性和可维护性。
 
 >[!TIP]
 >
-> - 此模式可让您在未来轻松更新或扩展逻辑，并确保自定义组件与表单系统的其他组件保持一致。
-> - 添加新共享容器或字段定义之前，请始终检查现有共享容器或字段定义。
+> - 这种模式可简化未来的逻辑更新或扩展，并确保自定义组件与表单系统的其他部分保持一致。
+> - 在添加新字段之前，请务必检查是否已有共享容器或字段定义可用。
 
 ### 为自定义组件定义新属性
 
-- 如果您需要从作者中为自定义组件捕获新属性，可以通过在组件的JSON中的组件的`fields[]`数组中定义字段来实现此操作。
+- 如果需要从作者那里获取自定义组件的新属性，可以在组件的 JSON 文件中通过在 `fields[]` 数组中定义字段来实现。
 
-- 自定义组件使用:type属性进行标识，该属性可在JSON文件中设置为`fd:viewType`（例如，`fd:viewType: cards`）。 这允许系统识别和加载正确的自定义组件，因此对于自定义组件是必需的
+- 自定义组件通过 :type 属性进行识别，该属性可在 JSON 文件中设置为 `fd:viewType`（例如 `fd:viewType: cards`）。这样系统就能识别并加载正确的自定义组件，因此这对自定义组件来说是必需的。
 
-- 在JSON定义中添加的任何新属性在字段定义中均可作为属性使用。 组件的JS逻辑中的`<propertyName>`
+- 在 JSON 定义中添加的任何新属性都会作为属性在字段定义中可用。组件的 JS 逻辑中的 `<propertyName>`
 
-## 自定义组件JavaScript API
+## 自定义组件 JavaScript API
 
-自定义组件JavaScript API定义了如何控制自定义表单组件的行为、外观和反应性。
+自定义组件 JavaScript API 定义了如何控制自定义表单组件的行为、外观和响应性。
 
-### 装饰功能
+### 修饰函数
 
-**decorate**&#x200B;函数是自定义组件的入口点。 它会初始化组件，将其链接到其JSON定义，并允许您处理其HTML结构和行为。
+**修饰**&#x200B;函数是自定义组件的入口点。它会初始化组件，将其与 JSON 定义关联，并允许您操作组件的 HTML 结构和行为。
 
 >[!NOTE]
 >
-> 自定义组件的JavaScript文件必须将默认函数导出为decorate：
+> 自定义组件的 JavaScript 文件必须导出一个默认函数作为修饰：
 
 #### 函数签名：
 
@@ -133,13 +133,13 @@ export default function decorate(element, fieldJson, container, formId)
 
 它可以：
 
-- **修改元素**：添加事件侦听器、更新属性或插入其他标记。
+- **修改元素**：添加事件监听器、更新属性或插入额外标记。
 
-- **访问JSON属性**：使用`fd.properties.<propertyName>`读取JSON架构中定义的值并在组件逻辑中应用这些值。
+- **访问 JSON 属性**：使用 `fd.properties.<propertyName>` 读取 JSON 架构中定义的值，并在组件逻辑中应用。
 
 ## 订阅函数
 
-**subscribe**&#x200B;函数使您的组件能够对字段值或自定义事件的更改做出反应。 这可确保组件与表单的数据模型保持同步，并可动态更新其UI。
+**订阅**&#x200B;函数使您的组件能够对字段值或自定义事件的变化作出响应。这确保组件与表单的数据模型保持同步，并可动态更新其 UI。
 
 ### 函数签名：
 
@@ -162,23 +162,23 @@ export default function decorate(fieldDiv, fieldJson, container, formId) {
 
 它可以：
 
-- **注册回调**：调用&#x200B;**subscribe(element， formId， callback)**&#x200B;将您的回调注册为每当字段数据更改时运行。使用两个回调参数：
-   - **element**：表示字段的HTML元素。
-   - **fieldModel**：表示字段状态和事件API的对象。
+- **注册回调**：调用 **subscribe(element, formId, callback)** 来注册回调，以便在字段数据发生变化时执行。使用两个回调参数：
+   - **element**：表示字段的 HTML 元素。
+   - **fieldModel**：表示字段状态和事件 API 的对象。
 
-- **侦听更改或事件**：每当值更改或触发自定义事件时，使用`fieldModel.subscribe((event) => { ... }, 'eventName')`执行逻辑。 事件对象包含有关更改内容的详细信息。
+- **监听更改或事件**：使用 `fieldModel.subscribe((event) => { ... }, 'eventName')` 在值发生变化或触发自定义事件时执行逻辑。事件对象包含有关更改的详细信息。
 
 ## 创建自定义组件
 
-在本节中，您将了解通过扩展OOTB单选按钮组件来创建&#x200B;**卡自定义组件**&#x200B;的过程。
+在本节中，您将学习如何通过扩展 OOTB 单选按钮组件来创建一个&#x200B;**卡片自定义组件**。
 
-![卡自定义组件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+![卡片自定义组件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-### 1.代码设置
+### &#x200B;1. 代码设置
 
-#### 1.1文件和文件夹
+#### 1.1 文件与文件夹
 
-第一步是设置自定义组件的必要文件，并将其连接到存储库中的代码。 此过程由&#x200B;**AEM Forms Scaffolder CLI**&#x200B;自动完成，这样可以更快地搭建基架并连接必要的文件。
+第一步是设置自定义组件所需的文件，并将其与代码库中的代码连接起来。此过程由 **AEM Forms Scaffolder CLI** 自动完成，可更快速地生成基架并连接所需文件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
@@ -190,14 +190,14 @@ npm install
 npm run create:custom-component
 ```
 
-![基架CLI](/help/edge/docs/forms/universal-editor/assets/scaffolder-cli.png)
+![Scaffolder CLI](/help/edge/docs/forms/universal-editor/assets/scaffolder-cli.png)
 
-它将：
+该命令将：
 
-- **提示您为新组件命名**。 例如，在此例中，使用卡。
-- **要求您选择**&#x200B;基本组件（选择单选按钮组）
+- **提示您为新组件命名**。例如，在此用例中输入卡片。
+- **要求您选择**&#x200B;一个基础组件（选择单选按钮组）
 
-这将创建所有必需的文件夹和文件，包括：
+这将创建所有必要的文件夹和文件，包括：
 
 ```
 blocks/form/
@@ -208,45 +208,45 @@ blocks/form/
     └── _cards.json
 ```
 
-并将其与存储库中的其余代码连接起来，如CLI的输出中所示。
-它自动执行以下功能：
+如 CLI 输出所示，将其与代码库的其他部分连接起来。
+它会自动执行以下功能：
 
-- 将卡片添加到过滤器中，允许在自适应表单块内添加。
-- 更新`mappings.js`的允许列表以包含新卡片组件。
+- 将卡片添加到过滤器中，以便在自适应表单块中进行添加。
+- 更新 `mappings.js` 的允许列表，以包含新的卡片组件。
 - 在通用编辑器中的&#x200B;**自定义组件**&#x200B;列表下注册卡片组件的定义。
 
 >[!NOTE]
 >
-> 您也可以使用手动（旧版）方法创建自定义组件。 有关详细信息，请参阅[手动或旧式方法](#manual-or-legacy-method-to-create-custom-component)以创建自定义组件部分。
+> 您还可以使用手动（旧版）方法创建自定义组件。有关详细信息，请参阅[创建自定义组件的手动或旧版方法](#manual-or-legacy-method-to-create-custom-component)部分。
 
-#### 1.2在通用编辑器中使用组件
+#### 1.2 在通用编辑器中使用组件
 
-1. **刷新通用编辑器**：在通用编辑器中打开您的表单并刷新页面，以确保它从存储库加载最新代码。
+1. **刷新通用编辑器**：在通用编辑器中打开表单并刷新页面，以确保加载来自代码库的最新代码。
 
 2. **添加自定义组件**
 
-   1. 单击表单画布上的&#x200B;**添加(+)**&#x200B;按钮。
-   2. 滚动到自定义组件部分。
-   3. 选择新创建的&#x200B;**卡片组件**&#x200B;以将其插入到您的表单中。
+   1. 单击表单画布上的&#x200B;**添加 (+)** 按钮。
+   2. 滚动到“自定义组件”部分。
+   3. 选择新创建的&#x200B;**卡片组件**&#x200B;并将其插入表单中。
 
       ![选择自定义组件](/help/edge/docs/forms/universal-editor/assets/select-custom-component.png)
 
-由于`cards.js`内不存在代码，因此自定义组件呈现为单选按钮组。
+由于 `cards.js` 中尚无代码，自定义组件将呈现为一个单选组。
 
-#### 1.3在本地预览和测试
+#### 1.3 在本地预览和测试
 
-现在，表单包含自定义组件，您可以代理表单并在本地对其进行更改并查看更改：
+现在表单已包含自定义组件，您可以为该表单创建代理，在本地进行修改并实时查看变更：
 
-1. 转到终端并运行`aem up`。
+1. 前往终端并运行 `aem up`。
 
-2. 打开在`http://localhost:3000/{path-to-your-form}`启动的代理服务器（路径示例： `/content/forms/af/custom-component-form`）
+2. 打开在 `http://localhost:3000/{path-to-your-form}` 启动的代理服务器（路径示例：`/content/forms/af/custom-component-form`）。
 
 
-### 2.为自定义组件实施自定义行为
+### &#x200B;2. 为自定义组件实施自定义行为
 
-#### 2.1设置自定义组件的样式
+#### 2.1 设置自定义组件的样式
 
-让我们将类&#x200B;**卡**&#x200B;添加到组件中以设置样式，并为每个无线电添加图像，为此使用以下代码。
+为组件添加 **card** 类以进行样式化，并为每个单选项添加一张图片；请使用以下示例代码。
 
 **使用card.js为组件设置样式**
 
@@ -289,19 +289,19 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-现在，卡片组件显示如下：
+现在，卡片组件将显示如下效果：
 
-![添加卡片css和js](/help/edge/docs/forms/universal-editor/assets/add-card-css.png)
+![添加卡片 css 和 js](/help/edge/docs/forms/universal-editor/assets/add-card-css.png)
 
-#### 2.2使用Subscribe函数添加动态行为
+#### 2.2 使用订阅函数添加动态行为
 
-更改下拉列表后，将获取卡片并将其设置在单选按钮组的枚举中。 但当前视图无法处理此情况。 因此，它呈现如下：
+当下拉列表发生变化时，会获取卡片并设置在单选按钮组的枚举中。但当前视图并未对此进行处理。因此呈现效果如下：
 
 ![订阅函数](/help/edge/docs/forms/universal-editor/assets/card-subscribe.png)
 
-调用API时，它会设置字段模型，并且必须侦听更改并相应地呈现视图。 这是使用&#x200B;**subscribe函数**&#x200B;实现的。
+当调用 API 时，会设置字段模型，并且必须监听其变化以相应地渲染视图。这可以通过&#x200B;**订阅函数**&#x200B;实现。
 
-让我们将上一步中的视图代码转换为函数，并在`cards.js`中的subscribe函数中调用它，如下所示：
+让我们将上一步的视图代码转换为一个函数，并在 `cards.js` 的订阅函数中调用，如下所示：
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -349,17 +349,17 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**使用Subscribe函数监听cards.js中的事件更改**
+**在 cards.js 中使用订阅函数监听事件变化**
 
-现在，当您更改下拉列表时，信息卡会被填充，如下所示：
+现在，当您更改下拉列表时，卡片会自动填充，如下所示：
 
 ![订阅函数](/help/edge/docs/forms/universal-editor/assets/card-subscribe-final.png)
 
-#### 2.3正在将视图更新与字段模型同步
+#### 2.3 将视图更新与字段模型同步
 
-要将视图更改同步到“模型”字段，必须设置选定卡片的值。 因此，在cards.js中添加以下更改事件侦听器，如下所示：
+为了将视图中的更改同步到字段模型，您需要设置所选卡片的值。因此，请在 cards.js 中添加如下所示的更改事件监听器：
 
-**在cards.js中使用字段模型API**
+**在 cards.js 中使用字段模型 API**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -416,50 +416,50 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-现在会显示自定义卡组件，如下所示：
+现在，自定义卡片组件会呈现如下效果：
 
-![卡自定义组件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+![卡片自定义组件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-### 3.提交和推送更改
+### &#x200B;3. 提交并推送更改
 
-为自定义组件实施JavaScript和CSS并在本地验证后，提交更改并将其推送到Git存储库。
+在为自定义组件实现了 JavaScript 和 CSS 并完成本地验证后，将更改提交并推送到 Git 存储库。
 
 ```bash
 git add . && git commit -m "Add card custom component" && git push
 ```
 
-您仅需几个简单步骤即可成功创建复杂的自定义信息卡选择组件。
+这样，您就通过几个简单步骤成功创建了一个复杂的自定义卡片选择组件。
 
-+++ **创建自定义组件的手动或传统方法**
++++ **创建自定义组件的手动或旧版方法**
 
-传统的方法是手动执行以下步骤：
+旧版的方法是手动执行以下步骤：
 
-1. **选择要扩展的OOTB组件**（例如，按钮、下拉列表、文本输入等）。 在这种情况下，请扩展单选按钮组件。
+1. **选择一个 OOTB 组件进行扩展**（如按钮、下拉框、文本输入框等）。在此示例中，扩展单选按钮组件。
 
-2. **在**&#x200B;中创建包含组件名称（在此例中为卡片）的文件夹`blocks/form/components`。
+2. **在 `blocks/form/components` 中创建一个文件夹**，并使用您的组件名称命名（此处为卡片）。
 
-3. **添加同名JS文件**：
+3. **添加一个同名的 JS 文件**：
    - `blocks/form/components/cards/cards.js`。
 
-4. （可选） **为自定义样式添加CSS文件**：
+4. （可选）**添加一个 CSS 文件**&#x200B;用于自定义样式：
    - `blocks/form/components/cards/cards.css.`
 
-5. **在与**&#x200B;组件JS文件` _cards.json` (**)相同的文件夹中定义新的JSON文件** （例如，`blocks/form/components/cards/_cards.json`）。 此JSON应扩展现有组件，并在其定义中，将`fd:viewType`设置为组件的名称（在此例中为卡片）：
+5. 在与&#x200B;**组件 JS 文件**&#x200B;相同的文件夹中&#x200B;**定义一个新的 JSON 文件**（例如 ` _cards.json`，路径为 `blocks/form/components/cards/_cards.json`）。该 JSON 应继承现有组件，并在定义中将 `fd:viewType` 设置为您的组件名称（此处为卡片）：
 
-   - 对于所有字段组（基本、验证、帮助等），请显式添加自定义字段。
+   - 针对所有字段组（基础、验证、帮助等），显式添加您的自定义字段。
 
-6. **实施JS和CSS逻辑：**
-   - 导出默认函数，如上所述。
-   - 使用&#x200B;**element**&#x200B;参数修改基本HTML结构。
-   - 如果需要，请使用标准字段数据的&#x200B;**fieldJson**&#x200B;参数。
-   - 如果需要，可使用&#x200B;**subscribe**&#x200B;函数侦听字段更改或自定义事件。
+6. **实施 JS 和 CSS 逻辑：**
+   - 导出一个默认函数，如上所述。
+   - 使用 **element** 参数修改基础 HTML 结构。
+   - 如需标准字段数据，可使用 **fieldJson** 参数。
+   - 如需监听字段变化或自定义事件，可使用&#x200B;**订阅**&#x200B;函数。
 
      >[!NOTE]
      >
-     >如上所述，为自定义组件实施JS和CSS逻辑。
+     >按照上述说明为自定义组件实现 JS 和 CSS 逻辑。
 
-7. 在表单生成器中将组件注册为变体并设置变体属性或
-   将JSON中的`fd:viewType/:type`添加到组件的名称，例如，将`fd:viewType`中的`definitions[]`值作为卡片添加到具有`id="form`的对象的组件数组。
+7. 在表单生成器中将您的组件注册为一个变体，并在 JSON 中设置变体属性或
+   `fd:viewType/:type` 为您的组件名称。例如，将 `definitions[]` 中的 `fd:viewType` 值（卡片）添加到 `id="form` 对象的组件数组中。
 
    ```
        {
@@ -486,14 +486,14 @@ git add . && git commit -m "Add card custom component" && git push
    }
    ```
 
-8. **更新mappings.js**：将组件名称添加到&#x200B;**OOTBComponentDecorators**（对于OOTB样式组件）或&#x200B;**customComponents**&#x200B;列表，以便系统能够识别并加载该组件。
+8. **更新 mappings.js**：将您的组件名称添加到 **OOTBComponentDecorators**（用于 OOTB 风格组件）或 **customComponents** 列表中，以便系统识别并加载该组件。
 
    ```javascript
    let customComponents = ["cards"];
    const OOTBComponentDecorators = [];
    ```
 
-9. **更新_form.json**：将组件的名称添加到`filters.components`数组，以便在创作UI中放置该组件。
+9. **更新 _form.json**：将您的组件名称添加到 `filters.components` 数组中，以便在创作 UI 中使用。
 
    ```javascript
    "filters": [
@@ -503,34 +503,34 @@ git add . && git commit -m "Add card custom component" && git push
        ]
    ```
 
-10. **更新_component-definition.json**：在`models/_component-definition.json`中，通过以下方式使用对象`id custom-components`更新组中的数组：
+10. **更新 _component-definition.json**：在 `models/_component-definition.json` 中，更新 `id custom-components` 组内的数组，新增一个对象，如下所示：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    这是为了提供对将与其余组件一起构建的新卡组件的引用
+   这样可为新建的卡片组件提供引用，以便与其他组件一起构建。
 
-11. **运行生成:json脚本**：执行`npm run build:json`以编译所有组件JSON定义并将其合并到单个文件中，以便从服务器提供服务。 这可确保在合并输出中包含新组件的架构。
+11. **运行 build:json 脚本**：执行 `npm run build:json`，将所有组件 JSON 定义编译并合并为一个文件，以便服务器提供服务。这将确保新组件的架构包含在合并的输出中。
 
-12. 提交更改并将其推送到Git存储库。
+12. 将更改提交并推送到 Git 存储库。
 
-现在，您可以将自定义组件添加到表单。
+现在，您可以在表单中添加该自定义组件。
 
 +++
 
 ## 创建复合组件
 
-组合组件是通过组合多个组件创建的。
-例如，条款和条件复合组件包含一个父面板，其中包含：
+复合组件是通过组合多个组件创建的。
+例如，一个“条款与条件”复合组件包含一个父面板，其中包括：
 
-- 用于显示术语的纯文本字段
+- 一个用于显示条款的纯文本字段
 
-- 用于捕获用户协议的复选框
+- 一个用于获取用户同意的复选框
 
-此组合结构在相应组件的JSON文件中定义为模板。 以下示例说明如何为条款和条件组件定义模板：
+这种组合结构在相应组件的 JSON 文件中定义为一个模板。以下示例展示了如何为“条款与条件”组件定义一个模板：
 
 ```javascript
 {
@@ -573,22 +573,22 @@ git add . && git commit -m "Add card custom component" && git push
 }
 ```
 
-## 最佳实践
+## 最佳做法
 
-在创建您自己的自定义组件之前，请记住以下要点：
+在创建自定义组件前，请注意以下几点：
 
-- **让组件逻辑保持集中**：仅添加/覆盖自定义行为所需的内容
+- **保持组件逻辑聚焦：**&#x200B;仅添加或覆盖实现自定义行为所必需的内容
 
-- **利用基本结构**：使用OOTB HTML作为起点
+- **充分利用基础结构**：以 OOTB HTML 为起点
 
-- **使用可创作属性：**&#x200B;通过JSON架构公开可配置选项
+- **使用可编辑属性：**&#x200B;通过 JSON 架构提供可配置选项
 
-- **命名空间CSS**：使用唯一的类名避免样式冲突
+- **为 CSS 添加命名空间**：使用唯一的类名以避免样式冲突
 
 ## 引用
 
 - [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md)：所有字段类型的基本HTML结构和属性。
 
-- **块/表单/模型/表单组件**： OOTB和自定义组件属性定义。
+- **blocks/form/models/form-components**：OOTB 和自定义组件的属性定义。
 
-- **块/表单/组件**：放置您的自定义组件。 例如： `blocks/form/components/countdown-timer/_countdown-timer.json`显示如何扩展基础组件和添加新属性。
+- **blocks/form/components**：用于放置自定义组件的目录。例如：`blocks/form/components/countdown-timer/_countdown-timer.json` 展示了如何扩展基础组件并添加新属性。
