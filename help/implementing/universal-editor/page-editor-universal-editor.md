@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Adobe 继续支持页面编辑器，但通用编辑器将为您的新项目带�
 通用编辑器有许多优势，使其成为新项目的绝佳解决方案。
 
 * **可视化编辑：**&#x200B;与页面编辑器一样，作者可以直接在预览中编辑内容，并立即看到他们的更改如何影响访问者体验。
-* **面向未来：** AEM的路线图将通用编辑器优先设置为可视编辑器。 采用这个编辑器可以确保获得最新的创新和增强功能。
+* **面向未来：** AEM 的路线图优先将通用编辑器作为可视化编辑器。采用这个编辑器可以确保获得最新的创新和增强功能。
 * **更简单的集成：**&#x200B;使用通用编辑器不需要 AEM 专用的 SDK，从而减少了技术栈锁定。
 * **自带应用程序：**&#x200B;通用编辑器支持任何 Web 框架或架构，无需复杂的重构即可采用。
 * **可扩展性：**&#x200B;通用编辑器获益于一个强大的[扩展框架，](/help/implementing/universal-editor/extending.md)包括与生成式 AI、Workfront 等的集成。

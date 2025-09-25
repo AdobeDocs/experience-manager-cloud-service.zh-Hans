@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 提交后的体验会在很大程度上影响用户满意度和表单完成率。Adobe 的通用编辑器提供了全面的选项，用于配置用户提交表单后看到的内容，无论是一条个性化的感谢消息，还是策略性重定向到某个特定页面。
 
-本文提供了有关实施感谢消息和重定向 URL 的详细指导，包括技术性考虑事项、最佳实践和用户体验指南，以最大限度地增强表单提交的有效性。
+本文提供了有关实施感谢消息和重定向 URL 的详细指导，包括技术性考虑事项、最佳做法和用户体验指南，以最大限度地增强表单提交的有效性。
 
 ## 先决条件
 
@@ -179,7 +179,7 @@ ht-degree: 99%
 - 根据当前的域解析相对 URL 
 - 在需要的情况下，外部 URL 需要正确的 CORS 配置
 
-## 最佳实践和推荐
+## 最佳做法和推荐
 
 ### 用户体验指南
 
@@ -259,4 +259,4 @@ ht-degree: 99%
 **相关文档：**
 
 - [表单提交配置指南](submit-action.md)
-- [用户体验最佳实践](responsive-layout.md)
+- [用户体验最佳做法](responsive-layout.md)

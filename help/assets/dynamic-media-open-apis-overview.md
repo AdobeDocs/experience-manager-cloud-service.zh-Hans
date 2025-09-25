@@ -4,9 +4,9 @@ description: 了解关键概念，例如为什么使用具有 OpenAPI 功能的 
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ ht-degree: 96%
 
 ![Dynamic Media Open API 数据流图](assets/dm-openapi-dfd.png)
 
-有关可用的Dynamic Media产品及其功能的信息，请参阅[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+有关可用的 Dynamic Media 产品及其功能，请参阅 [Dynamic Media Prime 和 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
 >[!NOTE]
 >
->DM Prime客户可以使用基本的图像修饰符，包括旋转、裁切、翻转、高度、宽度和质量。 智能成像不支持DM Prime客户使用AVIF。
+>DM Prime 客户可使用基本的图像修改功能，包括旋转、裁剪、翻转、高度、宽度和质量。智能成像功能在 DM Prime 中不支持 AVIF。
 
 
 ## 访问具有 OpenAPI 功能的 Dynamic Media 的先决条件 {#prerequisites-dynaminc-media-open-apis}
@@ -181,7 +181,7 @@ ht-degree: 96%
       </a>
    </div>
    <p>
-      <em>了解如何将远程 AEM Assets 与 AEM Sites 环境集成。 </em>
+      <em>了解如何将远程 AEM Assets 与 AEM Sites 环境集成。</em>
    </p>
 </td>
 <td>

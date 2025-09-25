@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 98%
 
 **为您的第一个表单：**
 
-1. **添加自适应表单组件** — 将`Adaptive Form`组件插入节。
+1. **添加自适应表单组件**——将 `Adaptive Form` 组件插入到某个部分。
 2. **开始构建** - 通过&#x200B;**添加**&#x200B;按钮 (`a`) 添加组件
 3. **配置字段** - 选择组件，使用&#x200B;**属性模式** (`d`)
 4. **测试您的表单** - 使用&#x200B;**预览模式** (`p`) 与您的表单进行交互
@@ -121,7 +121,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
-> 要了解在通用编辑器中创建表单的详细步骤，请参阅[使用Edge Delivery Services创建和发布自适应Forms](/help/edge/docs/forms/universal-editor/create-forms.md)。
+> 如需了解在通用编辑器中创建表单的详细步骤，请参阅[使用 Edge Delivery Services 创建和发布自适应表单](/help/edge/docs/forms/universal-editor/create-forms.md)。
 
 **验证检查点：**
 
@@ -169,7 +169,7 @@ ht-degree: 98%
 
 ![预览模式](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
-**最佳实践：**&#x200B;每次重大更改后进行预览，以便尽早发现问题。
+**最佳做法：**&#x200B;每次重大更改后进行预览，以便尽早发现问题。
 
 #### **响应式模式**
 
@@ -178,7 +178,7 @@ ht-degree: 98%
 
 ![响应式模式](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-**最佳实践：**&#x200B;始终测试移动设备视图 - 许多用户会在手机上访问表单。
+**最佳做法：**&#x200B;始终测试移动设备视图 - 许多用户会在手机上访问表单。
 
 #### **打开页面**（`o` 快捷键）
 
@@ -223,7 +223,7 @@ ht-degree: 98%
 
 #### **AEM 表单属性**
 
-**用途：**&#x200B;配置表单级设置，如表单数据模型(FDM)，配置提交操作和发布日期\
+**用途：**&#x200B;配置表单级设置，如表单数据模型 (FDM)、提交操作以及发布日期。\
 **何时使用：**&#x200B;设置数据集成、安排发布时间
 
 ![表单属性](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -354,7 +354,7 @@ ht-degree: 98%
 
     ![生成变体](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**了解详情：**&#x200B;[生成变体指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**了解详情：**[生成变体指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **内容草稿**
 
@@ -403,7 +403,7 @@ ht-degree: 98%
 
 ## 编辑器画布
 
-**编辑器画布**&#x200B;是您以可视化方式构建表单的主要工作区。 它准确地展示了您的表单将如何显示给用户，并在您进行更改时提供实时反馈。
+**编辑器画布**&#x200B;是您以可视化方式构建表单的主要工作区。它准确地展示了您的表单将如何显示给用户，并在您进行更改时提供实时反馈。
 
 ![编辑器画布](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
@@ -414,7 +414,7 @@ ht-degree: 98%
 - **实时预览** - 切换到预览模式以测试功能
 - **自适应显示** - 切换设备视图，以检查移动设备兼容性
 
-**最佳实践：**
+**最佳做法：**
 
 - **从结构开始** - 在详细说明组件之前添加主要分区
 - **经常测试** - 定期使用预览模式，及早发现问题
@@ -503,7 +503,7 @@ ht-degree: 98%
 
 +++
 
-## 高效构建表单的最佳实践
+## 高效构建表单的最佳做法
 
 ### **组织性建议**
 

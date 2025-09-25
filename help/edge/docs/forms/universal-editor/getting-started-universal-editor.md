@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2608'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> AEM 新手？从 [AEM Sites 快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hans)开始。
+> AEM 新手？从 [AEM Sites 快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)开始。
 
 ## 路径 A：通过 Forms 创建新项目
 

@@ -8,9 +8,9 @@ time: 45-60 minutes
 keywords: 预填充自适应表单、自适应表单 edge delivery services、自适应表单自动填充
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ ht-degree: 99%
 
    >
    >
-   > 您可以通过编辑表单属性，从&#x200B;**数据**&#x200B;选项卡或更高版本配置数据源。
+   > 您可以在&#x200B;**数据**&#x200B;选项卡中配置数据源，或稍后通过编辑表单属性来进行配置。
 
 1. 指定表单详细信息：
 
@@ -359,9 +359,9 @@ FDM 中的表单元素将显示在&#x200B;**内容浏览器**&#x200B;的&#x200B;
 
 +++
 
-## 最佳实践
+## 最佳做法
 
-+++配置的最佳实践
++++配置的最佳做法
 
 - **使用描述性名称**：清晰命名您的 FDM 和服务
 - **验证数据架构**：确保数据结构符合表单要求

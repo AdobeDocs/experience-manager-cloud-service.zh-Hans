@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 96%
 
 * `title` 定义了 UI 中显示的组件的文字描述。
 * `id` 是组件的唯一标识。
-   * 相同 `id` 的[组件模型](/help/implementing/universal-editor/field-types.md#model-structure)定义了组件的字段。  
+   * 相同 `id` 的[组件模型](/help/implementing/universal-editor/field-types.md#model-structure)定义了组件的字段。
    * 因为它是唯一的，所以可用在例如[过滤器定义](/help/implementing/universal-editor/filtering.md)中，以确定哪些组件可以添加到容器中。
 * `model` 定义了哪个[模型](/help/implementing/universal-editor/field-types.md#model-structure)与组件一起使用。
    * 此模型在组件定义中集中维护，无需被[指定适配。](/help/implementing/universal-editor/field-types.md#instrumentation)
@@ -94,9 +94,9 @@ ht-degree: 96%
 
 `plugins` 定义了哪个插件负责保留组件。常用的插件有：
 
-* `aem`AEM as a Cloud Service的[。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5.[和](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)AEM 6.5 LTS[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts)
-* 使用AEM Sites为Edge Delivery Services创作`xwalk`的[。](https://www.aem.live/developer/ue-tutorial)
+* `aem` 表示 [AEM as a Cloud Service。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service)
+* `aem65` 表示 [AEM 6.5.](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65) 和 [AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts)
+* `xwalk` 表示[使用 AEM Sites 为 Edge Delivery Services 进行创作。](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` 或 `cf` {#page-cf}
 

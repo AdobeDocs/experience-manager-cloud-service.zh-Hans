@@ -5,7 +5,7 @@ feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1418'
 ht-degree: 100%
 
@@ -147,7 +147,7 @@ The brand score shows you how on-brand the generated variation is.
 
 ## 历史记录 {#history}
 
-此选项卡显示您在选择了&#x200B;**生成**&#x200B;之后的历史活动。 已添加&#x200B;**历史记录**&#x200B;条目。
+此选项卡显示您在选择了&#x200B;**生成**&#x200B;之后的历史活动。已添加&#x200B;**历史记录**&#x200B;条目。
 
 如果在稍后的某个时间点，您在主流程中选择相同的内容并打开&#x200B;**历史记录**&#x200B;选项卡，那么您将会看到为该区块生成的所有变体。
 

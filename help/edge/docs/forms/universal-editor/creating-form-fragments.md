@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
    - [了解表单片段](#understanding-form-fragments)
    - [先决条件](#prerequisites)
    - [使用 Edge Delivery Services 表单片段](#working-with-edge-delivery-services-form-fragments)
-   - [最佳实践](#best-practices)
+   - [最佳做法](#best-practices)
    - [摘要](#summary)
 
 +++ 创建表单片段
@@ -132,7 +132,7 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
 
 1. **保存与预览**：保存您的片段，使用预览模式验证布局和功能。
 
-   ![通用编辑器中已完成的联系人信息表单片段截图，其中包含姓名、电话、电子邮件和地址字段，这些可在多个表单中重复使用](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![通用编辑器中已完成的联系人信息表单片段屏幕快照，其中包含姓名、电话、电子邮件和地址字段，这些可在多个表单中重复使用](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
 **验证检查点：**
 
@@ -159,7 +159,7 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
 
    ![导航到该部分](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从&#x200B;**自适应表单组件**&#x200B;列表中添加&#x200B;**[!UICONTROL 表单片段]**组件。
    ![添加表单片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    如果您选择了&#x200B;**[!UICONTROL 表单片段]**&#x200B;组件，片段就会添加到您的表单中。您可以打开已添加片段的&#x200B;**属性**，对其进行配置。例如，在片段的&#x200B;**属性**&#x200B;中隐藏其标题。
@@ -176,11 +176,11 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
 
    表单片段通过引用的方式添加到表单中，并与独立表单片段保持同步。
 
-   ![通用编辑器中的员工表单截图，展示了成功嵌入的联系人信息片段，说明了片段在重复使用时如何保持其结构一致性](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![通用编辑器中的员工表单屏幕快照，展示了成功嵌入的联系人信息片段，说明了片段在重复使用时如何保持其结构一致性](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    >[!NOTE]
    >
-   > **编辑片段**&#x200B;按钮允许用户直接导航到表单片段进行编辑。
+   > **编辑片段**&#x200B;按钮可让用户直接导航到表单片段进行编辑。
 
    您可以预览表单以查看在&#x200B;**预览**&#x200B;模式中该表单如何显示。
 
@@ -255,7 +255,7 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
 
 +++ 
 
-## 最佳实践
+## 最佳做法
 
 **片段设计和命名：**
 
@@ -292,11 +292,11 @@ Edge Delivery Services 中的表单片段为模块化表单开发提供了强大
 
 **后续步骤：**
 
-- 为您的组织创建常用片段库。
-- 为片段使用建立命名约定和治理策略。
+- 为您的组织创建一个常用片段库。
+- 制定片段使用的命名规范和治理策略。
 - 了解与[表单数据模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)的高级集成，以实现动态数据驱动的片段
-- 实施基于片段的表单模板以实现一致的用户体验。
+- 实施基于片段的表单模板，以确保一致的用户体验。
 
-现在，您的表单获益于可维护的模块化架构，该架构可在各种项目中有效扩展，同时确保一致的用户体验。
+现在，您的表单受益于模块化、易维护的架构，能够在各项目间高效扩展，同时确保一致的用户体验。
 
 

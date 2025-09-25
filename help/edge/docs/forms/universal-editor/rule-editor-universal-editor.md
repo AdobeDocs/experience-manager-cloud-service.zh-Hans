@@ -1,21 +1,21 @@
 ---
-title: Edge Delivery Services Forms的规则编辑器
+title: Edge Delivery Services 表单规则编辑器
 description: 使用通用编辑器中的规则编辑器创建动态、智能的表单。无需编码即可添加条件逻辑、计算和交互式行为。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms的规则编辑器
+# Edge Delivery Services 表单规则编辑器
 
-规则编辑器允许作者将静态表单转换为响应式智能体验，而无需编写代码。 您可以有条件地显示字段、执行计算、验证数据、引导用户完成流程、集成随输入而调整的业务逻辑。
+规则编辑器使作者无需编写代码即可将静态表单转化为响应式、智能化的体验。您可以有条件地显示字段、执行计算、验证数据、引导用户完成流程、集成随输入而调整的业务逻辑。
 
 ## 您将了解的内容
 
@@ -26,7 +26,7 @@ ht-degree: 97%
 - 创建条件逻辑，动态地显示或隐藏字段
 - 能够实施自动计算和数据验证
 - 能够为复杂的业务规则构建自定义函数
-- 应用性能、可维护性和用户体验方面的最佳实践
+- 应用性能、可维护性和用户体验方面的最佳做法
 
 ## 为什么要使用规则编辑器？
 
@@ -304,13 +304,13 @@ ht-degree: 97%
 
 +++
 
-+++ 第1步：创建表单
++++ 步骤 1：创建表单
 
 **目标**：构建包含所有字段和初始设置的基本表单。
 
 1. **打开通用编辑器**：
    - 导航到 AEM Sites 控制台，选择您的页面，点击&#x200B;**编辑**
-   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按以下顺序添加表单组件**：
    - 标题 (H2)：“税费计算表”
@@ -537,9 +537,9 @@ export { getFullName, days };
 
 >
 >
-> Edge Delivery Services Forms还提供了规则编辑器的增强功能，包括基于事件的自定义规则、对动态变量的支持以及API集成。 要了解有关这些增强功能以及如何使用它们的更多信息，请参阅[规则编辑器增强功能和用例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
+> 规则编辑器的增强功能（包括自定义事件驱动规则、对动态变量的支持以及 API 集成）同样适用于 Edge Delivery Services 表单。要详细了解这些增强功能及其使用方法，请参阅[规则编辑器增强功能与使用案例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
 
-**函数使用的最佳实践**：
+**函数使用的最佳做法**：
 
 - **错误处理**：始终包含函数失败情况下的应变行为
 - **性能**：用实际数据量分析函数的执行情况
@@ -598,7 +598,7 @@ export { getFullName, days};
 
 这样就可以在各种表单中共享函数，也可以将函数在每个表单中分开使用，为用户提供了灵活性。
 
-## 规则开发的最佳实践
+## 规则开发的最佳做法
 
 
 +++ 性能优化
@@ -705,7 +705,7 @@ export { getFullName, days};
 - **动态计算**：用户与表单交互时，能自动计算数值（税额、总计、费率）
 - **数据验证**：通过清晰、可操作的反馈信息实施实时验证
 - **自定义函数**：使用 JavaScript 扩展功能实现复杂的业务逻辑和集成
-- **性能优化**：应用最佳实践，实现可维护、高效的规则开发
+- **性能优化**：应用最佳做法，实现可维护、高效的规则开发
 
 **传递的价值**：
 
@@ -728,11 +728,11 @@ export { getFullName, days};
 2. **使用教程练习**：使用税费计算器示例作为基础，创建您自己的表单
 3. **逐渐扩展**：随着您的信心增强，添加数学表达式和验证规则
 4. **实施自定义函数**：针对特定业务需求开发 JavaScript 函数
-5. **优化和规模扩展**：应用性能最佳实践，维护规则文档
+5. **优化和规模扩展**：应用性能最佳做法，维护规则文档
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)：用于更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)：用于更广泛的上下文
 - [扩展管理器指南](/help/implementing/developing/extending/extension-manager.md)：用于启用附加功能
 - [Edge Delivery Services 表单](/help/edge/docs/forms/overview.md)：提供全面的表单开发指导
 
