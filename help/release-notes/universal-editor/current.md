@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2025.09.18发行说明
-description: 这些是通用编辑器2025.09.18版的发行说明。
+title: 通用编辑器2025.09.25发行说明
+description: 这些是通用编辑器2025.09.25版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 62%
+source-wordcount: '224'
+ht-degree: 41%
 
 ---
 
 
-# 通用编辑器2025.09.18发行说明 {#release-notes}
+# 通用编辑器2025.09.25发行说明 {#release-notes}
 
-这些是 2025 年 9 月 18 日发布的通用编辑器的发行说明。
+这些是 2025 年 9 月 25 日发布的通用编辑器的发行说明。
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ ht-degree: 62%
 
 ## 新增功能 {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/)现在用作AMS的服务终结点，而不必在本地托管服务。
-* 使用AEM创作时，现在支持复合多字段。
+* [现在可以使用meta标记](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)禁用复制和粘贴功能[。](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [在托管的AEM环境(AMS)中使用通用编辑器时，](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)通用编辑器现在将使用AEM托管的通用编辑器服务，不再依赖本地AMS安装，从而确保您始终自动拥有最新的通用编辑器服务。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -39,5 +39,5 @@ ht-degree: 62%
 
 ## 其他改进 {#other-improvements}
 
-* 在将通用编辑器与 AEM 作为后端系统结合使用的方面，实施了几项较小的性能改进。
-* 现在可以使用 Open API 发布内容片段，不仅改进了性能，而且与内容片段编辑器和控制台的发布方式保持一致。
+* 在将“属性”边栏与“文档创作”结合使用时，该边栏已得到修复。
+* 修复了在使用MSM时编辑内容片段的多个字段时出现的问题。
