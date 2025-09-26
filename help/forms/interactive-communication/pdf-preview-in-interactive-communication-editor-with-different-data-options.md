@@ -53,7 +53,7 @@ PDF预览功能使用户可以通过三种不同的方式预览交互式通信�
 
 +++2.使用本地JSON数据预览
 
-2.1.准备结构化JSON文件。 作为参考，您可以从用于通信的JSON架构[(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)中复制示例数据。
+2.1.准备结构化JSON文件。 作为参考，您可以从用于通信的JSON架构[(FDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)中复制示例数据。
 
 2.2.在IC编辑器中，转到&#x200B;**PDF预览** >使用本地数据。
 

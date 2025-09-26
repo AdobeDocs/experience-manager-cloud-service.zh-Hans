@@ -39,7 +39,7 @@ ht-degree: 14%
 
 +++1.如何导出交互式通信
 
-1.1.选择[创建的交互式通信](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC)。
+1.1.选择[创建的交互式通信](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC)。
 1.2.单击&#x200B;**下载**&#x200B;选项以将其导出为ZIP文件。
 1.3.下载的ZIP文件包含IC及其选定的&#x200B;**模板**、**片段**&#x200B;和&#x200B;**数据模型**。
 
