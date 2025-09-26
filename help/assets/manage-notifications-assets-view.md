@@ -72,7 +72,7 @@ ht-degree: 46%
 
    Assets视图中的![通知](assets/enable-notifications.png)
 
-1. 单击&#x200B;**[!UICONTROL 自定义]**以查看通知类别。
+1. 单击&#x200B;**[!UICONTROL 自定义]**&#x200B;以查看通知类别。
    Assets视图中的![通知](assets/enable-notification-categories.png)
 
 1. 选择需要通知您的通知类别。
@@ -106,7 +106,7 @@ Assets视图现在将发送订阅类别的通知。 您还可以选择多个资�
 
 1. 导航到&#x200B;**[!UICONTROL 资源管理]**&#x200B;下的[!UICONTROL 观看的Assets]。
 
-1. Assets视图显示已订阅资源的列表，包括其名称、类型和路径。 从列表中选择资产、文件夹或收藏集以查看其详细信息、位置或取消订阅[1}。](#unsubscribe-to-content)
+1. Assets视图显示已订阅资源的列表，包括其名称、类型和路径。 从列表中选择资产、文件夹或收藏集以查看其详细信息、位置或取消订阅[1&rbrace;。](#unsubscribe-to-content)
 
    ![查看订阅的内容](assets/view-watched-assets.png)
 
