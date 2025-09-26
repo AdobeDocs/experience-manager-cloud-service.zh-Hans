@@ -40,4 +40,4 @@ ht-degree: 24%
 >[!NOTE]
 >
 > 有关详细的配置步骤，用户可以遵循指南[使用自定义字体](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> >完成这些步骤并运行管道后，自定义字体可直接在交互式通信编辑器中使用。
+> &#x200B;>完成这些步骤并运行管道后，自定义字体可直接在交互式通信编辑器中使用。
