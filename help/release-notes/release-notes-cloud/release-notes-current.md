@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
+source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 68%
+source-wordcount: '1905'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 68%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,43 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Experience Manager Forms 的新增功能 {#new-features-forms}
 
-**日期和时间输入组件**
+**为SharePoint列表附件调用表单数据模型工作流步骤**
 
-现已提供[日期和时间组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)，用户可以使用日历和时钟界面选择日期和时间，也可以通过受支持的格式手动输入数值。
-
-**改进了文件上传的错误处理**
-
-[文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)现在会自动根据允许列表验证上传的文件类型。如果用户上传不受支持格式的文件，表单就会在提交过程中显示错误。该组件还检查文件内容以验证其类型，增强表单的整体安全性。
-
-**指定了自定义提交操作的错误响应**
-
-当[自定义提交操作](/help/forms/custom-submit-action-troubleshooting.md)遇到未处理的错误时，系统将返回错误代码 502。这有助于识别问题是否与自定义提交操作有关，使调试更容易。
-
-**从记录文档中排除隐藏字段**
-
-一个新属性允许从[记录文档](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)中排除隐藏字段。默认情况下此选项未选中，且适用于所有表单字段。
-
+调用表单数据模型工作流步骤现在支持在基于SharePoint List的表单数据模型中处理Base64编码附件数组的工作流端元数据。 借助此增强功能，工作流步骤可以传递、存储和检索每个附件的元数据，例如文件名、MIME类型和自定义属性。 此功能支持更全面的数据管理并促进无缝下游集成。 有关详细信息，请参阅SharePoint列表附件[的调用表单数据模型工作流步骤中的](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)增强支持。
 
 ### AEM Forms 中的预发行版功能
 
-**生成并同步 AFP 演绎版**
+**规则编辑器增强功能**
 
-您现在可以使用 [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) 将 XDP 文件转换为 AFP 格式。AFP 是一种广泛用于大型企业打印的高性能格式。
+规则编辑器现在支持增强导航，并允许在输入参数中使用函数和数学表达式。
 
-**规则编辑器的增强功能**
+**事件有效负载支持的增强导航**
 
-* [函数列表中的验证方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：现在支持在面板、字段和表单级别执行验证和重置方法。以前仅在表单级别支持这些方法。
-* [现代 JavaScript 支持](/help/forms/rule-editor-core-components-difference-tables.md)：添加了自定义函数对 ECMAScript 2019 及更高版本功能的支持，让您可以编写更高效、模块化、可复用的代码。
-* [规则编辑器中的下载 DoR 选项](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：规则编辑器中添加了一个下载记录文档 (DoR) 的功能，是一个开箱即用 (OOTB) 选项。
+调用服务处理程序中的`Navigate To`操作现在支持`EVENT_PAYLOAD`，使表单作者能够根据事件响应配置跟进操作。 此增强功能提供了更大的灵活性，可用于设计提交后工作流，确保更平稳的过渡和更个性化的用户体验。 有关详细信息，请参阅[支持事件有效负载的增强导航](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
 
-  ![记录文档](/help/forms/assets/document-of-record-rn.gif)
+输入参数中支持&#x200B;**函数和数学表达式**
 
-* [规则编辑器中的动态变量](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：您现在可以在规则编辑器中使用动态（临时）变量，以便更灵活地定义条件和操作。隐藏字段不再需要存储临时值。
-* [支持基于自定义事件的规则](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：您现在可以定义自定义事件并根据这些事件触发规则。
-* [上下文感知的可重复面板规则](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：在可重复面板中现在会根据上下文执行规则，而不是将规则仅应用于最后一个面板实例。
-* [通过参数触发规则](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：规则编辑器现在支持基于查询参数、UTM 参数或浏览器参数执行规则。
-* [表单特有的自定义函数](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)：Edge Delivery Services 表单现在支持表单特有的自定义函数脚本，这样可以更灵活地管理可复用逻辑。
-* [自定义函数的静态导入](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：通用编辑器中的规则编辑器现在支持静态导入，允许开发人员在多个表单上组织、共享和复用函数。
+输入参数现在支持函数调用和数学表达式，使表单作者可以直接传递动态计算的值。 此增强功能可简化规则配置，消除对额外字段的需求，并使表单更适应复杂的逻辑和计算驱动场景。 有关详细信息，请参阅输入参数[中的](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)函数和数学表达式支持。
 
 ### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
@@ -134,13 +114,17 @@ AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以�
 
 这些发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-**潦草签名组件**
+**交互式通信编辑器中的PDF预览**
 
-您现在可以使用[潦草签名组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)帮助用户在表单中添加签名，例如在合同表单中。该组件允许用户使用鼠标、触控笔或触摸屏直接在表单中绘制自己的签名。
+用户可以预览不带数据的Interactive Communications PDF、使用本地JSON数据文件或使用数据模型中的数据，从而实现灵活的数据驱动测试。 有关详细信息，请参阅[交互式通信编辑器中的PDF预览](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
 
-**规则编辑器中的直接 API 集成**
+**在交互式通信中支持自定义字体**
 
-自适应表单现在支持在可视化规则编辑器中[直接集成 API](/help/forms/api-integration-in-rule-editor.md)，无需表单数据模型。作者可以使用 URL 或 cURL 导入、映射输入/输出参数来配置 API，并通过身份验证确保安全调用。
+“自定义字体”功能允许用户在交互式通信中嵌入自定义或组织批准的字体，确保跨设备和平台一致且品牌化的PDF渲染。 有关详细信息，请参阅[在交互式通信中支持自定义字体](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
+
+**导入和导出交互式通信**
+
+此功能支持在不同环境中迁移和重新使用交互式通信。 您现在可以从一个环境导出交互式通信及其关联的片段和数据模型，并将其导入另一个环境。 有关详细信息，请参阅[导入和导出交互式通信](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
 
 <!--
 **Forms Optimization opportunities**
@@ -173,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日作为有限可用功能提供。
->&#x200B;>请发送电子邮件至[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的项目中激活它。
+>>请发送电子邮件至[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的项目中激活它。
 
 ### 适用于Eclipse的AEM开发人员工具的新版本 {#aem-develeper-tools-for-eclipse}
 
@@ -219,7 +203,7 @@ OSGi properties:
 
 已弃用&#x200B;*Java 11运行时*，并且大多数环境已升级到更高性能的&#x200B;**Java 21运行时**。
 
-如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含后续步骤。 如该处所述，Adobe已于2025年9月18日&#x200B;**升级**&#x200B;开发&#x200B;**和** RDE **环境，以便您验证站点和流程并解决任何问题。**&#x200B;**阶段**&#x200B;和&#x200B;**生产**&#x200B;的升级将于&#x200B;**2025年10月14日**&#x200B;继续。
+如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含后续步骤。 如该处所述，Adobe已于2025年9月18日&#x200B;**升级**&#x200B;开发&#x200B;**和** RDE **环境，以便您验证站点和流程并解决任何问题。****阶段**&#x200B;和&#x200B;**生产**&#x200B;的升级将于&#x200B;**2025年10月14日**&#x200B;继续。
 
 >[!NOTE]
 >
@@ -283,7 +267,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 扩展的应用程序性能监控(APM) (Alpha计划) {#apm-alpha}
 
-为了便于观察，AEM Cloud Service当前支持Adobe提供的[New Relic One](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客户管理的[Dynatrace](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我们探索对其他APM选项的支持时，请发送电子邮件至[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，向您的首选供应商或技术发送电子邮件，并提供使用案例。
+为了便于观察，AEM Cloud Service当前支持Adobe提供的[New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客户管理的[Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我们探索对其他APM选项的支持时，请发送电子邮件至[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，向您的首选供应商或技术发送电子邮件，并提供使用案例。
 
 
 ## [!DNL Experience Manager] Guides {#guides}
