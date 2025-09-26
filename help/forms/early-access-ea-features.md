@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 19%
+source-wordcount: '2940'
+ht-degree: 20%
 
 ---
 
@@ -83,7 +83,7 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 
 通过简化数据传输流程，连接器可以帮助您提高网站的转化率。 通过自动将潜在客户数据发送到Marketo，您可以确保将符合条件的潜在客户快速输入您的培育计划。
 
-本质上，AEM Forms到Marketo Connector可帮助您利用两个平台的优势，创建更高效和更高效的营销漏斗。
+本质上，AEM Forms到Marketo Connector可帮助您利用两个平台的优势，创建更高效和更高效的营销funnel。
 
 准备好开始了吗？ 以下文章提供了使用创新的详细说明。
 
@@ -116,7 +116,12 @@ Cloud上的Interactive Communications是一款功能强大的解决方案，可�
 
 * **格式灵活性**：输出为PDF、HTML、PCL、PostScript®和ZPL格式。
 
-* **规则编辑器**：使用直观的点击式界面，直接在文档中生成动态的数据驱动操作。 轻松定义条件逻辑、自动化工作流并个性化内容，而无需编写代码。
+* **规则编辑器**：使用直观的点击式界面，直接在文档中生成动态的数据驱动操作。 无需编写代码，轻松定义条件逻辑、自动化工作流、个性化内容。
+
+* **PDF预览：**&#x200B;预览无数据、本地JSON文件或数据模型的交互式通信，以进行灵活的数据驱动测试。
+* **自定义字体：**&#x200B;嵌入自定义字体或组织批准的字体，以确保跨设备一致的品牌化PDF渲染。
+* **导入和导出：**&#x200B;跨环境无缝迁移和重用交互式通信及其片段和数据模型。
+
 
 #### 用例：
 
@@ -161,7 +166,7 @@ AEM Forms HTML5 Forms允许您以HTML5格式呈现现有XFA(XML Forms架构)表�
 
 使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services开发。 此命令行界面使您能够立即生成启动自定义组件开发所需的代码和布线 — 无样板，无麻烦。
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms开发工具)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **关键功能：**
 
@@ -174,7 +179,7 @@ AEM Forms HTML5 Forms允许您以HTML5格式呈现现有XFA(XML Forms架构)表�
 
 ### 动态表单数据的API集成工具
 
-利用API集成工具，表单作者可以创建动态、智能的表单，这些表单会根据用户交互自动从外部REST API获取和填充数据。 这种无代码集成功能将静态表单转换为响应式数据收集界面。
+API 集成工具使表单作者能够创建可根据用户交互自动从外部 REST API 获取和填充数据的动态、智能的表单。这种无代码集成功能可以将静态表单转换为响应式数据收集界面。
 
 主要功能包括：
 
@@ -283,6 +288,10 @@ AEM Forms Doc Assurance API是AEM Forms Cloud Service Communication API中的一
 * **改进的安全性**：通过利用Azure的内置安全功能，如静态加密和基于角色的访问控制(RBAC)，敏感文档在存储期间仍受到保护。
 
 * **可自定义的存储路径**：能够定义自定义目录路径可确保生成的PDF存储在组织有序且特定于应用程序的位置，从而改进文件管理。
+
+### 可视规则编辑器中的增强功能
+
+* 自适应Forms中的可视规则编辑器现在支持[直接API集成，而无需表单数据模型](/help/forms/api-integration-in-rule-editor.md)。 您可以通过输入其JSON URL或使用cURL命令导入配置来连接到API端点。 集成后，可以使用`Invoke Service`操作调用API。
 
 ## 另请参阅
 

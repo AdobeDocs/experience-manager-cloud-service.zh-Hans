@@ -5,9 +5,9 @@ keywords: 添加自定义函数、使用自定义函数、创建自定义函数�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1360'
 ht-degree: 5%
 
 ---
@@ -29,6 +29,8 @@ ht-degree: 5%
    * 默认参数
    * Rest参数
 
+* 最新ECMAScript功能可作为抢先体验(EA)提供，在正式发布中最多支持ECMAScript 2019。
+
 ## 创建自定义函数的先决条件
 
 在开始将自定义函数添加到自适应Forms之前，请确保您满足以下条件：
@@ -42,7 +44,7 @@ ht-degree: 5%
 
 ## 创建自定义功能
 
-创建客户端库以在规则编辑器中调用自定义函数。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing)。
+创建客户端库以在规则编辑器中调用自定义函数。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 
 创建自定义函数的步骤包括：
 
@@ -55,7 +57,7 @@ ht-degree: 5%
 
 **克隆存储库**
 
-克隆[AEM Forms as a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)：
+克隆[AEM Forms as a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)：
 
 1. 打开命令行或终端窗口。
 
@@ -144,10 +146,10 @@ ht-degree: 5%
 
 1. 导航到`/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS项目目录[中的]文件。
 
-1. 打开文件，并在末尾添加以下行：
+2. 打开文件，并在末尾添加以下行：
 
    `<filter root="/apps/experience-league" />`
-1. 保存文件。
+3. 保存文件。
 
 ![自定义函数筛选器xml](/help/forms/assets/custom-function-filterxml.png)
 
@@ -169,7 +171,7 @@ ht-degree: 5%
 
    1. 通过现有的全栈管道触发代码部署。 这会自动构建和部署更新的代码。
 
-如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)。
+如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
 成功执行管道后，客户端库中添加的自定义函数将在[自适应表单规则编辑器](/help/forms/rule-editor-core-components.md)中变得可用。
 

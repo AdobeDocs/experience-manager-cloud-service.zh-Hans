@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 您还可以添加多个规则来处理来自&#x200B;**调用服务**&#x200B;操作的不成功响应。
 
-**在服务器**&#x200B;上启用错误验证&rbrace;功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
+**在服务器**&#x200B;上启用错误验证}功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
 
 ## 在规则编辑器中使用调用服务的先决条件
 
@@ -78,6 +78,7 @@ ht-degree: 1%
 | **使用调用服务的输出设置可重复的面板** | 使用调用服务输出中的数据配置可重复面板，从而允许使用动态面板。 [单击此处](#use-case-2-set-repeatable-panel-using-output-of-invoke-service)查看实施。 |
 | **使用调用服务的输出设置面板** | 使用调用服务输出中的特定值设置面板的内容或可见性。 [单击此处](#use-case-3-set-panel-using-output-of-invoke-service)查看实施。 |
 | **使用调用服务的输出参数来验证其他字段** | 使用调用服务中的特定输出参数来验证表单字段。 [单击此处](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields)查看实施。 |
+| **在调用服务中导航到操作时使用事件有效负载** | 使用事件有效负载处理成功和失败响应，并在导航期间将数据传递到“导航到”操作。 [单击此处](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)查看实施。 |
 
 创建一个`Get Information`表单，该表单根据在`Pet ID`文本框中输入的输入检索值。 下面的屏幕截图显示了以下用例中使用的表单：
 
@@ -142,7 +143,6 @@ ht-degree: 1%
         "status": "available"
     }
 ```
-
 
 规则和逻辑是使用&#x200B;**文本框上的规则编辑器中的**&#x200B;调用服务`Pet ID`操作实现的，用于演示上述用例。
 
@@ -222,9 +222,38 @@ ht-degree: 1%
 
 ![输出](/help/forms/assets/output4.png)
 
+### 用例5：在导航到调用服务中的操作时使用事件有效负荷
+
+此用例演示了如何在&#x200B;**提交**&#x200B;按钮上配置规则，该按钮调用&#x200B;**调用服务**，然后使用&#x200B;**导航到**&#x200B;操作将用户重定向到其他页面。
+
+#### 实施
+
+在&#x200B;**提交**&#x200B;按钮上创建规则以调用`redirect-api` API服务。 此服务负责将用户重定向到&#x200B;**联系我们**&#x200B;表单。
+
+您可以使用下面提供的JSON数据将API作为`redirect-api` API服务直接集成到规则编辑器中：
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> 您还可以在规则编辑器界面中直接[集成API](/help/forms/api-integration-in-rule-editor.md)，而无需使用预定义的表单数据模型。
+> 要了解如何直接在规则编辑器界面中集成API，请[单击此处](/help/forms/api-integration-in-rule-editor.md)，而不使用预定义的表单数据模型。
+
+在&#x200B;**[!UICONTROL 添加成功处理程序]**&#x200B;中，配置&#x200B;**导航到**&#x200B;操作以使用&#x200B;**参数将用户重定向到**&#x200B;联系我们`Event Payload`页面。 在此，用户可以提交其联系详情。
+
+![事件有效负载](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+（可选）将失败处理程序配置为在服务调用失败时显示错误消息。
+
+#### 输出
+
+单击&#x200B;**提交**&#x200B;按钮时，将调用`redirect-api` API服务。 成功后，用户将被重定向到&#x200B;**联系我们**&#x200B;页面。
+
+![事件有效负载输出](/help/forms/assets/output5.gif)
 
 ## 常见问题解答
 

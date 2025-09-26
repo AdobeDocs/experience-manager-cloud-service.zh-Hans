@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 规则编辑器增强功能和用例
 
-<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
+<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
 
 本文介绍了自适应Forms中规则编辑器的最新增强功能。 这些更新旨在帮助您更轻松地定义表单行为，而无需编写自定义代码，并创建更动态、响应更快且个性化的表单体验。
 
@@ -22,12 +22,12 @@ ht-degree: 0%
 
 | 增强功能 | 描述 | 优点 |
 |---|----|---|
-| **使用`validate()`方法进行验证** | 在函数列表中可用，用于验证单个字段、面板或整个表单。 |  — 在面板、字段或表单级别<br>进行粒度验证 — 通过目标错误消息传递<br>获得更好的用户体验 — 防止因数据不完整而进步<br> — 减少表单提交错误 |
-| **下载DOR** | 在规则编辑器中提供的现成函数可用于下载记录文档(DoR)。 |  — 下载DoR <br>无需自定义开发 — 各表单的下载体验一致 |
-| **动态变量** | 使用根据用户输入或其他条件而更改的变量创建规则。 |  — 启用灵活的规则条件<br> — 减少对重复逻辑<br>的需求 — 消除创建隐藏字段的要求 |
-| **自定义基于事件的规则** | 定义对标准触发器以外的自定义事件做出响应的规则。 |  — 支持高级用例<br> — 更好地控制执行规则的时间和方式<br> — 增强了交互性 |
-| **上下文感知的可重复面板执行** | 现在，规则会在每个重复面板的正确上下文中执行，而不是仅在最后一个实例中执行。 |  — 每个重复实例<br>的精确规则应用 — 减少动态部分<br>中的错误 — 改进用户使用重复内容的体验 |
-| **支持查询字符串、UTM和浏览器参数** | 创建根据URL参数或浏览器特定的值调整表单行为的规则。 |  — 基于源或环境<br>启用个性化 — 对营销或跟踪特定的流<br>很有用 — 无需额外的脚本编写或自定义 |
+| [使用validate()方法进行验证](#validate-method-in-function-list) | 在函数列表中可用，用于验证单个字段、面板或整个表单。 |  — 在面板、字段或表单级别<br>进行粒度验证 — 通过目标错误消息传递<br>获得更好的用户体验 — 防止因数据不完整而进步<br> — 减少表单提交错误 |
+| [下载记录文档](#download-document-of-record) | 在规则编辑器中提供的现成函数可用于下载记录文档(DoR)。 |  — 下载DoR <br>无需自定义开发 — 各表单的下载体验一致 |
+| [动态变量](#support-for-dynamic-variables-in-rules) | 使用根据用户输入或其他条件而更改的变量创建规则。 |  — 启用灵活的规则条件<br> — 减少对重复逻辑<br>的需求 — 消除创建隐藏字段的要求 |
+| [自定义基于事件的规则](#custom-event-based-rules-support) | 定义对标准触发器以外的自定义事件做出响应的规则。 |  — 支持高级用例<br> — 更好地控制执行规则的时间和方式<br> — 增强了交互性 |
+| [上下文感知的可重复面板执行](#context-based-rule-execution-for-repeatable-panels) | 现在，规则会在每个重复面板的正确上下文中执行，而不是仅在最后一个实例中执行。 |  — 每个重复实例<br>的精确规则应用 — 减少动态部分<br>中的错误 — 改进用户使用重复内容的体验 |
+| [支持查询字符串、UTM和浏览器参数](#url-and-browser-parameter-based-rules-in-adaptive-forms) | 创建根据URL参数或浏览器特定的值调整表单行为的规则。 |  — 基于源或环境<br>启用个性化 — 对营销或跟踪特定的流<br>很有用 — 无需额外的脚本编写或自定义 |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ ht-degree: 0%
 >
 >您可以对表单、片段或单个字段使用&#x200B;**validate()**&#x200B;方法。 当片段包含在表单中时，表单和片段将作为选项显示在验证上下文中。 在这种情况下，片段是指其中的字段，而表单是指嵌入片段的父表单。
 
-## 在规则编辑器中将DownloadDor下载为OOTB函数
+## 下载记录文档
 
 使用规则编辑器中的&#x200B;**DownloadDor()**&#x200B;现成(OOTB)函数，允许用户下载记录文档（如果表单配置为生成记录文档）。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 在规则中支持动态变量
 
-增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**&#x200B;函数在表单的整个生命周期内设置和检索这些变量。
+增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**函数在表单的整个生命周期内设置和检索这些变量。
 这些变量包括：
 
 * 未随表单数据一起提交。
@@ -118,13 +118,13 @@ ht-degree: 0%
 
 ![获取变量值](/help/forms/assets/getvalue.png)
 
-随着用户更改国家/地区或数量，**总装运成本**&#x200B;字段会动态更新以反映产品成本和装运费用。
+随着用户更改国家/地区或数量，**总装运成本**字段会动态更新以反映产品成本和装运费用。
 ![输出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您还可以在When条件中添加&#x200B;**Get Variable value**&#x200B;函数。
-> &#x200B;> ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
+> 您还可以在When条件中添加&#x200B;**Get Variable value**函数。
+> > ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
 
 这种方法可以实现动态的实时计算，而无需向表单中添加额外的字段，保持结构干净和用户友好。
 

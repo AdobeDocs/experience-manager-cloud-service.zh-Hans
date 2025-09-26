@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签署文档步骤，生成打印输出步骤，生成非交互式PDF输出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '7370'
+source-wordcount: '7409'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 本文 |
 
 您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以[在模型中包含各种AEM工作流步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem)。
@@ -98,7 +98,7 @@ ht-degree: 0%
     
     -->
 
-   * **[!UICONTROL 请求属性映射]**：使用“请求属性映射”部分定义请求属性[&#128279;](work-with-form-data-model.md#bindargument)的名称和值。 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。
+   * **[!UICONTROL 请求属性映射]**：使用“请求属性映射”部分定义请求属性[的](work-with-form-data-model.md#bindargument)名称和值。 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。
 
   <!--  
      
@@ -121,7 +121,7 @@ ht-degree: 0%
     -->
 
 * **[!UICONTROL 代理人]** > **[!UICONTROL 分配选项]**：指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
-* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[创建自定义Adobe Experience Manager动态参与者步骤](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans&CID=RedirectAEMCommunityKautuk)。
+* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[创建自定义Adobe Experience Manager动态参与者步骤](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 参与者]**：在&#x200B;**[!UICONTROL 参与者选择器]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;选项时，该字段可用。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 
@@ -189,7 +189,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 使用电子邮件步骤发送电子邮件，例如，包含记录文档、自适应表单<!-- , link of an interactive communication-->链接或附加的PDF文档的电子邮件。 发送电子邮件步骤支持[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
 
-电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
+电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
 
 电子邮件步骤具有以下属性：
 
@@ -362,13 +362,18 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
    * **[!UICONTROL 相对于有效负载]**：使用选项检索在有效负载的相对路径中保存的文件附件。 选择选项并指定包含文件附件的文件夹名称，或在文本框中指定文件附件名称。
 
-     例如，如果CRX存储库中的“相对于有效负荷”文件夹在`attachment\attachment-folder`位置包含文件附件，则在选择&#x200B;**[!UICONTROL 相对于有效负荷]**&#x200B;选项后，在文本框中指定`attachment\attachment-folder`。
+     >[!NOTE]
+     >
+     > **调用表单数据模型**&#x200B;工作流步骤支持基于[SharePoint List的表单数据模型](/help/forms/connect-forms-to-sharepoint-list.md)中Base64编码附件数组的工作流端元数据，并允许工作流传递、存储和检索附件的元数据，例如文件名、MIME类型或自定义属性。
+     > ![SP列表附件](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > 相对于有效负荷文件夹包括位于`attachment`位置的文件附件，请在选择`attachment`相对于有效负荷&#x200B;**[!UICONTROL 选项后在文本框中指定]**。
 
    * **[!UICONTROL JSON点表示法]**：当要使用的值位于JSON文件中时，请使用选项。 例如，insurance.customerDetails.emailAddress。 “JSON点表示法”选项仅在从输入JSON选项中选择了映射输入字段时可用。
    * **[!UICONTROL 映射来自输入JSON的输入字段]**：指定JSON文件的路径，以从JSON文件中获取某些服务参数的输入值。 JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径，您也可以使用JSON或表单数据模型(FDM)类型的变量选择输入JSON文档。
 
 * **[!UICONTROL 服务输入]** > **[!UICONTROL 使用变量或JSON文件提供输入数据]**：选择相应选项，以从在绝对路径、有效负荷的相对路径或变量中保存的JSON文件中获取所有参数的值。
-* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数值的JSON文件。 JSON文件的路径可以是有效负载&#x200B;**的相对路径**&#x200B;或&#x200B;**[!UICONTROL 绝对路径]**。 您还可以使用JSON或表单数据模型(FDM)数据类型的变量检索输入JSON文档。
+* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数值的JSON文件。 JSON文件的路径可以是有效负载&#x200B;**[!UICONTROL 的相对路径]**&#x200B;或&#x200B;**[!UICONTROL 绝对路径]**。 您还可以使用JSON或表单数据模型(FDM)数据类型的变量检索输入JSON文档。
 
 * **[!UICONTROL JSON点表示法]**：将该字段留空可使用指定JSON文件的所有对象作为服务参数的输入。 要从指定的JSON文件中读取特定JSON对象作为服务参数的输入，请为JSON对象指定点表示法，例如，如果您的JSON与部分开头列出的类似，请指定insurance.customerDetails以提供客户的所有详细信息作为服务的输入。
 * **[!UICONTROL 服务输出]** > **[!UICONTROL 将输出值映射并写入变量或元数据]**：选择选项以将输出值保存为crx-repository中工作流实例元数据节点的属性。 指定元数据属性的名称，然后选择要与元数据属性映射的相应服务输出属性，例如，将输出服务返回的phone_number映射到工作流元数据的phone_number属性。 同样，可以将输出存储在Long数据类型的变量中。 为&#x200B;**[!UICONTROL 要映射的服务输出属性]**&#x200B;选项选择属性时，**[!UICONTROL 将输出保存到]**&#x200B;选项仅填充能够存储所选属性数据的变量。
@@ -390,7 +395,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 * **[!UICONTROL 区域设置]**：指定电子邮件和验证选项的语言。 您可以将区域设置存储在String数据类型的变量中，也可以选择&#x200B;**[!UICONTROL 文本]**&#x200B;从可用选项列表中选择区域设置。 在变量中存储区域设置的值时，必须定义区域设置代码。 例如，为英语指定&#x200B;**[!UICONTROL en_US]**，为法语指定&#x200B;**[!UICONTROL fr_FR]**。
 
-* **[!UICONTROL Adobe Sign云配置]**：选择[!DNL Adobe Sign]云配置。 如果您尚未为[!DNL AEM Forms]配置[!DNL Adobe Sign]，请参阅[将Adobe Sign与 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)集成。
+* **[!UICONTROL Adobe Sign云配置]**：选择[!DNL Adobe Sign]云配置。 如果您尚未为[!DNL Adobe Sign]配置[!DNL AEM Forms]，请参阅[将Adobe Sign与 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)集成。
 
 * **[!UICONTROL 使用选择要签名的文档]**：您可以从有效负荷的相对位置选择文档，使用有效负荷作为文档，指定文档的绝对路径，或检索存储在Document数据类型变量中的文档。
 * 截止日期&#x200B;**[!UICONTROL 天]**：在截止日期&#x200B;**[!UICONTROL 天]**&#x200B;字段中指定的天数内任务没有活动后，文档被标记为到期（已超过截止日期）。 在将文档分配给用户进行签名后，计算天数。
@@ -554,7 +559,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 区域设置]**：指定用于生成PDF文档的语言。 如果提供文本值，请从列表中选择一种语言或选择以下值之一：
    * **[!UICONTROL 要使用服务器默认值]**：
-（默认）使用[!DNL AEM Forms]服务器上配置的区域设置。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅[Designer帮助](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
+（默认）使用[!DNL AEM Forms]服务器上配置的区域设置。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅[Designer帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
 
    * **[!UICONTROL 要使用自定义值]**：
 在文本框中键入区域设置代码，或选择包含区域设置代码的字符串变量。 有关支持的区域设置代码的完整列表，请参阅https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。
