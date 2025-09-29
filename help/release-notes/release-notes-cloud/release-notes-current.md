@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -265,7 +265,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 扩展的应用程序性能监控(APM) (Alpha计划) {#apm-alpha}
 
-为了便于观察，AEM Cloud Service当前支持Adobe提供的[New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客户管理的[Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我们探索对其他APM选项的支持时，请发送电子邮件至[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，向您的首选供应商或技术发送电子邮件，并提供使用案例。
+为了便于观察，AEM Cloud Service当前支持Adobe提供的[New Relic One](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客户管理的[Dynatrace](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我们探索对其他APM选项的支持时，请发送电子邮件至[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，向您的首选供应商或技术发送电子邮件，并提供使用案例。
 
 
 ## [!DNL Experience Manager] Guides {#guides}
