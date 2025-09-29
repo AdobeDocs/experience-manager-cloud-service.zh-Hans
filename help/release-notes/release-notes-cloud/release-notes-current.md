@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
+source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
 workflow-type: tm+mt
-source-wordcount: '1905'
-ht-degree: 47%
+source-wordcount: '1875'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 47%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日作为有限可用功能提供。
->&#x200B;>请发送电子邮件至[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的项目中激活它。
+>>请发送电子邮件至[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的项目中激活它。
 
 ### 适用于Eclipse的AEM开发人员工具的新版本 {#aem-develeper-tools-for-eclipse}
 
@@ -203,7 +203,7 @@ OSGi properties:
 
 已弃用&#x200B;*Java 11运行时*，并且大多数环境已升级到更高性能的&#x200B;**Java 21运行时**。
 
-如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含后续步骤。 如该处所述，Adobe已于2025年9月18日&#x200B;**升级**&#x200B;开发&#x200B;**和** RDE **环境，以便您验证站点和流程并解决任何问题。**&#x200B;**阶段**&#x200B;和&#x200B;**生产**&#x200B;的升级将于&#x200B;**2025年10月14日**&#x200B;继续。
+如果由于不支持的依赖项而无法升级环境（请参阅[Java 21运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您应该已经收到来自Adobe的电子邮件，其中包含后续步骤。 如该处所述，Adobe已于2025年9月18日&#x200B;**升级**&#x200B;开发&#x200B;**和** RDE **环境，以便您验证站点和流程并解决任何问题。****阶段**&#x200B;和&#x200B;**生产**&#x200B;的升级将于&#x200B;**2025年10月14日**&#x200B;继续。
 
 >[!NOTE]
 >
@@ -240,8 +240,6 @@ OSGi properties:
 
 如有兴趣，请发送电子邮件至[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，并提供用例的简短描述以及您可能遇到的任何问题。
 
-请注意，我们今年早些时候发布了为AEM Cloud Service发布层项目[配置Open ID Connect ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)以保护AEM页面的功能(独立于Edge Delivery Services)。
-
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
@@ -267,7 +265,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 扩展的应用程序性能监控(APM) (Alpha计划) {#apm-alpha}
 
-为了便于观察，AEM Cloud Service当前支持Adobe提供的[New Relic One](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客户管理的[Dynatrace](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我们探索对其他APM选项的支持时，请发送电子邮件至[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，向您的首选供应商或技术发送电子邮件，并提供使用案例。
+为了便于观察，AEM Cloud Service当前支持Adobe提供的[New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客户管理的[Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我们探索对其他APM选项的支持时，请发送电子邮件至[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，向您的首选供应商或技术发送电子邮件，并提供使用案例。
 
 
 ## [!DNL Experience Manager] Guides {#guides}
