@@ -3,13 +3,13 @@ title: 记录文档支持的HTML标记标记
 description: 现在生成记录文档支持HTML标记标记的参考指南，包括渲染行为和辅助功能注意事项
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '438'
 ht-degree: 8%
 
 ---
-
 
 
 # 记录文档支持的HTML标记标记
@@ -132,23 +132,10 @@ Expected:     <LBody>First item
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## 相关信息
+## 相关内容
 
-### AEM Forms文档
 
 - [为自适应表单生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [生成核心组件的记录文档](/help/forms/generate-document-of-record-core-components.md)
 - [记录文档模板自定义](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### 技术参考
-
-- [XFA规范 — XHTML和CSS属性](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf)（第1187页）
-- [PDF辅助功能标准](https://www.w3.org/TR/WCAG21/)
-- [核心辅助功能API映射](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### 最佳实践指南
-
-- [创建无障碍的PDF](https://www.adobe.com/accessibility/pdf.html)
-- [表单中的富文本最佳实践](/help/forms/creating-accessible-adaptive-forms.md)
-- [用于辅助功能的文档结构](/help/forms/creating-accessible-adaptive-forms.md)
 
