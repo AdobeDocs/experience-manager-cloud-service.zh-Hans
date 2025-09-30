@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms as a Cloud Service 简介 {#introduction}
 
@@ -95,7 +95,7 @@ AEM Forms支持从初始创建到持续优化的完整数字表单历程。 每�
 将基于XFA的表单渲染为适用于移动设备和旧版浏览器的[HTML5表单](/help/forms/introductionhtml5.md)。 HTML5 Forms提供了无需插件的原生移动体验，同时维护表单逻辑和原始XDP模板中的验证。
 
 **交互式通信**
-使用可视编辑器创建以文档为中心的通信，如语句、发票和通知。 [交互式通信](/help/forms/introduction-to-interactive-communication.md)将静态内容与动态数据相结合，以生成跨打印和数字渠道的个性化通信。
+使用可视编辑器创建以文档为中心的通信，如语句、发票和通知。 [交互式通信](/help/forms/interactive-communication/create-interactive-communication.md)将静态内容与动态数据相结合，以生成跨打印和数字渠道的个性化通信。
 
 ### 管理：审查和法规遵从性 {#govern}
 
@@ -249,7 +249,7 @@ Forms会自动适应不同的屏幕大小和输入方法。 触屏优化控件�
 **文档服务和通信：**
 
 1. **[实施通信API](/help/forms/aem-forms-cloud-service-communications-introduction.md)**&#x200B;以自动生成文档
-2. **[创建交互式通信](/help/forms/introduction-to-interactive-communication.md)**&#x200B;以提供个性化的报表和通知
+2. **[创建交互式通信](/help/forms/interactive-communication/create-interactive-communication.md)**&#x200B;以提供个性化的报表和通知
 3. **[设置Forms门户](/help/forms/configure-forms-portal.md)**&#x200B;以进行集中表单管理
 
 ### 企业部署：规模和治理 {#enterprise-deployment}

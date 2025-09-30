@@ -4,14 +4,15 @@ description: 通过AEM Forms交互式通信轻松设计动态的数据驱动通�
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 2%
+source-wordcount: '427'
+ht-degree: 3%
 
 ---
-
 
 # 交互式通信
 
@@ -41,12 +42,12 @@ ht-degree: 2%
 | 文档片段 | 跨多个文档重复使用模块化内容块，以实现一致性和效率 | ✅可用 |
 | 内联数据绑定 | 直接在内容中绑定数据以进行实时个性化，而无需外部配置 | ✅可用 |
 | 多个组件 | 利用各种组件创建复杂而吸引人的文档 | ✅可用 |
-| 多渠道设计 | 通过法规遵从性跨打印和数字格式创建统一的体验 | ??部分可用 |
-| 动态内容 | 使用业务逻辑和数据绑定生成个性化内容 | ??部分可用 |
-| 格式灵活性 | 输出为PDF、HTML、PCL、PostScript®️和ZPL格式 | ??部分可用 |
+| 多渠道设计 | 通过法规遵从性跨打印和数字格式创建统一的体验 | 🌓部分可用 |
+| 动态内容 | 使用业务逻辑和数据绑定生成个性化内容 | 🌓部分可用 |
+| 格式灵活性 | 输出为PDF、HTML、PCL、PostScript®️和ZPL格式 | 🌓部分可用 |
 | 语言支持 | 使用自定义字体支持创建多种语言的通信 | ⏳即将推出 |
 
-## 入门培训
+## 加入
 
 可通过提前访问程序找到交互式通信编辑器，以进行Forms as a Cloud Service部署。 若要通过电子邮件请求访问，请将贵组织ID以及Forms as a Cloud Service部署的计划详细信息从您的官方地址发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 

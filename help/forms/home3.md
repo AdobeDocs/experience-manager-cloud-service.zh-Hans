@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 2%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ ht-degree: 2%
 | **用途：**&#x200B;设计将静态内容与动态数据相结合用于打印和数字渠道的个性化通信。 |
 | **何时使用：**&#x200B;客户报表、发票、通知、个性化通信、文档密集型工作流。 |
 | 📄可视化文档设计📄动态数据集成📄多渠道输出📄 Personalization |
-| [交互式通信入门→](/help/forms/introduction-to-interactive-communication.md) |
+| [交互式通信入门→](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗数据和集成 {#data-integration}
 
@@ -304,7 +304,7 @@ ht-degree: 2%
 
 用于XFA现代化的&#x200B;**：**&#x200B;从[HTML5 Forms](/help/forms/introductionhtml5.md)开始
 
-**对于文档通信：**&#x200B;以[交互式通信开头](/help/forms/introduction-to-interactive-communication.md)
+**对于文档通信：**&#x200B;以[交互式通信开头](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### 数据集成快速入门 {#integration-start}
 
