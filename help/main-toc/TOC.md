@@ -33,7 +33,7 @@ ht-degree: 96%
    + AEMaaCS 功能发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
-         + [2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)版发行说明
+         + [2025.8.0版发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)
          + [2025.7.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [2025.6.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
