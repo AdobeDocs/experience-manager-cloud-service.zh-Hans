@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
+source-git-commit: 1d96401a5200dbffb49315af8745c22171f4ecc3
 workflow-type: tm+mt
-source-wordcount: '6799'
-ht-degree: 96%
+source-wordcount: '6807'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 96%
    + AEMaaCS 功能发行说明 {#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
-         + [2025.8.0版发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)
+         + [2025.8.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)
          + [2025.7.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [2025.6.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 的发行说明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
@@ -237,6 +237,8 @@ ht-degree: 96%
    + 通用编辑器发行说明 {#universal-editor}
       + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [2025.09.18发行说明](/help/release-notes/universal-editor/2025/2025-09-18.md)
+         + [2025.09.11发行说明](/help/release-notes/universal-editor/2025/2025-09-11.md)
          + [2025.09.04 版发行说明](/help/release-notes/universal-editor/2025/2025-09-04.md)
          + [2025.08.22 版发行说明](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [2025.08.14 版发行说明](/help/release-notes/universal-editor/2025/2025-08-14.md)
@@ -507,7 +509,7 @@ ht-degree: 96%
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
                + [翻译内容](/help/journey-sites/translation/translate-content.md)
                + [发布翻译的内容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hans)
+            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻译多语言 Sites 的内容](/help/sites-cloud/administering/translation/overview.md)
             + [准备内容以进行翻译](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -527,7 +529,7 @@ ht-degree: 96%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -840,7 +842,7 @@ ht-degree: 96%
             + [创建基于核心组件的自适应表单模板](/help/forms/template-editor-core-components.md)
             + [根据 XFA 表单模板创建自适应表单（核心组件）](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
-            + [记录文档支持的HTML标记标记](/help/forms/html-markup-tags-support-in-document-of-record.md)
+            + [记录文档中支持 HTML 标记标签](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
@@ -1035,15 +1037,15 @@ ht-degree: 96%
       + [生成变体——集成在 AEM 编辑器中](/help/generative-ai/generate-variations-integrated-editor.md)
       + [生成变体](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [Forms Experience Builder — 概述](/help/forms/experience-builder/product-overview.md)
-      + [Forms Experience Builder快速入门](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
-      + [部署和配置Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + [Forms Experience Builder - 概述](/help/forms/experience-builder/product-overview.md)
+      + [Forms Experience Builder 快速入门指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [部署和配置 Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
       + 操作方式 {#forms-experience-builder-how-to}
          + [如何将图像转换为表单？](/help/forms/experience-builder/intelligent-import-conversion.md)
          + [如何配置表单提交和集成？](/help/forms/experience-builder/form-submission-integration.md)
-         + [如何在Forms Experience Builder中创建LLM增强型智能字段？](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
-         + [如何在Forms Experience Builder中启动新的线程对话？](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
-      + [提示库](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+         + [如何在 Forms Experience Builder 中创建 LLM 增强的智能字段？](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + [如何在 Forms Experience Builder 中启动一个新的对话线程？](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + [提示词库](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
       + [常见问题解答（FAQ）](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概述 {#overview}
@@ -1178,7 +1180,7 @@ ht-degree: 96%
          + [监测表单性能：操作遥测指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [表单提交指南：使用表单提交服务](/help/forms/forms-submission-service.md)
       + [配置 Edge Delivery Services 表单的提交方式](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [自适应Forms块字段属性](/help/edge/docs/forms/eds-form-field-properties.md)
+      + [自适应表单块字段属性](/help/edge/docs/forms/eds-form-field-properties.md)
       + [常见问题](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [创建表单的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
@@ -1410,7 +1412,7 @@ ht-degree: 96%
          + [发布](/help/implementing/universal-editor/publishing.md)
          + [事件](/help/implementing/universal-editor/events.md)
          + [筛选组件](/help/implementing/universal-editor/filtering.md)
-         + [配置RTE](/help/implementing/universal-editor/configure-rte.md)
+         + [配置 RTE](/help/implementing/universal-editor/configure-rte.md)
          + [自定义](/help/implementing/universal-editor/customizing.md)
          + [扩展](/help/implementing/universal-editor/extending.md)
          + [架构](/help/implementing/universal-editor/architecture.md)
@@ -1419,7 +1421,7 @@ ht-degree: 96%
          + [快速入门](/help/implementing/universal-editor/getting-started.md)
          + [开发人员概述](/help/implementing/universal-editor/developer-overview.md)
          + [本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
-         + [SecurBank示例应用程序](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank 示例应用程序](/help/implementing/universal-editor/securbank.md)
       + [Headless 体验管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Headless/introduction.html?lang=zh-hans)
       + 混合和 SPA 开发 {#hybrid}
          + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/Site/Headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1500,7 +1502,7 @@ ht-degree: 96%
    + 部署到 AEM as a Cloud Service {#deploying}
       + [部署到 AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
-      + [无讯息小时数和更新空闲时段](/help/implementing/deploying/quiet-hours-update-free-periods.md)
+      + [安静时段和无更新时段](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)
       + [资产映射](/help/implementing/deploying/resource-mapping.md)
    + 创作层 {#author-tier}
