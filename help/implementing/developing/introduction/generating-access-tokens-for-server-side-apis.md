@@ -4,16 +4,16 @@ description: 了解如何通过生成安全JWT令牌来促进第三方服务器�
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 22216d2c045b79b7da13f09ecbe1d56a91f604df
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2112'
 ht-degree: 0%
 
 ---
 
 # 为服务器端API生成访问令牌 {#generating-access-tokens-for-server-side-apis}
 
-某些体系结构依赖于从AEM基础架构之外的服务器上托管的应用程序来调用AEM as a Cloud Service。 例如，调用服务器然后向AEM as a Cloud Service发出API请求的移动应用程序。
+某些架构依赖于从AEM基础架构之外的服务器上托管的应用程序来调用AEM as a Cloud Service。 例如，调用服务器然后向AEM as a Cloud Service发出API请求的移动应用程序。
 
 下面介绍了服务器到服务器流程，以及简化的开发流程。 AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console)用于生成身份验证过程所需的令牌。
 
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hans#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
-具有IMS组织管理员角色以及AEM Author上的AEM用户或AEM管理员产品配置文件成员的用户可以从AEM as a Cloud Service生成一组凭据。 每个凭据都是JSON有效负载，其中包括证书（公共密钥）、私钥以及由`clientId`和`clientSecret`组成的技术帐户。 具有AEM as a Cloud Service环境管理员角色的用户以后可以检索这些凭据，这些凭据应安装在非AEM服务器上，并仔细视为密钥。 此JSON格式文件包含与AEM as a Cloud Service API集成所需的全部数据。 该数据用于创建已签名的JWT令牌，该令牌与AdobeIdentity Management服务(IMS)交换以获得IMS访问令牌。 然后，可将此访问令牌用作持有者身份验证令牌，以向AEM as a Cloud Service发出请求。 默认情况下，凭据中的证书在一年后到期，但可在需要时刷新，请参阅[刷新凭据](#refresh-credentials)。
+具有IMS组织管理员角色并且是AEM Author上的AEM用户或AEM管理员产品配置文件成员的用户可以从AEM as a Cloud Service生成一组凭据。 每个凭据都是JSON有效负载，其中包括证书（公共密钥）、私钥以及由`clientId`和`clientSecret`组成的技术帐户。 具有AEM as a Cloud Service环境管理员角色的用户以后可以检索这些凭据，这些凭据应安装在非AEM服务器上，并仔细视为密钥。 此JSON格式文件包含与AEM as a Cloud Service API集成所需的全部数据。 数据用于创建签名的JWT令牌，该令牌与Adobe Identity Management Services (IMS)交换以获得IMS访问令牌。 然后，可将此访问令牌用作持有者身份验证令牌，以向AEM as a Cloud Service发出请求。 默认情况下，凭据中的证书在一年后到期，但可在需要时刷新，请参阅[刷新凭据](#refresh-credentials)。
 
 服务器到服务器流涉及以下步骤：
 
 * 在AEM as a Cloud Service上从Developer Console获取凭据
-* 在调用AEM的非AEM服务器上安装AEM as a Cloud Service的凭据
-* 生成JWT令牌并使用Adobe的IMS API交换该令牌作为访问令牌
+* 在调用AEM as a Cloud Service的非AEM服务器上安装AEM的凭据
+* 使用Adobe的IMS API生成JWT令牌并交换该令牌以换取访问令牌
 * 使用访问令牌作为持有者身份验证令牌调用AEM API
 * 在AEM环境中为技术帐户用户设置适当的权限
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->IMS组织管理员(通常是通过Cloud Manager配置环境的同一用户)同时也是AEM Author上的AEM用户或AEM管理员产品配置文件的成员，必须首先访问Developer Console。 然后，单击&#x200B;**创建新的技术帐户**，以便具有AEM as a Cloud Service环境管理员权限的用户生成并稍后检索凭据。 如果IMS组织管理员尚未创建技术帐户，则会出现一条消息，通知他们需要IMS组织管理员角色。
+>IMS组织管理员(通常是通过Cloud Manager配置环境的同一用户)同时也是AEM Author上的AEM Users或AEM Administrators产品配置文件的成员，必须首先访问Developer Console。 然后，单击&#x200B;**创建新的技术帐户**，以便具有AEM as a Cloud Service环境管理员权限的用户生成并稍后检索凭据。 如果IMS组织管理员尚未创建技术帐户，则会出现一条消息，通知他们需要IMS组织管理员角色。
 
 ### 在非AEM服务器上安装AEM服务凭据 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
@@ -69,16 +69,17 @@ ht-degree: 0%
 
 ### 生成JWT令牌并将其交换为访问令牌 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在调用Adobe的IMS服务时，使用凭据创建JWT令牌以检索访问令牌，该令牌的有效时间为24小时。
+在对Adobe的IMS服务的调用中，使用凭据创建JWT令牌以检索访问令牌，该令牌的有效时间为24小时。
 
-可以使用为此目的而设计的客户端库交换AEM CS服务凭据以换取访问令牌。 可从[Adobe的公共GitHub存储库](https://github.com/adobe/aemcs-api-client-lib)中使用客户端库，其中包含更详细的指导和最新信息。
+可以使用为此目的而设计的代码示例交换AEM CS服务凭据以换取访问令牌。 示例代码可从[Adobe的公共GitHub存储库](https://github.com/adobe/aemcs-api-client-lib)中获取，其中包含您可以复制并适应您自己的项目的代码示例。 请注意，此存储库包含用于引用的示例代码，不会作为生产就绪库依赖项进行维护。
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 
@@ -96,7 +97,7 @@ exchange(config).then(accessToken => {
 访问令牌定义其过期时间，通常为24小时。 Git存储库中存在用于管理访问令牌的示例代码，可在令牌过期前对其进行刷新。
 
 >[!NOTE]
->如果有多个凭据，请确保为稍后调用的AEM API调用引用相应的json文件。
+>如果有多个凭据，请确保引用相应的json文件，以便稍后调用的AEM API调用能够正常运行。
 
 ### 调用AEM API {#calling-the-aem-api}
 
@@ -181,11 +182,11 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 >[!INFO]
 >
->了解有关AdobeIdentity Management System (IMS)和AEM用户和组的更多信息。 请参阅[文档](/help/security/ims-support.md)。
+>进一步了解Adobe Identity Management System (IMS)和AEM用户和组。 请参阅[文档](/help/security/ims-support.md)。
 
 ## 开发人员流程 {#developer-flow}
 
-开发人员可能希望使用非AEM应用程序（在其笔记本电脑上运行或托管）的开发实例进行测试，该实例会向AEM as a Cloud Service开发环境发出请求。 但是，由于开发人员不一定具有IMS管理员角色权限，因此Adobe不能假设他们能够生成常规服务器到服务器流中描述的JWT载体。 因此，Adobe为开发人员提供了一种直接生成访问令牌的机制，可用于对AEM as a Cloud Service上他们有权访问的环境的请求。
+开发人员可能希望使用非AEM应用程序的开发实例（在其笔记本电脑上运行或托管）进行测试，该实例会向AEM as a Cloud Service开发环境发出请求。 但是，由于开发人员不一定具有IMS管理员角色权限，因此Adobe不能假设他们能够生成常规服务器到服务器流中描述的JWT持有者。 因此，Adobe为开发人员提供了一种直接生成访问令牌的机制，可用于对AEM as a Cloud Service上他们有权访问的环境的请求。
 
 有关使用AEM as a Cloud Service开发人员控制台所需权限的信息，请参阅[开发人员指南文档](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)。
 
@@ -193,7 +194,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 >
 >本地开发访问令牌的有效期最长为24小时，之后必须使用相同方法重新生成该令牌。
 
-开发人员可以使用此令牌从其非AEM测试应用程序向AEM as a Cloud Service环境进行调用。 通常，开发人员会将此令牌与非AEM应用程序一起用在他们自己的笔记本电脑上。 此外，AEM as a Cloud通常是非生产环境。
+开发人员可以使用此令牌从其非AEM测试应用程序向AEM as a Cloud Service环境进行调用。 通常，开发人员会在自己的笔记本电脑上对非AEM应用程序使用此令牌。 此外，AEM as a Cloud通常是非生产环境。
 
 开发人员流程涉及以下步骤：
 
@@ -221,7 +222,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
   ![凭据刷新](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* 按下按钮后，将生成一组包含新证书的凭据。 在off-AEM服务器上安装新凭据，并确保在不删除旧凭据的情况下按预期进行连接。
+* 按下按钮后，将生成一组包含新证书的凭据。 在AEM以外服务器上安装新凭据，并确保在不删除旧凭据的情况下按预期进行连接。
 * 在生成访问令牌时，请确保使用新凭据而不是旧凭据。
 * 可以选择撤消（然后删除）以前的证书，以便无法再用来通过AEM as a Cloud Service进行身份验证。
 
