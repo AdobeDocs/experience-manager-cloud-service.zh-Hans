@@ -3,10 +3,10 @@ title: 基于属性的访问控制
 description: 了解如何启用基于属性的访问控制来定义基于元数据的规则，以定义对Content Hub中可用资源的访问级别
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
+source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 4%
+source-wordcount: '944'
+ht-degree: 5%
 
 ---
 
@@ -39,9 +39,13 @@ ht-degree: 4%
 
 使用本文中定义的准则，在电子表格中定义规则。
 
+<!--
+
 >[!IMPORTANT]
 >
-> 定义规则后，导航到电子表格的&#x200B;**验证错误**&#x200B;选项卡，然后单击&#x200B;**运行ABAC验证**。 **所有验证均通过**&#x200B;消息，确认您可以向Adobe提供定义的规则。
+> After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
+
+-->
 
 ## 基于属性的访问控制用例示例 {#example-metadata-based-rules}
 
