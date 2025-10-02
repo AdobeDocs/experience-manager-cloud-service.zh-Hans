@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 66%
+source-wordcount: '2201'
+ht-degree: 59%
 
 ---
 
@@ -24,6 +24,14 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 >
 >有关详细信息，请参阅用于内容片段的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
+>[!NOTE]
+>
+>如果使用此新编辑器创建模型，则应当始终将此编辑器用于该模型。
+>
+>如果您随后使用[原始模型编辑器](/help/assets/content-fragments/content-fragments-models.md)打开模型，您将看到以下消息：
+>
+>* “该模型已配置自定义UI架构。 此UI中显示的字段顺序可能与UI架构不匹配。 要查看与UI架构对齐的字段，您需要切换到新的内容片段编辑器。”
+
 ## 定义内容片段模型 {#defining-your-content-fragment-model}
 
 内容片段模型使用一批&#x200B;**[数据类型](#data-types)**&#x200B;有效地定义所得内容片段的结构。可使用模型编辑器添加数据类型的实例，然后配置它们以创建必填字段：
@@ -38,26 +46,46 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    >
    >在[创建模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)后，您也可以直接打开模型。
 
-1. 打开所需的模型进行&#x200B;**“编辑”**；使用快速操作或选择模型，然后从工具栏中选择操作。
+1. 打开&#x200B;**编辑**&#x200B;所需的模型；使用其中一个快速操作链接，或者选择模型，然后从工具栏中选择操作。
 
-   打开模型编辑器后，会显示：
-
-   * 左：字段已定义
-   * 右侧：可用于创建字段的&#x200B;**数据类型**（可在创建字段后使用的&#x200B;**属性**）
-
-   >[!NOTE]
-   >
-   >将字段定义为&#x200B;**必填**&#x200B;时，将为左侧窗格中所示的&#x200B;**标签**&#x200B;标星号 (**&#42;**)。
 
    ![属性](assets/cf-cfmodels-empty-model.png)
 
+   打开模型编辑器后，会显示：
+
+   * 上：
+      * **主页**&#x200B;图标
+      * 用于在[原始](/help/assets/content-fragments/content-fragments-models.md)编辑器和新编辑器之间进行切换的选项
+      * **取消**
+      * **保存**
+
+   * 左侧：可用于创建字段的&#x200B;**数据类型**
+
+   * 中间：字段已与&#x200B;**添加**&#x200B;选项一起定义
+
+   * 右侧：使用最右侧的图标，您可以在以下各项之间进行选择：
+
+      * **属性**：定义和查看选定字段的属性
+      * **模型详细信息**：显示&#x200B;**已启用**&#x200B;状态、**模型标题**、**标记**、**描述**&#x200B;和&#x200B;**预览URL**
+
 1. **添加字段**
 
-   * 将字段的必需数据类型拖到所需位置：
+   * 可以任选其一：
 
-     ![拖动数据类型以创建字段](assets/cf-cfmodels-create-field.png)
+      * 将数据类型从左侧面板拖到中间面板中字段的所需位置。
+      * 按数据类型选择&#x200B;**+**&#x200B;图标以将其添加到字段列表的底部。
+      * 在中间面板中选择&#x200B;**添加**，然后从结果下拉列表中选择所需的数据类型，以在列表底部添加字段。
 
-   * 将字段添加到模型后，右侧面板将显示可以为该特定数据类型定义的&#x200B;**属性**。您可以在此定义该字段的必需内容。
+     >[!NOTE]
+     >
+     >**制表符占位符**&#x200B;字段必须始终显示在现有字段上方。
+
+   * 您可以使用字段框左侧的圆点形式重新定位字段：
+
+     ![移动字段](assets/cf-cfmodels-move-field-icon.png)
+
+   * 将字段添加到模型（并选择该字段）后，右侧面板会显示可为该特定数据类型定义的&#x200B;**属性**。 您可以在此定义特定的
+字段。
 
       * 许多属性的含义一目了然，有关更多详细信息，请参阅[属性（数据类型）](#properties)。
       * 键入&#x200B;**字段标签**&#x200B;将自动补全&#x200B;**属性名称** - 如果为空，则以后可手动更新它。
@@ -72,15 +100,17 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
      ![字段属性](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >当字段定义为&#x200B;**必填**&#x200B;时，中间窗格中指示的&#x200B;**标签**&#x200B;将标有星号(**&#42;**)。
+
 1. **移除字段**
 
-   选择必填字段，然后选择垃圾桶图标。 系统会要求您确认该操作。
+   选择中间面板中相应字段的垃圾桶图标。
 
-   ![删除](assets/cf-cfmodels-remove-icon.png)
+   ![移除](assets/cf-cfmodels-remove-icon.png)
 
-1. 添加所有必填字段，并根据需要定义相关属性。例如：
-
-   ![保存](assets/cf-cfmodels-save.png)
+1. 添加所有必填字段，并根据需要定义相关属性。
 
 1. 选择&#x200B;**“保存”**&#x200B;来保留定义。
 
@@ -118,6 +148,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * **标记**
    * 允许片段作者访问和选择标记区域
+
 * **片段引用**
    * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
    * 数据类型可配置为允许片段作者执行以下操作：
@@ -126,18 +157,16 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
       * 创建字段的新实例
    * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
 
-* **片段引用（UUID）**
-   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
-   * 数据类型可配置为允许片段作者执行以下操作：
-      * 直接编辑引用的片段。
-      * 根据相应的模型创建新内容片段
-      * 创建字段的新实例
-   * 在编辑器中，引用的作用是指定被引用资源的路径。在内部，引用被视为引用资源的通用唯一 ID（UUID）
-      * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的片段
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID特定于存储库。 如果使用[内容复制工具](/help/implementing/developing/tools/content-copy.md)复制内容片段，则将在目标环境中重新计算UUID。
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **内容引用**
    * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
@@ -145,16 +174,16 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 字段可以配置为允许片段作者创建新字段实例
    * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
 
-* **内容引用（UUID）**
-   * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
-   * 如果图像被引用，您可以选择显示缩略图
-   * 字段可以配置为允许片段作者创建新字段实例
-   * 在编辑器中，引用的作用是指定被引用资源的路径。在内部，引用被视为引用资源的通用唯一 ID（UUID）
-      * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的资源资源
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID特定于存储库。 如果使用[内容复制工具](/help/implementing/developing/tools/content-copy.md)复制内容片段，则将在目标环境中重新计算UUID。
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **JSON 对象**
    * 使内容片段作者可将 JSON 语法输入到片段的相应元素中。
@@ -162,7 +191,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
       * JSON 将被传递，并在 GraphQL 中作为 JSON 输出。
       * 在内容片段编辑器中包括 JSON 语法高亮显示、自动补全和错误高亮显示。
 
-* **选项卡占位符**
+* **制表符占位符**
    * 允许引入选项卡，以供在编辑内容片段内容时使用。
       * 这些选项卡在模型编辑器中显示为分隔条，用于分隔内容数据类型的列表的各个部分。每个实例表示一个新选项卡的开始。
       * 在片段编辑器中，每个实例都显示为一个选项卡。
@@ -170,6 +199,8 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
      >[!NOTE]
      >
      >此数据类型仅用于格式设置，因此 AEM GraphQL 架构会忽略此数据类型。
+     >
+     >**制表符占位符**&#x200B;字段必须始终显示在现有字段上方。
 
 ## 属性（数据类型） {#properties}
 
@@ -188,7 +219,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
   用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。 当使用&#x200B;**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
 
 * **字段标签**
-输入&#x200B;**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
+输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。
@@ -258,16 +289,12 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * [内容引用](#content-reference)
    * 提供对其他内容的简单引用；任何类型的。
-   * 由数据类型提供：
-      * **内容引用** — 基于路径
-      * **内容引用(UUID)** — 基于UUID
+   * 由&#x200B;**内容引用**&#x200B;数据类型提供
    * 可为（所得片段中的）一个或多个引用配置它。
 
 * [片段引用](#fragment-reference-nested-fragments)（嵌套片段）
    * 引用其他片段，具体取决于指定的特定模型。
-   * 由数据类型提供：
-      * **片段引用** — 基于路径
-      * **片段引用(UUID)** — 基于UUID
+   * 由&#x200B;**片段引用**&#x200B;数据类型提供
    * 允许您包含/检索结构化数据。
 
      >[!NOTE]
@@ -275,19 +302,21 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
      >当您使用[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)时，此方法尤其值得关注。
    * 可为（所得片段中的）一个或多个引用配置它。
 
+<!--
 >[!NOTE]
 >
->有关内容/片段引用和内容/片段引用(UUID)以及升级到基于UUID的数据类型的详细信息，请参阅[为UUID引用升级内容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)。
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
 >AEM 对于以下各项具有重复保护：
 >
 >* 内容引用
->这会阻止用户添加对当前片段的引用，并可能导致出现空的片段引用选取器对话框。
+>  >  此项阻止用户添加对当前片段的引用，可能导致片段引用选取器对话框为空。
 >
->* GraphQL中的片段引用
->如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
+>* GraphQL 中的片段引用
+>  >  如果创建一个深层查询，该查询返回多个互相引用的内容片段，则该查询在第一次出现时返回 null。
 
 >[!CAUTION]
 >
@@ -297,7 +326,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 ### 内容引用 {#content-reference}
 
-**内容引用**&#x200B;和&#x200B;**内容引用(UUID)**&#x200B;数据类型允许您呈现来自其他源的内容；例如，图像、页面或体验片段。
+**内容引用**&#x200B;数据类型允许您呈现来自其他源的内容；例如，图像、页面或体验片段。
 
 除了标准属性之外，您还可以指定：
 
@@ -324,7 +353,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 ### 片段引用（嵌套片段） {#fragment-reference-nested-fragments}
 
-**片段引用**&#x200B;和&#x200B;**片段引用(UUID)**&#x200B;数据类型可以引用一个或多个内容片段。 在检索内容以供用于您的应用程序时，此功能尤其值得关注，因为通过此功能可检索有多层的结构化数据。
+**片段引用**&#x200B;数据类型可以引用一个或多个内容片段。 在检索内容以供用于您的应用程序时，此功能尤其值得关注，因为通过此功能可检索有多层的结构化数据。
 
 例如：
 

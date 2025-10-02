@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 83%
+source-wordcount: '3588'
+ht-degree: 77%
 
 ---
 
@@ -28,6 +28,14 @@ AEM中的内容片段模型定义了[内容片段](/help/assets/content-fragment
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
 >内容片段和内容片段模型现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;控制台进行管理，但内容片段仍然可以从&#x200B;**Assets**&#x200B;控制台进行管理，并且内容片段模型可以从&#x200B;**工具**&#x200B;控制台进行管理。 本节介绍从&#x200B;**Assets**&#x200B;和&#x200B;**Tools**&#x200B;控制台进行管理。
+
+>[!NOTE]
+>
+>如果模型是使用[新模型编辑器](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)创建的，则应当始终将该编辑器用于模型。
+>
+>如果随后使用此（原始）模型编辑器打开模型，您将看到以下消息：
+>
+>* “该模型已配置自定义UI架构。 此UI中显示的字段顺序可能与UI架构不匹配。 要查看与UI架构对齐的字段，您需要切换到新的内容片段编辑器。”
 
 ## 创建内容片段模型 {#creating-a-content-fragment-model}
 
@@ -66,6 +74,7 @@ AEM中的内容片段模型定义了[内容片段](/help/assets/content-fragment
 
    * 左：字段已定义
    * 右侧：可用于创建字段的&#x200B;**数据类型**（可在创建字段后使用的&#x200B;**属性**）
+   * top：用于尝试[新编辑器](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)的选项
 
    >[!NOTE]
    >
@@ -141,17 +150,43 @@ AEM中的内容片段模型定义了[内容片段](/help/assets/content-fragment
 * **标记**
    * 允许片段作者访问和选择标记区域
 
+* **片段引用**
+   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 数据类型可配置为允许片段作者执行以下操作：
+      * 直接编辑引用的片段。
+      * 根据相应的模型创建新内容片段
+      * 创建字段的新实例
+   * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
+
+* **片段引用（UUID）**
+   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 数据类型可配置为允许片段作者执行以下操作：
+      * 直接编辑引用的片段。
+      * 根据相应的模型创建新内容片段
+      * 创建字段的新实例
+   * 在编辑器中，引用的作用是指定被引用资源的路径。在内部，引用被视为引用资源的通用唯一 ID（UUID）
+      * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的片段
+
+  >[!NOTE]
+  >
+  >UUID特定于存储库。 如果使用[内容复制工具](/help/implementing/developing/tools/content-copy.md)复制内容片段，则将在目标环境中重新计算UUID。
+
 * **内容引用**
    * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
    * 如果图像被引用，您可以选择显示缩略图
    * 字段可以配置为允许片段作者创建新字段实例
+   * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
 
-* **片段引用**
-   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
-   * 字段可以配置为允许片段作者：
-      * 直接编辑引用的片段
-      * 根据相应的模型创建新内容片段
-      * 创建字段的新实例
+* **内容引用（UUID）**
+   * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 如果图像被引用，您可以选择显示缩略图
+   * 字段可以配置为允许片段作者创建新字段实例
+   * 在编辑器中，引用的作用是指定被引用资源的路径。在内部，引用被视为引用资源的通用唯一 ID（UUID）
+      * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的资源资源
+
+  >[!NOTE]
+  >
+  >UUID特定于存储库。 如果使用[内容复制工具](/help/implementing/developing/tools/content-copy.md)复制内容片段，则将在目标环境中重新计算UUID。
 
 * **JSON 对象**
    * 使内容片段作者可将 JSON 语法输入到片段的相应元素中。
@@ -181,10 +216,10 @@ AEM中的内容片段模型定义了[内容片段](/help/assets/content-fragment
   >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
-用于在片段中实现/呈现字段的各种选项。通常，此属性允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。 当使用&#x200B;**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
+用于在片段中实现/呈现字段的各种选项。通常，此属性允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。 当使用**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
 
 * **字段标签**
-输入&#x200B;**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新。
+输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。
@@ -259,32 +294,43 @@ AEM中的内容片段模型定义了[内容片段](/help/assets/content-fragment
 
 内容片段可以使用以下任一数据类型形成嵌套内容：
 
-* **[内容引用](#content-reference)**
+* [内容引用](#content-reference)
    * 提供对其他内容的简单引用；任何类型的。
-   * 可以为一个或多个引用（在生成的片段中）配置。
+   * 由数据类型提供：
+      * **内容引用** — 基于路径
+      * **内容引用(UUID)** — 基于UUID
+   * 可为（所得片段中的）一个或多个引用配置它。
 
-* **[片段引用](#fragment-reference-nested-fragments)**（嵌套片段）
+* [片段引用](#fragment-reference-nested-fragments)（嵌套片段）
    * 引用其他片段，具体取决于指定的特定模型。
-   * 让您包含/检索结构化数据。
+   * 由数据类型提供：
+      * **片段引用** — 基于路径
+      * **片段引用(UUID)** — 基于UUID
+   * 允许您包含/检索结构化数据。
 
      >[!NOTE]
      >
-     >此方法与使用 GraphQL 内容片段的 [Headless 内容投放特别相关](/help/assets/content-fragments/content-fragments-graphql.md)。
-   * 可以为一个或多个引用（在生成的片段中）配置。
+     >当您使用[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)时，此方法尤其值得关注。
+
+   * 可为（所得片段中的）一个或多个引用配置它。
+
+>[!NOTE]
+>
+>有关内容/片段引用和内容/片段引用(UUID)以及升级到基于UUID的数据类型的详细信息，请参阅[为UUID引用升级内容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)。
 
 >[!NOTE]
 >
 >AEM 具有以下重复保护：
 >
 >* 内容引用
->这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
+>  >  这会阻止用户添加对当前片段的引用。这可能导致出现空的片段引用选取器对话框。
 >
->* GraphQL中的片段引用
->如果您创建的深层查询返回多个相互引用的内容片段，则该查询在第一次出现时将返回空值。
+>* GraphQL 中的片段引用
+>  >  如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时将返回空值。
 
 ### 内容引用 {#content-reference}
 
-内容引用让您呈现来自其他源的内容，例如，图像或内容片段。
+**内容引用**&#x200B;和&#x200B;**内容引用(UUID)**&#x200B;数据类型允许您呈现来自其他源的内容；例如，图像、页面或体验片段。
 
 除了标准属性之外，您还可以指定：
 
@@ -299,7 +345,7 @@ AEM中的内容片段模型定义了[内容片段](/help/assets/content-fragment
 
 ### 片段引用（嵌套片段） {#fragment-reference-nested-fragments}
 
-“片段引用”会引用一个或多个内容片段。在检索应用程序中使用的内容时，此功能特别有意义，因为它让您检索具有多个层的结构化数据。
+**片段引用**&#x200B;和&#x200B;**片段引用(UUID)**&#x200B;数据类型可以引用一个或多个内容片段。 在检索内容以供用于您的应用程序时，此功能尤其值得关注，因为通过此功能可检索有多层的结构化数据。
 
 例如：
 
@@ -540,7 +586,7 @@ type CompanyModel {
 
    * 您可以&#x200B;**解锁**&#x200B;用于启用编辑的模型。
 
-     如果您选择&#x200B;**解锁**，则会显示警告，您必须确认&#x200B;**解锁**&#x200B;操作：
+     如果您选择&#x200B;**解锁**，则会显示警告，您必须确认&#x200B;**解锁**操作：
      ![解锁内容片段模型时的消息](assets/cfm-model-unlock-message.png)
 
      然后，可以打开模型进行编辑。

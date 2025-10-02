@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
 workflow-type: tm+mt
-source-wordcount: '2260'
+source-wordcount: '2496'
 ht-degree: 49%
 
 ---
@@ -27,7 +27,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。内容片段模型主要从&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[Assets](/help/assets/content-fragments/content-fragments-managing.md)控制台以及从&#x200B;**工具** - **常规**&#x200B;中提供的选项[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)进行管理。
+>内容片段存储为&#x200B;**资源**。内容片段模型主要从&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[Assets](/help/assets/content-fragments/content-fragments-managing.md)控制台以及从[工具](/help/assets/content-fragments/content-fragments-models.md) - **常规**&#x200B;中提供的选项&#x200B;**内容片段模型**&#x200B;进行管理。
 
 ## 如何使用内容片段模型 {#how-to-work-with-content-fragment-models}
 
@@ -54,10 +54,10 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * 顶部工具栏
    * 提供标准 AEM 功能
-   * 还会显示您的 IMS 组织
-   * 提供多种[操作](#actions-unselected)
+   * 显示您的IMS组织
+   * 提供各种[操作](#actions-unselected)，当您选择一个或多个模型时，这些操作可以[更改](#actions-selected-content-fragment-models)
 * 左侧面板
-   * 显示作为文件夹列出的所有配置[&#128279;](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)的路径
+   * 显示作为文件夹列出的所有配置[的](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)路径
    * 在此，可以隐藏或显示文件夹树
    * 您可以选择树的特定文件夹
    * 这可以调整为显示嵌套文件夹（子配置）
@@ -97,20 +97,29 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 * **状态**
    * 仅供参考。
    * 可用于[快速筛选](#fast-filtering)
-* **修改时间**
+* **复制状态**
    * 仅供参考。
+   * 可用于[快速筛选](#fast-filtering)。
+* **预览**
+   * 仅供参考。
+* **修改于**
+   * 仅供参考。
+   * 可用于[快速筛选](#fast-filtering)。
 * **修改人**
    * 仅供参考。
    * 可用于[快速筛选](#fast-filtering)。
 * **标记**
    * 仅供参考。
-   * 显示与模型相关的所有标记。
+   * 打开一个对话框，其中显示与模型相关的所有标记。
    * 可用于[快速筛选](#fast-filtering)。
 * **发布时间**
    * 仅供参考。
+   * 可用于[快速筛选](#fast-filtering)。
 * **发布者**
    * 仅供参考。
    * 可用于[快速筛选](#fast-filtering)。
+* **由**&#x200B;使用
+   * 打开一个对话框，其中列出了基于模型的内容片段。 列表提供了允许您直接打开片段的链接。
 
 ## 模型属性 {#model-properties}
 
@@ -169,8 +178,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 选择特定模型会打开一个工具栏，其中重点介绍可用于该模型的操作。 您还可以选择多个模型 — 可用的操作将相应地进行调整。
 
 * **[编辑](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)**&#x200B;以定义您的内容片段模型。
-* **将**&#x200B;发布到[发布](/help/implementing/cloud-manager/manage-environments.md#environment-types)或[预览](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)层。
+* **[发布](#publishing-a-content-fragment-model)**&#x200B;和&#x200B;**[取消发布](#unpublishing-a-content-fragment-model)**&#x200B;到[发布](/help/implementing/cloud-manager/manage-environments.md#environment-types)或[预览](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)层。
 * **锁定**/**解锁**&#x200B;以控制是否允许用户修改模型。
+* **复制**&#x200B;您的模型。
 * **[启用](#enabling-a-content-fragment-model)**/**[禁用](#disabling-a-content-fragment-model)**&#x200B;以控制是否允许用户基于此模型创建内容片段。
 
 选择单个模型也会在右侧面板中显示[模型属性](#properties)。
@@ -239,7 +249,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    您还可以定义各种属性：
 
    * **标题**
-如果您先输入&#x200B;**Title**，则将从中生成&#x200B;**Name**。
+如果您先输入**Title**，则将从中生成&#x200B;**Name**。
    * **描述**
    * **启用模型**&#x200B;以[启用模型](#enabling-disabling-a-content-fragment-model)
 
@@ -317,23 +327,21 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 * 如果继承链未投放结果，请查看 **Cloud Services** 文件夹的配置（也请先直接配置，然后通过继承配置）。
 * 如果以上所有内容均未提供任何结果，则该文件夹不允许使用模型。
 
-<!--
-## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
+## 删除内容片段模型 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
->Deleting a Content Fragment model can impact dependent fragments.
+>删除内容片段模型可能会影响从属片段。
 
-To delete a Content Fragment model:
+要删除内容片段模型，请执行以下操作：
 
-1. Navigate to, and select your Content Fragment Model. You can select multiple models.
+1. 导航到并选择您的内容片段模型。 您可以选择多个模型。
 
-1. Select **Delete** from the toolbar.
+1. 从工具栏中选择&#x200B;**删除**。
 
    >[!NOTE]
    >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
--->
+   >如果参照了模型，则会发出警告，以便您采取相应的措施。
 
 ## 发布内容片段模型 {#publishing-a-content-fragment-model}
 
@@ -352,25 +360,25 @@ To delete a Content Fragment model:
 
 1. 将启动用于发布所选模型及其引用的工作流。 随后，控制台中将显示已发布状态。
 
-<!--
-## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
+## 取消发布内容片段模型 {#unpublishing-a-content-fragment-model}
 
-Content Fragment Models can be unpublished if they are not referenced by any fragments.
+如果没有任何片段引用内容片段模型，则可取消发布这些模型。
 
-To unpublish a Content Fragment Model:
+要取消发布内容片段模型，请执行以下操作：
 
-1. Navigate to, and select your Content Fragment Model.
-1. Select **Unpublish** from the toolbar.
-   The published status is indicated in the console. 
+1. 导航到并选择您的内容片段模型。
+控制台中会指示已发布状态。
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
+1. 从工具栏中选择&#x200B;**取消发布**。
 
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
+1. 在“取消发布”对话框中，选择&#x200B;**目标**：
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
+   * **发布服务**
+   * **预览服务**
 
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
--->
+1. 将启动用于取消发布选定模型及其引用的工作流。 然后，控制台中会显示未发布状态。
+
+如果尝试取消发布当前由一个或多个片段使用的模型，则显示一条错误警告。该消息建议您检查[引用](/help/sites-cloud/authoring/basic-handling.md#references)面板以进一步调查：
 
 ## 锁定的内容片段模型 {#locked-content-fragment-models}
 
