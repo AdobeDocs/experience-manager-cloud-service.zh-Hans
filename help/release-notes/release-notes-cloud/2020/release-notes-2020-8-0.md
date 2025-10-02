@@ -42,9 +42,9 @@ ht-degree: 35%
 
 * 使用处理配置文件以使用计算服务生成自定义元数据。 查看使用处理配置文件[的](/help/assets/manage-metadata.md#metadata-compute-service)自定义元数据。
 
-* 管理员可配置的更简单的Brand Portal用户下载体验。 请参阅[下载体验概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
+* 管理员可配置的更简单的Brand Portal用户下载体验。 请参阅[下载体验概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hans#download-configurations)。
 
-* Brand Portal中现在提供本机和高保真PDF文档预览。 请参阅[文档查看器概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
+* Brand Portal中现在提供本机和高保真PDF文档预览。 请参阅[文档查看器概述](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hans#doc-viewer)。
 
 * 现在，您可以在AEM as a Cloud Service中直接从[!DNL Dynamic Media]使CDN（内容分发网络）缓存失效（与使用[!DNL Dynamic Media Classic]不同）。 它确保在几分钟内而不是几小时内提供最新资产。 请参阅通过Dynamic Media [使CDN缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
 
