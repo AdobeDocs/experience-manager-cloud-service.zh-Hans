@@ -4,10 +4,10 @@ description: 了解如何将 Edge Delivery Site 添加到您的生产程序或�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
-workflow-type: ht
-source-wordcount: '521'
-ht-degree: 100%
+source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 100%
 
 1. 在 Cloud Manager 中加入 Edge Delivery Site 之前，请确保您已首先使用 Edge Delivery Services 许可证创建了您的程序。
 请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
-1. 通过 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的程序。
+1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在&#x200B;**快速访问**&#x200B;部分中，单击&#x200B;**Experience Manager**。
+1. 在左侧面板中点击 **Cloud Manager**。
+1. 选择所需的组织。
+1. 在&#x200B;**我的程序**&#x200B;控制台上，单击程序。
 1. 执行下列操作之一：
 
    * 从&#x200B;**程序概述**&#x200B;页面，单击 **Edge Delivery** 选项卡。然后，单击页面右下角附近的&#x200B;**添加 Edge Delivery Site**。
@@ -32,7 +36,7 @@ ht-degree: 100%
    * 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)，以显示左侧菜单。
 在**服务**&#x200B;标题下，单击 ![Web 页面图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**。
 
-在页面的右上角附近，单击**添加 Site**。
+在页面的右上角附近，单击![链接图标或添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) **添加Edge Delivery站点**。
 
      ![通过 Edge Delivery Sites 按钮添加 Edge Delivery Site](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 

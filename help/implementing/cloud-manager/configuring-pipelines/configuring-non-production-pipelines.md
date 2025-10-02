@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 72%
+source-wordcount: '1466'
+ht-degree: 58%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 72%
 
 有两种类型的非生产管道：
 
-* **代码质量管道** – 这些代码质量管道将扫描 Git 分支中的代码并执行构建和代码质量步骤。
-* **部署管道** – 除了执行代码质量管道等构建和代码质量步骤之外，这些管道还将代码部署到非生产环境。
+* **代码质量管道** – 这些代码质量管道会扫描 Git 分支中的代码并执行构建和代码质量步骤。
+* **部署管道** — 除了执行代码质量管道等生成和代码质量步骤之外，这些管道还将代码部署到非生产环境。
 
 >[!NOTE]
 >
@@ -37,9 +37,11 @@ ht-degree: 72%
 
 在设置项目并具有至少一个使用 Cloud Manager UI 的环境后，便可以执行以下步骤来添加非生产管道。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
-
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
+1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在&#x200B;**快速访问**&#x200B;部分中，单击&#x200B;**Experience Manager**。
+1. 在左侧面板中点击 **Cloud Manager**。
+1. 选择所需的组织。
+1. 在&#x200B;**我的程序**&#x200B;控制台上，单击程序。
 
 1. 从 Cloud Manager 主屏幕访问&#x200B;**管道**&#x200B;信息卡。单击&#x200B;**+添加**&#x200B;并选择&#x200B;**添加非生产管道。**
 
@@ -56,8 +58,8 @@ ht-degree: 72%
 
    * **部署触发器** – 在定义启动管道的部署触发器时，您可以使用以下选项。
 
-      * **手动** – 使用此选项可手动启动管道。
-      * **在 Git 发生更改时** – 只要将承诺添加到配置的 Git 分支，此选项就会启动 CI/CD 管道。 利用此选项，您仍能根据需要手动启动管道。
+      * **手动** — 使用此选项手动启动管道。
+      * **在Git发生更改时** — 只要将承诺添加到配置的Git分支，此选项就会启动CI/CD管道。 利用此选项，您仍能根据需要手动启动管道。
 
 1. 如果您选择创建&#x200B;**部署管道**，您还必须定义&#x200B;**重要量度失败行为。**
 
@@ -103,7 +105,7 @@ ht-degree: 72%
       * **产品功能测试** – 针对开发环境执行[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
       * **自定义功能测试** - 针对开发环境执行[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
       * **自定义 UI 测试** – 为自定义应用程序执行[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md)。
-      * **体验审核** — 执行[体验审核](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+      * **体验审核** — 执行[体验审核](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    ![全栈管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -115,17 +117,19 @@ ht-degree: 72%
 
 目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择&#x200B;**包含**&#x200B;以下代码类型之一：
 
-* **配置** — 配置AEM环境中各种功能的设置。
-   * 请参阅[使用配置管道](/help/operations/config-pipeline.md)以获取支持的配置列表，包括日志转发、清除相关的维护任务和各种CDN配置，并在存储库中管理这些配置以便正确部署它们。
-   * 运行目标部署管道时，将部署配置，前提是这些配置已保存到您在管道中定义的环境、存储库和分支中。
+* **配置** — 为AEM环境中的各种功能配置设置。
+   * 有关支持的配置（包括日志转发、清除相关的维护任务和各种CDN配置）的列表，请参阅[使用配置管道](/help/operations/config-pipeline.md)，并在存储库中管理这些配置以便正确部署它们。
+   * 运行目标部署管道时，将部署配置，前提是这些配置已保存到您在管道中定义的环境、存储库和分支。
    * 在任何时候，每个环境只能有一个配置管道。
+* **配置Edge Delivery Services配置管道** - Edge Delivery配置管道没有单独的开发、暂存和生产环境。 在AEM as a Cloud Service中，更改在开发、暂存和生产层之间移动。 相反，Edge Delivery配置管道会将其配置直接应用于在Cloud Manager中注册的所有Edge Delivery Sites域。 要了解更多信息，请参阅[添加Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 * **前端代码** — 为AEM应用程序的前端配置JavaScript和CSS。
    * 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
    * 请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
 * **Web层配置** — 配置Dispatcher属性，以存储、处理网页并将网页交付给客户端。
    * 有关更多详细信息，请参阅文档[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)。
    * 如果所选环境存在 Web 层代码管道，则会禁用此选择。
-   * 如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
+   * 如果全栈管道已部署到环境，您仍然可以为该同一环境创建Web层配置管道。 执行此操作时，Cloud Manager会忽略全栈管道中的Web层配置。
+
 
 >[!NOTE]
 >
@@ -152,13 +156,13 @@ ht-degree: 72%
    * **Git 分支** – 此选项定义管道应从中检索代码的所选存储库的分支。
       * 输入分支名称的前几个字符，以及此字段的自动完成功能。它会找到您可以选择的匹配分支。
    * **代码位置** – 此选项定义管道应从中检索代码的所选存储库分支中的路径。
-   * **管道** — 对于前端非生产管道，您可以选择启用&#x200B;**[体验审核](/help/implementing/cloud-manager/experience-audit-dashboard.md)**。
+   * **管道** — 对于前端非生产管道，您可以选择启用&#x200B;**[体验审核](/help/implementing/cloud-manager/reports/report-experience-audit.md)**。
 
    ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. 如果启用了体验审核，请单击&#x200B;**继续**&#x200B;前进到&#x200B;**体验审核**&#x200B;选项卡，您可以在其中定义应始终包含在体验审核中的路径。
 
-   * 如果您启用了&#x200B;**体验审核**，请参阅[体验审核](/help/implementing/cloud-manager/experience-audit-dashboard.md)文档，以了解有关如何配置的详细信息。
+   * 如果您启用了&#x200B;**体验审核**，请参阅[体验审核](/help/implementing/cloud-manager/reports/report-experience-audit.md)文档，以了解有关如何配置的详细信息。
    * 如果未配置，请跳过此步骤。
 
 1. 单击&#x200B;**保存**，以保存管道。
@@ -167,9 +171,9 @@ ht-degree: 72%
 
 ## 跳过Dispatcher包 {#skip-dispatcher-packages}
 
-如果希望将 Dispatcher 程序包作为管道的一部分构建，但不希望将其发布来构建存储，则可以禁用发布它们，这可能会缩短管道运行持续时间。
+如果您希望在管道中构建Dispatcher包，但未将其上传以构建存储，请禁用发布。 这样做可以缩短管道的运行时间。
 
-必须通过项目 `pom.xml` 文件，添加以下禁用发布 Dispatcher 程序包的配置。 该配置基于一个环境变量，作为一个标志，您可以在 Cloud Manager 构建容器中设置，定义何时应忽略 Dispatcher 程序包。
+必须通过项目 `pom.xml` 文件，添加以下禁用发布 Dispatcher 程序包的配置。 在Cloud Manager构建容器中设置一个环境变量，以标记何时忽略Dispatcher包。 管道读取此标记并相应地忽略它们。
 
 ```xml
 <profile>

@@ -1,14 +1,14 @@
 ---
 title: Cloud Manager 测试概述
-description: 概述 Cloud Manager 自动运行的三种类型的测试，确保自定义代码的质量。
+description: 大致了解Cloud Manager自动运行的三种类型的测试，确保自定义代码的质量。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 100%
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,11 +25,11 @@ Cloud Service 管道的 Cloud Manager 支持三类测试。
 
 1. [功能测试](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 功能测试是[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)的阶段测试阶段的一部分，也是[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的测试阶段的可选部分。
+   * 功能测试在[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)的阶段测试阶段运行。 也可以在[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的测试阶段运行（可选）。
 
-1. [体验审核测试](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [体验审核测试](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
-   * 体验审核测试已在所有 Cloud Manager 生产管道中启用，无法跳过。
+   * 体验审核测试在所有Cloud Manager生产管道中启用，无法跳过。
 
 这些测试可以是：
 

@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 38%
+source-wordcount: '1689'
+ht-degree: 39%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ## AEM 中的 AI 助手
 
-对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
+对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 参见 [AEM 中的 AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
 
 
 ## 我的程序控制台 {#my-programs-console}
@@ -126,7 +126,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 分配给项目的名称。 上图将“SecurBank Sample”显示为程序名称。
 * 服务类型：
    * **Experience Manager Cloud** — 用于AEM as a Cloud Service程序
-   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙盒
    * 生产
@@ -153,7 +153,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 导航到项目的特定![数据图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [环境](/help/implementing/cloud-manager/manage-environments.md)
 * 打开![项目概述图标](/help/implementing/cloud-manager/assets/program-overview.svg) [项目概述](#program-overview)
 * ![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -182,7 +182,7 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 对程序[环境的概述](#environments)
 1. 对程序[管道的概述](#pipelines)
 1. [计划绩效](#performance)概述
-1. [有用资源](#useful-resources)的链接
+1.  [有用资源](#useful-resources)的链接
 
 ### 工具栏 {#program-overview-toolbar}
 
@@ -214,7 +214,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * ![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) — 项目的管道运行历史记录
 * ![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) — 为项目配置的所有管道
 * ![文件夹图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md) — 为项目配置的所有存储库
-* ![图形饼图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [报表](/help/implementing/cloud-manager/sla-reporting.md) - SLA数据等量度
+* ![图形饼图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [报表](/help/implementing/cloud-manager/reports/report-sla.md) - SLA数据等量度
 
 **服务**
 
@@ -223,7 +223,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * ![设置图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [域设置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理项目的自定义域名
 * ![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程序的SSL证书
 * ![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [域映射](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理域映射
-* ![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 为某些IP地址定义允许列表
+* ![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 为某些IP地址定义允许列表
 * ![Box图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [内容集](/help/implementing/developing/tools/content-copy.md) — 为复制目的而创建的内容集
 * ![历史记录图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [复制内容活动](/help/implementing/developing/tools/content-copy.md) — 内容复制活动
 * ![渠道图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [网络基础架构](/help/security/configuring-advanced-networking.md) — 管理程序的高级联网选项

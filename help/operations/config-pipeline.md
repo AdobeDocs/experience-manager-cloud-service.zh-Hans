@@ -4,10 +4,10 @@ description: 了解如何使用配置管道在AEM as a Cloud Service中部署各
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 1d29700d8cbb9cd439ec909687c34db06a8090e4
+source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 3%
+source-wordcount: '1340'
+ht-degree: 2%
 
 ---
 
@@ -25,12 +25,12 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 
 本文档的以下部分概述了有关如何使用配置管道以及如何为其构建配置的重要信息。 它描述了在配置管道支持的所有功能或功能子集之间共享的一般概念。
 
-* [支持的配置](#configurations) — 可以使用配置管道部署的配置列表
+* [支持的配置](#configurations) — 可以使用配置管道部署的配置列表。
 * [创建和管理配置管道](#creating-and-managing) — 如何创建配置管道
-* [通用语法](#common-syntax) — 跨配置共享的语法
-* [文件夹结构](#folder-structure) — 描述配置预期的结构配置管道
-* [机密环境变量](#secret-env-vars) — 使用环境变量不泄露配置中的机密的示例
-* [机密管道变量](#secret-pipeline-vars) — 在Edge Delivery Services项目之前使用环境变量不泄露配置中的机密的示例
+* [通用语法](#common-syntax) — 跨配置共享的语法。
+* [文件夹结构](#folder-structure) — 描述配置所需的结构配置管道。
+* [机密环境变量](#secret-env-vars) — 使用环境变量不泄露配置中的机密的示例。
+* [机密管道变量](#secret-pipeline-vars) — 使用环境变量在Edge Delivery Services项目之前不公开配置中的机密的示例。
 
 ## 支持的配置 {#configurations}
 
@@ -50,7 +50,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 | [版本清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明应何时清除内容版本的规则来优化AEM存储库 | X |  |
 | [审核日志清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明有关应清除日志时间的规则，优化AEM审核日志以提高性能 | X |  |
 | [日志转发](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 配置用于将日志转发到各种目标的端点和凭据，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk | X | X |
-| [正在注册客户端ID](/help/implementing/developing/open-api-based-apis.md) | `API` | 通过注册客户端ID，可将Adobe Developer Console API项目范围设置为特定的AEM环境。 使用需要身份验证的基于OpenAPI的API时需要此项 | X |  |
+| [正在注册客户端ID](/help/implementing/developing/open-api-based-apis.md) | `API` | 通过注册客户端ID，可将Adobe Developer Console API项目范围设置为特定的AEM环境。 使用需要身份验证的基于OpenAPI的API时需要 | X |  |
 
 ## 创建和管理配置管道 {#creating-and-managing}
 
@@ -58,7 +58,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 
 有关如何创建和配置&#x200B;**Edge Delivery**&#x200B;配置管道的信息，请参阅[添加Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)一文。
 
-## 通用语法 {#common-syntax}
+## 常用语法 {#common-syntax}
 
 每个配置文件都以类似于以下示例片段的属性开头：
 
@@ -73,7 +73,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 |---|---|---|
 | `kind` | 一个字符串，可确定哪种类型的配置，如日志转发、流量过滤器规则或请求转换 | 必需，无默认值 |
 | `version` | 表示架构版本的字符串 | 必需，无默认值 |
-| `envTypes` | 此字符串数组是`metadata`节点的子属性。 对于&#x200B;**发布投放**，可能的值包括dev、stage、prod或任何组合，它确定将处理配置的环境类型。 例如，如果数组仅包含`dev`，则不会将配置加载到暂存或生产环境中，即使已在该环境中部署配置也是如此。 对于&#x200B;**Edge Delivery**，只应使用值`prod` | 所有环境类型，即(dev、stage、prod) for Publish Delivery或just prod for Edge Delivery |
+| `envTypes` | 此字符串数组是`metadata`节点的子属性。 对于&#x200B;**发布投放**，可能的值包括dev、stage、prod或任何组合，它将确定处理配置的环境类型。 例如，如果数组仅包含`dev`，则不会将配置加载到暂存或生产环境中，即使已在该环境中部署配置也是如此。 对于&#x200B;**Edge Delivery**，只应使用值`prod`。 | 所有环境类型，即(dev、stage、prod) for Publish Delivery或just prod for Edge Delivery。 |
 
 您可以使用`yq`实用程序在本地验证配置文件的YAML格式（例如，`yq cdn.yaml`）。
 
@@ -88,7 +88,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
   cdn.yaml
 ```
 
-或
+或者
 
 ```text
 /config
@@ -104,7 +104,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 
 ### 适用于所有环境的单个配置文件 {#single-file}
 
-文件结构将类似于以下内容：
+文件结构类似于以下内容：
 
 ```text
 /config
@@ -121,7 +121,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
      envTypes: ["dev", "stage", "prod"]
 ```
 
-使用密钥类型环境（或管道）变量，每个环境的[密钥属性](#secret-env-vars)可能会有所不同，如`${{SPLUNK_TOKEN}}`参考所示
+使用密钥类型环境（或管道）变量，每个环境的[密钥属性](#secret-env-vars)可能会有所不同，如以下`${{SPLUNK_TOKEN}}`参考所示。
 
 ```yaml
 kind: "LogForwarding"
@@ -137,9 +137,9 @@ data:
       index: "AEMaaCS"
 ```
 
-### 每种环境类型一个单独的文件 {#file-per-env}
+### 每种环境类型有一个单独的文件 {#file-per-env}
 
-文件结构将类似于以下内容：
+文件结构类似于以下内容：
 
 ```text
 /config
@@ -151,8 +151,7 @@ data:
   logForwarding-prod.yaml
 ```
 
-当属性值可能存在差异时，请使用此结构。 在文件中，可以预期`envTypes`数组值与后缀相对应，例如
-值为`cdn-dev.yaml`的`logForwarding-dev.yaml`和`["dev"]`、值为`cdn-stage.yaml`的`logForwarding-stage.yaml`和`["stage"]`等。
+当属性值可能存在差异时，请使用此结构。 在文件中，`envTypes`数组值应该与后缀相对应。 例如，值为`cdn-dev.yaml`的`logForwarding-dev.yaml`和`["dev"]`、值为`cdn-stage.yaml`的`logForwarding-stage.yaml`和`["stage"]`等。
 
 ### 每个环境的文件夹 {#folder-per-env}
 
@@ -160,7 +159,7 @@ data:
 
 如果您有多个开发环境，并且每个环境都具有唯一的属性值，则此方法特别有用。
 
-文件结构将类似于以下内容：
+文件结构类似于以下内容：
 
 ```text
 /config/dev1
@@ -178,7 +177,8 @@ data:
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Edge Delivery配置管道没有单独的开发、暂存和生产环境。 与发布交付环境（其中的更改通过开发、暂存和生产层进行）不同，通过Edge Delivery配置管道部署的配置直接应用于在Cloud Manager中注册到Edge Delivery Site的所有域映射。
+Edge Delivery配置管道没有单独的开发、暂存和生产环境。 在发布交付环境中，通过开发、暂存和生产层更改进度。 相反，Edge Delivery配置管道将配置直接应用于Edge Delivery站点在Cloud Manager中注册的所有域映射。
+
 
 因此，部署简单的文件结构，例如：
 
@@ -188,7 +188,7 @@ Edge Delivery配置管道没有单独的开发、暂存和生产环境。 与发
   logForwarding.yaml
 ```
 
-如果每个Edge Delivery站点上的规则需要不同，请使用&#x200B;*when*&#x200B;语法来区分这些规则。 例如，请注意域与以下代码片段中的dev.example.com匹配，该域可与域www.example.com区分。
+如果每个Edge Delivery站点上的规则需要不同，请使用语法&#x200B;*when*&#x200B;来区分这些规则。 例如，请注意域与以下代码片段中的dev.example.com匹配，该域可与域www.example.com区分。
 
 ```
 kind: "CDN"
@@ -231,7 +231,7 @@ data:
       index: "AEMaaCS"
 ```
 
-有关如何使用环境变量的详细信息，请参阅文档[Cloud Manager环境变量](/help/implementing/cloud-manager/environment-variables.md)。
+有关如何使用环境变量的详细信息，请参阅[Cloud Manager环境变量](/help/implementing/cloud-manager/environment-variables.md)。
 
 ## 机密管道变量 {#secret-pipeline-vars}
 
@@ -239,5 +239,4 @@ data:
 
 语法与上一节中显示的代码片段相同。
 
-有关如何使用管道变量的详细信息，请参阅Cloud Manager中的[管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)文档。
-
+有关如何使用管道变量的详细信息，请参阅Cloud Manager中的[管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)。

@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 39%
+source-wordcount: '1402'
+ht-degree: 35%
 
 ---
 
@@ -36,13 +36,17 @@ ht-degree: 39%
 
 ## 添加新的生产管道 {#adding-production-pipeline}
 
-在设置项目并具有至少一个使用 [!UICONTROL Cloud Manager] UI 的环境后，便可以执行以下步骤来添加非生产管道。
+在设置项目并具有至少一个使用[!UICONTROL Cloud Manager] UI的环境后，便可以执行以下步骤来添加生产管道。
 
 >[!TIP]
 >
->在配置前端管道之前，请参阅[AEM快速站点创建历程](/help/journey-sites/quick-site/overview.md)，获取易于使用的AEM快速站点创建工具的端到端指南。 此历程可帮助您简化AEM站点的前端开发，让您无需AEM后端知识即可快速自定义站点。
+>在配置前端管道之前，请参阅[AEM快速站点创建历程](/help/journey-sites/quick-site/overview.md)，获取易于使用的AEM快速站点创建工具的端到端指南。 此历程可帮助您简化AEM站点的前端开发，让您无需了解AEM后端即可快速自定义站点。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
+1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在&#x200B;**快速访问**&#x200B;部分中，单击&#x200B;**Experience Manager**。
+1. 在左侧面板中点击 **Cloud Manager**。
+1. 选择所需的组织。
+1. 在&#x200B;**我的程序**&#x200B;控制台上，单击程序。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
@@ -106,11 +110,11 @@ ht-degree: 39%
 
 1. 提供要包含在体验审核中的路径。
 
-   * 有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)。
+   * 有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration)。
 
 1. 单击&#x200B;**保存**&#x200B;以保存管道。
 
-在管道运行时，会提交为体验审核配置的路径，并根据性能、可访问性、SEO、最佳实践和PWA测试进行评估。 有关详细信息，请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
+在管道运行时，会提交为体验审核配置的路径，并根据性能、可访问性、SEO、最佳实践和PWA测试进行评估。 有关详细信息，请参阅[了解体验审核结果](/help/implementing/cloud-manager/reports/report-experience-audit.md)。
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
@@ -119,9 +123,10 @@ ht-degree: 39%
 目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择&#x200B;**包含**&#x200B;以下代码类型之一：
 
 * **配置** — 为AEM环境中的各种功能配置设置。
-   * 请参阅[使用配置管道](/help/operations/config-pipeline.md)以获取支持的配置列表，包括日志转发、清除相关的维护任务和各种CDN配置，并在存储库中管理这些配置以便正确部署它们。
+   * 有关支持的配置（包括日志转发、清除相关的维护任务和各种CDN配置）的列表，请参阅[使用配置管道](/help/operations/config-pipeline.md)，并在存储库中管理这些配置以便正确部署它们。
    * 运行目标部署管道时，将部署配置，前提是这些配置已保存到管道中定义的环境、存储库和分支。
    * 在任何时候，每个环境只能有一个配置管道。
+* **配置Edge Delivery Services配置管道** - Edge Delivery配置管道没有单独的开发、暂存和生产环境。 在AEM as a Cloud Service中，更改在开发、暂存和生产层之间移动。 相反，Edge Delivery配置管道会将其配置直接应用于在Cloud Manager中注册的所有Edge Delivery Sites域。 要了解更多信息，请参阅[添加Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 * **前端代码** — 为AEM应用程序的前端配置JavaScript和CSS。
    * 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
    * 请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。

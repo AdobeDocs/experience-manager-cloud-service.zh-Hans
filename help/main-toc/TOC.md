@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
+source-git-commit: 7c8d3e78109f7eb8f90dca5f851e354c33943450
 workflow-type: tm+mt
-source-wordcount: '6811'
+source-wordcount: '6816'
 ht-degree: 97%
 
 ---
@@ -132,6 +132,7 @@ ht-degree: 97%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [当前](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
          + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
@@ -163,7 +164,7 @@ ht-degree: 97%
          + [2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [&#x200B; 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [ 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -510,7 +511,7 @@ ht-degree: 97%
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
                + [翻译内容](/help/journey-sites/translation/translate-content.md)
                + [发布翻译的内容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hans)
+            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻译多语言 Sites 的内容](/help/sites-cloud/administering/translation/overview.md)
             + [准备内容以进行翻译](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -530,7 +531,7 @@ ht-degree: 97%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -538,7 +539,7 @@ ht-degree: 97%
    + [[!DNL Assets] 架构](/help/assets/architecture.md)
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资产微服务概述](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
+   + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [启用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -965,7 +966,7 @@ ht-degree: 97%
       + [自定义 HTML5 Forms 的错误消息](/help/forms/customzing-errors-html5-forms.md)
       + [将 HTML5 Forms 保存为草稿](/help/forms/saving-html5-form-draft.md)
       + [为 HTML5 Forms 启用日志记录功能](/help/forms/enable-logs.md)
-      + [调试 HTML5 Forms &#x200B;](/help/forms/debug.md)
+      + [调试 HTML5 Forms ](/help/forms/debug.md)
       + [HTML5 Forms 的脚本支持](/help/forms/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
    + 交互式通信 {#interactive-communication}
@@ -1313,10 +1314,13 @@ ht-degree: 97%
             + [功能测试概述](/help/implementing/cloud-manager/functional-testing.md)
             + [Java 功能测试](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
-         + [体验审核仪表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)
       + [自定义权限](/help/implementing/cloud-manager/custom-permissions.md)
-      + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
+      + 报告 {#reports}
+         + [SLA](/help/implementing/cloud-manager/reports/report-sla.md)
+         + [视觉比较](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
+         + [健康评估](/help/implementing/cloud-manager/reports/report-health-assessment.md)
+         + [体验审核](/help/implementing/cloud-manager/reports/report-experience-audit.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)

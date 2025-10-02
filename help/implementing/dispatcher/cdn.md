@@ -4,7 +4,7 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
+source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 11%
@@ -28,7 +28,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe托管的CDN {#aem-managed-cdn}
+## Adobe 托管 CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -136,7 +136,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 调试配置
 
-要调试BYOCDN配置，请使用值为`edge=true`的`x-aem-debug`标头。 例如：
+要调试BYOCDN配置，请使用值为`x-aem-debug`的`edge=true`标头。 例如：
 
 在Linux®中：
 

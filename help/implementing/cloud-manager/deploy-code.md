@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 41%
@@ -83,7 +83,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 | 产品功能测试 | Cloud Manager管道执行针对暂存环境运行的测试。<br>另请参阅[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。 |
 | 自定义功能测试 | 管道中的此步骤始终执行，不能跳过。 如果构建未生成测试JAR，则测试会自动通过。<br>另请参阅[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。 |
 | 自定义 UI 测试 | 一项可选功能，可自动运行为自定义应用程序创建的UI测试。<br>UI测试基于Selenium并打包到Docker图像中，以在语言和框架中提供灵活性。 此方法允许您使用Java和Maven、Node和WebDriver.io，或任何基于Selenium的框架或技术。<br>另请参阅[自定义用户界面测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。 |
-| 体验审核 | 管道中的此步骤始终执行，不能跳过。 在执行生产管道时，在运行检查的自定义功能测试之后会包含体验审核步骤。<ul><li>配置的页面将提交给服务并进行评估。</li><li>审核结果是信息性的，显示分数以及当前分数和以前分数之间的变化。</li><li>此细节对于确定当前部署中是否会引入回归非常有用。</li></ul>请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。</li></ul> |
+| 体验审核 | 管道中的此步骤始终执行，不能跳过。 在执行生产管道时，在运行检查的自定义功能测试之后会包含体验审核步骤。<ul><li>配置的页面将提交给服务并进行评估。</li><li>审核结果是信息性的，显示分数以及当前分数和以前分数之间的变化。</li><li>此细节对于确定当前部署中是否会引入回归非常有用。</li></ul>请参阅[了解体验审核结果](/help/implementing/cloud-manager/reports/report-experience-audit.md)。</li></ul> |
 
 ![暂存测试](assets/stage-testing.png)
 

@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
+source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 4%
+source-wordcount: '559'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 4%
 * 程序在AEM as a Cloud Service上运行。
 * 该环境的最后一个管道已成功完成，并在&#x200B;**天内**&#x200B;前运行。
 * 环境状态为&#x200B;*正在运行*，没有管道正在进行中。
-* **可以在**&#x200B;环境、`Development`环境或`Stage`上还原以前部署的代码`Specialized Testing Environment`。
+
+除&#x200B;**环境、**&#x200B;环境和`Production`之外，`Development`还原以前部署的代码`Stage`还在`Specialized Testing Environment`环境中工作。 确认后，Cloud Manager会启动恢复，并在启动时和成功完成时发送推送通知。
+
+>[!IMPORTANT]
+>
+>Adobe强烈建议在`Stage`之前在&#x200B;**&#x200B;中验证该过程，以便在`Production`中使用它来降低风险并确保稳定性。
+
 
 如果任何检查失败，Cloud Manager将打开以下对话框，其中列出了一个或多个未满足的条件，并禁用&#x200B;**确认**，从而阻止还原。
 
