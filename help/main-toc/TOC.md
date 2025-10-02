@@ -509,7 +509,7 @@ ht-degree: 97%
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
                + [翻译内容](/help/journey-sites/translation/translate-content.md)
                + [发布翻译的内容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hans)
+            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻译多语言 Sites 的内容](/help/sites-cloud/administering/translation/overview.md)
             + [准备内容以进行翻译](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -529,7 +529,7 @@ ht-degree: 97%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + 资产 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
@@ -762,8 +762,8 @@ ht-degree: 97%
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
-      + [简介2](/help/forms/home2.md)
-      + [简介3](/help/forms/home3.md)
+      + [简介 2](/help/forms/home2.md)
+      + [简介 3](/help/forms/home3.md)
       + [顶级 Adobe Experience Manager Forms 创新](/help/forms/latest-innovations.md)
       + [Early Access (EA) 能力](/help/forms/early-access-ea-features.md)
       + [重要更改](/help/forms/notable-changes.md)
