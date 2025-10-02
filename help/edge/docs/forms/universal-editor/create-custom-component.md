@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2103'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -248,7 +248,7 @@ blocks/form/
 
 为组件添加 **card** 类以进行样式化，并为每个单选项添加一张图片；请使用以下示例代码。
 
-**使用card.js为组件设置样式**
+**使用 card.js 设置组件的样式**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**使用cards.css添加运行时行为**
+**使用 cards.css 添加运行时行为**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新 _component-definition.json**：在 `models/_component-definition.json` 中，更新 `id custom-components` 组内的数组，新增一个对象，如下所示：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    这样可为新建的卡片组件提供引用，以便与其他组件一起构建。
+   这样可为新建的卡片组件提供引用，以便与其他组件一起构建。
 
 11. **运行 build:json 脚本**：执行 `npm run build:json`，将所有组件 JSON 定义编译并合并为一个文件，以便服务器提供服务。这将确保新组件的架构包含在合并的输出中。
 
@@ -587,7 +587,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 ## 引用
 
-- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md)：所有字段类型的基本HTML结构和属性。
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md)：所有字段类型的基本 HTML 结构和属性。
 
 - **blocks/form/models/form-components**：OOTB 和自定义组件的属性定义。
 

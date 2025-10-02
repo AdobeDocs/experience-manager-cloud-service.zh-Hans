@@ -1,51 +1,51 @@
 ---
-title: 掌握自适应Forms块字段属性
-description: 使用电子表格和自适应Forms块字段属性更快地制作功能强大的表单！ 本指南列出了EDS Forms Block支持的所有属性。
+title: 掌握自适应表单块字段属性
+description: 使用电子表格和自适应表单块字段属性更快地制作功能强大的表单！本指南列出了 EDS 表单块支持的所有属性。
 feature: Edge Delivery Services
-source-git-commit: ccc6439f68d8199154d4cd664b9cdb6428460a64
-workflow-type: tm+mt
+exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
+source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
+# 自适应表单块字段属性
 
-# 自适应Forms块字段属性
+本文档概述了在 `blocks/form/form.js` 中 JSON 架构如何映射到所渲染的 HTML，重点介绍如何识别和渲染字段、常见模式以及字段特有的差异。
 
-本文档概述了JSON架构如何映射到在`blocks/form/form.js`中渲染的HTML，重点介绍如何识别和渲染字段、常见模式以及特定于字段的差异。
+## 如何识别字段 (`fieldType`)？
 
-## 如何识别字段(`fieldType`)？
+JSON 架构中的每个字段都有一个决定如何渲染该字段的 `fieldType` 属性。`fieldType` 可以是：
 
-JSON架构中的每个字段都有一个`fieldType`属性来确定其呈现方式。 `fieldType`可以是：
+- **一个特定类型**\
+  例如：`drop-down`、`radio-group`、`checkbox-group`、`panel`、`plain-text`、`image`、`heading` 等。
+- **一个有效的 HTML 输入类型**\
+  例如：`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file` 等。
+- **带有 `-input` 后缀的类型**\
+  例如：`text-input`、`number-input` 等。（标准化为基本类型，如 `text`、`number`）。
 
-- **特殊类型**\
-  示例： `drop-down`、`radio-group`、`checkbox-group`、`panel`、`plain-text`、`image`、`heading`等。
-- **有效的HTML输入类型**\
-  示例： `text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file`等。
-- **后缀为`-input`的类型**\
-  示例： `text-input`、`number-input`等。 （已规范化为基类型，如`text`、`number`）。
+如果 `fieldType` 是一个特定类型，就会使用一个&#x200B;**自定义渲染程序**。否则，它会被视为一个&#x200B;**默认的输入类型**。
 
-如果`fieldType`与特殊类型匹配，则使用&#x200B;**自定义渲染器**。 否则，它被视为&#x200B;**默认输入类型**。
+请参阅以下各节，了解每种字段类型的[完整的 HTML 结构和属性](#common-html-structure)。
 
-请参阅以下各节，了解每种字段类型的[完整HTML结构和属性](#common-html-structure)。
+## 字段使用的常见属性
 
-## 字段使用的通用属性
+以下是大多数字段都使用的属性：
 
-以下是大多数字段使用的属性：
-
-- `id`：指定元素ID并支持辅助功能。
-- `name`：为输入、选择或字段集元素定义`name`属性。
-- `label.value`、`label.richText`、`label.visible`：指定标签/图例文本、HTML内容和可见性。
+- `id`：指定元素 ID 并支持无障碍性。
+- `name`：定义输入、选择或字段集元素的 `name` 属性。
+- `label.value`、`label.richText`、`label.visible`：指定标签/图例文本、HTML 内容和可见性。
 - `value`：表示字段的当前值。
-- `required`：添加`required`特性或验证数据。
-- `readOnly`，`enabled`：控制该字段是可编辑的还是禁用的。
+- `required`：添加 `required` 属性或验证数据。
+- `readOnly`、`enabled`：决定这是可编辑的或是禁用的字段。
 - `description`：在字段下方显示帮助文本。
-- `tooltip`：设置输入的`title`属性。
+- `tooltip`：设置输入的 `title` 属性。
 - `constraintMessages`：提供自定义错误消息作为数据属性。
 
-## 通用HTML结构
+## 常见的 HTML 结构
 
-大多数字段都呈现在包含标签和可选帮助文本的包装中。 以下代码片段演示了该结构：
+大多数字段都是包裹在一个包含标签和可选帮助文本的容器中进行渲染。以下代码片段展示了这种结构：
 
 ```html
 <div class="<fieldType>-wrapper field-wrapper field-<name>" data-id="<id>">
@@ -56,59 +56,59 @@ message</div>
 </div>
 ```
 
-对于组（单选框/复选框）和面板，使用带`<fieldset>`的`<legend>`而不是`<div>/<label>`。 帮助文本 <div> 仅在设置了描述时存在。
+对于组（单选按钮/复选框）和面板，会使用 `<legend>` 与 `<fieldset>`，而不是 `<div>/<label>`。帮助文本 <div> 只有在设置了描述的情况下存在。
 
 ## 错误消息显示
 
-错误消息显示在用于帮助文本（动态更新）的相同`.field-description`元素中。
+错误消息显示在 `.field-description` 元素中，这个元素中也显示会动态更新的帮助文本。
 
-**当字段无效时**：
+**如果一个字段无效**：
 
-- 包装器（例如，`.field-wrapper`）被指定为`.field-invalid`类。
-- `.field-description`内容已替换为相应的错误消息。
+- 包装器（例如 `.field-wrapper`）会被指定为 `.field-invalid` 类。
+- `.field-description` 内容会被替换为相应的错误消息。
 
-**字段生效时**：
+**如果字段变成有效**：
 
-- 已删除`.field-invalid`类。
-- `.field-description`将还原为原始帮助文本（如果可用），如果不存在则删除。
+- 就会移除 `.field-invalid` 类。
+- `.field-description` 将恢复为原始帮助文本（如有），或者被移除（如果没有帮助文本）。
 
-可以使用JSON中的`constraintMessages`属性定义自定义错误消息。\
-这些内容在包装上添加为`data-<constraint>ErrorMessage`属性（例如，`data-requiredErrorMessage`）。
+可以使用 JSON 中的 `constraintMessages` 属性来自定义错误消息。\
+这些作为 `data-<constraint>ErrorMessage` 属性添加在包装器上（例如 `data-requiredErrorMessage`）。
 
-## 默认输入类型(HTML输入或`*-input`)
+## 默认输入类型（HTML 输入或 `*-input`）
 
-如果`fieldType`不是特殊类型，则会将其视为标准HTML输入类型或作为`<type>-input`，例如`text`、`number`、`email`、`date`、`text-input`、`number-input`。
+如果 `fieldType` 不是特定类型，就会被视为一个标准 HTML 输入类型或者是 `<type>-input`，例如 `text`、`number`、`email`、`date`、`text-input`、`number-input`。
 
-- 后缀`-input`被去除，基类型被用作输入的`type`属性。
-- 这些类型默认在`renderField()`中处理。
-常用默认输入类型为`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file`等。  它们还接受`text-input`、`number-input`等，这些类型被规范化为基类型。
+- 后缀 `-input` 会去除，基本类型用作此输入的 `type` 属性。
+- 默认情况下，这些类型在 `renderField()` 中处理。
+常见的默认输入类型为 `text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file` 等。  它们也接受 `text-input`、`number-input` 等，这些被标准化为基本类型。
 
-## 默认输入类型的约束
+## 对默认输入类型的约束
 
-约束将根据JSON属性作为属性添加到输入元素中。
+根据 JSON 属性，输入元素中添加了约束属性。
 
-| JSON属性 | HTML属性 | 应用于 |
+| JSON 属性 | HTML 属性 | 应用到 |
 |--------------|---------------|------------|
-| maxLength | maxlength | 文本，电子邮件，密码，电话 |
-| minlength | minlength | 文本，电子邮件，密码，电话 |
-| 模式 | 模式 | 文本，电子邮件，密码，电话 |
+| maxLength | maxlength | 文本、电子邮件、密码、电话 |
+| minLength | minlength | 文本、电子邮件、密码、电话 |
+| 模式 | 模式 | 文本、电子邮件、密码、电话 |
 | 最大值 | 最大 | 数字、范围、日期 |
 | 最小值 | 最小值 | 数字、范围、日期 |
 | 步骤 | 步骤 | 数字、范围、日期 |
 | 接受 | 接受 | 文件 |
 | 多个 | 多个 | 文件 |
-| maxOccure | data-max | 面板 |
-| minOccurs | data-min | 面板 |
+| maxOccur | data-max | 面板 |
+| minOccur | data-min | 面板 |
 
 >[!NOTE]
 >
-> `multiple`是一个布尔属性。 如果为true，则添加`multiple`属性。
+> `multiple` 是一个布尔值属性。如果为真，就会添加 `multiple` 属性。
 
-这些属性由表单渲染器根据字段的JSON定义自动设置。
+表单渲染程序会根据字段的 JSON 定义自动设置这些属性。
 
-## 示例：带有约束的HTML结构
+## 例如：有约束的 HTML 结构
 
-以下示例演示如何使用验证约束和错误处理属性呈现数字字段。
+以下示例展示了如何渲染一个带有验证约束和错误处理属性的数字字段。
 
 ```html
 <div class="number-wrapper field-wrapper field-age" data-id="age"
@@ -125,17 +125,17 @@ placeholder="Enter your age" />
 </div>
 ```
 
-HTML结构的每个部分在数据绑定、验证和显示帮助或错误消息方面都扮演着角色。
+HTML 结构的每个部分都在数据绑定、验证、显示帮助或错误消息方面起到自己的作用。
 
-## 字段特定的属性及其HTML结构
+## 字段特定的属性及其 HTML 结构
 
 ### 下拉面板
 
-**额外属性：**
+**额外的属性：**
 
-- `enum` / `enumNames`：为下拉列表定义选项值及其显示标签。
-- `type`：如果设置为`array`，则启用多项选择。
-- `placeholder`：添加禁用的占位符选项，以便在选择之前引导用户。
+- `enum` / `enumNames`：定义下拉面板的可选值及其显示标签。
+- `type`：在设为 `array` 的情况下会启用多选。
+- `placeholder`：添加一个禁用的占位符选项，在选择之前引导用户。
 
 示例：
 
@@ -156,9 +156,9 @@ data-requiredErrorMessage="This field is required">
 
 ### 纯文本
 
-**额外属性**：
+**额外的属性**：
 
-- `richText`：如果为true，则在段落中呈现HTML。
+- `richText`：如果为真，就在段落中渲染 HTML。
 
 示例：
 
@@ -171,10 +171,10 @@ data-requiredErrorMessage="This field is required">
 
 ### 复选框
 
-**额外属性**：
+**额外的属性**：
 
-- `enum`：定义复选框的选中和取消选中状态的值。
-- `properties.variant / properties.alignment`：指定开关样式复选框的可视样式和对齐方式。
+- `enum`：定义复选框的勾选和取消勾选状态的值。
+- `properties.variant / properties.alignment`：指定开关样式复选框的外观样式和对齐方式。
 
 示例：
 
@@ -195,7 +195,7 @@ data-unchecked-value="off" />
 
 ### 按钮
 
-**额外属性**：
+**额外的属性**：
 
 - `buttonType`：通过设置按钮的类型（按钮、提交或重置）来指定按钮的行为。
 
@@ -210,12 +210,12 @@ data-unchecked-value="off" />
 
 ### 多行输入
 
-**额外属性**：
+**额外的属性**：
 
 - `minLength`：指定在文本或文本区域输入中允许的最小字符数。
-- `maxLength`：指定文本或文本区域输入中允许的最大字符数。
-- `pattern`：定义输入值必须匹配才能被视为有效的正则表达式。
-- `placeholder`：在输入值之前在输入或文本区域中显示占位符文本。
+- `maxLength`：指定在文本或文本区域输入中允许的最大字符数。
+- `pattern`：定义一个正则表达式，输入值必须与其匹配才算有效。
+- `placeholder`：输入框或文本区域中显示的占位符文本，直到用户输入一个值。
 
 示例：
 
@@ -236,14 +236,14 @@ placeholder="Type here..."></textarea>
 
 ### 面板
 
-**额外属性**：
+**额外的属性**：
 
 - `repeatable`：指定面板是否可以动态重复。
-- `minOccur`：设置所需的最小面板实例数。   maxOccur：设置允许的面板实例的最大数量。
-- `properties.variant`：定义面板的可视样式或变量。
-- `properties.colspan`：指定面板在网格布局中跨越的列数。
+- `minOccur`：设置所必需的最小面板实例数。   maxOccur：设置允许的最大面板实例数。
+- `properties.variant`：定义面板的外观样式或变体。
+- `properties.colspan`：指定面板在网格布局中包含的列数。
 - `index`：指示面板在其父容器中的位置。
-- `fieldset`：将相关字段分组到具有图例或标签的`<fieldset>`元素下。
+- `fieldset`：将相关字段分组到一个带有图例或标签的 `<fieldset>` 元素下。
 
 示例：
 
@@ -260,11 +260,11 @@ data-repeatable="true" data-index="0">
 </fieldset>
 ```
 
-### 单选
+### 单选按钮
 
-**额外属性**：
+**额外的属性**：
 
-- `enum`：定义单选字段允许的值集，用作每个单选按钮选项的值属性。
+- `enum`：定义单选按钮字段允许使用的一组值，被用作每个单选按钮选项的值属性。
 
 示例：
 
@@ -280,10 +280,10 @@ data-required="true">
 
 ### 单选按钮组
 
-**额外属性**：
+**额外的属性**：
 
-- `enum`：定义单选按钮组的选项值列表，用作每个单选按钮的值。
-- `enumNames`：为单选按钮提供显示标签，与枚举的顺序匹配。
+- `enum`：定义单选按钮组的选项值列表，被用作每个单选按钮的值。
+- `enumNames`：为单选按钮提供显示标签，与枚举的顺序一致。
 
 示例：
 
@@ -306,12 +306,12 @@ data-required="true">
 
 ### **复选框组**
 
-**额外属性**：
+**额外的属性**：
 
 - `enum`：定义复选框组的选项值列表，用作每个复选框的值。
-- `enumNames`：为复选框提供显示标签，与枚举的顺序匹配。
-- `minItems`：设置必须选择的有效性复选框的最小数目。
-- `maxItems`：设置触发错误之前可选择的复选框的最大数目。
+- `enumNames`：为复选框提供显示标签，与枚举的顺序一致。
+- `minItems`：设置必须为有效性选择的最小复选框数量。
+- `maxItems`：设置不会触发错误的可选择的最大复选框数量。
 
 示例：
 
@@ -335,10 +335,10 @@ data-maxItems="3">
 
 ### 图像
 
-**额外属性**：
+**额外的属性**：
 
-- `value / properties['fd:repoPath']`：定义用于呈现图像的图像源路径或存储库路径。
-- `altText`：为图像提供替换文本（alt属性）以提高可访问性。
+- `value / properties['fd:repoPath']`：定义用于渲染图像的图像源路径或存储库路径。
+- `altText`：提供图像的替换文本（alt 属性）以增强无障碍性。
 
 示例：
 
@@ -353,9 +353,9 @@ data-maxItems="3">
 
 ### 标题
 
-**额外属性**：
+**额外的属性**：
 
-- `value`：指定要显示在标题元素内的文本内容（例如，`<h2>`）。
+- `value`：指定标题元素内要显示的文本内容（例如 `<h2>`）。
 
 示例：
 
@@ -365,7 +365,7 @@ data-maxItems="3">
 </div>
 ```
 
-有关更多详细信息，请参阅`blocks/form/form.js`和`blocks/form/util.js`中的实现。
+有关更多详细信息，请参阅 `blocks/form/form.js` 和 `blocks/form/util.js` 中的实施。
 
 
 <!--Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
@@ -394,4 +394,3 @@ This table details all the properties you can use to customize your Adaptive For
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
 | **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
-

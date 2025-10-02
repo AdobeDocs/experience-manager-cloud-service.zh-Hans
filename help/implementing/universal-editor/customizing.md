@@ -5,9 +5,9 @@ exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 92%
 
 ## 禁用复制和粘贴 {#copy-paste}
 
-某些创作工作流可能需要限制内容作者复制和粘贴组件的能力。 您可以通过添加以下元数据来禁用[复制和粘贴图标](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
+某些创作工作流可能需要限制内容作者的组件复制和粘贴功能。您可以通过添加以下元数据禁用[复制和粘贴图标](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)的功能。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="copy"/>
