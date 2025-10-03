@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 22%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### Experience Manager {#experience-manager}
 
-选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)之类的工具。
+选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之类的工具。
 
 ![“全局导航”按钮](assets/global-navigation.png)
 
@@ -117,7 +117,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ![环境切换器](assets/environment-switcher.png)
 
-对于通用编辑器，[如果您有可用的预览服务，](/help/sites-cloud/authoring/sites-console/previewing-content.md)您还可以选择在标题&#x200B;**产品设置**&#x200B;下的生产环境和预览环境之间进行切换。
+对于通用编辑器，在标题&#x200B;**产品设置**&#x200B;下，有一个选项可在通用编辑器的当前生产版本和即将发布的预览版本之间切换。
 
 ### 通用编辑器工具栏 {#universal-editor-toolbar}
 
@@ -218,7 +218,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 
