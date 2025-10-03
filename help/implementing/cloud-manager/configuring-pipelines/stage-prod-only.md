@@ -4,19 +4,21 @@ description: 了解如何使用专用管道拆分暂存和生产部署。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#staging-production-only-pipelines"
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: f61183c43d9380900b92fe040098e2eb3155979c
+source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 48%
+source-wordcount: '1046'
+ht-degree: 49%
 
 ---
 
 # 仅分离阶段管道和仅生产管道 {#stage-prod-only}
+
+<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
 
 您可以使用专用管道拆分暂存和生产部署。
 
