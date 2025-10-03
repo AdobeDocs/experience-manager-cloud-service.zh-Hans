@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新 _component-definition.json**：在 `models/_component-definition.json` 中，更新 `id custom-components` 组内的数组，新增一个对象，如下所示：
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   这样可为新建的卡片组件提供引用，以便与其他组件一起构建。
+    这样可为新建的卡片组件提供引用，以便与其他组件一起构建。
 
 11. **运行 build:json 脚本**：执行 `npm run build:json`，将所有组件 JSON 定义编译并合并为一个文件，以便服务器提供服务。这将确保新组件的架构包含在合并的输出中。
 
