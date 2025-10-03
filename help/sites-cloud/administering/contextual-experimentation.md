@@ -3,14 +3,14 @@ title: AEM as a Cloud Service中的上下文实验
 description: 了解如何使用试验插件向您的站点添加试验功能。
 feature: Administering
 role: Admin
-source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
+source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
 
-# 概述 {#overview}
+# AEM as a Cloud Service中的上下文实验 {#contextual-experimentation}
 
 >[!NOTE]
 >目前，情景实验功能仅通过Beta版计划提供。 请联系Adobe支持人员或您的客户经理，以获取测试版计划的访问权限。
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ### 试验标识符 {#experiment-identifier}
 
-在开始之前，每个试验都应该有自己的标识符用于跟踪和分析。 一个好的起点，是为您的试验提出一个好的、唯一的标识符，即“试验ID”。 试验通常按线性方式编号，或将其与问题跟踪器或管理系统中的问题ID相关联。 试验ID通常使用项目的前缀，例如：OPT-0134、EXP0004或CCX0076。
+在开始之前，每个试验都应该有自己的标识符用于跟踪和分析。 一个好的起点，是为您的试验提出一个好的、唯一的标识符，即“试验ID”。 试验通常按线性方式编号，或将其与问题跟踪器或管理系统中的问题ID相关联。 试验ID通常使用项目的前缀，例如： `OPT-0134`、`EXP0004`或`CCX0076`。
 
 ### 创建挑战者页面 {#create-challenger-page}
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 对于每个实验，流量会在所有变体（控制体验和挑战体验）之间拆分，并自动设置为均匀分布。 因此，如果你有一个挑战者，那么控制权与挑战者之间就会自动平分秋色。 如果您有两个挑战者，您将自动看到分配给控制的流量以及每个挑战者的流量中的三分之一，以此类推。
 
-您可以通过配置元数据来覆盖流量分摊。 有关如何自定义实验中使用的元数据的详细信息，请参阅以下[页](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+您可以通过配置元数据来覆盖流量分摊。 有关如何自定义实验中使用的元数据的详细信息，请参阅以下[页](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)。
 
 ### 预览和暂存试验变体 {#preview-stage-experiment}
 

@@ -4,7 +4,7 @@ description: 在内容传输工具中查看迁移集的日志
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 91f9bcafc087b6f9329d7a47509cc659714705ff
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 36%
@@ -18,7 +18,7 @@ ht-degree: 36%
 >id="aemcloud_ctt_logs"
 >title="查看日志"
 >abstract="提取或引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 支持部门而纠正任何错误。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hans#troubleshooting" text="疑难解答"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="疑难解答"
 >additional-url="https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html" text="联系 Adobe 支持"
 
 完成每个步骤（提取和摄取）后，检查日志并查找错误。  应立即通过处理所报告的问题或联系 Adobe 支持部门而纠正任何错误。
