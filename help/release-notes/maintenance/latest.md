@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 49%
+source-wordcount: '433'
+ht-degree: 48%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 49%
 
 以下总结了维护版本22758的持续改进，该版本于2025年10月1日公开发布。 上一个维护版本是版本 22450。
 
-激活 2025.10.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2025.10.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强功能 {#enhancements-22758}
 
@@ -31,9 +31,9 @@ ht-degree: 49%
 * GRANITE-56026：改进权限API状态代码响应。
 * GRANITE-61015：已将`org.apache.commons.io.channels`包添加到公共导出列表。
 * GRANITE-61167： Felix日志已更新为最新的OSGI规范。
-* GRANITE-61167：更新Felix依赖项。
+* GRANITE-61167：更新许多Apache Felix依赖项。
 * GRANITE-61169：改进对受保护字符串的检查。
-* GRANITE-61622：更新Sling依赖项。
+* GRANITE-61622：更新许多Apache Sling依赖项。
 * GRANITE-61663：将`com.adobe.granite.repository.indexdefs-1.0.2`添加到快速入门。
 * GRANITE-61811：将`com.adobe.granite.repository-2.0.0`添加到快速入门。
 * SITES-32014：侦听外部事件以更新服务注册。
