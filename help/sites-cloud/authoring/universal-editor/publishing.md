@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 33%
+source-wordcount: '592'
+ht-degree: 32%
 
 ---
 
@@ -43,6 +43,10 @@ ht-degree: 33%
    点按或单击&#x200B;**项目**&#x200B;标题旁边的返回箭头可返回概述。
 
 1. 点按或单击&#x200B;**发布**&#x200B;以进行发布或单击&#x200B;**取消**&#x200B;中止。
+
+>[!TIP]
+>
+>如果您发布到预览环境，[您可以使用Experience Manager标题工具栏中的&#x200B;**帐户**&#x200B;菜单](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)中的选项在预览环境和生产环境之间切换。
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 23%
+source-wordcount: '1953'
+ht-degree: 22%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### Experience Manager {#experience-manager}
 
-选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)之类的工具。
+选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之类的工具。
 
 ![“全局导航”按钮](assets/global-navigation.png)
 
@@ -112,6 +112,12 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 选择代表您的用户的图标以访问您的帐户设置。 如果您尚未配置用户图片，系统会随机分配一个图标。
 
 ![用户属性](assets/user-properties.png)
+
+点击或单击帐户图标会打开一个包含您的用户设置的菜单。 这些设置通常适用于Cloud Manager，其功能在该文档中详细介绍[。](/help/implementing/cloud-manager/navigation.md)
+
+![环境切换器](assets/environment-switcher.png)
+
+对于通用编辑器，[如果您有可用的预览服务，](/help/sites-cloud/authoring/sites-console/previewing-content.md)您还可以选择在标题&#x200B;**产品设置**&#x200B;下的生产环境和预览环境之间进行切换。
 
 ### 通用编辑器工具栏 {#universal-editor-toolbar}
 
@@ -212,7 +218,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 

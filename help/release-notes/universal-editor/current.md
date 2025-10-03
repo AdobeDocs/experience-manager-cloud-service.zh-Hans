@@ -4,10 +4,10 @@ description: 这些是通用编辑器2025.10.02版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 69%
+source-wordcount: '179'
+ht-degree: 65%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 69%
 
 ## 新增功能 {#what-is-new}
 
-* 添加了用于在预览环境和生产环境之间切换的按钮。
+* [在Experience Manager标题工具栏的](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)帐户&#x200B;**菜单中添加了一个选项**，以便在预览环境和生产环境之间切换。
 
 ## 早期采用的功能 {#early-adopter}
 
