@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
 source-wordcount: '2920'
 ht-degree: 71%
@@ -432,7 +432,7 @@ FolderC
 
 * **[发布服务](/help/headless/deployment/architecture.md)** – 完全公开访问
 
-* **[预览服务](/help/headless/deployment/architecture.md)** – 在完全可用之前预览内容
+* **[预览服务](/help/headless/deployment/architecture.md)** — 在完全可用之前预览[内容](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)
 
   >[!CAUTION]
   >

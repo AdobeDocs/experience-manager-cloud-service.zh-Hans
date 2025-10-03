@@ -4,10 +4,10 @@ description: 了解如何通过一系列方法预览您的内容片段。
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 42dbf6138920c4f733d7dc74dfc81504dee1e0ae
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 37%
+source-wordcount: '394'
+ht-degree: 36%
 
 ---
 
@@ -26,6 +26,8 @@ ht-degree: 37%
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
+
+当然，您还可以在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中查看您的片段。
 
 >[!IMPORTANT]
 >
@@ -67,7 +69,7 @@ ht-degree: 37%
 
 ## 预览实例 {#preview-instance}
 
-您可以&#x200B;**发布**&#x200B;和&#x200B;**取消发布**，将片段发布到预览实例（以及发布实例）。
+您可以&#x200B;**发布**&#x200B;和&#x200B;**取消发布**，将片段发布到您的&#x200B;**[预览服务](/help/headless/deployment/architecture.md)**（以及您的发布实例）。
 
 您可以从编辑器或控制台发布片段。
 
