@@ -1,15 +1,14 @@
 ---
 title: AEM as a Cloud Service中的上下文实验
-description: 了解如何使用试验插件为您的站点添加试验功能。
+description: 了解如何使用试验插件向您的站点添加试验功能。
 feature: Administering
 role: Admin
-source-git-commit: 1bb86516328d1405c1761f3c8b0494cc9cb64553
+source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # 概述 {#overview}
 
