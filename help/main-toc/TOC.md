@@ -1206,7 +1206,7 @@ ht-degree: 97%
       + 创作{#authoring}
          + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/authoring.html?lang=zh-hans)
          + [Markdown 编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/markdown.html?lang=zh-hans)
-      + [预览片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
+      + [预览片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=zh-Hans)
       + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/analysis.html?lang=zh-hans)
       + [JSON 预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-hans)
    + 内容片段选择器 {#content-fragment-selector}

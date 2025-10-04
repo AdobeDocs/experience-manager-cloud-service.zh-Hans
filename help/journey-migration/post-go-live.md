@@ -61,7 +61,7 @@ Developer Console中提供了调试AEM as a Cloud Service开发人员环境的�
 >id="aemcloud_golive_support"
 >title="帮助与支持"
 >abstract="请联系 Adobe 的 AEM 支持团队，获取说明或解决任意问题。"
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 支持"
+>additional-url="https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 支持"
 
 如果您对Cloud Service的访问权限存有任何疑问，请联系您的Adobe代表或[Experience Cloud支持](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)以了解更多详细信息。
 
