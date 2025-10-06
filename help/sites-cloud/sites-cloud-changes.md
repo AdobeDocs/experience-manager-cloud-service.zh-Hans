@@ -5,10 +5,10 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 100%
+source-wordcount: '526'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,11 @@ AEM Sites as a Cloud Service 中的更改和补充如下所示：
 * 移动页面
 * 转出页面
 
-此类操作的发起者可以在 `/mnt/overlay/dam/gui/content/asyncjobs.html` 上的新 UI 中检查其状态。
+<!--
+The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+-->
+
+您可以从[后台操作仪表板](/help/operations/asynchronous-jobs.md)查看异步作业的状态。
 
 >[!NOTE]
 >
