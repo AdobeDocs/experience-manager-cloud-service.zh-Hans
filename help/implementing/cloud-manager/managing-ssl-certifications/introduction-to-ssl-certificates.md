@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -156,7 +156,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PE
 
 ## 已安装SSL证书数量的限制 {#limitations}
 
-在任何给定时间，Cloud Manager最多支持50个已安装的证书。 这些证书可以与程序中的一个或多个环境相关联，并且还包括任何过期的证书。
+在任何给定时间，Cloud Manager最多支持70个已安装的证书。 这些证书可以与程序中的一个或多个环境相关联，并且还包括任何过期的证书。
 
 如果您已达到限制，请检查您的证书并考虑删除任何过期的证书。 或者，在同一证书中对多个域进行分组，因为一个证书可以覆盖多个域（最多100个SAN）。
 
