@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 105eaf079447f6e0e4829d5f9e01893b8251403f
+source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
 workflow-type: tm+mt
-source-wordcount: '6823'
+source-wordcount: '6830'
 ht-degree: 97%
 
 ---
@@ -164,7 +164,7 @@ ht-degree: 97%
          + [2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [&#x200B; 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [ 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -237,6 +237,7 @@ ht-degree: 97%
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
    + 通用编辑器发行说明 {#universal-editor}
       + [通用编辑器当前发行说明](/help/release-notes/universal-editor/current.md)
+      + [预览通用编辑器的发行说明](/help/release-notes/universal-editor/preview.md)
       + 2025 {#2025}
          + [2025.09.25发行说明](/help/release-notes/universal-editor/2025/2025-09-25.md)
          + [2025.09.18发行说明](/help/release-notes/universal-editor/2025/2025-09-18.md)
@@ -442,7 +443,7 @@ ht-degree: 97%
          + [管理启动项中的页面](/help/sites-cloud/authoring/launches/managing-pages.md)
          + [编辑启动项](/help/sites-cloud/authoring/launches/editing.md)
          + [使用回溯预览启动项](/help/sites-cloud/authoring/launches/preview.md)
-         + [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)
+         + [推广发布项](/help/sites-cloud/authoring/launches/promoting.md)
       + 工作流 {#workflows}
          + [使用工作流](/help/sites-cloud/authoring/workflows/overview.md)
          + [将工作流应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
@@ -512,7 +513,7 @@ ht-degree: 97%
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
                + [翻译内容](/help/journey-sites/translation/translate-content.md)
                + [发布翻译的内容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hans)
+            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻译多语言 Sites 的内容](/help/sites-cloud/administering/translation/overview.md)
             + [准备内容以进行翻译](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -532,7 +533,7 @@ ht-degree: 97%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [上下文试验](/help/sites-cloud/administering/contextual-experimentation.md)
 + 资产 {#assets}
@@ -541,7 +542,7 @@ ht-degree: 97%
    + [[!DNL Assets] 架构](/help/assets/architecture.md)
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资产微服务概述](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
+   + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [启用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -968,7 +969,7 @@ ht-degree: 97%
       + [自定义 HTML5 Forms 的错误消息](/help/forms/customzing-errors-html5-forms.md)
       + [将 HTML5 Forms 保存为草稿](/help/forms/saving-html5-form-draft.md)
       + [为 HTML5 Forms 启用日志记录功能](/help/forms/enable-logs.md)
-      + [调试 HTML5 Forms &#x200B;](/help/forms/debug.md)
+      + [调试 HTML5 Forms ](/help/forms/debug.md)
       + [HTML5 Forms 的脚本支持](/help/forms/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
    + 交互式通信 {#interactive-communication}
@@ -1206,7 +1207,7 @@ ht-degree: 97%
       + 创作{#authoring}
          + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/authoring.html?lang=zh-hans)
          + [Markdown 编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/markdown.html?lang=zh-hans)
-      + [预览片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=zh-Hans)
+      + [预览片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/analysis.html?lang=zh-hans)
       + [JSON 预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-hans)
    + 内容片段选择器 {#content-fragment-selector}
