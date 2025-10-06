@@ -4,18 +4,22 @@ description: 了解规则编辑器中的调用服务的最新增强功能，包�
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
-keywords: 在规则编辑器中集成API，调用服务增强功能
+keywords: 在规则编辑器中集成 API，调用服务增强功能
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 3%
 
 ---
 
 # 在规则编辑器中集成API
 
-<span>规则编辑器中的Integrating API位于早期采用程序程序下。 您可以从官方电子邮件ID写入`aem-forms-ea@adobe.com`以加入早期采用者计划并请求访问功能。</span>
+<span>规则编辑器中的Integrating API位于早期采用程序程序下。 您可以通过您的官方电子邮件 ID 向 `aem-forms-ea@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。</span>
+
+>[!NOTE]
+>
+> 可视规则编辑器支持在基于核心组件和Edge Delivery Services Forms的自适应Forms中集成API。
 
 自适应Forms中的可视规则编辑器支持直接API集成，而无需创建表单数据模型。 您可以通过输入API URL（以JSON格式）或通过cURL命令导入配置来连接到API端点。 集成后，**调用服务**&#x200B;操作可用于调用API。
 
@@ -36,7 +40,7 @@ ht-degree: 0%
 | **复杂性** | 设置工作量更大（需要映射和配置） | 简单而轻量 |
 | **最适合** | 具有多种表单的企业或大规模用例 | 小型表单、原型或一次性API调用 |
 
-## API集成配置
+## API 集成配置
 
 以下屏幕截图显示API集成配置窗口：
 
