@@ -4,7 +4,7 @@ description: 了解如何使用AEM Developer Tools for Eclipse，这是一个基
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-_适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)的Eclipse插件的Eclipse插件。
+_适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling[的](https://sling.apache.org/documentation/development/ide-tooling.html)Eclipse插件的Eclipse插件。
 
 它提供了多项功能，可简化AEM的开发：
 
@@ -32,7 +32,7 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Ap
 在使用AEM Developer Tools之前，您需要：
 
 * 下载并安装适用于Enterprise Java™开发人员的[Eclipse IDE](https://www.eclipse.org/downloads/packages/)。
-* 按照[Eclipse常见问题解答](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)中的说明，通过编辑`eclipse.ini`配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
+* 按照`eclipse.ini`Eclipse常见问题解答[中的说明，通过编辑](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
 
 >[!NOTE]
 >
@@ -42,7 +42,10 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Ap
 
 当您满足上述[要求](#requirements)后，可以按如下方式安装插件：
 
-1. 打开[AEM Developer Tools网站](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip)。<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. 打开[AEM开发人员工具网站](https://eclipse.adobe.com/)。
+
+<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
+<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. 复制&#x200B;**安装链接**。
 
@@ -126,8 +129,8 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;附带了一个�
 
 1. 按照说明创建[示例多模块项目](#sample-multi-module-project)，您已为您创建了以下项目，这些项目允许健康地分离问题：
 
-   * `/apps`和`/etc`内容的`PROJECT.ui.apps`
-   * 已创作的`/content`的`PROJECT.ui.content`
+   * `PROJECT.ui.apps`和`/apps`内容的`/etc`
+   * 已创作的`PROJECT.ui.content`的`/content`
    * Java™捆绑包`PROJECT.core`(当您想要添加Java™代码时，这些捆绑包会变得很有趣)
    * 集成测试的`PROJECT.it.launcher`和`PROJECT.it.tests`
 
