@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在规则编辑器中集成 API，调用服务增强功能
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1027'
 ht-degree: 3%
 
 ---
@@ -19,17 +19,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 可视规则编辑器支持在基于核心组件和Edge Delivery Services Forms的自适应Forms中集成API。
+> 可视规则编辑器支持在基于核心组件的自适应Forms中集成API以及在通用编辑器[中创作的](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)Edge Delivery Services Forms。
 
 自适应Forms中的可视规则编辑器支持直接API集成，而无需创建表单数据模型。 您可以通过输入API URL（以JSON格式）或通过cURL命令导入配置来连接到API端点。 集成后，**调用服务**&#x200B;操作可用于调用API。
 
 表单字段可以直接映射到API配置中定义的输入参数。 同样，可以使用相应API响应的&#x200B;**事件有效负载**&#x200B;选项将输出参数映射到表单字段。
 
 此外，可视规则编辑器允许您在调用服务时定义&#x200B;**success**&#x200B;和&#x200B;**failure处理程序**。 成功处理程序指定在成功API调用后要执行的操作，而失败处理程序定义表单在错误发生时应如何响应。
-
->[!NOTE]
->
-> 规则编辑器中的API集成也适用于在通用编辑器中创作的[Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。
 
 ## 比较： API集成方法
 
