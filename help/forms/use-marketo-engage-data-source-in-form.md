@@ -5,10 +5,10 @@ keywords: 在自适应Forms中使用Marketo Engage数据源，如何将Marketo�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 7%
+source-wordcount: '764'
+ht-degree: 8%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 7%
 在创建云服务配置以将Marketo Engage与现有AEM Forms集成后，您可以配置表单的数据源。
 
 通过配置数据集成，用户可连接到各种数据源或架构。 与Marketo Engage数据源集成并在不同的表单中使用它有助于进行数据操作。 要探索自适应表单支持的现成数据源，请参阅[配置数据源](/help/forms/configure-data-sources.md)文章。
-
-## 为表单配置Marketo Engage数据源的注意事项
-
-为表单配置Marketo Engage数据源时的注意事项包括：
-
-* 无法将Edge Delivery Services Forms与Marketo Engage连接。
 
 ## 将Marketo Engage数据源用于表单的先决条件
 

@@ -5,10 +5,10 @@ keywords: 如何将Marketo实例与表单连接？，将表单连接到Marketo�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 7%
+source-wordcount: '1048'
+ht-degree: 8%
 
 ---
 
@@ -18,15 +18,9 @@ ht-degree: 7%
 
 ![工作流](/help/forms/assets/workflow-marketo-4.png)
 
-在创建云服务配置以将Marketo Engage与AEM Forms集成后，您可以配置自适应表单以与[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/home)集成。
+在创建云服务配置以将Marketo Engage与AEM Forms集成后，您可以配置自适应表单以与[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)集成。
 
 您可以使用表单向导将Marketo Engage连接到自适应表单，该向导通过指导您完成每个步骤来简化配置过程。 其中包括选择模板、样式和数据字段，以及设置数据映射，以确保您的表单在创建后可以与Marketo Engage通信。 使用表单向导，您还可以配置自适应表单，以在提交时直接将数据提交到Adobe Marketo Engage。
-
-## 为表单配置Marketo Engage数据源的注意事项
-
-为表单配置Marketo Engage数据源时的注意事项包括：
-
-* 无法将Edge Delivery Services Forms与Marketo Engage连接。
 
 ## 将Marketo Engage与表单连接的先决条件
 
@@ -180,7 +174,7 @@ ht-degree: 7%
 
 ## 下一步
 
-您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
+您还可以将自适应表单与[Munchkin库](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)连接以跟踪访问次数、点击次数和表单提交次数。
 
 ## 相关文章
 
