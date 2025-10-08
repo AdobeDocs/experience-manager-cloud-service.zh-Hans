@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
+source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
 workflow-type: tm+mt
 source-wordcount: '2495'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -203,7 +203,7 @@ RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有�
 ![撤消图标](assets/undo.png)
 ![重做图标](assets/redo.png)
 
-* 可以执行撤消和重做以在上下文中完成的编辑、通过“属性”面板完成的编辑，以及添加、复制、移动和删除块。
+* 撤销和重做适用于上下文中的编辑、通过“属性”面板进行的编辑，以及添加、复制、移动和删除区块等操作。
 * 撤销与重做功能仅限于当前浏览器会话内使用。
 
 >[!TIP]
@@ -212,7 +212,7 @@ RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有�
 
 ### 复制并粘贴 {#copy-paste}
 
-您可以复制和粘贴[容器中的组件。](/help/implementing/universal-editor/field-types.md#container)只有在同一页面中且[target容器允许粘贴该组件时，才能执行此操作。](/help/implementing/universal-editor/filtering.md)
+可以在同一浏览器选项卡上复制和粘贴[容器](/help/implementing/universal-editor/field-types.md#container)中的组件。 仅当[目标容器未设置任何筛选器时才能执行此操作。](/help/implementing/universal-editor/filtering.md)
 
 ![复制图标](assets/copy.png)
 ![粘贴图标](assets/paste.png)

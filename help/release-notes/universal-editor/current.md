@@ -4,10 +4,10 @@ description: 这些是通用编辑器2025.10.02版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 56%
+source-wordcount: '189'
+ht-degree: 51%
 
 ---
 
@@ -35,10 +35,6 @@ ht-degree: 56%
 ### 新 RTE {#new-rte}
 
 现在，右侧面板中提供新的 ProseMirror RTE，在链接对话框中引入了页面选取器功能。[此 RTE 提供灵活的配置选项。](/help/implementing/universal-editor/configure-rte.md)
-
-### 跨页面复制和粘贴 {#copy-paste}
-
-现在，除了在同一页面内进行复制和粘贴外，还可以跨页面进行。
 
 ## 其他改进 {#other-improvements}
 

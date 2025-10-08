@@ -4,9 +4,9 @@ description: Adobe 继续支持页面编辑器，但通用编辑器将为您的�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
-workflow-type: ht
-source-wordcount: '1068'
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
+workflow-type: tm+mt
+source-wordcount: '1067'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Adobe 继续支持页面编辑器，但通用编辑器将为您的新项目带�
 | [生成变体](/help/generative-ai/generate-variations.md) | [!BADGE 不可用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | [可作为扩展提供](/help/implementing/universal-editor/extending.md) |
 | 插入新区块 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | 将区块重新排序 | [!BADGE 可用]{type=Positive} | 可以通过在上下文中拖放来实现，但不能在“树形视图”侧边面板中这样操作 | [!BADGE 可用]{type=Positive} | 可以通过在“树形视图”侧边面板中拖放来实现，但在上下文中还不行（已计划） |
-| 剪切/复制粘贴区块 | [!BADGE 可用]{type=Positive} |  | [!BADGE 不可用]{type=Negative} | 已计划 |
+| 剪切/复制粘贴区块 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | 应用样式 | [!BADGE 可用]{type=Positive} | 可以使用[样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)将样式应用在组件上。 | [!BADGE 可用]{type=Positive} | 可以使用常规组件（或内容片段）属性应用样式。通用编辑器中没有相同的样式选取器，但是通过一个多选小组件可以实现非常相似的用户体验。 |
 | 应用布局 | [!BADGE 可用]{type=Positive} | 网站必须实施 [AEM 响应式网格](/help/implementing/developing/introduction/responsive-design.md)，使作者能够跨三个预定义的断点调整组件大小。 | [!BADGE 可用]{type=Positive} | 可以使用常规组件（或内容片段）属性应用布局，但不支持响应式网格。 |
 | 撤销-重做 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
