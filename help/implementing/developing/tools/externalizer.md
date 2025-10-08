@@ -1,19 +1,19 @@
 ---
-title: 将URL外部化
+title: 外部化 URL
 description: 外部化器是一种OSGi服务，允许您以编程方式将资源路径转换为外部和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
-# 将URL外部化 {#externalizing-urls}
+# 外部化 URL {#externalizing-urls}
 
-在AEM中，**外部化器**&#x200B;是一种OSGi服务，通过为路径添加预配置的DNS作为前缀，该服务允许您以编程方式将资源路径（例如`/path/to/my/page`）转换为外部和绝对URL（例如`https://www.mycompany.com/path/to/my/page`）。
+在AEM中，**外部化器**&#x200B;是一种OSGi服务，通过为路径添加预配置的DNS作为前缀，可按编程方式将资源路径（例如`/path/to/my/page`）转换为外部和绝对URL（例如`https://www.mycompany.com/path/to/my/page`）。
 
 由于AEM as a Cloud Service实例无法知道其外部可见URL，并且有时必须在请求范围之外创建链接，因此此服务提供了一个中心位置来配置并构建这些外部URL。
 
@@ -42,7 +42,11 @@ ht-degree: 0%
 >
 >将自定义`com.day.cq.commons.impl.ExternalizerImpl.cfg.json`文件部署到省略了这些现成域映射的AEM as a Cloud Service可能会导致应用程序出现不可预测的行为。
 
-要覆盖`preview`和`publish`值，请使用Cloud Manager环境变量，如[为AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)配置OSGi并设置预定义的`AEM_CDN_DOMAIN_PUBLISH`和`AEM_CDN_DOMAIN_PREVIEW`变量一文中所述。
+请勿在Cloud Manager中定义或覆盖`EXTERNALIZER`环境变量（例如，`AEM_EXTERNALIZER_AUTHOR`）。 相反，如果您需要覆盖`publish`或`preview`域值，请定义并使用`AEM_CDN_DOMAIN_PUBLISH`和`AEM_CDN_DOMAIN_PREVIEW`环境变量。 启动期间，这些变量将自动分配到外部化器配置中的相应字段。
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## 配置Externalizer服务 {#configuring-the-externalizer-service}
 
@@ -50,7 +54,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->与为AEM as a Cloud Service[&#128279;](/help/implementing/deploying/overview.md#osgi-configuration)应用任何OSGi配置时一样，应在本地开发人员实例上执行以下步骤，然后提交到项目代码以进行部署。
+>与为AEM as a Cloud Service[应用任何](/help/implementing/deploying/overview.md#osgi-configuration)OSGi配置时一样，应在本地开发人员实例上执行以下步骤，然后提交到项目代码以进行部署。
 
 要为Externalizer服务定义域映射，请执行以下操作：
 
@@ -79,11 +83,11 @@ ht-degree: 0%
 
    * **`server`**&#x200B;是主机名（域名或ip地址）。
    * **`port`** （可选）是端口号。
-   * 仅当AEM作为Web应用程序安装在不同的上下文路径下时，才会设置&#x200B;**`contextpath`**（可选）。
+   * 仅当AEM作为Web应用程序安装在其他上下文路径下时，才会设置&#x200B;**`contextpath`**（可选）。
 
    例如：`production https://my.production.instance`
 
-   以下映射名称是预定义名称，必须始终设置为AEM依赖于它们：
+   以下映射名称是预定义名称，必须始终进行设置，因为AEM依赖于这些名称：
 
    * `local` — 本地实例
    * `author` — 创作系统DNS
@@ -101,7 +105,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->不应在HTML的上下文中创建绝对链接。 因此，在这种情况下，请勿使用此实用程序。
+>在HTML上下文中不应创建绝对链接。 因此，在这种情况下，请勿使用此实用程序。
 
 * **要将具有“发布”域的路径外部化：**
 
