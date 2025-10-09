@@ -3,10 +3,10 @@ title: 在Content Hub中管理收藏集
 description: 了解如何在Content Hub中管理收藏集
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 3%
+source-wordcount: '1327'
+ht-degree: 2%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 3%
 * **下载**：下载资源。
 * **移除**：从收藏集中移除特定资产。
 * **删除**：删除整个收藏集。
+* **固定/取消固定**：固定或取消固定收藏集。
+* **收藏**：将收藏集标记为收藏。
 
 它帮助用户轻松访问和管理[!DNL Content Hub]中可用的各种资源。
 
@@ -40,7 +42,7 @@ ht-degree: 3%
 
 执行以下步骤可在创建收藏集时控制访问权限：
 
-1. 转到&#x200B;**[!DNL Collections]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL 创建收藏集]**。 此时将显示“新建收藏集”窗口。
+1. 转到&#x200B;**[!DNL Collections]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL 创建收藏集]**。 将出现新的“收藏集”窗口。
 
 1. 为集合添加&#x200B;**[!UICONTROL 标题]**&#x200B;和&#x200B;**[!UICONTROL 描述]**。
 
@@ -87,7 +89,7 @@ ht-degree: 3%
 
 ### 筛选收藏集视图 {#filter-collections-view}
 
-通过Content Hub，可筛选收藏集视图，根据您的偏好缩小选项范围，轻松找到所需内容。 确保Content Hub[&#128279;](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的配置。
+通过Content Hub，可筛选收藏集视图，根据您的偏好缩小选项范围，轻松找到所需内容。 确保Content Hub[中集合的](configure-content-hub-ui-options.md#configure-collections-content-hub)配置。
 
 要筛选收藏集视图，请转到&#x200B;**[!DNL Collections]**&#x200B;选项卡并导航到收藏集下拉列表。 从以下选项中进行选择：
 
@@ -134,7 +136,7 @@ ht-degree: 3%
 
 ## 共享收藏集中可用的资产 {#share-assets-available-within-collection}
 
-您还可以共享收藏集中可用的资产。 确保在Content Hub[&#128279;](configure-content-hub-ui-options.md#enable-public-link-sharing)中启用公共链接共享。 导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;选项卡。 选择收藏卡上的![共享图标](assets/share.svg)图标。 将复制共享链接。 您可以与收件人共享复制的链接。 了解有关[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资产的更多信息。
+您还可以共享收藏集中可用的资产。 确保在Content Hub[中](configure-content-hub-ui-options.md#enable-public-link-sharing)启用公共链接共享。 导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;选项卡。 选择收藏卡上的![共享图标](assets/share.svg)图标。 将复制共享链接。 您可以与收件人共享复制的链接。 了解有关[在 [!DNL Content Hub]](share-assets-content-hub.md)中共享资产的更多信息。
 
 Content Hub收藏集提供了全面的治理工具以实现有效的资产管理，包括可自定义的共享权限和协作功能。 从只读访问到完全管理控制，这些设置支持对资产分发进行精细管理。 单独或作为收藏集的一部分共享资产时，访问范围由分配给用户的收藏集当前访问级别确定。 或者，您无法共享专用收藏集。
 
@@ -163,5 +165,39 @@ Content Hub收藏集提供了全面的治理工具以实现有效的资产管理
 
 只有管理员和创建者才能删除收藏集。 要删除收藏集，请导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;选项卡，然后单击需要删除的收藏集。 单击![删除图标](assets/delete-icon.svg)图标可删除收藏集。
 
+## 固定或取消固定收藏集 {#pin-unpin-collection}
 
+Content Hub管理员可以在Content Hub中固定收藏集以进行快速访问。 固定的收藏集会显示在“收藏集”主页上的专用“固定”部分中，这样可更轻松地使重要收藏集保持在可触及的范围之内。 要快速访问，可以通过执行以下步骤来固定或取消固定集合：
+
+1. 浏览要固定或取消固定的收藏集。
+
+1. 单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)并选择&#x200B;**[!UICONTROL 固定到快速访问]**。 将出现一个确认框。
+
+   ![固定收藏集](assets/pin-collection.png)
+
+1. 单击&#x200B;**[!UICONTROL 固定]**&#x200B;以确认。 固定专用收藏集时，将显示警告消息。
+
+   ![确认PIN收藏集](assets/confirm-pin-collection.png)
+
+   固定收藏集显示在顶部以供快速访问。 或者，若要取消固定收藏集，请单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)，然后选择&#x200B;**[!UICONTROL 取消固定]**。
+
+   ![查看固定收藏集](assets/pinned-collections.png)
+
+## 将收藏集标记为收藏 {#favorite-collection}
+
+您可以在Content Hub中将收藏集标记为收藏，使其更易于组织和检索。 添加收藏后，可以从Content Hub主页的“收藏夹”选项卡中方便地找到您收藏的收藏集。 此外，您还可以在“收藏夹”中搜索资产。 要将收藏集标记为收藏，请执行以下步骤：
+
+1. 浏览要固定或取消固定的收藏集。
+
+1. 单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)，然后选择&#x200B;**[!UICONTROL 添加到收藏夹]**&#x200B;以将收藏集标记为收藏夹。
+
+   ![将收藏集标记为收藏](assets/mark-favorite-collection.png)
+
+   标记为收藏的收藏集现在显示在&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;选项卡下。 或者，您也可以从&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;中删除收藏集。 为此，请单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)，然后选择&#x200B;**[!UICONTROL 从收藏夹中删除]**。
+
+   ![删除收藏集作为收藏](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[固定或取消固定收藏集](#pin-unpin-collection)和[将收藏集标记为收藏](#favorite-collection)是有限可用性功能。 您可以创建并提交Adobe客户支持案例，以便为您的部署启用它们。
 
