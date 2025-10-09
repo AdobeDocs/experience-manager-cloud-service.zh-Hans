@@ -3,7 +3,7 @@ title: 在Content Hub中管理收藏集
 description: 了解如何在Content Hub中管理收藏集
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -199,5 +199,5 @@ Content Hub管理员可以在Content Hub中固定收藏集以进行快速访问�
 
 >[!NOTE]
 >
->[固定或取消固定收藏集](#pin-unpin-collection)和[将收藏集标记为收藏](#favorite-collection)是有限可用性功能。 您可以创建并提交Adobe客户支持案例，以便为您的部署启用它们。
+>[固定或取消固定收藏集](#pin-unpin-collection)和[将收藏集标记为收藏](#favorite-collection)是有限可用性功能。 您可以[创建并提交](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)一个Adobe客户支持案例，以便为您的部署启用它们。
 
