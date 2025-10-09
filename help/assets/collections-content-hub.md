@@ -3,9 +3,9 @@ title: 在Content Hub中管理收藏集
 description: 了解如何在Content Hub中管理收藏集
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -187,13 +187,13 @@ Content Hub管理员可以在Content Hub中固定收藏集以进行快速访问�
 
 您可以在Content Hub中将收藏集标记为收藏，使其更易于组织和检索。 添加收藏后，可以从Content Hub主页的“收藏夹”选项卡中方便地找到您收藏的收藏集。 此外，您还可以在“收藏夹”中搜索资产。 要将收藏集标记为收藏，请执行以下步骤：
 
-1. 浏览要固定或取消固定的收藏集。
+1. 浏览要标记为收藏的收藏集。
 
 1. 单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)，然后选择&#x200B;**[!UICONTROL 添加到收藏夹]**&#x200B;以将收藏集标记为收藏夹。
 
    ![将收藏集标记为收藏](assets/mark-favorite-collection.png)
 
-   标记为收藏的收藏集现在显示在&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;选项卡下。 或者，您也可以从&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;中删除收藏集。 为此，请单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)，然后选择&#x200B;**[!UICONTROL 从收藏夹中删除]**。
+   标记为收藏夹的收藏集现在显示在&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;选项卡下。 或者，您也可以从&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;中删除收藏集。 为此，请单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)，然后选择&#x200B;**[!UICONTROL 从收藏夹中删除]**。
 
    ![删除收藏集作为收藏](assets/remove-favorite-collection.png)
 
