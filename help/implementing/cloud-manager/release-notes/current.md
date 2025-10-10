@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f0b28245213d77c23259fb753376a6670b408e5e
+source-git-commit: 673e6a2403026e33c3bbd225b7296a1fb8877404
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 61%
+source-wordcount: '1318'
+ht-degree: 97%
 
 ---
 
@@ -21,58 +21,62 @@ ht-degree: 61%
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service中Cloud Manager 2025.10.0的发布日期是2025年10月2日星期四。
+AEM as a Cloud Service 中的 Cloud Manager 2025.10.0 的发布日期是 2025 年 10 月 2 日星期四。
 
-下一个计划发布于2025年11月6日星期四。
+下一个版本计划于 2025 年 11 月 6 日星期四发布。
 
 ## 新增功能 {#what-is-new}
 
-* **AEM云运行状况评估服务**
+* **专用仅暂存和仅生产部署管道**
 
-  Adobe引入了AEM云运行状况评估服务，这是一个自动的非侵入性检查工具，可让您的AEM as a Cloud Service环境保持优化、安全并与最佳实践保持一致。
+  Cloud Manager现在提供了专用的仅限暂存和仅限生产的部署管道，从而提供了更大的灵活性，可以单独管理到暂存和生产环境的部署。 查看[拆分仅阶段管道和仅生产管道](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)。
+
+* **AEM 云健康评估服务**
+
+  Adobe 引入了 AEM 云健康评估服务，这是一个自动的非侵入性检查工具，可让您的 AEM as a Cloud Service 环境保持优化、安全并与最佳做法保持一致。
 
   此服务将执行以下操作：
 
    * 扫描环境以发现性能瓶颈、效率低下和潜在风险。
-   * 分析内容结构（Blueprint、活动副本）和自定义配置。
-   * 标识过时的依赖项(AEM SDK、第三方库)。
+   * 分析内容结构（Blueprint、Live Copy）和自定义配置。
+   * 标识过时的依赖项（AEM SDK、第三方库）。
    * 标记代码质量问题（注释错误、模式效率低下）。
-   * 通过功能板（如&#x200B;**操作中心**）提供可操作指导。
-   * 通过早期问题检测和补救支持主动优化。
+   * 通过仪表板（如&#x200B;**操作中心**）提供可操作指导。
+   * 通过早期问题检测和修复支持主动优化。
 
-  团队可以持续监控和改进其AEM环境，以实现更平稳的性能、更强的安全性和长期可维护性。
+  团队可以持续监测并改进其 AEM 环境，实现更平稳的性能、更强的安全性和长期可维护性。
 
-  请参阅[生产和暂存环境的运行状况评估](/help/implementing/cloud-manager/reports/report-health-assessment.md)。
+  请参阅[生产和暂存环境的健康评估](/help/implementing/cloud-manager/reports/report-health-assessment.md)。
 
 * **配置管道支持**
 
-  现在，使用 Edge Delivery Services 构建的站点支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理CDN配置等设置，包括流量筛选规则和源选择器。 请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
+  现在，使用 Edge Delivery Services 构建的网站支持配置管道，将此功能扩展到云服务环境之外。您可以使用&#x200B;**配置管道**&#x200B;来管理 CDN 配置等设置，包括流量过滤规则和源选择器。请参阅[受支持的配置](/help/operations/config-pipeline.md#configurations)。
 
-  Edge Delivery配置管道还通过Cloud Manager管道变量支持密钥。
+  Edge Delivery 配置管道同样支持通过 Cloud Manager 管道变量管理密钥。
 
-  请参阅[添加Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
+  请参阅[添加 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 
-* **域映射 — CDN设置对话框已简化**
+* **域映射——CDN 设置对话框已简化**
 
-  Cloud Manager简化了&#x200B;**将域映射到CDN**&#x200B;流程，以减少混淆并加快配置。 该对话框现在强调&#x200B;**Adobe托管的CDN**（带有“推荐”徽章）。
+  Cloud Manager 简化了&#x200B;**将域映射到 CDN** 的流程，以减少混淆并加快配置速度。该对话框现在强调 **Adobe 托管的 CDN**（带有“推荐”徽章）。
 
-  ![选中Adobe托管的CDN单选按钮后，将“域映射到CDN”对话框](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)。
+  ![“将域映射到 CDN”对话框，其中“Adobe 托管的 CDN”单选按钮已被选中](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)。
 
   请参阅[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
-  该对话框还为&#x200B;**其他CDN提供商**&#x200B;卡提供单个简明的核对清单，重点内容为包含以下内容的指导性内容：
+  该对话框还为&#x200B;**其他 CDN 提供商**&#x200B;信息卡提供单个简明的核对清单，重点突出操作指引内容，具体包括：
 
-   * 将您的CDN源指向`publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`。
-   * 设置&#x200B;**主机/SNI**&#x200B;以转发原始主机。
-   * 添加`X-AEM-Edge-Key`(在Cloud Manager中部署该键后)。
-   * 将`X-Forwarded-Host`设置为您的面向客户的域。
-   * 在访问AEM之前清除其他`X-Forwarded-*`标头。
+   * 将您的 CDN 源指向 `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`。
+   * 设置&#x200B;**主机/SNI** 以转发原始主机。
+   * 添加 `X-AEM-Edge-Key`（在 Cloud Manager 中部署该键后）。
+   * 将 `X-Forwarded-Host` 设置为面向客户的域。
+   * 在访问 AEM 之前清除其他 `X-Forwarded-*` 标头。
 
-  ![选择“将域映射到CDN”对话框中的“其他CDN提供商”单选按钮](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
+  ![“将域映射到 CDN”对话框，其中“其他 CDN 提供商”单选按钮已被选中](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
 
-  <!-- (no redundant `Origin` field or "Learn more" clutter) -->随附的页脚提供了两个有用的链接：主要CDN的配置示例以及指向完整文档的链接。 单击“我已配置我的CDN”的单个确认按钮，即可完成流程。
+  <!-- (no redundant `Origin` field or "Learn more" clutter) -->随附的页脚提供了两个有用的链接：主要 CDN 的示例配置以及完整文档的链接。单击确认按钮“我配置了 CDN”即可完成流程。
 
-  查看AEM as a Cloud Service[中的](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)CDN。
+  请参阅 [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)。
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -92,21 +96,21 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.-->
 
-### Experience Hub可扩展性和自定义 {#exp-hub-extensibility}
+### Experience Hub 可扩展性和自定义 {#exp-hub-extensibility}
 
-[Experience Hub](/help/experience-hub.md)是您进入AEM的入口点，根据贵组织的需求进行自定义。 介绍Adobe中您现有的AEM UI扩展，以便它们可以帮助您在Experience Hub中轻松启用它们。
+[Experience Hub](/help/experience-hub.md) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
 
-![Experience Hub可扩展性和自定义工作流程示意图](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+![Experience Hub 可扩展性和自定义工作流程示意图](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
 
-在Experience Hub中嵌入自定义体验，以扩展和个性化贵组织的仪表板。 除了Adobe的内置小组件之外，还可以使用[UI可扩展性](https://developer.adobe.com/uix/docs/)框架添加您自己的小组件。 构建基于JavaScript的UI应用程序，并将其呈现给您的用户，以满足特定于业务的要求和工作流。
+在 Experience Hub 中嵌入自定义体验，扩展和个性化组织的仪表板。除了 Adobe 的内置构件之外，还可以使用 [UI 可扩展性](https://developer.adobe.com/uix/docs/)框架添加您自己的构件。构建基于 JavaScript 的 UI 应用程序，并将其呈现给您的用户，以满足特定业务需求和工作流程。
 
-对Beta版感兴趣吗？ 向[beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com)发送电子邮件，其中包含您的Adobe OrgID以及要创建的自定义设置的简短说明。
+是否对 Beta 测试版感兴趣？向 [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) 发送电子邮件，其中包含 Adobe OrgID 以及要创建自定义设置的简短说明。
 
 ### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
 
-新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量、全栈和仅限暂存的管道。
+新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。它适用于代码质量、全栈和仅限暂存的管道。
 
-有兴趣吗？ 使用您的Adobe OrgID和项目ID向[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)发送电子邮件。
+是否有兴趣？向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含 Adobe OrgID 和项目群 ID。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
@@ -116,10 +120,10 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 当最新的客户源代码未如预期运行时，可迅速回滚至先前的部署，无需重新运行完整管道或手动回退提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**&#x200B;选项。*
+![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**选项。*
 
 ![“还原先前部署的代码”对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
+*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
 
 ![恢复激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager 会将环境回滚至较早的构建版本，保留内容和配置不变，并在部署完成前将该环境标记为&#x200B;**还原中**。*
@@ -191,7 +195,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 ## 错误修复 {#bug-fixes}
 
-10月的Cloud Manager版本中没有重大的错误修复。
+Cloud Manager 的 10 月发行版本中没有重大错误修复。
 
 
 <!-- ## Known issues {#known-issues} -->
