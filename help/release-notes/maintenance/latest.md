@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -18,39 +18,39 @@ ht-degree: 48%
 
 ## 发行版本 22758 {#22758}
 
-以下总结了维护版本22758的持续改进，该版本于2025年10月1日公开发布。 上一个维护版本是版本 22450。
+下方总结了维护版本 22758（该版本于 2025 年 10 月 1 日公开发布）的持续改进。上一个维护版本是版本 22450。
 
-激活 2025.10.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2025.10.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强功能 {#enhancements-22758}
 
-* Assets-56227：重命名adobe-countdown-timer修饰符。
-* CNTBF-493：将Bump content-backflow包版本更改为2.0.28。
-* CQ-4361110： Granite翻译。
-* CQ-4361112：最新的AEM翻译。
-* GRANITE-56026：改进权限API状态代码响应。
-* GRANITE-61015：已将`org.apache.commons.io.channels`包添加到公共导出列表。
-* GRANITE-61167： Felix日志已更新为最新的OSGI规范。
-* GRANITE-61167：更新许多Apache Felix依赖项。
+* ASSETS-56227：重命名 adobe-countdown-timer 修饰符。
+* CNTBF-493：将 content-backflow 捆绑包版本提升到 2.0.28。
+* CQ-4361110：Granite 翻译。
+* CQ-4361112：最新的 AEM 翻译。
+* GRANITE-56026：改进权限 API 状态代码响应。
+* GRANITE-61015：已将 `org.apache.commons.io.channels` 包添加到公共导出列表。
+* GRANITE-61167：Felix 日志已更新为最新的 OSGI 规范。
+* GRANITE-61167：更新许多 Apache Felix 依赖项。
 * GRANITE-61169：改进对受保护字符串的检查。
-* GRANITE-61622：更新许多Apache Sling依赖项。
-* GRANITE-61663：将`com.adobe.granite.repository.indexdefs-1.0.2`添加到快速入门。
-* GRANITE-61811：将`com.adobe.granite.repository-2.0.0`添加到快速入门。
+* GRANITE-61622：更新许多 Apache Sling 依赖项。
+* GRANITE-61663：将 `com.adobe.granite.repository.indexdefs-1.0.2` 添加到快速入门。
+* GRANITE-61811：将 `com.adobe.granite.repository-2.0.0` 添加到快速入门。
 * SITES-32014：侦听外部事件以更新服务注册。
 * SITES-34277：修复页面翻译工作流中的阻塞错误。
-* SKYOPS-108706：升级后的版本可切换捆绑到最新版本（etag缓存）。
-* SKYOPS-114210：正在更新到最新版本的aem.pss.service捆绑包。
-* SKYOPS-116171：更新至 Sling ResourceResolver 1.12.12。
-* SKYOPS-119811：发布了dispatcher-publish 2.0.258。
+* SKYOPS-108706：升级后的版本将捆绑包切换到最新版本（etag 缓存）。
+* SKYOPS-114210：正在更新到最新版本的 aem.pss.service 捆绑包。
+* SKYOPS-116171：更新至 Sling 资源解析器 1.12.12。
+* SKYOPS-119811：发布了 dispatcher-publish 2.0.258。
 
 ### 修复的问题 {#fixed-issues-22758}
 
-* GRANITE-61875：修复了“表达式评估无效”的触发器 — 作者无法保存内容片段，且无法下载资产。
-* SITES-22059：修复PDF查看器组件中的JS错误。 核心组件网站> PDF查看器中的未本地化的“文件预览不可用”字符串。
-* GRANITE-59704：修复htmllibmanager.debug会导致编辑模式失败。
-* GRANITE-61042：将FELIX-6796（ServiceTracker NPE修复）集成到AEM Felix Web控制台捆绑包中。
-* GRANITE-61165：Workspace.copy()引发RepositoryException。
-* GRANITE-61875：将ui.commons更新为5.10.50。
+* GRANITE-61875：修复“表达式评估无效”触发器——作者无法保存内容片段，且无法下载资产。
+* SITES-22059：修复 PDF 查看器组件中的 JS 错误。核心组件网站 > PDF 查看器中的“文件预览不可用”字符串未本地化。
+* GRANITE-59704：修复 htmllibmanager.debug 会导致编辑模式失败。
+* GRANITE-61042：将 FELIX-6796（ServiceTracker NPE 修复）集成到 AEM Felix 网页控制台捆绑包中。
+* GRANITE-61165：Workspace.copy() 引发 RepositoryException。
+* GRANITE-61875：将 ui.commons 更新至 5.10.50。
 
 ### 已知问题 {#known-issues-22758}
 

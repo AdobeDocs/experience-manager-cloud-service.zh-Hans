@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM Sites as a Cloud Service 提供了体验管理功能作为云原生 AEM as a
 AEM Sites as a Cloud Service 中的更改和补充如下所示：
 
 * [异步页面操作](#asynchronous-page-operations)
-* [新引用站点和教程](#new-reference-site-and-tutorial)
+* [新引用网站和教程](#new-reference-site-and-tutorial)
 
 ## 异步页面操作 {#asynchronous-page-operations}
 
@@ -50,11 +50,11 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 >
 >系统用户无需进行更改即可使用此新功能。此处仅将它记录为以前的 AEM 本地版本的行为变化。
 
-## 新引用站点和教程 {#new-reference-site-and-tutorial}
+## 新引用网站和教程 {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/)（新的 AEM 引用站点）已进行更新和发布，以反映使用 AEM 构建网站的最佳实践，以及 AEM 中提供的一整套功能、组件和部署模型。新的引用站点和[随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)涵盖了项目设置、核心组件、可编辑模板、客户端库和使用 Adobe Experience Manager Sites 进行组件开发等基本主题。
+[WKND](https://wknd.site/)（新的 AEM 引用网站）已进行更新和发布，以反映使用 AEM 构建网站的最佳实践，以及 AEM 中提供的一整套功能、组件和部署模型。新的引用网站和[随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)涵盖了项目设置、核心组件、可编辑模板、客户端库和使用 Adobe Experience Manager Sites 进行组件开发等基本主题。
 
-以前，We.Retail 默认与 AEM 一起安装（在生产模式下启动时除外）。在 AEM as a Cloud Service 中，默认情况下不安装引用站点。而是将提供 [Git 存储库](https://github.com/adobe/aem-guides-wknd/)和[随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)以及更新后的 WKND 引用站点代码。
+以前，We.Retail 默认与 AEM 一起安装（在生产模式下启动时除外）。在 AEM as a Cloud Service 中，默认情况下不安装引用网站。而是将提供 [Git 存储库](https://github.com/adobe/aem-guides-wknd/)和[随附教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)以及更新后的 WKND 引用网站代码。
 
 ## 运行时不可用的功能 {#capabilities-not-available-at-runtime}
 
