@@ -64,7 +64,7 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.10.0 的发布日期是 2025 �
 
   请参阅[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
-  该对话框还为&#x200B;**其他 CDN 提供商**&#x200B;信息卡提供单个简明的核对清单，重点突出操作指引内容，具体包括：
+  该对话框还为&#x200B;**其他 CDN 提供商**&#x200B;信息卡提供单个简明的清单，重点突出操作指引内容，具体包括：
 
    * 将您的 CDN 源指向 `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`。
    * 设置&#x200B;**主机/SNI** 以转发原始主机。
@@ -104,13 +104,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 在 Experience Hub 中嵌入自定义体验，扩展和个性化组织的仪表板。除了 Adobe 的内置构件之外，还可以使用 [UI 可扩展性](https://developer.adobe.com/uix/docs/)框架添加您自己的构件。构建基于 JavaScript 的 UI 应用程序，并将其呈现给您的用户，以满足特定业务需求和工作流程。
 
-是否对 Beta 测试版感兴趣？向 [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) 发送电子邮件，其中包含 Adobe OrgID 以及要创建自定义设置的简短说明。
+是否对 Beta 感兴趣？向 [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 以及要创建自定义设置的简短说明。
 
 ### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
 
 新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。它适用于代码质量、全栈和仅限暂存的管道。
 
-是否有兴趣？向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含 Adobe OrgID 和项目群 ID。
+是否有兴趣？向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
@@ -120,10 +120,10 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 当最新的客户源代码未如预期运行时，可迅速回滚至先前的部署，无需重新运行完整管道或手动回退提交。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**&#x200B;选项。*
+![从“环境”卡片中还原客户源代码](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *上方的“环境”卡片展示了所选环境的&#x200B;**还原**>**先前部署的代码**选项。*
 
 ![“还原先前部署的代码”对话框](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**还原先前部署的代码**&#x200B;对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
+*在&#x200B;**还原先前部署的代码**对话框中，查看当前部署的版本以及要还原的目标版本，然后点击&#x200B;**确认***。
 
 ![恢复激活](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager 会将环境回滚至较早的构建版本，保留内容和配置不变，并在部署完成前将该环境标记为&#x200B;**还原中**。*

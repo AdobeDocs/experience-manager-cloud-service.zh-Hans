@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 57%
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 57%
 
 ## 新增功能 {#what-is-new}
 
-* 现在，可以在配置了筛选器的容器之间复制和粘贴组件[&#128279;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
+* 现在，可以在配置了筛选器的容器之间复制和粘贴组件[](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -39,6 +39,6 @@ ht-degree: 57%
 ## 其他改进 {#other-improvements}
 
 * 解决了用户无法重新选择体验片段的问题
-* 删除Live Copy中的组件或块不再取消父继承。
-* 通过活动副本上的页面元数据编辑页面属性不再取消完整页面继承。
+* 删除 Live Copy 中的组件或块不再取消父继承。
+* 通过 Live Copy 上的页面元数据编辑页面属性不再取消完整页面继承。
 * 解决了使用热键的次要回归。
