@@ -40,7 +40,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
