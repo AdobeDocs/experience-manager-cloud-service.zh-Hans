@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 78%
 
 ---
@@ -107,7 +107,7 @@ Adobe 用来编写产品功能测试的工具也可以用来编写自定义功�
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | 每次执行测试保留的 CPU 时间量 |
 | 内存 | 0.5Gi | 分配给测试的内存量，该值以 GB 为单位 |
-| 超时 | 30m | 停止测试的时间限制。 |
+| 超时 | 30m | 测试停止的时间限制。 |
 | 推荐持续时间 | 15m | Adobe建议编写测试所用的时间不要超过此时间。 |
 
 >[!NOTE]
@@ -131,7 +131,7 @@ Adobe 用来编写产品功能测试的工具也可以用来编写自定义功�
 >[!NOTE]
 >
 >此更改需要在 2024 年 4 月 6 日之前执行。
->如果未更新依赖关系库，可能会导致“自定义功能测试”步骤中的管道失败。
+>>如果未更新依赖关系库，可能会导致“自定义功能测试”步骤中的管道失败。
 
 ### 本地测试执行 {#local-test-execution}
 

@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人测试版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 10%
+source-wordcount: '516'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->&#x200B;>本文中介绍的功能只能通过私人测试版计划获得。 要注册私密测试版，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>>本文中介绍的功能只能通过私人测试版计划获得。 要注册私密测试版，请参阅[专业测试环境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 专业化测试环境（简称DevXL）是您可以创建的一种新型Cloud Manager环境。 它旨在支持高级用例，例如用户验收测试(UAT)和性能验证。 与传统开发、快速开发或暂存环境不同，DevXL环境在生产部署管道之外运行。 因此，它们为您提供了更大的灵活性，同时保持严格的隔离以防止对生产工作流的干扰。
 
@@ -35,7 +35,7 @@ DevXL旨在镜像典型暂存环境的大小、可扩展性和配置。 此方�
 | 内容恢复 | 与开发环境相同。 |
 | 访问日志 | 与开发环境相同。 |
 | Developer Console | 与开发环境相同。 |
-| IP 允许列表 | 与开发环境相同。 |
+| `IP Allow List` | 与开发环境相同。 |
 | 联网 | 与开发环境相同（服务、域名、SSL证书、高级网络）。 |
 
 另请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)
@@ -53,7 +53,7 @@ DevXL旨在镜像典型暂存环境的大小、可扩展性和配置。 此方�
 1. 执行下列操作之一：
 
    * 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台的&#x200B;**环境**&#x200B;信息卡上，单击&#x200B;**添加环境**。
-如果&#x200B;**添加环境**&#x200B;选项灰显（已禁用），则可能是由于缺少权限或依赖于许可资源。
+如果**添加环境**&#x200B;选项灰显（已禁用），则可能是由于缺少权限或依赖于许可资源。
 
    ![环境信息卡](assets/no-environments.png)
 
@@ -61,14 +61,14 @@ DevXL旨在镜像典型暂存环境的大小、可扩展性和配置。 此方�
 
      ![“环境”信息卡](assets/environments-tab.png)
 
-1. 在&#x200B;**添加环境**&#x200B;对话框中，执行以下操作：
+1. 在&#x200B;**添加环境**&#x200B;对话框中执行以下操作：
 
    * 单击&#x200B;**专用测试环境**。
    * 提供环境&#x200B;**名称**。 创建环境后，无法更改环境名称。
    * （可选）为环境提供&#x200B;**描述**。
    * 从下拉列表中选择&#x200B;**主区域**。 创建后，DevXL环境的主区域(例如&#x200B;*美国（美国西部）*)将被锁定且无法更改。
 
-   ![“添加环境”对话框中，其中选中了“专门测试环境”单选按钮](assets/specialized-test-environment.png)
+   ![“添加环境”对话框中选中了“专用测试环境”单选按钮](assets/specialized-test-environment.png)
 
 1. 单击&#x200B;**保存**。
 

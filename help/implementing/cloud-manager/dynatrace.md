@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 01fd825a64e0306f9e569075985bd30e1991634c
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe允许使用Dynatrace在企业部署过程中监控AEM as a Cloud Service，找出任何潜在问题的原因，并根据需要采取措施进行补救。
 
-借助Dynatrace，您可以获得所有AEM应用程序的无缝可观察性。 Dynatrace通过自动检测您的AEM应用程序并将其从网站到容器的依赖项可视化到Cloud Service，提供了对最终用户体验的全面可视性。 与所有层的端到端跟踪和实时监控相结合，将您的AEM内容引导型体验提升到新的水平，不存在空白或盲点。 如果出现任何异常，Dynatrace会使用Davis AI引擎实时诊断它们，并在客户受到影响之前将根本原因归结为代码损坏，从而最大限度地缩短平均修复时间。
+借助Dynatrace，您可以获得所有AEM应用程序的无缝可观察性。 Dynatrace可发现您的AEM应用程序并显示其路径（从网站到容器再到云服务），从而显示用户体验。 与所有层的端到端跟踪和实时监控相结合，将您的AEM内容引导型体验提升到新的水平，不存在空白或盲点。 如果出现异常，Dynatrace会使用Davis AI引擎实时诊断异常。 它可以在客户受到影响之前将根本原因归结为代码损坏，从而最大限度地缩短平均修复时间。
 
 要进一步了解Dynatrace，请参阅[Adobe AEM Cloud Service集成](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/)。
 
@@ -31,12 +31,12 @@ Dynatrace客户可通过客户支持票证请求连接，从而监控其AEM环�
 | **字段** | **描述** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | Dynatrace环境URL。<br><br>对于Dynatrace SaaS客户，格式为`https://<your-environment-id>.live.dynatrace.com`。<br><br>对于Dynatrace托管客户，格式为`https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | 您的Dynatrace环境ID。 请参阅[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取此项。 |
-| [!DNL Dynatrace Environment Token] | 您的Dynatrace环境令牌。 请参阅[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取此项。<br><br>这应视为机密，因此请使用适当的安全做法。 例如，密码可在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中保护该密码以及密码。 |
-| [!DNL Dynatrace API access token] | Dynatrace环境的API访问令牌。 请参阅[创建Dynatrace API访问令牌](#create-dynatrace-access-token)以了解如何创建该令牌。<br><br>这应视为机密，因此请使用适当的安全做法。 例如，在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中，使用密码保护该密码以及密码。<br> |
-| [!DNL Dynatrace ActiveGate Port] | AEM集成应连接到的Dynatrace ActiveGate端口。<br><br>注意：只有Dynatrace Managed才需要此项。 |
+| [!DNL Dynatrace Environment ID] | 您的Dynatrace环境ID。 请参阅[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取它。 |
+| [!DNL Dynatrace Environment Token] | 您的Dynatrace环境令牌。 请参阅[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取它。<br><br>此令牌应视为密钥，因此请使用适当的安全实践。 例如，密码可在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中保护该密码以及密码。 |
+| [!DNL Dynatrace API access token] | Dynatrace环境的API访问令牌。 请参阅[创建Dynatrace API访问令牌](#create-dynatrace-access-token)以了解如何创建该令牌。<br><br>此令牌应视为密钥，因此请使用适当的安全实践。 例如，在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中，使用密码保护该密码以及密码。<br> |
+| [!DNL Dynatrace ActiveGate Port] | AEM集成应连接到的Dynatrace ActiveGate端口。<br><br>只有Dynatrace Managed才需要此端口。 |
 | [!DNL Dynatrace ActiveGate Network Zone] | 您的[Dynatrace ActiveGate网络区域](https://docs.dynatrace.com/docs/manage/network-zones)可在数据中心和网络区域之间高效地路由AEM监控数据。<br><br>注意：Dynatrace ActiveGate网络区域是可选的。 |
-| [!DNL AEM Environment ID(s)] | Dynatrace要监视的AEM环境ID。 |
+| [!DNL AEM Environment IDs] | Dynatrace要监视的AEM环境ID。 |
 
 >[!NOTE]
 >
@@ -78,8 +78,8 @@ Dynatrace AEM监控需要Dynatrace许可证。 Dynatrace AEM许可基于[对Kube
 
 ### 创建Dynatrace API访问令牌 {#create-dynatrace-access-token}
 
-1. 登录到Dynatrace环境。
-1. 转到&#x200B;**[!DNL Access tokens]**&#x200B;并选择&#x200B;**[!DNL Generate new token]**。
+1. 登录到您的Dynatrace环境。
+1. 转到&#x200B;**[!DNL Access tokens]**，然后单击选项&#x200B;**[!DNL Generate new token]**。
 1. 定义[!DNL token name]。
 1. 将令牌范围设置为&#x200B;**[!DNL PaaS integration - Installer download]**。
 1. 选择&#x200B;**[!DNL Generate token]**。

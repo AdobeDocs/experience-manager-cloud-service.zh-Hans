@@ -5,9 +5,9 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 69%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 69%
 
    ![下载日志对话框](assets/download-preview.png)
 
-   如果您的环境启用了[其他Publish地区](/help/operations/additional-publish-regions.md)，您将能够选择每个地区并单独下载其日志，如下所示：
+   如果您的环境启用了[其他发布区域](/help/operations/additional-publish-regions.md)，则可以选择每个区域并单独下载其日志，如下所示：
 
    ![下载其他发布区域的日志](assets/download-publish-region-logs.png)
 
@@ -101,5 +101,5 @@ Environment Id Service    Name
 
 请参阅以下附加资源，了解有关AEM as a Cloud Service中日志文件的更多信息：
 
-* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=zh-Hans)
-* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=zh-Hans)
+* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

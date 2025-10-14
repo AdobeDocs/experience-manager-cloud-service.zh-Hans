@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '2488'
-ht-degree: 40%
+source-wordcount: '2489'
+ht-degree: 41%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 40%
 
      ![“环境”信息卡](assets/environments-tab.png)
 
-1. 在&#x200B;**添加环境**&#x200B;对话框中，执行以下操作：
+1. 在&#x200B;**添加环境**&#x200B;对话框中执行以下操作：
 
    * 选择&#x200B;[**环境类型**](#environment-types)。 可用/使用的环境数显示在环境类型名称后面的括号中。
    * 提供环境&#x200B;**名称**。 创建环境后，无法更改环境名称。
@@ -165,7 +165,7 @@ ht-degree: 40%
 
 请参阅[在AEM as a Cloud Service中还原内容](/help/operations/restore.md)。
 
-## 还原已部署的先前代码 {#restore-previous-code-deployed}
+## 还原之前部署的代码 {#restore-previous-code-deployed}
 
 请参阅[还原以前在AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md)中部署的代码。
 
@@ -308,7 +308,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console**。
 
-有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
 
 单击单个环境的&#x200B;**更多图标**&#x200B;时，也可以从&#x200B;**概述**&#x200B;窗口的![环境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)选项卡中使用此选项。
 

@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 该过程已记录 - 请参阅 [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
 
-有关示例，请参阅 [wknd 示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
+例如，请参阅[lWKND示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
 ## 从 Java™ 8 切换到 Java™ 11 后，我的构建失败，并显示一个有关 maven-scr-plugin 的错误。我该怎么办？ {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ ht-degree: 100%
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-这是一个已知问题，导致此问题的原因是 Cloud Manager 使用其他版本的 Java™ 来运行 maven 命令而不是编译代码。 只需从 `maven-enforcer-plugin` 配置中忽略 `requireJavaVersion`。
+此错误是一个已知问题，原因在于Cloud Manager使用其他版本的Java™来运行Maven命令而不是编译代码。 只需从 `maven-enforcer-plugin` 配置中忽略 `requireJavaVersion`。
 
 ## 代码质量检查失败，并且部署出现卡滞。 是否能通过某种方式绕过此检查？ {#deployment-stuck}
 
-是。除了安全性评级之外，所有代码质量检查故障都是非关键量度，因此，可以在部署管道中，通过扩展结果 UI 中的项目来绕过它们。
+是。除了安全性评级之外，所有代码质量检查失败都是非关键量度。 因此，可以在部署管道中通过扩展结果UI中的项目来绕过这些量度。
 
-具有[部署经理、项目经理或业务负责人](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)角色的用户既可以覆盖问题，也可以接受问题，在前一种情况下，管道将继续运行，在后一种情况下，管道将停止并显示故障。
+具有[部署经理、项目经理或业务负责人](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)角色的用户可以覆盖这些问题。 在这种情况下，管道将继续运行，或者它们可以接受问题，在这种情况下，管道将停止并显示故障。
 
 有关更多详细信息，请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate)和[配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines)。
 
@@ -57,11 +57,11 @@ ht-degree: 100%
 
 是。对于开发人员部署，Git 分支 `pom.xml` 文件必须在 `<version>` 值的末尾包含 `-SNAPSHOT`。
 
-在版本未更改的情况下，通过该值仍能安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
+当版本未更改时，此值允许仍安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
 
 您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。 如果需要，可以稍后参考此标记。
 
-有关版本处理的更多详细信息，请参阅 [Maven Project 版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
+有关版本处理的更多详细信息，请参阅[Maven项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
 
 ## 包和捆绑包版本控制如何用于阶段和生产部署？ {#snapshot-version}
 
@@ -94,13 +94,13 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 在前面的示例错误中，包 `myapp-base.ui.content-*.zip` 包括 `/conf` 和 `/var/workflow` 下的内容。 为了成功部署，需要这些路径下的 `sling-distribution-importer` 的权限。
 
-以下是 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 配置的示例，该配置为 `sling-distribution-importer` 用户添加附加权限。  该配置在 `/var` 下添加权限。  此类配置必须添加到 `/apps/myapp/config`（其中 myapp 是存储应用程序代码的文件夹）下的应用程序包中。
+以下是 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 配置的示例，该配置为 `sling-distribution-importer` 用户添加附加权限。  该配置在 `/var` 下添加权限。  此类配置必须添加到`/apps/myapp/config`下的应用程序包中（其中`myapp`是存储应用程序代码的文件夹）。
 
 ## 我的 Cloud Manager 部署在 AEM as a Cloud Service 的部署步骤失败，而且我已经添加了 RepositoryInitializer OSGi 配置。我还能做什么？ {#build-failures}
 
 如果[添加 RepositoryInitializer OSGi 配置](#cloud-manager-deployment-cloud-service)并未修复错误，则可能是由于这些附加问题之一。
 
-* 部署可能失败，因为 OSGi 配置不正确，中断了现成的服务。
+* 部署可能失败，因为OSGi配置不正确，中断了现成的服务。
    * 在部署期间检查日志，查看是否存在任何明显错误。
 
 * 由于 Dispatcher 或 Apache 配置不正确，部署可能会失败。
@@ -109,7 +109,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 * 在将内容包（Sling 分发）从作者复制到发布实例的过程中，由于其他一些故障，部署可能会失败。
    * 按照以下步骤在本地设置上模拟问题。
-      1. 使用最新的 AEM SDK jar 在本地安装作者和发布实例。
+      1. 使用最新的AEM SDK jar在本地安装创作实例和发布实例。
       1. 登录作者实例。
       1. 转至&#x200B;**工具** > **部署** > **分发**。
       1. 分发作为代码库一部分的内容包，并查看队列是否因错误而阻塞。

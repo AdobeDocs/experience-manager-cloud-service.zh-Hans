@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 85%
+source-wordcount: '585'
+ht-degree: 76%
 
 ---
 
@@ -45,11 +45,9 @@ ht-degree: 85%
 
 您可以自定义接收通知的方式以及接收的通知。
 
-单击通知侧边栏顶部的齿轮图标。
+单击通知侧边栏顶部的齿轮图标以打开&#x200B;**Experience Cloud首选项**&#x200B;窗口。 在此处，您可以定义通知订阅以及接收通知的方式。
 
 ![通知设置图标](assets/notifications-configuration.png)
-
-该操作将打开&#x200B;**Experience Cloud 偏好设置**&#x200B;窗口，您可以在其中定义通知订阅以及接收通知的方式。
 
 ### 订阅 {#subscriptions}
 
@@ -57,13 +55,13 @@ ht-degree: 85%
 
 ![通知订阅](assets/notifications-subscriptions.png)
 
-默认情况下，您将在应用程序中和通过电子邮件接收所有产品的全部通知。单击产品名称旁边的V形符号显示详细的选项，并定义您收到的该产品的通知类型。 或者，选中或取消选中产品级别的选项以选择/取消选择该产品的所有选项。
+默认情况下，您将收到应用程序中以及通过电子邮件发送的所有产品的所有通知。 单击产品名称旁边的V形符号以显示详细选项并定义您收到的该产品的通知类型。 或者，选中或取消选中产品级别的选项以选择/取消选择该产品的所有选项。
 
 ![通知订阅自定义](assets/notifications-subscriptions-customize.png)
 
 ### 优先级 {#priority}
 
-优先警报标有&#x200B;**高**&#x200B;选项卡，并且可以配置为仅作为警报接收。在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
+优先级警报带有 **HIGH** 标记。您可以将它们配置为仅作为警报接收。 在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
 
 ![通知优先级](assets/notifications-priority.png)
 
@@ -93,4 +91,4 @@ ht-degree: 85%
 * 每日
 * 每周
 
-当选中&#x200B;**即时通知**&#x200B;后，每个通知都会立即发送电子邮件。对于&#x200B;**每日摘要**&#x200B;和&#x200B;**每周摘要**，您可以选择发送每日摘要的时间以及发送每周摘要的日期和时间。
+当您选择&#x200B;**即时通知**&#x200B;时，每个通知都会立即发送电子邮件。 对于&#x200B;**每日摘要**&#x200B;和&#x200B;**每周摘要**，您可以选择发送每日摘要的时间以及发送每周摘要的日期和时间。
