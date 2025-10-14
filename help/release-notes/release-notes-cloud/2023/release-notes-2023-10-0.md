@@ -86,7 +86,7 @@ ht-degree: 91%
 
 ### 流量过滤规则（包括 WAF） {#traffic-filter-rules-waf}
 
-[通过声明按属性（包括 URL、IP 地址和用户代理）匹配网站流量的规则，过滤 Adobe Managed CDN ](/help/security/traffic-filter-rules-including-waf.md)上的流量，或设置自定义流量速率限制以防范 DoS 攻击。客户还可以许可一组高级 Web 应用程序防火墙 (WAF) 规则，以针对复杂的网站威胁提供额外的保护。
+[通过声明按属性（包括 URL、IP 地址和用户代理）匹配网站流量的规则，过滤 Adobe Managed CDN &#x200B;](/help/security/traffic-filter-rules-including-waf.md)上的流量，或设置自定义流量速率限制以防范 DoS 攻击。客户还可以许可一组高级 Web 应用程序防火墙 (WAF) 规则，以针对复杂的网站威胁提供额外的保护。
 
 我们建议您通过[尝试教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=zh-Hans)来熟悉流量过滤器规则！ 它会引导您完成设置新的 Cloud Manager 配置管道、在配置文件中声明规则，以及分析 CDN 日志中的恶意流量。
 

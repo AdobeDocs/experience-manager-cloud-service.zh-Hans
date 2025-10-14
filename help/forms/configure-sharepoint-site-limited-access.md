@@ -36,7 +36,7 @@ ht-degree: 15%
 
 请按照以下步骤使用授权范围配置具有有限访问权限的SharePoint站点：
 
-1. [创建应用程序，使用 ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [创建应用程序，使用 &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [在AEM实例中设置授权范围](#set-the-authorization-scope-at-aem-instance)
 
 ### 在Azure门户中创建具有有限权限的应用程序
@@ -52,7 +52,7 @@ ht-degree: 15%
 
 要使用`Sites.Selected` API权限，需要在Azure门户中注册的应用程序，该应用程序具有为SharePoint Online Sites设置的相应权限。 这种设置可确保应用程序拥有在定义的范围内与SharePoint站点交互所需的授权，从而提供所需的有限访问。
 
-请参阅[博客文章 — 开发使用Sites的应用程序。有关开发使用SharePoint Online Sites ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)权限的应用程序的说明，请参阅SPO Sites的选定权限`Sites.Selected`。
+请参阅[博客文章 — 开发使用Sites的应用程序。有关开发使用SharePoint Online Sites &#x200B;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)权限的应用程序的说明，请参阅SPO Sites的选定权限`Sites.Selected`。
 
 ### 在AEM实例中设置授权范围
 

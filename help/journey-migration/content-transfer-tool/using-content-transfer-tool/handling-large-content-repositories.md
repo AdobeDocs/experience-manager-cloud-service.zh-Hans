@@ -206,7 +206,7 @@ AzCopy在后续运行时会自动跳过在错误之前复制的任何Blob，并�
 
 ### 5.使用AzCopy引入 {#ingesting-azcopy}
 
-请参阅[将内容摄取到Cloud Acceleration Manager ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，以了解有关从CAM将内容摄取到Target的一般信息，包括在“新建摄取”对话框中关于如何使用AzCopy（预复制）或不使用它的说明。
+请参阅[将内容摄取到Cloud Acceleration Manager &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，以了解有关从CAM将内容摄取到Target的一般信息，包括在“新建摄取”对话框中关于如何使用AzCopy（预复制）或不使用它的说明。
 
 要在摄取期间使用AzCopy，Adobe要求您使用的是至少版本2021.6.5561的AEM as a Cloud Service版本。
 

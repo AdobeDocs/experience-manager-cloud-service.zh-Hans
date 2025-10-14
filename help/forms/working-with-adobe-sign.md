@@ -57,7 +57,7 @@ ht-degree: 1%
 
 要为自适应表单配置[!DNL Adobe Sign]：
 
-1. [为自适应表单启用 [!DNL Adobe Sign] ](#enableadobsignforanadaptiveform)
+1. [为自适应表单启用 [!DNL Adobe Sign] &#x200B;](#enableadobsignforanadaptiveform)
 1. [将 [!DNL Adobe Sign] 字段添加到自适应表单](#addadobesignfieldstoanadaptiveform)
 1. [为自适应表单选择 [!DNL Adobe Sign] Cloud Service](#select-adobe-sign-cloud-service-and-signing-order)
 

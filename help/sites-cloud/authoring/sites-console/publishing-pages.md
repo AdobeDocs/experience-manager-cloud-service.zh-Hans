@@ -253,7 +253,7 @@ ht-degree: 74%
 
 您可以确定页面的发布状态：
 
-* 在[ Sites 控制台上的资源概述信息](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)中
+* 在[&#x200B; Sites 控制台上的资源概述信息](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)中
 
   ![信息卡视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 

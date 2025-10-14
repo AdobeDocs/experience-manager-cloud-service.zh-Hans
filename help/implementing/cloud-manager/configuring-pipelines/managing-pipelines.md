@@ -116,7 +116,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 **如要运行多个管道：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 在左侧菜单中，点击![工作流图标 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
+1. 在左侧菜单中，点击![工作流图标 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
 1. 在&#x200B;**管道**&#x200B;页面的表格中，选择要运行的管道旁边的复选框。
 需要时，点击![“过滤器”图标，漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **过滤器**，按名称、环境、部署的代码类型或所有三者组合对管道进行排序。
 1. 在页面的右上角附近，点击&#x200B;**运行所选（x）**。

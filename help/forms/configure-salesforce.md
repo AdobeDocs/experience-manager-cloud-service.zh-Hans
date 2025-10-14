@@ -30,7 +30,7 @@ ht-degree: 0%
 
 在配置[!DNL Salesforce]云服务之前，请确保您执行以下任务：
 
-* [创建已启用连接的OAuth [!DNL Salesforce] 应用程序](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5)。 在创建连接的[!DNL Salesforce]应用程序时，请按以下格式指定回调URL：
+* [创建已启用连接的OAuth [!DNL Salesforce] 应用程序](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5)。 在创建连接的[!DNL Salesforce]应用程序时，请按以下格式指定回调URL：
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html

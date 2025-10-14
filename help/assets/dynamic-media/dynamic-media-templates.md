@@ -422,4 +422,4 @@ ht-degree: 1%
 ## 另请参阅
 
 1. 探索[[!DNL Dynamic Media] 及其功能](/help/assets/dynamic-media/dynamic-media.md)
-1. 使用OpenAPI功能浏览[[!DNL Dynamic Media] ](/help/assets/dynamic-media-open-apis-overview.md)
+1. 使用OpenAPI功能浏览[[!DNL Dynamic Media] &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)

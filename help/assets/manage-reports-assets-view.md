@@ -47,7 +47,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
    **在“配置”选项卡中：**
 
-   1. **报告类型：**&#x200B;选择 [!UICONTROL 上传]、[!UICONTROL 下载]或[ Dynamic Media 投放报告](#dynamic-media-delivery-reports)类型。
+   1. **报告类型：**&#x200B;选择 [!UICONTROL 上传]、[!UICONTROL 下载]或[&#x200B; Dynamic Media 投放报告](#dynamic-media-delivery-reports)类型。
    1. **标题：**&#x200B;为报告添加标题。
    1. **描述：**&#x200B;为报告添加可选描述。
    1. **选择文件夹路径：**&#x200B;选择一个文件夹路径，生成该特定文件夹内上传和下载资产的报告。例如，如果需要上传至文件夹的资产报告，请指定该文件夹的路径。

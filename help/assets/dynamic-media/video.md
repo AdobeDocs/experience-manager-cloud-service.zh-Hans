@@ -151,7 +151,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources)中的[Experience Manager Assets查看器和Dynamic Media Classic ](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[仅适用于Experience Manager Assets的查看器](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources)中的[Experience Manager Assets查看器和Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[仅适用于Experience Manager Assets的查看器](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
 ## 最佳实践：使用HTML5视频查看器 {#best-practice-using-the-html-video-viewer}
 

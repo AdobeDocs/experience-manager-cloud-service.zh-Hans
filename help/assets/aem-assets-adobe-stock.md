@@ -220,7 +220,7 @@ To configure the IMS account:
 
 执行以下步骤以在[!DNL AEM]创作实例中添加配置：
 
-1. [在您的 [!DNL AEM] 创作实例中设置新的 [!DNL Adobe Stock IMS configuration] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [在您的 [!DNL AEM] 创作实例中设置新的 [!DNL Adobe Stock IMS configuration] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [添加云配置以连接到 [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### 在您的[!DNL AEM author]实例中设置新的[!DNL Adobe Stock IMS configuration] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}

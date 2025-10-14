@@ -30,7 +30,7 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 
 叠加基于节点定义，允许您将 `/libs` 中的标准功能与 `/apps` 中的自定义功能叠加。
 
-创建叠加时，不需要原件的 1:1 副本，因为[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)允许继承。
+创建叠加时，不需要原件的 1:1 副本，因为[&#x200B; Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)允许继承。
 
 有关详细信息，请参阅[JS文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
 
@@ -62,7 +62,7 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 
 ### 代码示例 {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` 是一个示例包，其中显示了如何将群组添加到资源查找器。此示例会连接到 [Flickr ](https://www.flickr.com)的公共流，并在侧面板中显示它们。
+`aem-authoring-extension-assetfinder-flickr` 是一个示例包，其中显示了如何将群组添加到资源查找器。此示例会连接到 [Flickr &#x200B;](https://www.flickr.com)的公共流，并在侧面板中显示它们。
 
 您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)上找到此页面的代码。
 

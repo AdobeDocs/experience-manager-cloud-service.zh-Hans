@@ -170,7 +170,7 @@ ht-degree: 0%
 在启动配置过程之前，请确保您满足以下要求：
 
 1. [访问Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. [已在您的环境中激活 [!DNL Dynamic Media with OpenAPI] ](#activate-dynamic-media-with-openapi)。
+1. [已在您的环境中激活 [!DNL Dynamic Media with OpenAPI] &#x200B;](#activate-dynamic-media-with-openapi)。
 1. 已启用[!DNL Dynamic Media with OpenAPI]处于就绪状态。
 1. 用于投放层的域的EV或OV类型证书。 有关详细信息，请参阅[SSL证书简介](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates)。
 

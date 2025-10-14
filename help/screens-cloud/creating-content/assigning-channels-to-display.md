@@ -71,4 +71,4 @@ ht-degree: 2%
 
 ## 后续内容 {#whats-next}
 
-现在，您已将该渠道分配给显示区，接下来应该通过查看文档[为Screens安装和配置Screens Player ](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)来继续您的AEM as a Cloud Serviceas a Cloud Service之旅。
+现在，您已将该渠道分配给显示区，接下来应该通过查看文档[为Screens安装和配置Screens Player &#x200B;](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)来继续您的AEM as a Cloud Serviceas a Cloud Service之旅。

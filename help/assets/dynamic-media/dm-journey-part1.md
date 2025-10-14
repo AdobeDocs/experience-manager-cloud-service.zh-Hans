@@ -262,7 +262,7 @@ _根据选定的“大”图像预设预览资源的演绎版。 已单击URL按
 ![基于Zoom Vertical Light查看器预设预览资源](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _根据选定的“ZoomVertical_light”查看器预设预览资源。 将鼠标指针(`+`)移到手表上以放大。 注意URL和嵌入按钮。_
 
-以上演绎版是实时的！ [尝试它](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}。
+以上演绎版是实时的！ [尝试它](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}。
 
 ## 可选 — 了解详情
 

@@ -61,7 +61,7 @@ ht-degree: 83%
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**：[文档生成 API ](/help/forms/aem-forms-cloud-service-communications.md)帮助合并、重新排列和验证 PDF 文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL Communications - Document Generation APIs]**：[文档生成 API &#x200B;](/help/forms/aem-forms-cloud-service-communications.md)帮助合并、重新排列和验证 PDF 文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
    * 汇编 PDF 文档。
    * 拆分 PDF 文档。

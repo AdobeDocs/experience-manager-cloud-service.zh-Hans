@@ -225,7 +225,7 @@ Adobe Managed CDN 现在支持 Edge Side Includes (ESI)，这是一种用于边�
 
 #### 增强 RDE 日志记录（早期采用者计划） {#rde-logging-early-adopter}
 
-在[快速开发环境 (RDE) ](/help/implementing/developing/introduction/rapid-development-environments.md)中调试代码时，开发人员现在可以使用命令行更有效地配置和传输日志，而无需修改版本控制中的 OSGI 属性。功能包括：
+在[快速开发环境 (RDE) &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md)中调试代码时，开发人员现在可以使用命令行更有效地配置和传输日志，而无需修改版本控制中的 OSGI 属性。功能包括：
 
 * 在每个包或类级别上声明日志级别
 * 自定义日志输出格式

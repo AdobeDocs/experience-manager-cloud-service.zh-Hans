@@ -49,7 +49,7 @@ URL的第一个红色部分引用了服务器域本身。 在这种情况下，D
 
 最后，还有图像处理参数`?wid=1000&fmt=jpeg&qlt=85`，这些参数在结尾以黄色显示。
 
-整个URL路径是实时的。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}。
+整个URL路径是实时的。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85){target="_blank"}。
 
 在浏览器窗口仍打开并显示Dynamic Media URL和监视图像的情况下，让我们仔细看看如何通过更改URL来创建图像的演绎版。
 
@@ -66,9 +66,9 @@ URL的第一个红色部分引用了服务器域本身。 在这种情况下，D
 
 Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资产。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans)查看他们的列表。
 
-现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧跟`wid=1000`，键入`&rotate=90`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}。
+现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧跟`wid=1000`，键入`&rotate=90`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}。
 
-这块表还是稍微向左偏了。 将`90`的旋转值更改为`92`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}。
+这块表还是稍微向左偏了。 将`90`的旋转值更改为`92`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9){target="_blank"}。
 
 同样，当您按&#x200B;**[!UICONTROL Enter]**&#x200B;时，将立即生成手表的新演绎版。 您可以看到您获得的性能种类，这解释了为什么在繁忙的周末或重大节假日时，Dynamic Media每秒可以发送&#x200B;_个以上的图像请求_，达到800,000个。
 
@@ -163,7 +163,7 @@ _开始创建图像集。_
 
 要创建图像集，请从&#x200B;**[!UICONTROL 创建]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 图像集]**。 请注意，菜单上还有创建&#x200B;**[!UICONTROL 混合媒体集]**、**[!UICONTROL 旋转集]**&#x200B;和&#x200B;**[!UICONTROL 轮播集]**&#x200B;的选项。 创建这些集的方式与创建图像集的方式大致相同。
 
-混合媒体集可以包含图像、样本集、旋转集、视频和自适应视频集。 [尝试它](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample)。 旋转集模拟旋转对象以对其进行检查的真实行为。 利用旋转集，可以从任何角度查看关键的可视详细信息。 [尝试它](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}。
+混合媒体集可以包含图像、样本集、旋转集、视频和自适应视频集。 [尝试它](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample)。 旋转集模拟旋转对象以对其进行检查的真实行为。 利用旋转集，可以从任何角度查看关键的可视详细信息。 [尝试它](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}。
 
 创建图像集非常简单。 您只需添加要包含在集中的图像资源即可。
 
@@ -189,13 +189,13 @@ _选择了查看器选项预览中的`Running`图像集。_
 ![应用了弹出查看器的正在运行的图像集](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _应用了弹出查看器的`Running`图像集。_
 
-在这种情况下，已选择`Flyout`查看器。 此时，您可以预览查看器中设置的图像。 但是，最好是在浏览器中查看它，即客户如何查看它。 选择左下方的&#x200B;**[!UICONTROL URL]**，然后复制该URL并将其粘贴到浏览器中。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}。
+在这种情况下，已选择`Flyout`查看器。 此时，您可以预览查看器中设置的图像。 但是，最好是在浏览器中查看它，即客户如何查看它。 选择左下方的&#x200B;**[!UICONTROL URL]**，然后复制该URL并将其粘贴到浏览器中。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}。
 
 单个URL允许您在网站上需要使用的位置使用图像集和查看器。 您可能在上一个示例中注意到&#x200B;**[!UICONTROL Embed]**&#x200B;位于URL按钮的右侧。 通过选择&#x200B;**[!UICONTROL 嵌入]**，您可以复制此图像集/查看器的代码，并将其添加到网页或Experience Manager Sites组件中。
 
 弹出查看器是默认的现成查看器，可以编辑其属性。 或者，就像创建图像预设一样，您可以创建自己的自定义查看器。
 
-现在，假设您的销售和营销团队不喜欢弹出查看器。 他们喜欢缩放功能，但他们希望客户能够直接在鞋子上看到缩放效果。 在这种情况下，您只需将InlineZoom查看器应用于图像集，并在浏览器中复制并粘贴其URL以查看其行为。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}。
+现在，假设您的销售和营销团队不喜欢弹出查看器。 他们喜欢缩放功能，但他们希望客户能够直接在鞋子上看到缩放效果。 在这种情况下，您只需将InlineZoom查看器应用于图像集，并在浏览器中复制并粘贴其URL以查看其行为。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}。
 
 当您将鼠标指针移到鞋上时，可以放大该图像，并且可以在移动指针时看到更多细节。 原因很简单，就是最初上传到Dynamic Media中的图像的大小。
 
@@ -205,8 +205,8 @@ _应用了弹出查看器的`Running`图像集。_
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark`查看器已应用于图像资源。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}。
-* `Zoom_light`查看器已应用于图像。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}。
+* `ZoomVertical_dark`查看器已应用于图像资源。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark){target="_blank"}。
+* `Zoom_light`查看器已应用于图像。 [尝试它](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light){target="_blank"}。
 
 ## 可选 — 了解详情
 

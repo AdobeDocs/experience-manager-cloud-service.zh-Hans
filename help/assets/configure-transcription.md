@@ -50,7 +50,7 @@ ht-degree: 84%
 
 ### 配置 Azure Media Services {#configure-azure-media-services}
 
-[!DNL Experience Manager Assets] 使用 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的[支持音频或视频文件 ](#supported-file-formats-for-transcription)中的口语文本转录。管理员可使用 Azure 凭据在 [!DNL Experience Manager Assets] 中配置 [!DNL Azure Media Services]。[转录先决条件](#transcription-prerequisites)列出配置所需的[!DNL Azure]凭据。如果您没有 [!DNL Azure] 帐户和凭据，请参阅 [Azure Media Services 文档 ](https://azure.microsoft.com/en-us/pricing/details/media-services/) 获取试用凭据。
+[!DNL Experience Manager Assets] 使用 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的[支持音频或视频文件 &#x200B;](#supported-file-formats-for-transcription)中的口语文本转录。管理员可使用 Azure 凭据在 [!DNL Experience Manager Assets] 中配置 [!DNL Azure Media Services]。[转录先决条件](#transcription-prerequisites)列出配置所需的[!DNL Azure]凭据。如果您没有 [!DNL Azure] 帐户和凭据，请参阅 [Azure Media Services 文档 &#x200B;](https://azure.microsoft.com/en-us/pricing/details/media-services/) 获取试用凭据。
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 

@@ -69,7 +69,7 @@ GraphQL 是：
 
 * 位于 [graphql.com](https://graphql.com)：
 
-   * [ 指南](https://www.graphql.com/guides/)
+   * [&#x200B; 指南](https://www.graphql.com/guides/)
 
    * [教程](https://www.graphql.com/tutorials/)
 
@@ -1276,7 +1276,7 @@ query allTeams {
 
             * [具有单个指定参数的 Web 优化图像传递的示例查询](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`：关于将 URL 传递到[动态媒体资产 ](#dynamic-media-asset-delivery-by-url) 的`ImageRef`参考
+      * `_dmS7Url`：关于将 URL 传递到[动态媒体资产 &#x200B;](#dynamic-media-asset-delivery-by-url) 的`ImageRef`参考
 
          * 请参阅 [通过 URL 传递动态媒体资产的示例查询 - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
