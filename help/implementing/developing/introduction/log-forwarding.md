@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2478'
 ht-degree: 3%
 
 ---
@@ -23,80 +23,70 @@ ht-degree: 3%
   <tbody>
     <tr>
       <th>日志技术</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
     <tr>
       <td>Azure Blob存储</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>Datacog</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
     <tr>
       <td>Elasticsearch<br>OpenSearch</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>Sumo逻辑</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未来</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> 对于Private Beta中的技术，请发送电子邮件至[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以请求获取访问权限。
+> 对于计划在未来推出的CDN日志技术，请发送电子邮件至[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以注册感兴趣的内容。
 
 日志转发以自助方式配置，方法是在Git中声明配置，并且可以通过Cloud Manager配置管道部署到开发、暂存和生产环境类型。 可以使用调用命令行工具将配置文件部署到快速开发环境（RDE）。
 
@@ -116,7 +106,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 ## 设置 {#setup}
 
-1. 创建名为`logForwarding.yaml`的文件。 它应包含元数据，如[配置管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
+1. 创建名为 `logForwarding.yaml` 的文件。它应包含元数据，如[配置管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
 
    ```yaml
    kind: "LogForwarding"
@@ -247,6 +237,8 @@ data:
 >[!NOTE]
 >
 >CDN日志不可能显示自AEM日志显示来源的IP地址，这是因为日志是直接从Fastly而不是AEM Cloud Service发送的。
+>
+>因此，不能将日志转发与高级网络VPN配置一起使用。
 
 ## 记录目标配置 {#logging-destinations}
 
@@ -293,6 +285,9 @@ IAM策略应允许用户使用`s3:putObject`。  例如：
 ```
 
 有关如何实施的更多信息，请参阅[AWS存储段策略文档](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)。
+
+>[!NOTE]
+>计划将来支持AWS S3的CDN日志。 请通过电子邮件发送[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)来注册感兴趣的内容。
 
 ### Azure Blob存储 {#azureblob}
 
@@ -491,7 +486,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 >
 >日志转发到New Relic仅适用于客户拥有的New Relic帐户。
 >
->向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
+>计划将来支持New Relic日志API的CDN日志。 请通过电子邮件发送[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)来注册感兴趣的内容。
 >
 >New Relic根据您的New Relic帐户配置位置提供特定于区域的端点。  有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
 
@@ -515,8 +510,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 ```
 
 >[!NOTE]
->
-> 向[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)发送电子邮件以请求访问权限。
+>计划将来支持Dynatrace日志API的CDN日志。 请通过电子邮件发送[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)来注册感兴趣的内容。
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>计划将来支持SumoLogic CDN日志。 请通过电子邮件发送[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)来注册感兴趣的内容。
+>
 > 您需要订购Sumo Logic Enterprise才能使用“索引”字段功能。  非企业订阅的日志将作为标准路由到`sumologic_default`分区。  有关详细信息，请参阅[Sumo逻辑分区文档](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 日志条目格式 {#log-formats}
