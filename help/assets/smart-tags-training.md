@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 智能标记训练
 
-智能标记培训允许您培训标记，这样您可以在相关标记不存在时指定具体信息。 它使用[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html)的人工智能框架，根据您的标记结构和业务分类训练其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于上传的资源。
+智能标记培训允许您培训标记，这样您可以在相关标记不存在时指定具体信息。 它使用[Adobe Sensei](https://business.adobe.com/cn/why-adobe/experience-cloud-artificial-intelligence.html)的人工智能框架，根据您的标记结构和业务分类训练其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于上传的资源。
 
 ## 确定智能标记训练的要求 {#smart-tag-training-requirement}
 

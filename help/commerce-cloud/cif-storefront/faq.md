@@ -70,7 +70,7 @@ Adobe 建议在 AEM 中管理与营销相关的数据和内容。利用内容片
 
 ## &#x200B;14. 在整个表示层使用 AEM 时，如何确保 PCI 合规性？ {#faq-14}
 
-Adobe 建议使用抽象的付款方式。这会使浏览器客户端与支付网关提供商直接通信，以便 Adobe 或商业解决方案都不会保存或传递持卡人数据。此方法仅需要 3 级 PCI 合规性。但是，要完全符合 PCI 标准，还需要考虑其他事项，例如员工如何与系统和数据交互。有关Adobe Commerce PCI合规性的详细信息，请参阅[PCI合规性要求。](https://business.adobe.com/products/magento/pci-compliance.html)
+Adobe 建议使用抽象的付款方式。这会使浏览器客户端与支付网关提供商直接通信，以便 Adobe 或商业解决方案都不会保存或传递持卡人数据。此方法仅需要 3 级 PCI 合规性。但是，要完全符合 PCI 标准，还需要考虑其他事项，例如员工如何与系统和数据交互。有关Adobe Commerce PCI合规性的详细信息，请参阅[PCI合规性要求。](https://business.adobe.com/cn/products/magento/pci-compliance.html)
 
 ## &#x200B;15. 如果我使用的是 AEM 和 Adobe Commerce 云版本，此联合解决方案是否符合 PCI 要求？ {#faq-15}
 

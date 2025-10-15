@@ -110,7 +110,7 @@ API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]�
    * 创作模式下暂存的产品数据的视觉指示器，用于更好地显示即将发生的更改
    * 内容和商务页面的新Sitemap组件
 
-* 支持[Adobe Commerce Sensei产品推荐，由AEM Storefront中的Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)提供支持，使用预定义或动态创建的推荐
+* 支持[Adobe Commerce Sensei产品推荐，由AEM Storefront中的Adobe Sensei](https://business.adobe.com/cn/products/magento/product-recommendations.html)提供支持，使用预定义或动态创建的推荐
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

@@ -219,7 +219,7 @@ Adobe建议您查阅[已弃用的功能](https://experienceleague.adobe.com/docs
 ## 其他资源 {#additional-resources}
 
 * [Cloud Acceleration Manager快速入门](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) — 有关如何使用Cloud Acceleration Manager加快您向云移动速度的全面指南。
-* [AEM as a Cloud Service：简介、架构和思维方式不同](https://experienceleague.adobe.com/zh-hans?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=en#dashboard/learning)
+* [AEM as a Cloud Service：简介、架构和思维方式不同](https://experienceleague.adobe.com/zh-hans?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=zh-hans#dashboard/learning)
 * [AEMCloud Service主页](/help/overview/introduction.md) — 有关Experience Manageras a Cloud Service文档的概述，请从此处开始。
 * [AEM as a Cloud Service概述](/help/overview/introduction.md) — 本指南提供了Experience Manageras a Cloud Service的概述，包括简介、术语和架构。
 * [入门培训历程](/help/journey-onboarding/overview.md) — 本指南概述了如何开始使用Experience Manageras a Cloud Service，包括如何获取访问权限和设置团队。

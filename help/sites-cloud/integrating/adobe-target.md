@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为 Adobe Experience Cloud 的一部分，[Adobe Target](https://business.adobe.com/products/target/adobe-target.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用 Target，则会熟悉 AEM as a Cloud Service 中的定位编辑环境。
+作为 Adobe Experience Cloud 的一部分，[Adobe Target](https://business.adobe.com/cn/products/target/adobe-target.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用 Target，则会熟悉 AEM as a Cloud Service 中的定位编辑环境。
 
 将 AEM Sites 与 Adobe Target 集成以个性化页面中的内容：
 
