@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+source-git-commit: 29c9b47fe10fd4109190ec91990e8ba7a0359f72
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 76%
+source-wordcount: '691'
+ht-degree: 83%
 
 ---
 
@@ -18,77 +18,48 @@ ht-degree: 76%
 
 在 [AEM Headless 内容作者历程](overview.md)的开头，[使用 AEM 对 Headless 进行内容建模的基础知识](basics.md)涵盖了与针对 Headless 进行创作相关的基本概念和术语。
 
-本文基于这些原则之上，以便您了解如何为AEM Headless项目创建自己的内容片段模型。
+本文基于这些原则编写，以便您了解如何为 AEM Headless 项目创建您自己的内容片段模型。
 
 ## 目标 {#objective}
 
 * **受众**：初学者
 * **目标**：使用内容片段模型对 Headless CMS 进行内容建模的概念和机制。
 
-<!-- which persona does this? -->
-<!-- and who allows the configuration on the folders? -->
-
-<!--
-## Enabling Content Fragment Models {#enabling-content-fragment-models}
-
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
-
-![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
-
->[!NOTE]
->
->See Additional Resources - Content Fragments in the Configuration Browser
--->
-
 ## 创建内容片段模型 {#creating-content-fragment-models}
 
-然后，可以创建内容片段模型并定义结构。
+之后，可以创建内容片段模型并定义结构。
 
-1. 在内容片段控制台中，为内容片段模型选择面板。
+1. 在内容片段控制台中，选择内容片段模型面板。
 
 1. 导航到适合您的配置或子配置的文件夹。
 
-1. 使用&#x200B;**创建**&#x200B;打开&#x200B;**新内容片段模型**&#x200B;对话框。
+1. 使用&#x200B;**创建**，打开&#x200B;**新内容片段模型**&#x200B;对话框。
 
    ![标题和描述](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-1. 完成详细信息
+1. 填写详细信息
 
-1. 使用&#x200B;**创建**&#x200B;保存空模型，或使用&#x200B;**创建并打开**。
-
-<!--
-Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
-
-![Content Fragment Models in Tools](assets/cfm-tools.png)
-
-After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
-
-The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
-
-![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
-
-Confirm with **Create** and you can then **Open** your model to start defining the structure.
--->
+1. 使用&#x200B;**创建**&#x200B;保存空模型，或者&#x200B;**创建并打开**。
 
 ## 定义内容片段模型 {#defining-content-fragment-models}
 
-当您首次打开一个新模型时，您将看到左侧有一个大的空白区域，右侧有一个较长的&#x200B;**数据类型**&#x200B;列表：
+首次打开新模型时，您会看到 — 中间有一大块（相当大的）空白，左侧有一长串&#x200B;**数据类型**，右侧有一长串&#x200B;**属性**（开始处是空的，与选定字段的属性相同）：
 
-![空白模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
+![空白模型](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
 那么——该如何操作？
 
-您可以将&#x200B;**数据类型**&#x200B;的实例拖到左侧空白区域，您已定义模型！
+您可以：
 
-![定义字段](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
+* 将数据类型从左侧面板拖到中间面板中字段的所需位置。
+* 按数据类型选择+图标以将其添加到字段列表的底部。
+* 选择中间面板中的“添加”，然后从结果下拉列表中选择所需的数据类型，以在列表底部添加字段。
 
-在添加数据类型后，您需要为该字段定义&#x200B;**属性。**&#x200B;这些属性取决于所使用的类型。 例如：
+您已在定义模型！
 
-![数据属性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
+在添加数据类型后，您需要为该字段定义&#x200B;**属性。**&#x200B;这些属性都取决于将使用的类型。例如：
 
-可以添加所需数量的字段。例如：
-
-![内容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![数据属性](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 ### 您的内容作者 {#your-content-authors}
 
@@ -105,7 +76,7 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 管理内容片段模型涉及：
 
 * 启用（或禁用）内容片段模型——这使作者在创建内容片段时能够使用它们。
-* 删除 — 始终需要删除，但您需要了解如何删除已用于内容片段的模型；尤其是已发布的片段。
+* 删除——始终需要执行删除操作，但您需要注意删除已用于内容片段的模型，特别是已发布的片段。
 
 ## 发布 {#publishing}
 
@@ -115,7 +86,7 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
 >[!NOTE]
 >
->如果作者尝试发布的内容片段尚未发布模型，则会显示一个选择列表来指示该行为，并且模型会与片段一起发布。
+>如果作者尝试发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
 模型一经发布，就会&#x200B;*锁定*&#x200B;为作者的只读架构。这旨在阻止进行可能导致现有 GraphQL 架构和查询出错的更改，尤其是在发布环境中。它在控制台中由&#x200B;**已锁定**&#x200B;指示。
 

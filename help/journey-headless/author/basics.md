@@ -5,10 +5,10 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
@@ -63,16 +63,10 @@ AEM 安装通常包含三个环境：
 
 可以通过依次选择左上角的 Adobe 图标和小型指南针图标来打开导航面板。
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >虽然内容片段是 AEM **Sites** 的一项功能，但它们将另存为&#x200B;**资源**。这是一个技术细节，应该不会影响您，但了解它可能会有所帮助。
 
-在控制台中，您可以在左侧面板中选择文件夹以导航到您的内容片段。您也可以过滤和/或搜索。
+在内容片段控制台中，您可以在左侧面板中选择文件夹以导航到您的内容片段。 您也可以过滤和/或搜索。
 
 ![内容片段控制台](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -80,20 +74,18 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 在&#x200B;**内容片段**&#x200B;控制台的工具栏中，为您的内容片段提供了一系列操作：
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **在资源中打开**
 * **创建**
 * **引用者**&#x200B;列还提供了显示该片段的所有父引用的直接链接；包括引用内容片段、体验片段和页面。
 * 将鼠标悬停在文件夹名称上将显示 JCR 路径。
 
-选择片段后，所有适当的操作均可用：
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+选择片段后，可以执行其他操作（根据需要）：
 
 * **打开**
-* **发布**（和 **取消发布**）
+* **发布**（和&#x200B;**取消发布**）
+* **管理标记**
 * **复制**
+* **替换**
 * **移动**
 * **重命名**
 * **删除**
@@ -101,26 +93,6 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 >[!NOTE]
 >
 >“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。可通过 AEM 异步作业 UI 监视该作业的进度。
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## 创作内容片段 {#authoring-content-fragments}
 

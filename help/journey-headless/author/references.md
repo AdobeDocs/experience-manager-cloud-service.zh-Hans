@@ -5,8 +5,8 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
-workflow-type: ht
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%
 
@@ -89,10 +89,6 @@ ht-degree: 100%
    * 指定被引用资源的路径
 * **片段引用（UUID）**
    * 在编辑器中，引用的作用是指定被引用资源的路径。在内部，引用被视为引用资源的通用唯一 ID（UUID）
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
 
 ### 如何创作嵌套片段 {#author-nested-fragment}
 

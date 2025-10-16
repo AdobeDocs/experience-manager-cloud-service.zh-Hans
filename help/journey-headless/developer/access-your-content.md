@@ -5,8 +5,8 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
-workflow-type: ht
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 100%
 
@@ -140,106 +140,6 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
    * 定义为&#x200B;**多源**，则主片段可以引用（检索）多个子片段。
 
-<!--
-### JSON Preview {#json-preview}
-
-To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
-
-![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
--->
-
-<!--
-## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
-
-GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client must fetch the Schema, which contains all the types necessary for a query. 
-
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
-
->[!CAUTION]
->
->All the GraphQL schemas (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
->
->This means that you need to ensure that no sensitive content is available, to ensure that no sensitive data is exposed via GraphQL endpoints; for example, this includes information that could be present as field names in the model definition.
-
-For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
-
-1. A Content Fragment Model:
-
-   ![Content Fragment Model for use with GraphQL](assets/graphqlapi-cfmodel.png "Content Fragment Model for use with GraphQL")
-
-1. The corresponding GraphQL schema (output from GraphiQL automatic documentation):
-   ![GraphQL Schema based on Content Fragment Model](assets/graphqlapi-cfm-schema.png "GraphQL Schema based on Content Fragment Model")
-
-   This shows that the generated type `ArticleModel` contains several [fields](#fields). 
-   
-   * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
-
-   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
-
-1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the Sample Queries.md#graphql-sample-queries) (based on a sample Content Fragment structure for use with GraphQL.
-
-In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
-
-The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
-
-So for example, if you:
-
-1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
- 
-   1. GraphQL types for `Model-1` and `Model-2` are generated.
-
-1. Then modify `Content-Fragment-Model-2`:
-
-   1. Only the `Model-2` GraphQL type will get updated.
-
-   1. Whereas `Model-1` will remain the same. 
-
->[!NOTE]
->
->This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
-
-The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
-
-### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
-
-When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
-
->[!NOTE]
->
->The AEM UI prevents this happening, but if publishing is made programmatically, or with content packages, it can occur.
-
-When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
-
-## AEM GraphQL Endpoints {#aem-graphql-endpoints}
-
-An endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
-
-* access the GraphQL schemas,
-* send your GraphQL queries,
-* receive the responses (to your GraphQL queries).
-
-AEM allows for:
-
-* A global endpoint - available for use by all sites.
-* Endpoints for specific Sites configurations - that you can configure (in the Configuration Browser), specific to a specified site/project.
-
-## Permissions {#permissions}
-
-The permissions are those required for accessing Assets.
-
-## The AEM GraphiQL Interface {#aem-graphiql-interface}
-
-To help you directly input, and test queries, an implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
-
->[!NOTE]
->
->GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
-
-It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
-
-![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
--->
-
 ## 实际使用 AEM GraphQL API {#actually-using-aem-graphiql}
 
 ### 初始设置 {#initial-setup}
@@ -347,8 +247,6 @@ query {
 }
 ```
 
-<!-- need code / curl / cli examples-->
-
 有关如何使用 AEM GraphQL API 以及配置必要元素的完整详细信息，您可以引用：
 
 * 了解如何将 GraphQL 与 AEM 结合使用
@@ -382,4 +280,4 @@ query {
 * [了解跨源资源共享 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL 持久化查询 - 在 Dispatcher 中启用缓存](/help/headless/deployment/dispatcher-caching.md)
 * [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/graphql/overview.html?lang=zh-Hans) - 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL。
+* [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/graphql/overview.html) - 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL。
