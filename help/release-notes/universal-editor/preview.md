@@ -3,17 +3,17 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: fcccac27d9648cf8bc313583e4d8acc2ed6b1879
+source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 84%
+source-wordcount: '168'
+ht-degree: 75%
 
 ---
 
 
 # 通用编辑器预览发行说明  {#preview}
 
-这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于 2025 年 10 月 16 日正式发布。
+这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于 2025 年 10 月 23 日正式发布。
 
 提供这些&#x200B;**预览**&#x200B;发行说明是为了方便您了解即将对通用编辑器进行哪些更改，并且您可以通过[切换到预览环境来测试这些更改。](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,9 +27,12 @@ ht-degree: 84%
 
 ## 即将推出的新功能 {#what-is-new}
 
-* 引入了多字段更新支持。
+* 现在支持在浏览器选项卡之间复制和粘贴。
+* 您现在可以禁用带有meta标记的取消发布按钮。
 
 ## 即将推出的改进 {#other-improvements}
 
-* `AemContentFragmentReference`中的主机现已清理。
-* 为SSL与无SSL调度程序配置添加了逻辑。
+* 改进了结构树。
+* 现在支持链接图像。
+* 对撤消/重做操作进行了改进。
+
