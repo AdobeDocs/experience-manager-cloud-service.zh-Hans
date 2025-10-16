@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
-workflow-type: ht
-source-wordcount: '1957'
-ht-degree: 100%
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+workflow-type: tm+mt
+source-wordcount: '1981'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,9 +60,9 @@ AEM 内容片段的内容模型编辑器已经过现代化，以与 AEM 中其�
 
 ### 具有 OpenAPI 功能的动态媒体中的新功能 {#new-features-dynamic-media-with-openapi}
 
-**带有 OpenAPI URL 的 SEO 友好型 DM**
+**标记和可读的资源交付URL**
 
-使用 OpenAPI 创建用于在 DM 中交付资产的虚名 URL，用可读的短标识符替换系统生成的长 UUID。这使得关联变得 SEO 友好，并且与您的品牌或营销活动更加一致。虚名 URL 会在运行时自动解析为原始资产 UUID，不会中断现有工作流。
+利用Dynamic Media中的OpenAPI虚URL，使带OpenAPI的Dynamic Media URL更易于用户读取。 虚URL允许将资产投放URL中系统生成的长且难以记忆的UUID替换为短的品牌控制标识符。 这使得虚URL更短、更易于阅读和共享，并允许更好地与您的品牌或营销活动保持一致。 虚名 URL 会在运行时自动解析为原始资产 UUID，不会中断现有工作流。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 

@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.8.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.8.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 4187f9bb08d8af214054b937a5426e95c1de748d
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 100%
+source-wordcount: '1934'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -69,9 +69,9 @@ Content Hub 现在可以更快地发现您需要的资产。使用新的批量�
 
 ### 具有 OpenAPI 功能的动态媒体中的新功能 {#new-features-dynamic-media-with-openapi}
 
-**带有 OpenAPI URL 的 SEO 友好型 DM**
+**标记和可读的资源交付URL**
 
-使用 OpenAPI 创建用于在 DM 中交付资产的虚名 URL，用可读的短标识符替换系统生成的长 UUID。这使得关联变得 SEO 友好，并且与您的品牌或营销活动更加一致。虚名 URL 会在运行时自动解析为原始资产 UUID，不会中断现有工作流。
+利用Dynamic Media中的OpenAPI虚URL，使带OpenAPI的Dynamic Media URL更易于用户读取。 虚URL允许将资产投放URL中系统生成的长且难以记忆的UUID替换为短的品牌控制标识符。 这使得虚URL更短、更易于阅读和共享，并允许更好地与您的品牌或营销活动保持一致。 虚名 URL 会在运行时自动解析为原始资产 UUID，不会中断现有工作流。
 
 >[!NOTE]
 >
