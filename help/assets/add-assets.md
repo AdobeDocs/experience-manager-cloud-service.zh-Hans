@@ -11,7 +11,7 @@ ht-degree: 10%
 
 ---
 
-# 将数字资产作为[!DNL Adobe Experience Manager]添加到[!DNL Cloud Service][!DNL Assets] {#add-assets-to-experience-manager}
+# 将数字资产作为[!DNL Adobe Experience Manager]添加到[!DNL Cloud Service]&#x200B;[!DNL Assets] {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager Assets]接受来自多个来源的多种数字资源。 它存储二进制文件和创建的演绎版，可以使用各种工作流和[!DNL Adobe Sensei]服务进行资产处理，允许跨多个表面通过多个渠道进行分发。
 
