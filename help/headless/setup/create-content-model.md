@@ -4,10 +4,10 @@ description: 定义您将创建的内容的结构，并使用内容片段模型�
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: b76898409291fef85733e75405e65152424e2d41
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 86%
+source-wordcount: '231'
+ht-degree: 52%
 
 ---
 
@@ -23,47 +23,14 @@ ht-degree: 86%
 
 ## 如何创建内容片段模型 {#how-to-create-a-content-fragment-model}
 
-信息架构师只会在偶尔需要新模型时执行这些任务。对于本指南快速入门，我们只需要创建一个模型。
+信息架构师只会在偶尔需要新模型时执行这些任务。
 
-1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**工具**、**常规**、**内容片段模型**。
-1. 选择创建配置时生成的文件夹。
+创建可供使用的模型所需的步骤如下：
 
-   ![模型文件夹 &#x200B;](../assets/models-folder.png)
-1. 选择&#x200B;**创建**。
-1. 提供&#x200B;**模型标题**、**标记**&#x200B;和&#x200B;**描述**。您还可以选择/取消选择&#x200B;**启用模型**&#x200B;以控制模型是否在创建后立即启用。
-
-   ![创建模型](../assets/models-create.png)
-1. 在确认窗口中，选择&#x200B;**打开**&#x200B;以配置模型。
-
-   ![确认窗口](../assets/models-confirmation.png)
-1. 使用&#x200B;**内容片段模型编辑器**，通过从&#x200B;**数据类型**&#x200B;列拖放字段来构建内容片段模型。
-
-   ![拖放字段](../assets/models-drag-and-drop.png)
-
-1. 放置字段之后必须配置其属性。对于添加的字段，编辑器会自动切换到&#x200B;**属性**&#x200B;选项卡，您可以在其中提供必填字段。
-
-   ![配置属性](../assets/models-configure-properties.png)
-
-1. 当您完成模型构建之后，选择&#x200B;**保存**。
-
-1. 创建模型的模式取决于您在创建模型时是否选择了&#x200B;**启用模型**：
-   * 选择 – 新模型将已&#x200B;**启用**
-   * 未选择 – 新模型会以&#x200B;**草稿**&#x200B;模式创建
-
-1. 如果尚未启用，则模型必须&#x200B;**启用**&#x200B;才能使用。
-   1. 选择您创建的模型，然后选择&#x200B;**启用**。
-
-      ![启用模型](../assets/models-enable.png)
-   1. 通过在确认对话框中点按或单击&#x200B;**启用**&#x200B;来确认启用模型。
-
-      ![启用确认对话框](../assets/models-enabling.png)
-1. 模型现在已启用，可以使用。
-
-   ![模型已启用](../assets/models-enabled.png)
-
-**内容片段模型编辑器**&#x200B;支持许多不同的数据类型，例如简单文本字段、资源引用、引用其他模型和 JSON 数据。
-
-您可以创建多个模型。模型可以引用其他内容片段。使用[配置](create-configuration.md)可组织您的模型。
+* [创建内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)
+* [启用您的内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-a-content-fragment-model)
+* [定义您的内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [发布您的内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
 ## 后续步骤 {#next-steps}
 
@@ -71,4 +38,7 @@ ht-degree: 86%
 
 >[!TIP]
 >
->有关内容片段模型的完整详细信息，请参阅[内容片段模型文档](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)。
+>有关内容片段模型的完整详细信息，请参阅：
+>
+>* [管理内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [定义内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

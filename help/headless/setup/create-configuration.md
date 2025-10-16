@@ -1,17 +1,17 @@
 ---
-title: 创建配置 - Headless 设置
+title: 创建配置 — Headless设置
 description: 以创建配置作为第一步，开始在 AEM as a Cloud Service 中使用 Headless。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 82%
+source-wordcount: '250'
+ht-degree: 68%
 
 ---
 
-# 创建配置 - Headless 设置 {#creating-configuration}
+# 创建配置 — Headless设置 {#create-configuration}
 
 作为在 AEM as a Cloud Service 中开始使用 Headless 的第一步，您需要创建配置。
 
@@ -21,27 +21,13 @@ ht-degree: 82%
 
 在 AEM 的 Headless 内容管理的上下文中，请将配置视为 AEM 中的工作区，您可以在其中创建内容模型，这将定义未来内容和内容片段的结构。您可以使用多个配置来分隔这些模型。
 
-如果您熟悉[全栈AEM实施](/help/sites-cloud/authoring/page-editor/templates.md)中的页面模板，使用配置进行内容模型管理的过程非常相似。
+如果您熟悉AEM全栈实施[中的](/help/sites-cloud/authoring/page-editor/templates.md)页面模板，使用配置进行内容模型的管理的过程非常相似。
 
 ## 如何创建配置 {#how-to-create-a-configuration}
 
 管理员只需要创建配置一次，或者在极少数情况下，需要新工作区用于组织内容模型时进行创建。对于本指南快速入门，我们只需要创建一个配置。
 
-1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**工具 -> 常规 -> 配置浏览器**。
-1. 提供配置的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
-   * **标题**&#x200B;应为描述性的。
-   * **名称**&#x200B;会成为存储库中的节点名称。
-      * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/implementing/developing/introduction/naming-conventions.md)进行调整。
-      * 如有必要可以调整。
-1. 查看以下选项：
-   * **内容片段模型**
-   * **GraphQL 持久查询**
-
-   ![创建配置](../assets/create-configuration.png)
-
-1. 选择&#x200B;**创建**
-
-如果需要，您可以创建多个配置。配置也可以嵌套。
+有关分步详细信息，请参阅[在配置浏览器中启用内容片段功能](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)。
 
 >[!NOTE]
 >

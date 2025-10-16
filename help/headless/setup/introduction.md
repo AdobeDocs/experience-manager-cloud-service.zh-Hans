@@ -4,22 +4,22 @@ description: 利用本快速入门指南，学习 AEM as a Cloud Service 强大�
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 94%
+source-wordcount: '284'
+ht-degree: 81%
 
 ---
 
 # Headless 设置 {#introduction}
 
-以下是使用 AEM as a Cloud Service 创建、管理和交付体验的简单途径，共分为五个步骤，面向已经熟悉 AEM 和 Headless 技术的用户。每份指南都建立在上一份指南的基础之上，因此建议按顺序仔细地研究这些内容。
+以下是使用AEM as a Cloud Service创建、管理和交付体验的简单途径，分为五个步骤，面向已熟悉AEM和Headless技术的用户（因此他们交叉引用详细文档）。 每份指南都建立在上一份指南的基础之上，因此建议按顺序仔细地研究这些内容。
 
-1. [创建配置](create-configuration.md)
-1. [创建内容片段模型](create-content-model.md)
-1. [创建资源文件夹](create-assets-folder.md)
-1. [创建内容片段](create-content-fragment.md)
-1. [创建 API 请求](create-api-request.md)
+1. [创建配置](/help/headless/setup/create-configuration.md)
+1. [创建内容片段模型](/help/headless/setup/create-content-model.md)
+1. [创建资源文件夹](/help/headless/setup/create-assets-folder.md)
+1. [创建内容片段](/help/headless/setup/create-content-fragment.md)
+1. [创建 API 请求](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
