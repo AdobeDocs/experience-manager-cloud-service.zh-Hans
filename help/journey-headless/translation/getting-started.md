@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
+source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 95%
@@ -84,11 +84,13 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 1. 导航到内容片段控制台，然后为内容片段模型选择选项卡。
 1. 内容片段模型通常存储在文件夹结构中。选择您的项目的文件夹。
 1. 随后将列出模型。选择模型并打开编辑器。
-1. **内容片段模型编辑器**&#x200B;将打开。
+1. **内容片段模型编辑器**将打开。
    ![内容片段模型编辑器](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
-   1. 左侧面板列出了可能的数据类型。
-   1. 右侧面板显示适用于选定字段的属性。
+
+   * 左侧面板列出了可能的数据类型。
+   * 右侧面板显示适用于选定字段的属性。
    * 中间的面板包含您已创建并定义的字段 — 或将定义的字段。
+
 1. 选择模型的某个字段。AEM会标记它，该字段的详细信息将显示在右侧面板中。
 1. 内容架构师在每个必须翻译的内容模型字段上启用&#x200B;**可翻译**&#x200B;字段。
 
