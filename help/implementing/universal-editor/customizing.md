@@ -4,10 +4,10 @@ description: 了解如何通过不同的选项自定义通用编辑器，以满�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
-workflow-type: ht
-source-wordcount: '444'
-ht-degree: 100%
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 85%
 
 ---
 
@@ -38,6 +38,26 @@ ht-degree: 100%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## 禁用发布以使其上线 {#publish-live}
+
+某些创作工作流可能会阻止将内容发布到实时服务。
+
+因此，可以通过添加以下元数据在应用程序中完全禁止发布窗口中的&#x200B;**Live**&#x200B;选项。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## 禁用取消发布 {#unpublish}
+
+某些创作工作流在取消发布内容之前需要审批流程。 在这种情况下，任何作者都不应可以使用取消发布选项。
+
+因此，可以通过添加以下元数据在应用程序中完全隐藏&#x200B;**取消发布**&#x200B;按钮。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## 禁用打开页面 {#open-page}
