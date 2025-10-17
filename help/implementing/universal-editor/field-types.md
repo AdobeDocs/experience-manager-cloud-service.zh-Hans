@@ -4,10 +4,10 @@ description: 通过示例了解通用编辑器可以在属性面板中编辑的�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '1569'
-ht-degree: 100%
+source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+workflow-type: tm+mt
+source-wordcount: '1592'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 100%
 | `label` | `FieldLabel` | 字段的标签 | 是 |
 | `description` | `FieldDescription` | 字段的描述 | 否 |
 | `placeholder` | `string` | 字段的占位符 | 否 |
-| `value` | `FieldValue` | 默认值 | 否 |
+| `value` | `FieldValue` | 这是默认值，用作占位符。 此值不驱动任何内容更新。 它只是UI中的一种表示形式。 | 否 |
 | `valueType` | `ValueType` | 标准验证，可以是 `string`、`string[]`、`number`、`date`、`boolean` | 否 |
 | `required` | `boolean` | 字段是否必需 | 否 |
 | `readOnly` | `boolean` | 字段是否为只读 | 否 |
