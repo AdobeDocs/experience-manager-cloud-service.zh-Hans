@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1580'
 ht-degree: 3%
 
 ---
@@ -101,4 +101,4 @@ AEM as a Cloud Service应用服务器端规则来计数内容请求。 这些规
 | 排除Commerce integration framework调用 | 已排除 | 向AEM发出的请求将转发到Commerce integration framework（URL以`/api/graphql`开头）以避免重复计数，因此对于Cloud Service不计费。 |
 | 排除`manifest.json` | 已排除 | 清单不是API调用。 本文件旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应将对`/etc.clientlibs/*/manifest.json`的JSON请求计为 |
 | 排除`favicon.ico` | 已排除 | 尽管返回的内容不应是HTML或JSON，但已观察到某些场景（如SAML身份验证流程）会以HTML的形式返回favicon。 因此，Favicon会明确从计数中排除。 |
-| 体验片段(XF) — 相同域重用 | 已排除 | 从同一域上托管的页面（由与请求主机匹配的Referer标头标识）向XF路径（如`/content/experience-fragments/...`）发出请求。<br><br>示例： `aem.customer.com`上的主页从同一域提取横幅或卡片的XF。<br><br>· URL与/content/experience-fragments/...<br>· Referer域与&#x200B;`request_x_forwarded_host`<br><br>**匹配注意：**&#x200B;如果自定义体验片段路径（例如使用`/XFrags/...`或`/content/experience-fragments/`之外的任何路径），则不会排除请求并且可能会计入请求，即使它是同一域也是如此。 我们建议使用Adobe的标准XF路径结构，以确保正确应用排除逻辑。 |
+| 体验片段(XF) — 相同域重用 | 已排除 | 从在同一域上托管的页面（由与请求主机匹配的反向链接标头标识）向XF路径（如`/content/experience-fragments/...`）发出请求。<br><br>示例： `aem.customer.com`上的主页从同一域提取横幅或卡片的XF。<br><br>· URL与/content/experience-fragments/...<br>· Referrer域与&#x200B;`request_x_forwarded_host`<br><br>**匹配。注意：**&#x200B;如果自定义体验片段路径（例如，使用`/XFrags/...`或`/content/experience-fragments/`之外的任何路径），则不会排除该请求，并且可能会计入该请求。 即使是在同一域中，这一结果也是正确的。 Adobe建议使用Adobe的标准XF路径结构，以确保正确应用排除逻辑。 |

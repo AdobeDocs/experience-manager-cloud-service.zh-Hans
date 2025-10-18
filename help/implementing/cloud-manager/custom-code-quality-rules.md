@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 66%
+source-wordcount: '4349'
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 66%
 
 了解Cloud Manager的自定义代码质量规则，这些规则基于Adobe Experience Manager工程最佳实践，旨在通过彻底测试确保高质量的代码。 另请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)。
 
-由于是 Adobe 专有信息，因此无法下载完整的 SonarQube 规则。您可以使用此链接[&#128279;](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载&#x200B;*当前*&#x200B;规则的完整列表。 有关规则的描述和示例，请继续阅读本文档。
+由于是 Adobe 专有信息，因此无法下载完整的 SonarQube 规则。您可以使用此链接&#x200B;*下载*&#x200B;当前[规则](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)的完整列表。 有关规则的描述和示例，请继续阅读本文档。
 
 >[!IMPORTANT]
 >
@@ -37,7 +37,7 @@ ht-degree: 66%
 
 ### 请勿使用有潜在危险的功能 {#do-not-use-potentially-dangerous-functions}
 
-* **密钥**：CQRules:CWE-676
+* **键**： CQRules:CWE-676
 * **类型**：漏洞
 * **严重性**：主要
 * **开始版本**：版本 2018.4.0
@@ -93,7 +93,7 @@ public class DoThis implements Runnable {
 
 ### 请勿使用可能受到外部控制的格式字符串 {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-* **密钥**：CQRules:CWE-134
+* **键**： CQRules:CWE-134
 * **类型**：漏洞
 * **严重性**：主要
 * **开始版本**：版本 2018.4.0
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 ### HTTP 请求应始终具有套接字和连接超时 {#http-requests-should-always-have-socket-and-connect-timeouts}
 
-* **密钥**：CQRules:ConnectionTimeoutMechanism
+* **键**： CQRules:ConnectionTimeoutMechanism
 * **类型**：错误
 * **严重性**：严重
 * **开始版本**：版本 2018.6.0
@@ -188,7 +188,7 @@ public void orDoThis () {
 
 ### ResourceResolver 对象应始终关闭 {#resourceresolver-objects-should-always-be-closed}
 
-* **密钥**：CQRules:CQBP-72
+* **键**： CQRules:CQBP-72
 * **类型**：`Code Smell`
 * **严重性**：主要
 * **开始版本**：版本 2018.4.0
@@ -230,12 +230,12 @@ public void orDoThis(Session session) throws Exception {
 
 ### 请勿使用 Sling Servlet 路径来注册 Servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
-* **密钥**：CQRules:CQBP-75
+* **键**： CQRules:CQBP-75
 * **类型**：`Code Smell`
 * **严重性**：主要
 * **开始版本**：版本 2018.4.0
 
-如 [Sling 文档](https://sling.apache.org/documentation/the-sling-engine/servlets.html)所述，建议不要通过路径绑定 servlet。路径绑定的 servlet 不能使用标准 JCR 访问控制，因此，需要额外的安全严密性。 建议在存储库中创建节点并按资源类型注册 servlet，而不是使用路径绑定的 servlet。
+如[`Sling`文档](https://sling.apache.org/documentation/the-sling-engine/servlets.html)中所述，建议不要通过路径绑定servlet。 路径绑定的 servlet 不能使用标准 JCR 访问控制，因此，需要额外的安全严密性。 建议在存储库中创建节点并按资源类型注册 servlet，而不是使用路径绑定的 servlet。
 
 #### 不合规的代码 {#non-compliant-code-5}
 
@@ -250,7 +250,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 ### 捕获的异常应被记录或引发，而不是同时记录和引发 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-* **密钥**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
+* **键**： CQRules:CQBP-44---CatchAndEitherLogOrThrow
 * **类型**：`Code Smell`
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
@@ -292,7 +292,7 @@ public void orDoThis() throws MyCustomException {
 
 ### 避免 Log 语句紧跟 Throw 语句 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-* **密钥**：CQRules:CQBP-44---ConsecutivelyLogAndThrow
+* **键**： CQRules:CQBP-44---ConsecutivelyLogAndThrow
 * **类型**：`Code Smell`
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
@@ -318,11 +318,11 @@ public void doThis() throws Exception {
 
 ### 在处理 GET 或 HEAD 请求时，避免在 INFO 级别进行记录 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-* **密钥**：CQRules:CQBP-44---LogInfoInGetOrHeadRequests
+* **键**： CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 * **类型**：`Code Smell`
 * **严重性**：轻微
 
-通常，应使用 INFO 日志级别来划分重要操作，默认情况下，Experience Manager 配置为在 INFO 级别或更高级别进行记录。 GET 和 HEAD 方法只能为只读操作，因此，不会构成重要操作。 在 INFO 级别进行记录来响应 GET 或 HEAD 请求可能会产生大量日志噪音，导致更难以识别日志文件中的有用信息。 在处理GET或HEAD请求时，如果出现错误，请记录WARN或ERROR级别。 如果需要详细的疑难解答信息，请使用DEBUG或TRACE级别。
+通常，应使用 INFO 日志级别来划分重要操作，默认情况下，Experience Manager 配置为在 INFO 级别或更高级别进行记录。 GET 和 HEAD 方法只能为只读操作，因此，不会构成重要操作。 在 INFO 级别进行记录来响应 GET 或 HEAD 请求可能会产生大量日志噪音，导致更难以识别日志文件中的有用信息。 在处理GET或HEAD请求时，如果出现错误，请转至WARN或ERROR级别进行记录。 如果需要详细的疑难解答信息，请使用DEBUG或TRACE级别。
 
 >[!NOTE]
 >
@@ -346,7 +346,7 @@ public void doGet() throws Exception {
 
 ### 请勿使用 Exception.getMessage() 作为 Logging 语句的第一个参数 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
-* **密钥**：CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
+* **键**： CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
 * **类型**：`Code Smell`
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
@@ -379,7 +379,7 @@ public void doThis() {
 
 ### 应在 WARN 或 ERROR 级别记录 Catch 块 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-* **密钥**：CQRules:CQBP-44---WrongLogLevelInCatchBlock
+* **键**： CQRules:CQBP-44---WrongLogLevelInCatchBlock
 * **类型**：`Code Smell`
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
@@ -412,7 +412,7 @@ public void doThis() {
 
 ### 请勿将堆栈跟踪输出到控制台 {#do-not-print-stack-traces-to-the-console}
 
-* **密钥**：CQRules:CQBP-44---ExceptionPrintStackTrace
+* **键**： CQRules:CQBP-44---ExceptionPrintStackTrace
 * **类型**：`Code Smell`
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
@@ -445,7 +445,7 @@ public void doThis() {
 
 ### 请勿输出到标准输出或标准错误 {#do-not-output-to-standard-output-or-standard-error}
 
-* **密钥**：CQRules:CQBP-44—LogLevelConsolePrinters
+* **密钥**： CQRules:CQBP-44—LogLevelConsolePrinters
 * **类型**：`Code Smell`
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
@@ -478,12 +478,12 @@ public void doThis() {
 
 ### 避免硬编码应用程序和库路径 {#avoid-hardcoded-apps-and-libs-paths}
 
-* **密钥**：CQRules:CQBP-71
+* **键**： CQRules:CQBP-71
 * **类型**：`Code Smell`
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
 
-以 `/libs` 和 `/apps` 开头的路径通常不应进行硬编码。这些路径通常相对于Sling搜索路径（默认为`/libs,/apps`）进行存储。 使用绝对路径可能会引入细微的缺陷，这些缺陷只会在项目生命周期的后期才会出现。
+以 `/libs` 和 `/apps` 开头的路径通常不应进行硬编码。这些路径通常相对于`Sling`搜索路径进行存储，该路径默认为`/libs,/apps`。 使用绝对路径可能会引入细微的缺陷，这些缺陷只会在项目生命周期的后期才会出现。
 
 #### 不合规的代码 {#non-compliant-code-13}
 
@@ -503,14 +503,14 @@ public void doThis(Resource resource) {
 
 ### 不要使用 Sling 调度程序 {#sonarqube-sling-scheduler}
 
-* **密钥**：CQRules:AMSCORE-554
+* **键**： CQRules:AMSCORE-554
 * **类型**： `Code Smell`/Cloud Service兼容性
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
-Sling 调度程序不得用于需要保证执行的任务。 Sling 计划作业可保证执行，并且更适合集群和非集群环境。
+请勿将`Sling`计划程序用于需要保证执行的任务。 Sling 计划作业可保证执行，并且更适合集群和非集群环境。
 
-请参阅 [Apache Sling 事件和作业处理](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)，详细了解如何在集群环境中处理 Sling 作业。
+请参阅[`Apache Sling`事件和作业处理](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)，详细了解如何在集群环境中处理Sling作业。
 
 ### 不要使用 Experience Manager 弃用的 API {#sonarqube-aem-deprecated}
 
@@ -532,9 +532,9 @@ Experience Manager API 接口正在不断修订，以识别建议不要使用的
 * **严重性**：轻微
 * **自**：版本2023.11
 
-Apache Sling项目不鼓励在Sling模型的上下文中使用`@Inject`注释，因为它可能会导致与`DefaultInjectionStrategy.OPTIONAL`结合使用时性能不佳（在字段或类级别）。 相反，应使用更具体的注入（如`@ValueMapValue`或`@OsgiInjector`注释）。
+`Apache Sling`项目不鼓励在Sling模型的上下文中使用`@Inject`注释，因为与`DefaultInjectionStrategy.OPTIONAL`组合使用时（在字段或类级别），可能会导致性能不佳。 相反，应使用更具体的注入（如`@ValueMapValue`或`@OsgiInjector`注释）。
 
-查看[Apache Sling文档](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1)，了解有关推荐的注释以及最初提出此推荐的原因的更多信息。
+查看[`Apache Sling`文档](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1)，详细了解推荐的注释以及最初提出此推荐的原因。
 
 
 ### 重用HTTPClient实例 {#sonarqube-reuse-httpclient}
@@ -544,7 +544,7 @@ Apache Sling项目不鼓励在Sling模型的上下文中使用`@Inject`注释，
 * **严重性**：轻微
 * **自**：版本2023.11
 
-AEM应用程序经常使用HTTP协议与其他应用程序联系，Apache HttpClient是实现这一目标的常用库。 但是，创建此类HttpClient对象会带来一些开销，因此应尽可能重用这些对象。
+AEM应用程序经常使用HTTP协议与其他应用程序通信，Apache HttpClient是实现这一目标的常用库。 但是，创建此类HttpClient对象会带来一些开销，因此应尽可能重用这些对象。
 
 此规则检查此类HttpClient对象在方法中是否不是私有的，而是在类级别上是全局的，以便可以重复使用。 在这种情况下，应在类的构造函数或`activate()`方法（如果此类是OSGi组件/服务）中设置HttpClient字段。
 
@@ -579,7 +579,7 @@ public class myClass {
 
 >[!NOTE]
 >
->OakPAL 是一个框架，它使用独立的 Oak 存储库来验证内容包。 2019年Experience ManagerRockstar北美奖的得主Experience Manager合作伙伴开发了该软件。
+>OakPAL 是一个框架，它使用独立的 Oak 存储库来验证内容包。 2019年，Experience Manager合作伙伴获得了Experience Manager Rockstar北美区大奖，他负责开发该产品。
 
 ### 客户不应实施或扩展用@ProviderType注释的产品API{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -588,7 +588,7 @@ public class myClass {
 * **严重性**：严重
 * **开始版本**：版本 2018.7.0
 
-Experience ManagerAPI包含Java™接口和类，这些接口和类仅用于由自定义代码使用，但不能实现。 例如，只有Experience Manager应该实现`com.day.cq.wcm.api.Page`接口。
+Experience Manager API包含Java™接口和类，这些接口和类仅用于由自定义代码使用，但不能实现。 例如，只有Experience Manager应该实现`com.day.cq.wcm.api.Page`接口。
 
 将新方法添加到这些接口时，这些附加方法不会影响使用这些接口的现有代码。 因此，向这些接口添加新方法被认为是向后兼容的。但是，如果自定义代码实现了其中一个接口，则该自定义代码会给客户带来向后兼容性风险。
 
@@ -720,7 +720,7 @@ public class DontDoThis implements Page {
 * **严重性**：严重
 * **开始版本**：版本 2019.6.0
 
-客户应将 Experience Manager 内容存储库中的 `/libs` 内容树视为只读，这是一个长期存在的最佳实践。修改 `/libs` 下的节点和属性会给主要和次要更新带来重大风险。 通过官方渠道使用Adobe修改`/libs`。
+客户应将 Experience Manager 内容存储库中的 `/libs` 内容树视为只读，这是一个长期存在的最佳实践。修改 `/libs` 下的节点和属性会给主要和次要更新带来重大风险。 通过正式渠道使用Adobe对`/libs`进行修改。
 
 ### 包不应包含重复的 OSGi 配置 {#oakpal-package-osgi}
 
@@ -815,7 +815,7 @@ OSGi 配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定义 Experie
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
-具有Classic UI对话框的Experience Manager组件应始终具有相应的Touch UI对话框。 两者都提供了与不再支持Classic UI的Cloud Service部署模型兼容的最佳创作体验。 此规则验证以下场景：
+具有Classic UI对话框的Experience Manager组件应始终具有相应的Touch UI对话框。 两者都提供了与Cloud Service部署模型兼容的最佳创作体验，该模型不再支持Classic UI。 此规则验证以下场景：
 
 * 具有经典 UI 对话框（即 `dialog` 子节点）的组件必须具有相应的 Touch UI 对话框（即 `cq:dialog` 子节点）。
 * 具有经典 UI 设计对话框（即 `design_dialog` 节点）的组件必须具有相应的 Touch UI 设计对话框（即 `cq:design_dialog` 子节点）。
@@ -836,7 +836,7 @@ Experience Manager 现代化工具文档提供了有关如何将组件从经典 
 >
 >规则[客户包不应在libs](#oakpal-customer-package)下创建或修改节点。
 
-有关更多详细信息，请参阅[&#x200B; Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+有关更多详细信息，请参阅[ Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ### 不应使用反向复制代理 {#oakpal-reverse-replication}
 
@@ -920,7 +920,7 @@ Experience Manager 客户端库可能包含静态资源，如图像和字体。�
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-Experience Manager as a Cloud Service 对运行模式名称实施严格的命名策略，并对这些运行模式进行严格的排序。 支持运行模式的列表在文档[部署到Experience Manageras a Cloud Service](/help/implementing/deploying/overview.md#runmodes)中创建，任何偏离此列表的情况都将被视为问题。
+Experience Manager as a Cloud Service 对运行模式名称实施严格的命名策略，并对这些运行模式进行严格的排序。 受支持的运行模式列表基于[部署到Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes)文档，任何偏离此列表的情况都将被视为问题。
 
 ### 自定义搜索索引定义节点必须是 `/oak:index` 的直接子节点 {#oakpal-custom-search}
 
@@ -992,7 +992,7 @@ Experience Manager as a Cloud Service 禁止自定义搜索索引定义（即 `o
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-Experience Manager as a Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）包含名为 `reindex` 的属性。 在迁移到Experience Manageras a之前，必须更新使用此属性的索引编制
+Experience Manager as a Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）包含名为 `reindex` 的属性。 在迁移到Experience Manager as a之前，必须更新使用此属性的索引编制
 Cloud Service。 有关更多信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md#how-to-use)。
 
 ### 自定义DAM资源Lucene节点不得指定`queryPaths` {#oakpal-damAssetLucene-queryPaths}
@@ -1054,8 +1054,8 @@ Cloud Service。 有关更多信息，请参阅文档[内容搜索和索引](/he
 * **严重性**：轻微
 * **开始版本**：版本 2023.1.0
 
-在诸如`nt:unstructured`或`nt:base`之类的“通用”节点类型上设置`nodeScopeIndex`属性时，还必须指定`includedPaths`和`queryPaths`属性。
-节点类型`nt:base`可以视为“通用”，因为所有节点类型都继承自它。 因此，在`nt:base`上设置`nodeScopeIndex`会使其索引存储库中的所有节点。 同样，`nt:unstructured`也视为“通用”，因为存储库中有许多节点属于此类型。
+在诸如`nodeScopeIndex`或`nt:unstructured`之类的“通用”节点类型上设置`nt:base`属性时，还必须指定`includedPaths`和`queryPaths`属性。
+节点类型`nt:base`可以视为“通用”，因为所有节点类型都继承自它。 因此，在`nodeScopeIndex`上设置`nt:base`会使其索引存储库中的所有节点。 同样，`nt:unstructured`也视为“通用”，因为存储库中有许多节点属于此类型。
 
 #### 不合规的代码 {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1201,7 +1201,7 @@ Cloud Service。 有关更多信息，请参阅文档[内容搜索和索引](/he
 
 ### 索引定义节点不得部署在 UI 内容包中 {#oakpal-ui-content-package}
 
-* **键**：IndexNotUnderUIContent
+* **密钥**：IndexNotUnderUIContent
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -1214,7 +1214,7 @@ AEM Cloud Service 禁止在 UI 内容包中部署自定义搜索索引定义（�
 
 ### 类型damAssetLucene的自定义全文索引定义必须正确带有“damAssetLucene”前缀 {#oakpal-dam-asset-lucene}
 
-* **键**：CustomFulltextIndexesOfTheDamAssetCheck
+* **密钥**：CustomFulltextIndexesOfTheDamAssetCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -1227,7 +1227,7 @@ AEM Cloud Service 禁止类型 `damAssetLucene` 的自定义全文索引定义�
 
 ### 索引定义节点不得包含同名的属性 {#oakpal-index-property-name}
 
-* **键**：DuplicateNameProperty
+* **密钥**：DuplicateNameProperty
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -1240,7 +1240,7 @@ AEM Cloud Service 禁止自定义搜索索引定义（即，类型为 `oak:Query
 
 ### 禁止自定义某些现成的索引定义 {#oakpal-customizing-ootb-index}
 
-* **键**：RestrictIndexCustomization
+* **密钥**：RestrictIndexCustomization
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -1260,7 +1260,7 @@ AEM Cloud Service 禁止对以下 OOTB 索引进行未经授权的修改：
 
 ### 分析器中标记器的配置应以“tokenizer”名称创建 {#oakpal-tokenizer}
 
-* **键**：AnalyzerTokenizerConfigCheck
+* **密钥**：AnalyzerTokenizerConfigCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
