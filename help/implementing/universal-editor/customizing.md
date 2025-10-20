@@ -4,10 +4,10 @@ description: 了解如何通过不同的选项自定义通用编辑器，以满�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 85%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ ht-degree: 85%
 >
 >通用编辑器还提供了许多[扩展点](/help/implementing/universal-editor/extending.md)，允许您扩展其功能，以满足您的项目需求。
 
-## 禁用发布 {#disable-publish}
+## 使用Meta配置标记 {#meta-tags}
 
-某些创作工作流程要求在内容发布之前进行审阅。在这种情况下，任何作者都不应有发布选项。
+某些创作工作流可能要求使用通用编辑器的某些功能，而不是其他功能。 为了支持这些不同的情况，meta标记可用于配置或禁用编辑器的某些功能或按钮。
 
-因此，通过添加以下元数据可以在应用程序中完全抑制&#x200B;**发布**&#x200B;按钮。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## 禁用发布到预览 {#publish-preview}
-
-某些创作工作流程可能会阻止发布到[预览服务](/help/sites-cloud/authoring/sites-console/previewing-content.md)（如果可用）。
-
-因此，通过添加以下元数据可以在应用程序中完全抑制发布窗口中的&#x200B;**预览**&#x200B;选项。
+在页面的`<head>`部分使用此标记可禁用一项或多项功能：
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## 禁用发布以使其上线 {#publish-live}
+如果要禁用多个功能，请提供以逗号分隔的值列表。
 
-某些创作工作流可能会阻止将内容发布到实时服务。
+以下是`content`支持的值，即可以使用meta标记禁用的功能。
 
-因此，可以通过添加以下元数据在应用程序中完全禁止发布窗口中的&#x200B;**Live**&#x200B;选项。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## 禁用取消发布 {#unpublish}
-
-某些创作工作流在取消发布内容之前需要审批流程。 在这种情况下，任何作者都不应可以使用取消发布选项。
-
-因此，可以通过添加以下元数据在应用程序中完全隐藏&#x200B;**取消发布**&#x200B;按钮。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## 禁用打开页面 {#open-page}
-
-通过添加以下元数据可以在应用程序中完全抑制&#x200B;**打开页面**&#x200B;按钮。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## 禁用重复按钮 {#duplicate-button}
-
-某些创作工作流程可能需要限制内容作者复制组件的能力。您可以通过添加以下元数据禁用[重复图标](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## 禁用复制和粘贴 {#copy-paste}
-
-某些创作工作流可能需要限制内容作者的组件复制和粘贴功能。您可以通过添加以下元数据禁用[复制和粘贴图标](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)的功能。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| 内容值 | 描述 |
+|---|---|
+| `publish` | 禁用[发布按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish-live` | 禁用实时[发布](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-preview` | 禁用预览发布（如果[预览服务](/help/sites-cloud/authoring/sites-console/previewing-content.md)可用） |
+| `unpublish` | 禁用[取消发布按钮](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `copy` | 禁用[复制和粘贴按钮](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
+| `duplicate` | 禁用[重复按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
+| `header-open-page` | 禁用[打开页面按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 
 ## 更改您的端点 {#custom-endpoint}
 
