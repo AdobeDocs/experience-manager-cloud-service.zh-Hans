@@ -4,7 +4,7 @@ description: 了解如何配置Context Hub，它是一个用于存储、操作�
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ContextHub是一个用于存储、操作和呈现上下文数据的框架。 有
 
 ## 显示和隐藏ContextHub UI {#showing-and-hiding-the-contexthub-ui}
 
-将AdobeGranite ContextHub OSGi服务配置为在您的页面上显示或隐藏[ContextHub UI](/help/sites-cloud/authoring/personalization/targeted-content.md)。 此服务的PID为`com.adobe.granite.contexthub.impl.ContextHubImpl.`
+将Adobe Granite ContextHub OSGi服务配置为在您的页面上显示或隐藏[ContextHub UI](/help/sites-cloud/authoring/personalization/targeted-content.md)。 此服务的PID为`com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
 要配置服务，您可以使用[Web控制台](/help/implementing/deploying/configuring-osgi.md)或使用存储库中的JCR节点：
 
@@ -39,7 +39,7 @@ UI模式在工具栏左侧显示为一系列图标。 选中后，UI模式的模
 
 ![ContextHub 工具栏](assets/contexthub-toolbar.png)
 
-图标是来自[Coral UI图标库](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)的引用。
+图标是来自[Coral UI图标库](https://opensource.adobe.com/coral-spectrum/examples/#icon)的引用。
 
 ### 添加UI模式 {#adding-a-ui-mode}
 
@@ -55,7 +55,7 @@ UI模式在工具栏左侧显示为一系列图标。 选中后，UI模式的模
 1. 提供以下属性的值：
 
    * 用户界面模式标题：标识用户界面模式的标题
-   * 模式图标：要使用的[Coral UI图标](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)的选择器，例如`coral-Icon--user`
+   * 模式图标：要使用的[Coral UI图标](https://opensource.adobe.com/coral-spectrum/examples/#icon)的选择器，例如`coral-Icon--user`
    * 启用：选择此项可在ContextHub工具栏中显示UI模式
 
 1. 选择“保存”。
@@ -78,7 +78,7 @@ UI模块属性包括一个详细配置，您可以在其中提供特定于模块
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 显示有关页面标记的统计信息 | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 显示当前用户的配置文件信息，包括`authorizableID`、`displayName`和`familyName`。 您可以更改`displayName`和`familyName`的值。 | `profile` |
 
-1. 在Experience Manager边栏中，选择“工具”>“站点”>“ContextHub”。
+1. 在Experience Manager边栏中，选择工具>站点> ContextHub。
 1. 选择要将UI模块添加到其中的配置容器。
 1. 选择或键入要向其添加UI模块的ContextHub配置。
 1. 选择要在其中添加UI模块的UI模式。
@@ -101,13 +101,13 @@ UI模块属性包括一个详细配置，您可以在其中提供特定于模块
 
 ### 详细存储配置 {#detailed-store-configuration}
 
-在配置存储时，细节配置属性允许您提供特定于存储的属性的值。 该值基于存储的`init`函数的`config`参数。 因此，是否需要提供此值，以及此值的格式，取决于存储。
+在配置存储时，细节配置属性允许您提供特定于存储的属性的值。 该值基于存储的`config`函数的`init`参数。 因此，是否需要提供此值，以及此值的格式，取决于存储。
 
 详细信息配置属性的值是JSON格式的`config`对象。
 
 ### 示例存储候选 {#sample-store-candidates}
 
-AEM提供了以下存储候选项示例，您可以根据它们创建存储。
+AEM提供了以下存储候选示例，您可以根据它们创建存储。
 
 | 存储类型 | 描述 |
 |---|---|
@@ -117,7 +117,7 @@ AEM提供了以下存储候选项示例，您可以根据它们创建存储。
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 存储当前用户的配置文件数据 |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | 存储有关客户端的信息，如设备信息、浏览器类型和窗口方向 |
 
-1. 在Experience Manager边栏中，选择“工具”>“站点”>“ContextHub”。
+1. 在Experience Manager边栏中，选择工具>站点> ContextHub。
 1. 选择默认配置容器。
 1. 选择Contexthub配置
 1. 要添加存储，请选择“创建”图标，然后选择ContextHub存储配置。
@@ -151,7 +151,7 @@ contexthub.generic-jsonp存储已配置为存储服务调用`https://md5.jsontes
 
 Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSONP服务或Web服务中检索数据。 对于此存储候选项，请使用存储配置提供关于要使用的JSONP服务的详细信息。
 
-`ContextHub.Store.JSONPStore` JavaScript类的[init](contexthub-api.md#init-name-config)函数定义了一个初始化此商店候选的`config`对象。 `config`对象包含一个`service`对象，其中包含有关JSONP服务的详细信息。 要配置存储，请以JSON格式提供`service`对象作为详细信息配置属性的值。
+[ JavaScript类的](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore`函数定义了一个初始化此商店候选的`config`对象。 `config`对象包含一个`service`对象，其中包含有关JSONP服务的详细信息。 要配置存储，请以JSON格式提供`service`对象作为详细信息配置属性的值。
 
 要保存来自jsontest.com站点的MD5服务的数据，请使用[使用以下属性创建ContextHub存储区](#creating-a-contexthub-store)中的过程：
 
@@ -214,14 +214,14 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 
 ### 通过CRXDE {#via-crxde}
 
-使用CRXDE Lite将属性`debug`设置为&#x200B;**true**，位于：
+使用CRXDE Lite在以下位置将属性`debug`设置为&#x200B;**true**：
 
 * `/conf/global/settings/cloudsettings`或
 * `/conf/<site>/settings/cloudsettings`
 
 ### 记录ContextHub的调试消息 {#logging-debug-messages-for-contexthub}
 
-配置AdobeGranite ContextHub OSGi服务(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)以记录开发时有用的详细调试消息。
+配置Adobe Granite ContextHub OSGi服务(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)以记录开发时有用的详细调试消息。
 
 要配置服务，您可以使用[Web控制台](/help/implementing/deploying/configuring-osgi.md)或使用存储库中的JCR节点：
 
@@ -234,9 +234,9 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 
 这对于您根本不需要任何调试信息的发布实例非常有用。 由于它是全局设置，因此可通过OSGi启用。
 
-1. 在`http://<host>:<port>/system/console/configMgr`处打开&#x200B;**Adobe Experience Manager Web控制台配置**
-1. 搜索&#x200B;**AdobeGranite ContextHub**
-1. 单击配置&#x200B;**AdobeGranite ContextHub**&#x200B;以编辑其属性
+1. 在&#x200B;**处打开** Adobe Experience Manager Web控制台配置`http://<host>:<port>/system/console/configMgr`
+1. 搜索&#x200B;**Adobe Granite ContextHub**
+1. 单击配置&#x200B;**Adobe Granite ContextHub**&#x200B;以编辑其属性
 1. 选中选项&#x200B;**静默模式**&#x200B;并单击&#x200B;**保存**
 
 ## 禁用ContextHub {#disabling-contexthub}
@@ -252,4 +252,4 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 
 或
 
-* 使用CRXDE Lite将`/conf/global/settings/cloudsettings/<configName>/contexthub`下的属性`disabled`设置为&#x200B;**true**
+* 使用CRXDE Lite在`disabled`下将属性&#x200B;**设置为** true`/conf/global/settings/cloudsettings/<configName>/contexthub`

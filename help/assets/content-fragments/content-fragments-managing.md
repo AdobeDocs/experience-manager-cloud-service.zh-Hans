@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 65%
@@ -136,7 +136,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->其中许多是Assets[&#128279;](/help/assets/manage-digital-assets.md)和/或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的标准操作。
+>其中许多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM桌面应用程序[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -206,7 +206,7 @@ ht-degree: 65%
    * **已修改**：橙色
    * **已停用**：红色
 
-* 通过按钮可直接打开&#x200B;*新* [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)（可通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)访问），您可以&#x200B;**尝试新编辑器**。
+* 通过按钮可直接打开&#x200B;**新** *内容片段编辑器*（可通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/authoring.md)访问），您可以[尝试新编辑器](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)。
 
   >[!WARNING]
   >
@@ -380,7 +380,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 此地址可以访问：
 
-* 创建后；使用Assets控制台[&#128279;](#actions-for-a-content-fragment-assets-console)中可用的操作。
+* 创建后；使用Assets控制台[中可用的](#actions-for-a-content-fragment-assets-console)操作。
 * 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor)。
 
 此外，当您[发布使用片段](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)的页面时；该片段在页面引用中列出。

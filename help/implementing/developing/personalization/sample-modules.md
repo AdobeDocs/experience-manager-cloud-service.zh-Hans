@@ -1,17 +1,17 @@
 ---
-title: ContextHub UI模块类型示例
+title: ContextHub UI 模块类型示例
 description: ContextHub提供了几个可在解决方案中使用的示例UI模块
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# ContextHub UI模块类型示例 {#sample-contexthub-ui-module-types}
+# ContextHub UI 模块类型示例 {#sample-contexthub-ui-module-types}
 
 ContextHub提供了几个可在解决方案中使用的示例UI模块。 提供了以下信息：
 
@@ -40,7 +40,7 @@ contexthub.base UI模块类型是所有其他UI模块类型的基类型。 因�
 使用JSON格式的JavaScript对象配置contexthub.base UI模块。 包括以下任意属性来配置UI模块功能：
 
 * **图像：**&#x200B;要显示为图标的图像的URL。
-* **图标：** [Coral UI图标](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)类的名称。 如果同时为图标和图像属性指定值，则会使用图像。
+* **图标：** [Coral UI图标](https://opensource.adobe.com/coral-spectrum/examples/#icon)类的名称。 如果同时为图标和图像属性指定值，则会使用图像。
 * **标题：** UI模块的标题。 当指针悬停在UI模块图标上时，将显示标题。
 * **全屏：**&#x200B;布尔值，指示UI模块是否支持全屏模式。 使用`true`支持全屏模式，使用`false`阻止全屏模式。
 * **模板：**&#x200B;指定在ContextHub工具栏中呈现的内容的[Handlebars](https://handlebarsjs.com/)模板。 最多使用两个`<p>`标记。
