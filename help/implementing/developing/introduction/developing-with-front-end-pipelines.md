@@ -4,7 +4,8 @@ description: 前端管道增强了开发人员的独立性，并加快了开发�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%
@@ -50,7 +51,7 @@ AEM部署的最佳实践是维护单一、明确的事实来源。 Cloud Manager
 
 因此，尤其是创建多个前端管道时，Adobe建议您维护系统化的命名约定。 您可以使用以下推荐：
 
-* 由`package.json`文件的`name`属性定义的前端模块的名称应包含其适用的站点的名称。 例如，对于位于`/content/wknd`的站点，前端模块的名称类似于`wknd-theme`。
+* 由`name`文件的`package.json`属性定义的前端模块的名称应包含其适用的站点的名称。 例如，对于位于`/content/wknd`的站点，前端模块的名称类似于`wknd-theme`。
 * 当前端模块与其他模块共享相同的Git存储库时，其文件夹的名称应等于或包含前端模块的相同名称。 例如，如果前端模块名为`wknd-theme`，则封入文件夹名称类似于`wknd-theme-sources`。
 * Cloud Manager前端管道的名称还应包含前端模块的名称，还应添加其部署到的环境（生产或开发）。 例如，对于名为`wknd-theme`的前端模块，管道的名称可能类似于`wknd-theme-prod`。
 
@@ -81,7 +82,7 @@ AEM部署的最佳实践是维护单一、明确的事实来源。 Cloud Manager
 1. 然后，前端团队使CSS和JS代码同时使用旧输出和新输出。
    1. 与往常一样，要在本地进行开发，请执行以下操作：
       1. `npx aem-site-theme-builder proxy`命令启动从AEM环境中检索内容的代理服务器。 它使用本地`dist`文件夹中的这些文件替换前端模块的CSS和JS文件。
-      1. 通过配置隐藏`.env`文件中的`AEM_URL`变量，您可以控制本地代理服务器使用内容的AEM环境。
+      1. 通过配置隐藏`AEM_URL`文件中的`.env`变量，您可以控制本地代理服务器使用内容的AEM环境。
       1. 因此，通过更改`AEM_URL`的值，您可以在生产环境和开发环境之间切换以调整CSS和JS，使其同时适用于这两个环境。
       1. 它必须与呈现新输出的开发环境以及呈现旧输出的生产环境配合使用。
    1. 当更新的前端模块适用于这两个环境并将它们部署到两个环境中时，前端工作即告完成。
