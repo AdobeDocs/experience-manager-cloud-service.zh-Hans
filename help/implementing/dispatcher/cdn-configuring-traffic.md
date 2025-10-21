@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
+source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -408,6 +408,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -423,11 +425,13 @@ data:
 下表说明了可用的操作。
 
 | 名称 | 属性 | 含义 |
-|-----------|--------------------------|-------------|
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **selectOrigin** | originName | 其中一个已定义源的名称。 |
-|     | skipCache （可选，默认为false） | 标记是否将缓存用于与此规则匹配的请求。 默认情况下，将根据响应缓存标头（例如，Cache-Control或Expires）缓存响应 |
+|                     | skipCache （可选，默认为false） | 标记是否将缓存用于与此规则匹配的请求。 默认情况下，将根据响应缓存标头（例如，Cache-Control或Expires）缓存响应 |
+|                     | 标头（可选，默认为`{}`） | 键值对，其中包含要在触发规则时发送到所选后端的其他HTTP标头。 键与标题名称和值相对应 |
 | **选择AemOrigin** | originName | 其中一个预定义的AEM源的名称（支持的值： `static`）。 |
-|     | skipCache （可选，默认为false） | 标记是否将缓存用于与此规则匹配的请求。 默认情况下，将根据响应缓存标头（例如，Cache-Control或Expires）缓存响应 |
+|                     | skipCache （可选，默认为false） | 标记是否将缓存用于与此规则匹配的请求。 默认情况下，将根据响应缓存标头（例如，Cache-Control或Expires）缓存响应 |
+|                     | 标头（可选，默认为`{}`） | 键值对，其中包含要在触发规则时发送到所选后端的其他HTTP标头。 键与标题名称和值相对应 |
 
 **源**
 
