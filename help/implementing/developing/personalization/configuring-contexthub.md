@@ -151,7 +151,7 @@ contexthub.generic-jsonp存储已配置为存储服务调用`https://md5.jsontes
 
 Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSONP服务或Web服务中检索数据。 对于此存储候选项，请使用存储配置提供关于要使用的JSONP服务的详细信息。
 
-[ JavaScript类的](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore`函数定义了一个初始化此商店候选的`config`对象。 `config`对象包含一个`service`对象，其中包含有关JSONP服务的详细信息。 要配置存储，请以JSON格式提供`service`对象作为详细信息配置属性的值。
+[&#x200B; JavaScript类的](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore`函数定义了一个初始化此商店候选的`config`对象。 `config`对象包含一个`service`对象，其中包含有关JSONP服务的详细信息。 要配置存储，请以JSON格式提供`service`对象作为详细信息配置属性的值。
 
 要保存来自jsontest.com站点的MD5服务的数据，请使用[使用以下属性创建ContextHub存储区](#creating-a-contexthub-store)中的过程：
 
