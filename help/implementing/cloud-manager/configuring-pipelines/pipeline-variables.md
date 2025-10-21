@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a429ed24d6e724aa3cc7123982e8d4a24cbef5a9
+source-git-commit: fb180685152a00d520530d21a44337381febba7f
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 14%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 14%
    | --- | --- |
    | 名称 | 配置变量的唯一名称。 它标识在管道中使用的特定变量。 它必须遵循以下命名惯例：<ul><li>变量只能包含字母数字字符和下划线(`_`)。</li><li>名称应全部大写。</li><li>每个管道最多有 200 个变量。</li><li>每个名称的长度必须等于或少于100个字符。</li><li>每个`string`变量值的长度必须少于 2048 个字符。</li><li>每个`secretString`类型变量值的长度必须等于或少于500个字符。</li></ul> |
    | 值 | 变量保存的值。 |
-   | 已应用步骤 | 必需。变量应用于的管道中的步骤：<ul><li>**生成** — 变量在生成过程中应用。</li><li>**功能测试** — 该变量在功能测试步骤中使用。</li><li>**UI测试** — 变量在UI测试阶段使用。</li>&lt;li **部署** — 在部署步骤中使用变量。 例如，将此变量用于Edge Delivery Services管道。</li></ul> |
+   | 已应用步骤 | 必需。变量应用于的管道中的步骤：<ul><li>**生成** — 变量在生成过程中应用。</li><li>**功能测试** — 该变量在功能测试步骤中使用。</li><li>**UI测试** — 变量在UI测试阶段使用。</li><li>**部署** — 在部署步骤中使用变量。 例如，将此变量用于Edge Delivery Services管道。</li></ul> |
    | 类型 | 选择变量是纯文本还是加密为密钥。 |
 
    ![添加变量](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
