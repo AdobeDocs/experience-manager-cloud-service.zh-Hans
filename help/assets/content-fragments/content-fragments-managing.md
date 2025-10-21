@@ -136,7 +136,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->其中许多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM桌面应用程序[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)标准操作。
+>其中许多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM桌面应用程序[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=zh-Hans)标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
