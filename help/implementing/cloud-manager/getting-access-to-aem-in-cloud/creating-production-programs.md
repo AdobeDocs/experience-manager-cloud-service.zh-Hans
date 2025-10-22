@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
+source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 11%
@@ -91,7 +91,7 @@ ht-degree: 11%
 
 Adobe HIPAA兼容和WAF-DDOS（Web应用程序防火墙 — 分布式拒绝服务）促进了基于云的安全性，这是针对漏洞的多层防护方法的一部分。
 
-* **HIPAA** — 此选项启用Adobe的HIPPA就绪解决方案实施。
+* **HIPAA** — 此选项启用Adobe的HIPAA就绪解决方案实施。
    * [详细了解](https://www.adobe.com/trust/compliance/hipaa-ready.html) Adobe 的 HIPAA 就绪解决方案实施。
    * 程序创建后无法启用或禁用HIPAA。
 * **WAF-DDOS保护** — 此选项通过规则启用Web应用程序防火墙以保护您的应用程序。
@@ -139,7 +139,7 @@ Sites和Forms提供标准的99.9%service level agreement (SLA)。 **99.99% Servi
 
 >[!TIP]
 >
->有关如何导航Cloud Manager以及了解&#x200B;**我的程序**&#x200B;控制台的详细信息，请参阅[导航Cloud Manager UI](/help/implementing/cloud-manager/navigation.md)。
+>有关如何导航Cloud Manager以及了解[我的程序](/help/implementing/cloud-manager/navigation.md)控制台的详细信息，请参阅&#x200B;**导航Cloud Manager UI**。
 
 >[!NOTE]
 >
