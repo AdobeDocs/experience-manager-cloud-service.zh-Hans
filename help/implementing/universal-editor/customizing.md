@@ -4,10 +4,10 @@ description: 了解如何通过不同的选项自定义通用编辑器，以满�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 69%
+source-wordcount: '412'
+ht-degree: 67%
 
 ---
 
@@ -36,10 +36,10 @@ ht-degree: 69%
 
 | 内容值 | 描述 |
 |---|---|
-| `publish` | 禁用[发布按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish` | 禁用所有[发布](/help/sites-cloud/authoring/universal-editor/publishing.md)功能，即[发布按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)和[取消发布按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
 | `publish-live` | 禁用实时[发布](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | 禁用预览发布（如果[预览服务](/help/sites-cloud/authoring/sites-console/previewing-content.md)可用） |
-| `unpublish` | 禁用[取消发布按钮](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `unpublish` | 禁用[取消发布按钮](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) （[预览功能](/help/release-notes/universal-editor/preview.md)） |
 | `copy` | 禁用[复制和粘贴按钮](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | 禁用[重复按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | 禁用[打开页面按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |

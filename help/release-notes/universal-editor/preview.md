@@ -3,10 +3,10 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 75%
+source-wordcount: '190'
+ht-degree: 66%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 75%
 ## 即将推出的新功能 {#what-is-new}
 
 * 现在支持在浏览器选项卡之间复制和粘贴。
+   * 限于同时打开的选项卡之间。
+   * 不支持复制内容然后打开新选项卡。
 * 您现在可以禁用带有meta标记的取消发布按钮。
 
 ## 即将推出的改进 {#other-improvements}
