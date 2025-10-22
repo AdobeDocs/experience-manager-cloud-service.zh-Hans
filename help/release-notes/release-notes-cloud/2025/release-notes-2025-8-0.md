@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.8.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.8.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1919'
 ht-degree: 96%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 96%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -75,7 +75,7 @@ Content Hub 现在可以更快地发现您需要的资产。使用新的批量�
 
 >[!NOTE]
 >
->此功能将于 9 月 10 日作为有限发布版推出。您可以[创建并提交 Adobe 客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，为您的部署启用该功能。
+>此功能作为“有限可用性”功能提供。请参阅[此文章](/help/assets/vanity-urls.md)以开始。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

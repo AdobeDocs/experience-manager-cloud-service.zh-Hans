@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 96%
+source-wordcount: '2081'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 96%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -56,7 +56,21 @@ AEM 内容片段的内容模型编辑器已经过现代化，以与 AEM 中其�
 
 **Dynamic Media 模板中的子字符串文本增强格式化**
 
-现在，您可以在 Dynamic Media 模板文本图层中对子字符串应用格式。选定的单词或短语将被视为单独的图层，可调整其字体、字号、颜色等属性。子字符串图层已参数化，因此您可以通过模板的投放 URL 实时更新。
+现在，您可以在 Dynamic Media 模板文本图层中对子字符串应用格式。选定的单词或短语将被视为单独的图层，可调整其字体、字号、颜色等属性。子字符串层已进行参数化，以便您可以使用模板的投放URL实时更新它。
+
+### Content Hub 的新功能 {#new-features-content-hub}
+
+**将收藏集标记为收藏**
+
+现在，您可以在Content Hub中将收藏集标记为收藏，使其更易于组织和检索。 添加收藏后，可以从Content Hub主页的&#x200B;**[!UICONTROL 收藏夹]**&#x200B;选项卡中方便地访问您收藏的收藏集。
+
+**固定收藏集以进行快速访问**
+
+Content Hub管理员现在可以在Content Hub中固定收藏集以进行快速访问。 固定收藏集显示在收藏集主页上的专用&#x200B;**[!UICONTROL 固定]**&#x200B;部分中，这样可以更轻松地使重要收藏集保持在可触及的范围之内。
+
+>[!IMPORTANT]
+>
+>这些功能作为有限可用性功能提供。 您可以[创建并提交 Adobe 客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，为您的部署启用该功能。
 
 ### 具有 OpenAPI 功能的动态媒体中的新功能 {#new-features-dynamic-media-with-openapi}
 
@@ -66,7 +80,7 @@ AEM 内容片段的内容模型编辑器已经过现代化，以与 AEM 中其�
 
 >[!NOTE]
 >
->此功能作为“有限可用性”功能提供。您可以[创建并提交 Adobe 客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，为您的部署启用该功能。
+>此功能作为“有限可用性”功能提供。请参阅[此文章](/help/assets/vanity-urls.md)以开始。
 
 <!--
 
@@ -82,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +171,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >此功能自 9 月 25 日起作为有限可用性功能提供。
->&#x200B;>请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
+>>请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
 
 ### 适用于 Eclipse 的 AEM 开发人员工具新版本 {#aem-develeper-tools-for-eclipse}
 

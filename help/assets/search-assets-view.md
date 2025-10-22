@@ -4,10 +4,10 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '2255'
+ht-degree: 83%
 
 ---
 
@@ -136,8 +136,6 @@ Assets视图提供了以下自定义过滤器：
 * **了解同义词**：提供相关术语和短语的结果，因此用户无需猜测正确的关键字。
 
 * **上下文感知搜索**：识别查询背后的意图，而不仅仅是单词。
-
-* **基于基于文本的提示进行搜索**： Experience Manager Assets将过滤器应用于内容，并根据简单的基于文本的提示自动显示相应的结果。
 
 >[!IMPORTANT]
 >
@@ -377,6 +375,6 @@ When userA is searching and userB add an asset that matches search results, will
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
