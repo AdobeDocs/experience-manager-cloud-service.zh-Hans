@@ -80,5 +80,5 @@ AEM Site 是用于创建和管理数字体验的强大工具集。内容作者�
 
 查看这些附加资源，详细了解 AEM 的强大功能如何协作。
 
-* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 有一定的了解，则可能需要直接参阅深入的技术文档。
+* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans) – 如果您已对 AEM 有一定的了解，则可能需要直接参阅深入的技术文档。
 * [Site 管理文档](/help/sites-cloud/administering/site-creation/create-site.md) - 查看有关 Site 创建的技术文档，了解有关快速 Site 创建工具的功能的更多详细信息。
