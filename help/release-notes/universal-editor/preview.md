@@ -3,17 +3,17 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 66%
+source-wordcount: '132'
+ht-degree: 97%
 
 ---
 
 
 # 通用编辑器预览发行说明  {#preview}
 
-这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于 2025 年 10 月 23 日正式发布。
+这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于 2025 年 10 月 30 日正式发布。
 
 提供这些&#x200B;**预览**&#x200B;发行说明是为了方便您了解即将对通用编辑器进行哪些更改，并且您可以通过[切换到预览环境来测试这些更改。](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,14 +27,9 @@ ht-degree: 66%
 
 ## 即将推出的新功能 {#what-is-new}
 
-* 现在支持在浏览器选项卡之间复制和粘贴。
-   * 限于同时打开的选项卡之间。
-   * 不支持复制内容然后打开新选项卡。
-* 您现在可以禁用带有meta标记的取消发布按钮。
+* 待定
 
 ## 即将推出的改进 {#other-improvements}
 
-* 改进了结构树。
-* 现在支持链接图像。
-* 对撤消/重做操作进行了改进。
+* 待定
 

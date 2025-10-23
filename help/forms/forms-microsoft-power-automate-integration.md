@@ -5,15 +5,20 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 将AEM表单连接到power automate、Power automate automation AEM Forms、将power automate集成到Adaptive Forms、将数据从Adaptive Forms发送到Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 13%
+source-wordcount: '1546'
+ht-degree: 17%
 
 ---
 
 
 # 将自适应表单与Microsoft® Power Automate连接 {#connect-adaptive-form-with-power-automate}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | 本文 |
 
 <span class="preview">如果您在GovCloud上并且需要连接到GCC（政府云计算）租户，请从您的官方地址向aem-forms-ea@adobe.com发送电子邮件，以请求通过率先采用者计划进行访问。</span>
 
@@ -297,13 +302,13 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 登录到创作实例，选择您的自适应表单。
 1. 在配置容器中，浏览并选择在[创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)部分创建的容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
-   > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
-   > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+   > * 如果您在通用编辑器界面中没有看到&#x200B;**编辑表单属性**&#x200B;图标，请在 Extension Manager 中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+   > * 请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用或禁用扩展。
 
 
 1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 调用Power Automate流]**&#x200B;提交操作。 选择所需的流程，并在提交时向其提交自适应Forms数据。

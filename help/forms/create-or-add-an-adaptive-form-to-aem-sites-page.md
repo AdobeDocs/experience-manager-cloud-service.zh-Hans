@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
 workflow-type: tm+mt
-source-wordcount: '3160'
+source-wordcount: '3339'
 ht-degree: 18%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 18%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
@@ -41,7 +41,7 @@ AEM Forms Cloud Service提供自适应表单容器和自适应Forms — 嵌入�
 * **标记：** AEM Sites页面允许您[为页面、资源或其他内容分配标记或标签](/help/implementing/developing/introduction/tagging-framework.md)。 标记是关键字或元数据标签，它们提供了一种根据特定标准对内容进行分类和整理的方法。 您可以为AEM中的页面、资源或任何其他内容项分配一个或多个标记，以改进搜索并对资源分类。
 * **锁定和解锁内容：** AEM Sites允许用户在AEM Sites环境中[控制对页面的访问和修改](/help/sites-cloud/authoring/page-editor/edit-content.md)。 锁定页面时，即表示页面不会遭到其他用户未经授权的更改或编辑。 只有锁定了内容的用户或指定的管理员才能解锁内容以允许修改。
 
-此外，AEM页面编辑器中的自适应Forms使用[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans#features)。 这些核心组件提供了简单标准的方法来样式化和自定义组件，与[AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)相同。
+此外，AEM页面编辑器中的自适应Forms使用[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 这些核心组件提供了简单标准的方法来样式化和自定义组件，与[AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)相同。
 
 
 ## 如何在AEM Sites页面或AEM Experience Fragment中创建或添加自适应表单？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -76,11 +76,13 @@ AEM Forms Cloud Service提供自适应表单容器和自适应Forms — 嵌入�
 
 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 
-### 将自适应Forms客户端库添加到AEM Sites页面或体验片段
+### 将自适应Forms客户端库添加到您的AEM Sites页面或Experience
+
+**用例1：使用单独的站点页面组件**
 
 要启用自适应表单容器组件的完整功能，请使用部署管道将 Customheaderlibs 和 Customfooterlibs 客户端库添加到 AEM Sites 页面。要添加库：
 
-1. 访问并克隆 [AEM Cloud Service Git 存储库。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=zh-Hans)
+1. 访问并克隆 [AEM Cloud Service Git 存储库。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)
 1. 在计划文本编辑器中打开 AEM Cloud Service Git 存储库文件夹。例如，Microsoft Visual Code。
 1. 打开`ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html`文件并将以下代码添加到该文件中：
 
@@ -119,7 +121,23 @@ AEM Forms Cloud Service提供自适应表单容器和自适应Forms — 嵌入�
        </sly> 
    ```
 
-1. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hans)，将客户端库部署到 AEM as a Cloud Service 环境。
+1. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，将客户端库部署到 AEM as a Cloud Service 环境。
+
+>[!NOTE]
+>
+> 仅当所有表单都需要自定义函数客户端库时，才对该库进行硬编码。 对于因表单类型而异的库，请按照下一节中的说明，通过模板页面策略添加它们。
+
+**用例2：使用相同的站点页面组件**
+
+在用于创建带有表单的页面的模板的页面策略中包含运行时客户端库或自定义函数库。
+
+1. 打开AEM Sites页面或体验片段进行编辑。 要打开页面进行编辑，请选择该页面，然后单击&#x200B;**[!UICONTROL 编辑]**。
+2. 打开站点或体验片段页面的模板。 要打开模板，请转到&#x200B;**[!UICONTROL 页面信息]**![页面信息](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 编辑模板。]** 它会在模板编辑器中打开相应的模板。
+3. 转到模板的&#x200B;**[!UICONTROL 页面信息]** ![页面信息](/help/forms/assets/Smock_Properties_18_N.svg)部分，然后选择&#x200B;**[!UICONTROL 页面策略]**&#x200B;选项。 这将打开AEM Sites模板的属性，您可以在其中定义自定义函数或运行时客户端库。
+4. 单击&#x200B;**[!UICONTROL 属性]**&#x200B;选项卡中的&#x200B;**[!UICONTROL 添加]**&#x200B;按钮可添加新的自定义函数库或运行时库。
+5. 单击&#x200B;**[完成]**。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
 
 ### 为您的AEM Sites页面或体验片段启用自适应Forms容器
 
@@ -131,8 +149,6 @@ AEM Forms Cloud Service提供自适应表单容器和自适应Forms — 嵌入�
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
-
-+++
 
 ## 创建自适应表单 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
