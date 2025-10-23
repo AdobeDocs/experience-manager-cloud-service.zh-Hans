@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: ht
-source-wordcount: '1348'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '1362'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,9 @@ ht-degree: 100%
 
 ## 简介 {#introduction}
 
-Adobe Experience Manager 是一组功能强大的可组合内容服务，它在任何渠道上都快速地投放极具影响力的个性化体验，从而为所有人展示各种内容。**Edge Delivery Services** 是 Adobe Experience Manager 中最新的创新，通过它，可极快地投放内容并打造卓越的体验。通过查阅 [Edge Delivery Services 概述](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/overview)，了解如何开始使用 Edge Delivery Services。要了解如何使用 Edge Delivery Services，请参阅[开发人员教程](https://www.aem.live/developer/tutorial)页面。
+Adobe Experience Manager (AEM)在内容交付和创作方法方面提供了灵活性，使团队能够根据需要选择最佳模型。
+
+使用[Edge Delivery Services](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/overview)进行快速、迭代的创作并加快内容速度，或使用传统的Publish交付服务构建稳健的企业发布模型。 无论采用哪种方法，组织都可以以最适合的方式提供卓越的数字体验。 要开始使用Edge Delivery Services，请浏览[Edge Delivery Services概述](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/edge-delivery/overview)，并详细了解现代创作选项，请参阅[创作指南](https://www.aem.live/docs/authoring-guide)。
 
 入门培训是所指派的系统管理员为您的组织设置 AEM as a Cloud Service 的过程。这个过程包括云资源的初始配置，以及根据用户的工作职责为其分配角色。因此，每个成员都可以登录和访问其 AEM as a Cloud Service 资源。
 

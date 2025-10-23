@@ -4,10 +4,10 @@ description: 了解如何访问 Cloud Manager，以便您可以设置项目资�
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: ht
-source-wordcount: '909'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 94%
 
 ---
 
@@ -42,31 +42,41 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
    返回到上一步，[将团队成员分配给 Cloud Manager 产品轮廓](assign-profiles-cloud-manager.md)，以获得有关将&#x200B;**业务负责人**&#x200B;角色分配给系统管理员的详细信息。
 
-1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在[experience.adobe.com](https://experience.adobe.com)登录Cloud Manager。
 1. 在快速访问分组中，点击 **Experience Manager**。
 1. 在左侧面板中点击 **Cloud Manager**。
 
    ![Cloud Manager 在控制台](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-作为系统管理员用&#x200B;**业务负责人**&#x200B;角色成功登录后，您就可以通过 Cloud Manager 让其他&#x200B;**业务负责人**角色的用户使用。
-您不会收到确认或任何消息。只需登录即可。
+具有&#x200B;**业务负责人**&#x200B;角色的系统管理员必须首先登录到Cloud Manager。 此初始登录允许具有&#x200B;**业务负责人**&#x200B;角色的其他用户创建程序；不显示任何确认。
 
-在您使用&#x200B;**业务负责人**&#x200B;角色作为系统管理员身份登录 Cloud Manager 之前，其他具有&#x200B;**业务负责人**&#x200B;角色的用户都不能在 Cloud Manager 中创建程序。即使为这些用户分配的角色正确无误，这条规则也适用。
+<!--
+By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
+
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
 
 ## 导航到 Cloud Manager {#navigate-cloud-manager}
 
-具有&#x200B;**业务负责人**&#x200B;角色的用户收到一封欢迎电子邮件，其中包含开始使用的链接。按照以下步骤使用此欢迎电子邮件导航到 Cloud Manager。
+1. 转到[experience.adobe.com/experiencemanager](https://experience.adobe.com/experiencemanager)。
+1. 在左侧面板中点击 **Cloud Manager**。
 
-1. 在欢迎电子邮件中，单击&#x200B;**开始使用**，如下图所示。
-   ![电子邮件示例](/help/journey-onboarding/assets/get-started-email.png)
+>[!NOTE]
+>
+>根据在 Cloud Manager 中分配的角色和应用程序的状态，您在使用 Cloud Manager 用户界面时看到不同的屏幕。
 
-1. 导航到 Cloud Manager 的&#x200B;**程序和产品**&#x200B;页面。
+<!--
+Users with the **Business Owner** role receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
+
+1. From your welcome email, click **Get started**, as shown in the figure below.
+    ![Email example](/help/journey-onboarding/assets/get-started-email.png)
+
+1. Navigate to Cloud Manager's **Programs & Products** page.
 
    >[!TIP]
    >
-   >还可直接从 `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)` 导航到 Cloud Manager 的登录页面。请将此页加入书签以供将来参考。
+   >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. 您被引入 Cloud Manager 的登陆页面。
+1. You are directed to Cloud Manager's landing page. -->
 
 <!-- OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
