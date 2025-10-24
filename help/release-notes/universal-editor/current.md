@@ -1,10 +1,10 @@
 ---
-title: 通用编辑器2025.10.23发行说明
-description: 这些是通用编辑器2025.10.23版的发行说明。
+title: 通用编辑器2025.10.24发行说明
+description: 这些是通用编辑器2025.10.24版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 58%
@@ -12,9 +12,9 @@ ht-degree: 58%
 ---
 
 
-# 通用编辑器2025.10.23发行说明 {#release-notes}
+# 通用编辑器2025.10.24发行说明 {#release-notes}
 
-这些是通用编辑器 2025 年 10 月 23 号版本的发行说明。
+这些是通用编辑器 2025 年 10 月 24 号版本的发行说明。
 
 >[!TIP]
 >
