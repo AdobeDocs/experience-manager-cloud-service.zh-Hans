@@ -4,7 +4,7 @@ description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
 workflow-type: tm+mt
 source-wordcount: '2768'
 ht-degree: 4%
@@ -17,13 +17,13 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="AEM as a Cloud Service 开发准则"
 >abstract="了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。"
->additional-url="https://video.tv.adobe.com/v/345900?captions=chi_hans" text="包结构演示"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="包结构演示"
 
 本文档提供了在AEM as a Cloud Service上进行开发的准则，以及它与AEM内部部署和AMS中的AEM不同的重要方式。
 
 ## 代码必须支持群集 {#cluster-aware}
 
-在AEM as a Cloud Service中运行的代码必须意识到它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。 代码必须是可复原的，尤其是因为实例可能会在任何时间点停止。
+在AEM as a Cloud Service中运行的代码必须意识到它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。 代码必须是可复原的，尤其是在实例可能随时停止的情况下。
 
 在AEM as a Cloud Service更新期间，有一些实例并行运行旧代码和新代码。 因此，旧代码不得与新代码创建的内容冲突，新代码必须能够处理旧内容。
 
@@ -35,29 +35,29 @@ ht-degree: 4%
 
 ## 文件系统上的状态 {#state-on-the-filesystem}
 
-请勿在AEM as a Cloud Service中使用实例的文件系统。 该盘是短暂的，并且在实例被回收时进行处置。 有限地使用文件系统进行与处理单个请求相关的临时存储是可能的，但不应滥用文件系统进行大型存储。 这是因为这可能会对资源使用配额产生负面影响，并遇到磁盘限制。
+请勿在AEM as a Cloud Service中使用实例的文件系统。 磁盘是短暂的，当实例被回收时即被处置。 有限地使用文件系统进行与处理单个请求相关的临时存储是可能的，但不应滥用文件系统进行大型存储。 这是因为这可能会对资源使用配额产生负面影响，并遇到磁盘限制。
 
-例如，不支持使用文件系统，发布层应确保将必须保留的任何数据发送到外部服务以进行更长期存储。
+例如，如果不支持使用文件系统，则发布层应确保将必须保留的任何数据发送到外部服务以进行长期存储。
 
 ## 观察 {#observation}
 
-同样，对于诸如对观察事件执行操作之类的异步发生的所有情况，无法保证在本地执行，因此必须谨慎使用。 对于JCR事件和Sling资源事件也是如此。 发生更改时，可能会删除该实例，并由其他实例替换。 拓扑中当时处于活动状态的其他实例能够对该事件做出反应。 但是，在这种情况下，这并非本地事件，在发布事件时甚至可能没有活跃的领导人，如果正在进行领导人选举。
+同样，对于异步发生的所有情况（如对观察事件执行操作），无法保证在本地执行，因此必须小心使用。 对于JCR事件和Sling资源事件也是如此。 在进行更改时，可能会删除该实例并由其他实例替换。 拓扑中当时处于活动状态的其他实例能够对该事件做出反应。 但是，在这种情况下，这并非本地事件，在发布事件时甚至可能没有活跃的领导人，如果正在进行领导人选举。
 
 ## 后台任务和长时间运行的作业 {#background-tasks-and-long-running-jobs}
 
-作为后台任务执行的代码必须假定运行它的实例可以随时关闭。 因此，代码必须是可复原的，并且最重要的是可恢复的。 这意味着，如果重新执行代码，则不应从头开始重新执行，而应从最初停止的位置开始。 虽然这并非此类代码的新要求，但在AEM as a Cloud Service中，更有可能发生实例停止运行。
+作为后台任务执行的代码必须假定运行它的实例可以随时关闭。 因此，代码必须是可复原的，最重要的是，是可恢复的。 这意味着，如果重新执行代码，则它不应从头开始，而是应该靠近其停止处。 虽然这并非此类代码的新要求，但在AEM as a Cloud Service中，更有可能发生实例删除操作。
 
 为了尽量减少问题，应尽可能避免长时间运行的作业，这些作业应至少可以恢复。 要执行此类作业，请使用Sling作业，该作业具有至少一次保证，因此如果中断，将尽快重新执行。 但他们或许不应该从头开始。 要计划此类作业，最好使用[Sling作业](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing)计划程序，因为这样可以再次确保至少执行一次。
 
-请勿使用Sling Commons Scheduler进行计划，因为无法保证执行。 只是更有可能按计划进行。
+请勿使用Sling Commons Scheduler进行调度，因为无法保证执行。 只是更有可能按计划进行。
 
-同样，对于异步发生的所有情况（例如对观察事件执行操作，无论是JCR事件还是Sling资源事件），无法保证执行，因此必须谨慎使用。 对于当前的AEM部署而言，情况已经如此。
+同样，对于异步发生的所有情况，例如对观察事件（包括JCR事件或Sling资源事件）执行操作，无法保证执行，因此必须谨慎使用。 对于当前的AEM部署而言，情况已经如此。
 
 ## 传出HTTP连接 {#outgoing-http-connections}
 
 强烈建议任何传出HTTP连接设置合理的连接和读取超时；建议的连接超时值为1秒，读取超时值为5秒。 必须根据处理这些请求的后端系统的性能来确定确切的数量。
 
-对于不应用这些超时的代码，在AEM as a Cloud Service上运行的AEM实例将强制实施全局超时。 对于连接调用，这些超时值为10秒；对于连接读取调用，超时值为60秒。
+对于未应用这些超时的代码，在AEM as a Cloud Service上运行的AEM实例将强制实施全局超时。 对于连接调用，这些超时值为10秒；对于连接读取调用，超时值为60秒。
 
 Adobe建议使用提供的[Apache HttpComponents Client 4.x库](https://hc.apache.org/httpcomponents-client-ga/)来建立HTTP连接。
 
@@ -103,7 +103,7 @@ AEM as a Cloud Service不支持从“发布”到“创作”的反向复制。 
 
 开发环境和快速开发环境应仅限于开发、错误分析和功能测试，并且不能用于处理高工作负载和大量内容。
 
-例如，更改开发环境中大型内容存储库的索引定义可能会导致重新索引导致处理过多。 应在暂存环境中运行需要大量内容的测试。
+例如，更改开发环境中大型内容存储库的索引定义可能会导致重新编制索引，从而产生过多的处理过程。 应在暂存环境中运行需要大量内容的测试。
 
 ## 监控和调试 {#monitoring-and-debugging}
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service不支持从“发布”到“创作”的反向复制。 
 
 对于本地开发，日志条目将写入`/crx-quickstart/logs`文件夹中的本地文件。
 
-在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **设置日志级别**
 
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 线程转储 {#thread-dumps}
 
-云环境中的线程转储是不断收集的，但目前无法自助下载。 同时，如果调试问题需要线程转储，请联系AEM支持部门，以指定确切的时间范围。
+云环境中的线程转储是不断收集的，但目前无法自助下载。 同时，如果调试问题需要线程转储，请联系AEM支持，并指定确切的时间范围。
 
 ## CRX/DE Lite和AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
@@ -174,7 +174,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 对于本地开发，开发人员具有对CRXDE Lite (`/crx/de`)和AEM Web控制台(`/system/console`)的完全访问权限。
 
-在本地开发(使用SDK)中，`/apps`和`/libs`可以直接写入，这与那些顶级文件夹不可变的云环境不同。
+在本地开发(使用SDK)中，`/apps`和`/libs`可以直接写入，这与云环境不同，在云环境中，这些顶级文件夹不可更改。
 
 ### AEM as a Cloud Service 开发工具 {#aem-as-a-cloud-service-development-tools}
 
@@ -215,11 +215,11 @@ AEM as a Cloud Service Developer Console具有一个指向Explain查询工具的
 
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于生产程序，对AEM as a Cloud Service Developer Console的访问权限由Adobe Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，AEM as a Cloud Service Developer Console可供任何拥有产品配置文件的用户访问AEM as a Cloud Service。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且存储库浏览器和用户还必须在AEM Users或AEM Administrators产品配置文件中，在创作和发布服务上定义，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=zh-Hans)。
+对于生产程序，对AEM as a Cloud Service Developer Console的访问权限由Adobe Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，AEM as a Cloud Service Developer Console可供任何拥有产品配置文件的用户访问AEM as a Cloud Service。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且存储库浏览器和用户还必须在AEM Users或AEM Administrators产品配置文件中，在创作和发布服务上定义，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### 性能监控 {#performance-monitoring}
 
-Adobe监控应用程序性能，并在出现性能下降时采取措施解决此问题。 目前，无法观察应用程序量度。
+Adobe会监控应用程序性能，并在发现性能下降时采取措施来解决问题。 目前，无法观察应用程序量度。
 
 ## 发送电子邮件 {#sending-email}
 
@@ -239,18 +239,18 @@ Adobe监控应用程序性能，并在出现性能下降时采取措施解决此
 
 ### 发送电子邮件 {#sending-emails}
 
-应使用[Day CQ邮件服务OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans#configuring-the-mail-service)，并且必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
+应使用[Day CQ邮件服务OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
 
 ### 配置 {#email-configuration}
 
-AEM中的电子邮件应使用[Day CQ邮件服务OSGi服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans#configuring-the-mail-service)发送。
+AEM中的电子邮件应使用[Day CQ邮件服务OSGi服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)发送。
 
-有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans)。 对于AEM as a Cloud Service，请注意对`com.day.cq.mailer.DefaultMailService OSGI`服务的以下必要调整：
+有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 对于AEM as a Cloud Service，请注意对`com.day.cq.mailer.DefaultMailService OSGI`服务的以下必要调整：
 
 * SMTP服务器主机名应设置为$[env:AEM_PROXY_HOST；default=proxy.tunnel]
 * 在配置高级联网时，SMTP服务器端口应设置为API调用中使用的portForwards参数中设置的原始代理端口的值。 例如，30465（而不是465）
 
-在配置高级联网时，SMTP服务器端口应设置为API调用中使用的portForwards参数中设置的`portDest`值，`portOrig`值应为具有意义的值，且在30000 - 30999的所需范围内。 例如，如果SMTP服务器端口为465，则应将端口30465用作`portOrig`值。
+在配置高级联网时，SMTP服务器端口应设置为API调用中使用的portForwards参数中设置的`portDest`值，`portOrig`值应为在30000 - 30999所需范围内的有意义值。 例如，如果SMTP服务器端口为465，则应将端口30465用作`portOrig`值。
 
 在这种情况下，并假定需要在&#x200B;**Day CQ邮件服务OSGI**&#x200B;服务的配置中启用SSL：
 
@@ -289,7 +289,7 @@ SMTP服务器主机应设置为邮件服务器的主机。
 
 ## 避免使用大的多值属性 {#avoid-large-mvps}
 
-AEM as a Cloud Service下的Oak内容存储库不会与过多的多值属性(MVP)一起使用。 经验法则是将最低限额MVP保持在1000以下。 然而，实际性能取决于许多因素。
+AEM as a Cloud Service下的Oak内容存储库不会与过多的多值属性(MVP)一起使用。 经验法则是将最低限额MVP保持在1000以下。 但是，实际性能取决于许多因素。
 
 在超过1000之后，默认情况下会记录警告。 它们与以下内容类似。
 
