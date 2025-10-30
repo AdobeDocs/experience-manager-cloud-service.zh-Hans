@@ -3,13 +3,13 @@ title: 为通用编辑器配置RTE
 description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # 为通用编辑器配置RTE {#configure-rte}
 
@@ -73,7 +73,7 @@ RTE配置由两部分组成：
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ RTE配置由两部分组成：
 * `hideTarget`： `true` — 从链接中完全排除目标属性
 
 仅当光标位于现有链接内时，`unlink`操作才会出现。 它删除链接格式，同时保留文本内容。
+
+### 图像操作 {#image}
+
+图像操作支持图片元素封装以生成响应式图像标记。 以下部分可供使用。
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### 图像配置选项 {#image-options}
+
+* `wrapInPicture`： `false` （默认） — 生成简单的`<img>`元素
+* `wrapInPicture`： `true` — 将图像包装在`<picture>`个元素中以用于响应式设计
 
 ### 其他操作 {#other}
 

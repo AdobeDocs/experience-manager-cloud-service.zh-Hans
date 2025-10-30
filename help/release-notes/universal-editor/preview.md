@@ -3,10 +3,10 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 65%
+source-wordcount: '132'
+ht-degree: 97%
 
 ---
 
@@ -27,15 +27,8 @@ ht-degree: 65%
 
 ## 即将推出的新功能 {#what-is-new}
 
-* 插入新RTE的图像
-* 新`/configuration`终结点
+* 待定
 
 ## 即将推出的改进 {#other-improvements}
 
-* 现在，如果操作是撤消的，则会通知更新事件。
-* `No results`字符串现在取决于通用编辑器标记中的浏览器区域设置。
-* 修复了通用编辑器发布按钮中多余的分行符。
-* 对修补API进行了清理。
-* 现在，“选择内容”按钮在Safari中可见。
-* RPM版本已修复。
-* CORS更新，以避免在保存后再次更新文本编辑的文本。
+* 待定
