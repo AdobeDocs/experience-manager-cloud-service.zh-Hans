@@ -105,7 +105,7 @@ ht-degree: 73%
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
 1. 选择&#x200B;**启动项**，这会列出现有启动项以及对&#x200B;**启动项控制台**&#x200B;的访问：
 
-   ![ Sites 控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![&#x200B; Sites 控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 选择相应的启动项，此时将显示可执行的操作列表：
 
@@ -133,4 +133,4 @@ ht-degree: 73%
 
 * 右上方的&#x200B;**启动项**&#x200B;按钮（在 Sites 控制台中导航启动项内容时）：
 
-  ![ Sites 控制台中的“启动项”选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![&#x200B; Sites 控制台中的“启动项”选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)

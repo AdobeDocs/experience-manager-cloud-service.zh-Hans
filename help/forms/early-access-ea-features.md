@@ -177,7 +177,7 @@ AEM Forms HTML5 Forms允许您以HTML5格式呈现现有XFA(XML Forms架构)表�
 
 使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services开发。 此命令行界面使您能够立即生成启动自定义组件开发所需的代码和布线 — 无样板，无麻烦。
 
->[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **关键功能：**
 
