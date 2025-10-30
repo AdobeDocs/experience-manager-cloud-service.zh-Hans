@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 20%
 
 ---
@@ -122,6 +122,17 @@ Cloud上的Interactive Communications是一款功能强大的解决方案，可�
 * **自定义字体：**&#x200B;嵌入自定义字体或组织批准的字体，以确保跨设备一致的品牌化PDF渲染。
 * **导入和导出：**&#x200B;跨环境无缝迁移和重用交互式通信及其片段和数据模型。
 
+* **模板锁定**：锁定模板中的内容和布局元素，以维护品牌完整性并防止未经授权的修改。
+
+* **内容溢出**：“允许在内容内出现分页符”选项适用于流式布局，以便平滑地编辑多页并更好地管理复杂文档的文本。
+
+* **XDP文件编辑**：您现在可以在浏览器中编辑XDP文件，而不是只在Forms Windows桌面上运行的Microsoft Designer。
+
+##### 动态页面编号
+
+在主页上自动显示“第#页，共##页”，以便跨多页文档进行清晰、一致的分页。
+
+
 
 #### 用例：
 
@@ -166,7 +177,7 @@ AEM Forms HTML5 Forms允许您以HTML5格式呈现现有XFA(XML Forms架构)表�
 
 使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services开发。 此命令行界面使您能够立即生成启动自定义组件开发所需的代码和布线 — 无样板，无麻烦。
 
->[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **关键功能：**
 

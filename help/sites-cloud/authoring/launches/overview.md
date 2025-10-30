@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 76%
+source-wordcount: '1027'
+ht-degree: 73%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 76%
 
 创建&#x200B;*Launch*&#x200B;是为了允许您进行更改以准备将来发布，同时维护当前内容。 对于AEM页面，这意味着您可以同时有效编辑两个版本：当前发布的页面，以及将来要同时发布的这些页面的一个版本。 到达该时间后，您可以替换原始页面并发布新版本。
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>启动项也可用于内容片段。 基本概念相同，但有关如何在AEM中管理这些概念存在差异。
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>有关完整的详细信息，请参阅[内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
 
 您创建了一个&#x200B;*Launch*，然后在编辑和更新&#x200B;*Launch*&#x200B;页面后，您&#x200B;*将它们提升回* Source *。*&#x200B;然后，您可以激活这些&#x200B;*Source*&#x200B;页面（顶级）。 提升会将启动项内容复制回源页面，此操作可以手动或自动完成（具体取决于创建和编辑启动项时设置的字段）。
 
@@ -107,7 +105,7 @@ ht-degree: 76%
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
 1. 选择&#x200B;**启动项**，这会列出现有启动项以及对&#x200B;**启动项控制台**&#x200B;的访问：
 
-   ![&#x200B; Sites 控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![ Sites 控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 选择相应的启动项，此时将显示可执行的操作列表：
 
@@ -115,13 +113,11 @@ ht-degree: 76%
 
 ## “启动项”控制台 {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>此控制台仅适用于页面的启动项。
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>要管理您的内容片段，请参阅[内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
 
 启动项控制台提供了启动项的概述，并允许您对列出的启动项执行操作。
 
@@ -137,4 +133,4 @@ ht-degree: 76%
 
 * 右上方的&#x200B;**启动项**&#x200B;按钮（在 Sites 控制台中导航启动项内容时）：
 
-  ![&#x200B; Sites 控制台中的“启动项”选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![ Sites 控制台中的“启动项”选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)

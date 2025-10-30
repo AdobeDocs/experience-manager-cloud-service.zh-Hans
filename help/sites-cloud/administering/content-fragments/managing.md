@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
+source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
 workflow-type: tm+mt
-source-wordcount: '2920'
+source-wordcount: '2927'
 ht-degree: 71%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
@@ -63,7 +63,9 @@ ht-degree: 71%
    * 在此，可以隐藏或显示文件夹树
    * 您可以选择树的特定分支
    * 可以调整其大小以显示嵌套文件夹
-   * 除了内容片段之外，您还可以查看[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)或[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)；您还可以压缩或展开指向面板的链接
+   * 除了内容片段之外，您还可以：
+      * 查看[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)或[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)；您还可以压缩或展开指向面板的链接
+      * 创建并管理[内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * 主/右侧面板 – 从此处，您可以：
    * 查看树的选定分支中的所有内容片段列表：
       * 将显示所选文件夹和所有子文件夹中的内容片段：

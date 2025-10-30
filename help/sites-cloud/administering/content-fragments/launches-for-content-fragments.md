@@ -1,21 +1,18 @@
 ---
-title: 内容片段的启动项
+title: 内容片段内的启动
 description: 了解如何在Adobe Experience Manager as a Cloud Service中使用内容片段启动项 通过启动项，您可以高效地为未来版本开发内容，同时维护当前内容片段。
 feature: Content Fragments
 role: User, Developer, Architect
-hide: true
-hidefromtoc: true
-index: false
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 231ce792429347882c93804d370e7a99111ec916
+source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 内容片段的启动项 {#launches-for-content-fragments}
+# 内容片段内的启动 {#launches-for-content-fragments}
 
 在Adobe Experience Manager (AEM) as a Cloud Service中，通过启动项，您可以高效地为未来版本开发内容。
 
@@ -261,9 +258,9 @@ ht-degree: 1%
 
 要在指定的日期和时间自动提升启动项，您需要：
 
-1. 从[启动项选项卡](#launches-in-the-content-fragment-console)的右侧面板中定义&#x200B;**提升日期**&#x200B;和时间。
+1. 从&#x200B;**启动项选项卡**&#x200B;的右侧面板中定义[提升日期](#launches-in-the-content-fragment-console)和时间。
 
-1. 如果内容可以在提升时发布，请在[创建启动项](#create-a-launch)时设置&#x200B;**发布就绪**，或从[启动项选项卡](#launches-in-the-content-fragment-console)的右侧面板设置。
+1. 如果内容可以在提升时发布，请在&#x200B;**创建启动项**&#x200B;时设置[发布就绪](#create-a-launch)，或从[启动项选项卡](#launches-in-the-content-fragment-console)的右侧面板设置。
 
 ## 删除启动项 {#delete-a-launch}
 

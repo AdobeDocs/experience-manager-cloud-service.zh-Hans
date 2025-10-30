@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2021'
 ht-degree: 85%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 85%
 
 >[!IMPORTANT]
 >
->此部分中描述的许多功能仅&#x200B;*在[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)中可用*；因此&#x200B;*联机* Adobe Experience Manager (AEM) as a Cloud Service，而不是本地实例。
+>此部分中描述的许多功能仅&#x200B;*在* Unified Shell[中可用](/help/overview/aem-cloud-service-on-unified-shell.md)；因此&#x200B;*联机* Adobe Experience Manager (AEM) as a Cloud Service，而不是本地实例。
 
 >[!IMPORTANT]
 >
@@ -57,7 +57,7 @@ ht-degree: 85%
 还可使用 AEM 核心组件的 Sling 模型 (JSON) 导出功能，以 JSON 格式投放内容片段。此投放形式：
 
 * 允许您使用组件管理要投放片段的哪些元素
-* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通信渠道的数量在逐年增加。通常，渠道称为投放机制，如：
 
@@ -85,7 +85,7 @@ ht-degree: 85%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本页和以下各页涉及创建、配置、维护和使用内容片段的任务：
 
@@ -103,6 +103,7 @@ ht-degree: 85%
 * 使用编辑器[分析](/help/sites-cloud/administering/content-fragments/analysis.md)您的内容片段的结构
 * [用 GraphQL 访问您的片段，以供按 Headless 投放到您的应用程序](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
 * [在Adobe Journey Optimizer中集成和使用您的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+* 创建并管理[内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [或使用您的片段创作页面](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -185,7 +186,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 可通过使用（引用组件的）[内容片段组件](/help/sites-cloud/authoring/fragments/content-fragments.md)在页面编辑器中找到内容片段：
 
-   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
+   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
 
 内容片段是一个具有以下性质的内容结构：
 
@@ -272,7 +273,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 负责片段的布局和投放；例如，渠道。
    * 片段需要一个或多个专用组件以定义布局和投放部分或全部元素/变体和关联的内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
-   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)。
+   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 内容片段控制台 {#content-fragments-console}
 
@@ -290,7 +291,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
-* [资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+* [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 * 有一批[键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)在此控制台中可用
 
