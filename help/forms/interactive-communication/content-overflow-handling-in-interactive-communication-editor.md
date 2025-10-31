@@ -4,10 +4,7 @@ description: 交互式通信编辑器中的内容溢出处理增强了文本在�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 16%
@@ -27,15 +24,14 @@ ht-degree: 16%
 
 ## 简介
 
-交互式通信编辑器中的“内容溢出处理”功能增强了文本在流式布局和定位布局中的行为方式。
-它确保流布局的内容连续性顺畅，并为定位布局提供可视警报，从而使作者在设计通信时获得更好的控制和灵活性。
+交互式通信编辑器中的“内容溢出处理”功能增强了文本在流式布局和定位布局中的行为方式。 它确保流布局的内容连续性顺畅，并为定位布局提供可视警报，从而使作者在设计通信时获得更好的控制和灵活性。
 
 ## 主要功能
 
 ### 流式布局
 
 - **新选项：**
-在内容中添加属性&#x200B;**允许分页**&#x200B;以控制溢出行为。 仅当将父子表单设置为“已流动”并且启用了&#x200B;**允许分页**&#x200B;属性时，此选项才可见。
+在内容中添加属性**允许分页**&#x200B;以控制溢出行为。 仅当将父子表单设置为“已流动”并且启用了&#x200B;**允许分页**&#x200B;属性时，此选项才可见。
 
 - **自动页面延续：**
 当内容超出可用空间时，将自动创建新页面，并且将继续无缝编辑。

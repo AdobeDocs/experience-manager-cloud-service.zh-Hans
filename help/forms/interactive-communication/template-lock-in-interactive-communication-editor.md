@@ -4,10 +4,7 @@ description: 利用交互式通信编辑器中的模板锁定，模板作者可�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: dae482e1f57a3504bf08926b57b89ca9266bd36a
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 11%

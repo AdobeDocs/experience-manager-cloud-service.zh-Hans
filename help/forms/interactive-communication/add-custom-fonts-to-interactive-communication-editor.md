@@ -4,13 +4,10 @@ description: 在交互式通信编辑器中添加自定义字体，以便能够�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 24%
+ht-degree: 31%
 
 ---
 
@@ -39,5 +36,5 @@ ht-degree: 24%
 
 >[!NOTE]
 >
-> 有关详细的配置步骤，用户可以遵循指南[使用自定义字体](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> &#x200B;>完成这些步骤并运行管道后，自定义字体可直接在交互式通信编辑器中使用。
+> 有关详细的配置步骤，用户可以遵循指南[使用自定义字体](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> >完成这些步骤并运行管道后，自定义字体可直接在交互式通信编辑器中使用。
