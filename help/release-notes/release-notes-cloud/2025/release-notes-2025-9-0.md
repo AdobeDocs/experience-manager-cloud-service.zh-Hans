@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 92%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 调用表单数据模型的工作流步骤现在支持处理基于 SharePoint 列表的表单数据模型中 Base64 编码附件数组的工作流端元数据。通过此增强功能，工作流步骤可以传递、存储和检索每个附件的元数据，例如文件名、MIME 类型和自定义属性。这一功能实现了更全面的数据管理，并促进了下游的无缝集成。详情请参阅[针对 SharePoint 列表附件的调用表单数据模型工作流步骤增强支持](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)。
 
-### AEM Forms 中的预发行版功能
-
-**规则编辑器增强功能**
-
-规则编辑器现在支持增强的导航，并允许在输入参数中使用函数和数学表达式。
-
-**支持事件负载的增强导航**
-
-调用服务处理程序中的 `Navigate To` 操作现已支持 `EVENT_PAYLOAD`，使表单作者能够基于事件响应配置后续操作。此增强功能在设计提交后的工作流时提供了更大的灵活性，确保更顺畅的过渡和更个性化的用户体验。更多信息请参阅[支持事件负载的增强导航](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
-
-**输入参数中的函数与数学表达式支持**
-
-输入参数现在支持函数调用和数学表达式，使表单作者能够直接传递动态计算的值。此增强功能简化了规则配置，消除了对额外字段的需求，使表单更适应复杂逻辑和计算驱动的场景。更多信息请参阅[输入参数中的函数与数学表达式支持](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以�
 
 这些发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-**交互式通信编辑器中的 PDF 预览**
+* **交互式通信编辑器中的 PDF 预览**
 
-用户可以在无数据、使用本地 JSON 数据文件或使用数据模型的数据情况下预览交互式通信 PDF，从而实现灵活的数据驱动测试。更多信息请参阅[交互式通信编辑器中的 PDF 预览](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
+  用户可以在无数据、使用本地 JSON 数据文件或使用数据模型的数据情况下预览交互式通信 PDF，从而实现灵活的数据驱动测试。更多信息请参阅[交互式通信编辑器中的 PDF 预览](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
 
-**交互式通信中的自定义字体支持**
+* **交互式通信中的自定义字体支持**
 
-自定义字体功能允许用户在交互式通信中嵌入自定义或经组织批准的字体，确保在各类设备和平台上的 PDF 渲染保持一致并与品牌风格相符。更多信息请参阅[交互式通信中的自定义字体支持](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
+  自定义字体功能允许用户在交互式通信中嵌入自定义或经组织批准的字体，确保在各类设备和平台上的 PDF 渲染保持一致并与品牌风格相符。更多信息请参阅[交互式通信中的自定义字体支持](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
 
-**交互式通信的导入与导出**
+* **交互式通信的导入与导出**
 
-此功能支持在不同环境间迁移和复用交互式通信。您现在可以将交互式通信及其关联的片段和数据模型从一个环境导出，并导入到另一个环境。更多信息请参阅[交互式通信的导入与导出](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
+  此功能支持在不同环境间迁移和复用交互式通信。您现在可以将交互式通信及其关联的片段和数据模型从一个环境导出，并导入到另一个环境。更多信息请参阅[交互式通信的导入与导出](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
+
+* **规则编辑器增强功能**
+
+  规则编辑器现在支持增强的导航，并允许在输入参数中使用函数和数学表达式。
+
+   * **支持事件有效负载的增强导航**： Invoke Service处理程序中的`Navigate To`操作现在支持`EVENT_PAYLOAD`，使表单作者能够根据事件响应配置跟进操作。 此增强功能在设计提交后的工作流时提供了更大的灵活性，确保更顺畅的过渡和更个性化的用户体验。更多信息请参阅[支持事件负载的增强导航](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
+
+   * **输入参数中支持函数和数学表达式**：输入参数现在支持函数调用和数学表达式，使表单作者可以直接传递动态计算的值。 此增强功能简化了规则配置，消除了对额外字段的需求，使表单更适应复杂逻辑和计算驱动的场景。更多信息请参阅[输入参数中的函数与数学表达式支持](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >此功能自 9 月 25 日起作为有限可用性功能提供。
->&#x200B;>请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
+>>请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
 
 ### 适用于 Eclipse 的 AEM 开发人员工具新版本 {#aem-develeper-tools-for-eclipse}
 

@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a974859746ca20f1979b773668a66be0197f623d
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 20%
+source-wordcount: '3076'
+ht-degree: 19%
 
 ---
 
@@ -177,7 +177,7 @@ AEM Forms HTML5 Forms允许您以HTML5格式呈现现有XFA(XML Forms架构)表�
 
 使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services开发。 此命令行界面使您能够立即生成启动自定义组件开发所需的代码和布线 — 无样板，无麻烦。
 
->[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **关键功能：**
 
@@ -302,7 +302,11 @@ AEM Forms Doc Assurance API是AEM Forms Cloud Service Communication API中的一
 
 ### 可视规则编辑器中的增强功能
 
-* 自适应Forms中的可视规则编辑器现在支持[直接API集成，而无需表单数据模型](/help/forms/api-integration-in-rule-editor.md)。 您可以通过输入其JSON URL或使用cURL命令导入配置来连接到API端点。 集成后，可以使用`Invoke Service`操作调用API。
+* [直接API集成](/help/forms/api-integration-in-rule-editor.md)：自适应Forms中的可视化规则编辑器现在支持直接API集成，而无需表单数据模型。 您可以通过输入其JSON URL或使用cURL命令导入配置来连接到API端点。 集成后，可以使用`Invoke Service`操作调用API。
+
+* [支持事件有效负载的增强导航](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)： Invoke Service处理程序中的&#x200B;**导航到**&#x200B;操作支持`EVENT_PAYLOAD`，允许表单作者根据事件响应配置跟进操作。
+
+* [输入参数中支持函数和数学表达式](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)：输入参数现在支持函数调用和数学表达式，使表单作者可以直接传递动态计算的值。
 
 ## 另请参阅
 
