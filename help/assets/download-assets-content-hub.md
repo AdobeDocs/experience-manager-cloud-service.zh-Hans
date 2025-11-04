@@ -1,11 +1,11 @@
 ---
 title: 从Content Hub下载资源
-description: 了解如何从Content Hub门户下载单个或多个资源及其演绎版。
+description: 了解如何从Content Hub门户下载一个或多个资源及其演绎版。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '941'
 ht-degree: 1%
 
 ---
@@ -22,23 +22,35 @@ ht-degree: 1%
 
 要下载一个或多个资源及其演绎版，请执行以下步骤：
 
-1. 要下载资产，请选择资产卡上可用的![下载](/help/assets/assets/download-icon.svg)以预览资产，选择可用的演绎版，然后单击对话框中的&#x200B;**[!UICONTROL 下载]**&#x200B;选项以将选定的演绎版下载为ZIP文件。 如果对话框显示资产许可证（用于许可资产），请接受许可条款和条件，然后单击&#x200B;**[!UICONTROL 下载]**。
-   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+* 要下载单个资源及其演绎版，请执行以下操作：
+   1. 选择资产卡上可用的![下载](/help/assets/assets/download-icon.svg)以预览资产及其可用演绎版。
+   1. 选择可用的格式副本，然后单击对话框中的&#x200B;**[!UICONTROL 下载]**&#x200B;选项以将所选格式副本下载为ZIP文件。 如果对话框显示资产许可证（用于许可资产），请接受许可条款和条件，然后单击&#x200B;**[!UICONTROL 下载]**。
+      ![下载资源](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+或者，单击资产缩略图，然后单击![下载](/help/assets/assets/download-icon.svg)以选择并查看对话框上的可用演绎版，然后再下载。
 
-   或者，单击资产缩略图并选择![下载](/help/assets/assets/download-icon.svg)以选择并查看对话框上的可用演绎版，然后再下载。
+* 要下载多个资产及其演绎版，请执行以下操作：
+   1. 选择资源，单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**，然后在&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框中查看选定资源的列表。 单击资产旁边的![取消选择](/help/assets/assets/Close.svg)以将其从列表中取消选择。
+   1. 选择一个或多个演绎版以将它们下载为ZIP文件。 选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;和&#x200B;**[!UICONTROL 静态演绎版]**&#x200B;可下载每个所选资源的所有可用静态演绎版和智能裁切演绎版。
+   1. 可选：取消选择&#x200B;**[!UICONTROL 为每个资源创建单独的文件夹]**，以将所选资源及其演绎版下载为zip文件中文件夹内的平面层次结构。 默认情况下，[!DNL Content Hub]会将所选资源及其演绎版下载到zip文件中的单独文件夹中。
 
-1. 要下载多个资源，请选择这些资源，单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**，然后在&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框中查看选定资源的列表。 单击资产旁边的![取消选择](/help/assets/assets/Close.svg)以将其从列表中取消选择。 选择一个或多个格式副本并单击&#x200B;**[!UICONTROL 下载]**&#x200B;以将它们下载为单个ZIP文件。 选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;和&#x200B;**[!UICONTROL 静态演绎版]**&#x200B;可下载每个所选资源的所有可用静态演绎版和智能裁切演绎版。
-   ![下载多个资源](/help/assets/assets/download-multiple-assets-CH.png)
+      >[!NOTE]
+      >
+      > * Content Hub会将您的选择保存为首选项（**[!UICONTROL 为每个资源创建一个单独的文件夹]**），并保留它以供将来下载。
+      > * **[!UICONTROL 为每个资产创建单独的文件夹]**&#x200B;选项仅适用于经过身份验证的[!DNL Content Hub]用户。 [!DNL Content Hub]允许公共用户将资源下载为单个资源。
+
+   1. 单击&#x200B;**[!UICONTROL 下载]**可下载所选资源及其演绎版。
+      ![下载多个资源](/help/assets/assets/bulk-asset-download-content-hub.png)
+
 在下载过程中，您可以继续使用[!DNL Content Hub]。 在下载过程中，Content Hub不会中断您的工作流。
-   ![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载它们。
-   ![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
+如果**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**以下载它们。
+![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
-   >[!NOTE]
-   >
-   >* 仅当使用[[!UICONTROL 配置]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)用户界面启用呈现版本的可见性时，才会显示呈现版本。
-   >* 有权访问[[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md)的用户可以查看和下载动态和智能裁剪演绎版。
-   >* 仅当使用[!DNL Assets as a Cloud Service]创作环境批准资产时，才会显示许可证预览。 如需了解更多信息，请参阅[管理 Content Hub 上的已授予许可资源](/help/assets/manage-licensed-assets-on-content-hub.md)。
+>[!NOTE]
+>
+>* 仅当使用[[!UICONTROL 配置]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)用户界面启用呈现版本的可见性时，才会显示呈现版本。
+>* 有权访问[[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md)的用户可以查看和下载动态和智能裁剪演绎版。
+>* 仅当使用[!DNL Assets as a Cloud Service]创作环境批准资产时，才会显示许可证预览。 如需了解更多信息，请参阅[管理 Content Hub 上的已授予许可资源](/help/assets/manage-licensed-assets-on-content-hub.md)。
 
 <!--
 
@@ -123,7 +135,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## 演绎版类型 {#types-of-renditions}
 
-资源演绎版是资源原始文件的不同表示形式。 这些内容可以包括缩略图、针对Web或移动设备的优化版本、加水印或受DRM保护的文件，甚至包括智能裁剪等动态元素。 它们不需要匹配原始文件类型，而是在各种用例中用于表示资源。
+资源演绎版是资源原始文件的不同表示形式。 这些呈现版本可以包括缩略图、针对Web或移动设备的优化版本、加水印或受DRM保护的文件，甚至包括智能裁剪等动态元素。 它们不需要匹配原始文件类型，而是在各种用例中用于表示资源。
 
 了解有关[在 [!DNL Experience Manager Assets]](/help/assets/renditions.md)中查看和管理演绎版的更多信息。
 
