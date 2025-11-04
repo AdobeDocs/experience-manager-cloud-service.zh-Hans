@@ -44,7 +44,7 @@ Content Hub现在支持在平面层次结构中下载多个资源演绎版，而
 
 Content Hub管理员现在可以在Content Hub中固定收藏集以进行快速访问。 固定收藏集显示在收藏集主页上的专用&#x200B;**[!UICONTROL 固定]**&#x200B;部分中，这样可以更轻松地使重要收藏集保持在可触及的范围之内。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
