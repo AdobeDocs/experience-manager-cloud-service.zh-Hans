@@ -3,15 +3,20 @@ title: 在管理员视图中利用AI生成的元数据增强内容发现
 description: 了解如何在管理员视图中使用人工智能生成的元数据增强内容发现
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 7%
+source-wordcount: '646'
+ht-degree: 8%
 
 ---
 
 
 # 使用AI生成的元数据增强内容发现 {#ai-smart-tags}
+
+| UI | 文章链接 |
+| -------- | ---------------------------- |
+| 资源视图 | [单击此处](/help/assets/ai-generated-metadata-assets-view.md) |
+| 管理员视图 | 本文 |
 
 AI不会依赖手动输入，而是自动将描述性标记分配给数字资产。 这些 AI 生成的标记提高了元数据的质量，使资产更易于搜索、分类和推荐。此方法不仅通过消除手动标记而提高了效率，而且确保了跨大量数字内容的一致性和可扩展性。 例如，如果资产是图像，AI可以识别其中的对象、场景、情感甚至品牌徽标，并生成相关标记，如“日落”、“海滩”、“休假”或“微笑”。 人工智能生成的内容可以通过利用语义和词汇搜索技术增强对资产的搜索。 查看更多[搜索Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
