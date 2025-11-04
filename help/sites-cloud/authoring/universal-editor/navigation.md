@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 22%
+source-wordcount: '1818'
+ht-degree: 20%
 
 ---
+
 
 # 访问和导航通用编辑器 {#navigating}
 
@@ -71,49 +72,17 @@ UI分为以下几个主要区域。
 >
 >通用编辑器提供了许多[自定义选项](/help/implementing/universal-editor/customizing.md)和[扩展点](/help/implementing/universal-editor/extending.md)，它们可以修改并添加到编辑器的功能中。 因此，您可能会看到不同于此处记录的标准选项。
 
-### Experience Cloud 标题 {#experience-cloud-header}
+### Experience Platform顶部导航栏 {#experience-cloud-header}
 
-Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让您知道您在 Experience Cloud 中的位置，并帮助您导航到其他 Experience Cloud 应用程序。
+Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚点，可让您知道您在 Experience Cloud 中的位置，并帮助您导航到其他 Experience Cloud 应用程序。
 
 ![Experience Cloud 标题](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)之类的工具。
-
-![“全局导航”按钮](assets/global-navigation.png)
-
-#### 组织 {#organization}
-
-这将显示您当前登录的组织。如果您的Adobe ID与多个组织关联，请选择切换到其他组织。
-
-![组织指示器](assets/organization.png)
-
-#### 帮助中心 {#help}
-
-通过帮助中心图标，可快速访问学习和支持资源。
-
-![帮助](assets/help.png)
-
-#### 通知 {#notifications}
-
-此图标带有一个标记，显示当前分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的数量。
-
-![通知](assets/notifications.png)
-
-#### 应用程序 {#solutions}
-
-通过点按或单击应用程序切换器，可快速跳转到其他Experience Cloud解决方案。
-
-![应用程序切换器](assets/solutions.png)
+有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帐户 {#user-properties}
 
-选择代表您的用户的图标以访问您的帐户设置。 如果您尚未配置用户图片，系统会随机分配一个图标。
-
-![用户属性](assets/user-properties.png)
-
-点击或单击帐户图标会打开一个包含您的用户设置的菜单。 这些设置通常适用于Cloud Manager，其功能在该文档中详细介绍[。](/help/implementing/cloud-manager/navigation.md)
+点击或单击帐户图标会打开一个包含您的用户设置的菜单。
 
 ![环境切换器](assets/environment-switcher.png)
 
@@ -218,7 +187,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 

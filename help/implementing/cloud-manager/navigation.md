@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+source-git-commit: 4b09357276be8b57c72f830a39d98ab0a593efb1
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 39%
+source-wordcount: '1595'
+ht-degree: 37%
 
 ---
 
@@ -58,20 +58,16 @@ Cloud manage UI 主要由两个图形界面组成：
 
 有两个工具栏彼此叠放在一起。
 
-#### Cloud Manager 标头 {#cloud-manager-header}
+#### Experience Platform顶部导航栏 {#cloud-manager-header}
 
-第一个是 Cloud Manager 标头，它会在您浏览 Cloud Manager 时持久显示。作为一个锚点，它有助于您访问适用于各个 Cloud Manager 程序的设置和信息。
+第一个是Experience Platform顶部导航栏，该栏在导航Cloud Manager时是永久性的。 作为一个锚点，它有助于您访问适用于各个 Cloud Manager 程序的设置和信息。
 
-![Experience Cloud 标头](assets/experience-cloud-header.png)
+![Experience Platform顶部导航栏](assets/experience-cloud-header.png)
 
-1. 单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)（显示或隐藏侧菜单）可让您访问各种选项卡，这些选项卡可引导您访问各个程序的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
-1. 单击Adobe Cloud Manager按钮可让您返回Cloud Manager的“我的程序”控制台，无论您在Cloud Manager中的哪个位置。
-1. 单击&#x200B;**反馈**，向 Adobe 提供有关 Cloud Manager 的反馈。
-1. 单击组织选择器可显示您当前已登录的组织（在本例中为Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请单击以切换到另一个组织。
-1. 单击![应用程序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) （解决方案切换器）可快速跳转到其他Experience Cloud解决方案。
-1. 单击![帮助图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg)可让您快速访问学习和支持资源。
-1. 单击![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）查看通知和公告等。
-1. 单击表示用户对您的用户设置的访问权限的图标。 如果您尚未配置用户图片，系统会随机分配一个图标。
+* ![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)（显示或隐藏侧菜单）可让您访问各种选项卡，这些选项卡可带您访问各个程序的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
+* ![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）允许您访问通知和公告等。
+
+有关Experience Platform顶部导航栏的更多详细信息，请参阅[Adobe Experience Platform UI指南。](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 程序工具栏 {#program-toolbar}
 
@@ -126,7 +122,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 分配给项目的名称。 上图将“SecurBank Sample”显示为程序名称。
 * 服务类型：
    * **Experience Manager Cloud** — 用于AEM as a Cloud Service程序
-   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙盒
    * 生产
@@ -153,7 +149,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 导航到项目的特定![数据图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [环境](/help/implementing/cloud-manager/manage-environments.md)
 * 打开![项目概述图标](/help/implementing/cloud-manager/assets/program-overview.svg) [项目概述](#program-overview)
 * ![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -182,7 +178,7 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 对程序[环境的概述](#environments)
 1. 对程序[管道的概述](#pipelines)
 1. [计划绩效](#performance)概述
-1. [有用资源](#useful-resources)的链接
+1.  [有用资源](#useful-resources)的链接
 
 ### 工具栏 {#program-overview-toolbar}
 
