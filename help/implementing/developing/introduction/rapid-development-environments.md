@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: eb87467b1cd3338a409c2aeded74b3bb38d2e58c
 workflow-type: tm+mt
-source-wordcount: '5391'
+source-wordcount: '5446'
 ht-degree: 3%
 
 ---
@@ -19,13 +19,18 @@ RDE使开发人员能够快速部署和审查更改，从而最大限度地减�
 
 在RDE中测试更改后，可以通过Cloud Manager管道将它们部署到常规云开发环境。
 
+开发环境和快速开发环境应仅限于开发、错误分析和功能测试，并且不能用于处理高工作负载和大量内容。
+
+>[!NOTE]
+> 快速开发环境应仅限于开发、错误分析和功能测试，不应设计为处理高工作负载或大量内容。
+
 >[!NOTE]
 > 与RDE开发人员联系，了解Adobe的[不和谐频道](https://discord.com/channels/1131492224371277874/1245304281184079872)。 欢迎您就RDE主题提出任何问题或给予反馈。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-您可以看到其他视频演示[如何设置它](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[开发生命周期](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)。
+您可以看到其他视频演示[如何设置它](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[开发生命周期](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)。
 
 ## 简介 {#introduction}
 
@@ -57,7 +62,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
 
    * **添加环境**&#x200B;选项可能由于缺少权限或根据许可的资源而被禁用。
 
-1. 在&#x200B;**添加环境**&#x200B;对话框中，执行以下操作：
+1. 在&#x200B;**添加环境**&#x200B;对话框中执行以下操作：
 
    * 在&#x200B;**选择环境类型**&#x200B;标题下选择&#x200B;**快速开发**。
       * 可用/已用环境的数量显示在环境类型后面的括号中。
@@ -114,7 +119,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
    >[!NOTE]
    > 带有`--no-open`选项的登录命令在终端中输出URL，而不是打开默认浏览器。 您可以在浏览器的&#x200B;**无痕窗口**&#x200B;中复制并打开它。 此功能可确保主浏览器窗口中的当前会话不受影响，从而允许您使用任务所需的特定帐户和组织登录。
 
-   第一个命令将在您的本地`.aio`配置文件中创建一个名为`mycontext`的新登录上下文配置（如果需要，将创建该文件）。 第二个命令将上下文`mycontext`设置为“当前”上下文；即默认值。
+   第一个命令将在您的本地`mycontext`配置文件中创建一个名为`.aio`的新登录上下文配置（如果需要，将创建该文件）。 第二个命令将上下文`mycontext`设置为“当前”上下文；即默认值。
 
    有了此配置，登录命令会自动将登录令牌存储在上下文`mycontext`中，从而使其保持在本地。
 
@@ -179,7 +184,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 可以使用[查看组织ID](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下记录的方法查找您自己的组织ID。
+   * 可以使用[查看组织ID](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下记录的方法查找您自己的组织ID。
 
 1. 接下来，配置您的项目ID：
 
@@ -195,7 +200,7 @@ retrieving programs of your organization ...
 
    这些步骤要求您成为Cloud Manager **开发人员 — Cloud Service**&#x200B;产品配置文件的成员。 有关更多详细信息，请参阅[将团队成员分配给Cloud Manager产品配置文件 — 分配开发人员产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
 
-有关更多信息和演示，请观看视频教程[如何设置RDE (06:24)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
+有关更多信息和演示，请观看视频教程[如何设置RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
 </details>
 
 ## 在开发新功能时使用RDE {#using-rde-while-developing-a-new-feature}
@@ -357,7 +362,7 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 
 `mvn clean package`
 
-或者使用`dispatcher`模块的`src`目录中的以下zip命令：
+或者使用`src`模块的`dispatcher`目录中的以下zip命令：
 
 `zip -y -r dispatcher.zip .`
 
@@ -524,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-有关更多信息和演示，请参阅视频教程[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
+有关更多信息和演示，请参阅视频教程[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
 
 
 ## 从外部Git提供商部署到RDE {#deploy-to-rde}
@@ -545,7 +550,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 * 当前，仅AEM内容和Dispatcher包支持部署到RDE。
 * 尚不支持部署其他包类型(例如，完整的AEM应用程序包)。
-* 目前，不支持使用注释重置RDE环境。 相反，必须使用现有的AIO CLI重置命令，如此处[&#128279;](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)所述的。
+* 目前，不支持使用注释重置RDE环境。 相反，必须使用现有的AIO CLI重置命令，如此处[所述的](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)。
 
 **工作方式**
 
@@ -1096,7 +1101,7 @@ RDE重置启动后，通常需要几分钟才能完成并将环境恢复到默�
 >
 >RDE OSGI配置的唯一性在于，它继承由捆绑包的`dev`运行模式声明的任何OSGI属性的值。
 
-RDE不同于其他环境，因为内容可以安装在`/apps`下的`install.rde`文件夹（或`install.author.rde`或`install.publish.rde`）中。 此功能允许您使用命令行工具将内容提交到Git并将其交付到RDE。
+RDE不同于其他环境，因为内容可以安装在`install.rde`下的`install.author.rde`文件夹（或`install.publish.rde`或`/apps`）中。 此功能允许您使用命令行工具将内容提交到Git并将其交付到RDE。
 
 ## 填充内容 {#populating-content}
 
@@ -1104,7 +1109,7 @@ RDE不同于其他环境，因为内容可以安装在`/apps`下的`install.rde`
 
 1. 使用命令行工具将内容包显式同步到RDE
 
-1. 将示例内容放置在Git中的`/apps`下的`install.rde`文件夹内并提交它，然后使用命令行工具将总体内容包同步到RDE。
+1. 将示例内容放置在Git中的`install.rde`下的`/apps`文件夹内并提交它，然后使用命令行工具将总体内容包同步到RDE。
 
 1. 使用[内容复制工具](/help/implementing/developing/tools/content-copy.md)从生产、暂存或开发环境或其他RDE中复制定义的内容集。
 
@@ -1151,7 +1156,7 @@ Forms开发人员可以使用AEM Forms Cloud Service快速开发环境快速开�
 
 ## rde教程
 
-要了解AEM as a Cloud Service中的RDE，请参阅视频教程，其中演示了[如何设置它、如何使用它以及开发生命周期(01:25)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/overview)。
+要了解AEM as a Cloud Service中的RDE，请参阅视频教程，其中演示了[如何设置它、如何使用它以及开发生命周期(01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)。
 
 ## 疑难解答 {#troubleshooting}
 
@@ -1159,7 +1164,7 @@ Forms开发人员可以使用AEM Forms Cloud Service快速开发环境快速开�
 
 #### 如何为现有RDE获取最新的AEM版本 {#get-latest-aem-version}
 
-创建后，会将RDE设置为最新可用的Adobe Experience Manager (AEM)版本。 可以使用Cloud Manager或`aio aem:rde:reset`命令执行的[RDE重置](#reset-rde)会循环RDE并将其设置为最新可用的AEM版本。
+创建后，会将RDE设置为最新可用的Adobe Experience Manager (AEM)版本。 可以使用Cloud Manager或[命令执行的](#reset-rde)RDE重置`aio aem:rde:reset`会循环RDE并将其设置为最新可用的AEM版本。
 
 ### aio RDE插件故障诊断 {#aio-rde-plugin-troubleshooting}
 
