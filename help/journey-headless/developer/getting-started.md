@@ -148,7 +148,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 请务必明确定义项目的范围。范围告知验收标准，并让您创建完成的定义。
 
-您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”一般来说，答案应该是您拥有或将来会拥有您使用自己的开发工具而非 AEM 构建的体验应用程序。此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)，并找到更适合您要完成的操作的部分。
+您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”一般来说，答案应该是您拥有或将来会拥有您使用自己的开发工具而非 AEM 构建的体验应用程序。此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans)，并找到更适合您要完成的操作的部分。
 
 ### 角色和职责 {#roles-responsibilities}
 
@@ -287,7 +287,7 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
-* [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Site&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.Headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
+* [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/zh-hans?Solution=Experience+Manager&Solution=Experience+Manager+Site&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.Headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。
 * [创作概念](/help/sites-cloud/authoring/author-publish.md) – 有关 AEM 的创作环境的技术文档，包括作者-发布设置的详细信息
 * [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – 有关在 AEM 上发布内容的技术文档

@@ -26,7 +26,7 @@ ht-degree: 100%
 * 拥有标准化的用户界面。
 * 具有可配置的编辑行为。
 * 使用通过基于 Granite UI 组件的子元素构建的对话框。
-* 使用 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 开发的它们。
+* 使用 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans) 开发的它们。
 * 它们经过开发，可创建扩展默认功能的自定义组件。
 
 由于组件是模块化的，因此您可以：
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 ## AEM 核心组件 {#aem-core-components}
 
-[AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)是一组用于 AEM 的标准化网站内容管理 (WCM) 组件，可加快开发速度并降低网站的维护成本。
+[AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)是一组用于 AEM 的标准化网站内容管理 (WCM) 组件，可加快开发速度并降低网站的维护成本。
 
 核心组件随 AEM as a Cloud Service 提供，[WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)说明了如何实施和使用这些组件。这些组件随所有源代码一起提供，可以按原样使用或用作已修改或扩展的组件的起点。
 

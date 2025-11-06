@@ -43,7 +43,7 @@ AEM SDK 用于构建和部署自定义代码。它是您在上线前开发和测
 
 与 AEM SDK 不同，AEM **Headless SDK** 是一组库，客户端可以使用这些库通过 HTTP 快速轻松地与 AEM Headless API 进行交互。
 
-有关详细信息，请参阅[AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)。
+有关详细信息，请参阅[AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=zh-Hans)。
 
 ## 其他开发工具 {#additional-development-tools}
 

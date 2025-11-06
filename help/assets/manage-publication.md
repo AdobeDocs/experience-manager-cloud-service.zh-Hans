@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 在Experience Manager Assets中管理发布 {#manage-publication-in-aem}
 
-作为[!DNL Adobe Experience Manager Assets]管理员，您可以将包含资源的资源和文件夹从创作实例发布到[!DNL Experience Manager Assets]、[!DNL Dynamic Media]和[!DNL Brand Portal]。 此外，您还可以计划在稍后的日期或时间发布资产或文件夹。 发布后，用户可以访问资产，并进一步将资产分发给其他用户。 默认情况下，您可以将资源和文件夹发布到[!DNL Experience Manager Assets]。 但是，您可以将[!DNL Experience Manager Assets]配置为启用发布到[[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html)和[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
+作为[!DNL Adobe Experience Manager Assets]管理员，您可以将包含资源的资源和文件夹从创作实例发布到[!DNL Experience Manager Assets]、[!DNL Dynamic Media]和[!DNL Brand Portal]。 此外，您还可以计划在稍后的日期或时间发布资产或文件夹。 发布后，用户可以访问资产，并进一步将资产分发给其他用户。 默认情况下，您可以将资源和文件夹发布到[!DNL Experience Manager Assets]。 但是，您可以将[!DNL Experience Manager Assets]配置为启用发布到[[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hans)和[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=zh-Hans)。
 
 您可以使用&#x200B;**[!UICONTROL 界面中提供的]**&#x200B;快速发布&#x200B;**[!UICONTROL 或]**&#x200B;管理发布[!DNL Experience Manager Assets]选项，在资产或文件夹级别发布或取消发布资产。 如果您对[!DNL Experience Manager Assets]中的原始资源或文件夹进行后续修改，则在从[!DNL Experience Manager Assets]重新发布之前，这些更改不会反映在发布实例中。 它可确保进行中的更改在发布实例中不可用。 发布实例中只有管理员发布的已批准更改可用。
 
@@ -161,20 +161,20 @@ Only the selected folder content and references are published.
 * `Immediate`
 * `Upon Activation`
 
-**[!UICONTROL 立即]**&#x200B;和&#x200B;**[!UICONTROL 激活时]**&#x200B;模式的发布过程一致，但&#x200B;**[!UICONTROL 选择性发布]**&#x200B;不同。 请参阅[在Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html)中配置文件夹级别的选择性发布。 在文件夹中配置选择性发布后，可以执行以下任一操作：
+**[!UICONTROL 立即]**&#x200B;和&#x200B;**[!UICONTROL 激活时]**&#x200B;模式的发布过程一致，但&#x200B;**[!UICONTROL 选择性发布]**&#x200B;不同。 请参阅[在Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hans)中配置文件夹级别的选择性发布。 在文件夹中配置选择性发布后，可以执行以下任一操作：
 
-* [使用“管理发布”有选择地将资源发布到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [使用“管理发布”从Dynamic Media或Experience Manager有选择地取消发布资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [使用快速发布将资源发布到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
-* [通过搜索结果有选择地发布或取消发布资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
+* [使用“管理发布”有选择地将资源发布到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hans#selective-publish-manage-publication)
+* [使用“管理发布”从Dynamic Media或Experience Manager有选择地取消发布资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hans#selective-unpublish-manage-publication)
+* [使用快速发布将资源发布到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hans#quick-publish-aem-dm)
+* [通过搜索结果有选择地发布或取消发布资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hans#selective-publish-unpublish-search-results)
 
 ## 将资源发布到Brand Portal {#publish-assets-to-brand-portal}
 
 您可以将资源、文件夹和收藏集发布到[!DNL Experience Manager Assets Brand Portal]实例。
 
-* [将资产发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-assets-to-bp)
-* [将文件夹发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
-* [将收藏集发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
+* [将资产发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hans#publish-assets-to-bp)
+* [将文件夹发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hans#publish-folders-to-brand-portal)
+* [将收藏集发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hans#publish-collections-to-brand-portal)
 
 ## 要求发布 {#request-publication}
 

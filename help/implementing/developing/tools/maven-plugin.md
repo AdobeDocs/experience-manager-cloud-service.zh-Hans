@@ -41,7 +41,7 @@ AEM as a Cloud Service遵循由最新的AEM项目原型实施的包管理和项�
 
 >[!TIP]
 >
->请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两项功能。
+>请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)文档。 AEM 6.5完全支持这两项功能。
 
 ## 获取内容包Maven插件 {#obtaining-the-content-package-maven-plugin}
 
@@ -215,4 +215,4 @@ rm目标的所有参数在[公共参数](#common-parameters)部分中进行了�
 
 >[!TIP]
 >
->请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两项功能。
+>请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)文档。 AEM 6.5完全支持这两项功能。

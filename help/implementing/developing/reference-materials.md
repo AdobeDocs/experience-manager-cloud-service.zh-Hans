@@ -59,7 +59,7 @@ AEM基于以下四个主要Java API集构建，并按优先级降序排列。
 
 >[!TIP]
 >
->有关这些准则的详细信息，请参阅文档[了解Java API最佳实践](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)。
+>有关这些准则的详细信息，请参阅文档[了解Java API最佳实践](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=zh-Hans)。
 
 ## AEM交付和内容管理服务及API {#delivery-apis}
 
@@ -67,7 +67,7 @@ AEM提供了可自定义的组件和内容交付选项。
 
 | 功能 | 描述 |
 |---|---|
-| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 适用于AEM的标准化网站内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
+| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 适用于AEM的标准化网站内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
 | [JSON导出程序](/help/implementing/developing/components/json-exporter.md) | 以JSON数据模型格式交付任何AEM页面的内容 |
 | [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
 | [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) | 内容片段和内容片段模型OpenAPI |
@@ -76,7 +76,7 @@ AEM提供了可自定义的组件和内容交付选项。
 |  |  |
 | [Assets API](/help/assets/mac-api-assets.md) | 允许对资源执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制、元数据、演绎版和注释。 请参阅AEM Assets HTTP API |
 | [内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 通过CRUD操作直接通过HTTP API访问内容片段内容 |
-| [内容片段Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支持的HTTP资产请求的确切格式 |
+| [内容片段Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=zh-Hans) | 支持的HTTP资产请求的确切格式 |
 
 >[!NOTE]
 >

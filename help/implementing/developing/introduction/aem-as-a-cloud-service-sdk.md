@@ -31,7 +31,7 @@ AEM as a Cloud Service SDK由以下工件组成：
 
 ## SDK构建 {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK用于构建和部署自定义代码。 请参阅[AEM项目原型文档](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)。 在高级别上，将执行以下步骤：
+AEM as a Cloud Service SDK用于构建和部署自定义代码。 请参阅[AEM项目原型文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/using)。 在高级别上，将执行以下步骤：
 
 * **编译代码** — 已编译Source代码，并生成生成的内容包。
 * **生成项目** — 在此过程中生成项目。

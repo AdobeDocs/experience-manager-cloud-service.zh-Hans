@@ -93,7 +93,7 @@ Cloud Manager Git存储库中的设置包含两个分支。
 
 >[!TIP]
 >
->请参阅[使用多个Source Git存储库](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code)，了解有关此设置的更多信息。
+>请参阅[使用多个Source Git存储库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code)，了解有关此设置的更多信息。
 
 ### 多团队设置的注意事项 {#considerations}
 

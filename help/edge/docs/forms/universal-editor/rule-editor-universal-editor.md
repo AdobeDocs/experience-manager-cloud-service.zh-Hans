@@ -310,7 +310,7 @@ ht-degree: 100%
 
 1. **打开通用编辑器**：
    - 导航到 AEM Sites 控制台，选择您的页面，点击&#x200B;**编辑**
-   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
+   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
 
 2. **按以下顺序添加表单组件**：
    - 标题 (H2)：“税费计算表”
@@ -732,7 +732,7 @@ export { getFullName, days};
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)：用于更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)：用于更广泛的上下文
 - [扩展管理器指南](/help/implementing/developing/extending/extension-manager.md)：用于启用附加功能
 - [Edge Delivery Services 表单](/help/edge/docs/forms/overview.md)：提供全面的表单开发指导
 

@@ -46,7 +46,7 @@ Dynamic Media的一些关键原则包括：
 * **体验查看器库：**&#x200B;自定义图像和视频的体验查看器和品牌体验查看器。 这些查看器可无缝集成到您的数字体验中。
 * **新兴格式支持：** Dynamic Media允许交付3D和全景体验。
 
-在您探索[Dynamic Media历程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)时，查看下面的最佳实践综合列表可以帮助您充分利用其功能。 调整这些Dynamic Media最佳实践以满足您的特定上下文和项目要求，以使您可跨渠道和设备优化体验。
+在您探索[Dynamic Media历程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)时，查看下面的最佳实践综合列表可以帮助您充分利用其功能。 调整这些Dynamic Media最佳实践以满足您的特定上下文和项目要求，以使您可跨渠道和设备优化体验。
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -94,9 +94,9 @@ Dynamic Media查看器最佳实践是基本准则，旨在优化AEM上Dynamic Me
 页面上仅包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`Utils.js`上下文路径(称为合并的HTML include)直接链接到SDK5 SDK `/s7viewers`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
 * **嵌入准则：**
 使用文档嵌入特定于每个查看器的准则。
-想要了解更多信息？ 转到AEM Assets[的](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)查看器。
+想要了解更多信息？ 转到AEM Assets[的](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)查看器。
 * **SDK教程和示例：**
-查看[Viewer SDK教程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
+查看[Viewer SDK教程](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
 
 
 ## 准备资产以进行交付
@@ -224,7 +224,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 | **上载并发布徽标或图标图像** | 接下来，上传并发布要叠加在基本图像上的图像。 此图像应是透明的PNG，其中应包含要叠加的徽标或图标。<br>下面是即将叠加的具有透明效果的星形对象的透明PNG图像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构类似于：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>资产所在的位置<ul><li> `hotspotRetailBaseImage`是基本映像。</li><li> `starxp`是徽标/图标图像。</li><li> `layer=1`指定徽标或图标应叠加在基本图像上。</li><li> `scale=1.25`调整徽标/图标的大小。</li><li> `posN=0.33,-.25`确定徽标/图标相对于基本图像的位置。</li><li> `fmt=png`确保输出为PNG格式。</li></ul> |
 
-了解更多信息？ 请转到[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)以了解有关`src`命令和其他Dynamic Media URL命令的更多详细信息。
+了解更多信息？ 请转到[src](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)以了解有关`src`命令和其他Dynamic Media URL命令的更多详细信息。
 
 
 #### 覆盖促销文本
@@ -276,7 +276,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 您可以随意探索这些变体，以满足您的特定需求。
-想要了解有关URL中可用命令的更多信息？ 转到[命令引用](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
+想要了解有关URL中可用命令的更多信息？ 转到[命令引用](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
 
 ### 投放GIF图像
 
@@ -320,7 +320,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
    * **嵌入视频：**
 复制提供的嵌入代码并将其粘贴到您希望显示视频的网页的HTML中。 这样，视频就可以直接在您的网站上播放。
 
-想要了解更多信息？ 转到[视频](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
+想要了解更多信息？ 转到[视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
 ### 配置视频以获得最佳质量和参与
 

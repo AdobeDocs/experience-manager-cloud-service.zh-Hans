@@ -30,7 +30,7 @@ JSON导出基于[Sling模型](https://sling.apache.org/documentation/bundles/mod
 
 >[!NOTE]
 >
->有关使用Sling模型的示例，请参阅文章[在AEM中开发Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)。
+>有关使用Sling模型的示例，请参阅文章[在AEM中开发Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-Hans)。
 
 Sling模型实现类必须使用以下内容进行注释：
 
@@ -72,7 +72,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 ## 示例 {#example}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)支持JSON导出，可用作参考。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)支持JSON导出，可用作参考。
 
 有关示例，请参阅图像核心组件的Sling模型实施及其注释的界面。
 
@@ -81,4 +81,4 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service的入门培训分为两步：
 
 Adobe完成了第一个入门培训步骤。 有关定价和配置的更多详细信息，您必须联系您的销售代表。
 
-配置CIF加载项后，该加载项将应用于任何现有的Cloud Manager项目。 如果您没有Cloud Manager项目，则必须创建一个。 有关更多详细信息，请参阅[设置程序。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
+配置CIF加载项后，该加载项将应用于任何现有的Cloud Manager项目。 如果您没有Cloud Manager项目，则必须创建一个。 有关更多详细信息，请参阅[设置程序。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=zh-Hans)
 
 第二步是每个AEM as a Cloud Service环境的自助服务。 在CIF加载项初始配置后，您必须执行一些其他配置。
 
@@ -77,7 +77,7 @@ Adobe完成了第一个入门培训步骤。 有关定价和配置的更多详�
 
 1. 通过Cloud Manager插件获取Adobe I/O CLI。
 
-   * 查看[Adobe Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)，了解如何下载、设置和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)和[Cloud Manager CLI插件。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * 查看[Adobe Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans)，了解如何下载、设置和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)和[Cloud Manager CLI插件。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. 使用AEM as a Cloud Service程序验证Adobe I/O CLI。
 

@@ -31,7 +31,7 @@ ht-degree: 5%
 
    ![选择Forms选项](assets/installation-configuration-select-forms-option.png)
 
-1. [创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)和[运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)生产和非生产管道。
+1. [创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=zh-Hans#how-to-use)和[运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hans)生产和非生产管道。
 
 生成和部署管道后，**[!UICONTROL 导航]**&#x200B;页面上的&#x200B;**[!UICONTROL Forms]**&#x200B;选项。
 

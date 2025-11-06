@@ -66,4 +66,4 @@ Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问
 
 您可以随时撤销访问密码。
 
-为此，[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)。该工单会得到优先处理，并且通常会在一天内撤销。
+为此，[为此请求创建支持工单](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&support-tab=home#support)。该工单会得到优先处理，并且通常会在一天内撤销。

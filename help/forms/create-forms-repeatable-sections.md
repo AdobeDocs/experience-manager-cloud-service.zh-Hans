@@ -16,7 +16,7 @@ ht-degree: 8%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 可重复部分是指可为同一数据的多个实例收集信息而重复或多次重复的表单的一部分。
@@ -31,10 +31,10 @@ ht-degree: 8%
 * 设置自适应表单组件的最小或最大重复次数
 * 使用规则编辑器为可重复部分配置添加或删除操作
 
-您可以使用[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、[垂直选项卡](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)组件使自适应表单的部分可重复。 可将子组件添加到这些组件中，以在表单中创建可重复部分。
+您可以使用[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=zh-Hans)、[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=zh-Hans)、[垂直选项卡](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=zh-Hans)组件使自适应表单的部分可重复。 可将子组件添加到这些组件中，以在表单中创建可重复部分。
 
 
-此文档中的示例基于[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)组件。 您可以执行相同的步骤，以使[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[水平制表符](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、[垂直制表符](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)组件可重复。
+此文档中的示例基于[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)组件。 您可以执行相同的步骤，以使[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=zh-Hans)、[水平制表符](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=zh-Hans)、[垂直制表符](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=zh-Hans)组件可重复。
 
 ## 添加或删除表单中的可重复部分 {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -153,7 +153,7 @@ ht-degree: 8%
 1. 要指定子表单重复的最大次数，请选择“最大”，然后在相关框中键入一个数字。 如果未在“最大值”框中指定值，则子表单的重复次数将无限制。
 1. 要指定一组子表单重复次数，而不考虑数据量，请选择初始计数，然后在关联框中键入一个数字。 如果选择此选项，并且没有可用数据或存在的数据条目少于指定的初始计数值，则子表单的空实例仍会放置在表单上。
 1. 在父子表单中添加两个按钮 — 一个用于添加实例，另一个用于删除可重复子表单的实例。 有关详细步骤，请参阅[生成操作](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)。
-1. 现在，将表单模板链接到自适应表单。 有关详细步骤，请参阅[基于模板创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template)。
+1. 现在，将表单模板链接到自适应表单。 有关详细步骤，请参阅[基于模板创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=zh-Hans#create-an-adaptive-form-based-on-an-xfa-form-template)。
 1. 使用在第9步中创建的按钮添加和删除子表单。
 
 附加的.zip文件包含一个示例可重复的子表单。
@@ -162,7 +162,7 @@ ht-degree: 8%
 
 ## 使用XML架构(XSD)的重复设置 {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-您可以从XML架构和任何复杂类型元素的minOccours和maxOccurs属性创建可重复面板。 有关XML架构的详细信息，请参阅[使用XML架构作为表单模型创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html)。
+您可以从XML架构和任何复杂类型元素的minOccours和maxOccurs属性创建可重复面板。 有关XML架构的详细信息，请参阅[使用XML架构作为表单模型创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=zh-Hans)。
 
 在以下代码中，`SampleType`面板使用minOccours和maxOccurs属性。
 

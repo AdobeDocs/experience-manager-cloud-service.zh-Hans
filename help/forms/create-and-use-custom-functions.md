@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | 本文 |
 
 AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们允许根据预定义的标准动态更改表单行为。 通过自定义函数，开发人员还可以实施复杂的验证逻辑、执行动态计算，以及根据用户交互或预定义标准控制表单元素的显示或行为。

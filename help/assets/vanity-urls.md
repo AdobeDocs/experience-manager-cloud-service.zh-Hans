@@ -140,7 +140,7 @@ ht-degree: 0%
 
 ## 使用虚URL进行扩展{#scale-using-vanity-url}
 
-AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 将这些AEMCS功能与您的虚URL结合使用，将它们转换为清洁、描述性、品牌化、直观的唯一Web地址，并提供上述[好处](#key-benefits)。
+AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 将这些AEMCS功能与您的虚URL结合使用，将它们转换为清洁、描述性、品牌化、直观的唯一Web地址，并提供上述[好处](#key-benefits)。
 
 请参阅以下虚URL及其可自定义的组件：
 
@@ -190,7 +190,7 @@ AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://ex
 执行以下步骤可重写用于投放的CDN规则：
 
 1. 导航到您的AEM存储库以创建YAML配置文件。
-2. 执行[设置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)部分中的步骤以配置CDN规则并通过Cloud Manager配置管道部署配置。
+2. 执行[设置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)部分中的步骤以配置CDN规则并通过Cloud Manager配置管道部署配置。
 按照这些[最佳实践](#best-practices)创建域路径。
    [了解有关CDN重写规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 

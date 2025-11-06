@@ -81,4 +81,4 @@ AEM Content Services旨在概括AEM中/来自Web的内容的描述和交付，�
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

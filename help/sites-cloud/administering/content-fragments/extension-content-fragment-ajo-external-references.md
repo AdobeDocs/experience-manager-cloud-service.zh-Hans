@@ -30,7 +30,7 @@ AJO外部引用扩展可通过从与预定义标记关联的所有组织和沙�
 
 >[!NOTE]
 >
->另请参阅[AJO集成](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments)。
+>另请参阅[AJO集成](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/integrations/aem-fragments)。
 
 1. 打开[内容片段控制台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)。
 

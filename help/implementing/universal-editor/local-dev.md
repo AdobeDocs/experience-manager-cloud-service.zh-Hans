@@ -45,7 +45,7 @@ ht-degree: 100%
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-[请参阅这个文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，了解如何设置 AEM 在 HTTPS 上运行，包括一份您可使用的自签名证书。
+[请参阅这个文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)，了解如何设置 AEM 在 HTTPS 上运行，包括一份您可使用的自签名证书。
 
 ## 安装通用编辑器服务 {#install-ue-service}
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 运行通用编辑器服务的本地副本需要 [NodeJS 版本 20](https://nodejs.org/en/download/releases)。
 
-通用编辑器服务可通过软件分发获得。有关访问方法的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+通用编辑器服务可通过软件分发获得。有关访问方法的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
 
 将 `universal-editor-service.cjs` 文件从软件分发保存到您的本地开发环境。
 
