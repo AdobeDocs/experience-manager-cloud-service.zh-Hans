@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -170,9 +170,11 @@ AEM Forms 的 AI 助手可改变您创建表单的方式 - 只需用自然语言
 "Update the layout to match the attached wireframe"
 ```
 
-### 提交和集成
+<!-- 
 
-**基本提交：**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -180,13 +182,15 @@ AEM Forms 的 AI 助手可改变您创建表单的方式 - 只需用自然语言
 "Redirect to a thank you page"
 ```
 
-**高级集成：**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## 使用附件
 
@@ -281,8 +285,11 @@ AI 助手还可以教您有关 AEM Forms 功能的知识：
 | `/update-field` | 更改字段属性 | `/update-field @email to be required` |
 | `/create-rule` | 添加动态行为 | `/create-rule show @spouse if married` |
 | `/create-panel` | 添加字段容器 | `/create-panel Personal Information` |
-| `/configure-submit` | 设置表单提交 | `/configure-submit to email support` |
 | `/help` | 获取帮助 | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### 字段引用语法
 

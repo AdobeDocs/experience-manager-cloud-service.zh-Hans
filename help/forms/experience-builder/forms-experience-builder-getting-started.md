@@ -6,10 +6,10 @@ index: false
 hidefromtoc: true
 role: Admin, Developer
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 9%
+source-wordcount: '1048'
+ht-degree: 5%
 
 ---
 
@@ -61,11 +61,10 @@ Forms Experience Builder是一款AI支持的表单创建工具，可让您使用
 
 **示例：**
 
-    创建一个客户反馈表，其中包含：
-    &#x200B;- 产品评分（1-5 星）
-    &#x200B;- 提供详细反馈的备注字段
-    &#x200B;- 客户电子邮件地址（可选）
-    &#x200B;- 提交至电子邮件通知
+    创建客户反馈表单，其中包含：
+     — 产品评级（1-5星）
+     — 详细反馈的评论字段
+     — 客户电子邮件（可选）
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +74,7 @@ Forms Experience Builder是一款AI支持的表单创建工具，可让您使用
 
 将现有文档转换为交互式数字表单。
 
-在使用此选项之前，请上传PDF文件或表单图像。 PDF可以是AcroForm或基于XFA的PDF表单。 对于[其他类型的PDF forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，使用Adobe Acrobat中的[准备表单](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)选项将它们转换为AcroForm
+在使用此选项之前，请上传PDF文件或表单图像。 PDF可以是AcroForm或基于XFA的PDF表单。 对于[其他类型的PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，使用Adobe Acrobat中的[准备表单](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)选项将它们转换为AcroForm
 
 **使用时间：**
 
@@ -170,7 +169,6 @@ Forms Experience Builder使用对话式界面，您可以在其中执行以下�
      — 为公司信息添加分区
      — 为部门选择创建下拉列表
      — 包括恢复的文件上传
-     — 在提交表单时设置电子邮件通知
 
 ### 增量构建 {#build-incrementally}
 
@@ -194,15 +192,13 @@ Forms Experience Builder使用对话式界面，您可以在其中执行以下�
      — 电子邮件（必需，已验证）
      — 主题下拉列表（常规、支持、销售、合作）
      — 消息（必需，多行）
-     — 提交按钮
 
 **客户反馈表：**
 
-    创建一个客户反馈表，其中包含：
-    &#x200B;- 产品评分（1-5 星）
-    &#x200B;- 提供详细反馈的备注字段
-    &#x200B;- 客户电子邮件地址（可选）
-    &#x200B;- 提交至电子邮件通知
+    创建客户反馈表单，其中包含：
+     — 产品评级（1-5星）
+     — 详细反馈的评论字段
+     — 客户电子邮件（可选）
 
 ### 注册和载入表单 {#registration-onboarding-forms}
 
@@ -275,22 +271,29 @@ Forms Experience Builder使用对话式界面，您可以在其中执行以下�
     添加文件类型验证：仅允许PDF、DOC、DOCX用于@resume
     添加文件大小限制：@resume
 最大5MB
+<!-- 
 
-## 后续步骤 {#next-steps}
+## Next steps {#next-steps}
 
-现在您已了解基础知识，请探索这些高级主题：
+Now that you understand the basics, explore these advanced topics:
 
-* **[LLM增强型智能字段](forms-experience-builder-llm-smart-fields.md)** — 使用AI知识创建具有预填充选项的字段
-* **[AI支持的表单创建](forms-experience-builder-prompt-examples-library.md)** — 高级提示模式和示例
-* **[智能导入和转换](intelligent-import-conversion.md)** — 将现有文档转换为表单
-* **[表单提交和集成](form-submission-integration.md)** — 将表单连接到您的业务系统
+* **[LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)** - Create fields with pre-populated options using AI knowledge
+* **[AI-powered form creation](forms-experience-builder-prompt-examples-library.md)** - Advanced prompt patterns and examples
+* **[Intelligent import and conversion](intelligent-import-conversion.md)** - Transform existing documents into forms
+* **[Form submission and integration](form-submission-integration.md)** - Connect forms to your business systems
+
+-->
 
 
 ## 相关文章
 
 * [Forms Experience Builder概述](product-overview.md)
-* [LLM增强的智能字段](forms-experience-builder-llm-smart-fields.md)
-* [AI支持的表单创建](forms-experience-builder-prompt-examples-library.md)
-* [智能导入和转换](intelligent-import-conversion.md)
-* [表单提交和集成](form-submission-integration.md)
-* [常见问题解答](forms-experience-builder-frequently-asked-questions.md)
+
+<!-- 
+* [LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)
+* [AI-powered form creation](forms-experience-builder-prompt-examples-library.md)
+* [Intelligent import and conversion](intelligent-import-conversion.md)
+* [Form submission and integration](form-submission-integration.md)
+* [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+-->
