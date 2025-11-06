@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何提交您的App Builder应用程序以供审阅和批准，以及如何运行新发布的应用程序。
 
->[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343281/?captions=chi_hans&quality=12&learn=on)

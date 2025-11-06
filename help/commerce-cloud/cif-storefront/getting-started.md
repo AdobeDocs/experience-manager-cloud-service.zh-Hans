@@ -57,7 +57,7 @@ Adobe完成了第一个入门培训步骤。 有关定价和配置的更多详�
 
 ### 通过Cloud Manager用户界面（默认） {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343269?captions=chi_hans&quality=12&learn=on)
 
 可以使用“环境详细信息”页面上的对话框完成此配置。 在查看启用了Commerce的程序的此页时，如果当前未配置端点，则会显示一个按钮：
 
