@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2025.10.30发行说明
-description: 这些是通用编辑器2025.10.30版的发行说明。
+title: 通用编辑器2025.11.06发行说明
+description: 这些是通用编辑器2025.11.06版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
+source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 53%
+source-wordcount: '256'
+ht-degree: 45%
 
 ---
 
 
-# 通用编辑器2025.10.30发行说明 {#release-notes}
+# 通用编辑器2025.11.06发行说明 {#release-notes}
 
-这些是通用编辑器 2025 年 10 月 30 号版本的发行说明。
+这些是通用编辑器 2025 年 11 月 6 号版本的发行说明。
 
 >[!TIP]
 >
@@ -23,11 +23,6 @@ ht-degree: 53%
 >[!TIP]
 >
 >关于 Adobe Experience Manager as a Cloud Service 的最新发行说明，请参阅[本页面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
-
-## 新增功能 {#what-is-new}
-
-* [新RTE](#new-rte)现在可以插入图像。
-   * 此功能已禁用OOtB，需要通过[筛选器定义显式启用。](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -39,10 +34,12 @@ ht-degree: 53%
 
 ## 其他改进 {#other-improvements}
 
-* 现在，如果操作是撤消的，则会通知更新事件。
-* `No results`字符串现在取决于通用编辑器标记中的浏览器区域设置。
-* 修复了通用编辑器发布按钮中多余的分行符。
-* 对修补API进行了清理。
-* 现在，“选择内容”按钮在Safari中可见。
-* RPM版本已修复。
-* CORS更新，以避免在保存后再次更新文本编辑的文本。
+* 现在可以正确删除`og:title`元数据字段。
+* 修复了用户在浏览器中编辑位置栏以正确反映这些更改并且编辑器和/或应用程序现在导航到请求的URL时的导航问题。
+* 字段模型分辨率已更正，并且编辑器使用来自组件的模型（如果存在）。
+* componentId现在包含在/add操作中。
+* 修复了删除某些以前无法删除的元数据属性的功能。
+* 当AEM插件未设置时，现在会有条件地为xwalk完成原始获取。
+* 已更正使用RTE处理内容片段MSM。
+* 现在支持图片中的图像突出显示。
+

@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
+source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1820'
 ht-degree: 20%
 
 ---
@@ -61,7 +61,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 UI分为以下几个主要区域。
 
-* [Experience Cloud 标题](#experience-cloud-header)
+* [Experience Platform顶部导航栏](#experience-cloud-header)
 * [通用编辑器工具栏](#universal-editor-toolbar)
 * [编辑器](#editor)
 * [属性面板](#properties-rail)
@@ -78,7 +78,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 ![Experience Cloud 标题](assets/experience-cloud-header.png)
 
-有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帐户 {#user-properties}
 
@@ -187,7 +187,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 
