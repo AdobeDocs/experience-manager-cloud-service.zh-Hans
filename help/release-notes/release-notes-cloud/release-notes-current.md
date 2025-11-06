@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
+source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 67%
+source-wordcount: '1666'
+ht-degree: 66%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 67%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites 的新增功能 {#new-sites}
 
-* AEM内容片段[的](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)内容模型编辑器已进行现代化改造，以便与AEM中其他基于React光谱的界面保持一致。 其用户界面实施和可扩展性模型现已与内容片段编辑器和通用编辑器保持一致。从新的内容模型管理员 UI 打开时，新的模型编辑器将作为默认选项。在触控 UI 中打开内容模型时，将会打开触控 UI 编辑器，并提供试用新编辑器的选项。
+* [内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：内容作者现在可以使用内容片段的启动项创建和计划结构化内容的未来变体。 新的内容片段控制台允许创建、编辑、管理和计划内容片段启动作为可与源分支同步的将来内容的分支。 新的差异视图在提交Launch以供未来发布之前提供了所有内容更改的清晰概述。
 
-* [内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：内容片段控制台的“启动项”选项卡允许您创建启动项、列出所有现有启动项、查看关键属性并对它们执行操作。
+* AEM内容片段[的](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)内容模型编辑器已进行现代化改造，以便与AEM中其他基于React光谱的界面保持一致。 其用户界面实施和可扩展性模型现已与内容片段编辑器和通用编辑器保持一致。从新的内容模型管理员 UI 打开时，新的模型编辑器将作为默认选项。在触控 UI 中打开内容模型时，将会打开触控 UI 编辑器，并提供试用新编辑器的选项。
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
