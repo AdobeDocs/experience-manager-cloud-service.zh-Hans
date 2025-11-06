@@ -3,9 +3,9 @@ title: 使用资源微服务处理资源
 description: 使用云原生和可扩展的资源处理微服务来处理数字资源。
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
@@ -97,5 +97,5 @@ Experience Manager 客户端是产品的一部分，默认情况下都支持使�
 >* [开始使用资源微服务](asset-microservices-configure-and-use.md)
 >* [支持的文件格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hans)
+>* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [关于直接二进制访问的 Apache Oak 文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

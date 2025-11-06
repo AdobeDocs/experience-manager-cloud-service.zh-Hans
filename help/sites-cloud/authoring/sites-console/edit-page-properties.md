@@ -4,13 +4,13 @@ description: 了解如何编辑页面的属性并更改页面的行为以及管�
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 83e61ae4af3dcd76ad51722decd0032cceb737a5
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 24%
 
 ---
-
 
 # 编辑页面属性 {#page-properties}
 
@@ -24,7 +24,7 @@ ht-degree: 24%
 
 您可以在AEM中的多个位置编辑页面属性。
 
-* [从 &#x200B;](#from-the-sites-console)
+* [从 ](#from-the-sites-console)
 * [从页面编辑器](#from-the-page-editor)
 * [从通用编辑器](#from-the-universal-editor)
 
@@ -87,14 +87,18 @@ ht-degree: 24%
 批量编辑窗口垂直分为两半：
 
 * 左侧是您选择进行批量编辑的页面的列表。
+
    * 您可以根据需要选择/取消选择页面。
    * 默认情况下，选择全部。
+
 * 右侧是可进行批量编辑的[属性的列表。](/help/implementing/developing/extending/bulk-editor.md)
+
    * 与查看单页面的属性时一样，这些属性按选项卡进行排序。
    * 将显示所有选定页面的可用属性，这些属性已明确定义为可批量编辑。
    * 如果将选择的页面减少到一页，则会显示所有属性。
    * 只显示具有相同值的属性。
    * 当字段为多值（例如，标记）时，只有在&#x200B;*所有*&#x200B;为通用时，才会显示值。 如果只有一些是通用的，则仅在编辑时才显示它们。
+
 * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。
 
 您可以更新所选页面上可用字段中的值。 当您选择&#x200B;**完成**&#x200B;时，新值将应用于所有选定页面。 当字段有多个值时（例如，“标记”），您可以附加新值或删除公共值。

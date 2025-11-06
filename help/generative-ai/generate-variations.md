@@ -3,9 +3,9 @@ title: 生成变体
 description: 了解可从 AEM as a Cloud Service 和 Edge Delivery Services 的 Sidekick 访问的生成变体功能
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations, AI Tools
-role: Admin, Architect, Developer
-source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3295'
 ht-degree: 100%
 

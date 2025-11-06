@@ -2,10 +2,10 @@
 title: 在 Cloud Manager 中管理 Edge Delivery Sites
 description: 了解如何将 CDN 配置添加到 Edge Delivery Site 或删除 Edge Delivery Site。
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 100%
 

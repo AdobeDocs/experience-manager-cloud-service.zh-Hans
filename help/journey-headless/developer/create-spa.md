@@ -4,8 +4,8 @@ description: 在 AEM Headless 开发人员历程的这一可选延续部分中�
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 100%
@@ -129,4 +129,4 @@ RemotePage 组件允许在 AEM 中呈现外部 SPA。
 * [SPA 编辑器概述](/help/implementing/developing/hybrid/editor-overview.md) – SPA 编辑器的工作原理的详细信息
 * [SPA 引用文档](/help/implementing/developing/hybrid/reference-materials.md) – JavaScript API 引用以及指向开源 AEM SPA GitHub 项目的链接
 * [内容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) – 如何创建内容片段
-* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) – Maven 模板，它创建最小的基于最佳实践的 Adobe Experience Manager (AEM) 项目作为您网站的起点
+* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) – Maven 模板，它创建最小的基于最佳实践的 Adobe Experience Manager (AEM) 项目作为您网站的起点

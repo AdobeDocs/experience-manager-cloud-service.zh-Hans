@@ -2,10 +2,10 @@
 title: 将 Edge Delivery Site 添加到 Cloud Manager
 description: 了解如何将 Edge Delivery Site 添加到您的生产程序或沙盒程序。
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >了解为什么必须将 Edge Delivery Services Site 加入到 Cloud Manager。
->>请参阅[使用 Adobe 推荐的 Edge Delivery Services 路径的好处](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
+>请参阅[使用 Adobe 推荐的 Edge Delivery Services 路径的好处](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
 
 **若要将 Edge Delivery Site 添加到 Cloud Manager：**
 

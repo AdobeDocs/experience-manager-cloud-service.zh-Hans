@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 51%
+ht-degree: 56%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 51%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -33,16 +33,15 @@ ht-degree: 51%
 ## 签名窗口中可用的各种选项
 
 * **A：**&#x200B;单击&#x200B;**画笔**&#x200B;图标在画布上绘制您的签名。
-* **B：**&#x200B;单击&#x200B;**清除**&#x200B;图标以清除画布上的签名。
-* **C：**&#x200B;单击&#x200B;**地理位置**&#x200B;图标可添加地理位置以及签名。
-* **D：**&#x200B;单击&#x200B;**键盘**&#x200B;图标在画布上键入您的姓名。
+* **B：**&#x200B;点击&#x200B;**清除**&#x200B;图标可清除画布上的签名。
+* **C：**&#x200B;点击&#x200B;**地理位置**&#x200B;图标可一起添加地理位置和签名。
+* **D：**&#x200B;点击&#x200B;**键盘**&#x200B;图标可在画布上输入您的名字。
 
-在涂鸦签名窗口中选择完成![aem_forms_save](assets/aem_forms_save.png)图标后，便无法编辑该签名。 如果想要编辑签名，则必须忽略当前签名并使用上面的“画笔/键盘”选项重新签名。
+在涂鸦签名窗口中选择完成![aem_forms_save](assets/aem_forms_save.png)图标后，便无法编辑该签名。 如果您想编辑签名，必须忽略当前签名，使用上面的画笔/键盘选项重新签名。
 
 您可以选择&#x200B;**配置** ![配置图标](assets/configure.png)图标来设置涂写签名画布的长宽比。
+
 * 当Scribble签名画布的长宽比小于1时，地理位置信息将添加到Scribble签名画布的底部。
-
-
 * 当Scribble签名画布的长宽比大于1时，地理位置信息将添加到Scribble签名画布的右侧。
 
 
@@ -52,8 +51,7 @@ ht-degree: 51%
 
 >[!NOTE]
 >
->签名始终以PNG格式保存。
->
+>签名始终以 PNG 格式保存。
 
 ## 配置自适应表单以使用涂写签名 {#configure-an-adaptive-form-to-use-scribble-signature}
 

@@ -5,14 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # 表单提交和集成
 
@@ -319,7 +319,7 @@ Forms Experience Builder提供强大的集成功能，将您的表单与外部�
 ## 相关文章
 
 - [Forms Experience Builder概述](product-overview.md)
-- [Forms Experience Builder快速入门](forms-experience-builder-getting-started.md)
-- [部署和配置Forms Experience Builder](deploy-forms-experience-builder.md)
+- [Forms Experience Builder 快速入门指南](forms-experience-builder-getting-started.md)
+- [部署和配置 Forms Experience Builder](deploy-forms-experience-builder.md)
 - [智能导入和转换](intelligent-import-conversion.md)
 - [常见问题解答](forms-experience-builder-frequently-asked-questions.md)

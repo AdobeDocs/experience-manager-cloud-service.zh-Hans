@@ -3,8 +3,8 @@ title: 配置对页面属性的批量编辑
 description: 了解如何配置批量编辑，以便您可以一次编辑多个页面的属性。
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 94%

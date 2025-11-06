@@ -3,9 +3,9 @@ title: 适用于 AEM Forms 的 Edge Delivery Services 概述
 description: 使用 Adobe Experience Manager Edge Delivery Services 创建并分发高性能表单，重点采用通用编辑器创作方式。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Adobe Experience Manager (AEM) Edge Delivery Services（EDS）可让您从边缘
 ### 通用编辑器
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是一款面向市场营销人员和设计师的可视化拖放式创作工具，兼具高速与企业级性能优势：

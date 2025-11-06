@@ -2,10 +2,10 @@
 title: 扩展通用编辑器
 description: 了解用于扩展通用编辑器功能的不同选项，以满足内容作者需求。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 100%
 

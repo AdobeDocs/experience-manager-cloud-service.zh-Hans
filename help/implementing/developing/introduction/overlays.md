@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service的叠加
 description: AEM as a Cloud Service使用叠加原理来允许您扩展和自定义控制台和其他功能
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Manager as a Cloud Service使用叠加原理来允许您扩展�
 
    * 方法
 
-      * 在`/apps`下重新构建相应的`/libs`结构。
+      * 在`/libs`下重新构建相应的`/apps`结构。
 
         此重构不需要1:1副本，因为[Sling资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)用于交叉引用所需的原始定义。 Sling资源合并器提供访问资源并将其与差异（差异）机制合并的服务。
 
@@ -47,6 +47,6 @@ Adobe Experience Manager as a Cloud Service使用叠加原理来允许您扩展�
 
 ## 搜索路径 {#search-paths}
 
-AEM使用搜索路径查找资源，首先搜索`/apps`分支，然后搜索`/libs`分支（默认情况下）。 此机制意味着您在`/apps`（以及其中定义的自定义项）中的叠加具有优先级。
+AEM使用搜索路径来查找资源，首先搜索`/apps`分支，默认情况下再搜索`/libs`分支。 此机制意味着您在`/apps`（以及其中定义的自定义项）中的叠加具有优先级。
 
 对于叠加，交付的资源是检索到的资源和属性的汇总，具体取决于OSGi配置中定义的搜索路径。

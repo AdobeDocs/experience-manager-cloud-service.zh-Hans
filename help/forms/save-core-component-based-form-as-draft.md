@@ -4,7 +4,7 @@ description: 了解如何将基于核心组件的自适应表单另存为草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: bf0a42e1376e4743fe8ce0650e1f807dfba2d050
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 将表单另存为草稿并将其在站点页面上列出
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 以某个用户为例，该用户开始填写表单，但需要暂停并稍后返回。 AEM提供了一个`save-as-draft`选项，允许用户将表单另存为草稿以供将来完成。 为方便起见，AEM现成提供了&#x200B;**草稿和提交** Forms Portal组件，该组件可在AEM Sites页面上显示草稿和提交。 该组件列出已另存为草稿以供以后完成的表单以及已提交的表单。 只有登录的用户才能编辑其草稿或查看其提交的表单。 但是，如果匿名用户使用&#x200B;**搜索和列表程序**&#x200B;组件浏览表单列表并将表单另存为草稿，则&#x200B;**草稿和提交**&#x200B;组件不会列出该草稿。 要查看草稿和提交，用户必须在提交表单时登录。
 
@@ -104,9 +104,11 @@ ht-degree: 3%
 ## 配置草稿和提交组件的属性
 
 您可以配置&#x200B;**草稿和提交**&#x200B;的属性：
+
 1. 选择&#x200B;**草稿和提交**&#x200B;组件。
 1. 单击![配置图标](assets/configure_icon.png)，此时将显示对话框。
 1. 在&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;对话框中，指定以下内容：
+
    * **标题**&#x200B;为了识别站点页面中的组件，默认情况下，标题显示在组件顶部。
    * **选择类型**：将表单列为草稿或已提交的表单。 如果选择&#x200B;**草稿Forms**，将显示另存为草稿的表单。 或者，选择&#x200B;**已提交的Forms**&#x200B;将显示由登录用户提交的表单。
    * **布局**：以卡片或列表格式显示列表草稿表单或已提交的表单。
@@ -116,6 +118,7 @@ ht-degree: 3%
 ## 配置表单以另存为草稿
 
 您可以通过以下两种方式配置自适应Forms，以将它们另存为草稿以供将来使用：
+
 * [用户操作](#user-action)
 * [自动保存](#auto-save)
 
@@ -159,7 +162,7 @@ ht-degree: 3%
 ## 使用草稿和提交组件在Sites页面上查看草稿/提交的表单
 
 要查看已保存的草稿或已提交的表单，请使用&#x200B;**草稿和提交** Forms门户组件。
-在草稿和提交组件&#x200B;**[!UICONTROL 的]**&#x200B;配置对话框中选择&#x200B;**选择类型**&#x200B;作为[草稿Forms](#configure-properties-of-the-drafts--submissions-component)时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
+在草稿和提交组件**[!UICONTROL 的]**&#x200B;配置对话框中选择&#x200B;**选择类型**&#x200B;作为[草稿Forms](#configure-properties-of-the-drafts--submissions-component)时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
 
 ![草稿图标](assets/drafts-component.png)
 

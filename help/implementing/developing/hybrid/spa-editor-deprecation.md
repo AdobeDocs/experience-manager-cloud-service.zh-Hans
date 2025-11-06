@@ -2,12 +2,12 @@
 title: SPA 编辑器弃用
 description: 尽管SPA编辑器仍受Adobe支持，但请了解它弃用对您的项目有何影响以及您对未来项目有哪些选项。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 2%
+ht-degree: 16%
 
 ---
 
@@ -57,23 +57,23 @@ Adobe通过[2025.01版的AEM as a Cloud Service，](/help/release-notes/release-
 
 使用内容片段结构化内容不排除使用通用编辑器作为可视编辑器，并且两个编辑器都可以一起使用。
 
-## 迁移到通用编辑器 {#migrate-ue}
+## 迁移至通用编辑器 {#migrate-ue}
 
 通用编辑器具有许多优势，因此迁移到它对于新项目是一个很好的解决方案。
 
 * **可视化编辑：**&#x200B;与SPA编辑器类似，作者可以在预览中直接编辑内容，并立即查看其更改如何影响访客体验。
-* **面向未来：** AEM的路线图将通用编辑器优先设置为可视编辑器。 采用它可确保访问最新的创新和增强功能。
-* **更简单的集成：**&#x200B;无需特定于AEM的SDK即可使用通用编辑器，从而减少技术栈栈锁定。
-* **自带应用程序：**&#x200B;通用编辑器支持任何Web框架或架构，允许采用而不需要复杂的重构。
-* **可扩展性：**&#x200B;通用编辑器受益于强大的[扩展框架，](/help/implementing/universal-editor/extending.md)，包括与GenAI、Workfront等的集成。
+* **面向未来：** AEM 的路线图优先将通用编辑器作为可视化编辑器。采用这个编辑器可以确保获得最新的创新和增强功能。
+* **更简单的集成：**&#x200B;使用通用编辑器不需要 AEM 专用的 SDK，从而减少了技术栈锁定。
+* **自带应用程序：**&#x200B;通用编辑器支持任何 Web 框架或架构，无需复杂的重构即可采用。
+* **可扩展性：**&#x200B;通用编辑器获益于一个强大的[扩展框架，](/help/implementing/universal-editor/extending.md)包括与生成式 AI、Workfront 等的集成。
 
-没有从SPA编辑器直接迁移到通用编辑器的路径。 这是由于这两种技术存在根本性差异。
+没有从SPA编辑器直接迁移到通用编辑器的路径。 这是由于两种技术之间存在根本差异。
 
-* 通用编辑器不会重新引入模板编辑器、样式系统或响应式网格等功能。
+* 通用编辑器不重新引入模板编辑器、样式系统或响应式网格等功能。
    * 在Edge Delivery Services或Headless项目中，现在可以使用精简前端CSS和JS更高效地处理这些用例。
 * 由于通用编辑器是editor-as-a-service，因此它不允许实施者将CSS或JS插入到组件对话框中。
-   * 这样可防止从页面编辑器自动转换组件对话框。
-   * 这会影响对话框的许多区域，例如自定义构件、字段验证、显示/隐藏规则和基于模板的自定义项。
+   * 这阻止了页面编辑器中自动转换组件对话框的功能。
+   * 这涉及到对话框的许多区域，例如自定义小组件、字段验证、显示/隐藏规则和基于模板的自定义。
 
 考虑到这些技术差异，Adobe的建议是：
 

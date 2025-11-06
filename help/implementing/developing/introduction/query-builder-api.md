@@ -3,8 +3,8 @@ title: 查询生成器 API
 description: 资产共享查询生成器的功能通过Java&amp；trade； API和REST API公开。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -25,13 +25,13 @@ REST API通过HTTP提供对相同功能的访问，响应以JSON发送。
 
 >[!NOTE]
 >
->QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询AEM JCR。 有关信息，请参阅[使用JCR API查询Adobe Experience Manager数据](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=zh-Hans)。
+>QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询AEM JCR。 有关信息，请参阅[使用JCR API查询Adobe Experience Manager数据](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)。
 
 ## Gem会议 {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=zh-Hans)是Adobe专家提供的一系列深入探讨Adobe Experience Manager的技术资料。
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)是Adobe专家对Adobe Experience Manager进行的一系列深入技术探讨。
 
-您可以[查看专门用于查询生成器的会话](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=zh-Hans)以了解该工具的概述和使用情况。
+您可以[查看专门用于查询生成器的会话](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html)以了解该工具的概述和使用情况。
 
 ## 示例查询 {#sample-queries}
 
@@ -210,7 +210,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 在该示例中的组内，`path`谓词被多次使用。 要区分谓词的两个实例并对其进行排序（某些谓词需要排序），必须在谓词前面加上`N_`，其中`N`是排序索引。 在上一个示例中，生成的谓词是`1_path`和`2_path`。
 
-`p.or`中的`p`是一个特殊分隔符，它指示后面的内容（在本例中为`or`）是组的&#x200B;*参数*，而不是组的子谓词，如`1_path`。
+`p`中的`p.or`是一个特殊分隔符，它指示后面的内容（在本例中为`or`）是组的&#x200B;*参数*，而不是组的子谓词，如`1_path`。
 
 如果未给定`p.or`，则所有谓词都将进行AND运算，即，每个结果必须满足所有谓词。
 
@@ -349,9 +349,9 @@ p.nodedepth=5
 
 有关更多谓词，请参阅[查询生成器谓词引用页](query-builder-predicates.md)。
 
-您还可以检查`PredicateEvaluator`类的[Javadoc](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。 这些类的Javadoc包含您可以使用的属性列表。
+您还可以检查[类的`PredicateEvaluator`Javadoc](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。 这些类的Javadoc包含您可以使用的属性列表。
 
-类名的前缀（例如，[`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)中的`similar`）是该类的&#x200B;*主体属性*。 此属性也是要在查询中使用的谓词名称（小写）。
+类名的前缀（例如，`similar`[`SimilarityPredicateEvaluator`中的](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)）是该类的&#x200B;*主体属性*。 此属性也是要在查询中使用的谓词名称（小写）。
 
 对于此类主体属性，您可以缩短查询并使用`similar=/content/en`而不是完全限定的变体`similar.similar=/content/en`。 全限定形式必须用于类的所有非主体属性。
 
@@ -423,7 +423,7 @@ for (Hit hit : result.getHits()) {
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-使用[`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-)方法时，根据`createFile`参数值，给定的`Query`将作为文件或属性存储在存储库中。 以下示例显示如何将路径`/mypath/getfiles`的`Query`另存为文件：
+使用[`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-)方法时，根据`Query`参数值，给定的`createFile`将作为文件或属性存储在存储库中。 以下示例显示如何将路径`Query`的`/mypath/getfiles`另存为文件：
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
@@ -435,7 +435,7 @@ builder.storeQuery(query, "/mypath/getfiles", true, session);
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
 ```
 
-例如，存储到路径`/mypath/getfiles`的`Query`可通过以下代码片段加载：
+例如，存储到路径`Query`的`/mypath/getfiles`可通过以下代码片段加载：
 
 ```java
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
@@ -453,14 +453,14 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 `path=/tmp`只是一个示例。
 
-### 常规调试Recommendations {#general-debugging-recommendations}
+### 常规调试建议 {#general-debugging-recommendations}
 
 ### 通过日志记录获取可解释的XPath {#obtain-explain-able-xpath-via-logging}
 
 说明在开发周期期间针对目标索引集进行的&#x200B;**所有**&#x200B;查询。
 
 1. 启用QueryBuilder的DEBUG日志，以获取基础的可解释XPath查询
-   * 导航到`https://<host>:<port>/system/console/slinglog`。 在&#x200B;**DEBUG**&#x200B;为`com.day.cq.search.impl.builder.QueryImpl`创建日志记录器。
+   * 导航到`https://<host>:<port>/system/console/slinglog`。 在`com.day.cq.search.impl.builder.QueryImpl`DEBUG **为**&#x200B;创建日志记录器。
 1. 为上述类启用DEBUG后，日志会显示由Query Builder生成的XPath。
 1. 从关联的Query Builder查询的日志条目中复制XPath查询，例如：
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`

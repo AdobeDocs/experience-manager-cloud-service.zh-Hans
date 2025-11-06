@@ -3,21 +3,21 @@ title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3476'
 ht-degree: 1%
 
 ---
 
 # 组件参考指南 {#components-reference-guide}
 
-组件是在AEM中构建体验的核心。 使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，可以轻松开始使用一组现成的可靠组件。 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)将指导开发人员了解如何使用这些工具以及如何构建自定义组件来创建AEM站点。
+组件是在AEM中构建体验的核心。 使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松开始使用一组现成的可靠组件。 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)将指导开发人员了解如何使用这些工具以及如何构建自定义组件以创建AEM站点。
 
 >[!TIP]
 >
->在引用此文档之前，请确保您已完成[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，并因此熟悉[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)。
+>在引用此文档之前，请确保您已完成[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，并因此熟悉[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)。
 
 由于WKND教程涵盖了大多数用例，因此，本文档仅用于补充这些资源。 它提供了有关如何在AEM中构建和配置组件的深入技术细节，并非旨在作为快速入门指南。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 #### 扩展核心组件 {#extending-core-components}
 
-核心组件还提供了[清晰的自定模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans)，您可以使用这些模式来调整它们以适应您自己的项目需求。
+核心组件还提供了[清晰的自定模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)，您可以使用这些模式来调整它们以适应您自己的项目需求。
 
 #### 覆盖组件 {#overlying-components}
 
@@ -57,21 +57,21 @@ ht-degree: 1%
 
 ### 内容逻辑和渲染标记  {#content-logic-and-rendering-markup}
 
-您的组件已使用[HTML](https://www.w3schools.com/htmL/html_intro.asp)呈现。 您的组件必须定义获取所需HTML所需的内容，然后根据需要在Author和Publish环境中呈现该内容。
+您的组件已使用[HTML](https://www.w3schools.com/htmL/html_intro.asp)呈现。 您的组件必须定义获取所需内容所需的HTML，然后根据需要在Author和Publish环境中进行渲染。
 
 建议将负责标记和呈现的代码与控制用于选择组件内容的逻辑的代码分开。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
 
 此（可选）逻辑可以通过不同的方式实现，并且可通过特定命令从HTL调用：
 
-* 使用Java - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=zh-Hans)让HTL文件可以访问自定义Java类中的Helper方法。 这使您能够使用Java代码实施用于选择和配置组件内容的逻辑。
-* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=zh-Hans)让HTL文件可以访问使用JavaScript编写的帮助程序代码。 这使您能够使用JavaScript代码实施用于选择和配置组件内容的逻辑。
+* 使用Java - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)让HTL文件可以访问自定义Java类中的Helper方法。 这使您能够使用Java代码实施用于选择和配置组件内容的逻辑。
+* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)让HTL文件可以访问使用JavaScript编写的帮助程序代码。 这使您能够使用JavaScript代码实施用于选择和配置组件内容的逻辑。
 * 使用客户端库 — 现代网站在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 有关详细信息，请参阅文档[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用客户端库。
 
 ## 组件结构 {#structure}
 
-AEM组件的结构强大而灵活。 主要工作内容包括：
+AEM组件的结构既强大又灵活。 主要工作内容包括：
 
 * [资源类型](#resource-type)
 * [组件定义](#component-definition)
@@ -110,7 +110,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
    * 有关详细信息，请参阅[组件图标](#component-icon)部分。
 * **重要子节点**：
    * `cq:editConfig (cq:EditConfig)` — 定义组件的编辑属性，并使组件显示在组件浏览器中。
-      * 如果组件有对话框，它会自动显示在组件浏览器或Sidekick中，即使cq：editConfig不存在也是如此。
+      * 如果组件有对话框，它会自动显示在组件浏览器或Sidekick中，即使cq:editConfig不存在也是如此。
    * `cq:childEditConfig (cq:EditConfig)` — 控制未定义自身`cq:editConfig`的子组件的作者UI方面。
    * `cq:dialog (nt:unstructured)` — 此组件的对话框。 定义允许用户配置组件和/或编辑内容的界面。
    * `cq:design_dialog (nt:unstructured)` — 正在编辑此组件的设计。
@@ -172,7 +172,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 | `cq:isContainer` | `Boolean` | 该指示组件是否为容器组件，因此可以包含其他组件，例如段落系统。 |
 | `cq:dialog` | `nt:unstructured` | 这是组件的“编辑”对话框的定义。 |
 | `cq:design_dialog` | `nt:unstructured` | 这是组件的“设计”对话框的定义。 |
-| `cq:editConfig` | `cq:EditConfig` | 这会定义组件[&#128279;](#edit-behavior)的编辑配置。 |
+| `cq:editConfig` | `cq:EditConfig` | 这会定义组件[的](#edit-behavior)编辑配置。 |
 | `cq:htmlTag` | `nt:unstructured` | 这会返回添加到周围HTML标记的其他标记属性。 允许向自动生成的div添加属性。 |
 | `cq:noDecoration` | `Boolean` | 如果为true，则组件不会使用自动生成的div和css类渲染。 |
 | `cq:template` | `nt:unstructured` | 如果找到，则在从组件浏览器添加组件时，此节点将用作内容模板。 |
@@ -181,7 +181,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 | `jcr:title` | `String` | 这是组件的标题。 |
 | `sling:resourceSuperType` | `String` | 设置后，组件将继承此组件。 |
 | `component.html` | `nt:file` | 这是组件的HTL脚本文件。 |
-| `cq:icon` | `String` | 此值指向组件[&#128279;](#component-icon)的图标，并显示在组件浏览器中。 |
+| `cq:icon` | `String` | 此值指向组件[的](#component-icon)图标，并显示在组件浏览器中。 |
 
 如果查看&#x200B;**Text**&#x200B;组件，您可以看到以下几个元素：
 
@@ -207,7 +207,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 
 AEM组件的对话框：
 
-* 是`nt:unstructured`类型的`cq:dialog`节点。
+* 是`cq:dialog`类型的`nt:unstructured`节点。
 * 位于其`cq:Component`节点下及其组件定义旁边。
 * 定义用于编辑此组件内容的对话框。
 * 使用Granite UI组件定义。
@@ -225,7 +225,7 @@ AEM组件的对话框：
 
 “设计”对话框类似于用于编辑和配置内容的对话框，但它们为模板作者提供了界面，以便预配置页面模板上的该组件，并提供其设计详细信息。 然后，内容作者使用页面模板来创建内容页面。 有关如何创建模板的详细信息，请参阅[模板文档](/help/sites-cloud/authoring/page-editor/templates.md)。
 
-编辑页面模板[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)时使用了设计对话框，但并非所有组件都需要。 例如，**标题**&#x200B;和&#x200B;**图像组件**&#x200B;都具有设计对话框，而&#x200B;**社交媒体共享组件**&#x200B;没有。
+编辑页面模板[时使用了](/help/sites-cloud/authoring/page-editor/templates.md)设计对话框，但并非所有组件都需要。 例如，**标题**&#x200B;和&#x200B;**图像组件**&#x200B;都具有设计对话框，而&#x200B;**社交媒体共享组件**&#x200B;没有。
 
 ### Coral用户界面和Granite用户界面 {#coral-and-granite}
 
@@ -309,7 +309,7 @@ AEM中的组件遵循&#x200B;**资源类型层次结构**。 用于使用属性`
 
 本节介绍如何配置组件的编辑行为。 这包括各种属性，例如组件可用的操作、in.place编辑器的特征以及与组件上的事件相关的侦听器。
 
-组件的编辑行为是通过在组件节点（类型为`cq:Component`）下添加类型为`cq:EditConfig`的`cq:editConfig`节点以及添加特定属性和子节点来配置的。 以下属性和子节点可用：
+组件的编辑行为是通过在组件节点（类型为`cq:editConfig`）下添加类型为`cq:EditConfig`的`cq:Component`节点以及添加特定属性和子节点来配置的。 以下属性和子节点可用：
 
 * `cq:editConfig`节点属性
 * [`cq:editConfig`子节点](#configuring-with-cq-editconfig-child-nodes)：
@@ -321,7 +321,7 @@ AEM中有许多现有配置。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 ### 组件占位符 {#component-placeholders}
 
-组件必须始终呈现对作者可见的一些HTML，即使组件没有内容也是如此。 否则，它可能会从编辑器的界面中消失，从技术上讲，它会在页面上和编辑器中呈现但不可见。 在这种情况下，作者将无法选择空组件并与之交互。
+组件必须始终渲染某些对作者可见的HTML，即使组件没有内容也是如此。 否则，它可能会从编辑器的界面中消失，从技术上讲，它会在页面上和编辑器中呈现但不可见。 在这种情况下，作者将无法选择空组件并与之交互。
 
 因此，组件应呈现占位符，只要它们在页面编辑器中呈现页面时（当WCM模式为`edit`或`preview`时）不呈现任何可见输出。
 占位符的典型HTML标记如下：
@@ -339,7 +339,7 @@ AEM中有许多现有配置。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 在上一个示例中，`isEmpty`是一个变量，仅当组件没有内容并且作者不可见时才会为真。
 
-为避免重复，Adobe建议组件的实施者为这些占位符使用HTL模板，例如[由核心组件提供的占位符](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)。
+为避免重复，Adobe建议组件的实施者对这些占位符使用HTL模板，[类似于核心组件](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)提供的占位符。
 
 然后，通过下面的HTL行完成上一个链接中的模板使用：
 
@@ -352,15 +352,15 @@ AEM中有许多现有配置。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 可在核心组件[中看到此模板的示例用法，例如在标题组件](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)中。
 
-### 使用cq：EditConfig子节点进行配置 {#configuring-with-cq-editconfig-child-nodes}
+### 使用cq:EditConfig子节点进行配置 {#configuring-with-cq-editconfig-child-nodes}
 
-#### 将Assets拖放到对话框中 — cq：dropTargets {#cq-droptargets}
+#### 将Assets拖放到对话框中 — cq:dropTargets {#cq-droptargets}
 
 `cq:dropTargets`节点（节点类型`nt:unstructured`）定义可以从从内容查找器拖动的资产中接受放置的放置目标。 它是类型为`cq:DropTargetConfig`的节点。
 
 `cq:DropTargetConfig`类型的子节点定义组件中的放置目标。
 
-### 就地编辑 — cq：inplaceEditing {#cq-inplaceediting}
+### 就地编辑 — cq:inplaceEditing {#cq-inplaceediting}
 
 就地编辑器允许用户直接在内容流中编辑内容，而无需打开对话框。 例如，标准&#x200B;**Text**&#x200B;和&#x200B;**Title**&#x200B;组件都有一个就地编辑器。
 
@@ -383,7 +383,7 @@ AEM中有许多现有配置。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
         editorType="plaintext"/>
 ```
 
-### 处理字段事件 — cq：listeners {#cq-listeners}
+### 处理字段事件 — cq:listeners {#cq-listeners}
 
 在自定义[客户端库](/help/implementing/developing/introduction/clientlibs.md)中使用侦听器处理对话框字段上的事件的方法。
 

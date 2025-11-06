@@ -3,9 +3,9 @@ title: Assets HTTP API
 description: 在 [!DNL Experience Manager Assets]中使用HTTP API创建、读取、更新、删除和管理数字资源。
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 5%
@@ -16,12 +16,12 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 ## AEM [!DNL Assets] HTTP API入门 {#overview}
 
-AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源启用CRUD（创建、读取、更新和删除）操作。 这些操作适用于资源元数据、演绎版和注释。 它包括对内容片段[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)的支持。
+AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源启用CRUD（创建、读取、更新和删除）操作。 这些操作适用于资源元数据、演绎版和注释。 它包括对内容片段[的](/help/assets/content-fragments/assets-api-content-fragments.md)支持。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源�
 要访问API，请执行以下操作：
 
 1. 在`https://[hostname]:[port]/api.json`处打开API服务文档。
-1. 关注指向`https://[hostname]:[server]/api/assets.json`的[!DNL Assets]服务链接。
+1. 关注指向[!DNL Assets]的`https://[hostname]:[server]/api/assets.json`服务链接。
 
 API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类型的响应代码。 JSON响应是可选的，可能不可用于（例如）PDF文件。 依靠响应代码进行进一步分析或执行操作。
 
@@ -42,7 +42,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 [内容片段](/help/assets/content-fragments/content-fragments.md)是存储文本、数字和日期的结构化资产。 由于`standard`资产（如图像或文档）存在若干差异，因此处理内容片段时适用一些其他规则。
 
-有关详细信息，请参阅 [!DNL Experience Manager Assets] HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的内容片段支持。
+有关详细信息，请参阅[HTTP API [!DNL Experience Manager Assets] 中的](/help/assets/content-fragments/assets-api-content-fragments.md)内容片段支持。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 >[!NOTE]
 >
->文件夹或资产的某些属性映射到不同的前缀。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`前缀已替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
+>文件夹或资产的某些属性映射到不同的前缀。 `jcr`、`jcr:title`和`jcr:description`的`jcr:language`前缀已替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
 
 **链接**&#x200B;文件夹显示三个链接：
 
@@ -141,7 +141,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 * 404 - NOT FOUND — 文件夹不存在或无法访问。
 * 500 — 内部服务器错误 — 如果出现其他错误。
 
-**响应**：返回的实体的类是资产或文件夹。 包含的实体的属性是每个实体的完整属性集的子集。 要获取实体的完整表示形式，客户端应检索链接指向的URL的内容，该URL具有`self`的`rel`。
+**响应**：返回的实体的类是资产或文件夹。 包含的实体的属性是每个实体的完整属性集的子集。 要获取实体的完整表示形式，客户端应检索链接指向的URL的内容，该URL具有`rel`的`self`。
 
 ## 创建文件夹 {#create-a-folder}
 
@@ -292,11 +292,11 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 ## 遵循最佳实践并注意限制 {#tips-limitations}
 
-* 当达到[!UICONTROL 结束时间]时，通过[!DNL Assets] Web界面和HTTP API，Assets及其演绎版将变得不可用。 如果[!UICONTROL 开启时间]是未来的时间，或者[!UICONTROL 结束时间]是过去的时间，则API返回404错误。
+* 当达到[!DNL Assets]结束时间[!UICONTROL 时，通过] Web界面和HTTP API，Assets及其演绎版将变得不可用。 如果[!UICONTROL 开启时间]是未来的时间，或者[!UICONTROL 结束时间]是过去的时间，则API返回404错误。
 
 * Assets HTTP API仅返回元数据的子集。 命名空间是硬编码的，并且只返回这些命名空间。 有关完整的元数据，请参阅资源路径`/jcr_content/metadata.json`。
 
-* 使用API更新时，文件夹或资产的某些属性会映射到不同的前缀。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`前缀已替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
+* 使用API更新时，文件夹或资产的某些属性会映射到不同的前缀。 `jcr`、`jcr:title`和`jcr:description`的`jcr:language`前缀已替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
 
 **浏览相关资源**
 
@@ -315,4 +315,4 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Assets][&#128279;](/help/assets/developer-reference-material-apis.md)的开发人员参考文档
+>* [的 [!DNL Assets]](/help/assets/developer-reference-material-apis.md)开发人员参考文档

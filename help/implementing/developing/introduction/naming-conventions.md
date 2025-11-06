@@ -1,19 +1,19 @@
 ---
-title: 命名约定
+title: 命名惯例
 description: 存储库中的节点遵循Java内容存储库的命名约定
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 1%
 
 ---
 
-# 命名约定{#naming-conventions}
+# 命名惯例{#naming-conventions}
 
-存储库中的节点遵循Java内容存储库的命名约定。 但是，AEM对页面节点名称施加进一步的约定。
+存储库中的节点遵循Java内容存储库的命名约定。 但是，AEM对页面节点名称实施了进一步的约定。
 
 ## 页面的命名约定 {#naming-conventions-for-pages}
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 * JcrUtil： [JCR实用程序](#jcr-utilities)的AEM实现。
 * PageManager： [页面管理器](#page-manager)提供页面级操作的方法。
-* 在AEM UI {#ui-behavior}中
+* 在AEM UI中 {#ui-behavior}
 
 ### JCR实用程序 {#jcr-utilities}
 

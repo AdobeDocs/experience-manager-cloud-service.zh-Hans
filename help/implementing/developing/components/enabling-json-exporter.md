@@ -3,11 +3,11 @@ title: 为组件启用 JSON 导出
 description: 组件可以适应为基于建模器框架生成其内容的JSON导出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ JSON导出基于[Sling模型](https://sling.apache.org/documentation/bundles/mod
 
 >[!NOTE]
 >
->有关使用Sling模型的示例，请参阅文章[在AEM中开发Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-hans)。
+>有关使用Sling模型的示例，请参阅文章[在AEM中开发Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)。
 
 Sling模型实现类必须使用以下内容进行注释：
 
@@ -66,13 +66,13 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 要由JSON导出程序框架考虑，模型接口应实现`ComponentExporter`接口（如果是容器组件，则为`ContainerExporter`）。
 
-随后将使用[Jackson注释](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)对相应的Sling模型接口(`MyComponent`)进行注释，以定义应如何导出（序列化）。
+随后将使用`MyComponent`Jackson注释[对相应的Sling模型接口(](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations))进行注释，以定义应如何导出（序列化）。
 
 必须正确注释模型接口以定义应序列化的方法。 默认情况下，所有遵守getter的常规命名约定的方法都将进行序列化，并且将从getter名称自然派生其JSON属性名称。 可使用`@JsonIgnore`或`@JsonProperty`来阻止或覆盖此项以重命名JSON属性。
 
 ## 示例 {#example}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)支持JSON导出，可用作参考。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)支持JSON导出，可用作参考。
 
 有关示例，请参阅图像核心组件的Sling模型实施及其注释的界面。
 
@@ -81,4 +81,4 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

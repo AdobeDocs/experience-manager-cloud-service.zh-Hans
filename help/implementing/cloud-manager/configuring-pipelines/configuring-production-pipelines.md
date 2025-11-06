@@ -5,11 +5,11 @@ index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
@@ -43,10 +43,10 @@ ht-degree: 35%
 >在配置前端管道之前，请参阅[AEM快速站点创建历程](/help/journey-sites/quick-site/overview.md)，获取易于使用的AEM快速站点创建工具的端到端指南。 此历程可帮助您简化AEM站点的前端开发，让您无需了解AEM后端即可快速自定义站点。
 
 1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
-1. 在&#x200B;**快速访问**&#x200B;部分中，单击&#x200B;**Experience Manager**。
+1. 在&#x200B;**快速访问**&#x200B;部分，单击 **Experience Manager**。
 1. 在左侧面板中点击 **Cloud Manager**。
 1. 选择所需的组织。
-1. 在&#x200B;**我的程序**&#x200B;控制台上，单击程序。
+1. 在&#x200B;**我的程序**&#x200B;控制台上，单击一个程序。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 

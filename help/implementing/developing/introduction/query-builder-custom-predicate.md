@@ -1,23 +1,23 @@
 ---
-title: 为查询生成器实施自定义谓词计算器
+title: 为查询生成器实施自定义谓词评估器
 description: AEM中的查询生成器提供了一种简单、可自定义的方式来查询内容存储库
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 为查询生成器实施自定义谓词计算器 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# 为查询生成器实施自定义谓词评估器 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 本文档介绍如何通过实现自定义谓词求值器来扩展[查询生成器](query-builder-api.md)。
 
 ## 概述 {#overview}
 
-[查询生成器](query-builder-api.md)提供了查询内容存储库的简单方法。 AEM附带[一组谓词计算器](#query-builder-predicates.md)，帮助您查询数据。
+[查询生成器](query-builder-api.md)提供了查询内容存储库的简单方法。 AEM随附[一组谓词计算器](#query-builder-predicates.md)，帮助您查询数据。
 
 但是，您可能希望通过实施自定义谓词计算器来简化查询，该计算器会隐藏一些复杂性并确保更好的语义。
 
@@ -109,7 +109,7 @@ replic.action=Activate
 >
 >`cq-search`依赖项的范围设置为`provided`，因为`cq-search`由`OSGi`容器提供。
 
-以下代码片段以[统一的diff格式](https://en.wikipedia.org/wiki/Diff#Unified_format)显示`pom.xml`文件中的差异
+以下代码片段以`pom.xml`统一的diff格式[显示](https://en.wikipedia.org/wiki/Diff#Unified_format)文件中的差异
 
 ```text
 @@ -120,6 +120,12 @@
@@ -135,7 +135,7 @@ replic.action=Activate
 >以下过程说明如何构建`Xpath`表达式以筛选数据。 另一个选项是实施按行选择数据的`includes`方法。 有关详细信息，请参阅[Java文档](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
 
 1. 创建扩展`com.day.cq.search.eval.AbstractPredicateEvaluator`的新Java类
-1. 使用[统一的diff格式](https://en.wikipedia.org/wiki/Diff#Unified_format)的`@Component`样代码片段对类进行注释
+1. 使用`@Component`统一的diff格式[的](https://en.wikipedia.org/wiki/Diff#Unified_format)样代码片段对类进行注释
 
    ```text
    @@ -19,8 +19,11 @@
@@ -165,7 +165,7 @@ replic.action=Activate
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   在覆盖方法中，您将基于参数中给定的`Predicate`构建`Xpath`表达式。
+   在覆盖方法中，您将基于参数中给定的`Xpath`构建`Predicate`表达式。
 
 ### 复制元数据的自定义谓词计算器示例 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 

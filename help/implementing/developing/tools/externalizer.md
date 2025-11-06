@@ -3,8 +3,8 @@ title: 外部化 URL
 description: 外部化器是一种OSGi服务，允许您以编程方式将资源路径转换为外部和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 2%

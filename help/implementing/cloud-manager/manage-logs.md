@@ -4,8 +4,8 @@ description: 了解如何访问和管理日志，可促进您在 AEM as a Cloud 
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 69%
@@ -101,5 +101,5 @@ Environment Id Service    Name
 
 请参阅以下附加资源，了解有关AEM as a Cloud Service中日志文件的更多信息：
 
-* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

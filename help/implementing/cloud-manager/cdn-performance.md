@@ -4,8 +4,8 @@ description: 了解Cloud Manager如何评估Content Delivery Network (CDN)性能
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 4%
@@ -48,7 +48,7 @@ CDN功能板可在每个项目的概述页面上找到。
 
 单击图表下方的&#x200B;**查看**&#x200B;以更改图表的时间范围。
 
-有关如何提高CDN性能的建议，请选择&#x200B;**Recommendations**&#x200B;选项卡。
+有关如何提高CDN性能的建议，请选择&#x200B;**建议**&#x200B;选项卡。
 
 ![CDN推荐](assets/cdn-performance-recommendations.png)
 
@@ -60,7 +60,7 @@ CDN功能板可在每个项目的概述页面上找到。
 
 >[!TIP]
 >
->Adobe建议用户以99%的缓存命中率为目标。
+>Adobe建议用户将缓存命中率设为99%。
 
 ```text
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)

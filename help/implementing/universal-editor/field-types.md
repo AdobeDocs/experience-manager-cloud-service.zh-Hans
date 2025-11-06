@@ -3,8 +3,8 @@ title: 模型定义、字段和组件类型
 description: 通过示例了解通用编辑器可以在属性面板中编辑的字段和组件类型。了解如何通过创建模型定义并将其与组件关联来适配您自己的应用程序。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 98%

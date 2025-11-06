@@ -4,14 +4,14 @@ description: 了解如何配置和自定义Forms Experience Builder界面选项�
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
-
 
 # 配置Forms Experience Builder UI选项
 
@@ -106,6 +106,6 @@ Forms Experience Builder提供各种UI配置选项，以根据您的工作流首
 ## 相关文章
 
 - [Forms Experience Builder概述](product-overview.md)
-- [Forms Experience Builder快速入门](forms-experience-builder-getting-started.md)
-- [部署和配置Forms Experience Builder](deploy-forms-experience-builder.md)
+- [Forms Experience Builder 快速入门指南](forms-experience-builder-getting-started.md)
+- [部署和配置 Forms Experience Builder](deploy-forms-experience-builder.md)
 - [常见问题解答](forms-experience-builder-frequently-asked-questions.md)

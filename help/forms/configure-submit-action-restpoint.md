@@ -5,10 +5,10 @@ keywords: AEM Forms REST端点，提交到REST端点，将数据发布到REST UR
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
@@ -59,7 +59,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
    `String att=request.getParameter("attachments");`
 
    在此示例中，`data`存储XML数据，`att`存储附件数据。
-**[!UICONTROL 提交到 REST 端点]**&#x200B;提交操作将表单中填入的数据作为 HTTP GET 请求的一部分提交到配置的确认页面。您可以添加要请求的字段的名称。 请求的格式为：
+**[!UICONTROL 提交到 REST 端点]**提交操作将表单中填入的数据作为 HTTP GET 请求的一部分提交到配置的确认页面。您可以添加要请求的字段的名称。 请求的格式为：
    `{fieldName}={request parameter name}`
 
    如下图所示，`param1` 和 `param2` 作为参数传递，其值是从下一操作中使用的&#x200B;**文本框**&#x200B;和&#x200B;**数字框**&#x200B;字段复制的。
@@ -131,11 +131,14 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 1. 打开自适应表单进行编辑。
 1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+
+   出现&#x200B;**表单属性**&#x200B;对话框。
+
    >[!NOTE]
    >
-   > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
-   > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+   > * 如果您在通用编辑器界面中没有看到&#x200B;**编辑表单属性**&#x200B;图标，请在 Extension Manager 中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+   > * 请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用或禁用扩展。
+
 1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 提交到Rest终结点]**&#x200B;提交操作。
 
    要将数据发布到内部服务器，请提供资源的路径。数据将发布到资源的路径。例如，`/content/restEndPoint`。对于此类 POST 请求，将使用提交请求的身份验证信息。
@@ -200,7 +203,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 
 
-## 最佳实践
+## 最佳做法
 
 * 将数据发布到外部服务器时，请确保URL安全，并配置路径以匿名处理POST请求以保护敏感信息。
 * 要将字段作为 REST URL 中的参数传递，所有字段都必须具有不同的元素名称，即使这些字段位于不同的面板上也是如此。

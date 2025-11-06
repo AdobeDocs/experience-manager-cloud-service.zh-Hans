@@ -3,9 +3,9 @@ title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 100%
 
@@ -131,7 +131,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 1. 定义应为哪些内容路径或 `sling:resourceType` 打开通用编辑器。
 
    * 在&#x200B;**通用编辑器打开映射**&#x200B;字段中，提供通用编辑器为其打开的路径。
-   * 在 Universal Editor 打开的 **Sling:resourceTypes**&#x200B;字段中，提供 Universal Editor 直接打开的一个资源列表。
+   * 在通用编辑器打开的 **Sling:resourceTypes**&#x200B;字段中，提供通用编辑器直接打开的一个资源列表。
 
 1. 单击&#x200B;**保存**。
 
@@ -143,10 +143,10 @@ data-aue-resource="urn:<referenceName>:<resource>"
    "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
    ```
 
-完成这些配置步骤后，AEM 将按以下顺序为页面打开 Universal Editor。
+完成这些配置步骤后，AEM 将按以下顺序为页面打开通用编辑器。
 
-1. AEM 会检查 `Universal Editor Opening Mapping` 中的映射，如果内容位于那里定义的任何路径下，就会为其打开 Universal Editor。
-1. 如果内容不位于 `Universal Editor Opening Mapping` 中定义的路径下，AEM 会检查此内容的 `resourceType` 是否与 Universal Editor 打开的 **Sling:resourceTypes 中定义的类型匹配**，如果内容与其中一个类型匹配，就会在 `${author}${path}.html` 上为其打开 Universal Editor。
+1. AEM 会检查 `Universal Editor Opening Mapping` 中的映射，如果内容位于那里定义的任何路径下，就会为其打开通用编辑器。
+1. 如果内容不位于 `Universal Editor Opening Mapping` 中定义的路径下，AEM 会检查此内容的 `resourceType` 是否与通用编辑器打开的 **Sling:resourceTypes 中定义的类型匹配**，如果内容与其中一个类型匹配，就会在 `${author}${path}.html` 上为其打开通用编辑器。
 1. 否则，AEM 就打开页面编辑器。
 
 以下变量可用于在&#x200B;**通用编辑器打开映射**&#x200B;字段中定义您的映射。

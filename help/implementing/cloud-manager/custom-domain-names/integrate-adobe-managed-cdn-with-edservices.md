@@ -3,10 +3,10 @@ title: 在Cloud Manager中将Edge Delivery Services与Adobe托管的CDN集成
 description: null
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 1%
@@ -46,7 +46,7 @@ EDS with CDN integration is beneficial for various scenarios, including e-commer
 |  | 部署选项 | 关键文档 | 功能 | 最适合 |
 | --- | --- | --- | --- | --- |
 | 选项1 | *具有*&#x200B;现有AEM as a Cloud Service (AEMaaCS)环境 | [从现有环境设置代理](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | 配置管道通常适用于AEMaaCS环境 | 已在Cloud Manager中运行Sites并希望快速低风险地提高性能的团队。 |
-| 选项2 | *不带*&#x200B;现有AEMaaCS环境；称为独立的“Edge环境”。 | [在没有现有环境的情况下设置Edge Delivery站点](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | 配置管道目前仅通过有限的Beta计划可用于Edge环境。<br>查看[添加Edge Delivery配置管道](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline)。 | 希望采用完整Edge Delivery架构和精细路由的新构建或迁移。 |
+| 选项2 | *不带*&#x200B;现有AEMaaCS环境；称为独立的“Edge环境”。 | [在没有现有环境的情况下设置Edge Delivery站点](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | 配置管道目前仅通过有限的Beta计划可用于Edge环境。<br>查看[添加Edge Delivery配置管道](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline)。 | 希望采用完整Edge Delivery架构和精细路由的新构建或迁移。 |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 

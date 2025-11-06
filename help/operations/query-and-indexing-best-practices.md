@@ -5,9 +5,9 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 40%
 
 ---
@@ -69,7 +69,7 @@ AEM as a Cloud Service提供了[查询性能工具](#query-performance-tool)，�
 * 它可显示已执行的查询及其相关性能特征和查询计划。
 * 从仅显示查询计划到执行完整查询，它允许在不同级别执行特殊查询。
 
-查询性能工具可通过Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hans#queries)中的Developer Console访问。 与AEM 6.x版本相比，AEM as a Cloud Service的查询性能工具可提供更多有关查询执行细节的信息。
+查询性能工具可通过Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)Developer Console访问。 与AEM 6.x版本相比，AEM as a Cloud Service的查询性能工具可提供更多有关查询执行细节的信息。
 
 此图表说明了使用查询性能工具优化查询的一般流程。
 
@@ -103,7 +103,7 @@ AEM as a Cloud Service提供了[查询性能工具](#query-performance-tool)，�
 
 查询结果的检索大小是查询性能的一个重要因素。由于结果是以延迟方式获取的，因此在运行时和内存使用方面，仅获取前 20 个结果与获取 10000 个结果是不同的。
 
-这也意味着，只有在获取所有结果的情况下，才能正确确定结果集的大小。因此，请务必限制获取的结果集，要么通过增加查询（详见本文档的[&#x200B; JCR 查询备忘表](#jcr-query-cheatsheet)部分），要么通过限制结果的读取来进行限制。
+这也意味着，只有在获取所有结果的情况下，才能正确确定结果集的大小。因此，请务必限制获取的结果集，要么通过增加查询（详见本文档的[ JCR 查询备忘表](#jcr-query-cheatsheet)部分），要么通过限制结果的读取来进行限制。
 
 这样的限制还可以防止查询引擎达到 100000 个节点的&#x200B;**遍历限制**，这会导致强制停止查询。
 
@@ -111,7 +111,8 @@ AEM as a Cloud Service提供了[查询性能工具](#query-performance-tool)，�
 
 ## 查询性能工具 {#query-performance-tool}
 
-查询性能工具(位于`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可通过Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hans#queries)中的Developer Console使用)提供 — 
+查询性能工具(位于`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可通过Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)Developer Console使用)提供 — 
+
 * 任何“慢查询”的列表；当前定义为读取/扫描超过5000行的查询。
 * “常见查询”列表
 * “Explain Query”工具，用于了解Oak如何执行特定查询。
@@ -119,6 +120,7 @@ AEM as a Cloud Service提供了[查询性能工具](#query-performance-tool)，�
 ![查询性能工具](assets/query-performance-tool.png)
 
 “慢查询”和“常用查询”表包括 — 
+
 * 查询语句本身。
 * 上一个执行查询的线程的详细信息，允许识别执行查询的页面或应用程序功能。
 * 查询的“读取优化”分数。
@@ -155,6 +157,7 @@ Explain查询工具允许开发人员了解查询执行计划（请参阅[读取
 
 选择`Explain`后，将显示一个弹出窗口，描述查询说明的结果（如果选中，还会显示执行）。
 此弹出窗口包含的详细信息 — 
+
 * 执行查询时使用的索引（如果查询是使用[存储库遍历](#repository-traversal)执行的，则无索引）。
 * 执行时间（如果已选中`Include Execution Time`复选框）和读取的结果计数（如果已选中`Read first page of results`或`Include Node Count`复选框）。
 * 执行计划，允许详细分析查询的执行方式 — 请参阅[阅读查询执行计划](#reading-query-execution-plan)以了解如何解释它。
@@ -172,6 +175,7 @@ Explain查询工具允许开发人员了解查询执行计划（请参阅[读取
 ```
 
 ...其中包含 — 
+
 * 3个限制
    * 节点类型(`dam:Asset`)
    * 路径（`/content/dam`的子项）
@@ -191,11 +195,12 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 计划的这一部分指出：
+
 * 索引用于执行此查询 — 
    * 在这种情况下，将使用Lucene索引`/oak:index/damAssetLucene-9`，因此剩余信息采用Lucene查询语法。
 * 所有3个限制都由索引处理 — 
    * 节点类型限制
-      * 隐含，因为`damAssetLucene-9`仅索引dam：Asset类型的节点。
+      * 隐式，因为`damAssetLucene-9`仅索引dam:Asset类型的节点。
    * 路径限制
       * 因为`+:ancestors:/content/dam`出现在Lucene查询中。
    * 属性限制
@@ -212,6 +217,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 ...其中包含 — 
+
 * 3个限制
    * 节点类型(`dam:Asset`)
    * 路径（`/content/dam`的子项）
@@ -231,9 +237,10 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 计划的这一部分指出：
+
 * 索引仅处理（3个）限制中的2个 — 
    * 节点类型限制
-      * 隐含，因为`damAssetLucene-9`仅索引dam：Asset类型的节点。
+      * 隐式，因为`damAssetLucene-9`仅索引dam:Asset类型的节点。
    * 路径限制
       * 因为`+:ancestors:/content/dam`出现在Lucene查询中。
 * 属性限制`jcr:content/metadata/myProperty = "My Property Value"`不是在索引上执行，而是作为查询引擎筛选对基础Lucene查询的结果应用。
@@ -255,7 +262,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 ## JCR查询备忘单 {#jcr-query-cheatsheet}
 
-为了支持创建高效的 JCR 查询和索引定义，[JCR 查询备忘表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=zh-Hans#jcrquerycheatsheet)可供下载，并可在开发过程中用作参考。
+为了支持创建高效的 JCR 查询和索引定义，[JCR 查询备忘表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)可供下载，并可在开发过程中用作参考。
 
 它包含 QueryBuilder、XPath 和 SQL-2 的示例查询，并涵盖了在查询性能方面表现不同的多个场景。它还提供了关于如何构建或定制 Oak 索引的建议。本备忘单的内容适用于AEM as a Cloud Service和AEM 6.5。
 

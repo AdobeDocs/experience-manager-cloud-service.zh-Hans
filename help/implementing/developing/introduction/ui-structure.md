@@ -1,10 +1,10 @@
 ---
 title: AEM UI 的结构
-description: AEM UI具有多种基础原则，并且由多个关键元素组成
+description: AEM UI具有多种基础原则，并由多个关键元素组成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 # AEM UI 的结构 {#structure-of-the-aem-ui}
 
-AEM UI具有多种基础原则，并且由几个关键元素组成：
+AEM UI具有几个基本原则，并且由几个关键元素组成：
 
 ## 控制台 {#consoles}
 
 ### 基本布局和调整大小 {#basic-layout-and-resizing}
 
-UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样式，而是使用一种适用于所有屏幕和设备的样式。
+UI同时适用于移动设备和桌面设备，不过AEM不会创建两种样式，而是使用一种适用于所有屏幕和设备的样式。
 
 所有模块都使用相同的基本布局：
 
@@ -37,7 +37,7 @@ UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样
 
 标题栏显示全局元素，包括：
 
-* 徽标以及您当前使用的特定产品/解决方案。 对于AEM，此元素还会形成指向全局导航的链接
+* 徽标以及您当前使用的特定产品/解决方案。 对于AEM，此元素还会构成指向全局导航的链接
 * 搜索
 * 用于访问帮助资源的图标
 * 用于访问其他解决方案的图标
@@ -144,7 +144,7 @@ UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样
 
 这些层为整个页面提供了完善的功能，而不是为单个组件执行的特定操作。
 
-AEM附带了多个已实施用于页面创作的图层；例如，包括编辑、预览和批注图层。
+AEM附带了多个已实施用于页面创作的图层；例如，包括编辑、预览和注释图层。
 
 >[!NOTE]
 >

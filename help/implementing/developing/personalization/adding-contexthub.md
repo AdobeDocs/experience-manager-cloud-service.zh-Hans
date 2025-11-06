@@ -1,17 +1,17 @@
 ---
-title: 将ContextHub添加到页面并访问存储
+title: 将 ContextHub 添加到页面并访问存储
 description: 将ContextHub添加到您的页面以启用ContextHub功能并链接到ContextHub JavaScript库
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 将ContextHub添加到页面并访问存储 {#adding-contexthub-to-pages-and-accessing-stores}
+# 将 ContextHub 添加到页面并访问存储 {#adding-contexthub-to-pages-and-accessing-stores}
 
 将ContextHub添加到您的页面以启用ContextHub功能并链接到ContextHub JavaScript库。
 
@@ -19,7 +19,7 @@ ContextHub JavaScript API提供了对ContextHub管理的上下文数据的访问
 
 ## 将ContextHub添加到页面组件 {#adding-contexthub-to-a-page-component}
 
-要启用ContextHub功能并链接到ContextHub JavaScript库，请在页面的`head`部分中包含`contexthub`组件。 页面组件的HTL代码应类似于以下示例：
+要启用ContextHub功能并链接到ContextHub JavaScript库，请在页面的`contexthub`部分中包含`head`组件。 页面组件的HTL代码应类似于以下示例：
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -48,7 +48,7 @@ Context Hub存储使用以下持久性模式之一：
 * **Window.name：**&#x200B;使用window.name属性保留数据。
 * **内存：**&#x200B;使用JavaScript对象保留数据。
 
-默认情况下，Context Hub使用本地持久性模式。 如果浏览器不支持或不允许使用HTML5 localStorage，则使用会话持久性。 如果浏览器不支持或不允许使用HTML5 sessionStorage，则使用Window.name持久性。
+默认情况下，Context Hub使用本地持久性模式。 如果浏览器不支持或不允许HTML5 localStorage，则使用会话持久性。 如果浏览器不支持或不允许HTML5 sessionStorage，则使用Window.name持久性。
 
 ### 存储数据 {#store-data}
 
@@ -111,7 +111,7 @@ ContextHub提供了用于处理JavaScript对象的[`ContextHub.Utils.JSON.tree`]
 >
 >默认情况下，ContextHub不知道发布服务器上当前使用的已登录，并且ContextHub将此类用户视为“匿名”。
 >
->您可以通过加载配置文件存储区，使ContextHub感知已登录的用户。 在GitHub[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上查看示例代码： aem-sample-we-retail。
+>您可以通过加载配置文件存储区，使ContextHub感知已登录的用户。 在GitHub[上查看示例代码： ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)aem-sample-we-retail。
 
 ### ContextHub事件 {#contexthub-eventing}
 
@@ -123,7 +123,7 @@ Context Hub JavaScript API为处理浏览器Cookie提供了跨浏览器支持。
 
 ## 确定已解析的ContextHub区段 {#determining-resolved-contexthub-segments}
 
-通过ContextHub区段引擎，可确定在当前上下文中解析的已注册区段。 使用[`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager)类的getResolvedSegments函数检索已解析的段。 然后，使用[`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment)类的`getName`或`getPath`函数来测试区段。
+通过ContextHub区段引擎，可确定在当前上下文中解析的已注册区段。 使用[`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager)类的getResolvedSegments函数检索已解析的段。 然后，使用`getName`类的`getPath`或[`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment)函数来测试区段。
 
 ### ContextHub 区段 {#contexthub-segments}
 

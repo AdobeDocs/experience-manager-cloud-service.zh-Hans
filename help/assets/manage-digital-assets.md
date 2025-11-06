@@ -4,9 +4,9 @@ description: 了解各种资源管理和编辑方法
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 本文介绍了如何在[!DNL Adobe Experience Manager Assets]中管理和编辑资源。 要管理[!DNL Content Fragments]，请参阅[[!DNL Content Fragments]](content-fragments/content-fragments.md)资源。
@@ -59,18 +59,17 @@ ht-degree: 10%
 
    ![zip提取](assets/zip-extraction.png)
 
->[!NOTE]
->
->* 支持的最大ZIP文件大小为15 GB。
->* 一次最多可以提取三个ZIP文件。
+   >[!NOTE]
+   >
+   >* 支持的最大ZIP文件大小为15 GB。
+   >* 一次最多可以提取三个ZIP文件。
 
-## 预览资源 {#previewing-assets}
+## 预览资产 {#previewing-assets}
 
 要预览资源，请执行以下步骤。
 
 1. 从Assets用户界面中，导航到要预览的资源位置。
 1. 选择所需的资产以将其打开。
-
 1. 在预览模式下，缩放选项可用于[支持的图像类型](/help/assets/file-format-support.md)（通过交互式编辑）。
 
    要放大资产，请选择`+`（或选择资产上的放大镜）。 要缩小，请选择`-`。 放大时，可以通过平移仔细查看图像的任意区域。 重置缩放箭头将您带回原始视图。
@@ -80,7 +79,6 @@ ht-degree: 10%
 ## 编辑属性 {#editing-properties}
 
 1. 导航到要编辑其元数据的资源的位置。
-
 1. 选择资源，然后从工具栏中选择&#x200B;**[!UICONTROL 属性]**&#x200B;以查看资源属性。 或者，选择资产卡上的&#x200B;**[!UICONTROL 属性]**&#x200B;快速操作。
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ ht-degree: 10%
 
 1. 要在特定持续时间后停用资产，请从&#x200B;**[!UICONTROL 关闭时间]**&#x200B;字段旁边的日期选取器中选择停用日期/时间。 停用日期应晚于资源的激活日期。 在[!UICONTROL 结束时间]后，无法通过Assets Web界面或HTTP API访问资源及其演绎版。
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记的名称，然后选择`Enter`键。 新标记保存在[!DNL Experience Manager]中。
 
    YouTube需要使用Tags才能发布，并且具有YouTube链接（如果能够找到合适的链接）。
 
    >[!NOTE]
    >
-   > 要创建标记，您必须在CRX存储库中的`/content/cq:tags/default`路径处具有写入权限。
+   >要创建标记，您必须在CRX存储库中的`/content/cq:tags/default`路径处具有写入权限。
 
 1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
-
 1. 导航到Assets用户界面。 编辑后的元数据属性（包括标题、描述和标记）将显示在卡片视图的资产卡片上，以及列表视图的相关列下。
 
 <!-- TBD: Uncomment after verification for Dec release.
@@ -248,7 +246,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
-   要为视频资源配置演绎版维度，请导航到CRX存储库中位置`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`的`videopicker`节点，覆盖该节点，然后编辑相应的属性。
+   要为视频资源配置演绎版维度，请导航到CRX存储库中位置`videopicker`的`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`节点，覆盖该节点，然后编辑相应的属性。
 
    >[!NOTE]
    >
@@ -412,7 +410,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->时间轴包含多个特定于内容片段[&#128279;](content-fragments/content-fragments.md)的选项。
+>时间轴包含多个特定于内容片段[的](content-fragments/content-fragments.md)选项。
 
 ## 为资源作批注 {#annotating}
 
@@ -422,7 +420,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->对于内容片段，在片段编辑器[&#128279;](content-fragments/content-fragments.md)中创建注释。
+>对于内容片段，在片段编辑器[中创建](content-fragments/content-fragments.md)注释。
 
 1. 导航到要将注释添加到的资源的位置。
 1. 从以下任一选项中选择&#x200B;**[!UICONTROL 注释]**&#x200B;图标：
@@ -659,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
+要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
 
 **另请参阅**
 

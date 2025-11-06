@@ -4,8 +4,8 @@ description: 在 AEM Headless 开发人员历程的这一部分中，了解如�
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 100%
@@ -61,9 +61,9 @@ ht-degree: 100%
 
 ## 部署到生产 {#deploy-to-production}
 
-在确保一切都经过测试并正常工作后，即可将代码更新推送到 [Cloud Manager 中的集中式 Git 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=zh-Hans)。
+在确保一切都经过测试并正常工作后，即可将代码更新推送到 [Cloud Manager 中的集中式 Git 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)。
 
-在将更新上传到 Cloud Manager 后，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hans)将这些更新部署到 AEM as a Cloud Service。
+在将更新上传到 Cloud Manager 后，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)将这些更新部署到 AEM as a Cloud Service。
 
 您可以使用 Cloud Manager CI/CD 管道开始部署代码，该管道在 [通过 Cloud Manager 和 包管理器部署内容包](/help/implementing/deploying/overview.md)中有详细介绍。
 
@@ -132,5 +132,5 @@ ht-degree: 100%
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans)
 * [到 AEM as a Cloud Service 的部署概述](/help/implementing/deploying/overview.md)
-* [使用 Cloud Manager 部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hans)
+* [使用 Cloud Manager 部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [将 Cloud Manager Git 存储库与外部 Git 存储库集成，并将项目部署到 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=zh-hans)

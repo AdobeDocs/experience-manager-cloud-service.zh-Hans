@@ -2,10 +2,10 @@
 title: 管理内容片段
 description: 了解如何从控制台和编辑器管理AEM内容片段，创建内容作为Headless内容的基础，或进行页面创作。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 71%
@@ -40,7 +40,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 

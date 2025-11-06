@@ -3,9 +3,9 @@ title: SPA 页面组件
 description: 在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派给SPA框架。 本文档将说明这如何使SPA的页面组件具有唯一性。
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
@@ -73,7 +73,7 @@ SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HT
 
 * `cq:wcmmode`：编辑器的WCM模式（例如，页面、模板）
 * `cq:pagemodel_root_url`：应用程序的根模型的URL。 由于子页面模型是应用程序根模型的片段，因此直接访问子页面时至关重要。 然后，`PageModelManager`会系统地重新构建应用程序初始模型，使其从根入口点进入应用程序。
-* `cq:pagemodel_router`：启用或禁用`PageModelManager`库的[`ModelRouter`](routing.md)
+* `cq:pagemodel_router`：启用或禁用[`ModelRouter`](routing.md)库的`PageModelManager`
 * `cq:pagemodel_route_filters`：逗号分隔列表或正则表达式，用于提供[`ModelRouter`](routing.md)必须忽略的路由。
 
 ## 页面编辑器叠加同步 {#page-editor-overlay-synchronization}

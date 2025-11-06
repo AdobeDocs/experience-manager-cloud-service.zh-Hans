@@ -4,10 +4,10 @@ description: 了解如何将Microsoft Dynamics 365与自适应Forms集成。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 1%
 # 配置Microsoft® Dynamics 365 for AEM Forms
 
 Adobe Experience Manager Forms数据集成提供了云服务配置，以便将表单与Microsoft Dynamics服务器集成。 它使您能够根据在Microsoft Dynamics服务中定义的实体、属性和服务来创建表单数据模型(FDM)。 表单数据模型(FDM)可用于创建与Microsoft Dynamics服务器交互以启用业务工作流程的Adaptive Forms。 例如：
+
 * 查询Microsoft Dynamics服务器以获取数据并预填充Adaptive Forms。
 * 在提交自适应表单时将数据写入Microsoft Dynamics。
 * 通过表单数据模型(FDM)中定义的自定义实体在Microsoft Dynamics中写入数据。
@@ -35,7 +36,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 >
 >Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.-->
 
-## 前提条件
+## 先决条件
 
 将[!DNL Microsoft® Dynamics 365]与AEM Forms as a Cloud Service集成之前，请确保已执行以下步骤：
 
@@ -47,7 +48,9 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
    >[!VIDEO](https://video.tv.adobe.com/v/3444389/)
 
 1. **在Power Platform管理中心中创建帐户**
-在&#x200B;**Power Platform管理中心**&#x200B;中创建帐户以：
+
+   在&#x200B;**Power Platform管理中心**&#x200B;中创建帐户以：
+
    * 添加Dataverse
    * 启用Microsoft Dynamics 365应用程序
 
@@ -63,8 +66,8 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    >[!NOTE]
    >
-   > * 要创建连接的[!DNL Microsoft® Dynamics 365]应用程序，请选择&#x200B;**Web**&#x200B;作为平台，并以下列格式指定&#x200B;**重定向URI**： `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`。
-   > * 请确保保存客户端ID（也称为应用程序ID）和客户端密钥以供将来参考。
+   >* 要创建连接的[!DNL Microsoft® Dynamics 365]应用程序，请选择&#x200B;**Web**&#x200B;作为平台，并以下列格式指定&#x200B;**重定向URI**： `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`。
+   >* 请确保保存客户端ID（也称为应用程序ID）和客户端密钥以供将来参考。
 
 ## 将Forms连接到Microsoft® Dynamics 365
 
@@ -80,7 +83,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 执行以下步骤以配置[!DNL Microsoft® Dynamics 365]云服务配置：
 
-1. 导航到[!DNL AEM Forms]创作实例上的&#x200B;**[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL 云服务]** > **[!UICONTROL 数据源]**。
+1. 导航到&#x200B;**[!UICONTROL 创作实例上的]**&#x200B;工具![ ](assets/hammer.png)锤子&#x200B;**[!UICONTROL >]**&#x200B;云服务&#x200B;**[!UICONTROL >]**&#x200B;数据源[!DNL AEM Forms]。
 
    ![选择云数据Source](/help/forms/assets/dynamics-data-source.png)
 1. 选择配置容器。 配置存储在选定的配置容器中。
@@ -93,7 +96,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
    ![创建数据Source配置向导](/help/forms/assets/dynamics-create-data-configuration.png)
 
 1. 指定&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Name]**&#x200B;并选择&#x200B;**[!UICONTROL 服务类型]**&#x200B;作为&#x200B;**OData服务**。
-1. 单击&#x200B;**[!UICONTROL “下一个”。]**&#x200B;出现&#x200B;**身份验证**&#x200B;选项卡。
+1. 单击&#x200B;**[!UICONTROL “下一步”。]**&#x200B;出现&#x200B;**身份验证**&#x200B;选项卡。
 
    ![身份验证选项卡](/help/forms/assets/dynamics-authentication-tab.png)
 
@@ -105,18 +108,18 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 1. 选择&#x200B;**[!UICONTROL 身份验证类型]**&#x200B;作为&#x200B;**OAuth2.0**。
 1. 为连接的应用程序指定&#x200B;**客户端ID** （称为应用程序ID）和&#x200B;**客户端密钥**。
-您可以从Azure Active Directory应用程序中检索&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
+您可以从Azure Active Directory应用程序中检索**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
 
    ![客户端ID和客户端密钥](/help/forms/assets/dynamics-azure-app-resgistration.png)
 
-1. 在&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**[!UICONTROL 访问令牌URL]**&#x200B;字段中指定以下内容。
-您可以从Azure Active Directory应用程序的&#x200B;**端点**&#x200B;部分中检索&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**[!UICONTROL 访问令牌URL]**。
+1. 在&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**[!UICONTROL 访问令牌URL]**字段中指定以下内容。
+您可以从Azure Active Directory应用程序的**[!UICONTROL 端点]**&#x200B;部分中检索&#x200B;**[!UICONTROL OAuth URL]**、**[!UICONTROL 刷新令牌URL]**&#x200B;和&#x200B;**访问令牌URL**。
 
    ![Azure应用终结点](/help/forms/assets/dynamics-azure-app-endpoints.png)
 
-1. 在[!DNL Microsoft® Dynamics 365]上授权进程的&#x200B;**[!UICONTROL 授权范围]**&#x200B;字段中指定`openid`。
+1. 在`openid`上授权进程的&#x200B;**[!UICONTROL 授权范围]**&#x200B;字段中指定[!DNL Microsoft® Dynamics 365]。
 1. 在&#x200B;**[!UICONTROL 资源]**&#x200B;字段中指定动态实例URL以使用表单数据模型(FDM)配置[!DNL Microsoft® Dynamics 365]。
-您可以从&#x200B;**Power Platform管理中心**&#x200B;复制&#x200B;**环境URL**&#x200B;或使用&#x200B;**服务根** URL派生Dynamics实例URL。 资源URL的格式如下： `https://<tenant-name>.dynamics.com`。
+您可以从**Power Platform管理中心**&#x200B;复制&#x200B;**环境URL**&#x200B;或使用&#x200B;**服务根** URL派生Dynamics实例URL。 资源URL的格式如下： `https://<tenant-name>.dynamics.com`。
 
    ![电源应用资源字段](/help/forms/assets/dynamics-resource-field.png)
 
@@ -137,7 +140,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    出现&#x200B;**创建表单数据模型**&#x200B;向导。
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. 从&#x200B;**选择数据源**&#x200B;选项卡中选择创建的云配置。
+1. 从&#x200B;**选择数据源**选项卡中选择创建的云配置。
    ![选择云配置](/help/forms/assets/dynamics-select-cloud-config.png)
 
 1. 单击编辑![编辑](assets/edit.png)图标以查看和配置表单数据模型(FDM)。
@@ -149,7 +152,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 * 将提交的表单数据写入[!DNL Microsoft Dynamics]实体
 * 您可以为自适应表单配置表单数据模型提交操作以将数据发送到[!DNL Microsoft Dynamics]。
 
-然后，您可以在&#x200B;**自适应表单**&#x200B;中使用[使用表单数据模型(FDM)](/help/forms/using-form-data-model.md)提交选项将数据从表单传输到配置的[!DNL Microsoft® Dynamics 365]。
+然后，您可以在[自适应表单](/help/forms/using-form-data-model.md)中使用&#x200B;**使用表单数据模型(FDM)**&#x200B;提交选项将数据从表单传输到配置的[!DNL Microsoft® Dynamics 365]。
 
 
 >[!MORELIKETHIS]

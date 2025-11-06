@@ -4,8 +4,8 @@ description: 了解如何验证Cloud Manager是否已成功确认您的自定义
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 19%
@@ -37,7 +37,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->如果您正在域中使用&#x200B;*Adobe托管(DV) SSL证书*，则当您在[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)时单击“验证域”对话框中的&#x200B;**验证**&#x200B;时，Cloud Manager会自动触发验证。
+>如果您正在域中使用&#x200B;*Adobe托管(DV) SSL证书*，则当您在&#x200B;**添加自定义域名**&#x200B;时单击“验证域”对话框中的[验证](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)时，Cloud Manager会自动触发验证。
 >
 >如果您计划使用&#x200B;**客户管理的(OV/EV) SSL证书**，请在&#x200B;*之后*&#x200B;验证您的域[添加OV/EV SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 

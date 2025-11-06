@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -17,11 +17,12 @@ ht-degree: 6%
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=zh-Hans)自动执行重复相同任务的流程，例如文档审批工作流、电子邮件筛选和排序，从而让您能够专注于新任务而不是重复任务。 Adobe Workfront Fusion包含多个场景。 场景由一系列模块组成，这些模块在应用程序和Web服务之间执行数据传输。 在场景中，添加各种步骤（模块）以自动执行任务。
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html)自动执行重复相同任务的流程，例如文档审批工作流、电子邮件筛选和排序，从而让您能够专注于新任务而不是重复任务。 Adobe Workfront Fusion包含多个场景。 场景由一系列模块组成，这些模块在应用程序和Web服务之间执行数据传输。 在场景中，添加各种步骤（模块）以自动执行任务。
 
 例如，使用Workfront Fusion，您可以创建一个方案，以便使用自适应表单收集数据、处理数据并将数据发送到数据存储进行存档。 一旦设置了场景，Workfront Fusion就会在用户填写表单时自动执行任务，从而无缝更新数据存储。
 
 AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应表单并将其提交到Adobe Workfront Fusion。 将表单提交到Adobe Workfront Fusion可以具备以下优势：
+
 * 它支持将表单提交数据无缝传输到Workfront Fusion工作流。
 * 它有助于自动执行由表单提交触发的各种任务。 这可以包括启动项目、将任务分配给特定团队成员、发送通知以及更新项目状态 — 所有这些操作都不需要手动干预。
 * 在Workfront Fusion中捕获的所有表单提交都为项目相关信息提供了单一的真实来源
@@ -37,8 +38,8 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
 
 要在Workfront Fusion与AEM Forms之间建立连接，需要满足以下条件：
 
-* 有效的[Workfront和Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=zh-Hans)。
-* 有权访问[开发控制台](https://my.cloudmanager.adobe.com/)以[检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)的AEM用户。
+* 有效的[Workfront和Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html)。
+* 有权访问[开发控制台](https://my.cloudmanager.adobe.com/)以[检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)的AEM用户。
 
 ## 将AEM Forms与Adobe Workfront Fusion集成
 
@@ -105,7 +106,7 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
    >
    > 实例URL是指向特定AEM Forms实例的唯一网址。
 
-   您可以从创建连接所需的开发人员控制台[检索](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)服务凭据。
+   您可以从创建连接所需的开发人员控制台[检索](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)服务凭据。
 
 1. 从开发人员控制台中的服务凭据中将`ims-na1.adobelogin.com`IMS端点&#x200B;**中的**&#x200B;替换为&#x200B;**imsEndpoint**&#x200B;的值。
 
@@ -118,7 +119,7 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
    * 从开发人员控制台中的服务凭据中指定值为&#x200B;**clientSecret**&#x200B;的&#x200B;**客户端密钥**。
    * 从开发人员控制台中的服务凭据中指定值为&#x200B;**id**&#x200B;的&#x200B;**技术帐户ID**。
    * 从开发人员控制台中的服务凭据中指定值为&#x200B;**org**&#x200B;的&#x200B;**组织ID**。
-   * 开发人员控制台中服务凭据值为&#x200B;**元作用域**&#x200B;的&#x200B;**元作用域**。
+   * 开发人员控制台中服务凭据值为&#x200B;**metascopes**&#x200B;的&#x200B;**Meta范围**。
    * 开发人员控制台中服务凭据值为&#x200B;**privateKey**&#x200B;的&#x200B;**私钥**。
 
    >[!NOTE]
@@ -180,13 +181,13 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
 要为使用通用编辑器创作的自适应表单配置提交操作，请执行以下操作：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
-   > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
-   > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+   > * 如果您在通用编辑器界面中没有看到&#x200B;**编辑表单属性**&#x200B;图标，请在 Extension Manager 中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+   > * 请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用或禁用扩展。
 
 1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 调用Workfront Fusion方案]**&#x200B;提交操作。
 
@@ -197,7 +198,7 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
 
 >[!ENDTABS]
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
 * 建议仔细选择您的webhook名称，因为在AEM实例中无法获取场景名称。 如果将来更改webhook名称，该名称将不会反映在AEM Forms提交操作下拉列表中。
 * 一个方案可以有多个webhook链接，但一次只能有一个webhook链接处于活动状态。 建议删除未链接的webhook，以便它不会出现在AEM Forms提交操作下拉列表中。

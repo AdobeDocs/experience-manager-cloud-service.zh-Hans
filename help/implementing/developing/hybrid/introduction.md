@@ -3,9 +3,9 @@ title: SPA 简介和演练
 description: 本文介绍了 SPA 的概念，演练了如何使用基本 SPA 应用程序进行创作，并展示了它与底层 AEM SPA Editor 的关系。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -48,7 +48,7 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 
 >[!TIP]
 >
->任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+>任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ### 什么是 SPA？ {#what-is-a-spa}
 
@@ -94,10 +94,12 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 >[!TIP]
 >
 >有关 SPA 在 AEM 中的工作方式的技术详细信息，请参阅文章：
+>
 >* [利用 React 在 AEM 中开始使用 SPA](getting-started-react.md)
 >* [利用 Angular 在 AEM 中开始使用 SPA](getting-started-angular.md)
 >
 >要详细了解 SPA 编辑器的设计、架构和技术工作流，请参阅文章：
+>
 >* [SPA 编辑器概述](editor-overview.md)。
 
 ## SPA 的内容编辑体验 {#content-editing-experience-with-spa}

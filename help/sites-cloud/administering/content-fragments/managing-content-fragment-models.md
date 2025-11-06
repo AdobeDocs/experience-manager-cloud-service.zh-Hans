@@ -2,10 +2,10 @@
 title: 管理内容片段模型
 description: 了解如何管理内容片段模型；这些模型用作AEM中内容片段的基础，使您能够创建结构化内容用于Headless投放或页面创作。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 49%
@@ -236,7 +236,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    您还可以定义各种属性：
 
    * **标题**
-如果您先输入&#x200B;**Title**，则将从中生成&#x200B;**Name**。
+如果您先输入**Title**，则将从中生成&#x200B;**Name**。
    * **描述**
    * **启用模型**&#x200B;以[启用模型](#enabling-disabling-a-content-fragment-model)
 

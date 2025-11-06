@@ -4,8 +4,8 @@ description: Cloud Manager 提供了一个仪表板，用于轻松查看您的�
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 23%
@@ -19,7 +19,7 @@ Cloud Manager提供了一个仪表板，用于轻松查看您的组织或租户�
 
 >[!IMPORTANT]
 >
->许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
+>许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
 >
 >要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 

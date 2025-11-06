@@ -1,19 +1,19 @@
 ---
-title: 智能成像
+title: 智能图像处理
 description: 了解具有Adobe Sensei AI的智能成像如何应用每个用户的独特查看特征，自动提供针对其体验而优化的正确图像，从而实现更好的性能和参与。
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 1%
 
 ---
 
-# 智能成像 {#smart-imaging}
+# 智能图像处理 {#smart-imaging}
 
 了解具有Adobe Sensei AI的智能成像如何应用每个用户的独特查看特征，自动提供针对其体验而优化的正确图像，从而实现更好的性能和参与。
 
@@ -86,7 +86,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您可以通过将`bfc=off`附加到图像的URL来关闭智能成像。
 
-另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 关于设备像素比优化 {#dpr}
 
@@ -279,7 +279,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * 列出所有相关域，如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
       * 智能成像支持通用域和自定义域。
-      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
+      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
 
          1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
          1. 查找&#x200B;**[!UICONTROL 发布的服务器名称]**&#x200B;字段以确认您的域。

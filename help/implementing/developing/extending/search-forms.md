@@ -3,11 +3,11 @@ title: 配置搜索表单
 description: 为Adobe Experience Manager as a Cloud Service配置搜索Forms 。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/sites-cloud/authoring/search.md)机制。
 
-此外，还有一组预定义选项，可帮助您筛选内容。 这些保留预定义的Facet，如&#x200B;**修改日期**、**Publish状态**&#x200B;或&#x200B;**活动副本状态**，以帮助您快速深入查看所需的资源。
+此外，还有一组预定义选项，可帮助您筛选内容。 这些保留预定义的Facet，如&#x200B;**修改日期**、**发布状态**&#x200B;或&#x200B;**活动副本状态**，以帮助您快速深入查看所需的资源。
 
 ![搜索和筛选使用情况](assets/csf-usage.png)
 
@@ -31,7 +31,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
 
 使用&#x200B;**搜索Forms**，您可以根据特定需求自定义和扩展这些面板。
 
-**搜索Forms**&#x200B;提供了可组合和定义的[谓词](#predicates-and-their-settings)的现成选择。 可通过以下方式访问用于配置这些表单[&#128279;](#configuring-your-search-forms)的对话框：
+**搜索Forms**&#x200B;提供了可组合和定义的[谓词](#predicates-and-their-settings)的现成选择。 可通过以下方式访问用于配置这些表单[的](#configuring-your-search-forms)对话框：
 
 * **工具**
    * **常规**
@@ -53,7 +53,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
 * **页面编辑器（页面搜索）**
 * **页面编辑器（段落搜索）**
 * **页面编辑器（产品搜索）**
-* **页面编辑器(Scene7搜索)**
+* **页面编辑器（Scene7搜索）**
 * **页面编辑器（视频搜索）**
 * **项目管理员搜索边栏**
 * **项目翻译搜索边栏**
@@ -288,7 +288,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
    <td>
     <ul>
      <li>字段标签</li>
-     <li>Publish资产名称*</li>
+     <li>发布属性名称*</li>
      <li>锁定的页面属性名称*</li>
      <li>描述</li>
     </ul> </td>
@@ -339,7 +339,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
    </td>
   </tr>
   <tr>
-   <td>Publish状态</td>
+   <td>发布状态</td>
    <td>根据资源的发布状态筛选资源。</td>
    <td>
     <ul>
@@ -511,7 +511,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
 
   要搜索的属性。 它使用相对路径，通配符`*/*/*`指定相对于`jcr:content`节点的属性深度（每个星号表示一个节点级别）。
 
-  如果只想在`jcr:content`节点上具有`x`属性的资源的第一级子节点上搜索，请使用`*/jcr:content/x`
+  如果只想在`x`节点上具有`jcr:content`属性的资源的第一级子节点上搜索，请使用`*/jcr:content/x`
 
 * **属性深度**
 
@@ -536,12 +536,12 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节点路径**
-与&#x200B;**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资产。
+与**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资产。
 
 * **单选**
 如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中此复选框，则可取消选中此复选框。
 
-* **Publish和Live Copy属性名称**
+* **发布和Live Copy属性名称**
 站点特定谓词的发布和Live Copy复选框的标签。
 
 * **设置**&#x200B;选项卡中的字段标签上的&amp;amp；ast；表示这些字段是必填字段，如果留空，将会显示错误消息。
@@ -653,7 +653,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
    >
    >建议用于配置和其他更改的方法是：
    >
-   >1. 在`/apps`下重新创建所需项，因为它存在于`/libs`中。 在本例中，来自：
+   >1. 在`/libs`下重新创建所需项，因为它存在于`/apps`中。 在本例中，来自：
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. 在`/apps.`中进行任何更改
 
@@ -704,7 +704,7 @@ Adobe Experience Manager as a Cloud Service提供了强大的[搜索](/help/site
   </tr>
   <tr>
    <td>预览</td>
-   <td><code>/var/dam/content</code>节点的读取、写入和删除权限。<code>/apps</code>节点上的<br />读、写权限。</td>
+   <td><code>/var/dam/content</code>节点的读取、写入和删除权限。<br />节点上的<code>/apps</code>读、写权限。</td>
   </tr>
  </tbody>
 </table>

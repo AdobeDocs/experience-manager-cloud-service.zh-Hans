@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.4.0 版�
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 97%
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 请查看 2025 年 4 月发布概述视频，了解 2025.4.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464012?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -153,7 +153,7 @@ CDN 规则现在可以为包括阻止流量和重定向在内的用例根据区�
 
 从 1 月份的版本开始，您可以使用 Java 21 和 Java 17 构建代码。您可以访问模式匹配、密封类和各种性能改进等新功能。有关配置步骤（包括更新 Maven 项目和库版本），请参阅文章[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
 
-当检测到 Java 17 或 21 版本时，会自动部署性能更高的 Java 21 **运行时**。不过，Adobe 也建议使用 Java 11 构建的环境选择 Java 21 运行时，具体方法是发送电子邮件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [&#x200B; Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
+当检测到 Java 17 或 21 版本时，会自动部署性能更高的 Java 21 **运行时**。不过，Adobe 也建议使用 Java 11 构建的环境选择 Java 21 运行时，具体方法是发送电子邮件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [ Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
@@ -164,12 +164,14 @@ CDN 规则现在可以为包括阻止流量和重定向在内的用例根据区�
 为了确保有效监控客户环境，AEM Java 日志必须保持一致的格式，并且不能被自定义配置覆盖。日志输出必须一直定向到默认文件。必须为 AEM 产品代码保留默认的日志级别。但是，可以为客户开发的代码调整日志级别。
 
 为此，不得更改以下 OSGi 属性：
+
 * **Apache Sling 日志配置**（PID：`org.apache.sling.commons.log.LogManager`）—*所有属性*
 * **Apache Sling 日志记录器配置**（工厂 PID：`org.apache.sling.commons.log.LogManager.factory.config`）：
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 5 月中旬，AEM 将强制实施一项政策，对这些属性所做的任何自定义更改都将被忽略。请检查并相应调整您的下游流程。例如，如果您使用日志转发功能：
+
 * 如果您的日志记录目标需要一个自定义（非默认）日志格式，您可能需要更新您的摄取规则。
 * 如果对日志级别的更改降低了日志的详细程度，请注意默认的日志级别可能会导致日志数量显著增加。
 

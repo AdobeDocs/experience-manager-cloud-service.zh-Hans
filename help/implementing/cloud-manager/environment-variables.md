@@ -4,11 +4,11 @@ description: 标准环境变量可以通过Cloud Manager进行配置和管理，
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 28%
 
 ## 添加环境变量 {#add-variables}
 
-如果要添加多个变量，Adobe建议您添加第一个变量，然后在&#x200B;**环境配置**&#x200B;对话框中使用![添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **添加**&#x200B;添加其他变量。 此方法意味着您可以通过一次环境更新来添加这些变量。
+如果要添加多个变量，Adobe建议您添加第一个变量，然后在![环境配置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)对话框中使用&#x200B;**添加图标** **添加**&#x200B;添加其他变量。 此方法意味着您可以通过一次环境更新来添加这些变量。
 
 要添加、更新或删除环境变量，您必须是&#x200B;[**部署管理员**&#x200B;角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)的成员。
 
@@ -49,7 +49,7 @@ ht-degree: 28%
 1. 在&#x200B;**环境**&#x200B;页面上，选择表中包含要为其添加环境变量的环境的行。
 1. 在环境的详细信息页面上，单击&#x200B;**配置**&#x200B;选项卡。
 1. 单击![添加/更新 — 添加圆圈图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **添加/更新**。
-如果您是第一次添加环境变量，请单击页面中央的&#x200B;**添加配置**。
+如果您是第一次添加环境变量，请单击页面中央的**添加配置**。
 
    ![配置选项卡](assets/configuration-tab.png)
 
@@ -58,8 +58,8 @@ ht-degree: 28%
    | 字段 | 描述 |
    | --- | --- |
    | 名称 | 配置变量的唯一名称。 它标识在环境中使用的特定变量。 它必须遵循以下命名惯例：<ul><li>变量只能包含字母数字字符和下划线(`_`)。</li><li>每个环境最多有200个变量。</li><li>每个名称的长度必须等于或少于100个字符。</li></ul> |
-   | 价值 | 变量保存的值。 |
-   | 已应用步骤 | 选择变量应用于的服务。 选择&#x200B;**全部**&#x200B;以将变量应用于所有服务。<ul><li>**全部**</li><li>**作者**</li><li>**Publish**</li><li>**预览**</li></ul> |
+   | 值 | 变量保存的值。 |
+   | 已应用步骤 | 选择变量应用于的服务。 选择&#x200B;**全部**&#x200B;以将变量应用于所有服务。<ul><li>**全部**</li><li>**作者**</li><li>**发布**</li><li>**预览**</li></ul> |
    | 类型 | 选择变量是普通变量还是密钥。 |
 
    ![添加变量](assets/add-variable.png)
@@ -78,7 +78,7 @@ ht-degree: 28%
 
 创建环境变量后，可以使用![添加/更新 — 添加圆形图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **添加/更新**&#x200B;来更新环境变量，以打开&#x200B;**环境配置**&#x200B;对话框。
 
-如果要更新多个变量，Adobe建议您在单击&#x200B;**保存**&#x200B;之前使用&#x200B;**环境配置**&#x200B;对话框一次更新所有必需的变量。 这样，您可以通过对环境的一次更新来添加变量。
+如果要更新多个变量，Adobe建议您在单击&#x200B;**保存**&#x200B;之前，使用&#x200B;**环境配置**&#x200B;对话框一次更新所有必需的变量。 这样，您可以通过对环境的一次更新来添加变量。
 
 **要更新环境变量：**
 
@@ -127,7 +127,7 @@ ht-degree: 28%
 
 `${env.VARIABLE_NAME}`
 
-有关如何在`pom.xml`文件中同时使用这两种类型的变量的示例，请参阅[设置项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)。
+有关如何在[文件中同时使用这两种类型的变量的示例，请参阅](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)设置项目`pom.xml`。
 
 有关更多详细信息，另请参阅[官方Maven文档](https://maven.apache.org/settings.html#quick-overview)。
 

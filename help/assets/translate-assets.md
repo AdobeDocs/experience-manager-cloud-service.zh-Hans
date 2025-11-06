@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2615'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 多语言资源是指具有多种语言的二进制文件、元数据和标记的资源。 通常，资产的二进制文件、元数据和标记都以一种语言存在，然后会翻译成其他语言以用于多语言项目。 通过Adobe Experience Manager Assets，您可以自动执行工作流以翻译资源（包括二进制文件、元数据和标记），并生成其他语言的资源以用于多语言项目。
@@ -30,11 +30,11 @@ AEM中的机器资源翻译：机器翻译服务将立即翻译资源的元数�
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=zh-Hans
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=zh-Hans
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=zh-Hans)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=zh-Hans
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -132,9 +132,11 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 选择底部的&#x200B;**[!UICONTROL 创建并翻译]**。
 1. 从&#x200B;**[!UICONTROL 目标语言]**&#x200B;列表中，选择要为其创建文件夹结构的语言。
 1. 从“项 **[!UICONTROL 目]** ”列表中，选择 **[!UICONTROL 添加到现有翻译项目]** ，以在文件夹上运行翻译工作流。
+
    >[!NOTE]
    >
    >如果选择&#x200B;**[!UICONTROL 添加到现有翻译项目]**&#x200B;选项，则仅当项目设置与预先存在的项目的设置完全匹配时，才会将翻译项目添加到预先存在的项目。 否则，将创建一个新项目。
+
 1. 从&#x200B;**[!UICONTROL 现有翻译项目]**&#x200B;列表中，选择一个项目以添加要翻译的资产。
 1. 选择&#x200B;**[!UICONTROL 创建]**。要翻译的资产将添加到目标文件夹。更新的文件夹列在&#x200B;**[!UICONTROL 语言副本]**&#x200B;部分下。
 1. 导航到项目控制台，然后打开您添加到的现有翻译项目。
@@ -236,7 +238,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 1. 选择&#x200B;**[!UICONTROL 创建]**。目标语言的新结构列在&#x200B;**[!UICONTROL 语言副本]**&#x200B;下。
 1. 从列表中选择结构，然后选择&#x200B;**[!UICONTROL 在Assets中展现]**&#x200B;以导航到目标语言中的文件夹结构。
 
-## 将翻译云服务应用到文件夹 {#applying-translation-cloud-services-to-folders}
+## 在文件夹中应用翻译云服务 {#applying-translation-cloud-services-to-folders}
 
 通过Adobe Experience Manager，您可以从选择的翻译提供商处获得基于云的翻译服务，以确保根据您的要求翻译资产。
 

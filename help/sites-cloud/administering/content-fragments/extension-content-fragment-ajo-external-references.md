@@ -2,15 +2,15 @@
 title: 使用内容片段AJO外部引用扩展
 description: 了解内容片段AJO外部引用扩展
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: f755a5c621b68b3110642e6cfe150798555b6707
+exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
 
 ---
-
 
 # 内容片段AJO外部引用扩展 {#content-fragment-external-references-extension}
 
@@ -30,7 +30,7 @@ AJO外部引用扩展可通过从与预定义标记关联的所有组织和沙�
 
 >[!NOTE]
 >
->另请参阅[AJO集成](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/integrations/aem-fragments)。
+>另请参阅[AJO集成](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments)。
 
 1. 打开[内容片段控制台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)。
 

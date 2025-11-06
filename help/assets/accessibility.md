@@ -3,12 +3,12 @@ title: ' [!DNL Experience Manager Assets] 中的辅助功能'
 description: 了解 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中的辅助功能如何帮助残障用户。
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -80,7 +80,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### [!DNL Assets]中的键盘快捷键 {#keyboard-shortcuts}
 
-[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台[&#128279;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)的键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
+[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台[的](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|
@@ -148,7 +148,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * 使用`Esc`键从缩略图视图中删除快速操作图标不会从最后一个聚焦项中删除键盘焦点。
 * 选择资产后，选择`Alt + 4`键盘快捷键将在左边栏中打开[!UICONTROL 引用]列表。 使用`Tab`键，用户可以浏览非零引用条目。 仅浏览非零参照条目也可以节省工作量和按键操作。
 * 资产时间轴中提供了有关资产的注释。 如果使用键盘或键盘快捷键访问左边栏，则可以访问该设置。
-* [!DNL Experience Manager]中的[!UICONTROL 视图设置]可使用键盘访问。 用户可以使用箭头键浏览可用的信息卡大小，选择并Tab键浏览现有视图设置视图中的浏览和设置其他元素。
+* [!UICONTROL 中的]视图设置[!DNL Experience Manager]可使用键盘访问。 用户可以使用箭头键浏览可用的信息卡大小，选择并Tab键浏览现有视图设置视图中的浏览和设置其他元素。
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 

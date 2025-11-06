@@ -4,12 +4,12 @@ description: 了解如何构建事件驱动的App Builder应用程序。
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9458,9479
 thumbnail: 339244.jpg
 exl-id: 6cd06ddc-2ce3-4e59-bd62-baee44763591
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 了解关于事件驱动型架构、Adobe I/O事件和自定义事件的信息。
 
->[!VIDEO](https://video.tv.adobe.com/v/343683/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
 ## 构建事件驱动的App Builder应用程序
 
->[!VIDEO](https://video.tv.adobe.com/v/343690/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
 了解如何构建发布可使用App Builder应用程序中的事件。

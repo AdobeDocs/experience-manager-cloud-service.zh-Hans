@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 34%
@@ -35,27 +35,37 @@ ht-degree: 34%
 ### 标题和标记 {#title-tags}
 
 * **标题** — 定义用于SEO的页面元标题以及页面内容中显示的标题（除非被覆盖）
-   * 页面的标题显示在AEM UI中的各个位置，包括[站点控制台中的&#x200B;**站点**&#x200B;信息卡/列表视图。](/help/sites-cloud/authoring/sites-console/introduction.md)
+
+   * 页面的标题显示在AEM UI中的各个位置，包括&#x200B;**站点控制台中的**&#x200B;站点[信息卡/列表视图。](/help/sites-cloud/authoring/sites-console/introduction.md)
    * 这是必填字段。
+
 * **标记** — 定义用于SEO的页面元标记
+
    * 可以通过更新选择框中的列表在页面中添加或删除标记。
    * 使用下拉菜单从现有标记中进行选择。
    * 选择标记后，它会列在选择框下。您可以使用“x”从此列表中移除标记。
    * 可通过在空白选择框中键入名称输入全新标记。
+
       * 按 Enter 会创建新标记。
       * 随后将会显示新标记，其右侧带有一个小星星，表示该标记为新标记。
+
    * 当您将鼠标悬停在选择框中的标记条目上时，会显示 x，用于为此页面删除该标记。
    * 有关标记的详细信息，请参阅[使用标记。](/help/sites-cloud/authoring/sites-console/tags.md)
+
 * **在导航中隐藏** — 指示在生成的站点的页面导航中是显示还是隐藏页面
 
 ### 品牌化 {#branding}
 
-通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
 
 * **Brand Slug**
+
    * **覆盖** – 选中可在此页面上定义品牌概要。
+
       * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
+
    * **覆盖值** – 要附加到页面标题的品牌概要的文本。
+
       * 该值附加到页面标题后的竖线字符（如`Cycling Tuscany | Always ready for the WKND`）
 
 ### HTML ID {#html-id}
@@ -65,10 +75,14 @@ ht-degree: 34%
 ### 更多标题和说明 {#more-titles}
 
 * **页面标题** — 要在页面上使用的标题
+
    * 这通常由标题组件使用。
    * 如果留空，则会使用&#x200B;**标题**。
+
 * **导航标题** — 您可以指定单独的标题以在导航中使用（例如，如果您希望某些内容能更加简洁）。
+
    * 如果为空，则使用&#x200B;**页面标题**。
+
 * **子标题** — 要在页面上使用的子标题
 * **描述** — 页面的描述、用途或要添加的任何其他详细信息
 
@@ -185,7 +199,7 @@ ht-degree: 34%
 * **选择图像** — 选择要用作缩略图的现有资源
 * **还原** – 在您对缩略图进行更改后，此选项将变得可用。如果不想保留您的更改，可以在保存前还原更改。
 
-## Cloud Service {#cloud-services}
+## 云服务 {#cloud-services}
 
 * **Cloud Service配置** — 定义用于页面的云服务的配置
 * **继承自** — 对于活动副本和语言副本，默认从Blueprint继承云配置。

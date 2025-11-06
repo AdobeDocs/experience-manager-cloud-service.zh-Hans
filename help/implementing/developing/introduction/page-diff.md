@@ -1,17 +1,17 @@
 ---
-title: 开发和页面差异
+title: 开发与页面差异对比
 description: 了解页面差异功能的工作方式以及它如何影响开发人员
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
-# 开发和页面差异 {#developing-and-page-diff}
+# 开发与页面差异对比 {#developing-and-page-diff}
 
 ## 功能概述 {#feature-overview}
 
@@ -21,9 +21,9 @@ ht-degree: 12%
 
 ## 操作详细信息 {#operation-details}
 
-在比较页面的版本时，用户要比较的先前版本由AEM在后台重新创建，以便于进行比较。 要呈现内容[以进行并排比较](/help/sites-cloud/authoring/sites-console/page-diff.md)，必须使用该以前的版本。
+在比较页面的各个版本时，AEM会在后台重新创建用户要比较的先前版本，以便进行差异比较。 要呈现内容[以进行并排比较](/help/sites-cloud/authoring/sites-console/page-diff.md)，必须使用该以前的版本。
 
-此重新创建操作由AEM在内部完成，对用户是透明的，无需干预。 但是，查看存储库的管理员(例如，在CRXDE Lite中)会在内容结构中看到这些重新创建的版本。
+此娱乐操作由AEM在内部完成，对用户透明，无需干预。 但是，查看存储库的管理员(例如，在CRXDE Lite中)将在内容结构中看到这些重新创建的版本。
 
 比较内容时，会于以下位置重新创建整个树，一直到要比较的页面：
 

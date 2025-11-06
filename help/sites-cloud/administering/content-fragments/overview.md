@@ -2,10 +2,10 @@
 title: 使用内容片段概述
 description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何允许您创建和使用结构化内容；非常适用于Headless投放和页面创作。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2021'
 ht-degree: 85%
@@ -57,7 +57,7 @@ ht-degree: 85%
 还可使用 AEM 核心组件的 Sling 模型 (JSON) 导出功能，以 JSON 格式投放内容片段。此投放形式：
 
 * 允许您使用组件管理要投放片段的哪些元素
-* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通信渠道的数量在逐年增加。通常，渠道称为投放机制，如：
 
@@ -80,12 +80,13 @@ ht-degree: 85%
 >[!NOTE]
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
+>
 >* **内容片段**&#x200B;是可编辑内容，具有定义和结构，但无需额外的可视设计和/或布局。它们可用于访问结构化数据，包括文本、数字和日期等。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本页和以下各页涉及创建、配置、维护和使用内容片段的任务：
 
@@ -186,7 +187,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 可通过使用（引用组件的）[内容片段组件](/help/sites-cloud/authoring/fragments/content-fragments.md)在页面编辑器中找到内容片段：
 
-   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
+   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
 
 内容片段是一个具有以下性质的内容结构：
 
@@ -273,7 +274,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 负责片段的布局和投放；例如，渠道。
    * 片段需要一个或多个专用组件以定义布局和投放部分或全部元素/变体和关联的内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
-   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)。
+   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 内容片段控制台 {#content-fragments-console}
 

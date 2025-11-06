@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2145'
 ht-degree: 4%
@@ -102,7 +102,7 @@ ht-degree: 4%
 
 有关图像集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
-您可以像在Assets[&#128279;](/help/assets/manage-digital-assets.md#uploading-assets)中上传任何其他资源一样上传图像集的图像。
+您可以像在Assets[中](/help/assets/manage-digital-assets.md#uploading-assets)上传任何其他资源一样上传图像集的图像。
 
 ### 准备图像集资源以供上传 {#preparing-image-set-assets-for-upload}
 
@@ -247,6 +247,7 @@ ht-degree: 4%
      >[!NOTE]
      >
      >如果通过将Experience Manager用于缩略图的图像替换为其他图像来删除该图像，则仍会显示原始资源。
+
    * 要删除资源，请选择该资源并选择&#x200B;**[!UICONTROL 删除资源]**。
    * 要应用预设，请选择页面右上角附近的&#x200B;**[!UICONTROL 预设]**，然后选择查看器预设。
    * 要添加或更改缩略图，请选择资源右侧的缩略图图标。 导航到新的缩略图或样本资源，选择它，然后选择&#x200B;**[!UICONTROL 选择]**。

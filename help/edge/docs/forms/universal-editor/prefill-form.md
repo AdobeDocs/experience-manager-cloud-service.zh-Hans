@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 预填充自适应表单、自适应表单 edge delivery services、自适应表单自动填充
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ ht-degree: 100%
 
 1. 点击&#x200B;**创建**，打开&#x200B;**创建表单**&#x200B;向导
 
-   >
+   >[!NOTE]
    >
    > 您可以在&#x200B;**数据**&#x200B;选项卡中配置数据源，或稍后通过编辑表单属性来进行配置。
 

@@ -3,10 +3,10 @@ title: AEM 标记框架
 description: 标记内容，并使用AEM标记基础架构对其进行分类和整理。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 * 标记的内容节点的`NodeType`必须包含[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
 * [`TagID`](#tagid)已添加到内容节点的[`cq:tags`](#cq-tags-property)属性，并解析为类型为[`cq:Tag`](#cq-tag-node-type)的节点。
 
-## cq：Tag节点类型 {#cq-tag-node-type}
+## cq:Tag节点类型 {#cq-tag-node-type}
 
 标记声明在类型为`cq:Tag.`的节点的存储库中捕获
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 `TagID`标识解析为存储库中标记节点的路径。
 
-通常，`TagID`是以命名空间开头的简写`TagID`，或者可以是从[分类根节点](#taxonomy-root-node)开始的绝对`TagID`。
+通常，`TagID`是以命名空间开头的简写`TagID`，或者可以是从`TagID`分类根节点[开始的绝对](#taxonomy-root-node)。
 
 当标记内容时，如果内容尚不存在，[`cq:tags`](#cq-tags-property)属性将添加到内容节点，而`TagID`将添加到属性的`String`数组值。
 
@@ -115,19 +115,19 @@ ht-degree: 0%
 
 * 允许`tag-administrators`组/角色对所有命名空间的写入权限（在`/content/cq:tags`下添加/修改）。 此组提供开箱即用的AEM。
 * 允许用户/作者读取对他们应可读取的所有命名空间（大多数是所有）的访问权限。
-* 允许用户/作者写入对这些命名空间的访问权限，在这些命名空间中，标记应由用户/作者自由定义（`/content/cq:tags/some_namespace`下的`add_node`）
+* 允许用户/作者写入对这些命名空间的访问权限，在这些命名空间中，标记应由用户/作者自由定义（`add_node`下的`/content/cq:tags/some_namespace`）
 
-## 可标记的内容：cq：Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## 可标记的内容：cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 对于要将标记附加到内容类型的应用程序开发人员，节点的注册([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html))必须包含`cq:Taggable` mixin或`cq:OwnerTaggable` mixin。
 
-继承自`cq:Taggable`的`cq:OwnerTaggable` mixin旨在指示内容可由所有者/作者分类。 在AEM中，它只是`cq:PageContent`节点的特性。 标记框架不需要`cq:OwnerTaggable` mixin。
+继承自`cq:OwnerTaggable`的`cq:Taggable` mixin旨在指示内容可由所有者/作者分类。 在AEM中，它只是`cq:PageContent`节点的属性。 标记框架不需要`cq:OwnerTaggable` mixin。
 
 >[!NOTE]
 >
 >建议仅在聚合内容项的顶级节点（或其`jcr:content`节点）上启用标记。 示例包括：
 >
->* `jcr:content`节点为`cq:PageContent`类型的页面(`cq:Page`)，其中包括`cq:Taggable` mixin。
+>* `cq:Page`节点为`jcr:content`类型的页面(`cq:PageContent`)，其中包括`cq:Taggable` mixin。
 >* Assets (`cq:Asset`)，其中`jcr:content/metadata`节点始终具有`cq:Taggable` mixin。
 
 ### 节点类型表示法(CND) {#node-type-notation-cnd}
@@ -151,7 +151,7 @@ AEM中包含的节点类型的基本定义如下：
     mixin
 ```
 
-## cq：tags属性 {#cq-tags-property}
+## cq:tags属性 {#cq-tags-property}
 
 `cq:tags`属性是一个`String`数组，用于在作者或网站访客将一个或多个属性应用于内容时存储这些属性。 `TagID`仅当添加到使用[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin定义的节点时，属性才有意义。
 

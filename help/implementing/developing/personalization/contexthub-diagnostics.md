@@ -3,8 +3,8 @@ title: ContextHub 诊断
 description: ContextHub提供了一个诊断页面，您可以在该页面中查看ContextHub框架的概述
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%

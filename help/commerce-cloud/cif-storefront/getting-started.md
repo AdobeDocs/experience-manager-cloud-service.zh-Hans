@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service的入门培训分为两步：
 
 Adobe完成了第一个入门培训步骤。 有关定价和配置的更多详细信息，您必须联系您的销售代表。
 
-配置CIF加载项后，该加载项将应用于任何现有的Cloud Manager项目。 如果您没有Cloud Manager项目，则必须创建一个。 有关更多详细信息，请参阅[设置程序。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=zh-Hans)
+配置CIF加载项后，该加载项将应用于任何现有的Cloud Manager项目。 如果您没有Cloud Manager项目，则必须创建一个。 有关更多详细信息，请参阅[设置程序。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 第二步是每个AEM as a Cloud Service环境的自助服务。 在CIF加载项初始配置后，您必须执行一些其他配置。
 
@@ -57,7 +57,7 @@ Adobe完成了第一个入门培训步骤。 有关定价和配置的更多详�
 
 ### 通过Cloud Manager用户界面（默认） {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343269?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 可以使用“环境详细信息”页面上的对话框完成此配置。 在查看启用了Commerce的程序的此页时，如果当前未配置端点，则会显示一个按钮：
 
@@ -77,7 +77,7 @@ Adobe完成了第一个入门培训步骤。 有关定价和配置的更多详�
 
 1. 通过Cloud Manager插件获取Adobe I/O CLI。
 
-   * 查看[Adobe Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans)，了解如何下载、设置和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)和[Cloud Manager CLI插件。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * 查看[Adobe Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)，了解如何下载、设置和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)和[Cloud Manager CLI插件。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. 使用AEM as a Cloud Service程序验证Adobe I/O CLI。
 
@@ -128,14 +128,19 @@ CIF加载项和[CIF核心组件](https://github.com/adobe/aem-core-cif-component
 * GraphQL客户端 — 为商务后端通信选择配置的GraphQL客户端。 此客户端通常应保留默认值。
 * 存储视图 — 存储视图标识符。 如果为空，则使用默认存储视图。
 * GraphQL代理路径 — AEM中的GraphQL代理用于向商务后端GraphQL端点代理请求的URL路径。
+
   >[!NOTE]
   >
   > 在大多数设置中，不能更改默认值`/api/graphql`。 只有未使用所提供的GraphQL代理的高级设置才应更改此设置。
+
 * 启用目录UID支持 — 在商业后端GraphQL调用中启用对UID而不是ID的支持。
+
   >[!NOTE]
   >
   > Adobe Commerce 2.4.2中引入了对UID的支持。仅当您的Commerce后端支持2.4.2或更高版本的GraphQL架构时，才启用UID。
+
 * 目录根类别标识符 — 商店目录根的标识符(UID或ID)
+
   >[!CAUTION]
   >
   > 从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 如果您的项目使用CIF核心组件版本2.0.0，则必须启用目录UID支持，并使用有效类别UID作为“目录根类别标识符”。

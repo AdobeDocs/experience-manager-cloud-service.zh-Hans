@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 91%
@@ -46,12 +46,13 @@ ht-degree: 91%
 >[!NOTE]
 >
 >**[内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;和&#x200B;**体验片段**&#x200B;是 AEM 中的两个不同功能：
+>
 >* **内容片段**&#x200B;是可编辑内容，具有定义和结构，但无需额外的可视设计和/或布局。它们可用于访问结构化数据，包括文本、数字和日期等。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 >[!NOTE]
 >
@@ -79,8 +80,8 @@ ht-degree: 91%
 ## 组织您的体验片段 {#organizing-your-experience-fragments}
 
 建议执行以下操作：
-* 使用文件夹组织您的体验片段；
 
+* 使用文件夹组织您的体验片段；
 * [在这些文件夹中配置允许的模板](#configure-allowed-templates-folder)。
 
 创建文件夹可以让您：
@@ -394,7 +395,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 可以查看片段的详细信息：
 
 1. 导航到体验片段的位置（请勿进一步导航到片段中的变体）。
-详细信息将显示在&#x200B;**体验片段**&#x200B;控制台的所有视图中，其中&#x200B;**列表视图**&#x200B;包含[导出到 Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 的详细信息：
+详细信息将显示在**体验片段**&#x200B;控制台的所有视图中，其中&#x200B;**列表视图**&#x200B;包含[导出到 Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 的详细信息：
 
    ![体验片段详细信息](/help/sites-cloud/authoring/assets/xf-15.png)
 

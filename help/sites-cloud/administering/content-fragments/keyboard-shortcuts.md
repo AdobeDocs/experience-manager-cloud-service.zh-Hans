@@ -1,11 +1,11 @@
 ---
 title: 内容片段控制台的键盘快捷键
-description: AEM中提供了各种键盘快捷键，包括用于管理内容片段的选择。
+description: 用户在整个AEM环境中都可以使用各种键盘快捷键，包括用于管理内容片段的选择。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 93%

@@ -4,15 +4,15 @@ description: 了解如何配置富文本编辑器以在 [!DNL Adobe Experience M
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
 
 ---
 
-# 配置 RTE 以创建可访问的站点 {#configure-rte-accessible-sites}
+# 配置 RTE 以创建可访问的 Sites {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager]支持标准辅助功能，例如图像的替换文本以及在创建内容时可以访问的额外功能。 内容作者将这些功能与使用富文本编辑器(RTE)的组件结合使用。 这些功能包括添加替换文本、通过标题和段落元素添加结构信息等。
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 RTE功能可以在许多组件中使用。 主要组件是`Text`组件。
 
-对于[!DNL Experience Manager]中的`Text`组件，以下屏幕截图显示了启用了一系列插件（包括`paraformat`）的富文本编辑器：
+对于`Text`中的[!DNL Experience Manager]组件，以下屏幕截图显示了启用了一系列插件（包括`paraformat`）的富文本编辑器：
 
 全屏模式下的![RTE文本组件](assets/rte-toolbar-full-screen-mode.png)
 
@@ -44,7 +44,7 @@ RTE功能可以在许多组件中使用。 主要组件是`Text`组件。
 新的语义块格式可供选择。
 
 1. 根据您的RTE，确定并导航到[配置位置](rich-text-editor.md#understand-the-configuration-paths-and-locations)。
-1. [通过激活插件](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)启用段落选择字段[&#128279;](rich-text-editor.md)。
+1. [通过激活插件](rich-text-editor.md)启用段落选择字段[。](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 1. [指定您希望段落选择字段中可用的格式](rich-text-editor.md)。
 1. 然后，内容作者可以从RTE中的选择字段中使用段落格式。
 
@@ -52,7 +52,7 @@ RTE功能可以在许多组件中使用。 主要组件是`Text`组件。
 
 ## 使用Source编辑功能 {#use-of-the-source-edit-feature}
 
-在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE内创建的一段内容可能需要更多标记，以确保符合WCAG 2.0。可以使用RTE的[源编辑](rich-text-editor.md#aboutplugins)选项完成此操作。 您可以在`misctools`插件[&#128279;](rich-text-editor.md#aboutplugins)上指定`sourceedit`功能。
+在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE内创建的一段内容可能需要更多标记，以确保符合WCAG 2.0。可以使用RTE的[源编辑](rich-text-editor.md#aboutplugins)选项完成此操作。 您可以在[`sourceedit`插件`misctools`上指定](rich-text-editor.md#aboutplugins)功能。
 
 >[!CAUTION]
 >

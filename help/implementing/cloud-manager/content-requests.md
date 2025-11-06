@@ -4,8 +4,8 @@ description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Ex
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 20bb86d83a1afeda760e7c8d88e4257b8cb65860
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%

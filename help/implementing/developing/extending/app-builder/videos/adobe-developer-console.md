@@ -4,12 +4,12 @@ description: 了解Adobe Developer Console和App Builder项目。
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9453, 9467, 9468, 9469
 thumbnail: 339162.jpg
 exl-id: bf358ead-cd39-4284-86d5-5b4ab0cf1ae3
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -20,22 +20,22 @@ ht-degree: 0%
 
 了解Adobe Developer Console是什么，以及如何访问和导航它。
 
->[!VIDEO](https://video.tv.adobe.com/v/342291/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
 ## 使用项目和模板
 
 了解如何使用App Builder的Adobe Developer Console App Builder模板创建项目。
 
->[!VIDEO](https://video.tv.adobe.com/v/342316/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
 ## 项目凭据
 
 了解如何使用Adobe Developer Console的凭据菜单中的选项和审批流程。
 
->[!VIDEO](https://video.tv.adobe.com/v/342309/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 
 ## 分析和配额使用情况
 
 了解App Builder应用程序分析和配额使用情况。
 
->[!VIDEO](https://video.tv.adobe.com/v/342283/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)

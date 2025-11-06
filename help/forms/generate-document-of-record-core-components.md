@@ -4,7 +4,7 @@ description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -135,7 +135,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，当提交自适应表单时，会生成更新的记录文档。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用记录文档时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
@@ -264,7 +264,7 @@ When you select a form model, configure Document of Record using options availab
 | 图像 | 图像 | 除非使用记录文档设置进行排除，否则TextDraw和Image组件（无论已绑定还是未绑定）始终显示在基于XSD的自适应表单的记录文档中。 |
 | 文本 | 文本 |
 
-### 表 {#tables}
+### 表格 {#tables}
 
 自适应Forms表组件（如页眉、页脚和行）映射到相应的XFA组件。 可将可重复面板映射到记录文档中的表格。
 
@@ -338,13 +338,14 @@ When you select a form model, configure Document of Record using options availab
 
       * **包含未绑定到数据模型的表单对象**：设置属性将包含记录文档中基于架构的自适应表单中未绑定的字段。
 
-      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+        <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **隐藏面板说明**：设置属性会从记录文档中排除面板/表的说明。 适用于面板和表格。
 
 
 
    1. **表单字段属性**：
+
       * **对于复选框和单选按钮组件，仅显示选定值**：设置属性将仅显示[!UICONTROL 记录文档]中复选框和单选按钮的选定值。
       * **用于多个值的分隔符**：您可以选择任意分隔符（如逗号或换行符）来显示多个值。
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置字段的对齐方式，如要显示在[!UICONTROL 记录文档]上的复选框或单选按钮。 默认情况下，[!UICONTROL 记录文档]中的字段会设置垂直对齐方式。 设置DoR的[!UICONTROL 表单字段属性]中的属性会覆盖自适应表单上字段的[!UICONTROL 项对齐方式]中设置的属性。 如果选择[!UICONTROL 与自适应表单相同]选项，则自适应表单创作实例中配置的对齐方式将用于[!UICONTROL 记录文档]字段。
@@ -353,6 +354,7 @@ When you select a form model, configure Document of Record using options availab
 
 
    1. **主页属性**：
+
       * **徽标图像**：您可以选择使用自适应表单中的徽标图像、从DAM中选择徽标图像，或从您的计算机上传徽标图像。
       * **表单标题**： DoR标题。
       * **标题文本**：显示在记录文档标题部分的文本。
@@ -362,21 +364,21 @@ When you select a form model, configure Document of Record using options availab
 
       ![母版页属性](/help/forms/assets/dorpropertiesimg.png)
 
-   >[!NOTE]
-   >
-   >如果您使用的是使用Designer 6.3之前的版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+      >[!NOTE]
+      >
+      >如果您使用的是使用Designer 6.3之前的版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
 
 1. 要保存品牌策略更改，请选择&#x200B;**[!UICONTROL 完成]**。
 

@@ -4,8 +4,8 @@ description: 了解如何为内容片段定义元数据和标记
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%

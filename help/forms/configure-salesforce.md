@@ -3,13 +3,13 @@ title: 如何为自适应Forms配置现成的Salesforce表单数据模型？
 description: 了解如何将Salesforce与自适应Forms集成。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
 
 ---
-
 
 # 为AEM Forms配置Salesforce {#configure-azure-storage}
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 * 查询[!DNL Salesforce]服务器以获取数据并预填充Adaptive Forms。
 * 从[!DNL Salesforce]服务器读取数据。
 
-在您[为基于Experience Manager原型的Forms设置开发项目](setup-local-development-environment.md#forms-cloud-service-local-development-environment)之后，[!DNL Salesforce]云服务和表单数据模型(FDM)在[!DNL AEM Forms]服务器上开箱即用。
+在您[!DNL Salesforce]为基于Experience Manager原型的Forms设置开发项目[!DNL AEM Forms]之后，[云服务和表单数据模型(FDM)在](setup-local-development-environment.md#forms-cloud-service-local-development-environment)服务器上开箱即用。
 
 >[!NOTE]
 >
->仅当您基于[AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30)或更高版本将[!DNL Experience Manager Forms]设置为[!DNL Cloud Service]项目时，[!DNL Salesforce]云服务和表单数据模型(FDM)才可开箱即用。
+>仅当您基于[!DNL Salesforce]AEM Archetype 30[!DNL Experience Manager Forms]或更高版本将[!DNL Cloud Service]设置为[项目时，](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30)云服务和表单数据模型(FDM)才可开箱即用。
 
 ## 配置[!DNL Salesforce]云服务 {#configure-salesforce-cloud-service}
 
@@ -47,18 +47,19 @@ ht-degree: 0%
 1. 在[!DNL AEM Forms]创作实例上，导航到&#x200B;**[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL 云服务]** > **[!UICONTROL 数据源]**。
 2. 选择文件夹名称，选择&#x200B;**[!UICONTROL Salesforce云配置]**，然后选择&#x200B;**[!UICONTROL 属性]**。
 3. 在&#x200B;**[!UICONTROL 身份验证设置]**&#x200B;选项卡中：
-   1. 在&#x200B;**[!UICONTROL 主机]**&#x200B;字段中指定[!DNL Salesforce]域URL。 例如，[域名].my.salesforce.com。
+   1. 在[!DNL Salesforce]主机&#x200B;**[!UICONTROL 字段中指定]**&#x200B;域URL。 例如，[域名].my.salesforce.com。
    2. 为连接的应用程序指定客户端ID（称为使用者密钥）和客户端密码（称为使用者密码）。
-   3. 在&#x200B;**[!UICONTROL 授权范围]**&#x200B;字段中指定&#x200B;**full offline_access** （`full`和`offine_access`值，用空格分隔）。
+   3. 在&#x200B;**授权范围**&#x200B;字段中指定`full`full offline_access`offine_access` （**[!UICONTROL 和]**&#x200B;值，用空格分隔）。
    4. 选择&#x200B;**[!UICONTROL 连接到OAuth]**。 您将被重定向到[!DNL Salesforce]登录页面。
    5. 使用您的[!DNL Salesforce]凭据登录并接受以允许云服务配置连接到[!DNL Salesforce]服务。 如果连接成功，您将被重定向到[!DNL Salesforce]云服务配置页面，该页面将显示一条成功消息。
 4. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以完成配置设置。
 
 ### 访问现成的[!DNL Salesforce]表单数据模型(FDM)
 
-在您[为基于Experience Manager原型的Forms设置开发项目](setup-local-development-environment.md#forms-cloud-service-local-development-environment)之后，[!DNL Salesforce]表单数据模型(FDM)在[!DNL AEM Forms]服务器上开箱即用。
+在您[!DNL Salesforce]为基于Experience Manager原型的Forms设置开发项目[!DNL AEM Forms]之后，[表单数据模型(FDM)在](setup-local-development-environment.md#forms-cloud-service-local-development-environment)服务器上开箱即用。
 
 要访问表单数据模型(FDM)，请执行以下操作：
+
 1. 导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 数据集成]**。
 1. 选择文件夹名称，选择&#x200B;**[!UICONTROL Salesforce数据模型]**，然后选择编辑![编辑](assets/edit.png)图标以查看表单数据模型(FDM)。
 

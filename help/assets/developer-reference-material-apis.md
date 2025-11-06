@@ -3,12 +3,12 @@ title: ' [!DNL Assets]的开发人员参考'
 description: 通过[!DNL Assets] API和开发人员引用内容，您可以管理资源，包括二进制文件、元数据、演绎版、注释和 [!DNL Content Fragments]。
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 | × | 不支持。 请勿使用。 |
 | - | 不可用 |
 
-| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [资产计算服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=zh-Hans) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=zh-Hans#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [发布](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans) |
+| 用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [资产计算服务](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [发布](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二进制文件** |  |  |  |  |  |  |
 | 创建原始文件 | ✓ | × | - | × | × | - |
@@ -167,9 +167,9 @@ CDN边缘节点有助于加速请求的二进制文件上传。
 
 | 字段 | 类型 | 必需或非必需 | 描述 |
 |---|---|---|---|
-| `fileName` | 字符串 | 必填 | 资源的名称，由启动数据提供。 |
-| `mimeType` | 字符串 | 必填 | 由启动数据提供的二进制文件的HTTP内容类型。 |
-| `uploadToken` | 字符串 | 必填 | 由启动数据提供的二进制文件的上载令牌。 |
+| `fileName` | 字符串 | 必需 | 资源的名称，由启动数据提供。 |
+| `mimeType` | 字符串 | 必需 | 由启动数据提供的二进制文件的HTTP内容类型。 |
+| `uploadToken` | 字符串 | 必需 | 由启动数据提供的二进制文件的上载令牌。 |
 | `createVersion` | 布尔值 | 可选 | 如果`True`和具有指定名称的资源存在，则[!DNL Experience Manager]将创建该资源的新版本。 |
 | `versionLabel` | 字符串 | 可选 | 如果创建新版本，则标签与资源的新版本关联。 |
 | `versionComment` | 字符串 | 可选 | 如果创建了新版本，则注释将与该版本相关联。 |
@@ -450,7 +450,7 @@ echo "File upload completed successfully."
 
 ## 资产处理和后处理工作流 {#post-processing-workflows}
 
-在[!DNL Experience Manager]中，资源处理基于使用[资源微服务](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)的&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;配置。 处理不需要开发人员扩展。
+在[!DNL Experience Manager]中，资源处理基于使用&#x200B;**[!UICONTROL 资源微服务]**&#x200B;的[处理配置文件](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)配置。 处理不需要开发人员扩展。
 
 对于后处理工作流配置，请使用带有自定义步骤的扩展的标准工作流。
 

@@ -5,9 +5,9 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '1994'
 ht-degree: 92%
 
 ---
@@ -130,18 +130,18 @@ ht-degree: 92%
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+<!-- 
+Can this still occur?
 
-   >[!NOTE]
-   >
-   >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
-   >
-   >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
-   >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   >1. Set the property **disable** to **false**.
-   >1. Select **Save All**.
-
-   -->
+>[!NOTE]
+>
+>When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
+>
+>1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
+>1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+>1. Set the property **disable** to **false**.
+>1. Select **Save All**.
+-->
 
 1. 在 **Adobe Target 设置**&#x200B;对话框中，提供以下属性的值。
 
@@ -157,46 +157,46 @@ ht-degree: 92%
 
    * **A4T Analytics Cloud 配置**：选择用于 Target 活动目标和量度的 Analytics Cloud 配置。如果您在定位内容时使用 Adobe Analytics 作为报告源，则需要此项。
 
-     <!-- Is this needed?
-     If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
-     -->
+<!-- Is this needed?
+If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
+-->
 
-   * **使用准确定位：**&#x200B;默认情况下，此复选框处于选中状态。如果选中，云服务配置将等到上下文加载完后，再加载内容。请参阅以下注释。
+* **使用准确定位：**&#x200B;默认情况下，此复选框处于选中状态。如果选中，云服务配置将等到上下文加载完后，再加载内容。请参阅以下注释。
 
-   * **从 Adobe Target 同步分段：**&#x200B;选择此选项可下载 Target 中定义的分段，以便在 AEM 中使用它们。当API类型属性为REST时，选择此选项，因为内联区段不受支持，并且您始终需要从Target使用区段。 (AEM术语“区段”等同于Target“受众”。)
+* **从 Adobe Target 同步分段：**&#x200B;选择此选项可下载 Target 中定义的分段，以便在 AEM 中使用它们。当API类型属性为REST时，选择此选项，因为内联区段不受支持，并且您始终需要从Target使用区段。 (AEM术语“区段”等同于Target“受众”。)
 
-   * **客户端库：**&#x200B;默认值为 AT.js（已弃用 mbox.js）
+* **客户端库：**&#x200B;默认值为 AT.js（已弃用 mbox.js）
 
-     >[!NOTE]
-     >
-     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hans) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
-     >
-     >mbox.js 已被弃用，将在稍后阶段删除。
-     >
-     >Adobe 建议您使用 AT.js 而不是 mbox.js 作为客户端库。
-     >
-     >AT.js 对 mbox.js 库进行了多项改进：
-     >
-     >* 缩短了 Web 实现的页面加载时间
-     >* 提高了安全性
-     >* 改善了针对单页应用程序的实施选项
-     >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
-     >
-     >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
+  >[!NOTE]
+  >
+  >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
+  >
+  >mbox.js 已被弃用，将在稍后阶段删除。
+  >
+  >Adobe 建议您使用 AT.js 而不是 mbox.js 作为客户端库。
+  >
+  >AT.js 对 mbox.js 库进行了多项改进：
+  >
+  >* 缩短了 Web 实现的页面加载时间
+  >* 提高了安全性
+  >* 改善了针对单页应用程序的实施选项
+  >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
+  >
+  >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 
-   * **使用标记管理系统交付客户端库** – 选择此选项可使用 Adobe Launch 或其他标记管理系统（或 DTM，它已被弃用）中的客户端库。
+* **使用标记管理系统交付客户端库** – 选择此选项可使用 Adobe Launch 或其他标记管理系统（或 DTM，它已被弃用）中的客户端库。
 
-   * **自定义 AT.js**：浏览以上传您的自定义 AT.js。留空可使用默认库。
+* **自定义 AT.js**：浏览以上传您的自定义 AT.js。留空可使用默认库。
 
-     >[!NOTE]
-     >
-     >默认情况下，当您选择加入 Adobe Target 配置向导时，将启用“准确定位”。
-     >
-     >准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
-     >
-     >对于创作实例，“准确定位”始终处于启用状态。但是，在发布实例上，您可以通过清除云服务配置(**http://localhost:4502/etc/cloudservices.html**)中“准确定位”旁边的复选标记来选择全局关闭准确定位。 无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
-     >
-     >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。您必须直接对这些组件进行任何更改。
+  >[!NOTE]
+  >
+  >默认情况下，当您选择加入 Adobe Target 配置向导时，将启用“准确定位”。
+  >
+  >准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
+  >
+  >对于创作实例，“准确定位”始终处于启用状态。但是，在发布实例上，您可以通过清除云服务配置(**`http://localhost:4502/etc/cloudservices.html`**)中“准确定位”旁边的复选标记来选择全局关闭准确定位。 无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
+  >
+  >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。您必须直接对这些组件进行任何更改。
 
 1. 单击&#x200B;**连接到 Adobe Target** 可初始化与 Target 的连接。如果连接成功，则将显示消息&#x200B;**连接成功**。单击消息上的&#x200B;**确定**，然后单击对话框上的&#x200B;**确定**。
 
@@ -241,7 +241,7 @@ ht-degree: 92%
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hans).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用内容片段 {#using-your-content-fragments-in-adobe-target}
 
-执行上述任务后，将在 Target 中的产品建议页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)以了解可以实现的目标。
+执行上述任务后，将在 Target 中的产品建议页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -378,10 +378,10 @@ When you associate a page with the framework, the child pages inherit the associ
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 * [Adobe Target 开发](https://developers.adobetarget.com/)
 
-* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)
+* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
 
-* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=zh-Hans)
+* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)

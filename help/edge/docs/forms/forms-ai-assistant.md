@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 100%
 
@@ -345,4 +345,4 @@ AI 助手还可以教您有关 AEM Forms 功能的知识：
 
 ## 相关资源
 
-[AEM Forms AI 助手 - 提示词库](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+[AEM Forms AI 助手 - 提示词库](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)

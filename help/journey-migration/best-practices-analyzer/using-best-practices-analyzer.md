@@ -4,7 +4,7 @@ description: 了解如何使用Best Practices Analyzer了解升级准备情况�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 请阅读以下章节，以了解运行最佳实践分析器(BPA)时的重要注意事项：
 
-* BPA报告是使用Adobe Experience Manager (AEM) [模式检测器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=zh-Hans)的输出生成的。 BPA使用的模式检测器版本包含在BPA安装包中。
+* BPA报告是使用Adobe Experience Manager (AEM) [模式检测器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)的输出生成的。 BPA使用的模式检测器版本包含在BPA安装包中。
 
 * BPA只能由&#x200B;**管理员**&#x200B;用户或&#x200B;**管理员**&#x200B;组中的用户运行。
 
@@ -166,8 +166,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="解读最佳实践分析器报告"
 >abstract="在查看 BPA 报告输出时有两个选项：UI 和 CSV。在 AEM 实例中运行最佳实践分析器工具后，UI 报告将作为结果显示在工具窗口中。CSV 格式的报告包括从模式检测器输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans#analysis-report" text="审核最佳实践分析报告"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hans" text="了解最佳实践分析器报告类别"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="审核最佳实践分析报告"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="了解最佳实践分析器报告类别"
 
 在AEM实例中运行最佳实践分析器工具时，报告将作为结果显示在工具窗口中。
 
@@ -184,7 +184,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。
 
 >[!NOTE]
->要了解有关每个发现结果类别的更多信息，请参阅[模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hans)。
+>要了解有关每个发现结果类别的更多信息，请参阅[模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
 
 请参阅下表，了解重要性级别：
 
@@ -222,6 +222,7 @@ CSV 格式的报告包含以下列：
 BPA提供了一个HTTP接口，可用作AEM中用户界面的替代方法。 该接口支持 HEAD 和 GET 命令。它可用于生成BPA报告，并以三种格式之一返回报告：JSON、CSV和制表符分隔值(TSV)。
 
 以下URL可用于HTTP访问，其中`<host>`是安装BPA的服务器的主机名和端口（如果需要）：
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json`（对于 JSON 格式）
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv`（对于 CSV 格式）
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`（对于 TSV 格式）
@@ -286,8 +287,8 @@ HTTP 接口可用于多种方法。
 
 BPA利用名为`repository-reader-service`的系统服务用户帐户来执行模式检测器。 此帐户在 AEM 6.2 和更高版本上可用。在AEM 6.1上，必须在安装BPA *之前*&#x200B;通过执行以下步骤来创建此帐户：
 
-1. 按照[创建新服务用户](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=zh-Hans#creating-a-new-service-user)中的说明创建用户。将用户 ID 设置为 `repository-reader-service`，并将“中间路径”留空，然后单击绿色复选标记。
+1. 按照[创建新服务用户](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的说明创建用户。将用户 ID 设置为 `repository-reader-service`，并将“中间路径”留空，然后单击绿色复选标记。
 
-2. 按照[管理用户和组](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans#managing-users-and-groups)中的说明（特别是有关将用户添加到组的说明），将 `repository-reader-service` 用户添加到 `administrators` 组。
+2. 按照[管理用户和组](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的说明（特别是有关将用户添加到组的说明），将 `repository-reader-service` 用户添加到 `administrators` 组。
 
 3. 通过包管理器在源AEM实例上安装BPA包。 （这将为 `repository-reader-service` 系统服务用户的 ServiceUserMapper 配置添加必要的配置修正。）

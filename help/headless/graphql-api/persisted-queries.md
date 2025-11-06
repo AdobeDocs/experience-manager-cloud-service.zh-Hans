@@ -4,10 +4,10 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1952'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 ## 如何使 GraphQL 查询持久 {#how-to-persist-query}
 
-建议先在 AEM 作者环境中保留查询，然后将[查询转移到](#transfer-persisted-query-production) AEM 发布环境中，供应用程序使用。
+建议先在 AEM 作者环境中保留查询，然后将[查询转移到生产](#transfer-persisted-query-production) AEM 发布环境中，供应用程序使用。
 
 有多种持久查询的方法，包括：
 
@@ -279,8 +279,10 @@ UTF-8 编码 `%3B` 是 `;` 的，`%3D` 是 `=` 的编码。查询变量和任何
 这将指示 Dispatcher 将原始 URL 转发到 AEM，从而防止重复编码。
 但是此设置目前仅适用于 `vhost` 级别，因此如果你已经有 Dispatcher 配置来重写 URL（例如使用缩短的 URL 时），则可能需要单独的 `vhost` 用于持久查询 URL。
 
-   * 发送 `/` 或者 `\` 未编码的字符。
-调用持久查询 URL 时，确保所有 `/` 或者 `\` 字符在持久查询变量的值中仍未编码。
+   * 发送`/`或`\`个字符未编码。
+
+     调用持久查询 URL 时，确保所有 `/` 或者 `\` 字符在持久查询变量的值中仍未编码。
+
      >[!NOTE]
      >
      >此选项仅建议用于 `DispatcherNoCanonURL` 解决方案因某种原因无法实施。

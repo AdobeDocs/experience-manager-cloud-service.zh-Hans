@@ -5,8 +5,8 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3194'
 ht-degree: 100%
 
@@ -491,7 +491,7 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 |   | `debug.email` |   | 布尔型 |   |
 |   | `oauth.flow` |   | 布尔型 |   |
 | `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 是 | 字符串 | “INFO”、“DEBUG”或“TRACE” |
-|   | `org.apache.sling.commons.log.names` |   | 字符串阵列 |   |
+|   | `org.apache.sling.commons.log.names` |   | 字符串数组 |   |
 |   | `org.apache.sling.commons.log.additiv` |   | 布尔型 |   |
 | `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 否 | 字符串[] |   |
 |   | `externalizer.encodedpath` | 否 | 布尔型 |   |
@@ -508,8 +508,8 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 |   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 双精度 | -- |
 |   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 整数 | -- |
 |   | `org.apache.felix.eventadmin.RequireTopic` |   | 布尔型 | -- |
-|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 是 | 字符串阵列 | 必须至少包含 `org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` 中的全部内容 |
-|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 字符串阵列 | -- |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 是 | 字符串数组 | 必须至少包含 `org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` 中的全部内容 |
+|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 字符串数组 | -- |
 | `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | 整数 |   |
 |   | `org.apache.felix.http.session.timeout` |   | 整数 |   |
 |   | `org.apache.felix.http.jetty.threadpool.max` |   | 整数 |   |
@@ -532,16 +532,16 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 |   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | 整数 |   |
 |   | `org.apache.felix.jetty.gzip.syncFlush` |   | 布尔型 |   |
 |   | `org.apache.felix.jetty.gzip.excludedUserAgents` |   | 字符串 |   |
-|   | `org.apache.felix.jetty.gzip.includedMethods` |   | 字符串阵列 |   |
-|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | 字符串阵列 |   |
-|   | `org.apache.felix.jetty.gzip.includedPaths` |   | 字符串阵列 |   |
-|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | 字符串阵列 |   |
-|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | 字符串阵列 |   |
+|   | `org.apache.felix.jetty.gzip.includedMethods` |   | 字符串数组 |   |
+|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | 字符串数组 |   |
+|   | `org.apache.felix.jetty.gzip.includedPaths` |   | 字符串数组 |   |
+|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | 字符串数组 |   |
+|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | 字符串数组 |   |
 |   | `org.apache.felix.http.session.invalidate` |   | 布尔型 |   |
-|   | `org.apache.felix.http.session.container.attribute` |   | 字符串阵列 |   |
+|   | `org.apache.felix.http.session.container.attribute` |   | 字符串数组 |   |
 |   | `org.apache.felix.http.session.uniqueid` |   | 布尔型 |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | 是 | 整数 | >= 2048 |
-|   | `org.apache.sling.scripting.cache.additional_extensions` | 是 | 字符串阵列 | 必须包含“js” |
+|   | `org.apache.sling.scripting.cache.additional_extensions` | 是 | 字符串数组 | 必须包含“js” |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 否 | 字符串 |   |
 |   | `request.log.outputtype` | 否 | 字符串 |   |
 |   | `request.log.entry.format` | 否 | 字符串 |   |

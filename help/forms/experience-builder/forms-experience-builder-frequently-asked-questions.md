@@ -5,14 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Forms Experience Builder — 常见问题
 
@@ -111,7 +111,6 @@ AI将自动设置包含步骤间导航的表单结构。
     将美国电话号码格式验证添加到@phoneNumber
     设置年龄验证：对于@dateOfBirth
 ，年龄必须为18岁或更早
-
 ## 高级功能
 
 ### 什么是LLM增强型智能字段？
@@ -179,7 +178,7 @@ LLM增强的智能字段是智能表单字段，其中预先填充了AI知识库
 - 验证您是否具有适当的访问权限
 - 如果问题仍然存在，请联系您的系统管理员
 
-## 最佳实践
+## 最佳做法
 
 ### 如何使用Forms Experience Builder创建更好的表单？
 
@@ -240,8 +239,8 @@ Forms Experience Builder包括辅助功能：
 ## 相关文章
 
 - [Forms Experience Builder概述](product-overview.md)
-- [Forms Experience Builder快速入门](forms-experience-builder-getting-started.md)
-- [部署和配置Forms Experience Builder](deploy-forms-experience-builder.md)
+- [Forms Experience Builder 快速入门指南](forms-experience-builder-getting-started.md)
+- [部署和配置 Forms Experience Builder](deploy-forms-experience-builder.md)
 - [LLM增强的智能字段](forms-experience-builder-llm-smart-fields.md)
 - [智能导入和转换](intelligent-import-conversion.md)
 - [表单提交和集成](form-submission-integration.md)

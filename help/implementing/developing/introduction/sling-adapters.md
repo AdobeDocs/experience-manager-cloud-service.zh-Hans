@@ -3,8 +3,8 @@ title: 使用 Sling 适配器
 description: Sling提供了一个适配器模式，用于方便地翻译实现自适应界面的对象
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 3%
@@ -67,11 +67,11 @@ Node node = resource.adaptTo(Node.class);
 
   对象仍必须实现`Adaptable`接口，并且必须扩展[`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/adapter/SlingAdaptable.html)（它将`adaptTo`调用传递到中央适配器管理器）。
 
-  此方法允许挂接到现有类（如`Resource`）的`adaptTo`机制。
+  此方法允许挂接到现有类（如`adaptTo`）的`Resource`机制。
 
 * 两者的组合。
 
-对于第一种情况，Java™文档可以说明哪些`adaptTo-targets`是可能的。 但是，对于特定的子类（如基于JCR的资源），此语句通常是不可能的。 在后一种情况下，`AdapterFactory`的实现通常是捆绑包的私有类的一部分，因此未在客户端API中公开，也未在Java™文档中列出。 从理论上讲，可以从[OSGi](/help/implementing/deploying/configuring-osgi.md)服务运行时访问所有`AdapterFactory`实现并查看其“可适应的”（源和目标）配置，但不能将它们相互映射。 最后，它取决于内部逻辑，必须记录该逻辑。 因此，此参考内容。
+对于第一种情况，Java™文档可以说明哪些`adaptTo-targets`是可能的。 但是，对于特定的子类（如基于JCR的资源），此语句通常是不可能的。 在后一种情况下，`AdapterFactory`的实现通常是捆绑包的私有类的一部分，因此未在客户端API中公开，也未在Java™文档中列出。 从理论上讲，可以从`AdapterFactory`OSGi[服务运行时访问所有](/help/implementing/deploying/configuring-osgi.md)实现并查看其“可适应的”（源和目标）配置，但不能将它们相互映射。 最后，它取决于内部逻辑，必须记录该逻辑。 因此，此参考内容。
 
 ## 引用 {#reference}
 
@@ -359,4 +359,4 @@ Node node = resource.adaptTo(Node.class);
 
 #### 其他 {#other}
 
-此外，Sling / JCR / OCM还为自定义OCM （[对象内容映射](https://jackrabbit.apache.org/jcr/object-content-mapping.html)）对象提供了[`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html)。
+此外，Sling / JCR / OCM还为自定义OCM （[`AdapterFactory`对象内容映射](https://sling.apache.org/documentation/the-sling-engine/adapters.html)）对象提供了[](https://jackrabbit.apache.org/jcr/object-content-mapping.html)。

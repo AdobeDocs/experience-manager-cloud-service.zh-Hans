@@ -2,11 +2,11 @@
 title: Edge Delivery Services 表单规则编辑器
 description: 使用通用编辑器中的规则编辑器创建动态、智能的表单。无需编码即可添加条件逻辑、计算和交互式行为。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 100%
 
@@ -310,7 +310,7 @@ ht-degree: 100%
 
 1. **打开通用编辑器**：
    - 导航到 AEM Sites 控制台，选择您的页面，点击&#x200B;**编辑**
-   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)
+   - 确保您已正确配置了[通用编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **按以下顺序添加表单组件**：
    - 标题 (H2)：“税费计算表”
@@ -535,7 +535,7 @@ export { getFullName, days };
 ![规则编辑器中的自定义函数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 图：在规则编辑器界面中选择和配置自定义函数
 
->
+>[!NOTE]
 >
 > 规则编辑器的增强功能（包括自定义事件驱动规则、对动态变量的支持以及 API 集成）同样适用于 Edge Delivery Services 表单。要详细了解这些增强功能及其使用方法，请参阅[规则编辑器增强功能与使用案例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
 
@@ -623,7 +623,7 @@ export { getFullName, days};
 - 使用边缘情况和已知值测试
 - 验证各种不同的浏览器
 - 记录复杂规则背后的目的，而不仅仅记录机制
-- 为大表单维护一个规则清单
+- 为大表单维护规则库存
 - 为组件和规则使用一致的命名惯例
 - 为自定义函数制定版本，并在非生产环境中测试
 
@@ -732,7 +732,7 @@ export { getFullName, days};
 
 **其他资源**：
 
-- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hans)：用于更广泛的上下文
+- [通用编辑器文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)：用于更广泛的上下文
 - [扩展管理器指南](/help/implementing/developing/extending/extension-manager.md)：用于启用附加功能
 - [Edge Delivery Services 表单](/help/edge/docs/forms/overview.md)：提供全面的表单开发指导
 

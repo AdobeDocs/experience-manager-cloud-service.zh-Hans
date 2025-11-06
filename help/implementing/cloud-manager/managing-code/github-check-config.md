@@ -1,13 +1,13 @@
 ---
-title: 对专用存储库的拉取请求检查
+title: 专用存储库的提取请求检查
 description: 了解如何控制自动创建的管道以验证对专用存储库的每个提取请求。
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 

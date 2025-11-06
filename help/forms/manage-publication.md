@@ -7,19 +7,20 @@ feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manag
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: d8294c358bcc31b7c5e41e3103ec73adc05da6d9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# 在Experience Manager Forms中&#x200B;管理发布
+# &#x200B;在 Experience Manager Forms 中管理发布
 
 作为Adobe Experience Manager (AEM) Forms管理员，您可以将表单从创作实例发布到Experience Manager Forms。 您还可以选择计划在稍后的日期或时间发布表单或文件夹。 发布后，用户可以访问和填写表单。
 
 在Experience Manager Forms中，您可以使用以下方法之一发布表单：
+
 * [发布选项](#publish-forms-using-the-publish-option)
 * [“管理发布”选项](#publish-forms-using-the-manage-publication-option)
 
@@ -32,7 +33,7 @@ ht-degree: 1%
 
 通过&#x200B;**发布**&#x200B;选项，可立即发布表单。 要使用工具栏上的&#x200B;**发布**&#x200B;按钮发布Experience Manager表单，请执行以下操作： 要使用“发布”选项发布表单，请执行以下操作：
 
-1. 在Experience Manager Forms控制台中，导航到父文件夹，然后选择要发布的表单。
+1. 从 Experience Manager Forms 控制台导航到父级文件夹，然后选择要发布的表单。
 1. 单击工具栏中的&#x200B;**发布**&#x200B;选项，查看将随表单一起发布的所有引用资源。
 1. 单击&#x200B;**[!UICONTROL 发布]**。
 
@@ -63,7 +64,7 @@ ht-degree: 1%
 
 管理发布允许您向所选目标发布内容或从中取消发布内容，将内容从`forms&documents`文件夹添加到发布列表，选择要发布的引用，以及安排发布到以后的日期或时间。  要使用&#x200B;**管理发布**&#x200B;选项发布表单，请执行以下操作：
 
-1. 在Experience Manager Forms控制台中，导航到父文件夹，然后选择要发布的表单。
+1. 从 Experience Manager Forms 控制台导航到父级文件夹，然后选择要发布的表单。
 1. 单击工具栏中的&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项。
 
    ![管理发布选项](/help/forms/assets/manage-publication-option.png)
@@ -92,7 +93,7 @@ ht-degree: 1%
 1. 单击&#x200B;**下一步**&#x200B;继续。
 1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用[添加内容](#add-content)选项添加更多内容以进行发布。 例如，您可以添加更多Forms或记录文档文件。
    ![范围选项卡](/help/forms/assets/scope-tab.png)
-1. 单击&#x200B;**[!UICONTROL 发布]**&#x200B;发布表单和相关资源，并显示成功消息。
+1. 单击&#x200B;**[!UICONTROL 发布]**发布表单和相关资源，并显示成功消息。
    ![成功发布消息](/help/forms/assets/publish-successful.png)
 
 ### 添加内容
@@ -155,18 +156,18 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
    ![管理发布](/help/forms/assets/manage-publication.png)
 
-1. 单击&#x200B;**发布**&#x200B;或从&#x200B;**[!UICONTROL 操作]**&#x200B;中&#x200B;**取消发布**。
+1. 单击&#x200B;**发布**&#x200B;或从&#x200B;**操作**&#x200B;中&#x200B;**[!UICONTROL 取消发布]**。
 1. 选择要发布或取消发布内容的&#x200B;**[!UICONTROL 目标]**。
    * **预览**：使用&#x200B;**预览**&#x200B;选项发布或取消发布到Experience Manager Forms预览环境。 Experience Manager Forms预览环境用于测试开发表单。
    * **发布**：当表单准备在生产环境中使用后，使用Experience Manager Forms **发布**&#x200B;选项将表单发送到Experience Manager Forms发布环境。
 
-1. 从&#x200B;**计划**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]**。
+1. 从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**稍后**。
 
    ![稍后管理发布](/help/forms/assets/manage-publication-later.png)
 
 1. 选择&#x200B;**[!UICONTROL 激活日期]**&#x200B;并指定日期和时间。
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用&#x200B;**[!UICONTROL 添加内容]**&#x200B;添加内容。
+1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用&#x200B;**[!UICONTROL 添加内容]**添加内容。
    ![稍后管理发布添加内容](/help/forms/assets/publish-later-add-content.png)
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**工作流**&#x200B;选项卡中，指定&#x200B;**[!UICONTROL 工作流标题]**。

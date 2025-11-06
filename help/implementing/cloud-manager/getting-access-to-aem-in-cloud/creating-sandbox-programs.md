@@ -4,8 +4,8 @@ description: 了解如何使用 Cloud Manager 创建自己的沙盒程序，用�
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -77,4 +77,4 @@ ht-degree: 15%
 
 >[!TIP]
 >
->有关如何浏览Cloud Manager以及了解&#x200B;**我的程序**&#x200B;控制台的详细信息，请参阅[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md)。
+>有关如何浏览Cloud Manager以及了解[我的程序](/help/implementing/cloud-manager/navigation.md)控制台的详细信息，请参阅&#x200B;**浏览Cloud Manager UI**。

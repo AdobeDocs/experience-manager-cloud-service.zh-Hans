@@ -3,19 +3,20 @@ title: 使用具有OpenAPI功能的Dynamic Media创建虚名URL
 description: 使用Dynamic Media OpenAPI功能将您的长资源投放URL转换为简短且带品牌的虚名URL。 虚URL是复杂投放URL的简短、干净、易于记忆和可读的版本。 您可以在虚URL中包含品牌名称、产品名称和相关的关键词，以提高品牌知名度和用户参与度
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
+exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
 
 ---
 
-
 # 使用虚URL{#vanity-urls}
 
 使用[!DNL Dynamic Media with OpenAPI capabilities]将您的长资源投放URL转换为短的、品牌化的虚URL。 标准资产交付URL包括系统生成的资产UUID，这些UUID使交付URL复杂、难以记忆和共享。 将这些资产UUID替换为简单标识符（虚ID）以生成虚URL。 虚URL是复杂投放URL的简短、干净和可读版本。
 
 请参阅以下URL格式以了解其差异：
+
 * [标准投放URL](#standard-urls)
 * [虚名 URL](#vanity-url)
 
@@ -69,7 +70,7 @@ ht-degree: 0%
 
 * **SEO优化：**&#x200B;包含相关关键字的URL提高了搜索引擎排名和可发现性。
 
-* **增强的品牌可见性：**&#x200B;品牌特定的URL增强了所有营销渠道（包括电子邮件、社交媒体和广告营销活动）中的品牌影响力。
+* **增强的品牌可见性：**品牌特定的URL增强了所有营销渠道（包括电子邮件、社交媒体和广告营销活动）中的品牌影响力。
 此外，在所有通信中始终如一地使用品牌URL可加强品牌标识和知名度。
 
 * **促销活动跟踪和分析：**&#x200B;为不同的促销活动和渠道使用唯一的虚URL，以详细了解流量源和转化效果。
@@ -81,6 +82,7 @@ ht-degree: 0%
 ## 创建虚URL{#create-vanity-urls}
 
 执行以下步骤以创建虚URL：
+
 1. [设置资源元数据](#set-up-asset-metadata)
 1. [创建和映射Cloud Manager环境变量](#map-cloud-manager-environment-variable)
 1. [批准需要虚URL才能交付的资产](/help/assets/manage-organize-assets-view.md#manage-asset-status)
@@ -89,18 +91,22 @@ ht-degree: 0%
 ### 设置资源元数据{#set-up-asset-metadata}
 
 执行以下操作以在资源的元数据表单中设置虚ID：
+
 1. 导航到包含[!DNL Dynamic Media with OpenAPI]投放的资产的文件夹的详细信息页面。
 1. [通过执行以下操作之一来编辑该元数据表单](/help/assets/metadata-assets-view.md#edit-metadata-forms)：
+
    * 添加新元数据字段，并将所需的虚ID指定为该字段的值。
    * 通过将现有元数据属性的值替换为所需的虚ID来更新现有字段。 了解创建虚ID的[最佳实践](#best-practices)。
-     ![虚ID](/help/assets/assets/vanity-id-metadata.png)
-了解有关[元数据架构](/help/assets/metadata-schemas.md)的更多信息。
 
-     >[!NOTE]
-     >
-     > * 为每个资源使用唯一的虚ID。 始终验证共享同一元数据表单的资产是否具有唯一的虚ID，以用于通过虚URL进行OpenAPI投放的DM。 如果两个资产共享同一个虚ID，则带OpenAPI的DM将交付最近收到该ID的资产，覆盖该ID先前对另一个资产的授权。
-     >
-     > * 单个资产可以具有多个虚ID。 [联系Adobe支持](https://helpx.adobe.com/in/contact.html)并提出生成所需虚ID的请求。
+   ![虚ID](/help/assets/assets/vanity-id-metadata.png)
+
+   了解有关[元数据架构](/help/assets/metadata-schemas.md)的更多信息。
+
+   >[!NOTE]
+   >
+   > * 为每个资源使用唯一的虚ID。 始终验证共享同一元数据表单的资产是否具有唯一的虚ID，以用于通过虚URL进行OpenAPI投放的DM。 如果两个资产共享同一个虚ID，则带OpenAPI的DM将交付最近收到该ID的资产，覆盖该ID先前对另一个资产的授权。
+   >
+   > * 单个资产可以具有多个虚ID。 [联系Adobe支持](https://helpx.adobe.com/in/contact.html)并提出生成所需虚ID的请求。
 
 在资源元数据表单中设置虚ID后，[将此元数据字段映射到系统的投放机制](#map-cloud-manager-environment-variable)。
 
@@ -134,7 +140,7 @@ ht-degree: 0%
 
 ## 使用虚URL进行扩展{#scale-using-vanity-url}
 
-AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 将这些AEMCS功能与您的虚URL结合使用，将它们转换为清洁、描述性、品牌化、直观的唯一Web地址，并提供上述[好处](#key-benefits)。
+AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 将这些AEMCS功能与您的虚URL结合使用，将它们转换为清洁、描述性、品牌化、直观的唯一Web地址，并提供上述[好处](#key-benefits)。
 
 请参阅以下虚URL及其可自定义的组件：
 
@@ -184,7 +190,7 @@ AEM as a Cloud Service允许您[自定义网址中的DNS和CDN名称](https://ex
 执行以下步骤可重写用于投放的CDN规则：
 
 1. 导航到您的AEM存储库以创建YAML配置文件。
-2. 执行[设置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)部分中的步骤以配置CDN规则并通过Cloud Manager配置管道部署配置。
+2. 执行[设置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)部分中的步骤以配置CDN规则并通过Cloud Manager配置管道部署配置。
 按照这些[最佳实践](#best-practices)创建域路径。
    [了解有关CDN重写规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 

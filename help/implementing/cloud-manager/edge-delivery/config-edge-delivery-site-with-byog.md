@@ -2,10 +2,10 @@
 title: 配置 Edge Delivery 网站以使用外部 Git 存储库
 description: 了解如何将 Edge Delivery 网站与私有或企业 Git 存储库关联。
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: e1922bd862a2106a274694ea1d3a98da9c186049
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 100%
 

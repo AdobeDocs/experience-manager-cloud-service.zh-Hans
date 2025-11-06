@@ -3,8 +3,8 @@ title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud S
 description: 了解 Adobe Experience Manager as a Cloud Service 对各种数据保护和数据隐私条例的基础支持。本文包括欧盟通用数据保护条例 (EU General Data Protection Regulation, GDPR)、加州消费者隐私法案 (California Consumer Privacy Act)，以及实施新的 AEM as a Cloud Service 项目时如何保持合规。
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
@@ -112,7 +112,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **禁用用户：**
 
-使用从上述命令返回的 JSON 负载的 home 属性中的节点路径：
+使用从上述命令返回的 JSON 负载的主目录属性中的节点路径：
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'

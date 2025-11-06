@@ -3,9 +3,9 @@ title: 从 URL 或其他工作表中加载 AEM Forms as a Cloud Service 的 Edge
 description: 下拉列表选项包含在不同的电子表格中，然后通过提供的 URL 导入到主电子表格中。
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 

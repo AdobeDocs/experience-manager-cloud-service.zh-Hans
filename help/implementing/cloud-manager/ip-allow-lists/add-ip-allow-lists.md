@@ -4,8 +4,8 @@ description: 了解如何使用Cloud Manager添加您自己的IP允许列表。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 39af50d05fcbd22b3f4b4664f2c99590e7fb9da9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 7%

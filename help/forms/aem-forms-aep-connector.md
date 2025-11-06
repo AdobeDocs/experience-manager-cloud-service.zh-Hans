@@ -6,10 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2047'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -58,16 +58,16 @@ ht-degree: 2%
 在AEM Forms中设置AEP连接器之前，请确保您已在Adobe Experience Platform中完成以下操作：
 
 1. 架构设置
-   * [创建XDM架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [启用架构以进行分析](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [定义标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [创建XDM架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [启用架构以进行分析](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [定义标识字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. 数据配置
-   * [创建数据集](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [设置流连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （稍后需要该流端点URL，因此请立即记下它。）
+   * [创建数据集](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [设置流连接](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （稍后需要该流端点URL，因此请立即记下它。）
 
 3. 身份验证
-   * 从Adobe Developer Console [生成API凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials)（客户端ID和客户端密钥）
+   * 从Adobe Developer Console [生成API凭据](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials)（客户端ID和客户端密钥）
 
 
 ## 实施步骤
@@ -191,9 +191,9 @@ ht-degree: 2%
      >[!NOTE]
      >
      >* 如果在Universal Editor界面中没有看到“数据源”图标，或在右侧属性面板中没有看到“绑定引用”属性，请在Extension Manager中启用&#x200B;**数据源**&#x200B;扩展。
-     >* 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+     >* 如果您在通用编辑器界面中没有看到&#x200B;**编辑表单属性**&#x200B;图标，请在 Extension Manager 中启用&#x200B;**编辑表单属性**&#x200B;扩展。
      > 
-     > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+     >* 请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用或禁用扩展。
 
    目前通用编辑器中不支持表单预填服务。
 
@@ -217,7 +217,7 @@ ht-degree: 2%
 * **使用表单数据扩充客户配置文件**&#x200B;需要在XDM架构中正确配置标识字段
 * 向Experience Platform提交&#x200B;**AEM Forms数据**&#x200B;使用&#x200B;**AEP表单流式连接**&#x200B;以确保实时数据流
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
 1. 在启用性能分析之前，仔细规划架构结构
 1. 为表单&#x200B;**设置** AEP流连接时，请考虑数据量和系统缩放要求
@@ -226,7 +226,7 @@ ht-degree: 2%
 1. 设计您的&#x200B;**XDM架构与自适应表单**&#x200B;的集成，以便仅收集必要的数据
 1. 策略性地将&#x200B;**客户配置文件扩充与表单数据**&#x200B;结合使用以增强个性化
 
-## 技术注意事项 {#technical-considerations}
+## 技术性考虑事项 {#technical-considerations}
 
 * 连接器使用公共流API提交数据
 * 用户档案创建基于身份字段
@@ -249,7 +249,7 @@ ht-degree: 2%
 答：目前，每个表单只能提交到一个数据集。
 
 **问：可处理的表单提交数量是否存在限制？**
-答：表单提交受您的AEP流摄取[配额和速率限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-lifecycle/api/quota)的约束。
+答：表单提交受您的AEP流摄取[配额和速率限制](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota)的约束。
 
 <!-- 
 >
@@ -287,11 +287,11 @@ AEM Forms与Adobe Experience Platform集成使组织能够在表单与更广泛�
 
 ## 相关资源 {#related-resources}
 
-* [AEM Forms as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)
-* [Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hans)
-* [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)
-* [在Adobe Experience Platform中流式引入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hans)
-* [实时客户个人资料概述](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)
+* [AEM Forms as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+* [Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [在Adobe Experience Platform中流式引入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [实时客户个人资料概述](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [AEM Forms抢先访问功能](/help/forms/early-access-ea-features.md)
 * [使用核心组件创建自适应Forms](/help/forms/creating-adaptive-form-core-components.md)
 * [在AEM Forms中使用表单数据模型](/help/forms/using-form-data-model.md)

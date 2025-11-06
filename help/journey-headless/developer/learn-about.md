@@ -4,9 +4,9 @@ description: 在 AEM Headless 开发人员历程的这一部分中，了解 Head
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 全栈内容交付 {#full-stack}
 
-自易于使用的大型内容管理系统 (CMS) 兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
+自易于使用的大型内容管理系统（CMS）兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
 
 ![经典全栈 CMS](assets/full-stack.png)
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 ![Headless CMS](assets/headless-cms.png)
 
-消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序（PWA）等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 
@@ -131,5 +131,5 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 
 * [Adobe Experience Manager as a Cloud Service 的架构简介](/help/overview/architecture.md) – 了解 AEM as a Cloud Service 的结构
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/Headless/developer.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。

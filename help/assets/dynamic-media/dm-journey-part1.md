@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3615'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 此历程涵盖Dynamic Media的基础知识、其工作方式、可为您提供的功能以及它给您的工作和客户带来的价值。
 
-**_前提条件_**
+**_先决条件_**
 
 * 对图像和视频格式的基本了解
 * 对HTML和CSS的基本了解
@@ -65,7 +65,7 @@ _第二部分_
 
 ## 什么是Dynamic Media以及它如何帮助您？ {#dm-journey-a}
 
-Dynamic Media可帮助您按需提供丰富的可视化推销和营销资产。 它还帮助您创建并提供交互式查看体验，包括缩放、360度旋转和视频。 您的资产会动态缩放以用于Web、移动和社交网站。 使用一组主要源资产（如图像、视频和3D ），Dynamic Media通过其可扩展、性能优化的全局CDN（内容交付网络）实时生成和交付此丰富内容的多种变体。
+Dynamic Media 可帮助您按需交付丰富的视觉营销和推广资产。它还能帮助您创建并呈现互动式浏览体验，包括缩放、360 度旋转以及视频内容。您的资产会根据需求动态缩放，以适配网页、移动端和社交平台的展示。通过一组主要源资产（如图像、视频和 3D 文件），Dynamic Media 能够实时生成并分发多种内容变体，并借助其全球化、可扩展且性能优化的内容分发网络（CDN）进行高效交付。
 
 Dynamic Media整合了Adobe Experience Manager Assets数字资产管理解决方案的工作流，以简化和简化数字营销活动管理流程。
 
@@ -96,7 +96,7 @@ _Adobe Dynamic Media可确保向任何屏幕提供一致、优质的体验，而
 
 过去，CDN每月会向客户提供3.5 PB的流量。 该系统一天可以提供520亿项资产。 该数字相当于已成功向客户交付864,000个图像和视频，_每秒_。
 
-### 智能成像
+### 智能图像处理
 
 Dynamic Media在优化资产以及确保每个资产通过CDN在移动和桌面系统上快速加载方面已经功不可没。 要实现这一点，在Dynamic Media中使用图像预设来定义图像的质量。 它们还定义了您要发送的图像类型、其锐化程度以及您的体验或页面各个部分的其他部分。
 
@@ -125,7 +125,7 @@ _智能成像可根据客户的浏览器功能和网络速度自动优化图像�
 
 自适应视频集对以不同比特率和格式编码的相同视频的版本进行分组。
 
-首先从您上传到系统中的原始主视频开始。 Dynamic Media会自动调整该视频的大小，或将&#x200B;_将该视频转码为多个视频。_&#x200B;然后，在交付时，它会智能地确定要使用哪种视频屏幕、哪种质量和哪种格式，并将其交付到手机、平板电脑或台式计算机。
+您首先上传原始主视频至系统，作为创建自适应视频集的起点。Dynamic Media会自动调整该视频的大小，或将&#x200B;_将该视频转码为多个视频。_&#x200B;在内容投放时，Dynamic Media 会智能判断应使用的视频尺寸、质量和格式，并将最合适的版本传递至手机、平板或桌面设备。
 
 例如，在iOS移动设备上，它会检测4G、5G或Wi-Fi等带宽。 然后，它自动从自适应视频集内的各种视频比特率中选择正确的编码视频。 视频将流式传输到移动设备、平板电脑或台式计算机。
 
@@ -246,7 +246,7 @@ Adobe建议您以无损格式上传资源。 通常，最好避免使用JPEG，�
 
 ### 发布和预览资源
 
-将资源上传到Dynamic Media后，最好通过选择资源，然后单击Dynamic Media中的&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，发布资源&#x200B;__。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的Dynamic Media生成的URL或者通过在页面上嵌入代码的方式，将资源包含在网页中。
+将资源上传到Dynamic Media后，最好通过选择资源，然后单击Dynamic Media中的&#x200B;_发布_&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，发布资源&#x200B;****。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的Dynamic Media生成的URL或者通过在页面上嵌入代码的方式，将资源包含在网页中。
 
 除了手动发布资产之外，您还可以配置Dynamic Media，以便在上传时即时发布资产，而无需任何用户干预。
 
@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media教程_
 
-* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/zh-hans?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
+* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
 
 _Dynamic Media查看器_
 

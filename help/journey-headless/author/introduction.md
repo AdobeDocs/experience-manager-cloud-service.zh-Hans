@@ -4,9 +4,9 @@ description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 100%
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 * **受众**：初学者
 * **目标**：介绍与 Headless 创作相关的概念和术语。
 
-## 内容管理系统 (CMS) {#content-management-system}
+## 内容管理系统（CMS） {#content-management-system}
 
 什么是内容管理系统？
 
-顾名思义，内容管理系统 (CMS) 是一种用于管理内容的计算机系统。这有点笼统，更准确地说，它（通常）用于管理您希望在您的网站上提供的内容。
+顾名思义，内容管理系统（CMS）是一种用于管理内容的计算机系统。这有点笼统，更准确地说，它（通常）用于管理您希望在您的网站上提供的内容。
 
 ## Headless CMS {#headless-cms}
 

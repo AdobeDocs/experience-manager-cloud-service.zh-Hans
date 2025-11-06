@@ -2,11 +2,11 @@
 title: 使用通用编辑器完成 Edge Delivery Services for AEM Forms 快速入门
 description: 了解如何使用 Edge Delivery Services 和通用编辑器的所见即所得创作功能来创建和发布高性能表单。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> AEM 新手？从 [AEM Sites 快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hans)开始。
+> AEM 新手？从 [AEM Sites 快速入门指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)开始。
 
 ## 路径 A：通过 Forms 创建新项目
 

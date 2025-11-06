@@ -4,8 +4,8 @@ description: 了解如何使用Cloud Manager的自助服务工具添加您自己
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 6%
@@ -31,7 +31,7 @@ ht-degree: 6%
 ## 先决条件 {#prerequisites}
 
 * 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能添加SSL证书。
-* 如果您正在安装自己的证书，请参阅[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**证书要求**。
+* 如果您正在安装自己的证书，请参阅&#x200B;**管理SSL证书简介**&#x200B;中的[证书要求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)。
 
 ## 选择要添加的SSL证书 {#which-ssl-to-add}
 
@@ -113,7 +113,7 @@ ht-degree: 6%
 
 1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据[您的特定用例](#which-ssl-to-add)，选择&#x200B;**客户管理的(OV/EV)**。
 
-1. 在&#x200B;**证书名称**&#x200B;字段中，输入证书的名称。
+1. 在&#x200B;**证书名称**字段中，输入证书的名称。
 此字段仅供参考，可以是任何有助于您轻松引用SSL证书的名称。
 
 1. 在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;字段中，复制OV或EV SSL证书中的必需值，并将其粘贴到对话框中各自的字段中。
@@ -126,7 +126,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >* 如果您在[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)时选择了&#x200B;**客户管理的证书**，则在&#x200B;***添加并保存客户管理的(OV/EV) SSL证书后***&#x200B;验证域。 另请参阅[检查自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#how-to)的状态。
+   >* 如果您在&#x200B;**添加自定义域名**&#x200B;时选择了[客户管理的证书](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)，则在&#x200B;***添加并保存客户管理的(OV/EV) SSL证书后***&#x200B;验证域。 另请参阅[检查自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#how-to)的状态。
 
    成功颁发SSL证书后，**SSL证书**&#x200B;表中将显示绿色验证复选标记。
 

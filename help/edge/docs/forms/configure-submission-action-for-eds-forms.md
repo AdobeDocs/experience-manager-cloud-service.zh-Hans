@@ -2,10 +2,10 @@
 title: 为集成 Edge Delivery Services 的 AEM Forms 配置提交操作
 description: 了解如何在使用 Edge Delivery Services 的 AEM Forms 中配置提交操作。在 Forms Submission Service 与 AEM Publish Submit Action 之间进行选择，以安全高效地处理表单数据。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
 

@@ -4,9 +4,9 @@ description: 使用翻译连接器来翻译 Headless 内容。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 1. 选择内容的语言根并让 AEM 根据内容路径自动创建翻译项目。
 1. 创建一个空项目并手动选择要添加到翻译项目的内容
 
-两者都是有效的方法，通常只因执行翻译的角色而异：
+两者都是有效的方法，通常只因执行翻译的用户画像而异：
 
 * 翻译项目经理 (TPM) 通常需要灵活地手动选择要添加到翻译项目的内容。
 * 如果内容所有者还负责翻译，则让 AEM 根据所选内容路径自动创建项目通常更轻松。

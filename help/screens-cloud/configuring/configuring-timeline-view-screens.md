@@ -1,13 +1,13 @@
 ---
 title: 为AEM Screens配置时间轴视图
-description: 本页介绍如何在Screensas a Cloud Service中配置时间线视图。
+description: 本页介绍如何在Screens as a Cloud Service中配置时间线视图。
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -36,7 +36,7 @@ AEM提供了一套功能，允许组织中的多个组人员协作创建、管�
 ### 添加评论 {#addcomment}
 
 通过时间线提供评论，可让用户创建集中式和历史记录，以便进行有关渠道、位置或屏幕中任何文件夹的讨论。
-评论为AEM用户提供了一个很好的整合方式，用于讨论可以保留的方式，从而让其他人了解关键决策。
+评论为AEM用户提供了一个很好的整合方式，让他们可以讨论一种可以保留的方式，从而让其他人了解关键决策。
 
 1. 导航到要为其添加评论的渠道。
 1. 选择渠道。
@@ -52,6 +52,7 @@ AEM提供了一套功能，允许组织中的多个组人员协作创建、管�
 ### 保存版本 {#saveversion}
 
 版本控制可在特定的时间点创建通道的“快照”。 使用版本控制，您可以执行下列操作：
+
 * 创建渠道版本。
 * 将渠道恢复为以前的版本；例如：
    * 撤消对页面所做的更改。
@@ -123,7 +124,7 @@ AEM提供了一套功能，允许组织中的多个组人员协作创建、管�
 在应用工作流时，您需要指定以下信息：
 
 * 要应用的工作流。
-* （可选）帮助标识用户收件箱中的工作流实例的标题。
+* （可选）有助于在用户收件箱中识别工作流实例的标题。
 * 工作流有效负载。
 
 #### 启动工作流

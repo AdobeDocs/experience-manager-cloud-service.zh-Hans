@@ -3,8 +3,8 @@ title: 查询生成器谓词参考
 description: AEM as a Cloud Service中的查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -61,7 +61,7 @@ group.2_group.path=/content/dam/wknd
 group.2_group.type=dam:Asset
 ```
 
-在`/content/wknd/ch/de`中的页面或`/content/dam/wknd`中的资产中搜索术语&#x200B;**管理**。
+在&#x200B;**中的页面或**&#x200B;中的资产中搜索术语`/content/wknd/ch/de`管理`/content/dam/wknd`。
 
 从概念上讲，它是`fulltext AND ( (path AND type) OR (path AND type) )`。 出于性能原因，此类OR连接需要良好的索引。
 
@@ -121,8 +121,8 @@ group.2_group.type=dam:Asset
 * **`operation`**
    * `=`表示完全匹配（默认）
    * 不相等比较的`!=`
-   * `property1`的`>`大于`property2`
-   * `property1`的`>=`大于或等于`property2`
+   * `>`的`property1`大于`property2`
+   * `>=`的`property1`大于或等于`property2`
 
 ### 日期范围 {#daterange}
 
@@ -181,7 +181,7 @@ group.2_group.type=dam:Asset
 
 ### 语言 {#language}
 
-此谓词查找特定语言的AEM页面。 它同时查看页面语言属性和页面路径，后者通常包括顶级网站结构中的语言或区域设置。
+此谓词查找采用特定语言的AEM页面。 它同时查看页面语言属性和页面路径，后者通常包括顶级网站结构中的语言或区域设置。
 
 仅限过滤的谓词，不能使用搜索索引。
 
@@ -265,12 +265,12 @@ group.2_group.type=dam:Asset
 
 * **`property`** — 属性的相对路径，例如`jcr:title`。
 * **`value`** — 要检查属性的值；遵循JCR属性类型到字符串的转换。
-* **`N_value`** — 使用`1_value`、`2_value`、...检查多个值（默认情况下与`OR`组合，如果`and=true`则为`AND`）。
+* **`N_value`** — 使用`1_value`、`2_value`、...检查多个值（默认情况下与`OR`组合，如果`AND`则为`and=true`）。
 * **`and`** — 设置为`true`以将多个值(`N_value`)与`AND`组合
 * **`operation`**
    * `equals`表示完全匹配（默认）。
    * `unequals`进行不等式比较。
-   * 使用`jcr:like` xpath函数的`like`（可选）。
+   * 使用`like` xpath函数的`jcr:like`（可选）。
    * 没有匹配项的`not`（例如，xpath中的`not(@prop)`，值参数将被忽略）。
    * `exists`是否存在检查。
       * `true`属性必须存在。
@@ -296,7 +296,7 @@ group.2_group.type=dam:Asset
 
 ### 相对日期范围 {#relativedaterange}
 
-此谓词使用相对于当前服务器时间的时间偏移，根据日期/时间间隔匹配`JCR DATE`属性。 您可以使用毫秒值或Bugzilla语法`1s 2m 3h 4d 5w 6M 7y`（一秒、两分钟、三小时、四天、五周、六个月、七年）指定`lowerBound`和`upperBound`。 前缀为`-`表示当前时间之前的负偏移。 如果仅指定`lowerBound`或`upperBound`，则另一个将默认为`0`，表示当前时间。
+此谓词使用相对于当前服务器时间的时间偏移，根据日期/时间间隔匹配`JCR DATE`属性。 您可以使用毫秒值或Bugzilla语法`lowerBound`（一秒、两分钟、三小时、四天、五周、六个月、七年）指定`upperBound`和`1s 2m 3h 4d 5w 6M 7y`。 前缀为`-`表示当前时间之前的负偏移。 如果仅指定`lowerBound`或`upperBound`，则另一个将默认为`0`，表示当前时间。
 
 例如：
 
@@ -351,7 +351,7 @@ group.2_group.type=dam:Asset
 #### 属性 {#properties-21}
 
 * **`tag`** — 要查找的标记标题路径，例如`properties:orientation/landscape`
-* **`N_value`** — 使用`1_value`、`2_value`、...检查多个标记（默认情况下与`OR`相结合，如果`and=true`则为`AND`）
+* **`N_value`** — 使用`1_value`、`2_value`、...检查多个标记（默认情况下与`OR`相结合，如果`AND`则为`and=true`）
 * **`property`** — 要查看的属性（或属性的相对路径）（默认`cq:tags`）
 
 ### tagid {#tagid}
@@ -363,7 +363,7 @@ group.2_group.type=dam:Asset
 #### 属性 {#properties-22}
 
 * **`tagid`** — 要查找的标记ID，例如`properties:orientation/landscape`
-* **`N_value`** — 使用`1_value`、`2_value`、...检查多个标记ID（默认情况下与`OR`组合，如果`and=true`则为`AND`）
+* **`N_value`** — 使用`1_value`、`2_value`、...检查多个标记ID（默认情况下与`OR`组合，如果`AND`则为`and=true`）
 * **`property`** — 要查看的属性（或属性的相对路径）（默认`cq:tags`）
 
 ### tagsearch {#tagsearch}

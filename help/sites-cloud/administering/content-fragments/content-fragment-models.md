@@ -2,10 +2,10 @@
 title: 定义内容片段模型
 description: 了解内容片段模型如何作为AEM中内容片段的基础，让您能够创建结构化内容，用于Headless投放或页面创作。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 59%
@@ -219,7 +219,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
   用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。 当使用&#x200B;**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
 
 * **字段标签**
-输入&#x200B;**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
+输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。
@@ -313,10 +313,10 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 >AEM 对于以下各项具有重复保护：
 >
 >* 内容引用
->  &#x200B;>  此项阻止用户添加对当前片段的引用，可能导致片段引用选取器对话框为空。
+>  此项阻止用户添加对当前片段的引用，可能导致片段引用选取器对话框为空。
 >
 >* GraphQL 中的片段引用
->  &#x200B;>  如果创建一个深层查询，该查询返回多个互相引用的内容片段，则该查询在第一次出现时返回 null。
+>  如果创建一个深层查询，该查询返回多个互相引用的内容片段，则该查询在第一次出现时返回 null。
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 除了标准属性之外，您还可以指定：
 
 * **根路径**，它指定或表示存储任何引用内容的位置
+
   >[!NOTE]
   >
   >如果您在使用内容片段编辑器时要在此字段中直接上传并引用图像，则必须指定此属性。
@@ -338,6 +339,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
   >有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 可引用的内容类型
+
   >[!NOTE]
   >
   >如果您在使用内容片段编辑器时要直接在此字段中上传并引用图像，则其中必须包括&#x200B;**图像**。
@@ -346,6 +348,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * 文件大小限制
 * 如果引用了图像：
+
    * 显示缩略图
    * 图像高度和宽度的限制
 

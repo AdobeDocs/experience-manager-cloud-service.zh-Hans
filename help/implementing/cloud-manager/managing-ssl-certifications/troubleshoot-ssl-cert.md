@@ -3,9 +3,9 @@ title: SSL证书问题疑难解答
 description: 了解如何通过识别常见原因来解决SSL证书问题，以便维护安全连接。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 37%
@@ -60,7 +60,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >这两个命令的输出必须完全相同。如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
 
-+++
++++ 
 
 +++**删除客户端证书**
 

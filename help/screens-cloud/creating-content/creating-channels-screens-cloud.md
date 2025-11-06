@@ -1,17 +1,17 @@
 ---
-title: 在Screens中创建和管理渠道as a Cloud Service
-description: 本页介绍如何在Screens中创建和管理渠道as a Cloud Service。
+title: 在Screens as a Cloud Service中创建和管理渠道
+description: 本页介绍如何在Screens as a Cloud Service中创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 1%
 
 ---
 
-# 在Screens中创建和管理渠道as a Cloud Service {#creating-channels-screens-cloud}
+# 在Screens as a Cloud Service中创建和管理渠道 {#creating-channels-screens-cloud}
 
 创建AEM Screens项目后，必须创建渠道。
 ***渠道***，显示一系列内容（图像和视频）、网站或单页应用程序。
@@ -24,13 +24,13 @@ ht-degree: 1%
 * 管理和编辑渠道中的内容
 * 在[Screens服务提供商](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hans)中管理渠道的分配和激活计划
 
-## 在Screens中创建新序列渠道的步骤as a Cloud Service {#create-new-channel}
+## 在Screens as a Cloud Service中创建新序列渠道的步骤 {#create-new-channel}
 
 >[!NOTE]
->**前提条件**
->在开始本指南的这一部分之前，请查看[在Screens中创建和管理项目as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
+>**先决条件**
+>在开始本指南的这一部分之前，请查看[在Screens as a Cloud Service中创建和管理项目](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
 
-执行以下步骤，在Screens中创建序列渠道as a Cloud Service：
+请按照以下步骤在Screens as a Cloud Service中创建序列渠道：
 
 1. 导航到Screens Content Provider。
 
@@ -78,7 +78,7 @@ ht-degree: 1%
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >单击&#x200B;**预览**&#x200B;以预览渠道的内容。
+   >单击&#x200B;**预览**以预览渠道的内容。
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 创建向导中的可用模板 {#available-templates}
@@ -114,6 +114,7 @@ ht-degree: 1%
    ![图像](/help/screens-cloud/assets/display/Assignments3.png)
 
 此图块显示以下信息：
+
 * 渠道在显示中的默认优先级。
 * 计划播放渠道时的激活开始和结束日期。
 * 周期的综合视图（每小时/每日/每周/每月/每年以及指定给该周期的名称）。
@@ -174,9 +175,9 @@ ht-degree: 1%
 
 1. 单击&#x200B;*删除*&#x200B;以验证更改。
 
-**注意：**&#x200B;从渠道中删除默认分配详细信息将删除使用该渠道的所有显示器上的匹配分配。
+**注意：**从渠道中删除默认分配详细信息将删除使用该渠道的所有显示器上的匹配分配。
 因此，如果没有可播放的替代内容，这可能会导致出现空白屏幕。
 
 ## 后续内容 {#whats-next}
 
-现在，您已在项目中设置AEM Screens渠道，接下来需要发布渠道。 在从Screens服务提供商管理播放器之前，请参阅[在Screensas a Cloud Service中发布渠道](manage-publish.md)。
+现在，您已在项目中设置AEM Screens渠道，接下来需要发布渠道。 在从Screens as a Cloud Service服务提供商管理播放器之前，请参阅[在Screens中发布渠道](manage-publish.md)。

@@ -4,8 +4,8 @@ description: 了解 Cloud Manager 的构建环境以及它如何构建和测试�
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 29%
@@ -119,7 +119,7 @@ Java 21运行时已应用于所有符合条件的环境，这些环境在AEM发�
 AEM Cloud Service SDK支持Java 21，并允许您在运行Cloud Manager管道之前验证项目与Java 21的兼容性。
 
 * **编辑运行时参数：**
-使用Java 21在本地运行AEM时，由于`MaxPermSize`参数，启动脚本（`crx-quickstart/bin/start`或`crx-quickstart/bin/start.bat`）失败。 作为补救措施，请从脚本中删除`-XX:MaxPermSize=256M`或定义环境变量`CQ_JVM_OPTS`，并将其设置为`-Xmx1024m -Djava.awt.headless=true`。
+使用Java 21在本地运行AEM时，由于`crx-quickstart/bin/start`参数，启动脚本（`crx-quickstart/bin/start.bat`或`MaxPermSize`）失败。 作为补救措施，请从脚本中删除`-XX:MaxPermSize=256M`或定义环境变量`CQ_JVM_OPTS`，并将其设置为`-Xmx1024m -Djava.awt.headless=true`。
 
   AEM Cloud Service SDK版本19149和更高版本中已解决此问题。
 
@@ -212,7 +212,7 @@ AEM Cloud Service SDK支持Java 21，并允许您在运行Cloud Manager管道之
 
 ## 安装其他系统包 {#installing-additional-system-packages}
 
-一些构建需要其他系统包才能完全运行。 例如，内部版本可能会调用Python或Ruby脚本，并且必须安装适当的语言解释程序。 可以通过在`pom.xml`中调用[`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)以调用APT来管理此安装过程。 此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
+一些构建需要其他系统包才能完全运行。 例如，内部版本可能会调用Python或Ruby脚本，并且必须安装适当的语言解释程序。 可以通过在[`exec-maven-plugin`中调用](https://www.mojohaus.org/exec-maven-plugin/)`pom.xml`以调用APT来管理此安装过程。 此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
 
 ```xml
         <profile>

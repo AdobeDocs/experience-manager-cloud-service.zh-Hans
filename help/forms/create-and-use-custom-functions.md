@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | 本文 |
 
 AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们允许根据预定义的标准动态更改表单行为。 通过自定义函数，开发人员还可以实施复杂的验证逻辑、执行动态计算，以及根据用户交互或预定义标准控制表单元素的显示或行为。
@@ -31,6 +31,7 @@ AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复�
 ## 自定义函数的使用 {#uses-of-custom-function}
 
 在自适应Forms中使用自定义函数的优点包括：
+
 * **正在处理数据**：自定义函数可帮助处理输入到表单字段中的数据。
 * **数据验证**：自定义函数允许您对表单输入执行自定义检查并提供指定的错误消息。
 * **动态行为**：自定义函数允许您根据特定条件控制表单的动态行为。 例如，您可以显示/隐藏字段、修改字段值或动态调整表单逻辑。

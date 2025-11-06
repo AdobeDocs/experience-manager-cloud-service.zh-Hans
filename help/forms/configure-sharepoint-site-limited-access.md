@@ -5,7 +5,7 @@ keywords: 如何配置具有有限访问权限的SharePoint站点？，配置具
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 15%
@@ -36,7 +36,7 @@ ht-degree: 15%
 
 请按照以下步骤使用授权范围配置具有有限访问权限的SharePoint站点：
 
-1. [创建应用程序，使用 &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [创建应用程序，使用 ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [在AEM实例中设置授权范围](#set-the-authorization-scope-at-aem-instance)
 
 ### 在Azure门户中创建具有有限权限的应用程序
@@ -46,13 +46,14 @@ ht-degree: 15%
 ![SharePoint选定的站点](/help/forms/assets/sharepoint-selected-site.png)
 
 有关如何检索`Client ID`的`Client Secret`、`Tenant ID`和`OAuth URL`的信息，请参阅[Microsoft®文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
+
 * 在 Microsoft® Azure 门户中，将重定向 URI 添加为 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`。将 `[author-instance]` 替换为创作实例 URL。
 * 在Microsoft的Graph API中添加`offline_access`和`Sites.Selected`权限范围，以提供对站点的受限制访问。
 * 对于OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。 将 `<tenant-id>` 替换为 Microsoft® Azure 门户中应用程序的 `tenant-id`。
 
 要使用`Sites.Selected` API权限，需要在Azure门户中注册的应用程序，该应用程序具有为SharePoint Online Sites设置的相应权限。 这种设置可确保应用程序拥有在定义的范围内与SharePoint站点交互所需的授权，从而提供所需的有限访问。
 
-请参阅[博客文章 — 开发使用Sites的应用程序。有关开发使用SharePoint Online Sites &#x200B;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)权限的应用程序的说明，请参阅SPO Sites的选定权限`Sites.Selected`。
+请参阅[博客文章 — 开发使用Sites的应用程序。有关开发使用SharePoint Online Sites ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)权限的应用程序的说明，请参阅SPO Sites的选定权限`Sites.Selected`。
 
 ### 在AEM实例中设置授权范围
 
@@ -91,6 +92,7 @@ ht-degree: 15%
 ## 额外字节
 
 要检索`SharePoint Site ID`的值：
+
 1. 转到[Microsoft Graph Explorer API](https://developer.microsoft.com/en-us/graph/graph-explorer)。
 1. 在左窗格的`SharePoint Sites` API下，单击`Search for a SharePoint site by keyword`。
 1. 将占位符`contoso`替换为SharePoint网站的实际名称，以获取相应的网站ID。

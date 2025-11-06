@@ -1,26 +1,26 @@
 ---
-title: Adobe内容包Maven插件
+title: Adobe Content Package Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
 
 ---
 
-# Adobe内容包Maven插件 {#adobe-content-package-maven-plugin}
+# Adobe Content Package Maven插件 {#adobe-content-package-maven-plugin}
 
 使用Adobe内容包Maven插件将包部署和管理任务集成到Maven项目中。
 
-将构造的包部署到AEM由Adobe内容包Maven插件执行，并使通常使用AEM [包管理器](/help/implementing/developing/tools/package-manager.md)执行的任务实现自动化
+将构造的包部署到AEM由Adobe Content Package Maven插件执行，并使通常使用AEM [包管理器](/help/implementing/developing/tools/package-manager.md)执行的任务实现自动化
 
 * 从文件系统中的文件创建新包。
 * 在AEM上安装并卸载包。
-* 生成已在AEM上定义的包。
-* 获取AEM上安装的软件包列表。
+* 构建已在AEM上定义的包。
+* 获取安装在AEM上的包的列表。
 * 从AEM中删除包。
 
 本文档详细介绍如何使用Maven管理这些任务。 但是，了解[AEM项目及其包的结构方式也很重要](#aem-project-structure)。
@@ -33,7 +33,7 @@ ht-degree: 4%
 >
 >包&#x200B;**创建**&#x200B;现在归[Apache Jackrabbit FileVault包Maven插件](https://jackrabbit.apache.org/filevault-package-maven-plugin/)所有。
 >
->本文介绍了由Adobe内容包Maven插件执行的将构造的包部署到AEM的&#x200B;**部署**。
+>本文介绍了由AEM Content Package Maven插件执行的将构造的包部署到Adobe的&#x200B;**部署**。
 
 ## 包和AEM项目结构 {#aem-project-structure}
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service遵循由最新的AEM项目原型实施的包管理和项�
 
 >[!TIP]
 >
->请参阅AEM as a Cloud Service文档中的[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)文档。 AEM 6.5完全支持这两种版本。
+>请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两项功能。
 
 ## 获取内容包Maven插件 {#obtaining-the-content-package-maven-plugin}
 
@@ -86,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### 代理 {#proxies}
 
-使用代理进行AEM的目标使用在Maven设置中找到的第一个有效代理配置。 如果未找到代理配置，则不使用代理。 请参阅[公用参数](#common-parameters)部分中的`useProxy`参数。
+使用代理进行AEM的目标使用在Maven设置中找到的第一个有效代理配置。 如果未找到代理配置，则不使用代理。 请参阅`useProxy`公用参数[部分中的](#common-parameters)参数。
 
 ### 常用参数 {#common-parameters}
 
@@ -101,7 +101,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 | `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM包管理器的HTTP服务API的URL | 除`package`之外的所有目标 |
 | `timeout` | `int` | 否 | `5` | 与包管理器服务通信的连接超时（以秒为单位） | 除`package`之外的所有目标 |
 | `useProxy` | `boolean` | 否 | `true` | 值为`true`会导致Maven使用找到的第一个活动代理配置将请求代理到包管理器。 | 除`package`之外的所有目标 |
-| `userId` | `String` | 是 | `admin` | 用于通过AEM进行身份验证的用户名 | 除`package`之外的所有目标 |
+| `userId` | `String` | 是 | `admin` | 用于向AEM进行身份验证的用户名 | 除`package`之外的所有目标 |
 | `verbose` | `boolean` | 否 | `false` | 启用或禁用详细日志记录 | 除`package`之外的所有目标 |
 
 ### 生成 {#build}
@@ -211,8 +211,8 @@ rm目标的所有参数在[公共参数](#common-parameters)部分中进行了�
 
 ## 使用AEM项目原型生成AEM项目 {#using-archetypes}
 
-最新的AEM项目原型为内部部署和AMS实施实施了最佳实践包结构，建议将其用于所有AEM项目。
+最新的AEM项目原型为本地和AMS实施实施了最佳实践包结构，建议将其用于所有AEM项目。
 
 >[!TIP]
 >
->请参阅AEM as a Cloud Service文档中的[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)文档。 AEM 6.5完全支持这两种版本。
+>请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两项功能。

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.5.0 版�
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 请查看 2025 年 5 月发布概述视频，了解 2025.5.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464360?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ AEM Assets 与 Figma 在本地集成，这使得设计师可以直接从 Figma �
 
 **基于属性的访问控制 (ABAC)**
 
-[Content Hub 现在允许您应用基于规则的限制来访问资产](/help/assets/attribute-based-access-control.md)。资源权限可确保治理，还可确保用户只能访问相关的资源。
+[Content Hub 现在允许您应用基于规则的限制来访问资产](/help/assets/attribute-based-access-control.md)。资产权限可确保治理，并确保用户只能访问相关资产。
 
 资产限制规则基于元数据定义。当资产的元数据满足规则中设定的条件时，该资产将对相应的用户组可见。
 
@@ -108,7 +108,7 @@ Content Hub 现在还允许您[将所选资产及其演绎版下载为 ZIP 文�
 
 [Experience Manager (AEM) Dynamic Media 与 Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/combine/aem-dynamic) 的原生集成，使营销人员能够轻松地将 AEM Dynamic Media 资产（演绎版和 DM 模板）嵌入到 AJO 内容中，并通过各个渠道提供实时更新和超个性化体验。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463792/?learn=on&enablevpops=&autoplay=true&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -150,6 +150,7 @@ Adobe 会定期审查功能、库、API 和配置，以确保它们符合性能�
   <summary>展开以查看弃用内容</summary>
 
 Java API：
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`

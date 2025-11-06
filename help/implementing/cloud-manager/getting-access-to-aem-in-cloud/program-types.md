@@ -4,8 +4,8 @@ description: 了解 Cloud Manager 的层级，以及不同类型的程序如何�
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 44%

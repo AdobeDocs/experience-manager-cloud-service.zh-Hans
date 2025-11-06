@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1956'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 8%
 
 有关旋转集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
-您可以像在Experience Manager Assets[&#128279;](/help/assets/manage-digital-assets.md)中上传任何其他资源一样上传旋转集的图像。
+您可以像在Experience Manager Assets[中](/help/assets/manage-digital-assets.md)上传任何其他资源一样上传旋转集的图像。
 
 ### 为旋转集捕获图像的准则 {#guidelines-for-shooting-spin-set-images}
 

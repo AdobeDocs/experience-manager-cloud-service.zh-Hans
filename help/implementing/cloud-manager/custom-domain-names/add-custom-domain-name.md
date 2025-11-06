@@ -4,8 +4,8 @@ description: 了解如何使用Cloud Manager中的域设置添加自定义域名
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 15%
@@ -49,7 +49,7 @@ ht-degree: 15%
 
 1. 在&#x200B;**域设置**&#x200B;页面的右上角附近，单击&#x200B;**添加域**。
 
-1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**&#x200B;字段中，输入您正在使用的自定义域名。
+1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
 输入域名时，不要包含`http://`、`https://`或空格。
 
    >[!NOTE]

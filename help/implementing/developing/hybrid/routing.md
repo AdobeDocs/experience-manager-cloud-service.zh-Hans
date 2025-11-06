@@ -1,19 +1,19 @@
 ---
-title: SPA模型路由
+title: SPA 模型路由
 description: 对于AEM中的单页应用程序，由应用程序负责路由。 本文档介绍了路由机制、合同和可用选项。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# SPA模型路由{#spa-model-routing}
+# SPA 模型路由{#spa-model-routing}
 
 对于AEM中的单页应用程序，由应用程序负责路由。 本文档介绍了路由机制、合同和可用选项。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 人工与自动模型工艺路线 {#manual-vs-automatic-model-routing}
 
-`ModelRouter`会自动获取模型的片段。 但就像任何自动化工具一样，它也有局限性。 需要时，可以禁用`ModelRouter`或将其配置为使用元属性忽略路径（请参阅[SPA页面组件](page-component.md)文档的“元属性”部分）。 然后，前端开发人员可以通过请求`PageModelManager`使用`getData()`函数加载任何给定模型片段来实施自己的模型路由层。
+`ModelRouter`会自动获取模型的片段。 但就像任何自动化工具一样，它也有局限性。 需要时，可以禁用`ModelRouter`或将其配置为使用元属性忽略路径(请参阅[SPA页面组件](page-component.md)文档的“Meta属性”部分)。 然后，前端开发人员可以通过请求`PageModelManager`使用`getData()`函数加载任何给定模型片段来实施自己的模型路由层。
 
 >[!CAUTION]
 >

@@ -2,10 +2,10 @@
 title: 页面编辑器和通用编辑器
 description: Adobe 继续支持页面编辑器，但通用编辑器将为您的新项目带来令人激动的可能性。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 100%
 

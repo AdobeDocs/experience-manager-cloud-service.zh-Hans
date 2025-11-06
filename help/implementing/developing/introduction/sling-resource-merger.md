@@ -3,23 +3,23 @@ title: 在Adobe Experience Manager as a Cloud Service中使用Sling资源合并�
 description: Sling资源合并器提供访问和合并资源的服务
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 1%
 
 ---
 
-# 在 AEM as a Cloud Service 中使用 Sling 资源合并器 {#using-the-sling-resource-merger-in-aem}
+# 在 AEM as a Cloud Service 中使用 Sling 资产合并器 {#using-the-sling-resource-merger-in-aem}
 
 ## 用途 {#purpose}
 
 Sling资源合并器提供访问和合并资源的服务。 它提供了以下两种情况的差异（差异）机制：
 
-* 使用[搜索路径](/help/implementing/developing/introduction/overlays.md#search-paths)的&#x200B;**[叠加图](/help/implementing/developing/introduction/overlays.md)**&#x200B;资源。
+* 使用&#x200B;**[搜索路径](/help/implementing/developing/introduction/overlays.md)**&#x200B;的[叠加图](/help/implementing/developing/introduction/overlays.md#search-paths)资源。
 
-* 使用资源类型层次结构（通过属性`sling:resourceSuperType`）为启用了Touch的UI (`cq:dialog`)覆盖&#x200B;**组件对话框**。
+* 使用资源类型层次结构（通过属性&#x200B;**）为启用了Touch的UI (**)覆盖`cq:dialog`组件对话框`sling:resourceSuperType`。
 
 通过Sling资源合并器，覆盖/覆盖资源和/或属性与原始资源/属性合并：
 
@@ -31,7 +31,7 @@ Sling资源合并器提供访问和合并资源的服务。 它提供了以下�
 >
 >Sling资源合并器和相关方法只能与支持触摸的UI(这是AEM as a Cloud Service唯一提供的UI)一起使用。
 
-### AEM目标 {#goals-for-aem}
+### AEM的目标 {#goals-for-aem}
 
 在AEM中使用Sling资源合并器的目标如下：
 
@@ -76,7 +76,7 @@ Sling资源合并器提供访问和合并资源的服务。 它提供了以下�
 
   包含当前节点应位于其前面的同级节点的名称。
 
-这些属性影响叠加/覆盖（通常在`/apps`中）使用相应/原始资源/属性（来自`/libs`）的方式。
+这些属性影响叠加/覆盖（通常在`/libs`中）使用相应/原始资源/属性（来自`/apps`）的方式。
 
 ### 创建结构 {#creating-the-structure}
 
@@ -171,7 +171,7 @@ Sling资源合并器提供访问和合并资源的服务。 它提供了以下�
   属性在`/libs`中定义，但在`/apps`覆盖/覆盖中不是必需的。
 
    1. 在`/apps`中创建对应的节点
-   1. 创建类型为`String`或`String[]`的属性`sling:hideProperties`。 使用此选项可指定要隐藏/忽略的属性。 也可以使用通配符。 例如：
+   1. 创建类型为`sling:hideProperties`或`String`的属性`String[]`。 使用此选项可指定要隐藏/忽略的属性。 也可以使用通配符。 例如：
 
       * `*`
       * `["*"]`

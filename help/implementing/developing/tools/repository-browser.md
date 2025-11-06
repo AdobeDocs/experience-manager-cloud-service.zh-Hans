@@ -5,8 +5,8 @@ description: 存储库浏览器为创作层、发布层和预览层上的所有�
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->您还可以观看[此剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=zh-Hans)，观看有关如何使用存储库浏览器调试AEM as a Cloud Service的快速视频介绍。
+>您还可以观看[此剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)，观看有关如何使用存储库浏览器调试AEM as a Cloud Service的快速视频介绍。
 
 ## 简介 {#introduction}
 
@@ -29,19 +29,19 @@ ht-degree: 1%
 
 可从[AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)访问，它可用于浏览选定环境的创作或发布实例的存储库。
 
-### 访问先决条件 {#access-prerequisites}
+### 访问权限方面的先决条件 {#access-prerequisites}
 
 要访问AEM as a Cloud Service Developer Console或存储库浏览器，必须满足以下条件
 
-要访问AEM as a Cloud Service Developer Console，请参阅[Developer Console访问权限](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
+要访问AEM as a Cloud Service Developer Console，请参阅[Developer Console访问权限](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
 
 要访问存储库浏览器，必须满足与AEM as a Cloud Service Developer Console相同的条件（以上指定）。 要查看特定实例的存储库浏览器内容，请执行以下操作：
 
-* 创作实例：具有&#x200B;**创作实例**&#x200B;的AEM Users产品配置文件的用户能够以最低的读取权限查看存储库浏览器；在浏览存储库时，用户的权限将被考虑。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
+* 创作实例：具有&#x200B;**创作实例**&#x200B;的AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器；在浏览存储库时，用户的权限将被考虑。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
 
-* Publish实例：具有&#x200B;**Publish实例**&#x200B;的AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器。 如果没有该产品配置文件集，用户将以匿名用户身份导航，并且由于权限限制，某些路径将不会显示。
+* 发布实例：具有&#x200B;**发布实例**&#x200B;的AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器。 如果没有该产品配置文件集，用户将以匿名用户身份导航，并且由于权限限制，某些路径将不会显示。
 
-有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=zh-Hans)。
+有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)。
 
 ### 启动存储库浏览器 {#launching-the-repository-browser}
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 1. 单击下面的&#x200B;**打开存储库浏览器**&#x200B;链接，启动存储库浏览器。 启动与所选层的代表性实例(pod)对应的浏览器。 您无法控制已启动层的特定面板。
 
-## 功能 {#features}
+## 特性 {#features}
 
 ### 在层次结构中导航 {#navigate-the-hierarchy}
 
@@ -94,12 +94,12 @@ ht-degree: 1%
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. 等待几分钟，然后打开&#x200B;**AEM作者**&#x200B;控制台
+1. 等待几分钟，然后打开&#x200B;**AEM创作**&#x200B;控制台
 1. 通过单击作者上的&#x200B;**工具 — 安全 — 组**，然后单击&#x200B;**管理员**&#x200B;组，将对应于新产品配置文件的组添加为管理员组的成员。 然后，添加该组，如下所示
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. 激活&#x200B;**管理员**&#x200B;和新的&#x200B;**DEV - AEM Administrators Publish**&#x200B;组，以便它们在发布时可用
+1. 激活&#x200B;**管理员**&#x200B;和新的&#x200B;**DEV - AEM Administrators Publish**&#x200B;组，以使它们在发布时可用
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 

@@ -3,8 +3,8 @@ title: 自定义通用编辑器
 description: 了解如何通过不同的选项自定义通用编辑器，以满足内容作者的需求。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 5be00b5f0ae606a583a07126892bf51af3048a71
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 68%

@@ -4,8 +4,8 @@ description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具�
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 95%
@@ -63,7 +63,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 >
 >在 Headless 项目的一开始就规划翻译。尽早与项目经理和内容架构师密切合作。
 >
->国际化项目经理可能需为一个单独的角色，其职责是定义应翻译的内容、不应翻译的内容以及哪些已翻译内容可由区域或本地内容制作者修改。
+>国际化项目经理可能需为一个单独的用户画像，其职责是定义应翻译的内容、不应翻译的内容以及哪些已翻译内容可由区域或本地内容制作者修改。
 
 ## AEM 存储 Headless 内容的方式 {#headless-content-in-aem}
 
@@ -84,7 +84,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 1. 导航到内容片段控制台，然后为内容片段模型选择选项卡。
 1. 内容片段模型通常存储在文件夹结构中。选择您的项目的文件夹。
 1. 随后将列出模型。选择模型并打开编辑器。
-1. **内容片段模型编辑器**&#x200B;将打开。
+1. **内容片段模型编辑器**将打开。
    ![内容片段模型编辑器](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
    * 左侧面板列出了可能的数据类型。

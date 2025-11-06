@@ -4,7 +4,7 @@ description: 了解如何在Adobe Experience Manager as a Cloud Service中升级
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 2%
@@ -71,7 +71,7 @@ ht-degree: 2%
    * 无法通过OpenAPI创建具有内容片段UUID或内容引用UUID字段的新内容片段模型。
    * 模型的`id`字段尚未更改为基于UUID。 它使用模型的base64解码路径。 无法移动模型，因此，该值仍保持稳定。
 
-* 资产
+* Assets
 
    * 在通过OpenAPI创建内容片段时，`fragment-reference`或`content-reference`字段类型必须用于分别指定对片段或资产的引用 — 即使设置基于UUID的引用字段的值时也是如此。
 

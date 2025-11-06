@@ -5,10 +5,10 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4302'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
       * 替代配置节点： `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * 类型为： **jcr：primaryType** `cq:Widget`
+   * 类型为： **jcr:primaryType** `cq:Widget`
    * 两者都具有以下属性：
 
       * **名称** `name`
@@ -64,8 +64,8 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 | | 启用所有功能 | 启用一些特定功能。 | 禁用所有功能。 |
 |---|---|---|---|
 | 名称 | 功能 | 功能 | 功能 |
-| 类型 | 字符串 | `String` (多字符串；将Type设置为`String`并单击CRXDE Lite中的`Multi`) | 字符串 |
-| 价值 | `*` （星号） | 设置为一个或多个特征值。 | - |
+| 类型 | 字符串 | `String` (多字符串；在CRXDE Lite中将Type设置为`String`并单击`Multi`) | 字符串 |
+| 值 | `*` （星号） | 设置为一个或多个特征值。 | - |
 
 ## 了解findreplace插件 {#findreplace}
 
@@ -93,13 +93,13 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 * **[!UICONTROL 粘贴为文本]**：提供纯文本模式功能。
 
-* 从Word粘贴&#x200B;**[!UICONTROL 1&rbrace;：提供MS Word模式功能。]**
+* 从Word粘贴&#x200B;**[!UICONTROL 1}：提供MS Word模式功能。]**
 
 要配置RTE以显示所需的图标，请执行以下步骤。
 
 1. 导航到您的组件，例如`/apps/<myProject>/components/text`。
 1. 导航到节点`rtePlugins/edit`。 如果节点不存在，请参阅[激活插件](#activateplugin)。
-1. 在`edit`节点上创建`features`属性并添加一个或多个功能。 保存所有更改。
+1. 在`features`节点上创建`edit`属性并添加一个或多个功能。 保存所有更改。
 
 ### 配置粘贴(Ctrl+V)图标和快捷键的行为 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
@@ -122,7 +122,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 ### 配置粘贴内容时允许的格式 {#pasteformats}
 
-可以进一步配置paste-as-Microsoft-Word (`paste-wordhtml`)模式，以便在从其他程序（如[!DNL Microsoft Word]）粘贴[!DNL Experience Manager]时显式允许使用几种样式。
+可以进一步配置paste-as-Microsoft-Word (`paste-wordhtml`)模式，以便在从其他程序（如[!DNL Experience Manager]）粘贴[!DNL Microsoft Word]时显式允许使用几种样式。
 
 例如，如果在[!DNL Experience Manager]中粘贴时只允许使用粗体格式和列表，则可以筛选掉其他格式。 这称为可配置的粘贴筛选，可同时为以下两项执行该操作：
 
@@ -193,7 +193,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 ## 配置文本样式 {#textstyles}
 
-作者可以应用样式来更改部分文本的外观。 样式基于您在CSS样式表中预定义的CSS类。 使用`class`属性将样式化内容包含在`span`标记中，以引用CSS类。 例如：
+作者可以应用样式来更改部分文本的外观。 样式基于您在CSS样式表中预定义的CSS类。 使用`span`属性将样式化内容包含在`class`标记中，以引用CSS类。 例如：
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -214,7 +214,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 启用样式插件可完成此操作。
 
 1. 在组件中，导航到节点`<rtePlugins-node>/styles`。 如果节点不存在，则创建节点。 有关详细信息，请参阅[激活插件](#activateplugin)。
-1. 在`styles`节点上创建`features`属性：
+1. 在`features`节点上创建`styles`属性：
 
    * **名称** `features`
    * **类型** `String`
@@ -243,7 +243,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 1. 保存所有更改。
 
-在对话框（经典UI）中使用RTE时，您可以指定针对富文本编辑优化的样式表。 由于技术限制，编辑器中的CSS上下文丢失，因此您可以模拟此上下文以改进WYSIWYG体验。
+在对话框（经典UI）中使用RTE时，您可以指定针对富文本编辑优化的样式表。 由于技术限制，编辑器中的CSS上下文将丢失，因此您可以模拟此上下文以改进WYSIWYG体验。
 
 富文本编辑器使用ID为`CQrte`的容器DOM元素，该元素提供不同的样式以供查看和编辑：
 
@@ -345,7 +345,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 要启用`paraformat`插件，请执行以下步骤：
 
 1. 在组件中，导航到节点`<rtePlugins-node>/paraformat`。 如果节点不存在，则创建节点。 有关详细信息，请参阅[激活插件](#activateplugin)。
-1. 在`paraformat`节点上创建`features`属性：
+1. 在`features`节点上创建`paraformat`属性：
 
    * **名称** `features`
    * **类型** `String`
@@ -398,7 +398,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 ## 配置特殊字符 {#spchar}
 
-在标准[!DNL Experience Manager]安装中，如果为特殊字符(`specialchars`)启用了`misctools`插件，则默认选择将立即可用；例如，版权和商标符号。
+在标准[!DNL Experience Manager]安装中，如果为特殊字符(`misctools`)启用了`specialchars`插件，则默认选择将立即可用；例如，版权和商标符号。
 
 您可以配置RTE以使您选择的字符可用；通过定义不同的字符或整个序列。
 
@@ -409,7 +409,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 ### 定义单个字符 {#definesinglechar}
 
 1. 在组件中，导航到节点`<rtePlugins-node>/misctools`。 如果节点不存在，则创建节点。 有关详细信息，请参阅[激活插件](#activateplugin)。
-1. 在`misctools`节点上创建`features`属性：
+1. 在`features`节点上创建`misctools`属性：
 
    * **名称** `features`
    * **类型** `String[]`
@@ -455,12 +455,10 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 1. 在此节点下（根据特殊字符范围命名）添加以下两个属性：
 
    * **名称** `rangeStart`
-
      **类型** `Long`
      **值**&#x200B;范围中第一个字符的[Unicode](https://unicode.org/)表示形式（十进制）
 
    * **名称** `rangeEnd`
-
      **类型** `Long`
      **值**&#x200B;范围中最后一个字符的[Unicode](https://unicode.org/)表示形式（十进制）
 
@@ -487,7 +485,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 >在RTE组件中或从RTE组件中复制和粘贴表依赖于浏览器。 并非所有浏览器都支持开箱即用。 根据表结构和浏览器，可能会得到不同的结果。 例如，在经典UI和触屏UI中，当您在Mozilla Firefox的RTE组件中复制并粘贴表时，不会保留表的布局。
 
 1. 在您的组件中，导航到节点`<rtePlugins-node>/table`。 如果节点不存在，则创建节点。 有关详细信息，请参阅[激活插件](#activateplugin)。
-1. 在`table`节点上创建`features`属性：
+1. 在`features`节点上创建`table`属性：
 
    * **名称** `features`
    * **类型** `String`
@@ -500,8 +498,8 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
    >* **类型** `String[]`
    >
    >* **值**（根据需要）以下一项或两项：
-   >* `table`以允许编辑表属性；包括样式。
-   >* `cellprops`以允许编辑单元格属性，包括样式。
+   >   * `table`以允许编辑表属性；包括样式。
+   >   * `cellprops`以允许编辑单元格属性，包括样式。
 
 1. 定义CSS样式表的位置以引用这些样式表。 请参阅[指定样式表](#locationofstylesheet)的位置，因为这与为文本定义[样式](#textstyles)的位置相同。 如果定义了其他样式，则可以定义位置。
 1. 在`table`节点下，根据需要创建以下节点：
@@ -565,7 +563,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 >
 >消息“拼写检查失败。” 如果尝试检查未安装的语言，则会显示。
 
-标准Experience Manager安装包括以下词典：
+标准Experience Manager安装包括用于以下各项的词典：
 
 * 美国英语(en_us)
 * 英式英语(en_gb)
@@ -651,7 +649,7 @@ RTE允许作者撤消或重做前几次编辑。 默认情况下，历史中存�
 
 ## 为链接配置样式和协议 {#linkstyles}
 
-在[!DNL Experience Manager]中添加链接时，您可以定义要使用的CSS样式以及要自动接受的协议。 要配置链接如何从其他程序添加到[!DNL Experience Manager]中，请定义HTML规则。
+在[!DNL Experience Manager]中添加链接时，您可以定义要使用的CSS样式以及要自动接受的协议。 要配置如何在[!DNL Experience Manager]中添加来自其他程序的链接，请定义HTML规则。
 
 1. 使用CRXDE Lite，找到项目的文本组件。
 1. 在与`<rtePlugins-node>`相同的级别上创建一个节点，即在`<rtePlugins-node>`的父节点下创建该节点：

@@ -2,9 +2,9 @@
 title: 群组迁移
 description: AEM as a Cloud Service中的组迁移概述。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1917'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 在过渡到Adobe Experience Manager (AEM) as a Cloud Service的过程中，必须将组从现有AEM系统迁移到AEM as a Cloud Service。 此任务由内容传输工具完成。
 
-AEM as a Cloud Service的一项重大更改是完全集成使用Adobe ID来访问创作层。 此过程需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)来管理用户和用户组。 用户配置文件信息集中存储在Adobe Identity Management System (IMS)中，可通过单点登录功能访问所有Adobe云应用程序。 有关详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=zh-Hans#identity-management)。 由于此更改，用户首次通过IMS登录时将在AEM上自动创建。  因此，CTT不会将用户迁移到云系统。  必须将IMS用户放置到IMS组中，这些组可以是迁移组，也可以是放置在AEM组中、已获得要迁移的AEM内容访问权限的新组。  通过这种方式，云系统上的用户将拥有与其源AEM系统相同的访问权限。
+AEM as a Cloud Service的一项重大更改是完全集成使用Adobe ID来访问创作层。 此过程需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)来管理用户和用户组。 用户配置文件信息集中存储在Adobe Identity Management System (IMS)中，可通过单点登录功能访问所有Adobe云应用程序。 有关详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)。 由于此更改，用户首次通过IMS登录时将在AEM上自动创建。  因此，CTT不会将用户迁移到云系统。  必须将IMS用户放置到IMS组中，这些组可以是迁移组，也可以是放置在AEM组中、已获得要迁移的AEM内容访问权限的新组。  通过这种方式，云系统上的用户将拥有与其源AEM系统相同的访问权限。
 
 ## 组迁移详细信息 {#group-migration-detail}
 
@@ -65,12 +65,14 @@ CTT版本3.0.20及更高版本包含用于禁用组迁移的选项。  此操作
 ## 主体迁移报告和用户报告 {#principal-migration-report}
 
 如果在迁移期间包括组（默认），则会保存一份主体迁移报告，其中概述了迁移期间每个组所发生的情况。  要在成功摄取后下载此报表，请执行以下操作：
+
 * 在CAM中，转到内容传输并选择摄取作业。
 * 单击相关摄取行上的省略号(...)，然后选择“查看主体摘要”。
 * 在出现的对话框中，从“下载文件……”下的下拉列表中选择“主体迁移报告”，然后单击“下载”按钮。
 * 保存生成的CSV文件。
 
 每个组记录的一些信息是：
+
 * 如果迁移，则为导致组迁移的第一个ACL或CUG的路径。
 * 是否先前已迁移该组；如果当前摄取是非划出摄取，则某些组可能已在上次摄取期间迁移。
 * 该组是否为内置组；这些组不会迁移，因为它们始终位于目标AEMaaCS环境中。
@@ -109,7 +111,7 @@ CTT版本3.0.20及更高版本包含用于禁用组迁移的选项。  此操作
 
 * 如果设置了&#x200B;**在摄取之前擦除云实例上的现有内容**，则以前传输到Cloud Service实例的组将与整个现有存储库一起删除；将创建一个内容摄取到的新存储库。 此过程还会重置所有设置，包括目标Cloud Service实例的权限，对于添加到&#x200B;**管理员**&#x200B;组的任何用户均适用。 必须将管理员用户重新添加到&#x200B;**管理员**&#x200B;组，以检索CTT/CAM摄取的访问令牌。
 * 执行非擦除摄取时（取消设置&#x200B;**擦除现有内容**），如果由于上次传输后内容未更改而未传输内容，则与该内容关联的组也不会传输。 即使在源系统上更改了组，此规则仍然适用。 这是因为组仅随与其关联的内容一起迁移。 因此，在这种情况下，任何属于源系统上某个组的组都将不会迁移，除非这些组属于正在迁移的其他组，或者位于正在迁移的其他内容的ACL中。 要在以后迁移这些组，请考虑使用包，从目标中删除组并重新迁移相关内容，或使用划出摄取重新迁移。
-* 在非划出引入期间，如果源AEM实例和目标AEM Cloud Service实例上存在具有任何唯一性约束数据（rep：principalName、rep：authorizableId、jcr：uuid或rep：externalId）的组，则相关组&#x200B;_未_&#x200B;迁移，并且云系统上以前存在的组保持不变。 这将记录在“主体迁移报告”中。
+* 在非划出引入期间，如果源AEM实例和目标AEM Cloud Service实例上存在具有任何唯一性约束数据（rep:principalName、rep:authorizableId、jcr:uuid或rep:externalId）的组，则相关组是&#x200B;_未_&#x200B;迁移，并且云系统上以前存在的组保持不变。 这将记录在“主体迁移报告”中。
 * 有关在封闭用户组(CUG)策略中使用的组的额外注意事项，请参阅[迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)。
 
 ## 最终摘要和报告

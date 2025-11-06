@@ -3,8 +3,8 @@ title: AEM 项目存储库结构包
 description: Adobe Experience Manager as a Cloud Service上的Maven项目需要存储库结构子包定义，其唯一用途是定义项目的代码子包部署到其中的JCR存储库根。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # AEM 项目存储库结构包
 
-Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构子包定义，其唯一用途是定义项目的代码子包部署到其中的JCR存储库根。 此方法确保按照JCR资源依赖关系对Experience Manageras a Cloud Service中包的安装自动排序。 缺少依赖项可能会导致出现以下情况：子结构将安装在父结构之前，因此被意外移除，从而破坏部署。
+Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构子包定义，其唯一用途是定义项目的代码子包部署到其中的JCR存储库根。 此方法确保按照JCR资源依赖关系对Experience Manager as a Cloud Service中包的安装自动排序。 缺少依赖项可能会导致出现以下情况：子结构将安装在父结构之前，因此被意外移除，从而破坏部署。
 
 如果您的代码包部署到代码包未涵盖&#x200B;**的位置**，则必须在存储库结构包中枚举任何上级资源（靠近JCR根的JCR资源）。 建立这些依赖关系需要此过程。
 
@@ -118,7 +118,7 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 
 ## 引用存储库结构包
 
-要使用存储库结构包，请通过FileVault内容包Maven插件`<repositoryStructurePackage>`配置通过所有代码包（部署到`/apps`的子包）引用Maven项目。
+要使用存储库结构包，请通过FileVault内容包Maven插件`/apps`配置通过所有代码包（部署到`<repositoryStructurePackage>`的子包）引用Maven项目。
 
 在`ui.apps/pom.xml`和任何其他代码包`pom.xml`中，将对该项目的存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件中。
 
@@ -180,7 +180,7 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-此错误表示中断代码包在其筛选器列表中没有列出`/apps/some/path`的`<repositoryStructurePackage>`。
+此错误表示中断代码包在其筛选器列表中没有列出`<repositoryStructurePackage>`的`/apps/some/path`。
 
 ## 其他资源
 

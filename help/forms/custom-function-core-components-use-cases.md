@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -86,11 +86,11 @@ ht-degree: 0%
 
 在此示例中，`personaldetails`面板的验证是在单击按钮时进行的。 如果在面板中未检测到错误，则单击按钮后，另一个面板（`feedback`面板）将变为可见。
 
-让我们为`Next`按钮创建一个规则，该规则将验证`personaldetails`面板，并在用户单击`Next`按钮时使`feedback`面板可见。
+让我们为`Next`按钮创建一个规则，该规则将验证`personaldetails`面板，并在用户单击`feedback`按钮时使`Next`面板可见。
 
 ![设置属性](/help/forms/assets/custom-function-set-property.png)
 
-请参阅下图以演示单击`Next`按钮时验证`personaldetails`面板的位置。 如果`personaldetails`中的所有字段都已验证，`feedback`面板将变为可见。
+请参阅下图以演示单击`personaldetails`按钮时验证`Next`面板的位置。 如果`personaldetails`中的所有字段都已验证，`feedback`面板将变为可见。
 
 ![设置属性表单预览](/help/forms/assets/set-property-form-preview.png)
 
@@ -222,6 +222,7 @@ ht-degree: 0%
 
 以下代码行：
 `globals.functions.submitForm(globals.functions.exportData(), false);`用于在操作后提交表单数据。
+
 * 第一个参数是要提交的数据。
 * 第二个参数表示在提交之前是否验证表单。 它是`optional`，默认设置为`true`。
 * 第三个参数是提交的`contentType`，该参数也是可选的，默认值是`multipart/form-data`。 其他值可以是`application/json`和`application/x-www-form-urlencoded`。
@@ -461,13 +462,13 @@ function testImportData(globals)
 
 >[!NOTE]
 >
-> 如果要重点关注相对于`email`字段的下一个或上一个字段，则可以使用可选的`$focusOption`参数。
+> 如果要重点关注相对于`$focusOption`字段的下一个或上一个字段，则可以使用可选的`email`参数。
 
 ## 使用`dispatchEvent`属性添加或删除可重复面板
 
-让我们了解自定义函数如何在`Booking Form`的帮助下使用`dispatchEvent`属性使用字段和全局对象添加或删除可重复面板。
+让我们了解自定义函数如何在`dispatchEvent`的帮助下使用`Booking Form`属性使用字段和全局对象添加或删除可重复面板。
 
-添加以下代码行（如[create-custom-function](/help/forms/custom-function-core-component-create-function.md)部分中所述），以便在使用`dispatchEvent`属性单击`Add Traveler`按钮时添加面板：
+添加以下代码行（如[create-custom-function](/help/forms/custom-function-core-component-create-function.md)部分中所述），以便在使用`Add Traveler`属性单击`dispatchEvent`按钮时添加面板：
 
 ```javascript
 /**
@@ -490,7 +491,7 @@ function testAddInstance(globals)
 
 ![添加面板](/help/forms/assets/custom-function-add-panel.gif)
 
-同样，添加以下代码行（如[create-custom-function](#create-custom-function)部分中所述），以便在使用`dispatchEvent`属性单击`Delete Traveler`按钮时删除面板：
+同样，添加以下代码行（如[create-custom-function](#create-custom-function)部分中所述），以便在使用`Delete Traveler`属性单击`dispatchEvent`按钮时删除面板：
 
 ```javascript
 /**
@@ -528,9 +529,9 @@ function testRemoveInstance(globals)
 * 如果自定义提交处理程序无法按预期在现有AEM项目或表单中执行，请执行以下步骤：
    * 确保[核心组件版本已更新到3.0.18及更高版本](https://github.com/adobe/aem-core-forms-components)。 但是，对于现有AEM项目和表单，还需要执行其他步骤：
 
-   * 对于AEM项目，用户应使用`submitForm()`替换`submitForm('custom:submitSuccess', 'custom:submitError')`的所有实例，并通过Cloud Manager管道部署该项目。
+   * 对于AEM项目，用户应使用`submitForm('custom:submitSuccess', 'custom:submitError')`替换`submitForm()`的所有实例，并通过Cloud Manager管道部署该项目。
 
-   * 对于现有表单，如果自定义提交处理程序无法正常运行，用户需要使用规则编辑器在&#x200B;**提交**&#x200B;按钮上打开并保存`submitForm`规则。 此操作将`submitForm('custom:submitSuccess', 'custom:submitError')`中的现有规则替换为表单中的`submitForm()`。
+   * 对于现有表单，如果自定义提交处理程序无法正常运行，用户需要使用规则编辑器在`submitForm`提交&#x200B;**按钮上打开并保存**&#x200B;规则。 此操作将`submitForm('custom:submitSuccess', 'custom:submitError')`中的现有规则替换为表单中的`submitForm()`。
 
 ## 另请参阅
 

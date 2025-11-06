@@ -4,8 +4,8 @@ description: 了解管道代码质量测试的工作方式以及其提高部署�
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 80%

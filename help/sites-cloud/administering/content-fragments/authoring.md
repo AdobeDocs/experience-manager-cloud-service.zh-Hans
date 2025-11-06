@@ -2,10 +2,10 @@
 title: 创作内容片段
 description: 了解如何为内容片段创作内容，并根据用途创建该内容的变体。 内容片段为Headless投放和页面创作增加了灵活性。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 117703794c84bebd659294a593ffd98f52ff89a2
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2778'
 ht-degree: 69%
@@ -267,7 +267,7 @@ ht-degree: 69%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 

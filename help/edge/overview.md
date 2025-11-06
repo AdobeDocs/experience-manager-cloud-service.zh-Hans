@@ -3,9 +3,9 @@ title: Edge Delivery Services 概述
 description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提供的性能和优异 Lighthouse 分数中获益。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-role: Admin, Architect, Developer
-source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 100%
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 >**想立即亲身体验吗？**
 >
 >如果您希望立即上手体验 Edge Delivery Services，有两种方式：
+>
 >* [立即在预建的教程环境中开始创作。已完全配置，随时可用。](https://www.aem.live/developer/ue-trial)
 >* 深入了解详情，并在 30 分钟内完成您自己的环境设置，[请参阅 aem.live 上的教程。](https://www.aem.live/developer/ue-tutorial)
 

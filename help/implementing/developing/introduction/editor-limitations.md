@@ -3,8 +3,8 @@ title: 页面编辑器限制
 description: 页面编辑器使用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 4%

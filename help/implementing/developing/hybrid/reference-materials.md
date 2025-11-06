@@ -1,19 +1,19 @@
 ---
-title: SPA参考资料
+title: SPA 参考材料
 description: 单页应用程序API引用和源代码存储库概述
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# SPA参考资料 {#spa-reference-materials}
+# SPA 参考材料 {#spa-reference-materials}
 
 {{ue-over-spa}}
 

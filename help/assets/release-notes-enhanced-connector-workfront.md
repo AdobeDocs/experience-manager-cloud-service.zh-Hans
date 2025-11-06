@@ -4,8 +4,8 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -65,9 +65,9 @@ ht-degree: 100%
 
 ### 2024 年 1 月版本 {#january-2024-release}
 
-* [!DNL CRX DE] 中的 [!DNL Workfront] 配置当前未存储 `project ID`，导致应用只读权限时出错。详细了解如何[配置权限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hans#linked-folders)。
+* [!DNL CRX DE] 中的 [!DNL Workfront] 配置当前未存储 `project ID`，导致应用只读权限时出错。详细了解如何[配置权限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
-* 没有公开的文档涉及如何将自定义属性添加到现成的索引定义。详细了解[添加自定义属性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hans#metadata-schema-mapping)。
+* 没有公开的文档涉及如何将自定义属性添加到现成的索引定义。详细了解[添加自定义属性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)。
 
 * 删除增强型连接器上的连接配置显著影响事件订阅和其他保存的配置，导致其指向旧 URL。
 
@@ -201,13 +201,13 @@ ht-degree: 100%
          确保 `"objId": "",` 和 `"url"` 之间的内容与 JSON 响应匹配。为此建议的方法是从任何具有 `objId` 的事件订阅复制，然后删除该编号。
 
       1. 记下事件订阅 ID。
-
       1. 删除错误的事件订阅。对 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` 调用删除 API
 
          `200` 作为响应代码表示成功删除了错误的事件订阅。
-  >[!NOTE]
-  >
-  >如果在执行本过程中提到的步骤之前已经删除了错误的事件订阅，则可以跳过本过程的最后一步。
+
+         >[!NOTE]
+         >
+         >如果在执行本过程中提到的步骤之前已经删除了错误的事件订阅，则可以跳过本过程的最后一步。
 
 ### 2022 年 10 月版本 {#october-2022-release}
 

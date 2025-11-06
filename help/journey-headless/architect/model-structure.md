@@ -4,8 +4,8 @@ description: 了解使用内容片段模型对 Headless CMS 进行内容建模�
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 29c9b47fe10fd4109190ec91990e8ba7a0359f72
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 83%

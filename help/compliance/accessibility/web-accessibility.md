@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 description: 介绍 Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -33,11 +33,11 @@ Adobe Experience Manager as a Cloud Service 符合[万维网联盟](#world-wide-
 
 ## 万维网联盟 {#world-wide-web-consortium}
 
-[万维网联盟 (W3C)](https://www.w3.org/) 是一个致力于开发 Web 标准的国际社区。他们的 [Web 无障碍倡议 (WAI)](https://www.w3.org/WAI/) 发布了 [Web 内容无障碍准则](#wcag-accessibility-guidelines)。
+[万维网联盟（W3C）](https://www.w3.org/) 是一个致力于开发 Web 标准的国际社区。他们的 [Web 无障碍倡议（WAI）](https://www.w3.org/WAI/) 发布了 [Web 内容无障碍准则](#wcag-accessibility-guidelines)。
 
-## Web 内容无障碍准则 (WCAG) 2.1 {#wcag-accessibility-guidelines}
+## Web 内容无障碍准则（WCAG）2.1 {#wcag-accessibility-guidelines}
 
-为帮助 Web 设计人员和开发人员制作无障碍网站，[Web 无障碍倡议 (WAI)](https://www.w3.org/WAI/) 于 2018 年 6 月发布了 [Web 内容无障碍准则 (WCAG) 2.1](https://www.w3.org/TR/WCAG/)。
+为帮助 Web 设计人员和开发人员制作无障碍网站，[Web 无障碍倡议（WAI）](https://www.w3.org/WAI/) 于 2018 年 6 月发布了 [Web 内容无障碍准则（WCAG）2.1](https://www.w3.org/TR/WCAG/)。
 
 WCAG 2.1 提供了[涵盖无障碍级别和如何符合这些级别的准则（包括相关成功标准）](https://www.w3.org/TR/WCAG/#conformance)。
 
@@ -64,6 +64,6 @@ WCAG 2.1 提供了[涵盖无障碍级别和如何符合这些级别的准则（�
   Adobe Experience Manager (AEM) includes several features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 -->
 
-## Adobe 辅助功能 {#accessibility-at-adobe}
+## Adobe 无障碍功能 {#accessibility-at-adobe}
 
 有关其他信息，请参阅 [Adobe 辅助功能资源中心。](https://www.adobe.com/cn/accessibility/)

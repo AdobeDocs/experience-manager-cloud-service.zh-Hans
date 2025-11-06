@@ -4,7 +4,7 @@ description: 详细了解内容交付数据流以及如何发布内容
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 93%
@@ -32,6 +32,7 @@ ht-degree: 93%
 默认情况下，内容类型 HTML/文本在 Dispatcher 层上设置为 300 秒（5 分钟）后过期，这是 Dispatcher 缓存和 CDN 都遵守的阈值。在重新部署发布服务期间，Dispatcher 缓存将被清除，并且随后会在新的发布节点接受流量之前进行预热。
 
 以下部分提供了有关内容交付的更多详细信息：
+
 * [CDN 配置](/help/implementing/dispatcher/cdn.md)
 * [缓存](/help/implementing/dispatcher/caching.md)
 

@@ -4,8 +4,8 @@ description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的�
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 4b09357276be8b57c72f830a39d98ab0a593efb1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 37%
@@ -67,7 +67,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * ![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)（显示或隐藏侧菜单）可让您访问各种选项卡，这些选项卡可带您访问各个程序的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
 * ![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）允许您访问通知和公告等。
 
-有关Experience Platform顶部导航栏的更多详细信息，请参阅[Adobe Experience Platform UI指南。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+有关Experience Platform顶部导航栏的更多详细信息，请参阅[Adobe Experience Platform UI指南。](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 程序工具栏 {#program-toolbar}
 
@@ -122,7 +122,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 分配给项目的名称。 上图将“SecurBank Sample”显示为程序名称。
 * 服务类型：
    * **Experience Manager Cloud** — 用于AEM as a Cloud Service程序
-   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 用于[AMS (Adobe Managed Services)程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙盒
    * 生产
@@ -149,7 +149,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 导航到项目的特定![数据图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [环境](/help/implementing/cloud-manager/manage-environments.md)
 * 打开![项目概述图标](/help/implementing/cloud-manager/assets/program-overview.svg) [项目概述](#program-overview)
 * ![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -178,7 +178,7 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 对程序[环境的概述](#environments)
 1. 对程序[管道的概述](#pipelines)
 1. [计划绩效](#performance)概述
-1. [有用资源](#useful-resources)的链接
+1.  [有用资源](#useful-resources)的链接
 
 ### 工具栏 {#program-overview-toolbar}
 

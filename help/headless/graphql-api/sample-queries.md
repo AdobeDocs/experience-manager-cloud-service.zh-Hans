@@ -4,10 +4,10 @@ description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 94%
+source-wordcount: '1927'
+ht-degree: 93%
 
 ---
 
@@ -1980,10 +1980,10 @@ query {
 
 | 名称 | 国家/地区 | 人口 | 类别 |
 |--- |--- |--- |--- |
-| 巴塞尔 | 瑞士 | 172258 | city:emea |
-| 柏林 | 德国 | 3669491 | city:capital<br>city:emea |
-| 布加勒斯特 | 罗马尼亚 | 1821000 | city:capital<br>city:emea |
-| 旧金山 | 美国 | 883306 | city:beach<br>city:na |
-| 圣何塞 | 美国 | 102635 | city:na |
-| 斯图加特 | 德国 | 634830 | city:emea |
-| 苏黎世 | 瑞士 | 415367 | city:capital<br>city:emea |
+| 巴塞尔 | 瑞士 | 172258 | 城市:emea |
+| 柏林 | 德国 | 3669491 | 城市:capital<br>城市:emea |
+| 布加勒斯特 | 罗马尼亚 | 1821000 | 城市:capital<br>城市:emea |
+| 旧金山 | 美国 | 883306 | 城市:beach<br>城市:na |
+| 圣何塞 | 美国 | 102635 | 城市:na |
+| 斯图加特 | 德国 | 634830 | 城市:emea |
+| 苏黎世 | 瑞士 | 415367 | 城市:capital<br>城市:emea |

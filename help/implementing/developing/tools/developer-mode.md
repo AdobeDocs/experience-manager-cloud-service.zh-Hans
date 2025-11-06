@@ -5,8 +5,8 @@ description: 开发人员模式会打开一个侧面板，其中包含多个选�
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -31,8 +31,7 @@ ht-degree: 0%
 >
 >开发人员模式：
 >
->* 在移动设备或桌面上的小窗口中不可用（由于空间限制）。
->  * 当宽度小于1024像素时，会发生这种情况。
+>* 在移动设备或桌面上的小窗口中不可用（由于空间限制）。 当宽度小于1024像素时，会发生这种情况。
 >* 仅适用于属于`administrators`组的用户。
 
 ## 打开开发人员模式 {#opening-developer-mode}
@@ -91,7 +90,7 @@ ht-degree: 0%
 
 希望&#x200B;**错误**&#x200B;选项卡始终为空（如上所述），但在出现问题时，可能会显示每个组件的以下详细信息：
 
-* 如果组件将条目写入错误日志，同时记录错误详细信息并指向CRXDE Lite中相应代码的链接，则会发出警告。
+* 如果组件将条目写入错误日志，同时记录错误详细信息并直接链接到CRXDE Lite中的相应代码，则会发出警告。
 * 如果组件打开管理会话，会出现警告。
 
 例如，如果调用了未定义的方法，则生成的错误将显示在&#x200B;**错误**&#x200B;选项卡中，并且&#x200B;**组件**&#x200B;选项卡树中的组件项在出现错误时也会标记一个指示符。

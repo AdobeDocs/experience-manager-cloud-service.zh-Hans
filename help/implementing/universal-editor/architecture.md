@@ -3,9 +3,9 @@ title: Universal Editor 架构
 description: 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Universal Editor 由四个基本构建块组成，这些构建块将进行交互
 
 ### 远程应用程序 {#remote-app}
 
-要在 Universal Editor 中使应用程序可在上下文中编辑，必须对 DOM 进行插桩。 远程应用程序必须在 DOM 中呈现某些属性。请参阅[属性和类型](attributes-types.md)，了解有关必要元数据的详细信息。请参阅文档 [AEM Universal Editor 快速入门](getting-started.md)，了解 AEM 中插桩示例。
+要在 Universal Editor 中使应用程序可在上下文中编辑，必须对 DOM 进行插桩。 远程应用程序必须在 DOM 中呈现某些属性。请参阅[属性和类型](attributes-types.md)，了解有关必要元数据的详细信息。请参阅文档 [AEM 通用编辑器快速入门](getting-started.md)，了解 AEM 中的适配示例。
 
 Universal Editor 力求成为最小 SDK，因此，插桩是远程应用程序实施的责任。
 

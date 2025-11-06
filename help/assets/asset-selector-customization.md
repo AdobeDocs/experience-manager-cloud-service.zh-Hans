@@ -3,7 +3,7 @@ title: 自定义资产选择器应用程序
 description: 使用函数可自定义应用程序中的资产选择器。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -357,7 +357,7 @@ const showToast = {
 
 资产选择器允许您添加标记选取器过滤器。 它支持将所有相关标记组合到特定标记组的标记组。 此外，您还可以通过它选择与要查找的资源对应的其他标记。 此外，您还可以在上下文调用过滤器下设置您最常用的默认标记组，以便您能够随时访问它们。
 
->
+>[!NOTE]
 >
 > * 您需要添加上下文调用代码片段以在搜索中启用标记过滤器。
 > * 必须使用与标记组类型`(property=xcm:keywords.id=)`对应的名称属性。

@@ -5,16 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 31%
 
 ---
-
-
-
 
 # 概述
 
@@ -155,13 +153,13 @@ Experience Builder需要具有[自适应AEM Forms as a Cloud Service核心组件
 
 ## 核心功能
 
-Forms Experience Builder 提供了两种用于创建强大数字表单的主要工作流：
+Forms 体验构建器提供了两种用于创建强大数字表单的主要工作流：
 
 ### AI支持的表单创建
 
 **使用自然语言生成表单**
 
-使用简单的英语描述从头开始创建完整的表单。只需描述您的要求，例如“创建一个带有评分量表和评论字段的客户反馈表”，Forms Experience Builder 就会生成适当的表单结构。您可以使用可视化编辑器的体验生成器来添加更多字段、验证规则和提交逻辑。
+使用简单的英语描述从头开始创建完整的表单。只需描述您的要求，例如“创建一个带有评分量表和评论字段的客户反馈表”，Forms 体验构建器就会生成适当的表单结构。您可以使用可视化编辑器的体验生成器来添加更多字段、验证规则和提交逻辑。
 
 **动态字段管理**
 
@@ -169,7 +167,7 @@ Forms Experience Builder 提供了两种用于创建强大数字表单的主要�
 
 **布局优化**
 
-通过自然语言更新表单布局和配置。要求进行更改，例如“将表单布局改为向导式布局”， Forms Experience Builder 就会应用适当的样式调整布局。
+通过自然语言更新表单布局和配置。要求进行更改，例如“将表单布局改为向导式布局”， Forms 体验构建器就会应用适当的样式调整布局。
 
 **全面的提交操作配置**
 
@@ -197,7 +195,7 @@ Forms Experience Builder 提供了两种用于创建强大数字表单的主要�
 
 ## Forms Experience Builder与传统开发
 
-| 方面 | 传统表单创建 | Forms Experience Builder |
+| 方面 | 传统表单创建 | Forms 体验构建器 |
 |--------|---------------------------|----------------------|
 | **创建时间** | 2-3 天 | 2-3 小时 |
 | **技术知识** | 必需 | 不必需 |

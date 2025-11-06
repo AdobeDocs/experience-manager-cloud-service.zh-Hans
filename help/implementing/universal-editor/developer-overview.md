@@ -3,9 +3,9 @@ title: 面向 AEM 开发人员的通用编辑器概述
 description: 如果您是 AEM 开发人员，很想了解通用编辑器如何工作以及如何在项目中使用它，本文档将为您提供一个端到端说明，指导您适配 WKND 项目，以便您能为此项目使用通用编辑器。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
 
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 要按照这个概述进行操作，您需要满足以下条件。
 
-* [AEM as a Cloud Service 的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
-   * 您的本地开发实例必须[配置 HTTPS 才能在 `localhost` 上进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)。
+* [AEM as a Cloud Service 的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+   * 您的本地开发实例必须[配置 HTTPS 才能在 `localhost` 上进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)。
    * [必须安装 WKND 演示网站](https://github.com/adobe/aem-guides-wknd)。
 * [有权访问通用编辑器](/help/implementing/universal-editor/getting-started.md#onboarding)。
 * 为开发目的而运行的[本地通用编辑器服务](/help/implementing/universal-editor/local-dev.md)。

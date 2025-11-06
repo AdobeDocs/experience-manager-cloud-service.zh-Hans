@@ -3,9 +3,9 @@ title: AEM Sites 开发快速入门 – WKND 教程
 description: 初次开发 AEM？需要复习最佳实践？从这里开始！此多部分教程旨在教授初次使用 AEM 的开发人员如何使用最新的标准和技术在 AEM 中实施网站。
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%
@@ -33,9 +33,9 @@ ht-degree: 100%
 
 教程实施利用了 AEM 的许多强大的功能。站点会通过以下项目实施：
 
-* [Maven AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)
+* [Maven AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=zh-Hans)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
 * [可编辑模板](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=zh-Hans)
-* [样式系统](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=zh-Hans)
+* [样式系统](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)

@@ -3,11 +3,11 @@ title: 自定义和扩展内容片段
 description: 内容片段扩展了标准资产。 了解如何对其进行自定义。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,6 @@ ht-degree: 1%
 * 所有内容都存储在资源的`jcr:content/data`节点下：
 
    * 元素数据存储在主子节点下：
-
      `jcr:content/data/master`
 
    * 变体存储在子节点下，该子节点带有变体的名称：
@@ -99,9 +98,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->[内容片段组件是核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)的一部分。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
+>[内容片段组件是核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)的一部分。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)。
 
-可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供了&#x200B;**[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)** — 一个[组件，它允许您在页面上包含内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此&#x200B;**[内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)**&#x200B;核心组件。
+可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供了&#x200B;**[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** — 一个[组件，它允许您在页面上包含内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此&#x200B;**[内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)**&#x200B;核心组件。
 
 * 组件使用`fragmentPath`属性引用实际内容片段。 `fragmentPath`属性的处理方式与其他资产类型的类似属性相同；例如，当内容片段移动到其他位置时。
 
@@ -149,7 +148,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >AEM翻译工作流适用于`/content`：
+  >AEM翻译工作流可与`/content`配合使用：
   >
   >* 由于内容片段模型驻留在`/conf`中，因此这些翻译中不包含这些模型。 您可以将UI字符串国际化。
 
@@ -255,7 +254,7 @@ ht-degree: 1%
 
 ### 注意事项 {#caveats}
 
-应当指出：
+需要注意的是：
 
 * 整个API设计为&#x200B;**而非**&#x200B;自动保留更改（除非在API JavaDoc中另有说明）。 因此，请始终提交相应请求的资源解析程序（或您实际使用的解析程序）。
 
@@ -285,11 +284,11 @@ ht-degree: 1%
 >
 >请参考此背景信息。 您不应在此更改任何内容（因为它在存储库中标记为&#x200B;*私有区域*），但有时它可能会有助于了解内容背后的工作原理。
 
-编辑内容片段(可以跨越多个视图(=HTML页面))是原子级的。 因此，原子多视图编辑功能不是典型的AEM概念，内容片段使用称为&#x200B;*编辑会话*&#x200B;的内容。
+编辑内容片段是原子级的，它可以跨越多个视图(= HTML pages)。 由于此类原子多视图编辑功能不是典型的AEM概念，因此内容片段使用称为&#x200B;*编辑会话*&#x200B;的内容。
 
 当用户在编辑器中打开内容片段时，会启动编辑会话。 当用户通过选择&#x200B;**保存**&#x200B;或&#x200B;**取消**&#x200B;离开编辑器时，编辑会话已完成。
 
-从技术上讲，所有编辑都在&#x200B;*实时*&#x200B;内容上完成，就像所有其他AEM编辑一样。 启动编辑会话时，将创建当前未编辑状态的版本。 如果用户取消编辑，则会恢复该版本。 如果用户单击“保存”**&#x200B;**，则不会执行任何特定操作，因为编辑是在&#x200B;*实时*&#x200B;内容上运行的，因此所有更改已保留。 此外，单击&#x200B;**保存**&#x200B;将触发一些后台处理，例如创建全文搜索信息或处理混合媒体资产，或同时触发两者。
+从技术上讲，所有编辑都在&#x200B;*实时*&#x200B;内容上完成，就像所有其他AEM编辑一样。 启动编辑会话时，将创建当前未编辑状态的版本。 如果用户取消编辑，则会恢复该版本。 如果用户单击“保存”****，则不会执行任何特定操作，因为编辑是在&#x200B;*实时*&#x200B;内容上运行的，因此所有更改已保留。 此外，单击&#x200B;**保存**&#x200B;将触发一些后台处理，例如创建全文搜索信息或处理混合媒体资产，或同时触发两者。
 
 对于边缘情况，有一些安全措施；例如，如果用户尝试离开编辑器而不保存或取消编辑会话。 此外，还可以定期自动保存以防止数据丢失。
 两个用户可以同时编辑相同的内容片段，因此会覆盖彼此的更改。 要防止出现这种情况，必须通过对内容片段应用DAM管理的*签出*&#x200B;操作来锁定内容片段。
@@ -347,8 +346,8 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * 值： `300`（5分钟等于300秒）
 
-## 用于页面创作的组件 {#components-for-page-authoring}
+## 页面创作组件 {#components-for-page-authoring}
 
 有关更多信息，请参阅
 
-* [核心组件 — 内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans) （推荐）
+* [核心组件 — 内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) （推荐）

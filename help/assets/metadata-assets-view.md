@@ -1,11 +1,11 @@
 ---
 title: 如何在Assets视图中管理元数据？
 description: 了解如何在Assets视图中管理元数据。 更好的元数据管理使资源更易于访问、更易于管理和完整。
-role: User, Leader, Admin, Architect, Developer
+role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 81%
@@ -33,7 +33,7 @@ ht-degree: 81%
 
 ![查看资产的元数据](assets/metadata-view.png)
 
-*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 标题、描述和上传日期等基本元数据在[!UICONTROL 基本]选项卡中提供。[!UICONTROL 高级]选项卡包含更多高级元数据，例如相机型号、镜头详细信息和地理位置标记。[!UICONTROL 标记]选项卡包含根据图像的内容自动应用的标记。
 
@@ -49,7 +49,7 @@ ht-degree: 81%
 
 ![查看资产的智能标记](assets/metadata-view-tags.png)
 
-*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 智能标记还包含以百分比显示的置信度分数。它指示与所应用标记对应的置信度。您可以审核自动应用的智能标记。
 
@@ -226,13 +226,13 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

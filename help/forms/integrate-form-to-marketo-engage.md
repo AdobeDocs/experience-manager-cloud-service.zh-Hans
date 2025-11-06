@@ -5,7 +5,7 @@ keywords: 如何将Marketo实例与表单连接？，将表单连接到Marketo�
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-将AEM Forms与[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/home)集成后，用户可以利用Marketo Engage的功能，从捕获的数据创建业务逻辑并自动化工作流，包括智能营销活动和电子邮件自动化。 配置的表单可以将捕获的数据发送到Marketo Engage进行处理。
+将AEM Forms与[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)集成后，用户可以利用Marketo Engage的功能，从捕获的数据创建业务逻辑并自动化工作流，包括智能营销活动和电子邮件自动化。 配置的表单可以将捕获的数据发送到Marketo Engage进行处理。
 
 ## 将Marketo Engage与表单集成的优势
 
@@ -52,7 +52,7 @@ ht-degree: 5%
 将Marketo Engage与AEM Forms集成时的一些注意事项：
 
 * AEM仅支持各种Marketo数据库中的People(Leads)数据库。
-* Marketo允许创建[10个自定义对象](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)作为用户定义的对象，以存储Leads中标准字段以外的专用数据，从而支持独特的业务需求。
+* Marketo允许创建[10个自定义对象](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)作为用户定义的对象，以存储Leads中标准字段以外的专用数据，从而支持独特的业务需求。
 * 仅当自定义对象与Lead数据库关联时，AEM才能访问这些对象
 
 ## 将Marketo Engage与表单集成的先决条件
@@ -60,7 +60,7 @@ ht-degree: 5%
 以下是将Marketo Engage与AEM Forms连接的先决条件：
 
 * 有效的Adobe Marketo Engage许可证
-* 用于[检索客户端ID和客户端密钥](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)以创建云配置的工作实例Marketo Engage。
+* 用于[检索客户端ID和客户端密钥](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)以创建云配置的工作实例Marketo Engage。
 
 ## 创建云服务配置以将AEM Forms (自适应Forms)与Marketo Engage连接
 
@@ -76,18 +76,19 @@ ht-degree: 5%
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-2. 打开文件夹以托管配置，然后单击&#x200B;**创建**。 出现&#x200B;**创建Marketo Engage配置**&#x200B;窗口。
+1. 打开文件夹以托管配置，然后单击&#x200B;**创建**。 出现&#x200B;**创建Marketo Engage配置**&#x200B;窗口。
 
    >[!NOTE]
    >
    > 您还可以[为云服务配置](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations)配置文件夹。
 
-3. 指定要连接到服务的配置和凭据的&#x200B;**标题**。 您可以从Adobe Marketo Engage仪表板检索身份验证凭据：
+1. 指定要连接到服务的配置和凭据的&#x200B;**标题**。 您可以从Adobe Marketo Engage仪表板检索身份验证凭据：
+
    * **客户端ID**&#x200B;和&#x200B;**客户端密钥**&#x200B;在&#x200B;**管理员** > **集成** > **启动点**&#x200B;中可用，方法是选择自定义服务并单击&#x200B;**查看详细信息**。
    * **标识URL**&#x200B;在&#x200B;**管理员** > **集成** > **Web服务**&#x200B;中可用，作为&#x200B;**REST API**&#x200B;部分中的&#x200B;**标识**。
 
-4. 单击&#x200B;**连接**。  连接成功后，将显示`Authentication Successful`消息。
-5. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;以保存云配置设置。
+1. 单击&#x200B;**连接**。  连接成功后，将显示`Authentication Successful`消息。
+1. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;以保存云配置设置。
 
 ![Marketo Engage云配置](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -96,6 +97,7 @@ ht-degree: 5%
 ## 下一步
 
 您已创建云服务配置以将Adobe Marketo Engage与AEM Forms集成。 现在，您可以集成：
+
 * [新增自适应表单与Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
 * [Marketo Engage中的现有自适应表单](/help/forms/use-marketo-engage-data-source-in-form.md)
 

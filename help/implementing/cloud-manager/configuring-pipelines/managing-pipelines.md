@@ -5,8 +5,8 @@ index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 42%
@@ -51,7 +51,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在&#x200B;**管道**&#x200B;页面上，您可以看到项目的所有管道列表，并且可以像在&#x200B;**管道信息卡**&#x200B;中一样启动和停止管道执行。
 
-如果管道正在执行，请单击&#x200B;**状态**&#x200B;列中的![信息 — 媒体图标](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)以显示包含有关执行的详细信息的弹出窗口。 在弹出窗口中，单击&#x200B;**查看详细信息**&#x200B;以查看管道执行的[详细信息](#view-details)。
+如果管道正在执行，请单击![状态](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)列中的&#x200B;**信息 — 媒体图标**&#x200B;以显示包含有关执行的详细信息的弹出窗口。 在弹出窗口中，单击&#x200B;**查看详细信息**&#x200B;以查看管道执行的[详细信息](#view-details)。
 
 ![管道执行详细信息](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
@@ -70,7 +70,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 1. 从&#x200B;**项目概述**&#x200B;页面，单击![管道选项卡 — 工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;选项卡。
 1. 在管道页面的管道名称和类型左侧，单击取消收藏的管道的![星型轮廓图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)以将其添加到收藏夹列表。
-或者，单击收藏管道![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的星形图标以将该管道从收藏夹列表中删除。
+或者，单击收藏管道![的](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)星形图标以将该管道从收藏夹列表中删除。
 
 
 ## 活动页面 {#activity}
@@ -83,7 +83,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在&#x200B;**活动**&#x200B;页面中，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
-如果管道正在执行，您可以单击&#x200B;**状态**&#x200B;列中的![信息 — 媒体图标](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)以显示一个弹出窗口，其中显示有关执行的信息。
+如果管道正在执行，您可以单击![状态](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)列中的&#x200B;**信息 — 媒体图标**&#x200B;以显示一个弹出窗口，其中显示有关执行的信息。
 
 ![管道执行详细信息](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
@@ -116,8 +116,8 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 **如要运行多个管道：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 在左侧菜单中，点击![工作流图标 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
-1. 在&#x200B;**管道**&#x200B;页面的表格中，选择要运行的管道旁边的复选框。
+1. 在左侧菜单中，点击![工作流图标 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
+1. 在&#x200B;**管道**页面的表格中，选择要运行的管道旁边的复选框。
 需要时，点击![“过滤器”图标，漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **过滤器**，按名称、环境、部署的代码类型或所有三者组合对管道进行排序。
 1. 在页面的右上角附近，点击&#x200B;**运行所选（x）**。
 1. 在&#x200B;**运行选定的管道 (x)** 对话框中，点击&#x200B;**运行 (x)**。
@@ -205,7 +205,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 在项目概述页面中，在&#x200B;**管道**&#x200B;信息卡上单击要取消的管道的![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在项目概述页面中，在![管道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)信息卡上单击要取消的管道的&#x200B;**省略号 — 更多图标**。
 
    ![正在取消管道](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
@@ -215,7 +215,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面导航到![管道 — 工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;选项卡，然后选择要取消的管道。
+1. 从![项目概述](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)页面导航到&#x200B;**管道 — 工作流图标** **管道**&#x200B;选项卡，然后选择要取消的管道。
 
    您将转到运行中的管道的详细信息页面。
 

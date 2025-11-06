@@ -3,15 +3,15 @@ title: 添加Edge Delivery管道
 description: 了解如何添加Edge Delivery管道以生成代码并将其部署到生产环境。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 9ad50747b46b75c33cb5b034e8b8e41d5079e967
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -44,10 +44,10 @@ ht-degree: 10%
 **添加Edge Delivery管道：**
 
 1. 在[experience.adobe.com](https://experience.adobe.com)登录Cloud Manager。
-1. 在&#x200B;**快速访问**&#x200B;部分中，单击&#x200B;**Experience Manager**。
+1. 在&#x200B;**快速访问**&#x200B;部分，单击 **Experience Manager**。
 1. 在左侧面板中点击 **Cloud Manager**。
 1. 选择所需的组织。
-1. 在&#x200B;**我的程序**&#x200B;控制台上，单击程序。
+1. 在&#x200B;**我的程序**&#x200B;控制台上，单击一个程序。
 
    在Cloud Manager中![我的程序页](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 

@@ -3,9 +3,9 @@ title: SPA Blueprint
 description: 本文档介绍了任何SPA框架都应该履行的一般且独立于框架的合同，以便您可以在AEM中实施可编辑的SPA组件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 SPA组件必须与页面模型同步，并根据对内容所做的任何更改进行更新。 必须使用使用动态元件的阵列来按照提供的页面模型结构即时实例化元件。
 
-### 元字段 {#meta-fields}
+### Meta字段 {#meta-fields}
 
 页面模型使用JSON模型导出器，它本身基于[Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可导出的sling模型显示以下字段列表，以启用基础库解释数据模型：
 
@@ -83,7 +83,7 @@ SPA组件必须与页面模型同步，并根据对内容所做的任何更改�
 * `:itemsOrder`：已排序的子项列表。 JSON映射对象不保证其字段的顺序。 通过同时具有映射和当前数组，API的使用者可以同时拥有这两种结构的好处
 * `:path`：项目的内容路径（位于表示页面的项目上）
 
-另请参阅[AEM Content Services快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)。
+另请参阅[AEM Content Services快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)。
 
 ### 特定于Framework的模块 {#framework-specific-module}
 

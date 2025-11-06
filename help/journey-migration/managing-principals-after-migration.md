@@ -2,8 +2,8 @@
 title: 迁移后管理主体
 description: 学习如何在 IMS 和 AEM 中设置用户和群组
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 100%
 
@@ -53,6 +53,7 @@ ht-degree: 100%
 创建资产收藏集或专用文件夹时还会自动创建一些组来管理对该资产内容的访问。如果在迁移的内容中提到这些组，它们就会被迁移，但不会被配置为直接关联到 IMS 组。在 AEM 中，它们仍然是“本地组”，并且不能通过 IMS 进行管理。
 
 由于这些群组不在 IMS 中，因此无法使用批量上传工具来创建用户作为其直接成员。同样在 AEM 中的 IMS 用户也可以单独添加到这些群组中，但批量添加需要额外的步骤。这里有一种方法可以实现这一点：
+
 * 在 Admin Console/IMS 中创建一个或多个新群组以访问收藏集/专用文件夹，并为 AEM 配置它们。
 * 以组成员的身份登录，以便在 AEM 中创建群组。
 * 对于已迁移的收藏集或专用文件夹，使用资产 UI 将新组添加为编辑者/所有者/查看者。

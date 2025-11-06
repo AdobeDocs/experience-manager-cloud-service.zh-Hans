@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 Microsoft®Office和PDF文档的所有数字资源、元数据和内容都将进行提取并使之可搜索。 搜索允许对资产进行复杂的筛选，并完全尊重适当的权限。 数字资产管理中的元数据详细介绍了元数据。
@@ -92,7 +92,7 @@ Date24/08/2021
 
    您可以根据&#x200B;**[!UICONTROL Name]** （按字母顺序）、**[!UICONTROL Created]**&#x200B;日期或&#x200B;**[!UICONTROL Modified]**&#x200B;日期，按升序或降序对标记结构进行排序。 在下图中，标记结构根据&#x200B;**[!UICONTROL Name]**&#x200B;按字母顺序排序。
 
-   ![添加标记](assets/add-tags-to-asset.png)
+   ![add-tags](assets/add-tags-to-asset.png)
 
 1. 单击&#x200B;**保存**&#x200B;以更新资源元数据更改。
 
@@ -100,7 +100,7 @@ Date24/08/2021
 
 * [编辑资源元数据](meta-edit.md)
 * [Assets中的智能标记](smart-tags.md)
-* [将标记谓词添加到搜索面板](/help/assets/search-facets.md/#adding-a-tags-predicate)
+* [将标记谓词添加到搜索面板](/help/assets/search-facets.md#adding-a-tags-predicate)
 
 ## 组织为收藏集 {#organize-as-collections}
 

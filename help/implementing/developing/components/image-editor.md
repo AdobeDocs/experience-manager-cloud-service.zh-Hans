@@ -3,8 +3,8 @@ title: 图像编辑器
 description: 图像编辑器是AEM的核心部分，组件可以使用该编辑器来促进内容作者处理图像。
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
@@ -52,7 +52,7 @@ MIME类型可以通过在单个插件的配置节点上设置`supportedMimeTypes
 
 例如，假设仅允许对GIF、JPEG、PNG、WEBP和TIFF图像使用裁切功能。
 
-然后，必须在图像组件的`cq:editConfig`节点上的插件的配置节点上将`supportedMimeTypes`属性设置为允许的MIME类型的字符串。
+然后，必须在图像组件的`supportedMimeTypes`节点上的插件的配置节点上将`cq:editConfig`属性设置为允许的MIME类型的字符串。
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

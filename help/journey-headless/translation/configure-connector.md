@@ -4,9 +4,9 @@ description: 了解如何将 AEM 连接到翻译服务。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 

@@ -1,5 +1,5 @@
 ---
-title: HTML5表单常见问题解答(FAQ)
+title: HTML5 Forms 常见问题解答（FAQ）
 description: 有关HTML5表单的布局、脚本支持和范围的常见问题解答(FAQ)。
 contentOwner: robhagat
 content-type: reference
@@ -10,15 +10,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
 
 
-# HTML5表单常见问题解答(FAQ){#frequently-asked-questions-faq-for-html-forms}
+# HTML5 Forms 常见问题解答（FAQ）{#frequently-asked-questions-faq-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -216,7 +216,7 @@ ht-degree: 0%
 
 1. HTML5 Forms是否多次执行初始化脚本和表单就绪事件？
 
-   回答：是，初始化脚本和表单就绪事件会执行多次，在服务器上至少执行一次，在客户端执行一次。 建议基于某些业务逻辑（表单或字段数据）编写初始化或表单：ready事件等脚本，以便基于数据和幂等状态（如果数据相同）执行操作。
+   回答：是，初始化脚本和表单就绪事件会执行多次，在服务器上至少执行一次，在客户端执行一次。 建议根据某些业务逻辑（表单或字段数据）编写初始化或表单:ready事件等脚本，以便根据数据和幂等状态（如果数据相同）执行操作。
 
 ### 设计XDP {#designing-xdp}
 

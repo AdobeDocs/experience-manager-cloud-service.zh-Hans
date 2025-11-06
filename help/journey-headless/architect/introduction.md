@@ -4,8 +4,8 @@ description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 全栈内容交付 {#full-stack}
 
-自易于使用的大型内容管理系统 (CMS) 兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
+自易于使用的大型内容管理系统（CMS）兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
 
 ![经典全栈 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序（PWA）等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 

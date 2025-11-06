@@ -3,9 +3,9 @@ title: SPA 中的复合组件
 description: 了解如何创建自己的复合组件，这些组件由使用AEM单页应用程序(SPA)编辑器的其他组件组成。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * 您的AEM开发实例正在带有示例项目的端口4502上本地运行。
 * 您已启用工作正常的外部React应用程序[以便在AEM](editing-external-spa.md)中进行编辑。
-* 使用RemotePage组件[&#128279;](remote-page.md)在AEM编辑器中加载React应用程序。
+* 使用RemotePage组件[在AEM编辑器](remote-page.md)中加载React应用程序。
 
 ## 将复合组件添加到SPA {#adding-composite-components}
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 首先，创建将构成复合组件的组件，即图像及其文本的组件。
 
 1. 在AEM项目中创建文本组件。
-1. 在组件的`editConfig`节点中，从项目中添加相应的`resourceType`。
+1. 在组件的`resourceType`节点中，从项目中添加相应的`editConfig`。
 
    ```text
     resourceType: 'wknd-spa/components/text' 
@@ -132,11 +132,11 @@ function Home() {
 
 在这种情况下，卡组件已在包含标题和图像节点的AEM项目中创建了。 子节点（文本和图像）具有相应的资源类型。
 
-卡组件![&#128279;](assets/composite-node-structure.png)的节点结构
+卡组件![的](assets/composite-node-structure.png)节点结构
 
 然后，您可以将其添加到SPA并检索其内容。
 
-1. 在SPA中为此创建相应的组件。 确保子组件映射到SPA项目中的相应AEM资源类型。 在此示例中，我们使用与上一个案例[&#128279;](#component-does-not-exist)中详细的相同的`AEMText`和`AEMImage`组件。
+1. 在SPA中为此创建相应的组件。 确保子组件映射到SPA项目中的相应AEM资源类型。 在此示例中，我们使用与上一个案例`AEMText`中详细的`AEMImage`相同的[和](#component-does-not-exist)组件。
 
    ```javascript
    import React from 'react';
@@ -162,7 +162,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 将创建的`wknd-spa/components/imagecard`组件添加到页面模板[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)中的容器组件允许的组件中。
+1. 将创建的`wknd-spa/components/imagecard`组件添加到页面模板[中的容器组件](/help/sites-cloud/authoring/page-editor/templates.md)允许的组件中。
 
 现在，可以在AEM编辑器中直接将`imagecard`组件添加到容器中。
 
@@ -180,4 +180,4 @@ function Home() {
 
 ![节点结构中的复合路径](assets/composite-path.png)
 
-`AEMCard`组件与上一个用例[&#128279;](#content-does-not-exist)中定义的相同。 此处，在AEM项目的上述位置定义的内容包含在SPA中。
+`AEMCard`组件与上一个用例[中定义的](#content-does-not-exist)相同。 此处，在AEM项目的上述位置定义的内容包含在SPA中。

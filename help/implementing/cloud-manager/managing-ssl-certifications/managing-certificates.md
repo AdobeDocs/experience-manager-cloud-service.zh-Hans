@@ -4,8 +4,8 @@ description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以�
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 13%
@@ -92,7 +92,7 @@ Cloud Manager概述了程序的所有证书的状态。
 
 1. 在&#x200B;**服务**&#x200B;标题下，单击![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL证书**。
 
-1. 在&#x200B;**SSL证书**&#x200B;页面上，单击要重命名其&#x200B;**Adobe托管的** SSL证书的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在&#x200B;**SSL证书**&#x200B;页面上，单击要重命名其![Adobe托管的](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)SSL证书的行末尾的&#x200B;**更多图标**。
 
 1. 在下拉菜单中，单击&#x200B;**重命名**。
 

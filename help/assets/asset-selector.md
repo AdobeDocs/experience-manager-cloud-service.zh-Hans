@@ -5,7 +5,7 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5357'
 ht-degree: 38%
@@ -473,7 +473,7 @@ URL格式：
 +++
 
 +++**已准备好挑选动态投放URL**
-所有选定资源都由用作JSON对象的`handleSelection`函数承载。 例如，`JsonObj`。动态投放URL是通过组合以下运营商创建的：
+所有选定资源均由用作JSON对象的`handleSelection`函数承载。 例如，`JsonObj`。动态投放URL是通过组合以下运营商创建的：
 
 | 对象 | JSON |
 |---|---|
@@ -486,7 +486,7 @@ URL格式：
 
 ![动态投放URL](assets/dynamic-delivery-url.png)
 
-* **缩略图：**&#x200B;缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
 以下演绎版集可用于PDF类型资源：
 在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
 
@@ -505,7 +505,7 @@ URL格式：
 
 在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **视频：**&#x200B;您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -915,7 +915,7 @@ const showToast = {
 
 资产选择器允许您添加标记选取器过滤器。 它支持将所有相关标记组合到特定标记组的标记组。 此外，您还可以通过它选择与要查找的资源对应的其他标记。 此外，您还可以在上下文调用过滤器下设置您最常用的默认标记组，以便您能够随时访问它们。
 
->
+>[!NOTE]
 >
 > * 您需要添加上下文调用代码片段以在搜索中启用标记过滤器。
 > * 必须使用与标记组类型`(property=xcm:keywords.id=)`对应的名称属性。

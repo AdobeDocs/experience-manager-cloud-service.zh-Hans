@@ -3,8 +3,8 @@ title: 内容复制工具
 description: 内容复制工具使用户能够按需将可变内容从其AEM as a Cloud Service上的生产环境复制到较低环境中，以供测试之用。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 31%
@@ -43,8 +43,8 @@ ht-degree: 31%
 
 | 内容复制功能 | AEM管理员组 | 部署管理员角色 |
 |---|---|---|
-| 创建和修改[内容集](#create-content-set) | 非必填 | 必填 |
-| 开始或取消[内容复制过程](#copy-content) | 必填 | 必填 |
+| 创建和修改[内容集](#create-content-set) | 非必填 | 必需 |
+| 开始或取消[内容复制过程](#copy-content) | 必需 | 必需 |
 
 有关权限以及如何设置这些权限的更多详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)。
 

@@ -3,10 +3,10 @@ title: 可编辑模板
 description: 了解在创建页面、定义其初始内容、结构化内容、创作策略和布局时如何使用可编辑模板。
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 4%
 
 创建可编辑模板时，您可以：
 
-1. 为模板[&#128279;](#template-folders)创建一个文件夹。 这并非强制要求，但建议采用最佳实践。
+1. 为模板[创建一个](#template-folders)文件夹。 这并非强制要求，但建议采用最佳实践。
 1. 选择[模板类型](#template-type)。 复制该模板以创建[模板定义](#template-definitions)。
 
    >[!NOTE]
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->切勿在模板中输入任何必须国际化的信息。 出于内部化的目的，建议使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)的本地化功能。
+>切勿在模板中输入任何必须国际化的信息。 出于内部化的目的，建议使用核心组件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)本地化功能。
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ ht-degree: 4%
 >
 >即使您可以嵌套文件夹，但当用户在&#x200B;**模板**&#x200B;控制台中查看文件夹时，它们将显示为平面结构。
 
-在标准AEM实例中，`global`文件夹已存在于模板控制台中。 该文件夹会保存默认模板，如果在当前文件夹中未找到策略和/或模板类型，则该文件夹会充当备用。 您可以将默认模板添加到此文件夹或创建文件夹（推荐）。
+在标准AEM实例中，“模板”控制台中已存在`global`文件夹。 该文件夹会保存默认模板，如果在当前文件夹中未找到策略和/或模板类型，则该文件夹会充当备用。 您可以将默认模板添加到此文件夹或创建文件夹（推荐）。
 
 >[!NOTE]
 >
@@ -370,9 +370,9 @@ When creating an editable template, the value is copied from the template type t
 如果您已创建可作为其他模板基础的模板，则可以将此模板作为模板类型复制。
 
 1. 创建模板，就像创建任何页面模板一样。 请参阅[创建可通过页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)。 这将用作模板类型的基础。
-1. 使用CRXDE Lite，将创建的模板从`templates`节点复制到[模板文件夹](#template-folders)下的`template-types`节点。
-1. 从[模板文件夹](#template-folders)下的`templates`节点中删除模板。
-1. 在`template-types`节点下的模板副本中，从所有`jcr:content`节点中删除所有`cq:template`和`cq:templateType`属性。
+1. 使用CRXDE Lite将创建的模板从`templates`节点复制到`template-types`模板文件夹[下的](#template-folders)节点。
+1. 从`templates`模板文件夹[下的](#template-folders)节点中删除模板。
+1. 在`template-types`节点下的模板副本中，从所有`cq:template`节点中删除所有`cq:templateType`和`jcr:content`属性。
 
 您还可以在GitHub上使用示例可编辑模板作为基础来开发自己的模板类型。
 
@@ -433,7 +433,7 @@ GITHUB上的代码
    * ` [policies](#policies)`
    * `thumbnail.png`
 
-### jcr：content {#jcr-content}
+### jcr:content {#jcr-content}
 
 此节点保存模板的属性：
 
@@ -467,13 +467,13 @@ GITHUB上的代码
 
 ### 布局 {#layout}
 
-在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局](/help/sites-cloud/administering/responsive-layout.md)，内容作者可以在页面上配置该布局[&#128279;](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
+在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局](/help/sites-cloud/administering/responsive-layout.md)，内容作者可以在页面上配置该布局[](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
 
 ### 内容策略 {#content-policies}
 
 内容策略定义组件的设计属性。 例如，可用的组件或最小/最大尺寸。这些选项适用于模板（以及使用该模板创建的页面）。 可以在模板编辑器中创建和选择内容策略。
 
-* `root`节点上的属性`cq:policy`
+* `cq:policy`节点上的属性`root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 为页面的段落系统提供内容策略的相对引用。
 
@@ -496,12 +496,11 @@ GITHUB上的代码
 
    在使用模板之前，必须通过以下任一方式启用模板：
 
-   * 从&#x200B;**模板**&#x200B;控制台[启用模板](/help/sites-cloud/authoring/page-editor/templates.md)。
+   * 从[模板](/help/sites-cloud/authoring/page-editor/templates.md)控制台&#x200B;**启用模板**。
 
    * 正在设置`jcr:content`节点上的状态属性。
 
       * 例如，在：
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 定义属性：
@@ -514,7 +513,6 @@ GITHUB上的代码
 
    * [在子分支的相应页面或根页面的&#x200B;**页面属性**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)&#x200B;上定义允许的模板路径。
    * 设置属性：
-
      `cq:allowedTemplates`
 在所需分支的`jcr:content`节点上。
 
@@ -547,7 +545,7 @@ GITHUB上的代码
 
 * **模板**：
 
-   * 引用其`jcr:content`节点的`cq:template`属性以访问与该页面对应的模板。
+   * 引用其`cq:template`节点的`jcr:content`属性以访问与该页面对应的模板。
 
 * **组件**：
 
@@ -563,17 +561,17 @@ GITHUB上的代码
 
 以下属性确定是否允许将模板`T`用于要作为页面`P`的子页面放置的新页面。 以下每个属性都是一个多值字符串，其中包含零个或多个用于与路径匹配的正则表达式：
 
-* `P`的`jcr:content`子节点或`P`的上级的`cq:allowedTemplates`属性。
+* `cq:allowedTemplates`的`jcr:content`子节点或`P`的上级的`P`属性。
 
-* `T`的`allowedPaths`属性。
+* `allowedPaths`的`T`属性。
 
-* `T`的`allowedParents`属性。
+* `allowedParents`的`T`属性。
 
-* `P`模板的`allowedChildren`属性。
+* `allowedChildren`模板的`P`属性。
 
 评估工作如下：
 
-* 以`P`开头的页面层次结构升序时找到的第一个非空`cq:allowedTemplates`属性与`T`的路径匹配。 如果没有任何匹配的值，则会拒绝`T`。
+* 以`cq:allowedTemplates`开头的页面层次结构升序时找到的第一个非空`P`属性与`T`的路径匹配。 如果没有任何匹配的值，则会拒绝`T`。
 
 * 如果`T`具有非空的`allowedPaths`属性，但没有值与`P`的路径匹配，则`T`被拒绝。
 
@@ -601,14 +599,14 @@ GITHUB上的代码
 >
 >有关示例，请参阅[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)内容： `/content/wknd/jcr:content`
 >
->属性`allowedPaths`、`allowedParents`和`allowedChildren`也可以放在模板上以定义更复杂的规则。 但是，如果可能，如果需要进一步限制允许的模板，在网站的子区域上定义其他`cq:allowedTemplates`属性会更简单&#x200B;*许多*。
+>属性`allowedPaths`、`allowedParents`和`allowedChildren`也可以放在模板上以定义更复杂的规则。 但是，如果可能，如果需要进一步限制允许的模板，在网站的子区域上定义其他&#x200B;*属性会更简单*&#x200B;许多`cq:allowedTemplates`。
 >
 >另一个优点是`cq:allowedTemplates`属性可由作者在&#x200B;**页面属性**&#x200B;的&#x200B;**高级**&#x200B;选项卡中更新。 无法使用（标准）UI更新其他模板属性，因此需要开发人员维护规则和每次更改的代码部署。
 
 #### 限制子页面中使用的模板 {#limiting-templates-used-in-child-pages}
 
-要限制哪些模板可用于在给定页面下创建子页面，请使用页面`jcr:content`节点的`cq:allowedTemplates`属性指定允许作为子页面的模板列表。 列表中的每个值都必须是允许的子页面的模板的绝对路径，例如`/apps/wknd/templates/page-content`。
+要限制哪些模板可用于在给定页面下创建子页面，请使用页面`cq:allowedTemplates`节点的`jcr:content`属性指定允许作为子页面的模板列表。 列表中的每个值都必须是允许的子页面的模板的绝对路径，例如`/apps/wknd/templates/page-content`。
 
-您可以在模板的`jcr:content`节点上使用`cq:allowedTemplates`属性，将此配置应用于使用此模板的所有已创建页面。
+您可以在模板的`cq:allowedTemplates`节点上使用`jcr:content`属性，将此配置应用于使用此模板的所有已创建页面。
 
 如果要添加更多约束（例如，关于模板层次结构），可以在模板上使用`allowedParents/allowedChildren`属性。 然后，您可以明确指定从模板T创建的页面必须是从模板T创建的页面的父项/子项。

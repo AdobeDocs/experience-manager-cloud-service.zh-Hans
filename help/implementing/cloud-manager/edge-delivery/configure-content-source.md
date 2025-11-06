@@ -2,10 +2,10 @@
 title: 配置您的内容源
 description: 了解如何为您的 Edge Delivery Site 配置内容源。在 Helix 4 架构中使用 `fstab.yaml`，或在 Helix 5 架构中使用 Cloud Manager 中的引导向导（或配置服务 API）。
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 71618a5603328990603db2ee7554048c9020a883
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 

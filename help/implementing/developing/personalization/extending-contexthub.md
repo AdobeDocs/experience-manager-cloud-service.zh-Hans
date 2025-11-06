@@ -3,8 +3,8 @@ title: 扩展 ContextHub
 description: 当提供的ContextHub存储和模块不符合您的解决方案要求时，定义这些存储和模块的新类型
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -45,11 +45,11 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-实际上，您的自定义商店候选者将定义其他功能或覆盖商店的初始配置。 `/libs/granite/contexthub/components/stores`下的存储库中安装了多个[示例存储候选项](sample-stores.md)。
+实际上，您的自定义商店候选者将定义其他功能或覆盖商店的初始配置。 [下的存储库中安装了多个](sample-stores.md)示例存储候选项`/libs/granite/contexthub/components/stores`。
 
 ### 注册ContextHub存储候选 {#registering-a-contexthub-store-candidate}
 
-注册存储候选项，以将其与ContextHub框架集成并允许从中创建存储。 要注册存储候选，请使用`ContextHub.Utils.storeCandidates`类的[`registerStoreCandidate`](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)函数。
+注册存储候选项，以将其与ContextHub框架集成并允许从中创建存储。 要注册存储候选，请使用[`registerStoreCandidate`](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)类的`ContextHub.Utils.storeCandidates`函数。
 
 注册候选商店时，需提供商店类型的名称。 从候选项创建存储时，可以使用存储类型标识存储所基于的候选项。
 
@@ -64,14 +64,14 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 
 ## 创建ContextHub UI模块类型 {#creating-contexthub-ui-module-types}
 
-当随ContextHub[&#128279;](sample-modules.md)安装的模块类型不符合您的要求时，创建自定义UI模块类型。 要创建UI模块类型，请通过扩展`ContextHub.UI.BaseModuleRenderer`类并在`ContextHub.UI`中注册来创建UI模块渲染器。
+当随ContextHub[安装的](sample-modules.md)模块类型不符合您的要求时，创建自定义UI模块类型。 要创建UI模块类型，请通过扩展`ContextHub.UI.BaseModuleRenderer`类并在`ContextHub.UI`中注册来创建UI模块渲染器。
 
 要创建UI模块渲染器，请创建包含用于渲染UI模块的逻辑的`Class`对象。 类至少必须执行以下操作：
 
 * 扩展`ContextHub.UI.BaseModuleRenderer`类。 此类是所有UI模块渲染器的基本实现。 `Class`对象定义了一个名为`extend`的属性，您使用该属性将此类命名为正在扩展的类。
 * 提供默认配置。 创建`defaultConfig`属性。 此属性是一个对象，其中包含为[`contexthub.base`](sample-modules.md#contexthub-base-ui-module-type) UI模块定义的属性以及您需要的任何其他属性。
 
-`ContextHub.UI.BaseModuleRenderer`的源位于`/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`。  要注册渲染器，请使用`ContextHub.UI`类的[`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender)方法。 您需要提供模块类型的名称。 当管理员基于此渲染器创建UI模块时，他们会指定此名称。
+`ContextHub.UI.BaseModuleRenderer`的源位于`/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`。  要注册渲染器，请使用[`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender)类的`ContextHub.UI`方法。 您需要提供模块类型的名称。 当管理员基于此渲染器创建UI模块时，他们会指定此名称。
 
 在自动执行的匿名函数中创建并注册renderer类。 以下示例基于`contexthub.browserinfo` UI模块的源代码。 此UI模块是`ContextHub.UI.BaseModuleRenderer`类的简单扩展。
 
@@ -106,4 +106,4 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 contexthub.module.[moduleType]
 ```
 
-类别的`[moduleType]`部分是在其中注册了模块渲染器的`moduleType`。 例如，对于`contexthub.browserinfo`的`moduleType`，客户端库文件夹的类别必须为`contexthub.module.contexthub.browserinfo`。
+类别的`[moduleType]`部分是在其中注册了模块渲染器的`moduleType`。 例如，对于`moduleType`的`contexthub.browserinfo`，客户端库文件夹的类别必须为`contexthub.module.contexthub.browserinfo`。

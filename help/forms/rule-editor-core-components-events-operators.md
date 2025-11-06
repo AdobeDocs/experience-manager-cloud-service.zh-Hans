@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 2%
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细了解一下每种规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅[编写规则](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
 
-#### [!UICONTROL 时间] {#whenruletype}
+#### [!UICONTROL 如果] {#whenruletype}
 
 **[!UICONTROL When]**&#x200B;规则类型遵循&#x200B;**condition-action-alternate action**&#x200B;规则结构，有时只遵循&#x200B;**condition-action**&#x200B;结构。 在此规则类型中，首先指定评估条件，然后指定满足该条件时要触发的操作(`True`)。 在使用When规则类型时，您可以使用多个AND和OR运算符来创建[嵌套表达式](/help/forms/rule-editor-core-components-usecases.md#nested-expressions)。
 
@@ -169,6 +169,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 有关在表单数据模型(FDM)中配置服务的详细信息，请参阅[[!DNL Experience Manager Forms] 数据集成](data-integration.md)。
 
 **[!UICONTROL Set Property]**&#x200B;规则类型允许您根据条件操作设置指定对象的属性值。 您可以将属性设置为以下项之一：
+
 * 可见（布尔值）
 * label.value（字符串）
 * label.visible（布尔值）
@@ -351,7 +352,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 异步函数调用]
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 **[!UICONTROL 异步函数调用]**&#x200B;规则类型允许您执行异步函数。 它使您能够启动独立于主执行线程的函数调用，允许其他进程继续运行，而无需等待异步函数完成。
 

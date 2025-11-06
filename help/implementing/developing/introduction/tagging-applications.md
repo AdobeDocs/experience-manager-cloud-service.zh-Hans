@@ -3,8 +3,8 @@ title: 在 AEM 应用程序中生成标记
 description: 以编程方式处理自定义AEM应用程序中的标记或扩展标记
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -45,7 +45,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-在典型的Sling上下文中，您还可以从`ResourceResolver`适应`TagManager`：
+在典型的Sling上下文中，您还可以从`TagManager`适应`ResourceResolver`：
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -53,7 +53,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### 检索标记对象 {#retrieving-a-tag-object}
 
-通过解析现有标记或创建现有标记，可以通过`TagManager`检索`Tag`：
+通过解析现有标记或创建现有标记，可以通过`Tag`检索`TagManager`：
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -61,7 +61,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-对于基于JCR的实现（将`Tags`映射到JCR `Nodes`），如果您有资源（例如`/content/cq:tags/default/my/tag`），则可以直接使用Sling的`adaptTo`机制：
+对于基于JCR的实现（将`Tags`映射到JCR `Nodes`），如果您有资源（例如`adaptTo`），则可以直接使用Sling的`/content/cq:tags/default/my/tag`机制：
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -140,7 +140,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 可以使用不同的语言定义标记`title`。 然后，将区分语言的属性添加到标记节点。 此属性的格式为`jcr:title.<locale>`，例如，法语翻译为`jcr:title.fr`。 `<locale>`必须为小写的ISO区域设置字符串，并使用下划线(`_`)而不是连字符/短划线(`-`)，例如： `de_ch`。
 
-例如，将&#x200B;**Animals**&#x200B;标记添加到&#x200B;**Products**&#x200B;页面时，值`stockphotography:animals`将添加到节点`/content/wknd/en/products/jcr:content`的属性`cq:tags`。 将从标记节点中引用翻译。
+例如，将&#x200B;**Animals**&#x200B;标记添加到&#x200B;**Products**&#x200B;页面时，值`stockphotography:animals`将添加到节点`cq:tags`的属性`/content/wknd/en/products/jcr:content`。 将从标记节点中引用翻译。
 
 服务器端API具有本地化的`title`相关方法：
 
@@ -163,7 +163,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 以下过程介绍了如何向&#x200B;**标记编辑**&#x200B;对话框添加新语言（例如，芬兰语）：
 
-1. 在&#x200B;**CRXDE**&#x200B;中，编辑节点`/content/cq:tags`的多值属性`languages`。
+1. 在&#x200B;**CRXDE**&#x200B;中，编辑节点`languages`的多值属性`/content/cq:tags`。
 1. 添加表示芬兰语言环境的`fi_fi`并保存更改。
 
 现在，在&#x200B;**标记**&#x200B;控制台中编辑标记时，在页面属性的标记对话框和&#x200B;**编辑标记**&#x200B;对话框中可以使用芬兰语。

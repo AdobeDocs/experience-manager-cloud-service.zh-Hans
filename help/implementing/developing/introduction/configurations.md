@@ -3,8 +3,8 @@ title: 配置和配置浏览器
 description: 了解Adobe Experience Manager (AEM)配置以及它们如何管理AEM中的工作区设置。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -103,7 +103,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
    >
    >创建配置后，无法取消选择功能。
 
-1. 使用&#x200B;**有效权限**&#x200B;按钮查看角色矩阵以及当前授予配置的权限。
+1. 使用&#x200B;**有效权限**按钮查看角色矩阵以及当前授予配置的权限。
    ![有效权限窗口](assets/configuration-effective-permissions.png)
 1. 要分配新权限，请在&#x200B;**添加新权限**&#x200B;部分的&#x200B;**选择用户或组**&#x200B;字段中输入用户或组名称。
    * **选择用户或组**&#x200B;字段提供基于现有用户和角色的自动完成功能。
@@ -161,9 +161,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 在`/conf`内跳转，跟随引用，查看是否存在`/conf/wknd`节点。 这是配置。 它的查找对应用程序代码是透明的。 此示例代码从未有它的专用引用，它隐藏在`Conf`对象后面。 要应用哪种配置，可通过JCR内容进行控制。
 
-您会看到该配置包含一个名为`settings`的固定节点，该节点包含实际项目，包括您在此情况下所需的`dam/imageserver`。 此类项目可被认为是“设置文档”，由包含保存实际内容的`jcr:content`的`cq:Page`表示。
+您会看到该配置包含一个名为`settings`的固定节点，该节点包含实际项目，包括您在此情况下所需的`dam/imageserver`。 此类项目可被认为是“设置文档”，由包含保存实际内容的`cq:Page`的`jcr:content`表示。
 
-最后，您会看到此示例代码所需的属性`bgkcolor`。 从`getItem`返回的`ValueMap`基于页面的`jcr:content`节点。
+最后，您会看到此示例代码所需的属性`bgkcolor`。 从`ValueMap`返回的`getItem`基于页面的`jcr:content`节点。
 
 ### 配置分辨率 {#configuration-resolution}
 
@@ -198,13 +198,13 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用配置 {#using-configurations}
 
-AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上一个示例[&#128279;](#developer-example)中所述。
+AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上一个示例[中所述](#developer-example)。
 
 有关上下文感知配置、示例及其使用方式的更多详细信息，请参阅[Sling文档](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)。
 
 ### ConfMgr Web控制台 {#confmgr-web-console}
 
-为了调试和测试目的，`https://<host>:<port>/system/console/conf`处有一个&#x200B;**ConfMgr** Web控制台，该控制台可以显示给定路径/项的配置。
+为了调试和测试目的，**处有一个** ConfMgr`https://<host>:<port>/system/console/conf` Web控制台，该控制台可以显示给定路径/项的配置。
 
 ![ConfMgr](assets/configuration-confmgr.png)
 
@@ -218,7 +218,7 @@ AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用
 
 ### 上下文感知配置Web控制台 {#context-aware-web-console}
 
-为了调试和测试目的，`https://<host>:<port>/system/console/slingcaconfig`处有一个&#x200B;**上下文感知配置** Web控制台，该控制台允许查询存储库中的上下文感知配置并查看其属性。
+为了调试和测试目的，**处有一个**&#x200B;上下文感知配置`https://<host>:<port>/system/console/slingcaconfig` Web控制台，该控制台允许查询存储库中的上下文感知配置并查看其属性。
 
 ![上下文感知配置Web控制台](assets/configuration-context-aware-console.png)
 

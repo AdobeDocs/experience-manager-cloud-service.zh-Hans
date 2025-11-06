@@ -5,7 +5,7 @@ keywords: 如何为自适应表单连接SharePoint列表？ 、提交到SharePoi
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 30%
@@ -59,6 +59,7 @@ ht-degree: 30%
 >[!NOTE]
 >
 > 在Microsoft® SharePoint List中，不支持以下列类型：
+>
 > * 图像列
 > * 元数据列
 > * 人员列

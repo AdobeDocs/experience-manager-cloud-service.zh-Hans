@@ -3,9 +3,9 @@ title: 用于通用编辑器的 SecurBank 应用程序示例
 description: 通过使用 SecurBank 应用程序获得实践经验，深入了解通用编辑器，此应用程序旨在展示通用编辑器的强大功能、灵活性和可用性，以加速内容创作。
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
 

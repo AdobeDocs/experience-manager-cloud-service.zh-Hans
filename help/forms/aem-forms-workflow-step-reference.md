@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签署文档步骤，生成打印输出步骤，生成非交互式PDF输出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 本文 |
 
 您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以[在模型中包含各种AEM工作流步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem)。
@@ -121,7 +121,7 @@ ht-degree: 0%
     -->
 
 * **[!UICONTROL 代理人]** > **[!UICONTROL 分配选项]**：指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
-* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[创建自定义Adobe Experience Manager动态参与者步骤](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans&CID=RedirectAEMCommunityKautuk)。
+* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[创建自定义Adobe Experience Manager动态参与者步骤](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 参与者]**：在&#x200B;**[!UICONTROL 参与者选择器]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;选项时，该字段可用。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 
@@ -177,6 +177,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 **[!UICONTROL 输入文档]**：输入文档可以相对于有效负荷，具有绝对路径，可以作为有效负荷提供，或存储在Document数据类型的变量中。
 
 **[!UICONTROL 转换选项]**：使用此属性，指定了将PDF文档转换为PDF/A文档的设置。 此选项卡下可用的各种选项包括：
+
 * **[!UICONTROL 符合性]**：指定输出PDF/A文档必须符合的标准。 它支持不同的PDF标准，例如PDF/A-1b、PDF/A-2b或PDF/A-3b。
 * **[!UICONTROL 结果级别]**：将转换输出的结果级别指定为PassFail、Summary或Detailed。
 * **[!UICONTROL 色彩空间]**：指定预定义的色彩空间，即S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，它们可用于输出PDF/A文件。
@@ -189,7 +190,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 使用电子邮件步骤发送电子邮件，例如，包含记录文档、自适应表单<!-- , link of an interactive communication-->链接或附加的PDF文档的电子邮件。 发送电子邮件步骤支持[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
 
-电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
+电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
 
 电子邮件步骤具有以下属性：
 
@@ -255,11 +256,13 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 调用DDX步骤具有以下属性：
 
 **[!UICONTROL 输入文档]**：用于设置输入文档的属性。 此选项卡下可用的各种选项包括：
+
 * **[!UICONTROL 使用]**&#x200B;指定DDX：指定相对于有效负荷的输入文档、具有绝对路径、可以作为有效负荷提供，或存储在Document数据类型的变量中。
 * **[!UICONTROL 从有效负荷创建映射]**：将有效负荷文件夹下的所有文档添加到输入文档的映射中，以便在Assembler中调用API。 每个文档的节点名称在映射中用作键。
 * **[!UICONTROL 输入文档的映射]**：选项用于使用&#x200B;**[!UICONTROL ADD]**&#x200B;按钮添加多个条目。 每个条目表示映射中的文档键和文档的源。
 
 **[!UICONTROL 环境选项]**：此选项用于设置调用API的处理设置。 此选项卡下可用的各种选项包括：
+
 * **[!UICONTROL 仅验证]**：检查输入DDX文档的有效性。
 * **[!UICONTROL 因错误]**&#x200B;而失败：布尔值，指示调用API服务是否失败（如果存在错误）。 默认情况下，其值设置为False。
 * **[!UICONTROL First Bates编号]**：指定自动递增的编号。 此自动递增数字将自动显示在每个连续页面上。
@@ -270,6 +273,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 >环境选项与HTTP API保持同步。
 
 **[!UICONTROL 输出文档]**：指定保存输出文件的位置。 此选项卡下可用的各种选项包括：
+
 * **[!UICONTROL 将输出保存在有效负荷中]**：将输出文档保存在有效负荷文件夹中，如果有效负荷是文件，则覆盖有效负荷。
 * **[!UICONTROL 输出文档的映射]**：通过为每个文档添加一个条目，指定显式保存每个文档文件的位置。 每个条目表示文档以及保存文档的位置。 如果有多个输出文档，则使用此选项。
 
@@ -559,7 +563,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 区域设置]**：指定用于生成PDF文档的语言。 如果提供文本值，请从列表中选择一种语言或选择以下值之一：
    * **[!UICONTROL 要使用服务器默认值]**：
-（默认）使用[!DNL AEM Forms]服务器上配置的区域设置。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅[Designer帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
+（默认）使用[!DNL AEM Forms]服务器上配置的区域设置。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅[Designer帮助](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
 
    * **[!UICONTROL 要使用自定义值]**：
 在文本框中键入区域设置代码，或选择包含区域设置代码的字符串变量。 有关支持的区域设置代码的完整列表，请参阅https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。

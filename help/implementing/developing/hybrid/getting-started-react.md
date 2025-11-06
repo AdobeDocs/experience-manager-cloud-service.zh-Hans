@@ -3,9 +3,9 @@ title: 在AEM中使用React快速入门SPA
 description: 本文介绍了一个SPA应用程序示例，解释SPA是如何进行组合，允许您通过React框架快速启动和运行自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 6%
@@ -70,7 +70,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-有关详细信息，请参阅GitHub[&#128279;](https://github.com/wcm-io-frontend/aem-clientlib-generator)上的aem-clientlib-generator。
+有关详细信息，请参阅GitHub[上的](https://github.com/wcm-io-frontend/aem-clientlib-generator)aem-clientlib-generator。
 
 `aem-clientlib-generator`在`clientlib.config.js`文件中配置如下。
 
@@ -111,7 +111,7 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 

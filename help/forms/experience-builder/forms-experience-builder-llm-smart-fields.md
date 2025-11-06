@@ -4,14 +4,14 @@ description: 了解如何使用适用于地理数据、业务分类和行业标�
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 24%
 
 ---
-
 
 # Forms Experience Builder中的LLM增强型智能字段 {#llm-enhanced-smart-fields}
 
@@ -292,8 +292,7 @@ LLM增强型智能字段是表单字段，它们使用AI的内置知识库自动
 
 ## 相关文章
 
-* [Forms Experience Builder快速入门](forms-experience-builder-getting-started.md)
+* [Forms Experience Builder 快速入门指南](forms-experience-builder-getting-started.md)
 * [AI支持的表单创建](forms-experience-builder-prompt-examples-library.md)
 * [规则创建和业务逻辑](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [表单提交和集成](form-submission-integration.md)
-

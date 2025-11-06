@@ -4,8 +4,8 @@ description: 了解如何在使用Cloud Manager时管理多个Git存储库。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: b8b1748f9c50178fbcb167370c53285b55d809b1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 35%

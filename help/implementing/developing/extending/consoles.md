@@ -3,11 +3,11 @@ title: 自定义控制台
 description: 了解 AEM 提供的用于自定义创作实例控制台的不同选项。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 87%
+source-wordcount: '515'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ Clientlib 允许您扩展默认实现，以提供新功能，同时重新使用�
 
 ## 叠加 {#overlays}
 
-叠加基于节点定义，允许您将 `/libs` 下的标准功能与 `/apps` 下的自定义功能叠加。创建叠加时，不需要原件的 1:1 副本，因为[&#x200B; Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)允许继承。
+叠加基于节点定义，允许您将 `/libs` 下的标准功能与 `/apps` 下的自定义功能叠加。创建叠加时，不需要原始文件的1:1副本，因为[Sling资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)允许继承。
 
 可以通过多种方式使用叠加来扩展您的 AEM 控制台。以下部分提供了几个示例。
 

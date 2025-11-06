@@ -1,10 +1,10 @@
 ---
-title: 元数据管理和最佳实践
+title: 元数据管理和最佳做法
 description: 了解元数据最佳实践以有效管理您的数字资源。
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -16,7 +16,7 @@ metadata best practices
 aem metadata 
 experience manager metadata-->
 
-# 元数据管理和最佳实践 {#metadata-best-practices}
+# 元数据管理和最佳做法 {#metadata-best-practices}
 
 要让您的企业脱颖而出，吸引更多客户，利用高质量的视觉效果（如图像、视频和其他数字资产）至关重要。 要实现此目的，您需要一个流程，用于向所有数字资源添加元数据，使其可轻松搜索。 元数据是提供有关数字资源的基本详细信息（包括资源的名称、类型、在存储库中的位置、修改日期和关联的标记）的数据。 元数据可简化资产管理，提高可搜索性和可访问性，并确保有效的版本控制。
 
@@ -34,7 +34,7 @@ experience manager metadata-->
 * 文件大小
 * 格式化
 * 解决方法
-* 维度
+* 尺寸
 * 颜色模式
 
 ### 信息元数据
@@ -97,7 +97,7 @@ experience manager metadata-->
 
 >[!NOTE]
 >
->了解如何[管理数字资源的元数据](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hans)。
+>了解如何[管理数字资源的元数据](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)。
 
 ### 与元数据策略一致
 
@@ -107,13 +107,15 @@ experience manager metadata-->
 
 以下是一些可遵循的最佳实践：
 
-* **避免出现重复值：**&#x200B;如果您有一个营销活动中的图像集合，请使用一致的名称并避免重复。<br>
-例如，不要使用重复的名称（如*campaign_image_001*&#x200B;和&#x200B;*campaign_image_002*），而要实施系统化的命名惯例（如&#x200B;*event_promotion*&#x200B;和&#x200B;*product_launch*），以确保标识清晰、有序。
+* **避免出现重复值：**&#x200B;如果您有一个营销活动中的图像集合，请使用一致的名称并避免重复。
 
-* **有效使用控制词汇：**&#x200B;通过为标记使用标准化术语来实现控制词汇。 了解如何有效实施[AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md)。  <br>
-例如，在为图像标记主题以保持系统顺序时，始终使用诸如*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;之类的术语。
+  例如，不要使用重复名称，如&#x200B;*campaign_image_001*&#x200B;和&#x200B;*campaign_image_002*，而要实施系统化的命名惯例，如&#x200B;*event_promotion*&#x200B;和&#x200B;*product_launch*，以确保标识清晰有序地显示。
 
-* **保持准确性和完整性：**&#x200B;要保持元数据的一致性，准确性、完整性和跨各种源的一致性至关重要。
+* **有效使用控制词汇：**&#x200B;通过为标记使用标准化术语来实现控制词汇。 了解如何有效实施[AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md)。
+
+  例如，在为图像标记主题以保持系统顺序时，始终使用诸如&#x200B;*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;之类的术语。
+
+* **保持准确性和完整性：**要保持元数据的一致性，准确性、完整性和跨各种源的一致性至关重要。
 例如，将元数据添加到PDF文档时，请验证诸如作者姓名和关键字等详细信息是否准确且完整。
 
 #### 视频：将批量元数据添加到资源
@@ -136,9 +138,9 @@ experience manager metadata-->
    1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 使用添加的关键字搜索资源。 该资源会出现在排名最前的搜索结果中。
 
-  了解如何[提升Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)中的搜索量。
+  了解如何[提升Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中的搜索量。
 
-* **自定义元数据字段：**&#x200B;自定义您的元数据字段以捕获有关资源的其他信息。 例如，为项目详细信息、版权信息或任何其他增强搜索功能的相关数据添加特定字段。 了解如何在Experience Manager Assets中编辑或添加自定义元数据[&#128279;](meta-edit.md)。
+* **自定义元数据字段：**&#x200B;自定义您的元数据字段以捕获有关资源的其他信息。 例如，为项目详细信息、版权信息或任何其他增强搜索功能的相关数据添加特定字段。 了解如何在Experience Manager Assets中编辑或添加自定义元数据[。](meta-edit.md)
 
 
 * **元数据验证：**&#x200B;对元数据条目实施验证检查以确保一致性和准确性。 使用受控词汇表可以使验证过程更加顺畅，减少条目不清晰或不一致的几率。 这可能涉及为某些元数据属性设置准则，以避免信息模糊或不一致。
@@ -162,8 +164,8 @@ experience manager metadata-->
 
 ### 分析内容历程
 
-检查内容供应链以查找元数据源，并让所有利益相关者从头开始参与，以获得全面的最佳实践方法。 让不同的工作人员参与，以确保整个组织的全面支持。 <br>在各个阶段合并元数据，以分担在上载期间提供资源详细信息的责任。 例如，集成[!DNL Experience Manager Assets]和[!DNL Workfront]在元数据管理、提高内容创建和管理中的效率和协作方面提供了巨大的好处。 此集成确保链接资源的有效元数据同步，在[!DNL Workfront]中进行更改时自动更新项目详细信息。
+检查内容supply chain以查找元数据源，并让所有利益相关者从头开始参与，以获得全面的最佳实践方法。 让不同的工作人员参与，以确保整个组织的全面支持。 <br>在各个阶段合并元数据，以分担在上载期间提供资源详细信息的责任。 例如，集成[!DNL Experience Manager Assets]和[!DNL Workfront]在元数据管理、提高内容创建和管理中的效率和协作方面提供了巨大的好处。 此集成确保链接资源的有效元数据同步，在[!DNL Workfront]中进行更改时自动更新项目详细信息。
 
 及早沟通目标、进展、里程碑和挑战，以接受所有利益相关者的投入和合作。 鼓励整个组织内的协作，创建高效的流程和重要的元数据。
 
-了解有关[元数据及其相关概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=zh-Hans)的更多信息，以便有效地管理Experience Manager元数据。
+了解有关[元数据及其相关概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)的更多信息，以便有效地管理Experience Manager元数据。

@@ -3,8 +3,8 @@ title: 在 Cloud Manager 中管理存储库
 description: 了解如何在Cloud Manager中添加、查看和删除Git存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 86%

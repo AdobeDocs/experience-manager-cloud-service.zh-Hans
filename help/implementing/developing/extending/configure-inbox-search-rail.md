@@ -3,8 +3,8 @@ title: 如何配置收件箱的搜索过滤器？
 description: 了解如何为收件箱项目配置搜索过滤器。
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 配置范围谓词：
 
-1. 打开配置[&#128279;](#creating-opening-customized-configuration)的表单。
+1. 打开配置[的](#creating-opening-customized-configuration)表单。
 1. 选择&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡并将&#x200B;**[!UICONTROL 范围谓词]**&#x200B;拖到表单中。
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 列名称]**&#x200B;字段中选择作为搜索依据的收件箱列名称。
 1. 在&#x200B;**[!UICONTROL 筛选器标签]**&#x200B;字段中指定筛选器的标签。 选中&#x200B;**[!UICONTROL 启用小数值]**&#x200B;复选框以在定义范围时接受数字的小数值。
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 配置文本谓词：
 
-1. 打开配置[&#128279;](#creating-opening-customized-configuration)的表单。
+1. 打开配置[的](#creating-opening-customized-configuration)表单。
 1. 选择&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡并将&#x200B;**[!UICONTROL 文本谓词]**&#x200B;拖到表单中。
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 列名称]**&#x200B;字段中选择作为搜索依据的收件箱列名称。
 1. 在&#x200B;**[!UICONTROL 搜索文本框占位符]**&#x200B;字段中指定在搜索文本框中作为占位符文本显示的文本。
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 要配置日期范围谓词，请执行以下操作：
 
-1. 打开配置[&#128279;](#creating-opening-customized-configuration)的表单。
+1. 打开配置[的](#creating-opening-customized-configuration)表单。
 1. 选择&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡并将&#x200B;**[!UICONTROL 日期范围谓词]**&#x200B;拖到表单中。
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 列名称]**&#x200B;字段中选择作为搜索依据的收件箱列名称。
 1. 在&#x200B;**[!UICONTROL 筛选器标签]**&#x200B;字段中指定日期范围筛选器的标签。
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 要配置自定义列选项谓词：
 
-1. 打开配置[&#128279;](#creating-opening-customized-configuration)的表单。
+1. 打开配置[的](#creating-opening-customized-configuration)表单。
 1. 选择&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡并将&#x200B;**[!UICONTROL 自定义列选项谓词]**&#x200B;拖到表单中。
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 列名称]**&#x200B;字段中选择作为搜索依据的收件箱列名称。
 1. 在&#x200B;**[!UICONTROL 筛选器标签]**&#x200B;字段中指定自定义列选项筛选器的标签。

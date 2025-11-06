@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 85%
@@ -33,12 +33,13 @@ Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独
 >[!NOTE]
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
+>
 >* **内容片段**&#x200B;是可编辑内容，具有定义和结构，但无需额外的可视设计和/或布局。它们可用于访问结构化数据，包括文本、数字和日期等。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 内容片段允许：
 
@@ -153,11 +154,12 @@ Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独
 >* 中间组件在片段流的组件序列中具有一个绝对位置。即使片段中段落的内容发生更改，此位置也不会变化。
 >
 >  这可能使其看起来像是相对位置发生了更改一样，因为中间段落与它们旁边的（片段）段落之间没有上下文关系。
+>
 >* 除非两个段落结构产生冲突；在这种情况下，将不会显示中间内容（尽管它在内部依然存在）。
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您有与[内容片段](/help/assets/content-fragments/content-fragments.md) [关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资源在侧面板（在将片段放置到内容页面后）中可用。关联内容实际上是[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
+如果您有与[内容片段](/help/assets/content-fragments/content-fragments.md)[关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资源在侧面板（在将片段放置到内容页面后）中可用。关联内容实际上是[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
 
 >[!NOTE]
 >

@@ -4,8 +4,8 @@ description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM 
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -148,7 +148,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 请务必明确定义项目的范围。范围告知验收标准，并让您创建完成的定义。
 
-您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”一般来说，答案应该是您拥有或将来会拥有您使用自己的开发工具而非 AEM 构建的体验应用程序。此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans)，并找到更适合您要完成的操作的部分。
+您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”一般来说，答案应该是您拥有或将来会拥有您使用自己的开发工具而非 AEM 构建的体验应用程序。此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)，并找到更适合您要完成的操作的部分。
 
 ### 角色和职责 {#roles-responsibilities}
 
@@ -161,7 +161,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 #### 管理员 {#administrator}
 
-管理员负责系统的基本设置和配置。例如，管理员在 Adobe User Management 系统（称为 Identity Management System (IMS)）中设置您的组织。Adobe 在 IMS 中创建您的组织后，管理员是组织中第一个收到来自 Adobe 的电子邮件邀请的用户。管理员可以登录 IMS 并添加其他角色的用户。
+管理员负责系统的基本设置和配置。例如，管理员在 Adobe User Management 系统（称为 Identity Management System (IMS)）中设置您的组织。Adobe 在 IMS 中创建您的组织后，管理员是组织中第一个收到来自 Adobe 的电子邮件邀请的用户。管理员可以登录 IMS 并添加其他用户画像的用户。
 
 在管理员配置用户后，他们将获得对所有 AEM 资源的访问权限，以完成他们作为投稿人的工作，并使用 AEM Headless 交付体验应用程序。
 
@@ -175,7 +175,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 #### 规划翻译 {#translation}
 
-在项目的一开始就规划翻译。将“翻译专家”视为一个单独的角色，其职责是定义应翻译的内容、不应翻译的内容以及哪些已翻译内容可由区域或本地内容制作者修改。
+在项目的一开始就规划翻译。将“翻译专家”视为一个单独的用户画像，其职责是定义应翻译的内容、不应翻译的内容以及哪些已翻译内容可由区域或本地内容制作者修改。
 
 根据需要的内容翻译制定计划。
 
@@ -287,7 +287,7 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
-* [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/zh-hans?Solution=Experience+Manager&amp;Solution=Experience+Manager+Site&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.Headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
+* [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Site&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.Headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。
 * [创作概念](/help/sites-cloud/authoring/author-publish.md) – 有关 AEM 的创作环境的技术文档，包括作者-发布设置的详细信息
 * [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – 有关在 AEM 上发布内容的技术文档

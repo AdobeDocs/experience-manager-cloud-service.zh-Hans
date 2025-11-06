@@ -3,8 +3,8 @@ title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud S
 description: 了解 Adobe Experience Manager as a Cloud Service 对各种数据保护和数据隐私条例的支持，以及如何在实施新的 AEM as a Cloud Service 项目时保持合规性。这些条例包括《欧盟通用数据保护条例》 (GDPR)、《加州消费者隐私法案》
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -44,9 +44,9 @@ Adobe Experience Manager as a Cloud Service 的实例以及其上运行的应用
 
 作为一个简单的介绍，数据隐私和保护条例包括下列各方需要遵守的新规则：
 
-* 业务实体 (CCPA) 和/或数据控制方 (GDPR)
+* 业务实体（CCPA）和/或数据控制方（GDPR）
 
-* 服务提供商 (CCPA) 和/或数据处理商 (GDPR)
+* 服务提供商（CCPA）和/或数据处理商（GDPR）
 
 此类条例中的主要条款：
 
@@ -99,6 +99,6 @@ Adobe 提供过程用于处理与访问、删除和选择退出 Adobe Experience
 Adobe Experience Manager as a Cloud Service 与 Adobe Target 和 Adobe Analytics 之间的集成是通过数据保护和隐私（例如 GDPR）就绪型服务实现的。Adobe Target 或 Adobe Analytics 中的任何个人数据都不会存储在与集成相关的 AEM 中。
 有关更多信息，请参阅:
 
-* [Adobe Target - 隐私概述](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=zh-Hans)
+* [Adobe Target - 隐私概述](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
-* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)
+* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)

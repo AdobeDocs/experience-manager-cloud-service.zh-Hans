@@ -3,9 +3,9 @@ title: 使用Media Library进行基本数字资产管理
 description: 用于资产管理的[!DNL Experience Manager Assets]和媒体库。
 contentOwner: AG
 feature: Asset Management, Publishing
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 9%
@@ -44,7 +44,7 @@ Define what is not included
 
 Experience Manager Assets提供企业级DAM功能。 Assets功能通过[!DNL Experience Manager]在一个包中提供。 但是，未购买Assets许可证的用户无权使用高级DAM功能。 如果没有Assets许可证，则只有[媒体库功能](#use-media-library)可用。
 
-如果要防止未经许可的[!DNL Assets]功能被意外使用，请从[!DNL Experience Manager]中删除所有特定于[!DNL Assets]的工作流、组件、分类、选项和[!DNL Assets]管理员。 这样做可防止您的用户意外使用您未授权的[!DNL Assets]功能。
+如果要防止未经许可的[!DNL Assets]功能被意外使用，请从[!DNL Assets]中删除所有特定于[!DNL Assets]的工作流、组件、分类、选项和[!DNL Experience Manager]管理员。 这样做可防止您的用户意外使用您未授权的[!DNL Assets]功能。
 
 ## 使用媒体库 {#use-media-library}
 
@@ -116,5 +116,5 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Experience Manager Assets][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=zh-Hans)中的DAM功能
->* [[!DNL Experience Manager] 作为 [!DNL Cloud Service] 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [ [!DNL Experience Manager Assets]中的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=zh-Hans)DAM功能
+>* [[!DNL Experience Manager] 作为 [!DNL Cloud Service] 产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

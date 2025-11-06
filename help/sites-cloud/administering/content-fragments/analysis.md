@@ -2,10 +2,10 @@
 title: 分析内容片段
 description: 了解内容片段的结构。 这提供了与headless投放和页面创作相关的信息。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 79%

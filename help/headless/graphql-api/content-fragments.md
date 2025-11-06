@@ -4,7 +4,7 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 91%
@@ -69,7 +69,7 @@ GraphQL 是：
 
 * 位于 [graphql.com](https://graphql.com)：
 
-   * [&#x200B; 指南](https://www.graphql.com/guides/)
+   * [ 指南](https://www.graphql.com/guides/)
 
    * [教程](https://www.graphql.com/tutorials/)
 
@@ -173,7 +173,7 @@ GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构�
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为执行此操作，客户端必须获取包含查询所需的所有类型的[架构](#schema-generation)。
 
-对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**&#x200B;[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
+对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其数据类型。
 
 >[!CAUTION]
 >
@@ -375,7 +375,7 @@ ID字段还可用作在AEM GraphQL中的标识符。 它表示AEM存储库中内
 >[!NOTE]
 >
 >**普通和数组元数据之间的不同**
->&#x200B;>请记住，`StringMetadata` 和 `StringArrayMetadata` 均引用存储在存储库中的内容，而非您如何检索它们。
+>请记住，`StringMetadata` 和 `StringArrayMetadata` 均引用存储在存储库中的内容，而非您如何检索它们。
 >
 >举例而言，通过调用 `stringMetadata` 字段，您应该以 `String` 的形式收到存储在存储库中所有元数据的数组，如果您调用 `stringArrayMetadata`，则会以 `String[]` 的形式收到存储在存储库中所有元数据的数组。
 
@@ -769,6 +769,7 @@ GraphQL 中的解决方案意味着您可以：
 >[!NOTE]
 >
 >**内容参考** 可用于 DAM 资产和动态媒体资产。检索适当的 URL 使用不同的参数：
+>
 >* `_dynamicUrl`：DAM 资产
 >* `_dmS7Url`：Dynamic Media 资源
 > 
@@ -783,13 +784,17 @@ GraphQL 中的解决方案意味着您可以：
 * `format`：按扩展名包含所有支持的格式的枚举：GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL 或 WEBPLY
 * `seoName`：用作文件名而不是节点名的字符串
 * `crop`：框架子结构，如果省略宽度或高度，则宽度或高度将用作同一值
+
    * `xOrigin`：框架的 x 原点，它是强制性的
    * `yOrigin`：框架的 y 原点，它是强制性的
    * `width`：框架的宽度
    * `height`：框架的高度
+
 * `size`：维度子结构，如果省略宽度或高度，则宽度或高度将用作同一值
+
    * `width`：维度的宽度
    * `height`：维度的高度
+
 * `rotation`：所有支持的旋转的枚举：R90、R180、R270
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL 的枚举
 * `quality`：1 和 100 之间的整数，表示图像质量的百分比
@@ -959,7 +964,7 @@ GraphQL 中的解决方案意味着您可以：
 
    * `_smartCrops`属性公开可用于特定资源的智能裁剪配置
 
-   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[&#128279;](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * 请参阅使用Smart Crop通过URL交付Dynamic Media资源的示例查询[](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -979,6 +984,7 @@ GraphQL 中的解决方案意味着您可以：
 ### 通过 URL 传递动态媒体资产的示例查询 - 图像参考{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 下面是一个示例查询：
+
 * 对于类型 `team` 和 `person`的多个内容片段，返回一个 `ImageRef`
 
 ```graphql
@@ -1006,6 +1012,7 @@ query allTeams {
 ### 通过 URL 传递动态媒体资产的示例查询 - 多重引用{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 下面是一个示例查询：
+
 * 对于类型 `team` 和`person` 的多个内容片段，返回一个 `ImageRef`、`MultimediaRef` 和 `DocumentRef`：
 
 ```graphql
@@ -1208,10 +1215,11 @@ query allTeams {
    * 请参阅[给定模型的多个内容片段及其变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >过滤器 `includeVariations` 和系统生成的字段 `_variation` 不能在同一个查询定义中一起使用。
 
 * 如果您希望使用逻辑 OR：
-   * 使用 ` _logOp: OR`
+   * 使用 `_logOp: OR`
    * 请参阅[示例查询 – 所有名为“Jobs”或“Smith”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * 逻辑 AND 也可使用，不过（通常）是隐式的
@@ -1276,7 +1284,7 @@ query allTeams {
 
             * [具有单个指定参数的 Web 优化图像传递的示例查询](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`：关于将 URL 传递到[动态媒体资产 &#x200B;](#dynamic-media-asset-delivery-by-url) 的`ImageRef`参考
+      * `_dmS7Url`：关于将 URL 传递到[动态媒体资产 ](#dynamic-media-asset-delivery-by-url) 的`ImageRef`参考
 
          * 请参阅 [通过 URL 传递动态媒体资产的示例查询 - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 

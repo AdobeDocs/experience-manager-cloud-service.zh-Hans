@@ -4,8 +4,8 @@ description: 了解项目创建向导，可帮助您在创建生产程序后快�
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 96%
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 # 项目创建向导 {#project-creation-wizard}
 
-创建生产程序后，Cloud Manger 会提供一个向导，根据 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)创建一个最小的 AEM 项目，以便快速入门。
+创建生产程序后，Cloud Manger 会提供一个向导，根据 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)创建一个最小的 AEM 项目，以便快速入门。
 
 按照以下步骤使用向导在 Cloud Manager 中创建 AEM 应用程序项目。
 

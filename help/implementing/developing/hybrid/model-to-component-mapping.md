@@ -1,19 +1,19 @@
 ---
-title: SPA的动态模型到组件映射
+title: SPA 的动态模型与组件映射
 description: 本文介绍了在AEM的JavaScript SPA SDK中如何进行组件映射的动态模型。
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# SPA的动态模型到组件映射 {#dynamic-model-to-component-mapping-for-spas}
+# SPA 的动态模型与组件映射 {#dynamic-model-to-component-mapping-for-spas}
 
 本文档介绍在AEM的JavaScript SPA SDK中如何进行组件动态映射。
 

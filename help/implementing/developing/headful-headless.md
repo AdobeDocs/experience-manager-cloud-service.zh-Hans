@@ -3,8 +3,8 @@ title: AEM 中的 Headful 和 Headless
 description: AEM 项目可以在 Headful 和 Headless 模型中实施，但这不是一个二选一的选择。利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 93%
@@ -25,7 +25,7 @@ AEM 还可用于简单地管理内容，并允许呈现和交付要由另一个�
 
 ![AEM 实施模型](/help/headless/assets/aem-implementation-models.png)
 
-在Headful或全栈模型中，内容在AEM存储库中进行管理，并且根据Java、HTL等，AEM组件会用于呈现用户体验的内容。 在此模型中，内容的创建、样式设置、呈现和交付操作都在 AEM 中进行。
+在Headful或全栈模型中，内容在AEM存储库中进行管理，而基于Java、HTL等AEM组件用于呈现用户体验的内容。 在此模型中，内容的创建、样式设置、呈现和交付操作都在 AEM 中进行。
 
 在 Headless 模型中，内容在 AEM 存储库中管理，但通过 REST 和 GraphQL 等 API 交付到另一个系统以呈现用户体验的内容。在此模型中，内容的创建操作是在 AEM 中进行的，但内容的样式设置、呈现和交付操作是在另一个平台中进行的。
 
@@ -45,7 +45,7 @@ AEM 还可用于简单地管理内容，并允许呈现和交付要由另一个�
 
 >[!NOTE]
 >
->当然，您也可以[使用 AEM SPA Editor 框架](/help/implementing/developing/hybrid/introduction.md)将网上商店 SPA 作为功能齐全的 AEM SPA 重新实施。如果您已经拥有AEM并且想要创建一个Web商店或其他SPA，则推荐使用此方法，但它超出了本文档的范围。
+>当然，您也可以[使用 AEM SPA Editor 框架](/help/implementing/developing/hybrid/introduction.md)将网上商店 SPA 作为功能齐全的 AEM SPA 重新实施。如果您已经拥有AEM并且希望创建Web商店或其他SPA，则推荐使用此方法，但该方法不在本文档的范围之内。
 
 ## SPA 集成级别 {#integration-levels}
 

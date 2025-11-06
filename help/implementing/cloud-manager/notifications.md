@@ -4,8 +4,8 @@ description: 了解如何使用 Adobe Experience Cloud 通知系统接收有关�
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 76%

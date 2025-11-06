@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.1.0 版�
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 89%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版或 2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -37,7 +37,7 @@ ht-degree: 90%
 
 观看 2024 年 1 月版概述视频，大致了解 2024.1.0 版的新增功能：
 
->[!VIDEO](https://video.tv.adobe.com/v/3448939?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -95,7 +95,7 @@ Experience Manager Assets 现在无需处理配置文件配置，即默认生成
 
   您可以通过您的官方电子邮件 ID 向 `aem-forms-early-adopter-program@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
-* **[您可以利用操作遥测服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;启用AEM as a Cloud Service的客户端收集。
+* **[您可以利用操作遥测服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**启用AEM as a Cloud Service的客户端收集。
 运营遥测服务可更准确地反映用户交互，从而确保可靠地衡量网站参与度。 这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
   如果您有兴趣测试这项新功能并分享您的反馈，请向`aemcs-rum-adopter@adobe.com`发送一封电子邮件，同时附上您想要通过与Adobe ID关联的电子邮件地址为每个环境启用操作遥测的域名。 Adobe的产品团队将为您启用操作遥测服务。
@@ -112,7 +112,8 @@ Dynatrace 客户可监控其 AEM 使用情况。[了解如何](/help/implementin
 
 ### 域映射早期采用者计划 {#cdn-config-early-adopter}
 
-除了最近发布的[流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道声明和部署[其他类型的 CDN 配置](/help/implementing/dispatcher/cdn-configuring-traffic.md)。发送电子邮件至 **aemcs-cdn-config-adopter@adobe.com**，加入早期采用者计划，即可访问：
+除了最近发布的[流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道声明和部署[其他类型的 CDN 配置](/help/implementing/dispatcher/cdn-configuring-traffic.md)。通过电子邮件发送&#x200B;**`aemcs-cdn-config-adopter@adobe.com`**&#x200B;加入率先采用者计划，以获取：
+
 * 301/302 客户端重定向
 * 将边缘请求代理到任意来源
 * URL 转换

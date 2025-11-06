@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版�
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 100%
@@ -29,13 +29,14 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 中的新增功能 {#sites-features}
 
-* [内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hans)现在允许用户查看标记并按作为元数据应用于内容片段的标记进行搜索。用户将不再需要切换到此功能的资源 UI，这减少了上下文切换并提高了效率。
+* [内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)现在允许用户查看标记并按作为元数据应用于内容片段的标记进行搜索。用户将不再需要切换到此功能的资源 UI，这减少了上下文切换并提高了效率。
 
   ![内容片段控制台中的标记](/help/assets/content-fragments-console-tags.png)
 * AEM as a Cloud Service 上现在有新的内容片段编辑器可用。它通过简化内容作者的创作任务并减少在编辑内容时需要在不同的应用程序之间切换的次数，使内容作者提高工作效率。
   ![新的内容片段编辑器](/help/release-notes/assets/newCFEditor.png)
 
 新的内容片段编辑器具备以下这些在原有编辑器中没有的优势：
+
 * 自动保存，可提高创作效率并防止意外丢失编辑内容。
 * 内容片段及其引用的分级视图，其中可使用结构树在结构层次很深的片段中快速导航。
   ![内容片段编辑器中的结构树](/help/release-notes/assets/newCFEditor_StructureTree.png)
@@ -92,7 +93,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 
-* **Dynamic Media**：[Dynamic Media 中的视频支持多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma)，现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+* **Dynamic Media**：[Dynamic Media 中的视频支持多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma)，现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能观看您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
   ![所选视频资源的“属性”页面上的“字幕和音轨”选项卡。](/help/release-notes/assets/msma-aem-cs.png)*所选视频资源的“属性”页面上的“字幕和音轨”选项卡。*
 
@@ -134,7 +135,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Headless 自适应表单早期采用者计划 {#forms-early-adopter}
 
-使用 [Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hans)可让您的开发人员创建、发布和管理交互式表单，这些交互式表单可通过 API 而不是传统的图形用户界面进行访问和交互。Headless 自适应表单可帮助您：
+使用 [Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)可让您的开发人员创建、发布和管理交互式表单，这些交互式表单可通过 API 而不是传统的图形用户界面进行访问和交互。Headless 自适应表单可帮助您：
 
 * 使用选定的编程语言构建高质量的多渠道表单
 * 将表单本机集成到您的桌面和移动应用程序、网站和聊天应用程序

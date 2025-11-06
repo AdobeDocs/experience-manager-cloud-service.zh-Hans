@@ -3,10 +3,10 @@ title: 扩展多站点管理器
 description: 了解如何扩展多站点管理器的功能。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 92%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 92%
 
 ![主要 MSM API 对象](assets/msm-api-interaction.png)
 
-* **`Blueprint`**-  `Blueprint`（如 [&#x200B; Blueprint 配置](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)）会指定 Live Copy 可以继承内容的页面。
+* **`Blueprint`**-  `Blueprint`（如 [ Blueprint 配置](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)）会指定 Live Copy 可以继承内容的页面。
 
   ![Blueprint](assets/msm-blueprint-interaction.png)
 
@@ -183,17 +183,14 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. 向该节点添加以下属性：
 
    * **名称**：`jcr:title`
-
      **类型**：`String`
      **值**：在 UI 中出现的识别标题
 
    * **名称**：`jcr:description`
-
      **类型**：`String`
      **值**：可选描述。
 
    * **名称**：`cq:trigger`
-
      **类型**：`String`
      **值**：要使用的[转出触发器](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers)
       * `rollout`
@@ -525,7 +522,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
    * **标题**：转出配置示例
    * **名称**：examplerolloutconfig
-   * **cq:trigger**：`publish`
+   * **cq:trigger**： `publish`
 
 ### 将实时操作添加到转出配置示例中 {#add-the-live-action-to-the-example-rollout-configuration}
 
@@ -639,7 +636,6 @@ MSM 使用存储的语言和国家/地区代码列表来确定与页面语言版
       * **类型**：`String`
       * **值**：持有对价属性的名称，与属性值相当`name`
          * 例如，请参阅
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 当定义了 `cq-msm-lockable` 时，断开/闭合链的操作会通过以下方式与 MSM 相互作用：

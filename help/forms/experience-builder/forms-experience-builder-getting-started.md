@@ -1,19 +1,19 @@
 ---
-title: Forms Experience Builder快速入门
+title: Forms Experience Builder 快速入门指南
 description: 了解使用Forms Experience Builder创建您的第一个由AI提供支持的表单的基础知识。 包含示例和最佳实践的分步教程。
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1133'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-
-# Forms Experience Builder快速入门 {#getting-started-forms-experience-builder}
+# Forms Experience Builder 快速入门指南 {#getting-started-forms-experience-builder}
 
 Forms Experience Builder借助AI将自然语言描述转换为全功能数字表单，彻底改变了表单创建方式。 本指南将帮助您创建第一个表单，并了解使Forms Experience Builder具有强大功能的核心概念。
 
@@ -62,10 +62,10 @@ Forms Experience Builder是一款AI支持的表单创建工具，可让您使用
 **示例：**
 
     创建一个客户反馈表，其中包含：
-    &#x200B;- 产品评分（1-5 星）
-    &#x200B;- 提供详细反馈的备注字段
-    &#x200B;- 客户电子邮件地址（可选）
-    &#x200B;- 提交至电子邮件通知
+    - 产品评分（1-5 星）
+    - 提供详细反馈的备注字段
+    - 客户电子邮件地址（可选）
+    - 提交至电子邮件通知
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +75,7 @@ Forms Experience Builder是一款AI支持的表单创建工具，可让您使用
 
 将现有文档转换为交互式数字表单。
 
-在使用此选项之前，请上传PDF文件或表单图像。 PDF可以是AcroForm或基于XFA的PDF表单。 对于[其他类型的PDF forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，使用Adobe Acrobat中的[准备表单](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)选项将它们转换为AcroForm
+在使用此选项之前，请上传PDF文件或表单图像。 PDF可以是AcroForm或基于XFA的PDF表单。 对于[其他类型的PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，使用Adobe Acrobat中的[准备表单](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)选项将它们转换为AcroForm
 
 **使用时间：**
 
@@ -199,10 +199,10 @@ Forms Experience Builder使用对话式界面，您可以在其中执行以下�
 **客户反馈表：**
 
     创建一个客户反馈表，其中包含：
-    &#x200B;- 产品评分（1-5 星）
-    &#x200B;- 提供详细反馈的备注字段
-    &#x200B;- 客户电子邮件地址（可选）
-    &#x200B;- 提交至电子邮件通知
+    - 产品评分（1-5 星）
+    - 提供详细反馈的备注字段
+    - 客户电子邮件地址（可选）
+    - 提交至电子邮件通知
 
 ### 注册和载入表单 {#registration-onboarding-forms}
 
@@ -275,7 +275,6 @@ Forms Experience Builder使用对话式界面，您可以在其中执行以下�
     添加文件类型验证：仅允许PDF、DOC、DOCX用于@resume
     添加文件大小限制：@resume
 最大5MB
-
 ## 后续步骤 {#next-steps}
 
 现在您已了解基础知识，请探索这些高级主题：

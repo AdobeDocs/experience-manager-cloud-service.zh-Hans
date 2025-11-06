@@ -1,19 +1,19 @@
 ---
-title: 部署和配置Forms Experience Builder
+title: 部署和配置 Forms Experience Builder
 description: 了解如何使用 Forms Experience Builder 为所有用户类型创建和管理采用渐进展开方式的表单
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
-
-# 部署和配置Forms Experience Builder
+# 部署和配置 Forms Experience Builder
 
 >[!NOTE]
 >
@@ -43,11 +43,11 @@ ht-degree: 74%
 
 您的设置过程取决于您的AEM Forms实施。 选择与项目匹配的路径。
 
-用于Edge Delivery Services的&#x200B;**&#x200B;**
+用于Edge Delivery Services的&#x200B;****
 
 如果您使用的是Edge Delivery Services Forms，并且主要使用通用编辑器。 [为Edge Delivery Services Forms准备项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 这是一次性设置，用于启用Forms Experience Builder。
 
-基于核心组件的表单&#x200B;**&#x200B;**
+基于核心组件的表单&#x200B;****
 
 如果您在AEM创作环境中使用基于Core Components的自适应Forms，请确保为您的环境启用了[自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)。
 

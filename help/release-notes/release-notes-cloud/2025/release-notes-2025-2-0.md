@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.2.0 版�
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 96%
@@ -57,7 +57,7 @@ ht-degree: 96%
 
 **内容片段编辑器推出**
 
-我们将继续使用[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)（使用频谱UI）在AEM as a Cloud Service中启用新的[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)。 它已在 2024 年 11 月成为所有 Cloud Service 开发者环境的默认设置，2025 年 4 月 1 日将成为所有暂存环境的默认设置，并将在 2025 年 5 月 1 日成为所有生产环境的默认设置。在所有情况下，用户仍然可以选择恢复到 AEM Touch UI 中传统的内容片段编辑器。
+我们将继续使用[Unified Shell](/help/sites-cloud/administering/content-fragments/authoring.md)（使用频谱UI）在AEM as a Cloud Service中启用新的[内容片段编辑器](/help/overview/aem-cloud-service-on-unified-shell.md)。 它已在 2024 年 11 月成为所有 Cloud Service 开发者环境的默认设置，2025 年 4 月 1 日将成为所有暂存环境的默认设置，并将在 2025 年 5 月 1 日成为所有生产环境的默认设置。在所有情况下，用户仍然可以选择恢复到 AEM Touch UI 中传统的内容片段编辑器。
 
 **翻译 HTTP API**
 
@@ -117,7 +117,7 @@ AEM Forms 文档生成 API 现在允许您[直接将生成的 PDF 文档上传](
 
 正如在一月份的发行说明中提到的，您现在可以使用 Java 21 构建代码，其中包括新功能（如切换语句的模式匹配、密封类）和性能改进。Java 17 版本也获得了新的支持。有关配置步骤（包括更新 Maven 项目和库版本），请参阅文章[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)。
 
-当检测到 Java 17 或 21 构建时，将自动部署性能更高的 Java 21 **运行时**。不过，我们也建议使用 Java 11 构建的环境选择 Java 21 运行时，具体方法是发送电子邮件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [&#x200B; Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
+当检测到 Java 17 或 21 构建时，将自动部署性能更高的 Java 21 **运行时**。不过，我们也建议使用 Java 11 构建的环境选择 Java 21 运行时，具体方法是发送电子邮件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [ Java 21 运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
@@ -128,6 +128,7 @@ AEM Forms 文档生成 API 现在允许您[直接将生成的 PDF 文档上传](
 Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Adobe 希望了解您是否认为这项技术对 AEM Publish Delivery 和 Edge Delivery Services 项目有用。此外，请告诉我们您设想将其用于哪些用途，以便为产品路线图提供意见。
 
 一些可能的用例：
+
 * 使用 IdP 进行身份验证以控制内容访问权限
 * 根据地理位置、设备类型、用户属性等呈现动态（个性化、本地化）内容。
 * 高级图像操作
@@ -148,7 +149,7 @@ Edge 计算使数据处理更接近浏览器，其好处包括减少延迟。Ado
 * [Sites 内容片段 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [资产 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * Sites和Assets文件夹API
-* [&#x200B; Forms 通信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [ Forms 通信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### 新的 AEM Developer Console（公开 Beta） {#aem-developer-console-beta}
 

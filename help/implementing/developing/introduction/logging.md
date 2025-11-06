@@ -3,8 +3,8 @@ title: AEM as a Cloud Service的日志记录
 description: 了解如何使用AEM as a Cloud Service的日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 10%
@@ -158,6 +158,7 @@ AEM Java日志被定义为OSGi配置，因此使用运行模式文件夹定位�
 更改其他LogManager OSGi配置属性可能会导致AEM as a Cloud Service中出现可用性问题。
 
 如上一节中所述，为确保有效监控客户环境，请执行以下操作：
+
 * 不得修改AEM默认日志配置（Apache Sling日志记录配置）的日志级别默认值“INFO”。
 * 对于产品代码的单个包（使用“Apache Sling日志记录器配置”OSGi配置工厂的实例），可以将日志级别设置为DEBUG ，但请谨慎使用它以防止性能降级，并在不再需要它时恢复为INFO。
 * 调整客户开发的代码的日志级别是可接受的。
@@ -165,8 +166,10 @@ AEM Java日志被定义为OSGi配置，因此使用运行模式文件夹定位�
 * 日志输出必须保持指向默认文件“logs/error.log”。
 
 为此，不得对以下OSGi属性进行更改：
+
 * **Apache Sling 日志配置**（PID：`org.apache.sling.commons.log.LogManager`）—*所有属性*
 * **Apache Sling 日志记录器配置**（工厂 PID：`org.apache.sling.commons.log.LogManager.factory.config`）：
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 

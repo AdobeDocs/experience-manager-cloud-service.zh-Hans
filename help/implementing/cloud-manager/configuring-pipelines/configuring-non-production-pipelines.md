@@ -5,11 +5,11 @@ index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 58%
 在设置项目并具有至少一个使用 Cloud Manager UI 的环境后，便可以执行以下步骤来添加非生产管道。
 
 1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
-1. 在&#x200B;**快速访问**&#x200B;部分中，单击&#x200B;**Experience Manager**。
+1. 在&#x200B;**快速访问**&#x200B;部分，单击 **Experience Manager**。
 1. 在左侧面板中点击 **Cloud Manager**。
 1. 选择所需的组织。
-1. 在&#x200B;**我的程序**&#x200B;控制台上，单击程序。
+1. 在&#x200B;**我的程序**&#x200B;控制台上，单击一个程序。
 
 1. 从 Cloud Manager 主屏幕访问&#x200B;**管道**&#x200B;信息卡。单击&#x200B;**+添加**&#x200B;并选择&#x200B;**添加非生产管道。**
 

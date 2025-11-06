@@ -4,8 +4,8 @@ description: 了解 AEM as a Cloud Service 部署过程内置的三种不同类�
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 5%
@@ -58,7 +58,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 我们建议您为AEM应用程序提供单元测试，这是每个测试策略的基础。 它们旨在快速且频繁地运行，并尽早提供快速反馈。 它们紧密集成到开发人员工作流、您自己的CI/CD和AEM云服务部署管道中。
 
-它们使用JUnit实现，并使用Maven执行。 有关AEM的单元测试示例和入门，请参阅AEM项目原型[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)核心模块。
+它们使用JUnit实现，并使用Maven执行。 有关AEM的单元测试示例和入门，请参阅AEM项目原型[的](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)核心模块。
 
 ### 代码质量
 

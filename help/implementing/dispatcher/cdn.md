@@ -4,7 +4,7 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 11%
@@ -68,7 +68,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 
 使用 HTTP Cache-Control 标头设置 TTL 是平衡内容传递性能和内容新鲜度的有效方法。但是，在必须立即提供更新内容的情况下，直接清除CDN缓存可能会有帮助。
 
-了解[配置清除API令牌](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token)和[清除缓存的CDN内容](/help/implementing/dispatcher/cdn-cache-purge.md)。
+了解[配置清除API令牌](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)和[清除缓存的CDN内容](/help/implementing/dispatcher/cdn-cache-purge.md)。
 
 ### CDN上的基本身份验证 {#basic-auth}
 
