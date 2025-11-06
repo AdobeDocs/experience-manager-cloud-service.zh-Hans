@@ -245,7 +245,7 @@ Repo Init OSGi配置最好采用[`.config` OSGi配置格式](https://sling.apach
 此文件夹名称对应于它包含的[包类型](#package-types)。
 + 第4级文件夹包含子包，并且必须是以下包之一：
    + `install`以便您同时在&#x200B;**上安装** AEM作者和AEM发布
-   + `install.author`，以便您仅在AEM作者上安装&#x200B;**2}**
+   + `install.author`，以便您仅在AEM作者上安装&#x200B;**2&rbrace;**
    + `install.publish`，以便在AEM发布上安装&#x200B;**only**
 仅`install.author`和`install.publish`受支持的目标。 不支持其 **他运行模式** 。
 
@@ -281,7 +281,7 @@ Repo Init OSGi配置最好采用[`.config` OSGi配置格式](https://sling.apach
 
 第三方应用程序/连接器应使用其`all`包作为项目容器(`all`)包中的容器进行嵌入。
 
-添加Maven依赖项遵循标准Maven实践，嵌入第三方工件（代码和内容包）的步骤如上所述[](#embedding-3rd-party-packages)。
+添加Maven依赖项遵循标准Maven实践，嵌入第三方工件（代码和内容包）的步骤如上所述[&#128279;](#embedding-3rd-party-packages)。
 
 >[!TIP]
 >

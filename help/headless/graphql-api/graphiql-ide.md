@@ -138,7 +138,7 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 
 这将会激活对您选择的环境的查询。您可以选择您的&#x200B;**发布**&#x200B;环境（例如，`dev-publish`），或者您的&#x200B;**预览**&#x200B;环境，以便您的应用程序在测试时轻松访问。
 
-![GraphiQL - 发布持久查询 ](assets/cfm-graphiql-publish.png "GraphiQL - 发布持久查询")
+![GraphiQL - 发布持久查询 &#x200B;](assets/cfm-graphiql-publish.png "GraphiQL - 发布持久查询")
 
 >[!NOTE]
 >
@@ -172,11 +172,11 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 
 通过在浏览器中使用此 URL，可以确认结果：
 
-![GraphiQL – 复制 URL ](assets/cfm-graphiql-copy-url.png "GraphiQL – 复制 URL")
+![GraphiQL – 复制 URL &#x200B;](assets/cfm-graphiql-copy-url.png "GraphiQL – 复制 URL")
 
 **“复制 URL”**&#x200B;选项可通过持久查询名称右侧的三个垂直点访问（最左侧面板）：
 
-![GraphiQL – 复制 URL ](assets/cfm-graphiql-persisted-query-options.png "GraphiQL – 复制 URL")
+![GraphiQL – 复制 URL &#x200B;](assets/cfm-graphiql-persisted-query-options.png "GraphiQL – 复制 URL")
 
 ## 正在删除持久查询 {#deleting-persisted-queries}
 

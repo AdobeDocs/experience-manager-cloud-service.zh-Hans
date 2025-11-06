@@ -24,7 +24,7 @@ ht-degree: 24%
 
 您可以在AEM中的多个位置编辑页面属性。
 
-* [从 ](#from-the-sites-console)
+* [从 &#x200B;](#from-the-sites-console)
 * [从页面编辑器](#from-the-page-editor)
 * [从通用编辑器](#from-the-universal-editor)
 

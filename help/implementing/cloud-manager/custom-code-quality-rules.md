@@ -836,7 +836,7 @@ Experience Manager 现代化工具文档提供了有关如何将组件从经典 
 >
 >规则[客户包不应在libs](#oakpal-customer-package)下创建或修改节点。
 
-有关更多详细信息，请参阅[ Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+有关更多详细信息，请参阅[&#x200B; Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ### 不应使用反向复制代理 {#oakpal-reverse-replication}
 

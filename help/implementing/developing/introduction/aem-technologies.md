@@ -245,7 +245,7 @@ Felix管理控制台(`http://<host>:<port>/system/console/slingscripting`)上列
 
 使用Sling API包`org.apache.sling.*`和标记库。
 
-### 使用sling:include {#referencing-existing-elements-using-sling-include}引用现有元素
+### 使用sling:include引用现有元素 {#referencing-existing-elements-using-sling-include}
 
 最后需要考虑的是需要引用脚本中的现有元素。
 

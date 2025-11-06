@@ -359,4 +359,4 @@ Node node = resource.adaptTo(Node.class);
 
 #### 其他 {#other}
 
-此外，Sling / JCR / OCM还为自定义OCM （[`AdapterFactory`对象内容映射](https://sling.apache.org/documentation/the-sling-engine/adapters.html)）对象提供了[](https://jackrabbit.apache.org/jcr/object-content-mapping.html)。
+此外，Sling / JCR / OCM还为自定义OCM （[`AdapterFactory`对象内容映射](https://sling.apache.org/documentation/the-sling-engine/adapters.html)）对象提供了[&#128279;](https://jackrabbit.apache.org/jcr/object-content-mapping.html)。

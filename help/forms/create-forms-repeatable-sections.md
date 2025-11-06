@@ -73,7 +73,7 @@ ht-degree: 8%
    1. 在规则区域的WHEN下，选择状态&#x200B;**被单击**。
    1. 在THEN下，选择&#x200B;**添加实例**，并使用![切换侧面板](/help/forms/assets/toggle-side-panel.png)拖放面板，或使用&#x200B;**拖放对象或在此处选择。**
 
-   在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”****，在代码区中：
+   在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”**&#x200B;**，在代码区中：
 
    * 若要创建添加面板按钮，请指定`this.panel.instanceManager.addInstance()`
 
@@ -94,7 +94,7 @@ ht-degree: 8%
    1. 在规则区域的WHEN **DeletePanel**&#x200B;下，已单击&#x200B;**选择状态**。
    1. 在THEN下，选择&#x200B;**删除实例**，并使用![切换侧面板](/help/forms/assets/toggle-side-panel.png)拖放面板，或使用&#x200B;**拖放对象或在此处选择。**
 
-   在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”****，在代码区中：
+   在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”**&#x200B;**，在代码区中：
 
    * 要创建删除面板按钮，请指定`this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 

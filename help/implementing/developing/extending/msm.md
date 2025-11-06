@@ -38,7 +38,7 @@ ht-degree: 92%
 
 ![主要 MSM API 对象](assets/msm-api-interaction.png)
 
-* **`Blueprint`**-  `Blueprint`（如 [ Blueprint 配置](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)）会指定 Live Copy 可以继承内容的页面。
+* **`Blueprint`**-  `Blueprint`（如 [&#x200B; Blueprint 配置](/help/sites-cloud/administering/msm/overview.md#source-blueprints-and-blueprint-configurations)）会指定 Live Copy 可以继承内容的页面。
 
   ![Blueprint](assets/msm-blueprint-interaction.png)
 

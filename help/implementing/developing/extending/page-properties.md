@@ -28,7 +28,7 @@ ht-degree: 92%
    * 名称：`cq:showOnCreate`
    * 类型：`Boolean`
 
-* 页面属性在编辑视图中可用，例如&#x200B;**查看**/**编辑****特性**&#x200B;选项：
+* 页面属性在编辑视图中可用，例如&#x200B;**查看**/**编辑**&#x200B;**特性**&#x200B;选项：
 
    * 名称：`cq:hideOnEdit`
    * 类型：`Boolean`
@@ -44,7 +44,7 @@ ht-degree: 92%
 例如，默认情况下&#x200B;[**创建页面**&#x200B;向导](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)会显示在&#x200B;**更多标题和描述**&#x200B;中分组的字段。若要对其进行隐藏，您可以配置：
 
 1. 在 `/apps` 下创建您的页面组件。
-1. 为页面组件的 `basic` 部分创建一个覆盖（使用[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)提供的&#x200B;*对话框差异*）；例如：
+1. 为页面组件的 `basic` 部分创建一个覆盖（使用[&#x200B; Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)提供的&#x200B;*对话框差异*）；例如：
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -76,6 +76,6 @@ ht-degree: 92%
 
 ## 页面属性的示例配置 {#sample-configuration-of-page-properties}
 
-该示例演示了[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)的对话框差异技术，其中包括使用 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties)。它还说明了 `cq:showOnCreate` 和 `cq:hideOnEdit` 的用法。
+该示例演示了[&#x200B; Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)的对话框差异技术，其中包括使用 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties)。它还说明了 `cq:showOnCreate` 和 `cq:hideOnEdit` 的用法。
 
 您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)上找到此页面的代码。

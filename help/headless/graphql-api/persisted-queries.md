@@ -383,7 +383,7 @@ curl -u admin:admin -X POST \
 
 ### 使用 OSGi 配置管理缓存 {#cache-osgi-configration}
 
-要全局管理缓存，您可以为&#x200B;**持久查询服务配置**[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)。
+要全局管理缓存，您可以为&#x200B;**持久查询服务配置**&#x200B;[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)。
 
 >[!NOTE]
 >
@@ -412,7 +412,7 @@ curl -u admin:admin -X POST \
 
 默认情况下，无论实际结果如何，`PersistedQueryServlet`在执行查询时都会发送`200`响应。
 
-当持久查询中出现错误时，您可以为&#x200B;**持久查询服务配置**[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)，以控制 `/execute.json/persisted-query` 端点是否返回更详细的状态代码。
+当持久查询中出现错误时，您可以为&#x200B;**持久查询服务配置**&#x200B;[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)，以控制 `/execute.json/persisted-query` 端点是否返回更详细的状态代码。
 
 >[!NOTE]
 >
@@ -473,7 +473,7 @@ URL 可以划分为以下部分：
 
 ### 持久查询包
 
-可以将持久查询构建在[ AEM 程序包](/help/implementing/developing/tools/package-manager.md)中。然后，可以在不同的环境中下载和安装 AEM 包。AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
+可以将持久查询构建在[&#x200B; AEM 程序包](/help/implementing/developing/tools/package-manager.md)中。然后，可以在不同的环境中下载和安装 AEM 包。AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
 
 要创建包：
 

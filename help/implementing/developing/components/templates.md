@@ -467,7 +467,7 @@ GITHUB上的代码
 
 ### 布局 {#layout}
 
-在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局](/help/sites-cloud/administering/responsive-layout.md)，内容作者可以在页面上配置该布局[](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
+在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局](/help/sites-cloud/administering/responsive-layout.md)，内容作者可以在页面上配置该布局[&#128279;](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
 
 ### 内容策略 {#content-policies}
 

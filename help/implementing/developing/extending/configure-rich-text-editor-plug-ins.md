@@ -93,7 +93,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 * **[!UICONTROL 粘贴为文本]**：提供纯文本模式功能。
 
-* 从Word粘贴&#x200B;**[!UICONTROL 1}：提供MS Word模式功能。]**
+* 从Word粘贴&#x200B;**[!UICONTROL 1&rbrace;：提供MS Word模式功能。]**
 
 要配置RTE以显示所需的图标，请执行以下步骤。
 
