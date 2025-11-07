@@ -380,7 +380,7 @@ Dispatcher上的缓存允许[!DNL AEM Forms]在客户端预填充自适应Forms�
 
 升级SDK将有效地创建一个全新的创作和发布实例，包括新的存储库([设置AEM项目](#forms-cloud-service-local-development-environment))，这意味着对先前的SDK存储库所做的任何更改都将丢失。 有关在SDK升级期间帮助保留内容的可行策略，请参阅[在升级AEM SDK时如何避免内容丢失](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hans#optional-local-aem-runtime-set-up-tasks)
 
-<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/30191?quality=9).
+<!--When you update any  Forms-specifc configuration, create overlays, develop custom Adaptive Form components, or develop and test any custom code in AEM project for the development tasks related to local development instance, use the AEM project cloned from the Cloud Manager Git repository to [deploy the custom code and other changes to your [!DNL AEM Forms] as a Cloud Service's production or non-production environment](https://video.tv.adobe.com/v/32908?captions=chi_hans&quality=9).
 
 ## Upgrade your local development environment {#update-local-setup}
 
