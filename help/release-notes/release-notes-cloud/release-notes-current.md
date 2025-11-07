@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 66%
+source-wordcount: '1871'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 66%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **用于自适应表单和表单片段的通用编辑器**
 
-通用编辑器现在为创建自适应Forms和可重用的表单片段提供统一的创作体验。 作者可以在直观的WYSIWYG环境中直观地设计表单、配置提交操作并集成reCAPTCHA验证。
+通用编辑器现在为创建自适应Forms和可重用的表单片段提供统一的创作体验。 利用强大的扩展和全面的提交功能，创作者可以在直观的WYSIWYG环境中以可视方式设计表单。 该编辑器集成了reCAPTCHA验证功能以增强安全性，提供了预填充服务以减少手动输入，并支持所有设备的响应式设计。
+
+**可用扩展：**
+
+* **规则编辑器**：可视化规则编辑器允许表单作者向表单字段添加动态行为，而无需编码、支持事件驱动规则、即时验证和错误处理。
+* **表单属性**：一个向导，可帮助用户直接在编辑器中配置提交操作、预填充服务、感谢消息以及其他与表单相关的行为。
+* **表单数据Source和绑定引用**：数据源扩展允许表单作者将与数据模型关联的组件直接添加到自适应表单中，并从所有组件的树选择中选择绑定引用。
+
+**支持的提交操作：**
+
+通用编辑器支持广泛的提交工作流，包括自定义提交操作、提交到Microsoft SharePoint、提交到Microsoft OneDrive、提交到Azure Blob Storage、提交到REST端点、调用AEM工作流、调用Power Automate流、提交到Marketo Engage、提交到Adobe Experience Platform (AEP)、提交到电子表格、使用表单数据模型(FDM)提交、提交到Workfront Fusion和发送电子邮件。
+
+有关完整的详细信息，请参阅Forms的[Edge Delivery Services通用编辑器文档](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)。 有关配置提交操作的信息，请参阅[自适应表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 
 <!-- ### Pre-Release features in AEM Forms 
 
