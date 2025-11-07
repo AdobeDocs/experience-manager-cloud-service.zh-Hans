@@ -4,7 +4,7 @@ description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -135,7 +135,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，当提交自适应表单时，会生成更新的记录文档。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用记录文档时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
@@ -262,7 +262,7 @@ When you select a form model, configure Document of Record using options availab
 | 自适应表单组件 | 对应的XFA组件 | 注释 |
 |---|---|---|
 | 图像 | 图像 | 除非使用记录文档设置进行排除，否则TextDraw和Image组件（无论已绑定还是未绑定）始终显示在基于XSD的自适应表单的记录文档中。 |
-| 文本 | 文本 |
+| 文本 | 文本 |  |
 
 ### 表格 {#tables}
 

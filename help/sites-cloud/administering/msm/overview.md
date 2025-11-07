@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 92%
+source-wordcount: '2719'
+ht-degree: 91%
 
 ---
 
@@ -203,14 +203,14 @@ MSM Live Copy 是特定站点内容的副本，它保留了与原始源的实时
 >
 >此部分中的图表和描述代表潜在 Live Copy 的快照。虽然它们并不全面，但提供了概述以重点说明具体特征。
 
-最初创建 Live Copy 时，选定的源页面会以 1:1 的比例反映在 Live Copy 中。之后，还可以直接在 Live Copy 中创建新资源（页面和/或段落），因此了解这些变体以及它们对同步产生的影响会很有用。可能的构图包括：
+最初创建Live Copy时，选定的源页面会以1:1为基础反映在Live Copy中。 之后，还可以直接在 Live Copy 中创建新资源（页面和/或段落），因此了解这些变体以及它们对同步产生的影响会很有用。可能的构图包括：
 
 * [具有非 Live Copy 页面的 Live Copy](#live-copy-with-non-live-copy-pages)
 * [嵌套式 Live Copy](#nested-live-copies)
 
 Live Copy 的基本形式具有：
 
-* 以 1:1 的比例反映所选源页面的 Live Copy 页面。
+* 以1:1为基础反映所选源页面的Live Copy页面。
 * 一个配置定义。
 * 为每个资源定义的实时关系：
    * 将 Live Copy 资源与其 Blueprint/源链接。
@@ -293,7 +293,7 @@ Live Copy 的源可以是常规页面，也可以是 Blueprint 配置包含的�
 
 ### 转出冲突 {#rollout-conflicts}
 
-转出可能会变得复杂，尤其是当作者同时在源和 Live Copy 中编辑内容时。因此，了解AEM如何处理转出[&#128279;](rollout-conflicts.md)期间可能发生的任何冲突很有用。
+转出可能会变得复杂，尤其是当作者同时在源和 Live Copy 中编辑内容时。因此，了解AEM如何处理转出[期间可能发生的任何](rollout-conflicts.md)冲突会很有用。
 
 ### 暂停和取消继承与同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 

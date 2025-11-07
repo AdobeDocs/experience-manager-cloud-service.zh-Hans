@@ -5,7 +5,7 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -55,10 +55,12 @@ ht-degree: 100%
 
 ## 搜索、使用和编辑资源 {#support-to-search-use-edit}
 
+<!--writer - please check RAW files row below. There was an extra column, so I deleted a duplicate section. I think I did it right. -->
+
 | 资源类型 | [下载](/help/assets/manage-organize-assets-view.md#download) | 拖放 | [图像编辑器](/help/assets/edit-images-assets-view.md) | [搜索](/help/assets/search-assets-view.md) | [智能标记](/help/assets/metadata-assets-view.md#tags) | [重命名](/help/assets/manage-organize-assets-view.md) | [版本](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | 栅格图像 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW 文件 | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW 文件 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | 文件夹 | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | 视频 | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC Libraries | − | − | − | − | − | ✓ | ✓ |
@@ -128,4 +130,4 @@ ht-degree: 100%
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)

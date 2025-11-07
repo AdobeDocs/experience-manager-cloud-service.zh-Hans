@@ -4,7 +4,7 @@ description: 了解如何在发布层上为 AEM as a Cloud Service 设置 Open I
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
@@ -156,7 +156,7 @@ IdP 配置中的信息：
 | `user.dynamicMembership` | 我们建议启用动态组会员资格 | true |
 | `user.enforceDynamicMembership` | 我们建议启用强制执行动态组会员资格 | true |
 | `group.dynamicGroups` | 我们建议启用动态组 | true |
-| user.propertyMapping | 提供的 `UserInfoProcessor` 实施只同步少数几个属性。可以将其修改和自定义。 | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |  |
+| user.propertyMapping | 提供的 `UserInfoProcessor` 实施只同步少数几个属性。可以将其修改和自定义。 | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=profile/name&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |
 | `user.membershipNestingDepth` | 返回在会员资格关系同步时最大的组嵌套深度。值为 0 时可有效禁用组会员资格查找。值为 1 时仅添加用户的直接组。仅在同步一个用户会员资格祖先时才同步各个组的情况下，这个值不起任何作用。 | 1 |
 
 ### 配置外部登录模块 {#configure-the-external-login-module}

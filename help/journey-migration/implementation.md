@@ -4,7 +4,7 @@ description: 确保您的代码和内容已准备好迁移到云
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 9%
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 在此历程的上一部分中，您已通过[熟悉AEM as a Cloud Service](/help/journey-migration/getting-started.md)中的更改，并确定您的部署是否已准备好通过[准备阶段](/help/journey-migration/readiness.md)移至云中。
 
-本文接下来提供了有关如何使用Adobe提供的工具以确保您的代码和内容准备好移动到云的建议。
+本文接下来提供了有关如何使用Adobe提供的工具的建议，以确保您的代码和内容可以移动到云中。
 
 ## 目标 {#objective}
 
@@ -37,7 +37,7 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 您可以通过参阅以下资源来熟悉使用Cloud Manager：
 
-* [入门培训历程](/help/journey-onboarding/overview.md)，了解有关Experience Manageras a Cloud Service入门的自助资源。
+* [入门培训历程](/help/journey-onboarding/overview.md)，了解有关Experience Manager as a Cloud Service入门的自助资源。
 
 * [将 Git 与 Adobe Cloud Manager 集成](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)，了解使用 Single Git 存储库来部署代码的相关信息。
 
@@ -45,7 +45,7 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 ## 使用Adobe提供的工具为您的内容和代码云做好准备 {#use-tools-to-make-code-and-content-cloud-ready}
 
-向Cloud Service过渡的确切步骤取决于您所购买的系统以及所遵循的软件开发生命周期惯例。
+迁移到Cloud Service的确切步骤取决于您购买的系统以及所遵循的软件开发生命周期惯例。
 
 下图显示了此阶段涉及的主要步骤，其中涉及转换代码和内容以用于AEM as a Cloud Service：
 
@@ -61,39 +61,39 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 内容迁移是一个多步骤的过程，它需要在不同的团队之间进行规划、跟踪和协作。
 
-有关工具的工作方式以及Adobe建议您如何使用它的完整详细信息，请参阅[内容传输工具文档](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)。
+有关该工具的工作方式以及Adobe建议您如何使用它的完整详细信息，请参阅[内容传输工具文档](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)。
 
 ## 代码重构 {#code-refactor}
 
 ### 为开发设置 {#set-up-for-development}
 
-现在应该开始重构现有功能以与Cloud Service兼容。
+现在该开始重构现有功能以与Cloud Services兼容了。
 
 首先，查看详细说明基本工具的文档，然后开始重构您的代码：
 
 
-* 在规划期间，最好是列出必须重构才能与AEM as a Cloud Service兼容的区域。 您可以查看[开发准则](/help/implementing/developing/introduction/development-guidelines.md)，了解有关如何重构和优化代码以进行Cloud Service的更多详细信息。
-* 阅读有关如何[在AEM as a Cloud Service中管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=zh-Hans#what-is-a-configuration)的信息。
-* 了解如何通过下载[AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=zh-Hans)来设置本地开发环境
+* 在规划期间，最好是列出必须重构才能与AEM as a Cloud Service兼容的区域。 您可以查看[开发准则](/help/implementing/developing/introduction/development-guidelines.md)，了解有关如何重构和优化Cloud Service代码的更多详细信息。
+* 阅读有关如何[在AEM as a Cloud Service中管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration)的信息。
+* 了解如何通过下载[AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)来设置本地开发环境
 * 最后，请熟悉[AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)。
 
 此外，您还可以：
 
-* 观看此视频，了解如何本地安装Dispatcher SDK：
+* 观看本视频，了解如何本地安装Dispatcher SDK：
 
   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * 观看本视频，了解如何配置Dispatcher SDK：
 
-  >[!VIDEO](https://video.tv.adobe.com/v/33556?captions=chi_hans)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### 思维方式的改变 {#a-change-in-mindset}
 
 在AEM as a Cloud Service中开发和运行代码需要改变思维方式。 需要注意的是，代码必须是可复原的，尤其是在实例可能随时停止时。在云服务中运行的代码必须意识到它始终在群集中运行这一事实。这意味着始终会有多个实例在运行。
 
-AEM Maven项目需要进行某些更改才能与云兼容。 AEM as a Cloud Service要求将&#x200B;*content*&#x200B;和&#x200B;*code*&#x200B;分离为不同的包，以便部署到AEM中：
+AEM Maven项目需要进行某些更改才能与云兼容。 AEM as a Cloud Service要求将&#x200B;*内容*&#x200B;和&#x200B;*代码*&#x200B;分离为不同的包，以便部署到AEM中：
 
-* `/apps`和`/libs`被视为AEM的不可变区域，因为AEM启动后（即在运行时）无法对其进行更改。 这包括创建、更新或删除操作。 运行时对不可改变区域所做的任何更改尝试都将失败。
+* `/apps`和`/libs`被视为AEM中的不可变区域，因为AEM启动后（即在运行时），无法对其进行更改。 这包括创建、更新或删除操作。 运行时对不可改变区域所做的任何更改尝试都将失败。
 
 * 存储库中的其他所有内容（例如，`/content` 、 `/conf` 、 `/var` 、 `/home` 、 `/etc` 、 `/oak:index` 、 `/system` 、 `/tmp`）都是可变区域，这意味着可在运行时更改这些区域。
 
@@ -106,8 +106,8 @@ Adobe提供了多种工具来帮助加速某些代码重构任务。 了解这�
 
 * [资源工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)，用于自动迁移资源处理工作流的工具
 * [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，此工具可将您现有的Dispatcher配置转换为适用于AEM as a Cloud Service的格式。
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=zh-Hans)，一种将AEM多模式项目作为输入并将其转换为AEM as a Cloud Service项目的工具
-* [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=zh-Hans)，一种将索引转换为与AEM as a Cloud Service兼容的表单的工具
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html)，一种将AEM多模式项目作为输入并将其转换为AEM as a Cloud Service项目的工具
+* [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html)，一种将索引转换为与AEM as a Cloud Service兼容的表单的工具
 * [现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)，一套实用工具，可用于将旧版AEM功能转换为AEM as a Cloud Service的现代且受支持的功能。
 
 设置本地开发环境后，请参阅[文档](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)以熟悉AEM as a Cloud Service SDK。
@@ -128,13 +128,13 @@ Cloud Manager管道支持执行针对暂存环境运行的测试。
 遵循以下文档中有关代码质量测试的最佳实践：
 
 * [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)，该文档描述了编写测试脚本的过程，并说明了建议覆盖率至少为50%的概念。
-* [了解自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)，该规则旨在描述Cloud Manager根据AEM Engineering的最佳实践创建的自定义代码质量规则。
+* [了解自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)，该规则旨在描述Cloud Manager根据AEM Engineering的最佳实践创建并执行的自定义代码质量规则。
 
 ## 准备上线 {#preparing-for-go-live}
 
-准备源系统以进行迁移涉及系统和AEM管理员级别任务。 首先，通过检查[修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=zh-Hans)和[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=zh-Hans)任务状态，验证内容存储库是否处于维护良好的状态。 如果您正在运行AEM版本6.3（因为内容传输工具与版本6.3及更高版本兼容），建议先执行离线压缩，然后再执行数据存储垃圾收集。
+准备要迁移的源系统涉及系统和AEM管理员级别任务。 首先，通过检查[修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)任务状态，验证内容存储库是否处于维护良好的状态。 如果您正在运行AEM版本6.3（因为内容传输工具与版本6.3及更高版本兼容），建议先执行离线压缩，然后再执行数据存储垃圾收集。
 
-建议对所有AEM版本执行[数据一致性检查](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=zh-Hans)，以确保内容存储库处于良好状态以启动迁移活动。
+建议对所有AEM版本执行[数据一致性检查](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html)，以确保内容存储库处于良好状态以启动迁移活动。
 
 需要系统管理员级别的访问权限才能安装和配置[AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
 
@@ -144,7 +144,7 @@ Cloud Manager管道支持执行针对暂存环境运行的测试。
 
 建立[生产克隆](#proof-of-migration)的访问权限后，继续检查存储库的运行状况。 如上一节中所述，目标是在开始迁移之前清理并压缩源上的存储库。 此步骤可能会节省大量时间，否则，在迁移开始后，将花费大量时间对问题进行故障诊断。
 
-| 操作项 | 主要要点 |
+| 操作项 | 关键要点 |
 |---------|----------|
 | 用户、组和权限 | 您需要了解成员资格相关的用户、组的数量和复杂性。 在迁移之前，寻找机会清理源中所有未使用的用户和组。 |
 | 未完成资产处理 | 尝试在开始迁移之前完成源系统中的资源处理，以避免迁移后AEM as a Cloud Service中出现潜在问题。 |
@@ -182,20 +182,20 @@ One more important datapoint is the amount of time it takes to complete the [use
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
 | PRDCLONE-PUBLISH-TOP-UP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
-如上表所示，遵循特定命名格式来标识迁移迭代很有帮助，例如：**PRDCLONE** (源AEM环境)、**AUTHOR/PUBLISH** (AEM as a Cloud Service环境)、**CSSTAGE-AUTHOR** (AEM as a Cloud Service实例)等。
+如上表所示，遵循特定命名格式来标识迁移迭代很有帮助，例如：**PRDCLONE** (对于源AEM环境)、**AUTHOR/PUBLISH** (对于AEM as a Cloud Service环境)、**CSSTAGE-AUTHOR** (对于AEM as a Cloud Service实例)等等。
 
 一些影响您的迁移计划的重要详细信息：
 
 **所需的提取总数**
 
-* 特定环境中的创作提取和Publish提取被视为两个并行提取，因为它们彼此独立。
+* 特定环境中的创作提取和发布提取被视为两个并行提取，因为它们彼此独立。
 * 基于特定时间段内存储库增长的增补提取次数。
 
 **所需的引入总数**
 
 * 将此项目捕获到计划中很重要，因为可以将提取的集摄取到多个Cloud Service环境中。
 * 增补摄取的次数。
-* 将内容从Source创作迁移到Cloud Service创作实例，并将内容从Source Publish迁移到Cloud ServicePublish是避免将所有创作内容摄取到Cloud ServicePublish的最佳实践。
+* 将内容从Source Author迁移到Cloud Service Author实例，并将内容从Source Publish迁移到Cloud Service Publish是避免将所有作者内容摄取到Cloud Service Publish的最佳实践。
 
 ### 迁移跟踪器 {#migration-tracker}
 
@@ -228,7 +228,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * 页数
    * 资源数
    * 用户和组的数量
-* 了解是否在AEM源上启用了以下功能(AEM as a Cloud Service中也要求这样做)：
+* 了解是否在AEM源中启用了以下功能(AEM as a Cloud Service中也要求这样做)：
    * 智能标记
    * 相似性搜索
    * 搜索包含Word和PDF文档中的文本
@@ -258,4 +258,4 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 ## 后续内容 {#what-is-next}
 
-在您充分了解如何评估您的AEM安装是否已准备好迁移到云后，当我们了解如何使用所需的工具使其做好准备时，您就可以进入[上线阶段](/help/journey-migration/go-live.md)。
+在您完全了解如何评估您的AEM安装是否已准备好迁移到云后，作为我们了解如何使用所需的工具使其准备就绪的参考，您是时候进入[上线阶段](/help/journey-migration/go-live.md)了。

@@ -2,9 +2,9 @@
 title: 快速发布到 [!DNL AEM and Dynamic Media]
 description: 通过 [!DNL Assets view] 中的快速发布，可同时或单独将资产发布到 [!DNL AEM and Dynamic Media] 。 您可以选择资源和文件夹，然后选择发布到 [!DNL Dynamic Media] 或 [!DNL AEM]。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-feature: Publishing, [!DNL Dynamic Media]
+feature: Publishing
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%

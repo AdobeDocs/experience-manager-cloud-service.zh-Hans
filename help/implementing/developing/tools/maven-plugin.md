@@ -4,7 +4,7 @@ description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -41,7 +41,7 @@ AEM as a Cloud Service遵循由最新的AEM项目原型实施的包管理和项�
 
 >[!TIP]
 >
->请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)文档。 AEM 6.5完全支持这两项功能。
+>请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两项功能。
 
 ## 获取内容包Maven插件 {#obtaining-the-content-package-maven-plugin}
 
@@ -97,7 +97,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 | `failOnError` | `boolean` | 否 | `false` | 如果值为`true`，则会在发生错误时导致生成失败。 值为`false`会导致生成忽略该错误。 | 除`package`之外的所有目标 |
 | `name` | `String` | `build`：是，`install`：否，`rm`：是 | `build`：无默认值，`install`： Maven项目的`artifactId`属性的值 | 要执行操作的包的名称 | 除`ls`之外的所有目标 |
 | `password` | `String` | 是 | `admin` | 用于通过AEM进行身份验证的密码 | 除`package`之外的所有目标 |
-| `serverId` | `String` | 否 | 从中检索用于身份验证的用户名和密码的服务器ID | 除`package`之外的所有目标 |
+| `serverId` | `String` | 否 | 从中检索用于身份验证的用户名和密码的服务器ID | 除`package`之外的所有目标 |  |
 | `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM包管理器的HTTP服务API的URL | 除`package`之外的所有目标 |
 | `timeout` | `int` | 否 | `5` | 与包管理器服务通信的连接超时（以秒为单位） | 除`package`之外的所有目标 |
 | `useProxy` | `boolean` | 否 | `true` | 值为`true`会导致Maven使用找到的第一个活动代理配置将请求代理到包管理器。 | 除`package`之外的所有目标 |
@@ -215,4 +215,4 @@ rm目标的所有参数在[公共参数](#common-parameters)部分中进行了�
 
 >[!TIP]
 >
->请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hans)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)文档。 AEM 6.5完全支持这两项功能。
+>请参阅AEM文档中的[AEM as a Cloud Service项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档。 AEM 6.5完全支持这两项功能。

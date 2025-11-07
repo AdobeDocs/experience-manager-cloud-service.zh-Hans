@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 10%
@@ -32,7 +32,7 @@ ht-degree: 10%
    | ---------------------- | ------- |
    | 批量大小 | 要为其导入元数据的批次中的资源数。 默认值为 50。最大值为100。 |
    | 字段分隔符 | 默认值为`,` （逗号）。 您可以指定任何其他字符。 |
-   | 多值分隔符 | 元数据值的分隔符。 默认值为`|`。 |
+   | 多值分隔符 | 元数据值的分隔符。 默认值为`\|`。 |
    | 启动工作流 | 默认为False。 当设置为`true`时，默认设置对DAM元数据回写工作流(将元数据写入二进制XMP数据)有效。 启用工作流会减慢系统速度。 |
    | 资产路径列名称 | 定义包含资产的CSV文件的列名称。 |
 
