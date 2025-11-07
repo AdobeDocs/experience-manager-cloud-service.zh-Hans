@@ -73,8 +73,8 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 
 * 在规划期间，最好是列出必须重构才能与AEM as a Cloud Service兼容的区域。 您可以查看[开发准则](/help/implementing/developing/introduction/development-guidelines.md)，了解有关如何重构和优化Cloud Service代码的更多详细信息。
-* 阅读有关如何[在AEM as a Cloud Service中管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration)的信息。
-* 了解如何通过下载[AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)来设置本地开发环境
+* 阅读有关如何[在AEM as a Cloud Service中管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=zh-Hans#what-is-a-configuration)的信息。
+* 了解如何通过下载[AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=zh-Hans)来设置本地开发环境
 * 最后，请熟悉[AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)。
 
 此外，您还可以：
@@ -106,8 +106,8 @@ Adobe提供了多种工具来帮助加速某些代码重构任务。 了解这�
 
 * [资源工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)，用于自动迁移资源处理工作流的工具
 * [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，此工具可将您现有的Dispatcher配置转换为适用于AEM as a Cloud Service的格式。
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html)，一种将AEM多模式项目作为输入并将其转换为AEM as a Cloud Service项目的工具
-* [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html)，一种将索引转换为与AEM as a Cloud Service兼容的表单的工具
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=zh-Hans)，一种将AEM多模式项目作为输入并将其转换为AEM as a Cloud Service项目的工具
+* [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=zh-Hans)，一种将索引转换为与AEM as a Cloud Service兼容的表单的工具
 * [现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)，一套实用工具，可用于将旧版AEM功能转换为AEM as a Cloud Service的现代且受支持的功能。
 
 设置本地开发环境后，请参阅[文档](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)以熟悉AEM as a Cloud Service SDK。
@@ -132,9 +132,9 @@ Cloud Manager管道支持执行针对暂存环境运行的测试。
 
 ## 准备上线 {#preparing-for-go-live}
 
-准备要迁移的源系统涉及系统和AEM管理员级别任务。 首先，通过检查[修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)任务状态，验证内容存储库是否处于维护良好的状态。 如果您正在运行AEM版本6.3（因为内容传输工具与版本6.3及更高版本兼容），建议先执行离线压缩，然后再执行数据存储垃圾收集。
+准备要迁移的源系统涉及系统和AEM管理员级别任务。 首先，通过检查[修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=zh-Hans)和[数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=zh-Hans)任务状态，验证内容存储库是否处于维护良好的状态。 如果您正在运行AEM版本6.3（因为内容传输工具与版本6.3及更高版本兼容），建议先执行离线压缩，然后再执行数据存储垃圾收集。
 
-建议对所有AEM版本执行[数据一致性检查](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html)，以确保内容存储库处于良好状态以启动迁移活动。
+建议对所有AEM版本执行[数据一致性检查](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=zh-Hans)，以确保内容存储库处于良好状态以启动迁移活动。
 
 需要系统管理员级别的访问权限才能安装和配置[AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
 
