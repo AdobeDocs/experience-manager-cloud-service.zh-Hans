@@ -147,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)中的[Experience Manager Assets查看器和Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)以及[仅适用于Experience Manager Assets的查看器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)。
+另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)中的[Experience Manager Assets查看器和Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)以及[仅适用于Experience Manager Assets的查看器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)。
 
 ## 最佳实践：使用HTML5视频查看器 {#best-practice-using-the-html-video-viewer}
 
@@ -439,11 +439,11 @@ Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.2
 1. 选择Experience Manager左上角的Experience Manager徽标。 在左边栏中，单击![锤子图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL 视频报表]**。
 1. 在“视频报表”页面上，执行以下操作之一：
 
-   * 在右上角附近，选择&#x200B;**[!UICONTROL 刷新视频报告]**图标。
+   * 在右上角附近，选择&#x200B;**[!UICONTROL 刷新视频报告]**&#x200B;图标。
 仅当报表的结束日期为当天时，才能使用刷新。 此功能可确保您能够查看自上次运行报表以来发生的视频跟踪。
 
-   * 在右上角附近，选择&#x200B;**[!UICONTROL 日期选取器]**图标。
-指定要获取其视频数据的开始和结束日期范围，然后选择**[!UICONTROL 运行报表]**。
+   * 在右上角附近，选择&#x200B;**[!UICONTROL 日期选取器]**&#x200B;图标。
+指定要获取其视频数据的开始和结束日期范围，然后选择&#x200B;**[!UICONTROL 运行报表]**。
 
    “排名最前的量度”组框标识了您网站上所有&#x200B;*已发布*&#x200B;视频的各种聚合量度。
 
@@ -836,7 +836,7 @@ Dynamic Media支持通过URL修饰符将单个字幕与视频相加。 请参阅
 
 1. 要开始播放，请单击![PLay图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
 如有需要，请单击![最大化图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg)以最大化查看窗口。
-请注意页面左下角附近的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/dynamic-media/embed-code.md)。
+请注意页面左下角附近的&#x200B;**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/dynamic-media/embed-code.md)。
 1. 在预览页面的右上角附近，单击&#x200B;**[!UICONTROL 关闭]**。
 
 ### 从视频中删除字幕或音频跟踪文件
