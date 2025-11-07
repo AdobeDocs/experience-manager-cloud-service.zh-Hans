@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 18%
+ht-degree: 23%
 
 ---
 
@@ -33,7 +33,7 @@ AEM中的交互式通信模板允许用户定义可重用的布局结构，例�
 
 ## 创建交互式通信模板
 
-要创建交互式通信片段，请执行以下步骤：
+要创建交互式通信模板，请执行以下步骤：
 
 1. 打开&#x200B;**Adobe Experience Manager (AEM) Forms as a Cloud Service实例**。
 

@@ -1,10 +1,10 @@
 ---
-title: 交互式通信编辑器中的数值字段对象
-description: AEM Forms中的交互式通信编辑器中的数字字段对象，它允许作者以受控格式从用户处收集数字输入。
+title: 交互式通信编辑器中的数值字段组件
+description: AEM Forms中的交互式通信编辑器中的数字字段组件允许作者以受控格式从用户收集数字输入。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 9%
@@ -12,7 +12,7 @@ ht-degree: 9%
 ---
 
 
-# 交互式通信编辑器中的数值字段对象
+# 交互式通信编辑器中的数值字段组件
 
 >[!NOTE]
 >
@@ -130,6 +130,6 @@ ht-degree: 9%
 
 - 保持一致的外观和排版方式以符合品牌准则。
 
-交互式通信编辑器中的&#x200B;**数字字段**&#x200B;对象是用于基于数字的数据收集的精确、可靠的工具。 通过强大的格式设置、可见性控制和数据绑定选项，它可确保数字输入被干净地捕获并无缝地集成到数字表单中。 如果样式和配置正确，它可显着增强表单可用性和整体数据准确性。
+交互式通信编辑器中的&#x200B;**数字字段**&#x200B;组件是用于基于数字的数据收集的精确、可靠的工具。 通过强大的格式设置、可见性控制和数据绑定选项，它可确保数字输入被干净地捕获并无缝地集成到数字表单中。 如果样式和配置正确，它可显着增强表单可用性和整体数据准确性。
 
 

@@ -4,10 +4,10 @@ description: 交互式通信编辑器中的动态页码允许作者在其PDF输�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 18%
+source-wordcount: '404'
+ht-degree: 13%
 
 ---
 
@@ -25,6 +25,25 @@ ht-degree: 18%
 ## 简介
 
 交互式通信(IC)中的动态页码功能允许作者在其PDF输出中自动显示页码。 可以在母版页级别启用页码，确保所有关联设计页面的页码一致。 这有助于在多页通信中保持清晰的页面跟踪和专业的布局。
+
+![查找IC文档](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## 如何在交互式通信编辑器中使用动态页码
+
+1. 打开交互式通信编辑器
+在IC编辑器中打开交互式通信项目。
+
+1. 转至母版页
+只能在母版页启用页码。 导航到通信的母版页。
+
+1. 启用页码
+在“属性”面板中，打开“启用页码”切换开关。 这会自动将页码添加到所有关联的页面。
+
+1. 自定义投放位置
+页码组件在拖放并使用标准文本属性随意自定义后，可以放置在画布上的任何位置。
+
+1. 在PDF中预览
+页码仅在PDF预览期间显示，并在每个页面上显示动态编号。
 
 ## 主要功能
 

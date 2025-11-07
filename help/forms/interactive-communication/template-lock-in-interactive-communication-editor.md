@@ -4,10 +4,10 @@ description: 利用交互式通信编辑器中的模板锁定，模板作者可�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '505'
+ht-degree: 10%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 11%
 交互式通信(IC)编辑器中的模板锁定功能允许模板作者将修改限制为通信模板的特定元素。 这可以确保设计一致性，保护关键内容，并跨重用模板以创建个性化通信的团队实施治理。
 
 应用时，锁定的组件看起来截然不同，下游作者或参与者无法对其进行修改，具体取决于锁定的类型设置。 此功能有助于维护所有衍生通信的品牌标准、数据完整性和布局一致性。
+
+![查找IC文档](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## 2.锁定类型
 
@@ -56,15 +58,29 @@ ht-degree: 11%
 
 - 调整元素的宽度或高度
 
-## 3.派生通信中的行为
+## 3.如何在交互式通信编辑器中使用模板锁定
 
-- 从锁定的模板创建通信时，对于通信作者，锁定的元素在IC编辑器中显示为只读。
+按照以下步骤在交互式通信(IC)模板中应用内容或布局锁定：
 
-- 具有内容锁定的组件无法更改其内部属性或绑定。
+1. 打开您的模板
+打开或创建模板，按照指南[创建交互式通信模板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)操作
 
-- 无法移动具有布局锁的组件或调整其大小。
+1. 选择组件
+单击要限制的组件（文本框、图像或子表单）。
 
-这允许模板创建者保持对设计和结构的控制，同时使其他用户能够专注于可变内容和数据驱动的自定义。
+1. 访问锁定选项
+在“属性”面板中，转到“锁定”部分。
+
+1. 应用锁定
+
+   1. 内容锁定：禁止编辑文本、样式和数据。
+
+   1. 布局锁定：限制移动和调整大小。
+
+   1. 您可以启用这两个选项以获得完全保护。
+
+1. 保存并验证
+保存模板并基于模板创建新IC，以确认无法修改锁定的元素。
 
 ## 4.最佳做法
 
