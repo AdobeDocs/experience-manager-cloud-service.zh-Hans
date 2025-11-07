@@ -63,7 +63,7 @@ ht-degree: 10%
 按照以下步骤在交互式通信(IC)模板中应用内容或布局锁定：
 
 1. 打开您的模板
-打开或创建模板，按照指南[创建交互式通信模板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)操作
+打开或创建模板，按照指南[创建交互式通信模板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)操作
 
 1. 选择组件
 单击要限制的组件（文本框、图像或子表单）。
