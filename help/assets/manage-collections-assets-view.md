@@ -4,10 +4,10 @@ description: 收藏集是Experience Manager Assets视图中的一组资源。 �
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 92%
+source-wordcount: '1084'
+ht-degree: 78%
 
 ---
 
@@ -37,6 +37,8 @@ You can share collections with various users that are assigned different levels 
 * [将资源添加到收藏集](#add-assets-to-collection)
 
 * [从收藏集删除资源](#remove-assets-from-collection)
+
+* [在收藏集内搜索](#search-collection)
 
 * [创建智能收藏集](#create-smart-collection)
 
@@ -93,6 +95,32 @@ You can share collections with various users that are assigned different levels 
 1. 单击该收藏集，然后选择要从该收藏集中删除的项。
 
 1. 单击&#x200B;**[!UICONTROL 删除]**。
+
+## 在收藏集内搜索 {#search-collection}
+
+您可以在收藏集中搜索以轻松查找相关资源。 为此，请执行以下步骤：
+
+* 导航到&#x200B;**[!DNL Collections]**。 在搜索栏中，输入关键字以查找所需的收藏集。 搜索栏显示所选收藏集的位置。
+
+* 要优化搜索结果，请打开&#x200B;**[!DNL Filters]**&#x200B;并确保在&#x200B;**[!DNL Collections]**&#x200B;下选择&#x200B;**[!DNL Asset Type]**。
+
+* 在&#x200B;**[!DNL Collection Visibility]**&#x200B;下拉列表中，选择以下选项之一：
+
+   * **[!DNL All]：**&#x200B;显示所有收藏集，无论可见性如何。
+   * **[!DNL Public Collection]：**&#x200B;仅显示对所有用户可见的收藏集。
+   * **[!DNL Private Collection]：**&#x200B;仅显示对特定用户或组受限或可见的集合。
+
+* 在[!DNL Collection Type]下拉列表中，选择以下选项之一：
+
+   * **[!DNL All]：**&#x200B;同时显示常规收藏集和智能收藏集。
+   * **[!DNL Collection]：**&#x200B;显示手动创建的收藏集，其中单独添加资产。
+   * **[!DNL Smart Collection]：**&#x200B;显示自动包含在[智能收藏集](#manage-smart-collection)下保存的资产的收藏集。
+
+* 通过&#x200B;**[!DNL Created Date]**&#x200B;下拉列表，可根据收藏集的创建时间来筛选收藏集。 您可以指定日期范围以查找最近创建的或更早的收藏集。
+
+  ![搜索收藏集](assets/search-collection.png)
+
+有关详细信息，请参阅[搜索资源](search-assets-view.md)、[筛选搜索结果](search-assets-view.md#refine-search-results)或[管理保存的搜索](search-assets-view.md##saved-search)。
 
 ## 管理智能收藏集 {#manage-smart-collection}
 
@@ -208,4 +236,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)

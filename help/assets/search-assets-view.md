@@ -4,10 +4,10 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 83%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -33,22 +33,19 @@ ht-degree: 83%
 
 ## 筛选搜索结果 {#refine-search-results}
 
+您可以通过应用多个筛选器来优化搜索结果以查找相关资源。 这些过滤器由管理员配置，基于文件、文件夹和收藏集。 请参阅[自定义搜索筛选器](custom-search-filters.md)。
+
+![搜索筛选条件](assets/filters-panel.gif)
+
 您可以根据以下参数筛选搜索结果。
 
-![搜索筛选条件](assets/filters1.png)
-
-*图：根据各种参数筛选搜索出的资源。*
-
-* 资源状态：使用`Approved`、`Rejected`或`No Status`资源状态筛选搜索结果。
-
+* 资产状态：使用`Approved`、`Rejected`或`No Status`资产状态筛选搜索结果。
 * 文件类型：按照支持的文件类型筛选搜索结果，即 `Images`、`Documents` 和 `Videos`。
 * MIME 类型：筛选一种或多种支持的文件格式。<!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * 图像大小：提供一个或多个最小尺寸和最大尺寸来筛选图像。大小按照以像素为单位的尺寸提供，而不是图像的文件大小。
 * 创建日期：在元数据中提供的创建资产的日期。使用的标准日期格式为 `yyyy-mm-dd`。
 * 修改日期：资产的最后修改日期。使用的标准日期格式为 `yyyy-mm-dd`。
-
 * 过期日期：根据 `Expired` 资产状态筛选搜索结果。此外，还可指定资产的有效期限日期范围以进一步筛选搜索结果。
-
 * 自定义筛选器： [将自定义筛选器](#custom-filters)添加到Assets视图用户界面。 与标准筛选器一起应用自定义筛选器以细化搜索结果。
 
 可按 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的升序或降序为搜索到的资产排序。默认情况下，根据 `Relevance` 为搜索到的资产排序。
@@ -375,6 +372,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
+
 
 

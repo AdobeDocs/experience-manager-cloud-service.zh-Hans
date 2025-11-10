@@ -3,10 +3,10 @@ title: 自定义搜索过滤器
 description: 了解自定义搜索筛选器表单
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 13%
+source-wordcount: '1425'
+ht-degree: 12%
 
 ---
 
@@ -18,18 +18,41 @@ ht-degree: 13%
 
 自定义搜索筛选器AEM Assets只能映射到可搜索属性索引中的条目。 在配置自定义筛选器体验之前，请确保包含任何自定义元数据。 [!DNL Assets view]帮助自定义搜索筛选器以简化搜索过程。 要自定义AEM Assets自定义搜索过滤器，请执行以下步骤：
 
-1. 前往&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 常规设置]**。
-1. 转到&#x200B;**[!UICONTROL 搜索]**&#x200B;选项卡。 单击&#x200B;**[!UICONTROL 自定义]**&#x200B;以配置您的搜索表单。
+1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 搜索]**。
+
+   <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
    ![自定义搜索筛选器设置](assets/custom-search-filter.png)
 
-1. 出现[!UICONTROL 配置筛选器]表单。 确保您处于编辑模式，以便能够在模板中进行修改。 您可以切换到[!UICONTROL 预览模式]以查看现有搜索表单的预览。
-1. 将[自定义筛选器](#available-custom-filters)中的筛选器元素拖放到画布上。 如果需要，您可以拖放组件以重新排序。
+1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;部分中，您可以配置以下内容：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL 文件]：**&#x200B;配置文件涉及文件类型、文件格式、资源状态、文件大小、图像尺寸、创建日期、修改日期等。
+   * **[!UICONTROL 文件夹]：**&#x200B;配置文件夹涉及创建日期、丢弃日期、丢弃者等。
+   * **[!UICONTROL 收藏集]：**&#x200B;配置收藏集涉及到收藏集可见性、收藏集类型、创建日期等。
 
-1. 单击&#x200B;**[!UICONTROL 预览模式]**&#x200B;以查看更改。
-1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以进行保存。
+1. 您可以预览可用于文件、文件夹或收藏集的默认&#x200B;**[!UICONTROL 预设筛选器]**&#x200B;表单。 但是，您无法自定义或删除此预先存在的表单。 或者，若要创建自定义筛选条件表单，请单击&#x200B;**[!UICONTROL 添加新表单]**。
+
+   >[!NOTE]
+   >
+   >每个类别（文件、文件夹或收藏集）只能创建一个自定义筛选条件表单。
+
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
+
+## 对已配置表单的操作 {#Actions-on-configured-form}
+
+您可以在已配置的筛选器表单上使用以下操作：
+
+* **[!UICONTROL 自定义]：**&#x200B;单击以添加或修改表单。 您可以将[自定义筛选器](#available-custom-filters)中的筛选器元素拖放到画布上，或者根据需要重新排序。
+
+* **[!UICONTROL 预览]：**&#x200B;单击以查看更改。
+
+* **[!UICONTROL 设置为默认值]：**&#x200B;单击以将所选表单设置为默认值。
+
+* **[!UICONTROL 删除表单]：**&#x200B;单击更多选项![更多选项](assets/do-not-localize/more-icon.svg)并选择&#x200B;**[!UICONTROL 删除表单]**&#x200B;以删除所选的筛选表单。
+
+* **[!UICONTROL 编辑表单标签]：**&#x200B;单击更多选项![更多选项](assets/do-not-localize/more-icon.svg)，并将新的标签和说明添加到自定义的筛选器表单中。
+
+  ![编辑表单标签](assets/edit-form-labels.png)
 
 ## 可用的自定义筛选条件 {#available-custom-filters}
 
@@ -404,6 +427,7 @@ Assets视图提供了以下可根据需要重新配置的自定义筛选器：
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## 删除过滤器元素 {#delete-a-filter-element}
 
