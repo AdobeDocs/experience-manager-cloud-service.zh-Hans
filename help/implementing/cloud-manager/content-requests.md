@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -109,7 +109,7 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 ### 管理内容请求的实施技术 {#implementation-techniques-to-manage-crs}
 
 * 确保提供的任何“页面未找到”响应都具有HTTP状态404。  如果返回状态为200，则将其计入内容请求。
-* 将运行状况检查或监控工具路由到/systems/probes/health URL或使用HEAD方法而不是GET以避免产生内容请求。
+* 将运行状况检查或监控工具路由到/system/probes/health URL或使用HEAD方法而不是GET以避免产生内容请求。
 * 在您与网站集成的任何自定义搜索爬虫程序中，将您对内容新鲜度的需求与AEM许可证成本平衡起来。  过于激进的爬网程序可能会占用大量内容请求。
 * 将任何重定向作为服务器端（状态301或302）而不是客户端（状态200和javascript重定向）处理，以避免两个单独的内容请求。
 * 组合或减少API调用，这些API调用是来自AEM的JSON响应，可以加载这些响应以呈现页面。
