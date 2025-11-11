@@ -4,9 +4,9 @@ description: 了解如何为Adobe Experience Manager Forms as a Cloud Service配
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 69704ca8de41c655b59ce6652a4a43b788ba75ec
+source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 3%

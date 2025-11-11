@@ -4,9 +4,9 @@ description: 了解如何为Adobe Experience Manager Forms as a Cloud Service配
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 69704ca8de41c655b59ce6652a4a43b788ba75ec
+source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 3%
@@ -92,7 +92,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
    **B。用于自适应Forms运行时API**
 
    1. **单击添加API**
-在您的项目中，单击&#x200B;**添加API**&#x200B;按钮
+在您的项目中，单击**添加API**&#x200B;按钮
 
       ![添加API](/help/forms/assets/adc-add-api.png)
 
@@ -102,7 +102,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
       3. 点击&#x200B;**下一个**
 
    3. **身份验证方法**
-选择&#x200B;**OAuth服务器到服务器**&#x200B;身份验证方法。
+选择**OAuth服务器到服务器**&#x200B;身份验证方法。
 
 
       ![选择身份验证方法](/help/forms/assets/adc-add-authentication-method.png)
