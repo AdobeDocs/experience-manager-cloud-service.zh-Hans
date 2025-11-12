@@ -116,7 +116,7 @@ JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较�
 
 >[!NOTE]
 >
-> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
 
