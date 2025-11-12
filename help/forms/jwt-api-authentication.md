@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '451'
 ht-degree: 3%
 
 ---
@@ -78,7 +78,7 @@ JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较�
 
 4. 访问令牌生成
 
-   使用Adobe IMS API以编程方式生成令牌：
+   使用cURL命令以编程方式生成令牌：
 
    **必需的凭据：**
 
@@ -92,7 +92,7 @@ JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较�
    https://ims-na1.adobelogin.com/ims/token/v3
    ```
 
-   **示例请求(curl)：**
+   **示例请求(cURL)：**
 
    ```bash
    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -112,6 +112,11 @@ JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较�
    "expires_in": 86399
    }
    ```
+
+
+>[!NOTE]
+>
+> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
 
