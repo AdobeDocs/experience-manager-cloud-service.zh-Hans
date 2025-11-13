@@ -3,24 +3,27 @@ title: 恢复之前部署的Source代码
 description: 了解如何将环境恢复到其上次成功构建&amp；ndash；而无需运行管道。
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
 
 # 恢复之前在AEM as a Cloud Service中部署的源代码 {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->本文中介绍的功能仅通过Beta版计划提供。 要注册Beta版，请参阅[管道部署的一键式回滚](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 使用&#x200B;**还原先前部署的代码**&#x200B;将环境立即回滚到其上次成功生成 — 无需运行管道。
 
 只需打开所选环境的![更多图标或省略号菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)菜单，然后选择&#x200B;**还原** > **已部署以前的代码**&#x200B;即可回滚最近部署的源代码（以秒为单位）。
+
+另请参阅[在AEM as a Cloud Service中还原内容](/help/operations/restore.md)。
 
 >[!TIP]
 >
@@ -32,7 +35,7 @@ ht-degree: 3%
 
 * 每次成功执行管道仅允许一个恢复；要再次恢复，请完成另一次成功的管道运行。
 * 您拥有&#x200B;**环境还原创建**&#x200B;权限。 有关管理权限的详细信息，请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)。
-* 您的组织已注册测试版计划，并且功能标记已启用。
+* 保护此功能的功能标记已启用（打开）。
 * 程序在AEM as a Cloud Service上运行。
 * 该环境的最后一个管道已成功完成，并在&#x200B;**天内**&#x200B;前运行。
 * 环境状态为&#x200B;*正在运行*，没有管道正在进行中。
@@ -41,7 +44,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobe强烈建议在`Stage`之前在&#x200B;**&#x200B;中验证该过程，以便在`Production`中使用它来降低风险并确保稳定性。
+>对于首次使用，Adobe强烈建议在`Stage`之前的&#x200B;**&#x200B;中验证该过程，以便在`Production`中使用它来降低风险并确保稳定性。
 
 
 如果任何检查失败，Cloud Manager将打开以下对话框，其中列出了一个或多个未满足的条件，并禁用&#x200B;**确认**，从而阻止还原。
@@ -81,3 +84,8 @@ ht-degree: 3%
 1. Cloud Manager将环境回滚到以前的版本，保持内容和配置不变，并在“环境”页面上标记环境&#x200B;**正在恢复**，直到部署完成。
 
    ![正在还原激活](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. 在页面的右上角附近，单击![铃铛图标或“通知”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **通知**&#x200B;以了解还原的开始和结束时间。
+
+   ![开始还原时以及还原完成时还原以前的代码通知](/help/operations/assets/restore-previous-code-notifications.png)
+   *还原先前代码作业的通知。*

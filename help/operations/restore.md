@@ -4,10 +4,10 @@ description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 29%
+source-wordcount: '1358'
+ht-degree: 30%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 29%
 
 您可以使用Cloud Manager从备份中恢复AEM as a Cloud Service内容。
 
-## 概述 {#overview}
+
 
 Cloud Manager 的自助恢复过程将数据从 Adobe 系统备份中复制并还原到其原始环境。执行恢复，将丢失、损坏或意外删除的数据返回到其原始状态。
 
-恢复过程只影响内容，而不会更改您的代码和 AEM 版本。您可以随时启动单个环境的恢复操作。 （如果您需要轻松快速地恢复以前部署的源代码，而无需启动新的管道执行，则可以使用[恢复以前部署的代码](/help/operations/restore-previous-code-deployed.md)）。
+恢复过程只影响内容，而不会更改您的代码和 AEM 版本。您可以随时启动单个环境的恢复操作。
+
+如果您需要轻松快速地恢复以前部署的源代码，而无需启动新的管道执行，则可以使用[恢复以前部署的代码](/help/operations/restore-previous-code-deployed.md)。
 
 Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
