@@ -167,7 +167,7 @@ ht-degree: 98%
          + [2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [ 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [&#x200B; 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -551,7 +551,7 @@ ht-degree: 98%
    + [[!DNL Assets] 架构](/help/assets/architecture.md)
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资产微服务概述](/help/assets/asset-microservices-overview.md)
-   + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
+   + [&#x200B; [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [启用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -981,7 +981,7 @@ ht-degree: 98%
       + [自定义 HTML5 Forms 的错误消息](/help/forms/customzing-errors-html5-forms.md)
       + [将 HTML5 Forms 保存为草稿](/help/forms/saving-html5-form-draft.md)
       + [为 HTML5 Forms 启用日志记录功能](/help/forms/enable-logs.md)
-      + [调试 HTML5 Forms ](/help/forms/debug.md)
+      + [调试 HTML5 Forms &#x200B;](/help/forms/debug.md)
       + [HTML5 Forms 的脚本支持](/help/forms/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
    + 交互式通信 {#interactive-communication}
