@@ -4,10 +4,10 @@ description: 了解如何运行您自己的通用编辑器服务用于本地开�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 100%
+source-wordcount: '981'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-[请参阅这个文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)，了解如何设置 AEM 在 HTTPS 上运行，包括一份您可使用的自签名证书。
+[请参阅这个文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，了解如何设置 AEM 在 HTTPS 上运行，包括一份您可使用的自签名证书。
 
 ## 安装通用编辑器服务 {#install-ue-service}
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 运行通用编辑器服务的本地副本需要 [NodeJS 版本 20](https://nodejs.org/en/download/releases)。
 
-通用编辑器服务可通过软件分发获得。有关访问方法的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
+通用编辑器服务可通过软件分发获得。有关访问方法的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
 将 `universal-editor-service.cjs` 文件从软件分发保存到您的本地开发环境。
 
@@ -160,5 +160,7 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 1. 打开您的浏览器以转至 `https://localhost:8000/ping`。
 1. 指示您的浏览器接受[您的自签名证书](#ue-https)。
-1. 在自签名证书获得信任后，您可以使用本地通用编辑器服务编辑页面。
+1. 一旦自签名证书受到信任，就会使用本地通用编辑器服务加载该页面。
+1. 单击工具栏中的[本地开发人员登录](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)，并对您的本地AEM实例进行身份验证。
 
+您现在可以使用本地Universal Editor服务在本地AEM测试实例上编辑页面。

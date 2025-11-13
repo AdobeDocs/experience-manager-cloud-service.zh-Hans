@@ -4,9 +4,9 @@ description: 了解用于扩展通用编辑器功能的不同选项，以满足�
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 100%
 * **[AEM 网站管理扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**：打开 Sites 控制台，前往通用编辑器中页面的位置
 * **[AEM 页面锁定扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**：从通用编辑器查看和更改页面锁定状态
 * **[AEM 工作流扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**：从通用编辑器启动页面和页面内容上的工作流
-* **[AEM 通用编辑器开发登录扩展](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**：在本地开发时轻松对本地 AEM SDK 进行身份验证
 * **[生成变体](/help/generative-ai/generate-variations-integrated-editor.md)**：使用生成式人工智能 (AI) 直接在属性面板中为您的内容创建变体。
 * **[通用编辑器的 AEM 产品选取器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**：通过从编辑器中选择或移除产品数据集成 Adobe Commerce 数据。
 * **[通用编辑器内容草稿](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**：创建、编辑和管理内容的多个草稿。
