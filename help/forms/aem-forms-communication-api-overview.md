@@ -22,7 +22,7 @@ AEM Forms API通过两个主控制台进行结构化和访问：
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console是Adobe API、事件、运行时和App Builder的网关。
 
-* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供了用于调试和检查AEM as a Cloud Service环境的工具。
+* [AEM Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供了用于调试和检查AEM as a Cloud Service环境的工具。
 
 每个控制台提供对不同API和服务的访问，用于文档处理、生成、转换、加密和通信任务。 API支持不同的[身份验证方法](#authentication-methods)。
 
