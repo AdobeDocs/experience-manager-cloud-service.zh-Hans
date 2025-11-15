@@ -4,10 +4,10 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '1887'
+ht-degree: 79%
 
 ---
 
@@ -118,33 +118,29 @@ Assets视图提供了以下自定义过滤器：
 
 1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以从用户界面中移除筛选条件。
 
-## 语义搜索 {#semantic-search}
+## AI 搜索 {#ai-search}
 
-语义搜索是一种高级搜索功能，它理解用户查询的含义和意图，而不是依赖精确的关键字匹配。 它使用人工智能(AI)、自然语言处理(NLP)和机器学习来提供更准确和上下文感知的结果。
+人工智能搜索是一种高级搜索功能，它理解用户查询的含义和意图，而不是依赖精确的关键字匹配。 它利用人工智能(AI)和机器学习提供更准确和上下文感知的结果。
 
-与传统的基于关键字的搜索不同，语义搜索可以解释单词、概念以及用户意图之间的关系。 这可以确保用户找到他们要查找的内容 — 即使他们的查询用词不同、包含拼写错误或使用另一种语言。
+传统基于关键字的搜索会查找精确的术语，而人工智能搜索则解释单词、概念和用户意图之间的关系。 这可以确保用户找到他们要查找的内容 — 即使他们的查询用词不同、包含拼写错误或使用另一种语言。
 
 如果它的主要优势包括：
 
 * **多语言支持**：跨多种语言搜索，无需精确翻译。 用户可以找到相关内容，而不管其查询语言如何。
 
-* **处理错误拼写**：自动更正或解释拼写错误和拼写错误，确保即使输入不完美也能获得准确的结果。
+* **处理拼写错误**：解释拼写错误和拼写错误，确保即使输入不完美也能获得准确的结果。
 
 * **了解同义词**：提供相关术语和短语的结果，因此用户无需猜测正确的关键字。
 
-* **上下文感知搜索**：识别查询背后的意图，而不仅仅是单词。
+* **上下文感知搜索**：识别查询背后的意图，而不仅仅是确切的词。
 
->[!IMPORTANT]
->
-> 为语义搜索指定三个或三个以上的词以显示相应的结果。
-
-### 语义搜索示例 {#examples-semantic-search}
+### AI搜索示例 {#examples-ai-search}
 
 **示例提示**：*喝咖啡的女人*
 
-传统的基于关键字的搜索会查找资产元数据（如Woman、Coffee等）的精确匹配项，并返回包含这些关键字的资产。
+传统的基于关键字的搜索将查找资产元数据的精确匹配项，如`Woman`、`drinking`、`Coffee`，并返回元数据中包含所有这些术语的资产。
 
-但是，在`Girl`的情况下，语义搜索将查找相似的单词，如`Lady`、`Woman`；在`Cappuccino`的情况下，将查找咖啡选项，如`Latte`和`Coffee`。
+但是，在`Girl`的情况下，AI搜索与`Lady`、`Woman`之类的词匹配；在`Cappuccino`的情况下，与`Latte`和`Coffee`之类的词匹配。
 
 同样，您可以将此提示用西班牙语或拼写错误`Woman`指定为`Wman`，仍可获得相同的结果。
 
@@ -280,89 +276,94 @@ When userA is searching and userB add an asset that matches search results, will
 
    ![搜索优先首页预览](/help/assets/assets/search-first-preview.gif)
 
-## 上下文搜索 {#contextual-search}
 
-您还可以通过定义文本提示来搜索存储库中可用的资产。Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，进一步缩小搜索结果。
+<!--
 
-### 访问上下文搜索 {#access-contextual-search}
+## Contextual Search {#contextual-search}
 
-要访问 Experience Manager Assets 中的上下文搜索，请执行以下操作：
+You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-1. 点击左侧窗格中的&#x200B;**[!UICONTROL 搜索]** 。
+### Access Contextual Search {#access-contextual-search}
 
-   ![上下文搜索](assets/access-contextual-search.png)
+To access Contextual Search in Experience Manager Assets:
 
-1. 在“搜索”文本框中定义文本提示，然后单击&#x200B;**[!UICONTROL 上下文搜索]**。
+1. Click **[!UICONTROL Search]** in the left pane.
 
-   ![上下文搜索文本提示](/help/assets/assets/wknd-contextual-search.png)
+   ![Contextual Search](assets/access-contextual-search.png)
 
-   [!DNL Experience Manager Assets]显示搜索结果。
+1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-### 支持的过滤器 {#supported-filters}
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
-上下文搜索支持以下现成的过滤器。根据这些过滤器设置文本提示，查看适当的搜索结果。
+   [!DNL Experience Manager Assets] displays the search results.
 
-* 图像高度
+### Supported filters {#supported-filters}
 
-* 图像宽度
+Contextual Search supports the following filters out-of-the-box. Base your text prompts on these filters to view appropriate search results.
 
-* 文件类型：图像、文档、视频或文件夹。
+* Image height
 
-* MIME 类型：JPG、PNG、TIFF、GIF、MP4、PDF、PPTX、DOCX 或 XLSX
+* Image width
 
-* 创建日期
+* File type: image, document, video, or folder.
 
-* 修改日期
+* MIME type: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX or XLSX
 
-* 过期日期
+* Created date
 
-* 资产状态：已批准、已拒绝或全部
+* Modified date
 
-* 过期资产
+* Expiration date
 
-### 文本提示示例 {#text-prompts-examples}
+* Asset status: Approved, Rejected, or all
 
-**示例 1**
+* Expired assets
 
-**文字提示**：本月创建的图像。
+### Examples for the text prompts {#text-prompts-examples}
 
-[!DNL Experience Manager Assets] 自动应用以下过滤器并显示搜索结果：
+**Example 1**
 
-![上下文搜索示例 1](assets/contextual-search-example1.png)
+**Text Prompt**: Images created this month.
 
-**示例 2**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**文本提示**：图片高度至少为 200px，宽度至少为 100px，且包含海滩和晴朗的天空。
+![Contextual Search Example 1](assets/contextual-search-example1.png)
 
-[!DNL Experience Manager Assets] 自动应用以下过滤器并显示搜索结果：
+**Example 2**
 
-![上下文搜索示例 2](assets/contextual-search-example2.png)
+**Text prompt**: Images at least 200px tall and 100px wide with beach and clear sky.
 
-**示例 3**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**文本提示**：我需要上个月创建的高度为 1500 至 2500 像素的蓝天图像，并且图像未过期且已经获得批准。
+![Contextual Search Example 2](assets/contextual-search-example2.png)
 
-[!DNL Experience Manager Assets] 自动应用以下过滤器并显示搜索结果：
+**Example 3**
 
-![上下文搜索示例 3](assets/contextual-search-example3.png)
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that is not expired and approved.
 
-以下视频说明了从访问“上下文搜索用户界面”到定义文本提示以及查看搜索结果的端到端过程。
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 3](assets/contextual-search-example3.png)
+
+The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-### 禁用上下文搜索 {#disable-contextual-search}
+### Disable Contextual Search {#disable-contextual-search}
 
-管理员还可以选择为组织中的用户禁用“上下文搜索”功能。若要禁用，请执行以下步骤：
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
 
-1. 前往“**[!UICONTROL 设置]**”>“**[!UICONTROL 常规设置]**”。
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
-1. 在[!UICONTROL 上下文搜索]部分中，关闭&#x200B;**[!UICONTROL 为您的组织启用上下文搜索]**&#x200B;切换按钮，可为您组织中的所有用户停用“上下文搜索”功能。
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
 
-### “上下文搜索”反馈 {#contextual-search-feedback}
+### Contextual Search feedback {#contextual-search-feedback}
 
-如果您需要对“上下文搜索”功能提供反馈，请单击![“上下文搜索”图标](assets/do-not-localize/Smock_Help_18_N.svg)，然后单击“反馈”图标。选择反馈类型，指定主题和描述，然后单击&#x200B;**[!UICONTROL “提交”]**。
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
-![“上下文搜索”反馈](assets/contextual-search-feedback.png)
+![Contextual Search feedback](assets/contextual-search-feedback.png)
+
+-->
 
 ## 后续步骤 {#next-steps}
 
@@ -372,7 +373,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 
