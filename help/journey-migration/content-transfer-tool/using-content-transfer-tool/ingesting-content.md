@@ -4,9 +4,9 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 54829a232b4b918a525b25f9bca475d7856faa46
+source-git-commit: 7c0703d746601742a28c3c98f35e69de70f25e05
 workflow-type: tm+mt
-source-wordcount: '3616'
+source-wordcount: '3647'
 ht-degree: 12%
 
 ---
@@ -151,13 +151,13 @@ ht-degree: 12%
 > 显示“迁移令牌”字段，因为在某些情况下，实际上不允许检索该令牌。 通过允许手动提供，它可让用户无需任何其他帮助即可快速开始引入。 如果提供了令牌，但仍显示消息，则检索令牌不是问题。
 
 * AEM as a Cloud Service会维护环境状态，并且有时必须出于各种正常原因重新启动迁移服务。 如果该服务正在重新启动，则无法访问，但最终可用。
-* 可能正在实例上运行另一个进程。 例如，如果[AEM版本更新](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)正在应用更新，则系统可能忙，并且迁移服务定期不可用。 完成此过程后，可以再次尝试开始引入。
+* 可能正在实例上运行另一个进程。 例如，如果[AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)正在应用更新，则系统可能忙，并且迁移服务定期不可用。 完成此过程后，可以再次尝试开始引入。
 * 列入允许列表如果已通过Cloud Manager应用[IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，则会阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址是动态的。 目前，唯一的解决方案是在摄取和索引过程中禁用IP 允许列表 列入允许列表，方法是在摄取和索引过程运行时临时将0.0.0.0/0添加到。
 * 可能有其他原因需要调查。 如果摄取或索引继续失败，请联系Adobe客户关怀团队。
 
 ### AEM版本更新和引入 {#aem-version-updates-and-ingestions}
 
-[AEM版本更新](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)会自动应用于环境，以使其与最新的AEM as a Cloud Service版本保持同步。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。
+[AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)会自动应用于环境，以使其与最新的AEM as a Cloud Service版本保持同步。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。
 
 如果“AEM版本更新”已载入目标程序，则摄取过程会尝试在启动之前禁用其队列。 完成摄取后，版本更新程序状态将返回到摄取开始前的状态。
 
@@ -239,7 +239,7 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 
 有关更多信息以及有助于查找所有大型节点的Oak工具链接，请参阅`Node property value in MongoDB`内容传输工具先决条件[中的](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)注释。 修复所有大小较大的节点后，再次运行提取和摄取。
 
-要避免此限制，请在源AEM实例上运行[最佳实践分析器](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)并查看它提供的结果，特别是[“不支持的存储库结构”(URS)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-pattern-detection/table-of-contents/urs)模式。
+要避免此限制，请在源AEM实例上运行[最佳实践分析器](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)并查看它提供的结果，特别是[“不支持的存储库结构”(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs)模式。
 
 >[!NOTE]
 >
@@ -261,6 +261,10 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 * `Mongo network error` — 有时，建立与MongoDB的连接可能会失败，从而导致摄取过程提早退出并报告为失败。 应尝试简单的摄取重试。
 * `Mongo server selection error` — 这是一个罕见的Mongo客户端超时错误，可能由于多种基础原因而出现。 后续重试很可能会更正此问题。
 * `Mongo took too long to start` — 在极少数情况下，摄取工作流中使用的本地MongoDB可能无法启动。 后续重试很可能会更正此问题。
+
+#### AZCopy问题 {#azcopy-issues}
+
+* `AZCopy critical failure` — 在极少数情况下，用于执行引入的预复制步骤的AZCopy工具可能会意外失败。 在这种情况下，应尝试重试引入。
 
 ### 引入已取消 {#ingestion-rescinded}
 
