@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 23%
+source-wordcount: '1026'
+ht-degree: 21%
 
 ---
 
@@ -19,13 +19,13 @@ Cloud Manager提供了一个仪表板，用于轻松查看您的组织或租户�
 
 >[!IMPORTANT]
 >
->许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
+>许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
 >
 >要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
 ## 概述 {#overview}
 
-Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解决方案权利，包括使用的内容和可用的内容。 另外，Sites解决方案的内容请求消耗量度按月趋势。
+Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解决方案权利，包括已使用的量和可用的量。 另外，Sites解决方案的内容请求消耗量度按月趋势。
 
 ## 访问许可证仪表板 {#using-dashboard}
 
@@ -67,6 +67,15 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
 Cloud Manager的“许可证”区域中的&#x200B;**查看使用情况详细信息**&#x200B;按钮提供了当前资源使用情况的详细细目。 单击该链接后，将打开一个报表或功能板，其中显示与您的许可证相关的重要量度。 <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." -->此功能可帮助您进行监控，并确保您在合同范围内保持有效，同时提供见解以更好地规划和优化资源。
+
+在以下情况下，**查看使用情况详细信息**&#x200B;按钮为&#x200B;*已禁用*（已关闭）：
+
+* 该解决方案不是您合同的一部分，因此没有信用额度。 如果贷项存在，即使已冲减所有贷项，该按钮仍可用。
+* 没有为该解决方案配置Cloud Manager程序。
+* 已禁用控制使用情况详细信息的功能标记。 在按钮可用之前，必须为您的组织启用&#x200B;** （打开）。
+* 已明确禁用该解决方案的使用情况。 目前，这种情况仅适用于Edge Delivery Services。
+
+
 
 ### Sites 使用情况详细信息 {#sites-usage-details}
 
