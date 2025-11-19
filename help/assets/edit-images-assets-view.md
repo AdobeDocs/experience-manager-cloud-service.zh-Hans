@@ -4,16 +4,16 @@ description: 使用由 [!DNL Adobe Express] 提供支持的选项编辑图像并
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 744c76f29a37610313835074f2f13fdd8f098465
+source-git-commit: cbda4b0735190f0fcaaa1c573e4fc327ab903de1
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1156'
 ht-degree: 75%
 
 ---
 
 # 在 [!DNL Assets view] 中编辑图像 {#edit-images-in-assets-view}
 
-资源视图 UI 支持由 Adobe Express 提供支持并集成到 UI 中的基本图像编辑。 编辑包括调整大小、去除背景、裁剪以及 JPEG 与 PNG 格式之间的转换。此外，它还允许通过嵌入在资源视图 UI 中的 Adobe Express 界面进行高级编辑。
+Assets视图UI支持由Adobe Express提供的基础图像编辑，该视图已集成到UI中。 编辑包括调整大小、去除背景、裁剪以及 JPEG 与 PNG 格式之间的转换。此外，它还允许通过Assets视图UI中嵌入的Adobe Express界面进行高级编辑。
 
 在编辑图像之后，您可以将新图像另存为新版本。版本控制可帮助您在需要时还原为原始资源。若要编辑图像，请[打开其预览](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)，然后单击&#x200B;**“编辑图像”。**
 
@@ -25,26 +25,26 @@ ht-degree: 75%
 
 ## 编辑图像 {#edit-image}
 
-使用链接 - [资产视图并选择正确的存储库，转到资产视图](https://experience.adobe.com/#/assets) UI。 要获得访问权限，请联系您组织的管理员。
-有关任何其他参考信息，请参阅： [开始使用 Adobe Experience Manager Assets 视图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)、 [了解 Assets 视图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)用户界面和 [Assets View 使用案例](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
+使用链接 — [Assets视图](https://experience.adobe.com/#/assets)转到Assets视图UI，然后选择正确的存储库。 要获得访问权限，请联系您组织的管理员。
+有关任何其他参考信息，请参阅 — [开始使用Adobe Experience Manager Assets视图](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)、[了解Assets视图用户界面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)和[Assets视图用例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### 使用 Adobe Express 在“资源”视图上编辑图像 {#edit-image-on-assets-view-using-adobe-express}
+### 使用Adobe Express在Assets视图上编辑图像 {#edit-image-on-assets-view-using-adobe-express}
 
-导航到“资源”视图后，单击“资源&#x200B;**”**，选择一个图像，然后单击顶部边栏中的“编辑&#x200B;**”。**&#x200B;新屏幕显示了由 Adobe Express 提供支持的可用编辑选项，包括调整大小、背景去除、裁剪以及在 JPEG 和 PNG 格式之间转换。
+导航到Assets视图后，单击&#x200B;**Assets**，选择一个图像，然后单击顶部边栏中的&#x200B;**编辑**。 新屏幕显示了由 Adobe Express 提供支持的可用编辑选项，包括调整大小、背景去除、裁剪以及在 JPEG 和 PNG 格式之间转换。
 
 #### 调整图像大小 {#resize-image-using-express}
 
-将图像大小调整为热门用例中的特定大小。“资源视图”允许您通过为特定照片尺寸提供预先计算的新分辨率，快速调整图像大小以适应常见的照片尺寸。 要使用资产视图调整图像大小，请执行以下步骤：
+将图像大小调整为热门用例中的特定大小。Assets视图通过提供针对特定照片大小预先计算的新分辨率，可让您快速调整图像大小以适合常见的照片大小。 要使用Assets视图调整图像大小，请执行以下步骤：
 
 1. 单击左侧窗格中的 **调整图像大小**。对话框显示由 Adobe Express 提供支持的调整图像大小功能。
 1. 从“调整大小对象”下拉列表中选择适当的社交媒体平台，并从显示的选项中选择图像的大小。
 1. 如果需要，使用&#x200B;**“图像比例”**&#x200B;字段缩放图像。
-1. 单击&#x200B;**[!UICONTROL 应用]**&#x200B;以应用您的更改。
+1. 单击&#x200B;**[!UICONTROL 应用]**以应用您的更改。
    ![使用 Adobe Express 进行图像编辑](assets/adobe-express-resize-image.png)
 
    您编辑的图像可供下载。您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
@@ -55,7 +55,7 @@ ht-degree: 75%
 您可以按照以下步骤从图像中移除背景：
 
 1. 单击左侧窗格中的 **删除背景**。Experience Manager Assets 不含背景地显示该图像。
-1. 单击&#x200B;**[!UICONTROL 应用]**&#x200B;以应用您的更改。
+1. 单击&#x200B;**[!UICONTROL 应用]**以应用您的更改。
    ![使用 Adobe Express 保存图像](assets/adobe-express-remove-background.png)
 
    您编辑的图像可供下载。您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
@@ -85,12 +85,12 @@ ht-degree: 75%
 
 ### 在 Adobe Express 嵌入式编辑器中编辑图像 {#edit-images-in-adobe-express-embedded-editor}
 
-具有 Express 权利的用户可以使用资产视图中的嵌入式 Express 编辑器，通过 Adobe Firefly 的 GenAI 轻松编辑内容和创建新内容。 此功能提高了内容重用性并加快了内容速度。您还可以使用预定义的元素使您的资源看起来令人惊叹，或者只需单击几下即可执行快速操作来编辑图像。
+拥有Express权利的用户可以从Assets视图中使用嵌入的Express编辑器，轻松地从Adobe Firefly使用GenAI编辑内容并创建新内容。 此功能提高了内容重用性并加快了内容速度。您还可以使用预定义的元素使您的资源看起来令人惊叹，或者只需单击几下即可执行快速操作来编辑图像。
 
-![在基本内容 UI](/help/assets/assets/express-in-essentials-ui.jpg) 中表达
-要使用嵌入式编辑器编辑 [!DNL Adobe Express] 图像，请执行以下步骤：
+![在Essentials UI中表达](/help/assets/assets/express-in-essentials-ui.jpg)
+要使用[!DNL Adobe Express]嵌入式编辑器编辑图像，请执行以下步骤：
 
-1. 使用链接 - [AEM Assets 视图](https://experience.adobe.com/#/assets) 转到 AEM Assets 视图，然后选择正确的存储库。
+1. 使用链接 — [AEM Assets视图](https://experience.adobe.com/#/assets)转到AEM Assets视图，然后选择正确的存储库。
 1. 点击 **资源**，进入文件夹，然后选择一张图像。
 1. 单击&#x200B;**在 Adobe Express 中打开**。图像在快捷画布上打开。
 1. 对图像进行必要的编辑。
@@ -114,23 +114,23 @@ ht-degree: 75%
 
 * 支持的文件类型：JPEG or PNG。
 * 支持的最大文件大小：40 MB。
-* 支持的宽度和高度范围：65MP（例如，8K x 8K 或 16K x 4K）。
+* 支持的宽度和高度范围：65MP（例如，8K x 8K或16K x 4K）。
 * 重新加载页面以查看源文件夹中最新保存的新资源。
 
 ### 使用 Adobe Express 创建新资源 {#create-new-embedded-editor}
 
 [!DNL Assets view] 使您能够使用 [!DNL Adobe Express] 嵌入式编辑器从头开始创建新模板。若要使用 [!DNL Adobe Express] 创建新资源，请执行以下步骤：
 
-1. 导航到“我的工作区&#x200B;**[!UICONTROL ”，]**&#x200B;然后在顶部显示的 Adobe Express 横幅中单击“**[!UICONTROL 创建]**”。[!DNL Adobe Express] 空白画布显示在 [!DNL Assets view] 用户界面中。
+1. 导航到&#x200B;**[!UICONTROL 我的Workspace]**，然后在顶部显示的Adobe Express横幅中单击&#x200B;**[!UICONTROL 创建]**。 [!DNL Adobe Express] 空白画布显示在 [!DNL Assets view] 用户界面中。
 1. 使用[模板](https://helpx.adobe.com/cn/express/using/work-with-templates.html)创建您的内容。否则，导航至&#x200B;**[!UICONTROL 您的内容]**&#x200B;来修改现有内容。
 1. 完成编辑后，点击 **[!UICONTROL 保存]**。
-1. 为所创建的资源指定目标路径，然后单击“ **[!UICONTROL 另存为新资源]**”。
+1. 为创建的资源指定目标路径，然后单击&#x200B;**[!UICONTROL 另存为新资源]**。
 
 #### 限制 {#limitations}
 
 * 您只能修改 `JPEG` 和 `PNG` 格式类型的图像。
-* 对于桌面设备，资源大小必须小于 80 MB，对于移动设备，资源大小必须小于 40 MB。
-* 支持的宽度和高度范围介于 50 到 8000 像素之间。
+* 桌面设备的资源大小必须小于80 MB，移动设备必须小于40 MB。
+* 支持的宽度和高度范围是65MP（例如，8K x 8K或16K x 4K）。
 * 您可以将图像保存为 `PDF`, `JPEG` 或者 `PNG` 格式。
 
 <!--
@@ -154,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/cn/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -193,7 +193,7 @@ TBD: Insert a video of the available social media options.
 
 ### 后续步骤 {#next-steps}
 
-* 使用“资源”视图用户界面上提供的“反馈[!UICONTROL ”选项提供]产品反馈。
+* 使用Assets视图用户界面上提供的[!UICONTROL 反馈]选项提供产品反馈。
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
@@ -201,5 +201,5 @@ TBD: Insert a video of the available social media options.
 
 >[!MORELIKETHIS]
 >
->* [Adobe Express 中的快速作](https://helpx.adobe.com/cn/express/using/resize-image.html)
+>* Adobe Express中的[快速操作](https://helpx.adobe.com/cn/express/using/resize-image.html)
 >* [查看资源的版本历史记录](navigate-assets-view.md)
