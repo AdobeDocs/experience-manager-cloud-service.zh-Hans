@@ -4,9 +4,9 @@ description: 了解如何使用配置管道在AEM as a Cloud Service中部署各
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
+source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -63,21 +63,32 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 每个配置文件都以类似于以下示例片段的属性开头：
 
 ```yaml
-   kind: "LogForwarding"
+   kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
+   metadata: ...
+   data: ...
 ```
 
 | 属性 | 描述 | 默认 |
 |---|---|---|
 | `kind` | 一个字符串，可确定哪种类型的配置，如日志转发、流量过滤器规则或请求转换 | 必需，无默认值 |
 | `version` | 表示架构版本的字符串 | 必需，无默认值 |
-| `envTypes` | 此字符串数组是`metadata`节点的子属性。 对于&#x200B;**发布投放**，可能的值包括dev、stage、prod或任何组合，它将确定处理配置的环境类型。 例如，如果数组仅包含`dev`，则不会将配置加载到暂存或生产环境中，即使已在该环境中部署配置也是如此。 对于&#x200B;**Edge Delivery**，只应使用值`prod`。 | 所有环境类型，即(dev、stage、prod) for Publish Delivery或just prod for Edge Delivery。 |
+| `metadata` | （可选）这包含一个字符串`envTypes`的数组，该数组可确定处理配置的环境类型。 对于&#x200B;**发布投放**，可能的值为`dev`、`stage`和`prod`。 对于&#x200B;**Edge Delivery**，只应使用值`prod`。 例如，如果数组仅包含`dev`，则不会将配置加载到暂存或生产环境中，即使已在该环境中部署配置也是如此。 | 所有环境类型，即(dev、stage、prod) for Publish Delivery或just prod for Edge Delivery。 |
 
 您可以使用`yq`实用程序在本地验证配置文件的YAML格式（例如，`yq cdn.yaml`）。
 
-## 文件夹结构 {#folder-structure}
+## 发布投放 {#yamls-for-aem}
+
+**发布投放**&#x200B;配置将部署到目标环境。 当定位多个环境时，可以采用不同的方式组织不同的文件。 例如，如果数组仅包含`dev`，则不会将配置加载到暂存或生产环境中，即使已在该环境中部署配置也是如此。
+
+```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+    envType: ["dev"]
+```
+
+### 文件夹结构 {#folder-structure}
 
 名为`/config`或类似的文件夹应位于树顶部，并在其下方的树中放置一个或多个YAML文件。
 
@@ -115,7 +126,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 当相同的配置足以用于所有环境和所有类型的配置（CDN、日志转发等）时，请使用此结构。 在此方案中，`envTypes`数组属性将包含所有环境类型。
 
 ```yaml
-   kind: "cdn"
+   kind: "CDN"
    version: "1"
    metadata:
      envTypes: ["dev", "stage", "prod"]
@@ -175,7 +186,7 @@ data:
 
 此方法的一个变体是为每个环境维护一个单独的分支。
 
-### Edge Delivery Services {#yamls-for-eds}
+## Edge Delivery Services {#yamls-for-eds}
 
 Edge Delivery配置管道没有单独的开发、暂存和生产环境。 在发布交付环境中，通过开发、暂存和生产层更改进度。 相反，Edge Delivery配置管道将配置直接应用于Edge Delivery站点在Cloud Manager中注册的所有域映射。
 
@@ -188,7 +199,7 @@ Edge Delivery配置管道没有单独的开发、暂存和生产环境。 在发
   logForwarding.yaml
 ```
 
-如果每个Edge Delivery站点上的规则需要不同，请使用语法&#x200B;*when*&#x200B;来区分这些规则。 例如，请注意域与以下代码片段中的dev.example.com匹配，该域可与域www.example.com区分。
+如果每个Edge Delivery站点上的规则需要不同，请使用语法&#x200B;*when*&#x200B;来区分这些规则。 例如，请注意域与以下代码片段中的dev.example.com匹配，该代码片段可与域`www.example.com`区分。
 
 ```
 kind: "CDN"
@@ -220,8 +231,6 @@ data:
 ```
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
