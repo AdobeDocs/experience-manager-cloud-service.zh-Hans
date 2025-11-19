@@ -4,8 +4,8 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -82,8 +82,6 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -120,8 +118,6 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -302,8 +298,6 @@ when:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -320,8 +314,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -342,8 +334,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -367,8 +357,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -393,8 +381,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -449,8 +435,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -475,8 +459,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -512,8 +494,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -538,8 +518,6 @@ data:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
    defaultTrafficAlerts: false
@@ -567,7 +545,7 @@ CDN 日志可能会延迟最多五分钟。
 
 * 任何匹配规则的客户声明规则名称都列在 `match` 属性中。
 * `action` 属性决定规则是否阻止、允许或记录。
-* 如果 WAF 已获得许可并启用，则 `waf` 属性会列出检测到的任何 WAF 标志（例如，SQLI）。无论任何规则中是否列出了 WAF 标志，情况都是如此。这样做是为了深入展示可能要声明的新规则。
+* 如果 WAF 已获得许可并启用，则 `waf` 属性会列出检测到的任何 WAF 标志（例如，SQLI）。无论任何规则中是否列出了 WAF 标志，情况都是如此。这样做是为了洞察可能要声明的新规则。
 * 如果没有客户声明的规则匹配并且没有 waf 规则匹配，则 `rules` 属性为空。
 
 如前所述，WAF 规则匹配只会显示在 CDN 未命中和通过（而非命中）的 CDN 日志中。
@@ -578,8 +556,6 @@ CDN 日志可能会延迟最多五分钟。
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -679,8 +655,6 @@ Adobe 建议从以下流量过滤规则入手，并根据实际情况逐步优�
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
