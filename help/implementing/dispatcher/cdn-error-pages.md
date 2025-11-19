@@ -4,7 +4,7 @@ description: 了解如何覆盖默认错误页面，其中将静态文件托管�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -37,8 +37,6 @@ ht-degree: 1%
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -93,6 +91,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 教程
 
-有关如何创建、部署和测试CDN提供的错误页面的分步说明，请参阅[CDN错误页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教程。
+有关如何创建、部署和测试CDN提供的错误页面的分步说明，请参阅[CDN错误页面](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教程。
 
 
