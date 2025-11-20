@@ -4,10 +4,10 @@ description: 了解如何在发布层上为 AEM as a Cloud Service 设置 Open I
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 100%
+source-wordcount: '1986'
+ht-degree: 71%
 
 ---
 
@@ -68,11 +68,22 @@ IdP 配置中的信息：
     "scopes":[
       "openid"
     ],
-    "baseUrl":"<https://login.microsoftonline.com/53279d7a-438f-41cd-a6a0-fdb09efc8891/v2.0>",
-    "clientId":"5199fc45-8000-473e-ac63-989f1a78759f",
+    "baseUrl":"<https://login.microsoftonline.com/tenant-id/v2.0>",
+    "clientId":"client-id-from-idp",
     "clientSecret":"xxxxxx"
    }
    ```
+
+在某些环境中，标识提供程序(IdP)可能未公开有效的`.well-known`端点。
+发生这种情况时，可以通过在配置文件中指定以下属性来手动定义所需的端点。
+在此配置模式下，不得设置`baseUrl`属性。
+
+```
+"authorizationEndpoint": "https://idp-url/oauth2/v1/authorize",
+"tokenEndpoint": "https://idp-url/oauth2/v1/token",
+"jwkSetURL":"https://idp-url/oauth2/v1/keys",
+"issuer": "https://idp-url"
+```
 
 1. 按照下述方法配置其属性：
    * **“名称”**&#x200B;可由用户定义
@@ -97,12 +108,12 @@ IdP 配置中的信息：
 
 1. 然后，按照下述方法配置其属性：
    * `path`：需要保护的路径
-   * `callbackUri`：到需要保护的路径，添加后缀：`/j_security_check`
+   * `callbackUri`：要保护的路径，添加后缀： `/j_security_check`。 还必须在远程IdP中将同一callbackUri配置为重定向url。
    * `defaultConnectionName`：使用上一步中为 OIDC 连接定义的相同名称进行配置+
    * `pkceEnabled`：`true` 代码交换证明密钥 (PKCE) 授权码流程
    * `idp`：[OAK 外部身份提供者](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html)的名称。请注意，不同的 OAK IDP 不能共享用户或组
 
-### 配置 SlingUserInfoProcessor
+### 配置 SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 
 1. 创建配置文件。在此例中，我们将使用 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`。`azure` 后缀必须是唯一的标识符。请参阅下面的配置文件示例：
 
@@ -112,7 +123,8 @@ IdP 配置中的信息：
       "groupsClaimName": "groups",
       "connection":"azure",
       "storeAccessToken": false,
-      "storeRefreshToken": false
+      "storeRefreshToken": false,
+      "idpNameInPrincipals": true
    }
    ```
 
@@ -121,7 +133,8 @@ IdP 配置中的信息：
    * `groupsClaimName`：声明的名称中包含要在 AEM 中同步的组。
    * `connection`：使用上一步中为 OIDC 连接定义的相同名称进行配置
    * `storeAccessToken`：如果访问令牌必须存储在存储库中，此值为 true。默认情况下是 false。只有当 AEM 需要代表用户访问存储在受同一 IdP 保护的外部服务器中的资源时，才将其设置为 true。
-   * `storeRefreshToken`：如果刷新令牌必须存储在存储库中，此值为 true。默认情况下是 false。只有当 AEM 需要代表用户访问存储在受同一 IdP 保护的外部服务器中的资源，并且需要从 IdP 刷新令牌时，才将其设置为 true。
+   * `storeRefreshToken`：如果刷新令牌必须存储在存储库中，此值为 true。默认情况下是 false。仅当AEM需要代表存储在受同一IdP保护的外部服务器中的用户访问资源并需要从IdP刷新令牌时，才将其设置为true。
+   * `idpNameInPrincipals`：当设置为true时，IdP的名称将作为后缀添加到用“；”分隔的用户和组承担者。 例如，如果IdP名称为`azure-idp`，用户名为`john.doe`，则存储在oak中的主体将为`john.doe;azure-idp`。 在Oak中配置多个IdP以避免来自不同IdP的同名用户或组之间发生冲突时，此方法非常有用。 也可以设置此以避免与其他身份验证处理程序（如Saml）创建的用户或组冲突。
 请注意，访问令牌和刷新令牌都通过 AEM 主密钥加密存储。
 
 
@@ -133,20 +146,23 @@ IdP 配置中的信息：
 
 ```
 {
-  "user.expirationTime":"300s",
-  "user.membershipExpTime":"300s",
+  "user.expirationTime":"1h",
+  "user.membershipExpTime":"1h",
+  "group.expirationTime": "1d"
   "user.propertyMapping":[
-    "profile/familyName=profile/familyName",
-    "profile/givenName=profile/givenName",
-    "rep:fullname=cn",
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
     "profile/email=profile/email",
-    "oauth-tokens"
+    "access_token=access_token",
+    "refresh_token=refresh_token"
   ],
   "user.pathPrefix":"azure",
   "handler.name":"azure"
 }
 ```
 
+在开发期间，可以将过期时间减少到较低的值（例如：1秒），以加快oak中用户和组同步的测试。
 下面是需要在 DefaultSyncHandler 中配置的一些最相关的属性。请注意，云服务中应始终启用动态组成员资格。
 
 | 属性名称 | 注释 | 建议的值 |
@@ -181,6 +197,37 @@ IdP 配置中的信息：
 
 通过 ID 令牌验证用户身份，在为 IdP 定义的 `userInfo` 端点中获取附加属性。如果必须执行额外的非标准操作，则 [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) 的自定义实施是 Sling 的默认实施。
 
+### 为外部组配置ACL {#configure-acl-for-external-groups}
+
+当用户通过OIDC进行身份验证时，其组成员资格通常与外部身份提供商同步。
+这些外部组是在AEM存储库中动态创建的，不会自动与任何访问控制条目关联。
+为确保用户具有适当的权限，必须为这些组明确定义访问控制列表(ACL)。
+
+提供了两种主要方法。
+
+### 选项1 — 本地组
+
+可以将外部组添加为已具有所需ACL的本地组的成员。
+* 外部组必须存在于存储库中，当属于该组的用户首次登录时，会自动发生这种情况。
+* 当使用封闭用户组(CUG)时，此选项通常为首选，因为创作和发布环境中都存在本地组。
+
+### 选项2 — 通过RepoInit对外部组进行直接ACL
+
+ACL可以使用RepoInit脚本直接应用于外部组。
+* 这种方法更有效，并且在不使用CUG时更可取。
+* 以下示例显示了一个向外部组分配读取权限的RepoInit配置。 选项`ignoreMissingPrincipal`允许创建ACL，即使存储库中不存在该组：
+
+  ```
+  {
+    "scripts":[
+      "set ACL for \"my-group;my-idp\"  (ACLOptions=ignoreMissingPrincipal)\r\n  allow jcr:read on /content/wknd/us/en/magazine\r\nend"
+    ]
+  }    
+  ```
+
+>[!NOTE]
+>AEM权限UI可用于检查分配给组承担者的ACL
+
 ## 示例：通过 Azure Active Directory 配置 OIDC 身份验证
 
 ### 在 Azure Active Directory 中配置新的应用程序 {#configure-a-new-application-in-azure-ad}
@@ -196,19 +243,19 @@ IdP 配置中的信息：
 1. 按照前面记录的步骤，创建必需的配置文件。下面是专门针对 Azure AD 的示例：
    * 我们将 oidc 连接、身份验证处理程序和 DefaultSyncHandler 的名称定义为：`azure`
    * 网站 url 为：`www.mywebsite.com`
-   * 我们保护路径 `/content/wknd/us/en/adventures`
+   * 我们保护只能由组`/content/wknd/us/en/adventures`的经过身份验证的用户成员访问的路径`adventures`
    * 租户是：`tennat-id`，
    * 客户端 id 是：`client-id`，
    * 密码是：`secret`，
    * 这些组在以下声明中发送到 ID 令牌中：`groups`
 
-#### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
+### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
 
 ```
 {
   "name":"azure",
   "scopes":[
-    openid", "User.Read", "profile", "email
+    openid", "User.Read", "profile", "email"
   ],
   "baseUrl":"https://login.microsoftonline.com/tenant-id/v2.0",
   "clientId":"client-id",
@@ -216,7 +263,7 @@ IdP 配置中的信息：
 }
 ```
 
-#### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json
+### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json
 
 ```
 {
@@ -229,7 +276,7 @@ IdP 配置中的信息：
 }
 ```
 
-#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
+### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
 
 ```
 {
@@ -238,12 +285,13 @@ IdP 配置中的信息：
 }
 ```
 
-#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
+### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
 
 ```
 {
-  "user.expirationTime":"1s",
-  "user.membershipExpTime":"1s",
+  "user.expirationTime":"1h",
+  "user.membershipExpTime":"1h",
+  "group.expirationTime": "1d"
   "user.propertyMapping":[
     "profile/givenName=profile/given_name",
     "profile/familyName=profile/family_name",
@@ -259,7 +307,17 @@ IdP 配置中的信息：
 }
 ```
 
-#### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
+### org.apache.sling.jcr.repoinit.RepositoryInitializer~azure.cfg.json
+
+```
+{
+  "scripts":[
+    "set ACL for \"adventures;azure\"  (ACLOptions=ignoreMissingPrincipal)\r\n  allow jcr:read on /content/wknd/us/en/adventures\r\nend"
+  ]
+}
+```
+
+### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
 
 ```
 {
@@ -293,3 +351,15 @@ IdP 配置中的信息：
   "storeRefreshToken": "false"
 }
 ```
+
+## 如何从Saml身份验证处理程序迁移到Oidc身份验证处理程序
+
+如果AEM已配置SAML身份验证处理程序，并且存储库中存在启用了[数据同步](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的用户，则原始SAML用户与新OIDC用户之间可能会发生冲突。
+
+1. 在[SlingUserInfoProcessor](#configure-oidc-authentication-handler)配置中配置`idpNameInPrincipals`OidcAuthenticationHandler[并启用](#configure-slinguserinfoprocessor)
+1. 为外部组[设置](#configure-acl-for-external-groups)ACL。
+1. 从用户登录后，可以删除由saml身份验证处理程序创建的旧用户。
+
+>[!NOTE]
+>在禁用SAML身份验证处理程序并启用OIDC身份验证处理程序后，如果未启用[数据同步](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，则现有会话将无效。 用户需要再次进行身份验证，这会导致在存储库中创建新的OIDC用户节点。
+
