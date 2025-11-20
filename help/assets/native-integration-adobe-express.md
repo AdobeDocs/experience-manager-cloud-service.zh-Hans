@@ -47,7 +47,7 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
 1. 浏览或搜索资源并将它们拖放到画布上。
 
-1. 选择要替换的图像。 单击“替换”****，然后选择&#x200B;**[!UICONTROL AEM Assets]**&#x200B;以及其他各种选项。
+1. 选择要替换的图像。 单击“替换”**&#x200B;**，然后选择&#x200B;**[!UICONTROL AEM Assets]**&#x200B;以及其他各种选项。
 
    ![AEM替换](assets/aem-replace.png)
 
@@ -70,13 +70,13 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
    ![将资源保存在 AEM 中](assets/adobe-express-aem.png)
 
 3. 选择&#x200B;**当前页面**&#x200B;或&#x200B;**所有页面**。 指定要导出的资产的名称和格式。 您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式导出画布内容。 格式会根据画布页面上的资产自动进行调整。
-选择**当前页面**&#x200B;会将当前页面上的资产保存到目标文件夹中。 如果选择&#x200B;**所有页面**，并且导出格式不是PDF，则所有画布页面都将作为单独的文件保存到目标文件夹中的新文件夹中。 如果导出格式为PDF，则所有画布页面都将作为单个PDF文件保存到目标文件夹中。
+选择&#x200B;**当前页面**&#x200B;会将当前页面上的资产保存到目标文件夹中。 如果选择&#x200B;**所有页面**，并且导出格式不是PDF，则所有画布页面都将作为单独的文件保存到目标文件夹中的新文件夹中。 如果导出格式为PDF，则所有画布页面都将作为单个PDF文件保存到目标文件夹中。
 
 4. 单击&#x200B;**目标文件夹**&#x200B;下的文件夹图标以选择一个位置并保存资产。
 
    ![将资源保存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. 可选：您可以使用&#x200B;**项目或营销活动名称**字段为上载添加营销活动元数据。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
+5. 可选：您可以使用&#x200B;**项目或营销活动名称**&#x200B;字段为上载添加营销活动元数据。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
 作为最佳实践，Adobe建议在其余字段中指定值，并为您上传的资源创建增强的搜索体验。
 
 6. 同样，为&#x200B;**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 渠道]**&#x200B;字段定义值。
@@ -91,19 +91,19 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
      </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL JPEG]</td>
+        <td>[!UICONTROL JPEG]</td>
         <td> 6500万像素（例如，8K x 8K或16K x 4K） </td>
     </tr>
     <tr>
-        <td>[！UICONTROL PNG]</td>
+        <td>[!UICONTROL PNG]</td>
         <td> 6500万像素（例如，8K x 8K或16K x 4K） </td>
     </tr>
     <tr>
-        <td>[！UICONTROL SVG]</td>
+        <td>[!UICONTROL SVG]</td>
         <td> 最大250 KB</td>
     </tr>
     <tr>
-        <td>[！UICONTROL MP4]</td>
+        <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840像素，最大200 MB</td>
     </tr>
     <tr>
