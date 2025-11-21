@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="有限可用性" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service [自动维护更新](/help/implementing/deploying/aem-ver
 * **无讯息小时数** — 您可以定义不会发生更新的每日时间间隔（最多8小时）。
 * **更新空闲时段** — 您可以定义一个不会发生更新的7天时段。 在12个月的时间范围内，您最多可以有三个更新空闲时段。
 
-更新空闲时段和免打扰时间功能是按“每个程序”配置的。
+更新空闲时段和免打扰时间功能是按“每个程序”配置的。 请记住，只有具有&#x200B;**业务负责人**&#x200B;和&#x200B;**部署管理员**&#x200B;的“用户角色”的用户才能查看和使用这些功能。
 
 此外，有关计划的AEM as a Cloud Service自动维护期间的信息，请参阅[Experience Manager版本路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)页面。
 
@@ -76,3 +76,13 @@ AEM as a Cloud Service [自动维护更新](/help/implementing/deploying/aem-ver
 ![更新可用时段配置](assets/update-free-periods.png)
 
 当前活动的更新可用时段附近将显示&#x200B;**活动**&#x200B;图标，而已完成的更新可用时段附近将显示&#x200B;**完成**&#x200B;图标。
+
+## 计划的维护排除期 {#planned-maintenance}
+
+Adobe有许多计划的维护排除期。 这些时间段由Adobe定义，旨在最大程度地降低关键事件的风险，通常每年发生两或三次。 您可以在[维护版本路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)页面上查看维护排除期的确切计划。
+
+为了帮助您准确配置无更新时段，维护排除时段也会显示在“免提时间”和“更新无更新时段”用户界面中。
+
+![计划的维护排除期](assets/planned-maintenance.png)
+
+请注意，您无法在排除期间创建更新自由时段。
