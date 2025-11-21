@@ -3,9 +3,9 @@ title: 发现代理概述
 description: 了解如何使用发现代理，通过自然的对话提示来按需提供相关的AEM内容，从而提供简化的、点击式的免费发现体验。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
+source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Discovery Agent可以识别满足特定质量要求（如文件格式或最小�
 
 ### Assets {#discovery-agent-search-results-assets}
 
-发现代理返回每个查询的前20个结果，按相关性排序，以确保首先显示完全匹配项。 Agent将元数据驱动的查询与语义搜索相结合，组成一组集中的可能匹配项，然后使用LLM根据用户意图对它们进行排名。 这种混合方法提供了精确的上下文感知结果，完全不依赖于直接的关键字匹配。
+发现代理返回每个查询的前几个结果，按相关性排序，以确保首先显示完全匹配的结果。 Agent将元数据驱动的查询与语义搜索相结合，组成一组集中的可能匹配项，然后使用LLM根据用户意图对它们进行排名。 这种混合方法提供了精确的上下文感知结果，完全不依赖于直接的关键字匹配。
 
 每个结果都包含资源名称以及关键资源元数据，例如资源路径、创建者、创建日期、标题、描述、格式、上次修改时间、上次修改日期、文件大小、维度、[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)和相关标记。 如果资产处于已批准状态，则结果还包括具有OpenAPI URL [的](/help/assets/dynamic-media-open-apis-overview.md)Dynamic Media。
 
@@ -152,11 +152,11 @@ Discovery Agent可以识别满足特定质量要求（如文件格式或最小�
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 
-发现代理为内容片段提供全文搜索功能，返回与指定提示最匹配的前20个结果。 每个结果都包括内容片段名称以及关键元数据字段，例如内容片段路径、创建者、创建日期、变体、上次修改时间和上次修改日期字段。
+发现代理为内容片段提供全文搜索功能，返回与指定提示最匹配的前几个结果。 每个结果都包括内容片段名称以及关键元数据字段，例如内容片段路径、创建者、创建日期、变体、上次修改时间和上次修改日期字段。
 
 ![使用发现代理搜索内容片段](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
