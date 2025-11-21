@@ -3,7 +3,7 @@ title: 发现代理概述
 description: 了解如何使用发现代理，通过自然的对话提示来按需提供相关的AEM内容，从而提供简化的、点击式的免费发现体验。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
@@ -152,7 +152,7 @@ Discovery Agent可以识别满足特定质量要求（如文件格式或最小�
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 
