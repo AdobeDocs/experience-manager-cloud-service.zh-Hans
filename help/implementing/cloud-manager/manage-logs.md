@@ -99,5 +99,5 @@ Environment Id Service    Name
 
 请参阅以下附加资源，了解有关AEM as a Cloud Service中日志文件的更多信息：
 
-* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
