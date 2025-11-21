@@ -33,13 +33,13 @@ AEM可以根据您的情况和偏好为您提供支持。 请遵循以下指导�
 
 #### 1.与Adobe Commerce as a Cloud Service集成 {#acaacs}
 
-Adobe建议使用Edge Delivery和[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)作为起点。 店面附带有与Adobe Commerce服务、API预集成的模板，并提供各种Commerce插入组件以快速构建店面。
+Adobe建议使用Edge Delivery和[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/)作为起点。 店面附带有与Adobe Commerce服务、API预集成的模板，并提供各种Commerce插入组件以快速构建店面。
 
 适合：Adobe Commerce as a Cloud Service的典型店面体验
 
 #### 2.与Adobe Commerce Optimizer集成（适用于任何第三方解决方案） {#aco}
 
-如果要集成现有的商务解决方案并提高目录性能，Adobe建议使用[Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)作为现代集成层。 Commerce Optimizer通过用于目录和推销的高性能SaaS服务来增强您的商务解决方案。 与Adobe Commerce as a Cloud Service一样，[Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)可与其一起开箱即用。
+如果要集成现有的商务解决方案并提高目录性能，Adobe建议使用[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)作为现代集成层。 Commerce Optimizer通过用于目录和推销的高性能SaaS服务来增强您的商务解决方案。 与Adobe Commerce as a Cloud Service一样，[Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)可与其一起开箱即用。
 
 可与商业商业解决方案(如Salesforce Commerce)集成。 请联系您的Adobe代表。
 
@@ -53,7 +53,7 @@ Adobe建议使用Edge Delivery和[Adobe Commerce店面](https://experienceleague
 
 ### 使用您自己的店面(Headless AEM集成) {#own-storefront}
 
-您有一个现有的店面（例如，使用React JS构建），并希望使用Adobe Experience Manager进行内容管理和交付（内容片段）、资源以及上下文编辑（通用编辑器）。 集成的起点是[Adobe Experience Manager as a Headless CMS简介](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF加载项](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF加载项允许将您的产品数据无缝集成到AEM(在AEM UI中搜索、浏览和查找产品)中，以便用于构建特定于商业的体验。
+您有一个现有的店面（例如，使用React JS构建），并希望使用Adobe Experience Manager进行内容管理和交付（内容片段）、资源以及上下文编辑（通用编辑器）。 集成的起点是[Adobe Experience Manager as a Headless CMS简介](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF加载项](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF加载项允许将您的产品数据无缝集成到AEM(在AEM UI中搜索、浏览和查找产品)中，以便用于构建特定于商业的体验。
 
 ### AEM CIF店面 {#cif}
 
@@ -61,4 +61,4 @@ Adobe的推荐和参考架构是使用Edge Delivery Services。 CIF店面及其A
 
 >[!NOTE]
 >
->希望利用新AEM/Commerce功能的现有客户应将其网站移动到Edge Delivery。 一种常见模式是，首先仅将一部分页面移动到Edge Delivery并以并排方式运行Edge Deliery和CIF页面。 还可以使用新的[AEM CIF放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)替换Commerce组件，以利用新的Commerce功能。
+>希望利用新AEM/Commerce功能的现有客户应将其网站移动到Edge Delivery。 一种常见模式是，首先仅将一部分页面移动到Edge Delivery并以并排方式运行Edge Deliery和CIF页面。 还可以使用新的[AEM CIF放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)替换Commerce组件，以利用新的Commerce功能。

@@ -15,9 +15,9 @@ ht-degree: 71%
 实施 AEM 连接器
 =============================
 
-下面提供了构建AEM Connectors的有用参考，应阅读其中有关[提交](submit.md)和[维护](maintain.md)连接器的指导。
+下面提供了构建AEM连接器的有用参考，应阅读这些参考，并参考有关[提交](submit.md)和[维护](maintain.md)连接器的指南。
 
-可以通过[Adobe Exchange计划](https://partners.adobe.com/technologyprogram/experiencecloud.html)获取AEM的开发人员许可证。
+可以通过[AEM计划](https://partners.adobe.com/technologyprogram/experiencecloud.html)获取Adobe Exchange的开发人员许可证。
 
 常见集成模式
 ---------------------------
@@ -30,7 +30,7 @@ AEM 是一个前沿的 Web 体验管理解决方案，提供了许多潜在的�
 * 将资源存储在 AEM 基础架构中。例如，营销资源管理 (MRM) 系统将批准的资源存储在 AEM Assets 中。
 * 配置和呈现自定义 UI 组件。例如，允许作者拖放视频组件并将特定视频配置为在实时站点上播放。
 * 使用合作伙伴服务对资源执行操作。例如，在发布页面时将资源发送到视频平台。
-* 分析AEMAdmin Console中的站点、页面或资源。 例如，提供针对现有页面或未发布的页面的 SEO 建议。
+* 在AEM Admin Console中分析站点、页面或资产。 例如，提供针对现有页面或未发布的页面的 SEO 建议。
 * 对由外部服务维护的用户数据的页面级访问。例如，利用人口统计信息来个性化站点体验。了解 ContextHub，它是一个用于存储、操作和呈现上下文数据的框架。
 * 翻译站点副本或资源元数据。请参阅 [AEM 翻译框架引导连接器](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector)，查看使用 AEM 翻译框架的示例代码，它是翻译连接器的首选实施。
 
@@ -38,7 +38,7 @@ AEM 是一个前沿的 Web 体验管理解决方案，提供了许多潜在的�
 有用的文档
 --------------------
 
-Experience Manager as a Cloud Service [文档](../overview/introduction.md)提供了有关在 AEM 中进行开发的有价值见解。以下是一些特定的技术主题和参考，您在实施 AEM 连接器时会发现它们很有用：
+Experience Manager as a Cloud Service [文档](../overview/introduction.md)提供了有关在 AEM 中进行开发的有价值洞察。以下是一些特定的技术主题和参考，您在实施 AEM 连接器时会发现它们很有用：
 
 * 具有良好注释的代码的 Adobe Consulting Services (ACS) [AEM 示例](https://adobe-consulting-services.github.io/acs-aem-samples/)，可帮助指导 AEM 开发人员
 * 本文的“常见集成模式”部分中的各种文档链接
@@ -60,13 +60,13 @@ Experience Manager as a Cloud Service [文档](../overview/introduction.md)提�
 * `/apps`
 * `/content` 和 `/conf`
 
-连接器应遵守这些打包准则，这些准则在[AEM项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)下描述。 现有连接器也应重构以符合要求。
+连接器应遵循这些打包准则，如[AEM项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)中所述。 现有连接器也应重构以符合要求。
 
 此外，只有 Adobe 应将代码写入 `/libs`，而客户和合作伙伴则应将代码写入 `/apps`。
 
 现有连接器可能也需要重构，以将可能曾放置 `/etc` 的任何配置移动到其他顶级文件夹中，例如 `/conf`。此重构是作为 AEM 6.5 的一部分完成的，并在 [AEM 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/restructuring/repository-restructuring)中进行了描述。
 
-Adobe建议将大部分连接器代码放在`/apps/connectors/<vendor>`下以保持干净的存储库结构，尤其是对于使用多个连接器的客户。
+Adobe建议将大多数连接器代码放在`/apps/connectors/<vendor>`下以保持干净的存储库结构，尤其是对于使用多个连接器的客户。
 
 云服务配置
 -----------------------------
@@ -77,7 +77,7 @@ Adobe建议将大部分连接器代码放在`/apps/connectors/<vendor>`下以保
 上下文感知配置
 -----------------------------
 
-[上下文感知配置](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)允许您跨不同的文件夹对配置进行分层，包括`/libs`、`/apps`、`/conf`以及`/conf`下的子文件夹。 它支持继承，因此客户可以配置全局配置，同时对每个微型网站进行特定更改。由于可以将此功能用于Cloud Service配置，因此连接器代码应使用上下文感知配置API引用配置，而不是引用特定的配置节点。
+[上下文感知配置](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)允许您跨不同的文件夹对配置进行分层，包括`/libs`、`/apps`、`/conf`以及`/conf`下的子文件夹。 它支持继承，因此客户可以配置全局配置，同时对每个微型网站进行特定更改。由于可以将此功能用于云服务配置，因此连接器代码应使用上下文感知配置API引用配置，而不是引用特定的配置节点。
 
 如果在连接器中使用修改后的配置，则构建连接器以包含/合并对连接器提供的默认配置的任何未来更新与任何客户配置。请记住，未经事先通知和同意修改客户自定义的内容或配置可能会中断或导致其Connector中出现意外行为。
 
@@ -89,4 +89,4 @@ Adobe建议将大部分连接器代码放在`/apps/connectors/<vendor>`下以保
 测试 AEM 连接器
 -------------------------
 
-应使用本地环境开发技术来创建新的连接器（或修改现有连接器）。合作伙伴团队为ISV合作伙伴提供了一个沙盒环境，他们可以在其中将AEM Connector部署到vanilla应用程序以确保它正常工作。
+应使用本地环境开发技术来创建新的连接器（或修改现有连接器）。合作伙伴团队为ISV合作伙伴提供了一个沙盒环境，他们可以在其中将其AEM Connector部署到vanilla应用程序以确保它正常工作。

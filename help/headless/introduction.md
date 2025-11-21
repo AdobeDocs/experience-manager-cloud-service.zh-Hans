@@ -55,7 +55,7 @@ AEM as a Cloud Service 是一款灵活的工具，提供了三种强大的功能
 | 资源 | 描述 | 类型 | 受众 | 估计用时 |
 |---|---|---|---|---|
 | [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | **面向刚开始接触 AEM 和 Headless 技术的开发人员**，从这里开始全面了解 AEM 及其 Headless 功能，从 Headless 的理论直到您的第一个 Headless 项目。 | 指南 | **刚开始接触 AEM 和 Headless** 的开发人员 | 1 小时 |
-| [Headless 设置](/help/headless/setup/introduction.md) | **面向有经验的 AEM 用户**，在需要关键 AEM Headless 功能的简短摘要时，可以查看此快速入门概览。 | 参考设置 | **具有 AEM 经验**&#x200B;的开发人员、管理员 | 20 分钟 |
+| [Headless 设置](/help/headless/setup/introduction.md) | **面向有经验的 AEM 用户**，在需要关键 AEM Headless 功能的简短摘要时，可以查看此快速入门概述。 | 参考设置 | **具有 AEM 经验**&#x200B;的开发人员、管理员 | 20 分钟 |
 | [Headless 实践教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=zh-Hans) | **如果您偏好实践方法并且熟悉 AEM**，本教程将直接深入到实施简单的 Headless 应用程序。 | 教程 | 开发人员 | 2 小时 |
 | [Headless 架构师历程](/help/journey-headless/architect/overview.md) | **面向刚开始接触 AEM 和 Headless 技术的架构师**，从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。 | 指南 | 架构师 | 1 小时 |
 | [Headless 创作历程](/help/journey-headless/author/overview.md) | **面向刚开始接触 AEM 和 Headless 技术的商业用户**，从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。 | 指南 | 内容创建者 | 1 小时 |

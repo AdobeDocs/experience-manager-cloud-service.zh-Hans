@@ -19,7 +19,7 @@ ht-degree: 1%
 
 例如，在词典中按字母顺序排列的单词比随机散落的单词更容易找到。 标记具有类似目的。 它根据业务分类组织资产，确保最相关的资产出现在搜索结果中。 例如，汽车制造商可以使用型号名称标记汽车图像，以便在设计促销活动时只显示相关图像。 无论是“跑步者”还是“跑鞋”，用户都无需担心拼写错误、拼写变体或替代搜索词 — 智能标记可识别所有这些词语。
 
-在后台，该功能使用[Adobe Sensei](https://business.adobe.com/cn/products/sensei/adobe-sensei.html)的人工智能框架，默认情况下会自动将智能标记与与业务分类对齐的文本一起应用于已上传的资产。
+在后台，该功能使用[Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html)的人工智能框架，默认情况下会自动将智能标记与与业务分类对齐的文本一起应用于已上传的资产。
 
 ## 先决条件和配置 {#smart-tags-prereqs-config}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中的未标记Assets {#smart-tag-existing-assets}
 
-DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hans#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
+DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:

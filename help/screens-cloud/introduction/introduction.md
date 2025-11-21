@@ -22,9 +22,9 @@ AEM Screens as a Cloud Service 是一种数字标牌解决方案，允许营销�
 
 Screens as a Cloud Service 有两个主要组件，即：
 
-* **[Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hans)**，它是在 AEM Cloud Service 或 Adobe Managed Services (AMS) 上运行的 Screens 加载项。Screens Content Provider 可让内容作者创建和管理渠道。内容作者可以添加新内容和编辑内容，而无需担心创建显示或播放器注册的细节。Content Provider 可以提取开发内容、显示或播放器注册的底层细节。
+* **[Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**，它是在 AEM Cloud Service 或 Adobe Managed Services (AMS) 上运行的 Screens 加载项。Screens Content Provider 可让内容作者创建和管理渠道。内容作者可以添加新内容和编辑内容，而无需担心创建显示或播放器注册的细节。Content Provider 可以提取开发内容、显示或播放器注册的底层细节。
 
-* **[Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hans)**，它是在 Adobe I/O Runtime 上运行的数字标牌管理服务。通过 Screens Services Provider，一旦将内容添加到渠道，内容作者、开发人员和管理员即可管理内容播放的显示屏和播放器。此外，Screens Services Provider 还通知编排人员内容大致将在何时何地播放。
+* **[Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**，它是在 Adobe I/O Runtime 上运行的数字标牌管理服务。通过 Screens Services Provider，一旦将内容添加到渠道，内容作者、开发人员和管理员即可管理内容播放的显示屏和播放器。此外，Screens Services Provider 还通知编排人员内容大致将在何时何地播放。
 
 
 ## 架构概述 {#architectural-overview}

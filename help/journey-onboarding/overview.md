@@ -45,7 +45,7 @@ Adobe Experience Manager (AEM)在内容交付和创作方法方面提供了灵�
 AEM as a Cloud Service 的加入历程围绕着以下几个核心要素：
 
 * **合同** - 查看您的 Adobe 合同，了解加入流程的重要详情。
-* **Experience Hub** - 使用 [experience.adobe.com](https://experience.adobe.com/) 作为 AEM 功能的中心入口点。Experience Hub 可适应您的角色和权利，使您能高效工作。从这里导航至：
+* **Experience Hub** - 使用 [experience.adobe.com](https://experience.adobe.com/) 作为 AEM 功能的中心入口点。Experience Hub 可适应您的用户画像和权利，使您能高效工作。从这里导航至：
    * **Admin Console** - 管理用户并分配角色。
    * **Cloud Manager** - 设置程序和环境、访问 Git，以及创建管道来管理和部署自定义代码。
    * **Sites** - 创建、管理和传递数字体验。（基于许可证的权利）
@@ -64,9 +64,9 @@ AEM as a Cloud Service 的加入历程围绕着以下几个核心要素：
 
 该加入历程是专门为新加入 AEM as a Cloud Service 和 AEM 的客户的&#x200B;**系统管理员**&#x200B;编写的。系统管理员是在您签署 AEM as a Cloud Service 后 Adobe 最首先联系的个人他们通常是第一个在 AEM as a Cloud Service 上访问和设置您的资源的人。如果您正在阅读本主题，您很可能是系统管理员。
 
-系统管理员管理其组织的 AEMaaCS 用户的各个方面，从访问到权限。 然而，系统管理员必须在此过程中与其他角色进行交互。
+系统管理员管理其组织的 AEMaaCS 用户的各个方面，从访问到权限。 然而，系统管理员必须在此过程中与其他用户画像进行交互。
 
-| 角色 | 描述 | 历程中的角色 |
+| 用户画像 | 描述 | 历程中的角色 |
 | --- | --- | --- |
 | 系统管理员 | 此历程的目标是提供云资源的初始配置，并根据用户的工作职责将其分配给适当的角色。 | 角色可以帮助您管理用户的从访问到权限的各个方面。 |
 | 内容作者 | 创建并查看 AEM 中的内容。 | 由系统管理员授予权限后，作者就可以开始自己的内容创作之旅。 |

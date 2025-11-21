@@ -3,9 +3,9 @@ title: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
 description: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: ht
-source-wordcount: '5078'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 AEM Assets as a Cloud Service 为企业提供了一个云原生 PaaS 解决方案，不仅可以执行企业的数字资产管理和动态媒体操作，还可以使用 AI/ML 等新一代智能功能。所有这些都来自一个始终保持最新状态、始终可用、始终不断学习的系统。
 
-Adobe 提供强大的数字资产管理（DAM）解决方案，助您充分发挥数字资产的价值。Adobe Experience Manager Assets 提供两种独立的使用体验，共享同一 Cloud Services 存储库，以满足您的不同需求。关于 AEM Assets 中基于角色的使用体验，请参阅《[适用于数字资产管理的基于角色的使用体验](#persona-based-experiences)》。
+Adobe 提供强大的数字资产管理（DAM）解决方案，助您充分发挥数字资产的价值。Adobe Experience Manager Assets 提供两种独立的使用体验，共享同一 Cloud Services 存储库，以满足您的不同需求。关于 AEM Assets 中基于用户画像的体验，请参阅《[适用于数字资产管理的基于用户画像的体验](#persona-based-experiences)》。
 
 关于 AEM Assets Ultimate 和 AEM Assets Prime 的相关信息，请参阅 [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) 和 [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)。
 
@@ -140,7 +140,7 @@ Adobe 数字资产管理的部分核心功能包括：
 
 **上下文搜索**：使用 AEM Assets 您可以通过定义文本提示词在存储库中搜索可用资产。Experience Manager Assets 会自动将这些文本提示词转换为搜索过滤器，并显示搜索结果。您可以通过“过滤器窗格”查看并更改自动过滤器，以进一步缩小搜索结果范围。以下是一些对话式文本提示词示例：
 
-* *图片高度至少为 200px，宽度至少为 100px，内容为海滩和晴朗的天空*，
+* *图像高度至少为 200 像素，宽度至少为 100 像素，内容为海滩和晴朗的天空*，
 * *我需要上个月创建的高度为 1500 至 2500 像素的蓝天图像，并且图像未过期且已经获得批准*。
 
 **在 AEM 中通过 Adobe Firefly 生成资产**：如果您的搜索查询未返回任何结果，您可以在 AEM Assets 中使用 Adobe Firefly 实时生成资产。AEM Assets 还支持您直接在 AEM Assets 用户界面中将生成的图像上传至 AEM Assets 存储库。
@@ -400,7 +400,7 @@ AEM Assets 提供的功能可帮助您快速找到合适的资产。这些功能
       </a>
    </div>
    <p>
-      <em>通过 Content Credentials 深入了解数字资产的历史信息。</em>
+      <em>通过 Content Credentials 洞察数字资产的历史信息。</em>
    </p>
 </td>
 </table>
@@ -637,7 +637,7 @@ AEM Assets 可与多种 Adobe 及非 Adobe 应用程序实现无缝集成。以�
 
 +++**Content Hub**
 
-Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在为组织及其业务合作伙伴提供对品牌内容的普及化访问。它侧重于大规模分发资产以进行激活，并创建品牌内容变体，以提高营销敏捷度。
+Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在为组织及其业务合作伙伴实现对品牌内容访问的民主化。它侧重于大规模分发资产以进行激活，并创建品牌内容变体，以提高营销敏捷度。
 
 Content Hub 具有以下主要优势：
 
@@ -647,7 +647,7 @@ Content Hub 具有以下主要优势：
 
 * **使非创意人员在保持品牌一致性的前提下编辑与重混内容**：Content Hub 支持使用 Adobe Express 创建新内容（需具备 Adobe Express 授权）。您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
 
-* **深入了解内容在各团队中的使用情况**：[!DNL Content Hub] 提供有关资产的宝贵洞察，解决营销相关方常见的难题——即资产在营销活动、渠道和不同地区的使用情况统计数据。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
+* **深入了解内容在各团队中的使用情况**：[!DNL Content Hub] 提供有关资产的宝贵洞察，解决营销相关方常见的难题——即资产在营销活动、渠道和不同地区的使用情况统计数据。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作洞察。
 
 <table>
 <td>
@@ -705,7 +705,7 @@ Dynamic Media 提供以下关键功能：
 
 * **自适应视频集**：自适应视频集将同一视频的多个版本（以不同码率和格式编码）进行分组管理。您首先上传原始主视频至系统，作为创建自适应视频集的起点。Dynamic Media 会自动对该视频进行调整尺寸或转码，生成多个不同版本的视频。在内容投放时，Dynamic Media 会智能判断应使用的视频尺寸、质量和格式，并将最合适的版本传递至手机、平板或桌面设备。
 
-* **智能裁切**：借助 Adobe Sensei 的 AI 能力，自动识别图像或视频中的焦点，并在裁剪时保持该焦点不变。该功能可在不同屏幕尺寸下准确保留图像或视频中的目标焦点，从而省去繁琐的手动操作，提供高质量、加载迅速的图像和视频内容，确保在任何设备或屏幕上均呈现良好效果。
+* **智能裁剪**：借助 Adobe Sensei 的 AI 能力，自动识别图像或视频中的焦点，并在裁剪时保持该焦点不变。该功能可在不同屏幕尺寸下准确保留图像或视频中的目标焦点，从而省去繁琐的手动操作，提供高质量、加载迅速的图像和视频内容，确保在任何设备或屏幕上均呈现良好效果。
 
 * **Dynamic Media 模板**：使用 Dynamic Media 模板这一所见即所得的模板编辑器，为横幅和宣传单创建可实时自定义的模板。发布您的 Dynamic Media 模板，并在下游应用程序中使用该模板。Dynamic Media 模板包含图像图层和文本图层。为模板中的图像图层和文本图层添加参数，并通过 Dynamic Media URL 实现图层的实时重定位、调整尺寸及内容更新。
 
@@ -835,9 +835,9 @@ Dynamic Media 提供以下关键功能：
 
 +++
 
->[!TAB 见解]
+>[!TAB 洞察]
 
-## 资产分析 {#asset-insights}
+## 资产洞察 {#asset-insights}
 
 资产报告使管理员能够全面了解 Adobe Experience Manager Assets View 环境中的各类活动。这些数据可提供有关用户如何与内容及产品交互的有价值信息。所有用户都可以访问 Insights 仪表板，被分配给管理员产品配置文件的用户可以创建用户定义的报告。
 
@@ -845,9 +845,9 @@ Dynamic Media 提供以下关键功能：
 
 * **资产视图中的洞察功能**：资产视图支持通过 Insights 仪表板查看 Assets 视图环境的实时数据。可查看过去 30 天或过去 12 个月的实时事件指标。这些事件包括下载、上传、存储使用情况、热门搜索、按资产大小分类的资产数量，以及按资产类型分类的资产数量。
 
-* **管理员视图中的 Adobe Analytics 集成**：Assets Insights 功能可用于追踪图像在第三方网站、营销活动以及 Adobe 创意解决方案中的用户评分和使用统计数据。此功能有助于深入了解图像的效果和受欢迎程度。Assets Insights 可捕获用户活动的详细信息，例如图像被评分的次数、点击次数，以及曝光量（即图像在网站上的加载次数）。系统会根据这些统计数据为图像分配评分。您可以利用这些评分和性能统计数据，挑选热门图像用于产品目录、营销活动等用途。您甚至可以根据这些统计数据制定资产归档和许可续订策略。若要让 Assets Insights 显示资产的使用统计数据，需先配置该功能，以便从 Adobe Analytics 获取报告数据。
+* **管理员视图中的 Adobe Analytics 集成**：Assets Insights 功能可用于追踪图像在第三方网站、营销活动以及 Adobe 创意解决方案中的用户评分和使用统计数据。此功能有助于洞察图像的效果和受欢迎程度。Assets Insights 可捕获用户活动的详细信息，例如图像被评分的次数、点击次数，以及曝光量（即图像在网站上的加载次数）。系统会根据这些统计数据为图像分配评分。您可以利用这些评分和性能统计数据，挑选热门图像用于产品目录、营销活动等用途。您甚至可以根据这些统计数据制定资产归档和许可续订策略。若要让 Assets Insights 显示资产的使用统计数据，需先配置该功能，以便从 Adobe Analytics 获取报告数据。
 
-* **Content Hub 洞察功能**：Content Hub 提供有关资产的宝贵洞察，解决营销相关方常见的难题——即资产在营销活动、各渠道及不同地区中的使用统计问题。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作见解。
+* **Content Hub 洞察功能**：Content Hub 提供有关资产的宝贵洞察，解决营销相关方常见的难题——即资产在营销活动、各渠道及不同地区中的使用统计问题。通过清楚地了解资产的性能和受欢迎程度，它提供了对增强用户体验至关重要的可操作洞察。
 
 <table>
 <td>
@@ -895,7 +895,7 @@ Dynamic Media 提供以下关键功能：
 
 >[!ENDTABS]
 
-## 基于角色的数字资产管理可用体验 {#persona-based-experiences}
+## 可用的基于角色的数字资产管理体验 {#persona-based-experiences}
 
 Adobe 为您提供强大的数字资产管理（DAM）解决方案，让您能够充分利用数字资产。Adobe Experience Manager Assets 具有两种使用相同 Cloud Service 存储库的独立体验：
 
