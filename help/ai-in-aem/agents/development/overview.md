@@ -1,19 +1,19 @@
 ---
-title: Experience Development Agent概述
-description: 了解AEM中的Experience Development Agent如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
-feature: Edge Delivery Services, Agentic AI
+title: 开发代理概述
+description: 了解AEM中的开发代理如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
+feature: Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 1f20d2825befa0345f9ebde3a9854cab591de0f6
+source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 
-# Experience Development Agent概述 {#development-agent-overview}
+# 开发代理概述 {#development-agent-overview}
 
-Experience Development Agent可帮助AEM开发人员和管理员更高效地创建、调试、部署和优化代码。
+开发代理可帮助AEM开发人员和管理员更高效地创建、调试、部署和优化代码。
 
 目前，代理可以检索管道状态，并通过建议修复来帮助您排除失败的构建步骤，从而节省在开发、暂存和生产环境中调试AEM as a Cloud Service部署的时间。 它会检查构建日志和相关代码，以推荐您可以手动应用的修复。
 
@@ -27,11 +27,11 @@ Experience Development Agent可帮助AEM开发人员和管理员更高效地创�
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-## 通过Cloud Manager访问Experience Development代理 {#how-to-access-the-agent}
+## 通过Cloud Manager访问开发代理 {#how-to-access-the-agent}
 
-您可以通过用户界面中的AI助手访问Experience Development Agent，包括Cloud Manager或Experience Hub。
+您可以通过用户界面中的AI助手访问开发代理，包括Cloud Manager或Experience Hub。
 
-**要通过Cloud Manager访问Experience Development Agent，请执行以下操作：**
+**要通过Cloud Manager访问开发代理，请执行以下操作：**
 
 1. 若要开始，请单击[Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)打开其主页。
 
@@ -73,7 +73,7 @@ Experience Development Agent可帮助AEM开发人员和管理员更高效地创�
 
 ## 权限 {#permissions}
 
-Experience Development Agent的管道故障排除工作需要Cloud Manager — 开发人员角色或Cloud Manager — 项目经理角色。
+开发代理的管道故障排除工作需要Cloud Manager — 开发人员角色或Cloud Manager — 项目经理角色。
 
 
 
