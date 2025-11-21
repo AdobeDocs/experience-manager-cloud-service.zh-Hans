@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 33655e7d58f19a5637ad120d8df537015f2f0aec
+source-git-commit: 603106282e513ea20b3fb6a022381087cc8491d3
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 67%
+source-wordcount: '1457'
+ht-degree: 66%
 
 ---
 
@@ -40,27 +40,13 @@ ht-degree: 67%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-<!--
+## AEM业务代理 {#aem-business-agents}
 
-### New Features in Content Hub {#new-features-content-hub}
-
-**Mark Collections as Favourites**
-
-You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
-
-**Pin collections for quick access**
-
-Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
-
->[!NOTE]
->
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
--->
+AEM提供了一系列业务代理，使您能够加快内容创建并自动编排更改。 有关详细信息，请参阅[AEM业务代理概述](/help/ai-in-aem/agents/overview.md)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 69%
+source-wordcount: '344'
+ht-degree: 68%
 
 ---
 
@@ -21,9 +21,7 @@ ht-degree: 69%
 
 日志将保留七天。
 
-## 正在下载日志 {#download-logs}
-
-要下载日志，请执行以下操作：
+## 下载日志 {#download-logs}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -49,7 +47,7 @@ ht-degree: 69%
 
 ![“环境”屏幕中的日志](assets/download-logs.png)
 
-## 通过 API 下载的日志 {#logs-through-api}
+## 通过API进行记录 {#logs-through-api}
 
 除了通过 UI 下载日志外，还可以通过 API 和命令行界面下载日志。
 
@@ -101,5 +99,5 @@ Environment Id Service    Name
 
 请参阅以下附加资源，了解有关AEM as a Cloud Service中日志文件的更多信息：
 
-* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
