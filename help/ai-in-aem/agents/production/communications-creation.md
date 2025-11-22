@@ -3,15 +3,19 @@ title: 沟通创建技能
 description: 了解Experience Production Agent的通信创建技能以及如何使用自然语言创建交互式通信。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # 沟通创建技能 {#ic-creation-skill}
+
+>[!NOTE]
+>
+> 通信创建技能目前为Alpha版。 如果您想参加，请将您的正式电子邮件地址发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)的请求。
 
 交互式通信是专为业务通信而设计的个性化数据驱动文档，如帐户报表、策略文档、帐单、欢迎套件和福利通知。 与收集用户输入的表单不同，交互式通信会生成具有动态、特定于收件人的内容的输出文档。
 
@@ -39,7 +43,9 @@ ht-degree: 0%
 * *从位于https://[aem-author-url]/path/to/image/file*&#x200B;的图像文件创建通信
 * 使用PDF文件(位于https://[aem-author-url]/path/to/pdf/file)创建书信
 
+
 ## 优化您的通信 {#refine-with-ic-editor}
+
 
 使用AI助手创建初始通信结构后，可以使用交互式通信编辑器来优化和增强文档。 在交互式通信编辑器中，您可以使用自然语言提供提示，以便：
 
@@ -65,4 +71,3 @@ ht-degree: 0%
 * *将条款和条件部分的行距更改为1.5*
 
 有关交互式通信编辑器功能的详细信息，请参阅[交互式通信文档](/help/forms/introduction-to-interactive-communication.md)。
-
