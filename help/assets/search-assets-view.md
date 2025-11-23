@@ -4,10 +4,10 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 79%
+source-wordcount: '1938'
+ht-degree: 77%
 
 ---
 
@@ -145,6 +145,19 @@ Assets视图提供了以下自定义过滤器：
 同样，您可以将此提示用西班牙语或拼写错误`Woman`指定为`Wman`，仍可获得相同的结果。
 
 Assets视图中的![语义搜索](assets/semantic-search.png)
+
+### 在Assets视图中启用或禁用AI搜索 {#enable-disable-ai-search}
+
+执行以下步骤以启用或禁用AI搜索：
+
+1. 导航到&#x200B;**[!UICONTROL 设置]** >> **[!UICONTROL 常规设置]**，然后选择&#x200B;**[!UICONTROL 搜索]**&#x200B;选项卡。
+
+1. 在&#x200B;**[!UICONTROL 搜索]**&#x200B;部分中，选择&#x200B;**[!UICONTROL AI搜索]**&#x200B;以启用AI搜索，或选择&#x200B;**[!UICONTROL 关键字]**&#x200B;以禁用它。
+
+   Assets视图中的![语义搜索](/help/assets/assets/enable-disable-ai-search.png)
+
+1. 单击&#x200B;**[!UICONTROL 保存]**。
+
 
 ## 使用 [!DNL Adobe Firefly] 搜索资产 {#search-firefly}
 
@@ -373,7 +386,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 
