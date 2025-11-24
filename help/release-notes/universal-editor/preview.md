@@ -3,10 +3,10 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 64%
+source-wordcount: '186'
+ht-degree: 60%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 64%
 
 ## 即将推出的新功能 {#what-is-new}
 
+* 已禁用授权标头以支持[本地开发人员登录。](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * 现在，通过右键单击可访问结构化树中的上下文菜单。
 * 向重复的组件添加了热键。
 
