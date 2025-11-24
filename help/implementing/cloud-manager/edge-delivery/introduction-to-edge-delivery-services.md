@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 传递您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -71,9 +71,9 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 
 <!-- &#x2460; for "1" inside circle -->
 
-Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入任务清单，旨在引导您完成加入流程，管理您的 Edge Delivery Site，直至[上线](/help/journey-onboarding/go-live-checklist.md)。
+Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入任务清单，旨在引导您完成加入流程，管理您的 Edge Delivery 网站，直至[上线](/help/journey-onboarding/go-live-checklist.md)。
 
-![Cloud Manager 中的 Edge Delivery Site 待办事项列表](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)。
+![Cloud Manager 中的 Edge Delivery 网站待办事项列表](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 任务 | 描述 |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入
 | 8 | 设置推送验证 | 请参阅[为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
 | 9 | 上线 | 请参阅[上线清单](https://www.aem.live/docs/go-live-checklist)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441572?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 记录支持工单 {#eds-support-ticket}
 

@@ -1,11 +1,11 @@
 ---
 title: 开发代理概述
 description: 了解AEM中的开发代理如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -81,8 +81,8 @@ ht-degree: 1%
 
 | 提示 | 结果 |
 | --- | --- |
-| *为项目主项目列出我的失败管道。* | 虽然结果可能有所不同，但此提示应输出失败管道的表，并提供参考要分析的特定管道的后续建议。 |
-| *分析我失败的、名为“开发管道”的管道。* | 此提示应导致分析失败的管道，并提供修复建议。 |
+| *为项目主项目列出我的失败管道。* | 虽然结果可能有所不同，但此提示会输出一个失败管道表，并提供一个后续建议，以引用要分析的特定管道。 |
+| *分析我失败的、名为“开发管道”的管道。* | 此提示将导致分析失败的管道，并提供修复建议。 |
 
 ## 超出范围的功能 {#out-of-scope-features}
 
