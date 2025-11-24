@@ -3,9 +3,9 @@ title: Experience Production Agent概述
 description: 了解AEM中的Experience Production Agent如何帮助您加快内容创建并自动编排更改。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '352'
 ht-degree: 3%
 
 ---
@@ -62,28 +62,3 @@ Experience Production Agent可自动执行高工作量和高容量任务。 增�
 
 * `experience-production-agent@adobe.com`
 * 或与您的客户团队联系
-
-为了加快该过程，提供以下信息会很有帮助：
-
-* 适用于AEM as a Cloud Service的
-   * 您需要提供以下信息：
-      * 组织 ID
-      * `product_id`
-      * `profile_id`
-
-   * 可以通过以下步骤找到这些值：
-      * 您的管理员需要访问<https://adminconsole.adobe.com/>
-      * 选择&#x200B;**Adobe Experience Manager as a Cloud Service**
-      * 选择适当的AEM实例
-      * 选择允许对相关内容执行读写操作的配置文件
-      * 获取浏览器URL
-      * 从URL提取`product_id`和`profile_id`。
-例如，<https://adminconsole.adobe.com/products/profiles/users>
-
-* Edge Delivery文档创作
-   * 向您的Adobe团队提供以下信息：
-      * 相关域
-      * 相关Github信息：
-         * 组织
-         * 存储库
-         * 分支
