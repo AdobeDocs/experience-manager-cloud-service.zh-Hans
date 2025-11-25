@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 52%
+source-wordcount: '2571'
+ht-degree: 51%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 52%
 >
 >创作内容片段有两个编辑器 — 新编辑器和原始编辑器。 默认使用新编辑器。 虽然基本功能相同，但存在一些差异。
 >
->本节介绍原始编辑器。 这是通过新编辑器[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)打开的。
+>本节介绍原始编辑器。 这是通过新编辑器[打开的](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。
 >
 >有关新编辑器的完整详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
@@ -445,8 +445,14 @@ ht-degree: 52%
 
 **创建变量：**
 
+>[!NOTE]
+>
+>变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
+>
+>最佳实践为每个内容片段不超过10个变量。
+
 1. 打开片段并确保侧面板可见。
-1. 选择&#x200B;**“变体”**&#x200B;图标栏。
+1. 从侧边面板的图标栏中选择&#x200B;**“变体”**。
 1. 选择&#x200B;**“创建变体”**。
 1. 将打开一个对话框，您可以为新变体指定&#x200B;**标题**&#x200B;和&#x200B;**描述**。
 1. 选择 **添加**，片段&#x200B;**主要内容**&#x200B;会被复制到新变体中，该变体现在打开进行[编辑](#editing-a-variation)。
@@ -502,7 +508,7 @@ ht-degree: 52%
 
 >[!CAUTION]
 >
->同步仅可将更改&#x200B;*从&#x200B;**母版**&#x200B;复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
 >仅会同步变体的当前元素。
 >
