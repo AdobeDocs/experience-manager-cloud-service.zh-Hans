@@ -3,9 +3,9 @@ title: 内容更新技能
 description: 了解Experience Production Agent的内容更新技能及其可以对您执行的操作。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Experience Production Agent的内容更新技能可自动执行内容生产，�
 
 ## AI 助手 {#ai-assistant}
 
-您可以通过AI助手访问AEM业务代理。
+您可以通过AI助手访问AEM中的代理。
 
 从experience.adobe.com打开AI助手，然后使用`Ask AI Assistant anything`字段以自然语言指定提示以开始交互：
 

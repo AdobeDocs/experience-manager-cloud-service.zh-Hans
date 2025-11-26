@@ -3,9 +3,9 @@ title: 发现代理概述
 description: 了解如何使用发现代理，通过自然的对话提示来按需提供相关的AEM内容，从而提供简化的、点击式的免费发现体验。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 ## 如何访问发现代理？ {#access-discovery-agent}
 
-您可以通过AI助手访问AEM业务代理。 登录到experience.adobe.com ，您可以通过使用搜索框以自然语言指定提示来开始与AI Assistant交互：
+您可以通过AI助手访问AEM中的代理。 登录到experience.adobe.com ，您可以通过使用搜索框以自然语言指定提示来开始与AI Assistant交互：
 
 ![访问发现代理](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
@@ -152,7 +152,7 @@ Discovery Agent可以识别满足特定质量要求（如文件格式或最小�
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 

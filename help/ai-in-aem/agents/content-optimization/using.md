@@ -3,9 +3,9 @@ title: 内容优化代理
 description: 了解如何使用内容优化代理来转变用户如何通过应用自然语言说明创建渠道就绪型变体来优化和调整资产。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -68,10 +68,9 @@ ht-degree: 0%
 
 区域营销人员和机构工作人员还可以使用内容优化代理快速生成可用于渠道的图像变体，从而支持更快、更一致的内容生产。
 
-
 ## 如何访问内容优化代理？ {#access-content-optimization-agent}
 
-您可以通过AI助手访问AEM业务代理。 登录到experience.adobe.com ，通过使用`Ask AI Assistant anything`字段以自然语言指定提示开始与AI Assistant交互：
+您可以通过AI助手访问AEM中的代理。 登录到experience.adobe.com ，通过使用`Ask AI Assistant anything`字段以自然语言指定提示开始与AI Assistant交互：
 
 ![访问发现代理](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
