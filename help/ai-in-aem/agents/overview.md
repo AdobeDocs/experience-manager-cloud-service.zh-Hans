@@ -3,7 +3,7 @@ title: AEM中的代理概述
 description: 了解AEM中可用于加快内容创建和自动编排更改的代理。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: f981e7ed9f4bbd26226facf37c343f16a9e99263
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 ## 内容优化代理 {#content-optimization-agent}
 
-[内容优化代理](/help/ai-in-aem/agents/content-optimization/using.md)通过应用自然语言指令来创建渠道就绪的变体，来改变用户优化和调整资产的方式。 该代理解释用户意图并执行复杂的编辑任务以自动执行任务，包括生成新演绎版、调整可视属性、更改背景或为特定数字渠道准备资产。
+[内容优化代理](/help/ai-in-aem/agents/content-optimization/overview.md)通过应用自然语言指令来创建渠道就绪的变体，来改变用户优化和调整资产的方式。 该代理解释用户意图并执行复杂的编辑任务以自动执行任务，包括生成新演绎版、调整可视属性、更改背景或为特定数字渠道准备资产。
 
 ## 发现代理 {#discovery-agent}
 
-[发现代理](/help/ai-in-aem/agents/discovery/using.md)提供了AEM内容，从而提供了简化的、点击免费的发现体验。 它可以跨Assets、内容片段和自适应Forms进行智能搜索，以交付相关材料，如图像、视频、PDF文档、文章和表单模板。
+[发现代理](/help/ai-in-aem/agents/discovery/overview.md)提供了AEM内容，从而提供了简化的、点击免费的发现体验。 它可以跨Assets、内容片段和自适应Forms进行智能搜索，以交付相关材料，如图像、视频、PDF文档、文章和表单模板。
 
 ## 开发代理 {#development-agent}
 
