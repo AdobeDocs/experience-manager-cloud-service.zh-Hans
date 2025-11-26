@@ -3,9 +3,9 @@ title: 表单创建技能
 description: 了解Experience Production Agent的表单创建技能以及如何使用自然语言从头开始创建表单。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,42 @@ ht-degree: 0%
 * **配置提交**：配置提交表单数据的位置，包括设置电子邮件通知、与工作流的集成或连接到外部系统。
 
 有关详细信息，请参阅[Forms Experience Builder文档](/help/forms/experience-builder/product-overview.md)。
+
+
+## 激活 {#activation}
+
+要为贵组织启用Experience Production Agent，必须通过Adobe启动激活。 通过以下方式联系客户以开始此过程：
+
+* 电子邮件： `experience-production-agent@adobe.com`
+* 或者，联系您指定的Adobe客户团队。
+
+为了获得高效的入门体验，请准备并提供以下详细信息：
+
+对于&#x200B;**AEM as a Cloud Service**，共享以下标识符：
+
+* 组织 ID
+* `product_id`
+* `profile_id`
+
+您的AEM管理员可以通过以下方式找到这些源代码：
+
+1. 导航到<https://adminconsole.adobe.com/>
+1. 选择&#x200B;**Adobe Experience Manager as a Cloud Service**
+1. 在环境中选择适当的AEM实例
+1. 选择具有相关内容读/写权限的配置文件
+1. 从此页面复制完整的浏览器URL
+1. 正在从URL提取`product_id`和`profile_id`值\
+   （例如，`https://adminconsole.adobe.com/products/profiles/users`之类的URL包含这些参数）。
+
+对于&#x200B;**Edge Delivery文档创作**，为您的Adobe团队提供：
+
+* Edge Delivery Services环境的域
+* 相应的GitHub详细信息：
+   * 组织(Org)
+   * 存储库（存储库）
+   * 分支
+
+提供完整而准确的信息可加快激活过程并确保及时配置Experience Production Agent。
 
 <!-- 
 #### Import and convert {#import-and-convert}
