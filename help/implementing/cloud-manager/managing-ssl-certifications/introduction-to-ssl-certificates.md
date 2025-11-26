@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
+source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1260'
 ht-degree: 16%
 
 ---
@@ -164,7 +164,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PE
 
 ### 让我们加密Adobe管理的DV证书的速率限制
 
-Adobe管理的DV证书依赖于Let&#39;s Encrypt。 除了Cloud Manager对已安装证书的限制，Let’s Encrypt还实施其自身的速率限制。 一个密钥限制为&#x200B;**每个确切标识符集的新证书**：在任何7天的时间段内，最多可以为同一组主机名颁发5个证书。 如果达到此限制，Cloud Manager将显示相应的Let&#39;s Encrypt错误，并且只有在重置速率限制窗口之后才能为该主机名设置创建更多证书。 有关最新值和其他相关限制，请参阅[Let&#39;s Encrypt rate-limits文档](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)。
+Adobe管理的DV证书依赖于Let&#39;s Encrypt。 除了Cloud Manager对已安装证书的限制，Let’s Encrypt还实施其自身的速率限制。 一个密钥限制为&#x200B;**每个确切标识符集的新证书**：在任何7天的时间段内，最多可以为同一组主机名颁发5个证书。 如果达到此限制，Cloud Manager会显示错误，并且在重置速率限制窗口之前，将无法为该主机名集创建更多证书。 有关最新值和其他相关限制，请参阅[Let&#39;s Encrypt rate-limits文档](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)。
 
 ## 了解详情 {#learn-more}
 
