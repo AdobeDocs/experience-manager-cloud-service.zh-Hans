@@ -1,27 +1,25 @@
 ---
-title: 将Form Bridge与HTML5表单的自定义门户集成
+title: 将 Form Bridge 集成至 HTML5 Forms 的自定义门户中
 description: 您可以使用FormBridge API从HTML页面获取或设置表单字段的值并提交表单。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 4%
 
 ---
 
-# 将Form Bridge与HTML5表单的自定义门户集成{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# 将 Form Bridge 集成至 HTML5 Forms 的自定义门户中{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
 
-FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。 有关FormBridge API引用，请参阅[FormBridge API引用](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)。
+FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。<!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
 
 您可以使用FormBridge API从HTML页面获取或设置表单字段的值并提交表单。 例如，您可以使用API构建类似于向导的体验。
 

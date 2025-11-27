@@ -1,21 +1,19 @@
 ---
-title: 生成XDP表单的HTML5预览
+title: 生成 XDP 表单的 HTML5 预览
 description: LiveCycle Designer中的“预览HTML”选项卡可用于预览表单在浏览器中显示的效果。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 生成XDP表单的HTML5预览{#generate-html-preview-of-an-xdp-form}
+# 生成 XDP 表单的 HTML5 预览{#generate-html-preview-of-an-xdp-form}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -38,7 +36,7 @@ ht-degree: 0%
 
 1. 根据您是在OSGi还是JEE上运行AEM Forms，在&#x200B;**身份验证要求**&#x200B;字段中添加以下内容：
 
-   * JEE上的AEM Forms
+   * JEE 上的 AEM Forms
 
       * -/content/xfaforms
       * -/etc/clientlibs
@@ -120,9 +118,9 @@ Designer允许您使用示例XML数据预览和测试表单。 建议您经常�
 
 1. 选择&#x200B;**文件>表单属性**。
 
-1. 单击&#x200B;**预览**&#x200B;选项卡，然后在“数据文件”框中键入测试数据文件的完整路径。 您还可以使用“浏览”按钮导航到文件。
+2. 单击&#x200B;**预览**&#x200B;选项卡，然后在“数据文件”框中键入测试数据文件的完整路径。 您还可以使用“浏览”按钮导航到文件。
 
-1. 单击&#x200B;**确定**。 下次在&#x200B;**预览HTML**&#x200B;选项卡中预览表单时，来自示例XML文件的数据值将显示在相应的对象中。
+3. 单击&#x200B;**确定**。 下次在&#x200B;**预览HTML**&#x200B;选项卡中预览表单时，来自示例XML文件的数据值将显示在相应的对象中。
 
 ## 在存储库中预览表单 {#html-preview-of-forms-in-forms-manager}
 

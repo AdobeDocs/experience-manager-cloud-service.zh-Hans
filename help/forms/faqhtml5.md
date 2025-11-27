@@ -3,14 +3,12 @@ title: HTML5 Forms 常见问题解答（FAQ）
 description: 有关HTML5表单的布局、脚本支持和范围的常见问题解答(FAQ)。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: hTML5_forms
-docset: aem65
+topic-tags: hTML5_formss
 feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 0%

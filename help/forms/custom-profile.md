@@ -1,29 +1,28 @@
 ---
-title: 创建HTML5表单的自定义配置文件
+title: 为 HTML5 Forms 创建自定义轮廓
 description: HTML5表单配置文件是Apache Sling中的资源节点。 它代表HTML5 Forms渲染服务的自定义版本。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 2%
 
 ---
 
-# 创建HTML5表单的自定义配置文件 {#creating-a-custom-profile-for-html-forms}
+# 为 HTML5 Forms 创建自定义轮廓 {#creating-a-custom-profile-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
 
 配置文件是[Apache Sling](https://sling.apache.org/)中的资源节点。 它代表HTML5 Forms呈现服务的自定义版本。 您可以使用HTML5 Forms呈现版本服务自定义HTML5表单的外观、行为和交互。 JCR存储库的`/content`文件夹中存在配置文件节点。 您可以将节点直接放置到`/content`文件夹或`/content`文件夹的任何子文件夹下。
 
-配置文件节点具有&#x200B;**sling：resourceSuperType**&#x200B;属性，默认值为&#x200B;**xfaforms/profile**。 节点的渲染脚本位于/libs/xfaforms/profile。
+配置文件节点具有&#x200B;**sling:resourceSuperType**&#x200B;属性，默认值为&#x200B;**xfaforms/profile**。 节点的渲染脚本位于/libs/xfaforms/profile。
 
 Sling脚本是JSP脚本。 这些JSP脚本用作容器，用于组合所请求表单的HTML和所需的JS/CSS工件。 这些Sling脚本也称为&#x200B;**配置文件渲染器脚本**。 配置文件渲染器调用Forms OSGi服务来渲染请求的表单。
 
@@ -67,7 +66,7 @@ footer.jsp模块为空。 它允许您添加仅用于用户交互的脚本。
 
 1. 复制节点默认值，并将该节点粘贴到名为&#x200B;*hrform*&#x200B;的不同文件夹(*/content/profiles*)中。
 
-1. 选择新节点&#x200B;*hrform*，然后添加一个字符串属性： *sling：resourceType*，其值： *hrform/demo*。
+1. 选择新节点&#x200B;*hrform*，然后添加一个字符串属性： *sling:resourceType*，其值为： *hrform/demo*。
 
 1. 单击工具栏菜单中的“全部保存”以保存更改。
 

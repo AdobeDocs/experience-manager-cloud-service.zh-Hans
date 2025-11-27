@@ -1,23 +1,21 @@
 ---
-title: HTML5 Forms与PDF forms的功能差异
+title: HTML5 Forms 与 PDF Forms 的功能差异
 description: 了解HTML5 Forms和PDF forms之间的功能差异。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
-# HTML5 Forms与PDF forms的功能差异 {#feature-differentiation-between-html-forms-and-pdf-forms}
+# HTML5 Forms 与 PDF Forms 的功能差异 {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -28,7 +26,7 @@ ht-degree: 2%
  <tbody>
   <tr>
    <th>功能</th>
-   <th>HTML5 表单</th>
+   <th>HTML5 Forms</th>
    <th>PDF</th>
   </tr>
   <tr>

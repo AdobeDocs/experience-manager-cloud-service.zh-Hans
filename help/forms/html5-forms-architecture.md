@@ -1,25 +1,23 @@
 ---
-title: HTML5表单的架构
+title: HTML5 Forms 的架构
 description: HTML5 Forms作为包部署在嵌入的AEM实例中，并使用RESTful Apache Sling架构通过HTTP/S公开作为REST端点的功能。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 0%
+source-wordcount: '1991'
+ht-degree: 1%
 
 ---
 
-# HTML5表单的架构{#architecture-of-html-forms}
+# HTML5 Forms 的架构{#architecture-of-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -32,11 +30,11 @@ HTML5 forms功能作为包部署在嵌入式AEM实例中，并使用RESTful [Apa
 
 ### 使用Sling框架 {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/)以资源为中心。 它会使用请求URL首先解析资源。 每个资源都有一个&#x200B;**sling：resourceType**（或&#x200B;**sling：resourceSuperType**）属性。 然后，根据此属性、请求方法和请求URL的属性，选择sling脚本来处理请求。 此sling脚本可以是JSP或servlet。 对于HTML5表单，**配置文件**&#x200B;节点用作Sling资源，**配置文件渲染器**&#x200B;用作Sling脚本，用于处理使用特定配置文件渲染移动表单的请求。 **配置文件渲染器**&#x200B;是一个JSP，它从请求中读取参数并调用Forms OSGi服务。
+[Apache Sling](https://sling.apache.org/)以资源为中心。 它会使用请求URL首先解析资源。 每个资源都有一个&#x200B;**sling:resourceType** （或&#x200B;**sling:resourceSuperType**）属性。 然后，根据此属性、请求方法和请求URL的属性，选择sling脚本来处理请求。 此sling脚本可以是JSP或servlet。 对于HTML5表单，**配置文件**&#x200B;节点用作Sling资源，**配置文件渲染器**&#x200B;用作Sling脚本，用于处理使用特定配置文件渲染移动表单的请求。 **配置文件渲染器**&#x200B;是一个JSP，它从请求中读取参数并调用Forms OSGi服务。
 
 有关REST端点和支持的请求参数的详细信息，请参阅[渲染表单模板](/help/forms/rendering-form-template.md)。
 
-当用户从客户端设备(如iOS或Android™浏览器)发出请求时，Sling首先根据请求URL解析配置文件节点。 从该配置文件节点中，读取&#x200B;**sling：resourceSuperType**&#x200B;和&#x200B;**sling：resourceType**&#x200B;以确定可处理此表单渲染请求的所有可用脚本。 然后，它使用Sling请求选择器以及请求方法来识别最适合处理此请求的脚本。 请求到达配置文件渲染器JSP后，JSP会调用Forms OSGi服务。
+当用户从客户端设备(如iOS或Android™浏览器)发出请求时，Sling首先根据请求URL解析配置文件节点。 从该配置文件节点中，读取&#x200B;**sling:resourceSuperType**&#x200B;和&#x200B;**sling:resourceType**&#x200B;以确定可处理此表单渲染请求的所有可用脚本。 然后，它使用Sling请求选择器以及请求方法来识别最适合处理此请求的脚本。 请求到达配置文件渲染器JSP后，JSP会调用Forms OSGi服务。
 
 有关Sling脚本解析的更多详细信息，请参阅[AEM Sling备忘单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)或[Apache Sling Url分解](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)。
 
@@ -177,7 +175,7 @@ Sling包包含与配置文件和配置文件渲染器相关的内容。
 
 #### 配置文件渲染器 {#profile-renderers}
 
-配置文件节点具有属性&#x200B;**sling：resourceSuperType**，其值为&#x200B;**xfaforms/profile**。 此属性在内部将请求转发到&#x200B;**/libs/xfaforms/profile**&#x200B;文件夹中配置文件节点的sling脚本。 这些脚本是JSP页面，是用于组合HTML表单和所需JS/CSS工件的容器。 这些页面包括对以下内容的引用：
+配置文件节点具有值为&#x200B;**xfaforms/profile:resourceSuperType**&#x200B;的属性&#x200B;**sling**。 此属性在内部将请求转发到&#x200B;**/libs/xfaforms/profile**&#x200B;文件夹中配置文件节点的sling脚本。 这些脚本是JSP页面，是用于组合HTML表单和所需JS/CSS工件的容器。 这些页面包括对以下内容的引用：
 
 * **xfaforms.I18N。&lt;locale>**：此库包含本地化数据。
 * **xfaforms.profile**：此库包含XFA脚本和布局引擎的实施。

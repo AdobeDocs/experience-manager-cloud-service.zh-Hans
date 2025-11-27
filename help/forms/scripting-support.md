@@ -1,22 +1,21 @@
 ---
-title: 对HTML5表单的脚本支持
+title: HTML5 Forms 的脚本支持
 description: HTML5 Forms支持的JavaScript、FormCalc属性和其他方法。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '3916'
 ht-degree: 6%
 
 ---
 
-# 对HTML5表单的脚本支持 {#scripting-support-for-html-forms}
+# HTML5 Forms 的脚本支持 {#scripting-support-for-html-forms}
 
 JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
 
@@ -548,7 +547,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
 |---|---|---|
 | instancemanager | instanceManager对象可管理表单模型对象的实例创建、移除和移动。 | 无 |
 
-## content {#content}
+## 内容 {#content}
 
 | **属性** | **描述** | **异常** |
 |---|---|---|

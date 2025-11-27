@@ -1,33 +1,31 @@
 ---
-title: 为HTML5表单设计表单模板
+title: 为 HTML5 Forms 设计表单模板
 description: AEM Forms可以将XFA表单模板渲染为HTML5格式。 表单设计人员可以使用Designer设计表单模板并使用HTML5呈现功能。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 3%
 
 ---
 
-# 为HTML5表单设计表单模板{#designing-form-templates-for-html-forms}
+# 为 HTML5 Forms 设计表单模板{#designing-form-templates-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
 
-AEM中的HTML5表单组件可以将XFA表单模板渲染为HTML5格式。 窗体设计人员可以使用[Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)设计窗体模板并使用HTML5呈现功能。 这些表单模板及其资源可以驻留在AEM存储库和文件系统中，或通过http公开。 但是，如果您计划使用Forms Manager管理表单，则模板和资源应位于AEM存储库中。
+AEM中的HTML5表单组件可以将XFA表单模板渲染为HTML5格式。 表单设计人员可以使用Forms Designer设计表单模板并使用HTML5呈现功能。 这些表单模板及其资源可以驻留在AEM存储库和文件系统中，或通过http公开。 但是，如果您计划使用Forms Manager管理表单，则模板和资源应位于AEM存储库中。
 
 虽然HTML5表单在很大程度上与PDF forms的行为相匹配，但两种格式都存在一些不适用于其他格式的功能。 例如，Adobe Reader中对PDF表单应用条形码的方式因移动设备表单而异，对表单进行数字签名的方式也因格式而异。 有关此类变体的更多信息，请参阅[HTML5表单与PDF forms之间的功能区别](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)。
 
 有关常见的XFA功能，请参阅以下最佳实践和指南，以设计可同时满足两种格式的表单。
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
 设计表单模板的大多数步骤（如架构绑定或编写表单逻辑）都是相同的。 但是，由于Adobe Reader等厚客户端的渲染引擎与基于浏览器的表单的脚本引擎之间存在固有差异，因此[最佳实践](/help/forms/design-accessible-html5-forms.md)文章中介绍了一些建议。 这些最佳实践可帮助您设计两种格式的表单模板，使其按预期工作。
 

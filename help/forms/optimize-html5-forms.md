@@ -1,22 +1,21 @@
 ---
-title: 优化HTML5表单
+title: 优化 HTML5 Forms
 description: 您可以优化HTML5表单的输出大小。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: HTML5 Forms,Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 0%
+source-wordcount: '310'
+ht-degree: 1%
 
 ---
 
-# 优化HTML5表单 {#optimizing-html-forms}
+# 优化 HTML5 Forms {#optimizing-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -86,4 +85,4 @@ Apache可以使用HTTP或AJP协议与JBoss通信。
    </Location>
    ```
 
-1. 要访问AEM服务器，请使用https://[Apache_server]：80。
+1. 要访问AEM服务器，请使用https://[Apache_server]:80。

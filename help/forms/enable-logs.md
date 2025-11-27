@@ -1,23 +1,21 @@
 ---
-title: 为HTML5表单启用日志记录
+title: 为 HTML5 Forms 启用日志记录功能
 description: 记录器实用程序启用表单的记录，并帮助您调试与表单相关的问题。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# 为HTML5表单启用日志记录{#enable-logging-for-html-forms}
+# 为 HTML5 Forms 启用日志记录功能{#enable-logging-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -30,7 +28,7 @@ ht-degree: 4%
 
 1. 转到`https://'[server]:[port]'/system/console/configMgr`。 找到并打开&#x200B;*Apace Sling日志记录器配置*&#x200B;选项。 此时将显示一个对话框：
 
-   ![&#x200B; Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
+   ![ Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
 
    Apace Sling日志记录器配置选项
 
@@ -172,9 +170,9 @@ ht-degree: 4%
 >[!NOTE]
 >
 >每个日志类别a (xfa)、b (xfaView)和c (xfaPerf)的默认日志级别为2 (ERROR)。 因此，对于日志配置：2-b6，不同类别的日志级别为：
->&#x200B;>a (xfa)：2（默认级别错误）
->&#x200B;>b (xfaView)：6(用户指定的TRACE)
->&#x200B;>a (xfaPerf)：2（默认级别错误）
+>a (xfa)：2（默认级别错误）
+>b (xfaView)：6(用户指定的TRACE)
+>a (xfaPerf)：2（默认级别错误）
 
 ### 使用Configuration Manager启用记录 {#enabling-logging-using-configuration-manager}
 

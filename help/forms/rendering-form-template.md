@@ -1,22 +1,21 @@
 ---
-title: HTML5表单的渲染表单模板
+title: 为 HTML5 Forms 渲染表单模板
 description: HTML5表单配置文件与配置文件渲染关联。 配置文件渲染器是JSP页，负责通过调用HTML OSGi服务来生成表单的Forms表示形式。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# HTML5表单的渲染表单模板 {#rendering-form-template-for-html-forms}
+# 为 HTML5 Forms 渲染表单模板 {#rendering-form-template-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -25,7 +24,7 @@ ht-degree: 1%
 
 HTML5表单具有&#x200B;**配置文件**&#x200B;的概念，这些配置文件公开为REST端点以启用表单模板的移动设备渲染。 这些配置文件已关联&#x200B;**配置文件渲染器**。 它们是JSP页，负责通过调用HTML OSGi服务来生成Forms表单表示形式。 “配置文件”节点的JCR路径决定了渲染端点的URL。 表单的默认渲染端点指向“default”配置文件，如下所示：
 
-https://&lt;*主机*>：&lt;*端口*>/content/xfaforms/profiles/default.html？contentRoot=&lt;*包含表单xdp*>&amp;template=&lt;*xdp*>的文件夹路径
+https://<*主机*>：<*端口*>/content/xfaforms/profiles/default.html？contentRoot=<*包含表单xdp*>&template=<*xdp*>的文件夹路径
 
 例如，`http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

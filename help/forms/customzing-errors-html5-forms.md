@@ -1,20 +1,19 @@
 ---
-title: 自定义HTML5表单的错误消息
+title: 自定义 HTML5 Forms 的错误消息
 description: 了解如何自定义HTML5表单的错误消息显示，包括如何更改其位置和外观。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-# 自定义HTML5表单的错误消息 {#customizing-error-messages-for-html-forms}
+# 自定义 HTML5 Forms 的错误消息 {#customizing-error-messages-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>

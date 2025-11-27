@@ -1,22 +1,21 @@
 ---
-title: 为HTML5表单启用附件
+title: 为 HTML5 Forms 启用附件功能
 description: 默认情况下，将禁用HTML5表单的附件支持。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# 为HTML5表单启用附件 {#enabling-attachments-for-an-html-form}
+# 为 HTML5 Forms 启用附件功能 {#enabling-attachments-for-an-html-form}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>

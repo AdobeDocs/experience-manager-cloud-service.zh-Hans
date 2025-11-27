@@ -1,22 +1,21 @@
 ---
-title: HTML5表单快速入门
+title: HTML5 Forms 快速入门
 description: 要开始配置，请部署AEM Forms附加组件包，并将现有HTML5表单导入到AEM。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# HTML5表单快速入门 {#getting-started-with-html-forms}
+# HTML5 Forms 快速入门 {#getting-started-with-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
