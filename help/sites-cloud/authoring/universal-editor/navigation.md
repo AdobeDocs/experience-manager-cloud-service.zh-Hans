@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1853'
 ht-degree: 20%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 ![Experience Cloud 标题](assets/experience-cloud-header.png)
 
-有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帐户 {#user-properties}
 
@@ -137,12 +137,6 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 >
 >使用热键`Command-Z`或`Shift-Command-Z`分别撤消或重做。
 
-#### 身份验证标头 {#authentication-settings}
-
-如果需要[设置自定义身份验证标头以用于本地开发目的，请选择身份验证标头图标](/help/implementing/universal-editor/developer-overview.md#auth-header)。
-
-![身份验证标头设置按钮](assets/authentication-header-settings.png)
-
 #### 本地开发人员登录 {#local-developer-login}
 
 如果需要在本地开发时轻松验证本地AEM SDK [，请选择本地开发人员登录图标。](/help/implementing/universal-editor/local-dev.md)
@@ -193,7 +187,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 
@@ -265,6 +259,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 * 在内容树中选择某个项目时，编辑器将滚动到该内容并将其选定。
 * 双击内容树中的项时，编辑器将滚动到该内容并选择它，同时在[属性模式下打开关联的属性。](#properties-mode)
+* 右键单击树中的项目时，将会打开上下文菜单，其中包含适用于该项目的相应操作。
 
 ![内容树](assets/content-tree.png)
 
@@ -307,6 +302,10 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 ![图标重复](assets/duplicate.png)
 
 点击或单击重复按钮[将复制选定的组件](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)。
+
+>[!TIP]
+>
+>使用热键 `Command+d` 从容器中删除选定的组件。
 
 ##### 删除 {#delete}
 

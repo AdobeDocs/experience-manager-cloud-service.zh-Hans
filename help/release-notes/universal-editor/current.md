@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2025.11.20发行说明
-description: 这些是通用编辑器2025.11.20版的发行说明。
+title: 通用编辑器2025.12.04发行说明
+description: 这些是通用编辑器2025.12.04版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 67%
+source-wordcount: '166'
+ht-degree: 50%
 
 ---
 
 
-# 通用编辑器2025.11.20发行说明 {#release-notes}
+# 通用编辑器2025.12.04发行说明 {#release-notes}
 
-这些是通用编辑器 2025 年 11 月 20 号版本的发行说明。
+这些是通用编辑器 2025 年 12 月 4 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ ht-degree: 67%
 
 ## 新增功能 {#what-is-new}
 
-* Toasts已迁移到新UI。
-
-## 早期采用的功能 {#early-adopter}
-
-如果您有兴趣测试这些即将推出的功能并分享您的反馈，请使用与您的 Adobe ID 关联的电子邮件地址发送邮件至您的 Adobe 客户成功经理。
+* 已禁用授权标头以支持[本地开发人员登录。](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* 现在[结构化树上有一个上下文菜单可通过右键单击获得。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* 热键已添加到[重复的组件。](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### 新 RTE {#new-rte}
 
@@ -38,7 +36,6 @@ ht-degree: 67%
 
 ## 其他改进 {#other-improvements}
 
-* RTE值的处理已得到简化。
-* 解决了罕见的工具栏争用情况。
-* 已删除未使用的功能切换。
-* 依赖项已更新。
+* 解决了RTE未在画布上正确保存的问题。
+* 已修复内容选取器文件夹树剪切。
+* 现在在添加操作期间提供了`componentId`。

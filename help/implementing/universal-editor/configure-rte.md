@@ -4,9 +4,9 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
+source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 为通用编辑器配置RTE {#configure-rte}
 
 了解如何在通用编辑器中配置富文本编辑器(RTE)。
-
->[!NOTE]
->
->本文档适用于通用编辑器的新RTE，该版本可用作早期采用者功能。 如果您有兴趣测试这项新功能，[请查看发行说明以了解详细信息。](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## 概述 {#overview}
 
