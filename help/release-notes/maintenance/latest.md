@@ -20,7 +20,7 @@ ht-degree: 39%
 
 以下总结了于2025年12月3日公开发布的维护版本23482的持续改进。 上一个维护版本是版本 23385。
 
-激活 2025.12.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2025.12.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 
 ### 增强功能 {#enhancements-23482}

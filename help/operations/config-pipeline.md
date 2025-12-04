@@ -4,9 +4,9 @@ description: 了解如何使用配置管道在AEM as a Cloud Service中部署各
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
+source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -49,6 +49,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 | [基本身份验证](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 为保护某些URL的基本身份验证对话框声明用户名和密码。 | X | X |
 | [版本清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明应何时清除内容版本的规则来优化AEM存储库 | X |  |
 | [审核日志清除维护任务](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 通过声明有关应清除日志时间的规则，优化AEM审核日志以提高性能 | X |  |
+| [工作流清除维护任务](/help/operations/maintenance.md) | `MaintenanceTasks` | 最大限度地减少工作流实例的数量，以帮助提高工作流引擎的性能。<br><br>另请参阅[定期清除工作流实例](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [日志转发](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 配置用于将日志转发到各种目标的端点和凭据，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk | X | X |
 | [正在注册客户端ID](/help/implementing/developing/open-api-based-apis.md) | `API` | 通过注册客户端ID，可将Adobe Developer Console API项目范围设置为特定的AEM环境。 使用需要身份验证的基于OpenAPI的API时需要 | X |  |
 
