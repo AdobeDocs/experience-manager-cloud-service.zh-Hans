@@ -47,7 +47,7 @@ AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还�
 * Cloud Manager可管理在AEM管理的CDN中安装的自定义域名和证书。
 * BYO CDN中安装的自定义域名和证书将直接在该CDN中进行管理。
 
-**在您自己的CDN中管理的域不需要通过Cloud Manager进行安装** — 这些域将通过X-Forwarded-Host提供给AEM，并且与Dispatcher中定义的vhost匹配。 请参阅[ CDN 文档](/help/implementing/dispatcher/cdn.md)。
+**在您自己的CDN中管理的域不需要通过Cloud Manager进行安装** — 这些域将通过X-Forwarded-Host提供给AEM，并且与Dispatcher中定义的vhost匹配。 请参阅[&#x200B; CDN 文档](/help/implementing/dispatcher/cdn.md)。
 
 在一个环境中，您可以将两个域安装在AEM管理的CDN中，也可以将两个域安装在BYO CDN中。
 
