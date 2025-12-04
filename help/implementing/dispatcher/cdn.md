@@ -4,9 +4,9 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1768'
 ht-degree: 11%
 
 ---
@@ -157,6 +157,13 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 ```
 
 此过程允许验证详细信息，如主机值、边缘身份验证配置和x-forwarded-host标头值。 它还标识是否设置了Edge键以及在存在匹配项时使用哪个键。
+
+>[!NOTE]
+>
+>您可以使用快速开发环境(RDE)来部署和测试您的配置：
+>
+>* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [如何使用快速开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 示例CDN供应商配置 {#sample-configurations}
 

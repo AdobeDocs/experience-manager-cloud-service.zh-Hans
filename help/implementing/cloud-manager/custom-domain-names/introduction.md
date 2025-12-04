@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 41%
+source-wordcount: '749'
+ht-degree: 38%
 
 ---
 
@@ -30,6 +30,10 @@ Adobe Experience Manager as a Cloud Service 配置有默认域名，以 `*.adobe
 
 为您的网站提供一个让客户印象深刻并能反映您品牌的域名是一个很好的做法。
 
+>[!IMPORTANT]
+>
+> adobeaemcloud.com **下的默认域不应使用**&#x200B;来提供对SEO而言非常重要的内容。 搜索引擎无法对adobeaemcloud.com域和子域进行索引，因为它们提供[default robots.txt](https://cdn.adobeaemcloud.com/robots.txt)，可阻止爬网和编制索引。 请改用您自己的自定义域来提供自定义robots.txt。
+
 您可以从域名注册机构、管理和销售域名的公司或组织购买域名。域名注册商管理 DNS 服务器上的域名。
 
 >[!IMPORTANT]
@@ -43,7 +47,7 @@ AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还�
 * Cloud Manager可管理在AEM管理的CDN中安装的自定义域名和证书。
 * BYO CDN中安装的自定义域名和证书将直接在该CDN中进行管理。
 
-**在您自己的CDN中管理的域不需要通过Cloud Manager进行安装** — 这些域将通过X-Forwarded-Host提供给AEM，并且与Dispatcher中定义的vhost匹配。 请参阅[&#x200B; CDN 文档](/help/implementing/dispatcher/cdn.md)。
+**在您自己的CDN中管理的域不需要通过Cloud Manager进行安装** — 这些域将通过X-Forwarded-Host提供给AEM，并且与Dispatcher中定义的vhost匹配。 请参阅[ CDN 文档](/help/implementing/dispatcher/cdn.md)。
 
 在一个环境中，您可以将两个域安装在AEM管理的CDN中，也可以将两个域安装在BYO CDN中。
 

@@ -4,10 +4,10 @@ description: 了解如何将 Edge Delivery Site 添加到您的生产程序或�
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 95%
 
 ---
 
@@ -59,6 +59,12 @@ ht-degree: 100%
    | **3** | 在 Git 存储库中为您刚才创建的更改创建一个拉取请求，然后将其合并到 `main` 以提交代码。 |
 
 1. 单击&#x200B;**验证**。
+
+   >[!NOTE]
+   >
+   >如果您的Edge Delivery Services网站使用Helix身份验证，则无法访问验证质询。 暂时禁用身份验证，完成站点验证，然后重新打开身份验证。
+
+
 
 在验证存储库后，它在 Edge Delivery Sites 表中的状态就会更新。内部带有白色复选标记的绿色圆圈表示状态。
 
