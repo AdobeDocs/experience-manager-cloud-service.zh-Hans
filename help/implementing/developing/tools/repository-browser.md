@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->您还可以观看[此剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=zh-Hans)，观看有关如何使用存储库浏览器调试AEM as a Cloud Service的快速视频介绍。
+>您还可以观看[此剪辑](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)，观看有关如何使用存储库浏览器调试AEM as a Cloud Service的快速视频介绍。
 
 ## 简介 {#introduction}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 要访问AEM as a Cloud Service Developer Console或存储库浏览器，必须满足以下条件
 
-要访问AEM as a Cloud Service Developer Console，请参阅[Developer Console访问权限](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
+要访问AEM as a Cloud Service Developer Console，请参阅[Developer Console访问权限](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
 
 要访问存储库浏览器，必须满足与AEM as a Cloud Service Developer Console相同的条件（以上指定）。 要查看特定实例的存储库浏览器内容，请执行以下操作：
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * 发布实例：具有&#x200B;**发布实例**&#x200B;的AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器。 如果没有该产品配置文件集，用户将以匿名用户身份导航，并且由于权限限制，某些路径将不会显示。
 
-有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=zh-Hans)。
+有关设置用户权限的更多信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)。
 
 ### 启动存储库浏览器 {#launching-the-repository-browser}
 
@@ -76,38 +76,42 @@ ht-degree: 1%
 
 对于发布，默认情况下，存储库浏览器仅显示公共内容，因此某些文件夹（如`/conf`或`/home`）不可见。
 
-要使这些位置可见，请执行以下操作。
+要使这些位置可见，请使用AEM管理员发布产品配置文件。 有关详细信息，请参阅[团队和产品配置文件文档](/help/onboarding/aem-cs-team-product-profiles.md)。
 
-1. 单击所选环境旁边的三个圆点，然后选择&#x200B;**管理访问权限**
+<!-- Drafting because of CQDOC-23204
+
+1. Click the three dots next to the environment of your choice and select **Manage Access**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. 找到您的发布实例，然后单击它
+1. Find your publish instance, then click it
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. 为发布管理员创建产品配置文件。 在下面的示例中，它名为&#x200B;**DEV - AEM Administrators Publish**
+1. Create a product profile for publish administrators. In the example below, it is called **DEV - AEM Administrators Publish**
 
-   ![报表浏览器9](/help/implementing/developing/tools/assets/repobrowser9.png)
+   ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. 将相应的用户添加到新的产品配置文件，这些用户应该能够在发布存储库浏览器中拥有完全访问权限
+1. Add the appropriate users, corresponding to who should be able to navigate the publish repository browser with full access, to the new product profile
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. 等待几分钟，然后打开&#x200B;**AEM创作**&#x200B;控制台
-1. 通过单击作者上的&#x200B;**工具 — 安全 — 组**，然后单击&#x200B;**管理员**&#x200B;组，将对应于新产品配置文件的组添加为管理员组的成员。 然后，添加该组，如下所示
+1. Wait for a few minutes, then open the **AEM author** console
+1. Add the group corresponding to the new product profile as a member of the administrator's group by clicking **Tools - Security - Groups on author**, then clicking the **administrators** group. Then, add the group as shown below
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. 激活&#x200B;**管理员**&#x200B;和新的&#x200B;**DEV - AEM Administrators Publish**&#x200B;组，以使它们在发布时可用
+1. Activate the **administrators** and the new **DEV - AEM Administrators Publish** group so that they become available on publish
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. 作为良好的安全做法，请从&#x200B;**author**&#x200B;上的管理员组中删除新的&#x200B;**DEV - AEM Administrators Publish**&#x200B;组，以便将该新组隔离为发布
+1. As a good security practice, remove the new **DEV - AEM Administrators Publish** group from the administrator's group on **author** so the new group is isolated to publish 
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. 访问发布实例的存储库浏览器时，所有文件夹均可见，包括`/home`和`/conf`。
+1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
+
+-->
 
 ### 查看JCR属性 {#view-jcr-properties}
 
