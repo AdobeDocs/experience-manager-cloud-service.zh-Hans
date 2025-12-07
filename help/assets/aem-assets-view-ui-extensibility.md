@@ -4,16 +4,16 @@ description: 了解 [!DNL AEM Assets View]. [!DNL AEM Assets View] UI的UI可扩
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
 
 # 在[!DNL AEM Assets View]中启用用户界面可扩展性 {#AEM-Assets-View-UI-Extensibility}
 
-[!DNL AEM Assets View]支持UI可扩展性，使您能够为[!DNL AEM Assets View]的开箱即用功能无法满足的特定工作流和业务要求将自定义UI组件添加到[!DNL Assets View] UI。 [!DNL AEM Assets View]的这个UI可扩展性功能增强了它的灵活性，使组织能够针对特定的工作流和要求调整界面。\
+[!DNL AEM Assets View]支持UI可扩展性，使您能够为[!DNL Assets View]的开箱即用功能无法满足的特定工作流和业务要求将自定义UI组件添加到[!DNL AEM Assets View] UI。 [!DNL AEM Assets View]的这个UI可扩展性功能增强了它的灵活性，使组织能够针对特定的工作流和要求调整界面。\
 您可以将扩展添加到&#x200B;**Asset**、**Folder**&#x200B;和&#x200B;**Collection**&#x200B;级别。 添加的扩展显示在&#x200B;**Asset**、**Collection**&#x200B;或&#x200B;**Folder** **[!UICONTROL Details]**&#x200B;页面的专用面板上。
 
 >[!IMPORTANT]
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 在[!DNL Assets View]中查看UI扩展 {#ui-extensibility-panel-assets-view}
 
-在[!DNL Assets View]内，导航到资产、文件夹或收藏集的&#x200B;**[!UICONTROL 详细信息]**&#x200B;页面。 **[!UICONTROL 详细信息]**&#x200B;页面在专用面板上显示添加的UI扩展。
+在[!DNL Assets View]内，导航到资产、文件夹或收藏集的&#x200B;**[!UICONTROL 详细信息]**&#x200B;页面。 **[!UICONTROL 详细信息]**页面在专用面板上显示添加的UI扩展。
 ![我的工作区](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## 添加可扩展性组件的先决条件{#assets-view-ui-extensibility}
@@ -44,17 +44,25 @@ ht-degree: 0%
 
 ## 将UI可扩展性组件添加到[!DNL Assets View] {#ui-extensibility-in-assets-view}
 
-1. 有关UI扩展和[!DNL Adobe App Builder]框架的基本信息，请参阅[快速入门](https://developer.adobe.com/uix/docs/getting-started/)。 了解UI可扩展性如何实现[!DNL Adobe Experience Cloud services]中的自定义逻辑和UI集成，并了解用于实施UI扩展的架构和工作流。
+1. 有关UI扩展和[框架的基本信息，请参阅](https://developer.adobe.com/uix/docs/getting-started/)快速入门[!DNL Adobe App Builder]。 了解UI可扩展性如何实现[!DNL Adobe Experience Cloud services]中的自定义逻辑和UI集成，并了解用于实施UI扩展的架构和工作流。
 1. 有关UI可扩展性的常规信息，包括本地环境设置、本地预览、发布和管理，请参阅[指南](https://developer.adobe.com/uix/docs/guides/)。
 1. 请参阅创建扩展中的[常见概念](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/)，了解为[!DNL AEM Assets View]开发UI扩展所需的基础。
 1. 将自定义侧面板添加到[!DNL Assets View]界面。 主机应用程序([!DNL Assets View])管理这些面板以处理UI交互，如切换和深层链接。 扩展使用`aem/assets/details/1`扩展点来集成指定属性的自定义面板，如面板ID、标题和内容URL。 开发人员使用`getPanels()`方法注册自定义面板，并构建显示自定义内容的路由。 有关详细实施（包括API引用和代码示例），请参阅[详细信息视图](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/)。
 1. 设置您的本地环境并创建您的第一个UI扩展，以在[!DNL Assets View]中亲身体验开发UI扩展的过程。 有关更多详细信息，请参阅[AEM Assets分步查看扩展开发](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)。
-1. 使用AIO CLI设置应用程序以生成基本扩展结构和所需代码。 有关详细信息，请参阅 [!DNL AEM Assets View][&#128279;](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的代码生成。
+1. 使用AIO CLI设置应用程序以生成基本扩展结构和所需代码。 有关详细信息，请参阅[ [!DNL AEM Assets View]的](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)代码生成。
 1. 在本地测试您的扩展，以确保它们在部署之前可按预期工作。 在完全隔离的环境中或以部分隔离的方式运行扩展，并将扩展连接到生产[!DNL AEM Assets View]以进行测试。 有关详细信息，请参阅[疑难解答 —  [!DNL AEM Assets View] 可扩展性](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)。
 
-## 自定义Assets视图中的快速操作和操作栏 {#customize-quick-actions-and-actions-bar}
+## 自定义Assets视图中的操作 {#customize-actions-assets-view}
 
-您可以自定义在Assets视图中选择一个或多个资源（操作栏）时显示的操作。 Assets视图还允许您自定义在单击资源卡中的更多选项(...)时显示的操作。 有关详细信息，请参阅[浏览视图](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/)。
+AEM Assets视图允许您在“浏览”视图中自定义以下操作：
+
+* 自定义在操作栏中选择一个或多个资产时显示的操作。
+
+* 自定义在资产卡中单击更多选项(...)时显示的操作。
+
+* 自定义“标题”菜单中可用的操作。
+
+有关详细信息，请参阅[浏览视图](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/)。
 
 ## 在Assets视图中打开自定义对话框 {#open-custom-dialogs-assets-view}
 

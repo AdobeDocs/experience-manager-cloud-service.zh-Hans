@@ -4,10 +4,10 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 77%
+source-wordcount: '1621'
+ht-degree: 74%
 
 ---
 
@@ -50,73 +50,77 @@ ht-degree: 77%
 
 可按 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的升序或降序为搜索到的资产排序。默认情况下，根据 `Relevance` 为搜索到的资产排序。
 
-## 管理自定义筛选条件 {#custom-filters}
+<!--
+  
+## Manage custom filters {#custom-filters}
 
-**所需的权限：**`Can Edit`、`Owner` 或管理员。
+**Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-Assets视图还允许您向用户界面添加自定义筛选条件。 除了[标准筛选条件](#refine-search-results)之外，您还可以应用这些自定义筛选条件来优化您的搜索结果。
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-Assets视图提供了以下自定义过滤器：
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
      <tr>
-      <th><strong>自定义筛选条件名称</strong></th>
-      <th><strong>描述</strong></th>
+      <th><strong>Custom filter name</strong></th>
+      <th><strong>Description</strong></th>
      </tr>
      <tr>
-      <td>标题</td>
-      <td>使用资产标题筛选资产。您在区分大小写的搜索条件中指定的标题必须与要在结果中显示的资产的确切标题匹配。</td>
+      <td>Title</td>
+      <td>Filter assets using the asset title. The title that you specify in the case-sensitive search criteria must match the exact title of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>名称</td>
-      <td>使用资产文件名筛选资产。您在区分大小写的搜索条件中指定的名称必须与要在结果中显示的资产的确切文件名匹配。</td>
+      <td>Name</td>
+      <td>Filter assets using the asset file name. The name that you specify in the case-sensitive search criteria must match the exact file name of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>资产大小</td>
-      <td>对于要显示在结果中的资产，通过在该资产的搜索条件中定义大小范围（以字节为单位）来筛选资产。</td>
+      <td>Asset Size</td>
+      <td>Filter assets by defining a size range, in bytes, in the search criteria for an asset to display in the results.</td>
      </tr>
      <tr>
-      <td>预测的标记</td>
-      <td>使用资产智能标记筛选资产。您在区分大小写的搜索条件中指定的智能标记名称必须与要在结果中显示的资产的确切智能标记名称匹配。无法在搜索条件中指定多个智能标记。</td>
+      <td>Predicted Tags</td>
+      <td>Filter assets using the asset smart tag. The smart tag name that you specify in the case-sensitive search criteria must match the exact smart tag name of the asset to display in the results. You cannot specify multiple smart tags in search criteria.</td>
      </tr>    
     </tbody>
    </table>
 
-<!--
+   <!--
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
-### 添加自定义筛选条件 {#add-custom-filters}
+### Add custom filters {#add-custom-filters}
 
-要添加自定义筛选条件，请执行以下操作：
+To add custom filters:
 
-1. 单击&#x200B;**[!UICONTROL 筛选条件]**。
+1. Click **[!UICONTROL Filters]**. 
 
-1. 在&#x200B;**[!UICONTROL 自定义筛选条件]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 编辑]**&#x200B;或&#x200B;**[!UICONTROL 添加筛选条件]**。
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]** or **[!UICONTROL Add Filters]**.
 
-   ![添加自定义筛选条件](assets/add-custom-filters.png)
+   ![Add custom filters](assets/add-custom-filters.png)
 
-1. 在&#x200B;**[!UICONTROL 自定义筛选条件管理]**&#x200B;对话框中，选择要添加到现有筛选条件列表中的筛选条件。选择&#x200B;**[!UICONTROL 自定义筛选条件]**&#x200B;以选择所有筛选条件。
+1. On the **[!UICONTROL Custom filters management]** dialog box, select the filters that you need to add to the existing list of filters. Select **[!UICONTROL Custom Filters]** to select all filters.
 
-1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以将筛选条件添加到用户界面。
+1. Click **[!UICONTROL Confirm]** to add the filters to the user interface.
 
-### 移除自定义筛选条件 {#remove-custom-filters}
+### Remove custom filters {#remove-custom-filters}
 
-要移除自定义筛选条件，请执行以下操作：
+To remove custom filters:
 
-1. 单击&#x200B;**[!UICONTROL 筛选条件]**。
+1. Click **[!UICONTROL Filters]**. 
 
-1. 在&#x200B;**[!UICONTROL 自定义筛选条件]**&#x200B;部分中，单击&#x200B;**[!UICONTROL 编辑]**。
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]**.
 
-1. 在&#x200B;**[!UICONTROL 自定义筛选条件管理]**&#x200B;对话框中，取消选择要从现有筛选条件列表中移除的筛选条件。
+1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以从用户界面中移除筛选条件。
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## AI 搜索 {#ai-search}
 
@@ -193,13 +197,17 @@ Assets视图中的![语义搜索](assets/semantic-search.png)
 
 1. 点击&#x200B;**另存为新资产**&#x200B;以保存资产。
 
-### 上传资产 {#upload-assets-firefly}
+<!--
 
-要将生成的资产上传到资产存储库，请执行以下操作：
+### Upload assets {#upload-assets-firefly}
 
-1. 单击&#x200B;**[!UICONTROL 上传]**。
-1. 选择需要将资产上传到的资产文件夹，然后单击&#x200B;**[!UICONTROL 选择文件夹]**。
-   ![上传资产](assets/upload-asset-firefly.jpg)
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## 保存的搜索 {#saved-search}
 
@@ -386,7 +394,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 

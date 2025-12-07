@@ -3,9 +3,9 @@ title: 发现代理概述
 description: 了解如何使用发现代理，通过自然的对话提示来按需提供相关的AEM内容，从而提供简化的、点击式的免费发现体验。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -92,13 +92,13 @@ Discovery Agent使用自然语言提示来查找与AEM存储库中的特定标�
 * 显示在文件夹`Nov 1 2025`中的`WKND`之后修改的资源。
 * 在文件夹`lifestyle`中列出`WKND`图像。
 
-**基于分辨率和格式的资源发现**
+**基于格式的资源发现**
 
-Discovery Agent可以识别满足特定质量要求（如文件格式或最小分辨率）的资产，使用户能够快速找到适合跨渠道高质量交付和重复使用的产品视觉效果。
+Discovery Agent可以识别满足特定质量要求的资产（如文件格式），使用户能够快速找到产品视觉效果，以便跨渠道进行高质量交付和重用。
 
 示例提示：
 
-查找至少2000像素（宽）的产品包装PNG图像。
+查找产品包装PNG图像。
 
 **基于方向的内容发现**
 
@@ -152,7 +152,7 @@ Discovery Agent可以识别满足特定质量要求（如文件格式或最小�
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 

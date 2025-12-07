@@ -1,9 +1,9 @@
 ---
 title: 使用人工智能生成的元数据增强内容发现
 description: 了解如何使用人工智能生成的元数据增强内容发现
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 * 所需的最低AEM版本为`20626`。
 
-* 你必须签署GenAI Rider协议。 有关更多信息，请与您的Adobe代表联系。
 
 ## 使用人工智能生成的元数据 {#using-ai-generated-smart-tags}
 
