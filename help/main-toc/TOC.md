@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 542f0d7b295a87e2f64bc8e47cea4569b2a295aa
+source-git-commit: b2b85d1e802c7f287b875d53a9347ca07ea2b806
 workflow-type: tm+mt
-source-wordcount: '6978'
-ht-degree: 98%
+source-wordcount: '6886'
+ht-degree: 97%
 
 ---
 
@@ -169,7 +169,7 @@ ht-degree: 98%
          + [2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [&#x200B; 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [ 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -526,7 +526,7 @@ ht-degree: 98%
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
                + [翻译内容](/help/journey-sites/translation/translate-content.md)
                + [发布翻译的内容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hans)
+            + [Headless 翻译历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻译多语言 Sites 的内容](/help/sites-cloud/administering/translation/overview.md)
             + [准备内容以进行翻译](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -546,7 +546,7 @@ ht-degree: 98%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
-      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hans)
+      + [在 Adobe Journey Optimizer 中使用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [用于 AEM as a Cloud Service 的操作遥测](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [上下文试验](/help/sites-cloud/administering/contextual-experimentation.md)
 + 资产 {#assets}
@@ -555,7 +555,7 @@ ht-degree: 98%
    + [[!DNL Assets] 架构](/help/assets/architecture.md)
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资产微服务概述](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
+   + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [启用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -985,64 +985,67 @@ ht-degree: 98%
       + [自定义 HTML5 Forms 的错误消息](/help/forms/customzing-errors-html5-forms.md)
       + [将 HTML5 Forms 保存为草稿](/help/forms/saving-html5-form-draft.md)
       + [为 HTML5 Forms 启用日志记录功能](/help/forms/enable-logs.md)
-      + [调试 HTML5 Forms &#x200B;](/help/forms/debug.md)
+      + [调试 HTML5 Forms ](/help/forms/debug.md)
       + [HTML5 Forms 的脚本支持](/help/forms/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/formset-in-aem-forms.md)
-   + 交互式通信 {#interactive-communication}
-      + 概述 {#overview}
-         + [交互式通信编辑器简介](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-         + [创建交互式通信](/help/forms/interactive-communication/create-interactive-communication.md)
-         + [创建交互式通信模板](/help/forms/interactive-communication/create-interactive-communication-template.md)
-         + [创建交互式通信片段](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-         + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
-         + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
-      + 组件 {#component}
-         + [交互式通信编辑器中的文本框组件](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的图像组件](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的图像字段组件](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的文本字段组件](/help/forms/interactive-communication/text-field-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的数值字段组件](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的日期/时间字段组件](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的日期字段组件](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的复选框组件](/help/forms/interactive-communication/check-box-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的单选按钮组件](/help/forms/interactive-communication/radio-button-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的子表单组件](/help/forms/interactive-communication/subform-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的矩形组件](/help/forms/interactive-communication/rectangle-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的表格组件](/help/forms/interactive-communication/table-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的线条组件](/help/forms/interactive-communication/line-component-in-interactive-communication-editor.md)
-         + [交互式通信编辑器中的条形码组件](/help/forms/interactive-communication/barcode-component-in-interactive-communication-editor.md)
-      + [交互式通信编辑器中的数据绑定](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
-      + [在交互式通信编辑器中创建规则](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
-      + [交互式通信的导入与导出](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
-      + [向交互式通信编辑器添加自定义字体](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
-      + [交互式通信编辑器中的 PDF 预览](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
-      + [交互式通信编辑器中的模板锁定](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
-      + [交互式通信编辑器中的动态页码](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
-      + [交互式通信编辑器中的内容溢出处理](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
-      + [在交互式通信编辑器中支持XDP编辑](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
-      + [常见问题解答](/help/forms/interactive-communications-faq.md)
-   + 以 Form 为中心的工作流  {#create-form-centric-workflows}
-      + [以 Form 为中心的工作流简介](/help/forms/aem-forms-workflow.md)
-      + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
-      + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
-      + [AEM Workflow 中的动态用户或组选择](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
-      + [在 AEM Inbox 中管理 Forms 应用程序和任务](/help/forms/manage-applications-inbox.md)
-      + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
-   + 通信 API {#using-communications}
-      + [通信API概述](/help/forms/aem-forms-communication-api-overview.md)
-      + [通信 API 简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [Authentication-OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)
-      + [JWT身份验证（JSON Web令牌）](/help/forms/jwt-api-authentication.md)
-      + [Communications API——同步处理](/help/forms/aem-forms-cloud-service-communications.md)
-      + [Communications API——成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-      + [Communications API — 按需处理](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
-      + [使用 AEM Forms API 生成 AFP 输出](/help/forms/document-generation-afp-api.md)
-      + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
-      + [使用 Forms Designer 创建模板](/help/forms/use-forms-designer.md)
-      + [在 Designer 中更改 Page Zero 内容](/help/forms/changing-page-zero-content-designer.md)
-      + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
-      + [PDF 文档中支持的字体列表](/help/forms/supported-out-of-the-box-fonts.md)
-      + [已知问题、最佳做法和常见问题](/help/forms/communications-known-issues-limitations.md)
++ 交互式通信 {#interactive-communication}
+   + 了解交互式通信 {#overview}
+      + [简介](/help/forms/interactive-communication/introduction.md)
+      + [快速入门](/help/forms/interactive-communication/getting-started.md)
+      + [创建交互式通信](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [创建交互式通信模板](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [创建交互式通信片段](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
+      + [创建您的第一个交互式通信](/help/forms/create-your-first-communication.md)
+   + 组件 {#component}
+      + [文本框](/help/forms/interactive-communication/text-box.md)
+      + [图像](/help/forms/interactive-communication/image.md)
+      + [图像字段](/help/forms/interactive-communication/image-field.md)
+      + [文本字段](/help/forms/interactive-communication/text-field.md)
+      + [数值字段](/help/forms/interactive-communication/numeric-field.md)
+      + [日期/时间字段](/help/forms/interactive-communication/date-time-field.md)
+      + [日期字段](/help/forms/interactive-communication/date-field.md)
+      + [复选框](/help/forms/interactive-communication/check-box.md)
+      + [单选按钮](/help/forms/interactive-communication/radio-button.md)
+      + [子表单](/help/forms/interactive-communication/subform.md)
+      + [矩形](/help/forms/interactive-communication/rectangle.md)
+      + [表](/help/forms/interactive-communication//table.md)
+      + [线形图](/help/forms/interactive-communication/line.md)
+      + [条形码](/help/forms/interactive-communication/barcode.md)
+   + 操作方式 {#howto}
+      + [配置数据绑定](/help/forms/interactive-communication/configure-data-binding.md)
+      + [导入和导出交互式通信](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
+      + [添加自定义字体](/help/forms/interactive-communication/add-custom-fonts.md)
+      + [生成PDF预览](/help/forms/interactive-communication/generate-pdf-preview.md)
+      + [启用模板锁定](/help/forms/interactive-communication/enable-template-lock.md)
+      + [实施动态页面编号](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
+      + [处理内容溢出](/help/forms/interactive-communication/handle-content-overflow.md)
+      + [支持XDP编辑](/help/forms/interactive-communication/support-xdp-editing.md)
+   + 关联用户界面 {#associateui}
+      + [在交互式通信编辑器中关联UI](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+   + [常见问题解答](/help/forms/interactive-communications-faq.md)
++ 以 Form 为中心的工作流  {#create-form-centric-workflows}
+   + [以 Form 为中心的工作流简介](/help/forms/aem-forms-workflow.md)
+   + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
+   + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
+   + [AEM Workflow 中的动态用户或组选择](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [在 AEM Inbox 中管理 Forms 应用程序和任务](/help/forms/manage-applications-inbox.md)
+   + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
++ 通信 API {#using-communications}
+   + [通信API概述](/help/forms/aem-forms-communication-api-overview.md)
+   + [通信 API 简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+   + [Authentication-OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)
+   + [JWT身份验证（JSON Web令牌）](/help/forms/jwt-api-authentication.md)
+   + [Communications API——同步处理](/help/forms/aem-forms-cloud-service-communications.md)
+   + [Communications API——成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+   + [Communications API — 按需处理](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+   + [使用 AEM Forms API 生成 AFP 输出](/help/forms/document-generation-afp-api.md)
+   + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
+   + [使用 Forms Designer 创建模板](/help/forms/use-forms-designer.md)
+   + [在 Designer 中更改 Page Zero 内容](/help/forms/changing-page-zero-content-designer.md)
+   + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
+   + [PDF 文档中支持的字体列表](/help/forms/supported-out-of-the-box-fonts.md)
+   + [已知问题、最佳做法和常见问题](/help/forms/communications-known-issues-limitations.md)
    + 交易报告  {#transaction-reports}
       + [交易报告计费 API](/help/forms/transaction-reports-billable-apis.md)
       + [记录自定义实施的交易](/help/forms/record-transaction-custom-implementation.md)
@@ -1248,7 +1251,7 @@ ht-degree: 98%
       + 创作{#authoring}
          + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/authoring.html?lang=zh-hans)
          + [Markdown 编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/markdown.html?lang=zh-hans)
-      + [预览片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=zh-Hans)
+      + [预览片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/Site/administering/content-fragments/analysis.html?lang=zh-hans)
    + 内容片段选择器 {#content-fragment-selector}
       + [微前端内容片段选择器——概述](/help/headless/content-fragment-selector/overview.md)

@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 11%
@@ -27,7 +27,7 @@ ht-degree: 11%
 
 假设您需要向数千名客户发送银行对帐单、保险单或水电费。 每个报表都具有相同的布局但个性化的数据。 交互式通信(IC)使这成为可能。
 
-![查找IC文档](/help/forms/interactive-communication/assets/introimg.png)
+![查找IC文档](/help/forms/interactive-communication/assets/introduction.png)
 
 手动生成这些文档可能非常耗时，并且经常会导致不一致，特别是在需要个性化和数据集成时。 使用交互式通信编辑器，用户可以简化创建交互式通信的过程。
 

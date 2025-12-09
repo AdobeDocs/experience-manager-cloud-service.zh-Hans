@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
+source-git-commit: ecc32b6b501be4a53bf26f170e501dc1407d1a57
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 89%
@@ -38,7 +38,7 @@ ht-degree: 89%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -117,15 +117,15 @@ AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以�
 
 * **交互式通信编辑器中的 PDF 预览**
 
-  用户可以在无数据、使用本地 JSON 数据文件或使用数据模型的数据情况下预览交互式通信 PDF，从而实现灵活的数据驱动测试。更多信息请参阅[交互式通信编辑器中的 PDF 预览](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
+  用户可以在无数据、使用本地 JSON 数据文件或使用数据模型的数据情况下预览交互式通信 PDF，从而实现灵活的数据驱动测试。更多信息请参阅[交互式通信编辑器中的 PDF 预览](/help/forms/interactive-communication/generate-pdf-preview.md)。
 
 * **交互式通信中的自定义字体支持**
 
-  自定义字体功能允许用户在交互式通信中嵌入自定义或经组织批准的字体，确保在各类设备和平台上的 PDF 渲染保持一致并与品牌风格相符。更多信息请参阅[交互式通信中的自定义字体支持](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
+  自定义字体功能允许用户在交互式通信中嵌入自定义或经组织批准的字体，确保在各类设备和平台上的 PDF 渲染保持一致并与品牌风格相符。更多信息请参阅[交互式通信中的自定义字体支持](/help/forms/interactive-communication/add-custom-fonts.md)。
 
 * **交互式通信的导入与导出**
 
-  此功能支持在不同环境间迁移和复用交互式通信。您现在可以将交互式通信及其关联的片段和数据模型从一个环境导出，并导入到另一个环境。更多信息请参阅[交互式通信的导入与导出](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
+  此功能支持在不同环境间迁移和复用交互式通信。您现在可以将交互式通信及其关联的片段和数据模型从一个环境导出，并导入到另一个环境。更多信息请参阅[交互式通信的导入与导出](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)。
 
 * **规则编辑器增强功能**
 
@@ -166,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >此功能自 9 月 25 日起作为有限可用性功能提供。
->&#x200B;>请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
+>请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
 
 ### 适用于 Eclipse 的 AEM 开发人员工具新版本 {#aem-develeper-tools-for-eclipse}
 

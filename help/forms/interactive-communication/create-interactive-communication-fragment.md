@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 18%
+source-wordcount: '291'
+ht-degree: 23%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 18%
 
 交互式通信片段允许用户创建可重复使用的模块化内容块，例如可以在多个通信文档中使用的页眉、页脚或标准免责声明。 在构建个性化、数据集成的通信时，这些片段有助于保持一致性、减少重复工作，并加快设计过程。
 
-## 先决条件
-
-* [确保作者是forms-users组的成员](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [作者必须是“forms-users”组的成员](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## 创建交互式通信片段
 
@@ -41,7 +41,7 @@ ht-degree: 18%
 
 1. 选择交互式通信片段后，会出现一个屏幕，您可以在其中定义关键片段详细信息，例如标题、名称、描述、数据模型（后端数据的结构化表示形式）和标记。
 
-   有关详细信息，请参阅[数据模型配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
+   有关详细信息，请参阅[数据模型配置指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
 
    ![查找IC文档](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
