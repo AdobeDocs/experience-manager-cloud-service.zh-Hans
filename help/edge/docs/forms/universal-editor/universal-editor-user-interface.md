@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
-source-wordcount: '2390'
+source-git-commit: 0f372f4ddc0ff323a3beedacc84a8a59de8e6d2a
+workflow-type: tm+mt
+source-wordcount: '2376'
 ht-degree: 100%
 
 ---
@@ -246,8 +246,6 @@ ht-degree: 100%
 ![规则编辑器](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
 >[!IMPORTANT]
->
-> **早期访问功能：**&#x200B;规则编辑器需要专门的访问权限。联系 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，以启用此功能。
 >
 > **了解详情：**&#x200B;请参阅[规则编辑器指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)，获取详细说明。
 
@@ -507,7 +505,7 @@ ht-degree: 100%
 
 ### **组织性建议**
 
-- **使用描述性名称** - 在属性模式中清晰地标记组件
+- **使用描述性名称** - 在属性模式中清晰地为组件赋予标签
 - **将相关字段分组** - 使用面板，按逻辑组织表单分区
 - **构建前先规划** - 开始前先草拟表单结构
 - **保持简洁** - 避免使用过多的字段让用户感到不知所措
