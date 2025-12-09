@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) Forms中的&#x200B;**交互式通信(IC)编辑器
 
 ### 验证浏览器
 
-要了解受支持的浏览器和客户端平台，请按照链接文章[受支持的客户端平台](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)进行操作
+要了解受支持的浏览器和客户端平台，请按照链接文章[受支持的客户端平台](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/overview/supported-platforms)进行操作
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Adobe Experience Manager (AEM) Forms中的&#x200B;**交互式通信(IC)编辑器
 | **表单作者** | 创建和编辑交互式通信。 | 创建、编辑、预览和发布集成电路。 |
 | **模板作者** | 为交互式通信设计可重用模板。 | 创建和锁定模板，定义布局。 |
 | **管理员** | 管理用户访问、权限和配置。 | 分配角色、管理模板和发布IC。 |
-| **FDM作者** | [创建和管理表单数据模型(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)以进行数据集成。 | 创建、编辑和配置数据源和模型。 |
+| **FDM作者** | [创建和管理表单数据模型(FDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)以进行数据集成。 | 创建、编辑和配置数据源和模型。 |
 
 >[!NOTE]
 >
