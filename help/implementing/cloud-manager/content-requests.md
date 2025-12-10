@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1968'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 
 | 请求类型 | 内容请求 | 描述 |
 | --- | --- | --- |
-| HTTP代码100-299 | 已包含 | 包含返回完整或部分HTML或JSON内容的成功请求。<br>HTTP代码206：这些请求仅交付完整内容的一部分。 例如，视频或大型图像。 部分内容请求在交付渲染页面内容中所使用的HTML或JSON响应的一部分时包含在内。 |
+| HTTP代码100-299 | 已包含 | 包含返回完整或部分HTML或JSON内容的成功请求。<br>HTTP代码206：这些请求仅交付完整内容的一部分。 部分请求在交付渲染页面内容中所使用的HTML或JSON响应的一部分时包括在内。 |
 | 用于自动化的HTTP库 | 已包含 | 由检索页面内容的工具或库发出的请求。 示例包括： <br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous HTTP Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· Oembed<br>· python请求<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub节点提取<br>· Reactor Netty |
 | 监控和运行状况检查工具 | 已包含 | 用于监视页面运行状况或可用性的请求。<br>查看[排除的内容请求的类型](#excluded-content-request)。<br>示例包括以下内容：<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(兼容； UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`个请求 | 已包含 | 当客户预载或预取内容（例如，使用`<link rel="prefetch">`）时，系统会计算这些服务器端请求。 请注意，此方法可能会增加流量，具体取决于预取的页面数量。 |
