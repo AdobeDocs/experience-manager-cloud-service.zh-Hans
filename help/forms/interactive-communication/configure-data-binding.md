@@ -4,10 +4,7 @@ description: 在AEM Forms中创建交互式通信片段，以构建可重用的�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 12%
