@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 98%
+source-wordcount: '1282'
+ht-degree: 90%
 
 ---
 
@@ -33,26 +33,22 @@ ht-degree: 98%
 1. **正在运行的工作流**&#x200B;显示正在运行的工作流的数量及其状态。 例如，在给定的图像中，显示的是&#x200B;**正在运行的工作流**&#x200B;的数量和 AEM 实例的&#x200B;**状态：**
 
    * **状态：健康**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **状态：不健康**
-
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. 对于工作流实例的&#x200B;**状态详细信息**，单击&#x200B;**详细信息**，显示&#x200B;**正在运行的工作流实例**、**已完成的工作流实例**、**已中止的工作流实例**、**失败的工作流实例**&#x200B;等的数量。例如，以下是显示&#x200B;**状态详细信息**&#x200B;的给定图像：
 
    * **状态详细信息：健康**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **状态详细信息：不健康**
-
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=zh-Hans)中的最佳实践。
+   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)中的最佳实践。
 
 ## 搜索工作流实例 {#search-workflow-instances}
 
@@ -116,7 +112,7 @@ ht-degree: 98%
 当工作流失败时，AEM 会提供&#x200B;**故障**&#x200B;控制台，使您能够进行调查，并在找到初始原因后执行适当的操作：
 
 * **失败详细信息**
-打开一个窗口以显示&#x200B;**失败消息**、**步骤和&#x200B;**&#x200B;失败栈栈**。
+打开一个窗口以显示**失败消息**、**步骤和&#x200B;**失败栈栈**。
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。
@@ -150,39 +146,14 @@ ht-degree: 98%
 >由于服务是工厂服务，因此，`sling:OsgiConfig` 节点的名称需要标识符后缀，例如：
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>属性名称（Web 控制台）</th>
-   <th>OSGi 属性名称</th>
-   <th>描述</th>
-  </tr>
-  <tr>
-   <td>作业名称</td>
-   <td>scheduledpurge.name</td>
-   <td>计划清除的描述性名称。</td>
-  </tr>
-  <tr>
-   <td>工作流状态</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>要清除的工作流实例的状态。以下值有效：</p>
-    <ul>
-     <li>已完成：清除已完成的工作流实例。</li>
-     <li>正在运行：清除正在运行的工作流实例。</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>要清除的模型</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>要清除的工作流模型的 ID。ID 是模型节点的路径，例如：<br />/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> 不指定任何值可清除所有工作流模型的实例。</p> <p>要指定多个模型，请单击 Web 控制台中的 + 按钮。 </p> </td>
-  </tr>
-  <tr>
-   <td>工作流时限</td>
-   <td>scheduledpurge.daysold</td>
-   <td>要清除的工作流实例的时限（以天为单位）。</td>
-  </tr>
- </tbody>
-</table>
+| 属性名称（Web 控制台） | OSGi 属性名称 | 描述 |
+|--- |--- |--- |
+| 作业名称  | `scheduledpurge.name` | 计划清除的描述性名称。 |
+| 工作流状态 | `scheduledpurge.workflowStatus` | 要清除的工作流实例的状态。以下值有效： <br><br>- COMPLETED：清除已完成的工作流实例。<br> — 正在运行：清除正在运行的工作流实例。 |
+| 要清除的模型 | `scheduledpurge.modelIds` | 要清除的工作流模型的ID。<br>ID是模型节点的路径，例如：<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br>不指定任何值以清除所有工作流模型的实例。<br>若要指定多个模型，请单击Web控制台中的`+`按钮。 |
+| 工作流时限 | `scheduledpurge.daysold` | 要清除的工作流实例的时限（以天为单位）。 |
+| 工作流有效负载包 | `scheduledpurge.purgePackagePayload` | 指示应清除有效负载包；`true`还是`false`。 |
+
 
 ## 设置收件箱的最大大小 {#setting-the-maximum-size-of-the-inbox}
 
@@ -204,7 +175,7 @@ ht-degree: 98%
 
 在工作流模型级别，提供了一个标志来指示模型（及其运行时实例）具有元数据的外部存储。对于为外部存储标记的模型的工作流实例，工作流变量将不会保留在 JCR 中。
 
-属性 *userMetadataPersistenceEnabled* 会存储在工作流模型的 *jcr:content 节点*&#x200B;上。此标志会作为 *cq:userMetaDataCustomPersistenceEnabled* 保留在工作流元数据中。
+属性&#x200B;*userMetadataPersistenceEnabled*&#x200B;存储在工作流模型的&#x200B;*jcr:content节点*&#x200B;上。 此标志作为&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流元数据中。
 
 以下插图显示的是如何在工作流上设置标志。
 
