@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6efb04369109fcae638b699e1daff09624224098
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1871'
 ht-degree: 20%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 ![Experience Cloud 标题](assets/experience-cloud-header.png)
 
-有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帐户 {#user-properties}
 
@@ -187,7 +187,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 
@@ -224,6 +224,8 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
 
 ![编辑器](assets/editor.png)
+
+默认情况下，将打开编辑器，以使您可以[就地或使用](/help/sites-cloud/authoring/universal-editor/authoring.md)属性面板[创作内容。](#properties-rail)
 
 如果编辑器处于[预览模式](#preview-mode)，则内容将可导航，您可以关注链接，但无法编辑内容。
 

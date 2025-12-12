@@ -4,10 +4,10 @@ description: 了解如何通过不同的选项自定义通用编辑器，以满�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 68%
+source-wordcount: '415'
+ht-degree: 67%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 68%
 | `copy` | 禁用[复制和粘贴按钮](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | 禁用[重复按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | 禁用[打开页面按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
+| `dev-login` | 禁用[开发人员登录按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
 ## 更改您的端点 {#custom-endpoint}
 

@@ -4,9 +4,9 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -176,6 +176,44 @@ RTE配置由两部分组成：
 * `wrapInPicture`： `false` （默认） — 生成简单的`<img>`元素
 * `wrapInPicture`： `true` — 将图像包装在`<picture>`个元素中以用于响应式设计
 
+### 缩进配置 {#indentation}
+
+缩进具有控制缩进行为范围的功能级配置，以及快捷方式和标签的单个操作配置。
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### 缩进范围选项 {#indentation-options}
+
+* `scope`： `all` （默认） — 缩进/减少缩进适用于所有内容：
+   * 列表：嵌套/取消嵌套列表项
+   * 段落和标题：增加/减少一般缩进级别
+* `scope`： `lists` — 缩进/减少缩进仅适用于列表项：
+   * 列表：嵌套/取消嵌套列表项
+   * 段落和标题：无缩进（这些按钮已禁用）
+
+>[!NOTE]
+>
+>通过Tab/Shift+Tab键进行列表嵌套的工作方式与常规缩进设置无关。
+
 ### 其他操作 {#other}
 
 所有其他操作都支持基本自定义。 以下部分可供使用。
@@ -307,6 +345,35 @@ RTE配置由两部分组成：
 * 每个列表项包含多个段落
 * 一致的块级样式
 
+### `wrapInPicture`{#wrapinpicture}
+
+图像的`wrapInPicture`选项控制为图像内容生成的HTML结构。
+
+#### wrapInPicture： false（默认） {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture： true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+在需要时使用`wrapInPicture: true`：
+
+* 具有`<source>`个元素的响应式图像支持。
+* 艺术指导功能。
+* 高级图像功能经得起未来考验。
+* 图素结构一致。
+
+>[!NOTE]
+>
+>启用`wrapInPicture: true`后，可以为不同的媒体查询和格式使用其他`<source>`元素来增强图像，使它们对于响应式设计更加灵活。
+
 ### 链接目标选项 {#link-target}
 
 链接的`hideTarget`选项控制`target`属性是否包含在生成的链接中，以及链接创建对话框是否包含用于选择目标的字段。
@@ -318,11 +385,60 @@ RTE配置由两部分组成：
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### 禁用图像上的链接 {#disableforimages}
+
+链接的`disableForImages`选项控制用户是否可以在图像和图片元素上创建链接。 这适用于内联`<img>`元素和块级`<picture>`元素。
+
+#### `disableForImages: false`（默认） {#disableforimages-false}
+
+用户可以选择图像并将其包装在链接中。
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages： true {#disableforimages-true}
+
+选择图像或图片时，将禁用链接按钮。 用户只能对文本内容创建链接。
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+当您想要：`disableForImages: true`
+
+* 通过防止链接的图像保持视觉一致性。
+* 通过将图像和导航分离，简化内容结构。
+* 强制实施限制图像链接的内容策略。
+* 降低内容中的辅助功能复杂性。
+
+>[!NOTE]
+>
+>此设置仅影响在图像上创建新链接的功能。 它不会从内容中的图像删除现有链接。
 
 ### 标记选项 {#tag}
 

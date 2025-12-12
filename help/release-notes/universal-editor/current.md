@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2025.12.04发行说明
-description: 这些是通用编辑器2025.12.04版的发行说明。
+title: 通用编辑器2025.12.12发行说明
+description: 这些是通用编辑器2025.12.11版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
+source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 50%
+source-wordcount: '323'
+ht-degree: 18%
 
 ---
 
 
-# 通用编辑器2025.12.04发行说明 {#release-notes}
+# 通用编辑器2025.12.12发行说明 {#release-notes}
 
-这些是通用编辑器 2025 年 12 月 4 日版本的发行说明。
+这些是通用编辑器 2025 年 12 月 12 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,16 +26,27 @@ ht-degree: 50%
 
 ## 新增功能 {#what-is-new}
 
-* 已禁用授权标头以支持[本地开发人员登录。](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
-* 现在[结构化树上有一个上下文菜单可通过右键单击获得。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* 热键已添加到[重复的组件。](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
+* 已向[富文本编辑器中的现有表添加支持。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* 已在[富文本编辑器中为嵌套列表启用Tab键。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* 现在可以通过[meta标记`dev-login`禁用开发人员登录功能。](/help/implementing/universal-editor/customizing.md#meta-tags)
+* 在覆盖部分中单击右键现在会显示[上下文选项菜单。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
+* [富文本编辑器现在支持](/help/implementing/universal-editor/configure-rte.md#indentation)范围缩进[。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
-### 新 RTE {#new-rte}
+## 早期采用的功能 {#early-adopter}
 
-现在，右侧面板中提供新的 ProseMirror RTE，在链接对话框中引入了页面选取器功能。[此 RTE 提供灵活的配置选项。](/help/implementing/universal-editor/configure-rte.md)
+如果您有兴趣测试下面列出的即将推出的功能并分享您的反馈，请从与您的Adobe关联的电子邮件地址向您的Adobe ID客户成功经理发送电子邮件。
+
+* 已为内容片段实施浅层复制。
 
 ## 其他改进 {#other-improvements}
 
-* 解决了RTE未在画布上正确保存的问题。
-* 已修复内容选取器文件夹树剪切。
-* 现在在添加操作期间提供了`componentId`。
+* 现在，当多个字段在上下文中更改时，将同步属性边栏。
+* 内容片段选取器现在在AEM 6.5实例上按预期打开。
+* Esc键现在会关闭富文本编辑器中的对话框。
+* **删除组件**&#x200B;操作现在仅在选择组件时可用。
+* 现在会根据使用的实例打开正确的（旧或新）内容片段编辑器(如果主机名是AEM as a Cloud Service模式，则使用新编辑器，否则使用旧版编辑器)。
+* 筛选器验证已添加到重复操作。
+* 现在，在属性边栏中，长标题会被截断。
+* 现在可以正确处理值超过10的多站点管理器阵列。
+* 现在可正确处理创建具有相同名称的多个组件时出现的冲突错误。
+* 添加了值为>10的多站点管理器阵列处理。
