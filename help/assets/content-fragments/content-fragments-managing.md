@@ -5,9 +5,9 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 65%
 
 ---
@@ -27,6 +27,9 @@ ht-degree: 65%
 * [查看结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [预览 JSON 表示形式](/help/assets/content-fragments/content-fragments-json-preview.md)
 
+>[!NOTE]
+>
+>使用内容片段模型和内容片段时，请了解[最佳实践](/help/assets/content-fragments/content-fragments.md)。
 
 >[!NOTE]
 >
@@ -136,7 +139,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->其中许多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM桌面应用程序[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=zh-Hans)标准操作。
+>其中许多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM桌面应用程序[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 

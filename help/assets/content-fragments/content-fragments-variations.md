@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 51%
+source-wordcount: '2530'
+ht-degree: 52%
 
 ---
 
@@ -445,12 +445,6 @@ ht-degree: 51%
 
 **创建变量：**
 
->[!NOTE]
->
->变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
->
->最佳实践为每个内容片段不超过10个变量。
-
 1. 打开片段并确保侧面板可见。
 1. 从侧边面板的图标栏中选择&#x200B;**“变体”**。
 1. 选择&#x200B;**“创建变体”**。
@@ -508,7 +502,7 @@ ht-degree: 51%
 
 >[!CAUTION]
 >
->同步仅可将更改&#x200B;*从&#x200B;**母版**&#x200B;复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
 >仅会同步变体的当前元素。
 >

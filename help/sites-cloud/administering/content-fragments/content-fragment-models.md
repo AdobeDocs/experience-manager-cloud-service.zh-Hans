@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 59%
+source-wordcount: '2217'
+ht-degree: 58%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 59%
 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)的内容结构。随后可使用这些片段创作页面或作为 Headless 内容的基础。
 
 本页介绍如何使用专用编辑器定义内容片段模型。 查看[管理您的内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)，了解创建片段后可用的进一步任务和选项，包括[从内容片段控制台中可用的操作](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions)、[在文件夹中允许模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)和[发布模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)。
+
+>[!NOTE]
+>
+>使用内容片段模型和内容片段时，请了解[最佳实践](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 >[!CAUTION]
 >
@@ -219,7 +223,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
   用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。 当使用&#x200B;**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
 
 * **字段标签**
-输入&#x200B;**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
+输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。

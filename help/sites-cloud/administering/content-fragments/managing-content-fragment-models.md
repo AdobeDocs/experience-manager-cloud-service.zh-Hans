@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 49%
+source-wordcount: '2475'
+ht-degree: 48%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 49%
 从内容片段控制台中，您可以管理内容片段模型，然后[打开编辑器](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)以定义结构。
 
 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)的内容结构。然后，这些片段可以用作Headless内容的基础，或用于页面创作。
+
+>[!NOTE]
+>
+>使用内容片段模型和内容片段时，请了解[最佳实践](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 >[!NOTE]
 >
@@ -236,7 +240,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    您还可以定义各种属性：
 
    * **标题**
-如果您先输入&#x200B;**Title**，则将从中生成&#x200B;**Name**。
+如果您先输入**Title**，则将从中生成&#x200B;**Name**。
    * **描述**
    * **启用模型**&#x200B;以[启用模型](#enabling-disabling-a-content-fragment-model)
 

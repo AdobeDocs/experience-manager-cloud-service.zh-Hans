@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2247'
-ht-degree: 58%
+source-wordcount: '2576'
+ht-degree: 51%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 58%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
@@ -128,7 +128,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 内容片段组件[&#x200B; （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
+* 内容片段组件[ （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -323,3 +323,47 @@ WKND 项目包括：
 
 * 在以下位置提供的内容片段（和其他内容）：
   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+
+## 最佳做法 {#best-practices}
+
+内容片段可用于形成复杂的结构。 Adobe提供了在定义和使用模型和片段时的最佳实践建议。
+
+### 保持简单 {#keep-it-simple}
+
+在AEM中为结构化内容建模时，应尽可能简化内容结构，以确保强大的系统性能和简化的管理。
+
+### 模型数量 {#number-of-models}
+
+根据需要创建尽可能多的内容模型，但不再创建。
+
+模型过多，使治理复杂化，并且可能会减慢GraphQL查询速度。 一小部分模型（最多几十个）通常就足够了。 如果您接近数十或更高，请重新考虑建模策略。
+
+### 嵌套模型和片段（非常重要） {#nesting-models-and-fragments}
+
+使用内容片段引用避免对内容片段进行深嵌套或过度嵌套，这类引用允许片段引用其他片段，有时会跨多个级别。
+
+大量使用内容片段引用可能会显着影响系统性能、UI响应性和GraphQL查询执行。 力求嵌套不超过10级。
+
+###每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
+
+仅包括模型真正需要的数据字段和类型。
+
+过于复杂的模型会导致片段过于复杂，这会增加创作难度并降低编辑器性能。
+
+### 富文本字段 {#rich-text-fields}
+
+请考虑使用富文本字段（**多行文本**&#x200B;数据类型）。
+
+限制每个模型的富文本字段数。 每个片段中存储的文本量以及HTML格式化的量。 非常大的富文本内容可能会对系统性能产生负面影响。
+
+### 变体数量 {#number-of-variations}
+
+创建所需数量的片段变体，但不再创建。
+
+变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
+
+最佳实践为每个内容片段不超过10个变量。
+
+### 生产前测试 {#test-before-production}
+
+如有疑问，请在将预期内容结构推出到生产环境之前为其创建原型。 早期的概念验证以及充分的技术和用户验收测试，有助于避免以后在生产中遇到截止日期时发生问题。

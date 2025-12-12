@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2819'
-ht-degree: 68%
+source-wordcount: '2793'
+ht-degree: 69%
 
 ---
 
@@ -32,6 +32,10 @@ ht-degree: 68%
 * 可在编辑器中[查看版本详细信息](#view-version-history)。您还可恢复为所选版本。
 * 可[查看和打开父引用](#view-parent-references)。
 * 内容片段及其引用的分层视图，其中使用[结构树](#structure-tree)。
+
+>[!NOTE]
+>
+>使用内容片段模型和内容片段时，请了解[最佳实践](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 >[!WARNING]
 >
@@ -89,7 +93,7 @@ ht-degree: 68%
 
 * 已为此片段创建的&#x200B;**[变体](#variations)**&#x200B;的列表：
    * **主控**&#x200B;是首次创建内容片段时出现的变体，稍后可以添加其他变体
-   * 您可以使用生成变体(#generate-variations)来使用Adobe为特定用例创建的基于提示的模板。
+   * 您可以使用[生成变体](#generate-variations-ai)来使用Adobe为特定用例创建的基于提示的模板。
    * 您也可以[创建变体](#create-variation)
 * 片段及其变体中的&#x200B;**字段**：
    * 图标指示[数据类型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -135,12 +139,6 @@ ht-degree: 68%
 * [删除变体](#delete-variation)
 
 ### 创建变体 {#create-variation}
-
->[!NOTE]
->
->变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
->
->最佳实践为每个内容片段不超过10个变量。
 
 要创建内容片段的变体，请执行以下操作：
 
@@ -273,7 +271,7 @@ ht-degree: 68%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 

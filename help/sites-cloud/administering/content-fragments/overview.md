@@ -1,18 +1,18 @@
 ---
-title: 使用内容片段概述
+title: 使用内容片段的概念和最佳实践概述
 description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何允许您创建和使用结构化内容；非常适用于Headless投放和页面创作。
 feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 85%
+source-wordcount: '2357'
+ht-degree: 72%
 
 ---
 
-# 使用内容片段概述 {#overview-working-with-content-fragments}
+# 使用内容片段 — 概念和最佳实践 {#working-with-content-fragments-concepts-and-best-practices}
 
 通过Adobe Experience Manager (AEM) as a Cloud Service，内容片段允许您设计、创建、管理和发布独立于页面的内容。 它们允许您准备内容以准备在多个位置和多个渠道上使用，非常适合[Headless投放](/help/headless/what-is-headless.md)和[页面创作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
@@ -57,7 +57,7 @@ ht-degree: 85%
 还可使用 AEM 核心组件的 Sling 模型 (JSON) 导出功能，以 JSON 格式投放内容片段。此投放形式：
 
 * 允许您使用组件管理要投放片段的哪些元素
-* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通信渠道的数量在逐年增加。通常，渠道称为投放机制，如：
 
@@ -86,7 +86,7 @@ ht-degree: 85%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本页和以下各页涉及创建、配置、维护和使用内容片段的任务：
 
@@ -187,7 +187,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 可通过使用（引用组件的）[内容片段组件](/help/sites-cloud/authoring/fragments/content-fragments.md)在页面编辑器中找到内容片段：
 
-   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
+   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
 
 内容片段是一个具有以下性质的内容结构：
 
@@ -274,7 +274,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 负责片段的布局和投放；例如，渠道。
    * 片段需要一个或多个专用组件以定义布局和投放部分或全部元素/变体和关联的内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
-   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)。
+   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 内容片段控制台 {#content-fragments-console}
 
@@ -325,3 +325,47 @@ WKND 项目包括：
 * 在以下位置提供的内容片段（和其他内容）：
 
    * `.../assets.html/content/dam/wknd/en`
+
+## 最佳做法 {#best-practices}
+
+内容片段可用于形成复杂的结构。 Adobe提供了在定义和使用模型和片段时的最佳实践建议。
+
+### 保持简单 {#keep-it-simple}
+
+在AEM中为结构化内容建模时，应尽可能简化内容结构，以确保强大的系统性能和简化的管理。
+
+### 模型数量 {#number-of-models}
+
+根据需要创建尽可能多的内容模型，但不再创建。
+
+模型过多，使治理复杂化，并且可能会减慢GraphQL查询速度。 一小部分模型（最多几十个）通常就足够了。 如果您接近数十或更高，请重新考虑建模策略。
+
+### 嵌套模型和片段（非常重要） {#nesting-models-and-fragments}
+
+使用内容片段引用避免对内容片段进行深嵌套或过度嵌套，这类引用允许片段引用其他片段，有时会跨多个级别。
+
+大量使用内容片段引用可能会显着影响系统性能、UI响应性和GraphQL查询执行。 力求嵌套不超过10级。
+
+###每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
+
+仅包括模型真正需要的数据字段和类型。
+
+过于复杂的模型会导致片段过于复杂，这会增加创作难度并降低编辑器性能。
+
+### 富文本字段 {#rich-text-fields}
+
+请考虑使用富文本字段（**多行文本**&#x200B;数据类型）。
+
+限制每个模型的富文本字段数。 每个片段中存储的文本量以及HTML格式化的量。 非常大的富文本内容可能会对系统性能产生负面影响。
+
+### 变体数量 {#number-of-variations}
+
+创建所需数量的片段变体，但不再创建。
+
+变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
+
+最佳实践为每个内容片段不超过10个变量。
+
+### 生产前测试 {#test-before-production}
+
+如有疑问，请在将预期内容结构推出到生产环境之前为其创建原型。 早期的概念验证以及充分的技术和用户验收测试，有助于避免以后在生产中遇到截止日期时发生问题。
