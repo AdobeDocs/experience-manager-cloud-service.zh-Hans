@@ -310,7 +310,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console**。
 
-有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
 
 单击单个环境的&#x200B;**更多图标**&#x200B;时，也可以从&#x200B;**概述**&#x200B;窗口的![环境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)选项卡中使用此选项。
 
