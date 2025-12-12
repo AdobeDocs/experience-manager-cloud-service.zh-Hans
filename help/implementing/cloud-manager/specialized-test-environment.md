@@ -56,7 +56,7 @@ ht-degree: 12%
 1. 执行下列操作之一：
 
    * 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台的&#x200B;**环境**&#x200B;信息卡上，单击&#x200B;**添加环境**。
-如果**添加环境**&#x200B;选项灰显（已禁用），则可能是由于缺少权限或依赖于许可资源。
+如果&#x200B;**添加环境**&#x200B;选项灰显（已禁用），则可能是由于缺少权限或依赖于许可资源。
 
      ![环境信息卡](assets/no-environments.png)
 
