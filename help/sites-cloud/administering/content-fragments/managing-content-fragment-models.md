@@ -240,7 +240,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    您还可以定义各种属性：
 
    * **标题**
-如果您先输入**Title**，则将从中生成&#x200B;**Name**。
+如果您先输入&#x200B;**Title**，则将从中生成&#x200B;**Name**。
    * **描述**
    * **启用模型**&#x200B;以[启用模型](#enabling-disabling-a-content-fragment-model)
 

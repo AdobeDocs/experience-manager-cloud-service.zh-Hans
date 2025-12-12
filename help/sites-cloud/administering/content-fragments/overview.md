@@ -346,7 +346,7 @@ WKND 项目包括：
 
 大量使用内容片段引用可能会显着影响系统性能、UI响应性和GraphQL查询执行。 力求嵌套不超过10级。
 
-###每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
+### 每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
 
 仅包括模型真正需要的数据字段和类型。
 
