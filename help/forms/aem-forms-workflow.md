@@ -32,7 +32,7 @@ ht-degree: 1%
 
 设置后，可以手动触发这些工作流以完成定义的流程，或在用户提交表单<!-- or [correspondence management](cm-overview.md) letter-->时以编程方式运行。<!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring)，并为AEM工作流编辑器提供了额外的组件（步骤），以添加对以[!DNL AEM Forms]为中心的工作流的支持。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=zh-Hans#authoring)，并为AEM工作流编辑器提供了额外的组件（步骤），以添加对以[!DNL AEM Forms]为中心的工作流的支持。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 所有[!DNL AEM Forms]工作流步骤都支持使用变量。 变量使工作流步骤能够在运行时跨步骤保留和传递元数据。 您可以创建不同类型的变量以存储不同类型的数据。 您还可以创建变量集合（数组），用于存储相关同类型数据的多个实例。 通常，当您需要根据其持有的值做出决策时，或者需要存储稍后在流程中需要的信息时，可以使用变量或变量集合。 有关在这些以Forms为中心的工作流组件（步骤）中使用变量的更多信息，请参阅OSGi上的[以Forms为中心的工作流 — 步骤参考](aem-forms-workflow-step-reference.md)。 有关创建和管理变量的信息，请参阅AEM工作流中的[变量](variable-in-aem-workflows.md)。
 
@@ -73,9 +73,9 @@ OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experiencele
 
 ## 创建工作流模型 {#create-a-workflow-model}
 
-工作流模型由业务流程的逻辑和流程组成。 它由一系列步骤组成。 这些步骤是AEM组件。 您可以使用参数和脚本扩展工作流步骤，以根据需要提供更多功能和控制。 除了开箱即用的AEM步骤之外，[!DNL AEM Forms]还提供了一些步骤。 有关AEM和[!DNL AEM Forms]步骤的详细列表，请参阅[AEM工作流步骤参考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)和[OSGi上以Forms为中心的工作流 — 步骤参考](aem-forms-workflow.md)。
+工作流模型由业务流程的逻辑和流程组成。 它由一系列步骤组成。 这些步骤是AEM组件。 您可以使用参数和脚本扩展工作流步骤，以根据需要提供更多功能和控制。 除了开箱即用的AEM步骤之外，[!DNL AEM Forms]还提供了一些步骤。 有关AEM和[!DNL AEM Forms]步骤的详细列表，请参阅[AEM工作流步骤参考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)和[OSGi上以Forms为中心的工作流 — 步骤参考](aem-forms-workflow.md)。
 
-AEM提供了一个直观的用户界面，用于使用提供的工作流步骤创建工作流模型。 有关创建工作流模型的分步说明，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#workflows)。 以下示例提供了为审批和审阅工作流创建工作流模型的分步说明：
+AEM提供了一个直观的用户界面，用于使用提供的工作流步骤创建工作流模型。 有关创建工作流模型的分步说明，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=zh-Hans#workflows)。 以下示例提供了为审批和审阅工作流创建工作流模型的分步说明：
 
 >[!NOTE]
 >
