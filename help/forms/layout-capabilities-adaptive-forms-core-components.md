@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: 基于核心组件的自适应表单布局、表单的不同布局、动态表单布局AEM、AEM Cloud Service表单布局、AEM核心组件中的表单布局类型、自适应表单布局
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2176'
 ht-degree: 16%
 
 ---
@@ -17,13 +17,25 @@ ht-degree: 16%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service（核心组件） | 本文 |
 
 自适应Forms提供一流的组件，可高效地布局和设计表单。 布局控制组件在表单中的显示方式。 自适应Forms支持各种布局：面板、向导、折叠面板、位于顶部/水平选项卡的选项卡以及位于左侧/垂直选项卡的选项卡。
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms是否支持多步骤保险索赔表？
+
+是。AEM Forms支持带条件逻辑的引导式多步骤自适应表单，允许保险公司根据索赔类型和内容逐步收集索赔信息。
+
+## 客户能否使用AEM Forms安全地上传索赔文档？
+
+是。AEM Forms支持将安全文档上传作为表单提交的一部分，并且其访问控制和安全数据处理符合企业安全要求。
 
 ## 先决条件
 
@@ -81,7 +93,7 @@ ht-degree: 16%
 
 水平选项卡布局
 
-您可以使用[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
 >[!TAB 折叠布局]
@@ -224,7 +236,7 @@ ht-degree: 16%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在允许您添加组件的面板中查找部分。
-1. 单击&#x200B;**添加**&#x200B;图标。 图标是一个加号(+)，表示添加新组件的选项。
+1. 单击&#x200B;**添加**图标。 图标是一个加号(+)，表示添加新组件的选项。
    ![插入布局](/help/forms/assets/tabs-on-top-add-component.png)
 
    单击&#x200B;**添加**&#x200B;图标会显示&#x200B;**插入新组件**&#x200B;对话框，其中显示了要插入的各种组件。

@@ -1,14 +1,14 @@
 ---
-title: 如何预填自适应表单字段？
+title: 如何预填充自适应表单字段？
 description: 使用现有数据预填自适应表单的字段，用户可通过使用其社交个人资料登录在表单中预填基本信息。
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 1%
+source-wordcount: '2044'
+ht-degree: 2%
 
 ---
 
@@ -16,16 +16,24 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
 | AEM as a Cloud Service | 本文 |
 
 ## 简介 {#introduction}
 
 您可以使用现有数据预填自适应表单的字段。 当用户打开表单时，这些字段的值会预先填充。 要在自适应表单中预填充数据，请按照预填充自适应Forms数据结构所遵循的格式，将用户数据作为预填充XML/JSON提供。
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms是否可以预填充保险申请数据？
+
+是。AEM Forms支持使用后端数据源预填表单字段，使保险公司能够重复利用现有客户或保单数据，并减少手动输入。
 
 ## 预填充数据的结构 {#the-prefill-structure}
 
@@ -136,7 +144,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->建议不要在绑定面板(通过从Sidekick或数据源选项卡拖动组件而创建的具有非空`bindRef`的面板)中使用未绑定字段。 它可能会导致这些未绑定字段的数据丢失。 此外，建议整个表单中的字段名称是唯一的，特别是对于未绑定的字段。
+>建议不要在绑定面板(通过从Sidekick或“数据源”选项卡拖动组件而创建的具有非空`bindRef`的面板)中使用未绑定字段。 它可能会导致这些未绑定字段的数据丢失。 此外，建议整个表单中的字段名称是唯一的，特别是对于未绑定的字段。
 
 #### 不具有afData和afBoundData包装器的示例 {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -207,12 +215,12 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
-> 在绑定面板(通过从Sidekick或数据源选项卡拖动组件而创建的具有非空bindRef的面板)中使用未绑定字段，是&#x200B;**不**&#x200B;推荐的，因为它可能会导致未绑定字段的数据丢失。 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
+> 不建议在绑定面板(通过从Sidekick或“数据源”选项卡拖动组件而创建的具有非空bindRef的面板)中使用未绑定字段，因为这样可能会导致未绑定字段的数据丢失。**** 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
 >
 
 ### 无表单模型的自适应表单 {#adaptive-form-with-no-form-model}
 
-对于没有表单模型的自适应Forms，所有字段的数据都在`<afUnboundData> tag`的`<data>`标记下。
+对于没有表单模型的自适应Forms，所有字段的数据都在`<data>`的`<afUnboundData> tag`标记下。
 
 此外，请注意以下事项：
 
@@ -239,7 +247,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 ## 配置预填充服务 {#configuring-prefill-service-using-configuration-manager}
 
-使用&#x200B;**默认预填充服务配置**&#x200B;的`alloweddataFileLocations`属性设置数据文件的位置或数据文件位置的正则表达式。
+使用`alloweddataFileLocations`默认预填充服务配置&#x200B;**的**&#x200B;属性设置数据文件的位置或数据文件位置的正则表达式。
 
 以下JSON文件显示了一个示例：
 
@@ -309,7 +317,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ### 在slingRequest中设置数据属性 {#setting-data-attribute-in-slingrequest}
 
-您还可以在`slingRequest`中设置`data`属性，其中`data`属性是包含XML或JSON的字符串，如下面的示例代码所示（示例为XML）：
+您还可以在`data`中设置`slingRequest`属性，其中`data`属性是包含XML或JSON的字符串，如下面的示例代码所示（示例为XML）：
 
 ```javascript
 <%
@@ -346,7 +354,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 预填充服务是一种OSGi服务，通过OSGi捆绑包进行打包。 您可以创建OSGi捆绑包，将其上传并安装到[!DNL AEM Forms]捆绑包。 开始创建捆绑包之前：
 
-- [下载 [!DNL AEM Forms] 客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)
+- [下载 [!DNL AEM Forms] 客户端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - 下载样板包
 
 - 将数据（预填充数据）文件放入crx存储库中。 可以将文件放置在crx-repository的\contents文件夹中的任意位置。
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

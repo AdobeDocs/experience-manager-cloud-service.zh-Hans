@@ -1,13 +1,13 @@
 ---
-title: 在AEM Formsas a Cloud Service中，哪些用户组是现成可用的？
+title: 在AEM Forms as a Cloud Service中，哪些用户组是现成可用的？
 description: 现成的用户组和分配给每个组的权限的列表
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 26%
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 26%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以[创建组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hans#accessing)并将策略和[用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hans#accessing)分配给组。 这些策略控制属于组的用户的权限。
+您可以[创建组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)并将策略和[用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)分配给组。 这些策略控制属于组的用户的权限。
 
-设置[!DNL AEM Forms]as a Cloud Service后，下表列出的组（如[!DNL forms-users]和forms-power-user）将自动可供分配：
+设置[!DNL AEM Forms] as a Cloud Service后，下表列出的组（如[!DNL forms-users]和forms-power-user）将自动可供分配：
 
 <table>
  <tbody>
@@ -107,6 +107,14 @@ ht-degree: 26%
   </tr>
  </tbody>
 </table>
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms是保险运营的企业级吗？
+
+是。AEM Forms提供了企业功能，如基于角色的访问控制、审核跟踪、工作流编排、文档生成和部署灵活性，这些都是保险业务大规模开展所必需的。
 
 ## 另请参阅
 

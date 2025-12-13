@@ -1,13 +1,13 @@
 ---
 title: 如何将数据库连接到 [!DNL AEM Forms] as a Cloud Service？
-description: 从自适应表单或AEM Workflow中检索数据并将其保存到RESTful Web服务、基于SOAP的Web服务和OData服务。
+description: 从自适应表单或AEM Workflow检索数据并将其保存到RESTful Web服务、基于SOAP的Web服务和OData服务。
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -45,6 +45,26 @@ ht-degree: 3%
 * 从配置的数据源预填充自适应Forms
 * 使用自适应表单规则调用数据源服务/操作
 * 将提交的自适应表单数据写入数据源
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms能否用于保单应用？
+
+是。AEM Forms可用于构建数字保险申请表，以收集申请人信息、验证输入内容并与后端承保系统集成。
+
+## AEM Forms是否支持承保工作流程？
+
+是，具有工作流和集成。 AEM Forms支持工作流驱动的流程和后端集成，使应用程序数据能够流向包销和决策系统。
+
+## AEM Forms可以与保险核心系统集成吗？
+
+是。AEM Forms支持使用REST和SOAP API进行集成，从而能够与策略管理系统、理赔管理系统和CRM相连接。
+
+## AEM Forms是否可以将表单数据写回保险系统？
+
+是。AEM Forms支持在表单提交和工作流执行过程中将数据回写到后端系统。
 
 ## 数据集成入门 {#get-started-with-data-integration}
 

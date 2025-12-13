@@ -4,9 +4,9 @@ description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3305'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 1%
 填写或提交表单时，您可以保留表单的记录（打印或文档格式）。 此记录称为记录文档(DoR)。 这是已提交表单的打印版。 您还可以参考记录文档以了解客户在以后填写的信息，或者使用记录文档以PDF格式将表单和内容存档在一起。
 
 ![记录文档](assets/document-of-record.png)
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms能否生成保险索赔文档？
+
+是。AEM Forms支持记录文档(DoR)生成，使保险公司能够根据提交的表单数据生成PDF和记录。
+
+## AEM Forms生成的文档是否适用于审核？
+
+是。AEM Forms支持一致的文档生成、受控访问和可跟踪性，这对于满足审核和合规性要求非常重要。
 
 要创建记录文档，会将基于XFA或Acroform的模板与通过自适应表单收集的数据合并。 您可以自动或根据需要生成记录文档。 通过“按需”选项，您可以指定基于XFA或Acroform的自定义PDF模板，为记录文档提供自定义外观。
 
@@ -135,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，当提交自适应表单时，会生成更新的记录文档。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用记录文档时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 

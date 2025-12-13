@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2154'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| Foundation 组件  | [单击此处](supporting-new-language-localization.md) |
+| 基础组件 | [单击此处](supporting-new-language-localization.md) |
 | 核心组件 | 本文 |
 
 <span class="preview">从右至左语言支持功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
@@ -24,6 +24,14 @@ ht-degree: 3%
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。 您还可以通过添加这些区域设置，以从右至左(RTL)语言（如阿拉伯语、波斯语和乌尔都语）展示自适应Forms。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms是否支持多语言保险用例？
+
+是。AEM Forms支持多语言表单体验，这对于跨地区和语言运营的保险公司非常重要。
 
 ## AEM Forms如何确定自适应表单的区域设置？
 
@@ -117,7 +125,7 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的逐步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
 
    **您的项目已准备就绪！**
 
@@ -140,7 +148,7 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     将`<appid>`替换为您的项目特定应用程序ID。 您可以在`archetype.properties`文件中找到AEM项目的`<appid>`。
+     将`<appid>`替换为您的项目特定应用程序ID。 您可以在`<appid>`文件中找到AEM项目的`archetype.properties`。
 
      ![原型属性](/help/forms/assets/archetype-properties.png)
 
@@ -228,7 +236,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![正在粘贴clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
-1. 更新`languageinit.js`中的`aemLangUrl`路径
+1. 更新`aemLangUrl`中的`languageinit.js`路径
 
    1. 导航到[AEMaaCS项目目录]中的以下目录：
 
@@ -265,7 +273,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. 找到示例英语文件：
 
-   AEM Forms在GitHub[&#128279;](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)上提供了示例英语区域设置文件(.json)。
+   AEM Forms在GitHub[上提供了](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)示例英语区域设置文件(.json)。
 
    英语文件包含默认字符串集以供参考。 区域设置特定的文件应模拟英语文件的结构。
 
@@ -335,7 +343,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. 在filter.xml中包含新文件夹：
 
-   导航到[AEMaaCS项目目录]中的`/ui.content/src/main/content/meta-inf/vault/filter.xml`文件。
+   导航到`/ui.content/src/main/content/meta-inf/vault/filter.xml`AEMaaCS项目目录[中的]文件。
 
    打开文件，并在末尾添加以下行：
 
@@ -343,7 +351,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
    <filter root="/etc/languages"/>
    ```
 
-   ![在`/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)下的`filter.xml`中添加已创建的文件夹
+   ![在`filter.xml`下的`/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)中添加已创建的文件夹
 
 1. 保存文件。
 
@@ -373,28 +381,28 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    1. 部署更新的代码：
 
-      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)触发代码部署。 这会使用新的区域设置支持自动构建和部署更新的代码。
+      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)触发代码部署。 这会使用新的区域设置支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅[上的指南如何为AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)设置管道。
+      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
 
 ## 预览具有新添加区域设置的自适应表单
 
 以下步骤将指导您预览具有新添加区域设置的自适应表单：
 
-1. 登录到您的AEM Formsas a Cloud Service实例。
+1. 登录到您的AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**Forms** > **Forms和文档**。
 1. 选择一个自适应表单，然后单击&#x200B;**添加词典**&#x200B;和&#x200B;**将词典添加到翻译项目**&#x200B;向导。
 1. 指定&#x200B;**项目标题**&#x200B;并从&#x200B;**将字典添加到翻译项目**&#x200B;向导的下拉菜单中选择&#x200B;**目标语言**。
 1. 单击&#x200B;**完成**&#x200B;并执行已创建的翻译项目。
 1. 转到&#x200B;**Forms** > **Forms和文档**。
-1. 选择自适应表单，然后选择&#x200B;**预览为HTML**&#x200B;选项。
+1. 选择自适应表单，然后选择&#x200B;**作为HTML预览**&#x200B;选项。
 1. 将`&afAcceptLang=<locale-name>`附加到预览URL并按Return键。 将`<locale-name>`替换为您的实际区域设置代码。 自适应表单会以指定的区域设置显示。
 
 ## 支持新本地化的最佳实践 {#best-practices}
 
 * Adobe建议在创建自适应表单之后创建翻译项目。 这简化了本地化过程。
-* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 为了缓解此问题，**语言**&#x200B;选项已合并到[日期选取器组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[数值框组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的“配置”对话框中。
+* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 为了缓解此问题，**语言**&#x200B;选项已合并到[日期选取器组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[数值框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的“配置”对话框中。
 
 
 * 处理新字段：

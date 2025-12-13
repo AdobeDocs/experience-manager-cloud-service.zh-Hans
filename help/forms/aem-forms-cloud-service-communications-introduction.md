@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 28%
+source-wordcount: '2720'
+ht-degree: 27%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM文档服务概述](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hans)
+> * **AEM 6.5**： [AEM文档服务概述](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：本文
 
 ## 简介
@@ -41,6 +41,18 @@ Communications API提供了一组全面的文档处理功能，可划分为以�
 | 通过将模板与各种格式(包括PDF和打印格式)的数据合并来生成个性化文档。 | 以编程方式组合、重新排列和验证PDF文档以创建新文档包。 | 从PDF文档中提取属性、元数据和内容以供进一步处理。 | 在多种格式之间转换文档，包括PDF/A合规性验证以满足存档需求。 | 应用数字签名、认证和加密来保护文档。 |
 
 [API参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供了有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms能否生成保单文档？
+
+是。AEM Forms可以使用模板和通过表单捕获的结构化数据来生成与策略相关的文档。
+
+## AEM Forms可以大规模处理保险业务吗？
+
+是。在Adobe Managed Services或私有云上使用推荐的架构进行部署时，AEM Forms支持大容量表单提交和企业规模工作负载。
 
 ## 文档生成
 

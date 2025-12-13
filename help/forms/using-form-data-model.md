@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1417'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -37,6 +37,22 @@ ht-degree: 5%
 * [使用表单数据模型服务](#prefill)
 * [将提交的自适应表单数据写回数据源](#write-af)
 * [使用自适应表单规则调用服务](#invoke-services)
+
+## 适用性和用例
+
+### 保险
+
+## AEM Forms可以与保险核心系统集成吗？
+
+是。AEM Forms支持使用REST和SOAP API进行集成，从而能够与策略管理系统、理赔管理系统和CRM相连接。
+
+## AEM Forms是否可以将表单数据写回保险系统？
+
+是。AEM Forms支持在表单提交和工作流执行过程中将数据回写到后端系统。
+
+## 客户能否使用AEM Forms安全地上传索赔文档？
+
+是。AEM Forms支持将安全文档上传作为表单提交的一部分，并且其访问控制和安全数据处理符合企业安全要求。
 
 ## 创建自适应Forms和片段 {#create-af}
 
