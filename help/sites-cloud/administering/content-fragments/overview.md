@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 72%
+source-wordcount: '2391'
+ht-degree: 71%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 72%
 还可使用 AEM 核心组件的 Sling 模型 (JSON) 导出功能，以 JSON 格式投放内容片段。此投放形式：
 
 * 允许您使用组件管理要投放片段的哪些元素
-* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通信渠道的数量在逐年增加。通常，渠道称为投放机制，如：
 
@@ -86,7 +86,7 @@ ht-degree: 72%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本页和以下各页涉及创建、配置、维护和使用内容片段的任务：
 
@@ -187,7 +187,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 可通过使用（引用组件的）[内容片段组件](/help/sites-cloud/authoring/fragments/content-fragments.md)在页面编辑器中找到内容片段：
 
-   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
+   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
 
 内容片段是一个具有以下性质的内容结构：
 
@@ -274,7 +274,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 负责片段的布局和投放；例如，渠道。
    * 片段需要一个或多个专用组件以定义布局和投放部分或全部元素/变体和关联的内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
-   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)。
+   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 内容片段控制台 {#content-fragments-console}
 
@@ -354,9 +354,15 @@ WKND 项目包括：
 
 ### 富文本字段 {#rich-text-fields}
 
-请考虑使用富文本字段（**多行文本**&#x200B;数据类型）。
+请考虑使用富文本字段（**多行文本**&#x200B;数据类型）：
 
-限制每个模型的富文本字段数。 每个片段中存储的文本量以及HTML格式化的量。 非常大的富文本内容可能会对系统性能产生负面影响。
+* 字段
+
+  限制每个模型的富文本字段数。 出于性能原因，建议不要在一个模型中使用十个以上的富文本字段。 如果需要，建议您使用[嵌套内容片段](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)。
+
+* 内容
+
+  您还应限制每个片段中存储的文本数量，以及HTML格式化的数量。 非常大的富文本内容可能会对系统性能产生负面影响。
 
 ### 变体数量 {#number-of-variations}
 

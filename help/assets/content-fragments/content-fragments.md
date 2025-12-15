@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 51%
+source-wordcount: '2610'
+ht-degree: 50%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 51%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
@@ -128,7 +128,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 内容片段组件[&#x200B; （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
+* 内容片段组件[ （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -344,7 +344,7 @@ WKND 项目包括：
 
 大量使用内容片段引用可能会显着影响系统性能、UI响应性和GraphQL查询执行。 力求嵌套不超过10级。
 
-### 每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
+###每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
 
 仅包括模型真正需要的数据字段和类型。
 
@@ -352,9 +352,15 @@ WKND 项目包括：
 
 ### 富文本字段 {#rich-text-fields}
 
-请考虑使用富文本字段（**多行文本**&#x200B;数据类型）。
+请考虑使用富文本字段（**多行文本**&#x200B;数据类型）：
 
-限制每个模型的富文本字段数。 每个片段中存储的文本量以及HTML格式化的量。 非常大的富文本内容可能会对系统性能产生负面影响。
+* 字段
+
+  限制每个模型的富文本字段数。 出于性能原因，建议不要在一个模型中使用十个以上的富文本字段。 如果需要，建议您使用[嵌套内容片段](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content)。
+
+* 内容
+
+  您还应限制每个片段中存储的文本数量，以及HTML格式化的数量。 非常大的富文本内容可能会对系统性能产生负面影响。
 
 ### 变体数量 {#number-of-variations}
 
