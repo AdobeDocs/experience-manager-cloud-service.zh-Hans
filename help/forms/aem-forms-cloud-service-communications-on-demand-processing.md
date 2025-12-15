@@ -6,7 +6,7 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: cb69041ff59ba1ff586e8c1c71090cc2eb9ad453
+source-git-commit: 9401d96bcf5375dc20c33055343a5b895b4e9107
 workflow-type: tm+mt
 source-wordcount: '2573'
 ht-degree: 2%
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Cloud Manager访问权限**
 
@@ -187,7 +187,7 @@ Adobe Cloud Manager支持以下两个存储库选项：
 
 >[!NOTE]
 >
-> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)。
+> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步骤4： API访问配置
 
@@ -437,7 +437,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
       - **对于开发环境**：选择&#x200B;**“添加非生产管道”**。 非生产管道适用于开发和暂存环境
 
-      - 生产环境&#x200B;**&#x200B;**：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
+      - 生产环境&#x200B;****：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
 
         >[!NOTE]
         >
@@ -493,7 +493,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
    现已创建管道，请部署您的`api.yaml`配置：
 
-   1. 管道概述中的&#x200B;**&#x200B;**
+   1. 管道概述中的&#x200B;****
       1. 在项目概述页面上，找到&#x200B;**管道**&#x200B;信息卡
       2. 在列表中导航到新创建的配置管道。 例如，查找您创建的管道名称（例如，“api-config-pipeline”）。 您可以查看管道详细信息，包括状态和上次运行。
 
