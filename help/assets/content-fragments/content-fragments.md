@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
+source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 50%
@@ -93,7 +93,7 @@ ht-degree: 50%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
@@ -128,7 +128,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 内容片段组件[&#x200B; （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
+* 内容片段组件[ （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
