@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 69%
@@ -35,7 +35,7 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->使用内容片段模型和内容片段时，请了解[最佳实践](/help/sites-cloud/administering/content-fragments/overview.md)。
+>使用内容片段模型和内容片段时，请了解[最佳实践](/help/sites-cloud/administering/content-fragments/overview.md#best-practices)。
 
 >[!WARNING]
 >
@@ -271,7 +271,7 @@ ht-degree: 69%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
