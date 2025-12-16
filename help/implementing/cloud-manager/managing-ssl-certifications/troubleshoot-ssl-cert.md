@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 37%
 
 ---
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**证书有效期
++++证书有效期
 
 ## 证书有效期 {#validity}
 
@@ -138,16 +138,16 @@ Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。检查证
 
 +++
 
-+++**错误的SAN证书应用于我的域
++++对我的域应用了错误的SAN证书
 
 ## 对我的域应用了错误的SAN证书 {#wrong-san-cert}
 
 假设您要将`dev.yoursite.com`和`stage.yoursite.com`链接到非生产环境，将`prod.yoursite.com`链接到生产环境。
 
-为了配置这些域的CDN，您需要为每个域安装一个证书，因此您安装一个用于非生产域覆盖`*.yoursite.com`的证书，另一个用于生产域覆盖`*.yoursite.com`的证书。
+要为这些域配置CDN，您需要为每个域安装一个证书，因此您安装一个证书，该证书覆盖非生产域的`*.yoursite.com`，另一个证书也覆盖生产域的`*.yoursite.com`。
 
-此配置有效。 但是，当您更新其中一个证书时，因为两个证书都涵盖相同的SAN条目，所以CDN将在所有适用的域上安装最新的证书，这可能显示为意外情况。
+此配置有效。 但是，当您更新其中一个证书时，两个证书仍然覆盖相同的SAN条目。 因此，CDN会在所有适用的域上安装最新证书，这可能显示为意外情况。
 
-尽管这可能意外，但这不是错误，并且是基础CDN的标准行为。 如果您有两个或更多SAN证书覆盖同一SAN域条目，如果该域由一个证书覆盖，而另一个证书已更新，则现在将为域安装后者。
+尽管此情况可能是意外情况，但它不是错误，并且是基础CDN的标准行为。 如果您有两个或更多SAN证书覆盖同一SAN域条目，则CDN将安装该域的最新更新证书。 即使其他证书已涵盖相同的域条目，也会发生这种情况。
 
 +++
