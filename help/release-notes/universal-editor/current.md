@@ -4,7 +4,7 @@ description: 这些是通用编辑器2025.12.11版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 18%
@@ -28,7 +28,7 @@ ht-degree: 18%
 
 * 已向[富文本编辑器中的现有表添加支持。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * 已在[富文本编辑器中为嵌套列表启用Tab键。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* 现在可以通过[meta标记`dev-login`禁用开发人员登录功能。](/help/implementing/universal-editor/customizing.md#meta-tags)
+* 现在可以通过[meta标记`aem-dev-login`禁用开发人员登录功能。](/help/implementing/universal-editor/customizing.md#meta-tags)
 * 在覆盖部分中单击右键现在会显示[上下文选项菜单。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [富文本编辑器现在支持](/help/implementing/universal-editor/configure-rte.md#indentation)范围缩进[。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
