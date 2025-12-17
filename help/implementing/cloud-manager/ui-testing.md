@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
+source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2662'
 ht-degree: 53%
 
 ---
@@ -186,7 +186,7 @@ Cloud Manager在部署管道期间自动选取Docker build-context存档并构�
 >
 >如果您的项目不包括此行，请编辑该文件以选择进行UI测试。
 >
->文件可能包含一行，显示&#x200B;*DO NOT MODIFY*。 它只是旧模板/示例中的旧版警告，*不会*&#x200B;阻止您进行Cloud Manager UI测试所需的选择加入编辑。 您可以放心地忽略该建议。 也就是说，在执行选择加入步骤时（例如，加入`assembly-ui-test-docker-context.xml`），您可以在`pom.xml`项目&#x200B;*中编辑*&#x200B;和`testing.properties`。
+>文件可能包含一行，显示&#x200B;*DO NOT MODIFY*。 它只是旧模板/示例中的旧版警告，*不会*&#x200B;阻止您进行Cloud Manager UI测试所需的选择加入编辑。 您可以安全地忽略建议；在执行选择加入步骤时（例如，加入`assembly-ui-test-docker-context.xml`），您可以在`pom.xml`项目&#x200B;*中编辑*&#x200B;和`testing.properties`。
 
 如果您使用的是 Adobe 提供的示例：
 
@@ -274,7 +274,7 @@ Docker 镜像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 | 推荐持续时间 | 15m | Adobe建议在此时间限制内进行测试。 |
 
 * 列入允许列表 列入允许列表如果目标Author/Publish受IP保护，则管道UI测试基础架构必须，否则UI测试可能会失败，并显示403 Forbidden。
-另请参阅[AEMaaCS中的UI测试失败，原因是IP 列入允许列表 列入允许列表](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+另请参阅[AEMaaCS中的UI测试失败，原因是IP 列入允许列表 列入允许列表](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
 >[!NOTE]
 >
