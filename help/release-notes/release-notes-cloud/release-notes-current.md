@@ -1,18 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 62%
+source-wordcount: '1704'
+ht-degree: 52%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明 {#release-notes}
 
 以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
@@ -40,13 +40,41 @@ ht-degree: 62%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM中的代理 {#agents-in-aem}
+## AEM测试版计划 {#aem-beta-programs}
 
-AEM提供了一系列代理，使您能够加快内容创建并自动编排更改。 有关详细信息，请参阅[AEM代理概述](/help/ai-in-aem/agents/overview.md)。
+Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能和代码、提供反馈以及引导AEM未来的一种方式。
+
+>[!IMPORTANT]
+>
+>Beta版本可能包含缺陷，并“按原样”提供，无任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持(通过Adobe支持服务或其他方式)Beta版。 Adobe建议客户谨慎使用，不要依赖测试版或随附的任何文档或材料的正确功能或性能。 Beta版中的功能和API如有更改，恕不另行通知。 因此，使用测试版完全由客户自行承担风险。
+
+**参与的优点**
+通过抢先使用Adobe正在开发的功能，客户和合作伙伴可以提供反馈并影响产品开发。 它还有助于客户在功能正式发布之前做好采用新功能的准备。
+
+**当前测试版计划**
+以下部分列出了活动的测试版计划。
+
+### AEM(Beta程序)中的代理
+
+提前获得对强大的新AEM代理功能的访问权限，这些功能涵盖生产、管理、优化、发现和开发。 您的反馈将直接影响Adobe的路线图和最终功能。 有关详细信息，请参阅[AEM代理概述](/help/ai-in-aem/agents/overview.md)。
+
+要选择加入此计划，请发送电子邮件至[aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)，并尽可能包含以下详细信息：
+
+将积极使用代理的团队成员的    *姓名和Adobe ID。
+    *列出您或您的团队将要使用的特定座席。 或直接说“所有代理”。
+
+### AEM Foundation(Beta项目)
+
+    查看[AEM Foundation测试版计划](#foundation-early-adopter)。
+
+### Cloud Manager(Beta项目)
+
+    查看[Cloud Manager测试版计划](/help/implementing/cloud-manager/release-notes/current.md)。
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
