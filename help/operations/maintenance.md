@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的维护任务以及如何配置它
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
+source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 29%
+source-wordcount: '2057'
+ht-degree: 28%
 
 ---
 
@@ -49,14 +49,14 @@ ht-degree: 29%
   <tr>
     <td>版本清除</td>
     <td>客户</td>
-    <td>当前默认禁用版本清除，但可以配置策略，如<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
+    <td>当前默认禁用版本清除，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
     <td>客户</td>
-    <td>审核日志清除当前默认处于禁用状态，但可以配置策略，如<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
+    <td>审核日志清除当前默认处于禁用状态，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
    </td>
   </tr>
@@ -70,7 +70,7 @@ ht-degree: 29%
     <td>临时任务清理</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。通过在文件夹<code>/libs</code>、<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>或<code>granite_daily</code>下创建属性，覆盖<code>granite_monthly</code>下的开箱即用维护窗口配置节点。</p>
+    <p>必须在 git 中完成。通过在文件夹<code>/libs</code>、<code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>或<code>granite_daily</code>下创建属性，覆盖<code>granite_monthly</code>下的开箱即用维护窗口配置节点。</p>
     <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上述节点下添加另一个节点来启用维护任务。 将其命名为<code>granite_TaskPurgeTask</code>，属性<code>sling:resourceType</code>设置为<code>granite/operations/components/maintenance/task</code>，属性<code>granite.maintenance.name</code>设置为<code>TaskPurge</code>。 配置OSGI属性，请参阅<code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>以获取属性列表。</p>
   </td>
   </tr>
@@ -78,7 +78,7 @@ ht-degree: 29%
     <td>工作流清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。通过在文件夹<code>/libs</code>、<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>或<code>granite_daily</code>下创建属性，覆盖<code>granite_monthly</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。通过在文件夹<code>/libs</code>、<code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>或<code>granite_daily</code>下创建属性，覆盖<code>granite_monthly</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_WorkflowPurgeTask</code>），启用维护任务。配置OSGI属性，请参阅<a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">定期清除工作流实例</a>。</p>
   </td>
   </tr>
@@ -86,8 +86,8 @@ ht-degree: 29%
     <td>项目清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。通过在文件夹<code>/libs</code>、<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>或<code>granite_daily</code>下创建属性，覆盖<code>granite_monthly</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
-    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。查看<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe项目清除配置</a>的<b>OSGi属性</b>列表。</p>
+    <p>必须在 git 中完成。通过在文件夹<code>/libs</code>、<code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>或<code>granite_daily</code>下创建属性，覆盖<code>granite_monthly</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。查看<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe项目清除配置</a>的<b>OSGi属性</b>列表。</p>
   </td>
   </tr>
   </tbody>
@@ -146,9 +146,9 @@ ht-degree: 29%
 
 ### 位置 {#locations}
 
-* 每天 - /apps/settings/granite/operations/maintenance/granite_daily
-* 每周 - /apps/settings/granite/operations/maintenance/granite_weekly
-* 每月 - /apps/settings/granite/operations/maintenance/granite_monthly
+* 每日 — /conf/global/settings/granite/operations/maintenance/granite_daily
+* 每周 — /conf/global/settings/granite/operations/maintenance/granite_weekly
+* 每月 — /conf/global/settings/granite/operations/maintenance/granite_monthly
 
 ### 代码示例 {#code-samples}
 
