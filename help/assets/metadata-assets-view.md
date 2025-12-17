@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 81%
+source-wordcount: '2235'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 81%
 
 ![查看资产的元数据](assets/metadata-view.png)
 
-*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 标题、描述和上传日期等基本元数据在[!UICONTROL 基本]选项卡中提供。[!UICONTROL 高级]选项卡包含更多高级元数据，例如相机型号、镜头详细信息和地理位置标记。[!UICONTROL 标记]选项卡包含根据图像的内容自动应用的标记。
 
@@ -49,7 +49,7 @@ ht-degree: 81%
 
 ![查看资产的智能标记](assets/metadata-view-tags.png)
 
-*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 智能标记还包含以百分比显示的置信度分数。它指示与所应用标记对应的置信度。您可以审核自动应用的智能标记。
 
@@ -115,6 +115,10 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 创建表单后，当用户上传具有匹配 MIME 类型的资产时，将会自动应用表单。
 
 要重用现有的表单创建新表单，请选择一个元数据表单，在工具栏中单击&#x200B;**[!UICONTROL 复制]**，提供名称，然后单击&#x200B;**[!UICONTROL 确认]**。您可以编辑元数据表单来进行更改。更改表单后，它会用于在更改之后上传的资产。它不会更改现有资产。
+
+>[!IMPORTANT]
+>
+>默认元数据表单还具有&#x200B;**[!UICONTROL 营销活动]**&#x200B;选项卡，其中包括&#x200B;**[!UICONTROL 营销活动名称]**、**[!UICONTROL 渠道]**&#x200B;和&#x200B;**[!UICONTROL 区域]**&#x200B;多值只读字段。 是有限可用功能。 您可以通过创建支持工单来启用它。
 
 ### 属性组件 {#property-components}
 
@@ -226,13 +230,13 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

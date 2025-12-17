@@ -1,7 +1,7 @@
 ---
 title: 使用人工智能生成的元数据增强内容发现
 description: 了解如何使用人工智能生成的元数据增强内容发现
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -43,4 +43,4 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 1. [可选]如果您觉得任何相关标记缺失，可以添加其他标记或创建自己的标记。 为此，请在&#x200B;**[!UICONTROL 生成的关键字]**&#x200B;字段中写入您的标记，然后单击&#x200B;**[!UICONTROL 保存]**。
 
-有关如何禁用AI生成的元数据的信息，请参阅[禁用AI生成的元数据](/help/assets/smart-tags.md#disable-ai-generated-metadata)。
+有关如何禁用AI生成的元数据的信息，请参阅[禁用AI生成的元数据](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata)。

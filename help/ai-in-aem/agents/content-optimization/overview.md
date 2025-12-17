@@ -3,9 +3,9 @@ title: 内容优化代理
 description: 了解如何使用内容优化代理来转变用户如何通过应用自然语言说明创建渠道就绪型变体来优化和调整资产。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ad027974400bdce3428ce96e8804abfe087b48da
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -154,6 +154,13 @@ ht-degree: 0%
 ![内容优化结果](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
 
 利用这些结果，可以轻松查看优化输出并立即在下游渠道或工作流中使用。
+
+
+## 限制 {#limitations-content-optimization}
+
+* 内容优化代理当前不支持PNG资产。
+
+* 不支持设置背景颜色。
 
 <!--
 

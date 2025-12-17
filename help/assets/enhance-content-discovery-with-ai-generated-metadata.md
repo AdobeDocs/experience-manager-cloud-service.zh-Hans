@@ -3,10 +3,10 @@ title: 在管理员视图中利用AI生成的元数据增强内容发现
 description: 了解如何在管理员视图中使用人工智能生成的元数据增强内容发现
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '669'
+ht-degree: 8%
 
 ---
 
@@ -69,7 +69,9 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 ## 禁用AI生成的元数据 {#disable-ai-generated-metadata}
 
-要禁用AI生成的元数据，请执行以下操作：
+您可以为AEM as a Cloud Service环境禁用AI生成的元数据，也可以在文件夹级别禁用它。
+
+要为AEM as a Cloud Service环境禁用AI生成的元数据，请执行以下操作：
 
 1. 导航到&#x200B;**[!UICONTROL 工具> Assets > Assets配置>智能标记增强配置]**。
 
@@ -78,3 +80,15 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 1. 单击&#x200B;**[!UICONTROL 保存]** 。
 
 对于您上传到AEM Assets的新资源或文件夹，将禁用AI生成的元数据。 已生成AI生成的元数据字段的现有资源或文件夹仍将继续显示这些字段。
+
+### 为文件夹禁用AI生成的元数据 {#disable-ai-generated-metadata-folder-level}
+
+要在文件夹级别禁用AI生成的元数据，请执行以下操作：
+
+1. 选择文件夹并单击&#x200B;**[!UICONTROL 属性]**。
+
+1. 选择&#x200B;**[!UICONTROL 资产处理]**&#x200B;选项卡。
+
+1. 在&#x200B;**[!UICONTROL 图像的智能标记增强功能]**&#x200B;部分中，从下拉菜单中选择&#x200B;**[!UICONTROL 禁用]**。
+
+1. 单击&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;为所选文件夹禁用AI生成的元数据。
