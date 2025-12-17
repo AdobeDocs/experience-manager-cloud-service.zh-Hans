@@ -3,7 +3,7 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: 0f33ef46ea58ecbdbf30ac078f24f2193ae26395
+source-git-commit: 57b8a38219431ff7f264ef1f64de5506e283a650
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 66%
@@ -13,7 +13,7 @@ ht-degree: 66%
 
 # 通用编辑器预览发行说明  {#preview}
 
-这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于2025年12月18日正式发布。
+这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于2026年1月15日正式发布。
 
 提供这些&#x200B;**预览**&#x200B;发行说明是为了方便您了解即将对通用编辑器进行哪些更改，并且您可以通过[切换到预览环境来测试这些更改。](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
