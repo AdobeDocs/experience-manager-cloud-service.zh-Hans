@@ -35,7 +35,7 @@ ht-degree: 1%
 1. 在[!DNL Figma]主页上，单击画布底部工具栏中的&#x200B;**[!UICONTROL 操作]**，然后在对话框中提供的搜索栏中搜索[!DNL Adobe Experience Manager (AEM) Assets Connector]。
 1. 选择[!DNL Adobe Experience Manager (AEM) Assets Connector]以显示[!DNL Adobe Experience Manager (AEM) Assets Connector]面板。 使用此面板[将 [!DNL AEM] 资源导入 [!DNL Figma] 画布](#import-aem-assets-into-figma-workflow)。
    ![操作](/help/assets/assets/actions-on-figma.png)
-或者，访问[[!DNL Adobe Experience Manager (AEM) Assets Connector]社区上可用的](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)[!DNL Figma]，单击&#x200B;**[!UICONTROL 打开方式……]**，选择最近的文件或创建新文件并单击&#x200B;**[!UICONTROL 运行]**&#x200B;以访问[!DNL Adobe Experience Manager (AEM) Assets Connector]面板。
+或者，访问[[!DNL Adobe Experience Manager (AEM) Assets Connector]社区上可用的](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) [!DNL Figma]，单击&#x200B;**[!UICONTROL 打开方式……]**，选择最近的文件或创建新文件并单击&#x200B;**[!UICONTROL 运行]**&#x200B;以访问[!DNL Adobe Experience Manager (AEM) Assets Connector]面板。
    ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
