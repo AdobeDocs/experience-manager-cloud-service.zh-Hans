@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.7.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.7.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 100%
+source-wordcount: '2273'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -241,18 +242,20 @@ OSGi 属性：
 
 ### 默认清除旧版本和审计日志 {#mt-defaults}
 
-目前，内容版本和审核日志相关的*清除维护任务-默认处于禁用状态，因此除非进行明确配置，否则不会删除任何数据。
+目前，内容版本和审计日志的相关&#x200B;*清除维护任务*&#x200B;默认处于禁用状态，因此除非进行明确配置，否则不会删除任何数据。
 
-然而，为了优化存储库性能，将在未来公布的某个日期默认启用清除功能，并遵循以下指南：
+但是，为了优化存储库性能，在将来宣布的日期将默认启用清除。
+
+有关更多详细信息，请参阅[维护任务文章](/help/operations/maintenance.md#defaults)。
 
 #### 内容版本 {#mt-content}
 
-* **新环境*-（在未来某个日期（稍后通知）之后创建）
-   * **30 天*-以上的旧版本将定期被删除。
+* **新环境**（在即将到来的日期之后创建，稍后将进行沟通）：
+   * 将定期删除超过30天的版本。
    * 保留过去30天内最新的五个版本，以及最新版本和当前版本，无论其历史时间如何。
 
-* **现有环境*-（在这个未来日期之前创建）：
-   * **7 年*-以上的版本将定期被删除。
+* **现有环境**（在此即将到来的日期之前创建）：
+   * 超过7年的版本将定期删除。
    * 过去 7 年内的所有版本均予以保留。
    * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
@@ -260,18 +263,16 @@ OSGi 属性：
 
 #### 审核日志 {#mt-auditlogs}
 
-* **新环境*-（在未来某个日期之后创建，具体日期将另行通知）：
-   * **7 天*-以上的旧复制、DAM 和页面审核日志将被定期删除。
+* **新环境**（在即将到来的日期之后创建，具体日期将另行通知）：
+   * 将定期删除超过7天的复制、DAM和页面审核日志。
    * 默认情况下，所有事件都会被记录。
 
-* **现有环境*-（在这个未来日期之前创建）：
-   * **7 年*-以上的旧复制、DAM 和页面审核日志将被定期删除。
+* **现有环境**（在此即将到来的日期之前创建）：
+   * 将定期删除超过7年的复制、DAM和页面审核日志。
    * 默认情况下，所有事件都会被记录。
    * 这个较高的默认阈值可防止意外移除最近的数据。但是，建议配置较低的值以优化存储库性能。
 
 * 您可以通过使用配置管道部署的 YAML 配置来修改这些默认值。
-
-有关更多详细信息，请参阅[维护任务文章](/help/operations/maintenance.md#defaults)。
 
 ### 边缘计算（Alpha 计划） {#edge-computing}
 
