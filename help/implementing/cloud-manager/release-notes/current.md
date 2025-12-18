@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 431c3060b59dca852bdce14b6793dcb5c352139b
+source-git-commit: 7c1f1f1022fd63c190a493d312ab1f355859d15a
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 64%
+source-wordcount: '1149'
+ht-degree: 59%
 
 ---
 
@@ -88,11 +88,15 @@ If you are interested in testing this new feature and sharing your feedback, sen
   查看[一键单击即可创建您的第一个Edge Delivery网站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。
 
 
-
-
 ## Beta 计划 {#private-beta-program}
 
 参与 Cloud Manager 的 beta 计划，在即将推出的功能正式发布之前获得独家访问权限。
+
+>[!IMPORTANT]
+>
+>Beta版本可能包含缺陷，并“按原样”提供，无任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持(通过Adobe支持服务或其他方式)Beta版。 Adobe建议客户谨慎使用，不要依赖测试版或随附的任何文档或材料的正确功能或性能。 Beta版中的功能和API如有更改，恕不另行通知。 因此，使用测试版完全由客户自行承担风险。
+
+另请参阅[AEM Beta程序](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 目前提供以下机会：
 <!--
