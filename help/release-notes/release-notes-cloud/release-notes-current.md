@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
+source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 52%
+source-wordcount: '1698'
+ht-degree: 53%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 52%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,16 +64,16 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 
 要选择加入此计划，请发送电子邮件至[aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)，并尽可能包含以下详细信息：
 
-将积极使用代理的团队成员的    *姓名和Adobe ID。
-    *列出您或您的团队将要使用的特定座席。 或直接说“所有代理”。
+* 将积极使用代理的团队成员的名称和Adobe ID。
+* 列出您或您的团队将要使用的特定座席。 或者说“所有特工”
 
 ### AEM Foundation(Beta项目)
 
-    查看[AEM Foundation测试版计划](#foundation-early-adopter)。
+查看[AEM Foundation测试版计划](#foundation-early-adopter)。
 
 ### Cloud Manager(Beta项目)
 
-    查看[Cloud Manager测试版计划](/help/implementing/cloud-manager/release-notes/current.md)。
+查看[Cloud Manager测试版计划](/help/implementing/cloud-manager/release-notes/current.md)。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
