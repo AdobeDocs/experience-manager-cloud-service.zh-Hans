@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service的微前端内容片段选择
 description: 属性，用于将微前端内容片段选择器配置为从应用程序中搜索、查找和检索内容片段。
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 4%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 4%
 | `repoId` | 字符串 | 否 | | 用于片段选择器的存储库ID。 如果提供，选择器会自动连接到指定的存储库，并且存储库下拉列表将隐藏。 如果未提供，则用户可以从其有权访问的可用存储库列表中选择存储库。 |
 | `defaultRepoId` | 字符串 | 否 | | 显示存储库选择器时，默认选定的存储库ID。 仅在未提供`repoId`时使用。 如果设置`repoId`，则隐藏存储库选择器，此值将被忽略。 |
 | `orgId` | 字符串 | 否 | | 用于身份验证的组织ID。 如果未提供，则用户可以从他们有权访问的不同组织中选择存储库。 如果用户无权访问任何存储库或组织，则不会加载内容。 |
-| `locale` | 字符串 | 否 | “en-US” | 区域设置。 |
+| `locale` | 字符串 | 否 | `en-US` | 区域设置。 |
 | `env` | 字符串 | 否 | | 部署环境。 查看允许的环境名称的`Env`类型。 |
 | `filters` | Fragmentfilter | 否 | `{ folder: "/content/dam" }` | 要应用于内容片段列表的过滤器。 默认情况下，将显示`/content/dam`下的片段。 |
 | `isOpen` | 布尔型 | 否 | `false` | 用于控制选择器是打开还是关闭的标记。 |
 | `noWrap` | 布尔型 | 否 | `false` | 确定是否在没有封装对话框的情况下呈现片段选择器。 当设置为`true`时，片段选择器将直接嵌入到父容器中。 用于将选择器集成到自定义布局或工作流中。 |
 | `onSelectionChange` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 每当选择内容片段发生更改时触发的回调函数。 提供当前选定的片段、域名、租户信息、存储库ID和投放存储库。 |
-| `onDismiss` | () =>空白 | 否 | | 执行解除操作（例如，关闭选择器）时触发的回调函数。 |
+| `onDismiss` | () =>空白 | 否 | | 执行解除操作时触发的回调函数；例如，关闭选择器。 |
 | `onSubmit` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 用户确认选择时触发的回调函数。 接收选定的内容片段、域名、租户信息、存储库ID和投放存储库。 |
 | `theme` | “浅色”或“深色” | 否 | | 片段选择器的主题。 默认情况下，它被设置为unifiedShell环境主题。 |
 | `selectionType` | “单个”或“多个” | 否 | `single` | 选择类型可用于限制片段选择器的选择。 |
