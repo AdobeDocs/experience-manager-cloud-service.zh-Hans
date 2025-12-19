@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
+source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 52%
+source-wordcount: '1857'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 52%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -76,6 +76,24 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 ### Cloud Manager(Beta项目) {#cloud-manager-beta-programs}
 
 查看[Cloud Manager测试版计划](/help/implementing/cloud-manager/release-notes/current.md)。
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**用于与AEM Assets集成的Figma插件新版本可用**
+
+* 将资源从AEM存储库导入Figma文档时，支持视频文件(MP4、MOV、WebM)、动画文件(GIF)和矢量文件(SVG)。
+
+* 支持检查与AEM存储库中存在的资源相比，Figma文档中使用的资源是否有任何更新，如果有任何更新，则获取最新版本的资源。
+
+* 在导出PNG（缩放）和JPG（图像缩放和质量）文件格式时支持导出配置。
+
+  ![Figma插件](/help/assets/assets/figma-v2-plugin.png)
+
+针对已上传的资产进行&#x200B;**恶意软件检测**
+
+AEM Assets现在包括对已上传文件的自动恶意软件扫描，确保在进入DAM之前隔离可疑资产，以保护您的存储库免受威胁。 管理员可以配置扫描设置和隔离保留策略以简化安全控制。
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
