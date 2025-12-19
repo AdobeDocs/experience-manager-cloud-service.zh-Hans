@@ -3,14 +3,14 @@ title: Adobe Experience Manager as a Cloud Service的微前端内容片段选择
 description: 属性，用于将微前端内容片段选择器配置为从应用程序中搜索、查找和检索内容片段。
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 3%
+source-wordcount: '1073'
+ht-degree: 4%
 
 ---
 
-# 内容片段选择器 — 相关属性 {#content-fragment-selector-related-properties}
+# 内容片段选择器——相关属性 {#content-fragment-selector-related-properties}
 
 微型前端内容片段选择器允许您浏览或搜索存储库中的内容片段，并在您的应用程序中使用它们。
 
@@ -20,22 +20,28 @@ ht-degree: 3%
 
 | 属性 | 类型 | 必需 | 默认 | 描述 |
 |--- |--- |--- |--- |--- |
-| `imsToken` | 字符串 | 否 | | 用于身份验证的IMS令牌。 |
-| `repoId` | 字符串 | 否 | | 用于身份验证的存储库ID。 |
-| `orgId` | 字符串 | 是 | | 用于身份验证的组织ID。 |
-| `locale` | 字符串 | 否 | | 区域设置数据。 |
-| `env` | 环境 | 否 | | 内容片段选择器部署环境。 |
-| `filters` | Fragmentfilter | 否 | | 要应用于内容片段列表的过滤器。 默认情况下，将显示`/content/dam`下的片段。 默认值： `{ folder: "/content/dam" }` |
-| `isOpen` | 布尔型 | 是 | `false` | 用于触发打开或关闭选择器的标志。 |
-| `onDismiss` | () =>空白 | 是 | | 选择&#x200B;**解除**&#x200B;时要调用的函数。 |
-| `onSubmit` | ({ contentFragments： `{id: string, path: string}[]`， domainNames： `string[]` }) => void | 是 | | 在选择一个或多个内容片段后使用&#x200B;**Select**&#x200B;时要调用的函数。 <br><br>函数将接收：<br><ul><li> 选定的内容片段，包含`id`和`path`字段</li><li>和与存储库的程序ID和环境ID相关的域名，其状态为`ready`和`tier`发布</li></ul><br>如果没有域名，它将使用发布实例作为回退域。 |
-| `theme` | “浅色”或“深色” | 否 | | 内容片段选择器的主题。 默认主题设置为UnifiedShell环境的主题。 |
-| `selectionType` | “单个”或“多个” | 否 | `single` | 可用于限制FragmentSelector的选择类型。 |
-| `dialogSize` | &quot;fullscreen&quot;或&quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 用于控制对话框大小的可选属性。 |
-| `waitForImsToken` | 布尔型 | 否 | `false` | 指示内容片段选择器是否在SUSI流的上下文中渲染，并需要等待`imsToken`准备就绪。 |
-| `imsAuthInfo` | ImsAuthInfo | 否 | | 包含登录用户的IMS身份验证信息的对象。 |
-| `runningInUnifiedShell` | 布尔型 | 否 | | 指示内容片段选择器是在UnifiedShell下运行还是独立运行。 |
-| `readonlyFilters` | ResourceReadonlyFiltersField | 否 | | 可应用于内容列表的只读过滤器 — 无法删除。 |
+| `ref` | FragmentSelectorRef | | | 引用`ContentFragmentSelector`实例，允许访问提供的功能，如`reload`。 |
+| `imsToken` | 字符串 | 否 | | 用于身份验证的IMS令牌。 如果未提供，将启动IMS登录流程。 |
+| `repoId` | 字符串 | 否 | | 用于片段选择器的存储库ID。 如果提供，选择器会自动连接到指定的存储库，并且存储库下拉列表将隐藏。 如果未提供，则用户可以从其有权访问的可用存储库列表中选择存储库。 |
+| `defaultRepoId` | 字符串 | 否 | | 显示存储库选择器时，默认选定的存储库ID。 仅在未提供`repoId`时使用。 如果设置`repoId`，则隐藏存储库选择器，此值将被忽略。 |
+| `orgId` | 字符串 | 否 | | 用于身份验证的组织ID。 如果未提供，则用户可以从他们有权访问的不同组织中选择存储库。 如果用户无权访问任何存储库或组织，则不会加载内容。 |
+| `locale` | 字符串 | 否 | “en-US” | 区域设置。 |
+| `env` | 字符串 | 否 | | 部署环境。 查看允许的环境名称的`Env`类型。 |
+| `filters` | Fragmentfilter | 否 | `{ folder: "/content/dam" }` | 要应用于内容片段列表的过滤器。 默认情况下，将显示`/content/dam`下的片段。 |
+| `isOpen` | 布尔型 | 否 | `false` | 用于控制选择器是打开还是关闭的标记。 |
+| `noWrap` | 布尔型 | 否 | `false` | 确定是否在没有封装对话框的情况下呈现片段选择器。 当设置为`true`时，片段选择器将直接嵌入到父容器中。 用于将选择器集成到自定义布局或工作流中。 |
+| `onSelectionChange` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 每当选择内容片段发生更改时触发的回调函数。 提供当前选定的片段、域名、租户信息、存储库ID和投放存储库。 |
+| `onDismiss` | () =>空白 | 否 | | 执行解除操作（例如，关闭选择器）时触发的回调函数。 |
+| `onSubmit` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 用户确认选择时触发的回调函数。 接收选定的内容片段、域名、租户信息、存储库ID和投放存储库。 |
+| `theme` | “浅色”或“深色” | 否 | | 片段选择器的主题。 默认情况下，它被设置为unifiedShell环境主题。 |
+| `selectionType` | “单个”或“多个” | 否 | `single` | 选择类型可用于限制片段选择器的选择。 |
+| `dialogSize` | &quot;fullscreen&quot;或&quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 用于控制对话框大小的可选prop。 |
+| `runningInUnifiedShell` | 布尔型 | 否 | | DestinationSelector是在UnifiedShell下运行还是独立运行。 |
+| `readonlyFilters` | ResourceReadonlyFiltersField[] | 否 | | 应用于内容片段列表的只读过滤器。 用户无法删除这些过滤器。 |
+| `selectedFragments` | ContentFragmentIdentifier[] | 否 | `[]` | 初始选择内容片段，将在选择器打开时预先选择。 |
+| `hipaaEnabled` | 布尔型 | 否 | `false` | 指示是否已启用HIPAA合规性。 |
+| `inventoryView` | InventoryViewType | 否 | `table` | 要在选择器中使用的库存默认视图类型。 |
+| `inventoryViewToggleEnabled` | 布尔型 | 否 | `false` | 指示是否启用库存视图切换，允许用户在表格视图和网格视图之间切换。 |
 
 ## ImsAuthProps属性 {#imsauthprops-properties}
 
