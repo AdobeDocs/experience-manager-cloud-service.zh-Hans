@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 18%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 18%
 
 以下总结了于2025年12月23日公开发布的维护版本23862的持续改进。 上一个维护版本是版本 23482。
 
-激活 2026.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2026.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强功能 {#enhancements-23862}
 
@@ -75,7 +75,7 @@ ht-degree: 18%
 * SITES-36570：激活分块创建Live Copy切换后，创建Live Copy失败。
 * SITES-36158：转出失败，作业由于出现异常而失败。
 * SITES-35655：新的CF编辑器在中断后显示活动继承。
-* SITES-31425：在站点的启动工作流中显示未本地化的错误消息“错误：需要{}字段”。
+* SITES-31425：在网站的启动工作流中显示未本地化的错误消息`Error: {} field is required`。
 * SITES-19802：核心组件站点>目录中的工具提示未本地化。
 * SITES-36543：修复了允许管理员编辑已签出的内容片段的问题。
 * SITES-36967：修复了在尝试为损坏的内容片段生成缩略图数据时发生的NullPointerExceptions。
