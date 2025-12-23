@@ -5,14 +5,14 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
+source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明 {#release-notes}
 
 以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
@@ -40,11 +40,11 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM测试版计划 {#aem-beta-programs}
+## AEM Beta程序 {#aem-beta-programs}
 
 Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能和代码、提供反馈以及引导AEM未来的一种方式。
 
@@ -93,7 +93,6 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 针对已上传的资产进行&#x200B;**恶意软件检测**
 
 AEM Assets现在包括对已上传文件的自动恶意软件扫描，确保在进入DAM之前隔离可疑资产，以保护您的存储库免受威胁。 管理员可以配置扫描设置和隔离保留策略以简化安全控制。
-
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

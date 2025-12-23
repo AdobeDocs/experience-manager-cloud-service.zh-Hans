@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 68444ac15513bad7c1eaee97c474e21d36992d49
+source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 39%
+source-wordcount: '1080'
+ht-degree: 18%
 
 ---
 
@@ -16,67 +16,98 @@ ht-degree: 39%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 23482 {#23482}
+## 发行版本 23862 {#23862}
 
-以下总结了于2025年12月3日公开发布的维护版本23482的持续改进。 上一个维护版本是版本 23385。
+以下总结了于2025年12月23日公开发布的维护版本23862的持续改进。 上一个维护版本是版本 23482。
 
-激活 2025.12.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2026.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
+### 增强功能 {#enhancements-23862}
 
-### 增强功能 {#enhancements-23482}
+* CQ-4361812：在rest api中添加了对可选参数folderPath的支持。 描述：新的翻译项目由API创建，并将放置在可选`folderPath`参数指定的路径中，否则它默认为根项目路径`/content/projects`。
+* Forms-21960：与forms-spa类似，增加了对本地交互式通信画布编辑的支持。
+* Forms-22001：添加了有关在AEM Forms as a Cloud Service中减少`/etc.clientlibs/toggles.json`大量请求的指南。
+* Forms-22496：在调用服务中公开原始ResponseBody。
+* Forms-22495：在SetProperty规则中添加占位符属性。
+* Forms-21925：UBS脚注格式：在表单加载期间显示表单中的所有脚注。
+* Forms-20536：在规则编辑器中公开一个完整响应选项（不带映射）。
+* SITES-37199：注释功能通过未验证的`authorizables.json`调用触发存储库遍历，从而导致性能下降。
+* sites-37118：产品驾驶舱中的Commerce Optimizer支持。
+* SITES-38029：添加日志以在修改事件时跟踪MSM推送。
+* SITES-37050：支持“强制取消发布”，允许取消发布其他已发布资源引用的内容片段。
+* SITES-37142：添加了通过内容片段PATCH签入/签出内容片段的功能。
+* SITES-37613：在CF API权限端点中，如果用户可以签入内容片段，则返回签入；如果用户可以签出内容片段，则返回“签出”。
+* SITES-37835：当尝试创建具有相同标题但未提供名称的多个内容片段时，会自动生成新名称，而不是由于冲突而失败。
+* SITES-36823：带Universal Editor的Edge Delivery：无需反向映射索引。
+* SITES-34751：带有通用编辑器的Edge Delivery：发布时因不受支持的文件类型和路径超出限制而失败（提前访问）。
+* SITES-37888：带有通用编辑器的Edge Delivery：将Alt后缀用作链接文本的同义词。
+* SITES-19850：带有通用编辑器的Edge Delivery：添加对电子表格中多个工作表的支持。
+* SITES-32490：带有通用编辑器的Edge Delivery：向块和默认内容添加对data-aue-component和user defined data-aue-label的支持。
+* SITES-37794：使用通用编辑器的Edge Delivery：简化页面创建向导。
+* SITES-36963：将受众/区段端点迁移到Target API v3以支持Workspace。
 
-* Assets-49770：为恶意软件扫描结果添加隔离通知。
-* Assets-54079：为隔离文件夹应用自定义元数据。
-* Assets-54083：创建计划的隔离清理机制。
-* Assets-54278：从资源中删除`dam:avScanTime`属性。
-* Assets-57284：将文件上传限制到隔离文件夹（禁用拖放）。
-* Assets-57428：在Assets视图UI中隐藏隔离文件夹。
-* Assets-57626：改进异步资源作业的重试行为。
-* Assets-57879：为异步移动/复制资源作业添加合并选项。
-* Assets-58099：添加配置以禁用整个环境的增强型智能标记。
-* Assets-58136：在Search OpenAPI中实施分页反馈。
-* Assets-59402：为文件夹删除API添加异步作业端点：将包导出到内部区域。
-* Assets-59966：将Malware Administrators组重命名为Quarantine Administrators。
-* Assets-60166：使用VideoViewer.js而不是基于iframe的URL。
-* GRANITE-61378：权限调试工具 — ListPrincipals API。
-* GRANITE-63235：查询以使用`cq:conf`属性标识站点，支持检测旧页面/版本。
-* SITES-30452：带ASO的内容API — 标题和描述建议、XWalk支持、JSON修补程序操作、IMS服务主体绑定。
+### 修复的问题 {#fixed-issues-23862}
 
-### 修复的问题 {#fixed-issues-23482}
+* CQ-4361831：修复了导致genai_dropdown_span未定义的问题。
+* CQ-4360895：修复了并发更新期间项目中翻译作业状态计数不准确的问题。
+* CQ-4361599：修复了2025.7升级后从翻译作业中跳过内容片段的问题。
+* CQ-4360747：修复的可重复翻译作业过于频繁地创建空负载和触发器（ScheduleRepeatTranslationProject中的NullPointerException）。
+* CQ-4359994：修复了单语言项目和多语言项目的destinationLanguage字段类型不一致问题。
+* SITES-38153：修复基于uuid的引用的cf发布引用提供程序。
+* SITES-37594：按标记功能改进了模型的性能。
+* SITES-37337： FragmentCreateProcessor：在日志中提供其他错误详细信息。
+* SITES-33666：内容片段编辑器中存在未本地化的“无法打印片段的Json”错误消息。
+* SITES-33675：内容片段编辑器>关联内容中硬编码的“未定义”字符串。
+* SITES-30715：内容片段编辑器中的未本地化的“General”字符串。
+* SITES-28592：内容片段模型编辑器>“模型已锁定”对话框中未本地化的字符串。
+* SITES-977：字符串“标记”和“收藏集”在编辑内容片段页面上未本地化。
+* SITES-29699：内容片段编辑器中允许的资源类型未本地化。
+* SITES-25240：Teaser模式中的Call to action字段没有可见标签。
+* SITES-24869：模板编辑器>分隔符>策略中的工具提示被截断。
+* SITES-19313：在模板编辑器中将组件拖放到已删除的模板中时，错误未本地化。
+* SITES-18103：页面编辑器>工作流中未本地化的字符串。
+* SITES-17501：模板编辑器>组件策略编辑器中的未本地化字符串。
+* SITES-15091：字符串在体验片段的文本组件属性上未本地化。
+* SITES-8113：在“工具”菜单的“模板”的“选择图像”对话框中，“Assets”字符串未本地化。
+* SITES-37587：在RolloutManagerImpl中带有NPE的PROD中，Live Copy创建仍失败。
+* SITES-37335：Live Copy页面属性在与cq标记相关的控制台中显示错误。
+* SITES-36972：可编辑工具栏中缺少“转出”按钮。
+* SITES-36570：激活分块创建Live Copy切换后，创建Live Copy失败。
+* SITES-36158：转出失败，作业由于出现异常而失败。
+* SITES-35655：新的CF编辑器在中断后显示活动继承。
+* SITES-31425：在站点的启动工作流中显示未本地化的错误消息“错误：需要{}字段”。
+* SITES-19802：核心组件站点>目录中的工具提示未本地化。
+* SITES-36543：修复了允许管理员编辑已签出的内容片段的问题。
+* SITES-36967：修复了在尝试为损坏的内容片段生成缩略图数据时发生的NullPointerExceptions。
+* SITES-37791：修复了对包含`$`的字符串调用FindAndReplace失败的问题。
+* SITES-37018：复制带有不允许的模板路径的页面时出现空错误弹出窗口。
+* SITES-36243：使用通用编辑器的Edge Delivery：发布`sling:OrderedFolder`时修复404。
+* SITES-37684：使用通用编辑器的Edge Delivery：修复具有多个站点的环境中的性能降级。
+* SITES-37840：使用通用编辑器的Edge Delivery：修复由于Edge Delivery的访问令牌过期而导致的发布失败。
+* SITES-37933：使用通用编辑器的Edge Delivery：修复（取消）发布启动项中已删除的资源时失败。
+* SITES-37870：带有通用编辑器的Edge Delivery：修复了在启用多字段支持的情况下自定义页面元数据的呈现中断的问题。
+* SITES-37349：使用通用编辑器的Edge Delivery：将具有单个条目的多字段呈现为具有单个列表项的列表。
+* SITES-36148：使用通用编辑器的Edge Delivery：为复合多字段修复data-aue-label 。
 
-* Assets-57430：修复Assets视图上传跳过预处理：导出`repoapi.preprocessing`包，将RAPI更新为最新版本。
-* Assets-58190：减少收藏集UI中不必要的过高猜测总数。
-* Assets-58866：修复了OpenAPI响应中返回的资产标题/描述/ID。
-* Assets-58868：当资源上缺少排序字段时修复分页。
-* Assets-58920：修复批量资源导入，跳过预处理。
-* Assets-59168：修复扫描开始/结束时间显示错误时区的问题。
-* Assets-59702：将资源状态设置为无状态时修复事件排序。
-* Assets-59830：在终止面板期间停止了对异步作业重新排队。
-* Assets-49757：修复了恶意软件检测扫描事件。
-* GRANITE-61019：重新启动AEM后首次运行时未通知修补程序`gcMonitor`。
-* GRANITE-62717：修复了处理包含非ASCII字符的`JSafe`密码。
-* SITES-34331：修复了非管理员用户(`cqLiveSyncCancelled index`)加载转出覆盖时出现503超时的问题。
-
-### 已知问题 {#known-issues-23482}
+### 已知问题 {#known-issues-23862}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-23482}
+### 已弃用的功能和 API {#deprecated-23862}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-23482}
+### 安全修复 {#security-23862}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 4 个已发现的漏洞，增强了我们对强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 23 个已发现的漏洞，增强了我们对实现强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-23482}
+### 嵌入的技术 {#embedded-tech-23862}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM Oak | 1.88.0 | [Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html) |
+| AEM Oak | 1.88.0 | [Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | Apache HTTP 服务器 | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | AEM 核心组件 | 2.30.2 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14（默认） | [受支持的 Node.js 版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
