@@ -59,7 +59,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 客户可采取主动措施以通过在内容投放流的各层配置规则而减轻应用层（第 7 层）受到的攻击。
 
-例如，客户可在 Apache 层配置[ Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
+例如，客户可在 Apache 层配置[&#x200B; Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
 
 正如本文所述，还可使用 Cloud Manager 的[配置管道](/help/operations/config-pipeline.md)将流量过滤器规则部署到 Adobe Managed CDN。除了基于 IP 地址、路径和标头等属性的&#x200B;*标准流量过滤规则*，或基于速率限制的规则外，客户还可通过授权使用一类功能强大的流量过滤子类别规则，即 *WAF 规则*。
 
