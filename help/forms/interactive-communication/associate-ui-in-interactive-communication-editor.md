@@ -4,9 +4,9 @@ description: 通过使面向客户的代理生成个性化、合规的通信，�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+source-git-commit: 234b6dc747bbba21e9249d526bf894860572dfe5
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '600'
 ht-degree: 3%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 支持的关联组件：日期字段、数值字段、文本字段。
+> 支持的关联组件：日期字段、数值字段、文本字段、日期时间字段、日期字段、复选框、单选按钮、下拉列表。
 
 ### 创建IC
 
