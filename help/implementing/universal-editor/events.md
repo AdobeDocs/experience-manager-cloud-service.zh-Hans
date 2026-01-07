@@ -4,10 +4,10 @@ description: 了解通用编辑器发送的不同事件，您可以使用这些�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 内容更新事件 {#content-events}
 
-### aue:content-add {#content-add}
+### aue&amp;amp；冒号；content-add {#content-add}
 
 当容器中添加了新组件时，会触发 `aue:content-add` 事件。
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-details {#content-details}
+### aue&amp;amp；冒号；content-details {#content-details}
 
 当属性面板中加载了组件时，会触发 `aue:content-details` 事件。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-move {#content-move}
+### aue&amp;amp；冒号；content-move {#content-move}
 
 当组件被移动时，会触发 `aue:content-move` 事件。
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-patch {#content-patch}
+### aue&amp;amp；冒号；content-patch {#content-patch}
 
 当属性面板中的某个组件数据更新时，会触发 `aue:content-patch` 事件。
 
@@ -108,7 +108,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-remove {#content-remove}
+### aue&amp;amp；冒号；content-remove {#content-remove}
 
 当组件从容器中移除时，会触发 `aue:content-remove` 事件。
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-update {#content-update}
+### aue&amp;amp；冒号；内容更新 {#content-update}
 
 当组件的属性在上下文中更新时，会触发 `aue:content-update` 事件。
 
@@ -180,7 +180,7 @@ ht-degree: 100%
 
 ## UI 事件 {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### aue&amp;amp；冒号；ui-preview {#ui-preview}
 
 当页面的编辑模式被改为&#x200B;**预览**&#x200B;时，会触发 `aue:ui-preview` 事件。
 
@@ -192,7 +192,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### aue&amp;amp；冒号；ui-edit {#ui-edit}
 
 当页面的编辑模式被改为&#x200B;**编辑**&#x200B;时，会触发 `aue:ui-edit` 事件。
 
@@ -204,7 +204,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### aue&amp;amp；冒号；ui-viewport-change {#ui-viewport-change}
 
 当视口大小改变时，会触发 `aue:ui-viewport-change` 事件。
 
@@ -219,7 +219,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:initialized {#initialized}
+### aue&amp;amp；冒号；已初始化 {#initialized}
 
 触发 `aue:initialized` 事件以告知远程页面已在通用编辑器中成功加载。
 
@@ -257,4 +257,3 @@ ht-degree: 100%
 ## 其他资源 {#additional-resources}
 
 * [通用编辑器调用](/help/implementing/universal-editor/calls.md)
-
