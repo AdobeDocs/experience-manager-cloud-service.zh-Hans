@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f913871da16b44d7a465e0fa00608835524ba7e3
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 3%
+source-wordcount: '2384'
+ht-degree: 4%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | 本文 |
 
 ![数据集成](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms]数据集成允许您配置并连接到不同的数据源。 支持开箱即用的以下类型：
 
-* 关系数据库 — MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、postgreSQL和[!DNL Oracle RDBMS]
+* 关系数据库 — MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、postgreSQL、Azure SQL和[!DNL Oracle RDBMS]
 * RESTful Web服务
 * 基于SOAP的Web服务
 * OData服务（版本4.0）
@@ -40,30 +40,101 @@ ht-degree: 3%
 
 在使用[!DNL Experience Manager] Web控制台配置配置关系数据库之前，必须：
 
-* [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hans)，因为默认情况下已禁用端口。
-* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hans#mysql-driver-dependencies)中添加JDBC驱动程序依赖项。
+* [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下已禁用端口。
+* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies)中添加JDBC驱动程序依赖项。
 
 
 ### 配置关系数据库的步骤
 
 可以使用[!DNL Experience Manager] Web控制台配置来配置关系数据库。 执行以下操作：
 
-1. 转到位于[!DNL Experience Manager]的`https://server:host/system/console/configMgr` Web控制台。
-1. 找到&#x200B;**[!UICONTROL Day Commons JDBC连接池]**&#x200B;配置。 选择以在编辑模式下打开配置。
+**步骤1：克隆AEM as a Cloud Service Git存储库**
 
-   ![JDBC连接器池](/help/forms/assets/jdbc_connector.png)
+1. 打开命令行并选择要存储AEM as a Cloud Service存储库的目录，如`/cloud-service-repository/`。
 
-1. 在配置对话框中，指定要配置的数据库的详细信息，例如：
+2. 运行以下命令以克隆存储库：
 
-   * JDBC驱动程序的Java™类名称
-   * JDBC连接URI
-   * 用于与JDBC驱动程序建立连接的用户名和密码
-   * 在&#x200B;**[!UICONTROL 验证查询]**&#x200B;字段中指定SQL SELECT查询以验证来自池的连接。 查询必须至少返回一行。 根据您的数据库，指定以下选项之一：
-      * SELECT 1 (MySQL和MS® SQL)
-      * 从双(Oracle)中选择1
-   * 数据源的名称
+   ```
+   git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
+   ```
 
-   用于配置关系数据库的示例字符串：
+   **在何处查找此信息？**
+
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
+
+   当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的应用程序命名。
+
+**步骤2：导航到配置文件夹**
+
+1. 在编辑器中打开存储库文件夹。
+
+1. 导航到`<application folder>`中的以下目录，该目录应放置JDBC池的OSGi配置：
+
+   ```bash
+   cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
+   ```
+
+**步骤3：创建MySQL连接配置文件**
+
+1. 创建文件：
+
+   ```bash
+   com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
+   ```
+
+1. 添加以下代码行：
+
+```json
+{
+  "jdbc.driver.class": "com.mysql.cj.jdbc.Driver",
+  "jdbc.connection.uri": "jdbc:mysql://<hostname>:<port>/<database>?useSSL=false",
+  "jdbc.username": "<your-db-username>",
+  "jdbc.password": "<your-db-password>",
+  "datasource.name": "<application folder>-mysql",
+  "datasource.svc.prop.name": "<application folder>-mysql"
+}
+```
+
+> 
+>
+> 将占位符（如`<application folder>`、`<hostname>`、`<database>`、`<your-db-username>`和`<your-db-password>`）替换为实际值。
+
+**步骤4：提交并推送更改**
+
+打开终端，运行以下命令：
+
+```bash
+git add .
+git commit -m "<commit message>"
+git push 
+```
+
+**步骤5：通过Cloud Manager管道部署更改**
+
+1. 登录到&#x200B;**AEM Cloud Manager**。
+1. 导航到您的项目并运行管道以部署更改。
+
+>[!NOTE]
+>
+> 有关更多详细信息，请参阅使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)SQL连接。
+
+<!--
+1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
+2. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
+
+   ![JDBC Connector Pool](/help/forms/assets/jdbc_connector.png)
+
+3. In the configuration dialog, specify the details for the database you want to configure, such as:
+
+    * Java&trade; class name for the JDBC driver
+    * JDBC connection URI
+    * Username and password to establish connection with the JDBC driver
+    * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+      * SELECT 1 (MySQL and MS&reg; SQL) 
+      * SELECT 1 from dual (Oracle)
+    * Name of the data source
+
+   Sample strings for configuring a relational database:
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -71,13 +142,11 @@ ht-degree: 3%
       "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
    ```
 
-   >[!NOTE]
-   >
-   > 有关更多详细信息，请参阅使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hans)SQL连接。
 
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。
+    
+4. Select **[!UICONTROL Save]** to save the configuration.
 
-现在，您可以将配置的关系数据库与表单数据模型(FDM)一起使用。
+Now, you can use the configured relational database with your Form Data Model (FDM). 
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -109,7 +178,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 要为云服务配置配置文件夹，请执行以下操作：
 
 1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
-   * 有关详细信息，请参阅[配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=zh-Hans)文档。
+   * 有关详细信息，请参阅[配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html)文档。
 1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤为云服务配置创建和配置其他文件夹。
 
    1. 在&#x200B;**[!UICONTROL 配置浏览器]**&#x200B;中，选择`global`文件夹并选择&#x200B;**[!UICONTROL 属性]**。
@@ -138,8 +207,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
 1. 为RESTful服务指定以下详细信息：
 
-   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger URL]定义文件的[!DNL &#x200B; Swagger]或从本地文件系统上传[!DNL Swagger]文件。
-   * 根据[!DNL &#x200B; Swagger] Source输入，以下字段已预填充值：
+   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger URL]定义文件的[!DNL  Swagger]或从本地文件系统上传[!DNL Swagger]文件。
+   * 根据[!DNL  Swagger] Source输入，以下字段已预填充值：
 
       * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于[!DNL Swagger]源中定义的方案。
       * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
@@ -163,8 +232,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
 1. 为RESTful服务指定以下详细信息：
 
-   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger 3.0 URL]定义文件的[!DNL &#x200B; Swagger]或从本地文件系统上传[!DNL Swagger]文件。
-   * 根据[!DNL &#x200B; Swagger] Source输入，显示与目标服务器的连接信息。
+   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger 3.0 URL]定义文件的[!DNL  Swagger]或从本地文件系统上传[!DNL Swagger]文件。
+   * 根据[!DNL  Swagger] Source输入，显示与目标服务器的连接信息。
    * 选择身份验证类型 — None、OAuth2.0（[授权代码](https://oauth.net/2/grant-types/authorization-code/)、[客户端凭据](https://oauth.net/2/grant-types/client-credentials/)）、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
    如果选择&#x200B;**[!UICONTROL API密钥]**&#x200B;作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从&#x200B;**[!UICONTROL 位置]**&#x200B;下拉列表中选择其中一个选项，并在&#x200B;**[!UICONTROL 参数名称]**&#x200B;字段中相应地指定标头名称或查询参数。
@@ -320,7 +389,7 @@ OData服务由其服务根URL标识。 要在[!DNL Experience Manager] as a Clou
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

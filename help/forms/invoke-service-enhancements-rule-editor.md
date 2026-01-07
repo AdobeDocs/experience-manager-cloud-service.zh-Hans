@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -40,6 +40,8 @@ ht-degree: 1%
 
 ![调用服务处理程序](/help/forms/assets/invoke-service-rule-editor.png)
 
+### 添加成功处理程序和失败处理程序
+
 要添加成功或失败处理程序，请分别单击&#x200B;**[!UICONTROL 添加成功处理程序]**&#x200B;或&#x200B;**[!UICONTROL 添加失败处理程序]**。
 
 单击&#x200B;**[!UICONTROL 添加成功处理程序]**&#x200B;后，将显示&#x200B;**[!UICONTROL 调用服务成功处理程序]**&#x200B;规则编辑器，允许您指定规则或逻辑来管理操作成功时的&#x200B;**调用服务**&#x200B;输出响应。 即使不定义条件，您也可以指定规则；但是，您可以通过单击&#x200B;**[!UICONTROL 添加条件]**&#x200B;选项为成功处理程序添加条件。
@@ -56,7 +58,7 @@ ht-degree: 1%
 
 您还可以添加多个规则来处理来自&#x200B;**调用服务**&#x200B;操作的不成功响应。
 
-**在服务器**&#x200B;上启用错误验证&rbrace;功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
+**在服务器**&#x200B;上启用错误验证}功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
 
 ## 在规则编辑器中使用调用服务的先决条件
 
@@ -160,6 +162,10 @@ ht-degree: 1%
 
 ![设置下拉值](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> 请参阅[添加成功处理程序和失败处理程序](#adding-success-handler-and-failure-handler)部分，了解如何设置成功和失败处理程序。
+
 #### 输出
 
 在`101`文本框中输入`Pet ID`以根据输入的值动态填充下拉选项。
@@ -181,6 +187,10 @@ ht-degree: 1%
 
 ![为可重复面板创建规则](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> 请参阅[添加成功处理程序和失败处理程序](#adding-success-handler-and-failure-handler)部分，了解如何设置成功和失败处理程序。
+
 #### 输出
 
 在`101`文本框中输入`Pet ID`以根据输入值动态填充可重复面板。
@@ -199,6 +209,10 @@ ht-degree: 1%
 #### 实施
 
 在`Pet ID`文本框上创建规则以调用`getPetById`服务。 在&#x200B;**[!UICONTROL 添加成功处理程序]**&#x200B;中，添加另一个成功处理程序响应。 在规则中将`categoryname`文本框的值设置为`category.name`。
+
+>[!NOTE]
+>
+> 请参阅[添加成功处理程序和失败处理程序](#adding-success-handler-and-failure-handler)部分，了解如何设置成功和失败处理程序。
 
 ![为可重复面板创建规则](/help/forms/assets/set-panel-values.png)
 

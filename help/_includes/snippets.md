@@ -1,8 +1,8 @@
 ---
-source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: ht
-source-wordcount: '1623'
-ht-degree: 100%
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+workflow-type: tm+mt
+source-wordcount: '1625'
+ht-degree: 99%
 
 ---
 # 代码片段 {#snippets}
@@ -93,7 +93,7 @@ ht-degree: 100%
   <tr>
     <td>设置下拉列表选项 </td>
     <td>使用规则编辑器的<b>设置选项</b>属性来设置选项的下拉列表。</td>
-    <td>下拉选项是使用自定义函数设置的。 
+    <td>使用规则编辑器的<b>调用服务</b>属性设置选项的下拉列表。 
    </td>
    </tr>
      </tr>
@@ -167,11 +167,11 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >前端管道要求预先将以下 IP 允许列表添加到 Cloud Manager。
->>如果需要，通过复制下面的地址 Block [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将 Block 粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
->>为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
+>如果需要，通过复制下面的地址 Block [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将 Block 粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
+>为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
 >
 >**Cloud Manager IP 允许列表**
->>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## 添加 Cloud Manager IP 允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
@@ -179,7 +179,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >如果您使用或打算使用前端管道来开发 Sites，则必须事先添加 Cloud Manager IP 允许列表。
->>请参阅[将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
+>请参阅[将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
 
 ## IP 允许列表和通用编辑器 {#ip-allow-lists-ue}
 
@@ -220,7 +220,7 @@ ht-degree: 100%
 
 **若要记录支持工单：**
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 在描述中，除了问题描述之外，还要提供以下详细信息：
 
@@ -233,7 +233,7 @@ ht-degree: 100%
 >
 >SPA 编辑器[已被新项目弃用](/help/implementing/developing/hybrid/spa-editor-deprecation.md)。Adobe 对现有项目仍提供支持，但不应在新项目中使用。目前，AEM 中用于管理 Headless 内容的首选编辑器是：
 >
->* [通用编辑器](https://www.aem.live/docs/aem-authoring)，用于可视化编辑 Headless 内容。
+>* [Universal Editor ](https://www.aem.live/docs/aem-authoring)，用于可视化编辑 Headless 内容。
 >* [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑 Headless 内容。
 
 ## 通用编辑器{#ue-see-also}
