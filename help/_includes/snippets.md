@@ -18,7 +18,7 @@ ht-degree: 99%
 * [创建 AEM 自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [将 AEM 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将主题应用于 AEM 自适应表单](/help/forms/using-themes-in-core-components.md)
-* [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [将组件添加到 AEM 自适应表单 &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [在 AEM 自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
 * [生成一个 AEM 自适应表单的 PDF 版本（DoR）](/help/forms/generate-document-of-record-core-components.md)
 * [翻译 AEM 自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -151,7 +151,7 @@ ht-degree: 99%
 ## Forms Portal{#forms-portal-see-also}
 
 * [Forms Portal 组件简介](/help/forms/configure-forms-portal.md)
-* [在 Sites 页面上列出您的 Form ](/help/forms/list-forms-on-sites-page.md)
+* [在 Sites 页面上列出您的 Form &#x200B;](/help/forms/list-forms-on-sites-page.md)
 * [将 Form 保存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
 * [将 Form 链接添加到 Sites 页面](/help/forms/add-form-link-to-aem-sites-page.md)
 
@@ -233,7 +233,7 @@ ht-degree: 99%
 >
 >SPA 编辑器[已被新项目弃用](/help/implementing/developing/hybrid/spa-editor-deprecation.md)。Adobe 对现有项目仍提供支持，但不应在新项目中使用。目前，AEM 中用于管理 Headless 内容的首选编辑器是：
 >
->* [Universal Editor ](https://www.aem.live/docs/aem-authoring)，用于可视化编辑 Headless 内容。
+>* [Universal Editor &#x200B;](https://www.aem.live/docs/aem-authoring)，用于可视化编辑 Headless 内容。
 >* [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑 Headless 内容。
 
 ## 通用编辑器{#ue-see-also}
