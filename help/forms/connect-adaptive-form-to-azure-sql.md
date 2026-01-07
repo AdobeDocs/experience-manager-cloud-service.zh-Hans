@@ -40,7 +40,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
 
   ![创建Azure Db](/help/forms/assets/create-azure-db.png)
 
-* 为创建的Azure数据库启用使用专用出口IP[配置的](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address)高级网络。
+* 为创建的Azure数据库启用使用专用出口IP[配置的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address)高级网络。
 
   >[!NOTE]
   >
@@ -72,7 +72,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
 
    当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的应用程序命名。
 
@@ -84,7 +84,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
 
 >[!NOTE]
 >
-> 要在项目中包括SQL依赖项，请参阅[SQL驱动程序依赖项](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)部分。
+> 要在项目中包括SQL依赖项，请参阅[SQL驱动程序依赖项](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)部分。
 
 **步骤3：添加JDBC配置**
 
