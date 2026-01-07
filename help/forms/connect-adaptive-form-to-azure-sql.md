@@ -4,7 +4,7 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 40193d89f2a4ef864a564eb9932403531eaf1ff7
+source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以存储或检索数据。
 本文概述如何通过AEM as a Cloud Service使用JDBC将自适应表单连接到Azure SQL数据库。
 
-> 
+>
 > 
 > 本指南适用于启用了高级联网的非沙盒AEM as a Cloud Service环境。
 
@@ -40,7 +40,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
 
   ![创建Azure Db](/help/forms/assets/create-azure-db.png)
 
-* 为创建的Azure数据库启用使用专用出口IP[配置的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address)高级网络。
+* 为创建的Azure数据库启用使用专用出口IP[配置的](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address)高级网络。
 
   >[!NOTE]
   >
@@ -53,7 +53,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
    * **portDest**： `1433` （Azure SQL的默认端口）
 例如： `portOrigin: 30433 → portDest: 1433`
 
-     > 
+     >
      > 
      > 您可以联系Adobe Cloud Manager支持以配置端口转发。
 
@@ -72,7 +72,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
 
    当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的应用程序命名。
 
@@ -84,7 +84,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
 
 >[!NOTE]
 >
-> 要在项目中包括SQL依赖项，请参阅[SQL驱动程序依赖项](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)部分。
+> 要在项目中包括SQL依赖项，请参阅[SQL驱动程序依赖项](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)部分。
 
 **步骤3：添加JDBC配置**
 
@@ -115,7 +115,7 @@ Adobe Experience Manager (AEM)中的自适应Forms可与外部数据库集成以
        }
    ```
 
-   > 
+   >
    >
    > 将`jdbc.username`替换为实际的Azure用户名，将`jdbc.password`替换为实际的安全密码。
 
