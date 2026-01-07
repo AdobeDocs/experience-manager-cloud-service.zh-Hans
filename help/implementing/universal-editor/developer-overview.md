@@ -4,7 +4,7 @@ description: 如果您是 AEM 开发人员，很想了解通用编辑器如何�
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 要按照这个概述进行操作，您需要满足以下条件。
 
-* [AEM as a Cloud Service 的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
-   * 您的本地开发实例必须[配置 HTTPS 才能在 `localhost` 上进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)。
+* [AEM as a Cloud Service 的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+   * 您的本地开发实例必须[配置 HTTPS 才能在 `localhost` 上进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)。
    * [必须安装 WKND 演示网站](https://github.com/adobe/aem-guides-wknd)。
 * [有权访问通用编辑器](/help/implementing/universal-editor/getting-started.md#onboarding)。
 * 为开发目的而运行的[本地通用编辑器服务](/help/implementing/universal-editor/local-dev.md)。
@@ -118,7 +118,7 @@ X-Frame 选项 `sameorigin` 阻止在框架中渲染 AEM 页面。您必须删�
 
    ![相同网站 Cookie 的 OSGi 属性](assets/dev-cross-origin-osgi.png)
 
-1. **将登录令牌 Cookie 的 SameSite 属性**&#x200B;更改为 `None`。
+1. **将登录令牌 Cookie 的 SameSite 属性**&#x200B;更改为 `Partitioned`。
 
 1. 保存更改。
 
