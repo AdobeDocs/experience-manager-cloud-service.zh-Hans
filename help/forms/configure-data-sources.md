@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 ![数据集成](do-not-localize/data-integeration.png)
@@ -40,8 +40,8 @@ ht-degree: 4%
 
 在使用[!DNL Experience Manager] Web控制台配置配置关系数据库之前，必须：
 
-* [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下已禁用端口。
-* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies)中添加JDBC驱动程序依赖项。
+* [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hans)，因为默认情况下已禁用端口。
+* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hans#mysql-driver-dependencies)中添加JDBC驱动程序依赖项。
 
 
 ### 配置关系数据库的步骤
@@ -60,7 +60,7 @@ ht-degree: 4%
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
 
    当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的应用程序命名。
 
@@ -116,7 +116,7 @@ git push
 
 >[!NOTE]
 >
-> 有关更多详细信息，请参阅使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)SQL连接。
+> 有关更多详细信息，请参阅使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hans)SQL连接。
 
 <!--
 1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
@@ -178,7 +178,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 要为云服务配置配置文件夹，请执行以下操作：
 
 1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
-   * 有关详细信息，请参阅[配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html)文档。
+   * 有关详细信息，请参阅[配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=zh-Hans)文档。
 1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤为云服务配置创建和配置其他文件夹。
 
    1. 在&#x200B;**[!UICONTROL 配置浏览器]**&#x200B;中，选择`global`文件夹并选择&#x200B;**[!UICONTROL 属性]**。
@@ -389,7 +389,7 @@ OData服务由其服务根URL标识。 要在[!DNL Experience Manager] as a Clou
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
