@@ -4,9 +4,9 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
+source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 1%
 通用编辑器在就地和属性面板中提供富文本编辑器(RTE)，以允许作者在编辑文本时应用格式更改。
 
 此RTE可使用[组件筛选器进行配置。](/help/implementing/universal-editor/filtering.md)本文档介绍了可用的配置选项以及示例。
+
+>[!NOTE]
+>
+>在启动通用编辑器项目时，后端支持的所有富文本功能(AEM与Edge Delivery或headless实施)会自动处于活动状态。
+>
+>* 您可以停用这些不需要的选项。
+>* 不支持激活与您的项目类型不兼容的选项。
 
 ## 配置结构 {#structure}
 
