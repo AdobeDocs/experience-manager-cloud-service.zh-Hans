@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要使用代理，您需要注册Beta程序。 您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)找到有关AEM代理Beta计划的更多信息。
+>要使用代理，您需要注册Beta程序。 您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)找到有关AEM代理Beta计划的更多信息。
 
 ## Experience Production Agent {#experience-production-agent}
 
