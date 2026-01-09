@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
+source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 49%
@@ -40,7 +40,7 @@ ht-degree: 49%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -192,7 +192,7 @@ OSGi properties:
 
 #### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-Adobe于2025年10月14日将&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#x200B;环境升级到更高性能的&#x200B;**Java 21运行时**。 从&#x200B;**1月下旬**&#x200B;开始，AEM Cloud Service SDK或任何云环境都不会使用Java 11运行时。
+Adobe于2025年10月14日将&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#x200B;环境升级到更高性能的&#x200B;**Java 21运行时**。 从&#x200B;**2月9日**&#x200B;开始，AEM Cloud Service SDK或任何云环境都不会使用Java 11运行时。
 
 >[!NOTE]
 >
