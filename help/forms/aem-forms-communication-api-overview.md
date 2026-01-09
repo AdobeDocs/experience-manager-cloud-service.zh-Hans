@@ -6,59 +6,38 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 580d6505ffdf25f7bfb3a3a84f054dcf76c05cdd
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '965'
 ht-degree: 4%
 
 ---
 
 
-# AEM Forms Communications API — 概述
+# AEM Forms API — 概述
 
-AEM Forms Communications API提供了一整套云原生API，旨在帮助企业自动执行文档工作流。
+AEM Forms API提供了一整套云原生API，旨在帮助企业自动执行文档工作流。
 
 AEM Forms API通过两个主控制台进行结构化和访问：
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console是Adobe API、事件、运行时和App Builder的网关。
 
-* [AEM Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供了用于调试和检查AEM as a Cloud Service环境的工具。
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供对环境级别的详细信息、配置、技术帐户和服务凭据的访问权限，以支持操作和集成任务。
 
-每个控制台提供对不同API和服务的访问，用于文档处理、生成、转换、加密和通信任务。 API支持不同的[身份验证方法](#authentication-methods)。
+不同的API支持不同的[身份验证方法](#authentication-methods)。
 
 ## 身份验证方法
 
-API支持多种身份验证方法，以便您的应用程序与Adobe服务之间进行安全集成：
+不同的Forms API根据其发布时间线使用不同的身份验证方法：
 
-| 方面 | OAuth服务器到服务器（推荐） | JWT（JSON Web令牌） |
-|-------------|------------------------------------------|---------------------------|
-| 描述 | 无需用户交互即可进行API访问的现代安全方法。 | 使用签名令牌进行访问的旧方法。 |
-| 设置位置 | Adobe Developer Console和AEM Developer Console | 仅限AEM Developer Console |
-| 安全性 | 高 — 使用客户端凭据和范围 | 中等 — 取决于密钥管理 |
-| 可扩展性 | 高度可扩展的后端集成 | 有限，适合旧版使用 |
-| 令牌管理 | 自动生成和续订 | 手动令牌签名和轮换 |
-| 状态 | 推荐 | 已弃用 |
+* [OAuth 服务器到服务器](/help/forms/oauth-api-authetication.md)
+* [JWT （JSON Web令牌）服务器到服务器](/help/forms/jwt-api-authentication.md)
 
+早期的API支持基于JWT的服务器到服务器身份验证，该身份验证通过AEM Developer Console进行配置和管理。 较新的API使用OAuth服务器到服务器身份验证，并通过Adobe Developer Console进行配置。
 
 >[!NOTE]
 >
-> 单击以下链接了解有关:-的更多信息
-> 
-> * [OAuth服务器到服务器（推荐）](/help/forms/oauth-api-authetication.md)
-> * [JWT （JSON Web令牌）](/help/forms/jwt-api-authentication.md)
-
-<!--### Execution Models
-
-The following table highlights the key differences between Synchronous (On-Demand) and Asynchronous (Batch) execution models supported in AEM Forms Communications APIs:
-
-| Feature | Synchronous (On-Demand) | Batch (Asynchronous) |
-|---------|-------------------------|----------------------|
-| **Execution Model** | Real-time, immediate | Queued, scheduled |
-| **Response Time** | Seconds | Minutes to hours |
-| **Volume** | Single or few documents | Hundreds to thousands |
-| **Testing Environment** | Author & Publish | Author Only |
-| **Use Case** | User-triggered actions | Scheduled bulk operations |
-| **Console Access** | ADC & AEM Developer Console | AEM Developer Console Only |-->
+> Adobe正在标准化所有API的身份验证方法，并正在逐步将API载入支持OAuth服务器到服务器身份验证方法的Adobe Developer Console。
 
 ## API分类概述
 
@@ -72,7 +51,7 @@ The following table highlights the key differences between Synchronous (On-Deman
 |--------------|----------------------------|--------------------------|
 | 用途 | 处理自适应表单交付和运行时操作 | 文档生成和处理 |
 | 用例 |  — 表单渲染<br> — 数据预填充<br> — 表单提交<br> — 草稿管理 |  — 生成PDF<br> — 文档合并<br> — 批次处理<br> — 打印操作 |
-| 授权方法 | 支持OAuth服务器到服务器/用户身份验证方法。 | 仅支持OAuth服务器到服务器身份验证。 |
+| 授权方法 | 支持OAuth服务器到服务器/用户身份验证方法。 | 根据API，支持服务器到服务器的身份验证，即JWT或OAuth。 API不能同时支持两种身份验证方法。 |
 
 ### AEM Forms通信API
 
@@ -85,66 +64,66 @@ The following table highlights the key differences between Synchronous (On-Deman
 
 | API端点 | 描述 | 执行模型 | 身份验证方法 |
 | ----- | ------ |------- | ------ |
-| [/adobe/forms/batch/output/config](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | 为文档生成作业创建新的批次配置。 | 异步/批处理 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | 检索特定批次配置的详细信息。 | 异步/批处理 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/configs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | 返回所有可用批处理配置的列表。 | 异步/批处理 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | 使用配置启动批量输出生成运行。 | 异步/批处理 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | 检索批处理作业的执行状态。 | 异步/批处理 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/batch/output/config/{configName}/executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 列出特定批处理配置的所有正在运行的实例。 | 异步/批处理 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | 根据模板和数据同步生成PDF输出。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 生成可供打印的输出格式(例如，PCL、PostScript)。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | 为大容量打印生成AFP输出。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | 呈现具有合并数据的PDF表单(XFA/XDP)。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | 检索PDF表单生成作业的状态。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | 获取已完成的PDF表单作业的输出/结果。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/batch/output/config](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig) | 为文档生成作业创建新的批次配置。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetBatchConfigbyName) | 检索特定批次配置的详细信息。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/configs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Configuration/operation/GetAllBatchConfigs) | 返回所有可用批处理配置的列表。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | 使用配置启动批量输出生成运行。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | 检索批处理作业的执行状态。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/batch/output/config/{configName}/executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 列出特定批处理配置的所有正在运行的实例。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | 根据模板和数据同步生成PDF输出。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 生成可供打印的输出格式(例如，PCL、PostScript)。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | 为大容量打印生成AFP输出。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | 呈现具有合并数据的PDF表单(XFA/XDP)。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | 检索PDF表单生成作业的状态。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | 获取已完成的PDF表单作业的输出/结果。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 
 #### 文档操作API
 
 | API端点 | 描述 | 执行模型 | 身份验证方法 |
 | ------------------ | ---------------- | ----------| ---------- |
-| [/adobe/forms/assembler/ddx/invoke](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | 执行DDX指令以组合、拆分或处理PDF。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | 将PDF文档转换为PDF/A格式。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/assembler/pdfa/validate](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | 验证PDF是否符合PDF/A标准 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md)/[JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/ddx/invoke](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/DDX-execution/operation/InvokeDDX) | 执行DDX指令以组合、拆分或处理PDF。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/pdfa/convert](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-conversion/operation/ConvertToPDFA) | 将PDF文档转换为PDF/A格式。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/assembler/pdfa/validate](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/assembler-sync/#tag/Document-validation/operation/CheckIsPDFA) | 验证PDF是否符合PDF/A标准 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
 
 #### 文档转换API
 
 | API端点 | 描述 | 执行模型 | 身份验证方法 |
 |--------- | -------|---------|----------------------|
-| [/adobe/document/convert/pdftoxdp](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Conversion/paths/~1convert~1pdftoxdp/post) | 将PDF表单转换为XDP格式。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/convert/pdftoxdp](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Conversion/paths/~1convert~1pdftoxdp/post) | 将PDF表单转换为XDP格式。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 #### 文档提取API
 
 | API端点 | 描述 | 执行模型 | 身份验证方法 |
 |---------| -------|---------|----------------------|
-| [/adobe/forms/doc/v1/extract/pdfproperties](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1pdfproperties/post) | 从PDF中提取属性和结构信息。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/extract/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/extractUsageRights) | 提取嵌入到PDF中的使用权限。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/extract/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1metadata/post) | 提取元数据，例如标题、作者和关键字。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/extract/data](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/exportData) | 从PDF forms中提取表单数据(XML/JSON)。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/extract/security](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1security/post) | 提取安全设置，如权限和加密。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/pdfproperties](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1pdfproperties/post) | 从PDF中提取属性和结构信息。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/extractUsageRights) | 提取嵌入到PDF中的使用权限。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1metadata/post) | 提取元数据，例如标题、作者和关键字。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/extract/data](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/exportData) | 从PDF forms中提取表单数据(XML/JSON)。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/extract/security](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Extraction/paths/~1extract~1security/post) | 提取安全设置，如权限和加密。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 #### Document Transformation API
 
 
 | API端点 | 描述 | 执行模型 | 身份验证方法 |
 |--------|---------|---------|----------------------|
-| [/adobe/document/transform/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1transform~1metadata/post) | 在PDF文档中更新或添加元数据。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/field/signature/add](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1add/post) | 向PDF添加数字签名字段。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/field/signature/clear](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1clear/post) | 清除签名字段的内容。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/field/signature/remove](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1remove/post) | 从PDF中删除签名字段。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/transform/metadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1transform~1metadata/post) | 在PDF文档中更新或添加元数据。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/field/signature/add](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1add/post) | 向PDF添加数字签名字段。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/field/signature/clear](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1clear/post) | 清除签名字段的内容。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/field/signature/remove](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Transformation/paths/~1field~1signature~1remove/post) | 从PDF中删除签名字段。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 #### 文档Assurance API
 
 | API端点 | 描述 | 执行模型 | 身份验证方法 |
 |---------|-------|---------|----------------------|
-| [/adobe/document/assure/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/applyUsageRights) | 将使用权限应用于PDF（例如，注释、填充、签名）。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/assure/encrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1encrypt/post) | 使用密码或证书安全对PDF进行加密。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/assure/decrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1decrypt/post) | 解密受保护的PDF文档。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/assure/sign](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1sign/post) | 对PDF文档进行数字签名。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
-| [/adobe/document/assure/certify](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1certify/post) | 使用数字证书认证PDF。 | 同步 | [OAuth服务器到服务器](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assure/usagerights](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/applyUsageRights) | 将使用权限应用于PDF（例如，注释、填充、签名）。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assure/encrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1encrypt/post) | 使用密码或证书安全对PDF进行加密。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assure/decrypt](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1decrypt/post) | 解密受保护的PDF文档。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assure/sign](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1sign/post) | 对PDF文档进行数字签名。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/document/assure/certify](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1certify/post) | 使用数字证书认证PDF。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 
 
-## 后续步骤
+## 相关步骤
 
 了解如何为同步（按需）和异步（批处理） Forms Communications API设置环境：
 

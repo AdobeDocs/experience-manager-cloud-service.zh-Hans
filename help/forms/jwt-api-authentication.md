@@ -6,31 +6,24 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '393'
 ht-degree: 3%
 
 ---
 
 
-# JWT（JSON Web令牌）身份验证 — 已弃用
+# JWT（JSON Web令牌）服务器到服务器身份验证
 
-AEM Forms中的JWT身份验证，特别是与AEM as a Cloud Service的服务器端集成，涉及与AEM服务安全交互的特定过程。
-
-## 注意事项
-
-JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较早者为准）失效。 因此，您必须迁移集成才能使用新的[OAuth服务器到服务器凭据](/help/forms/oauth-api-authetication.md)。
-
-将您的项目迁移到OAuth服务器到服务器凭据是一个简单的两步过程，可为您的应用程序和集成实现零停机迁移。 请阅读[迁移指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)以迁移到OAuth服务器到服务器凭据。
-
+AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud Service的服务器端集成，涉及与AEM服务安全交互的特定过程。 AEM Developer Console支持JWT服务器到服务器身份验证。
 
 ## 先决条件
 
 在开始之前，请确保满足以下先决条件：
 
 * 确保您有权访问特定于您使用环境的[Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)。
-* 分配系统管理员或开发人员角色以访问Adobe Cloud Manager。
+* 分配[系统管理员或开发人员角色以访问Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
 
 ## 如何使用JWT凭据生成访问令牌？
 
@@ -62,7 +55,7 @@ JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较�
    ![JWT凭据](/help/forms/assets/jwt-credentials.png)
 
 
-3. 生成并保存凭据
+3. **生成并保存凭据**
 
    1. 记录API凭据
 
@@ -76,7 +69,7 @@ JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较�
       Scopes: AdobeID,openid,read_organizations
       ```
 
-4. 访问令牌生成
+4. **访问令牌生成**
 
    使用cURL命令以编程方式生成令牌：
 
@@ -116,11 +109,11 @@ JWT生成的访问令牌将在当前证书过期后或2026年3月1日（以较�
 
 >[!NOTE]
 >
-> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
 
-## 后续步骤
+## 相关文章
 
 了解如何为同步（按需）和异步（批处理） Forms Communications API设置环境：
 
