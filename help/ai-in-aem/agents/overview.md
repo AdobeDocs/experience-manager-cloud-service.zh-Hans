@@ -3,7 +3,7 @@ title: AEM中的代理概述
 description: 了解AEM中可用于加快内容创建和自动编排更改的代理。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 5f17f58e70536882eb1a453d12ed08602aec31a6
+source-git-commit: 0d9b0ce334e06064ef54532bced6a5e93696ebf1
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要使用代理，您需要注册Beta程序。 您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)找到有关AEM代理Beta计划的更多信息。
+>要使用代理，您需要注册Beta计划。 您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)找到有关AEM代理Beta计划的更多信息。
 
 ## Experience Production Agent {#experience-production-agent}
 
