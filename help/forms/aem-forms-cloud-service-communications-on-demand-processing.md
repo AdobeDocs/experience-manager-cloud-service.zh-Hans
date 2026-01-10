@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2396'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Git存储库访问权限**
 
@@ -112,7 +112,7 @@ ht-degree: 2%
 
 >[!ENDTABS]
 
-#### 4.查找您的AEM Forms端点
+#### 1.4.查找您的AEM Forms端点
 
 从&#x200B;**环境**&#x200B;详细信息页面，记下您的AEM URL实例。
 
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)。
+> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步骤2：克隆Git存储库
 
@@ -244,7 +244,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 >[!BEGINTABS]
 
->[!TAB 用于测试的] 
+>用于测试的[!TAB ]
 
 在Adobe Developer Console中手动生成访问令牌：
 
@@ -256,9 +256,10 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 >[!NOTE]
 >
 > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
->[!TAB 用于生产 的]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
+>用于生产[!TAB 的]
+
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
 **必需的凭据：**
 
@@ -368,6 +369,11 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 ### 步骤5：设置配置管道
 
+#### 5.1登录Adobe Cloud Manager
+
+1. 导航到[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. 使用您的Adobe ID登录
+
 #### 5.1找到管道信息卡
 
 1. 在项目概述页面上找到&#x200B;**管道**&#x200B;信息卡
@@ -379,7 +385,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 - **对于开发环境**：选择&#x200B;**“添加非生产管道”**。 非生产管道适用于开发和暂存环境
 
-- 生产环境&#x200B;**&#x200B;**：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
+- 生产环境&#x200B;****：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
 
 >[!NOTE]
 >
@@ -440,7 +446,7 @@ e.单击&#x200B;**“保存”**&#x200B;以创建管道
 
 ### 步骤6：部署配置
 
-现已创建管道，请部署您的`api.yaml`配置：
+现已创建管道，请部署您的`api.yaml`配置
 
 #### 6.1来自管道概述
 
