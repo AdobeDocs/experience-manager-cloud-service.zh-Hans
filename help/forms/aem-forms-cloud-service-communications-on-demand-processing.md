@@ -244,7 +244,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 >[!BEGINTABS]
 
->用于测试的[!TAB ]
+>[!TAB 用于测试的] 
 
 在Adobe Developer Console中手动生成访问令牌：
 
@@ -256,8 +256,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 >[!NOTE]
 >
 > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
-
->用于生产[!TAB 的]
+>[!TAB 用于生产 的]
 
 使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
@@ -385,7 +384,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 - **对于开发环境**：选择&#x200B;**“添加非生产管道”**。 非生产管道适用于开发和暂存环境
 
-- 生产环境&#x200B;****：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
+- 生产环境&#x200B;**&#x200B;**：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
 
 >[!NOTE]
 >
