@@ -35,7 +35,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Git存储库访问权限**
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
+> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)。
 
 ### 步骤2：克隆Git存储库
 
@@ -260,7 +260,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
 >[!TAB 用于生产 的]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
+使用[Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
 **必需的凭据：**
 
