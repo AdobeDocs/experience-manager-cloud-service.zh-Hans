@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2772'
 ht-degree: 27%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 27%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM文档服务概述](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hans)
+> * **AEM 6.5**： [AEM文档服务概述](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：本文
 
 ## 简介
@@ -91,6 +91,10 @@ Communications API提供了一组全面的文档处理功能，可划分为以�
 
 <span class="preview">使用文档生成API将生成的PDF上传到Azure Blob Storage功能位于[早期采用者计划](/help/forms/early-access-ea-features.md)下。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
+>
+>
+> Document Generation API包括批处理输出生成端点和同步输出生成端点。这些API支持使用JWT或OAuth的服务器到服务器身份验证，具体取决于端点。 要了解有关Document Generation API的更多信息，[单击此处](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis)。
+
 #### 创建 PostScript (PS)、打印机指令语言 (PCL)、Zebra 打印语言 (ZPL) 文档 {#create-PS-PCL-ZPL-documents}
 
 您可以使用文档生成API创建基于XDP表单设计或PDF文档的PostScript (PS)、打印机命令语言(PCL)和斑马打印语言(ZPL)文档。 这些 API 有助于将表单设计与表单数据合并以生成文档。您可以将文档保存到文件，并开发一个自定义流程来将它发送到打印机。
@@ -104,6 +108,10 @@ Communications API提供了一组全面的文档处理功能，可划分为以�
 ## 文档操作
 
 通信文档操作（文档转换）API有助于组合、重新排列PDF文档。 通常，您创建一个 DDX 并将它提交给文档操作 API 来汇编或重新排列文档。[DDX 文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有关如何使用源文档生成一组所需文档的说明。DDX参考文档提供了有关所有受支持操作的详细信息。
+
+>
+>
+> 文档操作API支持使用JWT的服务器到服务器身份验证。 要了解有关Document Manipulation API的更多信息，[单击此处](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis)。
 
 ### 关键文档操作功能
 
@@ -144,7 +152,10 @@ Communications API提供了一组全面的文档处理功能，可划分为以�
 * 提取在PDF文档中启用的使用权限，用户将启用或禁用的使用权限检索到PDF文档以实现Adobe Acrobat Reader的可扩展性。
 * 获取存在于PDF文档中的元数据信息，元数据是有关该文档的信息（与文档内容不同，例如文本和图形）。 Adobe可扩展元数据平台(XMP)是用于处理文档元数据的标准。 XMP实用工具服务可以从XMP文档中检索PDF元数据，并将XMP元数据导出到PDF文档中。
 
-[API参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供了有关API提供的所有参数、身份验证方法和服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
+>
+>
+> 文档提取API支持使用OAuth的服务器到服务器身份验证。 要了解有关文档提取API的更多信息，[单击此处](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis)。
+>
 
 ## 文档转换
 
@@ -157,6 +168,10 @@ Communications文档转换API有助于将PDF文档转换为PDF/A。您可以使�
 <span class="preview">将PDF转换为XDP功能属于早期采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 将PDF文档转换为XDP文件。 对于要成功转换为XDP文件的PDF文档，PDF文档必须在词典中包含XFA流。
+
+>
+>
+> 文档转换API支持使用OAuth的服务器到服务器身份验证。 要了解有关文档转换API的更多信息，[单击此处](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss)。
 
 ## 记录Assurance {#doc-assurance}
 
@@ -174,6 +189,10 @@ DocAssurance服务包括签名和加密API：
 * 从PDF文档中删除指定的签名字段
 
 <span class="preview">从早期采用程序下提供的PDF文档中，从指定的签名字段中移除签名并删除指定的签名字段。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
+
+>
+>
+> 文档Assurance API支持使用OAuth的服务器到服务器身份验证。 要了解有关Document Assurance API的更多信息，[单击此处](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis)。
 
 ### 加密API
 

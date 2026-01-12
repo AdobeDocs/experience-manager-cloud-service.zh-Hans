@@ -3,18 +3,15 @@ title: 如何设置Forms通信同步API？
 description: 为Adobe Experience Manager Forms as a Cloud Service的交互式通信同步API设置开发环境
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
+source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2417'
 ht-degree: 2%
 
 ---
 
 
-# 为AEM Forms Communications同步API配置OAuth服务器到服务器访问
+# 为AEM Forms Communications API配置OAuth服务器到服务器访问
 
 本指南提供有关配置和调用AEM Forms Communications Synchronous API的说明，可通过Adobe Developer Console使用OAuth服务器到服务器身份验证访问这些API。
 
@@ -22,23 +19,28 @@ ht-degree: 2%
 
 要设置用于运行和测试AEM Forms Communications API的环境，请确保您具备以下条件：
 
+### 更新AEM as a Cloud Service环境
+
+* [AEM 2024.10.18459.20241031T210302Z版或更高版本](#update-aem-instance)
+* 如果2024年11月之前创建的环境，请更新产品配置文件
+
 ### 访问和权限
 
 在开始配置Communications API之前，请确保您具有所需的访问权利和权限。
 
 **用户和角色权限**
 
-- 在Adobe Admin Console中分配的开发人员角色
-- 在Adobe Developer Console中创建项目的权限
+* 在Adobe Admin Console中分配的开发人员角色
+* 在Adobe Developer Console中创建项目的权限
 
 >[!NOTE]
 >
-> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Git存储库访问权限**
 
-- 访问Cloud Manager Git存储库
-- 用于克隆和推送更改的Git凭据
+* 访问Cloud Manager Git存储库
+* 用于克隆和推送更改的Git凭据
 
 >[!NOTE]
 >
@@ -46,8 +48,8 @@ ht-degree: 2%
 
 ### 使用Adobe Developer Console (ADC)生成访问令牌
 
-- 使用OAuth服务器到服务器身份验证通过Adobe Developer Console生成访问令牌。
-- 从Adobe Developer Console检索客户端ID
+* 使用OAuth服务器到服务器身份验证通过Adobe Developer Console生成访问令牌。
+* 从Adobe Developer Console检索客户端ID
 
 >[!NOTE]
 >
@@ -55,11 +57,11 @@ ht-degree: 2%
 
 ### 开发工具
 
-- 用于运行示例应用程序的&#x200B;**Node.js**
-- **Git**&#x200B;的最新版本
-- 访问&#x200B;**终端/命令行**
-- 用于编辑配置文件（VS代码、IntelliJ等）的&#x200B;**文本编辑器或IDE**
-- 用于API测试的&#x200B;**Postman**&#x200B;或类似工具
+* 用于运行示例应用程序的&#x200B;**Node.js**
+* **Git**&#x200B;的最新版本
+* 访问&#x200B;**终端/命令行**
+* 用于编辑配置文件（VS代码、IntelliJ等）的&#x200B;**文本编辑器或IDE**
+* 用于API测试的&#x200B;**Postman**&#x200B;或类似工具
 
 >[!NOTE]
 >
@@ -120,7 +122,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)。
+> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步骤2：克隆Git存储库
 
@@ -244,7 +246,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 >[!BEGINTABS]
 
->[!TAB 用于测试的] 
+>用于测试的[!TAB ]
 
 在Adobe Developer Console中手动生成访问令牌：
 
@@ -256,15 +258,16 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 >[!NOTE]
 >
 > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
->[!TAB 用于生产 的]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
+>用于生产[!TAB 的]
+
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
 **必需的凭据：**
 
-- 客户端 ID
-- 客户端密码
-- 范围（通常： `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`）
+* 客户端 ID
+* 客户端密码
+* 范围（通常： `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`）
 
 **令牌终结点：**
 
@@ -339,16 +342,16 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 以下内容说明了配置参数：
 
-- **kind**：始终设置为`"API"`（标识为API配置）
-- **版本**： API版本，通常为`"1"`或`"1.0"`
-- **envTypes**：此配置适用的环境类型数组
-   - `["dev"]` — 仅开发环境
-   - `["stage"]` — 仅暂存环境
-   - `["prod"]` — 仅生产环境
-- **allowedClientIDs**：允许客户端ID访问您的AEM实例
-   - **作者**：作者层的客户端ID
-   - **发布**：发布层的客户端ID
-   - **预览**：预览层的客户端ID
+* **kind**：始终设置为`"API"`（标识为API配置）
+* **版本**： API版本，通常为`"1"`或`"1.0"`
+* **envTypes**：此配置适用的环境类型数组
+   * `["dev"]` — 仅开发环境
+   * `["stage"]` — 仅暂存环境
+   * `["prod"]` — 仅生产环境
+* **allowedClientIDs**：允许客户端ID访问您的AEM实例
+   * **作者**：作者层的客户端ID
+   * **发布**：发布层的客户端ID
+   * **预览**：预览层的客户端ID
 
 ![正在添加配置文件](/help/forms/assets/create-api-yaml-file.png)
 
@@ -382,9 +385,9 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 #### 5.2选择管道类型
 
-- **对于开发环境**：选择&#x200B;**“添加非生产管道”**。 非生产管道适用于开发和暂存环境
+* **对于开发环境**：选择&#x200B;**“添加非生产管道”**。 非生产管道适用于开发和暂存环境
 
-- 生产环境&#x200B;**&#x200B;**：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
+* 生产环境&#x200B;****：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
 
 >[!NOTE]
 >
@@ -396,22 +399,22 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 a. **管道类型**
 
-- 选择&#x200B;**“部署管道”**
+* 选择&#x200B;**“部署管道”**
 
 b. **管道名称**
 
-- 提供描述性名称，例如，将管道命名为`api-config-pipieline`
+* 提供描述性名称，例如，将管道命名为`api-config-pipieline`
 
 c. **部署触发器**
 
-- **手动**：仅在手动触发时部署（建议用于初始设置）
-- **在Git发生更改时**：将更改推送到分支时自动部署
+* **手动**：仅在手动触发时部署（建议用于初始设置）
+* **在Git发生更改时**：将更改推送到分支时自动部署
 
 d. **重要量度失败行为**
 
-- **每次询问**：失败时提示操作（默认）
-- **立即失败**：在度量失败时自动使管道失败
-- **立即继续**：失败后继续
+* **每次询问**：失败时提示操作（默认）
+* **立即失败**：在度量失败时自动使管道失败
+* **立即继续**：失败后继续
 
 e.单击&#x200B;**“继续”**&#x200B;以继续访问&#x200B;**Source代码**&#x200B;选项卡
 
@@ -423,21 +426,21 @@ e.单击&#x200B;**“继续”**&#x200B;以继续访问&#x200B;**Source代码**&
 
 a. **部署类型**
 
-- 选择&#x200B;**“目标部署”**
+* 选择&#x200B;**“目标部署”**
 
 b. **部署选项**
 
-- 选择&#x200B;**“配置”**（仅部署配置文件）。 它告知Cloud Manager这是一个配置部署。
+* 选择&#x200B;**“配置”**（仅部署配置文件）。 它告知Cloud Manager这是一个配置部署。
 
 c. **选择符合条件的部署环境**
 
-- 选择要部署配置的环境。 在这种情况下，它是一个`dev`环境。
+* 选择要部署配置的环境。 在这种情况下，它是一个`dev`环境。
 
 d. **定义Source代码详细信息**
 
-- **存储库**：选择包含`api.yaml`文件的存储库。 例如，选择`AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`存储库。
-- **Git分支**：选择您的分支。 例如，在本例中，我们的代码部署在`main`分支中。
-- **代码位置**：输入`config`目录的路径。 由于`api.yaml`位于根目录的`config`文件夹中，因此请输入`/config`
+* **存储库**：选择包含`api.yaml`文件的存储库。 例如，选择`AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`存储库。
+* **Git分支**：选择您的分支。 例如，在本例中，我们的代码部署在`main`分支中。
+* **代码位置**：输入`config`目录的路径。 由于`api.yaml`位于根目录的`config`文件夹中，因此请输入`/config`
 
 e.单击&#x200B;**“保存”**&#x200B;以创建管道
 
@@ -461,9 +464,9 @@ e.单击&#x200B;**“保存”**&#x200B;以创建管道
 
 #### 6.3验证部署是否成功
 
-- 等待管道完成。
-   - 如果成功，状态将更改为“成功”（绿色复选标记✓）。
-   - 如果失败，则状态将更改为“失败”（红叉✗）。 单击&#x200B;**下载日志**&#x200B;以查看错误详细信息。
+* 等待管道完成。
+   * 如果成功，状态将更改为“成功”（绿色复选标记✓）。
+   * 如果失败，则状态将更改为“失败”（红叉✗）。 单击&#x200B;**下载日志**&#x200B;以查看错误详细信息。
 
      ![管道成功](/help/forms/assets/pipeline-suceess.png)
 
@@ -499,10 +502,10 @@ Swagger UI提供了一个用于测试API而不编写代码的交互式界面。�
    ![发送API](/help/forms/assets/api-send.png)
 
 6. 检查&#x200B;**响应**&#x200B;选项卡中的响应：
-   - 如果响应代码为`200`，则表示已成功创建PDF。
-   - 如果响应代码为`400`，则表示请求参数无效或格式不正确。
-   - 如果响应代码为`500`，则表示存在内部服务器错误。
-   - 如果响应代码为`403`，则表示存在授权错误。
+   * 如果响应代码为`200`，则表示已成功创建PDF。
+   * 如果响应代码为`400`，则表示请求参数无效或格式不正确。
+   * 如果响应代码为`500`，则表示存在内部服务器错误。
+   * 如果响应代码为`403`，则表示存在授权错误。
 
    在这种情况下，响应代码为`200`，这表示已成功生成PDF：
 
@@ -522,11 +525,11 @@ Swagger UI提供了一个用于测试API而不编写代码的交互式界面。�
 
 **先决条件**
 
-- 系统上安装的Node.js
-- 活动AEM as a Cloud Service实例
-- 来自Adobe Developer Console的API身份验证的持有者令牌
-- 示例XDP文件： [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
-- 示例XML文件： [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
+* 系统上安装的Node.js
+* 活动AEM as a Cloud Service实例
+* 来自Adobe Developer Console的API身份验证的持有者令牌
+* 示例XDP文件： [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
+* 示例XML文件： [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
 
 要开发Node.js应用程序，请按照分步开发操作：
 
@@ -720,57 +723,57 @@ node src/index.js
 
 **症状：**
 
-- API请求返回`403 Forbidden`
-- 错误消息： *未经授权的访问*
+* API请求返回`403 Forbidden`
+* 错误消息： *未经授权的访问*
 
 **可能的原因：**
 
-- 未在AEM实例的`api.yaml`配置中注册客户端ID
+* 未在AEM实例的`api.yaml`配置中注册客户端ID
 
 #### 问题2： 401未授权错误
 
 **症状：**
 
-- API请求返回`401 Unauthorized`
-- 错误消息： *令牌无效或过期*
+* API请求返回`401 Unauthorized`
+* 错误消息： *令牌无效或过期*
 
 **可能的原因：**
 
-- 访问令牌已过期（仅在24小时内有效）
-- 客户端ID和客户端密钥不正确或不匹配
+* 访问令牌已过期（仅在24小时内有效）
+* 客户端ID和客户端密钥不正确或不匹配
 
 #### 问题3:404 “未找到”错误
 
 **症状：**
 
-- API请求返回`404 Not Found`
-- 错误消息：*未找到资源*&#x200B;或找不到&#x200B;*API终结点*
+* API请求返回`404 Not Found`
+* 错误消息：*未找到资源*&#x200B;或找不到&#x200B;*API终结点*
 
 **可能的原因：**
 
-- 存储段参数不正确(不符合AEM实例标识符)
+* 存储段参数不正确(不符合AEM实例标识符)
 
 #### 问题4：管道部署失败
 
 **症状：**
 
-- 配置管道执行失败
-- 部署日志显示与`api.yaml`相关的错误
+* 配置管道执行失败
+* 部署日志显示与`api.yaml`相关的错误
 
 **可能的原因：**
 
-- YAML语法无效（缩进、引号或数组格式问题）
-- `api.yaml`放置在不正确的目录中
-- 配置中的客户端ID格式不正确或不正确
-- 客户端密码无效
+* YAML语法无效（缩进、引号或数组格式问题）
+* `api.yaml`放置在不正确的目录中
+* 配置中的客户端ID格式不正确或不正确
+* 客户端密码无效
 
 #### 问题5：Forms Communication API无法执行
 
 **症状：**
 
-- API请求返回错误，指示不支持的功能或不可用的功能。
-- 使用XDP和XML生成PDF不起作用。
-- 管道部署成功完成，但运行时API调用失败。
+* API请求返回错误，指示不支持的功能或不可用的功能。
+* 使用XDP和XML生成PDF不起作用。
+* 管道部署成功完成，但运行时API调用失败。
 
 **可能的原因：**
 
@@ -788,4 +791,4 @@ AEM环境运行的版本是在引入或支持Forms通信API之前发布的。
 
 ## 相关文章
 
-- 要了解如何为批处理（异步API）设置环境，请参阅[AEM Forms as a Cloud Service Communications批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
+* 要了解如何为批处理（异步API）设置环境，请参阅[AEM Forms as a Cloud Service Communications批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。

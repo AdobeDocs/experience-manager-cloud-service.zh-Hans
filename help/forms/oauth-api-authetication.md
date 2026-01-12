@@ -3,12 +3,9 @@ title: 如何设置OAuth服务器到服务器身份验证？
 description: 了解如何为Adobe Experience Manager Forms as a Cloud Service配置OAuth服务器到服务器身份验证
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '799'
 ht-degree: 3%
 
 ---
@@ -22,7 +19,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
 在开始之前，请确保满足以下先决条件：
 
-* 确保您具有[访问特定于您使用环境的Adobe Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/access-rights)的权限。
+* 确保您具有[访问特定于您使用环境的Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)的权限。
 * [在Adobe Admin Console中分配系统管理员或开发人员角色](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)以启用对Adobe Developer Console的访问。
 
 ## 如何使用OAuth服务器到服务器身份验证生成访问令牌？
@@ -75,7 +72,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
 >[!BEGINTABS]
 
->[!TAB 用于AEM Forms Communications API的] 
+>用于AEM Forms Communications API的[!TAB ]
 
 1. 单击&#x200B;**添加API**
 
@@ -92,7 +89,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
       ![选择身份验证方法](/help/forms/assets/adc-add-authentication-method.png)
 
->[!TAB 自适应Forms运行时API的] 
+>自适应Forms运行时API的[!TAB ]
 
 1. **单击添加API**
 
@@ -104,7 +101,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
       ![添加Forms通信API](/help/forms/assets/adc-add-runtime-api.png)
 
    3. 点击&#x200B;**下一个**
-   4. 选择&#x200B;**OAuth服务器到服务器**&#x200B;身份验证方法。
+   4. 选择&#x200B;**OAuth服务器到服务器**身份验证方法。
       ![选择身份验证方法](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
@@ -160,7 +157,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
 >[!BEGINTABS]
 
->[!TAB 用于测试的] 
+>用于测试的[!TAB ]
 
 在Adobe Developer Console中手动生成访问令牌：
 
@@ -178,9 +175,9 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
    >
    > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
 
->[!TAB 用于生产的]
+>用于生产[!TAB 的]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
 **必需的凭据：**
 
@@ -218,10 +215,6 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 >[!ENDTABS]
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
-
->
->
-> 要了解有关OAuth服务器到服务器实施以生成访问令牌和进行API调用的更多信息，请[单击此处](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)。
 
 ## 最佳实践：管理开发、暂存和生产凭据
 

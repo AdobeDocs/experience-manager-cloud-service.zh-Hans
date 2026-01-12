@@ -3,18 +3,15 @@ title: AEM Forms Communications API — 概述
 description: AEM Forms通信API概述，包括身份验证方法和完整的API参考
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
 
 
-# AEM Forms API — 概述
+# AEM Forms Communications API — 概述
 
 AEM Forms API提供了一整套云原生API，旨在帮助企业自动执行文档工作流。
 
@@ -22,7 +19,7 @@ AEM Forms API通过两个主控制台进行结构化和访问：
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console是Adobe API、事件、运行时和App Builder的网关。
 
-* [AEM Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供对环境级别的详细信息、配置、技术帐户和服务凭据的访问权限，以支持操作和集成任务。
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供对环境级别的详细信息、配置、技术帐户和服务凭据的访问权限，以支持操作和集成任务。
 
 不同的API支持不同的[身份验证方法](#authentication-methods)。
 
@@ -35,9 +32,10 @@ AEM Forms API通过两个主控制台进行结构化和访问：
 
 早期的API支持基于JWT的服务器到服务器身份验证，该身份验证通过AEM Developer Console进行配置和管理。 较新的API使用OAuth服务器到服务器身份验证，并通过Adobe Developer Console进行配置。
 
+<!--
 >[!NOTE]
 >
-> Adobe正在标准化所有API的身份验证方法，并正在逐步将API载入支持OAuth服务器到服务器身份验证方法的Adobe Developer Console。
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
 
 ## API分类概述
 
@@ -70,9 +68,9 @@ AEM Forms API通过两个主控制台进行结构化和访问：
 | [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | 使用配置启动批量输出生成运行。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | 检索批处理作业的执行状态。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 列出特定批处理配置的所有正在运行的实例。 | 异步/批处理 | [JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | 根据模板和数据同步生成PDF输出。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 生成可供打印的输出格式(例如，PCL、PostScript)。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | 为大容量打印生成AFP输出。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | 根据模板和数据同步生成PDF输出。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 生成可供打印的输出格式(例如，PCL、PostScript)。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | 为大容量打印生成AFP输出。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | 呈现具有合并数据的PDF表单(XFA/XDP)。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | 检索PDF表单生成作业的状态。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | 获取已完成的PDF表单作业的输出/结果。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
