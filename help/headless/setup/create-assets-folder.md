@@ -4,10 +4,10 @@ description: 使用 AEM 内容片段模型定义内容片段的结构，也就�
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 86%
+source-wordcount: '267'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 [现在您已创建了内容片段模型](create-content-model.md)，这些模型定义了希望用于未来内容片段的结构，也许您会希望创建一些片段。
 
-但是，您首先需要创建用于存储这些内容的资源文件夹。
+但是，您首先需要创建用于存储这些数据的资源文件夹。
 
 资源文件夹用于[组织传统内容资源](/help/assets/manage-digital-assets.md)，例如图像和视频以及内容片段。
 

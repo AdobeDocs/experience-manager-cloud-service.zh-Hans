@@ -4,9 +4,9 @@ description: 定义您将创建的内容的结构，并使用内容片段模型�
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 52%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 52%
 
 [现在您已经创建了配置](create-configuration.md)，您可以用它来创建内容片段模型。
 
-内容片段模型定义您将创建的数据和内容的结构，并在 AEM 中管理。它们在某种程度上用作内容的基架。选择创建内容时，作者将从您定义的内容片段模型中选择，这会引导他们创建内容。
+内容片段模型定义您在 AEM 中创建和管理的数据及内容的结构。它们在某种程度上用作内容的基架。选择创建内容时，作者将从您定义的内容片段模型中选择，这会引导他们创建内容。
 
 ## 如何创建内容片段模型 {#how-to-create-a-content-fragment-model}
 
