@@ -177,7 +177,8 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
    >[!NOTE]
    >
    > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
-   >用于生产[!TAB 的]
+
+>[!TAB 用于生产的]
 
 使用[Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
