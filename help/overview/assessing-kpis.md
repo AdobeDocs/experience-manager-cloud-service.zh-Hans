@@ -1,13 +1,13 @@
 ---
 title: 评估 KPI
-description: 了解如何评估 KPI 和定义报告流程
+description: 了解如何评估KPI和定义报告流程
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="评估 KPI"
 >abstract="在您启动 Adobe Experience Manager 之前，与项目有利益关系的每个人都应该知道您最重要的 KPI 是哪三个以及它们为什么重要。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hans" text="选准 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=zh-Hans" text="选择合适的团队"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="选准 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="选择合适的团队"
 
 在您启动 Adobe Experience Manager 之前，与项目有利益关系的每个人都应该知道您最重要的 KPI 是哪三个以及它们为什么重要。
 
