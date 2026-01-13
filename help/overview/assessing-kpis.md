@@ -17,8 +17,8 @@ ht-degree: 97%
 >id="aemcloud_assesskpis"
 >title="评估 KPI"
 >abstract="在您启动 Adobe Experience Manager 之前，与项目有利益关系的每个人都应该知道您最重要的 KPI 是哪三个以及它们为什么重要。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="选准 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="选择合适的团队"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hans" text="选准 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=zh-Hans" text="选择合适的团队"
 
 在您启动 Adobe Experience Manager 之前，与项目有利益关系的每个人都应该知道您最重要的 KPI 是哪三个以及它们为什么重要。
 
