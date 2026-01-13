@@ -3,7 +3,7 @@ title: 开发代理概述
 description: 了解AEM中的开发代理如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 目前，代理可以检索管道状态，并通过建议修复来帮助您排除失败的构建步骤，从而节省在开发、暂存和生产环境中调试AEM as a Cloud Service部署的时间。 它会检查构建日志和相关代码，以推荐您可以手动应用的修复。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478017?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -77,8 +77,6 @@ ht-degree: 1%
 
 开发代理的管道故障排除工作需要Cloud Manager — 开发人员角色或Cloud Manager — 项目经理角色。
 
-
-
 ## 示例提示 {#sample-prompts}
 
 | 提示 | 结果 |
@@ -93,4 +91,3 @@ ht-degree: 1%
 查看[访问和下载日志](/help/implementing/cloud-manager/manage-logs.md)。
 
 使用BYOGIT（自带Git）的程序不支持管道故障排除。
-
