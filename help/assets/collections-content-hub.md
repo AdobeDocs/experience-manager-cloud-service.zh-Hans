@@ -3,16 +3,16 @@ title: 在Content Hub中管理收藏集
 description: 了解如何在Content Hub中管理收藏集
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
+source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1295'
 ht-degree: 2%
 
 ---
 
+
 # 管理[!DNL Content Hub]中的收藏集 {#manage-collections}
 
-<!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![管理收藏集](assets/manage-collection.png)
 
 收藏集是指可在用户之间共享的一组资源。 收藏集可以包含来自不同位置的资产，同时保持其引用完整性。
@@ -196,8 +196,3 @@ Content Hub管理员可以在Content Hub中固定收藏集以进行快速访问�
    标记为收藏夹的收藏集现在显示在&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;选项卡下。 或者，您也可以从&#x200B;**[!UICONTROL 我的收藏夹]**&#x200B;中删除收藏集。 为此，请单击&#x200B;**[!UICONTROL 更多操作]** ![更多操作图标](assets/do-not-localize/more-actions.png)，然后选择&#x200B;**[!UICONTROL 从收藏夹中删除]**。
 
    ![删除收藏集作为收藏](assets/remove-favorite-collection.png)
-
->[!NOTE]
->
->[固定或取消固定收藏集](#pin-unpin-collection)和[将收藏集标记为收藏](#favorite-collection)是有限可用性功能。 您可以[创建并提交](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)一个Adobe客户支持案例，以便为您的部署启用它们。
-
