@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0 版�
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 95%
+source-wordcount: '1059'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 95%
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* Dynamic Media 图像智能裁切和色板功能现在由最新的 Sensei 服务提供支持，可生成改进的裁切和色板。还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑内容。
+* Dynamic Media图像智能裁切和色板功能现在由最新的Adobe AI服务提供支持，可生成改进的裁切和色板。 还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑内容。
 
 ### [!DNL Assets] 预发行渠道中的新功能 {#assets-prerelease-features}
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 的发布日期是 2021 �
   >[!IMPORTANT]
   >您必须使用AEM版本`2021.10.5933.20211012T154732Z`或更高版本才能使用新的前端管道。
 
-* 通过以更有效的方式执行代码分析而无需构建整个 AEM 映像，大大缩短了代码质量管道持续时间。此更改将在版本发布后的几周内逐步推出。
+* 通过以更有效的方式执行代码分析而无需生成整个 AEM 映像，大大缩短了代码质量管道持续时间。此更改将在版本发布后的几周内逐步推出。
 
 * Git Commit ID 现在将显示在管道执行详细信息中，以便更轻松地跟踪已生成的代码。
 
@@ -107,7 +107,7 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 的发布日期是 2021 �
 
 * 现在提供了带悬停弹出框的新管道页面，以便轻松查看详细信息摘要。可以查看管道执行及其相关详细信息。
 
-* Edit Pipeline API 现在支持更改部署阶段使用的环境。
+* 编辑管道 API 现在支持更改部署阶段使用的环境。
 
 * 已针对大型包在 OakPal 扫描过程中引入了优化。
 

@@ -5,7 +5,7 @@ exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # [!DNL Live Search] CIF组件 {#live-search-cif-component}
 
-Adobe Commerce Live Search可提供快速、相关和直观的搜索体验，而无需支付额外费用。 由Adobe Sensei提供支持的实时搜索使用人工智能和机器学习算法来对汇总的访客数据进行深入分析。 此数据与Adobe Commerce目录结合使用后，可提供相关且个性化的购物体验。
+Adobe Commerce Live Search可提供快速、相关和直观的搜索体验，而无需支付额外费用。 由Adobe AI提供支持的实时搜索功能使用人工智能和机器学习算法来对汇总的访客数据进行深入分析。 此数据与Adobe Commerce目录结合使用后，可提供相关且个性化的购物体验。
 
 本主题介绍如何使用AEM CIF组件将[!DNL Live Search]产品列表页面(PLP)构件实施到AEM站点中。
 

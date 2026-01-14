@@ -3,7 +3,7 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载一个或多个资源及其演绎版。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 1%
@@ -38,12 +38,12 @@ ht-degree: 1%
       > * Content Hub会将您的选择保存为首选项（**[!UICONTROL 为每个资源创建一个单独的文件夹]**），并保留它以供将来下载。
       > * **[!UICONTROL 为每个资产创建单独的文件夹]**&#x200B;选项仅适用于经过身份验证的[!DNL Content Hub]用户。 [!DNL Content Hub]允许公共用户将资源下载为单个资源。
 
-   1. 单击&#x200B;**[!UICONTROL 下载]**&#x200B;可下载所选资源及其演绎版。
+   1. 单击&#x200B;**[!UICONTROL 下载]**可下载所选资源及其演绎版。
       ![下载多个资源](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 在下载过程中，您可以继续使用[!DNL Content Hub]。 在下载过程中，Content Hub不会中断您的工作流。
 ![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载它们。
+如果**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**以下载它们。
 ![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
@@ -145,7 +145,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [动态演绎版](/help/assets/renditions.md#dynamic-renditions)：动态演绎版是资产的实时、自定义版本，可执行各种操作，例如根据不同的设备分辨率调整图像大小或裁剪以适合各种长宽比。 这些演绎版允许您提供个性化和优化的体验，以满足更广泛的需求。 已在[!DNL Adobe Experience Manager Assets]创作环境中创建资源的动态演绎版。 有关启用动态呈现所需的步骤的信息，请参阅[启用动态呈现](#enable-dynamic-media-renditions)。
 
-* [智能裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智能裁切在裁切过程中仅专注于资源的重要部分。 Dynamic Media智能裁剪利用由Adobe Sensei提供的人工智能来跟踪目标点，确保我们的资源在所有屏幕大小上都具有最佳外观。 [!DNL Adobe Experience Manager]智能裁剪显示资源演绎版的宽度和高度以及标题。 请参阅[在AEM Assets Dynamic Media中使用智能裁剪](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)以了解详情。
+* [智能裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智能裁切在裁切过程中仅专注于资源的重要部分。 Dynamic Media智能裁剪利用由Adobe AI提供的人工智能来跟踪目标点，确保我们的资源在所有屏幕大小上都具有最佳外观。 [!DNL Adobe Experience Manager]智能裁剪显示资源演绎版的宽度和高度以及标题。 请参阅[在AEM Assets Dynamic Media中使用智能裁剪](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)以了解详情。
 
   智能裁剪呈现版本会显示，并且仅在您有权访问具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)时才可供下载。 智能裁剪演绎版仅适用于图像资源。
 

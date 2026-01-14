@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4048'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Dynamic Media的一些关键原则包括：
 * **体验查看器库：**&#x200B;自定义图像和视频的体验查看器和品牌体验查看器。 这些查看器可无缝集成到您的数字体验中。
 * **新兴格式支持：** Dynamic Media允许交付3D和全景体验。
 
-在您探索[Dynamic Media历程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)时，查看下面的最佳实践综合列表可以帮助您充分利用其功能。 调整这些Dynamic Media最佳实践以满足您的特定上下文和项目要求，以使您可跨渠道和设备优化体验。
+在您探索[Dynamic Media历程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)时，查看下面的最佳实践综合列表可以帮助您充分利用其功能。 调整这些Dynamic Media最佳实践以满足您的特定上下文和项目要求，以使您可跨渠道和设备优化体验。
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -94,9 +94,9 @@ Dynamic Media查看器最佳实践是基本准则，旨在优化AEM上Dynamic Me
 页面上仅包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`Utils.js`上下文路径(称为合并的HTML include)直接链接到SDK5 SDK `/s7viewers`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
 * **嵌入准则：**
 使用文档嵌入特定于每个查看器的准则。
-想要了解更多信息？ 转到AEM Assets[的](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)查看器。
+想要了解更多信息？ 转到AEM Assets[的](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)查看器。
 * **SDK教程和示例：**
-查看[Viewer SDK教程](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
+查看[Viewer SDK教程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
 
 
 ## 准备资产以进行交付
@@ -111,7 +111,7 @@ Dynamic Media查看器最佳实践是基本准则，旨在优化AEM上Dynamic Me
 有效地组织资产包括将资产分类到文件夹中，类似于计算机上的文件组织。 正确的命名、结构化子文件夹以及这些文件夹中的文件管理对于高效的资产处理至关重要。 实施系统化的命名惯例和元数据惯例可最大限度地提高数字资产存储库的效用。
 想要了解更多信息？ 转到[整理文件夹](/help/assets/organize-assets.md#organize-using-folders)中的资源。
 * **使用标记组织资源：**
-为资产添加标记可增强搜索性、收藏集创建和搜索排名。 Adobe Sensei的人工智能采用自学习算法来进行精确标记，从而实现快速资源检索。 Adobe Sensei还可以识别相关标记（包括自定义标记）并将它们分配给资产，通过自动的描述性标记来简化资产管理。
+为资产添加标记可增强搜索性、收藏集创建和搜索排名。 Adobe AI使用自学习算法来进行精确标记，从而实现快速资源检索。 Adobe AI还可以识别和分配相关标记（包括自定义标记）到资产，通过自动描述性标记简化资产管理。
 想要了解更多信息？ 转到[使用标记](/help/assets/organize-assets.md#use-tags-to-organize-assets)整理资源。
 * **将资源组织为收藏集：**
 Dynamic Media与Experience Manager Assets相结合，可以高效地创建、编辑以及在用户之间共享资源集合。 您可以建立各种收藏集类型，包括静态列表和基于搜索的动态编译。 这些收藏集类型可通过可自定义的访问和编辑权限在多个位置共享。
@@ -150,9 +150,9 @@ Dynamic Media与Experience Manager Assets相结合，可以高效地创建、编
 
 **业务案例：** *确保我的图像或视频的主要兴趣点跨设备保持焦点。*
 
-智能裁剪是Dynamic Media中的一项功能，它使用Adobe Sensei、Adobe的AI和机器学习框架来自动裁剪图像和视频。 它智能地检测并关注图像或视频中的主要主题或兴趣点。 这种智能功能可确保焦点在台式计算机和移动设备上的各种屏幕尺寸中得以保持。
+智能裁剪是Dynamic Media中的一项功能，它使用Adobe AI、Adobe的AI和机器学习框架来自动裁剪图像和视频。 它智能地检测并关注图像或视频中的主要主题或兴趣点。 这种智能功能可确保焦点在台式计算机和移动设备上的各种屏幕尺寸中得以保持。
 
-最佳做法是使用智能裁剪创建图像配置文件。 在配置文件中，您可以定义各种屏幕大小并让Adobe Sensei完成其余步骤，以确保您的图像和视频始终针对查看者的设备而优化。
+最佳做法是使用智能裁剪创建图像配置文件。 在配置文件中，您可以定义各种屏幕大小并让Adobe AI执行其余操作，确保您的图像和视频始终针对查看者的设备而优化。
 
 想要了解更多信息？ 观看[在AEM Assets Dynamic Media中使用智能裁切](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6分钟35秒）和[在视频中使用Dynamic Media智能裁切](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)（6分钟22秒）。
 
@@ -200,7 +200,7 @@ Dynamic Media提供了一套用于增强图像和动态创建视觉效果的命�
 | --- | --- |
 | **上载并发布原始图像** | <ul><li> 首先，将原始图像上传到Dynamic Media。</li><li> 确保已发布并通过URL访问。</li><li> 在此示例中，具有白色背景的手表的库存图像（我们将其称为“图像X”）上传到Dynamic Media。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
 | **创建掩码** | <ul><li> 开发定义主题（要应用效果的区域）和背景（要更改的区域）的蒙版。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> 蒙版通常是灰度图像，其中白色代表主题，黑色代表背景。 您可以使用Adobe Photoshop等工具创建蒙版。<br>想了解更多信息？ 转到[在Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)中创建和编辑快速蒙版。</li><li> 对于“图像X”，请创建一个精确概述了要增强的主题的蒙版。 例如，人员、对象等。</li></ul> |
-| **应用Dynamic Media URL命令以获得效果** | 在蒙版上后，使用URL命令应用外辉等效果，或将背景颜色更改为“图像X”。 以下是两个示例：<ul><li> **外辉光效果：**<br>&#x200B;若要沿着主体的边界添加外辉光效果，请编辑以下URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>在此URL中，`op_blur`、`op_grow`和`opac`参数将创建外辉光效果。</li><li> **背景颜色更改：**<br>&#x200B;要更改背景颜色，请使用具有不同背景颜色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br>在此示例中，`color=255,255,0`将背景颜色设置为黄色。 将背景编辑为特定颜色以实现视觉效果。</li></ul> |
+| **应用Dynamic Media URL命令以获得效果** | 在蒙版上后，使用URL命令应用外辉等效果，或将背景颜色更改为“图像X”。 以下是两个示例：<ul><li> **外辉光效果：**<br>&#x200B;若要沿着主体的边界添加外辉光效果，请编辑以下URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>在此URL中，`op_blur`、`op_grow`和`opac`参数将创建外辉光效果。</li><li> **背景颜色更改：**<br>&#x200B;要更改背景颜色，请使用具有不同背景颜色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br>在此示例中，`color=255,255,0`将背景颜色设置为黄色。 将背景编辑为特定颜色以实现视觉效果。</li></ul> |
 
 #### 添加图像边框
 
@@ -208,9 +208,9 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 
 | 任务 | 要做什么 |
 | --- | --- |
-| **白色边框** | 要添加白边框，请使用以下URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>在此URL中，`extend=10,10,10,10`参数指定所有边框10像素的边框大小。 |
-| 沿白色边框&#x200B;**模糊** | 若要沿白色边框添加模糊效果，您可以按如下方式编辑URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>在此URL中，`effect=-1`参数应用模糊效果，而`op_blur=60`控制模糊强度。 |
-| **沿外部边界的投影效果** | 若要沿外部边界添加阴影效果，请使用此URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>参数`$shadow$`创建阴影效果，并且`color=0,0,0`将阴影颜色设置为黑色。 |
+| **白色边框** | 要添加白边框，请使用以下URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>在此URL中，`extend=10,10,10,10`参数指定所有边框10像素的边框大小。 |
+| 沿白色边框&#x200B;**模糊** | 若要沿白色边框添加模糊效果，您可以按如下方式编辑URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>在此URL中，`effect=-1`参数应用模糊效果，而`op_blur=60`控制模糊强度。 |
+| **沿外部边界的投影效果** | 若要沿外部边界添加阴影效果，请使用此URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>参数`$shadow$`创建阴影效果，并且`color=0,0,0`将阴影颜色设置为黑色。 |
 
 欢迎尝试使用这些URL来实现所需的视觉效果。
 
@@ -222,9 +222,9 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 | --- | --- |
 | **上载并发布基本映像** | 首先，上载并发布要在其上叠加徽标或图标的基本图像。 您可以使用任何图像作为基础。<br>例如，以下是基本映像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **上载并发布徽标或图标图像** | 接下来，上传并发布要叠加在基本图像上的图像。 此图像应是透明的PNG，其中应包含要叠加的徽标或图标。<br>下面是即将叠加的具有透明效果的星形对象的透明PNG图像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构类似于：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>资产所在的位置<ul><li> `hotspotRetailBaseImage`是基本映像。</li><li> `starxp`是徽标/图标图像。</li><li> `layer=1`指定徽标或图标应叠加在基本图像上。</li><li> `scale=1.25`调整徽标/图标的大小。</li><li> `posN=0.33,-.25`确定徽标/图标相对于基本图像的位置。</li><li> `fmt=png`确保输出为PNG格式。</li></ul> |
+| **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构类似于：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>资产所在的位置<ul><li> `hotspotRetailBaseImage`是基本映像。</li><li> `starxp`是徽标/图标图像。</li><li> `layer=1`指定徽标或图标应叠加在基本图像上。</li><li> `scale=1.25`调整徽标/图标的大小。</li><li> `posN=0.33,-.25`确定徽标/图标相对于基本图像的位置。</li><li> `fmt=png`确保输出为PNG格式。</li></ul> |
 
-了解更多信息？ 请转到[src](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)以了解有关`src`命令和其他Dynamic Media URL命令的更多详细信息。
+了解更多信息？ 请转到[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)以了解有关`src`命令和其他Dynamic Media URL命令的更多详细信息。
 
 
 #### 覆盖促销文本
@@ -234,7 +234,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 | 步骤 | 要做什么 |
 | --- | --- |
 | **上载并发布基本映像** | 首先，上载并发布要在其上叠加文本的基本图像。 您可以使用任何喜欢的图像。 例如，以下是示例基本图像：<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **应用Dynamic Media文本运算符** | 使用Dynamic Media，您可以应用文本运算符以将动态文本直接叠加到图像上。 以下示例URL演示了此功能：<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
+| **应用Dynamic Media文本运算符** | 使用Dynamic Media，您可以应用文本运算符以将动态文本直接叠加到图像上。 以下示例URL演示了此功能：<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
 
 #### 调整大小并裁切各种用例
 
@@ -264,19 +264,19 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
   [https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
 * **缩略图（200像素x 200像素）：**
 适合快速加载或显示的较小版本。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
 * **带有裁切的缩略图（200像素x 200像素）：**
 裁剪以专注于沙发区域。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
 * **产品显示图像（800像素x 600像素）：**
 为了展示沙发而裁切和调整大小。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
 * **横幅(1720 px x 820 px)：**
 从原始图像派生，强调房间。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 您可以随意探索这些变体，以满足您的特定需求。
-想要了解有关URL中可用命令的更多信息？ 转到[命令引用](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
+想要了解有关URL中可用命令的更多信息？ 转到[命令引用](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
 
 ### 投放GIF图像
 
@@ -320,7 +320,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
    * **嵌入视频：**
 复制提供的嵌入代码并将其粘贴到您希望显示视频的网页的HTML中。 这样，视频就可以直接在您的网站上播放。
 
-想要了解更多信息？ 转到[视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
+想要了解更多信息？ 转到[视频](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
 ### 配置视频以获得最佳质量和参与
 

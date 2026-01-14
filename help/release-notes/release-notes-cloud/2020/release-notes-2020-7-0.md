@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
-description: "[!DNL Adobe Experience Manager]个2020.7.0版as a Cloud Service发行说明。"
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0版发行说明。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 73%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service2020.7.0版发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0版发行说明 {#release-notes}
 
 以下部分概述了 Experience Manager as a Cloud Service 2020.7.0 的常规发行说明。
 
@@ -27,50 +27,50 @@ ht-degree: 73%
 
 * 新的用户界面实施取代了基于经典 UI 的实施。
 
-* 简化的用户界面对话框，将用于变量映射的框架创建和其他配置留给 [!DNL Adobe Launch]。请参阅[集成 Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=zh-Hans) 和[集成 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=zh-Hans)。
+* 简化的用户界面对话框，将用于变量映射的框架创建和其他配置留给 [!DNL Adobe Launch]。请参阅[集成 Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和[集成 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
 * 如今，配置是存储在 Experience Manager 存储库的 `/conf` 中，而不是 `/etc/cloudsettings` 中。
 
-## [!DNL Adobe Experience Manager Assets]个as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。管理员可以配置[!DNL Experience Manager]以调用使用[!DNL Asset Compute Service]创建的自定义应用程序。 开发人员可以使用此服务来创建专门的自定义应用程序，以满足复杂用例的需求。 此Web服务可以为各种文件类型生成缩略图、从Adobe文件格式生成高质量图像渲染、对视频进行编码（将来推出）、提取元数据、提取全文作为索引的前导，以及通过所有可用的[!DNL Sensei]服务运行资产。 请参阅[使用资产微服务和处理配置文件](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] 是一项用于处理资产的可缩放且可扩展的服务。管理员可以配置[!DNL Experience Manager]以调用使用[!DNL Asset Compute Service]创建的自定义应用程序。 开发人员可以使用此服务来创建专门的自定义应用程序，以满足复杂用例的需求。 此Web服务可以为不同文件类型生成缩略图、从Adobe文件格式生成高质量图像渲染、对视频进行编码（将来推出）、提取元数据、提取全文作为索引的前导，以及通过所有可用的[!DNL AI]服务运行资产。 请参阅[使用资产微服务和处理配置文件](/help/assets/asset-microservices-configure-and-use.md)。
 
 * 改进了 [!DNL Experience Manager] as a Cloud Service 中 [!DNL Dynamic Media] 的初始配置，使其更加稳健。如今，它可以向管理员提供进程进度。
 
 * 通过使用资产微服务并改进批量处理发布后端，可以让资产发布成为整体资产处理管道必不可少的组成部分，从而简化资产发布到 [!DNL Dynamic Media] 的过程并使其更加稳健。
 
-* 如今在[!UICONTROL 工作流程模型]编辑器中，与云服务部署不兼容的工作流程步骤将会带有警告标记。此外，在Cloud Service环境中执行现有工作流时，将跳过不兼容的工作流步骤。
+* 如今在[!UICONTROL 工作流程模型]编辑器中，与云服务部署不兼容的工作流程步骤将会带有警告标记。此外，在Cloud Service环境中执行现有工作流时，将会跳过不兼容的工作流步骤。
 
-* 在与[!DNL Cloud Manager]中的环境关联的Git项目中，由部署到`/conf/global`的客户创建的工作流模型会自动部署到`/var`，因此在[!DNL Experience Manager]中可用。 客户更改的 `/libs` 下的产品工作流程模型不会自动部署到 `/var`。
+* 在与`/conf/global`中的环境关联的Git项目中，由部署到[!DNL Cloud Manager]的客户创建的工作流模型会自动部署到`/var`，因此在[!DNL Experience Manager]中可用。 客户更改的 `/libs` 下的产品工作流程模型不会自动部署到 `/var`。
 
 ### 修复的错误 {#assets-bugs-fixed}
 
-* “移动资产”向导未按预期为“收藏集”中包含的资产加载。 (CQ-4296756)
-* 从XMP写回中排除了`dam:size`和`dam:sha1`的值。 (CQ-4237355)
-* 批量取消发布资产时，[!DNL Brand Portal]生成一个错误，表明请求URI太长。 (CQ-4299474)
+* “移动资产”向导未按预期为“收藏集”中包含的资产加载。 （CQ-4296756）
+* 从XMP写回中排除了`dam:size`和`dam:sha1`的值。 （CQ-4237355）
+* 批量取消发布资产时，[!DNL Brand Portal]生成一个错误，表明请求URI太长。 （CQ-4299474）
 
-## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-AEM Commerce现已在Cloud Service上可用。
+AEM Commerce现在可在Cloud Service上使用。
 
-有关更多详细信息，请参阅[AEM Commerceas a Cloud Service入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=zh-Hans)。
+有关更多详细信息，请参阅[AEM Commerce as a Cloud Service快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)。
 
 ## 核心组件 {#core-components}
 
 ### 新增功能 {#what-is-new-core-components}
 
-[AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)版本 2.11.0 现已作为 AEM Sites 的一部分提供，其中包括：
+[AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)版本 2.11.0 现已作为 AEM Sites 的一部分提供，其中包括：
 
 * 推出了新的 [PDF 查看器组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)。
 
 * 核心组件的加速移动页面 (AMP) 支持功能现已可用。通过输入来自 Google 移动设备搜索结果的站点，可实现页面即时转换，这有助于提高用户参与度和 SEO，从而实现更快速的客户体验。
-有关更多详细信息，请参阅核心组件的[AMP支持](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=zh-Hans)。
+有关更多详细信息，请参阅核心组件的[AMP支持](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)。
 
-* 与 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=zh-Hans)版本 1.0.2 的兼容性。
+* 与 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)版本 1.0.2 的兼容性。
 
 * 错误修复和代码质量改进。
 
@@ -139,9 +139,9 @@ AEM Commerce现已在Cloud Service上可用。
 
 * 无法在 Adobe Experience Manager (AEM) 6.1 上运行早期版本的云就绪分析器 (CRA)。明确向管理员组中的用户增加了允许他们运行 CRA 的相关支持。
 
-  有关更多详细信息，请参阅[在AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=zh-Hans#installing-on-aem61)上安装CRA 。
+  有关更多详细信息，请参阅[在AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)上安装CRA 。
 
-* 摘要报告上显示的到期时间戳不正确。
+* 摘要报告上显示的过期时间戳不正确。
 
 * CRA 检测到重复的自定义组件。
 

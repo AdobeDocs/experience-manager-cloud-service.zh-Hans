@@ -1,18 +1,18 @@
 ---
-title: Dynamic Media视频配置文件
+title: Dynamic Media 视频轮廓
 description: Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成配置文件中的设置已经过优化，可为客户提供最佳观看体验。 您还可以在视频中添加智能裁剪。
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3694'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
-# Dynamic Media视频配置文件{#video-profiles}
+# Dynamic Media 视频轮廓{#video-profiles}
 
 Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成配置文件中的设置已经过优化，可为客户提供最佳观看体验。 当您使用自适应视频编码配置文件对主要源视频进行编码时，在播放期间，视频播放器会根据客户的Internet连接速度自动调整视频流的质量。 此操作称为自适应比特率流。
 
@@ -94,7 +94,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成
 
 ## 关于在视频配置文件中使用智能裁剪 {#about-smart-crop-video}
 
-视频智能裁剪是视频配置文件中一项可用的可选功能。 它是一种使用Adobe Sensei自动检测和裁切您上传的任何自适应视频或渐进视频中的焦点的工具，而不管其大小。
+视频智能裁剪是视频配置文件中一项可用的可选功能。 它是一种使用Adobe AI自动检测和裁切您上传的任何自适应视频或渐进视频中的焦点的工具，而不管其大小。
 
 智能裁剪支持的视频格式包括MP4、MKV、MOV、AVI、FLV和WMV。
 
@@ -104,7 +104,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成
 * 每秒30帧(FPS)。
 * 文件大小为300 MB。
 
-Adobe Sensei限制为9000帧。 即，30 FPS时为5分钟。 如果视频的FPS较高，则支持的最大视频持续时间会缩短。 例如，60 FPS视频的长度必须为2分半钟，Adobe Sensei和智能裁剪才能支持。
+Adobe AI限制为9000帧。 即，30 FPS时为5分钟。 如果视频的FPS较高，则支持的最大视频持续时间会缩短。 例如，60 FPS视频的长度必须为2分半钟，才能获得Adobe AI和智能裁剪的支持。
 
 ![视频的智能裁剪](assets/smart-crop-video.png)
 
@@ -157,7 +157,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 输入配置文件的名称和说明。
 1. 在“创建/编辑视频编码预设”页面上，选择&#x200B;**[!UICONTROL 添加视频编码预设]**。
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡上，设置视频和音频选项。
+1. 在&#x200B;**[!UICONTROL 基本]**选项卡上，设置视频和音频选项。
 选择每个选项旁边的信息图标，以了解更多说明或基于所选视频格式编解码器的推荐设置。
 1. 在“视频大小”标题下，确保选中&#x200B;**[!UICONTROL 保持宽高比]**。
 1. 设置视频帧大小分辨率（以像素为单位）。 使用&#x200B;**[!UICONTROL Auto]**&#x200B;值自动缩放以匹配源宽高比（宽高比）。 例如，Auto x 480或640 x Auto。
@@ -206,18 +206,18 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 输入配置文件的名称和说明。
 1. 在“创建/编辑视频编码预设”页面上，选择&#x200B;**[!UICONTROL 添加视频编码预设]**。
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡上，设置视频和音频选项。
+1. 在&#x200B;**[!UICONTROL 基本]**选项卡上，设置视频和音频选项。
 选择每个选项旁边的信息图标，以了解更多说明或基于所选视频格式编解码器的推荐设置。
 1. （可选）在“视频大小”标题下，取消选中&#x200B;**[!UICONTROL 保持宽高比]**。
 1. 执行以下操作：
    * 在&#x200B;**[!UICONTROL 宽度]**&#x200B;字段中，输入&#x200B;**[!UICONTROL 自动]**。
-   * 在&#x200B;**[!UICONTROL 高度]**&#x200B;字段中，输入像素值。
-为了帮助您可视化视频大小，请选择“高度”的信息图标以打开&#x200B;**[!UICONTROL 大小计算器]**&#x200B;页面。 使用&#x200B;**[!UICONTROL 大小计算器]**&#x200B;页面可进一步按需设置视频大小（蓝框）。 完成后，在对话框的右上角，选择&#x200B;**[!UICONTROL X]**。
+   * 在&#x200B;**[!UICONTROL 高度]**字段中，输入像素值。
+为了帮助您可视化视频大小，请选择“高度”的信息图标以打开**[!UICONTROL 大小计算器]**&#x200B;页面。 使用&#x200B;**[!UICONTROL 大小计算器]**&#x200B;页面可进一步按需设置视频大小（蓝框）。 完成后，在对话框的右上角，选择&#x200B;**[!UICONTROL X]**。
 1. （可选）执行以下操作之一：
 
    * 选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡，并确保选中&#x200B;**[!UICONTROL 使用默认值]**&#x200B;复选框（推荐）。
 
-   * 清除&#x200B;**[!UICONTROL 使用默认值]**&#x200B;复选框，并指定所需的视频设置和音频设置。
+   * 清除&#x200B;**[!UICONTROL 使用默认值]**复选框，并指定所需的视频设置和音频设置。
 选择每个选项旁边的信息图标，以了解更多说明或基于所选视频格式编解码器的推荐设置。
 
 1. 在页面的右上角，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存预设。
@@ -262,7 +262,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
    <td><strong>名称</strong></td>
    <td><strong>描述</strong><br /> </td>
    <td><strong>类型</strong><br /> </td>
-   <td><strong>价值</strong></td>
+   <td><strong>值</strong></td>
   </tr>
   <tr>
    <td><code>h264Level</code></td>
@@ -323,7 +323,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 1. 在“视频配置文件”页面上，选择一个视频配置文件名称。
 1. 在工具栏上，选择&#x200B;**[!UICONTROL 编辑]**。
 1. 在视频编码配置文件页面上，根据需要编辑名称和描述。
-1. 作为最佳实践，请确保选中&#x200B;**[!UICONTROL 自适应流播放的编码]**&#x200B;复选框。
+1. 作为最佳实践，请确保选中&#x200B;**[!UICONTROL 自适应流播放的编码]**复选框。
 选择信息图标以获取自适应比特率流的描述。 （如果您正在编辑渐进式视频配置文件，请勿选中此复选框。）
 1. 在“视频编码预设”标题下，添加、编辑或删除构成配置文件的视频编码预设。
 
@@ -379,7 +379,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 
 1. 选择Experience Manager徽标并导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
 1. 选择要应用于一个或多个文件夹的视频配置文件。
-1. 选择&#x200B;**[!UICONTROL 将配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资源的文件夹，然后选择&#x200B;**[!UICONTROL 应用]**。 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，如果文件夹已经分配了配置文件，则文件夹名称的正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 将配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资源的文件夹，然后选择&#x200B;**[!UICONTROL 应用]**。 在&#x200B;**[!UICONTROL 卡片视图]**中，如果文件夹已经分配了配置文件，则文件夹名称的正下方会显示配置文件的名称。
 您可以[监视视频配置文件处理作业](#monitoring-the-progress-of-an-encoding-job)的进度。
 
 #### 将视频配置文件从“属性”应用到文件夹 {#applying-video-profiles-to-folders-from-properties}
@@ -408,7 +408,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 
 将显示处理指示器（或进度条），以便您可以直观地监视视频配置文件处理作业的进度。
 
-您还可以查看`error.log`文件以监视编码作业的进度，查看编码是否已完成，或查看任何作业错误。 在安装Experience Manager实例的`logs`文件夹中找到`error.log`。
+您还可以查看`error.log`文件以监视编码作业的进度，查看编码是否已完成，或查看任何作业错误。 在安装Experience Manager实例的`error.log`文件夹中找到`logs`。
 
 ## 从文件夹中删除视频配置文件 {#removing-a-video-profile-from-folders}
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 Microsoft®Office和PDF文档的所有数字资源、元数据和内容都将进行提取并使之可搜索。 搜索允许对资产进行复杂的筛选，并完全尊重适当的权限。 数字资产管理中的元数据详细介绍了元数据。
@@ -79,9 +79,9 @@ Date24/08/2021
 
 ## 使用标记组织资源 {#use-tags-to-organize-assets}
 
-向资源添加标记可使其在搜索期间更易于检索、使用搜索结果创建收藏集、提升某些资源的搜索排名，以及将Adobe Sensei的AI算法应用于资源发现。
+向资源添加标记可使其在搜索期间更易于检索、使用搜索结果创建收藏集、提升某些资源的搜索排名，以及将Adobe AI的AI算法应用于资源发现。
 
-[!DNL Adobe Experience Manager Assets]使用自学习算法创建具有高度描述性的标记，这些标记允许您通过单击几下即可找到正确的资产。 智能标记使用Adobe Sensei、人工智能和机器学习框架，可以通过培训来识别标准标记和业务特定标记，并将其应用于图像。 智能标记还可以识别内容、单个单词或短语，并自动将描述性标记应用于资产。
+[!DNL Adobe Experience Manager Assets]使用自学习算法创建具有高度描述性的标记，这些标记允许您通过单击几下即可找到正确的资产。 智能标记使用Adobe AI、人工智能和机器学习框架，可以通过培训来识别标准标记和业务特定标记，并将其应用于图像。 智能标记还可以识别内容、单个单词或短语，并自动将描述性标记应用于资产。
 
 以下是将标记添加到资源的步骤：
 

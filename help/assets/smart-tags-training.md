@@ -1,19 +1,19 @@
 ---
-title: 使用 [!DNL Adobe Sensei] 智能服务自动标记资产
-description: 使用可应用上下文和描述性业务标记的人工智能服务标记资产。
+title: 使用 [!DNL Adobe AI] 智能服务自动标记资产
+description: 使用人工智能服务为资产添加上下文相关且具描述性的业务标记。
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 
 # 智能标记训练
 
-智能标记培训允许您培训标记，这样您可以在相关标记不存在时指定具体信息。 它使用[Adobe Sensei](https://business.adobe.com/cn/why-adobe/experience-cloud-artificial-intelligence.html)的人工智能框架，根据您的标记结构和业务分类训练其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于上传的资源。
+智能标记培训允许您培训标记，这样您可以在相关标记不存在时指定具体信息。 它使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)的人工智能框架，根据您的标记结构和业务分类培训其图像识别算法。 随后，该内容智能可用于为另一组资产自动应用相关标记。默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于上传的资源。
 
 ## 确定智能标记训练的要求 {#smart-tag-training-requirement}
 
@@ -118,7 +118,7 @@ ht-degree: 5%
 >[!NOTE]
 >
 >您可以使用相同的图像来训练不同的标记模型。 但是，请勿将图像与标签模型中的多个标签相关联。 可以使用属于不同标记模型的不同标记来标记同一图像。
->&#x200B;>您无法撤消训练。 以上准则应该可以帮助您选择要训练的良好图像。
+>您无法撤消训练。 以上准则应该可以帮助您选择要训练的良好图像。
 
 ## 为自定义标记培训模型 {#train-model}
 
@@ -161,15 +161,15 @@ ht-degree: 5%
 >[!NOTE]
 >
 >如果我要通过导出将智能标记培训从一个实例传输到另一个实例，该怎么办？
->&#x200B;>如果环境属于同一IMS组织，则无需导出智能标记训练。 它会自动共享。 如果环境跨IMS组织，则无法共享或导出智能标记训练。
+>如果环境属于同一IMS组织，则无需导出智能标记训练。 它会自动共享。 如果环境跨IMS组织，则无法共享或导出智能标记训练。
 
 ## 与智能标记相关的限制和最佳实践 {#limitations-smart-tags-training}
 
 * 要训练模型，请使用最合适的图像。 无法恢复训练或无法删除训练模型。 您的标记准确性取决于当前的训练，因此请仔细操作。
-* 您无法使用任何特定视频培训将智能标记应用于视频的服务。 它可与默认[!DNL Adobe Sensei]设置配合使用。
+* 您无法使用任何特定视频培训将智能标记应用于视频的服务。 它可与默认[!DNL Adobe AI]设置配合使用。
 
 
 >[!NOTE]
 >
 >智能标记培训您的标记并将它们应用于其他图像的能力取决于您用于培训的图像质量。
->&#x200B;>为获得最佳结果，Adobe建议您使用视觉上相似的图像，为每个标签培训服务。
+>为获得最佳结果，Adobe建议您使用视觉上相似的图像，为每个标签培训服务。

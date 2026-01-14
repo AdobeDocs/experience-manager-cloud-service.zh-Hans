@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版�
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 67%
+source-wordcount: '799'
+ht-degree: 64%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明 {#release-notes}
 
-以下部分概述了[!DNL Experience Manager]as a Cloud Service2022.5.0版本的功能发行说明。
+以下部分概述了[!DNL Experience Manager] as a Cloud Service 2022.5.0版本的功能发行说明。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -47,11 +47,11 @@ ht-degree: 67%
 
 * [Dynamic Media 智能图像](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f)现在支持 AVIF 文件格式 – 进一步改进 Google Core Web Vital（最大内容绘制），与 WebP 相比，AVIF 提供了 20% 的额外尺寸缩减。 与 JPEG 相比，AVIF 的平均大小缩减率高达 41%（在某些图像中甚至高达 76%）。
 
-* [!UICONTROL Experience Manager Assets Brand Portal]现在每12小时执行一次自动作业，以删除发布到AEM的所有Brand Portal资源。 因此，您无需手动删除“贡献”文件夹中的资产，即可将文件夹大小保持在阈值限制以下。 请参阅 [Experience Manager Assets·Brand Portal 的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hans)。
+* [!UICONTROL Experience Manager Assets Brand Portal]现在每12小时执行一次自动作业，以删除发布到AEM的所有Brand Portal资源。 因此，您无需手动删除“贡献”文件夹中的资产，即可将文件夹大小保持在阈值限制以下。 请参阅 [Experience Manager Assets·Brand Portal 的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
 ### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
 
-Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
+Experience Manager Assets现在使用Adobe AI功能[区分图像中的颜色，并在摄取时自动将其作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -72,7 +72,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 <!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* 支持其他营销商务组件：组件可以配置为显示添加到购物车和添加到愿望清单的行动号召
+* 支持其他营销商务组件：组件可以配置为显示添加到购物车和添加到允许列表的call-to-action
 
   ![站点编辑器到产品驾驶舱的快捷键](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
@@ -93,7 +93,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 ### 弃用 TLS 1.0、1.1
 
-从2022年6月30日开始，as a Cloud ServiceExperience Manager将需要与用户系统进行更安全的网络通信和数据交换。 AEM 将专门使用传输层安全性 (TLS) 1.2 协议。 现已弃用旧版TLS 1.0和1.1。
+从2022年6月30日开始，Experience Manager as a Cloud Service将需要与用户系统进行更安全的网络通信和数据交换。 AEM 将专门使用传输层安全性 (TLS) 1.2 协议。 现已弃用旧版TLS 1.0和1.1。
 
 如果您继续将旧版 TLS 用作 1.0、1.1，则可能会失去对 Experience Manager as a Cloud Service 的访问权限。
 

@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 发行说明
-description: "[!DNL Adobe Experience Manager]个2020.6.0版as a Cloud Service发行说明。"
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0版发行说明。'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1938'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 ### 新增功能 {#whats-new-2020.6.0}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)版本 2.9.0 现已作为 AEM Sites 的一部分提供，包括：
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)版本 2.9.0 现已作为 AEM Sites 的一部分提供，包括：
 
 * [Adobe 客户端数据层](https://github.com/adobe/adobe-client-data-layer)与核心组件的集成
 * 适用于所有组件的可配置 HTML ID 属性
@@ -62,11 +62,11 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于Mave
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;角色的用户现在可以从登陆页面（通过项目卡上的快速操作按钮）或项目中删除沙盒程序。
 
-  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=zh-Hans)。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒程序用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从&#x200B;**项目概述**&#x200B;页面和&#x200B;**环境**&#x200B;页面上的环境卡中使用。在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
 
-  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=zh-Hans)。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 在登陆页面上显示引导标记，以告知和指示用户如何进行基本导航。
 
@@ -78,11 +78,11 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于Mave
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可访问 Admin Console 中的相应位置，以管理用户角色或 Cloud Manager 权限。现在，登陆页面上的&#x200B;**添加项目**&#x200B;按钮旁边提供了&#x200B;**管理访问权限**&#x200B;按钮。
 
-  有关更多详细信息，请参阅 [SysAdmin 任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hans#sysadmin-tasks)。
+  有关更多详细信息，请参阅 [SysAdmin 任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)。
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可直接从 Cloud Manager 中访问创作实例。
 
-  有关更多详细信息，请参阅[管理对创作实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=zh-Hans#manage-access-aem)。
+  有关更多详细信息，请参阅[管理对创作实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)。
 
 * “生成”日志现在包含已发现项目的列表，包括跳过的内容包。
 
@@ -106,7 +106,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于Mave
 
 ## [!DNL Adobe Experience Manager Assets]的新增功能 {#aem-assets}
 
-**增强型智能标记的引导式用户体验，由 Adobe Sensei 提供支持**
+**增强型智能标记的引导式用户体验，由Adobe AI提供支持**
 
 除通用智能标记以外，增强型智能标记还允许组织培训智能标记模型，以根据客户特定的业务标记识别图像。
 
@@ -142,7 +142,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于Mave
 
 * 在 Assets 用户界面上，无法通过键盘访问视图设置。(CQ-4289038)
 
-* 黄色评级图标的光度比小于 3:1。它对视力有限和不能感知颜色的用户没有用处。星级评级显示在资产的选项卡或卡片视图中
+* 黄色评级图标的光度比小于3:1。 它对视力有限和不能感知颜色的用户没有用处。星级评级显示在资产的选项卡或卡片视图中
 
 * 某些用户界面元素的颜色和对比度已更新，以便视力有限和不能感知颜色的用户能够区分这些用户界面元素。例如，资产[!UICONTROL 属性]的[!UICONTROL 高级]选项卡[!UICONTROL 评级]部分和卡片视图中的星级图标颜色会根据相应的对比度进行更改。(CQ-4295106)
 

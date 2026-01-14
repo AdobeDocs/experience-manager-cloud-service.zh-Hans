@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 67f9ec20667639458d8a6b142df3fc76ff574f26
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2236'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 80%
 
 ![查看资产的元数据](assets/metadata-view.png)
 
-*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 标题、描述和上传日期等基本元数据在[!UICONTROL 基本]选项卡中提供。[!UICONTROL 高级]选项卡包含更多高级元数据，例如相机型号、镜头详细信息和地理位置标记。[!UICONTROL 标记]选项卡包含根据图像的内容自动应用的标记。
 
@@ -43,19 +43,19 @@ ht-degree: 80%
 
 ## 智能标记 {#smart-tags}
 
-[!DNL Experience Manager Assets] 使用 [Adobe Sensei](https://www.adobe.com/cn/sensei.html) 提供的人工智能，自动将相关标记应用到您上传的所有资产。正如其名，这些标记被称为“智能标记”，可以帮助您快速找到相关资产，从而提升内容速度。智能标记是未包含在图像中的元数据示例。
+[!DNL Experience Manager Assets]使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)提供的人工智能，自动将相关标记应用于您上传的所有资源。 正如其名，这些标记被称为“智能标记”，可以帮助您快速找到相关资产，从而提升内容速度。智能标记是未包含在图像中的元数据示例。
 
 智能标记根据图像的内容生成，近乎实时地应用。上传资产时，用户界面会在资产缩略图上显示[!UICONTROL 处理中]并保持片刻。处理完成后，您可以[查看元数据](#view-metadata)和智能标记。
 
 ![查看资产的智能标记](assets/metadata-view-tags.png)
 
-*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**&#x200B;或者双击该资产。*
+*图：要查看资产的智能标记，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资产。*
 
 智能标记还包含以百分比显示的置信度分数。它指示与所应用标记对应的置信度。您可以审核自动应用的智能标记。
 
 ## 添加或更新关键字 {#manually-tag}
 
-在使用 [!DNL Adobe Sensei] 智能服务添加的智能标记之外，您还可以为资产添加多个标记。打开资产以预览，单击[!UICONTROL 标记]，然后在[!UICONTROL 关键词]字段中键入所需的关键词。要添加标记，请按 Return。[!DNL Assets view] 近乎实时地对关键词编制索引，您的团队很快就可以使用新关键词来搜索更新的资产。
+在使用 [!DNL Adobe AI] 智能服务添加的智能标记之外，您还可以为资产添加多个标记。打开资产以预览，单击[!UICONTROL 标记]，然后在[!UICONTROL 关键词]字段中键入所需的关键词。要添加标记，请按 Return。[!DNL Assets view] 近乎实时地对关键词编制索引，您的团队很快就可以使用新关键词来搜索更新的资产。
 
 您也可以在[!UICONTROL 智能标记]部分中，删除由 [!DNL Assets view] 自动添加到所有上传资产的标记。
 
@@ -230,13 +230,13 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

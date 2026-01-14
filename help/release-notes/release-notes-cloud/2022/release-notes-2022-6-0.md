@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版�
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 79%
+source-wordcount: '632'
+ht-degree: 75%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明 {#release-notes}
 
-以下部分概述了[!DNL Experience Manager]as a Cloud Service2022.6.0版本的功能发行说明。
+以下部分概述了[!DNL Experience Manager] as a Cloud Service 2022.6.0版本的功能发行说明。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
@@ -43,13 +43,13 @@ ht-degree: 79%
 
   ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 
-* 新[目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=zh-Hans)不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动呈现目录。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
+* 新[目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动呈现目录。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
+Experience Manager Assets现在使用Adobe AI功能[区分图像中的颜色，并在摄取时自动将其作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

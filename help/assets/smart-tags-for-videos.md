@@ -1,10 +1,10 @@
 ---
 title: 为视频资产添加智能标记
-description: Experience Manager使用 [!DNL Adobe Sensei]自动将上下文和描述性智能标记添加到视频。
+description: Experience Manager使用 [!DNL Adobe AI]自动将上下文和描述性智能标记添加到视频。
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # 为视频资产添加智能标记 {#video-smart-tags}
 
-由于对新内容的需求不断增加，需要减少手动工作，以便及时提供引人入胜的数字体验。 [!DNL Adobe Experience Manager]作为[!DNL Cloud Service]支持使用人工智能自动标记视频资产。 手动标记视频可能非常耗时。 但是，[!DNL Adobe Sensei]支持的视频智能标记功能使用人工智能模型来分析视频内容并将标记添加到视频资产。 从而减少DAM用户为其客户提供丰富体验的时间。 Adobe的机器学习服务为视频生成两组标记。 而其中一组对应于该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等操作相关。
+由于对新内容的需求不断增加，需要减少手动工作，以便及时提供引人入胜的数字体验。 [!DNL Adobe Experience Manager]作为[!DNL Cloud Service]支持使用人工智能自动标记视频资产。 手动标记视频可能非常耗时。 但是，[!DNL Adobe AI]支持的视频智能标记功能使用人工智能模型来分析视频内容并将标记添加到视频资产。 从而减少DAM用户为其客户提供丰富体验的时间。 Adobe的机器学习服务为视频生成两组标记。 而其中一组对应于该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等操作相关。
 
-视频标记在[!DNL Adobe Experience Manager]中默认作为[!DNL Cloud Service]启用。 但是，您可以在文件夹上[选择退出视频智能标记](#opt-out-video-smart-tagging)。 当您上传新视频或重新处理现有视频时，会自动标记视频。 [!DNL Experience Manager]还会创建缩略图并提取视频文件的元数据。 智能标记在资产[!UICONTROL 属性]中按其[置信度分数](#confidence-score-video-tag)的降序显示。
+视频标记在[!DNL Adobe Experience Manager]中默认作为[!DNL Cloud Service]启用。 但是，您可以在文件夹上[选择退出视频智能标记](#opt-out-video-smart-tagging)。 当您上传新视频或重新处理现有视频时，会自动标记视频。 [!DNL Experience Manager]还会创建缩略图并提取视频文件的元数据。 智能标记在资产[属性](#confidence-score-video-tag)中按其[!UICONTROL 置信度分数]的降序显示。
 
 ## 上传时智能标记视频 {#smart-tag-assets-on-ingestion}
 
-当您[将视频资产](add-assets.md#upload-assets)作为[!DNL Cloud Service]上传到[!DNL Adobe Experience Manager]时，将处理视频。 处理完成后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的视频中。 资产微服务利用[!DNL Adobe Sensei]创建这些智能标记。
+当您[将视频资产](add-assets.md#upload-assets)作为[!DNL Adobe Experience Manager]上传到[!DNL Cloud Service]时，将处理视频。 处理完成后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的视频中。 资产微服务利用[!DNL Adobe AI]创建这些智能标记。
 
 ![智能标记已添加到视频中，并在资产属性的“基本”选项卡中显示](assets/smart-tags-added-to-videos.png)
 
-应用的智能标记在[!UICONTROL 智能标记]中按[置信度分数](#confidence-score-video-tag)的降序排序，对象和操作标记组合在一起。
+应用的智能标记在[智能标记](#confidence-score-video-tag)中按[!UICONTROL 置信度分数]的降序排序，对象和操作标记组合在一起。
 
 >[!IMPORTANT]
 >
@@ -101,7 +101,7 @@ DAM中已存在的视频资产不会自动进行智能标记。 您需要手动[
 
 >[!IMPORTANT]
 >
->如果您在上传时选择不为文件夹中的视频添加标签，并且希望在上传后为视频添加智能标签，则请在文件夹[!UICONTROL 属性]的[!UICONTROL 资产处理]选项卡中&#x200B;**[!UICONTROL 为视频启用智能标签]**，并使用[[!UICONTROL 重新处理资产]选项](#smart-tag-existing-videos)为视频添加智能标签。
+>如果您在上传时选择不为文件夹中的视频添加标签，并且希望在上传后为视频添加智能标签，则请在文件夹&#x200B;**[!UICONTROL 属性]**&#x200B;的[!UICONTROL 资产处理]选项卡中[!UICONTROL 为视频启用智能标签]，并使用[[!UICONTROL 重新处理资产]选项](#smart-tag-existing-videos)为视频添加智能标签。
 
 ## 置信度分数 {#confidence-score-video-tag}
 
@@ -109,9 +109,9 @@ DAM中已存在的视频资产不会自动进行智能标记。 您需要手动[
 
 [!DNL Adobe Experience Manager]中操作和对象标记的默认阈值为0.7（该值应介于0和1之间）。 如果某些视频资源未被特定标记标记，则表明算法对于预测标记的信赖度低于70%。 默认阈值可能并不总是适用于所有用户。 因此，您可以更改OSGI配置中的置信度分数值。
 
-要将置信度分数OSGI配置添加到作为[!DNL Cloud Service]通过[!DNL Cloud Manager]部署到[!DNL Adobe Experience Manager]的项目，请执行以下操作：
+要将置信度分数OSGI配置添加到作为[!DNL Adobe Experience Manager]通过[!DNL Cloud Service]部署到[!DNL Cloud Manager]的项目，请执行以下操作：
 
-* 在[!DNL Adobe Experience Manager]项目（`ui.config`自Archetype 24或以前的`ui.apps`）中，`config.author` OSGi配置包含名为`com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json`的配置文件，该文件包含以下内容：
+* 在[!DNL Adobe Experience Manager]项目（`ui.config`自Archetype 24或以前的`ui.apps`）中，`config.author` OSGi配置包含名为`com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json`的配置文件，该文件包含以下内容：
 
 ```json
 {
@@ -126,11 +126,11 @@ DAM中已存在的视频资产不会自动进行智能标记。 您需要手动[
 
 ## 限制 {#video-smart-tagging-limitations}
 
-* 您无法使用任何特定视频培训将智能标记应用于视频的服务。 它可与默认[!DNL Adobe Sensei]设置配合使用。
+* 您无法使用任何特定视频培训将智能标记应用于视频的服务。 它可与默认[!DNL Adobe AI]设置配合使用。
 
 * 不显示标记进度。
 
-* 只有文件大小小于300 MB的视频会被自动标记。 [!DNL Adobe Sensei]服务跳过更大大小的视频文件。
+* 只有文件大小小于300 MB的视频会被自动标记。 [!DNL Adobe AI]服务跳过更大大小的视频文件。
 
 * 只标记[智能标记](/help/assets/smart-tags.md#smart-tags-supported-file-formats)中提到的文件格式视频和受支持的编解码器。
 

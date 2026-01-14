@@ -1,10 +1,10 @@
 ---
-title: 使用 [!DNL Adobe Sensei] 智能服务自动标记资产
+title: 使用 [!DNL Adobe AI] 智能服务自动标记资产
 description: 使用人工智能服务为资产添加上下文相关且具描述性的业务标记。
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 例如，在词典中按字母顺序排列的单词比随机散落的单词更容易找到。 标记具有类似目的。 它根据业务分类组织资产，确保最相关的资产出现在搜索结果中。 例如，汽车制造商可以使用型号名称标记汽车图像，以便在设计促销活动时只显示相关图像。 无论是“跑步者”还是“跑鞋”，用户都无需担心拼写错误、拼写变体或替代搜索词 — 智能标记可识别所有这些词语。
 
-在后台，该功能使用[Adobe Sensei](https://business.adobe.com/cn/products/sensei/adobe-sensei.html)的人工智能框架，默认情况下会自动将智能标记与与业务分类对齐的文本一起应用于已上传的资产。
+在后台，该功能使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)的人工智能框架，默认情况下会将智能标记连同与业务分类对齐的文本一起自动应用于上传的资产。
 
 ## 先决条件和配置 {#smart-tags-prereqs-config}
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 智能标记工作流程 {#smart-tags-workflow}
 
-[!DNL Adobe Sensei]支持的智能标记使用人工智能模型来分析内容并将标记添加到资产。 从而减少DAM用户为其客户提供丰富体验的时间。 智能标记在资产属性中按其[置信度分数](#confidence-score)的降序显示。
+[!DNL Adobe AI]支持的智能标记使用人工智能模型来分析内容并将标记添加到资产。 从而减少DAM用户为其客户提供丰富体验的时间。 智能标记在资产属性中按其[置信度分数](#confidence-score)的降序显示。
 
 * **基于图像的资源**
 对于图像，智能标记基于某些视觉方面。 使用智能内容服务标记多种格式的图像。 智能标记将应用于[支持的文件类型](#supported-file-formats)，这些类型会生成JPG和PNG格式的呈现版本。
@@ -35,7 +35,7 @@ ht-degree: 1%
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **基于视频的资源**
-对于基于视频的资产，默认情况下在[!DNL Adobe Experience Manager]中作为[!DNL Cloud Service]启用标记。 同样，基于图像和文本的标记，当您上传新视频或重新处理现有视频时，也会自动标记视频。 [!DNL Adobe Sensei]为视频生成两组标记：一组对应于该视频中的对象、场景和属性，而另一组则与饮酒、跑步和慢跑等操作相关。 同时检查[退出视频智能标记](#opt-out-video-smart-tagging)。
+对于基于视频的资产，默认情况下在[!DNL Adobe Experience Manager]中作为[!DNL Cloud Service]启用标记。 同样，基于图像和文本的标记，当您上传新视频或重新处理现有视频时，也会自动标记视频。 [!DNL Adobe AI]为视频生成两组标记：一组对应于该视频中的对象、场景和属性，而另一组则与饮酒、跑步和慢跑等操作相关。 同时检查[退出视频智能标记](#opt-out-video-smart-tagging)。
 
 * **基于文本的资源**
 对于支持的资源，[!DNL Experience Manager]已提取文本，然后将其编入索引，用于搜索资源。 但是，基于文本中关键字的智能标记提供了专用、结构化和更高优先级的搜索方面。 与搜索索引相比，后者有助于改进资产发现。
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 ## 为开箱即用的智能标记准备资产
 
-当您将资源[作为](add-assets.md#upload-assets)上载到[!DNL Adobe Experience Manager]时，将处理上载的资源。 [!DNL Cloud Service]处理完成后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的资源。 资源微服务使用[!DNL Adobe Sensei]创建这些智能标记。
+当您将资源[作为](add-assets.md#upload-assets)上载到[!DNL Adobe Experience Manager]时，将处理上载的资源。 [!DNL Cloud Service]处理完成后，请参阅资产[!UICONTROL 属性]页面的[!UICONTROL 基本]选项卡。 智能标记会自动添加到[!UICONTROL 智能标记]下的资源。 资源微服务使用[!DNL Adobe AI]创建这些智能标记。
 
 ![智能标记已添加到视频中，并在资产属性的“基本”选项卡中显示](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中的未标记Assets {#smart-tag-existing-assets}
 
-DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hans#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
+DAM中的现有或更早版本的资产不会自动进行智能标记。 您需要手动[重新处理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets以为其生成智能标记。 进程完成后，导航到文件夹中任何资产的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能标记]部分中。 这些应用的智能标记按[置信度分数](#confidence-score)的降序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -113,7 +113,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -224,7 +224,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
    * 非视觉的抽象方面。 例如，产品发布的年份或季节、图像引发的情绪或情感，以及视频的主观内涵。
    * 产品中的细微视觉差异，例如带有领子的衬衫和不带有领子的衬衫或嵌入在产品上的小产品徽标。
 
-* 只有文件大小小于300 MB的视频会被自动标记。 [!DNL Adobe Sensei]服务跳过更大大小的视频文件。
+* 只有文件大小小于300 MB的视频会被自动标记。 [!DNL Adobe AI]服务跳过更大大小的视频文件。
 * 要搜索带有智能标记（常规或增强）的文件，请使用[!DNL Assets]搜索（全文搜索）。 智能标记没有单独的搜索谓词。
 * 与常规标记相比，使用业务分类进行标记的资产更容易通过基于标记的搜索进行识别和检索。
 
@@ -232,7 +232,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 +++**智能标记如何改善资源的搜索体验？**
 
-上传资源后，[!DNL Adobe]Sensei会自动为其添加标记。 自动化流程在后端运行得非常快，您会在上传完成后几秒钟内看到资产中添加的标记。
+上传资源后，[!DNL Adobe]人工智能会自动为其添加标记。 自动化流程在后端运行得非常快，您会在上传完成后几秒钟内看到资产中添加的标记。
 
 +++
 

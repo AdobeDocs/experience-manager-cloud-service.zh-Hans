@@ -3,9 +3,9 @@ title: 在 [!DNL the Content Hub]中预览资源及其属性
 description: 了解如何在 [!DNL Content Hub]中预览资源和属性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 11%
 
 ---
@@ -60,43 +60,43 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL JPEG]</td>
+        <td>[！UICONTROL JPEG]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL PNG]</td>
+        <td>[！UICONTROL PNG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 视频 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL Quicktime]</td>
+        <td>[！UICONTROL Quicktime]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MP4]</td>
+        <td>[！UICONTROL MP4]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MPEG]</td>
+        <td>[！UICONTROL MPEG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 文档 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL txt]（纯）</td>
+        <td>[！UICONTROL txt]（纯）</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
+        <td>[！UICONTROL Doc/Docx]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL XML]</td>
+        <td>[！UICONTROL XML]</td>
     </tr>
     <tr>
         <td rowspan="2"> 打印介质 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL PDF]</td>
+        <td>[！UICONTROL PDF]</td>
     </tr>
     </tbody>
 </table>
@@ -109,9 +109,9 @@ ht-degree: 11%
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **智能标记：** [!DNL The Content Hub]使用Adobe Sensei的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 随后，该内容智能可用于为另一组资产自动应用相关标记。智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
+* **智能标记：** [!DNL The Content Hub]使用Adobe AI的智能内容服务，通过基于标记的结构上的识别算法来训练资源。 随后，该内容智能可用于为另一组资产自动应用相关标记。智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
 
-* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hans)可帮助您识别使用通过Adobe的Sensei AI功能在资源中自动识别的颜色的资源。
+* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可帮助您识别使用通过Adobe的AI功能在资源中自动识别的颜色的资源。
 
 * 上传日期
 

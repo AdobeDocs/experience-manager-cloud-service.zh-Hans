@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets使您能够区分图像中的颜色
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1243'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 ![颜色标记横幅](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用。 这些标记可基于图像的颜色构成提供更优的搜索体验。
+Adobe Experience Manager (AEM) Assets使用Adobe AI功能区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用。 这些标记可基于图像的颜色构成提供更优的搜索体验。
 
 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。 Experience Manager Assets根据图像中的颜色覆盖范围来应用标记。 您还可以配置颜色标记的显示格式。
 

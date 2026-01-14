@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3615'
+source-wordcount: '3614'
 ht-degree: 3%
 
 ---
@@ -201,7 +201,7 @@ Dynamic Media的解决方案是将那个主视频文件转码，让Dynamic Media
 
 | **问题** | **Dynamic Media解决方案** |
 |---|---|
-| 手动绘制、测量和剪切图像或视频以突出显示焦点并在所有屏幕大小和设备上正确显示非常耗时且耗费大量人力。 | 使用Adobe Sensei AI功能Dynamic Media中的智能裁剪自动检测任何图像或视频中的焦点，并裁剪以保持该焦点。 |
+| 手动绘制、测量和剪切图像或视频以突出显示焦点并在所有屏幕大小和设备上正确显示非常耗时且耗费大量人力。 | 使用Adobe AI功能Dynamic Media中的智能裁剪自动检测任何图像或视频中的焦点，并裁剪以保持该焦点。 |
 | 浪费的时间可以更好地用于创造高影响力的体验。 | 捕获预期目标点，而不管屏幕大小如何。 |
 | 为每个体验和设备创建的一次性资产。 | 消除繁琐的手动任务，并提供在任何设备或屏幕上看起来都良好的高质量、快速加载的图像和视频。 |
 
@@ -246,7 +246,7 @@ Adobe建议您以无损格式上传资源。 通常，最好避免使用JPEG，�
 
 ### 发布和预览资源
 
-将资源上传到Dynamic Media后，最好通过选择资源，然后单击Dynamic Media中的&#x200B;_发布_&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，发布资源&#x200B;**&#x200B;**。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的Dynamic Media生成的URL或者通过在页面上嵌入代码的方式，将资源包含在网页中。
+将资源上传到Dynamic Media后，最好通过选择资源，然后单击Dynamic Media中的&#x200B;_发布_&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，发布资源&#x200B;****。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的Dynamic Media生成的URL或者通过在页面上嵌入代码的方式，将资源包含在网页中。
 
 除了手动发布资产之外，您还可以配置Dynamic Media，以便在上传时即时发布资产，而无需任何用户干预。
 
@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media教程_
 
-* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/zh-hans?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
+* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
 
 _Dynamic Media查看器_
 

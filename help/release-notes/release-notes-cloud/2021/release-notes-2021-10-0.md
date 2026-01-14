@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0 版�
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 70%
 
 ### [!DNL Assets]预发行渠道中的新功能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]图像智能裁切和色板功能现在由最新的Sensei服务提供支持，可生成改进的裁切和色板。 还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑内容。
+* [!DNL Dynamic Media]图像智能裁切和色板现在由最新的AI服务提供支持，可生成改进的裁切和色板。 还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑内容。
 
 * 智能标记是使用资产微服务而不是智能内容服务自动应用于资产的。 更新底层模型以改善标记结果并减少偏差。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * **将 AEM Workflow 数据外部化以便安全处理**：您可以将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中，以便安全处理。数据元素和工作流变量没有存储在 AEM 存储库中，而是在处理工作流时按需从客户管理的存储库中提取。
 
-### [!DNL Forms] 的 Beta 版功能 {#what-is-new-forms-oct2021-beta}
+### [!DNL Forms] 的 Beta 版功能  {#what-is-new-forms-oct2021-beta}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务让您能够以同步和批处理模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
@@ -79,11 +79,11 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF加载项支持带有新Commerce API和架构的最新GraphQL v2.4.3
+* CIF加载项支持具有新Commerce API和架构的最新GraphQL v2.4.3
 
 * 作者可以使用富文本编辑器(RTE)在文本字段中添加指向产品和目录页面的链接。 RTE工具栏中添加了CIF图标，该图标会打开选取器，以便在不离开上下文的情况下快速搜索和选择产品或类别。
 
-* 现有的弹出购物车和结帐已替换为专用的AEM购物车和结帐页面。 这些页面上的组件是使用Adobe Commerce的可扩展Peregrine组件构建的
+* 现有的弹出购物车和结账页面已替换为专用的AEM购物车和结账页面。 这些页面上的组件是使用Adobe Commerce的可扩展Peregrine组件构建的
 
 * 商家可以使用Commerce后端隐藏导航中的某些产品目录类别。 CIF导航核心组件遵循Commerce后端配置“包含在菜单中”以在导航中显示/隐藏类别
 
@@ -91,7 +91,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ## Cloud Manager {#cloud-manager}
 
-此部分概述了 AEM as a Cloud Service 2021.10.0 中的 Cloud Manager 的发行说明。
+本节概述了AEM as a Cloud Service 2021.10.0中的Cloud Manager发行说明。
 
 ### 发布日期 {#release-date-cm-nov}
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 的发布日期是 2021 �
   >[!IMPORTANT]
   >您必须使用 AEM 版本 `2021.10.5933.20211012T154732Z` 才能使用新的前端管道。
 
-* 通过以更有效的方式执行代码分析而无需构建整个 AEM 映像，大大缩短了代码质量管道持续时间。此更改将在版本发布后的几周内逐步推出。
+* 通过以更有效的方式执行代码分析而无需生成整个 AEM 映像，大大缩短了代码质量管道持续时间。此更改将在版本发布后的几周内逐步推出。
 
 * Git Commit ID 现在将显示在管道执行详细信息中，以便更轻松地跟踪已生成的代码。
 
@@ -121,7 +121,7 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 的发布日期是 2021 �
 
 * 现在提供了带悬停弹出框的新管道页面，以便轻松查看详细信息摘要。可以查看管道执行及其相关详细信息。
 
-* Edit Pipeline API 现在支持更改部署阶段使用的环境。
+* 编辑管道 API 现在支持更改部署阶段使用的环境。
 
 * 已针对大型包在 OakPal 扫描过程中引入了优化。
 
@@ -146,7 +146,7 @@ AEM as a Cloud Service 2021.10.0 中的 Cloud Manager 的发布日期是 2021 �
 
 ### 新增功能 {#what-is-new-cm-oct}
 
-* 为即将进行的更改做准备，现有部署管道现在将在用户界面中被引用并标记为&#x200B;**全栈**&#x200B;管道。
+* 为即将进行的更改做准备，现有部署管道现在将在用户界面中引用并赋予为&#x200B;**全栈**&#x200B;管道标签。
 
 * 管道信息卡已刷新，现在显示单一的集成面，其中显示生产和非生产管道，用户可以直接从与每个管道关联的动作菜单中选择运行/暂停/恢复。
 
