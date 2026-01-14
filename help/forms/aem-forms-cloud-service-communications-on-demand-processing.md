@@ -3,15 +3,15 @@ title: 如何设置Forms通信同步API？
 description: 为Adobe Experience Manager Forms as a Cloud Service的交互式通信同步API设置开发环境
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 2%
+source-wordcount: '2428'
+ht-degree: 1%
 
 ---
 
 
-# 为AEM Forms Communications API配置OAuth服务器到服务器访问
+# 使用OAuth服务器到服务器身份验证调用AEM Forms通信API
 
 本指南提供有关配置和调用AEM Forms Communications Synchronous API的说明，可通过Adobe Developer Console使用OAuth服务器到服务器身份验证访问这些API。
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 要了解有关分配角色和授予用户访问权限的更多信息，请参阅文章[添加用户和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Git存储库访问权限**
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)。
+> 要了解如何访问AEM云服务环境和AEM Forms端点，请参阅[管理环境文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步骤2：克隆Git存储库
 
@@ -246,7 +246,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 >[!BEGINTABS]
 
->[!TAB 用于测试的] 
+>用于测试的[!TAB ]
 
 在Adobe Developer Console中手动生成访问令牌：
 
@@ -258,9 +258,10 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 >[!NOTE]
 >
 > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
->[!TAB 用于生产 的]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
+>用于生产[!TAB 的]
+
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
 **必需的凭据：**
 
@@ -386,7 +387,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 * **对于开发环境**：选择&#x200B;**“添加非生产管道”**。 非生产管道适用于开发和暂存环境
 
-* 生产环境&#x200B;**&#x200B;**：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
+* 生产环境&#x200B;****：选择&#x200B;**“添加生产管道”**。 生产管道需要额外的批准
 
 >[!NOTE]
 >
@@ -788,6 +789,10 @@ AEM环境运行的版本是在引入或支持Forms通信API之前发布的。
 
    ![更新环境](/help/forms/assets/update-env.png)
 
-## 相关文章
-
-* 要了解如何为批处理（异步API）设置环境，请参阅[AEM Forms as a Cloud Service Communications批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service Communications简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 自适应AEM Forms和通信API的[Forms as a Cloud Service架构](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API — 教程](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

@@ -3,7 +3,7 @@ title: AEM Forms Communications API — 概述
 description: AEM Forms通信API概述，包括身份验证方法和完整的API参考
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 4%
@@ -19,7 +19,7 @@ AEM Forms API通过两个主控制台进行结构化和访问：
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console是Adobe API、事件、运行时和App Builder的网关。
 
-* [AEM Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供对环境级别的详细信息、配置、技术帐户和服务凭据的访问权限，以支持操作和集成任务。
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供对环境级别的详细信息、配置、技术帐户和服务凭据的访问权限，以支持操作和集成任务。
 
 不同的API支持不同的[身份验证方法](#authentication-methods)。
 
@@ -185,4 +185,4 @@ AEM Forms API通过两个主控制台进行结构化和访问：
 >* 自适应AEM Forms和通信API的[Forms as a Cloud Service架构](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [通信处理 — 按需API](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [Forms Communications API — 教程](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

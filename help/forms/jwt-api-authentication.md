@@ -3,9 +3,9 @@ title: 如何设置JWT（JSON Web令牌）身份验证？
 description: 了解如何为Adobe Experience Manager Forms as a Cloud Service配置JWT（JSON Web令牌）身份验证
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud
 在开始之前，请确保满足以下先决条件：
 
 * 确保您有权访问特定于您使用环境的[Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)。
-* 分配[系统管理员或开发人员角色以访问Adobe Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
+* 分配[系统管理员或开发人员角色以访问Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
 
 ## 如何使用JWT凭据生成访问令牌？
 
@@ -106,7 +106,7 @@ AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud
 
 >[!NOTE]
 >
-> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
 
@@ -168,3 +168,10 @@ AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service Communications简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 自适应AEM Forms和通信API的[Forms as a Cloud Service架构](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API — 教程](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
