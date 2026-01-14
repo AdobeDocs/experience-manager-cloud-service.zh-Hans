@@ -60,43 +60,43 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL JPEG]</td>
+        <td>[!UICONTROL JPEG]</td>
     </tr>
     <tr>
-        <td>[！UICONTROL PNG]</td>
+        <td>[!UICONTROL PNG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 视频 </td>
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL Quicktime]</td>
+        <td>[!UICONTROL Quicktime]</td>
     </tr>
     <tr>
-        <td>[！UICONTROL MP4]</td>
+        <td>[!UICONTROL MP4]</td>
     </tr>
     <tr>
-        <td>[！UICONTROL MPEG]</td>
+        <td>[!UICONTROL MPEG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 文档 </td>
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL txt]（纯）</td>
+        <td>[!UICONTROL txt]（纯）</td>
     </tr>
     <tr>
-        <td>[！UICONTROL Doc/Docx]</td>
+        <td>[!UICONTROL Doc/Docx]</td>
     </tr>
     <tr>
-        <td>[！UICONTROL XML]</td>
+        <td>[!UICONTROL XML]</td>
     </tr>
     <tr>
         <td rowspan="2"> 打印介质 </td>
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL PDF]</td>
+        <td>[!UICONTROL PDF]</td>
     </tr>
     </tbody>
 </table>
