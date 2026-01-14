@@ -21,7 +21,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -85,7 +85,7 @@ API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]�
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* 您现在可以使用Automated Forms Conversion Service将法语、德语和西班牙语版本的PDF forms[转换为自适应表单。](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)
+* 您现在可以使用Automated Forms Conversion Service将法语、德语和西班牙语版本的PDF forms[转换为自适应表单。](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=zh-Hans&#language-specific-meta-model)
 * 已向模板编辑器添加一个单独的面板，以显示与自适应表单组件相关的错误。 它有助于在一个位置整合所有自适应表单错误并减少解决时间。
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#beta-features-forms}
@@ -97,9 +97,9 @@ API `com.day.cq.dam.api.collection.SmartCollection`在[!DNL Experience Manager]�
 
 * **变量数据外部化程序**：您可以将 AEM Workflow 变量的数据保存在由组织管理的外部存储系统上。
 
-* **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，您还可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
+* **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，您还可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hans) 作为记录文档的模板。
 
-* **Microsoft® Azure数据存储连接器**：您现在可以[将表单数据模型连接到Microsoft® Azure存储](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)。 它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft® Azure Storage。
+* **Microsoft® Azure数据存储连接器**：您现在可以[将表单数据模型连接到Microsoft® Azure存储](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hans)。 它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft® Azure Storage。
 
 ## CIF 加载项 {#cloud-services-cif}
 
@@ -191,7 +191,7 @@ Cloud Acceleration Manager的发布日期为2021年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用Adobe推荐的最佳实践、技巧、文档和工具在迁移到AEM as Cloud Service的历程的每个阶段提供帮助，让您的团队成功完成迁移。 在[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)了解详情。
+Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用Adobe推荐的最佳实践、技巧、文档和工具在迁移到AEM as Cloud Service的历程的每个阶段提供帮助，让您的团队成功完成迁移。 在[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=zh-Hans)了解详情。
 
 >[!NOTE]
 >

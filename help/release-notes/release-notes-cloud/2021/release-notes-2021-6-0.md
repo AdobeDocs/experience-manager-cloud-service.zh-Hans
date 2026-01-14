@@ -21,7 +21,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
@@ -155,7 +155,7 @@ AEM Screens as a Cloud Service的发布日期是2021年6月24日。
 ### 新增功能 {#what-is-new-screens-june}
 
 >[!NOTE]
->请参阅[AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)指南，以了解成功安装、配置和运行Screens as a Cloud Service所需的基础知识，并链接到详细的概念技术文档。
+>请参阅[AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=zh-Hans)指南，以了解成功安装、配置和运行Screens as a Cloud Service所需的基础知识，并链接到详细的概念技术文档。
 
 * 批量设备注册管理意味着可以更快、更高效地配置大量播放器设备。
 
@@ -184,7 +184,7 @@ AEM Screens as a Cloud Service的发布日期是2021年6月24日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 添加了对要与CTT一起使用的可选[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)步骤的支持。 当源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储时，预复制步骤可用于显着加快内容传输活动的提取和摄取阶段。
+* 添加了对要与CTT一起使用的可选[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hans)步骤的支持。 当源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储时，预复制步骤可用于显着加快内容传输活动的提取和摄取阶段。
 
 * 向CTT添加了护栏，以防止用户停止摄取，并防止数据在摄取阶段达到临界点后可能损坏。
 
