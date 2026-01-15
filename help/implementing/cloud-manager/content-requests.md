@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
+source-git-commit: 7bf48596f64dd9682fa2fb3e5d5db513a8a7fbdc
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '2054'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ## 服务器端收集规则 {#serverside-collection}
 
-AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这些规则排除了知名机器人（如搜索引擎爬网程序）和一组定期ping通站点的监控服务。 此排除列表中没有的其他合成或监控类型流量则计为计费内容请求。
+AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这些规则排除了知名机器人（如搜索引擎爬虫程序），包括已识别的AI/LLM爬虫程序以及一组定期ping站点的监控服务。 此排除列表中没有的其他合成、自动或监控类型的流量将被计为计费内容请求。
 
 下表列出了包含和排除的内容请求的类型，并针对每个类型进行了简要说明。
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 | 请求类型 | 内容请求 | 描述 |
 | --- | --- | --- |
 | HTTP代码100-299 | 已包含 | 包含返回完整或部分HTML或JSON内容的成功请求。<br>HTTP代码206：这些请求仅交付完整内容的一部分。 部分请求在交付渲染页面内容中所使用的HTML或JSON响应的一部分时包括在内。 |
-| 用于自动化的HTTP库 | 已包含 | 由检索页面内容的工具或库发出的请求。 示例包括： <br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous HTTP Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· Oembed<br>· python请求<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub节点提取<br>· Reactor Netty |
+| 用于自动化的HTTP库 | 已包含 | 由检索页面内容的工具或库发出的请求。 示例包括： <br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous HTTP Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· Oembed<br>· python请求<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub节点提取<br>· Reactor Netty<br><br>当流量未分类为已知机器人时，它还可以包含自定义代理或人工智能驱动的自动化。 |
 | 监控和运行状况检查工具 | 已包含 | 用于监视页面运行状况或可用性的请求。<br>查看[排除的内容请求的类型](#excluded-content-request)。<br>示例包括以下内容：<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(兼容； UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`个请求 | 已包含 | 当客户预载或预取内容（例如，使用`<link rel="prefetch">`）时，系统会计算这些服务器端请求。 请注意，此方法可能会增加流量，具体取决于预取的页面数量。 |
 | 阻止Adobe Analytics或Google Analytics报表的流量 | 已包含 | 通常，网站访客会安装隐私软件（广告拦截器等），这会影响Google Analytics或Adobe Analytics的准确性。 AEM as a Cloud Service在进入Adobe运行的基础结构的第一个入口点而不是客户端计算请求。 |
@@ -97,10 +97,11 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 | 客户用于监控其Cloud Service项目的URL | 已排除 | Adobe建议您使用URL从外部监视可用性或运行状况检查。<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod预热服务 | 已排除 | 座席： skyline-service-warmup/1.* |
 | 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 已知的服务定期访问网站以刷新其搜索索引或服务： <br><br>示例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsAds机器人<br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprovement<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>克劳德博特<br> |
+| 已知的AI/LLM爬网程序（由Fastly标记） | 已排除 | 来自已识别的AI/LLM爬虫的请求，这些爬虫被识别为已知机器人（例如，由`User-Agent`或其他机器人分类信号）。 这些请求不计费。<br><br>如果AI代理未被识别为已知机器人（例如，它使用通用浏览器`User-Agent`），则其请求可能会被计为计费内容请求。 |
 | 排除Commerce integration framework调用 | 已排除 | 向AEM发出的请求将转发到Commerce integration framework（URL以`/api/graphql`开头）以避免重复计数，因此对于Cloud Service不计费。 |
 | 排除`manifest.json` | 已排除 | 清单不是API调用。 本文件旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应将对`/etc.clientlibs/*/manifest.json`的JSON请求计为 |
 | 排除`favicon.ico` | 已排除 | 尽管返回的内容不应是HTML或JSON，但已观察到某些场景（如SAML身份验证流程）会以HTML的形式返回favicon。 因此，Favicon会明确从计数中排除。 |
-| 体验片段(XF) — 相同域重用 | 已排除 | 从同一域上托管的页面（由与请求主机匹配的Referer标头标识）向XF路径（如`/content/experience-fragments/...`）发出请求。<br><br>示例： `aem.customer.com`上的主页从同一域提取横幅或卡片的XF。<br><br>· URL与/content/experience-fragments/...<br>· Referer域与&#x200B;`request_x_forwarded_host`<br><br>**匹配注意：**&#x200B;如果自定义体验片段路径（例如使用`/XFrags/...`或`/content/experience-fragments/`之外的任何路径），则不会排除请求并且可能会计入请求，即使它是同一域也是如此。 我们建议使用Adobe的标准XF路径结构，以确保正确应用排除逻辑。 |
+| 体验片段(XF) — 相同域重用 | 已排除 | 从在同一域上托管的页面（由与请求主机匹配的反向链接标头标识）向XF路径（如`/content/experience-fragments/...`）发出请求。<br><br>示例： `aem.customer.com`上的主页从同一域提取横幅或卡片的XF。<br><br>· URL与/content/experience-fragments/...<br>· Referrer域与&#x200B;`request_x_forwarded_host`<br><br>**匹配。注意：**&#x200B;如果自定义体验片段路径（例如使用`/XFrags/...`或`/content/experience-fragments/`之外的任何路径），则不会排除请求，并且可以计算该请求，即使它是同一域也是如此。 Adobe建议使用Adobe的标准XF路径结构，以确保正确应用排除逻辑。 |
 
 ## 管理内容请求 {#managing-content-requests}
 
@@ -108,16 +109,16 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 
 ### 管理内容请求的实施技术 {#implementation-techniques-to-manage-crs}
 
-* 确保提供的任何“页面未找到”响应都具有HTTP状态404。  如果返回状态为200，则将其计入内容请求。
+* 确保提供的任何“页面未找到”响应都具有HTTP状态404。  如果它们以状态200返回，则计入内容请求。
 * 将运行状况检查或监控工具路由到/system/probes/health URL或使用HEAD方法而不是GET以避免产生内容请求。
-* 在您与网站集成的任何自定义搜索爬虫程序中，将您对内容新鲜度的需求与AEM许可证成本平衡起来。  过于激进的爬网程序可能会占用大量内容请求。
-* 将任何重定向作为服务器端（状态301或302）而不是客户端（状态200和javascript重定向）处理，以避免两个单独的内容请求。
+* 在您与网站集成的任何自定义搜索爬网程序中，将您对内容新鲜度的需求与AEM许可证成本平衡起来。  过于激进的爬网程序可能会占用许多内容请求。
+* 将任何重定向作为服务器端（状态301或302）而不是客户端(状态200带JavaScript重定向)处理，以避免两个单独的内容请求。
 * 组合或减少API调用，这些API调用是来自AEM的JSON响应，可以加载这些响应以呈现页面。
-* 确保将浏览器的用户代理正确传递到AEM，以便利用上述“已知搜索引擎”内容请求排除规则。  有时，某些Headless实施或CDN配置会丢失原始用户代理，这会阻止排除并导致内容请求比传递用户代理时多。
+* 确保将浏览器的用户代理正确传递到AEM。 这样做会利用上述“知名搜索引擎”内容请求排除规则。  有时，某些Headless实施或CDN配置会丢失原始用户代理。 如果发生这种情况，则可能会阻止排除并导致内容请求数高于用户代理传入的情况。
 
 ### 用于管理内容请求的流量过滤器规则 {#traffic-filter-rules-to-manage-crs}
 
-* 常见的机器人模式是使用空的用户代理。  您需要查看实施情况和流量模式，以查看空用户代理是否有效。  如果要阻止此流量，建议的[语法](/help/security/traffic-filter-rules-including-waf.md#rules-syntax)为：
+* 常见的机器人模式是使用空的用户代理。  请检查您的实施和流量模式，以查看空用户代理是否有用。  如果要阻止此流量，建议的[语法](/help/security/traffic-filter-rules-including-waf.md#rules-syntax)为：
 
 ```
 trafficFilters:
@@ -130,4 +131,4 @@ trafficFilters:
       action: block
 ```
 
-* 一些机器人一天重击一个网站，第二天就消失了。  这可能会挫伤任何阻止特定IP地址或用户代理的尝试。  一种通用方法是引入[速率限制规则](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules)。  查看[示例](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples)并制作符合您快速请求率容差的规则。  查看[条件结构](/help/security/traffic-filter-rules-including-waf.md#condition-structure)语法，了解您可能希望允许使用一般速率限制的任何异常。
+* 一些机器人一天重击一个网站，第二天就消失了。 此类功能可能会挫败任何阻止特定IP地址或用户代理的尝试。  一种通用方法是引入[速率限制规则](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules)。  查看[示例](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples)并制作符合您快速请求率容差的规则。  请查看[条件结构](/help/security/traffic-filter-rules-including-waf.md#condition-structure)语法，了解您可能希望允许使用一般速率限制的任何异常。
