@@ -3,9 +3,9 @@ title: 开发代理概述
 description: 了解AEM中的开发代理如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 目前，代理可以检索管道状态，并通过建议修复来帮助您排除失败的构建步骤，从而节省在开发、暂存和生产环境中调试AEM as a Cloud Service部署的时间。 它会检查构建日志和相关代码，以推荐您可以手动应用的修复。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478017?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ ht-degree: 1%
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+通过电子邮件发送[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)，其中包含反馈或请求以访问此代理。
 
 ## 通过Cloud Manager访问开发代理 {#how-to-access-the-agent}
 
@@ -81,13 +83,13 @@ ht-degree: 1%
 
 | 提示 | 结果 |
 | --- | --- |
+| *对失败的管道进行故障排除* | 执行管道失败原因分析；如果不清楚引用了哪个管道，将向用户询问其他问题。 |
 | *为项目主项目列出我的失败管道。* | 虽然结果可能有所不同，但此提示会输出一个失败管道表，并提供一个后续建议，以引用要分析的特定管道。 |
-| *分析我失败的、名为“开发管道”的管道。* | 此提示将导致分析失败的管道，并提供修复建议。 |
+| *分析我失败的、名为“开发管道”的管道。* | 此提示将导致分析失败的管道，并提供修复建议。 如果多次失败，则会询问用户其他问题。 |
+| *管道执行疑难解答1234567* | 通过提供准确的管道执行ID，执行管道分析。 |
 
 ## 超出范围的功能 {#out-of-scope-features}
 
 管道故障排除在全栈管道的构建步骤中进行。 对于其他管道类型和步骤，通过下载并检查日志来调试故障。
 
 查看[访问和下载日志](/help/implementing/cloud-manager/manage-logs.md)。
-
-使用BYOGIT（自带Git）的程序不支持管道故障排除。
