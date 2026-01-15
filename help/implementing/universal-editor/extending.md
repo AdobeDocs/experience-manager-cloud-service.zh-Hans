@@ -4,7 +4,7 @@ description: 了解用于扩展通用编辑器功能的不同选项，以满足�
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 100%
@@ -60,4 +60,4 @@ ht-degree: 100%
 
 * **[区块](https://www.aem.live/developer/block-collection)**：采用简单的 JSON 格式，项目可以调整可用于内容创建的区块和 UE 功能。
 * **[自定义用户界面](#extending-ui)**：扩展可以在侧边面板或模态对话框中显示必要的 UI。
-* **[事件](/help/implementing/universal-editor/events.md)**：扩展可以接收关于作者在页面上的操作和选择的事件，以做出适当的响应。
+* **[事件](/help/implementing/universal-editor/events-universal-editor.md)**：扩展可以接收关于作者在页面上的操作和选择的事件，以做出适当的响应。
