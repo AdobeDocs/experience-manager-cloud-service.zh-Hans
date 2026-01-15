@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2025.12.12发行说明
-description: 这些是通用编辑器2025.12.11版的发行说明。
+title: 通用编辑器2026.01.15发行说明
+description: 这些是通用编辑器2026.01.15版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 18%
+source-wordcount: '204'
+ht-degree: 29%
 
 ---
 
 
-# 通用编辑器2025.12.12发行说明 {#release-notes}
+# 通用编辑器2026.01.15发行说明 {#release-notes}
 
-这些是通用编辑器 2025 年 12 月 12 日版本的发行说明。
+这些是通用编辑器 2026 年 1 月 15 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,11 +26,10 @@ ht-degree: 18%
 
 ## 新增功能 {#what-is-new}
 
-* 已向[富文本编辑器中的现有表添加支持。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* 已在[富文本编辑器中为嵌套列表启用Tab键。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* 现在可以通过[meta标记`aem-dev-login`禁用开发人员登录功能。](/help/implementing/universal-editor/customizing.md#meta-tags)
-* 在覆盖部分中单击右键现在会显示[上下文选项菜单。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
-* [富文本编辑器现在支持](/help/implementing/universal-editor/configure-rte.md#indentation)范围缩进[。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* 添加了对设置和保留[模型字段默认值的支持。](/help/implementing/universal-editor/field-types.md)
+   * 如果未设置任何值，则通用编辑器将保留在模型定义中定义为`value`的任何内容。
+   * 这可确保您看到的内容与后端中保留的内容相匹配。
+   * 这是一个重大变化。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -40,13 +39,6 @@ ht-degree: 18%
 
 ## 其他改进 {#other-improvements}
 
-* 现在，当多个字段在上下文中更改时，将同步属性边栏。
-* 内容片段选取器现在在AEM 6.5实例上按预期打开。
-* Esc键现在会关闭富文本编辑器中的对话框。
-* **删除组件**&#x200B;操作现在仅在选择组件时可用。
-* 现在会根据使用的实例打开正确的（旧或新）内容片段编辑器(如果主机名是AEM as a Cloud Service模式，则使用新编辑器，否则使用旧版编辑器)。
-* 筛选器验证已添加到重复操作。
-* 现在，在属性边栏中，长标题会被截断。
-* 现在可以正确处理值超过10的多站点管理器阵列。
-* 现在可正确处理创建具有相同名称的多个组件时出现的冲突错误。
-* 添加了值为>10的多站点管理器阵列处理。
+* 现在，可以在内容切换上正确执行数据清理。
+* 现在支持扩展更新中的多项操作。
+* 开发人员登录的“关闭”按钮现在会按预期运行。

@@ -4,10 +4,10 @@ description: 通过示例了解通用编辑器可以在属性面板中编辑的�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 98%
+source-wordcount: '1604'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 98%
 | `name` | `string` | 属性[或保留数据的路径](#nesting) | 是 |
 | `label` | `FieldLabel` | 字段的标签 | 是 |
 | `description` | `FieldDescription` | 字段的描述 | 否 |
-| `value` | `FieldValue` | 这是默认值，用作占位符。 此值不驱动任何内容更新。 它只是UI中的一种表示形式。 | 否 |
+| `value` | `FieldValue` | 这是默认值，用作占位符。 如果未设置任何值，则通用编辑器将保留在模型定义中定义为`value`的任何内容。 这可确保您看到的内容与后端中保留的内容相匹配。 | 否 |
 | `valueType` | `ValueType` | 标准验证，可以是 `string`、`string[]`、`number`、`date`、`boolean` | 否 |
 | `required` | `boolean` | 字段是否必需 | 否 |
 | `readOnly` | `boolean` | 字段是否为只读 | 否 |
