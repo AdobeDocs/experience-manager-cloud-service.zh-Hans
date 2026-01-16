@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
+source-git-commit: a1b860b4d691515f7f868e4e7e1a70bac0c20cbe
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 49%
+source-wordcount: '1944'
+ht-degree: 46%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 49%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -93,6 +93,10 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 针对已上传的资产进行&#x200B;**恶意软件检测**
 
 AEM Assets现在包括对已上传文件的自动恶意软件扫描，确保在进入DAM之前隔离可疑资产，以保护您的存储库免受威胁。 管理员可以配置扫描设置和隔离保留策略以简化安全控制。
+
+**AI生成的元数据 — 资格更新**
+
+AEM Assets中人工智能生成的元数据不再需要签署GenAI骑士才能启用。 现在，已签署GenAI Rider的客户和尚未验证的客户均可使用该功能。 明确选择不使用GenAI的客户将继续禁用该功能。 要在环境级别管理功能启用，请参阅[禁用AI生成的元数据](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata)。 此更改针对的是版本23482或更高版本的客户。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
