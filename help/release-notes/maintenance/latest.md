@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
+source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 18%
+source-wordcount: '1095'
+ht-degree: 17%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 18%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 23862 {#23862}
+## 发行版本 23963 {#23963}
 
->[!CAUTION]
+以下总结了维护版本23963的持续改进，该版本于2026年1月19日公开发布。 上一个维护版本是版本 23482。
+
+激活 2026.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+
+>[!NOTE]
 >
-> 发行说23862已设为私有。 即将提供新的维护版本。
+>发行说23862已设为私有。
 
-以下总结了于2025年12月23日公开发布的维护版本23862的持续改进。 上一个维护版本是版本 23482。
-
-激活 2026.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
-
-### 增强功能 {#enhancements-23862}
+### 增强功能 {#enhancements-23963}
 
 * CQ-4361812：在rest api中添加了对可选参数folderPath的支持。 描述：新的翻译项目由API创建，并将放置在可选`folderPath`参数指定的路径中，否则它默认为根项目路径`/content/projects`。
 * Forms-21960：与forms-spa类似，增加了对本地交互式通信画布编辑的支持。
@@ -50,13 +50,14 @@ ht-degree: 18%
 * SITES-37794：使用通用编辑器的Edge Delivery：简化页面创建向导。
 * SITES-36963：将受众/区段端点迁移到Target API v3以支持Workspace。
 
-### 修复的问题 {#fixed-issues-23862}
+### 修复的问题 {#fixed-issues-23963}
 
 * CQ-4361831：修复了导致genai_dropdown_span未定义的问题。
 * CQ-4360895：修复了并发更新期间项目中翻译作业状态计数不准确的问题。
 * CQ-4361599：修复了2025.7升级后从翻译作业中跳过内容片段的问题。
 * CQ-4360747：修复的可重复翻译作业过于频繁地创建空负载和触发器（ScheduleRepeatTranslationProject中的NullPointerException）。
 * CQ-4359994：修复了单语言项目和多语言项目的destinationLanguage字段类型不一致问题。
+* Forms-23557： Rhino更新导致`*.js`无法通过Use API正确实例化。
 * SITES-38153：修复基于uuid的引用的cf发布引用提供程序。
 * SITES-37594：按标记功能改进了模型的性能。
 * SITES-37337： FragmentCreateProcessor：在日志中提供其他错误详细信息。
@@ -93,19 +94,19 @@ ht-degree: 18%
 * SITES-37349：使用通用编辑器的Edge Delivery：将具有单个条目的多字段呈现为具有单个列表项的列表。
 * SITES-36148：使用通用编辑器的Edge Delivery：为复合多字段修复data-aue-label 。
 
-### 已知问题 {#known-issues-23862}
+### 已知问题 {#known-issues-23963}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-23862}
+### 已弃用的功能和 API {#deprecated-23963}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-23862}
+### 安全修复 {#security-23963}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 23 个已发现的漏洞，增强了我们对实现强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-23862}
+### 嵌入的技术 {#embedded-tech-23963}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
