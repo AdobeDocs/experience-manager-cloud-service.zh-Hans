@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a1b860b4d691515f7f868e4e7e1a70bac0c20cbe
+source-git-commit: 93a96173ab62827dc1127794611294effb3f612e
 workflow-type: tm+mt
-source-wordcount: '1944'
+source-wordcount: '1984'
 ht-degree: 46%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 46%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,6 +68,8 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 
 * 将积极使用代理的团队成员的名称和Adobe ID。
 * 列出您或您的团队将要使用的特定座席。 或者说“所有特工”
+
+被选为参与的客户将由Adobe直接通知。 参与取决于资格考虑因素，包括客户许可和有限的计划能力。 虽然并非所有请求最初都可以得到满足，但可能会在未来测试阶段考虑添加其他客户。
 
 ### AEM Foundation(Beta项目) {#aem-foundation-beta-programs}
 
