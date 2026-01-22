@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.01.15发行说明
-description: 这些是通用编辑器2026.01.15版的发行说明。
+title: 通用编辑器2026.01.22发行说明
+description: 这些是通用编辑器2026.01.22版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 29%
+source-wordcount: '243'
+ht-degree: 24%
 
 ---
 
 
-# 通用编辑器2026.01.15发行说明 {#release-notes}
+# 通用编辑器2026.01.22发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 1 月 15 日版本的发行说明。
+这些是通用编辑器 2026 年 1 月 22 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,10 +26,11 @@ ht-degree: 29%
 
 ## 新增功能 {#what-is-new}
 
-* 添加了对设置和保留[模型字段默认值的支持。](/help/implementing/universal-editor/field-types.md)
-   * 如果未设置任何值，则通用编辑器将保留在模型定义中定义为`value`的任何内容。
-   * 这可确保您看到的内容与后端中保留的内容相匹配。
-   * 这是一个重大变化。
+* 标签（作为短文本预览）已添加到[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)中的文本块。
+* 纯文本字段现在支持TextArea。
+* 配置端点现在用于UI功能。
+* 现在支持内容片段中的TextArea。
+* Toast API现在对扩展公开。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -39,6 +40,12 @@ ht-degree: 29%
 
 ## 其他改进 {#other-improvements}
 
-* 现在，可以在内容切换上正确执行数据清理。
-* 现在支持扩展更新中的多项操作。
-* 开发人员登录的“关闭”按钮现在会按预期运行。
+* 修复了通过位置栏导航时画布布局的问题。
+* 在RTE中清理了前导空格。
+* 按Enter键时恢复内联编辑。
+* 拖动标签已恢复为不显示整个内容。
+* 浏览器辅助功能问题已得到解决。
+* `selectEditables([])`现在用于通过可扩展性取消选择所有组件。
+* 现在，将在正确的位置创建元数据表。
+* 修复了复制的内容片段资源指向`/data/undefined`的问题。
+
