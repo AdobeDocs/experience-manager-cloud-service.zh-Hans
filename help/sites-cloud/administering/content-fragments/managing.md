@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '2927'
+source-wordcount: '2937'
 ht-degree: 71%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
@@ -402,6 +402,10 @@ FolderC
 >如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)。
 >
 >如果发布尚未发布其模型的内容片段，则将有一个选择列表指出这一点，并将与该片段一起发布模型。
+
+>[!TIP]
+>
+>内容片段可以[发布到Edge Delivery Services。](https://www.aem.live/developer/content-fragment-overlay)
 
 ### 发布 {#publishing}
 

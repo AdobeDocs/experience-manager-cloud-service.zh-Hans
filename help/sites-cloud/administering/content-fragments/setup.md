@@ -5,10 +5,10 @@ feature: Content Fragments
 role: Developer
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 95%
+source-wordcount: '402'
+ht-degree: 92%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 95%
 
 * 通过[在配置浏览器中启用功能](#enable-content-fragment-functionality-configuration-browser)
 * 然后[将配置应用于您的个别 Assets 文件夹](#apply-the-configuration-to-your-folder)
+
+>[!TIP]
+>
+>内容片段可以[发布到Edge Delivery Services。](https://www.aem.live/developer/content-fragment-overlay)
 
 ## 在配置浏览器中启用内容片段功能 {#enable-content-fragment-functionality-configuration-browser}
 
