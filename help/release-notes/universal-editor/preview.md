@@ -3,10 +3,10 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 57%
+source-wordcount: '200'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 57%
 * 定义具有可扩展性。
 * 移动组件方法已公开给`editorActions`。
 * 向`editorActions`公开了Add组件方法。
-* 为V2实施的块详细信息。
+* 已发布文档创作API版本2.0。
 
 ## 即将推出的改进 {#other-improvements}
 
