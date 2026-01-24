@@ -567,7 +567,7 @@ Solutions:
 **支持渠道：**
 
 - **API文档：** [开发人员参考](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **社区支持：** [Adobe Experience League社区](https://experienceleaguecommunities.adobe.com/)
+- **社区支持：** [Adobe Experience League社区](https://experienceleaguecommunities.adobe.com/?profile.language=zh-Hans)
 
 +++
 

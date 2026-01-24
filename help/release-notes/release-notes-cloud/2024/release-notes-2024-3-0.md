@@ -49,7 +49,7 @@ AEM Sites 现在可以用作 Edge Delivery Services 的内容源。作者可以�
 
 ![AEM 创作](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-有关更多信息，请参阅该[文档](/help/edge/overview.md)并观看 [AEM Gems：开始使用 AEM 创作和 Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+有关更多信息，请参阅该[文档](/help/edge/overview.md)并观看 [AEM Gems：开始使用 AEM 创作和 Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=zh-Hans#M43905)
 
 **适用于无头实施的 Universal Editor**
 

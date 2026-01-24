@@ -292,7 +292,7 @@ ht-degree: 100%
 
 1. 检查 Adobe Experience Cloud 服务状态。
 2. 查看 [Edge Delivery Services 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hans)。
-3. 访问 [Adobe Experience League 社区](https://experienceleaguecommunities.adobe.com/)。
+3. 访问 [Adobe Experience League 社区](https://experienceleaguecommunities.adobe.com/?profile.language=zh-Hans)。
 4. 联系 Adobe 客户关怀部门。
 
 +++
