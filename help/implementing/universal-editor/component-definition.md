@@ -4,10 +4,10 @@ description: 详细了解组件定义与通用编辑器之间的 JSON 契约。
 feature: Developing
 role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 97%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 100%
 
 `plugins` 定义了哪个插件负责保留组件。常用的插件有：
 
-* `aem` 表示 [AEM as a Cloud Service。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service)
-* `aem65` 表示 [AEM 6.5.](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65) 和 [AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts)
+* `aem`用于[AEM as a Cloud Service，](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service) [AEM 6.5.，](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)和[AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts)
 * `xwalk` 表示[使用 AEM Sites 为 Edge Delivery Services 进行创作。](https://www.aem.live/developer/ue-tutorial)
+* `da`文档创作[的](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` 或 `cf` {#page-cf}
 

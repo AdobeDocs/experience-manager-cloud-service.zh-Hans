@@ -4,10 +4,10 @@ description: 通过示例了解通用编辑器可以在属性面板中编辑的�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 97%
+source-wordcount: '1617'
+ht-degree: 96%
 
 ---
 
@@ -103,6 +103,10 @@ ht-degree: 97%
 | `multi` | `boolean` | 字段是否为多字段<br/>请注意，属性面板中的多字段不允许容器嵌套 | 否 |
 | `validation` | `ValidationType` | 验证规则或字段的规则 | 否 |
 | `raw` | `unknown` | 组件可以使用的原始数据 | 否 |
+
+>[!NOTE]
+>
+>使用`_`或[`aem`插件时，字段名称中不允许使用下划线(`xwalk`)。](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### 名称字段和嵌套 {#nesting}
 
