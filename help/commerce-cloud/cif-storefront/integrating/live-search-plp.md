@@ -5,9 +5,9 @@ exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---

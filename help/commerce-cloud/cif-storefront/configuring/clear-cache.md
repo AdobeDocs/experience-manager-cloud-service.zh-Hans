@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 3%
@@ -85,11 +85,11 @@ ht-degree: 3%
 
 | 参数 | 值 | 必填/必填 | 注释 |
 |------------------------------|-------------------|---|---|
-| `Content-Type` | `application/json` | 必填 |  |
-| `Authorization` | 相应作者的用户凭据（身份验证类型：基本身份验证） | 必填 | 添加相应的用户名和密码。 |
+| `Content-Type` | `application/json` | 必需 |  |
+| `Authorization` | 相应作者的用户凭据（身份验证类型：基本身份验证） | 必需 | 添加相应的用户名和密码。 |
 
 
-### 有效负荷 {#payload}
+### 负载 {#payload}
 
 下表显示了特征现成的现有属性。 这些`InvalidateType`属性需要与必需属性（如`storePath`）一起提供。
 

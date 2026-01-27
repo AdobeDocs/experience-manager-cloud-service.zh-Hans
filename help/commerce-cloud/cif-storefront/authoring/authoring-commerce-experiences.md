@@ -4,7 +4,7 @@ description: 了解如何通过在不离开上下文的情况下访问产品数�
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-CIF加载项通过特定于Commerce的功能扩展了AEM创作。 这允许作者在不离开上下文的情况下访问产品数据和内容，从而高效地构建和管理商业相关的体验。
+CIF加载项通过特定于Commerce的功能扩展了AEM创作。 这使得作者无需离开上下文即可访问产品数据和内容，从而高效地构建和管理商业相关体验。
 
 ## 选取器 {#pickers}
 
@@ -94,7 +94,7 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，嵌入超链接(
 
 ![暂存指示器](../assets/authoring/staged-indicator.png)
 
-## 全能搜索 {#omnisearch}
+## 全方位搜索 {#omnisearch}
 
 使用Omnisearch是一种让从业人员通过全文搜索查找AEM内容和产品目录数据的简单方法。 Omnisearch将在AEM和commerce后端中运行全文搜索，以在commerce后端和AEM内容中查找产品目录对象。 AEM结果还包括使用产品/类别数据标记的内容。
 

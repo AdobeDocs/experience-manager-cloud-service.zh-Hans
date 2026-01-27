@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 61%
@@ -45,7 +45,7 @@ CIF 加载项将产品上下文引入 Experience Manager 中，并提供产品�
 
 ### 价值实现时间 (TTV) {#ttv}
 
-CIF通过[AEM核心组件](https://www.aemcomponents.dev/)、[AEM Venia引用店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)以及PWA（Headless内容和商务）的集成模式来加快项目开发。
+CIF通过[AEM核心组件](https://www.aemcomponents.dev/)、[AEM Venia引用店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)以及PWA（Headless内容和商务）的集成模式来加快项目开发。
 
 CIF通过始终保持最新的附加组件为持续创新而构建，可让您访问新的改进功能。
 
@@ -62,7 +62,7 @@ CIF通过基于最佳实践的标准化集成模式为您提供支持。 这有�
    * 无法访问暂存数据
    * 需要实时产品数据和体验
 * 数字成熟度的不断增长导致了对体验管理的需求
-* &#x200B;
+* 
    * CIF 附带产品体验管理功能，无需额外的 IT 工作即可逐步整合这些功能。
 * 全渠道就绪
    * CIF通过模式、加速器和核心组件支持各种接触点技术（服务器端、混合型、客户端）。
