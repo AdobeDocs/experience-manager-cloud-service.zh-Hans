@@ -158,7 +158,7 @@ ht-degree: 3%
 ## 使用草稿和提交组件在Sites页面上查看草稿/提交的表单
 
 要查看已保存的草稿或已提交的表单，请使用&#x200B;**草稿和提交** Forms门户组件。
-在草稿和提交组件**[!UICONTROL 的]**&#x200B;配置对话框中选择&#x200B;**选择类型**&#x200B;作为[草稿Forms](#configure-properties-of-the-drafts--submissions-component)时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
+在草稿和提交组件&#x200B;**[!UICONTROL 的]**&#x200B;配置对话框中选择&#x200B;**选择类型**&#x200B;作为[草稿Forms](#configure-properties-of-the-drafts--submissions-component)时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
 
 ![草稿图标](assets/drafts-component.png)
 
