@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 16%
+source-wordcount: '683'
+ht-degree: 17%
 
 ---
 
@@ -31,11 +31,9 @@ AEM as a Cloud Service为用户提供了使用XFA (XML Forms架构)表单模板�
 
 ## 先决条件
 
-要使用XFA表单模板或XDP文件基于核心组件创建自适应表单，您需要满足以下条件：
 
-* 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 * 建议熟悉以下方面：
-   * 创建自适应表单
+   * 创建自适应表单 
    * XFA(XML Forms架构)
 
 ## 如何使用XFA表单模板或XDP文件创建自适应表单？

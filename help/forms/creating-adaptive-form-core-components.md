@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 47%
+source-wordcount: '2352'
+ht-degree: 48%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 47%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -31,37 +31,21 @@ AEM Forms的表单生成器允许您创建有吸引力、响应式、动态和�
 
 ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
 
-## 适用性和用例
-
-### 保险
-
-## AEM Forms能否同时用于面向客户的流程和内部保险流程？
-
-是。AEM Forms支持面向客户的数字表单以及由员工或代理商主导的内部流程，例如审核、批准和辅助数据捕获。
-
-## AEM Forms能否用于保险索赔提交？
-
-是。AEM Forms支持多步骤自适应表单，这些表单允许投保人以数字方式提交保险理赔，包括捕获结构化数据和支持文档。
-
-## AEM Forms是否支持移动保险理赔？
-
-是。AEM Forms支持响应式且支持移动设备的表单，允许客户和代理从移动设备提交保险信息。
 
 ## 先决条件
 
 您需要以下项来创建自适应表单：
 
 
-* **为您的环境启用自适应Forms核心组件**：在创建项目时，已为您的环境启用自适应Forms核心组件。  安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。 在为您的环境启用核心组件时，会将&#x200B;**自适应Forms （核心组件）**&#x200B;模板和主题添加到您的环境中。 如果您的 AEM SDK 版本低于 2023.02.0，请[确保在您的环境上启用 `prerelease` 标志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)，因为自适应表单核心组件是 2023.02.0 发布之前预发布的一部分。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。它的预格式化的组件包含某些属性和内容结构。它还提供用于定义主题和提交操作的选项。主题定义外观，提交操作定义在提交自适应表单时执行的操作。例如，将收集到的数据发送到数据源。Cloud Service 提供一个名为 blank 的 OOTB 模板：
 
    * `blank` 模板包含在每个新的 AEM Forms as a Cloud Service 项目中。
    * 您可以通过包管理器安装参考包，以将 `blank` 模板添加到 AEM Forms as a Cloud Service 项目。
    * 您也可以[从头开始创建自适应Forms模板（核心组件）](/help/forms/template-editor-core-components.md)。
-   * 您还可以将[示例模板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans)部署到您的环境。 这些功能可帮助您迅速创建表单。
+   * 您还可以将[示例模板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署到您的环境。 这些功能可帮助您迅速创建表单。
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。`Canvas`模板包含在每个新的AEM Forms as a Cloud Service计划中。 您还可以将[示例主题](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans)部署到您的环境。 这些功能可帮助您开始设计表单的样式，并提供一个基础结构，以根据业务需求创建或自定义主题。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。`Canvas`模板包含在每个新的AEM Forms as a Cloud Service计划中。 您还可以将[示例主题](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署到您的环境。 这些功能可帮助您开始设计表单的样式，并提供一个基础结构，以根据业务需求创建或自定义主题。
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
@@ -72,7 +56,7 @@ AEM Forms的表单生成器允许您创建有吸引力、响应式、动态和�
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## 构建自适应表单  {#create-an-adaptive-form-core-components}
@@ -122,7 +106,7 @@ AEM Forms的表单生成器允许您创建有吸引力、响应式、动态和�
 
 1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。根据自适应表单的类型，关联<!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)中存在的表单元素将显示在侧边栏中&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。 您还可以拖放这些元素来生成自适应表单。
 
-现在，您可以将[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)拖放到自适应Forms容器中以设计和创建表单。 您还可以访问[https://aemcomponents.dev/](https://aemcomponents.dev/)以查看正在运行的可用核心组件。
+现在，您可以将[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)拖放到自适应Forms容器中以设计和创建表单。 您还可以访问[https://aemcomponents.dev/](https://aemcomponents.dev/)以查看正在运行的可用核心组件。
 
 >[!NOTE]
 >
@@ -225,3 +209,18 @@ AEM Forms的表单生成器允许您创建有吸引力、响应式、动态和�
 
 
 
+## 适用性和用例
+
+### 保险
+
+## AEM Forms能否同时用于面向客户的流程和内部保险流程？
+
+是。AEM Forms支持面向客户的数字表单以及由员工或代理商主导的内部流程，例如审核、批准和辅助数据捕获。
+
+## AEM Forms能否用于保险索赔提交？
+
+是。AEM Forms支持多步骤自适应表单，这些表单允许投保人以数字方式提交保险理赔，包括捕获结构化数据和支持文档。
+
+## AEM Forms是否支持移动保险理赔？
+
+是。AEM Forms支持响应式且支持移动设备的表单，允许客户和代理从移动设备提交保险信息。

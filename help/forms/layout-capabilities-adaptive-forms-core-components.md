@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: 基于核心组件的自适应表单布局、表单的不同布局、动态表单布局AEM、AEM Cloud Service表单布局、AEM核心组件中的表单布局类型、自适应表单布局
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2142'
 ht-degree: 16%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service（核心组件） | 本文 |
 
@@ -37,9 +37,6 @@ ht-degree: 16%
 
 是。AEM Forms支持将安全文档上传作为表单提交的一部分，并且其访问控制和安全数据处理符合企业安全要求。
 
-## 先决条件
-
-在浏览布局的各种功能之前，请确保为环境启用了核心组件。 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
 
 ## 自适应Forms布局类型
 
@@ -93,7 +90,7 @@ ht-degree: 16%
 
 水平选项卡布局
 
-您可以使用[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)在表单中添加水平选项卡布局。 有关如何配置水平选项卡组件的各种属性的详细说明，请参阅[水平选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
 >[!TAB 折叠布局]
@@ -236,7 +233,7 @@ ht-degree: 16%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在允许您添加组件的面板中查找部分。
-1. 单击&#x200B;**添加**&#x200B;图标。 图标是一个加号(+)，表示添加新组件的选项。
+1. 单击&#x200B;**添加**图标。 图标是一个加号(+)，表示添加新组件的选项。
    ![插入布局](/help/forms/assets/tabs-on-top-add-component.png)
 
    单击&#x200B;**添加**&#x200B;图标会显示&#x200B;**插入新组件**&#x200B;对话框，其中显示了要插入的各种组件。

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1904'
 ht-degree: 4%
 
 ---
@@ -28,11 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 先决条件
 
-**为您的环境启用自适应Forms核心组件**：创建程序时，已为您的环境启用自适应Forms核心组件。请安装最新版本以为AEM Cloud Service环境启用自适应Forms核心组件。
-
->[!NOTE]
->
-> 在部署基于Archetype 45的Forms as a Cloud Service环境时，会将&#x200B;**自适应Forms （核心组件）**&#x200B;模板和基于核心组件的主题添加到您的环境中。
+在基于Archetype 45部署Forms as a Cloud Service环境时，将向您的环境中添加基于组件的核心主题。
 
 ## 使用模板 {#working-with-templates}
 
@@ -42,7 +38,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 >
 > 您可以在特定于核心组件的文件夹中找到基于核心组件的可编辑模板。
 
-Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=zh-Hans#editing-templates-template-authors)。
+Experience Manager提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
 
 ## 创建模板 {#create-template}
 
@@ -139,7 +135,7 @@ Header and footer are added in the Initial Content layer.
 
 ![结构图层中的布局容器](/help/forms/assets/layout-template-core-component.png)
 
-有关其他信息，请参阅文章[了解响应式布局](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=zh-Hans)。
+有关其他信息，请参阅文章[了解响应式布局](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en)。
 
 ## 启用模板 {#enabling-the-template}
 
@@ -152,7 +148,7 @@ Header and footer are added in the Initial Content layer.
 
 ## 导入或导出模板 {#importing-or-exporting-a-template}
 
-表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`/conf`中的`https://<server>:<port>/crx/packmgr`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您还可以[使用AEM原型创建模板并将其部署到云服务实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=zh-Hans#prerequisites)。
+表单可与其模板配合使用。 下载使用自定义模板创建的自适应表单时，不会下载该模板。 当您在其他[!DNL AEM Forms]实例上导入表单时，将导入该表单而不导入其模板。 如果表单已导入，但其模板不可用，则不会呈现表单。 您可以从`/conf`中的`https://<server>:<port>/crx/packmgr`节点打包自定义模板，并将其移植到要上载表单的[!DNL AEM Forms]实例中。 您还可以[使用AEM原型创建模板并将其部署到云服务实例](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
 
 >[!NOTE]
 >
@@ -278,9 +274,9 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 >To use the same container policy as of the source Adaptive Form, it is recommended to save the template in the same folder as of the source Adaptive Form. In case, the template is saved in any other folder, than the created template uses a default container policy.
 -->
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
-* 使用基于核心组件的组件创建模板，例如自适应表单文本、自适应表单容器等。 要获取有关自适应Forms核心组件的信息，请[单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。
+* 使用基于核心组件的组件创建模板，例如自适应表单文本、自适应表单容器等。 要获取有关自适应Forms核心组件的信息，请[单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。
 * 限制模板的数量以匹配网站上提供的截然不同的表单类型
 * 为模板中使用的自定义组件提供必要的灵活性和配置功能。
 

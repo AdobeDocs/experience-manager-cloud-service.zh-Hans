@@ -4,9 +4,9 @@ description: 了解如何将表单链接添加到AEM Sites页面。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,6 @@ ht-degree: 1%
 
 ![链接图标](/help/forms/assets/link-forms.png)
 
-## 先决条件
-
-在探索Forms Portal组件的各种功能之前，请确保为您的环境启用了核心组件。 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
-
-将最新的核心组件部署到环境后，即可在创作环境中访问Forms Portal组件。
 
 ## 将链接组件添加到您的站点页面
 
