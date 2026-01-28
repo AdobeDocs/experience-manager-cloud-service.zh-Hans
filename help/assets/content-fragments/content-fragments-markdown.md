@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
+source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 77%
 
     `### This is an H3`
 
-    `###### This is a H6`
+    `###### This is an H6`
 
 或者，您也可以通过等号加下划线来创建一级标题，并通过减号加下划线来创建二级标题。例如：
 
@@ -72,7 +72,7 @@ ht-degree: 77%
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -136,7 +136,7 @@ ht-degree: 77%
 
 您可以创建已排序和未排序的列表。
 
-要创建未排序的列表，请使用 &ast; 符号。例如：
+要创建未排序的列表，请使用 &amp;ast; 符号。例如：
 
     `* item in list`
 
@@ -156,7 +156,7 @@ ht-degree: 77%
 
 您可以为文本添加斜体或粗体样式。
 
-要按如下方式添加斜体，请执行以下操作：
+您可以按如下方式添加斜体：
 
     `*single asterisks*`
 
