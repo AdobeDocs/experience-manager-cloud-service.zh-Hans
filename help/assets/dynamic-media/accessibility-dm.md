@@ -1,20 +1,20 @@
 ---
 title: Dynamic Media 中的辅助功能
-description: 了解如何在Dynamic Media中使用视频，例如编码视频、将视频发布到YouTube以及查看视频报表的最佳实践。 还了解如何向视频添加隐藏式字幕、字幕或章节标记。
+description: 了解如何在Dynamic Media中使用视频，例如编码视频并将视频发布到YouTube的最佳实践。 还了解如何向视频添加隐藏式字幕、字幕或章节标记。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 4a09e74ae62dba40deb192b1dfe38860bdb43921
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 1%
 
 ---
 
-# Dynamic Media 中的辅助功能 {#accessibility-in-dm}
+# Dynamic Media 中的无障碍功能 {#accessibility-in-dm}
 
 {{work-with-dynamic-media}}
 
@@ -22,7 +22,7 @@ Dynamic Media在整个创作用户界面中支持键盘控制和辅助技术，�
 
 ## Dynamic Media中的键盘辅助功能支持 {#keyboard-support-in-dm}
 
-由于Dynamic Media是[!DNL Experience Manager Assets]的一个插件，因此大多数键盘控件行为与[!DNL Experience Manager Assets]中的行为相同。 例如，Dynamic Media中的`Cancel`按钮与[!DNL Experience Manager Assets]中的焦点高亮相同。 它还会响应`Spacebar`键，如[!DNL Experience Manager Assets]中所示。 查看Assets[&#128279;](/help/assets/accessibility.md#keyboard-shortcuts)中的键盘快捷键。
+由于Dynamic Media是[!DNL Experience Manager Assets]的一个插件，因此大多数键盘控件行为与[!DNL Experience Manager Assets]中的行为相同。 例如，Dynamic Media中的`Cancel`按钮与[!DNL Experience Manager Assets]中的焦点高亮相同。 它还会响应`Spacebar`键，如[!DNL Experience Manager Assets]中所示。 查看Assets[中的](/help/assets/accessibility.md#keyboard-shortcuts)键盘快捷键。
 
 大多数情况下，Dynamic Media中的单个用户界面元素支持的击键显而易见，很容易找到。 Dynamic Media中的键盘控件与以下内容有关：
 
@@ -55,12 +55,12 @@ Dynamic Media用户界面元素可与屏幕阅读器等辅助技术配合使用�
 
 所有开箱即用的Dynamic Media查看器组件都支持客户使用键盘访问功能。
 
-请参阅Dynamic Media查看器参考指南中的[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=zh-Hans)。
+请参阅Dynamic Media查看器参考指南中的[键盘辅助功能和导航](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#)。
 
-## Dynamic Media查看器中的辅助技术支持{#assistive-technology=support-for-dm-viewers}
+## Dynamic Media查看器中的辅助技术支持 {#assistive-technology=support-for-dm-viewers}
 
 所有Dynamic Media查看器组件都支持ARIA（可访问的富互联网应用程序）角色和属性，以改进与屏幕阅读器等辅助技术的集成。
-请参阅Dynamic Media查看器参考指南中的任何自定义查看器主题中的&#x200B;**辅助技术支持**&#x200B;帮助主题。 例如，对于视频查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=zh-Hans)；对于交互式图像查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=zh-Hans#viewers-for-aem-assets-only)。
+请参阅Dynamic Media查看器参考指南中的任何自定义查看器主题中的**辅助技术支持**&#x200B;帮助主题。 例如，对于视频查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#)；对于交互式图像查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only)。
 
 ## [!DNL Dynamic Media]支持隐藏式字幕 {#closed-caption-support}
 
@@ -71,5 +71,5 @@ Dynamic Media支持传送带隐藏式字幕的视频和自适应视频集。 字
 
 >[!MORELIKETHIS]
 >
->* Adobe解决方案的[辅助功能](https://www.adobe.com/accessibility.html)
+>* Adobe解决方案的[辅助功能](https://www.adobe.com/trust/accessibility.html)
 >* Experience Manager Assets中的[辅助功能](/help/assets/dynamic-media/accessibility-dm.md)
