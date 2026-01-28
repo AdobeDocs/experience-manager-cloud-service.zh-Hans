@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 96%
+source-wordcount: '559'
+ht-degree: 84%
 
 ---
 
 # Markdown {#markdown}
 
-在[创作](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)内容片段时，可能为[多行文本字段](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)定义了&#x200B;**默认类型**&#x200B;的 **Markdown**。内容片段编辑器使用 *markdown* 语法使您可轻松地为创作页面和投放 Headless 编写内容：
+当您[创作](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)内容片段时，您可能使用[Markdown](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)的&#x200B;**默认类型**&#x200B;定义了&#x200B;**多行文本字段**。 内容片段编辑器使用 *markdown* 语法使您可轻松地为创作页面和投放 Headless 编写内容：
 
 ![编辑器中的 Markdown 多行文本字段](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ ht-degree: 96%
 
 ## 标题符号 {#heading-notation}
 
-要通过在标题前面放置井号标记 (#) 来创建标题，请执行以下操作： 一个井号标记(#)用于一级标题，两个井号标记(##)用于二级标题，依此类推。 您最多可以使用 6 个井号标记。例如：
+要通过在标题前面放置井号标记 (#) 来创建标题，请执行以下操作： 一个井号标记(#)表示H1，两个井号标记(##)表示H2，依此类推。 您最多可以使用 6 个井号标记。例如：
 
     `## This is an H2`
 
@@ -66,7 +66,7 @@ ht-degree: 96%
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -130,7 +130,7 @@ ht-degree: 96%
 
 您可以创建已排序和未排序的列表。
 
-要创建未排序的列表，请使用 &ast; 符号。例如：
+要创建未排序的列表，请使用 &amp;ast; 符号。例如：
 
     `* item in list`
 
@@ -150,7 +150,7 @@ ht-degree: 96%
 
 您可以为文本添加斜体或粗体样式。
 
-要按如下方式添加斜体，请执行以下操作：
+您可以按如下方式添加斜体：
 
     `*single asterisks*`
 
@@ -182,7 +182,7 @@ ht-degree: 96%
 
 ## 反斜线转义 {#backslash-escapes}
 
-您可以使用反斜杠转义生成在格式语法中具有特殊含义的文字字符。例如，如果您想要在单词周围加上文字星号（而不是 HTML 标记），则可以在星号前使用反斜杠，如下所示：
+您可以使用反斜杠转义生成在格式语法中也具有特殊含义的文字字符。 例如，如果要用文字星号括住单词(而不是HTML &lt;em>标记)，则可以在星号前使用反斜杠，如下所示：
 
     `\\*literal asterisks\\*`
 
