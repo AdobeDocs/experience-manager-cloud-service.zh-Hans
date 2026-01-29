@@ -3,9 +3,9 @@ title: 发现代理概述
 description: 了解如何使用发现代理，通过自然的对话提示来按需提供相关的AEM内容，从而提供简化的、点击式的免费发现体验。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -152,7 +152,7 @@ Discovery Agent可以识别满足特定质量要求的资产（如文件格式�
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 
@@ -170,3 +170,6 @@ Discovery Agent可以识别满足特定质量要求的资产（如文件格式�
 
 * 使用特定于您的组织的元数据，例如类别（跑鞋、电子产品）、季节（秋季、春季）、事件（黑色星期五、产品发布）和渠道（Web、电子邮件、打印）来进一步筛选内容。
 
+## 限制 {#limitations-discovery-agent}
+
+发现代理仅支持对图像和SVG格式类型使用基于维度的提示。 例如 `Find images wider than 1080px`。
