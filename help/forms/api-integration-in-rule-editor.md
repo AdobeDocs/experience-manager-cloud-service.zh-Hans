@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在规则编辑器中集成 API，调用服务增强功能
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1034'
 ht-degree: 3%
 
 ---
@@ -123,6 +123,10 @@ ht-degree: 3%
 
 同样，**Passport Issuance国家/地区**&#x200B;和&#x200B;**目标国家/地区**&#x200B;使用相同的API调用，确保所有三个字段中的数据一致且最新。
 
+>
+>
+> 您可以通过调用API并使用自定义函数[从JSON数组](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)检索属性值。 此方法允许您提取值并将其直接绑定到表单字段。
+
 ## 实施API失败的重试机制
 
 当API请求失败时，在向用户报告错误之前重试请求通常很有用。 通过在&#x200B;**function.js**&#x200B;文件中写入自定义代码，您可以实施轮询和重试机制。
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 在上述代码中，**retryHandler**&#x200B;函数通过自动重试管理API请求，以防失败。 它使用一个请求函数(requestFn)，最多尝试请求两次，为每次重试添加元数据。
-
->[!NOTE]
->
-> 有关如何添加自定义函数的详细步骤，请参阅[基于核心组件的自适应Forms的自定义函数简介](/help/forms/create-and-use-custom-functions.md)一文。
 
 ## 常见问题解答
 

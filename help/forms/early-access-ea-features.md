@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3096'
 ht-degree: 19%
 
 ---
@@ -312,6 +312,8 @@ AEM Forms Doc Assurance API是AEM Forms Cloud Service Communication API中的一
 * [支持事件有效负载的增强导航](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)： Invoke Service处理程序中的&#x200B;**导航到**&#x200B;操作支持`EVENT_PAYLOAD`，允许表单作者根据事件响应配置跟进操作。
 
 * [输入参数中支持函数和数学表达式](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)：输入参数现在支持函数调用和数学表达式，使表单作者可以直接传递动态计算的值。
+
+* [从JSON数组检索属性值](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)：使用自定义函数调用API以从JSON数组提取值，并将它们直接绑定到表单字段。
 
 ## 另请参阅
 

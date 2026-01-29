@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 您还可以添加多个规则来处理来自&#x200B;**调用服务**&#x200B;操作的不成功响应。
 
-**在服务器**&#x200B;上启用错误验证&rbrace;功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
+**在服务器**&#x200B;上启用错误验证}功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
 
 ## 在规则编辑器中使用调用服务的先决条件
 
@@ -171,6 +171,10 @@ ht-degree: 1%
 
 ![结果](/help/forms/assets/output1.png)
 
+> 
+>
+> 也可以通过调用服务、解析JSON响应并应用自定义函数来动态填充下拉列表选项。 有关详细信息，请参阅[此部分](#retrieve-property-values-from-a-json-array)。
+
 ### 用例2：使用调用服务的输出设置可重复面板
 
 此用例演示如何根据&#x200B;**调用服务**&#x200B;的输出动态填充可重复面板。
@@ -269,6 +273,123 @@ ht-degree: 1%
 单击&#x200B;**提交**&#x200B;按钮时，将调用`redirect-api` API服务。 成功后，用户将被重定向到&#x200B;**联系我们**&#x200B;页面。
 
 ![事件有效负载输出](/help/forms/assets/output5.gif)
+
+## 从JSON数组检索属性值
+
+自适应Forms支持调用服务、处理JSON响应以及动态填充表单字段。 本节介绍如何从JSON数组提取属性值并将其绑定到表单字段。
+
+### 示例JSON响应
+
+以下示例代表美国销售地区和销售代表列表：
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### 用于提取属性值的自定义函数
+
+<span class="preview">这是早期采用者功能。 如果您有兴趣，请将工作地址中的电子邮件快速发送到mailto:aem-forms-ea@adobe.com，以请求访问功能</a>。</span>
+
+使用以下自定义函数从JSON数组中提取属性值。
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+自定义函数接受：
+
+* **jsonArray**：从服务返回的JSON数组
+* **propertyName**：要提取值的属性
+
+自定义函数返回一个简单的值数组。
+
+>[!NOTE]
+>
+> 有关如何添加自定义函数的详细步骤，请参阅[基于核心组件的自适应Forms的自定义函数简介](/help/forms/create-and-use-custom-functions.md)一文。
+
+
+### 在规则编辑器中使用函数
+
+要从JSON数组中检索特定值，请执行以下操作：
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+以下示例演示了如何使用此响应填充`Sales Department`表单。
+
+例如，让我们创建一个`Sales Department`表单，其中包含`Select Region`和`Select Sales Representative`下拉列表。
+
+**步骤1：在表单初始化时调用服务**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> 要了解如何集成API而不在可视规则编辑器中创建表单数据模型，请[单击此处](/help/forms/api-integration-in-rule-editor.md)。
+
+**步骤2：填充区域下拉列表**
+
+为服务调用添加成功处理程序并配置以下操作：
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+此规则读取JSON数组，提取`region`属性值并将值分配给`Select Region`下拉列表。
+
+同样，在成功处理程序中为`Select Sales Representative`下拉菜单配置操作。
+
+JSON数组的![事件有效负载](/help/forms/assets/event-payload.png)
+
+当表单加载时，会返回JSON数据并且自定义函数提取属性值，并自动填充下拉列表：
+
+![事件有效负载表单](/help/forms/assets/event-payload-form.png)
 
 ## 常见问题解答
 
