@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service的最新发行说明'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.12.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.12.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 9e81e0f3ed4b3e4ac02655cf4203191c61007b1d
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 37%
+source-wordcount: '1951'
+ht-degree: 47%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.12.0 版的发行说明 {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
+以下部分概述了 2025.12.0 版的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 37%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2026.1.0)的发布日期是2026年1月29日。 下一个功能版本(2026.2.0)计划于2026年2月26日发布。
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2025.12.0)的发布日期是2025年12月11日。 下一个功能版本(2026.1.0)计划于2026年1月29日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -69,8 +67,6 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 * 将积极使用代理的团队成员的名称和Adobe ID。
 * 列出您或您的团队将要使用的特定座席。 或者说“所有特工”
 
-被选为参与的客户将由Adobe直接通知。 参与取决于资格考虑因素，包括客户许可和有限的计划能力。 虽然并非所有请求最初都可以得到满足，但可能会在未来测试阶段考虑添加其他客户。
-
 ### AEM Foundation(Beta项目) {#aem-foundation-beta-programs}
 
 查看[AEM Foundation测试版计划](#foundation-early-adopter)。
@@ -79,34 +75,26 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 
 查看[Cloud Manager测试版计划](/help/implementing/cloud-manager/release-notes/current.md)。
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Content MCP Server {#content-MCP}
-
-聊天应用程序（例如ChatGPT）和现代IDE（例如Cursor）可以使用模型上下文协议(MCP)让MCP服务器公开大型语言模型(LLM)调用工具。 您可以用自然语言描述所需的内容，并让LLM将该意图转换为相应的API调用，而不是根据低级API规范编写代码。 在某些情况下，提示可能比导航用户界面更方便。
-
-例如，您可以在AEM中提示ChatGPT： *Edit /en/coffee.html：将内容中的Frescopa Coffee文本更改为20岁的人想要的内容。*
-
-AEM提供两个内容MCP服务器 — **只读**&#x200B;和&#x200B;**读/写** — 包含用于处理&#x200B;**Pages**、**Content Fragments**&#x200B;和&#x200B;**Assets**&#x200B;的工具。 这些服务器可以从以下MCP客户端使用： **ChatGPT**、**Claude**、**Cursor**&#x200B;和&#x200B;**Microsoft Copilot Studio**。
-
-在[将MCP与AEM云服务结合使用](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)中了解更多信息。 如有疑问或反馈，请发送电子邮件至[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI搜索**
+**用于与AEM Assets集成的Figma插件新版本可用**
 
-人工智能搜索引入了一种智能的上下文感知搜索体验，它通过了解用户查询背后的含义和意图，超越了传统关键词匹配。 它由AI和机器学习提供支持，即使查询用词不同、包含拼写错误、使用同义词或以不同语言提交，也能提供更准确的结果，帮助用户更快地找到相关内容，用更少的工作量。
+* 将资源从AEM存储库导入Figma文档时，支持视频文件(MP4、MOV、WebM)、动画文件(GIF)和矢量文件(SVG)。
 
-有关详细信息，请参阅[Assets视图](/help/assets/search-assets-view.md#ai-search)和[管理员视图](/help/assets/search-assets.md#ai-search)中的AI搜索。
+* 支持检查与AEM存储库中存在的资源相比，Figma文档中使用的资源是否有任何更新，如果有任何更新，则获取最新版本的资源。
 
-**桌面应用程序3.0.1版**
+* 在导出PNG（缩放）和JPG（图像缩放和质量）文件格式时支持导出配置。
 
-[Desktop App 3.0.1（2025年12月20日）](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/release-notes)提高了关键工作流的可靠性、性能和稳定性。 此版本通过修复与AEM Author的同步问题来确保一致的文件夹命名，允许在活动传输期间不间断地使用应用程序，通过异步处理增强UI响应性，通过分页优化大型文件传输，并解决稳定性问题，包括在大型文件夹上传和下载期间创作服务器重新启动和崩溃的问题。
+  ![Figma插件](/help/assets/assets/figma-v2-plugin.png)
 
-**Adobe Asset Link CEP 2026.01.0版本**
+针对已上传的资产进行&#x200B;**恶意软件检测**
 
-[Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)在InDesign中引入了新的“重新链接缺少的链接”选项，该选项会自动从同一AEM文件夹重新链接其他缺少的资源。 该功能根据文件名匹配资源，显着减少了恢复断开链接时的手动工作。
+AEM Assets现在包括对已上传文件的自动恶意软件扫描，确保在进入DAM之前隔离可疑资产，以保护您的存储库免受威胁。 管理员可以配置扫描设置和隔离保留策略以简化安全控制。
 
+**AI生成的元数据 — 资格更新**
+
+AEM Assets中人工智能生成的元数据不再需要签署GenAI骑士才能启用。 现在，已签署GenAI Rider的客户和尚未验证的客户均可使用该功能。 明确选择不使用GenAI的客户将继续禁用该功能。 要在环境级别管理功能启用，请参阅[禁用AI生成的元数据](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata)。 此更改针对的是版本23482或更高版本的客户。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -167,18 +155,11 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础 {#foundation}
 
-### [!DNL Experience Manager]作为[!DNL Cloud Service] Foundation重要声明 {#foundation-notices}
+### [!DNL Experience Manager]作为[!DNL Cloud Service] Foundation的新功能 {#foundation-new}
 
-#### Java API弃用 {#java-api-deprecation}
+#### 即将弃用 Java API {#java-api-deprecation}
 
-不应再在代码中使用针对2026年2月26日删除的已弃用API。 要防止部署块，请在2026年3月26日之前删除API用法。 重要日期：
-
-* **从2026年1月26日开始**：操作中心通知电子邮件将在每个环境&#x200B;**每周发送**&#x200B;以提醒删除这些API的使用情况。
-* **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。
-* **2026年3月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**，**阻止新代码的部署**，直到移除该使用为止。
-* **2026年4月30日**：仍在使用这些API的环境可能&#x200B;**不再接收关键的Adobe版本更新**。
-
-请查看[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整详细信息。但为了方便起见，下面列出了这些 API：
+若干已弃用的 API 于 8 月 31 日被标记为移除，因此不应再被引用。如果在代码中检测到已弃用的API，您将会收到操作中心通知，并且在1月29日之后，将在Cloud Manager构建期间显示通知，以强调删除使用情况的重要性。 请查看[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整详细信息。但为了方便起见，下面列出了这些 API：
 
 +++ 展开查看 Java API 弃用项
 
@@ -212,7 +193,7 @@ OSGi properties:
 
 #### Java 11 运行时弃用 {#java11-runtime-deprecation}
 
-Adobe于2025年10月14日将&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#x200B;环境升级到更高性能的&#x200B;**Java 21运行时**。 从&#x200B;**2月9日**&#x200B;开始（逐步推出到2月11日），AEM Cloud Service SDK或任何云环境都不会使用Java 11运行时。
+Adobe于2025年10月14日将&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#x200B;环境升级到更高性能的&#x200B;**Java 21运行时**。 从&#x200B;**2月9日**&#x200B;开始，AEM Cloud Service SDK或任何云环境都不会使用Java 11运行时。
 
 >[!NOTE]
 >
@@ -221,9 +202,9 @@ Adobe于2025年10月14日将&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#
 
 #### AEM Java 日志配置策略的执行 {#logconfig-policy}
 
-AEM Java日志必须遵循标准格式，以确保在所有客户环境中进行可靠的监控。 自定义日志配置（如更改日志格式、输出文件或默认日志级别）已不再受支持。日志必须继续定向到默认文件，且必须保留 AEM 产品代码的默认日志级别。请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)，以了解完整详情。
+正如4月发布说明中所述，AEM Java 日志必须遵循标准格式，以确保在所有客户环境中进行可靠监控。自定义日志配置（如更改日志格式、输出文件或默认日志级别）已不再受支持。日志必须继续定向到默认文件，且必须保留 AEM 产品代码的默认日志级别。请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)，以了解完整详情。
 
-任何不受支持的自定义日志记录覆盖&#x200B;*现在将被忽略*。 大多数客户没有受到影响，Adobe已联系其当前配置可能受到影响的客户。
+从&#x200B;**1月29日**&#x200B;开始，将忽略任何不受支持的自定义日志记录覆盖。 根据我们的分析，大多数客户不会受到影响，对于当前配置可能受到影响的任何客户，Adobe 将会与其联系。
 
 请审查并更新所有依赖自定义日志记录行为的下游流程。例如：
 
@@ -245,9 +226,9 @@ AEM Java日志必须遵循标准格式，以确保在所有客户环境中进行
 >请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
 >
 
-#### AEM Edge功能(Beta程序) {#edge-functions}
+#### 边缘计算（Beta 计划）
 
-AEM Edge Functions(在之前的发行说明中称为&#x200B;*Edge Computing*)允许您在CDN层执行JavaScript，从而使数据处理更接近最终用户。 这降低了延迟，使得边缘设备能够提供响应迅速、动态丰富的体验。
+边缘计算允许您在内容传递网络 (CDN) 层执行 JavaScript，使数据处理更接近最终用户。这降低了延迟，使得边缘设备能够提供响应迅速、动态丰富的体验。
 
 常见的用例包括：
 
@@ -273,6 +254,7 @@ AEM Edge Functions(在之前的发行说明中称为&#x200B;*Edge Computing*)允
 
 如需申请访问权限并分享反馈，请发送邮件至 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)。
 
+
 #### 人工智能答案 — 适用于AEM Sites (Beta程序)的更智能、上下文感知响应 {#ai-answers-beta}
 
 人工智能解答为访客引入了一种与内容交互的新方法。 它通过检索 — 增强型生成(RAG)技术提供支持，利用您的AEM管理的数据直接在您的数字体验中提供准确、品牌一致的答案。
@@ -287,14 +269,11 @@ AEM Edge Functions(在之前的发行说明中称为&#x200B;*Edge Computing*)允
 
 如果您有兴趣使用此功能并提供反馈，请向[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)发送电子邮件。
 
-#### 用于AEM Java和Dispatcher开发的IDE的AI工具(Beta程序) {#ai-dev-beta}
+#### 使用AI加速AEM开发(Alpha项目) {#ai-dev-alpha}
 
-Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和IntelliJ等工具中使用AI辅助开发，以加快功能交付并提高代码质量。 加入Beta版以：
+AEM Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和IntelliJ等工具中使用AI辅助开发，以加快功能交付并提高代码质量。 我们正在收集真实世界的体验，以帮助塑造未来Adobe支持的人工智能功能。
 
-* 共享真实世界体验，以帮助塑造未来的Adobe支持的AI功能
-* 尝试人工智能代理可用于生成和调试AEM代码和Dispatcher配置的IDE工具
-
-电子邮件[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)以了解更多信息。
+通过电子邮件发送[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)，共享您团队的工作成果，以及您希望Adobe提供的内容。
 
 #### 扩展的应用程序性能监控 (APM)（Alpha 计划） {#apm-alpha}
 
