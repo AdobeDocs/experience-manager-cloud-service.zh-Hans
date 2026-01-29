@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 脚注组件 {#footnotecomponent}
 
-Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 **[!UICONTROL 脚注]**&#x200B;是显示在页末的信息或注释的额外位。 [!UICONTROL 脚注]由文本中用数字作为上标表示的笔记组成。
 
@@ -28,7 +28,7 @@ Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/do
 * 提供可中断主信息正常流动的额外信息。
 * 提供括号信息或版权权限。
 
-在自适应Forms中，[!UICONTROL 脚注]用于显示有关如何完成或使用表单的信息。 Forms有关如何创建自适应表单的信息，请参阅[创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)。
+在自适应Forms中，[!UICONTROL 脚注]用于显示有关如何完成或使用表单的信息。 Forms有关如何创建自适应表单的信息，请参阅[创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=zh-Hans)。
 
 ## 自适应Forms中的脚注 {#using-footnote-adaptiveforms}
 
