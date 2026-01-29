@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 20%
+source-wordcount: '2710'
+ht-degree: 19%
 
 ---
 
@@ -33,17 +33,25 @@ ht-degree: 20%
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色细轮廓突出显示。
+编辑内容是简单而直观的。当您将鼠标悬停在编辑器中的内容上时，可编辑内容会以浅蓝色的细轮廓和徽章突出显示。
 
-![可编辑内容用蓝色框突出显示](assets/editable-content.png)
+![可编辑内容以浅蓝色框突出显示](assets/editable-content.png)
+
+轻触或单击高亮显示的内容即被选定，薄的浅蓝色轮廓将变为带有徽章的深蓝色轮廓。
+
+![选定内容用深蓝色框突出显示](assets/selected-content.png)
 
 >[!TIP]
 >
 >默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到[预览模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中为该内容提供其他信息和选项。
+根据您选择的内容，[属性面板中可能有不同的就地编辑选项以及内容的其他信息和选项。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-每段可编辑内容都标有其内容类型。 根据内容，您可以单击此徽章以快速访问并编辑操作。
+### 上下文菜单 {#context-menu}
+
+每段可编辑内容都标有其内容类型。
+
+您可以单击此徽章以快速访问包含编辑操作的上下文菜单。 右键单击未选定的可编辑项目会自动将其选中，同时会打开上下文菜单。
 
 ![可编辑的徽章选项](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ ht-degree: 20%
 
 ![编辑内容](assets/editing-content.png)
 
-蓝色细轮廓变为蓝色粗轮廓以指示选择，并且出现光标。 进行更改，然后按Enter/Return或选择文本框外部以保存更改。
+薄的浅蓝色轮廓将变为深蓝色轮廓以指示选取内容，并且出现光标。 进行更改，然后按Enter/Return或选择文本框外部以保存更改。
 
 选择文本组件后，其详细信息将显示在[属性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您还可以在面板中编辑文本。
 
@@ -69,9 +77,9 @@ ht-degree: 20%
 
 为方便起见，文本上的格式选项和详细信息可在两个位置使用。
 
-#### 上下文菜单 {#context-menu}
+#### 富文本上下文菜单 {#rich-text-context-menu}
 
-上下文菜单在RTF块上方打开，并在上下文中提供基本的格式选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
+随即会在富文本块上方打开一个上下文菜单，其中提供了上下文中的基本格式选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
 
 ![富文本上下文菜单](assets/rich-text-context-menu.png)
 
@@ -395,7 +403,7 @@ RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有�
 要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
-* [AEM Universal Editor 快速入门 &#x200B;](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
+* [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。

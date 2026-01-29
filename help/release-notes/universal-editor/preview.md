@@ -3,17 +3,17 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 56%
+source-wordcount: '152'
+ht-degree: 74%
 
 ---
 
 
 # 通用编辑器预览发行说明  {#preview}
 
-这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于2026年1月29日正式发布。
+这些是通用编辑器&#x200B;**预览版**&#x200B;的发行说明。这些功能当前在通用编辑器的&#x200B;**预览环境**&#x200B;中可用。这些功能计划于2026年2月5日正式发布。
 
 提供这些&#x200B;**预览**&#x200B;发行说明是为了方便您了解即将对通用编辑器进行哪些更改，并且您可以通过[切换到预览环境来测试这些更改。](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,15 +27,8 @@ ht-degree: 56%
 
 ## 即将推出的新功能 {#what-is-new}
 
-* 删除组件方法已公开给`editorActions`。
-* 复制组件方法已向`editorActions`公开。
-* 定义具有可扩展性。
-* 移动组件方法已公开给`editorActions`。
-* 向`editorActions`公开了Add组件方法。
-* 已发布文档创作API版本2.0。
+* 移动操作现在可在[上下文菜单中使用。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
 
 ## 即将推出的改进 {#other-improvements}
 
-* `content`可扩展性已重命名为`details`以遵循API架构。
-* 改进了上下文菜单行为。
-* 修复了单击可编辑项目的徽章时上下文菜单正确打开的错误。
+* 使用[`xwalk`插件时，已为AEM 6.5启用“发布到预览”。](/help/implementing/universal-editor/component-definition.md#plugins)
