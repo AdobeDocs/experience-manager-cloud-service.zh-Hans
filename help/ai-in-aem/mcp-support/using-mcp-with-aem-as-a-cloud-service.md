@@ -3,9 +3,9 @@ title: 将MCP与AEM as a Cloud Service结合使用
 description: 了解如何将模型上下文协议与AEM as a Cloud Service一起使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
+source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,8 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 ## 设置概述 {#setup-overview}
 
-为AEM配置MCP涉及三个主要部分：
+为AEM配置MCP涉及两个主要部分：
 
-1. **管理员在AEM中进行的一次性配置**，允许特定MCP客户端应用程序访问AEM的MCP服务器
 1. **每个MCP客户端应用程序中的配置**，以便应用程序知道如何连接到AEM MCP服务器并执行OAuth登录
 1. **在开始提示之前选择MCP服务器**，以便MCP客户端知道要使用它。
 
