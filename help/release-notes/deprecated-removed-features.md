@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
+source-git-commit: 7ee534546cc8b9afd865b41f223caf9fd86ea45a
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 92%
+source-wordcount: '3548'
+ht-degree: 89%
 
 ---
 
@@ -341,6 +341,12 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 ## API 移除指南 {#api-removal-guidance}
 
 本节反映了上表中各种 API 的 API 移除指南。
+
+要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。
+
+虽然您应该随着时间的推移修正所有已弃用的API，但请优先处理“已弃用的API”表中列出的目标删除日期为2026年2月26日（或更早日期）的任何API。 在AEM Analyzer报表中，这些API可能会显示，有效删除日期为2025年8月31日。
+
+更新代码后，通过检查代码质量步骤的结果，验证Cloud Manager中是否仍然没有弃用API用法。
 
 ### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
