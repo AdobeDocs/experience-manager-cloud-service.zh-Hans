@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 37%
+source-wordcount: '2161'
+ht-degree: 38%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 37%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -83,21 +83,26 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 
 ### Content MCP Server {#content-MCP}
 
-聊天应用程序（例如ChatGPT）和现代IDE（例如Cursor）可以使用模型上下文协议(MCP)让MCP服务器公开大型语言模型(LLM)调用工具。 您可以用自然语言描述所需的内容，并让LLM将该意图转换为相应的API调用，而不是根据低级API规范编写代码。 在某些情况下，提示可能比导航用户界面更方便。
+AEM Cloud Service现在包括&#x200B;**内容MCP服务器**，为通过MCP兼容工具使用AEM内容的AI支持的体验提供了一种标准化方式。
 
-例如，您可以在AEM中提示ChatGPT： *Edit /en/coffee.html：将内容中的Frescopa Coffee文本更改为20岁的人想要的内容。*
+使用聊天应用程序和代理平台的开发人员和高级用户可以将AEM连接到自定义协同功能和自动化，因此内容工作成为端到端业务工作流的一部分。
 
-AEM提供两个内容MCP服务器 — **只读**&#x200B;和&#x200B;**读/写** — 包含用于处理&#x200B;**Pages**、**Content Fragments**&#x200B;和&#x200B;**Assets**&#x200B;的工具。 这些服务器可以从以下MCP客户端使用： **ChatGPT**、**Claude**、**Cursor**&#x200B;和&#x200B;**Microsoft Copilot Studio**。
+AEM提供两台服务器：
+
+1. **只读内容MCP服务器** — 用于安全检索内容
+1. **读/写内容MCP服务器** — 用于更改内容
+
+这些MCP服务器包括用于处理&#x200B;**Pages**、**Content Fragments**&#x200B;和&#x200B;**Assets**&#x200B;的工具，并且可以从以下MCP客户端使用： **ChatGPT**、**Claude**、**Cursor**&#x200B;和&#x200B;**Microsoft Copilot Studio**。
 
 在[将MCP与AEM云服务结合使用](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)中了解更多信息。 如有疑问或反馈，请发送电子邮件至[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI搜索**
+**AI 搜索**
 
-人工智能搜索引入了一种智能的上下文感知搜索体验，它通过了解用户查询背后的含义和意图，超越了传统关键词匹配。 它由AI和机器学习提供支持，即使查询用词不同、包含拼写错误、使用同义词或以不同语言提交，也能提供更准确的结果，帮助用户更快地找到相关内容，用更少的工作量。
+AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用户查询背后的含义和意图，该体验超越了传统关键词匹配。 它由AI和机器学习提供支持，即使查询用词不同、包含拼写错误、使用同义词或以不同语言提交，也能提供更准确的结果，帮助用户更快地找到相关内容，用更少的工作量。
 
-有关详细信息，请参阅[Assets视图](/help/assets/search-assets-view.md#ai-search)和[管理员视图](/help/assets/search-assets.md#ai-search)中的AI搜索。
+有关详细信息，请参阅[Assets视图](/help/assets/search-assets-view.md#ai-search)和[管理员视图](/help/assets/search-assets.md#ai-search)中的AI 搜索。
 
 **桌面应用程序3.0.1版**
 
