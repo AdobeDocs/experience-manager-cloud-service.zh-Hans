@@ -3,9 +3,9 @@ title: Experience Production Agent概述
 description: 了解AEM中的Experience Production Agent如何帮助您加快内容创建并自动编排更改。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
+source-git-commit: a0a6c14da73ba6881e55aa5089fbde13880f9ec5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '311'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,12 @@ Experience Production Agent可自动执行高工作量和高容量任务。 增�
 * [内容更新](#content-update)
 * [表格创建](#form-creation)
 * [通信创建](#communications-creation)
-* [站点迁移](#site-migration)
 
 >[!IMPORTANT]
 >
 >AI生成的响应可能不准确或具有误导性。 请务必仔细检查建议的修复和响应。
 >
->另请参阅[Adobe Experience Cloud Generative AI用户指南](https://www.adobe.com/cn/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)。
+>另请参阅[Adobe Experience Cloud Generative AI用户指南](https://www.adobe.com/cn/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### 内容更新 {#content-update}
 
@@ -44,15 +43,11 @@ Experience Production Agent可自动执行高工作量和高容量任务。 增�
 
 >[!NOTE]
 >
-> 通信创建技能目前为Alpha版。 如果您想参加，请将您的正式电子邮件地址发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)的请求。
-
-### 站点迁移 {#site-migration}
-
-[站点迁移](/help/ai-in-aem/agents/production/site-migration.md)可将非AEM站点无缝迁移到AEM (Experience Delivery Services)环境中，确保它们高性能、符合要求并且可供代理使用。 该代理可简化设置和转换，减少手动工作量和实现价值的时间。
-
-座席应能熟练运用其它座席技能，例如：
+> 通信创建技能目前为Alpha版。 如果您想参加，请将您的正式电子邮件地址发送至[aem-forms-ea@adobe.com。](mailto:aem-forms-ea@adobe.com)
 
 ## 与其他代理一起使用 {#use-with-other-agents}
+
+座席能够处理其他座席技能，示例包括：
 
 * 从Experience Advisory代理获取源资产
 
