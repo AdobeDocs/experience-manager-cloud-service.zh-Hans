@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 38%
+source-wordcount: '2145'
+ht-degree: 36%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 38%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,43 +115,16 @@ AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+* [对自适应Forms（基础组件）中脚注占位符的增强](/help/forms/footnotes-richtextsupport.md)：
+   * 脚注呈现已进一步细化，以通过换行符支持多行格式，从而更清晰、更富有表现力的脚注内容呈现方式。
+   * 现在，无论相关面板是否可见，脚注在脚注占位符中始终可见，从而确保对关键信息的一致访问。
 
-**Rule Editor Enhancements**
-
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
-
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
 
 ### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
-AEM Forms 早期访问计划为您提供了一个独特的机会，让您可以独家访问尖端创新技术，并帮助塑造其发展。
+* [从JSON数组检索值](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)：扩展的数据集成功能现在允许通过自定义函数调用API，以便有效地从JSON数组提取值并将它们直接绑定到自适应表单字段。 此增强功能可简化数据使用，最大程度地减少手动映射，并支持更动态、数据驱动的表单体验。
 
-这些发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
-
-#### 交互式通信增强功能
-
-##### 模板锁定
-
-锁定模板中的内容和布局元素，以维护品牌完整性并防止未经授权的修改。 这可确保所有通信的设计一致性。
-
-##### 内容溢出支持
-
-为流式布局引入“允许在内容中使用分页符”选项。 此增强功能可顺利进行多页编辑，并更好地管理复杂文档的文本。
-
-##### XDP文件编辑
-
-交互式通信编辑器现在支持XDP编辑，包括片段集成。 您现在可以在浏览器中编辑XDP文件，而不是只在Forms Windows桌面上运行的Microsoft Designer。
-
-##### 动态页面编号
-
-在主页上自动显示“第#页，共##页”，以便跨多页文档进行清晰、一致的分页。
+* **在发布实例上调用关联UI**：扩展支持现在可用于直接在发布实例上调用关联UI。 此功能定义了所需的配置、有效负载结构和调用流，从而简化了集成并加快了跨环境的部署。
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +143,7 @@ Key optimization opportunities include:
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
 -->
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础 {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager]作为[!DNL Cloud Service] Foundation重要声明 {#foundation-notices}
 
