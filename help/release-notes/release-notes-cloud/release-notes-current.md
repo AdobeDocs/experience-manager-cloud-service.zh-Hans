@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2126'
 ht-degree: 36%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 36%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,16 +115,20 @@ AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [对自适应Forms（基础组件）中脚注占位符的增强](/help/forms/footnotes-richtextsupport.md)：
-   * 脚注呈现已进一步细化，以通过换行符支持多行格式，从而更清晰、更富有表现力的脚注内容呈现方式。
-   * 现在，无论相关面板是否可见，脚注在脚注占位符中始终可见，从而确保对关键信息的一致访问。
+**对自适应Forms（基础组件）中脚注占位符的增强**
 
+* 添加了带换行符[的](/help/forms/footnotes-richtextsupport.md)多行支持，使脚注内容呈现得更清晰、更有表现力。
+* 现在，无论相关面板是否可见，脚注在脚注占位符中始终可见，从而确保对关键信息的一致访问。
 
 ### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
-* [从JSON数组检索值](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)：扩展的数据集成功能现在允许通过自定义函数调用API，以便有效地从JSON数组提取值并将它们直接绑定到自适应表单字段。 此增强功能可简化数据使用，最大程度地减少手动映射，并支持更动态、数据驱动的表单体验。
+**从JSON数组检索值**
 
-* **在发布实例上调用关联UI**：扩展支持现在可用于直接在发布实例上调用关联UI。 此功能定义了所需的配置、有效负载结构和调用流，从而简化了集成并加快了跨环境的部署。
+扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
+
+**在发布实例上运行关联UI**
+
+您现在可以直接在发布实例上运行[关联UI](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)。 这使您的代理能够访问关联UI，并轻松为客户个性化通信。
 
 <!--
 **Forms Optimization opportunities**
