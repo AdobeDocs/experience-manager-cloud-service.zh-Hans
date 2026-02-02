@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
+source-git-commit: f7fc0b6c65677217461c71aea2c6213489558d9c
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2128'
 ht-degree: 36%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 36%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -119,12 +119,13 @@ AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用�
 
 * 添加了带换行符[的](/help/forms/footnotes-richtextsupport.md)多行支持，使脚注内容呈现得更清晰、更有表现力。
 * 现在，无论相关面板是否可见，脚注在脚注占位符中始终可见，从而确保对关键信息的一致访问。
+  ![脚注描述](/help/forms/assets/footnote-description.png)
 
 ### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
 **从JSON数组检索值**
 
-扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
+扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
 
 **在发布实例上运行关联UI**
 
