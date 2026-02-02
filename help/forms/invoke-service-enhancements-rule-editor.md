@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
+source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 您还可以添加多个规则来处理来自&#x200B;**调用服务**&#x200B;操作的不成功响应。
 
-**在服务器**&#x200B;上启用错误验证&rbrace;功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
+**在服务器**&#x200B;上启用错误验证}功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
 
 ## 在规则编辑器中使用调用服务的先决条件
 
@@ -276,6 +276,8 @@ ht-degree: 1%
 
 ## 从JSON数组检索属性值
 
+<span class="preview">这是早期采用者功能。 如果您有兴趣，请将工作地址中的电子邮件快速发送到mailto:aem-forms-ea@adobe.com，以请求访问功能</a>。</span>
+
 自适应Forms支持调用服务、处理JSON响应以及动态填充表单字段。 本节介绍如何从JSON数组提取属性值并将其绑定到表单字段。
 
 ### 示例JSON响应
@@ -309,8 +311,6 @@ ht-degree: 1%
 ```
 
 ### 用于提取属性值的自定义函数
-
-<span class="preview">这是早期采用者功能。 如果您有兴趣，请将工作地址中的电子邮件快速发送到mailto:aem-forms-ea@adobe.com，以请求访问功能</a>。</span>
 
 使用以下自定义函数从JSON数组中提取属性值。
 
