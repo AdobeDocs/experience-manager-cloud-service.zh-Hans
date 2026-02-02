@@ -4,9 +4,9 @@ description: 详细了解Assets Prime的主要方面，如主要优势、用户�
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1100'
 ht-degree: 15%
 
 ---
@@ -36,8 +36,6 @@ Assets as a Cloud Service Prime包括轻量级DAM，可让您执行各种关键�
   >[!NOTE]
   >
   >带有OpenAPI功能的Dynamic Media还通过Assets Prime提供对基本图像修饰符的访问，例如旋转、裁切（仅限手动 — 无智能裁切）、翻转、高度、宽度、质量、格式和自适应视频流。 请联系Adobe客户团队以了解更多信息。
-
-1. [创建新程序](/help/journey-onboarding/create-program.md)。
 
 但是，随着DAM需求的增长以及您对更多功能（如UI可扩展性、API驱动的自动化和自定义代码部署）的需求，您必须考虑升级到[Assets Ultimate](/help/assets/assets-ultimate-overview.md)。
 
@@ -112,7 +110,7 @@ Admin Console上的AEM as a Cloud Service实例包含以下产品配置文件：
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
+>如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`contenthub`之后提及`Limited Users`，而不是`delivery`。
 
 ## 载入AEM Assets协作者用户 {#onboard-collaborator-users}
 
@@ -125,7 +123,7 @@ AEM Assets Collaborator用户可以通过贵组织在其他Assets产品和非Ado
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
-1. 单击Collaborators用户产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将该用户添加到产品配置文件。
+1. 单击Collaborators用户产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将该用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-collaborator-user-permissions.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
@@ -147,7 +145,7 @@ AEM Assets高级用户可以访问所有AEM Assets功能，包括管理资产、
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
-1. 单击Power users产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
+1. 单击Power users产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-power-user-permissions.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
