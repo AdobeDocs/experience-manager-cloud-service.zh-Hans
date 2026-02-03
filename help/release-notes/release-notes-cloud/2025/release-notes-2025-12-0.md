@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.12.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.12.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 9e81e0f3ed4b3e4ac02655cf4203191c61007b1d
+source-git-commit: 552d967edb81a8c586dc0a6a8a9bc9902342014c
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 47%
+source-wordcount: '1832'
+ht-degree: 50%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 47%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -254,14 +254,6 @@ Adobe于2025年10月14日将&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#
 
 如需申请访问权限并分享反馈，请发送邮件至 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)。
 
-
-#### 人工智能答案 — 适用于AEM Sites (Beta程序)的更智能、上下文感知响应 {#ai-answers-beta}
-
-人工智能解答为访客引入了一种与内容交互的新方法。 它通过检索 — 增强型生成(RAG)技术提供支持，利用您的AEM管理的数据直接在您的数字体验中提供准确、品牌一致的答案。
-
-我们正准备启动AI Answers Beta计划，现在正在邀请客户注册其兴趣。 由于Beta版的容量非常有限，因此早期注册将得到优先考虑。 参与测试版将允许您在AEM Cloud Service环境中探索AI答案，验证性能和准确性，并在未来体验正式发布之前帮助塑造未来的体验。
-
-若要请求参与或接收更新，请联系[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)。
 
 #### RDE快照(Beta计划) {#rde-snapshot-program}
 

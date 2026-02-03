@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 47e77f65a997b93ed71f58f873d8fcfa17c88382
+source-git-commit: 5d9d9455f47145f190bfba01c52478b2a302c439
 workflow-type: tm+mt
-source-wordcount: '2128'
-ht-degree: 36%
+source-wordcount: '2009'
+ht-degree: 38%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 36%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -125,7 +125,7 @@ AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用�
 
 **从JSON数组检索值**
 
-扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
+扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
 
 **在发布实例上运行关联UI**
 
@@ -255,14 +255,6 @@ AEM Edge Functions(在之前的发行说明中称为&#x200B;*Edge Computing*)允
 您可以将代码发布部署到生产环境，但在决定接受真实流量或回滚之前，仅将其限制在内部测试流量中。
 
 如需申请访问权限并分享反馈，请发送邮件至 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)。
-
-#### 人工智能答案 — 适用于AEM Sites (Beta程序)的更智能、上下文感知响应 {#ai-answers-beta}
-
-人工智能解答为访客引入了一种与内容交互的新方法。 它通过检索 — 增强型生成(RAG)技术提供支持，利用您的AEM管理的数据直接在您的数字体验中提供准确、品牌一致的答案。
-
-我们正准备启动AI Answers Beta计划，现在正在邀请客户注册其兴趣。 由于Beta版的容量非常有限，因此早期注册将得到优先考虑。 参与测试版将允许您在AEM Cloud Service环境中探索AI答案，验证性能和准确性，并在未来体验正式发布之前帮助塑造未来的体验。
-
-若要请求参与或接收更新，请联系[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)。
 
 #### RDE快照(Beta计划) {#rde-snapshot-program}
 
