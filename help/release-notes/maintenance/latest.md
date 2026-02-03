@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
+source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 17%
+source-wordcount: '972'
+ht-degree: 23%
 
 ---
 
@@ -16,101 +16,108 @@ ht-degree: 17%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 23963 {#23963}
+## 发行版本 24222 {#24222}
 
-以下总结了维护版本23963的持续改进，该版本于2026年1月19日公开发布。 上一个维护版本是版本 23482。
+以下总结了维护版本24222的持续改进，该版本于2026年2月3日公开发布。 上一个维护版本是版本 23963。
 
-激活 2026.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.2.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
->[!NOTE]
->
->发行说23862已设为私有。
+### 增强功能 {#enhancements-24222}
 
-### 增强功能 {#enhancements-23963}
+* CNTBF-604：创建新的contentbackflow包版本。
+* CQ-4361592：为项目创建和更新添加TypeHint支持。
+* CQ-4362198：最新的AEM和Granite包翻译。
+* GRANITE-36205：将内部 Oak 发行版更新到最新版本。
+* GRANITE-59211：OPTEL：添加了Nonce支持和自助服务配置。
+* GRANITE-62166：更新迁移包以重用迁移工具中的迁移状态。
+* GRANITE-62598：删除从内容包过滤器排除的冗余属性。
+* GRANITE-62684：通过skyline-ops配置客户端套接字超时。
+* GRANITE-62702：将sling发现替换为用于在线迁移的独立实施。
+* GRANITE-62763：根据ASSETS旋转图标更新Guava弃用例外列表。
+* GRANITE-62771：引入新的已弃用的Commons-Lang依赖项后，快速启动构建失败。
+* GRANITE-62987：将Felix Webconsole更新到版本5.0.18。
+* GRANITE-63339：改进Azure迁移状态Blob的租用机制。
+* GRANITE-63343：在workflow.core中添加对最新版本Sling API包的支持。
+* GRANITE-63799：凹凸OIDC身份验证包版本。
+* GRANITE-63821：将Quickstart更新到Filevault版本，以修复JCRVLT-831/JCRVLT-839。
+* GRANITE-63827：将快速入门更新到Oak的最新公共版本(1.90.0)。
+* GRANITE-63888：将Quickstart更新为Jackrabbit 2.22.3。
+* GRANITE-64030：将关键字和模式添加到表达式语言验证器的允许列表中。
+* GRANITE-64050：允许隐藏的conf文件夹隐藏外部产品功能。
+* SITES-30452：带ASO的内容API — 标题和描述建议。
+* SITES-38099：更新`testing-model.txt`以使用更高版本的健全性检查。
+* SKYOPS-43616：将Jenkins凭据迁移到Dispatcher存储库中的保险库。
+* SKYOPS-108584：从0.6.0到0.6.10的凹凸事实工具。
+* SKYOPS-115691：升级CORS过滤器捆绑包以在预检请求中添加Vary Origin标头。
+* SKYOPS-123094：在快速入门中更新Apache HTTP组件。
+* SKYOPS-123236：复制包中包含`rep:cugPolicy`。
+* SKYOPS-123240：在快速入门中更新CRXDE依赖项。
+* SKYOPS-123247：在快速入门中更新Sling XSS捆绑包。
+* SKYOPS-123250：在快速入门中更新Sling安全包。
+* SKYOPS-123327：AEM-CS SDK需要Java 21。
+* SKYOPS-125574：更新快速入门中的netcentric AC工具包。
+* SKYOPS-126150：改进线程转储生成器脚本的top命令。
 
-* CQ-4361812：在rest api中添加了对可选参数folderPath的支持。 描述：新的翻译项目由API创建，并将放置在可选`folderPath`参数指定的路径中，否则它默认为根项目路径`/content/projects`。
-* Forms-21960：与forms-spa类似，增加了对本地交互式通信画布编辑的支持。
-* Forms-22001：添加了有关在AEM Forms as a Cloud Service中减少`/etc.clientlibs/toggles.json`大量请求的指南。
-* Forms-22496：在调用服务中公开原始ResponseBody。
-* Forms-22495：在SetProperty规则中添加占位符属性。
-* Forms-21925：UBS脚注格式：在表单加载期间显示表单中的所有脚注。
-* Forms-20536：在规则编辑器中公开一个完整响应选项（不带映射）。
-* SITES-37199：注释功能通过未验证的`authorizables.json`调用触发存储库遍历，从而导致性能下降。
-* sites-37118：产品驾驶舱中的Commerce Optimizer支持。
-* SITES-38029：添加日志以在修改事件时跟踪MSM推送。
-* SITES-37050：支持“强制取消发布”，允许取消发布其他已发布资源引用的内容片段。
-* SITES-37142：添加了通过内容片段PATCH签入/签出内容片段的功能。
-* SITES-37613：在CF API权限端点中，如果用户可以签入内容片段，则返回签入；如果用户可以签出内容片段，则返回“签出”。
-* SITES-37835：当尝试创建具有相同标题但未提供名称的多个内容片段时，会自动生成新名称，而不是由于冲突而失败。
-* SITES-36823：带Universal Editor的Edge Delivery：无需反向映射索引。
-* SITES-34751：带有通用编辑器的Edge Delivery：发布时因不受支持的文件类型和路径超出限制而失败（提前访问）。
-* SITES-37888：带有通用编辑器的Edge Delivery：将Alt后缀用作链接文本的同义词。
-* SITES-19850：带有通用编辑器的Edge Delivery：添加对电子表格中多个工作表的支持。
-* SITES-32490：带有通用编辑器的Edge Delivery：向块和默认内容添加对data-aue-component和user defined data-aue-label的支持。
-* SITES-37794：使用通用编辑器的Edge Delivery：简化页面创建向导。
-* SITES-36963：将受众/区段端点迁移到Target API v3以支持Workspace。
+### 修复的问题 {#fixed-issues-24222}
 
-### 修复的问题 {#fixed-issues-23963}
+* Forms-23687：修复在没有默认值的条件下使用“包含规则”时的SSV验证失败。
+* GRANITE-48472：在“编辑用户设置”选项卡中更改密码时出现本地化错误。
+* GRANITE-50286：修复了“用户管理”模式的“状态”列中的布局问题。
+* GRANITE-52301：本地化无法将更改提交到安全组中的会话字符串。
+* GRANITE-52920：在“安全”“创建新用户”中创建用户时出现本地化错误。
+* GRANITE-54654：在安全Adobe IMS配置检查对话框中本地化字符串。
+* GRANITE-56371：修复安全信任存储区中数据格式不正确的问题。
+* GRANITE-62717：升级加密密钥库，以便处理包含非ASCII字符的JSafe密码。
+* GRANITE-62789：更新消息传递客户端以支持内容分发的不重试模式。
+* GRANITE-62824：访问用户编辑器中的“组”选项卡时修复`NullPointerException`。
+* GRANITE-63080：使`org.slf4j.spi`的导入与`slf4j 2.x`兼容。
+* GRANITE-63210：更新分发核心以修复发布启动时调度程序失效的问题。
+* GRANITE-63293：修复首次创作后必填路径字段丢失所需星号的问题。
+* GRANITE-63360：修复了在选择多个路径时显示的错误信息。
+* SITES-36242：缩小GraphQL执行正则表达式范围以修复绕过Dispatcher过滤器的问题。
+* SKYOPS-84379：使用最新的FACT工具以便RDE进行正确的功能切换选取。
+* SKYOPS-121216：恢复对Jackson 2.20.0库的更新。
 
-* CQ-4361831：修复了导致genai_dropdown_span未定义的问题。
-* CQ-4360895：修复了并发更新期间项目中翻译作业状态计数不准确的问题。
-* CQ-4361599：修复了2025.7升级后从翻译作业中跳过内容片段的问题。
-* CQ-4360747：修复的可重复翻译作业过于频繁地创建空负载和触发器（ScheduleRepeatTranslationProject中的NullPointerException）。
-* CQ-4359994：修复了单语言项目和多语言项目的destinationLanguage字段类型不一致问题。
-* Forms-23557： Rhino更新导致`*.js`无法通过Use API正确实例化。
-* SITES-38153：修复基于uuid的引用的cf发布引用提供程序。
-* SITES-37594：按标记功能改进了模型的性能。
-* SITES-37337： FragmentCreateProcessor：在日志中提供其他错误详细信息。
-* SITES-33666：内容片段编辑器中存在未本地化的“无法打印片段的Json”错误消息。
-* SITES-33675：内容片段编辑器>关联内容中硬编码的“未定义”字符串。
-* SITES-30715：内容片段编辑器中的未本地化的“General”字符串。
-* SITES-28592：内容片段模型编辑器>“模型已锁定”对话框中未本地化的字符串。
-* SITES-977：字符串“标记”和“收藏集”在编辑内容片段页面上未本地化。
-* SITES-29699：内容片段编辑器中允许的资源类型未本地化。
-* SITES-25240：Teaser模式中的Call to action字段没有可见标签。
-* SITES-24869：模板编辑器>分隔符>策略中的工具提示被截断。
-* SITES-19313：在模板编辑器中将组件拖放到已删除的模板中时，错误未本地化。
-* SITES-18103：页面编辑器>工作流中未本地化的字符串。
-* SITES-17501：模板编辑器>组件策略编辑器中的未本地化字符串。
-* SITES-15091：字符串在体验片段的文本组件属性上未本地化。
-* SITES-8113：在“工具”菜单的“模板”的“选择图像”对话框中，“Assets”字符串未本地化。
-* SITES-37587：在RolloutManagerImpl中带有NPE的PROD中，Live Copy创建仍失败。
-* SITES-37335：Live Copy页面属性在与cq标记相关的控制台中显示错误。
-* SITES-36972：可编辑工具栏中缺少“转出”按钮。
-* SITES-36570：激活分块创建Live Copy切换后，创建Live Copy失败。
-* SITES-36158：转出失败，作业由于出现异常而失败。
-* SITES-35655：新的CF编辑器在中断后显示活动继承。
-* SITES-31425：在网站的启动工作流中显示未本地化的错误消息`Error: {} field is required`。
-* SITES-19802：核心组件站点>目录中的工具提示未本地化。
-* SITES-36543：修复了允许管理员编辑已签出的内容片段的问题。
-* SITES-36967：修复了在尝试为损坏的内容片段生成缩略图数据时发生的NullPointerExceptions。
-* SITES-37791：修复了对包含`$`的字符串调用FindAndReplace失败的问题。
-* SITES-37018：复制带有不允许的模板路径的页面时出现空错误弹出窗口。
-* SITES-36243：使用通用编辑器的Edge Delivery：发布`sling:OrderedFolder`时修复404。
-* SITES-37684：使用通用编辑器的Edge Delivery：修复具有多个站点的环境中的性能降级。
-* SITES-37840：使用通用编辑器的Edge Delivery：修复由于Edge Delivery的访问令牌过期而导致的发布失败。
-* SITES-37933：使用通用编辑器的Edge Delivery：修复（取消）发布启动项中已删除的资源时失败。
-* SITES-37870：带有通用编辑器的Edge Delivery：修复了在启用多字段支持的情况下自定义页面元数据的呈现中断的问题。
-* SITES-37349：使用通用编辑器的Edge Delivery：将具有单个条目的多字段呈现为具有单个列表项的列表。
-* SITES-36148：使用通用编辑器的Edge Delivery：为复合多字段修复data-aue-label 。
+#### AEM Guides {#guides-24222}
 
-### 已知问题 {#known-issues-23963}
+* GUIDES-38198 ：使用上下文菜单中的编辑MathML选项更新内联MathML公式时，在刷新页面之前，不会反映更新的值。
+* GUIDES-38276：无法从Assets UI的“版本历史记录”面板中移除“版本”标签。
+* GUIDES-36641：生成AEM Sites输出时，发布的输出中不包含包含关键字和主题标题以及`<ph>`元素的映射标题。
+* GUIDES-37837：尝试保存主题或映射时，操作可能会间歇性地失败，并出现“无法保存文件”错误，尤其是在后台运行密集型资源处理任务或翻译工作流期间。
+* GUIDES-27774： Broken list报告错误地包含外部链接、有效的`keyrefs`以及在当前映射范围内正确解析的关键字。
+
+如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+
+### 已知问题 {#known-issues-24222}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-23963}
+### 已弃用的功能和 API {#deprecated-24222}
+
+* AEMSRE-2896：修复自定义的logmanager配置处理。
+* GRANITE-62802：从`commons-lang`中删除已弃用的`granite.auth.saml`依赖项。
+* GRANITE-62805：从`commons-lang`中删除已弃用的`granite.httpcache.core`依赖项。
+* GRANITE-62864：从`commons-lang`中删除已弃用的`granite.jobs.async`依赖项。
+* GRANITE-62865：从`commons-lang`中删除已弃用的`granite.replication.core`依赖项。
+* GRANITE-62868：从`commons-lang`中删除已弃用的`granite.rest.api`依赖项。
+* GRANITE-62895：从`commons-lang`中删除已弃用的`translation.connector.msft.core`依赖项。
+* granite-63069：弃用`com.adobe.granite.httpcache.core`。
+* GRANITE-63179：从`commons-lang`中删除已弃用的`cq-workflow-impl`依赖项。
+* GRANITE-63180：从`commons.lang`包中删除已弃用的`cq-mailer`导出。
+* SKYOPS-123329：删除对AEM Ethos部署的Java 11支持并更新`commons-lang3`。
+* SKYOPS-124983：从AEM启动脚本中删除已弃用的`nashorn.args`。
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-23963}
+### 安全修复 {#security-24222}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 23 个已发现的漏洞，增强了我们对实现强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 10 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-23963}
+### 嵌入的技术 {#embedded-tech-24222}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM Oak | 1.88.0 | [Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
+| AEM Oak | 1.90.0 | [Oak 1.90.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | Apache HTTP 服务器 | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
