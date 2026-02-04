@@ -35,7 +35,7 @@ ht-degree: 9%
 
 * 除了资源、收藏集和分析之外，您需要在Content Hub中包含的任何自定义链接。
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472956/?captions=chi_hans&learn=on&enablevpops){transcript=true}
 
 ## 先决条件 {#prerequisites-configuration-ui}
 

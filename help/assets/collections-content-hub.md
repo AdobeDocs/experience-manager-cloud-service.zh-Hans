@@ -30,7 +30,7 @@ ht-degree: 2%
 
 它帮助用户轻松访问和管理[!DNL Content Hub]中可用的各种资源。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445310/?captions=chi_hans&learn=on){transcript=true}
 
 ## 先决条件 {#prerequisites}
 

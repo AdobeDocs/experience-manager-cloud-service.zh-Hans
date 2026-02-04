@@ -20,7 +20,7 @@ Content Hub作为Experience Manager Assets as a Cloud Service的一部分提供�
 
 请观看以下视频，了解如何为Experience Manager Assets启用Content Hub：
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472945/?captions=chi_hans&learn=on){transcript=true}
 
 Content Hub上各种权限的变体包括：
 

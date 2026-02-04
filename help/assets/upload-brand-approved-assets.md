@@ -19,7 +19,7 @@ ht-degree: 17%
 
 有权添加资源的[Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以从本地文件系统向Content Hub添加资源，也可以从OneDrive或Dropbox数据源导入资源。 为了增强搜索功能，所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关。
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445390/?captions=chi_hans&learn=on){transcript=true}
 
 Assets as a Cloud Service中标记为`Approved`的资源在Content Hub中自动可用。 如需了解更多信息，请参阅[批准 Content Hub 的资产](/help/assets/approve-assets-content-hub.md)。
 

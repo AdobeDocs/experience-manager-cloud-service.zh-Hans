@@ -27,7 +27,7 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3451969/?captions=chi_hans&learn=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 

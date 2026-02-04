@@ -28,7 +28,7 @@ ht-degree: 5%
 
 * 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475424/?captions=chi_hans&learn=on&enablevpops){transcript=true}
 
 ## 如何启用基于属性的访问控制？ {#enable-attribute-based-access-control}
 

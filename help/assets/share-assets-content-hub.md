@@ -14,7 +14,7 @@ ht-degree: 3%
 
 创建指向所选资产的链接以轻松与他人共享。 作为授权[!DNL Content Hub]用户，请选择您的[!DNL Content Hub]环境中可用的一个或多个资源，生成链接，并将其发送给其他专用或公共用户。
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474929/?captions=chi_hans&learn=on&enablevpops=on){transcript=true}
 
 ## 先决条件 {#prerequisites}
 
