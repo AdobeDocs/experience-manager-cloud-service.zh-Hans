@@ -3,9 +3,9 @@ title: 将MCP与AEM as a Cloud Service结合使用
 description: 了解如何将模型上下文协议与AEM as a Cloud Service一起使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
+source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-许多AEM团队现在都在IDE和基于聊天的应用程序中工作，例如Cursor、ChatGPT、Anthropic Claude和Microsoft Copilot Studio。 这些应用程序支持模型上下文协议(MCP)，它允许应用程序以标准化方式向大型语言模型(LLM)公开后端工具。
+许多Adobe Experience Manager (AEM)团队现在都可以在集成开发环境(IDE)和基于聊天的应用程序(如Cursor、ChatGPT、Anthropic Claude和Microsoft Copilot Studio)中工作。 这些应用程序支持模型上下文协议(MCP)，它允许应用程序以标准化方式向大型语言模型(LLM)公开后端工具。
 
 通过AEM的MCP集成，不同的角色可以围绕相同的内容进行协作：
 
@@ -119,19 +119,19 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 **ChatGPT**
 
-![配置ChatGPT步骤1](assets/chatgpt-1.png)
+![配置ChatGPT — 设置](assets/chatgpt-1.png)
 
-![配置ChatGPT步骤2](assets/chatgpt-2.png)
+![配置ChatGPT — 应用程序和连接器 — 高级设置](assets/chatgpt-2.png)
 
-![配置ChatGPT步骤3](assets/chatgpt-3.png)
+![配置ChatGPT — 应用程序和连接器 — 开发人员模式](assets/chatgpt-3.png)
 
-![配置ChatGPT步骤4](assets/chatgpt-4.png)
+![配置ChatGPT — 应用程序和连接器 — 创建应用程序](assets/chatgpt-4.png)
 
-![配置ChatGPT步骤5](assets/chatgpt-5.png)
+![配置ChatGPT — 应用和连接器 — 新应用](assets/chatgpt-5.png)
 
-![配置ChatGPT步骤6](assets/chatgpt-6.png)
+![配置ChatGPT — 应用程序和连接器 — AEM内容MCP服务](assets/chatgpt-6.png)
 
-![配置ChatGPT步骤7](assets/chatgpt-7.png)
+![配置ChatGPT — 询问AEM内容MCP服务](assets/chatgpt-7.png)
 
 * 在配置了MCP连接或工具的区域添加AEM MCP服务器URL
 * 在重定向时触发连接并使用Adobe ID登录
@@ -141,19 +141,19 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 **克劳德**
 
-![配置克劳德步骤1](assets/claude-1.png)
+![配置Claude — 设置](assets/claude-1.png)
 
-![配置克劳德步骤2](assets/claude-2.png)
+![配置Claude — 连接器](assets/claude-2.png)
 
-![配置克劳德步骤3](assets/claude-3.png)
+![配置Claude — 连接器 — 添加自定义连接器](assets/claude-3.png)
 
-![配置克劳德步骤4](assets/claude-4.png)
+![配置Claude — 连接器 — 连接自定义连接器](assets/claude-4.png)
 
-![配置克劳德步骤5](assets/claude-5.png)
+![配置Claude — 连接器 — 配置自定义连接器](assets/claude-5.png)
 
-![配置克劳德步骤6](assets/claude-6.png)
+![配置Claude - Connectors - Custom Connector工具权限](assets/claude-6.png)
 
-![配置克劳德步骤7](assets/claude-7.png)
+![配置Claude — 询问AEM内容MCP服务](assets/claude-7.png)
 
 * 在Claude的MCP配置中，注册AEM MCP服务器URL
 * 完成Adobe登录流程
@@ -163,15 +163,15 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 **游标**
 
-![配置游标步骤1](assets/cursor-1.png)
+![配置游标 — 设置](assets/cursor-1.png)
 
-![配置游标步骤2](assets/cursor-2.png)
+![配置Cursor - Tools &amp; MCP — 添加自定义MCP](assets/cursor-2.png)
 
-![配置游标步骤3](assets/cursor-3.png)
+![配置游标 — 添加自定义MCP设置](assets/cursor-3.png)
 
-![配置游标步骤4](assets/cursor-4.png)
+![配置游标 — 连接](assets/cursor-4.png)
 
-![配置游标步骤5](assets/cursor-5.png)
+![配置游标 — 询问新服务](assets/cursor-5.png)
 
 * 在Cursor的MCP设置中，使用AEM MCP URL创建一个新的MCP服务器条目
 * 出现提示时，使用您的Adobe ID进行身份验证
@@ -180,25 +180,25 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 **Microsoft Copilot Studio**
 
-![配置Copilot步骤1](assets/copilot-1.png)
+![配置Copilot — 代理](assets/copilot-1.png)
 
-![配置Copilot步骤2](assets/copilot-2.png)
+![配置Copilot — 添加工具](assets/copilot-2.png)
 
-![配置Copilot步骤3](assets/copilot-3.png)
+![配置Copilot — 添加工具 — 模型上下文协议](assets/copilot-3.png)
 
-![配置Copilot步骤4](assets/copilot-4.png)
+![配置Copilot — 添加模型上下文协议服务器（预览）](assets/copilot-4.png)
 
-![配置Copilot步骤5](assets/copilot-5.png)
+![配置Copilot — 添加工具 — 创建新连接](assets/copilot-5.png)
 
-![配置Copilot步骤6](assets/copilot-6.png)
+![配置Copilot — 添加工具 — 添加和配置](assets/copilot-6.png)
 
-![配置Copilot步骤7](assets/copilot-7.png)
+![配置Copilot — 添加工具 — 配置](assets/copilot-7.png)
 
-![配置Copilot步骤8](assets/copilot-8.png)
+![配置Copilot — 测试连接](assets/copilot-8.png)
 
-![配置Copilot步骤9](assets/copilot-9.png)
+![配置Copilot — 管理连接](assets/copilot-9.png)
 
-![配置Copilot步骤10](assets/copilot-10.png)
+![配置Copilot — 测试代理](assets/copilot-10.png)
 
 * 创建新代理
 * 导航到工具部分，然后单击&#x200B;**添加工具**
