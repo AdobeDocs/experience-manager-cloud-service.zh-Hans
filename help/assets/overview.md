@@ -2,10 +2,10 @@
 title: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
 description: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
+source-git-commit: 5606d66dfa9c7d11063eea495088e1263a2cc5fb
 workflow-type: tm+mt
-source-wordcount: '5626'
-ht-degree: 88%
+source-wordcount: '5642'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe 数字资产管理的部分核心功能包括：
 
 >[!BEGINTABS]
 
->[!TAB 资产摄取]
+>[!TAB 引入]
 
 ## 资产摄取 {#asset-ingestion}
 
@@ -239,7 +239,7 @@ Adobe 数字资产管理的部分核心功能包括：
 </td>
 </table>
 
->[!TAB 资产发现]
+>[!TAB 发现]
 
 ## 资产发现 {#asset-discovery}
 
@@ -269,11 +269,11 @@ AEM Assets 提供的功能可帮助您快速找到合适的资产。这些功能
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=zh-Hans">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="元数据管理最佳实践" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=zh-Hans">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>元数据管理最佳实践</strong>
       </a>
    </div>
@@ -346,7 +346,7 @@ AEM Assets 提供的功能可帮助您快速找到合适的资产。这些功能
 </td>
 </table>
 
->[!TAB 资产治理]
+>[!TAB 治理]
 
 ## 资产管理和治理 {#asset-management-governance}
 
@@ -669,10 +669,10 @@ Discovery Agent的一些主要优势包括：
 
 **示例提示：**
 
-* `Create a 2000px JPEG rendition.`
-* `Sharpen the image.`
-* `Change background color to #ff8932.`
-* `Create a rendition for an Instagram story.`
+* 创建2000px JPEG呈现版本。
+* 锐化图像。
+* 将背景颜色更改为#ff8932。
+* 为Instagram故事创建演绎版。
 
 **限制：** PNG资源不支持某些优化。
 
@@ -698,11 +698,11 @@ Governance Agent的一些主要优势包括：
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="发现代理概述" src="./assets/discovery-agent-overview.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="发现代理概述" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>发现代理概述</strong>
       </a>
    </div>
@@ -712,11 +712,11 @@ Governance Agent的一些主要优势包括：
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="内容优化概述" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>内容优化代理概述</strong>
       </a>
    </div>
@@ -726,11 +726,11 @@ Governance Agent的一些主要优势包括：
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="治理代理概述" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>治理代理概述</strong>
       </a>
    </div>
@@ -744,7 +744,7 @@ Governance Agent的一些主要优势包括：
 
 可通过AEM Cloud Service中的&#x200B;**AI助手**&#x200B;访问代理。 登录到[experience.adobe.com](https://experience.adobe.com/)并使用自然语言提示与AI Assistant交互。
 
->[!TAB 资产激活]
+>[!TAB 激活]
 
 ## 资产激活 {#asset-activation}
 
