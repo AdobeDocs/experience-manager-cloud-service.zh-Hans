@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
+source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '988'
 ht-degree: 23%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 23%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 24222 {#24222}
+## 发行版本 24288 {#24288}
 
-以下总结了维护版本24222的持续改进，该版本于2026年2月3日公开发布。 上一个维护版本是版本 23963。
+以下总结了维护版本24288的持续改进，该版本于2026年2月4日公开发布。 上一个维护版本是版本 23963。
 
-2026.2.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.2.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-24222}
+>[!NOTE]
+>
+>发行说24222已设为私有。
+
+### 增强功能 {#enhancements-24288}
 
 * CNTBF-604：创建新的contentbackflow包版本。
 * CQ-4361592：为项目创建和更新添加TypeHint支持。
@@ -58,7 +62,7 @@ ht-degree: 23%
 * SKYOPS-125574：更新快速入门中的netcentric AC工具包。
 * SKYOPS-126150：改进线程转储生成器脚本的top命令。
 
-### 修复的问题 {#fixed-issues-24222}
+### 修复的问题 {#fixed-issues-24288}
 
 * Forms-23687：修复在没有默认值的条件下使用“包含规则”时的SSV验证失败。
 * GRANITE-48472：在“编辑用户设置”选项卡中更改密码时出现本地化错误。
@@ -75,10 +79,11 @@ ht-degree: 23%
 * GRANITE-63293：修复首次创作后必填路径字段丢失所需星号的问题。
 * GRANITE-63360：修复了在选择多个路径时显示的错误信息。
 * SITES-36242：缩小GraphQL执行正则表达式范围以修复绕过Dispatcher过滤器的问题。
+* SITES-40122：修复了Edge Delivery与内容分发ImsService的集成。
 * SKYOPS-84379：使用最新的FACT工具以便RDE进行正确的功能切换选取。
 * SKYOPS-121216：恢复对Jackson 2.20.0库的更新。
 
-#### AEM Guides {#guides-24222}
+#### AEM Guides {#guides-24288}
 
 * GUIDES-38198 ：使用上下文菜单中的编辑MathML选项更新内联MathML公式时，在刷新页面之前，不会反映更新的值。
 * GUIDES-38276：无法从Assets UI的“版本历史记录”面板中移除“版本”标签。
@@ -88,11 +93,11 @@ ht-degree: 23%
 
 如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
-### 已知问题 {#known-issues-24222}
+### 已知问题 {#known-issues-24288}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-24222}
+### 已弃用的功能和 API {#deprecated-24288}
 
 * AEMSRE-2896：修复自定义的logmanager配置处理。
 * GRANITE-62802：从`commons-lang`中删除已弃用的`granite.auth.saml`依赖项。
@@ -109,11 +114,11 @@ ht-degree: 23%
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-24222}
+### 安全修复 {#security-24288}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 10 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-24222}
+### 嵌入的技术 {#embedded-tech-24288}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
