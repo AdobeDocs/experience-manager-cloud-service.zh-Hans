@@ -35,13 +35,13 @@ ht-degree: 2%
 
 - 交互式通信已创建和发布
 - 已启用弹出窗口支持的浏览器
-- 关联[用户必须属于Forms-associates组](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 使用AEM[支持的任何](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)身份验证机制（例如SAML 2.0、OAuth或自定义身份验证处理程序）配置的身份验证
+- 关联[用户必须属于Forms-associates组](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 使用AEM[支持的任何](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/authentication)身份验证机制（例如SAML 2.0、OAuth或自定义身份验证处理程序）配置的身份验证
 
 >[!NOTE]
 >
 >- 本文演示了将SAML 2.0和[Microsoft Entra ID (Azure AD)用作身份提供程序](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)的身份验证配置。
->- 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
+>- 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
 
 ### 关联UI的其他SAML配置
 
