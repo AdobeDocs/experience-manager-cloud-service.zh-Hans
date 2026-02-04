@@ -2,10 +2,10 @@
 title: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
 description: 在 AEM 中引入用于数字资产管理的 Assets as a Cloud Service
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
 workflow-type: tm+mt
-source-wordcount: '5075'
-ht-degree: 97%
+source-wordcount: '5626'
+ht-degree: 88%
 
 ---
 
@@ -109,7 +109,6 @@ Adobe 数字资产管理的部分核心功能包括：
    </p>
 </td>
 
-
 <td>
    <a href="/help/assets/color-tag-images.md">
    <img alt="添加智能基于颜色的标记" src="./assets/color-tags.jpg" />
@@ -193,7 +192,7 @@ Adobe 数字资产管理的部分核心功能包括：
 
 **智能图像处理**：智能图像处理可根据用户浏览器的能力，自动优化图像格式和文件大小，从而显著提升图像资产的交付性能。该功能可与您现有的图像预设配合使用，并在交付时智能优化图像内容。该智能机制还会根据浏览器类型和网络连接速度，进一步压缩图像文件大小。
 
-**智能裁切**：一种Adobe AI功能，可自动检测任何图像或视频中的焦点，并裁切以对其进行维护。 该功能可在不同屏幕尺寸下准确保留图像或视频中的目标焦点，从而省去繁琐的手动操作，提供高质量、加载迅速的图像和视频内容，确保在任何设备或屏幕上均呈现良好效果。
+**智能裁切**：一种Adobe AI功能，可自动检测任何图像或视频中的焦点，并可裁切以保持焦点。 该功能可在不同屏幕尺寸下准确保留图像或视频中的目标焦点，从而省去繁琐的手动操作，提供高质量、加载迅速的图像和视频内容，确保在任何设备或屏幕上均呈现良好效果。
 
 **AI 生成的视频字幕**：Adobe Dynamic Media 利用人工智能自动为视频内容生成字幕。此功能旨在通过提供精准字幕，提高内容的可访问性并优化用户体验。字幕可根据原始音频生成，也可以通过视频属性页面中的 `Captions and Audio` 选项卡添加额外音轨或字幕内容。支持 60 多种语言，字幕可在发布视频前进行审核与预览。
 <table>
@@ -270,11 +269,11 @@ AEM Assets 提供的功能可帮助您快速找到合适的资产。这些功能
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=zh-Hans">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="元数据管理最佳实践" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=zh-Hans">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>元数据管理最佳实践</strong>
       </a>
    </div>
@@ -375,7 +374,6 @@ AEM Assets 提供的功能可帮助您快速找到合适的资产。这些功能
       <em>了解如何执行基础及高级的资产管理任务。</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
@@ -628,6 +626,123 @@ AEM Assets 可与多种 Adobe 及非 Adobe 应用程序实现无缝集成。以�
 </table>
 
 +++
+
+>[!TAB AI代理]
+
+## AI代理 {#ai-agents}
+
+AEM as a Cloud Service提供了智能&#x200B;**代理**&#x200B;以增强内容管理、优化和治理。 这些代理允许用户快速发现内容、优化活动并确保跨数字资产的合规性。
+
+**发现代理**
+
+Discovery Agent通过自然的对话提示按需提供AEM内容，从而提供简洁的点击式免费发现体验。 它跨&#x200B;**Assets、内容片段和自适应Forms**&#x200B;进行智能搜索，以提供相关内容，如图像、视频、PDF、文章和表单模板。 使用自然语言，您可以进行搜索，而无需在AEM Assets界面中构建复杂查询或应用过滤器。 根据您的提示，代理会返回策划的结果以及资产元数据和投放URL，以便可以嵌入到其他应用程序中。
+
+Discovery Agent的一些主要优势包括：
+
+* **统一内容发现：**&#x200B;从单一对话界面访问所有类型的AEM内容，如图像、视频、PDF文档、文章和表单。
+* **更快的营销活动规划：**&#x200B;跨电子邮件、Web和社交渠道快速收集营销活动的视觉效果和表单。
+* **提高工作效率：**&#x200B;通过基于意图的自动搜索减少浏览存储库或过滤元数据所花费的时间。
+* **内容利用率一致：**&#x200B;确保重复使用已批准的资源和片段，保持跨渠道的品牌一致性。
+
+**技能：**&#x200B;自然语言内容发现、基于标记的资源发现、基于文件夹的内容发现、基于格式和方向的资源发现\
+**角色：**&#x200B;营销活动经理、渠道营销人员、DAM库管理员、代理和合作伙伴\
+**通过AEM中的AI助手访问：**
+
+**常见用例/示例提示：**
+
+* 在文件夹WKND中显示标记为“office”的图像。
+* 列出WKND饮料的所有已发布内容片段。
+* 查找要申请工作的表单。
+* 以横向显示带人员的资产。
+
+**内容优化代理**
+
+**内容优化代理**&#x200B;使用自然语言提示帮助优化和调整资源。 它可以自动生成新演绎版、调整视觉效果、更改背景和创建渠道就绪变体。 与发现代理和带有OpenAPI的&#x200B;**Dynamic Media**&#x200B;配合使用以实现无缝优化。
+
+**主要优点：**
+
+* **轻松的资源转换：**&#x200B;调整大小、锐化、重新着色或镜像图像。
+* **渠道优化输出：**&#x200B;为Instagram、Web横幅和其他营销渠道生成演绎版。
+* **Creative大规模增强：**&#x200B;为大容量工作流应用后台更改或叠加。
+
+**通过AEM中的AI助手访问：**。
+
+**示例提示：**
+
+* `Create a 2000px JPEG rendition.`
+* `Sharpen the image.`
+* `Change background color to #ff8932.`
+* `Create a rendition for an Instagram story.`
+
+**限制：** PNG资源不支持某些优化。
+
+**治理代理**
+
+治理代理有助于确保跨AEM内容实现法规遵从性、品牌一致性和策略实施。 它标识不符合元数据、可访问性或公司准则的内容。
+
+Governance Agent的一些主要优势包括：
+
+* **合规性监控：**&#x200B;检测内容中的策略违规。
+* **元数据强制执行：**&#x200B;确保资产具有治理所需的元数据。
+* **品牌一致性：**&#x200B;标记不符合公司标准的内容。
+
+**技能：**&#x200B;策略符合性检查、元数据验证、辅助功能审核、违规的自动警报\
+**角色：** DAM管理员、合规专员、品牌经理\
+通过AEM AI助手&#x200B;**访问：**
+
+**常见用例/示例提示：**
+
+* 验证WKND文件夹中所有资源的元数据。
+* 识别缺少品牌准则的资产。
+* 审核发布的内容是否符合辅助功能要求。
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="发现代理概述" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>发现代理概述</strong>
+      </a>
+   </div>
+   <p>
+      <em>发现代理及其对话式内容发现功能概述。</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="内容优化概述" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>内容优化代理概述</strong>
+      </a>
+   </div>
+   <p>
+      <em>内容优化代理和支持的优化工作流程概述。</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="治理代理概述" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong>治理代理概述</strong>
+      </a>
+   </div>
+   <p>
+      <em>用于合规性和策略实施的治理代理概述。</em>
+   </p>
+</td>
+</table>
+
+### **如何访问AEM中的代理**
+
+可通过AEM Cloud Service中的&#x200B;**AI助手**&#x200B;访问代理。 登录到[experience.adobe.com](https://experience.adobe.com/)并使用自然语言提示与AI Assistant交互。
 
 >[!TAB 资产激活]
 
