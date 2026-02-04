@@ -3,7 +3,7 @@ title: 将品牌批准的资产上传到 [!DNL Content Hub]
 description: 了解如何将品牌批准的资产上传到Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -19,6 +19,8 @@ ht-degree: 17%
 
 有权添加资源的[Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以从本地文件系统向Content Hub添加资源，也可以从OneDrive或Dropbox数据源导入资源。 为了增强搜索功能，所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关。
 
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+
 Assets as a Cloud Service中标记为`Approved`的资源在Content Hub中自动可用。 如需了解更多信息，请参阅[批准 Content Hub 的资产](/help/assets/approve-assets-content-hub.md)。
 
 为了进一步增强资产搜索，Content Hub允许您：
@@ -27,7 +29,7 @@ Assets as a Cloud Service中标记为`Approved`的资源在Content Hub中自动�
 
 * 成功上传后为每个资源自动生成更多属性，例如文件大小、格式、分辨率和其他某些属性。
 
-* 使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)提供的人工智能，自动将相关标记应用于您上传的所有资源。 这些标记名为智能标记，有助于您快速查找相关资产，从而提高项目的内容速度。
+* 使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)提供的人工智能，自动将相关标记应用到所有上传的资源。 这些标记名为智能标记，有助于您快速查找相关资产，从而提高项目的内容速度。
 
 确保仅将您的[品牌批准的资产上传到Content Hub](/help/assets/approve-assets.md)。
 

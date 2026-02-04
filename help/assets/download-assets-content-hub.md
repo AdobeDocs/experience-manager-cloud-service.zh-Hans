@@ -3,7 +3,7 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载一个或多个资源及其演绎版。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 # 从Content Hub下载资源 {#download-assets}
 
 [!DNL Content Hub]允许您下载并共享您的资产。 [!DNL Content Hub]用户界面仅显示批准的资源。 这些资产可能包括图像、视频或任何其他数字内容。 [!DNL Content Hub]增强了有效资产分配的可访问性和适应性。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433135/?learn=on){transcript=true}
 
 您可以使用[!DNL Content Hub]下载单个或多个资源及其可用演绎版。
 
@@ -38,12 +40,12 @@ ht-degree: 1%
       > * Content Hub会将您的选择保存为首选项（**[!UICONTROL 为每个资源创建一个单独的文件夹]**），并保留它以供将来下载。
       > * **[!UICONTROL 为每个资产创建单独的文件夹]**&#x200B;选项仅适用于经过身份验证的[!DNL Content Hub]用户。 [!DNL Content Hub]允许公共用户将资源下载为单个资源。
 
-   1. 单击&#x200B;**[!UICONTROL 下载]**&#x200B;可下载所选资源及其演绎版。
+   1. 单击&#x200B;**[!UICONTROL 下载]**可下载所选资源及其演绎版。
       ![下载多个资源](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 在下载过程中，您可以继续使用[!DNL Content Hub]。 在下载过程中，Content Hub不会中断您的工作流。
 ![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载它们。
+如果**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**以下载它们。
 ![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]

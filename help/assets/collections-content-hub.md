@@ -3,7 +3,7 @@ title: 在Content Hub中管理收藏集
 description: 了解如何在Content Hub中管理收藏集
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 2%
@@ -29,6 +29,8 @@ ht-degree: 2%
 * **收藏**：将收藏集标记为收藏。
 
 它帮助用户轻松访问和管理[!DNL Content Hub]中可用的各种资源。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## 先决条件 {#prerequisites}
 

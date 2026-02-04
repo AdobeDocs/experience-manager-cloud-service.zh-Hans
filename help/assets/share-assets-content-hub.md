@@ -3,16 +3,18 @@ title: 在 [!DNL the Content Hub]中共享Assets
 description: 在 [!DNL the Content Hub]中共享Assets
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a6d995eddd714c356eadc6c1b668887bdfd011cd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 在 Content Hub 共享资产 {#search-assets-as-a-link}
 
 创建指向所选资产的链接以轻松与他人共享。 作为授权[!DNL Content Hub]用户，请选择您的[!DNL Content Hub]环境中可用的一个或多个资源，生成链接，并将其发送给其他专用或公共用户。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## 先决条件 {#prerequisites}
 
@@ -36,7 +38,7 @@ ht-degree: 2%
 
 <!--1. Select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Get Link]** to generate a link to share with private users. Private users sign in to their [!DNL Content Hub] environment to access the shared assets page.-->
 
-![私有和公共链接](/help/assets/assets/shared-link-for-assets.png)
+![专用和公开链接](/help/assets/assets/shared-link-for-assets.png)
 
 <!--Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].-->
 
@@ -49,7 +51,7 @@ ht-degree: 2%
 执行以下步骤以在预览资产时共享资产：
 
 1. 导航到[!DNL Content Hub]主页，然后单击资产缩略图以预览资产，并在对话框的右侧窗格中显示菜单选项。
-1. 选择![共享](/help/assets/assets/share.svg)以显示&#x200B;**[!UICONTROL 共享]**&#x200B;面板。
+1. 选择![共享](/help/assets/assets/share.svg)以显示&#x200B;**[!UICONTROL 共享]**面板。
    预览资产时![共享资产](/help/assets/assets/share-link-asset-preview.png)
 1. 按照[共享资产](#share-assets)部分中的步骤3至5，从此&#x200B;**[!UICONTROL 共享]**&#x200B;面板生成并共享资产链接（私有或公共）。
 
@@ -57,10 +59,10 @@ ht-degree: 2%
 
 通过链接访问共享资源页面，并执行以下操作：
 
-* 选择一个或多个资源并单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**&#x200B;从可用下载选项中选择&#x200B;**[!UICONTROL 原始]**、**[!UICONTROL 静态]**&#x200B;或两个呈现版本。
+* 选择一个或多个资源并单击![下载](/help/assets/assets/download-icon.svg) **[!UICONTROL 下载]**&#x200B;从可用下载选项中选择&#x200B;**[!UICONTROL 原始]**、**[!UICONTROL 静态]**或两个呈现版本。
   ![](/help/assets/assets/download-shared-assets.png)
 * 单击资源缩略图可查看资源的元数据。
-* 在共享资源页面（[通过专用链接访问](#share-assets)）上，单击资源缩略图并选择![下载](/help/assets/assets/download-icon.svg)以在&#x200B;**[!UICONTROL 下载]**&#x200B;面板上选择和查看资源的可用动态演绎版，然后再选择并下载。
+* 在共享资源页面（[通过专用链接访问](#share-assets)）上，单击资源缩略图并选择![下载](/help/assets/assets/download-icon.svg)以在&#x200B;**[!UICONTROL 下载]**面板上选择和查看资源的可用动态演绎版，然后再选择并下载。
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 

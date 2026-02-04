@@ -2,7 +2,7 @@
 title: 使用Adobe Express在Content Hub中编辑图像
 description: 使用Adobe Express在Content Hub中编辑图像
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 10%
@@ -12,6 +12,8 @@ ht-degree: 10%
 # 在Content Hub中编辑图像 {#edit-images-content-hub}
 
 Content Hub允许您使用Adobe Express创建新内容。 您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435003/?learn=on){transcript=true}
 
 ## 先决条件 {#prereqs-edit-image-content-hub}
 
@@ -27,7 +29,7 @@ Content Hub允许您使用Adobe Express创建新内容。 您可以使用易于�
 
 1. 单击需要编辑的图像的资产卡上可用的&#x200B;**[!DNL Open in Adobe Express]**。 或者，单击该图像以打开其详细信息，然后单击[!DNL Adobe Express]徽标。 随后，无需离开Content Hub，即可加载Adobe Express的嵌入式编辑器。
 
-   您可以利用[!DNL Adobe Express]功能执行所有与图像编辑相关的操作，如[调整图像大小](https://helpx.adobe.com/cn/express/using/resize-image.html)、[删除或更改背景颜色](https://helpx.adobe.com/cn/express/using/remove-background.html)、[裁切图像](https://helpx.adobe.com/cn/express/using/crop-image.html)、将图像与AI生成的图像或文本组合等等。
+   您可以利用[!DNL Adobe Express]功能执行所有与图像编辑相关的操作，如[调整图像大小](https://helpx.adobe.com/express/using/resize-image.html)、[删除或更改背景颜色](https://helpx.adobe.com/express/using/remove-background.html)、[裁切图像](https://helpx.adobe.com/express/using/crop-image.html)、将图像与AI生成的图像或文本组合等等。
 
 1. 执行修改并单击&#x200B;**[!UICONTROL 保存]**&#x200B;可将编辑后的资源保存为以下任一格式类型：
 

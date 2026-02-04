@@ -3,7 +3,7 @@ title: 基于属性的访问控制
 description: 了解如何启用基于属性的访问控制来定义基于元数据的规则，以定义对Content Hub中可用资源的访问级别
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 5%
@@ -27,6 +27,8 @@ ht-degree: 5%
 * 允许管理员上传资产并追溯确定权限结构
 
 * 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## 如何启用基于属性的访问控制？ {#enable-attribute-based-access-control}
 

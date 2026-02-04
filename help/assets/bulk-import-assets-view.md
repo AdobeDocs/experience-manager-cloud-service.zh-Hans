@@ -4,10 +4,10 @@ description: 了解如何使用新的资源 UI（资源视图）批量导入资�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 90%
+source-wordcount: '1874'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,8 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 
@@ -128,12 +130,12 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
    >[!NOTE]
    >
    >如果您使用OneDrive作为数据源，请根据以下规则指定源文件夹路径：
-   >* 仅指定根文件夹名称，不包含域。 如果文件夹的完整URL路径为`https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`，请在&#x200B;**[!UICONTROL Source文件夹]**&#x200B;字段中指定`/Importfolder/`。
+   >* 仅指定根文件夹名称，不包含域。 如果文件夹的完整URL路径为`https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`，请在`/Importfolder/`Source文件夹&#x200B;**[!UICONTROL 字段中指定]**。
    >* 如果文件夹名称包含多个用空格分隔的单词，请在“批量导入”配置中指定带有空格的名称。
    >* 源文件夹必须位于目录的根目录下。 不支持文件夹路径。
 
 1. （可选）选择&#x200B;**[!UICONTROL “导入后删除源文件”]**&#x200B;选项，以在文件导入到 Experience Manager Assets 后，从源数据存储中删除原始文件。
-1. 选择&#x200B;**[!UICONTROL “导入模式”。]**&#x200B;选择&#x200B;**[!UICONTROL “跳过”]**、**[!UICONTROL “代替”]**，或者&#x200B;**[!UICONTROL 创建版本。]**&#x200B;跳过模式是默认模式，在该模式下，如果资源已经存在，则摄取器会跳过导入该资源。
+1. 选择&#x200B;**[!UICONTROL “导入模式”。]**&#x200B;选择&#x200B;**[!UICONTROL “跳过”]**、**[!UICONTROL “代替”]**，或者&#x200B;**[!UICONTROL 创建版本。]**跳过模式是默认模式，在该模式下，如果资源已经存在，则摄取器会跳过导入该资源。
    ![导入源详细信息](/help/assets/assets/bulk-import-source-details.png)
 
 1. （可选）在&#x200B;**[!UICONTROL 元数据文件]**&#x200B;字段中指定要导入的元数据文件（以 CSV 格式提供）。元数据源文件必须位于源文件夹中。单击&#x200B;**[!UICONTROL 下一步]**，导航至&#x200B;**[!UICONTROL 位置和过滤器]**。
@@ -172,7 +174,7 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
 ## 查看现有的批量导入配置 {#view-import-configuration}
 
 若要查看现有的批量导入内容，请选择左侧窗格中的&#x200B;**[!UICONTROL 批量导入]**&#x200B;选项。批量导入页面会显示，其中包含&#x200B;**[!UICONTROL 已执行导入]**&#x200B;列表。<br>
-您还可以从下拉选项中查看&#x200B;**[!UICONTROL 已保存的导入]**&#x200B;和&#x200B;**[!UICONTROL 计划的导入]**。
+您还可以从下拉选项中查看**[!UICONTROL 已保存的导入]**&#x200B;和&#x200B;**[!UICONTROL 计划的导入]**。
 
 ![保存批量导入配置](assets/bulk-import-options.png)
 
@@ -225,7 +227,3 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
 ## 执行批量导入后导航到资源 {#view-assets-after-bulk-import}
 
 要查看运行批量导入任务后导入资源的资源目标位置，请单击配置名称对应的![“更多”图标](assets/do-not-localize/more-icon.svg)，然后单击&#x200B;**[!UICONTROL 查看资源]**。
-
-## 视频：使用Assets视图批量导入资源
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)

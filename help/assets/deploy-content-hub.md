@@ -3,7 +3,7 @@ title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源和Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 6%
@@ -20,7 +20,7 @@ Content Hub作为Experience Manager Assets as a Cloud Service的一部分提供�
 
 请观看以下视频，了解如何为Experience Manager Assets启用Content Hub：
 
->[!VIDEO](https://video.tv.adobe.com/v/3469851)
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 Content Hub上各种权限的变体包括：
 
@@ -33,6 +33,10 @@ Content Hub上各种权限的变体包括：
 * [有权将资源重新混合到新变体的Content Hub用户](#onboard-content-hub-users-remix-assets)： [Adobe Express集成](/help/assets/edit-images-content-hub.md)(如果您拥有Adobe Express权限)，并且有权访问Content Hub门户上的品牌批准资源。
 
 * [Experience Manager Assets用户](#experience-manager-assets-users)：能够在Experience Manager Assets as a Cloud Service上批准资源，以便这些资源可在Content Hub上使用。
+
+>[!NOTE]
+>
+>对于Content Hub Ultimate，您最多可以访问250个Content Hub受限用户和50个Content HubAssets用户，并用于Assets Prime。 如果您还有其他问题，请联系您的Adobe代表。
 
 下表汇总了可用的Content Hub用户类型、这些用户拥有的权限以及获取这些权限所需的产品配置文件：
 
@@ -83,11 +87,6 @@ Content Hub上各种权限的变体包括：
 1. 单击&#x200B;**[!UICONTROL 更新]**。
 
 Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生产环境中启用Content Hub后，您将无法以自助方式禁用它。
-
->[!NOTE]
->
->对于Content Hub Ultimate，您最多可以访问250个Content Hub受限用户和50个Content HubAssets用户，并用于Assets Prime。 如果您还有其他问题，请联系您的Adobe代表。
-
 
 如果您是Experience Manager Assets的新用户，请单击&#x200B;**[!UICONTROL 添加程序]**，然后提供程序详细信息（程序名称，为生产设置），然后单击&#x200B;**[!UICONTROL 继续]**。 然后在&#x200B;**[!UICONTROL 解决方案和加载项]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Assets]**&#x200B;和&#x200B;**[!UICONTROL Content Hub]**。
 
@@ -157,7 +156,7 @@ Content Hub现已为Experience Manager Assets as a Cloud Service启用。 在生
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
    Admin Console显示AEM as a Cloud Service的两个产品配置文件：管理员和用户。
-1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
+1. 单击管理员产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
    ![管理员产品配置文件](assets/aem-cs-admin-product-profile.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
