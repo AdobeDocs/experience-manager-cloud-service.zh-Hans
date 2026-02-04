@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 6b90e8f2d26d6bfd22fbd94af0d6c68466c69bbb
+source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 2%
 
 ---
@@ -33,15 +33,14 @@ ht-degree: 2%
 
 在将关联UI与您的应用程序集成之前，请确保您已：
 
-- AEM Forms Cloud Service发布实例
-- 在AEM中创建和发布的交互式通信
+- 交互式通信已创建和发布
 - 已启用弹出窗口支持的浏览器
-- 关联用户必须属于&#x200B;**forms-associates**&#x200B;组
-- 已配置身份验证 — [SAML 2.0](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- 关联[用户必须属于Forms-associates组](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 已配置身份验证 — [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
+> 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
 
 ### 关联UI的其他SAML配置
 
@@ -144,10 +143,10 @@ const data = {
 | 组件 | 必需 | 描述 |
 |-----------|----------|-------------|
 | `id` | 是 | 要加载的交互式通信(IC)的标识符 |
-| `prefill` | 否 | 包含用于数据预填充的服务配置。 |
-| `prefill.serviceName` | 否 | 要调用以预填充数据的表单数据模型服务的名称 |
-| `prefill.serviceParams` | 否 | 传递到预填充服务的键值对 |
-| `options` | 否 | PDF渲染支持的其他属性 — 区域设置、includeAttachments、embedFonts、makeAccessible |
+| `prefill` | 可选 | 包含用于数据预填充的服务配置。 |
+| `prefill.serviceName` | 可选 | 要调用以预填充数据的表单数据模型服务的名称 |
+| `prefill.serviceParams` | 可选 | 传递到预填充服务的键值对 |
+| `options` | 可选 | PDF渲染支持的其他属性 — 区域设置、includeAttachments、embedFonts、makeAccessible |
 
 ### 步骤3：实施集成功能
 
@@ -409,7 +408,7 @@ launchAssociateUI('12345', 'FdmTestData',
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -425,11 +424,12 @@ launchAssociateUI('12345', 'FdmTestData',
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -481,16 +481,16 @@ launchAssociateUI('12345', 'FdmTestData',
 - 用于生产：指定应用程序的确切起源URL
 - 确保发布实例CORS设置允许您的应用程序域
 
-## 最佳做法
+<!--## Best Practices
 
-实施关联UI集成时，请遵循以下最佳实践：
+When implementing the Associate UI integration, follow these best practices:
 
-1. **验证**：发送之前始终验证IC ID和JSON有效负载
-2. **错误处理**：为`window.open()`失败实施正确的错误处理
-3. **用户体验**：在关联UI初始化时显示加载指示器
-4. **内存管理**：在初始化后删除事件侦听器以防止内存泄漏
-5. **测试**：测试与已启用弹出窗口阻止程序的集成，以确保正常处理
-6. **用户权限**：验证用户是否具有对Forms-associates组的适当访问权限
+1. **Validation**: Always validate the IC ID and JSON payload before sending
+2. **Error Handling**: Implement proper error handling for `window.open()` failures
+3. **User Experience**: Display a loading indicator while the Associate UI initializes
+4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
+5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## 另请参阅
 
