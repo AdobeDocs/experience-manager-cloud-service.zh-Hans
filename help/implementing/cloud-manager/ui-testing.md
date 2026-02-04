@@ -274,7 +274,7 @@ Docker 镜像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 | 推荐持续时间 | 15m | Adobe建议在此时间限制内进行测试。 |
 
 * 列入允许列表 列入允许列表如果目标Author/Publish受IP保护，则管道UI测试基础架构必须，否则UI测试可能会失败，并显示403 Forbidden。
-另请参阅[AEMaaCS中的UI测试失败，原因是IP 列入允许列表 列入允许列表](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+另请参阅[AEMaaCS中的UI测试失败，原因是IP 列入允许列表 列入允许列表](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
 >[!NOTE]
 >
