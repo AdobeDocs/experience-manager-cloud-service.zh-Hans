@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
+source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2835'
 ht-degree: 19%
 
 ---
@@ -202,7 +202,32 @@ RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有�
 >
 >使用热键 `Shift+Backspace` 可从容器中删除选定组件。
 
-### 重新排序组件 {#reordering-components}
+### 重新排序和移动组件 {#reordering-components}
+
+您可以使用上下文菜单或内容树来移动和重新排序组件。
+
+#### 使用上下文菜单移动组件 {#move-context-menu}
+
+1. 右键单击组件或单击选定组件的徽章以打开[上下文菜单。](#context-menu)
+1. 选择所需的移动选项。
+   * 移至顶部
+   * 上移
+   * 下移
+   * 移至底部
+     ![在上下文菜单中移动选项](assets/move-options-in-conext-menu.png)
+
+该组件会在编辑器和内容树中移动。
+
+>[!TIP]
+>
+>使用热键`Command-U`或`Shift-Command-U`分别向上或向上移动。
+>使用热键`Command-J`或`Shift-Command-J`分别向下移动或向下移动。
+
+>[!NOTE]
+>
+>上下文菜单选项只能移动其容器中的组件。 如果您要在容器之间移动组件，请[使用内容树。](#reorder-content-tree)
+
+#### 使用内容树对组件重新排序 {#reorder-content-tree}
 
 1. 如果尚未处于[内容树模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，请切换到它。
 1. 在内容树或编辑器中选择一个容器组件。
@@ -403,7 +428,7 @@ RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有�
 要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
-* [AEM Universal Editor 快速入门 &#x200B;](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
+* [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。

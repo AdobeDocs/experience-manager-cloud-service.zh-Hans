@@ -4,10 +4,10 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f73316b16b0fb90e225b954ba614008d734b8918
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 100%
+source-wordcount: '1018'
+ht-degree: 86%
 
 ---
 
@@ -118,20 +118,25 @@ data-aue-resource="urn:<referenceName>:<resource>"
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## 定义应为哪些内容路径或 `sling:resourceType` 打开通用编辑器。（可选） {#content-paths}
+## 定义应为其打开通用编辑器的内容路径或`sling:resourceType`以及如何打开。 （可选） {#content-paths}
 
-如果您现有的 AEM 项目使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)，当内容作者编辑页面时，页面会自动在页面编辑器中打开。您可以根据内容路径或 `sling:resourceType` 定义 AEM 应打开哪个编辑器，这样无论所选内容需要使用哪个编辑器，都能为作者带来无缝体验。
+如果您现有的 AEM 项目使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)，当内容作者编辑页面时，页面会自动在页面编辑器中打开。您可以根据内容路径或`sling:resourceType`定义应打开哪个编辑器AEM以及应如何打开它，从而让您的作者无缝体验所选内容所需的编辑器。
 
 1. 打开配置管理器。
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. 在列表中找到&#x200B;**通用编辑器 URL 服务**，然后点击&#x200B;**编辑配置值**。
+1. 在列表中找到&#x200B;**`Universal Editor URL Service`**&#x200B;并单击&#x200B;**编辑配置值**。
 
 1. 定义应为哪些内容路径或 `sling:resourceType` 打开通用编辑器。
 
-   * 在&#x200B;**通用编辑器打开映射**&#x200B;字段中，提供通用编辑器为其打开的路径。
-   * 在通用编辑器打开的 **Sling:resourceTypes**&#x200B;字段中，提供通用编辑器直接打开的一个资源列表。
+   * 在&#x200B;**`mappings`**&#x200B;字段中，提供用于打开通用编辑器的路径。
+   * 在&#x200B;**`resourcetypes`**&#x200B;字段中，提供由通用编辑器直接打开的资源的列表。
+
+1. 定义应如何打开编辑器。
+
+   * 选中&#x200B;**`aemdomain`**&#x200B;选项以在AEM域（如`https://author-pXX-eYYY.adobeaemcloud.com...`）下打开编辑器，否则它将在`https://experience.adobe.com...`下打开。
+   * 选中&#x200B;**`editorreleasepreview`**&#x200B;选项以在[预览环境中自动打开通用编辑器，](/help/release-notes/universal-editor/preview.md)，否则它将在当前版本环境中打开。
 
 1. 单击&#x200B;**保存**。
 

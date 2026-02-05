@@ -4,10 +4,10 @@ description: 通过示例了解通用编辑器可以在属性面板中编辑的�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
+source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 96%
+source-wordcount: '1637'
+ht-degree: 95%
 
 ---
 
@@ -138,6 +138,7 @@ ht-degree: 96%
 | [选择](#select) | `select` |
 | [选项卡](#tab) | `tab` |
 | [文本](#text) | `text` |
+| [文本区域](#textarea) | `textarea` |
 
 #### AEM 标记 {#aem-tag}
 
@@ -906,5 +907,33 @@ AEM 内容组件类型会启用 AEM 内容选取器，用于选择任何 AEM 资
 >[!TAB 屏幕快照]
 
 ![文本组件类型的屏幕快照](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### 文本区域 {#textarea}
+
+文本区域允许输入多行文本。
+
+>[!BEGINTABS]
+
+>[!TAB 示例]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB 屏幕快照]
+
+![textarea组件类型的屏幕截图](assets/component-types/textarea.png)
 
 >[!ENDTABS]

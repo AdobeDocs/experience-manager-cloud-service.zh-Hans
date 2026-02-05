@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1874'
 ht-degree: 20%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 ![Experience Cloud 标题](assets/experience-cloud-header.png)
 
-有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帐户 {#user-properties}
 
@@ -86,7 +86,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 ![环境切换器](assets/environment-switcher.png)
 
-对于通用编辑器，在标题&#x200B;**产品设置**&#x200B;下，有一个选项可在通用编辑器的当前生产版本和即将发布的预览版本之间切换。
+对于通用编辑器，在标题&#x200B;**产品设置**&#x200B;下，使用&#x200B;**切换到预览环境**&#x200B;选项可在通用编辑器的当前生产版本和即将发布的[预览版本之间切换。](/help/release-notes/universal-editor/preview.md)
 
 ### 通用编辑器工具栏 {#universal-editor-toolbar}
 
@@ -187,7 +187,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 

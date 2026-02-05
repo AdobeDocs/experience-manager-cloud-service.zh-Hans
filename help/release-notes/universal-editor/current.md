@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.01.29发行说明
-description: 这些是通用编辑器2026.01.29版的发行说明。
+title: 通用编辑器2026.02.05发行说明
+description: 这些是通用编辑器2026.02.05版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 30%
+source-wordcount: '157'
+ht-degree: 38%
 
 ---
 
 
-# 通用编辑器2026.01.29发行说明 {#release-notes}
+# 通用编辑器2026.02.05发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 1 月 29 日版本的发行说明。
+这些是通用编辑器 2026 年 2 月 5 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ ht-degree: 30%
 
 ## 新增功能 {#what-is-new}
 
-* 删除组件方法已公开给`editorActions`。
-* 复制组件方法已向`editorActions`公开。
-* 移动组件方法已公开给`editorActions`。
-* 向`editorActions`公开了Add组件方法。
-* 定义对[可扩展性公开。](/help/implementing/universal-editor/extending.md)
-* 已发布文档创作API版本2.0。
+* 移动操作现在可在[上下文菜单中使用。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* RTE现在支持[粘贴为文本。](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -41,6 +37,4 @@ ht-degree: 30%
 
 ## 其他改进 {#other-improvements}
 
-* `content`可扩展性已重命名为`details`以遵循API架构。
-* 改进了上下文菜单行为。
-* 修复了单击可编辑项目的徽章时上下文菜单正确打开的错误。
+* 使用[`xwalk`插件时，已为AEM 6.5启用“发布到预览”。](/help/implementing/universal-editor/component-definition.md#plugins)

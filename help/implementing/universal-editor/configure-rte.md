@@ -4,9 +4,9 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,28 @@ RTE配置由两部分组成：
 >[!NOTE]
 >
 >通过Tab/Shift+Tab键进行列表嵌套的工作方式与常规缩进设置无关。
+
+### 粘贴为文本 {#paste-as-text}
+
+`paste_text`编辑器操作可启用标准的纯文本粘贴工作流。
+
+* **默认快捷键：** Mod-Shift-V(在macOS上为Cmd+Shift+V，在Windows/Linux上为Ctrl+Shift+V)
+* **行为：**&#x200B;从文本/纯文本粘贴（忽略源格式）
+   * 在列表中，新行将创建新列表项。
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### 其他操作 {#other}
 
