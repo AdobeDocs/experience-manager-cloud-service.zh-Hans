@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7ee534546cc8b9afd865b41f223caf9fd86ea45a
+source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
 workflow-type: tm+mt
-source-wordcount: '3548'
-ht-degree: 89%
+source-wordcount: '3697'
+ht-degree: 85%
 
 ---
 
@@ -174,7 +174,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
     <td>AEM as a Cloud Service 不支持此内部 slf4j API。<a href="#org.slf4j">请参阅下面的删除说明。</a></td>
     <td>4/11/2022</td>
     <td>2/26/2026</td>
-  </tr> 
+  </tr>
     <tr>
     <td>com.drew。*</td>
     <td>从图像和视频中提取元数据应该通过 Cloud Service 中的 Asset Compute 或通过 Apache POI 或 Apache Tika 完成。</td>
@@ -203,7 +203,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
     <td>不支持在 AEM as a Cloud Service 中使用此 API。</td>
     <td>10/31/2022</td>
     <td>2/26/2026</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
@@ -348,6 +348,14 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 更新代码后，通过检查代码质量步骤的结果，验证Cloud Manager中是否仍然没有弃用API用法。
 
+### 一般准则
+
+如果您使用当前需要已弃用API的第三方库，请尝试更新到该第三方库的更新版本。
+
+如果您使用的是ACS AEM Commons，请至少使用版本6.11.0（建议使用最新版本），并通过为内容包指定分类器[确保您](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)包含Cloud Service`cloud`的版本。
+
+如果已弃用的API的导入被标记为`optional`，您仍应尝试删除此项。 但是，此类可选用不会阻止部署。 但是，一旦可选导入不再得到满足，您的部署可能会受到影响。
+
 ### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
 如果您正在使用 `org.apache.sling.commons.auth`、`org.apache.sling.commons.auth.spi` 或二者皆用，则可以通过将代码迁移到 `org.apache.sling.auth` 来替换用法。`org.apache.sling.auth.spi`。如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
@@ -447,6 +455,7 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 
 * 将 ACS AEM Commons 更新至最新版本（至少 6.11.0）
 * 使用 `org.slf4j.event` 和 `org.slf4j.spi` 移除代码
+* 如果您使用Apache Kafka客户端并包含Apache ServiceMix中的OSGi包装包(`org.apache.servicemix.bundles.kafka-clients`)，请将其替换为[AEM Apache Kafka客户端包装包](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/)。 此版本与Apache ServiceMix中的版本相同，只是删除了这两个包的使用情况。
 
 ### 使用 `org.apache.log4j` {#org.apache.log4j}
 
