@@ -3,9 +3,9 @@ title: 开发代理概述
 description: 了解AEM中的开发代理如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
+source-git-commit: 30b715d4e43bf83016622e3cf13f100062a1c08d
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 目前，代理可以检索管道状态，并通过建议修复来帮助您排除失败的构建步骤，从而节省在开发、暂存和生产环境中调试AEM as a Cloud Service部署的时间。 它会检查构建日志和相关代码，以推荐您可以手动应用的修复。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478017?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ ht-degree: 1%
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-通过电子邮件发送[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)，其中包含反馈或请求以访问此代理。
+要访问此代理，请参阅[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)以了解如何注册测试版计划的说明，并确保表明您对开发代理感兴趣。 您还可以通过电子邮件将特定于开发代理的反馈发送至[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)。
 
 ## 通过Cloud Manager访问开发代理 {#how-to-access-the-agent}
 
