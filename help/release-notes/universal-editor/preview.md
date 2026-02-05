@@ -3,10 +3,10 @@ title: '通用编辑器预览发行说明 '
 description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: b03ad4a29c55e6789b82d2da76708c6e31613c5e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 63%
+source-wordcount: '170'
+ht-degree: 48%
 
 ---
 
@@ -27,8 +27,10 @@ ht-degree: 63%
 
 ## 即将推出的新功能 {#what-is-new}
 
-* 待定
+* 现在支持Dynamic Media链接。
 
 ## 即将推出的改进 {#other-improvements}
 
-* 待定
+* 修复了视频URL不正确的问题。
+* 创建具有相同名称的多个组件不会再返回409。
+* Headless画布现在保留对容器中字段的后续更新。
