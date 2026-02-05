@@ -3,7 +3,7 @@ title: 将MCP与AEM as a Cloud Service结合使用
 description: 了解如何将模型上下文协议与AEM as a Cloud Service一起使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -117,7 +117,7 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 下面是每个受支持的应用程序在高级别上的外观示例。
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
 ![配置ChatGPT — 设置](assets/chatgpt-1.png)
 
@@ -139,7 +139,7 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
   *“使用配置的AEM MCP工具，列出创作环境中的所有站点。”*
 
-**克劳德**
+### 克劳德 {#claude}
 
 ![配置Claude — 设置](assets/claude-1.png)
 
@@ -161,7 +161,7 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 * 在开始对话之前，请确保已选择MCP服务器
 * 要求Claude执行与AEM相关的任务；Claude将根据您的提示选择MCP服务器公开的AEM工具。
 
-**游标**
+### 光标 {#cursor}
 
 ![配置游标 — 设置](assets/cursor-1.png)
 
@@ -178,7 +178,7 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 * （可选）通过单击工具名称启用或禁用单个工具。 默认情况下，所有工具都处于启用状态。
 * 使用光标的编辑器或聊天工具在开发或内容工作流中调用AEM工具。
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![配置Copilot — 代理](assets/copilot-1.png)
 
