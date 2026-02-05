@@ -78,7 +78,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 ![Experience Cloud 标题](assets/experience-cloud-header.png)
 
-有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帐户 {#user-properties}
 
