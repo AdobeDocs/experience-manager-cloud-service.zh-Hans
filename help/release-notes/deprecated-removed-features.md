@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
+source-git-commit: 5b049c6502cddf7009cf5c81b033e290216eb847
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3695'
 ht-degree: 85%
 
 ---
@@ -61,6 +61,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 | [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成正在逐步失去对服务帐户（JWT）凭据的支持。自 2024 年 5 月 1 日起，无法在 Adobe Developer Console 中创建新的服务帐户（JWT）凭据。现有的服务帐户（JWT）凭据在 2025 年 1 月 1 日前仍可用于已配置的集成，之后将停止使用，客户需要迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)到 OAuth 服务器到服务器凭据。 |
 | [!DNL Foundation] | 发布内容树工作流和相关的发布内容树工作流步骤，用于复制内容层次结构。 | 使用[树激活工作流步骤](/help/operations/replication.md#tree-activation)，其性能更佳。 |
 | [!DNL Foundation] | 使用 YUI 对 JavaScript 客户端库进行压缩/缩小。Adobe 不打算进一步更新 YUI 库。 | Adobe 建议客户切换到 Google Closure Compiler (GCC) 来进行实施。 |
+| [!DNL Foundation] | 支持 com.adobe.granite.oauth.server | Adobe IMS 集成 |
 
 ## 已移除的功能 {#removed-features}
 
@@ -76,7 +77,6 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 | [!DNL Foundation] | 支持 Apache Sling 数据源（OSGi 包 org.apache.sling.datasource） | 不适用 | 已删除 |
 | [!DNL Foundation] | 支持 JST 脚本模板（OSGi 包 org.apache.sling.scripting.jst） | 不适用 | 已删除 |
 | [!DNL Foundation] | 支持 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
-| [!DNL Foundation] | 支持 com.adobe.granite.oauth.server | Adobe IMS 集成 | 2023 年 3 月 |
 | [!DNL Foundation] | 支持 org.apache.sling.serviceusermapping 功能，以[获取服务用户 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不适用 | 8/30/24 |
 | [!DNL Foundation] | Java 11 运行时已弃用，Adobe 已用 Java 21 运行时将其替换。请注意，代码仍可使用 Java 11 进行构建（Java 17 和 21 是其他可选方案） | 已应用 Java 21 运行时环境。为确保兼容性，必须按照[运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中的说明更新库版本 | 3 月 5/29/25 |
 
