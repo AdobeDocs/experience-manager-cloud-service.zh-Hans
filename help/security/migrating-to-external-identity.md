@@ -4,7 +4,7 @@ description: 在AEM as a Cloud Service中将本地用户和组迁移到具有动
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
 source-wordcount: '2232'
 ht-degree: 1%
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### 迁移前核对清单 {#pre-migration-checklist}
 
-* [ ] **配置服务用户**：创建并配置具有适当权限的服务用户（例如`group-provisioner`）
-* [ ] **验证ExternalPrincipal配置**：确保将服务用户配置为绕过`rep:externalId`和`rep:externalPrincipalNames`上的保护
-* [ ] **测试服务用户权限**：验证服务用户是否可以在开发中设置外部标识属性
-* [ ]标识创建用户或组的所有自定义代码
-* [ ]审核并更新自定义代码以使用外部标识模型
-* [ 在开发环境中测试]已更新的代码
-* [ ]清点所有要迁移的现有本地用户和组
-* [ ]在较低环境中测试迁移过程
+* **配置服务用户**：创建并配置具有适当权限的服务用户（例如`group-provisioner`）
+* **验证ExternalPrincipal配置**：确保将服务用户配置为绕过`rep:externalId`和`rep:externalPrincipalNames`上的保护
+* **测试服务用户权限**：验证服务用户是否可以在开发中设置外部标识属性
+* 识别创建用户或组的所有自定义代码
+* 审查并更新自定义代码以使用外部身份模型
+* 在开发环境中测试更新的代码
+* 清点所有要迁移的现有本地用户和组
+* 在较低环境中测试迁移过程
 
 ### 执行步骤 {#execution-steps}
 
@@ -773,12 +773,12 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 
 在将迁移servlet部署到生产环境之前：
 
-* [ ]在AEM Developer Console中创建IMS集成
-* [ ]配置Servlet以验证技术帐户ID
-* [ ]在开发/暂存环境中测试身份验证流程
-* [ ]考虑CDN级别的其他基于IP的限制
-* [ ]计划在迁移完成后禁用或删除迁移servlet
-* [ ]审核并记录对迁移终结点的所有访问权限
+* 在AEM Developer Console中创建IMS集成
+* 配置servlet以验证技术帐户ID
+* 在开发/暂存环境中测试身份验证流程
+* 考虑CDN级别的其他基于IP的限制
+* 规划在迁移完成后禁用或删除迁移servlet
+* 审核并记录对迁移端点的所有访问
 
 >[!IMPORTANT]
 >
@@ -787,6 +787,6 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 ## 其他资源 {#additional-resources}
 
 * [发布层的用户和组同步](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [SAML 2.0身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=zh-Hans)
+* [SAML 2.0身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
 * [外部身份提供程序](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [动态组成员资格](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
