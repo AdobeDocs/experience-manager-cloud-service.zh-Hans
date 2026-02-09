@@ -787,6 +787,6 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 ## 其他资源 {#additional-resources}
 
 * [发布层的用户和组同步](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [SAML 2.0身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
+* [SAML 2.0身份验证处理程序](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=zh-Hans)
 * [外部身份提供程序](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [动态组成员资格](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
