@@ -4,9 +4,9 @@ description: 了解如何通过生成安全JWT令牌来促进第三方服务器�
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hans#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
@@ -224,7 +224,6 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 * 按下按钮后，将生成一组包含新证书的凭据。 在AEM以外服务器上安装新凭据，并确保在不删除旧凭据的情况下按预期进行连接。
 * 在生成访问令牌时，请确保使用新凭据而不是旧凭据。
-* 可以选择撤消（然后删除）以前的证书，以便无法再用来通过AEM as a Cloud Service进行身份验证。
 
 ## 凭据吊销 {#credentials-revocation}
 
@@ -252,3 +251,15 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
    ![撤销证书确认](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. 最后，删除被泄露的证书。
+
+### 关于撤销个人证书的说明 {#note-on-recovacting-individual-certificates}
+
+对于JWT握手（用于检索持有者令牌），需要满足的所有条件是：
+
+1. 您拥有私钥
+1. Developer Console中的相应私钥下存在一个或多个活动证书
+1. 在检索令牌（JWT握手）期间，IMS检查JWT签名是否与系统中记录的任何绑定和活动（未过期）证书匹配，您可以在控制台中看到该证书。
+
+在PK下添加新证书可能会使吊销的证书看起来仍然可用。 实际上，PK下的所有证书都是等效的。 如果有一个处于活动状态，则会将所有都视为处于活动状态。
+
+如果您将此视为安全问题，则应当创建一个单独的私钥，并撤销旧私钥上的所有证书。
