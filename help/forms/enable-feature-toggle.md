@@ -3,14 +3,15 @@ title: 启用功能切换以集成早期采用者和预发行版功能
 description: 功能切换是AEM中的一项功能，它允许管理员在运行时环境中启用新功能。
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
-source-git-commit: cc4fccc51f487170bf6c14e4b302a8d5912c33a0
+exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
+source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '404'
+ht-degree: 5%
 
 ---
 
-# 在Adobe Experience Software Development Kit (AEM SDK)上启用功能切换
+# 在 Adobe Experience 软件开发工具包 (AEM SDK) 上启用功能切换
 
 AEM中的功能切换允许管理员在运行时启用或禁用功能，非常适合在不更改代码的情况下管理早期采用者和预发行版功能。 它支持逐步转出、A/B测试和快速停用不稳定特征。
 
@@ -34,7 +35,7 @@ AEM中的功能切换允许管理员在运行时启用或禁用功能，非常�
 
 * 用户是`forms-users`组的成员。
 
-* 导航到`http://<author-instance-url>:portnumber/system/console/bundles`并检查&#x200B;**(com.adobe.granite.toggle.impl.dev-1.1.2.jar)**&#x200B;包是否存在。 如果不存在，请[从链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)下载包。
+* 导航到`http://<author-instance-url>:portnumber/system/console/bundles`并检查&#x200B;**(com.adobe.granite.toggle.impl.dev-1.1.2.jar)**&#x200B;包是否存在。 如果不存在，请[从链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]s/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.8.jar)下载包。
 
   ![功能切换](/help/forms/assets/aem-web-console-bundle.png)
 
@@ -82,4 +83,3 @@ AEM中的功能切换允许管理员在运行时启用或禁用功能，非常�
 >[!NOTE]
 >
 > 要为生产环境启用功能切换，请联系Adobe支持团队。
-
