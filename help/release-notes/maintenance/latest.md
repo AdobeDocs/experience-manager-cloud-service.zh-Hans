@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
+source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 23%
+source-wordcount: '999'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 23%
 
 以下总结了维护版本24288的持续改进，该版本于2026年2月4日公开发布。 上一个维护版本是版本 23963。
 
-2026.2.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.2.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ ht-degree: 23%
 
 ### 已知问题 {#known-issues-24288}
 
-无。
+* SITES-40408：由于自定义Dispatcher重写规则，GraphQL端点返回404。
 
 ### 已弃用的功能和 API {#deprecated-24288}
 
