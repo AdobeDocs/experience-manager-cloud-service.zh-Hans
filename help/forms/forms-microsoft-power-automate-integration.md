@@ -5,10 +5,10 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 将AEM表单连接到power automate、Power automate automation AEM Forms、将power automate集成到Adaptive Forms、将数据从Adaptive Forms发送到Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
+source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 17%
+source-wordcount: '1635'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 17%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | 本文 |
 
 <span class="preview">如果您在GovCloud上并且需要连接到GCC（政府云计算）租户，请从您的官方地址向aem-forms-ea@adobe.com发送电子邮件，以请求通过率先采用者计划进行访问。</span>
@@ -140,6 +140,14 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 在“发布”页面上，选择&#x200B;**[!UICONTROL 所有配置]**&#x200B;并选择&#x200B;**[!UICONTROL 发布]**。 发布Power Automate Dataverse和Power Automate流服务云配置。
 
 您的Forms as a Cloud Service实例现在已与Microsoft® Power Automate连接。 您现在可以将自适应Forms数据发送到Power Automate流。
+
+>[!IMPORTANT]
+>
+>用于Microsoft® Power Automate连接的令牌将在90天后过期。
+>
+> 要使集成正常工作，请在令牌过期之前或过期时重新验证Microsoft® Power Automate Dataverse和Microsoft® Power Automate Flow Service云配置并重新发布它们，请使用[发布Microsoft® Power Automate Dataverse和Microsoft® Power Automate Flow Service云配置](#publish-microsoft-power-automate-dataverse-cloud-configuration)中记录的步骤。
+>
+> 有关令牌生命周期策略的详细信息，请参阅[Microsoft Entra有关可配置令牌生命周期的文档](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)。 如果未续订令牌，则提交到Power Automate的表单可能会失败。
 
 ## 使用调用Microsoft® Power Automate流提交操作将数据发送到Power Automate流 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
@@ -302,8 +310,8 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 登录到创作实例，选择您的自适应表单。
 1. 在配置容器中，浏览并选择在[创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)部分创建的容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
