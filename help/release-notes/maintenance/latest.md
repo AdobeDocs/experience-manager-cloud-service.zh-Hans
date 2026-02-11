@@ -20,7 +20,7 @@ ht-degree: 22%
 
 以下总结了维护版本24288的持续改进，该版本于2026年2月4日公开发布。 上一个维护版本是版本 23963。
 
-2026.2.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.2.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 >[!NOTE]
 >
