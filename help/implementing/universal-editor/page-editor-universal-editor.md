@@ -4,10 +4,10 @@ description: Adobe 继续支持页面编辑器，但通用编辑器将为您的�
 feature: Developing
 role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1a04bebf073ac10100dede9b5e9f835665588cf3
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 100%
+source-wordcount: '1085'
+ht-degree: 98%
 
 ---
 
@@ -74,10 +74,11 @@ Adobe 继续支持页面编辑器，但通用编辑器将为您的新项目带�
 | 设备模拟 | [!BADGE 可用]{type=Positive} | [可以模拟已配置的设备，](/help/sites-cloud/administering/responsive-layout.md)但用户无法手动输入任何不同的屏幕尺寸来模拟。 | [!BADGE 可用]{type=Positive} | [可以手动输入任何要模拟的屏幕尺寸，](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)但无法配置默认断点。 |
 | [页面锁定](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 遵守 Sites 控制台中设置的锁定状态，通过可用的扩展可以从编辑器锁定/解锁页面 |
 | [页面属性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可从网站管理员处获取，可通过扩展从编辑器访问页面的属性 |
-| 多字段属性 | [!BADGE 可用]{type=Positive} |  | [!BADGE 不可用]{type=Negative} | 已计划 |
+| 多字段属性 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | [远程 DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | [页面版本控制](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
-| [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) 和[差异视图](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 不可用]{type=Negative} | 已计划 |
+| [比较视图](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 部分可用]{type=Caution} | 适用于Edge Delivery Services用例，但不适用于Headless |
+| [时间扭曲](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) | [!BADGE 可用]{type=Positive} |  | [!BADGE 不可用]{type=Negative} | 按计划，站点控制台中仍提供版本 |
 | 在 admin 中查看 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可作为页面扩展提供 |
 | 查看页面状态 | [!BADGE 可用]{type=Positive} |  | [!BADGE 不可用]{type=Negative} | 在 Sites 控制台中可用 |
 | 可扩展性 | [!BADGE 可用]{type=Positive} | 作为 AEM 叠加 | [!BADGE 可用]{type=Positive} | 作为通过 App Builder 明确定义的扩展点，并且几乎不需要 AEM 特定的知识 |
