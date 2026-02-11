@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
+source-git-commit: e58e1355b923e1da447e3dbcfd0a81086aee3e66
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1018'
 ht-degree: 22%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 22%
 
 以下总结了维护版本24288的持续改进，该版本于2026年2月4日公开发布。 上一个维护版本是版本 23963。
 
-2026.2.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.2.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 >[!NOTE]
 >
@@ -90,6 +90,10 @@ ht-degree: 22%
 * GUIDES-36641：生成AEM Sites输出时，发布的输出中不包含包含关键字和主题标题以及`<ph>`元素的映射标题。
 * GUIDES-37837：尝试保存主题或映射时，操作可能会间歇性地失败，并出现“无法保存文件”错误，尤其是在后台运行密集型资源处理任务或翻译工作流期间。
 * GUIDES-27774： Broken list报告错误地包含外部链接、有效的`keyrefs`以及在当前映射范围内正确解析的关键字。
+
+>[!NOTE]
+>
+> 需要注意的是，AEM Guides中的一项重大更改：[已改进只读文件的处理](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files)。
 
 如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
