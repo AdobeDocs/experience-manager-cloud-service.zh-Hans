@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2482'
 ht-degree: 3%
 
 ---
@@ -224,7 +224,7 @@ data:
       advancedNetworking: true
 ```
 
-对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob Store，其中可以写入逻辑，以将已知IP的日志发送到其最终目标。
+对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob存储区，其中可以写入逻辑，以将已知IP的日志发送到其最终目标。
 
 >[!NOTE]
 >
@@ -297,8 +297,8 @@ data:
 SAS令牌应该用于身份验证。 它应该从共享访问签名页面而不是共享访问令牌页面创建，并且应该使用以下设置进行配置：
 
 * 允许的服务：必须选择Blob。
-* 允许的资源：必须选择对象。
-* 允许的权限：必须选择“写入”、“添加”、“创建”。
+* 允许的资源：必须选择对象和容器。
+* 允许的权限：必须选择“读取”、“写入”、“添加”、“列表”、“创建”。
 * 有效的开始和到期日期/时间。
 
 以下是SAS令牌配置示例屏幕截图：
@@ -307,7 +307,7 @@ SAS令牌应该用于身份验证。 它应该从共享访问签名页面而不�
 
 如果日志在之前正常工作后停止传递，请检查您配置的SAS令牌是否仍然有效，因为它可能已过期。
 
-#### Azure Blob存储CDN日志 {#azureblob-cdn}
+#### Azure Blob Storage CDN日志 {#azureblob-cdn}
 
 每个全局分布式日志服务器每隔几秒会在`aemcdn`文件夹下生成一个新文件。 创建后，该文件将不再附加到。 文件名格式为YYYY-MM-DDThh:mm:ss.sss-uniqueid.log。 例如，2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log。
 
