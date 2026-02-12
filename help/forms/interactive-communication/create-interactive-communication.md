@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+source-git-commit: 98465743f73f38e2a766657dda8c9ff18ecea856
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '586'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 11%
 
 1. 打开AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**Forms > Forms &amp; Documents**，单击&#x200B;**创建>交互式通信**。
-1. 在创建表单中，从下拉列表中&#x200B;**选择**&#x200B;启用的模板。
+1. 在创建表单中，**从模板选取器中选择**&#x200B;已启用的模板。
 1. 填写其他详细信息，如标题、姓名、作者等。
 1. 单击&#x200B;**创建**&#x200B;以设计您与所选模板结构的通信。
 1. 它会打开IC编辑器，您可以在其中开始设计通信。
