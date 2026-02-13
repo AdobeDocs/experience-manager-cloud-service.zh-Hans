@@ -3,7 +3,8 @@ title: 体验现代化控制台
 description: Experience Modernization Console界面和功能的参考指南
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c2f258bfcfff8392af2863d874d4a4235f042193
+exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%

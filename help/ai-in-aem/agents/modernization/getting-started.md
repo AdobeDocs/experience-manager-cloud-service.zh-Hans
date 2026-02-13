@@ -3,9 +3,10 @@ title: Experience Modernization Agent入门
 description: 了解使用Experience Modernization Console通过Experience Modernization Agent快速提高工作效率的第一步。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c80ce5a9fc5f208fd910d5cef72225085248fb4d
+exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 1. 选择要与Experience Modernization Console一起使用的[Edge Delivery Services](/help/edge/overview.md)存储库。
    * 这个项目可以是现有的Edge Delivery Services项目，也可以在[开发人员教程](https://www.aem.live/developer/tutorial)之后使用[样板存储库](https://github.com/adobe/aem-boilerplate)创建新的项目。
-1. 确保存储库中安装了[AEMY GitHub应用程序](https://github.com/apps/aem-aemy)。
+1. 确保存储库中安装了[AEM代码连接器](https://github.com/apps/aem-code-connector)。
    * 这将允许控制台检查您的代码。
 1. 确保存储库中安装了[AEM代码同步GitHub应用程序](https://github.com/apps/aem-code-sync)。
    * 这允许Edge Delivery Services同步您的代码。
@@ -41,7 +42,7 @@ ht-degree: 0%
 ![首次登录控制台屏幕](assets/first-sign-on.png)
 
 1. 单击&#x200B;**连接存储库**。
-1. 这将在新的浏览器选项卡上打开AEMY应用程序。 单击&#x200B;**授权AEM AEMY**。
+1. 这将在新的浏览器选项卡上打开AEM代码连接器应用程序。 单击&#x200B;**授权AEM代码连接器**。
 1. 返回控制台，选择&#x200B;**所有者**、**存储库**&#x200B;和&#x200B;**分支选择**，然后单击&#x200B;**签出到工作区**。
    ![正在连接到GitHub项目](assets/connect-to-github-project.png)
 1. 当提示&#x200B;**替换现有工作区**&#x200B;时，单击&#x200B;**替换工作区**。
@@ -62,11 +63,11 @@ ht-degree: 0%
    * 网站内容的初始导入可能需要几分钟的时间。
    * 控制台在开始工作时会向您提供持续的反馈，包括计划步骤的概述。
      ![内容导入](assets/content-import.png)
-1. 导入网站后，**Workspace**&#x200B;面板会显示页面。 选择要在右侧面板中预览的页面。
+1. 导入网站后，**Workspace**面板会显示页面。 选择要在右侧面板中预览的页面。
    ![内容已导入](assets/content-imported.png)
 1. 现在您有了内容，可以提示从同一源导入样式。
    * “从`https://wknd-trendsetters.site`导入常规样式。”
-1. 与初始内容导入一样，导入过程可能需要几分钟时间，并且控制台在处理您的请求并导入样式时会提供反馈。 任务完成后，单击右侧面板中的&#x200B;**刷新预览**&#x200B;以查看样式化的内容。
+1. 与初始内容导入一样，导入过程可能需要几分钟时间，并且控制台在处理您的请求并导入样式时会提供反馈。 任务完成后，单击右侧面板中的&#x200B;**刷新预览**以查看样式化的内容。
    ![样式已导入](assets/styles-imported.png)
 
 现在，您已将内容和样式导入到控制台中。
@@ -83,7 +84,7 @@ ht-degree: 0%
    * 如果您使用了样板，则会提供`fstab.yaml`。
 1. 选择要上载的文件，然后单击&#x200B;**上载**。
    ![上载内容对话框](assets/upload-content.png)
-1. 控制台通过将&#x200B;**上传**&#x200B;按钮灰显来指示上传过程。
+1. 控制台通过将&#x200B;**上传**按钮灰显来指示上传过程。
    ![正在上传](assets/uploading.png)
 1. 完成后，控制台底部会显示通知。
    在AEM中查看![](assets/view-in-aem.png)
@@ -98,7 +99,7 @@ ht-degree: 0%
 
 在对代码所做的更改感到满意后，可以将它们推送到GitHub存储库。
 
-1. 切换到&#x200B;**代码**&#x200B;视图（左侧边栏中为`</>`图标），然后切换到&#x200B;**Git更改**&#x200B;选项卡（右上角的分支图标）。
+1. 切换到&#x200B;**代码**&#x200B;视图（左侧边栏中为`</>`图标），然后切换到&#x200B;**Git更改**选项卡（右上角的分支图标）。
    ![代码视图](assets/code-view-git-changes.png)
 1. 在更改的文件列表中，如果某些文件显示为未跟踪，请单击其`+`按钮以暂存它们。
 1. 单击右上方的&#x200B;**GitHub操作**&#x200B;按钮，然后从下拉列表中选择&#x200B;**推送**。
