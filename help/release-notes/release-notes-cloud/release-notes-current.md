@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1c5cbed1ea9e8beda14ed3c66f14a446941cd9cf
+source-git-commit: 087c29ddd1dcfe0fc4bda7428d71a5e6157e1325
 workflow-type: tm+mt
-source-wordcount: '2011'
-ht-degree: 38%
+source-wordcount: '2035'
+ht-degree: 39%
 
 ---
 
@@ -34,15 +34,12 @@ ht-degree: 38%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- 
+## 发布视频 {#release-video}
 
-## Release Video {#release-video}
+观看 2026 年 1 月版概述视频，大致了解 2026.1.0 版的新增功能：
 
-Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
-
--->
 
 ## AEM Beta程序 {#aem-beta-programs}
 
@@ -125,7 +122,7 @@ AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用�
 
 **从JSON数组检索值**
 
-扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
+扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
 
 **在发布实例上运行关联UI**
 
