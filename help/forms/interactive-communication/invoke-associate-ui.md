@@ -4,15 +4,13 @@ description: 了解如何将AEM Forms关联UI与您的应用程序集成，以�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-hidefromtoc: true
-source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
+exl-id: f946ccea-86d0-4086-8208-9583b8206244
+source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 2%
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
-
 
 # 在应用程序中集成关联UI
 
@@ -26,13 +24,13 @@ ht-degree: 2%
 
 - 交互式通信已创建和发布
 - 已启用弹出窗口支持的浏览器
-- 关联[用户必须属于Forms-associates组](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 使用AEM[支持的任何](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/authentication)身份验证机制（例如SAML 2.0、OAuth或自定义身份验证处理程序）配置的身份验证
+- 关联[用户必须属于Forms-associates组](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 使用AEM[支持的任何](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)身份验证机制（例如SAML 2.0、OAuth或自定义身份验证处理程序）配置的身份验证
 
 >[!NOTE]
 >
 >- 本文演示了将SAML 2.0和[Microsoft Entra ID (Azure AD)用作身份提供程序](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)的身份验证配置。
->- 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
+>- 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
 
 ### 关联UI的其他SAML配置
 
@@ -115,7 +113,11 @@ Sling Authenticator强制进行身份验证以访问发布上的关联UI资源�
 
 要快速测试和了解关联UI集成的工作方式，请使用以下示例HTML页面。 将此代码复制到HTML文件中，并在浏览器中将其打开。
 
-此示例提供了一个简单的表单界面，您可以在其中输入交互式通信详细信息，并通过一次单击启动关联UI。
+>[!NOTE]
+>
+> 此示例HTML需要IC ID和预填充服务。 您可以使用IC ID和示例预填充服务“FdmTestData”对其进行测试。
+
+HTML示例提供了一个简单的表单界面，您可以在其中输入交互式通信详细信息，然后单击以启动关联UI。
 
 ```html
 <!DOCTYPE html>
@@ -438,21 +440,28 @@ const data = {
 
 1. **输入IC ID**：在&#x200B;**IC ID**&#x200B;字段中，输入已发布的交互式通信的标识符。 这是唯一的必填字段。
 
-2. **配置预填充服务**（可选）：如果要使用动态数据预填充IC，请在&#x200B;**预填充服务**&#x200B;字段中输入表单数据模型服务名称。 例如，将`FdmTestData`用于示例数据，或将`IC-FDM`用于测试数据。
+1. **配置预填充服务**：如果要使用动态数据预填充IC，请在&#x200B;**预填充服务**&#x200B;字段中输入表单数据模型服务名称。 例如，使用`FdmTestData`作为示例数据。
 
-3. **添加服务参数**（可选）：在&#x200B;**服务参数(JSON)**&#x200B;字段中，输入带有预填充服务所需参数的JSON对象。 例如：
+   ![HTML UI示例](/help/forms/assets/samplehtmlui.png)
+
+1. **单击“启动关联UI”**：单击“启动关联UI”****&#x200B;按钮。 此时将打开一个新浏览器窗口，其中显示与交互式通信预先加载的关联UI 。
+
+输入数据，此时将显示关联UI，如下所示：
+
+![关联UI](/help/forms/assets/associateui.png)
+
+>[!NOTE]
+>
+> 如果该窗口未打开，请检查浏览器是否允许显示此站点的弹出窗口。
+
+
+<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-4. **设置PDF选项**（可选）：在&#x200B;**选项(JSON)**&#x200B;字段中，配置区域设置、附件或辅助功能设置等渲染选项。
-
-5. **单击“启动关联UI”**：单击“启动关联UI”**&#x200B;**&#x200B;按钮。 此时将打开一个新浏览器窗口，其中显示与交互式通信预先加载的关联UI 。
-
->[!NOTE]
->
-> 如果该窗口未打开，请检查浏览器是否允许显示此站点的弹出窗口。
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 ## 疑难解答
 
