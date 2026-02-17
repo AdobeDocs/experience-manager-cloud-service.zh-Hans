@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 71%
+source-wordcount: '2402'
+ht-degree: 68%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 71%
 还可使用 AEM 核心组件的 Sling 模型 (JSON) 导出功能，以 JSON 格式投放内容片段。此投放形式：
 
 * 允许您使用组件管理要投放片段的哪些元素
-* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* 可批量投放；通过在用于 API 投放的页面上添加多个[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通信渠道的数量在逐年增加。通常，渠道称为投放机制，如：
 
@@ -90,7 +90,7 @@ ht-degree: 71%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，请参阅[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本页和以下各页涉及创建、配置、维护和使用内容片段的任务：
 
@@ -122,7 +122,6 @@ ht-degree: 71%
 >* [用内容片段创作页面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 >* [内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
-
 ## 主控和变体 {#main-and-variations}
 
 变体是 AEM 的内容片段的一项重要功能。通过变体，可创建和编辑&#x200B;**主控**&#x200B;内容的副本以供在特定渠道和场景上使用，从而更加灵活地投放 Headless 内容和创作页面。
@@ -143,7 +142,7 @@ ht-degree: 71%
 
 * **变体**
 
-   * 特定于编辑目的的片段文本的呈现；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
+   * 特定于编辑目的的片段文本的演绎版；可以与渠道相关，但不是强制性的；也可以用于临时本地修改。
    * 创建为&#x200B;**主控**&#x200B;的副本，但随后可以根据需要进行编辑；在变体本身之间经常有内容相同的情况。
    * 可在创作片段期间从左侧面板定义变体。
    * 存储在片段中，以帮助避免内容副本分散在多处。
@@ -160,7 +159,7 @@ AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，�
 
 * 单页面应用程序
 * 本机移动设备应用程序
-* AEM 外部的其他渠道和接触点
+* AEM外部的其他渠道和接触点
 
 使用 JSON 导出程序以 JSON 格式进行投放。
 
@@ -191,9 +190,9 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 可通过使用（引用组件的）[内容片段组件](/help/sites-cloud/authoring/fragments/content-fragments.md)在页面编辑器中找到内容片段：
 
-   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
+   * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
 
-内容片段是一个具有以下性质的内容结构：
+内容片段是具有以下功能的内容结构：
 
 * 没有布局或设计（对于文本字段可设置文本格式）。
 * 独立于投放机制（例如，页面或渠道）。
@@ -249,14 +248,14 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 要创建内容片段，您需要：
 
-* **内容模型**
+* **内容片段模型**
 
-   * [使用配置浏览器启用](/help/sites-cloud/administering/content-fragments/setup.md)。
+   * 是否使用配置浏览器[启用](/help/sites-cloud/administering/content-fragments/setup.md)。
    * 是[使用内容片段控制台](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)创建的。
    * 需要[创建片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)。
    * 定义片段的结构（标题、内容元素、标记定义）。
    * 内容片段模型定义需要标题和数据元素；其他一切均为可选。
-   * 模型可定义默认内容（如果适用）。
+   * 模型可以定义默认内容（如果适用）。
    * 作者在创作片段内容时无法更改已定义的结构；但是，他们可从片段编辑器中打开模型编辑器。
    * 已创建从属的内容片段后对模型作出的更改可能会影响这些内容片段。
 
@@ -278,7 +277,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 负责片段的布局和投放；例如，渠道。
    * 片段需要一个或多个专用组件以定义布局和投放部分或全部元素/变体和关联的内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
-   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)。
+   * 请参阅[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 内容片段控制台 {#content-fragments-console}
 
@@ -372,9 +371,12 @@ WKND 项目包括：
 
 创建所需数量的片段变体，但不再创建。
 
-变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
+变体在创作环境中和投放时都会向内容片段添加处理时间。
 
-最佳实践为每个内容片段不超过10个变量。
+建议您：
+
+* 将变体的数量保持在可管理的最小值
+* 每个内容片段不超过10个变量
 
 ### 生产前测试 {#test-before-production}
 

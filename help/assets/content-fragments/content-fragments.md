@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 50%
+source-wordcount: '2627'
+ht-degree: 49%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 50%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)。
+>有关详细信息，另请参阅[了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
@@ -103,7 +103,7 @@ AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，�
 
 * 单页面应用程序
 * 本机移动设备应用程序
-* AEM 外部的其他渠道和接触点
+* AEM外部的其他渠道和接触点
 
 使用 JSON 导出程序以 JSON 格式进行投放。
 
@@ -128,19 +128,19 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 内容片段组件[&#x200B; （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
+* 内容片段组件[ （引用组件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
 * 可使用 [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)。
 
-内容片段是一种内容结构，其中：
+内容片段是具有以下功能的内容结构：
 
 * 没有布局或设计（在富文本模式下，可以使用某些文本格式）。
 * 包含一个或多个[组成部分](#constituent-parts-of-a-content-fragment)。
 * [包含或可以连接到图像](#fragments-with-visual-assets)。
-* 在页面上引用时，使用[中间内容](#in-between-content-when-page-authoring-with-content-fragments)。
-* 它们独立于投放机制（即页面、渠道）。
+* 在页面上引用时，用作[中间内容](#in-between-content-when-page-authoring-with-content-fragments)。
+* 独立于投放机制（即页面、渠道）。
 
 ### 包含可视资源的片段 {#fragments-with-visual-assets}
 
@@ -246,7 +246,7 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 * **变体**
 
-   * 特定于编辑目的的片段文本的演绎版；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
+   * 特定于编辑目的的片段文本的演绎版；可以与渠道相关，但不是强制性的；也可以用于临时本地修改。
    * 创建为&#x200B;**母版**&#x200B;的副本，但随后可以根据需要进行编辑。 变体本身之间存在内容重叠。
    * 可以在片段创作期间定义。
    * 存储在片段中，以帮助避免内容副本的散布。
@@ -272,15 +272,15 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 要创建内容片段，您需要：
 
-* **内容模型**
+* **内容片段模型**
 
-   * [使用配置浏览器启用](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
-   * [使用工具创建](/help/assets/content-fragments/content-fragments-models.md)。
+   * 是否使用配置浏览器[启用](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
+   * 是[使用工具](/help/assets/content-fragments/content-fragments-models.md)创建的。
    * 需要[创建片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
    * 定义片段的结构（标题、内容元素、标记定义）。
-   * 内容模型定义需要一个标题和一个数据元素；其他内容都是可选的。
-   * 模型可定义默认内容（如果适用）。
-   * 创作片段内容时，作者无法更改定义的结构。
+   * 模型定义需要一个标题和一个数据元素；其他内容都是可选的。
+   * 模型可以定义默认内容（如果适用）。
+   * 作者在创作片段内容时无法更改已定义的结构；但是，他们可从片段编辑器中打开模型编辑器。
    * 创建从属内容片段后对模型所做的更改可能会影响这些内容片段。
 
 要将内容片段用于页面创作，您还需要：
@@ -366,9 +366,12 @@ WKND 项目包括：
 
 创建所需数量的片段变体，但不再创建。
 
-变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
+变体在创作环境中和投放时都会向内容片段添加处理时间。
 
-最佳实践为每个内容片段不超过10个变量。
+建议您：
+
+* 将变体的数量保持在可管理的最小值
+* 每个内容片段不超过10个变量
 
 ### 生产前测试 {#test-before-production}
 
