@@ -1,11 +1,10 @@
 ---
 title: 级联元数据
 description: 本文介绍了如何定义资源的层叠元数据。
-contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8d1744ca10ecce8637d9f9ff37eba05d2ca09ca4
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 8%
@@ -79,7 +78,7 @@ ht-degree: 8%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 要求]**&#x200B;下，根据新规则&#x200B;**选项选择**&#x200B;必需。
+1. 在&#x200B;**[!UICONTROL 要求]**&#x200B;下，根据新规则&#x200B;**[!UICONTROL 选项选择]**&#x200B;必需。
 1. 选择&#x200B;**[!UICONTROL 添加规则]**&#x200B;并选择&#x200B;**[!UICONTROL 资产类型]**&#x200B;字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存更改。
 
    ![define_rule](assets/define_rule.png)
