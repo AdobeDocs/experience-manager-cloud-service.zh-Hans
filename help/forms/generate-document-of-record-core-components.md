@@ -1,23 +1,23 @@
 ---
-title: 如何为自适应Forms生成记录文档？
-description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成模板。
+title: 为自适应Forms生成提交PDF（以前称为记录文档）
+description: 了解如何根据自适应PDF核心组件的表单提交生成Forms提交。 创建已提交表单的PDF以供存档或参考。
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
 workflow-type: tm+mt
-source-wordcount: '3305'
+source-wordcount: '3233'
 ht-degree: 1%
 
 ---
 
-# 生成自适应Forms记录文档（核心组件）
+# 为自适应Forms（核心组件）生成提交PDF（以前称为记录文档）
 
 ## 概述 {#overview}
 
-填写或提交表单时，您可以保留表单的记录（打印或文档格式）。 此记录称为记录文档(DoR)。 这是已提交表单的打印版。 您还可以参考记录文档以了解客户在以后填写的信息，或者使用记录文档以PDF格式将表单和内容存档在一起。
+填写或提交表单时，您可以保留表单的记录（打印或文档格式）。 此记录称为提交PDF（以前称为记录文档，或DoR）。 它是所提交表单的便于打印的PDF。 此外，您还可以参阅提交PDF ，以了解客户以后填写的信息，或使用提交PDF以PDF格式将表单和内容存档在一起。
 
-![记录文档](assets/document-of-record.png)
+![提交PDF（以前为记录文档）](assets/document-of-record.png)
 
 ## 适用性和用例
 
@@ -25,31 +25,31 @@ ht-degree: 1%
 
 ## AEM Forms能否生成保险索赔文档？
 
-是。AEM Forms支持记录文档(DoR)生成，使保险公司能够根据提交的表单数据生成PDF和记录。
+是。AEM Forms支持提交PDF（以前称为记录文档）生成，使保险公司能够根据提交的表单数据生成PDF和记录。
 
 ## AEM Forms生成的文档是否适用于审核？
 
 是。AEM Forms支持一致的文档生成、受控访问和可跟踪性，这对于满足审核和合规性要求非常重要。
 
-要创建记录文档，会将基于XFA或Acroform的模板与通过自适应表单收集的数据合并。 您可以自动或根据需要生成记录文档。 通过“按需”选项，您可以指定基于XFA或Acroform的自定义PDF模板，为记录文档提供自定义外观。
+要创建提交PDF，会将基于XFA或Acroform的模板与通过自适应表单收集的数据合并。 您可以自动或按需生成提交PDF。 通过“按需”选项，可指定基于XFA或Acroform的自定义PDF模板，为提交模板提供自定义外观。
 
 您可以：
 
-* [生成基于XFA的记录文档](#generate-an-XFA-based-document-of-record)
-* [生成基于Acroform (Acrobat Form PDF)的记录文档](#generate-an-Acroform-based-document-of-record)
-* [自动生成记录文档](#auto-generate-a-document-of-record)
+* [生成基于XFA的提交PDF](#generate-an-XFA-based-document-of-record)
+* [生成基于Acroform (Acrobat Form PDF)的提交PDF](#generate-an-Acroform-based-document-of-record)
+* [自动生成提交PDF](#auto-generate-a-document-of-record)
 
 ## 开始之前 {#components-to-automatically-generate-a-document-of-record}
 
-在开始学习并准备记录文档所需的资产之前：
+在开始学习并准备提交PDF所需的资源之前：
 
-**基本模板：**&#x200B;在Forms Designer或Acrobat表单(AcroForm)中创建的XFA模板（XDP文件）。 [基本模板](#base-template-of-a-document-of-record)用于指定记录文档的样式和品牌信息。 之前需将XFA模板（XDP文件）上传到AEM Forms实例。
+**基本模板：**&#x200B;在Forms Designer或Acrobat表单(AcroForm)中创建的XFA模板（XDP文件）。 [基本模板](#base-template-of-a-document-of-record)用于为提交PDF指定样式和品牌信息。 之前需将XFA模板（XDP文件）上传到AEM Forms实例。
 
-**自适应表单：**&#x200B;要为其生成记录文档的自适应表单。
+**自适应表单：**&#x200B;要为其生成提交PDF的自适应表单。
 
-## 生成基于XFA的记录文档 {#generate-an-XFA-based-document-of-record}
+## 生成基于XFA的提交PDF {#generate-an-XFA-based-document-of-record}
 
-将XFA模板（XDP文件）上传到AEM Forms实例。 执行以下步骤将自适应表单配置为使用XFA模板（XDP文件）作为记录文档的模板：
+将XFA模板（XDP文件）上传到AEM Forms实例。 执行以下步骤可配置自适应表单以使用XFA模板（XDP文件）作为提交PDF的模板：
 
 1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]。**
 1. 选择表单或创建自适应表单，然后单击&#x200B;**[!UICONTROL 属性]**。
@@ -58,11 +58,11 @@ ht-degree: 1%
 1. 在“表单模型”选项卡的“记录文档模板配置”部分中，选择&#x200B;**将表单模板关联为记录文档模板**。 选择此选项时，将显示计算机上可用的所有XFA模板（XDP文件）。 选择相应的文件。 此外，请确保自适应表单和选定的XFA模板（XDP文件）使用相同的架构（数据架构）。
 1. 单击&#x200B;**[!UICONTROL 完成]**
 
-您的自适应表单现在配置为使用XDP文件作为记录文档的模板。 下一步是[将自适应表单组件与相应的模板字段绑定](#bind-adaptive-form-components-with-template-fields)。
+您的自适应表单现在配置为使用XDP文件作为提交PDF的模板。 下一步是[将自适应表单组件与相应的模板字段绑定](#bind-adaptive-form-components-with-template-fields)。
 
-## 生成基于Acroform的记录文档 {#generate-an-Acroform-based-document-of-record}
+## 生成基于Acroform的提交PDF {#generate-an-Acroform-based-document-of-record}
 
-将Adobe Acrobat PDF (Acroform)上传到AEM Forms实例。 执行以下步骤将自适应表单配置为使用Adobe Acrobat PDF (Acroform)作为记录文档的模板：
+将Adobe Acrobat PDF (Acroform)上传到AEM Forms实例。 执行以下步骤可配置自适应表单以使用Adobe Acrobat PDF (Acroform)作为提交PDF的模板：
 
 1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]。**
 1. 选择一个表单或&#x200B;**[!UICONTROL 创建自适应表单]**，然后单击&#x200B;**[!UICONTROL 属性]**。
@@ -71,19 +71,19 @@ ht-degree: 1%
 1. 在“表单模型”选项卡的“记录文档模板配置”部分中，选择&#x200B;**将表单模板关联为记录文档模板**。 选择此选项时，将显示计算机上可用的所有Acrobat PDF (Acroform)。 选择要使用的Acroform。
 1. 单击&#x200B;**[!UICONTROL 完成]**
 
-您的自适应表单现在配置为使用Acroform作为记录文档的模板。 下一步是[将自适应表单组件与相应的模板字段绑定](#bind-adaptive-form-components-with-template-fields)。
+现在，您的自适应表单已配置为使用Acroform作为提交PDF的模板。 下一步是[将自适应表单组件与相应的模板字段绑定](#bind-adaptive-form-components-with-template-fields)。
 
-## 自动生成记录文档 {#auto-generate-a-document-of-record}
+## 自动生成提交PDF {#auto-generate-a-document-of-record}
 
-将自适应表单配置为自动生成记录文档时，每次更改表单时，都会立即更新其记录文档。 例如，如果从现有自适应表单中删除某个字段，则相应的字段也会被删除，并且在记录文档中不可见。 自动生成记录文档还有许多其他优势：
+将自适应表单配置为自动生成提交PDF后，每次更改表单时，都会立即更新其提交PDF 。 例如，如果从现有自适应表单中删除某个字段，则相应的字段也会被删除，并且在提交PDF中不可见。 自动生成提交PDF还有许多其他优势：
 
-* 表单开发人员不必手动维护数据绑定。 自动生成的记录文档负责数据绑定相关更新。
-* 表单开发人员不必手动隐藏标记为从记录文档排除的字段。 自动生成的记录文档预配置为排除此类字段。
-* 自动生成的记录文档选项节省了为记录文档创建表单模板所需的时间。
-* 通过自动生成的“记录文档”选项，您可以使用不同的基本模板来使用不同的样式和外观。 它有助于为您的组织的记录文档选择最佳样式和外观。 如果未指定样式，系统样式将设置为默认样式。
-* 自动生成的记录文档可确保表单中的任何更改立即反映在记录文档中。
+* 表单开发人员不必手动维护数据绑定。 自动生成的提交PDF可处理数据绑定相关更新。
+* 表单开发人员不必手动隐藏标记为从提交PDF中排除的字段。 自动生成的提交PDF已预配置为排除此类字段。
+* 自动生成的提交PDF选项节省了为提交PDF创建表单模板所需的时间。
+* 通过自动生成的提交PDF选项，您可以使用不同的基本模板来使用不同的样式和外观。 它有助于为您的组织选择提交PDF的最佳样式和外观。 如果未指定样式，系统样式将设置为默认样式。
+* 自动生成的提交PDF确保表单中的任何更改都会立即反映在提交PDF中。
 
-执行以下步骤来配置自适应表单以自动生成记录文档：
+执行以下步骤可配置自适应表单以自动生成提交PDF：
 
 1. 在Experience Manager创作实例中，单击&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]。**
 1. 选择表单或创建自适应表单，然后单击&#x200B;**[!UICONTROL 属性]**。
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 ## 将自适应表单组件与模板字段绑定 {#bind-adaptive-form-components-with-template-fields}
 
-将自适应表单字段与模板字段绑定以在相应的记录文档字段显示捕获的表单数据。 要将自适应表单组件与相应的记录文档模板字段绑定，请执行以下操作：
+将自适应表单字段与模板字段绑定以在相应的提交PDF字段显示捕获的表单数据。 要将自适应表单组件绑定到相应的提交PDF模板字段，请执行以下操作：
 
 1. 打开自适应表单，配置为使用自定义表单模板进行编辑。
 
@@ -111,21 +111,21 @@ ht-degree: 1%
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-您可以使用提交操作(如“发送电子邮件”、“调用AEM工作流”、“调用Power Automate流”及其他[提交操作](configuring-submit-actions.md))来接收记录文档。
+您可以使用提交操作(如“发送电子邮件”、“调用AEM工作流”、“调用Power Automate流”和其他[提交操作](configuring-submit-actions.md))来接收提交PDF。
 ![图像提交操作](/help/forms/assets/submit-actions-img.png)
 
 
 >[!NOTE]
 >
-> 您可以使用&#x200B;**[!UICONTROL 记录文档绑定引用字段]**&#x200B;属性保存任何表单数据模型的记录文档。
+> 您可以使用&#x200B;**[!UICONTROL 记录文档绑定引用字段]**&#x200B;属性保存任何表单数据模型的提交PDF。
 
-## 记录文档模板的增量更新 {#document-of-record-template-incremental-updates}
+## 提交PDF模板的增量更新 {#document-of-record-template-incremental-updates}
 
-自适应表单和相应的记录文档模板会随着时间的推移而不断变化。 您可以选择向自适应表单或记录文档模板添加、删除或修改字段。
+自适应表单和相应的提交PDF模板会随着时间的推移而不断变化。 您可以选择向自适应表单或提交PDF模板添加、删除或修改字段。
 
-当您更改记录文档模板并将更改的记录文档模板上载到AEM Forms时，自适应Forms编辑器会自动检测更改的绑定，并通知您有关需要新绑定的自适应表单组件。 它允许您对记录文档模板进行增量更新。
+在更改提交PDF模板并将更改后的模板上载到AEM Forms时，自适应Forms编辑器会自动检测更改的绑定，并通知您有关需要新绑定的自适应表单组件。 通过它，可对提交PDF模板进行增量更新。
 
-例如，组织&#x200B;*We.Retail*&#x200B;具有基于AcroForm的记录文档模板&#x200B;*we-retail-invoice.pdf*。 模板如下所示：
+例如，组织&#x200B;*We.Retail*&#x200B;具有基于AcroForm的提交PDF模板&#x200B;*we-retail-invoice.pdf*。 模板如下所示：
 
 ![原始模板](assets/we-retail-invoice.png)
 
@@ -145,18 +145,18 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-现在，当提交自适应表单时，会生成更新的记录文档。
+现在，提交自适应表单时，会生成更新的提交PDF。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
-## 使用记录文档时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
+## 使用提交PDF时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
-处理自适应Forms的记录文档时，请牢记以下注意事项和限制。
+在提交自适应的Forms的PDF时，请牢记以下注意事项和限制。
 
-* 记录文档模板不支持富文本。 因此，静态自适应表单中或用户填写的信息中的任何富文本都会在记录文档中显示为纯文本。
-* 自适应表单中的文档片段未出现在记录文档中。 但是，支持自适应表单片段。
-* 不支持为基于XML架构的自适应表单生成的记录文档中的内容绑定。
-* 当用户请求呈现记录文档时，记录文档的本地化版本是应区域设置的要求创建的。 记录文档的本地化与自适应表单的本地化同时发生。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
+* 提交PDF模板不支持富文本。 因此，静态自适应表单中或用户填充的信息中的任何富文本都会在提交PDF中显示为纯文本。
+* 自适应表单中的文档片段不会出现在提交PDF中。 但是，支持自适应表单片段。
+* 不支持在提交PDF中为基于XML架构的自适应表单生成的内容绑定。
+* 当用户请求呈现提交PDF时，会应区域设置的要求创建提交PDF的本地化版本。 提交PDF的本地化会与自适应表单的本地化同时发生。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
@@ -177,7 +177,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## 自适应表单元素映射 {#mapping-of-adaptive-form-elements}
 
-下表介绍了自适应表单组件和相应的XFA组件，以及这些组件是否显示在记录文档中。
+下表介绍了自适应表单组件和相应的XFA组件，以及这些组件是否显示在提交PDF中。
 
 ### 字段 {#fields}
 
@@ -186,7 +186,7 @@ When you select a form model, configure Document of Record using options availab
   <tr>
    <th>自适应表单组件</th>
    <th>对应的XFA组件</th>
-   <th>默认情况下包含在记录文档模板中？</th>
+   <th>默认情况下包含在提交PDF模板中？</th>
    <th>注释</th>
   </tr>
   <tr>
@@ -247,7 +247,7 @@ When you select a form model, configure Document of Record using options availab
    <td>文件附件</td>
    <td> </td>
    <td>false</td>
-   <td>在记录文档模板中不可用。 仅通过附件在记录文档中可用。</td>
+   <td>在提交PDF模板中不可用。 仅在提交PDF中通过附件提供。</td>
   </tr>
  </tbody>
 </table>
@@ -273,24 +273,24 @@ When you select a form model, configure Document of Record using options availab
 
 | 自适应表单组件 | 对应的XFA组件 | 注释 |
 |---|---|---|
-| 图像 | 图像 | 除非使用记录文档设置进行排除，否则TextDraw和Image组件（无论已绑定还是未绑定）始终显示在基于XSD的自适应表单的记录文档中。 |
+| 图像 | 图像 | 对于基于XSD的自适应表单，TextDraw和图像组件（无论已绑定还是未绑定）始终显示在提交PDF中，除非使用提交PDF设置进行排除。 |
 | 文本 | 文本 |  |
 
 ### 表格 {#tables}
 
-自适应Forms表组件（如页眉、页脚和行）映射到相应的XFA组件。 可将可重复面板映射到记录文档中的表格。
+自适应Forms表组件（如页眉、页脚和行）映射到相应的XFA组件。 您可以在提交PDF中将可重复面板映射到表。
 
-## 记录文档的基础模板 {#base-template-of-a-document-of-record}
+## 提交PDF的基本模板 {#base-template-of-a-document-of-record}
 
-基本模板为记录文档提供样式和外观信息。 它允许您自定义自动生成记录文档的默认外观。 例如，您可以使用基础模板在记录文档的页眉和页脚的版权信息中添加公司徽标。
+基本模板为提交PDF提供样式和外观信息。 它允许您自定义自动生成的提交PDF的默认外观。 例如，您可以使用基本模板在提交PDF的页眉和页脚中添加公司徽标和版权信息。
 
-基础模板中的母版页用作记录文档模板的母版页。 母版页可以包含可应用于记录文档的页眉、页脚和页码等信息。 您可以使用基本模板将此类信息应用到记录文档，以自动生成记录文档。 使用基本模板可以更改字段的默认属性。
+基础模板中的母版页用作提交PDF模板的母版页。 母版页可以包含可应用于提交PDF的页眉、页脚和页码等信息。 您可以使用基本模板将此类信息应用于提交PDF，以自动生成提交PDF。 使用基本模板可以更改字段的默认属性。
 
 在设计基本模板时，始终遵循[基本模板约定](#base-template-conventions)。
 
 ## 基本模板约定 {#base-template-conventions}
 
-基本模板用于定义记录文档的页眉、页脚、样式和外观。 页眉和页脚可以包含公司徽标和版权文本等信息。 基础模板中的第一个母版页被复制并用作记录文档的母版页，该母版页包含页眉、页脚、页码或应在记录文档的所有页面中出现的任何其他信息。 如果使用不符合基础模板惯例的基础模板，则基础模板中的第一个母版页仍会用于记录文档模板中。 强烈建议您按照其约定设计基础模板，并将其用于自动生成记录文档。
+基本模板用于定义提交PDF的页眉、页脚、样式和外观。 页眉和页脚可以包含公司徽标和版权文本等信息。 基础模板中的第一个母版页被复制并用作提交PDF的母版页，该母版页包含页眉、页脚、页码或应在提交PDF的所有页面上显示的任何其他信息。 如果使用与基本模板惯例不符的基本模板，则在“提交PDF”模板中仍会使用基本模板中的第一个母版页。 强烈建议您按照其约定设计基础模板，并将其用于自动生成提交PDF。
 
 **母版页惯例**
 
@@ -302,9 +302,9 @@ When you select a form model, configure Document of Record using options availab
 
 **字段的样式约定**
 
-* 要对记录文档中的字段应用样式，基础模板提供位于`AF_FIELDSSUBFORM`根子表单下的`AF_METATEMPLATE`子表单中的字段。
+* 要在提交PDF中的字段上应用样式，基础模板提供`AF_FIELDSSUBFORM`根子表单下`AF_METATEMPLATE`子中的字段。
 
-* 这些字段的属性应用于记录文档中的字段。 这些字段应遵循`AF_<name of field in all caps>_XFO`命名约定。 例如，复选框的字段名称应为`AF_CHECKBOX_XFO`。
+* 这些字段的属性适用于提交PDF中的字段。 这些字段应遵循`AF_<name of field in all caps>_XFO`命名约定。 例如，复选框的字段名称应为`AF_CHECKBOX_XFO`。
 
 要创建基本模板，请在Forms Designer中执行以下操作。
 
@@ -315,11 +315,11 @@ When you select a form model, configure Document of Record using options availab
 1. 选择&#x200B;**[!UICONTROL DoR基本模板]**。
 1. 单击&#x200B;**[!UICONTROL 下一步]**&#x200B;并提供所需信息。
 
-1. （可选）修改要应用于记录文档中的字段的样式和外观。
+1. （可选）修改要应用于提交PDF中的字段的样式和外观。
 1. 保存表单。
    ![基本属性](/help/forms/assets/form-designer-dor-img.png)
 
-您现在可以将保存的表单用作记录文档的基础模板。 请勿修改或删除基本模板中存在的任何脚本。
+现在，您可以将保存的表单用作提交PDF的基本模板。 请勿修改或删除基本模板中存在的任何脚本。
 
 **正在修改基模板**
 
@@ -328,31 +328,31 @@ When you select a form model, configure Document of Record using options availab
 
 请严格遵循上述约定和说明来设计基本模板。
 
-## 自定义记录文档中的品牌信息 {#customize-the-branding-information-in-document-of-record}
+## 在提交PDF中自定义品牌信息 {#customize-the-branding-information-in-document-of-record}
 
-生成记录文档时，您可以在记录文档选项卡上更改记录文档的品牌信息。 “记录文档”选项卡包括如下选项：徽标、外观、布局、页眉和页脚、免责声明，以及是否包括未选定的复选框和单选按钮选项。
+在生成提交PDF时，您可以在记录文档选项卡上更改提交PDF的品牌信息。 “记录文档”选项卡包括如下选项：徽标、外观、布局、页眉和页脚、免责声明，以及是否包括未选定的复选框和单选按钮选项。
 
-要本地化您在“记录文档”选项卡中输入的品牌信息，请确保正确设置了浏览器的区域设置。 要自定义记录文档的品牌信息，请执行以下步骤：
+要本地化您在“记录文档”选项卡中输入的品牌信息，请确保正确设置了浏览器的区域设置。 要自定义提交PDF的品牌信息，请执行以下步骤：
 
-1. 在记录文档中选择面板（根面板），然后选择![配置](assets/configure.png)。
+1. 在提交PDF中选择一个面板（根面板），然后选择![配置](assets/configure.png)。
 1. 选择![dortab](assets/dortab.png)。 此时将显示记录文档选项卡。
-1. 选择用于呈现记录文档的默认模板或自定义模板。 如果选择默认模板，则“模板”下拉菜单下方将显示记录文档的缩略图预览。
-1. 根据您选择默认模板还是自定义模板，以下某些属性或所有属性都会显示在“记录文档”选项卡中。 指定以下提及的属性以定义记录文档的外观：
+1. 选择用于呈现提交PDF的默认模板或自定义模板。 如果选择默认模板，则“模板”下拉菜单下方会显示提交PDF的缩略图预览。
+1. 根据您选择默认模板还是自定义模板，以下某些属性或所有属性都会显示在“记录文档”选项卡中。 指定以下提及的属性，以定义提交PDF的外观：
 
    1. **基本属性**：
       * **模板**：如果要选择自定义模板，请在[!DNL AEM Forms]服务器上浏览并选择XDP。 如果要使用[!DNL AEM Forms]服务器上不可用的模板，应首先将XDP上传到[!DNL AEM Forms]服务器。
-      * **主题色**：标题文本和分隔行在记录文档PDF中呈现的颜色。
-      * **字体系列**：记录文档PDF中文本的字体系列。
+      * **主题色**：在提交PDF中呈现标头文本和分隔线的颜色。
+      * **字体系列**：提交PDF中文本的字体系列。
 
         >[!NOTE]
         >
         > AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表，[单击此处](/help/forms/supported-out-of-the-box-fonts.md)。
 
-      * **包含未绑定到数据模型的表单对象**：设置属性将包含记录文档中基于架构的自适应表单中未绑定的字段。
+      * **包括未绑定到数据模型的表单对象**：设置属性时，在提交PDF中包括基于架构的自适应表单中未绑定的字段。
 
         <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
-      * **隐藏面板说明**：设置属性会从记录文档中排除面板/表的说明。 适用于面板和表格。
+      * **隐藏面板说明**：设置属性会从提交PDF中排除面板/表的说明。 适用于面板和表格。
 
 
 
@@ -361,7 +361,7 @@ When you select a form model, configure Document of Record using options availab
       * **对于复选框和单选按钮组件，仅显示选定值**：设置属性将仅显示[!UICONTROL 记录文档]中复选框和单选按钮的选定值。
       * **用于多个值的分隔符**：您可以选择任意分隔符（如逗号或换行符）来显示多个值。
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置字段的对齐方式，如要显示在[!UICONTROL 记录文档]上的复选框或单选按钮。 默认情况下，[!UICONTROL 记录文档]中的字段会设置垂直对齐方式。 设置DoR的[!UICONTROL 表单字段属性]中的属性会覆盖自适应表单上字段的[!UICONTROL 项对齐方式]中设置的属性。 如果选择[!UICONTROL 与自适应表单相同]选项，则自适应表单创作实例中配置的对齐方式将用于[!UICONTROL 记录文档]字段。
-      * **水平对齐的选项数**:You&#x200B;可以设置要在记录文档上显示的水平对齐选项数。
+      * **水平对齐的选项数**:You&#x200B;可以设置要在水平对齐的提交PDF上显示的选项数。
 
 
 
@@ -369,71 +369,71 @@ When you select a form model, configure Document of Record using options availab
 
       * **徽标图像**：您可以选择使用自适应表单中的徽标图像、从DAM中选择徽标图像，或从您的计算机上传徽标图像。
       * **表单标题**： DoR标题。
-      * **标题文本**：显示在记录文档标题部分的文本。
-      * **免责声明标签**：免责声明的标签。
-      * **免责声明**：指定记录文档上权利和义务范围的文本。
-      * **免责声明文本**：免责声明文本。
+* **标题文本**：显示在提交PDF标题部分的文本。
+* **免责声明标签**：免责声明的标签。
+* **免责声明**：指定提交PDF上权利和义务范围的文本。
+* **免责声明文本**：免责声明文本。
 
-      ![母版页属性](/help/forms/assets/dorpropertiesimg.png)
-
-      >[!NOTE]
-      >
-      >如果您使用的是使用Designer 6.3之前的版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
-
-      ```xml
-      <proto>
-      <font typeface="Arial"/>
-      <fill>
-      <color value="4,166,203"/>
-      </fill>
-      <edge>
-      <color value="4,166,203"/>
-      </edge>
-      </proto>
-      ```
-
+      &lt;！—！[母版页属性](/help/forms/assets/dorpropertiesimg.png)—>
+     
+     >[！NOTE]
+     >
+     >如果您使用的是使用6.3之前的Designer版本创建的自适应表单模板，为了使重音颜色和字体系属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+     
+     &quot;&#39;xml
+     &lt;proto>
+     &lt;font typeface=&quot;Arial&quot;/>
+     &lt;填充>
+     &lt;颜色值=&quot;4,166,203&quot;/>
+     &lt;/填充>
+     &lt;边缘>
+     &lt;颜色值=&quot;4,166,203&quot;/>
+     &lt;/edge>
+     &lt;/proto>
+     &quot;&#39;
+  
 1. 要保存品牌策略更改，请选择&#x200B;**[!UICONTROL 完成]**。
 
 >[!NOTE]
 > 
-> 要在记录文档中显示自定义表单标题，请在&#x200B;**记录文档属性** > **母版页属性**&#x200B;中编辑&#x200B;**自定义表单标题**。 此自定义标题：
+> 要在提交的PDF中显示自定义表单标题，请在&#x200B;**记录文档属性** > **母版页属性**&#x200B;中编辑&#x200B;**自定义表单标题**。 此自定义标题：
 > 
 > * 在生成的PDF的标题中显示
 > * 在PDF的文档属性中显示为标题
 > * 在打开PDF时显示为初始视图标题
 
-## 记录文档中面板的表格和列布局 {#table-and-column-layouts-for-panels-in-document-of-record}
+## 提交PDF中面板的表格和列布局 {#table-and-column-layouts-for-panels-in-document-of-record}
 
-您的自适应表单可能很长，包含多个表单字段。 您可能不希望将记录文档另存为自适应表单的精确副本。 现在，您可以选择表格或列布局来在记录文档PDF中保存一个或多个自适应表单面板。
+您的自适应表单可能很长，包含多个表单字段。 您可能不希望将提交的PDF另存为自适应表单的精确副本。 现在，您可以选择表格或列布局以在提交PDF中保存一个或多个自适应表单面板。
 
-在生成记录文档之前，在面板的设置中，选择该面板的记录文档的布局（表格或列）。 面板中的字段将在记录文档中相应组织。
+在生成提交PDF之前，在面板的设置中，选择该面板的记录文档的布局（表格或列）。 面板中的字段会在提交PDF中进行相应组织。
 
-![面板中的字段在记录文档](assets/dortablelayout.png)中以表布局呈现
+![面板中的字段在提交PDF中以表布局呈现](assets/dortablelayout.png)
 
-面板中的字段在记录文档的表格布局中渲染
+面板中的字段在提交PDF中以表布局渲染
 
-![在记录文档中以列布局呈现的面板中的字段](assets/dorcolumnlayout.png)
+![在提交PDF中以列布局呈现的面板中的字段](assets/dorcolumnlayout.png)
 
-面板中的字段在记录文档的列布局中渲染
+面板中的字段在提交PDF的列布局中渲染
 
-## 记录文档设置 {#document-of-record-settings}
+## 提交PDF设置 {#document-of-record-settings}
 
-记录文档设置允许您选择要包含在记录文档中的选项。 例如，银行接受表单中的姓名、年龄、社会保险号码和电话号码。 该表单会生成银行帐号和分行详细信息。 您可以选择在记录文档中仅显示名称、社会保险编号、银行帐户和分行详细信息。
+提交PDF设置允许您选择要包含在提交PDF中的选项。 例如，银行接受表单中的姓名、年龄、社会保险号码和电话号码。 该表单会生成银行帐号和分行详细信息。 您可以选择在提交PDF中仅显示名称、社会保险编号、银行帐户和分行详细信息。
 
 记录文档组件的设置可在其属性下使用。 要访问组件的属性，请选择该组件并在叠加中单击![cmppr](assets/cmppr.png)。 这些属性列在侧边栏中，您可以在该侧边栏中找到以下设置。
 
 **字段级设置**
 
-* **从记录文档排除**：将属性设置为true会从记录文档排除该字段。 这是名为`excludeFromDoR`的可编写脚本的属性。 其行为取决于&#x200B;**如果隐藏**&#x200B;表单级属性，则从DoR中排除字段。
+* **从记录文档排除**：将属性设置为true会从提交PDF中排除该字段。 这是名为`excludeFromDoR`的可编写脚本的属性。 其行为取决于&#x200B;**如果隐藏**&#x200B;表单级属性，则从DoR中排除字段。
 
-* **将面板显示为表：**&#x200B;如果面板中的字段少于6个，则在记录文档中将该属性设置为将面板显示为表。 仅适用于面板。
-* **从记录文档排除标题：**&#x200B;设置属性从记录文档排除面板/表的标题。 仅适用于面板和表格。
-* **从记录文档排除描述：**&#x200B;设置属性从记录文档排除面板/表的描述。 仅适用于面板和表格。
-* **从记录文档排除隐藏字段**：选择此属性会从记录文档排除隐藏字段。 它适用于所有表单字段。 默认情况下，未选择&#x200B;**从记录文档排除隐藏字段**&#x200B;选项。
+* **将面板显示为表：**&#x200B;如果面板中的字段少于6个，则设置属性会在提交PDF中将面板显示为表。 仅适用于面板。
+* **从记录文档排除标题：**&#x200B;设置属性会从提交PDF中排除面板/表的标题。 仅适用于面板和表格。
+* **从记录文档排除描述：**&#x200B;设置属性从提交PDF中排除面板/表的描述。 仅适用于面板和表格。
+* **从记录文档排除隐藏字段**：选择此属性将从提交PDF中排除隐藏字段。 它适用于所有表单字段。 默认情况下，未选择&#x200B;**从记录文档排除隐藏字段**&#x200B;选项。
 
 **表单级别设置**
 
-* **包括DoR中未绑定的字段：**&#x200B;设置属性包括记录文档中基于架构的自适应表单中未绑定的字段。 默认情况下，它为true。
+* **在DoR中包含未绑定的字段：**&#x200B;设置属性包括提交PDF中基于架构的自适应表单中的未绑定字段。 默认情况下，它为true。
 
 ## 另请参阅 {#see-also}
 
