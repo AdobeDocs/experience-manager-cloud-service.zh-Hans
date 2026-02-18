@@ -4,9 +4,9 @@ description: 了解如何根据自适应PDF核心组件的表单提交生成Form
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
+source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
 workflow-type: tm+mt
-source-wordcount: '3233'
+source-wordcount: '3208'
 ht-degree: 1%
 
 ---
@@ -147,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，提交自适应表单时，会生成更新的提交PDF。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用提交PDF时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
@@ -166,12 +166,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -354,8 +352,6 @@ When you select a form model, configure Document of Record using options availab
 
       * **隐藏面板说明**：设置属性会从提交PDF中排除面板/表的说明。 适用于面板和表格。
 
-
-
    1. **表单字段属性**：
 
       * **对于复选框和单选按钮组件，仅显示选定值**：设置属性将仅显示[!UICONTROL 记录文档]中复选框和单选按钮的选定值。
@@ -363,35 +359,33 @@ When you select a form model, configure Document of Record using options availab
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置字段的对齐方式，如要显示在[!UICONTROL 记录文档]上的复选框或单选按钮。 默认情况下，[!UICONTROL 记录文档]中的字段会设置垂直对齐方式。 设置DoR的[!UICONTROL 表单字段属性]中的属性会覆盖自适应表单上字段的[!UICONTROL 项对齐方式]中设置的属性。 如果选择[!UICONTROL 与自适应表单相同]选项，则自适应表单创作实例中配置的对齐方式将用于[!UICONTROL 记录文档]字段。
       * **水平对齐的选项数**:You&#x200B;可以设置要在水平对齐的提交PDF上显示的选项数。
 
-
-
    1. **主页属性**：
 
       * **徽标图像**：您可以选择使用自适应表单中的徽标图像、从DAM中选择徽标图像，或从您的计算机上传徽标图像。
       * **表单标题**： DoR标题。
-* **标题文本**：显示在提交PDF标题部分的文本。
-* **免责声明标签**：免责声明的标签。
-* **免责声明**：指定提交PDF上权利和义务范围的文本。
-* **免责声明文本**：免责声明文本。
+      * **标题文本**：显示在提交PDF标题部分的文本。
+      * **免责声明标签**：免责声明的标签。
+      * **免责声明**：指定提交PDF上权利和义务范围的文本。
+      * **免责声明文本**：免责声明文本。
 
-      &lt;！—！[母版页属性](/help/forms/assets/dorpropertiesimg.png)—>
-     
-     >[！NOTE]
-     >
-     >如果您使用的是使用6.3之前的Designer版本创建的自适应表单模板，为了使重音颜色和字体系属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
-     
-     &quot;&#39;xml
-     &lt;proto>
-     &lt;font typeface=&quot;Arial&quot;/>
-     &lt;填充>
-     &lt;颜色值=&quot;4,166,203&quot;/>
-     &lt;/填充>
-     &lt;边缘>
-     &lt;颜色值=&quot;4,166,203&quot;/>
-     &lt;/edge>
-     &lt;/proto>
-     &quot;&#39;
-  
+      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
+
+      >[!NOTE]
+      >
+      >如果您使用的是使用Designer 6.3之前的版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
+
 1. 要保存品牌策略更改，请选择&#x200B;**[!UICONTROL 完成]**。
 
 >[!NOTE]
@@ -444,4 +438,5 @@ When you select a form model, configure Document of Record using options availab
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
+
