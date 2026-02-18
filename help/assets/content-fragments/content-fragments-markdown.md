@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 76%
+ht-degree: 69%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 76%
 
 ## 标题符号 {#heading-notation}
 
-要通过在标题前面放置井号标记 (#) 来创建标题，请执行以下操作： 一个井号标记(#)用于一级标题，两个井号标记(##)用于二级标题，依此类推。 您最多可以使用 6 个井号标记。例如：
+要创建标题，请在标题前面放置一个井号(#)。 一个哈希符号(#)用于一级标题，两个哈希符号(##)用于二级标题，依此类推。 您最多可以使用6个哈希符号。 例如：
 
     `## This is an H2`
 
@@ -116,17 +116,13 @@ ht-degree: 76%
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 您可以使用嵌套的块引号。例如：
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -136,7 +132,7 @@ ht-degree: 76%
 
 您可以创建已排序和未排序的列表。
 
-要创建未排序的列表，请使用 &ast; 符号。例如：
+要创建未排序列表，请在列表中项目之前使用&amp;amp；ast；（星号）符号。 例如：
 
     `* item in list`
 
