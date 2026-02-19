@@ -4,13 +4,13 @@ description: AEM Forms中的交互式通信编辑器中的单选按钮组件允�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 11%
+source-wordcount: '571'
+ht-degree: 5%
 
 ---
-
 
 # 交互式通信编辑器中的单选按钮组件
 
@@ -18,13 +18,9 @@ ht-degree: 11%
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
 
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
-
 ## &#x200B;1. 简介
 
-交互式通信(IC)编辑器中的&#x200B;**单选按钮**&#x200B;组件允许作者向用户呈现一组互斥选项，这意味着一次只能选择一个选项。 这使其非常适用于是/否问题、性别选择、评级级别或预定义的分类响应等用例。
+交互式通信(IC)编辑器中的&#x200B;**单选按钮**组件允许作者向用户呈现一组互斥选项，这意味着一次只能选择一个选项。 这使其非常适用于是/否问题、性别选择、评级级别或预定义的分类响应等用例。
 单选按钮非常直观，易于配置，并且可以绑定到后端数据模型，以实现无缝的数据捕获和集成。
 
 ![查找IC文档](/help/forms/interactive-communication/assets/radio.png)
@@ -118,5 +114,3 @@ ht-degree: 11%
 - 应用一致的间距和对齐方式，以便提高视觉清晰度，尤其是在移动设备友好的布局中。
 
 交互式通信编辑器中的单选按钮组件是一个基本输入组件，可为最终用户提供简洁的结构化决策。 当配置了清晰的标签、周到的间隔和数据绑定时，它确保为表单、调查和载入工作流收集可靠的数据并提供更流畅的用户体验。
-
-

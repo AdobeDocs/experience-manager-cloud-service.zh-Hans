@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的日期字段对象允�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 10%
+source-wordcount: '643'
+ht-degree: 4%
 
 ---
-
 
 # 交互式通信编辑器中的日期字段对象
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -139,5 +135,3 @@ ht-degree: 10%
 - 使用可见性规则动态隐藏不相关的日期字段。
 
 交互式通信编辑器中的&#x200B;**日期字段**&#x200B;对象是一个功能强大的工具，可以准确轻松地捕获时间敏感数据。 当经过精心设计并且连接到有意义的数据路径时，它支持无缝的用户体验和有效处理基于时间的条目。
-
-

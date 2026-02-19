@@ -4,23 +4,19 @@ description: 在交互式通信编辑器中使用PDF预览功能通过不同的�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 15%
+source-wordcount: '327'
+ht-degree: 5%
 
 ---
-
 
 # 交互式通信编辑器中的 PDF 预览
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 PDF预览功能使用户可以通过三种不同的方式预览交互式通信：不使用数据、使用基于JSON的本地数据或使用来自配置数据模型的示例数据。
 
@@ -50,7 +46,7 @@ PDF预览功能使用户可以通过三种不同的方式预览交互式通信�
 
 +++2.使用本地JSON数据预览
 
-2.1.准备结构化JSON文件。 作为参考，您可以从用于通信的JSON架构[(FDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)中复制示例数据。
+2.1.准备结构化JSON文件。 作为参考，您可以从用于通信的JSON架构[(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)中复制示例数据。
 
 2.2.在IC编辑器中，转到&#x200B;**PDF预览** >使用本地数据。
 
@@ -69,4 +65,3 @@ PDF预览功能使用户可以通过三种不同的方式预览交互式通信�
 ![查找IC文档](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-

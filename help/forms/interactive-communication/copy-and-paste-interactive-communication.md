@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 12%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
-
 
 # 在交互式通信编辑器中复制和粘贴
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 利用交互式通信(IC)编辑器中的复制和粘贴功能，作者可以复制现有的交互式通信，并在不同的文件夹或位置重复使用它。 此功能通过启用IC的多个变体而不修改原始版本来帮助团队高效工作。
 
@@ -88,4 +84,3 @@ ht-degree: 12%
 - 复制后查看数据绑定和输出通道，以确保正确性。
 
 交互式通信中的复制和粘贴功能通过允许作者复制现有IC并单独对其进行修改而简化了重复使用和自定义。 它支持更快的开发、更安全的实验和一致的通信交付，而不会冒改变原始交互式通信的风险。
-

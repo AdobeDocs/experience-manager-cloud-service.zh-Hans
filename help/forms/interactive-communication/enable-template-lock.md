@@ -4,23 +4,19 @@ description: 利用交互式通信编辑器中的模板锁定，模板作者可�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 10%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
-
 
 # 交互式通信编辑器中的模板锁定
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -63,7 +59,7 @@ ht-degree: 10%
 按照以下步骤在交互式通信(IC)模板中应用内容或布局锁定：
 
 1. 打开您的模板
-打开或创建模板，按照指南[创建交互式通信模板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)操作
+打开或创建模板，按照指南[创建交互式通信模板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)操作
 
 1. 选择组件
 单击要限制的组件（文本框、图像或子表单）。

@@ -4,23 +4,19 @@ description: 在AEM Forms中创建交互式通信片段，以构建可重用的�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 12%
+source-wordcount: '493'
+ht-degree: 5%
 
 ---
-
 
 # 交互式通信编辑器中的数据绑定
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -83,4 +79,3 @@ ht-degree: 12%
 - **保护敏感数据：**&#x200B;对PII或付款详细信息应用掩码、加密和最低权限访问。
 
 通过仔细配置数据绑定，作者可在设计和数据之间架起一座可靠的桥梁 — 从而加快通信创作，确保准确性，并大规模提供高度个性化的体验。
-

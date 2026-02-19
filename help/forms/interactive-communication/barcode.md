@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的条形码组件允许�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 9%
+source-wordcount: '702'
+ht-degree: 4%
 
 ---
-
 
 # 交互式通信编辑器中的条形码组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 

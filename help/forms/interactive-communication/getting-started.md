@@ -4,23 +4,19 @@ description: 交互式通信允许组织设计和提供个性化、数据驱动�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 11%
+source-wordcount: '701'
+ht-degree: 6%
 
 ---
-
 
 # 交互式通信(IC)编辑器入门
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 Adobe Experience Manager (AEM) Forms中的&#x200B;**交互式通信(IC)编辑器**&#x200B;允许组织跨数字和打印渠道设计和提供个性化的数据驱动通信，例如报表、发票和信件。 本指南概述了如何入门 — 从入门到导航IC编辑器界面。
 
@@ -33,7 +29,7 @@ Adobe Experience Manager (AEM) Forms中的&#x200B;**交互式通信(IC)编辑器
 
 ### 验证浏览器
 
-要了解受支持的浏览器和客户端平台，请按照链接文章[受支持的客户端平台](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/overview/supported-platforms)进行操作
+要了解受支持的浏览器和客户端平台，请按照链接文章[受支持的客户端平台](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)进行操作
 
 >[!NOTE]
 >
@@ -49,7 +45,7 @@ Adobe Experience Manager (AEM) Forms中的&#x200B;**交互式通信(IC)编辑器
 | **表单作者** | 创建和编辑交互式通信。 | 创建、编辑、预览和发布集成电路。 |
 | **模板作者** | 为交互式通信设计可重用模板。 | 创建和锁定模板，定义布局。 |
 | **管理员** | 管理用户访问、权限和配置。 | 分配角色、管理模板和发布IC。 |
-| **FDM作者** | [创建和管理表单数据模型(FDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)以进行数据集成。 | 创建、编辑和配置数据源和模型。 |
+| **FDM作者** | [创建和管理表单数据模型(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)以进行数据集成。 | 创建、编辑和配置数据源和模型。 |
 
 >[!NOTE]
 >

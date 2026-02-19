@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的复选框组件允许�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 10%
+source-wordcount: '619'
+ht-degree: 4%
 
 ---
-
 
 # 交互式通信编辑器中的复选框组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## 1.导言
 
@@ -123,5 +119,3 @@ ht-degree: 10%
 - 当复选框依赖于先前的输入或条件时，使用可见性规则。
 
 交互式通信编辑器中的复选框组件是二进制输入的简单但必不可少的组件。 由于支持样式、条件存在和灵活的数据绑定，它在增强智能数字表单中的交互性和用户控制方面起着关键作用。 在使用贴心的标签、一致的样式和有意义的数据集成进行实施时，复选框对于获得流畅而直观的表单体验贡献很大。
-
-

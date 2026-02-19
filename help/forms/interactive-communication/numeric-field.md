@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的数字字段组件允�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 9%
+source-wordcount: '698'
+ht-degree: 4%
 
 ---
-
 
 # 交互式通信编辑器中的数值字段组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -131,5 +127,3 @@ ht-degree: 9%
 - 保持一致的外观和排版方式以符合品牌准则。
 
 交互式通信编辑器中的&#x200B;**数字字段**&#x200B;组件是用于基于数字的数据收集的精确、可靠的工具。 通过强大的格式设置、可见性控制和数据绑定选项，它可确保数字输入被干净地捕获并无缝地集成到数字表单中。 如果样式和配置正确，它可显着增强表单可用性和整体数据准确性。
-
-

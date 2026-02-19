@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的表组件使作者能�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 10%
+source-wordcount: '608'
+ht-degree: 4%
 
 ---
-
 
 # 交互式通信编辑器中的表格组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -118,5 +114,3 @@ ht-degree: 10%
 - 使用默认模板跨文档标准化表格式内容。
 
 交互式通信编辑器中的表组件是一个灵活的数据友好组件，旨在支持通信中的结构化内容。 通过可自定义的布局选项、样式功能和强大的数据绑定，它使作者能够清晰有效地呈现信息。
-
-

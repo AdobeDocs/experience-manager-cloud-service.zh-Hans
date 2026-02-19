@@ -4,23 +4,19 @@ description: 交互式通信编辑器中的内容溢出处理增强了文本在�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: f19abed5-34a1-4c26-9e92-e219da798dab
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 10%
+source-wordcount: '447'
+ht-degree: 2%
 
 ---
-
 
 # 交互式通信编辑器中的内容溢出处理
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## 简介
 
@@ -60,7 +56,7 @@ ht-degree: 10%
 ### 流式布局
 
 - **新选项：**
-在内容中添加属性&#x200B;**允许分页**&#x200B;以控制溢出行为。 仅当将父子表单设置为“已流动”并且启用了&#x200B;**允许分页**&#x200B;属性时，此选项才可见。
+在内容中添加属性**允许分页**&#x200B;以控制溢出行为。 仅当将父子表单设置为“已流动”并且启用了&#x200B;**允许分页**&#x200B;属性时，此选项才可见。
 
 - **自动页面延续：**
 当内容超出可用空间时，将自动创建新页面，并且将继续无缝编辑。

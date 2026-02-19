@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的矩形组件允许作�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 14%
+source-wordcount: '447'
+ht-degree: 6%
 
 ---
-
 
 # 交互式通信编辑器中的矩形组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -112,5 +108,3 @@ Rectangle组件通常用于布局和样式设计，而不是内容输入。 常�
 - 如果编辑过程中仅出于设计目的需要矩形，但最终输出中不需要矩形，则隐藏矩形。
 
 在IC编辑器中，Rectangle组件是一种非交互式但功能强大的工具。 当有效地进行样式设置和定位时，它可提高版面精度、视觉流和用户体验，而不会增加数据绑定或交互的复杂性。
-
-

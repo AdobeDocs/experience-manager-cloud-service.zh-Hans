@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的子表单组件允许�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 12%
+source-wordcount: '479'
+ht-degree: 5%
 
 ---
-
 
 # 交互式通信编辑器中的子表单组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -110,5 +106,3 @@ ht-degree: 12%
 - 应用条件可见性规则以优化复杂表单中的用户体验。
 
 交互式通信编辑器中的&#x200B;**子表单**&#x200B;组件提供了一种强大的方法来构造和控制复杂的表单布局。 无论是组织输入字段、管理动态内容还是启用模块化设计，子表单都增强了跨文档模板的可用性和可维护性。
-
-

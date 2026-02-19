@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的文本字段组件，�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 7%
+source-wordcount: '671'
+ht-degree: 1%
 
 ---
-
 
 # 交互式通信编辑器中的文本字段组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## 1.导言
 
@@ -133,5 +129,3 @@ ht-degree: 7%
 - 尽可能直接绑定到数据模型，以简化维护。
 
 IC编辑器中的文本字段组件是一个通用构建块，可简化数据捕获。 如果经过周密配置，并具有精选排版、清晰的标签、正确的验证和稳固的数据绑定，它将为下游处理提供无缝、用户友好的体验和可靠的数据。
-
-

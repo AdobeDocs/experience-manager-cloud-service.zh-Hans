@@ -4,23 +4,19 @@ description: 在交互式通信编辑器中支持XDP编辑，允许在交互式�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 12%
+source-wordcount: '393'
+ht-degree: 3%
 
 ---
-
 
 # 在交互式通信编辑器中支持XDP编辑
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## 简介
 
@@ -43,7 +39,7 @@ ht-degree: 12%
 ## 主要功能
 
 - **上载和管理XDP文件：**
-通过&#x200B;**Forms Manager**&#x200B;上传XDP模板。 上传后，即可在交互式通信编辑器中直接编辑这些文件。
+通过**Forms Manager**&#x200B;上传XDP模板。 上传后，即可在交互式通信编辑器中直接编辑这些文件。
 
 - **使用IC编辑器编辑：**
 使用IC编辑器打开和编辑XDP，并完全访问现有编辑功能，包括布局调整、数据绑定、样式和组件配置。
@@ -54,12 +50,12 @@ ht-degree: 12%
 ## 片段支持
 
 - **片段引用：**
-如果XDP引用一个片段，则该片段必须存在于&#x200B;**AEM中，与XDP文件中定义的相对路径**&#x200B;相同。
-如果缺少片段，编辑器将显示&#x200B;**警告消息**，指示所需的片段不存在。
+如果XDP引用一个片段，则该片段必须存在于**AEM中，与XDP文件中定义的相对路径**相同。
+如果缺少片段，编辑器将显示**警告消息**，指示所需的片段不存在。
 
 - 在编辑器中重用&#x200B;**片段：**
-所有现有XDP片段都显示在IC编辑器的&#x200B;**片段面板**&#x200B;中。
-作者可以&#x200B;**将这些片段**&#x200B;直接拖放到画布上。 引用将保留，以确保片段的更新会传播到使用它们的所有XDP中。
+所有现有XDP片段都显示在IC编辑器的**片段面板**中。
+作者可以**将这些片段**&#x200B;直接拖放到画布上。 引用将保留，以确保片段的更新会传播到使用它们的所有XDP中。
 
 ## 好处
 
@@ -76,4 +72,3 @@ ht-degree: 12%
 - 使用版本控制跨XDP和片段依赖项管理更新。
 
 - 验证数据绑定后期编辑以确认正确呈现。
-

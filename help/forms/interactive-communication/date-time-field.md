@@ -4,23 +4,19 @@ description: AEM Forms中的交互式通信编辑器中的日期/时间字段组
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 9%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
-
 
 # 交互式通信编辑器中的日期/时间字段组件
 
 >[!NOTE]
 >
 > 交互式通信功能在早期采用者计划下提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
-
->[!IMPORTANT]
->
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## &#x200B;1. 简介
 
@@ -141,4 +137,3 @@ ht-degree: 9%
 - 将字段绑定到有效的架构路径以确保正确的数据捕获和处理。
 
 交互式通信编辑器中的日期/时间字段组件是一个功能强大且用户友好的组件，可简化基于时间的输入。 通过正确配置样式、数据处理和布局控件，它可为用户和后端系统提供干净、可靠和直观的表单体验。
-
