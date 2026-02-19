@@ -4,9 +4,9 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -87,9 +87,29 @@ RTE配置由两部分组成：
 }
 ```
 
-## 操作配置 {#actions}
+## 操作配置 {#action}
 
 操作配置允许您自定义各个编辑操作的行为和外观。 这些是可用的部分。
+
+### 常用操作选项 {#common-action-options}
+
+大多数操作支持以下常用选项：
+
+* `shortcut?`： string — 覆盖操作的默认键盘快捷键（如果有）
+* `label?`：字符串 — 覆盖UI中操作使用的标签
+* `hideInline?`：布尔值 — 当`true`时，从上下文（内联）RTE编辑器工具栏中隐藏此操作
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### 设置操作格式 {#format}
 
@@ -134,6 +154,56 @@ RTE配置由两部分组成：
   }
 }
 ```
+
+### 表格操作 {#table-actions}
+
+表操作支持内容封装，以控制表单元格中的HTML结构：
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+####表配置选项 {#table-configuration-options}
+
+* `wrapInParagraphs`： `false` （默认） — 表单元格包含未换行的文本内容
+* `wrapInParagraphs`： `true` — 表单元格将内容包裹在段落标记中
+
+示例：
+
+当`wrapInParagraphs`： `false`：
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+当`wrapInParagraphs`： `true`：
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>展开段落(`wrapInParagraphs`： `false`)时，清理器会自动在多个段落之间插入`<br>`标记，以保留可视换行符。 这遵循HTML标准和主要富文本编辑器的常见实践。
 
 ### 链接操作 {#link}
 
@@ -487,3 +557,20 @@ RTE配置由两部分组成：
 
 * 在Mac上，`Mod` = `Cmd`，在Windows/Linux上，`Ctrl`
 * 示例： `Mod-B`，`Mod-Shift-8`，`Mod-Alt-1`
+
+## 不支持的HTML {#unsupported-html}
+
+默认情况下，编辑器解析未知HTML标记时，会去除这些标记。 要保留它们，请通过`unsupportedHtml`配置选项选择加入：
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| 值 | 行为 |
+|---|---|
+| `false`（默认） | 解析期间会删除未知的HTML标记。 |
+| `true` | 未知HTML标记将封装在自定义的不支持块节点中，以便内容可以安全地来回传输。 |
+
+启用后，编辑器将渲染带有`rte-unsupported-block`类的不支持的节点。 使用者应用程序应提供此类的样式（例如，边框、填充、背景）。 块中的标记标签使用`rte-unsupported-label`，也可以对其进行自定义。

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
+source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 19%
+source-wordcount: '2902'
+ht-degree: 18%
 
 ---
 
@@ -101,23 +101,30 @@ ht-degree: 19%
 
 通用编辑器的富文本编辑器(RTE)允许作者应用标准文本格式。 默认情况下，以下选项可用。
 
-* 段落（h1、h2、h3等）
-* 粗体
-* 斜体
-* 下划线
-* 上标
-* 下标
-* 带项目符号的列表
-   * 使用Tab键缩进，使用Shift+Tab键缩进
-* 排序列表
-   * 使用Tab键缩进，使用Shift+Tab键缩进
-* 链接
-* 取消链接
-* 图像
-* 粘贴为文本
-* 移除所有格式
-
-可以使用RTE编辑现有表，但无法创建新表。
+* **段落样式**
+   * 段落，h1-h6，代码
+* **粗体**
+* **斜体**
+* **下划线**
+* **删除线**
+* **上标**
+* **下标**
+* **项目符号列表**
+   * 使用Tab键缩进，使用Shift+Tab键缩进。
+* **排序列表**
+   * 使用Tab键缩进，使用Shift+Tab键缩进。
+* **链接**
+   * 指定URL或使用内容浏览器在AEM中选择路径。
+* **取消链接**
+   * 从所选文本中删除链接。
+* **图像**
+   * 指定URL或使用[资源选择器](/help/assets/overview-asset-selector.md#using-asset-selector)从AEM中选择资源。
+* **表格**
+   * 使用下拉菜单插入具有选定列数和行数的新表或插入和删除新列/行。
+* **粘贴为文本**
+   * 在粘贴到通用编辑器之前，请删除剪贴板上的文本中的格式。
+* **删除所有格式**
+   * 从所选文本中删除所有格式设置选项。
 
 RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有关详细信息，请参阅文档[为通用编辑器配置RTE](/help/implementing/universal-editor/configure-rte.md)。
 
@@ -429,7 +436,7 @@ RTE可以配置为根据作者的需要隐藏选项或显示其他选项。 有�
 要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
-* [AEM Universal Editor 快速入门 &#x200B;](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
+* [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。

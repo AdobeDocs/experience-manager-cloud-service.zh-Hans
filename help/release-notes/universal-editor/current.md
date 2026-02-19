@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.02.13发行说明
-description: 这些是通用编辑器2026.02.13版的发行说明。
+title: 通用编辑器2026.02.19发行说明
+description: 这些是通用编辑器2026.02.19版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 32%
+source-wordcount: '251'
+ht-degree: 23%
 
 ---
 
 
-# 通用编辑器2026.02.13发行说明 {#release-notes}
+# 通用编辑器2026.02.19发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 2 月 13 日版本的发行说明。
+这些是通用编辑器 2026 年 2 月 19 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,8 +26,14 @@ ht-degree: 32%
 
 ## 新增功能 {#what-is-new}
 
-* 现在支持Dynamic Media链接。
-* 用于使用[文档创作](https://docs.da.live/developers/reference/universal-editor)创建块的架构和数据类型现已可用。
+* 已对RTE进行改进。
+   * [现在支持在上下文RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options)中隐藏工具栏项。
+   * [现在支持在带有段落](/help/implementing/universal-editor/configure-rte.md#table-actions)的表内环绕文本。
+   * [不支持的HTML标记](/help/implementing/universal-editor/configure-rte.md#unsupported-html)现在可以由RTE保留。
+   * 现在，可从单独的文件提供RTE逻辑。
+   * 现在可以使用RTE创建[表](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)并进行良好编辑。
+* 如果未设置标签，则现在使用组件定义中的组件标题。
+* `setEditorMode`现在可通过扩展使用。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -37,6 +43,7 @@ ht-degree: 32%
 
 ## 其他改进 {#other-improvements}
 
-* 修复了视频URL不正确的问题。
-* 创建具有相同名称的多个组件不会再返回409。
-* Headless画布现在保留对容器中字段的后续更新。
+* RTE端点现在可用于就地编辑器。
+* 编辑嵌套字段不再导致从这些结构覆盖对等条目。
+* 必填RTE字段无法再保存为空。
+* 在设置格式后添加链接时，不再错误地应用就地格式。
