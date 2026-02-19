@@ -171,7 +171,7 @@ RTE配置由两部分组成：
 }
 ```
 
-####表配置选项 {#table-configuration-options}
+#### 表配置选项 {#table-configuration-options}
 
 * `wrapInParagraphs`： `false` （默认） — 表单元格包含未换行的文本内容
 * `wrapInParagraphs`： `true` — 表单元格将内容包裹在段落标记中
