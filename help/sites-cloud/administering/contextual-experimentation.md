@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
+source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 试验是测试站点的设计、功能和代码的实践，旨在提高性能并使站点更加高效和简化。 这是通过改变内容或功能、将结果与以前的版本进行比较以及挑选具有可衡量效果的改进来实现的。
 
-如果操作得当，这是一个提高转化率、参与度和访客体验的强大模式。 一般来说，在寻求采用这种做法时，需要避免以下几个问题：
+正确操作后，它便是一个功能强大的模式，有助于提高转化率、参与度和访客体验。 一般来说，在寻求采用这种做法时，需要避免以下几个问题：
 
 * **太少**：大多数公司的试验不足，当他们进行试验时，他们试验的流量太少，无法获得有意义的结果。
 * **速度太慢**：许多实验框架导致网站速度太慢，以致于潜在的新转化无法弥补由于渲染速度缓慢而导致的流量丢失和跳出次数。
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 试验插件在[Edge Delivery Services](/help/edge/overview.md)的上下文中使用，因此您需要Github帐户、SharePoint或Google Drive等内容存储库，还需要[AEM Sidekick](https://www.aem.live/docs/sidekick)。 另请参阅[快速入门 — Universal Editor开发人员教程页面](https://www.aem.live/developer/tutorial)和[快速入门 — 开发人员教程](https://www.aem.live/developer/tutorial)。
 
-完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/cn/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
+完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
 
 ## 常用术语 {#frequently-used-terms}
 
