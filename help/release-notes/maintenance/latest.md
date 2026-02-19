@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a58225edb8ca49db9743db6c9c5b08c786fa0144
+source-git-commit: c1e175128ab6e4b483e3940d9bd86a06540ef40f
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 25%
@@ -18,9 +18,9 @@ ht-degree: 25%
 
 ## 发行版本 24464 {#release-24464}
 
-以下总结了维护版本24464的持续改进，该版本于2026年2月17日公开发布。 上一个维护版本是版本 24288。
+以下总结了维护版本24464的持续改进，该版本于2026年2月18日公开发布。 上一个维护版本是版本 24288。
 
-2026.2.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.2.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强功能 {#enhancements-24464}
 
