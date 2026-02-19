@@ -35,7 +35,7 @@ ht-degree: 0%
 
 试验插件在[Edge Delivery Services](/help/edge/overview.md)的上下文中使用，因此您需要Github帐户、SharePoint或Google Drive等内容存储库，还需要[AEM Sidekick](https://www.aem.live/docs/sidekick)。 另请参阅[快速入门 — Universal Editor开发人员教程页面](https://www.aem.live/developer/tutorial)和[快速入门 — 开发人员教程](https://www.aem.live/developer/tutorial)。
 
-完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
+完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/cn/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
 
 ## 常用术语 {#frequently-used-terms}
 
