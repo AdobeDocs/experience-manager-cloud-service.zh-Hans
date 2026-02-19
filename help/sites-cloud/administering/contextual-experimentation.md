@@ -3,9 +3,11 @@ title: AEM as a Cloud Service中的上下文实验
 description: 了解如何使用试验插件向您的站点添加试验功能。
 feature: Administering
 role: Admin
-source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
+source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -33,7 +35,7 @@ ht-degree: 0%
 
 试验插件在[Edge Delivery Services](/help/edge/overview.md)的上下文中使用，因此您需要Github帐户、SharePoint或Google Drive等内容存储库，还需要[AEM Sidekick](https://www.aem.live/docs/sidekick)。 另请参阅[快速入门 — Universal Editor开发人员教程页面](https://www.aem.live/developer/tutorial)和[快速入门 — 开发人员教程](https://www.aem.live/developer/tutorial)。
 
-完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/cn/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
+完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
 
 ## 常用术语 {#frequently-used-terms}
 
