@@ -4,10 +4,10 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 892339482c009edf9f73560f2a4b66f4317843fe
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 34%
+source-wordcount: '998'
+ht-degree: 35%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 34%
 >* GitHub企业服务器（GitHub的自托管版本）存储库。
 >* GitLab（GitLab的`gitlab.com`版本和自托管版本）存储库。
 >* Bitbucket (`bitbucket.org`和Bitbucket服务器（BitBucket的自托管版本）存储库。
->* Azure DevOps （[dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min)和Azure DevOps的自托管版本）存储库。
+>* Azure DevOps ([dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min)和Azure DevOps的自托管版本)存储库。
 >
->请参阅[在Cloud Manager中添加外部存储库 — 私有测试版](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
+>请参阅[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 

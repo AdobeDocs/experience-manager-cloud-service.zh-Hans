@@ -4,9 +4,9 @@ description: 了解如何在AEM Cloud Manager中查看、编辑和删除用于�
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '360'
 ht-degree: 3%
 
 ---
@@ -17,15 +17,9 @@ ht-degree: 3%
 
 Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 以前，如果令牌过期，则必须重新载入关联的存储库才能保持可操作性。
 
-现在，通过&#x200B;**管理访问令牌**&#x200B;功能，您可以更高效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的令牌。
+现在，**`Manage Access Tokens`**&#x200B;功能可让您更有效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序(包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps)的令牌。
 
 另请参阅[在Cloud Manager中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
-
-<!--
->[!NOTE]
->
->The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
--->
 
 ## 查看访问令牌 {#view-access-tokens}
 
@@ -60,4 +54,4 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 
    对于当前正在使用的令牌，该图标被禁用（![删除大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)）。
 
-1. 在&#x200B;**删除访问令牌**&#x200B;对话框中，单击&#x200B;**删除**&#x200B;以永久删除该令牌。
+1. 在&#x200B;**`Delete Access Token`**&#x200B;对话框中，单击&#x200B;**删除**&#x200B;以永久删除令牌。

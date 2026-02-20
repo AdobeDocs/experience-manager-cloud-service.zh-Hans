@@ -4,7 +4,7 @@ description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 26%
@@ -21,12 +21,6 @@ ht-degree: 26%
 
 * Edge Delivery Services 用户可以使用已加入的存储库来同步和部署网站代码。
 * 对于 AEM as a Cloud Service 和 Adobe Managed Services (AMS) 用户，该存储库可以链接到全栈和前端两种管道。
-
-<!--
->[!NOTE]
->
->The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
-
 
 ## 配置外部存储库
 
@@ -125,7 +119,7 @@ ht-degree: 26%
 | 访问令牌选项 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
-| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>当您在Azure DevOps中创建应用程序密码时，请确保它包含以下必需的应用密码权限：<ul><li>代码（读取）</li><li>代码（状态）</li><li>拉取请求Threads（读写）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Azure DevOps中创建应用程序密码时，请确保该密码包含以下必需的应用程序密码权限：<ul><li>代码（读取）</li><li>代码（状态）</li><li>拉取请求Threads（读写）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
 验证后，外部存储库即可使用并链接到管道。
 
@@ -170,7 +164,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 在`GitHub.com`上托管的存储库不需要Webhook配置，因为Cloud Manager直接通过GitHub应用程序集成。
 
-对于已载入访问令牌的所有其他外部存储库 — 例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps - webhook配置可用，必须手动设置。
+对于已载入访问令牌的所有其他外部存储库(例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps)，webhook配置可用，必须手动设置。
 
 **要为外部存储库配置webhook：**
 
@@ -197,7 +191,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
    1. 在&#x200B;**Webhook密码**&#x200B;令牌/密钥字段旁边，单击&#x200B;**生成**，然后单击![复制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)。
 将密码粘贴为纯文本文件。 您的Git供应商的Webhook设置需要复制的密钥。
 1. 单击&#x200B;**关闭**。
-1. 导航到您的Git供应商解决方案（GitHub Enterprise、GitLab、Bitbucket或Azure DevOps）。
+1. 导航到您的Git供应商解决方案(GitHub Enterprise、GitLab、Bitbucket或Azure DevOps)。
 
    有关webhook配置的所有详细信息以及每个供应商所需的事件均可在[添加外部存储库](#add-ext-repo)中获取。 在步骤8下，请参见选项卡表。
 
@@ -218,7 +212,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 | 必需的webhook事件 |
 | --- |
-| 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>确保将webhook设置为在下列必需的webhook事件上触发：<ul><li>拉取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul> |
+| 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>确保将webhook设置为在下列必需的webhook事件上触发：<ul><li>提取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
 
@@ -302,7 +296,7 @@ Bitbucket的![拉取请求验证状态](/help/implementing/cloud-manager/managin
 
 >[!TAB Azure DevOps]
 
-Azure DevOps通过状态检查跟踪拉取请求验证。 当Cloud Manager运行拉取请求验证时，它将添加显示在Azure DevOps拉取请求界面中的状态检查。
+Azure DevOps通过状态检查来跟踪拉取请求验证。 当Cloud Manager运行拉取请求验证时，它会添加显示在Azure DevOps拉取请求界面中的状态检查。
 
 在代码质量验证期间，状态检查会显示该流程正在进行中：
 
@@ -316,7 +310,7 @@ Azure DevOps通过状态检查跟踪拉取请求验证。 当Cloud Manager运行
 
 使用webhooks-3![对拉取请求进行](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)Azure DevOps验证
 
-对于拉取请求注释和反馈，Cloud Manager会直接将注释添加到Azure DevOps中的拉取请求，其中包含验证详细信息以及所需的任何必要操作。
+对于拉取请求注释和反馈，Cloud Manager会在Azure DevOps中直接将注释添加到拉取请求，并包含验证详细信息以及所需的任何必要操作。
 
 使用webhooks-4![对拉取请求进行](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)Azure DevOps验证
 
