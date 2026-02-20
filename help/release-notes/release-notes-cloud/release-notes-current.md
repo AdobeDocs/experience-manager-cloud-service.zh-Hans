@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
+source-git-commit: cf45f9e6d89e0a166c09989b0fc8e793a54ce9ff
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1886'
 ht-degree: 42%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 42%
 
 观看 2026 年 1 月版概述视频，大致了解 2026.1.0 版的新增功能：
 
->[!VIDEO](https://video.tv.adobe.com/v/3479799/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## AEM Beta程序 {#aem-beta-programs}
@@ -53,7 +53,7 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 通过抢先使用Adobe正在开发的功能，客户和合作伙伴可以提供反馈并影响产品开发。 它还有助于客户在功能正式发布之前做好采用新功能的准备。
 
 **当前测试版计划**
-以下部分列出了活动的测试版程序和资源管理器程序。
+以下部分列出了活动的测试版计划。
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
@@ -124,7 +124,7 @@ AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用�
 
 **从JSON数组检索值**
 
-扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
+扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
 
 **在发布实例上运行关联UI**
 
