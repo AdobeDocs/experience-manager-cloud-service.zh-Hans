@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
 workflow-type: tm+mt
-source-wordcount: '4349'
-ht-degree: 64%
+source-wordcount: '4427'
+ht-degree: 63%
 
 ---
 
@@ -49,16 +49,16 @@ ht-degree: 64%
 ```java
 public class DontDoThis implements Runnable {
   private Thread thread;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     thread.stop();  // UNSAFE!
   }
- 
+
   public void run() {
     while (true) {
         somethingWhichTakesAWhileToDo();
@@ -73,16 +73,16 @@ public class DontDoThis implements Runnable {
 public class DoThis implements Runnable {
   private Thread thread;
   private boolean keepGoing = true;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     keepGoing = false;
   }
- 
+
   public void run() {
     while (this.keepGoing) {
         somethingWhichTakesAWhileToDo();
@@ -125,7 +125,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
@@ -136,15 +136,15 @@ public void dontDoThis() {
 public void dontDoThisEither() {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -154,7 +154,7 @@ public void dontDoThisEither() {
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
@@ -162,9 +162,9 @@ public void doThis() {
     .setSocketTimeout(5000)
     .build();
   builder.setDefaultRequestConfig(requestConfig);
- 
+
   HttpClient httpClient = builder.build();
-   
+
   // do something with the client
 }
 
@@ -173,15 +173,15 @@ public void orDoThis () {
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
   urlConnection.setReadTimeout(5000);
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -512,6 +512,17 @@ public void doThis(Resource resource) {
 
 请参阅[`Apache Sling`事件和作业处理](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)，详细了解如何在集群环境中处理Sling作业。
 
+### 不要使用 Experience Manager 弃用的 API {#sonarqube-aem-api-deprecated}
+
+* **密钥**： java:S1874
+* **类型**：`Vulnerability`或`Bug`/Cloud Service兼容性
+* **严重性**： Info、Minor或Major
+* **开始版本**：版本 2026.1.0
+
+Experience Manager API接口正在不断修订，以识别需要停止使用的API。 此类API已弃用，并标有移除日期。
+
+移除日期越近，违反此规则的严重性越高。 必须以安全的替代方案取代此类API的使用。
+
 ### 不要使用 Experience Manager 弃用的 API {#sonarqube-aem-deprecated}
 
 * **密钥**：AMSCORE-553
@@ -836,7 +847,7 @@ Experience Manager 现代化工具文档提供了有关如何将组件从经典 
 >
 >规则[客户包不应在libs](#oakpal-customer-package)下创建或修改节点。
 
-有关更多详细信息，请参阅[&#x200B; Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+有关更多详细信息，请参阅[ Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ### 不应使用反向复制代理 {#oakpal-reverse-replication}
 
@@ -1082,7 +1093,7 @@ Cloud Service。 有关更多信息，请参阅文档[内容搜索和索引](/he
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
   - type: lucene
-  - includedPaths: ["/content/dam/"] 
+  - includedPaths: ["/content/dam/"]
   - queryPaths: ["/content/dam/"]
     + indexRules
       - jcr:primaryType: nt:unstructured
