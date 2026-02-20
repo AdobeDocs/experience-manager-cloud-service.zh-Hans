@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 45bdc9afeb43e9b9cc2e190d459819f65f091020
+source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
 workflow-type: tm+mt
-source-wordcount: '3707'
-ht-degree: 85%
+source-wordcount: '3842'
+ht-degree: 80%
 
 ---
 
@@ -343,7 +343,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 本节反映了上表中各种 API 的 API 移除指南。
 
-要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
+要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
 
 虽然您应该随着时间的推移修正所有已弃用的API，但请优先处理“已弃用的API”表中列出的目标删除日期为2026年2月26日（或更早日期）的任何API。 在AEM Analyzer报表中，这些API可能会显示，有效删除日期为2025年8月31日。
 
@@ -363,7 +363,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 操作列表：
 
-* 将 ACS AEM Commons 更新至最新版本（至少 6.11.0）
+* 如果您正在使用ACS AEM Commons更新到最新版本（至少6.11.0）并确保使用`cloud`分类器。
 * 分别从 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 迁移到 `org.apache.sling.auth`。`org.apache.sling.auth.spi`。
 
 ### 移除 `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
@@ -381,7 +381,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 操作列表：
 
 * 使用其他第三方库/自有代码替换 `org.eclipse.jetty` 包的用法
-* 从此列表中选择所需的包并将其添加到您的项目中：
+* 从此列表中选择所需的包，并将它们添加到您的项目中。 如果添加包，请确保检查该捆绑包的包导入，因为您可能需要从这些列表中添加其他包才能完成这些导入。 如果要使用版本9.x的这些包，请确保完全部署下面的版本，并且不嵌入&#x200B;*和*&#x200B;导出这些包。
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
@@ -408,7 +408,8 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 操作列表：
 
-* 将 ACS AEM Commons 更新至最新版本（至少 6.11.0）
+* 如果您正在使用ACS AEM Commons更新到最新版本（至少6.11.0）并确保使用`cloud`分类器。
+* 如果您使用`io.wcm:io.wcm.caconfig.extensions`，请至少将此更新到1.9.2版
 * 请将对 Google Guava 核心库的使用替换为 JDK 集合类或 Apache Commons Collections4 提供的集合类。
 * 如仍有必要，请将此组件包添加至项目中（将版本号替换为当前可用的最新版本）：
    * `com.google.guava:guava:33.4.8-jre`
@@ -419,7 +420,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 操作列表：
 
-* 将 ACS AEM Commons 更新至最新版本（至少 6.11.0）
+* 如果您正在使用ACS AEM Commons更新到最新版本（至少6.11.0）并确保使用`cloud`分类器。
 * 将 `org.apache.commons.lang*` 的导入替换为 `org.apache.commons.lang3`
 * 将 `org.apache.commons.collections*` 的导入替换为 `org.apache.commons.collecitons4`
 
@@ -445,7 +446,7 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 
 操作列表：
 
-* 将 ACS AEM Commons 更新至最新版本（至少 6.11.0）
+* 如果您正在使用ACS AEM Commons更新到最新版本（至少6.11.0）并确保使用`cloud`分类器。
 * 从 `ch.qos.logback` 中移除使用包的代码
 
 ### 使用 `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
@@ -454,9 +455,10 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 
 操作列表：
 
-* 将 ACS AEM Commons 更新至最新版本（至少 6.11.0）
-* 使用 `org.slf4j.event` 和 `org.slf4j.spi` 移除代码
+* 如果您正在使用ACS AEM Commons更新到最新版本（至少6.11.0）并确保使用`cloud`分类器。
 * 如果您使用Apache Kafka客户端并包含Apache ServiceMix中的OSGi包装包(`org.apache.servicemix.bundles.kafka-clients`)，请将其替换为[AEM Apache Kafka客户端包装包](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/)。 此版本与Apache ServiceMix中的版本相同，只是删除了这两个包的使用情况。
+* 如果您正在使用`com.adobe.aio.aem:aio-lib-osgi`更新到最新版本（至少2.0.12）。
+* 使用 `org.slf4j.event` 和 `org.slf4j.spi` 移除代码
 
 ### 使用 `org.apache.log4j` {#org.apache.log4j}
 
