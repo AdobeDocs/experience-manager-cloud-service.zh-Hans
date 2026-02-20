@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 087c29ddd1dcfe0fc4bda7428d71a5e6157e1325
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 39%
+source-wordcount: '1888'
+ht-degree: 42%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 39%
 
 观看 2026 年 1 月版概述视频，大致了解 2026.1.0 版的新增功能：
 
->[!VIDEO](https://video.tv.adobe.com/v/3479799/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## AEM Beta程序 {#aem-beta-programs}
@@ -55,18 +55,20 @@ Adobe Experience Manager (AEM)测试版程序是客户访问预发行版功能�
 **当前测试版计划**
 以下部分列出了活动的测试版程序和资源管理器程序。
 
-### AEM中的代理（资源管理器程序） {#agents-in-aem-beta-program}
+<!--
+### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
-提前获得对强大的新AEM代理功能的访问权限，这些功能涵盖生产、管理、优化、发现和开发。 您的反馈将直接影响Adobe的路线图和最终功能。 有关详细信息，请参阅[AEM代理概述](/help/ai-in-aem/agents/overview.md)。
+Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
-该计划通常持续4-6周，但可以针对您的积极参与能力进行定制。
+This program typically lasts 4-6 weeks, but can be tailored to be flexible around your ability to actively participate. 
 
-要选择加入此计划，请发送电子邮件至[aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)，并尽可能包含以下详细信息：
+To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) and include the following details to the extent possible:
 
-* 将积极使用代理的团队成员的名称和Adobe ID。
-* 列出您或您的团队将要使用的特定座席。 或者说“所有特工”
+* Names and Adobe ID's of team members who will actively use agents.
+* List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
-被选为参与的客户将由Adobe直接通知。 参与取决于资格考虑因素，包括客户许可和有限的计划能力。 虽然并非所有请求最初都可以得到满足，但可能会在未来测试阶段考虑添加其他客户。
+Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+-->
 
 ### AEM Foundation(Beta项目) {#aem-foundation-beta-programs}
 
@@ -122,7 +124,7 @@ AI 搜索引入了一种智能的上下文感知搜索体验，通过了解用�
 
 **从JSON数组检索值**
 
-扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
+扩展了自定义函数功能，可从JSON数组[中提取通过API调用收到的值，并将这些值直接绑定到自适应表单字段。 ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)您现在可以使用最少的手动数据映射来开发业务逻辑和规则。
 
 **在发布实例上运行关联UI**
 

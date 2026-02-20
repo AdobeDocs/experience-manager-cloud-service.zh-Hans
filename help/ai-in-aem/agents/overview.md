@@ -4,9 +4,9 @@ description: 了解AEM中可用于加快内容创建和自动编排更改的代�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 5e1ae1de0bdeada01f03f3549ab9295ddef139ea
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,6 @@ ht-degree: 0%
 >
 >* 它们目前不适用于AEM 6.5，也不适用于AEM 6.5 LTS。
 >* 它们在AEM内部部署和Managed Services中均不可用。
-
->[!IMPORTANT]
->
->要使用代理，您需要注册资源管理器程序。 您可以在[此处](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)找到有关AEM Agents资源管理器程序的更多信息。
 
 ## Experience Production Agent {#experience-production-agent}
 
