@@ -38,7 +38,7 @@ ht-degree: 42%
 
 观看 2026 年 1 月版概述视频，大致了解 2026.1.0 版的新增功能：
 
->[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479799/?captions=chi_hans&quality=12)
 
 
 ## AEM Beta程序 {#aem-beta-programs}
