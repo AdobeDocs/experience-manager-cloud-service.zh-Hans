@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 80%
@@ -35,10 +35,10 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 >
 >* **从2026年1月26日开始**：操作中心通知电子邮件将在每个环境&#x200B;**每周发送**&#x200B;以提醒删除这些API的使用情况。
 >* **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。
->* **2026年3月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**，**阻止新代码的部署**，直到移除该使用为止。
+>* **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**，**阻止新代码的部署**，直到移除该使用为止。
 >* **2026年4月30日**：仍在使用这些API的环境可能&#x200B;**不再接收关键的Adobe版本更新**。
 >
->要防止部署块，请在2026年3月26日之前删除API用法。
+>要防止部署块，请在2026年3月30日之前删除API用法。
 
 ## 弃用功能 {#deprecated-features}
 
@@ -90,10 +90,10 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 >
 > * **从2026年1月26日开始**：操作中心通知电子邮件将在每个环境&#x200B;**每周发送**&#x200B;以提醒删除这些API的使用情况。
 > * **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。
-> * **2026年3月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**，**阻止新代码的部署**，直到移除该使用为止。
-> * **2026年4月30日**：仍在使用这些API的环境可能&#x200B;**不再接收关键的Adobe版本更新**。
+> * **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**，**阻止新代码的部署**，直到移除该使用为止。
+> * **2026年5月4日**：仍在使用这些API的环境可能&#x200B;**不再接收关键的Adobe版本更新**。
 >
-> 要防止部署块，请在2026年3月26日之前删除API用法。
+> 要防止部署块，请在2026年3月30日之前删除API用法。
 
 
 <details>
@@ -343,7 +343,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 本节反映了上表中各种 API 的 API 移除指南。
 
-要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
+要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
 
 虽然您应该随着时间的推移修正所有已弃用的API，但请优先处理“已弃用的API”表中列出的目标删除日期为2026年2月26日（或更早日期）的任何API。 在AEM Analyzer报表中，这些API可能会显示，有效删除日期为2025年8月31日。
 
