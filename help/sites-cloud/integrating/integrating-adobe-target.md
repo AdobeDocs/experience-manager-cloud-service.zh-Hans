@@ -15,10 +15,10 @@ ht-degree: 87%
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为 Adobe Experience Cloud 的一部分，[Adobe Target](https://experienceleague.adobe.com/en/docs/target) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。集成 Adobe Target 和 AEM as a Cloud Service 需要：
+作为 Adobe Experience Cloud 的一部分，[Adobe Target](https://experienceleague.adobe.com/zh-hans/docs/target) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。集成 Adobe Target 和 AEM as a Cloud Service 需要：
 
 * 使用 Touch UI 在 AEM as a Cloud Service 中创建 Target 配置（需要 IMS 配置）。
-* 在 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) 中将 Adobe Target 添加为扩展并进行配置。
+* 在 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=zh-Hans) 中将 Adobe Target 添加为扩展并进行配置。
 
 Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的客户端属性所必需的。也就是说，需要与 Launch 集成才能实施“体验定位”。
 
@@ -30,7 +30,7 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 >[!NOTE]
 >
->另请参阅Adobe Target文档：[将Target与Adobe Experience Manager (AEM)集成](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration)。
+>另请参阅Adobe Target文档：[将Target与Adobe Experience Manager (AEM)集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/aem/aem-target-integration)。
 
 ## 创建 Adobe Target 配置 {#create-configuration}
 
@@ -44,7 +44,7 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 ### IMS 配置 {#ims-configuration}
 
-通过 Target Standard API 将 AEM 与 Adobe Target 集成需要配置 Adobe IMS (Identity Management System)。必须创建Target IMS配置（在配置Target之后）。 请参阅[为AEM as a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)和视频[将Experience Platform Launch与AEM集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)，以了解如何创建Target IMS配置。
+通过 Target Standard API 将 AEM 与 Adobe Target 集成需要配置 Adobe IMS (Identity Management System)。必须创建Target IMS配置（在配置Target之后）。 请参阅[为AEM as a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)和视频[将Experience Platform Launch与AEM集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=zh-Hans)，以了解如何创建Target IMS配置。
 
 >[!NOTE]
 >

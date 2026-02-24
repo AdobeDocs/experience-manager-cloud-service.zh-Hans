@@ -29,7 +29,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 
 ## 要求
 
-自动化设置旨在即时使用通过启用了 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)的 [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)构建的 AEM 站点。您可以使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或使用[站点模板](/help/journey-sites/quick-site/create-site.md)创建站点来生成已自动启用这些功能的新站点。
+自动化设置旨在即时使用通过启用了 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=zh-Hans)的 [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)构建的 AEM 站点。您可以使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 或使用[站点模板](/help/journey-sites/quick-site/create-site.md)创建站点来生成已自动启用这些功能的新站点。
 
 ## 前提条件 {#prerequisites}
 
