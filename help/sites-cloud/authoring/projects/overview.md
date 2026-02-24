@@ -1,13 +1,14 @@
 ---
 title: 项目
 description: 通过“项目”，您可以将资源分组到一个实体中，该实体的通用共享环境使您能够轻松管理项目
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1259'
 ht-degree: 96%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 96%
 
 * [管理项目](/help/sites-cloud/authoring/projects/managing.md)
 * [处理任务](/help/sites-cloud/authoring/projects/tasks.md)
-* [使用项目工作流程](/help/sites-cloud/authoring/projects/workflows.md)
+* [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## “项目”控制台 {#projects-console}
 

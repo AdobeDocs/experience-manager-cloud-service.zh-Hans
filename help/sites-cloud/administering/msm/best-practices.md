@@ -3,11 +3,12 @@ title: MSM 最佳实践
 description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助启动和运行 AEM Multi Site Manager。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1420'
 ht-degree: 94%
 
 ---

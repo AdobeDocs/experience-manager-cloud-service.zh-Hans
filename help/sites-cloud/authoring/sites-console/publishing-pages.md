@@ -1,14 +1,15 @@
 ---
 title: 从站点控制台发布页面
 description: 了解如何使用站点控制台发布和取消发布页面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 74%
+source-wordcount: '1641'
+ht-degree: 73%
 
 ---
 
@@ -25,9 +26,9 @@ ht-degree: 74%
 >
 >您可以从站点控制台以外的位置发布。
 >
->* 页面编辑器中的[&#128279;](/help/sites-cloud/authoring/page-editor/publishing.md)
->* 从通用编辑器[&#128279;](/help/sites-cloud/authoring/universal-editor/publishing.md)
->* 从体验片段[&#128279;](/help/sites-cloud/authoring/fragments/experience-fragments.md)控制台或编辑器中
+>* 页面编辑器中的[](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* 从通用编辑器[](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* 从体验片段[控制台或编辑器中](/help/sites-cloud/authoring/fragments/experience-fragments.md)
 >
 >从这些位置发布提供了不同的选项，但遵循了此处所述的类似过程和一般想法。
 
@@ -253,7 +254,7 @@ ht-degree: 74%
 
 您可以确定页面的发布状态：
 
-* 在[&#x200B; Sites 控制台上的资源概述信息](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)中
+* 在[ Sites 控制台上的资源概述信息](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)中
 
   ![信息卡视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 

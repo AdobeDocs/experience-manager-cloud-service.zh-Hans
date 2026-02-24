@@ -1,13 +1,14 @@
 ---
 title: 处理页面版本
 description: 了解如何在 AEM 中创建、比较和恢复页面的版本。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1626'
 ht-degree: 91%
 
 ---

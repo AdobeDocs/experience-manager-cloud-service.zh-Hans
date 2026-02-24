@@ -1,14 +1,15 @@
 ---
 title: 将体验片段导出到 Adobe Target
 description: 了解如何将体验片段导出到 Adob​​e Target，以测试和个性化体验。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 96%
+source-wordcount: '2198'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 96%
 >* AEM 体验片段将导出到 Adobe Target 的默认工作区。
 >* 必须按照[与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)下的说明将 AEM 与 Adobe Target 集成。
 
-您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的选件以大规模测试和打造个性化体验。
+您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的产品建议以大规模测试和打造个性化体验。
 
 有三个选项可用于将体验片段导出到 Adobe Target：
 
@@ -47,16 +48,16 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Adobe Target 工作区可用于允许组织（组）的成员仅为该组织创建和管理选件和活动；不向其他用户授予访问权限。例如，全球关注的国家/地区特定的组织。
+>Adobe Target 工作区可用于允许组织（组）的成员仅为该组织创建和管理产品建议和活动；不向其他用户授予访问权限。例如，全球关注的国家/地区特定的组织。
 
 >[!NOTE]
 >
 >有关更多信息，请参阅以下内容：
 >
 >* [Adobe Target 开发](https://developers.adobetarget.com/)
->* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
->* [Adobe Target – 如何使用 Adobe Experience Manager (AEM) 体验片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=zh-Hans)
->* [AEM 6.5 – 手动配置与 Adobe Target 的集成 – 创建 Target 云配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=zh-Hans#creating-a-target-cloud-configuration)
+>* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+>* [Adobe Target – 如何使用 Adobe Experience Manager (AEM) 体验片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
+>* [AEM 6.5 – 手动配置与 Adobe Target 的集成 – 创建 Target 云配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
 ## 前提条件 {#prerequisites}
 
@@ -96,9 +97,9 @@ ht-degree: 96%
 
    >[!NOTE]
    >
-   >可以自定义体验片段选件的 JSON 格式。为此，请定义一个客户体验片段组件，然后注明如何在组件“Sling 模型”中导出其属性。
+   >可以自定义体验片段产品建议的 JSON 格式。为此，请定义一个客户体验片段组件，然后注明如何在组件“Sling 模型”中导出其属性。
    >
-   >请参阅核心组件：[核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=zh-Hans)
+   >请参阅核心组件：[核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 
 1. 在 **Adobe Target** 下，选择：
 
@@ -113,7 +114,7 @@ ht-degree: 96%
    >
    > 如果您希望导出的内容指向特定的&#x200B;*发布*&#x200B;域，可配置 AEM 外部化器。有关更多详细信息，请参阅[配置 AEM 链接外部化器](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer)。
    >
-   > 另请注意，外部化器域仅与发送到 Target 的体验片段的内容相关，与查看选件内容等元数据无关。
+   > 另请注意，外部化器域仅与发送到 Target 的体验片段的内容相关，与查看产品建议内容等元数据无关。
 
    例如，对于文件夹：
 
@@ -142,7 +143,7 @@ ht-degree: 96%
 使用以下过程可在 AEM 中创建 Target 云配置：
 
 1. 通过 **AEM 徽标** > **工具** > **云服务** > **旧版云服务**&#x200B;导航到&#x200B;**旧版云服务**。
-例如：([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+例如： ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    **Adobe Experience Cloud** 概述页面随即打开。
 
@@ -198,7 +199,7 @@ ht-degree: 96%
 
      >[!NOTE]
      >
-     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hans) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
+     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
      >
      >mbox.js 已被弃用，将在稍后阶段删除。
      >
@@ -223,7 +224,7 @@ ht-degree: 96%
      >
      >准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
      >
-     >对于创作实例，“准确定位”始终处于启用状态。但在发布实例上，您可以通过清除云服务配置中“准确定位”旁边的复选标记来选择全局关闭准确定位 (**http://localhost:4502/etc/cloudservices.html**)。无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
+     >对于创作实例，“准确定位”始终处于启用状态。但是，在发布实例上，您可以通过清除云服务配置(**http://localhost:4502/etc/cloudservices.html**)中“准确定位”旁边的复选标记来选择全局关闭准确定位。 无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
      >
      >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。您必须直接对这些组件进行任何更改。
 
@@ -270,7 +271,7 @@ ht-degree: 96%
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hans).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -335,7 +336,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >如果已导出体验片段，请选择&#x200B;**在 Adobe Target 中更新**。
 
-1. 根据需要选择&#x200B;**导出而不发布**&#x200B;或&#x200B;**Publish**。
+1. 根据需要选择&#x200B;**导出而不发布**&#x200B;或&#x200B;**发布**。
 
    >[!NOTE]
    >
@@ -359,7 +360,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用体验片段 {#using-your-experience-fragments-in-adobe-target}
 
-执行上述任务后，体验片段将显示在 Target 的“选件”页面上。请查看[特定 Target 文档](https://experiencecloud.adobe.com/resources/help/zh_CN/target/target/aem-experience-fragments.html)以了解可以实现的目标。
+执行上述任务后，体验片段将显示在 Target 的“产品建议”页面上。请查看[特定 Target 文档](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -367,7 +368,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 删除已导出到 Adobe Target 的体验片段 {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-如果已在 Target 的选件中使用已导出到 Target 的某个体验片段，则删除该体验片段可能会导致出现问题。由于 AEM 正在交付片段内容，因此，删除片段会导致选件不可用。
+如果已在 Target 的产品建议中使用已导出到 Target 的某个体验片段，则删除该体验片段可能会导致出现问题。由于 AEM 正在交付片段内容，因此，删除片段会导致产品建议不可用。
 
 避免此类情况：
 
@@ -376,9 +377,9 @@ When you associate a page with the framework, the child pages inherit the associ
 
   AEM 中的错误消息不会禁止用户（强制）删除体验片段。如果删除体验片段：
 
-   * 带有 AEM 体验片段的 Target 选件可能会显示意外行为
+   * 带有 AEM 体验片段的 Target 产品建议可能会显示意外行为
 
-      * 该选件可能仍会呈现，因为体验片段 HTML 已推送到 Target
+      * 该产品建议可能仍会呈现，因为体验片段 HTML 已推送到 Target
       * 如果也从 AEM 中删除了引用的资源，则体验片段中的任何引用都无法正常工作。
 
    * 当然，由于体验片段在 AEM 中不再存在，因此无法对体验片段进行任何进一步的修改。

@@ -1,13 +1,14 @@
 ---
 title: 使用AEM页面编辑器编辑页面内容
 description: AEM页面编辑器是用于创作内容的强大工具。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1634'
 ht-degree: 34%
 
 ---
@@ -246,7 +247,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 继承是一种机制，通过该机制，可以链接内容，以便更改一个内容会自动更改另一个内容。 继承组件可能是多种情况的产物，包括：
 
 * [多站点管理](/help/sites-cloud/administering/msm/overview.md)
-* [启动项](/help/sites-cloud/authoring/launches/overview.md)
+* [发布项](/help/sites-cloud/authoring/launches/overview.md)
 
 您可以取消并重新启用继承。 根据组件的不同，如果组件是Live Copy或启动项的一部分，则可以从组件工具栏中使用这些选项。
 

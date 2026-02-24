@@ -1,14 +1,15 @@
 ---
 title: 添加页面注释
 description: 使用注释模式可像使用便笺一样在页面上留下注释和草图，协助您的内容审阅过程
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 81%
+source-wordcount: '682'
+ht-degree: 80%
 
 ---
 

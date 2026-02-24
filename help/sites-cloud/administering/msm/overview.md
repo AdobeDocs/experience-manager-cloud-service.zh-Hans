@@ -3,11 +3,12 @@ title: 重用内容 – 多站点管理器和 Live Copy
 description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功能重用内容。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2725'
 ht-degree: 91%
 
 ---

@@ -1,14 +1,15 @@
 ---
 title: 组件控制台
 description: 组件控制台让您浏览针对实例定义的所有组件
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 92%
+source-wordcount: '277'
+ht-degree: 91%
 
 ---
 

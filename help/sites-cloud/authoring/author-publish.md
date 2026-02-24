@@ -1,14 +1,15 @@
 ---
 title: 创作和发布概念
 description: 了解在AEM中使用创作、预览和发布环境进行创作的概念。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 29%
+source-wordcount: '444'
+ht-degree: 30%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 29%
 
 * 创作层
 * 预览层
-* Publish层
+* 发布层
 
 这些层进行交互以使内容在您的网站上可用，以便您的访客可以访问该内容。 基本的工作流程是：
 

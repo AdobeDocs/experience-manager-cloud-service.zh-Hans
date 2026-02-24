@@ -1,13 +1,14 @@
 ---
 title: 管理标记
 description: 了解如何在 AEM 中管理标记以整理内容。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2206'
 ht-degree: 68%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 68%
    * 这些分类在整个 AEM 中是全局性的。
 * 标记可以由作者应用并由网站访客使用。
 * 在分配给页面或进行搜索时，所有形式的标记都可供选择，而无论标记创建者如何。
-* 标记由[列表组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=zh-Hans)用来根据所选标记生成动态列表。
+* 标记由[列表组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)用来根据所选标记生成动态列表。
 
 ## 标记要求 {#requirements}
 
@@ -76,7 +77,7 @@ ht-degree: 68%
 
 1. [为标记创建命名空间](#creating-namespaces)（或选择一个现有的命名空间以重用）。
 1. [创建新标记](#creating-tags)。
-1. [Publish标记](#publishing-tags)。
+1. [发布标记](#publishing-tags)。
 
 ### 创建命名空间 {#creating-namespaces}
 
@@ -134,7 +135,7 @@ ht-degree: 68%
 
 1. 要发布标记，请打开[标记控制台](#tagging-console)。
 
-1. 选择要发布的一个或多个标记，然后在工具栏中选择&#x200B;**Publish**。
+1. 选择要发布的一个或多个标记，然后在工具栏中选择&#x200B;**发布**。
 
    ![在控制台中选择标记](assets/select-tags.png)
 
@@ -380,4 +381,4 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 >[!TIP]
 >
->如果要了解有关AEM本地化功能的更多信息，请参阅[翻译多语言站点的内容](/help/sites-cloud/administering/translation/overview.md)。
+>如果您想了解有关AEM本地化功能的更多信息，请参阅[翻译您的多语言网站内容](/help/sites-cloud/administering/translation/overview.md)。

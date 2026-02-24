@@ -3,12 +3,13 @@ title: Live Copy 概述控制台
 description: 学习 Live Copy 概述控制台的基础知识，以快速了解 Live Copy 的状态以便同步内容。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 99%
 
 ---
 

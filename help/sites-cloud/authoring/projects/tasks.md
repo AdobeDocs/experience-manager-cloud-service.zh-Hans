@@ -1,14 +1,15 @@
 ---
 title: 处理任务
 description: 任务是指要对内容完成的工作项，可在项目中使用任务来确定当前任务的完成程度
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 95%
+source-wordcount: '579'
+ht-degree: 94%
 
 ---
 

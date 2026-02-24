@@ -3,12 +3,13 @@ title: 多站点管理器和翻译
 description: 了解如何在您的项目中重用内容并在 AEM 中管理多语言网站。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 99%
 
 ---
 

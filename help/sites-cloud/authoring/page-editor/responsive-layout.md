@@ -1,13 +1,14 @@
 ---
 title: 响应式布局
-description: AEM允许您使用布局容器组件为页面实现响应式布局。
+description: 通过AEM，您可以使用布局容器组件为页面实现响应式布局。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1795'
 ht-degree: 81%
 
 ---
@@ -143,7 +144,7 @@ AEM 让您根据设备的宽度定义布局：
 
 >[!NOTE]
 >
->如果布局容器&#x200B;**尚不可用，则必须为段落系统/页面[&#128279;](/help/sites-cloud/administering/responsive-layout.md)显式激活**。
+>如果布局容器&#x200B;**尚不可用，则必须为段落系统/页面**&#x200B;显式[激活](/help/sites-cloud/administering/responsive-layout.md)。
 
 1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，之后您可以看到&#x200B;**将组件拖动到此处**&#x200B;占位符。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：
@@ -240,7 +241,7 @@ AEM 让您根据设备的宽度定义布局：
   >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
 
    * **取消隐藏组件**
-选择父组件会显示包含&#x200B;**显示隐藏的组件**&#x200B;选项的操作工具栏。在此示例中，隐藏了两个组件。
+选择父组件会显示包含**显示隐藏的组件**&#x200B;选项的操作工具栏。在此示例中，隐藏了两个组件。
 
      ![取消隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 

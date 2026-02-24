@@ -3,12 +3,13 @@ title: 转出冲突
 description: 了解如何管理和解决多站点管理器转出冲突。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 97%
+source-wordcount: '925'
+ht-degree: 96%
 
 ---
 

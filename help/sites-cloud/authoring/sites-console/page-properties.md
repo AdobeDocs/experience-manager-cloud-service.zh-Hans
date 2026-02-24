@@ -1,14 +1,15 @@
 ---
 title: 页面属性
 description: 了解页面可以具有的不同属性，以及这些属性如何控制页面行为以及如何管理页面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2144'
 ht-degree: 34%
 
 ---
@@ -56,7 +57,7 @@ ht-degree: 34%
 
 ### 品牌化 {#branding}
 
-通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
 
 * **Brand Slug**
 
@@ -175,7 +176,7 @@ ht-degree: 34%
 * **规范URL** — 用于覆盖页面的规范URL
    * 如果留空，则页面的URL是它的规范URL。
 
-* **Robots标记** — 使用下拉菜单选择Robots标记以控制搜索引擎爬网程序的行为
+* **Robots标签** — 使用下拉菜单选择Robots标签，以控制搜索引擎爬虫的行为
    * 有些选项会相互冲突，在这种情况下，以更宽松的选项为准。
 
 * **生成站点地图** — 在选中时，将为此页面及其后代生成`sitemap.xml`。
@@ -212,7 +213,7 @@ ht-degree: 34%
 * **ContextHub 路径** – 定义 [ContextHub 配置](/help/sites-cloud/authoring/personalization/contexthub.md)
 * **区段路径** – 定义[区段路径](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
-### 定位配置 {#targeting-config}
+### 目标选择配置 {#targeting-config}
 
 * **品牌** — 定义[品牌以指定定位的范围](/help/sites-cloud/authoring/personalization/targeted-content.md)
    * 此选项要求用户帐户属于`Target Administrators`组。

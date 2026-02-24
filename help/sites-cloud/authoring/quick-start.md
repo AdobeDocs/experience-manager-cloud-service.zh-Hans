@@ -1,13 +1,14 @@
 ---
 title: 创作快速入门指南
 description: 从此处开始，快速大致了解如何使用站点控制台开始创作内容。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '755'
 ht-degree: 3%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 3%
 
 ![全局导航](assets/getting-started-global-navigation.png)
 
-要从AEM中的任何其他位置访问全局导航，请点按或单击任意AEM屏幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;链接，这会打开全局导航的下拉叠加图。
+要从AEM中的任何其他位置访问全局导航，请点按或单击任何AEM屏幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;链接，这会打开全局导航的下拉叠加图。
 
 进入&#x200B;**站点**&#x200B;控制台后，您的内容将非常易于导航，并且默认情况下会显示在列视图中。
 
@@ -96,11 +97,11 @@ ht-degree: 3%
 
 ## 发布内容 {#publishing}
 
-当您使用&#x200B;**站点**&#x200B;控制台完成针对您的内容进行的更改后，您可以发布该内容。 选择要发布的内容，然后点按或单击工具栏中的&#x200B;**快速Publish**&#x200B;图标。
+当您使用&#x200B;**站点**&#x200B;控制台完成针对您的内容进行的更改后，您可以发布该内容。 选择要发布的内容，然后点按或单击工具栏中的&#x200B;**快速发布**&#x200B;图标。
 
 ![快速发布](assets/getting-started-quick-publish.png)
 
-再次点击或单击对话框中的&#x200B;**Publish**&#x200B;以确认发布。
+再次点击或单击对话框中的&#x200B;**发布**&#x200B;以确认发布。
 
 ## 其他资源 {#additional-resources}
 

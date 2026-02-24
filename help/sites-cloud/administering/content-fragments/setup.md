@@ -3,12 +3,13 @@ title: 内容片段 - 设置
 description: 了解如何启用内容片段和GraphQL的功能以用于AEM Headless投放功能和页面创作。
 feature: Content Fragments
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 92%
+source-wordcount: '408'
+ht-degree: 91%
 
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: 用于 AEM as a Cloud Service 的操作遥测
 description: 了解操作遥测，它是一项允许监控客户端数据收集的自动服务。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1140'
 ht-degree: 1%
 
 ---
@@ -42,7 +43,7 @@ ht-degree: 1%
 * 正在访问的站点的主机名，例如： `experienceleague.adobe.com`
 * 用于显示页面的广泛用户代理类型和操作系统，如： `desktop:windows`或`mobile:ios`
 * 数据收集的时间，如： `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* 正在访问的页面的URL，例如： `https://experienceleague.adobe.com/docs?lang=zh-Hans`
+* 正在访问的页面的URL，例如： `https://experienceleague.adobe.com/docs`
 * 反向链接URL（链接到当前页面的页面的URL，如果用户点击链接）
 * 随机生成的页面视图ID，格式类似于： `2Ac6`
 * 采样速率的加权或反值，如： `100`。 这意味着仅记录一百分之一的页面查看次数

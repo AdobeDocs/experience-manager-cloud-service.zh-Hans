@@ -1,14 +1,15 @@
 ---
 title: Sites 控制台
 description: 了解如何使用站点控制台来管理和组织AEM页面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 45%
+source-wordcount: '1659'
+ht-degree: 46%
 
 ---
 
@@ -82,10 +83,10 @@ ht-degree: 45%
 单击后，显示的选项将适用于控制台/上下文。 最常见的是：
 
 * [页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)
-* [站点](/help/sites-cloud/administering/site-creation/create-site.md)
+* [网站](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
 * [发布](/help/sites-cloud/authoring/launches/overview.md)
-* [语言复制](/help/sites-cloud/administering/translation/overview.md)
+* [语言副本](/help/sites-cloud/administering/translation/overview.md)
 * [CSV 报表](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
 有关这些功能的功能的功能的详细信息，请参阅这些功能的链接。
@@ -264,7 +265,7 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 
 在&#x200B;[**列视图**](/help/sites-cloud/authoring/basic-handling.md#column-view)&#x200B;或&#x200B;[**列表视图**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;中选择页面时，您可以轻松查看该页面所基于的模板。
 
-## AEM的人工智能助手
+## AEM 中的 AI 助手
 
-对于具有[已完成必备条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，其组织的用户可以使用AEM中的AI助手。 查看AEM中的[AI助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
+对于已[满足先决条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客户，AEM 中的 AI 助手可供其组织的用户使用。参见 [AEM 中的 AI 助手](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
 

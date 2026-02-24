@@ -1,13 +1,14 @@
 ---
 title: 了解分段
 description: 分段是创建营销活动时的主要考虑事项
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '542'
 ht-degree: 68%
 
 ---

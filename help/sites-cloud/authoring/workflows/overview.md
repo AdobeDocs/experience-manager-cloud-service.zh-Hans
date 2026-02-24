@@ -1,14 +1,15 @@
 ---
 title: 使用工作流
 description: 通过 AEM 中的工作流，您可以自动完成对页面或资源执行的一系列步骤。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '183'
+ht-degree: 97%
 
 ---
 
@@ -29,5 +30,5 @@ ht-degree: 100%
 
 以下页面包含相关内容：
 
-* [将工作流程应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
-* [参与工作流程](/help/sites-cloud/authoring/workflows/participating.md)
+* [将工作流应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
+* [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)

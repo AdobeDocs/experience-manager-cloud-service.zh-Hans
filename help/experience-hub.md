@@ -6,10 +6,11 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 3de9b674a56a5ad235d0264bdf121fa939859156
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '926'
 ht-degree: 9%
 
 ---
@@ -22,7 +23,7 @@ Experience Hub引入了一个集中化的起点，以便在Adobe Experience Mana
 
 观看重新构建的AEM Experience Hub工作区的快速导览（2分钟40秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475202/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->

@@ -1,14 +1,15 @@
 ---
 title: 个性化和内容定位
 description: 了解如何使用 AEM 创建个性化、有针对性的内容
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 89%
+source-wordcount: '1060'
+ht-degree: 88%
 
 ---
 
@@ -41,13 +42,13 @@ AEM 提供了用于以下情形的工具框架：
 
 ### 提供 {#offer}
 
-优惠是一种个性化的体验，通常在有限的时间内提供。
+产品建议是一种个性化的体验，通常在有限的时间内提供。
 
 例如，示例网站的页面可以使用选件作为在页面顶部显示的Teaser图像。 30岁以上的人和30岁以下的人可以查看不同的优惠作为体验Teaser。
 
 ## 受众 {#audience}
 
-受众是您希望使用个性化内容定位的一组最终用户。 当访问者打开网页时，页面逻辑会根据已知信息确定他们所属的受众。 根据该评估，AEM 会显示您为该受众创建的内容。
+受众是您希望使用个性化内容锁定的一组最终用户。 当访问者打开网页时，页面逻辑会根据已知信息确定他们所属的受众。 根据该评估，AEM 会显示您为该受众创建的内容。
 
 受众基于营销市场细分。 它们是在 AEM 或 Adobe Target 中创建的；您可以使用受众控制台直接在 AEM 中创建 Adobe Target 受众。
 
@@ -67,7 +68,7 @@ AEM 提供了用于以下情形的工具框架：
 
 例如，某项活动可定义针对两类不同受众的体验：30 岁以上的人群和 30 岁以下的人群。 网站页面可能会针对每类受众显示不同的产品。
 
-或者，例如，您的产品目录可能包含关注季节性产品的 Teaser。 因此，夏季体育活动可能定义 Teaser 在夏季月份中定位的受众。
+或者，例如，您的产品目录可能包含关注季节性产品的 Teaser。 因此，夏季体育活动可能定义 Teaser 在夏季月份中锁定的受众。
 
 使用[“活动”控制台](/help/sites-cloud/authoring/personalization/activities.md)可为您的[品牌](#brand)创建和管理活动。 您还可以在使用[定位模式](/help/sites-cloud/authoring/personalization/targeted-content.md)创作[目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)时创建活动。
 
@@ -75,7 +76,7 @@ AEM 提供了用于以下情形的工具框架：
 
 品牌拥有一系列营销活动和区域。
 
-当您使用“活动”控制台创建品牌时，它也会出现在“优惠”控制台中。
+当您使用“活动”控制台创建品牌时，它也会出现在“产品建议”控制台中。
 
 ### 区域 {#area}
 
@@ -136,7 +137,7 @@ AEM 提供了一个内置定位引擎 [ContextHub](/help/implementing/developing
 
 1. 配置受众。
 
-   1. 根据您的定位引擎，定义[目标受众](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=zh-Hans)或者 [ContextHub 区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)，以及规则。
+   1. 根据您的定位引擎，定义[目标受众](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)或者 [ContextHub 区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)，以及规则。
 
 1. 创建您的[品牌与活动](/help/sites-cloud/authoring/personalization/activities.md)。
 

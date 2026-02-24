@@ -1,13 +1,14 @@
 ---
 title: 创建页面
 description: 了解如何使用站点控制台为您的网站创建新页面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 27%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 27%
 
 除非提前为您创建了所有页面，否则必须先创建页面，然后才能开始创建内容：
 
-1. 打开[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。**
+1. 打开[站点&#x200B;**控制台**。](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. 导航到要创建新页面的位置。
 1. 使用工具栏中的&#x200B;**创建**&#x200B;打开下拉选择器，然后从列表中选择&#x200B;**页**：
 
@@ -59,8 +60,8 @@ ht-degree: 27%
    * **名称**：
 
       * 用于生成 URI。如果未指定，名称会从标题派生。
-      * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的约定](/help/implementing/developing/introduction/naming-conventions.md)验证此名称。
-      * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。当AEM检测到无效字符时，该字段会突出显示，并显示说明性消息以指示需要删除/替换的字符。
+      * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/implementing/developing/introduction/naming-conventions.md)验证此名称。
+      * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。当AEM检测到无效字符时，该字段会突出显示，并显示一条说明性消息以指示需要删除/替换的字符。
 
    >[!TIP]
    >
@@ -84,7 +85,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->如果使用相同位置已存在的名称创建页面，则AEM会使用通过附加一个编号而指定的名称的变体来创建该页面。 例如，如果`beach`已存在，则新页面将变为`beach1`。
+>如果您使用同一位置已存在的名称创建页面，AEM会使用通过附加一个编号而指定的名称的变体来创建页面。 例如，如果`beach`已存在，则新页面将变为`beach1`。
 
 >[!CAUTION]
 >

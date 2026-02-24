@@ -1,13 +1,14 @@
 ---
 title: 站点控制台侧面板
 description: 了解如何使用AEM站点控制台中的侧面板，以更好地了解和导航您的内容。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '834'
 ht-degree: 23%
 
 ---
@@ -26,7 +27,7 @@ ht-degree: 23%
 * [内容树](#content-tree)
 * [时间线](#timeline)
 * [引用](#references)
-* [站点](#site)
+* [网站](#site)
 * [过滤器](#filter)
 * [设置 Analytics](#setup-analytics)
 
@@ -106,7 +107,7 @@ ht-degree: 23%
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，提供详细信息和各种操作
 * [语言副本](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)，提供详细信息和各种操作
 
-## 站点 {#site}
+## 网站 {#site}
 
 侧面板的&#x200B;**站点**&#x200B;视图显示使用站点模板[创建的站点](/help/sites-cloud/administering/site-creation/create-site.md)的详细信息。
 

@@ -3,12 +3,13 @@ title: 创建新 Site
 description: 了解管理员如何使用AEM创建站点，并使用站点模板定义站点的样式和结构。
 feature: Administering, Authoring
 role: Admin, User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 solution: Experience Manager Sites
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 67%
+source-wordcount: '131'
+ht-degree: 65%
 
 ---
 

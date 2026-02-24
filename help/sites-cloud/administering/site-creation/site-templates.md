@@ -3,11 +3,12 @@ title: 站点模板
 description: 了解如何使用 AEM 站点模板来预定义站点结构和初始内容，以便您快速创建站点。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '493'
 ht-degree: 86%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 86%
 >
 >不应混淆 AEM 站点模板与 [AEM 站点主题。](site-themes.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM 站点模板定义站点结构和初始内容，并包含 AEM 站点主题，以便[快速创建站点](create-site.md)。
 
-### Adobe提供的站点模板 {#adobe-templates}
+### Adobe 提供的网站模板 {#adobe-templates}
 
 {{adobe-templates}}
 

@@ -1,14 +1,15 @@
 ---
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 89%
+source-wordcount: '1659'
+ht-degree: 88%
 
 ---
 
@@ -215,7 +216,6 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 此文件夹将显示在区段列表中。
    * 您的列排序方式将影响新文件夹在列表中的显示位置。
    * 您可以选择列标题来调整您的排序。
-
      ![新文件夹](../assets/contexthub-folder.png)
 
 ### 修改现有文件夹 {#modify-folders}
@@ -266,10 +266,10 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. 预览页面
 1. 单击 ContextHub 图标以显示 ContextHub 工具栏
-1. 选择与您创建的区段匹配的角色
-1. ContextHub 将为所选角色解析适用的区段
+1. 选择与您创建的区段匹配的用户画像
+1. ContextHub 将为所选用户画像解析适用的区段
 
-例如，用于标识巴塞尔的用户的简单区段定义基于用户的位置。加载符合这些条件的特定角色会显示是否已成功解析该区段：
+例如，用于标识巴塞尔的用户的简单区段定义基于用户的位置。加载符合这些条件的特定用户画像会显示是否已成功解析该区段：
 
 ![解析的区段](../assets/contexthub-segment-resolve.png)
 
@@ -286,8 +286,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 如果您已设置活动和体验，则可使用活动轻松测试您的区段。有关设置活动的详细信息，请参阅[有关创作目标内容的文档。](targeted-content.md)
 
 1. 在已设置目标内容的页面的编辑模式下，您可以看到已通过内容上的箭头图标来目标内容。
-1. 切换到预览模式并使用 ContextHub，切换到与为体验配置的分段不匹配的角色。
-1. 切换到与为体验配置的分段不匹配的角色，并查看体验的相应变化。
+1. 切换到预览模式，并使用 Context Hub 切换到与该体验配置的分段不匹配的用户画像。
+1. 切换到与该体验配置的分段不匹配的用户画像，并查看体验的相应更改。
 
 ## 使用区段 {#using-your-segment}
 

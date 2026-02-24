@@ -1,14 +1,15 @@
 ---
 title: 启用渐进式 Web 应用程序功能
 description: AEM Sites 允许内容作者通过简单的配置而非编码为任何站点启用渐进式 Web 应用程序功能。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1902'
 ht-degree: 93%
 
 ---
@@ -60,7 +61,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Adobe不建议在自定义组件或未[从核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans)扩展的组件上使用PWA功能。
+>Adobe不建议在自定义组件或未[从核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)扩展的组件上使用PWA功能。
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -223,7 +224,7 @@ Adobe 建议您限制要预缓存的页数。
 
 AEM 核心组件的图像组件决定了要获取的前端的最佳演绎版。此机制还包括与该资源的最后修改时间对应的时间戳。此机制使 PWA 预缓存的配置难以理解。
 
-在配置预缓存时，用户必须列出所有可获取的路径变体。这些变体由质量和宽度等参数组成。建议您将这些变体的数量减少到最多三个：小、中、大。可通过[图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hans)的内容策略对话框做到这一点。
+在配置预缓存时，用户必须列出所有可获取的路径变体。这些变体由质量和宽度等参数组成。建议您将这些变体的数量减少到最多三个：小、中、大。可通过[图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)的内容策略对话框做到这一点。
 
 如果不仔细配置，则消耗大量内存和网络资源可能会严重影响 PWA 的性能。此外，如果您打算预缓存比如 50 个图像，并且每个图像有三个宽度，则维护站点的用户不得不在页面属性的 PWA 预缓存部分中维护多达 150 个条目的列表。
 

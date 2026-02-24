@@ -1,13 +1,14 @@
 ---
 title: 使用标记
 description: 标记是用于对网站中的内容进行分类的简单快捷方法
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '566'
 ht-degree: 96%
 
 ---

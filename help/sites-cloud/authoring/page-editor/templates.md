@@ -1,14 +1,15 @@
 ---
 title: 用于创建可使用页面编辑器编辑的页面的模板
 description: 您可以使用模板编辑器创建模板，内容作者可以使用模板创建可通过页面编辑器编辑的页面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4415'
-ht-degree: 80%
+source-wordcount: '4421'
+ht-degree: 79%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->模板 **&#x200B;**&#x200B;编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
+>模板 **** 编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
 
 ## 开始之前 {#before-you-start}
 
@@ -95,7 +96,7 @@ ht-degree: 80%
 >
 >切勿在模板中输入任何必须[国际化](/help/implementing/developing/extending/i18n/dev.md)的信息。
 >
->对于必须本地化的模板元素（如页眉和页脚），请使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)的本地化功能。
+>对于必须本地化的模板元素（如页眉和页脚），请使用核心组件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)本地化功能。
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
@@ -210,7 +211,7 @@ ht-degree: 80%
 
 由于渲染页面时会引用模板，因此必须发布完全配置的模板，才能在发布环境中使用该模板。
 
-使用&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**&#x200B;的Publish模板。
+使用&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**&#x200B;发布模板。
 
 ## 编辑模板 - 模板作者 {#editing-templates-template-authors}
 
@@ -401,11 +402,11 @@ ht-degree: 80%
 
 >[!CAUTION]
 >
->在AEM中，裁剪比例被定义为&#x200B;**高度/宽度**。 这与常见的宽高比的定义不同，这样做是出于对旧版兼容性的考虑。只要您清楚地定义&#x200B;**名称**，页面创作用户便不会察觉到任何差异，因为您定义的名称才是 UI 中显示的内容。
+>在AEM中，裁剪比例被定义为&#x200B;**高宽比**。 这与常见的宽高比的定义不同，这样做是出于对旧版兼容性的考虑。只要您清楚地定义&#x200B;**名称**，页面创作用户便不会察觉到任何差异，因为您定义的名称才是 UI 中显示的内容。
 
 >[!NOTE]
 >
->[&#128279;](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
+>[](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
 
 #### 策略和属性（布局容器） {#policy-and-properties-layout-container}
 
@@ -518,7 +519,7 @@ ht-degree: 80%
 >
 >初始内容用于准备组件和页面布局，这将作为创建内容的起点。初始内容不能作为保持原样的实际内容。因此，无法翻译初始内容。
 >
->如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)。
+>如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 编辑模板 – 布局 – 模板作者 {#editing-a-template-layout-template-author}
 
@@ -647,4 +648,4 @@ ht-degree: 80%
    >在已不再是草稿的模板上更改组件的锁定状态时，AEM 会显示明确的警告消息。
 
 1. 为特定于站点的模板[创建您自己的文件夹](#creating-a-template-folder-admin)。
-1. 从&#x200B;**[模板控制台]**(/help/sites-cloud/administering/templates-console.md)中[Publish您的模板](#publishing-a-template-template-author)。
+1. 从[模板控制台](#publishing-a-template-template-author)发布您的模板&#x200B;**[(/help/sites-cloud/administering/templates-console.md)。]**

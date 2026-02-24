@@ -1,13 +1,14 @@
 ---
 title: 使用 ContextHub 数据预览页面
 description: ContextHub 工具栏显示 ContextHub 存储区中的数据，并允许您更改存储区数据，该工具栏可用于预览内容
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 25%
 
 ---
@@ -45,7 +46,7 @@ ContextHub工具栏在预览模式下可用。 该工具栏仅在创作实例中
 
 UI 模块可以在工具栏中显示一个或多个 ContextHub 存储区中的数据。UI 模块使用图标和标题来标识自身。
 
-![ContextHub 角色](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
+![ContextHub 用户画像](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
 ### 弹出窗口内容 {#popup-content}
 

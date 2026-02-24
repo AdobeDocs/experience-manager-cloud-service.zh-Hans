@@ -1,18 +1,19 @@
 ---
-title: 将工作流程应用于页面
+title: 将工作流应用于页面
 description: 在创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 83%
+source-wordcount: '660'
+ht-degree: 82%
 
 ---
 
-# 将工作流程应用于页面 {#applying-workflows-to-pages}
+# 将工作流应用于页面 {#applying-workflows-to-pages}
 
 在创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 
@@ -53,7 +54,7 @@ ht-degree: 83%
 您可以从以下任一项中启动工作流：
 
 * [“站点”工具栏的“创建”选项](#starting-a-workflow-from-the-sites-toolbar)。
-* [&#x200B; Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
+* [ Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
 
 在这两种情况下，您都必须[在“创建工作流向导”](#specifying-workflow-details-in-the-create-workflow-wizard)中指定工作流详细信息。
 

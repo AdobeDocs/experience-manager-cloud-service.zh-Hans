@@ -3,17 +3,18 @@ title: 站点主题
 description: 了解如何使用AEM站点主题为具有发布交付的传统AEM创作项目自定义站点的样式和设计。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 72%
+source-wordcount: '394'
+ht-degree: 71%
 
 ---
 
 
-# Site 主题 {#site-themes}
+# 站点主题 {#site-themes}
 
 {{traditional-aem}}
 

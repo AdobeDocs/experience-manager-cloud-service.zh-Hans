@@ -1,13 +1,14 @@
 ---
 title: 参与工作流
 description: 工作流通常包括需要人员对页面或资源执行活动的步骤。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1513'
 ht-degree: 78%
 
 ---

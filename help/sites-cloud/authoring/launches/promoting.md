@@ -1,14 +1,15 @@
 ---
 title: 提升启动项
 description: 您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 98%
+source-wordcount: '818'
+ht-degree: 97%
 
 ---
 

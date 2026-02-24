@@ -3,11 +3,12 @@ title: 翻译最佳实践
 description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助您启动和运行翻译项目。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '878'
 ht-degree: 95%
 
 ---

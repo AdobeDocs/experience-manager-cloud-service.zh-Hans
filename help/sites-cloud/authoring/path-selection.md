@@ -1,14 +1,15 @@
 ---
 title: 使用路径浏览器进行路径选择
 description: 了解如何使用路径浏览器在AEM中选择资源。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 47%
+source-wordcount: '328'
+ht-degree: 46%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 47%
 
 ## 路径浏览器 {#path-browser}
 
-路径浏览器的组织方式类似于&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)的[列视图](/help/sites-cloud/authoring/basic-handling.md#column-view)，允许更详细地选择资源。
+路径浏览器的组织方式类似于[站点](/help/sites-cloud/authoring/basic-handling.md#column-view)控制台&#x200B;[**的**&#x200B;列视图](/help/sites-cloud/authoring/sites-console/introduction.md)，允许更详细地选择资源。
 
 ![路径浏览器](/help/sites-cloud/authoring/assets/path-browser.png)
 

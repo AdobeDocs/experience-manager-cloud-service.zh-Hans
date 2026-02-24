@@ -3,11 +3,12 @@ title: 配置翻译集成框架
 description: 了解如何配置翻译集成框架以与第三方翻译服务集成。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1453'
 ht-degree: 69%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 69%
 
 创建用于将AEM连接到您的翻译服务提供商的云配置。
 
-默认情况下，AEM包括[连接到Microsoft® Translator](connect-ms-translator.md)的功能。 在[此处](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)可以找到具有AEM连接器且是Adobe Exchange合作伙伴计划成员的其他翻译技术供应商。
+默认情况下，AEM包括[连接到Microsoft® Translator](connect-ms-translator.md)的功能。 您可在[此处](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)找到具有AEM连接器且是Adobe Exchange合作伙伴计划成员的其他翻译技术供应商。
 
 安装连接器软件包后，即可为连接器创建云配置。通常，您必须提供凭据，以便向翻译服务进行身份验证。 有关为Microsoft® Translator连接器添加云配置的信息，请参阅[与Microsoft® Translator集成](connect-ms-translator.md)。
 
@@ -58,7 +59,7 @@ ht-degree: 69%
 
 只有一个框架配置可控制如何翻译页面内容和资源。要创建翻译配置，请执行以下操作：
 
-1. 在[全局导航菜单](/help/sites-cloud/authoring/basic-handling.md#global-navigation)中，选择&#x200B;**工具>Cloud Service和翻译Cloud Service**。
+1. 在[全局导航菜单](/help/sites-cloud/authoring/basic-handling.md#global-navigation)中，选择&#x200B;**工具>云服务和翻译云服务**。
 1. 在您的内容结构中导航到要创建该配置的位置。这一般为站点专属的位置，但也可为全局位置。
 1. 在字段中提供以下信息，然后选择&#x200B;**创建**。
    1. 在下拉列表中选择&#x200B;**配置类型**。
@@ -98,7 +99,7 @@ ht-degree: 69%
 | 翻译标记 | 激活此属性，以便您能够翻译与资源关联的标记。 |
 | 自动执行翻译 | 选择此属性可在创建翻译项目后自动运行翻译作业。 选择此选项时，无法复查翻译作业或划定其范围。 |
 | 禁用仅更新翻译 | 选中此选项后，更新翻译项目会提交所有可翻译字段以供翻译，而不仅仅是自上次翻译以来更改的字段。 |
-| 为翻译启用内容模型字段 | 启用此选项使用[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段确定是否翻译了该字段，并相应地自动创建[翻译规则](rules.md)。 此选项取代了您可能已创建的任何翻译规则。 |
+| 为翻译启用内容模型字段 | 启用此选项使用&#x200B;**内容片段模型**&#x200B;上的[可翻译](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)字段确定是否翻译了该字段，并相应地自动创建[翻译规则](rules.md)。 此选项取代了您可能已创建的任何翻译规则。 |
 
 ## 配置页面以供翻译 {#configuring-pages-for-translation}
 

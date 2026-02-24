@@ -4,9 +4,11 @@ description: 了解如何通过一系列方法预览您的内容片段。
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
+exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '400'
 ht-degree: 36%
 
 ---

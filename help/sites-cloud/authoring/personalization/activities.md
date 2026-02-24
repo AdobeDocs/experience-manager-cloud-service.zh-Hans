@@ -1,13 +1,14 @@
 ---
 title: 管理活动
 description: 通过“活动”控制台，您可以创建、组织和管理品牌的营销活动
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1964'
 ht-degree: 85%
 
 ---
@@ -42,7 +43,7 @@ ht-degree: 85%
 >
 >* 如果在 AEM 端用于连接到 Adobe Target 的 Adobe Target 租户 (clientcode) 上启用了 `xt_only` 选项，则您&#x200B;**只能**&#x200B;在 AEM 中创建 XT 活动。
 >
->* 如果 Adobe Target 租户 (clientcode) 上&#x200B;**未**&#x200B;启用 `xt_only` 选项，则您可以在 AEM 中创建 **&#x200B;**&#x200B;XT 和 A/B 活动。
+>* 如果 Adobe Target 租户 (clientcode) 上&#x200B;**未**&#x200B;启用 `xt_only` 选项，则您可以在 AEM 中创建 **** XT 和 A/B 活动。
 >
 >**其他注意事项：**`xt_only` 选项是对特定 Target 租户 (clientcode) 应用的设置，只能在 Adobe Target 中直接进行修改。您无法在 AEM 中启用或禁用此选项。
 
@@ -59,7 +60,7 @@ ht-degree: 85%
 
 创建要管理其营销活动的品牌。
 
-使用“活动”控制台创建品牌后，[“选件”控制台](/help/sites-cloud/authoring/personalization/offers.md)（可在此处创建活动体验的选件）中也会出现该品牌。
+使用“活动”控制台创建品牌后，[“产品建议”控制台](/help/sites-cloud/authoring/personalization/offers.md)（可在此处创建活动体验的产品建议）中也会出现该品牌。
 
 1. 在导航控制台中，选择&#x200B;**Personalization**。 选择&#x200B;**活动**。
 
@@ -67,7 +68,7 @@ ht-degree: 85%
 
 1. 在“活动”控制台中，选择&#x200B;**创建**&#x200B;然后&#x200B;**创建品牌**。
 1. 选择品牌模板并选择&#x200B;**下一步**。
-1. 键入您希望品牌在“活动”控制台和“选件”控制台中显示的标题。（可选）键入或选择要与该品牌关联的一个或多个标记。
+1. 键入您希望品牌在“活动”控制台和“产品建议”控制台中显示的标题。（可选）键入或选择要与该品牌关联的一个或多个标记。
 1. 选择&#x200B;**创建**。品牌随即会显示在“活动”控制台中。
 
 ## 使用“活动”控制台添加/编辑活动 {#adding-editing-an-activity-using-the-activities-console}
@@ -143,7 +144,7 @@ ht-degree: 85%
 
    ![从“活动”控制台中发布](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. 要发布，请选择&#x200B;**Publish**。 要取消发布，请选择&#x200B;**取消发布**。 您的活动（一个或多个）随即会被发布或取消发布，并且活动的状态会在“活动”控制台中发生更改（可能需要刷新）。
+1. 要发布，请选择&#x200B;**发布**。 要取消发布，请选择&#x200B;**取消发布**。 您的活动（一个或多个）随即会被发布或取消发布，并且活动的状态会在“活动”控制台中发生更改（可能需要刷新）。
 
 ## 创作和发布实例中的活动 {#activities-on-author-and-publish-instances}
 
@@ -182,8 +183,8 @@ ht-degree: 85%
 使用 Adobe Target 定位引擎的活动会与 Adobe Target 营销活动进行同步。当满足以下条件时，活动会自动同步到 Adobe Target：
 
 * 活动至少包含一个体验。
-* 至少有一个体验包含映射的区段和一个选件。
-* 活动中的每个体验必须具有相同数量的选件。
+* 至少有一个体验包含映射的区段和一个产品建议。
+* 活动中的每个体验必须具有相同数量的产品建议。
 
 上述条件适用于创作和发布实例中的活动。
 

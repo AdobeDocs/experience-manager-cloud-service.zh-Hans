@@ -3,12 +3,13 @@ title: 分析内容片段
 description: 了解内容片段的结构。 这提供了与headless投放和页面创作相关的信息。
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 79%
+source-wordcount: '134'
+ht-degree: 77%
 
 ---
 

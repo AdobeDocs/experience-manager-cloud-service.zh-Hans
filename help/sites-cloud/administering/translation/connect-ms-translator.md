@@ -3,18 +3,19 @@ title: 连接到 Microsoft Translator
 description: 了解如何将 AEM 连接到现成的 Microsoft Translator 以自动化您的翻译工作流。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '299'
 ht-degree: 53%
 
 ---
 
 # 连接到 Microsoft Translator {#connecting-to-microsoft-translator}
 
-AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)提供内置连接器以翻译页面内容或资源。 从Microsoft获取使用Microsoft Translator的许可证后，请按照本页上的说明配置连接器。
+AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)提供了一个内置连接器，用于翻译页面内容或资源。 从Microsoft获取使用Microsoft Translator的许可证后，请按照本页上的说明配置连接器。
 
 >[!TIP]
 >
@@ -29,7 +30,7 @@ AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 
 以下过程将创建 Microsoft Translator 配置。
 
-1. 在[导航面板](/help/sites-cloud/authoring/basic-handling.md#first-steps)中，选择&#x200B;**工具** > **Cloud Service** > **翻译Cloud Service**。
+1. 在[导航面板](/help/sites-cloud/authoring/basic-handling.md#first-steps)中，选择&#x200B;**工具** > **云服务** > **翻译云服务**。
 1. 导航到要创建配置的位置。 通常它在您的站点根中，也可以是全局默认配置。
 1. 选择&#x200B;**创建**&#x200B;按钮。
 1. 定义您的配置。

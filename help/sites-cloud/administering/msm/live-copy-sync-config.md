@@ -3,11 +3,12 @@ title: 配置 Live Copy 同步
 description: 了解可用的强大 Live Copy 同步选项以及如何根据项目需求对这些选项进行配置和自定义。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2420'
 ht-degree: 92%
 
 ---

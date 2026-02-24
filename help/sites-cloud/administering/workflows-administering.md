@@ -3,11 +3,12 @@ title: 管理工作流实例
 description: 了解如何使用工作流控制台管理工作流实例
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1288'
 ht-degree: 90%
 
 ---
@@ -48,7 +49,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=zh-Hans)中的最佳实践。
+   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)中的最佳实践。
 
 ## 搜索工作流实例 {#search-workflow-instances}
 
@@ -112,7 +113,7 @@ ht-degree: 90%
 当工作流失败时，AEM 会提供&#x200B;**故障**&#x200B;控制台，使您能够进行调查，并在找到初始原因后执行适当的操作：
 
 * **失败详细信息**
-打开一个窗口以显示&#x200B;**失败消息**、**步骤和&#x200B;**&#x200B;失败栈栈**。
+打开一个窗口以显示**失败消息**、**步骤和&#x200B;**失败栈栈**。
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。

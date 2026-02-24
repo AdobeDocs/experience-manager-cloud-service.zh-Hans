@@ -4,10 +4,11 @@ description: 了解访问和导航通用编辑器的基础知识。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 20%
 
 ---
@@ -78,7 +79,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 ![Experience Cloud 标题](assets/experience-cloud-header.png)
 
-有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+有关Experience Platform顶部导航栏的详细信息，请参阅[Adobe Experience Platform用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帐户 {#user-properties}
 
@@ -187,7 +188,7 @@ Experience Platform顶部导航栏始终显示在屏幕顶部。 它是一个锚
 
 >[!NOTE]
 >
->可以禁用打开页面按钮[&#128279;](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
+>可以禁用打开页面按钮[](/help/implementing/universal-editor/customizing.md#open-page)，因此该按钮可能不会显示在您的编辑器中。
 
 #### 发布 {#publish}
 

@@ -1,13 +1,14 @@
 ---
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service内容片段允许您设计、创建、策划和使用独立于渠道的内容，这些内容也可在创作页面时使用。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1278'
 ht-degree: 85%
 
 ---
@@ -39,7 +40,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 内容片段允许：
 
@@ -159,7 +160,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您有与[内容片段](/help/assets/content-fragments/content-fragments.md) [关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资源在侧面板（在将片段放置到内容页面后）中可用。关联内容实际上是[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
+如果您有与[内容片段](/help/assets/content-fragments/content-fragments.md)[关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资源在侧面板（在将片段放置到内容页面后）中可用。关联内容实际上是[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
 
 >[!NOTE]
 >

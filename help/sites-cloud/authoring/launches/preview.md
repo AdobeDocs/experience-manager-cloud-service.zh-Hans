@@ -1,14 +1,15 @@
 ---
 title: 使用启动项预览将来的情况
 description: 利用时间扭曲功能，您可以查看基于启动项的内容。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 100%
+source-wordcount: '103'
+ht-degree: 96%
 
 ---
 

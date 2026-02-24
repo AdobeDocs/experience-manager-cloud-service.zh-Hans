@@ -1,13 +1,14 @@
 ---
 title: 使用定位模式创作目标内容
 description: 通过定位模式和 Target 组件，可以创建体验的内容
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '5282'
+source-wordcount: '5288'
 ht-degree: 87%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 87%
 * 选择品牌和活动以查看体验。
 * 将体验添加到活动或删除体验。
 * 执行 A/B 测试并转换入选方（仅限 Adobe Target）。
-* 通过创建选件或使用库中的选件将选件添加到体验。
+* 通过创建产品建议或使用库中的产品建议将产品建议添加到体验。
 * 配置目标并监测业绩。
 * 模拟用户体验。
 * 配置 Target 组件，以进行更多自定义。
@@ -47,7 +48,7 @@ ht-degree: 87%
 
 ![定位内容](../assets/targeted-content.png)
 
-您在定位模式下看到的活动和体验反映了[“活动”控制台](/help/sites-cloud/authoring/personalization/activities.md)中的内容：
+您在锁定模式下看到的活动和体验反映了[“活动”控制台](/help/sites-cloud/authoring/personalization/activities.md)中的内容：
 
 * 使用定位模式对活动和体验所做的更改会反映在“活动”控制台中。
 * 在“活动”控制台中所做的更改也会反映在定位模式中。
@@ -68,7 +69,7 @@ ht-degree: 87%
 
 切换到定位模式可访问用于创作目标内容的工具。
 
-要切换到定位模式，请执行以下操作：
+要切换到锁定模式，请执行以下操作：
 
 1. 打开要在其中创作目标内容的页面。
 1. 在页面顶部的工具栏上，选择模式下拉菜单以显示可用的模式类型。
@@ -122,8 +123,8 @@ ht-degree: 87%
 
 在定位模式下，您可以配置活动的多个方面。请使用下面的三步式流程，为品牌活动创建目标内容：
 
-1. [创建](#create-authoring-the-experiences)：添加或删除体验，并为每个体验添加选件。
-1. [定位](#target-configuring-the-audiences)：指定每个体验所定位的受众。您可以定位特定的受众，而且如果使用 A/B 测试，则还可以决定每个体验的流量百分比。
+1. [创建](#create-authoring-the-experiences)：添加或删除体验，并为每个体验添加产品建议。
+1. [锁定](#target-configuring-the-audiences)：指定每个体验所锁定的受众。您可以锁定特定的受众，而且如果使用 A/B 测试，则还可以决定每个体验的流量百分比。
 1. [目标和设置](#goals-settings-configuring-the-activity-and-setting-goals)：计划活动并设置优先级。您还可以设置成功量度目标。
 
 请使用以下操作过程，启动活动的内容定位流程。
@@ -146,11 +147,11 @@ ht-degree: 87%
 
 ## 创建：创作体验 {#create-authoring-the-experiences}
 
-内容定位的“创建”步骤涉及创建体验。在此步骤中，您可以创建或删除活动体验，并为每个体验添加选件。
+内容定位的“创建”步骤涉及创建体验。在此步骤中，您可以创建或删除活动体验，并为每个体验添加产品建议。
 
-### 在定位模式下查看体验选件 {#seeing-experience-offers-in-targeting-mode}
+### 在定位模式下查看体验产品建议 {#seeing-experience-offers-in-targeting-mode}
 
-[启动定位流程](#the-targeting-process-create-target-and-goals-settings)后，选择某个体验可查看为该体验提供的选件。选择体验后，页面上的目标组件会发生更改，以显示该体验的选件。
+[启动定位流程](#the-targeting-process-create-target-and-goals-settings)后，选择某个体验可查看为该体验提供的产品建议。选择体验后，页面上的目标组件会发生更改，以显示该体验的产品建议。
 
 >[!CAUTION]
 >
@@ -158,33 +159,33 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->选件是目标组件的内容。
+>产品建议是目标组件的内容。
 
-体验显示在“受众”窗格中。在以下示例中，体验包 **括Default**、 **Female**、Female 30 **岁以上的体验和**&#x200B;**&#x200B;** Female 30以下的体验。此示例显示了目标图像组件的默认 **选件** 。
+体验显示在“受众”窗格中。在以下示例中，体验包 **括Default**、 **Female**、Female 30 **岁以上的体验和****** Female 30以下的体验。此示例显示了目标图像组件的默认 **产品建议** 。
 
 ![目标图像组件](../assets/targeted-image-component.png)
 
-选择其他体验后，图像组件会显示该所选体验的选件。
+选择其他体验后，图像组件会显示该所选体验的产品建议。
 
 ![目标图像组件已更改](../assets/targeted-image-different.png)
 
-选择某个体验且目标组件不包含该体验的选件时，该组件会在半透明的默认选件上叠加显示 **添加选件** 。尚未为体验创建选件时，系统会为映射 **到该体验的区段显示** “默认选件”。
+选择某个体验且目标组件不包含该体验的产品建议时，该组件会在半透明的默认产品建议上叠加显示 **添加产品建议** 。尚未为体验创建产品建议时，系统会为映射 **到该体验的区段显示** “默认产品建议”。
 
-![添加选件](../assets/targeted-add-offer.png)
+![添加产品建议](../assets/targeted-add-offer.png)
 
 如果访客属性与映射到体验的任何区段都不匹配，则也会显示默认体验。请参阅[使用定位模式添加体验](#adding-and-removing-experiences-using-targeting-mode)。
 
-### 自定义选件和库选件 {#custom-offers-and-library-offers}
+### 自定义产品建议和库产品建议 {#custom-offers-and-library-offers}
 
-[在页面上创作](#adding-a-custom-offer)的用于单个体验的选件称为自定义选件。以下图像将叠加显示在自定义选件的内容上：
+[在页面上创作](#adding-a-custom-offer)的用于单个体验的产品建议称为自定义产品建议。以下图像将叠加显示在自定义产品建议的内容上：
 
-![“自定义选件”图标](../assets/targeted-custom-offer-icon.png)
+![“自定义产品建议”图标](../assets/targeted-custom-offer-icon.png)
 
-以下图像将叠加显示在[从选件库添加](#adding-an-offer-from-an-offer-library)的选件上：
+以下图像将叠加显示在[从产品建议库添加](#adding-an-offer-from-an-offer-library)的产品建议上：
 
-![“库选件”图标](../assets/targeted-library-offer-icon.png)
+![“库产品建议”图标](../assets/targeted-library-offer-icon.png)
 
-如果您决定要重复使用自定义选件，则可以将其保存到选件库中。如果您想要修改体验的内容，则也可以将库选件转换为自定义选件。编辑后，您可以再次将选件保存回库中。
+如果您决定要重复使用自定义产品建议，则可以将其保存到产品建议库中。如果您想要修改体验的内容，则也可以将库产品建议转换为自定义产品建议。编辑后，您可以再次将产品建议保存回库中。
 
 ### 使用定位模式添加和删除体验 {#adding-and-removing-experiences-using-targeting-mode}
 
@@ -231,29 +232,29 @@ ht-degree: 87%
 1. 单击&#x200B;**复制**，然后选择受众。
 1. 重命名体验（如有需要），然后单击&#x200B;**确定**。
 
-### 使用定位模式创建选件 {#creating-offers-using-targeting-mode}
+### 使用定位模式创建产品建议 {#creating-offers-using-targeting-mode}
 
-可为体验定位组件或创建选件。目标组件所提供的内容将用作体验的选件。
+可为体验锁定组件或创建产品建议。目标组件所提供的内容将用作体验的产品建议。
 
-* [定位现有组件](#creating-a-default-offer-by-targeting-an-existing-component)。内容会成为默认体验的选件。
+* [锁定现有组件](#creating-a-default-offer-by-targeting-an-existing-component)。内容会成为默认体验的产品建议。
 * [添加 Target 组件](#creating-an-offer-by-adding-a-target-component)，然后向该组件中添加内容。
 
-定位某个组件后，您可以为每个体验添加选件：
+定位某个组件后，您可以为每个体验添加产品建议：
 
-* [添加自定义选件](#adding-a-custom-offer)。
-* [添加库选件](#adding-an-offer-from-an-offer-library)。
+* [添加自定义产品建议](#adding-a-custom-offer)。
+* [添加库产品建议](#adding-an-offer-from-an-offer-library)。
 
-可以对选件执行以下操作：
+可以对产品建议执行以下操作：
 
-* [将自定义选件添加到选件库](#adding-a-custom-offer-to-a-library)。
-* [将库选件转换为自定义选件](#converting-a-library-offer-to-a-custom-library)。
-* [打开库选件并编辑其内容](#editing-a-library-offer)。
+* [将自定义产品建议添加到产品建议库](#adding-a-custom-offer-to-a-library)。
+* [将库产品建议转换为自定义产品建议](#converting-a-library-offer-to-a-custom-library)。
+* [打开库产品建议并编辑其内容](#editing-a-library-offer)。
 
-#### 通过定位现有组件创建默认选件 {#creating-a-default-offer-by-targeting-an-existing-component}
+#### 通过定位现有组件创建默认产品建议 {#creating-a-default-offer-by-targeting-an-existing-component}
 
-可定位页面上的某个组件，以将其用作活动默认体验的选件。定位某个组件后，该组件会包含在 Target 组件中，并且其内容会成为默认体验的选件。
+可锁定页面上的某个组件，以将其用作活动默认体验的产品建议。定位某个组件后，该组件会包含在 Target 组件中，并且其内容会成为默认体验的产品建议。
 
-定位某个组件后，只有该组件才能在选件中使用。您无法从选件中删除该组件，也无法将其他组件添加到选件中。
+锁定某个组件后，只有该组件才能在产品建议中使用。您无法从产品建议中删除该组件，也无法将其他组件添加到产品建议中。
 
 [启动定位流程](#the-targeting-process-create-target-and-goals-settings)后，请执行以下操作过程。
 
@@ -263,19 +264,19 @@ ht-degree: 87%
 
 1. 选择Target图标。
 
-   ![“定位”按钮](../assets/targeted-target-button.png)
+   ![“锁定”按钮](../assets/targeted-target-button.png)
 
-   该组件内容随即会成为默认体验的选件。定位某个组件后，其默认节点会被复制到每个体验中。在进行特定于体验的创作时，需要具有此默认节点，才能编辑正确的内容节点。对于默认体验之外的其他体验，可[添加自定义选件](#adding-a-custom-offer)或[添加库选件](#adding-an-offer-from-an-offer-library)。
+   该组件内容随即会成为默认体验的产品建议。定位某个组件后，其默认节点会被复制到每个体验中。在进行特定于体验的创作时，需要具有此默认节点，才能编辑正确的内容节点。对于默认体验之外的其他体验，可[添加自定义产品建议](#adding-a-custom-offer)或[添加库产品建议](#adding-an-offer-from-an-offer-library)。
 
-#### 通过添加 Target 组件创建选件 {#creating-an-offer-by-adding-a-target-component}
+#### 通过添加 Target 组件创建产品建议 {#creating-an-offer-by-adding-a-target-component}
 
-可添加 Target 组件，以创建默认体验的选件。Target 组件是用于存放其他组件的容器，放置在其中的组件会成为目标组件。使用 Target 组件时，可以在其中添加多个组件以创建选件。此外，您还可以在每个体验中使用不同的组件，以创建不同的选件。
+可添加 Target 组件，以创建默认体验的产品建议。Target 组件是用于存放其他组件的容器，放置在其中的组件会成为目标组件。使用 Target 组件时，可以在其中添加多个组件以创建产品建议。此外，您还可以在每个体验中使用不同的组件，以创建不同的产品建议。
 
 有关自定义 Target 组件的信息，请参阅[配置 Target 组件选项](#configuring-target-component-options)。
 
 >[!NOTE]
 >
->使用[“选件”控制台](/help/sites-cloud/authoring/personalization/offers.md)创建的选件也可以包含多个组件。此类选件是库选件，可以在多个体验中使用。
+>使用[“产品建议”控制台](/help/sites-cloud/authoring/personalization/offers.md)创建的产品建议也可以包含多个组件。此类产品建议是库产品建议，可以在多个体验中使用。
 
 由于 Target 组件是一个容器，因此它显示为用于放置其他组件的拖放区域。
 
@@ -297,7 +298,7 @@ ht-degree: 87%
 
 如果编辑目标内容，则必须先选择&#x200B;**开始定位**，然后才能进行编辑。
 
-1. 将 Target 组件拖动到要在其中显示选件的页面。
+1. 将 Target 组件拖动到要在其中显示产品建议的页面。
 1. 默认情况下，不会设置任何位置 ID。选择配置齿轮来设置位置。
 
    >[!NOTE]
@@ -308,26 +309,26 @@ ht-degree: 87%
    >
    >要让用户输入位置，请选中&#x200B;**强制位置**&#x200B;复选框。
 
-1. 选择要为其创建选件的体验。
-1. 创建选件：
+1. 选择要为其创建产品建议的体验。
+1. 创建产品建议：
 
-   * 对于默认体验，请将组件拖动到目标拖放区域，然后按常规方式编辑组件属性以创建选件内容。
-   * 对于默认体验之外的其他体验，请[添加自定义选件](#adding-a-custom-offer)或[添加库选件](#adding-an-offer-from-an-offer-library)。
+   * 对于默认体验，请将组件拖动到目标拖放区域，然后按常规方式编辑组件属性以创建产品建议内容。
+   * 对于默认体验之外的其他体验，请[添加自定义产品建议](#adding-a-custom-offer)或[添加库产品建议](#adding-an-offer-from-an-offer-library)。
 
-#### 添加自定义选件 {#adding-a-custom-offer}
+#### 添加自定义产品建议 {#adding-a-custom-offer}
 
-可通过在定位模式下创作目标组件的内容来创建选件。创建自定义选件时，它会用作单个体验的选件。
+可通过在定位模式下创作目标组件的内容来创建产品建议。创建自定义产品建议时，它会用作单个体验的产品建议。
 
-如果您决定要将选件用于其他体验，则可以先创建自定义选件，然后再[将其添加到库](#adding-a-custom-offer-to-a-library)。有关如何使用“选件”控制台创建可重复使用的选件的信息，请参阅[将选件添加到选件库](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
+如果您决定要将产品建议用于其他体验，则可以先创建自定义产品建议，然后再[将其添加到库](#adding-a-custom-offer-to-a-library)。有关如何使用“产品建议”控制台创建可重复使用的产品建议的信息，请参阅[将产品建议添加到产品建议库](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
 
-1. 选择要添加选件的体验。
+1. 选择要添加产品建议的体验。
 1. 要显示组件菜单，请选择要将选件添加到其中的目标组件。
 
-   ![添加选件](../assets/targeted-component-menu.png)
+   ![添加产品建议](../assets/targeted-component-menu.png)
 
 1. 选择+图标。
 
-   默认选件的内容会用作当前体验的选件。
+   默认产品建议的内容会用作当前体验的产品建议。
 
 1. 选择优惠以显示优惠菜单，然后选择编辑图标。
 
@@ -335,16 +336,16 @@ ht-degree: 87%
 
 1. 编辑组件的内容。
 
-#### 添加选件库中的选件 {#adding-an-offer-from-an-offer-library}
+#### 添加产品建议库中的产品建议 {#adding-an-offer-from-an-offer-library}
 
-可将[选件库](/help/sites-cloud/authoring/personalization/offers.md)中的选件添加到体验。您可以添加当前定位的品牌的库中包含的任何选件。
+可将[产品建议库](/help/sites-cloud/authoring/personalization/offers.md)中的产品建议添加到体验。您可以添加当前定位的品牌的库中包含的任何产品建议。
 
-您不能将库选件添加到默认体验。
+您不能将库产品建议添加到默认体验。
 
-1. 选择要添加选件的体验。
+1. 选择要添加产品建议的体验。
 1. 要显示组件菜单，请选择要将选件添加到其中的目标组件。
 
-   ![目标选件](../assets/targeted-add-offer-large.png)
+   ![目标产品建议](../assets/targeted-add-offer-large.png)
 
 1. 选择文件夹图标。
 
@@ -352,9 +353,9 @@ ht-degree: 87%
 
 1. 从库中选择选件，然后选择复选标记图标。
 
-   ![选件库](../assets/targeted-select-content.png)
+   ![产品建议库](../assets/targeted-select-content.png)
 
-   您可以使用选件选取器浏览或筛选选件。浏览或筛选选件时，您可能还希望对选件进行排序，并更改查看选件的方式。右上方的数字指示当前选件库中可用的选件数量。
+   您可以使用产品建议选取器浏览或筛选产品建议。浏览或筛选产品建议时，您可能还希望对产品建议进行排序，并更改查看产品建议的方式。右上方的数字指示当前产品建议库中可用的产品建议数量。
 
    * 选择&#x200B;**浏览**&#x200B;以导航到其他文件夹。 导航窗格随即会打开，单击箭头可向下浏览文件夹。再次选择&#x200B;**浏览**&#x200B;以关闭导航窗格。
 
@@ -364,7 +365,7 @@ ht-degree: 87%
 
    ![筛选内容](../assets/targeted-filter.png)
 
-   * 单击或点按&#x200B;**最新到最旧**&#x200B;旁边的箭头可更改选件排序方式。可以按“最新到最旧”或“最旧到最新”方式对选件进行排序。
+   * 单击或点按&#x200B;**最新到最旧**&#x200B;旁边的箭头可更改产品建议排序方式。可以按“最新到最旧”或“最旧到最新”方式对产品建议进行排序。
 
    ![筛选条件的排序顺序](../assets/targeted-filter-sort.png)
 
@@ -372,39 +373,39 @@ ht-degree: 87%
 
    ![“查看方式”按钮。](../assets/targeted-view-as-button.png)
 
-#### 将自定义选件添加到库 {#adding-a-custom-offer-to-a-library}
+#### 将自定义产品建议添加到库 {#adding-a-custom-offer-to-a-library}
 
-如果您希望将自定义选件重复用作多个体验的选件，需将其添加到[选件库](/help/sites-cloud/authoring/personalization/offers.md)。您可以将选件添加到当前定位的品牌的库。
+如果您希望将自定义产品建议重复用作多个体验的产品建议，需将其添加到[产品建议库](/help/sites-cloud/authoring/personalization/offers.md)。您可以将产品建议添加到当前定位的品牌的库。
 
-有关如何使用“选件”控制台创建可重复使用的选件的信息，请参阅[将选件添加到选件库](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
+有关如何使用“产品建议”控制台创建可重复使用的产品建议的信息，请参阅[将产品建议添加到产品建议库](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)。
 
-1. 选择体验以显示自定义选件。
+1. 选择体验以显示自定义产品建议。
 1. 选择自定义选件以显示选件菜单，然后选择&#x200B;**将选件保存到选件库**&#x200B;图标。
 
-   ![将选件保存到选件库](../assets/targeted-save-offer-library-button.png)
+   ![将产品建议保存到产品建议库](../assets/targeted-save-offer-library-button.png)
 
 1. 键入选件的名称，选择要将选件添加到其中的库，然后选择复选标记图标。
 
-#### 将库选件转换为自定义选件 {#converting-a-library-offer-to-a-custom-library}
+#### 将库产品建议转换为自定义产品建议 {#converting-a-library-offer-to-a-custom-library}
 
-将库选件转换为自定义选件后，当该选件在当前体验中发生更改时，其他体验中的该选件不会随之更改。
+将库产品建议转换为自定义产品建议后，当该产品建议在当前体验中发生更改时，其他体验中的该产品建议不会随之更改。
 
-1. 选择体验以显示库选件。
+1. 选择体验以显示库产品建议。
 1. 选择库选件以显示选件菜单，然后选择转换为内联选件图标。
 
-   ![转换为内嵌选件](../assets/targeted-convert-inline.png)
+   ![转换为内嵌产品建议](../assets/targeted-convert-inline.png)
 
-#### 编辑库选件 {#editing-a-library-offer}
+#### 编辑库产品建议 {#editing-a-library-offer}
 
-可在定位模式下打开体验中的库选件，以对其进行编辑。使用了该选件的所有体验中都会显示所做的更改。
+可在定位模式下打开体验中的库产品建议，以对其进行编辑。使用了该产品建议的所有体验中都会显示所做的更改。
 
-1. 选择体验以显示库选件。
-1. 将库选件转换为本地/自定义选件。请参阅[将库选件转换为自定义选件](#converting-a-library-offer-to-a-custom-library)。
-1. 编辑选件的内容。
+1. 选择体验以显示库产品建议。
+1. 将库产品建议转换为本地/自定义产品建议。请参阅[将库产品建议转换为自定义产品建议](#converting-a-library-offer-to-a-custom-library)。
+1. 编辑产品建议的内容。
 
-1. 将选件重新保存到库。请参阅[将自定义选件添加到库](#adding-a-custom-offer-to-a-library)。
+1. 将产品建议重新保存到库。请参阅[将自定义产品建议添加到库](#adding-a-custom-offer-to-a-library)。
 
-## 定位：配置受众 {#target-configuring-the-audiences}
+## 锁定：配置受众 {#target-configuring-the-audiences}
 
 [定位流程](#the-targeting-process-create-target-and-goals-settings)的“定位”步骤涉及将受众与您在“创建”步骤中创建的体验进行映射。“定位”页面会显示每个体验所定位的受众。您可以指定或更改每个体验的受众。如果您使用的是 Adobe Target，则还可以创建 A/B 测试，以便将受众的流量百分比定位到特定体验。
 
@@ -456,7 +457,7 @@ ht-degree: 87%
 
 如果使用 AEM 作为定位引擎：
 
-![AEM 用作定位引擎](../assets/targeted-goals.png)
+![AEM 用作锁定引擎](../assets/targeted-goals.png)
 
 如果使用 Adobe Target 作为定位引擎：
 
@@ -470,7 +471,7 @@ ht-degree: 87%
 
 | 量度 | 描述 | 选项 |
 |---|---|---|
-| 转化 | 已单击正在测试的体验的任何部分的访客的百分比。转化可以按每个访客计数一次，也可以在每次访客完成转化时计数一次。转化量度设置为以下项之一 | 查看页面 – 您可以通过选择 URL，然后定义 URL 或多个 URL，或者通过选择 URL 包含，然后添加路径或关键字来定义访问者查看的页面。已查看 mbox – 您可以通过输入 mbox 的名称来定义受众查看的 mbox。您可以通过单击“添加 Mbox”来输入多个 mbox。 |
+| 转化 | 已单击正在测试的体验的任何部分的访客的百分比。转化可以按每个访客计数一次，也可以在每次访客完成转化时计数一次。转化量度设置为以下项之一 | 浏览过页面 – 您可以通过选择 URL 是，然后定义一个或多个 URL，或者通过选择 URL 包含，然后添加路径或关键字来定义访问者浏览过的页面。已查看 mbox – 您可以通过输入 mbox 的名称来定义受众查看的 mbox。您可以通过单击“添加 Mbox”来输入多个 mbox。 |
 | 收入 | 访问产生的收入。您可以从列出的收入量度中进行选择。对于这些选项中的任一选项，是否已查看 mbox 指示是否已达到目标。您可以定义一个或多个 mbox。 | 每位访客产生的收入 (RPV)、平均订单价值 (AOV)、总销售额、订单数 |
 | 参与 | 您可以衡量三种类型的参与 | 页面查看次数、自定义评分、网站停留时间 |
 
@@ -484,7 +485,7 @@ ht-degree: 87%
 | 增量计数、释放用户和允许再次进入 | 选择访客重新进入活动时看到的体验：相同体验、随机体验、未见过的体验 |
 | 增量计数、释放用户和禁止再次进入 | 确定用户看到的内容而非活动内容：相同的体验（无跟踪）、默认内容或其他活动内容 |
 
-有关成功量度的更多信息，请参阅 [Adobe Target 文档。](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=zh-Hans)
+有关成功量度的更多信息，请参阅 [Adobe Target 文档。](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)
 
 ### 配置设置（AEM 定位） {#configuring-settings-aem-targeting}
 
@@ -517,19 +518,19 @@ ht-degree: 87%
    * **指定的日期和时间**：特定的时间。选择此选项时，选择日历图标，选择日期，然后指定活动结束时间。
 
 1. 要指定活动的优先级，请使用滑块选择&#x200B;**低**、**标准**&#x200B;或&#x200B;**高。**
-1. 如果您已使用Adobe Target帐户配置Adobe Analytics，则会显示“报 **告源** ”下拉菜单。选 **择Adobe Target**&#x200B;**或Adobe Analytics** 作为源。
+1. 如果您已使用Adobe Target帐户配置Adobe Analytics，则会显示“报 **告源** ”下拉菜单。选 **择Adobe Target****或Adobe Analytics** 作为源。
 
    如果选择 **Adobe Analytics**，请选择公司和报表包。如果选择 **Adobe Target**，则不需要执行任何操作。
 
    ![报告源](../assets/targeted-reporting-source.png)
 
-1. 在“目 **标量度** ”区域的“我的主要目标 **&#x200B;**&#x200B;”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=zh-Hans) 。
+1. 在“目 **标量度** ”区域的“我的主要目标 **** ”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以通过单击右上角的三个圆点，然后选择&#x200B;**重命名**&#x200B;来重命名目标。
 
    如果需要清除所有字段，请单击右上角的三个圆点，然后选择&#x200B;**清除所有字段**。
 
-   您还可以定义所有量度的高级设置。选择&#x200B;**高级设置**&#x200B;可访问这些设置。请参阅上一个表中的成功量度计数方式的定义以及 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=zh-Hans)。
+   您还可以定义所有量度的高级设置。选择&#x200B;**高级设置**&#x200B;可访问这些设置。请参阅上一个表中的成功量度计数方式的定义以及 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)。
 
    >[!NOTE]
    >
@@ -570,11 +571,11 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->如果您在使用 A/B 测试，模拟体验时会根据流量百分比显示体验。这是由 Adobe Target 来控制的，可能会为作者带来意外的结果。（_author 活动已与允许在模拟过程中重新评估的特定设置进行同步。）根据体验的流量设置，作者可能需要刷新，才能看到其他体验。
+>如果您在使用 A/B 测试，模拟体验时会根据流量百分比显示体验。这是由 Adobe Target 来控制的，可能会为作者带来意外的结果。(创作活动与允许在模拟期间重新评估的特定设置同步(_Author)。) 作者可能需要刷新页面才能根据其流量设置查看其他体验。
 
 要模拟访客的体验，请使用以下工具：
 
-* 定位模式下的模拟活动：该页面显示用于当前在 Context Hub 中选择的用户的选件。您可以编辑以该用户作为目标的选件。
+* 定位模式下的模拟活动：该页面显示用于当前在 Context Hub 中选择的用户的产品建议。您可以编辑以该用户作为目标的产品建议。
 * 预览模式：使用 Context Hub 选择满足体验所基于的区段标准的用户和位置。如果在 Context Hub 中所做的选择发生更改，目标内容也会相应地更改。
 
 1. 要切换到预览模式，请在工具栏上选择&#x200B;**预览**。
@@ -588,7 +589,7 @@ ht-degree: 87%
 
    页面会相应地发生更改，以显示当前上下文的目标内容。
 
-1. 要更改显示的选件，请切换到定位模式。 选择模拟活动后，编辑在预览模式下配置的上下文的选件。
+1. 要更改显示的选件，请切换到定位模式。 选择模拟活动后，编辑在预览模式下配置的上下文的产品建议。
 
 ## 配置 Target 组件选项 {#configuring-target-component-options}
 
@@ -614,7 +615,7 @@ ht-degree: 87%
 
 | 选项 | 描述 |
 |---|---|
-| 位置 | 位置是一个字符串，它为目标内容位置提供一个名称，并将选件与其在页面上的放置位置（或组件）连接起来。此字段是一个通用值。如果您将选件放置在某个组件中，则选件会记住位置 ID。执行页面时，引擎会对用户区段进行评估，并据此解析应显示的活跃营销活动中的体验。然后，引擎会检查页面上的位置 ID，并尝试将选件与其对应的位置 ID 进行匹配。 |
+| 位置 | 位置是一个字符串，它为目标内容位置提供一个名称，并将产品建议与其在页面上的放置位置（或组件）连接起来。此字段是一个通用值。如果您将产品建议放置在某个组件中，则产品建议会记住位置 ID。执行页面时，引擎会对用户区段进行评估，并据此解析应显示的活跃营销活动中的体验。然后，引擎会检查页面上的位置 ID，并尝试将产品建议与其对应的位置 ID 进行匹配。 |
 | 引擎 | 根据您要使用的引擎，在客户端规则（无跟踪）、Adobe Target、ContextHub 和 Adobe Campaign 之间进行选择。 |
 
 如果选择 Adobe Target 作为引擎：

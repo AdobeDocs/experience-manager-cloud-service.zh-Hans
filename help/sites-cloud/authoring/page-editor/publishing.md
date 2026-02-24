@@ -4,13 +4,14 @@ description: 了解页面编辑器如何发布内容。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5871e04d3bd78bdd8df55d42e7619c98ea3f38ca
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
+exl-id: dc11ac02-2a8d-4d82-ae10-e0fb97025063
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '351'
 ht-degree: 50%
 
 ---
-
 
 # 使用站点编辑器发布内容 {#publishing}
 
@@ -59,4 +60,4 @@ ht-degree: 50%
 
 ## 从站点控制台中发布和取消发布 {#publishing-sites-console}
 
-您还可以从站点控制台[&#128279;](/help/sites-cloud/authoring/sites-console/publishing-pages.md)发布，当您希望发布多个内容页面或计划发布或取消发布时，这非常有用。
+您还可以从站点控制台[发布](/help/sites-cloud/authoring/sites-console/publishing-pages.md)，当您希望发布多个内容页面或计划发布或取消发布时，这非常有用。

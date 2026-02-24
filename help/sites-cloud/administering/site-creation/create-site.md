@@ -3,12 +3,13 @@ title: 创建站点
 description: 了解如何使用 AEM 创建站点，并使用站点模板定义站点的样式和结构。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 55%
+source-wordcount: '732'
+ht-degree: 56%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 55%
 >
 >不要将站点模板与[页面模板混淆。](/help/sites-cloud/authoring/page-editor/templates.md)站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
 
-### Adobe提供的站点模板 {#adobe-templates}
+### Adobe 提供的网站模板 {#adobe-templates}
 
 {{adobe-templates}}
 
