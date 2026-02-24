@@ -40,7 +40,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->模板 **** 编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
+>模板 **&#x200B;**&#x200B;编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
 
 ## 开始之前 {#before-you-start}
 
@@ -406,7 +406,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->[](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
+>[&#128279;](/help/implementing/developing/extending/rich-text-editor.md)只能为 RTE 通过其 UI 设置提供的选项定义用于实施富文本编辑器的组件的内容策略。
 
 #### 策略和属性（布局容器） {#policy-and-properties-layout-container}
 

@@ -17,7 +17,7 @@ ht-degree: 96%
 
 [时间扭曲](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp)可用于也包含在启动项中的页面：
 
-1. 在从页面编辑器中选择&#x200B;**时间扭曲**模式时，系统会要求您提供日期。选择启动项提升日期之后的日期：
+1. 在从页面编辑器中选择&#x200B;**时间扭曲**&#x200B;模式时，系统会要求您提供日期。选择启动项提升日期之后的日期：
    ![从页面编辑器中导航启动项](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
 1. 显示与该日期对应的内容：

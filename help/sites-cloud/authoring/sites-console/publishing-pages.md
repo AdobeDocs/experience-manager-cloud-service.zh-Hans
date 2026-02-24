@@ -26,8 +26,8 @@ ht-degree: 73%
 >
 >您可以从站点控制台以外的位置发布。
 >
->* 页面编辑器中的[](/help/sites-cloud/authoring/page-editor/publishing.md)
->* 从通用编辑器[](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* 页面编辑器中的[&#128279;](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* 从通用编辑器[&#128279;](/help/sites-cloud/authoring/universal-editor/publishing.md)
 >* 从体验片段[控制台或编辑器中](/help/sites-cloud/authoring/fragments/experience-fragments.md)
 >
 >从这些位置发布提供了不同的选项，但遵循了此处所述的类似过程和一般想法。
@@ -254,7 +254,7 @@ ht-degree: 73%
 
 您可以确定页面的发布状态：
 
-* 在[ Sites 控制台上的资源概述信息](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)中
+* 在[&#x200B; Sites 控制台上的资源概述信息](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)中
 
   ![信息卡视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
