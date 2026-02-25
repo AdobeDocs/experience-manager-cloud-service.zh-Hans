@@ -4,7 +4,7 @@ description: 了解Brand Experience Agent的通信创建作业以及如何使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 
 
 # 沟通创建技能 {#ic-creation-skill}
+
+<!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
 >[!NOTE]
 >
@@ -69,3 +71,11 @@ ht-degree: 0%
 * *将条款和条件部分的行距更改为1.5*
 
 有关交互式通信编辑器的功能的详细信息，请参阅[交互式通信文档。](/help/forms/introduction-to-interactive-communication.md)
+
+<!-- UNCOMMENT ONCE NO LONGER ALPHA -->
+
+<!--
+## Activation {#activation}
+
+You can explore AEM Agents through the [Playground](https://www.aem.live/developer/aem-playground), or connect with your CSM or TAM to discuss access via the Agentic SKU.
+-->

@@ -4,9 +4,9 @@ description: 了解Brand Experience Agent的内容更新作业及其可为您执
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 内容更新作业可更新现有内容，包括内容片段、页面、表单和资产。 该作业可以执行更新、删除、替换或添加内容元素等操作，以保持体验准确且最新。 输入可以是自然语言描述，在与Jira PDF一起使用时，屏幕截图也可以提供输入。
 
-内容更新作业将您通过自然语言或可视化图表提供的详细信息转换为页面上的内容更新。 您可以提供需要更新的页面的URL，以及需要更新的内容的详细信息，座席技能将完成您的任务。
+内容更新作业将您通过自然语言或可视化图表提供的详细信息转换为页面上的内容更新。 您可以提供需要更新的页面的URL，以及需要更新的内容的详细信息，座席技能将完成您的任务。 与Adobe Experience Manager (AEM) as a Cloud Service一起使用时，该作业会创建一个新的[启动项](/help/sites-cloud/authoring/launches/overview.md)，以便您可以在应用之前查看更新。 当与文档创作一起使用时，作业将创建新的[版本](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)。
 
 ## 功能 {#capabilities}
 
@@ -37,21 +37,40 @@ ht-degree: 2%
 
 ![内容更新作业](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
-### 示例提示 {#sample-prompts}
+### 配置发布URL {#configuring-the-publish-url}
 
-要启动内容更新，您可以提供各种自然语言提示。 您还需要指定要更新的页面的面向公众的URL。 例如：
+要使用发布（面向公众）URL，必须一次性配置：
 
-* 修改以下页面`https://www.your-url.com/sale`将主页标题更新为“黑色星期五特大促销 — 高达70%折扣”，将倒计时计时器更改为“48小时后结束”，删除“注册更新”，将所有“立即购买”按钮更改为“购买优惠”
+* 先决条件：
 
-* `https://www.your-url.com/laptops/your-laptop-model`将横幅副本更新为“仅今天节省300美元”，将定价从1,299美元更新为999美元，删除融资选项横幅
+   * 要进行配置，用户必须具有系统管理员或产品管理员权限。
 
-* `https://www.your-url.com/your-sneaker`将库存状态从“缺货”更新为“补货 — 数量有限”，更改大小选择器以绿色突出显示可用大小，删除“即将推出”徽章
+* 配置：
 
-* `https://www.your-url.com/your-sneaker`更新产品图像以显示新颜色
+   1. 通过请求URL的内容更新来调用内容更新技能。
+   1. 助手将通过询问您一系列问题来引导您完成配置。
+   1. 完成后，发布URL即已配置并可使用。
+
+例如：
+
+![内容更新技能 — 配置发布URL](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+
+### 提示 {#prompts}
+
+要启动内容更新，您可以提供各种自然语言提示。 您需要指定要更新的页面的面向公众的（发布）URL或创作环境URL。 部分（但不是全部）支持的动词；替换、更新、删除、更改、修订、修改、调整、删除。
 
 >[!NOTE]
 >
 >使用[Jira](#jira)进行交互时，可以使用文件上载，但AI Assistant不支持文件上载。
+
+### 示例提示 {#sample-prompts}
+
+示例提示包括：
+
+* 在`<your-publish-URL>`更新中“您的完美咖啡离您还有四个问题！” “你的咖啡，你的方式！”
+* 在`<your-author-env-URL>`上，将图像从“holdingcup.png”替换为“stairhead.png”
+* 在`<your-publish-URL>`上，将“参加我们的咖啡测验”按钮更改为更吸引人的版本
+* 在`<your-author-env-URL>`上删除“未领回的奖励是已错过的礼物！”部分
 
 ## Jira {#jira}
 
@@ -79,17 +98,11 @@ ht-degree: 2%
 
 ### 从您的票证调用作业 {#invoke-the-job-from-your-ticket}
 
-要使用作业，请向票证添加注释。 在注释中，提及带有`@`符号的作业以及应执行的命令；例如：
+要使用作业，请向票证添加注释。 在注释中提及带有`@`符号的作业以及说明。
 
-* `@aemagent@adobe.com process`
+例如：
 
-目前，该作业可以理解以下命令：
-
-* `process` — 处理请求
-* `cancel` — 取消处理请求
-* `retry` — 重新处理请求
-* `feedback` — 将反馈应用于上一代
-* `reprocess` — 重新处理原始请求
+* `@aemagent@adobe.com process this ticket`
 
 ### 工作如何交互 {#how-the-agent-interacts}
 
@@ -109,34 +122,7 @@ ht-degree: 2%
 
 ## 激活 {#activation}
 
-要激活并访问通信创建作业，您需要联系Adobe。 要开始配置，您可以：
-
-* 联系人`experience-production-agent@adobe.com`
-* 或与您的客户团队联系
-
-为了加快该过程，提供以下信息会很有帮助：
-
-* 对于AEM as a Cloud Service，您需要提供：
-   * 组织 ID
-   * `product_id`
-   * `profile_id`
-
-   * 可以按照以下步骤找到这些值：
-      1. 您的管理员需要访问[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)
-      1. 选择&#x200B;**Adobe Experience Manager as a Cloud Service**
-      1. 选择适当的AEM实例
-      1. 选择允许对相关内容执行读写操作的配置文件
-      1. 获取浏览器URL
-      1. 从URL提取`product_id`和`profile_id`。
-例如，`https://adminconsole.adobe.com/products/profiles/users`
-
-* Edge Delivery文档创作
-   * 向您的Adobe团队提供以下信息：
-      * 相关域
-      * 相关Github信息：
-         * 组织
-         * 存储库
-         * 分支
+您可以通过[游乐场](https://www.aem.live/developer/aem-playground)探索AEM代理，或与您的CSM或TAM联系，讨论通过代理SKU进行访问的问题。
 
 ## 限制 {#limitations}
 
