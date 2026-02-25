@@ -3,7 +3,8 @@ title: 治理代理概述
 description: 了解AEM治理代理如何跨AEM保护品牌完整性和合规性
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 9b26cd1f30ad6fa23e28c9f36fe48091e069962e
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
+source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -72,4 +73,3 @@ ht-degree: 0%
 * *哪些资产最近过期？*
 * *查找没有到期日期的资源*
 * *显示/content/dam/products中将在未来14天内过期的所有资产*
-
