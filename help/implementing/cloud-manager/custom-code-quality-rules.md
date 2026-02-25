@@ -5,9 +5,9 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
+source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
 workflow-type: tm+mt
-source-wordcount: '4427'
+source-wordcount: '4441'
 ht-degree: 63%
 
 ---
@@ -519,9 +519,11 @@ public void doThis(Resource resource) {
 * **严重性**： Info、Minor或Major
 * **开始版本**：版本 2026.1.0
 
-Experience Manager API接口正在不断修订，以识别需要停止使用的API。 此类API已弃用，并标有移除日期。
+Experience Manager API接口正在不断修订，以识别需要停止使用的API。 这些API已弃用，并标有移除日期。
 
 移除日期越近，违反此规则的严重性越高。 必须以安全的替代方案取代此类API的使用。
+
+请参考[本文](/help/release-notes/deprecated-removed-features.md#aem-apis)以获取有关如何删除已弃用API的使用的指导。
 
 ### 不要使用 Experience Manager 弃用的 API {#sonarqube-aem-deprecated}
 
@@ -847,7 +849,7 @@ Experience Manager 现代化工具文档提供了有关如何将组件从经典 
 >
 >规则[客户包不应在libs](#oakpal-customer-package)下创建或修改节点。
 
-有关更多详细信息，请参阅[&#x200B; Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+有关更多详细信息，请参阅[ Experience Manager 项目结构。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ### 不应使用反向复制代理 {#oakpal-reverse-replication}
 
