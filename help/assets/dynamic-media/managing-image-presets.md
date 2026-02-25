@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: c07c1f7e412e0c68338121d49781e33356f6c640
+source-git-commit: 012ce93f65d26d7f59fc874d1b225fbd458cf098
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2598'
 ht-degree: 6%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 6%
 
 ### AEM as a Cloud Service中的演绎版生成{#rendition-generation-in-aemaacs}
 
-在AEM as a Cloud Service中，使用[资源微服务](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)生成节目。 DAM更新资产工作流无法在Cloud Service中进行自定义。
+在AEM as a Cloud Service中，使用[资源微服务](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)生成节目。 DAM更新资产工作流无法在Cloud Service中进行自定义。
 
 重要注意事项包括：
 
@@ -72,7 +72,7 @@ ht-degree: 6%
 
 **若要控制生成哪些演绎版：**
 
-1. 创建或编辑[处理配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)。
+1. 创建或编辑[处理配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)。
 2. 配置所需的演绎版定义。
 3. 将处理配置文件应用到相应的文件夹。
 
@@ -191,7 +191,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 -->
 
-### 增加或减少显示的图像预设数 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+## 增加或减少显示的图像预设数 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 在预览资产时，您创建的图像预设可用作动态演绎版。 从&#x200B;**[!UICONTROL 详细信息视图>呈现版本]**&#x200B;查看资源时，Experience Manager会显示各种动态呈现版本。 您可以增加或减少显示的演绎版限制。
 
@@ -210,7 +210,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. 在limit属性中，将数字更改为所需的数字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 选择&#x200B;**[!UICONTROL 全部保存]**。
 
-### 创建图像预设 {#creating-image-presets}
+## 创建图像预设 {#creating-image-presets}
 
 创建图像预设，以便在预览或发布图像时以一致的方式应用设置。
 
@@ -243,7 +243,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-### 创建响应式图像预设 {#creating-a-responsive-image-preset}
+## 创建响应式图像预设 {#creating-a-responsive-image-preset}
 
 要创建响应式图像预设，请执行[创建图像预设](#creating-image-presets)中的步骤。 在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请擦除值并将其留空。
 
@@ -267,7 +267,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 * **[!UICONTROL 锐化：重新取样模式]** — 选择&#x200B;**[!UICONTROL 锐化2]**。
 
-#### 基本选项卡选项 {#basic-tab-options}
+### 基本选项卡选项 {#basic-tab-options}
 
 | 字段 | 描述 |
 | --- | --- |
@@ -276,7 +276,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 | **格式** | 从菜单中选择一种格式。<br>选择&#x200B;**JPEG**&#x200B;可提供以下其他选项：<br>· **质量** - JPEG质量范围为1-100。 拖动滑块时，比例可见。<br>· **启用JPG色度缩减像素采样** — 由于眼睛对高频颜色信息的敏感性低于高频亮度，因此JPEG图像将图像信息划分为亮度和颜色分量。 当JPEG图像被压缩时，亮度分量以全分辨率保留，而颜色分量通过平均像素组而被缩减采样。 缩减取样会将数据量减少到一半或三分之一，而且对感知质量的影响最小。 缩减像素取样不适用于灰度图像。 此技术可减少可用于高对比度（例如，具有叠加文本的图像）的压缩量。<br><br>选择&#x200B;**GIF**&#x200B;或&#x200B;**带有Alpha的GIF**&#x200B;可提供这些额外的&#x200B;**GIF颜色量化**&#x200B;选项：<br>· **类型** — 选择&#x200B;**自适应**（默认值）、**Web**&#x200B;或&#x200B;**Macintosh**。 如果选择&#x200B;**GIF与Alpha**，则Macintosh选项不可用。<br>· **Dither** — 选择&#x200B;**扩散**&#x200B;或&#x200B;**关闭**。<br>· **颜色数** — 输入数字2 - 256。<br>· **颜色列表** — 输入逗号分隔的列表。 例如，对于白色、灰色和黑色，输入`000000,888888,ffffff`。<br><br>选择&#x200B;**PDF**、**TIFF**&#x200B;或带有Alpha **的** TIFF提供了此附加选项：<br>· **压缩** — 选择压缩算法。 PDF的算法选项为&#x200B;**None**、**Zip**&#x200B;和&#x200B;**Jpeg**；对于TIFF，这些选项为&#x200B;**None**、**LZW**、**Jpeg**&#x200B;和&#x200B;**Zip**；对于TIFF和Alpha，这些选项为&#x200B;**None**、**LZW**&#x200B;和&#x200B;**Zip**。<br><br>选择&#x200B;**PNG**、Alpha的&#x200B;**PNG**&#x200B;或&#x200B;**EPS**&#x200B;不提供其他选项。 |
 | **锐化** | 选择&#x200B;**启用简单锐化**&#x200B;可在执行所有缩放操作后将基本锐化滤镜应用于图像。 锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 |
 
-#### 高级选项卡选项 {#advanced-tab-options}
+### 高级选项卡选项 {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -326,7 +326,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
     </ul>
     <div>
       中介绍了锐化
-     <a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">在Experience Manager Dynamic Media中使用图像锐化</a>视频、<a href="https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">锐化图像</a>联机帮助主题以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=zh-Hans">在Dynamic Media Classic中锐化图像的最佳实践</a>可下载的PDF。
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">在Experience Manager Dynamic Media中使用图像锐化</a>视频、<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">锐化图像</a>联机帮助主题以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">在Dynamic Media Classic中锐化图像的最佳实践</a>可下载的PDF。
     </div> </td>
   </tr>
   <tr>
@@ -346,7 +346,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
-   <td><p>除了UI中可用的常见图像设置之外，Dynamic Media还支持您可以在<strong>图像修饰符</strong>字段中指定的大量高级图像修改。 这些参数在<a href="https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">图像服务器协议命令引用</a>中定义。</p> <p>重要信息：不支持API中列出的以下功能：</p>
+   <td><p>除了UI中可用的常见图像设置之外，Dynamic Media还支持您可以在<strong>图像修饰符</strong>字段中指定的大量高级图像修改。 这些参数在<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">图像服务器协议命令引用</a>中定义。</p> <p>重要信息：不支持API中列出的以下功能：</p>
     <ul>
      <li>基本模板化和文本渲染命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code>和 <code>req=xlate</code></li>
@@ -361,9 +361,9 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
  </tbody>
 </table>
 
-### 使用图像修饰符定义图像预设选项 {#defining-image-preset-options-with-image-modifiers}
+## 使用图像修饰符定义图像预设选项 {#defining-image-preset-options-with-image-modifiers}
 
-除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖于Dynamic Media图像渲染API，并在[HTTP协议引用](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中详细定义。
+除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖于Dynamic Media图像渲染API，并在[HTTP协议引用](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中详细定义。
 
 以下是一些使用图像修饰符可以执行操作的基本示例。
 
@@ -371,7 +371,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 >
 >某些图像修饰符[不能在Experience Manager](#advanced-tab-options)中使用。
 
-* [op_invert](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) — 反转每个颜色组件以获得负图像效果。
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) — 反转每个颜色组件以获得负图像效果。
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -379,7 +379,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) — 将模糊滤镜应用于图像。
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) — 将模糊滤镜应用于图像。
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -395,7 +395,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) — 降低或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) — 降低或增加亮度。
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -403,7 +403,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) — 调整图像不透明度。 用于降低前景不透明度。
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) — 调整图像不透明度。 用于降低前景不透明度。
 
   ```xml {.line-numbers}
   opac=29
@@ -411,7 +411,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### 编辑图像预设 {#modifying-image-presets}
+## 编辑图像预设 {#modifying-image-presets}
 
 1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**。
 
@@ -420,11 +420,11 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. 选择预设，然后选择&#x200B;**[!UICONTROL 编辑]**。 将打开&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口。
 1. 进行更改并选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您的更改，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消您的更改。
 
-### 发布图像预设 {#publishing-image-presets}
+## 发布图像预设 {#publishing-image-presets}
 
 系统会自动为您发布图像预设。
 
-### 删除图像预设 {#deleting-image-presets}
+## 删除图像预设 {#deleting-image-presets}
 
 1. 在Experience Manager中，选择Experience Manager徽标以访问全局导航控制台，然后选择工具图标。
 1. 导航到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 图像预设]**。
