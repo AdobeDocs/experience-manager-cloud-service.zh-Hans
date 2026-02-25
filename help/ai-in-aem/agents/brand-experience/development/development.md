@@ -32,7 +32,7 @@ ht-degree: 1%
 
 要访问此作业，请参阅[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)获取有关如何注册Beta计划的说明，并确保表明您对开发作业的兴趣。 您还可以通过电子邮件将开发作业特定的反馈发送至[aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[观看教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
+[观看教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
 
 ## 通过Cloud Manager访问开发作业 {#how-to-access-the-job}
 
