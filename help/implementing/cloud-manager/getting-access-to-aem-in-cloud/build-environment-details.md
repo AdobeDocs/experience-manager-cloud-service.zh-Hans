@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: 5cdfdd401293873d13a85d5eb42c18ab2d0b3be3
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 29%
@@ -139,7 +139,7 @@ AEM Cloud Service SDK支持Java 21，并允许您在运行Cloud Manager管道之
   版本7或更高版本与Java 11或更低版本不兼容，因此不建议升级到该版本。
 
 * **最低版本`aemanalyser-maven-plugin`：**
-将`aemanalyser-maven-plugin`的使用更新到版本1.6.6或更高版本，以确保支持较新的JVM运行时。
+将`aemanalyser-maven-plugin`的使用更新到版本1.6.16或更高版本，以确保支持较新的JVM运行时。
 
 * **最低版本`maven-bundle-plugin`：**
 将`maven-bundle-plugin`的使用更新到版本5.1.5或更高版本，以确保支持较新的JVM运行时。
