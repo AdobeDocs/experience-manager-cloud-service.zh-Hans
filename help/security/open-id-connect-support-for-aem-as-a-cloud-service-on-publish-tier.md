@@ -4,10 +4,10 @@ description: 了解如何在发布层上为 AEM as a Cloud Service 设置 Open I
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
+source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 71%
+source-wordcount: '2153'
+ht-degree: 66%
 
 ---
 
@@ -115,7 +115,7 @@ IdP 配置中的信息：
 
 ### 配置 SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 
-1. 创建配置文件。在此例中，我们将使用 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`。`azure` 后缀必须是唯一的标识符。请参阅下面的配置文件示例：
+1. 创建配置文件。在此例中，我们将使用 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json`。`azure` 后缀必须是唯一的标识符。请参阅下面的配置文件示例：
 
    ```
    {
@@ -208,12 +208,14 @@ IdP 配置中的信息：
 ### 选项1 — 本地组
 
 可以将外部组添加为已具有所需ACL的本地组的成员。
+
 * 外部组必须存在于存储库中，当属于该组的用户首次登录时，会自动发生这种情况。
 * 当使用封闭用户组(CUG)时，此选项通常为首选，因为创作和发布环境中都存在本地组。
 
 ### 选项2 — 通过RepoInit对外部组进行直接ACL
 
 ACL可以使用RepoInit脚本直接应用于外部组。
+
 * 这种方法更有效，并且在不使用CUG时更可取。
 * 以下示例显示了一个向外部组分配读取权限的RepoInit配置。 选项`ignoreMissingPrincipal`允许创建ACL，即使存储库中不存在该组：
 
@@ -352,14 +354,58 @@ ACL可以使用RepoInit脚本直接应用于外部组。
 }
 ```
 
+## 身份验证后的自定义重定向 {#custom-redirect-after-authentication}
+
+默认情况下，在成功进行OIDC身份验证后，会将用户重定向回最初请求的URL。 但是，您可以使用`redirect`查询参数自定义此行为。
+
+### 使用重定向参数
+
+在启动身份验证时，可以通过将`redirect`参数添加到身份验证请求来指定自定义重定向URL：
+
+```
+/content/wknd/us/en/adventures?redirect=/content/wknd/us/en/welcome
+```
+
+在此示例中，在成功进行身份验证后，用户将被重定向到`/content/wknd/us/en/welcome`，而不是最初请求的页面。
+
+### 安全约束
+
+出于安全原因，`redirect`参数具有以下限制：
+
+* **必须为相对路径**：重定向URL必须以`/`开头（例如`/content/mysite/dashboard`）
+* **没有跨站点重定向**：不允许绝对URL（例如，`https://external-site.com`）
+* **没有协议相对URL**：拒绝以`//`开头的URL，以防止协议相对重定向
+
+如果提供的重定向URL无效，则身份验证将失败并出现错误。
+
+### 示例用例
+
+1. 登录后&#x200B;**欢迎页面**：将用户首次登录后重定向到个性化的欢迎页面
+
+   ```
+   /content/mysite/secure-area?redirect=/content/mysite/welcome
+   ```
+
+2. **仪表板重定向**：身份验证后，将用户定向到特定仪表板
+
+   ```
+   /content/mysite/login?redirect=/content/mysite/user/dashboard
+   ```
+
+3. **深层链接**：允许用户进行身份验证，然后访问特定资源
+
+   ```
+   /content/mysite/protected?redirect=/content/mysite/protected/specific-document
+   ```
+
 ## 如何从Saml身份验证处理程序迁移到Oidc身份验证处理程序
 
-如果AEM已配置SAML身份验证处理程序，并且存储库中存在启用了[数据同步](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的用户，则原始SAML用户与新OIDC用户之间可能会发生冲突。
+如果AEM已配置SAML身份验证处理程序，并且存储库中存在启用了[数据同步](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的用户，则原始SAML用户与新OIDC用户之间可能会发生冲突。
 
 1. 在[SlingUserInfoProcessor](#configure-oidc-authentication-handler)配置中配置`idpNameInPrincipals`OidcAuthenticationHandler[并启用](#configure-slinguserinfoprocessor)
 1. 为外部组[设置](#configure-acl-for-external-groups)ACL。
 1. 从用户登录后，可以删除由saml身份验证处理程序创建的旧用户。
 
 >[!NOTE]
->在禁用SAML身份验证处理程序并启用OIDC身份验证处理程序后，如果未启用[数据同步](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，则现有会话将无效。 用户需要再次进行身份验证，这会导致在存储库中创建新的OIDC用户节点。
+>在禁用SAML身份验证处理程序并启用OIDC身份验证处理程序后，如果未启用[数据同步](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，则现有会话将无效。 用户需要再次进行身份验证，这会导致在存储库中创建新的OIDC用户节点。
 
