@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7e330f996e6726e4284b4cc168881f5eec3da5b4
+source-git-commit: 940fc779feb4b042a54b4ac5758377812df64537
 workflow-type: tm+mt
-source-wordcount: '3918'
-ht-degree: 79%
+source-wordcount: '4040'
+ht-degree: 76%
 
 ---
 
@@ -31,12 +31,12 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 >[!IMPORTANT]
 >
->多个[已弃用的API](#aem-apis)的目标删除日期为&#x200B;**2026年2月26日**。 请查看以下关键日期和影响：
+>多个[已弃用的API](#aem-apis)将于2026年5月4日&#x200B;**删除**。 请查看以下关键日期和影响：
 >
->* **从2026年1月26日开始**：操作中心通知电子邮件将在每个环境&#x200B;**每周发送**&#x200B;以提醒删除这些API的使用情况。
->* **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。
->* **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**，**阻止新代码的部署**，直到移除该使用为止。
->* **2026年4月30日**：仍在使用这些API的环境可能&#x200B;**不再接收关键的Adobe版本更新**。
+>* **从2026年1月26日开始**：操作中心通知电子邮件将作为提醒发送，以删除这些API的使用情况。
+>* **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。 *这可能会降低验证和发布代码更改的能力。*
+>* **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**。 在删除已弃用的API用法之前，将阻止部署。 *这可能会阻止您发布时效性更新，并可能影响您的业务运营。*
+>* **2026年5月4日**：仍在使用已弃用API的环境&#x200B;**将不会收到关键的Adobe版本更新**，并且不受Adobe有关性能和可用性的标准承诺的约束。 因此，您将不会收到新功能或错误修复，应用程序的稳定性和正常运行时间可能会受到负面影响，并且安全风险敞口可能会进一步增加。
 >
 >要防止部署块，请在2026年3月30日之前删除API用法。
 
@@ -86,15 +86,15 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 下表中的 API（点击展开即可查看）已被宣布为已弃用，但尚未被移除。  在目标移除日期之前，必须停止使用这些 API，否则可能会面临性能、可用性和安全方面的问题。一些 API 参考了下面的 API 移除指南部分。
 
 >[!IMPORTANT]
-> 多个API计划于&#x200B;**2026年2月26日**&#x200B;删除。 请查看以下关键日期和影响：
 >
-> * **从2026年1月26日开始**：操作中心通知电子邮件将在每个环境&#x200B;**每周发送**&#x200B;以提醒删除这些API的使用情况。
-> * **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。
-> * **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**，**阻止新代码的部署**，直到移除该使用为止。
-> * **2026年5月4日**：仍在使用这些API的环境可能&#x200B;**不再接收关键的Adobe版本更新**。
+>多个[已弃用的API](#aem-apis)将于2026年5月4日&#x200B;**删除**。 请查看以下关键日期和影响：
 >
-> 要防止部署块，请在2026年3月30日之前删除API用法。
-
+>* **从2026年1月26日开始**：操作中心通知电子邮件将作为提醒发送，以删除这些API的使用情况。
+>* **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。 *这可能会降低验证和发布代码更改的能力。*
+>* **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**。 在删除已弃用的API用法之前，将阻止部署。 *这可能会阻止您发布时效性更新，并可能影响您的业务运营。*
+>* **2026年5月4日**：仍在使用已弃用API的环境&#x200B;**将不会收到关键的Adobe版本更新**，并且不受Adobe有关性能和可用性的标准承诺的约束。 因此，您将不会收到新功能或错误修复，应用程序的稳定性和正常运行时间可能会受到负面影响，并且安全风险敞口可能会进一步增加。
+>
+>要防止部署块，请在2026年3月30日之前删除API用法。
 
 <details>
   <summary>展开以查看已弃用的 API 的列表。</summary>
@@ -374,7 +374,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 本节反映了上表中各种 API 的 API 移除指南。
 
-要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
+要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
 
 虽然您应该随着时间的推移修正所有已弃用的API，但请优先处理“已弃用的API”表中列出的目标删除日期为2026年2月26日（或更早日期）的任何API。 在AEM Analyzer报表中，这些API可能会显示，有效删除日期为2025年8月31日。
 
