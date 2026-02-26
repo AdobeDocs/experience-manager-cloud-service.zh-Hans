@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.02.19发行说明
-description: 这些是通用编辑器2026.02.19版的发行说明。
+title: 通用编辑器2026.02.26发行说明
+description: 这些是通用编辑器2026.02.26版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 23%
+source-wordcount: '221'
+ht-degree: 27%
 
 ---
 
 
-# 通用编辑器2026.02.19发行说明 {#release-notes}
+# 通用编辑器2026.02.26发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 2 月 19 日版本的发行说明。
+这些是通用编辑器 2026 年 2 月 26 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,14 +26,9 @@ ht-degree: 23%
 
 ## 新增功能 {#what-is-new}
 
-* 已对RTE进行改进。
-   * [现在支持在上下文RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options)中隐藏工具栏项。
-   * [现在支持在带有段落](/help/implementing/universal-editor/configure-rte.md#table-actions)的表内环绕文本。
-   * [不支持的HTML标记](/help/implementing/universal-editor/configure-rte.md#unsupported-html)现在可以由RTE保留。
-   * 现在，可从单独的文件提供RTE逻辑。
-   * 现在可以使用RTE创建[表](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)并进行良好编辑。
-* 如果未设置标签，则现在使用组件定义中的组件标题。
-* `setEditorMode`现在可通过扩展使用。
+* 在所有架构字段中添加了描述，以帮助开发人员生成模型/筛选器/组件定义文件。
+* 现在支持对内容片段进行多字段更新以进行上下文内编辑。
+
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -43,7 +38,7 @@ ht-degree: 23%
 
 ## 其他改进 {#other-improvements}
 
-* RTE端点现在可用于就地编辑器。
-* 编辑嵌套字段不再导致从这些结构覆盖对等条目。
-* 必填RTE字段无法再保存为空。
-* 在设置格式后添加链接时，不再错误地应用就地格式。
+* 在内容到达之前，编辑器不再将内容默认为`{}`，从而防止在某些情况下数据丢失。
+* 字段成为焦点时数据的持久性变得更强。
+* 在左侧面板中进行编辑，然后在编辑器窗口中选择其他项目时，在某些情况下，更改不再丢失。
+* 修复了使用OpenAPI端点时内容片段的RTE字段存在的持久性问题。
