@@ -154,7 +154,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ![预览Dynamic Media呈现版本](assets/native-express-dynamic-media-preview.png)
 
-单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter将转换实时应用于节目。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 将资源从预览拖放到画布上。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
+单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter将转换实时应用于节目。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 将资源从预览拖放到画布上。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
 
 >[!IMPORTANT]
 > 
@@ -250,7 +250,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ## 支持的文件格式 {#supported-file-formats-import-assets}
 
-Adobe Express本机支持[上可用的格式。请查看最低图像要求](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 但是，AEM Assets支持以下格式类型：
+Adobe Express本机支持[上可用的格式。请查看最低图像要求](https://helpx.adobe.com/cn/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 但是，AEM Assets支持以下格式类型：
 
 | 支持的格式 | 最大尺寸/分辨率 | 最大文件大小 |
 |------------------|---------------------------------------------|---------------|
