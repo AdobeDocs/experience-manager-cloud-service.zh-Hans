@@ -4,10 +4,10 @@ description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
+source-git-commit: 6b4c4b92bb726da2f7222dfa0e223aa3d0309c8f
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 49%
+source-wordcount: '164'
+ht-degree: 50%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 49%
 
 ## 即将推出的功能 {#upcoming-features}
 
-* 现在，上下文菜单中提供了组件选取器。
+* 组件选取器具有新设计。
 * RTE的拾色器现已可用。
 
 ## 即将推出的改进 {#upcoming-improvements}
