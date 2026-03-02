@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 940fc779feb4b042a54b4ac5758377812df64537
+source-git-commit: 608f8d11499579f3f22bcf9b2f0b79699509021f
 workflow-type: tm+mt
-source-wordcount: '4040'
-ht-degree: 76%
+source-wordcount: '4163'
+ht-degree: 74%
 
 ---
 
@@ -374,7 +374,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 本节反映了上表中各种 API 的 API 移除指南。
 
-要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
+要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
 
 虽然您应该随着时间的推移修正所有已弃用的API，但请优先处理“已弃用的API”表中列出的目标删除日期为2026年2月26日（或更早日期）的任何API。 在AEM Analyzer报表中，这些API可能会显示，有效删除日期为2025年8月31日。
 
@@ -383,6 +383,8 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 ### 一般准则
 
 如果您使用当前需要已弃用API的第三方库，请尝试更新到该第三方库的更新版本。
+
+如果您决定部署自己的已弃用API版本（例如您自己的Guava版本），请确保所有使用此API的捆绑包都将连接到您的版本。 如果您决定部署当前包含在Cloud Service中的相同主版本，则无需执行进一步操作。 但是，如果您按照建议操作并部署最新版本，则需要调整您的Maven项目，在`aem-sdk-api`之前包含该库作为新依赖项。 这样，您的代码将连接到新版本。 进行更改后，请使用[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)验证是否不再标记弃用的API的使用情况。
 
 如果您使用的是ACS AEM Commons，请至少使用版本6.11.0（建议使用最新版本），并通过为内容包指定分类器[确保您](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)包含Cloud Service`cloud`的版本。
 
