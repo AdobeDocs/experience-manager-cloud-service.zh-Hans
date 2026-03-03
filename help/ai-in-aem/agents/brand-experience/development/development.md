@@ -4,10 +4,10 @@ description: 了解AEM中的开发作业如何分析Cloud Manager中的失败管
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,17 @@ ht-degree: 1%
 
 该作业可以检索管道状态，并通过建议修复来帮助您排除失败的构建步骤，从而节省在开发、暂存和生产环境中调试AEM as a Cloud Service部署的时间。 它会检查构建日志和相关代码，以推荐您可以手动应用的修复。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478017?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
 >AI生成的响应可能不准确或具有误导性。 请务必仔细检查建议的修复和响应。
 >
->另请参阅[Adobe Experience Cloud Generative AI用户准则。](https://www.adobe.com/cn/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>另请参阅[Adobe Experience Cloud Generative AI用户指南](https://www.adobe.com/cn/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)。
+
+>[!NOTE]
+>
+>管道故障排除仅限于全栈管道（部署和代码质量），但现在Beta版提供&#x200B;**Web层配置管道**&#x200B;支持。 若要请求访问权限，请发送电子邮件至[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)。 需要预先具备对AEM中代理的访问权限。
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -32,7 +36,7 @@ ht-degree: 1%
 
 要访问此作业，请参阅[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)获取有关如何注册Beta计划的说明，并确保表明您对开发作业的兴趣。 您还可以通过电子邮件将开发作业特定的反馈发送至[aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[观看教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
+[观看教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
 
 ## 通过Cloud Manager访问开发作业 {#how-to-access-the-job}
 
@@ -91,6 +95,6 @@ ht-degree: 1%
 
 ## 超出范围的功能 {#out-of-scope-features}
 
-管道故障诊断在整个栈栈管道的构建步骤中进行。 对于其他管道类型和步骤，通过下载并检查日志来调试故障。
+管道故障排除在全栈栈部署和代码质量管道的构建和单元测试步骤以及代码扫描步骤中运行。 对于其他管道类型和步骤，通过下载并检查日志来调试故障。
 
 有关详细信息，请参阅[访问和下载日志](/help/implementing/cloud-manager/manage-logs.md)。

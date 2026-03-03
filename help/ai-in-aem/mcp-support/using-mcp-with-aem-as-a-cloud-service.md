@@ -3,13 +3,13 @@ title: 将MCP与AEM as a Cloud Service结合使用
 description: 了解如何将模型上下文协议与AEM as a Cloud Service一起使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
+exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
+source-git-commit: 5cbe2ae5afd6b6052f486cccc245fbc14e9569aa
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
-
 
 # 将MCP与AEM as a Cloud Service结合使用 {#using-mcp-with-aem-as-a-cloud-service}
 
@@ -54,6 +54,7 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **内容** | `/content` | 所有低级内容操作，包括创建、读取、更新和删除(CRUD)页面、片段和资产。 |
 | **内容（只读）** | `/content-readonly` | 页面、片段和资产的只读内容操作（获取、列表/搜索）。 |
+| **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager实体，包括程序、环境、存储库和管道，这些也可以触发。 <br><br>*此MCP服务器现在处于&#x200B;**测试版**；若要请求访问，请发送电子邮件至[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)，其中包含您的用例说明。* |
 
 每个MCP服务器公开的特定工具可能会随着时间的推移而不断演变。 在实践中，您可以要求启用了MCP的应用程序通过提示来发现工具，例如：
 

@@ -3,11 +3,10 @@ title: 无讯息小时数和更新空闲时段
 description: 了解如何使用安静时间和无更新时段将AEM as a Cloud Service自动更新的操作影响降至最低。
 feature: Deploying
 role: Admin
-badge: label="有限可用性" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
+source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -15,9 +14,6 @@ ht-degree: 0%
 # 无讯息小时数和更新空闲时段 {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->此功能将从9月25日起作为&#x200B;**有限可用性**&#x200B;功能提供。 请发送电子邮件至[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，在您的程序上激活该功能。
-
->[!WARNING]
 >只有在您加入[自动维护更新](/help/implementing/deploying/aem-version-updates.md)后，才能使用“免打扰时间”和“更新空闲时段”功能。
 
 AEM as a Cloud Service [自动维护更新](/help/implementing/deploying/aem-version-updates.md)确保您的实例保持安全，并且使用最新维护版本保持最新。 话虽如此，在某些情况下（如上线活动），您可能需要“保护”这些关键的工作时间免受任何潜在干扰。 因此，AEM as a Cloud Service提供了设置时间范围的选项，在此时间范围内，正在进行的程序将不会发生自动更新。
