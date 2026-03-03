@@ -38,7 +38,7 @@ ht-degree: 99%
 
 这一发布节奏为您提供了一个持续的评估窗口，可用于分析即将发布功能对项目和自定义配置的影响，并规划相关功能的上线部署、测试以及用户培训工作。
 
-请查阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)，了解即将发布版本的详细信息。
+请查阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service)，了解即将发布版本的详细信息。
 
 ## 如何准备发布 {#how-to-prepare}
 
@@ -51,7 +51,7 @@ ht-degree: 99%
 
 ## 标记您的日历 {#mark-calendars}
 
-提前安排好功能版本，并在 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上公布功能版本激活日期。
+提前安排好功能版本，并在 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans#aem-as-cloud-service) 上公布功能版本激活日期。
 
 请留意各版本的发布日期，以便您安排时间审阅和测试即将发布的功能。
 
@@ -81,8 +81,8 @@ ht-degree: 99%
 
 Adobe Experience League 提供了大量学习 AEMaaCS 的资源。
 
-* [AEMaaCS 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [AEMaaCS 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans)
+* [教程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hans)
 * 发行说明中的[每月发行概述视频](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 关键发行信息 {#key-articles}
