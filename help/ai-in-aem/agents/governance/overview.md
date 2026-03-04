@@ -4,9 +4,9 @@ description: 了解AEM治理代理如何跨AEM保护品牌完整性和合规性
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
+source-git-commit: 1f40d8201456f5c1a735e2d92988607c25d34a09
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 0%
 * *此`https://www.website/en.html`是否遵循品牌消息传递指南？*
 * *检查`https://www.website/homepage`是否遵循品牌指南*
 * *显示我的品牌指南*
+
+治理代理还包含由AI提供支持的品牌策略导入功能，该功能使用AI将客户的现有品牌准则文档转换为结构化、可执行的策略检查，从而自动管理、验证和指导合规性内容的创建。 有关详细信息，请参阅[如何导入品牌策略](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)。
 
 ### 权限和Digital Rights Management {#permission-and-digital-rights-management}
 
