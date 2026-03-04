@@ -4,14 +4,14 @@ description: 了解如何根据自适应PDF核心组件的表单提交生成Form
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '3208'
-ht-degree: 1%
+source-wordcount: '3314'
+ht-degree: 2%
 
 ---
 
-# 为自适应Forms（核心组件）生成提交PDF（以前称为记录文档）
+# 为自适应PDF（核心组件）生成提交Forms（记录文档）
 
 ## 概述 {#overview}
 
@@ -147,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，提交自适应表单时，会生成更新的提交PDF。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用提交PDF时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
@@ -359,6 +359,12 @@ When you select a form model, configure Document of Record using options availab
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置字段的对齐方式，如要显示在[!UICONTROL 记录文档]上的复选框或单选按钮。 默认情况下，[!UICONTROL 记录文档]中的字段会设置垂直对齐方式。 设置DoR的[!UICONTROL 表单字段属性]中的属性会覆盖自适应表单上字段的[!UICONTROL 项对齐方式]中设置的属性。 如果选择[!UICONTROL 与自适应表单相同]选项，则自适应表单创作实例中配置的对齐方式将用于[!UICONTROL 记录文档]字段。
       * **水平对齐的选项数**:You&#x200B;可以设置要在水平对齐的提交PDF上显示的选项数。
 
+      **显示多选下拉列表的标签**
+
+      <span class="preview">此功能可通过提前访问计划获得。 若要请求访问，请将您的官方地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。</span>
+
+      提交PDF现在为多选下拉组件显示选定的显示标签，而不是内部存储值。 例如，如果用户从下拉列表中选择“California”和“New York”，则提交PDF显示所选标签，而不是内部值，如`CA`和`NY`。 每个选定的选项都显示在单独的行上，而不是以逗号分隔的值显示，这与[基于Foundation组件的自适应Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)中的行为一致。
+
    1. **主页属性**：
 
       * **徽标图像**：您可以选择使用自适应表单中的徽标图像、从DAM中选择徽标图像，或从您的计算机上传徽标图像。
@@ -367,24 +373,6 @@ When you select a form model, configure Document of Record using options availab
       * **免责声明标签**：免责声明的标签。
       * **免责声明**：指定提交PDF上权利和义务范围的文本。
       * **免责声明文本**：免责声明文本。
-
-      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-
-      >[!NOTE]
-      >
-      >如果您使用的是使用Designer 6.3之前的版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
-
-      ```xml
-      <proto>
-      <font typeface="Arial"/>
-      <fill>
-      <color value="4,166,203"/>
-      </fill>
-      <edge>
-      <color value="4,166,203"/>
-      </edge>
-      </proto>
-      ```
 
 1. 要保存品牌策略更改，请选择&#x200B;**[!UICONTROL 完成]**。
 
@@ -428,6 +416,11 @@ When you select a form model, configure Document of Record using options availab
 **表单级别设置**
 
 * **在DoR中包含未绑定的字段：**&#x200B;设置属性包括提交PDF中基于架构的自适应表单中的未绑定字段。 默认情况下，它为true。
+
+## 常见问题解答 {#faq}
+
+**问：更改未出现在提交PDF中。**
+**ans：**&#x200B;在自适应Forms编辑器中打开表单，进行细微编辑（例如，调整字段标签或对字段重新排序），然后保存表单。 这将重新生成提交PDF模板，所做的更改将显示在下一次生成的PDF中。
 
 ## 另请参阅 {#see-also}
 
