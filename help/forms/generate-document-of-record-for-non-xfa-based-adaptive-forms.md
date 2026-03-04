@@ -136,7 +136,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 现在，在提交自适应表单时，将创建更新的提交PDF。
 
-![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用提交PDF时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
