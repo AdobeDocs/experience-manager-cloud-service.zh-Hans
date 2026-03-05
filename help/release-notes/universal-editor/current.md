@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.02.26发行说明
-description: 这些是通用编辑器2026.02.26版的发行说明。
+title: 通用编辑器2026.03.05发行说明
+description: 这些是通用编辑器2026.03.05版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 27%
+source-wordcount: '178'
+ht-degree: 33%
 
 ---
 
 
-# 通用编辑器2026.02.26发行说明 {#release-notes}
+# 通用编辑器2026.03.05发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 2 月 26 日版本的发行说明。
+这些是通用编辑器 2026 年 3 月 5 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ ht-degree: 27%
 
 ## 新增功能 {#what-is-new}
 
-* 在所有架构字段中添加了描述，以帮助开发人员生成模型/筛选器/组件定义文件。
-* 现在支持对内容片段进行多字段更新以进行上下文内编辑。
-
+* [组件选取器](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)具有新设计。
+* RTE的[拾色器](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)现已可用。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -38,7 +37,5 @@ ht-degree: 27%
 
 ## 其他改进 {#other-improvements}
 
-* 在内容到达之前，编辑器不再将内容默认为`{}`，从而防止在某些情况下数据丢失。
-* 字段成为焦点时数据的持久性变得更强。
-* 在左侧面板中进行编辑，然后在编辑器窗口中选择其他项目时，在某些情况下，更改不再丢失。
-* 修复了使用OpenAPI端点时内容片段的RTE字段存在的持久性问题。
+* 现在，在后端支持的情况下，RTE[中的对齐方式、文本方向和缩进选项默认设置为](/help/implementing/universal-editor/configure-rte.md)启用。
+* 现在，在将内容片段用于开放API和用户界面架构时呈现选项卡。
