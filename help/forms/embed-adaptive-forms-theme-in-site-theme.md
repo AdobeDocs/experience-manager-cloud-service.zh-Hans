@@ -22,7 +22,7 @@ ht-degree: 1%
 
 在开始之前，请确保您已：
 
-* 为站点主题配置了前端管道&#x200B;**的** AEM as a Cloud Service[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)。
+* 为站点主题配置了前端管道&#x200B;**的** AEM as a Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)。
 * **站点主题源** — 例如，[标准站点模板主题](https://github.com/adobe/aem-site-template-standard)（包含带有`theme/`、`src/theme.scss`等的`src/components/`的存储库）。
 * **Forms主题源** - [AEM Forms画布主题](https://github.com/adobe/aem-forms-theme-canvas)&#x200B;(或其他兼容的自适应Forms主题)已克隆或下载到本地。
 * **Node.js和npm** — 构建站点主题（有关支持的版本，请参阅主题自述文件）。
