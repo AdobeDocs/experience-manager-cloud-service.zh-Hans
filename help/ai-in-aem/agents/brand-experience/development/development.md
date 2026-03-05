@@ -1,10 +1,10 @@
 ---
-title: 开发作业概述
-description: 了解AEM中的开发作业如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
+title: 开发代理概述
+description: 了解AEM中的开发代理如何分析Cloud Manager中的失败管道并构建日志以建议代码修复和加快调试。
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
+source-git-commit: 95b54c3c90a4fd221a91e538b6c5c43e03b74b14
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 ---
 
 
-# 开发作业概述 {#development-job-overview}
+# 开发代理概述 {#development-agent-overview}
 
-[作为Brand Experience Agent的一部分，](/help/ai-in-aem/agents/brand-experience/overview.md)开发作业可帮助AEM开发人员和管理员更高效地创建、调试、部署和优化代码。
+[作为Brand Experience Agent的一部分，](/help/ai-in-aem/agents/brand-experience/overview.md)开发代理可帮助AEM开发人员和管理员更高效地创建、调试、部署和优化代码。
 
-该作业可以检索管道状态，并通过建议修复来帮助您排除失败的构建步骤，从而节省在开发、暂存和生产环境中调试AEM as a Cloud Service部署的时间。 它会检查构建日志和相关代码，以推荐您可以手动应用的修复。
+代理可以检索管道状态，并通过建议修复来帮助排除失败的构建步骤，从而节省在开发、暂存和生产环境中调试AEM as a Cloud Service部署的时间。 它会检查构建日志和相关代码，以推荐您可以手动应用的修复。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478017?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -34,13 +34,13 @@ ht-degree: 0%
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-要访问此作业，请参阅[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)获取有关如何注册Beta计划的说明，并确保表明您对开发作业的兴趣。 您还可以通过电子邮件将开发作业特定的反馈发送至[aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
+要访问此代理，请参阅[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)获取有关如何注册测试版计划的说明，请务必说明您对开发代理的兴趣。 您还可以通过电子邮件将特定于开发代理的反馈发送到[aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[观看教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
+[观看教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
 
-## 通过Cloud Manager访问开发作业 {#how-to-access-the-job}
+## 通过Cloud Manager访问开发代理 {#how-to-access-the-agent}
 
-您可以通过用户界面中的AI助手访问开发作业，包括Cloud Manager或Experience Hub。
+您可以通过用户界面中的AI助手访问开发代理，包括Cloud Manager或Experience Hub。
 
 1. 若要开始，请单击[Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)打开其主页。
 
@@ -79,10 +79,9 @@ ht-degree: 0%
 
    ![AI助手提示和生成的响应](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
-
 ## 权限 {#permissions}
 
-开发作业需要Cloud Manager — 开发人员角色或Cloud Manager — 项目经理角色。
+开发代理需要Cloud Manager — 开发人员角色或Cloud Manager — 项目经理角色。
 
 ## 示例提示 {#sample-prompts}
 

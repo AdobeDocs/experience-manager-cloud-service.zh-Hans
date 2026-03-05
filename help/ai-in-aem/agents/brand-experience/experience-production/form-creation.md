@@ -4,9 +4,9 @@ description: 了解Brand Experience Agent的表单创建作业以及如何使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 表单创建作业 {#form-creation-job}
 
-表单创建作业是[Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)的一项功能，旨在使用自然语言提示开发表单。 此作业自动生成相应的表单结构和字段类型。 这项工作通过AI Assistant呈现。
+表单创建作业是[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)的一部分，该代理设计为使用自然语言提示开发表单。 此作业自动生成相应的表单结构和字段类型。 这项工作通过AI Assistant呈现。
 
 表单创建工作的一些主要优势包括：
 

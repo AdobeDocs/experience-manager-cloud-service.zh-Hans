@@ -1,18 +1,18 @@
 ---
 title: 通信创建作业
-description: 了解Brand Experience Agent的通信创建作业以及如何使用自然语言创建交互式通信。
+description: 了解Experience Production Agent的通信创建作业以及如何使用自然语言创建交互式通信。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# 沟通创建技能 {#ic-creation-skill}
+# 通信创建作业 {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [交互式通信](/help/forms/introduction-to-interactive-communication.md)是专为业务通信而设计的个性化数据驱动文档，例如帐户报表、政策文档、账单、欢迎套件和福利通知。 与收集用户输入的表单不同，交互式通信会生成具有动态、特定于收件人的内容的输出文档。
 
-通信创建作业是[Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)的一项功能，旨在使用自然语言提示开发交互式通信。 此作业会自动为打印生成数据驱动的个性化通信(PDF格式)。 这项工作通过AI Assistant呈现。
+通信创建作业是[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)的一部分，该代理设计为使用自然语言提示开发交互式通信。 此作业会自动为打印生成数据驱动的个性化通信(PDF格式)。 这项工作通过AI Assistant呈现。
 
 通信创建工作的一些主要优势包括：
 

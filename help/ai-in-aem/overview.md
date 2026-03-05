@@ -1,13 +1,13 @@
 ---
 title: AEM as a Cloud Service的人工智能
-description: 了解Adobe Experience Manager as a Cloud Service中的AI
+description: 了解 Adobe Experience Manager as a Cloud Service 中的 AI 功能
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 92941c325f7702be8cf5f7f5b2ef3f9bd32c6354
+source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 48%
+source-wordcount: '436'
+ht-degree: 51%
 
 ---
 
@@ -26,7 +26,6 @@ AEM提供了一系列[代理](/help/ai-in-aem/agents/overview.md)以加快内容
 
 * [品牌体验代理](/help/ai-in-aem/agents/brand-experience/overview.md)
 * [内容审查程序代理](/help/ai-in-aem/agents/content-advisor/overview.md)
-* [Experience Modalization Agent](/help/ai-in-aem/agents/modernization/overview.md)
 * [治理代理](/help/ai-in-aem/agents/governance/overview.md)
 
 ## AEM中的创新型人工智能 {#generative-ai-in-aem}
