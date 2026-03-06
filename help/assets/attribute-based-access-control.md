@@ -3,10 +3,10 @@ title: 基于属性的访问控制
 description: 了解如何启用基于属性的访问控制来定义基于元数据的规则，以定义对Content Hub中可用资源的访问级别
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 5%
+source-wordcount: '1391'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 * 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475424/?captions=chi_hans&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## 如何启用基于属性的访问控制？ {#enable-attribute-based-access-control}
 
@@ -102,3 +102,34 @@ ht-degree: 5%
 * 捕获评论中规则的业务意图，无论条件是否正确写入，因为意图有助于我们验证并更正逻辑（如果需要）。
 
 * 为DRM设置的许可证PDF文件需要对所有人可见，以便用户在使用许可证下载资源时能够看到这些文件。
+
+## 常见问题解答 {#faqs-attribute-based-access-control-content-hub}
+
+### AEM Assets Content Hub中基于属性的访问控制(ABAC)是什么？
+
+AEM Assets Content Hub中基于属性的访问控制(ABAC)允许管理员定义基于元数据的规则，以控制不同用户组对数字资源的访问级别。 访问权限取决于资产的元数据是否与规则中指定的条件匹配，从而允许对资产可见性进行精细的动态管理。
+
+### 管理员如何在AEM Assets Content Hub中使用ABAC定义访问规则？
+
+管理员通过基于资产元数据（例如品牌或区域）创建条件并将这些条件链接到特定用户组ID来定义访问规则。 这些规则使用逻辑(AND、OR)和比较（等于、不等于）运算符来准确地指定哪些资产对哪些用户组可见。
+
+### 与传统基于文件夹的权限相比，使用ABAC有哪些主要好处？
+
+ABAC消除了对权限文件夹结构的依赖性，允许管理员上传资产和追溯分配权限，并减少所需的重复资产数量。 这提高了资产完整性并简化了权限管理，尤其是在资产需要与多个组共享时。
+
+### 管理员能否直接在AEM Assets Content Hub界面中设置ABAC规则？
+
+不需要，截至目前，管理员无法直接在Content Hub界面中创建ABAC规则。 相反，他们必须下载模板电子表格（本文中提供的下载链接），在那里定义他们的规则，并通过用于实施的支持票证将其提交到Adobe支持。
+
+### 在AEM Assets Content Hub中设置ABAC规则时，可以使用哪些类型的元数据条件？
+
+AEM Assets Content Hub中的ABAC规则可以使用逻辑运算符（如AND和OR）以及比较运算符（如equals和not equals）。 必须在规则中使用的元数据属性进行正确定义并在AEM元数据架构中可用，这些属性可以包含区域、品牌或发布状态等字段。
+
+### 为什么AEM Assets Content Hub ABAC对于拥有大型团队和多种资源需求的组织特别有用？
+
+ABAC对于拥有大型团队的组织非常有用，因为它可以根据用户角色、区域或品牌实现基于规则的细粒度资源访问。 它确保用户只能看到与其职责相关的资产，而无需手动分配权限或过度重复资产。
+
+### 在将ABAC电子表格提交到Adobe支持之前，管理员应该如何准备？
+
+管理员应在Adobe Admin Console中创建用户组，记下其组ID，并在电子表格中明确定义每个组的权限和条件。 他们应确保所有元数据属性正确映射到相应的架构，并使用“注释”列阐明每个规则的业务意图，从而让Adobe更容易验证和实施规则。
+

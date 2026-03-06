@@ -3,10 +3,10 @@ title: 在 [!DNL the Content Hub]中预览资源及其属性
 description: 了解如何在 [!DNL Content Hub]中预览资源和属性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 11%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -60,43 +60,43 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL JPEG]</td>
+        <td>[！UICONTROL JPEG]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL PNG]</td>
+        <td>[！UICONTROL PNG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 视频 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL Quicktime]</td>
+        <td>[！UICONTROL Quicktime]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MP4]</td>
+        <td>[！UICONTROL MP4]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MPEG]</td>
+        <td>[！UICONTROL MPEG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 文档 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL txt]（纯）</td>
+        <td>[！UICONTROL txt]（纯）</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
+        <td>[！UICONTROL Doc/Docx]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL XML]</td>
+        <td>[！UICONTROL XML]</td>
     </tr>
     <tr>
         <td rowspan="2"> 打印介质 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL PDF]</td>
+        <td>[！UICONTROL PDF]</td>
     </tr>
     </tbody>
 </table>
@@ -109,9 +109,9 @@ ht-degree: 11%
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **智能标记：** [!DNL The Content Hub]使用Adobe AI的智能内容服务，通过基于标记的结构上的识别算法来训练资源。 随后，该内容智能可用于为另一组资产自动应用相关标记。智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
+* **智能标记：** [!DNL The Content Hub]使用Adobe AI的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 随后，该内容智能可用于为另一组资产自动应用相关标记。智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
 
-* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hans)可帮助您识别使用通过Adobe的AI功能在资源中自动识别的颜色的资源。
+* **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可帮助您识别使用通过Adobe的AI功能在资源中自动识别的颜色的资源。
 
 * 上传日期
 
@@ -135,3 +135,27 @@ ht-degree: 11%
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
+
+## 常见问题解答 {#faqs-asset-properties-content-hub}
+
+### 为何要在AEM Assets Content Hub中预览资源及其资产？
+
+在Content Hub中预览资源及其属性允许用户密切查看资源详细信息，这对于高效的资源分发和管理至关重要。 随着数字信息的增长，仅依赖文件名和缩略图变得无法扩展。 查看详细属性有助于对资源进行分类，使其更易于访问、更易于操作，并确保所有用户的信息都完整。
+
+### 如何在AEM Assets Content Hub中查看资产的资产并与之交互？
+
+要在Content Hub中查看资源的属性，请导航到资源或搜索该资源，然后单击以打开其属性页面。 在这里，您可以放大或缩小预览、撤消缩放、移动到上一个或下一个资源、下载资源、使用Adobe Express编辑资源、将其添加到收藏集或关闭预览。 属性页面可显示标题、格式、大小、分辨率、标记、颜色标记和智能标记等详细信息。
+
+### AEM Assets Content Hub中有哪些派生属性，以及如何生成这些属性？
+
+上传和批准资源时，会自动生成Content Hub中的派生属性。 示例包括资源的大小、智能标记和颜色标记。 智能标记使用Adobe AI的智能内容服务来自动识别并应用相关标记，从而提高资产的可发现性。 颜色标记还可以使用AI自动识别，帮助用户根据其突出颜色识别资产。
+
+### 管理员是否可以自定义在Content Hub中可见的资源属性？
+
+是，管理员能够配置在Content Hub中为每个资源显示的属性。 既可以为资产预览用户界面执行此操作，也可以为搜索结果或收藏集中的资产卡执行此操作，以确保用户根据要求看到最相关的信息。
+
+### 预览资产时支持的文件格式是什么？
+
+支持的文件格式包括用于图像的JPEG和PNG，用于视频的Quicktime、MP4和MPEG，用于文档的TXT、DOC/DOCX和XML，以及用于打印媒体的PDF。
+
+

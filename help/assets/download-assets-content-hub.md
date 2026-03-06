@@ -3,9 +3,9 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载一个或多个资源及其演绎版。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '1367'
 ht-degree: 1%
 
 ---
@@ -40,12 +40,12 @@ ht-degree: 1%
       > * Content Hub会将您的选择保存为首选项（**[!UICONTROL 为每个资源创建一个单独的文件夹]**），并保留它以供将来下载。
       > * **[!UICONTROL 为每个资产创建单独的文件夹]**&#x200B;选项仅适用于经过身份验证的[!DNL Content Hub]用户。 [!DNL Content Hub]允许公共用户将资源下载为单个资源。
 
-   1. 单击&#x200B;**[!UICONTROL 下载]**&#x200B;可下载所选资源及其演绎版。
+   1. 单击&#x200B;**[!UICONTROL 下载]**可下载所选资源及其演绎版。
       ![下载多个资源](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 在下载过程中，您可以继续使用[!DNL Content Hub]。 在下载过程中，Content Hub不会中断您的工作流。
 ![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载它们。
+如果**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**以下载它们。
 ![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
@@ -178,6 +178,43 @@ The dialog box that displays depends on whether the download list includes expir
    >[!NOTE]
    > 
    > 动态演绎版仅适用于图像资源。
+
+## 常见问题解答 {#faqs-download-assets-content-hub}
+
+### 如何从AEM Assets Content Hub下载单个或多个资源？
+
+要下载单个资源，请单击资源卡上的下载图标。 对于多个资产，选择它们并单击操作栏中的下载。 如果管理员启用了下载，Content Hub将开始下载其原始演绎版中的资源。 如果资源演绎版可用，您可以在下载之前选择特定的演绎版。
+
+### AEM Assets Content Hub中是否有任何由管理员管理的配置可允许用户下载原始资源或启用演绎版可用性？
+
+是，管理员可以启用或禁用“配置UI”上&#x200B;**呈现版本**&#x200B;选项卡中的&#x200B;**启用呈现版本可用性**&#x200B;和&#x200B;**允许下载原始资源**&#x200B;切换，以管理原始资源的下载或在AEM Assets Content Hub中启用呈现版本可用性。
+
+### AEM Assets Content Hub中有哪些资源演绎版以及哪些类型可用？
+
+资源演绎版是针对各种用例定制的原始资源文件的不同表示形式。 类型包括静态演绎版（例如缩略图、Web或移动优化版本、高分辨率打印文件）、自定义静态演绎版和动态演绎版（包括智能裁剪版本）。 预先生成静态演绎版，同时根据请求实时创建动态演绎版。
+
+### 智能裁剪如何与AEM Assets Content Hub中的资源配合使用？
+
+智能裁剪是AI支持的功能，可识别图像最重要的部分并智能地围绕该部分裁剪。 这可以确保在不同的屏幕和格式上呈现出色的视觉效果。 如果您的组织支持Dynamic Media功能，则智能裁剪演绎版可用于图像资产。
+
+### 如何在AEM Assets Content Hub中启用动态呈现？
+
+要启用动态呈现版本，请执行以下操作：
+
+* 确保启用了具有OpenAPI功能的Dynamic Media。 然后，即可将批准的资产公开交付。
+
+* 将资源审批目标设置为Content Hub。
+
+* 在配置UI中，转到呈现版本选项卡，并启用呈现版本的可用性。
+
+* 如果新加载到OpenAPI的Dynamic Media，请从“管理员”>“工具”>“Assets”>“图像预设”（“编辑”>“保存”）重新保存现有的图像预设。
+
+仅图像资产支持动态演绎版。
+
+### 如何在Content Hub中下载资源演绎版？
+
+要下载演绎版，请选择资源并单击下载操作。 如果管理员启用了格式副本，则会显示一个对话框，您可以在其中选择要下载的格式副本。 对于许可资产，请先接受许可条款，然后再下载。 对于多个资源，请选择资源，选择演绎版，然后以ZIP文件格式下载它们。 您可以选择所有可用的格式副本，也可以选择特定的格式副本，如静态或动态格式副本。
+
 
 
 

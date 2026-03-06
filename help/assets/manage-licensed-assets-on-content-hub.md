@@ -2,10 +2,10 @@
 title: 管理 Content Hub 上的许可资产
 description: 了解如何将许可证字段添加到资源元数据表单、将许可证元数据属性应用于资源文件夹以及审批具有许可证的资源以供使用。
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: bfa7ceeb839574ff1b80ffc25b6519a629247385
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '610'
+ht-degree: 3%
 
 ---
 
@@ -22,3 +22,37 @@ ht-degree: 6%
 1. 选择资产并单击&#x200B;**详细信息**&#x200B;以查看其属性。 在步骤1中添加的许可证字段中，定义已在步骤3中批准或之前已批准的资产许可证的绝对路径。 Content Hub绝对路径遵循此标准模式： `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`。 例如， /content/dam/teamA/projects/documents/file1.pdf
    ![绝对路径](/help/assets/assets/absolute-path.png)
 1. 批准资源以使其在Content Hub中可用，然后单击&#x200B;**保存**。 有关如何批准资产的信息，请参阅[设置资产状态](/help/assets/manage-organize-assets-view.md#set-asset-status)。
+
+## 常见问题解答 {#faqs-manage-licensed-assets-content-hub}
+
+### 在AEM Assets Content Hub上管理许可的资产有何用途？
+
+在Content Hub上管理许可的资产允许管理员确保只有获得批准且许可证有效的资产才可供使用，从而在AEM创作环境中保持合规性和正确的元数据跟踪。
+
+### 如何在Experience Manager as a Cloud Service中将许可证字段添加到资源属性？
+
+您可以通过编辑元数据表单将许可证字段添加到资源属性，以包含映射到`dc:license`属性的新文本字段。 此字段随后显示在AEM Assets创作环境的资源属性中。
+
+### 如何将元数据表单应用于资源文件夹，以便在资源属性中包含许可证字段？
+
+编辑元数据表单以包含许可证字段。 将此元数据表单应用于所需的资源文件夹，以确保该文件夹中的所有资源都已合并新设置。
+
+### 如何指定资产的许可证详细信息？
+
+要指定许可证详细信息，请选择该资产，单击&#x200B;**详细信息**&#x200B;查看其属性，然后在添加到元数据表单的许可证字段中输入已批准资产许可证的绝对路径。
+
+### 资源许可证的Content Hub绝对路径所需的格式是什么？
+
+Content Hub绝对路径应遵循以下模式：/content/dam/（DAM存储库中资产的文件夹层次结构）/(asset_name)。（文件扩展名）。 例如 `/content/dam/teamA/projects/documents/file1.pdf`。
+
+### 为何必须批准资源及其许可证，才能使其在AEM Assets Content Hub上可用？
+
+批准资产及其许可证可确保AEM Assets Content Hub上仅提供经过适当许可和授权的资产，从而有助于保持合规性和适当的使用权限。
+
+### 批准资产许可证后，如何在AEM Assets Content Hub中提供该资产？
+
+在资产的属性中定义许可证路径后，批准资产并单击保存。 此操作可使许可的资源在AEM Assets Content Hub中可用。
+
+### 谁负责管理Content Hub中的许可资产？
+
+管理员负责编辑元数据表单、将元数据表单分配给资源文件夹，以及在Content Hub中审批资源及其许可证。

@@ -3,10 +3,10 @@ title: 在 Content Hub 搜索资产
 description: 了解如何在 [!DNL Content Hub]中搜索资源
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
@@ -167,5 +167,20 @@ ht-degree: 0%
 [!DNL The Content Hub]不限于搜索，而是允许您直接从搜索或预览界面执行其他操作，如[下载](download-assets-content-hub.md)、[共享](share-assets-content-hub.md)和[将资产添加到收藏集](collections-content-hub.md)。 选择搜索结果页面上的资源可查看这些选项。
 
 了解有关[在 [!DNL Content Hub]](configure-content-hub-ui-options.md)中配置资产的更多信息。
+
+## 常见问题解答 {#faqs-deploy-content-hub}
+
+### 如何缩小AEM Assets Content Hub中的搜索结果范围？
+
+在Content Hub中，可通过以下方式缩小搜索结果的范围：使用基于文本的搜索、应用各种过滤器（如文件格式、审批状态、修改日期等）、按标记或智能标记进行搜索，以及使用“过滤器”面板。 组合多个谓词或过滤器选项可帮助您精确定位所需的资源。
+
+### 我能否在AEM Assets Content Hub中一次批量搜索多个资源？
+
+可以，您可以通过输入多个值（如名称、文件格式、标记）在Content Hub中执行批量搜索，这些值由指定的分隔符分隔。 批量搜索功能允许您在单个查询中快速查找多个资源，使其比逐个搜索资源更有效。
+
+
+### 管理员是否可以自定义AEM Assets Content Hub搜索中可用的筛选器？
+
+可以，管理员可以使用AEM Assets Content Hub配置用户界面配置搜索界面中可用的过滤器。 虽然默认筛选条件包括文件格式、审批状态、过期日期等，但管理员可以根据组织需求定制这些选项。
 
 
