@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1123'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 # 添加客户自定义域名 {#adding-custom-domain-name}
 
-了解如何使用Cloud Manager中的&#x200B;**域设置**&#x200B;添加自定义域名。
+您可以使用Cloud Manager中的&#x200B;**域设置**&#x200B;添加自定义域名。
 
 ## 要求 {#requirements}
 
@@ -35,9 +35,13 @@ ht-degree: 15%
 
 添加自定义域名时，将使用最具体且有效的证书来提供该域。 如果多个证书具有相同的域，则选择最近更新的证书。 Adobe建议您管理证书，这样就不会有重叠的域。
 
-本文档中描述的任一方法的步骤均基于Fastly。 如果您使用了其他CDN（内容分发网络），请使用已选择使用的CDN配置您的域。
+本文中介绍的任一方法的步骤均基于Fastly。 如果您使用了其他CDN（内容分发网络），请使用已选择使用的CDN配置您的域。
 
 ## 添加客户自定义域名 {#adding-custom-domain-name-settings}
+
+另请参阅[Edge Delivery Services](https://www.aem.live/docs/byo-cdn-adobe-managed)的&#x200B;*Adobe Managed CDN*。
+
+**要添加自定义域名：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -49,7 +53,7 @@ ht-degree: 15%
 
 1. 在&#x200B;**域设置**&#x200B;页面的右上角附近，单击&#x200B;**添加域**。
 
-1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**&#x200B;字段中，输入您正在使用的自定义域名。
+1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
 输入域名时，不要包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -59,9 +63,11 @@ ht-degree: 15%
 
 1. 单击&#x200B;**创建**。
 
+1. 在&#x200B;**域设置**&#x200B;页面上，在域名的右侧单击![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**验证**。
+
 1. 在&#x200B;**验证域**&#x200B;对话框中，在&#x200B;**您计划用于此域的证书类型是什么？**&#x200B;下拉列表，选择以下选项之一：
 
-   | 证书类型选项 | 描述 |
+   | 证书类型 | 描述 |
    | --- | --- |
    | Adobe托管(DV) SSL证书 | 如果要使用DV（域验证）证书，请选择此证书类型。 此选项适用于大多数情况，可提供基本的域验证。 Adobe会自动管理和更新证书。 |
    | 客户管理的(OV/EV) SSL证书 | 如果您打算使用EV/OV SSL证书来保护域，请选择此证书类型。 此选项通过OV（组织验证）或EV（扩展验证）提供增强的安全性。 如果需要对证书进行更严格的验证、更高的信任级别或自定义控制，请使用。 |
