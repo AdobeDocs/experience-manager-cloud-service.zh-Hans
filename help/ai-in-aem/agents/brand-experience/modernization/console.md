@@ -4,9 +4,9 @@ description: Experience Modernization Console界面和功能的参考指南
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -67,19 +67,17 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
 
 **Home**&#x200B;视图是您使用该控制台的起点。
 
-* 顶部是一个用于发出控制台请求的[提示面板](#prompt-panel)。
-* 提示面板下面是用来启动项目的建议提示。
+* 顶部是一个[提示输入](#prompt-input)，用于发出控制台请求。
+* 提示面板下面是项目入门的建议提示。
 
-### 提示面板 {#prompt-panel}
+### 提示输入 {#prompt-input}
 
-提示面板提供用于与AI交互的控件。
+提示输入提供了用于与AI交互的控件。
 
 * **计划/执行模式**（灯泡和魔棒图标）：分别在计划模式和执行模式之间切换
    * **规划模式**：人工智能分析请求并概述不做更改的方法，这有助于在提交之前了解策略。
    * **执行模式**： AI执行计划并进行实际文件更改。
 * **附加文件**（回形针图标）：将文件上载并附加到提示以查找其他上下文（例如，参考设计、屏幕快照、规范）
-* **设置**（齿轮图标）：选择以跳过人工智能中的确认问题
-* **清除聊天**：这将重置对话并清除AI的上下文窗口。 在启动与上一个对话无关的新任务时，使用此选项。
 
 ## 内容视图 {#content-view}
 
@@ -91,15 +89,32 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
 
 ![内容视图](assets/content-imported.png)
 
-“预览”面板提供三种模式：
+### 聊天面板 {#chat-panel}
+
+聊天面板允许您查看和继续与Experience现代化代理的对话。 聊天面板包括聊天消息历史记录和用于向控制台发出其他请求的[提示输入](#prompt-input)。
+
+* **聊天操作**
+   * **清除聊天**：这将重置对话并清除AI的上下文窗口。 在启动与上一个对话无关的新任务时，使用此选项。
+   * **下载聊天**：此操作将对话历史记录下载为Markdown文件。
+
+### “预览”面板 {#preview-panel}
+
+“预览”面板提供最多四种模式：
 
 * **预览**（带放大镜图标的文档）以查看渲染的HTML内容
-* **HTML视图**（文档图标）分别用于查看基础文档创作内容结构
-* **设计模式** （画笔图标）为提示选择页面的上下文元素
+   * **响应视图**，用于在桌面、平板电脑或移动设备视图中查看渲染的HTML内容
+   * **设计模式** （画笔图标）以将页面的元素添加到提示以添加其他上下文
+* **文档视图**（文档图标）分别用于查看基础文档创作内容结构
+* **Markdown视图(AEM创作)**（代码图标）以查看基础Markdown内容结构
+* **JCR XML视图(AEM创作)**（数据图标）以查看生成的JCR XML内容结构
 
 您始终可以单击&#x200B;**刷新预览**&#x200B;图标来更新预览面板。
 
-使用&#x200B;**Upload content**&#x200B;按钮可打开一个模式窗口，以将文件上传到AEM Document Authoring。
+使用&#x200B;**删除**&#x200B;按钮可从工作区中删除所选页面。 不会删除预览或发布的内容。
+
+“**错误**”按钮(AEM创作)会打开一个模式窗口，以查看选定页面上的错误。
+
+使用&#x200B;**Upload content**&#x200B;按钮可打开一个模式窗口，以将文件上传到AEM。
 
 * 如果您的项目具有&#x200B;**文件，则将预填充**&#x200B;组织&#x200B;**和**&#x200B;存储库`fstab.yaml`字段
 * 文件选择提供了可编辑的目标路径
@@ -111,15 +126,16 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
 
 **代码视图**&#x200B;提供了用于浏览代码和管理代码更改的工具。 视图由左至右分为三个面板：
 
-* 用于与控制台和项目交互的提示面板
+* 用于与控制台和项目交互的聊天面板
 * 文件浏览器，用于获取代码文件的概述或差异更改
-* 用于查看在文件浏览器中选择的代码文件或差异的“预览”面板
+* 预览面板，用于查看在文件浏览器中选择的代码文件或更改
 
 ![代码视图](assets/code-view.png)
 
 “预览”面板提供两种不同的模式：
 
 * **Workspace文件**&#x200B;以浏览当前工作区中的代码文件
+   * 使用&#x200B;**添加到聊天**&#x200B;按钮将文件添加到上下文的聊天面板。
 * **Git更改**&#x200B;以查看您项目工作所创建的文件更改的差异
    * 单击`+`图标存放更改的文件
    * 单击箭头图标可放弃更改的文件
@@ -145,6 +161,8 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
 
 ![设置视图](assets/settings-view.png)
 
+* **项目**&#x200B;允许您查看和编辑项目设置，如自定义库URL。
+* **支持**&#x200B;允许您向AEM支持团队请求帮助。
 * **凭据**&#x200B;允许您为Figma指定个人访问令牌，以便[控制台可以访问项目的设计块。](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * 令牌需要以下只读范围：
       * `file_content:read`

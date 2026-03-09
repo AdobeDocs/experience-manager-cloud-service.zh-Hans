@@ -4,9 +4,9 @@ description: 了解Experience现代化代理如何借助人工智能将新网站
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,11 @@ Experience现代化代理为Edge Delivery Services提供了一个托管的人工
 * 由于开发人员通过常规的GitHub审核和批准流程对哪些产品保留完全控制权，因此强制执行企业治理。
 
 自助式Experience Modernization Console现已正式可用。 感兴趣的用户可以请求访问权限，以确保顺利入门体验。
+
+Experience Modernization Console入门！
+
+* 如果您正在通过定位文档创作来使您的网站现代化，请[从此处开始。](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* 如果通过定位AEM创作来使您的网站现代化，请[从此处开始。](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## 投放模型 {#delivery-model}
 
