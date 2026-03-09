@@ -1,14 +1,14 @@
 ---
 title: 适用于Adobe Experience Manager as a Cloud Service的微前端内容片段选择器
 description: 使用微前端内容片段选择器来搜索、查找和检索应用程序中的内容片段。
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 11%
+source-wordcount: '833'
+ht-degree: 10%
 
 ---
-
 
 # 微前端内容片段选择器 {#micro-frontend-content-fragment-selector}
 
@@ -69,9 +69,11 @@ ht-degree: 11%
 
 一旦设置内容片段选择器并通过身份验证而将AEM as a Cloud Service应用程序与内容片段选择器结合使用，您就可以选择内容片段或执行各种其他操作以在存储库中搜索您的片段：
 
-![内容片段选择器](/help/headless/assets/content-fragment-selector-using.png)
+![内容片段选择器](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* 通过右上角的&#x200B;**存储库**&#x200B;选择器，您可以选择要使用的存储库
+* 从顶部工具栏可以：
+   * 使用右上角的&#x200B;**存储库**&#x200B;选择器选择要使用的存储库
+   * 选择格式；列表或网格
 * 在最左侧的面板中，您可以：
    * 隐藏或显示选定存储库中的文件夹
    * 选择特定文件夹以显示该文件夹中的内容片段
@@ -81,6 +83,9 @@ ht-degree: 11%
    * 根据不同的列对当前列表进行排序；升序或降序
    * 查看视图格式指示器
    * 显示、隐藏和指定筛选器
+* 在最右侧的面板中，您可以：
+   * 查看属性
+   * 查看引用
 
 ### 隐藏/显示面板 {#hide-show-panel}
 
@@ -130,3 +135,16 @@ ht-degree: 11%
 内容片段选择器允许您在中查看片段：
 
 * **表视图**
+* **网格视图**
+
+可以从顶部工具栏的图标中选择所需的视图：
+
+![内容片段选择器 — 视图类型](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## 将内容片段选择器与应用程序集成 {#integrate-the-content-fragment-selector-with-applications}
+
+您可以将内容片段选择器与各种应用程序集成，例如：
+
+* [将内容片段选择器与Adobe应用程序集成](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [将内容片段选择器与非Adobe或第三方应用程序集成](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [使用Vanilla JS集成内容片段选择器](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
