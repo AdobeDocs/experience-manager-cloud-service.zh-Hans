@@ -4,9 +4,9 @@ description: 了解Experience现代化代理如何借助人工智能将新网站
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -66,13 +66,9 @@ Experience现代化代理为Edge Delivery Services提供了一个托管的人工
 
 ## 投放模型 {#delivery-model}
 
-对于复杂的迁移或加速的成果，Adobe提供了代理结果工程师(AOE)交付模型。 这是一项可选服务，Adobe工程师可代表您操作AI工具。
+对于复杂的迁移或加速的成果，Adobe提供了代理结果工程师(AOE)交付模型。 这是一项可选服务，Adobe工程师可代表您操作AI工具。 有关此传递模型的详细信息，请参阅文档[体验现代化代理的传递模型。](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
 
-* Adobe AOE与您一起运行代理，将AI自动化与专家指导相结合，以大规模提供可用于生产的结果。
-* 这为面临实施停滞或旧版现代化挑战的企业提供了战略重置选项。
-* AOE模型提供了更快、风险更低的途径，利用人工智能自动化，同时确保治理、质量和成功结果。
-
-要进一步探讨AOE交付模型，请执行以下操作：
+如果您对下次迁移的AOE模型感兴趣：
 
 * 请联系您的Adobe代表或客户团队以开始设定范围和计划。
 * Adobe将确认资格、估计参与并提议参与计划。
@@ -94,7 +90,7 @@ Experience现代化代理为Edge Delivery Services提供了一个托管的人工
    * 这些技能仅针对Edge Delivery Services。
 * Headless投放模式，如仅限API或基于SPA的投放（例如，Next.js）
 
-专门的自动化技能尚未涵盖以下要求，需要手动操作。
+以下要求不在专门的自动化技能涵盖范围内，需要手动操作。
 
 * 严格像素完美
    * 只有实际的设计保真度是自动的
