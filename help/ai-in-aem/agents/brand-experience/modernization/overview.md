@@ -4,9 +4,9 @@ description: 了解Experience现代化代理如何借助人工智能将新网站
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -101,3 +101,7 @@ Experience现代化代理为Edge Delivery Services提供了一个托管的人工
 * 多站点继承(MSM)
 * 自定义功能（例如，计算器、配置器）
 * 自定义业务逻辑
+
+## 后续步骤 {#next-steps}
+
+使用文档[Experience现代化代理快速入门](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)迁移网站以开始使用。

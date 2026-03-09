@@ -4,9 +4,9 @@ description: Experience Modernization Console界面和功能的参考指南
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -145,5 +145,14 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
 
 ![设置视图](assets/settings-view.png)
 
-* **凭据**&#x200B;允许您为Figma指定个人访问令牌，以便控制台可以访问项目的设计块。
+* **凭据**&#x200B;允许您为Figma指定个人访问令牌，以便[控制台可以访问项目的设计块。](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+   * 令牌需要以下只读范围：
+      * `file_content:read`
+      * `file_metadata:read`
+      * `library_assets:read`
+      * `library_content:read`
+      * `team_library_content:read`
+      * `file_dev_resources:read`
+      * `projects:read`
+   * [有关设置个人访问令牌的更多信息，请参阅Figma文档](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens)。
 * **重置工作区**&#x200B;将控制台还原为开始状态，所有未推送或未上传的更改都将丢失。

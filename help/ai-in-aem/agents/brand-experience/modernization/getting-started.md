@@ -4,9 +4,9 @@ description: 了解使用Experience Modernization Console通过Experience Modern
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -63,14 +63,18 @@ ht-degree: 0%
    * 网站内容的初始导入可能需要几分钟的时间。
    * 控制台在开始工作时会向您提供持续的反馈，包括计划步骤的概述。
      ![内容导入](assets/content-import.png)
-1. 导入网站后，**Workspace**&#x200B;面板会显示页面。 选择要在右侧面板中预览的页面。
+1. 导入网站后，**Workspace**面板会显示页面。 选择要在右侧面板中预览的页面。
    ![内容已导入](assets/content-imported.png)
 1. 现在您有了内容，可以提示从同一源导入样式。
    * “从`https://wknd-trendsetters.site`导入常规样式。”
-1. 与初始内容导入一样，导入过程可能需要几分钟时间，并且控制台在处理您的请求并导入样式时会提供反馈。 任务完成后，单击右侧面板中的&#x200B;**刷新预览**&#x200B;以查看样式化的内容。
+1. 与初始内容导入一样，导入过程可能需要几分钟时间，并且控制台在处理您的请求并导入样式时会提供反馈。 任务完成后，单击右侧面板中的&#x200B;**刷新预览**以查看样式化的内容。
    ![样式已导入](assets/styles-imported.png)
 
 现在，您已将内容和样式导入到控制台中。
+
+>[!TIP]
+>
+>[查看提示指南](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)，了解有关如何提示代理及其技能的更多想法。
 
 ## 上传内容 {#upload-content}
 
@@ -84,7 +88,7 @@ ht-degree: 0%
    * 如果您使用了样板，则会提供`fstab.yaml`。
 1. 选择要上载的文件，然后单击&#x200B;**上载**。
    ![上载内容对话框](assets/upload-content.png)
-1. 控制台通过将&#x200B;**上传**&#x200B;按钮灰显来指示上传过程。
+1. 控制台通过将&#x200B;**上传**按钮灰显来指示上传过程。
    ![正在上传](assets/uploading.png)
 1. 完成后，控制台底部会显示通知。
    在AEM中查看![](assets/view-in-aem.png)
@@ -99,7 +103,7 @@ ht-degree: 0%
 
 在对代码所做的更改感到满意后，可以将它们推送到GitHub存储库。
 
-1. 切换到&#x200B;**代码**&#x200B;视图（左侧边栏中为`</>`图标），然后切换到&#x200B;**Git更改**&#x200B;选项卡（右上角的分支图标）。
+1. 切换到&#x200B;**代码**&#x200B;视图（左侧边栏中为`</>`图标），然后切换到&#x200B;**Git更改**选项卡（右上角的分支图标）。
    ![代码视图](assets/code-view-git-changes.png)
 1. 在更改的文件列表中，如果某些文件显示为未跟踪，请单击其`+`按钮以暂存它们。
 1. 单击右上方的&#x200B;**GitHub操作**&#x200B;按钮，然后从下拉列表中选择&#x200B;**推送**。
@@ -136,5 +140,6 @@ GitHub中的![代码](assets/code-in-github.png)
 当您继续探索Experience现代化代理及其控制台时，以下文档可能会很有用。
 
 * [体验现代化控制台](/help/ai-in-aem/agents/brand-experience/modernization/console.md) — 有关该控制台、其视图、选项和功能的详细信息
+* [体验现代化代理的提示指南](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) — 有关如何提示代理及其技能的想法
 * [Edge Delivery Services开发人员教程](https://www.aem.live/developer/tutorial) — 如果您不熟悉AEM和Edge Delivery Services项目，则很有用
 * [文档创作](https://da.live) — 如果您不熟悉用于内容管理的文档创作，则很有用
