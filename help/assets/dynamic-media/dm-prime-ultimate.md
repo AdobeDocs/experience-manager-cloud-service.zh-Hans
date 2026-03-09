@@ -55,8 +55,8 @@ Dynamic Media Ultimate是Experience Manager Assets的激活服务，包括[具�
 * AEM as a Cloud Service中的[Dynamic Media解决方案](/help/assets/dynamic-media/dynamic-media.md)，其中还包括以下关键功能：
 
    * [Dynamic Media 模板](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [模板基础知识](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [可视化配置](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [模板基础知识](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [可视化配置](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 先决条件 {#pre-requisites-dm-ultimate}
 

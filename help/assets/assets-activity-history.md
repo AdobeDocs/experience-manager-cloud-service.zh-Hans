@@ -30,7 +30,7 @@ ht-degree: 37%
 * 拒绝
 * 移动
 
-时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。此外，当上传新资产或通过[!DNL Experience Manager]Adobe Asset Link[或](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)桌面应用程序[[!DNL Experience Manager] 修改现有资产并签入](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)时，将记录时间轴活动。
+时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。此外，当上传新资产或通过[!DNL Experience Manager]Adobe Asset Link[或](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)桌面应用程序[[!DNL Experience Manager] 修改现有资产并签入](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=zh-Hans)时，将记录时间轴活动。
 
 >[!NOTE]
 >
