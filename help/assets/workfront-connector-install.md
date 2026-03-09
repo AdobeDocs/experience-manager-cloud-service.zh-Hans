@@ -53,7 +53,7 @@ ht-degree: 2%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. 确保[!DNL Experience Manager]存储库中不存在以下叠加。 如果您在这些路径上预先存在叠加图，则需要删除叠加图，或合并两个路径之间的更改增量：
@@ -68,7 +68,7 @@ ht-degree: 2%
 1. 此安装要求了解如何在[!DNL Experience Manager]中将Maven项目设置为[!DNL Cloud Service]。 请使用以下资源了解如何在Maven项目中包含第三方软件包：
 
    * [在您的Maven项目中包含第三方包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party)。
-   * 使用[ [!DNL Cloud Manager]部署](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)。
+   * 使用[&#x200B; [!DNL Cloud Manager]部署](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)。
 
 要将加载项作为[!DNL Experience Manager]安装在[!DNL Cloud Service]中，请执行以下步骤：
 

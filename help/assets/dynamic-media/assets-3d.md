@@ -145,7 +145,7 @@ Dynamic Media支持以下3D文件格式。
    * 从浏览器中的页面URL中删除`/editor.html`。
 
    ![3D资产显示在3D媒体组件内](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
-以**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
+以&#x200B;**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
 
 1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，执行以下任一操作：
 

@@ -17,7 +17,7 @@ ht-degree: 12%
 
 混合媒体集允许您在一个演示文稿中提供图像、图像集、旋转集和视频的混合。
 
-混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **** Pencil图标指示)。
+混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **&#x200B;**&#x200B;Pencil图标指示)。
 
 ![chlimage_1-137](assets/chlimage_1-348.png)
 
@@ -31,7 +31,7 @@ ht-degree: 12%
 
 1. [上传您的资源](#uploading-assets)。
 
-   首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/dynamic-media/image-sets.md)[和旋转集](/help/assets/dynamic-media/spin-sets.md)。 由于用户可以在混合媒体集查看器中缩放图像，因此选择图像时，请务必考虑缩放因素。 确保图像的最大大小至少为2000像素。
+   首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/dynamic-media/image-sets.md) [和旋转集](/help/assets/dynamic-media/spin-sets.md)。 由于用户可以在混合媒体集查看器中缩放图像，因此选择图像时，请务必考虑缩放因素。 确保图像的最大大小至少为2000像素。
 
    有关混合媒体集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 

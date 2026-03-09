@@ -61,7 +61,7 @@ ht-degree: 1%
 
 1. 在确认对话框中单击&#x200B;**[!UICONTROL 激活]**&#x200B;以开始[!DNL Dynamic Media with OpenAPI]激活过程。 成功激活后，Cloud Manager会显示以下状态更新：
    1. **[!UICONTROL 环境阶段]**： **[!UICONTROL 正在运行]**
-   1. ![已激活DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL &#x200B;已激活OpenAPI功能&#x200B;]**
+   1. ![已激活DM](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B;已激活OpenAPI功能&#x200B;]**
 
       ![激活成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 如果激活失败，Cloud Manager会显示以下状态更新：
 
 * **[!UICONTROL 环境暂存]**：**[!UICONTROL OpenAPI的DM失败]**
-* ![DM已激活](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能无法激活&#x200B;]**
+* ![DM已激活](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI功能无法激活&#x200B;]**
 
   ![重试激活](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -143,7 +143,7 @@ ht-degree: 1%
 
    ![Dynamic Media公司信息](/help/assets/assets/dm-company-information.png)
 
-1. 作为Dynamic Media管理员，请查看您的邮箱中的欢迎电子邮件，其中包含要在[ Cloud Service环境中 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)配置[!DNL AEM]公司以开始使用的步骤列表。
+1. 作为Dynamic Media管理员，请查看您的邮箱中的欢迎电子邮件，其中包含要在[&#x200B; Cloud Service环境中 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)配置[!DNL AEM]公司以开始使用的步骤列表。
 
    ![欢迎电子邮件](/help/assets/assets/welcome-email.png)
 
@@ -171,7 +171,7 @@ ht-degree: 1%
 在启动配置过程之前，请确保您满足以下要求：
 
 1. [访问Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. [已在您的环境中激活 [!DNL Dynamic Media with OpenAPI] ](#activate-dynamic-media-with-openapi)。
+1. [已在您的环境中激活 [!DNL Dynamic Media with OpenAPI] &#x200B;](#activate-dynamic-media-with-openapi)。
 1. 已启用[!DNL Dynamic Media with OpenAPI]处于就绪状态。
 1. 用于投放层的域的EV或OV类型证书。 有关详细信息，请参阅[SSL证书简介](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates)。
 

@@ -44,7 +44,7 @@ ht-degree: 13%
 
      或者，按照以下步骤在AEM Sites实例中为AEM 6.5配置[OSGi设置](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)：
 
-   1. 登录到控制台，然后单击&#x200B;**[!UICONTROL OSGi] >**或
+   1. 登录到控制台，然后单击&#x200B;**[!UICONTROL OSGi] >**&#x200B;或
 使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
 
    1. 按如下方式配置&#x200B;**下一代Dynamic Media配置** (`NextGenDynamicMediaConfigImpl`) OSGi配置，将值替换为远程资源环境的值。
@@ -123,7 +123,7 @@ ht-degree: 13%
 
 1. 单击文本组件旁边的![复选标记图标](/help/assets/assets/do-not-localize/checkmark-icon.svg)图标。
 1. 选择&#x200B;**[!UICONTROL 远程]**&#x200B;以从远程DAM获取资产。 <br>
-您可以根据需要选择**[!UICONTROL 本地]**&#x200B;或&#x200B;**[!UICONTROL 远程]** DAM存储库。
+您可以根据需要选择&#x200B;**[!UICONTROL 本地]**&#x200B;或&#x200B;**[!UICONTROL 远程]** DAM存储库。
 
    ![图像](/help/assets/assets/cf-pick.jpg)
 系统会提示您登录。
