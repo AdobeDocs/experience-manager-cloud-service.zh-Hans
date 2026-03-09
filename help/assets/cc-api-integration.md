@@ -4,10 +4,11 @@ description: 使用Creative Cloud集成生成资源变体
 contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '807'
 ht-degree: 5%
 
 ---
@@ -60,7 +61,7 @@ ht-degree: 5%
 1. 单击&#x200B;**[!UICONTROL 继续]**。
 1. 展开&#x200B;**[!UICONTROL Assets]**&#x200B;并选择&#x200B;**[!UICONTROL 内容自动化]**。
 1. 单击&#x200B;**[!UICONTROL 创建]**。
-1. 运行管道以[将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans)。
+1. 运行管道以[将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
 
 如果您需要将Content Automation加载项添加到Cloud Manager中的现有AEM as a Cloud Service程序：
 
@@ -70,7 +71,7 @@ ht-degree: 5%
 
 1. 展开&#x200B;**[!UICONTROL Assets]**&#x200B;并选择&#x200B;**[!UICONTROL 内容自动化]**。
 1. 单击&#x200B;**[!UICONTROL 更新]**。
-1. 运行管道以[将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans)。
+1. 运行管道以[将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
 
 ## 使用处理配置文件批量编辑您的创意资产 {#process-assets}
 
@@ -84,7 +85,7 @@ ht-degree: 5%
 
 1. 提供&#x200B;**[!UICONTROL 节目名称]**（或输出名称）、**[!UICONTROL 扩展名]**（或文件类型），选择&#x200B;**[!UICONTROL 质量]**（或输出参数），选择&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME类型列表（或输入资源筛选器），然后选择所需的创作操作。
 
-   [!UICONTROL 处理配置文件]![&#128279;](assets/creative-processing-profile.png)中的[!UICONTROL Creative]选项卡
+   ![[!UICONTROL 处理配置文件]中的[!UICONTROL Creative]](assets/creative-processing-profile.png)选项卡
 
 1. 某些操作需要额外的参数（资源）。 如有必要，请为这些额外的参数提供值。
 

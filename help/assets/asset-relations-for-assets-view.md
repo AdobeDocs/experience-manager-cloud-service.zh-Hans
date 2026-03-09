@@ -4,10 +4,12 @@ description: 了解如何关联共享某些通用属性的数字资源。 还可
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 77dab2731f8d442bf999bf1614ef060944794574
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
+exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 9%
+source-wordcount: '538'
+ht-degree: 10%
 
 ---
 
@@ -34,15 +36,15 @@ ht-degree: 9%
    * 若要关联派生文件，请从列表中选择&#x200B;**[!UICONTROL 添加派生]**。 您可以关联此类别中的多个资产。
    * 若要在资产之间创建双向关系，请从列表中选择&#x200B;**[!UICONTROL 添加其他]**。 您可以关联此类别中的多个资产。
 
-1. 从&#x200B;**[!UICONTROL 选择Assets]**&#x200B;屏幕中，导航到要关联的资源的位置，然后选择该资源。 您可以在单击时按住Shift键，一次选择单个资源或多个资源，该键可包括Assets视图[&#128279;](/help/assets/supported-file-formats-assets-view.md)中支持的文件格式的任意。
+1. 从&#x200B;**[!UICONTROL 选择Assets]**&#x200B;屏幕中，导航到要关联的资源的位置，然后选择该资源。 您可以在单击时按住Shift键，一次选择单个资源或多个资源，该键可包括Assets视图[中支持的](/help/assets/supported-file-formats-assets-view.md)文件格式的任意。
 
    ![添加相关资源](assets/add-related-asset.png)
 
 1. 单击&#x200B;**[!UICONTROL 选择]**。 根据您在步骤3中选择的关系，相关资产列在&#x200B;**[!UICONTROL 资产关系]**&#x200B;部分的相应类别下。 例如，如果您相关的资源是当前资源的源文件，则它列在&#x200B;**[!UICONTROL Source]**&#x200B;下。
 
-   ![Assets关系示例](assets/asset-relations-example.png)
+   ![资产关系示例](assets/asset-relations-example.png)
 
-1. 单击&#x200B;**[!UICONTROL 取消关联]** ![取消关联可用于每个部分([!UICONTROL Source]、[!UICONTROL 派生]和[!UICONTROL 其他])中所有相关资源的资源](assets/do-not-localize/link-unrelate-icon.png)以取消关联资源。
+1. 单击&#x200B;**[!UICONTROL 取消关联]** ![取消关联可用于每个部分(](assets/do-not-localize/link-unrelate-icon.png)Source[!UICONTROL 、]派生[!UICONTROL 和]其他[!UICONTROL )中所有相关资源的资源]以取消关联资源。
 
 ## 翻译相关资源 {#translating-related-assets}
 
@@ -56,10 +58,10 @@ ht-degree: 9%
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
 >* [查看资源的版本](/help/assets/manage-organize-assets-view.md#view-versions)
 >* [在AEM中翻译资源](/help/assets/translate-assets.md)
->* Assets视图[&#128279;](/help/assets/supported-file-formats-assets-view.md)中的支持的文件格式。
+>* Assets视图[中的](/help/assets/supported-file-formats-assets-view.md)支持的文件格式。

@@ -1,12 +1,13 @@
 ---
 title: 如何在资源视图中管理标记？
 description: 了解如何在资源视图中管理标记。标记帮助您将资源分类，这样可更高效地浏览和搜索资源。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1745'
 ht-degree: 98%
 
 ---
@@ -80,7 +81,7 @@ ht-degree: 98%
 
 ## 将标记添加到标准标记 {#add-tags-to-standard-tags}
 
-非结构化标记或没有任何层次结构的标记会存储在 `Standard Tags` 命名空间。此外，当您想要添加其他描述性术语而不影响受到管理的分类法时，您可以将该值存储在 `Standard Tags`。随着时间的推移，您可以将这些值移动到结构化命名空间下。此外，您还可以使用`Standard Tags`名称空间作为关键字的自由形式条目。
+非结构化标记或没有任何层次结构的标记会存储在 `Standard Tags` 命名空间。此外，当您想要添加其他描述性术语而不影响受到管理的分类法时，您可以将该值存储在 `Standard Tags`。随着时间的推移，您可以将这些值移动到结构化命名空间下。此外，您还可以使用`Standard Tags`命名空间作为关键字的自由形式条目。
 
 要创建标准标记，请单击根级别的 `Create Tag`。指定标题、名称和描述，然后单击 `Save`。
 
@@ -130,7 +131,7 @@ ht-degree: 98%
 
 ## 将标记组件添加到元数据表单 {#add-tags-to-metadata-form}
 
-标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=zh-Hans#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。[!DNL Assets as a Cloud Service] 用户可以更新映射以使用自定义命名空间存储标记值，并使用根路径仅公开层次结构的子集。
+标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。[!DNL Assets as a Cloud Service] 用户可以更新映射以使用自定义命名空间存储标记值，并使用根路径仅公开层次结构的子集。
 
 观看这段简短的视频以了解如何将标记组件添加到元数据表单：
 
@@ -144,7 +145,7 @@ ht-degree: 98%
 
    ![标记资源](assets/adding-tags-to-assets.png)
 
-1. 选择一个或多个标记。 子标记将与父标记或名称空间一起自动选择。
+1. 选择一个或多个标记。 子标记将与父标记或命名空间一起自动选择。
 在 Assets Essentials 中修改的标记还被应用于 Assets as a Cloud Service 中。
 
 ## 将标记添加到阻止列表 {#blocklist-essentials}

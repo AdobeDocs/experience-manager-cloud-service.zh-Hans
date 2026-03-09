@@ -3,13 +3,14 @@ title: 级联元数据
 description: 本文介绍了如何在资源视图中定义资源的级联元数据。
 feature: Metadata
 role: Admin, User
-source-git-commit: 2bb309afc372fe18ce274a2813ed25cba22eb4de
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1220'
 ht-degree: 5%
 
 ---
-
 
 # 级联元数据Assets视图{#cascading-metadata-assets-view}
 
@@ -150,11 +151,10 @@ ht-degree: 5%
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
-
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)

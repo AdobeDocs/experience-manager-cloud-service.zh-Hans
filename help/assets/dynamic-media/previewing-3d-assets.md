@@ -4,10 +4,11 @@ description: 了解如何在Experience Manager中预览3D资源。
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '627'
 ht-degree: 6%
 
 ---
@@ -85,7 +86,7 @@ Experience Manager本身支持以下文件格式的Interactive 3D预览：
    _在资源详细信息视图页面中交互式预览3D资源。_
 1. 在3D资产的资产详细信息视图页面上，执行以下任一操作：
 
-   | 查看 | 描述 | 鼠标操作 | 触摸屏操作 |
+   | 视图 | 描述 | 鼠标操作 | 触摸屏操作 |
    | --- | --- | --- | --- |
    | **转动相机** | 围绕 3D 场景和对象旋转视图。 | 左键单击+拖动。 | 单指按下+拖动。 |
    | **平移相机** | 向左、向右、向上或向下平移视图。 | 右键单击+拖动。 | 双指按下+拖动。 |

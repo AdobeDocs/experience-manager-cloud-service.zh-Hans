@@ -4,10 +4,11 @@ description: 了解如何使用Dynamic Media中的批次集预设自动创建图
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3440'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 0%
 理想情况下，您的公司已经为资产在一个集中的分组方式定义了命名约定。
 为了帮助您了解使用命名约定的重要性，假定您公司定义的命名约定为`<style>-<color>-<view>`。 并且，集合的基本名称必须始终为`<style>-<color>`，集合的名称扩展名为`-SET`。 如果上载名为`0123-RED-01`的图像，则会创建一个名为`0123-RED-SET`的集。 如果您稍后上载图像`0123-RED-03`和`0123-BLUE-01`，则会在第二个位置将`RED-03`图像添加到该集，因为该图像的排序低于`01`。 但是，`BLUE-01`映像将成为名为`0123-BLUE-SET`的新集的一部分。 在下次上传资产时，您添加了`0123-RED-02`和`0123-BLUE-02`文件。 每个资产都将添加到其各自的集中。 由于排序顺序，`RED-02`图像将在现有`01`和`03`图像之间自动排序。
 
-[!DNL Dynamic Media]中的&#x200B;**[!UICONTROL 批次集预设]**&#x200B;页面允许您创建、编辑或删除批次集预设，以及在资产文件夹中应用或删除批次集预设。 您可以使用表单字段下拉列表来定义批次集预设，或者使用&#x200B;**[!UICONTROL 原始代码]**&#x200B;字段，该字段允许您键入正则表达式语法。
+**[!UICONTROL 中的]**&#x200B;批次集预设[!DNL Dynamic Media]页面允许您创建、编辑或删除批次集预设，以及在资产文件夹中应用或删除批次集预设。 您可以使用表单字段下拉列表来定义批次集预设，或者使用&#x200B;**[!UICONTROL 原始代码]**&#x200B;字段，该字段允许您键入正则表达式语法。
 
 您可以创建多个批集预设，以便涵盖所需的所有资产引入作业。
 
@@ -75,7 +76,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 预设类型]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 图像集]**&#x200B;或&#x200B;**[!UICONTROL 旋转集]**。 请确保选择正确的预设类型；该预设类型以后将无法编辑。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
-1. 在&#x200B;**[!UICONTROL 编辑批次集预设]**&#x200B;页面的右侧，在&#x200B;**[!UICONTROL 预设详细信息]**&#x200B;和&#x200B;**[!UICONTROL 设置命名约定]**&#x200B;标题下设置您需要的可编辑选项。
+1. 在&#x200B;**[!UICONTROL 编辑批次集预设]**&#x200B;页面的右侧，在&#x200B;**[!UICONTROL 预设详细信息]**&#x200B;和&#x200B;**[!UICONTROL 设置命名约定]**标题下设置您需要的可编辑选项。
 要了解有关您可用的可编辑选项的更多信息，请参阅[预设详细信息、设置命名惯例和规则结果 — RegX选项](#features-options-bsp)。
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)

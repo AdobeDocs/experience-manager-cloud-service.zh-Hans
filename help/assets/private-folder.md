@@ -4,10 +4,11 @@ description: 了解如何在 [!DNL Adobe Experience Manager Assets] 中创建专
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '627'
 ht-degree: 8%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 8%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 您可以在[!DNL Adobe Experience Manager Assets]用户界面中创建一个专供您使用的专用文件夹。 您可以将此专用文件夹共享给其他用户，并为他们分配各种权限。 根据您分配的权限级别，用户可以在该文件夹上执行各种任务，例如，查看文件夹中的资源或编辑资源。
@@ -79,7 +80,7 @@ ht-degree: 8%
 >
 >如果从用户界面中使用上述方法删除文件夹，则关联的用户组也会被删除。
 >
->但是，可以在创作实例(`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)中使用JMX中的`clean`方法从存储库中删除现有的冗余、未使用和自动生成的用户组。
+>但是，可以在创作实例(`clean`)中使用JMX中的`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`方法从存储库中删除现有的冗余、未使用和自动生成的用户组。
 
 **另请参阅**
 

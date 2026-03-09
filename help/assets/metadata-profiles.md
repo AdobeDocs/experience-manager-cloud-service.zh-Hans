@@ -4,10 +4,11 @@ description: 了解资源的元数据配置文件。 了解如何创建元数据
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1409'
 ht-degree: 21%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 21%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 元数据配置文件允许您将默认元数据应用到文件夹中的资源。 创建元数据配置文件并将其应用到文件夹。 您随后上传到文件夹的任何资产都会继承您在元数据配置文件中配置的默认元数据。
@@ -28,8 +29,8 @@ ht-degree: 21%
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**，然后单击&#x200B;**[!UICONTROL 创建]**。
 1. 输入元数据配置文件的标题，例如示例元数据，然后选择&#x200B;**[!UICONTROL 提交]**。 此时将显示元数据配置文件的编辑表单。
-1. 单击组件并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中配置其属性。 例如，单击&#x200B;**[!UICONTROL Description]**&#x200B;组件并编辑其属性。
-编辑&#x200B;**[!UICONTROL Description]**&#x200B;组件的以下属性：
+1. 单击组件并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中配置其属性。 例如，单击&#x200B;**[!UICONTROL Description]**组件并编辑其属性。
+编辑**[!UICONTROL Description]**&#x200B;组件的以下属性：
 
    * **[!UICONTROL 字段标签]** — 元数据属性的显示名称。 仅供用户参考。
    * **[!UICONTROL 映射到属性]** — 此属性的值提供资产节点在存储库中保存的相对路径/名称。 该值应始终以`./`开头，因为它指示路径在资产的节点下。

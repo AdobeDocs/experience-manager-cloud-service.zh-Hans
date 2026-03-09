@@ -4,10 +4,11 @@ description: 本文介绍了如何批量导入和导出元数据。
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '745'
 ht-degree: 10%
 
 ---

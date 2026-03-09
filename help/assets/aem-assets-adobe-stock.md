@@ -4,10 +4,11 @@ description: 在 [!DNL Adobe Stock] 内搜索、获取、许可和管理 [!DNL A
 contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2214'
 ht-degree: 5%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Stock] 服务为设计师和企业提供数百万高质量、精选的免版税照片、矢量图、插图、视频、模板和 3D 资产，可满足各种创意项目需求。
@@ -207,7 +208,7 @@ To configure the IMS account:
 执行以下步骤以在[!DNL Developer Console]中设置程序：
 
 1. 导航到[[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)并登录您的组织。
-1. 选择&#x200B;**[!UICONTROL 新建项目]**（可在&#x200B;**[!UICONTROL 项目]**&#x200B;仪表板上找到）。
+1. 选择&#x200B;**[!UICONTROL 新建项目]**（可在&#x200B;**[!UICONTROL 项目]**仪表板上找到）。
    ![将aem资产与adobe stock集成](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. 单击&#x200B;**[!UICONTROL 添加到项目]**&#x200B;并选择&#x200B;**[!UICONTROL API]**。
 1. 选择&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;并单击&#x200B;**[!UICONTROL 下一步]**。
@@ -224,7 +225,7 @@ To configure the IMS account:
 
 执行以下步骤以在[!DNL AEM]创作实例中添加配置：
 
-1. [在您的 [!DNL Adobe Stock IMS configuration] 创作实例中设置新的 [!DNL AEM] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [在您的 [!DNL Adobe Stock IMS configuration] 创作实例中设置新的 [!DNL AEM] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [添加云配置以连接到 [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### 在您的[!DNL Adobe Stock IMS configuration]实例中设置新的[!DNL AEM author] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -535,6 +536,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [有关将Adobe Stock资源与Experience Manager Assets结合使用的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=zh-Hans)
->* [Adobe Stock企业计划帮助](https://helpx.adobe.com/cn/enterprise/using/adobe-stock-enterprise.html)
->* [Adobe Stock常见问题解答](https://helpx.adobe.com/cn/stock/faq.html)
+>* [有关将Adobe Stock资源与Experience Manager Assets结合使用的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Adobe Stock企业计划帮助](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock常见问题解答](https://helpx.adobe.com/stock/faq.html)

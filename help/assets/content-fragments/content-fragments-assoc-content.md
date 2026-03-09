@@ -1,20 +1,21 @@
 ---
 title: 关联内容(Assets — 内容片段)
 description: 了解AEM内容片段的关联内容功能如何提供连接，以便可以选择将资源与片段一起使用。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 44%
+source-wordcount: '298'
+ht-degree: 43%
 
 ---
 
 # 关联的内容{#associated-content}
 
-对于Adobe Experience Manager (AEM)as a Cloud Service的内容片段，关联的内容功能（在原始编辑器中可用）提供连接，以便可以选择将资源与片段一起使用。 这使[在使用内容片段](/help/assets/content-fragments/content-fragments.md#using-associated-content)时提供一系列资源以供访问，同时还有助于减少搜索适当资源所需的时间，从而提供了灵活性。 此功能可用于您的headless内容投放和页面创作。
+对于Adobe Experience Manager (AEM) as a Cloud Service的内容片段，关联的内容功能（在原始编辑器中提供）提供连接，以便可以选择将资源与片段一起使用。 这使[在使用内容片段](/help/assets/content-fragments/content-fragments.md#using-associated-content)时提供一系列资源以供访问，同时还有助于减少搜索适当资源所需的时间，从而提供了灵活性。 此功能可用于您的headless内容投放和页面创作。
 
 >[!NOTE]
 >

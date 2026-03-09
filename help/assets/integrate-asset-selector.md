@@ -2,11 +2,12 @@
 title: 使用 Vanilla JS 集成资源选择器
 description: 将资产选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 59%
+source-wordcount: '185'
+ht-degree: 58%
 
 ---
 

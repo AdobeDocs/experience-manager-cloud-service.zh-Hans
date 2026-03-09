@@ -8,11 +8,12 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 84%
+source-wordcount: '1674'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 84%
 
 转录是使用语音识别技术将音频或视频文件中的音频转换为文本（语音到文本）的过程。[!DNL Adobe Experience Manager Assets] 配置了 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的支持音频或视频文件中的口语文本转录。在[!DNL Experience Manager Assets] 中处理音频或视频资产时，转录服务会自动生成音频或视频资产的文本转录演绎版，并将其存储在原始资产所在的 Assets 存储库中的同一位置。[!DNL Experience Manager Assets]转录服务允许营销人员通过增加文本内容的可发现性来有效管理其音频和视频内容，并通过支持可访问性和本地化来提高这些资产的ROI。
 
-转录是口语内容的文本版本；例如，您在任何OTT平台上观看的电影通常都包含字幕，以帮助访问或使用其他语言的内容。 或任何用于营销、学习或娱乐目的的音频或视频文件。这些体验从转录开始，然后根据需要进行格式化或翻译。当手动执行时，转录音频或视频是一个很耗时间且容易出错的过程。鉴于对音频视频内容的需求不断增加，扩展手动过程也是一个挑战。[!DNL Experience Manager Assets]使用Azure基于人工智能的转录，允许对音频和视频资产进行大规模处理，并生成文本转录（.vtt文件）以及时间戳详细信息。 除了 Assets，Dynamic Media 也支持转录功能。
+转录是口语内容的文本版本；例如，您在任何OTT平台上观看的电影通常都包含字幕，以帮助访问或使用其他语言的内容。 或任何用于营销、学习或娱乐目的的音频或视频文件。这些体验从转录开始，然后根据需要进行格式化或翻译。当手动执行时，转录音频或视频是一个很耗时间且容易出错的过程。鉴于对音频视频内容的需求不断增加，扩展手动过程也是一个挑战。[!DNL Experience Manager Assets]使用Azure基于人工智能的转录，允许对音频和视频资源进行大规模处理，并生成文本转录（.vtt文件）以及时间戳细节。 除了 Assets，Dynamic Media 也支持转录功能。
 
 转录功能在 [!DNL Experience Manager Assets] 中可以免费使用。但是，管理员需要用户的Azure凭据才能在[!DNL Experience Manager Assets]中配置转录服务。 您还可以直接从 Microsoft® 获得 [试用凭证](https://azure.microsoft.com/en-us/pricing/details/media-services/)，体验 Assets 中的音频或视频转录功能。
 
@@ -50,7 +51,7 @@ ht-degree: 84%
 
 ### 配置 Azure Media Services {#configure-azure-media-services}
 
-[!DNL Experience Manager Assets] 使用 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的[支持音频或视频文件 &#x200B;](#supported-file-formats-for-transcription)中的口语文本转录。管理员可使用 Azure 凭据在 [!DNL Experience Manager Assets] 中配置 [!DNL Azure Media Services]。[转录先决条件](#transcription-prerequisites)列出配置所需的[!DNL Azure]凭据。如果您没有 [!DNL Azure] 帐户和凭据，请参阅 [Azure Media Services 文档 &#x200B;](https://azure.microsoft.com/en-us/pricing/details/media-services/) 获取试用凭据。
+[!DNL Experience Manager Assets] 使用 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的[支持音频或视频文件 ](#supported-file-formats-for-transcription)中的口语文本转录。管理员可使用 Azure 凭据在 [!DNL Experience Manager Assets] 中配置 [!DNL Azure Media Services]。[转录先决条件](#transcription-prerequisites)列出配置所需的[!DNL Azure]凭据。如果您没有 [!DNL Azure] 帐户和凭据，请参阅 [Azure Media Services 文档 ](https://azure.microsoft.com/en-us/pricing/details/media-services/) 获取试用凭据。
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
@@ -123,7 +124,7 @@ ht-degree: 84%
 
 另请参阅：
 
-* [关于如何将 CC 闭路字幕添加到 Dynamic Media 视频的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans#add-cc-closed-captioning-to-dynamic-media-video)
+* [关于如何将 CC 闭路字幕添加到 Dynamic Media 视频的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [将 Dynamic Media 视频发布到 YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 在下列插图中，URL 反映了引用转录文件（.vtt 文件）的字幕部分。视频在视频中给定的时间戳将口语（转录文本）作为&#x200B;**[!UICONTROL 闭路字幕]**&#x200B;反映出来。用户可以使用 **[!UICONTROL CC]** 按钮启用或禁用字幕。

@@ -1,13 +1,14 @@
 ---
 title: 配置Workfront和Experience Manager Assets之间的资源元数据映射
 description: 在Adobe Workfront和Experience Manager as a Cloud Service应用程序之间映射资源元数据字段。 作为映射元数据字段的结果，在将资源从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资源元数据。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 4%
+source-wordcount: '1018'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 **用例**
 
-Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-workfront.png`。 您需要将该图像使用以下元数据发送到Experience Manager Assets as a Cloud Service：
+Adobe Workfront应用程序的`add-users-workfront.png`项目中存在图像`Metadata Syncs`。 您需要将该图像使用以下元数据发送到Experience Manager Assets as a Cloud Service：
 
 * 项目名称
 
@@ -88,10 +89,9 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
 
 1. 单击&#x200B;**[!UICONTROL 生成表单]**&#x200B;选项卡，并将&#x200B;**[!UICONTROL 单行文本]**&#x200B;组件拖到表单中。 单击窗体中的组件。 在&#x200B;**[!UICONTROL 生成表单]**&#x200B;选项卡中：
 
-   1. 在&#x200B;**[!UICONTROL 字段标签]**&#x200B;字段中指定`Project Name`。
+   1. 在`Project Name`字段标签&#x200B;**[!UICONTROL 字段中指定]**。
 
-   1. 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中指定`./jcr:content/metadata/wm:projectName`。 作为指导，请使用以下模板在Experience Manger Assets中定义字段映射：
-
+   1. 在`./jcr:content/metadata/wm:projectName`映射到属性&#x200B;**[!UICONTROL 字段中指定]**。 作为指导，请使用以下模板在Experience Manger Assets中定义字段映射：
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       在Workfront中配置映射时，您已将`wm:projectName`个Experience Manager Assets字段映射到项目>命名Workfront字段。
@@ -102,16 +102,16 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
 
 1. 单击&#x200B;**[!UICONTROL 生成表单]**&#x200B;选项卡，并将&#x200B;**[!UICONTROL 单行文本]**&#x200B;组件拖到表单中。 单击窗体中的组件。 在&#x200B;**[!UICONTROL 生成表单]**&#x200B;选项卡中：
 
-   1. 在&#x200B;**[!UICONTROL 字段标签]**&#x200B;字段中指定`Document Name`。
+   1. 在`Document Name`字段标签&#x200B;**[!UICONTROL 字段中指定]**。
 
-   1. 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中指定`./jcr:content/metadata/wm:documentName`。
+   1. 在`./jcr:content/metadata/wm:documentName`映射到属性&#x200B;**[!UICONTROL 字段中指定]**。
 在Workfront中配置映射时，您已将`wm:documentName`个Experience Manager Assets字段映射到文档>命名Workfront字段。
 
 1. 单击&#x200B;**[!UICONTROL 生成表单]**&#x200B;选项卡，并将&#x200B;**[!UICONTROL 多行文本]**&#x200B;组件拖到表单中。 单击窗体中的组件。 在&#x200B;**[!UICONTROL 生成表单]**&#x200B;选项卡中：
 
-   1. 在&#x200B;**[!UICONTROL 字段标签]**&#x200B;字段中指定`Document Description`。
+   1. 在`Document Description`字段标签&#x200B;**[!UICONTROL 字段中指定]**。
 
-   1. 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中指定`./jcr:content/metadata/dc:description`。
+   1. 在`./jcr:content/metadata/dc:description`映射到属性&#x200B;**[!UICONTROL 字段中指定]**。
 在Workfront中配置映射时，您已将`dc:description`个Experience Manager Assets字段映射到文档>描述Workfront字段。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
@@ -120,7 +120,7 @@ Adobe Workfront应用程序的`Metadata Syncs`项目中存在图像`add-users-wo
 
 ## 将元数据设置应用于图像文件夹 {#apply-metadata-settings-image-folder}
 
-在Experience Manager as a Cloud Service应用程序中配置元数据设置后，将这些设置应用到包含从Workfront应用程序[&#128279;](#send-image-workfront-assets)发送的图像的文件夹。
+在Experience Manager as a Cloud Service应用程序中配置元数据设置后，将这些设置应用到包含从Workfront应用程序[发送的图像的](#send-image-workfront-assets)文件夹。
 
 要将元数据设置应用到图像文件夹，请执行以下操作：
 

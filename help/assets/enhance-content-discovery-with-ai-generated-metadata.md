@@ -3,13 +3,14 @@ title: 在管理员视图中利用AI生成的元数据增强内容发现
 description: 了解如何在管理员视图中使用人工智能生成的元数据增强内容发现
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
+exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '675'
 ht-degree: 8%
 
 ---
-
 
 # 使用AI生成的元数据增强内容发现 {#ai-smart-tags}
 

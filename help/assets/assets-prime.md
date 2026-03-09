@@ -3,10 +3,11 @@ title: Assets Prime
 description: 详细了解Assets Prime的主要方面，如主要优势、用户类型及其权限。
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1106'
 ht-degree: 15%
 
 ---
@@ -123,7 +124,7 @@ AEM Assets Collaborator用户可以通过贵组织在其他Assets产品和非Ado
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
-1. 单击Collaborators用户产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将该用户添加到产品配置文件。
+1. 单击Collaborators用户产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将该用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-collaborator-user-permissions.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
@@ -145,7 +146,7 @@ AEM Assets高级用户可以访问所有AEM Assets功能，包括管理资产、
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
-1. 单击Power users产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户添加到产品配置文件。
+1. 单击Power users产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-power-user-permissions.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。

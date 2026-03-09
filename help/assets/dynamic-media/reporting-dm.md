@@ -6,11 +6,12 @@ feature: Asset Management
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '266'
+ht-degree: 1%
 
 ---
 
@@ -30,6 +31,6 @@ ht-degree: 0%
 
 1. [向reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com)发送一封电子邮件，其中包含与您的Dynamic Media帐户关联的公司名称。
 
-   如果您不知道公司名称，请参阅&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL Dynamic Media配置]**&#x200B;中的[Dynamic Media配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hans#configuring-dynamic-media-cloud-services)页面。 在Dynamic Media配置浏览器页面上，单击&#x200B;**[!UICONTROL 全局]**，选中&#x200B;*[Dynamic_Media_folder_icon]*&#x200B;复选框，然后选择&#x200B;**[!UICONTROL 编辑]**。 您必须在AEM中拥有管理员权限才能访问“Dynamic Media配置”页面。
+   如果您不知道公司名称，请参阅[Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hans#configuring-dynamic-media-cloud-services) > **[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL Dynamic Media配置]**&#x200B;中的&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;页面。 在Dynamic Media配置浏览器页面上，单击&#x200B;**[!UICONTROL 全局]**，选中&#x200B;*[Dynamic_Media_folder_icon]*&#x200B;复选框，然后选择&#x200B;**[!UICONTROL 编辑]**。 您必须在AEM中拥有管理员权限才能访问“Dynamic Media配置”页面。
 
    ![正在访问Dynamic Media配置页。](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

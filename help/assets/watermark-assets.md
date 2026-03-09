@@ -4,19 +4,20 @@ description: 了解如何在AEM中为资源添加数字水印。 水印可帮助
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 16%
+source-wordcount: '331'
+ht-degree: 17%
 
 ---
 
-# 为资源添加水印 {#watermark-assets}
+# 为资产添加水印 {#watermark-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets]允许您向图像和视频添加数字水印。 [!DNL Assets]支持将图像作为水印应用于其他图像文件。 水印可帮助用户验证资产的真实性和版权所有权。 此外，水印可用于表示文档的状态，如机密、草稿、有效性等。

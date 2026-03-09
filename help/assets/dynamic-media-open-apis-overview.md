@@ -2,11 +2,12 @@
 title: 具有 OpenAPI 功能的 Dynamic Media
 description: 了解关键概念，例如为什么使用具有 OpenAPI 功能的 Dynamic Media 以及如何启用它。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: ht
-source-wordcount: '1106'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 99%
 
 ---
 

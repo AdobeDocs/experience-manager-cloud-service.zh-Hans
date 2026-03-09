@@ -5,11 +5,12 @@ contentOwner: KK
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 9%
+source-wordcount: '207'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 9%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 如果DAM用户上传一个或多个已存在于存储库中的资源，[!DNL Experience Manager]将检测重复并通知用户。 默认情况下禁用重复检测，因为它可能会产生性能影响，具体取决于存储库的大小和上传的资源数量。

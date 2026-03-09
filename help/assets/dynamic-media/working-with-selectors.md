@@ -4,11 +4,12 @@ description: 了解可用于在Dynamic Media中为交互式图像、交互式视
 contentOwner: Rick Brough
 feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 1%
+source-wordcount: '751'
+ht-degree: 6%
 
 ---
 
@@ -44,7 +45,7 @@ ht-degree: 1%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以通过点按&#x200B;**[!UICONTROL 浏览]**&#x200B;并导航到其他文件夹来更改[!DNL Experience Manager]浏览产品数据的位置。
+   您可以通过点按[!DNL Experience Manager]浏览&#x200B;**[!UICONTROL 并导航到其他文件夹来更改]**&#x200B;浏览产品数据的位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
@@ -99,7 +100,7 @@ ht-degree: 1%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以通过导航到&#x200B;**[!UICONTROL 路径]**&#x200B;字段中的其他文件夹来更改[!DNL Experience Manager]浏览资产的位置。
+   您可以通过导航到[!DNL Experience Manager]路径&#x200B;**[!UICONTROL 字段中的其他文件夹来更改]**&#x200B;浏览资产的位置。
 
    选择&#x200B;**[!UICONTROL 收藏集]**&#x200B;以仅搜索收藏集中的资源。
 

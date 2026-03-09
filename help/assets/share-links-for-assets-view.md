@@ -1,13 +1,14 @@
 ---
 title: 如何共享资源链接？
 description: 生成链接并与无权访问该 [!DNL Assets view] 应用程序的其他人共享资源。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 93%
+source-wordcount: '403'
+ht-degree: 92%
 
 ---
 
@@ -45,10 +46,10 @@ ht-degree: 93%
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中共享资源链接](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中共享资源链接](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)

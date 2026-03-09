@@ -2,10 +2,11 @@
 title: 将品牌批准的资产上传到 [!DNL Content Hub]
 description: 了解如何将品牌批准的资产上传到Content Hub
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1129'
 ht-degree: 12%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 12%
 
 有权添加资源的[Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以从本地文件系统向Content Hub添加资源，也可以从OneDrive或Dropbox数据源导入资源。 为了增强搜索功能，所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445390/?captions=chi_hans&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Assets as a Cloud Service中标记为`Approved`的资源在Content Hub中自动可用。 如需了解更多信息，请参阅[批准 Content Hub 的资产](/help/assets/approve-assets-content-hub.md)。
 

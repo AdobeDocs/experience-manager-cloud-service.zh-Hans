@@ -4,10 +4,11 @@ description: 了解如何在Dynamic Media中使用图像集。
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2151'
 ht-degree: 4%
 
 ---

@@ -2,17 +2,18 @@
 title: Content Hub 的新增功能
 description: 了解最近推出的一些 Content Hub 功能的详细信息
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '889'
 ht-degree: 78%
 
 ---
 
 # Content Hub 的新增功能 {#whats-new-content-hub}
 
-Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在为组织及其业务合作伙伴提供对品牌内容的普及化访问。它侧重于大规模分发资产以进行激活，并创建品牌内容变体，以提高营销敏捷度。
+Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在为组织及其业务合作伙伴实现对品牌内容访问的民主化。它侧重于大规模分发资产以进行激活，并创建品牌内容变体，以提高营销敏捷度。
 
 以下视频演示了 Content Hub 的主要功能：
 
@@ -44,7 +45,7 @@ Content Hub现在支持在平面层次结构中下载多个资源演绎版，而
 
 Content Hub管理员现在可以在Content Hub中固定收藏集以进行快速访问。 固定收藏集显示在收藏集主页上的专用&#x200B;**[!UICONTROL 固定]**&#x200B;部分中，这样可以更轻松地使重要收藏集保持在可触及的范围之内。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >

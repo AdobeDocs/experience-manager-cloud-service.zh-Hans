@@ -2,10 +2,11 @@
 title: 在Experience Manager中批准资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1066'
 ht-degree: 7%
 
 ---
@@ -29,11 +30,11 @@ ht-degree: 7%
 1. 向下滚动并单击&#x200B;**[!UICONTROL 审核状态]**。
 1. 单击右侧面板上的&#x200B;**[!UICONTROL 规则]**&#x200B;选项卡。
 1. 取消选中&#x200B;**[!UICONTROL 禁用编辑]**。
-如果需要查看&#x200B;**[!UICONTROL 审阅状态]**&#x200B;字段映射到的属性，请导航到&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡，并查看&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中的`./jcr:content/metadata/dam:status`值。
+如果需要查看**[!UICONTROL 审阅状态]**&#x200B;字段映射到的属性，请导航到&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡，并查看`./jcr:content/metadata/dam:status`映射到属性&#x200B;**[!UICONTROL 字段中的]**&#x200B;值。
 1. 将&#x200B;**[!UICONTROL 下拉]**&#x200B;字段从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖放到表单中的元数据分区。
 1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
    1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_审批目标_。
-   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为_。/jcr:content/metadata/dam :activationTarget_。
    1. 添加选项值`contenthub`和`delivery`。
 
    >[!NOTE]
@@ -69,17 +70,17 @@ ht-degree: 7%
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**。
 1. 单击页面右上方的&#x200B;**[!UICONTROL 创建]**。
 1. 添加配置文件标题并单击&#x200B;**[!UICONTROL 创建]**。 已成功创建元数据配置文件。
-1. 选择新创建的元数据配置文件，然后单击&#x200B;**[!UICONTROL 编辑&#x200B;_(e)_]**。 <br>将打开&#x200B;**[!UICONTROL 编辑元数据配置文件]**&#x200B;表单，其中突出显示&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡。
+1. 选择新创建的元数据配置文件，然后单击&#x200B;**[!UICONTROL 编辑&#x200B;_(e)_]**。 <br>将打开&#x200B;**[!UICONTROL 编辑元数据配置文件]**表单，其中突出显示&#x200B;**[!UICONTROL 基本]**选项卡。
 1. 将&#x200B;**[!UICONTROL 单行文本字段]**&#x200B;从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖放到表单中的元数据分区。
 1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
    1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_已批准的Assets_。
-   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：status_。
+   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为_。/jcr:content/metadata/dam :status_。
    1. 将默认值更改为&#x200B;_已批准_。
 
 1. 将&#x200B;**[!UICONTROL 下拉]**&#x200B;字段从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖放到表单中的元数据分区。
 1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
    1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_审批目标_。
-   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为_。/jcr:content/metadata/dam :activationTarget_。
    1. 添加选项值`contenthub`和`delivery`。
 
    >[!NOTE]
@@ -103,7 +104,7 @@ ht-degree: 7%
 
 1. 在右侧面板的[!UICONTROL 属性]部分，选择&#x200B;**[!UICONTROL 状态]**&#x200B;字段中的&#x200B;**[!UICONTROL 已批准]**。
 
-   如果将状态选择为`Approved`，并且为Experience Manager Assets启用了[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或同时启用了这两者，则可以查看&#x200B;**[!UICONTROL 审批目标]**&#x200B;字段中提供的`Delivery`和`Content Hub`选项。
+   如果将状态选择为`Approved`，并且为Experience Manager Assets启用了[具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或同时启用了这两者，则可以查看`Delivery`审批目标`Content Hub`字段中提供的&#x200B;**[!UICONTROL 和]**&#x200B;选项。
 
    * 选择&#x200B;**[!UICONTROL 投放]**&#x200B;以使资源对具有OpenAPI功能的Dynamic Media和Content Hub均可用。 如果您未启用Content Hub，选择此选项将使资源仅对具有OpenAPI功能的Dynamic Media可用。
    * 选择&#x200B;**[!UICONTROL Content Hub]**&#x200B;以使Content Hub可以使用这些资源。
@@ -130,7 +131,7 @@ ht-degree: 7%
 
 1. 选择&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中提供的&#x200B;**[!UICONTROL Dynamic Media with OpenAPI]**。
 
-1. 单击&#x200B;**[!UICONTROL 复制URL]**&#x200B;以复制资产的投放URL。
+1. 单击&#x200B;**[!UICONTROL 复制URL]**以复制资产的投放URL。
    ![动态演绎](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]

@@ -2,15 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资产选择器'
 description: 使用资产选择器在您的应用程序中搜索、查找和检索资产的元数据和演绎版。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: a57bcc24798dbb3acd3d19526848c4dd9adf3d1f
-workflow-type: ht
-source-wordcount: '1562'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1568'
+ht-degree: 99%
 
 ---
 
-# 微前端资产选择器 {#Overview}
+# 微前端资源选择器 {#Overview}
 
 微前端资源选择器提供了一个用户界面，它可以轻松地与 [!DNL Experience Manager Assets] 存储库集成，以便您能够浏览或搜索存储库中可用的数字资源，并在您的应用程序创作体验中使用它们。
 
@@ -202,7 +203,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 

@@ -5,10 +5,11 @@ contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin, Developer
 feature: Asset Management
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3407'
+source-wordcount: '3413'
 ht-degree: 11%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 11%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service | 本文 |
 
 通过[!DNL Adobe Experience Manager]中的多站点管理器(MSM)功能，用户可以重复使用一次创作，并在多个Web位置重复使用的内容。 对于名为[!DNL Assets]的MSM的数字资产，可使用相同的功能。 使用针对[!DNL Assets]的MSM，您可以：

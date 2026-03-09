@@ -1,11 +1,12 @@
 ---
 title: Content Hub 概述
 description: 了解有关 Content Hub 的更多信息、其主要优势、如何访问它以及如何围绕 Content Hub 中的可用选项提供反馈。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 0ad1fd40a108893333b9aa9beae1767f6b59c02b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 68%
+source-wordcount: '936'
+ht-degree: 67%
 
 ---
 

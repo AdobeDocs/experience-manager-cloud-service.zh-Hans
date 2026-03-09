@@ -3,12 +3,13 @@ title: AEM as a Cloud Service 的目标选择器
 description: 使用 AEM 目标选择器显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 85%
+source-wordcount: '1880'
+ht-degree: 84%
 
 ---
 
@@ -128,18 +129,18 @@ interface SelectedDestination {
 
 | 属性 | 类型 | 解释 |
 |---|---|---|
-| *repo:repositoryId* | 字符串 | 存储资源的存储库的唯一标识符。 |
-| *repo:id* | 字符串 | 资源的唯一标识符。 |
-| *repo:assetClass* | 字符串 | 资源的分类（例如，图像、视频或文档）。 |
-| *repo:name* | 字符串 | 资源的名称，包括文件扩展名。 |
-| *repo:size* | 数字 | 资源的大小，以字节为单位。 |
-| *repo:path* | 字符串 | 资源在存储库中的位置。 |
-| *repo:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
-| *repo:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
-| *repo:createdBy* | 字符串 | 创建资源的用户或系统。 |
-| *repo:createDate* | 字符串 | 资源的创建日期和时间。 |
-| *repo:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
-| *repo:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
+| *存储库:repositoryId* | 字符串 | 存储资源的存储库的唯一标识符。 |
+| *存储库:id* | 字符串 | 资源的唯一标识符。 |
+| *存储库:assetClass* | 字符串 | 资源的分类（例如，图像、视频或文档）。 |
+| *存储库:name* | 字符串 | 资源的名称，包括文件扩展名。 |
+| *存储库:size* | 数字 | 资源的大小，以字节为单位。 |
+| *存储库:path* | 字符串 | 资源在存储库中的位置。 |
+| *存储库:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
+| *存储库:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
+| *存储库:createdBy* | 字符串 | 创建资源的用户或系统。 |
+| *存储库:createDate* | 字符串 | 资源的创建日期和时间。 |
+| *存储库:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
+| *存储库:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
 | *dc:format* | 字符串 | 资源的格式。 |
 | *_page* | 顺序：字符串；计数：数量； | 包括文档的页码。 |
 
@@ -268,10 +269,10 @@ interface SelectedDestination {
 
 通过目标选择器，您可以在四种不同的视图中查看资源：
 
-* ![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL **列表视图**]：列表视图在单个列中显示可滚动的文件和文件夹。
-* ![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL **网格视图**]：网格视图在行和列的网格中显示可滚动的文件和文件夹。
-* ![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL **库视图**]：库视图在居中锁定的水平列表中显示文件或文件夹。
-* ![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布视图**]：瀑布视图以桥的形式显示文件或文件夹。
+* ![列表视图](assets/do-not-localize/list-view.png)[!UICONTROL **列表视图**]：列表视图在单个列中显示可滚动的文件和文件夹。
+* ![网格视图](assets/do-not-localize/grid-view.png)[!UICONTROL **网格视图**]：网格视图在行和列的网格中显示可滚动的文件和文件夹。
+* ![库视图](assets/do-not-localize/gallery-view.png)[!UICONTROL **库视图**]：库视图在居中锁定的水平列表中显示文件或文件夹。
+* ![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布视图**]：瀑布视图以桥的形式显示文件或文件夹。
 
 ### 信息 {#info}
 

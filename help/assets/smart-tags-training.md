@@ -3,17 +3,18 @@ title: 使用 [!DNL Adobe AI] 智能服务自动标记资产
 description: 使用人工智能服务为资产添加上下文相关且具描述性的业务标记。
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
+exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1516'
 ht-degree: 7%
 
 ---
 
-
 # 智能标记训练
 
-智能标记培训允许您培训标记，这样您可以在相关标记不存在时指定具体信息。 它使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)的人工智能框架，根据您的标记结构和业务分类培训其图像识别算法。 随后，该内容智能可用于为另一组资产自动应用相关标记。默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于上传的资源。
+智能标记培训允许您培训标记，这样您可以在相关标记不存在时指定具体信息。 它使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)的人工智能框架，根据您的标记结构和业务分类训练其图像识别算法。 随后，该内容智能可用于为另一组资产自动应用相关标记。默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于上传的资源。
 
 ## 确定智能标记训练的要求 {#smart-tag-training-requirement}
 

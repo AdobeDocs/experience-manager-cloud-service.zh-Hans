@@ -1,18 +1,19 @@
 ---
-title: 预览资源
+title: 预览资产
 description: 了解如何在Dynamic Media中预览资源，以便查看客户在其Web浏览器中的查看方式。
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 1%
+source-wordcount: '1234'
+ht-degree: 2%
 
 ---
 
-# 预览资源{#previewing-assets}
+# 预览资产{#previewing-assets}
 
 您可以使用“预览”查看客户在其Web浏览器中查看已上传的数字资产时的显示方式。 分配给资产的默认嵌入式跨设备查看器用于预览。
 

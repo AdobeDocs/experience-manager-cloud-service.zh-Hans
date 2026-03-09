@@ -4,10 +4,11 @@ description: 了解如何在 [!DNL Experience Manager] as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1374'
 ht-degree: 6%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 数字资产通常与指定使用条款和持续时间的许可证相关联。 使用[!DNL Experience Manager]平台，您可以有效地管理资产到期信息和许可信息。
@@ -54,7 +55,7 @@ ht-degree: 6%
 
 此外，如果错误阻止调度程序在当前周期中检测过期资产，则调度程序在下一个周期中重新检查这些资产并检测其过期状态。
 
-要启用[!DNL Assets]控制台以显示引用的复合资产以及过期的子资产，请在[!DNL Experience Manager]中配置&#x200B;**[!UICONTROL Adobe CQ DAM到期通知]**&#x200B;工作流。 基于时间的调度程序会调度一个作业，以在特定时间检查资产是否已过期子资产。 作业完成后，具有过期子资产和引用资产的资产会在搜索结果中显示为已过期。
+要启用[!DNL Assets]控制台以显示引用的复合资产以及过期的子资产，请在&#x200B;**[!UICONTROL 中配置]** Adobe CQ DAM到期通知[!DNL Experience Manager]工作流。 基于时间的调度程序会调度一个作业，以在特定时间检查资产是否已过期子资产。 作业完成后，具有过期子资产和引用资产的资产会在搜索结果中显示为已过期。
 
 1. 访问与您的环境关联的[!DNL Cloud Manager] Git存储库。
 1. 提交存储库中名为`com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json`的文件，该文件包含以下内容。
@@ -69,7 +70,7 @@ ht-degree: 6%
 
 可以使用以下属性配置调度程序：
 
-* 属性`cq.dam.expiry.notification.scheduler.istimebased`的`true`值将启动调度程序。 *属性`cq.dam.expiry.notification.scheduler.timebased.rule`的值是用于定义时间的正则表达式。 以上示例在00小时启动调度程序作业。
+* 属性`true`的`cq.dam.expiry.notification.scheduler.istimebased`值将启动调度程序。 *属性`cq.dam.expiry.notification.scheduler.timebased.rule`的值是用于定义时间的正则表达式。 以上示例在00小时启动调度程序作业。
 * 如果`send_email`设置为`true`，则资产创建者（将特定资产上传到[!DNL Assets]的人员）将在资产过期时收到电子邮件。
 * 计划程序的一个迭代中过期的最大资源数是属性`asset_expired_limit`的值。
 * 要定期运行作业，请将属性`cq.dam.expiry.notification.scheduler.istimebased`的值设置为`false`，并将属性`cq.dam.expiry.notification.scheduler.period.rule`的值设置为以秒为单位的时间。

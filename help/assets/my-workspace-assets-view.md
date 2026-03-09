@@ -1,12 +1,13 @@
 ---
 title: 我的适用于Assets的Workspace视图
 description: “我的工作区”是一个页面，其中提供各种可自定义的视觉模块，以方便访问 Assets 用户界面的关键区域以及与用户密切相关的信息。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '751'
 ht-degree: 84%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 84%
 
 Assets 现在包括一个可自定义的工作区，此工作区提供各种小组件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
 
-通过从可在左导航窗格中找到的各项中单击&#x200B;**[!UICONTROL 我的工作区]**，即可访问“我的工作区”。“我的工作区”包括多种小组件，其中显示“快速访问”、“见解”、“任务”和“内容”小组件。可根据自己的偏好配置如何在工作区中显示这些小组件。
+通过从可在左导航窗格中找到的各项中单击&#x200B;**[!UICONTROL 我的工作区]**，即可访问“我的工作区”。“我的工作区”包括多种小组件，其中显示“快速访问”、“洞察”、“任务”和“内容”小组件。可根据自己的偏好配置如何在工作区中显示这些小组件。
 
 >[!NOTE]
 >
->“见解”小组件仅对管理员可见。
+>“洞察”小组件仅对管理员可见。
 
 <!--
 
@@ -51,16 +52,16 @@ Highlights upcoming features for Assets.
    ![为群组固定项目](assets/pin-items-for-groups.png)
 1. 单击&#x200B;**[!UICONTROL “固定”。]**
 
-   选择的项目会显示在“我的工作区”的&#x200B;**[!UICONTROL “快速访问”]**&#x200B;部分。
+   选择的项目会显示在“我的工作区”的&#x200B;**[!UICONTROL “快速访问”]**部分。
    ![工作区中的“任务”](assets/quick-access.png)
 
-**见解**
+**洞察**
 
-管理员可查看过去 30 天内在 Assets 环境中执行的下载和上传次数的摘要。可单击&#x200B;**[!UICONTROL 查看全部]**&#x200B;以快速导航到“见解”页面，查看多个更详细的仪表板。
+管理员可查看过去 30 天内在 Assets 环境中执行的下载和上传次数的摘要。可单击&#x200B;**[!UICONTROL 查看全部]**&#x200B;以快速导航到“洞察”页面，查看多个更详细的仪表板。
 
-您还可以使用“我的Workspace”的&#x200B;**分析**&#x200B;部分在Assets视图部署中查看热门搜索词以及搜索这些词的次数。 您还可以访问详细的见解，以查看过去 30 天或 12 个月内的热门搜索。
+您还可以使用“我的Workspace”的&#x200B;**分析**&#x200B;部分在Assets视图部署中查看热门搜索词以及搜索这些词的次数。 您还可以访问详细的洞察，以查看过去 30 天或 12 个月内的热门搜索。
 
-![工作区中的“见解”](assets/insights.png)
+![工作区中的“洞察”](assets/insights.png)
 
 **任务**
 
@@ -86,7 +87,7 @@ Highlights upcoming features for Assets.
 
 1. 单击可在左侧导航窗格中找到的&#x200B;**[!UICONTROL 我的工作区]**，然后单击&#x200B;**[!UICONTROL 自定义]**。
 
-1. 关闭不需要在工作区中显示的小组件的开关。还可将小组件拖至适当位置以更新它在工作区中的显示顺序。
+1. 关闭不需要在工作区中显示的小组件的切换按钮。还可将小组件拖至适当位置以更新它在工作区中的显示顺序。
 
 1. 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以保存更改。
 

@@ -2,11 +2,12 @@
 title: 传递 API
 description: 了解如何使用投放API。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 5%
+source-wordcount: '642'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 5%
 
 下表说明了各种可用交付API的使用情况：
 
-| 投放API | 描述 |
+| 传递 API | 描述 |
 |---|---|
 | [以请求的输出格式表示资产的Web优化二进制表示形式](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) | 根据请求中发送的资产ID，以请求的输出格式返回资产的Web优化二进制表示形式。 此外，您可以定义各种图像修饰符，例如宽度、高度、旋转、翻转、质量、裁切、格式和[智能裁切](/help/assets/dynamic-media/image-profiles.md)。 有关支持的格式和图像修饰符，请参阅[API详细信息](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)。<br>Adobe建议对所有图像格式类型使用此API。 |
 | [资产的Web优化二进制表示形式](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAsset) | 方便API将默认应用于响应中返回的资产的Web优化二进制表示形式。 默认设置包括标准JPEG/WEBP格式、质量=> 65和宽度=> 1024。 |
@@ -34,16 +35,16 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->您可以测试任何修饰符，但通常无法通过实验API获得该修饰符。 例如，`</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->&#x200B;>单击此处了解有关如何使用[实验API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修饰符完整列表](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的更多信息。
+>您可以测试任何通常不是通过实验性 API 提供的修饰符。例如，`</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>单击此处了解有关如何使用[实验API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修饰符完整列表](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的更多信息。
 
 具有OpenAPI功能的Dynamic Media还支持长格式视频。 视频可支持最大 50 GB，最长 2 小时。
 
-有关可用的Dynamic Media产品及其功能的信息，请参阅[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+有关可用的 Dynamic Media 产品及其功能，请参阅 [Dynamic Media Prime 和 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
 >[!NOTE]
 >
->DM Prime客户可以使用基本的图像修饰符，包括旋转、裁切、翻转、高度、宽度和质量。 智能成像不支持DM Prime客户使用AVIF。
+>DM Prime 客户可使用基本的图像修改功能，包括旋转、裁剪、翻转、高度、宽度和质量。智能成像功能在 DM Prime 中不支持 AVIF。
 
 ## 投放API端点 {#delivery-apis-endpoint}
 
@@ -73,7 +74,7 @@ headers: {
     }
 ```
 
-要调用交付API，需要`Authorization`详细信息中的IMS令牌以交付受限制的资产。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以生成IMS令牌并在投放API请求标头中正确使用它。
+要调用交付API，需要`Authorization`详细信息中的IMS令牌以交付受限制的资产。 IMS令牌从技术帐户中获取。 请参阅[获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以创建新的技术帐户。 请参阅[生成访问令牌](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以生成IMS令牌并在投放API请求标头中正确使用它。
 
 
 要查看请求示例、响应示例和响应代码，请参阅[交付API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)。

@@ -1,13 +1,14 @@
 ---
 title: 变量 — 创作片段内容(Assets — 内容片段)
 description: 了解内容片段变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而提高灵活性。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2536'
 ht-degree: 52%
 
 ---
@@ -502,7 +503,7 @@ ht-degree: 52%
 
 >[!CAUTION]
 >
->同步仅可将更改&#x200B;*从&#x200B;**母版**&#x200B;复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
 >仅会同步变体的当前元素。
 >

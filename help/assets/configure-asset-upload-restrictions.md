@@ -1,13 +1,14 @@
 ---
 title: 配置资产上传限制
 description: 配置Adobe Experience Manager Assets以根据MIME类型限制用户可以上传的资源类型。 它有助于防止意外上传不需要的格式和恶意文件。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 13%
+source-wordcount: '378'
+ht-degree: 14%
 
 ---
 

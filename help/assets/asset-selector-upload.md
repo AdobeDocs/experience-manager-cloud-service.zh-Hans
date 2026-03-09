@@ -2,10 +2,11 @@
 title: 在资源选择器中上传资源
 description: 使用上传功能在资产选择器MFE中上传资产
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---

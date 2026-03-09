@@ -1,10 +1,11 @@
 ---
 title: 管理 Content Hub 上的许可资产
 description: 了解如何将许可证字段添加到资源元数据表单、将许可证元数据属性应用于资源文件夹以及审批具有许可证的资源以供使用。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: bfa7ceeb839574ff1b80ffc25b6519a629247385
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '616'
 ht-degree: 3%
 
 ---

@@ -1,26 +1,27 @@
 ---
 title: 元数据 — 片段属性(Assets — 内容片段)
 description: 了解如何查看和编辑内容片段的元数据属性。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '291'
 ht-degree: 65%
 
 ---
 
-# 元数据 – 片段属性 {#metadata-fragment-properties}
+# 元数据——片段属性 {#metadata-fragment-properties}
 
-了解如何在AEM中查看和编辑内容片段的元数据属性以调整Headless内容。
+了解如何在AEM中查看和编辑内容片段的元数据属性以调整您的Headless内容。
 
 >[!NOTE]
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从[内容片段](/help/sites-cloud/administering/content-fragments/authoring.md)控制台访问）的详细信息，请参阅站点文档&#x200B;**内容片段 — 创作**。
 
 ## 编辑属性/元数据 {#editing-properties-meta-data}
 

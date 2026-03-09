@@ -3,11 +3,12 @@ title: Assets Ultimate
 description: 详细了解 Assets Ultimate 的核心要点，例如主要优势、用户类型及其权限。
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '846'
+ht-degree: 99%
 
 ---
 

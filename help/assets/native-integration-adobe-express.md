@@ -1,13 +1,14 @@
 ---
 title: 使用内容审查程序访问Adobe Express中的AEM Assets
 description: 使用内容审查程序，直接在本机Adobe Express集成中发现和访问AEM Assets。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 6d80567106fe7c32d8073ca093f895ff28500413
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2581'
-ht-degree: 1%
+source-wordcount: '2587'
+ht-degree: 2%
 
 ---
 
@@ -154,7 +155,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ![预览Dynamic Media呈现版本](assets/native-express-dynamic-media-preview.png)
 
-单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter将转换实时应用于节目。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 将资源从预览拖放到画布上。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
+单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter将转换实时应用于节目。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 将资源从预览拖放到画布上。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
 
 >[!IMPORTANT]
 > 
@@ -210,7 +211,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 1. 浏览或搜索资源并将它们拖放到画布上。
 
-1. 选择要替换的图像。 单击“替换”**&#x200B;**，然后选择&#x200B;**[!UICONTROL AEM Assets]**&#x200B;以及其他各种选项。
+1. 选择要替换的图像。 单击“替换”****，然后选择&#x200B;**[!UICONTROL AEM Assets]**&#x200B;以及其他各种选项。
 
    ![AEM替换](assets/aem-replace.png)
 
@@ -231,13 +232,13 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 2. 选择&#x200B;**AEM Assets**。 Adobe Express显示上传对话框。
 
 3. 选择&#x200B;**当前页面**&#x200B;或&#x200B;**所有页面**。 指定要导出的资产的名称和格式。 您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式导出画布内容。 格式会根据画布页面上的资产自动进行调整。
-选择&#x200B;**当前页面**&#x200B;会将当前页面上的资产保存到目标文件夹中。 如果选择&#x200B;**所有页面**，并且导出格式不是PDF，则所有画布页面都将作为单独的文件保存到目标文件夹中的新文件夹中。 如果导出格式为PDF，则所有画布页面都将作为单个PDF文件保存到目标文件夹中。
+选择**当前页面**&#x200B;会将当前页面上的资产保存到目标文件夹中。 如果选择&#x200B;**所有页面**，并且导出格式不是PDF，则所有画布页面都将作为单独的文件保存到目标文件夹中的新文件夹中。 如果导出格式为PDF，则所有画布页面都将作为单个PDF文件保存到目标文件夹中。
 
 4. 单击&#x200B;**目标文件夹**&#x200B;下的文件夹图标以选择一个位置并保存资产。
 
    ![将资源保存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.png)
 
-5. 可选：您可以使用&#x200B;**项目或营销活动名称**&#x200B;字段为上载添加营销活动元数据。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
+5. 可选：您可以使用&#x200B;**项目或营销活动名称**字段为上载添加营销活动元数据。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
 作为最佳实践，Adobe建议在其余字段中指定值，并为您上传的资源创建增强的搜索体验。
 
 6. 同样，为&#x200B;**[!UICONTROL 关键字]**&#x200B;和&#x200B;**[!UICONTROL 渠道]**&#x200B;字段定义值。
@@ -250,7 +251,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ## 支持的文件格式 {#supported-file-formats-import-assets}
 
-Adobe Express本机支持[上可用的格式。请查看最低图像要求](https://helpx.adobe.com/cn/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 但是，AEM Assets支持以下格式类型：
+Adobe Express本机支持[上可用的格式。请查看最低图像要求](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 但是，AEM Assets支持以下格式类型：
 
 | 支持的格式 | 最大尺寸/分辨率 | 最大文件大小 |
 |------------------|---------------------------------------------|---------------|

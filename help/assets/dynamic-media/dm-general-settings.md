@@ -8,10 +8,11 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2512'
 ht-degree: 0%
 
 ---
@@ -55,7 +56,7 @@ hidefromtoc: yes -->
    * [Illustrator](#illustrator-tab)选项卡
 
    ![Dynamic Media常规设置页面](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**&#x200B;选项卡。*<br><br>
+   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**选项卡。*<br><br>
 
 1. 完成后，在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -89,7 +90,7 @@ hidefromtoc: yes -->
 
   控制任何现有手动裁切定义的保留。
 
-  另请参阅Dynamic Media查看器参考指南中的[UploadPostJob](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
+  另请参阅Dynamic Media查看器参考指南中的`preserveCrop`UploadPostJob[和](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)ReprocessAssetsJob[中的](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)。
 
 ## 默认上载选项 {#default-upload-options}
 
@@ -106,7 +107,7 @@ hidefromtoc: yes -->
 | **[!UICONTROL 阈值]** | 必需。<br>阈值是应用钝化蒙版滤镜时忽略的对比度范围。 这种效果非常重要，因此使用此滤波器时，图像不会引入“杂色”。 值范围为`0` - `255`，这是灰度图像中的亮度阶数。 `0`=黑色，`128`=50%灰色和`255`=白色。<br>阈值为`12`时，忽略肤色亮度的细微变化，以避免添加杂色，但仍会为相异区域（如睫毛与皮肤相遇的区域）添加边缘对比度。<br>如果您有某人的面部照片，则“钝化蒙版”会影响图像的对比度部分。 例如，睫毛和皮肤相遇可产生明显对比区域，而皮肤本身光滑。 即使最光滑的皮肤也会表现出亮度值的细微变化。 如果不使用阈值，则滤镜会强调外观像素中的这些细微变化。 反过来，在增加睫毛上的对比度的同时，产生噪音和不希望的效果，增强锐利度。<br>为了避免此问题，引入了一个阈值，该阈值告知滤镜忽略对比度没有显着变化的像素，如平滑外观。<br>在前面显示的拉链图形中，请注意拉链旁边的纹理。 由于阈值过低，图像噪声难以抑制。 |
 | **[!UICONTROL 单色]** | 选择以钝化蒙版图像亮度（强度）。<br>取消选择以分别取消锐化每个颜色分量的蒙版。 |
 
-另请参阅[在Adobe Dynamic Media和图像服务器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=zh-Hans)上锐化图像。
+另请参阅[在Adobe Dynamic Media和图像服务器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en)上锐化图像。
 
 ### PostScript选项卡 {#postscript-tab}
 
@@ -133,7 +134,7 @@ hidefromtoc: yes -->
 | **[!UICONTROL 创建模板]** | 从PSD文件中的图层创建模板。 |
 | **[!UICONTROL 提取文本]** | 提取文本，以便用户能够在查看器中搜索文本。 |
 | **[!UICONTROL 将图层扩展至背景大小]** | 将已翻录图像图层的大小扩展到背景图层的大小。 |
-| **[!UICONTROL 图层命名]** | 将已翻录图像图层的大小扩展到背景图层的大小。<br>· **[!UICONTROL 图层名称]** — 将图像命名为PSD文件中的图层名称。 例如，原始PSD文件中名为“Price Tag”的图层会变成名为“Price Tag”的图像。 但是，如果PSD文件中的图层名称是默认的Photoshop图层名称（背景、第1层、第2层等），则图像将根据PSD文件中的图层编号进行命名。 <br>· **[!UICONTROL Photoshop和图层编号]** — 将图像命名为PSD文件中的图层编号，忽略原始图层名称。 使用Photoshop文件名和附加的图层编号来命名图像。 例如，名为`Spring Ad.psd`的文件的第二层名为`Spring Ad_2`，即使它在Photoshop中具有非默认名称。<br>· **[!UICONTROL Photoshop和图层名称]** — 将图像命名为PSD文件后跟图层名称或图层编号。 如果PSD文件中的图层名称是默认的Photoshop图层名称，则使用图层编号。 例如，名为`SpringAd`的PSD文件中名为`Price Tag`的图层名为`Spring Ad_Price Tag`。 默认名称为Layer 2的层称为`Spring Ad_2`。 |
+| **[!UICONTROL 图层命名]** | 将已翻录图像图层的大小扩展到背景图层的大小。<br>· **[!UICONTROL 图层名称]** — 将图像命名为PSD文件中的图层名称。 例如，原始PSD文件中名为“Price Tag”的图层会变成名为“Price Tag”的图像。 但是，如果PSD文件中的图层名称是默认的Photoshop图层名称（背景、第1层、第2层等），则图像将根据PSD文件中的图层编号进行命名。 <br>· **[!UICONTROL Photoshop和图层编号]** — 将图像命名为PSD文件中的图层编号，忽略原始图层名称。 使用Photoshop文件名和附加的图层编号来命名图像。 例如，名为`Spring Ad.psd`的文件的第二层名为`Spring Ad_2`，即使它在Photoshop中具有非默认名称。<br>· **[!UICONTROL Photoshop和图层名称]** — 将图像命名为PSD文件后跟图层名称或图层编号。 如果PSD文件中的图层名称是默认的Photoshop图层名称，则使用图层编号。 例如，名为`Price Tag`的PSD文件中名为`SpringAd`的图层名为`Spring Ad_Price Tag`。 默认名称为Layer 2的层称为`Spring Ad_2`。 |
 | **[!UICONTROL 锚点]** | 指定如何在模板中定位图像，这些模板是从PSD文件生成的分层组合生成的。 默认情况下，锚点是中心。 中心锚点允许替换图像以最佳方式填充相同的空间，而不管替换图像的长宽比如何。 当引用模板并使用参数替换时，替换此图像的不同方面的图像有效地占用了相同的空间。 如果您的应用程序要求替换图像填充模板中分配的空间，请更改为其他设置。 |
 
 ### PDF选项卡 {#pdf-tab}

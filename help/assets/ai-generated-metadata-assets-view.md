@@ -1,13 +1,14 @@
 ---
 title: 使用人工智能生成的元数据增强内容发现
 description: 了解如何使用人工智能生成的元数据增强内容发现
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
+exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '363'
 ht-degree: 4%
 
 ---
-
 
 # 使用人工智能生成的元数据增强内容发现 {#ai-smart-tags}
 

@@ -1,20 +1,21 @@
 ---
 title: 内容片段 — 配置浏览器(Assets — 内容片段)
 description: 了解如何在配置浏览器中启用内容片段功能。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 80%
+source-wordcount: '361'
+ht-degree: 79%
 
 ---
 
 # 内容片段 – 配置浏览器{#content-fragments-configuration-browser}
 
-了解如何在配置浏览器中启用某些内容片段功能，以使用AEM强大的Headless投放功能。
+了解如何在配置浏览器中启用某些内容片段功能，以便使用AEM强大的Headless投放功能。
 
 ## 为您的实例启用内容片段功能 {#enable-content-fragment-functionality-instance}
 

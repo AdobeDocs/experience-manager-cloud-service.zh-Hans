@@ -5,11 +5,12 @@ mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: bd43f86c9d3ad017a5e963800938e3ead98b7441
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 4%
+source-wordcount: '290'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 {{work-with-dynamic-media}}
 
-[Dynamic Media](https://business.adobe.com/cn/products/experience-manager/assets/dynamic-media.html)通过按需提供丰富的可视化推销和营销资产帮助您管理资产，这些资产会自动扩展以用于Web、移动和社交网站上的使用。 通过使用一组主要源资产，Dynamic Media通过其可扩展、性能优化的全球网络实时生成和提供多种多样的丰富内容变体。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)通过按需提供丰富的可视化推销和营销资产帮助您管理资产，这些资产会自动扩展以用于Web、移动和社交网站上的使用。 通过使用一组主要源资产，Dynamic Media通过其可扩展、性能优化的全球网络实时生成和提供多种多样的丰富内容变体。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 

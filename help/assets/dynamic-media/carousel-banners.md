@@ -1,18 +1,19 @@
 ---
-title: 传送横幅
+title: 轮播横幅
 description: 了解如何在Dynamic Media中使用轮播横幅。
 contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4492'
+source-wordcount: '4498'
 ht-degree: 1%
 
 ---
 
-# 传送横幅{#carousel-banners}
+# 轮播横幅{#carousel-banners}
 
 轮播横幅通过轻松创建交互式轮播促销内容并将其交付到任何屏幕，使营销人员能够推动转化。
 
@@ -147,10 +148,10 @@ ht-degree: 1%
    <td>单个SKU，在查询字符串中找到。</td>
    <td><p>记录的快速视图URL包括：</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL中的唯一变量部分是<code>productId=</code>查询字符串参数的值，它显然是SKU值。 因此，热点或图像映射只需要使用如下值填充的SKU字段 <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -166,9 +167,9 @@ ht-degree: 1%
    <td>查询字符串中的SKU和类别ID。</td>
    <td><p>记录的快速视图URL包括：</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>在这种情况下，URL包含两个不同的部分。 SKU存储在<code>prodId</code>参数中，类别ID存储在<code>category=</code>参数中。</p> <p>因此，热点/图像映射定义是对。 即SKU值和名为<code>categoryId</code>的额外变量。 生成的对如下所示：</p>
     <ul>
      <li><p>SKU是<strong><code>305466</code></strong>，<code>categoryId</code>是<code>1100004</code>。</p> </li>

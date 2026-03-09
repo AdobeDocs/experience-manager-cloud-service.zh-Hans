@@ -1,13 +1,14 @@
 ---
 title: 内容片段结构树(Assets — 内容片段)
 description: 使用 AEM 中内容片段编辑器的结构树功能，更好地了解您的 headless 内容。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '189'
 ht-degree: 42%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 42%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从[内容片段](/help/sites-cloud/administering/content-fragments/authoring.md)控制台访问）的详细信息，请参阅站点文档&#x200B;**内容片段 — 创作**。
 
 在内容片段编辑器中，您可以选择结构树图标：
 

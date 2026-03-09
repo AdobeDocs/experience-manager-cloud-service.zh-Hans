@@ -7,11 +7,12 @@ topic-tags: introduction
 content-type: reference
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 2%
+source-wordcount: '2258'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 2%
 
 在Dynamic Media中使用3D资产无需额外安装。
 
-3d![&#128279;](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)中的鞋
+3d![中的](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)鞋
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -115,7 +116,7 @@ Dynamic Media支持以下3D文件格式。
 1. 要在详细信息页面中打开资产，请选择3D资产的卡。
 1. 在3D资产的“详细信息”页面上，执行以下任一操作：
 
-   | 查看 | 描述 | 鼠标操作 | 触摸屏操作 |
+   | 视图 | 描述 | 鼠标操作 | 触摸屏操作 |
    | --- | --- | --- | --- |
    | **转动相机** | 围绕 3D 场景和对象旋转视图。 | 左键单击+拖动。 | 单指按下+拖动。 |
    | **平移相机** | 向左、向右、向上或向下平移视图。 | 右键单击+拖动。 | 双指按下+拖动。 |
@@ -144,11 +145,11 @@ Dynamic Media支持以下3D文件格式。
    * 从浏览器中的页面URL中删除`/editor.html`。
 
    ![3D资产显示在3D媒体组件内](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
-以&#x200B;**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
+以**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
 
 1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，执行以下任一操作：
 
-   | 查看 | 描述 | 鼠标操作 | 触摸屏操作 |
+   | 视图 | 描述 | 鼠标操作 | 触摸屏操作 |
    | --- | --- | --- | --- |
    | **转动相机** | 围绕 3D 场景和对象旋转视图。 | 左键单击+拖动。 | 单指按下+拖动。 |
    | **平移相机** | 向左、向右、向上或向下平移视图。 | 右键单击+拖动。 | 双指按下+拖动。 |
@@ -222,7 +223,7 @@ Dynamic Media包含一个Dynamic Media 3D Media组件，您可以在[!DNL Experi
 
 将3D媒体组件添加到网页后，即可为其分配3D资产。
 
-请参阅将3D媒体组件添加到网页[&#128279;](#adding-the-three-d-media-component-to-a-web-page)。
+请参阅将3D媒体组件添加到网页[。](#adding-the-three-d-media-component-to-a-web-page)
 
 1. 在[!DNL Experience Manager Sites]页面编辑器中，单击&#x200B;**[!UICONTROL Assets]**&#x200B;图标以打开侧面板中的&#x200B;**[!UICONTROL Assets]**。
 1. 在下拉列表中，选择&#x200B;**[!UICONTROL 3D]**&#x200B;以仅显示3D资源文件类型。

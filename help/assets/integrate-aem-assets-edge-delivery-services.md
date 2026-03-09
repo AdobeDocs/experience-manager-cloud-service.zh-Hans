@@ -2,11 +2,12 @@
 title: 在为 [!DNL AEM Assets] 创作内容时集成 [!DNL Edge Delivery Services]
 description: 了解如何将 [!DNL AEM Assets] 与 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 与 [!DNL Microsoft Word] 集成，将 [!DNL Google Docs], integrate [!DNL AEM Assets] 与 [!DNL Universal Editor], integrate [!DNL Dynamic Media] 与 [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Universal Editor] 集成，以及如何将 [!DNL Dynamic Media with OpenAPI capabilities] 与 [!DNL Microsoft Word] 和 [!DNL Google Docs]集成。
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 0%
+source-wordcount: '634'
+ht-degree: 12%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 ## 将[!DNL AEM Assets]与[!DNL Edge Delivery Services]的基于文档的创作流集成 {#integrate-dynamic-media-with-edge-delivery-services}
 
-当[!DNL AEM Assets]与您的基于文档的创作工具（如[!DNL Microsoft Word]或[!DNL Google Docs]）集成时，它会在您的创作工具中提供资产选择器。 使用此资产选择器访问[!DNL AEM Assets]，并将批准的资产插入您的内容。
+当[!DNL AEM Assets]与您的基于文档的创作工具（如[!DNL Microsoft Word]或[!DNL Google Docs]）集成时，它会在您的创作工具中提供资产选择器。 使用此资产选择器可访问 [!DNL AEM Assets]，并将已批准的资产插入到您的内容中。
 如果您已经拥有[!DNL Edge Delivery Services]网站，请参阅[[!DNL AEM Assets] 插件](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)文档，以了解如何将[!DNL AEM Assets]与您现有的[!DNL AEM]项目集成。
 如果您没有[网站来发布在基于文档的创作工具中创作的](#integrate-aem-assets-with-microsoft-word-and-google-docs)包含内容，请遵循以下[先决条件 [!DNL AEM Assets] 和](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)集成[!DNL Edge Delivery Services]与基于文档的创作环境[!DNL AEM Assets]部分。
 
@@ -87,7 +88,7 @@ ht-degree: 0%
 
 ## 将[!DNL AEM Assets]与[!DNL Universal Editor]的基于[!DNL Edge Delivery Services]的创作流集成 {#integrate-aem-assets-with-universal-editor-UE}
 
-设置[!DNL Universal Editor]以与[!DNL AEM Assets]集成。 此集成允许您使用[!DNL Dynamic Media with OpenAPI capabilities]交付资产。
+设置[!DNL Universal Editor]以与[!DNL AEM Assets]集成。 通过此集成，您可以借助具备 OpenAPI 功能的 [!DNL Dynamic Media with OpenAPI capabilities] 交付资产。
 
-* 查看[站点 [!DNL Edge Delivery] 中的](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)配置，了解如何在[!DNL Universal Editor]中添加自定义资产选取器函数。 自定义资产选取器允许您将资产直接插入到[!DNL Universal Editor]内容中。
-* 请参阅[扩展概述](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)，了解如何在[!DNL AEM Assets]中创作时访问[!DNL Universal Editor]并插入资产。
+* 请参阅[在  [!DNL Edge Delivery]  站点](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)中进行配置，了解如何在 [!DNL Universal Editor] 中添加自定义资产选择器功能。自定义资产选择器可让您将资产直接插入至 [!DNL Universal Editor] 内容中。
+* 请参阅[扩展概述](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)，了解如何在 [!DNL Universal Editor] 创作内容时访问 [!DNL AEM Assets] 并插入所需资产。

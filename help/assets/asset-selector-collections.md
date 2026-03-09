@@ -2,10 +2,11 @@
 title: 资产选择器收藏集
 description: 使用资产选择器收藏集。
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '455'
 ht-degree: 7%
 
 ---
@@ -33,7 +34,7 @@ Additionally, you can [customize](/help/assets/asset-selector-customization.md) 
 
 ## 查看收藏集 {#view-collections}
 
-资产选择器允许您在![列表视图](assets/do-not-localize/list-view.png)列表视图或![网格视图](assets/do-not-localize/grid-view.png)网格视图中查看集合。 查看资产选择器[&#128279;](overview-asset-selector.md#types-of-view)中的视图类型。
+资产选择器允许您在![列表视图](assets/do-not-localize/list-view.png)列表视图或![网格视图](assets/do-not-localize/grid-view.png)网格视图中查看集合。 查看资产选择器[中的](overview-asset-selector.md#types-of-view)视图类型。
 
 ## 将资产拖放到收藏集 {#collection-drag-and-drop}
 

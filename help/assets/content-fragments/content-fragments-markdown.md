@@ -3,11 +3,12 @@ title: Markdown (Assets — 内容片段)
 description: 了解内容片段编辑器如何使用Markdown语法，轻松地创建Headless内容。
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '601'
 ht-degree: 69%
 
 ---

@@ -3,10 +3,11 @@ title: 启用Assets Ultimate
 description: 了解如何为新客户和现有客户启用Assets Ultimate。
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1408'
 ht-degree: 3%
 
 ---
@@ -69,7 +70,7 @@ Admin Console上的AEM as a Cloud Service实例包含以下产品配置文件：
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
+>如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`contenthub`之后提及`Limited Users`，而不是`delivery`。
 
 ## 为现有客户启用Assets Ultimate {#enable-assets-ultimate-existing-customers}
 
@@ -147,7 +148,7 @@ Admin Console上的AEM as a Cloud Service实例现在由以下产品配置文件
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
+>如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`contenthub`之后提及`Limited Users`，而不是`delivery`。
 
 ## 载入AEM Assets协作者用户 {#onboard-collaborator-users}
 
@@ -160,7 +161,7 @@ AEM Assets Collaborator用户可以通过贵组织在其他Assets产品和非Ado
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
-1. 单击Collaborators用户产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户或用户组添加到产品配置文件。
+1. 单击Collaborators用户产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户或用户组添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-collaborator-user-permissions.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。
@@ -187,7 +188,7 @@ AEM Assets高级用户可以访问所有AEM Assets功能，包括管理资产、
 1. 单击AEM as a Cloud Service的生产创作实例：
    AEM as a Cloud Service的![产品配置文件](assets/aem-cloud-service-instances.png)
 
-1. 单击Power users产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**&#x200B;以将用户或用户组添加到产品配置文件。
+1. 单击Power users产品配置文件，然后单击&#x200B;**[!UICONTROL 添加用户]**以将用户或用户组添加到产品配置文件。
    ![用户产品配置文件](assets/aem-assets-power-user-permissions.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。

@@ -4,10 +4,11 @@ description: 将资产、文件夹和收藏集发布到 Brand Portal。
 contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1293'
 ht-degree: 85%
 
 ---
@@ -32,8 +33,8 @@ ht-degree: 85%
 >[!NOTE]
 >
 >Adobe 建议实施错峰发布，最好在非高峰时段发布，这样 AEM 作者就不会占用过多的资源。
->&#x200B;>Assets应批量发布。 建议批次大小为15 K。
->&#x200B;> 对于作为[!DNL Cloud Service]的[!DNL Experience Manager Assets]，在实验室条件下观察到的传输速率为每小时1000个资源。 观察到此速率，平均大小为10 MB资源。
+>Assets应批量发布。 建议批次大小为15 K。
+> 对于作为[!DNL Experience Manager Assets]的[!DNL Cloud Service]，在实验室条件下观察到的传输速率为每小时1000个资源。 观察到此速率，平均大小为10 MB资源。
 
 ## 将资源发布到Brand Portal {#publish-assets-to-bp}
 
@@ -93,12 +94,12 @@ ht-degree: 85%
 >
 > * DAM-Users组的现有用户具有路径“/conf/global/settings/cloudconfigs/mediaportal”的读取权限
 > * 新用户（或非管理员用户）需要以下权限才能在Brand Portal上发布。
->   &#x200B;> 路径：
->   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   &#x200B;>`/libs : jcr:read`
->   &#x200B;>`/conf : jcr:read`
->   &#x200B;>`/content : jcr:read, crx:replicate`
->   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
+> 路径：
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## 将文件夹发布到Brand Portal {#publish-folders-to-brand-portal}
 
@@ -160,7 +161,7 @@ ht-degree: 85%
 
 1. 切换到列表视图![列表视图](assets/list-view.svg)以查看资源的当前发布状态。
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![已生成报告状态](assets/report-status.JPG)
 
@@ -258,11 +259,11 @@ ht-degree: 85%
 
 除了上述功能，您还可以将元数据架构、图像预设、搜索 Facet 和标记从 AEM Assets 发布到 Brand Portal。
 
-* [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=zh-Hans)
-* [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=zh-Hans)
+* [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-有关详细信息，请参阅 [Brand Portal 文档](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hans)。
+有关详细信息，请参阅 [Brand Portal 文档](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)。
 
 
 <!--

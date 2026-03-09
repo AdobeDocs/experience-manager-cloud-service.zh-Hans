@@ -5,10 +5,11 @@ contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4283'
 ht-degree: 10%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 本文介绍了如何在[!DNL Adobe Experience Manager Assets]中管理和编辑资源。 要管理[!DNL Content Fragments]，请参阅[[!DNL Content Fragments]](content-fragments/content-fragments.md)资源。
@@ -657,7 +658,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
+要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
 
 **另请参阅**
 

@@ -2,11 +2,12 @@
 title: 了解如何在 [!DNL Assets view]中搜索和发现资源？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1627'
 ht-degree: 74%
 
 ---
@@ -124,9 +125,9 @@ To remove custom filters:
 
 ## AI 搜索 {#ai-search}
 
-人工智能搜索是一种高级搜索功能，它理解用户查询的含义和意图，而不是依赖精确的关键字匹配。 它利用人工智能(AI)和机器学习提供更准确和上下文感知的结果。
+AI 搜索是一种高级搜索功能，它理解用户查询的含义和意图，而不是依赖精确的关键字匹配。 它利用人工智能(AI)和机器学习提供更准确和上下文感知的结果。
 
-传统基于关键字的搜索会查找精确的术语，而人工智能搜索则解释单词、概念和用户意图之间的关系。 这可以确保用户找到他们要查找的内容 — 即使他们的查询用词不同、包含拼写错误或使用另一种语言。
+传统基于关键字的搜索会查找精确的术语，而AI 搜索则解释单词、概念和使用意图之间的关系。 这可以确保用户找到他们要查找的内容 — 即使他们的查询用词不同、包含拼写错误或使用另一种语言。
 
 如果它的主要优势包括：
 
@@ -138,25 +139,25 @@ To remove custom filters:
 
 * **上下文感知搜索**：识别查询背后的意图，而不仅仅是确切的词。
 
-### AI搜索示例 {#examples-ai-search}
+### AI 搜索示例 {#examples-ai-search}
 
 **示例提示**：*喝咖啡的女人*
 
 传统的基于关键字的搜索将查找资产元数据的精确匹配项，如`Woman`、`drinking`、`Coffee`，并返回元数据中包含所有这些术语的资产。
 
-但是，在`Girl`的情况下，AI搜索与`Lady`、`Woman`之类的词匹配；在`Cappuccino`的情况下，与`Latte`和`Coffee`之类的词匹配。
+但是，AI 搜索在`Girl`和`Lady`与`Woman`、`Cappuccino`等词匹配，在`Latte`与`Coffee`匹配。
 
 同样，您可以将此提示用西班牙语或拼写错误`Woman`指定为`Wman`，仍可获得相同的结果。
 
 Assets视图中的![语义搜索](assets/semantic-search.png)
 
-### 在Assets视图中启用或禁用AI搜索 {#enable-disable-ai-search}
+### 在Assets视图中启用或禁用AI 搜索 {#enable-disable-ai-search}
 
-执行以下步骤以启用或禁用AI搜索：
+执行以下步骤以启用或禁用AI 搜索：
 
 1. 导航到&#x200B;**[!UICONTROL 设置]** >> **[!UICONTROL 常规设置]**，然后选择&#x200B;**[!UICONTROL 搜索]**&#x200B;选项卡。
 
-1. 在&#x200B;**[!UICONTROL 搜索]**&#x200B;部分中，选择&#x200B;**[!UICONTROL AI搜索]**&#x200B;以启用AI搜索，或选择&#x200B;**[!UICONTROL 关键字]**&#x200B;以禁用它。
+1. 在&#x200B;**[!UICONTROL 搜索]**&#x200B;部分中，选择&#x200B;**[!UICONTROL AI 搜索]**&#x200B;以启用AI 搜索，或选择&#x200B;**[!UICONTROL 关键字]**&#x200B;以禁用它。
 
    Assets视图中的![语义搜索](/help/assets/assets/enable-disable-ai-search.png)
 
@@ -394,7 +395,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 

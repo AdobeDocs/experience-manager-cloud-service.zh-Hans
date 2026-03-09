@@ -1,11 +1,12 @@
 ---
 title: 将远程 AEM Assets 与 AEM Sites 集成
 description: 了解如何配置AEM站点并将其与批准的AEM Assets连接。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 12%
+source-wordcount: '1011'
+ht-degree: 13%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 12%
 
 有效管理数字资产对于在各种在线平台上提供引人入胜且一致的品牌体验至关重要。 具有OpenAPI功能的Dynamic Media通过实现AEM Sites与AEM Assets as a Cloud Service之间的无缝集成，增强了数字资源管理。 这项创新功能允许您在多个AEM环境中轻松共享和管理不同类型的已批准数字资产，从而简化站点作者和内容编辑器的工作流程。
 
-具有OpenAPI功能的Dynamic Media允许站点作者直接在AEM页面编辑器和[内容片段](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=zh-Hans)中使用来自远程DAM的资源，从而简化内容创建和管理过程。
+具有OpenAPI功能的Dynamic Media允许站点作者直接在AEM页面编辑器和[内容片段](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)中使用来自远程DAM的资源，从而简化内容创建和管理过程。
 
 用户可以不受最大数量限制将多个AEM Sites实例连接到远程DAM部署，这是优于[连接的Assets](use-assets-across-connected-assets-instances.md)功能的显着优势。
 
@@ -21,7 +22,7 @@ ht-degree: 12%
 
 初始设置后，用户可以在AEM Sites实例上创建页面并根据需要添加资源。 添加资源时，用户可以选择存储在其本地DAM中的资源，也可以浏览并使用远程DAM中可用的资源。
 
-具有OpenAPI功能的Dynamic Media提供了其他一些好处，例如访问和使用内容片段中的远程资产，获取远程资产的元数据等等。 详细了解Dynamic Media与Connected Assets[&#128279;](/help/assets/dynamic-media-open-apis-faqs.md)相比具有OpenAPI功能的其他优势。
+具有OpenAPI功能的Dynamic Media提供了其他一些好处，例如访问和使用内容片段中的远程资产，获取远程资产的元数据等等。 详细了解Dynamic Media与Connected Assets[相比具有OpenAPI功能的](/help/assets/dynamic-media-open-apis-faqs.md)其他优势。
 
 ## 开始之前 {#pre-requisites-sites-integration}
 
@@ -34,7 +35,6 @@ ht-degree: 12%
 * 为AEM as a Cloud Service设置以下[环境变量](/help/implementing/cloud-manager/environment-variables.md#add-variables)：
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
-
      `pXXXX`引用程序ID <br>
      `eYYYY`引用环境ID
 
@@ -42,9 +42,9 @@ ht-degree: 12%
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]：您需要提交Adobe支持票证以获取IMS客户端ID。
 
-     或者，按照以下步骤在AEM Sites实例中为AEM 6.5配置[OSGi设置](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=zh-Hans)：
+     或者，按照以下步骤在AEM Sites实例中为AEM 6.5配置[OSGi设置](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)：
 
-   1. 登录到控制台，然后单击&#x200B;**[!UICONTROL OSGi] >**&#x200B;或
+   1. 登录到控制台，然后单击&#x200B;**[!UICONTROL OSGi] >**或
 使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
 
    1. 按如下方式配置&#x200B;**下一代Dynamic Media配置** (`NextGenDynamicMediaConfigImpl`) OSGi配置，将值替换为远程资源环境的值。
@@ -63,12 +63,12 @@ ht-degree: 12%
 
       ![新一代 Dynamic Media 配置 OSGi 配置窗口](/help/assets/assets/remote-assets-osgi.png)
 
-  了解有关[IMS身份验证](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=zh-Hans)的更多信息。
+  了解有关[IMS身份验证](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html)的更多信息。
 
   有关如何配置OSGi的详细信息，请参阅以下文档：
 
-   * 为 AEM as a Cloud Service [配置 Adobe Experience Manager as a Cloud Service 的 OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hans)
-   * 为 AEM 6.5 [配置 OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=zh-Hans)
+   * 为 AEM as a Cloud Service [配置 Adobe Experience Manager as a Cloud Service 的 OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html)
+   * 为 AEM 6.5 [配置 OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
 
 * 通过IMS访问登录到远程DAM AEM as a Cloud Service实例。 它是指对远程DAM环境具有IMS访问权限的Sites作者。
 
@@ -78,7 +78,7 @@ ht-degree: 12%
 
 一般建议使用 HTTP 运行所有生产 AEM 实例。但是，可能并未这样设置您的本地开发环境。但是，使用带有 OpenAPI 的 Dynamic Media 远程资产需要 HTTPS 才能运行。
 
-[使用本指南](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hans)在您要使用远程资源的任何地方（包括开发环境）配置 HTTPS。
+[使用本指南](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)在您要使用远程资源的任何地方（包括开发环境）配置 HTTPS。
 
 ## 从远程DAM访问资产 {#fetch-assets}
 
@@ -119,11 +119,11 @@ ht-degree: 12%
 
    >[!NOTE]
    >
-   >如果您没有AEM内容片段模型，则可能需要[创建一个](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=zh-Hans)。
+   >如果您没有AEM内容片段模型，则可能需要[创建一个](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en)。
 
 1. 单击文本组件旁边的![复选标记图标](/help/assets/assets/do-not-localize/checkmark-icon.svg)图标。
 1. 选择&#x200B;**[!UICONTROL 远程]**&#x200B;以从远程DAM获取资产。 <br>
-您可以根据需要选择&#x200B;**[!UICONTROL 本地]**&#x200B;或&#x200B;**[!UICONTROL 远程]** DAM存储库。
+您可以根据需要选择**[!UICONTROL 本地]**&#x200B;或&#x200B;**[!UICONTROL 远程]** DAM存储库。
 
    ![图像](/help/assets/assets/cf-pick.jpg)
 系统会提示您登录。

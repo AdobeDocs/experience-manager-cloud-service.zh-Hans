@@ -3,11 +3,12 @@ title: 为视频资产添加智能标记
 description: Experience Manager使用 [!DNL Adobe AI]自动将上下文和描述性智能标记添加到视频。
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 0%
+source-wordcount: '1195'
+ht-degree: 1%
 
 ---
 

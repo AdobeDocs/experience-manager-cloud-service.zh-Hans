@@ -2,10 +2,11 @@
 title: 用于自定义的资源选择器属性
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1426'
 ht-degree: 37%
 
 ---

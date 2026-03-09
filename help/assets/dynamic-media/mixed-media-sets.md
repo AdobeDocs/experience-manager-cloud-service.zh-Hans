@@ -4,11 +4,12 @@ description: 了解如何在Dynamic Media中使用混合媒体集。
 contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 11%
+source-wordcount: '1513'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 11%
 
 混合媒体集允许您在一个演示文稿中提供图像、图像集、旋转集和视频的混合。
 
-混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **&#x200B;**&#x200B;Pencil图标指示)。
+混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **** Pencil图标指示)。
 
 ![chlimage_1-137](assets/chlimage_1-348.png)
 
@@ -30,7 +31,7 @@ ht-degree: 11%
 
 1. [上传您的资源](#uploading-assets)。
 
-   首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/dynamic-media/image-sets.md) [和旋转集](/help/assets/dynamic-media/spin-sets.md)。 由于用户可以在混合媒体集查看器中缩放图像，因此选择图像时，请务必考虑缩放因素。 确保图像的最大大小至少为2000像素。
+   首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/dynamic-media/image-sets.md)[和旋转集](/help/assets/dynamic-media/spin-sets.md)。 由于用户可以在混合媒体集查看器中缩放图像，因此选择图像时，请务必考虑缩放因素。 确保图像的最大大小至少为2000像素。
 
    有关混合媒体集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
@@ -122,7 +123,7 @@ ht-degree: 11%
 
 ## 编辑混合媒体集 {#editing-mixed-media-sets}
 
-您可以像在Assets[&#128279;](/help/assets/manage-digital-assets.md)中编辑任何资源一样，直接在用户界面中对混合媒体集中的资源执行各种编辑任务。 您也可以在混合媒体集中执行以下操作：
+您可以像在Assets[中编辑任何资源一样，直接在用户界面](/help/assets/manage-digital-assets.md)中对混合媒体集中的资源执行各种编辑任务。 您也可以在混合媒体集中执行以下操作：
 
 * 将资源添加到混合媒体集。
 * 对混合媒体集中的资产重新排序。

@@ -2,12 +2,13 @@
 title: 开始使用 [!DNL Assets View]
 description: 如何访问  [!DNL Assets View]，其登录体验，支持的用例以及已知问题
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 89%
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -60,13 +61,13 @@ ht-degree: 89%
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何开始使用资源视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=zh-Hans)
+* [观看视频，了解如何开始使用资源视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

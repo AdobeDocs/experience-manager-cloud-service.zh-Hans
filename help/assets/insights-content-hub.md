@@ -2,11 +2,12 @@
 title: 在Content Hub中查看资产分析
 description: 了解如何在 [!DNL Content Hub]中查看资产分析
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 10%
+source-wordcount: '471'
+ht-degree: 11%
 
 ---
 
