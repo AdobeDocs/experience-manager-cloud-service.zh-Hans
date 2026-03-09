@@ -21,5 +21,5 @@ ht-degree: 2%
 
 如果您符合以下条件，则无需定义某些IMS属性即可执行身份验证：
 
-* 正在[Unified Shell](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)上集成Adobe应用程序
+* 正在[Unified Shell](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)上集成Adobe应用程序
 * 已生成用于身份验证的IMS令牌
