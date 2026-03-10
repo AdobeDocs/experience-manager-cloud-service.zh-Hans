@@ -4,10 +4,10 @@ description: 了解如何在 [!DNL Content Hub]中查看资产分析
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 11%
+source-wordcount: '500'
+ht-degree: 10%
 
 ---
 
@@ -58,18 +58,18 @@ Data for the selected time frame is displayed, including the upload count for th
 
 AEM Assets Content Hub中的Assets Insights提供了有关营销活动、渠道和区域间资产使用情况统计的宝贵数据，可帮助营销利益相关者了解资产性能和受欢迎程度以改进用户体验。
 
-### 谁可以访问Assets Insights中描述的功能？
+### 谁可以在AEM Assets Content Hub中访问Assets Insights中描述的功能？
 
-Content Hub用户能够执行操作并访问Assets Insights部分中提到的功能。
+AEM Assets Content Hub用户能够执行操作并访问Assets Insights部分中提到的功能。
 
-### “分析”选项卡中提供了哪些资产分析？
+### AEM Assets Content Hub的“分析”选项卡中提供了哪些资源分析？
 
-您可以查看存储库中的资源数、收藏集数、按年、月或日列出的Assets上传数、按日或月列出的活动用户数，以及基于文件格式的资源分类。
+您可以在AEM Assets Content Hub中查看存储库中的资源数、收藏集数、按年、月或日进行的Assets上传、按日或月进行的活动用户以及基于文件格式的资源分类。
 
 ### 如何在AEM Assets Content Hub中查看已上传资源的统计信息？
 
-您可以通过导航到“分析”选项卡，查看已上传资产和收藏集的统计信息，在该选项卡中，您可以按年、月或日跟踪上传历史记录。
+您可以通过导航到“分析”选项卡，在AEM Assets Content Hub中查看已上传资产和收藏集的统计信息，在该选项卡中，您可以按年、月或日跟踪上传历史记录。
 
-### 我可以分析哪些与Content Hub中的用户活动相关的指标？
+### 我可以分析哪些与AEM Assets Content Hub中的用户活动相关的指标？
 
-您可以按天或月分析活动用户的数量，并使用折线图直观地表示该数量。
+您可以按天或月分析活动用户数，在AEM Assets Content Hub中使用折线图直观地表示这些数量。

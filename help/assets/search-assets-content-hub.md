@@ -4,9 +4,9 @@ description: 了解如何在 [!DNL Content Hub]中搜索资源
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -173,11 +173,11 @@ ht-degree: 1%
 
 ### 如何缩小AEM Assets Content Hub中的搜索结果范围？
 
-在Content Hub中，可通过以下方式缩小搜索结果的范围：使用基于文本的搜索、应用各种过滤器（如文件格式、审批状态、修改日期等）、按标记或智能标记进行搜索，以及使用“过滤器”面板。 组合多个谓词或过滤器选项可帮助您精确定位所需的资源。
+在AEM Assets Content Hub中，可通过以下方式缩小搜索结果的范围：使用基于文本的搜索、应用各种过滤器（如文件格式、审批状态、修改日期等）、按标记或智能标记进行搜索，以及使用“过滤器”面板。 组合多个谓词或过滤器选项可帮助您精确定位所需的资源。
 
 ### 我能否在AEM Assets Content Hub中一次批量搜索多个资源？
 
-可以，您可以通过输入多个值（如名称、文件格式、标记）在Content Hub中执行批量搜索，这些值由指定的分隔符分隔。 批量搜索功能允许您在单个查询中快速查找多个资源，使其比逐个搜索资源更有效。
+能，您可以通过输入多个值（如名称、文件格式、标记）在AEM Assets Content Hub中执行批量搜索，这些值之间用指定的分隔符分隔。 批量搜索功能允许您在单个查询中快速查找多个资源，使其比逐个搜索资源更有效。
 
 
 ### 管理员是否可以自定义AEM Assets Content Hub搜索中可用的筛选器？
