@@ -4,9 +4,9 @@ description: 了解如何使用配置管道在AEM as a Cloud Service中部署各
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
+source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标环境。 通过这种方式，可以配置AEM as a Cloud Service中的许多功能，包括日志转发、清除相关的维护任务和几个CDN功能。
 
-对于&#x200B;**发布投放**&#x200B;项目，可通过Cloud Manager将配置管道部署到开发、暂存和生产环境类型。 配置文件可以使用[命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署到快速开发环境(RDE)。
+对于&#x200B;**发布投放**&#x200B;项目，可通过Cloud Manager将配置管道部署到开发、暂存和生产环境类型。 配置文件可以使用[命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署到快速开发环境(RDE)。 当需要为附加到发布交付环境的域配置流量时，请使用目标部署&#x200B;[**发布交付管道**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) （[生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)或[非生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)）。
 
-也可以通过Cloud Manager为&#x200B;**Edge Delivery**&#x200B;项目部署配置管道。
+也可以通过Cloud Manager为&#x200B;**Edge Delivery**&#x200B;项目部署配置管道。 当域连接到&#x200B;[**Edge Delivery站点**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)&#x200B;时，使用&#x200B;**Edge Delivery管道**。
 
 本文档的以下部分概述了有关如何使用配置管道以及如何为其构建配置的重要信息。 它描述了在配置管道支持的所有功能或功能子集之间共享的一般概念。
 
