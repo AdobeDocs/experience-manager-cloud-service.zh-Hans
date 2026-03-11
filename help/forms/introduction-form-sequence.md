@@ -4,11 +4,12 @@ description: 通过  [!DNL Experience Manager Forms] 可定义一系列表单面
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 88%
+source-wordcount: '543'
+ht-degree: 87%
 
 ---
 
@@ -16,14 +17,14 @@ ht-degree: 88%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
 | AEM as a Cloud Service | 本文 |
 
-利用自适应表单，表单作者可以很轻松地创建多步骤数据捕获体验。它内部支持创建多个面板并将每个面板与不同的导航模式关联。表单作者可以在逻辑部中分对表单字段进行分组，并将一个组表示为一个面板。面板之间的整体导航通过面板布局进行控制。作者可以选择以不同的布局排列面板，例如，使用向导布局按顺序放置，或使用选项卡式布局即兴放置。 有关面板布局的信息，请参阅[自适应表单的布局功能](layout-capabilities-adaptive-forms.md)。
+利用自适应表单，表单作者可以很轻松地创建多步骤数据捕获体验。它内置支持创建多个面板并将每个面板与不同的导航模式关联。表单作者可以在逻辑部中分对表单字段进行分组，并将一个组表示为一个面板。面板之间的整体导航通过面板布局进行控制。作者可以选择以不同的布局排列面板，例如，使用向导布局按顺序放置，或使用选项卡式布局即兴放置。 有关面板布局的信息，请参阅[自适应表单的布局功能](layout-capabilities-adaptive-forms.md)。
 
 在典型的表单填写体验中，涉及的步骤不只是捕获数据。完整表单提交可以包括其他步骤，例如，对表单进行数字签名、验证表单中填写的信息、处理付款等。具体因情况而异。
 

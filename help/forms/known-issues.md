@@ -1,15 +1,16 @@
 ---
-title: AEM Formsas a Cloud Service环境的已知问题和限制有哪些？
+title: AEM Forms as a Cloud Service环境的已知问题和限制有哪些？
 description: ' [!DNL AEM Forms] as a Cloud Service 环境的已知问题和限制。'
 contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms
 topic: Administration
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 95%
+source-wordcount: '373'
+ht-degree: 94%
 
 ---
 

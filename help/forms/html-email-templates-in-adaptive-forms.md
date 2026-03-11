@@ -1,22 +1,24 @@
 ---
-title: 在Forms上的自适应Forms中HTML电子邮件模板as a Cloud Service
+title: Forms as a Cloud Service上的自适应Forms中的HTML电子邮件模板
 description: 了解如何将电子邮件模板用于自适应表单。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 0%
+source-wordcount: '759'
+ht-degree: 9%
 
 ---
 
-# 自适应Forms中的电子邮件模板
+# 自适应表单中的电子邮件模板
 
-自适应Forms允许您使用HTML和纯文本电子邮件模板。 通过HTML电子邮件模板，您可以在提交表单时发送丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 通过自适应Forms，您可以上传包含HTML模板的文件或使用纯文本编辑器创建这些模板。
+通过自适应Forms，您可以使用HTML和纯文本电子邮件模板。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 
-![HTML电子邮件模板](/help/forms/assets/html-email.png)
+![HTML 电子邮件模板](/help/forms/assets/html-email.png)
 
 本文可帮助您在Adaptive Forms中配置和使用电子邮件模板。 到最后，您将能够：
 
@@ -29,7 +31,7 @@ ht-degree: 0%
 
 1. 打开自适应表单进行编辑。
 1. 配置[发送电子邮件](/help/forms/configure-submit-action-send-email.md)提交操作。
-1. 选择或上载HTML模板，或手动输入电子邮件模板。
+1. 选择或上传HTML模板，或手动输入电子邮件模板。
 1. 测试您的电子邮件配置。
 
 ## 为自适应表单配置HTML模板
@@ -59,7 +61,7 @@ ht-degree: 0%
 1. 转到&#x200B;**内容浏览器**，选择&#x200B;**指南容器**，然后点按属性图标。 出现标题为`Adaptive Form Container`的对话框。
 1. 转到&#x200B;**提交**&#x200B;选项卡并选择&#x200B;**发送电子邮件**&#x200B;提交操作。
 1. 启用&#x200B;**使用HTML模板**&#x200B;选项。
-1. 在提供的&#x200B;**电子邮件HTML**&#x200B;框中直接键入或粘贴模板代码。
+1. 在提供的&#x200B;**电子邮件模板**&#x200B;框中直接键入或粘贴您的HTML代码。
 
 
 ## 为自适应表单配置纯文本模板

@@ -1,28 +1,29 @@
 ---
-title: 记录自定义实施的交易
+title: 记录自定义实施的事务
 description: 使用TransactionRecorder API自动记录未作为事务入帐的操作
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: cb584f78-30af-4a58-be99-843352e8249c
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 16%
+source-wordcount: '199'
+ht-degree: 17%
 
 ---
 
-# 记录自定义实施的交易 {#record-a-transaction-for-custom-implementations}
+# 记录自定义实施的事务 {#record-a-transaction-for-custom-implementations}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
 | AEM as a Cloud Service | 本文 |
 
 使用TransactionRecorder API自动记录未作为事务入帐的操作。
 
 您可以使用自定义代码提交PDF表单。 或者，您也可以使用自定义方法提交表单，而不是使用AEM Forms提供的提交方法。 前面提到的AEM Forms API的所有操作和自定义实现都不会计为交易。 AEM Forms提供了一个API [TransactionRecorder](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/com/adobe/aem/transaction/core/ITransactionRecorder.html)，以将此类操作记录为事务。
 
-要记录事务，请编写[标准sling servlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=zh-Hans)并从客户端调用servlet以记录事务。 您可以使用AJAX或任何其他标准方法调用servlet。
+要记录事务，请编写[标准sling servlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en)并从客户端调用servlet以记录事务。 您可以使用AJAX或任何其他标准方法调用servlet。
 
 ## 服务器端代码示例 {#sample-server-sided-code}
 

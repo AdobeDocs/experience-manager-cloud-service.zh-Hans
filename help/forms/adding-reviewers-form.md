@@ -9,15 +9,16 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 0%
+source-wordcount: '499'
+ht-degree: 3%
 
 ---
 
-
-# 将提交审阅人与表单关联 {#associating-submission-reviewers-with-a-form}
+# 将提交审核人关联到表单 {#associating-submission-reviewers-with-a-form}
 
 在创建表单时，您可以指定审阅通过表单门户提交的表单并提供反馈的用户。 贵组织可以收集反馈并对提交的表单进行返工。
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 要编辑元数据架构，请执行以下操作：
 
-1. 在创作模式的“Experience Manager”下，单击&#x200B;**工具** > **Assets** > **元数据架构**。
+1. 在创作模式下，在Experience Manager下，单击&#x200B;**工具** > **Assets** > **元数据架构**。
 1. 在架构Forms页面中，导航到&#x200B;**Forms** > **在AEM中创作的Forms。**
 
    页面的URL为：
@@ -52,7 +53,7 @@ ht-degree: 0%
 
    自适应表单的高级属性中的提交审核者组字段使用您在字段标签下指定的名称启用。
 
-## 将提交审阅人与表单关联 {#associating-submission-reviewers-with-a-form-1}
+## 将提交审核人关联到表单 {#associating-submission-reviewers-with-a-form-1}
 
 要将提交审阅人与自适应表单关联，请创建一个审阅人组并将用户添加到该组。 在表单高级属性的表单提交审阅人字段下添加创建的审阅人组。
 通过用户组，您可以将不同的提交审阅人集与不同的自适应Forms关联。 此功能可防止未经授权的用户进行提交审核。
@@ -60,13 +61,13 @@ ht-degree: 0%
 执行以下步骤之前，请参阅[先决条件](adding-reviewers-form.md#prerequisite)。
 
 若要创建组并向其添加成员，请导航到&#x200B;**工具** > **操作** > **安全** > **组**。
-有关详细信息，请参阅[用户管理和服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)。
+有关详细信息，请参阅[用户管理和服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。
 确保将您创建的组添加为现成用户组的成员： **forms-submission-reviewers**。 此用户组随[!DNL AEM Forms]一起提供，它确保将用户添加为提交审核者。
 
 要将用户组与自适应表单关联，请执行以下操作：
 
 1. 在创作模式下，导航到&#x200B;**Forms** > **Forms和文档**。
-1. 使用&#x200B;**选择**&#x200B;选项选择自适应表单，然后单击&#x200B;**查看属性**。
+1. 使用**选择**选项选择自适应表单，然后单击&#x200B;**查看属性**。
 1. 在表单的“属性”窗口中，单击&#x200B;**编辑**，然后单击&#x200B;**高级**。
 1. 在提交审核者组字段中输入组，然后单击&#x200B;**完成**。
 

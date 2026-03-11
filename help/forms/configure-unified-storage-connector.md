@@ -3,10 +3,11 @@ title: 如何为AEM Forms配置统一存储连接器(USC)？
 description: 了解如何为AEM Forms管理Unified Storage Connector (USC)。 使用统一存储连接器(USC)将AEM Forms连接到外部数据存储。
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -15,11 +16,11 @@ ht-degree: 0%
 
 您可以使用统一存储连接器(USC)将AEM Forms连接到外部数据存储。
 
-例如，您可以在自适应表单中填写字段的值，并将其提交到AEM Workflow。 您可以进一步配置AEM Workflow以将数据存储在外部存储中，例如Microsoft Azure Storage Server。 使用统一存储连接器(USC)在AEM Workflow和外部存储之间创建连接。
+例如，您可以在自适应表单中填写字段的值，并将其提交到AEM Workflow。 您可以进一步配置AEM工作流以将数据存储在外部存储中，例如Microsoft Azure存储服务器。 使用统一存储连接器(USC)在AEM Workflow和外部存储之间创建连接。
 
-## 将AEM工作流连接到Microsoft Azure Storage Server {#connect-workflows-with-azure}
+## 将AEM工作流连接到Microsoft Azure存储服务器 {#connect-workflows-with-azure}
 
-创建Azure存储配置并使用统一存储连接器(USC)引用该配置。 然后，您可以配置AEM工作流模型以外部化数据存储以将其连接到Azure Storage Server。
+创建Azure存储配置，并使用统一存储连接器(USC)引用该配置。 然后，您可以配置AEM工作流模型以外部化数据存储，以便将其连接到Azure存储服务器。
 
 ### 创建[!DNL Azure]存储配置 {#create-azure-storage-configuration}
 
@@ -30,7 +31,7 @@ ht-degree: 0%
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL Azure存储]**。
 1. 选择要创建配置的文件夹，然后选择&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定配置的标题。
-1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
+1. 在[!DNL Azure]Azure存储帐户&#x200B;**[!UICONTROL 字段中指定]**&#x200B;存储帐户的名称。
 1. 在&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定用于访问Azure存储帐户的密钥，然后选择&#x200B;**[!UICONTROL 保存]**。
 
 ### 为AEM工作流配置统一存储连接器(USC) {#configure-unified-storage-connector-workflows}
@@ -39,8 +40,8 @@ ht-degree: 0%
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**。
 
-1. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;部分中，从存储下拉列表中选择&#x200B;**[!UICONTROL Azure]**。
-1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置[&#128279;](#create-azure-storage-configuration)的配置路径。
+1. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;部分中，从“存储”下拉列表中选择&#x200B;**[!UICONTROL Azure]**。
+1. 在[存储配置路径](#create-azure-storage-configuration)字段中指定Azure存储配置&#x200B;**[!UICONTROL 的]**&#x200B;配置路径。
 1. 选择&#x200B;**[!UICONTROL 发布]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。
 
 ### 为外部数据存储配置AEM工作流模型 {#configure-workflow-external-data-storage}
@@ -61,9 +62,9 @@ ht-degree: 0%
 
 以下是使用AEM Workflow并将数据存储到外部数据存储(如Microsoft Azure Storage Server)时的准则：
 
-* 在工作流模型步骤中定义输入和输出数据文件及附件时，使用变量来存储数据。 请勿选择&#x200B;**[!UICONTROL 相对于有效负荷]**&#x200B;和&#x200B;**[!UICONTROL 在绝对路径]**&#x200B;上可用的选项。 [为外部数据存储配置AEM工作流模型](#configure-workflow-external-data-storage)后，**[!UICONTROL 相对于有效负载]**&#x200B;和&#x200B;**[!UICONTROL 在绝对路径上可用]**&#x200B;选项不会自动显示。
+* 在工作流模型步骤中定义输入和输出数据文件及附件时，使用变量来存储数据。 请勿选择&#x200B;**[!UICONTROL 相对于有效负荷]**&#x200B;和&#x200B;**[!UICONTROL 在绝对路径]**&#x200B;上可用的选项。 **[!UICONTROL 为外部数据存储配置AEM工作流模型]**&#x200B;后，**[!UICONTROL 相对于有效负载]**&#x200B;和[在绝对路径上可用](#configure-workflow-external-data-storage)选项不会自动显示。
 
-* 将自适应表单提交到AEM Workflow时，使用变量存储数据文件和附件。 将自适应表单提交到AEM Workflow时，请勿选择&#x200B;**[!UICONTROL 相对于有效负载]**&#x200B;选项。 [为外部数据存储配置AEM工作流模型](#configure-workflow-external-data-storage)后，**[!UICONTROL 相对于有效负载]**&#x200B;选项不会自动显示。
+* 将自适应表单提交到AEM Workflow时，使用变量存储数据文件和附件。 将自适应表单提交到AEM Workflow时，请勿选择&#x200B;**[!UICONTROL 相对于有效负载]**&#x200B;选项。 **[!UICONTROL 为外部数据存储配置AEM工作流模型]**&#x200B;后，[相对于有效负载](#configure-workflow-external-data-storage)选项不会自动显示。
 
 * 请勿在工作流模型中使用自定义AEM工作流步骤将数据存储在CRX DE存储库中。
 

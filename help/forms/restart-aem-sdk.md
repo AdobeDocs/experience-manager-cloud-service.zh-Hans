@@ -3,11 +3,12 @@ title: 如何重新启动AEM SDK？
 description: 重新启动AEM SDK的最佳实践
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 2%
+source-wordcount: '108'
+ht-degree: 16%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 2%
 
 要重新启动AEM SDK，请转到活动命令窗口，然后按`Ctrl + C`命令重新启动SDK。
 
-建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法(例如，停止Java™进程)重新启动AEM SDK可能会导致AEM开发环境不一致。
+建议使用 “Ctrl + C” 命令重新启动 SDK。使用替代方法(例如，停止Java™进程)重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 ## 另请参阅
 

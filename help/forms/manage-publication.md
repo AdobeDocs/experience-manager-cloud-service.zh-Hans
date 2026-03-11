@@ -6,10 +6,11 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '951'
 ht-degree: 6%
 
 ---
@@ -93,7 +94,7 @@ ht-degree: 6%
 1. 单击&#x200B;**下一步**&#x200B;继续。
 1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用[添加内容](#add-content)选项添加更多内容以进行发布。 例如，您可以添加更多Forms或记录文档文件。
    ![范围选项卡](/help/forms/assets/scope-tab.png)
-1. 单击&#x200B;**[!UICONTROL 发布]**&#x200B;发布表单和相关资源，并显示成功消息。
+1. 单击&#x200B;**[!UICONTROL 发布]**发布表单和相关资源，并显示成功消息。
    ![成功发布消息](/help/forms/assets/publish-successful.png)
 
 ### 添加内容
@@ -167,7 +168,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
 1. 选择&#x200B;**[!UICONTROL 激活日期]**&#x200B;并指定日期和时间。
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用&#x200B;**[!UICONTROL 添加内容]**&#x200B;添加内容。
+1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用&#x200B;**[!UICONTROL 添加内容]**添加内容。
    ![稍后管理发布添加内容](/help/forms/assets/publish-later-add-content.png)
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**工作流**&#x200B;选项卡中，指定&#x200B;**[!UICONTROL 工作流标题]**。

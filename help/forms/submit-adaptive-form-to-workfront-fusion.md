@@ -5,10 +5,11 @@ keywords: 将自适应表单提交到Adobe Workfront Fusion、Adobe Workfront Fu
 topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1443'
 ht-degree: 9%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 9%
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=zh-Hans)自动执行重复相同任务的流程，例如文档审批工作流、电子邮件筛选和排序，从而让您能够专注于新任务而不是重复任务。 Adobe Workfront Fusion包含多个场景。 场景由一系列模块组成，这些模块在应用程序和Web服务之间执行数据传输。 在场景中，添加各种步骤（模块）以自动执行任务。
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html)自动执行重复相同任务的流程，例如文档审批工作流、电子邮件筛选和排序，从而让您能够专注于新任务而不是重复任务。 Adobe Workfront Fusion包含多个场景。 场景由一系列模块组成，这些模块在应用程序和Web服务之间执行数据传输。 在场景中，添加各种步骤（模块）以自动执行任务。
 
 例如，使用Workfront Fusion，您可以创建一个方案，以便使用自适应表单收集数据、处理数据并将数据发送到数据存储进行存档。 一旦设置了场景，Workfront Fusion就会在用户填写表单时自动执行任务，从而无缝更新数据存储。
 
@@ -38,8 +39,8 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
 
 要在Workfront Fusion与AEM Forms之间建立连接，需要满足以下条件：
 
-* 有效的[Workfront和Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=zh-Hans)。
-* 有权访问[开发控制台](https://my.cloudmanager.adobe.com/)以[检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)的AEM用户。
+* 有效的[Workfront和Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html)。
+* 有权访问[开发控制台](https://my.cloudmanager.adobe.com/)以[检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)的AEM用户。
 
 ## 将AEM Forms与Adobe Workfront Fusion集成
 
@@ -106,7 +107,7 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
    >
    > 实例URL是指向特定AEM Forms实例的唯一网址。
 
-   您可以从创建连接所需的开发人员控制台[检索](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)服务凭据。
+   您可以从创建连接所需的开发人员控制台[检索](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)服务凭据。
 
 1. 从开发人员控制台中的服务凭据中将`ims-na1.adobelogin.com`IMS端点&#x200B;**中的**&#x200B;替换为&#x200B;**imsEndpoint**&#x200B;的值。
 
@@ -181,8 +182,8 @@ AEM Forms as a Cloud Service提供了一个OOTB连接器，用于连接自适应
 要为使用通用编辑器创作的自适应表单配置提交操作，请执行以下操作：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >

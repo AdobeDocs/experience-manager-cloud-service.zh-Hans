@@ -3,13 +3,14 @@ title: 自适应Forms中的分隔符组件是什么？
 description: 自适应Forms中的分隔符组件有助于以可视方式分隔表单的各个部分。
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 1%
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
-
 
 # 自适应Forms中的分隔符组件{#separator-component-in-adaptive-forms}
 
@@ -35,4 +36,3 @@ ht-degree: 1%
 1. 执行下列操作之一：
    * 单击&#x200B;**确定**&#x200B;确认更改
    * 单击&#x200B;**取消**&#x200B;退出对话框，不做任何更改。
-

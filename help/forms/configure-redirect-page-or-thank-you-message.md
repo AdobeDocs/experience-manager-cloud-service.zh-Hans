@@ -1,14 +1,15 @@
 ---
 title: 如何配置重定向页面或感谢消息？
-description: 了解如何向用户显示感谢消息或重定向到表单作者在创建表单时可以配置的网页。
+description: 了解如何向用户显示感谢消息，或者将用户重定向到一个网页，表单作者在创建表单时如何配置这些内容。
 feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 0%
+source-wordcount: '245'
+ht-degree: 12%
 
 ---
 

@@ -3,13 +3,14 @@ title: 如何为自适应Forms自定义自动生成的记录文档模板？
 description: 了解如何使用Adobe Forms Designer下载、自定义和重新上传为自适应Forms自动生成的记录文档(DoR)模板。
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
-
 
 # 自定义自动生成的记录文档模板
 
@@ -126,4 +127,3 @@ ht-degree: 1%
 * [生成自适应Forms记录文档（基础组件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [记录文档的基础模板](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [自定义记录文档中的品牌信息](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-

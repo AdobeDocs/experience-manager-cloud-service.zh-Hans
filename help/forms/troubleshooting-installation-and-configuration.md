@@ -4,10 +4,11 @@ description: AEM Forms as a Cloud Service环境的安装和配置疑难解答。
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '219'
 ht-degree: 5%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 5%
 
    ![选择Forms选项](assets/installation-configuration-select-forms-option.png)
 
-1. [创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=zh-Hans#how-to-use)和[运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hans)生产和非生产管道。
+1. [创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)和[运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)生产和非生产管道。
 
 生成和部署管道后，**[!UICONTROL 导航]**&#x200B;页面上的&#x200B;**[!UICONTROL Forms]**&#x200B;选项。
 

@@ -5,11 +5,12 @@ topic-tags: Adaptive Forms, author
 keywords: 验证码&amp；reg；服务，自适应Forms， CAPTCHA挑战，机器人预防，表单提交安全，表单垃圾邮件预防
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 19%
+source-wordcount: '987'
+ht-degree: 20%
 
 ---
 
@@ -51,16 +52,14 @@ AEM Forms as a Cloud Service支持自适应Forms中的hCaptcha®。 您可以用
       * 要为现有文件夹启用云配置选项，请执行以下操作：
          1. 在配置浏览器中，选择文件夹，然后选择&#x200B;**[!UICONTROL 属性]**。
          1. 在配置属性对话框中，启用&#x200B;**[!UICONTROL 云配置]**。
-         1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存配置并退出对话框。
+         1. 选择&#x200B;**[!UICONTROL 保存并关闭]**，以保存配置并退出对话框。
 
 1. 配置Cloud Service：
    1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**，然后选择&#x200B;**[!UICONTROL hCaptcha®]**。
-
       ui中的![hCaptcha®](assets/hcaptcha-in-ui.png)
    1. 选择已创建或已更新的配置容器，如上一节所述。 选择&#x200B;**[!UICONTROL 创建]**。
-
       ![配置hCaptcha®](assets/config-hcaptcha.png)
-   1. 指定在必备项[&#128279;](#prerequisite)中获取的hCaptcha®服务的&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Name]**、**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。 选择&#x200B;**[!UICONTROL 创建]**。
+   1. 指定在必备项&#x200B;**[!UICONTROL 中获取的hCaptcha®服务]**&#x200B;的&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Name]**、**[!UICONTROL 站点密钥]**&#x200B;和[密钥](#prerequisite)。 选择&#x200B;**[!UICONTROL 创建]**。
 
       ![配置Cloud Service以使用hCaptcha连接AEM Forms环境®](assets/create-hcaptcha-config.png)
 
@@ -69,7 +68,7 @@ AEM Forms as a Cloud Service支持自适应Forms中的hCaptcha®。 您可以用
 
 配置hCAPTCHA服务后，便可在自适应表单中使用。
 
-## 在自适应表单中使用hCaptcha®{#using-hCaptcha®-foundation-components}
+## 在自适应表单中使用hCaptcha®{#using-hCaptcha&reg;-foundation-components}
 
 1. 打开AEM Forms as a Cloud Service实例。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。

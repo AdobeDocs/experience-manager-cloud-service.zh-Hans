@@ -3,12 +3,13 @@ title: 如何在提交自适应表单时将数据发送到SharePoint存储区？
 description: 了解如何在提交表单时将数据从自适应表单发送到SharePoint存储空间，如SharePoint列表或文档库。
 keywords: 如何为自适应表单连接SharePoint列表？ 、如何为自适应表单连接SharePoint文档库、提交到SharePoint、创建SharePoint文档库配置、在自适应表单中使用提交到SharePoint提交操作、将自适应表单连接到Microsoft&amp；reg； SharePoint列表。
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 3%
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 

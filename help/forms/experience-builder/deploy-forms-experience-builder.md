@@ -5,10 +5,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1410'
 ht-degree: 75%
 
 ---
@@ -43,11 +44,11 @@ ht-degree: 75%
 
 您的设置过程取决于您的AEM Forms实施。 选择与项目匹配的路径。
 
-用于Edge Delivery Services的&#x200B;**&#x200B;**
+用于Edge Delivery Services的&#x200B;****
 
 如果您使用的是Edge Delivery Services Forms，并且主要使用通用编辑器。 [为Edge Delivery Services Forms准备项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 这是一次性设置，用于启用Forms Experience Builder。
 
-基于核心组件的表单&#x200B;**&#x200B;**
+基于核心组件的表单&#x200B;****
 
 如果您在AEM创作环境中使用基于Core Components的自适应Forms，请确保为您的环境启用了[自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)。
 

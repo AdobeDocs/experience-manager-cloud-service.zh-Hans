@@ -8,10 +8,11 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1938'
 ht-degree: 2%
 
 ---
@@ -86,7 +87,7 @@ ht-degree: 2%
 
 ### HTML5 Forms {#html5-forms}
 
-| **HTML5 Forms** |
+| **HTML5 表单** |
 |---|
 | 对于移动设备和旧版浏览器，将基于XFA的表单渲染为HTML5。 在提供本机移动体验的同时维护表单逻辑。 |
 | **用途：**&#x200B;将XFA表单模板转换为具有本机移动体验和跨浏览器兼容性的HTML5表单。 |

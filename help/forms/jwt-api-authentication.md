@@ -3,13 +3,14 @@ title: 如何设置JWT（JSON Web令牌）身份验证？
 description: 了解如何为Adobe Experience Manager Forms as a Cloud Service配置JWT（JSON Web令牌）身份验证
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '433'
 ht-degree: 3%
 
 ---
-
 
 # JWT（JSON Web令牌）服务器到服务器身份验证
 
@@ -20,7 +21,7 @@ AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud
 在开始之前，请确保满足以下先决条件：
 
 * 确保您有权访问特定于您使用环境的[Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)。
-* 分配[系统管理员或开发人员角色以访问Adobe Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
+* 分配[系统管理员或开发人员角色以访问Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
 
 ## 如何使用JWT凭据生成访问令牌？
 
@@ -106,7 +107,7 @@ AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud
 
 >[!NOTE]
 >
-> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
 

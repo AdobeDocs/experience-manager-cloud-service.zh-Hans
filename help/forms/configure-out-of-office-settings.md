@@ -1,13 +1,14 @@
 ---
 title: 如何在AEM Forms中配置“外出”设置？
 description: 在休假或外出时委派任务以实现无缝的工作流执行。
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service | 本文 |
 
 如果您计划不在办公室，则可以指定在该期间分配给您的物料的情况。
@@ -40,7 +41,7 @@ ht-degree: 1%
 执行以下步骤以启用帐户的邮件答录机设置，并将收件箱项目委派给其他用户：
 
 1. 登录到您的AEM实例。 选择![收件箱](assets/bell.svg)图标，然后选择&#x200B;**[!UICONTROL 查看全部]**。 此时将显示收件箱项目的列表。
-1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;按钮旁边的![视图选择器](assets/viewlist.svg)或![视图选择器](assets/calendar.svg)图标，然后选择&#x200B;**[!UICONTROL 设置]**。 将显示“设置”对话框。
+1. 选择![创建](assets/viewlist.svg)按钮旁边的![视图选择器](assets/calendar.svg)或&#x200B;**[!UICONTROL 视图选择器]**&#x200B;图标，然后选择&#x200B;**[!UICONTROL 设置]**。 将显示“设置”对话框。
 1. 打开“设置”对话框中的&#x200B;**[!UICONTROL 外出]**&#x200B;选项卡。
 1. 选择&#x200B;**[!UICONTROL 启用/禁用]**&#x200B;按钮以启用“外出”设置。
 1. 为此设置指定&#x200B;**[!UICONTROL 开始时间]**&#x200B;和&#x200B;**[!UICONTROL 结束时间]**。 项目仅在指定的时间段内委派。 将&#x200B;**[!UICONTROL 结束时间]**&#x200B;字段保留为空以委托项目无限期。
@@ -66,7 +67,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->(仅适用于以Forms为中心的工作流项目)启用&#x200B;**[!UICONTROL 允许被分派人使用工作流中**&#x200B;[!UICONTROL &#x200B;分配任务&#x200B;]&#x200B;**步骤的“外出”设置]**&#x200B;选项进行委派。 只有启用了上述选项的项目才会委托给其他用户。
+>(仅适用于以Forms为中心的工作流项目)启用&#x200B;**[!UICONTROL 允许被分派人使用工作流中]**&#x200B;分配任务&#x200B;**[!UICONTROL 步骤的“外出”设置]**选项进行委派。 只有启用了上述选项的项目才会委托给其他用户。
 >(仅适用于以Forms为中心的工作流项目)启用工作流中&#x200B;**[!UICONTROL 分配任务]**&#x200B;步骤的&#x200B;**[!UICONTROL 允许被分配人使用“外出”设置]**&#x200B;选项进行委派。 只有启用了上述选项的项目才会委派给其他用户。
 
 ## 限制 {#limitations}

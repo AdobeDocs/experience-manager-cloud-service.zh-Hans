@@ -3,11 +3,12 @@ title: 如何基于核心组件为自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2160'
 ht-degree: 3%
 
 ---
@@ -125,7 +126,7 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
 
    **您的项目已准备就绪！**
 
@@ -381,9 +382,9 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    1. 部署更新的代码：
 
-      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)触发代码部署。 这会使用新的区域设置支持自动构建和部署更新的代码。
+      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)触发代码部署。 这会使用新的区域设置支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)。
+      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
 
 ## 预览具有新添加区域设置的自适应表单
@@ -402,7 +403,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 支持新本地化的最佳实践 {#best-practices}
 
 * Adobe建议在创建自适应表单之后创建翻译项目。 这简化了本地化过程。
-* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 为了缓解此问题，**语言**&#x200B;选项已合并到[日期选取器组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[数值框组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的“配置”对话框中。
+* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 为了缓解此问题，**语言**&#x200B;选项已合并到[日期选取器组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[数值框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的“配置”对话框中。
 
 
 * 处理新字段：

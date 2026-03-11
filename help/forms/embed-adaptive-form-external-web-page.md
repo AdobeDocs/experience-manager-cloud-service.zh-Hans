@@ -4,11 +4,12 @@ description: 了解如何将自适应表单嵌入到网站中。
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 99%
 
 ---
 
@@ -159,8 +160,8 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 * 确保在网页 CSS 中定义的样式规则不与表单对象 CSS 发生冲突。要避免发生冲突，可使用 AEM 客户端库在自适应表单主题中重用网页 CSS。有关在自适应表单主题中使用客户端库的信息，请参阅 [AEM Forms 中的主题](/help/forms/themes.md)。
 * 让该网页中的表单容器使用整个窗口宽度。这样确保为移动设备配置的 CSS 规则不作任何更改地正常工作。如果表单容器不占用整个窗口宽度，则必须编写自定义 CSS 以使表单适应不同的移动设备。
-* 使用 `[getData](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API 获取客户端中表单数据的 XML 或 JSON 表示形式。
-* 使用 `[unloadAdaptiveForm](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API 从 HTML DOM 卸载该自适应表单。
+* 使用 `[getData](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API 获取客户端中表单数据的 XML 或 JSON 表示形式。
+* 使用 `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API 从 HTML DOM 卸载该自适应表单。
 * 设置从 AEM 服务器发送响应时的 access-control-origin 标头。
 
 ## 使 AEM Forms 能够将自适应表单提供给跨域站点 {#cross-site}

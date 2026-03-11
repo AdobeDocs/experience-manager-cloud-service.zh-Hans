@@ -1,13 +1,14 @@
 ---
-title: 如何解决AEM Formsas a Cloud Service中与缓存相关的问题？
-description: 解决AEM Forms的缓存相关问题as a Cloud Service。
+title: 如何解决AEM Forms as a Cloud Service中与缓存相关的问题？
+description: 解决AEM Forms as a Cloud Service中与缓存相关的问题。
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '387'
 ht-degree: 2%
 
 ---

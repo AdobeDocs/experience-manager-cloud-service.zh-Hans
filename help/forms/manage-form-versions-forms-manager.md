@@ -3,13 +3,14 @@ title: 在Forms Manager中管理表单版本
 description: 了解如何在Forms Manager UI中创建和管理自适应Forms、表单片段、主题和其他资源的版本。
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
-source-git-commit: 52d6e8163ef24d362287cbedf54c2977fff9c87b
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 4%
+source-wordcount: '433'
+ht-degree: 5%
 
 ---
-
 
 # 在Forms Manager UI中管理表单Assets版本
 

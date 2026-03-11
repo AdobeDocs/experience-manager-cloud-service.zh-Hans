@@ -4,11 +4,12 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: 如何为自适应表单连接SharePoint文档库、提交到SharePoint、创建SharePoint文档库配置、在自适应表单中使用提交到SharePoint提交操作、AEM Forms数据模型SharePoint文档库、Forms数据模型SharePoint文档库、将Forms数据模型集成到SharePoint文档库
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 28%
+source-wordcount: '997'
+ht-degree: 33%
 
 ---
 
@@ -110,15 +111,15 @@ ht-degree: 28%
 执行以下步骤，使用在Universal Editor中创作的自适应表单中的SharePoint文档库存储配置，如下所示：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
-   > * 如果您在通用编辑器界面中未看到&#x200B;**编辑表单属性**&#x200B;图标，请在Extension Manager中启用&#x200B;**编辑表单属性**&#x200B;扩展。
-   > * 请参阅[Extension Manager功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)一文，了解如何在通用编辑器中启用或禁用扩展。
+   > * 如果您在通用编辑器界面中没有看到&#x200B;**编辑表单属性**&#x200B;图标，请在 Extension Manager 中启用&#x200B;**编辑表单属性**&#x200B;扩展。
+   > * 请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用或禁用扩展。
 
-1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 提交到SharePoint]**&#x200B;提交操作。
+1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 提交到SharePoint]**提交操作。
    ![Sharepoint GIF](/help/forms/assets/submit-to-sharepoint-ue.png)
 1. 选择要用于保存数据的&#x200B;**[!UICONTROL 存储配置]**。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存提交设置。

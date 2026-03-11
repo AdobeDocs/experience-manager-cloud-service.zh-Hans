@@ -8,17 +8,18 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
 
-# 发布和取消发布 Form 和文档{#publishing-and-unpublishing-forms-and-documents}
+# 发布和取消发布表单和文档{#publishing-and-unpublishing-forms-and-documents}
 
-[!DNL AEM Forms]允许您轻松创建、发布和取消发布表单。 [!DNL AEM Forms]服务器提供两个实例： Author和Publish。 创作实例用于创建和管理表单资源和资源。 Publish实例用于保留可供最终用户使用的资源和相关资源。
+[!DNL AEM Forms]允许您轻松创建、发布和取消发布表单。 [!DNL AEM Forms]服务器提供两个实例：“创作”和“发布”。 创作实例用于创建和管理表单资源和资源。 发布实例用于保留可供最终用户使用的资源和相关资源。
 
 ## 支持的资源   {#supported-assets-nbsp}
 
@@ -30,7 +31,7 @@ ht-degree: 1%
 * 主题
 * 表单模板<!-- (XFA forms) -->
 * PDF forms
-* 单据(平面PDF单据)
+* 文档(平面PDF文档)
 * 表单集
 * 资源（图像、架构和样式表）
 
@@ -41,7 +42,7 @@ ht-degree: 1%
 您的自适应Forms可能会利用一些未自动发布的配置、设置和自定义设置。 建议您在发布自适应表单之前发布或激活这些资源。
 
 * 可编辑的自适应表单模板
-* Adobe Sign、Typekit、reCAPTCHA和表单数据模型(FDM)的Cloud Service配置
+* 适用于Adobe Sign、Typekit、reCAPTCHA和表单数据模型(FDM)的Cloud Service配置
 * 仅当用户具有管理员权限时，才会激活其他Cloud Service配置。
 * 自定义。 这些包括但不限于：
 
@@ -57,16 +58,16 @@ ht-degree: 1%
 资产可以具有以下状态：
 
 * **未发布：**&#x200B;从未发布的资源(未发布状态仅适用于Forms资源。 通信管理资产没有“未发布”状态。)
-* **已发布**：已发布并在Publish实例上可用的资源
+* **已发布**：已发布并在发布实例上可用的资源
 * **已修改**：发布后修改的资产
 
-## Publish资产 {#publish-an-asset}
+## 发布资源 {#publish-an-asset}
 
 1. 登录到[!DNL AEM Forms]服务器。
 1. 使用下列选项之一选择和发布资产。
 
-   1. 将指针移动到资源上并选择&#x200B;**[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png)。
-   1. 执行以下操作之一，然后选择Publish：
+   1. 将指针移动到资产上并选择&#x200B;**[!UICONTROL 发布]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png)。
+   1. 执行以下操作之一，然后选择“发布”：
 
       * 如果您在卡片视图中，请选择&#x200B;**[!UICONTROL 输入选择]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然后选择资产。 已选择资源。
       * 如果您在列表视图中，请选中资源的复选框。 已选择资源。
@@ -77,7 +78,7 @@ ht-degree: 1%
       >
       >请勿选择多个资源。 不支持一次发布多个资产。
 
-1. Publish流程启动时，会显示一个确认对话框，其中列出了所有相关资源和资源。 在包含相关资源的对话框中，选择&#x200B;**[!UICONTROL Publish]**。 发布资源，并显示Publish Assets成功对话框。
+1. 在发布过程开始时，会显示一个确认对话框，其中列出了所有相关资源和资源。 在包含相关资源的对话框中，选择&#x200B;**[!UICONTROL 发布]**。 发布资产，并显示“发布Assets成功”对话框。
 
    >[!NOTE]
    >
@@ -89,13 +90,13 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >对于Forms Manager，如果用户没有发布所列资源的权限，则Publish操作将被禁用。 需要额外权限的资源以红色显示。
+   >对于Forms Manager，如果用户没有发布所列资源的权限，将禁用发布操作。 需要额外权限的资源以红色显示。
 
-   发布资源后，该资源的元数据属性将会复制到Publish实例，并且资源的状态会更改为已发布。 已发布的依赖关系资产的状态也会更改为已发布。
+   发布资产后，该资产的元数据属性将会复制到发布实例，并且资产的状态会更改为已发布。 已发布的依赖关系资产的状态也会更改为已发布。
 
    <!-- After publishing an asset, you can use the Forms Portal to display all the assets on a web page. For more information, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md).-->
 
-## Publish所有通信管理Assets {#publish-all-the-correspondence-management-assets}
+## 发布所有通信管理Assets {#publish-all-the-correspondence-management-assets}
 
 [!DNL AEM Forms]允许您一次性发布服务器上的所有通信管理资产。 已发布的资产包括所有相应的管理资产和相关依赖项。
 
@@ -104,21 +105,21 @@ ht-degree: 1%
 1. 登录到[!DNL AEM Forms]服务器。
 1. 在全局导航栏中选择&#x200B;**Adobe Experience Manager**。
 1. 选择![工具](assets/tools.png)，然后选择&#x200B;**Forms**。
-1. 选择&#x200B;**Publish Correspondence Management Assets**。
+1. 选择&#x200B;**发布通信管理Assets**。
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   此时将显示Publish All Correspondence Management Assets页面，其中显示有关上次尝试Publish Correspondence Management Assets进程的信息。
+   此时将显示“发布所有通信管理Assets”页，其中显示有关上次尝试发布通信管理Assets进程的信息。
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. 选择&#x200B;**Publish**，然后在确认消息中选择&#x200B;**确定**。
+1. 选择&#x200B;**发布**，然后在确认消息中选择&#x200B;**确定**。
 
    批处理完成后，您可以查看上次运行的详细信息。 这包括管理员登录信息以及批处理是否成功运行的信息。
 
    >[!NOTE]
    >
-   >Publish进程一旦启动便无法取消。 此外，在Publish操作处理期间，请勿创建、删除、修改或发布任何资源，也不要启动“导出所有通信管理Assets”操作。
+   >发布过程一旦启动便无法取消。 此外，在发布操作进行期间，请勿创建、删除、修改或发布任何资源，也不要启动导出所有通信管理Assets操作。
 
 ## 自动发布和取消发布Forms和文档 {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -128,7 +129,7 @@ ht-degree: 1%
 
 1. 选择资产，然后选择&#x200B;**[!UICONTROL 查看属性]**。 此时将打开“元数据属性”页面。
 1. 在“元数据属性”页中，选择&#x200B;**[!UICONTROL 高级]**，然后选择&#x200B;**[!UICONTROL 编辑]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png)。
-1. 在&#x200B;**[!UICONTROL Publish开启时间]**&#x200B;和&#x200B;**[!UICONTROL Publish关闭时间]**&#x200B;字段中，选择日期和时间。\
+1. 在&#x200B;**[!UICONTROL 发布时间]**&#x200B;和&#x200B;**[!UICONTROL 发布关闭时间]**&#x200B;字段中，选择日期和时间。\
    选择&#x200B;**[!UICONTROL 完成]** ![aem6forms_check](assets/aem6forms_check.png)。
 
 ## 取消发布资源 {#unpublish-an-asset}

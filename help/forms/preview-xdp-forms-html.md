@@ -3,13 +3,14 @@ title: 生成 XDP 表单的 HTML5 预览
 description: LiveCycle Designer中的“预览HTML”选项卡可用于预览表单在浏览器中显示的效果。
 topic-tags: author
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 2%
+source-wordcount: '813'
+ht-degree: 3%
 
 ---
 

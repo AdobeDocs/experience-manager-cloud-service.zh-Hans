@@ -3,17 +3,18 @@ title: 如何在自适应Forms中使用SOM表达式？
 description: 了解如何在自适应Forms中提取面板的SOM表达式。
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
+# 在自适应表单中使用 SOM 表达式{#using-som-expressions-in-adaptive-forms}
 
-# 在自适应Forms中使用SOM表达式{#using-som-expressions-in-adaptive-forms}
-
-自适应Forms建模为AEM页面，在AEM存储库中表示为JCR内容结构。 内容结构的关键元素是guideContainer节点。 guideContainer下方有rootPanel，其中可能包含嵌套面板和字段。
+自适应Forms被建模为AEM页面，该页面在AEM存储库中表示为JCR内容结构。 内容结构的关键元素是guideContainer节点。 guideContainer下方有rootPanel，其中可能包含嵌套面板和字段。
 
 您可以使用脚本对象模型(SOM)来引用特定文档对象模型(DOM)中的值、属性和方法。 DOM以树层次结构组织内存对象和属性。 SOM表达式引用Fields/Draw元素和面板。
 
@@ -41,4 +42,4 @@ DOM树
 
 使用面板工具栏提取SOM表达式
 
-[GuideBridge](https://helpx.adobe.com/cn/aem-forms/6/javascript-api/GuideBridge.html)中列出的某些API使用元素的SOM表达式。 例如，要将焦点置于自适应表单中的特定字段，请将相应的SOM表达式传递给`guideBridge`中的`getFocus`API。
+[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)中列出的某些API使用元素的SOM表达式。 例如，要将焦点置于自适应表单中的特定字段，请将相应的SOM表达式传递给`getFocus`中的`guideBridge`API。

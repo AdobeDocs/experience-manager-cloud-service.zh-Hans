@@ -6,15 +6,16 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
 
-
-# 将用户数据中的信息添加到表单提交元数据 {#adding-information-from-user-data-to-form-submission-metadata}
+# 将用户数据中的信息添加到 Form 提交元数据中 {#adding-information-from-user-data-to-form-submission-metadata}
 
 您可以使用在表单元素中输入的值计算草稿或表单提交的元数据字段。 元数据允许您根据用户数据筛选内容。 例如，用户在表单的名称字段中输入John Doe。 您可以使用此信息计算元数据，该元数据可在首字母缩写JD下对此提交进行分类。
 
@@ -57,7 +58,7 @@ ht-degree: 0%
 
 ![存储复选框中的多个值](assets/checkbox-metadata.png)
 
-选择自适应表单容器，然后在表单属性中添加存储`checkbox1.value`的元数据键`cb1`并发布表单。 当客户填写表单时，客户在复选框字段中选择“护照和社会安全号码”选项。 值1和2在提交元数据的cb1字段中存储为1、2。
+选择自适应表单容器，然后在表单属性中添加存储`cb1`的元数据键`checkbox1.value`并发布表单。 当客户填写表单时，客户在复选框字段中选择“护照和社会安全号码”选项。 值1和2在提交元数据的cb1字段中存储为1、2。
 
 在复选框字段中为多个选定值选择的![元数据条目](assets/metadata-entry.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 在HTML5表单中创建自定义外观
+title: 在 HTML5 Forms 中创建自定义外观
 description: 您可以将自定义构件插入到Mobile Forms。 您可以扩展现有的jQuery构件或开发自己的自定义构件。
 contentOwner: robhagat
 content-type: reference
@@ -7,17 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
-# 在HTML5表单中创建自定义外观{#create-custom-appearances-in-html-forms}
+# 在 HTML5 Forms 中创建自定义外观{#create-custom-appearances-in-html-forms}
 
 <span class="preview"> HTML5 Forms功能作为提前访问计划的一部分提供。 要请求访问，请将您的官方（工作）电子邮件ID通过电子邮件发送到aem-forms-ea@adobe.com。
 </span>
@@ -79,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### 向XFA脚本引擎注册自定义构件  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-当自定义构件代码准备就绪时，请使用适用于`registerConfig`表单Bridge[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API在脚本引擎中注册该构件。 它将widgetConfigObject作为输入。
+当自定义构件代码准备就绪时，请使用适用于`registerConfig`表单Bridge[的](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)API在脚本引擎中注册该构件。 它将widgetConfigObject作为输入。
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

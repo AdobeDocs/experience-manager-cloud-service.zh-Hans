@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
-source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '596'
 ht-degree: 32%
 
 ---

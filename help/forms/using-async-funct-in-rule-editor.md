@@ -4,17 +4,18 @@ description: 可视规则编辑器中的异步函数调用
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
 
 # 在基于核心组件的自适应表单中使用异步函数
 
-自适应Forms[&#128279;](/help/forms/rule-editor-core-components.md)中的规则编辑器支持异步功能，允许您集成和管理需要等待外部进程或数据检索的操作，而不会中断用户与表单的交互。
+自适应Forms[中的](/help/forms/rule-editor-core-components.md)规则编辑器支持异步功能，允许您集成和管理需要等待外部进程或数据检索的操作，而不会中断用户与表单的交互。
 
 ## 哪些因素决定了使用异步或同步功能？
 
@@ -57,7 +58,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> * 当您选择&#x200B;**异步函数调用**&#x200B;规则类型时，表单的规则编辑器仅显示返回类型为`Promise`的函数。
+> * 当您选择`Promise`异步函数调用&#x200B;**规则类型时，表单的规则编辑器仅显示返回类型为**&#x200B;的函数。
 > * 要了解如何创建自定义函数，请参阅标题为[基于核心组件的自适应表单的自定义函数](/help/forms/custom-function-core-component-create-function.md)的文章。
 
 `matchOTP()`函数作为自定义函数实现。 以下代码会添加到自定义函数的JS文件中：
@@ -113,8 +114,8 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的&#x200B;**When**&#x200B;部分中为单击按钮创建条件。 例如，单击&#x200B;**When[Confirm]**。
-1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 异步函数调用]**。
-当您选择&#x200B;**[!UICONTROL 异步函数调用]**，并且返回类型为`Promise`的函数出现时。
+1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**异步函数调用**。
+当您选择**[!UICONTROL 异步函数调用]**，并且返回类型为`Promise`的函数出现时。
 1. 从列表中选择异步函数。 例如，选择`matchOTP()`函数，其回调将显示为`Add success callback`和`add failure callback`。
 1. 现在，选择&#x200B;**[!UICONTROL Input]**&#x200B;绑定。 例如，选择&#x200B;**[!UICONTROL 输入]**&#x200B;作为`Form Object`并将其与`OTP`字段进行比较。
 
@@ -122,7 +123,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 ![规则类型](/help/forms/assets/asyn-function-rule-type.png)
 
-现在，您可以继续为`matchOTP`函数实施回调： `Success`和`Failure`。
+现在，您可以继续为`Success`函数实施回调： `Failure`和`matchOTP`。
 
 #### 2.2实施异步函数的回调
 
@@ -130,7 +131,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 **为`Add Success callback`方法创建规则**
 
-如果OTP与值`111`匹配，让我们创建一个规则以显示`userdetails`面板。
+如果OTP与值`userdetails`匹配，让我们创建一个规则以显示`111`面板。
 
 1. 单击&#x200B;**[!UICONTROL 添加成功回调]**。
 1. 单击&#x200B;**[!UICONTROL 添加语句]**&#x200B;以创建规则。
@@ -142,14 +143,14 @@ function asyncOperationForOTPMatch(otp, callback) {
    > **[!UICONTROL 获取事件有效负载]**&#x200B;函数检索与特定事件关联的数据以动态管理用户交互。
 
 1. 从&#x200B;**Input**&#x200B;部分中选择其相应的绑定。 例如，选择&#x200B;**[!UICONTROL 字符串]**&#x200B;并输入`valid`。 将输入的字符串与`true`进行比较。
-1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 显示]**。 例如，显示`userdetails`面板。
+1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**显示**。 例如，显示`userdetails`面板。
 1. 单击&#x200B;**[!UICONTROL 添加语句]**。
-1. 从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]** 例如，隐藏`error message`文本框。
+1. 从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**隐藏** 例如，隐藏`error message`文本框。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 ![成功呼叫](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
 
-请参阅下面的屏幕截图，其中用户以`111`身份进入OTP，单击`Confirm`按钮时将显示`User Details`面板。
+请参阅下面的屏幕截图，其中用户以`111`身份进入OTP，单击`User Details`按钮时将显示`Confirm`面板。
 
 ![成功](/help/forms/assets/success.gif)
 
@@ -163,9 +164,9 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 在规则的&#x200B;**When**&#x200B;部分中创建条件。
 1. 选择&#x200B;**[!UICONTROL 函数输出]** > **[!UICONTROL 获取事件有效负载]**。
 1. 从&#x200B;**Input**&#x200B;部分中选择其相应的绑定。 例如，选择&#x200B;**[!UICONTROL 字符串]**&#x200B;并输入`valid`。 将输入的字符串与`false`进行比较。
-1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 显示]**。 例如，显示`error message`文本框。
+1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**显示**。 例如，显示`error message`文本框。
 1. 单击&#x200B;**[!UICONTROL 添加语句]**。
-1. 从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]** 例如，隐藏`userdetails`面板。
+1. 从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**隐藏** 例如，隐藏`userdetails`面板。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 ![失败回调方法](/help/forms/assets/rule-editor-failure-callback.png){width=50%, height=50%}
@@ -209,7 +210,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 }
 ```
 
-在上述示例中，asyncFunction函数是`asynchronous function`。 它通过向`https://petstore.swagger.io/v2/store/inventory`发出`GET`请求来执行异步操作。 它使用`await`等待响应，使用`response.json()`将响应正文解析为JSON，然后返回数据。 `callAsyncFunction`函数是一个同步自定义函数，它调用`asyncFunction`函数并在控制台中显示响应数据。 虽然`callAsyncFunction`函数是同步的，但它调用异步asyncFunction函数并使用`then`和`catch`语句处理其结果。
+在上述示例中，asyncFunction函数是`asynchronous function`。 它通过向`GET`发出`https://petstore.swagger.io/v2/store/inventory`请求来执行异步操作。 它使用`await`等待响应，使用`response.json()`将响应正文解析为JSON，然后返回数据。 `callAsyncFunction`函数是一个同步自定义函数，它调用`asyncFunction`函数并在控制台中显示响应数据。 虽然`callAsyncFunction`函数是同步的，但它调用异步asyncFunction函数并使用`then`和`catch`语句处理其结果。
 
 要查看其是否有效，让我们添加一个按钮，并为单击按钮时调用异步函数的按钮创建规则。
 

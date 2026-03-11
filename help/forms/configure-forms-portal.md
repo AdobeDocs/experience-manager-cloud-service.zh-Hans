@@ -2,12 +2,13 @@
 title: 如何在Experience Manager Sites页面上创建Forms门户？
 description: 了解如何在AEM Sites页面上创建Forms Portal和使用现成的核心组件。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 4%
+source-wordcount: '365'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
 | AEM as a Cloud Service（核心组件） | 本文 |
 
 Forms Portal提供了一种在AEM Sites页面上显示和列出自适应Forms的有效方法。 对于需要平台以系统地向其用户呈现各种形式的组织而言，此插件非常有用。
@@ -42,7 +43,7 @@ AEM Forms提供了以下开箱即用的门户组件：
 
 ## 后续步骤
 
-在下一篇文章中，让我们了解如何使用Search &amp; Lister Forms Portal组件[&#128279;](/help/forms/list-forms-on-sites-page.md)在“站点”页面上列出表单。
+在下一篇文章中，让我们了解如何使用Search &amp; Lister Forms Portal组件[在“站点”页面上列出表单](/help/forms/list-forms-on-sites-page.md)。
 
 ## 相关文章
 

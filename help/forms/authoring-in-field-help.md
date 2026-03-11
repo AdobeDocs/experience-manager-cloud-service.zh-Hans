@@ -7,13 +7,14 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '375'
+ht-degree: 2%
 
 ---
-
 
 # 为表单字段创作上下文帮助{#authoring-in-context-help-for-form-fields}
 

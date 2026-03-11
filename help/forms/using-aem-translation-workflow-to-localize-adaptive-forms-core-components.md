@@ -2,12 +2,13 @@
 title: 如何翻译基于核心组件的自适应表单？
 description: 了解如何在AEM Forms中创建表单数据模型(FDM)、使用示例数据和服务测试模型以及为模型配置各种选项。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 4%
+source-wordcount: '891'
+ht-degree: 5%
 
 ---
 
@@ -71,7 +72,7 @@ ht-degree: 4%
 1. 在“添加的词典”对话框中，单击&#x200B;**打开项目**。
 1. 在“项目”屏幕中，单击已创建的项目。 例如，单击&#x200B;**政府参考站点 — 德语区域设置**&#x200B;拼贴。
 1. 在&#x200B;**摘要**&#x200B;拼贴的底部，单击&#x200B;**省略号**。 这将打开翻译项目属性屏幕。
-1. 打开&#x200B;**翻译项目属性**&#x200B;屏幕顶部的&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。 对于&#x200B;**[!UICONTROL 翻译字段]**，请选择&#x200B;**[!UICONTROL 人工翻译]**。 单击屏幕顶部的&#x200B;**保存并关闭**。
+1. 打开&#x200B;**[!UICONTROL 翻译项目属性]**&#x200B;屏幕顶部的&#x200B;**高级**&#x200B;选项卡。 对于&#x200B;**[!UICONTROL 翻译字段]**，请选择&#x200B;**[!UICONTROL 人工翻译]**。 单击屏幕顶部的&#x200B;**保存并关闭**。
 1. 在&#x200B;**翻译作业**&#x200B;拼贴上，单击![aem62forms_downarrow](assets/aem62forms_downarrow.png)图标，然后单击&#x200B;**导出**。 在导出对话框中，单击下载导出的文件选项。 它下载一个.zip文件。
    ![导出翻译文件](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 解压缩下载的.zip文件。 提取的文件夹有两个文件：

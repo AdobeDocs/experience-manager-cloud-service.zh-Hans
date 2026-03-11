@@ -3,13 +3,14 @@ title: AEM Forms Communications API — 概述
 description: AEM Forms通信API概述，包括身份验证方法和完整的API参考
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '947'
 ht-degree: 4%
 
 ---
-
 
 # AEM Forms Communications API — 概述
 
@@ -19,7 +20,7 @@ AEM Forms API通过两个主控制台进行结构化和访问：
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console是Adobe API、事件、运行时和App Builder的网关。
 
-* [AEM Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供对环境级别的详细信息、配置、技术帐户和服务凭据的访问权限，以支持操作和集成任务。
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供对环境级别的详细信息、配置、技术帐户和服务凭据的访问权限，以支持操作和集成任务。
 
 不同的API支持不同的[身份验证方法](#authentication-methods)。
 

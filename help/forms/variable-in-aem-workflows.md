@@ -1,21 +1,22 @@
 ---
-title: 如何将变量添加到AEM Workflow步骤？
+title: 如何将变量添加到AEM工作流步骤？
 description: 了解如何创建变量、为该变量设置值以及在 [!DNL AEM Forms] 工作流步骤中使用它。
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1936'
 ht-degree: 1%
 
 ---
 
-# 以Forms为中心的AEM Workflow中的变量 {#variables-in-aem-forms-workflows}
+# 以Forms为中心的AEM工作流中的变量 {#variables-in-aem-forms-workflows}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service | 本文 |
 
 工作流模型中的变量是一种根据其数据类型存储值的方法。 您可以在任何工作流步骤中使用变量的名称来检索存储在变量中的值。 您还可以使用变量名称来定义用于制定路由决策的表达式。
@@ -24,9 +25,9 @@ ht-degree: 1%
 
 * [根据要存储的信息类型创建数据类型的变量](variable-in-aem-workflows.md#create-a-variable)。
 * [使用“设置变量”工作流步骤设置变量](variable-in-aem-workflows.md#set-a-variable)的值。
-* [在所有[!DNL AEM Forms]工作流步骤中使用变量](variable-in-aem-workflows.md#use-a-variable)来检索存储的值，并在OR拆分和Goto步骤中定义路由表达式。
+* [在所有](variable-in-aem-workflows.md#use-a-variable)工作流步骤中使用变量[!DNL AEM Forms]来检索存储的值，并在OR拆分和Goto步骤中定义路由表达式。
 
-以下视频演示如何在AEM Workflow模型中创建、设置和使用变量：
+以下视频演示如何在AEM工作流模型中创建、设置和使用变量：
 
 >[!VIDEO](assets/variables_introduction_1_1.mp4)
 
@@ -37,7 +38,7 @@ ht-degree: 1%
 您可以使用工作流模型Sidekick中提供的“变量”部分创建变量。 AEM工作流变量支持以下数据类型：
 
 * **原始数据类型**： Long、Double、Boolean、Date和String
-* **复杂数据类型**：[文档](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表单数据模型实例。
+* **复杂数据类型**：[文档](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表单数据模型实例。
 
 >[!NOTE]
 >
@@ -47,7 +48,7 @@ ht-degree: 1%
 
 要创建变量，请执行以下操作：
 
-1. 在AEM实例上，导航到“工具”![“锤子图标”](assets/hammer-icon.svg)>“工作流”>“模型”。
+1. 在AEM实例上，导航到工具![锤子图标](assets/hammer-icon.svg) >工作流>模型。
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;并指定工作流模型的标题和可选名称。 选择模型并选择&#x200B;**[!UICONTROL 编辑]**。
 1. 选择工作流模型Sidekick中可用的变量图标，然后选择&#x200B;**[!UICONTROL 添加变量]**。
 
@@ -157,7 +158,7 @@ OR拆分在工作流中创建拆分，之后只有一个分支处于活动状态
 
 您可以使用规则定义、ECMA脚本或外部脚本为分支定义路由表达式。
 
-您可以使用变量来定义使用表达式编辑器的路由表达式。 有关对OR拆分步骤使用路由表达式的详细信息，请参阅[OR拆分步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem?lang=zh-Hans#or-split)。
+您可以使用变量来定义使用表达式编辑器的路由表达式。 有关对OR拆分步骤使用路由表达式的详细信息，请参阅[OR拆分步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#or-split)。
 
 在此示例中，在定义路由表达式之前，请使用[example 2](variable-in-aem-workflows.md#example2)设置&#x200B;**totalvalue**&#x200B;变量的值。 如果&#x200B;**totalvalue**&#x200B;变量的值大于50000，则分支1处于活动状态。 同样，您可以定义一个规则，以使Branch 2在&#x200B;**totalvalue**&#x200B;变量的值小于50000时有效。
 
@@ -173,13 +174,13 @@ OR拆分在工作流中创建拆分，之后只有一个分支处于活动状态
 
 与OR拆分步骤类似，您可以使用规则定义、ECMA脚本或外部脚本为Goto步骤定义路由表达式。
 
-您可以使用变量来定义使用表达式编辑器的路由表达式。 有关为“转至”步骤使用路由表达式的详细信息，请参阅[转至步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem?lang=zh-Hans#goto-step)。
+您可以使用变量来定义使用表达式编辑器的路由表达式。 有关为“转至”步骤使用路由表达式的详细信息，请参阅[转至步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#goto-step)。
 
 ![转到规则](assets/variables_goto_rule1_new.png)
 
 在本例中，如果&#x200B;**actiontaked**&#x200B;变量的值等于&#x200B;**需要更多信息**，则“转至”步骤将审核信用卡申请指定为下一个步骤。
 
-有关在“转至”步骤中使用规则定义的更多示例，请参阅[模拟For循环](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem?lang=zh-Hans#simulateforloop)。
+有关在“转至”步骤中使用规则定义的更多示例，请参阅[模拟For循环](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#simulateforloop)。
 
 #### 以Forms为中心的工作流步骤 {#forms-workflow-centric-workflow-steps}
 

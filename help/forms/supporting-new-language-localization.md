@@ -2,11 +2,12 @@
 title: 如何为基于基础组件的自适应表单添加新区域设置支持？
 description: 对于自适应Forms，除了现成可用的语言之外，您还可以为更多语言添加区域设置。
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1226'
 ht-degree: 3%
 
 ---
@@ -15,14 +16,14 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | 核心组件 | [单击此处](supporting-new-language-localization-core-components.md) |
-| Foundation 组件  | 本文 |
+| 基础组件 | 本文 |
 
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
 
@@ -55,10 +56,10 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 
 #### 1.克隆存储库 {#clone-the-repository}
 
-1. 在命令行中，导航到要克隆FormsCloud Service存储库的位置。
-1. 执行[从Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)检索到的命令。 它类似于`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
+1. 在命令行中，导航到要克隆Forms Cloud Service存储库的位置。
+1. 执行[从Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)检索到的命令。 它类似于`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
 1. 使用Git用户名和密码克隆存储库。
-1. 在首选编辑器中打开克隆的FormsCloud Service存储库文件夹。
+1. 在首选编辑器中打开克隆的Forms Cloud Service存储库文件夹。
 
 #### 2.向指南本地化服务添加区域设置 {#add-a-locale-to-the-guide-localization-service}
 
@@ -71,25 +72,25 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 #### 3.添加特定于区域设置名称的文件夹客户端库 {#add-locale-name-specific-folder}
 
 1. 在UI.content文件夹中，创建`etc/clientlibs`文件夹。
-1. 在`etc/clientlibs`下进一步创建一个名为`locale-name`的文件夹以用作xfa和af clientlibs的容器。
+1. 在`locale-name`下进一步创建一个名为`etc/clientlibs`的文件夹以用作xfa和af clientlibs的容器。
 
 ##### 3.1在区域设置名称文件夹中添加区域设置的XFA客户端库
 
-使用类别`xfaforms.I18N.<locale>`在`etc/clientlibs/locale_name`下创建名为`[locale-name]_xfa`且类型为`cq:ClientLibraryFolder`的节点，并添加以下文件：
+使用类别`[locale-name]_xfa`在`cq:ClientLibraryFolder`下创建名为`etc/clientlibs/locale_name`且类型为`xfaforms.I18N.<locale>`的节点，并添加以下文件：
 
-* **I18N.js**&#x200B;定义了`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`中定义的`<locale>`的`xfalib.locale.Strings`。
-* **js.txt**&#x200B;包含以下内容：
+* **I18N.js**&#x200B;定义了`xfalib.locale.Strings`中定义的`<locale>`的`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`。
+* **js.txt**包含以下内容：
   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 ##### 3.2.为区域设置名称文件夹添加自适应表单客户端库
 
-1. 在`etc/clientlibs/locale_name`下创建名为`[locale-name]_af`且类型为`cq:ClientLibraryFolder`的节点，类别为`guides.I18N.<locale>`，依赖项为`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。
+1. 在`[locale-name]_af`下创建名为`cq:ClientLibraryFolder`且类型为`etc/clientlibs/locale_name`的节点，类别为`guides.I18N.<locale>`，依赖项为`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。
 1. 创建名为`javascript`的文件夹并添加以下文件：
 
-   * **i18n.js**&#x200B;定义`guidelib.i18n`，根据[区域设置集规范](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)中描述的XFA规范，其模式为`<locale>`的“calendarSymbols”、`datePatterns`、`timePatterns`、`dateTimeSymbols`、`numberPatterns`、`numberSymbols`、`currencySymbols`和`typefaces`。
-   * **LogMessages.js**&#x200B;定义了`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`中定义的`<locale>`的`guidelib.i18n.strings`和`guidelib.i18n.LogMessages`。
+   * **i18n.js**&#x200B;定义`guidelib.i18n`，根据`datePatterns`区域设置集规范`timePatterns`中描述的XFA规范，其模式为`dateTimeSymbols`的“calendarSymbols”、`numberPatterns`、`numberSymbols`、`currencySymbols`、`typefaces`、`<locale>`、[和](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)。
+   * **LogMessages.js**&#x200B;定义了`guidelib.i18n.strings`中定义的`guidelib.i18n.LogMessages`的`<locale>`和`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`。
 
 1. 添加包含以下内容的&#x200B;**js.txt**：
 
@@ -102,12 +103,12 @@ I18N.js
 
 仅当要添加的`<locale>`不属于`en`、`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr`时才执行此步骤。
 
-1. 在`etc`下创建文件夹`languages`（如果尚未存在）。
+1. 在`languages`下创建文件夹`etc`（如果尚未存在）。
 
 1. 将多值字符串属性`languages`添加到节点（如果尚不存在）。
 1. 添加`<locale-name>`默认区域设置值`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr`（如果尚未存在）。
 
-1. 将`<locale>`添加到`/etc/languages`的`languages`属性的值。
+1. 将`<locale>`添加到`languages`的`/etc/languages`属性的值。
 1. 在`filter.xml`中etc/META-INF/[文件夹层次结构]下添加已创建的文件夹，如下所示：
 
    ```
@@ -115,11 +116,11 @@ I18N.js
    <filter root="/etc/languages"/>
    ```
 
-在将更改提交到AEM Git存储库之前，您需要访问[Git存储库信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)。
+在将更改提交到AEM Git存储库之前，您需要访问[Git存储库信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)。
 
 #### 5.在存储库中提交更改并部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
-添加区域设置支持后，将更改提交到GIT存储库。 使用全栈管道部署代码。 了解[如何设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)以添加新的区域设置支持。
+添加区域设置支持后，将更改提交到GIT存储库。 使用全栈管道部署代码。 了解[如何设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)以添加新的区域设置支持。
 管道完成后，新添加的区域设置将显示在AEM环境中。
 
 ### 在自适应Forms中使用添加的区域设置 {#use-added-locale-in-af}
@@ -131,7 +132,7 @@ I18N.js
 1. 选择一个自适应表单，然后单击&#x200B;**添加词典**&#x200B;和&#x200B;**将词典添加到翻译项目**&#x200B;向导。
 1. 指定&#x200B;**项目标题**&#x200B;并从&#x200B;**将字典添加到翻译项目**&#x200B;向导的下拉菜单中选择&#x200B;**目标语言**。
 1. 单击&#x200B;**完成**&#x200B;并执行已创建的翻译项目。
-1. 选择自适应表单并单击&#x200B;**作为HTML预览**。
+1. 选择自适应表单并单击&#x200B;**以HTML预览**。
 1. 在自适应表单的URL中添加`&afAcceptLang=<locale-name>`。
 1. 刷新页面，自适应表单在指定的区域设置中呈现。
 

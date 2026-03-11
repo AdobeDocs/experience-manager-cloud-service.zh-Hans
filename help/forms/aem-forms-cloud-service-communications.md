@@ -1,12 +1,13 @@
 ---
 title: 如何使用Forms as a Cloud Service将数据与XDP和PDF模板合并，或生成PCL、ZPL和PostScript格式的输出？
 description: 自动将数据与 XDP 和 PDF 模板合并，或以 PCL、ZPL 和 PostScript 格式生成输出
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '731'
 ht-degree: 6%
 
 ---
@@ -47,11 +48,11 @@ Forms as a Cloud Service — 通信提供了用于计划文档生成的按需和
 
 * **基于令牌的身份验证：**&#x200B;基于令牌的身份验证使用访问令牌（持有者身份验证令牌）向Experience Manager as a Cloud Service发出请求。 AEM Forms as a Cloud Service提供API以安全检索访问令牌。 要检索并使用令牌对请求进行身份验证，请执行以下操作：
 
-   1. [从Developer Console检索Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。
-   1. [在您的环境中安装Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。 (应用程序服务器、Web服务器或其他非AEM服务器)配置为将请求发送到（进行调用）云服务。
-   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。
+   1. [从Developer Console检索Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
+   1. [在您的环境中安装Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 (应用程序服务器、Web服务器或其他非AEM服务器)配置为将请求发送到（进行调用）云服务。
+   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
    1. 将访问令牌作为持有者身份验证令牌运行Experience Manager API。
-   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans#configure-access-in-aem)。
+   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
 
   >[!NOTE]
   >

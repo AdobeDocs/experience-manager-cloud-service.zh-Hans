@@ -3,11 +3,12 @@ title: 如何将自适应表单中的数据提交到Microsoft&amp；reg； OneDr
 description: 使用提交到OneDrive提交操作探索将AEM Forms与Microsoft&amp；reg； OneDrive连接的简化流程。 了解配置OneDrive和设置提交操作以进行高效数据存储和检索的分步指南
 keywords: AEM Forms OneDrive集成，连接到Microsoft OneDrive，使用AEM Forms设置OneDrive配置
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '927'
 ht-degree: 50%
 
 ---
@@ -111,8 +112,8 @@ AEM Forms与Microsoft® OneDrive无缝集成的一些优势包括：
 执行以下步骤以在通用编辑器中创作的自适应表单中使用OneDrive存储配置：
 
 1. 打开自适应表单进行编辑。
-1. 单击编辑器上的&#x200B;**编辑表单属性**&#x200B;扩展。
-出现&#x200B;**表单属性**&#x200B;对话框。
+1. 单击编辑器上的&#x200B;**编辑表单属性**扩展。
+出现**表单属性**&#x200B;对话框。
 
    >[!NOTE]
    >
@@ -120,7 +121,7 @@ AEM Forms与Microsoft® OneDrive无缝集成的一些优势包括：
    > * 请参阅[扩展管理器功能亮点](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用编辑器中启用或禁用扩展。
 1. 单击&#x200B;**提交**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 提交到OneDrive]**。
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
-如果选择&#x200B;**保存具有原始名称的附件**，则附件会使用其原始文件名存储在文件夹中。 您还可以将记录文档(DoR)保存到Azure Blob存储中。
+如果选择**保存具有原始名称的附件**，则附件会使用其原始文件名存储在文件夹中。 您还可以将记录文档(DoR)保存到Azure Blob存储中。
 1. 选择要用于保存数据的&#x200B;**[!UICONTROL 存储配置]**。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**
 

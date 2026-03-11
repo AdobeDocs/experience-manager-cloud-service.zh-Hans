@@ -1,12 +1,13 @@
 ---
 title: 如何配置Azure存储？
-description: 了解如何将表单与Azure Storage Server集成。
+description: 了解如何将表单与Azure storage server集成。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -27,15 +28,15 @@ ht-degree: 1%
 
 在执行这些步骤之前，请确保您拥有[!DNL Azure]存储帐户和访问密钥，以授权对[!DNL Azure]存储帐户的访问。
 
-1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**。
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL Azure存储]**。
 1. 选择要创建配置的文件夹，然后选择&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定配置的标题。
-1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
+1. 在[!DNL Azure]Azure存储帐户&#x200B;**[!UICONTROL 字段中指定]**&#x200B;存储帐户的名称。
 1. 在&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定用于访问Azure存储帐户的密钥，然后选择&#x200B;**[!UICONTROL 保存]**。
 
 ## 创建表单数据模型 {#create-azure-form-data-model}
 
-创建[!DNL Azure]存储配置后，您可以[创建表单数据模型](create-form-data-models.md)。 创建表单数据模型(FDM)时，在&#x200B;**[!UICONTROL 数据Source配置]**&#x200B;字段中指定包含[!DNL Azure]配置的文件夹。 然后，您可以从指定文件夹名称中存在的配置列表中选择配置。
+创建[!DNL Azure]存储配置后，您可以[创建表单数据模型](create-form-data-models.md)。 创建表单数据模型(FDM)时，在[!DNL Azure]数据Source配置&#x200B;**[!UICONTROL 字段中指定包含]**&#x200B;配置的文件夹。 然后，您可以从指定文件夹名称中存在的配置列表中选择配置。
 
 ### 将[!DNL Azure]服务添加到表单数据模型 {#add-azure-services}
 
@@ -61,11 +62,11 @@ ht-degree: 1%
      </tr>
      <tr>
       <td>从Azure获取Blob</td>
-      <td>使用ID或名称检索作为Azure存储中的Blob存储的数据</td>
+      <td>使用ID或名称检索在Azure存储中存储为Blob的数据</td>
      </tr>
      <tr>
-      <td>从Azure获取具有二进制文件URL的Blob</td>
-      <td>使用ID或名称在Azure存储中检索作为Blob存储的数据以及二进制文件的URL</td>
+      <td>从Azure获取带有二进制文件URL的Blob</td>
+      <td>使用ID或名称检索在Azure存储中存储为二进制文件的URL的Blob数据</td>
      </tr>
      <tr>
       <td>在Azure中保存Blob</td>
@@ -98,7 +99,7 @@ ht-degree: 1%
 1. 将&#x200B;**[!UICONTROL 搜索键]**&#x200B;切换选项切换到“开启”状态。 此选项仅适用于主要数据类型。
 1. 选择&#x200B;**[!UICONTROL 完成]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型(FDM)。
 
-将数据模型对象属性定义为搜索键后，哈希值存储在Azure索引标记中，Base64编码值存储在Azure元数据中。
+将数据模型对象属性定义为搜索键后，哈希值存储在Azure索引标签中，Base64编码值存储在Azure元数据中。
 
 >[!NOTE]
 >

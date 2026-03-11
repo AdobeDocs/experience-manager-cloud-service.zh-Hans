@@ -3,10 +3,11 @@ title: 轻松地批量创建PDF — 通过批处理掌握艺术 — 您生成数
 description: 如何创建以品牌为导向的个性化通信？
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1716'
 ht-degree: 2%
 
 ---
@@ -40,15 +41,15 @@ ht-degree: 2%
 
 ### 批处理操作的组件 {#components-of-a-batch-operations}
 
-**云配置**： Experience Manger云配置可帮助您将Experience Manager实例连接到客户拥有的Microsoft Azure Storage。 它可让您为客户拥有的Microsoft Azure帐户指定凭据以连接到该帐户。
+**云配置**： Experience Manger云配置可帮助您将Experience Manager实例连接到客户拥有的Microsoft Azure存储。 它允许您为客户拥有的Microsoft Azure帐户指定凭据以连接到该帐户。
 
-**批处理数据存储配置(USC)**：批处理数据配置可帮助您为批处理API配置特定的Blob存储实例。 它可让您在客户拥有的Microsoft Azure Blob Storage中指定输入和输出位置。
+**批处理数据存储配置(USC)**：批处理数据配置可帮助您为批处理API配置特定的Blob存储实例。 它可让您在客户拥有的Microsoft Azure Blob存储中指定输入和输出位置。
 
 **批处理API**：允许您创建批处理配置并根据这些配置执行批处理运行，以将PDF或XDP模板与数据合并，并生成PDF、PS、PCL、DPL、IPL和ZPL格式的输出。 通信提供了批处理API，用于配置管理和批量执行。
 
 ![数据合并表](assets/communications-batch-structure.png)
 
-**存储**：通信API使用客户拥有的Microsoft Azure Cloud Storage获取客户记录并存储生成的文档。 您可以在Experience Manager Cloud Service配置中配置Microsoft Azure Storage 。
+**存储**：通信API使用客户拥有的Microsoft Azure Cloud Storage获取客户记录并存储生成的文档。 您可以在Microsoft Azure配置中配置Experience Manager Cloud Service Storage 。
 
 **应用程序**：要使用批处理API生成和使用文档的自定义应用程序。
 
@@ -64,7 +65,7 @@ ht-degree: 2%
 
 要使用批处理API，需要满足以下条件：
 
-* [Microsoft Azure Storage帐户](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
+* [Microsoft Azure存储帐户](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
 * PDF或XDP模板
 * [要与模板合并的数据](#form-data)
 * 具有Experience Manager管理员权限的用户
@@ -80,22 +81,22 @@ ht-degree: 2%
 
 ### 将客户数据（XML文件）上传到Azure存储
 
-在您的Microsoft Azure Storage上，创建[容器](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs)和[将客户数据(XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)上载到容器内的[文件夹](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)。
+在您的Microsoft Azure存储上，创建[容器](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs)和[将客户数据(XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)上载到容器内的[文件夹](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)。
 
 >[!NOTE]
 >
->您可以将Microsoft Azure Storage配置为自动清理输入文件夹，或按计划时间间隔将输出文件夹的内容移动到其他位置。 但是，请确保在引用文件夹的批处理操作仍在运行时不清理文件夹。
+>您可以将Microsoft Azure存储配置为自动清理输入文件夹，或按计划时间间隔将输出文件夹的内容移动到其他位置。 但是，请确保在引用文件夹的批处理操作仍在运行时不清理文件夹。
 
 ### 创建云配置 {#create-a-cloud-configuration}
 
-云配置会将您的Experience Manager实例连接到Microsoft Azure Storage。 要创建云配置，请执行以下操作：
+云配置可将您的Experience Manager实例连接到Microsoft Azure Storage。 要创建云配置，请执行以下操作：
 
-1. 转到工具>云服务> Azure存储
+1. 转到“工具”>“云服务”>“Azure存储”
 1. 打开文件夹以托管配置，然后单击“创建”。 您可以使用全局文件夹或创建文件夹。
-1. 指定要连接到服务的配置和凭据的名称。 您可以[从Microsoft Azure Storage Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)检索这些凭据。
+1. 指定要连接到服务的配置和凭据的名称。 您可以[从Microsoft Azure存储门户](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)检索这些凭据。
 1. 单击“创建”。
 
-您的Experience Manager实例现在可以连接到Microsoft Azure Storage，并在需要时使用它存储和读取内容。
+您的Experience Manager实例现在可以连接到Microsoft Azure Storage，并在需要时使用它来存储和读取内容。
 
 ### 创建批量数据存储配置 {#create-batch-data-store-configuration}
 
@@ -105,13 +106,13 @@ ht-degree: 2%
 
 1. 转到“工具” > “Forms” > “统一存储连接器” 。
 1. 打开文件夹以托管配置，然后单击“创建”。 您可以使用全局文件夹或创建文件夹。
-1. 指定配置的标题和名称。 在存储中，选择Microsoft Azure Storage。
+1. 指定配置的标题和名称。 在存储中，选择Microsoft Azure Storage 。
 1. 在存储配置路径中，浏览并选择云配置，该配置包含客户拥有的Azure存储帐户的凭据。
 1. 在Source文件夹中，指定Azure存储容器和包含记录的文件夹的名称。
 1. 在目标文件夹中，指定Azure存储容器的路径和用于存储生成的文档的文件夹。
 1. 单击“创建”。
 
-您的Experience Manager实例现在已连接到Microsoft Azure Storage，并已配置为检索数据并将其发送到Microsoft Azure Storage上的特定位置。
+您的Experience Manager实例现在已连接到Microsoft Azure Storage，并配置为检索数据并将其发送到Microsoft Azure Storage上的特定位置。
 
 ### 将模板和其他资源上传到您的Experience Manager实例 {#upload-templates-and-other-assets-to-your-AEM-instance}
 
@@ -148,7 +149,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在批处理运行时，请勿对相应的源文件夹和目标文件夹、数据源配置以及Microsoft Azure云配置进行任何更改。
+>当批次运行时，请勿对相应的源文件夹和目标文件夹、数据源配置以及Microsoft Azure云配置进行任何更改。
 
 ### 检查批次的状态 {#status-of-a-batch}
 

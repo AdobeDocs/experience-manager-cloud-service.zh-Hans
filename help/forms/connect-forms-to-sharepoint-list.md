@@ -4,10 +4,11 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: 如何为自适应表单连接SharePoint列表？ 、提交到SharePoint、创建SharePoint列表配置、在自适应表单中使用提交到SharePoint提交操作、将自适应表单连接到Microsoft&amp；reg； SharePoint列表。
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '466'
 ht-degree: 30%
 
 ---

@@ -1,17 +1,18 @@
 ---
-title: 对Edge Delivery Services表单提交中的403禁止错误进行故障诊断
+title: 排查 Edge Delivery Services 表单提交中的 403 Forbidden 错误
 description: 了解如何诊断和解决在从Edge Delivery Services提交表单到AEM Publish时出现403禁止显示的错误。 本指南涵盖的常见原因包括CORS、Dispatcher规则和反向链接筛选条件问题。
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
-source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 3%
+source-wordcount: '1124'
+ht-degree: 11%
 
 ---
 
-# 对Edge Delivery Services表单提交中的403禁止错误进行故障诊断 {#troubleshooting-403-forbidden-edge-delivery}
+# 排查 Edge Delivery Services 表单提交中的 403 Forbidden 错误 {#troubleshooting-403-forbidden-edge-delivery}
 
 将表单从Edge Delivery Services提交到AEM Publish时，您可能会遇到&#x200B;**403 Forbidden**&#x200B;错误。 此错误表示服务器拒绝处理请求，通常是因为安全配置。 本文可帮助您识别并解决此问题的最常见原因。
 
@@ -73,9 +74,9 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->将`main--abc--adobe.aem.live`和`main--abc1--adobe.aem.live`替换为您的实际网站域。 从同一存储库托管的每个站点都需要一个单独的CORS配置条目。
+>将 `main--abc--adobe.aem.live` 和 `main--abc1--adobe.aem.live` 替换为您的真实网站域。从同一个存储库托管的每个网站都需要一个单独的 CORS 配置条目。
 
-有关详细的CORS配置，请参阅[CORS配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
+有关 CORS 的详细配置，请参阅 [CORS 配置指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
 
 ### &#x200B;2. 《Dispatcher规则》
 
@@ -135,9 +136,9 @@ Dispatcher过滤器配置示例：
 **解决方案：**
 配置反向链接筛选条件，以允许您的特定Edge Delivery站点域：
 
-1. 创建或更新OSGi配置文件： `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
+1. 创建或更新 OSGi 配置文件：`org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. 为您的特定站点域添加以下配置：
+2. 通过您的特定网站域添加以下配置：
 
    ```json
    {
@@ -165,7 +166,7 @@ Dispatcher过滤器配置示例：
    }
    ```
 
-3. 通过Cloud Manager部署配置
+3. 通过 Cloud Manager 部署配置
 
 >[!IMPORTANT]
 >
@@ -186,7 +187,7 @@ Dispatcher过滤器配置示例：
 3. 尝试提交表单
 4. 查找与CORS相关的错误消息
 
-**如果存在CORS错误：**&#x200B;请按照上述CORS解决方案操作。
+**如果存在CORS错误：**请按照上述CORS解决方案操作。
 **如果没有CORS错误：**&#x200B;请继续执行步骤2。
 
 ### 步骤2：检查网络选项卡
@@ -197,7 +198,7 @@ Dispatcher过滤器配置示例：
 4. 检查失败的请求详细信息
 5. 查看响应标头和状态
 
-**如果请求未到达服务器：**&#x200B;可能是Dispatcher问题。
+**如果请求未到达服务器：**可能是Dispatcher问题。
 **如果请求到达服务器但失败：**&#x200B;可能是反向链接筛选条件问题。
 
 ### 步骤3：检查AEM日志

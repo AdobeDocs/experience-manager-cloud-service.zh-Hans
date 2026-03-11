@@ -1,13 +1,14 @@
 ---
 title: 如何下载并安装Forms Designer以创建记录文档模板？
-description: 使用Forms Designer创建XDP和PDF表单模板，这些模板用作记录文档的模板。
+description: 使用Forms Designer创建用作记录文档模板的XDP和PDF表单模板。
 keywords: 安装Designer、安装Forms Designer、安装Forms Designer的要求
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '415'
 ht-degree: 7%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 7%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 Designer是一款点击式图形表单设计工具，可简化XDP和PDF表单模板的创建。 您可以设计表单模板、定义其逻辑以及满足严格的法规要求。 XDP和PDF表单用作自适应表单中的记录文档模板。 这些表单模板与[自适应表单模板](template-editor.md)不同。
 

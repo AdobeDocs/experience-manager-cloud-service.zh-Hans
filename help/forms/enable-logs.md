@@ -5,13 +5,14 @@ contentOwner: robhagat
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 5%
+source-wordcount: '661'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 5%
 
 1. 转到`https://'[server]:[port]'/system/console/configMgr`。 找到并打开&#x200B;*Apace Sling日志记录器配置*&#x200B;选项。 此时将显示一个对话框：
 
-   ![&#x200B; Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
+   ![ Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
 
    Apace Sling日志记录器配置选项
 

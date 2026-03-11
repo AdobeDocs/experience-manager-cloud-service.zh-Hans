@@ -1,5 +1,5 @@
 ---
-title: 调试HTML5 forms
+title: '调试 HTML5 Forms '
 description: 本文档列出了解决各种已知问题的步骤。
 contentOwner: robhagat
 content-type: reference
@@ -7,17 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
+source-wordcount: '817'
+ht-degree: 1%
 
 ---
 
-# 调试HTML5 forms {#debugging-html-forms}
+# 调试 HTML5 Forms  {#debugging-html-forms}
 
 本文档包含多个疑难解答场景。 对于每种情况，都提供了一些解决问题的步骤。 按照以下步骤操作，如果问题仍然存在，请配置日志记录器以获取并查看错误/警告日志。 有关HTML5表单日志记录的更多详细信息，请参阅[生成HTML5表单的日志](/help/forms/enable-logs.md)。
 

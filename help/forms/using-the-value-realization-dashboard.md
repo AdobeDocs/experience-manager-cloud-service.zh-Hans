@@ -1,21 +1,23 @@
 ---
-title: 使用价值实现仪表板分析表单和文档使用趋势
+title: 使用价值实现仪表板分析表单和文档的使用趋势
 description: 了解如何使用Forms使用情况分析仪表板监控和了解表单和表单片段的性能。
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 6%
 
 ---
 
-# 使用价值实现仪表板分析表单和文档使用趋势
+# 使用价值实现仪表板分析表单和文档的使用趋势
 
-<span class="preview">此功能可通过提前访问计划使用。 要请求访问，请将您的官方地址中的电子邮件发送至aem-forms-ea@adobe.com。<span>
+<span class="preview"> 此功能通过早期访问计划提供。要请求访问，请将您的官方地址中的电子邮件发送至aem-forms-ea@adobe.com。<span>
 
 ![值实现仪表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
@@ -116,7 +118,7 @@ ht-degree: 1%
 - **要提取的信息：**
    - **片段重用率：**&#x200B;监视新表单中现有片段的重用率。 数字越大，表明可重用组件的利用越充分，效率也越高。
 
-## 示例场景
+## 场景示例
 
 - **方案：**&#x200B;您注意到“表单提交次数”突然下降。
    - **操作：**&#x200B;调查可能的原因，如表单停机、可用性问题或表单登录页流量下降。

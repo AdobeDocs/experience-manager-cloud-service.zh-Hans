@@ -4,11 +4,12 @@ description: 探索AEM Forms中的交互式通信编辑器。 了解关键功能
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 4%
+source-wordcount: '419'
+ht-degree: 5%
 
 ---
 

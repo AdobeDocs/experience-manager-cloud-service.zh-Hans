@@ -2,11 +2,12 @@
 title: 为自适应Forms生成提交PDF（以前称为记录文档）
 description: 了解如何根据自适应PDF核心组件的表单提交生成Forms提交。 创建已提交表单的PDF以供存档或参考。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3320'
 ht-degree: 2%
 
 ---
@@ -147,7 +148,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，提交自适应表单时，会生成更新的提交PDF。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用提交PDF时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 

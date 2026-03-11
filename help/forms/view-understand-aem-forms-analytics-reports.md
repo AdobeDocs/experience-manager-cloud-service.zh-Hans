@@ -6,11 +6,12 @@ topic-tags: develop
 feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 2%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 2%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 在快速发展的数字分析环境中，要做出明智决策并优化数字体验，必须顺应全球趋势。 为了解决此问题，自适应Forms与Adobe Analytics无缝集成，以捕获和跟踪已发布表单和文档的性能指标。 分析这些量度背后的目标是做出数据驱动型决策，使用量度和分析增强表单的可用性和有效性。
 
@@ -56,7 +57,7 @@ Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提
 
 * **验证错误**：验证错误显示表单字段上发生的与验证相关的错误总数。
 
-* **独特访客**：独特访客表示访客呈现表单的次数。 有关独特访客的详细信息，请参阅[独特访客、访问和客户行为](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)。
+* **独特访客**：独特访客表示访客呈现表单的次数。 有关独特访客的详细信息，请参阅[独特访客、访问和客户行为](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)。
 
   ![Forms性能](assets/forms-performance.png){width="100%"}
 
@@ -64,8 +65,8 @@ Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提
 
 它有助于您对表单中的访客活动获得有价值的分析：
 
-* **访问次数和提交次数**：它描述了在某个日期范围内访问您表单的频率以及相应的表单提交次数，有关该次单击[访问](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hans)的详细信息。
-* **独特访客及其总访问量**：新用户和旧用户之间有所区别。 例如，访客可能在一个月内每天访问您的网站，但仍将其计为单个独特访客。 访问[独特访客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=zh-Hans)以了解详细信息。
+* **访问次数和提交次数**：它描述了在某个日期范围内访问您表单的频率以及相应的表单提交次数，有关该次单击[访问](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html)的详细信息。
+* **独特访客及其总访问量**：新用户和旧用户之间有所区别。 例如，访客可能在一个月内每天访问您的网站，但仍将其计为单个独特访客。 访问[独特访客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)以了解详细信息。
 
   ![Forms访客](assets/forms-visitors.png){width="100%"}
 

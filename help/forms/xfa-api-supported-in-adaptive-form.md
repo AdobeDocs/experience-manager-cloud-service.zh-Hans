@@ -1,5 +1,5 @@
 ---
-title: 在基于XDP的自适应Forms中支持XFA
+title: 基于 XDP 的自适应表单中的 XFA 支持
 description: 列出自适应Forms中支持的XFA事件、属性、脚本和验证。
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
@@ -8,15 +8,16 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 5%
+source-wordcount: '689'
+ht-degree: 7%
 
 ---
 
-
-# 在基于XDP的自适应Forms中支持XFA{#xfa-support-in-xdp-based-adaptive-forms}
+# 基于 XDP 的自适应表单中的 XFA 支持{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## 简介 {#introduction}
 
@@ -267,4 +268,3 @@ ht-degree: 5%
 >[!NOTE]
 >
 >您无法覆盖绑定到XFA复选框按钮的自适应表单单选按钮和复选框组的强制属性。
-

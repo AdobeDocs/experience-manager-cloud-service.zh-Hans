@@ -3,15 +3,16 @@ title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 58%
+source-wordcount: '673'
+ht-degree: 61%
 
 ---
 
-
-# 提交由自适应Forms支持的操作
+# 自适应表单支持的提交操作
 
 自适应表单可让您创建引人入胜、响应式、动态和自适应的表单。它们提供了直观的用户界面和一组现成的组件，可用于高效地设计和管理表单。 您可以配置各种提交操作以将表单数据发送到OneDrive、SharePoint、Workfront Fusion等服务。
 
@@ -23,7 +24,7 @@ ht-degree: 58%
 * 使用表单数据模型(FDM)将数据无缝发送到配置的数据源。
 * 方便地将数据提交到 REST 端点。
 
-## 提交由自适应Forms支持的操作
+## 自适应表单支持的提交操作
 
 AEM forms提供了以下现成的提交操作：
 
@@ -58,7 +59,7 @@ AEM forms提供了以下现成的提交操作：
 | 使用FDM提交 | 支持✅ | 支持✅ | 支持✅ |                        |
 | 提交到AEP | 支持✅ | 支持✅ | 支持✅ |                        |
 | Azure Blob存储 | 支持✅ | 支持✅ | 支持✅ |                        |
-| 提交到REST端点 | 支持✅ | 支持✅ | 支持✅ |                        |
+| 提交到 REST 端点 | 支持✅ | 支持✅ | 支持✅ |                        |
 | 提交至 Marketo Engage | 支持✅ | 支持✅ | 支持✅ |                        |
 | 提交到 OneDrive | 支持✅ | 支持✅ | 支持✅ |                        |
 | 调用 AEM 工作流 | 支持✅ | 支持✅ | 支持✅ |                        |
@@ -118,4 +119,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## 另请参阅
 
 {{af-submit-action}}
-
