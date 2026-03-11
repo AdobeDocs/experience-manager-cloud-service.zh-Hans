@@ -3,9 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: ecc32b6b501be4a53bf26f170e501dc1407d1a57
+exl-id: b39198d9-97ca-4cf9-acd5-ff8c778ab386
+source-git-commit: 2e7072043a6b8e5dbaa5f9b6a0579de3d6509c85
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2082'
 ht-degree: 89%
 
 ---
@@ -38,7 +39,7 @@ ht-degree: 89%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -165,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 >[!NOTE]
 >
->此功能自 9 月 25 日起作为有限可用性功能提供。
+>9月25日作为故障功能提供。
 >请发送邮件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) 以在您的项目中启用。
 
 ### 适用于 Eclipse 的 AEM 开发人员工具新版本 {#aem-develeper-tools-for-eclipse}
