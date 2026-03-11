@@ -4,10 +4,10 @@ description: 内容复制工具允许用户按需将可变内容从其AEM as a C
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
+source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 27%
+source-wordcount: '1574'
+ht-degree: 26%
 
 ---
 
@@ -143,7 +143,14 @@ ht-degree: 27%
 1. （可选）如果需要，请设置以下内容：
 
    * **包括访问控制列表** — 选择是否要复制内容的访问控制权限以及内容。
-   * **划出** — 选择此项可在开始导入之前删除目标上的现有内容，这样您就可以从头开始，避免与预先存在的内容冲突。 如果取消选中&#x200B;**擦除**，Cloud Manager会在现有目标内容之上导入新内容。 擦除开始前会显示确认提示，Cloud Manager将记录擦除操作和导入详细信息以便进行跟踪。
+   * **划出** — 选择此项可在开始导入之前删除目标上的现有内容，这样您就可以从干净状态开始，避免与预先存在的内容冲突。 如果取消选中&#x200B;**擦除**，Cloud Manager会在现有目标内容之上导入新内容。 擦除开始前会显示确认提示，Cloud Manager将记录擦除操作和导入详细信息以便进行跟踪。
+     ![复制内容](assets/content_copy_wipe-destination.png)
+      * 选择&#x200B;**导入前擦除目标**&#x200B;选项并单击&#x200B;**复制**&#x200B;时，将显示一个弹出窗口，其中显示以下选项：
+         * **取消**（在这种情况下，**复制内容**&#x200B;流程将不会启动）
+         * **确认** （**复制内容**流程将启动，并将擦除目标上的内容）
+           ![复制内容](assets/content-copy-wipe-destination-warning.png)
+
+      * 如果您未选择&#x200B;**在导入前擦除目标**，则&#x200B;**复制内容**&#x200B;流将按原样工作。
 
 1. 点击 **复制**。
 
