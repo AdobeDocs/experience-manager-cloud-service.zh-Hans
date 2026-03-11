@@ -79,7 +79,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 使用类别`[locale-name]_xfa`在`cq:ClientLibraryFolder`下创建名为`etc/clientlibs/locale_name`且类型为`xfaforms.I18N.<locale>`的节点，并添加以下文件：
 
 * **I18N.js**&#x200B;定义了`xfalib.locale.Strings`中定义的`<locale>`的`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`。
-* **js.txt**包含以下内容：
+* **js.txt**&#x200B;包含以下内容：
   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*

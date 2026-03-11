@@ -40,7 +40,7 @@ ht-degree: 99%
    1. 打开 index.html 文件以查看 API 参考文档。
 
 * **可从何处获取自适应表单的 [!DNL JavaScript™] API 参考？**
-可从 [!DNL  Maven Central Repository] 下载 [!DNL JavaScript™] API 参考文档。要进行下载，请执行以下操作：
+可从 [!DNL &#x200B; Maven Central Repository] 下载 [!DNL JavaScript™] API 参考文档。要进行下载，请执行以下操作：
    1. 打开 [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api)。
    1. 找到并打开包含最新版本的 [!DNL Experience Manager Forms] SDK 的页面。
    1. 单击“查看全部”选项以查看所有文件。

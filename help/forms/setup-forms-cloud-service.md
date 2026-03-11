@@ -48,7 +48,7 @@ ht-degree: 7%
 
 * （仅适用于沙盒）载入服务后，[创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en)和[运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html)生产和非生产管道。 它将启用并将[!DNL AEM Forms] as a Cloud Service的最新功能引入您的环境。
 
-您可以使用Forms as a Cloud Service创建自适应表单（数字注册）或生成客户通信。 完成[ as a Cloud Service的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hans)入门[!DNL Adobe Experience Manager]后，执行以下操作以启用Forms — 数字注册或客户通信功能。<!--You can also enable both the features-->：
+您可以使用Forms as a Cloud Service创建自适应表单（数字注册）或生成客户通信。 完成[&#x200B; as a Cloud Service的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hans)入门[!DNL Adobe Experience Manager]后，执行以下操作以启用Forms — 数字注册或客户通信功能。<!--You can also enable both the features-->：
 
 1. 登录 Cloud Manager，并打开您的 AEM Forms as a Cloud Service 实例。
 1. 打开编辑程序选项，转到解决方案和加载项选项卡：

@@ -115,7 +115,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的&#x200B;**When**&#x200B;部分中为单击按钮创建条件。 例如，单击&#x200B;**When[Confirm]**。
 1. 在&#x200B;**Then**&#x200B;部分中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**异步函数调用**。
-当您选择**[!UICONTROL 异步函数调用]**，并且返回类型为`Promise`的函数出现时。
+当您选择&#x200B;**[!UICONTROL 异步函数调用]**，并且返回类型为`Promise`的函数出现时。
 1. 从列表中选择异步函数。 例如，选择`matchOTP()`函数，其回调将显示为`Add success callback`和`add failure callback`。
 1. 现在，选择&#x200B;**[!UICONTROL Input]**&#x200B;绑定。 例如，选择&#x200B;**[!UICONTROL 输入]**&#x200B;作为`Form Object`并将其与`OTP`字段进行比较。
 

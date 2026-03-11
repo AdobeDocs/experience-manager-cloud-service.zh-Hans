@@ -51,7 +51,7 @@ ht-degree: 2%
 
 ## 自适应表单
 
-* **规则编辑器：** AEM Forms as a Cloud Service提供了一个强化的规则编辑器[](rule-editor.md#visual-rule-editor)。 代码编辑器在Forms as a Cloud Service上不可用。
+* **规则编辑器：** AEM Forms as a Cloud Service提供了一个强化的规则编辑器[&#128279;](rule-editor.md#visual-rule-editor)。 代码编辑器在Forms as a Cloud Service上不可用。
 
   [迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md)可帮助您迁移具有自定义规则（在代码编辑器中创建）的表单。 该实用程序会将此类规则转换为Forms as a Cloud Service上支持的自定义函数。 您可以将可重用的函数与规则编辑器结合使用，以继续获取通过规则脚本获取的结果。 `onSubmitError`或`onSubmitSuccess`函数现在可用作规则编辑器中的操作。
 
