@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.03.05发行说明
-description: 这些是通用编辑器2026.03.05版的发行说明。
+title: 通用编辑器2026.03.12发行说明
+description: 这些是通用编辑器2026.03.12版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 33%
+source-wordcount: '151'
+ht-degree: 39%
 
 ---
 
 
-# 通用编辑器2026.03.05发行说明 {#release-notes}
+# 通用编辑器2026.03.12发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 3 月 5 日版本的发行说明。
+这些是通用编辑器 2026 年 3 月 12 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ ht-degree: 33%
 
 ## 新增功能 {#what-is-new}
 
-* [组件选取器](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)具有新设计。
-* RTE的[拾色器](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)现已可用。
+* 现在可以通过容器的[上下文菜单](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)添加组件。
 
 ## 早期采用的功能 {#early-adopter}
 
@@ -37,5 +36,4 @@ ht-degree: 33%
 
 ## 其他改进 {#other-improvements}
 
-* 现在，在后端支持的情况下，RTE[中的对齐方式、文本方向和缩进选项默认设置为](/help/implementing/universal-editor/configure-rte.md)启用。
-* 现在，在将内容片段用于开放API和用户界面架构时呈现选项卡。
+* 修复了Document Authoring子元素不遵循nthChild规则的问题。
