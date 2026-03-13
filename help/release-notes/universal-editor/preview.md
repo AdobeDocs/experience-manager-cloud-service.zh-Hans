@@ -4,10 +4,10 @@ description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: fc73e3dd01d22ece3c2e2c55a5f62d04ee8564a9
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 57%
+source-wordcount: '232'
+ht-degree: 35%
 
 ---
 
@@ -28,4 +28,13 @@ ht-degree: 57%
 
 ## 即将推出的功能 {#upcoming-features}
 
-* 在上下文菜单中添加了添加组件的选项。
+* 现在，可以在主屏幕上折叠右边栏中的项目。
+* 资源选择器现在支持筛选器定义。
+* 如果所选项目没有可用的操作，则上下文菜单不再显示用于访问操作的V形。
+
+## 即将推出的改进 {#upcoming-improvements}
+
+* 如果存在模型/过滤器/组件定义，则在编辑器中，从一个应用程序切换到另一个应用程序时会重新获取该定义。
+* 使用DA作为后端时，删除图像不再保留空的图像标记。
+* 现在，在使用DA作为后端时，可以正确处理块中的类。
+* 现在，Open API将远程资产正确地另存为对象。

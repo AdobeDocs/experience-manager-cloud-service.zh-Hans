@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
+source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 18%
+source-wordcount: '3002'
+ht-degree: 17%
 
 ---
 
@@ -186,9 +186,15 @@ ht-degree: 18%
 
    ![选择要添加到容器的组件](assets/ue-add-component.png)
 
-1. 然后，在属性面板中选择添加图标。
+1. 然后，您可以：
 
-   ![选择“添加”图标](assets/add-icon.png)
+   * 在属性面板中选择&#x200B;**添加**&#x200B;图标。
+
+     ![选择“添加”图标](assets/add-icon.png)
+
+   * 在上下文菜单中选择&#x200B;**添加**&#x200B;选项。
+
+     ![从上下文菜单添加](assets/add-from-context-menu.png)
 
 1. 此时将打开组件选取器对话框。
    * 使用左列可按类别筛选组件，或使用搜索按名称筛选。
@@ -207,21 +213,28 @@ ht-degree: 18%
 ### 在容器中复制组件 {#duplicating-components}
 
 1. 使用[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器在容器中选择组件。
-1. 然后在属性面板中选择&#x200B;**复制**&#x200B;图标。
 
-   ![选择要添加到容器的组件](assets/ue-duplicate-component.png)
-1. 该组件将被复制并插入到选定组件的下方。
+1. 然后，您可以：
 
-该组件被插入到容器中并可以在编辑器中进行编辑。
+   * 在属性面板中选择&#x200B;**复制**&#x200B;图标。
+
+     ![选择要添加到容器的组件](assets/ue-duplicate-component.png)
+
+   * 从上下文菜单中选择&#x200B;**复制**&#x200B;选项。
+
+     ![从上下文菜单复制](assets/duplicate-from-context-menu.png)
+
+该组件将被复制并插入到选定组件的下方。
 
 ### 从容器中删除组件 {#deleting-components}
 
-1. 在[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器中选择容器组件。
-1. 选择容器的V形图标以在内容树中展开其内容。
-1. 然后，在内容树中，选择容器内的一个组件。
-1. 在属性面板中选择删除图标。
+1. 在[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器的容器中选择组件。
+1. 然后，您可以：
+   * 在属性面板中选择&#x200B;**删除**&#x200B;图标。
 
-   ![删除组件](assets/ue-delete-component.png)
+     ![删除组件](assets/ue-delete-component.png)
+   * 在上下文菜单中选择&#x200B;**删除**选项。
+     ![从上下文菜单删除](assets/delete-from-context-menu.png)
 
 选定的组件已删除。
 
@@ -295,21 +308,23 @@ ht-degree: 18%
 ![粘贴图标](assets/paste.png)
 
 1. 在编辑器或内容树中选择组件。
-1. **复制**&#x200B;图标显示在[属性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)点击或单击它。
-1. 属性面板中会显示&#x200B;**粘贴**&#x200B;图标。
+1. 然后，您可以：
+   * 单击&#x200B;**属性面板中的**&#x200B;复制[图标。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![从面板复制](assets/copy-from-panel.png)
+   * 在上下文菜单中选择&#x200B;**复制**选项。
+     ![从上下文菜单复制](assets/copy-from-context-menu.png)
 1. 选择要将复制的组件粘贴到&#x200B;_之后的组件_。
-1. 点按或单击粘贴。
-1. 复制的组件粘贴在&#x200B;_之后_&#x200B;选定的组件。
+1. 然后，您可以：
+   * 在属性面板中点击或单击&#x200B;**粘贴**。
+     从面板![粘贴](assets/paste-from-panel.png)
+   * 在上下文菜单中选择&#x200B;**粘贴**。
+     从上下文菜单![粘贴](assets/paste-from-context-menu.png)
+
+复制的组件粘贴在&#x200B;_之后_&#x200B;选定的组件。
 
 >[!TIP]
 >
 >分别使用热键`Command-C`或`Command-V`进行复制或粘贴。
-
-## 上下文选项 {#context-options}
-
-就地编辑时，编辑器将通过右键单击提供上下文相关的选项，例如复制、删除或复制组件。
-
-![上下文选项菜单](assets/context-options-menu.png)
 
 ## 预览内容 {#previewing-content}
 
@@ -455,7 +470,7 @@ ht-degree: 18%
 要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
-* [AEM Universal Editor 快速入门 &#x200B;](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
+* [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。
