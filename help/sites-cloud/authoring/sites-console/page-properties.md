@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 34%
+source-wordcount: '2211'
+ht-degree: 33%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 34%
 
 ### 品牌化 {#branding}
 
-通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
 
 * **Brand Slug**
 
@@ -161,11 +161,17 @@ ht-degree: 34%
 
 * **启用** — 允许使用身份验证访问页面
 
->[!NOTE]
->
->页面的已关闭的用户组在&#x200B;**[权限](#permissions)**&#x200B;选项卡上定义。
+  >[!NOTE]
+  >
+  >页面的已关闭的用户组在&#x200B;**[权限](#permissions)**&#x200B;选项卡上定义。
 
 * **登录页面** – 要用于登录的页面
+
+  >[!WARNING]
+  >
+  >指定的登录页面&#x200B;**不得**&#x200B;指向本身受&#x200B;**身份验证要求**&#x200B;保护的页面。 您必须确保登录页面是不受保护的公共页面。 例如，专用页面（如`/content/<mysite>/en/login`）未启用&#x200B;**身份验证要求**。
+  >
+  >如果配置的登录页具有&#x200B;**启用**，则启动时将自动删除该页上的身份验证要求，使其可公开访问。
 
 ### 导出 {#export}
 
