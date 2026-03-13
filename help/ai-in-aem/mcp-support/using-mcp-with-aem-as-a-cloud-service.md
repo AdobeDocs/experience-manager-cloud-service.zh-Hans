@@ -4,9 +4,9 @@ description: 了解如何将模型上下文协议与AEM as a Cloud Service一起
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: b3704dad066b66b103fdec849879f889e895c09d
+source-git-commit: 6fccf4f197fbfd38aa6a84422dc347b02d03061d
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1786'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-许多Adobe Experience Manager (AEM)团队现在都在集成开发环境(IDE)和基于聊天的应用程序(如Cursor、OpenAI ChatGPT、Anthropic Claude和Microsoft Copilot Studio)中工作。 这些应用程序支持模型上下文协议(MCP)，它允许应用程序以标准化方式向大型语言模型(LLM)公开后端工具。
+许多Adobe Experience Manager (AEM)团队现在都在集成开发环境(IDE)和基于聊天的应用程序（如Cursor、OpenAI ChatGPT、Anthropic Claude和Microsoft Copilot Studio）中工作。 这些应用程序支持模型上下文协议(MCP)，它允许应用程序以标准化方式向大型语言模型(LLM)公开后端工具。
 
 通过AEM的MCP集成，不同的角色可以围绕相同的内容进行协作：
 
@@ -63,6 +63,8 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 ```
 
 MCP客户端使用MCP协议来检索工具列表和模式，然后LLM可以使用。
+
+请参阅[Content MCP Server教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
 
 ## 支持的MCP应用程序 {#supported-mcp-applications}
 
