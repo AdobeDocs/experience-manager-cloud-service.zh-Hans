@@ -49,14 +49,14 @@ ht-degree: 28%
   <tr>
     <td>版本清除</td>
     <td>客户</td>
-    <td>当前默认禁用版本清除，但可以配置策略，如<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
+    <td>当前默认禁用版本清除，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
     <td>客户</td>
-    <td>审核日志清除当前默认处于禁用状态，但可以配置策略，如<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
+    <td>审核日志清除当前默认处于禁用状态，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
    </td>
   </tr>
@@ -87,7 +87,7 @@ ht-degree: 28%
     <td>客户</td>
     <td>
     <p>必须在 git 中完成。通过在文件夹<code>/libs</code>、<code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>或<code>granite_daily</code>下创建属性，覆盖<code>granite_monthly</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
-    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。查看<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe项目清除配置</a>的<b>OSGi属性</b>列表。</p>
+    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。查看<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe项目清除配置</a>的<b>OSGi属性</b>列表。</p>
   </td>
   </tr>
   </tbody>
@@ -309,7 +309,7 @@ ht-degree: 28%
 
 | 属性 | 环境未来的默认值>待定 | 环境&lt;=TBD的未来默认值 | 必填 | 类型 | 值 |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| 路径 | [“/content”] | [“/content”] | 是 | 字符串数组 | 指定创建新版本时要在哪些路径下清除版本。  客户必须声明此属性，但唯一允许的值是“/content”。 |
+| 多个路径 | [“/content”] | [“/content”] | 是 | 字符串数组 | 指定创建新版本时要在哪些路径下清除版本。  客户必须声明此属性，但唯一允许的值是“/content”。 |
 | maximumAgeDay | 30 | 2557（7年+ 2个闰日） | 是 | 整数 | 将删除比配置值更早的任何版本。 如果该值为0，则不会根据版本的存在时间执行清除。 |
 | maximumVersions | 5 | 0（无限制） | 是 | 整数 | 第n个最新版本之前的版本将被删除。 如果该值为0，则不会根据版本数执行清除。 |
 | minimumVersion | 1 | 1 | 是 | 整数 | 无论使用年限如何，保留的最小版本数。 请注意，始终至少保留1个版本；其值必须为1或更高。 |

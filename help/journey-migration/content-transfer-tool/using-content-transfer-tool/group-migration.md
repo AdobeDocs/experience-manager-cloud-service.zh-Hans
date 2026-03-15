@@ -31,7 +31,7 @@ ht-degree: 3%
 
 在过渡到Adobe Experience Manager (AEM) as a Cloud Service的过程中，必须将组从现有AEM系统迁移到AEM as a Cloud Service。 此任务由内容传输工具完成。
 
-AEM as a Cloud Service的一项重大更改是完全集成使用Adobe ID来访问创作层。 此过程需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)来管理用户和用户组。 用户配置文件信息集中存储在Adobe Identity Management System (IMS)中，可通过单点登录功能访问所有Adobe云应用程序。 有关详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=zh-Hans#identity-management)。 由于此更改，用户首次通过IMS登录时将在AEM上自动创建。  因此，CTT不会将用户迁移到云系统。  必须将IMS用户放置到IMS组中，这些组可以是迁移组，也可以是放置在AEM组中、已获得要迁移的AEM内容访问权限的新组。  通过这种方式，云系统上的用户将拥有与其源AEM系统相同的访问权限。
+AEM as a Cloud Service的一项重大更改是完全集成使用Adobe ID来访问创作层。 此过程需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)来管理用户和用户组。 用户配置文件信息集中存储在Adobe Identity Management System (IMS)中，可通过单点登录功能访问所有Adobe云应用程序。 有关详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)。 由于此更改，用户首次通过IMS登录时将在AEM上自动创建。  因此，CTT不会将用户迁移到云系统。  必须将IMS用户放置到IMS组中，这些组可以是迁移组，也可以是放置在AEM组中、已获得要迁移的AEM内容访问权限的新组。  通过这种方式，云系统上的用户将拥有与其源AEM系统相同的访问权限。
 
 ## 组迁移详细信息 {#group-migration-detail}
 
@@ -77,7 +77,7 @@ CTT版本3.0.20及更高版本包含用于禁用组迁移的选项。  此操作
 * 是否先前已迁移该组；如果当前摄取是非划出摄取，则某些组可能已在上次摄取期间迁移。
 * 该组是否为内置组；这些组不会迁移，因为它们始终位于目标AEMaaCS环境中。
 * 如果该组不是已迁移内容的ACL或CUG的一部分，则不会迁移该组。
-* 如果该组是本地组(例如Assets收藏集创建的组)，则它可能已迁移，在这种情况下，“本地”一词将添加到该组的报表中。
+* 如果该组是本地组（例如Assets收藏集创建的组），则它可能已迁移，在这种情况下，“本地”一词将添加到该组的报表中。
 
 在迁移过程中，不会迁移用户，但除非以某种方式捕获用户，否则源系统上的用户 — 组关系将丢失。 摄取过程以文本格式在用户报告中捕获某些此类信息，该报告位于主体迁移报告末尾。
 
@@ -93,7 +93,7 @@ CTT版本3.0.20及更高版本包含用于禁用组迁移的选项。  此操作
 
 * **Note-A**&#x200B;直接在ACL中引用的用户在其注释部分将具有&#x200B;*Note-A*，因为这不是推荐的使用案例或最佳实践。
 * **Note-B**&#x200B;作为内置组的直接成员的用户在其Notes部分将具有&#x200B;*Note-B*，因为这不是推荐的使用案例或最佳实践。
-* **Note-C**&#x200B;作为已迁移本地组(例如，由Assets集合创建的组)的间接成员的用户，在其Notes节中将具有&#x200B;*Note-C*，因为未将本地组配置为由IMS管理。
+* **Note-C**&#x200B;作为已迁移本地组（例如，由Assets集合创建的组）的间接成员的用户，在其Notes节中将具有&#x200B;*Note-C*，因为未将本地组配置为由IMS管理。
 
 这些情况可以同时发生，并且与前几个情况相同。  _有关每个备注针对每个用户引用哪些组的详细信息，请检查引入日志；它会为每个用户报告此信息。_
 

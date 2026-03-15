@@ -17,11 +17,11 @@ ht-degree: 78%
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="管理收藏集"
->abstract="收藏集是 Assets 视图中的一组资源、文件夹或其他收藏集。使用收藏集可在用户之间共享资产。收藏集与文件夹的不同之处是可包含来自不同位置的资产。您可以与一个用户共享多个收藏集。每个收藏集都包含对资产的引用。收藏集中会保持资产的引用完整性。"
+>abstract="收藏集是 Assets 视图中的一组资源、文件夹或其他收藏集。使用收藏集可在用户之间共享资产。 与文件夹不同，一个收藏集可以包含来自不同位置的资源。 您可以与一个用户共享多个收藏集。每个收藏集都包含对资产的引用。收藏集中会保持资产的引用完整性。"
 
 收藏集是指在 Adobe Experience Manager Assets 视图中，由资产、文件夹或其他集合组成的一组内容。使用收藏集可在用户之间共享资源。
 
-与文件夹不同，一个收藏集可以包含来自不同位置的资源。
+收藏集与文件夹的不同之处是可包含来自不同位置的资产。
 
 <!--
 You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.
@@ -237,4 +237,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)

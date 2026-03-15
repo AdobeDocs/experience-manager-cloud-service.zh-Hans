@@ -1,6 +1,6 @@
 ---
 title: Best Practices Analyzer概述
-description: 了解如何使用最佳实践分析器来评估AEM实施对推荐最佳实践的遵守情况
+description: 了解如何使用最佳实践分析器来评估AEM实施对建议的最佳实践的遵守情况
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 feature: Migration
 role: Admin

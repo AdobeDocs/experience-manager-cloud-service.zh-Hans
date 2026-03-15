@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能测试"
->abstract="了解AEM as a Cloud Service部署过程中内置的三种不同类型的功能测试。 测试可确保代码的质量和可靠性。"
+>abstract="了解 AEM as a Cloud Service 部署流程中内置的三种功能测试类型。这些测试可确保您的代码质量和可靠性。"
 
 发现[AEM as a Cloud Service部署流程](/help/implementing/cloud-manager/deploy-code.md)中可用的质量关卡以及各种类型的内置功能测试。 了解如何在全面的测试策略框架内贡献并优化其使用。
 
@@ -58,7 +58,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 我们建议您为AEM应用程序提供单元测试，这是每个测试策略的基础。 它们旨在快速且频繁地运行，并尽早提供快速反馈。 它们紧密集成到开发人员工作流、您自己的CI/CD和AEM云服务部署管道中。
 
-它们使用JUnit实现，并使用Maven执行。 有关AEM的单元测试示例和入门，请参阅AEM项目原型[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)核心模块。
+它们使用JUnit实现，并使用Maven执行。 有关AEM的单元测试示例和入门，请参阅AEM项目原型[的](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)核心模块。
 
 ### 代码质量
 
@@ -91,7 +91,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 为了最大程度地控制特定于客户的开发的风险，Adobe鼓励您将关键UI测试捕获到AEM as a Cloud Service中。 保持这些受限制的体验，但侧重于最大限度地提高它们对客户体验的影响。
 
-测试打包到Docker图像中 — 设计为尽可能易变(支持Cypress、Playwright、Selenium、Java和JavaScript)。 它们遵循与自定义功能测试相同的特性和目的。
+测试打包到Docker图像中 — 设计为尽可能易变（支持Cypress、Playwright、Selenium、Java和JavaScript）。 它们遵循与自定义功能测试相同的特性和目的。
 
 >[!NOTE]
 >

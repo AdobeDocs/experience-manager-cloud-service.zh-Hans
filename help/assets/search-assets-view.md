@@ -20,7 +20,7 @@ ht-degree: 74%
 >abstract="搜索资产可通过在搜索栏中指定关键词，也可通过根据资产的状态、文件类型、MIME 类型、大小、创建日期、修改日期和过期日期筛选资产。除了标准筛选器，还可应用自定义筛选器。可将筛选出的结果另存为“保存的搜索”或“智能收藏集”。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=zh-Hans#manage-smart-collection" text="创建智能收藏集"
 
-[!DNL Assets view] 提供了高效的搜索功能，只需按默认设置即可使用。该搜索执行全文搜索，因此非常全面。利用强大的搜索功能，您可以快速发现适用的资产，并帮助您提升内容速度。[!DNL Assets view] 提供全文搜索，甚至可以对元数据进行搜索，例如智能标记、标题、创建日期和版权。
+[!DNL Assets view] 提供了高效的搜索功能，只需按默认设置即可使用。该搜索执行全文搜索，因此非常全面。 利用强大的搜索功能，您可以快速发现适用的资产，并帮助您提升内容速度。[!DNL Assets view] 提供全文搜索，甚至可以对元数据进行搜索，例如智能标记、标题、创建日期和版权。
 
 要搜索资源，请执行以下操作：
 
@@ -182,7 +182,7 @@ Assets视图中的![语义搜索](assets/semantic-search.png)
 
    ![Firefly 集成](assets/firefly-integration.png)
 
-   成功生成了新资产。此外，您可以通过在描述框中键入新的文本提示来更改图像描述。[了解如何编写良好的AI提示来生成非凡的相关内容](https://helpx.adobe.com/cn/firefly/using/tips-and-tricks.html)。 或者，您也可以[使用各种其他功能（如更改样式、图像尺寸等）编辑图像](https://helpx.adobe.com/cn/firefly/using/text-to-image.html)。
+   成功生成了新资产。 此外，您可以通过在描述框中键入新的文本提示来更改图像描述。[了解如何编写良好的AI提示来生成非凡的相关内容](https://helpx.adobe.com/cn/firefly/using/tips-and-tricks.html)。 或者，您也可以[使用各种其他功能（如更改样式、图像尺寸等）编辑图像](https://helpx.adobe.com/cn/firefly/using/text-to-image.html)。
 
    ![Firefly 集成](assets/bugatti-type-57.png)
 
@@ -395,7 +395,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 
