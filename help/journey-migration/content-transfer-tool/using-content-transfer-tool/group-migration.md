@@ -31,7 +31,7 @@ ht-degree: 3%
 
 在过渡到Adobe Experience Manager (AEM) as a Cloud Service的过程中，必须将组从现有AEM系统迁移到AEM as a Cloud Service。 此任务由内容传输工具完成。
 
-AEM as a Cloud Service的一项重大更改是完全集成使用Adobe ID来访问创作层。 此过程需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)来管理用户和用户组。 用户配置文件信息集中存储在Adobe Identity Management System (IMS)中，可通过单点登录功能访问所有Adobe云应用程序。 有关详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)。 由于此更改，用户首次通过IMS登录时将在AEM上自动创建。  因此，CTT不会将用户迁移到云系统。  必须将IMS用户放置到IMS组中，这些组可以是迁移组，也可以是放置在AEM组中、已获得要迁移的AEM内容访问权限的新组。  通过这种方式，云系统上的用户将拥有与其源AEM系统相同的访问权限。
+AEM as a Cloud Service的一项重大更改是完全集成使用Adobe ID来访问创作层。 此过程需要使用[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)来管理用户和用户组。 用户配置文件信息集中存储在Adobe Identity Management System (IMS)中，可通过单点登录功能访问所有Adobe云应用程序。 有关详细信息，请参阅[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=zh-Hans#identity-management)。 由于此更改，用户首次通过IMS登录时将在AEM上自动创建。  因此，CTT不会将用户迁移到云系统。  必须将IMS用户放置到IMS组中，这些组可以是迁移组，也可以是放置在AEM组中、已获得要迁移的AEM内容访问权限的新组。  通过这种方式，云系统上的用户将拥有与其源AEM系统相同的访问权限。
 
 ## 组迁移详细信息 {#group-migration-detail}
 
