@@ -6,18 +6,18 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: d1e7f305c91f65ffe0bb043944310867e5947a02
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3033'
 ht-degree: 4%
 
 ---
 
-# 使用主题为基于核心组件的自适应Forms设置样式{#themes-for-af-using-core-components}
+# 使用主题为基于核心组件的自适应Forms设置样式
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | 本文 |
 
 您可以创建主题并应用它们来设置自适应表单的样式。 主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。主题是独立管理的，无需引用自适应表单，并且可在多个自适应Forms中重复使用。
@@ -34,7 +34,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 
 ## 了解主题结构
 
-主题是一个包，其中包含可定义自适应Forms样式的样式组件(如CSS文件、JavaScript文件和资源，如图标)。 自适应表单主题遵循特定的组织，由以下组件组成：
+主题是一个包，其中包含可定义自适应Forms样式的样式组件（如CSS文件、JavaScript文件和资源，如图标）。 自适应表单主题遵循特定的组织，由以下组件组成：
 
 * `src/theme.scss`：此文件夹包含对整个主题具有广泛影响的CSS文件。 它用作定义和管理主题样式和行为的集中位置。 通过编辑此文件，您可以做出在整个主题中普遍应用的更改，从而影响自适应Forms和AEM Sites页面的外观和功能。
 
@@ -54,7 +54,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 * [WKND 主题](https://github.com/adobe/aem-forms-theme-wknd)
 * [画架主题](https://github.com/adobe/aem-forms-theme-easel)
 
-您可以[自定义任何这些主题以创建新主题](#customize-a-theme-core-components)。
+您可以[自定义任何这些主题以创建新主题](#customize-a-theme)。
 
 >[!NOTE]
 >
@@ -62,20 +62,20 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 
 ![主题自定义工作流](/help/forms/assets/workflow-of-customization-of-theme.png)
 
-## 自定义主题 {#customize-a-theme-core-components}
+## 自定义主题
 
 自定义主题是指修改、样式化和个性化主题外观的过程。 自定义主题时，您可以更改其设计元素、布局、颜色、排版规则，有时还会更改底层代码。 它允许您为网站或应用程序创建独一无二的定制外观，同时保持主题提供的基本结构和功能。
 
-### 先决条件 {#prerequisites-to-customize}
+### 先决条件
 
-* 熟悉[在Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)中设置管道，并了解如何设置管道的基础知识可帮助您高效地管理和部署主题自定义项。
-* 了解如何[配置具有参与者角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=zh-Hans)的用户。 通过了解如何使用参与者角色配置用户，您可以授予进行主题自定义所需的权限。
+* 熟悉[在Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)中设置管道，并了解如何设置管道的基础知识可帮助您高效地管理和部署主题自定义项。
+* 了解如何[配置具有参与者角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)的用户。 通过了解如何使用参与者角色配置用户，您可以授予进行主题自定义所需的权限。
 * 安装[Apache Maven](https://maven.apache.org/download.cgi)的最新版本。 Apache Maven是一种常用于Java™项目的构建自动化工具。 安装最新版本可确保您具有主题自定义所需的依赖项。
-* 安装纯文本编辑器。 例如，Microsoft® Visual Studio Code。 使用Microsoft等纯文本编辑器®Visual Studio Code为编辑和修改主题文件提供了用户友好的环境。
+* 安装纯文本编辑器。 例如，® Visual Studio Code。 使用Microsoft等纯文本编辑器®Visual Studio Code为编辑和修改主题文件提供了用户友好的环境。
 
 ### 设置环境
 
-* 为您的Cloud Service环境配置[前端部署管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=zh-Hans)。 或者，您可以稍后配置管道，灵活地在设置部署管道之前排定测试和优化主题的优先级。
+* 为您的Cloud Service环境配置[前端部署管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。 或者，您可以稍后配置管道，灵活地在设置部署管道之前排定测试和优化主题的优先级。
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -86,21 +86,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 在了解先决条件并配置开发环境后，您已准备好开始根据特定要求自定义主题或设置主题样式。
 
-### 自定义主题 {#steps-to-customize-a-theme-core-components}
+### 自定义主题
 
 自定义主题是一个多步骤的过程。 要自定义主题，请按照列出的顺序执行步骤：
 
-1. [克隆主题](#download-a-theme-core-components)
-1. [设置主题的名称](#set-name-of-theme)
-1. [自定义主题](#customize-the-theme)
-1. [测试主题](#test-the-theme)
-1. [部署主题](#deploy-the-theme)
+1. [克隆主题](#1-clone-a-theme)
+1. [设置主题的名称](#2-set-name-of-a-theme)
+1. [自定义主题](#3-customize-a-theme)
+1. [测试主题](#4-test-a-customized-theme)
+1. [部署主题](#5-deploy-a-theme)
 
 文档中提供的示例基于&#x200B;**画布**&#x200B;主题，但请务必注意，您可以使用相同的说明克隆并自定义任何主题。 这些说明适用于任何主题，允许您根据特定需求修改主题。
 
 让我们从使用主题为基于核心组件的自适应Forms创建品牌体验的流程开始？
 
-#### 1.克隆主题 {#download-a-theme-core-components}
+#### 1.克隆主题
 
 要克隆基于核心组件的自适应Forms的主题，请选择以下主题之一：
 
@@ -129,11 +129,11 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    成功执行命令后，`aem-forms-theme-canvas`文件夹中提供了计算机上主题的本地副本。
 
 
-#### 2.设置主题名称 {#set-name-of-theme}
+#### 2.设置主题名称
 
 >[!NOTE]
 >
->当您通过前端管道(例如，专用的Forms主题存储库)将主题部署为&#x200B;**独立**&#x200B;包时，此步骤适用。 如果您&#x200B;**嵌入** Forms主题到AEM Sites主题，则不需要为表单主题设置单独的主题名称或版本；将使用站点主题名称。 请参阅[在AEM Sites主题中嵌入自适应Forms主题](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)。
+>当您通过前端管道（例如，专用的Forms主题存储库）将主题部署为&#x200B;**独立**&#x200B;包时，此步骤适用。 如果您&#x200B;**嵌入** Forms主题到AEM Sites主题，则不需要为表单主题设置单独的主题名称或版本；将使用站点主题名称。 请参阅[在AEM Sites主题中嵌入自适应Forms主题](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)。
 
 1. 在IDE中打开主题文件夹。 例如，在Visual Studio代码编辑器中打开`aem-forms-theme-canvas`文件夹。
 
@@ -177,15 +177,15 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * 建议更新`version`文件和`Package.json`文件中的主题`Package-lock.json`，以准确反映主题随时间发生的更改和增强功能。
 * 有关用法、安装说明和其他相关详细资料的重要信息，建议更新`ReadMe`文件中主题的名称。
 
-#### 3.自定义主题 {#customize-the-theme}
+#### 3.自定义主题
 
 您可以使用主题的全局变量自定义单个组件或进行主题级别更改。 对全局变量所做的任何更改都会影响所有单独的组件。 例如，您可以使用全局变量更改自适应表单所有组件的边框颜色，并使用明亮的填充颜色来使用按钮组件设置CTA (Call to action)：
 
-* [设置主题级别样式](#theme-customization-global-level)
+* [设置主题级别样式](#set-theme-level-styles)
 
-* [设置组件级别样式](#component-based-customization)
+* [设置组件级别样式](#set-component-level-styles)
 
-##### 设置主题级别样式{#theme-customization-global-level}
+##### 设置主题级别样式
 
 `variable.scss`文件包含主题的全局变量。 通过更新这些变量，您可以在主题级别进行与样式相关的更改。 要应用主题级别的样式，请执行以下步骤：
 
@@ -197,7 +197,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 同样，您可以使用`variable.scss`文件设置字体系列和类型、主题和字体颜色、字体大小、主题间距、错误图标、主题边框样式以及影响多个自适应表单组件的更多变量。
 
-##### 设置组件级别样式 {#component-based-customization}
+##### 设置组件级别样式
 
 您还可以更改特定自适应表单核心组件的字体、颜色、大小和其他CSS属性。 例如，按钮、复选框、容器、页脚等。 您可以通过编辑特定组件的CSS文件来设置按钮或复选框的样式，以便与贵组织的样式保持一致。 要自定义组件的样式：
 
@@ -219,14 +219,14 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    >
    > 在主题和组件级别定义样式时，在组件级别定义的样式优先。
 
-#### 4.测试自定义主题 {#test-the-theme}
+#### 4.测试自定义主题
 
 要在本地环境中预览和测试更改，并根据不同AEM组件的要求自定义主题，请执行以下步骤：
 
-* 4.1 [配置本地环境以进行测试](#rename-env-file-theme-folder)
-* 4.2 [使用本地环境测试主题](#start-a-local-proxy-server)
+* 4.1 [配置本地环境以进行测试](#41-configure-a-local-environment-for-testing)
+* 4.2 [使用本地环境测试主题](#42-test-the-theme-using-a-local-environment)
 
-##### 4.1.配置本地环境以进行测试 {#rename-env-file-theme-folder}
+##### 4.1.配置本地环境以进行测试
 
 1. 在IDE中打开主题文件夹。 例如，在Visual Studio代码编辑器中打开`aem-forms-theme-canvas`文件夹。
 1. 将`env_template`文件重命名为主题文件夹中的`.env`文件，并添加以下参数：
@@ -251,7 +251,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    ![画布主题结构](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2使用本地环境测试主题 {#start-a-local-proxy-server}
+##### 4.2使用本地环境测试主题
 
 1. 导航到主题文件夹的根。 在这种情况下，主题文件夹名称为`aem-forms-theme-canvas`。
 1. 打开命令提示符或终端。
@@ -260,7 +260,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >[!NOTE]
    >
-   > 如果在执行`npm run live`命令期间出错，请在`npm run live`命令之前执行以下命令：
+   > 如果在执行`npm run live`命令期间发生错误，请在`npm run live`命令之前执行以下命令：
    >
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
@@ -319,18 +319,19 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 您可以预览包含最新更改的自适应表单。 在对主题文件夹中所做的修改感到满意后，使用前端管道将主题部署到AEM Cloud Service环境。
 
-#### 5.部署主题 {#deploy-the-theme}
+#### 5.部署主题
 
 要使用前端管道将主题部署到Cloud Service环境，请执行以下操作：
 
-* 5.1 [创建主题的存储库](#create-a-new-theme-repo)
-* 5.2 [将更改推送到存储库](#committing-the-changes)
-* 5.3 [将Node.js版本设置为20](#53-set-the-nodejs-version-to-20-set-node)
-* 5.4 [运行前端管道](#run-a-frontend-pipeline)
+* 5.1 [创建主题的存储库](#51-create-a-repository-for-theme)
+* 5.2 [将更改推送到存储库](#52-push-the-changes-to-the-repository)
+* 5.3 [添加前端管道](#53-add-the-frontend-pipeline)
+* 5.4 [将Node.js版本设置为20](#54-set-the-nodejs-version-to-20)
+* 5.5 [运行前端管道](#55-run-the-frontend-pipeline)
 
-##### 5.1创建主题存储库{#create-a-new-theme-repo}
+##### 5.1创建主题存储库
 
-您需要存储库来部署主题。 登录到您的[AEM Cloud Manager存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)并为您的主题添加新存储库。
+您需要存储库来部署主题。 登录到您的[AEM Cloud Manager存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)并为您的主题添加新存储库。
 
 1. 通过单击&#x200B;**[!UICONTROL 存储库]** > **[!UICONTROL 添加存储库]**&#x200B;为主题创建新存储库。
 
@@ -352,7 +353,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    >* 要部署不同的主题，您必须创建单独的前端管道。
    >* 例如，您可以将相同的存储库(`custom-canvas-theme-repo`)用于画布主题、WKND主题和EASEL主题。 但是，要部署主题，您需要创建单独的前端管道。 使用相应的前端管道部署特定主题的未来自定义。
 
-##### 5.2.将更改推送到存储库 {#committing-the-changes}
+##### 5.2.将更改推送到存储库
 
 现在，将更改推送到AEM Forms Cloud Service的主题存储库。
 
@@ -378,7 +379,29 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    ![已提交更改](/help/forms/assets/cmd_git_push.png)
 
-##### 5.3将Node.js版本设置为20 {#set-node}
+##### 5.3添加前端管道
+
+使用[前端管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)部署主题。 要部署主题，请执行以下步骤：
+
+1. 登录到AEM Cloud Manager存储库。
+1. 单击&#x200B;**[!UICONTROL 管道]**&#x200B;部分中的&#x200B;**[!UICONTROL 添加]**&#x200B;按钮。
+1. 基于Cloud Service环境选择&#x200B;**[!UICONTROL 添加非生产管道]**&#x200B;或&#x200B;**[!UICONTROL 添加生产管道]**。 例如，此处选择了&#x200B;**[!UICONTROL 添加生产管道]**&#x200B;选项。
+1. 在&#x200B;**[!UICONTROL 将生产管道]**&#x200B;添加为&#x200B;**[!UICONTROL 配置]**&#x200B;步骤的一部分对话框中，指定管道的名称。 例如，管道的名称为`customcanvastheme`。
+1. 单击&#x200B;**[!UICONTROL 继续]**。
+1. 选择&#x200B;**[!UICONTROL 目标部署]** > **[!UICONTROL 前端代码]**选项，位于
+**[!UICONTROL Source代码]**&#x200B;步骤。
+1. 选择具有最新更改的&#x200B;**[!UICONTROL 存储库]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此处选定的存储库名称为`custom-canvas-theme-repo`，Git分支为`main`。
+1. 如果根文件夹中存在更改，请选择&#x200B;**[!UICONTROL 代码位置]**&#x200B;作为`/`。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
+   ![创建前端管道](/help/forms/assets/canvas-theme-frontendpipeline.gif)
+
+   管道设置完成后，将更新call-to-action信息卡。
+
+   >[!NOTE]
+   >
+   > 为确保前端管道在Cloud Manager中不会失败，[请将Node.js版本设置为20](#54-set-the-nodejs-version-to-20)。
+
+##### 5.4将Node.js版本设置为20
 
 要使用管道配置将Node.js版本设置为20，请执行以下操作：
 
@@ -394,29 +417,9 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 ![管道配置](/help/forms/assets/pipeline-config.png)
 
 
-##### 5.4运行前端管道 {#run-a-frontend-pipeline}
+##### 5.5运行前端管道
 
-使用[前端管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=zh-Hans)部署主题。 要部署主题，请执行以下步骤：
-
-1. 登录到AEM Cloud Manager存储库。
-1. 单击&#x200B;**[!UICONTROL 管道]**&#x200B;部分中的&#x200B;**[!UICONTROL 添加]**&#x200B;按钮。
-1. 基于Cloud Service环境选择&#x200B;**[!UICONTROL 添加非生产管道]**&#x200B;或&#x200B;**[!UICONTROL 添加生产管道]**。 例如，此处选择了&#x200B;**[!UICONTROL 添加生产管道]**&#x200B;选项。
-1. 在&#x200B;**[!UICONTROL 将生产管道]**&#x200B;添加为&#x200B;**[!UICONTROL 配置]**&#x200B;步骤的一部分对话框中，指定管道的名称。 例如，管道的名称为`customcanvastheme`。
-1. 单击&#x200B;**[!UICONTROL 继续]**。
-1. 选择&#x200B;**[!UICONTROL 目标部署]** > **[!UICONTROL 前端代码]**&#x200B;选项，位于
-**[!UICONTROL Source代码]**&#x200B;步骤。
-1. 选择具有最新更改的&#x200B;**[!UICONTROL 存储库]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此处选定的存储库名称为`custom-canvas-theme-repo`，Git分支为`main`。
-1. 如果根文件夹中存在更改，请选择&#x200B;**[!UICONTROL 代码位置]**&#x200B;作为`/`。
-1. 单击&#x200B;**[!UICONTROL 保存]**。
-   ![创建前端管道](/help/forms/assets/canvas-theme-frontendpipeline.gif)
-
-   管道设置完成后，将更新call-to-action信息卡。
-
-   >[!NOTE]
-   >
-   > 为确保前端管道在Cloud Manager中不会失败，[请将Node.js版本设置为20](#set-the-nodejs-vesrion-to-20)。
-
-1. 右键单击创建的管道。
+1. 转到&#x200B;**管道**&#x200B;部分并找到您的前端管道。
 1. 单击&#x200B;**[!UICONTROL 运行]** 。
 
    ![运行管道](/help/forms/assets/canvas-theme-run-pipeline.png)
@@ -427,7 +430,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 自定义主题有助于为基于核心组件的自适应Forms创建品牌体验。
 
-## 将主题应用于自适应表单 {#using-theme-in-adaptive-form}
+## 将主题应用于自适应表单
 
 将主题应用于自适应表单的步骤如下：
 
@@ -443,7 +446,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 创建自适应表单时，自适应表单主题用作自适应表单模板的一部分来定义样式。
 
-## 最佳做法 {#best-practices}
+## 最佳做法
 
 * **避免使用其他主题中的资源**
 
@@ -455,7 +458,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
   不建议更改容器面板布局宽度。 指定容器面板的宽度时，其将变为静态并且不会适应不同的显示。
 
-## 常见问题解答 {#faq}
+## 常见问题解答
 
 **问：**&#x200B;在全局级别和组件级别的主题文件夹中进行自定义时，哪个自定义项优先？
 
@@ -463,7 +466,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 
 
-## 另请参阅 {#see-also}
+## 另请参阅
 
 {{see-also}}
 
@@ -471,4 +474,4 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [生成自适应Forms记录文档（核心组件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [创建包含可重复部分的自适应Forms](/help/forms/create-forms-repeatable-sections.md)
-* [示例主题模板和表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans)
+* [示例主题模板和表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
