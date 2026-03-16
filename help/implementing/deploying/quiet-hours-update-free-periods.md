@@ -4,7 +4,7 @@ description: 了解如何使用安静时间和无更新时段将AEM as a Cloud S
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
+source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -21,7 +21,7 @@ AEM as a Cloud Service [自动维护更新](/help/implementing/deploying/aem-ver
 您可以使用两个计划选项配置这些时间范围：
 
 * **无讯息小时数** — 您可以定义不会发生更新的每日时间间隔（最多8小时）。
-* **更新空闲时段** — 您可以定义一个不会发生更新的7天时段。 在12个月的时间范围内，您最多可以有三个更新空闲时段。
+* **更新空闲时段** — 您可以定义一个不会发生更新的7天时段。 在浮动的365天窗口内，您最多可以有三个更新自由期间。
 
 更新空闲时段和免打扰时间功能是按“每个程序”配置的。 请记住，只有具有&#x200B;**业务负责人**&#x200B;和&#x200B;**部署管理员**&#x200B;的“用户角色”的用户才能查看和使用这些功能。
 
