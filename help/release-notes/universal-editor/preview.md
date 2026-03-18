@@ -4,10 +4,10 @@ description: 这些是通用编辑器预览版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
+source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 35%
+source-wordcount: '243'
+ht-degree: 33%
 
 ---
 
@@ -38,3 +38,7 @@ ht-degree: 35%
 * 使用DA作为后端时，删除图像不再保留空的图像标记。
 * 现在，在使用DA作为后端时，可以正确处理块中的类。
 * 现在，Open API将远程资产正确地另存为对象。
+
+## 即将推出的重大更改 {#breaking-change}
+
+* 所有扩展都应更新为`@adobe/uix-guest` >= `1.1.7`以提高稳定性。
