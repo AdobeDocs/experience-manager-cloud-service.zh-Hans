@@ -4,9 +4,9 @@ description: 了解如何将模型上下文协议与AEM as a Cloud Service一起
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 3b935114d543a0bf99f3c03a2840942862396216
+source-git-commit: 3f65f818ae3dd70030a56c04982a037536575ddd
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 通过AEM的MCP集成，不同的角色可以围绕相同的内容进行协作：
 
 * **开发人员**&#x200B;可以从其IDE或聊天应用程序编排内容操作和工作流
-* **从业者**&#x200B;和内容架构师可以在AI帮助下管理站点、内容片段和资源，同时保留AEM的现有权限模型。
+* **从业者**&#x200B;和内容架构师可以在AI帮助下管理网站和内容片段并导入资源，同时保留AEM的现有权限模型。
 
 >[!IMPORTANT]
 >
@@ -52,8 +52,8 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 
 | **MCP服务器** | **终结点** | **描述** |
 |---|---|----------------------------------------------------------------------------------------------------------------------|
-| **内容** | `/content` | 所有低级内容操作，包括创建、读取、更新和删除(CRUD)页面、片段和资产。 |
-| **内容（只读）** | `/content-readonly` | 页面、片段和资产的只读内容操作（获取、列表/搜索）。 |
+| **内容** | `/content` | 内容操作，包括为页面和内容片段创建、读取、更新和删除(CRUD)，以及资产导入。 |
+| **内容（只读）** | `/content-readonly` | 对页面和内容片段执行只读内容操作（获取、列表/搜索）。 |
 | **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager实体，包括程序、环境、存储库和管道，这些也可以触发。 <br><br>*此MCP服务器现在处于&#x200B;**测试版**；若要请求访问，请发送电子邮件至[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)，其中包含您的用例说明。* |
 
 每个MCP服务器公开的特定工具可能会随着时间的推移而不断演变。 在实践中，您可以要求启用了MCP的应用程序通过提示来发现工具，例如：
@@ -64,7 +64,7 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 
 MCP客户端使用MCP协议来检索工具列表和模式，然后LLM可以使用。
 
-请参阅[Content MCP Server教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
+请参阅[Content MCP Server教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
 
 ## 支持的MCP应用程序 {#supported-mcp-applications}
 
@@ -177,8 +177,8 @@ Adobe托管的MCP服务器实施OAuth，并与Adobe的Identity System集成。
    * 创建新片段
    * 当营销活动消息更改时，更新现有片段。
 
-* **Assets管理**
-   * 使用状态检查导入资源
+* **正在导入资产**
+   * 导入具有状态检查的资源
 
 ### 示例工作流 {#example-workflows}
 
