@@ -4,12 +4,13 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
 
 ---
+
 
 # 为通用编辑器配置RTE {#configure-rte}
 
@@ -23,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在启动通用编辑器项目时，后端支持的所有富文本功能(AEM与Edge Delivery或headless实施)会自动处于活动状态。
+>在启动通用编辑器项目时，后端支持的所有富文本功能（AEM与Edge Delivery或headless实施）会自动处于活动状态。
 >
 >* 您可以停用这些不需要的选项。
 >* 不支持激活与您的项目类型不兼容的选项。
@@ -171,7 +172,7 @@ RTE配置由两部分组成：
 }
 ```
 
-#### 表配置选项 {#table-configuration-options}
+####表配置选项 {#table-configuration-options}
 
 * `wrapInParagraphs`： `false` （默认） — 表单元格包含未换行的文本内容
 * `wrapInParagraphs`： `true` — 表单元格将内容包裹在段落标记中
@@ -295,7 +296,7 @@ RTE配置由两部分组成：
 
 `paste_text`编辑器操作可启用标准的纯文本粘贴工作流。
 
-* **默认快捷键：** Mod-Shift-V(在macOS上为Cmd+Shift+V，在Windows/Linux上为Ctrl+Shift+V)
+* **默认快捷键：** Mod-Shift-V（在macOS上为Cmd+Shift+V，在Windows/Linux上为Ctrl+Shift+V）
 * **行为：**&#x200B;从文本/纯文本粘贴（忽略源格式）
    * 在列表中，新行将创建新列表项。
 
