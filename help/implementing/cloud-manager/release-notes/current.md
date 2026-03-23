@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 20%
+source-wordcount: '731'
+ht-degree: 19%
 
 ---
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service中Cloud Manager 2026.3.0的发布日期是2026年3月5日
 
 >[!IMPORTANT]
 >
->Beta版本可能包含缺陷，并“按原样”提供，无任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持(通过Adobe支持服务或其他方式)Beta版。 Adobe建议客户谨慎使用，不要依赖测试版或随附的任何文档或材料的正确功能或性能。 Beta版中的功能和API如有更改，恕不另行通知。 因此，使用测试版完全由客户自行承担风险。
+>Beta版本可能包含缺陷，并“按原样”提供，无任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持（通过Adobe支持服务或其他方式）Beta版。 Adobe建议客户谨慎使用，不要依赖测试版或随附的任何文档或材料的正确功能或性能。 Beta版中的功能和API如有更改，恕不另行通知。 因此，使用测试版完全由客户自行承担风险。
 
 另请参阅[AEM Beta程序](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -85,7 +85,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
 
-新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。它适用于代码质量、全栈和仅限暂存的管道。
+新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量、全栈和仅限暂存的管道。
 
 ![编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *显示“完全生成”和“智能生成”这两个生成策略选项的“编辑非生产管道”对话框。*
@@ -95,9 +95,11 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 * **完整内部版本** — 每次运行都会在存储库中生成所有模块。
 * **智能生成** — 仅生成自上次提交以来更改的模块，这会缩短总体生成时间。
 
-您控制哪些管道使用&#x200B;**智能生成**。 在Beta测试期间，此选项仅对&#x200B;**代码质量**&#x200B;和&#x200B;**开发部署**&#x200B;管道显示。
+您控制哪些管道使用&#x200B;**智能生成**。 在Beta测试期间，此选项仅对&#x200B;**代码质量**&#x200B;和&#x200B;**开发全栈栈部署**&#x200B;管道显示。
 
-是否有兴趣？向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
+请参阅[关于在非生产管道中使用智能生成](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)和[添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+是否有兴趣？ 向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
