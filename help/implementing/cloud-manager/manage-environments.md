@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
+source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 41%
+ht-degree: 39%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 41%
 
 如果不指定任何其他区域，[您可以在环境创建后稍后指定](#edit-regions)。
 
-如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在使用 Cloud Manager API 将附加发布区域添加到环境之前完成此配置。否则，附加发布区域的流量会通过主要区域的代理。
+如果要为该程序预配[高级网络](/help/security/configuring-advanced-networking.md)，建议先完成此预配，然后再使用Cloud Manager API向环境添加其他发布区域。 否则，附加发布区域的流量会通过主要区域的代理。
 
 ### 编辑多个发布区域 {#edit-regions}
 
@@ -130,7 +130,7 @@ ht-degree: 41%
 
 对生产环境所做的更改会同时应用于生产和暂存环境。只能在生产环境中编辑对多个发布区域的更改。
 
-如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在将附加发布区域添加到环境之前完成该设置。否则，附加发布区域的流量会通过主要区域的代理。
+如果要为程序预配[高级网络](/help/security/configuring-advanced-networking.md)，建议在将其他发布区域添加到环境之前完成此预配。 否则，附加发布区域的流量会通过主要区域的代理。
 
 ## 查看环境的详细信息 {#viewing-environment}
 
@@ -184,7 +184,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 具有必要权限的用户必须在共享预览服务URL之前完成以下步骤，以确保访问它。
 
-1. 创建适当的IP允许列表 列入允许列表，将其应用于预览服务，然后立即取消应用`Preview Default [<envId>]`。
+1. 创建适当的IP允许列表，将其应用于预览服务，然后立即取消应用`Preview Default [<envId>]`。
 
    有关详细信息，请参阅[应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)。
 
@@ -304,13 +304,13 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 1. 在&#x200B;**环境**&#x200B;信息卡中，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**Developer Console**。
 
-使用登录到&#x200B;**Developer Console**&#x200B;的登录页在浏览器中打开了一个新选项卡。
+在登录页面为&#x200B;**Developer Console**&#x200B;的浏览器中打开了一个新选项卡。
 
 ![登录 Developer Console](assets/environ-devconsole.png)
 
 只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console**。
 
-有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
 
 单击单个环境的&#x200B;**更多图标**&#x200B;时，也可以从&#x200B;**概述**&#x200B;窗口的![环境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)选项卡中使用此选项。
 
