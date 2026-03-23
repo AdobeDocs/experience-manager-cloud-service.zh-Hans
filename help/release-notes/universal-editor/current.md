@@ -4,10 +4,10 @@ description: 这些是通用编辑器2026.03.19版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
+source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 28%
+source-wordcount: '195'
+ht-degree: 29%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 28%
 
 * 现在，导航回[主屏幕时，属性中的项目将折叠。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
 * [资源选择器](/help/implementing/universal-editor/configure-assets-selector.md)现在支持[筛选器定义。](/help/implementing/universal-editor/filtering.md)
-* 如果所选项目没有可用的操作，[上下文菜单](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)将不再显示用于访问操作的V形。
+* 如果所选项目没有可用的操作，[上下文菜单](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)现在会显示一条指示此类操作的消息。
 
 ## 其他改进 {#other-improvements}
 
