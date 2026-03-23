@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
+source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 21%
@@ -62,7 +62,7 @@ ht-degree: 21%
 1. 单击&#x200B;**继续**。
 
 1. 用于完成非生产管道配置的剩余步骤取决于您选择使用的源代码类型。
-在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
+在**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
 
    * **[我正在使用全栈代码](#full-stack-code)**
    * **[我正在使用目标部署](#targeted-deployment)**
@@ -112,7 +112,7 @@ ht-degree: 21%
 1. 单击“**保存**”。
 
 管道已保存，您现在可以[管理您的管道]&#x200B;(managing-pipe
-lines.md)，它位于&#x200B;**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
+lines.md)，它位于**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
 
 ### 我正在使用目标部署 {#targeted-deployment}
 
@@ -210,7 +210,7 @@ Smart Build当前仅适用于以下项目：
 * 代码更改的频率和范围。
 * 依赖项在各个模块之间的分布。
 
-通常，具有许多独立模块的项目通常会看到最大的改进。
+通常，具有多个独立模块的项目可以看到最大的改进。
 
 ### 每模块缓存选择退出{#smart-build-cache-optout}
 
