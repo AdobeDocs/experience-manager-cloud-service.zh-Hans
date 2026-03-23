@@ -5,16 +5,14 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e2fbc2a20e5e482ced373176fdfbc890c54dfa6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
 # 使用自定义字体
-
-**Cloud Service Communications文档为测试版**
 
 您可以使用Forms as a Cloud Service Communications将XDP模板、基于XDP的PDF文档或Acrobat表单(AcroForm)与XML数据组合在一起，以生成PDF文档。 您还可以使用通信来组合、重新排列和扩充PDF和XDP文档，并获取有关PDF文档的信息。
 
@@ -22,7 +20,7 @@ ht-degree: 0%
 
 ## PDF文档的行为
 
-您可以[将字体](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions)嵌入到PDF文档中。 当嵌入字体时，PDF文档在所有平台上显示（显示）相同。 它使用嵌入式字体以确保一致的外观。 如果未嵌入字体，则字体渲染取决于PDF查看器客户端(如Acrobat或Acrobat Reader)的渲染设置。 如果该字体在客户端计算机上可用，则PDF会使用指定的字体，否则PDF将使用默认的回退字体呈现。
+您可以[将字体](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions)嵌入到PDF文档中。 当嵌入字体时，PDF文档在所有平台上显示（显示）相同。 它使用嵌入式字体以确保一致的外观。 如果未嵌入字体，则字体渲染取决于PDF查看器客户端（如Acrobat或Acrobat Reader）的渲染设置。 如果该字体在客户端计算机上可用，则PDF会使用指定的字体，否则PDF将使用默认的回退字体呈现。
 
 ## 将自定义字体添加到Forms as a Cloud Service环境 {#custom-fonts-cloud-service}
 
