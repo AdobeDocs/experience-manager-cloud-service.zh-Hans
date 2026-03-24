@@ -4,7 +4,7 @@ description: 一旦您了解了入门所需的准备工作和AEM as a Cloud Serv
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 8ed13eb6f476bab07da07549a83ab9ac16bdea72
+source-git-commit: 9f237747f19ee537fbc51f39e935472c6a023328
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 55%
@@ -94,7 +94,7 @@ Experience Hub主页上显示的![Admin Console选项](/help/journey-onboarding/
 
 AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称为 IMS）进行身份验证。作为系统管理员，您无需执行任何操作即可启用此功能。
 
-通过使用 IMS，AEM as a Cloud Service 整合了 AEM 与 Adobe experience Cloud 其余部分之间的登录体验。拥有许多Adobe产品的企业获得的好处最多。 在Admin Console中创建基于角色的组，并通过IMS(如AEM as a Cloud Service)授予产品访问权限。
+通过使用 IMS，AEM as a Cloud Service 整合了 AEM 与 Adobe experience Cloud 其余部分之间的登录体验。拥有许多Adobe产品的企业获得的好处最多。 在Admin Console中创建基于角色的组，并通过IMS（如AEM as a Cloud Service）授予产品访问权限。
 
 在此加入历程的下一步中，您将详细了解产品配置文件和分配用户。
 
@@ -123,6 +123,6 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 
 * [Admin Console 概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) – Admin Console 全面概述
 * [创建或更新您的 Adobe ID](https://helpx.adobe.com/cn/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) – 了解如何创建 Adobe ID 并进行更改，以及如何管理多个 Adobe ID。
-* [SAML 2.0 身份验证处理程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) – AEM 附带 SAML 身份验证处理程序。此处理程序使用 HTTP POST 绑定支持 SAML 2.0 身份验证请求协议（Web-SSO 配置文件）。
+* [SAML 2.0 身份验证处理程序](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) – AEM 附带 SAML 身份验证处理程序。此处理程序使用 HTTP POST 绑定支持 SAML 2.0 身份验证请求协议（Web-SSO 配置文件）。
 * [管理员角色](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html) – 通过使用 Adobe Admin Console，组织可以定义灵活的管理层次结构，从而更精细地管理对 Adobe 产品的访问和使用。
-* [支持和专家讲座](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) — 了解如何访问Admin Console上的支持选项、管理您的支持案例、安排专家讲座等等。
+* [支持和专家讲座](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) — 了解如何访问Admin Console上的支持选项、管理您的支持案例、安排专家讲座等等。
