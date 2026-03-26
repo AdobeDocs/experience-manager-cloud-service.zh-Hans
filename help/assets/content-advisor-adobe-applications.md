@@ -127,7 +127,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ![预览Dynamic Media呈现版本](assets/content-advisor-dm-preview.png)
 
-单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
+单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
 
 ### 内容片段的发现 {#content-fragments-discovery-content-advisor}
 
