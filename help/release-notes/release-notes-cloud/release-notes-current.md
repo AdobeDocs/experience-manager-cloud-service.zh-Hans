@@ -38,7 +38,7 @@ ht-degree: 27%
 
 Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480409/?captions=chi_hans&quality=12)
 
 -->
 
@@ -165,7 +165,7 @@ Forms Manager现在[支持自适应Forms（核心组件和基础组件）](/help
 
 #### Cloud Manager MCP服务器 {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480352/?captions=chi_hans&quality=12)
 
 现代IDE使用模型上下文协议(Model Context Protocol， MCP)来启用大型语言模型(Large Language Model， LLM)以调用MCP服务器公开的工具。 开发人员可以简单地用自然语言描述他们的意图，而不是直接与低级API规范集成。
 
