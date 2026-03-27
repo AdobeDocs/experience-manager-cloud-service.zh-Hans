@@ -185,9 +185,9 @@ The styles you define apply only when the component is in the selected state. Fo
 **示例：**&#x200B;要仅对文本框小组件设置绿色背景和紫色字体：
 
 1. 在“选择器”面板中，展开&#x200B;**[!UICONTROL 字段]** > **[!UICONTROL 小组件]** > **[!UICONTROL 文本输入]**。
-1. 将&#x200B;**[!UICONTROL 字体颜色]**设置为紫色。
+1. 将&#x200B;**[!UICONTROL 字体颜色]**&#x200B;设置为紫色。
    ![字段级样式](/help/forms/assets/custom-theme-field-level-styling1.png)
-1. 将&#x200B;**[!UICONTROL 背景颜色]**设置为绿色。
+1. 将&#x200B;**[!UICONTROL 背景颜色]**&#x200B;设置为绿色。
    ![字段级样式](/help/forms/assets/custom-theme-field-level-styling2.png)
 1. 单击&#x200B;**[!UICONTROL 确定]**。
 
