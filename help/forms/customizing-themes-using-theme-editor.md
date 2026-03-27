@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 Adobe Experience Manager (AEM) Forms中的主题编辑器是一个可视化界面，您可以通过它创建和自定义自适应Forms的主题，而无需手动编写代码。 主题定义表单组件和面板的外观，包括背景颜色、字体样式、边框、维度和间距。 应用主题时，指定的样式会反映在相应的组件上，并且您可以在多个自适应Forms中重用相同的主题。
@@ -208,7 +208,7 @@ The styles you define apply only when the component is in the selected state. Fo
 
    ![主题编辑器中的设备模拟器 — 标尺和设备选项（桌面、平板电脑、iPad、小屏幕）](/help/forms/assets/custom-theme-emulator.png)
 
-因此，同一主题在每个设备上可以有不同的间距、字体大小或与布局相关的样式，这与响应式样式的[AEM 6.5主题编辑器行为](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)相匹配。
+因此，同一主题在每个设备上可以有不同的间距、字体大小或与布局相关的样式，这与响应式样式的[AEM 6.5主题编辑器行为](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hans)相匹配。
 
 ## 使用高级CSS覆盖 {#use-advanced-css-overrides}
 
