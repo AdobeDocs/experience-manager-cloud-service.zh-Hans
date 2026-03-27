@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 2807f3e0890bc291d4005b70c303659f7a3f643e
+source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 68%
@@ -58,6 +58,7 @@ ht-degree: 68%
      >[!WARNING]
      >
      >原始编辑器将在同一选项卡中打开。 建议不要同时打开两个编辑器。
+
    * 任何对片段和您的帐户有效的警告。 例如，如果您没有编辑片段的正确权限，或者如果另一个用户已签出[片段](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in)，则您将仅具有读取权限。
 
 * 左侧面板：显示内容片段的&#x200B;**[变体](#variations)**&#x200B;及其&#x200B;**字段**：
@@ -273,7 +274,7 @@ ht-degree: 68%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
