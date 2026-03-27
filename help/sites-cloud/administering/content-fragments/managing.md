@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
+source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 62%
@@ -41,7 +41,7 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
@@ -532,7 +532,7 @@ FolderC
 1. 从工具栏中选择&#x200B;**签入**。
 1. 确认&#x200B;**签入**&#x200B;操作。
 
-## 强制（管理员）签入 {#forced-adminstrator-check-in}
+### 强制（管理员）签入 {#forced-adminstrator-check-in}
 
 可能会出现的情况是，已签出内容片段的用户无法签入片段。
 
