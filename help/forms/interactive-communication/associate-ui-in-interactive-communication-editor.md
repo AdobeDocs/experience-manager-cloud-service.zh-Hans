@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '639'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 3%
 
 ### 2.作者
 
-使用关联UI设计和管理交互式通信。 ß
+设计和管理交互式通信，并将其配置为关联UI（包括启用关联视图和可选工作流）。
 
 | 责任 | 焦点 |
 |---------------|-------|
@@ -78,7 +78,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 关联必须是&#x200B;**forms-associates**&#x200B;组的一部分。
+> 关联必须是&#x200B;**forms-associates**&#x200B;组的一部分。 对于也从创作实例上的关联UI提交的作者，也将其添加到&#x200B;**workflow-users**。
 
 ## 动态用例
 
@@ -92,36 +92,22 @@ ht-degree: 3%
 | **公共部门** | 当场生成警方核查报告、公民服务收据、申诉确认信和案件更新摘要。 |
 | **政府** | 为福利计划注册创建申请状态摘要、服务批准书和实时通信。 |
 
-## 启用关联UI工作流
+## 启用关联UI
 
-作者可以按照以下步骤配置和发布交互式通信(IC)，以便访问关联UI：
+作者启用关联UI，并可以选择配置工作流以在&#x200B;**交互式通信设置**&#x200B;中提交：
 
->[!NOTE]
->
-> 支持的关联组件：日期字段、数值字段、文本字段、日期时间字段、日期字段、复选框、单选按钮、下拉列表。
+1. **启用关联视图** — 在&#x200B;**关联属性**&#x200B;中，选中&#x200B;**启用关联视图编辑**，然后单击&#x200B;**应用更改**&#x200B;并保存文档。
+2. **配置工作流（可选）** — 在&#x200B;**工作流**&#x200B;中，打开&#x200B;**配置更新工作流**，选择工作流模型，并可以选择设置成功消息和重定向URL。
+3. **配置可编辑的字段** — 启用关联可以编辑和设置验证的字段。
+4. **发布并共享** — 发布IC并与关联共享链接。
 
-### 创建IC
-
-设计和配置交互式通信，确保正确设置品牌、数据绑定、合规性规则和集成。
-
-### 启用关联UI
-
-在顶部操作栏中，启用关联UI选项，以使IC可用于关联驱动。
-
-### 在组件中启用关联UI
-
-### 配置可编辑字段
-
-在必填字段部分，启用关联方可以编辑的字段。
-设置验证以确保准确可控的数据输入。
-
-### 发布IC
-
-完成所有配置后，发布交互式通信以进行安全访问。
-
-### 与联营公司共享已发布的IC
-
-提供发布到“关联”的IC链接，允许他们进行身份验证、输入客户特定信息并生成具有有效输入内容的最终通信。
+有关屏幕截图和提交/工作流行为（作者与发布关联）的分步说明，请参阅[为交互式通信启用并配置关联UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)。 要构建通过IC提交生成PDF的工作流，请参阅[关联UI的提交工作流 — IC生成PDF输出](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)。
 
 **关联UI**&#x200B;弥合了结构化内容创作与实时客户参与之间的差距。\
 通过结合直观的设计、强大的后端配置和严格的法规遵从性控制，组织可以大规模提供&#x200B;**快速、准确和个性化的通信**。
+
+## 另请参阅
+
+- [为交互式通信启用并配置关联UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [在应用程序中集成关联UI](/help/forms/interactive-communication/invoke-associate-ui.md)
+- [关联UI的提交工作流 — IC生成PDF输出](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
