@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2807f3e0890bc291d4005b70c303659f7a3f643e
 workflow-type: tm+mt
-source-wordcount: '2799'
-ht-degree: 69%
+source-wordcount: '2839'
+ht-degree: 68%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 69%
      >[!WARNING]
      >
      >原始编辑器将在同一选项卡中打开。 建议不要同时打开两个编辑器。
+   * 任何对片段和您的帐户有效的警告。 例如，如果您没有编辑片段的正确权限，或者如果另一个用户已签出[片段](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in)，则您将仅具有读取权限。
 
 * 左侧面板：显示内容片段的&#x200B;**[变体](#variations)**&#x200B;及其&#x200B;**字段**：
    * 可使用这些链接[在内容片段结构中导航](#navigate-structure)
@@ -272,7 +273,7 @@ ht-degree: 69%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
@@ -365,7 +366,7 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->另请参阅用于内容片段的[AEM GraphQL API — 用于OpenAPI资源支持的Dynamic Media (远程Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
+>另请参阅用于内容片段的[AEM GraphQL API — 用于OpenAPI资源支持的Dynamic Media （远程Assets）](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### 引用页面 {#reference-pages}
 

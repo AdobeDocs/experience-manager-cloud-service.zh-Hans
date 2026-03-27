@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 70%
+source-wordcount: '3342'
+ht-degree: 62%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
@@ -93,16 +93,19 @@ ht-degree: 70%
 
 控制台的主/右侧面板（表格视图）提供了有关您的内容片段的一系列信息。有些项目还提供了进一步操作和/或信息的直接链接：
 
+* **标题**
+   * 挂锁图标表示片段是[签出](#check-out-and-check-in)并由一个用户锁定的；选择挂锁图标将显示已签出片段的帐户的详细信息。
+   * 通过信息(i)图标，可以快速访问右侧面板中特定于片段的其他信息。
 * **名称**
    * 提供用于在编辑器中打开片段的链接。
 * **模型**
    * 仅供参考。
-   * 可用于[快速筛选](#fast-filtering)
+   * 可用于[快速筛选](#fast-filtering)。
 * **文件夹**
    * 提供用于在控制台中打开文件夹的链接。将鼠标悬停在文件夹名称上将显示 JCR 路径。
 * **状态**
    * 仅供参考。
-   * 可用于[快速筛选](#fast-filtering)
+   * 可用于[快速筛选](#fast-filtering)。
 * **预览**
    * 仅供参考:
       * **同步中**：内容片段在&#x200B;**创作**&#x200B;和&#x200B;**预览**&#x200B;服务中同步。
@@ -186,8 +189,8 @@ ht-degree: 70%
 * **[替换](#find-and-replace)**
 * **移动**
 * **重命名**
+* **[签出和签入](#check-out-and-check-in)**
 * **[删除](#deleting-a-fragment)**（仅适用于未发布的片段）
-
 
 >[!NOTE]
 >
@@ -480,6 +483,64 @@ FolderC
 >如果选择超过20个内容片段，您将看到消息&#x200B;**无法找到和替换**。
 
 ![确认替换](assets/cf-managing-confirm-replace.png)
+
+## 签出和签入 {#check-out-and-check-in}
+
+通过AEM，您可以：
+
+* [签出](#check-out-a-content-fragment)内容片段，阻止其他用户处理该片段
+* [签入](#check-in-a-content-fragment)内容片段，允许其他用户继续使用该片段
+
+签出片段时，该片段被锁定(`jcr:lock`)。 **标题**&#x200B;列中的挂锁图标表示锁定的片段。 选择挂锁图标可提供已签出片段的帐户的详细信息。
+
+您可以编辑、发布、取消发布、移动或删除锁定的片段。 在您签入片段之前，其他用户无法对片段执行任何此类操作；但他们仍然可以更改锁定片段的元数据。
+
+当多个用户协作编辑片段时，此功能有助于防止冲突。
+
+>[!NOTE]
+>
+>要能够签出/签入内容片段，您必须具有写入权限。
+
+>[!CAUTION]
+>
+>可能会删除包含已签出内容片段的文件夹。
+>
+>在删除文件夹之前，请确保该文件夹不包含用户签出的任何内容片段（或其他数字资产）。
+
+>[!NOTE]
+>
+>由于内容片段作为Assets存储在内部，因此此功能与Experience Manager DAM中的[签入和签出文件密切相关](/help/assets/check-out-and-submit-assets.md)。
+
+### 签出内容片段 {#check-out-a-content-fragment}
+
+签出片段：
+
+1. 在&#x200B;**内容片段**&#x200B;控制台导航到内容片段的位置。
+1. 选择片段。
+1. 从工具栏中选择&#x200B;**签出**。
+1. 确认&#x200B;**签出**&#x200B;操作。
+
+   * **标题**&#x200B;列中的挂锁图标指示片段已锁定，只能由您编辑。
+   * 如果另一用户打开片段进行编辑，他们会看到一条消息，声明他们处于只读模式。
+
+### 签入内容片段 {#check-in-a-content-fragment}
+
+要检入片段，请执行以下操作：
+
+1. 在&#x200B;**内容片段**&#x200B;控制台导航到内容片段的位置。
+1. 选择片段。
+1. 从工具栏中选择&#x200B;**签入**。
+1. 确认&#x200B;**签入**&#x200B;操作。
+
+## 强制（管理员）签入 {#forced-adminstrator-check-in}
+
+可能会出现的情况是，已签出内容片段的用户无法签入片段。
+
+在这种情况下，管理员可以执行&#x200B;**签入**&#x200B;操作。
+
+>[!NOTE]
+>
+>另请参阅Assets [强制签入](/help/assets/check-out-and-submit-assets.md#forced-check-in)。
 
 ## 删除片段 {#deleting-a-fragment}
 
