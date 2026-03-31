@@ -4,9 +4,9 @@ description: 了解如何使用安静时间和无更新时段将AEM as a Cloud S
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
+source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!NOTE]
 >只有在您加入[自动维护更新](/help/implementing/deploying/aem-version-updates.md)后，才能使用“免打扰时间”和“更新空闲时段”功能。
 
-AEM as a Cloud Service [自动维护更新](/help/implementing/deploying/aem-version-updates.md)确保您的实例保持安全，并且使用最新维护版本保持最新。 话虽如此，在某些情况下（如上线活动），您可能需要“保护”这些关键的工作时间免受任何潜在干扰。 因此，AEM as a Cloud Service提供了设置时间范围的选项，在此时间范围内，正在进行的程序将不会发生自动更新。
+AEM as a Cloud Service [自动维护更新](/help/implementing/deploying/aem-version-updates.md)确保您的实例保持安全，并且使用最新维护版本保持最新。 话虽如此，在某些情况下（如上线活动），您可能需要“保护”这些关键的工作时间免受任何潜在干扰。 AEM as a Cloud Service提供了一些选项，可选择暂停程序自动维护更新的时间段。 这不会阻止所有基础架构活动，维护更新之外的较低级别平台更改可能仍会发生（例如IMS）。
 
 您可以使用两个计划选项配置这些时间范围：
 
