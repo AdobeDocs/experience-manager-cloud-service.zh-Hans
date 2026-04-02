@@ -1,43 +1,52 @@
 ---
-title: Cloud Manager 2026.3.0 版的发行说明
-description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2026.3.0 版本。
+title: Cloud Manager 2026.4.0 版的发行说明
+description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2026.4.0 版本。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
+source-git-commit: 6c98a27889257a6d8befa04a2b2c4e5a7e6e49f2
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 19%
+source-wordcount: '634'
+ht-degree: 20%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2026.3.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2026.4.0 的发行说明 {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2026.3.0 版本。
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2026.4.0 版本。
 
 另请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service中Cloud Manager 2026.3.0的发布日期是2026年3月5日星期四。
+AEM as a Cloud Service中Cloud Manager 2026.4.0的发布日期是2026年4月2日星期四。
 
-下一个计划发布于2026年4月2日星期四。
+下一个计划发布于2026年5月7日星期四。
 
 
 ## 新增功能 — Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager现在支持**&#x200B;内容副本&#x200B;**导入的**&#x200B;擦除&#x200B;**选项**
+* 用于AI支持的IDE的&#x200B;**Cloud Manager MCP服务器**
 
-  启用&#x200B;**划出**&#x200B;后，Cloud Manager会在开始导入之前删除目标上的现有内容，这样您就可以从头开始，避免与预先存在的内容冲突。 如果您禁用&#x200B;**擦除**，Cloud Manager会在现有目标内容之上导入新内容。 擦除开始前会显示确认提示，Cloud Manager将记录擦除操作和导入详细信息以便进行跟踪。
+  您现在可以使用MCP（模型上下文协议）服务器，该服务器将Cloud Manager公共API公开为启用了AI的IDE（例如光标）的工具。 连接后，您可以使用对话提示列出和管理项目、管道、环境和存储库，帮助您在不离开编辑器的情况下更快地移动。
 
-  另请参阅[复制内容](/help/implementing/developing/tools/content-copy.md#copy-content)。
+  请参阅文档[将MCP用于AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)。
 
-* **在AEM Experience Hub中支持UI可扩展性**
-[AEM Experience Hub](https://experience.adobe.com/experiencemanager)中对UI扩展的支持现已启用，从而让开发人员能够使用Adobe App Builder构建的自定义功能和构件来扩展界面。
+  请参阅教程[Cloud Manager MCP服务器](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#)。
 
-  若要了解更多信息，请参阅[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
+* 使用模块缓存更快地生成&#x200B;****
+
+  新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量非生产管道和开发全栈非生产管道。
+
+  请参阅[关于在非生产管道中使用Smart Build](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)和[添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)。
+
+* **自助主机连接检查**
+
+  Cloud Manager现在允许您从环境中运行自助检查。 这些检查将验证主机和端口的可达性，并使用您程序配置的网络路径（包括出口）确认DNS解析。 此功能可帮助您验证高级联网并更快地解决集成问题，而无需打开支持案例或访问Pod。<!-- SKYOPS-23640 -->
+
+  请参阅[网络连接测试](/help/security/network-connectivity-test.md)
 
 * **改进的稳定性、性能和可靠性**
 
@@ -55,23 +64,38 @@ AEM as a Cloud Service中Cloud Manager 2026.3.0的发布日期是2026年3月5日
 另请参阅[AEM Beta程序](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 目前提供以下机会：
-<!--
-### Support for Custom Author Domains in Cloud Service
 
-AEM Cloud Service is going to soon support one custom domain per Author environment.-->
+### Edge Delivery Services具有AEM创作和灵活的发布层配置 {#eds-with-aem-authoring}
 
-### 适用于AI支持的IDE的Cloud Manager MCP服务器{#mcp-server-for-cm}
+Cloud Manager引入了两项旨在支持现代交付体系结构的功能。
 
-现在，您可以尝试使用一个MCP（模型上下文协议）服务器，该服务器会将Cloud Manager公共API公开为启用了AI的IDE（例如光标）的工具。 连接后，您可以使用对话提示列出和管理项目、管道、环境和存储库，帮助您在不离开编辑器的情况下更快地移动。
+* 具有AEM创作功能的&#x200B;**Edge Delivery Services**
+您现在可以使用Edge Delivery Services交付站点，同时继续在AEM创作模式下创作内容。 根据您的工作流首选项，您可以选择以下创作方法：
 
-请参阅文档[将MCP用于AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)。
+   * 基于文档的创作
+   * AEM基于创作的创作
 
-请参阅教程[Cloud Manager MCP服务器](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#)。
+有关详细信息，请参阅[在Cloud Manager中创建Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site)。
 
-是否对 Beta 感兴趣？使用您的Adobe OrgID和项目ID向[GRP-AEM-CM-MCP-FEEDBACK@adobe.com](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)发送电子邮件。
+* **灵活的发布层配置**
+Cloud Manager现在允许您配置项目是否需要发布层。 这种灵活性允许您设置更好地匹配所选交付架构的环境。
 
+有关详细信息，请参阅[灵活发布层(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)。
 
-<!--
+要加入Beta，请使用您的Adobe组织ID和项目ID向[grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)发送电子邮件。
+
+### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
+
+新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库），以缩短构建时间。 适用于生产管道。 您控制哪些生产管道使用&#x200B;**智能生成**。
+
+有关更多信息，请参阅以下内容：
+
+* [在生产管道中使用Smart Build](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)。
+* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)。
+
+要加入Beta，请使用您的Adobe组织ID和项目ID向[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)发送电子邮件。
+
+<!-- OLD
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -83,33 +107,17 @@ Embed custom experiences in Experience Hub to extend and personalize your organi
 Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
 -->
 
-### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
+<!-- OLD
+### Support for Custom Author Domains in Cloud Service
 
-新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量、全栈和仅限暂存的管道。
+AEM Cloud Service is going to soon support one custom domain per Author environment.
+-->
 
-![编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
-*显示“完全生成”和“智能生成”这两个生成策略选项的“编辑非生产管道”对话框。*
 
-在&#x200B;**添加/编辑管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡下，新增的&#x200B;**生成策略**&#x200B;部分允许您选择以下生成选项之一：
-
-* **完整内部版本** — 每次运行都会在存储库中生成所有模块。
-* **智能生成** — 仅生成自上次提交以来更改的模块，这会缩短总体生成时间。
-
-您控制哪些管道使用&#x200B;**智能生成**。 在Beta测试期间，此选项仅对&#x200B;**代码质量**&#x200B;和&#x200B;**开发全栈栈部署**&#x200B;管道显示。
-
-请参阅[关于在非生产管道中使用智能生成](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)和[添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
-
-是否有兴趣？ 向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
-
-<!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
 ## 错误修复 {#bug-fixes}
 
-* 解决了恢复点API在检索恢复点时可能返回500错误的问题。 现在，端点可正确处理空值，从而确保一致且可靠的响应。 (CMGR-72963)
-* Cloud Manager现在接受带或不带`.git`后缀的GitHub存储库URL，使API行为与UI保持一致，并使存储库载入更加灵活。 (CMGR-73296)
-* 产品配置文件名称验证现在不区分大小写，可在创建名称仅因大写不同而异的配置文件时防止出错。 (CMGR-74075)
-* 您现在可以从同一管道执行中执行多个恢复操作，从而为环境（如暂存和生产）实现顺序恢复，而无需运行新的管道。 (CMGR-73538)
-
+2026年4月发行的Cloud Manager版本没有重大错误修复。
 
 <!-- ## Known issues {#known-issues} -->
 
