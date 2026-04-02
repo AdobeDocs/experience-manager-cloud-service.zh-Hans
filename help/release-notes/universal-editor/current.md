@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.03.26发行说明
-description: 这些是通用编辑器2026.03.26版的发行说明。
+title: 通用编辑器2026.04.02发行说明
+description: 这些是通用编辑器2026.04.02版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 39%
+source-wordcount: '113'
+ht-degree: 50%
 
 ---
 
 
-# 通用编辑器2026.03.26发行说明 {#release-notes}
+# 通用编辑器2026.04.02发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 3 月 26 日版本的发行说明。
+这些是通用编辑器 2026 年 2 月 4 日版本的发行说明。
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ ht-degree: 39%
 
 ## 新增功能 {#what-is-new}
 
-* [文档创作资源配置](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets)现在通过配置端点公开。
-* [扩展点](/help/implementing/universal-editor/extending.md#extending-ui)已添加到上下文菜单。
-* 在Extensibility DynamicIcon系统中添加了新的自定义工作流图标，以在UI中显示深/浅取消状态。
+* [向](/help/implementing/universal-editor/configure-rte.md#special-characters)添加特殊字符[的可配置选项](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)已添加到富文本编辑器(RTE)工具栏。
 
 ## 其他改进 {#other-improvements}
 
-* 已修复文档创作类不能使用多字段的问题，因为它们需要字符串。
+* OpenAPI适配器不再错误地将标记字段作为多字段返回。

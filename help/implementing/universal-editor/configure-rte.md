@@ -4,9 +4,9 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在启动通用编辑器项目时，后端支持的所有富文本功能（AEM与Edge Delivery或headless实施）会自动处于活动状态。
+>启动Universal Editor项目时，后端支持的所有富文本功能（AEM与Edge Delivery或headless实施）自动处于活动状态，并可在RTE的[模式编辑器窗口中使用。](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* 您可以停用这些不需要的选项。
 >* 不支持激活与您的项目类型不兼容的选项。
@@ -77,7 +77,7 @@ RTE配置由两部分组成：
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -172,7 +172,7 @@ RTE配置由两部分组成：
 }
 ```
 
-#### 表配置选项 {#table-configuration-options}
+####表配置选项 {#table-configuration-options}
 
 * `wrapInParagraphs`： `false` （默认） — 表单元格包含未换行的文本内容
 * `wrapInParagraphs`： `true` — 表单元格将内容包裹在段落标记中
@@ -292,6 +292,82 @@ RTE配置由两部分组成：
 >
 >通过Tab/Shift+Tab键进行列表嵌套的工作方式与常规缩进设置无关。
 
+### 特殊字符 {#special-characters}
+
+`special_characters`插入操作会打开一个字符选取器弹出框，用于在光标位置处插入特殊字符（符号、数学运算符、货币符号、标点符号、箭头等）。
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+包括现成可用的44个常用字符的默认集。 可通过两个配置选项自定义字符列表：
+
+* `appendCharacters` — 向默认集添加字符
+* `characters` — 完全替换默认集
+
+每个字符条目都有`character`（Unicode字符）和`title`（工具提示/可访问名称）。
+
+#### 将字符附加到默认值 {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### 替换默认特殊字符 {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### 两个选项一起使用 {#both-special-character-options}
+
+此示例使用`characters`作为基数，然后使用`appendCharacters`附加其他字符。
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### 粘贴为文本 {#paste-as-text}
 
 `paste_text`编辑器操作可启用标准的纯文本粘贴工作流。
@@ -364,7 +440,9 @@ RTE配置由两部分组成：
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -401,6 +479,17 @@ RTE配置由两部分组成：
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {
@@ -569,7 +658,7 @@ const rteConfig = {
 };
 ```
 
-| 值 | 行为 |
+| 价值 | 行为 |
 |---|---|
 | `false`（默认） | 解析期间会删除未知的HTML标记。 |
 | `true` | 未知HTML标记将封装在自定义的不支持块节点中，以便内容可以安全地来回传输。 |
