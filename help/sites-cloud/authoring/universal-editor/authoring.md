@@ -237,7 +237,7 @@ ht-degree: 17%
    * 在属性面板中选择&#x200B;**删除**&#x200B;图标。
 
      ![删除组件](assets/ue-delete-component.png)
-   * 在上下文菜单中选择&#x200B;**删除**选项。
+   * 在上下文菜单中选择&#x200B;**删除**&#x200B;选项。
      ![从上下文菜单删除](assets/delete-from-context-menu.png)
 
 选定的组件已删除。
@@ -315,7 +315,7 @@ ht-degree: 17%
 1. 然后，您可以：
    * 单击&#x200B;**属性面板中的**&#x200B;复制[图标。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![从面板复制](assets/copy-from-panel.png)
-   * 在上下文菜单中选择&#x200B;**复制**选项。
+   * 在上下文菜单中选择&#x200B;**复制**&#x200B;选项。
      ![从上下文菜单复制](assets/copy-from-context-menu.png)
 1. 选择要将复制的组件粘贴到&#x200B;_之后的组件_。
 1. 然后，您可以：
@@ -474,7 +474,7 @@ ht-degree: 17%
 要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
-* [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
+* [AEM Universal Editor 快速入门 &#x200B;](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。
