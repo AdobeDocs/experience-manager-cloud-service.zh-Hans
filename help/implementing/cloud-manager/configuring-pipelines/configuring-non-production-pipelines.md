@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
+source-git-commit: 7663af90b17e4b9d9567041c3bed8e20465c87d9
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 21%
@@ -62,7 +62,7 @@ ht-degree: 21%
 1. 单击&#x200B;**继续**。
 
 1. 用于完成非生产管道配置的剩余步骤取决于您选择使用的源代码类型。
-在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
+在**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
 
    * **[我正在使用全栈代码](#full-stack-code)**
    * **[我正在使用目标部署](#targeted-deployment)**
@@ -92,7 +92,7 @@ ht-degree: 21%
    * **Git分支** — 从下拉列表中，选择管道应从中构建到的所选存储库中的哪个分支。 默认为 `main`。 管道使用所选分支作为构建和部署的源。 如有必要，请单击&#x200B;**刷新**&#x200B;以更新所选存储库的可用分支列表。 如果最近创建的分支未出现在列表中，请使用此选项。
    * **生成策略**
       * **完整生成** — 每次生成存储库中的所有模块
-      * Beta **智能生成** — 仅生成自上次提交以来更改的模块。<br>了解有关[在非生产管道中使用Smart Build](#about-smart-build)的更多信息。
+      * Beta **智能生成** — 仅生成自上次提交以来更改的模块。<br>了解有关[在非生产管道中使用Smart Build](#about-smart-build-non-production-pipeline)的更多信息。
 
         >[!IMPORTANT]
         >
@@ -112,7 +112,7 @@ ht-degree: 21%
 1. 单击“**保存**”。
 
 管道已保存，您现在可以[管理您的管道]&#x200B;(managing-pipe
-lines.md)，它位于&#x200B;**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
+lines.md)，它位于**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
 
 ### 我正在使用目标部署 {#targeted-deployment}
 
@@ -180,7 +180,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
 
-## 关于在非生产管道中使用Smart Build{#about-smart-build}
+## 关于在非生产管道中使用Smart Build{#about-smart-build-non-production-pipeline}
 
 Cloud Manager中的&#x200B;**智能生成**&#x200B;是适用于非生产管道的优化生成策略。 Smart Build通过缓存模块并仅重新生成自上次成功运行以来发生更改的模块来缩短构建时间。 未更改的模块从缓存中重用，而只重新构建已修改的模块及其依赖关系，从而提高迭代开发工作流的效率。
 
@@ -194,11 +194,13 @@ Smart Build当前仅适用于以下项目：
 >启用Smart Build后首次运行的行为类似于Full Build，因为缓存为空。
 
 在出现以下情况时，建议使用Smart Build：
+
 * 您正在积极开发和提交频繁的增量更改。
 * 您的项目包含多个Maven模块。
 * 完整内部版本需要大量时间。
 
 当出现以下情况时，Smart Build并不总是理想的：
+
 * 您的内部版本严重依赖在Maven的依赖关系图之外执行操作的插件。
 * 每次执行都需要完全重新生成验证。
 

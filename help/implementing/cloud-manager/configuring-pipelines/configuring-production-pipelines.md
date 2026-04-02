@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 37%
+source-wordcount: '1903'
+ht-degree: 27%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 37%
 >
 >在配置前端管道之前，请参阅[AEM快速站点创建历程](/help/journey-sites/quick-site/overview.md)，获取易于使用的AEM快速站点创建工具的端到端指南。 此历程可帮助您简化AEM站点的前端开发，让您无需了解AEM后端即可快速自定义站点。
 
-1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在[experience.adobe.com](https://experience.adobe.com)登录Cloud Manager。
 1. 在&#x200B;**快速访问**&#x200B;部分，单击 **Experience Manager**。
 1. 在左侧面板中点击 **Cloud Manager**。
 1. 选择所需的组织。
@@ -71,14 +71,14 @@ ht-degree: 37%
 
 1. 在&#x200B;**Source代码**&#x200B;选项卡上，选择管道应处理的代码类型。
 
-   * **[配置全栈栈代码管道](#full-stack-code)**
+   * **[我正在使用全栈代码](#full-stack-code)**
    * **[配置目标部署管道](#targeted-deployment)**
 
 有关管道类型的更多信息，请参阅[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 根据您选择的源代码类型，完成生产管道创建的步骤有所不同。 按照上面的链接跳到本文档的下一节，完成管道的配置。
 
-### 配置全栈栈代码管道 {#full-stack-code}
+### 我使用的是全栈代码 {#full-stack-code}
 
 全栈代码管道同时部署后端和前端代码构建，其中包含一个或多个AEM服务器应用程序以及HTTPD/Dispatcher配置。
 
@@ -96,8 +96,14 @@ ht-degree: 37%
    > 
    >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，了解如何在Cloud Manager中添加和管理存储库。
 
-   * **Git分支** — 定义所选管道应从中检索代码的分支。
-输入分支名称的前几个字符，此字段的自动完成功能将查找匹配的分支以帮助您进行选择。
+   * **Git分支** — 从下拉列表中，选择管道应从中构建到的所选存储库中的哪个分支。 默认为 `main`。 管道使用所选分支作为构建和部署的源。 如有必要，请单击&#x200B;**刷新**&#x200B;以更新所选存储库的可用分支列表。 如果最近创建的分支未出现在列表中，请使用此选项。
+   * **生成策略**
+      * **完整生成** — 每次生成存储库中的所有模块
+      * Beta **智能生成** — 仅生成自上次提交以来更改的模块。<br>了解有关[在非生产管道中使用Smart Build](#about-smart-build-non-production-pipeline)的更多信息。
+
+        >[!IMPORTANT]
+        >
+        >智能生成仅适用于代码质量管道和开发全栈代码部署管道。
    * **忽略 Web 层配置** – 勾选后，该管道不会部署您的 Web 层配置。
    * **在部署到生产之前暂停** — 在部署到生产之前暂停管道。
    * **已计划** — 允许用户启用计划的生产部署。
@@ -118,7 +124,7 @@ ht-degree: 37%
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
-### 配置目标部署管道 {#targeted-deployment}
+### 我正在使用目标部署 {#targeted-deployment}
 
 目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择&#x200B;**包含**&#x200B;以下代码类型之一：
 
@@ -168,6 +174,80 @@ ht-degree: 37%
 1. 单击“**保存**”。
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
+
+## Beta：关于在生产管道中使用Smart Build{#about-smart-build-production-pipeline}
+
+Cloud Manager中的&#x200B;**智能生成**&#x200B;是生产管道的优化生成策略。 Smart Build通过缓存模块并仅重新生成自上次成功运行以来发生更改的模块来缩短构建时间。 未更改的模块从缓存中重用，而只重新构建已修改的模块及其依赖关系，从而提高迭代开发工作流的效率。
+
+>[!NOTE]
+>
+>对这个测试版感兴趣吗？ 向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
+
+>[!IMPORTANT]
+>
+>启用Smart Build后首次运行的行为类似于Full Build，因为缓存为空。
+
+在出现以下情况时，建议使用Smart Build：
+
+* 您正在积极开发和提交频繁的增量更改。
+* 您的项目包含多个Maven模块。
+* 完整内部版本需要大量时间。
+
+当出现以下情况时，Smart Build并不总是理想的：
+
+* 您的内部版本严重依赖在Maven的依赖关系图之外执行操作的插件。
+* 每次执行都需要完全重新生成验证。
+
+### 了解构建性能{#smart-build-performance}
+
+使用Smart Build的性能提升取决于以下几个因素：
+
+* 项目中的模块数。
+* 代码更改的频率和范围。
+* 依赖项在各个模块之间的分布。
+
+通常，具有多个独立模块的项目可以看到最大的改进。
+
+### 每模块缓存选择退出{#smart-build-cache-optout}
+
+Smart Build提供细粒度控制，允许您禁用特定模块的缓存。 此功能在以下情况下很有用：
+
+* 使用插件，如`exec-maven-plugin`或`maven-antrun-plugin`。
+* 执行Maven依赖项未跟踪的文件操作。
+* 缓存的内容产生不一致的结果。
+
+### 禁用模块的缓存{#smart-build-disable-caching}
+
+您可以将以下属性添加到受影响模块的`pom.xml`：
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+此语法强制模块在每次管道执行时重新生成，而其他模块继续受益于缓存。
+
+### 使用智能构建时的限制和注意事项{#smart-build-limitations}
+
+使用Smart Build时，请牢记以下几点：
+
+* Smart Build依赖于Maven依赖关系分析。
+* 在依赖关系图之外进行的更改可能不会触发重新生成。
+* 某些插件可能与缓存不完全兼容。
+* 您可以通过编辑生产管道随时切换回&#x200B;**完整内部版本**。
+
+如果遇到意外的生成行为，请考虑禁用特定模块的缓存或暂时将生成策略切换到&#x200B;**完整生成**。
+
+### 智能生成问题疑难解答{#smart-build-troubleshoot}
+
+| 问题 | 建议的解决方案 |
+| --- | --- |
+| 生成结果不一致 | ·禁用受影响模块的缓存。<br>·验证插件的行为（尤其是`exec`/`antrun`插件）。 |
+| 无性能改进 | ·确保已多次运行（缓存预热）。<br>·检查大多数模块是否频繁更改。 |
+| 意外的项目或缺少更改 | ·查看更改是否在Maven依赖项跟踪之外。<br>·使用&#x200B;**Full Build**&#x200B;进行验证。 |
+
+请参阅[添加生产管道](#adding-production-pipeline)以启用智能生成。
 
 ## 跳过Dispatcher包 {#skip-dispatcher-packages}
 

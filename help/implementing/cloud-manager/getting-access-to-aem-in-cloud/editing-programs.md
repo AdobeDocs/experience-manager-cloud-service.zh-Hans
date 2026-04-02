@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 42%
+source-wordcount: '438'
+ht-degree: 40%
 
 ---
 
@@ -47,6 +47,7 @@ ht-degree: 42%
    ![“常规”选项卡](assets/edit-program-prod1.png)
 
 1. 可用于编辑程序的选项与用于创建程序的选项相同。
+   * 您可以配置是否为新环境(Beta)配置了发布层。 请参阅[灵活发布层(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)。
    * 有关各个选项的详细信息，请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
    * [其他选项](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)可能适用于您的生产程序，具体取决于您组织的权限。
 
