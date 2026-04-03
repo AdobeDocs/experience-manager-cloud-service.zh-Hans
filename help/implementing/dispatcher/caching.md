@@ -22,11 +22,11 @@ ht-degree: 1%
 
 AEM as a Cloud Service CDN中HTTP响应的缓存受来自源的以下HTTP响应标头控制： `Cache-Control`、`Surrogate-Control`或`Expires`。
 
-这些缓存标头通常在使用mod_headers的AEM Dispatcher vhost配置中进行设置，但也可以在AEM Publish本身中运行的自定义Java™代码中进行设置（请参阅[如何启用CDN缓存](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)）。
+这些缓存标头通常在使用mod_headers的AEM Dispatcher vhost配置中进行设置，但也可以在AEM Publish本身中运行的自定义Java™代码中进行设置（请参阅[如何启用CDN缓存](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)）。
 
 CDN资源的缓存键包含完整的请求url，其中包括查询参数，因此每个不同的查询参数都会产生不同的缓存条目。 请考虑删除不需要的查询参数；[请参阅下面的](#marketing-parameters)以提高缓存命中率。
 
-AEM as a Cloud Service的CDN不会缓存`private`中包含`no-cache`、`no-store`或`Cache-Control`的原始响应（有关更多详细信息，请参阅[如何禁用CDN缓存](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)）。  此外，CDN不会缓存设置Cookie的响应，即具有`Set-Cookie`响应标头。
+AEM as a Cloud Service的CDN不会缓存`private`中包含`no-cache`、`no-store`或`Cache-Control`的原始响应（有关更多详细信息，请参阅[如何禁用CDN缓存](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)）。  此外，CDN不会缓存设置Cookie的响应，即具有`Set-Cookie`响应标头。
 
 ### HTML/文本 {#html-text}
 
@@ -53,7 +53,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >Surrogate-Control标头适用于Adobe托管的CDN。 如果使用[客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN)，则根据您的CDN提供商，可能需要不同的标头。
+  >Surrogate-Control标头适用于Adobe托管的CDN。 如果使用[客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=zh-Hans#point-to-point-CDN)，则根据您的CDN提供商，可能需要不同的标头。
 
   在设置与宽正则表达式匹配的全局缓存控制标头或类似缓存标头时，请务必谨慎，以免将它们应用于必须保持私密的内容。 请考虑使用多个指令，以确保以细粒度应用规则。 这样一来，如果AEM as a Cloud Service检测到缓存标头已应用于它检测到无法由Dispatcher缓存的内容，则会删除该缓存标头，如Dispatcher文档中所述。 要强制AEM始终应用缓存标头，可以按如下方式添加&#x200B;**`always`**&#x200B;选项：
 
@@ -89,7 +89,7 @@ Define DISABLE_DEFAULT_CACHING
   >其他方法，包括[Dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，无法成功覆盖值。
 
   >[!NOTE]
-  >Dispatcher可能仍会根据自己的[缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html)来缓存内容。 要使内容真正为私有，请确保Dispatcher不缓存该内容。
+  >Dispatcher可能仍会根据自己的[缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=zh-Hans)来缓存内容。 要使内容真正为私有，请确保Dispatcher不缓存该内容。
 
 ### 客户端库(js，css) {#client-side-libraries}
 
@@ -237,7 +237,7 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
 
 ### 分析CDN缓存命中率 {#analyze-chr}
 
-有关使用仪表板下载CDN日志和分析网站缓存命中率的信息，请参阅[缓存命中率分析教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html)。
+有关使用仪表板下载CDN日志和分析网站缓存命中率的信息，请参阅[缓存命中率分析教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=zh-Hans)。
 
 ### HEAD请求行为 {#request-behavior}
 
@@ -265,7 +265,7 @@ data:
     removeMarketingParams: false
 ```
 
-如果`removeMarketingParams`功能在CDN级别被禁用，仍建议配置Dispatcher配置的`ignoreUrlParams`属性；请参阅[配置Dispatcher — 忽略URL参数](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
+如果`removeMarketingParams`功能在CDN级别被禁用，仍建议配置Dispatcher配置的`ignoreUrlParams`属性；请参阅[配置Dispatcher — 忽略URL参数](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#ignoring-url-parameters)。
 
 忽略营销参数有两种可能性。 （其中首选方法是通过查询参数忽略缓存无效）：
 
@@ -301,7 +301,7 @@ data:
 >[!NOTE]
 >为使Dispatcher正确失效，请确保来自“127.0.0.1”、“localhost”、“\*.local”、“\*.adobeaemcloud.com”和“\*.adobeaemcloud.net”的请求均匹配，并由vhost配置进行处理，以便可以提供请求。 您可以按照引用[AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost)中的模式，在捕获所有vhost配置中通过全局匹配“*”来执行此任务。 或者，您可以确保上述列表由其中一台主机捕获。
 
-当发布实例从作者那里收到新版本的页面或资源时，它使用刷新代理使其Dispatcher上的相应路径失效。 更新的路径及其父项会从Dispatcher缓存中删除，最多可删除一个级别（您可以使用[statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)配置此级别）。
+当发布实例从作者那里收到新版本的页面或资源时，它使用刷新代理使其Dispatcher上的相应路径失效。 更新的路径及其父项会从Dispatcher缓存中删除，最多可删除一个级别（您可以使用[statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#invalidating-files-by-folder-level)配置此级别）。
 
 ## 明确使Dispatcher缓存失效 {#explicit-invalidation}
 
@@ -512,7 +512,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -524,9 +524,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/cn/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/cn/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## 客户端库和版本一致性 {#content-consistency}
 
