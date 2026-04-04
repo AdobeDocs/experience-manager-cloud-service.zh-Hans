@@ -36,7 +36,7 @@ AEM as a Cloud Service中Cloud Manager 2026.4.0的发布日期是2026年4月2日
 
   请参阅教程[Cloud Manager MCP服务器](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#)。
 
-* 使用模块缓存更快地生成&#x200B;****
+* 使用模块缓存更快地生成&#x200B;**&#x200B;**
 
   新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量非生产管道和开发全栈非生产管道。
 

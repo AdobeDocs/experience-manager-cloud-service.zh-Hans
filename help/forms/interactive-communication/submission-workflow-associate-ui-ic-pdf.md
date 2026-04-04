@@ -68,7 +68,7 @@ Associates open the Associate UI on the Publish instance, using the integration 
 
    ![工作流变量](/help/forms/assets/associate-ui-add-variables.png)
 
-1. **步骤：**&#x200B;添加&#x200B;**IC渲染PDF输出**步骤。
+1. **步骤：**&#x200B;添加&#x200B;**IC渲染PDF输出**&#x200B;步骤。
    ![添加工作流步骤](/help/forms/assets/associate-ui-add-step.png)
 
 1. 在其&#x200B;**输入**&#x200B;选项卡中，将&#x200B;**选择模板(JsonObject)**&#x200B;设置为&#x200B;**变量** → **communicationDom**。 保存步骤和模型。
