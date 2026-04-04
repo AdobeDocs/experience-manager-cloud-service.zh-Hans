@@ -85,7 +85,7 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 * 观看本视频，了解如何配置Dispatcher SDK：
 
-  >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/33556?captions=chi_hans)
 
 ### 思维方式的改变 {#a-change-in-mindset}
 
