@@ -6,7 +6,7 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5363'
 ht-degree: 38%
@@ -30,7 +30,8 @@ ht-degree: 38%
 * 能够在 IMS 组织内切换存储库以选择资源。
 * 能够按名称、维度和大小对资源进行排序，并在列表、网格、库或瀑布视图中查看它们。
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -401,7 +402,7 @@ onErrorReceived: (type, msg) => {
 
 * [通信方法](#prereqs)
 * 要通过OpenAPI功能访问Dynamic Media，您必须拥有以下许可证：
-   * Assets存储库(例如，Experience Manager Assets as a Cloud Service)。
+   * Assets存储库（例如，Experience Manager Assets as a Cloud Service）。
    * AEM Dynamic Media。
 * 只有[个批准的资产](#approved-assets.md)可用于确保品牌一致性。
 
@@ -473,7 +474,7 @@ URL格式：
 
 +++
 
-+++**已准备好挑选动态投放URL**
++++ **已准备好挑选动态投放URL**
 所有选定资源均由用作JSON对象的`handleSelection`函数承载。 例如，`JsonObj`。动态投放URL是通过组合以下运营商创建的：
 
 | 对象 | JSON |
@@ -487,7 +488,7 @@ URL格式：
 
 ![动态投放URL](assets/dynamic-delivery-url.png)
 
-* **缩略图：**&#x200B;缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
 以下演绎版集可用于PDF类型资源：
 在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
 
@@ -506,7 +507,7 @@ URL格式：
 
 在上面的屏幕截图中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到Target Experience中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **视频：**&#x200B;您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -523,6 +524,8 @@ URL格式：
   上述屏幕快照中的代码片段是视频资源的一个示例。 它包括呈现版本链接数组。 摘录中的`selection[5]`是图像缩略图的示例，可用作目标体验中视频缩略图的占位符。 演绎版数组中的`selection[5]`适用于视频播放器。 它提供一个HTML，可以设置为iframe的`src`。 它支持自适应比特率流，该流是Web优化的视频交付。
 
   在上例中，视频播放器URL为`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
+
++++
 
 +++具有OpenAPI功能的Dynamic Media的&#x200B;**资产选择器用户界面**
 
@@ -803,7 +806,7 @@ interface SelectedAsset {
 | *存储库:createDate* | 字符串 | 资源的创建日期和时间。 |
 | *存储库:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
 | *存储库:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
-| *dc:format* | 字符串 | 资源的格式，如文件类型(例如，JPEG、PNG等)。 |
+| *dc:format* | 字符串 | 资源的格式，如文件类型（例如，JPEG、PNG等）。 |
 | *tiff:imageWidth* | 数字 | 资源的宽度。 |
 | *tiff:imageLength* | 数字 | 资源的高度。 |
 | *computedMetadata* | `Record<string, any>` | 一个对象，表示所有类型的所有资源元数据（存储库、应用程序或嵌入式元数据）的存储桶。 |
@@ -821,10 +824,12 @@ interface SelectedAsset {
 
 通过资源选择器，您可以控制已过期资源的使用情况。 您可以使用即将过期的&#x200B;**徽章**&#x200B;自定义已过期的资产，该徽章可帮助您提前了解将在当前日期起30天内过期的资产。 此外，还可根据需要自定义标记。 您还可以允许在画布上选择已过期的资源，反之亦然。 可以通过多种方式使用某些代码片段来自定义已过期的资源：
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -845,7 +850,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 #### 设置已过期资源的持续时间 {#set-duration-of-expired-asset}
 

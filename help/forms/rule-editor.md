@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '6688'
 ht-degree: 5%
@@ -17,13 +17,13 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service（基础组件） | 本文 |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## 概述 {#overview}
 
@@ -203,7 +203,8 @@ _
 
 **[!UICONTROL 删除实例]**&#x200B;删除指定的可重复面板或表行的实例。
 
-**[!UICONTROL 导航到]**&#x200B;导航到其他<!--Interactive Communications,-->自适应Forms、其他资源（如图像或文档片段）或外部URL。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 导航到]**&#x200B;导航到其他<!--Interactive Communications,-->自适应Forms、图像或文档片段等其他资源或外部URL。
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL 设置值] {#set-value-of}
 
@@ -535,11 +536,12 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+ ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -647,7 +649,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 要创建客户端库并将其添加到CRX存储库中，请执行以下步骤：
 
-1. 创建客户端库。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing)。
+1. 创建客户端库。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 1. 在CRXDE中，将字符串类型值为`categories`的属性`customfunction`添加到`clientlib`文件夹中。
 
    >[!NOTE]
@@ -657,7 +659,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存储库中添加客户端库后，在自适应表单中使用它。 它可让您在表单中将自定义函数用作规则。 要在自适应表单中添加客户端库，请执行以下步骤：
 
 1. 在编辑模式下打开表单。
-要在编辑模式下打开表单，请选择一个表单，然后选择&#x200B;**[!UICONTROL 打开]**。
+要在编辑模式下打开表单，请选择一个表单，然后选择**[!UICONTROL 打开]**。
 1. 在编辑模式下，选择一个组件，然后选择![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后选择![cmppr](assets/configure-icon.svg)。
 1. 在侧栏中的“Name of Client Library”（客户端库名称）下，添加您的客户端库。 （示例中为`customfunction`。）
 
@@ -836,11 +838,13 @@ var c = {
 
 ![已请求更多校对](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## 示例规则 {#example}
 
@@ -872,11 +876,13 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 在示例规则中，When部分中的语句是条件，当返回True时，该条件将执行Then部分中指定的操作。
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### 在规则中使用函数输出 {#using-a-function-output-in-a-rule}
 
@@ -896,11 +902,13 @@ Rule in the code editor -->
 
 可视编辑器中的规则
 
-<!-- he rule appears as follows in the code editor.
+<!--
+ he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### 使用表达式验证字段值 {#validating-a-field-value-using-expression}
 
@@ -910,8 +918,10 @@ Rule in the code editor -->
 
 可视编辑器中的规则
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

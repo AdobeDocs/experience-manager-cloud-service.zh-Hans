@@ -5,7 +5,7 @@ exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Developer
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## 人工与自动模型工艺路线 {#manual-vs-automatic-model-routing}
 
-`ModelRouter`会自动获取模型的片段。 但就像任何自动化工具一样，它也有局限性。 需要时，可以禁用`ModelRouter`或将其配置为使用元属性忽略路径(请参阅[SPA页面组件](page-component.md)文档的“Meta属性”部分)。 然后，前端开发人员可以通过请求`PageModelManager`使用`getData()`函数加载任何给定模型片段来实施自己的模型路由层。
+`ModelRouter`会自动获取模型的片段。 但就像任何自动化工具一样，它也有局限性。 需要时，可以禁用`ModelRouter`或将其配置为使用元属性忽略路径（请参阅[SPA页面组件](page-component.md)文档的“Meta属性”部分）。 然后，前端开发人员可以通过请求`PageModelManager`使用`getData()`函数加载任何给定模型片段来实施自己的模型路由层。
 
 >[!CAUTION]
 >

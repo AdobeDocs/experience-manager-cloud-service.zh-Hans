@@ -2,15 +2,14 @@
 title: AEM创作项目的Experience现代化代理快速入门
 description: 了解在使用Experience Modernization Console开始使用Experience Modernization Agent时，AEM创作项目所需的具体设置步骤。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
-source-git-commit: df23c3a4c497943135f8719425225526ae14aa92
+role: User, Admin, Developer
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
 
 ---
-
 
 # AEM创作项目的Experience现代化代理快速入门 {#getting-started-aem-authoring}
 
@@ -18,7 +17,7 @@ ht-degree: 1%
 
 ## 创建您的Edge Delivery Services项目存储库 {#create-repo}
 
-1. 使用[`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk)存储库作为您的模板(不是标准Edge Delivery Services样板)。
+1. 使用[`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk)存储库作为您的模板（不是标准Edge Delivery Services样板）。
 1. 按照[Universal Editor教程](https://www.aem.live/developer/ue-tutorial)设置存储库。
    * 当要求您在AEM中创建站点时停止。
 1. 删除`paths.json`并将此更改提交到`main`。
@@ -58,8 +57,8 @@ ht-degree: 1%
 
 ## 验证内容 {#validate-content}
 
-在预览面板中验证所选页面的内容。 单击&#x200B;**错误**&#x200B;按钮将显示任何错误。
-继续与座席进行聊天对话以修复错误。 使用&#x200B;**添加到聊天**&#x200B;功能，将修复定位到页面、解析器文件或转换器文件的特定元素。
+在预览面板中验证所选页面的内容。 单击&#x200B;**错误**按钮将显示任何错误。
+继续与座席进行聊天对话以修复错误。 使用**添加到聊天**&#x200B;功能，将修复定位到页面、解析器文件或转换器文件的特定元素。
 
 ![上下文聊天](assets/contextual-chat.png)
 

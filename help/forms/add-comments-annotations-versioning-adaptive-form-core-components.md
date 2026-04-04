@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -15,8 +15,10 @@ ht-degree: 0%
 
 # 对自适应表单进行版本控制、审核和注释
 
-<!--Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
-https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
+<!--
+Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
+-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 

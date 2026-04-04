@@ -1,11 +1,11 @@
 ---
-title: 迁移到AEM Commerce integration framework (CIF)加载项
-description: 如何从旧版本迁移到AEM Commerce integration framework (CIF)加载项
+title: 迁移到AEM Commerce Integration Framework (CIF)加载项
+description: 如何从旧版本迁移到AEM Commerce Integration Framework (CIF)加载项
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 10%
@@ -48,7 +48,7 @@ Classic CIF 及其依赖项不再可用。对于依赖使用`com.adobe.cq.commer
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源。](https://business.adobe.com/cn/products/magento/open-source.html)
+>如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源。](https://business.adobe.com/products/magento/open-source.html)
 
 ## 具有AEM渲染的产品目录体验 {#aem-rendering}
 

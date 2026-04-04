@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 73%
@@ -39,18 +39,20 @@ ht-degree: 73%
 * [任务](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任务**&#x200B;选项卡中查看分配给您的任务。而您创建的任务可以在&#x200B;**分配的任务**&#x200B;选项卡中查看。此外，您完成的任务位于&#x200B;**已完成的任务**&#x200B;选项卡下。
 * [资源](/help/assets/manage-organize-assets-view.md)：以树视图列出您有权访问的所有文件夹。
 * **最近查看过的项目**：您最近查看过的资源列表。[!DNL Assets view] 仅显示您预览过的资源。它不显示您在浏览存储库文件或文件夹时滚动浏览的资源。
-* [收藏集](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager Assets视图中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资产。收藏集与文件夹的不同之处是可包含来自不同位置的资产。您可以与一个用户共享多个收藏集。每个收藏集都包含对资产的引用。收藏集中会保持资产的引用完整性。
+* [收藏集](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager Assets视图中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资产。与文件夹不同，一个收藏集可以包含来自不同位置的资源。 您可以与一个用户共享多个收藏集。每个收藏集都包含对资产的引用。收藏集中会保持资产的引用完整性。
 
 * [洞察](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在 [!DNL Assets view] 中可以在仪表板上查看实时洞察。通过资源视图的“洞察”仪表板，可查看资源视图环境的实时数据。可查看过去 30 天或过去 12 个月的实时事件指标。
 
 * **垃圾箱**：列出从根 **[!UICONTROL Assets]** 文件夹中删除的资源。在“垃圾桶”文件夹中选择某个资源可将它还原到其原有位置或永久删除它。可指定关键字或应用过滤器，如资源状态、文件类型、mime 类型、图像大小、资源创建、修改和过期日期，并可按当前用户丢弃的资源进行过滤。还可应用自定义过滤器以在“垃圾桶”文件夹中搜索适当的资源。有关使用标准和自定义筛选器的更多信息，请参阅如何在Assets视图[中](/help/assets/search-assets-view.md)搜索资源。
 * **设置**：您可以使用&#x200B;**设置**&#x200B;配置Assets视图的各种选项，如元数据表单、报表和分类管理。
 
-<!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
+<!--
+ TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
 -->
 
-<!-- TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
+<!--
+ TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
 -->
 
 您可以打开或隐藏左侧边栏，以增加可用于查看资源的区域。
@@ -86,7 +88,8 @@ ht-degree: 73%
 
 如果您明确地预览某个资源，则 [!DNL Assets view] 将其显示为最近查看的资源。
 
-<!-- TBD: Describe the options.
+<!--
+ TBD: Describe the options.
 
 Explicitly previewed assets are displayed as recently viewed assets. Give screenshot of this.
 Other use cases after previewing.
@@ -98,7 +101,7 @@ Other use cases after previewing.
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

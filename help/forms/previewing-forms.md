@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -29,10 +29,12 @@ ht-degree: 5%
    <td><strong>资源类型</strong><br /> </td>
    <td><strong>可用的预览选项</strong><br /> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Document</td>
    <td>PDF preview</td>
-  </tr>-->
+  </tr>
+  -->
   <tr>
    <td>PDF表单</td>
    <td>包含数据的PDF预览和预览<br /> </td>
@@ -41,10 +43,12 @@ ht-degree: 5%
    <td>自适应表单</td>
    <td>HTML预览和包含数据的HTML预览</td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Form Template</td>
    <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 

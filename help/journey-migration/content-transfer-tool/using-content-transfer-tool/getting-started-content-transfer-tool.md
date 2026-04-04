@@ -4,7 +4,7 @@ description: 了解如何开始使用内容传输工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 13%
@@ -21,10 +21,10 @@ ht-degree: 13%
 >id="aemcloud_ctt_download"
 >title="下载"
 >abstract="可从软件分发门户下载 zip 文件形式的内容转移工具。可通过包管理器将该包安装在源 Adobe Experience Manager (AEM) 实例上。确保下载最新版本。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=zh-Hans" text="发行说明"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="发行说明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="软件分发门户"
 
-可从软件分发门户下载 zip 文件形式的内容转移工具。您可以通过源Adobe Experience Manager (AEM)实例上的[包管理器](/help/implementing/developing/tools/package-manager.md)安装该包。 确保下载最新版本。 有关最新版本的更多详细信息，请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=zh-Hans)。
+可从软件分发门户下载 zip 文件形式的内容转移工具。您可以通过源Adobe Experience Manager (AEM)实例上的[包管理器](/help/implementing/developing/tools/package-manager.md)安装该包。 确保下载最新版本。 有关最新版本的更多详细信息，请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html)。
 
 仅支持版本2.0.0及更高版本，建议使用最新版本。
 
@@ -65,8 +65,8 @@ ht-degree: 13%
 >id="aemcloud_ctt_demo"
 >title="运行内容转移工具"
 >abstract="了解如何使用内容转移工具将内容迁移到 AEM as a Cloud Service（创作/发布）。"
->additional-url="https://video.tv.adobe.com/v/327074/?captions=chi_hans&quality=12&learn=on" text=" 观看演示"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" 观看演示"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 - 使用内容转移工具"
 
 以下部分适用于内容传输工具的新版本。 请阅读以下章节，了解如何使用内容传输工具将内容迁移到AEM as a Cloud Service：
 
@@ -76,7 +76,7 @@ ht-degree: 13%
 >id="aemcloud_ctt_extraction_setup"
 >title="提取设置阶段"
 >abstract="了解如何创建和管理迁移集以及如何复制提取密钥。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 - 使用内容转移工具"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
@@ -118,7 +118,7 @@ ht-degree: 13%
 >id="aemcloud_ctt_populate_migrationset"
 >title="填充迁移集"
 >abstract="创建迁移集后，必须为它填入需从源实例移至 AEM as a Cloud Service 环境的内容。为此，必须在源实例上安装内容转移工具。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=zh-Hans#" text="提取内容"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#" text="提取内容"
 
 要填充您在Cloud Acceleration Manager中创建的迁移集，请在源Adobe Experience Manager (AEM)实例上安装最新版本的内容传输工具。 要了解如何填充迁移集，请参阅此部分。
 
@@ -182,7 +182,8 @@ ht-degree: 13%
 
 1. 填充&#x200B;**创建迁移集**&#x200B;详细信息屏幕中的所有字段后，单击&#x200B;**保存**。
 
-<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
+<!--
+ 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
@@ -194,7 +195,8 @@ ht-degree: 13%
 
 1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   -->
 
 ### 确定迁移集大小 {#migration-set-size}
 
@@ -224,11 +226,13 @@ ht-degree: 13%
 
 1. 如果&#x200B;**检查大小**&#x200B;结果指示磁盘空间不足，或迁移集超出产品限制，或两者都超出，则会显示&#x200B;**警告**&#x200B;状态。
 
-<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+<!--
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
    Below is an example of **Check Size** results with warnings.
  
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+   -->
 
 
 ## 后续内容 {#whats-next}

@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 27%
@@ -261,7 +261,7 @@ Smart Build提供细粒度控制，允许您禁用特定模块的缓存。 此�
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>!true</value>
+      <value>[!NOTE]rue</value>
     </property>
   </activation>
   <modules>

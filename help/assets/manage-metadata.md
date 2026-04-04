@@ -7,7 +7,7 @@ feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets]保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 由于能够从上载到[!DNL Experience Manager Assets]的文件中提取元数据，因此元数据管理与创意工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
@@ -96,7 +96,8 @@ ht-degree: 9%
 
 <!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
 
-<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+<!--
+ The two basic types of metadata are technical metadata and descriptive metadata.
 
 Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
 
@@ -107,7 +108,8 @@ Technical metadata is useful for software applications that are dealing with dig
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
-The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
+-->
 
 ## 元数据和上次修改 {#last-modification}
 
@@ -135,7 +137,7 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用于所有元数据管理的开放标准。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司支持XMP标准，因为它提供了丰富的内容模型。 XMP标准版和[!DNL Experience Manager Assets]的用户有一个强大的平台可以构建。 有关详细信息，请参阅[XMP](https://www.adobe.com/cn/products/xmp.html)。
+[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用于所有元数据管理的开放标准。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司支持XMP标准，因为它提供了丰富的内容模型。 XMP标准版和[!DNL Experience Manager Assets]的用户有一个强大的平台可以构建。 有关详细信息，请参阅[XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 
@@ -151,9 +153,9 @@ ID3标记是针对MP3文件格式而设计的。 有关格式的其他信息：
 
 ### Exif {#exif}
 
-可交换图像文件格式(Exif)是数字摄影中最常用的元数据格式。 它提供了一种以多种文件格式(如JPEG、TIFF、RIFF和WAV)嵌入元数据属性的固定词汇的方法。 Exif将元数据存储为元数据名称和元数据值对。 这些元数据名称 — 值对也称为标记，不要与[!DNL Experience Manager]中的标记混淆。 现代数码相机创建Exif元数据并提供现代图形软件支持。 Exif格式是元数据管理（尤其是图像）的最低通用分母。
+可交换图像文件格式(Exif)是数字摄影中最常用的元数据格式。 它提供了一种以多种文件格式（如JPEG、TIFF、RIFF和WAV）嵌入元数据属性的固定词汇的方法。 Exif将元数据存储为元数据名称和元数据值对。 这些元数据名称 — 值对也称为标记，不要与[!DNL Experience Manager]中的标记混淆。 现代数码相机创建Exif元数据并提供现代图形软件支持。 Exif格式是元数据管理（尤其是图像）的最低通用分母。
 
-Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG)不支持它。
+Exif的一个主要限制是一些流行的图像文件格式（如BMP、GIF或PNG）不支持它。
 
 由Exif定义的元数据字段通常具有技术性质，在描述性元数据管理中的用处有限。 因此，[!DNL Experience Manager Assets]提供Exif属性到[通用元数据架构](metadata-schemas.md)和XMP的映射。
 
@@ -202,7 +204,8 @@ Assets as a [!DNL Cloud Service]可以使用云原生服务为资源生成自定
 >
 >一个文件夹只能应用一个处理配置文件。 要将多个处理应用于文件夹中的资产，请向单个处理配置文件添加更多选项。 例如，单个配置文件可以生成演绎版、对资源进行转码、生成自定义元数据等。 您可以为每个任务应用MIME类型过滤器，以便根据所需的文件格式触发相应的任务。
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Configure limit for bulk metadata update {#configlimit}
 
@@ -239,7 +242,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * CQ — 由[!DNL Experience Manager Assets]使用。
 * DAM - [!DNL Experience Manager Assets]使用。
 * DEX - [Optima SC Description资源管理器](https://www.optimasc.com/products/dex/index.html)是用于Windows操作系统的元数据和文件管理的工具集合。
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/cn/camera-raw/using/introduction-camera-raw.html)。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
 * LR - [!DNL Adobe Lightroom]。
 * MediaPro - [iView媒体专业](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
 * MicrosoftPhoto和MP - Microsoft Photo。
@@ -261,7 +264,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * Exif — 摄像头提供的技术信息，包括GPS位置。
 * CRS - [!DNL Camera Raw]架构。
 * `iptc4xmpCore`和`iptc4xmpExt`。
-* TIFF — 图像元数据(不仅适用于TIFF图像)。
+* TIFF — 图像元数据（不仅适用于TIFF图像）。
 
 ### 打印特定的元数据 {#print-specific-metadata}
 

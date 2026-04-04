@@ -2,9 +2,9 @@
 title: 内容优化代理
 description: 了解如何使用内容优化代理，通过应用自然语言说明创建渠道就绪型变体来转变用户优化和调整资产的方式。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%

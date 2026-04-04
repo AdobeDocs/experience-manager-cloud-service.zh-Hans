@@ -5,7 +5,7 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 8%
@@ -49,7 +49,8 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 ## 使用人工智能生成的元数据 {#using-ai-generated-smart-tags}
 
-<!--[!NOTE]
+<!--
+[!NOTE]
 >
 >The enhanced smart tags capability is available only for the newly uploaded assets.
 -->

@@ -6,7 +6,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 4%
@@ -19,7 +19,8 @@ ht-degree: 4%
 
 您还可以创建自定义提交操作以添加[现成选项](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action)中未包含的功能。 例如，将表单数据与第三方应用程序集成或根据用户输入触发个性化短信通知。
 
-<!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
+<!--
+ ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->
 
 ## 先决条件
@@ -48,7 +49,7 @@ ht-degree: 4%
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
 
    **您的项目已准备就绪！**
 
@@ -173,7 +174,9 @@ ht-degree: 4%
        @Override
        public Map<String, Object> submit(FormSubmitInfo formSubmitInfo) {
        String data = formSubmitInfo.getData();
-       log.info("Using custom submit action service, [data] --> " + data);
+       log.info("Using custom submit action service, [data]
+       -->
+       " + data);
        Map<String, Object> result = new HashMap<>();
        result.put("status", "OK");
        return result;
@@ -215,9 +218,9 @@ ht-degree: 4%
 
    1. 部署更新的代码：
 
-      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
+      通过[现有的全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)触发代码部署。 它通过新的自定义提交操作支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#setup-pipeline)。
+      如果尚未设置管道，请参阅[上的指南如何为AEM Forms as a Cloud Service设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
       ![云部署](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
 ht-degree: 1%
@@ -16,14 +16,14 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以创建并应用主题来使自适应表单<!-- or an interactive communication-->风格化。 主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。主题是独立管理的，没有引用自适应表单<!-- or interactive communication -->。
+您可以创建并应用主题来使自适应表单<!-- or an interactive communication-->风格化。 主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。 主题是独立管理的，无需引用自适应表单。
 
 您可以从[!DNL AEM Forms]软件分发[门户下载并安装](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)引用内容包，以将引用主题和模板导入到您的环境。
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 * 不提供客户端库选项。 无法指定客户端库类别和路径。
 
-* 没有/apps位置的写入和更新权限(Forms-user组没有/apps位置的写入和更新权限)。
+* 没有/apps位置的写入和更新权限（Forms-user组没有/apps位置的写入和更新权限）。
 
 * 在上传在[!DNL Experience Manager Forms] 6.5或更早版本中创建的主题到Cloud Service实例之前，请确保将客户端库位置设置为`etc/clientlibs/fd/themes`。 如果`etc`文件夹中不存在客户端库，请手动将位置更新为`etc/clientlibs/fd/themes`。  您可以在[!DNL Experience Manager Forms] 6.5或以前的版本实例上进行更改。 设置客户端库的位置后，管理员可以将主题上传到Cloud Service实例，或者使用内容传输工具将主题从6.5版本或以前的版本实例迁移到Cloud Service实例。
 
@@ -166,7 +166,8 @@ ht-degree: 1%
    <td>是</td>
    <td>附加到用于标识的主题的标签，用于改进搜索。</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ ht-degree: 1%
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## 关于主题编辑器 {#about-the-theme-editor}
 
-主题编辑器是一个对业务用户和Web设计人员/开发人员友好的界面，它提供了轻松指定各种自适应表单<!-- and interactive communication -->元素样式所需的功能。 创建主题时，该主题将存储为一个单独的实体，如表单<!--  , interactive communications, letters, document fragments, and data dictionaries-->。
+主题编辑器是一个对业务用户和Web设计人员/开发人员友好的界面，它提供了轻松指定各种自适应表单<!-- and interactive communication -->元素样式所需的功能。 创建主题时，该主题将作为单独的实体（如表单）存储。
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 通过主题编辑器，可自定义主题中样式化组件的样式。 您可以自定义表单<!-- or interactive communication -->在设备上的外观。
 
 主题编辑器分为两个面板：
 
-* **画布** — 显示在右侧。 它显示了一个自适应表单<!--  or interactive communication -->的示例，其中所有样式更改都会立即反映。 也可以直接从画布中选择对象来查找与其关联的样式，并编辑这些样式。 顶部的设备分辨率标尺控制画布。 从标尺中选择分辨率断点将显示相应分辨率的样本表单<!--  or interactive communication -->的预览。 下面详细讨论了[的画布](themes.md#using-canvas)。
+* **画布** — 显示在右侧。 它显示了一个自适应表单<!--  or interactive communication -->的示例，其中所有样式更改都会立即反映。 也可以直接从画布中选择对象来查找与其关联的样式，并编辑这些样式。 顶部的设备分辨率标尺控制画布。 从标尺中选择分辨率断点将显示相应分辨率的样本表单预览。 下面详细讨论了[的画布](themes.md#using-canvas)。
 
 * **侧栏***显示在左侧。 它包括以下项：
 
@@ -282,7 +285,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->该主题首先使用表单<!-- or interactive communication-->创建，然后应用于不同的表单<!-- or interactive communications-->。 主题创建中使用的断点可能与应用主题的表单<!-- or interactive communication -->不同。 CSS媒体查询基于主题创建中使用的表单<!-- or interactive communication -->，而不是应用主题的表单<!-- or interactive communication -->。
+>主题首先使用表单创建，然后应用于不同的表单。 主题创建中使用的断点可能与应用主题的表单不同。 CSS媒体查询基于主题创建中使用的表单，而不是应用主题的表单。
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### 选择对象时侧栏中的样式属性上下文更改 {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -350,7 +355,7 @@ ht-degree: 1%
 
 ### 使用画布 {#using-canvas}
 
-主题是使用现成表单创建的，或使用您选择的表单<!-- or interactive communication -->创建的。 画布显示表单或<!-- interactive communication -->的预览，该表单或用于使用主题中指定的自定义项创建主题。 表单上方的标尺用于根据设备的显示大小确定布局。
+主题是使用现成表单创建的，或使用您选择的表单<!-- or interactive communication -->创建的。 画布显示表单的预览，或用于使用主题中指定的自定义项创建主题。 表单上方的标尺用于根据设备的显示大小确定布局。
 
 在“画布”工具栏中，您会看到：
 
@@ -457,7 +462,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL 数字框小组件]**。
 1. 侧栏标题将更改为数值框小组件，并显示用于自定义其外观的选项。
-使用侧边栏中的&#x200B;**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
+使用侧边栏中的**[!UICONTROL Dimension和位置]**&#x200B;选项自定义组件的大小。 确保状态为&#x200B;**[!UICONTROL 默认值]**。
 
 不要选择&#x200B;**[!UICONTROL 数值框小组件]**，请在组件工具栏中选择&#x200B;**[!UICONTROL 字段小组件]**，然后执行上述步骤。 为&#x200B;**[!UICONTROL 字段小组件]**&#x200B;选项选择维度时，除数字框之外的所有文本框都具有相同的大小。
 
@@ -488,7 +493,7 @@ ht-degree: 1%
 1. 使用侧边栏自定义所选显示大小的主题中的表单<!-- or interactive communication -->组件的样式。
 1. 确保已保存自定义。
 
-您可以为多个设备设置表单<!-- or interactive communication -->组件的样式。 桌面和移动设备的表单<!-- and interactive communication -->组件可以具有完全不同的样式。
+您可以为多个设备设置表单<!-- or interactive communication -->组件的样式。 桌面和移动设备的表单组件可以具有完全不同的样式。
 
 ### 在主题中使用Web Fonts {#using-web-fonts-in-a-theme}
 
@@ -568,14 +573,16 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 您还可以在创建自适应表单时为其定义主题。
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### 在运行时更改表单主题 {#change-theme-of-a-form-at-runtime}
 
@@ -642,7 +649,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 * 如果从其他主题添加资产，并且移动或删除了其他主题，则您可能会遇到当前主题的问题。 建议您避免浏览和添加其他主题中的资产。
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -654,7 +662,8 @@ You can use the theme configuration service to add more fonts to the theme edito
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     您还可以创建主题，创建主题的副本，然后修改复制的主题中提供的样式，以供类似用例使用。
     请参阅[使用主题获取特定外观](#specific-af-appearance)
     
@@ -666,9 +675,11 @@ You can use the theme configuration service to add more fonts to the theme edito
     
     您可以在表单&lt;！中使用“样式”模式来设置组件的样式 — 或交互式通信 — >处理表单时的多渠道编辑器。 使用样式模式更改表单组件样式将覆盖主题中指定的样式。 如果要更改特定表单的某些组件的样式，请参阅[组件的内联样式](inline-style-adaptive-forms.md)。
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **更改容器面板布局宽度**
 

@@ -4,7 +4,7 @@ description: 了解如何在 Cloud Manager 中一键快速创建 Edge Delivery S
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 64%
@@ -17,9 +17,11 @@ ht-degree: 64%
 
 这种自动化有助于减少设置初始 Site 所需的手动工作量。它可确保无缝的工作流和可扩展性，并在管理边缘内容时提高团队的绩效。
 
-<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+<!--
+ Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
->[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
+-->
 
 
 

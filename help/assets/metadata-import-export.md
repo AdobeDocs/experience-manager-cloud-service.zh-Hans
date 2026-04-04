@@ -6,7 +6,7 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 10%
@@ -34,7 +34,7 @@ ht-degree: 10%
    | 批量大小 | 要为其导入元数据的批次中的资源数。 默认值为 50。最大值为100。 |
    | 字段分隔符 | 默认值为`,` （逗号）。 您可以指定任何其他字符。 |
    | 多值分隔符 | 元数据值的分隔符。 默认值为`\|`。 |
-   | 启动工作流 | 默认为False。 当设置为`true`时，默认设置对DAM元数据回写工作流(将元数据写入二进制XMP数据)有效。 启用工作流会减慢系统速度。 |
+   | 启动工作流 | 默认为False。 当设置为`true`时，默认设置对DAM元数据回写工作流（将元数据写入二进制XMP数据）有效。 启用工作流会减慢系统速度。 |
    | 资产路径列名称 | 定义包含资产的CSV文件的列名称。 |
 
 1. 从工具栏中选择&#x200B;**[!UICONTROL 导入]**。 导入元数据后，会向您的“通知”收件箱发送通知。 导航到资源属性页面，并验证是否正确导入了资源的元数据值。
@@ -44,7 +44,8 @@ ht-degree: 10%
    * 日期格式取决于列标题及其中的格式。 例如，如果日期为格式`yyyy-MM-dd'T'HH:mm:ssXXX`的投诉，则相应的列标题必须为`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`。
    * 默认日期格式为`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。
 
-<!-- Hidden via cqdoc-17869>
+<!--
+ Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >

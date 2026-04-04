@@ -5,7 +5,7 @@ exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 打开产品驾驶舱 {#opening-product-cockpit}
 
-访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch(搜索Commerce)或打开`https://<yourAEMInstance>/commerce.html`。
+访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch（搜索Commerce）或打开`https://<yourAEMInstance>/commerce.html`。
 
 ![AEM菜单](../assets/aem-menu.png)
 
@@ -85,6 +85,6 @@ ht-degree: 1%
 
 ### AEM“内容”选项卡 {#content-tabs}
 
-这些按AEM内容类型(体验片段、内容片段、关联的Assets)分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
+这些按AEM内容类型（体验片段、内容片段、关联的Assets）分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
 
 ![内容属性](../assets/content-properties.png)

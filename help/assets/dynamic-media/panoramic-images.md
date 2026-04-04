@@ -6,7 +6,7 @@ feature: Panoramic Images
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 2%
@@ -26,21 +26,24 @@ ht-degree: 2%
 要使上传的资产符合要与全景图像查看器一起使用的球面全景图像的条件，该资产必须具有以下一项或两项之一：
 
 * 长宽比为2。
-<!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
-  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
+<!--
+  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
+  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
+  -->
 * 已用关键字`equirectangular`、`spherical`和`panorama`或`spherical`和`panoramic`标记。 请参阅[使用标记](/help/sites-cloud/authoring/sites-console/tags.md)。
 
 纵横比和关键字条件都适用于资产详细信息页面和`Panoramic Media` WCM组件的全景资产。
 
 要上传用于全景图像查看器的资源，请参阅[上传资源](/help/assets/manage-digital-assets.md#uploading-assets)。
 
-<!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
+<!--
+  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
 ## Configuring Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
 
 For the Panoramic Image viewer to work properly within AEM, you must synchronize the Panoramic Image viewer presets with Dynamic Media Classic (Scene7) and Dynamic Media Classic (Scene7)-specific metadata so the viewer presets get updated in the JCR. To accomplish this, configure Dynamic Media Classic (Scene7) in the following manner:
 
-1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started), then sign in to your account.
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
 1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.

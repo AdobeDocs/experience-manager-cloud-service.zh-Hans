@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: 在VRE中调用服务增强功能，使用调用服务填充下拉选项，使用调用服务输出设置可重复面板，使用调用服务输出设置面板，使用调用服务的输出参数验证其他字段。
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
 source-wordcount: '2156'
 ht-degree: 1%
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 您还可以添加多个规则来处理来自&#x200B;**调用服务**&#x200B;操作的不成功响应。
 
-**在服务器**&#x200B;上启用错误验证&rbrace;功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
+**在服务器**&#x200B;上启用错误验证}功能允许作者在设计要在服务器上运行的自适应表单时添加验证。
 
 ## 在规则编辑器中使用调用服务的先决条件
 
@@ -172,7 +172,7 @@ ht-degree: 1%
 
 ![结果](/help/forms/assets/output1.png)
 
-> 
+>[!NOTE]
 >
 > 也可以通过调用服务、解析JSON响应并应用自定义函数来动态填充下拉列表选项。 有关详细信息，请参阅[此部分](#retrieve-property-values-from-a-json-array)。
 

@@ -5,8 +5,8 @@ keywords: 如何选择自适应表单的提交操作，将自适应表单与 sha
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | 版本 | 文章链接 |
 |---------|-----------------------------|
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | 本文 |
@@ -60,10 +60,12 @@ ht-degree: 100%
 - [提交到 Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 - [提交到电子表格](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡，配置在通用编辑器中创建的表单的提交操作。
 

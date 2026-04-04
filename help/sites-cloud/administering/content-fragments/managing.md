@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 62%
@@ -41,7 +41,7 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
@@ -299,7 +299,7 @@ ht-degree: 62%
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -311,7 +311,7 @@ FolderB
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -320,7 +320,7 @@ FolderB
 
 FolderC
     Copy_of_FragmentA
-    | 
+    |
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
@@ -333,7 +333,7 @@ FolderC
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 
@@ -346,7 +346,7 @@ FolderB
 ```xml
 FolderA 
     FragmentA (inside FolderA) 
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA) 
 
 FolderB 
@@ -355,7 +355,7 @@ FolderB
 
 FolderC
    Copy_of_FragmentA
-   | 
+   |
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```

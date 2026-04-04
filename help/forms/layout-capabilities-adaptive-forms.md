@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 5%
@@ -16,20 +16,22 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
 | AEM as a Cloud Service（基础组件） | 本文 |
 
 [!DNL Adobe Experience Manager]允许您创建易于使用的自适应Forms，为最终用户提供动态体验。 表单布局控制项或组件在自适应表单中的显示方式。
 
-<!-- ## Prerequisite knowledge {#prerequisite-knowledge}
+<!--
+ ## Prerequisite knowledge {#prerequisite-knowledge}
 
-Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms. -->
+Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms.
+-->
 
 ## 布局类型 {#types-of-layouts}
 
@@ -73,7 +75,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![使用向导布局的表单](assets/wizard-layout2.png)
 
-### [!UICONTROL 可折叠项] {#layout-for-accordion-design}
+### [!UICONTROL 折叠] {#layout-for-accordion-design}
 
 使用此布局，您可以将&#x200B;**[!UICONTROL 面板自适应表单]**&#x200B;组件放在具有折叠样式导航的面板中。 使用此布局，您还可以创建可重复的面板。 可重复面板允许您根据需要动态添加或移除面板。 您可以定义面板重复的最小和最大次数。 此外，可以根据面板项中提供的信息来动态确定面板的标题。
 
@@ -126,7 +128,8 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 {{see-also}}
 
 
-<!-- ## Toolbar layouts {#toolbar-layouts}
+<!--
+ ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
 
@@ -156,6 +159,7 @@ For the Mobile layout, you can add action buttons using icons.
 
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
-Mobile fixed layout for toolbar-->
+Mobile fixed layout for toolbar
+-->
 
 

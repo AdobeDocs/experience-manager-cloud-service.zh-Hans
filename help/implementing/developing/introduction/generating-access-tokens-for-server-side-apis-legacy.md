@@ -5,7 +5,7 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 0%
@@ -18,10 +18,12 @@ ht-degree: 0%
 
 下面介绍了服务器到服务器流程，以及简化的开发流程。 AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console)用于生成身份验证过程所需的令牌。
 
-<!-- ERROR: Not Found (HTTP error 404)
+<!--
+ ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hans#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+-->
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
@@ -67,7 +69,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->IMS组织管理员(通常是通过Cloud Manager配置环境的用户)应同时是AEM Author上的AEM Users或AEM Administrators产品配置文件的成员，可访问Developer Console。 然后，他们必须单击&#x200B;**生成服务凭据**&#x200B;按钮，以便生成凭据，然后由对AEM as a Cloud Service环境具有管理员权限的用户检索。 如果IMS组织管理员未完成此任务，则会有消息通知他们需要IMS组织管理员角色。
+>IMS组织管理员（通常是通过Cloud Manager配置环境的用户）应同时是AEM Author上的AEM Users或AEM Administrators产品配置文件的成员，可访问Developer Console。 然后，他们必须单击&#x200B;**生成服务凭据**&#x200B;按钮，以便生成凭据，然后由对AEM as a Cloud Service环境具有管理员权限的用户检索。 如果IMS组织管理员未完成此任务，则会有消息通知他们需要IMS组织管理员角色。
 
 ### 在非AEM服务器上安装AEM服务凭据 {#install-the-aem-service-credentials-on-a-non-aem-server}
 

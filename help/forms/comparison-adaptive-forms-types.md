@@ -1,13 +1,13 @@
 ---
 title: 自适应Forms核心组件与Edge Delivery Services Forms与基础组件
-description: 对AEM Forms创作方法(核心组件、Edge Delivery Services Forms和基础组件)进行技术比较。 架构、渲染、功能和用例。
+description: 对AEM Forms创作方法（核心组件、Edge Delivery Services Forms和基础组件）进行技术比较。 架构、渲染、功能和用例。
 keywords: 自适应表单比较，核心组件， foundation组件， edge delivery services forms， AEM forms比较，表单生成器比较
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: adaptive-forms-comparison
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 9%
@@ -146,7 +146,7 @@ EDS Forms专门使用客户端渲染：
 
 EDS Forms支持两种创作方法：
 
-#### Universal Editor （所见即所得）
+####  Universal Editor （所见即所得）
 
 - 可视化拖放界面
 - 使用设备模拟的实时预览
@@ -223,7 +223,7 @@ EDS Forms支持两种创作方法：
 - 工作表命名限制为`helix-default`和`shared-aem`
 - 最适合低复杂性表单
 - 有限的规则功能
-- 无AEM工作流(不提交AEM Publish)
+- 无AEM工作流（不提交AEM Publish）
 - 无表单数据模型集成
 
 **通用编辑器：**
@@ -311,7 +311,7 @@ EDS Forms支持两种创作方法：
 
 ### 限制
 
-- **发布**：仅限AEM(无Edge Delivery Services或Headless API)
+- **发布**：仅限AEM（无Edge Delivery Services或Headless API）
 - **性能**：标准性能（未针对Lighthouse分数进行优化）
 - **架构**：不符合BEM的旧版架构
 - **打开Source**：不是开源
@@ -345,7 +345,7 @@ EDS Forms支持两种创作方法：
 | **正在发布** | AEM + Edge Delivery + Headless API | 仅 Edge Delivery Services | 仅限 AEM |
 | **创作** | AEM Forms 编辑器 | 通用编辑器或电子表格 | AEM Forms 编辑器 |
 | **性能** | 良好（比Foundation改进） | 优秀（Lighthouse得分较高） | 标准 |
-| **组件计数** | 30 | 20+(所有HTML5输入类型) | 40+ |
+| **组件计数** | 30 | 20+（所有HTML5输入类型） | 40+ |
 | **打开Source** | 是(GitHub) | 是 | 否 |
 | **表单数据模型** | ✅ | ✅ （仅限通用编辑器） | ✅ |
 | **JSON架构** | ✅ | 有限制 | ✅ |
@@ -356,7 +356,7 @@ EDS Forms支持两种创作方法：
 | **Adobe Sign** | ❌ | 通过集成 | ✅ （本机块） |
 | **记录文档** | ✅ | ✅ | ✅ |
 | **验证码选项** | reCAPTCHA、hCaptcha | reCAPTCHA Enterprise、hCaptcha | reCAPTCHA， hCaptcha， Turnstile |
-| **AEM工作流** | ✅ | ✅ (通过AEM发布) | ✅ |
+| **AEM工作流** | ✅ | ✅ （通过AEM发布） | ✅ |
 | **Headless API** | ✅ （自动） | ❌ | ❌ |
 | **辅助功能** | 符合WCAG | 符合WCAG | 基本 |
 | **部署速度** | 基于管道 | 即时（提交到实时） | 基于管道 |
@@ -384,7 +384,7 @@ EDS Forms支持两种创作方法：
 
 ### 基础组件到核心组件
 
-- **工具**： AEM现代化工具(Forms转化实用程序)
+- **工具**： AEM现代化工具（Forms转化实用程序）
 - **工作量**：中高取决于表单复杂性
 - **注意事项**：
    - 规则需要手动重新创建

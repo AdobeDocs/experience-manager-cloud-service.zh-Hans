@@ -4,7 +4,7 @@ description: 扩展Adobe Experience Manager as a Cloud Service的体验片段
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 0%
@@ -130,7 +130,8 @@ The only additional configuration is to ensure that the components are [allowed 
 
 ### 默认链接重写 {#default-link-rewriting}
 
-<!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
+<!--
+Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
 使用“导出到目标”功能，您可以：
@@ -145,7 +146,7 @@ The only additional configuration is to ensure that the components are [allowed 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-链接外部化器用于确定在创建Target选件的HTML版本(随后将发送到Adobe Target)时所需的正确URL。 此过程是必需的，因为Adobe Target要求可以公开访问Target HTML选件中的所有链接。 这意味着链接引用的任何资源以及体验片段本身必须先发布，然后才能使用。
+链接外部化器用于确定在创建Target选件的HTML版本（随后将发送到Adobe Target）时所需的正确URL。 此过程是必需的，因为Adobe Target要求可以公开访问Target HTML选件中的所有链接。 这意味着链接引用的任何资源以及体验片段本身必须先发布，然后才能使用。
 
 默认情况下，构造Target HTML选件时，会向AEM中的自定义Sling选择器发送请求。 此选择器名为`.nocloudconfigs.html`。 顾名思义，它创建了体验片段的纯HTML渲染，但不包括云配置（这会是多余的信息）。
 

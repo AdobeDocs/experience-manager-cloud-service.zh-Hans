@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 2%
@@ -31,9 +31,9 @@ ht-degree: 2%
 
 在AEM中，您可以创建各种类型的内容，并将它们链接到产品目录。 可以轻松发现和使用相关内容，从而提高工作效率。
 
-### 资产 {#assets}
+### Assets {#assets}
 
-从较高层面来看，有两种类型的资产与产品相关：产品和营销。 产品资产由商家管理，并专注于显示产品（通常在中性背景前）。 资产在商务解决方案或AEM Assets中进行管理(与Assets集成到Commerce/PIM解决方案)。
+从较高层面来看，有两种类型的资产与产品相关：产品和营销。 产品资产由商家管理，并专注于显示产品（通常在中性背景前）。 资产在商务解决方案或AEM Assets中进行管理（与Assets集成到Commerce/PIM解决方案）。
 
 营销资产与推广和使用营销所拥有的产品相关。 例如，显示特定上下文中的多个产品(“shop the look”)、“outdoor fall collection”)或操作方法pdf。 CIF提供了一种将任何AEM资源与产品目录对象关联的简便方法。
 
@@ -85,9 +85,9 @@ ht-degree: 2%
 
 ![pem CF对话框](assets/pem-dialog-cf.png)
 
-此对话框会重用核心组件内容片段对话框。 在其他资源下查找更多信息。 唯一的区别是配置内容片段模型中的标识符字段(产品SKU或类别UID)的&#x200B;**Link Element**&#x200B;属性。
+此对话框会重用核心组件内容片段对话框。 在其他资源下查找更多信息。 唯一的区别是配置内容片段模型中的标识符字段（产品SKU或类别UID）的&#x200B;**Link Element**&#x200B;属性。
 
-立即预览具有关联内容片段和/或体验片段的产品页面。 AEM渲染页面时，会根据类型（内容或体验片段）、标识符和体验片段的占位符名称对每个占位符进行查找。 AEM使用URL解析器获取标识符(SKU用于产品，UID用于类别)。 如果返回体验或内容片段，则会将其呈现到占位符位置，否则会忽略占位符。
+立即预览具有关联内容片段和/或体验片段的产品页面。 AEM渲染页面时，会根据类型（内容或体验片段）、标识符和体验片段的占位符名称对每个占位符进行查找。 AEM使用URL解析器获取标识符（SKU用于产品，UID用于类别）。 如果返回体验或内容片段，则会将其呈现到占位符位置，否则会忽略占位符。
 
 ![pem结果](assets/pem-result.png)
 

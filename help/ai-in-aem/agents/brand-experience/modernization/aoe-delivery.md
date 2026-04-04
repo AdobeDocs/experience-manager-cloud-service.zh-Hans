@@ -2,9 +2,9 @@
 title: Experience Modernization Agent的AOE交付
 description: 了解Adobe代理结果工程师(AOE)，以及他们如何帮助您成功使用Experience现代化代理。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
-source-git-commit: 8c3d14fd29b289bbd8538fd5d81b75bddbfa9082
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%

@@ -8,8 +8,8 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 1. 选择内容的语言根并让 AEM 根据内容路径自动创建翻译项目。
 1. 创建一个空项目并手动选择要添加到翻译项目的内容
 
-两者都是有效的方法，通常只因执行翻译的角色而异：
+两者都是有效的方法，通常只因执行翻译的用户画像而异：
 
 * 翻译项目经理 (TPM) 通常需要灵活地手动选择要添加到翻译项目的内容。
 * 如果内容所有者还负责翻译，则让 AEM 根据所选内容路径自动创建项目通常更轻松。

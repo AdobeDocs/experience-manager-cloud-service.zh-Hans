@@ -6,7 +6,7 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 81%
@@ -31,7 +31,8 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 * 媒体项目
 * 翻译项目
 
-<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+<!--
+ Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
 * Product Photo Shoot Project 
 -->
 

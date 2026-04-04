@@ -4,7 +4,7 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 Cloud Man
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6c98a27889257a6d8befa04a2b2c4e5a7e6e49f2
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 20%
@@ -34,9 +34,9 @@ AEM as a Cloud Service中Cloud Manager 2026.4.0的发布日期是2026年4月2日
 
   请参阅文档[将MCP用于AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)。
 
-  请参阅教程[Cloud Manager MCP服务器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#)。
+  请参阅教程[Cloud Manager MCP服务器](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#)。
 
-* 使用模块缓存更快地生成&#x200B;**&#x200B;**
+* 使用模块缓存更快地生成&#x200B;****
 
   新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量非生产管道和开发全栈非生产管道。
 
@@ -78,6 +78,7 @@ Cloud Manager引入了两项旨在支持现代交付体系结构的功能。
 有关详细信息，请参阅[在Cloud Manager中创建Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site)。
 
 * **灵活的发布层配置**
+
 Cloud Manager现在允许您配置项目是否需要发布层。 这种灵活性允许您设置更好地匹配所选交付架构的环境。
 
 有关详细信息，请参阅[灵活发布层(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)。
@@ -95,7 +96,8 @@ Cloud Manager现在允许您配置项目是否需要发布层。 这种灵活性
 
 要加入Beta，请使用您的Adobe组织ID和项目ID向[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)发送电子邮件。
 
-<!-- OLD
+<!-- 
+OLD
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -107,7 +109,8 @@ Embed custom experiences in Experience Hub to extend and personalize your organi
 Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
 -->
 
-<!-- OLD
+<!-- 
+OLD
 ### Support for Custom Author Domains in Cloud Service
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.

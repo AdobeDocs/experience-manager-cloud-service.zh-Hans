@@ -2,9 +2,9 @@
 title: 通信创建作业
 description: 了解Experience Production Agent的通信创建作业以及如何使用自然语言创建交互式通信。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [交互式通信](/help/forms/introduction-to-interactive-communication.md)是专为业务通信而设计的个性化数据驱动文档，例如帐户报表、政策文档、账单、欢迎套件和福利通知。 与收集用户输入的表单不同，交互式通信会生成具有动态、特定于收件人的内容的输出文档。
 
-通信创建作业是[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)的一部分，该代理设计为使用自然语言提示开发交互式通信。 此作业会自动为打印生成数据驱动的个性化通信(PDF格式)。 这项工作通过AI Assistant呈现。
+通信创建作业是[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)的一部分，该代理设计为使用自然语言提示开发交互式通信。 此作业会自动为打印生成数据驱动的个性化通信（PDF格式）。 这项工作通过AI Assistant呈现。
 
 通信创建工作的一些主要优势包括：
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 * *使用位于https://[aem-author-url]/path/to/pdf/file*&#x200B;的模板为贷款对帐单创建通信
 * *从PDF创建通信，网址为https://[aem-author-url]/path/to/pdf/file*
 * *从位于https://[aem-author-url]/path/to/image/file*&#x200B;的图像文件创建通信
-* 使用PDF文件(位于https://[aem-author-url]/path/to/pdf/file)创建书信
+* 使用PDF文件（位于https://[aem-author-url]/path/to/pdf/file）创建书信
 
 ## 优化您的通信 {#refine-with-ic-editor}
 

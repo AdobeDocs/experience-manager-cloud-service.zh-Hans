@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4995'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 视频格式是组织数字资产的重要组成部分。 [!DNL Adobe Experience Manager]提供了成熟的产品和功能，可在创建视频资产后管理其整个生命周期。
@@ -37,8 +37,10 @@ ht-degree: 6%
 1. 从工具栏中单击&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 文件]**。 <br>或者，在用户界面上拖动文件。
 了解有关[在](manage-digital-assets.md#uploading-assets)中上传资产[!DNL Experience Manager Assets]的更多信息。
 
-<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
-1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+<!--
+ 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
+-->
 
 ### 预览视频资产
 
@@ -180,7 +182,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 >[!CAUTION]
 >
->请确保您之前已在YouTube *中设置了一个或多个渠道*，然后在Experience Manager的YouTube设置下添加渠道(请参阅下面的[在Experience Manager中设置YouTube](#setting-up-youtube-in-aem))。 如果无法设置渠道，则不会警告您不存在任何现有渠道。 但是，在添加频道时，Google验证仍会进行，但无法选择发送视频的频道。
+>请确保您之前已在YouTube *中设置了一个或多个渠道*，然后在Experience Manager的YouTube设置下添加渠道（请参阅下面的[在Experience Manager中设置YouTube](#setting-up-youtube-in-aem)）。 如果无法设置渠道，则不会警告您不存在任何现有渠道。 但是，在添加频道时，Google验证仍会进行，但无法选择发送视频的频道。
 
 **要创建YouTube频道：**
 
@@ -206,7 +208,8 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 >
 >配置Cloud Service后，无需进行其他配置即可在此时启用YouTube发布复制代理。 原因是在保存Cloud Service配置时启用了此设置。
 
-<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
+<!--
+ ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, select **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
@@ -214,7 +217,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. On the Agents of Author page, select **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, select **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Select **[!UICONTROL OK]**. -->
+1. Select **[!UICONTROL OK]**.
+-->
 
 ### 在Experience Manager中设置YouTube {#setting-up-youtube-in-aem}
 
@@ -331,19 +335,19 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在YouTube发布标题下，选择&#x200B;**[!UICONTROL YouTube类别]**。
 1. 在页面右侧的&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，执行以下操作：
 
-   * 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;文本字段中，选择并复制该值。
+   * 在&#x200B;**[!UICONTROL 映射到属性]**文本字段中，选择并复制该值。
 将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
-   * 在&#x200B;**[!UICONTROL 选择]**&#x200B;下，选择并复制您要使用的默认值（如“人员”和“博客”或“科学和技术”）。
+   * 在&#x200B;**[!UICONTROL 选择]**下，选择并复制您要使用的默认值（如“人员”和“博客”或“科学和技术”）。
 将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
 1. 在YouTube发布标题下，选择&#x200B;**[!UICONTROL YouTube隐私]**。
 1. 在页面右侧的&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，执行以下操作：
 
-   * 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;文本字段中，选择并复制该值。
+   * 在&#x200B;**[!UICONTROL 映射到属性]**文本字段中，选择并复制该值。
 将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
-   * 在&#x200B;**[!UICONTROL 选择]**&#x200B;下，选择并复制您要使用的默认值。 请注意，“选择”成对分组为两个组。 该对中的底部字段是您要复制的默认值，例如public、unlisted或private。
+   * 在&#x200B;**[!UICONTROL 选择]**下，选择并复制您要使用的默认值。 请注意，“选择”成对分组为两个组。 该对中的底部字段是您要复制的默认值，例如public、unlisted或private。
 将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
 1. 在元数据架构编辑器页面的右上角附近，选择&#x200B;**[!UICONTROL 取消]**。
@@ -411,7 +415,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在视频属性页面的右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 在工具栏上，选择&#x200B;**[!UICONTROL 快速发布]**。
 
-   另请参阅[在Experience Manager Sites中使用发布管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=zh-Hans#page-authoring)。
+   另请参阅[在Experience Manager Sites中使用发布管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
 
    您可以选择在YouTube渠道中验证已发布的视频。
 
@@ -546,7 +550,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 1. 您会收到有关已中止或失败的工作流作业的电子邮件通知。 这些电子邮件通知可由管理员配置。 请参阅[配置电子邮件通知](#configuring-e-mail-notifications)。
 
-<!-- EMAIL NOT AVAILABLE IN SKYLINE
+<!--
+ EMAIL NOT AVAILABLE IN SKYLINE
 
 #### Configuring e-mail notifications {#configuring-e-mail-notifications}
 

@@ -9,7 +9,7 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 10%
@@ -55,8 +55,10 @@ Dynamic Media不支持以下Web浏览器和操作系统的组合。
 
 ## 停止对Secure Socket Layer 2.0和3.0以及Transport Layer Security 1.0和1.1的支持 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+ CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 自2024年4月30日起，Adobe Dynamic Media将停止支持以下内容：
 

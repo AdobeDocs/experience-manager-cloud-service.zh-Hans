@@ -8,8 +8,8 @@ exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 AEM Site 是一个用于创建、管理和交付数字体验的综合平台。内容作者使用简单、所见即所得的拖放工具，在直观的编辑器中创建页面。此编辑器以网站访客的视角呈现内容。
 
-可在 Site 控制台中轻松管理构成您体验的页面，该控制台以易于理解的层级为您提供内容概览，并允许轻松重新排列、复制和发布内容。
+可在 Site 控制台中轻松管理构成您体验的页面，该控制台以易于理解的层级为您提供内容概述，并允许轻松重新排列、复制和发布内容。
 
 >[!TIP]
 >

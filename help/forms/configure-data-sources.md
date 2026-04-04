@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2390'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | 本文 |
 
 ![数据集成](do-not-localize/data-integeration.png)
@@ -29,9 +29,9 @@ ht-degree: 4%
 * RESTful Web服务
 * 基于SOAP的Web服务
 * OData服务（版本4.0）
-* Microsoft® Dynamics
+* ® Dynamics
 * Salesforce
-* Microsoft® Azure Blob存储
+* ® Azure Blob Storage
 
 数据集成支持现成的OAuth2.0（[授权代码](https://oauth.net/2/grant-types/authorization-code/)、[客户端凭据](https://oauth.net/2/grant-types/client-credentials/)）、基本身份验证和API密钥身份验证类型，并允许实施自定义身份验证以访问Web服务。 在[!DNL Experience Manager] as a Cloud Service中配置了RESTful、基于SOAP和OData服务，而在[!DNL Experience Manager] Web控制台中配置了关系数据库的JDBC和[!DNL Experience Manager]用户配置文件的连接器。
 
@@ -41,8 +41,8 @@ ht-degree: 4%
 
 在使用[!DNL Experience Manager] Web控制台配置配置关系数据库之前，必须：
 
-* [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hans)，因为默认情况下已禁用端口。
-* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hans#mysql-driver-dependencies)中添加JDBC驱动程序依赖项。
+* [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下已禁用端口。
+* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies)中添加JDBC驱动程序依赖项。
 
 
 ### 配置关系数据库的步骤
@@ -61,7 +61,7 @@ ht-degree: 4%
 
    **在何处查找此信息？**
 
-   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hans#accessing-git)”。
+   有关查找这些详细信息的分步说明，请参阅Adobe Experience League文章“[访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)”。
 
    当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的应用程序命名。
 
@@ -96,7 +96,7 @@ ht-degree: 4%
 }
 ```
 
-> 
+>[!NOTE]
 >
 > 将占位符（如`<application folder>`、`<hostname>`、`<database>`、`<your-db-username>`和`<your-db-password>`）替换为实际值。
 
@@ -117,7 +117,7 @@ git push
 
 >[!NOTE]
 >
-> 有关更多详细信息，请参阅使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hans)SQL连接。
+> 有关更多详细信息，请参阅使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)SQL连接。
 
 <!--
 1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
@@ -149,7 +149,8 @@ git push
 
 Now, you can use the configured relational database with your Form Data Model (FDM). 
 
-<!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
+<!--
+ ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
@@ -168,7 +169,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Select **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration.
+-->
 
 ## 为云服务配置配置文件夹 {#cloud-folder}
 
@@ -179,7 +181,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 要为云服务配置配置文件夹，请执行以下操作：
 
 1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
-   * 有关详细信息，请参阅[配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=zh-Hans)文档。
+   * 有关详细信息，请参阅[配置浏览器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html)文档。
 1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤为云服务配置创建和配置其他文件夹。
 
    1. 在&#x200B;**[!UICONTROL 配置浏览器]**&#x200B;中，选择`global`文件夹并选择&#x200B;**[!UICONTROL 属性]**。
@@ -208,8 +210,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
 1. 为RESTful服务指定以下详细信息：
 
-   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger URL]定义文件的[!DNL &#x200B; Swagger]或从本地文件系统上传[!DNL Swagger]文件。
-   * 根据[!DNL &#x200B; Swagger] Source输入，以下字段已预填充值：
+   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger URL]定义文件的[!DNL  Swagger]或从本地文件系统上传[!DNL Swagger]文件。
+   * 根据[!DNL  Swagger] Source输入，以下字段已预填充值：
 
       * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于[!DNL Swagger]源中定义的方案。
       * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
@@ -233,8 +235,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
 1. 为RESTful服务指定以下详细信息：
 
-   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger 3.0 URL]定义文件的[!DNL &#x200B; Swagger]或从本地文件系统上传[!DNL Swagger]文件。
-   * 根据[!DNL &#x200B; Swagger] Source输入，显示与目标服务器的连接信息。
+   * 从[!UICONTROL Swagger Source]下拉列表中选择URL或文件，并相应地指定[!DNL Swagger 3.0 URL]定义文件的[!DNL  Swagger]或从本地文件系统上传[!DNL Swagger]文件。
+   * 根据[!DNL  Swagger] Source输入，显示与目标服务器的连接信息。
    * 选择身份验证类型 — None、OAuth2.0（[授权代码](https://oauth.net/2/grant-types/authorization-code/)、[客户端凭据](https://oauth.net/2/grant-types/client-credentials/)）、基本身份验证、API密钥或自定义身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
    如果选择&#x200B;**[!UICONTROL API密钥]**&#x200B;作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从&#x200B;**[!UICONTROL 位置]**&#x200B;下拉列表中选择其中一个选项，并在&#x200B;**[!UICONTROL 参数名称]**&#x200B;字段中相应地指定标头名称或查询参数。
@@ -390,7 +392,7 @@ OData服务由其服务根URL标识。 要在[!DNL Experience Manager] as a Clou
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
@@ -413,7 +415,8 @@ To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure
 
 -->
 
-<!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
+<!--
+## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
 When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
@@ -424,7 +427,8 @@ When you enable mutual authentication for form data model (FDM), both the data s
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
    1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
-1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
+1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.
+-->
 
 ## 后续步骤 {#next-steps}
 

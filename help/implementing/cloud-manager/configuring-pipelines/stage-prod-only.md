@@ -8,7 +8,7 @@ hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 49%
@@ -17,8 +17,10 @@ ht-degree: 49%
 
 # 仅分离阶段管道和仅生产管道 {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 您可以使用专用管道拆分暂存和生产部署。
 
@@ -76,7 +78,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
    添加非生产管道对话框中的![配置选项卡](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
-1. 在&#x200B;**Source代码**&#x200B;选项卡上，选择&#x200B;**全栈代码**。 此选项构建和部署整个AEM应用程序(后端、Dispatcher/Web层配置以及存储库中的任何前端模块)。
+1. 在&#x200B;**Source代码**&#x200B;选项卡上，选择&#x200B;**全栈代码**。 此选项构建和部署整个AEM应用程序（后端、Dispatcher/Web层配置以及存储库中的任何前端模块）。
 
 1. 在&#x200B;**符合条件的部署环境**&#x200B;下拉列表中，选择&#x200B;**暂存**&#x200B;环境作为管道的部署环境。 选择暂存将创建一个专用于暂存环境的管道（生产升级通过单独的管道进行）。
 
@@ -113,7 +115,8 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 您可以像启动任何其他管道[一样启动新管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)。 您还可以直接从仅限暂存管道的执行详细信息触发仅限生产的管道。
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -124,7 +127,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### 运行仅舞台管道 {#stage-only-run}
 

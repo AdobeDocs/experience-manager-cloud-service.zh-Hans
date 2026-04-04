@@ -6,7 +6,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 92%
@@ -55,7 +55,8 @@ ht-degree: 92%
 
 1. 您必须[将 AEM 与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)。
 
-<!-- link rewriter - targets in content-fragments-customizing do not exist yet
+<!--
+ link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -158,19 +159,20 @@ Can this still occur?
 
    * **A4T Analytics Cloud 配置**：选择用于 Target 活动目标和量度的 Analytics Cloud 配置。如果您在定位内容时使用 Adobe Analytics 作为报告源，则需要此项。
 
-<!-- Is this needed?
+<!--
+ Is this needed?
 If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 -->
 
 * **使用准确定位：**&#x200B;默认情况下，此复选框处于选中状态。如果选中，云服务配置将等到上下文加载完后，再加载内容。请参阅以下注释。
 
-* **从 Adobe Target 同步分段：**&#x200B;选择此选项可下载 Target 中定义的分段，以便在 AEM 中使用它们。当API类型属性为REST时，选择此选项，因为内联区段不受支持，并且您始终需要从Target使用区段。 (AEM术语“区段”等同于Target“受众”。)
+* **从 Adobe Target 同步分段：**&#x200B;选择此选项可下载 Target 中定义的分段，以便在 AEM 中使用它们。当API类型属性为REST时，选择此选项，因为内联区段不受支持，并且您始终需要从Target使用区段。 （AEM术语“区段”等同于Target“受众”。）
 
 * **客户端库：**&#x200B;默认值为 AT.js（已弃用 mbox.js）
 
   >[!NOTE]
   >
-  >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hans) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
+  >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
   >
   >mbox.js 已被弃用，将在稍后阶段删除。
   >
@@ -242,7 +244,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hans).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -341,7 +343,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用内容片段 {#using-your-content-fragments-in-adobe-target}
 
-执行上述任务后，将在 Target 中的产品建议页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)以了解可以实现的目标。
+执行上述任务后，将在 Target 中的产品建议页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -379,10 +381,10 @@ When you associate a page with the framework, the child pages inherit the associ
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件 – 内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 * [Adobe Target 开发](https://developers.adobetarget.com/)
 
-* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hans)
+* [Adobe Target – 使用 Target 活动中的 AEM 内容片段，推动内容优化或个性化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
 
-* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=zh-Hans)
+* [Adobe Target – AEM 体验片段和内容片段概述](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)

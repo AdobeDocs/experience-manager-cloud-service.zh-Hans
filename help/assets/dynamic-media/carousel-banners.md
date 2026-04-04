@@ -6,7 +6,7 @@ feature: Carousel Banners
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4498'
 ht-degree: 1%
@@ -45,11 +45,12 @@ ht-degree: 1%
 
 要让您快速启动并运行，请执行以下操作：
 
-1. [识别热点和图像映射变量](#identifying-hotspot-and-image-map-variables)(仅适用于使用Adobe Experience Manager Assets + Dynamic Media的客户)
+1. [识别热点和图像映射变量](#identifying-hotspot-and-image-map-variables)（仅适用于使用Adobe Experience Manager Assets + Dynamic Media的客户）
 
    首先，确定现有快速视图实施使用的动态变量。 这样做有助于在Experience Manager Assets中的轮播横幅创建过程中正确输入热点和图像映射数据。
 
-<!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
+<!--
+ LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
    >[!NOTE]
    >
@@ -100,7 +101,8 @@ ht-degree: 1%
 
 将热点或图像映射添加到横幅图像时，需要分配SKU（库存单位）。 您还可以为每个热点或图像映射分配可选的额外变量。 此类变量稍后用于匹配热点或图像映射与快速视图内容。
 
-<!-- LEAVE; COMMERCE BEING ADDED LATER
+<!--
+ LEAVE; COMMERCE BEING ADDED LATER
 
 >[!NOTE]
 >
@@ -148,10 +150,10 @@ ht-degree: 1%
    <td>单个SKU，在查询字符串中找到。</td>
    <td><p>记录的快速视图URL包括：</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL中的唯一变量部分是<code>productId=</code>查询字符串参数的值，它显然是SKU值。 因此，热点或图像映射只需要使用如下值填充的SKU字段 <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -167,9 +169,9 @@ ht-degree: 1%
    <td>查询字符串中的SKU和类别ID。</td>
    <td><p>记录的快速视图URL包括：</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>在这种情况下，URL包含两个不同的部分。 SKU存储在<code>prodId</code>参数中，类别ID存储在<code>category=</code>参数中。</p> <p>因此，热点/图像映射定义是对。 即SKU值和名为<code>categoryId</code>的额外变量。 生成的对如下所示：</p>
     <ul>
      <li><p>SKU是<strong><code>305466</code></strong>，<code>categoryId</code>是<code>1100004</code>。</p> </li>

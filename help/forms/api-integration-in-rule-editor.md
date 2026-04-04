@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: 在规则编辑器中集成 API，调用服务增强功能
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -33,7 +33,7 @@ ht-degree: 4%
 | 方面 | API与表单数据模型(FDM)集成 | 直接API集成（通过&#x200B;*创建API集成*） |
 |--------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------|
 | **用途** | 跨多个表单的集中化、可重复使用的API集成 | 特定于表单的快速集成API |
-| **安装位置** | 在表单数据模型编辑器(AEM控制台)中创建和编辑 | 直接在自适应表单规则编辑器中创建和编辑 |
+| **安装位置** | 在表单数据模型编辑器（AEM控制台）中创建和编辑 | 直接在自适应表单规则编辑器中创建和编辑 |
 | **复杂性** | 设置工作量更大（需要映射和配置） | 简单而轻量 |
 | **最适合** | 具有多种表单的企业或大规模用例 | 小型表单、原型或一次性API调用 |
 
@@ -90,7 +90,7 @@ ht-degree: 4%
 6. 目标国家/地区（下拉列表）
 7. 预定到达日期（日期）
 
-表单使用&#x200B;**getcountryname API**&#x200B;动态获取国家/地区信息(大陆、资本、ISO Alpha代码等)，而不是维护静态的国家/地区列表：
+表单使用&#x200B;**getcountryname API**&#x200B;动态获取国家/地区信息（大陆、资本、ISO Alpha代码等），而不是维护静态的国家/地区列表：
 
 `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 
@@ -107,7 +107,7 @@ ht-degree: 4%
 ![API Rest终结点配置](/help/forms/assets/api-restendpoint.png)
 
 * **API终结点URL** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
-* GET→的&#x200B;**HTTP方法**
+* →的&#x200B;**HTTP方法**
 * **内容类型**→JSON
 * **输入**→`username`作为查询参数(`aemforms`)传递。
 * **输出** →响应字段（如`continent`、`capital`、`countrynames`、`isoAlpha3`和`languages`）映射到表单字段。
@@ -124,7 +124,7 @@ ht-degree: 4%
 
 同样，**Passport Issuance国家/地区**&#x200B;和&#x200B;**目标国家/地区**&#x200B;使用相同的API调用，确保所有三个字段中的数据一致且最新。
 
->
+>[!NOTE]
 >
 > 您可以通过调用API并使用自定义函数[从JSON数组](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)检索属性值。 此方法允许您提取值并将其直接绑定到表单字段。
 

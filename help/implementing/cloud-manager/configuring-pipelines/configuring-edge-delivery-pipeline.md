@@ -8,7 +8,7 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 14%
@@ -75,7 +75,7 @@ ht-degree: 14%
 
          >[!TIP]
          >
-         >在左上角附近，单击&#x200B;**过滤器**，然后在&#x200B;**投放类型**&#x200B;部分下，选中&#x200B;**Edge投放**&#x200B;复选框，以仅将列表筛选为Edge Delivery管道(即使用Edge Delivery Services的管道)。<!-- (CMGR-69682) -->
+         >在左上角附近，单击&#x200B;**过滤器**，然后在&#x200B;**投放类型**&#x200B;部分下，选中&#x200B;**Edge投放**&#x200B;复选框，以仅将列表筛选为Edge Delivery管道（即使用Edge Delivery Services的管道）。<!-- (CMGR-69682) -->
          >
          >![过滤器面板显示新的投放类型：边缘投放和发布投放](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 

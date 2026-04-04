@@ -2,14 +2,14 @@
 title: Experience现代化代理的提示指南
 description: 本指南提供了有效提示Experience Modernization Agent的技巧并描述了其技能的作用。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+role: User, Admin, Developer
+exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
 
 ---
-
 
 # Experience现代化代理的提示指南 {#prompting-guide}
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 #### 须知事项 {#wtk-bulk-import}
 
 * 批量导入取决于在之前的单页迁移期间创建的导入基础结构。
-   * 这包括页面模板（区域结构）、转换器（站点范围DOM清理）和解析器(特定于块的HTML到表转换)。
+   * 这包括页面模板（区域结构）、转换器（站点范围DOM清理）和解析器（特定于块的HTML到表转换）。
 * 在运行批量导入之前，必须为每个模板至少迁移一个代表页面。
 * 批量导入会重用在单页迁移期间建立的结构和映射。
    * 它不会从头开始推断模板。
@@ -187,7 +187,7 @@ ht-degree: 0%
 * 块批评遵循六个步骤的工作流程：
    1. 它使用XPath选择器从源页面捕获原始块。
    1. 它会初始化批评会话。
-   1. 它会检查原始块(屏幕快照、样式、HTML)。
+   1. 它会检查原始块（屏幕快照、样式、HTML）。
    1. 它会检查迁移的块。
    1. 它会比较元素并生成与CSS修复的相似性分数。
    1. 它会应用修复并重新检查，直到达到85%的目标。
@@ -320,7 +320,7 @@ ht-degree: 0%
       * 具有重复行模式的表
    * **配置：** API驱动的内容或显示配置控件的动态内容（博客列表、搜索结果）
       * 具有键值配置行的表。
-   * **自动阻止：**&#x200B;作者创建为节/默认内容的复杂结构，然后进行转换(制表符、YouTube嵌入)
+   * **自动阻止：**&#x200B;作者创建为节/默认内容的复杂结构，然后进行转换（制表符、YouTube嵌入）
 * 每行限制为4个单元格。
    * 将相关元素分组到单元格中。
 * 与配置单元格相比，首选块变体以体现样式差异。

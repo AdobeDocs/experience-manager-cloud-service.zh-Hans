@@ -4,7 +4,7 @@ description: 使用函数可自定义应用程序中的资产选择器。
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 23%
@@ -183,7 +183,7 @@ interface SelectedAsset {
 | *存储库:createDate* | 字符串 | 资源的创建日期和时间。 |
 | *存储库:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
 | *存储库:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
-| *dc:format* | 字符串 | 资源的格式，如文件类型(例如，JPEG、PNG等)。 |
+| *dc:format* | 字符串 | 资源的格式，如文件类型（例如，JPEG、PNG等）。 |
 | *tiff:imageWidth* | 数字 | 资源的宽度。 |
 | *tiff:imageLength* | 数字 | 资源的高度。 |
 | *computedMetadata* | `Record<string, any>` | 一个对象，表示所有类型的所有资源元数据（存储库、应用程序或嵌入式元数据）的存储桶。 |
@@ -236,10 +236,12 @@ interface SelectedAsset {
 
 通过资源选择器，您可以控制已过期资源的使用情况。 您可以使用即将过期的&#x200B;**徽章**&#x200B;自定义已过期的资产，该徽章可帮助您提前了解将在当前日期起30天内过期的资产。 此外，还可根据需要自定义标记。 您还可以允许在画布上选择已过期的资源，反之亦然。 可以通过多种方式使用某些代码片段来自定义已过期的资源：
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -260,7 +262,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 ### 设置已过期资源的持续时间 {#set-duration-of-expired-asset}
 

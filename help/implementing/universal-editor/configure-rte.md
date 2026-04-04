@@ -4,7 +4,7 @@ description: 了解如何在通用编辑器中配置富文本编辑器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: 8fcad5e212b1c64d3939065ab277e426935cb5ec
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 1%

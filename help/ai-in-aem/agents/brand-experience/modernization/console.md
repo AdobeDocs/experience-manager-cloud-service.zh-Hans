@@ -2,9 +2,9 @@
 title: 体验现代化控制台
 description: Experience Modernization Console界面和功能的参考指南
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -105,14 +105,14 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
    * **响应视图**，用于在桌面、平板电脑或移动设备视图中查看渲染的HTML内容
    * **设计模式** （画笔图标）以将页面的元素添加到提示以添加其他上下文
 * **文档视图**（文档图标）分别用于查看基础文档创作内容结构
-* **Markdown视图(AEM创作)**（代码图标）以查看基础Markdown内容结构
-* **JCR XML视图(AEM创作)**（数据图标）以查看生成的JCR XML内容结构
+* **Markdown视图（AEM创作）**（代码图标）以查看基础Markdown内容结构
+* **JCR XML视图（AEM创作）**（数据图标）以查看生成的JCR XML内容结构
 
 您始终可以单击&#x200B;**刷新预览**&#x200B;图标来更新预览面板。
 
 使用&#x200B;**删除**&#x200B;按钮可从工作区中删除所选页面。 不会删除预览或发布的内容。
 
-“**错误**”按钮(AEM创作)会打开一个模式窗口，以查看选定页面上的错误。
+“**错误**”按钮（AEM创作）会打开一个模式窗口，以查看选定页面上的错误。
 
 使用&#x200B;**Upload content**&#x200B;按钮可打开一个模式窗口，以将文件上传到AEM。
 

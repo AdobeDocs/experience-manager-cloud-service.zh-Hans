@@ -12,7 +12,7 @@ thumbnail: 340130.jpg
 exl-id: ee6f3423-175d-4a13-a587-63c285b6075f
 role: Admin
 index: false
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 7%
@@ -24,4 +24,4 @@ ht-degree: 7%
 
 Adobe Commerce具有由Adobe AI提供支持的推荐引擎。 了解如何在Adobe Experience Manager (AEM)店面中动态插入这些产品推荐。
 
->[!VIDEO](https://video.tv.adobe.com/v/342985/?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)

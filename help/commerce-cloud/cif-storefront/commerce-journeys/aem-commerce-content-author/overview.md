@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 90%
@@ -39,7 +39,7 @@ ht-degree: 90%
 
 此历程专为 AEM Commerce 内容作者设计。此历程列出了开始使用和管理目录页面、模板和完整产品体验的要求、步骤和方法。
 
-此历程中的信息可能对其他角色很有用，但某些信息对某些角色而言是多余的。请继续关注即将推出的涵盖其他角色的历程。
+此历程中的信息可能对其他用户画像很有用，但某些信息对某些角色而言是多余的。请继续关注即将推出的涵盖其他角色的历程。
 
 ## 历程 {#the-journey}
 

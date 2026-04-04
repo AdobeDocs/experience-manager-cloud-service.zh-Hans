@@ -4,7 +4,7 @@ description: 使用资产选择器收藏集。
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 7%
@@ -28,7 +28,8 @@ ht-degree: 7%
 边栏视图中的![收藏集](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 此外，您还可以自定义收藏集选项卡下的资源选择。 为此，您可以使用`handleSelection`对其进行自定义。 请参阅[使用对象架构](/help/assets/asset-selector-customization.md#handling-selection)处理对Assets的选择。
 

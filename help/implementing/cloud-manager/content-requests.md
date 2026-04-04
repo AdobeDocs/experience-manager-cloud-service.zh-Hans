@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 2%
@@ -26,22 +26,24 @@ ht-degree: 2%
 
 ## 关于Cloud Service内容请求 {#understanding-cloud-service-content-requests}
 
-*页面请求*&#x200B;引用了HTTP请求，该请求可检索渲染主页面体验所需的核心结构化内容(例如，HTML或JSON)。 它不包括资源请求，例如图像或脚本。
+*页面请求*&#x200B;引用了HTTP请求，该请求可检索渲染主页面体验所需的核心结构化内容（例如，HTML或JSON）。 它不包括资源请求，例如图像或脚本。
 
 对于使用现成CDN的客户，AEM as a Cloud Service会根据服务器端级别测量的内容请求数量来计数。 此测量自动进行，不依赖客户端分析跟踪。
 
 AEM (Adobe Experience Manager) as a Cloud Service基于AEM实例生成并在CDN处接收的响应类型来标识内容请求。 具体而言，将计算返回HTML (`text/html`)或JSON (`application/json`)的请求。 这些格式通常为传统站点渲染或Headless投放投放投放提供主页面内容。
 
-对静态资源(如JavaScript文件、CSS样式表和图像)的请求将不会计为内容请求。
+对静态资源（如JavaScript文件、CSS样式表和图像）的请求将不会计为内容请求。
 
 >[!NOTE]
 >如果API请求返回用作页面级内容的HTML或JSON（例如，在Headless投放中），则根据上下文，它仍可能会被视为内容请求。
 
 测量内容请求，无论响应是从CDN缓存提供还是转发到源AEM环境。
 
-<!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
+<!--
+ REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement.
+-->
 
 ### Cloud Service内容请求的差异 {#content-requests-variances}
 
@@ -55,7 +57,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | 机器人 | AEM未预先识别和删除的未知机器人程序可能会导致跟踪不一致。 |
 | 报告包 | 同一AEM实例中的页面可以向不同的Analytics报表包报告。 此过程可以将数据拆分到多个报表包，具体取决于配置。 |
 | 第三方监控和安全工具 | 监控和安全扫描工具（例如，正常运行时间检查程序或漏洞扫描程序）可能会请求页面，从而生成分析报表中不显示的服务器端内容请求。 |
-| API访问 | 通过API(例如，通过Adobe Experience Manager as a Headless CMS)对AEM页面或内容的请求仍会计为内容请求，但不会触发Analytics跟踪。 |
+| API访问 | 通过API（例如，通过Adobe Experience Manager as a Headless CMS）对AEM页面或内容的请求仍会计为内容请求，但不会触发Analytics跟踪。 |
 | 预获取请求 | 预获取（例如，使用Service Worker或Edge函数）可以通过提前请求页面来增加流量。 这些请求在服务器端计算，但不执行客户端分析代码。 |
 | DDOS | Adobe使用过滤功能检测和阻止许多DDoS攻击。 但是，在应用过滤器之前，某些攻击请求可能仍会被计为内容请求。 |
 | 流量拦截器 | 浏览器中的隐私功能或公司防火墙可能会阻止分析脚本的加载。 这些用户仍会生成服务器端内容请求。 |
@@ -65,7 +67,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ## 服务器端收集规则 {#serverside-collection}
 
-AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这些规则排除了知名机器人(如搜索引擎爬虫)，包括公认的AI/LLM爬虫以及一组定期ping站点的监控服务。 此排除列表中没有的其他合成、自动或监控类型的流量将被计为计费内容请求。
+AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这些规则排除了知名机器人（如搜索引擎爬虫），包括公认的AI/LLM爬虫以及一组定期ping站点的监控服务。 此排除列表中没有的其他合成、自动或监控类型的流量将被计为计费内容请求。
 
 下表列出了包含和排除的内容请求的类型，并针对每个类型进行了简要说明。
 
@@ -78,7 +80,7 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 | --- | --- | --- |
 | HTTP代码100-299 | 已包含 | 包含返回完整或部分HTML或JSON内容的成功请求。<br>HTTP代码206：这些请求仅交付完整内容的一部分。 部分请求在交付渲染页面内容中所使用的HTML或JSON响应的一部分时包括在内。 |
 | 用于自动化的HTTP库 | 已包含 | 由检索页面内容的工具或库发出的请求。 示例包括： <br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous HTTP Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· Oembed<br>· python请求<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub节点提取<br>· Reactor Netty<br><br>当流量未分类为已知机器人时，它还可以包含自定义代理或人工智能驱动的自动化。 |
-| 监控和运行状况检查工具 | 已包含 | 用于监视页面运行状况或可用性的请求。<br>查看[排除的内容请求的类型](#excluded-content-request)。<br>示例包括以下内容：<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(兼容； UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
+| 监控和运行状况检查工具 | 已包含 | 用于监视页面运行状况或可用性的请求。<br>查看[排除的内容请求的类型](#excluded-content-request)。<br>示例包括以下内容：<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+（兼容； UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/)）<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`个请求 | 已包含 | 当客户预载或预取内容（例如，使用`<link rel="prefetch">`）时，系统会计算这些服务器端请求。 请注意，此方法可能会增加流量，具体取决于预取的页面数量。 |
 | 阻止Adobe Analytics或Google Analytics报表的流量 | 已包含 | 通常，网站访客会安装隐私软件（广告拦截器等），这会影响Google Analytics或Adobe Analytics的准确性。 AEM as a Cloud Service在进入Adobe运行的基础结构的第一个入口点而不是客户端计算请求。 |
 
@@ -112,7 +114,7 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 * 确保提供的任何“页面未找到”响应都具有HTTP状态404。  如果它们以状态200返回，则计入内容请求。
 * 将运行状况检查或监控工具路由到/system/probes/health URL或使用HEAD方法而不是GET以避免产生内容请求。
 * 在您与网站集成的任何自定义搜索爬虫中，将您对内容新鲜度的需求与AEM许可证成本平衡起来。  过于激进的爬虫可能会占用许多内容请求。
-* 将任何重定向作为服务器端（状态301或302）而不是客户端(状态200带JavaScript重定向)处理，以避免两个单独的内容请求。
+* 将任何重定向作为服务器端（状态301或302）而不是客户端（状态200带JavaScript重定向）处理，以避免两个单独的内容请求。
 * 组合或减少API调用，这些API调用是来自AEM的JSON响应，可以加载这些响应以呈现页面。
 * 确保将浏览器的用户代理正确传递到AEM。 这样做会利用上述“知名搜索引擎”内容请求排除规则。  有时，某些Headless实施或CDN配置会丢失原始用户代理。 如果发生这种情况，则可能会阻止排除并导致内容请求数高于用户代理传入的情况。
 

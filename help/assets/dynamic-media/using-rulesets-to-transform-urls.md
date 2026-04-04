@@ -1,12 +1,12 @@
 ---
 title: 使用规则集转换URL
-description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是以脚本语言(如JavaScript)编写的指令集，用于评估XML数据并在该数据满足特定条件时执行特定操作。
+description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是以脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在该数据满足特定条件时执行特定操作。
 contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 使用规则集转换URL {#using-rulesets-to-transform-urls}
 
-您可以在Dynamic Media中部署规则集以转换URL。 规则集是以脚本语言(如JavaScript)编写的指令集，用于评估XML数据并在该数据满足特定条件时执行特定操作。 每个规则包括至少一个条件和至少一个操作。 规则根据条件评估XML数据，如果满足条件，则执行相应的操作。 规则集的示例包括：
+您可以在Dynamic Media中部署规则集以转换URL。 规则集是以脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在该数据满足特定条件时执行特定操作。 每个规则包括至少一个条件和至少一个操作。 规则根据条件评估XML数据，如果满足条件，则执行相应的操作。 规则集的示例包括：
 
 * 添加MIME类型后缀。 许多服务和网站都需要图像后缀，例如将`.jpg`添加到URL。
 * 创建指向URL的文件夹路径以用于SEO（搜索引擎优化）。
@@ -38,24 +38,26 @@ ht-degree: 0%
 >使用规则集时请务必小心；规则集可能会阻止在您的网站上显示Dynamic Media内容。
 
 提供了一些示例规则集，可帮助您创建自己的规则集。
-请参阅[规则集引用](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference)。
+请参阅[规则集引用](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference)。
 
 与创建所有规则集时一样，在使用XML验证器程序（如xmlvalid）上传XML文件之前，请确保该文件有效。
 
 此外，请确保首先在不影响实时生产环境的暂存环境中测试规则集。
 生产环境和暂存环境通常需要不同的登录。
 
-有关登录信息，请参阅[Adobe Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/getting-started/signing-out)。
+有关登录信息，请参阅[Adobe Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out)。
 
-<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+<!--
+ OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+-->
 
 
 
 ## 部署XML规则集 {#deploy-xml-rule-sets}
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/getting-started/signing-out)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out)，然后登录到您的帐户。
 
    配置时，Adobe已提供您的凭据和登录详细信息。 如果您没有此信息，请联系客户支持。
 

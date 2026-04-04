@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 0%
@@ -19,8 +19,10 @@ ht-degree: 0%
 
 # 配置Dynamic Media常规设置
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+ hide: yes
+hidefromtoc: yes
+-->
 
 {{work-with-dynamic-media}}
 
@@ -56,7 +58,7 @@ hidefromtoc: yes -->
    * [Illustrator](#illustrator-tab)选项卡
 
    ![Dynamic Media常规设置页面](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**&#x200B;选项卡。*<br><br>
+   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**选项卡。*<br><br>
 
 1. 完成后，在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -90,7 +92,7 @@ hidefromtoc: yes -->
 
   控制任何现有手动裁切定义的保留。
 
-  另请参阅Dynamic Media查看器参考指南中的`preserveCrop`UploadPostJob[和](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)ReprocessAssetsJob[中的](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)。
+  另请参阅Dynamic Media查看器参考指南中的`preserveCrop`UploadPostJob[和](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)ReprocessAssetsJob[中的](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)。
 
 ## 默认上载选项 {#default-upload-options}
 
@@ -107,11 +109,11 @@ hidefromtoc: yes -->
 | **[!UICONTROL 阈值]** | 必需。<br>阈值是应用钝化蒙版滤镜时忽略的对比度范围。 这种效果非常重要，因此使用此滤波器时，图像不会引入“杂色”。 值范围为`0` - `255`，这是灰度图像中的亮度阶数。 `0`=黑色，`128`=50%灰色和`255`=白色。<br>阈值为`12`时，忽略肤色亮度的细微变化，以避免添加杂色，但仍会为相异区域（如睫毛与皮肤相遇的区域）添加边缘对比度。<br>如果您有某人的面部照片，则“钝化蒙版”会影响图像的对比度部分。 例如，睫毛和皮肤相遇可产生明显对比区域，而皮肤本身光滑。 即使最光滑的皮肤也会表现出亮度值的细微变化。 如果不使用阈值，则滤镜会强调外观像素中的这些细微变化。 反过来，在增加睫毛上的对比度的同时，产生噪音和不希望的效果，增强锐利度。<br>为了避免此问题，引入了一个阈值，该阈值告知滤镜忽略对比度没有显着变化的像素，如平滑外观。<br>在前面显示的拉链图形中，请注意拉链旁边的纹理。 由于阈值过低，图像噪声难以抑制。 |
 | **[!UICONTROL 单色]** | 选择以钝化蒙版图像亮度（强度）。<br>取消选择以分别取消锐化每个颜色分量的蒙版。 |
 
-另请参阅[在Adobe Dynamic Media和图像服务器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=zh-Hans)上锐化图像。
+另请参阅[在Adobe Dynamic Media和图像服务器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en)上锐化图像。
 
 ### PostScript选项卡 {#postscript-tab}
 
-可以栅格化Adobe PostScript®文件、保持透明背景、选择分辨率以及选择颜色空间。
+可以栅格化®文件、保持透明背景、选择分辨率以及选择颜色空间。
 
 您可以在Adobe Dynamic Media中使用Adobe PostScript® (EPS)文件。 Adobe Dynamic Media提供上传这些文件时用于配置这些文件的命令。
 
@@ -126,7 +128,7 @@ hidefromtoc: yes -->
 
 ### Photoshop选项卡 {#photoshop-tab}
 
-您可以从Adobe® Photoshop®文件创建模板、维护图层、指定图层的命名方式、提取文本以及指定如何将图像锚定到模板中。
+您可以从® Photoshop®文件创建模板、维护图层、指定图层的命名方式、提取文本以及指定如何将图像锚定到模板中。
 
 | Photoshop选项 | 描述 |
 | --- | --- |
@@ -152,7 +154,7 @@ hidefromtoc: yes -->
 
 ### Illustrator选项卡 {#illustrator-tab}
 
-可以栅格化Adobe Illustrator®文件、保持透明背景、选择分辨率以及选择颜色空间。
+可以栅格化®文件、保持透明背景、选择分辨率以及选择颜色空间。
 
 您可以在Adobe Dynamic Media中使用Adobe® Illustrator® (AI)文件。 Adobe Dynamic Media提供上传这些文件时用于配置这些文件的命令。
 

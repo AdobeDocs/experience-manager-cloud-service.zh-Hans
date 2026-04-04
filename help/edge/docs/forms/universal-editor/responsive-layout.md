@@ -6,8 +6,8 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '2443'
 ht-degree: 100%
 
@@ -47,7 +47,8 @@ ht-degree: 100%
 - Higher form completion rates
 - Improved user satisfaction
 - Enhanced accessibility compliance
-- Lower development and maintenance costs-->
+- Lower development and maintenance costs
+-->
 
 >[!TIP]
 >
@@ -493,7 +494,7 @@ ht-degree: 100%
 
 - **性能监控：**&#x200B;设置分析方法，跟踪表单量度。
 - **A/B 测试：**&#x200B;试验不同的布局和方法。
-- **收集用户反馈：**&#x200B;收集真实用户的意见。
+- **收集用户反馈：**&#x200B;收集真实用户的洞察。
 - **持续改进：**&#x200B;定期审阅和优化表单。
 
 

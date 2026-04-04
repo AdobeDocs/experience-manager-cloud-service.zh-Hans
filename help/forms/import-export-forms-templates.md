@@ -6,7 +6,7 @@ role: Admin, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | 本文 |
 
 您可以在[!DNL AEM Forms]实例之间移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型(FDM)、自适应表单模板、片段和PDF forms。
@@ -182,7 +182,7 @@ ht-degree: 3%
 
    ![搜索资产](/help/forms/assets/search-bar.png)
 
-有关使用搜索功能的更多信息和说明，请参阅[搜索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=zh-Hans)。
+有关使用搜索功能的更多信息和说明，请参阅[搜索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}
@@ -293,7 +293,8 @@ To download all the Correspondence Management assets and related dependencies as
 
    To add the assets in the package to another instance of Correspondence Management, [import the package to an [!DNL AEM Forms] instance](import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
-<!-- ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
+<!--
+ ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
 You can import assets that are exported into a .cmp file. A .cmp file can have one or more letters, data dictionaries, document fragments, and dependent assets.
 
@@ -311,7 +312,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    >[!NOTE]
    >
-   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
+   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator.
+   -->
 
 ## 另请参阅 {#see-also}
 

@@ -2,9 +2,9 @@
 title: 内容审查程序代理
 description: 了解Content Advisor代理如何通过吸收内容发现和优化背后的繁重操作工作，消除内容演变带来的不便，帮助团队以更快的速度和更自信的方式交付更改，以适应当今的AI时代。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%

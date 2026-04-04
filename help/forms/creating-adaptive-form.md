@@ -7,7 +7,7 @@ role: User, Developer
 level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 62%
@@ -18,13 +18,13 @@ ht-degree: 62%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service | 本文 |
 
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 AEM Forms的表单生成器允许您创建有吸引力、响应式、动态和自适应表单。 无论您是维护现有基于基础的表单的表单创建者，还是需要使用已建立的组件快速创建表单，AEM Forms都可以提供用户友好的向导。 该向导具有快速的选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项。
 
@@ -51,14 +51,16 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 * **Using a form data model**
   [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source.
 
-  <!--  * **Using an XDP Form Template**
+  <!--
+    * **Using an XDP Form Template**
    It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+   -->
 
 ## 先决条件
 
@@ -66,7 +68,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **权限**：将用户添加到[!DNL forms-users]，为他们提供创建自适应表单的权限。有关表单特定用户组的详细列表，请参阅[组和权限](forms-groups-privileges-tasks.md)。
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#create-project)。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。它的预格式化的组件包含某些属性和内容结构。它还提供用于定义主题和提交操作的选项。主题定义外观，提交操作定义在提交自适应表单时执行的操作。例如，将收集到的数据发送到数据源。Cloud Service 支持两种类型的模板：
 
@@ -125,14 +127,15 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 1. 选择&#x200B;**[!UICONTROL 创建]**。将出现一个对话框，用于指定标题、名称和位置以保存自适应表单：
 
    * **[!UICONTROL 标题]**：指定表单的显示名称。标题可帮助您在 [!DNL Experience Manager Forms] 用户界面中标识表单。
-   * **[!UICONTROL 名称：]**&#x200B;指定表单的名称。在存储库中创建具有指定名称的节点。在开始键入标题时，名称字段的值将自动生成。您可以更改建议的值。名称字段只能包含字母数字字符、连字符和下划线。所有无效的输入都将替换为连字符。
+   * **[!UICONTROL 名称：]**&#x200B;指定表单的名称。在存储库中创建具有指定名称的节点。 在开始键入标题时，名称字段的值将自动生成。您可以更改建议的值。 名称字段只能包含字母数字字符、连字符和下划线。 所有无效的输入都将替换为连字符。
    * **[!UICONTROL 路径：]**&#x200B;指定用于保存自适应表单的位置。您可以直接将自适应表单保存在 `/content/dam/formsanddocuments`，也可以创建一个文件夹（例如 `/content/dam/formsanddocuments/adaptiveforms`）来保存自适应表单。确保先创建文件夹，然后再在路径中使用它。**[!UICONTROL 路径]**&#x200B;字段不会自动创建文件夹。
 
-1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还会显示侧栏，以根据需要自定义创建的表单。
+1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。 该编辑器显示模板中可用的内容。 它还会显示侧栏，以根据需要自定义创建的表单。
 
    根据自适应表单的类型，关联<!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)中存在的表单元素将显示在侧边栏中&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。 您还可以拖放这些元素来生成自适应表单。
 
-<!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
+<!--
+ ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
 [Data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a Form Data Model to create an Adaptive Form. The entities or data model objects configured in a Form Data Model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a Form Data Model using Adaptive Form rules.
 
@@ -179,7 +182,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
->You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
+-->
 
 ## 编辑自适应表单的表单模型属性 {#edit-form-model}
 

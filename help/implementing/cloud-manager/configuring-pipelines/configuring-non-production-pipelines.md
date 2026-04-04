@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7663af90b17e4b9d9567041c3bed8e20465c87d9
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 21%
@@ -62,7 +62,7 @@ ht-degree: 21%
 1. 单击&#x200B;**继续**。
 
 1. 用于完成非生产管道配置的剩余步骤取决于您选择使用的源代码类型。
-在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
+在**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
 
    * **[我正在使用全栈代码](#full-stack-code)**
    * **[我正在使用目标部署](#targeted-deployment)**
@@ -112,7 +112,7 @@ ht-degree: 21%
 1. 单击“**保存**”。
 
 管道已保存，您现在可以[管理您的管道]&#x200B;(managing-pipe
-lines.md)，它位于&#x200B;**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
+lines.md)，它位于**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
 
 ### 我正在使用目标部署 {#targeted-deployment}
 
@@ -362,7 +362,7 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>!true</value>
+      <value>[!NOTE]rue</value>
     </property>
   </activation>
   <modules>

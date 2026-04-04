@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 61%
@@ -19,8 +19,8 @@ ht-degree: 61%
 当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，会触发提交操作。 Forms as a Cloud Service提供了多个现成的提交操作。 通过内置提交操作，您可以：
 
 * 通过电子邮件轻松发送表单数据
-* 在传输数据时启动Microsoft®Power Automate流或AEM Workflow。
-* 直接将表单数据传输到Microsoft®SharePoint Server、Microsoft®Azure Blob Storage或Microsoft® OneDrive。
+* 在传输数据时启动®Power Automate流或AEM Workflow。
+* 直接将表单数据传输到®SharePoint Server、Microsoft®Azure Blob Storage或Microsoft® OneDrive。
 * 使用表单数据模型(FDM)将数据无缝发送到配置的数据源。
 * 方便地将数据提交到 REST 端点。
 
@@ -93,7 +93,8 @@ AEM forms提供了以下现成的提交操作：
 >
 >服务器端验证将验证表单模型。建议您创建一个单独的客户端库以用于验证，不要将它与同一客户端库中的 HTML 样式和 DOM 操作等其他项混合。
 
-<!--### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
+<!--
+### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
 
 At times, if there are **complex validation rules**, the exact validation script reside in custom functions and author calls these custom functions from field validation expression. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **[!UICONTROL Basic]** tab of Adaptive Form Container properties as shown below.
 
@@ -114,7 +115,8 @@ Refer to the following articles to learn how to create custom functions for:
 
 As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.-->
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
+-->
 
 ## 另请参阅
 

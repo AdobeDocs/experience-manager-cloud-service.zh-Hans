@@ -4,7 +4,7 @@ description: 外部化器是一种OSGi服务，允许您以编程方式将资源
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 2%
@@ -44,9 +44,11 @@ ht-degree: 2%
 
 请勿在Cloud Manager中定义或覆盖`EXTERNALIZER`环境变量（例如，`AEM_EXTERNALIZER_AUTHOR`）。 相反，如果您需要覆盖`publish`或`preview`域值，请定义并使用`AEM_CDN_DOMAIN_PUBLISH`和`AEM_CDN_DOMAIN_PREVIEW`环境变量。 启动期间，这些变量将自动分配到外部化器配置中的相应字段。
 
-<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+<!--
+ Alexandru: hiding this. See CQDOC-23014 for more details
 
-To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables.
+-->
 
 ## 配置Externalizer服务 {#configuring-the-externalizer-service}
 

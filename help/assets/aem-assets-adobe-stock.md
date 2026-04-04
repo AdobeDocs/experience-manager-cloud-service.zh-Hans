@@ -6,7 +6,7 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Stock] 服务为设计师和企业提供数百万高质量、精选的免版税照片、矢量图、插图、视频、模板和 3D 资产，可满足各种创意项目需求。
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 企业[!DNL Adobe Stock]计划，
 
-* 提供[!DNL Adobe Stock]的产品权利(与Experience Manager连接的库存)。
+* 提供[!DNL Adobe Stock]的产品权利（与Experience Manager连接的库存）。
 * 为[!DNL Adobe Admin Console]购买的股票权利积分。
 * 允许在[!DNL Adobe Admin Console]内全局管理信用和许可。
 
@@ -208,7 +208,7 @@ To configure the IMS account:
 执行以下步骤以在[!DNL Developer Console]中设置程序：
 
 1. 导航到[[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)并登录您的组织。
-1. 选择&#x200B;**[!UICONTROL 新建项目]**（可在&#x200B;**[!UICONTROL 项目]**&#x200B;仪表板上找到）。
+1. 选择&#x200B;**[!UICONTROL 新建项目]**（可在&#x200B;**[!UICONTROL 项目]**仪表板上找到）。
    ![将aem资产与adobe stock集成](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. 单击&#x200B;**[!UICONTROL 添加到项目]**&#x200B;并选择&#x200B;**[!UICONTROL API]**。
 1. 选择&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;并单击&#x200B;**[!UICONTROL 下一步]**。
@@ -225,7 +225,7 @@ To configure the IMS account:
 
 执行以下步骤以在[!DNL AEM]创作实例中添加配置：
 
-1. [在您的 [!DNL Adobe Stock IMS configuration] 创作实例中设置新的 [!DNL AEM] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [在您的 [!DNL Adobe Stock IMS configuration] 创作实例中设置新的 [!DNL AEM] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [添加云配置以连接到 [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### 在您的[!DNL Adobe Stock IMS configuration]实例中设置新的[!DNL AEM author] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -456,11 +456,13 @@ Using this capability, organizations users can work using [!DNL Adobe Stock] ass
 Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it can be used and managed like a typical asset. In [!DNL Experience Manager], the users can search and preview the assets; copy and publish the assets; share the assets on [!DNL Brand Portal]; access and use the assets via [!DNL Experience Manager] desktop app; and so on.
 -->
 
-<!--  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
+<!--
+  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
 
 *Figure: Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Experience Manager] interface.*
 
-**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view -->
+**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
+-->
 
 <!--
 ### Find assets {#find-assets}
@@ -536,6 +538,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [有关将Adobe Stock资源与Experience Manager Assets结合使用的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=zh-Hans)
->* [Adobe Stock企业计划帮助](https://helpx.adobe.com/cn/enterprise/using/adobe-stock-enterprise.html)
->* [Adobe Stock常见问题解答](https://helpx.adobe.com/cn/stock/faq.html)
+>* [有关将Adobe Stock资源与Experience Manager Assets结合使用的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Adobe Stock企业计划帮助](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock常见问题解答](https://helpx.adobe.com/stock/faq.html)

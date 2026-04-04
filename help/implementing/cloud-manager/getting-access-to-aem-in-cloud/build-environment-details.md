@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5cdfdd401293873d13a85d5eb42c18ab2d0b3be3
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 29%
@@ -59,19 +59,23 @@ Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/
 
 为了确保更新版本的流畅体验，Adobe 建议用户更新其 Maven 存储库以使用 HTTPS 代替 HTTP。此调整与行业日益转向安全通信协议的趋势一致，并有助于构建过程保持安全可靠。
 
-<!-- OLD below Removed 1/16/25
+<!--
+ OLD below Removed 1/16/25
 
 ### Use a specific Java version
 
-The Cloud Manager build process uses the Oracle 8 JDK to build projects by default, but AEM Cloud Service customers should set the Maven execution JDK version to 11. -->
+The Cloud Manager build process uses the Oracle 8 JDK to build projects by default, but AEM Cloud Service customers should set the Maven execution JDK version to 11.
+-->
 
-<!-- OLD below Removed 1/16/25
+<!--
+ OLD below Removed 1/16/25
 
 #### Set the Maven JDK version
 
 Adobe recommends that you set the JDK version for the entire Maven execution to `11` in a `.cloudmanager/java-version file`.
 
-To do so, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. Edit the file so that it contains only the text, `11`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `11` is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.22`. -->
+To do so, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. Edit the file so that it contains only the text, `11`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `11` is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.22`.
+-->
 
 ### 使用特定的Java版本 {#using-java-support}
 
@@ -90,7 +94,7 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 Adobe建议采用以下部署策略：
 
-1. 使用Java 21运行本地SDK(可从https://experience.adobe.com/#/downloads下载)，然后将应用程序部署到其中并验证其功能。 检查日志中是否存在错误，这些错误表示类加载或字节码编织有问题。
+1. 使用Java 21运行本地SDK（可从https://experience.adobe.com/#/downloads下载），然后将应用程序部署到其中并验证其功能。 检查日志中是否存在错误，这些错误表示类加载或字节码编织有问题。
 1. 在Cloud Manager存储库中配置分支以使用Java 21作为构建时Java版本，配置开发管道以使用此分支并运行管道。 运行验证测试。
 1. 如果一切正常，请将stage/prod管道配置为使用Java 21作为构建时Java版本，然后运行该管道。
 

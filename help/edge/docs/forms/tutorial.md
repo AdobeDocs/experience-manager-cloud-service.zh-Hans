@@ -4,7 +4,7 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 100%
@@ -72,9 +72,11 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 ### 链接您自己的内容源
 
-<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+<!--
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
+-->
 
 要将示例内容复制到您自己的内容文件夹并将 GitHub 存储库指向您自己的内容文件夹：
 
@@ -265,7 +267,8 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 ## 将 Adaptive Forms Block 添加到您现有的 AEM 项目
 
 <!--
->[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)
+-->
 
 如果您有现有的 AEM 项目，则可以将 Adaptive Forms Block 集成到当前项目中以开始表单创建。
 

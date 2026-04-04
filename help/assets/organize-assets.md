@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 6%
@@ -17,14 +17,15 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-Microsoft®Office和PDF文档的所有数字资源、元数据和内容都将进行提取并使之可搜索。 搜索允许对资产进行复杂的筛选，并完全尊重适当的权限。 数字资产管理中的元数据详细介绍了元数据。
+®Office和PDF文档的所有数字资源、元数据和内容都将进行提取并使之可搜索。 搜索允许对资产进行复杂的筛选，并完全尊重适当的权限。 数字资产管理中的元数据详细介绍了元数据。
 
 [!DNL Experience Manager Assets]支持多种组织内容的方式。 您可以使用文件夹以分层方式组织它们，也可以以无序、临时方式组织它们，例如，标记。 用户可以在DAM资产编辑器中编辑显示子资产、演绎版和元数据的标记。
 
-<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+<!--
+ Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
 
 When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.

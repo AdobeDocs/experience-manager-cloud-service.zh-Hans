@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的内容搜索和索引编制。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2918'
-ht-degree: 17%
+source-wordcount: '2906'
+ht-degree: 16%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 17%
 
 2. 自定义OOTB索引。 要自定义OOTB索引，请附加`-custom-`后跟一个数字。 例如，`/oak:index/damAssetLucene-8-custom-1`是OOTB索引`/oak:index/damAssetLucene-8`的自定义。 自定义通常是OOTB索引的副本，外加需要编制索引的其他属性。
 
-3. 完全自定义索引：您可以从头开始创建全新的索引。 这些索引还需要以`-custom-`和版本号结尾。 此外，为了避免命名冲突，请在索引名称中使用前缀。 例如： `/oak:index/acme.product-1-custom-2`，其中`acme.`是前缀。
+3. 完全自定义索引：确实可以从头开始创建全新的索引。 这些索引还需要以`-custom-`和版本号结尾。 此外，为了避免命名冲突，请在索引名称中使用前缀。 例如： `/oak:index/acme.product-1-custom-2`，其中`acme.`是前缀。
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->自定义开箱即用索引（例如`damAssetLucene-8`）时，使用CRX DE包管理器(`/crx/packmgr/`)从&#x200B;*Cloud Service环境*&#x200B;复制最新的开箱即用索引定义。 将其重命名为`damAssetLucene-8-custom-1`（或更高版本），并在XML文件中添加自定义项。 如果云环境中的索引是`elasticsearch`类型，则需要其他更改：将`type`属性更改为`lucene`，将`async`属性更改为`[async,nrt]`，并将属性`similarityTags`更改为`true`。 这样可确保不会无意中删除所需的配置。 例如，在部署到AEM Cloud Service环境的自定义索引中，`/oak:index/damAssetLucene-8/tika`下的`tika`节点是必需的，但在本地AEM SDK上不存在。
+>自定义开箱即用索引（例如`damAssetLucene-8`）时，使用CRX DE包管理器(*)从* Cloud Service环境`/crx/packmgr/`复制最新的开箱即用索引定义。 将其重命名为`damAssetLucene-8-custom-1`（或更高版本），并在XML文件中添加自定义项。 如果云环境中的索引是`elasticsearch`类型，则需要其他更改：将`type`属性更改为`lucene`，将`async`属性更改为`[async,nrt]`，并将属性`similarityTags`更改为`true`。 这样可确保不会无意中删除所需的配置。 例如，在部署到AEM Cloud Service环境的自定义索引中，`tika`下的`/oak:index/damAssetLucene-8/tika`节点是必需的，但在本地AEM SDK上不存在。
 
 要自定义OOTB索引，请准备一个包含自定义或自定义索引定义的新包。 索引名称需要遵循命名模式：
 
@@ -80,11 +80,13 @@ ht-degree: 17%
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
 如限制部分中所述，自定义索引定义的`type`必须始终设置为`lucene`，即使使用包管理器提取的索引定义属于其他类型（例如`elasticsearch`）。
-如果提取的索引定义设置为`elastic-async`，则还必须更改`async`属性。 对于自定义索引定义，`async`属性必须设置为以下之一： `[async]`、`[async,nrt]`或`[fulltext-async]`。
+如果提取的索引定义设置为`async`，则还必须更改`elastic-async`属性。 对于自定义索引定义，`async`属性必须设置为以下之一： `[async]`、`[async,nrt]`或`[fulltext-async]`。
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >
@@ -168,7 +170,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## 项目配置
 
-我们强烈建议使用Jackrabbit `filevault-package-maven-plugin`的版本>= `1.3.2`。 将该集成到项目中的步骤如下所示：
+我们强烈建议使用Jackrabbit `1.3.2`的版本>= `filevault-package-maven-plugin`。 将该集成到项目中的步骤如下所示：
 
 1. 更新顶级`pom.xml`中的版本：
 
@@ -215,7 +217,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </plugin>
    ```
 
-3. 在`ui.apps/pom.xml`和`ui.apps.structure/pom.xml`中，必须在`filevault-package-maven-plugin`中启用`allowIndexDefinitions`和`noIntermediateSaves`选项。 启用`allowIndexDefinitions`允许自定义索引定义，而`noIntermediateSaves`确保自动添加配置。
+3. 在`ui.apps/pom.xml`和`ui.apps.structure/pom.xml`中，必须在`allowIndexDefinitions`中启用`noIntermediateSaves`和`filevault-package-maven-plugin`选项。 启用`allowIndexDefinitions`允许自定义索引定义，而`noIntermediateSaves`确保自动添加配置。
 
    文件名： `ui.apps/pom.xml`和`ui.apps.structure/pom.xml`
 
@@ -233,7 +235,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </plugin>
    ```
 
-4. 在`ui.apps.structure/pom.xml`中添加`/oak:index`的筛选器：
+4. 在`/oak:index`中添加`ui.apps.structure/pom.xml`的筛选器：
 
    ```xml
    <filters>
@@ -292,10 +294,10 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 | 索引 | 开箱即用索引 | 在版本 1 中使用 | 在版本 2 中使用 |
 |---|---|---|---|
-| /oak：index/damAssetLucene-8 | 是 | 是 | 否 |
-| /oak：index/damAssetLucene-8-custom-1 | 是（自定义） | 否 | 是 |
-| /oak：index/acme.product-1-custom-1 | 否 | 是 | 否 |
-| /oak：index/acme.product-1-custom-2 | 否 | 否 | 是 |
+| /oak:index/damAssetLucene-8 | 是 | 是 | 否 |
+| /oak:index/damAssetLucene-8-custom-1 | 是（自定义） | 否 | 是 |
+| /oak:index/acme.product-1-custom-1 | 否 | 是 | 否 |
+| /oak:index/acme.product-1-custom-2 | 否 | 否 | 是 |
 | /oak:index/cqPageLucene-2 | 是 | 是 | 是 |
 
 每次更改索引时，版本号都增大。为了避免自定义索引名与产品本身的索引名冲突，自定义索引以及对开箱即用索引的更改必须以`-custom-<number>`结尾。
@@ -306,14 +308,14 @@ Adobe更改开箱即用索引（如`damAssetLucene`或`cqPageLucene`）后，将
 
 | 索引 | 开箱即用索引 | 在版本 2 中使用 | 在版本 3 中使用 |
 |---|---|---|---|
-| /oak：index/damAssetLucene-1-custom-1 | 是（自定义） | 是 | 否 |
+| /oak:index/damAssetLucene-1-custom-1 | 是（自定义） | 是 | 否 |
 | /oak:index/damAssetLucene-2-custom-1 | 是（自动从damAssetLucene-1-custom-1和damAssetLucene-2合并） | 否 | 是 |
 | /oak:index/cqPageLucene-1 | 是 | 是 | 否 |
 | /oak:index/cqPageLucene-2 | 是 | 否 | 是 |
 
-请注意，环境可能使用不同的AEM版本，这一点很重要。 例如： `dev`环境在版本`X+1`上，而暂存和生产仍在版本`X`上，并且正在等待在`dev`上执行了所需的测试之后升级到版本`X+1`。 如果版本`X+1`附带已自定义的产品索引的较新版本，并且需要对该索引进行新的自定义，则下表将说明需要基于基于AEM版本的环境设置哪些版本：
+请注意，环境可能使用不同的AEM版本，这一点很重要。 例如： `dev`环境在版本`X+1`上，而暂存和生产仍在版本`X`上，并且正在等待在`X+1`上执行了所需的测试之后升级到版本`dev`。 如果版本`X+1`附带已自定义的产品索引的较新版本，并且需要对该索引进行新的自定义，则下表将说明需要基于基于AEM版本的环境设置哪些版本：
 
-| 环境(AEM发行版本) | 产品索引版本 | 现有自定义索引版本 | 新建自定义索引版本 |
+| 环境（AEM发行版本） | 产品索引版本 | 现有自定义索引版本 | 新建自定义索引版本 |
 |-----------------------------------|-----------------------|-------------------------------|----------------------------|
 | 开发(X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
 | 阶段(X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
@@ -379,7 +381,7 @@ Adobe更改开箱即用索引（如`damAssetLucene`或`cqPageLucene`）后，将
 
 #### 删除开箱即用索引的自定义项
 
-按照[使用OOTB索引的定义作为新版本撤消更改](#undoing-a-change-undoing-a-change)中描述的步骤操作。 例如，如果已部署`damAssetLucene-8-custom-3`，但不再需要自定义，并且要切换回默认的`damAssetLucene-8`索引，则需要添加一个包含`damAssetLucene-8`的索引定义的索引`damAssetLucene-8-custom-4`。
+按照[使用OOTB索引的定义作为新版本撤消更改](#undoing-a-change-undoing-a-change)中描述的步骤操作。 例如，如果已部署`damAssetLucene-8-custom-3`，但不再需要自定义，并且要切换回默认的`damAssetLucene-8`索引，则需要添加一个包含`damAssetLucene-8-custom-4`的索引定义的索引`damAssetLucene-8`。
 
 #### 删除完全自定义索引
 

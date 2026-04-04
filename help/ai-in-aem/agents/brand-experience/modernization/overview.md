@@ -2,9 +2,9 @@
 title: Experience Modernization Agent概述
 description: 了解Experience现代化代理如何借助人工智能将新网站载入Edge Delivery Services。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%

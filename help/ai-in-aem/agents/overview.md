@@ -2,9 +2,9 @@
 title: AEM中的代理概述
 description: 了解 AEM 中可用的代理功能，助力加速内容创建并自动编排变更。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 3%
@@ -27,13 +27,13 @@ ht-degree: 3%
 
 您有三个选项可以访问代理。
 
-1. 您可以选择通过分阶段推出的[“在购买之前尝试”程序](http://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)来访问AEM代理。 您的CSM或TAM可帮助确认贵组织的可用性。
+1. 您可以选择通过分阶段推出的[“在购买之前尝试”程序](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)来访问AEM代理。 您的CSM或TAM可帮助确认贵组织的可用性。
 1. 通过试用版浏览AEM代理[。](https://www.aem.live/developer/aem-playground)
 1. 如果访问符合您的路线图和评估计划，请与您的CSM或TAM联系，讨论通过代理SKU进行访问。
 
-随着新技能的提早推出，我们将提供更多参与和分享反馈的机会。 我们建议您观看[此页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)以了解更新。
+随着新技能的提早推出，我们将提供更多参与和分享反馈的机会。 我们建议您观看[此页面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)以了解更新。
 
-## 品牌体验代理 {#brand-experience-agent}
+## Brand Experience Agent {#brand-experience-agent}
 
 [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)通过下列代理自动执行高工作量和高容量任务，每个代理都专门处理一组特定作业。
 
@@ -41,7 +41,7 @@ ht-degree: 3%
 * **[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** — 通过内容更新、表单创建和通信缩短上市时间
 * **[开发代理](/help/ai-in-aem/agents/brand-experience/development/development.md)** — 提供AI辅助的故障排除和生成自动化
 
-通过这些代理，Brand Experience Agent吸收了更新和现代化背后的繁重运营工作，帮助团队更快地交付更改，并对当今的人工智能时代更有信心。
+通过这些代理，Brand Experience Agent吸收了更新和现代化背后的繁重操作工作，帮助团队更快地实现更改，并对当今的人工智能时代更有信心。
 
 ## 内容审查程序代理 {#content-advisor-agent}
 

@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
@@ -146,7 +146,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. 在Else语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![when-else](assets/when-else-1.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的]** Warbant Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的]** Warbant Salary **[!UICONTROL 字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**字段，该字段列出了表单中的所有表单对象。
    ![when-else](assets/when-else-2.png)
 
    规则在规则编辑器中如下所示。
@@ -158,7 +158,8 @@ Users in the forms-power-users group can access code editor. For other users, co
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+   -->
 
 >[!NOTE]
 >
@@ -250,11 +251,12 @@ Users in the forms-power-users group can access code editor. For other users, co
 
   ![损坏的规则](/help/forms/assets/rule-editor-broken-rules.png)
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+ ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -356,7 +358,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]

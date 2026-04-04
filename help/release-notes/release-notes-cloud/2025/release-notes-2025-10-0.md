@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.10.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.10.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: c5918c887be60c5198b762d860fe72afd31df352
+exl-id: d5eb6d9e-308f-4a51-8bcf-b8077b5bec82
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1894'
 ht-degree: 58%
@@ -38,7 +39,7 @@ ht-degree: 58%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +65,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -88,7 +89,8 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 有关完整的详细信息，请参阅Forms的[Edge Delivery Services通用编辑器文档](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)。 有关配置提交操作的信息，请参阅[自适应表单提交操作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 
-<!-- ### Pre-Release features in AEM Forms 
+<!--
+ ### Pre-Release features in AEM Forms 
 
 **Rule Editor Enhancements**
 
@@ -100,7 +102,8 @@ The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYL
 
 **Function and Mathematical Expression Support in Input Parameters**
  
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+-->
 
 ### AEM Forms 中新的早期访问功能 {#forms-new-early-access-features}
 
@@ -161,7 +164,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### AEM日志转发到更多目标 {#log-forwarding}
 
-现在，可以将AEM日志转发到Amazon S3、Sumo Logic、Dynatrace以及您自己的New Relic帐户(而不是Adobe提供的帐户)。 请注意，这些日志记录目标支持AEM日志(包括Apache/Dispatcher)，但CDN日志不支持。
+现在，可以将AEM日志转发到Amazon S3、Sumo Logic、Dynatrace以及您自己的New Relic帐户（而不是Adobe提供的帐户）。 请注意，这些日志记录目标支持AEM日志（包括Apache/Dispatcher），但CDN日志不支持。
 
 查看[支持的日志转发目标](/help/implementing/developing/introduction/log-forwarding.md)的完整集合。
 
@@ -265,7 +268,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 如需申请访问权限并分享反馈，请发送邮件至 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)。
 
 
-### 人工智能答案 — 适用于AEM Sites (Beta程序)的更智能、上下文感知响应 {#ai-answers-beta}
+### 人工智能答案 — 适用于AEM Sites （Beta程序）的更智能、上下文感知响应 {#ai-answers-beta}
 
 人工智能解答为访客引入了一种与内容交互的新方法。 它通过检索 — 增强型生成(RAG)技术提供支持，利用您的AEM管理的数据直接在您的数字体验中提供准确、品牌一致的答案。
 

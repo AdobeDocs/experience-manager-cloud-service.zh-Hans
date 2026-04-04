@@ -3,7 +3,7 @@ title: 使用人工智能生成的元数据增强内容发现
 description: 了解如何使用人工智能生成的元数据增强内容发现
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 4%
@@ -25,7 +25,8 @@ AI不会依赖手动输入，而是自动将描述性标记分配给数字资产
 
 ## 使用人工智能生成的元数据 {#using-ai-generated-smart-tags}
 
-<!--[!NOTE]
+<!--
+[!NOTE]
 >
 >The enhanced smart tags capability is available only for the newly uploaded assets.
 -->

@@ -4,7 +4,7 @@ description: 了解如何在使用 Edge Delivery Services 的 AEM Forms 中配�
 feature: Edge Delivery Services
 role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
@@ -191,7 +191,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 Configure your Edge Delivery CDN to route submissions:
 
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
-- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)
+-->
 
 #### &#x200B;4. 表单配置
 
@@ -248,7 +249,8 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 ![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++-->
++++
+-->
 
 +++ 常见问题
 

@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.8.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2025.8.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+exl-id: 0c8f7ece-7175-435b-8838-867983688fce
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 96%
@@ -38,7 +39,7 @@ ht-degree: 96%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440930?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -118,7 +119,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+-->
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

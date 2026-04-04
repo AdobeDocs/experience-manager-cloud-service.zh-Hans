@@ -4,7 +4,7 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 35%
@@ -22,11 +22,12 @@ ht-degree: 35%
 >* GitHub企业服务器（GitHub的自托管版本）存储库。
 >* GitLab（GitLab的`gitlab.com`版本和自托管版本）存储库。
 >* Bitbucket (`bitbucket.org`和Bitbucket服务器（BitBucket的自托管版本）存储库。
->* Azure DevOps ([dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min)和Azure DevOps的自托管版本)存储库。
+>* Azure DevOps （[dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min)和Azure DevOps的自托管版本）存储库。
 >
 >请参阅[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
-<!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
+<!--
+ CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
 * **Direct Integration**: With this setup, you can directly link your private GitHub repositories to Cloud Manager, allowing for seamless code validation, deployment, and CI/CD (Continuous Integration/Continuous Deployment) pipelines without needing to maintain a separate sync process with Adobe's default Git repository.
 
@@ -40,7 +41,8 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 >[!NOTE]
 >
->This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available. -->
+>This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
+-->
 
 ## 配置 {#configuration}
 

@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 版的发行说明。'
-description: "[!DNL Adobe Experience Manager]个2021.3.0版as a Cloud Service发行说明。"
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0版发行说明。'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 34%
@@ -20,14 +20,14 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)。
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]as a Cloud Service2021.3.0的发布日期是2021年3月25日。
+[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0的发布日期是2021年3月25日。
 下一个版本(2021.4.0)将于2021年4月29日发布。
 
-## [!DNL Adobe Experience Manager Sites]个as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 * [现在可以通过简单的配置在项目级别启用网站的渐进式Web应用程序(PWA)版本](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。
 * 内容片段模型扩展 — 现在可以将多行文本数据类型定义为多字段列表。
@@ -37,7 +37,8 @@ ht-degree: 34%
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+<!--
+ TBD: refine this list of features and enh. for Feb release.
 
 Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
@@ -45,30 +46,31 @@ Indicators for expired, approved, and rejected statuses now available for assets
 
 Ability to select a root path. select if a minimum number of tags is required. 
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+Add a Boolean or radio widget type to metadata schema setup.
+-->
 
-* [!DNL Experience Manager]扩展了连接的Assets功能，以支持在支持的核心组件中使用[!DNL Dynamic Media]映像。 请参阅[使用连接的Assets](/help/assets/use-assets-across-connected-assets-instances.md)。
+* [!DNL Experience Manager]扩展了连接的Assets功能，以支持在支持的核心组件中使用[!DNL Dynamic Media]映像。 请参阅[使用连接的资产](/help/assets/use-assets-across-connected-assets-instances.md)。
 * Experience Manager管理员可以安排在特定日期或时间进行批量资源引入。 此外，管理员可以根据日期和时间安排重复引入。 请参阅[批量资源引入](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
 ### [!DNL Assets] 中的错误修复 {#bug-fixes-assets}
 
-* 尝试下载多个权限管理的资产时，不显示版权页面。 (CQ-4314403)
-* 当选择编辑INDD文件时，分辨率意外更改。 (CQ-4317376)
-* PDF呈现版本中仅存在InDesign模板的最后一页。 (CQ-4317305)
-* 当标记选取器是复杂元数据架构的一部分时，该选取器需要很长时间才能打开。 (CQ-4316426)
-* 上传与现有资源具有相同文件名的资源时，不会显示名称冲突对话框以提示用户创建版本。 (CQ-4315424)
-* 可以从文件夹“属性”页面的弹出菜单中设置和保存文件夹元数据属性。 所选内容保存在存储库中时，再次打开文件夹元数据属性时不会显示该内容。 (CQ-4314429)
-* 文件名中包含空格或特殊字符的Assets使用浏览器上传。 (CQ-4318381)
+* 尝试下载多个权限管理的资产时，不显示版权页面。 （CQ-4314403）
+* 当选择编辑INDD文件时，分辨率意外更改。 （CQ-4317376）
+* PDF演绎版中只存在InDesign模板的最后一页。 （CQ-4317305）
+* 当标记选取器是复杂元数据架构的一部分时，该选取器需要很长时间才能打开。 （CQ-4316426）
+* 上传与现有资源具有相同文件名的资源时，不会显示名称冲突对话框以提示用户创建版本。 （CQ-4315424）
+* 可以从文件夹“属性”页面的弹出菜单中设置和保存文件夹元数据属性。 所选内容保存在存储库中时，再次打开文件夹元数据属性时不会显示该内容。 （CQ-4314429）
+* 文件名中包含空格或特殊字符的Assets使用浏览器上传。 （CQ-4318381）
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 多年以来，AEM Forms已帮助众多组织创造了优异的入职和注册体验。 这些体验已帮助组织将潜在客户转化为销售、处理捕获的客户数据、根据受众个人资料提供响应式体验等等。 现在，AEM Forms以Cloud Service的形式提供。
 
-您可以使用[AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=zh-Hans)创建数字表单、将表单连接到现有数据源、将表单与Adobe Sign集成以将电子签名添加到表单、生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可将您现有的PDF forms转换为数字表单。 除了标准的AEM Forms功能外，该服务还提供若干云原生功能，如自动扩展、升级零停机以及云原生开发环境。
+您可以使用[AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)创建数字表单、将表单连接到现有数据源、将表单与Adobe Sign集成以将电子签名添加到表单、生成记录文档(DoR)以将提交的表单存档为PDF文件。 该服务还可将您现有的PDF forms转换为数字表单。 除了标准的AEM Forms功能外，该服务还提供若干云原生功能，如自动扩展、升级零停机以及云原生开发环境。
 
 您可以联系Adobe代表以索取演示或注册该服务。
 
-## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -76,14 +78,14 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 * 现在可以在任何内容页面上使用和配置产品详细信息组件
 
-* 发布了CIF Venia参考网站 — 2021.03.25，其中包括最新的CIF核心组件版本v1.9.0。有关详细信息，请参阅[CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)。
+* 发布了CIF Venia参考网站 — 2021.03.25，其中包括最新的CIF核心组件版本v1.9.0。有关更多详细信息，请参阅[CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)。
 
-* 已发布CIF核心组件v1.9.0。有关详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)。
+* 已发布CIF核心组件v1.9.0。有关更多详细信息，请参阅[CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)。
 
 
 ## Cloud Manager {#cloud-manager}
 
-此部分概述了 AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 的发行说明。
+本节概述了AEM as a Cloud Service 2021.3.0中的Cloud Manager发行说明。
 
 ## 发布日期 {#release-date-cm-march}
 
@@ -149,7 +151,7 @@ AEM as a Cloud Service 2021.3.0中的Cloud Manager的发布日期是2021年3月1
 ### 内容传输工具的新增功能 {#what-is-new-ctt-march}
 
 * CTT现在安装到`/apps`，而不是`/libs`。某些页面的浏览器书签可能不再有效。
-* 安装CTT后，用户必须导航到其他级别才能转到内容传输页面。 有关详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hans)。
+* 安装CTT后，用户必须导航到其他级别才能转到内容传输页面。 有关详细信息，请参阅[使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)。
 
 ### 错误修复 {#bug-fixes-ctt-march}
 
@@ -165,7 +167,7 @@ Best Practices Analyzer v2.1.8的发布日期是2021年3月22日。
 
 * 能够从用户界面中的BPA报告和导出为CSV文件的报告中过滤掉ACS Commons调查结果。
 
-## 代码重构工具 {#code-refactoring-tools}
+## 代码重构工具  {#code-refactoring-tools}
 
 ### 代码重构工具的新增功能 {#what-is-new-crt}
 

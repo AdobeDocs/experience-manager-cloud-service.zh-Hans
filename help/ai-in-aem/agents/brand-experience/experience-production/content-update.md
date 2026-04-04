@@ -2,9 +2,9 @@
 title: 内容更新作业
 description: 了解Brand Experience Agent的内容更新作业及其可为您执行的操作。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 内容更新作业可更新现有内容，包括内容片段、页面、表单和资产。 该作业可以执行更新、删除、替换或添加内容元素等操作，以保持体验准确且最新。 输入可以是自然语言描述，在与Jira PDF一起使用时，屏幕截图也可以提供输入。
 
-内容更新作业将您通过自然语言或可视化图表提供的详细信息转换为页面上的内容更新。 您可以提供需要更新的页面的URL，以及需要更新的内容的详细信息，座席技能将完成您的任务。 与Adobe Experience Manager (AEM) as a Cloud Service一起使用时，该作业会创建一个新的[启动项](/help/sites-cloud/authoring/launches/overview.md)，以便您可以在应用之前查看更新。 当与文档创作一起使用时，作业将创建新的[版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)。
+内容更新作业将您通过自然语言或可视化图表提供的详细信息转换为页面上的内容更新。 您可以提供需要更新的页面的URL，以及需要更新的内容的详细信息，座席技能将完成您的任务。 与Adobe Experience Manager (AEM) as a Cloud Service一起使用时，该作业会创建一个新的[启动项](/help/sites-cloud/authoring/launches/overview.md)，以便您可以在应用之前查看更新。 当与文档创作一起使用时，作业将创建新的[版本](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)。
 
 ## 功能 {#capabilities}
 

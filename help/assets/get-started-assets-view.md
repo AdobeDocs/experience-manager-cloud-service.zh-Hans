@@ -5,7 +5,7 @@ role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 88%
@@ -24,7 +24,8 @@ ht-degree: 88%
 
 要使用 [!DNL Assets View]，请通过 [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) 登录。在登录时，选择 `Company or School Account`。要获得访问权限，请联系您组织的管理员。
 
-<!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
+<!--
+In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
 ## 访问资源视图 {#access-assets-view}
@@ -61,16 +62,17 @@ ht-degree: 88%
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何开始使用资源视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=zh-Hans)
+* [观看视频，了解如何开始使用资源视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
-<!--TBD: Merge the below rows in the table when the use cases are documented/available.
+<!--
+TBD: Merge the below rows in the table when the use cases are documented/available.
 
 | How do I delete assets? | <ul> <li>[Delete assets](/help/assets/manage-organize.md)</li> <li>Recover deleted assets</li> <li>Permanently delete assets</li> </ul> |
 | How do I share assets or find shared assets? | <ul> <li>Shared by me</li> <li>Shared with me</li> <li>Share for comments and review</li> <li>Unshare assets</li> </ul> |

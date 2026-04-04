@@ -5,7 +5,7 @@ exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Developer
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 6%
@@ -111,7 +111,7 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 

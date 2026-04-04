@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3320'
 ht-degree: 2%
@@ -112,7 +112,7 @@ ht-degree: 2%
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-您可以使用提交操作(如“发送电子邮件”、“调用AEM工作流”、“调用Power Automate流”和其他[提交操作](configuring-submit-actions.md))来接收提交PDF。
+您可以使用提交操作（如“发送电子邮件”、“调用AEM工作流”、“调用Power Automate流”和其他[提交操作](configuring-submit-actions.md)）来接收提交PDF。
 ![图像提交操作](/help/forms/assets/submit-actions-img.png)
 
 
@@ -148,7 +148,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，提交自适应表单时，会生成更新的提交PDF。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用提交PDF时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
@@ -159,7 +159,8 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 * 不支持在提交PDF中为基于XML架构的自适应表单生成的内容绑定。
 * 当用户请求呈现提交PDF时，会应区域设置的要求创建提交PDF的本地化版本。 提交PDF的本地化会与自适应表单的本地化同时发生。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -172,7 +173,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## 自适应表单元素映射 {#mapping-of-adaptive-form-elements}
 

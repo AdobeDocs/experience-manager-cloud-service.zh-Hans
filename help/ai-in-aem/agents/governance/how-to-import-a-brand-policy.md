@@ -2,14 +2,14 @@
 title: 如何导入品牌策略
 description: 使用Adobe Governance Agent导入品牌策略
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 94d671ebbd5aeb5992fdbc9d779ffbca51f82585
+role: User, Admin, Developer
+exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
 
 ---
-
 
 # 如何导入品牌策略 {#how-to-import-a-brand-policy}
 
@@ -114,4 +114,3 @@ ht-degree: 0%
    ![配置检查详细信息](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. 最后，要获取域及其关联的品牌的列表，您可以按&#x200B;**域**&#x200B;选项卡。 此部分允许您添加、删除或修改列表中的域。
-

@@ -8,7 +8,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 56%
@@ -19,11 +19,11 @@ ht-degree: 56%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -85,8 +85,8 @@ ht-degree: 56%
 * **必填字段** — 选择将该字段设为必填字段的选项。
 * **必填字段消息** - **必填字段消息**&#x200B;是当用户尝试提交表单但未填写必填字段时向用户显示的可自定义消息。
 * **数据模型绑定引用** — 绑定引用是对存储在外部数据源中并在表单中使用的数据元素的引用。 通过绑定引用，可动态地将数据绑定到表单字段，以使表单可显示来自数据源的最新数据。例如，可使用绑定引用，根据输入到表单中的客户 ID，在该表单中显示该客户的姓名和地址。还可使用绑定引用，通过输入到表单中的数据更新数据源。这样通过 AEM Forms 即可创建与外部数据源交互的表单，从而为收集和管理数据提供一种无缝的用户体验。
-* **隐藏对象** — 选择该选项以在表单中隐藏该组件。 仍可访问该组件作其他用途，如在规则编辑器中使用它进行计算。当需要存储用户无需看到或直接更改的信息时，此项很有用。
-* **禁用对象** — 选择选项以禁用该组件。 被禁用的组件不再活跃或最终用户无法编辑它。用户可看到但无法修改字段的值。仍可访问该组件作其他用途，如在规则编辑器中使用它进行计算。
+* **隐藏对象** — 选择该选项以在表单中隐藏该组件。 仍可访问该组件作其他用途，如在规则编辑器中使用它进行计算。 当需要存储用户无需看到或直接更改的信息时，此项很有用。
+* **禁用对象** — 选择选项以禁用该组件。 被禁用的组件不再活跃或最终用户无法编辑它。用户可看到但无法修改字段的值。 仍可访问该组件作其他用途，如在规则编辑器中使用它进行计算。
 * **宽高比** — 涂写签名组件中的宽高比定义了宽度和高度之间的比例关系。
 * **字段布局** - **字段布局**&#x200B;选项确定表单元素(包括标签（标题）和错误消息)相对于组件的放置方式。 作为小组件顶部的&#x200B;**标题和错误**&#x200B;将字段的标题（标签）和错误消息放置在组件上方。 **从自适应表单配置继承**&#x200B;使用自适应表单配置中指定的默认字段布局设置。
 * **CSS类** - **CSS类**&#x200B;允许您通过分配样式表中定义的一个或多个CSS类，将自定义样式应用到组件。 它支持在自适应表单中进行一致的样式和布局自定义。
@@ -138,7 +138,8 @@ ht-degree: 56%
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel. -->
+The signatures are added to the form and the form control moves to the next panel.
+-->
 
 ## 另请参阅 {#see-also}
 

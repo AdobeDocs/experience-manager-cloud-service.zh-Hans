@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -83,7 +83,8 @@ ht-degree: 5%
 
    您可以将数据模型对象拖放到自适应表单或片段上以添加表单字段。 添加的表单字段保留元数据属性，并与数据模型对象属性绑定。 绑定可确保字段值在表单提交时在相应的数据源中更新，并在表单呈现时预填充。
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## 使用示例数据预览 {#preview-ic}
 
 表单数据模型编辑器允许您为表单数据模型(FDM)中的数据模型对象生成和编辑示例数据。 您可以使用此数据预览和测试<!--interactive communications and-->自适应Forms。 您必须在预览之前生成样本数据，如[使用表单数据模型](work-with-form-data-model.md#sample)中所述。
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ For more information, see:
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 若要预览包含示例数据的自适应表单，请在创作模式下打开该自适应表单，然后选择&#x200B;**[!UICONTROL 预览]**。
 
 ## 使用表单数据模型服务预填充 {#prefill}
 
-[!DNL Experience Manager Forms]提供现成的表单数据模型预填充服务，您可以为基于表单数据模型(FDM)的自适应Forms <!--and interactive communications-->启用该服务。 预填充服务查询自适应表单<!--and interactive communication-->中数据模型对象的数据源，并在呈现表单或通信时相应地预填充数据。
+[!DNL Experience Manager Forms]提供现成的表单数据模型预填充服务，您可以为基于表单数据模型(FDM)的自适应Forms <!--and interactive communications-->启用该服务。 预填充服务查询自适应表单中数据模型对象的数据源，并在呈现表单或通信时相应地预填充数据。
 
 要为自适应表单启用表单数据模型预填充服务，请打开自适应表单容器属性，然后从“基本”折叠面板的&#x200B;**[!UICONTROL 预填充服务]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 表单数据模型预填充服务]**。 然后，保存属性。
 
 ![预填充服务](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## 将提交的自适应表单数据写入数据源 {#write-af}
 
@@ -180,7 +186,7 @@ Edit Properties dialog for an interactive communication-->
 
 ### 使用自定义函数调用表单数据模型(FDM) {#invoke-form-data-model-using-custom-functions}
 
-您可以使用自定义函数[从规则编辑器](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)调用表单数据模型。 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
+您可以使用自定义函数[从规则编辑器](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)调用表单数据模型。 要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
 
 1. 转到位于`https://server:host/system/console/configMgr`的Experience Manager Web控制台。
 1. 找到&#x200B;**[!UICONTROL 用于服务调用的自适应表单级表单数据模型白名单 — 配置工厂]**。

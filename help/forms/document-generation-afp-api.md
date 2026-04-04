@@ -5,7 +5,7 @@ feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 13%
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 # 使用 AEM Forms API 生成 AFP 输出
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 高级功能演示(AFP)是一种高性能文档格式，主要用于打印目的。\
 本指南概述了使用AEM Forms生成AFP输出所需的所有步骤和配置。
@@ -32,7 +32,8 @@ To support AFP output generation, the following OSGi bundles must be present and
 >[!NOTE]
 >
 > * If any bundle is inactive, resolve dependency issues or reinstall manually.
-> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.-->
+> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.
+ -->
 
 ## AFP生成API
 

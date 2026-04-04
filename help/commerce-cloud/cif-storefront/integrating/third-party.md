@@ -6,7 +6,7 @@ exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Adobe Commerce打开Source](https://business.adobe.com/cn/products/magento/open-source.html)
+>如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Adobe Commerce打开Source](https://business.adobe.com/products/magento/open-source.html)
 
 无需实施完整的GraphQL架构，只需实施架构的对象即可启用所需的用例。
 

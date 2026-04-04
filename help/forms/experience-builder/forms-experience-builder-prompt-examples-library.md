@@ -7,7 +7,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2199'
 ht-degree: 98%
@@ -335,11 +335,11 @@ ht-degree: 98%
 
 **规则特定的提示词：**
 
-    创建一个&#x200B;**可见性规则**，只有在 @maritalStatus 等于“已婚”或“同居关系”的情况下才显示 @spouseInformation 面板
+    创建一个**可见性规则**，只有在 @maritalStatus 等于“已婚”或“同居关系”的情况下才显示 @spouseInformation 面板
     
-    添加&#x200B;**渐进展开**&#x200B;方式，根据之前的回答显示附加问题。从基本信息开始，然后显示相关的后续信息
+    添加**渐进展开**方式，根据之前的回答显示附加问题。从基本信息开始，然后显示相关的后续信息
     
-    实施&#x200B;**智能默认**，在 @country 选择中自动设置相关字段。允许手动覆盖
+    实施**智能默认**，在 @country 选择中自动设置相关字段。允许手动覆盖
 
 ## 数据集成与提交
 
@@ -392,11 +392,11 @@ ht-degree: 98%
 
 **集成特定的提示词：**
 
-    将此表单与&#x200B;**CRM 系统**&#x200B;连接，以创建新的潜在客户。将 @firstName 映射到 FirstName，将 @email 映射到 Email，将 LeadSource 设置为“Web Form”，将 Status 设置为“New”
+    将此表单与**CRM 系统**连接，以创建新的潜在客户。将 @firstName 映射到 FirstName，将 @email 映射到 Email，将 LeadSource 设置为“Web Form”，将 Status 设置为“New”
     
-    在提交表单时设置&#x200B;**工作流触发**。传递所有表单数据，并通过经理通知触发审批工作流
+    在提交表单时设置**工作流触发**。传递所有表单数据，并通过经理通知触发审批工作流
     
-    配置&#x200B;**数据库集成**，以将表单提交保存为记录。为每个提交创建一个包含上传文件的新文件夹
+    配置**数据库集成**，以将表单提交保存为记录。为每个提交创建一个包含上传文件的新文件夹
 
 
 
@@ -492,4 +492,4 @@ ht-degree: 98%
 
 如需了解全面的最佳实践和验证指南，请参阅 [Forms Experience Builder 快速入门指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
 
-*此提示词库会根据用户反馈和新的 Forms Experience Builder 功能不断更新。如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。*
+*此提示词库会根据用户反馈和新的 Forms Experience Builder 功能不断更新。如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*

@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -21,8 +21,10 @@ ht-degree: 90%
 * 将资产或文件夹拖动到用户界面上，然后按照屏幕上的说明操作。
 * 在工具栏中单击&#x200B;**[!UICONTROL 添加资产]**&#x200B;选项并将一些文件添加到上传对话框。
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 您可以使用任意这些方法在创建文件夹之后上传资产。要创建空文件夹，请在工具栏中单击&#x200B;**[!UICONTROL 创建文件夹]**。虽然 [!DNL Assets view] 提供了强大的全文搜索功能，您仍可以使用文件夹来更好地组织资产。
 
@@ -85,7 +87,8 @@ ht-degree: 90%
 >[!TIP]
 >
 >您可以在[!DNL Creative Cloud]桌面应用程序中直接将资源上传到DAM存储库。
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
@@ -103,10 +106,10 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)

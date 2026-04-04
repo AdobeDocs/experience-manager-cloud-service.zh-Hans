@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 如果第一个面板有效，则在单击按钮时将焦点设置为另一个面板
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 规则编辑器允许您在单击按钮时验证面板布局，例如水平选项卡、垂直选项卡、折叠面板或向导，并将焦点设置为另一个面板中的表单对象。 您可以使用此功能来改进表单导航和用户体验。
 
@@ -115,11 +115,13 @@ ht-degree: 1%
 
 ![已请求更多校对](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ### 调用表单数据模型服务 {#invoke}
 
@@ -147,11 +149,13 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 在示例规则中，When部分中的语句是条件，当返回True时，该条件将执行Then部分中指定的操作。
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### 在规则中使用函数输出 {#using-a-function-output-in-a-rule}
 

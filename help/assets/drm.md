@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 数字资产通常与指定使用条款和持续时间的许可证相关联。 使用[!DNL Experience Manager]平台，您可以有效地管理资产到期信息和许可信息。
@@ -75,7 +75,8 @@ ht-degree: 6%
 * 计划程序的一个迭代中过期的最大资源数是属性`asset_expired_limit`的值。
 * 要定期运行作业，请将属性`cq.dam.expiry.notification.scheduler.istimebased`的值设置为`false`，并将属性`cq.dam.expiry.notification.scheduler.period.rule`的值设置为以秒为单位的时间。
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

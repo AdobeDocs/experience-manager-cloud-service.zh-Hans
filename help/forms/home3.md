@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1938'
 ht-degree: 2%
@@ -79,7 +79,7 @@ ht-degree: 2%
 
 | **Edge Delivery Forms** |
 |---|
-| 使用熟悉的工具(如Microsoft Excel)创建高性能表单。 实现卓越的加载速度和SEO性能。 |
+| 使用熟悉的工具（如Microsoft Excel）创建高性能表单。 实现卓越的加载速度和SEO性能。 |
 | **用途：**&#x200B;使用Excel电子表格创建表单，发布到具有最佳Google Lighthouse分数的高性能边缘交付网络。 |
 | **何时使用：**&#x200B;性能关键型应用程序、以SEO为中心的项目、内容作者驱动的表单创建、全局内容交付。 |
 | ⚡基于Excel的创作⚡超快加载⚡最佳SEO ⚡全局CDN交付 |

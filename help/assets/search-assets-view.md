@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 74%
@@ -220,7 +220,8 @@ To upload the generated asset to the assets repository:
 
 ![创建智能收藏集](assets/create-smart-collection.png)
 
-<!-- TBD: Search behavior. Full-text search. Ranking and rank boosts. Hidden assets.
+<!--
+ TBD: Search behavior. Full-text search. Ranking and rank boosts. Hidden assets.
 Report poor UX that users can only save a filtered search and not a simple search.
 .
 Are other supported files fully indexed and support full-text search? Eg. audio/videos files can at best have metadata indexed.
@@ -395,7 +396,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Screens中对视频的缩略图支持as a Cloud Service
-description: 本页介绍如何在Screensas a Cloud Service中为视频添加缩略图支持。
+title: Screens as a Cloud Service中的视频缩略图支持
+description: 本页介绍如何在Screens as a Cloud Service中添加视频的缩略图支持。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 1%
@@ -32,20 +32,20 @@ ht-degree: 1%
 ## 在视频中使用缩略图 {#using-thumbnails}
 
 >[!IMPORTANT]
->**前提条件**
->在了解如何使用视频缩略图之前，请确保了解如何在Screensas a Cloud Service项目中为渠道创建视频演绎版。 请参阅[在Screens中创建视频演绎版as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)。
+>**先决条件**
+>在了解如何使用视频缩略图之前，请确保了解如何在Screens as a Cloud Service项目中为渠道创建视频演绎版。 请参阅[在Screens as a Cloud Service中创建视频演绎版](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)。
 
 请按照以下步骤在视频中使用缩略图：
 
 1. 导航到现有Screens渠道或创建渠道。
 
    >[!NOTE]
-   >要了解如何创建渠道并将内容添加到渠道，请参阅[在Screens中创建和管理渠道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=zh-Hans)。
+   >要了解如何创建渠道并将内容添加到渠道，请参阅[在Screens as a Cloud Service中创建和管理渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)。
 
 1. 选择渠道。 在操作栏上，单击&#x200B;**编辑**&#x200B;以打开编辑器。
 
 
-   操作栏![&#128279;](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)上的编辑按钮。
+   操作栏![上的](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)编辑按钮。
 
 1. 添加或编辑现有视频组件，如下图所示。
 

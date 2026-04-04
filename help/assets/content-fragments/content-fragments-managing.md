@@ -1,12 +1,12 @@
 ---
-title: 管理内容片段(Assets — 内容片段)
+title: 管理内容片段（Assets — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段，作为您的Headless内容的基础或用于页面创作。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 65%
@@ -140,7 +140,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->其中许多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM桌面应用程序[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=zh-Hans)标准操作。
+>其中许多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM桌面应用程序[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -225,7 +225,8 @@ ht-degree: 65%
    * **[管理发布](#publishing-and-referencing-a-fragment)**
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required.
+-->
 
 ## 保存、关闭和版本 {#save-close-and-versions}
 

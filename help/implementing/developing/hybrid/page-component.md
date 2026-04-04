@@ -5,7 +5,7 @@ exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Developer
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
@@ -82,7 +82,7 @@ SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HT
 
 ## Sling模型JSON导出结构配置 {#sling-model-json-exported-structure-configuration}
 
-启用路由功能后，会假设在SPA的JSON导出中包含应用程序的不同路由(这归功于AEM导航组件的JSON导出)。 AEM导航组件的JSON输出可通过以下两个属性在SPA的根页面内容策略中进行配置：
+启用路由功能后，会假设在SPA的JSON导出中包含应用程序的不同路由（这归功于AEM导航组件的JSON导出）。 AEM导航组件的JSON输出可通过以下两个属性在SPA的根页面内容策略中进行配置：
 
 * `structureDepth`：与导出的树深度对应的数字
 * `structurePatterns`：与要导出的页面对应的正则表达式数组的正则表达式

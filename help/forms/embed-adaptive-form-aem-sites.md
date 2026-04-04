@@ -6,7 +6,7 @@ role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -31,7 +31,8 @@ AEM Forms提供&#x200B;**[!UICONTROL 自适应表单容器]**&#x200B;和&#x200B;
 
 ![AEM Sites页面中的自适应表单示例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-<!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
+<!--
+ For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
 
 ## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
 
@@ -45,7 +46,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -87,8 +88,8 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 使用部署管道将&#x200B;**Customheaderlibs**&#x200B;和&#x200B;**Customfooterlibs**&#x200B;客户端库添加到您的AEM Sites页面。 要添加客户端库，请执行以下操作：
 
-1. 访问并克隆 [AEM Cloud Service Git 存储库。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=zh-Hans)
-2. 在计划文本编辑器中打开 AEM Cloud Service Git 存储库文件夹。例如，Microsoft® Visual Code。
+1. 访问并克隆 [AEM Cloud Service Git 存储库。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)
+2. 在计划文本编辑器中打开 AEM Cloud Service Git 存储库文件夹。例如，® Visual Code。
 3. 打开`ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html`文件并将以下代码添加到该文件中：
 
    ```
@@ -125,7 +126,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-7. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hans)，将客户端库部署到 AEM as a Cloud Service 环境。
+7. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，将客户端库部署到 AEM as a Cloud Service 环境。
 
 >[!NOTE]
 >
@@ -178,7 +179,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![自适应Forms — 嵌入组件](/help/forms/assets/aemformcontainer.png)
 
-1. 从&#x200B;**[!UICONTROL 表单创建]**&#x200B;向导创建新的自适应表单。
+1. 从&#x200B;**[!UICONTROL 表单创建]**向导创建新的自适应表单。
 **[!UICONTROL 资产路径]**&#x200B;已包含已创建的自适应表单的路径
 1. 保存设置。 现在，自适应表单已嵌入到页面中。
 
@@ -197,7 +198,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![自适应Forms — 嵌入组件](/help/forms/assets/aemformcontainer.png)
 
-1. 从&#x200B;**[!UICONTROL 表单创建]**&#x200B;向导创建新的自适应表单。
+1. 从&#x200B;**[!UICONTROL 表单创建]**向导创建新的自适应表单。
 **[!UICONTROL 资产路径]**&#x200B;已包含已创建的自适应表单的路径
 1. 保存设置。 自适应表单现在嵌入到体验片段中。
 
@@ -237,7 +238,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 要将AEM Sites页面中的自适应表单转换为体验片段，请执行以下操作：
 
-1. 在编辑模式下打开包含自适应表单的AEM Sites页面(在自适应Forms容器组件中)。
+1. 在编辑模式下打开包含自适应表单的AEM Sites页面（在自适应Forms容器组件中）。
 1. 打开内容树，然后选择承载您的自适应表单的&#x200B;**[!UICONTROL 自适应Forms容器]**。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
 1. 在菜单栏上，选择![转化为体验片段变体图标](/help/forms/assets/Smock_FilingCabinet_18_N.svg)转化为体验片段变体图标。
 
@@ -273,20 +274,20 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
   >
   > 您只能对自适应表单(Foundation)使用&#x200B;**使用页面语言**、**设置焦点**&#x200B;和&#x200B;**主题**&#x200B;选项。
 
-* **表单覆盖框架**&#x200B;的整个宽度：
+* **表单覆盖框架**的整个宽度：
 内联框架(iframe)是一个HTML元素，用于将自适应表单加载到AEM Sites页面。
 
    * 如果选中&#x200B;**[!UICONTROL 表单覆盖框架]**&#x200B;的整个宽度，则自适应表单将占据其所在容器的整个宽度。 在这种情况下，不使用iframe呈现表单。 自适应表单的布局和设计可适应容器的整个宽度，使其响应速度快并可根据不同的屏幕大小进行调整。 利用此选项，您可以在AEM Sites页面中嵌入多个自适应Forms。
 
          >[！NOTE]
          >
-         >要在AEM Sites页面中嵌入多个表单，请选中&#x200B;**[!UICONTROL 表单覆盖框架]**&#x200B;整个宽度复选框。
+         >要在AEM Sites页面中嵌入多个表单，请选中**[!UICONTROL 表单覆盖框架]**整个宽度复选框。
      
    * 如果未选中&#x200B;**[!UICONTROL 表单覆盖框架]**&#x200B;的整个宽度，则自适应表单不会覆盖容器的整个宽度。 而是使用iframe呈现表单，该表单不能扩展到超过特定宽度。 当自适应表单具有明确的边界并且必须在容器中与其旁边的其他AEM组件共存时，此方法很有用。 如果未选中此选项，则仅允许在AEM Sites中嵌入一个不带iframe的自适应Forms。
 
          >[！NOTE]
          >
-         >AEM Sites页面仅支持一个不带iframe的自适应表单。 要使用&#x200B;**[!UICONTROL 自适应Forms - Embed]**&#x200B;组件添加更多自适应Forms，请选择&#x200B;**[!UICONTROL 表单涵盖整个框架]**&#x200B;选项。
+         >AEM Sites页面仅支持一个不带iframe的自适应表单。 要使用**[!UICONTROL 自适应Forms - Embed]**组件添加更多自适应Forms，请选择**[!UICONTROL 表单涵盖整个框架]**选项。
      
 * **高度**：指定容器的高度。 将其留空可自动调整容器大小。
 * **CSS客户端库**：指定CSS客户端库的路径。

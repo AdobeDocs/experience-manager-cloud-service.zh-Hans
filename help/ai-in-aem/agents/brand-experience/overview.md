@@ -1,10 +1,10 @@
 ---
-title: 品牌体验代理
-description: 了解Brand Experience Agent如何通过自动内容更新、网站转换和技术疑难解答来加速数字体验的现代化和演变，使品牌能够以AI的速度持续改进和适应。
+title: Brand Experience Agent
+description: 了解Brand Experience Agent如何通过自动内容更新、网站转换和技术疑难解答来加速数字体验的现代化和发展，使品牌能够按照人工智能的速度持续改进和适应。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -12,19 +12,19 @@ ht-degree: 0%
 ---
 
 
-# 品牌体验代理 {#brand-experience-agent}
+# Brand Experience Agent {#brand-experience-agent}
 
-Brand Experience Agent通过自动内容更新、网站转换和技术故障排除，使品牌能够以AI的速度持续改进和适应，从而加速数字体验的现代化和演变。
+Brand Experience Agent通过自动内容更新、网站转换和技术故障排除，使品牌能够按照人工智能的速度持续改进和适应，从而加快数字体验的现代化和演变。
 
 ## 代理 {#agents}
 
-Brand Experience Agent通过以下代理提供其结果，每个代理专门处理一组特定作业：
+Brand Experience Agent通过以下代理提供其成果，每个代理均专门处理一组特定作业：
 
 * [体验现代化代理](#experience-modernization) — 将网站迁移到云就绪格式
 * [Experience Production Agent](#experience-production) — 通过内容更新、表单创建和通信缩短上市时间
 * [开发代理](#development) — 提供AI辅助的故障排除和生成自动化
 
-通过这些代理，Brand Experience Agent吸收了更新和现代化背后的繁重运营工作，帮助团队更快地交付更改，并对当今的人工智能时代更有信心。
+通过这些代理，Brand Experience Agent吸收了更新和现代化背后的繁重操作工作，帮助团队更快地实现更改，并对当今的人工智能时代更有信心。
 
 >[!IMPORTANT]
 >

@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4152'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service | 本文 |
 
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存子属性，选择&#x200B;**[!UICONTROL 保存]**&#x200B;保存表单数据模型(FDM)。 现在，子属性已添加到数据模型对象中。
 
-创建数据模型对象和属性后，您可以继续基于表单数据模型(FDM)创建自适应Forms <!--and interactive communications-->。 之后，当您具有可用数据源并配置好数据源时，可以将表单数据模型(FDM)与数据源绑定。 绑定在关联的自适应Forms <!--and interactive communications-->中自动更新。 有关使用表单数据模型(FDM)创建自适应Forms <!--and interactive communications-->的更多信息，请参阅[使用表单数据模型](using-form-data-model.md)。
+创建数据模型对象和属性后，您可以继续基于表单数据模型(FDM)创建自适应Forms <!--and interactive communications-->。 之后，当您具有可用数据源并配置好数据源时，可以将表单数据模型(FDM)与数据源绑定。 绑定会在关联的自适应Forms中自动更新。 有关使用表单数据模型(FDM)创建自适应Forms的更多信息，请参阅[使用表单数据模型](using-form-data-model.md)。
 
 ### 绑定数据模型对象和属性 {#bind-data-model-objects-and-properties}
 
@@ -197,7 +197,7 @@ ht-degree: 1%
 
 1. 从&#x200B;**[!UICONTROL 绑定到]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 请求属性]**，然后在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中输入属性名称。
 
-1. 为head.jsp创建一个[叠加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=zh-Hans#developing)。 要创建叠加，请打开CRX DE并将`https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`文件复制到`https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. 为head.jsp创建一个[叠加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing)。 要创建叠加，请打开CRX DE并将`https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`文件复制到`https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >

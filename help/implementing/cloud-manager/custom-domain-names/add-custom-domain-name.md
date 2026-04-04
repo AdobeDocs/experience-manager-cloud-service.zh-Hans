@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 15%
@@ -53,7 +53,7 @@ ht-degree: 15%
 
 1. 在&#x200B;**域设置**&#x200B;页面的右上角附近，单击&#x200B;**添加域**。
 
-1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**&#x200B;字段中，输入您正在使用的自定义域名。
+1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
 输入域名时，不要包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -205,7 +205,8 @@ dig TXT _aemverification.example.com -t txt
 <!--
 ## Next Steps {#next-steps}
 
-Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
+Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name.
+-->
 
 
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->

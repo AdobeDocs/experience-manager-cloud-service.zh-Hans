@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # 使用同步处理 {#sync-processing-introduction}
 
-Forms as a Cloud Service — 通信API允许您创建、收集和提供面向品牌的个性化通信，例如业务往来函、文档、报表、索赔处理信函、福利通知、索赔处理信函、每月账单和欢迎套件。 您可以使用Communications API将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
+Forms as a Cloud Service — 通信API允许您创建、收集和提供面向品牌的个性化通信，例如业务往来函、文档、报表、索赔处理信函、福利通知、索赔处理信函、每月账单和欢迎套件。 您可以使用Communications API将模板（XFA或PDF）与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
 
 假设您有一个或多个模板，并且每个模板有多个XML数据记录。 您可以使用Communications API为每个记录生成打印文档。 <!-- You can also combine the records into a single document. -->结果为非交互式PDF文档。 非交互式PDF文档不允许用户在其字段中输入数据。
 
@@ -37,7 +37,8 @@ Forms as a Cloud Service — 通信提供了用于计划文档生成的按需和
 <!-- 
 ### Multi-tenant APIs
 
-* Document utility APIs -->
+* Document utility APIs
+-->
 
 
 ### 验证单租户API
@@ -48,11 +49,11 @@ Forms as a Cloud Service — 通信提供了用于计划文档生成的按需和
 
 * **基于令牌的身份验证：**&#x200B;基于令牌的身份验证使用访问令牌（持有者身份验证令牌）向Experience Manager as a Cloud Service发出请求。 AEM Forms as a Cloud Service提供API以安全检索访问令牌。 要检索并使用令牌对请求进行身份验证，请执行以下操作：
 
-   1. [从Developer Console检索Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。
-   1. [在您的环境中安装Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。 (应用程序服务器、Web服务器或其他非AEM服务器)配置为将请求发送到（进行调用）云服务。
-   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans)。
+   1. [从Developer Console检索Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
+   1. [在您的环境中安装Experience Manager as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 （应用程序服务器、Web服务器或其他非AEM服务器）配置为将请求发送到（进行调用）云服务。
+   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
    1. 将访问令牌作为持有者身份验证令牌运行Experience Manager API。
-   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hans#configure-access-in-aem)。
+   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
 
   >[!NOTE]
   >

@@ -6,7 +6,7 @@ feature: Configuration,Dynamic Media
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 5%
@@ -38,7 +38,7 @@ ht-degree: 5%
 借助新架构，Experience Manager负责主源资源并与Dynamic Media同步，以进行资源处理和发布：
 
 1. 将主源资产上传到Adobe Experience Manager as a Cloud Service后，会将其复制到Dynamic Media。 届时，Dynamic Media将处理所有资源处理和演绎版生成，例如视频编码和图像的动态变量。
-1. 生成演绎版后，Experience Manager as a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回Experience Manager as a Cloud Service实例)。
+1. 生成演绎版后，Experience Manager as a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版（不会将二进制文件发送回Experience Manager as a Cloud Service实例）。
 1. 内容准备发布并批准后，它会触发Dynamic Media服务将内容推送到交付服务器并在CDN（内容交付网络）处缓存内容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
@@ -54,7 +54,8 @@ ht-degree: 5%
 >* CDN级别的URL重定向
 >* Akamai ChinaCDN（用于在中国实现最佳交付）
 
-<!-- OBSOLETE CONTENT
+<!--
+ OBSOLETE CONTENT
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -76,7 +77,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 在Cloud Services中创建Dynamic Media配置 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. 在Experience Manager as a Cloud Service中，选择Experience Manager as a Cloud Service徽标以访问全局导航控制台。
 1. 在控制台左侧，选择“工具”图标，然后转到&#x200B;**[!UICONTROL 云服务> Dynamic Media配置]**。
@@ -109,7 +110,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 公司 | Dynamic Media帐户的名称。<br>**重要信息**：在Experience Manager的实例上仅支持Cloud Services中的一个Dynamic Media配置；请勿添加多个配置。 Adobe *不支持*，或建议在单个Experience Manager实例上配置多个Dynamic Media配置。<!-- CQDOC-19579 and CQDOC-19612 --><br>另请参阅[配置Dynamic Media公司别名帐户](/help/assets/dynamic-media/dm-alias-account.md)。 |
    | 公司根文件夹路径 | 您公司的根文件夹路径。 |
    | 发布Assets | 您可以从以下三个选项中进行选择：<br>**[!UICONTROL 立即&#x200B;]**— 上传资产时，系统会摄取资产并立即提供URL/嵌入。 发布资产无需用户干预。<br>**[!UICONTROL 激活]** — 必须先明确发布资产，然后才能提供URL/嵌入链接。<br>**[!UICONTROL 选择性发布&#x200B;]**— 仅出于安全预览目的自动发布Assets。 它们也可以明确发布到Experience Manager as a Cloud Service，而无需发布到DMS7以供在公共域中交付。 将来，此选项旨在将资产发布到Experience Manager as a Cloud Service，并将资产发布到Dynamic Media，二者相互排斥。 也就是说，您可以将资源发布到DMS7，以便使用智能裁剪或动态呈现版本等功能。 或者，您也可以在Experience Manager as a Cloud Service中专门发布资源以供预览。 这些相同的资产不会发布在DMS7中以在公共域中交付。 |
-   | 安全预览服务器 | 它可让您指定安全呈现版本预览服务器的URL路径。 也就是说，在生成演绎版之后，AEM as a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回Experience Manager as a Cloud Service实例)。<br>除非您有特殊安排使用您自己公司的服务器或特殊服务器，否则Adobe建议您保留指定的此设置。 |
+   | 安全预览服务器 | 它可让您指定安全呈现版本预览服务器的URL路径。 也就是说，在生成演绎版之后，AEM as a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版（不会将二进制文件发送回Experience Manager as a Cloud Service实例）。<br>除非您有特殊安排使用您自己公司的服务器或特殊服务器，否则Adobe建议您保留指定的此设置。 |
    | 同步所有内容 | 默认选中。 如果要在同步到Dynamic Media的过程中选择性地包含或排除资产，请取消选择此选项。 取消选择此选项可以从以下两种Dynamic Media同步模式中进行选择：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 默认情况下启用&#x200B;]**— 默认情况下将配置应用于所有文件夹，除非您特别将文件夹标记为排除。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 默认情况下已禁用]** — 在您明确将选定文件夹标记为同步到Dynamic Media之前，该配置不会应用于任何文件夹。<br>要将选定的文件夹标记为同步到Dynamic Media，请选择一个资源文件夹，然后在工具栏中选择&#x200B;**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中选择以下三个选项。 完成后，选择&#x200B;**[!UICONTROL 保存]**。 _请记住：如果您选择了更早的&#x200B;**同步所有内容**，则这三个选项将不可用。_&#x200B;另请参阅[在Dynamic Media中使用文件夹级别的选择性发布](/help/assets/dynamic-media/selective-publishing.md)。<br>**[!UICONTROL 已继承&#x200B;]**— 文件夹中没有显式同步值。 相反，文件夹会从其上级文件夹之一继承同步值，或者在云配置中继承默认模式。 继承的详细状态通过工具提示显示。<br>**[!UICONTROL 为子文件夹启用]** — 包含此子树中的所有内容，以便同步到Dynamic Media。 文件夹特定的设置会覆盖云配置中的默认模式。<br>**[!UICONTROL 已对子文件夹禁用&#x200B;]**— 排除此子树中的所有内容，禁止同步到Dynamic Media。 |
 
    >[!NOTE]
@@ -134,12 +135,13 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 为了在发布Dynamic Media内容之前安全地预览该内容，Experience Manager as a Cloud Service使用基于令牌的验证，因此默认情况下，Experience Manager Author会预览Dynamic Media内容。 但是，您可以&#x200B;*再允许列表*&#x200B;个IP以向用户提供安全预览内容的访问权限。 要在Experience Manager as a Cloud Service中设置此操作，请参阅主题[为图像服务器配置Dynamic Media发布设置 — 安全选项卡](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
     * To enable (turn on) the address, select the check box, then enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * Select **[!UICONTROL Save]**. -->
+    * Select **[!UICONTROL Save]**.
+    -->
 
 您现在已完成基本配置；可以使用Dynamic Media了。
 
@@ -211,7 +213,8 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
 -->
 
-<!-- Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
+<!--
+ Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
 
 ### (Optional) Enable Access Control List permissions in Dynamic Media {#optional-enable-acl}
 
@@ -245,7 +248,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 使用Dynamic Media Classic用户界面更改您的Dynamic Media设置。
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 安装和配置任务包括：
 
@@ -270,16 +273,16 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 #### 配置颜色管理 {#configuring-color-management}
 
-通过Dynamic Media色彩管理，您可以对资源进行色彩校正。 通过颜色校正，摄取的资产可保留其颜色空间(RGB、CMYK、灰色)和嵌入的颜色配置文件。 请求动态演绎版时，会使用CMYK、RGB或灰度输出将图像颜色校正到目标颜色空间中。
+通过Dynamic Media色彩管理，您可以对资源进行色彩校正。 通过颜色校正，摄取的资产可保留其颜色空间（RGB、CMYK、灰色）和嵌入的颜色配置文件。 请求动态演绎版时，会使用CMYK、RGB或灰度输出将图像颜色校正到目标颜色空间中。
 
 请参阅[配置图像预设](/help/assets/dynamic-media/managing-image-presets.md)。
 
 要配置默认颜色属性以便在请求图像时启用颜色校正，请执行以下操作：
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后使用在配置期间提供的凭据登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后使用在配置期间提供的凭据登录到您的帐户。
 1. 转到&#x200B;**[!UICONTROL 设置>应用程序设置]**。
 1. 展开&#x200B;**[!UICONTROL `Publish Setup`]**&#x200B;区域并选择&#x200B;**[!UICONTROL 图像服务器]**。 设置发布实例的默认设置时，将&#x200B;**[!UICONTROL 发布上下文]**&#x200B;设置为&#x200B;**[!UICONTROL 图像提供]**。
-1. 滚动到必须更改的属性，例如&#x200B;**[!UICONTROL 颜色管理属性]**&#x200B;区域中的属性。
+1. 滚动到必须更改的属性，例如&#x200B;**[!UICONTROL 颜色管理属性]**区域中的属性。
 您可以设置以下颜色校正属性：
 
    | 属性 | 描述 |
@@ -398,9 +401,11 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 为了保持Dynamic Media平稳运行，Adobe建议采取以下同步性能/可扩展性微调提示：
 
 * [更新预定义的作业参数以处理不同的文件格式](#update-job-para)。
-<!-- * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
+<!--
+ * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
 * [Update the predefined Granite Transient Workflow Queue (images and non-video assets) worker threads](#update-granite-transient-workflow-queue-worker-threads-images).
-* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).-->
+* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).
+-->
 
 #### 更新预定义的作业参数以处理不同的文件格式 {#update-job-para}
 
@@ -507,7 +512,8 @@ The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experi
 1. Select **[!UICONTROL Save]**.
 -->
 
-<!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
+<!--
+ NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
 ### (Optional) Filtering assets for replication {#optional-filtering-assets-for-replication}
 

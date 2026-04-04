@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 2%
@@ -25,13 +25,13 @@ ht-degree: 2%
 
 - 交互式通信已创建和发布
 - 已启用弹出窗口支持的浏览器
-- 关联[用户必须属于Forms-associates组](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 使用AEM[支持的任何](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/authentication)身份验证机制（例如SAML 2.0、OAuth或自定义身份验证处理程序）配置的身份验证
+- 关联[用户必须属于Forms-associates组](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 使用AEM[支持的任何](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)身份验证机制（例如SAML 2.0、OAuth或自定义身份验证处理程序）配置的身份验证
 
 >[!NOTE]
 >
 >- 本文演示了将SAML 2.0和[Microsoft Entra ID (Azure AD)用作身份提供程序](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)的身份验证配置。
->- 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
+>- 对于关联UI，需要除[SAML 2.0身份验证](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中说明的标准设置之外的其他SAML配置。 有关详细信息，请参阅[关联UI的其他SAML配置](#additional-saml-configurations-for-associate-ui)部分。
 
 ### 关联UI的其他SAML配置
 
@@ -445,7 +445,7 @@ const data = {
 
    ![HTML UI示例](/help/forms/assets/samplehtmlui.png)
 
-1. **单击“启动关联UI”**：单击“启动关联UI”**&#x200B;**&#x200B;按钮。 此时将打开一个新浏览器窗口，其中显示与交互式通信预先加载的关联UI 。
+1. **单击“启动关联UI”**：单击“启动关联UI”****&#x200B;按钮。 此时将打开一个新浏览器窗口，其中显示与交互式通信预先加载的关联UI 。
 
 输入数据，此时将显示关联UI，如下所示：
 
@@ -456,13 +456,15 @@ const data = {
 > 如果该窗口未打开，请检查浏览器是否允许显示此站点的弹出窗口。
 
 
-<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
+<!--
+  **Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.
+  -->
 
 ## 疑难解答
 
@@ -503,7 +505,8 @@ const data = {
 - 用于生产：指定应用程序的确切起源URL
 - 确保发布实例CORS设置允许您的应用程序域
 
-<!--## Best Practices
+<!--
+## Best Practices
 
 When implementing the Associate UI integration, follow these best practices:
 
@@ -512,7 +515,8 @@ When implementing the Associate UI integration, follow these best practices:
 3. **User Experience**: Display a loading indicator while the Associate UI initializes
 4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
-6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group
+-->
 
 ## 另请参阅
 

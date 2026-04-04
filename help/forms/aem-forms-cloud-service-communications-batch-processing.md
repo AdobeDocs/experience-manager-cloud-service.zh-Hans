@@ -5,7 +5,7 @@ feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # AEM Forms as a Cloud Service Communications批处理
 
-通信允许您创建、收集和提供面向品牌的个性化通信，如业务往来函、文档、报表、索赔处理函、福利通知、每月账单和欢迎资料包。 您可以使用Communications API将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
+通信允许您创建、收集和提供面向品牌的个性化通信，如业务往来函、文档、报表、索赔处理函、福利通知、每月账单和欢迎资料包。 您可以使用Communications API将模板（XFA或PDF）与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
 
 通信提供API用于按需生成和计划生成文档。 您可以按需使用同步API，也可以使用批处理API （异步API）生成计划的文档：
 
@@ -22,13 +22,15 @@ ht-degree: 2%
 
 * 批处理API（异步API）适用于计划的高吞吐量多文档生成用例。 这些 API 会批量生成文档。例如，每月生成的电话帐单、信用卡对帐单和收益对帐单。
 
-<!-- The following skills are required to create templates and use HTTP APIs: 
+<!--
+ The following skills are required to create templates and use HTTP APIs: 
 
 * Understanding of Adobe Forms Designer or Acrobat Forms to create templates
 
 * Understanding of HTTP APIs and experience of using HTTP APIs
 
-* Basic understanding of Adobe Experience Manager -->
+* Basic understanding of Adobe Experience Manager
+-->
 
 
 ## 批处理操作 {#batch-operations}

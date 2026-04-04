@@ -6,7 +6,7 @@ feature: Asset Reports, Asset Management
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 9%
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 通过资产报告，您可以评估[!DNL Adobe Experience Manager Assets]部署的实用程序。 通过[!DNL Assets]，您可以为数字资源生成各种报告。 这些报表提供有关系统使用情况、用户如何与资源交互以及<!-- downloaded and -->共享哪些资源的有用信息。
@@ -44,7 +44,8 @@ ht-degree: 9%
 * 文件
 * 链接共享
 
-<!-- Removed download report.
+<!--
+ Removed download report.
 * Upload
 * Download
 * Expiration
@@ -67,7 +68,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >使自己有权使用&#x200B;**AEM管理员产品配置文件**&#x200B;来创建&#x200B;**下载**&#x200B;报告。 请参阅[分配AEM产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，以授予您使用AEM管理员产品配置文件的权限。
+   >使自己有权使用&#x200B;**AEM管理员产品配置文件**&#x200B;来创建&#x200B;**下载**&#x200B;报告。 请参阅[分配AEM产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，以授予您使用AEM管理员产品配置文件的权限。
 
    ![选择报表类型](assets/choose_report.png)
 
@@ -125,7 +126,8 @@ ht-degree: 9%
 
 您可以向以下报表添加自定义列，以显示更多符合自定义要求的数据：
 
-<!-- Remove download report.
+<!--
+ Remove download report.
 * Upload
 * Download
 * Expiration
@@ -159,11 +161,12 @@ ht-degree: 9%
 
    ![从jcr:content](assets/property_picker.png)中的路径映射属性路径
 
-   要添加更多自定义列，请单击“添加”**&#x200B;**&#x200B;并重复上述步骤。
+   要添加更多自定义列，请单击“添加”****&#x200B;并重复上述步骤。
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 创建]**。 此时将显示一条消息，通知已启动报表生成。
 
-<!-- TBD: How to configure purge now? Is it using OSGi configurations?
+<!--
+ TBD: How to configure purge now? Is it using OSGi configurations?
 
 ## Configure purging service {#configure-purging-service}
 
@@ -179,7 +182,8 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 * 如果[!UICONTROL 磁盘使用情况报表]未生成，并且您使用的是[!DNL Dynamic Media]，请确保正确处理所有资源。 要解决此问题，请重新处理资源并再次生成报表。
 
-<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+<!--
+ These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
 TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
@@ -187,7 +191,8 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
 -->
 
-<!-- Removed download report.
+<!--
+ Removed download report.
    >[!NOTE]
    >
    >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.

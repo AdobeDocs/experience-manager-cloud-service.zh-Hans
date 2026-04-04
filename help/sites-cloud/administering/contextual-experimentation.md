@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 试验插件在[Edge Delivery Services](/help/edge/overview.md)的上下文中使用，因此您需要Github帐户、SharePoint或Google Drive等内容存储库，还需要[AEM Sidekick](https://www.aem.live/docs/sidekick)。 另请参阅[快速入门 — Universal Editor开发人员教程页面](https://www.aem.live/developer/tutorial)和[快速入门 — 开发人员教程](https://www.aem.live/developer/tutorial)。
 
-完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/cn/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
+完成所有设置后，**请观看此标题为**&#x200B;即时试验[的视频](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)，简短演示试验插件的工作原理。
 
 ## 常用术语 {#frequently-used-terms}
 
@@ -99,9 +99,11 @@ ht-degree: 0%
 
 准备好预览和暂存试验后，从左上角的侧踢中单击预览。 每当您预览包含正在运行的试验的页面时，您都会在`.aem.page`预览环境中看到试验叠加。 试验覆盖允许您在试验变体之间切换，并提供流量数据。
 
-<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--
+- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
+-->
 
 用于衡量每个变体有效性的数据收集基于AEM as a Cloud Service[中的](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)操作遥测服务。
 
@@ -117,7 +119,8 @@ By using the experimentation overlay, authors can get quick insights on the perf
 
 可使用全页试验在同一个页面的两个变体之间进行测试。 这是a/b测试的全页变体，您具有控件和挑战者页面。 您将使用不同类型的内容替换挑战者变体中“原始”控制页面的整个内容。 请记住，默认情况下，客户流量是平均拆分(50/50)，但如果您愿意，可以创建自定义拆分。
 
-<!--The metadata on the control page should look like this:
+<!--
+The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -185,7 +188,8 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
+-->
 
 ## 其他注意事项 {#other-considerations}
 

@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 5%
@@ -27,7 +27,7 @@ Experience Manager和Adobe Commerce可使用Commerce integration framework (CIF)
 >GraphQL 当前用于 Adobe Experience Manager (AEM) as a Cloud Service 中的两种（分隔的）场景：
 >
 >* 在此方案中，CIF通过GraphQL与commerce进行通信。
->* [AEM内容片段与AEM GraphQL API(一种自定义实现，基于标准GraphQL)配合使用，提供结构化内容用于您的应用程序。](/help/headless/graphql-api/content-fragments.md)
+>* [AEM内容片段与AEM GraphQL API（一种自定义实现，基于标准GraphQL）配合使用，提供结构化内容用于您的应用程序。](/help/headless/graphql-api/content-fragments.md)
 
 ## 架构概述 {#overview}
 
@@ -56,4 +56,4 @@ Experience Manager和Adobe Commerce可使用Commerce integration framework (CIF)
 
 ## 搜索
 
-CIF提供现成的[搜索核心组件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)，该组件是基于[Commerce GraphQL API的服务器端渲染搜索体验。](https://developer.adobe.com/commerce/webapi/graphql/)个Commerce客户可以选择改用[实时搜索](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=zh-Hans)。 按照此[链接](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)了解有关CIF - Live Search集成的更多信息。
+CIF提供现成的[搜索核心组件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)，该组件是基于[Commerce GraphQL API的服务器端渲染搜索体验。](https://developer.adobe.com/commerce/webapi/graphql/)个Commerce客户可以选择改用[实时搜索](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)。 按照此[链接](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)了解有关CIF - Live Search集成的更多信息。

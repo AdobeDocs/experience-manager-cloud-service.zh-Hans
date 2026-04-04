@@ -6,7 +6,7 @@ feature: Viewer Presets,Viewers
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4309'
 ht-degree: 8%
@@ -17,7 +17,8 @@ ht-degree: 8%
 
 查看器预设是设置集合，用于确定用户在其计算机屏幕和移动设备上查看富媒体资产的方式。 如果您是管理员，则可以创建查看器预设。 设置可用于一系列查看器配置选项。 例如，您可以更改查看器的显示大小或缩放行为。
 
-<!-- OBSOLETE SDK withdrawn from public view. Available internally only at `http://staging.scene7.com/s7sdk/3.8/docs/jsdoc/symbols/_s7sdk.html` 
+<!--
+ OBSOLETE SDK withdrawn from public view. Available internally only at `http://staging.scene7.com/s7sdk/3.8/docs/jsdoc/symbols/_s7sdk.html` 
 
 For instructions on creating and customizing your own HTML5 viewer presets, see the *Adobe Scene7 HTML5 Viewer SDK*. The SDK is available on the IS publish server embedded in the SDK itself. Each library version has its own SDK documentation included.
 
@@ -26,7 +27,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)。
+另请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
 
 本节介绍如何创建、编辑和管理查看器预设。 您可以随时将查看器预设应用于资产，以进行预览。 请参阅[应用查看器预设](#applying-a-viewer-preset-to-an-asset)。
 
@@ -38,7 +39,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 所有开箱即用的查看器都支持键盘辅助功能。
 
-另请参阅[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=zh-Hans)。
+另请参阅[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## 管理查看器预设 {#managing-viewer-presets-1}
 
@@ -54,7 +55,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 不同的网页具有不同的需求。 例如，有时您会希望某个网页提供的链接能够在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，需要直接在托管页面上嵌入HTML5查看器。 在后一种情况下，网页具有静态布局。 或者，它是“响应式”的，在不同的设备或不同的浏览器窗口大小中显示的方式有所不同。 为了满足这些需求，Dynamic Media附带的所有预定义、开箱即用的HTML5查看器都支持静态网页和响应式设计网页。
 
-有关如何将响应式查看器嵌入到网页的更多信息，请参阅[Dynamic Media图像服务和渲染API帮助](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=zh-Hans#about-responsive-image-library)中的&#x200B;*响应式静态图像库*。
+有关如何将响应式查看器嵌入到网页的更多信息，请参阅[Dynamic Media图像服务和渲染API帮助](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)中的&#x200B;*响应式静态图像库*。
 
 >[!NOTE]
 >
@@ -68,8 +69,8 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 * 台式机
 * Apple iPhone
 * Apple iPad
-* Android™智能手机
-* Android™平板电脑
+* ™智能手机
+* ™平板电脑
 <!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### 查看器预设的富媒体类型 {#rich-media-types-for-viewer-presets}
@@ -157,7 +158,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
 有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
 
-请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)目录中的“查看器发行说明”。
+请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)目录中的“查看器发行说明”。
 
 >[!NOTE]
 >
@@ -345,14 +346,14 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
   <tr>
    <td><p><strong>捏开</strong></p> </td>
    <td><p>不适用</p> </td>
-   <td><p>放大(仅限iOS和Android™3倍)</p> </td>
-   <td><p>放大(仅限iOS和Android™3倍)</p> </td>
+   <td><p>放大（仅限iOS和Android™3倍）</p> </td>
+   <td><p>放大（仅限iOS和Android™3倍）</p> </td>
   </tr>
   <tr>
    <td><p><strong>捏紧关闭</strong></p> </td>
    <td><p>不适用</p> </td>
-   <td><p>缩小(仅限iOS和Android™ 3倍)</p> </td>
-   <td><p>缩小(仅限iOS和Android™ 3倍)</p> </td>
+   <td><p>缩小（仅限iOS和Android™ 3倍）</p> </td>
+   <td><p>缩小（仅限iOS和Android™ 3倍）</p> </td>
   </tr>
   <tr>
    <td><p><strong>轻扫</strong></p> </td>
@@ -422,13 +423,13 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
      通过可视编辑器，可查看特定属性对样式有何影响。 设置或调整任何属性，使用编辑器左侧的示例即时查看它对查看器有何影响。
 
-     *`<viewer name>`*&#x200B;查看器参考指南[的“自定义](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。 例如，如果要创建`Mixed_Media`类型的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=zh-Hans)，以了解每个属性的列表和说明。
+     *`<viewer name>`*&#x200B;查看器参考指南[的“自定义](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。 例如，如果要创建`Mixed_Media`类型的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)，以了解每个属性的列表和说明。
 
    * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到Experience Manager Assets。 要查找上载的CSS文件并将其与查看器预设关联，请选择&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单下的&#x200B;**[!UICONTROL 导入CSS]**（如有必要，向上滚动可视编辑器以查看它）。
 
      导入CSS文件时，可视编辑器将检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则导入的所有CSS规则必须使用其在父查看器元素上定义的查看器类名称`.s7mixedmediaviewer`来定义。
 
-     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在&#x200B;*查看器参考指南*&#x200B;的任何“自定义[&lt;查看器名称>](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)查看器”帮助主题中都有说明。 例如，如果您想阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=zh-Hans)。)但是，可视编辑器可能不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
+     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在&#x200B;*查看器参考指南*&#x200B;的任何“自定义[&lt;查看器名称>](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)查看器”帮助主题中都有描述。 例如，如果您想阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。)但是，可视编辑器可能不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
 
    >[!NOTE]
    >
@@ -440,7 +441,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
    >对于按钮图稿，请选择2x图像并上传高分辨率图稿。 使用交互式图像和购物横幅时，您还可以从各种现成的热点按钮中进行选择。
 
 1. （可选）在“编辑查看器预设”页面顶部附近，选择&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，为不同的设备和屏幕类型唯一定义可视样式。
-1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡。 或者，您可以选择查看器中的任何可视元素，以选择进行配置。
+1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL 行为]**选项卡。 或者，您可以选择查看器中的任何可视元素，以选择进行配置。
 例如，对于*VideoPlayer*&#x200B;类型，在&#x200B;**[!UICONTROL 修饰符]** > **[!UICONTROL 播放]**&#x200B;下，您可以从三个自适应比特率流选项中选择一个：
 
    * **[!UICONTROL 短划线]** — 仅视频流为短划线。 但是，在Safari/iOS设备上，您必须选择&#x200B;**[!UICONTROL hls]**&#x200B;作为类型。
@@ -454,7 +455,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
    可视编辑器中的许多组件都有一个与之关联的详细说明。 展开组件以显示其关联参数时，这些描述会显示在蓝色框中。
 
-   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=zh-Hans)。
+   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
 
    >[!NOTE]
    >
@@ -470,7 +471,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
    >[!IMPORTANT]
    >
-   >对于使用自适应比特率流配置文件的旧视频，URL将继续正常播放(使用HLS流播放)，直到您[重新处理视频资源](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。 在重新处理之后，同一URL将继续工作，但现在&#x200B;*同时启用了* DASH和HLS流。
+   >对于使用自适应比特率流配置文件的旧视频，URL将继续正常播放（使用HLS流播放），直到您[重新处理视频资源](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。 在重新处理之后，同一URL将继续工作，但现在&#x200B;*同时启用了* DASH和HLS流。
 
 ### 创建交互式查看器预设的特殊注意事项 {#special-considerations-for-creating-an-interactive-viewer-preset}
 

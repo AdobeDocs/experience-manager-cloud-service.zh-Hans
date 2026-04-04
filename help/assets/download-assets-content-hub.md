@@ -4,7 +4,7 @@ description: 了解如何从Content Hub门户下载一个或多个资源及其�
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 1%
@@ -41,12 +41,12 @@ ht-degree: 1%
       > * Content Hub会将您的选择保存为首选项（**[!UICONTROL 为每个资源创建一个单独的文件夹]**），并保留它以供将来下载。
       > * **[!UICONTROL 为每个资产创建单独的文件夹]**&#x200B;选项仅适用于经过身份验证的[!DNL Content Hub]用户。 [!DNL Content Hub]允许公共用户将资源下载为单个资源。
 
-   1. 单击&#x200B;**[!UICONTROL 下载]**&#x200B;可下载所选资源及其演绎版。
+   1. 单击&#x200B;**[!UICONTROL 下载]**可下载所选资源及其演绎版。
       ![下载多个资源](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 在下载过程中，您可以继续使用[!DNL Content Hub]。 在下载过程中，Content Hub不会中断您的工作流。
 ![下载多个资源](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**&#x200B;以下载它们。
+如果**[!UICONTROL 下载资源]**&#x200B;对话框显示资源许可证，然后从左侧窗格（[!UICONTROL T&amp;C文档]部分）中选择每个许可证以预览该许可证并在对话框的中间窗格中显示与该许可证关联的选定资源。 查看每个许可证后，选择演绎版，单击&#x200B;**[!UICONTROL 我已阅读并接受上述条款和条件]**，然后选择&#x200B;**[!UICONTROL 下载]**以下载它们。
 ![下载多个资源](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
@@ -102,15 +102,19 @@ To download multiple assets and their renditions, execute the following steps:
 
     If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+-->
 
-<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+<!--
+1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
 1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
 1. Select **I have read and accept all the terms and conditions mentioned above.** 
-1. Click **Download** to download the selected assets.-->
+1. Click **Download** to download the selected assets.
+-->
 
-<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+<!--
+-This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
 
 
 The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
@@ -128,13 +132,16 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
 
-1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.
+-->
 <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
-<!---
+<!--
+-
 ### Download non-licensed Assets {#download-non-licensed-assets}
 
- To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.
+-->
 
 ## 演绎版类型 {#types-of-renditions}
 

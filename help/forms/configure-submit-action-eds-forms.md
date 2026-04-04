@@ -6,7 +6,7 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 66%
@@ -17,7 +17,7 @@ ht-degree: 66%
 
 | 版本 | 文章链接 |
 |---------|-----------------------------|
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | 本文 |
@@ -43,19 +43,23 @@ ht-degree: 66%
 * [提交到 Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 * [提交到电子表格](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 您可以使用&#x200B;**编辑表单属性**&#x200B;扩展的&#x200B;**提交**&#x200B;选项卡，配置在通用编辑器中创建的表单的提交操作。
 
-<!--**How to Configure Submit Action for Forms authored in Universal Editor?**
+<!--
+**How to Configure Submit Action for Forms authored in Universal Editor?**
 You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
 
 ![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
 
-![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)-->
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+-->
 
 >[!NOTE]
 >
