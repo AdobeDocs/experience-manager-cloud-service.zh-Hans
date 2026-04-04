@@ -36,7 +36,7 @@ ht-degree: 0%
 
 要访问此代理，请参阅[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)获取有关如何注册测试版计划的说明，请务必说明您对开发代理的兴趣。 您还可以通过电子邮件将特定于开发代理的反馈发送到[aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[观看教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
+[观看教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)，了解如何使用开发代理解决管道故障问题。
 
 ## 通过Cloud Manager访问开发代理 {#how-to-access-the-agent}
 

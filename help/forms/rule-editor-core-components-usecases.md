@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 如果第一个面板有效，则在单击按钮时将焦点设置为另一个面板
 
-<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
+<span class="preview">这是一项预发行功能，可通过我们的[预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)访问。</span>
 
 规则编辑器允许您在单击按钮时验证面板布局，例如水平选项卡、垂直选项卡、折叠面板或向导，并将焦点设置为另一个面板中的表单对象。 您可以使用此功能来改进表单导航和用户体验。
 

@@ -85,11 +85,11 @@ Associates open the Associate UI on the Publish instance, using the integration 
 
 ![交互式通信设置 — 关联UI的工作流配置](/help/forms/assets/associate-ui-configure-workflow.png)
 
-启用&#x200B;**将工作流数据存储外部化**&#x200B;后，请配置外部化器，以便将工作流数据存储到外部存储（例如，Azure）中。 请参阅[将工作流数据外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)。
+启用&#x200B;**将工作流数据存储外部化**&#x200B;后，请配置外部化器，以便将工作流数据存储到外部存储（例如，Azure）中。 请参阅[将工作流数据外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=zh-Hans)。
 
 ## 另请参阅
 
 - [在交互式通信编辑器中关联UI](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [为交互式通信启用并配置关联UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [在应用程序中集成关联UI](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [将工作流数据外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+- [将工作流数据外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=zh-Hans)

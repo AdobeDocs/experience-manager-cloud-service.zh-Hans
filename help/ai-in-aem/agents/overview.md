@@ -27,11 +27,11 @@ ht-degree: 3%
 
 您有三个选项可以访问代理。
 
-1. 您可以选择通过分阶段推出的[“在购买之前尝试”程序](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)来访问AEM代理。 您的CSM或TAM可帮助确认贵组织的可用性。
+1. 您可以选择通过分阶段推出的[“在购买之前尝试”程序](http://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)来访问AEM代理。 您的CSM或TAM可帮助确认贵组织的可用性。
 1. 通过试用版浏览AEM代理[。](https://www.aem.live/developer/aem-playground)
 1. 如果访问符合您的路线图和评估计划，请与您的CSM或TAM联系，讨论通过代理SKU进行访问。
 
-随着新技能的提早推出，我们将提供更多参与和分享反馈的机会。 我们建议您观看[此页面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)以了解更新。
+随着新技能的提早推出，我们将提供更多参与和分享反馈的机会。 我们建议您观看[此页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)以了解更新。
 
 ## Brand Experience Agent {#brand-experience-agent}
 

@@ -48,7 +48,7 @@ Classic CIF 及其依赖项不再可用。对于依赖使用`com.adobe.cq.commer
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源。](https://business.adobe.com/products/magento/open-source.html)
+>如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源。](https://business.adobe.com/cn/products/magento/open-source.html)
 
 ## 具有AEM渲染的产品目录体验 {#aem-rendering}
 
