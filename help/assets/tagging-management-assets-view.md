@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 98%
@@ -66,7 +66,7 @@ ht-degree: 98%
 执行以下步骤以将标记添加到命名空间：
 
 1. 转到&#x200B;**[!UICONTROL 分类管理]**。
-1. 选择命名空间并单击`Create`，在命名空间下的顶层创建标记。如果您需要在命名空间中存在的标记下创建子标记，请选择该标记，然后单击 `Create`。
+1. 选择命名空间并单击`Create`，在命名空间下的顶层创建标记。 如果您需要在命名空间中存在的标记下创建子标记，请选择该标记，然后单击 `Create`。
    ![标记的层次结构](assets/hierarchy-of-tags.png)
 
    在本例中，左侧的图像表示 `Path` 字段中显示的命名空间`automobile-four-wheeler`正下方的标记。右图是标记内添加的子标记的示例，因为除了命名空间之外，`Path` 字段中还显示了更多的标记名称、`jeep` 和 `jeep-meridian`。
@@ -111,7 +111,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->* 标记的 `Name` 无法更新。标记的根路径也基于标记的名称。即使更新了 `Title` 字段，路径也保持不变。
+>* 标记的 `Name` 无法更新。 标记的根路径也基于标记的名称。即使更新了 `Title` 字段，路径也保持不变。
 >* 在 Assets as a Cloud Service 中还有合并、本地化和发布等其他操作可用。
 
 ## 删除标记 {#delete-tags}
@@ -125,13 +125,13 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->* 删除父标记或命名空间也会删除存储在层次结构中的子标记。如果需要删除或更新父命名空间，建议在删除父层次结构之前，先[将标记](#moving-tags)移动到新的目标。
+>* 删除父标记或命名空间也会删除存储在层次结构中的子标记。 如果需要删除或更新父命名空间，建议在删除父层次结构之前，先[将标记](#moving-tags)移动到新的目标。
 >* 删除标记也会从资源中删除其所有引用。
 >* 您无法删除根级别内的标准标记。
 
 ## 将标记组件添加到元数据表单 {#add-tags-to-metadata-form}
 
-标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=zh-Hans#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。[!DNL Assets as a Cloud Service] 用户可以更新映射以使用自定义命名空间存储标记值，并使用根路径仅公开层次结构的子集。
+标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。 元数据属性映射是自动填充的，因此此时无法修改。[!DNL Assets as a Cloud Service] 用户可以更新映射以使用自定义命名空间存储标记值，并使用根路径仅公开层次结构的子集。
 
 观看这段简短的视频以了解如何将标记组件添加到元数据表单：
 
@@ -167,7 +167,7 @@ ht-degree: 98%
 
    >[!NOTE]
    >
-   >一次最多可将 25 个标记添加到列表。重复这些步骤以将更多标记添加到阻止列表。
+   >一次最多可将 25 个标记添加到列表。 重复这些步骤以将更多标记添加到阻止列表。
 
 还可为单个资源阻止智能标记。导航到资源的详细信息。在&#x200B;**[!UICONTROL 标记]**&#x200B;选项卡下，删除不需要的智能标记，然后单击&#x200B;**[!UICONTROL 保存]**。随后将在阻止列表中列出所选资源的标记。
 
@@ -181,7 +181,7 @@ ht-degree: 98%
 
   >[!NOTE]
   >
-  >在阻止列表中添加标记时，请勿使用特殊字符。可使用 a-z、A-Z、0-9 和 - 等字符。
+  >在阻止列表中添加标记时，请勿使用特殊字符。 可使用 a-z、A-Z、0-9 和 - 等字符。
 
 ### 导出阻止列表{#export-blocklist}
 
@@ -199,7 +199,7 @@ Assets视图允许您将列出的阻止标记导出为CSV格式。 要导出阻�
 1. 从设备中选择该 CSV 文件。单击&#x200B;**[!UICONTROL 选择文件]**&#x200B;以从设备中导航到该文件。或者，还可从设备拖放该 CSV 文件。
 1. 单击&#x200B;**[!UICONTROL 上传]**。随后将在阻止的标记列表中列出该 CSV 文件中的标记。
 
-   ![导入阻止的标记列表](assets/import-blocked-tags.png)
+   ![导入阻止的标记列表](assets/import-csv-new.png)
 
 如果要下载阻止的标记模板，请执行以下步骤：
 

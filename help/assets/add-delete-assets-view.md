@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -32,7 +32,7 @@ ht-degree: 90%
 
 所有文件都列入队列后，单击&#x200B;**[!UICONTROL 上传]**。
 
-![上传文件和文件夹](assets/upload-browse-files-folders.png)
+![上传文件和文件夹](assets/upload-files.png)
 
 *图：上传选定的资产后，您可以在队列中添加或删除资产。*
 
@@ -48,13 +48,13 @@ ht-degree: 90%
 
 要根据上传的进度或状态查看资产的子集，请使用&#x200B;**[!UICONTROL 上传进度]**&#x200B;侧边栏中的筛选条件。不同的筛选条件可显示所有资产、已完成的上传、进行中的上传、排队等待上传的资产、已暂停的上传、重复的资产以及无法上传的资产。
 
-![根据上传的状态筛选上传进度](assets/filter-upload-progress.png)
+![根据上传的状态筛选上传进度](assets/filter-progress.png)
 
 *图：根据资产的上传状态或上传进度，筛选您尝试上传的资产。*
 
 资产上传之后，[!DNL Assets view] 立即处理资产以生成缩略图并处理元数据。对于较多的资产，处理需要一点时间。如果您未看到缩略图，但在占位符缩略图上看到正在处理消息，请在几分钟之后重新查看文件夹。处理期间，与其他内容一起，[!DNL Assets view] 生成演绎版、添加智能标记，并对资产详细信息编制索引以供搜索。
 
-![资产在上传时处理，图块显示正在处理](assets/upload-processing.png)
+![资产在上传时处理，图块显示正在处理](assets/upload-process.png)
 
 *图：上传的资产在处理期间，在图块上显示正在处理。*
 
@@ -70,17 +70,17 @@ ht-degree: 90%
 
 如果上传支持的资产由于某个原因失败，请在[!UICONTROL 上传进度]窗格中单击&#x200B;**[!UICONTROL 重试]**。
 
-![重试失败的上传](assets/upload-retry.png)
+![重试失败的上传](assets/upload-failed.png)
 
 *图：支持的文件由于某个原因上传失败时进行重试。*
 
 如果您尝试上传重复的资产，则在您明确确认上传之前，这些资产不会上传。最初，重复的资产标记为失败的上传。要解决这个问题，您只需创建版本，也可以删除并替换现有资产或者通过重命名资产来创建重复副本。您可以逐个资产解决此类故障，也可以一次性批量解决所有失败的重复资产。
 
-![逐个管理重复的资产](assets/uploads-manage-duplicates.png)
+![逐个管理重复的资产](assets/duplicate-new.png)
 
 *图：对于默认情况下上传失败的重复资产，一次解决一个资产的问题。*
 
-![批量管理所有失败的上传](assets/upload-progress-manage-failed-uploads.png)
+![批量管理所有失败的上传](assets/manage-duplicate.png)
 
 *图：对于默认情况下上传失败的重复资产，一次性解决所有资产的问题。*
 
@@ -98,7 +98,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * 使用在资产或文件夹的缩略图上提供的选项。
 
-  ![资产缩略图上显示的用于管理资产的选项](assets/options-on-thumbnail.png)
+  ![资产缩略图上显示的用于管理资产的选项](assets/delete-new.png)
 
   *图：资产或文件夹图块上对文件和文件夹可用的操作。*
 
@@ -106,10 +106,10 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
