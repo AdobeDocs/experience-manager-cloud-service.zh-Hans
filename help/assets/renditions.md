@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '707'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Dynamic Media图像预设和智能裁切演绎版可促进符合品牌标准的�
    * [图像预设](/help/assets/dynamic-media/managing-image-presets.md)
 
   您可以[稍后切换视图](/help/assets/assets-view-introduction.md#how-to-access-assets-view)以在Assets视图中预览动态演绎版。
-* 将资源发布到Dynamic Media，以便在Assets视图中提供Dynamic Media演绎版。 有关详细信息，请参阅[将Assets发布到AEM和Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
+* 将资源发布到Dynamic Media，以便在Assets视图中提供Dynamic Media演绎版。 有关详细信息，请参阅[将Assets发布到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
 
 
 ### 查看和下载Dynamic Media演绎版 {#view-download-dm-renditions}
@@ -71,7 +71,7 @@ Dynamic Media图像预设和智能裁切演绎版可促进符合品牌标准的�
 1. 选择要预览的演绎版，然后单击&#x200B;**复制URL**&#x200B;以复制所选演绎版的URL。 单击&#x200B;**下载演绎版**&#x200B;可下载图像资源的演绎版。
 1. 选择要预览的智能裁剪演绎版，然后单击&#x200B;**复制URL**&#x200B;以复制所选演绎版的URL。
 1. 单击![下载图标](assets/do-not-localize/download-icon.png)可将所有可用的智能裁剪演绎版下载为单个zip文件。
-   ![下载图标](/help/assets/assets/smartcrop-rendition.png)
+   ![下载图标](/help/assets/assets/download-op.png)
 
    >[!NOTE]
    >
@@ -82,14 +82,16 @@ Dynamic Media图像预设和智能裁切演绎版可促进符合品牌标准的�
 ### 开始之前 {#prereqs-dm-with-openapi-renditions}
 
 * 您必须是获得许可的AEM Dynamic Media用户。
-* 必须批准Assets才能显示具有OpenAPI功能的Dynamic Media演绎版。 有关详细信息，请参阅[在Experience Manager中批准资源](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
+* 必须批准Assets以供公众使用，才能显示具有OpenAPI功能的Dynamic Media演绎版。 有关详细信息，请参阅[在Experience Manager中批准资源](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
 * 必须在您的AEM as a Cloud Service实例上启用具有OpenAPI功能的Dynamic Media。
 
 ### 使用OpenAPI功能查看Dynamic Media呈现版本 {#view-download-dm-with-openapi-renditions}
 
 1. 选择资产并单击&#x200B;**详细信息**。
-1. 单击右侧窗格中可用的Dynamic Media图标。 “动态媒体”面板为所有资源类型显示具有OpenAPI功能的Dynamic Media演绎版。
-   ![下载图标](/help/assets/assets/dm-with-open-api-copy-url.png)
-1. 选择&#x200B;**Dynamic Media with OpenAPI**&#x200B;选项，然后单击&#x200B;**复制URL**&#x200B;以复制资产的投放URL。
+1. 单击右侧面板中可用的Dynamic Media图标。 “Dynamic Media”面板会根据支持的资源类型显示基本演绎版、动态演绎版和智能裁剪演绎版（如果适用）。
+   ![下载图标](/help/assets/assets/new-new1.png)
+1. 选择&#x200B;**基本演绎版**&#x200B;并单击&#x200B;**复制URL**&#x200B;以复制资产的投放URL，或单击&#x200B;**下载演绎版**&#x200B;以下载资产。
 
+如果为存储库启用了Scene7 (Dynamic Media)和具有OpenAPI功能的Dynamic Media ，则用户界面中会提供一个切换选项来在这两者之间切换。 显示的演绎版和生成的URL会根据所选配置进行更新。
 
+![切换选项](/help/assets/assets/new-new2.png)
