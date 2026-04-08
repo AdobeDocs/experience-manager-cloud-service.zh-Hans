@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
+source-git-commit: 087285bf1023f844fe8d63817e0202276e01c411
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 38%
+source-wordcount: '2274'
+ht-degree: 27%
 
 ---
 
@@ -34,6 +34,8 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 * 检测了New Relic One APM代理，该代理使用行号显示准确的方法调用，包括外部依赖项和数据库。
 
 * 通过结合基础架构级监控和应用程序(Adobe Experience Manager)监控的关键指标，实现整体性能优化。
+
+* 用于Cloud Manager管道执行、AEM升级和代码恢复操作的自动更改跟踪器。 这些跟踪器允许团队直接在New Relic One中将部署与应用程序性能更改相关联。
 
 ## 激活您的New Relic One子帐户 {#activate-sub-account}
 
@@ -79,7 +81,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    ![添加用户](assets/newrelic-add-users.png)
 
-1. 要移除 New Relic One 用户，请单击代表该用户的行右端的删除按钮。
+1. 要删除New Relic One用户，请单击代表该用户的行右端的删除按钮。
 
 1. 单击&#x200B;**保存**，创建用户。
 
@@ -87,11 +89,11 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->如果您正在管理New Relic One用户，则还必须将自己添加为用户，以便您自己具有访问权限。 作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。您还必须将自己创建为用户。
+>如果您正在管理New Relic One用户，则还必须将自己添加为用户。 作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;没有足够的权限访问New Relic One。
 
 ## 激活您的New Relic One用户帐户 {#activate-user-account}
 
-按照预览部分[管理 New Relic One 用户](#manage-users)中所述创建 New Relic One 用户帐户后，New Relic 会向提供的地址发送确认电子邮件。要使用这些帐户，用户必须首先通过重置密码来使用 New Relic 激活其帐户。
+创建New Relic One用户帐户后（如[管理New Relic One用户](#manage-users)中所述），New Relic会向提供的地址发送确认电子邮件。 要使用这些帐户，用户必须首先通过重置密码来使用 New Relic 激活其帐户。
 
 **激活您的New Relic One用户帐户：**
 
@@ -129,7 +131,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 **要直接访问New Relic One，请执行以下操作：**
 
-1. 导航至 New Relic 的登录页面，网址为 [`https://login.newrelic.com/login`](https://login.newrelic.com/login)
+1. 转到[New Relic的登录页面](https://login.newrelic.com/login)。
 
 1. 登录 New Relic One。
 
@@ -141,9 +143,69 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 有关更多帮助，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持问题。
 
+## 使用更改跟踪器 {#change-tracker}
+
+每当受支持的管道执行、AEM升级和代码恢复完成后，Cloud Manager都会自动将更改跟踪器发送到New Relic One。 这些跟踪器在New Relic的&#x200B;**更改跟踪**&#x200B;视图中显示为更改事件，使您的团队能够将部署与应用程序性能、错误率和吞吐量中的变化关联起来。
+
+<!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
+
+### 支持的管道和流 {#supported-pipelines}
+
+以下Cloud Manager管道和最后两种流类型在New Relic One中生成更改跟踪器：
+
+| 管道/流量类型 | 描述 |
+|---|---|
+| **全栈（CI_CD部署）** | 全栈管道执行。 跟踪包括管道名称和执行ID。 |
+| **Web层配置** | Web层配置管道执行。 跟踪包括管道名称和执行ID。 |
+| **前端** | 前端管道执行。 跟踪包括管道名称和执行ID。 |
+| **配置** | 配置管道执行。 跟踪包括管道名称和执行ID。 |
+| **AEM更新** | AEM版本升级。 例如，从版本{}到版本{}。 环境更改事件完成后创建跟踪器。 |
+| **还原代码** | 代码从特定存储库和分支中恢复操作。 |
+
+>[!NOTE]
+>
+>更改跟踪器当前仅支持Skyline环境。 超出范围的管道（例如按比例放大管道和Service Pack管道）不会生成跟踪器。
+
+### 在New Relic One中查看更改跟踪器 {#view-change-trackers}
+
+在受支持的管道执行完成后，您可以在New Relic One中查看相应的更改跟踪器。
+
+**要在New Relic One中查看更改跟踪器：**
+
+1. [通过Cloud Manager或直接访问New Relic One](#accessing-new-relic)。
+1. 导航到&#x200B;**APM和服务**，并为相关环境选择应用程序。
+1. 在应用程序摘要页面上，查找图表上的更改跟踪器指示器。 将鼠标悬停在跟踪器上可查看部署详细信息。
+
+   ![更改Web事务时间图表上的跟踪器指示器](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
+
+1. 单击表中的任何更改事件可打开详细视图。
+
+   突出显示deepLink URL的![部署属性面板](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>更改事件的详细视图。</i>
+
+   右侧的&#x200B;**更改详细信息**&#x200B;面板除其他外显示实体、时间戳、纪元、类别、部署ID和API类型。
+
+   对于Cloud Manager发送到New Relic One的每个更改跟踪器，右下方的&#x200B;**部署属性**&#x200B;面板会显示以下属性：
+
+   | 属性 | 描述 |
+   |---|---|
+   | **版本** | 包括管道名称和执行ID的描述字符串。 |
+   | **changelog** | 保留供将来使用。 |
+   | **提交** | 保留供将来使用。 |
+   | **deepLink** | 单击URL以链接回Cloud Manager中的管道执行页面。 |
+
+1. 要查看更改跟踪器的完整列表，请在左侧边栏中的&#x200B;**事件**&#x200B;下，单击&#x200B;**更改跟踪**。
+
+   **更改事件**&#x200B;表显示每个部署及其时间戳和版本说明。
+
+   ![更改跟踪选项，更改事件表显示](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
+
+>[!TIP]
+>
+>将更改跟踪器与New Relic One的绩效指标结合使用，如&#x200B;**响应时间**&#x200B;和&#x200B;**吞吐量**。 这些指标可帮助您确定特定部署是否引入了性能回归或改进。 可直接在更改事件详细信息页面上比较部署前和部署后的量度。
+
 ## New Relic One用户访问权限疑难解答 {#troubleshooting}
 
-如果您被添加为New Relic One用户(如[管理New Relic One用户](#manage-users)中所述)，并且找不到原始帐户确认电子邮件，则可以执行以下疑难解答步骤。
+如果您被添加为New Relic One用户（如[管理New Relic One用户](#manage-users)中所述），并且找不到原始帐户确认电子邮件，则可以执行以下疑难解答步骤。
 
 **要对New Relic One用户访问权限进行故障排除：**
 
