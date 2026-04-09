@@ -4,7 +4,7 @@ description: 了解如何使用 Edge Delivery Services 传递您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: 96e80f49c6e01a266aa5cf1a69cd67045277c8c6
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 73%
@@ -48,7 +48,7 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 
 通过这些功能，组织可以逐步采用现代化的交付方式，而无需牺牲现有的工作流。
 
-### Edge Delivery站点的创作选项
+### Edge Delivery站点的创作选项 {#authoring-options-eds}
 
 在Cloud Manager中创建Edge Delivery站点时，您可以选择首选的创作方法：
 
@@ -57,7 +57,7 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 
 组织可以在这两种方法之间进行选择，也可以根据工作流首选项逐步使用这两种方法。 查看[单击](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)即可创建您的第一个Edge Delivery网站。
 
-### 灵活的发布层
+### 灵活的发布层 {#flexible-publish-tier}
 
 Cloud Manager允许您配置是否为项目的环境配置了发布层。 并非所有体系结构都需要发布层，如下表所示：
 
@@ -83,7 +83,7 @@ Cloud Manager允许您配置是否为项目的环境配置了发布层。 并非
 或者，如果您选择使用您的 CDN（即非 Adobe 管理的 CDN），无论您的 Edge Delivery Services 许可如何，您都必须在 `aem.live` 平台上对其进行配置。请参阅 [BYO CDN 设置](https://www.aem.live/docs/byo-cdn-setup)。
 
 
-## 关于将 Edge Delivery Services 添加到生产程序或沙盒程序中
+## 关于将 Edge Delivery Services 添加到生产程序或沙盒程序中 {#about-adding-eds-to-prod-sandbox}
 
 根据您启动项目的方式或者当您要创建 Site 时，Edge Delivery Services 可以通过多种不同的方式添加。
 
@@ -116,14 +116,14 @@ Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入
 | 1 | 加入产品协作渠道 | 单击&#x200B;**立即提交请求**&#x200B;向 Adobe 提交请求，为您的公司创建一个渠道。如果该渠道已经存在，您将被转到您公司的渠道。 |
 | 2 | 完成前提条件 | 请参阅[查看快速入门教程](https://www.aem.live/developer/tutorial)。 |
 | 3 | 添加 Edge Delivery Site 或<br>立即创建一个 Site | 请参阅[添加 Edge Delivery Site](#eds-add-site)。<br>查看[在 Cloud Manager 中创建 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。 |
-| 4 | 配置 Edge Delivery 网站以使用外部 Git 存储库 | 参见[配置 Edge Delivery 网站以使用外部 Git 存储库 &#x200B;](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)。 |
+| 4 | 配置 Edge Delivery 网站以使用外部 Git 存储库 | 参见[配置 Edge Delivery 网站以使用外部 Git 存储库 ](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)。 |
 | 5 | 添加域 | 请参阅[添加自定义域名称](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 6 | 添加 SSL 证书 | 请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 7 | 配置 Edge Delivery Site 的内容传递网络 | 请参阅[添加域映射](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。 |
 | 8 | 设置推送验证 | 请参阅[为 Edge Delivery Site 设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
 | 9 | 上线 | 请参阅[上线清单](https://www.aem.live/docs/go-live-checklist)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441572?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 记录支持工单 {#eds-support-ticket}
 
