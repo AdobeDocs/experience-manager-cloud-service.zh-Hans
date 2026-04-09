@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
+source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 21%
@@ -30,7 +30,7 @@ ht-degree: 21%
 
 **要添加新的非生产管道：**
 
-1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在[experience.adobe.com](https://experience.adobe.com)登录Cloud Manager。
 1. 在&#x200B;**快速访问**&#x200B;部分，单击 **Experience Manager**。
 1. 在左侧面板中点击 **Cloud Manager**。
 1. 选择所需的组织。
@@ -62,7 +62,7 @@ ht-degree: 21%
 1. 单击&#x200B;**继续**。
 
 1. 用于完成非生产管道配置的剩余步骤取决于您选择使用的源代码类型。
-在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
+在**添加非生产管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡上，选择非生产管道应处理的代码类型。
 
    * **[我正在使用全栈代码](#full-stack-code)**
    * **[我正在使用目标部署](#targeted-deployment)**
@@ -112,7 +112,7 @@ ht-degree: 21%
 1. 单击“**保存**”。
 
 管道已保存，您现在可以[管理您的管道]&#x200B;(managing-pipe
-lines.md)，它位于&#x200B;**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
+lines.md)，它位于**项目概述**&#x200B;页面的&#x200B;**管道**&#x200B;卡上。
 
 ### 我正在使用目标部署 {#targeted-deployment}
 
@@ -270,7 +270,7 @@ Smart Build提供细粒度控制，允许您禁用特定模块的缓存。 此�
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select an organization that you want.

@@ -4,13 +4,13 @@ description: 了解如何使用Cloud Manager的运行状况评估。 您可以�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+exl-id: 5467a311-727d-4f67-ba43-4b6548431061
+source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 9%
 
 ---
-
 
 # 健康评估 {#about-health-assessment}
 
@@ -31,7 +31,7 @@ ht-degree: 9%
 
 ## 访问“运行状况评估”页面 {#access-health-assessment}
 
-1. 在 [experiece.adobe.com](https://experience.adobe.com) 登录 Cloud Manager。
+1. 在[experience.adobe.com](https://experience.adobe.com)登录Cloud Manager。
 1. 在&#x200B;**快速访问**&#x200B;部分，单击 **Experience Manager**。
 1. 在左侧面板中点击 **Cloud Manager**。
 1. 选择所需的组织。 下图是图示。 选择您自己的组织名称。
@@ -126,9 +126,9 @@ ht-degree: 9%
 | 模式名称 | 类别 | 类型 | 描述 | 影响 | 自动修复？ |
 | --- | --- | --- | --- | --- | --- |
 | 添加直接用户的自定义AEM组 | 安全性 | 内容分析 | 用户直接添加到AEM组，而不是将IMS组添加为成员。 | 权限管理和安全治理可能会变得复杂。 [IMS支持](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/ims-support) | 否 |
-| 页面中缺少JCR内容节点 | 存储库结构 | 内容分析 | 页面中缺少`jcr:content`节点。 | Experience Manager as a Cloud Service中的功能限制。 [模式检测 — ACV](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
-| 页面中缺少Sling资源类型 | 存储库结构 | 内容分析 | 页面中缺少`sling:resourceType`。 | Experience Manager as a Cloud Service中的功能限制。 [模式检测 — ACV](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
-| 节点数过多的页面 | 性能 | 内容分析 | 页面结构中包含大量节点。 | 页面加载时间缓慢且用户体验不佳。 [模式检测 — PCX](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-pattern-detection/table-of-contents/pcx) | 否 |
+| 页面中缺少JCR内容节点 | 存储库结构 | 内容分析 | 页面中缺少`jcr:content`节点。 | Experience Manager as a Cloud Service中的功能限制。 [模式检测 — ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
+| 页面中缺少Sling资源类型 | 存储库结构 | 内容分析 | 页面中缺少`sling:resourceType`。 | Experience Manager as a Cloud Service中的功能限制。 [模式检测 — ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
+| 节点数过多的页面 | 性能 | 内容分析 | 页面结构中包含大量节点。 | 页面加载时间缓慢且用户体验不佳。 [模式检测 — PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | 否 |
 | 运行的工作流实例过多 | 性能 | 内容分析 | 正在运行的工作流实例过多。 | 整体系统性能下降。 [维护任务](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) | 否 |
 | 未清除的已完成工作流实例 | 性能 | 内容分析 | 未清除较早完成的工作流实例。 | 降低了系统效率和存储成本。 [维护任务](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) | 否 |
 | 内容片段使用情况统计数据 | 统计数据 | 内容分析 | 跟踪正在使用的内容片段的数量。 | 不适用 | 不适用 |
@@ -160,6 +160,3 @@ ht-degree: 9%
 | 存储库结构 | 与JCR存储库组织和结构相关的模式。 |
 | 依赖项 | 与代码依赖性和版本管理相关的模式。 |
 | 统计数据 | 表示使用统计信息和量度的模式。 |
-
-
-
