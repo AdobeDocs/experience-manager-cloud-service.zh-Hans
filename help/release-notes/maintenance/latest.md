@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e035c1c27f652af231034588eb1359354182dcb0
+source-git-commit: 881e7788c2ae8fd01fbe2c0af08228fd96179733
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 57%
+source-wordcount: '562'
+ht-degree: 39%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 57%
 
 以下总结了维护版本25194的持续改进，该版本于2026年4月1日公开发布。 上一个维护版本是版本 24678。
 
-2026.4.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.4.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 >[!NOTE]
 >
@@ -41,6 +41,17 @@ ht-degree: 57%
 * Assets-65187：列数据包含转义逗号时，在云中进行CSV预览。
 * Assets-63441：确保所有用户都有权读取Assets Omnisearch配置。
 * SITES-40095：元数据编辑器：本地内容片段引用超过10个条目。
+
+#### AEM Guides {#guides-25194}
+
+* GUIDES-38412 ：在编辑Schematron `(*.sch)`文件并使用查找和替换功能时，“查找和替换”面板在底部部分显示在屏幕外，阻止访问其输入字段和控件。
+* GUIDES-37806：如果在具有不同条件预设的多个映射中重用同一主题，则发布最新映射到Salesforce时会覆盖主题内容，从而导致向以前发布映射的用户显示的数据不正确。
+* GUIDES-39394：在将最初作为具有特定版本（例如，在`/en/`下）的语言特定资产管理的图像移动到全局文件夹并执行更新版本基线导出时，新基线将继续引用该图像的过时语言特定版本，从而导致基线导出失败。
+* GUIDES-39054：创建动态基线时，编辑器有时会因多个并发API请求而变得无响应，导致所有其他操作暂停。
+* GUIDES-37781：将用户分配给审核任务时，下拉列表会列出所有用户，而非仅列出与所选项目关联的用户，从而导致用户选项无效。
+* GUIDES-39385：打开地图的报表时，“筛选器”面板的加载存在延迟。
+
+如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ### 已知问题 {#known-issues-25194}
 
