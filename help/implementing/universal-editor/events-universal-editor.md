@@ -4,10 +4,10 @@ description: 了解通用编辑器发送的不同事件，您可以使用这些�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: 3e6487b6d37f698a91b07f1ca02aec140d14d1a2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 94%
+source-wordcount: '580'
+ht-degree: 86%
 
 ---
 
@@ -229,6 +229,39 @@ ht-degree: 94%
 {
     details: {}
 }
+```
+
+### aue&amp;amp；冒号；导航 {#navigate}
+
+在将导航中继到通用编辑器Shell之前，通用编辑器CORS库(`@aem-sites/universal-editor-cors`)会调度可取消的`aue:navigate`事件。
+
+有效负载是导航目标的URL。
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+此事件允许页面脚本执行以下操作：
+
+* 通过更改&#x200B;**修改**&#x200B;导航URL（例如，附加`.html`扩展名）。`event.detail.href`
+* **完全通过**&#x200B;取消`event.preventDefault()`导航。
+
+用法示例：
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
 ```
 
 ## 后备事件侦听器 {#fallback-listeners}
