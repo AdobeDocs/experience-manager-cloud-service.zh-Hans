@@ -4,9 +4,10 @@ description: Content Advisor跨Adobe应用程序提供统一的内容发现体�
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 feature: Collaboration
 role: User
-source-git-commit: 76bdd819634e170a1012cea5ec9f480f17db5130
+exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
+source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Content Advisor将智能、上下文感知的发现直接引入创作体验中�
 
 * 访问AEM Assets as a Cloud Service环境。
 
-* 访问已创作内容片段的AEM Sites环境。
+* 使用创作的内容片段访问AEM Sites环境（仅在使用内容片段时才需要）。 访问二进制资产或AEM Assets时，不需要执行此操作。
 
 ## 使用Content Advisor发现智能资产 {#intelligent-asset-discovery-content-advisor}
 
@@ -127,7 +128,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ![预览Dynamic Media呈现版本](assets/content-advisor-dm-preview.png)
 
-单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
+单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
 
 ### 内容片段的发现 {#content-fragments-discovery-content-advisor}
 
@@ -199,4 +200,3 @@ Assets（文件）支持自定义筛选架构，但文件夹和收藏集尚不�
 | AEM Sites（文档创作） | ✓ | ✓ | ✓ | − |
 | AEM Sites（内容片段编辑器） | ✓ | ✓ | ✓ | − |
 | AEM Sites（通用编辑器） | ✓ | ✓ | ✓ | − |
-

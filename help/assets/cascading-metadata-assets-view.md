@@ -5,9 +5,9 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1198'
 ht-degree: 5%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 5%
 * 对于视频，显示适用的字段，例如格式、编解码器、持续时间等。
 * 对于Word或PDF文档，显示字段，例如页数、作者等。
 
-我们使用名为`Image`的下拉字段作为示例，根据文件的图像类型对文件进行分类。 下拉列表包含表示受支持的图像扩展的选项(例如JPG/JPEG、GIF等)。 为确保数据一致性并防止选择或处理不支持的格式，将对此字段应用验证规则。 该规则将评估所选的下拉值，并强制实施与接受的图像格式一致的约束。
+我们使用名为`Image`的下拉字段作为示例，根据文件的图像类型对文件进行分类。 下拉列表包含表示受支持的图像扩展的选项（例如JPG/JPEG、GIF等）。 为确保数据一致性并防止选择或处理不支持的格式，将对此字段应用验证规则。 该规则将评估所选的下拉值，并强制实施与接受的图像格式一致的约束。
 
 >[!IMPORTANT]
 >
@@ -137,7 +137,7 @@ ht-degree: 5%
 
    ![规则](assets/image-choices-rule2.png)
 
-1. 同样，重复这些步骤以在[!UICONTROL Asset Type]字段中的其他资源(如PDF和Word)与字段（如[!UICONTROL Page Count]和[!UICONTROL Author]）之间建立依赖关系。
+1. 同样，重复这些步骤以在[!UICONTROL Asset Type]字段中的其他资源（如PDF和Word）与字段（如[!UICONTROL Page Count]和[!UICONTROL Author]）之间建立依赖关系。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。将元数据表单应用到文件夹。
 
@@ -145,16 +145,13 @@ ht-degree: 5%
 
    ![级联元数据表单输出](assets/cascading-metadata-form-output.png)
 
->[!NOTE]
-> 
->若要提前访问Assets视图帐户上的层叠元数据，请[创建并提交Adobe客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
