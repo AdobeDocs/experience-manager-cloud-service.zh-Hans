@@ -4,10 +4,10 @@ description: 通过示例了解通用编辑器可以在属性面板中编辑的�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
+source-git-commit: 486b192f4ac427156028bc50bb41364f8690724a
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -623,7 +623,13 @@ AEM 内容组件类型会启用 AEM 内容选取器，用于选择任何 AEM 资
 
 #### 数字 {#number}
 
-数字组件类型允许输入数字。它提供了额外的验证类型。
+数字组件类型允许输入数字。它提供了一种额外的配置。
+
+| 配置 | 值类型 | 描述 | 必需 |
+|---|---|---|---|
+| `valueFormat` | `string` | 要存储的数字类型可以是`long` （默认）或`double`。 | 否 |
+
+它还提供其他验证类型。
 
 | 验证类型 | 值类型 | 描述 | 必需 |
 |---|---|---|---|
