@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
+source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 25%
@@ -86,7 +86,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
    * 输入要添加的用户的名字和姓氏
    * 输入其关联的电子邮件地址
    * 单击![添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **添加**。 对要添加的每个用户重复此步骤。
-   * 单击![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)可删除用户。
+   * 单击![关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)可删除用户。
 
    ![添加用户](assets/newrelic-add-users.png)
 
