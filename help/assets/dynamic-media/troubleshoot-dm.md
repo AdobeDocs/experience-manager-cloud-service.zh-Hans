@@ -6,9 +6,9 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 请参阅[新Dynamic Media配置疑难解答](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)。
 
-## 常规(所有Assets) {#general-all-assets}
+## 常规（所有Assets） {#general-all-assets}
 
 以下是适用于所有资产的一些常规提示和技巧。
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 ### 同步日志记录 {#synchronization-logging}
 
-同步错误和问题记录在`error.log` (Experience Manager服务器目录`/crx-quickstart/logs/`)中。 有足够的日志记录功能来确定大多数问题的根本原因，但您可以通过Sling控制台(`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502)增加对](https://localhost:4502/system/console/slinglog)程序包的DEBUG日志记录功能，以收集更多信息。
+同步错误和问题记录在`error.log` （Experience Manager服务器目录`/crx-quickstart/logs/`）中。 有足够的日志记录功能来确定大多数问题的根本原因，但您可以通过Sling控制台(`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502)增加对](https://localhost:4502/system/console/slinglog)程序包的DEBUG日志记录功能，以收集更多信息。
 
 ### 版本控制 {#version-control}
 
@@ -220,6 +220,34 @@ ht-degree: 1%
 1. 在云服务下，导航到Dynamic Media配置页面，然后打开Dynamic Media - S7配置的配置对话框。
 1. 不做更改，选择&#x200B;**保存**。
 此save操作会再次触发逻辑以创建并同步示例资产、查看器预设CSS和图稿。
+
+### 问题：打开“带宽和存储”选项卡时出#2046 {#error-2046-bandwidth-storage}
+
+**如何调试**
+
+![错误#2046显示在Dynamic Media Classic的“带宽和存储”选项卡中](assets/2046-error.png)
+
+* 在Dynamic Media Classic (Scene7)桌面应用程序中打开“带宽和存储”选项卡时，用户会遇到错误#2046。
+* 该问题是由于Adobe AIR框架使用的缓存RSL（运行时共享库）中的数字签名证书过期导致的。
+* 在本地证书重新验证期间发生失败。
+
+**解决方案**
+
+清除本地缓存，强制Adobe AIR下载更新的RSL（运行时共享库）。
+
+**macOS**
+
+1. 导航至：
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. 删除所有`.swz`和`.heu`文件。
+
+**Windows**
+
+1. 导航至：
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. 删除文件夹中的所有文件。
+
+清除缓存后，重新启动应用程序。
 
 ### 问题：查看器预设创作中未加载图像预览 {#image-preview-not-loading}
 
