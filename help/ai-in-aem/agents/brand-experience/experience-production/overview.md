@@ -4,9 +4,9 @@ description: 了解AEM中的Experience Production Agent如何帮助您加快内�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 0666d9660d657876bca77835d333d9dfe536b374
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -51,10 +51,3 @@ Experience Production Agent可自动执行高工作量和高容量任务。 它�
 座席能够处理其他座席技能，示例包括：
 
 * 从Experience Advisory代理获取源资产
-
-## 激活 {#activation}
-
-要激活并访问Experience Production Agent，您需要联系Adobe。 要开始配置，您可以联系：
-
-* `experience-production-agent@adobe.com`
-* 或与您的客户团队联系
