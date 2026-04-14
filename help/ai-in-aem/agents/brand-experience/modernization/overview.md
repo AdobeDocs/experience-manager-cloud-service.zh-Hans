@@ -4,9 +4,9 @@ description: 了解Experience现代化代理如何借助人工智能将新网站
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,10 @@ Experience Modernization Console入门！
 
 * 如果您正在通过定位文档创作来使您的网站现代化，请[从此处开始。](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 * 如果通过定位AEM创作来使您的网站现代化，请[从此处开始。](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+
+## 项目文档技能 {#project-documentation}
+
+认识到项目移交的时间密集性质，[项目文档技能](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)可在创作和开发工作完成后自动生成全面的文档。
 
 ## 代理结果工程师(AOE)交付 {#aoe-delivery}
 

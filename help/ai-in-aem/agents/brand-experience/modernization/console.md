@@ -4,9 +4,9 @@ description: Experience Modernization Console界面和功能的参考指南
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -157,12 +157,18 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
 
 ## 设置视图 {#settings-view}
 
-设置视图允许您管理控制台的基本设置。
+设置视图允许您管理控制台的基本设置，该视图分为以下部分。
 
 ![设置视图](assets/settings-view.png)
 
+如果您更改了任何分区中的任意值，请单击&#x200B;**保存**&#x200B;将这些更改保存到单个分区。
+
 * **项目**&#x200B;允许您查看和编辑项目设置，如自定义库URL。
-* **支持**&#x200B;允许您向AEM支持团队请求帮助。
+   * **库URL** — 此URL指向定义可用块、其变体和示例内容的library.json文件。
+   * **站点基本URL** — 正在迁移的网站的源URL
+* **代理权限** — 允许代理访问配置选项
+   * **允许LLM代表我访问admin.hlx.page** — 启用后，AI助手可以使用您的IMS凭据从Adobe Experience Manager获取站点配置和元数据。
+   * **自定义IMS令牌** — 您可以提供一个要使用的自定义IMS令牌，而不是您的默认会话令牌。
 * **凭据**&#x200B;允许您为Figma指定个人访问令牌，以便[控制台可以访问项目的设计块。](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * 令牌需要以下只读范围：
       * `file_content:read`
@@ -173,4 +179,7 @@ Experience Modernization Console是Edge Delivery Services的托管、AI辅助的
       * `file_dev_resources:read`
       * `projects:read`
    * [有关设置个人访问令牌的更多信息，请参阅Figma文档](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens)。
-* **重置工作区**&#x200B;将控制台还原为开始状态，所有未推送或未上传的更改都将丢失。
+* **支持**&#x200B;在您提出支持请求时汇总了与Adobe支持团队共享的信息。
+   * **请求支持** — 单击以在不离开控制台的情况下从Adobe启动支持请求。
+* **危险区域**&#x200B;包含可以还原工作区的设置。
+   * **重置工作区** — 单击以将工作区重置为其初始状态。 无法撤消此操作。
