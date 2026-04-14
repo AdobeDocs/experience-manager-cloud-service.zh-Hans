@@ -4,9 +4,9 @@ description: 了解使用Experience Modernization Console通过Experience Modern
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4b1da46f6739f43d38bc05584c246371340a966
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,11 @@ ht-degree: 0%
    * 网站内容的初始导入可能需要几分钟的时间。
    * 控制台在开始工作时会向您提供持续的反馈，包括计划步骤的概述。
      ![内容导入](assets/content-import.png)
-1. 导入网站后，**Workspace**&#x200B;面板会显示页面。 选择要在右侧面板中预览的页面。
+1. 导入网站后，**Workspace**面板会显示页面。 选择要在右侧面板中预览的页面。
    ![内容已导入](assets/content-imported.png)
 1. 现在您有了内容，可以提示从同一源导入样式。
    * “从`https://wknd-trendsetters.site`导入常规样式。”
-1. 与初始内容导入一样，导入过程可能需要几分钟时间，并且控制台在处理您的请求并导入样式时会提供反馈。 任务完成后，单击右侧面板中的&#x200B;**刷新预览**&#x200B;以查看样式化的内容。
+1. 与初始内容导入一样，导入过程可能需要几分钟时间，并且控制台在处理您的请求并导入样式时会提供反馈。 任务完成后，单击右侧面板中的&#x200B;**刷新预览**以查看样式化的内容。
    ![样式已导入](assets/styles-imported.png)
 
 现在，您已将内容和样式导入到控制台中。
@@ -96,7 +96,7 @@ ht-degree: 0%
    * 如果您使用了样板，则会提供`fstab.yaml`。
 1. 选择要上载的文件，然后单击&#x200B;**上载**。
    ![上载内容对话框](assets/upload-content.png)
-1. 控制台通过将&#x200B;**上传**&#x200B;按钮灰显来指示上传过程。
+1. 控制台通过将&#x200B;**上传**按钮灰显来指示上传过程。
    ![正在上传](assets/uploading.png)
 1. 完成后，控制台底部会显示通知。
    在AEM中查看![](assets/view-in-aem.png)
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 在对代码所做的更改感到满意后，可以将它们推送到GitHub存储库。
 
-1. 切换到&#x200B;**代码**&#x200B;视图（左侧边栏中为`</>`图标），然后切换到&#x200B;**Git更改**&#x200B;选项卡（右上角的分支图标）。
+1. 切换到&#x200B;**代码**&#x200B;视图（左侧边栏中为`</>`图标），然后切换到&#x200B;**Git更改**选项卡（右上角的分支图标）。
    ![代码视图](assets/code-view-git-changes.png)
 1. 在更改的文件列表中，如果某些文件显示为未跟踪，请单击其`+`按钮以暂存它们。
 1. 单击右上方的&#x200B;**GitHub操作**&#x200B;按钮，然后从下拉列表中选择&#x200B;**推送**。
@@ -142,6 +142,16 @@ GitHub中的![代码](assets/code-in-github.png)
 ![已发布的预览内容](assets/published-preview.png)
 
 如果将代码推送到`main`以外的分支，则从“文档创作”中打开的预览将不会显示样式。 通过更新预览的URL更改为分支，此时您可以看到自己的样式。
+
+## 疑难解答 {#troubleshooting}
+
+### 允许列表IP地址 {#allowlist-ip-addresses}
+
+如果您的站点位于防火墙或访问限制之后，您可以允许列表以下IP地址，以便后端服务可以擦除您的站点：
+
+* `34.228.136.112`
+* `54.90.51.39`
+* `3.224.194.242`
 
 ## 其他资源 {#additional-resources}
 
