@@ -4,7 +4,7 @@ description: 了解如何将外部存储库添加到 Cloud Manager。 Cloud Mana
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 0f90c337b3ea6eee5f99d4a777790a92b2af5577
+source-git-commit: b267227fd855e0959aaad6c2fe74540d020f4233
 workflow-type: tm+mt
 source-wordcount: '2442'
 ht-degree: 26%
