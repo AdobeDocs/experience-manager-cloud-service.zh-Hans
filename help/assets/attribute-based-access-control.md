@@ -4,9 +4,9 @@ description: 了解如何启用基于属性的访问控制来定义基于元数�
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: ec259b3ec1b420140e45e0eb279fe867fc996113
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1420'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 * 减少重复数量 - 提高资产完整性。当同一资产被不同组共享时，基于文件夹的权限需要设置副本。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475424/?captions=chi_hans&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## 如何启用基于属性的访问控制？ {#enable-attribute-based-access-control}
 
@@ -41,6 +41,10 @@ ht-degree: 3%
 
 
 使用本文中定义的准则，在电子表格中定义规则。
+
+>[!IMPORTANT]
+>
+>您还可以使用[AEM治理代理](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-content-hub)设置基于属性的访问控制规则。
 
 <!--
 
