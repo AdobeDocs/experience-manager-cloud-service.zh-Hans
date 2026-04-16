@@ -163,7 +163,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >您可以使用快速开发环境(RDE)来部署和测试您的配置：
 >
 >* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [如何使用快速开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [如何使用快速开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 示例CDN供应商配置 {#sample-configurations}
 
