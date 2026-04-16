@@ -4,10 +4,10 @@ description: 了解有关 Experience Manager as a Cloud Service 的重要安全�
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
 feature: Security
 role: Admin
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 9401e35733f6064c6b185d83407307a9a1e2366f
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 63%
+source-wordcount: '188'
+ht-degree: 53%
 
 ---
 
@@ -27,3 +27,7 @@ AEM as a Cloud Service 采取了积极主动的安全方法和严格的程序，
 是。AEM Forms通过工作流历史记录、访问控制和系统日志支持可审核性，这有助于保险公司满足内部和外部审核需求。
 
 请参阅 [Adobe Experience Manager Cloud Service 安全性](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf)白皮书以深入了解 AEM as a Cloud Service 安全性概述。
+
+>[!NOTE]
+>
+>另请参阅Adobe Experience Manager as a Cloud Service为Adobe准备的[HIPAA](/help/compliance/hipaa/hipaa-readiness.md)文档，以帮助您了解HIPAA准备工作并遵守相关法规。

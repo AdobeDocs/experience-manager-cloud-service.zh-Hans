@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
+source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 9%
+source-wordcount: '1521'
+ht-degree: 8%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 9%
 Adobe HIPAA兼容和WAF-DDOS（Web应用程序防火墙 — 分布式拒绝服务）促进了基于云的安全性，这是针对漏洞的多层防护方法的一部分。
 
 * **HIPAA** — 此选项启用Adobe的HIPAA就绪解决方案实施。
-   * [详细了解](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) Adobe 的 HIPAA 就绪解决方案实施。
+   * 了解有关Adobe Experience Manager as a Cloud Service的[HIPAA准备工作](/help/compliance/hipaa/hipaa-readiness.md)和[Adobe的HIPAA准备工作解决方案实施](https://www.adobe.com/trust/compliance/hipaa-ready.html)的更多信息。
    * 程序创建后无法启用或禁用HIPAA。
 * **WAF-DDOS保护** — 此选项通过规则启用Web应用程序防火墙以保护您的应用程序。
    * 激活后，可通过设置[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)来配置WAF-DDOS保护。
