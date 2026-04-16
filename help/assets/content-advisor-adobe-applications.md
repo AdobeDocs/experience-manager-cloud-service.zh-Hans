@@ -5,16 +5,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
+source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
 
 # 使用内容审查程序访问Adobe应用程序中的AEM内容{#content-advisor-aem-assets-adobe-applications}
 
-Content Advisor提供了跨Adobe应用程序的统一内容发现体验。 Content Advisor与Adobe Workfront（即将推出）、AJO B2C（即将推出）、AEM Sites和其他应用程序原生集成，在单个智能界面中将内容（资源和内容片段）整合在一起。 它使您能够在工作流程中轻松地发现、浏览和重新使用最相关的内容，因此您可以在不中断上下文的情况下更快地移动。
+Content Advisor提供了跨Adobe应用程序的统一内容发现体验。 Content Advisor与Adobe Workfront、AJO B2C（即将推出）、AEM Sites和其他应用程序原生集成，在单个智能界面中将内容（资源和内容片段）整合在一起。 它使您能够在工作流程中轻松地发现、浏览和重新使用最相关的内容，因此您可以在不中断上下文的情况下更快地移动。
 
 >[!IMPORTANT]
 > 
@@ -128,7 +128,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ![预览Dynamic Media呈现版本](assets/content-advisor-dm-preview.png)
 
-单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
+单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
 
 ### 内容片段的发现 {#content-fragments-discovery-content-advisor}
 
@@ -196,7 +196,9 @@ Assets（文件）支持自定义筛选架构，但文件夹和收藏集尚不�
 
 | 应用程序 | 支持用于搜索Assets的简短上传 | 搜索Assets时支持建议的内容面板 | 搜索Assets时支持Dynamic Media面板 | 支持搜索内容片段 |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| AEM Sites（基于文档的创作） | ✓ | − | ✓ | − |
-| AEM Sites（文档创作） | ✓ | ✓ | ✓ | − |
+| [AEM Sites — 文档创作](https://www.aem.live/docs/authoring-guide#document-authoring) | ✓ | ✓ | ✓ | − |
+| [AEM Sites — 通用编辑器](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites) | ✓ | ✓ | ✓ | − |
+| AEM Sites - [GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[Sharepoint创作](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) | ✓ | − | ✓ | − |
 | AEM Sites（内容片段编辑器） | ✓ | ✓ | ✓ | − |
-| AEM Sites（通用编辑器） | ✓ | ✓ | ✓ | − |
+| Adobe Workfront工作流程 | ✓ | ✓ | − | ✓ |
+| Adobe Workfront规划 | ✓ | ✓ | − | ✓ |
