@@ -4,9 +4,9 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
+source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1786'
 ht-degree: 11%
 
 ---
@@ -95,7 +95,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 1. 将SNI设置为Adobe CDN的入口。
 1. 将Host标头设置为原始域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如：`X-Forwarded-Host:example.com`。
-1. 设置`X-AEM-Edge-Key`。 应使用Cloud Manager配置管道配置该值，如[本文](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)中所述。
+1. 设置`X-AEM-Edge-Key`。 应首先使用Cloud Manager配置管道配置该值，然后在客户CDN中配置相同的边缘键，如[本文](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)中所述。
 
    * 需要，以便Adobe CDN能够验证请求的源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，受信任的调用方（即客户管理的CDN）有责任确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。
    * 或者，也可以在`X-AEM-Edge-Key`不存在时阻止对Adobe CDN入口的访问。 如果您需要直接访问Adobe CDN的入口（将被阻止），请通知Adobe。
@@ -163,7 +163,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >您可以使用快速开发环境(RDE)来部署和测试您的配置：
 >
 >* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [如何使用快速开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [如何使用快速开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 示例CDN供应商配置 {#sample-configurations}
 
