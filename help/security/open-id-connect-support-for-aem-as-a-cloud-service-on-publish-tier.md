@@ -4,10 +4,10 @@ description: 了解如何在发布层上为 AEM as a Cloud Service 设置 Open I
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
+source-git-commit: 70687e4f2ea0df923e44237bc20635745c46323a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 66%
+source-wordcount: '2610'
+ht-degree: 53%
 
 ---
 
@@ -195,7 +195,303 @@ IdP 配置中的信息：
 
 ### 可选：实施一个自定义 UserInfoProcessor {#implement-a-custom-userinfoprocessor}
 
-通过 ID 令牌验证用户身份，在为 IdP 定义的 `userInfo` 端点中获取附加属性。如果必须执行额外的非标准操作，则 [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) 的自定义实施是 Sling 的默认实施。
+用户通过ID令牌进行身份验证，并从为IdP定义的`userInfo`端点获取其他属性。 `UserInfoProcessor`负责将从身份提供程序接收的数据转换为AEM可用于用户同步的凭据和属性。
+
+#### 何时创建自定义UserInfoProcessor {#when-to-create-custom-userinfoprocessor}
+
+默认[SlingUserInfoProcessorImpl](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java)处理标准OIDC声明和组同步。 如果需要，您可能需要自定义实施：
+
+* 从ID令牌或UserInfo响应中提取和处理自定义声明
+* 将声明转换或映射到不同的属性名称
+* 为从嵌套声明中提取组实施自定义逻辑
+* 添加不属于标准OIDC配置文件的其他用户属性
+* 处理访问令牌或刷新特定用例的令牌
+* 与外部系统集成，在验证期间丰富用户数据
+
+#### 了解UserInfoProcessor界面 {#understanding-userinfoprocessor-interface}
+
+`UserInfoProcessor`包中的`org.apache.sling.auth.oauth_client.spi`接口定义了两种方法：
+
+```java
+public interface UserInfoProcessor {
+    /**
+     * Process the UserInfo and token response to create OIDC credentials
+     *
+     * @param userInfo - JSON response from the UserInfo endpoint (may be null)
+     * @param tokenResponse - JSON response from the token endpoint
+     * @param oidcSubject - The subject claim from the ID token
+     * @param idp - The configured IDP name
+     * @return OidcAuthCredentials containing user attributes and group memberships
+     */
+    @NotNull OidcAuthCredentials process(
+        @Nullable String userInfo,
+        @NotNull String tokenResponse,
+        @NotNull String oidcSubject,
+        @NotNull String idp
+    );
+
+    /**
+     * @return The name of the OIDC connection this processor is associated with
+     */
+    @NotNull String connection();
+}
+```
+
+返回的`OidcAuthCredentials`对象允许您：
+* 通过`setAttribute(key, value)`设置用户属性 — 这些属性基于`DefaultSyncHandler`属性映射进行同步
+* 通过`addGroup(groupName)`添加组成员资格 — 这些组是在AEM中创建/同步的
+
+#### 示例：自定义UserInfoProcessor实施 {#custom-userinfoprocessor-implementation}
+
+以下是一个完整示例，显示如何实施自定义`UserInfoProcessor`：
+
+```java
+package com.mycompany.aem.auth;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
+import org.apache.sling.auth.oauth_client.spi.OidcAuthCredentials;
+import org.apache.sling.auth.oauth_client.spi.UserInfoProcessor;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.metatype.annotations.AttributeDefinition;
+import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+/**
+ * Custom UserInfoProcessor that extracts additional claims from the ID token
+ * and adds custom user attributes and group memberships.
+ */
+@Component(service = UserInfoProcessor.class, property = {"service.ranking:Integer=50"})
+@Designate(ocd = CustomUserInfoProcessor.Config.class, factory = true)
+public class CustomUserInfoProcessor implements UserInfoProcessor {
+
+    private static final Logger logger = LoggerFactory.getLogger(CustomUserInfoProcessor.class);
+
+    @ObjectClassDefinition(name = "Custom UserInfo Processor")
+    @interface Config {
+        @AttributeDefinition(name = "Connection Name", description = "OIDC Connection Name")
+        String connection();
+    }
+
+    private final String connection;
+
+    @Activate
+    public CustomUserInfoProcessor(Config config) {
+        this.connection = config.connection();
+        logger.info("CustomUserInfoProcessor activated for connection: {}", connection);
+    }
+
+    @Override
+    public @NotNull OidcAuthCredentials process(
+            @Nullable String userInfo,
+            @NotNull String tokenResponse,
+            @NotNull String oidcSubject,
+            @NotNull String idp) {
+
+        // Parse the token response to extract tokens
+        JsonObject tokenJson = JsonParser.parseString(tokenResponse).getAsJsonObject();
+        String accessToken = tokenJson.has("access_token") ?
+            tokenJson.get("access_token").getAsString() : null;
+        String idToken = tokenJson.has("id_token") ?
+            tokenJson.get("id_token").getAsString() : null;
+
+        logger.debug("Processing authentication for subject: {}", oidcSubject);
+
+        // Decode and extract claims from ID Token
+        JsonObject claims = null;
+        if (idToken != null) {
+            claims = decodeJwtPayload(idToken);
+            logger.debug("Extracted claims from ID token: {}", claims);
+        }
+
+        // Create credentials object
+        OidcAuthCredentials credentials = new OidcAuthCredentials(oidcSubject, idp);
+        credentials.setAttribute(".token", "");
+
+        // Extract standard profile attributes
+        if (claims != null) {
+            // Standard OIDC claims
+            setAttributeIfPresent(credentials, claims, "given_name", "profile/given_name");
+            setAttributeIfPresent(credentials, claims, "family_name", "profile/family_name");
+            setAttributeIfPresent(credentials, claims, "email", "profile/email");
+            setAttributeIfPresent(credentials, claims, "name", "profile/name");
+
+            // Custom claims from your IdP
+            setAttributeIfPresent(credentials, claims, "department", "profile/department");
+            setAttributeIfPresent(credentials, claims, "employee_id", "profile/employeeId");
+            setAttributeIfPresent(credentials, claims, "job_title", "profile/jobTitle");
+        }
+
+        // Extract group memberships from claims
+        if (claims != null && claims.has("groups")) {
+            if (claims.get("groups").isJsonArray()) {
+                claims.get("groups").getAsJsonArray().forEach(group -> {
+                    credentials.addGroup(group.getAsString());
+                });
+            }
+        }
+
+        // Optionally store tokens if needed for later API calls
+        // Note: Only store tokens if your application needs to call external APIs
+        // on behalf of the user. Tokens are encrypted before storage.
+        if (accessToken != null) {
+            credentials.setAttribute("access_token", accessToken);
+        }
+
+        return credentials;
+    }
+
+    @Override
+    public @NotNull String connection() {
+        return connection;
+    }
+
+    /**
+     * Helper method to set attribute if present in claims
+     */
+    private void setAttributeIfPresent(OidcAuthCredentials credentials,
+                                      JsonObject claims,
+                                      String claimName,
+                                      String attributeName) {
+        if (claims.has(claimName) && !claims.get(claimName).isJsonNull()) {
+            String value = claims.get(claimName).getAsString();
+            if (value != null && !value.isEmpty()) {
+                credentials.setAttribute(attributeName, value);
+            }
+        }
+    }
+
+    /**
+     * Decode JWT payload (middle part) to extract claims
+     */
+    private JsonObject decodeJwtPayload(String jwt) {
+        try {
+            String[] parts = jwt.split("\\.");
+            if (parts.length != 3) {
+                logger.warn("Invalid JWT format");
+                return null;
+            }
+
+            // Decode the payload (second part)
+            String payload = parts[1];
+            // Add padding if needed
+            payload = payload + "====".substring(0, (4 - payload.length() % 4) % 4);
+            // Replace URL-safe characters
+            payload = payload.replace('-', '+').replace('_', '/');
+
+            byte[] decoded = Base64.getDecoder().decode(payload);
+            String json = new String(decoded, StandardCharsets.UTF_8);
+            return JsonParser.parseString(json).getAsJsonObject();
+        } catch (Exception e) {
+            logger.error("Failed to decode JWT payload", e);
+            return null;
+        }
+    }
+}
+```
+
+#### 配置 {#custom-userinfoprocessor-configuration}
+
+在`UserInfoProcessor`下的AEM项目中为自定义`ui.config/src/main/content/jcr_root/apps/myapp/osgiconfig/config.publish/`创建配置文件：
+
+**com.mycompany.aem.auth.CustomUserInfoProcessor~azure.cfg.json**
+
+```json
+{
+  "connection": "azure"
+}
+```
+
+该配置必须与在`OidcConnectionImpl`配置中定义的连接名称匹配。 如果为同一连接注册了多个处理器，`service.ranking`注释中的`@Component`属性（在本示例中设置为`50`）将确定优先级。 较高的排名优先于默认的`SlingUserInfoProcessorImpl`（其排名为`0`）。
+
+#### 依赖项 {#custom-userinfoprocessor-dependencies}
+
+将以下依赖项添加到核心模块的`pom.xml`：
+
+```xml
+<dependency>
+    <groupId>org.apache.sling</groupId>
+    <artifactId>org.apache.sling.auth.oauth-client</artifactId>
+    <version>0.1.7</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.9</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+#### 使用DefaultSyncHandler同步属性 {#synchronizing-custom-attributes}
+
+要确保将自定义属性保留到JCR中的用户节点，请更新您的`DefaultSyncHandler`配置以包含属性映射：
+
+**org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json**
+
+```json
+{
+  "user.expirationTime": "1h",
+  "user.membershipExpTime": "1h",
+  "user.propertyMapping": [
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
+    "profile/email=profile/email",
+    "profile/department=profile/department",
+    "profile/employeeId=profile/employeeId",
+    "profile/jobTitle=profile/jobTitle",
+    "access_token=access_token"
+  ],
+  "user.pathPrefix": "azure",
+  "handler.name": "azure"
+}
+```
+
+格式为 `jcrPropertyPath=credentialAttributeName`。左侧是属性存储在`/home/users`下的用户节点中的位置，右侧与您使用`UserInfoProcessor`在`credentials.setAttribute()`中设置的属性名称匹配。
+
+#### 部署和测试 {#custom-userinfoprocessor-deployment}
+
+1. **生成并部署**&#x200B;包含自定义`UserInfoProcessor`的AEM项目：
+
+   ```bash
+   mvn clean install -PautoInstallPackage
+   ```
+
+2. 在&#x200B;**处的OSGi控制台中**&#x200B;验证注册`/system/console/components`：
+   * 搜索您的自定义处理器类别名称
+   * 验证组件是否处于活动状态以及连接配置是否正确
+
+3. **测试身份验证流程**：
+   * 访问在`OidcAuthenticationHandler`中配置的受保护路径
+   * 成功验证后，检查CRXDE中位于`/home/users/<prefix>/<username>`的用户节点
+   * 验证自定义属性是否已同步
+   * 检查`/home/groups`下的组成员资格
+
+4. **启用调试日志记录**&#x200B;以解决以下问题：
+
+   ```
+   Logger: com.mycompany.aem.auth
+   Log Level: DEBUG
+   ```
+
+#### 最佳做法 {#custom-userinfoprocessor-best-practices}
+
+* **最大程度地减少令牌存储**：如果您的应用程序需要代表用户向外部服务进行API调用，请仅存储访问令牌或刷新令牌。 令牌已加密，但仍会增加开销。
+* **验证声明**：在处理声明之前，请始终检查声明是否存在且不是null。
+* **错误处理**：正确记录错误，但即使缺少可选声明，请确保身份验证流程也能完成。
+* **性能**：保持处理逻辑轻量级，因为它在每次身份验证上运行。
+* **安全性**：从不记录敏感信息，如完整令牌或用户密码。 如果记录令牌以进行调试，请使用`substring()`。
+* **测试**：使用你的IdP中的各种用户配置文件进行测试，以确保正确处理所有声明变体。
 
 ### 为外部组配置ACL {#configure-acl-for-external-groups}
 
@@ -400,12 +696,12 @@ ACL可以使用RepoInit脚本直接应用于外部组。
 
 ## 如何从Saml身份验证处理程序迁移到Oidc身份验证处理程序
 
-如果AEM已配置SAML身份验证处理程序，并且存储库中存在启用了[数据同步](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的用户，则原始SAML用户与新OIDC用户之间可能会发生冲突。
+如果AEM已配置SAML身份验证处理程序，并且存储库中存在启用了[数据同步](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的用户，则原始SAML用户与新OIDC用户之间可能会发生冲突。
 
 1. 在[SlingUserInfoProcessor](#configure-oidc-authentication-handler)配置中配置`idpNameInPrincipals`OidcAuthenticationHandler[并启用](#configure-slinguserinfoprocessor)
 1. 为外部组[设置](#configure-acl-for-external-groups)ACL。
 1. 从用户登录后，可以删除由saml身份验证处理程序创建的旧用户。
 
 >[!NOTE]
->在禁用SAML身份验证处理程序并启用OIDC身份验证处理程序后，如果未启用[数据同步](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，则现有会话将无效。 用户需要再次进行身份验证，这会导致在存储库中创建新的OIDC用户节点。
+>在禁用SAML身份验证处理程序并启用OIDC身份验证处理程序后，如果未启用[数据同步](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，则现有会话将无效。 用户需要再次进行身份验证，这会导致在存储库中创建新的OIDC用户节点。
 
