@@ -3,13 +3,13 @@ title: 使用人工智能工具进行本地开发
 description: 了解如何使用项目上下文、代理技能和MCP服务器配置AI编码工具以加速AEM as a Cloud Service开发。
 feature: Developing
 role: Developer
-source-git-commit: 0bc00b6e14be6ba111ac26ce69f07e138ca400e4
+exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
+source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
-
 
 # 使用人工智能工具进行本地开发 {#local-development-with-ai-tools}
 
@@ -69,7 +69,7 @@ Adobe将在&#x200B;**[分支上的](https://github.com/adobe/skills/tree/beta/sk
 
 ```bash
 # Add the Adobe Skills marketplace (one-time setup)
-/plugin marketplace add adobe/skills#beta
+/plugin marketplace add adobe/skills
 
 # Install all available skills
 /plugin install aem-cloud-service@adobe-skills
@@ -79,17 +79,17 @@ Adobe将在&#x200B;**[分支上的](https://github.com/adobe/skills/tree/beta/sk
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
 ```
 
 #### Upskill（GitHub CLI扩展） {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
-gh extension install trieloff/gh-upskill
+gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --branch beta --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path skills/aem/cloud-service --all
 ```
 
 ### 使用secure-agents-md技能 {#use-the-ensure-agents-md-skill}
@@ -150,7 +150,7 @@ Dispatcher技能处理编排和咨询指导。 如下所述的Dispatcher MCP服�
 
 ### 安装内容包 {#install-the-content-package}
 
-从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)下载内容包，然后使用位于`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`的包管理器将`/crx/packmgr`安装到本地快速入门中。
+从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)下载内容包，然后使用位于`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`的包管理器将`/crx/packmgr`安装到本地快速入门中。
 
 **兼容性：**&#x200B;已与AEM SDK `2026.2.24678.20260226T154829Z-260200`及更高版本一起验证。
 
@@ -210,7 +210,7 @@ Dispatcher MCP服务器与AEM Dispatcher SDK捆绑在一起。 它使AI工具能
 ### 先决条件 {#prerequisites}
 
 - Docker Desktop 4.x或更高版本，已安装并正在运行
-- 从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)下载的AEM Dispatcher SDK
+- 从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)下载的AEM Dispatcher SDK
 
 >[!NOTE]
 >
