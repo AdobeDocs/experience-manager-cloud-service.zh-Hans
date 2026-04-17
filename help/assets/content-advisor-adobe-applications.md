@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
+source-git-commit: 2ae4533890cbf01183df8b5283109fff0b9eae60
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Content Advisor提供了跨Adobe应用程序的统一内容发现体验。 Conte
 Content Advisor将智能、上下文感知的发现直接引入创作体验中，帮助您根据自己的意图快速找到相关、经批准的内容。 借助智能建议、Dynamic Media演绎版和详细资产元数据等功能，您可以在不离开应用程序界面的情况下高效地评估和重用内容，从而加快内容创建，同时保持品牌一致性。
 
 ![内容顾问横幅图像](assets/content-advisor-banner-image-updated.png)
+
+Adobe Experience Manager (AEM) Assets还与Adobe Express原生集成，允许您直接在Express界面中使用Content Advisor发现、访问和使用AEM Assets中的资源。 有关详细信息，请参阅[在Adobe Express中使用内容审查器访问AEM Assets](/help/assets/native-integration-adobe-express.md)。
 
 
 ## 先决条件 {#prerequisites}
@@ -128,7 +130,7 @@ Dynamic Media演绎版提供现成的渠道优化版资产，包括[图像预设
 
 ![预览Dynamic Media呈现版本](assets/content-advisor-dm-preview.png)
 
-单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
+单击&#x200B;**[!UICONTROL 添加修饰符]**，在文本框中指定修饰符，然后按Enter实时将转换应用于所有资产演绎版。 同样，您可以向格式副本添加多个修饰符并预览这些转换。 单击该演绎版名称，然后单击&#x200B;**[!UICONTROL 选择]**&#x200B;使该演绎版可在您的主机应用程序中使用。 应用这些修饰符后的演绎版不会保存。 查看[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和具有OpenAPI的[Dynamic Media](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支持的修饰符列表。
 
 ### 内容片段的发现 {#content-fragments-discovery-content-advisor}
 
