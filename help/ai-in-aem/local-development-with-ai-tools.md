@@ -4,20 +4,14 @@ description: 了解如何使用项目上下文、代理技能和MCP服务器配�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
+source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
 
 # 使用人工智能工具进行本地开发 {#local-development-with-ai-tools}
-
->[!IMPORTANT]
->
->本文中介绍的功能是&#x200B;**测试版**。 通过提前访问Adobe正在开发的功能，客户和合作伙伴可以提供反馈（通过电子邮件发送[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)）并影响产品开发。 它还有助于客户在功能正式发布之前做好采用新功能的准备。
->
->Beta版本可能包含缺陷，并“按原样”提供，无任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持（通过Adobe支持服务或其他方式）Beta版。 Adobe建议客户谨慎使用，不要依赖测试版或随附的任何文档或材料的正确功能或性能。 Beta版中的功能和API如有更改，恕不另行通知。 因此，使用测试版完全由客户自行承担风险。
 
 >[!NOTE]
 >
@@ -52,7 +46,7 @@ AI编码代理（Claude Code、Cursor、GitHub Copilot和类似工具）对AEM�
 
 技能是用于对多步骤开发工作流进行编码的说明集。 在调用时，人工智能遵循该技能的程序，而不是仅依赖一般知识，产生一致、符合公约的结果。
 
-Adobe将在&#x200B;**[分支上的](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)adobe/skills**`beta`存储库中发布AEM as a Cloud Service技能，因为此功能尚未公开发布：
+Adobe在&#x200B;**[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)**&#x200B;存储库中发布AEM as a Cloud Service技能：
 
 | 技能 | 用途 |
 |---|---|
@@ -202,6 +196,12 @@ Dispatcher技能处理编排和咨询指导。 如下所述的Dispatcher MCP服�
 >值`Basic YWRtaW46YWRtaW4=`是`admin:admin`的Base64编码，这是本地Quickstart的默认凭据。 请勿在非本地环境中使用它。
 
 ## Dispatcher MCP服务器 {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>此功能是&#x200B;**测试版**。 通过提前访问Adobe正在开发的功能，客户和合作伙伴可以提供反馈（通过电子邮件发送[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)）并影响产品开发。 它还有助于客户在功能正式发布之前做好采用新功能的准备。
+>
+>Beta版本可能包含缺陷，并“按原样”提供，无任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持（通过Adobe支持服务或其他方式）Beta版。 Adobe建议客户谨慎使用，不要依赖测试版或随附的任何文档或材料的正确功能或性能。 Beta版中的功能和API如有更改，恕不另行通知。 因此，使用测试版完全由客户自行承担风险。
 
 Dispatcher MCP服务器与AEM Dispatcher SDK捆绑在一起。 它使AI工具能够针对Docker中本地运行的Dispatcher实例验证Dispatcher和Apache HTTPD配置、跟踪请求处理和检查缓存行为。
 
