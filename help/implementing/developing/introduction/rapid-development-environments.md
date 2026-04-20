@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 161d6be186a6124840d93672470de91399481f20
 workflow-type: tm+mt
-source-wordcount: '5446'
+source-wordcount: '5835'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ RDE使开发人员能够快速部署和审查更改，从而最大限度地减�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-您可以看到其他视频演示[如何设置它](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[开发生命周期](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)。
+您可以看到其他视频演示[如何设置它](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[开发生命周期](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)。
 
 ## 简介 {#introduction}
 
@@ -76,7 +76,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
 
 **概述**&#x200B;屏幕现在在&#x200B;**环境**&#x200B;信息卡中显示您的新环境。
 
-创建后，会将RDE设置为最新可用的AEM版本。 RDE重置(也可以使用Cloud Manager执行)可循环RDE并将其设置为最新可用的AEM版本。
+创建后，会将RDE设置为最新可用的AEM版本。 RDE重置（也可以使用Cloud Manager执行）可循环RDE并将其设置为最新可用的AEM版本。
 
 有关使用Cloud Manager创建环境、管理谁有权访问这些环境以及分配自定义域的更多信息，请参阅Cloud Manager文档中的[程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
 
@@ -184,7 +184,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 可以使用[查看组织ID](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下记录的方法查找您自己的组织ID。
+   * 可以使用[查看组织ID](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下记录的方法查找您自己的组织ID。
 
 1. 接下来，配置您的项目ID：
 
@@ -200,7 +200,7 @@ retrieving programs of your organization ...
 
    这些步骤要求您成为Cloud Manager **开发人员 — Cloud Service**&#x200B;产品配置文件的成员。 有关更多详细信息，请参阅[将团队成员分配给Cloud Manager产品配置文件 — 分配开发人员产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
 
-有关更多信息和演示，请观看视频教程[如何设置RDE (06:24)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
+有关更多信息和演示，请观看视频教程[如何设置RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
 </details>
 
 ## 在开发新功能时使用RDE {#using-rde-while-developing-a-new-feature}
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-有关更多信息和演示，请参阅视频教程[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
+有关更多信息和演示，请参阅视频教程[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
 
 
 ## 从外部Git提供商部署到RDE {#deploy-to-rde}
@@ -549,7 +549,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 **使用说明**
 
 * 当前，仅AEM内容和Dispatcher包支持部署到RDE。
-* 尚不支持部署其他包类型(例如，完整的AEM应用程序包)。
+* 尚不支持部署其他包类型（例如，完整的AEM应用程序包）。
 * 目前，不支持使用注释重置RDE环境。 相反，必须使用现有的AIO CLI重置命令，如此处[所述的](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line)。
 
 **工作方式**
@@ -707,6 +707,74 @@ RDE重置启动后，通常需要几分钟才能完成并将环境恢复到默�
 ![从环境信息卡重置RDE](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 有关如何使用Cloud Manager管理环境的更多信息，请参阅[Cloud Manager文档](/help/implementing/cloud-manager/manage-environments.md)。
+
+## 快照 {#snapshots}
+
+>[!NOTE]
+>
+>此功能位于Beta中。 如果您有兴趣使用此新功能并分享您的反馈，请发送电子邮件至[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)，说明您的用例。
+
+RDE支持对代码和内容的当前状态进行快照，稍后可以恢复。 在同步可能需要还原的代码或在开发不同功能之间切换时，快照很有用。 也可以仅从快照中恢复可变内容作为测试的已知起点。
+
+每个RDE环境最多有7个快照。 标记为删除但仍保留在7天保留期内的快照将继续计入该限制，直到它们被完全删除。 如果达到限制并需要立即为新快照分配容量，请使用[删除快照](#delete-snapshot)中所述的强制删除，而不是使用标准删除。
+
+支持的命令如下所述。 要获取标志和选项的完整列表，请使用`aio aem rde snapshot --help`，或者要获取有关特定子命令的帮助，请使用`aio aem rde snapshot <subcommand> --help`。
+
+### 列出快照 {#list-snapshots}
+
+您可以通过运行以下命令列出组织中的所有快照：
+
+`aio aem rde snapshot`
+
+这会返回可用快照的表，可以使用`-s`标记对其进行排序：
+
+`aio aem rde snapshot -s <column-header>`
+
+为列标题添加减号作为前缀，以便进行反向排序。 还支持`--json`全局标志。
+
+### 创建快照 {#create-snapshot}
+
+要创建RDE当前状态（包括内容和部署）的快照，请运行：
+
+`aio aem rde snapshot create <name>`
+
+其中`<name>`是环境中快照的唯一名称。 或者，包括带有`-d`标志的简短描述：
+
+`aio aem rde snapshot create <name> -d "description of the snapshot"`
+
+### 恢复快照 {#restore-snapshot}
+
+要将快照恢复到当前RDE，请运行：
+
+`aio aem rde snapshot restore <name>`
+
+要仅从快照中恢复可变内容（不恢复部署），请使用`--only-mutable-content`标志：
+
+`aio aem rde snapshot restore <name> --only-mutable-content`
+
+### 删除快照 {#delete-snapshot}
+
+将快照标记为删除不会立即将其删除。 快照将在7天后删除，这样您便有时间根据需要取消删除。
+
+要将快照标记为删除，请运行：
+
+`aio aem rde snapshot delete <name>`
+
+要将所有快照一次标记为已删除，请使用`-a`标志：
+
+`aio aem rde snapshot delete -a`
+
+要立即删除快照（跳过保留期，以便不再将其计入环境快照限制），请添加`-f`标志（或`--force`）：
+
+`aio aem rde snapshot delete <name> -f`
+
+无法用`undelete`撤消强制删除。 组合标记时，对完整的选项集使用`aio aem rde snapshot delete --help`（例如，强制删除所有快照）。
+
+### 取消删除快照 {#undelete-snapshot}
+
+要取消挂起的删除并保留快照，请运行：
+
+`aio aem rde snapshot undelete <name>`
 
 ## 支持JSON输出的命令 {#json-commands}
 
@@ -1156,7 +1224,7 @@ Forms开发人员可以使用AEM Forms Cloud Service快速开发环境快速开�
 
 ## rde教程
 
-要了解AEM as a Cloud Service中的RDE，请参阅视频教程，其中演示了[如何设置它、如何使用它以及开发生命周期(01:25)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/overview)。
+要了解AEM as a Cloud Service中的RDE，请参阅视频教程，其中演示了[如何设置它、如何使用它以及开发生命周期(01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)。
 
 ## 疑难解答 {#troubleshooting}
 
