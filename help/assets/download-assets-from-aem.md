@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
 您可以下载资源，包括静态和动态演绎版。 或者，您可以直接从[!DNL Adobe Experience Manager Assets]发送带有资产链接的电子邮件。 下载的资源捆绑在一个ZIP文件中。<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -36,8 +36,8 @@ ht-degree: 5%
 
 * [Experience Manager用户界面](#download-assets)
 * [资产共享公用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=zh-Hans)
+* [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#download-assets)
 
 ## 使用[!DNL Experience Manager]界面下载资源 {#download-assets}
 
@@ -56,7 +56,7 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 * 如果下载大小大于100 MB
 * 如果下载准备时间超过30秒
 
-异步下载在后端运行时，用户可以继续在Experience Manager中探索并进一步工作。 除了Experience Manager收件箱通知之外，Experience Manager还可以在下载过程完成后发送电子邮件通知用户。 若要启用此功能，管理员可以通过[配置SMTP服务器连接](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)来配置电子邮件服务。
+异步下载在后端运行时，用户可以继续在Experience Manager中探索并进一步工作。 除了Experience Manager收件箱通知之外，Experience Manager还可以在下载过程完成后发送电子邮件通知用户。 若要启用此功能，管理员可以通过[配置SMTP服务器连接](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email)来配置电子邮件服务。
 
 配置电子邮件服务后，管理员和用户可以从Experience Manager界面启用电子邮件通知。
 
@@ -114,7 +114,7 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 1. 在Git中的项目代码中，在`/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`处创建一个配置文件。 该文件应包含`{}`作为其内容，表示相应的OSGi组件的OSGi配置为空。 此操作将启用该服务。
 1. 通过[!DNL Cloud Manager]部署您的代码，包括此新配置。
 1. 部署后，即可根据资源的开启/结束时间设置访问演绎版和元数据。 如果当前日期或时间早于开启时间或晚于关闭时间，则会显示错误消息。
-有关添加空OSGi配置的更多详细信息，请参阅此[指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en)。
+有关添加空OSGi配置的更多详细信息，请参阅此[指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hans)。
 
 ## 提示和限制 {#tips-limitations}
 
@@ -138,5 +138,5 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 >[!MORELIKETHIS]
 >
 >* [下载受DRM保护的资产](drm.md)
->* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [使用Adobe Assets Link从支持的Adobe Creative Cloud应用程序中下载资源](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans)
+>* [使用Adobe Assets Link从支持的Adobe Creative Cloud应用程序中下载资源](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)
