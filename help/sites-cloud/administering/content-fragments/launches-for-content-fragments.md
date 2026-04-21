@@ -6,16 +6,16 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
+source-git-commit: 29b646d024287bfbc0801c90843e5c36e5fd57ea
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1852'
 ht-degree: 2%
 
 ---
 
 # 内容片段内的启动 {#launches-for-content-fragments}
 
-在Adobe Experience Manager (AEM) as a Cloud Service中，通过启动项，您可以高效地为未来版本开发内容。
+在Adobe Experience Manager (AEM) as a Cloud Service中，借助Launch，您可以高效地为未来版本开发内容。
 
 创建&#x200B;*Launch*&#x200B;是为了允许您进行更改以准备将来发布，同时维护当前内容。 对于内容片段，这意味着您同时有效地编辑两个版本：当前发布的内容以及将来一次发布的该内容的版本。 到达该时间后，您可以替换原始内容片段的内容并发布新版本。
 
@@ -239,9 +239,9 @@ ht-degree: 2%
 1. 选择:
 
    * 放大镜图标，用于打开特定作业的完整详细信息。
-这会为您返回&#x200B;**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
-   * **查看日志**&#x200B;以查看所有作业的详细信息概述。
-您还可以在此选择特定作业，然后显示&#x200B;**结果**。 这会带您返回到&#x200B;**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
+这会为您返回**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
+   * **查看日志**以查看所有作业的详细信息概述。
+您还可以在此选择特定作业，然后显示**结果**。 这会带您返回到&#x200B;**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
 
    这两项操作都会将您带到相应的&#x200B;**将启动项与Source**&#x200B;作业进行比较。 从此处，您可以&#x200B;**[重设](#rebase-a-launch-from-source)**&#x200B;或&#x200B;**[提升](#promote-a-launch-to-source)**&#x200B;您的启动项，就像当初一样。
 
