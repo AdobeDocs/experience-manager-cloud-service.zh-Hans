@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1851'
 ht-degree: 2%
 
 ---
@@ -187,7 +187,7 @@ ht-degree: 2%
 
 ## 将发布项与源进行比较 {#compare-launch-to-source}
 
-建议您在执行任何Rebase或Promote操作之前，始终比较源和启动项，以确认更改及其对内容的影响（这两个操作都会覆盖目标内容）：
+建议您在执行任何&#x200B;**[Rebase](#rebase-a-launch-from-source)**&#x200B;或&#x200B;**[Promote](#promote-a-launch-to-source)**&#x200B;操作之前，始终比较源和启动项，以确认更改及其对内容的影响（这两个操作都会覆盖目标内容）：
 
 1. 导航到内容片段控制台。
 
@@ -239,9 +239,9 @@ ht-degree: 2%
 1. 选择:
 
    * 放大镜图标，用于打开特定作业的完整详细信息。
-这会为您返回&#x200B;**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
-   * **查看日志**&#x200B;以查看所有作业的详细信息概述。
-您还可以在此选择特定作业，然后显示&#x200B;**结果**。 这会带您返回到&#x200B;**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
+这会为您返回**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
+   * **查看日志**以查看所有作业的详细信息概述。
+您还可以在此选择特定作业，然后显示**结果**。 这会带您返回到&#x200B;**[将启动项与Source](#compare-launch-to-source)**&#x200B;进行比较（包含可用操作）。
 
    这两项操作都会将您带到相应的&#x200B;**将启动项与Source**&#x200B;作业进行比较。 从此处，您可以&#x200B;**[重设](#rebase-a-launch-from-source)**&#x200B;或&#x200B;**[提升](#promote-a-launch-to-source)**&#x200B;您的启动项，就像当初一样。
 
@@ -261,9 +261,17 @@ ht-degree: 2%
 >
 >您也可以&#x200B;**重新定位**&#x200B;从&#x200B;**[比较启动项到Source](#compare-launch-to-source)**&#x200B;的启动项。
 
+>[!NOTE]
+>
+>建议您在执行任何&#x200B;**Rebase**&#x200B;或&#x200B;**Promote**&#x200B;操作之前，始终[比较源位置和启动位置](#compare-launch-to-source)以确认更改及其对您内容的影响 — 因为这两个操作都会覆盖目标内容。
+
 ## 提升启动项（到Source） {#promote-a-launch-to-source}
 
 当您的启动项准备好发布时，应将其复制到源。 您可以在控制台中执行这项操作，也可以配置设置，使其在特定日期和时间自动执行。
+
+>[!NOTE]
+>
+>建议您在执行任何&#x200B;**Rebase**&#x200B;或&#x200B;**Promote**&#x200B;操作之前，始终[比较源位置和启动位置](#compare-launch-to-source)以确认更改及其对您内容的影响 — 因为这两个操作都会覆盖目标内容。
 
 ### 手动提升 {#promote-manually}
 
