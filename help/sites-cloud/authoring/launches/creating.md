@@ -6,7 +6,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 7baad256dfbf978e294b0ca66f7cf9205ac8648f
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 93%
@@ -21,7 +21,7 @@ ht-degree: 93%
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，[Live Copy](/help/sites-cloud/administering/msm/overview.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
 
-（可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**&#x200B;[&#128279;](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
+（可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**[](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ ht-degree: 93%
    * **启动项标题**：启动项的名称。该名称应当体现出作者的相关信息。
    * **包含现有内容**：使用原始内容创建启动项。
    * **使用新模板替换页面**：有关更多详细信息，请参阅[使用新模板创建启动项](#create-launch-with-new-template)。
-   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为 [Live Copy](/help/sites-cloud/administering/msm/overview.md) 来实现该行为。默认情况下，此选项处于选中状态。-->
+   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为 [Live Copy](/help/sites-cloud/administering/msm/overview.md) 来实现该行为。默认情况下，此选项处于选中状态。
    * **启动日期**：激活启动副本的日期和时间（取决于&#x200B;**生产就绪**&#x200B;标记；请参阅[启动项 – 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)）。
 
    ![启动项属性](/help/sites-cloud/authoring/assets/launches-properties.png)
