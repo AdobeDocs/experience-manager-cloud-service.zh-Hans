@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 5%
 
 ---
@@ -45,17 +45,19 @@ ht-degree: 5%
 
 | **功能** | **关键功能** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **WYSIWYG编辑器** |  — 像素完美，可精确呈现<br> — 字体样式控件<br> — 灵活的布局，可进行专业设计 |
-| **布局控件** |  — 定位（绝对和流动） <br> — 简单的拖放功能<br> — 使用母版页定义一致的布局 |
-| **组件** |  — 访问新引入的组件，包括表格、图表和条形码<br> — 用于更快设计的现成组件 |
-| **数据绑定** |  — 将组件直接链接到数据源<br> — 自动预填充字段以进行个性化通信 |
-| **规则编辑器** |  — 配置动态验证<br> — 为交互添加计算和条件逻辑 |
-| **片段库** |  — 创建模块化构建块（页眉、页脚、免责声明、图标）<br> — 保持多个通信的一致性 |
-| **模板** |  — 确保通信中的统一品牌和结构 |
+| **WYSIWYG编辑器** |  — 像素完美以精确呈现<br> - [字体样式控件](/help/forms/interactive-communication/add-custom-fonts.md) <br> — 灵活的专业设计布局 |
+| [**布局控件**](/help/forms/interactive-communication/handle-content-overflow.md) |  — 定位（绝对和流动） <br> — 简单的拖放功能<br> — 使用母版页定义一致的布局 |
+| **组件** |  — 访问新引入的组件，包括[表](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)、图表和[条形码](/help/forms/interactive-communication/barcode.md) <br> — 可立即使用的组件以加快设计 |
+| [**数据绑定**](/help/forms/interactive-communication/configure-data-binding.md) |  — 将组件直接链接到数据源<br> — 自动预填充字段以进行个性化通信 |
+| [**规则编辑器**](/help/forms/interactive-communication/use-the-rule-editor.md) |  — 配置动态验证<br> — 为交互添加计算和条件逻辑 |
+| [**片段库**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) |  — 创建模块化构建块（页眉、页脚、免责声明、图标）<br> — 保持多个通信的一致性 |
+| [**模板**](/help/forms/interactive-communication/create-interactive-communication-template.md) |  — 确保通信中的统一品牌和结构 |
 
 ## 加入
 
 交互式通信(IC)功能可通过早期访问(EA)程序获得。 若要请求访问，请使用您的环境ID和组织ID通过您的正式电子邮件ID向[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)发送电子邮件。 Adobe确认注册后，请按照[载入服务](/help/forms/setup-forms-cloud-service.md)文档操作，在AEM Forms环境中启用交互式通信。
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 后续步骤
 
