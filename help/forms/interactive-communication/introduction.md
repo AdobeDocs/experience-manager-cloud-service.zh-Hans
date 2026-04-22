@@ -57,7 +57,7 @@ ht-degree: 5%
 
 交互式通信(IC)功能可通过早期访问(EA)程序获得。 若要请求访问，请使用您的环境ID和组织ID通过您的正式电子邮件ID向[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)发送电子邮件。 Adobe确认注册后，请按照[载入服务](/help/forms/setup-forms-cloud-service.md)文档操作，在AEM Forms环境中启用交互式通信。
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 后续步骤
 
