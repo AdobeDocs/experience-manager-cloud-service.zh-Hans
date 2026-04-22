@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c9ab1fefa8170a1397eb5801f26128e82e7cd4ca
+source-git-commit: a10a4bf02d5e006e6c151b48606c4e9412193a14
 workflow-type: tm+mt
 source-wordcount: '2180'
 ht-degree: 28%
@@ -38,7 +38,7 @@ ht-degree: 28%
 
 请查看 2026 年 3 月发布概述视频，了解 2026.3.0 版本中的新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3483070/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 
 ## AEM Beta程序 {#aem-beta-programs}
 
@@ -148,7 +148,7 @@ Content Advisor现在可在AEM Sites中使用，它直接从AEM Assets引入智�
 自适应Forms中的多选下拉组件现在在[生成的提交PDF](/help/forms/generate-document-of-record-core-components.md)中呈现其选定的显示标签，以确保文档准确反映用户在表单上看到的内容。
 
 **复选框、单选按钮和面板组件的增强辅助功能**
-自适应Forms核心组件为[复选框组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[单选按钮组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入了符合WCAG 2.2的语义标记。 这些组件利用`<fieldset>`和`<legend>`个HTML元素在组标签及其选项之间建立有意义的关系，从而使屏幕阅读器和其他辅助技术能够进行准确解释。
+自适应Forms核心组件为[复选框组(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[单选按钮组(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入了符合WCAG 2.2的语义标记。 这些组件利用`<fieldset>`和`<legend>`个HTML元素在组标签及其选项之间建立有意义的关系，从而使屏幕阅读器和其他辅助技术能够进行准确解释。
 
 Forms Manager中的&#x200B;**版本控制支持**
 Forms Manager现在[支持自适应Forms（核心组件和基础组件）](/help/forms/manage-form-versions-forms-manager.md)、表单片段、主题、XDP模板和二进制资源的版本控制。 直接从Forms和文档控制台创建版本、查看完整的版本历史记录以及恢复表单资产的早期状态。
@@ -163,7 +163,7 @@ Forms Manager现在[支持自适应Forms（核心组件和基础组件）](/help
 
 #### Cloud Manager MCP服务器 {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480352/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 现代IDE使用模型上下文协议(Model Context Protocol， MCP)来启用大型语言模型(Large Language Model， LLM)以调用MCP服务器公开的工具。 开发人员可以简单地用自然语言描述他们的意图，而不是直接与低级API规范集成。
 
@@ -215,7 +215,7 @@ Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和Intelli
 
 #### AEM Edge功能（Beta程序） {#edge-functions}
 
-AEM Edge Functions允许您在CDN层执行JavaScript，使数据处理更接近于最终用户。 这降低了延迟，使得边缘设备能够提供响应迅速、动态丰富的体验。
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)允许您在CDN层执行JavaScript，使数据处理更接近于最终用户。 这降低了延迟，使得边缘设备能够提供响应迅速、动态丰富的体验。
 
 常见的用例包括：
 
