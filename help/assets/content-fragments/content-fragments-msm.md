@@ -6,14 +6,14 @@ exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 12%
 
 ---
 
-# 使用MSM重用内容片段 {#reuse-content-fragments-using-msm}
+# Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 
 多站点管理器(MSM)和Live Copy功能允许您在多个位置使用相同的内容，同时与源内容同步。
 
@@ -32,11 +32,13 @@ ht-degree: 12%
 
 使用MSM获取内容片段，您可以：
 
-* 创建内容片段一次，然后创建（链接）这些片段的副本以在站点或应用程序的其他区域重用。
+* Create Content Fragments once and then make (linked) copies of these fragments to reuse in other areas of the site or application.
 * 通过将源副本更新一次，然后将更改推送到（实时）副本，来保持多个副本的同步。
 * 通过暂时或永久暂停父片段与子片段之间的链接进行本地更改；完全暂停或暂停其变体或字段的链接。
 
 MSM for Content Fragments与内容片段编辑器中的功能相结合，允许您在字段级别中断和恢复继承。
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
 
 >[!CAUTION]
 >
@@ -44,26 +46,34 @@ MSM for Content Fragments与内容片段编辑器中的功能相结合，允许�
 >
 >使用&#x200B;*内容片段*&#x200B;控制台时，MSM功能&#x200B;**不可用**。
 
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
+
 ## 操作方式 {#how-to}
 
-有关将MSM用于内容片段(也适用于Assets)的详细信息，请参阅以下文档：
+有关将MSM用于内容片段（也适用于Assets）的详细信息，请参阅以下文档：
 
-* 如何将[MSM用于内容片段(和Assets)](/help/assets/reuse-assets-using-msm.md)
+* 如何将[MSM用于内容片段（和Assets）](/help/assets/reuse-assets-using-msm.md)
 
 * [创建 Live Copy](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >如果要使用MSM创建内容片段的副本)，则应该从各个&#x200B;**内容片段模型**&#x200B;中使用的任何数据类型中删除任何[唯一](/help/assets/content-fragments/content-fragments-models.md)约束。
+  >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
 
-* [查看源和Live Copy的属性和状态](/help/assets/reuse-assets-using-msm.md#properties)
+* [View properties and status of source and Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
 * [将修改从源传播到Live Copy](/help/assets/reuse-assets-using-msm.md#rollout-sync)
 * 取消并恢复以下项目的继承：
    * [内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md#inheritance)中的字段和变量
    * [相关资源的元数据](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [暂停和恢复关系](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [删除实时关系](/help/assets/reuse-assets-using-msm.md#detach)
-* [比较内容片段的MSM(和Assets)与站点的MSM](/help/assets/reuse-assets-using-msm.md#comparison)
+* [比较内容片段的MSM（和Assets）与站点的MSM](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## 限制 {#limitations}
 

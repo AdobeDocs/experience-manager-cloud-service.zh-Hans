@@ -6,7 +6,7 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2725'
 ht-degree: 91%
@@ -32,9 +32,20 @@ ht-degree: 91%
 * [MSM 转出冲突](rollout-conflicts.md)
 * [MSM 最佳实践](best-practices.md)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!NOTE]
 >
->MSM 也可用于资源，包括内容片段。请参阅[使用MSM为Assets重用内容片段](/help/assets/reuse-assets-using-msm.md)(只能通过Assets控制台提供)。
+>MSM 也可用于资源，包括内容片段。请参阅[使用MSM为Assets重用内容片段](/help/assets/reuse-assets-using-msm.md)（只能通过Assets控制台提供）。
+
+<!--
+>[!NOTE]
+>
+>MSM can also be used for Assets, and Content Fragments. See:
+>
+>* MSM for Content Fragments when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+>* MSM for Content Fragments when using [the **Assets** console](/help/assets/reuse-assets-using-msm.md) 
+-->
 
 ## 可能的情况 {#possible-scenarios}
 

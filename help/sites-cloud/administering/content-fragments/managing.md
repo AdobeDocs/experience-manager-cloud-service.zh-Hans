@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 62%
@@ -41,7 +41,7 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[&#x200B; Assets &#x200B;](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 控制台中内容片段的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
@@ -60,15 +60,15 @@ ht-degree: 62%
    * 还会显示您的 IMS 组织
    * 提供多种[操作](#actions-unselected)
 * 左侧面板
-   * 您可以在此压缩或展开指向面板的链接
+   * Here you can compress, or expand, links to the panels
    * 在此，可以隐藏或显示文件夹树
    * 您可以选择树的特定分支
    * 可以调整其大小以显示嵌套文件夹
-   * 除了内容片段之外，您还可以：
+   * As well as Content Fragments, you can:
       * 查看[内容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)或[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)；您还可以压缩或展开指向面板的链接
       * 创建并管理[内容片段的启动项](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * 主/右侧面板 – 从此处，您可以：
-   * 查看树的选定分支中的所有内容片段列表：
+   * See the list of all Content Fragments in the selected branch of the tree:
       * 将显示所选文件夹和所有子文件夹中的内容片段：
          * 由痕迹导航指示位置；还可使用痕迹导航更改位置：
       * [显示有关每个片段的信息](#information-content-fragments)
@@ -78,7 +78,7 @@ ht-degree: 62%
          * 显示有关参考内容的信息
          * 显示有关片段的语言版本的信息
       * 可使用关于内容片段的[某些其他信息字段](#information-content-fragments)进行[快速过滤](#fast-filtering)：
-         * 在列中选择一个值，该值将立即作为过滤器应用
+         * Select a value in the column and it is immediately applied as a filter
          * 仅&#x200B;**模型**、**状态**、**修改者**、**标记**&#x200B;和&#x200B;**发布者**&#x200B;列支持快速过滤。
       * 将鼠标悬停在列标题上方，可显示下拉操作选择器和宽度滑块。使用它们可以：
          * 排序 – 选择适当的升序或降序操作
@@ -95,7 +95,7 @@ ht-degree: 62%
 
 * **标题**
    * 挂锁图标表示片段是[签出](#check-out-and-check-in)并由一个用户锁定的；选择挂锁图标将显示已签出片段的帐户的详细信息。
-   * 通过信息(i)图标，可以快速访问右侧面板中特定于片段的其他信息。
+   * The information (i) icon provides quick access to additional, fragment specific, information in the right panel.
 * **名称**
    * 提供用于在编辑器中打开片段的链接。
 * **模型**
@@ -126,7 +126,7 @@ ht-degree: 62%
    * 仅供参考。
    * 可用于[快速筛选](#fast-filtering)。
 * **引用者**：
-   * 提供一个链接，该链接打开一个对话框，其中列出该片段的所有[父引用](#parent-references-fragment)；包括引用内容片段、体验片段和页面。要打开特定引用，请单击对话框中的&#x200B;**标题**。
+   * 提供一个链接，该链接打开一个对话框，其中列出该片段的所有[父引用](#parent-references-fragment)；包括引用内容片段、体验片段和页面。To open a specific reference, click the **Title** in the dialog.
 
      ![内容片段控制台 –“引用”对话框](assets/cf-managing-console-references-dialog.png)
 
@@ -148,9 +148,9 @@ ht-degree: 62%
 
      ![内容片段控制台 — 工作流图标](assets/cf-managing-console-workflows-icon.png)
 
-     打开一个对话框，其中包含有关片段的工作流（过去和当前）的详细信息。: 
+     To open a dialog with detailed information about workflows (past and current) for the fragment.: 
 
-     ![内容片段控制台 — 工作流对话框](assets/cf-managing-console-workflows-dialog.png)
+     ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
 
 ## 操作 {#actions}
 
@@ -178,7 +178,7 @@ ht-degree: 62%
 
 ### 针对（选定的）内容片段的操作 {#actions-selected-content-fragment}
 
-选择特定片段会打开一个工具栏，其中重点介绍可用于该片段的操作。 您还可以选择多个片段 – 操作的选择将相应地进行调整。
+Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. 您还可以选择多个片段 – 操作的选择将相应地进行调整。
 
 ![内容片段控制台 – 选定片段的工具栏](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -191,6 +191,15 @@ ht-degree: 62%
 * **重命名**
 * **[签出和签入](#check-out-and-check-in)**
 * **[删除](#deleting-a-fragment)**（仅适用于未发布的片段）
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
+  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
+  * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
+  * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
+* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
+-->
 
 >[!NOTE]
 >
@@ -257,23 +266,23 @@ ht-degree: 62%
 1. 使用&#x200B;**内容片段**&#x200B;控制台导航到内容片段所在的位置。
 1. 通过选择该片段，然后从工具栏中选择&#x200B;**在新编辑器中打开**&#x200B;而打开该片段进行编辑。
 
-1. 片段编辑器将打开。 选择所需的&#x200B;**变体**&#x200B;并根据需要作出更改（将自动保存这些更改）：
+1. The fragment editor opens. 选择所需的&#x200B;**变体**&#x200B;并根据需要作出更改（将自动保存这些更改）：
 
    ![片段编辑器](assets/cf-managing-editor.png)
 
-## 复制内容片段 {#copy-a-content-fragment}
+## Copy a Content Fragment {#copy-a-content-fragment}
 
-**副本**&#x200B;在其位置创建所选片段的副本。
+**Copy** creates a copy of the selected fragment at its location.
 
-* 在&#x200B;**复制**&#x200B;操作中，您可以选择是否&#x200B;**复制还引用的内容片段**。 这样可让您复制选定的内容片段和所有引用的片段。 AEM：
+* In the **Copy** action you can select whether to **Copy also referenced content fragments**. 这样可让您复制选定的内容片段和所有引用的片段。 AEM：
 
    * 在其位置创建所选内容片段的副本。
    * 创建所选片段引用的所有片段的副本。
 
-     引用片段复制到[的](#locations-that-the-referenced-fragments-are-copied-to)位置取决于您选择的选项：
+     The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
 
-      * **复制到选定的文件夹**
-选中后，引用的片段将被复制到与原始选定片段相同的位置。
+      * **Copy to the selected folder**
+When selected, the referenced fragments are copied to the same location as the original selected fragment.
 
       * **复制到其原始位置**
 引用的片段将被复制到与原始引用的片段相同的位置。 这是默认设置，未选中任何选项时将使用此设置。
@@ -286,7 +295,7 @@ ht-degree: 62%
 
 ### 引用的片段复制到其中的位置 {#locations-that-the-referenced-fragments-are-copied-to}
 
-在复制内容片段时，您可以使用&#x200B;**同时复制引用的内容片段**&#x200B;和相关选项来指定应将引用的片段复制到何处：
+When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
 
 ![复制片段](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
 
@@ -470,26 +479,26 @@ FolderC
 
 ## 查找和替换 {#find-and-replace}
 
-**替换**&#x200B;操作可用（在顶部工具栏中）来查找和替换选定内容片段中的指定文本。
+The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments.
 
 ![查找和替换](assets/cf-managing-find-replace.png)
 
-替换前，将检查验证标准并通知您任何冲突，从而允许您更改替换字符串或仅替换已验证的实例。
+Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
 
 >[!NOTE]
 >
->一次最多只能对20个选定的内容片段执行查找和替换操作。
+>The find and replace action can only be performed on a maximum of 20 selected Content Fragments (at a time).
 >
->如果选择超过20个内容片段，您将看到消息&#x200B;**无法找到和替换**。
+>If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
 
-![确认替换](assets/cf-managing-confirm-replace.png)
+![Confirm Replace](assets/cf-managing-confirm-replace.png)
 
-## 签出和签入 {#check-out-and-check-in}
+## Check Out and Check In {#check-out-and-check-in}
 
-通过AEM，您可以：
+AEM lets you:
 
-* [签出](#check-out-a-content-fragment)内容片段，阻止其他用户处理该片段
-* [签入](#check-in-a-content-fragment)内容片段，允许其他用户继续使用该片段
+* [check out](#check-out-a-content-fragment) a Content Fragment, preventing other users from working on the fragment
+* [check in](#check-in-a-content-fragment) Content Fragments, allowing other users to resume working with the fragment
 
 签出片段时，该片段被锁定(`jcr:lock`)。 **标题**&#x200B;列中的挂锁图标表示锁定的片段。 选择挂锁图标可提供已签出片段的帐户的详细信息。
 

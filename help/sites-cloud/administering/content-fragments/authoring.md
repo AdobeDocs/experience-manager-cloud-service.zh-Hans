@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 68%
@@ -33,6 +33,11 @@ ht-degree: 68%
 * 可在编辑器中[查看版本详细信息](#view-version-history)。您还可恢复为所选版本。
 * 可[查看和打开父引用](#view-parent-references)。
 * 内容片段及其引用的分层视图，其中使用[结构树](#structure-tree)。
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+-->
 
 >[!NOTE]
 >
@@ -77,7 +82,7 @@ ht-degree: 68%
   >
   >根据基础模型中的定义，字段可以受特定类型的[验证](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation)的约束。
 
-![内容片段编辑器 – 概述](assets/cf-authoring-overview.png)
+![内容片段编辑器 – 概述](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 在内容片段结构中导航 {#navigate-structure}
 
@@ -107,13 +112,13 @@ ht-degree: 68%
 
 在编辑器的各个部分中，您可以看到链接图标。 此图标可用于打开显示的项目；例如，内容片段模型、父引用或引用的片段：
 
-![内容片段编辑器 - 链接图标](assets/cf-authoring-link-icon.png)
+![内容片段编辑器 - 链接图标](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-link-icon.png)
 
 ### 结构树 {#structure-tree}
 
 从编辑器工具栏打开&#x200B;**结构树**&#x200B;选项卡以显示内容片段及其引用的层次结构。使用链接图标导航到引用。
 
-![内容片段编辑器 - 结构树](assets/cf-authoring-structure-tree.png)
+![内容片段编辑器 - 结构树](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
@@ -151,11 +156,11 @@ ht-degree: 68%
    >
    >创建第一个变体后，现有变体将在同一面板中列出。
 
-   ![内容片段编辑器 - 创建您的第一个变体](assets/cf-authoring-create-variation-01.png)
+   ![内容片段编辑器 - 创建您的第一个变体](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. 在对话框中，依次输入变体的&#x200B;**标题**&#x200B;和&#x200B;**描述**（如果需要）：
 
-   ![内容片段编辑器 -“创建变体”对话框](assets/cf-authoring-create-variation-02.png)
+   ![内容片段编辑器 -“创建变体”对话框](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-02.png)
 
 1. **创建**&#x200B;变体。它显示在列表中。
 
@@ -191,7 +196,7 @@ ht-degree: 68%
 
 1. 在&#x200B;**变体**&#x200B;面板中，选择删除图标（垃圾桶）：
 
-   ![内容片段编辑器 -“删除变体”图标](assets/cf-authoring-delete-variation.png)
+   ![内容片段编辑器 -“删除变体”图标](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-delete-variation.png)
 
 1. 这将打开一个对话框。选择&#x200B;**删除**&#x200B;以确认操作。
 
@@ -205,7 +210,7 @@ ht-degree: 68%
 
 定义为纯文本或 Markdown 的字段具有一个简单的文本框，而没有（屏幕上）格式选项：
 
-![内容片段编辑器 - 多行文本 - 全屏](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![内容片段编辑器 - 多行文本 - 全屏](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## 编辑多行文本字段 - 富文本 {#edit-multi-line-text-fields-rich-text}
 
@@ -231,7 +236,7 @@ ht-degree: 68%
 
 例如：
 
-![内容片段编辑器 - 多行文本 - 全屏切换](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![内容片段编辑器 - 多行文本 - 全屏切换](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
@@ -243,7 +248,7 @@ ht-degree: 68%
 
 例如：
 
-![内容片段编辑器 - 多行文本 - 全屏](assets/cf-authoring-multilinetext-fullscreen.png)
+![内容片段编辑器 - 多行文本 - 全屏](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### 统计数据 - 富文本 {#statistics-rich-text}
 
@@ -251,7 +256,7 @@ ht-degree: 68%
 
 例如：
 
-![内容片段编辑器 - 统计数据](assets/cf-authoring-multilinetext-statistics.png)
+![内容片段编辑器 - 统计数据](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-statistics.png)
 
 ### 比较和同步 - 富文本 {#compare-and-synchronize-rich-text}
 
@@ -274,13 +279,13 @@ ht-degree: 68%
 
   >[!CAUTION]
   >
-  >同步仅可将更改&#x200B;*从&#x200B;**主控**&#x200B;复制到变体*。
+  >同步仅可将更改&#x200B;*从&#x200B;**主控**复制到变体*。
   >
   >不提供将更改&#x200B;*从变体传输到&#x200B;**主控***的选项。
 
 例如，在完全重写变体内容的场景中，同步会将新内容替换为&#x200B;**主控**&#x200B;内容：
 
-![内容片段编辑器 - 比较和同步](assets/cf-authoring-multilinetext-compare.png)
+![内容片段编辑器 - 比较和同步](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-compare.png)
 
 ## 管理引用 {#manage-references}
 
@@ -333,7 +338,7 @@ ht-degree: 68%
 * 将新的资源文件直接（例如，从您的文件系统中）拖放到&#x200B;**内容引用**&#x200B;字段
 * 使用&#x200B;**添加资源**&#x200B;操作，然后选择&#x200B;**浏览资源**&#x200B;或&#x200B;**上传**&#x200B;以打开适当的选择器进行使用：
 
-  ![内容片段编辑器 - 添加资源选项](assets/cf-authoring-add-asset-options.png)
+  ![内容片段编辑器 - 添加资源选项](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
 ##### 引用远程Assets {#reference-remote-assets}
 
@@ -341,11 +346,11 @@ ht-degree: 68%
 
 1. 在浏览资产时指定远程&#x200B;**存储库**：
 
-   ![内容片段编辑器 — 从远程选择资产](assets/cf-authoring-remote-asset-01.png)
+   ![内容片段编辑器 — 从远程选择资产](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
 
 2. 选择后，可在资源信息中看到位置：
 
-   ![内容片段编辑器 — 远程存储库中的资产](assets/cf-authoring-remote-asset-02.png)
+   ![内容片段编辑器 — 远程存储库中的资产](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
 
 ###### 远程Assets — 限制 {#remote-assets-limitations}
 
@@ -392,13 +397,32 @@ ht-degree: 68%
 
 例如：
 
-![内容片段编辑器 - 显示引用](assets/cf-authoring-show-references-link.png)
+![内容片段编辑器 - 显示引用](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references-link.png)
 
 这将打开一个窗口，其中列出了所有相关引用。要打开引用，请选择名称或标题，或链接图标。
 
 例如：
 
-![内容片段编辑器 - 显示引用](assets/cf-authoring-show-references.png)
+![内容片段编辑器 - 显示引用](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel inheritance
+
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Revert to inheritance (if inheritance is already canceled)
+
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+-->
 
 ## 查看属性和标记 {#view-properties-tags}
 
@@ -407,7 +431,9 @@ ht-degree: 68%
 * **内容片段** - 如果当前已选定&#x200B;**主控**
 * 特定的&#x200B;**变体**
 
-![内容片段编辑器 - 属性](assets/cf-authoring-properties.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![内容片段编辑器 - 属性](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png)
 
 ### 编辑属性和标记 {#edit-properties-tags}
 
@@ -417,7 +443,9 @@ ht-degree: 68%
 * **描述**
 * **标记**：使用下拉列表或选择对话框
 
-  ![内容片段编辑器 - 管理标记](assets/cf-authoring-edit-tags.png)
+  <!-- CQDOC-23473 - new screenshot? -->
+
+  ![内容片段编辑器 - 管理标记](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png)
 
 ### 打开内容片段模型 {#open-content-fragment-model}
 
@@ -425,7 +453,7 @@ ht-degree: 68%
 
 例如：
 
-![内容片段编辑器 - 打开内容片段模型](assets/cf-authoring-open-model.png)
+![内容片段编辑器 - 打开内容片段模型](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
 ## 查看版本历史记录 {#view-version-history}
 
@@ -435,7 +463,9 @@ ht-degree: 68%
 >
 >发布内容片段时将创建新版本。
 
-![内容片段编辑器 - 版本历史记录概述](assets/cf-authoring-version-history-overview.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![内容片段编辑器 - 版本历史记录概述](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### 比较版本 {#compare-version}
 
@@ -447,7 +477,9 @@ ht-degree: 68%
 
 1. 选择&#x200B;**比较**。
 
-![内容片段编辑器 — 版本历史记录比较](assets/cf-authoring-version-history-compare.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![内容片段编辑器 — 版本历史记录比较](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 此时将打开一个视图，其中显示内容的当前版本与内容片段的所选先前版本之间的差异。 从&#x200B;**包含更改的变体**&#x200B;下拉列表中，您可以选择查看与主内容的差异和/或变体内容的差异。
 
@@ -456,7 +488,9 @@ ht-degree: 68%
 * 绿色：表示添加的内容（添加到当前版本）
 * 红色：表示内容已删除（从当前版本）
 
-![内容片段编辑器 — 版本历史记录比较版本](assets/cf-authoring-version-history-compare-versions.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![内容片段编辑器 — 版本历史记录比较版本](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### 恢复到某个版本 {#revert-version}
 
@@ -468,7 +502,9 @@ ht-degree: 68%
 
 1. 选择&#x200B;**恢复**。
 
-![内容片段编辑器 - 版本历史记录恢复](assets/cf-authoring-version-history-revert.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![内容片段编辑器 - 版本历史记录恢复](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
 ## 查看语言副本 {#view-language-copies}
 
@@ -476,7 +512,9 @@ ht-degree: 68%
 
 例如：
 
-![内容片段编辑器 - 打开语言副本](assets/cf-authoring-open-language-copies.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![内容片段编辑器 - 打开语言副本](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
@@ -496,7 +534,9 @@ ht-degree: 68%
 * 编辑现有评论
 * 删除评论
 
-![内容片段编辑器 — “评论”选项卡](assets/cf-authoring-comments.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![内容片段编辑器 — “评论”选项卡](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >
