@@ -4,9 +4,9 @@ description: 了解如何将模型上下文协议与AEM as a Cloud Service一起
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c7c8a616e00a7e97ac9b8ab50411c0a9e9417273
+source-git-commit: 5056eefbc6d6e40a94adfce3c64b7745f38b96b7
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 * **自然语言交互而不是API管道**
 MCP工具描述了哪些操作可用以及如何调用它们。 LLM使用这些模式来确定要调用哪些工具以及使用哪些参数。
-* **跨应用程序的一致体验**
+* 跨应用程序&#x200B;**一致的体验**
 相同的AEM MCP工具可用于多个MCP兼容应用程序，使团队能够在调用相同的底层AEM功能时，在最高效的地方工作。
-* **已保留安全和治理**
+* **安全和治理已保留**
 对AEM MCP工具的请求在经过身份验证的用户身份下运行，每个工具都强制实施用户的现有AEM权限。 人工智能辅助的操作遵循与AEM中的手动工作相同的访问规则。
 
 ## AEM提供的MCP服务器 {#mcp-servers-provided-by-aem}
@@ -52,10 +52,10 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 
 | **MCP服务器** | **终结点** | **描述** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **内容** | `/content` | 所有低级内容操作，包括创建、读取、更新和删除(CRUD)页面、片段和资产。 |
-| **内容（只读）** | `/content-readonly` | 页面、片段和资产的只读内容操作（获取、列表/搜索）。 |
+| **内容** | `/content` | 内容操作，包括为页面和内容片段创建、读取、更新和删除(CRUD)，以及资产导入。 |
+| **内容（只读）** | `/content-readonly` | 对页面和内容片段执行只读内容操作（获取、列表/搜索）。 |
 | **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager实体，包括程序、环境、存储库和管道，这些也可以触发。 |
-| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>客户必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)才能访问Experience Governance MCP。 |
+| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>客户必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)才能访问Experience Governance MCP。 |
 
 每个MCP服务器公开的特定工具可能会随着时间的推移而不断演变。 在实践中，您可以要求启用了MCP的应用程序通过提示来发现工具，例如：
 
@@ -65,7 +65,7 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 
 MCP客户端使用MCP协议来检索工具列表和模式，然后LLM可以使用。
 
-请参阅[Content MCP Server教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
+请参阅[Content MCP Server教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
 
 ## 支持的MCP应用程序 {#supported-mcp-applications}
 
@@ -211,7 +211,7 @@ LLM自动选择并协调必要的MCP工具。
 
 在通过MCP使用LLM时，请牢记以下几点：
 
-* **功能强大，但不是万无一失**
+* **功能强大，但不是绝对可靠**
 LLM可以完成复杂的任务，但容易偶尔出错。 相同的提示可能会产生稍微不同的结果或演示，但没有明显的原因。 始终在将更改应用于生产内容之前审查输出。
 
 * **不断发展的功能**
@@ -220,7 +220,7 @@ LLM模型正在不断改进。 随着时间的推移，他们在发现组合MCP�
 * **人力监督是必不可少的：**
 把LLM想成需要监督的知识渊博的助手。 它拥有广泛的知识，可以设计创造性的解决方案，但它受益于您的指导和审查。 验证结果（尤其是关键操作的结果），并在输出与预期不符时提供反馈。
 
-* **对于自动确认工具执行要小心**
+* **在执行自动确认工具时请务必谨慎**
 某些MCP客户端应用程序（如Claude）提供了自动确认LLM请求的工具执行的选项。 虽然此选项可以方便地用于只读操作（如搜索或检索内容），但请谨慎使用更新或删除内容的工具。 在确认修改AEM环境的操作之前，请查看每个工具执行请求。
 
 ## 限制 {#limitations}
