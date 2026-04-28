@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: a536fc6203a589bef76387d5afbe6a8460630163
+source-git-commit: 3b1afd0b917a49e44f90969841d8c7d09a5158c0
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 72%
+source-wordcount: '4140'
+ht-degree: 70%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 72%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="AEM as a Cloud Service 中已弃用和已删除的功能"
->abstract="AEM as a Cloud Service 具有云原生部署模型。此选项卡突出显示了由云原生对应取代的功能和特性。"
+>abstract="AEM as a Cloud Service 具有云原生部署模型。 此选项卡突出显示了由云原生对应取代的功能和特性。"
 
-Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们符合 AEM as a Cloud Service 在性能、安全性和整体价值方面不断发展的标准。根据这些评估结果，某些功能可能会被标记为弃用。在可行的情况下，Adobe 将提供合适的替代方案。
+Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们符合 AEM as a Cloud Service 在性能、安全性和整体价值方面不断发展的标准。 根据这些评估结果，某些功能可能会被标记为弃用。 在可行的情况下，Adobe 将提供合适的替代方案。
 
-当宣布弃用某项功能时，该功能将仅在有限时间内可用，客户必须在指定的移除日期之前停止所有使用。Adobe 将提供合理的通知和指导，以支持平稳过渡。
+当宣布弃用某项功能时，该功能将仅在有限时间内可用，客户必须在指定的移除日期之前停止所有使用。 Adobe 将提供合理的通知和指导，以支持平稳过渡。
 
 在弃用时间窗口期间，Adobe 将通过电子邮件通知、操作中心警报或 Cloud Manager 中的提醒，提醒客户为停止使用某项功能而需采取的行动。
 
@@ -33,12 +33,11 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 >
 >多个[已弃用的API](#aem-apis)将于2026年5月4日&#x200B;**删除**。 请查看以下关键日期和影响：
 >
->* **从2026年1月26日开始**：操作中心通知电子邮件将作为提醒发送，以删除这些API的使用情况。
+>* **从2026年1月26日开始**：如果最近执行了管道，将发送操作中心通知电子邮件以提醒删除这些API的使用。
 >* **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。 *这可能会降低验证和发布代码更改的能力。*
 >* **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**。 在删除已弃用的API用法之前，将阻止部署。 *这可能会阻止您发布时效性更新，并可能影响您的业务运营。*
->* **2026年5月4日**：仍在使用已弃用API的环境&#x200B;**将不会收到关键的Adobe版本更新**，并且不受Adobe有关性能和可用性的标准承诺的约束。 因此，您将不会收到新功能或错误修复，应用程序的稳定性和正常运行时间可能会受到负面影响，并且安全风险敞口可能会进一步增加。
+>* **2026年5月4日**：仍在使用已弃用API的环境&#x200B;**将不会收到关键的Adobe版本更新**，并且不受Adobe有关性能和可用性的标准承诺的约束。 因此，您将不会收到新功能或错误修复，应用程序的稳定性和正常运行时间可能会受到负面影响，并且安全风险敞口可能会进一步增加。 要再次接收Adobe版本更新，必须成功执行全栈管道；然后，将在几天内应用更新。
 >
->要防止部署块，请在2026年3月30日之前删除API用法。
 
 ## 弃用功能 {#deprecated-features}
 
@@ -48,20 +47,20 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 | ------------ | ------------------ | ----------- |
 | Sites | [Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md) | [使用 OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>交付内容片段以及<br> [内容片段与内容片段模型管理 OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 无 |
-| Sites | [SPA 编辑器](/help/implementing/developing/hybrid/introduction.md) | 管理 AEM 中的 Headless 内容时首选以下编辑器：<br>- [通用编辑器](https://www.aem.live/docs/aem-authoring)，用于可视化编辑。<br>- [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑。 |
+| Sites | [SPA 编辑器](/help/implementing/developing/hybrid/introduction.md) | 在AEM中管理Headless内容的首选编辑器是：<br>- [用于可视化编辑的通用编辑器](https://www.aem.live/docs/aem-authoring)。<br>- [用于基于表单的编辑的内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒体状态**&#x200B;的体验片段属性。 | 此功能计划很快被删除。 |
 | Sites | [Experience Cloud 设置自动化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 无 |
 | [!DNL Sites] | 基于模板的简单内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | `DAM Asset Update` 工作流处理摄取的图像。 | 资产提取现在使用[资产微服务](/help/assets/asset-microservices-overview.md)。 |
-| [!DNL Assets] | 将资产直接上传至 [!DNL Experience Manager]。请参阅[已弃用的资产上传 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二进制上传](/help/assets/add-assets.md)。有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
-| [!DNL Assets] | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括 [!DNL ImageMagick] 等调用命令行工具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
-| [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
+| [!DNL Assets] | 将资产直接上传至 [!DNL Experience Manager]。 请参阅[已弃用的资产上传 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二进制上传](/help/assets/add-assets.md)。 有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
+| [!DNL Assets] | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括 [!DNL ImageMagick] 等调用命令行工具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。 对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。 对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理出版物](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation)方法。 |
 | [!DNL Foundation] | 复制代理管理屏幕的“分发”选项卡和复制 API 都不能复制大于 10MB 的内容包。 | [管理出版物](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成正在逐步失去对服务帐户（JWT）凭据的支持。自 2024 年 5 月 1 日起，无法在 Adobe Developer Console 中创建新的服务帐户（JWT）凭据。现有的服务帐户（JWT）凭据在 2025 年 1 月 1 日前仍可用于已配置的集成，之后将停止使用，客户需要迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)到 OAuth 服务器到服务器凭据。 |
+| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成正在逐步失去对服务帐户（JWT）凭据的支持。 自 2024 年 5 月 1 日起，无法在 Adobe Developer Console 中创建新的服务帐户（JWT）凭据。 现有的服务帐户（JWT）凭据在 2025 年 1 月 1 日前仍可用于已配置的集成，之后将停止使用，客户需要迁移到 OAuth 服务器到服务器凭据。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)到 OAuth 服务器到服务器凭据。 |
 | [!DNL Foundation] | 发布内容树工作流和相关的发布内容树工作流步骤，用于复制内容层次结构。 | 使用[树激活工作流步骤](/help/operations/replication.md#tree-activation)，其性能更佳。 |
-| [!DNL Foundation] | 使用 YUI 对 JavaScript 客户端库进行压缩/缩小。Adobe 不打算进一步更新 YUI 库。 | Adobe 建议客户切换到 Google Closure Compiler (GCC) 来进行实施。 |
+| [!DNL Foundation] | 使用 YUI 对 JavaScript 客户端库进行压缩/缩小。 Adobe 不打算进一步更新 YUI 库。 | Adobe 建议客户切换到 Google Closure Compiler (GCC) 来进行实施。 |
 | [!DNL Foundation] | 支持 com.adobe.granite.oauth.server | Adobe IMS 集成 |
 
 ## 已移除的功能 {#removed-features}
@@ -70,7 +69,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 | 区域 | 专题 | 替换 | 目标删除日期 |
 | ------------ | ------------------ | ----------- | ------------------- |
-| 用户界面 | 从产品用户界面中删除经典 UI。一些经典 UI 对话框可用于一些选择功能，例如“链接检查器”、“版本清除”和一些 Cloud Service 配置。即将发布的[产品更新](/help/release-notes/home.md)可能会进一步删除经典 UI 可用性。 | 标准 UI | 已删除 |
+| 用户界面 | 从产品用户界面中删除经典 UI。 一些经典 UI 对话框可用于一些选择功能，例如“链接检查器”、“版本清除”和一些 Cloud Service 配置。 即将发布的[产品更新](/help/release-notes/home.md)可能会进一步删除经典 UI 可用性。 | 标准 UI | 已删除 |
 | [!DNL Dynamic Media] | 以前与 [Dynamic Media Classic](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) 和 [Dynamic Media Hybrid 模式](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic)的集成在 [!DNL Experience Manager] as a [!DNL Cloud Service] 中不可用。 | 使用 [!DNL Experience Manager] as a [!DNL Cloud Service] 提供的 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。 | 已删除 |
 | [!DNL Sites] | Portal Director 和 Portlet 组件 | 这些功能在 [!DNL Experience Manager] 6.4 中已弃用，现已从 [!DNL Experience Manager] 中删除。 | 已删除 |
 | [!DNL Sites] | 设计导入程序 | 此功能已被删除，因为 [!DNL Experience Manager] 存储库的不可更改部分在运行时无法访问。 | 已删除 |
@@ -79,11 +78,11 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 | [!DNL Foundation] | 支持 JST 脚本模板（OSGi 包 org.apache.sling.scripting.jst） | 不适用 | 已删除 |
 | [!DNL Foundation] | 支持 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支持 org.apache.sling.serviceusermapping 功能，以[获取服务用户 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不适用 | 8/30/24 |
-| [!DNL Foundation] | Java 11 运行时已弃用，Adobe 已用 Java 21 运行时将其替换。请注意，代码仍可使用 Java 11 进行构建（Java 17 和 21 是其他可选方案） | 已应用 Java 21 运行时环境。为确保兼容性，必须按照[运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中的说明更新库版本 | 3 月 5/29/25 |
+| [!DNL Foundation] | Java 11 运行时已弃用，Adobe 已用 Java 21 运行时将其替换。 请注意，代码仍可使用 Java 11 进行构建（Java 17 和 21 是其他可选方案） | 已应用 Java 21 运行时环境。 为确保兼容性，必须按照[运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中的说明更新库版本 | 3 月 5/29/25 |
 
 ## 已弃用 API {#aem-apis}
 
-下表中的 API（点击展开即可查看）已被宣布为已弃用，但尚未被移除。  在目标移除日期之前，必须停止使用这些 API，否则可能会面临性能、可用性和安全方面的问题。一些 API 参考了下面的 API 移除指南部分。
+下表中的 API（点击展开即可查看）已被宣布为已弃用，但尚未被移除。  在目标移除日期之前，必须停止使用这些 API，否则可能会面临性能、可用性和安全方面的问题。 一些 API 参考了下面的 API 移除指南部分。
 
 >[!IMPORTANT]
 >
@@ -108,76 +107,76 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>使用 Sling 的 Auth Core/Auth Core SPI 接口作为替代方案。<a href="#org.apache.sling.commons.auth">请参阅下面的删除说明。</a></td>
+    <td>使用 Sling 的 Auth Core/Auth Core SPI 接口作为替代方案。 <a href="#org.apache.sling.commons.auth">请参阅下面的删除说明。</a></td>
     <td>2015</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org. eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.ecli pse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
-    <td>不再支持 Eclipse Jetty 和 Felix Http Jetty 包。<a href="#org.eclipse.jetty">请参阅下面的删除说明。</a></td>
+    <td>不再支持 Eclipse Jetty 和 Felix Http Jetty 包。 <a href="#org.eclipse.jetty">请参阅下面的删除说明。</a></td>
     <td>5/27/2021</td>
     <td>2/26/2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>不支持在 AEM as a Cloud Service 中使用此 API。<a href="#com.mongodb">请参阅下面的删除说明。</a></td>
+    <td>不支持在 AEM as a Cloud Service 中使用此 API。 <a href="#com.mongodb">请参阅下面的删除说明。</a></td>
     <td>5/27/2021</td>
     <td>2/26/2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>此 API 已被弃用，因为 Apache Abdera 自 2017 年起已停用。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">请参阅下面的删除说明。</a></td>
+    <td>此 API 已被弃用，因为 Apache Abdera 自 2017 年起已停用。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">请参阅下面的删除说明。</a></td>
     <td>7/29/2021</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>此 API 已被弃用，因为 Apache Abdera 自 2017 年起已停用。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">请参阅下面的删除说明。</a></td>
+    <td>此 API 已被弃用，因为 Apache Abdera 自 2017 年起已停用。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">请参阅下面的删除说明。</a></td>
     <td>4/8/2019</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http Whiteboard 不再受支持。将您的代码迁移到 OSGi Http Whiteboard。<a href="#org.apache.felix.http.whiteboard">请参阅下面的删除说明。</a></td>
+    <td>Apache Felix Http Whiteboard 不再受支持。 将您的代码迁移到 OSGi Http Whiteboard。 <a href="#org.apache.felix.http.whiteboard">请参阅下面的删除说明。</a></td>
     <td>1/27/2022</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>该 API 已弃用。将您的代码迁移到 JDK 提供的 XML API。</td>
+    <td>该 API 已弃用。 将您的代码迁移到 JDK 提供的 XML API。</td>
     <td>1/27/2022</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service 不支持此内部 logback API。<a href="#ch.qos.logback">请参阅下面的删除说明。</a></td>
+    <td>AEM as a Cloud Service 不支持此内部 logback API。 <a href="#ch.qos.logback">请参阅下面的删除说明。</a></td>
     <td>1/27/2022</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service 不支持此内部 log4j API。<a href="#org.slf4j">请参阅下面的删除说明。</a></td>
+    <td>AEM as a Cloud Service 不支持此内部 log4j API。 <a href="#org.slf4j">请参阅下面的删除说明。</a></td>
     <td>1/27/2022</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service 不支持此内部 slf4j API。<a href="#org.slf4j">请参阅下面的删除说明。</a></td>
+    <td>AEM as a Cloud Service 不支持此内部 slf4j API。 <a href="#org.slf4j">请参阅下面的删除说明。</a></td>
     <td>4/11/2022</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1 已于 2015 年终止它的生命周期，不再受支持。<a href="#org.apache.log4j">请参阅下面的删除说明。</a></td>
+    <td>Apache Log4j 1 已于 2015 年终止它的生命周期，不再受支持。 <a href="#org.apache.log4j">请参阅下面的删除说明。</a></td>
     <td>1/27/2022</td>
     <td>2/26/2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava 核心库已在 Cloud Service 中弃用。<a href="#com.google.common">请参阅下面的删除说明。</a></td>
+    <td>Google Guava 核心库已在 Cloud Service 中弃用。 <a href="#com.google.common">请参阅下面的删除说明。</a></td>
     <td>5/15/2023</td>
     <td>2/26/2026</td>
   </tr>
     <tr>
-    <td>com.drew。*</td>
+    <td>com.drew.*</td>
     <td>从图像和视频中提取元数据应该通过 Cloud Service 中的 Asset Compute 或通过 Apache POI 或 Apache Tika 完成。</td>
     <td>9/17/2024</td>
     <td>2/26/2026</td>
@@ -190,7 +189,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>云环境中不支持 Felix 网页控制台。<a href="#org.apache.felix.webconsole">请参阅下面的删除说明。</a></td>
+    <td>云环境中不支持 Felix 网页控制台。 <a href="#org.apache.felix.webconsole">请参阅下面的删除说明。</a></td>
     <td>4/30/2021</td>
     <td>2/26/2026</td>
   </tr>
@@ -220,7 +219,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
-    <td>此API已弃用。</td>
+    <td>该 API 已弃用。</td>
     <td>07/10/2024</td>
     <td>9/30/2026</td>
   </tr>
@@ -232,7 +231,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
-    <td>不再支持此API。</td>
+    <td>不再支持此 API。</td>
     <td>01/01/2026</td>
     <td>9/30/2026</td>
   </tr>
@@ -249,20 +248,20 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
     <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.ooxml.xps</td>
+    <td>A.B. org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.config.apache.tika.detect<br>org.apache.tika.tika.exception<br>org.apache.tika.tika.extractor<br>org.apache.apache.tika.fork<br>org.apache.apache.tika.tika.tika.io<br>org{org{org.apache.apache.apache.tika.tika.tika.tage.tage.language.tage.language.tage<br>tage.tage.tage.tage.tage.trage.tage.tage.tage.tage.tage.tage.tage.tage.tage.tage.tage.tage.trage.tage.tage.trage.trage.tname{1Detrage.trage.trage.trage.trage.tech.conlogage chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.parser.crypto<br>org.apache.tika.parser.cpakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable.external 36}org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.parser.parser.parser.parser.parser.parser.parser.parser.parser.her.hider.hider.hdf.hider.hf 4}org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwana<br>org.apache.tika.jdbc{5 2}org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml.xslf{60 org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp{67 org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr.ocr.ocr.oder.parser.oder.odparser f<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognment<br>org.apache.tika.parser.recogment.tf.rtf.rtf.rtf<br>org.org ache.tika.parser.情绪<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax.xpath<br>org.apache.apache.xpath<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td>
     <td>此版本的Apache Tika已过时，因此将从Cloud Service中删除。 切换到较新版本的Apache Tika。</td>
     <td>4/30/2026</td>
     <td>9/30/2026</td>
   </tr>
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 处于维护模式。应改用 Commons Lang 3。<a href="#apache.commons">请参阅下面的删除说明。</a></td>
+    <td>Commons Lang 2 处于维护模式。 应改用 Commons Lang 3。 <a href="#apache.commons">请参阅下面的删除说明。</a></td>
     <td>4/30/2021</td>
     <td>2027年3月31日（暂定）</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 处于维护模式。应改用 Commons Collections 4。<a href="#apache.commons">请参阅下面的删除说明。</a></td>
+    <td>Commons Collections 3 处于维护模式。 应改用 Commons Collections 4。 <a href="#apache.commons">请参阅下面的删除说明。</a></td>
     <td>4/30/2021</td>
     <td>2027年3月31日（暂定）</td>
   </tr>
@@ -286,7 +285,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
   <tr>
     <td>org.osgi.service.http</td>
     <td>OSGi服务HTTP API已弃用，请改用OSGi Servlet Whiteboard。</td>
-    <td>2024年5月1日</td>
+    <td>5/1/2024</td>
     <td>2027年12月31日（暂定）</td>
   </tr>
   </tbody>
@@ -295,7 +294,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 ## 已移除的 API {#removed-apis}
 
-本节列出了已弃用和移除的 API。一些 API 参考了下面的 API 移除指南部分。
+本节列出了已弃用和移除的 API。 一些 API 参考了下面的 API 移除指南部分。
 
 <details>
   <summary>展开以查看已移除的 API 的列表。</summary>
@@ -330,7 +329,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>已弃用 Apache Felix 元类型和 SCR API。请改用 OSGi 元类型和 Declarative Service API。</td>
+    <td>已弃用 Apache Felix 元类型和 SCR API。  请改用 OSGi 元类型和 Declarative Service API。</td>
   </tr>
   <tr>
     <td>org.slf4j.impl</td>
@@ -346,11 +345,11 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
-    <td>后续版本中已删除与 Apache Xerces 相关的 Util 类，导致了主要版本更改。由于这些 util 供 Filevault 内部使用，因此，公共 API 表面已弃用 API。</td>
+    <td>后续版本中已删除与 Apache Xerces 相关的 Util 类，导致了主要版本更改。 由于这些 util 供 Filevault 内部使用，因此，公共 API 表面已弃用 API。</td>
   </tr>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>旧版 AEM 6.x API。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">请参阅下面的删除说明。</a></td>
+    <td>旧版 AEM 6.x API。 <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">请参阅下面的删除说明。</a></td>
   </tr>
   <tr>
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
@@ -358,7 +357,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>由于安全漏洞，需要从 4.0.5 升级到 4.3.0。此包不再存在于升级的 handlebar 中。</td>
+    <td>由于安全漏洞，需要从 4.0.5 升级到 4.3.0。 此包不再存在于升级的 handlebar 中。</td>
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
@@ -380,11 +379,13 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 本节反映了上表中各种 API 的 API 移除指南。
 
-要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
+要识别您的代码正在使用哪些弃用的Java API，请将[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)集成到Maven项目中并在本地运行它。 该报告列出了所有检测到的已弃用API用法，并指示哪个OSGi包引用了每个API。 请参考[本教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以了解如何使用Maven插件。
 
 虽然您应该随着时间的推移修正所有已弃用的API，但请优先处理“已弃用的API”表中列出的目标删除日期为2026年2月26日（或更早日期）的任何API。 在AEM Analyzer报表中，这些API可能会显示，有效删除日期为2025年8月31日。
 
 更新代码后，通过检查代码质量步骤的结果，验证Cloud Manager中是否仍然没有弃用API用法。
+
+如果尚未在5月4日之前进行更新，您将不再收到AEM版本更新。 要再次接收Adobe版本更新，必须成功执行全栈管道；然后，将在几天内应用更新。
 
 ### 一般准则
 
@@ -392,22 +393,22 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 如果您决定部署自己的已弃用API版本（例如您自己的Guava版本），请确保所有使用此API的捆绑包都将连接到您的版本。 如果您决定部署当前包含在Cloud Service中的相同主版本，则无需执行进一步操作。 但是，如果您按照建议操作并部署最新版本，则需要调整您的Maven项目，在`aem-sdk-api`之前包含该库作为新依赖项。 这样，您的代码将连接到新版本。 进行更改后，请使用[AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)验证是否不再标记弃用的API的使用情况。
 
-如果您使用的是ACS AEM Commons，请至少使用版本6.11.0（建议使用最新版本），并通过为内容包指定分类器[确保您](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)包含Cloud Service`cloud`的版本。
+如果您使用的是ACS AEM Commons，请至少使用版本6.11.0（建议使用最新版本），并通过为内容包指定分类器`cloud`确保您[包含Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)的版本。
 
 如果已弃用的API的导入被标记为`optional`，您仍应尝试删除此项。 但是，此类可选用不会阻止部署。 但是，一旦可选导入不再得到满足，您的部署可能会受到影响。
 
 ### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
-如果您正在使用 `org.apache.sling.commons.auth`、`org.apache.sling.commons.auth.spi` 或二者皆用，则可以通过将代码迁移到 `org.apache.sling.auth` 来替换用法。`org.apache.sling.auth.spi`。如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
+如果您正在使用 `org.apache.sling.commons.auth`、`org.apache.sling.commons.auth.spi` 或二者皆用，则可以通过将代码迁移到 `org.apache.sling.auth` 来替换用法。 `org.apache.sling.auth.spi`. 如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
 
 操作列表：
 
 * 如果您正在使用ACS AEM Commons更新到最新版本（至少6.11.0）并确保使用`cloud`分类器。
-* 分别从 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 迁移到 `org.apache.sling.auth`。`org.apache.sling.auth.spi`。
+* 从`org.apache.sling.commons.auth`和/或`org.apache.sling.commons.auth.spi`迁移到`org.apache.sling.auth`响应。 `org.apache.sling.auth.spi`.
 
 ### 移除 `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
 
-如果您正在使用来自 `org.apache.felix.webconsole*` 的包，请从您的项目中移除此代码。无法在 Cloud Service 中访问网页控制台。
+如果您正在使用来自 `org.apache.felix.webconsole*` 的包，请从您的项目中移除此代码。 无法在 Cloud Service 中访问网页控制台。
 
 操作列表：
 
@@ -415,7 +416,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 ### 移除 `org.eclipse.jetty*` {#org.eclipse.jetty}
 
-如果您使用 `org.eclipse.jetty` 包或其子包中的任何内容，可能需要迁移到具有类似功能的其他第三方库。如果迁移不可行，请将下面列表中所需的包添加到您的项目中。
+如果您使用 `org.eclipse.jetty` 包或其子包中的任何内容，可能需要迁移到具有类似功能的其他第三方库。 如果迁移不可行，请将下面列表中所需的包添加到您的项目中。
 
 操作列表：
 
@@ -443,7 +444,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 ### 移除 `com.google.common*` {#com.google.common}
 
-请移除对 Google Guava 核心库的使用，或在项目中包含适当的版本。在许多情况下，该库的使用可以替换为 JDK 提供的集合类，或 Apache Commons Collections4 中的相关类。如果无法找到可替代方案，请在项目中引入最新版的 Google Guava 核心库。如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
+请移除对 Google Guava 核心库的使用，或在项目中包含适当的版本。 在许多情况下，该库的使用可以替换为 JDK 提供的集合类，或 Apache Commons Collections4 中的相关类。 如果无法找到可替代方案，请在项目中引入最新版的 Google Guava 核心库。 如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
 
 操作列表：
 
@@ -455,7 +456,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 ### 移除 `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
 
-停止使用不再维护的 Apache Commons 库，并替换为支持版本。在大多数情况下，这只需要调整包导入，只有在某些情况下，类或方法才会被重命名。如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
+停止使用不再维护的 Apache Commons 库，并替换为支持版本。 在大多数情况下，这只需要调整包导入，只有在某些情况下，类或方法才会被重命名。 如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
 
 操作列表：
 
@@ -473,7 +474,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 ### 使用 `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
-将 `org.apache.felix.http.whiteboard` 的用法替换为 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)。官方 OSGi API 具有类似的功能，并且大多数情况下的替换只需要更改服务注册属性。
+将 `org.apache.felix.http.whiteboard` 的用法替换为 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)。 官方 OSGi API 具有类似的功能，并且大多数情况下的替换只需要更改服务注册属性。
 
 操作列表：
 
@@ -481,7 +482,7 @@ Adobe 会定期审查包括 API 和配置在内的各项功能，以确保它们
 
 ### 使用 `ch.qos.logback*` {#ch.qos.logback}
 
-Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
+Cloud Service 不支持 Logback，请移除所有使用它的地方。 如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
 
 操作列表：
 
@@ -490,7 +491,7 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 
 ### 使用 `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
 
-如果您正在使用 `org.slf4j.event` 或者 `org.slf4j.spi`，请移除所有使用它的地方。如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
+如果您正在使用 `org.slf4j.event` 或者 `org.slf4j.spi`，请移除所有使用它的地方。 如果您正在使用旧版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，请确保将其更新到最新版本。
 
 操作列表：
 
@@ -512,11 +513,11 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 以下部分介绍 AEM as a Cloud Service OSGi 配置界面的功能，描述客户可以配置的内容。
 
 1. 客户代码不得配置列出的 OSGi 配置。
-1. 可配置其属性但必须遵守所示验证规则的 OSGi 配置的列表。这些规则包括是否需要属性声明、其类型，在某些情况下还包括其允许的值范围。
+1. 可配置其属性但必须遵守所示验证规则的 OSGi 配置的列表。 这些规则包括是否需要属性声明、其类型，在某些情况下还包括其允许的值范围。
 
 客户代码可以配置未列出的任何 OSGi 配置。
 
-在 Cloud Manager 构建过程中验证这些规则。可能逐渐添加其他规则，并在表中注明预期的实施日期。客户应在目标实施日期之前遵守这些规则。在删除日期后不遵守这些规则会在 Cloud Manager 构建过程中产生错误。Maven 项目应包括 [AEM as a Cloud Service SDK 构建分析器 Maven 插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)以在开发本地 SDK 期间标出 OSGI 配置错误。
+在 Cloud Manager 构建过程中验证这些规则。 可能逐渐添加其他规则，并在表中注明预期的实施日期。 客户应在目标实施日期之前遵守这些规则。 在删除日期后不遵守这些规则会在 Cloud Manager 构建过程中产生错误。 Maven 项目应包括 [AEM as a Cloud Service SDK 构建分析器 Maven 插件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)以在开发本地 SDK 期间标出 OSGI 配置错误。
 
 可在[此位置](/help/implementing/deploying/configuring-osgi.md)找到有关 OSGI 配置的其他信息。
 
@@ -554,7 +555,7 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 
 ### 未来强制执行的 OSGi 属性限制 {#future-restrictions-osgi-properties}
 
-未来，Adobe 将强制执行以下 OSGi 属性限制。对于上述 PID，仅允许配置列出的属性。
+未来，Adobe 将强制执行以下 OSGi 属性限制。 对于上述 PID，仅允许配置列出的属性。
 
 | OSGi 组件 PID |   | 必填 | 类型 | 限制（如适用） |
 |---|---|---|---|---|
@@ -637,5 +638,5 @@ Cloud Service 不支持 Logback，请移除所有使用它的地方。如果您�
 
 ## Java 运行时更新至版本 21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service 已转换到 Java 21 运行时。为了确保兼容性，请按照[运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中所述更新库版本至关重要。
+Adobe Experience Manager as a Cloud Service 已转换到 Java 21 运行时。 为了确保兼容性，请按照[运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中所述更新库版本至关重要。
 
