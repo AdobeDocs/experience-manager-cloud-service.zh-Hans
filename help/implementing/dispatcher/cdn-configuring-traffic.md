@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
+source-git-commit: 12e0d6f6ed07332e4c152f158cfe3a96dd385815
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '2035'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 * [服务器端重定向](#server-side-redirectors) — 触发浏览器重定向。
 * [源选择器](#origin-selectors) — 代理到其他源后端。
 
-在CDN上还可配置的还有流量过滤器规则(包括WAF)，这些规则控制CDN允许或拒绝的流量。 此功能已发布，您可以在[流量筛选器规则(包括WAF规则)](/help/security/traffic-filter-rules-including-waf.md)页面中了解更多相关信息。
+在CDN上还可配置的还有流量过滤器规则（包括WAF），这些规则控制CDN允许或拒绝的流量。 此功能已发布，您可以在[流量筛选器规则（包括WAF规则）](/help/security/traffic-filter-rules-including-waf.md)页面中了解更多相关信息。
 
 此外，如果CDN无法联系其源，则可以编写引用自托管自定义错误页面（随后将渲染）的规则。 请阅读[配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md)文章，以了解有关此内容的更多信息。
 
@@ -384,6 +384,8 @@ data:
 
 您可以利用AEM CDN将流量路由到不同的后端，包括非Adobe应用程序（可能按路径或子域）。
 
+请求属性`originalPath`和`originalUrl`分别是不可变的原始路径（没有查询参数）和完整URL（包括查询参数），在任何CDN [请求转换](#request-transformations)之前采用它们。 当您需要锚定有关客户端最初发送内容的规则时，请在`when`条件下使用它们，而不是评估序列中之前可能重写的值。 使用`originalPath`进行仅路径匹配；当查询字符串必须是条件的一部分时（例如，在特定初始请求URL上进行路由或筛选），请使用`originalUrl`。
+
 配置示例：
 
 ```
@@ -393,7 +395,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -443,7 +445,7 @@ data:
 
 ### 将自定义域代理到AEM静态层 {#proxy-custom-domain-static}
 
-源选择器可用于将AEM发布流量路由到使用[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)部署的AEM静态内容。 用例包括在与页面相同的域(例如example.com/static)上或在明显不同的域(例如static.example.com)上提供静态资源。
+源选择器可用于将AEM发布流量路由到使用[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)部署的AEM静态内容。 用例包括在与页面相同的域（例如example.com/static）上或在明显不同的域（例如static.example.com）上提供静态资源。
 
 以下是可以实现此目标的原点选择器规则的示例：
 
@@ -497,7 +499,7 @@ data:
 
 >[!NOTE]
 >
->由于使用的是Adobe Managed CDN，请确保按照Edge Delivery Services **安装程序推送失效文档**&#x200B;在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式下配置推送失效。
+>由于使用的是Adobe Managed CDN，请确保按照Edge Delivery Services [安装程序推送失效文档](https://www.aem.live/docs/byo-dns#setup-push-invalidation)在&#x200B;**Managed**&#x200B;模式下配置推送失效。
 
 
 ### 代理到AEMaaCS环境 {#proxying-to-aemaacs}
@@ -524,7 +526,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -552,13 +554,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage
@@ -569,7 +571,7 @@ data:
 | **重定向** | 位置 | “Location”标头的值。 |
 |     | 状态（可选，默认为301） | 重定向消息中使用的HTTP状态，默认为301，允许值为：301、302、303、307、308。 |
 
-重定向的位置可以是字符串文字(例如https://www.example.com/page)，也可以是可选地使用以下语法进行转换的属性（例如path）的结果：
+重定向的位置可以是字符串文字（例如https://www.example.com/page），也可以是可选地使用以下语法进行转换的属性（例如path）的结果：
 
 ```
 redirects:
