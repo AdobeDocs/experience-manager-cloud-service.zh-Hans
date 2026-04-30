@@ -107,7 +107,7 @@ Content Advisor现在可用于Adobe Workfront和非Adobe（第三方）应用程
 自适应Forms中的多选下拉组件现在在[生成的提交PDF](/help/forms/generate-document-of-record-core-components.md)中呈现其选定的显示标签，确保文档准确反映用户在表单上看到的内容。
 
 **复选框、单选按钮和面板组件的增强辅助功能**
-自适应Forms核心组件为[复选框组(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[单选按钮组(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入了符合WCAG 2.2的语义标记。 这些组件利用`<fieldset>`和`<legend>`个HTML元素在组标签及其选项之间建立有意义的关系，从而使屏幕阅读器和其他辅助技术能够进行准确解释。
+自适应Forms核心组件为[复选框组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[单选按钮组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入了符合WCAG 2.2的语义标记。 这些组件利用`<fieldset>`和`<legend>`个HTML元素在组标签及其选项之间建立有意义的关系，从而使屏幕阅读器和其他辅助技术能够进行准确解释。
 
 Forms Manager中的&#x200B;**版本控制支持**
 Forms Manager现在[支持自适应Forms（核心组件和基础组件）](/help/forms/manage-form-versions-forms-manager.md)、表单片段、主题、XDP模板和二进制资源的版本控制。 直接从Forms和文档控制台创建版本、查看完整的版本历史记录以及恢复表单资产的早期状态。
@@ -131,7 +131,7 @@ Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和Intelli
 
 Experience Governance MCP Server现已正式提供(GA)。 它与支持模型上下文协议(MCP)的AI开发人员工具和聊天机器人集成，允许您在聊天机器人或IDE中使用自然语言提示来维护品牌完整性和合规性。 您可以根据品牌治理规则评估内容（文本、图像、页面），并检索品牌配置和可用的治理检查。
 
-了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
+了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
 
 #### 克劳德连接器 {#aem-claude-connector}
 
