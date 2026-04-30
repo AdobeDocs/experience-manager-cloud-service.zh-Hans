@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a10a4bf02d5e006e6c151b48606c4e9412193a14
+source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 28%
+source-wordcount: '2030'
+ht-degree: 31%
 
 ---
 
@@ -28,17 +28,19 @@ ht-degree: 28%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2026.3.0)的发布日期是2026年3月26日。 下一个功能版本(2026.4.0)计划于2026年4月30日发布。
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2026.4.0)的发布日期是2026年4月30日。 下一个功能版本(2026.5.0)计划于2026年5月28日发布。
 
 ## 维护发行说明 {#maintenance}
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-## 发布视频 {#release-video}
+<!-- 
+## Release Video {#release-video}
 
-请查看 2026 年 3 月发布概述视频，了解 2026.3.0 版本中的新增功能摘要：
+Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483070/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+-->
 
 ## AEM Beta程序 {#aem-beta-programs}
 
@@ -85,70 +87,27 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 内容片段签出/签入 {#cf-checkout-in}
+### 人工智能翻译集成 {#ai-translation-integration}
 
-为了改进与AEM触屏UI的等同性，现在还可以使用新的内容片段管理UI签出和重新签入内容片段。 签出功能未更改，从而有效地锁定已签出的内容片段，从而防止其他用户在“内容片段编辑器”中编辑它。 拥有内容片段的用户和管理员可以签出片段并重新将其签入。 签出片段对引用的子片段或资产没有影响。
-
-### 内容片段启动作业面板 {#cf-launches-jobs}
-
-现在，可以在内容片段启动项管理UI的属性面板中查看内容片段启动项的异步作业以观察其状态 — 如果作业仍在运行、已完成或已中止，还可以查看有关作业的相关详细信息。
-
-### 内容片段编辑器的RTE更新 {#cf-rte-update}
-
-内容片段编辑器的富文本编辑器(RTE)已从TinyMCE迁移到TipTap。 这一变化带来了许多好处。
-
-* 通用编辑器和内容片段编辑器现在使用相同的RTE技术栈栈。
-   * 这意味着两个编辑器现在生成相同的HTML。
-   * 扩展现在可以重用。
-   * 现在，使用这两个编辑器（在Headless用例中）可获得相同的函数和方法。
-   * 最终目标是一种配置可以在两个编辑器中带来统一的体验。
-* 内容编辑器现在具有光谱2样式的新外观。
-* 内容片段编辑器中提供了新功能，包括查找和替换以及成为内容顾问就绪。
+AEM用户现在可以利用大型语言模型(LLM)进行内容翻译，以机器翻译的速度提供人工翻译质量。 与传统第三方翻译服务类似，Azure OpenAI可在AEM中配置为翻译提供商，并支持计划在未来版本中使用的其他LLM。 客户使用自己的LLM许可证来实现此功能。 此外，可以将公司翻译风格指南上传到AEM，从而提取翻译规则以确保品牌和风格的一致性。 有关详细信息，请参阅[配置AI翻译集成](/help/sites-cloud/administering/translation/ai-translation-integration.md)。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-AEM Sites中的&#x200B;**内容顾问**
+**内容顾问现在可用于Adobe Workfront和非Adobe应用程序**
 
-Content Advisor现在可在AEM Sites中使用，它直接从AEM Assets引入智能资源发现。 它使用户能够轻松地直接在其工作流中发现、浏览和重用最相关的资产，而无需切换上下文。
+Content Advisor现在可用于Adobe Workfront和非Adobe（第三方）应用程序，从而将智能资源发现和内容重用扩展到Adobe Express和AEM Sites之外。 此版本提供了全面的内容顾问体验，包括AI支持的搜索、上下文感知推荐、基于活动简报的发现、对Dynamic Media演绎版的访问、内容片段发现、过滤器和资源元数据到Adobe Workfront工作流和外部应用程序。
 
-内容审查程序为资源提供了智能功能，例如基于活动简介的建议、上下文建议、对Dynamic Media演绎版的访问以及详细的资源元数据。
-
-即将推出 — Content Advisor支持Adobe Workfront和AJO B2C应用程序，包括发现内容片段的功能
-
-### Dynamic Media 中的新增功能 {#dynamic-media-new-features}
-
-#### Dynamic Media模板编辑器更新 {#dynamic-media-template-editor-updates}
-
-**层管理增强功能**
-
-* 拖放图层重新排序：现在，可以通过拖动直接在“图层”面板中重新排序图层，从而提供一种比现有的“上移”或“下移”操作更快、更直观的方式来组织图层栈叠顺序。
-* 复制、粘贴和复制：完全支持使用键盘快捷键(Cmd/Ctrl+C、V、D)或上下文菜单来复制、粘贴和复制图层，并支持多层选择。
-* 单独的“图层属性”按钮：添加了专用的“图层属性”按钮，可更轻松地导航到图层设置，并且可通过双击支持图层来快速访问。
-
-**文本格式功能**
-
-* 行距控制：新的行距滑块允许精确控制文本图层中的行高，并具有完整的端到端支持，包括撤消/重做以及模板保存/加载。
-* 全部大写格式：文本图层现在支持字体样式工具栏中的“全部大写格式”选项以及“粗体”、“斜体”和“下划线”。
-* 垂直对齐选项：为文本图层添加了垂直对齐控件，以便在文本框中提供更精确的文本定位。
-
-**大小和Dimension控件**
-
-* 宽高比解锁：用户现在可以在调整大小属性时解锁宽高比，从而可独立调整宽度和高度，以实现更灵活的图层大小调整。
-* 组排文字行配置：在文本组排文字属性中添加了对`copyfitlines`和`copyfitmaxlines`设置的支持，从而对文本组排行为提供了更精细的控制。
-
-**视觉波兰语**
-
-* 更新了“计时器”和“形状”层的图标，并细化了“频谱2(S2)”设计系统图标。
+您现在可以直接在首选应用程序中发现、评估和重复使用AEM Assets中已批准的资源，从而在Adobe和非Adobe应用程序中实现一致的资源使用、提高效率和简化内容创建。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### AEM Forms 中的早期访问功能 {#forms-early-access-features}
 
 **在提交PDF中显示多选下拉列表的标签**
-自适应Forms中的多选下拉组件现在在[生成的提交PDF](/help/forms/generate-document-of-record-core-components.md)中呈现其选定的显示标签，以确保文档准确反映用户在表单上看到的内容。
+自适应Forms中的多选下拉组件现在在[生成的提交PDF](/help/forms/generate-document-of-record-core-components.md)中呈现其选定的显示标签，确保文档准确反映用户在表单上看到的内容。
 
 **复选框、单选按钮和面板组件的增强辅助功能**
-自适应Forms核心组件为[复选框组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[单选按钮组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入了符合WCAG 2.2的语义标记。 这些组件利用`<fieldset>`和`<legend>`个HTML元素在组标签及其选项之间建立有意义的关系，从而使屏幕阅读器和其他辅助技术能够进行准确解释。
+自适应Forms核心组件为[复选框组(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[单选按钮组(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入了符合WCAG 2.2的语义标记。 这些组件利用`<fieldset>`和`<legend>`个HTML元素在组标签及其选项之间建立有意义的关系，从而使屏幕阅读器和其他辅助技术能够进行准确解释。
 
 Forms Manager中的&#x200B;**版本控制支持**
 Forms Manager现在[支持自适应Forms（核心组件和基础组件）](/help/forms/manage-form-versions-forms-manager.md)、表单片段、主题、XDP模板和二进制资源的版本控制。 直接从Forms和文档控制台创建版本、查看完整的版本历史记录以及恢复表单资产的早期状态。
@@ -157,30 +116,55 @@ Forms Manager现在[支持自适应Forms（核心组件和基础组件）](/help
 
 ### [!DNL Experience Manager]作为[!DNL Cloud Service] Foundation的新功能 {#foundation-new}
 
-#### 简化的索引管理 {#simplified-index-management}
+#### 用于AEM Java和Dispatcher开发的IDE人工智能工具 {#ai-dev}
 
-[简化的索引管理](https://oak-indexing.github.io/oakTools/simplified.html)提供了一种更简单的方法，用于定义自定义索引和使用一个JSON文件自定义开箱即用(OOTB)索引，而无需复制完整定义或手动管理版本。 自定义项会与最新的OOTB索引合并，并在需要时创建新索引版本。
+Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和IntelliJ等工具中使用AI辅助开发，以加快功能交付并提高代码质量。
 
-#### Cloud Manager MCP服务器 {#cm-mcp-server}
+编码代理可以使用IDE工具来生成和调试AEM代码和Dispatcher配置。 例如，下面的视频演练演示了使用“代理技能”构建AEM组件。
 
->[!VIDEO](https://video.tv.adobe.com/v/3480352/?captions=chi_hans&quality=12)
+了解有关[使用AI工具进行本地开发](/help/ai-in-aem/local-development-with-ai-tools.md)的更多信息，并随时发送电子邮件至[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)，提出问题或反馈。
 
-现代IDE使用模型上下文协议(Model Context Protocol， MCP)来启用大型语言模型(Large Language Model， LLM)以调用MCP服务器公开的工具。 开发人员可以简单地用自然语言描述他们的意图，而不是直接与低级API规范集成。
 
-Cloud Manager MCP服务器允许您通过提示直接从IDE与Cloud Manager API交互。 支持的方案包括执行管道、检查环境状态等。
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
-了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)的更多信息。
+#### Experience Governance MCP服务器 {#gov-mcp-server}
+
+Experience Governance MCP Server现已正式提供(GA)。 它与支持模型上下文协议(MCP)的AI开发人员工具和聊天机器人集成，允许您在聊天机器人或IDE中使用自然语言提示来维护品牌完整性和合规性。 您可以根据品牌治理规则评估内容（文本、图像、页面），并检索品牌配置和可用的治理检查。
+
+了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
+
+#### 克劳德连接器 {#aem-claude-connector}
+
+Claude用户可以浏览Anthropic的[连接器市场](https://claude.ai/settings/connectors)以一键安装[Adobe Experience Manager连接器](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector)。 此MCP服务器公开一组用于与AEM进行交互的工具，包括通过提示编辑内容。
+
+#### 关于发布新功能的AEM OIDC {#aem-oidc-on-publish-new-features}
+
+* 修复：验证后，原始请求中的查询参数丢失
+* OIDC身份验证[文档](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)中的身份验证后的自定义重定向
+
+#### Microsoft Graph API的邮件服务支持 {#mail-service-graph-api}
+
+AEM的邮件服务现在支持使用Microsoft Graph API的Microsoft® Outlook（通过Microsoft 365）。 这对于不允许SMTP（邮件服务已支持此功能）的组织特别有用。 身份验证通过OAuth 2.0进行。 [了解如何配置](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api)。
+
+#### CDN日志可以转发到Sumo Logic {#sumo-cdn-logforwarding}
+
+[日志转发功能](/help/implementing/developing/introduction/log-forwarding.md#sumologic)现在支持将CDN日志发送到Sumo Logic。 以前，日志转发到Sumo Logic的功能仅限于AEM日志。
 
 ### [!DNL Experience Manager]作为[!DNL Cloud Service] Foundation重要声明 {#foundation-notices}
 
+#### IMS身份验证富错误 {#ims-auth-rich-errors}
+
+为帮助解决IMS集成问题，`imsauth`已添加对&#x200B;*富错误*&#x200B;的支持。
+
+这些错误不只返回HTTP状态代码，而是提供了额外的上下文来帮助诊断和解决可能会阻止身份验证和访问的问题。
+
 #### Java API弃用 {#java-api-deprecation}
 
-不应再在代码中使用针对2026年2月26日删除的已弃用API。 要阻止部署块，请在&#x200B;**2026年3月30日**&#x200B;之前删除API用法。 重要日期：
+删除使用已弃用的API至关重要。
 
-* **从2026年1月26日开始**：操作中心通知电子邮件将作为提醒发送，以删除这些API的使用情况。
-* **2026年2月26日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**暂停**。 部署管理员、项目管理员或业务负责人可以覆盖此问题以允许管道继续。 *这可能会降低验证和发布代码更改的能力。*
-* **2026年3月30日**：包含使用这些API的代码的Cloud Manager管道将在&#x200B;**代码质量**&#x200B;步骤期间&#x200B;**失败**。 在删除已弃用的API用法之前，将阻止部署。 *这可能会阻止您发布时效性更新，并可能影响您的业务运营。*
-* **2026年5月4日**：仍在使用已弃用API的环境&#x200B;**将不会收到关键的Adobe版本更新**，并且不受Adobe有关性能和可用性的标准承诺的约束。 因此，您将不会收到新功能或错误修复，应用程序的稳定性和正常运行时间可能会受到负面影响，并且安全风险暴露可能会进一步增加。
+自&#x200B;**4月14日**&#x200B;起，包含使用针对2026年2月26日删除&#x200B;**的API的代码的Cloud Manager管道在代码质量**&#x200B;步骤中失败。 在删除已弃用的API用法之前，将阻止部署。 *这可能会阻止您发布时效性更新，并可能影响您的业务运营。*
+
+从&#x200B;**2026年6月11日开始**，仍在使用这些已弃用API **的环境将不会收到关键Adobe版本更新**，并且不会受Adobe有关性能和可用性的标准承诺的约束。 因此，您将不会收到新功能或错误修复，应用程序的稳定性和正常运行时间可能会受到负面影响，并且安全风险敞口可能会进一步增加。
 
 请查看[弃用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整详细信息。但为了方便起见，下面列出了这些 API：
 
@@ -205,14 +189,6 @@ Cloud Manager MCP服务器允许您通过提示直接从IDE与Cloud Manager API�
 
 ### [!DNL Experience Manager]作为[!DNL Cloud Service] Foundation早期采用者功能 {#foundation-early-adopter}
 
-#### 用于AEM Java和Dispatcher开发的IDE AI工具（公共Beta程序） {#ai-dev-beta}
-
-Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和IntelliJ等工具中使用AI辅助开发，以加快功能交付并提高代码质量。
-
-参与公共测试版（无需注册）以尝试编码代理可用于生成和调试AEM代码和Dispatcher配置的IDE工具。
-
-在[使用AI工具进行本地开发](/help/ai-in-aem/local-development-with-ai-tools.md)测试版文档和电子邮件[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)中了解更多信息（如有疑问或反馈）。
-
 #### AEM Edge功能（Beta程序） {#edge-functions}
 
 [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)允许您在CDN层执行JavaScript，使数据处理更接近于最终用户。 这降低了延迟，使得边缘设备能够提供响应迅速、动态丰富的体验。
@@ -223,45 +199,47 @@ Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和Intelli
 * 充当 CDN 与您的源站之间的中间件
 * 在将第三方 API 的响应（可能还包括聚合多个 API 的响应）传递给浏览器之前，重新设置响应的格式
 * 使用从各种后端拼接的内容，在边缘构建并呈现服务器渲染的 HTML
-* 为 ChatGPT 和 Claude 等 LLM 公开 MCP 服务器，以访问自定义工具
+* 为ChatGPT和Claude等AI助理公开MCP服务器以访问自定义工具
 
-我们为实时生产站点提供的 AEM Publish Delivery 或 Edge Delivery Services 项目的机会数量有限。如果您有兴趣参与或想了解更多信息，请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) 并简要描述您的用例。
+我们为实时生产站点提供的 AEM Publish Delivery 或 Edge Delivery Services 项目的机会数量有限。 如果您有兴趣参与或想了解更多信息，请发送电子邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) 并简要描述您的用例。
 
-#### 使用开发代理进行Web层配置管道故障排除（Beta程序） {#devagent-webtier}
+#### Web层配置管道故障排除（Beta程序） {#devagent-webtier}
 
 开发代理的[管道疑难解答](/help/ai-in-aem/agents/brand-experience/development/development.md)功能可帮助开发人员高效地诊断和解决AEM as a Cloud Service部署中的问题。 除了支持全栈管道（部署和代码质量）之外，开发代理现在还支持将&#x200B;**Web层配置管道**&#x200B;的故障排除作为Beta程序的一部分。
 
 若要请求访问测试版，请发送电子邮件至[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)。 需要预先具备对AEM中代理的访问权限。
 
-#### 适用于AEM 6.5到AEM Cloud Service迁移的IDE AI工具（Alpha程序） {#cm-ide-migration}
+#### 复制AI故障排除（Alpha项目） {#replication-ai-troubleshooting-alpha}
+
+在AEM创作和其他界面中使用AI助手，可以对与复制相关的问题（如阻止的队列）进行故障诊断。 要加入Alpha计划，请发送电子邮件至[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)，说明您的兴趣。
+
+#### 适用于AEM 6.5到AEM Cloud Service迁移的IDE AI工具（Beta程序） {#cm-ide-migration}
 
 使用IDE AI工具根据[最佳实践分析器报告](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)的建议执行操作，加快从AEM 6.5到AEM as a Cloud Service （Java栈栈）的迁移。
 
-电子邮件[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)以了解更多信息。
+请发送电子邮件至[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)，以了解更多信息并请求访问功能。
 
 #### Edge Delivery Services 的边缘身份验证（Beta 计划） {#edge-authentication}
 
-边缘身份验证可让您将对 Edge Delivery Services 页面的访问限制为仅限已通过身份标识提供者 (IdP) 认证的用户。此功能通过部署 OpenID Connect (OIDC) 配置 YAML 文件来实现。
+边缘身份验证可让您将对 Edge Delivery Services 页面的访问限制为仅限已通过身份标识提供者 (IdP) 认证的用户。 此功能通过部署 OpenID Connect (OIDC) 配置 YAML 文件来实现。
 
 如有兴趣，请发送邮件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，并简要说明您的用例及相关问题。
 
 #### 金丝雀生产部署：在接受真实流量前测试代码（Beta 计划） {#canary-beta}
 
-您可以在对最终用户开放前，先使用仅限内部的测试流量验证生产构建。将构建部署到生产环境，仅通过特殊标头路由金丝雀流量，监控行为，然后再决定是否提升为真实流量或回滚——而不会影响客户。
-
-您可以将代码发布部署到生产环境，但在决定接受真实流量或回滚之前，仅将其限制在内部测试流量中。
+您可以在对最终用户开放前，先使用仅限内部的测试流量验证生产构建。 将构建部署到生产环境，仅通过特殊标头路由金丝雀流量，监控行为，然后再决定是否提升为真实流量或回滚——而不会影响客户。
 
 如需申请访问权限并分享反馈，请发送邮件至 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)。
 
 #### RDE快照（Beta计划） {#rde-snapshot-program}
 
-在Beta版中，快速开发环境(RDE)现在支持一项功能，即拍摄代码和内容的当前状态的快照，之后可以恢复。 在将可能需要恢复的代码同步时，或在不同功能的开发之间切换时，这个功能很有用。还可以仅恢复可变内容，将其作为一个已知的测试起点。
+在Beta版中，快速开发环境(RDE)现在支持功能[拍摄代码和内容的当前状态的快照](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots)，以便稍后恢复。 在将可能需要恢复的代码同步时，或在不同功能的开发之间切换时，这个功能很有用。 还可以仅恢复可变内容，将其作为一个已知的测试起点。
 
 如果您有兴趣使用此功能并提供反馈，请向[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)发送电子邮件。
 
 #### 扩展的应用程序性能监控 (APM)（Alpha 计划） {#apm-alpha}
 
-在可观测性方面，AEM Cloud Service 目前支持 Adobe 提供的 [New Relic One](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 和客户自管的 [Dynatrace](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。随着我们探索更多的 APM 选项，请将您偏好的厂商或技术以及用例发送至 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)。
+在可观测性方面，AEM Cloud Service 目前支持 Adobe 提供的 [New Relic One](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 和客户自管的 [Dynatrace](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 随着我们探索更多的 APM 选项，请将您偏好的厂商或技术以及用例发送至 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)。
 
 ## [!DNL Experience Manager] Guides {#guides}
 
