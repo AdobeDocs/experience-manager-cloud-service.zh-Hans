@@ -4,10 +4,10 @@ description: 使用Open API的Dynamic Media中的缓存管理
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '660'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +19,17 @@ Dynamic Media中带有Open API的长时间缓存包括[CDN层缓存](#cdn-layer-
 
 ## CDN层缓存 {#cdn-layer-caching}
 
-资源投放响应会在[Adobe Managed CDN](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)中缓存较长时间，以最大化性能并最大限度地减少源上的负载。 此缓存完全由Adobe管理，以确保为最终用户提供始终如一的高质量体验。 缓存持续时间专门针对性能进行优化，用户无法对其进行自定义以在所有客户中保持可靠性和高效的内容交付。
+资源投放响应会在[Adobe Managed CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)中缓存较长时间，以最大化性能并最大限度地减少源上的负载。 此缓存完全由Adobe管理，以确保为最终用户提供始终如一的高质量体验。 缓存持续时间专门针对性能进行优化，用户无法对其进行自定义以在所有客户中保持可靠性和高效的内容交付。
 
 所有投放URL都会在边缘(Fastly)缓存较长时间，以确保最佳性能。 缓存的投放对象包括静态演绎版、视频、原始图像二进制文件和动态转换的图像，例如通过URL参数生成的调整大小或重新格式化的资产。<!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
 ## 外部缓存控制（BYOCDN和浏览器缓存） {#byocdn-browser-caching}
 
-对于下游缓存层，资源投放响应包含具有默认值`Cache-Control` `max-age`10分钟&#x200B;**的**&#x200B;标头。 这适用于自定义&#x200B;*自带CDN (BYOCDN)配置*、*最终用户浏览器*&#x200B;和任何&#x200B;*中间缓存代理*，从而确保在整个投放路径中实现一致的缓存控制。
+对于下游缓存层，资源投放响应包含具有默认值`max-age` **10分钟**&#x200B;的`Cache-Control`标头。 这适用于自定义&#x200B;*自带CDN (BYOCDN)配置*、*最终用户浏览器*&#x200B;和任何&#x200B;*中间缓存代理*，从而确保在整个投放路径中实现一致的缓存控制。
 
 ### 自定义缓存控制标头 {#customizing-cache-control-headers}
 
-增加缓存时间，使值的存留时间超过默认配置会增加提供过时内容的可能性，这可能会延迟内容更新在最终用户体验中的可见性。 如果需要修改特定用例的缓存控制行为，可以配置自定义CDN规则以调整响应标头。 这允许您根据自己的要求设置不同的缓存持续时间。 请参阅响应标头的[AEM自定义CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)。
+增加缓存时间，使值的存留时间超过默认配置会增加提供过时内容的可能性，这可能会延迟内容更新在最终用户体验中的可见性。 如果需要修改特定用例的缓存控制行为，可以配置自定义CDN规则以调整响应标头。 这允许您根据自己的要求设置不同的缓存持续时间。 请参阅响应标头的[AEM自定义CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)。
 
 ```
 responseTransformations:
@@ -55,7 +55,7 @@ responseTransformations:
 
 ### 手动清除缓存 {#manual-cache-purging}
 
-当需要手动清除缓存的内容时，您可以使用AEM的缓存失效功能来执行该操作。 有关如何清除特定缓存URL的详细说明，请参阅[AEM CDN缓存无效](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge)。
+当需要手动清除缓存的内容时，您可以使用AEM的缓存失效功能来执行该操作。 有关如何清除特定缓存URL的详细说明，请参阅[AEM CDN缓存无效](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge)。
 
 ## 常见问题解答{#faq-cache-management}
 
@@ -108,9 +108,3 @@ The following mechanisms can be followed:
 要选择退出长时间缓存，请联系[Adobe支持](https://helpx.adobe.com/in/contact.html)，并提供您请求的理由。
 
 +++
-
-
->[!MORELIKETHIS]
->
->- [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
->- [虚URL](/help/assets/vanity-urls.md)

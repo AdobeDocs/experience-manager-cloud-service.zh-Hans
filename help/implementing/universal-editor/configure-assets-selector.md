@@ -3,13 +3,13 @@ title: 为通用编辑器配置Assets选择器
 description: 了解如何配置资产选择器以与通用编辑器一起使用。
 feature: Developing
 role: Admin, Developer
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
-
 
 # 为通用编辑器配置Assets选择器 {#configure-assets-selector}
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-通用编辑器使用[资源选择器](/help/assets/overview-asset-selector.md#using-asset-selector)允许作者浏览并选择资源以插入其内容中。
+通用编辑器使用资产选择器，允许作者浏览并选择资产以插入其内容中。
 
-可以使用[组件筛选器在通用编辑器中配置资源选择器。](/help/implementing/universal-editor/filtering.md)本文档介绍了可用的配置选项。
+可以使用[组件筛选器在通用编辑器中配置资源选择器。](/help/implementing/universal-editor/filtering.md) 本文档介绍了可用的配置选项。
 
 >[!NOTE]
 >
@@ -93,6 +93,10 @@ ht-degree: 1%
 ]
 ```
 
-## 其他资源 {#additional-resources}
+<!--
 
-有关资产选择器的详细信息，请参阅资产文档中的文档[微前端资产选择器](/help/assets/overview-asset-selector.md#using-asset-selector)。
+## Additional Resources {#additional-resources}
+
+For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->

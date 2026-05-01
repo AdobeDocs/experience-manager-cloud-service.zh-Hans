@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 17%
+source-wordcount: '3101'
+ht-degree: 18%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 17%
 
 通用编辑器支持在任何实施中编辑任何内容的任何方面，因此您可以提供卓越的体验并提高内容速度。
 
-为此，Universal Editor 为内容作者提供了一个直观的 UI，只需少量培训即可开始编辑内容。本文档介绍了 Universal Editor 的创作体验。
+为此，Universal Editor 为内容作者提供了一个直观的 UI，只需少量培训即可开始编辑内容。 本文档介绍了 Universal Editor 的创作体验。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ ht-degree: 17%
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。当您将鼠标悬停在编辑器中的内容上时，可编辑内容会以浅蓝色的细轮廓和徽章突出显示。
+编辑内容是简单而直观的。 当您将鼠标悬停在编辑器中的内容上时，可编辑内容会以浅蓝色的细轮廓和徽章突出显示。
 
 ![可编辑内容以浅蓝色框突出显示](assets/editable-content.png)
 
@@ -64,7 +64,7 @@ ht-degree: 17%
 
 薄的浅蓝色轮廓将变为深蓝色轮廓以指示选取内容，并且出现光标。 进行更改，然后按Enter/Return或选择文本框外部以保存更改。
 
-选择文本组件后，其详细信息将显示在[属性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您还可以在面板中编辑文本。
+选择文本组件后，其详细信息将显示在[属性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 您还可以在面板中编辑文本。
 
 ![在属性面板中编辑文本](assets/ue-editing-text-component-rail.png)
 
@@ -124,7 +124,7 @@ ht-degree: 17%
 * **取消链接**
    * 从所选文本中删除链接。
 * **图像**
-   * 指定URL或使用[资源选择器](/help/assets/overview-asset-selector.md#using-asset-selector)从AEM中选择资源。
+   * 指定URL或使用[内容审查程序](/help/assets/integrate-adobe-non-adobe-applications.md)从AEM中选择资源。
 * **表格**
    * 使用下拉菜单插入具有选定列数和行数的新表或插入和删除新列/行。
 * **对齐方式**
@@ -152,7 +152,7 @@ ht-degree: 17%
 ![编辑媒体](assets/ue-edit-media.png)
 
 1. 在属性面板中，点按或单击所选图像的预览。
-1. [资源选择器](/help/assets/overview-asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
+1. 将打开[内容审查程序](/help/assets/integrate-adobe-non-adobe-applications.md)窗口，允许您选择资源。
 1. 选择以选择新资源。
 1. 选择&#x200B;**选择**&#x200B;以返回到资产被替换的属性面板。
 
@@ -237,7 +237,7 @@ ht-degree: 17%
    * 在属性面板中选择&#x200B;**删除**&#x200B;图标。
 
      ![删除组件](assets/ue-delete-component.png)
-   * 在上下文菜单中选择&#x200B;**删除**&#x200B;选项。
+   * 在上下文菜单中选择&#x200B;**删除**选项。
      ![从上下文菜单删除](assets/delete-from-context-menu.png)
 
 选定的组件已删除。
@@ -276,7 +276,7 @@ ht-degree: 17%
 1. 如果尚未处于[内容树模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，请切换到它。
 1. 在内容树或编辑器中选择一个容器组件。
 1. 选择容器的V形图标以在内容树中展开其内容。
-1. 拖动容器内组件旁边的手柄图标表明您可以重新排列它们。拖动组件以对它们在容器内重新排序。
+1. 拖动容器内组件旁边的手柄图标表明您可以重新排列它们。 拖动组件以对它们在容器内重新排序。
 
    ![重新排序组件](assets/ue-reordering-components.png)
 
@@ -304,7 +304,7 @@ ht-degree: 17%
 
 ### 复制并粘贴 {#copy-paste}
 
-您可以复制和粘贴[容器中的组件。](/help/implementing/universal-editor/field-types.md#container)仅当目标容器未配置[筛选器](/help/implementing/universal-editor/filtering.md)或筛选器允许粘贴组件时，才可能执行此操作。
+您可以复制和粘贴[容器中的组件。](/help/implementing/universal-editor/field-types.md#container) 仅当目标容器未配置[筛选器](/help/implementing/universal-editor/filtering.md)或具有允许粘贴该组件的筛选器时，才可能执行此操作。
 
 复制和粘贴可以位于同一浏览器选项卡上或浏览器选项卡之间，前提是选项卡已打开。 无法复制项目，然后打开新的浏览器选项卡以粘贴该项目。
 
@@ -313,9 +313,9 @@ ht-degree: 17%
 
 1. 在编辑器或内容树中选择组件。
 1. 然后，您可以：
-   * 单击&#x200B;**属性面板中的**&#x200B;复制[图标。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * 单击[属性面板中的&#x200B;**复制**&#x200B;图标。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![从面板复制](assets/copy-from-panel.png)
-   * 在上下文菜单中选择&#x200B;**复制**&#x200B;选项。
+   * 在上下文菜单中选择&#x200B;**复制**选项。
      ![从上下文菜单复制](assets/copy-from-context-menu.png)
 1. 选择要将复制的组件粘贴到&#x200B;_之后的组件_。
 1. 然后，您可以：
@@ -332,7 +332,7 @@ ht-degree: 17%
 
 ## 预览内容 {#previewing-content}
 
-编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
+编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。 在[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。 内容在编辑器中呈现，就像它将要发布的那样。
 
 在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出[预览模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
@@ -474,7 +474,7 @@ ht-degree: 17%
 要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
-* [AEM Universal Editor 快速入门 &#x200B;](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
+* [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。

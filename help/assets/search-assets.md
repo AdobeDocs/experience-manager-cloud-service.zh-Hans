@@ -7,10 +7,10 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '5973'
-ht-degree: 6%
+source-wordcount: '6103'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Assets]提供强大的资源搜索方法，帮助您实现更高的内容速度。 您的团队可以使用开箱即用的功能和自定义方法，通过无缝、智能的资产搜索体验缩短上市时间。 搜索资产功能对于数字资产管理系统的使用至关重要，无论是由创意人员进一步使用、由业务用户和营销人员稳健管理资产，还是由DAM管理员进行管理。 您可以通过[!DNL Assets]用户界面或其他应用和表面执行的简单、高级和自定义搜索有助于完成这些用例。
@@ -35,11 +35,11 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 | [搜索排名和提升](#searchrank) | [自定义谓词](#custompredicates) | [智能收藏集](#collections) |
 | [高级搜索：筛选和搜索范围](#scope) | | [了解意外结果并排除其故障](#unexpected-results) |
 | [从其他解决方案和应用中搜索](#search-assets-other-surfaces)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager桌面应用程序](#desktop-app)</li><li>[Adobe Stock图像](#adobe-stock)</li><li>[Dynamic Media资源](#search-dynamic-media-assets)</li></ul> | | |
-| [资产选择器](#asset-picker) | | |
+| [内容顾问](#asset-picker) | | |
 | [限制](#limitations)和[提示](#tips) | | |
 | [图示示例](#samples) | | |
 
-使用[!DNL Experience Manager] Web界面顶部的Omnisearch字段搜索资源。 转到&#x200B;**[!UICONTROL 中的]** Assets **[!UICONTROL >]**&#x200B;文件[!DNL Experience Manager]，单击顶部栏中的![search_icon](assets/do-not-localize/search_icon.png)，输入搜索关键字，然后选择`Return`。 或者，使用关键字快捷键`/`（正斜杠）打开Omnisearch字段。 已预选择`Location:Assets`以将搜索限制在DAM资源中。 当您在`Path:/content/dam`文件&#x200B;**[!UICONTROL 文件夹中的根级别执行搜索时，]**&#x200B;也会显示。 如果导航到任何其他文件夹，则Omnisearch字段中会显示`Path:/content/dam/<folder name>`，以将搜索范围限制为当前文件夹。 [!DNL Experience Manager]会在您开始键入搜索关键字时提供建议。
+使用[!DNL Experience Manager] Web界面顶部的Omnisearch字段搜索资源。 转到[!DNL Experience Manager]中的&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**，单击顶部栏中的![search_icon](assets/do-not-localize/search_icon.png)，输入搜索关键字，然后选择`Return`。 或者，使用关键字快捷键`/`（正斜杠）打开Omnisearch字段。 已预选择`Location:Assets`以将搜索限制在DAM资源中。 当您在&#x200B;**[!UICONTROL 文件]**&#x200B;文件夹中的根级别执行搜索时，`Path:/content/dam`也会显示。 如果导航到任何其他文件夹，则Omnisearch字段中会显示`Path:/content/dam/<folder name>`，以将搜索范围限制为当前文件夹。 [!DNL Experience Manager]会在您开始键入搜索关键字时提供建议。
 
 使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板搜索资源、文件夹、标记和元数据。 您可以根据各种选项（谓词）筛选搜索结果，例如文件类型、文件大小、上次修改日期、资源状态、分析数据和Adobe Stock许可。 您可以使用[搜索Facet](/help/assets/search-facets.md)自定义“筛选器”面板以及添加或删除搜索谓词。 [!UICONTROL 筛选器]面板中的[!UICONTROL 文件类型]筛选器包含混合状态复选框。 因此，除非选择所有嵌套的谓词（或格式），否则将部分选中第一级复选框。
 
@@ -54,19 +54,19 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 ![了解Experience Manager Assets搜索结果界面](assets/aem-search-interface.png)
 *图：了解[!DNL Experience Manager Assets]搜索结果界面。*
 
-**A.**&#x200B;将搜索另存为智能收藏集。
-**B.**&#x200B;筛选条件或谓词以缩小搜索结果。
-**C.**&#x200B;显示文件、文件夹或两者。
-**D.**&#x200B;搜索位置为DAM。
-**E.**&#x200B;访问保存的搜索。
-**F.**&#x200B;单击“筛选器”以打开或关闭左边栏。
-**G.**&#x200B;将Assets显示为默认搜索。
-**小时**&#x200B;搜索位置为DAM。
-**I.**&#x200B;包含用户提供的搜索关键字的Omnisearch字段。
-**J.**&#x200B;选择加载的搜索结果。
-**K.**&#x200B;按已创建、已修改、名称、无进行排序。
-**L.**&#x200B;按升序或降序排序。
-**M.**&#x200B;显示的搜索结果数占总搜索结果数。 **N.**&#x200B;关闭搜索。
+**A.**将搜索另存为智能收藏集。
+**B.**筛选条件或谓词以缩小搜索结果。
+**C.**显示文件、文件夹或两者。
+**D.**搜索位置为DAM。
+**E.**访问保存的搜索。
+**F.**单击“筛选器”以打开或关闭左边栏。
+**G.**将Assets显示为默认搜索。
+**小时**搜索位置为DAM。
+**I.**包含用户提供的搜索关键字的Omnisearch字段。
+**J.**选择加载的搜索结果。
+**K.**按已创建、已修改、名称、无进行排序。
+**L.**按升序或降序排序。
+**M.**&#x200B;显示的搜索结果数占总搜索结果数。 **N.**关闭搜索。
 **O.**&#x200B;在卡片视图和列表视图之间切换。
 
 ### 动态搜索Facet {#dynamicfacets}
@@ -87,7 +87,7 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 
 `damAssetLucene-9`更改了Oak查询Facet计数的行为，使其不再评估基础搜索索引返回的Facet计数的访问控制，这将缩短搜索响应时间。 因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
 
-如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=zh-Hans)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，Adobe不建议切换到`secure`模式。
+如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，Adobe不建议切换到`secure`模式。
 
 有关Oak的Facet功能的详细信息，包括这些模式的详细说明，请参阅[Facet - Oak文档 — Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
 
@@ -148,15 +148,15 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 1. 在&#x200B;**[!UICONTROL 搜索提升]**&#x200B;框中，指定要提升图像搜索的关键字，然后单击&#x200B;**[!UICONTROL 添加]**。 您可以按相同方式指定多个关键字。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。 您针对此关键字提升的资产将显示在排名最前的搜索结果中。
 
-利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)。
+利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410334/?captions=chi_hans&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *视频：了解搜索结果的排名方式以及排名会受到何种影响。*
 
 ## 配置资源批次大小以显示搜索结果 {#configure-asset-batch-size}
 
-管理员现在可以配置在执行搜索时显示的资产的批量大小。 当您进一步向下滚动以加载资源搜索结果时，将以所配置的批次大小数量的倍数显示这些结果。可选择 200、500 和 1000 个资源的可用批次大小。设置较小的批次大小数字可加快搜索响应速度。
+管理员现在可以配置在执行搜索时显示的资产的批量大小。 当您进一步向下滚动以加载资源搜索结果时，将以所配置的批次大小数量的倍数显示这些结果。 可选择 200、500 和 1000 个资源的可用批次大小。 设置较小的批次大小数字可加快搜索响应速度。
 
 例如，如果将结果计数限制设置为200个资源的批次大小，则当您开始执行搜索时，Experience Manager Assets会在搜索结果中显示一个包含200个资源的批次大小。 当您向下滚动以浏览搜索结果时，将显示下一批200个资源。 该过程会一直持续到显示与搜索查询匹配的所有资产为止。
 
@@ -185,7 +185,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 查找相似图像 {#visualsearch}
 
-要查找与用户选择的图像视觉上相似的图像，请从图像的卡片视图或工具栏中单击&#x200B;**[!UICONTROL 查找类似]**&#x200B;选项。[!DNL Experience Manager]显示DAM存储库中与用户选择的图像类似的智能标记图像。
+要查找与用户选择的图像视觉上相似的图像，请从图像的卡片视图或工具栏中单击&#x200B;**[!UICONTROL 查找类似]**&#x200B;选项。 [!DNL Experience Manager] 会从 DAM 存储库中显示与用户所选图像相似的智能标记图像。
 
 ![使用卡片视图中的选项查找类似图像](assets/search_find_similar.png)
 
@@ -197,7 +197,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### Dynamic Media资产 {#dmassets}
 
-您可以通过选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中的 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 集]**&#x200B;来过滤 Dynamic Media 图像。该操作可过滤并显示图像集、轮播集、混合媒体集和旋转集等资产。
+您可以通过选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中的 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 集]**&#x200B;来过滤 Dynamic Media 图像。 该操作可过滤并显示图像集、轮播集、混合媒体集和旋转集等资产。
 
 ### 使用元数据字段中的特定值的GQL搜索 {#gql-search}
 
@@ -217,14 +217,14 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 过期日期 | 过期:YYYY-MM-DDTHH |
 | 准时 | ontime:YYYY-MM-DDTHH |
 | 关闭时间 | offtime:YYYY-MM-DDTHH |
-| 时间范围(expires dateontime，offtime) | Facet字段：下限……上行 |
+| 时间范围(expires dateontime，offtime) | Facet字段：lowerbound..upperbound |
 | 路径 | /content/dam/&lt;文件夹名称> |
 | PDF 标题 | pdftitle：&quot;Adobe文档&quot; |
 | 主题 | 主题：“培训” |
 | 标记 | 标记：“位置和旅游” |
 | 类型 | 类型：&quot;image\png&quot; |
-| 图像宽度 | 宽度:lowerbound..上行 |
-| 图像高度 | 高度:lowerbound..上行 |
+| 图像宽度 | 宽度:lowerbound..上界 |
+| 图像高度 | 高度:lowerbound..上界 |
 | 人员 | 人员:John |
 
 属性`path`、`limit`、`size`和`orderby`不能将`OR`运算符与任何其他属性一起使用。
@@ -255,19 +255,19 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 在[!DNL Experience Manager]桌面应用程序中搜索资产 {#desktop-app}
 
-Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面（Win或Mac）上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)。
+Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面（Win或Mac）上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
 
 ### 在 [!DNL Brand Portal] 中搜索资产 {#brand-portal}
 
-业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=zh-Hans)中搜索资源。
+业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)中搜索资源。
 
 ### 搜索[!DNL Adobe Stock]图像 {#adobe-stock1}
 
-在[!DNL Experience Manager]用户界面中，用户可以搜索Adobe Stock资源并许可所需的资源。 在Omnisearch字段中添加`Location: Adobe Stock`。 您还可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。 查看[中的 [!DNL Adobe Stock] 管理 [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage)图像。
+在[!DNL Experience Manager]用户界面中，用户可以搜索Adobe Stock资源并许可所需的资源。 在Omnisearch字段中添加`Location: Adobe Stock`。 您还可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。 查看 [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage)中的[管理 [!DNL Adobe Stock] 图像。
 
 ### 搜索[!DNL Dynamic Media]资源 {#search-dynamic-media-assets}
 
-您可以通过选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中的 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 集]**&#x200B;来过滤 Dynamic Media 图像。该操作可过滤并显示图像集、轮播集、混合媒体集和旋转集等资产。在创作网页时，作者可以在内容查找器中搜索集。弹出菜单中提供集的过滤器。
+您可以通过选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中的 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 集]**&#x200B;来过滤 Dynamic Media 图像。 该操作可过滤并显示图像集、轮播集、混合媒体集和旋转集等资产。 在创作网页时，作者可以在内容查找器中搜索集。 弹出菜单中提供集的过滤器。
 
 ### 创作网页时在Content Finder中搜索资产 {#content-finder}
 
@@ -277,31 +277,25 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 [!DNL Experience Manager]搜索功能支持搜索收藏集和搜索收藏集中的资源。 请参阅[搜索收藏集](/help/assets/manage-collections.md)。
 
-## 资源选择器 {#asset-picker}
+## 内容顾问 {#asset-picker}
 
-[AEM资源选择器](/help/assets/overview-asset-selector.md)（在以前版本的[!DNL Adobe Experience Manager]中称为资源选择器）允许您以特殊方式搜索、筛选和浏览DAM资源。 资源选择器位于`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以获取使用资源选择器选择的资源的元数据。 您可以通过受支持的请求参数启动它，例如资产类型（图像、视频、文本）和选择模式（单选或多选）。 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
+[内容顾问](/help/assets/integrate-adobe-non-adobe-applications.md)（在以前版本的[!DNL Adobe Experience Manager]中称为资产选取器）允许您以特殊方式搜索、筛选和浏览DAM资产。 内容顾问位于`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以使用内容审查程序获取所选资源的元数据。 您可以通过受支持的请求参数启动它，例如资产类型（图像、视频、文本）和选择模式（单选或多选）。 这些参数为特定搜索实例设置内容审查程序的上下文，并在整个选择过程中保持不变。
 
-资源选择器使用HTML5 `Window.postMessage`消息将选定资源的数据发送给收件人。 它仅在浏览模式下工作，并且仅适用于Omnisearch结果页面。
+内容审查程序使用HTML5 `Window.postMessage`消息将选定资源的数据发送给收件人。 它仅在浏览模式下工作，并且仅适用于Omnisearch结果页面。
 
-在URL中传递以下请求参数，以在特定上下文中启动资产选择器：
+在URL中传递以下请求参数，以便在特定上下文中启动内容审查程序：
 
 | 名称 | 值 | 示例 | 用途 |
 |---|---|---|---|
-| 资源后缀(B) | 文件夹路径作为URL中的资源后缀： [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 要在选定特定文件夹（例如选定文件夹`/content/dam/we-retail/en/activities`）的情况下启动资产选择器，URL应采用以下形式： `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 如果在启动资产选择器时要求选择特定文件夹，请将其作为资源后缀传递。 |
-| `mode` | 单个，多个 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 在多个模式下，您可以使用资产选择器同时选择多个资产。 |
-| `dialog` | true， false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 使用这些参数以Granite对话框形式打开资产选择器。 仅当通过Granite路径字段启动资产选择器，并将其配置为pickerSrc URL时，此选项才适用。 |
-| `root` | &lt;文件夹路径> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 使用此选项可指定资源选择器的根文件夹。 在这种情况下，资产选择器允许您仅选择根文件夹下的子资产（直接/间接）。 |
-| `viewmode` | 搜索 | | 要在搜索模式下启动资产选择器，请使用`assettype`和`mimetype`参数。 |
+| 资源后缀(B) | 文件夹路径作为URL中的资源后缀： [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 要在选定特定文件夹（例如，选定文件夹`/content/dam/we-retail/en/activities`）的情况下启动内容顾问，URL应采用以下形式： `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 如果在启动内容审查程序时要求选择特定文件夹，请将其作为资源后缀传递。 |
+| `mode` | 单个，多个 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 在多个模式下，您可以使用内容审查器同时选择多个资源。 |
+| `dialog` | true， false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 使用这些参数以Granite对话框形式打开内容审查程序。 仅当通过Granite路径字段启动内容审查程序，并将其配置为pickerSrc URL时，此选项才适用。 |
+| `root` | &lt;文件夹路径> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 使用此选项可指定内容审查程序的根文件夹。 在这种情况下，内容审查程序允许您仅选择根文件夹下的子资产（直接/间接）。 |
+| `viewmode` | 搜索 | | 要在搜索模式下启动内容顾问，请使用`assettype`和`mimetype`参数。 |
 | `assettype` | 图像、文档、多媒体、存档。 | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | 使用选项可根据提供的值筛选资源类型。 |
 | `mimetype` | 资产的MIME类型(`/jcr:content/metadata/dc:format`)（也支持通配符）。 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | 使用它根据MIME类型筛选资源。 |
 
-要访问资产选择器界面，请转到`https://[aem_server]:[port]/aem/assetpicker`。 导航到所需的文件夹，然后选择一个或多个资产。 或者，从Omnisearch框中搜索所需的资源，根据需要应用过滤器，然后选择该资源。
-
-![在资源选择器中浏览并选择资源](assets/select-asset.png)
-
-<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
-
-*图：在资源选择器中浏览并选择资源。*
+要访问内容顾问界面，请转到`https://[aem_server]:[port]/aem/assetpicker`。 导航到所需的文件夹，然后选择一个或多个资产。 或者，从Omnisearch框中搜索所需的资源，根据需要应用过滤器，然后选择该资源。
 
 ## 限制 {#limitations}
 
@@ -332,7 +326,7 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 * 全文搜索支持`-`和`^`等运算符。 要将这些字母搜索为字符串文字，请用双引号将搜索表达式括起来。 例如，使用`"Notebook - Beauty"`而不是`Notebook - Beauty`。
 * 如果搜索结果太多，请将所需资源的搜索[范围](#scope)限制为零。 当您知道如何更好地查找所需资源（例如，特定文件类型、特定位置、特定元数据等）时，这种方法最有效。
 
-* **标记**：标记可帮助您对可以更高效地浏览和搜索的资源进行分类。 标记有助于将相应的分类传播给其他用户和工作流。 [!DNL Experience Manager]提供了使用Adobe AI服务自动标记资源的方法，这些方法有助于更好地通过使用和培训标记资源。 搜索资产时，智能标记会考虑在内。 它与内置搜索功能配合使用。 请参阅[搜索行为](#searchbehavior)。 要优化搜索结果的显示顺序，您可以[提升几个选定资产的搜索排名](#searchrank)。
+* **标记**：标记可帮助您对可以更高效地浏览和搜索的资源进行分类。 标记有助于将适当的分类传播给其他用户和工作流程。 [!DNL Experience Manager]提供了使用Adobe AI服务自动标记资源的方法，这些方法有助于更好地通过使用和培训标记资源。 搜索资产时，智能标记会考虑在内。 它与内置搜索功能配合使用。 请参阅[搜索行为](#searchbehavior)。 要优化搜索结果的显示顺序，您可以[提升几个选定资产的搜索排名](#searchrank)。
 
 * **索引**：搜索结果中只返回已编制索引的元数据和资源。 为了获得更好的覆盖率和性能，请确保正确编制索引并遵循最佳实践。 请参阅[索引](#searchindex)。
 
@@ -357,13 +351,13 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 *图：使用示例说明在资产搜索中使用星号通配符。*
 
-**使用问号通配符搜索**：要扩大搜索范围，请使用一个或多个“？” 个字符，以匹配确切的字符数。 例如，在下图中，
+**使用问号通配符进行搜索**：要扩大搜索范围，请使用一个或多个“？”字符来匹配确切的字符数。 例如，在下图中，
 
 * `run???`查询不匹配任何资源。
 
-* `run????`查询在`running`之后匹配4个字符的单词`run`。
+* `run????`查询在`run`之后匹配4个字符的单词`running`。
 
-* `??run`查询与`rerun`前具有两个字符的单词`run`匹配。
+* `??run`查询与`run`前具有两个字符的单词`rerun`匹配。
 
 ![使用示例](assets/search_with_questionmark_run.gif)说明在资产搜索中使用问号通配符
 
@@ -397,7 +391,7 @@ AI 搜索是一种高级搜索功能，它理解用户查询的含义和意图�
 
 传统的基于关键字的搜索将查找资产元数据的精确匹配项，如`Woman`、`drinking`、`Coffee`，并返回元数据中包含所有这些术语的资产。
 
-但是，AI 搜索在`Girl`和`Lady`与`Woman`、`Cappuccino`等词匹配，在`Latte`与`Coffee`匹配。
+但是，AI 搜索在`Woman`和`Cappuccino`与`Girl`、`Lady`等词匹配，在`Coffee`与`Latte`匹配。
 
 同样，您可以将此提示用西班牙语或拼写错误`Woman`指定为`Wman`，仍可获得相同的结果。
 
@@ -471,7 +465,7 @@ AI 搜索是一种高级搜索功能，它理解用户查询的含义和意图�
 
 ### 对搜索结果排序 {#sort}
 
-对搜索结果进行排序，更快地发现所需的资源。 只有在从&#x200B;**[[!UICONTROL 筛选器]](#searchui)**&#x200B;面板中选择&#x200B;**[!UICONTROL 文件]**&#x200B;时，才能对列表视图中的搜索结果进行排序。 [!DNL Assets]使用服务器端排序来快速对某个文件夹或搜索查询结果中的所有资产（无论数量多少）进行排序。 与客户端排序相比，服务器端排序提供更快、更准确的结果。
+对搜索结果进行排序，更快地发现所需的资源。 只有在从&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板中选择&#x200B;**[[!UICONTROL 文件]](#searchui)**&#x200B;时，才能对列表视图中的搜索结果进行排序。 [!DNL Assets]使用服务器端排序来快速对某个文件夹或搜索查询结果中的所有资产（无论数量多少）进行排序。 与客户端排序相比，服务器端排序提供更快、更准确的结果。
 
 在列表视图中，您可以对搜索结果进行排序，就像对任何文件夹中的资源排序一样。 排序仅对以下列起作用 — 名称、标题、状态、维度、大小、评级、使用情况、（日期）创建、（日期）修改、（日期）发布、工作流和签出。
 
@@ -506,7 +500,7 @@ AI 搜索是一种高级搜索功能，它理解用户查询的含义和意图�
 * 资源、文件夹和其他收藏集的静态引用列表。
 * 根据搜索条件填充收藏集中资产的动态列表（智能收藏集）。
 
-您可以根据搜索条件创建智能收藏集。从&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中，选择&#x200B;**[!UICONTROL 文件]**，然后单击&#x200B;**[!UICONTROL 保存智能收藏集]**。请参阅[管理收藏集](/help/assets/manage-collections.md)。
+您可以根据搜索条件创建智能收藏集。 从&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中，选择&#x200B;**[!UICONTROL 文件]**，然后单击&#x200B;**[!UICONTROL 保存智能收藏集]**。 请参阅[管理收藏集](/help/assets/manage-collections.md)。
 
 ### 创建一个版本 {#create-version}
 
@@ -533,7 +527,7 @@ AI 搜索是一种高级搜索功能，它理解用户查询的含义和意图�
 | 错误、问题、症状 | 可能的原因 | 对问题的可能修复或了解 |
 |---|---|---|
 | 搜索缺少元数据的资源时，结果不正确。 | 在搜索缺少必需元数据的资源时，[!DNL Experience Manager]可能会显示一些具有有效元数据的资源。 结果基于索引的元数据属性。 | 元数据更新后，需要重新索引以反映资源元数据的正确状态。 请参阅[必需的元数据](metadata-schemas.md#define-mandatory-metadata)。 |
-| 搜索结果过多。 | 广泛搜索参数。 | 考虑限制搜索[的](#scope)范围。 使用智能标记可能会为您提供比预期更多的搜索结果。 查看带有智能标记的[搜索行为](#withsmarttags)。 |
+| 搜索结果过多。 | 广泛搜索参数。 | 考虑限制搜索](#scope)的[范围。 使用智能标记可能会为您提供比预期更多的搜索结果。 查看带有智能标记的[搜索行为](#withsmarttags)。 |
 | 不相关或部分相关的搜索结果。 | 使用智能标记可更改搜索行为。 | 了解[智能标记后搜索如何更改](#withsmarttags)。 |
 | 没有针对资产的自动完成建议。 | 新上传的资产尚未编制索引。 当您开始在Omnisearch栏中输入搜索关键字时，元数据无法立即作为建议使用。 | [!DNL Experience Manager]将等待超时时间（默认为一小时）到期，然后再运行后台作业，为所有新上传或更新后的资源索引元数据，然后将元数据添加到建议列表中。 |
 | 无搜索结果。 | <ul><li>匹配您的查询的Assets不存在。 </li><li> 在搜索查询之前添加了空格。 </li><li> 不支持的元数据字段包含您搜索的关键字。</li><li> 在资产空闲时间进行的搜索。 </li></ul> | <ul><li>使用其他关键词进行搜索。 或者，使用智能标记或相似性搜索来改进搜索结果。 </li><li>[已知限制](#limitations)。</li><li>搜索不考虑所有元数据字段。 查看[作用域](#scope)。</li><li>稍后搜索或修改所需资源的开始时间和结束时间。</li></ul> |
@@ -559,5 +553,5 @@ AI 搜索是一种高级搜索功能，它理解用户查询的含义和意图�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=zh-Hans)
->* [高级配置以提升搜索结果](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hans)
+>* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [高级配置以提升搜索结果](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
