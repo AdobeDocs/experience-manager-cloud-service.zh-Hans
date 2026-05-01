@@ -2,10 +2,10 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
+source-git-commit: 7e0c34627aa3ac873aa94f836fe1c30d70389e19
 workflow-type: tm+mt
-source-wordcount: '2962'
-ht-degree: 7%
+source-wordcount: '3050'
+ht-degree: 8%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="配置 Content Hub 用户界面"
->abstract="管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括导入资产时的元数据、过滤器、资产属性、搜索资产时的元数据、个性化品牌以及任何自定义链接。"
+>abstract="管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。 根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。 配置选项包括导入资产时的元数据、过滤器、资产属性、搜索资产时的元数据、个性化品牌以及任何自定义链接。"
 >additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="观看视频"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 
 ![在Content Hub上配置资源](assets/configure-assets.png)
 
-管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括：
+管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。 根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。 配置选项包括：
 
 * 用户在搜索资产时可用的筛选器。
 
@@ -35,7 +35,7 @@ ht-degree: 7%
 
 * 除了资源、收藏集和分析之外，您需要在Content Hub中包含的任何自定义链接。
 
->[!VIDEO](https://video.tv.adobe.com/v/3472956/?captions=chi_hans&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## 先决条件 {#prerequisites-configuration-ui}
 
@@ -43,17 +43,17 @@ ht-degree: 7%
 
 ## 访问Content Hub上的配置选项 {#access-configuration-options-content-hub}
 
-To access configuration options on Content Hub:
+要在Content Hub上访问配置选项，请执行以下操作：
 
 1. 点击右侧窗格中的用户图标。
 
-1. In the **[!UICONTROL Product Settings]** section, select **[!UICONTROL Configurations]**.
+1. 在&#x200B;**[!UICONTROL 产品设置]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 配置]**。
 
-   ![Access configuration options on Content Hub](assets/access-content-hub-configuration-ui.png)
+   ![访问Content Hub上的配置选项](assets/access-content-hub-configuration-ui.png)
 
-## Manage configuration options on Content Hub {#manage-configuration-options}
+## 在Content Hub上管理配置选项 {#manage-configuration-options}
 
-As an administrator, manage the following configuration options for your users:
+作为管理员，为您的用户管理以下配置选项：
 
 * [导入](#configure-import-options-content-hub)
 
@@ -78,9 +78,9 @@ As an administrator, manage the following configuration options for your users:
 
 ### 导入 {#configure-import-options-content-hub}
 
-You can configure the metadata fields that display to the users while uploading or importing assets to the Content Hub portal, such as Campaign Name, Keywords, Channels, Timeframe, Region, and so on. 若要禁用，请执行以下步骤：
+您可以配置在将资源上传或导入到Content Hub门户时向用户显示的元数据字段，例如促销活动名称、关键字、渠道、时间范围、区域等。 若要禁用，请执行以下步骤：
 
-1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Import]**.
+1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 导入]**。
 
 1. 单击&#x200B;**[!UICONTROL 添加元数据]**。
 
@@ -92,7 +92,7 @@ You can configure the metadata fields that display to the users while uploading 
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
-同样，在使用![必填字段](assets/do-not-localize/edit_icon.svg)切换上载资产时，您可以单击每个可用属性旁边的&#x200B;**[!UICONTROL 编辑图标]**&#x200B;以编辑标签，使这些字段对用户是必填字段或非必填字段，或者单击“删除”图标以删除任何元数据属性。
+同样，在使用&#x200B;**[!UICONTROL 必填字段]**&#x200B;切换上载资产时，您可以单击每个可用属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)以编辑标签，使这些字段对用户是必填字段或非必填字段，或者单击“删除”图标以删除任何元数据属性。
 
 如果您需要自动批准添加到Experience Manager Assets存储库的所有资源，以便这些资源立即在Content Hub中可用，请单击&#x200B;**[!UICONTROL 自动批准]**&#x200B;切换开关。 否则，DAM作者或管理员需要手动批准资源，才能在Content Hub上使用这些资源。 默认情况下，切换设置为“关闭”状态。
 
@@ -117,7 +117,7 @@ Content Hub允许管理员配置在搜索资源时显示的过滤器。 执行�
    >
    >仅当存储库中至少有一个资源与筛选条件匹配时，新筛选器才会显示在“搜索”页面上。
 
-同样，您可以单击每个可用筛选器旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑标签，或者单击删除图标来删除任何现有筛选器。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
+同样，您可以单击每个可用筛选器旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑标签，或者单击删除图标来删除任何现有筛选器。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
 在Content Hub上![配置UI筛选器](assets/add-filters.png)
 
 “搜索”页上将显示在“配置用户界面”中启用的过滤器：
@@ -147,26 +147,26 @@ Content Hub允许管理员配置在搜索资源时显示的过滤器。 执行�
 1. 指定属性的标签，使用&#x200B;**[!UICONTROL 元数据]**&#x200B;字段将其映射到属性，然后为新资源元数据选择适当的输入类型。 输入类型标签将更新以与Adobe Experience Manager (AEM)保持一致。 可用的输入类型包括“文本”、“标记”、“日期”、“数字”、“下拉列表”、“多值文本”、“智能标记”和“智能颜色标记”。 对于某些元数据字段(xcm:colorDistribution， xcm:machineKeywords)，输入类型是自动分配的，无法修改。
 1. 单击&#x200B;**[!UICONTROL 确认]**。 新元数据将显示在现有资源属性列表中。
 
-1. Click **[!UICONTROL Save]** to apply the changes so that the new property gets displayed on the asset details page.
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改，以便在资产详细信息页面上显示新属性。
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels or click the delete icon to delete any existing asset detail. 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
+同样，您可以单击每个可用属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑标签，或者单击删除图标来删除任何现有资源详细信息。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
-![Configuration UI asset details on Content Hub](assets/asset-detailsn.png)
+在Content Hub上![配置UI资源详细信息](assets/asset-detailsn.png)
 
-The properties enabled on the Configuration User Interface display on the Asset Details page:
+在“配置用户界面”中启用的属性将显示在“资产详细信息”页面上：
 
-![Asset properties on Content Hub](assets/asset-details-page-content-hub1.png)
+Content Hub上的![资源属性](assets/asset-details-page-content-hub1.png)
 
 ### 资产卡 {#asset-card}
 
-You can also configure the key metadata properties that you need to display on the **Asset Card** up to a maximum of 6 fields.
-![key metadata on Asset Card](/help/assets/assets/asset-card-metadata.png)
-Execute the following steps to configure the metadata properties to display them on the **[!UICONTROL Asset card]**:
+您还可以配置需要在&#x200B;**资产卡**上显示的密钥元数据属性，最多可显示6个字段。
+资产信息卡上的![密钥元数据](/help/assets/assets/asset-card-metadata.png)
+执行以下步骤可配置元数据属性以将其显示在**[!UICONTROL 资产卡]**&#x200B;上：
 
 1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**资产卡**。
 2. 单击&#x200B;**添加元数据**。 显示&#x200B;**添加资源卡元数据**&#x200B;对话框。
 3. 在&#x200B;**标签**&#x200B;字段中指定元数据名称，并在&#x200B;**元数据**&#x200B;字段中选择元数据属性。
-4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**&#x200B;以应用更改，以便新属性显示在资源详细信息页面上。
+4. 单击&#x200B;**确认**，然后单击&#x200B;**保存**以应用更改，以便新属性显示在资源详细信息页面上。
    ![资产卡](/help/assets/assets/configuration-asset-card1.png)
 同样，单击每个可用属性旁边可用的![编辑](/help/assets/assets/edit-content-hub.svg)以进行任何必需的修改，或单击![删除](/help/assets/assets/delete-content-hub.svg)删除任何现有的元数据属性。 完成所有修改后单击&#x200B;**保存**&#x200B;以应用更改。
 
@@ -174,13 +174,17 @@ Execute the following steps to configure the metadata properties to display them
 
 管理员可以定义在用户在Content Hub上指定搜索条件时搜索的元数据字段。 执行以下步骤：
 
+>[!CAUTION]
+>
+>建议仔细选择您标记为可搜索的字段。 仅包括用户可能搜索并且有助于返回有意义结果的那些字段。 日期和数字等字段更适合过滤和排序，而不是作为可搜索的内容。 将太多字段标记为可搜索可能会影响搜索结果的质量和性能。
+
 1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 添加元数据]**。
 
 1. 指定元数据字段并单击&#x200B;**[!UICONTROL 确认]**。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改，以便新的元数据属性显示在元数据字段列表中。
 
-同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
+同样，您可以单击每个可用元数据属性旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑该属性，或者单击删除图标来删除任何现有属性。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
 在Content Hub上![配置UI搜索](assets/configuration-search.png)
 
 ### 品牌化 {#configure-branding-content-hub}
@@ -220,14 +224,14 @@ Execute the following steps to configure the metadata properties to display them
 
 #### 将标题和正文文本添加到横幅并更改文本颜色{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**&#x200B;部分中的相应字段将标题和正文添加到横幅中。
-单击&#x200B;**[!UICONTROL 横幅文本颜色]**&#x200B;旁边的方框可从横幅文本的拾色器中选择文本颜色，或在拾色器方框旁边的字段中指定颜色的十六进制代码。
+在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 横幅]**部分中的相应字段将标题和正文添加到横幅中。
+单击**[!UICONTROL 横幅文本颜色]**旁边的方框可从横幅文本的拾色器中选择文本颜色，或在拾色器方框旁边的字段中指定颜色的十六进制代码。
 ![横幅文本内容中心](/help/assets/assets/banner-text-content-hub.png)
 
 #### 更改主颜色和次颜色{#Change-the-primary-and-secondary-color}
 
 在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;页面上，使用&#x200B;**[!UICONTROL 颜色]**&#x200B;部分设置主要颜色和次要颜色，方法为使用拾色器选择颜色或定义颜色的十六进制代码。 这些颜色可设置UI元素的背景、文本和图标颜色，以使您的[!DNL Content Hub] UI与品牌主题保持一致。
-![主颜色和辅助颜色](/help/assets/assets/primary-secondary-color-content-hub1.png)
+![主要颜色和次要颜色](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL 主颜色]：**&#x200B;主颜色方案适用于选择操作、交互元素（如复选框、搜索栏）以及跨[!DNL Content Hub]切换开关（包括[!DNL Content Hub]主页和[!UICONTROL 配置]页）。 它还适用于主[!DNL Content Hub]界面上可用的操作选项，如&#x200B;**[!UICONTROL 所有Assets]**&#x200B;和&#x200B;**[!UICONTROL 收藏集]**&#x200B;页面上可用的选项。
 
 **[!UICONTROL 次要颜色]：**&#x200B;在[!DNL Content Hub]主页上，次要颜色方案应用于对话框中可用的UI选项和输入字段。 它适用于[!UICONTROL 配置]页面上可用的所有配置菜单选项，但选择操作、复选框、搜索栏和切换开关除外。
@@ -244,23 +248,23 @@ Execute the following steps to configure the metadata properties to display them
 
 1. 在&#x200B;**[!UICONTROL 可见]**&#x200B;部分中，启用&#x200B;**[!UICONTROL 允许用户查看过期的资源]**&#x200B;切换功能，以便在Content Hub上显示所有过期的资源。
 
-1. After enabling the visibility of assets, you can enable or disable the ability to download expired assets using the **[!UICONTROL Allow users to download expired assets]** toggle.
-1. Enable the **[!UICONTROL Allow users to view assets approved for delivery]** toggle to display all assets approved for delivery in Content Hub.
+1. 启用资产可见性后，您可以使用&#x200B;**[!UICONTROL 允许用户下载过期的资产]**&#x200B;切换启用或禁用下载过期的资产的功能。
+1. 启用&#x200B;**[!UICONTROL 允许用户查看已批准交付的资产]**&#x200B;切换功能，在Content Hub中显示已批准交付的所有资产。
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
    ![Content Hub 上的资产已过期](assets/asset-visibility-content-hub1.png)
 
-After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
+启用资源的可见性后，您可以在Content Hub上查看过期的资源，如下图所示：
 
 ![Content Hub 上的资产已过期](assets/view-download-expired-assets.png)
 
-If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
+如果管理员启用了下载，则Content Hub用户也可以下载它们，如图像中突出显示的内容。
 
 如果启用了过期资源的可见性，Content Hub还会使用资源卡上的`Expiring in n days`消息突出显示未来15天内过期的资源。
 
 ### 演绎版 {#renditions-content-hub}
 
-演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets[中查看有关](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)呈现形式的更多信息。
+演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关[呈现形式的更多信息。
 
 若要禁用，请执行以下步骤：
 
@@ -288,7 +292,7 @@ If the administrator has enabled download, the Content Hub users can also downlo
 
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
-同样，您可以单击每个URL旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑链接，或者单击删除图标来删除任何现有的URL。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
+同样，您可以单击每个URL旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑链接，或者单击删除图标来删除任何现有的URL。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**以应用更改。
 Content Hub上的![配置UI自定义链接](assets/configuration-custom-links1.png)
 
 自定义链接在Content Hub主页的“分析”选项卡旁边显示为新选项卡。
