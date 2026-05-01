@@ -9,10 +9,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 23a6c298df67355160d3ec4b2519f6d1bde2b254
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 10%
+source-wordcount: '2147'
+ht-degree: 11%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 10%
 
 >[!NOTE]
 >
-> Adobe建议为[创建新的自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)或[将自适应Forms添加到AEM Sites页面](/help/forms/creating-adaptive-form-core-components.md)使用现代的、可扩展的数据捕获[核心组件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。
+> Adobe建议为[创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md)或[将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
-| 应用到 | 基于基础组件的自适应表单。 对于基于核心组件的自适应表单，<br>，请[单击此处](/help/forms/captcha-adaptive-forms-core-components.md)。 |
+| 应用到 | 基于基础组件的自适应表单。<br> 对于基于核心组件的自适应表单，[单击此处](/help/forms/captcha-adaptive-forms-core-components.md)。 |
 
 
-CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
+CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。 它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。 如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
 AEM Forms as a Cloud Service支持以下CAPTCHA解决方案：
 
@@ -66,14 +66,14 @@ AEM Forms as a Cloud Service支持以下CAPTCHA解决方案：
    1. 选择&#x200B;**[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页面。 选择您创建的配置容器，然后选择&#x200B;**[!UICONTROL 创建]**。
    1. 选择版本为[!DNL reCAPTCHA Enterprise]，并为reCAPTCHA Enterprise服务指定名称、项目ID、站点密钥和API密钥（在步骤2中获取）。
    1. 选择密钥类型，密钥类型应与您在[Google Cloud项目](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)中配置的站点密钥相同，例如，**复选框站点密钥**&#x200B;或&#x200B;**基于得分的站点密钥**。
-   1. 指定[&#x200B; 0 到 1 范围内的阈值分数](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)。分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
+   1. 指定[ 0 到 1 范围内的阈值分数](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)。 分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
    1. 选择&#x200B;**[!UICONTROL 创建]**，创建云服务配置。
 
 <!--
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
-reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅在自适应表单[中使用CAPTCHA &#x200B;](#using-reCAPTCHA)。
+reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅在自适应表单](#using-reCAPTCHA)中使用CAPTCHA [。
 
 <!--
 ![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
@@ -208,7 +208,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
    1. 您可以为reCAPTCHA构件选择大小为&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**。
    1. 您可以选择&#x200B;**[!UICONTROL 不可见]**&#x200B;选项，以便仅在可疑活动的情况下显示验证码质询。
 
-   已在自适应表单上启用reCAPTCHA服务。 您可以预览表单并查看验证码是否正常工作。 受reCAPTCHA保护的&#x200B;**徽章**&#x200B;将显示在受保护的表单上，如下所示。
+   已在自适应表单上启用reCAPTCHA服务。 您可以预览表单并查看验证码是否正常工作。 受reCAPTCHA保护的&#x200B;**徽章**将显示在受保护的表单上，如下所示。
    ![受reCAPTCHA徽章保护的Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 保存属性。
@@ -250,7 +250,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 要根据条件和用户操作验证验证码，请执行以下操作：
 
 1. 选择CAPTCHA组件并选择![cmppr](assets/configure-icon.svg)以查看组件属性。
-1. 在&#x200B;**[!UICONTROL 验证CAPTCHA]**&#x200B;部分中，针对用户操作&#x200B;**[!UICONTROL 选择]**&#x200B;验证CAPTCHA。
+1. 在&#x200B;**[!UICONTROL 验证CAPTCHA]**&#x200B;部分中，针对用户操作&#x200B;]**选择**[!UICONTROL &#x200B;验证CAPTCHA。
 1. 选择![完成](assets/save_icon.svg)以保存组件属性。
 
 [!DNL Experience Manager Forms]提供了`ValidateCAPTCHA` API以使用预定义条件验证验证码。 您可以使用自定义提交操作或通过定义自适应表单中组件的规则来调用API。
@@ -279,7 +279,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 1. 从自适应表单的&#x200B;**[!UICONTROL 提交]**&#x200B;属性中的&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中选择自定义提交操作的名称。
 1. 选择&#x200B;**[!UICONTROL 提交]**。 根据自定义提交操作的`ValidateCAPTCHA` API中定义的条件验证验证码。
 
-**选项2：在提交表单[!DNL Experience Manager Forms]之前，使用** ValidateCAPTCHA API在用户操作中验证验证码
+**选项2：在提交表单**&#x200B;之前，使用[!DNL Experience Manager Forms] ValidateCAPTCHA API在用户操作中验证验证码
 
 您还可以通过对自适应表单中的组件应用规则来调用`ValidateCAPTCHA` API。
 
@@ -347,6 +347,64 @@ reCAPTCHA服务使用`https://www.recaptcha.net/`作为默认域。 您可以修
 ```
 
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
+
+## 使用OSGi覆盖reCAPTCHA云配置 {#override-recaptcha-osgi}
+
+若要在每个环境中使用不同的项目ID、站点密钥或密钥，请为&#x200B;**[!UICONTROL Apache Sling上下文感知配置覆盖提供程序]**&#x200B;添加OSGi配置。
+
+### 在项目中添加OSGi覆盖 {#override-recaptcha-steps}
+
+1. 为AEM项目克隆Cloud Manager Git存储库。
+
+   ```shell
+   git clone <your-cloud-manager-repository-url>
+   ```
+
+1. 在文本编辑器中打开克隆的存储库。
+
+1. 转到应用程序下的`ui.config`文件夹（将`<your-application-folder>`替换为项目中`/apps`下的文件夹名称）：
+
+   * **对于作者：** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.author`
+   * 用于发布的&#x200B;**：** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.publish`
+
+   >[!NOTE]
+   >
+   > 创建`osgiconfig`、`config.author`和`config.publish`文件夹（如果它们尚不存在）。
+
+1. 在两个运行模式文件夹中创建OSGi覆盖文件，并在每个文件夹中使用相同的文件名：
+
+   * **在`config.author`文件夹中为作者**&#x200B;创建`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`。
+   * **对于发布：**，在`config.publish`文件夹中，创建`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`。
+
+1. 将以下JSON粘贴到每个文件中（如果需要，可以单独调整创作和发布内容）。 在`overrides`下的每个路径中，将`<environment-name>`替换为reCAPTCHA Enterprise云配置的名称。 使用[Sling覆盖语法](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。
+
+   ```json
+   {
+     "enabled": true,
+     "description": "recaptchaITOverrideConfig",
+     "overrides": [
+       "cloudconfigs/recaptcha/<environment-name>/projectId=\"$[env:projectId]\"",
+       "cloudconfigs/recaptcha/<environment-name>/secretKey=\"$[secret:secretKey]\"",
+       "cloudconfigs/recaptcha/<environment-name>/siteKey=\"$[env:siteKey]\""
+     ]
+   }
+   ```
+
+   >[!NOTE]
+   >
+   >在Cloud Manager中添加`projectId`、`siteKey`和`secretKey`作为环境变量和密钥，以便它们适用于&#x200B;**作者**、**预览**&#x200B;和&#x200B;**发布**（在&#x200B;**环境配置**&#x200B;对话框中使用&#x200B;**应用的步骤**）。 查看Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)中的[环境变量。
+
+   ![Recaptcha覆盖](/help/forms/assets/recaptcha-override.png)
+
+1. 提交并推送更改：
+
+   ```shell
+   git add ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/
+   git commit -m "Add reCAPTCHA context-aware configuration OSGi overrides"
+   git push origin <your-branch-name>
+   ```
+
+1. 运行部署此存储库的Cloud Manager管道。 部署后，覆盖将从为该环境定义的变量和密钥中提供`projectId`、`siteKey`和`secretKey`。
 
 ## 另请参阅 {#see-also}
 

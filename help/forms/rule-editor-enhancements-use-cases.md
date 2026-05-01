@@ -6,16 +6,16 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 0%
+source-wordcount: '2396'
+ht-degree: 1%
 
 ---
 
 # 规则编辑器增强功能和用例
 
-<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
+<span class="preview">这些是通过我们的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">预发布渠道</a>提供的预发布功能。 这些增强功能还适用于Edge Delivery Services Forms。
 
 本文介绍了自适应Forms中规则编辑器的最新增强功能。 这些更新旨在帮助您更轻松地定义表单行为，而无需编写自定义代码，并创建更动态、响应更快且个性化的表单体验。
 
@@ -28,11 +28,12 @@ ht-degree: 0%
 | [动态变量](#support-for-dynamic-variables-in-rules) | 使用根据用户输入或其他条件而更改的变量创建规则。 |  — 启用灵活的规则条件<br> — 减少对重复逻辑<br>的需求 — 消除创建隐藏字段的要求 |
 | [自定义基于事件的规则](#custom-event-based-rules-support) | 定义对标准触发器以外的自定义事件做出响应的规则。 |  — 支持高级用例<br> — 更好地控制执行规则的时间和方式<br> — 增强了交互性 |
 | [上下文感知的可重复面板执行](#context-based-rule-execution-for-repeatable-panels) | 现在，规则会在每个重复面板的正确上下文中执行，而不是仅在最后一个实例中执行。 |  — 每个重复实例<br>的精确规则应用 — 减少动态部分<br>中的错误 — 改进用户使用重复内容的体验 |
+| [与File Attachment组件](#combined-when-conditions-with-the-file-attachment-component)组合的When条件 | 使用添加条件和AND或OR逻辑为文件附件组件创建When规则，以便与其他验证一起评估附件。 |  — 仅当附件状态和其他检查评估为预期的<br>时才会运行操作 — 上载方案的链接规则更少<br> — 更明确地为需要文件和已验证输入的表单进行创作 |
 | [支持查询字符串、UTM和浏览器参数](#url-and-browser-parameter-based-rules-in-adaptive-forms) | 创建根据URL参数或浏览器特定的值调整表单行为的规则。 |  — 基于源或环境<br>启用个性化 — 对营销或跟踪特定的流<br>很有用 — 无需额外的脚本编写或自定义 |
 
 >[!NOTE]
 >
-> 增强功能还适用于Edge Delivery Services Forms[的](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)规则编辑器。
+> 增强功能还适用于Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)的[规则编辑器。
 
 现在，让我们通过特定用例详细探索每种方法，以帮助您了解如何使用这些功能为用户提供个性化体验
 
@@ -93,7 +94,7 @@ ht-degree: 0%
 
 ## 在规则中支持动态变量
 
-增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**&#x200B;函数在表单的整个生命周期内设置和检索这些变量。
+增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**函数在表单的整个生命周期内设置和检索这些变量。
 这些变量包括：
 
 * 未随表单数据一起提交。
@@ -119,12 +120,12 @@ ht-degree: 0%
 
 ![获取变量值](/help/forms/assets/getvalue.png)
 
-随着用户更改国家/地区或数量，**总装运成本**&#x200B;字段会动态更新以反映产品成本和装运费用。
+随着用户更改国家/地区或数量，**总装运成本**字段会动态更新以反映产品成本和装运费用。
 ![输出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您还可以在When条件中添加&#x200B;**Get Variable value**&#x200B;函数。
+> 您还可以在When条件中添加&#x200B;**Get Variable value**函数。
 > ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
 
 这种方法可以实现动态的实时计算，而无需向表单中添加额外的字段，保持结构干净和用户友好。
@@ -138,7 +139,6 @@ ht-degree: 0%
 该表单不使用直接绑定到字段的逻辑，而是使用基于事件的方法搭配&#x200B;**调度事件**&#x200B;和&#x200B;**触发事件**&#x200B;来提高模块性和可维护性。
 
 **使用调度事件和触发器事件实施**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
@@ -158,6 +158,10 @@ ht-degree: 0%
 
 支持自定义事件，允许开发人员创建和触发可用作规则编辑器中的条件的自定义事件。
 
+### 简化了OOTB和自定义事件的语法 {#simplified-grammar-for-ootb-and-custom-events}
+
+增强规则编辑器包含用于使用&#x200B;**调度事件**&#x200B;和&#x200B;**触发事件**&#x200B;的基于事件的规则的&#x200B;**简化语法**。 以前，此语法仅应用于&#x200B;**自定义**&#x200B;事件；不支持现成(OOTB)事件，这通常需要&#x200B;**When**&#x200B;规则用于OOTB触发器，以及&#x200B;**On Trigger Event**&#x200B;规则用于自定义事件。 现在支持使用相同的简化语法的OOTB事件，从而实现一致的创作模式，无需根据触发器是OOTB还是自定义在&#x200B;**When**&#x200B;和&#x200B;**On触发器事件**&#x200B;之间切换。
+
 ## 针对可重复面板的基于上下文的规则执行
 
 自适应Forms支持对可重复面板执行上下文感知规则。 这允许规则专门应用于用户进行交互的面板实例，而不是影响所有实例或默认为最后一个实例。
@@ -175,6 +179,26 @@ ht-degree: 0%
 更改数量时，规则将获取所选产品的单价，并仅计算该面板的总成本。
 
 ![上下文感知规则输出](/help/forms/assets/context-aware-rule-output.png)
+
+## 与“文件附件”组件组合的When条件 {#combined-when-conditions-with-the-file-attachment-component}
+
+增强规则编辑器支持使用&#x200B;**AND**&#x200B;或&#x200B;**OR**&#x200B;逻辑将&#x200B;**文件附件**&#x200B;组件与其他条件组合在一起的&#x200B;**When**&#x200B;规则。 **在** When **子句中添加条件**&#x200B;可以包含文件附件状态以及对其他字段或面板验证的检查，因此只有当满足每个选定的条件时，才会运行操作。
+
+**方案**：宠物注册表单收集&#x200B;**宠物ID**、**宠物名称**&#x200B;和&#x200B;**宠物类别**，并包含&#x200B;**添加照片**&#x200B;文件附件。 该表单运行操作，例如，当附件更改&#x200B;**和**&#x200B;且满足其他字段上的配置条件（其值）时，清除或刷新&#x200B;**添加照片**。
+
+**在规则编辑器的文件附件组件中使用When条件进行实施**
+
+在目标对象上配置了规则（如&#x200B;**添加照片**）。 **When**&#x200B;部分使用&#x200B;**添加条件**&#x200B;将文件附件触发器与一个或多个其他字段的条件组合在一起，因此操作同时依赖于附件和这些字段值。
+
+以下屏幕截图显示了具有多个条件和&#x200B;**添加条件**&#x200B;选项的&#x200B;**When**&#x200B;条件：
+
+![当规则具有多个条件并添加条件时](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+当&#x200B;**When**&#x200B;子句对配置的&#x200B;**AND**&#x200B;或&#x200B;**OR**&#x200B;逻辑的计算结果为true时，规则将运行配置的操作。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+当&#x200B;**Pet ID**&#x200B;包含`101`时，**添加照片**&#x200B;附件将清除；同样，当&#x200B;**Pet Name**&#x200B;包含`a`时，附件将清除。
 
 ## 自适应Forms中基于URL和浏览器参数的规则
 

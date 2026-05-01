@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
+source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2009'
 ht-degree: 31%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 31%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483070/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta程序 {#aem-beta-programs}
@@ -101,16 +101,18 @@ Content Advisor现在可用于Adobe Workfront和非Adobe（第三方）应用程
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms 中的早期访问功能 {#forms-early-access-features}
+### AEM Forms中的新增功能
 
-**在提交PDF中显示多选下拉列表的标签**
-自适应Forms中的多选下拉组件现在在[生成的提交PDF](/help/forms/generate-document-of-record-core-components.md)中呈现其选定的显示标签，确保文档准确反映用户在表单上看到的内容。
+* **使用OSGi覆盖reCAPTCHA云配置** 
+reCAPTCHA [添加上下文感知配置覆盖并通过Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi)进行部署后，您与源文件一起保留的企业项目ID、站点密钥和密码可以解析为每个Cloud Service环境中的不同值。
 
-**复选框、单选按钮和面板组件的增强辅助功能**
-自适应Forms核心组件为[复选框组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[单选按钮组(v2)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入了符合WCAG 2.2的语义标记。 这些组件利用`<fieldset>`和`<legend>`个HTML元素在组标签及其选项之间建立有意义的关系，从而使屏幕阅读器和其他辅助技术能够进行准确解释。
+* **基于证书的身份验证** 
+提交到Microsoft SharePoint列表的自适应Forms现在支持[基于证书的身份验证](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication)以及OAuth URL身份验证。 对于基于证书的登录，请在AEM和Microsoft Azure中注册证书别名和租户详细信息。
 
-Forms Manager中的&#x200B;**版本控制支持**
-Forms Manager现在[支持自适应Forms（核心组件和基础组件）](/help/forms/manage-form-versions-forms-manager.md)、表单片段、主题、XDP模板和二进制资源的版本控制。 直接从Forms和文档控制台创建版本、查看完整的版本历史记录以及恢复表单资产的早期状态。
+* **规则编辑器增强功能**
+
+   * 自适应Forms规则编辑器现在支持开箱即用(OOTB)触发器和自定义事件的[调度事件和触发事件规则](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events)的简化语法，因此作者不仅限于自定义触发器的语法。
+   * 当基于核心组件的自适应Forms上的规则现在包含[文件附件组件以及使用AND或OR逻辑](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)的其他条件时，因此规则仅在附件状态和其他检查全部按预期计算时才运行其操作。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础 {#foundation}
 
@@ -125,13 +127,13 @@ Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和Intelli
 了解有关[使用AI工具进行本地开发](/help/ai-in-aem/local-development-with-ai-tools.md)的更多信息，并随时发送电子邮件至[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)，提出问题或反馈。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3484988/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Experience Governance MCP服务器 {#gov-mcp-server}
 
 Experience Governance MCP Server现已正式提供(GA)。 它与支持模型上下文协议(MCP)的AI开发人员工具和聊天机器人集成，允许您在聊天机器人或IDE中使用自然语言提示来维护品牌完整性和合规性。 您可以根据品牌治理规则评估内容（文本、图像、页面），并检索品牌配置和可用的治理检查。
 
-了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
+了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
 
 #### 克劳德连接器 {#aem-claude-connector}
 
