@@ -39,7 +39,7 @@ ht-degree: 31%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483070/?captions=chi_hans&quality=12)
 -->
 
 ## AEM Beta程序 {#aem-beta-programs}
@@ -127,7 +127,7 @@ Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和Intelli
 了解有关[使用AI工具进行本地开发](/help/ai-in-aem/local-development-with-ai-tools.md)的更多信息，并随时发送电子邮件至[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)，提出问题或反馈。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484988/?captions=chi_hans&learn=on&enablevpops)
 
 #### Experience Governance MCP服务器 {#gov-mcp-server}
 
