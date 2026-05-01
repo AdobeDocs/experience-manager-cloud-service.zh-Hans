@@ -62,7 +62,7 @@ SharePoint列表配置的基于证书的身份验证位于<span class="preview">
 
 要为AEM和Microsoft Azure准备证书，请在AEM中执行以下步骤，然后在Microsoft Azure中注册公共证书。
 
-在AEM中&#x200B;****
+在AEM中&#x200B;**&#x200B;**
 
 1. 转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL 用户]**。
 1. 搜索&#x200B;**[!UICONTROL fd-cloudservice]**，选择用户，然后单击&#x200B;**[!UICONTROL 属性]**。
@@ -72,9 +72,9 @@ SharePoint列表配置的基于证书的身份验证位于<span class="preview">
 
 屏幕快照会在添加证书后显示密钥库。 **[!UICONTROL 别名]**&#x200B;必须与SharePoint List云配置中的&#x200B;**[!UICONTROL 证书别名]**&#x200B;匹配：
 
-具有证书别名](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}的![fd-cloudservice用户密钥库
+具有证书别名![&#128279;](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}的fd-cloudservice用户密钥库
 
-在Microsoft Azure中&#x200B;****
+在Microsoft Azure中&#x200B;**&#x200B;**
 
 1. 打开应用程序注册，然后转到&#x200B;**证书和密钥** > **证书**。
 1. 选择&#x200B;**上载证书**&#x200B;并上载Azure必须信任该应用程序的证书文件（公钥）。

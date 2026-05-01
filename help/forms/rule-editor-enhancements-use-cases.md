@@ -33,7 +33,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 增强功能还适用于Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)的[规则编辑器。
+> 增强功能还适用于Edge Delivery Services Forms[&#128279;](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)的规则编辑器。
 
 现在，让我们通过特定用例详细探索每种方法，以帮助您了解如何使用这些功能为用户提供个性化体验
 
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 ## 在规则中支持动态变量
 
-增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**函数在表单的整个生命周期内设置和检索这些变量。
+增强型规则编辑器支持创建和使用动态（临时）变量。 可使用内置&#x200B;**设置变量值**&#x200B;和&#x200B;**获取变量值**&#x200B;函数在表单的整个生命周期内设置和检索这些变量。
 这些变量包括：
 
 * 未随表单数据一起提交。
@@ -120,12 +120,12 @@ ht-degree: 1%
 
 ![获取变量值](/help/forms/assets/getvalue.png)
 
-随着用户更改国家/地区或数量，**总装运成本**字段会动态更新以反映产品成本和装运费用。
+随着用户更改国家/地区或数量，**总装运成本**&#x200B;字段会动态更新以反映产品成本和装运费用。
 ![输出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您还可以在When条件中添加&#x200B;**Get Variable value**函数。
+> 您还可以在When条件中添加&#x200B;**Get Variable value**&#x200B;函数。
 > ![当条件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}时，在中获取变量值函数
 
 这种方法可以实现动态的实时计算，而无需向表单中添加额外的字段，保持结构干净和用户友好。
