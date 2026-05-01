@@ -38,7 +38,7 @@ ht-degree: 2%
 * 支持跨品牌和区域的可扩展治理
 * 改进资产管理
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475424/?captions=chi_hans&learn=on&enablevpops){transcript=true}
 
 ## 如何启用基于属性的访问控制 {#enable-attribute-based-access-control}
 
