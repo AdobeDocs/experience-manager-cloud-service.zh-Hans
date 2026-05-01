@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
+source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 31%
+source-wordcount: '2054'
+ht-degree: 30%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 31%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483070/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta程序 {#aem-beta-programs}
@@ -91,6 +91,10 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 AEM用户现在可以利用大型语言模型(LLM)进行内容翻译，以机器翻译的速度提供人工翻译质量。 与传统第三方翻译服务类似，Azure OpenAI可在AEM中配置为翻译提供商，并支持计划在未来版本中使用的其他LLM。 客户使用自己的LLM许可证来实现此功能。 此外，可以将公司翻译风格指南上传到AEM，从而提取翻译规则以确保品牌和风格的一致性。 有关详细信息，请参阅[配置AI翻译集成](/help/sites-cloud/administering/translation/ai-translation-integration.md)。
 
+### 内容片段编辑器 {#cf-editor}
+
+新的内容片段编辑器现在允许您预览内容片段的JSON表示形式。 这有助于独立于呈现来验证内容结构，并在此功能中恢复与AEM触屏UI中上一个内容片段编辑器的等同性。
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **内容顾问现在可用于Adobe Workfront和非Adobe应用程序**
@@ -127,13 +131,13 @@ Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和Intelli
 了解有关[使用AI工具进行本地开发](/help/ai-in-aem/local-development-with-ai-tools.md)的更多信息，并随时发送电子邮件至[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)，提出问题或反馈。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3484988/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Experience Governance MCP服务器 {#gov-mcp-server}
 
 Experience Governance MCP Server现已正式提供(GA)。 它与支持模型上下文协议(MCP)的AI开发人员工具和聊天机器人集成，允许您在聊天机器人或IDE中使用自然语言提示来维护品牌完整性和合规性。 您可以根据品牌治理规则评估内容（文本、图像、页面），并检索品牌配置和可用的治理检查。
 
-了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
+了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
 
 #### 克劳德连接器 {#aem-claude-connector}
 
