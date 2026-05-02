@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.04.09发行说明
-description: 这些是通用编辑器2026.04.09版的发行说明。
+title: 通用编辑器2026.04.30发行说明
+description: 这些是通用编辑器2026.04.30版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a5f3b703706beab106591477372328e45f881b44
+source-git-commit: a6293278e50507943cd3f1055bc7c7f8dc479613
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 40%
+source-wordcount: '97'
+ht-degree: 22%
 
 ---
 
 
-# 通用编辑器2026.04.09发行说明 {#release-notes}
+# 通用编辑器2026.04.30发行说明 {#release-notes}
 
-这些是通用编辑器 2026 年 9 月 4 日版本的发行说明。
+这些是通用编辑器2026年4月30日版本的发行说明。
 
 >[!TIP]
 >
@@ -22,10 +22,8 @@ ht-degree: 40%
 
 >[!TIP]
 >
->关于 Adobe Experience Manager as a Cloud Service 的最新发行说明，请参阅[本页。](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>有关Adobe Experience Manager as a Cloud Service的最新发行说明，请参阅[此页面。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## 新增功能 {#what-is-new}
+## 改进功能 {#other-improvements}
 
-* [在AEM as a Cloud Service中创作和保留内容的](/help/implementing/universal-editor/configure-rte.md#image)项目现在支持富文本编辑器(RTE)工具栏中的“添加图像”选项[。](https://www.aem.live/docs/aem-authoring)
-* [现在，从编辑器导航回](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)主屏幕时，属性面板[可折叠。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-   * 如果您希望使用此功能，请联系Adobe客户关怀。
+* 已修复以下问题：[可编辑项的徽章](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)在某些情况下遮蔽了它后面的项。
