@@ -70,5 +70,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AI翻译集成是&#x200B;**非**&#x200B;可用的，可在Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md)聊天UI中的[AI助手或Experience Production Agent界面中使用。 使用本文中所述的翻译工作流和控制台。
+>AI翻译集成是&#x200B;**非**&#x200B;可用的，可在Adobe Experience Manager[&#128279;](/help/implementing/cloud-manager/ai-assistant-in-aem.md)聊天UI中的AI助手或Experience Production Agent界面中使用。 使用本文中所述的翻译工作流和控制台。
 
