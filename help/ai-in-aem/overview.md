@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中的 AI 功能
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: b18758b46e999222c4af1fa19781018acc9eb7ea
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 51%
+source-wordcount: '535'
+ht-degree: 50%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 51%
 
 ## AI 助手 {#ai-assistant}
 
-Adobe Experience Manager[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI助手提供了一个对话界面，旨在简化查找与AEM相关的查询的答案。
+](/help/implementing/cloud-manager/ai-assistant-in-aem.md)Adobe Experience Manager 中的 AI 助手[提供了一个对话界面，用于简化为您的 AEM 相关查询找到相应的回答。
 
 ## AEM的人工智能 {#agentic-ai-in-aem}
 
 AEM提供了一系列[代理](/help/ai-in-aem/agents/overview.md)以加快内容创建并自动编排更改：
 
-* [品牌体验代理](/help/ai-in-aem/agents/brand-experience/overview.md)
+* [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)
 * [内容审查程序代理](/help/ai-in-aem/agents/content-advisor/overview.md)
 * [治理代理](/help/ai-in-aem/agents/governance/overview.md)
 
 ## AEM中的创新型人工智能 {#generative-ai-in-aem}
 
-Adobe Experience Manager（AEM）as a Cloud Service 的 Adobe 生成式 AI 使品牌能够在编辑界面内通过复制和图像生成来创造高性能体验。通过生成式 AI，您可以自主创建以下内容：
+Adobe Experience Manager（AEM）as a Cloud Service 的 Adobe 生成式 AI 使品牌能够在编辑界面内通过复制和图像生成来创造高性能体验。 通过生成式 AI，您可以自主创建以下内容：
 
 * **品牌感知** — 创建包含品牌语调、风格准则和其他特定要求的内容。
 * **按受众个性化** — 利用精细的内容性能分析为所有渠道中的任意角色定制内容。
@@ -53,11 +53,15 @@ Adobe Experience Manager（AEM）as a Cloud Service 的 Adobe 生成式 AI 使�
 
 * [Content Hub 概述](/help/assets/product-overview.md)
 
-  Content Hub 允许您使用 Adobe Express 创建新内容（如果您有 Adobe Express 权限）。您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
+  Content Hub 允许您使用 Adobe Express 创建新内容（如果您有 Adobe Express 权限）。 您可以使用易于使用的工具编辑现有内容，使用模板和品牌元素制作品牌变体，并使用 Adobe Firefly 的最新 GenAI功 能创建新内容。
 
 * [AI 生成的智能标记](/help/assets/metadata-assets-view.md#ai-smart-tags)
 
-  对于数字资产，您可以使用 AI 自动分配描述性标记，而不用依赖手动输入。这些 AI 生成的标记提高了元数据的质量，使资产更易于搜索、分类和推荐。这种方法不仅通过消除手动标记提高了效率，而且确保了大量数字内容之间的一致性和可扩展性。
+  对于数字资产，您可以使用 AI 自动分配描述性标记，而不用依赖手动输入。 这些 AI 生成的标记提高了元数据的质量，使资产更易于搜索、分类和推荐。 这种方法不仅通过消除手动标记提高了效率，而且确保了大量数字内容之间的一致性和可扩展性。
+
+* [人工智能翻译集成](/help/sites-cloud/administering/translation/ai-translation-integration.md)
+
+  人工智能翻译集成允许您使用大型语言模型(LLM)作为在Adobe Experience Manager中创作的内容的翻译服务。 您可以将AEM连接到LLM提供商（从Microsoft Azure OpenAI开始），重复使用与其他连接器相同的翻译工作流，还可以选择上传翻译样式指南，以便AEM可以生成在不同区域设置之间保持语气、术语和品牌语言一致的规则。
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
@@ -73,4 +77,4 @@ Adobe Experience Manager（AEM）as a Cloud Service 的 Adobe 生成式 AI 使�
 
 * [Experience Cloud 产品中的生成式 AI](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud 产品中的生成式 AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud 产品 Adobe Experience Manager 中的生成式 AI](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/generative-ai#aem)

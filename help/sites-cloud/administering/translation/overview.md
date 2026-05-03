@@ -6,19 +6,20 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="适用于AEM Sites)。"
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a27d861061d4ee41bdfc080bc50a942de60f593b
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 81%
+source-wordcount: '340'
+ht-degree: 70%
 
 ---
 
 # 翻译多语言站点的内容 {#translating-content-for-multilingual-sites}
 
-自动翻译页面内容和资源以创建和维护多语言网站。要自动化翻译工作流，您可以将翻译服务提供商与 AEM 集成并创建项目以将内容翻译成多种语言。AEM 支持人工翻译工作流和机器翻译工作流。
+自动翻译页面内容和资源以创建和维护多语言网站。 要自动化翻译工作流，您可以将翻译服务提供商与 AEM 集成并创建项目以将内容翻译成多种语言。 AEM 支持人工翻译工作流和机器翻译工作流。
 
-* **人工翻译：**&#x200B;内容将发送给您的翻译提供商并由专业翻译人员进行翻译。完成后，将返回翻译的内容并将其导入 AEM。当您的翻译提供商与 AEM 集成时，内容会在 AEM 和翻译提供商之间自动发送。
+* **人工翻译：**&#x200B;内容将发送给您的翻译提供商并由专业翻译人员进行翻译。 完成后，将返回翻译的内容并将其导入 AEM。 当您的翻译提供商与 AEM 集成时，内容会在 AEM 和翻译提供商之间自动发送。
 * **机器翻译：**&#x200B;机器翻译服务将立即翻译您的内容。
+* **代理翻译（AI翻译集成）：**&#x200B;通过翻译云服务将AEM连接到大型语言模型，并使用与其他提供商相同的翻译项目和工作流。 您可以上传样式指南，以便AEM根据区域设置生成翻译规则。 请参阅[配置AI翻译集成](ai-translation-integration.md)。
 
 >[!TIP]
 >
