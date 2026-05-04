@@ -4,9 +4,9 @@ description: 了解Brand Experience Agent的表单创建作业以及如何使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ ht-degree: 0%
 * **导入PDF文档并将其转换为表单**：您可以将现有PDF文档导入并转换为表单。 该技能可分析上传的内容以检测字段类型、保留布局并通过响应式设计和验证逻辑增强表单，同时确保维护品牌和合规性标准。
 
 使用其中任一功能时，系统会提示您选择要创建的表单类型。 指定基于核心组件的自适应表单模板或基于Edge Delivery Services的自适应表单模板，并指示您保存表单的首选路径。 如果您基于Edge Delivery Services创建表单，则还可以指定存储库的GitHub URL。
-
 
 ### 示例提示 {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## 其他资源 {#additional-resources}
+
+在继续探索Experience Production Agent时，以下资源可能会很有用：
+
+* 您还可以使用[Experience Production Agent工作簿](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)获取引导式实践说明。
