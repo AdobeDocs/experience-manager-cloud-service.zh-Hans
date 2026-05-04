@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
+source-git-commit: eff4f08ec399314df49246eb7431f5b100493780
 workflow-type: tm+mt
 source-wordcount: '2054'
 ht-degree: 30%
@@ -39,7 +39,7 @@ ht-degree: 30%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483070/?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta程序 {#aem-beta-programs}
@@ -131,13 +131,16 @@ Java栈栈团队越来越多地在Cursor、Claude Code、Visual Studio和Intelli
 了解有关[使用AI工具进行本地开发](/help/ai-in-aem/local-development-with-ai-tools.md)的更多信息，并随时发送电子邮件至[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)，提出问题或反馈。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3484988/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Experience Governance MCP服务器 {#gov-mcp-server}
 
 Experience Governance MCP Server现已正式提供(GA)。 它与支持模型上下文协议(MCP)的AI开发人员工具和聊天机器人集成，允许您在聊天机器人或IDE中使用自然语言提示来维护品牌完整性和合规性。 您可以根据品牌治理规则评估内容（文本、图像、页面），并检索品牌配置和可用的治理检查。
 
-了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
+了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
 
 #### 克劳德连接器 {#aem-claude-connector}
 
