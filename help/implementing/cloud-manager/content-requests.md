@@ -120,7 +120,7 @@ AEM as a Cloud Service应用服务器端收集规则来计数内容请求。 这
 
 ### 用于管理内容请求的流量过滤器规则 {#traffic-filter-rules-to-manage-crs}
 
-为了更好地控制您的内容请求，请在定义过滤器规则之前分析CDN流量。 [CDN日志分析工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis)可帮助您深入了解CDN性能和请求模式。 首先了解流量的来源以及是否存在意外的信令模式（常见的机器人模式是使用空的用户代理）。
+为了更好地控制您的内容请求，请在定义过滤器规则之前分析CDN流量。 [CDN日志分析工具](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis)可帮助您深入了解CDN性能和请求模式。 首先了解流量的来源以及是否存在意外的信令模式（常见的机器人模式是使用空的用户代理）。
 
 **要监视和记录的项目：**
 
