@@ -4,9 +4,9 @@ description: 了解如何使用项目上下文、代理技能和MCP服务器配�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
+source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文侧重于使用人工智能工具为&#x200B;**AEM Java栈栈开发**&#x200B;进行本地开发。 对于Edge Delivery Services，请参阅[使用AI工具进行开发](https://www.aem.live/developer/ai-coding-agents)。
+>本文重点介绍使用AI工具进行&#x200B;**AEM Java栈栈开发**&#x200B;的本地开发。 对于Edge Delivery Services，请参阅[使用AI工具进行开发](https://www.aem.live/developer/ai-coding-agents)。
 
 AI编码代理（Claude Code、Cursor、GitHub Copilot和类似工具）对AEM的底层技术(Java、OSGi、Sling、JCR、HTL)具有广泛了解，但不一定了解用于生成代码和配置或如何调试常见AEM开发问题的最佳实践。
 
@@ -27,6 +27,8 @@ AI编码代理（Claude Code、Cursor、GitHub Copilot和类似工具）对AEM�
 | **代理技能** | 可重复使用的指令集，用于组件创建和Dispatcher配置等重复开发任务 |
 | **AEM快速入门本地MCP服务器** | 公开本地AEM SDK实例的实时运行时数据以支持故障排除 |
 | **Dispatcher本地MCP服务器** | 启用本地Dispatcher实例的运行时验证和检查 |
+
+查看[AI辅助开发教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以获取其他动手操作说明。
 
 >[!NOTE]
 >
@@ -57,7 +59,7 @@ Adobe在&#x200B;**[adobe/skills](https://github.com/adobe/skills/tree/main/plugi
 
 ### 安装技能 {#install-skills}
 
-选择与您的AI编码工具匹配的方法。 一旦安装技能，这些技能即可用于该计算机上的所有项目。
+选择与您的AI编码工具匹配的方法。 一旦安装技能，这些技能即可用于该计算机上的所有项目。 有关具体演练，请参阅[设置AEM代理技能教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)。
 
 #### Claude码 {#claude-code}
 
@@ -92,7 +94,7 @@ gh upskill adobe/skills --path skills/aem/cloud-service --all
 
 ### 使用创建组件技能 {#use-the-create-component-skill}
 
-首次使用时，该技能将从`project`和现有组件中自动检测`package`、`group`和`pom.xml`，要求您确认检测到的值，然后在项目根目录中创建`.aem-skills-config.yaml`。 首次使用前无需手动配置。
+首次使用时，该技能将从`pom.xml`和现有组件中自动检测`project`、`package`和`group`，要求您确认检测到的值，然后在项目根目录中创建`.aem-skills-config.yaml`。 首次使用前无需手动配置。
 
 如果您希望预创建文件，请将`.aem-skills-config.yaml`置于具有以下结构的项目根目录下：
 
@@ -121,6 +123,8 @@ CTA Link (ctaLink) - Pathfield
 
 代理会响应字段说明进行确认，然后生成所有组件文件。 支持的模式包括带有复合嵌套项的多字段、条件显示/隐藏逻辑、通过Sling资源合并器进行的核心组件扩展以及使用AEM Mocks的JUnit 5测试。
 
+按照[使用AEM代理技能的组件开发教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)了解更多信息。
+
 ### 使用Dispatcher技能 {#use-the-dispatcher-skill}
 
 调用任何Dispatcher或Apache HTTPD配置工作的Dispatcher技能。 该技能根据请求的性质将请求路由到六个专业子技能中的一个：
@@ -144,7 +148,7 @@ Dispatcher技能处理编排和咨询指导。 如下所述的Dispatcher MCP服�
 
 ### 安装内容包 {#install-the-content-package}
 
-从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)下载内容包，然后使用位于`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`的包管理器将`/crx/packmgr`安装到本地快速入门中。
+从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)下载内容包，然后使用位于`/crx/packmgr`的包管理器将`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`安装到本地快速入门中。
 
 **兼容性：**&#x200B;已与AEM SDK `2026.2.24678.20260226T154829Z-260200`及更高版本一起验证。
 
@@ -189,7 +193,7 @@ Dispatcher技能处理编排和咨询指导。 如下所述的Dispatcher MCP服�
 
 #### 其他IDE {#other-ides}
 
-任何MCP客户端都可以指向带有`http://localhost:4502/bin/mcp`标头的`Authorization: Basic YWRtaW46YWRtaW4=`来连接。 使用IDE的MCP设置配置自定义标头。
+任何MCP客户端都可以指向带有`Authorization: Basic YWRtaW46YWRtaW4=`标头的`http://localhost:4502/bin/mcp`来连接。 使用IDE的MCP设置配置自定义标头。
 
 >[!NOTE]
 >
@@ -214,7 +218,7 @@ Dispatcher MCP服务器与AEM Dispatcher SDK捆绑在一起。 它使AI工具能
 
 >[!NOTE]
 >
->如果您看到`client version 1.43 is too new`，请在外壳程序或`DOCKER_API_VERSION=1.41`中设置`mcp.json`。
+>如果您看到`client version 1.43 is too new`，请在外壳程序或`mcp.json`中设置`DOCKER_API_VERSION=1.41`。
 
 ### 安装Dispatcher SDK {#install-the-dispatcher-sdk}
 
