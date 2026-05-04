@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
+source-git-commit: ac4ce2421cdeb29aec7183f515ae32bfca37e82f
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2560'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 >
 >现在，日志转发是以自助方式配置的，不同于传统方法，后者需要提交Adobe支持票证。 如果您的日志转发是由Adobe设置的，请参阅[正在迁移](#legacy-migration)部分。
 
-如果客户拥有带日志记录供应商的许可证或托管日志记录产品，则可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
+如果客户拥有带日志记录供应商的许可证或托管日志记录产品，则可以将AEM日志（包括Apache/Dispatcher）和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
 <table>
   <tbody>
@@ -79,7 +79,7 @@ ht-degree: 3%
       <td>Sumo逻辑</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">未来</td>
+      <td>是</td>
     </tr>
   </tbody>
 </table>
@@ -106,7 +106,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 ## 设置 {#setup}
 
-1. 创建名为 `logForwarding.yaml` 的文件。它应包含元数据，如[配置管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
+1. 创建名为 `logForwarding.yaml` 的文件。 它应包含元数据，如[配置管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
 
    ```yaml
    kind: "LogForwarding"
@@ -128,7 +128,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 配置中的令牌（如`${{SPLUNK_TOKEN}}`）表示不应存储在Git中的密钥。 请将其声明为Cloud Manager [机密环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 确保选择&#x200B;**全部**&#x200B;作为“已应用服务”字段的下拉列表值，以便可以将日志转发到作者、发布和预览层。
 
-通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志(包括Apache/Dispatcher)之间的不同值，其中属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
+通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志（包括Apache/Dispatcher）之间的不同值，其中属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
 
 ```yaml
    kind: "LogForwarding"
@@ -146,7 +146,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
          index: "AEMaaCS_CDN"   
 ```
 
-另一种方法是禁用CDN日志或AEM日志(包括Apache/Dispatcher)的转发。 例如，要仅转发CDN日志，可以配置以下内容：
+另一种方法是禁用CDN日志或AEM日志（包括Apache/Dispatcher）的转发。 例如，要仅转发CDN日志，可以配置以下内容：
 
 ```yaml
    kind: "LogForwarding"
@@ -205,7 +205,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 >
 > 高级网络配置是[两步流程](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling)，需要在程序和环境级别启用。
 
-对于AEM日志(包括Apache/Dispatcher)，如果您已配置[高级网络](/help/security/configuring-advanced-networking.md)，则可以使用`aem.advancedNetworking`属性从专用出口IP地址或通过VPN转发它们。
+对于AEM日志（包括Apache/Dispatcher），如果您已配置[高级网络](/help/security/configuring-advanced-networking.md)，则可以使用`aem.advancedNetworking`属性从专用出口IP地址或通过VPN转发它们。
 
 以下示例说明如何使用高级联网在标准HTTPS端口上配置日志记录。
 
@@ -224,7 +224,7 @@ data:
       advancedNetworking: true
 ```
 
-对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob存储区，其中可以写入逻辑，以将已知IP的日志发送到其最终目标。
+对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或（非Adobe）Azure Blob存储区，其中可以写入逻辑，以将已知IP的日志发送到其最终目标。
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ aemcdn/
 
 #### Azure Blob Storage AEM日志 {#azureblob-aem}
 
-AEM日志(包括Apache/Dispatcher)显示在具有以下命名约定的文件夹下方：
+AEM日志（包括Apache/Dispatcher）显示在具有以下命名约定的文件夹下方：
 
 * aemaccess
 * aemerror
@@ -422,7 +422,7 @@ data:
 #### 注意事项
 
 * URL字符串必须包含&#x200B;**https://**，否则验证将失败。
-* URL可能包含端口。 例如，`https://example.com:8443/aem_logs/aem`。如果url字符串中未包含任何端口，则采用端口443（默认的HTTPS端口）。
+* URL可能包含端口。 例如，`https://example.com:8443/aem_logs/aem`。 如果url字符串中未包含任何端口，则采用端口443（默认的HTTPS端口）。
 
 #### HTTPS CDN日志 {#https-cdn}
 
@@ -517,8 +517,6 @@ data:
 
 ### Sumo逻辑 {#sumologic}
 
-日志转发到Sumo Logic支持AEM和Dispatcher日志；尚不支持CDN日志。
-
 在配置Sumo Logic进行数据摄取时，您会看到“HTTP Source地址”，该地址在单个字符串中提供主机、接收者URI和私钥。  例如：
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
@@ -538,13 +536,16 @@ data:
 ```
 
 >[!NOTE]
->计划将来支持SumoLogic CDN日志。 请通过电子邮件发送[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)来注册感兴趣的内容。
+>`index`字段行为取决于日志类型：
 >
-> 您需要订购Sumo Logic Enterprise才能使用“索引”字段功能。  非企业订阅的日志将作为标准路由到`sumologic_default`分区。  有关详细信息，请参阅[Sumo逻辑分区文档](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
+>* **AEM日志（包括Apache/Dispatcher）**：路由到`index`指定的分区，前提是您具有Sumo Logic Enterprise订阅。 非企业订阅路由到`sumologic_default`分区。
+>* **CDN日志**：已忽略`index`字段，因为从技术上讲，转发到Sumo Logic的CDN日志不支持索引。 CDN日志始终路由到`sumologic_default`分区。
+>
+>有关详细信息，请参阅[Sumo逻辑分区文档](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 日志条目格式 {#log-formats}
 
-有关每种日志类型(CDN日志和包括Apache/Dispatcher的AEM as a Cloud ServiceAEM日志)的格式，请参阅[日志记录](/help/implementing/developing/introduction/logging.md)。
+有关每种日志类型（CDN日志和包括Apache/Dispatcher的AEM as a Cloud Service日志）的格式，请参阅[日志记录](/help/implementing/developing/introduction/logging.md)。
 
 由于来自多个程序和环境的日志可能会转发到同一日志记录目标，因此除了日志记录文章中所述的输出之外，每个日志条目中还将包含以下属性：
 
