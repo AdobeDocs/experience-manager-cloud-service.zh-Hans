@@ -4,7 +4,7 @@ description: 了解Brand Experience Agent的表单创建作业以及如何使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
+source-git-commit: b6f9448b0c7e22277b1efba79a10b22f1126392a
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -108,4 +108,4 @@ The form creation skill combines form creation and site integration in a single 
 
 在继续探索Experience Production Agent时，以下资源可能会很有用：
 
-* 您还可以使用[Experience Production Agent工作簿](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)获取引导式实践说明。
+* 您还可以使用[Experience Production Agent工作簿](https://main--summit-labs--aemsites.aem.live/brand-visibility/l339/)获取引导式实践说明。
