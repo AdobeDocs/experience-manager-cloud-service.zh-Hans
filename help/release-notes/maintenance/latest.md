@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9d9acd2151aca65a0c988b90bc4f94e088395f3f
+source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
 workflow-type: tm+mt
-source-wordcount: '2221'
-ht-degree: 8%
+source-wordcount: '777'
+ht-degree: 30%
 
 ---
 
@@ -16,115 +16,84 @@ ht-degree: 8%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 25520 {#25520}
+## 发行说25821 {#release-25821}
 
-以下总结了维护版本25520的持续改进，该版本于2026年4月23日公开发布。 上一个维护版本是版本 25194。
+以下总结了维护版本25821的持续改进，该版本于2026年5月5日公开发布。 以前的维护版本是25520版。
 
-2026.4.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.5.0功能激活将提供此维护版本的完整功能集。 有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
+### 增强功能 {#enhancements-25821}
 
-### 增强功能 {#enhancements-25520}
+* CQ-4362304：前端创建准则并更新LLM配置UI。
+* GRANITE-39546：将Apache Tika升级到3.x。
+* GRANITE-53957：将Azure SDK V8升级到V12，以用于oak-blob-azure。
+* GRANITE-61245：删除所有commons-lang用法（替换为commons-lang3）。
+* GRANITE-64748：颠覆OIDC身份验证处理程序。
+* GRANITE-64764：将Apache Commons文本更新为1.15.0。
+* GRANITE-64963：将Filevault更新为4.2.0。
+* GRANITE-66197：为M365租户添加Microsoft Graph API电子邮件支持。
+* GRANITE-66449：更新用于Java 17 API支持的Maven插件。
+* GRANITE-66473：将咖啡因缓存库添加到base-granite。
+* GRANITE-66836：将快速入门更新到Oak 2.0.0。
+* SKYOPS-129301：将APIs jar Javadoc合规性级别设置为Java 17。
+* SKYOPS-129351：更新反应流和反应栈，以实现MCP SDK兼容性。
+* SKYOPS-131412：将Apache Commons Exec更新到最新版本。
+* SKYOPS-131432：将Felix SCR更新为2.2.14。
+* SKYOPS-131907：将Sling API区域更新为1.1.10。
+* SKYOPS-131938：将GSON更新到最新版本。
+* SKYOPS-132173：将Apache Commons编解码器更新到最新版本。
+* SKYOPS-132182：更新Sling租户包。
+* SKYOPS-132267：更新`org.osgi.service.component`注释。
+* SKYOPS-132272：更新Sling功能模型包。
+* SKYOPS-132525：添加快速入门分析器以防止新的API被删除。
+* SKYOPS-134408：将`com.adobe.granite.asset.core`更新为2.2.82。
+* SKYOPS-137750：将`com.adobe.granite.comments`更新为1.0.40。
+* SKYOPS-137759：将`com.adobe.granite.jobs.async.ui.commons`更新为3.2.4。
+* SKYOPS-138356：将`com.adobe.granite.oauth.server`更新为1.1.36。
+* SKYOPS-138739：将SnakeYAML更新为2.6。
 
-* Forms-24388：为交互式通信(IC)编辑器添加了一个本地开发环境，通过该环境，开发人员可以构建和测试配置，而无需依赖共享服务器。 此增强功能可帮助企业客户更快地迭代，减少环境依赖项，并提高整体开发效率。
-* Forms-24014：增强了文件附件组件的规则编辑器，以支持使用“AND”逻辑组合条件，例如，允许诸如“如果文件附件已更改并且面板有效，则执行此操作”之类的规则。 以前，无法对文件附件使用其他条件；此更新使更复杂的规则定义能够支持高级工作流。
-* Forms-23571：除了自定义事件之外，还通过添加对开箱即用(OOTB)事件的支持，增强了用于触发器事件规则的现有简化语法视图。 以前，用户只能将简化的语法用于自定义事件，并且必须在“WHEN”和“ON TRIGGER EVENT”规则之间切换以分别配置OOTB和自定义事件。 通过此更新，OOTB和自定义事件均可在相同的简化语法中使用，从而简化规则配置并减少切换上下文的需求。
-* Forms-24462：在React Vanilla组件中添加了对涂写签名组件的支持，以用于Headless自适应Forms (AF)。 此增强功能使用户能够直接在基于React的表单中捕获手写签名，支持企业客户的数字签名工作流和计划的上线时间表。
-* Forms-24343：在表单模型JavaScript对象表示法(JSON)中添加了`custom:setProperty`的优化处理，从而加快动态属性更新的处理。 此增强功能提高了依赖频繁运行时更改的复杂自适应Forms (AF)的性能，从而使用户交互更顺畅，缩短了加载时间。
-* Forms-24358：添加了对在模型JavaScript对象表示法(JSON)结构中使用`items`属性而非`:items`和`:itemsOrder`的支持。 此增强功能使开发人员可以使用更清晰、更直观的数据模型，该模型与常用JSON约定更好地保持一致，并简化了与外部系统的集成。
-* Forms-24087：新增支持在自适应Forms (AF)中直接在片段容器上定义规则和事件。 此增强功能使作者能够在容器级别应用条件逻辑和交互，从而提高重复使用率并减少跨单个片段字段重复规则的需求。
-* Forms-24440：在交互式通信编辑器的规则编辑器的THEN下拉列表中添加了一个新的“删除字段”操作，该操作允许用户在满足规则条件时从表单中完全删除选定的组件。 此增强功能支持需要动态重构表单的工作流，而不是仅隐藏字段，同时仍会触发适当的`forms_ready`脚本以实现一致行为。
-* Forms-23898：增加了对在交互式通信(IC)编辑器中使用`@`表示法定义变量的支持，使用户能够更直观地配置动态表。 此增强功能简化了变量驱动表内容的设置，并提高了在创作体验中管理动态数据时的清晰度。
-* Forms-23702：为SharePoint List (SPList)连接添加了基于证书的身份验证，从而支持对SharePoint数据的更安全、基于证书的访问。 此增强功能可帮助企业客户满足更严格的安全性和法规遵从性要求，同时减少对基于密码的身份验证的依赖。
-* Forms-23800：增加了对覆盖sling配置中的reCAPTCHA密钥的支持，使企业客户能够符合其自身的安全和合规要求。 此增强功能允许对特定于环境的密钥进行管理，以便管理员能够安全地集成reCAPTCHA而无需更改代码。
-* SITES-39116：内容片段GET端点现在包含元数据架构信息。
-* SITES-41449: New dedicated GET endpoint for retrieving Content Fragment metadata.
-* SITES-39434: Content Fragments and folders can now be linked to metadata schemas for structured metadata management.
-* SITES-39567: Content Fragment metadata is now validated and stored according to the linked metadata schema.
-* SITES-40006: Content Fragments can now be searched and filtered using metadata field values.
-* SITES-41391：单个内容片段检索API现在包括签入/签出状态信息
-* SITES-42214：提高了内容片段移动操作的可靠性和性能
-* SITES-41351：改进了内容片段中元数据的显示格式，以提高可读性。
-* SITES-42458：现在无需严格的架构验证即可添加默认元数据，以实现更大的灵活性。
-* SITES-35508：带有通用编辑器的Edge Delivery：添加对RTE中图像的支持。
-* SITES-37078：带有通用编辑器的Edge Delivery：当页面为只读页面时，删除通用编辑器工具。
-* SITES-40206：带有通用编辑器的Edge Delivery：向页面创建向导添加名称验证。
-* SITES-40255：带有通用编辑器的Edge Delivery：阻止将电子表格发布为`/config.json`。
-* SITES-40757：带有通用编辑器的Edge Delivery：确保在站点创建向导中Edge Delivery配置的唯一性。
-* SITES-41134：带有通用编辑器的Edge Delivery：无法发布基于文件的配置。
+### 修复的问题 {#fixed-issues-25821}
 
-### 修复的问题 {#fixed-issues-25520}
+* Assets-59546：删除对已弃用的commons-lang库的依赖项。
+* Assets-64831： AssetProcessorProcess重置处理尝试计数导致资产卡住。
+* Assets-66683：由uploadBlob失败导致的审批循环。
+* CNTBF-613：注册节点类型时修复访问被拒绝(JCR-101)。
+* GRANITE-44537：“国家/地区”中的字符串未在AEM中本地化。
+* GRANITE-61760：修复了激活AdminUserInitializer失败的问题。
+* GRANITE-64543：权限限制响应不遵循API结构。
+* GRANITE-66692：内部类加载程序对包刷新不敏感。
+* GRANITE-66732：对启动级别1捆绑包使用激活器而不是服务组件。
+* GRANITE-66846： AEM权限API不显示`rep:ntNames`限制。
+* SITES-39267：恢复关系链条目中的pagePath。
+* SITES-43715：权限验证无法读取资源状态。
 
-* Forms-24811：用户在管理表单逻辑规则时遇到问题。 当他们尝试修改之前创建的规则时，规则编辑器不允许进行更改，从而强制用户从头开始重新创建规则，并减慢表单维护速度。
-* Forms-24720：用户在自适应Forms (AF)中配置新创建的变量时遇到问题。 当他们将规则添加到数据绑定或未绑定的变量时，规则无法按预期保存，从而强制用户重新创建其逻辑并减慢创作工作流的速度。
-* Forms-24195：用户在重置自适应Forms (AF)中的下拉字段时遇到不一致行为。 当下拉列表配置了占位符并且表单或组件重置时，字段变为空白而不是返回到占位符值，导致对所需选择的混淆。
-* Forms-24718：用户在选择“主页”按钮时，在交互式通信(IC)编辑器中遇到导航问题。 该按钮未返回主Adobe Experience Manager (AEM)界面，而是未按预期重定向，在IC编辑和AEM主屏幕之间移动时会中断用户的工作流程。
-* Forms-24810：用户在首次尝试加载表单的自适应用户界面(AUI)时遇到间歇性故障。 在某些会话中，初始页面无法正确呈现，强制用户刷新或重试，然后才能开始填写表单。
-* Forms-24520：用户在使用自适应用户界面(AUI)的代理用户界面(UI)打印预览中遇到缺少页码的问题。 当代理打开打印预览时，页码字段有时显示为空，使得在查看或共享打印的副本时更难以引用特定页面。
-* Forms-24532：用户使用带有SharePoint `/teams`列表配置的表单数据模型(FDM)预填充时遇到失败。 依赖这些列表的政府组织发现，表单加载时没有预期的预填充数据，从而中断了数据收集工作流，并增加了手动输入的工作量。
-* Forms-24516：在AEM Forms as a Cloud Service中升级SDK后，用户遇到记录文档(DoR)中缺少涂写签名数据的问题。 使用涂写选项签署表单时，生成的DoR不显示捕获的签名，导致企业客户混淆和不完整记录。
-* Forms-18631：用户遇到桌面、响应式Web设计(RWD)平板电脑和RWD移动设备视图上的网格布局无障碍问题。 在将Windows 11上的Chrome与NVDA（非可视化桌面访问）屏幕阅读器结合使用时，网格缺少相应的角色和属性，使得辅助型技术难以正确解释和导航内容。
-* Forms-24798：用户在AEM Forms用户界面(UI)中的自适应Forms (AF)规则中使用`else`条件时遇到了不一致行为。 当不符合主规则条件时，关联的`else`操作未运行，导致表单逻辑和字段可见性的行为与作者配置的行为不同。
-* Forms-24334：在JavaScript (AEM) Forms as a Cloud Service中使用嵌入的自适应表单(AF)时，用户遇到预填充失败和Adobe Experience Manager对象表示法(JSON)合并问题。 加载已迁移的表单时，预期的预填充数据未显示，并且合并的JSON内容不完整或不正确。 这会阻止从内部部署AEM 6.5迁移到受影响环境的AEM Forms as a Cloud Service。
-* Forms-24441：用户在Adobe Experience Manager (AEM) Forms as a Cloud Service中遇到记录文档(DoR)模板配置问题。 当他们在快速开发环境中保存自定义DoR模板时，该模板将恢复到默认版本，阻止他们保留其预期布局和设置。
-* Forms-24393：当旧模板继续显示为“无标题”而非显示有意义的名称时，用户会遇到困惑。 这使得在日常创作工作中难以区分和重用现有模板。
-* Forms-24163：用户在预览包含片段的版本2表单时遇到问题。 在预览模式下，表单内容未按预期呈现，导致用户无法在发布之前验证布局和行为。
-* Forms-24328：在将不可见reCAPTCHA v2与“在用户操作中验证CAPTCHA”选项结合使用时，用户遇到表单提交未完成的情况。 企业客户发现，受影响环境中的表单未按预期提交，从而中断了联系和征求建议书工作流。
-* SITES-42118：跳过`/graphql/execute.json`的重写规则。
-* SITES-40095：修复元数据编辑器中的本地引用列表。
-* SITES-42191: Fix GraphQL JSON omits embedded image references when DAM filenames contain spaces / non-ASCII characters.
-* SITES-22336: Unlocalized &quot;Content Fragment Models&quot; string in Assets > Create > Content Fragment.
-* SITES-19796：在Assets下创建内容片段时，添加无效字符时显示未本地化的字符串“提供的名称无效”。
-* SITES-42531：在“Assets”页面中锁定“内容片段”时，工具提示未本地化。
-* SITES-42532：在Assets中将CF发布到AEM时未本地化的“稍后”字符串。
-* SITES-39250：在Assets >内容片段编辑器的链接中，本地化的字符显示不正确。
-* SITES-41117：未本地化“所选值必须是`{}`内的有效模型类型或全局模型。” 内容片段模型编辑器中的字符串。
-* SITES-41431：降低了屏幕阅读器针对锁定按钮反馈的详细程度，以提供更清晰、更简洁的公告。
-* SITES-40819：修复了键盘焦点在交互后未返回到触发元素的问题，从而确保焦点顺序可预测。
-* SITES-40751：在工具栏项目的键盘焦点上添加了可见标签，以便键盘用户能够清楚地识别操作。
-* SITES-25524：更正了在设备按钮上按aria键的使用，以便辅助型技术接收准确的状态信息。
-* SITES-25321：更新了文本颜色以满足最低对比度要求并提高弱视用户的可读性。
-* SITES-25304：防止折叠的人口统计工具栏错误地接收焦点，并保持逻辑焦点顺序。
-* SITES-25292：阐明屏幕阅读器有关旋转设备按钮的公告，以更好地描述其用途和状态。
-* SITES-25290：为桌面切换按钮添加了可见的按下状态，以便用户能够明显看到其选择状态。
-* SITES-25287：改进了编辑布局时的标尺测量上下文，使屏幕阅读器用户能够了解测量信息。
-* SITES-25284：修复了在未选中状态中截断“iPhone 8 Plus”按钮标签的问题，以便宣布和显示完整设备名称。
-* SITES-25251：在筛选“插入新组件”列表（指示结果已更改）时为屏幕阅读器用户引入反馈。
-* SITES-25221：增加了资产侧边栏中“编辑”按钮的接触目标大小，以满足最小目标大小准则。
-* SITES-25220：添加了警告/指示，表明Assets左边栏中的编辑按钮可打开一个新选项卡，提高了辅助型技术用户的可预测性。
-* SITES-24993: Updated the Editor Canvas header title to use a proper heading role, improving document structure for screen readers.
-* SITES-24954: Corrected the focus order for the emulator button so it follows a natural and logical navigation sequence.
-* SITES-41586: Fix for Copy-Pasting of Content Fragment component inside editor loosing a reference to content fragment.
-* SITES-42195: Fix `CommerceLinksTransformerFactory` not respecting sling mappings on publish instance.
-* SITES-41238：修复ThumbnailServlet中导致日志泛滥的错误。
-* SITES-41041：修复在版本预览/比较中未呈现的CIF组件。
-* SITES-40756：在Live Copy概述>关系状态中修复未本地化的日期格式。
-* SITES-40219：修复未对特定产品或类别页面调用CatalogPageNotFoundFilter的问题。
-* SITES-40218：修复SpecificPageFilterFactory缺少v3页资源类型注册。
-* SITES-40347：在创建新的标题集创建Live Copy时，中断标题的继承。
-* SITES-41544：内容片段ETag计算现在排除元数据。
-* SITES-42734：修复了在使用默认架构时GET元数据端点返回空字段的问题。
-* SITES-37955：带有通用编辑器的Edge Delivery：确保一致检查发布先决条件。
-* SITES-40877：使用通用编辑器的Edge Delivery：修复包含非ascii特殊字符的页面的发布失败。
-* SITES-42092：使用通用编辑器的Edge Delivery：修复以`-s`结尾的路径的深层取消发布。
-* SITES-24650： iframe没有标题。
+#### AEM Guides {#guides-25821}
 
-### 已知问题 {#known-issues-25520}
+* GUIDES-45110：使用&#x200B;**选择文件**&#x200B;对话框在编辑器中选择图像时，只显示光栅格式（如JPG、PNG和GIF）。 矢量文件（如`.ai`和`.eps`）未显示，因此无法选择。
+* GUIDES-41938：在名称中包含空格的文件夹中创建主题时，会错误地创建一个重复的文件夹，其中空格被连字符替换，并且主题会保存在该文件夹中而不是原始文件夹中。
+* GUIDES-38377：将文件夹配置文件中对输出预设的更改应用于现有映射时，将重置AEM Sites预设的已保存&#x200B;**发布上下文**。
+* GUIDES-43547：打开大型主题或地图时，创作实例无响应，在某些情况下需要重新启动。
+* GUIDES-32520：对元素使用Backspace时，无论光标位置如何，编辑器都会滚动到主题的顶部（编辑器2.0）。
+
+如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+
+### 已知问题 {#known-issues-25821}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-25520}
+### 已弃用的功能和 API {#deprecated-25821}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-25520}
+### 安全修复 {#security-25821}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 24 个已发现的漏洞，增强了我们对强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。 此维护版本解决了19个已识别的漏洞，强化了我们对强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-25520}
+### 嵌入的技术 {#embedded-tech-25821}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM Oak | 1.90.0 | [Oak 1.90.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html) |
+| AEM Oak | 2.0.0 | [Oak 2.0.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.0.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | Apache HTTP 服务器 | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
