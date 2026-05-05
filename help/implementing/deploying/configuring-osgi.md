@@ -48,7 +48,7 @@ OSGi配置通过组件的永久标识(PID)来定位OSGi组件，该PID默认为O
 
 >[!NOTE]
 >
->在AEM as a Cloud Service中，OSGi配置未存储在`/apps`下。 签入Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)以查看OSGi配置。
+>在AEM as a Cloud Service中，OSGi配置未存储在`/apps`下。 签入Cloud Manager [Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)以查看OSGi配置。
 
 ## 运行模式分辨率 {#runmode-resolution}
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service运行模式根据环境类型和服务进行良好的定�
 
 可以通过以下方式验证由运行模式指定的OSGi配置值：
 
-1. 正在打开AEM as a Cloud Services环境的[Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. 正在打开AEM as a Cloud Services环境的[Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hans)
 1. 使用&#x200B;__Pod__&#x200B;下拉列表选择要检查的服务层
 1. 选择&#x200B;__状态__&#x200B;选项卡
 1. 从&#x200B;__状态转储__&#x200B;下拉列表中选择&#x200B;__配置__

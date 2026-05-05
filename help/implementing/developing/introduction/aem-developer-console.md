@@ -58,7 +58,7 @@ Developer Console仅供在某些项目中拥有特定角色的用户访问。
 
 要查看创作和发布服务中的数据，还必须将用户分配到这两个服务上的“AEM用户”或“AEM管理员产品配置文件”。
 
-有关设置用户权限的详细信息，请参阅[Cloud Manager文档。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+有关设置用户权限的详细信息，请参阅[Cloud Manager文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## “OSGi包”选项卡 {#osgi-bundles}
 
