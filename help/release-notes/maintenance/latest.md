@@ -20,7 +20,7 @@ ht-degree: 30%
 
 以下总结了维护版本25821的持续改进，该版本于2026年5月5日公开发布。 以前的维护版本是25520版。
 
-2026.5.0功能激活将提供此维护版本的完整功能集。 有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.5.0功能激活将提供此维护版本的完整功能集。 有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强功能 {#enhancements-25821}
 
