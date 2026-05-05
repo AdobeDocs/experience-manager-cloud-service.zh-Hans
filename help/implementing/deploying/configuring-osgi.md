@@ -348,11 +348,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -362,11 +362,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -391,11 +391,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -405,11 +405,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val2"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -419,11 +419,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -448,11 +448,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -462,11 +462,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -489,11 +489,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -503,11 +503,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1"： "$[env：my_var1；default=val1]"
  "my_var2"： "abc"，
  "my_var3"：500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -515,7 +515,7 @@ config.dev
 
 ## 用于设置属性的Cloud Manager API格式 {#cloud-manager-api-format-for-setting-properties}
 
-有关Adobe API及其配置方式的信息，请参阅Adobe Developer网站](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)上的[Cloud Manager Cloud Manager 。
+有关Adobe API及其配置方式的信息，请参阅Adobe Developer网站[&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)上的Cloud Manager Cloud Manager 。
 
 >[!NOTE]
 >
@@ -595,7 +595,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->有关如何使用适用于Adobe I/O CLI的Cloud Manager插件配置值的更多信息，请参阅GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)上的[aio-cli-plugin-cloudmanager 。
+>有关如何使用适用于Adobe I/O CLI的Cloud Manager插件配置值的更多信息，请参阅GitHub[&#128279;](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)上的aio-cli-plugin-cloudmanager 。
 
 ### 变量数 {#number-of-variables}
 
