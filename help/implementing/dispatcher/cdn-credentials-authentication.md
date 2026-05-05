@@ -76,7 +76,7 @@ data:
 
 ## 客户管理的CDN HTTP标头值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的[CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
+如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
 
 作为设置的一部分，Adobe CDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到Adobe CDN之前，在客户CDN上针对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
