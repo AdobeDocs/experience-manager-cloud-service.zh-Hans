@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 O
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 7af84f36ab8629c6cf016b10534413f8890a9c95
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 100%
+source-wordcount: '964'
+ht-degree: 76%
 
 ---
 
@@ -16,14 +16,19 @@ ht-degree: 100%
 
 AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以便各组织能够遵守安全电子邮件要求。
 
-您可以为多个电子邮件提供商配置 OAuth。以下分步说明针对在 Microsoft® Office 365 Outlook 中配置 AEM 邮件服务以通过 OAuth2 进行身份验证。可通过类似方式配置其他供应商。
+您可以为多个电子邮件提供商配置 OAuth。 以下分步说明针对在 Microsoft® Office 365 Outlook 中配置 AEM 邮件服务以通过 OAuth2 进行身份验证。 可通过类似方式配置其他供应商。
+
+AEM支持用于Microsoft® 365的两个基于OAuth2的传输选项：
+
+* **SMTP + OAuth2** — 使用SMTP进行OAuth2身份验证的标准路径。
+* **Microsoft Graph API** — 当您的组织不允许基于SMTP的发送（例如，在Microsoft® 365中禁用了租户范围的SMTP身份验证），从而阻止使用SMTP和OAuth2时，通过Microsoft Graph发送邮件的备用路径。
 
 有关 AEM as a Cloud Service 邮件服务的更多信息，请参阅[发送电子邮件](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。
 
 ## Microsoft® Outlook {#microsoft-outlook}
 
 1. 转至 [https://portal.azure.com/](https://portal.azure.com/) 并登录。
-1. 在搜索栏中搜索 **Azure Active Directory**，并单击搜索结果。或者，您可以直接浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. 在搜索栏中搜索 **Azure Active Directory**，并单击搜索结果。 或者，您可以直接浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. 单击&#x200B;**应用程序注册** > **新的注册。**
 
    ![开始应用程序注册过程](assets/oauth-outlook1.png)
@@ -38,7 +43,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >权限配置可能会逐渐演变。如果这些操作无法发挥预期的作用，请与 Microsoft® 合作解决。
+   >权限配置可能会逐渐演变。 如果这些操作无法发挥预期的作用，请与 Microsoft® 合作解决。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -49,14 +54,14 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    * `http://localhost/`
    * `http://localhost`
 1. 在添加每个 URL 后按&#x200B;**配置**，然后根据您的要求配置设置。
-1. 接下来，转至&#x200B;**证书和密码**，单击&#x200B;**新建客户端密码**，然后执行屏幕上显示的步骤来创建密码。请务必记下此密码供以后使用。
+1. 接下来，转至&#x200B;**证书和密码**，单击&#x200B;**新建客户端密码**，然后执行屏幕上显示的步骤来创建密码。 请务必记下此密码供以后使用。
 1. 按左窗格中的&#x200B;**概述**，复制&#x200B;**应用程序（客户端）ID** 和&#x200B;**目录（租户）ID** 的值供以后使用。
 
 回顾一下，使用以下信息为 AEM 端的邮件服务配置 OAuth2：
 
-* 使用租户 ID 构建的身份验证 URL。它的形式是：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* 使用租户 ID 构建的令牌 URL。它的形式是：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* 使用租户 ID 构建的刷新 URL。它的形式是：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 使用租户 ID 构建的身份验证 URL。 它的形式是：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* 使用租户 ID 构建的令牌 URL。 它的形式是：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 使用租户 ID 构建的刷新 URL。 它的形式是：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * 客户端 ID
 * 客户端密码
 
@@ -78,7 +83,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    ```
 
 1. 复制上述示例中的 `<code>` 的值。
-1. 使用以下 cURL 命令获取 refreshToken。将 tenantID、clientID 和 clientSecret 替换为您帐户的值以及 `<code>` 的值：
+1. 使用以下 cURL 命令获取 refreshToken。 将 tenantID、clientID 和 clientSecret 替换为您帐户的值以及 `<code>` 的值：
 
    ```
    curl --location --request POST 'https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token' \
@@ -145,14 +150,15 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >范围可能会逐渐演变。如果这些操作无法发挥预期的作用，请与 Microsoft® 合作解决。
+   >范围可能会逐渐演变。 如果这些操作无法发挥预期的作用，请与 Microsoft® 合作解决。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 用以下语法在 `/apps/<my-project>/osgiconfig/config` 下创建一个名为 `called com.day.cq.mailer.DefaultMailService.cfg.json` 的 OSGI 属性文件。`smtp.host` 和 `smtp.port` 值反映了高级网络配置，如[电子邮件服务教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/examples/email-service)中所述。
+1. 创建OSGI属性文件 `called com.day.cq.mailer.DefaultMailService.cfg.json`
+在`/apps/<my-project>/osgiconfig/config`下，使用下面的语法。 `smtp.host` 和 `smtp.port` 值反映了高级网络配置，如[电子邮件服务教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/examples/email-service)中所述。
 
    ```
    {
@@ -170,8 +176,83 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    ```
 
 1. 对于 Outlook，`smtp.host` 配置值为 `smtp.office365.com`
-1. 在运行时，使用 [Cloud Manager 变量 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)或通过使用 [Cloud Manager 添加变量](/help/implementing/cloud-manager/environment-variables.md)来传入`refreshToken values` 和`clientSecret`秘密。应定义变量 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 的值。
+1. 在运行时，使用 [Cloud Manager 变量 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)或通过使用 [Cloud Manager 添加变量](/help/implementing/cloud-manager/environment-variables.md)来传入`refreshToken values` 和`clientSecret`秘密。 应定义变量 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 的值。
+
+如果您使用SMTP和OAuth2但邮件仍然无法正常工作，请参阅[疑难解答](#troubleshooting)。
+
+## 适用于® Outlook的Microsoft Graph API {#microsoft-graph-api}
+
+请按照[Azure Outlook](#microsoft-outlook)中描述的相同Microsoft应用程序注册步骤操作，但在步骤6（API权限）中会有以下区别。 使用Microsoft Graph `Mail.Send`委托权限而非Outlook SMTP范围：
+
+>[!NOTE]
+>
+>权限配置可能会逐渐演变。 如果这些操作无法发挥预期的作用，请与 Microsoft® 合作解决。
+
+* `https://graph.microsoft.com/Mail.Send`
+* `openid`
+* `offline_access`
+* `email`
+* `profile`
+
+### 生成刷新令牌 {#graph-generating-the-refresh-token}
+
+使用授权URL和cURL请求中的Microsoft图形作用域，执行与[SMTP + OAuth2](#generating-the-refresh-token)相同的令牌生成步骤。
+
+**授权URL** （将`clientID`和`tenantID`替换为您的值）：
+
+```
+https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://graph.microsoft.com/Mail.Send%20email%20openid%20profile%20offline_access&state=12345
+```
+
+在cURL令牌请求中，将范围替换为：
+
+```
+--data-urlencode 'scope=https://graph.microsoft.com/Mail.Send email openid profile offline_access'
+```
+
+### 与 AEM as a Cloud Service 集成 {#graph-integration-with-aem-as-a-cloud-service}
+
+1. 使用Microsoft图形作用域在`/apps/<my-project>/osgiconfig/config`下创建名为`com.day.cq.mailer.oauth.impl.OAuthConfigurationProviderImpl.cfg.json`的OSGI属性文件：
+
+   ```
+   {
+       "authUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize",
+       "tokenUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token",
+       "clientId": "<clientID>",
+       "clientSecret": "$[secret:SECRET_SMTP_OAUTH_CLIENT_SECRET]",
+       "scopes": [
+          "https://graph.microsoft.com/Mail.Send",
+          "openid",
+          "offline_access",
+          "email",
+          "profile"
+       ],
+       "authCodeRedirectUrl": "http://localhost",
+       "refreshUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token",
+       "refreshToken": "$[secret:SECRET_SMTP_OAUTH_REFRESH_TOKEN]"
+   }
+   ```
+
+1. 在`/apps/<my-project>/osgiconfig/config`下创建一个OSGI属性文件`com.day.cq.mailer.DefaultMailService.cfg.json`，其中`oauth.flow`和`graph.flow`均设置为`true`：
+
+   ```
+   {
+    "smtp.host": "smtp.office365.com",
+    "smtp.user": "<mailbox account used as the sender>",
+    "smtp.password": "value not used",
+    "smtp.port": 587,
+    "from.address": "<from address used for sending>",
+    "smtp.ssl": false,
+    "smtp.starttls": false,
+    "smtp.requiretls": false,
+    "debug.email": false,
+    "oauth.flow": true,
+    "graph.flow": true
+   }
+   ```
+
+1. 在运行时，使用 [Cloud Manager 变量 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)或通过使用 [Cloud Manager 添加变量](/help/implementing/cloud-manager/environment-variables.md)来传入`refreshToken` 和`clientSecret`秘密。 应定义变量 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 的值。
 
 ### 疑难解答 {#troubleshooting}
 
-如果邮件服务无法正常运行，您需要重新生成 `refreshToken`（如上所述），并通过 Cloud Manager API 传入新值。部署新值需要花费几分钟的时间。
+如果邮件服务无法正常工作，请重新生成`refreshToken`。 使用SMTP和OAuth2时，请使用[生成刷新令牌](#generating-the-refresh-token)；使用Microsoft Graph时，请使用[生成刷新令牌](#graph-generating-the-refresh-token)。 通过Cloud Manager API传递新值；部署可能需要几分钟的时间。
