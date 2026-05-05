@@ -4,12 +4,13 @@ description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2890'
 ht-degree: 4%
 
 ---
+
 
 # AEM as a Cloud Service 开发准则 {#aem-as-a-cloud-service-development-guidelines}
 
@@ -17,7 +18,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="AEM as a Cloud Service 开发准则"
 >abstract="了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。"
->additional-url="https://video.tv.adobe.com/v/345900?captions=chi_hans" text="包结构演示"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="包结构演示"
 
 本文档提供了在AEM as a Cloud Service上进行开发的准则，以及它与AEM内部部署和AMS中的AEM不同的重要方式。
 
@@ -63,9 +64,9 @@ Adobe建议使用提供的[Apache HttpComponents Client 4.x库](https://hc.apach
 
 已知有效，但可能需要自己提供依赖关系的替代方案包括：
 
-* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)和/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html)&#x200B;(由AEM提供)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)和/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html)（由AEM提供）
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)（不推荐，因为它已过时且已被版本4.x替换）
-* [确定Http](https://square.github.io/okhttp/)&#x200B;(AEM未提供)
+* [确定Http](https://square.github.io/okhttp/)（AEM未提供）
 
 除了提供超时之外，还应该对此类超时以及意外的HTTP状态代码进行正确处理。
 
@@ -111,11 +112,11 @@ AEM as a Cloud Service不支持从“发布”到“创作”的反向复制。 
 
 对于本地开发，日志条目将写入`/crx-quickstart/logs`文件夹中的本地文件。
 
-在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **设置日志级别**
 
-要更改云环境的日志级别，应修改Sling日志记录OSGI配置，然后完全重新部署。 由于此过程并非一蹴而就，因此对于在接收大量流量的生产环境中启用详细日志时要格外小心。 将来，可能会有更快速地更改日志级别的机制。
+要更改云环境的日志级别，应修改Sling日志记录OSGi配置，然后完全重新部署。 由于此过程并非一蹴而就，因此对于在接收大量流量的生产环境中启用详细日志时要格外小心。 将来，可能会有更快速地更改日志级别的机制。
 
 >[!NOTE]
 >
@@ -172,24 +173,22 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 本地开发 {#local-development}
 
-对于本地开发，开发人员具有对CRXDE Lite (`/crx/de`)和AEM Web控制台(`/system/console`)的完全访问权限。
+对于本地开发，开发人员拥有[CRXDE Lite](/help/implementing/developing/tools/crxde.md) (`/crx/de`)和[Web控制台](/help/implementing/developing/tools/web-console.md) (`/system/console`)的完全访问权限。
 
-在本地开发(使用SDK)中，`/apps`和`/libs`可以直接写入，这与云环境不同，在云环境中，这些顶级文件夹不可更改。
+对于本地开发（使用SDK），`/apps`和`/libs`可以直接写入，这与云环境不同，在云环境中，这些顶级文件夹不可更改。
 
 ### AEM as a Cloud Service 开发工具 {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->不应混淆AEM as a Cloud Service Developer Console与类似名称的&#x200B;[*Adobe Developer Console*](https://developer.adobe.com/developer-console/)。
 >
-
->[!NOTE]
->某些客户将可以选择为AEM Cloud Service Developer Console试用经过改进的体验。 有关详细信息，请参阅[本文](/help/implementing/developing/introduction/aem-developer-console.md)。
+>* 某些客户将可以选择为AEM Cloud Service Developer Console试用经过改进的体验。 有关详细信息，请参阅[本文](/help/implementing/developing/introduction/aem-developer-console.md)。
+>* 不应混淆AEM as a Cloud Service Developer Console与类似名称的&#x200B;[*Adobe Developer Console*](https://developer.adobe.com/developer-console/)。
 
 客户可以在创作层的开发环境中访问CRXDE Lite，但不能在暂存或生产环境中访问。 运行时无法写入不可变存储库(`/libs`， `/apps`)，因此尝试这样做会导致错误。
 
 相反，存储库浏览器可以从AEM as a Cloud Service Developer Console启动，为创作、发布和预览层上的所有环境提供到存储库的只读视图。 有关详细信息，请参阅[存储库浏览器](/help/implementing/developing/tools/repository-browser.md)。
 
-AEM as a Cloud Service Developer Console中为RDE、开发、暂存和生产环境提供了一组用于调试AEM as a Cloud Service开发人员环境的工具。 可以通过调整创作或发布服务URL来确定URL，如下所示：
+在[AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)中，提供了一组用于调试AEM as a Cloud Service开发人员环境的工具，可用于RDE、开发、暂存和生产环境。 可以通过调整创作或发布服务URL来确定URL，如下所示：
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -201,7 +200,7 @@ AEM as a Cloud Service Developer Console中为RDE、开发、暂存和生产环�
 
 开发人员可以生成状态信息，并解析各种资源。
 
-如下图所示，可用状态信息包括包、组件、OSGI配置、Oak索引、OSGI服务和Sling作业的状态。
+如下图所示，可用状态信息包括包、组件、OSGi配置、oak索引、OSGi服务和Sling作业的状态。
 
 ![开发控制台1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -215,7 +214,7 @@ AEM as a Cloud Service Developer Console具有一个指向Explain查询工具的
 
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于生产程序，对AEM as a Cloud Service Developer Console的访问权限由Adobe Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，AEM as a Cloud Service Developer Console可供任何拥有产品配置文件的用户访问AEM as a Cloud Service。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且存储库浏览器和用户还必须在AEM Users或AEM Administrators产品配置文件中，在创作和发布服务上定义，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=zh-Hans)。
+对于生产程序，对AEM as a Cloud Service Developer Console的访问权限由Adobe Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，AEM as a Cloud Service Developer Console可供任何拥有产品配置文件的用户访问AEM as a Cloud Service。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且存储库浏览器和用户还必须在AEM Users或AEM Administrators产品配置文件中，在创作和发布服务上定义，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅[Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### 性能监控 {#performance-monitoring}
 
@@ -233,19 +232,19 @@ Adobe会监控应用程序性能，并在发现性能下降时采取措施来解
 
 默认情况下，用于发送电子邮件的端口处于禁用状态。 要激活端口，请配置[高级网络](/help/security/configuring-advanced-networking.md)，确保为每个所需的环境设置`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`端点的端口转发规则，该规则将预期端口（例如，465或587）映射到代理端口。
 
-建议使用设置为`kind`的`flexiblePortEgress`参数配置高级网络，因为Adobe可以优化灵活端口出口流量的性能。 如果需要唯一的出口IP地址，请选择`kind`的`dedicatedEgressIp`参数。 如果您已经出于其他原因配置了VPN，则也可以使用该高级网络变体提供的唯一IP地址。
+建议使用设置为`flexiblePortEgress`的`kind`参数配置高级网络，因为Adobe可以优化灵活端口出口流量的性能。 如果需要唯一的出口IP地址，请选择`dedicatedEgressIp`的`kind`参数。 如果您已经出于其他原因配置了VPN，则也可以使用该高级网络变体提供的唯一IP地址。
 
 您必须通过邮件服务器发送电子邮件，而不是直接发送给电子邮件客户端。 否则，可能会阻止电子邮件。
 
 ### 发送电子邮件 {#sending-emails}
 
-应使用[Day CQ邮件服务OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans#configuring-the-mail-service)，必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
+应使用[Day CQ邮件服务OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，必须将电子邮件发送到支持请求中指示的邮件服务器，而不是直接发送给收件人。
 
 ### 配置 {#email-configuration}
 
-AEM中的电子邮件应使用[Day CQ邮件服务OSGi服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans#configuring-the-mail-service)发送。
+AEM中的电子邮件应使用[Day CQ邮件服务OSGI服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)发送。
 
-有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hans)。 对于AEM as a Cloud Service，请注意对`com.day.cq.mailer.DefaultMailService OSGI`服务的以下必要调整：
+有关配置电子邮件设置的详细信息，请参阅[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 对于AEM as a Cloud Service，请注意对`com.day.cq.mailer.DefaultMailService` OSGi服务的以下必要调整：
 
 * SMTP服务器主机名应设置为$[env:AEM_PROXY_HOST；default=proxy.tunnel]
 * 在配置高级联网时，SMTP服务器端口应设置为API调用中使用的portForwards参数中设置的原始代理端口的值。 例如，30465（而不是465）
@@ -269,7 +268,7 @@ AEM as a Cloud Service将在运行时自动将`smtp.starttls`属性设置为适�
 
 ### 旧版电子邮件配置 {#legacy-email-configuration}
 
-在2021.9.0版之前，电子邮件是通过客户支持请求配置的。 请注意对`com.day.cq.mailer.DefaultMailService OSGI`服务进行的以下必要调整：
+在2021.9.0版之前，电子邮件是通过客户支持请求配置的。 请注意以下对`com.day.cq.mailer.DefaultMailService` OSGi服务的必要调整：
 
 AEM as a Cloud Service要求通过端口465发送邮件。 如果邮件服务器不支持端口465，则只要启用TLS选项，就可以使用端口587。
 
@@ -283,7 +282,7 @@ AEM as a Cloud Service要求通过端口465发送邮件。 如果邮件服务器
 * 将`smtp.port`设置为`587`
 * 将`smtp.ssl`设置为`false`
 
-AEM as a Cloud Service将在运行时自动将`smtp.starttls`属性设置为适当的值。 因此，如果`smtp.ssl`设置为true，则忽略`smtp.startls`。 如果`smtp.ssl`设置为false，则`smtp.starttls`设置为true。 这与OSGI配置中设置的`smtp.starttls`值无关。
+AEM as a Cloud Service将在运行时自动将`smtp.starttls`属性设置为适当的值。 因此，如果`smtp.ssl`设置为true，则忽略`smtp.startls`。 如果`smtp.ssl`设置为false，则`smtp.starttls`设置为true。 这与OSGi配置中设置的`smtp.starttls`值无关。
 
 SMTP服务器主机应设置为邮件服务器的主机。
 
