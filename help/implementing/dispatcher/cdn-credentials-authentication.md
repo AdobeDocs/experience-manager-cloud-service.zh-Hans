@@ -4,10 +4,10 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 3%
+source-wordcount: '2282'
+ht-degree: 2%
 
 ---
 
@@ -44,11 +44,11 @@ data:
 
 您可以通过两种方式部署CDN配置中使用的密钥：
 
-* **管道密码变量** — 在Cloud Manager中配置为[密码](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)类型的&#x200B;**管道变量**，应用了&#x200B;**步骤**&#x200B;并将它设置为&#x200B;**部署**。 这些内容可用作配置管道级别配置。
+* **管道密码变量** — 在Cloud Manager中配置为&#x200B;**密码**&#x200B;类型的[管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)，应用了&#x200B;**步骤**&#x200B;并将它设置为&#x200B;**部署**。 这些内容可用作配置管道级别配置。
 
-* **环境密码变量** — 在Cloud Manager中配置为类型为[密码](/help/implementing/cloud-manager/environment-variables.md)的&#x200B;**环境变量**&#x200B;以及已应用的&#x200B;**服务**，并将它设置为&#x200B;**全部**。 这些组件可用作环境级别的配置。
+* **环境密码变量** — 在Cloud Manager中配置为类型为&#x200B;**密码**&#x200B;的[环境变量](/help/implementing/cloud-manager/environment-variables.md)以及已应用的&#x200B;**服务**，并将它设置为&#x200B;**全部**。 这些组件可用作环境级别的配置。
 
-**首选：管道机密变量。**&#x200B;尽可能使用管道机密变量，因为它们与您的配置一起部署在同一管道运行中。 这可以同步密钥和配置，并简化转出。
+**首选：管道机密变量。** 尽可能使用管道机密变量，因为它们与您的配置一起部署在同一管道运行中。 这可以同步密钥和配置，并简化转出。
 
 不能将管道密钥与同一配置的环境密钥混合使用。 如果为部署步骤定义了管道机密变量，则优先使用它们。
 
@@ -76,11 +76,11 @@ data:
 
 ## 客户管理的CDN HTTP标头值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[页面中的](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
+如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的[CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
 
 作为设置的一部分，Adobe CDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到Adobe CDN之前，在客户CDN上针对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
-*X-AEM-Edge-Key*&#x200B;值由名为`edgeKey1`或类似文件中的`edgeKey2`和`cdn.yaml`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。  以下示例中介绍了语法。
+*X-AEM-Edge-Key*&#x200B;值由名为`cdn.yaml`或类似文件中的`edgeKey1`和`edgeKey2`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。  以下示例中介绍了语法。
 
 有关进一步的调试信息和常见错误，请检查[常见错误](/help/implementing/dispatcher/cdn.md#common-errors)。
 
@@ -105,13 +105,15 @@ data:
           authenticator: edge-auth
 ```
 
-请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+有关常见方案的其他代码片段，请参阅[常见方案的CDN配置片段](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)文章。
 
-有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
+请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+
+有关更多详细信息，请参阅[配置和部署HTTP标头验证CDN规则](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教程步骤。
 
 其他属性包括：
 
-* 包含子`Data`节点的`authentication`节点。
+* 包含子`authentication`节点的`Data`节点。
 * 在`authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
 * 身份验证者：用于声明令牌或凭据的类型，在本例中为Edge密钥。 它包括以下属性：
    * name — 描述性字符串。
@@ -208,11 +210,11 @@ data:
            authenticator: purge-auth
 ```
 
-请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 其他属性包括：
 
-* 包含子`data`节点的`authentication`节点。
+* 包含子`authentication`节点的`data`节点。
 * 在`authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
 * 身份验证者：用于声明令牌或凭据的类型，在本例中是清除密钥。 它包括以下属性：
    * name — 描述性字符串。
@@ -227,11 +229,11 @@ data:
 >[!NOTE]
 >在部署引用清除密钥的配置之前，必须将清除密钥配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 建议使用长度最小为32字节的唯一随机密钥；例如，Open SSL加密库可以通过执行命令openssl rand -hex 32来生成随机密钥
 
-您可以引用[教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
+您可以引用[教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
 
 ## 基本身份验证 {#basic-auth}
 
-通过弹出需要用户名和密码的基本身份验证对话框来保护某些内容资源。此功能主要用于轻度身份验证用例（如业务利益相关者对内容的审查），而不是作为最终用户访问权限的完整解决方案。
+通过弹出需要用户名和密码的基本身份验证对话框来保护某些内容资源。 此功能主要用于轻度身份验证用例（如业务利益相关者对内容的审查），而不是作为最终用户访问权限的完整解决方案。
 
 最终用户将体验到类似于以下内容的基本身份验证对话框：
 
@@ -261,11 +263,11 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 此外，语法包括：
 
-* 包含`data`节点的`authentication`节点。
+* 包含`authentication`节点的`data`节点。
 * 在`authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
 * 验证者：在此场景中，声明一个基本验证者，该验证者具有以下结构：
    * 名称 — 描述性字符串

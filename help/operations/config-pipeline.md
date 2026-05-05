@@ -4,9 +4,9 @@ description: 了解如何使用配置管道在AEM as a Cloud Service中部署各
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1530'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 
 对于&#x200B;**发布投放**&#x200B;项目，可通过Cloud Manager将配置管道部署到开发、暂存和生产环境类型。 配置文件可以使用[命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署到快速开发环境(RDE)。 当需要为附加到发布交付环境的域配置流量时，请使用目标部署&#x200B;[**发布交付管道**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) （[生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)或[非生产](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)）。
 
-也可以通过Cloud Manager为&#x200B;**Edge Delivery**&#x200B;项目部署配置管道。 当域连接到&#x200B;[**Edge Delivery站点**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)&#x200B;时，使用&#x200B;**Edge Delivery管道**。
+也可以通过Cloud Manager为&#x200B;**Edge Delivery**&#x200B;项目部署配置管道。 当域连接到&#x200B;**Edge Delivery站点**&#x200B;时，使用&#x200B;[**Edge Delivery管道**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 
 本文档的以下部分概述了有关如何使用配置管道以及如何为其构建配置的重要信息。 它描述了在配置管道支持的所有功能或功能子集之间共享的一般概念。
 
@@ -35,6 +35,8 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 ## 支持的配置 {#configurations}
 
 下表提供了此类配置的完整列表，并包含指向专用文档的链接，该文档介绍了其不同的配置语法和其他信息。
+
+有关与CDN相关的配置，除了表中链接的文章之外，另请参阅[常见场景的CDN配置代码片段](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)文章。
 
 | 类型 | YAML `kind`值 | 描述 | 发布投放 | Edge Delivery |
 |---|---|---|---|---|
@@ -163,7 +165,7 @@ data:
   logForwarding-prod.yaml
 ```
 
-当属性值可能存在差异时，请使用此结构。 在文件中，`envTypes`数组值应该与后缀相对应。 例如，值为`cdn-dev.yaml`的`logForwarding-dev.yaml`和`["dev"]`、值为`cdn-stage.yaml`的`logForwarding-stage.yaml`和`["stage"]`等。
+当属性值可能存在差异时，请使用此结构。 在文件中，`envTypes`数组值应该与后缀相对应。 例如，值为`["dev"]`的`cdn-dev.yaml`和`logForwarding-dev.yaml`、值为`["stage"]`的`cdn-stage.yaml`和`logForwarding-stage.yaml`等。
 
 ### 每个环境的文件夹 {#folder-per-env}
 

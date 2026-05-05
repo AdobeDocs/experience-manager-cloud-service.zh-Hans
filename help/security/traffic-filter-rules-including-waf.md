@@ -4,9 +4,9 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 12e0d6f6ed07332e4c152f158cfe3a96dd385815
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '4803'
+source-wordcount: '4819'
 ht-degree: 96%
 
 ---
@@ -59,7 +59,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 客户可采取主动措施以通过在内容投放流的各层配置规则而减轻应用层（第 7 层）受到的攻击。
 
-例如，客户可在 Apache 层配置[&#x200B; Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
+例如，客户可在 Apache 层配置[ Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
 
 正如本文所述，还可使用 Cloud Manager 的[配置管道](/help/operations/config-pipeline.md)将流量过滤器规则部署到 Adobe Managed CDN。 除了基于 IP 地址、路径和标头等属性的&#x200B;*标准流量过滤规则*，或基于速率限制的规则外，客户还可通过授权使用一类功能强大的流量过滤子类别规则，即 *WAF 规则*。
 
@@ -471,6 +471,8 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+有关高级方案的其他代码片段，请参阅[常见方案的CDN配置片段](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)文章。
 
 ## CVE 规则 {#cve-rules}
 
