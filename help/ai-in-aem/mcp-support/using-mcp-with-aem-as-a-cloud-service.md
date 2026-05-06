@@ -55,7 +55,7 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 | **内容** | `/content` | 内容操作，包括为页面和内容片段创建、读取、更新和删除(CRUD)，以及资产导入和资产搜索。                                                                          <br>发送电子邮件至aemagentsteam@adobe.com以启用&#x200B;**资源搜索**。 在电子邮件中包含组织名称以及用例。 |
 | **内容（只读）** | `/content-readonly` | 对页面和内容片段以及资产搜索执行只读内容操作（获取、列表/搜索）。                                                                             <br>发送电子邮件至aemagentsteam@adobe.com以启用&#x200B;**资源搜索**。 在电子邮件中包含组织名称以及用例。 |
 | **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager实体，包括程序、环境、存储库和管道，这些也可以触发。 |
-| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>客户必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)才能访问Experience Governance MCP。 |
+| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>客户必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)才能访问Experience Governance MCP。 |
 
 每个MCP服务器公开的特定工具可能会随着时间的推移而不断演变。 在实践中，您可以要求启用了MCP的应用程序通过提示来发现工具，例如：
 
@@ -65,7 +65,7 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 
 MCP客户端使用MCP协议来检索工具列表和模式，然后LLM可以使用。
 
-请参阅[Content MCP Server教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
+请参阅[Content MCP Server教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
 
 ## 支持的MCP应用程序 {#supported-mcp-applications}
 
