@@ -240,7 +240,7 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 使用&#x200B;**显示表**&#x200B;选项以表格格式显示结果。 单击&#x200B;**显示所有结果**&#x200B;可在右窗格中查看检索到20个资源的完整集合。
 
-每个结果还包括关键资源元数据，例如资源路径、大小、创建日期和创建者、修改日期以及修改资源的用户、格式和描述。 如果资产处于已批准状态，则结果还包括具有OpenAPI URL ](/help/assets/dynamic-media-open-apis-overview.md)的[Dynamic Media。 您可以单击资源路径以无缝导航到AEM中的资源位置。
+每个结果还包括关键资源元数据，例如资源路径、大小、创建日期和创建者、修改日期以及修改资源的用户、格式和描述。 如果资产处于已批准状态，则结果还包括具有OpenAPI URL [&#128279;](/help/assets/dynamic-media-open-apis-overview.md)的Dynamic Media。 您可以单击资源路径以无缝导航到AEM中的资源位置。
 
 ![使用内容发现代理搜索资源](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
@@ -248,7 +248,7 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 
