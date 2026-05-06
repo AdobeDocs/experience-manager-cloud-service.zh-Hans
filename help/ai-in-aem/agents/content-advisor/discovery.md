@@ -4,7 +4,7 @@ description: 了解如何使用内容发现代理，通过自然的对话提示�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -236,11 +236,11 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 内容发现代理返回每个查询的前几个结果，按相关性排序，以确保首先显示完全匹配项。 该代理将元数据驱动的查询与语义搜索相结合，组装出一组重点突出的可能匹配项，然后使用LLM根据用户意图对它们进行排名。 这种混合方法提供了精确的上下文感知结果，完全不依赖于直接的关键字匹配。
 
-每个结果都显示为资源卡片，其中显示了资源名称、预览和关键元数据，例如描述和格式。 您可以单击信息卡上的信息图标以查看其他资源属性。
+每个结果都显示为资源卡片，其中显示资源名称、预览和关键元数据，例如描述和格式。 您可以单击信息卡上的信息图标以查看其他资源属性。
 
 使用&#x200B;**显示表**&#x200B;选项以表格格式显示结果。 单击&#x200B;**显示所有结果**&#x200B;可在右窗格中查看检索到20个资源的完整集合。
 
-每个结果还包括关键资源元数据，例如资源路径、大小、创建日期和创建者、修改日期以及修改资源的用户、格式和描述。 如果资产处于已批准状态，则结果还包括具有OpenAPI URL [&#128279;](/help/assets/dynamic-media-open-apis-overview.md)的Dynamic Media。 您可以单击资源路径以无缝导航到AEM中的资源位置。
+每个结果还包括关键资源元数据，例如资源路径、大小、创建日期和创建者、修改日期以及修改资源的用户、格式和描述。 如果资产处于已批准状态，则结果还包括具有OpenAPI URL ](/help/assets/dynamic-media-open-apis-overview.md)的[Dynamic Media。 您可以单击资源路径以无缝导航到AEM中的资源位置。
 
 ![使用内容发现代理搜索资源](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
@@ -248,7 +248,7 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 
