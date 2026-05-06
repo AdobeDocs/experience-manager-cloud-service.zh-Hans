@@ -4,10 +4,10 @@ description: 了解如何使用内容发现代理，通过自然的对话提示�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -79,7 +79,7 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 ## 常见用例和示例提示 {#use-cases-prompts}
 
-### Assets {#discovery-agent-use-cases-assets}
+### 资产 {#discovery-agent-use-cases-assets}
 
 **基于元数据的资源发现**
 
@@ -94,16 +94,43 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 示例提示：
 
-* **基于标记进行搜索**：在文件夹`office`中显示标记为`WKND`的图像。
+* **基于标记进行搜索**：在文件夹`WKND`中显示标记为`office`的图像。
 * **根据文件格式、资源类型、资源状态和按电子邮件ID发布**&#x200B;进行搜索：以`.PNG`格式显示`approved`和`published by <user email ID>`的图像。
 * **根据文件格式、资源类型、资源状态和电子邮件ID创建**&#x200B;进行搜索：以`.mp4`格式显示已批准的视频和`created by <user email ID>`视频。
 * **基于文件格式、资源类型、资源状态和创建日期进行搜索**：以`.PNG`格式显示2025年1月1日和`published by <user email ID>`之后创建的图像
 * **基于MIME类型、创建日期和发布者电子邮件ID**&#x200B;进行搜索：节目`image/jpeg`在`January 1, 2025`和`published by <user email ID>`之后创建。
-* **基于文件格式和自定义元数据属性进行搜索**：以`.JPEG`格式显示具有`Product SKU ID = <SKU value>`的图像（必须使用元数据属性=值格式）。
 
 * **搜索缺少元数据的资源**：显示过去90天内创建的包含`<Name of metadata property including custom properties>`的资源为空。
 
 * **使用文件大小、图像宽度和图像高度搜索资源**：显示大于5 MB、宽度大于2000像素且高度大于1200像素的图像。
+
+**自定义元数据的自然语言支持**
+
+内容发现代理支持查询在元数据架构中定义的自定义元数据属性。 您可以在提示中直接引用元数据值，而无需使用严格的键值格式指定它们。 代理解释意图并自动匹配相关的元数据字段。
+
+示例提示：
+
+* **查找具有属性值的资源未设置**：查找营销活动名称未设置的资源（必须为属性编制索引以获取相应结果）。
+
+* **查找具有属性值集的资源**：查找设置了促销活动名称的资源（必须为属性编制索引以获取相应结果）。
+
+* **查找属性值设置为X**&#x200B;的资源：查找营销活动名称为Coffee-day的资源。
+
+* **查找属性值设置为值集X、Y**&#x200B;的资产：查找营销活动名称为Coffee-day的资产以及营销活动名称为tea-day的资产。
+
+* **显示特定属性字段的值**：“获取咖啡资源”还会显示这些资源的促销活动名称。
+
+* **查找与基于日期的属性条件匹配的资源**：获取许可证未过期的资源。
+
+
+
+
+
+
+
+
+
+
 
 
 **基于文件夹的内容发现：**\
@@ -112,8 +139,8 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 示例提示：
 
 * 文件夹`WKND`中是否有任何svg？
-* 显示在文件夹`Nov 1 2025`中的`WKND`之后修改的资源。
-* 在文件夹`lifestyle`中列出`WKND`图像。
+* 显示在文件夹`WKND`中的`Nov 1 2025`之后修改的资源。
+* 在文件夹`WKND`中列出`lifestyle`图像。
 
 **启用基于文件夹的内容发现的其他问题**
 
@@ -161,6 +188,10 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 * 显示按名称升序排序的山地图像（显示以字母A开头，后跟B的图像名称，依此类推）。
 
+**上下文感知环境检测**
+
+在管理员视图中，内容发现代理会自动检测创作环境并使用它来解析提示，而无需您明确指定创作URL。
+
 ### AEM Sites页面 {#content-discovery-agent-aem-sites-pages}
 
 内容发现代理通过解释引用页面主题、营销活动或其他上下文关键字的自然语言提示，帮助用户快速找到相关的AEM Sites页面。 代理根据提示中的关键词执行全文搜索，以识别AEM存储库中的匹配页面，而无需手动浏览站点结构。
@@ -205,17 +236,19 @@ DAM库管理员可以标记缺少组织设置的元数据标准的资产，从�
 
 内容发现代理返回每个查询的前几个结果，按相关性排序，以确保首先显示完全匹配项。 该代理将元数据驱动的查询与语义搜索相结合，组装出一组重点突出的可能匹配项，然后使用LLM根据用户意图对它们进行排名。 这种混合方法提供了精确的上下文感知结果，完全不依赖于直接的关键字匹配。
 
-每个结果都包含资源名称以及关键资源元数据，例如资源路径、创建者、创建日期、标题、描述、格式、上次修改时间、上次修改日期、文件大小、维度、[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)和相关标记。 如果资产处于已批准状态，则结果还包括具有OpenAPI URL [的](/help/assets/dynamic-media-open-apis-overview.md)Dynamic Media。
+每个结果都显示为资源卡片，其中显示了资源名称、预览和关键元数据，例如描述和格式。 您可以单击信息卡上的信息图标以查看其他资源属性。
 
-您可以单击资源路径以无缝导航到AEM中的资源位置。
+使用&#x200B;**显示表**&#x200B;选项以表格格式显示结果。 单击&#x200B;**显示所有结果**&#x200B;可在右窗格中查看检索到20个资源的完整集合。
 
-![使用内容发现代理搜索资源](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+每个结果还包括关键资源元数据，例如资源路径、大小、创建日期和创建者、修改日期以及修改资源的用户、格式和描述。 如果资产处于已批准状态，则结果还包括具有OpenAPI URL ](/help/assets/dynamic-media-open-apis-overview.md)的[Dynamic Media。 您可以单击资源路径以无缝导航到AEM中的资源位置。
+
+![使用内容发现代理搜索资源](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 您可以使用这些资产详细信息快速评估资产是否满足要求，而无需导航到每个资产来查看这些详细信息。
 
 >[!NOTE]
 >
->仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)字段。
+>仅当已发布资产并且您拥有有效的Dynamic Media许可证时，[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)字段才会显示在搜索结果中。 同样，仅当您具有有效的Dynamic Media许可证并且已为您的AEM as a Cloud Service实例启用了具有OpenAPI的Dynamic Media时，才会显示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)字段。
 
 ### 内容片段 {#discovery-agent-search-results-content-fragments}
 
