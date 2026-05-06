@@ -6,7 +6,8 @@ topic-tags: configuring
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ce0158b1f4d1a1cf9f6102a79c1ca29ee7edd3b5
+exl-id: 3aaa615f-d3bf-4d1a-9dff-b6e271f0e9a6
+source-git-commit: 3995e0090e1b0be1cbc430c3da7458b6ce867e09
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 0%
@@ -22,21 +23,22 @@ ht-degree: 0%
 
 AEM as a Cloud Service在运行时将[配置和代码视为不可变。](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) 这意味着所有配置都必须像在生产环境中代码一样进行部署。 对于生产实例，这可以确保传递质量关卡，并提供当前环境的稳定性和清晰度级别。
 
-但是，出于开发目的，通常需要进行OSGi配置更新和捆绑包更改来测试临时开发更改。 作为AEM as a Cloud Service SDK的一部分，Web控制台允许这样做。 有关Adobe Experience Manager as a Cloud Service的OSGi配置的更多信息，请参阅文档[为AEM as a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md)。
+但是，经常需要临时[OSGi配置](/help/implementing/deploying/configuring-osgi.md)更新和捆绑包更改来测试本地开发。 作为[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)的一部分，Web控制台将启用此类实时更新。
 
-可以从`http://<host>:<port>/system/console`访问该控制台
+在本地运行AEM as a Cloud Service后，可以从`http://<host>:<port>/system/console`访问该控制台。
 
-Web控制台提供了用于维护OSGi捆绑包的一系列屏幕，包括：
+Web控制台提供了用于维护OSGi捆绑包的一系列屏幕和选项，包括：
 
 * [配置](#configuration)：用于配置OSGi包，因此是配置AEM系统参数的基础机制
 * [包](#bundles)：用于安装包
 * [组件](#components)：用于控制AEM所需组件的状态
+* [生成OSGi配置](#generating-osgi-configurations)：用于以JSON格式自动生成OSGi配置
 
-所做的任何更改都将立即应用于正在运行的开发系统。 无需重新启动。
+所做的任何更改都将立即应用于正在运行的SDK。 无需重新启动。
 
-在Web控制台中，任何提及默认设置的描述都与Sling默认设置相关。 AEM有自己的默认值，因此默认设置可能与控制台中记录的那些值不同。
+在Web控制台中，任何提及默认设置的描述都与Sling默认设置相关。 AEM有自己的默认值，因此默认设置可能与控制台记录的有所不同。
 
-Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控制台](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)。 Apache Felix是社区努力实施OSGi R4服务平台，其中包括OSGi框架和标准服务。
+Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控制台。](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html) Apache Felix是社区努力实施OSGi R4服务平台，其中包括OSGi框架和标准服务。
 
 >[!NOTE]
 >
@@ -55,14 +57,14 @@ Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控
 
 此时将显示配置列表：
 
-![configMgr](assets/config-mgr.png)
+![配置屏幕](assets/configuration.png)
 
-此屏幕上的下拉列表中提供了两种类型的配置：
+此屏幕上的列表中提供了两种类型的配置：
 
 * **配置**&#x200B;允许您更新现有配置。 它们具有永久标识(PID)，可以是：
    * 标准且是AEM的组成部分 — 如果删除这些值，则将返回到默认设置，则此为必需字段。
    * 从工厂配置创建的实例 — 这些实例由用户创建，删除将删除实例。
-* **工厂配置**&#x200B;允许您创建所需功能对象的实例。 该标识将分配给永久标识，然后列在配置下拉列表中。
+* **工厂配置**&#x200B;允许您创建所需功能对象的实例。 该标识将分配给永久标识，然后列在配置列表中。
 
 从列表中选择任何条目将显示与该配置相关的参数：
 
@@ -82,13 +84,13 @@ Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控
 
 >[!TIP]
 >
->有关更多详细信息，请参阅使用Web控制台[OSGi配置](/help/implementing/deploying/configuring-osgi.md)。
+>有关OSGi配置的更多详细信息，请参阅[为Adobe Experience Manager as a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md)。
 
 ## 包 {#bundles}
 
 **包**&#x200B;屏幕用于安装AEM所需的OSGi包。 可通过以下任一方法访问屏幕：
 
-* 下拉菜单： **OSGi -> Bundels**
+* 下拉菜单： **OSGi ->包**
 * URL： `http://<host>:<port>/system/console/bundles`
 
 此时将显示捆绑包列表：
@@ -117,25 +119,24 @@ Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控
 通过&#x200B;**组件**&#x200B;屏幕，您可以启用和禁用组件。 可以通过以下任一方式访问该区域：
 
 * 下拉菜单： **主 — >组件**
-
 * URL： `http://<host>:<port>/system/console/components`
 
-此时将显示组件列表。 您可以使用各种图标来启用、禁用或（在适当时）打开特定组件的配置详细信息。
+此时将显示组件列表。 每行都有图标可用来启用、禁用或（在适当时）打开特定组件的配置详细信息。
 
 ![组件](assets/components.png)
 
 单击特定组件的名称可显示有关其状态的详细信息。 在此处，您还可以启用、禁用或重新加载组件。
 
-![组件详细信息](assets/component-detail.png)
+![组件详细信息](assets/component-details.png)
 
 >[!NOTE]
 >
->启用或禁用组件仅在SDK重新启动之前适用。
+>启用或禁用组件仅适用于SDK重新启动之前。
 >
 >开始状态在组件描述符中定义，组件描述符在开发期间生成，并在包创建时存储在包中。
 
 ## 生成OSGi配置 {#generating-osgi-configs}
 
-Web控制台可用于配置OSGi组件，并将OSGi配置导出为JSON。 这对于配置AEM提供的OSGi组件非常有用，在AEM项目中定义OSGi配置的开发人员可能无法很好地了解这些组件的OSGi属性及其值格式。
+Web控制台可用于配置OSGi组件并将OSGi配置导出为JSON。 这对于配置AEM提供的OSGi组件非常有用，当您在AEM项目中定义OSGi配置时，您可能不熟悉这些组件的OSGi属性和值格式。
 
 有关详细信息，请参阅文档[为Adobe Experience Manager as a Cloud Service配置OSGi](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console)。
