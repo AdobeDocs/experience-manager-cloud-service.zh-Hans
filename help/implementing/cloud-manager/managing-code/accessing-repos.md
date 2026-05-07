@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 96%
@@ -28,7 +28,7 @@ ht-degree: 96%
 * Cloud Manager Git 存储库的 URL。
 * 预构建的 Git 命令，用于快速将远程添加到 Git 存储库并推送代码。
 
-![存储库信息窗口](assets/repository-info.png)
+  ![存储库信息窗口](assets/repository-info.png)
 
 Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问信息。
 
@@ -66,4 +66,4 @@ Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问
 
 您可以随时撤销访问密码。
 
-为此，[为此请求创建支持工单](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&support-tab=home#support)。 该工单会得到优先处理，并且通常会在一天内撤销。
+为此，[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)。 该工单会得到优先处理，并且通常会在一天内撤销。
