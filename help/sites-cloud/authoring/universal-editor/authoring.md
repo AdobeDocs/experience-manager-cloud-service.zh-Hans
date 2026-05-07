@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '3101'
+source-wordcount: '3159'
 ht-degree: 18%
 
 ---
@@ -237,7 +237,7 @@ ht-degree: 18%
    * 在属性面板中选择&#x200B;**删除**&#x200B;图标。
 
      ![删除组件](assets/ue-delete-component.png)
-   * 在上下文菜单中选择&#x200B;**删除**&#x200B;选项。
+   * 在上下文菜单中选择&#x200B;**删除**选项。
      ![从上下文菜单删除](assets/delete-from-context-menu.png)
 
 选定的组件已删除。
@@ -248,7 +248,18 @@ ht-degree: 18%
 
 ### 重新排序和移动组件 {#reordering-components}
 
-您可以使用上下文菜单或内容树来移动和重新排序组件。
+您可以使用拖放、上下文菜单或内容树来移动和重新排序组件。
+
+>[!NOTE]
+>
+>如果目标容器[组件筛选器](/help/implementing/universal-editor/filtering.md)允许所选组件，则组件只能在容器之间移动。
+
+#### 使用拖放功能移动组件 {#drag-and-drop-move}
+
+1. 单击并拖动要移动的组件。
+   * 当您将鼠标悬停在目标上时，编辑器将显示组件在水平蓝线中的放置位置。
+     ![拖放组件以移动它](assets/drag-and-drop-component-move.png)
+1. 放入组件以对其进行重新定位。
 
 #### 使用上下文菜单移动组件 {#move-context-menu}
 
@@ -271,7 +282,7 @@ ht-degree: 18%
 >
 >上下文菜单选项只能移动其容器中的组件。 如果您要在容器之间移动组件，请[使用内容树。](#reorder-content-tree)
 
-#### 使用内容树对组件重新排序 {#reorder-content-tree}
+#### 使用内容树移动组件 {#reorder-content-tree}
 
 1. 如果尚未处于[内容树模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，请切换到它。
 1. 在内容树或编辑器中选择一个容器组件。
@@ -283,10 +294,6 @@ ht-degree: 18%
 1. 拖动的组件在内容树中呈灰显状态，而插入点以蓝线表示。 释放组件以将其放置在新位置。
 
 组件在内容树和编辑器中都会重新排序。
-
->[!NOTE]
->
->如果目标容器[组件筛选器](/help/implementing/universal-editor/filtering.md)允许所选组件，则组件只能在容器之间移动。
 
 ### “撤消”和“重做” {#undo-redo}
 
@@ -315,7 +322,7 @@ ht-degree: 18%
 1. 然后，您可以：
    * 单击[属性面板中的&#x200B;**复制**&#x200B;图标。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![从面板复制](assets/copy-from-panel.png)
-   * 在上下文菜单中选择&#x200B;**复制**&#x200B;选项。
+   * 在上下文菜单中选择&#x200B;**复制**选项。
      ![从上下文菜单复制](assets/copy-from-context-menu.png)
 1. 选择要将复制的组件粘贴到&#x200B;_之后的组件_。
 1. 然后，您可以：
@@ -474,7 +481,7 @@ ht-degree: 18%
 要了解有关通用编辑器的更多技术细节，请参阅这些开发人员文档。
 
 * [通用编辑器简介](/help/implementing/universal-editor/introduction.md) — 了解通用编辑器如何启用在任何实施中编辑任何内容的任何方面，以便您能够提供卓越的体验并提高内容速度。
-* [AEM Universal Editor 快速入门 &#x200B;](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
+* [AEM Universal Editor 快速入门 ](/help/implementing/universal-editor/getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](/help/implementing/universal-editor/architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。

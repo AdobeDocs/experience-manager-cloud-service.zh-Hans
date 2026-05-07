@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2026.04.30发行说明
-description: 这些是通用编辑器2026.04.30版的发行说明。
+title: 通用编辑器2026.05.07发行说明
+description: 这些是通用编辑器2026.05.07版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a6293278e50507943cd3f1055bc7c7f8dc479613
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 22%
+source-wordcount: '188'
+ht-degree: 12%
 
 ---
 
 
-# 通用编辑器2026.04.30发行说明 {#release-notes}
+# 通用编辑器2026.05.07发行说明 {#release-notes}
 
-这些是通用编辑器2026年4月30日版本的发行说明。
+这些是通用编辑器2026年5月7日版本的发行说明。
 
 >[!TIP]
 >
@@ -24,6 +24,15 @@ ht-degree: 22%
 >
 >有关Adobe Experience Manager as a Cloud Service的最新发行说明，请参阅[此页面。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## 改进功能 {#other-improvements}
+## 新增功能 {#what-is-new}
 
-* 已修复以下问题：[可编辑项的徽章](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)在某些情况下遮蔽了它后面的项。
+* 您现在可以[在编辑器中拖放组件以移动它们。](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
+* 引入了Service Worker以减少通用编辑器UI和后端系统之间的延迟。
+* 内容片段（AEM 6.5、OpenAPI和GraphQL）的所有适配器现在包括用于资源选择器的筛选器，以确保一致性和用户只能选择允许的资源。
+* `content:patch`意图现已提供。
+* 为了帮助实现无障碍功能，已定义创作流程和地标。
+
+## 其他即将推出的改进 {#other-improvements}
+
+* `assignImageDimensionFields`中不必要的类型声明已删除。
+* 修复了`add`操作的服务器端处理迭代字符串值，将其视为对象而不是修补程序的问题。
