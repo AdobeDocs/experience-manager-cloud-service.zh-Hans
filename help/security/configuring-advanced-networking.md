@@ -4,27 +4,27 @@ description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: bfb39bd630c451b4649955af3c264bacefd1c477
+source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
 workflow-type: tm+mt
-source-wordcount: '5549'
-ht-degree: 99%
+source-wordcount: '5860'
+ht-degree: 90%
 
 ---
 
 
 # 为 AEM as a Cloud Service 配置高级联网功能 {#configuring-advanced-networking}
 
-本文介绍了 AEM as a Cloud Service 中提供的高级联网功能。这些功能包括自助服务和 API 配置 VPN、非标准端口和专用出口 IP 地址。
+本文介绍了 AEM as a Cloud Service 中提供的高级联网功能。 这些功能包括自助服务和 API 配置 VPN、非标准端口和专用出口 IP 地址。
 
-除了这些文档外，还有一系列教程，旨在引导您了解每个高级联网选项。请参阅[高级联网](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/advanced-networking)。
+除了这些文档外，还有一系列教程，旨在引导您了解每个高级联网选项。 请参阅[高级联网](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/advanced-networking)。
 
 >[!IMPORTANT]
 >
 >您可以通过 Cloud Manager UI 或使用 Cloud Manager API（例如 cURL）在 AEM as a Cloud Service 中配置高级网络。
 >
->本文主要讲解使用 UI 进行配置的方法。如果您希望通过 API 实现自动配置，请参阅[虚拟专用网络 (VPN) 教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/vpn)。
+>本文主要讲解使用 UI 进行配置的方法。 如果您希望通过 API 实现自动配置，请参阅[虚拟专用网络 (VPN) 教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/vpn)。
 >
->**使用 API 自动配置高级网络**
+>**使用API自动化高级联网**
 >要自动设置高级网络（例如创建 VPN），您可以使用 Cloud Manager API：
 >
 >```bash
@@ -55,11 +55,11 @@ AEM as a Cloud Service 提供以下高级网络选项：
 * [专用出口 IP 地址](#dedicated-egress-ip-address)：将 AEM as a Cloud Service 的流量配置为从唯一 IP 传出。
 * [虚拟专用网络（VPN）](#vpn)：如果您有 VPN，则保护您的基础架构与 AEM as a Cloud Service 之间的流量。
 
-本文详细描述了每个选项以及为什么您可能会使用它们，然后描述如何使用 Cloud Manager UI 和 API 配置它们。本文最后介绍了一些高级用例。
+本文详细描述了每个选项以及为什么您可能会使用它们，然后描述如何使用 Cloud Manager UI 和 API 配置它们。 本文最后介绍了一些高级用例。
 
 >[!CAUTION]
 >
->如果您已配置了旧版专用出口技术并希望配置这些高级网络选项之一，[请联系 Adobe 客户服务。](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager#home)
+>如果您已配置了旧版专用出口技术并希望配置这些高级网络选项之一，[请联系 Adobe 客户服务。](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)
 >
 >尝试使用传统出口技术配置高级网络可能会影响站点连接。
 
@@ -81,14 +81,14 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 使用高级网络功能需要两个步骤：
 
-1. 配置高级网络选项，无论是[灵活端口出口、](#flexible-port-egress) [专用出口 IP 地址](#dedicated-egress-ip-address)还是 [VPN，](#vpn)必须首先在程序级别完成。
+1. 配置高级网络选项，无论是[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)还是 [VPN，](#vpn)必须首先在程序级别完成。
 1. 要使用高级网络选项，必须[在环境级别启用。](#enabling)
 
 这两个步骤都可以使用 Cloud Manager UI 或 Cloud Manager API 来完成。
 
 * 使用 Cloud Manager UI 时，这意味着使用程序级别的向导创建高级网络配置，然后编辑您希望启用配置的每个环境。
 
-* 使用 Cloud Manager API 时，会在项目级别调用 `/networkInfrastructures` API 端点来声明所需的高级网络类型。随后调用每个环境的 `/advancedNetworking` 端点来启用基础设施，并配置特定于环境的参数。
+* 使用 Cloud Manager API 时，会在项目级别调用 `/networkInfrastructures` API 端点来声明所需的高级网络类型。 随后调用每个环境的 `/advancedNetworking` 端点来启用基础设施，并配置特定于环境的参数。
 
 ## 灵活端口出口 {#flexible-port-egress}
 
@@ -96,11 +96,11 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 >[!TIP]
 >
->在灵活端口出口和专用出口 IP 地址之间做出选择时，如果不需要特定的 IP 地址，则建议您选择灵活的端口出口。原因是 Adobe 可以优化灵活端口出口流量的性能。
+>在灵活端口出口和专用出口 IP 地址之间做出选择时，如果不需要特定的 IP 地址，则建议您选择灵活的端口出口。 原因是 Adobe 可以优化灵活端口出口流量的性能。
 
 >[!NOTE]
 >
->创建后，灵活端口出口基础架构类型将无法编辑。更改配置值的唯一方法是删除并重新创建它们。
+>创建后，灵活端口出口基础架构类型将无法编辑。 更改配置值的唯一方法是删除并重新创建它们。
 
 ### UI 配置 {#configuring-flexible-port-egress-provision-ui}
 
@@ -108,7 +108,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
+1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
    ![添加网络基础架构](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -117,13 +117,13 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
    ![配置灵活端口出口](assets/advanced-networking-ui-flexible-port-egress.png)
 
-1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。单击&#x200B;**保存**&#x200B;以创建基础架构。
+1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。 单击&#x200B;**保存**&#x200B;以创建基础架构。
 
    ![确认灵活端口出口配置](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
-侧面板中的&#x200B;**网络基础设施**&#x200B;标头下方会出现一条新记录。它包括基础设施类型、状态、区域以及启用的环境等详细信息。
+侧面板中的&#x200B;**网络基础设施**&#x200B;标头下方会出现一条新记录。 它包括基础设施类型、状态、区域以及启用的环境等详细信息。
 
-![网络基础架构下的新条目](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![网络基础结构下的新条目](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -131,9 +131,9 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 ### API 配置 {#configuring-flexible-port-egress-provision-api}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。 端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
 
-在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础架构 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的调用将显示状态&#x200B;**“就绪”**。
+在调用后，通常需要大约 15 分钟来预配联网基础设施。 对 Cloud Manager 的[网络基础架构 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的调用将显示状态&#x200B;**“就绪”**。
 
 >[!TIP]
 >
@@ -162,7 +162,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 如果使用非标准 Java™ 联网库，请使用以上属性为所有流量配置代理。
 
-如果非 http/https 流量流经 `portForwards` 参数中声明的端口，应该引用名为 `AEM_PROXY_HOST` 的属性以及映射的端口。例如：
+目标通过`portForwards`参数中声明的端口的非HTTP/S流量应该引用名为`AEM_PROXY_HOST`的属性，以及映射的端口。 例如：
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -190,7 +190,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>非标准流量（在 80 或 443 以外的端口上），这些流量流经使用以下环境变体和代理端口号配置的 http 代理。不要在 Cloud Manager API 调用的 portForwards 参数中声明目标端口：<br><ul>
+    <td>非标准流量（在 80 或 443 以外的端口上），这些流量流经使用以下环境变体和代理端口号配置的 http 代理。 不要在 Cloud Manager API 调用的 portForwards 参数中声明目标端口：<br><ul>
      <li>AEM_PROXY_HOST（在 AEM 版本 6094 之前，默认为“proxy.tunnel”）</li>
      <li>AEM_HTTPS_PROXY_PORT（在 AEM 版本 6094 之前，默认为端口 3128）</li>
     </ul>
@@ -242,27 +242,27 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## 专用出口 IP 地址 {#dedicated-egress-ip-address}
 
-在与 SaaS 供应商（例如 CRM 供应商）集成，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成时，专用 IP 地址可以增强安全性。通过将专用 IP 地址添加到允许列表，可以确保只有来自 AEM Cloud Service 的流量允许流向外部服务。这是来自任何其他允许 IP 的流量以外的另一种方法。
+在与 SaaS 供应商（例如 CRM 供应商）集成，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成时，专用 IP 地址可以增强安全性。 通过将专用 IP 地址添加到允许列表，可以确保只有来自 AEM Cloud Service 的流量允许流向外部服务。 这是来自任何其他允许 IP 的流量以外的另一种方法。
 
 相同的专用 IP 适用于程序中的所有环境，并且适用于作者和发布服务。
 
-未启用专用 IP 地址功能时，来自 AEM as a Cloud Service 的流量会流经共享的一组 IP。AEM as a Cloud Service 的其他客户会使用这些 IP。
+未启用专用 IP 地址功能时，来自 AEM as a Cloud Service 的流量会流经共享的一组 IP。 AEM as a Cloud Service 的其他客户会使用这些 IP。
 
-专用出口 IP 地址的配置方法与[灵活端口出口](#flexible-port-egress)相同。主要差别在于，配置后，流量始终从专用的唯一 IP 地址传出。要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。该 IP 地址不应改变，但如果必须改变，则会提供提前通知。
+专用出口 IP 地址的配置方法与[灵活端口出口](#flexible-port-egress)相同。 主要区别在于，配置后，流量始终从专用的唯一IP传出。 要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。 该 IP 地址不应改变，但如果必须改变，则会提供提前通知。
 
 >[!TIP]
 >
->在灵活端口出口和专用出口 IP 地址之间做出选择时，如果不需要特定的 IP 地址，则选择灵活的端口出口。原因是 Adobe 可以优化灵活端口出口流量的性能。
+>在灵活端口出口和专用出口 IP 地址之间做出选择时，如果不需要特定的 IP 地址，则选择灵活的端口出口。 原因是 Adobe 可以优化灵活端口出口流量的性能。
 
 >[!NOTE]
 >
 >如果您在 2021.09.30 之前（即 2021 年 9 月版本之前）配置了专用出口 IP，则您的专用出口 IP 功能仅支持 HTTP 和 HTTPS 端口。
 >
->这一结果包括 HTTP/1.1 以及加密的 HTTP/2。此外，专用出口端点可以分别通过端口 80/443 上的 HTTP/HTTPS 与任何目标通信。
+>这一结果包括 HTTP/1.1 以及加密的 HTTP/2。 此外，专用出口端点可以分别通过端口 80/443 上的 HTTP/HTTPS 与任何目标通信。
 
 >[!NOTE]
 >
->创建后，专用出口 IP 地址基础设施类型将无法编辑。更改配置值的唯一方法是删除并重新创建它们。
+>创建后，专用出口 IP 地址基础设施类型将无法编辑。 更改配置值的唯一方法是删除并重新创建它们。
 
 ### UI 配置 {#configuring-dedicated-egress-provision-ui}
 
@@ -270,7 +270,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
+1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
    ![添加网络基础架构](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -279,13 +279,13 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
    ![配置专用出口 IP 地址](assets/advanced-networking-ui-dedicated-egress.png)
 
-1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。单击&#x200B;**保存**&#x200B;以创建基础架构。
+1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。 单击&#x200B;**保存**&#x200B;以创建基础架构。
 
    ![确认灵活端口出口配置](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-侧面板中的&#x200B;**网络基础设施**&#x200B;标头下方会出现一条新记录。它包括基础设施类型、状态、区域以及启用的环境等详细信息。
+新记录显示在侧面板中的&#x200B;**网络基础架构**&#x200B;标题下方。 它包括基础设施类型、状态、区域以及启用的环境等详细信息。
 
-![网络基础架构下的新条目](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![网络基础结构下的新条目](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -293,9 +293,9 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### API 配置 {#configuring-dedicated-egress-provision-api}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `dedicatedEgressIp` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `dedicatedEgressIp` 值。 端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
 
-在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础架构 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的调用将显示状态&#x200B;**“就绪”**。
+在调用后，通常需要大约 15 分钟来预配联网基础设施。 对 Cloud Manager 的[网络基础架构 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的调用将显示状态&#x200B;**“就绪”**。
 
 >[!TIP]
 >
@@ -303,9 +303,9 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 流量路由 {#dedicated-egress-ip-traffic-routing}
 
-Http 或 https 流量将通过预配置的代理，前提是它们使用标准 Java™ 系统属性进行代理配置。
+HTTP或HTTPS流量流经预配置的代理，前提是它们使用标准Java™系统属性进行代理配置。
 
-如果非 http/https 流量流经 `portForwards` 参数中声明的端口，应该引用名为 `AEM_PROXY_HOST` 的属性以及映射的端口。例如：
+如果非 http/https 流量流经 `portForwards` 参数中声明的端口，应该引用名为 `AEM_PROXY_HOST` 的属性以及映射的端口。 例如：
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -383,7 +383,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ### 功能用法 {#feature-usage}
 
-该功能与产生传出流量的 Java™ 代码或库兼容，前提是它们的代理配置使用了标准 Java™ 系统属性。实际上，该方法应包括大多数常用库。
+该功能与产生传出流量的 Java™ 代码或库兼容，前提是它们的代理配置使用了标准 Java™ 系统属性。 实际上，该方法应包括大多数常用库。
 
 下面是代码示例：
 
@@ -403,9 +403,9 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 一些库需要明确配置，以便为代理配置使用标准 Java™ 系统属性。
 
-使用 Apache HttpClient 的示例，其中需要明确调用 
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 或使用
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem())：
+使用Apache HttpClient的示例，其中需要明确调用
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)或使用
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
 ```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -423,13 +423,13 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 调试注意事项 {#debugging-considerations}
 
-为了验证该流量是否确实在预期的专用 IP 地址上传出，请查看目标服务中的日志（如果可用）。否则，调用 [https://ifconfig.me/ip](https://ifconfig.me/ip) 等调试服务可能会有帮助，调试服务会返回调用 IP 地址。
+为了验证该流量是否确实在预期的专用 IP 地址上传出，请查看目标服务中的日志（如果可用）。 否则，调用 [https://ifconfig.me/ip](https://ifconfig.me/ip) 等调试服务可能会有帮助，调试服务会返回调用 IP 地址。
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
-VPN 允许从创作、发布或预览实例连接到内部部署基础架构或数据中心。例如，该功能对于保护数据库访问权限很有用。它还允许连接到 SaaS 供应商，例如支持 VPN 的 CRM 供应商。
+VPN 允许从创作、发布或预览实例连接到内部部署基础架构或数据中心。 例如，该功能对于保护数据库访问权限很有用。 它还允许连接到 SaaS 供应商，例如支持 VPN 的 CRM 供应商。
 
-支持大部分采用 IPSec 技术的 VPN 设备。请参阅[此设备列表](https://learn.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)中 **RouteBased 配置说明**&#x200B;列中的信息。按表中所述配置设备。
+支持大部分采用 IPSec 技术的 VPN 设备。 请参阅[此设备列表](https://learn.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)中 **RouteBased 配置说明**&#x200B;列中的信息。 按表中所述配置设备。
 
 >[!NOTE]
 >
@@ -444,7 +444,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
+1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
    ![添加网络基础架构](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -476,21 +476,21 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
    ![添加 VPN 连接](assets/advanced-networking-ui-vpn-adding-connection.png)
 
-1. 对话框关闭，您返回到向导的&#x200B;**连接**&#x200B;选项卡。单击&#x200B;**继续**。
+1. 对话框关闭，您返回到向导的&#x200B;**连接**&#x200B;选项卡。 单击&#x200B;**继续**。
 
    ![添加了 VPN 连接](assets/advanced-networking-ui-vpn-connection-added.png)
 
-1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。单击&#x200B;**保存**&#x200B;以创建基础架构。
+1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。 单击&#x200B;**保存**&#x200B;以创建基础架构。
 
    ![确认灵活端口出口配置](assets/advanced-networking-ui-vpn-confirm.png)
 
-侧面板中的&#x200B;**网络基础设施**&#x200B;标头下方会出现一条新记录。它包括基础设施类型、状态、区域以及启用的环境等详细信息。
+新记录显示在侧面板中的&#x200B;**网络基础架构**&#x200B;标题下方。 它包括基础设施类型、状态、区域以及启用的环境等详细信息。
 
 ### API 配置 {#configuring-vpn-api}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点。它会传递配置信息的负载。该信息包括 `kind` 参数的 **vpn** 值、区域、地址空间（CIDR 列表；请注意，该值稍后无法修改）、DNS 解析器（用于解析网络中的名称）。它还包括 VPN 连接信息，例如网关配置、共享 VPN 密钥和 IP 安全性策略。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点。 它会传递配置信息的负载。 该信息包括 `kind` 参数的 **vpn** 值、区域、地址空间（CIDR 列表；请注意，该值稍后无法修改）、DNS 解析器（用于解析网络中的名称）。 它还包括 VPN 连接信息，例如网关配置、共享 VPN 密钥和 IP 安全性策略。 端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
 
-在调用后，通常需要 45 到 60 分钟才能提供网络基础设施。可以调用 API 中的 GET 方法，以返回状态，该状态最终会从 `creating` 翻转到 `ready`。请参考 API 文档来了解所有状态。
+在调用后，通常需要 45 到 60 分钟才能提供网络基础设施。 可以调用 API 中的 GET 方法，以返回状态，该状态最终会从 `creating` 翻转到 `ready`。 请参考 API 文档来了解所有状态。
 
 >[!TIP]
 >
@@ -587,7 +587,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 ### 对配置非常有用的域 {#vpn-useful-domains-for-configuration}
 
-下图直观地展示了在配置和开发时非常有用的一组域和关联 IP。该图下方的表进一步说明了这些域和 IP。
+下图直观地展示了在配置和开发时非常有用的一组域和关联 IP。 该图下方的表进一步说明了这些域和 IP。
 
 ![VPN 域配置](/help/security/assets/AdvancedNetworking.jpg)
 
@@ -605,16 +605,16 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
-    <td>AEM 侧 VPN 网关的 IP。您的网络工程团队可以使用此 IP 来仅允许源自特定 IP 地址的 VPN 连接进入您的 VPN 网关。 </td>
+    <td>AEM 侧 VPN 网关的 IP。 您的网络工程团队可以使用此 IP 来仅允许源自特定 IP 地址的 VPN 连接进入您的 VPN 网关。 </td>
   </tr>
 </tbody>
 </table>
 
 ## 在环境中启用高级网络配置 {#enabling}
 
-一旦为程序配置了高级网络选项，无论是[灵活的端口出口，](#flexible-port-egress) [专用出口 IP 地址，](#dedicated-egress-ip-address)还是 [VPN](#vpn)，要使用这些选项，必须在环境级别启用。
+一旦为程序配置了高级网络选项，无论是[灵活的端口出口，](#flexible-port-egress)[专用出口 IP 地址，](#dedicated-egress-ip-address)还是 [VPN](#vpn)，要使用这些选项，必须在环境级别启用。
 
-当您为环境启用高级网络配置时，您也可以启用可选的端口转发和非代理主机。可以根据各个环境来配置参数以提供灵活性。
+当您为环境启用高级网络配置时，您也可以启用可选的端口转发和非代理主机。 可以根据各个环境来配置参数以提供灵活性。
 
 * **端口转发**——应为除 80/443 之外的任何目标端口声明端口转发规则，但前提是不使用 http 或 https 协议。
    * 端口转发规则是通过指定目标主机集（名称或 IP 和端口）来定义的。
@@ -622,8 +622,8 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
    * 对于每个目标主机，您必须将指向的目标端口映射到 30000 到 30999 之间的端口。
    * 端口转发规则适用于所有高级网络类型。
 
-* **非代理主机**：非代理主机允许您声明一组主机，这些主机应通过共享的 IPS 地址范围而不是专用的 IP 进行路由。
-   * 该方法可能很有用，因为通过共享 IPS 出口的流量可以进一步优化。
+* **非代理主机** — 非代理主机允许您声明一组应该通过共享IP地址范围而不是专用IP进行路由的主机。
+   * 此方法可能很有用，因为通过共享IP地址传出的流量可能会得到进一步优化。
    * 非代理主机仅适用于专用出口 IP 地址和 VPN 高级网络类型。
 
 >[!NOTE]
@@ -636,22 +636,22 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击&#x200B;**启用网络基础架构**。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。 然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击&#x200B;**启用网络基础架构**。
 
    ![选择环境以启用高级网络](assets/advanced-networking-ui-enable-environments.png)
 
 1. **配置高级网络**&#x200B;对话框打开。
 
-1. 在&#x200B;**非代理主机**&#x200B;选项卡上，对于专用出口 IP 地址和 VPN，您可以选择定义一组主机。这些定义的主机应该通过共享的 IP 地址范围（而不是专用的 IP）进行路由，其方法是在&#x200B;**非代理主机**&#x200B;字段中提供主机名，然后单击&#x200B;**添加**。
+1. 在&#x200B;**非代理主机**&#x200B;选项卡上，对于专用出口 IP 地址和 VPN，您可以选择定义一组主机。 应通过在&#x200B;**非代理主机**&#x200B;字段中提供主机名并单击&#x200B;**添加**，通过共享IP地址范围而不是专用IP来路由这些定义的主机。
 
    * 该主机将添加到选项卡上的主机列表中。
    * 如果要添加多个主机，请重复此步骤。
-   * 如果想要删除主机，请单击该行右侧的 X。
+   * 如果要删除主机，请单击行右侧的X。
    * 此选项卡不适用于灵活端口出口配置。
 
    ![添加非代理主机](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. 在&#x200B;**端口转发**&#x200B;选项卡上，如果不使用 HTTP 或 HTTPS，您可以选择为除 80/443 之外的任何目标端口定义端口转发规则。提供&#x200B;**名称**、**原始端口**&#x200B;和&#x200B;**目标端口**，然后单击&#x200B;**添加**。
+1. 在&#x200B;**端口转发**&#x200B;选项卡上，如果不使用 HTTP 或 HTTPS，您可以选择为除 80/443 之外的任何目标端口定义端口转发规则。 提供&#x200B;**名称**、**原始端口**&#x200B;和&#x200B;**目标端口**，然后单击&#x200B;**添加**。
 
    * 该规则将添加到选项卡上的规则列表中。
    * 如果要添加多个规则，请重复此步骤。
@@ -661,7 +661,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 1. 单击对话框中的&#x200B;**保存**&#x200B;将配置应用到环境。
 
-高级网络配置将应用于所选环境。返回&#x200B;**环境**&#x200B;选项卡，您可以查看应用于所选环境的配置的详细信息及其状态。
+高级网络配置将应用于所选环境。 返回&#x200B;**环境**&#x200B;选项卡，您可以查看应用于所选环境的配置的详细信息及其状态。
 
 ![配置了高级网络的环境](assets/advanced-networking-ui-configured-environment.png)
 
@@ -669,11 +669,11 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 要为环境启用高级网络配置，必须为每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点。
 
-API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`。大约 10 分钟后，对 Cloud Manager 环境 GET 端点的调用显示的状态为 `ready`，表明已应用对环境的更新。
+API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`。 大约 10 分钟后，对 Cloud Manager 环境 GET 端点的调用显示的状态为 `ready`，表明已应用对环境的更新。
 
 每个环境的端口转发规则可以通过调用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端点进行更新，包括完整的配置参数集而不是其子集。
 
-专用出口 IP 地址和 VPN 高级网络类型支持`nonProxyHosts`参数。这项支持使您可以声明一组主机，这些主机应通过共享的 IP 地址范围而不是专用的 IP 进行路由。`nonProxyHost` URL 可能会遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
+专用出口 IP 地址和 VPN 高级网络类型支持`nonProxyHosts`参数。 这种支持允许您声明一组主机，这些主机应通过共享IP地址范围而不是专用IP进行路由。 `nonProxyHost` URL 可能会遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
 
 即使没有环境流量路由规则（托管或绕过），仍必须调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`，只不过在调用时使用空负载。
 
@@ -683,7 +683,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 ## 编辑和删除环境中的高级网络配置 {#editing-deleting-environments}
 
- [为环境启用高级网络配置后，](#enabling) 您可以更新这些配置的详细信息或将其删除。
+[为环境启用高级网络配置后，](#enabling) 您可以更新这些配置的详细信息或将其删除。
 
 >[!NOTE]
 >
@@ -695,7 +695,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击省略号按钮。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。 然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击省略号按钮。
 
    ![在程序级别选择编辑或删除高级网络](assets/advanced-networking-ui-edit-delete.png)
 
@@ -716,7 +716,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 ## 编辑和删除程序的网络基础架构 {#editing-deleting-program}
 
-一旦为程序创建了网络基础架构，就只能编辑有限的属性。如果您不需要它，您可以删除整个程序的高级网络基础架构。
+一旦为程序创建了网络基础架构，就只能编辑有限的属性。 如果您不再需要它，可以删除整个程序的高级网络基础架构。
 
 >[!NOTE]
 >
@@ -727,41 +727,45 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 >* 创建后，只能编辑 VPN 高级网络基础架构类型，并且只能编辑有限的字段。
 >* 出于安全原因，在编辑高级 VPN 网络基础架构时，必须始终提供&#x200B;**共享密钥**，即使您没有编辑密钥本身。
 
-### 使用 UI 进行编辑和删除 {#delete-ui}
+### 使用UI编辑、测试或删除 {#delete-ui}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
 1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;选项卡。
-1. 在左侧面板中，点击&#x200B;**网络基础设施**。
-1. 然后单击要删除的基础架构旁边的![“更多”图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在左侧面板中，单击&#x200B;**网络基础架构**。
+1. 单击要编辑、测试或删除的基础结构旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
    ![在程序级别选择编辑或删除高级网络](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. 点击&#x200B;**编辑**&#x200B;或&#x200B;**删除**。
+1. 单击&#x200B;**编辑**、**测试**&#x200B;或&#x200B;**删除**。
 
 1. 执行下列操作之一：
 
-   * 如果选择了&#x200B;**编辑**，就会打开&#x200B;**编辑网络基础架构**&#x200B;向导。按照创建基础架构时所述的步骤根据需要进行编辑。
+   * 如果选择了&#x200B;**编辑**，就会打开&#x200B;**编辑网络基础架构**&#x200B;向导。 按照创建基础架构时所述的步骤根据需要进行编辑。
+
+   * 如果您选择&#x200B;**测试**&#x200B;以在环境级别启用连接之前对其进行自测试，请在&#x200B;**最近测试**&#x200B;下拉菜单中，选择一个条目以重新加载其配置，然后单击&#x200B;**测试**。 如果未运行任何测试，则菜单显示&#x200B;*没有最近的测试*。
+
+     或者，在&#x200B;**主机**&#x200B;文本字段中，输入所需的目标主机名。 然后，在&#x200B;**端口**&#x200B;下拉菜单中，选择所需的相应端口。 单击&#x200B;**测试**。 结果显示在对话框的&#x200B;**测试结果**&#x200B;部分中。
 
    * 如果选择了&#x200B;**删除**，请在&#x200B;**删除网络配置**&#x200B;对话框中使用&#x200B;**删除**&#x200B;确认删除或使用&#x200B;**取消**&#x200B;中止。
 
 更改将反映在&#x200B;**环境**&#x200B;选项卡上。
 
-### 使用 API 进行编辑和删除 {#delete-api}
+### 使用API编辑和删除 {#delete-api}
 
 要&#x200B;**删除**&#x200B;项目的网络基础架构，请调用 `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`。
 
 ## 更改程序的高级网络基础架构类型 {#changing-program}
 
-一次只能为一个项目配置一种类型的高级网络基础设施。高级网络基础设施必须是灵活端口出口、专用出口 IP 地址或 VPN。
+一次只能为一个项目配置一种类型的高级网络基础设施。 高级网络基础设施必须是灵活端口出口、专用出口 IP 地址或 VPN。
 
-如果您决定需要另一种高级网络基础架构类型而不是已配置的网络基础架构类型，则删除现有的网络基础架构类型，并再创建一个网络基础架构类型。执行以下操作：
+如果您决定需要与已配置的网络基础架构类型不同的高级网络基础架构类型，请删除现有网络基础架构，然后创建另一个网络基础架构。 执行以下操作：
 
 1. [删除所有环境中的高级网络。](#editing-deleting-environments)
 1. [删除高级网络基础架构。](#editing-deleting-program)
-1. 创建您现在需要的高级网络基础架构类型，[灵活端口出口、](#flexible-port-egress) [专用出口 IP 地址](#dedicated-egress-ip-address)或 [VPN。](#vpn)
+1. 创建您现在需要的高级网络基础架构类型，[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)或 [VPN。](#vpn)
 1. [在环境级别启用高级网络。](#enabling)
 
 >[!WARNING]
@@ -769,48 +773,48 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 > 此过程会导致在删除和重新创建之间停用高级网络服务。
 > 如果停机会对业务产生重大影响，请联系客户支持以寻求帮助，并说明已创建的内容和更改的原因。
 
-## 其他发布区域的高级网络配置 {#advanced-networking-configuration-for-additional-publish-regions}
+## 其他发布区域的高级联网配置 {#advanced-networking-configuration-for-additional-publish-regions}
 
-向已配置高级网络的环境中添加附加区域时，来自附加发布区域的流量将遵循现有规则。默认情况下，匹配的流量将会通过主要区域进行路由。但是，如果主要区域变得不可用，在附加区域中未启用高级网络时，高级网络流量会被丢弃。如果您希望在其中一个区域发生中断时优化延迟并提高可用性，则有必要为附加发布区域启用高级网络。以下部分描述了两种不同的场景。
+向已配置高级网络的环境中添加附加区域时，来自附加发布区域的流量将遵循现有规则。 默认情况下，匹配的流量将会通过主要区域进行路由。 但是，如果主要区域变得不可用，在附加区域中未启用高级网络时，高级网络流量会被丢弃。 如果您希望在其中一个区域发生中断时优化延迟并提高可用性，则有必要为附加发布区域启用高级网络。 以下部分描述了两种不同的场景。
 
 >[!NOTE]
 >
 >所有区域共享[环境高级网络配置](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)，因此无法根据流量流出的区域将流量路由到不同的目标。
 
-### 专用出口 IP 地址 {#additional-publish-regions-dedicated-egress}
+### 专用出口IP地址 {#additional-publish-regions-dedicated-egress}
 
 #### 高级网络已在主要区域启用 {#already-enabled}
 
 如果已在主要区域启用高级网络配置，请执行以下步骤：
 
-1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，请暂时禁用该基础设施中的任何拒绝规则。如果您跳过此步骤，您的基础设施将会暂时拒绝来自新区域的 IP 地址的请求。如果您使用完全限定域名 (FQDN)（例如 `p1234.external.adobeaemcloud.com`）锁定了基础架构，那么就不需要这个步骤。所有 AEM 区域都会从同一个 FQDN 出口高级网络流量。
-1. 如高级网络文档中所述，通过对 Cloud Manager Create Network Infrastructure API 的 POST 调用，为次要区域创建程序范围的网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性
-1. 如果您的基础设施需要由 IP 锁定以允许 AEM 流量，请添加与 `p1234.external.adobeaemcloud.com` 匹配的 IP。每个区域应该有一个匹配的 IP。
+1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，请暂时禁用该基础设施中的任何拒绝规则。 如果您跳过此步骤，您的基础设施将会暂时拒绝来自新区域的 IP 地址的请求。 如果您使用完全限定域名 (FQDN)（例如 `p1234.external.adobeaemcloud.com`）锁定了基础架构，那么就不需要这个步骤。 所有 AEM 区域都会从同一个 FQDN 出口高级网络流量。
+1. 如高级网络文档中所述，通过对 Cloud Manager Create Network Infrastructure API 的 POST 调用，为次要区域创建程序范围的网络基础设施。 负载的 JSON 配置相对于主要区域的唯一区别是区域属性
+1. 如果需要通过IP锁定基础结构以允许AEM流量，请添加与`p1234.external.adobeaemcloud.com`相对应的IP地址。 每个区域应该有一个匹配的 IP。
 
 #### 尚未在任何区域配置高级网络 {#not-yet-configured}
 
-该过程与前面的说明大体相似。但是，如果生产环境尚未启用高级网络，则有机会通过首先在暂存环境中启用配置来测试配置：
+该过程与前面的说明大体相似。 但是，如果生产环境尚未启用高级网络，则有机会通过首先在暂存环境中启用配置来测试配置：
 
-1. 通过 POST 调用 [Cloud Manager 创建网路基础设施 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 为所有区域创建网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性。
-1. 对于暂存环境，通过运行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 启用和配置环境范围内的高级网络。有关详细信息，请参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. 如有必要，最好通过 FQDN（例如 `p1234.external.adobeaemcloud.com`）锁定外部基础设施。您可以通过 IP 地址进行锁定
+1. 通过 POST 调用 [Cloud Manager 创建网路基础设施 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 为所有区域创建网络基础设施。 负载的 JSON 配置相对于主要区域的唯一区别是区域属性。
+1. 对于暂存环境，通过运行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 启用和配置环境范围内的高级网络。 有关详细信息，请参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 如有必要，最好通过 FQDN（例如 `p1234.external.adobeaemcloud.com`）锁定外部基础设施。 您可以通过 IP 地址进行锁定
 1. 如果暂存环境按预期工作，请为生产启用并配置环境范围内的高级网络配置。
 
 #### VPN {#vpn-regions}
 
-该过程与专用出口 IP 地址指令几乎相同。唯一的区别是区域属性的配置与主要区域不同。此外，您还可以选择配置 `connections.gateway` 字段。该配置可以路由到您的组织运营的地理位置上更靠近新区域的其他 VPN 端点。
+该过程与专用出口 IP 地址指令几乎相同。 唯一的区别是区域属性的配置与主要区域不同。 此外，您还可以选择配置 `connections.gateway` 字段。 该配置可以路由到您的组织运营的地理位置上更靠近新区域的其他 VPN 端点。
 
 ## 疑难解答
 
-请注意，以下要点仅供参考，包含故障排除的最佳实践。这些建议旨在帮助您有效诊断和解决问题。
+请注意，以下几点作为信息性指南提供，并包含故障排除的最佳实践。 这些建议旨在帮助您有效诊断和解决问题。
 
 ### 连接池 {#connection-pooling-advanced-networking}
 
-连接池是一种专门用于创建和维护连接存储库的技术，可供任何可能需要连接的线程立即使用。在各种在线平台和资源中可以找到许多连接池技术，每种技术都有其独特的优点和注意事项。Adobe 鼓励客户研究这些方法，找出最适合其系统架构的方法。
+连接池是一种专门用于创建和维护连接存储库的技术，可供任何可能需要连接的线程立即使用。 在各种在线平台和资源中可以找到许多连接池技术，每种技术都有其独特的优点和注意事项。 Adobe 鼓励客户研究这些方法，找出最适合其系统架构的方法。
 
-实施适当的连接池策略是一种主动措施，可以纠正系统配置中常见的疏忽，这种疏忽往往会导致性能不佳。通过正确建立连接池，Adobe Experience Manager (AEM) 可以提高外部调用的效率。该方法不仅减少了资源消耗，还降低了服务中断的风险，并减少了与上游服务器通信时请求失败的可能性。
+实施适当的连接池策略是一种主动措施，可以纠正系统配置中常见的疏忽，这种疏忽往往会导致性能不佳。 通过正确建立连接池，Adobe Experience Manager (AEM) 可以提高外部调用的效率。 该方法不仅减少了资源消耗，还降低了服务中断的风险，并减少了与上游服务器通信时请求失败的可能性。
 
-根据此信息，Adobe 建议检查您当前的 AEM 配置。还可以考虑在高级联网设置中有意使用连接池。管理并行连接的数量并减少失效连接，有助于优化网络性能。这些操作降低了代理服务器达到其连接限制的风险。因此，此战略实施旨在降低请求无法到达外部端点的可能性。
+根据此信息，Adobe 建议检查您当前的 AEM 配置。 还可以考虑在高级联网设置中有意使用连接池。 管理并行连接的数量并减少失效连接，有助于优化网络性能。 这些操作降低了代理服务器达到其连接限制的风险。 因此，此战略实施旨在降低请求无法到达外部端点的可能性。
 
 #### 连接限制常见问题解答
 
@@ -822,7 +826,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 此限制仅适用于使用高级联网的连接（非标准端口上的出口、使用专用出口 IP 或 VPN）。
 
-##### 传出连接的数量似乎没有明显增加。为什么现在才收到通知？
+##### 传出连接的数量似乎没有明显增加。 为什么现在才收到通知？
 
 如果客户动态创建连接（例如，每个请求创建一个或多个连接），则流量的增加可能会导致连接激增。
 
@@ -832,7 +836,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 ##### 如果达到最大限制会发生什么情况？
 
-达到硬限制时，通过高级网络（非标准端口上的出口、使用专用出口 IP 或 VPN）从 AEM 发出的新出口连接将被丢弃，以防止 DoS 攻击。
+当达到硬限制时，将丢弃从AEM通过高级网络（非标准端口上的出口，使用专用出口IP或VPN）的新出口连接，以防御DoS攻击。
 
 ##### 可以提高限额吗？
 
@@ -840,20 +844,20 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 ##### AEM 系统会在一段时间后自动关闭连接吗？
 
-是的，JVM 级别上以及网络基础设施的不同点的连接关闭。然而，对于任何生产服务而言，这种工作流程都太晚了。当不再需要连接时，应明确关闭连接；在使用连接池时，应将连接返回至池中。否则，资源消耗过高，可能造成资源耗尽。
+是的，JVM 级别上以及网络基础设施的不同点的连接关闭。 然而，对于任何生产服务而言，这种工作流程都太晚了。 当不再需要连接时，应明确关闭连接；在使用连接池时，应将连接返回至池中。 否则，资源消耗过高，可能造成资源耗尽。
 
 ##### 如果达到最大连接限制，是否会影响任何许可证并导致额外费用？
 
-否，此限制不需要许可证或费用。这是一个技术限制。
+否，此限制不需要许可证或费用。 这是一个技术限制。
 
-##### 当前使用量与限制量相差多少？允许的最大限制量是多少？
+##### 当前使用量与限制量相差多少？ 允许的最大限制量是多少？
 
-当连接数超过 750 时会触发警报。每个 AEM 实例的最大限制为 1000 个连接。
+当连接数超过 750 时会触发警报。 每个 AEM 实例的最大限制为 1000 个连接。
 
 ##### 此限制适用于 VPN 吗？
 
 是的，该限制适用于使用高级网络（包括 VPN）的连接。
 
-##### 使用专用出口 IP 时，这个限制是否仍然适用？
+##### 使用专用出口IP时是否仍适用此限制？
 
 是的，如果使用专用出口 IP，该限制仍然适用。
