@@ -81,7 +81,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 使用高级网络功能需要两个步骤：
 
-1. 配置高级网络选项，无论是[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)还是 [VPN，](#vpn)必须首先在程序级别完成。
+1. 配置高级网络选项，无论是[灵活端口出口、](#flexible-port-egress) [专用出口 IP 地址](#dedicated-egress-ip-address)还是 [VPN，](#vpn)必须首先在程序级别完成。
 1. 要使用高级网络选项，必须[在环境级别启用。](#enabling)
 
 这两个步骤都可以使用 Cloud Manager UI 或 Cloud Manager API 来完成。
@@ -612,7 +612,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 ## 在环境中启用高级网络配置 {#enabling}
 
-一旦为程序配置了高级网络选项，无论是[灵活的端口出口，](#flexible-port-egress)[专用出口 IP 地址，](#dedicated-egress-ip-address)还是 [VPN](#vpn)，要使用这些选项，必须在环境级别启用。
+一旦为程序配置了高级网络选项，无论是[灵活的端口出口，](#flexible-port-egress) [专用出口 IP 地址，](#dedicated-egress-ip-address)还是 [VPN](#vpn)，要使用这些选项，必须在环境级别启用。
 
 当您为环境启用高级网络配置时，您也可以启用可选的端口转发和非代理主机。 可以根据各个环境来配置参数以提供灵活性。
 
@@ -765,7 +765,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 1. [删除所有环境中的高级网络。](#editing-deleting-environments)
 1. [删除高级网络基础架构。](#editing-deleting-program)
-1. 创建您现在需要的高级网络基础架构类型，[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)或 [VPN。](#vpn)
+1. 创建您现在需要的高级网络基础架构类型，[灵活端口出口、](#flexible-port-egress) [专用出口 IP 地址](#dedicated-egress-ip-address)或 [VPN。](#vpn)
 1. [在环境级别启用高级网络。](#enabling)
 
 >[!WARNING]
