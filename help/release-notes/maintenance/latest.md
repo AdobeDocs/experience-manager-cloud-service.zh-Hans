@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
+source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '783'
 ht-degree: 30%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行说25821 {#release-25821}
+## 发行说25892 {#release-25892}
 
-以下总结了维护版本25821的持续改进，该版本于2026年5月5日公开发布。 以前的维护版本是25520版。
+以下总结了维护版本25892的持续改进，该版本于2026年5月7日公开发布。 以前的维护版本是25520版。
 
-2026.5.0功能激活将提供此维护版本的完整功能集。 有关更多信息，请参阅[&#x200B; Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2026.5.0功能激活将提供此维护版本的完整功能集。 有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-25821}
+>[!NOTE]
+>
+>发行说25821已设为私有。
+
+### 增强功能 {#enhancements-25892}
 
 * CQ-4362304：前端创建准则并更新LLM配置UI。
 * GRANITE-39546：将Apache Tika升级到3.x。
@@ -52,7 +56,7 @@ ht-degree: 30%
 * SKYOPS-138356：将`com.adobe.granite.oauth.server`更新为1.1.36。
 * SKYOPS-138739：将SnakeYAML更新为2.6。
 
-### 修复的问题 {#fixed-issues-25821}
+### 修复的问题 {#fixed-issues-25892}
 
 * Assets-59546：删除对已弃用的commons-lang库的依赖项。
 * Assets-64831： AssetProcessorProcess重置处理尝试计数导致资产卡住。
@@ -67,7 +71,7 @@ ht-degree: 30%
 * SITES-39267：恢复关系链条目中的pagePath。
 * SITES-43715：权限验证无法读取资源状态。
 
-#### AEM Guides {#guides-25821}
+#### AEM Guides {#guides-25892}
 
 * GUIDES-45110：使用&#x200B;**选择文件**&#x200B;对话框在编辑器中选择图像时，只显示光栅格式（如JPG、PNG和GIF）。 矢量文件（如`.ai`和`.eps`）未显示，因此无法选择。
 * GUIDES-41938：在名称中包含空格的文件夹中创建主题时，会错误地创建一个重复的文件夹，其中空格被连字符替换，并且主题会保存在该文件夹中而不是原始文件夹中。
@@ -77,19 +81,19 @@ ht-degree: 30%
 
 如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
-### 已知问题 {#known-issues-25821}
+### 已知问题 {#known-issues-25892}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-25821}
+### 已弃用的功能和 API {#deprecated-25892}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-25821}
+### 安全修复 {#security-25892}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。 此维护版本解决了19个已识别的漏洞，强化了我们对强大系统保护的承诺。
 
-### 嵌入的技术 {#embedded-tech-25821}
+### 嵌入的技术 {#embedded-tech-25892}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
