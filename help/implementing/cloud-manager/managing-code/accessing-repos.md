@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '406'
 ht-degree: 96%
 
 ---
@@ -42,7 +42,7 @@ Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问
 
    ![管道信息卡上的 Access Repo Info](assets/pipelines-card.png)
 
-1. 要访问密码，必须生成一个新密码。在 **存储库信息** 对话框中，选择 **生成密码**。
+1. 要访问密码，必须生成一个新密码。 在 **存储库信息** 对话框中，选择 **生成密码**。
 
 1. 在确认对话框中，选择 **生成密码**。
 
@@ -51,7 +51,7 @@ Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问
 1. 在 **密码** 字段右侧，点击 ![复制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 将密码复制到剪贴板。
 
    * 生成密码会使之前的密码失效。
-   * Cloud Manager 不保存密码。安全地保存此密码是您的责任。
+   * Cloud Manager 不保存密码。 安全地保存此密码是您的责任。
    * 由于 Cloud Manager 不保存密码，因此，如果您丢失密码，则必须重新生成一个新密码。
 
    ![在“存储库信息”对话框中复制密码](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
@@ -60,10 +60,10 @@ Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问
 
 ## 从“存储库”页面访问存储库信息 {#repositories-window}
 
- **Access Repo Info** 功能也可从 [**存储库** 页面](managing-repositories.md)获得。该工具栏显示有关访问 Adobe 管理的存储库的相同信息。
+**Access Repo Info** 功能也可从 [**存储库** 页面](managing-repositories.md)获得。 该工具栏显示有关访问 Adobe 管理的存储库的相同信息。
 
 ## 撤销访问密码 {#revoke-password}
 
 您可以随时撤销访问密码。
 
-为此，[为此请求创建支持工单](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&support-tab=home#support)。该工单会得到优先处理，并且通常会在一天内撤销。
+为此，[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)。 该工单会得到优先处理，并且通常会在一天内撤销。
