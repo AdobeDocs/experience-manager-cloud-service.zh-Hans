@@ -4,9 +4,9 @@ description: 了解如何将模型上下文协议与AEM as a Cloud Service一起
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
+source-git-commit: a596f02b7b2e70cfff9eba6e74a65f28aaf65020
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -55,17 +55,17 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 | **内容** | `/content` | 内容操作，包括为页面和内容片段创建、读取、更新和删除(CRUD)，以及资产导入和资产搜索。                                                                          <br>发送电子邮件至`aemagentsteam@adobe.com`以启用&#x200B;**资源搜索**。 在电子邮件中包含组织名称以及用例。 |
 | **内容（只读）** | `/content-readonly` | 对页面和内容片段以及资产搜索执行只读内容操作（获取、列表/搜索）。                                                                             <br>发送电子邮件至`aemagentsteam@adobe.com`以启用&#x200B;**资源搜索**。 在电子邮件中包含组织名称以及用例。 |
 | **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager实体，包括程序、环境、存储库和管道，这些也可以触发。 |
-| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>客户必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)才能访问Experience Governance MCP。 |
+| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>客户必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)才能访问Experience Governance MCP。 |
 
 每个MCP服务器公开的特定工具可能会随着时间的推移而不断演变。 在实践中，您可以要求启用了MCP的应用程序通过提示来发现工具，例如：
 
 ```
-"List all AEM MCP tools available from this server and describe what they do."
+"List all AEM tools available from this server and describe what they do."
 ```
 
 MCP客户端使用MCP协议来检索工具列表和模式，然后LLM可以使用。
 
-请参阅[Content MCP Server教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
+请参阅[Content MCP Server教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
 
 ## 支持的MCP应用程序 {#supported-mcp-applications}
 
@@ -97,12 +97,12 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 为AEM配置MCP涉及两个主要部分：
 
-1. **每个MCP客户端应用程序中的配置**，以便应用程序知道如何连接到AEM MCP服务器并执行OAuth登录
+1. **每个MCP客户端应用程序中的配置**，以便应用程序知道如何连接到AEM的MCP服务器并执行OAuth登录
 1. **在开始提示之前选择MCP服务器**，以便MCP客户端知道要使用它。
 
 包含以下两个步骤的分步指南适用于：
 
-* [克洛德](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [Anthropic Claude（用于手动配置MCP服务器，以及安装AEM Claude连接器）](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [光标](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [JetBrains与GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
@@ -130,10 +130,10 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 每个用户都执行此步骤，或者MCP客户端应用程序的管理员可以在支持时执行此步骤。 不同应用程序的配置详细信息略有不同。 MCP客户端发展迅速，并且正在积极开发对远程MCP服务器的支持。 您可能需要启用开发人员模式才能访问添加远程服务器的功能，但常规过程是：
 
-1. 添加一个或多个AEM MCP服务器URL
+1. 添加一个或多个MCP服务器URL
    * 从上表中配置一个或多个MCP端点。 例如：`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
 1. 触发连接
-   * 保存或激活配置，以便MCP客户端应用程序尝试连接到AEM MCP服务器
+   * 保存或激活配置，以便MCP客户端应用程序尝试连接到MCP服务器
 1. 使用Adobe ID登录
    * 出现提示时，请完成Adobe登录流程，以便应用程序能够获得与您的Adobe ID关联的OAuth令牌
 1. 验证发现的工具
@@ -145,7 +145,7 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 Adobe托管的MCP服务器实施OAuth，并与Adobe的Identity System集成。
 
-* 当MCP客户端应用程序连接到AEM MCP服务器时，用户会看到Adobe登录对话框并使用其&#x200B;**Adobe ID**&#x200B;进行身份验证
+* 当MCP客户端应用程序连接到MCP服务器时，用户会看到Adobe登录对话框并使用其&#x200B;**Adobe ID**&#x200B;进行身份验证
 * 成功登录后，系统会验证您的组织是否允许MCP客户端应用程序，以及是否允许请求的MCP服务器。 如果任一检查失败，则会显示错误消息。
 
 ![MCP客户端不允许错误](assets/MCP-Client-not-permitted.png)

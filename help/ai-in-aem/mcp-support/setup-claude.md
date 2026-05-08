@@ -1,27 +1,28 @@
 ---
 title: 使用AEM MCP设置Anthropic Claude
-description: 了解如何配置Anthropic Claude以连接到AEM MCP服务器
+description: 了解如何配置Anthropic Claude以连接到AEM的MCP服务器
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
-source-git-commit: fede808fcd8b082a71273bf9ffceb48b5332f45d
+source-git-commit: 07a7aa5f02d7bfa992df825f3b8a19e18d569d5b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
 # 使用AEM MCP设置Anthropic Claude {#setup-claude}
 
-按照以下步骤将Anthropic Claude连接到AEM的MCP服务器。
+本文介绍了将Anthropic Claude与AEM结合使用的两种不同方法：
 
-* 在Claude的MCP配置中，注册一个或多个AEM MCP服务器URL。
-* 完成Adobe登录流程。
-* （可选）在配置区域为某些工具启用自动确认。 建议将此选项用于搜索或只读操作。
-* 在开始对话之前，请确保已选择MCP服务器。
-* 要求Claude执行与AEM相关的任务。 Claude会根据您的提示选择MCP服务器公开的AEM Tools。
+- 在Claude中手动配置一或多个AEM的MCP服务器（在[使用MCP和AEM as a Cloud Service — MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers)中描述的服务器）。
+- 从Anthropic的连接器市场安装Adobe Experience Manager连接器。 它目前与Content MCP Server具有同等功能，将公开AEM MCP服务器中越来越多的可用工具。
 
-要为AEM MCP配置Claude，请执行以下步骤：
+
+
+## 在克劳德中手动配置AEM的MCP服务器 {#manual-configure-aems-mcp-servers-in-claude}
+
+本节介绍&#x200B;**手动配置**&#x200B;方法，其中您将一个或多个AEM的MCP服务器作为自定义连接器添加到Claude。
 
 >[!NOTE]
 >
@@ -35,7 +36,7 @@ ht-degree: 0%
 
    在“使用添加自定义连接器的设置”中的![连接器页面。](assets/claude-2.png)
 
-1. 在&#x200B;**添加自定义连接器**&#x200B;对话框中，输入显示名称（例如&#x200B;**AEM Content MCP服务**）和您的AEM MCP服务器URL，然后选择&#x200B;**添加**。 仅在部署需要额外选项时才使用&#x200B;**高级设置**。
+1. 在&#x200B;**添加自定义连接器**&#x200B;对话框中，输入显示名称（例如&#x200B;**AEM Content MCP服务**）和您的MCP服务器URL，然后选择&#x200B;**添加**。 仅在部署需要额外选项时才使用&#x200B;**高级设置**。
 
    ![添加具有名称和MCP URL的自定义连接器对话框。](assets/claude-3.png)
 
@@ -55,8 +56,10 @@ ht-degree: 0%
 
    ![在“工具”菜单中启用了AEM内容MCP服务的聊天编辑器。](assets/claude-7.png)
 
-## Adobe Experience Manager Claude连接器 {#aem-claude-connector}
+## 安装Adobe Experience Manager连接器（Anthropic连接器市场） {#install-adobe-experience-manager-connector}
 
-要安装&#x200B;**Adobe Experience Manager Claude连接器**，请在Claude中打开&#x200B;**设置** > **连接器**。 您还可以直接在[https://claude.ai/settings/connectors](https://claude.ai/settings/connectors)上打开Connectors页面。 连接器注册一个MCP服务器，该服务器会公开一组日益增加的AEM工作流工具。
+本节介绍Anthropic连接器市场中的&#x200B;**可安装的连接器**（与添加自定义连接器URL相反）。 它包括AEM MCP服务器中可用工具的子集。
+
+若要安装&#x200B;**Adobe Experience Manager连接器**，请在Claude中打开&#x200B;**设置** > **连接器**。 您还可以直接在[https://claude.ai/settings/connectors](https://claude.ai/settings/connectors)上打开Connectors页面。 连接器注册一个MCP服务器，该服务器会公开一组日益增加的AEM工作流工具。
 
 ![正在从连接器目录安装Adobe Experience Manager Claude连接器。](assets/claude-connector.png)
