@@ -28,7 +28,7 @@ AI编码代理（Claude Code、Cursor、GitHub Copilot和类似工具）对AEM�
 | **AEM快速入门本地MCP服务器** | 公开本地AEM SDK实例的实时运行时数据以支持故障排除 |
 | **Dispatcher本地MCP服务器** | 启用本地Dispatcher实例的运行时验证和检查 |
 
-查看[AI辅助开发教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以获取其他动手操作说明。
+查看[AI辅助开发教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以获取其他动手操作说明。
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Adobe在&#x200B;**[adobe/skills](https://github.com/adobe/skills/tree/main/plugi
 
 ### 安装技能 {#install-skills}
 
-选择与您的AI编码工具匹配的方法。 一旦安装技能，这些技能即可用于该计算机上的所有项目。 有关具体演练，请参阅[设置AEM代理技能教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)。
+选择与您的AI编码工具匹配的方法。 一旦安装技能，这些技能即可用于该计算机上的所有项目。 有关具体演练，请参阅[设置AEM代理技能教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)。
 
 #### Claude码 {#claude-code}
 
@@ -123,7 +123,7 @@ CTA Link (ctaLink) - Pathfield
 
 代理会响应字段说明进行确认，然后生成所有组件文件。 支持的模式包括带有复合嵌套项的多字段、条件显示/隐藏逻辑、通过Sling资源合并器进行的核心组件扩展以及使用AEM Mocks的JUnit 5测试。 设计可以来自各种来源，包括文本描述、图像或使用Figma的MCP服务器的Figma设计URL。
 
-按照[使用AEM代理技能的组件开发教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)了解更多信息。
+按照[使用AEM代理技能的组件开发教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)了解更多信息。
 
 ### 使用Dispatcher技能 {#use-the-dispatcher-skill}
 
