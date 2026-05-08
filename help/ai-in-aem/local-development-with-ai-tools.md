@@ -4,9 +4,9 @@ description: 了解如何使用项目上下文、代理技能和MCP服务器配�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
+source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ CTA Text (ctaText) - Textfield
 CTA Link (ctaLink) - Pathfield
 ```
 
-代理会响应字段说明进行确认，然后生成所有组件文件。 支持的模式包括带有复合嵌套项的多字段、条件显示/隐藏逻辑、通过Sling资源合并器进行的核心组件扩展以及使用AEM Mocks的JUnit 5测试。
+代理会响应字段说明进行确认，然后生成所有组件文件。 支持的模式包括带有复合嵌套项的多字段、条件显示/隐藏逻辑、通过Sling资源合并器进行的核心组件扩展以及使用AEM Mocks的JUnit 5测试。 设计可以来自各种来源，包括文本描述、图像或使用Figma的MCP服务器的Figma设计URL。
 
 按照[使用AEM代理技能的组件开发教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)了解更多信息。
 
