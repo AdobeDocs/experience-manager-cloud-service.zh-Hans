@@ -140,7 +140,7 @@ Experience Governance MCP Server现已正式提供(GA)。 它与支持模型上�
 了解有关[AEM MCP服务器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)的更多信息。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486268/?captions=chi_hans&learn=on&enablevpops)
 
 #### 克劳德连接器 {#aem-claude-connector}
 
