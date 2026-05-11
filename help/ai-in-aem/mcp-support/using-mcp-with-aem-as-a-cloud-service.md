@@ -4,12 +4,13 @@ description: 了解如何将模型上下文协议与AEM as a Cloud Service一起
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: a596f02b7b2e70cfff9eba6e74a65f28aaf65020
+source-git-commit: 0e011e464ba607edf1fce719263717cc8ce6ba61
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1922'
 ht-degree: 0%
 
 ---
+
 
 # 将MCP与AEM as a Cloud Service结合使用 {#using-mcp-with-aem-as-a-cloud-service}
 
@@ -19,13 +20,12 @@ ht-degree: 0%
 
 通过AEM的MCP集成，不同的角色可以围绕相同的内容进行协作：
 
-* **开发人员**&#x200B;可以从其IDE或聊天应用程序编排内容操作和工作流
+* **开发人员**&#x200B;可以从其IDE或聊天应用程序编排内容操作和工作流。
 * **从业者**&#x200B;和内容架构师可以在AI帮助下管理网站和内容片段并导入资源，同时保留AEM的现有权限模型。
 
 >[!IMPORTANT]
 >
 > 对于修改或删除内容的场景，从业人员应使用AI Assistant界面，而不是直接调用MCP工具。 AI Assistant运行的AEM代理包含内置安全保护。
->
 
 本文介绍了AEM的MCP功能提供了哪些功能，支持哪些MCP应用程序，如何配置这些功能，以及如何在实践中使用该功能。
 
@@ -35,27 +35,22 @@ ht-degree: 0%
 
 主要优势包括：
 
-* **自然语言交互而不是API管道**
-MCP工具描述了哪些操作可用以及如何调用它们。 LLM使用这些模式来确定要调用哪些工具以及使用哪些参数。
-* 跨应用程序&#x200B;**一致的体验**
-相同的AEM MCP工具可用于多个MCP兼容应用程序，使团队能够在调用相同的底层AEM功能时，在最高效的地方工作。
-* **安全和治理已保留**
-对AEM MCP工具的请求在经过身份验证的用户身份下运行，每个工具都强制实施用户的现有AEM权限。 人工智能辅助的操作遵循与AEM中的手动工作相同的访问规则。
+* **自然语言交互而不是API管道** - MCP工具描述了哪些操作可用以及如何调用它们。 LLM使用这些模式来确定要调用哪些工具以及使用哪些参数。
+* **跨应用程序的一致体验** — 相同的AEM MCP工具可用于多个MCP兼容应用程序，使团队能够在调用相同基础AEM功能的同时，在最高效的地方工作。
+* **安全和治理已保留** — 对AEM MCP工具的请求在经过身份验证的用户身份下运行，每个工具都强制实施用户的现有AEM权限。 人工智能辅助的操作遵循与AEM中的手动工作相同的访问规则。
 
 ## AEM提供的MCP服务器 {#mcp-servers-provided-by-aem}
 
-AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相关：
-
-`https://mcp.adobeaemcloud.com/adobe/mcp/`
+AEM将MCP服务器公开为HTTP端点。 下面列出的端点相对于`https://mcp.adobeaemcloud.com/adobe/mcp/`。
 
 ### MCP服务器 {#mcp-servers}
 
-| **MCP服务器** | **终结点** | **描述** |
-|---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **内容** | `/content` | 内容操作，包括为页面和内容片段创建、读取、更新和删除(CRUD)，以及资产导入和资产搜索。                                                                          <br>发送电子邮件至`aemagentsteam@adobe.com`以启用&#x200B;**资源搜索**。 在电子邮件中包含组织名称以及用例。 |
-| **内容（只读）** | `/content-readonly` | 对页面和内容片段以及资产搜索执行只读内容操作（获取、列表/搜索）。                                                                             <br>发送电子邮件至`aemagentsteam@adobe.com`以启用&#x200B;**资源搜索**。 在电子邮件中包含组织名称以及用例。 |
+| MCP服务器 | 端点 | 描述 |
+|---|---|---|
+| **内容** | `/content` | 内容操作，包括为页面和内容片段创建、读取、更新和删除(CRUD)，以及资产导入和资产搜索。<br>如果您感兴趣，则必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)，才能访问Experience Governance MCP。 |
+| **内容（只读）** | `/content-readonly` | 对页面和内容片段以及资产搜索执行只读内容操作（获取、列表/搜索）。<br>如果您感兴趣，则必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)，才能访问Experience Governance MCP。 |
 | **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager实体，包括程序、环境、存储库和管道，这些也可以触发。 |
-| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>客户必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)才能访问Experience Governance MCP。 |
+| **体验管理** | `/experience-governance` | 根据品牌治理规则评估内容（文本、图像、页面），并列出品牌配置和检查。<br/>如果您感兴趣，则必须注册[代理试用版或拥有付费许可证](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial)，才能访问Experience Governance MCP。 |
 
 每个MCP服务器公开的特定工具可能会随着时间的推移而不断演变。 在实践中，您可以要求启用了MCP的应用程序通过提示来发现工具，例如：
 
@@ -65,7 +60,7 @@ AEM将MCP服务器公开为HTTP端点。 下面列出的端点与以下对象相
 
 MCP客户端使用MCP协议来检索工具列表和模式，然后LLM可以使用。
 
-请参阅[Content MCP Server教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
+请参阅[Content MCP Server教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP Server视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，了解有关它们的功能以及如何使用它们的详细信息。
 
 ## 支持的MCP应用程序 {#supported-mcp-applications}
 
@@ -97,7 +92,7 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 为AEM配置MCP涉及两个主要部分：
 
-1. **每个MCP客户端应用程序中的配置**，以便应用程序知道如何连接到AEM的MCP服务器并执行OAuth登录
+1. **配置每个MCP客户端应用程序**，以便该应用程序知道如何连接到AEM的MCP服务器并执行OAuth登录。
 1. **在开始提示之前选择MCP服务器**，以便MCP客户端知道要使用它。
 
 包含以下两个步骤的分步指南适用于：
@@ -124,19 +119,19 @@ AEM的MCP服务器设计为可与定义的一组兼容MCP的应用程序配合�
 
 如果贵组织的策略需要，管理员还可以禁用对特定MCP客户端应用程序的访问。 如果您希望Adobe启用对其他MCP客户端产品的支持，请发送指向产品网站的链接。 如果您需要允许列表自定义MCP客户端，请联系。
 
-对于所有MCP服务器相关请求，请随时通过&#x200B;**aemcs-mcp-feedback@adobe.com**&#x200B;联系我们
+对于所有与MCP服务器相关的请求，请随时通过&#x200B;**`aemcs-mcp-feedback@adobe.com`**&#x200B;联系Adobe
 
 ### MCP客户端应用程序配置 {#mcp-client-application-configuration}
 
 每个用户都执行此步骤，或者MCP客户端应用程序的管理员可以在支持时执行此步骤。 不同应用程序的配置详细信息略有不同。 MCP客户端发展迅速，并且正在积极开发对远程MCP服务器的支持。 您可能需要启用开发人员模式才能访问添加远程服务器的功能，但常规过程是：
 
-1. 添加一个或多个MCP服务器URL
+1. 添加一个或多个MCP服务器URL。
    * 从上表中配置一个或多个MCP端点。 例如：`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
-1. 触发连接
+1. 触发连接。
    * 保存或激活配置，以便MCP客户端应用程序尝试连接到MCP服务器
-1. 使用Adobe ID登录
+1. 使用Adobe ID登录。
    * 出现提示时，请完成Adobe登录流程，以便应用程序能够获得与您的Adobe ID关联的OAuth令牌
-1. 验证发现的工具
+1. 验证发现的工具。
    * 一旦通过验证，应用程序就会从服务器发现MCP工具。 然后，您可以开始提示LLM执行AEM操作。
 
 有关支持的应用程序的完整列表，请参阅[支持的MCP应用程序](#supported-mcp-applications)。
@@ -150,7 +145,7 @@ Adobe托管的MCP服务器实施OAuth，并与Adobe的Identity System集成。
 
 ![MCP客户端不允许错误](assets/MCP-Client-not-permitted.png)
 
-* 验证后，MCP服务器会颁发应用程序用于后续工具调用的令牌
+* 验证后，MCP服务器会颁发应用程序用于后续工具调用的令牌。
 * MCP工具会尊重用户的AEM权限。 只有有权在AEM中修改内容片段的用户才能通过MCP修改它。
 
 此方法可确保AI辅助的操作符合您现有的AEM安全和治理模型。
@@ -163,30 +158,26 @@ Adobe托管的MCP服务器实施OAuth，并与Adobe的Identity System集成。
 >
 >包含多个步骤或针对不同内容类型（如图像和文本）的提示，最适合用于思维模型。 在MCP客户端中启用思考模型或选择“思考”选项，而不是依赖于“自动”模式。
 
-### 示例用例 {#example-usecases}
+### 示例用例 {#example-use-cases}
 
 一些典型的情况包括：
 
-* **环境发现**
+* 环境发现
    * 列出环境和许可证以决定运行工作流的位置。
-
-* **站点管理**
+* 站点管理
    * 列出站点
    * 创建、读取、更新和删除页面和页面内容。
-
-* **内容片段管理**
+* 内容片段管理
    * 搜索内容片段
    * 创建新片段
    * 当营销活动消息更改时，更新现有片段。
-
-* **正在导入资产**
+* 资产导入
    * 导入具有状态检查的资源
-
-* **Assets搜索**
+* 资产搜索
 
   >[!NOTE]
   >
-  >向`aemagentsteam@adobe.com`发送电子邮件，以便为您启用资产搜索。 在电子邮件中包含组织名称以及用例。
+  >向`aemagentsteam@adobe.com`发送电子邮件，为您启用资产搜索。 在电子邮件中包含组织名称以及用例。
 
 ### 示例工作流 {#example-workflows}
 
@@ -217,20 +208,13 @@ LLM自动选择并协调必要的MCP工具。
 
 在通过MCP使用LLM时，请牢记以下几点：
 
-* **功能强大，但不是绝对可靠**
-LLM可以完成复杂的任务，但容易偶尔出错。 相同的提示可能会产生稍微不同的结果或演示，但没有明显的原因。 始终在将更改应用于生产内容之前审查输出。
-
-* **不断发展的功能**
-LLM模型正在不断改进。 随着时间的推移，他们在发现组合MCP工具以实现目标的新方法方面变得更加智能。 今天需要多个提示的任务明天可以无缝地处理单个提示。
-
-* **人力监督是必不可少的：**
-把LLM想成需要监督的知识渊博的助手。 它拥有广泛的知识，可以设计创造性的解决方案，但它受益于您的指导和审查。 验证结果（尤其是关键操作的结果），并在输出与预期不符时提供反馈。
-
-* **在执行自动确认工具时请务必谨慎**
-某些MCP客户端应用程序（如Claude）提供了自动确认LLM请求的工具执行的选项。 虽然此选项可以方便地用于只读操作（如搜索或检索内容），但请谨慎使用更新或删除内容的工具。 在确认修改AEM环境的操作之前，请查看每个工具执行请求。
+* **功能强大但并非无懈可击** - LLM可以完成复杂的任务，但容易偶尔出错。 相同的提示可能会产生稍微不同的结果或演示，但没有明显的原因。 始终在将更改应用于生产内容之前审查输出。
+* **不断发展的功能** - LLM模型正在不断改进。 随着时间的推移，他们在发现组合MCP工具以实现目标的新方法方面变得更加智能。 今天需要多个提示的任务明天可以无缝地处理单个提示。
+* **人力监督是必不可少的** — 请将LLM视为需要监督的知识型助手。 它拥有广泛的知识，可以设计创造性的解决方案，但它受益于您的指导和审查。 验证结果（尤其是关键操作的结果），并在输出与预期不符时提供反馈。
+* **对于自动确认工具执行要小心** — 某些MCP客户端应用程序（如Claude）提供了由LLM请求的自动确认工具执行的选项。 虽然此选项可以方便地用于只读操作（如搜索或检索内容），但请谨慎使用更新或删除内容的工具。 在确认修改AEM环境的操作之前，请查看每个工具执行请求。
 
 ## 限制 {#limitations}
 
-AEM当前支持在[支持的MCP应用程序](#supported-mcp-applications)下列出的应用程序中配置MCP服务器。
+AEM当前支持在[支持的MCP应用程序下列出的应用程序中配置MCP服务器。](#supported-mcp-applications)
 
-如果要使用其他MCP客户端应用程序，请随时联系&#x200B;**aemcs-mcp-feedback@adobe.com**，请求支持其他客户端或列入允许列表自定义客户端。
+如果要使用其他MCP客户端应用程序，请随时联系&#x200B;**`aemcs-mcp-feedback@adobe.com`**&#x200B;请求支持其他客户端或列入允许列表自定义客户端。
