@@ -69,7 +69,7 @@ OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experiencele
 * 工作流是真实业务过程的一种表现形式。 让您的实际业务流程和业务流程参与者的列表做好准备。 此外，在开始创建工作流之前，应准备好宣传材料（自适应Forms、PDF文档等）。
 * 一个工作流可以有多个阶段。 这些阶段显示在AEM收件箱中，并帮助报告工作流的进度。 将业务流程划分为逻辑阶段。
 * 您可以配置AEM工作流的分配任务步骤，以向用户或受分配人发送电子邮件通知。 因此，[启用电子邮件通知](#configure-email-service)。
-* 工作流还可以使用Adobe sign进行数字签名。 如果您计划在工作流中使用Adobe Sign，则在工作流中使用 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)之前应先配置[的Adobe Sign。
+* 工作流还可以使用Adobe sign进行数字签名。 如果您计划在工作流中使用Adobe Sign，则在工作流中使用 [!DNL AEM Forms][&#128279;](adobe-sign-integration-adaptive-forms.md)之前应先配置的Adobe Sign。
 
 ## 创建工作流模型 {#create-a-workflow-model}
 
@@ -139,7 +139,7 @@ AEM提供了一个直观的用户界面，用于使用提供的工作流步骤�
 
    ![OR拆分示例](assets/orsplit_branch2_active_new.png)
 
-   有关使用变量创建路由表达式的信息，请参阅 [!DNL AEM Forms] 工作流](variable-in-aem-workflows.md)中的[变量。
+   有关使用变量创建路由表达式的信息，请参阅 [!DNL AEM Forms] 工作流[&#128279;](variable-in-aem-workflows.md)中的变量。
 
 1. 添加其他工作流步骤以构建业务逻辑。
 

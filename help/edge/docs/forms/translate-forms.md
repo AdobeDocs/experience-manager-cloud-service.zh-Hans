@@ -90,6 +90,6 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **问**：如何检索 `GOOGLETRANSLATE` 函数中使用的区域设置列表
 
-**答**：您可以参考 [ Google 的官方文档](https://cloud.google.com/translate/docs/languages) 获得 GOOGLETRANSLATE 中使用的语言环境的完整列表。
+**答**：您可以参考 [&#x200B; Google 的官方文档](https://cloud.google.com/translate/docs/languages) 获得 GOOGLETRANSLATE 中使用的语言环境的完整列表。
 
 

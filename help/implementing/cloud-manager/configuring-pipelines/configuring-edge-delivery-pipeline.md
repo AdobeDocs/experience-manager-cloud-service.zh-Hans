@@ -97,7 +97,7 @@ ht-degree: 15%
 
      另请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，了解如何在Cloud Manager中添加和管理存储库。
 
-   * **Git分支** — 使用下拉列表选择所选存储库中的特定分支。 如有必要，请单击“回收”图标或“刷新”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)，以便在最近推送后重新加载Git分支下拉列表。![
+   * **Git分支** — 使用下拉列表选择所选存储库中的特定分支。 如有必要，请单击“回收”图标或“刷新”图标![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)，以便在最近推送后重新加载Git分支下拉列表。
    * **代码位置** — 定义管道就绪代码在存储库中开始的文件夹路径（`/`等于存储库根）。
 
    ![配置管道](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)

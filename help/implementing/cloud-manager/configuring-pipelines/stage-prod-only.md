@@ -112,7 +112,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## 运行仅阶段管道和仅生产管道 {#running}
 
-您可以像启动任何其他管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)一样启动新管道[。 您还可以直接从仅限暂存管道的执行详细信息触发仅限生产的管道。
+您可以像启动任何其他管道[&#128279;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)一样启动新管道。 您还可以直接从仅限暂存管道的执行详细信息触发仅限生产的管道。
 
 <!--
  * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
