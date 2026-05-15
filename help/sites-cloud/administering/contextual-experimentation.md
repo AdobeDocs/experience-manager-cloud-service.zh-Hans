@@ -47,7 +47,7 @@ ht-degree: 2%
 
 在设置实验之前，请记住，您需要使用AEM站点作为内容源，才能在通用编辑器中创作。 如果需要，您可以按照[将AEM设置为内容Source](https://www.aem.live/developer/ue-tutorial)页面中提供的教程将现有项目转换为作为内容源的AEM Sites站点。 准备在通用编辑器中设置试验时，请执行以下步骤：
 
-1. 在通用编辑器中打开您的项目，并检查&#x200B;**A/B**图标扩展。 如果图标不可见，请确认您在扩展管理器中是否已启用该功能。 如果未启用，请启用它或请求访问权限。
+1. 在通用编辑器中打开您的项目，并检查&#x200B;**A/B**&#x200B;图标扩展。 如果图标不可见，请确认您在扩展管理器中是否已启用该功能。 如果未启用，请启用它或请求访问权限。
    <!--1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the note above).-->
 1. 将`fstab.yaml`配置指向项目配置，并将其链接到AEM创作实例。 另请参阅[将您的代码连接到内容](https://www.aem.live/developer/ue-tutorial#connect-your-code-to-your-content)
 1. 打开AEM实例，如果项目已就绪，则直接在通用编辑器中打开该实例。
@@ -76,7 +76,7 @@ ht-degree: 2%
 [可操作遥测服务](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)收集数据，例如，对照页中的访客数与挑战者页中的访客数。 然后，您可以使用此数据为您的网站选择所需的改进。 只要您遵循网站既定设计语言并使用现有功能，就应该能够设置试验变体，并在几分钟内将其发送到生产环境。
 
 >[!NOTE]
->请记住，此插件不使用也不保留任何可能导致标识的最终用户数据。 在使用AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中使用[操作遥测服务的默认配置时，不需要最终用户选择加入或Cookie同意。
+>请记住，此插件不使用也不保留任何可能导致标识的最终用户数据。 在使用AEM as a Cloud Service[&#128279;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中使用操作遥测服务的默认配置时，不需要最终用户选择加入或Cookie同意。
 
 <!--### Frequently used terms {#frequently-used-terms}
 
@@ -299,7 +299,7 @@ Adobe Experience Manager 使用[运营遥测](/help/sites-cloud/administering/op
 
 ### 隐私 {#privacy-experimentation}
 
-AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中的[操作遥测服务旨在保留访客隐私并最大限度地减少数据收集。 作为访客，这意味着Adobe不会尝试收集您的个人信息或可以跟踪回您的信息。 作为站点操作员，请查看下面收集的数据项以了解它们是否需要同意。
+AEM as a Cloud Service[&#128279;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中的操作遥测服务旨在保留访客隐私并最大限度地减少数据收集。 作为访客，这意味着Adobe不会尝试收集您的个人信息或可以跟踪回您的信息。 作为站点操作员，请查看下面收集的数据项以了解它们是否需要同意。
 AEM Operational Telemetry不使用任何客户端状态或ID（如Cookie或`localStorage`、`sessionStorage`或类似项）来收集使用情况度量。 数据是通过`Navigator.sendBeacon`调用透明提交的，而不是通过像素或类似技术提交的。 不存在通过设备或个人的IP地址、用户代理字符串或任何其他数据来捕获采样数据的“指纹”。
 
 不得将个人数据添加到操作遥测数据收集中，也不得将操作遥测数据用于超出严格必要范围的用例。
