@@ -2,15 +2,14 @@
 title: 了解 AEM 中的 AEM Site 内容和翻译方法
 description: 了解 AEM Site 概念和 AEM 翻译理论。
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 100%
 
 ---
@@ -21,14 +20,14 @@ ht-degree: 100%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解 AEM Site 内容创建以及如何翻译此内容。阅读本文档后，您应：
+本文档可帮助您了解 AEM Site 内容创建以及如何翻译此内容。 阅读本文档后，您应：
 
 * 了解 AEM Site 中的内容创建的基本概念。
 * 熟悉 AEM 支持翻译的方式。
 
 ## AEM Site 概述 {#aem-sites}
 
-AEM Site 是一个用于创建、管理和交付数字体验的综合平台。内容作者使用简单、所见即所得的拖放工具，在直观的编辑器中创建页面。此编辑器以网站访客的视角呈现内容。
+AEM Site 是一个用于创建、管理和交付数字体验的综合平台。 内容作者使用简单、所见即所得的拖放工具，在直观的编辑器中创建页面。此编辑器以网站访客的视角呈现内容。
 
 可在 Site 控制台中轻松管理构成您体验的页面，该控制台以易于理解的层级为您提供内容概述，并允许轻松重新排列、复制和发布内容。
 
@@ -54,7 +53,7 @@ AEM Site 是一个用于创建、管理和交付数字体验的综合平台。�
 
 ## 后续内容 {#what-is-next}
 
-感谢您开始 AEM Site 翻译历程！现在您已阅读本文档，您应：
+感谢您开始 AEM Site 翻译历程！ 现在您已阅读本文档，您应：
 
 * 了解 AEM Site 内容创建的基本概念。
 * 熟悉 AEM 支持翻译的方式。

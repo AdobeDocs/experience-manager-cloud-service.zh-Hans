@@ -8,13 +8,12 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2853'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ ht-degree: 0%
 
 上传和发布Dynamic Media资产后，您可以复制资产生成的URL并将其粘贴到浏览器中，以查看向客户展示资产的方式。 以下复制的监视图像URL按颜色进行划分，以便于阅读和理解。
 
-![Dynamic Media URL的剖析](/help/assets/dynamic-media/assets/dm-colored-url.png)
+![动态媒体URL的剖析](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Dynamic Media URL的剖析。_
 
 URL的第一个红色部分引用了服务器域本身。 在这种情况下，Dynamic Media正在通用服务器域`https://s7d1.scene7.com/is/image/`上运行。 只需查看服务器域，即可轻松查看一组图像并了解Dynamic Media是否为其提供服务。 URL将保持相当一致。 但是，有一些Dynamic Media客户已切换到专用服务器域，该域可能为`name-of-your-company.scene7.com`。 智能成像需要一个专用服务器域。
@@ -62,10 +61,10 @@ URL的第一个红色部分引用了服务器域本身。 在这种情况下，D
 
 请注意，将生成监视的新演绎版。 要理解这个更改图像宽度这一简单操作的一个关键点是，看到的图像是100%动态生成的。
 
-现在将`500`像素的宽度值更改为`1000`像素，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}。
-当您按&#x200B;**[!UICONTROL Enter]**&#x200B;时，浏览器将返回到Dynamic Media图像服务器。 它会根据您刚刚输入的新宽度值生成手表的全新演绎版，然后将新图像发送回浏览器，然后进行缓存。
+现在将`500`像素的宽度值更改为`1000`像素，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}。
+当您按**[!UICONTROL Enter]**&#x200B;时，浏览器将返回到Dynamic Media图像服务器。 它会根据您刚刚输入的新宽度值生成手表的全新演绎版，然后将新图像发送回浏览器，然后进行缓存。
 
-Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资产。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans)查看他们的列表。
+Dynamic Media具有大量图像处理参数，可用于微调网页上的图像资产。 您可以[在此](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)查看他们的列表。
 
 现在，尝试向监视图像添加旋转参数。 URL路径的结尾，紧跟`wid=1000`，键入`&rotate=90`，然后按&#x200B;**[!UICONTROL Enter]**。 [尝试它](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}。
 
@@ -91,7 +90,7 @@ _“我真的很想拍这张照片，好让大手指向四个，小手指向1，
 但是，通过Dynamic Media，如果您具有不同的图像预设，则可以在需要时随时使用这些图像。 图像预设可强制实施标准。
 
 ![主文件方法](/help/assets/dynamic-media/assets/dm-onefile.png)
-_最佳：一个使用图像预设即时创建多个演绎版的文件，如`Search_Grid`和`Thumbnail`。_
+_最佳：一个文件使用图像预设即时创建多个演绎版，如`Search_Grid`和`Thumbnail`。_
 
 | **为什么使用图像预设？** | |
 |---|---|
@@ -119,7 +118,7 @@ _Medium_&#x200B;图像预设的宽度为500像素，高度为800像素。 在本
 
 选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡可为您提供资源色彩空间的选项。 根据您在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中选择的格式（在上例中选择了JPEG），您可以在RGB、灰度或CMYK中交付资源。 从&#x200B;**[!UICONTROL 颜色配置文件]**&#x200B;下拉菜单中，您可以选择如何交付要用于打印的CMYK图像资产。 另外请注意，还可以应用其他参数来锐化图像。 在这种情况下，应用了&#x200B;**[!UICONTROL 钝化蒙版]**。
 
-![通过选择“高级”选项卡中的选项来创建图像预设](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
+![通过从“高级”选项卡中选择选项来创建图像预设](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _通过选择“高级”选项卡中的选项来创建图像预设。_
 
 您还记得在之前的[Dynamic Media URL剖析](#dm-journey-d)中，您阅读了有关Dynamic Media URL及其构建方式的信息。 在&#x200B;**[!UICONTROL 图像修饰符]**&#x200B;文本框中，您可以键入所需的任何其他图像处理参数。 使用预设交付图像时，这些参数会包含在URL的预设名称中。 在上面的屏幕快照中，添加了参数`bgc=451B15`。 也就是说，添加了深棕色背景颜色。
@@ -182,8 +181,8 @@ _Experience Manager Assets卡片视图中的`Running`图像集。_
 
 首先，选择构建图像集以在预览中将其打开，如下例所示。
 
-![已选择“查看器”选项的“预览中正在运行的图像集”](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
-_选择了查看器选项预览中的`Running`图像集。_
+![在选择了“查看器”选项的情况下预览中运行的图像集](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
+_已选择“查看器”选项预览中的`Running`图像集。_
 
 请注意，在预览中，您可以选择跑步鞋样本并放大和缩小鞋子。 要将查看器应用到集，请从下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**。
 
@@ -217,7 +216,7 @@ _应用了弹出查看器的`Running`图像集。_
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -227,8 +226,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media教程_
 
-* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/zh-hans?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
+* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
 
 _Dynamic Media查看器_
 

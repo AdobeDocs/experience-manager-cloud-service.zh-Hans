@@ -2,11 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service的HIPAA准备工作
 description: 了解Experience Manager as a Cloud Service对HIPAA法规的支持，以及如何在实施新的AEM as a Cloud Service项目时实现合规性。
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 6%
 >* Adobe信任中心中的[HIPAA和Adobe产品和服务](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)
 >* [Adobe隐私中心](https://www.adobe.com/cn/privacy.html)
 
-对于Adobe Experience Manager (AEM) as a Cloud Service，Adobe正在提供文档以帮助您了解HIPAA准备情况。 它可以帮助您遵守这些法规。
+对于Adobe Experience Manager (AEM) as a Cloud Service，Adobe正在提供文档以帮助您了解HIPAA准备情况。 这些内容可帮助您符合相关法规。
 
 ## 健康保险流通与责任法案(HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -132,7 +133,7 @@ Adobe HIPAA就绪服务依赖于共同责任安全模型，要求客户和Adobe�
 
 下表显示了支持环境类型在HIPAA就绪时的位置。
 
-| | RDE | 开发 | Stage  | Prod |
+| | RDE | 开发 | 暂存  | Prod |
 | --- | --- | --- | --- | --- |
 | 环境类型  | 否  | 否  | 否  | 是  |
 

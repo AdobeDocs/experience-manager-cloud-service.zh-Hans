@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1341'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 * 主题
 * 表单模板<!-- (XFA forms) -->
 * PDF forms
-* 文档(平面PDF文档)
+* 文档（平面PDF文档）
 * 表单集
 * 资源（图像、架构和样式表）
 

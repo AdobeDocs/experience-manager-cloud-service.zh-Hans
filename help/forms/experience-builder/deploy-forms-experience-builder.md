@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1428'
 ht-degree: 75%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 75%
 
 >[!IMPORTANT]
 >
-> **文档可能会发生变化**：此文档目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期访问计划期间不断改进，其功能、命令和示例可能会发生变化。
+> **文档可能会发生变化**：此文档目前正在针对产品进行测试，因此可能会进行更新和修订。 随着 Forms Experience Builder 在早期访问计划期间不断改进，其功能、命令和示例可能会发生变化。
 
-此综合指南可帮助您开始使用对话式 AI 技术创建和管理表单。无论您是想要创建第一个表单的初学者，还是想要利用复杂功能的高级用户，您都可以找到详细信息和实际示例，指导您了解 Forms Experience Builder 的各种功能。
+此综合指南可帮助您开始使用对话式 AI 技术创建和管理表单。 无论您是想要创建第一个表单的初学者，还是想要利用复杂功能的高级用户，您都可以找到详细信息和实际示例，指导您了解 Forms Experience Builder 的各种功能。
 
 ## 先决条件和设置
 
@@ -44,11 +44,11 @@ ht-degree: 75%
 
 您的设置过程取决于您的AEM Forms实施。 选择与项目匹配的路径。
 
-用于Edge Delivery Services的&#x200B;**&#x200B;**
+用于Edge Delivery Services的&#x200B;****
 
 如果您使用的是Edge Delivery Services Forms，并且主要使用通用编辑器。 [为Edge Delivery Services Forms准备项目](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 这是一次性设置，用于启用Forms Experience Builder。
 
-基于核心组件的表单&#x200B;**&#x200B;**
+基于核心组件的表单&#x200B;****
 
 如果您在AEM创作环境中使用基于Core Components的自适应Forms，请确保为您的环境启用了[自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)。
 
@@ -90,7 +90,7 @@ ht-degree: 75%
 
 | 符号 | 用途 | 使用示例 |
 |--------|---------|---------------|
-| `/` | 快速操作和快捷方式 | `/create-form contact form`、`/help validation rules`、`/update-layout wizard` |
+| `/` | 快速操作和快捷方式 | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
 | `@` | 引用现有的表单字段 | `@email`、`@firstName`、`Make @phoneNumber required` |
 | 纯文本 | 自然对话 | “添加一个必填的电话号码字段”，“创建电子邮件地址的验证方法” |
 

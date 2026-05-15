@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 - 小写字母 (a-z)
 - 大写字母 (A-Z)
 - 数字 (0-9)
-- 特殊字符 (@$!%*?&amp;)
+- 特殊字符(@$！%*?&amp;)
 
 
 ## 电子邮件地址
@@ -103,7 +103,7 @@ ht-degree: 100%
 ^#[0-9a-fA-F]{6}$
 ```
 
-验证 6 位十六进制颜色代码。例如，#FFFFFF。
+验证 6 位十六进制颜色代码。 例如，#FFFFFF。
 
 
 ## IP 地址

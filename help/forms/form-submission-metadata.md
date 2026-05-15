@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 ![存储复选框中的多个值](assets/checkbox-metadata.png)
 
-选择自适应表单容器，然后在表单属性中添加存储`cb1`的元数据键`checkbox1.value`并发布表单。 当客户填写表单时，客户在复选框字段中选择“护照和社会安全号码”选项。 值1和2在提交元数据的cb1字段中存储为1、2。
+选择自适应表单容器，然后在表单属性中添加存储`checkbox1.value`的元数据键`cb1`并发布表单。 当客户填写表单时，客户在复选框字段中选择“护照和社会安全号码”选项。 值1和2在提交元数据的cb1字段中存储为1、2。
 
 在复选框字段中为多个选定值选择的![元数据条目](assets/metadata-entry.png)
 

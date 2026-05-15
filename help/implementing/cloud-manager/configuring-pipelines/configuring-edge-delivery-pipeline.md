@@ -4,14 +4,13 @@ description: 了解如何添加Edge Delivery管道以生成代码并将其部署
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 14%
+source-wordcount: '636'
+ht-degree: 15%
 
 ---
 
@@ -98,14 +97,14 @@ ht-degree: 14%
 
      另请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，了解如何在Cloud Manager中添加和管理存储库。
 
-   * **Git分支** — 使用下拉列表选择所选存储库中的特定分支。 如有必要，请单击“回收”图标或“刷新”图标![，以便在最近推送后重新加载Git分支下拉列表。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)
+   * **Git分支** — 使用下拉列表选择所选存储库中的特定分支。 如有必要，请单击“回收”图标或“刷新”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)，以便在最近推送后重新加载Git分支下拉列表。![
    * **代码位置** — 定义管道就绪代码在存储库中开始的文件夹路径（`/`等于存储库根）。
 
    ![配置管道](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 
-1. 单击&#x200B;**保存**。
+1. 单击“**保存**”。
 
-您现在可以从[项目概述](managing-pipelines.md)页面上的&#x200B;**管道**&#x200B;卡或&#x200B;**管道**&#x200B;页面&#x200B;**管理您的管道**。
+您现在可以从&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道**&#x200B;卡或&#x200B;**管道**&#x200B;页面[管理您的管道](managing-pipelines.md)。
 
 
 ![Edge Delivery 管道构件显示管道名称、状态、存储库和分支](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)

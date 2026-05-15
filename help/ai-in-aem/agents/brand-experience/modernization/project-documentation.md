@@ -2,14 +2,14 @@
 title: 项目文档技能
 description: 了解Experience现代化代理的文档技能如何帮助您加快项目交付。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 90fb75c7febc8a8138e13a2f3ff872f38eeb3baa
+role: User, Admin, Developer
+exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
-
 
 # 项目文档技能 {#project-documentation}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您无权访问Edge Delivery Services管理API，或者控制台设置中的选项&#x200B;**允许LLM代表我访问admin.hlx.page** [。](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)未启用，代理将基于其可访问的代码库生成文档。
+>如果您无权访问Edge Delivery Services管理API，或者控制台设置中的选项&#x200B;**允许LLM代表我访问admin.hlx.page** [。](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) 如果未启用，代理将基于其可访问的代码库生成文档。
 
 ## 疑难解答 {#troubleshooting}
 

@@ -9,15 +9,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 0%
+source-wordcount: '1151'
+ht-degree: 1%
 
 ---
 
-
-# 将自适应Forms与XFA表单模板同步{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# 将自适应表单与 XFA 表单模板同步{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## 简介 {#introduction}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * [创建自适应表单](creating-adaptive-form.md)
 
-* XFA(XML Forms架构)
+* XFA（XML Forms架构）
 
 要使用文章中提供的示例，请下载示例包，如下一节[示例包](synchronizing-adaptive-forms-xfa.md#p-sample-package-p)中所述。
 

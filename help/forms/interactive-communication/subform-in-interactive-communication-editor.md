@@ -7,10 +7,10 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 通过使用子表单，作者可以维护一致性、管理分页并将整个部分绑定到结构化数据源。
 
-## 2.财产
+## &#x200B;2. 属性
 
 2.1窗体设计布局
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 - 基于数据结构，支持静态和动态内容填充。
 
-## 3.使用情况
+## &#x200B;3. 用途
 
 子表单广泛用于：
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 作者可以将子表单从对象库拖到画布中，并从“属性”面板中调整其布局、位置和绑定。
 
-## 4.最佳做法
+## &#x200B;4. 最佳做法
 
 - **明智地选择布局：**&#x200B;对于需要精确放置的表单，请使用固定布局；对于动态、数据驱动的通信，请使用可流动布局。
 

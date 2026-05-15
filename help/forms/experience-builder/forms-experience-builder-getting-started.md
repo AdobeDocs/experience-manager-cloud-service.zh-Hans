@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1090'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ Forms Experience Builder是一款AI支持的表单创建工具，可让您使用
 
 使用Forms向导选择[核心组件模板](/help/forms/creating-adaptive-form-core-components.md)或[Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)模板、主题和其他选项后，Forms Experience Builder提供了两种创建表单的主要方法：
 
-### 1.从头开始创建 {#create-from-scratch}
+### &#x200B;1. 从头开始创建 {#create-from-scratch}
 
 使用要求的自然语言描述构建表单。
 
@@ -71,11 +71,11 @@ Forms Experience Builder是一款AI支持的表单创建工具，可让您使用
 
 
 
-### 2.导入和转换 {#import-and-convert}
+### &#x200B;2. 导入和转换 {#import-and-convert}
 
 将现有文档转换为交互式数字表单。
 
-在使用此选项之前，请上传PDF文件或表单图像。 PDF可以是AcroForm或基于XFA的PDF表单。 对于[其他类型的PDF forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，使用Adobe Acrobat中的[准备表单](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)选项将它们转换为AcroForm
+在使用此选项之前，请上传PDF文件或表单图像。 PDF可以是AcroForm或基于XFA的PDF表单。 对于[其他类型的PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，使用Adobe Acrobat中的[准备表单](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)选项将它们转换为AcroForm
 
 **使用时间：**
 

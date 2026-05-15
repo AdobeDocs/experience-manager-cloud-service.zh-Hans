@@ -4,13 +4,12 @@ description: 了解如何使用专用管道拆分暂存和生产部署。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1120'
 ht-degree: 49%
 
 ---
@@ -26,7 +25,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## 概述 {#overview}
 
-暂存环境和生产环境紧密耦合。默认情况下，对它们的部署链接到单一管道。这是一个部署管道，可部署到该程序中的暂存环境和生产环境。 虽然这种耦合通常是合适的，但在某些用例中存在缺点：
+暂存环境和生产环境紧密耦合。 默认情况下，对它们的部署链接到单一管道。 这是一个部署管道，可部署到该程序中的暂存环境和生产环境。 虽然这种耦合通常是合适的，但在某些用例中存在缺点：
 
 * 如果您只想部署到暂存环境，您可以拒绝管道中的&#x200B;**升级到生产**&#x200B;步骤。 但是，执行操作会被标记为已取消。
 * 如果您希望将暂存环境中的最新代码部署到生产环境中，则需要重新部署整个管道，其中包括暂存部署，即使那里没有任何代码更改也是如此。
@@ -34,10 +33,10 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 仅暂存和仅生产管道通过提供专用的部署选项为这些用例提供解决方案。
 
-* **仅暂存部署管道：**&#x200B;仅会部署到暂存环境，部署和测试完成后执行即会结束。仅暂存管道的行为与标准耦合全栈生产管道相同，但没有生产部署步骤（审批、计划、部署）。
+* **仅暂存部署管道：**&#x200B;仅会部署到暂存环境，部署和测试完成后执行即会结束。 仅暂存管道的行为与标准耦合全栈生产管道相同，但没有生产部署步骤（审批、计划、部署）。
 * **仅生产部署管道：**&#x200B;通过选择最近成功的阶段执行仅部署到生产环境。 然后将其工件部署到生产中。 仅限生产的管道会重用暂存部署工件，从而绕过构建阶段。
 
-当全栈生产管道运行时，不会执行仅暂存或仅生产管道，反之亦然。如果仅暂存生产管道和全栈生产管道都配置了 **On Git Changes** 触发器，并且指向同一个分支和存储库，则只有仅暂存生产管道会自动启动。仅限生产的管道不会启动 **`On Git Changes`**，因为它们未直接链接到存储库。
+当全栈生产管道运行时，不会执行仅暂存或仅生产管道，反之亦然。 如果仅暂存生产管道和全栈生产管道都配置了 **On Git Changes** 触发器，并且指向同一个分支和存储库，则只有仅暂存生产管道会自动启动。 仅限生产的管道不会启动 **`On Git Changes`**，因为它们未直接链接到存储库。
 
 仅限生产的管道是手动触发的，因为它们没有直接链接到 **On Git Changes** 的存储库。
 
@@ -53,7 +52,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## 管道创建 {#pipeline-creation}
 
-仅生产和仅暂存管道以与标准耦合的[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)类似的方式创建。请参阅这些文件，了解详细信息。
+仅生产和仅暂存管道以与标准耦合的[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)类似的方式创建。 请参阅这些文件，了解详细信息。
 
 1. 在&#x200B;**管道**&#x200B;窗口中，单击&#x200B;**添加管道**。
 
@@ -100,7 +99,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 ### 创建仅生产管道 {#prod-only}
 
 1. 在对话框&#x200B;**添加仅生产管道**&#x200B;中，在&#x200B;**管道名称**&#x200B;文本字段中，输入管道的自由文本名称。
-1. 在&#x200B;**管道名称**&#x200B;字段中，键入所需的名称。
+1. 在&#x200B;**管道名称**&#x200B;字段中，输入所需的名称。
 1. 在&#x200B;**生产部署选项**&#x200B;下，选择&#x200B;**在部署到生产之前暂停**。
 
    此选项直接在生产步骤之前插入手动审批审核。 管道将停止并等待批准者（例如部署管理器或业务负责人）批准或取消生产部署。
@@ -113,7 +112,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## 运行仅阶段管道和仅生产管道 {#running}
 
-您可以像启动任何其他管道[一样启动新管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)。 您还可以直接从仅限暂存管道的执行详细信息触发仅限生产的管道。
+您可以像启动任何其他管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)一样启动新管道[。 您还可以直接从仅限暂存管道的执行详细信息触发仅限生产的管道。
 
 <!--
  * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.

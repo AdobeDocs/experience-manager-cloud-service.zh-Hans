@@ -8,10 +8,10 @@ exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
 hide: true
 hidefromToC: true
 index: false
-source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
 在开始之前，请确保满足以下先决条件：
 
-* 确保您具有[访问特定于您使用环境的Adobe Developer Console](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/access-rights)的权限。
+* 确保您具有[访问特定于您使用环境的Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)的权限。
 * [在Adobe Admin Console中分配系统管理员或开发人员角色](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)以启用对Adobe Developer Console的访问。
 
 ## 如何使用OAuth服务器到服务器身份验证生成访问令牌？
@@ -76,7 +76,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
 >[!BEGINTABS]
 
->[!TAB 用于AEM Forms Communications API的] 
+>用于AEM Forms Communications API的[!TAB ]
 
 1. 单击&#x200B;**添加API**
 
@@ -93,7 +93,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
       ![选择身份验证方法](/help/forms/assets/adc-add-authentication-method.png)
 
->[!TAB 自适应Forms运行时API的] 
+>自适应Forms运行时API的[!TAB ]
 
 1. **单击添加API**
 
@@ -105,7 +105,7 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
       ![添加Forms通信API](/help/forms/assets/adc-add-runtime-api.png)
 
    3. 点击&#x200B;**下一个**
-   4. 选择&#x200B;**OAuth服务器到服务器**&#x200B;身份验证方法。
+   4. 选择&#x200B;**OAuth服务器到服务器**身份验证方法。
       ![选择身份验证方法](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
@@ -161,27 +161,27 @@ OAuth服务器到服务器身份验证允许对AEM Forms Communications API进�
 
 >[!BEGINTABS]
 
->[!TAB 用于测试的] 
+>用于测试的[!TAB ]
 
 在Adobe Developer Console中手动生成访问令牌：
 
-1. **Navigate to your Project**
-   1. In Adobe Developer Console, open your project
-   2. Click **OAuth Server-to-Server**
+1. **导航到您的项目**
+   1. 在Adobe Developer Console中，打开您的项目
+   2. 单击&#x200B;**OAuth服务器到服务器**
 
-2. **Generate Access Token**
-   1. Click the **&quot;Generate access token&quot;** button in your project&#39;s API section
-   2. Copy the generated access token
+2. **生成访问令牌**
+   1. 单击项目API部分中的&#x200B;**“生成访问令牌”**&#x200B;按钮
+   2. 复制生成的访问令牌
 
-   ![Generate Access Token](/help/forms/assets/adc-access-token.png)
+   ![生成访问令牌](/help/forms/assets/adc-access-token.png)
 
    >[!NOTE]
    >
-   > Access token is valid for only for **24 hours**
+   > 访问令牌仅在&#x200B;**24小时**&#x200B;内有效
 
->[!TAB For Production]
+>用于生产]的[!TAB 
 
-Generate tokens programmatically using [Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以编程方式生成令牌：
 
 **必需的凭据：**
 
@@ -195,7 +195,7 @@ Generate tokens programmatically using [Adobe IMS](https://experienceleague.adob
 https://ims-na1.adobelogin.com/ims/token/v3
 ```
 
-**Sample Request (curl):**
+**示例请求(curl)：**
 
 ```bash
 curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -220,19 +220,19 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
 
-## Best practices: Managing credentials for Development, Staging, and Production
+## 最佳实践：管理开发、暂存和生产凭据
 
-* Always use separate credentials for Development, Staging, and Production.
+* 始终使用单独的凭据进行“开发”、“暂存”和“生产”。
 
-* Map each credential to the correct AEM environment URL.
+* 将每个凭据映射到正确的AEM环境URL。
 
-* Store secrets securely and never commit them to source control.
+* 安全地存储密钥，绝不会将其提交到源代码管理。
 
-* Track access token validity, as tokens are valid for 24 hours only.
+* 跟踪访问令牌的有效性，因为令牌仅在24小时内有效。
 
 ## 后续步骤
 
-To learn how to set up environment for Synchronous Forms Communication APIs, see [AEM Forms as a Cloud Service Communications Synchronous Processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
+要了解如何设置同步Forms通信API的环境，请参阅[AEM Forms as a Cloud Service通信同步处理](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)。
 
 
 ## 相关文章

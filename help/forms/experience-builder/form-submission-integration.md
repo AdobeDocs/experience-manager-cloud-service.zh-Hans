@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 1%
 
 ---
 
@@ -161,12 +161,12 @@ Forms Experience Builder提供强大的集成功能，将您的表单与外部�
 - 自动创建支持票证
 - 向客户发送确认电子邮件
 
-**实现：**
+**实施：**
 将客户反馈表提交到：
-1.发送包含表单详细信息的电子邮件<support@company.com>
-2.发布到CRM API以创建客户记录
-3.触发支持票证创建工作流
-4.向客户发送感谢电子邮件
+1. 发送电子邮件至<support@company.com>，其中包含表单详细信息
+2. 发布到CRM API以创建客户记录
+3. 触发支持票证创建工作流
+4. 向客户发送感谢电子邮件
 
 ### 员工入门培训表
 
@@ -177,12 +177,12 @@ Forms Experience Builder提供强大的集成功能，将您的表单与外部�
 - 触发载入工作流
 - 在各种系统中创建用户帐户
 
-**实现：**
+**实施：**
 处理员工入职流程：
-1.发送包含员工详细信息的电子邮件<hr@company.com>
-2.将文档上传到SharePoint员工文件夹
-3.在Power Automate中开始载入工作流
-4.在HR系统、电子邮件和其他工具中创建帐户
+1. 发送电子邮件给<hr@company.com>，其中包含员工详细信息
+2. 将文档上传到SharePoint员工文件夹
+3. 在Power Automate中开始载入工作流
+4. 在HR系统、电子邮件和其他工具中创建帐户
 
 ### 商机开发表单
 
@@ -193,12 +193,12 @@ Forms Experience Builder提供强大的集成功能，将您的表单与外部�
 - 将潜在客户添加到CRM系统
 - 触发跟进电子邮件序列
 
-**实现：**
+**实施：**
 流程商机开发：
-1.将潜在客户数据发布到Marketo API
-2.在Salesforce中创建潜在客户记录
-3.向销售团队发送电子邮件，其中包含潜在客户详细信息
-4.启动自动化电子邮件培养序列
+1. 将潜在客户数据发布到Marketo API
+2. 在Salesforce中创建潜在客户记录
+3. 向销售团队发送电子邮件，其中包含商机详细信息
+4. 启动自动化电子邮件培养序列
 
 ## 高级集成方案
 

@@ -7,16 +7,16 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '764'
 ht-degree: 9%
 
 ---
 
 # 自适应表单中的电子邮件模板
 
-通过自适应Forms，您可以使用HTML和纯文本电子邮件模板。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
+通过自适应Forms，您可以使用HTML和纯文本电子邮件模板。 HTML 电子邮件模板可让您在提交表单时发送内容丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据进行自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 使用自适应表单，您可以上传包含 HTML 模板的文件，也可以使用纯文本编辑器来创建这些模板。
 
 ![HTML 电子邮件模板](/help/forms/assets/html-email.png)
 

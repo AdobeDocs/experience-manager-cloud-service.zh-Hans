@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 1%
+source-wordcount: '2069'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ HTML5 forms功能作为包部署在嵌入式AEM实例中，并使用RESTful [Apa
 
 有关REST端点和支持的请求参数的详细信息，请参阅[渲染表单模板](/help/forms/rendering-form-template.md)。
 
-当用户从客户端设备(如iOS或Android™浏览器)发出请求时，Sling首先根据请求URL解析配置文件节点。 从该配置文件节点中，读取&#x200B;**sling:resourceSuperType**&#x200B;和&#x200B;**sling:resourceType**&#x200B;以确定可处理此表单渲染请求的所有可用脚本。 然后，它使用Sling请求选择器以及请求方法来识别最适合处理此请求的脚本。 请求到达配置文件渲染器JSP后，JSP会调用Forms OSGi服务。
+当用户从客户端设备（如iOS或Android™浏览器）发出请求时，Sling首先根据请求URL解析配置文件节点。 从该配置文件节点中，读取&#x200B;**sling:resourceSuperType**&#x200B;和&#x200B;**sling:resourceType**&#x200B;以确定可处理此表单渲染请求的所有可用脚本。 然后，它使用Sling请求选择器以及请求方法来识别最适合处理此请求的脚本。 请求到达配置文件渲染器JSP后，JSP会调用Forms OSGi服务。
 
 有关Sling脚本解析的更多详细信息，请参阅[AEM Sling备忘单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)或[Apache Sling Url分解](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)。
 
@@ -97,7 +97,7 @@ HTML5 forms使用缓存来优化吞吐量和响应时间。 您可以配置缓�
   </tr>
   <tr>
    <td>激进</td>
-   <td>缓存渲染的HTML内容<br />缓存在保守级别缓存的所有项目。<br /> <strong>注意</strong>：此策略可产生最佳性能，但会消耗更多内存来存储缓存的项目。</td>
+   <td>缓存渲染的HTML内容<br />缓存所有在保守级别缓存的项目。<br /> <strong>注意</strong>：此策略可提供最佳性能，但会占用更多内存来存储缓存的项目。</td>
   </tr>
  </tbody>
 </table>
@@ -112,7 +112,7 @@ HTML5 forms使用LRU策略执行内存缓存。 如果缓存策略设置为“�
 
 配置服务允许调整HTML5表单的配置参数和缓存设置。
 
-要更新这些设置，请转到CQ Felix Admin Console(位于https://&lt;&#39;[server]：[port]&#39;/system/console/configMgr)，搜索并选择Mobile Forms配置。
+要更新这些设置，请转到CQ Felix Admin Console（位于https://&lt;&#39;[server]：[port]&#39;/system/console/configMgr），搜索并选择Mobile Forms配置。
 
 可以使用配置服务配置高速缓存大小或禁用高速缓存。 您还可以使用“调试选项”参数启用调试。 有关调试表单的详细信息，请参阅[调试HTML5表单](/help/forms/debug.md)。
 
@@ -175,9 +175,9 @@ Sling包包含与配置文件和配置文件渲染器相关的内容。
 
 #### 配置文件渲染器 {#profile-renderers}
 
-配置文件节点具有值为&#x200B;**xfaforms/profile:resourceSuperType**&#x200B;的属性&#x200B;**sling**。 此属性在内部将请求转发到&#x200B;**/libs/xfaforms/profile**&#x200B;文件夹中配置文件节点的sling脚本。 这些脚本是JSP页面，是用于组合HTML表单和所需JS/CSS工件的容器。 这些页面包括对以下内容的引用：
+配置文件节点具有值为&#x200B;**xfaforms/profile**&#x200B;的属性&#x200B;**sling:resourceSuperType**。 此属性在内部将请求转发到&#x200B;**/libs/xfaforms/profile**&#x200B;文件夹中配置文件节点的sling脚本。 这些脚本是JSP页面，是用于组合HTML表单和所需JS/CSS工件的容器。 这些页面包括对以下内容的引用：
 
-* **xfaforms.I18N。&lt;locale>**：此库包含本地化数据。
+* **xfaforms.I18N.&lt;区域设置>**：此库包含本地化数据。
 * **xfaforms.profile**：此库包含XFA脚本和布局引擎的实施。
 
 这些库被建模为CQ客户端库，这些库利用CQ框架JavaScript库的自动连接、缩小和压缩功能。

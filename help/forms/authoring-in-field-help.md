@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 4%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 2%
 
 您可以使用侧边栏中“属性”选项卡的“帮助内容”部分中的以下选项指定上下文帮助。
 
-* [简短描述](authoring-in-field-help.md#p-short-description-p)
-* [详细描述](authoring-in-field-help.md#p-long-description-p)
+* [简要说明](authoring-in-field-help.md#p-short-description-p)
+* [详细说明](authoring-in-field-help.md#p-long-description-p)
 
 ![表单字段的上下文帮助](assets/descriptions.png)
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 >
 >长描述将覆盖短描述。 如果同时指定了两者，则只显示详细描述。
 
-### 简短描述 {#short-description}
+### 简要说明 {#short-description}
 
 简短描述字段用于提供有关填写表单字段的快速和简短提示。 将鼠标悬停在简短描述字段中时，该字段中指定的文本将显示为工具提示。
 
@@ -49,13 +49,13 @@ ht-degree: 2%
 
 ![字段下的永久短上下文帮助](assets/short1.png)
 
-### 详细描述 {#long-description}
+### 详细说明 {#long-description}
 
 您可以使用详细描述字段指定长文本或嵌入富媒体内容（包括视频）作为上下文帮助。 例如，下图显示了如何将视频作为上下文帮助进行嵌入。
 
 ![添加富媒体作为表单字段的上下文帮助](assets/long-descriptions.png)
 
-添加完整描述是否显示&#x200B;**？字段旁边的**&#x200B;图标。 单击此图标将显示在详细描述部分中添加的内容。
+添加详细描述时显示&#x200B;**？** 字段旁边的图标。 单击此图标将显示在详细描述部分中添加的内容。
 
 ![富媒体上下文帮助示例](assets/photoshop.png)
 
@@ -65,6 +65,6 @@ ht-degree: 2%
 
 ![添加表单面板的上下文帮助](assets/panel-level-help.png)
 
-添加面板的帮助是否显示&#x200B;**？面板描述旁边的**&#x200B;图标。 单击图标将显示在面板编辑对话框的“帮助内容”部分中添加的内容。
+添加面板的帮助将显示&#x200B;**？** 图标图标。 单击图标将显示在面板编辑对话框的“帮助内容”部分中添加的内容。
 
 ![表单面板级别](assets/photoshop-1.png)的上下文帮助示例

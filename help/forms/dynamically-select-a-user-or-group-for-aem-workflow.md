@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 2%
+source-wordcount: '932'
+ht-degree: 4%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 2%
 
 在大型组织中，需要动态地为流程选择用户。 例如，根据代理与客户的接近程度选择现场代理为客户提供服务。 在这种情况下，将动态选择代理。
 
-在OSGi[!DNL Adobe Sign]上分配任务和[以Forms为中心的工作流的](aem-forms-workflow.md)步骤提供了用于动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包为“分配任务”步骤动态选择被分配人，或为“签名文档”步骤选择签名者。
+在OSGi](aem-forms-workflow.md)上分配任务和[以Forms为中心的工作流的[!DNL Adobe Sign]步骤提供了用于动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包为“分配任务”步骤动态选择被分配人，或为“签名文档”步骤选择签名者。
 
 ## 使用ECMAScript动态选择用户或组 {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
 ECMAScript是一种脚本语言。 它用于客户端脚本和服务器应用程序。 执行以下步骤，使用ECMAScript动态选择用户或组：
 
-1. 打开CRXDE Lite。 URL是`https://'[server]:[port]'/crx/de/index.jsp`
+1. 打开 CRXDE Lite。 URL是`https://'[server]:[port]'/crx/de/index.jsp`
 1. 在以下路径创建扩展名为.ecma的文件。 如果路径（节点结构）不存在，请创建路径：
 
    * （分配任务步骤的路径） `/apps/fd/dashboard/scripts/participantChooser`
@@ -119,7 +119,7 @@ function getAdobeSignRecipients() {
 
 您可以使用[RecipientInfoSpecificer](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java接口动态选择[!DNL Adobe Sign]的用户或组并分配任务步骤。 您可以创建一个使用了[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java接口的OSGi捆绑包，并将其部署到[!DNL AEM Forms]服务器。 该选项可供在AEM工作流的分配任务和[!DNL Adobe Sign]组件中选择。
 
-您需要[[!DNL AEM Forms] 客户端SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)文件来编译下面列出的代码示例。 将这些jar文件作为外部依赖项添加到OSGi捆绑包项目中。 您可以使用任何Java IDE创建OSGi捆绑包。 以下过程提供了使用Eclipse创建OSGi捆绑包的步骤：
+您需要[[!DNL AEM Forms] 客户端SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)文件来编译下面列出的代码示例。 将这些jar文件作为外部依赖项添加到OSGi捆绑包项目中。 您可以使用任何Java IDE创建OSGi捆绑包。 以下过程提供了使用Eclipse创建OSGi捆绑包的步骤：
 
 1. 打开Eclipse IDE。 导航到&#x200B;**[!UICONTROL 文件]**> **[!UICONTROL 新建项目]**。
 1. 在选择向导屏幕上，选择&#x200B;**[!UICONTROL Maven项目]**，然后单击&#x200B;**[!UICONTROL 下一步]**。

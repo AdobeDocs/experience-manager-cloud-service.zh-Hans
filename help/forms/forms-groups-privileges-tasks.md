@@ -5,10 +5,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 22%
+source-wordcount: '259'
+ht-degree: 19%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 22%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以[创建组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hans#accessing)并将策略和[用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hans#accessing)分配给组。 这些策略控制属于组的用户的权限。
+您可以[创建组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)并将策略和[用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)分配给组。 这些策略控制属于组的用户的权限。
 
 设置[!DNL AEM Forms] as a Cloud Service后，下表列出的组（如[!DNL forms-users]和forms-power-user）将自动可供分配：
 
@@ -52,7 +52,7 @@ ht-degree: 22%
      <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
- <tr>
+  <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -83,16 +83,12 @@ ht-degree: 22%
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
   </tr>
-  -->
-  <!--
-   <tr>
+  <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul>
-    -->
-    <!-- <li>Create an inbox application</li>  -->
-    <!--
-     <li>Create a workflow model</li> 
+    <li>Create an inbox application</li>
+    <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -100,12 +96,10 @@ ht-degree: 22%
    <td>
     <ul> 
      <li>Use AEM inbox applications<br />
-     -->
-     <!-- 
      <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
-     -->
-    </ul> </td> 
+  </ul> </td> 
   </tr>
+  -->
   <tr>
    <td>[!DNL fd-administrators]</td> 
    <td>
@@ -124,7 +118,7 @@ ht-degree: 22%
 
 ## AEM Forms是保险运营的企业级吗？
 
-是。AEM Forms提供了企业功能，如基于角色的访问控制、审核跟踪、工作流编排、文档生成和部署灵活性，这些都是保险业务大规模开展所必需的。
+是。 AEM Forms提供了企业功能，如基于角色的访问控制、审核跟踪、工作流编排、文档生成和部署灵活性，这些都是保险业务大规模开展所必需的。
 
 ## 另请参阅
 

@@ -6,8 +6,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
-workflow-type: ht
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -17,13 +17,13 @@ ht-degree: 100%
 
 当用户登录 AEM as a Cloud Service 或使用访问令牌时，Adobe Admin Console 用户组、产品轮廓和产品轮廓服务都会作为组同步到 AEM 存储库中。
 
-从 AEM 维护版本 19149 开始，群组同步行为发生了变化，以减少 UI 混乱并优化性能。具体来说，以下两类 AEM 组的用户组成员资格将不再同步：
+从 AEM 维护版本 19149 开始，群组同步行为发生了变化，以减少 UI 混乱并优化性能。 具体来说，以下两类 AEM 组的用户组成员资格将不再同步：
 
-1. 具有后缀 `GROUP_NAME_SUFFIX` 的 AEM 组。这些组不会出现在 Adobe Developer Console 中，但会出现在 AEM 群组管理屏幕中，如下所示。如果您的 AEM 应用程序引用这些组（这种情况不太可能发生），请确保引用不带该后缀的 Adobe Admin Console 用户组。
+1. 具有后缀 `GROUP_NAME_SUFFIX` 的 AEM 组。 这些组不会出现在 Adobe Developer Console 中，但会出现在 AEM 群组管理屏幕中，如下所示。 如果您的 AEM 应用程序引用这些组（这种情况不太可能发生），请确保引用不带该后缀的 Adobe Admin Console 用户组。
 
    ![已移除第 1 组](/help/security/assets/removed-groups-1.png)
 
-1. 与 Adobe Admin Console 产品轮廓关联的 AEM 组与特定环境无关。这可能包括以下产品轮廓：
+1. 与 Adobe Admin Console 产品轮廓关联的 AEM 组与特定环境无关。 这可能包括以下产品轮廓：
 
    * 与其他 Adobe 产品相关
    * 与其他 AEM 程序相关
@@ -38,10 +38,10 @@ ht-degree: 100%
 
 ![检查后缀](/help/security/assets/suffix-check.png)
 
-这将导航到 Adobe Admin Console，如下面的屏幕快照所示。请注意，`<suffix>` 可以是一组随机字符，也可以是层级、程序和环境 ID（例如，`author - Program 12345 - Environment 45678`）。
+这将导航到 Adobe Admin Console，如下面的屏幕快照所示。 请注意，`<suffix>` 可以是一组随机字符，也可以是层级、程序和环境 ID（例如，`author - Program 12345 - Environment 45678`）。
 
 ![Admin Console 中的后缀](/help/security/assets/admin-console-profile-suffixes.png)
 
 如果您的 AEM 应用程序引用了不再出现在 AEM 中的组（这种情况不太可能发生），请确保改用 i) 来自正确 AEM 实例的产品轮廓或 ii) Adobe Admin Console 用户组。
 
-用户的组成员资格在他们登录环境时同步，并且他们会从与当前环境无关的组中移除。这些组本身仍然存在，并且包括自启用该功能以来未登录的用户。
+用户的组成员资格在他们登录环境时同步，并且他们会从与当前环境无关的组中移除。 这些组本身仍然存在，并且包括自启用该功能以来未登录的用户。

@@ -4,16 +4,16 @@ description: 在加入流程开始之前，系统管理员必须了解一些步�
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '700'
 ht-degree: 69%
 
 ---
 
 # 载入准备 {#onboarding-preparation}
 
-现在，通过阅读文章[AEM as a Cloud Service 加入历程简介](overview.md)，您已经知道了加入流程的具体内容，您可能已经为此做好准备。然而，在加入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。
+现在，通过阅读文章[AEM as a Cloud Service 加入历程简介](overview.md)，您已经知道了加入流程的具体内容，您可能已经为此做好准备。 然而，在加入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。
 
 ## 目标 {#objective}
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service 是一个功能强大、灵活的工具，提供了多种
 * 该合同如何影响加入流程。
 * 如何准备加入通话。
 
-如果您不熟悉本页上使用的所有术语，请不要担心。这些术语会在历程的下一部分进行解释。
+如果您不熟悉本页上使用的所有术语，请不要担心。 这些术语会在历程的下一部分进行解释。
 
 <!--
   REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
@@ -34,7 +34,7 @@ AEM as a Cloud Service 是一个功能强大、灵活的工具，提供了多种
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431503/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 -->
 
@@ -79,7 +79,7 @@ Adobe提供：
 
 环境配置过程完成后，合同中定义的系统管理员会收到一封欢迎电子邮件，用于确认他们已被授予访问Adobe Experience Cloud。 如果您正在阅读本文档，那么系统管理员很可能就是您！
 
-电子邮件包含有关如何开始使用 Experience Cloud 服务、Cloud Manager 自助式门户的详细信息。 这封电子邮件还包含从何处获得支持资源、论坛、常见问题等重要信息。在该电子邮件中提供的资源列表中，您还将获得有关如何访问AEM云环境的详细信息。
+电子邮件包含有关如何开始使用 Experience Cloud 服务、Cloud Manager 自助式门户的详细信息。 这封电子邮件还包含从何处获得支持资源、论坛、常见问题等重要信息。 在该电子邮件中提供的资源列表中，您还将获得有关如何访问AEM云环境的详细信息。
 
 >[!TIP]
 >

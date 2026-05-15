@@ -6,9 +6,9 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---

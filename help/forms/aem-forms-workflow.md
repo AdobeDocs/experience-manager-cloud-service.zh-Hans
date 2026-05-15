@@ -9,10 +9,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 1%
+source-wordcount: '2589'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 设置后，可以手动触发这些工作流以完成定义的流程，或在用户提交表单时以编程方式运行。<!-- or [correspondence management](cm-overview.md) letter With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=zh-Hans#authoring)，并为AEM工作流编辑器提供了额外的组件（步骤），以添加对以[!DNL AEM Forms]为中心的工作流的支持。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring)，并为AEM工作流编辑器提供了额外的组件（步骤），以添加对以[!DNL AEM Forms]为中心的工作流的支持。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 所有[!DNL AEM Forms]工作流步骤都支持使用变量。 变量使工作流步骤能够在运行时跨步骤保留和传递元数据。 您可以创建不同类型的变量以存储不同类型的数据。 您还可以创建变量集合（数组），用于存储相关同类型数据的多个实例。 通常，当您需要根据其持有的值做出决策时，或者需要存储稍后在流程中需要的信息时，可以使用变量或变量集合。 有关在这些以Forms为中心的工作流组件（步骤）中使用变量的更多信息，请参阅OSGi上的[以Forms为中心的工作流 — 步骤参考](aem-forms-workflow-step-reference.md)。 有关创建和管理变量的信息，请参阅AEM工作流中的[变量](variable-in-aem-workflows.md)。
 
@@ -46,15 +46,15 @@ OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experiencele
 
 ## AEM Forms是否支持保险审批工作流？
 
-是。AEM Forms支持基于工作流的审核和批准，使理赔人审核、经理批准和重新工作循环成为保险流程的一部分。
+是。 AEM Forms支持基于工作流的审核和批准，使理赔人审核、经理批准和重新工作循环成为保险流程的一部分。
 
 ## AEM Forms是否支持保险的制造商检查流程？
 
-是。AEM Forms工作流可以配置为支持maker-checker模式，确保数据输入和审批角色之间的职责分离。
+是。 AEM Forms工作流可以配置为支持maker-checker模式，确保数据输入和审批角色之间的职责分离。
 
 ## AEM Forms是否可以跟踪保险索赔或申请的状态？
 
-是。AEM Forms工作流允许保险公司在业务流程的不同阶段跟踪表单提交和处理状态。
+是。 AEM Forms工作流允许保险公司在业务流程的不同阶段跟踪表单提交和处理状态。
 
 ## AEM Forms是否支持承保工作流程？
 
@@ -62,20 +62,20 @@ OSGi上以Forms为中心的工作流扩展了[AEM收件箱](https://experiencele
 
 ## AEM Forms是否支持保险流程的审核跟踪？
 
-是。AEM Forms通过工作流历史记录、访问控制和系统日志支持可审核性，这有助于保险公司满足内部和外部审核需求。
+是。 AEM Forms通过工作流历史记录、访问控制和系统日志支持可审核性，这有助于保险公司满足内部和外部审核需求。
 
 ## 开始之前 {#before-you-start}
 
 * 工作流是真实业务过程的一种表现形式。 让您的实际业务流程和业务流程参与者的列表做好准备。 此外，在开始创建工作流之前，应准备好宣传材料（自适应Forms、PDF文档等）。
 * 一个工作流可以有多个阶段。 这些阶段显示在AEM收件箱中，并帮助报告工作流的进度。 将业务流程划分为逻辑阶段。
 * 您可以配置AEM工作流的分配任务步骤，以向用户或受分配人发送电子邮件通知。 因此，[启用电子邮件通知](#configure-email-service)。
-* 工作流还可以使用Adobe sign进行数字签名。 如果您计划在工作流中使用Adobe Sign，则在工作流中使用[之前应先配置 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)的Adobe Sign。
+* 工作流还可以使用Adobe sign进行数字签名。 如果您计划在工作流中使用Adobe Sign，则在工作流中使用 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)之前应先配置[的Adobe Sign。
 
 ## 创建工作流模型 {#create-a-workflow-model}
 
-工作流模型由业务流程的逻辑和流程组成。 它由一系列步骤组成。 这些步骤是AEM组件。 您可以使用参数和脚本扩展工作流步骤，以根据需要提供更多功能和控制。 除了开箱即用的AEM步骤之外，[!DNL AEM Forms]还提供了一些步骤。 有关AEM和[!DNL AEM Forms]步骤的详细列表，请参阅[AEM工作流步骤参考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hans#extending-aem)和[OSGi上以Forms为中心的工作流 — 步骤参考](aem-forms-workflow.md)。
+工作流模型由业务流程的逻辑和流程组成。 它由一系列步骤组成。 这些步骤是AEM组件。 您可以使用参数和脚本扩展工作流步骤，以根据需要提供更多功能和控制。 除了开箱即用的AEM步骤之外，[!DNL AEM Forms]还提供了一些步骤。 有关AEM和[!DNL AEM Forms]步骤的详细列表，请参阅[AEM工作流步骤参考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)和[OSGi上以Forms为中心的工作流 — 步骤参考](aem-forms-workflow.md)。
 
-AEM提供了一个直观的用户界面，用于使用提供的工作流步骤创建工作流模型。 有关创建工作流模型的分步说明，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=zh-Hans#workflows)。 以下示例提供了为审批和审阅工作流创建工作流模型的分步说明：
+AEM提供了一个直观的用户界面，用于使用提供的工作流步骤创建工作流模型。 有关创建工作流模型的分步说明，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#workflows)。 以下示例提供了为审批和审阅工作流创建工作流模型的分步说明：
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ AEM提供了一个直观的用户界面，用于使用提供的工作流步骤�
 
    ![OR拆分示例](assets/orsplit_branch2_active_new.png)
 
-   有关使用变量创建路由表达式的信息，请参阅[工作流 [!DNL AEM Forms] 中的](variable-in-aem-workflows.md)变量。
+   有关使用变量创建路由表达式的信息，请参阅 [!DNL AEM Forms] 工作流](variable-in-aem-workflows.md)中的[变量。
 
 1. 添加其他工作流步骤以构建业务逻辑。
 
@@ -303,4 +303,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### 清除工作流实例 {#purge-workflow-instances}
 
-最大限度地减少工作流实例的数量可以提高工作流引擎的性能，因此您可以定期从存储库中清除已完成或正在运行的工作流实例。 有关详细信息，请参阅[定期清除工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=zh-Hans)清除工作流实例
+最大限度地减少工作流实例的数量可以提高工作流引擎的性能，因此，您可以定期从存储库中清除已完成或正在运行的工作流实例。 有关详细信息，请参阅[定期清除工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=zh-Hans)清除工作流实例

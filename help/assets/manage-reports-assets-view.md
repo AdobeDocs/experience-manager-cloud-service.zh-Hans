@@ -7,16 +7,16 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 87%
+source-wordcount: '1530'
+ht-degree: 86%
 
 ---
 
 # 管理报表 {#manage-reports}
 
-资产报告使管理员能够全面了解 Adobe Experience Manager Assets View 环境中的各类活动。这些数据可提供有关用户如何与内容及产品交互的有价值信息。所有用户都可以访问 Insights 仪表板，分配给管理员产品配置文件的用户可以创建用户定义的报告。
+资产报告使管理员能够全面了解 Adobe Experience Manager Assets View 环境中的各类活动。 这些数据可提供有关用户如何与内容及产品交互的有价值信息。 所有用户都可以访问 Insights 仪表板，分配给管理员产品配置文件的用户可以创建用户定义的报告。
 
 ## 访问报告 {#access-reports}
 
@@ -43,15 +43,15 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
 **要创建报告，请执行以下操作：**
 
-1. 导航到&#x200B;**报告**&#x200B;并点击&#x200B;**创建报告**（在右上角）。 **创建报告**&#x200B;对话框会显示以下字段：
+1. 导航到&#x200B;**报告**&#x200B;并点击&#x200B;**创建报告**（在右上角）。 **创建报告**对话框会显示以下字段：
    ![创建报告](/help/assets/assets/executed-reports1.svg)
 
    **在“配置”选项卡中：**
 
-   1. **报告类型：**&#x200B;选择 [!UICONTROL 上传]、[!UICONTROL 下载]或[&#x200B; Dynamic Media 投放报告](#dynamic-media-delivery-reports)类型。
+   1. **报告类型：**&#x200B;选择 [!UICONTROL 上传]、[!UICONTROL 下载]或[ Dynamic Media 投放报告](#dynamic-media-delivery-reports)类型。
    1. **标题：**&#x200B;为报告添加标题。
    1. **描述：**&#x200B;为报告添加可选描述。
-   1. **选择文件夹路径：**&#x200B;选择一个文件夹路径，生成该特定文件夹内上传和下载资产的报告。例如，如果需要上传至文件夹的资产报告，请指定该文件夹的路径。
+   1. **选择文件夹路径：**&#x200B;选择一个文件夹路径，生成该特定文件夹内上传和下载资产的报告。 例如，如果需要上传至文件夹的资产报告，请指定该文件夹的路径。
    1. **选择日期间隔：**&#x200B;选择日期范围，查看文件夹内的上传或下载活动。
    <br>
 
@@ -59,7 +59,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
    >
    > 资源视图将所有本地时区转换为协调世界时 (UTC)。
 
-   **在“列”选项卡中：**&#x200B;选择要在报告中显示的列名称。下表解释了所有列的用途：
+   **在“列”选项卡中：**&#x200B;选择要在报告中显示的列名称。 下表解释了所有列的用途：
 
    <table>
     <tbody>
@@ -138,12 +138,12 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
 ## Dynamic Media 投放报告 {#dynamic-media-delivery-reports}
 
-获取通过 Dynamic Media 投放资产的投放洞察，包括资产级别投放计数、反向链接信息、AEM Assets 中的资产路径和唯一资产 ID。可针对通过 AEM Assets 存储库 Dynamic Media 投放的所有资产或 AEM Assets 中的特定文件夹层级生成报告。此外，Dynamic Media 投放报告洞察有助于衡量投放资产的 ROI、衡量渠道性能，并有助于对资产采取明智的资产管理任务。
+获取通过 Dynamic Media 投放资产的投放洞察，包括资产级别投放计数、反向链接信息、AEM Assets 中的资产路径和唯一资产 ID。 可针对通过 AEM Assets 存储库 Dynamic Media 投放的所有资产或 AEM Assets 中的特定文件夹层级生成报告。 此外，Dynamic Media 投放报告洞察有助于衡量投放资产的 ROI、衡量渠道性能，并有助于对资产采取明智的资产管理任务。
 
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 先决条件 {#prereqs-dynamic-media-delivery-reports}
@@ -153,7 +153,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 >[!IMPORTANT]
 > 
 >* 提供通过 Dynamic Media 投放的资产的报告。
->* 报告针对前 100 万行生成。要捕获此限制内的所有文件，请考虑为较小的文件夹添加反向链接列。
+>* 前100万行会生成报表。 要捕获此限制内的所有文件，请考虑包含较小文件夹的反向链接列。
 >* 仅可生成过去 3 个月的报告。
 
 ### 创建 Dynamic Media 投放报告{#create-dynamic-media-delivery-report}
@@ -176,7 +176,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 创建报告后，您可以执行以下操作：
 
 * **[!UICONTROL 删除]**：您可以删除选定的报告。
-* **[!UICONTROL 下载 CSV]**：您可以以 CSV 格式下载选定的报告。下载的报告包含名称、路径、DynamicMediaID、反向链接、点击量列。
+* **[!UICONTROL 下载 CSV]**：您可以以 CSV 格式下载选定的报告。 下载的报告包含名称、路径、DynamicMediaID、反向链接、点击量列。
    * **反向链接**&#x200B;列列出了资产投放或包含的 URL。
 
    * **点击量**&#x200B;列列出了资产被投放的次数（投放计数）。
@@ -188,12 +188,13 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
 ## 查看和下载现有报告 {#View-and-download-existing-report}
 
-现有报告显示在&#x200B;**已执行报告** 选项卡下。点击&#x200B;**报告**&#x200B;并选择&#x200B;**已执行报告**&#x200B;可查看所有已创建的报告，其状态为&#x200B;**已完成**，表示这些报告可随时下载。 要以 CSV 格式下载报告或删除报告，请选择报告行。然后选择&#x200B;**下载 CSV**&#x200B;或&#x200B;**删除**。![查看和下载现有报告](/help/assets/assets/view-download-existing-report.png)
+现有报告显示在&#x200B;**已执行报告** 选项卡下。 点击&#x200B;**报告**&#x200B;并选择&#x200B;**已执行报告**&#x200B;可查看所有已创建的报告，其状态为&#x200B;**已完成**，表示这些报告可随时下载。 要以 CSV 格式下载报告或删除报告，请选择报告行。 然后选择&#x200B;**下载 CSV**&#x200B;或&#x200B;**删除**。
+![查看和下载现有报告](/help/assets/assets/view-download-existing-report.png)
 
 
 ## 计划一份报告 {#schedule-report}
 
-在AEM Assets视图UI中，**计划报表**&#x200B;设置按指定的未来时间间隔（如每日、每周、每月或每年）自动生成报表。 此功能有助于简化定期报告需求并确保及时更新数据。**创建报告**&#x200B;会生成过去日期的报告。已完成的报告列于&#x200B;**已执行报告**&#x200B;下，即将生成的报告列于&#x200B;**计划报告**&#x200B;下。
+在AEM Assets视图UI中，**计划报表**&#x200B;设置按指定的未来时间间隔（如每日、每周、每月或每年）自动生成报表。 此功能有助于简化定期报告需求并确保及时更新数据。 **创建报告**&#x200B;会生成过去日期的报告。 已完成的报告列于&#x200B;**已执行报告**&#x200B;下，即将生成的报告列于&#x200B;**计划报告**&#x200B;下。
 
 要计划一份报告，请按照以下步骤操作：
 
@@ -203,10 +204,10 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
    1. **标题：**&#x200B;为报告添加标题。
    1. **描述**：为报告添加可选描述。
    1. **选择文件夹路径：**&#x200B;选择一个文件夹路径，为将来上传到该特定文件夹或从该文件夹下载的资产生成报告。
-   1. 切换&#x200B;**计划报告：**&#x200B;切换以将报告安排到稍后时间或重复出现。
+   1. 切换&#x200B;**计划报告：**切换以将报告安排到稍后时间或重复出现。
       ![计划报告](/help/assets/assets/schedule-reports1.svg)
 
-   1. **选择频率：**&#x200B;指定生成报告的时间间隔（例如，每天、每周、每月、每年或一次），并设置运行报告的日期和时间以及重复出现的结束日期。对于一次性报告，请选择 AEM 环境中所选活动类型的报告的日期范围。例如，如果需要某月 10 日至 29 日（未来日期）的下载资产报告，请在&#x200B;**选择日期间隔**&#x200B;字段中选择这些日期。
+   1. **选择频率：**&#x200B;指定生成报告的时间间隔（例如，每天、每周、每月、每年或一次），并设置运行报告的日期和时间以及重复出现的结束日期。 对于一次性报告，请选择 AEM 环境中所选活动类型的报告的日期范围。 例如，如果需要某月 10 日至 29 日（未来日期）的下载资产报告，请在&#x200B;**选择日期间隔**&#x200B;字段中选择这些日期。
 
    >[!NOTE]
    >
@@ -214,7 +215,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
 ## 查看计划报告 {#view-scheduled-reports}
 
-计划报告以系统组织的方式在&#x200B;**计划报告**&#x200B;选项卡下显示。每个计划报告的所有已完成报告都存储在一个报告文件夹中。单击![展开折叠](/help/assets/assets/expand-icon1.svg)以查看已完成的报告。 例如，如果您安排了每日报告，所有已完成的报告都会分组放在一个文件夹中。这种组织方式简化了报告的导航和查找。要查看计划报告，请点击&#x200B;**报告**，然后点击&#x200B;**计划报告**。所有的计划报告状态都会显示为进行中或已完成。 已完成的报告可供下载。\
+计划报告以系统组织的方式在&#x200B;**计划报告**&#x200B;选项卡下显示。 每个计划报告的所有已完成报告都存储在一个报告文件夹中。 单击![展开折叠](/help/assets/assets/expand-icon1.svg)以查看已完成的报告。 例如，如果您安排了每日报告，所有已完成的报告都会分组放在一个文件夹中。 这种组织方式简化了报告的导航和查找。 要查看计划报告，请点击&#x200B;**报告**，然后点击&#x200B;**计划报告**。 所有的计划报告状态都会显示为进行中或已完成。 已完成的报告可随时下载。\
 ![计划报告](/help/assets/assets/scheduled-reports-tab.png)
 
 ## 编辑和取消计划报告 {#edit-cancel-scheduled-reports}
@@ -236,7 +237,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
 ## 查看洞察 {#view-live-statistics}
 
-通过资源视图的“洞察”仪表板，可查看资源视图环境的实时数据。可查看过去 30 天或过去 12 个月的实时事件指标。
+通过资源视图的“洞察”仪表板，可查看资源视图环境的实时数据。 可查看过去 30 天或过去 12 个月的实时事件指标。
 
 <!--![Toolbar options when you select an asset](assets/assets-view-live-statistics.png)-->
 
@@ -266,5 +267,5 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
    -->
 * **按大小进行资源计数：** 将资源视图环境中的总资源数量细分为不同的大小范围，突出显示每个大小范围内的资源数量和百分比，以环形图表示。
   ![洞察按规模统计资产数量](/help/assets/assets/insights-assets-count-by-size.svg)
-* 按资源类型划分的&#x200B;**资源计数：**&#x200B;在Assets视图环境中对资源总数进行分段，根据资源文件类型突出显示资源的计数和百分比，用圆环图表示。
+* 按资源类型划分的&#x200B;**资源计数：**在Assets视图环境中对资源总数进行分段，根据资源文件类型突出显示资源的计数和百分比，用圆环图表示。
   ![洞察按规模统计资产数量](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

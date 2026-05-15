@@ -9,10 +9,10 @@ hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 7%
+source-wordcount: '1109'
+ht-degree: 8%
 
 ---
 
@@ -56,7 +56,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 * [为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md)。
 * 安装最新的Far以便为您的AEM Cloud Service环境启用自适应Forms核心组件。
-* 将您的用户添加到[!DNL forms-users]组。 [!DNL forms-users]组的成员有权创建自适应表单。
+* 将您的用户添加到[!DNL forms-users]组。 [!DNL forms-users]组的成员具有创建自适应表单的权限。
 * 具有以下角色的用户有权在AEM环境中安装AEM现代化工具：
 
    * 开发人员角色
@@ -137,8 +137,8 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    在本例中，已选择&#x200B;**复制到目标**&#x200B;选项。 如果选择了&#x200B;**复制到目标**&#x200B;选项，则&#x200B;**[!UICONTROL Source路径]**&#x200B;和&#x200B;**[!UICONTROL 目标路径]**&#x200B;选项将变为可见。
 
-1. 在`source folder`Source路径&#x200B;**[!UICONTROL 中指定]**&#x200B;名称。
-1. 在`target folder`目标路径&#x200B;**[!UICONTROL 中指定]**&#x200B;名称。
+1. 在&#x200B;**[!UICONTROL Source路径]**&#x200B;中指定`source folder`名称。
+1. 在&#x200B;**[!UICONTROL 目标路径]**&#x200B;中指定`target folder`名称。
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
 1. 单击&#x200B;**[!UICONTROL 添加Forms]**。 `source folder`中的所有表单都会显示在屏幕上。
 1. 选择基于基础组件的自适应Forms以将其转换为基于核心组件的表单。 您还可以选择多个表单。
@@ -159,12 +159,12 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    ![AEM现代化工具目标文件夹](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以再次保存已转换表单的属性。
+1. 选择&#x200B;**[!UICONTROL 保存并关闭]**以再次保存已转换表单的属性。
    ![AEM现代化工具自适应表单属性](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 现在，您可以看到基于基础组件构建的自适应表单已转换为基于核心组件构建的自适应表单。
 
 ## 最佳做法 {#best-practices}
 
-* 确保您的基于基础组件的表单，仅使用具有等效的[核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的组件。 如果您使用的基础组件没有等效的核心组件，则不会转换基础组件。 因此，它在创作表单时无法正常运行
+* 确保您的基于基础组件的表单，仅使用具有等效的[核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的组件。 如果您使用的基础组件没有等效的核心组件，则不会转换基础组件。 因此，它在创作表单时无法正常运行
 * 确保将基础组件转换为核心组件的规则采用XML格式。

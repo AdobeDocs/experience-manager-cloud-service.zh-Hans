@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2397'
 ht-degree: 1%
 
 ---
@@ -68,9 +68,9 @@ AEM Forms支持从初始创建到持续优化的完整数字表单历程。 每�
 **AEM Forms工作流历程：**
 
     创建→管理→发布→捕获→进程→集成→跟踪→存档→改进
-    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓
-    设计   审核   部署   收集   句柄   连接   监视器存储   优化
-    ↑                                                                              ↓
+    ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+    设计审阅部署收集句柄连接监视器存储优化
+    ↑ ↓
     ←←←←←←←←←←←←←←←持续改进循环←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
 
 ### 创建：表单设计和开发 {#create}
@@ -135,7 +135,7 @@ AEM Forms支持从初始创建到持续优化的完整数字表单历程。 每�
 Forms会自动适应不同的屏幕大小和输入方法。 触屏优化控件、键盘导航和屏幕阅读器兼容性确保所有用户类型的[辅助功能](/help/forms/creating-accessible-adaptive-forms.md)。
 
 **数字签名**
-集成[Adobe Sign](/help/forms/working-with-adobe-sign.md)，以在表单体验中获取具有法律约束力的电子签名。 用户无需离开表单即可签署文档，从而简化审批流程并减少放弃情况。
+将[Adobe Sign](/help/forms/working-with-adobe-sign.md)集成到表单体验中，以获得具有法律约束力的电子签名。 用户无需离开表单即可签署文档，从而简化审批流程并减少放弃情况。
 
 **提交操作**
 配置[提交操作](/help/forms/configure-submit-actions-core-components.md)以定义用户完成并提交表单时发生的情况。 将数据路由到电子邮件、数据库、工作流或外部系统，同时向用户提供即时反馈和确认。
@@ -185,7 +185,7 @@ Forms会自动适应不同的屏幕大小和输入方法。 触屏优化控件�
 **Business Intelligence**
 生成有关表单使用情况、提交卷和流程效率的报告。 Analytics为容量规划、用户体验优化和业务流程改进提供信息。
 
-**交易报告**
+**事务报告**
 监控AEM Forms部署中的API使用情况、文档生成卷和[可计费事务](/help/forms/transaction-reports-billable-apis.md)。 跟踪消费模式，优化资源分配，并遵守基于使用情况的许可要求。
 
 ### 存档：文档管理和法规遵从性 {#archive}
@@ -195,7 +195,7 @@ Forms会自动适应不同的屏幕大小和输入方法。 触屏优化控件�
 **文档存储**
 在AEM的数字资产管理系统中存储生成的文档和表单提交，或者与外部文档存储库（如[SharePoint](/help/forms/configure-submit-action-sharepoint.md)、[OneDrive](/help/forms/configure-submit-action-onedrive.md)或[Azure Blob存储](/help/forms/configure-submit-action-azure-blob-storage.md)）集成。
 
-**合规性和保留**
+**法规遵从性和保留**
 实施符合管理法规要求（包括GDPR、CCPA和HIPAA）的数据保留策略。 [自动存档流程](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)确保文档保留所需的时间，并在适当时安全处置。
 
 **安全和访问控制**

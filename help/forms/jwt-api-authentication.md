@@ -8,10 +8,10 @@ exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
 hide: true
 hidefromToC: true
 index: false
-source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud
 在开始之前，请确保满足以下先决条件：
 
 * 确保您有权访问特定于您使用环境的[Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)。
-* 分配[系统管理员或开发人员角色以访问Adobe Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
+* 分配[系统管理员或开发人员角色以访问Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
 
 ## 如何使用JWT凭据生成访问令牌？
 
@@ -110,7 +110,7 @@ AEM Forms中的JWT服务器到服务器身份验证，特别是与AEM as a Cloud
 
 >[!NOTE]
 >
-> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+> 要了解有关服务凭据以及如何使用Adobe IMS API生成访问令牌的更多信息，请[单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您现在可以使用生成的访问令牌为开发、暂存或生产环境进行API调用。
 

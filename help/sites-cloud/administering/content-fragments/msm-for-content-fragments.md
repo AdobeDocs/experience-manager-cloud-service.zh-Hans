@@ -8,10 +8,11 @@ solution: Experience Manager Sites
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85b72909597a95531aea51719c841bc5db9c1a21
+exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 3%
+source-wordcount: '950'
+ht-degree: 4%
 
 ---
 
@@ -116,7 +117,7 @@ MSM for Content Fragments与内容片段编辑器中的功能相结合，允许�
 
 1. 在内容片段控制台导航到片段的位置。
 1. 选择您的片段。
-1. 选择片段的&#x200B;**标题**&#x200B;列中的“信息(i)”图标。
+1. 选择片段的&#x200B;**标题**列中的“信息(i)”图标。
 将打开右侧的信息面板。
 1. 选择&#x200B;**Live Copy详细信息**&#x200B;的选项卡。
 

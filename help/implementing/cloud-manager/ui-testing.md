@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 54%
+source-wordcount: '2888'
+ht-degree: 55%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI 测试"
->abstract="自定义 UI 测试是一项可选功能，可用于为应用程序创建和自动运行 UI 测试。 UI 测试基于 Selenium，并封装为 Docker 镜像，支持多种编程语言和框架选择。例如 Java 与 Maven、Node 与 WebDriver.io，或任何基于 Selenium 构建的其他框架和技术。"
+>abstract="自定义 UI 测试是一项可选功能，可用于为应用程序创建和自动运行 UI 测试。 UI 测试基于 Selenium，并封装为 Docker 镜像，支持多种编程语言和框架选择。 例如 Java 与 Maven、Node 与 WebDriver.io，或任何基于 Selenium 构建的其他框架和技术。"
 
 自定义 UI 测试是一项可选功能，可用于为应用程序创建和自动运行 UI 测试。
 
@@ -26,9 +26,9 @@ ht-degree: 54%
 
 AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)集成包，确保对自定义应用程序的顺利更新。 特别是，IT 测试门已支持使用 AEM API 创建和自动化定制测试。
 
-UI 测试打包为 Docker 镜像，以便可选择多种语言和框架（如 Cypress、Selenium、Java 和 Maven 以及 JavaScript）。此外，通过使用[AEM项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)，可以轻松生成UI测试项目。
+UI 测试打包为 Docker 镜像，以便可选择多种语言和框架（如 Cypress、Selenium、Java 和 Maven 以及 JavaScript）。 此外，通过使用[AEM项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)，可以轻松生成UI测试项目。
 
-Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，而这些功能有助于在测试期间节省时间并提高工作效率。Cypress还提供了简单直观的语法，使其易于学习和使用，即使对于新手测试的用户也是如此。
+Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，而这些功能有助于在测试期间节省时间并提高工作效率。 Cypress还提供了简单直观的语法，使其易于学习和使用，即使对于新手测试的用户也是如此。
 
 UI测试在&#x200B;[**自定义UI测试**](/help/implementing/cloud-manager/deploy-code.md)&#x200B;步骤中作为质量关卡运行 — 在[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)中是必需的，在[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)中是可选的。 任何 UI 测试，包括回归和新功能，都可以检测和报告错误。
 
@@ -186,7 +186,7 @@ Cloud Manager在部署管道期间自动选取Docker build-context存档并构�
 >
 >如果您的项目不包括此行，请编辑该文件以选择进行UI测试。
 >
->文件可能包含一行，显示&#x200B;*DO NOT MODIFY*。 它只是旧模板/示例中的旧版警告，*不会*&#x200B;阻止您进行Cloud Manager UI测试所需的选择加入编辑。 您可以安全地忽略建议；在执行选择加入步骤时（例如，加入`assembly-ui-test-docker-context.xml`），您可以在`pom.xml`项目&#x200B;*中编辑*&#x200B;和`testing.properties`。
+>文件可能包含一行，显示&#x200B;*DO NOT MODIFY*。 它只是旧模板/示例中的旧版警告，*不会*&#x200B;阻止您进行Cloud Manager UI测试所需的选择加入编辑。 您可以安全地忽略建议；在执行选择加入步骤时（例如，加入`testing.properties`），您可以在&#x200B;*项目*&#x200B;中编辑`assembly-ui-test-docker-context.xml`和`pom.xml`。
 
 如果您使用的是 Adobe 提供的示例：
 
@@ -246,13 +246,13 @@ Cypress：使用标准函数 `Cypress.env('VARIABLE_NAME')`
 
 ### 生成测试报告 {#generate-test-reports}
 
-Docker 镜像必须以 JUnit XML 格式生成测试报告，并将其保存在环境变量 `REPORTS_PATH` 指定的路径中。JUnit XML 格式是一种广泛使用的报告测试结果的格式。如果 Docker 镜像使用 Java 和 Maven，则诸如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven Failsafe 插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)等标准测试模块可以立即生成此类报告。
+Docker 镜像必须以 JUnit XML 格式生成测试报告，并将其保存在环境变量 `REPORTS_PATH` 指定的路径中。 JUnit XML 格式是一种广泛使用的报告测试结果的格式。 如果 Docker 镜像使用 Java 和 Maven，则诸如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven Failsafe 插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)等标准测试模块可以立即生成此类报告。
 
 如果 Docker 镜像是用其他编程语言或测试运行程序实现的，请查看文档，了解如何生成 JUnit XML 报告。
 
 >[!NOTE]
 >
->仅根据测试报告评估 UI 测试步骤的结果。请确保为您的测试执行生成相应报告。
+>仅根据测试报告评估 UI 测试步骤的结果。 请确保为您的测试执行生成相应报告。
 >
 >使用断言而不是仅仅将错误记录到 STDERR 或返回非零退出代码，否则，您的部署管道可能会正常进行。
 >
@@ -276,7 +276,7 @@ Docker 镜像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 | 推荐持续时间 | 15m | Adobe建议在此时间限制内进行测试。 |
 
 * 如果目标Author/Publish受IP保护，则管道UI测试基础架构必须，否则UI测试可能会失败，并显示403 Forbidden。
-另请参阅[AEMaaCS中的UI测试失败，原因是IP 列入允许列表](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+另请参阅[AEMaaCS中的UI测试失败，原因是IP 列入允许列表](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
 >[!NOTE]
 >
@@ -302,7 +302,7 @@ Adobe的UI测试示例使用`wait-for-grid.sh`。 它在Docker启动时运行，
 
 ### 捕获屏幕快照和视频 {#capture-screenshots}
 
-Docker 镜像可能会产生额外的测试输出（例如，屏幕快照或视频），并将其保存在环境变量 `REPORTS_PATH` 指定的路径中。测试结果存档中包括任何可在 `REPORTS_PATH` 下找到的文件。
+Docker 镜像可能会产生额外的测试输出（例如，屏幕快照或视频），并将其保存在环境变量 `REPORTS_PATH` 指定的路径中。 测试结果存档中包括任何可在 `REPORTS_PATH` 下找到的文件。
 
 默认情况下，Adobe 提供的测试示例将为任何失败的测试创建屏幕快照。
 
@@ -314,7 +314,7 @@ Docker 镜像可能会产生额外的测试输出（例如，屏幕快照或视�
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 -->
 
-如果在执行UI测试期间创建了测试结果存档，则可以通过单击`Download Details`自定义UI测试&#x200B;[**步骤**&#x200B;下的](/help/implementing/cloud-manager/deploy-code.md)按钮从Cloud Manager下载该存档。
+如果在执行UI测试期间创建了测试结果存档，则可以通过单击&#x200B;[**自定义UI测试**&#x200B;步骤](/help/implementing/cloud-manager/deploy-code.md)下的`Download Details`按钮从Cloud Manager下载该存档。
 
 ### 上载文件 {#upload-files}
 

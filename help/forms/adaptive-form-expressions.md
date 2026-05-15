@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 0%
+source-wordcount: '2738'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 自适应Forms通过动态脚本编写功能为最终用户提供经过优化和简化的表单填写体验。 它允许您编写表达式以添加各种行为，如动态显示/隐藏字段和面板。 它还允许您添加计算字段、使字段只读、添加验证逻辑等。 动态行为基于用户输入或预填充的数据。
 
-JavaScript™是自适应Forms的表达式语言。 所有表达式都是有效的JavaScript™表达式，都使用自适应Forms脚本模型API。 这些表达式返回某些类型的值。 有关自适应Forms类、事件、对象和公共API的完整列表，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html)。
+™是自适应Forms的表达式语言。 所有表达式都是有效的™表达式，都使用自适应Forms脚本模型API。 这些表达式返回某些类型的值。 有关自适应Forms类、事件、对象和公共API的完整列表，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html)。
 
 ## 编写表达式的最佳实践 {#best-practices-for-writing-expressions}
 
@@ -33,7 +33,7 @@ JavaScript™是自适应Forms的表达式语言。 所有表达式都是有效�
 * 要创建重复面板，请在面板对话框中，打开设置，并将最大计数字段的值设置为大于1。
 * 面板重复设置的最小计数值可以是一个或多个，但不能超过最大计数值。
 * 当表达式引用重复面板的字段时，表达式中的字段名称解析为最接近的重复元素。
-* 自适应Forms提供了一些特殊函数来简化可重复面板的计算，例如sum、count、min、max、filter等。 有关函数的完整列表，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/cn/aem-forms/6/javascript-api/af.html)
+* 自适应Forms提供了一些特殊函数来简化可重复面板的计算，例如sum、count、min、max、filter等。 有关函数的完整列表，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * 用于处理重复面板的实例的API包括：
 
    * 要添加面板实例： `panel1.instanceManager.addInstance()`
@@ -68,18 +68,18 @@ JavaScript™是自适应Forms的表达式语言。 所有表达式都是有效�
 
 ### 计算表达式 {#calculate-expression}
 
-计算表达式用于使用表达式自动计算字段的值。 通常，此类表达式使用其他字段的值属性。 例如，`field2.value + field3.value`。每当`field2`或`field3`的值更改时，就会重新触发表达式并重新计算该值。
+计算表达式用于使用表达式自动计算字段的值。 通常，此类表达式使用其他字段的值属性。 例如，`field2.value + field3.value`。 每当`field2`或`field3`的值更改时，就会重新触发表达式并重新计算该值。
 
 **应用于**：字段
 
 **返回类型**：表达式返回与显示表达式结果的字段（例如，小数）兼容的值。
 
-**示例**：用于显示&#x200B;**field1**&#x200B;中两个字段之和的计算表达式是：
+**示例**：用于显示&#x200B;**field1**中两个字段之和的计算表达式是：
 `field2.value + field3.value`
 
 ### 单击表达式 {#click-expression}
 
-click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱即用地提供API来执行各种功能，例如提交和验证与单击表达式一起使用的功能。 有关API的完整列表，请参阅[GuideBridge API](https://helpx.adobe.com/cn/aem-forms/6/javascript-api/GuideBridge.html)。
+click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱即用地提供API来执行各种功能，例如提交和验证与单击表达式一起使用的功能。 有关API的完整列表，请参阅[GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)。
 
 **应用于**：按钮字段
 
@@ -134,7 +134,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **应用于**：字段
 
-**返回类型**：表达式返回代表字段验证状态的布尔值。 值&#x200B;**false**&#x200B;表示该字段无效，**true**&#x200B;表示该字段有效。
+**返回类型**：表达式返回代表字段验证状态的布尔值。 值&#x200B;**false**&#x200B;表示该字段无效，**true**表示该字段有效。
 **示例**：对于表示UK邮政编码的字段，验证表达式为：
 
 (**this.value**&#x200B;和&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -156,7 +156,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **返回类型：**&#x200B;值提交脚本表达式未返回任何值。 如果有任何表达式返回值，则忽略该值。
 
-**示例：**&#x200B;若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
+**示例：**若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -210,7 +210,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 ### GuideBridge - API和事件 {#guidebridge-apis-and-events}
 
-GuideBridge是API的集合，可用于与浏览器内存模型中的自适应Forms交互。 有关指南Bridge API、类方法、公开事件的详细介绍，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/cn/aem-forms/6/javascript-api/)。
+GuideBridge是API的集合，可用于与浏览器内存模型中的自适应Forms交互。 有关指南Bridge API、类方法、公开事件的详细介绍，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/aem-forms/6/javascript-api/)。
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ GuideBridge是API的集合，可用于与浏览器内存模型中的自适应For
 
 您还可以在表达式之外使用GuideBridge API。 例如，您可以使用GuideBridge API设置托管自适应表单的页面HTML与表单模型之间的通信。 此外，您还可以设置来自托管表单的Iframe父级的值。
 
-要将GuideBridge API用于上述示例，请捕获GuideBridge的一个实例。 要捕获实例，请侦听`bridgeInitializeStart`对象的`window`事件：
+要将GuideBridge API用于上述示例，请捕获GuideBridge的一个实例。 要捕获实例，请侦听`window`对象的`bridgeInitializeStart`事件：
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -256,7 +256,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge事件 {#guidebridge-events}
 
-GuideBridge还为托管页面上的外部脚本提供了某些事件。 外部脚本可以侦听这些事件并执行各种操作。 例如，每当表单中的用户名发生更改时，页面标题中显示的名称也会更改。 有关此类事件的更多详细信息，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/cn/aem-forms/6/javascript-api/GuideBridge.html)。
+GuideBridge还为托管页面上的外部脚本提供了某些事件。 外部脚本可以侦听这些事件并执行各种操作。 例如，每当表单中的用户名发生更改时，页面标题中显示的名称也会更改。 有关此类事件的更多详细信息，请参阅自适应Forms的[JavaScript™库API参考](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)。
 
 使用以下代码注册处理程序：
 
@@ -280,7 +280,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 1. 此属性的值因要定义模式的字段而异。 对于数值字段，`guideComponentType`属性的值为&#x200B;*fd/af/components/formatter/guideNumericBox*。 日期选取器字段的值为&#x200B;*fd/af/components/formatter/guideDatepicker*。
 &quot;
-1. 您可以通过为`textboxpatterns`节点分配属性来添加自定义模式。 添加具有名称（例如，`pattern1`）的属性，并将其值设置为要添加模式。 例如，添加值为Fax=text{99-999-`pattern1`的属性9999999}。 该模式适用于您在自适应Forms中使用的所有文本框。
+1. 您可以通过为`textboxpatterns`节点分配属性来添加自定义模式。 添加具有名称（例如，`pattern1`）的属性，并将其值设置为要添加模式。 例如，添加值为Fax=text{99-999-9999999}的属性`pattern1`。 该模式适用于您在自适应Forms中使用的所有文本框。
 
    ![在CrxDe中为字段创建自定义模式](assets/creating-custom-patterns.png)
 

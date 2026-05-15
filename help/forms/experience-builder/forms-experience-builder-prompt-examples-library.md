@@ -7,28 +7,28 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 98%
+source-wordcount: '2192'
+ht-degree: 97%
 
 ---
 
 # Forms Experience Builder - 提示词库
 
-针对 Forms Experience Builder 优化的可重复使用的提示词模式和示例收藏集。这个精简的提示词库专注于两种核心创建方法：从头开始创建以及导入和转换，并增强了对 LLM 驱动的智能字段和品牌一致性的支持。
+针对 Forms Experience Builder 优化的可重复使用的提示词模式和示例收藏集。 这个精简的提示词库专注于两种核心创建方法：从头开始创建以及导入和转换，并增强了对 LLM 驱动的智能字段和品牌一致性的支持。
 
 >[!NOTE]
 >
-> Forms Experience Builder 在早期采用者计划中提供。请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
+> Forms Experience Builder 在早期采用者计划中提供。 请从您的工作地址发送电子邮件至 `aem-forms-ea@adobe.com`，以申请访问权限。
 
 >[!IMPORTANT]
 >
-> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
+> **文档可能会发生变化**：此提示词库目前正在针对产品进行测试，因此可能会进行更新和修订。 随着 Forms Experience Builder 在早期采用者计划期间不断改进，提示词、示例和最佳实践可能会发生变化。
 
 ## 使用这个提示词库
 
-此库为常见的表单构建场景提供了可重复使用的提示词模式。如需了解全面的最佳实践，请参阅 [Forms Experience Builder 快速入门指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
+此库为常见的表单构建场景提供了可重复使用的提示词模式。 如需了解全面的最佳实践，请参阅 [Forms Experience Builder 快速入门指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
 
 ### 关于此库的快速小建议
 
@@ -228,11 +228,11 @@ ht-degree: 98%
 
 **公司分类：**
 
-    添加一个用 NAICS 代码对行业分类的字段
-    创建一个企业实体类型（有限责任公司、公司、合伙企业等）的下拉菜单
-    添加一个企业规模类别字段（初创企业、中小型企业、大型企业）
-    添加一个大型组织的部门选择
-    添加一个专业服务类型的字段
+    为具有NAICS代码的行业分类添加字段
+    创建商业实体类型（LLC、Corporation、Partnership等）的下拉列表
+    为公司规模类别（启动、SME、企业）添加字段
+    包括大型组织的部门选择
+    为专业服务类型添加字段
 
 **职业分类：**
 
@@ -335,17 +335,17 @@ ht-degree: 98%
 
 **规则特定的提示词：**
 
-    创建一个&#x200B;**可见性规则**，只有在 @maritalStatus 等于“已婚”或“同居关系”的情况下才显示 @spouseInformation 面板
+    创建一个**可见性规则**，只有在 @maritalStatus 等于“已婚”或“同居关系”的情况下才显示 @spouseInformation 面板
     
-    添加&#x200B;**渐进展开**&#x200B;方式，根据之前的回答显示附加问题。从基本信息开始，然后显示相关的后续信息
+    添加**渐进展开**方式，根据之前的回答显示附加问题。 从基本信息开始，然后显示相关的后续信息
     
-    实施&#x200B;**智能默认**，在 @country 选择中自动设置相关字段。允许手动覆盖
+    实施**智能默认**，在 @country 选择中自动设置相关字段。 允许手动覆盖
 
 ## 数据集成与提交
 
 **何时使用：**&#x200B;当您需要将表单连接到后端系统、数据库或外部服务时。
 
-**如何使用：**&#x200B;从基本的提交设置开始，然后逐步添加其他集成。指定集成类型、数据格式要求和错误处理偏好。
+**如何使用：**&#x200B;从基本的提交设置开始，然后逐步添加其他集成。 指定集成类型、数据格式要求和错误处理偏好。
 
 **提示词示例 - 从基本提交开始：**
 
@@ -392,11 +392,11 @@ ht-degree: 98%
 
 **集成特定的提示词：**
 
-    将此表单与&#x200B;**CRM 系统**&#x200B;连接，以创建新的潜在客户。将 @firstName 映射到 FirstName，将 @email 映射到 Email，将 LeadSource 设置为“Web Form”，将 Status 设置为“New”
+    将此表单与**CRM 系统**连接，以创建新的潜在客户。 将 @firstName 映射到 FirstName，将 @email 映射到 Email，将 LeadSource 设置为“Web Form”，将 Status 设置为“New”
     
-    在提交表单时设置&#x200B;**工作流触发**。传递所有表单数据，并通过经理通知触发审批工作流
+    在提交表单时设置**工作流触发**。 传递所有表单数据，并通过经理通知触发审批工作流
     
-    配置&#x200B;**数据库集成**，以将表单提交保存为记录。为每个提交创建一个包含上传文件的新文件夹
+    配置**数据库集成**，以将表单提交保存为记录。 为每个提交创建一个包含上传文件的新文件夹
 
 
 
@@ -480,7 +480,7 @@ ht-degree: 98%
 - 云存储（Azure、SharePoint）
 - 工作流自动化（Power Automate、Workfront Fusion）
 - 营销平台（Marketo）
-- CRM 集成 
+- CRM 集成
 
 ### 提示词语法指南
 
@@ -492,4 +492,4 @@ ht-degree: 98%
 
 如需了解全面的最佳实践和验证指南，请参阅 [Forms Experience Builder 快速入门指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
 
-*此提示词库会根据用户反馈和新的 Forms Experience Builder 功能不断更新。如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hans)。*
+*此提示词库会根据用户反馈和新的 Forms Experience Builder 功能不断更新。 如需了解最新功能和示例，请查看 [AEM Forms 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*

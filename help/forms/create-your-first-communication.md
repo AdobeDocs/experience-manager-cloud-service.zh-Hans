@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '772'
 ht-degree: 5%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 5%
    | 预设单元 | 选择文档尺寸的测量单位（例如，毫米、英寸）。 |
    | 预设导向 | 选择文档的方向 — 纵向或横向。 |
 
-1. 单击&#x200B;**创建**。将在编辑器中打开通信。
+1. 单击&#x200B;**创建**。 将在编辑器中打开通信。
 1. 拖放组件和片段以设计交互式通信。
 
    * 使用&#x200B;**母版页**&#x200B;获取跨页面通用内容。 母版页被指定来格式化页面，它们有助于促进设计的一致性，因为它们可以为文档设计中的多个页面提供背景和布局格式。

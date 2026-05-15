@@ -2,15 +2,14 @@
 title: AEM Site 翻译历程
 description: 从这里开始，通过使用 AEM 强大的翻译工具来翻译您的 AEM Site 内容，实施引导式历程。
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '940'
 ht-degree: 100%
 
 ---
@@ -21,11 +20,11 @@ ht-degree: 100%
 
 ## 简介 {#introduction}
 
-AEM Site 是用于创建和管理数字体验的强大工具集。内容作者可以使用 Site 编辑器轻松创建数字体验，并使用 Site 控制台组织内容，同时能够实时查看 AEM 通过不同的渠道交付给受众的内容。
+AEM Site 是用于创建和管理数字体验的强大工具集。 内容作者可以使用 Site 编辑器轻松创建数字体验，并使用 Site 控制台组织内容，同时能够实时查看 AEM 通过不同的渠道交付给受众的内容。
 
-AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将该内容交付给其他地区或区域的受众。本文档历程向您介绍了创作工具，以便您了解如何在 AEM 中创建和管理内容，然后深入探究了管理您自己的翻译项目所需的知识。
+AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将该内容交付给其他地区或区域的受众。 本文档历程向您介绍了创作工具，以便您了解如何在 AEM 中创建和管理内容，然后深入探究了管理您自己的翻译项目所需的知识。
 
-如果您已熟悉 AEM Site 和您的翻译要求，则您可能已大致了解此历程。如果是这样的话，请考虑参阅[下面的其他资源部分](#additional-resources)下链接的技术文档。
+如果您已熟悉 AEM Site 和您的翻译要求，则您可能已大致了解此历程。 如果是这样的话，请考虑参阅[下面的其他资源部分](#additional-resources)下链接的技术文档。
 
 ## AEM 文档历程 {#documentation-journeys}
 
@@ -37,7 +36,7 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 
 ## 受众 {#audience}
 
-此历程专为翻译专家用户画像（通常称为翻译项目经理 (TPM)）设计。此历程列出了翻译 AEM Site 内容的要求、步骤和方法。此历程可能会定义翻译专家必须与之交互的其他用户画像，但历程的视角是翻译专家的视角。
+此历程专为翻译专家用户画像（通常称为翻译项目经理 (TPM)）设计。 此历程列出了翻译 AEM Site 内容的要求、步骤和方法。 此历程可能会定义翻译专家必须与之交互的其他用户画像，但历程的视角是翻译专家的视角。
 
 此历程假定读者具有在大型 CMS 系统上翻译内容的经验但不了解 AEM。
 
@@ -50,13 +49,13 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 | 管理员 | 管理 AEM 的基本设置和配置 | 翻译专家与管理员共同进行翻译所需的配置更改，例如安装翻译连接器。 |
 | 内容架构师 | 分析必须作为 Site 交付的数据的要求并定义此数据的结构 | 翻译专家与内容架构师共同定义内容的组织结构，以便可轻松地翻译内容。 |
 
-此历程中的信息可能对所有用户画像都很有用，但某些信息对某些角色而言可能是多余的。请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/documentation-journeys.md#journeys)
+此历程中的信息可能对所有用户画像都很有用，但某些信息对某些角色而言可能是多余的。 请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## Site 翻译历程 {#the-journey}
 
-您将在此历程中探究多个主题。以下文章为您提供了在 AEM 中翻译 Site 内容的基础知识以及指向详细技术文档的链接。
+您将在此历程中探究多个主题。 以下文章为您提供了在 AEM 中翻译 Site 内容的基础知识以及指向详细技术文档的链接。
 
-虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是 AEM 翻译新手，Adobe 建议您从头开始，然后循序渐进。
+虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。 因此，如果您是 AEM 翻译新手，Adobe 建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 |
 |---|---|---|
@@ -70,7 +69,7 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 
 ## 后续内容 {#what-is-next}
 
-您现在已准备好开始您的 Adobe Site 翻译历程。我们鼓励您继续此历程的下一部分，并阅读[了解 Site 内容以及如何在 AEM 中翻译该内容](learn-about.md)一文
+您现在已准备好开始您的 Adobe Site 翻译历程。 我们鼓励您继续此历程的下一部分，并阅读[了解 Site 内容以及如何在 AEM 中翻译该内容](learn-about.md)一文
 
 ## 其他资源 {#additional-resources}
 
@@ -79,5 +78,5 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 * [Headless 架构师历程](/help/journey-headless/architect/overview.md) – 从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
-* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans) – 如果您对 AEM 和 Headless 技术的了解颇为扎实，则您可能想要直接查阅我们详尽的技术文档。
+* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您对 AEM 和 Headless 技术的了解颇为扎实，则您可能想要直接查阅我们详尽的技术文档。
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。

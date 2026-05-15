@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '351'
 ht-degree: 9%
 
 ---
@@ -78,4 +78,4 @@ AEM Forms开箱即用地提供&#x200B;**另存为草稿**&#x200B;配置文件。
  </tbody>
 </table>
 
-默认情况下，AEM Forms会将与表单草稿和提交关联的用户数据存储在Publish实例上的/content/forms/fp节点中。 您可以添加自定义存储提供商，有关详细信息，请参阅[草稿和提交组件的自定义存储](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。
+默认情况下，AEM Forms会将与表单草稿和提交关联的用户数据存储在Publish实例上的/content/forms/fp节点中。 您可以添加自定义存储提供商，有关详细信息，请参阅[草稿和提交组件的自定义存储](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。

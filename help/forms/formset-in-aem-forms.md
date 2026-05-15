@@ -12,9 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2856'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM Forms应用程序也支持表单集，允许字段工作人员离线获取�
 
 您可以将多个XDP或使用Designer创建的表单模板关联到一个表单集中。 然后，可使用表单集根据用户在初始表单及其用户档案中输入的值有选择地渲染XDP。
 
-使用[AEM Forms用户界面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms)管理所有表单、表单集和相关资源。
+使用[AEM Forms用户界面](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms)管理所有表单、表单集和相关资源。
 
 ### 创建表单集 {#create-a-form-set}
 
@@ -52,7 +52,7 @@ AEM Forms应用程序也支持表单集，允许字段工作人员离线获取�
    * 标题：指定文档的标题。 标题可帮助您识别AEM Forms用户界面中的表单集。
    * 描述：指定有关文档的详细信息。
    * 标记：指定用于唯一标识表单集的标记。 标记有助于搜索表单集。 要创建标记，请在“标记”框中键入新标记名称。
-   * 提交URL：指定在表单集独立演绎版(非AEM Forms应用程序用例)的情况下发布所提交数据的URL。 数据将作为带有以下请求参数的multipart/formdata提交到此端点：
+   * 提交URL：指定在表单集独立演绎版（非AEM Forms应用程序用例）的情况下发布所提交数据的URL。 数据将作为带有以下请求参数的multipart/formdata提交到此端点：
    * dataXML：此参数包含提交的表单集数据的XML表示形式。 如果表单集中的所有表单都使用公共架构，则根据该架构生成XML。 否则，XML根标记将包含表单集中每个已填写表单的子标记，该表单包含表单附件的数据。
    * formsetPath： CRXDE中已提交的表单集的路径。
    * HTML渲染配置文件：您可以配置某些选项，如浮动字段、附件和草稿支持（适用于独立表单集演绎版），以自定义表单集的外观、行为和交互。 您可以自定义或扩展现有配置文件，以更改任何HTML Form配置文件设置。
@@ -69,7 +69,7 @@ AEM Forms应用程序也支持表单集，允许字段工作人员离线获取�
 
    * 表单顺序：拖放表单以对其进行重新排序。 表单顺序定义在AEM Forms应用程序和独立演绎版中向最终用户显示表单的顺序。
    * 表单标识符：为要用于资格表达式的表单指定唯一标识。
-   * 数据根：对于表单集中的每个表单，作者可以配置XPATH，其中特定表单的数据位于提交的XML中。 默认情况下，该值为/。 如果表单集中的所有表单都绑定了架构并共享相同的XML架构，则可以更改此值。 建议表单中的每个字段都具有XDP中指定的正确数据绑定。 如果两个不同表单中的字段共享公共数据绑定，则第二个表单中的字段显示来自第一个表单的预填充值。 不要将内部内容相同的两个子表单绑定到同一XML节点。 有关表单集的XML结构的详细信息，请参阅[预填充表单集的XML](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set)。
+   * 数据根：对于表单集中的每个表单，作者可以配置XPATH，其中特定表单的数据位于提交的XML中。 默认情况下，该值为/。 如果表单集中的所有表单都绑定了架构并共享相同的XML架构，则可以更改此值。 建议表单中的每个字段都具有XDP中指定的正确数据绑定。 如果两个不同表单中的字段共享公共数据绑定，则第二个表单中的字段显示来自第一个表单的预填充值。 不要将内部内容相同的两个子表单绑定到同一XML节点。 有关表单集的XML结构的详细信息，请参阅[预填充表单集的XML](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set)。
    * 适用性表达式：指定用于计算布尔值并指示表单集中的表单是否符合填写条件的JavaScript表达式。 如果为false，则不会要求用户填写表单，甚至不会向用户显示要填写的表单。 通常，表达式基于在此表单之前捕获的字段值。 表达式还包含对表单集API fs.valueOf的调用，以提取用户在表单集的表单的字段中填充的值：
 
    *fs.valueOf（&lt;表单标识符>， &lt;字段Som表达式>） > &lt;值>*
@@ -377,11 +377,11 @@ AEM Forms应用程序允许现场工作人员将其移动设备与AEM Forms服�
   </tr>
   <tr>
    <td>多个数据模式</td>
-   <td>num{zz，zzz} | num{z，zzz，zzz}</td>
+   <td>num{zz，zzz} |数字{z，zzz，zzz}</td>
   </tr>
   <tr>
    <td>速记模式 </td>
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>数字。%{}，或</p> <p>num.currency{}</p> </td>
+   <td><p>num.integer{}，</p> <p>num.decimal{}，</p> <p>数字。%{}，或</p> <p>num.currency{}</p> </td>
   </tr>
  </tbody>
 </table>

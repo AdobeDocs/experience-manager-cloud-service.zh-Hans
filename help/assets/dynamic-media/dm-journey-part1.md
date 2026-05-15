@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
-ht-degree: 3%
+source-wordcount: '3692'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +65,7 @@ _第二部分_
 
 ## 什么是Dynamic Media以及它如何帮助您？ {#dm-journey-a}
 
-Dynamic Media 可帮助您按需交付丰富的视觉营销和推广资产。它还能帮助您创建并呈现互动式浏览体验，包括缩放、360 度旋转以及视频内容。您的资产会根据需求动态缩放，以适配网页、移动端和社交平台的展示。通过一组主要源资产（如图像、视频和 3D 文件），Dynamic Media 能够实时生成并分发多种内容变体，并借助其全球化、可扩展且性能优化的内容分发网络（CDN）进行高效交付。
+Dynamic Media 可帮助您按需交付丰富的视觉营销和推广资产。 它还能帮助您创建并呈现互动式浏览体验，包括缩放、360 度旋转以及视频内容。 您的资产会根据需求动态缩放，以适配网页、移动端和社交平台的展示。 通过一组主要源资产（如图像、视频和 3D 文件），Dynamic Media 能够实时生成并分发多种内容变体，并借助其全球化、可扩展且性能优化的内容分发网络（CDN）进行高效交付。
 
 Dynamic Media整合了Adobe Experience Manager Assets数字资产管理解决方案的工作流，以简化和简化数字营销活动管理流程。
 
@@ -105,7 +104,7 @@ Dynamic Media在优化资产以及确保每个资产通过CDN在移动和桌面�
 
 智能图像可根据客户的浏览器功能自动优化图像的格式和文件大小，从而提供更好的图像资产交付性能。 它可与您现有的图像预设（此历程的第二部分中将讨论图像预设）配合使用，并在投放时使用智能。
 
-这种智能根据浏览器和网络连接速度进一步减小图像文件大小。 由于图像资产构成了页面加载时间的大部分，因此性能改进可能会对关键业务指标产生彻底的影响，例如：
+该智能机制还会根据浏览器类型和网络连接速度，进一步压缩图像文件大小。 由于图像资产构成了页面加载时间的大部分，因此性能改进可能会对关键业务指标产生彻底的影响，例如：
 
 * 较高的转化率
 * 网站逗留时间
@@ -126,7 +125,7 @@ _智能成像可根据客户的浏览器功能和网络速度自动优化图像�
 
 自适应视频集对以不同比特率和格式编码的相同视频的版本进行分组。
 
-您首先上传原始主视频至系统，作为创建自适应视频集的起点。Dynamic Media会自动调整该视频的大小，或将&#x200B;_将该视频转码为多个视频。_&#x200B;在内容投放时，Dynamic Media 会智能判断应使用的视频尺寸、质量和格式，并将最合适的版本传递至手机、平板或桌面设备。
+您首先上传原始主视频至系统，作为创建自适应视频集的起点。 Dynamic Media会自动调整该视频的大小，或将&#x200B;_将该视频转码为多个视频。_&#x200B;在内容投放时，Dynamic Media 会智能判断应使用的视频尺寸、质量和格式，并将最合适的版本传递至手机、平板或桌面设备。
 
 例如，在iOS移动设备上，它会检测4G、5G或Wi-Fi等带宽。 然后，它自动从自适应视频集内的各种视频比特率中选择正确的编码视频。 视频将流式传输到移动设备、平板电脑或台式计算机。
 
@@ -247,7 +246,7 @@ Adobe建议您以无损格式上传资源。 通常，最好避免使用JPEG，�
 
 ### 发布和预览资源
 
-将资源上传到Dynamic Media后，最好通过选择资源，然后单击Dynamic Media中的&#x200B;_发布_&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，发布资源&#x200B;**&#x200B;**。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的Dynamic Media生成的URL或者通过在页面上嵌入代码的方式，将资源包含在网页中。
+将资源上传到Dynamic Media后，最好通过选择资源，然后单击Dynamic Media中的&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，发布资源&#x200B;__。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的Dynamic Media生成的URL或者通过在页面上嵌入代码的方式，将资源包含在网页中。
 
 除了手动发布资产之外，您还可以配置Dynamic Media，以便在上传时即时发布资产，而无需任何用户干预。
 
@@ -260,7 +259,7 @@ _根据选定的“大”图像预设预览资源的演绎版。 已单击URL按
 
 预览资产的另一种方法是选择图像资产，然后选择&#x200B;_查看器_&#x200B;预设，如下所示。
 
-![基于Zoom Vertical Light查看器预设预览资源](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+![根据缩放垂直光源查看器预设预览资源](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _根据选定的“ZoomVertical_light”查看器预设预览资源。 将鼠标指针(`+`)移到手表上以放大。 注意URL和嵌入按钮。_
 
 以上演绎版是实时的！ [尝试它](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}。
@@ -286,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Dynamic Media教程_
 
-* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hans)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/zh-hans?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
+* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜索）
 
 _Dynamic Media查看器_
 

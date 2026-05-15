@@ -11,10 +11,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 3%
+source-wordcount: '514'
+ht-degree: 4%
 
 ---
 
@@ -61,13 +61,13 @@ ht-degree: 3%
 执行以下步骤之前，请参阅[先决条件](adding-reviewers-form.md#prerequisite)。
 
 若要创建组并向其添加成员，请导航到&#x200B;**工具** > **操作** > **安全** > **组**。
-有关详细信息，请参阅[用户管理和服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)。
+有关详细信息，请参阅[用户管理和服务](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。
 确保将您创建的组添加为现成用户组的成员： **forms-submission-reviewers**。 此用户组随[!DNL AEM Forms]一起提供，它确保将用户添加为提交审核者。
 
 要将用户组与自适应表单关联，请执行以下操作：
 
 1. 在创作模式下，导航到&#x200B;**Forms** > **Forms和文档**。
-1. 使用&#x200B;**选择**&#x200B;选项选择自适应表单，然后单击&#x200B;**查看属性**。
+1. 使用&#x200B;**选择**&#x200B;选项选择自适应表单，然后单击**查看属性**。
 1. 在表单的“属性”窗口中，单击&#x200B;**编辑**，然后单击&#x200B;**高级**。
 1. 在提交审核者组字段中输入组，然后单击&#x200B;**完成**。
 

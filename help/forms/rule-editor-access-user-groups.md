@@ -6,13 +6,13 @@ role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
-
 
 # 向选定的用户组授予对规则编辑器的访问权限 {#grant-rule-editor-access-to-select-user-groups}
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    ![创建用户](assets/create_user_new.png)
 
-   现在，当某个用户不是指定用户组的一部分时(此处    `RuleEditorsUserGroup`)点击字段，编辑规则图标(![edit-rules1](assets/edit-rules1.png))在“组件”工具栏中不可用：
+   现在，当不属于指定用户组（此处为`RuleEditorsUserGroup`）的用户点击字段时，“组件”工具栏中的“编辑规则”图标(![edit-rules1](assets/edit-rules1.png))不可用：
 
    ![componentstolbarwithre](assets/componentstoolbarwithre.png)
 
@@ -54,5 +54,4 @@ ht-degree: 2%
 
    对没有规则编辑器访问权限的用户可见的组件工具栏
 
-   有关将用户添加到组的说明，请参阅[用户管理和安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)。
-
+   有关将用户添加到组的说明，请参阅[用户管理和安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。

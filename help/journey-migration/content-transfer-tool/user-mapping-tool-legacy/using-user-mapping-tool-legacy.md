@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 >
 >本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅[组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
-用户映射工具使用的API允许其通过电子邮件查找AdobeIdentity Management System (IMS)用户并返回其IMS ID。 此API要求用户为其组织创建客户端ID、客户端密钥以及访问或持有者令牌。
+用户映射工具使用的API允许其通过电子邮件查找Adobe Identity Management System (IMS)用户并返回其IMS ID。 此API要求用户为其组织创建客户端ID、客户端密钥以及访问或持有者令牌。
 
 ## 设置用户映射工具 {#setting-up-user-mapping}
 
@@ -62,7 +62,7 @@ ht-degree: 1%
    ![图像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
 
-   * **组织ID**：输入要迁移用户的AdobeIdentity Management System (IMS)组织ID。
+   * **组织ID**：输入要迁移用户的组织的Adobe Identity Management System (IMS)组织ID。
 
      >[!NOTE]
      >若要获取组织ID，请登录到[Admin Console](https://adminconsole.adobe.com/)，然后选择您的组织（位于右上角区域）（如果您属于多个组织）。 组织ID位于该页面的URL中，格式为`xx@AdobeOrg`，其中xx是IMS组织ID。 或者，您可以在生成访问令牌的[Adobe Developer Console](https://developer.adobe.com/console/)页面中找到组织ID。
@@ -97,7 +97,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 用户映射完成后，您可以使用痕迹导航导航导航返回内容迁移页面。 用户映射信息卡显示状态和时间戳。 单击&#x200B;**内容传输**，以便创建迁移集以运行提取。 有关详细信息，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#running-tool)。
+   >* 用户映射完成后，您可以使用痕迹导航导航导航返回内容迁移页面。 用户映射信息卡显示状态和时间戳。 单击&#x200B;**内容传输**，以便创建迁移集以运行提取。 有关详细信息，请参阅[运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
 
 ### 恢复用户映射过程 {#resume-user-mapping-process}
 

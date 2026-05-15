@@ -8,15 +8,15 @@ feature: Adaptive Forms, Form Data Model
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 56e5cabd-a509-4ef9-9fea-3cc610f8dee1
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-
-# 用于从自适应Forms调用表单数据模型(FDM)服务的API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API 从自适应表单调用 Form 数据模型 (FDM) 服务 {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## 概述 {#overview}
 

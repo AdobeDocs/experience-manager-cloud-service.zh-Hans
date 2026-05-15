@@ -4,9 +4,9 @@ description: 通过具有OpenAPI功能的Dynamic Media ，您可以在Adobe Expe
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="适用于AEM Assets)。"
 exl-id: video-smartcrop-dmwoapi
-source-git-commit: 8ddd2ade491069e4592becf3b77c04e6bbb2c06a
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,10 @@ ht-degree: 2%
 
 现在，视频资源元数据表单中提供了&#x200B;**创建视频智能裁剪**&#x200B;选项。
 
-![创建视频智能裁剪字段](/help/assets/assets/video-smartcrop-metadata-field.png)
+<!--
+broken link
+![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## 将视频智能裁剪应用于批准的视频 {#apply-video-smart-crops}
 

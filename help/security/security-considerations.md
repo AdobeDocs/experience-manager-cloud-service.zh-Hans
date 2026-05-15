@@ -6,9 +6,9 @@ hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '235'
 ht-degree: 100%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 ## AEM 信任库 {#aem-trust-store}
 
-为了支持非对称加密操作，AEM 将证书存储在内容存储库中的全局信任库中。其内容是公开的，默认情况下，可供发布者实例上的所有人匿名访问。
+为了支持非对称加密操作，AEM 将证书存储在内容存储库中的全局信任库中。 其内容是公开的，默认情况下，可供发布者实例上的所有人匿名访问。
 
 ### 信任库的特征 {#truststore-characteristics}
 
-* 信任库位于 `/etc/truststore` 下方，由 Java™ 密钥库文件、密钥库密码和存储库元数据组成。由于技术原因，密码和密钥库均已加密，但每个人默认情况下都可以通过 API 访问包含的证书
+* 信任库位于 `/etc/truststore` 下方，由 Java™ 密钥库文件、密钥库密码和存储库元数据组成。 由于技术原因，密码和密钥库均已加密，但每个人默认情况下都可以通过 API 访问包含的证书
 * 现成的证书仅用于 HTTPS 和 SAML 支持，并且必须先手动创建存储
 * 客户可以通过[密钥库 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) 在自己的代码中使用它
 * 可以通过 UI（位于&#x200B;**工具** – **安全性** – **信任库**）或通过访问 *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* 管理信任库，如下所示：
@@ -32,12 +32,12 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Adobe 建议对信任库使用默认访问控制，这表示该库仍可公开访问。若要实施最安全的配置，您可以对所有人使用拒绝 `jcr:all` 策略。
+>Adobe 建议对信任库使用默认访问控制，这表示该库仍可公开访问。 若要实施最安全的配置，您可以对所有人使用拒绝 `jcr:all` 策略。
 
 <!--
 Commenting out section for now as requested by Lars
 
 ## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
-For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=zh-Hans#anonymous-permission-hardening-package).
+For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
 -->

@@ -6,16 +6,16 @@ hide: true
 hidefromtoc: true
 role: Admin, Developer
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 100%
 
 ---
 
 # 创建自定义组件
 
-适用于 AEM Forms 的 Edge Delivery Services 允许您自定义 [原生 HTML 表单组件](/help/edge/docs/forms/form-components.md) 并创建用户友好且交互式的表单。它使您能够使用预定义标记来修改表单组件，如 [表单字段的样式](/help/edge/docs/forms/style-theme-forms.md) 中所述，使用自定义 CSS（层叠样式表）和自定义代码来装饰组件，从而增强自适应表单块中表单字段的外观。
+适用于 AEM Forms 的 Edge Delivery Services 允许您自定义 [原生 HTML 表单组件](/help/edge/docs/forms/form-components.md) 并创建用户友好且交互式的表单。 它使您能够使用预定义标记来修改表单组件，如 [表单字段的样式](/help/edge/docs/forms/style-theme-forms.md) 中所述，使用自定义 CSS（层叠样式表）和自定义代码来装饰组件，从而增强自适应表单块中表单字段的外观。
 
 ![自定义组件](/help/edge/assets/custom-component-image.png)
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 要添加自定义函数：
 
 1. 导航到 `[../Form Block/components]`。
-1. 找到名为 `range.js` 文件的位置。如果不存在，则创建一个。
+1. 找到名为 `range.js` 文件的位置。 如果不存在，则创建一个。
 1. 添加以下代码行：
 
    ```javascript
@@ -121,7 +121,7 @@ ht-degree: 100%
 
 ### 在表单块中注入装饰器
 
- `[Form Block]` 使用语义 HTML 来呈现表单字段，包括输入字段、标签和帮助文本，并具有标准属性以实现可访问性。要让 `[Form Block]` 为指定组件使用自定义装饰器，请在 `mappings.js` 文件中定义它。 `mappings.js` 文件导入了一个函数，该函数返回负责装饰特定组件的模块。该函数采用字段属性并返回表单字段的装饰器函数。
+`[Form Block]` 使用语义 HTML 来呈现表单字段，包括输入字段、标签和帮助文本，并具有标准属性以实现可访问性。 要让 `[Form Block]` 为指定组件使用自定义装饰器，请在 `mappings.js` 文件中定义它。 `mappings.js` 文件导入了一个函数，该函数返回负责装饰特定组件的模块。 该函数采用字段属性并返回表单字段的装饰器函数。
 
 在我们的例子中，该函数检查字段的 `fieldType` 属性，并从 `range.js` 中存在的文件 `[../Form Block/components]`返回自定义范围装饰器。
 
@@ -146,9 +146,9 @@ ht-degree: 100%
 
 ### 在 CSS 文件中为组件添加样式
 
-您将会学习到如何使用 CSS 选择器根据字段类型和字段名称更改表单字段的样式，从而根据需求实现一致或独特的样式。要设置组件的样式，请在 `form.css` 文件中添加代码来修改表单组件的外观。
+您将会学习到如何使用 CSS 选择器根据字段类型和字段名称更改表单字段的样式，从而根据需求实现一致或独特的样式。 要设置组件的样式，请在 `form.css` 文件中添加代码来修改表单组件的外观。
 
-要自定义 `range` 组件的样式，请在表单中包含一个 CSS 代码片段，用于设置 `range` 输入元素及其相关组件的样式。这假设一个结构化的 HTML 布局，其中包含诸如`.form` 和 `.range-wrapper`。
+要自定义 `range` 组件的样式，请在表单中包含一个 CSS 代码片段，用于设置 `range` 输入元素及其相关组件的样式。 这假设一个结构化的 HTML 布局，其中包含诸如`.form` 和 `.range-wrapper`。
 
 要在 CSS 文件中添加组件样式：
 

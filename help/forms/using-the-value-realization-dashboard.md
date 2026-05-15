@@ -8,16 +8,16 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '887'
 ht-degree: 6%
 
 ---
 
 # 使用价值实现仪表板分析表单和文档的使用趋势
 
-<span class="preview"> 此功能通过早期访问计划提供。要请求访问，请将您的官方地址中的电子邮件发送至aem-forms-ea@adobe.com。<span>
+<span class="preview"> 此功能通过早期访问计划提供。 要请求访问，请将您的官方地址中的电子邮件发送至aem-forms-ea@adobe.com。<span>
 
 ![值实现仪表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 

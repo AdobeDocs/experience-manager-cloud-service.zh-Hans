@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="适用于AEM Forms)。"
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 24%
+source-wordcount: '1469'
+ht-degree: 19%
 
 ---
 
@@ -84,11 +84,11 @@ LLM增强型智能字段是表单字段，它们使用AI的内置知识库自动
 
 **行业和业务实体类型：**
 
-    添加一个用 NAICS 代码对行业分类的字段
-    创建一个企业实体类型（有限责任公司、公司、合伙企业等）的下拉菜单
-    添加一个企业规模类别字段（初创企业、中小型企业、大型企业）
-    添加一个大型组织的部门选择
-    添加一个专业服务类型的字段
+    为具有NAICS代码的行业分类添加字段
+    创建商业实体类型（LLC、Corporation、Partnership等）的下拉列表
+    为公司规模类别（启动、SME、企业）添加字段
+    包括大型组织的部门选择
+    为专业服务类型添加字段
 
 **示例提示：**
 
