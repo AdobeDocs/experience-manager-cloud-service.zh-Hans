@@ -3,10 +3,9 @@ title: AEM as a Cloud Service中的上下文实验
 description: 了解如何使用试验边栏为您的站点添加试验功能。
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ ht-degree: 2%
 1. 单击A/B图标以打开试验扩展。
 
 >[!NOTE]
->如果您在为项目设置试验时遇到问题，请联系[aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com)。
+>如果您在为项目设置试验时遇到问题，请联系`aem-contextual-experimentation@adobe.com`。
 
 >[!NOTE]
 >有关如何设置和配置试验引擎的更多详细信息，请参阅以下[存储库](https://github.com/adobe/aem-experimentation/tree/v2-ui)中的文档部分。
