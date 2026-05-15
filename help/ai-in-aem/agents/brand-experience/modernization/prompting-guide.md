@@ -4,9 +4,9 @@ description: 本指南提供了有效提示Experience Modernization Agent的技�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '3121'
 ht-degree: 0%
 
 ---
@@ -104,12 +104,12 @@ ht-degree: 0%
 
 推荐的工作流程是迭代式的：先对小集合进行验证，然后按比例放大。
 
-1. **首先运行单页迁移。** — 为计划批量导入的模板迁移一个代表页面。
+1. **首先运行单页迁移。**  — 为您计划批量导入的模板迁移一个代表页面。
    * 这将创建所需的导入基础结构。
-1. **在一小部分页面上运行批量导入。** — 要求代理运行批量导入，并提供遵循同一模板的URL的简短列表。
-1. **查看并优化结果。** — 检查导入的页面。
+1. **对一小部分页面运行批量导入。**  — 要求代理运行批量导入，并提供遵循同一模板的URL的简短列表。
+1. **审核并优化结果。**  — 检查导入的页面。
    * 如果有任何错误，请要求代理调整解析器、转换器或导入逻辑。
-1. **按比例放大。** — 当结果正确时，提供URL的完整列表。
+1. **按比例放大。**  — 当结果正确时，提供URL的完整列表。
    * 代理将重用相同的导入逻辑并大规模运行批量导入。
 
 ### 抓取网页 {#scraping-webpages}
@@ -166,7 +166,7 @@ ht-degree: 0%
    1. 阶段2迁移单个块样式并在`/blocks/{name}/{name}.css`中创建块特定的CSS。
 * 块样式（第2阶段）要求首先完成站点范围的设计（第1阶段）。
    * 全局设计系统提供阻止引用的CSS自定义属性。
-* 预计时间：
+* 预计时间:
    * 阶段1:5-10分钟
    * 阶段2:10-15分钟
 * 模棱两可的请求默认完成迁移（两个阶段）。
@@ -245,7 +245,7 @@ ht-degree: 0%
    1. **映射到现有块** — 代理识别项目块库中最接近的匹配块并创建自定义变体。
    1. **CSS生成** — 代理写入引用提取的CSS自定义属性的样式，以确保设计的一致性。
    1. **资源下载** — 代理将图像和图标从Figma保存到托管环境的工作区。
-   1. **Edge Delivery Services内容生成** — 代理将按照EDS块结构创建Markdown文件
+   1. **Edge Delivery Services内容生成** — 代理将按照Edge Delivery Services块结构创建Markdown文件
    1. **输出验证** — 代理预览结果，并对原始的Figma设计执行视觉比较。
 * 该技能首先读取元数据（步骤1）以了解结构，然后提取详细的设计上下文（步骤2-5）。
    * 这种分阶段的方法可以防止大型或复杂的Figma文件出现问题。
@@ -253,6 +253,60 @@ ht-degree: 0%
    * 在写入任何CSS之前，所有样式都会提取为CSS自定义属性（设计令牌）。
    * 这可确保迁移的块与您的设计系统保持一致。
 * 该提示符需要Figma URL（包含`fileKey`和可选的`node-id`）或Figma文件键直接作为输入。
+
+### 使用图形派生块重新设计迁移 {#figma-redesign-migration}
+
+将现有网站迁移到重新设计的体验时，请使用此提示。
+
+在此工作流中，您首先会从Figma创建目标块集合。 然后，站点迁移针对实时源网站运行，并将源内容映射到从Figma创建的块中。
+
+* **Figma**&#x200B;是目标设计和块库源。
+* **已上线的网站**&#x200B;仍然是内容的源。
+
+#### 示例提示 {#example-figma-redesign}
+
+1. 从Figma创建块集合：
+
+   * “从以下Figma组件创建Edge Delivery Services块集合：`https://figma.com/design/{fileKey}?node-id={nodeId}`”
+
+1. 将源内容迁移到这些块中：
+
+   * “迁移这些页面并将内容映射到Figma派生的块集合：URL1、URL2、URL3”
+
+#### 须知事项 {#wtk-figma-redesign}
+
+* 首先使用figma建立重新设计的块集合。
+* 然后，网站迁移将实际的网站内容映射到该块集中。
+* 已针对源网站完成&#x200B;**内容验证**。
+* 已对Figma派生的块集合和设计系统完成&#x200B;**可视化验证**。
+* 仅当现有的图形派生块无法表示源内容时，才应创建新块变体。
+
+#### 推荐的工作流 {#figma-redesign-workflow}
+
+1. 确定重新设计的站点所需的快速图形组件。
+1. 将这些组件迁移到Edge Delivery Services块或变体中。
+1. 查看生成的块收藏集和设计令牌。
+1. 在代表性源页面上运行站点迁移。
+1. 将源内容映射到图形派生的块。
+1. 针对源网站验证内容。
+1. 针对目标图形设计验证可视化输出。
+1. 优化块或映射，然后扩展到更多页面。
+
+### 从Figma创建新页面 {#figma-new-page-from-figma}
+
+当源网站上不存在页面，且虚拟页面或框架应会促使创建新的Edge Delivery Services页面时，请使用此提示。
+
+#### 示例提示 {#example-figma-new-page}
+
+* “将此Figma页面迁移到Edge Delivery Services：`https://figma.com/design/{fileKey}?node-id={nodeId}`”
+
+#### 须知事项 {#wtk-figma-new-page}
+
+* 此提示最适用于&#x200B;**特定的Figma框架或页面**，而不是整个文件。
+* 框架应组织为&#x200B;**清除页面部分**。
+* 区段映射到现有块、默认内容或新变体。
+* 文本和资产来自Figma。
+* 动态功能（如搜索、计算器、个性化或存储定位器）可能需要在Figma迁移所生成的功能之外进行&#x200B;**单独的块开发**。
 
 ### 导航设置 {#navigation-setup}
 
@@ -404,7 +458,7 @@ ht-degree: 0%
 
 * 常见问题具有已知模式：
    * **图像显示“关于:error”**：块JS中通常缺少`createOptimizedPicture`调用，或者在DOM重构之前调用
-   * **块未呈现**：检查Markdown中的块名称格式并验证该块在`.js`中同时具有`.css`和`blocks/`文件。
+   * **块未呈现**：检查Markdown中的块名称格式并验证该块在`blocks/`中同时具有`.js`和`.css`文件。
    * **CSS未加载**：检查文件路径，验证CSS文件存在，并在浏览器中检查“网络”选项卡。
    * **更改未出现**：代码同步需要3-5秒。 尝试硬刷新(Ctrl+Shift+R)。
 * 代理程序会系统地检查每个层：
@@ -413,3 +467,9 @@ ht-degree: 0%
    1. 块代码
    1. 浏览器控制台
 * 该代理能够在`http://localhost:3000`检查本地预览。
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
