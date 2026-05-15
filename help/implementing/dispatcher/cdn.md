@@ -4,9 +4,9 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
+source-git-commit: 5f81fd54e28ce2636960ad66d1ae9317b9653e61
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1907'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service 中的 CDN"
->abstract="AEM as a Cloud Service 随附一个内置 CDN。其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。"
+>abstract="AEM as a Cloud Service 随附一个内置 CDN。 其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。 它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。"
 
 AEM as a Cloud Service附带一个集成的CDN，旨在通过从靠近用户浏览器的边缘节点提供可缓存的内容来减少延迟。 此完全托管的CDN针对AEM应用程序性能进行了优化。
 
@@ -66,7 +66,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 
 ### 清除CDN上的缓存内容 {#purge-cdn}
 
-使用 HTTP Cache-Control 标头设置 TTL 是平衡内容传递性能和内容新鲜度的有效方法。但是，在必须立即提供更新内容的情况下，直接清除CDN缓存可能会有帮助。
+使用 HTTP Cache-Control 标头设置 TTL 是平衡内容传递性能和内容新鲜度的有效方法。 但是，在必须立即提供更新内容的情况下，直接清除CDN缓存可能会有帮助。
 
 了解[配置清除API令牌](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)和[清除缓存的CDN内容](/help/implementing/dispatcher/cdn-cache-purge.md)。
 
@@ -79,7 +79,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="客户 CDN（或代理）指向 AEM 托管的 CDN"
->abstract="AEM as a Cloud Service 为客户提供了使用现有 CDN 的选项。对于发布层，客户可以选择从自己的 CDN 指向发布层，但这种情况下客户必须自行管理。 这种情况视个案而定，具体取决于是否在满足某些先决条件，包括但不限于客户及其 CDN 供应商具有难以舍弃的旧版集成。"
+>abstract="AEM as a Cloud Service 为客户提供了使用现有 CDN 的选项。 对于发布层，客户可以选择从自己的 CDN 指向发布层，但这种情况下客户必须自行管理。 这种情况视个案而定，具体取决于是否在满足某些先决条件，包括但不限于客户及其 CDN 供应商具有难以舍弃的旧版集成。"
 
 如果客户必须使用其现有的CDN（或任何类型的反向代理，例如负载平衡器或WAF），则可以管理它并将其指向AEM管理的CDN，前提是满足以下条件：
 
@@ -97,7 +97,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如：`X-Forwarded-Host:example.com`。
 1. 设置`X-AEM-Edge-Key`。 应首先使用Cloud Manager配置管道配置该值，然后在客户CDN中配置相同的边缘键，如[本文](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)中所述。
 
-   * 需要，以便Adobe CDN能够验证请求的源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，受信任的调用方（即客户管理的CDN）有责任确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。
+   * 需要，以便Adobe CDN能够验证请求的源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，受信任的调用方（即客户管理的CDN）有责任确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。 另请参阅[如何使用`x-aem-debug`](#test-forwarded-headers)测试转发的标头。
    * 或者，也可以在`X-AEM-Edge-Key`不存在时阻止对Adobe CDN入口的访问。 如果您需要直接访问Adobe CDN的入口（将被阻止），请通知Adobe。
 
 有关主要CDN供应商的配置示例，请参阅[示例CDN供应商配置](#sample-configurations)部分。
@@ -118,6 +118,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
+
 >[!NOTE]
 >
 >使用您自己的CDN时，您不需要在Cloud Manager中安装域和证书。 Adobe CDN中的路由是使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，该域应在`Host`请求标头中发送。 使用自定义域名覆盖请求`Host`标头可能会将该请求错误地通过Adobe CDN路由，或导致421错误。
@@ -136,15 +137,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 调试配置
 
-要调试BYOCDN配置，请使用值为`x-aem-debug`的`edge=true`标头。 例如：
+要调试BYOCDN配置，请使用值为`edge=true`的`x-aem-debug`标头。 例如：
 
-在Linux中：
-
-```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
-```
-
-在Windows中：
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
@@ -153,17 +147,37 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 此进程反映`x-aem-debug`响应标头中的请求中使用的某些属性。 例如：
 
 ```
-x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,x-aem-edge-Key=set,host=redactedaemdomain,x-forwarded-host=wknd.site
 ```
 
+
+
 此过程允许验证详细信息，如主机值、边缘身份验证配置和x-forwarded-host标头值。 它还标识是否设置了Edge键以及在存在匹配项时使用哪个键。
+
+#### 使用x-aem-debug测试转发的标头 {#test-forwarded-headers}
+
+为了测试访客无法控制转发的标头(`X-Forwarded-For`、`X-Forwarded-Host`、`Forwarded`)，AEM管理的CDN将清除访客提供的值并设置受信任的值。 使用随机值调用您的网站并检查`x-aem-debug`响应标头：
+
+```
+curl https://www.example.com -v --header "X-Forwarded-Host: bad.example.com" --header "x-aem-debug: edge=true"
+```
+
+```
+curl https://www.example.com -v --header "X-Forwarded-For: 1.2.3.4" --header "x-aem-debug: edge=true"
+```
+
+将`www.example.com`替换为您的网站域。 `x-aem-debug`响应标头应反映您站点的主机和客户端IP；您发送的值不得显示。 例如：
+
+```
+x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
+```
 
 >[!NOTE]
 >
 >您可以使用快速开发环境(RDE)来部署和测试您的配置：
 >
 >* [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [如何使用快速开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [如何使用快速开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### 示例CDN供应商配置 {#sample-configurations}
 
