@@ -39,5 +39,5 @@ Commenting out section for now as requested by Lars
 
 ## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
-For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
+For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=zh-Hans#anonymous-permission-hardening-package).
 -->

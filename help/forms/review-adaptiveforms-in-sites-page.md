@@ -46,7 +46,7 @@ ht-degree: 5%
 
 1. 转至站点的页面。
 1. 选择自适应表单容器的![settings_icon](assets/settings_icon.png)。 将打开&#x200B;**[!UICONTROL 自适应表单容器]**&#x200B;对话框。
-1. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡并指定&#x200B;**[!UICONTROL 提交操作]**&#x200B;以[调用AEM工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡并指定&#x200B;**[!UICONTROL 提交操作]**&#x200B;以[调用AEM工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=zh-Hans#invoke-an-aem-workflow)
 
 1. 单击[完成]以保存设置。
 

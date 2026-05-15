@@ -54,4 +54,4 @@ ht-degree: 6%
 
    对没有规则编辑器访问权限的用户可见的组件工具栏
 
-   有关将用户添加到组的说明，请参阅[用户管理和安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。
+   有关将用户添加到组的说明，请参阅[用户管理和安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)。
